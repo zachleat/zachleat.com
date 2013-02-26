@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<article>
+	<ol class="posts" style="counter-reset:start-from {{ site.posts | size | plus: 1 }}">
+		{% for post in site.posts %}
+			<li><a href="{{ site.baseurl }}{{ post.url }}"><span class="date">{{ post.date | date: "%h %Y" }}</span> {{ post.title }}</a></li>
+		{% endfor %}
+	</ol>
+</article>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Faster YUI DataTable with 5 Lines <span class="widow">of Code</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Faster YUI DataTable with 5 Lines <span class="widow">of Code</span></h1>
+<em>Posted on 27 Dec 2007</em>
+<h1></h1>
+
+<p>Holy Reflows Batman! The typical usage of a DataTable in the Yahoo User Interface JavaScript library involves passing a string into the constructor signifying the ID attribute of the container you want to attach the DataTable to. However, the YUI DataTable loves the DOM and creating nodes individually using DOM methods. Normally that’d be fine, but one of the first things it does in the constructor is create the table element and attach it to the live DOM. This is a no-no. Now, every time they append a new node (for a new row or a new cell inside of a row), it causes a reflow in the browser! What does this mean? Really bad lag when you insert 40 or 50 rows. Recognize this piece of code?</p>
+
+<pre><code>var myDataTable = new YAHOO.widget.DataTable&amp;#40;"myContainer", myColumnDefs, myDataSource&amp;#41;;
+</code></pre>
+
+<p>Straight from the docs. No no no!</p>
+
+<p>Instead, you should pass in an unattached DOM node instead of a string!</p>
+
+<p>Try this code on for size:</p>
+
+<pre><code>var myDataTable = new YAHOO.widget.DataTable&amp;#40;document.createElement&amp;#40;'div'&amp;#41;, myColumnDefs, myDataSource&amp;#41;; 
+myDataTable.subscribe&amp;#40;'initEvent',function&amp;#40;&amp;#41; &amp;#123;
+    var d = document.getElementById&amp;#40;'myContainer'&amp;#41;; // CHANGE THIS -- match the id of the container you want.
+    while&amp;#40;d.firstChild&amp;#41; &amp;#123; d.removeChild&amp;#40;d.firstChild&amp;#41;; &amp;#125;; // remove previous DataTables
+    d.appendChild&amp;#40;this._elContainer&amp;#41;; &amp;#125;&amp;#41;;
+&amp;#125;
+</code></pre>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>maLArquee, Bringing Back <span class="widow">the Marquee</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>maLArquee, Bringing Back <span class="widow">the Marquee</span></h1>
+<em>Posted on 20 Aug 2007</em>
+<h1></h1>
+
+<p>What did you spend your Saturday afternoon on? Did you kick up your feet in your hammock with a nice glass of lemonade in the shade of your favorite tree and read the HTML specification? Me too! Who knew that we’d have so much in common? Since you’re obviously like me, you’ve probably wondered to yourself: where did the marquee tag go? Why isn’t the internet graced with scrolling text gently flowing like a babbling brook across the pixels of your web browser? Well since you spent your Saturday reading the HTML specifications, you would know that the <code>tag was only supported by Internet Explorer, and wasn’t even a part of the HTML spec. Unbelievable right? And to think the</code> tag I came to know and love wasn’t part of the spec either! I’m just offended as you, let me reassure you.</p>
+
+<p>Well today, we’re going to solve all of that. Today, I’m going to show you a full screen web browser marquee that will both amaze and excite you. Here we go:</p>
+
+<h2>What is it for?</h2>
+
+<p>There are a few obvious uses, I suppose. You can send someone a nice greeting in an email link (it does a ROT13 encoding to mask the text inside the link). Try one of these:</p>
+
+<p>For a spouse: <a href="http://www.zachleat.com/Projects/Malarquee/index.html?text=V%20jnag%20n%20qvibepr.">I want a divorce.</a></p>
+
+<p>For an employee: <a href="http://www.zachleat.com/Projects/Malarquee/index.html?text=Lbh'er%20sverq.">You’re fired.</a></p>
+
+<p>For a doctor: <a href="http://www.zachleat.com/Projects/Malarquee/index.html?text=V'z%20fbeel%7Cohg%20lbh%20unir%7Cnany%20jnegf.">I’m sorry but you have anal warts.</a></p>
+
+<p>For your son or daughter: <a href="http://www.zachleat.com/Projects/Malarquee/index.html?text=Lbh%20jrer%20nqbcgrq.">You were adopted.</a></p>
+
+<h2>So, what else does it do?</h2>
+
+<p>I knew you’d ask. If you click the Options link in the top right corner, you can scroll your text across <strong>multiple web clients</strong>! Input the number of clients you’d like to use and the number of your current client. Hit the update and save button to refresh your page. It will automatically parse your text accordingly (adding extra spaces at the end as blank slides if needed). You can test this using one computer by bringing up the following two links in separate windows side by side (you can use a different web browser for each link if you’d like):</p>
+
+<p><a href="/Projects/Malarquee/index.html?c=1&amp;n=2">maLArquee Client #1</a><br/>
+<a href="/Projects/Malarquee/index.html?c=2&amp;n=2">maLArquee Client #2</a></p>
+
+<p>You could also go into a computer lab and scroll some text on a couple different computers.</p>
+
+<h2>Why?</h2>
+
+<p>I think it’s fun to try new things on the web, experiment a bit. That’s also why I made <a href="http://www.zachleat.com/web/2007/06/18/wake-up-to-youtube-on-my-internet-alarm-clock/">ALARMd, an Internet Alarm Clock</a>. For this project, I think it might be fun to try a new JavaScript library, just to get a little bit more experience with a range of different coding types. So I decided to use <a href="http://www.mootools.net/">MooTools</a>, and wrote <a href="http://www.zachleat.com/web/2007/07/22/what-sound-does-a-cow-make-mootools/">a little review</a> on my experience, coming from a YUI and jQuery background.</p>
+
+<h2>How does it work?</h2>
+
+<p>Every 5 scrolls (I reserve the right to change this number at any time I so wish to conserve bandwidth), the page makes an XmlHttpRequest to the server, gets the server time, and adjusts the delay of the next scroll event to synchronize scrolling between multiple browsers. Ideally, if every computer were the same, we could just do a single XmlHttpRequest at page load and do a standard interval for scrolling. But we all know that every web browser is different, and just because you do a setInterval(yourFunction,1000) doesn’t mean it’s actually going to run yourFunction every second. It might run in 1010 ms or 990 ms. Thus, the XmlHttpRequest is needed to resynchronize all of the clients to a standard clock.</p>
+
+<p>If there is any interest, I’ll post the code to the time.php script that returns the JSON containing the server time.</p>
+
+<h2>What would you do different next time?</h2>
+
+<p>I told my gracious web host about this project after I was approximately 90% complete with it, and his response was: “Did you use NTP?”, with which I replied: “What is NTP?” Ugh. There is even a <a href="http://jehiah.cz/archive/ntp-for-javascript">JavaScript implementation</a>.</p>
+
+<p>In order to provide balance and order to the universe, please read <a href="http://www.mcli.dist.maricopa.edu/tut/tut17.html">the following link</a>.</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

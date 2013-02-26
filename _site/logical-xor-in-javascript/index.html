@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Logical XOR <span class="widow">in JavaScript</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Logical XOR <span class="widow">in JavaScript</span></h1>
+<em>Posted on 23 Mar 2007</em>
+<h1></h1>
+
+<p>Of course there wouldn’t be an XOR function in JavaScript when I needed one. So I googled around and found an implementation at <a href="http://www.howtocreate.co.uk/xor.html">How To Create</a>. But it only took two arguments. So I rolled my own supporting a variable number of arguments. In my personal stuff, I’ve put it into a Math library under the YAHOO namespace, and you can decide if you want to do that on your own.</p>
+
+<pre><code>function xor&amp;#40;&amp;#41;
+&amp;#123;
+    var b = false;
+    for&amp;#40; var j = ; j &lt; arguments.length; j   &amp;#41;
+    &amp;#123;
+        if&amp;#40; arguments&amp;#91; j &amp;#93; &amp;&amp; !b &amp;#41; b = true;
+        else if&amp;#40; arguments&amp;#91; j &amp;#93; &amp;&amp; b &amp;#41; return false;
+    &amp;#125;
+    return b;
+&amp;#125;;
+</code></pre>
+
+<p>Usage:</p>
+
+<pre><code>xor&amp;#40; false, true &amp;#41;; // true
+xor&amp;#40; true, true &amp;#41;; // false
+xor&amp;#40; false, false, true, true, true, false, true, false &amp;#41;; // false
+xor&amp;#40; false, false, false, true, false, false, false, false &amp;#41;; // true
+</code></pre>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

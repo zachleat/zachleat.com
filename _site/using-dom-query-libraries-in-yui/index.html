@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Using DOM Query Libraries <span class="widow">in YUI</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Using DOM Query Libraries <span class="widow">in YUI</span></h1>
+<em>Posted on 30 Jul 2007</em>
+<h1></h1>
+
+<p>Recently, I posted the top 8 things I thought the YUI Library needed to be a top tier JavaScript library again. One of those things included a CSS Selector DOM Querying class. Use one of these babies for awhile, and you’ll never be able to code without it again. They’re amazingly useful and will shorten your code quite beautifully.</p>
+
+<p>So, let’s plug one of them into YUI! Let’s get some of that power under the hood. And let’s make it work identically to how we write our code for YUI currently, instead of changing the coding style (a la Dustin Diaz’s great extension to YUI called <a href="http://dedchain.dustindiaz.com/">DED|Chain</a>).</p>
+
+<p>How are we going to do this? Let’s dive into the shallow end of the pool.</p>
+
+<p>The include order of our javascript files is going to be important. So, first we’ll do the YUI library core file (either yahoo-dom-event.js or utilities.js depending on your need for animation). Next, we need to include a CSS Selector DOM Querying class. For this proof of concept, I’ve provided examples for my two favorites, the jQuery engine and Jack Slocum’s DomQuery. These files are released under the MIT license, so make sure that complies with your project. It’s pretty liberal, so you shouldn’t have any problems. If you find these querying libraries useful, please donate to these projects!</p>
+
+<p>For code simplicity, I’ve added a one liner to Jack’s DomQuery to make it work as a standalone file.</p>
+
+<pre><code>if&amp;#40; typeof Ext == 'undefined' &amp;#41; var Ext = function&amp;#40;&amp;#41;&amp;#123;&amp;#125;;
+</code></pre>
+
+<p>If you want to read more about DomQuery, you can go to <a href="http://www.jackslocum.com/blog/2007/01/11/domquery-css-selector-basic-xpath-implementation-with-benchmarks/">Jack’s site all about syntax and benchmarks</a>.</p>
+
+<p>Download: <a href="/Projects/Y2/DomQuery.js">Jack Slocum’s DomQuery Standalone File (24 KB)</a> 1.0 Alpha 3 – Rev 4<br/>
+Download: <a href="/Projects/Y2/DomQuery-packer.js">Jack Slocum’s DomQuery Standalone File Packed (7 KB)</a> 1.0 Alpha 3 – Rev 4</p>
+
+<p>If you want to use jQuery’s selector engine, I’ve stripped out the functions unnecessary to the selector engine in the 1.1.3.1 release and packaged it up as jDomQuery. There are differences between these two package’s syntax, so make sure you keep that in mind, especially when looking at the pseudos, like :gt() and :lt() for example.</p>
+
+<p>Download: <a href="/Projects/Y2/jdomquery-1.1.3.1.js">jDomQuery Standalone File (23 KB)</a> 1.1.3.1<br/>
+Download: <a href="/Projects/Y2/jdomquery-1.1.3.1-packer.js">jDomQuery Standalone File Packed (10 KB)</a> 1.1.3.1</p>
+
+<p>If you want to read about jQuery syntax, <a href="http://docs.jquery.com/Selectors">go over to their documentation</a>. My current preference is the jQuery syntax, given that it <a href="http://www.zachleat.com/web/2007/07/10/javascript-frameworks-and-jsf/">works with poorly implemented JSF ID attributes</a>. But that’s a different argument.</p>
+
+<p>If you want to use the full jQuery library, that should work too, but if you want to do that, you might just want to switch to using jQuery at that point (dare I say it).</p>
+
+<p>Next, we’ll extend the YAHOO.util.Dom class into a new Y2 namespace. This will map all of the functions from YAHOO.util.Dom into a new CSS Selector extension.</p>
+
+<h1>Download: <a href="/Projects/Y2/Dom.js">Y2.util.Dom (2 KB)</a></h1>
+
+<p>(pack at your own leisure, you can do it online at <a href="http://dean.edwards.name/packer/">Dean Edward’s Packer</a>)</p>
+
+<h1>Putting It All Together</h1>
+
+<pre><code>        Y2.util.Dom.addClass( 'div div:last', 'myClass' )
+        Y2.util.Dom.hasClass( 'div div:last', 'myClass' ); // returns true
+        var b = Y2.util.Dom.get( 'div div:last b' );
+        Y2.util.Dom.addClass( b, 'myOtherClass' );
+</code></pre>
+
+<p>One important thing to note is that when using the CSS Selector syntax, when only one node is selected, functions will return a scalar instead of an array. So if you’re expecting to select multiple nodes in your selector query and only one node results, make sure your code handling the result is prepared for such an instance.</p>
+
+<p>Have fun!</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

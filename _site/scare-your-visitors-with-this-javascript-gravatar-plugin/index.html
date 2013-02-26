@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Scare Your Visitors with this JavaScript <span class="widow">Gravatar Plugin</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Scare Your Visitors with this JavaScript <span class="widow">Gravatar Plugin</span></h1>
+<em>Posted on 08 Jan 2009</em>
+<h1></h1>
+
+<h2><a href="/javascript/gravatar/index.html">See the Demo</a></h2>
+
+<h2><a href="/javascript/gravatar/jquery.gravatar.js">Download the Source Code</a></h2>
+
+<p><img src="http://www.zachleat.com/web/wp-content/uploads/2009/01/blog-comment.png" title="blog-comment" alt="Tournology Blog Comment Form" /></p>
+
+<p>Here’s a use case. An unregistered visitor visits your blog, and decides that your <strong>content is so good that it merits a comment</strong>! Congratulations, you’ve fooled them! Now you can <a href="http://www.centernetworks.com/twply-twitter-replies-auction">twply their account details for $1200 on Sitepoint</a>! Just kidding. But generally, when you visit a blog’s commenting section (such as the <a href="http://www.tournology.com/blog/">Tournology Blog</a> shown above), you’ll see a simple form to authenticate you’re not a spammer, generally including (among other things) an e-mail address field.</p>
+
+<p><img src="http://www.zachleat.com/web/wp-content/uploads/2009/01/blog-comment-after.png" title="blog-comment-after" alt="Tournology Blog Comment Form With Gravatar" /></p>
+
+<p>Well, since they’re typing their e-mail address, wouldn’t it be cool if we could <strong>show them their gravatar</strong> right there, inline with the blog comment form? Well, that’s now possible with my new <strong><a href="http://www.zachleat.com/javascript/gravatar/jquery.gravatar.js">JavaScript Gravatar Plugin</a></strong>! It doesn’t have any server side language dependencies.</p>
+
+<p><img src="http://www.zachleat.com/web/wp-content/uploads/2009/01/gravatar-signup.png" title="gravatar-signup" alt="Gravatar Signup Page" /></p>
+
+<p>Hell, <a href="http://en.gravatar.com/">gravatar.com</a> could even use this to <strong>improve the user experience of registering your e-mail account</strong>. Right now it does a full page refresh and doesn’t even show you a preview!</p>
+
+<h2><a href="/javascript/gravatar/index.html">See the Demo</a></h2>
+
+<h2><a href="/javascript/gravatar/jquery.gravatar.js">Download the Source Code</a></h2>
+
+<h2>Licensing</h2>
+
+<p>Licensed under the <a href="http://sam.zoy.org/wtfpl/">WTFPL</a>, as highly recommended by <a href="http://foohack.com/">Isaac Schleuter</a> (<a href="/web/2007/04/05/google-using-yui-grids-css/">see discussion</a>).</p>
+
+<h2>JavaScript Dependencies:</h2>
+
+<ul>
+<li>Requires <a href="http://jquery.com">jQuery</a> (Feel free to port and post a link!)</li>
+<li>Requires <a href="http://pajhome.org.uk/crypt/md5/md5.js">md5.js</a></li>
+</ul>
+
+
+<h2>Example Usage:</h2>
+
+<p>Easiest form, onblur of email text input field:</p>
+
+<pre><code>$&amp;#40;'#emailTextField'&amp;#41;.blur&amp;#40;function&amp;#40;event&amp;#41;
+&amp;#123;
+    $&amp;#40;this&amp;#41;.after&amp;#40;$.gravatar&amp;#40;$&amp;#40;this&amp;#41;.val&amp;#40;&amp;#41;&amp;#41;&amp;#41;;
+&amp;#125;&amp;#41;;
+</code></pre>
+
+<p>Showing all options, again onblur of email text input field.</p>
+
+<pre><code>$&amp;#40;'#email'&amp;#41;.blur&amp;#40;function&amp;#40;event&amp;#41;
+&amp;#123;
+    $&amp;#40;'body'&amp;#41;.append&amp;#40;$.gravatar&amp;#40;$&amp;#40;this&amp;#41;.val&amp;#40;&amp;#41;, &amp;#123;
+        // integer size: between 1 and 512, default 80 (in pixels)
+        size: 200,
+        // maximum rating (in order of raunchiness, least to most): g (default), pg, r, x
+        rating: 'pg',
+        // url to define a default image (can also be one of: identicon, monsterid, wavatar)
+        image: 'identicon'
+    &amp;#125;&amp;#41;&amp;#41;;
+&amp;#125;&amp;#41;;
+</code></pre>
+
+<p><strong>Update:</strong> This script has been moved to <a href="http://github.com/zachleat/jQuery-Gravatar">Github</a>.</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fundamental Problem with <span class="widow">YUI Button</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Fundamental Problem with <span class="widow">YUI Button</span></h1>
+<em>Posted on 22 Mar 2007</em>
+<h1></h1>
+
+<p>Buttons! Let’s make them obvious and good looking. Let’s make them have inline images and cool hover colors. Let’s make them three dimensional. Especially so, let’s make them from markup so that we don’t take functionality away from technology disabled users.</p>
+
+<p>Ruh roh Shaggy! The <a href="http://yuiblog.com/blog/2007/02/20/yui-220-released/">YUI Button</a> component is misbehaving. It is taking away the submit event fired when the button is clicked and firing the submit() function programmatically.</p>
+
+<p>So, how do you fire the listener functions that are waiting for the submit event to fire, while at the same time using the sleek buttons provided by YUI?</p>
+
+<p>Try this plug and play function:</p>
+
+<pre><code>YAHOO.widget.Button.prototype._submitForm = function&amp;#40;&amp;#41; &amp;#123;
+    var oForm = this.getForm&amp;#40;&amp;#41;;
+    if&amp;#40;oForm&amp;#41; &amp;#123;
+        YAHOO.widget.Button.addHiddenFieldsToForm&amp;#40;oForm&amp;#41;;
+        this.createHiddenField&amp;#40;&amp;#41;;
+        var listeners = YAHOO.util.Event.getListeners&amp;#40; oForm, 'submit' &amp;#41;;
+        var submitForm = true;
+        for&amp;#40; var j = ; j &lt; listeners.length; j   &amp;#41;
+        &amp;#123;
+            if&amp;#40; listeners&amp;#91; j &amp;#93;.fn.apply&amp;#40; listeners&amp;#91; j &amp;#93;.adjust &amp;#41; == false &amp;#41; submitForm = false;
+        &amp;#125;
+        if&amp;#40; submitForm &amp;#41; oForm.submit&amp;#40;&amp;#41;;
+    &amp;#125;
+&amp;#125;;
+</code></pre>
+
+<p>(Make sure you include this after you’ve loaded the YUI Button javascript file.) There are a few caveats to this approach.</p>
+
+<p>First, you’ll have to remove any references to the event object inside your listener function (most of the examples use the variable e). For example:</p>
+
+<pre><code>YAHOO.util.Event.addListener&amp;#40; myForm, 'submit', function&amp;#40; e &amp;#41; &amp;#123;&amp;#125; &amp;#41;;
+</code></pre>
+
+<p>Inside my submit listener functions, I just check to make sure e is not null prior to using it.</p>
+
+<p>Second, if you wish to cancel the submit, you’ll have to return false inside of your submit listener function.</p>
+
+<p>A sleeker approach would be to revert back to having the button fire the ‘submit’ event. But I’ll leave that as an exercise to the original developer, Mr. Todd Kloots (props).</p>
+
+<p>Update: After a little more code searching, it would seem like the submit event is never being canceled by the YUI Button javascript. However, when you comment out the line that that fires the submit programmatically (oForm.submit();), the form still isn’t submitted. I’ll have to research a bit more.</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

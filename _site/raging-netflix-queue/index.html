@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Raging Netflix Queue, a Google <span class="widow">Chrome Extension</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Raging Netflix Queue, a Google <span class="widow">Chrome Extension</span></h1>
+<em>Posted on 21 Feb 2011</em>
+<h1></h1>
+
+<p>The premise is simple. When attempting to find movies to watch in my local theater, I often stumble upon titles that I feel to be more rental quality than theater quality. So I wanted an easier way to add those movies to my Netflix queue. I created a Google Chrome extension to accomplish just that.</p>
+
+<p><a href="https://chrome.google.com/extensions/detail/nbnnepgogimidfbfkbcfmdeimmfadmmp"><img src="https://chrome.google.com/extensions/detail/nbnnepgogimidfbfkbcfmdeimmfadmmp" alt="" /></a>When Raging Netflix Queue recognizes the site you’re browsing to be a movie web site, it will show a small green Netflix icon in the address bar. Clicking that icon will add the title to your queue. If the title is available for Instant Viewing, it will go into your Instant Queue. If not available for Instant View, it will go into your DVD Queue. If the title is still in theaters and not yet available on DVD, it will go into the Saved portion of your DVD Queue, and Netflix will automatically add it to your DVD Queue when it becomes available.</p>
+
+<p>Raging Netflix Queue supports Rotten Tomatoes, IMDB, Google Movies, Apple Trailers, Movie Fone, movies.com, Yahoo Movies, and Fandango. Let me know if you have others you’d like to see added.</p>
+
+<h2><a href="https://chrome.google.com/extensions/detail/nbnnepgogimidfbfkbcfmdeimmfadmmp">Download Raging Netflix Queue</a></h2>
+
+<h2>Screencast</h2>
+
+<h2>Hiccups</h2>
+
+<h3>Years</h3>
+
+<p>The extension will parse the release year from the movie page, in order to guarantee better accuracy of results (There are a ton of remakes out there with the same titles). However, the actual year may vary. Some sites report theater release date, while others DVD release date, or the movie may have gone through a small showing and then a larger showing later. Thus, we allow plus or minus one year leverage when searching Netflix. See <a href="http://www.rottentomatoes.com/m/cedar_rapids_2010/">Cedar Rapids (2011) on Rotten Tomatoes</a>.</p>
+
+<h3>Use of “The” or And/&amp;</h3>
+
+<p>Apple’s entry for <a href="http://trailers.apple.com/trailers/universal/adjustmentbureau/">The Adjustment Bureau</a> does not include “The” in the title. While this would be solved if Netflix allowed partial name matches in their OData API, Raging Netflix Queue does an additional search prepending “The” to the title, if no titles were found on the first go.</p>
+
+<p>Netflix requires exact name matches in their API and prefers “and” over “&amp;” in my tests. Raging Netflix Queue does a simple string replace there.</p>
+
+<h3>Single Quotes</h3>
+
+<p>Titles like “The King’s Speech” don’t match, due to another limitation with the <a href="http://developer.netflix.com/docs/oData_Catalog">Netflix OData API</a>. There is no way to escape single quotes in the query string. I’m waiting on Netflix for an answer there.</p>
+
+<h2>Hindsight</h2>
+
+<p>It’s true that I have built a <a href="/web/2007/04/18/javascript-code-coverage-tool-for-firebug/">web browser plugin (to an add-on) before</a>, and even a <a href="/web/2010/07/19/dom-sailbloat/">plug-in to a ported web browser add-on</a>, but it was a great experience to build an actual web browser extension and Google Chrome has made it very easy to do so. This was also a <strong>jQuery-free project</strong>, as I would think that all Google Chrome extensions would be. jQuery is intended to solve cross browser compatibility issues, and a web browser specific extension shouldn’t have any of those. Sure, it feels like you’re being spoiled to use native String <code>trim()</code>, Array <code>forEach</code>, and <code>document.querySelector</code>. But damn it, I deserve nice things every once in awhile.</p>
+
+<p><a href="http://www.southparkstudios.com/clips/155280/raging-clues"><em>I’m getting such a huge queue right now.</em></a></p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

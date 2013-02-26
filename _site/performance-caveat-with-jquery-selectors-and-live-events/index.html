@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Performance Caveat with jQuery Selectors and <span class="widow">Live Events</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Performance Caveat with jQuery Selectors and <span class="widow">Live Events</span></h1>
+<em>Posted on 08 May 2009</em>
+<h1></h1>
+
+<p><em>Prerequisite: Knowledge/Experience with <a href="http://docs.jquery.com/Events/live">jQuery Live Events</a> (new in jQuery 1.3), and the concept of <a href="http://icant.co.uk/sandbox/eventdelegation/">Event Delegation</a>.</em></p>
+
+<p>When developing on the front end, it’s easy to prioritize correctness over performance. Performance is the step child that gets lost while you’re pulling your hair out worrying about cross browser compatibility. It’s very important to regularly benchmark your JavaScript code, using a <a href="http://getfirebug.com/js.html">profiler</a> or some form of benchmarking code paired with a cross browser logging utility (see <a href="http://getfirebug.com/lite.html">Firebug Lite</a>, <a href="http://developer.yahoo.com/yui/logger/">YUI Logger</a>, or <a href="http://log4javascript.org/">log4javascript</a>).</p>
+
+<p>Event delegation is a great way to program for performance. The <code>live</code> jQuery method was a great addition to the jQuery core, it makes event delegation really easy (see also the <code>closest</code> method). Unfortunately, it isn’t quite what I expected.</p>
+
+<p>For example, say you have a page containing approximately 500 custom tooltip components on it (not typical, but stick with me, this is to prove a point). How might one go about adding a simple live event to activate each tooltip when the user hovers over it?</p>
+
+<pre><code>$&amp;#40;'span.myTooltip'&amp;#41;.live&amp;#40;'mouseover', function&amp;#40;event&amp;#41; &amp;#123;
+    // activate tooltip
+&amp;#125;&amp;#41;;
+</code></pre>
+
+<p>See the problem? jQuery will actually run the selector on the document, resulting in unnecessary overhead. jQuery is only assigning a single event handler to top level of the document, why does it need to know what nodes it will be binding to before assigning the callback?</p>
+
+<p>What can we do? Let’s create a jQuery function, instead of a method, so it won’t query the document. Try this on for size:</p>
+
+<pre><code>$.live = function&amp;#40;selector, type, fn&amp;#41;
+&amp;#123;
+    var r = $&amp;#40;&amp;#91;&amp;#93;&amp;#41;;
+    r.selector = selector;
+    if&amp;#40;type &amp;&amp; fn&amp;#41; &amp;#123;
+        r.live&amp;#40;type, fn&amp;#41;;
+    &amp;#125;
+    return r;
+&amp;#125;;
+</code></pre>
+
+<h2>Usage</h2>
+
+<pre><code>// Single event type
+$.live&amp;#40;'span.myTooltip', 'mouseover', function&amp;#40;event&amp;#41; &amp;#123;
+    // activate tooltip
+&amp;#125;&amp;#41;;
+&amp;nbsp;
+// Multiple event types (you can call the jQuery live method on the return value from the function)
+$.live&amp;#40;'span.myTooltip'&amp;#41;
+    .live&amp;#40;'mouseover', function&amp;#40;event&amp;#41; &amp;#123;
+        // activate tooltip
+    &amp;#125;&amp;#41;
+    .live&amp;#40;'mouseout', function&amp;#40;event&amp;#41; &amp;#123;
+        // deactivate tooltip
+    &amp;#125;&amp;#41;;
+</code></pre>
+
+<p>Also, as a side note, keep in mind that jQuery <code>live</code> <strong>doesn’t</strong> support space separated events, like <code>bind</code> does.</p>
+
+<pre><code>// Will not work.
+$&amp;#40;'span.myTooltip'&amp;#41;.live&amp;#40;'mouseover mouseout', function&amp;#40;&amp;#41; &amp;#123;&amp;#125;&amp;#41;;
+</code></pre>
+
+<p>Have fun!</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

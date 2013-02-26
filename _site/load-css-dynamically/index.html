@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Faking Onload for <span class="widow">Link Elements</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Faking Onload for <span class="widow">Link Elements</span></h1>
+<em>Posted on 29 Jul 2010</em>
+<h1></h1>
+
+<p><strong>Updated 2011/09/27: Rejoice! This issue has now <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=185236">been fixed in Firefox</a>.</strong></p>
+
+<hr />
+
+<p>Or, <strong>I Am Dynamically Loaded CSS (and So Can You!)</strong></p>
+
+<p>Dynamic resource loading is one of the keys to have a performance happy web application. There are generally three different criteria we must address when making a request: cross domain security policies, asynchronous/synchronous (will it block the host page while loading), and whether or not events are triggered when the request completes.</p>
+
+<p>If the resource and host page are on the same domain, obviously <code>XMLHttpRequest</code> works the best. We can control whether or not the resource is loaded asynchronously or synchronously, and we know exactly when it gets done.</p>
+
+<p>If the resource and host page are on different domains (increasingly more common with CDN’s), our options narrow. Loading the JavaScript is a solved problem, just use the <code>onload</code> event on the <code>` tag and you’re good to go (</code>onreadystatechange` for IE). But CSS is more complicated.</p>
+
+<p>Resource</p>
+
+<p>Method</p>
+
+<p>Option for (a)synchronous</p>
+
+<p>Event</p>
+
+<p>JavaScript/CSS Same Domain</p>
+
+<p><code>XMLHttpRequest</code></p>
+
+<p>Both</p>
+
+<p><code>onreadystatechange</code></p>
+
+<p>JavaScript Different Domain</p>
+
+<p>``</p>
+
+<p>Synchronous (Asynchronous where <a href="https://developer.mozilla.org/en/html/element/script">async property</a> is supported)</p>
+
+<p><code>onload</code><br/>
+<code>onreadystatechange</code> for IE</p>
+
+<p>CSS Different Domain</p>
+
+<p>``</p>
+
+<p>Asynchronous</p>
+
+<p><em>What this blog post is about.</em></p>
+
+<h2>Existing Solutions</h2>
+
+<p>In all of the library source code I evaluated, Internet Explorer didn’t cause any issues. It fires both the <code>onload</code> and <code>onreadystatechange</code> events for `` nodes. Obviously this is ideal behavior, and IE got it right. But what about Firefox and Safari/Chrome?</p>
+
+<h3>YUI 2.8.1 and 3.1.1</h3>
+
+<p><a href="http://github.com/yui/yui3/blob/master/build/yui/get.js#L311">Original Source</a></p>
+
+<pre><code>// FireFox does not support the onload event for link nodes, so there is
+// no way to make the css requests synchronous. This means that the css 
+// rules in multiple files could be applied out of order in this browser
+// if a later request returns before an earlier one.  Safari too.
+if ((ua.webkit || ua.gecko) &amp;&amp; q.type === "css") {
+    _next(id, url);
+}
+</code></pre>
+
+<p>I wouldn’t be surprised if the commit log there was from Bon Jovi; that code is living on a prayer.</p>
+
+<h3>LazyLoad</h3>
+
+<p><a href="http://github.com/rgrove/lazyload/blob/master/lazyload.js#L283">Original Source</a></p>
+
+<pre><code>// Gecko and WebKit don't support the onload event on link nodes. In
+// WebKit, we can poll for changes to document.styleSheets to figure out
+// when stylesheets have loaded, but in Gecko we just have to finish
+// after a brief delay and hope for the best.
+if &amp;#40;ua.webkit&amp;#41; &amp;#123;
+    p.urls&amp;#91;i&amp;#93; = node.href; // resolve relative URLs (or polling won't work)
+    poll&amp;#40;&amp;#41;;
+&amp;#125; else &amp;#123;
+    setTimeout&amp;#40;_finish, 50 * len&amp;#41;;
+&amp;#125;
+</code></pre>
+
+<p>Better, closer, warmer. This includes a nice method for working with webkit browsers. The poll method compares <code>document.styleSheets</code>, since Webkit has the nice option of only appending to the styleSheets object when the styleSheet has successfully loaded.</p>
+
+<p>So we have working solutions for IE and Safari/Chrome. The only unsolved piece of the puzzle here is Firefox.</p>
+
+<p><a href="http://wonko.com/post/how-to-prevent-yui-get-race-conditions">This post</a> from the same author as LazyLoad also describes another solution which involves modifying the source CSS and polling against it. But that’s not really ideal. Can we do better?</p>
+
+<h2>Solution</h2>
+
+<p>Here’s what I came up with (using jQuery for brevity, note that this solution <strong>only fixes Firefox</strong>, and does not incorporate the above already solved solutions):</p>
+
+<pre><code>var url = 'css.php',
+    id = 'dynamicCss'   &amp;#40;new Date&amp;#41;.getTime&amp;#40;&amp;#41;;
+&amp;nbsp;
+$&amp;#40;''&amp;#41;.attr&amp;#40;&amp;#123;
+    id: id,
+    type: 'text/css'
+&amp;#125;&amp;#41;.html&amp;#40;'@import url('   url   ')'&amp;#41;.appendTo&amp;#40;document.getElementsByTagName&amp;#40;'head'&amp;#41;&amp;#91;&amp;#93;&amp;#41;;
+&amp;nbsp;
+function poll&amp;#40;&amp;#41;
+&amp;#123;
+    try &amp;#123;
+        var sheets = document.styleSheets;
+        for&amp;#40;var j=, k=sheets.length; j
+</code></pre>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

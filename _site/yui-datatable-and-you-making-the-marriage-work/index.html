@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>YUI DataTable and You: Making the <span class="widow">Marriage Work</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>YUI DataTable and You: Making the <span class="widow">Marriage Work</span></h1>
+<em>Posted on 30 Apr 2007</em>
+<h1></h1>
+
+<p>The DataTable/Grid Component, the ball and chain of GUI components. It doesn’t let you go out and instantiate beers to create a inebriated subclass of yourself with your friends on Friday night. It makes you do household garbage collection during the last minute of your favorite sporting event. And you’d think it would die before it would ever encapsulate your private class member. Just to warn you, the previous sentence was not safe for work.</p>
+
+<p>Earlier I published an article entitled <a href="/web/2007/04/04/problems-with-yui-datatable/">Problems with the YUI DataTable</a>. Now we’re going to work out those problems together, through better communication and more effective problem solving techniques. We’re going to save your marriage.</p>
+
+<p>Earlier I had stated that there were a few problems with the DataTable, in its current form. Let’s review (but not play the blame game).</p>
+
+<ul>
+<li>Bug #1: Table headers weren’t lining up correctly in Firefox (personal ignorance on Box Models)</li>
+<li>Bug #2: Single Select bug where multiple rows were being selected when column was sorted (All browsers, Sortable and SingleSelect Tables)</li>
+<li>Bug #3: Header displayed out of document flow when the window was resized (IE6, Scrollable Tables)</li>
+<li>Bug #4: Content was being displayed approximately 60-70 pixels inside the bottom table boundary. (Firefox, Scrollable Tables) Note the position of the ‘Top’ links in the test document below.</li>
+<li>Bug #5: More of a limitation than a bug, the DataTable does not allow a fixed width table with horizontal overflow. Say you have a table that you have fixed column widths for, but if the width of the real estate available for the table is less than this minimum, the table should overflow with a scroll bar, but at the same time showing the column headers if you scroll vertically. A picture is better:<br/>
+<img src="/web/wp-content/uploads/2007/04/yui-datatable1.gif" alt="Scrollable" /></li>
+</ul>
+
+
+<p>See the following <a href="http://www.zachleat.com/Projects/valdi/__test_yui_datatable_original.html">test document</a> for relevant table tests. (Note that for the purposes of testing, I’ve decided to test all combinations of the Top 3 DataTable features: scrolling, nested table headers, and sorting)</p>
+
+<p>Just like your favorite professor, now I’m going to post the <strong>Solutions</strong>:</p>
+
+<p>Bug #1: What is your Box Model?</p>
+
+<p>Use the following JavaScript code to tell if you’re in Standards Mode or Quirks Mode:</p>
+
+<pre><code>alert&amp;#40; document.compatMode=='CSS1Compat' ? 'Standards Mode' : 'Quirks Mode' &amp;#41;;
+</code></pre>
+
+<p>Standards mode forces your document into using the W3C Box Model, which is currently the standard. The W3C Box Model means any width declarations you make in your CSS code will not include padding, border, or margins. So if you put padding on your table cells and headers, it will need <em>to be added on separately to the total width of your table</em>.</p>
+
+<p>Bug #2: Someone has posted the solution on the <a href="http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1701632&amp;group_id=165715&amp;atid=836476">Sourceforge Bug Tracker here</a>. (This is included in the DataTable javascript file below)</p>
+
+<p>Bug #3, #4, and #5: I have produced an alternate DataTable file that fixes these bugs using JavaScript code. All lines that were added or changed are commented with //ADDED or //CHANGED</p>
+
+<p>Developed in and last tested with YUI version 2.2.2.</p>
+
+<p>Download it here:<br/>
+Full (169 KB): <a href="http://www.zachleat.com/web/wp-content/uploads/2007/04/ymod-datatable-beta.js" title="ymod-datatable-beta.js">ymod-datatable-beta.js</a><br/>
+Minimized using <a href="http://www.crockford.com/javascript/jsmin.html">JSMIN</a> (67 KB): <a href="http://www.zachleat.com/web/wp-content/uploads/2007/04/ymod-datatable-beta-min.js" title="ymod-datatable-beta-min.js">ymod-datatable-beta-min.js</a></p>
+
+<p>The original and minimized YUI DataTable files are 166 KB and 66 KB respectively.</p>
+
+<p>See the <a href="/Projects/valdi/__test_yui_datatable_fluid.html">fluid width DataTables in action here</a>.</p>
+
+<p>A few notes on doing a fixed width DataTable using the code provided above. The total width of the table body must be 16px less than the width of the header, if you have vertical scrolling (to account for the scrollbar). So, if the total width of your header is 800px, the total width of your body must be 784px (put the last table cell as 16px smaller).</p>
+
+<p>Here’s the CSS to go along with a horizontal scrolling DataTable:</p>
+
+<pre><code>.yui-dt-table th, .yui-dt-table td &amp;#123; padding: 2px  2px 5px; vertical-align: top; &amp;#125;
+.yui-dt-table th, .yui-dt-table tr.yui-dt-first td &amp;#123; width: 100px; &amp;#125; /* table header and only the first row (for drag and drop) */
+.ymod-scrollingBody .yui-dt-table tr.yui-dt-first td.yui-dt-last &amp;#123; width: 84px; &amp;#125; /* last table cell (for crappy scrollbar problem) */
+.yui-dt-table .yui-dt-even &amp;#123;background-color:#fff;&amp;#125;
+.yui-dt-table .yui-dt-odd &amp;#123;background-color:#e0dfe0;&amp;#125;
+.yui-dt-table .yui-dt-selected &amp;#123;background-color:#bdcede;&amp;#125;
+.yui-dt-table thead &amp;#123;background-color:#933;color:#fff;&amp;#125;
+.yui-dt-table th a &amp;#123;color:#fff ! important;&amp;#125;
+.ymod-scrollingHeader &amp;#123;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+&amp;#125;
+.ymod-nestedHeaders &amp;#123;
+    height: 40px; /* gotta set this manually, unfortunately */
+&amp;#125;
+.ymod-scrollingHeader table &amp;#123;
+    position: absolute;
+    top: ;
+    left: ;
+&amp;#125;
+.ymod-scrollingBody &amp;#123;
+    width: 100%;
+    overflow: auto;
+    height: 160px;
+&amp;#125;
+.ymod-scrollingHeader table &amp;#123; width: 800px; &amp;#125; /* Set your widths! */
+.ymod-scrollingBody table &amp;#123; width: 784px; &amp;#125;
+</code></pre>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

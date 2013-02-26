@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rethinking JavaScript Grids <span class="widow">and DataTables</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Rethinking JavaScript Grids <span class="widow">and DataTables</span></h1>
+<em>Posted on 13 Apr 2008</em>
+<h1></h1>
+
+<p>In the world of front end engineering, one must consider the end-user of the interface first, and above all other things. The priorities should not start with development ease, nor external library preference. The priorities should start with the needs of the consumer of your end product.</p>
+
+<p>Evolution of your engineering skill is also a vital trait in this world, which means that as a developer increases his knowledge of good practices and proper methods, sometimes he must shirk his previous assertions about the world as he previously knew it. And today I’m shirking a staple of the front end as all web users know it: The Grid (DataTable) Component.</p>
+
+<p>Of course, I’ve written a few articles in the past about the <a href="http://developer.yahoo.com/yui/datatable/">YUI DataTable</a>, during my long love affair with Yahoo’s User Interface library. Another popular one is jQuery’s <a href="http://tablesorter.com/docs/">TableSorter</a>. Then there’s the <a href="http://dojotoolkit.org/book/dojo-book-0-9/docx-documentation-under-development/grid">Dojo Grid</a>, a component <a href="http://www.sitepen.com/blog/2007/09/16/the-dojo-grid/">inherited from TurboAjax</a>. ExtJS has a variety of nice examples as well for their <a href="http://extjs.com/deploy/dev/examples/#sample-1">Ext 2.0 Grid</a>.</p>
+
+<p>And after using these Grids and DataTables, I certainly respect the programming that went into developing these components. But let’s take a step back for a second. Why do the users need the bells and whistles in these components? Are they worth the extra load time and complexity they add to the interface?</p>
+
+<p>All we’re doing here is putting a nice coat of paint on a  tag. Sure, it might have some nice ancillary features like Ajax Data Loading, but those don’t really matter – they are things that can be easily performed with some good Ajax and DOM insert utility functions. In fact, most of the core features included in these components could be described as feature creep, and not beneficial to the end user at all. Feature creep contributes to code bloat, which means the user is downloading bytes to their web browser that they don’t need, which can hamper performance. Libraries usually have online examples of their components, and the include sizes are seen below. (Gzip compression not considered)</p>
+
+<p>Name</p>
+
+<p>JavaScript Size</p>
+
+<p>Minimized</p>
+
+<p>Link</p>
+
+<p>YUI DataTable</p>
+
+<p>216.6 KB</p>
+
+<p>Minimized</p>
+
+<p><a href="http://developer.yahoo.com/yui/examples/datatable/dt_basic_clean.html">Example</a></p>
+
+<p>Dojo Grid</p>
+
+<p>338.4 KB</p>
+
+<p>Unminimized</p>
+
+<p><a href="http://dojotoolkit.org/book/dojo-book-0-9/docx-documentation-under-development/grid/simple-grid">Example</a></p>
+
+<p>Ext Grid</p>
+
+<p>545.5 KB</p>
+
+<p>Minimized</p>
+
+<p><a href="http://extjs.com/deploy/dev/examples/grid/array-grid.html">Example</a></p>
+
+<p>jQuery TableSorter</p>
+
+<p>66 KB</p>
+
+<p>Minimized</p>
+
+<p><a href="http://www.tablesorter.com/">Example</a></p>
+
+<p>The JavaScript include sizes listed above are directly proportional to the feature set that the components provide, and should give you an idea of the overhead involved with using them. Do we need 545.5 KB of features coming down the pipe to give our users an extra bell, or an extra whistle? Let’s analyze the features to rationalize their usage, and remove items from the feature set.</p>
+
+<ul>
+<li>Sorting</li>
+<li>Modifying column order and display</li>
+<li>Resizing columns</li>
+<li>Editing of row data directly on the grid itself</li>
+<li>Scrolling</li>
+<li>Pagination</li>
+</ul>
+
+
+<p><strong>Sorting</strong></p>
+
+<p>Data should be used in the context of its usefulness. You have a list of messages in your e-mail inbox. What’s the most useful context for this list? In order of date received. The default sort order provided by the application, to facilitate proper use of the application. Is comparing the rows in the grid by any other method as useful? Does the user need to see the list of messages ordered alphabetically by subject? In these cases where the user is in need of a specific message, <em>searching and filtering</em> is more useful than sorting. The default sort is useful, but allowing the user to resort on the client, in most cases, is not as useful as other methods of finding a row.</p>
+
+<p><strong>Modifying column order and display</strong></p>
+
+<p>The same argument can be made for any of the other methods of customization provided to the end user. Does the user need to reorder or hide columns? The context provided by the application should be sufficient to use the applications data in the way it was intended. Don’t overcomplicate your user interface with needless features or a deluge of useless data. Provide succinct, appropriate data, and the user needn’t reorder or change the interface.</p>
+
+<p><strong>Resizing columns</strong></p>
+
+<p>The default HTML  tag expands to fit the data inside of its cells. Even when you set the width of the table explicitly, the cells adjust themselves accordingly to fit the data. This should be the behavior of your table. You needn’t monkey around with widths, the browser is smart enough to do it for you. You can even customize a cell to wrap its text to multiple lines with CSS, if need be.</p>
+
+<p><strong>Editing of row data directly on the grid itself</strong></p>
+
+<p>If you’re providing an Excel spreadsheet interface for the end user to customize your data, you haven’t designed your interface correctly. Rethink how the user needs to interact with the data you’ve provided, and give them a better, simpler way to edit the data.</p>
+
+<p><strong>Scrolling</strong></p>
+
+<p>Everyone knows that internal scrollbars on a page are evil. I don’t even like scrollbars on textareas, to be honest. Previously, I had worked and reworked the YUI DataTable to handle horizontal scrolling. Looking back on this, it was a mistake. There are better ways to handle lots of data in a table, without the heavy mouse interaction and scanning that scrolling require. Which brings me to my next point.</p>
+
+<p><strong>Pagination</strong></p>
+
+<p>This is the one exception to the feature set cutting board. This is the one feature that’s is a requirement, when the data set has too many records to fit on a single page.</p>
+
+<p>Keep these in mind, and look at the feature set provided by a few sites using tabular data centric interfaces that know a thing or two about interface design:</p>
+
+<p>[![Google Mail][11]][11]</p>
+
+<p>[![Wordpress 2.5 Admin Interface][12]][12]</p>
+
+<p>[![Google Reader List View][13]][13]</p>
+
+<p><strong>So, what should we include?</strong></p>
+
+<p>A simple CSS class to style your table is sufficient, with links to paginate the table (properly) and/or a hover for row selection if needed. You’re looking at 10-20 lines of jQuery code, maximum, and a few CSS declarations. In lieu of sorting, of course, you’ll need to program in a mechanism for searching and filtering as well. But really, the difficulty with programming this component is knowing what to leave out.</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

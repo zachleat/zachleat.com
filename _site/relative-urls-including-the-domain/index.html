@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Relative URLs including <span class="widow">the Domain</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Relative URLs including <span class="widow">the Domain</span></h1>
+<em>Posted on 16 Oct 2008</em>
+<h1></h1>
+
+<p>Just a neat little trick I saw while browsing the source code of Google Calendar. In some of their CSS files, they link to background-images using URLs that include everything but the protocol, which is something I hadn’t seen before.</p>
+
+<p>The most common usage of a relative URL is linked from the root (note the slash at the beginning), like so:</p>
+
+<p><img src="/web/wp-content/themes/hemingway/images/title.png" alt="" /></p>
+
+<p>You can also use <code>../</code> to navigate up a directory in your path, but that’s boring. The interesting question is: what if I wanted to load content from a separate domain, while at the same time transparently using the protocol used on my page?</p>
+
+<p>Do what Google Calendar does and use the following style:<br/>
+<img src="//calendar.google.com/googlecalendar/images/calendar_sm2_en.gif" alt="" /></p>
+
+<p>Note the lack of <code>http:</code> or <code>https:</code> from the URL. If this page <a href="https://www.zachleat.com/web/2008/10/16/relative-urls-including-the-domain/">were hosted on https</a> (we don’t pay for certificates around here, so you’ll have to put up with the security warning), the last image source will load from https as well at no additional development cost.</p>
+
+<p>This seems like it would be especially useful if you were using the YDN Performance tip to <a href="http://developer.yahoo.com/performance/rules.html#split">Split Components Across Domains</a>. Remember, we’re not just talking images. This involves how the browser resolves URLs, so could be used inside href tags, css urls (as Google Calendar did), etc.</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

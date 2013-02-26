@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tips for Programming <span class="widow">JavaScript Functions</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Tips for Programming <span class="widow">JavaScript Functions</span></h1>
+<em>Posted on 28 Mar 2008</em>
+<h1></h1>
+
+<p><em>This article is about my personal coding style, given little tips and tricks that I use to make my code cleaner and more readable.</em></p>
+
+<h2>Required and Optional Arguments</h2>
+
+<p>There are generally two styles used when programming a new function in JavaScript. The first, most obvious, and least extensible method is putting each argument as its own argument in the function definition, as so:</p>
+
+<pre><code>// For our purposes, assume arg1 is required, and arg2 and arg3 are optional.
+function myFunction&amp;#40;arg1, arg2, arg3&amp;#41; &amp;#123;
+   arg2 = arg2 || 'defaultValue';
+   arg3 = arg3 || 'defaultValue';
+&amp;#125;
+</code></pre>
+
+<p>One obvious downside to this method is that it requires a line of code for each optional argument to define a default value. What if you want to pass in an arg3, but not an arg2? Your call could end up like: <code>myFunction('myArg1', null, 'myArg3');</code>. This might work in the beginning, but what about when you have more than 3 arguments defined? That’s going to get messier than a Dick Cheney hunting party.</p>
+
+<p>The next method people generally move to when they have a lot of optional arguments in their function definition is to put all the arguments into a single object argument, like the following:</p>
+
+<pre><code>// taken from jQuery
+ $.ajax&amp;#40;&amp;#123;
+   type: "POST",
+   url: "some.php",
+   data: "name=John&amp;location=Boston",
+   success: function&amp;#40;msg&amp;#41;&amp;#123;&amp;#125;
+ &amp;#125;&amp;#41;;
+</code></pre>
+
+<p>The benefit to this method is that you can populate all the defaults easily by using jQuery.extend, like so:</p>
+
+<pre><code>// simulated code, not from jQuery
+$.ajax = function&amp;#40;args&amp;#41;
+&amp;#123;
+    var defaultArgs = &amp;#123;
+        type: 'GET',
+        data: '',
+        dataType: 'text'
+    &amp;#125;;
+    // overwrites defaultArgs with args values, stores result into args.
+    args = jQuery.extend&amp;#40;&amp;#123;&amp;#125;, defaultArgs, args&amp;#41;;
+    if&amp;#40;!args&amp;#91;'url'&amp;#93;&amp;#41; &amp;#123;
+          return;
+    &amp;#125;
+&amp;#125;;
+</code></pre>
+
+<p>The args object would end up with the following value:</p>
+
+<pre><code>&amp;#123;
+   type: "POST",
+   url: "some.php",
+   data: "name=John&amp;location=Boston",
+   success: function&amp;#40;msg&amp;#41;&amp;#123;&amp;#125;,
+   dataType: 'text'
+&amp;#125;
+</code></pre>
+
+<p>This method can be easily seen as extensible. You could put a metric shit ton of optional arguments in your function (the option is there, I won’t judge you), and you could define them in any order inside of the object without having to put in null spacers like the previous method.</p>
+
+<p>But what about required arguments? The Ajax method above requires a URL, and the script can’t guess a default for that variable. But it isn’t immediately obvious to the end-user that URL is always required. And what’s more, you’ll have to put specific code inside your function to check that the required arguments were sent in the object. (Think <code>if(!args['url']) { return; }</code> as shown two code blocks up.)</p>
+
+<p>Which leads me to my favorite way to define functions: a combination of the two methods. Declare your required arguments as explicit arguments, and pile the rest into an optional arguments object. Here I’ll show you how I would define the Ajax function using this method:</p>
+
+<pre><code>// jQuery doesn't use this argument structure, so don't copy and paste this.
+ $.ajax&amp;#40;'some.php', &amp;#123;
+   type: "POST",
+   data: "name=John&amp;location=Boston",
+   success: function&amp;#40;msg&amp;#41;&amp;#123;&amp;#125;
+ &amp;#125;&amp;#41;;
+</code></pre>
+
+<p>This way, it is immediately obvious which is a required argument and which is optional, and your required arguments will never be accidentally assigned a default value in your code. If the end-user doesn’t send in all of the required arguments, the resulting error message will be obvious and easily fixed, without a ton of code inside of your function to check that the end-user obeyed the function defintion.</p>
+
+<h2>Setting Default Values for Optional Arguments</h2>
+
+<p>When developing code, sometimes it is obvious that the method described above for optional arguments may be overkill for a tiny little utility method. Sometimes you just want a boolean flag, or a single optional argument. When that occassion arrives, it’s time to put on your robe and coding hat, because we’re going to town.</p>
+
+<p>In the beginning of JavaScript maturity, my  was going through a lot of changes. I was confused about a lot of things, and you’d see a lot of lines of code like this (embarrassingly enough):</p>
+
+<pre><code>function myFunction&amp;#40;runDoSomething&amp;#41;
+&amp;#123;
+     if&amp;#40;runDoSomething == null&amp;#41; &amp;#123;
+          runDoSomething = true; // never make your default true, as I'll show you below
+     &amp;#125;
+     if&amp;#40;runDoSomething&amp;#41; &amp;#123;
+          doSomething&amp;#40;&amp;#41;;
+     &amp;#125;
+&amp;#125;
+</code></pre>
+
+<p>Ugh, checking against null? Janet Reno looked better in the morning. But now that I’m a full grown man that can open his own pickle jars, I’ve got some guidelines:</p>
+
+<ol>
+<li>When the argument is optional and might be left out, define it in your code in such a way that if it does have a value, it will not evaluate to boolean false (0, false, undefined, null, ”, NaN). In other words, don’t make the value the user passes in for this argument be false. False is the value it should have when it’s empty. See the example below:     // runDoSomething is still optional
+
+<pre><code>function myFunction&amp;#40;runDoSomething&amp;#41;
+&amp;#123;
+     if&amp;#40;runDoSomething&amp;#41; &amp;#123;
+          doSomething&amp;#40;&amp;#41;;
+     &amp;#125;
+&amp;#125;
+</code></pre>
+
+We didn’t have to assign a default value to arg1, because if it’s <code>null</code>, then <code>doSomething()</code> won’t execute. Don’t ever use arg1 in a way that would have you passing in false, because false and null are the same in a boolean comparison.
+
+<ul>
+<li>When using non-boolean optional arguments, another way to avoid assigning a default value to an optional argument is to use the OR operator to give you a default value where you’re using it. This is really only useful when you use the argument in one single place inside of your function. If you’re using it more than once, it’s best to define the default value at the top of the function.     function myFunction&#40;arg1&#41;
+
+<pre><code>&amp;#123;
+     // arg1 is used only once
+     jQuery&amp;#40;'#myId'&amp;#41;.html&amp;#40;arg1 || 'myDefaultValue'&amp;#41;;
+&amp;#125;
+function myFunction&amp;#40;arg1&amp;#41;
+&amp;#123;
+     arg1 = arg1 || 'myDefaultValue;
+     // arg1 is used multiple times
+     jQuery('#myId').html(arg1);
+     jQuery('#myOtherId').html(arg1);
+} 
+</code></pre></li>
+</ul>
+
+
+<p>Hopefully you’ve learned something from this post. It is the byproduct of many mistakes and overcomplicated functions that I’ve refactored to end up with this result.</p></li>
+</ol>
+
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Conservative Design Example: Multiple <span class="widow">Option List</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Conservative Design Example: Multiple <span class="widow">Option List</span></h1>
+<em>Posted on 10 Mar 2007</em>
+<h1></h1>
+
+<p>All of the posts in the Conservative Design series so far have been brainstorming of design patterns. But how about some real life examples, some actual code? Let’s dive in.</p>
+
+<p>The first example I decided to tackle was the <a href="http://www.zachleat.com/web/2007/02/26/conservative-design-option-list/">Option List</a>, specifically the variant that allows multiple options to be selected. Let me start out by saying that I didn’t abstract out the type of source element that you could put into this example, I only programmed the element for a  element. For the impatient, let’s just start with the result:</p>
+
+<p><a href="http://www.zachleat.com/web/wp-content/uploads/2007/03/optionlist_multiple_real1.gif"><img src="http://www.zachleat.com/web/wp-content/uploads/2007/03/optionlist_multiple_real1.gif" alt="Multiple Option List Real Example" /></a><br/>
+Click the image to see the actual example.</p>
+
+<p>This element was constructed using the YUI Library and Jack Slocum’s DomQuery selector class, as well as using the new form validation CSS and JavaScript code I’m currently developing entitled ‘<strong>Valdi</strong>‘.</p>
+
+<p>It includes 3 of the 4 of the minimum features required as set in the original specification.</p>
+
+<p>Features:</p>
+
+<ul>
+<li><strong>Validation</strong>: there is no submit button, but if there were, it would validate if the form has been entry has a value.</li>
+<li><strong>Quick Links</strong>: Select All, Select None, and Sort the Options</li>
+<li><strong>Customizable Options</strong>: Allow the user to add their own options for selection.</li>
+<li>Does <strong>not </strong>abstract option types (checkbox, etc)</li>
+<li>Keyboard Support: CTRL A inside of the select box selects all options, Delete or Backspace removes the selected options, Enter key inside Add input field automatically adds option to the select.</li>
+<li>Can be <em>easily</em> transformed into a Single Option List by removing the multiple=”multiple” option in the html.</li>
+<li>Sort will toggle between Ascending and Descending and maintain the selected options</li>
+<li>When the number of options outweighs the select size, the number of options is displayed next to the Add button. Try adding 5 or more options to the select list.</li>
+</ul>
+
+
+<p>Screenshots for the Lazy People:</p>
+
+<p>Multiple Options are Added<br/>
+<img src="http://www.zachleat.com/web/wp-content/uploads/2007/03/optionlist_multiple_real1.gif" alt="Multiple Option List Real Example" /></p>
+
+<p>Validation when an Option is not selected:<br/>
+<img src="http://www.zachleat.com/web/wp-content/uploads/2007/03/optionlist_multiple_real21.gif" alt="Multiple Option List Real Example" /></p>
+
+<p>Success, they selected something and submitted:<br/>
+<img src="http://www.zachleat.com/web/wp-content/uploads/2007/03/optionlist_multiple_real31.gif" alt="Multiple Option List Real Example" /></p>
+
+<p>Watch for another separate article about Valdi later on.</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

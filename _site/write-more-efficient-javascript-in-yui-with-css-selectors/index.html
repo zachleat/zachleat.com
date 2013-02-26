@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Write More Efficient Javascript in YUI with <span class="widow">CSS Selectors</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Write More Efficient Javascript in YUI with <span class="widow">CSS Selectors</span></h1>
+<em>Posted on 03 Sep 2007</em>
+<h1></h1>
+
+<p><em>This is an updated version of a previous article entitled <a href="http://www.zachleat.com/web/2007/07/30/using-dom-query-libraries-in-yui/">Using DOM Query Libraries in YUI</a> for the new version of YAHOO.util.Dom included with YUI 2.3.0 as well as including support for passing context nodes into Dom functions.</em></p>
+
+<p>Here we are again. I just love those CSS Selectors. If you haven’t read Part One of the series linked above, I would encourage it to get a little background on why we’re attempting this approach.</p>
+
+<h1>Download the appropriate files:</h1>
+
+<h1>Get the easy <strong>ALL-IN-ONE file</strong>: <a href="/Lib/Y2/Y2.js">Y2.js</a> (31 KB original source) OR <a href="/Lib/Y2/Y2-p.js">Y2-p.js</a> (11 KB minimized)</h1>
+
+<h2>Get the files separately (if you want to use a custom selector library, or have already included DomQuery or jQuery): <a href="/Lib/Y2/Y2-solo.js">Y2-solo.js</a> (9 KB original source) OR <a href="/Lib/Y2/Y2-solo-p.js">Y2-solo-p.js</a> (4 KB minimized)</h2>
+
+<p>Also, first you’ll need to get Jack’s nice DomQuery class.</p>
+
+<p>Download: <a href="/Lib/Y2/DomQuery.js">Jack Slocum’s DomQuery Standalone File (24 KB)</a> 1.0 Alpha 3 – Rev 4<br/>
+Download: <a href="/Lib/Y2/DomQuery-packer.js">Jack Slocum’s DomQuery Standalone File Packed (7 KB)</a> 1.0 Alpha 3 – Rev 4</p>
+
+<p>You can use the jDomQuery standalone, or any jQuery version, (instead of DomQuery) linked in the previous article, but there is an unresolved bug with the getRegion method since jQuery doesn’t return actual Array’s. But if you’re not using that method, have at it.</p>
+
+<h1>What can I do with it?</h1>
+
+<p>I have not included ALL functions in this class, only the ones that take nodes in as arguments. If you use these functions, you are encouraged to use the unmodified versions contained in YAHOO.util.Dom. Functions not included here: getClientHeight, getClientWidth, getDocumentHeight, getDocumentScrollLeft, getDocumentScrollTop, getDocumentWidth, getViewportHeight, getViewportWidth.</p>
+
+<p>Let’s see some documentation on this mother (if you’re wondering what the original functions do, see the <a href="http://developer.yahoo.com/yui/docs/YAHOO.util.Dom.html">original documentation</a>).</p>
+
+<pre><code>// this is the test context node we're going to pass in
+var context = YAHOO.util.Dom.get&amp;#40;'context'&amp;#41;;
+</code></pre>
+
+<h1>addClass</h1>
+
+<p>Adds a CSS class to first matching node.</p>
+
+<pre><code>// returns void
+Y2.util.Dom.addClass&amp;#40; 'div div:last', 'myClass'&amp;#41;;
+Y2.util.Dom.addClass&amp;#40;'div div:last', context, 'myClassContext'&amp;#41;;
+</code></pre>
+
+<h1>addClassAll</h1>
+
+<p>Adds a CSS class to all matching nodes.</p>
+
+<pre><code>// returns void
+Y2.util.Dom.addClassAll&amp;#40; 'div div:last', 'myClass'&amp;#41;;
+Y2.util.Dom.addClassAll&amp;#40;'div div:last', context, 'myClassContext'&amp;#41;;
+</code></pre>
+
+<h1>hasClass</h1>
+
+<p>Tests the first result node returned to see if it has a CSS class.</p>
+
+<pre><code>// returns Booleans.
+Y2.util.Dom.hasClass&amp;#40;'div div:last', 'myClass'&amp;#41;;
+Y2.util.Dom.hasClass&amp;#40;'div div:last', context, 'myClassContext'&amp;#41;;
+</code></pre>
+
+<h1>hasClassAll</h1>
+
+<p>Tests all matching nodes to see if they have a CSS class.</p>
+
+<pre><code>// returns Array of Booleans.
+Y2.util.Dom.hasClassAll&amp;#40;'div div:last', 'myClass'&amp;#41;;
+Y2.util.Dom.hasClassAll&amp;#40;'div div:last', context, 'myClassContext'&amp;#41;;
+</code></pre>
+
+<h1>removeClass</h1>
+
+<p>Removes a CSS class from first matched node.</p>
+
+<pre><code>// returns Boolean (misdocumented on the YAHOO.util.Dom page)
+Y2.util.Dom.removeClass&amp;#40;'div.third','third'&amp;#41;;
+Y2.util.Dom.removeClass&amp;#40;'div.third', context,'third'&amp;#41;;
+</code></pre>
+
+<h1>removeClassAll</h1>
+
+<p>Removes a CSS class from all matched nodes.</p>
+
+<pre><code>// returns Array of Booleans (misdocumented on the YAHOO.util.Dom page)
+Y2.util.Dom.removeClassAll&amp;#40;'div.third','third'&amp;#41;;
+Y2.util.Dom.removeClassAll&amp;#40;'div.third', context,'third'&amp;#41;;
+</code></pre>
+
+<h1>replaceClass</h1>
+
+<p>Replaces a CSS class on first matched node with a new CSS class, or adds it if the old CSS class doesn’t exist.</p>
+
+<pre><code>// returns Boolean (misdocumented on the YAHOO.util.Dom page)
+Y2.util.Dom.replaceClass&amp;#40;'div.fourth','fourth','third'&amp;#41;;
+Y2.util.Dom.replaceClass&amp;#40;'div.fourth', context,'fourth','third'&amp;#41;;
+</code></pre>
+
+<h1>replaceClassAll</h1>
+
+<p>Replaces a CSS class on all matched nodes with a new CSS class, or adds it if the old CSS class doesn’t exist.</p>
+
+<pre><code>// returns Array of Booleans (misdocumented on the YAHOO.util.Dom page)
+Y2.util.Dom.replaceClassAll&amp;#40;'div.fourth','fourth','third'&amp;#41;;
+Y2.util.Dom.replaceClassAll&amp;#40;'div.fourth', context,'fourth','third'&amp;#41;;
+</code></pre>
+
+<h1>get</h1>
+
+<p>Get first matched node.</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.get&amp;#40;'div b'&amp;#41;;
+Y2.util.Dom.get&amp;#40;'div b', context&amp;#41;;
+</code></pre>
+
+<h1>getAll</h1>
+
+<p>Get all matched nodes.</p>
+
+<pre><code>// returns Array of HTMLElement
+Y2.util.Dom.getAll&amp;#40;'div b'&amp;#41;;
+Y2.util.Dom.getAll&amp;#40;'div b', context&amp;#41;;
+</code></pre>
+
+<h1>batch</h1>
+
+<p>Executes a function against first matched node.</p>
+
+<pre><code>// returns single return value from the function
+Y2.util.Dom.batch&amp;#40;'div.second b', function&amp;#40;el&amp;#41;&amp;#123;return el;&amp;#125;&amp;#41;;
+Y2.util.Dom.batch&amp;#40;'div b', context, function&amp;#40;el&amp;#41;&amp;#123;return el;&amp;#125;&amp;#41;;
+</code></pre>
+
+<h1>batchAll</h1>
+
+<p>Executes a function against all matched nodes.</p>
+
+<pre><code>// returns Array of return values from the function
+Y2.util.Dom.batchAll&amp;#40;'div.second b', function&amp;#40;el&amp;#41;&amp;#123;return el;&amp;#125;&amp;#41;;
+Y2.util.Dom.batchAll&amp;#40;'div b', context, function&amp;#40;el&amp;#41;&amp;#123;return el;&amp;#125;&amp;#41;;
+</code></pre>
+
+<h1>generateId</h1>
+
+<p>Generates and assigns a unique ID attribute if not present on first matched element.</p>
+
+<pre><code>// returns String (new ID attribute)
+Y2.util.Dom.generateId&amp;#40;'div.first'&amp;#41;;
+Y2.util.Dom.generateId&amp;#40;'div.third', context&amp;#41;;
+</code></pre>
+
+<h1>generateIdAll</h1>
+
+<p>Generates and assigns a unique ID attribute if not present on matched elements.</p>
+
+<pre><code>// returns Array of String (new ID attributes)
+Y2.util.Dom.generateIdAll&amp;#40;'div.first'&amp;#41;;
+Y2.util.Dom.generateIdAll&amp;#40;'div.third', context&amp;#41;;
+</code></pre>
+
+<h1>getChildren</h1>
+
+<p>Gets all HTMLElement children of the first matched node (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns Array of HTMLElement
+Y2.util.Dom.getChildren&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getChildren&amp;#40;'div.second', context&amp;#41;;
+</code></pre>
+
+<h1>getChildrenBy</h1>
+
+<p>Returns all HTMLElement children of the first matched node that pass a Boolean function test. (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns Array of HTMLElement
+Y2.util.Dom.getChildrenBy&amp;#40;'div.second', function&amp;#40;el&amp;#41;&amp;#123;return el.getAttribute&amp;#40;'id'&amp;#41;=='theMiddleB';&amp;#125;&amp;#41;;
+Y2.util.Dom.getChildrenBy&amp;#40;'div.second', context, function&amp;#40;el&amp;#41;&amp;#123;return el.getAttribute&amp;#40;'id'&amp;#41;=='theMiddleB';&amp;#125;&amp;#41;;
+</code></pre>
+
+<h1>getAncestorBy</h1>
+
+<p>Returns the first HTMLElement ancestor of the first matched node that passes a Boolean function test. (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getAncestorBy&amp;#40;'div.third', function&amp;#40;el&amp;#41;&amp;#123;return el.getAttribute&amp;#40;'id'&amp;#41;=='context';&amp;#125;&amp;#41;;
+Y2.util.Dom.getAncestorBy&amp;#40;'div.third', context, function&amp;#40;el&amp;#41;&amp;#123;return el.getAttribute&amp;#40;'id'&amp;#41;=='context';&amp;#125;&amp;#41;;
+</code></pre>
+
+<h1>getAncestorByClassName</h1>
+
+<p>Returns the first HTMLElement ancestor of the first matched node that has a CSS Class. (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getAncestorByClassName&amp;#40;'div.third', 'contextClass'&amp;#41;;
+Y2.util.Dom.getAncestorByClassName&amp;#40;'div.third', context, 'contextClass'&amp;#41;;
+</code></pre>
+
+<h1>getAncestorByClassName</h1>
+
+<p>Returns the first HTMLElement ancestor of the first matched node that is a certain tag (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getAncestorByTagName&amp;#40;'div.third', 'div'&amp;#41;;
+Y2.util.Dom.getAncestorByTagName&amp;#40;'div.third', context, 'div'&amp;#41;;
+</code></pre>
+
+<h1>getFirstChild</h1>
+
+<p>Returns the first HTMLElement child of the first matched node (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getFirstChild&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getFirstChild&amp;#40;'div.second', context&amp;#41;;
+</code></pre>
+
+<h1>getFirstChildBy</h1>
+
+<p>Returns the first HTMLElement child that passes a boolean function test from the first matched node (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getFirstChildBy&amp;#40;'div.second', function&amp;#40;el&amp;#41;&amp;#123; return el.getAttribute&amp;#40;'id'&amp;#41;=='theMiddleB';&amp;#125;&amp;#41;;
+Y2.util.Dom.getFirstChildBy&amp;#40;'div.second', context, function&amp;#40;el&amp;#41;&amp;#123; return el.getAttribute&amp;#40;'id'&amp;#41;=='theMiddleB';&amp;#125;&amp;#41;;
+</code></pre>
+
+<h1>getLastChild</h1>
+
+<p>Returns the last HTMLElement child of the first matched node (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getLastChild&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getLastChild&amp;#40;'div.second', context&amp;#41;;
+</code></pre>
+
+<h1>getLastChildBy</h1>
+
+<p>Returns the last HTMLElement child that passes a boolean function test from the first matched node (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getLastChildBy&amp;#40;'div.second', function&amp;#40;el&amp;#41;&amp;#123; return el.getAttribute&amp;#40;'id'&amp;#41;=='theMiddleB';&amp;#125;&amp;#41;;
+Y2.util.Dom.getLastChildBy&amp;#40;'div.second', context, function&amp;#40;el&amp;#41;&amp;#123; return el.getAttribute&amp;#40;'id'&amp;#41;=='theMiddleB';&amp;#125;&amp;#41;;
+</code></pre>
+
+<h1>getNextSibling</h1>
+
+<p>Returns the next HTMLElement sibling of the first matched node (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getNextSibling&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getNextSibling&amp;#40;'div.second', context&amp;#41;;
+</code></pre>
+
+<h1>getNextSiblingBy</h1>
+
+<p>Returns the next HTMLElement sibling that passes a boolean function test from the first matched node (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getNextSiblingBy&amp;#40;'div.second',function&amp;#40;el&amp;#41;&amp;#123; return el.getAttribute&amp;#40;'class'&amp;#41;=='third';&amp;#125;&amp;#41;;
+Y2.util.Dom.getNextSiblingBy&amp;#40;'div.second', context, function&amp;#40;el&amp;#41;&amp;#123; return YAHOO.util.Dom.hasClass&amp;#40;el,'third'&amp;#41;;&amp;#125;&amp;#41;;
+</code></pre>
+
+<h1>getPreviousSibling</h1>
+
+<p>Returns the previous HTMLElement sibling of the first matched node (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getPreviousSibling&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getPreviousSibling&amp;#40;'div.second', context&amp;#41;;
+</code></pre>
+
+<h1>getPreviousSiblingBy</h1>
+
+<p>Returns the previous HTMLElement sibling that passes a boolean function test from the first matched node (does not include text nodes or whitespace)</p>
+
+<pre><code>// returns HTMLElement
+Y2.util.Dom.getPreviousSiblingBy&amp;#40;'div.second',function&amp;#40;el&amp;#41;&amp;#123; return el.getAttribute&amp;#40;'class'&amp;#41;=='third';&amp;#125;&amp;#41;;
+Y2.util.Dom.getPreviousSiblingBy&amp;#40;'div.second', context, function&amp;#40;el&amp;#41;&amp;#123; return YAHOO.util.Dom.hasClass&amp;#40;el,'third'&amp;#41;;&amp;#125;&amp;#41;;
+</code></pre>
+
+<h1>getRegion</h1>
+
+<p>Gets the <a href="http://developer.yahoo.com/yui/docs/YAHOO.util.Region.html">Region</a> containing the first matched element.</p>
+
+<pre><code>// returns YAHOO.util.Region
+Y2.util.Dom.getRegion&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getRegion&amp;#40;'div.second', context&amp;#41;;
+</code></pre>
+
+<h1>getRegionAll</h1>
+
+<p>Gets all <a href="http://developer.yahoo.com/yui/docs/YAHOO.util.Region.html">Regions</a> containing all matched elements.</p>
+
+<pre><code>// returns Array of YAHOO.util.Region
+Y2.util.Dom.getRegionAll&amp;#40;'div.myClass'&amp;#41;;
+Y2.util.Dom.getRegionAll&amp;#40;'div.myClass', context&amp;#41;;
+</code></pre>
+
+<h1>setStyle</h1>
+
+<p>Sets the style for the first matched node</p>
+
+<pre><code>// returns void
+Y2.util.Dom.setStyle&amp;#40;'div', 'border', '1px'&amp;#41;;
+Y2.util.Dom.setStyle&amp;#40;'div', context, 'border', '10px'&amp;#41;;
+</code></pre>
+
+<h1>setStyleAll</h1>
+
+<p>Sets style for all matched nodes</p>
+
+<pre><code>// returns void
+Y2.util.Dom.setStyleAll&amp;#40;'div', 'border', '1px'&amp;#41;;
+Y2.util.Dom.setStyleAll&amp;#40;'div', context, 'border', '10px'&amp;#41;;
+</code></pre>
+
+<h1>getStyle</h1>
+
+<p>Gets a specific style property from the first matched node</p>
+
+<pre><code>// returns String of specific style property
+Y2.util.Dom.getStyle&amp;#40;'div', 'border'&amp;#41;;
+Y2.util.Dom.getStyle&amp;#40;'div', context, 'border'&amp;#41;;
+</code></pre>
+
+<h1>getStyleAll</h1>
+
+<p>Gets a specific style property from all matched nodes</p>
+
+<pre><code>// returns Array of Strings of specific style property
+Y2.util.Dom.getStyleAll&amp;#40;'div', 'border'&amp;#41;;
+Y2.util.Dom.getStyleAll&amp;#40;'div', context, 'border'&amp;#41;;
+</code></pre>
+
+<h1>setX, setY, setXY</h1>
+
+<p>Sets the horizontal placement (X), vertical placement (Y), or both (XY) of the first matched element</p>
+
+<pre><code>// returns void
+Y2.util.Dom.setX&amp;#40;'div.second', 60&amp;#41;;
+Y2.util.Dom.setX&amp;#40;'div.second', context, 60&amp;#41;;
+&amp;nbsp;
+Y2.util.Dom.setY&amp;#40;'div.second', 60&amp;#41;;
+Y2.util.Dom.setY&amp;#40;'div.second', context, 60&amp;#41;;
+&amp;nbsp;
+Y2.util.Dom.setXY&amp;#40;'div.second', &amp;#91;120,120&amp;#93;&amp;#41;;
+Y2.util.Dom.setXY&amp;#40;'div.second', context, &amp;#91;120,120&amp;#93;&amp;#41;;
+</code></pre>
+
+<h1>setXAll, setYAll, setXYAll</h1>
+
+<p>Sets the horizontal placement (X), vertical placement (Y), or both (XY) of all matched elements</p>
+
+<pre><code>// returns void
+Y2.util.Dom.setXAll&amp;#40;'div.second', 60&amp;#41;;
+Y2.util.Dom.setXAll&amp;#40;'div.second', context, 60&amp;#41;;
+&amp;nbsp;
+Y2.util.Dom.setYAll&amp;#40;'div.second', 60&amp;#41;;
+Y2.util.Dom.setYAll&amp;#40;'div.second', context, 60&amp;#41;;
+&amp;nbsp;
+Y2.util.Dom.setXYAll&amp;#40;'div.second', &amp;#91;120,120&amp;#93;&amp;#41;;
+Y2.util.Dom.setXYAll&amp;#40;'div.second', context, &amp;#91;120,120&amp;#93;&amp;#41;;
+</code></pre>
+
+<h1>getX, getY, getXY</h1>
+
+<p>Gets the horizontal placement (X), vertical placement (Y), or both (XY) of the first matched element</p>
+
+<pre><code>// returns Integer
+Y2.util.Dom.getX&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getX&amp;#40;'div.second', context&amp;#41;;
+&amp;nbsp;
+Y2.util.Dom.getY&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getY&amp;#40;'div.second', context&amp;#41;;
+&amp;nbsp;
+Y2.util.Dom.getXY&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getXY&amp;#40;'div.second', context&amp;#41;;
+</code></pre>
+
+<h1>getXAll, getYAll, getXYAll</h1>
+
+<p>Gets the horizontal placement (X), vertical placement (Y), or both (XY) of all matched elements</p>
+
+<pre><code>// returns Array of Integers
+Y2.util.Dom.getXAll&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getXAll&amp;#40;'div.second', context&amp;#41;;
+&amp;nbsp;
+Y2.util.Dom.getYAll&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getYAll&amp;#40;'div.second', context&amp;#41;;
+&amp;nbsp;
+Y2.util.Dom.getXYAll&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.getXYAll&amp;#40;'div.second', context&amp;#41;;
+</code></pre>
+
+<h1>inDocument</h1>
+
+<p>Find out whether the first matched element is in the current document</p>
+
+<pre><code>// returns Boolean
+Y2.util.Dom.inDocument&amp;#40;'div.second'&amp;#41;;
+Y2.util.Dom.inDocument&amp;#40;'div.second', context&amp;#41;;
+</code></pre>
+
+<h1>insertAfter</h1>
+
+<p>Take the first matched node of the first selector and insert after the first matched node of the second selector</p>
+
+<pre><code>// Note that this function handles context nodes on the first or second selectors, both, or none.
+// returns the moved HTMLElement
+Y2.util.Dom.insertAfter&amp;#40;'div.third','div.fourth'&amp;#41;;
+Y2.util.Dom.insertAfter&amp;#40;'div.third', context,'div.fourth'&amp;#41;;
+Y2.util.Dom.insertAfter&amp;#40;'div.third', 'div.fourth', context&amp;#41;;
+Y2.util.Dom.insertAfter&amp;#40;'div.third', context,'div.fourth', context&amp;#41;;
+</code></pre>
+
+<h1>insertBefore</h1>
+
+<p>Take the first matched node of the first selector and insert before the first matched node of the second selector</p>
+
+<pre><code>// Note that this function handles context nodes on the first or second selectors, both, or none.
+// returns the moved HTMLElement
+Y2.util.Dom.insertBefore&amp;#40;'div.third','div.fourth'&amp;#41;;
+Y2.util.Dom.insertBefore&amp;#40;'div.third', context,'div.fourth'&amp;#41;;
+Y2.util.Dom.insertBefore&amp;#40;'div.third','div.fourth', context&amp;#41;;
+Y2.util.Dom.insertBefore&amp;#40;'div.third', context,'div.fourth', context&amp;#41;;
+</code></pre>
+
+<h1>isAncestor</h1>
+
+<p>Find out whether the first matched node of the first selector is an ancestor of the first matched node of the second selector.</p>
+
+<pre><code>// Note that this function handles context nodes on the first or second selectors, both, or none.
+// return Boolean
+Y2.util.Dom.isAncestor&amp;#40;'div.second','b#theFirstB'&amp;#41;;
+Y2.util.Dom.isAncestor&amp;#40;'div.second', context,'b#theFirstB'&amp;#41;;
+Y2.util.Dom.isAncestor&amp;#40;'div.second','b#theFirstB', context&amp;#41;;
+Y2.util.Dom.isAncestor&amp;#40;'div.second', context,'b#theFirstB', context&amp;#41;;
+</code></pre>
+
+<p>(Documentation is a bitch!)</p>
+
+<h1>Additional Information</h1>
+
+<ul>
+<li><a href="http://www.zachleat.com/Projects/Y2/test.html">Run the test document.</a> (Might convert this to YUI Test framework if there is enough interest in this extension)</li>
+</ul>
+
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

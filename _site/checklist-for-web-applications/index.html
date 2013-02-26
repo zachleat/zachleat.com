@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Checklist for <span class="widow">Web Applications</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Checklist for <span class="widow">Web Applications</span></h1>
+<em>Posted on 20 Feb 2007</em>
+<h1></h1>
+
+<p>As the first post in this new category of web development, I’ve decided to keep it simple and post the different components and architecture considerations a developer must consider when making a new application, especially in today’s world of in-page dynamic interaction and the complications that has put on the problems that were considered solved in yesterday’s page level world. Mostly this is a place to collect my thoughts on this subject.</p>
+
+<ul>
+<li><strong>Automatic Print Styling</strong>: Is the page going to be able to be printed properly without a “Printer friendly” link? CSS style sheets can be used to modify the output of the page using the @media print declaration. Are the widget components you’re using in your JavaScript library able to support easy printing?</li>
+<li><strong>Browser History Management</strong>: Will your application support the back button, especially with the increased usage of AJAX interactions on a full page application. Don’t use XMLHTTPRequest’s to fetch the entire content of a page. Just redirect them to a new page when you are only saving the header and the footer.</li>
+<li><strong>Graded Browser Support</strong>: support of the web browsers with a large percentage of market share using the ideas put forth by Nate Koechley in his Graded Browser Support descriptions.</li>
+<li><strong>Bookmark and Permanent Linking</strong>: is the behavior of your JavaScript application changing how data is being displayed? You’d better modify the URL to allow the user to bookmark link straight to the same view.</li>
+<li><strong>File Compression</strong>: Minimize your CSS and JavaScript for delivery. GZip your CSS and JavaScript for browsers that support it (most all modern browsers do).</li>
+<li><strong>Efficient Caching Mechanisms</strong>: server side caching of data is necessary for high volume traffic.</li>
+<li><strong>Internationalization</strong> (i18n): will your application be viewed in other countries by non-English speakers? Are your dates in an international format? How about 24 hour time formats? Time zones? Do they observe Daylight Saving Time?</li>
+<li><strong>Error Logging</strong>: Both server side and client side (using AJAX to log JavaScript errors can be very helpful)</li>
+</ul>
+
+
+<p><strong>Recommended Luxury Items</strong></p>
+
+<ul>
+<li><strong>Support mobile devices</strong>: How will your application look on a Blackberry? How does it render in Opera Mini?</li>
+<li><strong>Offline Mode</strong>: Add and modify data offline, with the ability to automatically synchronize changes when an internet connection becomes available.</li>
+<li><strong>Exportable data</strong>: PDF, Excel, RSS, even offline static HTML. JavaScript can sometimes give unknown results when using the browser to save the page locally. Make sure this is supported. Don’t force your users to save screenshots.</li>
+</ul>
+
+
+<p><strong>Enterprise Client Side Widgets</strong></p>
+
+<ul>
+<li><strong>Data Grid</strong>: businesses just love data grids. Nothing like a nice standard set of cookie cutter constraints to force upon your data.</li>
+<li><strong>Charts and Graphs</strong>: metrics are important. Existing client side JavaScript charting packages can be limited when it comes to printing, or even saving the chart as an image file. These are important.</li>
+</ul>
+
+
+<p>There are many facets that a developer must consider when designing a new application. I hope this list will at least make you think about some things that you may not have considered before. Thanks for reading.</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

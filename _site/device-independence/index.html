@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Device Independence on the <span class="widow">Open Web</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Device Independence on the <span class="widow">Open Web</span></h1>
+<em>Posted on 29 Aug 2009</em>
+<h1></h1>
+
+<p>Open Web advocacy can get pretty lonely working in Big Enterprise. Armed with slow moving standards bodies, and held back by antiquated browser support, architectural battles over tools and frameworks can get pretty hairy if you don’t approach them with the right frame of mind.</p>
+
+<p>Big Enterprise is traditionally known for creating development environments that foster a “get it done” mentality, often rewarding results over correctness (mileage, of course, may vary).</p>
+
+<blockquote><p>My company uses IE6, and the application works in IE6, so it’s done!</p></blockquote>
+
+<p>This little quagmire is amplified by the fact that when using Open Web technology, there are many ways to get things done, and most of them are incorrect. But those mistakes don’t manifest themselves until the project is in the hands of the end user, whom we often punish for our oversight.</p>
+
+<p>But there is hope. Using the power of web standards and Open Web best practices, we can achieve something panoramically, not microscopically, beautiful.</p>
+
+<p>The secret sauce of building for the Web isn’t its distribution model, in which updates are managed on the web server without the need to update software on the client (although the Anti-IE6 vigilantes would tell you differently). It most certainly isn’t development efficiency, as most people new to the game will so readily inform you of. Cross browser quirks due to non-standard browser implementations of CSS and JavaScript, or vague standards specifications have seen to that.</p>
+
+<blockquote><p>When I was writing Visual Basic, I got my job done so much quicker and easier!</p></blockquote>
+
+<h2>The power of the Open Web is Device Independence.</h2>
+
+<p>Visitors to our sites <strong>shouldn’t be met with warnings</strong> about what device they’ve chosen to use.</p>
+
+<blockquote><p>This site viewable only in IE7 , Firefox, Chrome, or Safari, and at minimum 1024×768 resolution.</p>
+
+<p>This site requires Flash or Silverlight</p></blockquote>
+
+<p>I realize that this is a controversial stance, especially given that most sites are dropping support for IE6, and more are relying on Flash and Silverlight plugins. <strong>Architect applications to your client device usage statistics, and don’t let your tools shape the statistics for you.</strong> Using techniques like progressive enhancement, we can ensure that our sites degrade gracefully to the capabilities of the client device. At it’s truest form, this is basic accessibility. But, Device Independence might be a more accurate term, since accessibility is unfortunately an overloaded term scoped solely with devices tied to disabilities (screen readers, for example). While screen readers are a very important piece, there is a bigger picture.</p>
+
+<p>When the iPhone came out, there was an uproar because it didn’t support Flash, for battery life and other reasons. But the uproar was from developers who had designed applications specifically for Flash! Would you say that those Flash applications were designed with device independence in mind? YouTube got around this by encoding their videos in MP4 format, which arguably has a higher device independence rating than the Flash format.</p>
+
+<p>Keep in mind that we’re <strong>not attempting to handle every permutation of end user browser settings</strong>, since most don’t change the defaults. Instead we are trying to scoop up the largest base of supported devices with the least amount of effort! Who cares if an end user disabled JavaScript in their preferences? I’m more worried about the mobile browser that doesn’t even support JavaScript at all. But when you use Open Web properly, you get support for both!</p>
+
+<h2>Output Device Independence</h2>
+
+<ul>
+<li>Full Web Browsers: Does your site work in Opera? Don’t worry about pixel perfection, that’s something completely different — does it work?</li>
+<li>Web Browsers on Mobiles</li>
+<li>Search Engine Spiders and other Screen Scrapers</li>
+<li>Screen Readers</li>
+<li>Printers: Ever had to make an entirely separate page for print-friendly version of your application? Flash/Silverlight <strong>do not</strong> print well</li>
+<li>Televisions: Xbox 360, Wii, and Other Media Center Devices</li>
+<li>Projectors</li>
+<li><em>and more…</em></li>
+</ul>
+
+
+<p>Take a look at the <a href="http://www.w3.org/TR/CSS21/media.html#media-types">CSS specification for media types</a>. The standards are there! Support for CSS media types isn’t fool proof by any means, but the end goal is clearly visible.</p>
+
+<h2>Input Device Independence</h2>
+
+<p>But I’m not just talking about output device independence either. User interfaces should be adaptable to different input devices as well.</p>
+
+<ul>
+<li>Mouse</li>
+<li>Keyboard (often overlooked in web applications)</li>
+<li>Touch Screens (Single and <a href="http://hacks.mozilla.org/2009/08/multi-touch-firefox/">Multi-touch</a>)</li>
+<li>Voice, Motion Capture, and Facial Recognition (the standards and technology aren’t quite there yet, but <a href="http://hacks.mozilla.org/2009/06/connecting-html5-video/">progress is being made</a>)</li>
+<li><em>and more…</em></li>
+</ul>
+
+
+<p>The world is developing the Open Web, and it isn’t limited by a single company’s goals and timelines. At times, Open Web may seem like it’s a very slow moving <strong>glacier</strong> headed our way, but what else can you do but laugh when companies try to <strong>power their Titanic right through it</strong>?</p>
+
+<p><em>Article originally inspired by <a href="http://developer.yahoo.com/yui/articles/gbs/#history">Yahoo’s Graded Browser Support</a>.</em></p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

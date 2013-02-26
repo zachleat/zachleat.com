@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Namespaces in <span class="widow">Ext DomQuery</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Namespaces in <span class="widow">Ext DomQuery</span></h1>
+<em>Posted on 06 Mar 2007</em>
+<h1></h1>
+
+<p>Do you want to use <a href="http://unspace.ca/discover/attributes/">custom attributes</a> in your XHTML? Do you use the YUI Library and Jack Slocum’s wonderful <a href="http://www.jackslocum.com/blog/2007/01/11/domquery-css-selector-basic-xpath-implementation-with-benchmarks/">DomQuery selector engine</a>?</p>
+
+<p>If you want to select attribute nodes with a namespace in your XHTML, DomQuery does not support namespaces as an option to do so. But by adding a small snippet of code to DomQuery, we can make it do so.</p>
+
+<p>As a standalone snippet executed after DomQuery is loaded.</p>
+
+<pre><code>Ext.DomQuery.matchers.push&amp;#40; &amp;#123;
+    re: /^(?:([[{])(?:@)?([w-] (?::[w-] ))s?(?:(=|.=)s?['"]?(.*?)["']?)?[]}])/,
+    select: 'n = byAttribute(n, "{2}", "{4}", "{3}", "{1}");'
+&amp;#125; &amp;#41;;
+</code></pre>
+
+<p><strong>OR</strong> by adding an array entry into the DomQuery code matchers array (paste <em>after</em> line 479 of the <a href="http://www.yui-ext.com/deploy/yui-ext.0.40-alpha/source/DomQuery.js">17 January 2007 2:26:32 PM version</a>)</p>
+
+<pre><code>,&amp;#123;
+    re: /^(?:([[{])(?:@)?([w-] (?::[w-] ))s?(?:(=|.=)s?['"]?(.*?)["']?)?[]}])/,
+    select: 'n = byAttribute(n, "{2}", "{4}", "{3}", "{1}");'
+&amp;#125;
+</code></pre>
+
+<p>I did not modify the existing matcher for attribute selection because I didn’t want to modify the speed of the existing code for non-namespaced attributes. So by appending another entry to the end of the array, it’ll be used as a last resort if the other entries aren’t matched.</p>
+
+<p>This approach relies on the assumption that when selecting an attribute with getAttribute, the browser interprets any namespace automatically: getAttribute(‘myNamespace:myAttributeName’), as documented by the <a href="http://blogger.xs4all.nl/peterned/archive/2005/12/11/70033.aspx">peterned weblog</a>. This was tested in Firefox 2 and IE 6.</p>
+
+<p><strong>Usage:</strong></p>
+
+<pre><code>Ext.query&amp;#40; '#test-data span[myNameSpace:myAttribute=myValue]' &amp;#41;;
+</code></pre>
+
+<p>on the following DOM</p>
+
+<p>Other notes regarding DomQuery:</p>
+
+<p>To select a node with a non-empty attribute value:</p>
+
+<pre><code>Ext.query&amp;#40; '#test-data span[myNameSpace:myAttribute]' &amp;#41;;
+</code></pre>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

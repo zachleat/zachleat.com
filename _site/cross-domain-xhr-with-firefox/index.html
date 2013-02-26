@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cross Domain XHR with <span class="widow">Firefox 2</span>—zachleat.com</title>
+		<link href="/atom.xml" rel="alternate" title="Web 367 via zachleat.com" type="application/atom+xml">
+
+		<link href="/web/css/global.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="rail">
+			<header>
+				<a href="/web/">
+					<h1>Web 3.0, 6 Bladed Razors, 7 Minute Abs</h1>
+				</a>
+				<h2>A bunch of words by zachleat.</h2>
+			</header>
+			<aside>
+				<nav role="navigation">
+				</nav>
+			</aside>
+		</div>
+		<div class="content">
+			<div class="main" data-role="main">
+				<article>
+<h1>Cross Domain XHR with <span class="widow">Firefox 2</span></h1>
+<em>Posted on 30 Aug 2007</em>
+<h1></h1>
+
+<p>By now know you know that trying to do an XMLHttpRequest (XHR or AJAX) call to a domain that is different from the domain of the hosted JavaScript in Firefox will throw an exception.</p>
+
+<p><code>Error: uncaught exception: Permission denied to call method XMLHttpRequest.open</code></p>
+
+<p>If you don’t want a history of the past solutions, page down to see the final solution.</p>
+
+<p>The web has solutions to this problem, but most of them involve changing your JavaScript code, which I thought to be less than ideal. A common solution involves setting the UniversalBrowserRead security property in your JavaScript code [<a href="http://almaer.com/blog/archives/000794.html">Dion Almaer</a>, of Ajaxian fame]:</p>
+
+<pre><code>netscape.security.PrivilegeManager.enablePrivilege&amp;#40;'UniversalBrowserRead'&amp;#41;;
+</code></pre>
+
+<p>The problem with that solution (obviously) lies in single browser proprietary JavaScript polluting your code. And you have to set this property inside the scope of any usage (ie: inside your library file that does your AJAX calls and inside your callbacks, etc).</p>
+
+<p>Why can’t it just be as easy as Internet Explorer? They just pop-up a little security dialog asking you if you want to allow this access (which is also what the <code>enablePrivilege</code> function does as well).</p>
+
+<p>Another solution involves setting the <code>capability.policy.default.XMLHttpRequest.open</code> preference inside your prefs.js Firefox preference file [<a href="http://blog.dirolf.com/2007/06/enabling-cross-domain-ajax-in-firefox.html">Mike Dirolf</a>]. This worked as desired and allowed the AJAX call, but anytime you attempt to access the resulting XML you received a nice exception as well. It turns out this is the solution we wanted, it’s just incomplete.</p>
+
+<h2>The Final Solution</h2>
+
+<ol>
+<li>Close Firefox. It will overwrite your changes to the prefs.js file if you have it open.</li>
+<li><em>Optional step</em>: This approach will open up your Firefox security quite a bit, so I’d recommend setting up a separate profile in Firefox to use when testing. It will <strong>not </strong>pop up a security dialog when a cross-domain AJAX call is made.</li>
+<li>Find your prefs.js file. In Windows, it is typically located in the <code>C:Documents and Settings{YOUR_USERNAME}ApplicationDataMozillaFirefoxProfiles{YOUR_TEST_USER_PROFILE_ID}prefs.js</code></li>
+<li>Open it up and add the following lines:     user_pref&#40;"capability.policy.default.XMLHttpRequest.open", "allAccess"&#41;;
+
+<pre><code>user_pref&amp;#40;"capability.policy.default.CDATASection.nodeValue", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.Element.attributes", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.Element.childNodes", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.Element.firstChild", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.Element.getElementsByTagName", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.Element.tagName", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.HTMLCollection.length", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.HTMLCollection.item", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.Text.nodeValue", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.XMLDocument.documentElement", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.XMLDocument.getElementsByTagName", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.XMLHttpRequest.channel", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.XMLHttpRequest.open", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.XMLHttpRequest.responseText", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.XMLHttpRequest.responseXML", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.XMLHttpRequest.send", "allAccess"&amp;#41;;
+user_pref&amp;#40;"capability.policy.default.XMLHttpRequest.setRequestHeader", "allAccess"&amp;#41;;
+</code></pre></li>
+</ol>
+
+
+<p>This code was copied (with the exception of 1 line) from a source repository at [<a href="http://svn.kryogenix.org/filedetails.php?repname=kryogenix.org&amp;path=/jackfield/trunk/htmlui/prefs.js&amp;rev=0&amp;sc=0">kryogenix.org</a>]<br/>
+used in jackfield. It wasn’t intended to be used for this purpose, but it works.</p>
+
+<p>If you still get <code>Error: uncaught exception: Permission denied to call method _________</code> errors, you can add the method to your prefs.js. I would appreciate a comment with any commonly used methods not included above. Thanks.</p>
+
+<p><strong>Update:</strong> Because this article is deprecated (applies to an older version of Firefox), I’m updating the blog title in the interest of minimizing the number of disappointed users. Some might think this is a stupid thing to do, since it’s the most popular page on my blog, but I’m more interested in helping people than getting traffic.</p>
+
+</article>
+			</div><!-- /.main -->
+		</div><!-- /.content -->
+		<script type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', '']);
+		// _gaq.push(['_trackPageview']);
+
+		// (function() {
+		// 	var ga = document.createElement('script');
+		// 	ga.type = 'text/javascript';
+		// 	ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0];
+		// 	s.parentNode.insertBefore(ga, s);
+		// })();
+		</script>
+	</body>
+</html>

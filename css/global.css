@@ -1,0 +1,147 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.a11y-only {
+	position: absolute !important;
+	height: 1px;
+	width: 1px; 
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Border */
+html {
+	background-color: #000;
+	padding: .3em;
+}
+@media (min-width: 47em) {
+	html {
+		padding: 1em;
+	}
+}
+
+/* Layout */
+.rail {
+	text-align: center;
+	padding: 2em;
+}
+.content {
+	text-align: left;
+	padding: 1em;
+	background-color: #fff;
+	color: #525252;
+	min-height: 40em;
+}
+.main {
+	max-width: 36em;
+	margin: 0 auto;
+}
+
+@media (min-width: 47em) {
+	.rail {
+		text-align: left;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 17em;
+		padding: 4em 0 0 3em;
+	}
+	.content {
+		padding: 2em;
+		margin-left: 18em;
+	}
+}
+
+/* App specific */
+body {
+	/*font-family: Helvetica Neue, Helvetica, sans-serif;*/
+	padding: 0;
+	margin: 0;
+	background-color: #222;
+	font-size: 100%;
+	line-height: 140%;
+}
+:link {
+	color: #67a281;
+}
+:visited {
+	color: #3c624b;
+}
+:link:active,
+:link:hover,
+:visited:hover {
+	color: #d94625;
+}
+h1 {
+	font-size: 2.4em;
+	line-height: 110%;
+}
+h1:first-child {
+	margin-top: 0;
+}
+h2 {
+	font-size: 1.4em;
+}
+code {
+	font-family: Consolas, monospace;
+	font-size: .875em;
+}
+
+/* Header */
+.rail a {
+	text-decoration: none;
+}
+.rail h1 {
+	color: #444;
+}
+
+/* Posts and Content */
+.posts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.posts li {
+	position: relative;
+	padding: 0.5em 0;
+	padding-left: 10em;
+	border-bottom: 1px solid #eee;
+	counter-increment:start-from -1;
+}
+.posts li:before {
+	position: absolute;
+	left: 0;
+	content: counter(start-from) ".";
+}
+.posts a {
+	font-size: 1.4em;
+	line-height: 110%;
+	text-decoration: none;
+}
+.posts .date {
+	position: absolute;
+	left: 3em;
+	font-family: Consolas, monospace;
+	font-size: .625em;
+}
+
+/* FitVids */
+.fluid-width-video-wrapper {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	padding-top: 56.25%;
+}
+.fluid-width-video-wrapper iframe,
+.fluid-width-video-wrapper object,
+.fluid-width-video-wrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
