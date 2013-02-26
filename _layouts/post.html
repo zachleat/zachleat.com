@@ -3,6 +3,6 @@ layout: default
 ---
 <article>
 <h1>{{ page.title }}</h1>
-<em>Posted on {{ page.date | date: "%d %h %Y" }}</em>
+<em>Posted on {{ page.date | date: "%d %h %Y" }} by {{ page.author }}</em>
 {{ content }}
 </article>
