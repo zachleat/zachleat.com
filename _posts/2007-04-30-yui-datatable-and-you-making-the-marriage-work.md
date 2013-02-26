@@ -1,5 +1,5 @@
 ---
-title: 'YUI DataTable and You: Making the <span class="widow">Marriage Work</span>'
+title: 'YUI DataTable and You: Making the Marriage Work'
 author: Zach Leatherman
 layout: post
 permalink: /yui-datatable-and-you-making-the-marriage-work/

@@ -1,5 +1,5 @@
 ---
-title: 'Screen Readers and Listening at the Speed <span class="widow">of Sound</span>'
+title: 'Screen Readers and Listening at the Speed of Sound'
 author: Zach Leatherman
 layout: post
 permalink: /screen-readers-and-listening-at-the-speed-of-sound/

@@ -1,5 +1,5 @@
 ---
-title: 'Conservative Design Patterns for <span class="widow">Form Elements</span>'
+title: 'Conservative Design Patterns for Form Elements'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-patterns-for-form-elements/

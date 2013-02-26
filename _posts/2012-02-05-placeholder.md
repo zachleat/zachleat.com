@@ -1,5 +1,5 @@
 ---
-title: 'Placeholder Title for Article about <span class="widow">HTML5 Placeholders</span>'
+title: 'Placeholder Title for Article about HTML5 Placeholders'
 author: Zach Leatherman
 layout: post
 permalink: /placeholder/

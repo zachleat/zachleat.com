@@ -1,5 +1,5 @@
 ---
-title: 'The &#8220;24&#8243; Clock <span class="widow">on ALARMd</span>'
+title: 'The &#8220;24&#8243; Clock on ALARMd'
 author: Zach Leatherman
 layout: post
 permalink: /the-24-clock-on-alarmd/

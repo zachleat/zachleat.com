@@ -1,5 +1,5 @@
 ---
-title: 'If the Menu Fitts, We <span class="widow">Must Acquit</span>'
+title: 'If the Menu Fitts, We Must Acquit'
 author: Zach Leatherman
 layout: post
 permalink: /if-the-menu-fitts-we-must-acquit/

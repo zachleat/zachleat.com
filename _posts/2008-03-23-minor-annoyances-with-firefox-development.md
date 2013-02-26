@@ -1,5 +1,5 @@
 ---
-title: 'Minor Annoyances with <span class="widow">Firefox Development</span>'
+title: 'Minor Annoyances with Firefox Development'
 author: Zach Leatherman
 layout: post
 permalink: /minor-annoyances-with-firefox-development/

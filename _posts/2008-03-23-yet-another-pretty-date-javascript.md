@@ -1,5 +1,5 @@
 ---
-title: 'Yet Another Pretty <span class="widow">Date JavaScript</span>'
+title: 'Yet Another Pretty Date JavaScript'
 author: Zach Leatherman
 layout: post
 permalink: /yet-another-pretty-date-javascript/

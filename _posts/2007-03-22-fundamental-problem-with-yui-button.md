@@ -1,5 +1,5 @@
 ---
-title: 'Fundamental Problem with <span class="widow">YUI Button</span>'
+title: 'Fundamental Problem with YUI Button'
 author: Zach Leatherman
 layout: post
 permalink: /fundamental-problem-with-yui-button/

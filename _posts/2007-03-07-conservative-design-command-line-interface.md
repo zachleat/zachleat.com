@@ -1,5 +1,5 @@
 ---
-title: 'Conservative Design: Command <span class="widow">Line Interface</span>'
+title: 'Conservative Design: Command Line Interface'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-command-line-interface/

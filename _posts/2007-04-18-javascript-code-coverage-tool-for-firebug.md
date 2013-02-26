@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript Code Coverage Tool <span class="widow">for Firebug</span>'
+title: 'JavaScript Code Coverage Tool for Firebug'
 author: Zach Leatherman
 layout: post
 permalink: /javascript-code-coverage-tool-for-firebug/

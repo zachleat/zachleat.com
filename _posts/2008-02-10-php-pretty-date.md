@@ -1,5 +1,5 @@
 ---
-title: 'PHP <span class="widow">Pretty Date</span>'
+title: 'PHP Pretty Date'
 author: Zach Leatherman
 layout: post
 permalink: /php-pretty-date/

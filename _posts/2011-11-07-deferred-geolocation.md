@@ -1,5 +1,5 @@
 ---
-title: 'Deferreds and a Better <span class="widow">Geolocation API</span>'
+title: 'Deferreds and a Better Geolocation API'
 author: Zach Leatherman
 layout: post
 permalink: /deferred-geolocation/

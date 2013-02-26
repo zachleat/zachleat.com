@@ -1,5 +1,5 @@
 ---
-title: 'Wash your mouth out with SOAP and the YUI <span class="widow">Connection Manager</span>'
+title: 'Wash your mouth out with SOAP and the YUI Connection Manager'
 author: Zach Leatherman
 layout: post
 permalink: /wash-your-mouth-out-with-soap-and-the-yui-connection-manager/

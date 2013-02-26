@@ -1,5 +1,5 @@
 ---
-title: 'Wake up to YouTube on my Internet <span class="widow">Alarm Clock</span>'
+title: 'Wake up to YouTube on my Internet Alarm Clock'
 author: Zach Leatherman
 layout: post
 permalink: /wake-up-to-youtube-on-my-internet-alarm-clock/

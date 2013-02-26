@@ -1,5 +1,5 @@
 ---
-title: 'Conservative Design: <span class="widow">Hierarchical Select</span>'
+title: 'Conservative Design: Hierarchical Select'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-hierarchical-select-boxes/

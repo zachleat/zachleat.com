@@ -1,5 +1,5 @@
 ---
-title: 'Maiden Voyage of the <span class="widow">DOM Sailbloat</span>'
+title: 'Maiden Voyage of the DOM Sailbloat'
 author: Zach Leatherman
 layout: post
 permalink: /dom-sailbloat/

@@ -1,5 +1,5 @@
 ---
-title: 'Pragmatic <span class="widow">Progressive Enhancement</span>'
+title: 'Pragmatic Progressive Enhancement'
 author: Zach Leatherman
 layout: post
 permalink: /pragmatic/

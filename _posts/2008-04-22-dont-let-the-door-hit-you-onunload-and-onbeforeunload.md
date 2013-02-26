@@ -1,5 +1,5 @@
 ---
-title: 'Don&#8217;t Let the Door Hit You Onunload <span class="widow">and Onbeforeunload</span>'
+title: 'Don&#8217;t Let the Door Hit You Onunload and Onbeforeunload'
 author: Zach Leatherman
 layout: post
 permalink: /dont-let-the-door-hit-you-onunload-and-onbeforeunload/

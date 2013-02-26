@@ -1,5 +1,5 @@
 ---
-title: 'Double Whammy: OpenID <span class="widow">and Microformats</span>'
+title: 'Double Whammy: OpenID and Microformats'
 author: Zach Leatherman
 excerpt: |
   <a href="http://www.ownyouridentity.com/2008/04/30/get-satisfactions-nice-import-profile-feature/">Own your Identity had a great post today</a> detailing a great feature on the signup form of the <a href="http://getsatisfaction.com/people/new">Get Satisfaction</a> site.

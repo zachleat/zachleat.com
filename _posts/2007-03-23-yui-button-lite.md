@@ -1,5 +1,5 @@
 ---
-title: 'YUI <span class="widow">Button Lite</span>'
+title: 'YUI Button Lite'
 author: Zach Leatherman
 layout: post
 permalink: /yui-button-lite/

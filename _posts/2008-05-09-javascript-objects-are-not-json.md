@@ -1,5 +1,5 @@
 ---
-title: 'Javascript Objects are <span class="widow">NOT JSON</span>'
+title: 'Javascript Objects are NOT JSON'
 author: Zach Leatherman
 layout: post
 permalink: /javascript-objects-are-not-json/

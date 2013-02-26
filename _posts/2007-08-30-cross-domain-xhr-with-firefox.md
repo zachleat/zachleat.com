@@ -1,5 +1,5 @@
 ---
-title: 'Cross Domain XHR with <span class="widow">Firefox 2</span>'
+title: 'Cross Domain XHR with Firefox 2'
 author: Zach Leatherman
 layout: post
 permalink: /cross-domain-xhr-with-firefox/

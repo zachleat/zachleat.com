@@ -1,5 +1,5 @@
 ---
-title: '20000 Leagues Under the API: <span class="widow">YouTube JavaScript</span>'
+title: '20000 Leagues Under the API: YouTube JavaScript'
 author: Zach Leatherman
 layout: post
 permalink: /20000-leagues-under-the-api-youtube-javascript/

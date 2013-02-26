@@ -1,5 +1,5 @@
 ---
-title: 'Forgive <span class="widow">My Feed</span>'
+title: 'Forgive My Feed'
 author: Zach Leatherman
 layout: post
 permalink: /forgive-my-feed/

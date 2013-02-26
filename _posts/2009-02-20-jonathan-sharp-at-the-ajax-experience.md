@@ -1,5 +1,5 @@
 ---
-title: 'Jonathan Sharp at The <span class="widow">Ajax Experience</span>'
+title: 'Jonathan Sharp at The Ajax Experience'
 author: Zach Leatherman
 excerpt: >
   Former co-worker and all around good guy Jonathan Sharp gave a presentation at

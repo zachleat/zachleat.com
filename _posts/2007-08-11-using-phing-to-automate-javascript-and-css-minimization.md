@@ -1,5 +1,5 @@
 ---
-title: 'Using Phing to automate JavaScript and <span class="widow">CSS Minimization</span>'
+title: 'Using Phing to automate JavaScript and CSS Minimization'
 author: Zach Leatherman
 layout: post
 permalink: /using-phing-to-automate-javascript-and-css-minimization/

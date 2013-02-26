@@ -1,5 +1,5 @@
 ---
-title: 'Problems with <span class="widow">YUI DataTable</span>'
+title: 'Problems with YUI DataTable'
 author: Zach Leatherman
 layout: post
 permalink: /problems-with-yui-datatable/

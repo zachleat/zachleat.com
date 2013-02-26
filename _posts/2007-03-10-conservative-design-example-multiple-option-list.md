@@ -1,5 +1,5 @@
 ---
-title: 'Conservative Design Example: Multiple <span class="widow">Option List</span>'
+title: 'Conservative Design Example: Multiple Option List'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-example-multiple-option-list/

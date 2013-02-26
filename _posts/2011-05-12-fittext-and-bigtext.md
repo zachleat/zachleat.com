@@ -1,5 +1,5 @@
 ---
-title: 'FitText + BigText: A Tale of <span class="widow">Two Plugins</span>'
+title: 'FitText + BigText: A Tale of Two Plugins'
 author: Zach Leatherman
 layout: post
 permalink: /fittext-and-bigtext/

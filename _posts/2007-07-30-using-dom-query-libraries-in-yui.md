@@ -1,5 +1,5 @@
 ---
-title: 'Using DOM Query Libraries <span class="widow">in YUI</span>'
+title: 'Using DOM Query Libraries in YUI'
 author: Zach Leatherman
 layout: post
 permalink: /using-dom-query-libraries-in-yui/

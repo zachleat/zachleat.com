@@ -1,5 +1,5 @@
 ---
-title: 'Raging Netflix Queue, a Google <span class="widow">Chrome Extension</span>'
+title: 'Raging Netflix Queue, a Google Chrome Extension'
 author: Zach Leatherman
 layout: post
 permalink: /raging-netflix-queue/

@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript Frameworks <span class="widow">and JSF</span>'
+title: 'JavaScript Frameworks and JSF'
 author: Zach Leatherman
 layout: post
 permalink: /javascript-frameworks-and-jsf/

@@ -1,5 +1,5 @@
 ---
-title: 'Beaten to the <span class="widow">Spiked Punch</span>'
+title: 'Beaten to the Spiked Punch'
 author: Zach Leatherman
 layout: post
 permalink: /beaten-to-the-spiked-punch/

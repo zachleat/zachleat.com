@@ -1,5 +1,5 @@
 ---
-title: 'CSS3 <span class="widow">Job Transition</span>'
+title: 'CSS3 Job Transition'
 author: Zach Leatherman
 layout: post
 permalink: /css3-job-transition/

@@ -1,5 +1,5 @@
 ---
-title: 'Performance Caveat with jQuery Selectors and <span class="widow">Live Events</span>'
+title: 'Performance Caveat with jQuery Selectors and Live Events'
 author: Zach Leatherman
 layout: post
 permalink: /performance-caveat-with-jquery-selectors-and-live-events/

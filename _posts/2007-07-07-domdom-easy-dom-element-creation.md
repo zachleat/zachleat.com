@@ -1,5 +1,5 @@
 ---
-title: 'DOMDom, easy DOM <span class="widow">Element Creation</span>'
+title: 'DOMDom, easy DOM Element Creation'
 author: Zach Leatherman
 layout: post
 permalink: /domdom-easy-dom-element-creation/

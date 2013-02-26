@@ -1,5 +1,5 @@
 ---
-title: 'Checklist for <span class="widow">Web Applications</span>'
+title: 'Checklist for Web Applications'
 author: Zach Leatherman
 layout: post
 permalink: /checklist-for-web-applications/

@@ -1,5 +1,5 @@
 ---
-title: 'BigText Makes <span class="widow">Text Big</span>'
+title: 'BigText Makes Text Big'
 author: Zach Leatherman
 layout: post
 permalink: /bigtext-makes-text-big/

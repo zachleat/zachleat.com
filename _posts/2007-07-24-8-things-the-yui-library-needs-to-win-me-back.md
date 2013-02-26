@@ -1,5 +1,5 @@
 ---
-title: '8 Things the YUI Library Needs to Win <span class="widow">Me Back</span>'
+title: '8 Things the YUI Library Needs to Win Me Back'
 author: Zach Leatherman
 layout: post
 permalink: /8-things-the-yui-library-needs-to-win-me-back/

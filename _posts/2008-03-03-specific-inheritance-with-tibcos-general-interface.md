@@ -1,5 +1,5 @@
 ---
-title: 'Specific Inheritance with TIBCO&#8217;s <span class="widow">General Interface</span>'
+title: 'Specific Inheritance with TIBCO&#8217;s General Interface'
 author: Zach Leatherman
 layout: post
 permalink: /specific-inheritance-with-tibcos-general-interface/

@@ -1,5 +1,5 @@
 ---
-title: 'ALARMd Unix Time Format for <span class="widow">1234567890 Day</span>'
+title: 'ALARMd Unix Time Format for 1234567890 Day'
 author: Zach Leatherman
 layout: post
 permalink: /alarmd-unix-time-format-for-1234567890-day/

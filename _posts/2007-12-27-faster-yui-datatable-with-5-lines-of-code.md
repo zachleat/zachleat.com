@@ -1,5 +1,5 @@
 ---
-title: 'Faster YUI DataTable with 5 Lines <span class="widow">of Code</span>'
+title: 'Faster YUI DataTable with 5 Lines of Code'
 author: Zach Leatherman
 layout: post
 permalink: /faster-yui-datatable-with-5-lines-of-code/

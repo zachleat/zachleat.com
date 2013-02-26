@@ -1,5 +1,5 @@
 ---
-title: 'Forward Compatibility <span class="widow">and JavaScript</span>'
+title: 'Forward Compatibility and JavaScript'
 author: Zach Leatherman
 layout: post
 permalink: /forward-compatibility-and-javascript/

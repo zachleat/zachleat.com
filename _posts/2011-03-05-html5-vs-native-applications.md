@@ -1,5 +1,5 @@
 ---
-title: 'HTML5 vs. Native Applications, <span class="widow">The Presentation</span>'
+title: 'HTML5 vs. Native Applications, The Presentation'
 author: Zach Leatherman
 layout: post
 permalink: /html5-vs-native-applications/

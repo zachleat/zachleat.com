@@ -1,5 +1,5 @@
 ---
-title: 'ALARMd 2 Beta, with Google <span class="widow">Calendar Integration</span>'
+title: 'ALARMd 2 Beta, with Google Calendar Integration'
 author: Zach Leatherman
 layout: post
 permalink: /alarmd-2-beta-with-google-calendar-integration/

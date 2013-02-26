@@ -1,5 +1,5 @@
 ---
-title: 'ALARMd is a Google <span class="widow">Code Project</span>'
+title: 'ALARMd is a Google Code Project'
 author: Zach Leatherman
 layout: post
 permalink: /alarmd-is-a-google-code-project/

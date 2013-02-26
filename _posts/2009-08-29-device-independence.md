@@ -1,5 +1,5 @@
 ---
-title: 'Device Independence on the <span class="widow">Open Web</span>'
+title: 'Device Independence on the Open Web'
 author: Zach Leatherman
 layout: post
 permalink: /device-independence/

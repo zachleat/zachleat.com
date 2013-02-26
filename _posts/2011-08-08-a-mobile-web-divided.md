@@ -1,5 +1,5 @@
 ---
-title: 'A Mobile <span class="widow">Web Divided</span>'
+title: 'A Mobile Web Divided'
 author: Zach Leatherman
 layout: post
 permalink: /a-mobile-web-divided/

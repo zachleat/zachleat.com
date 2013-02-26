@@ -1,5 +1,5 @@
 ---
-title: 'Tips for Programming <span class="widow">JavaScript Functions</span>'
+title: 'Tips for Programming JavaScript Functions'
 author: Zach Leatherman
 layout: post
 permalink: /tips-for-programming-javascript-functions/

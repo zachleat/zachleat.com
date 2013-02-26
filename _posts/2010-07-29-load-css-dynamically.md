@@ -1,5 +1,5 @@
 ---
-title: 'Faking Onload for <span class="widow">Link Elements</span>'
+title: 'Faking Onload for Link Elements'
 author: Zach Leatherman
 layout: post
 permalink: /load-css-dynamically/

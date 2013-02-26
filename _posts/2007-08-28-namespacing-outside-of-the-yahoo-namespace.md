@@ -1,5 +1,5 @@
 ---
-title: 'Namespacing outside of the <span class="widow">YAHOO Namespace</span>'
+title: 'Namespacing outside of the YAHOO Namespace'
 author: Zach Leatherman
 layout: post
 permalink: /namespacing-outside-of-the-yahoo-namespace/

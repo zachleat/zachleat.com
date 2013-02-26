@@ -1,5 +1,5 @@
 ---
-title: 'The JavaScript <span class="widow">Testing Challenge</span>'
+title: 'The JavaScript Testing Challenge'
 author: Zach Leatherman
 layout: post
 permalink: /javascript-tdd/

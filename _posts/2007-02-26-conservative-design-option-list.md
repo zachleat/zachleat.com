@@ -1,5 +1,5 @@
 ---
-title: 'Conservative Design: <span class="widow">Option List</span>'
+title: 'Conservative Design: Option List'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-option-list/

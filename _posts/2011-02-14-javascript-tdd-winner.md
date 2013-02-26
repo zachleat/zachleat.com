@@ -1,5 +1,5 @@
 ---
-title: 'The JavaScript Testing <span class="widow">Challenge Winner</span>'
+title: 'The JavaScript Testing Challenge Winner'
 author: Zach Leatherman
 layout: post
 permalink: /javascript-tdd-winner/

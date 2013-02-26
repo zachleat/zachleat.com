@@ -1,5 +1,5 @@
 ---
-title: 'ALARMd is now <span class="widow">on Github</span>'
+title: 'ALARMd is now on Github'
 author: Zach Leatherman
 layout: post
 permalink: /alarmd-is-now-on-github/

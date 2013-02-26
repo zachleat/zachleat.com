@@ -1,5 +1,5 @@
 ---
-title: 'maLArquee, Bringing Back <span class="widow">the Marquee</span>'
+title: 'maLArquee, Bringing Back the Marquee'
 author: Zach Leatherman
 layout: post
 permalink: /malarquee-bringing-back-the-marquee/

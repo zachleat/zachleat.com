@@ -1,5 +1,5 @@
 ---
-title: 'Logical XOR <span class="widow">in JavaScript</span>'
+title: 'Logical XOR in JavaScript'
 author: Zach Leatherman
 layout: post
 permalink: /logical-xor-in-javascript/

@@ -1,5 +1,5 @@
 ---
-title: 'Rethinking JavaScript Grids <span class="widow">and DataTables</span>'
+title: 'Rethinking JavaScript Grids and DataTables'
 author: Zach Leatherman
 layout: post
 permalink: /rethinking-javascript-grids-and-datatables/

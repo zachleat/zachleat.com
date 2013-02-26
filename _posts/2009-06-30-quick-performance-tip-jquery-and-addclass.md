@@ -1,5 +1,5 @@
 ---
-title: 'Quick Performance Tip: jQuery <span class="widow">and addClass</span>'
+title: 'Quick Performance Tip: jQuery and addClass'
 author: Zach Leatherman
 layout: post
 permalink: /quick-performance-tip-jquery-and-addclass/

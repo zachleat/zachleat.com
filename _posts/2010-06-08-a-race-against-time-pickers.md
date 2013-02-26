@@ -1,5 +1,5 @@
 ---
-title: 'A Race Against <span class="widow">Time Pickers</span>'
+title: 'A Race Against Time Pickers'
 author: Zach Leatherman
 layout: post
 permalink: /a-race-against-time-pickers/

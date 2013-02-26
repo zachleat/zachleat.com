@@ -1,5 +1,5 @@
 ---
-title: 'Google Using YUI <span class="widow">Grids CSS</span>'
+title: 'Google Using YUI Grids CSS'
 author: Zach Leatherman
 layout: post
 permalink: /google-using-yui-grids-css/

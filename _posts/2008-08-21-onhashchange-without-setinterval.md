@@ -1,5 +1,5 @@
 ---
-title: 'Emulating onhashchange <span class="widow">without setInterval</span>'
+title: 'Emulating onhashchange without setInterval'
 author: Zach Leatherman
 layout: post
 permalink: /onhashchange-without-setinterval/

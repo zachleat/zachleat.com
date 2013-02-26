@@ -1,5 +1,5 @@
 ---
-title: 'Conservative Design Example: <span class="widow">Hierarchical Options</span>'
+title: 'Conservative Design Example: Hierarchical Options'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-example-hierarchical-options/

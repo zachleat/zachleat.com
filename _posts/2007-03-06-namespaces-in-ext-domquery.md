@@ -1,5 +1,5 @@
 ---
-title: 'Namespaces in <span class="widow">Ext DomQuery</span>'
+title: 'Namespaces in Ext DomQuery'
 author: Zach Leatherman
 layout: post
 permalink: /namespaces-in-ext-domquery/
