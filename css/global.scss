@@ -17,7 +17,7 @@ $monospace: Consolas, monospace;
 
 /* Border */
 html {
-	background-color: #000;
+	background-color: #222;
 	padding: .3em;
 }
 @media (min-width: 47em) {
@@ -46,11 +46,12 @@ html {
 @media (min-width: 47em) {
 	.rail {
 		text-align: left;
-		position: absolute;
+		position: fixed;
 		left: 0;
 		top: 0;
+		height: 100%;
 		width: 17em;
-		padding: 4em 0 0 3em;
+		padding: 2em 0 0 2em;
 	}
 	.content {
 		padding: 2em;
@@ -63,7 +64,7 @@ body {
 	/*font-family: Helvetica Neue, Helvetica, sans-serif;*/
 	padding: 0;
 	margin: 0;
-	background-color: #222;
+	background-color: #fff;
 	font-size: 100%;
 	line-height: 140%;
 }
@@ -94,11 +95,18 @@ code {
 }
 
 /* Header */
+.rail img {
+	width: auto;
+	max-width: 100%;
+}
 .rail a {
 	text-decoration: none;
 }
 .rail h1 {
-	color: #444;
+	color: #aaa;
+}
+.rail h2 {
+	color: #bbb;
 }
 
 /* Posts and Content */
@@ -124,8 +132,9 @@ code {
 }
 .posts li::before {
 	right: .3em;
-	content: "#" counter(start-from);
-	font-size: .8125em; /* 13px */
+	bottom: 0;
+	content: "(#" counter(start-from) ")";
+	font-size: .625em; /* 10px */
 }
 .posts a {
 	display: block;
