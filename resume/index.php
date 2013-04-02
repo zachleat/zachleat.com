@@ -44,6 +44,19 @@ date_default_timezone_set('America/Chicago');
             <li class="experience vevent vcard">
               <a href="#hcard-Zach-Leatherman-name" class="include" title="Zach Leatherman"></a>
               <div>
+                <span class="summary title">Web Developer</span> for
+                <span class="org">Filament Group</span>
+              </div>
+              <address class="adr">
+                <span class="locality">Boston</span>,
+                <abbr class="region" title="Massachusetts">MA</abbr>
+              </address>
+              <abbr class="dtstart" title="2012-06-04">Jun 2012</abbr> to
+              <abbr class="dtend" title="<?php echo date('Y-m-d'); ?>">Present</abbr>
+            </li>
+            <li class="experience vevent vcard">
+              <a href="#hcard-Zach-Leatherman-name" class="include" title="Zach Leatherman"></a>
+              <div>
                 <span class="summary title">Front End Architect</span> for
                 <span class="org">Union Pacific Railroad Co.</span>
               </div>
@@ -52,7 +65,7 @@ date_default_timezone_set('America/Chicago');
                 <abbr class="region" title="Nebraska">NE</abbr>
               </address>
               <abbr class="dtstart" title="2011-06-01">Jun 2011</abbr> to
-              <abbr class="dtend" title="<?php echo date('Y-m-d'); ?>">Present</abbr>
+              <abbr class="dtend" title="2012-05-25">May 2012</abbr>
               <div class="description">
                 <ul>
                   <li>While maintaining a technical leadership role on prior projects, also responsible for setting the company's direction for mobile application development.</li>
