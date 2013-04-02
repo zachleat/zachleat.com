@@ -45,7 +45,7 @@ date_default_timezone_set('America/Chicago');
               <a href="#hcard-Zach-Leatherman-name" class="include" title="Zach Leatherman"></a>
               <div>
                 <span class="summary title">Web Developer</span> for
-                <span class="org">Filament Group</span>
+                <a href="http://filamentgroup.com/" class="org">Filament Group</a>
               </div>
               <address class="adr">
                 <span class="locality">Boston</span>,
@@ -119,42 +119,6 @@ date_default_timezone_set('America/Chicago');
                   <li>Developed Apache Ant build process for automated deployment including CSS and JS minimization.</li>
                   <li>Utilized a full front end testing suite, including a DSL for generating Selenium tests, JSUnit tests, JSLint, and client-side logging using log4javascript.</li>
                 </ul>
-              </div>
-            </li>
-            <li class="experience vevent vcard">
-              <a href="#hcard-Zach-Leatherman-name" class="include" title="Zach Leatherman"></a>
-              <div>
-                <span class="summary title">Java Development Intern</span> for
-                <span class="org">Interact Incorporated</span>
-              </div>
-              <address class="adr">
-                <span class="locality">Lincoln</span>,
-                <abbr class="region" title="Nebraska">NE</abbr>
-              </address>
-              <abbr class="dtstart" title="2006-02">Feb</abbr> to
-              <abbr class="dtend" title="2006-05">May 2006</abbr>
-              <div class="description">
-                <ul>
-                  <li>Bug fixing for a customer service application written in Java.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="experience vevent vcard">
-              <a href="#hcard-Zach-Leatherman-name" class="include" title="Zach Leatherman"></a>
-              <div>
-                <span class="summary title">Software Engineering Intern</span> for
-                <span class="org">The New Media Center</span>
-              </div>
-              <address class="adr">
-                <span class="locality">Lincoln</span>,
-                <abbr class="region" title="Nebraska">NE</abbr>
-              </address>
-              <abbr class="dtstart" title="2004-08">Aug 2004</abbr> to
-              <abbr class="dtend" title="2006-01">Jan 2006</abbr>
-              <div class="description">
-                <ul>
-                  <li>Maintained and developed University Inventory Auction Site using PHP Auction.</li>
-                  <li>Developed a simple CMS and proprietary MVC Framework for standardization of internal projects.</li>
               </div>
             </li>
           </ul>
