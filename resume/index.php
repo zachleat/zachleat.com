@@ -8,7 +8,7 @@ date_default_timezone_set('America/Chicago');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zach Leatherman</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400normal,700normal">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/resume/index.css">
   </head>
   <body>
     <div class="hresume">
@@ -163,7 +163,7 @@ date_default_timezone_set('America/Chicago');
               <abbr class="dtstart" title="2013-03-02">Mar 2013</abbr>
             </li>
             <li class="experience vevent">
-              Presented at <a class="url" href="http://nebraskajs.com/"></a> on <a href="http://nebraskajs.com/2012/performance-in-rwd/">Performance in Responsive Web Design</a>
+              Presented at <a class="url" href="http://nebraskajs.com/">NebraskaJS</a> on <a href="http://nebraskajs.com/2012/performance-in-rwd/">Performance in Responsive Web Design</a>
               <abbr class="dtstart" title="2012-11-08">Nov 2012</abbr>
             </li>
             <li class="experience vevent">
