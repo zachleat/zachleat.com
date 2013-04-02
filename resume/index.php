@@ -126,42 +126,6 @@ date_default_timezone_set('America/Chicago');
 
         <article>
           <header>
-            <h2>Education</h2>
-          </header>
-          <ul id="education" class="vcalendar">
-            <li class="education vevent">
-              <div>
-                <a href="http://www.unl.edu/" class="url">University of Nebraska</a>
-              </div>
-              <address class="adr">
-                <span class="locality">Lincoln</span>,
-                <abbr class="region" title="Nebraska">NE</abbr>
-              </address>
-              <abbr class="dtstart" title="2001-08">Aug 2001</abbr> to
-              <abbr class="dtend" title="2006-05">May 2006</abbr>
-              <div class="summary">
-              Bachelor of Science, with a Major in Computer Engineering and Minor in Mathematics
-              </div>
-              <div class="description">
-                Related Course Work: Semantic Web, Computer Architecture, Data Structures and Algorithms, Database Systems, Software Engineering, Artificial Intelligence, Cryptography and Security, GUI and Unix Programming, Operating Systems and Kernels
-              </div>
-            </li>
-            <li class="education vevent">
-              <div class="summary">Engineering Study Abroad Program</div>
-              <address class="adr">
-                <span class="locality">Fortaleza</span>,
-                <abbr class="region" title="Cear&aacute;">CE</abbr>,
-                <span class="country-name">Brazil</span>
-              </address>
-              <abbr class="dtstart" title="2005-05-10">May</abbr>
-              <abbr class="dtend" title="2005-06-05">2005</abbr>
-              <div class="description">Studies in Brazilian Culture and the Portuguese Language</div>
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <header>
             <h2>Honors and Activities</h2>
           </header>
           <ul id="honors" class="vcalendar">
@@ -246,6 +210,42 @@ date_default_timezone_set('America/Chicago');
                 Lead developer for an Open Source PHP Project passed to a new development team and still
                 in use worldwide.
               </div>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h2>Education</h2>
+          </header>
+          <ul id="education" class="vcalendar">
+            <li class="education vevent">
+              <div>
+                <a href="http://www.unl.edu/" class="url">University of Nebraska</a>
+              </div>
+              <address class="adr">
+                <span class="locality">Lincoln</span>,
+                <abbr class="region" title="Nebraska">NE</abbr>
+              </address>
+              <abbr class="dtstart" title="2001-08">Aug 2001</abbr> to
+              <abbr class="dtend" title="2006-05">May 2006</abbr>
+              <div class="summary">
+              Bachelor of Science, with a Major in Computer Engineering and Minor in Mathematics
+              </div>
+              <div class="description">
+                Related Course Work: Semantic Web, Computer Architecture, Data Structures and Algorithms, Database Systems, Software Engineering, Artificial Intelligence, Cryptography and Security, GUI and Unix Programming, Operating Systems and Kernels
+              </div>
+            </li>
+            <li class="education vevent">
+              <div class="summary">Engineering Study Abroad Program</div>
+              <address class="adr">
+                <span class="locality">Fortaleza</span>,
+                <abbr class="region" title="Cear&aacute;">CE</abbr>,
+                <span class="country-name">Brazil</span>
+              </address>
+              <abbr class="dtstart" title="2005-05-10">May</abbr>
+              <abbr class="dtend" title="2005-06-05">2005</abbr>
+              <div class="description">Studies in Brazilian Culture and the Portuguese Language</div>
             </li>
           </ul>
         </article>
