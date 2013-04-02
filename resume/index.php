@@ -195,20 +195,42 @@ date_default_timezone_set('America/Chicago');
               <abbr class="dtend" title="<?php echo date('Y-m-d'); ?>">Present</abbr>
               <div class="description">
                 <ul>
-                  <li>Over 4100 subscribers and growing. Over one million lifetime page views.</li>
+                  <li>Over 5500 subscribers and growing; 1.2 million lifetime page views.</li>
                 </ul>
               </div>
             </li>
             <li class="experience vevent">
-              <a class="url" href="https://github.com/jquery/jquery-mobile/pull/3310">Code contribution accepted</a> into jQuery Mobile project.
-              <abbr class="dtstart" title="2011-12">Dec 2011</abbr>
+              Herding <a class="url" href="http://nebraskajs.com/">NebraskaJS</a>,
+              <span class="summary">a local JavaScript meetup.</span>
+              <abbr class="dtstart" title="2012-07">July 2012</abbr> to
+              <abbr class="dtend" title="<?php echo date('Y-m-d'); ?>">Present</abbr>
+              <div class="description">
+                <ul>
+                  <li>Over 275 members.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="experience vevent">
+              Code contributions accepted into <a class="url" href="https://github.com/jquery/jquery-mobile/commits?author=zachleat">jQuery Mobile</a>, <a class="url" href="https://github.com/johndyer/mediaelement/commits?author=zachleat">MediaElement.js</a>, <a class="url" href="https://github.com/h5bp/html5please/commits?author=zachleat">html5please</a>, <a href="https://github.com/a11yproject/a11yproject.com/commits?author=zachleat" class="url">a11yproject</a>, and <a href="https://github.com/stubbornella/csslint/commits?author=zachleat" class="url">CSS Lint</a>.
+            </li>
+            <li class="experience vevent">
+              Presented at <a class="url" href="http://www.nebraskacodecamp.com/">Nebraska Code Camp</a> on <a href="http://www.zachleat.com/web/tool-or-die/">Tool or Die, a Web Developer’s Workflow</a>
+              <abbr class="dtstart" title="2013-03-16">Mar 2013</abbr>
+            </li>
+            <li class="experience vevent">
+              Presented at <a class="url" href="http://awesomecamp.com/">Awesome Camp</a> on <a href="https://speakerdeck.com/zachleat/side-projects">Side Projects</a>
+              <abbr class="dtstart" title="2013-03-02">Mar 2013</abbr>
+            </li>
+            <li class="experience vevent">
+              Presented at <a class="url" href="http://nebraskajs.com/"></a> on <a href="http://nebraskajs.com/2012/performance-in-rwd/">Performance in Responsive Web Design</a>
+              <abbr class="dtstart" title="2012-11-08">Nov 2012</abbr>
             </li>
             <li class="experience vevent">
               Presented at <a class="url" href="http://www.meetup.com/jquery-omaha/events/25042581/">jQuery Omaha</a> on <a href="http://www.slideshare.net/zachleat/progressive-enhancement-8766538">Progressive Enhancement</a>
               <abbr class="dtstart" title="2011-08-02">Aug 2011</abbr>
             </li>
             <li class="experience vevent">
-              Presented at <a class="url" href="http://nebraskacodecamp.com/">Nebraska Code Camp 2011</a> on <a href="http://f2em.com/">The Front End Engineering Manifesto</a>
+              Presented at <a class="url" href="http://nebraskacodecamp.com/">Nebraska Code Camp</a> on <a href="http://f2em.com/">The Front End Engineering Manifesto</a>
               <abbr class="dtstart" title="2011-04-09">Apr 2011</abbr>
             </li>
             <li class="experience vevent">
@@ -256,38 +278,18 @@ date_default_timezone_set('America/Chicago');
             <h2>Tools and Languages</h2>
           </header>
           <ul id="tools" class="tools">
-            <li>
-              <span class="skill">JavaScript</span>
-                (including <span class="skill">JSON</span>,
-                <span class="skill">jQuery</span>,
-                <span class="skill">YUI</span>,
-                <span class="skill">mootools</span>,
-                <span class="skill">Node.js</span>)
-            </li>
-            <li class="skill">HTML, XHTML</li>
+            <li class="skill">JavaScript</li>
+            <li class="skill">node.js</li>
+            <li class="skill">HTML</li>
             <li class="skill">CSS</li>
-            <li>
-              <span class="skill">PHP</span> (including Zend Framework)
-            </li>
-            <li class="skill">MySQL</li>
-            <li class="skill">Subversion</li>
             <li class="skill">Git</li>
+            <li class="skill">Subversion</li>
+            <li class="skill">PHP</li>
+            <li class="skill">MySQL</li>
             <li class="skill">XSLT</li>
             <li class="skill">Apache Ant</li>
-            <li>
-              <span class="skill">XML</span>
-              (<span class="skill">SOAP</span>,
-              <span class="skill">WSDL</span>,
-              <span class="skill">XML Schema</span>)
-            </li>
-            <li>
-              <span class="skill">Java</span>
-              (<span class="skill">JSF</span>,
-              <span class="skill">Facelets</span>,
-              <span class="skill">Ajax4JSF</span>,
-              <span class="skill">Wicket</span>)
-            </li>
-            <li>Cursory knowledge of: <span class="skill">Ruby</span>, <span class="skill">Erlang</span>, <span class="skill">Common LISP</span>, <span class="skill">MIPS Assembly</span></li>
+            <li class="skill">Java</li>
+            <li>Cursory knowledge of: <span class="skill">Adobe Illustrator</span>, <span class="skill">Ruby</span>, <span class="skill">Erlang</span>, <span class="skill">Common LISP</span>, <span class="skill">MIPS Assembly</span></li>
           </ul>
         </article>
       </section>
