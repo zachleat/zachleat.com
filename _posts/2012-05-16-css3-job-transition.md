@@ -17,10 +17,14 @@ I’m extremely excited to announce that I have accepted a full time position wi
  [5]: http://twitter.com/pattytoland
  [6]: http://twitter.com/maggiewachs
 
+<div class="language-javascript" markdown="1">
+
     #zachleat {
       transition-property: employment;
       transition-delay: 1209600s; /* 14d */
     }
+
+</div>
 
 If you’ve been living under a block-level element and aren’t familiar with Filament Group, I’m sure you’re familiar with a few of their contributions to the web development world. They’re well known for their advocacy and real world application of development practices that are important for the future of the web: Accessibility, Progressive Enhancement, and Responsive Design. They’ve literally [written the book on Progressive Enhancement][7], and their recent redesign of the [Boston Globe][8] was one of the first major large scale implementations of Responsive Design. If that weren’t enough, they are also leading the development of the [jQuery Mobile][9] project.
 

@@ -38,65 +38,67 @@ Prerequisite: Java on the classpath
     `> JsTestDriver.bat Template` 
     Run (MacOS)  
     `$ ./JsTestDriver.sh Template`  
-    *This script will close Safari (be careful if you’re using Safari in other windows)*   
-    If a web browser popped up on your screen, congratulations! You have an automated testing environment set up and running. Easy, right?
+    *This script will close Safari (be careful if you’re using Safari in other windows)*
+
+If a web browser popped up on your screen, congratulations! You have an automated testing environment set up and running. Easy, right?
+
+## Writing a Test
+
+Now, let’s write our first test!
+
+1.  Open up `templateTest.js` in your favorite IDE.
+2.  Add the following:     TemplateTest = TestCase('TemplateTest');
+        TemplateTest.prototype.testSample = function()
+        {
+            assertTrue(true);
+            assertFalse(false);
+            assertEquals(true, true);
+        };
+
+3.  Re-run the JsTestDriver shell script from Step #3 above.
+
+Now you should see something like the following:
+
+    Total 1 tests (Passed: 1; Fails: 0; Errors: 0) (2.00 ms)
+      Safari 533.18.5 Mac OS: Run 1 tests (Passed: 1; Fails: 0; Errors 0) (2.00 ms)
     
-    ## Writing a Test
-    
-    Now, let’s write our first test!
-    
-    1.  Open up `templateTest.js` in your favorite IDE.
-    2.  Add the following:     TemplateTest = TestCase('TemplateTest');
-            TemplateTest.prototype.testSample = function()
-            {
-                assertTrue(true);
-                assertFalse(false);
-                assertEquals(true, true);
-            };
-    
-    3.  Re-run the JsTestDriver shell script from Step #3 above.
-    
-    Now you should see something like the following:
-    
-        Total 1 tests (Passed: 1; Fails: 0; Errors: 0) (2.00 ms)
-          Safari 533.18.5 Mac OS: Run 1 tests (Passed: 1; Fails: 0; Errors 0) (2.00 ms)
-        
-    
-    **Notice how you didn’t have to touch any HTML boilerplate code or manually bring up a web browser?** Productivity ensues! You’ve made it this far, are you brave enough to dive into a Code Kata?
-    
-    ## Prime Factors Code Kata
-    
-    Code Katas are just small programs used as practice. They’re a great way to introduce Test Driven Development and improve proficiency with your IDE.
-    
-    The Prime Factors Code Kata requires a function that takes a single integer argument and returns an array of prime factors of that argument in ascending numerical order. For example, passing in `8` should return `2, 2, 2`.
-    
-    *   [Original Java version by Uncle Bob Martin][5] (see [original post][6]).
-    *   [JavaScript implementation of the Prime Factors algorithm][7]
-    
-    I’ve recorded an unmodified single-take screencast of myself performing the kata below. I’m using the same source code I provided above, but with the [JsTestDriver Eclipse plugin][8] instead of using the command line to run the tests. The plugin is great for the screencast, because it very easily shows when the tests are failing or passing. You might also notice that it reruns the tests automatically every time I save.
-    
-    
-    
-    ## JsTestDriver
-    
-    If you want to learn more a about JsTestDriver, check out their [Google Code][9] page. “But I use QUnit!” you say. That’s fine, [there is an adaptor for that][10]. Using both tools together, you won’t need to launch each individual browser manually and trigger the tests to start. It will save you time.
-    
-    In the interest of full disclosure, here are the issues I’ve ran into so far using JsTestDriver: 
-    *   Doesn’t apply CSS in some browsers. [Issue #81][11]
-    *   Defaults to quirks mode. [Issue #79][12]
-    
-    ## Challenge
-    
-    Testing will help you. It will improve your the quality of your code and your productivity. I challenge you to practice the JavaScript Prime Factors Code Kata in your own IDE with your own automated testing process. Send a link to me on Twitter ([@zachleat][13]) with an unmodified single-take screencast of you performing the kata (in JavaScript) by December 25, 2010 and **the fastest kata screencast will win a copy of [Test-Driven JavaScript Development][14]** by [Christian Johansen][15] (PDF or Print version, your choice*).
-    
-    [Screenr][16] is a great tool for recording screencasts, if you need one.
-    
-    Good luck!
-    
-    *Coding must follow every step performed by myself in the above version. Templates and keyboard shortcuts can be used at your leisure, but no code can be generated specific to the kata itself (it must be a generic). Use your best judgement here, I reserve the right to disqualify any entries submitted that don’t follow the true spirit of the competition. 
-    Don’t fuck with the speed of the video. I’m spending my own money on this, so if you’re cheating then you’re just stealing from me. Just be cool about it, okay?
-    
-    * The Print version of the prize is restricted to USA or Canada, PDF version is available internationally (unless you want to work something out for shipping costs).
+
+**Notice how you didn’t have to touch any HTML boilerplate code or manually bring up a web browser?** Productivity ensues! You’ve made it this far, are you brave enough to dive into a Code Kata?
+
+## Prime Factors Code Kata
+
+Code Katas are just small programs used as practice. They’re a great way to introduce Test Driven Development and improve proficiency with your IDE.
+
+The Prime Factors Code Kata requires a function that takes a single integer argument and returns an array of prime factors of that argument in ascending numerical order. For example, passing in `8` should return `2, 2, 2`.
+
+*   [Original Java version by Uncle Bob Martin][5] (see [original post][6]).
+*   [JavaScript implementation of the Prime Factors algorithm][7]
+
+I’ve recorded an unmodified single-take screencast of myself performing the kata below. I’m using the same source code I provided above, but with the [JsTestDriver Eclipse plugin][8] instead of using the command line to run the tests. The plugin is great for the screencast, because it very easily shows when the tests are failing or passing. You might also notice that it reruns the tests automatically every time I save.
+
+<div class="fluid-width-video-wrapper"><iframe width="560" height="315" src="http://www.youtube.com/embed/zsCYkmAJBAY" frameborder="0" allowfullscreen></iframe></div>
+
+## JsTestDriver
+
+If you want to learn more a about JsTestDriver, check out their [Google Code][9] page. “But I use QUnit!” you say. That’s fine, [there is an adaptor for that][10]. Using both tools together, you won’t need to launch each individual browser manually and trigger the tests to start. It will save you time.
+
+In the interest of full disclosure, here are the issues I’ve ran into so far using JsTestDriver: 
+
+ * Doesn’t apply CSS in some browsers. [Issue #81][11]
+ * Defaults to quirks mode. [Issue #79][12]
+
+## Challenge
+
+Testing will help you. It will improve your the quality of your code and your productivity. I challenge you to practice the JavaScript Prime Factors Code Kata in your own IDE with your own automated testing process. Send a link to me on Twitter ([@zachleat][13]) with an unmodified single-take screencast of you performing the kata (in JavaScript) by December 25, 2010 and **the fastest kata screencast will win a copy of [Test-Driven JavaScript Development][14]** by [Christian Johansen][15] (PDF or Print version, your choice*).
+
+[Screenr][16] is a great tool for recording screencasts, if you need one.
+
+Good luck!
+
+*Coding must follow every step performed by myself in the above version. Templates and keyboard shortcuts can be used at your leisure, but no code can be generated specific to the kata itself (it must be a generic). Use your best judgement here, I reserve the right to disqualify any entries submitted that don’t follow the true spirit of the competition. 
+Don’t fuck with the speed of the video. I’m spending my own money on this, so if you’re cheating then you’re just stealing from me. Just be cool about it, okay?
+
+* The Print version of the prize is restricted to USA or Canada, PDF version is available internationally (unless you want to work something out for shipping costs).
 
  [3]: https://github.com/zachleat/JavaScript-Code-Katas/zipball/master
  [4]: https://github.com/zachleat/JavaScript-Code-Katas
