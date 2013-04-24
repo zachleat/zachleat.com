@@ -17,7 +17,7 @@ $monospace: Consolas, monospace;
 
 /* Border */
 html {
-	background-color: #222;
+	background-color: #7f917f;
 	padding: .3em;
 }
 @media (min-width: 47em) {
@@ -124,18 +124,6 @@ code {
 .posts li:first-child {
 	border-top: none;
 }
-.posts .date,
-.posts li::before {
-	position: absolute;
-	font-family: $monospace;
-	color: #aaa;
-}
-.posts li::before {
-	right: .3em;
-	bottom: 0;
-	content: "(#" counter(start-from) ")";
-	font-size: .625em; /* 10px */
-}
 .posts a {
 	display: block;
 	padding: 0.5em 2em 0.5em 4em;
@@ -143,7 +131,20 @@ code {
 	line-height: 110%;
 	text-decoration: none;
 }
+.posts .date,
+.posts li:before {
+	position: absolute;
+	font-family: $monospace;
+}
+.posts li:before {
+	right: .3em;
+	bottom: 0;
+	content: "#" counter(start-from) "";
+	color: #ccc;
+	font-size: .625em; /* 10px */
+}
 .posts .date {
+	color: #aaa;
 	left: .3em;
 	font-size: .5909em; /* 13px */
 }
