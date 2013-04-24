@@ -1,5 +1,7 @@
 ## Local Development Setup
 
+Prerequisites: Node.js and Ruby
+
 1. Apache Configuration
 
 		<VirtualHost *>
@@ -12,6 +14,16 @@
 
 		127.0.0.1	zachleat.com.local
 
+1. `gem install sass`
 1. `npm install`
 1. `grunt`
+
+## Local Development Workflow
+
+1. `grunt watch`
+1. `cd web && jekyll --server`
 1. Open `http://zachleat.com.local/`
+
+## TODO
+
+1. Add cssmin to grunt and generate web/dist/global.min.css
