@@ -53,6 +53,16 @@ module.exports = function(grunt) {
 				src: ['js/**/*.js']
 			}
 		},
+		sass: {
+			dist: {
+				options: {
+					style: 'expanded'
+				},
+				files: {
+					'web/dist/global.css': 'web/css/global.scss'
+				}
+			}
+		},
 		watch: {
 			js: {
 				files: '<%= concat.dist.dest %>',
@@ -61,13 +71,13 @@ module.exports = function(grunt) {
 		}
 	});
 
-	// These plugins provide necessary tasks.
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
 	// Default task.
-	grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+	grunt.registerTask('default', ['sass', 'jshint', 'concat', 'uglify']);
 
 };
