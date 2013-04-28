@@ -34,8 +34,11 @@ Prerequisite: Java on the classpath
 1.  Download the [JavaScript-Code-Katas Source (ZIP)][3] (or checkout the code from the [Github Repository][4], if you have git available)
 2.  Extract and browse to it using your operating system’s command line.
 3.  Run (Windows)  
+
     `> JsTestDriver.bat Template` 
-    Run (MacOS)  
+
+    Run (MacOS)
+
     `$ ./JsTestDriver.sh Template`  
     *This script will close Safari (be careful if you’re using Safari in other windows)*
 
@@ -94,10 +97,11 @@ Testing will help you. It will improve your the quality of your code and your pr
 
 Good luck!
 
-*Coding must follow every step performed by myself in the above version. Templates and keyboard shortcuts can be used at your leisure, but no code can be generated specific to the kata itself (it must be a generic). Use your best judgement here, I reserve the right to disqualify any entries submitted that don’t follow the true spirit of the competition. 
-Don’t fuck with the speed of the video. I’m spending my own money on this, so if you’re cheating then you’re just stealing from me. Just be cool about it, okay?
+*Coding must follow every step performed by myself in the above version. Templates and keyboard shortcuts can be used at your leisure, but no code can be generated specific to the kata itself (it must be a generic). Use your best judgement here, I reserve the right to disqualify any entries submitted that don’t follow the true spirit of the competition.*
 
-* The Print version of the prize is restricted to USA or Canada, PDF version is available internationally (unless you want to work something out for shipping costs).
+*Don’t fuck with the speed of the video. I’m spending my own money on this, so if you’re cheating then you’re just stealing from me. Just be cool about it, okay?*
+
+*The Print version of the prize is restricted to USA or Canada, PDF version is available internationally (unless you want to work something out for shipping costs).*
 
  [3]: https://github.com/zachleat/JavaScript-Code-Katas/zipball/master
  [4]: https://github.com/zachleat/JavaScript-Code-Katas

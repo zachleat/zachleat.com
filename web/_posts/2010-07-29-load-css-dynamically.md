@@ -26,38 +26,37 @@ If the resource and host page are on the same domain, obviously `XMLHttpRequest`
 
 If the resource and host page are on different domains (increasingly more common with CDN’s), our options narrow. Loading the JavaScript is a solved problem, just use the `onload` event on the `` tag and you’re good to go (`onreadystatechange` for IE). But CSS is more complicated.
 
-Resource
-
-Method
-
-Option for (a)synchronous
-
-Event
-
-JavaScript/CSS Same Domain
-
-`XMLHttpRequest`
-
-Both
-
-`onreadystatechange`
-
-JavaScript Different Domain
-
-``
-
-Synchronous (Asynchronous where [async property][2] is supported)
-
-`onload`  
-`onreadystatechange` for IE
-
-CSS Different Domain
-
-``
-
-Asynchronous
-
-*What this blog post is about.*
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Method</th>
+<th>Option for (a)synchronous</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JavaScript/CSS Same Domain</td>
+<td><code>XMLHttpRequest</code></td>
+<td>Both</td>
+<td><code>onreadystatechange</code></td>
+</tr>
+<tr>
+<td>JavaScript Different Domain</td>
+<td><code>&lt;script&gt;</code></td>
+<td>Synchronous (Asynchronous where <a href="https://developer.mozilla.org/en/html/element/script">async property</a> is supported)</td>
+<td><code>onload</code><br />
+<code>onreadystatechange</code> for IE</td>
+</tr>
+<tr>
+<td>CSS  Different Domain</td>
+<td><code>&lt;link&gt;</code></td>
+<td>Asynchronous</td>
+<td><em>What this blog post is about.</em></td>
+</tr>
+</tbody>
+</table>
 
 ## Existing Solutions
 
@@ -91,12 +90,13 @@ I wouldn’t be surprised if the commit log there was from Bon Jovi; that code i
     // WebKit, we can poll for changes to document.styleSheets to figure out
     // when stylesheets have loaded, but in Gecko we just have to finish
     // after a brief delay and hope for the best.
-    if &#40;ua.webkit&#41; &#123;
-        p.urls&#91;i&#93; = node.href; // resolve relative URLs (or polling won't work)
-        poll&#40;&#41;;
-    &#125; else &#123;
-        setTimeout&#40;_finish, 50 * len&#41;;
-    &#125;
+    if (ua.webkit) {
+        // resolve relative URLs (or polling won't work)
+        p.urls[i] = node.href;
+        poll();
+    } else {
+        setTimeout(_finish, 50 * len);
+    }
 
 Better, closer, warmer. This includes a nice method for working with webkit browsers. The poll method compares `document.styleSheets`, since Webkit has the nice option of only appending to the styleSheets object when the styleSheet has successfully loaded.
 
@@ -111,15 +111,36 @@ So we have working solutions for IE and Safari/Chrome. The only unsolved piece o
 Here’s what I came up with (using jQuery for brevity, note that this solution **only fixes Firefox**, and does not incorporate the above already solved solutions):
 
     var url = 'css.php',
-        id = 'dynamicCss'   &#40;new Date&#41;.getTime&#40;&#41;;
-    &nbsp;
-    $&#40;''&#41;.attr&#40;&#123;
+        id = 'dynamicCss' + (new Date).getTime();
+    
+    $('<style/>').attr({
         id: id,
         type: 'text/css'
-    &#125;&#41;.html&#40;'@import url('   url   ')'&#41;.appendTo&#40;document.getElementsByTagName&#40;'head'&#41;&#91;&#93;&#41;;
-    &nbsp;
-    function poll&#40;&#41;
-    &#123;
-        try &#123;
+    }).html('@import url(' + url + ')').appendTo(document.getElementsByTagName('head')[0]);
+    
+    function poll() {
+        try {
             var sheets = document.styleSheets;
-            for&#40;var j=, k=sheets.length; j
+            for(var j=, k=sheets.length; j<k; j++) {
+                if(sheets[j].ownerNode.id == id) {
+                    sheets[j].cssRules;
+                }
+            }
+            // If you made it here, success!
+            alert('success!');
+        } catch(e) {
+            window.setTimeout(poll, 50);
+        }
+    }
+
+    window.setTimeout(poll, 50);
+
+### [See this Demo in Action][demo] (Firefox Only)
+
+ [demo]: /javascript/loadcss/load.html
+
+*Update: After much joy and celebration, I have discovered that an approach similar to the above was written by Oleg Slobodskoi in his [xLazyLoader][xlazy] plugin for jQuery. It shouldn’t be surprising that two independent developers might reach the same solution, and is just more proof that software patents are stupid. :)*
+
+ [xlazy]: http://plugins.jquery.com/files/jquery.xLazyLoader.js.txt
+
+*Update #2 Added note about HTML5 async property on script tags.*

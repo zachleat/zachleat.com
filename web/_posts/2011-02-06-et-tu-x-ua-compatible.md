@@ -13,9 +13,12 @@ tags:
   - User Agent Sniffing
 ---
 
-[![][2]][2]Or, the story of how I learned that **the X-UA-Compatible header/meta tag is NOT the same as the Internet Explorer 8 Compatibility View button**.
+[![][brutus]][brutussrc]
 
- []: http://www.flickr.com/photos/jedibfa/5067647765/
+Or, the story of how I learned that **the X-UA-Compatible header/meta tag is NOT the same as the Internet Explorer 8 Compatibility View button**.
+
+ [brutus]: /web/wp-content/uploads/2011/02/juliusceasar.jpg
+ [brutussrc]: http://www.flickr.com/photos/jedibfa/5067647765/
 
 *Please note that the following information may be common knowledge, as this behavior is as described in the pre-requisite [Microsoft documentation][2] on the subject. However, I feel this behavior to be unintuitive and requiring more explicit communication.*
 
@@ -23,7 +26,7 @@ tags:
 
 
 
-Library developers live in a much different world from full stack developers. If you’re supplying code that will be used by others, you’re faced with a different set of priorities. As such, the library I manage provides certain user agent sniffing conveniences, namely classes to replace CSS Hacks (similar to the approach used in HTML Boilerplate to provide ie6 through ie9 classes on the `` tag) and JavaScript booleans (similar to [`jQuery.browser`][3]). Much like jQuery, [these conveniences remain][4] for backwards compatibility.
+Library developers live in a much different world from full stack developers. If you’re supplying code that will be used by others, you’re faced with a different set of priorities. As such, the library I manage provides certain user agent sniffing conveniences, namely classes to replace CSS Hacks (similar to the approach used in HTML Boilerplate to provide ie6 through ie9 classes on the `<html>` tag) and JavaScript booleans (similar to [`jQuery.browser`][3]). Much like jQuery, [these conveniences remain][4] for backwards compatibility.
 
  [3]: http://api.jquery.com/jQuery.browser
  [4]: http://docs.jquery.com/Release:jQuery_1.3#No_More_Browser_Sniffing
@@ -47,14 +50,16 @@ Microsoft defines two terms to help communicate how new versions of Internet Exp
 
 1.  Internet Explorer uses the default Browser Mode (newest available in the browser)
 2.  Request sent (Browser Mode determines User-Agent to send, probably MSIE 8.0 or MSIE 9.0)
-3.  Response from Server. Content may include X-UA-Compatible `` tag and/or Response HTTP headers such as X-UA-Compatible).
+3.  Response from Server. Content may include X-UA-Compatible `<meta>` tag and/or Response HTTP headers such as X-UA-Compatible).
 4.  Document Mode determined, using X-UA-Compatible and the DocType
 
 If a X-UA-Compatible header is sent back in the Compatibility View flow, it will take precedence but obviously will not change the request User-Agent HTTP header.
 
 It’s important to note that since the request has already gone before the Document Mode is determined, the Document Mode has no bearing on the request User-Agent HTTP header. While Microsoft probably could have changed `navigator.userAgent` to be different than the request User-Agent HTTP header, I feel they made the correct decision is keeping the same value. `navigator.userAgent` remains the same value as the request User-Agent HTTP header in IE8, but Microsoft changed this behavior in IE9. In IE9, `navigator.userAgent` represents the document mode, not the request User-Agent header.
 
-![][6]The User Agent isn’t the only thing being determined. The prerequisite Microsoft documentation states that the Browser Mode determines the User Agent, Default Document Mode, and Conditional Comments. This is not accurate. **The Document Mode determines which Conditional Comments execute, not the Browser Mode.**
+![][6]
+
+The User Agent isn’t the only thing being determined. The prerequisite Microsoft documentation states that the Browser Mode determines the User Agent, Default Document Mode, and Conditional Comments. This is not accurate. **The Document Mode determines which Conditional Comments execute, not the Browser Mode.**
 
  [6]: /web/wp-content/uploads/2011/02/Screen-shot-2011-02-06-at-1.27.14-PM.png "Screenshot of Microsoft Documentation"
 
@@ -96,16 +101,16 @@ Consider [a great piece of JavaScript written by James Padosley][13] to find Int
         if(!$.browser.msie) {
             return;
         }
-    &nbsp;
+    
         var v = 5,
             div = document.createElement('div'),
             all = div.getElementsByTagName('i');
-    &nbsp;
+    
         while (
             div.innerHTML = '',
             all[0]
         );
-    &nbsp;
+    
         $.browser.version = v;
     })(jQuery);
 

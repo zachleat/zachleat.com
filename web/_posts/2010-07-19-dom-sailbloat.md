@@ -32,25 +32,32 @@ To get an idea of what the size of a large document is, I usually go to a site w
     document.getElementsByTagName('*').length;
     // note: this number will not include any child nodes inside of iframes.
 
-URL
-
-Total Element Count
-
-`maps.google.com`
-
-`731`
-
-`my.yahoo.com`
-
-`1508`
-
-`calendar.google.com (Authenticated)`
-
-`681`
-
-`reader.google.com (Authenticated)`
-
-`4866`
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Total Element Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>maps.google.com</code></td>
+<td><code>731</code></td>
+</tr>
+<tr>
+<td><code>my.yahoo.com</code></td>
+<td><code>1508</code></td>
+</tr>
+<tr>
+<td><code>calendar.google.com (Authenticated)</code></td>
+<td><code>681</code></td>
+</tr>
+<tr>
+<td><code>reader.google.com (Authenticated)</code></td>
+<td><code>4866</code></td>
+</tr>
+</tbody>
+</table>
 
 Getting back to the support ticket in question. After querying the document, I quickly found that the page contained over **50000 nodes**. Wow. So, we’ve caught a big one. You’re going to be telling your grandkids about this some day. But, now what?
 
