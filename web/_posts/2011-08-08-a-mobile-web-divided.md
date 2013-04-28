@@ -6,13 +6,12 @@ permalink: /a-mobile-web-divided/
 categories:
   - Application Design
 ---
-# 
 
 Unless you’ve been living comfortably under an elaborate dwelling constructed entirely out of rock, you’re aware of the growing popularity of smartphones and other mobile devices. With that growth we’ve witnessed a bumper crop of component libraries and frameworks to enable us to create mobile web sites and applications.
 
 ## One Web, Two Web Primer
 
-There are two different approaches one can take when developing a mobile web site. The first approach has been assigned the delightfully inclusive moniker [‘*One Web*‘][1]. *One Web* involves creating a single web site accessible from both mobile and desktop web browsers and the site’s presentation is custom tailored at run time to the capabilities of the user’s device.
+There are two different approaches one can take when developing a mobile web site. The first approach has been assigned the delightfully inclusive moniker [‘*One Web*’][1]. *One Web* involves creating a single web site accessible from both mobile and desktop web browsers and the site’s presentation is custom tailored at run time to the capabilities of the user’s device.
 
  [1]: http://www.w3.org/TR/mobile-bp/#OneWeb
 
@@ -42,21 +41,17 @@ Let’s look at how a few sample pages render in a few desktop browsers. (*Keep 
 
  [3]: http://dev.sencha.com/deploy/touch/examples/nestedlist/
 
-Trident (IE9)  
-  
-Not Supported
+Trident (IE9): Not Supported
 
-Gecko (Firefox 5)  
-  
-Not Supported
+![][5alt]
 
-[![][5]][5]
+Gecko (Firefox 5): Not Supported
 
 ![][5]
 
 Instead of a nice list with large click targets, we’re greeted with a simple white screen. No error messages detailing a JavaScript error occurred on the page. No warning saying the web browser being used here isn’t supported (the bane of Progressive Enhancement advocates). Really bad user experience here.
 
- []: http://www.zachleat.com/web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.48.51-PM.png
+ [5alt]: http://www.zachleat.com/web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.48.51-PM.png
  [5]: http://www.zachleat.com/web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.31.41-PM.png "Sencha Touch in Firefox"
 
 Officially, Sencha Touch support is not “anything WebKit” as some have suggested. It officially supports Apple iOS 3 , Android 2.1 , and BlackBerry 6 devices. It does not include WebOS, which is a WebKit browser, **nor does it include any desktop web browsers.**
@@ -65,15 +60,11 @@ Officially, Sencha Touch support is not “anything WebKit” as some have sugge
 
  [6]: http://www.dhtmlx.com/touch/samples/apps/uidemo/index.html
 
-Trident (IE9)  
-  
-Not Supported
-
-Gecko (Firefox 5)  
-  
-Not Supported
+Trident (IE9): Not Supported
 
 ![][7]
+
+Gecko (Firefox 5): Not Supported
 
 ![][8]
 
@@ -91,15 +82,11 @@ Unfortunately, even though it works for the most part, desktop web browsers are 
 
  [10]: http://chrism.dojotoolkit.org/mobile-0.2/make_samples/dojo-samples/demos/mobile-gallery/demo.html
 
-Trident (IE9)  
-  
-Supported
-
-Gecko (Firefox 5)  
-  
-Supported
+Trident (IE9): Supported
 
 ![][11]
+
+Gecko (Firefox 5): Supported
 
 ![][12]
 
@@ -115,15 +102,11 @@ Dojo Mobile also did fairly well. There were a few minor rendering issues with W
 
  [14]: http://jquerymobile.com/demos/1.0b2/#/demos/1.0b2/docs/lists/index.html
 
-Trident (IE9)  
-  
-Supported
-
-Gecko (Firefox 5)  
-  
-Supported
+Trident (IE9): Supported
 
 ![][15]
+
+Gecko (Firefox 5): Supported
 
 ![][16]
 

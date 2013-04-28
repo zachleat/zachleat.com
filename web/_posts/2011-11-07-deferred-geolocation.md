@@ -40,9 +40,7 @@ Let’s go ahead and change it to use a jQuery Deferred object:
 
     function getCurrentPositionDeferred(options) {
       var deferred = $.Deferred();
-    &nbsp;
       navigator.geolocation.getCurrentPosition(deferred.resolve, deferred.reject, options);
-    &nbsp;
       return deferred.promise();
     };
 
@@ -57,9 +55,11 @@ This allows us to do things like:
     }).fail(function() {
       // failure
     }).always(function() {
-      // executes no matter what happens. I've used this to hide loading messages.
+      // executes no matter what happens.
+      // I've used this to hide loading messages.
     });
-    // You can add an arbitrary number of callbacks using done, fail, or always.
+    // You can add an arbitrary number of
+    // callbacks using done, fail, or always.
 
 We could also use `$.when` to run code upon completion of two arbitrary and contrived operations like a Geolocation call and an Ajax request. Awesome.
 

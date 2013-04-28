@@ -12,7 +12,6 @@ tags:
   - Internet Explorer
   - User Agent Sniffing
 ---
-# 
 
 [![][2]][2]Or, the story of how I learned that **the X-UA-Compatible header/meta tag is NOT the same as the Internet Explorer 8 Compatibility View button**.
 

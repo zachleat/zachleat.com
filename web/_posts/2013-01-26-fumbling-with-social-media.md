@@ -75,12 +75,13 @@ I’ll keep my eyes open for someone that I can give a little push to and I enco
 
  [12]: https://twitter.com/zachleat
 
-<style>
-#chart-0 { margin-bottom: 4em; }
-#chart-0 .annotatedtimelinetable th, td { padding: 0; }
-#chart-0 .annotationsdiv { display: none; }
-</style>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0Alz1CG9ZSGbWdDZtUml2TmhWYXhGeFhUMU1CMmgyRGc&#038;transpose=0&#038;headers=1&#038;merge=COLS&#038;range=A1%3AA45%2CB1%3AB45%2CC1%3AC45%2CD1%3AD45&#038;gid=0&#038;pub=1","options":{"displayAnnotations":false,"titleTextStyle":{"fontSize":16},"animation":{"duration":0},"displayRangeSelector":false,"hAxis":{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},"wmode":"opaque","vAxes":[{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Chart title","scaleType":"fixed","legend":"none","thickness":"4","displayZoomButtons":false,"width":580,"height":200},"state":{},"view":{},"chartType":"AnnotatedTimeLine","chartName":"Fumbling on Social Media"} </script>
+<div class="google-chart">
+  <style>
+  #chart-0 .annotatedtimelinetable th, td { padding: 0; }
+  #chart-0 .annotationsdiv { display: none; }
+  </style>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0Alz1CG9ZSGbWdDZtUml2TmhWYXhGeFhUMU1CMmgyRGc&#038;transpose=0&#038;headers=1&#038;merge=COLS&#038;range=A1%3AA45%2CB1%3AB45%2CC1%3AC45%2CD1%3AD45&#038;gid=0&#038;pub=1","options":{"displayAnnotations":false,"titleTextStyle":{"fontSize":16},"animation":{"duration":0},"displayRangeSelector":false,"hAxis":{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},"wmode":"opaque","vAxes":[{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Chart title","scaleType":"fixed","legend":"none","thickness":"4","displayZoomButtons":false,"width":580,"height":200},"state":{},"view":{},"chartType":"AnnotatedTimeLine","chartName":"Fumbling on Social Media"} </script>
+</div>
 
 *[Full data available on Google Spreadsheets][13]. RSS subscriber data provided by [Feedburner][14] (even though my first post was in 2007, I switched from naked RSS in 2010). Twitter data was provided by [TwitterCounter][15] and Google data by [Social Statistics][16].*
 

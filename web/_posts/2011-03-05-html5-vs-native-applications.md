@@ -22,6 +22,7 @@ This slide deck was prepared for my guest lecture at the University of Nebraska-
 
 *(I appreciate the irony of sharing these slides using the flash plugin)*
 
+<object id="__sse7160947" width="510" height="426"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=presentation-110305125324-phpapp02&#038;stripped_title=html5-vs-native-applications&#038;userName=zachleat" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse7160947" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=presentation-110305125324-phpapp02&#038;stripped_title=html5-vs-native-applications&#038;userName=zachleat" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="510" height="426"></embed></object>
 
 
 *   [Download the original PDF (exported from Keynote)][2]

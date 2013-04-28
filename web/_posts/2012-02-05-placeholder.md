@@ -27,9 +27,9 @@ I decided to run a [few compatibility tests][15] on the placeholder attribute to
 1.  The HTML5 spec states that the placeholder should be visible when *“element’s value is the empty string and/or the control is not focused.”* The and/or presents the implementor with a decision. Do they keep the placeholder text visible when the field is focused but the value is still empty? Or do I remove the placeholder when focusing into an empty field?  
       
     My personal preference is that the text remains until the user starts to type. Safari 5.1, iOS 5, and Chrome 17%2B were the only browser implementations to agree with this as of time of writing.
-2.  The HTML5 spec has suggested (not required) that placeholders *only* apply to `` and ``. For some input types such as `hidden`, `radio`, or `checkbox` this limitation makes sense, the placeholder would add nothing to these elements. But for others like `datetime`, `date`, `month`, `week`, `time`, `datetime-local`, `color`, or `file` the argument can be made that it would be useful.
+2.  The HTML5 spec has suggested (not required) that placeholders *only* apply to `<input type="text, search, password, tel, url, email, number">` and `<textarea>`. For some input types such as `hidden`, `radio`, or `checkbox` this limitation makes sense, the placeholder would add nothing to these elements. But for others like `datetime`, `date`, `month`, `week`, `time`, `datetime-local`, `color`, or `file` the argument can be made that it would be useful.
 3.  There is [an open WebKit issue][17] to add placeholder support to contenteditable. Hopefully the specification gets modified and this gets added, as it would have been useful for my [BigText Demo Wizard][18] which manually implemented that same feature.
-4.  `` support is broken in Safari and it’s already been [reported and fixed][19]. “The future is here, just not evenly distributed.”
+4.  `<input type="number">` support is broken in Safari and it’s already been [reported and fixed][19]. “The future is here, just not evenly distributed.”
 
 As a side note, it should be said that both Opera and iOS both have comprehensively badass support of the new HTML5 form element types.
 

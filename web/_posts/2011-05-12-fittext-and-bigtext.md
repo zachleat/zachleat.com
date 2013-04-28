@@ -26,13 +26,15 @@ Naturally, I wondered how it compared to BigText, a plugin of my own creation to
 
 I was delighted to get some attribution from Trent, and even more delighted to see their plugin. It’s really a great piece of work. However, his statement that BigText is just for non-fluid sites is not quite accurate. Let’s dive in.
 
-[![][7]][7]
+[![][7img]][7]
 
- []: http://www.zachleat.com/web/bigtext-makes-text-big/
+ [7]: http://www.zachleat.com/web/bigtext-makes-text-big/
+ [7img]: /web/wp-content/uploads/2011/05/Screen-shot-2011-05-12-at-11.05.26-PM.png "BigText"
 
-[![][8]][8]
+[![][fittextimg]][fittext]
 
- []: http://fittextjs.com/
+ [fittext]: http://fittextjs.com/
+ [fittextimg]: /web/wp-content/uploads/2011/05/Screen-shot-2011-05-12-at-11.10.01-PM.png "FitText"
 
 On the surface, BigText and FitText might seem very similar. In fact, they are quite different and approach what might seem to be a similar problem (resizing text to fit a container) in very different ways.
 
@@ -40,65 +42,65 @@ At its simplest, we can boil it down like this: If you’re crafting a specific 
 
 Here’s more detail:
 
- 
+<table>
+<thead>
+<tr>
+<th>&#160;</th>
+<th>BigText</th>
+<th>FitText</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Demos</th>
+<td><a href="http://jsfiddle.net/zachleat/anJpE/">BigText Fiddle</a></td>
+<td><a href="http://jsfiddle.net/zachleat/ExhDC/">FitText Fiddle</a></td>
+</tr>
+<tr>
+<th>&#160;</th>
+<td colspan="2"><em>Try resizing the demo windows above.</em></td>
+</tr>
+<tr>
+<th>Algorithm</th>
+<td><strong>Sizes text automatically</strong> from a base up to fit the element width, regardless of initial font size.</td>
+<td>Uses the width of the element and a configurable JavaScript argument (the ratio) to <strong>scale text down</strong> to smaller widths. This ratio argument must be set manually.</td>
+</tr>
+<tr>
+<th>Responsive Design</th>
+<td colspan="2">Both plugins work with <strong>responsive design techniques</strong>, operating correctly with media queries, fluid designs, and window resizing.</td>
+</tr>
+<tr>
+<th>Speed</th>
+<td>Fast</td>
+<td>Faster</td>
+</tr>
+<tr>
+<th>Text</th>
+<td>Works with user generated text, or any text isn&#8217;t cemented at design time. See the <a href="http://www.zachleat.com/bigtext/demo/">BigText Demo Wizard</a>.</td>
+<td>Requires up front configuration to specific text.</td>
+</tr>
+<tr>
+<th>Resize Event</th>
+<td>Works with existing debounced resize libraries, if they exist on the page.</td>
+<td>Does not use a debounced resize event.</td>
+</tr>
+<tr>
+<th>Unobtrusive</th>
+<td>CSS and BigText font-sizes are independent of each other.</td>
+<td>FitText uses your CSS font-size as a maximum font size.</td>
+</tr>
+<tr>
+<th>&#160;</th>
+<td colspan="2"><em>Don&#8217;t forget to set sane CSS font-size defaults when JavaScript isn&#8217;t available.</em></td>
+</tr>
+<tr>
+<th>Unit Tested</th>
+<td>Full Test Suite</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 
-BigText
-
-FitText
-
-Demos
-
-[BigText Fiddle][8]
-
-[FitText Fiddle][9]
-
- 
-
-*Try resizing the demo windows above.*
-
-Algorithm
-
-**Sizes text automatically** from a base up to fit the element width, regardless of initial font size.
-
-Uses the width of the element and a configurable JavaScript argument (the ratio) to **scale text down** to smaller widths. This ratio argument must be set manually.
-
-Responsive Design
-
-Both plugins work with **responsive design techniques**, operating correctly with media queries, fluid designs, and window resizing.
-
-Speed
-
-Fast
-
-Faster
-
-Text
-
-Works with user generated text, or any text isn’t cemented at design time. See the [BigText Demo Wizard][10].
-
-Requires up front configuration to specific text.
-
-Resize Event
-
-Works with existing debounced resize libraries, if they exist on the page.
-
-Does not use a debounced resize event.
-
-Unobtrusive
-
-CSS and BigText font-sizes are independent of each other.
-
-FitText uses your CSS font-size as a maximum font size.
-
- 
-
-*Don’t forget to set sane CSS font-size defaults when JavaScript isn’t available.*
-
-Unit Tested
-
-Full Test Suite
-
--
 
 **FitText is very lightweight and fast**, even considering it doesn’t yet use a debounced resize event. The [FitText algorithm][11] is **quite beautiful**. A huge well done to [Paravel][12].
 
