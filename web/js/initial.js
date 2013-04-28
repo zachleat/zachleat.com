@@ -15,12 +15,20 @@ function injectJs( src ) {
 	head.appendChild( script );
 }
 
-;(function() {
+(function( doc ) {
+	if( !( 'querySelectorAll' in doc ) ) {
+		return;
+	}
+
 	injectCss( 'http://fonts.googleapis.com/css?family=Bitter:700' );
 	injectCss( '/web/dist/icons.css' );
-})();
 
-//
+	var iliveinomaha = doc.createElement( 'div' );
+	iliveinomaha.className = 'iliveinomaha';
+	iliveinomaha.innerHTML = '<a href="http://iliveinomaha.com"><img src="/web/img/iliveinomaha.gif" alt="I live in Omaha."></a>';
+	doc.body.appendChild( iliveinomaha );
+})( document );
+
 // Google Analytics
 //
 // var _gaq = _gaq || [];

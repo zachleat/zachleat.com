@@ -1,4 +1,3 @@
-
 /* FitVids */
 .fluid-width-video-wrapper {
 	width: 100%;
@@ -24,4 +23,19 @@
 }
 .google-chart > div {
 	margin-bottom: 2em;
+}
+
+/* I live in Omaha Banner */
+.iliveinomaha {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.iliveinomaha img {
+	border: none;
+}
+@media (min-width: 49em) {
+	.iliveinomaha {
+		position: fixed;
+	}
 }
