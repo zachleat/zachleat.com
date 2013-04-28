@@ -31,7 +31,7 @@ Another use for the onbeforeunload event to allow the user to cancel the action 
 [![][3]][3]  
 *Gmail pops up this prompt when the user attempts to leave the page while drafting an email.*
 
- []: http://www.zachleat.com/web/wp-content/uploads/2008/04/gmail-confirm.png
+ []: /web/wp-content/uploads/2008/04/gmail-confirm.png
 
 Worthy to note, however, is that Opera [doesn’t fire the unload event][3] when the browser refreshes the page, or uses the back/forward buttons to browse off of the page (I had no success with the fix posted in the comments on that page). What’s worse, Opera never fires the onbeforeunload event. This creates a serious problem with attempting to save page state prior to a user leaving your page.
 

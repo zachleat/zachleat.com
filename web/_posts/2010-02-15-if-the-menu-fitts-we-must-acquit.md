@@ -28,9 +28,9 @@ We know about Fitts’s Law, but **why aren’t we applying it to our web applic
 
 ![Wordpress Admin Menu][3]![Google Mail Menu][4]![Google Reader Menu][5]
 
- [3]: http://www.zachleat.com/web/wp-content/uploads/2010/02/Screen-shot-2010-02-15-at-11.08.15-PM.png "Screen shot 2010-02-15 at 11.08.15 PM"
- [4]: http://www.zachleat.com/web/wp-content/uploads/2010/02/Screen-shot-2010-02-15-at-11.12.57-PM.png "Screen shot 2010-02-15 at 11.12.57 PM"
- [5]: http://www.zachleat.com/web/wp-content/uploads/2010/02/Screen-shot-2010-02-15-at-11.09.16-PM.png "Screen shot 2010-02-15 at 11.09.16 PM"
+ [3]: /web/wp-content/uploads/2010/02/Screen-shot-2010-02-15-at-11.08.15-PM.png "Screen shot 2010-02-15 at 11.08.15 PM"
+ [4]: /web/wp-content/uploads/2010/02/Screen-shot-2010-02-15-at-11.12.57-PM.png "Screen shot 2010-02-15 at 11.12.57 PM"
+ [5]: /web/wp-content/uploads/2010/02/Screen-shot-2010-02-15-at-11.09.16-PM.png "Screen shot 2010-02-15 at 11.09.16 PM"
 
 
 

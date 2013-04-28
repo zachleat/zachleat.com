@@ -30,12 +30,12 @@ Behavior: 2 or more select boxes working in parallel, where selection of an opti
 Screenshot (Prior to any selection):  
 ![Prior to any selection][2]
 
- [2]: http://www.zachleat.com/web/wp-content/uploads/2007/02/hierselects1.jpg
+ [2]: /web/wp-content/uploads/2007/02/hierselects1.jpg
 
 Screenshot (After an option is chosen in the first select box):  
 ![After a selection is made][3]
 
- [3]: http://www.zachleat.com/web/wp-content/uploads/2007/02/hierselects2.jpg
+ [3]: /web/wp-content/uploads/2007/02/hierselects2.jpg
 
 Minimum Requirements for Acceptable Feature Set:
 

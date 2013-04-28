@@ -42,7 +42,7 @@ This is to workaround for an IE limitation to absolutely positioning content at 
 
 ![Flickr Citation Tag][5]
 
- [5]: http://www.zachleat.com/web/wp-content/uploads/2008/03/flickr_cite.jpg "flickr_cite"
+ [5]: /web/wp-content/uploads/2008/03/flickr_cite.jpg "flickr_cite"
 
 Another interesting CSS Hack they’ve employed involves the line-height for  tags containing Unicode characters to select different languages. It starts out like [Dustin Diaz’s min-height hack][6], but throws a loop.
 

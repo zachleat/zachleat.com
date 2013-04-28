@@ -21,14 +21,14 @@ We must be resilient to resist the transformation from development pragmatism to
 
 ![zombie][2]As web developers, it has become increasingly easy to become disenfranchised with the lay majority’s computing environment. I’ve witnessed this personally after purchasing my first Apple computer, a device curiously immune to the plague of IE 6/7 (8 as well, but I would hesitate to label it as a plague, more like a normal run of the mill flesh eating virus). It’s an interesting phenomenon, being cutoff from the Windows environment (save virtualization) during development. It’s delightfully tempting to declare damnation upon the plague ridden Internet Explorer Zombies, and develop your web presence to standards alone, allowing less focus on the harshest development environment imaginable and more on actual problem solving.
 
- [2]: http://www.zachleat.com/web/wp-content/uploads/2009/12/zombies.png "zombie"
+ [2]: /web/wp-content/uploads/2009/12/zombies.png "zombie"
 
 When developers engage in quasi-web development, perhaps in the form of an iPhone specific web application or an Adobe AIR desktop application, it fosters similar feelings. The work shares many languages and technologies with real (wide-open) web development, but is targeted towards a single web browser. This benefits of this sort of tunnel vision device targeting must be carefully weighed against the penalties you’re paying in narrowed default-install client compatibility. At that point, it’s just **friends with benefits**.
 
 ![Denial of Access with Internet Explorer Screenshot][3]  
 Google Wave, in fact, requires the use of Safari, Firefox, Chrome, or the Google Chrome Frame plugin (which doesn’t count as actual browser support). As of the time this article was written, as many as **64% of all users** ([source][4]) are met with the above screen when trying to access Google Wave. Let’s be clear: **Ease of development is not an excuse to abandon users.** Whatever happened to [Device Independence][5]?
 
- [3]: http://www.zachleat.com/web/wp-content/uploads/2009/12/google-wave-ie8.png "Denial of Access with Internet Explorer Screenshot"
+ [3]: /web/wp-content/uploads/2009/12/google-wave-ie8.png "Denial of Access with Internet Explorer Screenshot"
  [4]: http://en.wikipedia.org/wiki/Usage_share_of_web_browsers
  [5]: http://www.zachleat.com/web/2009/08/29/device-independence/
 

@@ -56,7 +56,7 @@ It’s important to note that since the request has already gone before the Docu
 
 ![][6]The User Agent isn’t the only thing being determined. The prerequisite Microsoft documentation states that the Browser Mode determines the User Agent, Default Document Mode, and Conditional Comments. This is not accurate. **The Document Mode determines which Conditional Comments execute, not the Browser Mode.**
 
- [6]: http://www.zachleat.com/web/wp-content/uploads/2011/02/Screen-shot-2011-02-06-at-1.27.14-PM.png "Screenshot of Microsoft Documentation"
+ [6]: /web/wp-content/uploads/2011/02/Screen-shot-2011-02-06-at-1.27.14-PM.png "Screenshot of Microsoft Documentation"
 
 Also note that using IE’s **Conditional Compilation** feature to return the version of JScript will be the same, independent of Document Mode.
 

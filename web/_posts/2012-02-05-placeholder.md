@@ -57,7 +57,7 @@ If you’re already using validation on the form fields (client and/or server si
 *Update: Added note about Chrome 17+ support for placeholder text remaining on focus per Mathias’ feedback below.*
 
 [13]: http://dev.w3.org/html5/spec/Overview.html#the-placeholder-attribute
-[14]: http://www.zachleat.com/web/wp-content/uploads/2012/02/Screen-Shot-2012-02-05-at-12.12.09-AM.png "An example of misused placeholders"
+[14]: /web/wp-content/uploads/2012/02/Screen-Shot-2012-02-05-at-12.12.09-AM.png "An example of misused placeholders"
 [15]: http://www.zachleat.com/test/placeholder.html
 [16]: https://github.com/zachleat/Compatibility-Tests/blob/master/placeholder.html
 [17]: https://bugs.webkit.org/show_bug.cgi?id=21286

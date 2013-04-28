@@ -114,5 +114,5 @@ Customize the CSS, if desired.
 You might even want to put a little and – into the first column of each row to give a visual cue that there is more information for display available on click.
 
  []: http://www.zachleat.com/Projects/valdi/__test_yui_datatable_expandable.html
- [3]: http://www.zachleat.com/web/wp-content/uploads/2007/06/datatable.gif
- [4]: http://www.zachleat.com/web/wp-content/uploads/2007/06/datatableexpanded.gif
+ [3]: /web/wp-content/uploads/2007/06/datatable.gif
+ [4]: /web/wp-content/uploads/2007/06/datatableexpanded.gif

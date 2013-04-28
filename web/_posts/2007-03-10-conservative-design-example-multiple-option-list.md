@@ -47,16 +47,16 @@ Screenshots for the Lazy People:
 Multiple Options are Added  
 ![Multiple Option List Real Example][3]
 
- [3]: http://www.zachleat.com/web/wp-content/uploads/2007/03/optionlist_multiple_real1.gif
+ [3]: /web/wp-content/uploads/2007/03/optionlist_multiple_real1.gif
 
 Validation when an Option is not selected:  
 ![Multiple Option List Real Example][4]
 
- [4]: http://www.zachleat.com/web/wp-content/uploads/2007/03/optionlist_multiple_real21.gif
+ [4]: /web/wp-content/uploads/2007/03/optionlist_multiple_real21.gif
 
 Success, they selected something and submitted:  
 ![Multiple Option List Real Example][5]
 
- [5]: http://www.zachleat.com/web/wp-content/uploads/2007/03/optionlist_multiple_real31.gif
+ [5]: /web/wp-content/uploads/2007/03/optionlist_multiple_real31.gif
 
 Watch for another separate article about Valdi later on.

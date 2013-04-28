@@ -29,12 +29,12 @@ This component could exist as a standalone command line interface component or a
 Screen Printing: Fake Command Line Example  
 ![Command Line][2]
 
- [2]: http://www.zachleat.com/web/wp-content/uploads/2007/03/commandline.gif
+ [2]: /web/wp-content/uploads/2007/03/commandline.gif
 
 Screen Printing: Fake Command Line Example of AutoComplete Capabilities  
 ![Command Line AutoComplete][3]
 
- [3]: http://www.zachleat.com/web/wp-content/uploads/2007/03/commandline_f.gif
+ [3]: /web/wp-content/uploads/2007/03/commandline_f.gif
 
 **Minimum Feature Set**: ([source][4])
 

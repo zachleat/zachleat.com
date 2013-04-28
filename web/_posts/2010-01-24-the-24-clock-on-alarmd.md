@@ -26,4 +26,4 @@ Take a look at the [Dingbats section on fontsquirrel][5] to get your brain going
 
 ![][6]
 
- [6]: http://www.zachleat.com/web/wp-content/uploads/2010/01/Screen-shot-2010-01-24-at-1.22.39-AM.png "Screenshot of the 24 Clock on alarmd.com"
+ [6]: /web/wp-content/uploads/2010/01/Screen-shot-2010-01-24-at-1.22.39-AM.png "Screenshot of the 24 Clock on alarmd.com"

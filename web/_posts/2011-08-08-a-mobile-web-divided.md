@@ -51,8 +51,8 @@ Gecko (Firefox 5): Not Supported
 
 Instead of a nice list with large click targets, we’re greeted with a simple white screen. No error messages detailing a JavaScript error occurred on the page. No warning saying the web browser being used here isn’t supported (the bane of Progressive Enhancement advocates). Really bad user experience here.
 
- [5alt]: http://www.zachleat.com/web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.48.51-PM.png
- [5]: http://www.zachleat.com/web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.31.41-PM.png "Sencha Touch in Firefox"
+ [5alt]: /web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.48.51-PM.png
+ [5]: /web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.31.41-PM.png "Sencha Touch in Firefox"
 
 Officially, Sencha Touch support is not “anything WebKit” as some have suggested. It officially supports Apple iOS 3 , Android 2.1 , and BlackBerry 6 devices. It does not include WebOS, which is a WebKit browser, **nor does it include any desktop web browsers.**
 
@@ -70,8 +70,8 @@ Gecko (Firefox 5): Not Supported
 
 DHTMLx Touch operated much better than Sencha Touch on desktop browsers. Despite the fact that many of the demos on their website are hidden behind QR codes. You can use a [QR decoder][9] to get the URLs for viewing on your desktop device. As for official web browser support, the DHTMLx Touch web site states:
 
- [7]: http://www.zachleat.com/web/wp-content/uploads/2011/07/Screen-Shot-2011-07-27-at-6.26.50-PM.png "DHTMLx Touch in IE9"
- [8]: http://www.zachleat.com/web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.16.48-PM.png "DHTMLx Touch in Firefox"
+ [7]: /web/wp-content/uploads/2011/07/Screen-Shot-2011-07-27-at-6.26.50-PM.png "DHTMLx Touch in IE9"
+ [8]: /web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.16.48-PM.png "DHTMLx Touch in Firefox"
  [9]: http://zxing.org/w/decode.jspx
 
 > While browsing the demos of DHTMLX Touch, note that the framework requires a mobile device to display and work correctly. You can also run the demos on standard PCs in Firefox 3.6 and above, and WebKit browsers (Safari, Chrome, etc.), but there still can be some issues since DHTMLX Touch is optimized for mobile devices.
@@ -92,8 +92,8 @@ Gecko (Firefox 5): Supported
 
 Dojo Mobile also did fairly well. There were a few minor rendering issues with WebKit prefixed gradients (and no background color fallback) which I would consider to be very minor bugs. Here’s the good news from the [Dojo documentation][13]:
 
- [11]: http://www.zachleat.com/web/wp-content/uploads/2011/08/Screen-Shot-2011-08-08-at-9.51.41-PM.png "Dojo Mobile in IE9"
- [12]: http://www.zachleat.com/web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.18.51-PM.png "Dojo Mobile in Firefox"
+ [11]: /web/wp-content/uploads/2011/08/Screen-Shot-2011-08-08-at-9.51.41-PM.png "Dojo Mobile in IE9"
+ [12]: /web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.18.51-PM.png "Dojo Mobile in Firefox"
  [13]: http://dojotoolkit.org/reference-guide/dojox/mobile.html#id5
 
 > Dojox.mobile supports not only webkit-based mobile browsers, but also non-CSS3 desktop browsers such as IE and (older) Firefox.
@@ -112,8 +112,8 @@ Gecko (Firefox 5): Supported
 
 In most of the other frameworks, cross browser compatibility documentation felt like an afterthought mentioned in passing. Not jQuery Mobile. It has the most complete [web browser support documentation][17] of any mobile component framework. Not only is their documentation the best, their device support is the most comprehensive. The project officially supports Internet Explorer all the way back to version 7, which speaks volumes to their commitment to allow the developer to make the choice between *One Web* and *Two Web*.
 
- [15]: http://www.zachleat.com/web/wp-content/uploads/2011/08/Screen-Shot-2011-08-08-at-10.05.50-PM.png "jQuery Mobile in IE9"
- [16]: http://www.zachleat.com/web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.08.24-PM.png "jQuery Mobile in Firefox"
+ [15]: /web/wp-content/uploads/2011/08/Screen-Shot-2011-08-08-at-10.05.50-PM.png "jQuery Mobile in IE9"
+ [16]: /web/wp-content/uploads/2011/07/Screen-Shot-2011-07-26-at-10.08.24-PM.png "jQuery Mobile in Firefox"
  [17]: http://jquerymobile.com/gbs/
 
 ## Conclusion

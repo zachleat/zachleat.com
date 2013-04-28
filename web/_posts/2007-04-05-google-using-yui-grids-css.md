@@ -48,7 +48,7 @@ Obviously, it’s the same code, with a few minor differences.
 
 ![Screenshot proof][5]
 
- [5]: http://www.zachleat.com/web/wp-content/uploads/2007/04/yuigrids-google1.jpg
+ [5]: /web/wp-content/uploads/2007/04/yuigrids-google1.jpg
 
 The interesting thing to note is that the YUI Grids CSS source code is licensed under a [BSD license][6], which includes the following provisions:
 

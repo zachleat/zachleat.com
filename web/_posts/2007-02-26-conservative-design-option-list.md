@@ -32,7 +32,7 @@ We’ll describe each of these variants separately.
 ![Option List Multiple Selections][2]  
 **Minimum Feature Set**:
 
- [2]: http://www.zachleat.com/web/wp-content/uploads/2007/02/optionlist_multiple1.gif
+ [2]: /web/wp-content/uploads/2007/02/optionlist_multiple1.gif
 
 *   Validation: The user can select at least one, an integer range of options, or any number of the options presented.
 *   Quick Links: optional links to select all options, clear the options, and toggle the options to the opposite value of what they currently hold.
@@ -42,7 +42,7 @@ We’ll describe each of these variants separately.
 **Single Selection**:  
 ![Option List Single Selection][3]
 
- [3]: http://www.zachleat.com/web/wp-content/uploads/2007/02/optionlist_single1.gif
+ [3]: /web/wp-content/uploads/2007/02/optionlist_single1.gif
 
 **Minimum Feature Set**:
 
@@ -54,7 +54,7 @@ We’ll describe each of these variants separately.
 **User Input List**:  
 ![Option List User Input][4]
 
- [4]: http://www.zachleat.com/web/wp-content/uploads/2007/02/optionlist_all4.gif
+ [4]: /web/wp-content/uploads/2007/02/optionlist_all4.gif
 
 **Minimum Feature Set**:
 

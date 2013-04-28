@@ -18,7 +18,7 @@ tags:
 
 ![][1]
 
- [1]: http://www.zachleat.com/web/wp-content/uploads/2010/07/typhoon-in-macao.jpg "typhoon-in-macao"
+ [1]: /web/wp-content/uploads/2010/07/typhoon-in-macao.jpg "typhoon-in-macao"
 
 As many of you may already know, my day job includes managing a large and complex enterprise jQuery-based user interface component library. It’s used by all new web applications at the company, which boasts over an IT department of approximately 1500 people and hundreds of web applications. Needless to say, I get a fair volume of interesting support tickets that come my way. A few weeks ago, I had the pleasure of receiving one such ticket.
 
@@ -69,7 +69,7 @@ So in the spirit of exploratory development to help troubleshoot real-world prob
 Here’s what it looks like in action:  
 ![][5]
 
- [5]: http://www.zachleat.com/web/wp-content/uploads/2010/07/Screen-shot-2010-07-19-at-9.59.49-PM.png "Screen shot of the DOM Sailbloat Firebug Lite plugin"
+ [5]: /web/wp-content/uploads/2010/07/Screen-shot-2010-07-19-at-9.59.49-PM.png "Screen shot of the DOM Sailbloat Firebug Lite plugin"
 
 ## Go Forth
 

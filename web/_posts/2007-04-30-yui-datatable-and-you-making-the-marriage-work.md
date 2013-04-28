@@ -63,9 +63,9 @@ Download it here:
 Full (169 KB): [ymod-datatable-beta.js][5]  
 Minimized using [JSMIN][6] (67 KB): [ymod-datatable-beta-min.js][7]
 
- [5]: http://www.zachleat.com/web/wp-content/uploads/2007/04/ymod-datatable-beta.js "ymod-datatable-beta.js"
+ [5]: /web/wp-content/uploads/2007/04/ymod-datatable-beta.js "ymod-datatable-beta.js"
  [6]: http://www.crockford.com/javascript/jsmin.html
- [7]: http://www.zachleat.com/web/wp-content/uploads/2007/04/ymod-datatable-beta-min.js "ymod-datatable-beta-min.js"
+ [7]: /web/wp-content/uploads/2007/04/ymod-datatable-beta-min.js "ymod-datatable-beta-min.js"
 
 The original and minimized YUI DataTable files are 166 KB and 66 KB respectively.
 

@@ -29,7 +29,7 @@ tags:
 
 ![Tournology Blog Comment Form][3]
 
- [3]: http://www.zachleat.com/web/wp-content/uploads/2009/01/blog-comment.png "blog-comment"
+ [3]: /web/wp-content/uploads/2009/01/blog-comment.png "blog-comment"
 
 Here’s a use case. An unregistered visitor visits your blog, and decides that your **content is so good that it merits a comment**! Congratulations, you’ve fooled them! Now you can [twply their account details for $1200 on Sitepoint][4]! Just kidding. But generally, when you visit a blog’s commenting section (such as the [Tournology Blog][5] shown above), you’ll see a simple form to authenticate you’re not a spammer, generally including (among other things) an e-mail address field.
 
@@ -43,7 +43,7 @@ Here’s a use case. An unregistered visitor visits your blog, and decides that 
 
 ![Tournology Blog Comment Form With Gravatar][6]
 
- [6]: http://www.zachleat.com/web/wp-content/uploads/2009/01/blog-comment-after.png "blog-comment-after"
+ [6]: /web/wp-content/uploads/2009/01/blog-comment-after.png "blog-comment-after"
 
 Well, since they’re typing their e-mail address, wouldn’t it be cool if we could **show them their gravatar** right there, inline with the blog comment form? Well, that’s now possible with my new **[JavaScript Gravatar Plugin][7]**! It doesn’t have any server side language dependencies.
 
@@ -56,7 +56,7 @@ Well, since they’re typing their e-mail address, wouldn’t it be cool if we c
 
 ![Gravatar Signup Page][8]
 
- [8]: http://www.zachleat.com/web/wp-content/uploads/2009/01/gravatar-signup.png "gravatar-signup"
+ [8]: /web/wp-content/uploads/2009/01/gravatar-signup.png "gravatar-signup"
 
 Hell, [gravatar.com][9] could even use this to **improve the user experience of registering your e-mail account**. Right now it does a full page refresh and doesn’t even show you a preview!
 

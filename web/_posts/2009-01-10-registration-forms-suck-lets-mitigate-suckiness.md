@@ -18,7 +18,7 @@ tags:
 
 ![Signup Form][1] A lot of people **complain about registration forms**. Some people have suggested getting rid of them altogether, allowing users to utilize login credentials from accounts they already have through OpenID. But even with a highly technical audience, OpenID adoption is [problematic][2].
 
- [1]: http://www.zachleat.com/web/wp-content/uploads/2009/01/signup-form.png "signup-form"
+ [1]: /web/wp-content/uploads/2009/01/signup-form.png "signup-form"
  [2]: http://blog.stackoverflow.com/2008/10/stack-overflow-openid-case-study/
 
 So, some sites have gone two ways, allowing OpenID, but also a proprietary registration system. This too, [is problematic][3]. It would seem that given a choice, the **John Doe the Plumber style user will choose a proprietary account** over the confusing user experience presented to them through OpenID.
