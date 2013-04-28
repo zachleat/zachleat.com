@@ -16,8 +16,8 @@ module.exports = function(grunt) {
 				banner: '<%= banner %>',
 				stripBanners: true
 			},
-			dist: {
-				src: ['lib/yepnope.js', 'js/initial.js'],
+			js: {
+				src: ['web/js/initial.js'],
 				dest: 'web/dist/initial.js'
 			}
 		},
@@ -25,8 +25,8 @@ module.exports = function(grunt) {
 			options: {
 				banner: '<%= banner %>'
 			},
-			dist: {
-				src: '<%= concat.dist.dest %>',
+			js: {
+				src: '<%= concat.js.dest %>',
 				dest: 'web/dist/initial.min.js'
 			}
 		},
@@ -59,14 +59,30 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {
-					'web/dist/global.css': 'web/css/global.scss'
+					'web/dist/global.css': ['web/css/buttsweater.scss', 'web/css/socialmenu.scss', 'web/css/thirdparty.scss'],
+					'web/dist/icons.css': 'web/css/foundicons.scss'
+				}
+			}
+		},
+		shell: {
+			jekyll: {
+				command: 'jekyll --no-auto',
+				options: {
+					stdout: true,
+					execOptions: {
+						cwd: 'web'
+					}
 				}
 			}
 		},
 		watch: {
-			js: {
-				files: '<%= concat.dist.dest %>',
+			assets: {
+				files: ['web/css/**/*', 'web/js/**/*'],
 				tasks: ['default']
+			},
+			content: {
+				files: ['web/_posts/**/*'],
+				tasks: ['content']
 			}
 		}
 	});
@@ -76,8 +92,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-shell');
 
 	// Default task.
-	grunt.registerTask('default', ['sass', 'jshint', 'concat', 'uglify']);
+	grunt.registerTask('content', ['shell:jekyll']);
+	grunt.registerTask('assets', ['sass', 'jshint', 'concat:js', 'uglify']);
+	grunt.registerTask('default', ['assets', 'content']);
 
 };

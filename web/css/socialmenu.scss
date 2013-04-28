@@ -1,0 +1,115 @@
+/* Social links */
+.social {
+	clear: both;
+	text-align: left;
+	margin: 0 auto;
+	padding-top: 1em;
+	max-width: 37em;
+}
+.social a {
+	text-decoration: none;
+	display: inline-block;
+	padding: .4em 1em;
+	margin-bottom: .2em;
+	width: 32%;
+	opacity: .9;
+	font-size: .75em;
+	line-height: 220%;
+	font-weight: 600;
+	text-align: center;
+}
+.social i {
+	display: block;
+	font-size: 3em;
+	vertical-align: middle;
+}
+.social a:hover,
+.social a:focus {
+	opacity: 1;
+	background-color: #fff;
+	background-color: rgba(255,255,255,.6);
+	border-radius: .3em;
+	box-shadow: none;
+}
+.social a:focus {
+	outline: 1px dotted #fff;
+}
+.social a:link,
+.social a:visited {
+	color: #999;
+}
+.github:link:hover,
+.github:link:focus,
+.github:visited:hover,
+.github:visited:focus {
+	color: #000;
+}
+.facebook:link:hover,
+.facebook:link:focus,
+.facebook:visited:hover,
+.facebook:visited:focus {
+	color: #38539b;
+}
+.twitter:link:hover,
+.twitter:link:focus,
+.twitter:visited:hover,
+.twitter:visited:focus {
+	color: #00c9ff;
+}
+.googleplus:link:hover,
+.googleplus:link:focus,
+.googleplus:visited:hover,
+.googleplus:visited:focus {
+	color: #ec3a1f;
+}
+.linkedin:link:hover,
+.linkedin:link:focus,
+.linkedin:visited:hover,
+.linkedin:visited:focus {
+	color: #1374af;
+}
+.social.other {
+	padding-top: 1em;
+}
+.social.other a {
+	padding: .4em 1em;
+	font-size: 1em;
+	line-height: 160%;
+	width: 100%;
+}
+.social.other a,
+.social.other a:focus,
+.social.other a:hover {
+	font-weight: 400;
+}
+
+@media (min-width: 30em) {
+	.social a {
+		font-size: 1em;
+	}
+	.social i {
+		font-size: 2.4em;
+	}
+}
+@media (min-width: 46em) {
+	.social i {
+		margin-right: .2em;
+		display: inline;
+	}
+}
+
+@media (min-width: 64em) {
+	.social {
+		max-width: 14em;
+		margin: 0;
+		padding-top: 0;
+	}
+	.social i {
+		display: inline-block;
+		font-size: 2em;
+	}
+	.social a {
+		width: 100%;
+		text-align: left;
+	}
+}

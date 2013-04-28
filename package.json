@@ -14,7 +14,8 @@
     "grunt-contrib-jshint": "~0.4.3",
     "grunt-contrib-sass": "~0.3.0",
     "install": "~0.1.7",
-    "npm": "~1.2.18"
+    "npm": "~1.2.18",
+    "grunt-shell": "~0.2.2"
   },
   "scripts": {},
   "repository": {

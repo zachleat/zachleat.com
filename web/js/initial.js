@@ -1,11 +1,23 @@
-;(function() {
-	var dirs = {
-		root: '/web/'
-	};
-	dirs.lib = dirs.root + 'lib/';
+function injectCss( href ) {
+	var link = document.createElement( 'link' ),
+		head = document.head || document.getElementsByTagName( 'head' )[ 0 ];
 
-	yepnope.injectJs(dirs.lib + 'prism.js');
-	yepnope.injectCss(dirs.lib + 'prism.css');
+	link.setAttribute( 'href', href );
+	link.setAttribute( 'rel', 'stylesheet' );
+	head.appendChild( link );
+}
+
+function injectJs( src ) {
+	var script = document.createElement( 'script' ),
+		head = document.head || document.getElementsByTagName( 'head' )[ 0 ];
+
+	script.setAttribute( 'src', src );
+	head.appendChild( script );
+}
+
+;(function() {
+	injectCss( 'http://fonts.googleapis.com/css?family=Bitter:700' );
+	injectCss( '/web/dist/icons.css' );
 })();
 
 //
