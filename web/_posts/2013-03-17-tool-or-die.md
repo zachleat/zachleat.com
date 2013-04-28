@@ -6,7 +6,6 @@ permalink: /tool-or-die/
 categories:
   - Presentations
 ---
-# 
 
 This is a talk I gave at [Nebraska Code Camp 2013](http://www.nebraskacodecamp.com/Sessions/6).
 

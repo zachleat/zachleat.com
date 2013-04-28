@@ -15,7 +15,6 @@ tags:
   - Native Applications
   - Offline
 ---
-# 
 
 This slide deck was prepared for my guest lecture at the University of Nebraska-Omaha’s spring course on Mobile Application Development (BSAD 8916-005). The course was developed [in partnership with Google’s University Relations program][1] and included a variety of business and management students with *limited programming experience*. My lecture was approximately six weeks into the course, and the students had already developed a few simple Android applications. My task was to convince them that HTML5 and Web Development is a viable alternative to native application development, for most use cases.
 

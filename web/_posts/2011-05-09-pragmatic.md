@@ -7,7 +7,6 @@ categories:
   - Application Design
   - Opinion
 ---
-# 
 
 ![][1]
 

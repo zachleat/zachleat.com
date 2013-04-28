@@ -12,7 +12,6 @@ tags:
   - Page Fold
   - Scrolling
 ---
-# 
 
 > It would seem that perfection is attained not when no more can be added, but when no more can be removed.
 > 

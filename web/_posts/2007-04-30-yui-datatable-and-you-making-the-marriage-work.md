@@ -19,7 +19,6 @@ tags:
   - Grid
   - YUI
 ---
-# 
 
 The DataTable/Grid Component, the ball and chain of GUI components. It doesn’t let you go out and instantiate beers to create a inebriated subclass of yourself with your friends on Friday night. It makes you do household garbage collection during the last minute of your favorite sporting event. And you’d think it would die before it would ever encapsulate your private class member. Just to warn you, the previous sentence was not safe for work.
 

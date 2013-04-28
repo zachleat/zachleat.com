@@ -16,7 +16,6 @@ tags:
   - Events
   - jQuery
 ---
-# 
 
 *Warning: Blog Post written for Beginner and Intermediate JavaScript Developers*
 

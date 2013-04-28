@@ -18,7 +18,6 @@ tags:
   - Firefox
   - Timers
 ---
-# 
 
 Look at this code. What do you expect to be the outcome?
 

@@ -19,7 +19,6 @@ tags:
   - Firefox
   - Selenium
 ---
-# 
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]
 

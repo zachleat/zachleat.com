@@ -18,6 +18,5 @@ tags:
   - jQuery UI
   - Throttle
 ---
-# 
 
 *I like shortcuts: 

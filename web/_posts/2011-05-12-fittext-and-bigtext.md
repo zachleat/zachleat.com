@@ -6,7 +6,6 @@ permalink: /fittext-and-bigtext/
 categories:
   - JavaScript
 ---
-# 
 
 Earlier this week, [@TrentWalton][1] [tweeted][2]:
 

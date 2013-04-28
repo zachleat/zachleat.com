@@ -15,7 +15,6 @@ tags:
   - Caching
   - Firefox
 ---
-# 
 
 When you’re developing web applications in Firefox, do you find yourself constantly clearing your cache? Cache is a useful facet of web browsing for everything but the continuous testing environment of web development. Here’s a nice alternative so that you don’t have to disable your cache entirely:
 

@@ -17,7 +17,6 @@ tags:
   - Mootools
   - NTP
 ---
-# 
 
 What did you spend your Saturday afternoon on? Did you kick up your feet in your hammock with a nice glass of lemonade in the shade of your favorite tree and read the HTML specification? Me too! Who knew that we’d have so much in common? Since you’re obviously like me, you’ve probably wondered to yourself: where did the marquee tag go? Why isn’t the internet graced with scrolling text gently flowing like a babbling brook across the pixels of your web browser? Well since you spent your Saturday reading the HTML specifications, you would know that the `` tag was only supported by Internet Explorer, and wasn’t even a part of the HTML spec. Unbelievable right? And to think the `` tag I came to know and love wasn’t part of the spec either! I’m just offended as you, let me reassure you. 
 

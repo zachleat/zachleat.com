@@ -15,7 +15,6 @@ tags:
   - Conservative Design
   - Design Patterns
 ---
-# 
 
 This is another post in the series entitled [Conservative Design Patterns for Form Elements][1].
 

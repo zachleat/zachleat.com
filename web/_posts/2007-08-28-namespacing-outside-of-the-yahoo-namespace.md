@@ -16,7 +16,6 @@ tags:
   - Namespacing
   - YUI
 ---
-# 
 
 YAHOO.namespace(). A lovely little utility function subject that [I’ve written about before][1]. If you’ve never heard of YAHOO.namespace or aren’t even familiar with namespacing, I’d read that article first.
 

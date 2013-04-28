@@ -11,7 +11,6 @@ categories:
 tags:
   - JsTestDriver
 ---
-# 
 
 ***Update**: [The JavaScript Testing Challenge Winner][1]*
 

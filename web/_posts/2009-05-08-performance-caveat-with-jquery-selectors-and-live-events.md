@@ -13,7 +13,6 @@ tags:
   - Event Delegation
   - jQuery
 ---
-# 
 
 *Prerequisite: Knowledge/Experience with [jQuery Live Events][1] (new in jQuery 1.3), and the concept of [Event Delegation][2].*
 

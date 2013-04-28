@@ -16,7 +16,6 @@ tags:
   - Design Patterns
   - Hierarchical Select
 ---
-# 
 
 This is a post in a series entitled [Conservative Design Patterns for Form Elements][1].
 

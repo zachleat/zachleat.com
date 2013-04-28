@@ -16,7 +16,6 @@ tags:
   - Code Poem
   - Nursery Rhymes
 ---
-# 
 
     &#40;function&#40;&#41;
     &#123;

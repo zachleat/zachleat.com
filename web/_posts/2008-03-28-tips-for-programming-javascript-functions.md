@@ -14,7 +14,6 @@ categories:
 tags:
   - jQuery
 ---
-# 
 
 *This article is about my personal coding style, given little tips and tricks that I use to make my code cleaner and more readable.*
 

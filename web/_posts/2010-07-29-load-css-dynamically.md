@@ -11,7 +11,6 @@ categories:
 tags:
   - YUI
 ---
-# 
 
 **Updated 2011/09/27: Rejoice! This issue has now [been fixed in Firefox][1].**
 

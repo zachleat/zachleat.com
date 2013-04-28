@@ -19,7 +19,6 @@ tags:
   - jQuery
   - Youtube
 ---
-# 
 
 [Take a look: ALARMd 2 Beta][1]
 

@@ -15,7 +15,6 @@ tags:
   - TIBCO General Interface
   - XSLT
 ---
-# 
 
 *Sorry about the title, I couldn’t resist.*
 

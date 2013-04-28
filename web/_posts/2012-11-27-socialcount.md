@@ -7,7 +7,6 @@ categories:
   - JavaScript
   - Projects
 ---
-# 
 
 I’m excited to let you guys know that my first [Filament Group][1] open source project was released. I made the move to Filament to both allow more client/open-source crossover work and to collaborate with some great Front End Engineers. *SocialCount* is the first public evidence of that goal.
 

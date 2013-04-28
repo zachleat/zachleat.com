@@ -18,7 +18,6 @@ tags:
   - XML
   - YUI
 ---
-# 
 
 *There are two popular camps for ajax data formats right now: XML and JSON. Both have their (dis-)advantages. The purpose of this article is to show you how to effectively parse XML in the browser.*
 

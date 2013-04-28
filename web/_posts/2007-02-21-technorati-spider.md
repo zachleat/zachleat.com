@@ -15,7 +15,6 @@ categories:
 tags:
   - Self
 ---
-# 
 
 This is a link to my brand baby spanking new [Technorati Profile][1]. Revel.
 

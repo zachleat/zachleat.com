@@ -12,7 +12,6 @@ tags:
   - Git
   - Github
 ---
-# 
 
 In an effort to mindlessly copy what everyone else on the internet is doing keep current on the latest and greatest Source Code Management tools, I decided that it would be good practice to move my open source project ALARMd (as seen on [Lifehacker][1]) from [Google Code][2] to Github.
 

@@ -15,7 +15,6 @@ tags:
   - log4javascript
   - YUI Logger
 ---
-# 
 
 ![][1]
 

@@ -14,7 +14,6 @@ categories:
 tags:
   - Timers
 ---
-# 
 
 Hello internet. Today we’ll be exploring the magical wonders of setInterval. Have you ever worked on a project that needed multiple timers going simultaneously? Have you ever wanted to bind all of those timer callbacks into just one timer without restructuring your code manually? Well, being the Curious George that I am, I wanted to know the performance benefits of the grouping callbacks and eliminating unnecessary timers. Here’s the code I used to do it:
 

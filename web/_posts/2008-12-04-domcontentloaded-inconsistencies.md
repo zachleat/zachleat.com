@@ -16,7 +16,6 @@ categories:
 tags:
   - linkedin
 ---
-# 
 
 **Quick Summary**
 

@@ -11,7 +11,6 @@ tags:
   - css-sprites
   - font-face
 ---
-# 
 
 Almost everyone knows the Webdings font or its sibling Wingdings. Even if you don’t, chances are pretty good that it’s installed on your system.
 

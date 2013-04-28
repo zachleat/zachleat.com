@@ -12,7 +12,6 @@ bttc_cache:
 categories:
   - Other
 ---
-# 
 
 I’ve witnessed installations of IE where the navigator.userAgent reported both MSIE 6.0 and MSIE 7.0 in the same string, when Internet Explorer 7 is the one that’s really installed. Turns out, this is problematic for jQuery version 1.2.6, as it parses the double version userAgent as Internet Explorer 6, which may cause problems with your code if you’re using $.browser.version.
 

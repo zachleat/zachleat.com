@@ -14,7 +14,6 @@ tags:
   - QUnit
   - Testing
 ---
-# 
 
 ***Update 2**: [The JavaScript Testing Challenge Winner][1]*
 

@@ -17,7 +17,6 @@ tags:
   - Button
   - YUI
 ---
-# 
 
 Buttons! Let’s make them obvious and good looking. Let’s make them have inline images and cool hover colors. Let’s make them three dimensional. Especially so, let’s make them from markup so that we don’t take functionality away from technology disabled users.
 

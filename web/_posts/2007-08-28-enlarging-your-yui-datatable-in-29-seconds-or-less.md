@@ -19,7 +19,6 @@ tags:
   - Grid
   - YUI
 ---
-# 
 
 *This is an updated version of the [Enlarging your YUI DataTable in 30 Seconds or Less!][1] modified for the newly released YUI 2.3.0.*
 

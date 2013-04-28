@@ -11,7 +11,6 @@ tags:
   - Internet Explorer
   - JScript
 ---
-# 
 
 What would you expect to be the result of executing the following code?
 

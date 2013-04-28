@@ -13,7 +13,6 @@ tags:
   - Gravatar
   - jQuery
 ---
-# 
 
 ## [See the Demo][1]
 

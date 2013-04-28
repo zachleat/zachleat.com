@@ -12,7 +12,6 @@ tags:
   - JsTestDriver
   - TDD
 ---
-# 
 
 Congratulations to [Steve Love][1], who was the first to complete [The JavaScript Testing Challenge][2].
 

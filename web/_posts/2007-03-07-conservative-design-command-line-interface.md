@@ -15,7 +15,6 @@ tags:
   - Command Line
   - Conservative Design
 ---
-# 
 
 This is another post in the series entitled [Conservative Design Patterns for Form Elements][1].
 

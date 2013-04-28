@@ -15,7 +15,6 @@ tags:
   - geocode
   - location
 ---
-# 
 
 *Apologies to international readers, this spam message is intended for citizens of the USA only. Thanks for understanding.*
 

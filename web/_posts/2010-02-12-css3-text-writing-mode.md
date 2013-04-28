@@ -9,7 +9,6 @@ categories:
   - CSS
   - Web Browsers
 ---
-# 
 
 After reading an interesting article on using the [writing-mode CSS property][1] to display vertical text (I’m always interested in how to abuse what browsers currently support into something new and exciting), I decided to look into this `writing-mode` property and see what opportunities it might present.
 

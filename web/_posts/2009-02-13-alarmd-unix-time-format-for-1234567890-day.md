@@ -8,7 +8,6 @@ bttc_cache:
 categories:
   - Projects
 ---
-# 
 
 In honor of [1234567890 day][1], I’ve added the Unix time format to [ALARMd][2].
 

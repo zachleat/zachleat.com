@@ -15,7 +15,6 @@ tags:
   - Registration
   - Security
 ---
-# 
 
 ![Signup Form][1] A lot of people **complain about registration forms**. Some people have suggested getting rid of them altogether, allowing users to utilize login credentials from accounts they already have through OpenID. But even with a highly technical audience, OpenID adoption is [problematic][2].
 

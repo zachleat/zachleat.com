@@ -8,7 +8,6 @@ bttc_cache:
 categories:
   - Application Design
 ---
-# 
 
 Open Web advocacy can get pretty lonely working in Big Enterprise. Armed with slow moving standards bodies, and held back by antiquated browser support, architectural battles over tools and frameworks can get pretty hairy if you don’t approach them with the right frame of mind.
 

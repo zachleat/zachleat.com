@@ -8,7 +8,6 @@ categories:
 tags:
   - parseInt
 ---
-# 
 
 This Valentine’s Day, spend a little quality time with JavaScript. Don’t be afraid to [get parseIntimate][1].
 

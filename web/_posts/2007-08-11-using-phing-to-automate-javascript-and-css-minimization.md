@@ -20,7 +20,6 @@ tags:
   - Packer
   - Phing
 ---
-# 
 
 *This article may be too advanced for beginner programmers. Unfortunately, I will not support any code that I do not write (in this case), so if you have troubles installing some of the packages required below, please see the authors of the problem code. Thank you.*
 

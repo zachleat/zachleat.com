@@ -16,7 +16,6 @@ tags:
   - Code Poem
   - Nursery Rhymes
 ---
-# 
 
     < ?php
     class I &#123;

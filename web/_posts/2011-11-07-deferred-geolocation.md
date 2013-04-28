@@ -6,7 +6,6 @@ permalink: /deferred-geolocation/
 categories:
   - JavaScript
 ---
-# 
 
 *Warning, this article is intended for Deferred unbelievers to convince them that Deferred objects are both easy and useful. If you’re already a Deferred object expert, you might want to skip this one.*
 

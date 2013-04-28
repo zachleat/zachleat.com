@@ -12,7 +12,6 @@ tags:
   - Flash
   - Flex
 ---
-# 
 
 A few weeks ago in the process of doing some research about the Adobe Flex platform, I came across their online store, a dogfooded full page application using Flex.
 
