@@ -143,6 +143,12 @@ th {
 	padding: .4em .4em;
 }
 
+/* Compatibility Tables */
+table.compatibility { font-family: $sansSerifFontStack; }
+td.yes { background-color: #00882D; color: #fff; }
+td.no { background-color: #CB000F; color: #fff; }
+td.emulate { background-color: #40A662; color: #fff; }
+
 @media (min-width: 30em) {
 	table {
 		font-size: 1em;
