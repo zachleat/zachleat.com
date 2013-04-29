@@ -29,186 +29,139 @@ As far as my tests go, the only browser to support the `writing-mode` property a
 
 ## Compatibility Table
 
-writing-mode
-
-Internet Explorer  
-(Trident)
-
-Mozilla Firefox  
-(Gecko)
-
-Apple Safari  
-(Webkit)
-
-Google Chrome  
-(Webkit)
-
-6
-
-7
-
-8
-
-3.6
-
-4
-
-4
-
-`lr-tb`
-
-yes
-
-yes
-
-yes
-
-yes
-
-yes
-
-yes
-
-`rl-tb`
-
-emulatable
-
-yes
-
-yes
-
-emulatable
-
-emulatable
-
-emulatable
-
-`lr-bt`
-
-no
-
-no
-
-yes
-
-no
-
-no
-
-no
-
-`rl-bt`
-
-no
-
-no
-
-yes
-
-no
-
-no
-
-no
-
-`tb-lr`
-
-no
-
-no
-
-yes
-
-no
-
-no
-
-no
-
-`tb-rl`
-
-yes
-
-yes
-
-yes
-
-emulatable
-
-emulatable
-
-emulatable
-
-`bt-lr`
-
-no
-
-no
-
-yes
-
-no
-
-no
-
-no
-
-`bt-rl`
-
-emulatable
-
-yes
-
-yes
-
-emulatable
-
-emulatable
-
-emulatable
+<table class="compatibility">
+<thead>
+<tr>
+<th rowspan="2">writing-mode</th>
+<th colspan="3">Internet Explorer<br>(Trident)</th>
+<th>Mozilla Firefox<br>(Gecko)</th>
+<th>Apple Safari<br>(Webkit)</th>
+<th>Google Chrome<br>(Webkit)</th>
+</tr>
+<tr>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>3.6</th>
+<th>4</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lr-tb</code></td>
+<td class="yes">yes</td>
+<td class="yes">yes</td>
+<td class="yes">yes</td>
+<td class="yes">yes</td>
+<td class="yes">yes</td>
+<td class="yes">yes</td>
+</tr>
+<tr>
+<td><code>rl-tb</code></td>
+<td class="emulate">emulatable</td>
+<td class="yes">yes</td>
+<td class="yes">yes</td>
+<td class="emulate">emulatable</td>
+<td class="emulate">emulatable</td>
+<td class="emulate">emulatable</td>
+</tr>
+<tr style="background-color: #eee;">
+<td><code>lr-bt</code></td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td class="yes">yes</td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td class="no">no</td>
+</tr>
+<tr style="background-color: #eee;">
+<td><code>rl-bt</code></td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td class="yes">yes</td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td class="no">no</td>
+</tr>
+<tr>
+<td><code>tb-lr</code></td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td class="yes">yes</td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td class="no">no</td>
+</tr>
+<tr>
+<td><code>tb-rl</code></td>
+<td class="yes">yes</td>
+<td class="yes">yes</td>
+<td class="yes">yes</td>
+<td class="emulate">emulatable</td>
+<td class="emulate">emulatable</td>
+<td class="emulate">emulatable</td>
+</tr>
+<tr>
+<td><code>bt-lr</code></td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td class="yes">yes</td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td class="no">no</td>
+</tr>
+<tr>
+<td><code>bt-rl</code></td>
+<td class="emulate">emulatable</td>
+<td class="yes">yes</td>
+<td class="yes">yes</td>
+<td class="emulate">emulatable</td>
+<td class="emulate">emulatable</td>
+<td class="emulate">emulatable</td>
+</tr>
+</tbody>
+</table>
 
 ## CSS Code for Emulation
 
-writing-mode
 
-CSS
+### Writing Mode: `lr-tb`
 
-`lr-tb`
+    // Do nothing, this is the default
 
-    // Default
-
-`rl-tb`
+### Writing Mode: `rl-tb`
 
     direction: rtl;
 
-`lr-bt`
+### Writing Mode: `lr-bt`
 
     // Not possible using W3C spec
 
-`rl-bt`
+### Writing Mode: `rl-bt`
 
     // Not possible using W3C spec
 
-`tb-lr`
+### Writing Mode: `tb-lr`
 
     // Not possible using W3C spec
 
-`tb-rl`
+### Writing Mode: `tb-rl`
 
-    -webkit-transform: rotate&#40;90deg&#41;;
-    -moz-transform: rotate&#40;90deg&#41;;
-    filter: progid:DXImageTransform.Microsoft.BasicImage&#40;rotation=1&#41;;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 
-`bt-lr`
+### Writing Mode: `bt-lr`
 
     // Not possible using W3C spec
 
-`bt-rl`
+### Writing Mode: `bt-rl`
 
     direction: rtl;
-    -webkit-transform: rotate&#40;90deg&#41;;
-    -moz-transform: rotate&#40;90deg&#41;;
-    filter: progid:DXImageTransform.Microsoft.BasicImage&#40;rotation=1&#41;;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 
 ## Conclusion
 

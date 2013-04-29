@@ -15,7 +15,7 @@ tags:
 
 > It would seem that perfection is attained not when no more can be added, but when no more can be removed.
 > 
-> - Antoine de Saint Exupéry
+> —Antoine de Saint Exupéry
 
   
   
@@ -46,26 +46,30 @@ While not a usability epidemic, the “Back to Top” link is still widely used.
 
 Don’t agree? If you’re stubborn as hell and hate simplicity, you’re going to keep the link on your page no matter what reasons are presented. In that case, at the very least follow these two guidelines:
 
-1.  Use **progressive enhancement**:     Back to Top
-    
-        // jQuery Prerequisite
-        $&#40;'#back-to-top'&#41;.click&#40;function&#40;&#41; &#123;
-            window.scrollTo&#40;,&#41;;
-        &nbsp;
+1.  Use **progressive enhancement**:
+
+        <a href="#" id="back-to-top">Back to Top</a>
+
+        // Requires jQuery
+        $('#back-to-top').click(function() {
+            window.scrollTo(0,0);
+         
             // don't change the hash if not needed
             return false;
-        &#125;&#41;;
+        });
 
 2.  **Hide the link** if the page doesn’t have a scrollbar. If no scrollbar exists, the user will **always be “at the top.”**     // Continuing with Previous Example
-        $&#40;function&#40;&#41; &#123;
-            $&#40;'#back-to-top'&#41;.hide&#40;&#41;;
-        &#125;&#41;;
-        &nbsp;
+
+        // Continuing with Previous Example
+        $(function() {
+            $('#back-to-top').hide();
+        });
+         
         // If the page scrolls, we know there is a scrollbar.
-        $&#40;window&#41;.scroll&#40;function&#40;&#41; &#123;
-            $&#40;'#back-to-top'&#41;.show&#40;&#41;;
-        &#125;&#41;;
-        &nbsp;
+        $(window).scroll(function() {
+            $('#back-to-top').show();
+        });
+         
         // For completeness, you may also want to
         //   add logic to the "resize" event.
 

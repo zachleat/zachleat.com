@@ -98,24 +98,22 @@ Licensed under the [WTFPL][10], as highly recommended by [Isaac Schleuter][11] (
 
 Easiest form, onblur of email text input field:
 
-    $&#40;'#emailTextField'&#41;.blur&#40;function&#40;event&#41;
-    &#123;
-        $&#40;this&#41;.after&#40;$.gravatar&#40;$&#40;this&#41;.val&#40;&#41;&#41;&#41;;
-    &#125;&#41;;
+    $('#emailTextField').blur(function(event) {
+        $(this).after($.gravatar($(this).val()));
+    });
 
 Showing all options, again onblur of email text input field.
 
-    $&#40;'#email'&#41;.blur&#40;function&#40;event&#41;
-    &#123;
-        $&#40;'body'&#41;.append&#40;$.gravatar&#40;$&#40;this&#41;.val&#40;&#41;, &#123;
+    $('#email').blur(function(event) {
+        $('body').append($.gravatar($(this).val(), {
             // integer size: between 1 and 512, default 80 (in pixels)
             size: 200,
             // maximum rating (in order of raunchiness, least to most): g (default), pg, r, x
             rating: 'pg',
             // url to define a default image (can also be one of: identicon, monsterid, wavatar)
             image: 'identicon'
-        &#125;&#41;&#41;;
-    &#125;&#41;;
+        }));
+    });
 
 **Update:** This script has been moved to [Github][15].
 

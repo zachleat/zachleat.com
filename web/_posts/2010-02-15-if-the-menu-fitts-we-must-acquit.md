@@ -48,87 +48,68 @@ To test whether or not this behavior is working correctly, **maximize your brows
 
 ## Compatibility Table
 
-Browser
-
-Operating System
-
-Left Menu
-
-Bottom Menu
-
-Status Bar
-
-Detail
-
-Internet Explorer 8
-
-Windows XP
-
-no
-
-no
-
-yes
-
-IE8 has a small 3 pixel border on the left and right of each window.
-
-Internet Explorer 7
-
-Windows XP
-
-no
-
-no
-
-yes
-
-IE7 has a small 3 pixel border on the left and right of each window.
-
-Internet Explorer 6
-
-Windows XP
-
-no
-
-no
-
-yes
-
-IE6 has a small 3 pixel border on the left and right of each window.
-
-Google Chrome
-
-Windows XP and Mac OS 10.6
-
-yes
-
-no
-
-no
-
-
-
-Mozilla Firefox 3.5 and 3.6
-
-Windows XP and Mac OS 10.6
-
-yes
-
-no
-
-yes
-
-
-
-Safari 4.0.4
-
-Windows XP and Mac OS 10.6
-
-yes
-
-no
-
-no
+<table class="compatibility">
+<thead>
+<tr>
+<th>Browser</th>
+<th>Operating System</th>
+<th>Left Menu</th>
+<th>Bottom Menu</th>
+<th>Status Bar</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internet Explorer 8</td>
+<td>Windows XP</td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td>yes</td>
+<td>IE8 has a small 3 pixel border on the left and right of each window.</td>
+</tr>
+<tr>
+<td>Internet Explorer 7</td>
+<td>Windows XP</td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td>yes</td>
+<td>IE7 has a small 3 pixel border on the left and right of each window.</td>
+</tr>
+<tr>
+<td>Internet Explorer 6</td>
+<td>Windows XP</td>
+<td class="no">no</td>
+<td class="no">no</td>
+<td>yes</td>
+<td>IE6 has a small 3 pixel border on the left and right of each window.</td>
+</tr>
+<tr>
+<td>Google Chrome</td>
+<td>Windows XP and Mac OS 10.6</td>
+<td class="yes">yes</td>
+<td class="no">no</td>
+<td>no</td>
+<td></td>
+</tr>
+<tr>
+<td>Mozilla Firefox 3.5 and 3.6</td>
+<td>Windows XP and Mac OS 10.6</td>
+<td class="yes">yes</td>
+<td class="no">no</td>
+<td>yes</td>
+<td></td>
+</tr>
+<tr>
+<td>Safari 4.0.4</td>
+<td>Windows XP and Mac OS 10.6</td>
+<td class="yes">yes</td>
+<td class="no">no</td>
+<td>no</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 

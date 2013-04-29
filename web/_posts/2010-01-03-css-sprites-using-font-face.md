@@ -55,25 +55,24 @@ It was pretty trivial to create [a font][5] with a subset of the jQuery UI icons
  [6]: http://fontstruct.fontshop.com/
  [7]: http://www.fontsquirrel.com/fontface/generator
 
-*   [View the Demo][8]
+## [View the Demo][8]
 
  [8]: http://www.zachleat.com/test/fonts/font.html
 
 Let me know what you think!
 
 Successfully tested on: 
-*   Google Chrome 4 (Mac)
-*   Safari 4 (Mac)
-*   Firefox 3.5 (Mac and Windows)
-*   Internet Explorer 8
-*   With documented limitations above: 
-    *   Internet Explorer 6
-    *   Internet Explorer 7 (Compatibility Mode in IE8)
+
+ *   Google Chrome 4 (Mac)
+ *   Safari 4 (Mac)
+ *   Firefox 3.5 (Mac and Windows)
+ *   Internet Explorer 8
+ *   With documented limitations above: Internet Explorer 6 and 7 (Compatibility Mode in IE8)
 
 Does not work on (no @font-face support):
 
-*   Google Chrome 3 and prior
-*   Firefox 3 and prior
+ *   Google Chrome 3 and prior
+ *   Firefox 3 and prior
 
 Read more about [@font-face support from Paul Irish][9].
 

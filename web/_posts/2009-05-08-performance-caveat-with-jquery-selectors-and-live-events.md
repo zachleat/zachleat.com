@@ -30,43 +30,42 @@ Event delegation is a great way to program for performance. The `live` jQuery me
 
 For example, say you have a page containing approximately 500 custom tooltip components on it (not typical, but stick with me, this is to prove a point). How might one go about adding a simple live event to activate each tooltip when the user hovers over it?
 
-    $&#40;'span.myTooltip'&#41;.live&#40;'mouseover', function&#40;event&#41; &#123;
+    $('span.myTooltip').live('mouseover', function(event) {
         // activate tooltip
-    &#125;&#41;;
+    });
 
 See the problem? jQuery will actually run the selector on the document, resulting in unnecessary overhead. jQuery is only assigning a single event handler to top level of the document, why does it need to know what nodes it will be binding to before assigning the callback?
 
 What can we do? Let’s create a jQuery function, instead of a method, so it won’t query the document. Try this on for size:
 
-    $.live = function&#40;selector, type, fn&#41;
-    &#123;
-        var r = $&#40;&#91;&#93;&#41;;
+    $.live = function(selector, type, fn) {
+        var r = $([]);
         r.selector = selector;
-        if&#40;type && fn&#41; &#123;
-            r.live&#40;type, fn&#41;;
-        &#125;
+        if(type && fn) {
+            r.live(type, fn);
+        }
         return r;
-    &#125;;
+    };
 
 ## Usage
 
     // Single event type
-    $.live&#40;'span.myTooltip', 'mouseover', function&#40;event&#41; &#123;
+    $.live('span.myTooltip', 'mouseover', function(event) {
         // activate tooltip
-    &#125;&#41;;
-    &nbsp;
+    });
+     
     // Multiple event types (you can call the jQuery live method on the return value from the function)
-    $.live&#40;'span.myTooltip'&#41;
-        .live&#40;'mouseover', function&#40;event&#41; &#123;
+    $.live('span.myTooltip')
+        .live('mouseover', function(event) {
             // activate tooltip
-        &#125;&#41;
-        .live&#40;'mouseout', function&#40;event&#41; &#123;
+        })
+        .live('mouseout', function(event) {
             // deactivate tooltip
-        &#125;&#41;;
+        });
 
 Also, as a side note, keep in mind that jQuery `live` **doesn’t** support space separated events, like `bind` does.
 
     // Will not work.
-    $&#40;'span.myTooltip'&#41;.live&#40;'mouseover mouseout', function&#40;&#41; &#123;&#125;&#41;;
+    $('span.myTooltip').live('mouseover mouseout', function() {});
 
 Have fun!
