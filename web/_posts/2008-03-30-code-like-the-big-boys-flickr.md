@@ -36,7 +36,7 @@ They use the [tan hack][4] as well to isolate a CSS declaration for IE browsers:
 
  [4]: http://www.info.com.ph/~etan/w3pantheon/style/starhtmlbug.html
 
-    * html #featured-image cite &#123;bottom: -1px;&#125;
+    * html #featured-image cite {bottom: -1px;}
 
 This is to workaround for an IE limitation to absolutely positioning content at the bottom of a relatively positioned div, in this case the black box containing the credits (or citation, hence the cite tag) inside of the feature image.
 
@@ -53,10 +53,12 @@ Another interesting CSS Hack they’ve employed involves the line-height for  ta
 
 I’m not familiar with the `/**/` syntax, and would really appreciate any information someone has on what platform this is targeting. A comment would be nice!
 
+*Editors Note (2013): The `/**/` syntax is to target [everything but IE6](http://browserhacks.com/).*
+
 **HTML**
 
 Standard here, and they have some nice meta tags for the I-phone:
 
-    
+    <meta name="viewport" content="width=950" />
 
 All in all, it’s short and sweet code for a home page. It’s nice to see such clean code with an eye towards standards on a commercially successful site, many props to their programmers. I’m scared to do my next in the series, because I’m 100% sure it won’t be as nice of a read as Flickr was.

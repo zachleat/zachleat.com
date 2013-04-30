@@ -33,14 +33,14 @@ Here are a few quick examples:
 
 ## Valid JSON
 
-    &#123;"myKey": "myString"&#125;
+    {"myKey": "myString"}
 
 Don’t use single quotes. Don’t use unquoted object keys.
 
 ## Invalid JSON
 
-    &#123;myKey: "myString"&#125;
-    &#123;'myKey': 'myString'&#125;
+    {myKey: "myString"}
+    {'myKey': 'myString'}
 
 Credits to Jonathan Snook for the [initial write-up][4] and Crockford for formalizing JSON.
 

@@ -31,15 +31,16 @@ This class is pretty much a direct port of [John Resig’s JavaScript Pretty Dat
 Usage:
 
     // pass in a String DateTime, compared to another String DateTime (defaults to now)
-    $myString = Date_Difference::getStringResolved&#40;'-7 weeks'&#41;;
-    $myString = Date_Difference::getStringResolved&#40;'-7 weeks', ' 1 week'&#41;;
-    &nbsp;
+    $myString = Date_Difference::getStringResolved('-7 weeks');
+    $myString = Date_Difference::getStringResolved('-7 weeks', '+1 week');
+     
     // pass in a DateTime object, compared to another DateTime object (defaults to now)
     // useful with the Propel ORM, which uses DateTime objects internally.
-    $myString = Date_Difference::getString&#40;new DateTime&#40;'-7 weeks'&#41;&#41;;
-    $myString = Date_Difference::getString&#40;new DateTime&#40;'-7 weeks'&#41;, new DateTime&#40;' 1 week'&#41;&#41;;
+    $myString = Date_Difference::getString(new DateTime('-7 weeks'));
+    $myString = Date_Difference::getString(new DateTime('-7 weeks'), new DateTime('+1 week'));
 
 [Download PHP Pretty Date][4] (PHP 5.10 , 1.86KB)  
 
-
  [4]: http://www.zachleat.com/Projects/phpPrettyDate/Date_Difference.phps
+
+[http://www.zachleat.com/Projects/phpPrettyDate/Date_Difference.phps](http://www.zachleat.com/Projects/phpPrettyDate/Date_Difference.phps)

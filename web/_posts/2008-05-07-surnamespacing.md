@@ -29,36 +29,36 @@ Jesus Christ, please show me some examples:
 
 **JavaScript Surnamespacing**
 
-    var Christ = &#123;
-        Jesus: &#123;
-            walkOn: function&#40;obj&#41; &#123;&#125;,
-            turn: function&#40;from, to&#41; &#123;&#125;,
-            respawn: function&#40;&#41; &#123;&#125;
-        &#125;
-    &#125;;
+    var Christ = {
+        Jesus: {
+            walkOn: function(obj) {},
+            turn: function(from, to) {},
+            respawn: function() {}
+        }
+    };
     // Sample Usage
-    Christ.Jesus.walkOn&#40;'water'&#41;;
-    Christ.Jesus.turn&#40;'water', 'wine'&#41;;
-    Christ.Jesus.respawn&#40;&#41;;
+    Christ.Jesus.walkOn('water');
+    Christ.Jesus.turn('water', 'wine');
+    Christ.Jesus.respawn();
 
 **Java Surnamespacing**
 
     package Christ;
-    public class Jesus &#123;
-        public void walkOn&#40;String s&#41; &#123;&#125;
-        public void turn&#40;String from, String to&#41; &#123;&#125;
-        public void respawn&#40;&#41; &#123;&#125;
-    &#125;
+    public class Jesus {
+        public void walkOn(String s) {}
+        public void turn(String from, String to) {}
+        public void respawn() {}
+    }
 
 **PHP 6 Surnamespacing ([projected usage][1])**
 
-    namespace Christ &#123;
-        class Jesus &#123;
-            public function walkOn&#40;$obj&#41; &#123;&#125;
-            public function turn&#40;$from, $to&#41; &#123;&#125;
-            public function respawn&#40;&#41; &#123;&#125;
-        &#125;
-    &#125;
+    namespace Christ {
+        class Jesus {
+            public function walkOn($obj) {}
+            public function turn($from, $to) {}
+            public function respawn() {}
+        }
+    }
 
 **Update**: Apparently I can’t write Java code. Don’t tell work.
 
