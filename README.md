@@ -21,8 +21,9 @@ Prerequisites: Node.js and Ruby
 ## Local Development Workflow
 
 1. `grunt watch`
-1. `cd web && jekyll --server`
 1. Open `http://zachleat.com.local/`
+
+To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 
 ## TODO
 
