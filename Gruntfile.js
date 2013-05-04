@@ -91,7 +91,7 @@ module.exports = function(grunt) {
 				tasks: ['default']
 			},
 			content: {
-				files: ['web/_posts/**/*', 'web/_layouts/**/*', 'web/speaking/**/*', 'web/projects/**/*', 'web/about/**/*', 'web/license/**/*'],
+				files: ['web/_posts/**/*', 'web/_layouts/**/*', 'web/speaking/**/*', 'web/projects/**/*', 'web/about/**/*', 'web/license/**/*', 'web/feed/**/*'],
 				tasks: ['content']
 			}
 		}

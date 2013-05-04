@@ -3,11 +3,12 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Web 3.0, 6 Bladed Razors, 7 Minute Abs</title>
-	<link href="http://zachleat.com/web/atom.xml" rel="self"/>
-	<link href="http://zachleat.com/web/"/>
+	<title>Zach Leatherman</title>
+	<description>The blog formerly known as Web 3.0, 6 Bladed Razors, 7 Minute Abs</description>
+	<link href="http://www.zachleat.com/web/feed/" rel="self"/>
+	<link href="http://www.zachleat.com/web/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://nebraskajs.com/</id>
+	<id>http://www.zachleat.com/</id>
 	<author>
 		<name>Zach Leatherman</name>
 		<email>zachleat@zachleat.com</email>
@@ -16,9 +17,9 @@ layout: nil
 	{% for post in site.posts %}
 	<entry>
 		<title>{{ post.title }}</title>
-		<link href="http://nebraskajs.com{{ post.url }}"/>
+		<link href="http://www.zachleat.com/web{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>http://zachleat.com/web{{ post.id }}</id>
+		<id>http://www.zachleat.com/web{{ post.id }}</id>
 		<content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
