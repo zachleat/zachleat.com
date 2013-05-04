@@ -35,7 +35,7 @@ html {
 /* Layout */
 .rail {
 	text-align: center;
-	padding: 1em;
+	padding: 5em 1em 1em;
 }
 .content {
 	text-align: left;
@@ -47,7 +47,7 @@ html {
 	font-size: 1.1875em;
 	line-height: 160%;
 }
-.main {
+.maxwidth {
 	max-width: 31em;
 	margin: 0 auto;
 }
@@ -55,11 +55,11 @@ html {
 @media (min-width: 64em) {
 	.rail {
 		text-align: left;
-		position: absolute;
+		position: fixed;
 		left: 0;
 		top: 0;
 		width: 18em;
-		padding: 4em 0 0 3em;
+		padding: 7em 0 0 3em;
 	}
 	.content {
 		padding: 2em;
@@ -98,15 +98,8 @@ h1, h2, h3, h4, h5 {
 }
 h1 {
 	color: #222;
-	font-size: 2.4em;
+	font-size: 2em;
 	line-height: 110%;
-
-	-ms-word-break: break-all;
-	word-break: break-all;
-	word-break: break-word;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
 }
 h1:first-child {
 	margin-top: 0;
@@ -128,6 +121,9 @@ pre {
 	word-wrap: break-word;
 }
 @media (min-width: 64em) {
+	h1 {
+		font-size: 2.4em;
+	}
 	pre {
 		font-size: 1em;
 	}
@@ -163,23 +159,72 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 
 /* Logo and Rail */
-.rail img {
-	width: auto;
-	max-width: 100%;
-	max-height: 13em;
-}
 .rail a {
+	display: inline-block;
+	margin: 0 auto;
 	text-decoration: none;
 }
 .rail h1 {
+	font-size: 1.4em;
+	display: block;
+	color: #aaa;
+	width: 8em;
+	text-align: left;
+	overflow: hidden;
+	margin: 0;
+	vertical-align: middle;
+}
+.rail img {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: .5em;
+	border-radius: 50%;
+}
+.rail em {
+	display: block;
+	padding-top: 2em;
+	color: #bbb;
+	font-family: $serifFontStack;
+	font-size: .75em;
+	line-height: 110%;
+	text-align: center;
+}
+
+/* Header Links */
+.links {
+	font-family: $sansSerifFontStack;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .75em;
+	padding-top: .8em;
+}
+.links a {
+	display: inline-block;
+	margin-top: .4em;
+	padding: .4em .8em;
+}
+.links a,
+.links :visited {
 	color: #aaa;
 }
-.rail h2 {
-	color: #bbb;
+.links a:hover,
+.links a:focus {
+	color: #000;
+}
+@media (min-width: 30em) {
+	.links {
+		font-size: .875em;
+	}
 }
 @media (min-width: 64em) {
-	.rail {
-		position: fixed;
+	.links {
+		padding-top: 3em;
+	}
+	.links a {
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -200,25 +245,70 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 .posts a {
 	display: block;
-	padding: 0.5em 2em 0.5em 4em;
+	padding: 0.5em 0;
 	font-size: 1.375em; /* 22px */
 	line-height: 110%;
 	text-decoration: none;
 }
 .posts .date,
-.posts li:before {
-	position: absolute;
+.posts li:after {
 	font-family: $monospaceFontStack;
-}
-.posts li:before {
-	right: .3em;
-	bottom: 0;
-	content: "#" counter(start-from) "";
-	color: #ccc;
-	font-size: .625em; /* 10px */
 }
 .posts .date {
 	color: #aaa;
-	left: .3em;
 	font-size: .5909em; /* 13px */
+}
+em.date {
+	display: block;
+}
+em.date:before {
+	content: '—';
+}
+
+@media (min-width: 30em) {
+	.posts a {
+		padding: .5em 2em .5em 4em;
+	}
+	.posts li:after {
+		pointer-events: none;
+		position: absolute;
+		right: .3em;
+		bottom: 0;
+		content: "#" counter(start-from) "";
+		color: #ccc;
+		font-size: .625em; /* 10px */
+	}
+	.posts .date {
+		position: absolute;
+	}
+	.posts .date {
+		left: .3em;
+	}
+}
+
+/* Call to Action */
+.action {
+	font-size: 1.125em;
+	margin-top: 3em;
+	line-height: 140%;
+	background: #ffc;
+	border: 1px solid #ccc;
+	padding: .5em;
+}
+.action a {
+	white-space: nowrap;
+	text-decoration: none;
+}
+.action a i {
+	vertical-align: middle;
+}
+
+/* Footer */
+.footer {
+	margin-top: 2em;
+	padding: .6em 1em;
+	font-family: $serifFontStack;
+	font-style: italic;
+	font-size: .75em;
+	line-height: 120%;
 }

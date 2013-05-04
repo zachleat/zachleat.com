@@ -2,116 +2,120 @@
 title: Projects
 author: Zach Leatherman
 layout: page
-btc_comment_counts:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299637180:1
 ---
-# 
 
-## [BigText ![][2]][2]
+View all project source code on [GitHub](https://github.com/zachleat/).
 
- []: /web/bigtext-makes-text-big/
+## [SocialCount][socialcount]
+[![](socialcount.png "SocialCount")][socialcount]
 
-The BigText jQuery plugin takes a single element and sizes the text inside of its child block elements to fit the width of the parent element. Gives the text that lovely vertical alignment. Be sure to check out the demo! Also on [Github][2]. 
+[socialcount]: http://filamentgroup.com/lab/socialcount/
 
-## [parseIntimate ![][4]][4]
+SocialCount is a small jQuery plugin for progressively enhanced, lazy loaded, mobile friendly social networking widgets.
 
-A Valentine’s Day website to spend a little quality time with JavaScript and it’s quirky parseInt function. Don’t be afraid to get parseIntimate. 
+## [BigText][bt]
+[![](/web/wp-content/uploads/2009/12/Screen-shot-2011-01-14-at-6.46.00-PM.png "BigText")][bt]
 
-## [ALARMd 2![Screenshot of ALARMd 2][5]][5]
+[bt]:/web/bigtext-makes-text-big/
 
-An online alarm clock that wakes you up to YouTube, Pandora, MP3 or other multimedia source. Featuring integration with Google Calendar. On [Github][5]. 
+ The BigText jQuery plugin takes a single element and sizes the text inside of its child block elements to fit the width of the parent element. Gives the text that lovely vertical alignment. Be sure to check out the demo! Also on [Github](http://github.com/zachleat/bigtext).
 
-## [ALARMd][6]
+## [parseIntimate][pi]
+[![](/web/wp-content/uploads/2009/12/Screen-Shot-2012-02-17-at-7.49.26-PM1.png "parseIntimate.com")][pi]
 
-First iteration of the alarm clock that plays YouTube videos or other multimedia sources. See ALARMd 2 above. 
+[pi]: (http://parseintimate.com)
 
-## [![][8]Raging Netflix Queue][8]
+ A Valentine’s Day website to spend a little quality time with JavaScript and it’s quirky parseInt function. Don’t be afraid to get parseIntimate.
 
-This Google Chrome extension will recognize movie web sites and one click on the extension will automatically add that title to your queue. 
+## [ALARMd 2][alarmd2]
+[![Screenshot of ALARMd 2](/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-10.50.03-PM.png "ALARMd 2")][alarmd2]
 
-## [Pretty Date JavaScript][8]
+[alarmd2]: /alarmd2/
 
-Utility to show the relative difference between a time and now. On [Github][9]. Also available [in PHP][10].
+An online alarm clock that wakes you up to YouTube, Pandora, MP3 or other multimedia source. Featuring integration with Google Calendar.  On [Github](http://github.com/zachleat/ALARMd).
 
-## [![][12]Traci Clevenger][12]
+## [ALARMd](/alarmd/)
 
-A full screen photography portfolio website. On [Github][12]. 
+First iteration of the alarm clock that plays YouTube videos or other multimedia sources.  See ALARMd 2 above.
 
-## [JavaScript Gravatar Plugin][13]
+## [Raging Netflix Queue][rnq]
+[![](/web/wp-content/uploads/2009/12/Screen-shot-2011-02-21-at-11.21.43-AM.png "Raging Netflix Queue")][rnq]
 
-Retrieve a gravatar image dynamically from any e-mail address. On [Github][14].
+[rnq]: /web/raging-netflix-queue/
 
-## [scrollf![Screenshot of Scrollf][16]][16]
+This Google Chrome extension will recognize movie web sites and one click on the extension will automatically add that title to your queue.
 
-A draggable infinite-scroll [flickr][16] image browser (similar to Google Maps) 
+## [Pretty Date JavaScript](/web/yet-another-pretty-date-javascript/)
 
-## [maLArquee![Screenshot of maLArquee][18]][18]
+Utility to show the relative difference between a time and now. On [Github](http://github.com/zachleat/Humane-Dates). Also available [in PHP](/web/php-pretty-date/).
 
-A strange project creating a marquee. 
+## [Traci Clevenger Photography][tc]
+[![](/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-11.28.09-PM.png "Traci Clevenger Photography")][tc]
+
+[tc]: http://www.traciclevenger.com/
+
+A full screen photography portfolio website. On [Github](http://github.com/zachleat/Parlour).
+
+## [JavaScript Gravatar Plugin](/web/scare-your-visitors-with-this-javascript-gravatar-plugin/)
+
+Retrieve a gravatar image dynamically from any e-mail address. On [Github](http://github.com/zachleat/jQuery-Gravatar).
+
+## [scrollf][scr]
+[![Screenshot of Scrollf](/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-11.49.30-PM.png "Scrollf")][scr]
+
+[scr]: /scrollf/
+
+A draggable  infinite-scroll [flickr](http://www.flickr.com/) image browser (similar to Google Maps)
+
+## [maLArquee][mal]
+[![Screenshot of maLArquee](/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-10.50.55-PM.png "maLArquee")][mal]
+
+[mal]: /Projects/malarquee/
+
+A strange project creating a marquee.
 
 * * *
 
 ## Retired Projects
 
-## Tournology ![Screenshot of tournology.com][18]
+### Tournology
+![Screenshot of tournology.com](/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-11.29.15-PM.png "Tournology")
 
-Tournology makes tournament coordination easy. *Temporarily Retired.* 
+Tournology makes tournament coordination easy. _Retired._
 
-## [ALP][19] [![][21]][21]
+### [ALP][alp]
+[![](/web/wp-content/uploads/2009/12/Screen-shot-2011-01-15-at-10.53.41-AM.png "Example of Autonomous LAN Party")][alp]
 
-*Also known as Autonomous LAN Party*. As one of the administrators of the local computer group [nerdclub][21], wrote an open source project to help administrate and coordinate LAN Parties, still in use by LAN Parties all over the world. Check out [an example of ALP][22]. *Retired* 
+[alp]: http://sourceforge.net/projects/alp/
 
-## GiftBright ![A service to take the guesswork out of buying gifts for kids.][23]
+ _Also known as Autonomous LAN Party_. As one of the administrators of the local computer group [nerdclub](http://www.nerdclub.net/), wrote an open source project to help administrate and coordinate LAN Parties, still in use by LAN Parties all over the world. Check out [an example of ALP](http://www.nerdclub.net/25jun2004/intranet/tournaments.html). _Retired_
 
-Take the guesswork out of buying gifts for kids. **Winner of Startup Weekend Omaha March 2010.** *Retired* 
+### GiftBright
+![A service to take the guesswork out of buying gifts for kids.](/web/wp-content/uploads/2009/12/Screen-shot-2010-05-31-at-2.42.03-PM-Thumbnail.jpg "GiftBright")
 
-## Call Spinner ![A way to anonymously meet new friends using nothing but your phone.][24]
+ Take the guesswork out of buying gifts for kids. **Winner of Startup Weekend Omaha March 2010.** _Retired_
 
-A way to anonymously meet new friends using nothing but your phone. **Winner of Startup Weekend Omaha September 2010.** *Retired* 
+### Call Spinner
+![A way to anonymously meet new friends using nothing but your phone.](/web/wp-content/uploads/2009/12/callspinner.png "callspinner")
 
-## [![A game built using open crime data][26]Omaha Bounty Hunter][26]
+ A way to anonymously meet new friends using nothing but your phone. **Winner of Startup Weekend Omaha September 2010.** _Retired_
 
-A game built for Hack Omaha using Open Crime Data. Guess how much the owner thought their stolen item was worth. 
+### Omaha Bounty Hunter
+![A game built using open crime data](/web/wp-content/uploads/2009/12/omahabountyhunter.png)
 
-## [![][27] Registrastination][27]
+ A game built for Hack Omaha using Open Crime Data. Guess how much the owner thought their stolen item was worth.
 
-A site encouraging voter registration for the 2008 US Presidential Election. *Retired* 
+### [Registrastination][reg]
+[![](/web/wp-content/uploads/2009/12/Screen-shot-2011-01-15-at-6.25.27-PM.png "John McCain vs Barack Obama in Registrastination")][reg]
 
-## [JavaScript Code Coverage Tool for Firebug][27]
+[reg]: /registrastination/
 
-On [Github][28]. *Retired*
+A site encouraging voter registration for the 2008 US Presidential Election. _Retired_
 
-## [DomDom, DOM Node Creation Utility][29]
+### [JavaScript Code Coverage Tool for Firebug](/web/javascript-code-coverage-tool-for-firebug/)
 
-Create new DOM nodes from CSS Selector Syntax. *Retired*
+ On [Github](http://github.com/zachleat/Firebug-Code-Coverage). _Retired_
 
- [2]: http://github.com/zachleat/bigtext
- []: http://parseintimate.com
- []: /alarmd2/
- [5]: http://github.com/zachleat/ALARMd
- [6]: /alarmd/
- []: /web/raging-netflix-queue/
- [8]: /web/yet-another-pretty-date-javascript/
- [9]: http://github.com/zachleat/Humane-Dates
- [10]: /web/php-pretty-date/
- []: http://www.traciclevenger.com/
- [12]: http://github.com/zachleat/Parlour
- [13]: /web/scare-your-visitors-with-this-javascript-gravatar-plugin/
- [14]: http://github.com/zachleat/jQuery-Gravatar
- []: /scrollf/
- [16]: http://www.flickr.com/
- []: /Projects/malarquee/
- [18]: http://www.zachleat.com/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-11.29.15-PM.png "Tournology"
- [19]: http://sourceforge.net/projects/alp/
- []: http://www.nerdclub.net/25jun2004/intranet/tournaments.html
- [21]: http://www.nerdclub.net/
- [22]: http://www.nerdclub.net/25jun2004/intranet/tournaments.html
- [23]: http://www.zachleat.com/web/wp-content/uploads/2009/12/Screen-shot-2010-05-31-at-2.42.03-PM-Thumbnail.jpg "GiftBright"
- [24]: http://www.zachleat.com/web/wp-content/uploads/2009/12/callspinner.png "callspinner"
- []: http://www.omahabountyhunter.com/
- []: /registrastination/
- [27]: /web/javascript-code-coverage-tool-for-firebug/
- [28]: http://github.com/zachleat/Firebug-Code-Coverage
- [29]: /web/domdom-easy-dom-element-creation/
+### [DomDom, DOM Node Creation Utility](/web/domdom-easy-dom-element-creation/)
+
+ Create new DOM nodes from CSS Selector Syntax. _Retired_

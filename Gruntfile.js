@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {
-					'web/dist/global.css': ['web/css/buttsweater.scss', 'web/css/socialmenu.scss', 'web/css/thirdparty.scss'],
+					'web/dist/global.css': ['web/css/buttsweater.scss', 'web/css/socialmenu.scss', 'web/css/thirdparty.scss', 'web/css/pygments.css'],
 					'web/dist/icons.css': 'web/css/foundicons.scss'
 				}
 			}
@@ -73,6 +73,16 @@ module.exports = function(grunt) {
 						cwd: 'web'
 					}
 				}
+			},
+			// generate the pygments css file
+			pygments: {
+				command: 'pygmentize -S default -f html > pygments.css',
+				options: {
+					stdout: true,
+					execOptions: {
+						cwd: 'web/css'
+					}
+				}
 			}
 		},
 		watch: {
@@ -81,7 +91,7 @@ module.exports = function(grunt) {
 				tasks: ['default']
 			},
 			content: {
-				files: ['web/_posts/**/*'],
+				files: ['web/_posts/**/*', 'web/_layouts/**/*', 'web/speaking/**/*', 'web/projects/**/*', 'web/about/**/*', 'web/license/**/*'],
 				tasks: ['content']
 			}
 		}

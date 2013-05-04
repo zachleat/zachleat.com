@@ -28,3 +28,7 @@ To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 ## TODO
 
 1. Add cssmin to grunt and generate web/dist/global.min.css
+
+## Notes
+
+ * [Valid pygments lexers](http://pygments.org/languages/)

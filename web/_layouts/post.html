@@ -1,8 +1,16 @@
 ---
 layout: default
 ---
-<article>
-<h1>{{ page.title }}</h1>
-<em>Posted on {{ page.date | date: "%d %h %Y" }} by {{ page.author }}</em>
-{{ content }}
-</article>
+<div class="maxwidth">
+	<article>
+	<h1>{{ page.title }}</h1>
+	<em class="date">{{ page.date | date_to_long_string }}</em>
+	{{ content }}
+	</article>
+	<article>
+		<div class="action">
+			Hey! You should follow me on <a href="//twitter.com/zachleat/"><i class="foundicon-twitter"></i> Twitter</a> and <a href="//github.com/zachleat/"><i class="foundicon-github"></i> GitHub</a>. You might even want to <a href="/web/feed/"><i class="foundicon-rss"></i> Subscribe</a>.
+		</div>
+	</article>
+	{% include footer.html %}
+</div><!-- /.maxwidth -->

@@ -12,27 +12,30 @@
 		<div class="rail">
 			<header>
 				<a href="{{ site.baseurl }}/">
-					<img src="/web/img/web367.png" alt="{{ site.name }}">
-					<h1 class="a11y-only">{{ site.name }}</h1>
+					<img src="/web/img/avatar-bust.png">
+					<h1>Zach Leatherman</h1>
 				</a>
 			</header>
 			<aside>
 				<nav role="navigation">
 					<div class="navigation">
 						<div class="social">
-							<a href="//twitter.com/zachleat" class="twitter"><i class="foundicon-twitter"></i> Twitter</a>
-							<a href="//github.com/zachleat/" class="github"><i class="foundicon-github"></i> GitHub</a>
-							<a href="//plus.google.com/115220697074331366039/posts" class="googleplus"><i class="foundicon-google-plus"></i> Google Plus</a>
+							<a href="//twitter.com/zachleat" class="twitter" title="@zachleat on Twitter"><i class="foundicon-twitter"></i></a>
+							<a href="//github.com/zachleat/" class="github" title="@zachleat on GitHub"><i class="foundicon-github"></i></a>
+							<a href="http://www.zachleat.com/web/feed/" class="rss" title="Zach Leatherman’s RSS Feed"><i class="foundicon-rss"></i></a>
+							<a href="http://nebraskajs.com/" class="nebraskajs">NE JS</a>
+						</div><!-- /.social -->
+						<div class="links">
+							<a href="/web/about/">About</a>
+							<a href="/web/projects/">Projects</a>
+							<a href="/web/speaking/">Speaking</a>
 						</div>
-						<div class="social other"></div>
 					</div>
 				</nav>
 			</aside>
-		</div>
-		<div class="content">
-			<div class="main" data-role="main">
-				{{ content }}
-			</div><!-- /.main -->
+		</div><!-- /.rail -->
+		<div class="content" data-role="main">
+			{{ content }}
 		</div><!-- /.content -->
 		<script src="/web/dist/initial.js"></script>
 	</body>

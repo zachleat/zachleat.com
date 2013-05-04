@@ -30,6 +30,8 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+	width: 12%;
+	min-width: 60px;
 }
 .iliveinomaha img {
 	border: none;
@@ -37,5 +39,7 @@
 @media (min-width: 49em) {
 	.iliveinomaha {
 		position: fixed;
+		width: auto;
+		height: auto;
 	}
 }

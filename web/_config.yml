@@ -7,3 +7,4 @@ baseurl: /web
 markdown: rdiscount
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /web/:title/
+pygments: true
