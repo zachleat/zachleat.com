@@ -1,5 +1,5 @@
 ---
-title: 'Fight Registrastination. Register <span class="widow">to vote!</span>'
+title: 'Fight Registrastination. Register to vote!'
 author: Zach Leatherman
 layout: post
 permalink: /fight-registrastination-register-to-vote/

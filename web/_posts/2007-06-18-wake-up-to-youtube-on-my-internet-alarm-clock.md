@@ -28,7 +28,7 @@ I’m here to calm your fears. Enter [ALARMD, the Internet Alarm Clock][2]. Wake
 
  [2]: http://www.zachleat.com/Projects/alarmd/
 
-[![Now that's an alarm clock][4]][4]
+[![Now that's an alarm clock](http://farm2.static.flickr.com/1067/531165035_d2ba407333.jpg)][4]
 
  []: http://www.flickr.com/photos/zachleat/531165035/ "Photo Sharing"
 

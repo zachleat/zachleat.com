@@ -19,12 +19,12 @@ tags:
 
 Welcome, one and all, to the second installment of actual code examples for the Conservative Design series. The decision was made (by me) to rename the component in question from the original Hierarchical Select to Hierarchical Options, due to the fact that the hierarchy can consist of any multiple option component, and is not limited to just a select. And to this face, this particular component was documented in the original post entitled [Conservative Design: Hierarchical Select Boxes][1].
 
- [1]: http://www.zachleat.com/web/2007/02/22/conservative-design-hierarchical-select-boxes/
+ [1]: /web/2007/02/22/conservative-design-hierarchical-select-boxes/
 
-[![Hierarchical Options][3]][3]  
+[![Hierarchical Options](/web/wp-content/uploads/2007/03/hierarchical.gif)][3]  
 Click the image above to go to the example.
 
- []: http://www.zachleat.com/Projects/valdi/hierarchicalOptions.html "Hierarchical Options"
+ [3]: http://www.zachleat.com/Projects/valdi/hierarchicalOptions.html "Hierarchical Options"
 
 Notes on the example: The Tree structure is as follows:
 

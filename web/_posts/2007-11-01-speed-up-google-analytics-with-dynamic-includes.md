@@ -21,30 +21,31 @@ Have you ever noticed that your homepage hangs when including the Google Analyti
  [1]: http://nutrun.com/weblog/does-google-analytics-make-your-pages-slow/
  [2]: http://resistmedia.net/blog/2007/10/02/get-rid-of-google-analytics/
 
-Of course, remember to put near the end of your ``, and not directly in your ``.
+Of course, remember to put near the end of your `<body>`, and not directly in your `<head>`.
 
     
-    &#40;function&#40;&#41;
-    &#123;
-        setTimeout&#40;function&#40;&#41;
-        &#123;
-            var node = document.createElement&#40;"script"&#41;;
+    <script type="text/javascript">
+    (function()
+    {
+        setTimeout(function()
+        {
+            var node = document.createElement("script");
             node.src = 'http://www.google-analytics.com/urchin.js';
             //for SSL
             //node.src = 'https://ssl.google-analytics.com/urchin.js';
             node.type = 'text/javascript';
-            document.getElementsByTagName&#40;"head"&#41;&#91;&#93;.appendChild&#40;node&#41;;
-            var init = setInterval&#40;function&#40;&#41;
-            &#123;
+            document.getElementsByTagName("head")[0].appendChild(node);
+            var init = setInterval(function()
+            {
                 _uacct = 'UA-XXXXXX-X'; // INSERT YOUR CODE HERE
-                if&#40;typeof urchinTracker != 'undefined'&#41; &#123;
-                    urchinTracker&#40;&#41;;
-                    clearInterval&#40;init&#41;;
-                &#125;
-            &#125;, 100&#41;;
-        &#125;, &#41;;
-    &#125;&#41;&#40;&#41;;
-    
+                if(typeof urchinTracker != 'undefined') {
+                    urchinTracker();
+                    clearInterval(init);
+                }
+            }, 100);
+        }, 0);
+    })();
+    </script>
 
 [Try it on my benchmark page.][3]
 

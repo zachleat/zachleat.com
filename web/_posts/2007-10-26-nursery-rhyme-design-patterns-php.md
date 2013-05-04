@@ -1,5 +1,5 @@
 ---
-title: 'Nursery Rhyme Code <span class="widow">Poem [PHP]</span>'
+title: 'Nursery Rhyme Code Poem [PHP]'
 author: Zach Leatherman
 layout: post
 permalink: /nursery-rhyme-design-patterns-php/
@@ -17,36 +17,36 @@ tags:
   - Nursery Rhymes
 ---
 
-    < ?php
-    class I &#123;
-        public __construct&#40;&#41;
-        &#123;
-            $star = new Star&#40;&#41;;
+    <?php
+    class I {
+        public __construct()
+        {
+            $star = new Star();
             $star->size = 'little';
-            $star->twinkle&#40;&#41;;
-            $star->twinkle&#40;&#41;;
-    &nbsp;
-            self::wonder&#40;$star, 'What are you?'&#41;;
-    &nbsp;
-            $world = new World&#40;&#41;;
+            $star->twinkle();
+            $star->twinkle();
+     
+            self::wonder($star, 'What are you?');
+     
+            $world = new World();
             $world->elevation = 'So High';
-            $star->setAbove&#40;$world&#41;;
-    &nbsp;
-            $d = new Diamond&#40;&#41;;
+            $star->setAbove($world);
+     
+            $d = new Diamond();
             $d->position = 'In the sky';
-            $star->setLike&#40;$d&#41;;
-    &nbsp;
-            $star->twinkle&#40;&#41;;
-            $star->twinkle&#40;&#41;;
+            $star->setLike($d);
+     
+            $star->twinkle();
+            $star->twinkle();
             $star->size; // returns 'little'
-    &nbsp;
-            self::wonder&#40;$star, 'What are you?'&#41;;
-        &#125;
-    &nbsp;
-        public static function wonder&#40;$obj, $query&#41;
-        &#123;
-            $obj->query&#40;$query&#41;;
-        &#125;
-    &#125;
+     
+            self::wonder($star, 'What are you?');
+        }
+     
+        public static function wonder($obj, $query)
+        {
+            $obj->query($query);
+        }
+    }
 
 *The above **code poem** is released under the BSD license.* To use in production environment without error, please precede with the following command: `error_reporting(0);` Obviously I’m kidding, don’t use this code. Not even for enterprise software.

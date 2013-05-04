@@ -22,9 +22,10 @@ What did you spend your Saturday afternoon on? Did you kick up your feet in your
 
 Well today, we’re going to solve all of that. Today, I’m going to show you a full screen web browser marquee that will both amaze and excite you. Here we go:
 
+## [Malarquee](http://www.zachleat.com/Projects/Malarquee)
 
 
-
+<div class="fluid-width-video-wrapper"><object width="425" height="350">param name="movie" value="http://www.youtube.com/v/9OiF8Hd6Db0"></param><embed src="http://www.youtube.com/v/9OiF8Hd6Db0" type="application/x-shockwave-flash" width="425" height="350"></embed></object></div>
 
 ## What is it for?
 

@@ -19,20 +19,20 @@ Of course there wouldn’t be an XOR function in JavaScript when I needed one. S
 
  [1]: http://www.howtocreate.co.uk/xor.html
 
-    function xor&#40;&#41;
-    &#123;
-    	var b = false;
-    	for&#40; var j = ; j < arguments.length; j   &#41;
-    	&#123;
-    		if&#40; arguments&#91; j &#93; && !b &#41; b = true;
-    		else if&#40; arguments&#91; j &#93; && b &#41; return false;
-    	&#125;
-    	return b;
-    &#125;;
+    function xor()
+    {
+      var b = false;
+      for( var j = 0; j < arguments.length; j++ )
+      {
+        if( arguments[ j ] && !b ) b = true;
+        else if( arguments[ j ] && b ) return false;
+      }
+      return b;
+    };
 
 Usage:
 
-    xor&#40; false, true &#41;; // true
-    xor&#40; true, true &#41;; // false
-    xor&#40; false, false, true, true, true, false, true, false &#41;; // false
-    xor&#40; false, false, false, true, false, false, false, false &#41;; // true
+    xor( false, true ); // true
+    xor( true, true ); // false
+    xor( false, false, true, true, true, false, true, false ); // false
+    xor( false, false, false, true, false, false, false, false ); // true

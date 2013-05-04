@@ -32,7 +32,7 @@ But haven’t we already been through this problem? Isn’t this the same exact 
 
 I’m not necessarily encouraging the Quirks and Standards modes to be toggled with the DocType (as with CSS), but why not have these two modes? To enable your site to use the Standards mode of JavaScript, the browser might require a certain DocType to be declared, or it might require a different script type in the browser:
 
-    
+    <script type="text/javascript" mode="standards">
 
 Either that, or [I could just use Base2][4].
 

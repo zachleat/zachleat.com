@@ -1,5 +1,5 @@
 ---
-title: 'jQuery Bug: IE reports <span class="widow">incorrect $.browser.version</span>'
+title: 'jQuery Bug: IE reports incorrect $.browser.version'
 author: Zach Leatherman
 layout: post
 permalink: /jquery-bug-ie-reports-incorrect-browserversion/

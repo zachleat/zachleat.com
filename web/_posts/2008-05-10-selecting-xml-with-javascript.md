@@ -1,5 +1,5 @@
 ---
-title: 'Selecting XML Nodes with JavaScript (Peril <span class="widow">of getElementsByTagName)</span>'
+title: 'Selecting XML Nodes with JavaScript (Peril of getElementsByTagName)'
 author: Zach Leatherman
 excerpt: |
   Parsing XML in the browser can be a tricky beast.  There are many different wrong ways to do it, which can leave you cold and naked in a snowstorm if you're not careful.  So, let's put on the metaphorical electric one-sie of standards based code and let the power of Edison heat our JavaScript code like the innards of a <a href="http://starwars.wikia.com/wiki/Tauntaun">tauntaun</a>.

@@ -1,5 +1,5 @@
 ---
-title: 'Code Like the Big <span class="widow">Boys: Flickr</span>'
+title: 'Code Like the Big Boys: Flickr'
 author: Zach Leatherman
 layout: post
 permalink: /code-like-the-big-boys-flickr/

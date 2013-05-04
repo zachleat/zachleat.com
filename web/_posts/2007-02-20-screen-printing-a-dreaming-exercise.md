@@ -20,4 +20,4 @@ Why not error messages that tell you when your internet has been disconnected? H
 
 [![Error Messages][2]][2]
 
- []: /web/wp-content/uploads/2007/02/image2.jpg "Error Messages"
+ [2]: /web/wp-content/uploads/2007/02/image2.jpg "Error Messages"

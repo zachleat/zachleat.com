@@ -1,5 +1,5 @@
 ---
-title: 'CSS 3 Text: A Tale of <span class="widow">writing-mode Woe</span>'
+title: 'CSS 3 Text: A Tale of writing-mode Woe'
 author: Zach Leatherman
 layout: post
 permalink: /css3-text-writing-mode/

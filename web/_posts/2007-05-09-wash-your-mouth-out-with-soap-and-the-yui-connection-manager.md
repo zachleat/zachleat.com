@@ -30,42 +30,48 @@ What are we here for? Not liquid soap, perhaps some profanity. But really, you w
  [2]: http://developer.yahoo.com/yui/connection/
 
 How is SOAP different than any other AJAX call using the Connection Manager? Well, normally, when you perform an HTTP Post AJAX call, it is passing in a key-value pair string encoded with the normal key=value&key2=value format. But when doing a SOAP call, we want to post an XML SOAP Envelope to the server instead of this key-value pair string. In case you’re reading this article and don’t know what a SOAP Envelope looks like, I’ll post a sample here:  
-`
 
-
-
-
-
-
-`
+    <s11:Envelope xmlns:s11="http://schemas.xmlsoap.org/soap/envelope/">
+    <s11:Header>
+    </s11:Header>
+    <s11:Body>
+    </s11:Body>
+    </s11:Envelope>
 
 Of course, it is beyond the scope of this article to argue whether a REST or a SOAP format for your Service Oriented Architecture is a better choice. You’re stuck with SOAP, otherwise you wouldn’t have read this far.
 
 So, let’s post our SOAP Envelope using the YUI Connection Manager with the code provided below:
 
     var targetUrl = 'http://www.zachleat.com/postToServer.php'; // this is not a real URL
-    &nbsp;
-    var callback = &#123;
-    	success: function&#40;o&#41;
-    	&#123;
-    		var root = o.responseXML.documentElement; 
-    		if&#40; root.getElementsByTagName&#40; 'faultstring' &#41;.length >  &#41; // faultstring is a standard SOAP error message format
-    		&#123;
-    			var faultstring = root.getElementsByTagName&#40; 'faultstring' &#41;&#91;&#93;.firstChild.nodeValue;
-    			var detailed = '';
-    			YAHOO.UP.util.each&#40; root.getElementsByTagName&#40; 'detail' &#41;&#91;&#93;.childNodes, function&#40; j, textNode &#41;
-    			&#123;
-    				if&#40; textNode.nodeValue != null &#41; detailed  = textNode.nodeValue;
-    			&#125; &#41;;
-    			// do something with your error message stored in the faultstring variable, with a more detailed message in the detailed variable
-    		&#125; else &#123;
-    			// this is an actual success.
-    		&#125;
-    	&#125;, 
-    	failure: function&#40; o &#41;
-    	&#123;
-    		// do something with your failure.
-    	&#125;
-    &#125;;
-    &nbsp;
-    var message = '
+     
+    var callback = {
+      success: function(o)
+      {
+        var root = o.responseXML.documentElement; 
+        if( root.getElementsByTagName( 'faultstring' ).length > 0 ) // faultstring is a standard SOAP error message format
+        {
+          var faultstring = root.getElementsByTagName( 'faultstring' )[0].firstChild.nodeValue;
+          var detailed = '';
+          YAHOO.UP.util.each( root.getElementsByTagName( 'detail' )[0].childNodes, function( j, textNode )
+          {
+            if( textNode.nodeValue != null ) detailed += textNode.nodeValue;
+          } );
+          // do something with your error message stored in the faultstring variable, with a more detailed message in the detailed variable
+        } else {
+          // this is an actual success.
+        }
+      }, 
+      failure: function( o )
+      {
+        // do something with your failure.
+      }
+    };
+     
+    var message = '<s11:Envelope...YOUR SOAP MESSAGE HERE';
+     
+    // we need to set our own header.
+    YAHOO.util.Connect._use_default_post_header = false;
+    YAHOO.util.Connect.initHeader( 'Content-Type', 'text/xml', false );
+    var ajaxCall = YAHOO.util.Connect.asyncRequest( 'POST', targetUrl, callback, message);
+
+I hope this code helps some of you bastards.

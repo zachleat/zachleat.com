@@ -28,33 +28,33 @@ Create the button as the YUI Button Examples and Documentation say to do so. Inc
 
 Instead, use the following JavaScript to replace the functions for button coloring for hover, focus, and active.
 
-    YAHOO.util.Event.addListener&#40; window, 'load', function&#40; e &#41;
-    &#123;
-    	var yuiButtons = YAHOO.util.Dom.getElementsByClassName&#40; 'yuibutton', 'span' &#41;;
-    	YAHOO.util.Event.addListener&#40; yuiButtons, 'mouseover', function&#40; e &#41;
-    	&#123;
-    		YAHOO.util.Dom.addClass&#40; this, 'hover' &#41;;
-    	&#125; &#41;;
-    	YAHOO.util.Event.addListener&#40; yuiButtons, 'mouseout', function&#40; e &#41;
-    	&#123;
-    		YAHOO.util.Dom.removeClass&#40; this, 'hover' &#41;;
-    	&#125; &#41;;
-    	YAHOO.util.Event.addListener&#40; yuiButtons, 'mousedown', function&#40; e &#41;
-    	&#123;
-    		YAHOO.util.Dom.addClass&#40; this, 'active' &#41;;
-    	&#125; &#41;;
-    	YAHOO.util.Event.addListener&#40; yuiButtons, 'mouseup', function&#40; e &#41;
-    	&#123;
-    		YAHOO.util.Dom.removeClass&#40; this, 'active' &#41;;
-    	&#125; &#41;;
-    	YAHOO.util.Event.addListener&#40; yuiButtons, 'focus', function&#40; e &#41;
-    	&#123;
-    		YAHOO.util.Dom.addClass&#40; this, 'focus' &#41;;
-    	&#125; &#41;;
-    	YAHOO.util.Event.addListener&#40; yuiButtons, 'blur', function&#40; e &#41;
-    	&#123;
-    		YAHOO.util.Dom.removeClass&#40; this, 'focus' &#41;;
-    	&#125; &#41;;
-    &#125; &#41;;
+    YAHOO.util.Event.addListener( window, 'load', function( e )
+    {
+        var yuiButtons = YAHOO.util.Dom.getElementsByClassName( 'yuibutton', 'span' );
+        YAHOO.util.Event.addListener( yuiButtons, 'mouseover', function( e )
+        {
+            YAHOO.util.Dom.addClass( this, 'hover' );
+        } );
+        YAHOO.util.Event.addListener( yuiButtons, 'mouseout', function( e )
+        {
+            YAHOO.util.Dom.removeClass( this, 'hover' );
+        } );
+        YAHOO.util.Event.addListener( yuiButtons, 'mousedown', function( e )
+        {
+            YAHOO.util.Dom.addClass( this, 'active' );
+        } );
+        YAHOO.util.Event.addListener( yuiButtons, 'mouseup', function( e )
+        {
+            YAHOO.util.Dom.removeClass( this, 'active' );
+        } );
+        YAHOO.util.Event.addListener( yuiButtons, 'focus', function( e )
+        {
+            YAHOO.util.Dom.addClass( this, 'focus' );
+        } );
+        YAHOO.util.Event.addListener( yuiButtons, 'blur', function( e )
+        {
+            YAHOO.util.Dom.removeClass( this, 'focus' );
+        } );
+    } );
 
 If you’re just using the standard buttons anyway, you’re going to see a speed improvement in performance on hover color changes.

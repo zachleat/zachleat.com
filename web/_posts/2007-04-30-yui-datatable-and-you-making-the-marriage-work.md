@@ -47,7 +47,7 @@ Bug #1: What is your Box Model?
 
 Use the following JavaScript code to tell if you’re in Standards Mode or Quirks Mode:
 
-    alert&#40; document.compatMode=='CSS1Compat' ? 'Standards Mode' : 'Quirks Mode' &#41;;
+    alert( document.compatMode=='CSS1Compat' ? 'Standards Mode' : 'Quirks Mode' );
 
 Standards mode forces your document into using the W3C Box Model, which is currently the standard. The W3C Box Model means any width declarations you make in your CSS code will not include padding, border, or margins. So if you put padding on your table cells and headers, it will need *to be added on separately to the total width of your table*.
 
@@ -77,32 +77,32 @@ A few notes on doing a fixed width DataTable using the code provided above. The 
 
 Here’s the CSS to go along with a horizontal scrolling DataTable:
 
-    .yui-dt-table th, .yui-dt-table td &#123; padding: 2px  2px 5px; vertical-align: top; &#125;
-    .yui-dt-table th, .yui-dt-table tr.yui-dt-first td &#123; width: 100px; &#125; /* table header and only the first row (for drag and drop) */
-    .ymod-scrollingBody .yui-dt-table tr.yui-dt-first td.yui-dt-last &#123; width: 84px; &#125; /* last table cell (for crappy scrollbar problem) */
-    .yui-dt-table .yui-dt-even &#123;background-color:#fff;&#125;
-    .yui-dt-table .yui-dt-odd &#123;background-color:#e0dfe0;&#125;
-    .yui-dt-table .yui-dt-selected &#123;background-color:#bdcede;&#125;
-    .yui-dt-table thead &#123;background-color:#933;color:#fff;&#125;
-    .yui-dt-table th a &#123;color:#fff ! important;&#125;
-    .ymod-scrollingHeader &#123;
-    	width: 100%;
-    	height: 20px;
-    	overflow: hidden;
-    	position: relative;
-    &#125;
-    .ymod-nestedHeaders &#123;
-    	height: 40px; /* gotta set this manually, unfortunately */
-    &#125;
-    .ymod-scrollingHeader table &#123;
-    	position: absolute;
-    	top: ;
-    	left: ;
-    &#125;
-    .ymod-scrollingBody &#123;
-    	width: 100%;
-    	overflow: auto;
-    	height: 160px;
-    &#125;
-    .ymod-scrollingHeader table &#123; width: 800px; &#125; /* Set your widths! */
-    .ymod-scrollingBody table &#123; width: 784px; &#125;
+    .yui-dt-table th, .yui-dt-table td { padding: 2px 0 2px 5px; vertical-align: top; }
+    .yui-dt-table th, .yui-dt-table tr.yui-dt-first td { width: 100px; } /* table header and only the first row (for drag and drop) */
+    .ymod-scrollingBody .yui-dt-table tr.yui-dt-first td.yui-dt-last { width: 84px; } /* last table cell (for crappy scrollbar problem) */
+    .yui-dt-table .yui-dt-even {background-color:#fff;}
+    .yui-dt-table .yui-dt-odd {background-color:#e0dfe0;}
+    .yui-dt-table .yui-dt-selected {background-color:#bdcede;}
+    .yui-dt-table thead {background-color:#933;color:#fff;}
+    .yui-dt-table th a {color:#fff ! important;}
+    .ymod-scrollingHeader {
+      width: 100%;
+      height: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+    .ymod-nestedHeaders {
+      height: 40px; /* gotta set this manually, unfortunately */
+    }
+    .ymod-scrollingHeader table {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .ymod-scrollingBody {
+      width: 100%;
+      overflow: auto;
+      height: 160px;
+    }
+    .ymod-scrollingHeader table { width: 800px; } /* Set your widths! */
+    .ymod-scrollingBody table { width: 784px; }

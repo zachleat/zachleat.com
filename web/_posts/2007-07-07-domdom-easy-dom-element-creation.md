@@ -31,52 +31,54 @@ Single Node String
 
     'div'
 
-    
+    <div></div>
 
 Single Node String with ID and Classes
 
     'div#id1.class1.class2'
 
-    
+    <div id="id1" class="class1 class2"></div>
 
 Single Node String for a Form Element
 
     'input[name="myTextBox",type="text",maxlength="5"]'
 
-    
+    <input name="myTextBox" maxlength="5" type="text"/>
 
 Single Node String with Style Syntax
 
     'div{height=80px,color=#f90,border=1px solid #000}'
 
+    <div style="border: 1px solid #000; height: 80px; color: #f90"></div>
     
 
 Complex Single Node String with ID, multiple classes, Style, and Namespaced Attribute)
 
     'div#id1.class1.class2[style="width:60px;color:#f90",@class="class4",@att="true",@namespace:att="false"]'
 
-    
+    <div id="id1" att="true" namespace:att="false" class="class1 class2 class4" style="width: 60px; color: #f90;"></div>
+
 
 Multiple Node String: Linear (Parents with one Child)
 
     'div span div'
 
-    
-         
-              
-         
-    
+    <div>
+         <span>
+              <div></div>
+         </span>
+    </div>
 
 Multiple Node String: Non-Linear (Parent with more than one Child)
 
-    &#123; 'div': &#91; 'span', 'span' &#93; &#125;
+    { 'div': [ 'span', 'span' ] }
 
-    
-         
-         
-    
+    <div>
+         <span></span>
+         <span></span>
+    </div>
 
-# How Does It Work?
+## How Does It Work?
 
 By default, it’s set up to do HTML Fragments (innerHTML) because they are much speedier than the manual DOM element creation (createElement). But if you desire, you can toggle a boolean in the code and it will switch back to DOM element creation. When in DOM element creation mode, it will account for the following browser bugs:
 
@@ -88,7 +90,7 @@ By default, it’s set up to do HTML Fragments (innerHTML) because they are much
 
  [2]: http://developer.mozilla.org/en/docs/Whitespace_in_the_DOM
 
-# Syntax
+## Syntax
 
 You should already be able to tell how to create a node from the examples above. Here are some more things you might not have guessed:
 
@@ -102,11 +104,11 @@ Creating a node with CSS classes
 
 Creating two nodes at the same level
 
-    &#91; 'div', 'div' &#93;
+    [ 'div', 'div' ]
 
 Creating a node with two children
 
-    &#123; 'div': &#91; 'div', 'div' &#93; &#125;
+    { 'div': [ 'div', 'div' ] }
 
 You can mix the {} and [] syntax wherever you like, but if you want a node to have non-linear children, you have to use the {} object notation.
 
@@ -128,51 +130,53 @@ And of course, all of the above can be mixed together
 
     'div#myId.class1.class2{color=#f90}[customAttr="true",@customAttr2="false"] div#child1 div#child2'
 
-# Usage
+## Usage
 
 **Appending** at the end of a parent’s children:
 
-    DOMDom.append&#40; 'div', yourParentNode &#41;;
+    DOMDom.append( 'div', yourParentNode );
 
 **Replacing** the children of a parent:
 
-    DOMDom.replace&#40; 'div', yourParentNode &#41;;
+    DOMDom.replace( 'div', yourParentNode );
 
 **Unshifting **(inserting at the beginning of a parent’s children):
 
-    DOMDom.unshift&#40; 'div', yourParentNode &#41;;
+    DOMDom.unshift( 'div', yourParentNode );
 
 **Inserting** before a certain integer index of a parent’s children:
 
-    DOMDom.insert&#40; 'div', yourParentNode, 2 &#41;; // must have at least 3 children, the index is 0 based, if index is null with unshift by default
+    // must have at least 3 children, the index is 0 based, if index is null with unshift by default
+    DOMDom.insert( 'div', yourParentNode, 2 );
 
-# Templates
+## Templates
 
-Use  to indicate a variable, in this example 
+Use `<$var> ` to indicate a variable, in this example `<$test>`
 
-`
-// "Compile" the template
-var str = DOMDom.compile( { 'div.test span': '#Test ' } );
-// Use your template in some context, notice the test variable being set.
-for( var j = 0; j < 1000; j   )
-{
-	// knows we're using a compiled template since we're passing in variables as a third argument.
-	DOMDom.append( str, d, { test: j } );
-}
-`
+    // "Compile" the template
+    var str = DOMDom.compile( { 'div.test span': '#Test <$test>' } );
 
-### Benchmarks 
-#### (If you have Firebug open, make sure it's not on the HTML tab, this will slow down the benchmark significantly) 
+    // Use your template in some context, notice the test variable being set.
+    for( var j = 0; j < 1000; j++ )
+    {
+        // knows we're using a compiled template since we're passing in variables as a third argument.
+        DOMDom.append( str, d, { test: j } );
+    }
+
+## Benchmarks 
+
+**(If you have Firebug open, make sure it's not on the HTML tab, this will slow down the benchmark significantly)**
+
 Most of my work here has been inspired by the DomQuery and DomHelper classes written by JavaScript rock star Jack Slocum (the guy's initials are J.S. for God's sake), so I modeled my benchmark after [his benchmark hosted on his website to test the DomHelper class][3]. I'm running the same nodes he's testing on his website, so the results should be comparable. You can [test my benchmark for DOMDom here][4]. Here are some results, reporting the average of 3 results with the format of an uncompiled element first and the compiled template in square brackets.  
  
-## DOMDom Results
+### DOMDom Results
 
 Internet Explorer 6: 666 ms [328 ms]  
 Firefox 2.0.0.4: 1880 ms [666 ms]  
 Safari 3.0.2 [Windows]: 546 ms [151 ms]  
 Opera 9.21: 343 ms [140 ms]
 
-## Comparative numbers from Jack Slocum's DomHelper
+### Comparative numbers from Jack Slocum's DomHelper
 
 Internet Explorer 6: 2458 ms [677 ms]  
 Firefox 2.0.0.4: 672 ms [458 ms]  
@@ -181,19 +185,19 @@ Opera 9.21: 370 ms [166 ms]
 
 The thing to take away from this is the question of why Satan is haunting my benchmarks? Two 666 averages? Anyway, DOMDom is quite a bit faster in the most popular browser, Internet Explorer, although I haven't tested it on IE7 yet. In Firefox, the opposite is true, with DomHelper taking the lead. Opera is comparable and Safari is faster in DomHelper as well. You can run your own tests using the links above.
 
-# Dependencies
+## Dependencies
 
 This library was built to work with Yahoo User Interface (YUI), but could be trivially ported to another library by changing the function dependencies listed in the ADAPTER variable in the code.
 
-    var ADAPTER = &#123;
-    	setStyle: YAHOO.util.Dom.setStyle,
-    	addClass: YAHOO.util.Dom.addClass,
-    	isString: YAHOO.lang.isString,
-    	isArray: YAHOO.lang.isArray,
-    	isNumber: YAHOO.lang.isNumber,
-    	isObject: YAHOO.lang.isObject,
-    	get: YAHOO.util.Dom.get
-    &#125;; // to port, change these references
+    var ADAPTER = {
+      setStyle: YAHOO.util.Dom.setStyle,
+      addClass: YAHOO.util.Dom.addClass,
+      isString: YAHOO.lang.isString,
+      isArray: YAHOO.lang.isArray,
+      isNumber: YAHOO.lang.isNumber,
+      isObject: YAHOO.lang.isObject,
+      get: YAHOO.util.Dom.get
+    }; // to port, change these references
 
 If you're still reading this encyclopedia, here are some links:
 

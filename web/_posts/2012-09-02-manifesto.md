@@ -5,6 +5,7 @@ layout: post
 permalink: /manifesto/
 categories:
   - Opinion
+  - Presentations
 ---
 
 Early last year at Nebraska Code Camp 2011, I gave a talk to a bunch of .NET developers about my own personal perspective on the world of Front End Engineering.

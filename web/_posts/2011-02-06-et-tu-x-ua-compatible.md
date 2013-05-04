@@ -1,5 +1,5 @@
 ---
-title: 'Et <span class="widow">tu, X-UA-Compatible?</span>'
+title: 'Et tu, X-UA-Compatible?'
 author: Zach Leatherman
 layout: post
 permalink: /et-tu-x-ua-compatible/

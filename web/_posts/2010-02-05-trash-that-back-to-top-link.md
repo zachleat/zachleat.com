@@ -1,5 +1,5 @@
 ---
-title: 'Trash that &#8220;Back to <span class="widow">Top&#8221; Link</span>'
+title: 'Trash that &#8220;Back to Top&#8221; Link'
 author: Zach Leatherman
 layout: post
 permalink: /trash-that-back-to-top-link/

@@ -34,7 +34,7 @@ The include order of our javascript files is going to be important. So, first we
 
 For code simplicity, I’ve added a one liner to Jack’s DomQuery to make it work as a standalone file.
 
-    if&#40; typeof Ext == 'undefined' &#41; var Ext = function&#40;&#41;&#123;&#125;;
+    if( typeof Ext == 'undefined' ) var Ext = function(){};
 
 If you want to read more about DomQuery, you can go to [Jack’s site all about syntax and benchmarks][2].
 
@@ -57,13 +57,13 @@ Download: [jDomQuery Standalone File Packed (10 KB)][6] 1.1.3.1
 If you want to read about jQuery syntax, [go over to their documentation][7]. My current preference is the jQuery syntax, given that it [works with poorly implemented JSF ID attributes][8]. But that’s a different argument.
 
  [7]: http://docs.jquery.com/Selectors
- [8]: http://www.zachleat.com/web/2007/07/10/javascript-frameworks-and-jsf/
+ [8]: /web/2007/07/10/javascript-frameworks-and-jsf/
 
 If you want to use the full jQuery library, that should work too, but if you want to do that, you might just want to switch to using jQuery at that point (dare I say it).
 
 Next, we’ll extend the YAHOO.util.Dom class into a new Y2 namespace. This will map all of the functions from YAHOO.util.Dom into a new CSS Selector extension.
 
-# Download: [Y2.util.Dom (2 KB)][9]
+## Download: [Y2.util.Dom (2 KB)][9]
 
  [9]: /Projects/Y2/Dom.js
 
@@ -73,28 +73,28 @@ Next, we’ll extend the YAHOO.util.Dom class into a new Y2 namespace. This will
 
 # Putting It All Together
 
-    
-    	
-    		
-    			
-    				
-    			
-    			
-    				
-    			
-    		
-    		
-    		
-    		
-    		
-    		
-    		Y2.util.Dom.addClass( 'div div:last', 'myClass' )
-    		Y2.util.Dom.hasClass( 'div div:last', 'myClass' ); // returns true
-    		var b = Y2.util.Dom.get( 'div div:last b' );
-    		Y2.util.Dom.addClass( b, 'myOtherClass' );
-    		
-    	
-    
+    <html>
+      <body>
+        <div>
+          <div class="first">
+            <span></span>
+          </div>
+          <div class="second">
+            <b></b>
+          </div>
+        </div>
+        <script type="text/javascript" src="/Lib/yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="jdomquery-1.1.3.1-packer.js"></script>
+        <!-- <script type="text/javascript" src="DomQuery-packer.js"> -->
+        <script type="text/javascript" src="Dom.js"></script>
+        <script type="text/javascript">
+        Y2.util.Dom.addClass( 'div div:last', 'myClass' )
+        Y2.util.Dom.hasClass( 'div div:last', 'myClass' ); // returns true
+        var b = Y2.util.Dom.get( 'div div:last b' );
+        Y2.util.Dom.addClass( b, 'myOtherClass' );
+        </script>
+      </body>
+    </html>
 
 One important thing to note is that when using the CSS Selector syntax, when only one node is selected, functions will return a scalar instead of an array. So if you’re expecting to select multiple nodes in your selector query and only one node results, make sure your code handling the result is prepared for such an instance.
 

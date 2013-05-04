@@ -1,5 +1,5 @@
 ---
-title: 'Internet Explorer <span class="widow">Array.sort Unreliable</span>'
+title: 'Internet Explorer Array.sort Unreliable'
 author: Zach Leatherman
 layout: post
 permalink: /array-sort/

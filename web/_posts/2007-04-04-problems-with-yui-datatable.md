@@ -61,11 +61,11 @@ Granted, the DataTable in it’s current form is a beta component, but that 0.5 
 
 **Minor Update**: to do a fixed width table that will overflow horizontally, this is the method you can use:
 
-    div#dataTableId &#123; /* change this to whatever id you're using to hold the dataTable */
-    	width:520px; /* put in your own fixed width */
-    	overflow-x:auto;
-    	overflow-y:hidden;
-    &#125;
-    .yui-dt-headtext, .yui-dt-headcontainer &#123;
-    	position: static; /* without this declaration, the headers weren't horizontally scrolling with the data in IE6 */
-    &#125;
+    div#dataTableId { /* change this to whatever id you're using to hold the dataTable */
+      width:520px; /* put in your own fixed width */
+      overflow-x:auto;
+      overflow-y:hidden;
+    }
+    .yui-dt-headtext, .yui-dt-headcontainer {
+      position: static; /* without this declaration, the headers weren't horizontally scrolling with the data in IE6 */
+    }

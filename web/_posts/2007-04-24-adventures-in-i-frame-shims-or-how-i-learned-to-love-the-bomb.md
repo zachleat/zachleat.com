@@ -23,9 +23,9 @@ So again, I show up late to the party. IE7 is already out, but my target custome
 
 Typically, when creating an I-Frame shim, you’re going to create the i-frame dynamically using document.createElement. Let’s start out with some successful code.
 
-    var iframeShim = document.createElement&#40; 'iframe' &#41;;
-    iframeShim.setAttribute&#40; 'src', 'javascript:"";' &#41;;
-    iframeShim.setAttribute&#40; 'frameBorder', '0' &#41;;
+    var iframeShim = document.createElement( 'iframe' );
+    iframeShim.setAttribute( 'src', 'javascript:"";' );
+    iframeShim.setAttribute( 'frameBorder', '0' );
 
 Now for some caveats you might have encountered with code not matching the above:
 
@@ -43,7 +43,7 @@ Some have suggested that changing the src attribute to point to a blank html pag
 
  [2]: http://ewbi.blogs.com/develops/2004/07/ie_iframe_and_h.html
 
-**Update**: The correct solution is in face setting “javascript:false;document.write(“”);” as your src value, as I found in the [jQuery BlockUI][3] plugin. This is a silver bullet fix that will avoid all the problems I have encountered.
+**Update**: ~~The correct solution is in face setting “javascript:false;document.write(“”);” as your src value, as I found in the [jQuery BlockUI][3] plugin. This is a silver bullet fix that will avoid all the problems I have encountered.~~
 
  [3]: http://malsup.com/jquery/block/
 

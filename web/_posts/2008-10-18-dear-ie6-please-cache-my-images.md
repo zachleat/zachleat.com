@@ -1,5 +1,5 @@
 ---
-title: 'Dear IE6: Please Cache <span class="widow">my Images.</span>'
+title: 'Dear IE6: Please Cache my Images.'
 author: Zach Leatherman
 layout: post
 permalink: /dear-ie6-please-cache-my-images/

@@ -29,7 +29,7 @@ The web has solutions to this problem, but most of them involve changing your Ja
 
  [1]: http://almaer.com/blog/archives/000794.html
 
-    netscape.security.PrivilegeManager.enablePrivilege&#40;'UniversalBrowserRead'&#41;;
+    netscape.security.PrivilegeManager.enablePrivilege('UniversalBrowserRead');
 
 The problem with that solution (obviously) lies in single browser proprietary JavaScript polluting your code. And you have to set this property inside the scope of any usage (ie: inside your library file that does your AJAX calls and inside your callbacks, etc).
 
@@ -44,24 +44,26 @@ Another solution involves setting the `capability.policy.default.XMLHttpRequest.
 1.  Close Firefox. It will overwrite your changes to the prefs.js file if you have it open.
 2.  *Optional step*: This approach will open up your Firefox security quite a bit, so I’d recommend setting up a separate profile in Firefox to use when testing. It will **not **pop up a security dialog when a cross-domain AJAX call is made.
 3.  Find your prefs.js file. In Windows, it is typically located in the `C:Documents and Settings{YOUR_USERNAME}ApplicationDataMozillaFirefoxProfiles{YOUR_TEST_USER_PROFILE_ID}prefs.js`
-4.  Open it up and add the following lines:     user_pref&#40;"capability.policy.default.XMLHttpRequest.open", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.CDATASection.nodeValue", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.Element.attributes", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.Element.childNodes", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.Element.firstChild", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.Element.getElementsByTagName", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.Element.tagName", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.HTMLCollection.length", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.HTMLCollection.item", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.Text.nodeValue", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.XMLDocument.documentElement", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.XMLDocument.getElementsByTagName", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.XMLHttpRequest.channel", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.XMLHttpRequest.open", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.XMLHttpRequest.responseText", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.XMLHttpRequest.responseXML", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.XMLHttpRequest.send", "allAccess"&#41;;
-        user_pref&#40;"capability.policy.default.XMLHttpRequest.setRequestHeader", "allAccess"&#41;;
+4.  Open it up and add the following lines:
+
+        user_pref("capability.policy.default.XMLHttpRequest.open", "allAccess");
+        user_pref("capability.policy.default.CDATASection.nodeValue", "allAccess");
+        user_pref("capability.policy.default.Element.attributes", "allAccess");
+        user_pref("capability.policy.default.Element.childNodes", "allAccess");
+        user_pref("capability.policy.default.Element.firstChild", "allAccess");
+        user_pref("capability.policy.default.Element.getElementsByTagName", "allAccess");
+        user_pref("capability.policy.default.Element.tagName", "allAccess");
+        user_pref("capability.policy.default.HTMLCollection.length", "allAccess");
+        user_pref("capability.policy.default.HTMLCollection.item", "allAccess");
+        user_pref("capability.policy.default.Text.nodeValue", "allAccess");
+        user_pref("capability.policy.default.XMLDocument.documentElement", "allAccess");
+        user_pref("capability.policy.default.XMLDocument.getElementsByTagName", "allAccess");
+        user_pref("capability.policy.default.XMLHttpRequest.channel", "allAccess");
+        user_pref("capability.policy.default.XMLHttpRequest.open", "allAccess");
+        user_pref("capability.policy.default.XMLHttpRequest.responseText", "allAccess");
+        user_pref("capability.policy.default.XMLHttpRequest.responseXML", "allAccess");
+        user_pref("capability.policy.default.XMLHttpRequest.send", "allAccess");
+        user_pref("capability.policy.default.XMLHttpRequest.setRequestHeader", "allAccess");
 
 This code was copied (with the exception of 1 line) from a source repository at [[kryogenix.org][3]]  
 used in jackfield. It wasn’t intended to be used for this purpose, but it works.

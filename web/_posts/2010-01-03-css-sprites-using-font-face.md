@@ -1,5 +1,5 @@
 ---
-title: 'DIY Webdings &#8211; CSS Sprites <span class="widow">using @font-face</span>'
+title: 'DIY Webdings &#8211; CSS Sprites using @font-face'
 author: Zach Leatherman
 layout: post
 permalink: /css-sprites-using-font-face/

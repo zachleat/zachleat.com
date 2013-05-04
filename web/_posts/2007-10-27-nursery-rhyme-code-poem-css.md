@@ -1,5 +1,5 @@
 ---
-title: 'Nursery Rhyme Code <span class="widow">Poem [CSS]</span>'
+title: 'Nursery Rhyme Code Poem [CSS]'
 author: Zach Leatherman
 layout: post
 permalink: /nursery-rhyme-code-poem-css/
@@ -21,11 +21,11 @@ Code Poems are fun! The trick is to take a [nursery rhyme][1] (but really, it co
 
  [1]: http://en.wikipedia.org/wiki/List_of_nursery_rhymes_in_English
 
-    #theChurch &#123;&#125;
-    #theChurch #theSteeple &#123;&#125;
-    #theChurch .door&#91;state="open"&#93; .people &#123; visibility: visible; &#125;
-    #theChurch #theParson &#123; display: none; &#125;
-    #theChurch > .upstairs #theParson:active &#123; display: block; &#125;
-    #theChurch #theParson:lang&#40;prayers&#41; &#123; display: block; &#125;
+    #theChurch {}
+    #theChurch #theSteeple {}
+    #theChurch .door[state="open"] .people { visibility: visible; }
+    #theChurch #theParson { display: none; }
+    #theChurch > .upstairs #theParson:active { display: block; }
+    #theChurch #theParson:lang(prayers) { display: block; }
 
 *The above code poem is released under the BSD license.* To use in production environment without error, do not include an element with an id attribute of “theChurch”. Obviously I’m kidding, don’t use this code. Not even for enterprise software.
