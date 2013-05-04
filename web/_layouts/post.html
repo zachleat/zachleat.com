@@ -11,6 +11,24 @@ layout: default
 		<div class="action">
 			Hey! You should follow me on <a href="//twitter.com/zachleat/"><i class="foundicon-twitter"></i> Twitter</a> and <a href="//github.com/zachleat/"><i class="foundicon-github"></i> GitHub</a>. You might even want to <a href="/web/feed/"><i class="foundicon-rss"></i> Subscribe</a>.
 		</div>
+		<div class="about">
+			<a href="/web/about/">
+				<img src="/web/img/avatar.png">
+				<p>Zach Leatherman is a Professional Front End Engineer. He loves building for the web and has been writing here since 2007.</p>
+				<p>He enjoys spending time with his beautiful wife Traci and their two Great Danes, Roxie and Ella. They also have a cat, a rabbit, goldfish, two poison dart frogs, and usually one or more tarantulas. <span>Read more &raquo;</span></p>
+			</a>
+		</div>
+	</article>
+	<article>
+		<div class="pagination">
+			{% if page.previous.url %} 
+				<a href="{{site.baseurl}}{{page.previous.url}}" class="previous-post">{{page.previous.title}}</a>
+			{% endif %}
+
+			{% if page.next.url %} 
+				<a href="{{site.baseurl}}{{page.next.url}}" class="next-post">{{page.next.title}}</a>
+			{% endif %}
+		</div>
 	</article>
 	{% include footer.html %}
 </div><!-- /.maxwidth -->
