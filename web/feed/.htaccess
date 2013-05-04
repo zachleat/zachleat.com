@@ -4,5 +4,5 @@ DirectoryIndex atom.xml
 RewriteEngine on
 RewriteCond %{HTTP_USER_AGENT} !FeedBurner [NC]
 RewriteCond %{HTTP_USER_AGENT} !FeedValidator [NC]
-# RewriteRule ^$ http://feeds.feedburner.com/zachleat [R=302,NC,L]
+RewriteRule ^$ http://feeds.feedburner.com/zachleat [R=302,NC,L]
 </IfModule>
