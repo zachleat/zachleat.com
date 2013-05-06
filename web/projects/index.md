@@ -23,7 +23,7 @@ SocialCount is a small jQuery plugin for progressively enhanced, lazy loaded, mo
 ## [parseIntimate][pi]
 [![](/web/wp-content/uploads/2009/12/Screen-Shot-2012-02-17-at-7.49.26-PM1.png "parseIntimate.com")][pi]
 
-[pi]: (http://parseintimate.com)
+[pi]: http://parseintimate.com
 
  A Valentine’s Day website to spend a little quality time with JavaScript and it’s quirky parseInt function. Don’t be afraid to get parseIntimate.
 
