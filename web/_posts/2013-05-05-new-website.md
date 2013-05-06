@@ -5,7 +5,7 @@ layout: post
 permalink: /zachleat-is-dead/
 ---
 
-*If you’re reading this in the RSS Feed, please accept my humble apologies for not transparently converting my feed. This is one of the perils of switching from WordPress to Jekyll. You’ll probably see a lot of unread items appearing here, so feel free to “mark all as read.”*
+*If you’re reading this in the RSS Feed, please accept my humble apologies for not transparently converting my feed. This is one of the perils of switching from WordPress to Jekyll. The URL for the feed has **not** changed, but you’ll probably see a lot of unread items appearing here, so feel free to “mark all as read.”*
 
 Welcome to the redesign of zachleat.com! Notably, the title of the blog is now my name, instead of `Web 3.0, 6 Bladed Razors, 7 Minute Abs`. I’ve decided that using my name for the blog title is more in line with the principles I set forth in [A Web Developer Fumbling with Social Media](/web/fumbling-with-social-media/).
 
