@@ -8,8 +8,8 @@ module.exports = function(grunt) {
 		banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
 			'<%= grunt.template.today("yyyy-mm-dd") %>\n' +
 			'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-			'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-			' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+			'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>;' +
+			' <%= pkg.license %> License */\n',
 		// Task configuration.
 		concat: {
 			options: {
@@ -64,6 +64,17 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		cssmin: {
+			dist: {
+				options: {
+					banner: '<%= banner %>'
+				},
+				files: {
+					'web/dist/global.min.css': ['web/dist/global.css'],
+					'web/dist/icons.min.css': ['web/dist/icons.css']
+				}
+			}
+		},
 		shell: {
 			jekyll: {
 				command: 'jekyll --no-auto',
@@ -102,11 +113,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-shell');
 
 	// Default task.
 	grunt.registerTask('content', ['shell:jekyll']);
-	grunt.registerTask('assets', ['sass', 'jshint', 'concat:js', 'uglify']);
+	grunt.registerTask('assets', ['sass', 'jshint', 'concat:js', 'uglify', 'cssmin']);
 	grunt.registerTask('default', ['assets', 'content']);
 
 };

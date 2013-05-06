@@ -1,6 +1,6 @@
 {
   "name": "zachleat.com",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The website of @zachleat",
   "main": "index.js",
   "dependencies": {
@@ -15,7 +15,8 @@
     "grunt-contrib-sass": "~0.3.0",
     "install": "~0.1.7",
     "npm": "~1.2.18",
-    "grunt-shell": "~0.2.2"
+    "grunt-shell": "~0.2.2",
+    "grunt-contrib-cssmin": "~0.6.0"
   },
   "scripts": {},
   "repository": {
@@ -23,6 +24,6 @@
     "url": "git://github.com/zachleat/zachleat.com.git"
   },
   "author": "Zach Leatherman",
-  "license": "BSD",
+  "license": "MIT",
   "gitHead": "0ef70ac454010dee358126fe5ff667c9a35c235b"
 }

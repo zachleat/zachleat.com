@@ -21,7 +21,7 @@ function injectJs( src ) {
 	}
 
 	injectCss( 'http://fonts.googleapis.com/css?family=Bitter:700' );
-	injectCss( '/web/dist/icons.css' );
+	injectCss( '/web/dist/icons.min.css' );
 
 	var iliveinomaha = doc.createElement( 'div' );
 	iliveinomaha.className = 'iliveinomaha';
