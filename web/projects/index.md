@@ -70,9 +70,16 @@ A draggable  infinite-scroll [flickr](http://www.flickr.com/) image browser (sim
 ## [maLArquee][mal]
 [![Screenshot of maLArquee](/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-10.50.55-PM.png "maLArquee")][mal]
 
-[mal]: /Projects/malarquee/
+[mal]: /projects/Malarquee/
 
 A strange project creating a marquee.
+
+### [Omaha Bounty Hunter][obh]
+[![A game built using open crime data](/web/wp-content/uploads/2009/12/omahabountyhunter.png)][obh]
+
+ [obh]: http://obh.herokuapp.com/
+
+ A game built for Hack Omaha using Open Crime Data. Guess how much the owner thought their stolen item was worth.
 
 * * *
 
@@ -99,11 +106,6 @@ Tournology makes tournament coordination easy. _Retired._
 ![A way to anonymously meet new friends using nothing but your phone.](/web/wp-content/uploads/2009/12/callspinner.png "callspinner")
 
  A way to anonymously meet new friends using nothing but your phone. **Winner of Startup Weekend Omaha September 2010.** _Retired_
-
-### Omaha Bounty Hunter
-![A game built using open crime data](/web/wp-content/uploads/2009/12/omahabountyhunter.png)
-
- A game built for Hack Omaha using Open Crime Data. Guess how much the owner thought their stolen item was worth.
 
 ### [Registrastination][reg]
 [![](/web/wp-content/uploads/2009/12/Screen-shot-2011-01-15-at-6.25.27-PM.png "John McCain vs Barack Obama in Registrastination")][reg]
