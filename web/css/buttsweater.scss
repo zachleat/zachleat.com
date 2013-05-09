@@ -436,8 +436,12 @@ em.date:before {
 
 /* Filter Menu */
 .post-filter {
-	text-align: right;
 	display: none;
+}
+@media (min-width: 64em) {
+	.post-filter {
+		text-align: right;
+	}
 }
 .with-js .post-filter {
 	display: block;
