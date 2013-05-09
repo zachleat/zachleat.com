@@ -15,19 +15,46 @@ function injectJs( src ) {
 	head.appendChild( script );
 }
 
+function isEnhancedExperience() {
+	return 'querySelectorAll' in document;
+}
+
 (function( doc ) {
-	if( !( 'querySelectorAll' in doc ) ) {
+	if( !isEnhancedExperience() ) {
 		return;
 	}
 
+	document.documentElement.className += ' with-js';
+
+	// Google Web Font
 	injectCss( 'http://fonts.googleapis.com/css?family=Bitter:700' );
+
+	// Zurb Foundation Social Icons
 	injectCss( '/web/dist/icons.min.css' );
 
+	// I Live in Omaha Banner
 	var iliveinomaha = doc.createElement( 'div' );
 	iliveinomaha.className = 'iliveinomaha';
 	iliveinomaha.innerHTML = '<a href="http://iliveinomaha.com"><img src="/web/img/iliveinomaha.gif" alt="I live in Omaha."></a>';
 	doc.body.appendChild( iliveinomaha );
 })( document );
+
+// Disqus Comments
+var disqus_shortname = 'web367';
+
+(function() {
+	if( !isEnhancedExperience() ) {
+		return;
+	}
+
+	if( document.getElementById( 'disqus_thread' ) ) {
+		var dsq = document.createElement('script');
+		dsq.type = 'text/javascript';
+		dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}
+})();
 
 // Google Analytics
 //
