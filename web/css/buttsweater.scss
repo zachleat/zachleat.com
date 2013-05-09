@@ -1,7 +1,15 @@
-$monospaceFontStack: Consolas, monospace;
-$sansSerifFontStack: Helvetica Neue, Helvetica, sans-serif;
-$serifFontStack: Georgia, serif;
-$headerFontStack: Bitter, sans-serif;
+@mixin monospaceFont {
+	font-family: Consolas, monospace;
+}
+@mixin sansSerifFont {
+	font-familiy: Helvetica Neue, Helvetica, sans-serif;
+}
+@mixin serifFont {
+	font-family: Georgia, serif;
+}
+@mixin headerFont {
+	font-family: Bitter, sans-serif;
+}
 $blockquoteColor: #888;
 $borderColor: #7f917f;
 $textColor: #525252;
@@ -43,7 +51,7 @@ html {
 	background-color: #fff;
 	background-color: rgba(255,255,255,.9);
 	color: $textColor;
-	font-family: $serifFontStack;
+	@include serifFont;
 	font-size: 1.1875em;
 	line-height: 160%;
 }
@@ -76,7 +84,7 @@ html {
 
 /* App specific */
 body {
-	font-family: $sansSerifFontStack;
+	@include sansSerifFont;
 	padding: 0;
 	margin: 0;
 	background-color: $backgroundColor;
@@ -97,7 +105,7 @@ body {
 }
 h1, h2, h3, h4, h5 {
 	font-weight: 700;
-	font-family: $headerFontStack;
+	@include headerFont;
 	margin-top: 1.4em;
 	text-transform: uppercase;
 }
@@ -113,7 +121,7 @@ h2 {
 	font-size: 1.4em;
 }
 code {
-	font-family: $monospaceFontStack;
+	@include monospaceFont;
 	font-size: .875em;
 }
 pre {
@@ -152,7 +160,7 @@ th {
 }
 
 /* Compatibility Tables */
-table.compatibility { font-family: $sansSerifFontStack; }
+table.compatibility { @include sansSerifFont; }
 td.yes { background-color: #00882D; color: #fff; }
 td.no { background-color: #CB000F; color: #fff; }
 td.emulate { background-color: #40A662; color: #fff; }
@@ -190,7 +198,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 	display: block;
 	padding-top: 2em;
 	color: #bbb;
-	font-family: $serifFontStack;
+	@include serifFont;
 	font-size: .75em;
 	line-height: 110%;
 	text-align: center;
@@ -198,7 +206,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 
 /* Header Links */
 .links {
-	font-family: $sansSerifFontStack;
+	@include sansSerifFont;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: .75em;
@@ -257,7 +265,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 .posts .date,
 .posts li:after {
-	font-family: $monospaceFontStack;
+	@include monospaceFont;
+	font-weight: normal;
 }
 .posts .date {
 	color: #aaa;
@@ -383,7 +392,7 @@ em.date:before {
 .footer {
 	margin-top: 2em;
 	padding: .6em 1em;
-	font-family: $serifFontStack;
+	@include serifFont;
 	font-style: italic;
 	font-size: .75em;
 	line-height: 120%;
