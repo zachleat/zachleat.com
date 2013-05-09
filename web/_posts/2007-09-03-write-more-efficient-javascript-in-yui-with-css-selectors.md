@@ -5,12 +5,6 @@ layout: post
 permalink: /write-more-efficient-javascript-in-yui-with-css-selectors/
 Version Specific Article:
   - YUI 2.3.0
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718842:0
 categories:
   - JavaScript
 tags:

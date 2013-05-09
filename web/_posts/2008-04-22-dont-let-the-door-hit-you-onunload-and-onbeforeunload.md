@@ -5,12 +5,6 @@ layout: post
 permalink: /dont-let-the-door-hit-you-onunload-and-onbeforeunload/
 Version Specific Article:
   - Opera 9.27
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299705506:1
 categories:
   - Interface Design
   - JavaScript

@@ -9,6 +9,7 @@ categories:
   - JavaScript
   - Web Browsers
 tags:
+  - deprecated
 ---
 
 Look at this code. What do you expect to be the outcome?
