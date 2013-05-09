@@ -5,13 +5,8 @@ layout: post
 permalink: /performance-caveat-with-jquery-selectors-and-live-events/
 Version Specific Article:
   - jQuery 1.3.2
-bttc_cache:
-  - 1299719279:5
 categories:
   - JavaScript
-tags:
-  - Event Delegation
-  - jQuery
 ---
 
 *Prerequisite: Knowledge/Experience with [jQuery Live Events][1] (new in jQuery 1.3), and the concept of [Event Delegation][2].*

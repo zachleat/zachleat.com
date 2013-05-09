@@ -3,14 +3,10 @@ title: 'jQuery Bug: IE reports incorrect $.browser.version'
 author: Zach Leatherman
 layout: post
 permalink: /jquery-bug-ie-reports-incorrect-browserversion/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299722958:0
 categories:
   - Other
+tags:
+  - deprecated
 ---
 
 **Update: This is now fixed in jQuery.**

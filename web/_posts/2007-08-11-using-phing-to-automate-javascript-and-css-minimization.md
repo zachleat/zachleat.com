@@ -5,20 +5,12 @@ layout: post
 permalink: /using-phing-to-automate-javascript-and-css-minimization/
 Version Specific Article:
   - Phing (Unknown)
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299583197:1
 categories:
   - CSS
   - JavaScript
   - PHP
 tags:
-  - csstidy
-  - Packer
-  - Phing
+  - deprecated
 ---
 
 *This article may be too advanced for beginner programmers. Unfortunately, I will not support any code that I do not write (in this case), so if you have troubles installing some of the packages required below, please see the authors of the problem code. Thank you.*

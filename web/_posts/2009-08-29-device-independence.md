@@ -3,10 +3,10 @@ title: 'Device Independence on the Open Web'
 author: Zach Leatherman
 layout: post
 permalink: /device-independence/
-bttc_cache:
-  - 1299568217:4
 categories:
   - Application Design
+tags:
+  - highlight
 ---
 
 Open Web advocacy can get pretty lonely working in Big Enterprise. Armed with slow moving standards bodies, and held back by antiquated browser support, architectural battles over tools and frameworks can get pretty hairy if you don’t approach them with the right frame of mind.

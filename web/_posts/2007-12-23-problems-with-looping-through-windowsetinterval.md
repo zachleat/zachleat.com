@@ -5,18 +5,10 @@ layout: post
 permalink: /problems-with-looping-through-windowsetinterval/
 Version Specific Article:
   - Firefox 2
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719394:0
 categories:
   - JavaScript
   - Web Browsers
 tags:
-  - Firefox
-  - Timers
 ---
 
 Look at this code. What do you expect to be the outcome?

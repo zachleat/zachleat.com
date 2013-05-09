@@ -3,16 +3,10 @@ title: 'The JavaScript Testing Challenge'
 author: Zach Leatherman
 layout: post
 permalink: /javascript-tdd/
-bttc_cache:
-  - 1299663866:22
 categories:
   - Contests
   - JavaScript
 tags:
-  - Code Kata
-  - JsTestDriver
-  - QUnit
-  - Testing
 ---
 
 ***Update 2**: [The JavaScript Testing Challenge Winner][1]*

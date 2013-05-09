@@ -3,13 +3,10 @@ title: 'Internet Explorer Array.sort Unreliable'
 author: Zach Leatherman
 layout: post
 permalink: /array-sort/
-bttc_cache:
-  - 1299666776:12
 categories:
   - JavaScript
 tags:
-  - Internet Explorer
-  - JScript
+  - highlight
 ---
 
 What would you expect to be the result of executing the following code?

@@ -6,6 +6,8 @@ permalink: /pragmatic/
 categories:
   - Application Design
   - Opinion
+tags:
+  - highlight
 ---
 
 ![][1]

@@ -14,10 +14,7 @@ bttc_cache:
 categories:
   - JavaScript
 tags:
-  - CSS Selectors
-  - DOM
-  - ExtJS
-  - YUI
+  - deprecated
 ---
 
 *This is an updated version of a previous article entitled [Using DOM Query Libraries in YUI][1] for the new version of YAHOO.util.Dom included with YUI 2.3.0 as well as including support for passing context nodes into Dom functions.*

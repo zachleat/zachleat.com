@@ -5,18 +5,12 @@ layout: post
 permalink: /adventures-in-i-frame-shims-or-how-i-learned-to-love-the-bomb/
 Version Specific Article:
   - Internet Explorer 6
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718654:0
 categories:
   - CSS
   - JavaScript
   - Web Browsers
 tags:
-  - Internet Explorer
+  - deprecated
 ---
 
 So again, I show up late to the party. IE7 is already out, but my target customers are still using IE6. So today, boys and girls, we’re going to discover the magical world of using I-Frame shims to hide those bleeding heart select boxes from showing through our layered elements.

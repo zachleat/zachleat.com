@@ -3,14 +3,11 @@ title: 'Et tu, X-UA-Compatible?'
 author: Zach Leatherman
 layout: post
 permalink: /et-tu-x-ua-compatible/
-bttc_cache:
-  - 1299721811:14
 categories:
   - JavaScript
   - Web Browsers
 tags:
-  - Internet Explorer
-  - User Agent Sniffing
+  - highlight
 ---
 
 [![][brutus]][brutussrc]

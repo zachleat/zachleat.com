@@ -1,20 +1,13 @@
 ---
 title: 'DOMContentLoaded Inconsistencies (in Browsers and JavaScript Libraries)'
 author: Zach Leatherman
-excerpt: "We all know the problem, but we may not all call it the same thing: DOMContentLoaded.  Every popular JavaScript library has its own name for the DOMContentLoaded event, and they're all implemented differently.  This, of course, partly due to the fact that web browsers are also inconsistent in their implementations.  Here's a run-down of those inconsistencies."
 layout: post
 permalink: /domcontentloaded-inconsistencies/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299709222:1
 categories:
   - JavaScript
   - Web Browsers
 tags:
-  - linkedin
+  - highlight
 ---
 
 **Quick Summary**

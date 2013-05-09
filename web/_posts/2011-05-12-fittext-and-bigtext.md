@@ -5,6 +5,8 @@ layout: post
 permalink: /fittext-and-bigtext/
 categories:
   - JavaScript
+tags:
+  - highlight
 ---
 
 Earlier this week, [@TrentWalton][1] [tweeted][2]:

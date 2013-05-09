@@ -5,18 +5,10 @@ layout: post
 permalink: /wash-your-mouth-out-with-soap-and-the-yui-connection-manager/
 Version Specific Article:
   - YUI 2.2.2
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299723467:0
 categories:
   - JavaScript
 tags:
-  - Ajax
-  - SOAP
-  - YUI
+  - deprecated
 ---
 
 Now you’ve done it. You watched an R rated movie while your parents weren’t looking and used some of your newfound acquired colorful language in front of them. Your mom goes for the Dial Liquid Soap, she’s going to wash that profanity right out of your dirty little mouth.

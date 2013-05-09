@@ -5,17 +5,10 @@ layout: post
 permalink: /yui-button-lite/
 Version Specific Article:
   - YUI 2.2.0
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299723096:0
 categories:
   - JavaScript
 tags:
-  - Button
-  - YUI
+  - deprecated
 ---
 
 Do you want the cool clean look of the new YUI Button component, but without all the seedy overhead of split buttons or button groups or components that shouldn’t even be pigeonholed into a button component to begin with? Keep in mind that this approach only works for the method called “[Using pre-defined Button Control HTML.][1]”

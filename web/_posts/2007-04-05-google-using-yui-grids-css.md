@@ -14,10 +14,7 @@ categories:
   - JavaScript
   - Reviews
 tags:
-  - CSS Grids
-  - Google
-  - Licensing
-  - YUI
+  - highlight
 ---
 
 Head over to the [Google Homepage][1]. Log In using your Google Account. Make sure you’re at your [Personalized Homepage][1]. Take a look at the source CSS file [ig.css][2] included on the page. There are a few peculiar lines of code that I recognized from another source, the Yahoo User Interface Grids CSS file. Yahoo has provided a set of standard CSS definitions under the BSD license that allow a developer to easily make fluid or fixed width column layouts. And on the Google Personalized Homepage, there are the following class definitions:

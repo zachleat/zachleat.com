@@ -1,22 +1,12 @@
 ---
 title: 'Selecting XML Nodes with JavaScript (Peril of getElementsByTagName)'
 author: Zach Leatherman
-excerpt: |
-  Parsing XML in the browser can be a tricky beast.  There are many different wrong ways to do it, which can leave you cold and naked in a snowstorm if you're not careful.  So, let's put on the metaphorical electric one-sie of standards based code and let the power of Edison heat our JavaScript code like the innards of a <a href="http://starwars.wikia.com/wiki/Tauntaun">tauntaun</a>.
 layout: post
 permalink: /selecting-xml-with-javascript/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299713418:4
 categories:
   - JavaScript
 tags:
-  - jQuery
-  - XML
-  - YUI
+  - highlight
 ---
 
 *There are two popular camps for ajax data formats right now: XML and JSON. Both have their (dis-)advantages. The purpose of this article is to show you how to effectively parse XML in the browser.*

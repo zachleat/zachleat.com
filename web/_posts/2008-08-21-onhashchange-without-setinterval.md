@@ -3,18 +3,10 @@ title: 'Emulating onhashchange without setInterval'
 author: Zach Leatherman
 layout: post
 permalink: /onhashchange-without-setinterval/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299607844:5
 categories:
   - JavaScript
 tags:
-  - Ajax
-  - Back Button
-  - History
+  - highlight
 ---
 
 There is one limitation that all of the major JavaScript browser history management plugins have to hack around:  How to tell when there is a change to the `location.hash`?  Sure, you can tell when you’re modifying the hash yourself, but what if the user hits the back/forward button?

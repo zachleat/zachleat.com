@@ -5,17 +5,10 @@ layout: post
 permalink: /fundamental-problem-with-yui-button/
 Version Specific Article:
   - YUI 2.2.0
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719515:0
 categories:
   - JavaScript
 tags:
-  - Button
-  - YUI
+  - deprecated
 ---
 
 Buttons! Let’s make them obvious and good looking. Let’s make them have inline images and cool hover colors. Let’s make them three dimensional. Especially so, let’s make them from markup so that we don’t take functionality away from technology disabled users.

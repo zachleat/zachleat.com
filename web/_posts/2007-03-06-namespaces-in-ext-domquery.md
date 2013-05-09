@@ -5,18 +5,10 @@ layout: post
 permalink: /namespaces-in-ext-domquery/
 Version Specific Article:
   - ExtJS 0.33
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719531:0
 categories:
   - JavaScript
 tags:
-  - ExtJS
-  - XHTML
-  - XML Namespaces
+  - deprecated
 ---
 
 Do you want to use [custom attributes][1] in your XHTML? Do you use the YUI Library and Jack Slocum’s wonderful [DomQuery selector engine][2]?

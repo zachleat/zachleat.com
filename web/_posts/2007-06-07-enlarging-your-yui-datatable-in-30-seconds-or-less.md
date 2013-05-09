@@ -5,20 +5,12 @@ layout: post
 permalink: /enlarging-your-yui-datatable-in-30-seconds-or-less/
 Version Specific Article:
   - YUI 2.2.2
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718927:0
 categories:
   - CSS
   - Interface Design
   - JavaScript
 tags:
-  - Expandable
-  - Grid
-  - YUI
+  - deprecated
 ---
 
 **Please note that this post has been updated to the new version of YUI, 2.3.0 in an article called [“Enlarging your YUI DataTable in 29 Seconds or Less!”][1]**

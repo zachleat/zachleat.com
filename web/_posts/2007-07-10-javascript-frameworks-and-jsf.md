@@ -5,12 +5,6 @@ layout: post
 permalink: /javascript-frameworks-and-jsf/
 Version Specific Article:
   - Specified Below
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719135:0
 categories:
   - Java
   - JavaScript

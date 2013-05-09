@@ -14,10 +14,7 @@ categories:
   - JavaScript
   - Projects
 tags:
-  - Alarmd
-  - Google Calendar
-  - jQuery
-  - Youtube
+  - highlight
 ---
 
 [Take a look: ALARMd 2 Beta][1]

@@ -5,18 +5,11 @@ layout: post
 permalink: /cross-domain-xhr-with-firefox/
 Version Specific Article:
   - Firefox 2
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719082:0
 categories:
   - JavaScript
   - Web Browsers
 tags:
-  - Ajax
-  - Firefox
+  - deprecated
 ---
 
 By now know you know that trying to do an XMLHttpRequest (XHR or AJAX) call to a domain that is different from the domain of the hosted JavaScript in Firefox will throw an exception.

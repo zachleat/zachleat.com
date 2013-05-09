@@ -7,8 +7,7 @@ categories:
   - HTML
   - JavaScript
 tags:
-  - Compatibility Tests
-  - HTML5
+  - highlight
 ---
 
 When I’m not out fighting crime, I spend my days developing reusable components for the web. One of those reusable components I wrote was an implementation of a placeholder plugin. For the sake of privacy, all component names have been anonymized so I’ll refer to this home-grown implementation as The Mankini (if for no other reason than to drive some swimwear shopping traffic to my blog).
