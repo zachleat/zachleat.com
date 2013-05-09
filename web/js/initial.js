@@ -37,6 +37,21 @@ function isEnhancedExperience() {
 	iliveinomaha.className = 'iliveinomaha';
 	iliveinomaha.innerHTML = '<a href="http://iliveinomaha.com"><img src="/web/img/iliveinomaha.gif" alt="I live in Omaha."></a>';
 	doc.body.appendChild( iliveinomaha );
+
+	// Filter Posts Menu
+	var filter = doc.getElementById( 'post-filter' ),
+		posts = doc.getElementById( 'main-posts-list' ),
+		initialClassName = '';
+
+	function updateFilter() {
+		posts.className = initialClassName + ' ' + filter.options[ filter.selectedIndex ].value;
+	}
+
+	if( filter && posts && 'addEventListener' in doc ) {
+		initialClassName = posts.className;
+		updateFilter();
+		filter.addEventListener( 'change', updateFilter, false );
+	}
 })( document );
 
 // Disqus Comments

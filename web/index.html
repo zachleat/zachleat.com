@@ -3,9 +3,17 @@ layout: default
 ---
 
 <article>
-	<ol class="posts" style="counter-reset:start-from {{ site.posts | size | plus: 1 }}">
+	<form class="post-filter">
+		<label>Filter: <select id="post-filter">
+			<option value="all">Show all posts</option>
+			<option value="deprecated" selected>Hide deprecated posts</option>
+			<option value="highlighted">Show only highlighted posts</option>
+		</select></label>
+	</form>
+
+	<ol id="main-posts-list" class="posts" style="counter-reset:start-from {{ site.posts | size | plus: 1 }}">
 		{% for post in site.posts %}
-			<li><a href="{{ site.baseurl }}{{ post.url }}"><span class="date">{{ post.date | date: "%h %Y" }}</span> {{ post.title }}</a></li>
+			<li class="{% if post.tags contains 'deprecated' %}deprecated{% endif %}{% if post.tags contains 'highlight' %} highlight{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}"><span class="date">{{ post.date | date: "%h %Y" }}</span> {{ post.title }}</a></li>
 		{% endfor %}
 	</ol>
 </article>

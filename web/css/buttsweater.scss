@@ -15,20 +15,29 @@ $borderColor: #7f917f;
 $textColor: #525252;
 $backgroundColor: #fff;
 
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.a11y-only {
+@mixin a11y-only {
 	position: absolute;
 	height: 1px;
 	width: 1px; 
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
 }
+@mixin undo-a11y-only($position: static) {
+	position: $position;
+	height: auto;
+	width: auto; 
+	overflow: visible;
+	clip: auto;
+}
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.a11y-only {
+	@include a11y-only;
+}
 img {
 	max-width: 100%;
 	border: none;
@@ -272,6 +281,16 @@ td.emulate { background-color: #40A662; color: #fff; }
 	color: #aaa;
 	font-size: .5909em; /* 13px */
 }
+.posts .highlight {
+	background-color: #f7f7f7;
+}
+.posts .deprecated,
+.posts .deprecated .date,
+.posts .deprecated:after,
+.posts .deprecated :link,
+.posts .deprecated :visited {
+	color: #ddd;
+}
 em.date {
 	display: block;
 }
@@ -396,4 +415,25 @@ em.date:before {
 	font-style: italic;
 	font-size: .75em;
 	line-height: 120%;
+}
+
+/* Filter Menu */
+.post-filter {
+	text-align: right;
+	display: none;
+}
+.with-js .post-filter {
+	display: block;
+}
+.post-filter,
+.post-filter select {
+	font-size: .75em;
+}
+.posts.deprecated .deprecated,
+.posts.highlighted li {
+	@include a11y-only;
+}
+.posts.highlighted .highlight {
+	background-color: transparent;
+	@include undo-a11y-only(relative);
 }
