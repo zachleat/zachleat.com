@@ -5,6 +5,14 @@ layout: default
 	<article>
 	<h1>{{ page.title }}</h1>
 	<em class="date">{{ page.date | date_to_long_string }}</em>
+	{% if page.tags contains 'deprecated' %}
+	<article>
+		<div class="deprecation-warning">
+			<h3>Warning</h3>
+			<p>This article is fairly old and probably contains information that is no longer relevant. Read with care!</p>
+		</div>
+	</article>
+	{% endif %}
 	{{ content }}
 	</article>
 	<article>

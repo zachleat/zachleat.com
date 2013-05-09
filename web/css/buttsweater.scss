@@ -174,12 +174,6 @@ td.yes { background-color: #00882D; color: #fff; }
 td.no { background-color: #CB000F; color: #fff; }
 td.emulate { background-color: #40A662; color: #fff; }
 
-@media (min-width: 30em) {
-	table {
-		font-size: 1em;
-	}
-}
-
 /* Logo and Rail */
 .rail a {
 	display: inline-block;
@@ -330,7 +324,14 @@ em.date:before {
 	width: 44%;
 	position: relative;
 	line-height: 130%;
+	padding: .4em;
 	font-size: .842105263em; /* 16px */
+}
+.previous-post:hover,
+.previous-post:focus,
+.next-post:hover,
+.next-post:focus {
+	background-color: #ddd;
 }
 .previous-post {
 	text-align: left;
@@ -345,19 +346,21 @@ em.date:before {
 .previous-post:before,
 .next-post:after {
 	position: absolute;
-	top: 0;
+	top: .4em;
 }
 .previous-post:before {
 	content: "« ";
-	left: 0;
+	left: .4em;
 }
 .next-post:after {
 	content: " »";
-	right: 0;
+	right: .4em;
 }
 
-/* Call to Action */
-.action {
+
+/* Call to Action and Deprecation Warning */
+.action,
+.deprecation-warning {
 	font-size: 1.125em;
 	margin-top: 3em;
 	line-height: 140%;
@@ -372,7 +375,21 @@ em.date:before {
 .action a i {
 	vertical-align: middle;
 }
+.deprecation-warning {
+	margin-top: 1em;
+}
+.deprecation-warning h3 {
+	display: run-in;
+	margin-right: .6em;
+}
+.deprecation-warning h3:after {
+	content: ':';
+}
+.deprecation-warning p {
+	font-style: italic;
+}
 
+/* About Me Link Block */
 .about {
 	background: #f6f6f6 0 0 no-repeat;
 	border: 1px solid #ccc;
