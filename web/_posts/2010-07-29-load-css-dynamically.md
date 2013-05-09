@@ -3,13 +3,12 @@ title: 'Faking Onload for Link Elements'
 author: Zach Leatherman
 layout: post
 permalink: /load-css-dynamically/
-bttc_cache:
-  - 1299387932:9
 categories:
   - CSS
   - JavaScript
 tags:
   - YUI
+  - highlight
 ---
 
 **Updated 2011/09/27: Rejoice! This issue has now [been fixed in Firefox][1].**
