@@ -3,17 +3,12 @@ title: 'Speed up Including Google Analytics'
 author: Zach Leatherman
 layout: post
 permalink: /speed-up-google-analytics-with-dynamic-includes/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719402:1
 categories:
   - JavaScript
 tags:
   - Google Analytics
   - Timers
+  - deprecated
 ---
 
 Have you ever noticed that your homepage hangs when including the Google Analytics JavaScript file? I think [a few][1] [people][2] have noticed a delay. Well, let’s try something different. Let’s create the script node dynamically using DOM methods and put a timeout on this creation so that it inserts just enough delay so that your page won’t hang (we’ll move out of the current execution path with the timeout, thus allowing your page to finish loading). The obvious benefit here is that even when the Google servers lag a little bit serving you the JavaScript file, your page will appear as if it has already finished loading. Given optimally performing Google Servers, this method will perform slower most of the time, but it shines in those rare instances where there is a bit of a delay. Give it a try, and let me know if it works any better.

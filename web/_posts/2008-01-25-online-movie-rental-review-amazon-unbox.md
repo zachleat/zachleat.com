@@ -3,12 +3,6 @@ title: 'Online Movie Rental Review &#8211; Amazon Unbox'
 author: Zach Leatherman
 layout: post
 permalink: /online-movie-rental-review-amazon-unbox/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718580:0
 categories:
   - Reviews
 tags:
@@ -17,6 +11,7 @@ tags:
   - iTunes
   - MovieLink
   - Netflix
+  - deprecated
 ---
 
 Renting movies online. Steve Jobs was hilariously excited about his new Apple TV product and being able to rent movies online and stream them directly to your television. So, with all this movie-watching titillation, I decided to check out if the hubbub was actually worthy of my attention. Turns out, not so much.

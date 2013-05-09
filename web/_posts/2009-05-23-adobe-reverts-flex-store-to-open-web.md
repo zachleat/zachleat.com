@@ -3,14 +3,13 @@ title: 'Adobe Reverts Flex Store to Open Web'
 author: Zach Leatherman
 layout: post
 permalink: /adobe-reverts-flex-store-to-open-web/
-bttc_cache:
-  - 1299719198:1
 categories:
   - Reviews
 tags:
   - Adobe
   - Flash
   - Flex
+  - deprecated
 ---
 
 A few weeks ago in the process of doing some research about the Adobe Flex platform, I came across their online store, a dogfooded full page application using Flex.

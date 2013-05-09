@@ -37,6 +37,6 @@ It’s a simple minimalistic mobile-first responsive web design (that’s a mout
 
 * Add [SocialCount](/web/socialcount/), which will mean either re-adding jQuery or removing the jQuery dependency from SocialCount.
 * I want to use the Google Analytics data to generate a visualization for the site that will communicate post popularity. I want it to be easy for visitors to find my most popular posts on the big list of posts on the home page.
-* Import the old Comments. This is still in the works.  Whether or not I re-add the ability to let users post new comments directly on the site is still a matter for debate.
+* ~~Import the old Comments. This is still in the works.  Whether or not I re-add the ability to let users post new comments directly on the site is still a matter for debate.~~
 
 For now, [let me know what you think on twitter](https://twitter.com/zachleat/).

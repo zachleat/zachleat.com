@@ -18,6 +18,7 @@ tags:
   - Firebug
   - Firefox
   - Selenium
+  - deprecated
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]
