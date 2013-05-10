@@ -387,6 +387,7 @@ em.date:before {
 }
 .deprecation-warning p {
 	font-style: italic;
+	margin: 0;
 }
 
 /* About Me Link Block */
@@ -443,7 +444,7 @@ em.date:before {
 		text-align: right;
 	}
 }
-.with-js .post-filter {
+.post-filter.with-js {
 	display: block;
 }
 .post-filter,

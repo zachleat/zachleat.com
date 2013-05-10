@@ -23,8 +23,9 @@ function isEnhancedExperience() {
 	if( !isEnhancedExperience() ) {
 		return;
 	}
+	var withJs = ' with-js';
 
-	document.documentElement.className += ' with-js';
+	document.documentElement.className += withJs;
 
 	// Google Web Font
 	injectCss( 'http://fonts.googleapis.com/css?family=Bitter:700' );
@@ -40,6 +41,7 @@ function isEnhancedExperience() {
 
 	// Filter Posts Menu
 	var filter = doc.getElementById( 'post-filter' ),
+		filterForm = doc.getElementById( 'post-filter-form' ),
 		posts = doc.getElementById( 'main-posts-list' ),
 		initialClassName = '';
 
@@ -48,6 +50,7 @@ function isEnhancedExperience() {
 	}
 
 	if( filter && posts && 'addEventListener' in doc ) {
+		filterForm.className += withJs;
 		initialClassName = posts.className;
 		updateFilter();
 		filter.addEventListener( 'change', updateFilter, false );
