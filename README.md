@@ -27,4 +27,5 @@ To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 
 ## Notes
 
+ * [“zachleat.com is Dead, Long Live zachleat.com,” a blog post describing the initial launch](http://www.zachleat.com/web/zachleat-is-dead/)
  * [Valid pygments lexers](http://pygments.org/languages/)
