@@ -23,7 +23,9 @@ function isEnhancedExperience() {
 	if( !isEnhancedExperience() ) {
 		return;
 	}
-	var withJs = ' with-js';
+	var withJs = ' with-js',
+		distMeta = doc.querySelector( 'meta[name="dist"]' ),
+		distFolder = distMeta ? distMeta.content : '';
 
 	document.documentElement.className += withJs;
 
@@ -31,7 +33,7 @@ function isEnhancedExperience() {
 	injectCss( 'http://fonts.googleapis.com/css?family=Bitter:700' );
 
 	// Zurb Foundation Social Icons
-	injectCss( '/web/dist/icons.min.css' );
+	injectCss( distFolder + 'icons.min.css' );
 
 	// I Live in Omaha Banner
 	var iliveinomaha = doc.createElement( 'div' );

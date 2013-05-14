@@ -4,8 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{% if page.title %}{{ page.title }}—zachleat.com{% else %}zachleat.com{% endif %}</title>
+		<meta name="dist" content="{{ site.distFolder }}">
 		<link href="/web/feed/" rel="alternate" title="Zach Leatherman’s Posts Feed" type="application/atom+xml">
-		<link href="/web/dist/global.min.css" rel="stylesheet">
+		<link href="{{ site.distFolder }}global.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="rail">
@@ -36,6 +37,6 @@
 		<div class="content" data-role="main">
 			{{ content }}
 		</div><!-- /.content -->
-		<script src="/web/dist/initial.min.js"></script>
+		<script src="{{ site.distFolder }}initial.min.js"></script>
 	</body>
 </html>
