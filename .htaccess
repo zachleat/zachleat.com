@@ -73,7 +73,7 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
   ExpiresByType image/svg+xml "access plus 1 month"
 
 # css and javascript
-#  ExpiresByType text/css "access plus 2 months"
+  ExpiresByType text/css "access plus 2 months"
   ExpiresByType application/javascript "access plus 2 months"
   ExpiresByType text/javascript "access plus 2 months"
   
