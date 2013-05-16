@@ -1,0 +1,38 @@
+// Fonts
+@mixin monospaceFont {
+	font-family: Consolas, monospace;
+}
+@mixin sansSerifFont {
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+@mixin serifFont {
+	font-family: Georgia, serif;
+}
+@mixin headerFont {
+	font-family: Bitter, sans-serif;
+}
+
+// Colors
+$blockquoteColor: #888;
+$borderColor: #7f917f;
+$textColor: #525252;
+$backgroundColor: #fff;
+
+// Breakpoints
+$twoColLayoutMinWidth: 60em;
+
+// Mixins
+@mixin a11y-only {
+	position: absolute;
+	height: 1px;
+	width: 1px; 
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+@mixin undo-a11y-only($position: static) {
+	position: $position;
+	height: auto;
+	width: auto; 
+	overflow: visible;
+	clip: auto;
+}

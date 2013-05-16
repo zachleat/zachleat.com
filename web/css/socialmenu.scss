@@ -1,3 +1,5 @@
+@import "config";
+
 /* Social links */
 .social {
 	position: absolute;
@@ -5,7 +7,7 @@
 	right: .75em;
 	font-size: 1.6em;
 }
-@media (min-width: 64em) {
+@media (min-width: $twoColLayoutMinWidth) {
 	.social {
 		text-align: center;
 		padding-top: 1em;

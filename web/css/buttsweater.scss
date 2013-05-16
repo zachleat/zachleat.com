@@ -1,34 +1,4 @@
-@mixin monospaceFont {
-	font-family: Consolas, monospace;
-}
-@mixin sansSerifFont {
-	font-family: Helvetica Neue, Helvetica, sans-serif;
-}
-@mixin serifFont {
-	font-family: Georgia, serif;
-}
-@mixin headerFont {
-	font-family: Bitter, sans-serif;
-}
-$blockquoteColor: #888;
-$borderColor: #7f917f;
-$textColor: #525252;
-$backgroundColor: #fff;
-
-@mixin a11y-only {
-	position: absolute;
-	height: 1px;
-	width: 1px; 
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-}
-@mixin undo-a11y-only($position: static) {
-	position: $position;
-	height: auto;
-	width: auto; 
-	overflow: visible;
-	clip: auto;
-}
+@import "config";
 
 * {
 	-webkit-box-sizing: border-box;
@@ -66,16 +36,11 @@ html {
 }
 .maxwidth {
 	max-width: 31em;
-	padding: 0 .75em;
+	padding: 0 .75em; /* 12px */
 	margin: 0 auto;
 }
 
-@media (min-width: 39em) { /* 600px + 12px*2 */
-	.maxwidth {
-		padding: 0;
-	}
-}
-@media (min-width: 64em) {
+@media (min-width: $twoColLayoutMinWidth) {
 	.rail {
 		text-align: left;
 		position: absolute;
@@ -85,13 +50,13 @@ html {
 		padding: 7em 0 0 3em;
 	}
 	.content {
-		padding: 2em;
-		margin-left: 18em;
+		padding: 2em 0;
+		margin-left: 17em;
 		position: relative;
-		min-height: 52em;
+		min-height: 30em;
 	}
 }
-@media (min-width: 64em) and (min-height: 25em) {
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 25em) {
 	.rail {
 		position: fixed;
 	}
@@ -154,7 +119,7 @@ pre {
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
 }
-@media (min-width: 64em) {
+@media (min-width: $twoColLayoutMinWidth) {
 	h1 {
 		font-size: 2.375em; /* 38px */
 	}
@@ -248,7 +213,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 		font-size: .875em;
 	}
 }
-@media (min-width: 64em) {
+@media (min-width: $twoColLayoutMinWidth) {
 	.links {
 		padding-top: 3em;
 	}
@@ -323,11 +288,6 @@ em.date:before {
 	.posts .date {
 		position: absolute;
 		left: .615384615em; /* 8px */
-	}
-}
-@media (min-width: 64em) {
-	.posts .date {
-		left: .3em;
 	}
 }
 
@@ -453,7 +413,7 @@ em.date:before {
 /* Footer */
 .footer {
 	margin-top: 2em;
-	padding: .666666667em .416666667em; /* 8px 5px */
+	padding: .666666667em; /* 8px */
 	@include serifFont;
 	font-style: italic;
 	font-size: .75em; /* 12px */
@@ -468,7 +428,7 @@ em.date:before {
 .post-filter {
 	display: none;
 	font-size: .75em; /* 12px */
-	padding: 0 .416666667em; /* 0 5px */
+	padding: 0 .666666667em; /* 0 8px */
 	margin-top: 2em;
 }
 .post-filter.with-js {
