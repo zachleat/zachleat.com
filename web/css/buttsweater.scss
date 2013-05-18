@@ -254,6 +254,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 .posts .date {
 	color: #aaa;
 	font-size: .5909em; /* 13px */
+	vertical-align: middle;
 }
 .posts .highlight {
 	background-color: rgba(255, 255, 204, .3);
@@ -380,9 +381,8 @@ em.date:before {
 
 /* About Me Link Block */
 .about {
-	background: #f6f6f6 0 0 no-repeat;
-	border: 1px solid #ccc;
-	padding: 1em;
+	border-bottom: 1px solid #ccc;
+	padding: 1em 0;
 	margin-top: 1em;
 	font-size: .875em;
 	line-height: 160%;
