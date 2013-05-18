@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Zach Leatherman</title>
-	<description>The blog formerly known as Web 3.0, 6 Bladed Razors, 7 Minute Abs</description>
+	<subtitle>The blog formerly known as Web 3.0, 6 Bladed Razors, 7 Minute Abs</subtitle>
 	<link href="http://www.zachleat.com/web/feed/" rel="self"/>
 	<link href="http://www.zachleat.com/web/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -15,13 +15,14 @@ layout: nil
 	</author>
 
 	{% for post in site.posts %}
+	{% unless post.tags contains 'deprecated' %}
 	<entry>
 		<title>{{ post.title }}</title>
 		<link href="http://www.zachleat.com/web{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>http://www.zachleat.com/web{{ post.id }}</id>
 		<content type="html">{{ post.content | xml_escape }}</content>
- </entry>
- {% endfor %}
- 
+	</entry>
+	{% endunless %}
+	{% endfor %}
 </feed>

@@ -1,5 +1,5 @@
 ---
-title: 'Selecting XML Nodes with JavaScript (Peril of getElements&shy;ByTagName)'
+title: 'Selecting XML Nodes with JavaScript (Peril of getElementsByTagName)'
 author: Zach Leatherman
 layout: post
 permalink: /selecting-xml-with-javascript/
