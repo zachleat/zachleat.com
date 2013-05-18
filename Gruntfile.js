@@ -154,10 +154,22 @@ module.exports = function(grunt) {
 		}); 
 	});
 
+	grunt.registerTask( 'feedburner-size', function() {
+		var feed = 'web/_site/feed/atom.xml',
+			fs = require('fs');
+
+		var stats = fs.statSync( feed ),
+			kbSize = Math.ceil( stats.size / 1024 );
+
+		if( kbSize > 512 ) {
+			grunt.warn( 'Your atom.xml is too large (' + kbSize + 'KB) for Feedburner (512KB max).' );
+		}
+	});
+
 	// Default task.
 	grunt.registerTask('assets', ['sass', 'jshint', 'concat:js', 'uglify', 'cssmin']);
 	grunt.registerTask('config', ['yaml']);
-	grunt.registerTask('content', ['shell:jekyll']);
+	grunt.registerTask('content', ['shell:jekyll', 'feedburner-size']);
 	grunt.registerTask('default', ['config', 'assets', 'content']);
 
 };
