@@ -19,14 +19,6 @@ RedirectMatch 301 /web/\d{4}/(.*)$ /web/$1
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
 </IfModule>
 
-# Use UTF-8 encoding for anything served as `text/html` or `text/plain`.
-AddDefaultCharset utf-8
-
-# Force UTF-8 for certain file formats.
-<IfModule mod_mime.c>
-AddCharset utf-8 .atom .css .js .json .rss .xml
-</IfModule>
-
 <IfModule mod_mime.c>
 
 # Audio
