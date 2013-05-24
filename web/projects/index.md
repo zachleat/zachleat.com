@@ -9,7 +9,7 @@ View all project source code on [GitHub](https://github.com/zachleat/).
 ## [SocialCount][socialcount]
 [![](socialcount.png "SocialCount")][socialcount]
 
-[socialcount]: http://filamentgroup.com/lab/socialcount/
+[socialcount]: /web/socialcount/
 
 SocialCount is a small jQuery plugin for progressively enhanced, lazy loaded, mobile friendly social networking widgets.
 
@@ -19,6 +19,13 @@ SocialCount is a small jQuery plugin for progressively enhanced, lazy loaded, mo
 [bt]:/web/bigtext-makes-text-big/
 
  The BigText jQuery plugin takes a single element and sizes the text inside of its child block elements to fit the width of the parent element. Gives the text that lovely vertical alignment. Be sure to check out the demo! Also on [Github](http://github.com/zachleat/bigtext).
+
+## [A Front End Engineer’s Manifesto][f2em]
+[![](f2em.png "F2EM")][f2em]
+
+[f2em]: /web/manifesto/
+
+Guidelines I use when looking at the big picture as a Front End Web Developer. 
 
 ## [parseIntimate][pi]
 [![](/web/wp-content/uploads/2009/12/Screen-Shot-2012-02-17-at-7.49.26-PM1.png "parseIntimate.com")][pi]
