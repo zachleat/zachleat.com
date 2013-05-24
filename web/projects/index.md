@@ -27,6 +27,13 @@ SocialCount is a small jQuery plugin for progressively enhanced, lazy loaded, mo
 
 Guidelines I use when looking at the big picture as a Front End Web Developer. 
 
+## [NebraskaJS][nejs]
+[![](nebraskajs.png "NebraskaJS Screenshot")][nejs]
+
+[nejs]: http://nebraskajs.com/
+
+Local JavaScript User Group.
+
 ## [parseIntimate][pi]
 [![](/web/wp-content/uploads/2009/12/Screen-Shot-2012-02-17-at-7.49.26-PM1.png "parseIntimate.com")][pi]
 
