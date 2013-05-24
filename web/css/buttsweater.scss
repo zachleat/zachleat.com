@@ -208,6 +208,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 .links a:focus {
 	color: #000;
 }
+.links-sub {
+	display: none;
+}
 @media (min-width: 30em) {
 	.links {
 		font-size: .875em;
@@ -221,6 +224,23 @@ td.emulate { background-color: #40A662; color: #fff; }
 		display: block;
 		padding-left: 0;
 		padding-right: 0;
+	}
+	.links-sub {
+		display: block;
+		padding: 0 0 0 .6em;
+		margin: 0;
+		list-style: none;
+		overflow: hidden;
+		font-size: .857142857em; /* 12px */
+		letter-spacing: 1px;
+	}
+	.links-sub > li a {
+		margin-top: 0;
+	}
+}
+@media (min-width: $twoColLayoutMinWidth) and (max-height: 30em) {
+	.links-sub {
+		display: none;
 	}
 }
 
@@ -255,6 +275,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 	color: #aaa;
 	font-size: .5909em; /* 13px */
 	vertical-align: middle;
+	position: relative;
+	top: 3px;
+	padding-right: .5em;
 }
 .posts .highlight {
 	background-color: rgba(255, 255, 204, .3);
@@ -289,6 +312,7 @@ em.date:before {
 	.posts .date {
 		position: absolute;
 		left: .615384615em; /* 8px */
+		top: auto;
 	}
 }
 
