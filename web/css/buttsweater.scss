@@ -225,6 +225,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 		padding-left: 0;
 		padding-right: 0;
 	}
+}
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 30em) {
 	.links-sub {
 		display: block;
 		padding: 0 0 0 .6em;
@@ -236,11 +238,6 @@ td.emulate { background-color: #40A662; color: #fff; }
 	}
 	.links-sub > li a {
 		margin-top: 0;
-	}
-}
-@media (min-width: $twoColLayoutMinWidth) and (max-height: 30em) {
-	.links-sub {
-		display: none;
 	}
 }
 
