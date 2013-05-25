@@ -251,6 +251,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 .posts li {
 	position: relative;
 	border-top: 1px solid #eee;
+}
+.posts-count li {
 	counter-increment:start-from -1;
 }
 .posts li:first-child {
@@ -264,7 +266,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 	text-decoration: none;
 }
 .posts .date,
-.posts li:after {
+.posts-count li:after {
 	@include monospaceFont;
 	font-weight: normal;
 }
@@ -297,7 +299,7 @@ em.date:before {
 	.posts a {
 		padding: .5em 2em .5em 4em;
 	}
-	.posts li:after {
+	.posts-count li:after {
 		pointer-events: none;
 		position: absolute;
 		right: .8em; /* 8px */

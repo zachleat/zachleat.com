@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article>
-	<ol id="main-posts-list" class="posts" style="counter-reset:start-from {{ site.posts | size | plus: 1 }}">
+	<ol id="main-posts-list" class="posts posts-count" style="counter-reset:start-from {{ site.posts | size | plus: 1 }}">
 		{% for post in site.posts %}
 			<li class="{% if post.tags contains 'deprecated' %}deprecated{% endif %}{% if post.tags contains 'highlight' %} highlight{% endif %}"{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}><a href="{{ site.baseurl }}{{ post.url }}"><span class="date">{{ post.date | date: "%h %Y" }}</span> {{ post.title }}</a></li>
 		{% endfor %}
