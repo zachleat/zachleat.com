@@ -288,10 +288,11 @@ td.emulate { background-color: #40A662; color: #fff; }
 .posts .deprecated :visited {
 	color: #ddd;
 }
-em.date {
-	display: block;
+.sub em {
+	margin-right: 1em;
+	color: #888;
 }
-em.date:before {
+.sub em:before {
 	content: '—';
 }
 
