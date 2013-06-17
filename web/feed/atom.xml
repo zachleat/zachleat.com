@@ -21,7 +21,7 @@ layout: nil
 		<link href="http://www.zachleat.com/web{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>http://www.zachleat.com/web{{ post.id }}</id>
-		<content type="html">{{ post.content | xml_escape }}</content>
+		<content type="html">{{ post.content | relative_urls_to_absolute | xml_escape }}</content>
 	</entry>
 	{% endunless %}
 	{% endfor %}
