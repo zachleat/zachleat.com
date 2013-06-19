@@ -53,7 +53,7 @@ html {
 		padding: 2em 0;
 		margin-left: 17em;
 		position: relative;
-		min-height: 30em;
+		min-height: 32em;
 	}
 }
 @media (min-width: $twoColLayoutMinWidth) and (min-height: 25em) {
@@ -226,7 +226,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 		padding-right: 0;
 	}
 }
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 30em) {
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 32em) {
 	.links-sub {
 		display: block;
 		padding: 0 0 0 .6em;
@@ -291,12 +291,17 @@ td.emulate { background-color: #40A662; color: #fff; }
 .sub em {
 	margin-right: 1em;
 	color: #888;
+	display: block;
 }
 .sub em:before {
 	content: '—';
 }
 
 @media (min-width: 30em) {
+	.sub em {
+		display: inline;
+	}
+
 	.posts a {
 		padding: .5em 2em .5em 4em;
 	}
