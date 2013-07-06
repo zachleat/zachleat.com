@@ -16,7 +16,8 @@ module.exports = function(grunt) {
 			root: 'web/', // from domain root, do not include the first slash, do include a trailing slash
 			jsSrc: '<%= config.root %>js/',
 			cssSrc: '<%= config.root %>css/',
-			distFolder: '<%= config.root %>dist/<%= pkg.version %>/'
+			distFolder: '<%= config.root %>dist/<%= pkg.version %>/',
+			distFeed: '<%- config.root %>_site/feed/atom.xml'
 		},
 		yaml: {
 			file: '<%= config.root %>_config.yml',
@@ -44,6 +45,7 @@ module.exports = function(grunt) {
 				src: ['<%= config.jsSrc %>initial.js'],
 				dest: '<%= config.distFolder %>initial.js'
 			}
+			// CSS concat handled by SASS
 		},
 		uglify: {
 			options: {
@@ -105,7 +107,7 @@ module.exports = function(grunt) {
 				options: {
 					stdout: true,
 					execOptions: {
-						cwd: 'web'
+						cwd: '<%= config.root %>'
 					}
 				}
 			},
@@ -154,7 +156,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask( 'feedburner-size', function() {
-		var feed = grunt.config.get( 'config.root' ) + '_site/feed/atom.xml',
+		var feed = grunt.config.get( 'config.distFeed' ),
 			fs = require('fs');
 
 		var stats = fs.statSync( feed ),
