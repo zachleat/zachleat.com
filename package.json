@@ -16,7 +16,8 @@
     "install": "~0.1.7",
     "npm": "~1.2.18",
     "grunt-shell": "~0.2.2",
-    "grunt-contrib-cssmin": "~0.6.0"
+    "grunt-contrib-cssmin": "~0.6.0",
+    "matchdep": "~0.1.2"
   },
   "scripts": {},
   "repository": {

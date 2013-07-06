@@ -1,6 +1,8 @@
 /*global module:false,require:false,console:false */
 module.exports = function(grunt) {
 
+	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
 	// Project configuration.
 	grunt.initConfig({
 		// Metadata.
@@ -128,14 +130,6 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-
-	grunt.loadNpmTasks( 'grunt-contrib-concat' );
-	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
-	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
-	grunt.loadNpmTasks( 'grunt-contrib-watch' );
-	grunt.loadNpmTasks( 'grunt-contrib-sass' );
-	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
-	grunt.loadNpmTasks( 'grunt-shell' );
 
 	grunt.registerTask( 'yaml', function() {
 		var output = grunt.config( 'yaml.file' ),
