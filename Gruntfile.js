@@ -12,21 +12,26 @@ module.exports = function(grunt) {
 			'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
 			'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>;' +
 			' <%= pkg.license %> License */\n',
-		distFolder: 'web/dist/<%= pkg.version %>/',
+		config: {
+			root: 'web/', // from domain root, do not include the first slash, do include a trailing slash
+			jsSrc: '<%= config.root %>js/',
+			cssSrc: '<%= config.root %>css/',
+			distFolder: '<%= config.root %>dist/<%= pkg.version %>/'
+		},
 		yaml: {
-			file: 'web/_config.yml',
+			file: '<%= config.root %>_config.yml',
 			vars: {
 				url: 'http://localhost:4000',
 				name: 'Web 3.0, 6 Bladed Razors, 7 Minute Abs',
 				description: 'A web development blog written by @zachleat.',
 				safe: false,
 				auto: true,
-				baseurl: '/web',
+				baseurl: '<%= config.root %>',
 				markdown: 'rdiscount',
 				// https://github.com/mojombo/jekyll/wiki/Permalinks
-				permalink: '/web/:title/',
+				permalink: '<%= config.root %>/:title/',
 				pygments: true,
-				distFolder: '/<%= distFolder %>'
+				distFolder: '/<%= config.distFolder %>'
 			}
 		},
 		// Task configuration.
@@ -36,8 +41,8 @@ module.exports = function(grunt) {
 				stripBanners: true
 			},
 			js: {
-				src: ['web/js/initial.js'],
-				dest: '<%= distFolder %>initial.js'
+				src: ['<%= config.jsSrc %>initial.js'],
+				dest: '<%= config.distFolder %>initial.js'
 			}
 		},
 		uglify: {
@@ -46,7 +51,7 @@ module.exports = function(grunt) {
 			},
 			js: {
 				src: '<%= concat.js.dest %>',
-				dest: '<%= distFolder %>initial.min.js'
+				dest: '<%= config.distFolder %>initial.min.js'
 			}
 		},
 		jshint: {
@@ -78,8 +83,8 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {
-					'<%= distFolder %>global.css': ['web/css/buttsweater.scss', 'web/css/socialmenu.scss', 'web/css/thirdparty.scss', 'web/css/pygments.css'],
-					'<%= distFolder %>icons.css': 'web/css/foundicons.scss'
+					'<%= config.distFolder %>global.css': ['<%= config.cssSrc %>buttsweater.scss', '<%= config.cssSrc %>socialmenu.scss', '<%= config.cssSrc %>thirdparty.scss', '<%= config.cssSrc %>pygments.css'],
+					'<%= config.distFolder %>icons.css': '<%= config.cssSrc %>foundicons.scss'
 				}
 			}
 		},
@@ -89,8 +94,8 @@ module.exports = function(grunt) {
 					banner: '<%= banner %>'
 				},
 				files: {
-					'<%= distFolder %>global.min.css': ['<%= distFolder %>global.css'],
-					'<%= distFolder %>icons.min.css': ['<%= distFolder %>icons.css']
+					'<%= config.distFolder %>global.min.css': ['<%= config.distFolder %>global.css'],
+					'<%= config.distFolder %>icons.min.css': ['<%= config.distFolder %>icons.css']
 				}
 			}
 		},
@@ -110,18 +115,18 @@ module.exports = function(grunt) {
 				options: {
 					stdout: true,
 					execOptions: {
-						cwd: 'web/css'
+						cwd: '<%= config.cssSrc %>'
 					}
 				}
 			}
 		},
 		watch: {
 			assets: {
-				files: ['web/css/**/*', 'web/js/**/*'],
+				files: ['<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
 				tasks: ['default']
 			},
 			content: {
-				files: ['web/_posts/**/*', 'web/_layouts/**/*', 'web/speaking/**/*', 'web/projects/**/*', 'web/about/**/*', 'web/license/**/*', 'web/feed/**/*', 'web/index.html', 'web/_plugins/**/*', 'web/_includes/**/*' ],
+				files: ['<%= config.root %>_posts/**/*', '<%= config.root %>_layouts/**/*', '<%= config.root %>speaking/**/*', '<%= config.root %>projects/**/*', '<%= config.root %>about/**/*', '<%= config.root %>license/**/*', '<%= config.root %>feed/**/*', '<%= config.root %>index.html', '<%= config.root %>_plugins/**/*', '<%= config.root %>_includes/**/*' ],
 				tasks: ['content']
 			},
 			config: {
@@ -149,14 +154,18 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask( 'feedburner-size', function() {
-		var feed = 'web/_site/feed/atom.xml',
+		var feed = grunt.config.get( 'config.root' ) + '_site/feed/atom.xml',
 			fs = require('fs');
 
 		var stats = fs.statSync( feed ),
-			kbSize = Math.ceil( stats.size / 1024 );
+			kbSize = Math.ceil( stats.size / 1024 ),
+			isTooLarge = kbSize > 512,
+			msg = 'Your atom.xml is ' + ( isTooLarge ? 'too large' : 'ok' ) + ' (' + kbSize + 'KB) for Feedburner (512KB max).';
 
-		if( kbSize > 512 ) {
-			grunt.warn( 'Your atom.xml is too large (' + kbSize + 'KB) for Feedburner (512KB max).' );
+		if( isTooLarge ) {
+			grunt.fail.warn( msg );
+		} else {
+			grunt.log.writeln( msg );
 		}
 	});
 
