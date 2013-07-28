@@ -17,39 +17,17 @@
 .social a {
 	text-decoration: none;
 	display: inline-block;
-	padding: 0 .25em;
+	margin-left: .4em;
+	text-indent: -9999px;
+	width: 32px;
+	height: 32px;
+}
+.social a:first-child {
+	margin-left: 0;
 }
 .social a:link,
 .social a:visited {
 	color: #ccc;
-}
-.nebraskajs {
-	font-size: .5em;
-	text-transform: uppercase;
-	text-align: right;
-	width: 28px;
-	height: 25px;
-	font-family: Arial;
-	font-weight: bold;
-	line-height: 80%;
-	background-color: #ccc;
-	border-radius: .2em;
-	position: relative;
-	top: -2px;
-}
-.social .nebraskajs,
-.social .nebraskajs:link,
-.social .nebraskajs:visited {
-	color: #fff;
-	padding: .4em 0 0 .2em;
-	margin-left: .4em;
-}
-.nebraskajs:link:hover,
-.nebraskajs:link:focus,
-.nebraskajs:visited:hover,
-.nebraskajs:visited:focus {
-	background-color: #f5da1c;
-	color: #000;
 }
 .github:link:hover,
 .github:link:focus,
@@ -86,4 +64,32 @@
 .linkedin:visited:hover,
 .linkedin:visited:focus {
 	color: #1374af;
+}
+
+.nebraskajs {
+	font-size: .6em;
+	text-transform: uppercase;
+	text-align: right;
+	font-family: Arial;
+	font-weight: bold;
+	line-height: 80%;
+	background-color: #ccc;
+	border-radius: .2em;
+	position: relative;
+	top: 7px;
+}
+.social .nebraskajs,
+.social .nebraskajs:link,
+.social .nebraskajs:visited {
+	color: #fff;
+	padding: .3em .1em 0 0;
+	margin-left: .6em;
+	text-indent: 0;
+}
+.nebraskajs:link:hover,
+.nebraskajs:link:focus,
+.nebraskajs:visited:hover,
+.nebraskajs:visited:focus {
+	background-color: #f5da1c;
+	color: #000;
 }

@@ -16,6 +16,8 @@ module.exports = function(grunt) {
 			root: 'web/', // from domain root, do not include the first slash, do include a trailing slash
 			jsSrc: '<%= config.root %>js/',
 			cssSrc: '<%= config.root %>css/',
+			imgSrc: '<%= config.root %>img/',
+			iconsSrc: '<%= config.imgSrc %>icons/',
 			distFolder: '<%= config.root %>dist/<%= pkg.version %>/',
 			distFeed: '<%- config.root %>_site/feed/atom.xml'
 		},
@@ -85,8 +87,7 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {
-					'<%= config.distFolder %>global.css': ['<%= config.cssSrc %>buttsweater.scss', '<%= config.cssSrc %>socialmenu.scss', '<%= config.cssSrc %>thirdparty.scss', '<%= config.cssSrc %>pygments.css'],
-					'<%= config.distFolder %>icons.css': '<%= config.cssSrc %>foundicons.scss'
+					'<%= config.distFolder %>global.css': ['<%= config.cssSrc %>buttsweater.scss', '<%= config.cssSrc %>socialmenu.scss', '<%= config.cssSrc %>thirdparty.scss', '<%= config.cssSrc %>pygments.css']
 				}
 			}
 		},
@@ -98,6 +99,19 @@ module.exports = function(grunt) {
 				files: {
 					'<%= config.distFolder %>global.min.css': ['<%= config.distFolder %>global.css'],
 					'<%= config.distFolder %>icons.min.css': ['<%= config.distFolder %>icons.css']
+				}
+			}
+		},
+		grunticon: {
+			icons: {
+				options: {
+					src: '<%= config.iconsSrc %>',
+					dest: "<%= config.distFolder %>icons/",
+					customselectors: {
+						"twitter-active": ".icon-twitter:hover,.icon-twitter:focus",
+						"github-active": ".icon-github:hover,.icon-github:focus",
+						"feed-active": ".icon-feed:hover,.icon-feed:focus"
+					}
 				}
 			}
 		},
@@ -126,6 +140,10 @@ module.exports = function(grunt) {
 			assets: {
 				files: ['<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
 				tasks: ['default']
+			},
+			grunticon: {
+				files: ['<%= config.iconsSrc %>**/*'],
+				tasks: ['grunticon']
 			},
 			content: {
 				files: ['<%= config.root %>_posts/**/*', '<%= config.root %>_layouts/**/*', '<%= config.root %>speaking/**/*', '<%= config.root %>projects/**/*', '<%= config.root %>about/**/*', '<%= config.root %>license/**/*', '<%= config.root %>feed/**/*', '<%= config.root %>index.html', '<%= config.root %>_plugins/**/*', '<%= config.root %>_includes/**/*' ],
@@ -173,8 +191,9 @@ module.exports = function(grunt) {
 
 	// Default task.
 	grunt.registerTask('assets', ['sass', 'jshint', 'concat:js', 'uglify', 'cssmin']);
+	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
 	grunt.registerTask('content', ['shell:jekyll', 'feedburner-size']);
-	grunt.registerTask('default', ['config', 'assets', 'content']);
+	grunt.registerTask('default', ['config', 'assets', 'images', 'content']);
 
 };
