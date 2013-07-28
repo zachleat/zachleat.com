@@ -14,6 +14,7 @@ module.exports = function(grunt) {
 			' <%= pkg.license %> License */\n',
 		config: {
 			root: 'web/', // from domain root, do not include the first slash, do include a trailing slash
+			// See also: yaml.vars.baseurl
 			jsSrc: '<%= config.root %>js/',
 			cssSrc: '<%= config.root %>css/',
 			imgSrc: '<%= config.root %>img/',
@@ -24,12 +25,11 @@ module.exports = function(grunt) {
 		yaml: {
 			file: '<%= config.root %>_config.yml',
 			vars: {
-				url: 'http://localhost:4000',
 				name: 'Web 3.0, 6 Bladed Razors, 7 Minute Abs',
 				description: 'A web development blog written by @zachleat.',
 				safe: false,
 				auto: true,
-				baseurl: '<%= config.root %>',
+				baseurl: '/web',
 				markdown: 'rdiscount',
 				// https://github.com/mojombo/jekyll/wiki/Permalinks
 				permalink: '<%= config.root %>/:title/',
