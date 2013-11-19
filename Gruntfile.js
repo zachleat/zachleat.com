@@ -134,6 +134,15 @@ module.exports = function(grunt) {
 						cwd: '<%= config.cssSrc %>'
 					}
 				}
+			},
+			upload: {
+				command: 'echo "Note: Requires an \'zachleat\' host in .ssh/config"; rsync -avz ssh ./_site/ zachleat:/home/public/<%= config.root %>',
+				options: {
+					stdout: true,
+					execOptions: {
+						cwd: '<%= config.root %>'
+					}
+				}
 			}
 		},
 		watch: {
@@ -196,4 +205,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('content', ['shell:jekyll', 'feedburner-size']);
 	grunt.registerTask('default', ['config', 'assets', 'images', 'content']);
 
+	// Upload to Production
+	grunt.registerTask('deploy', ['default', 'shell:upload']);
 };
