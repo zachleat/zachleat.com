@@ -18,7 +18,7 @@ tags:
 *   Case 2: **Default namespaced node**: a node without a prefix, but a parent node (or itself) has a xmlns attribute, like both root and child here:  
     `<root xmlns="http://example.com/"><child/></root>`
 *   Case 3: **Namespaced node**: a node with a prefix, and a parent node (or itself) declaring a xmlns with that prefix attached, like both child and root here:  
-    `<prefix:root prefix:xmlns="http://example.com/"><prefix:child/></root>`
+    `<prefix:root xmlns:prefix="http://example.com/"><prefix:child/></root>`
 
 ### /End Primer
 

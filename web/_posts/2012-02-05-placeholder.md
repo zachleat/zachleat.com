@@ -47,7 +47,7 @@ As a side note, it should be said that both Opera and iOS both have comprehensiv
 [HTML5 Please][21] recommends that we use the new and shiny responsibly and gives the go-ahead to use the placeholder polyfill on our pages. I humbly disagree. This seems to be the same trap we fell into for rounded corners and box shadows. We put extra effort into trying to get our sites to render and behave identically cross-browser, when we should have just let them render in old browsers without rounded corners or box-shadows at all. To test whether or not a polyfill is necessary, I created a super complex decision workflow called **The Polyfill Test**. It consists of 2 steps:
 
 1.  Look at your own browser statistics. If the feature is at >50%, continue to Step 2.
-2.  Determine if the user be able to complete their task without the feature. If the task is still completable without significant impairment, the polyfill isn’t necessary.
+2.  Determine if the user will be able to complete their task without the feature. If the task is still completable without significant impairment, the polyfill isn’t necessary.
 
 Globally, placeholder support is sitting at 60% and growing. This particular feature has passed the tipping point. If your audience isn’t a representative sample of the global web browser statistics (big enterprise intranets with 97% Internet Explorer), your mileage may vary.
 
