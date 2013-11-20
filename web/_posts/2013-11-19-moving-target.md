@@ -7,7 +7,7 @@ categories:
 tags:
 ---
 
-**Update: I rewrote this post after determining my feature test was unnecessarily complex. Check out the post diff.**
+**Update: I rewrote this post after determining my feature test was unnecessarily complex. Check out the [post diff](https://github.com/zachleat/zachleat.com/commit/54b7cc7f4e26bacc849696dfa58fadec5dad5709).**
 
 *If you’re not familiar with `:target`, check out [this very simple example](http://www.zachleat.com/test/css-target-feature-test/control.html) before reading this post.*
 
