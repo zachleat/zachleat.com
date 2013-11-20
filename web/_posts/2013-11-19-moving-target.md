@@ -22,7 +22,7 @@ $("a[href^=#]").on("click", function(e) {
   e.preventDefault();
   history.pushState({}, "", this.href);
 });
-{% highlight %}
+{% endhighlight %}
 
 There are two issues with this method of Fighting the Jump:
 
