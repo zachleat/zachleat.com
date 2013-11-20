@@ -56,13 +56,31 @@ Requirements for a good `:target` feature test:
 * Must be able to execute prior to DOMContentLoaded.
 * Must be unobtrusive and **not** add a history entry.
 
-## [Demo and Source Code](http://www.zachleat.com/test/css-target-feature-test/querySelector.html)
-
-A previous version of this blog post included [a feature test](http://www.zachleat.com/test/css-target-feature-test/insertNode.html) that attempted to set the hash and measure the updated CSS rules to see if `:target` applied. This turned out to be woefully overcomplicated. We can exploit the fact that `querySelector` will throw an error if you feed it an unsupported selector (`:target`, for example). This means we don’t have to modify the hash at all, which is much safer. (Credit to [@wilto](https://twitter.com/wilto) for showing me this method.)
+A previous version of this blog post included a feature test that attempted to set the hash and measure the updated CSS rules to see if `:target` applied. This turned out to be woefully overcomplicated. We can exploit the fact that `querySelector` will throw an error if you feed it an unsupported selector (`:target`, for example). This means we don’t have to modify the hash at all, which is much safer. (Credit to [@wilto](https://twitter.com/wilto) for showing me this method.)
 
 * [Code is also available on GitHub](https://github.com/zachleat/Compatibility-Tests/tree/master/css-target-feature-test) (both the new `querySelector` method and the old `insertNode` method)
 
-### The old `location.replace` Method
+### Demos
+
+#### [The new `document.querySelectorAll(':target')` Method](http://www.zachleat.com/test/css-target-feature-test/insertNode.html)
+
+* Chrome 31: Passes
+* Firefox 25: Passes
+* IE7, IE8: Fails Correctly (Not supported)
+* IE9, IE10: Passes
+* Safari 7: Passes
+* Android 2.3: Passes
+* Windows Phone 7.5: Passes
+* BB6.1, BB7: Passes
+* **BB5: Passes Correctly** and does not require an opt-out like the other method.
+* **Kindle 3.4: Passes** and does not add a history entry like the other method.
+* **Opera Mini: Would pass incorrectly (unlike the other method) but we use [window.operamini](http://dev.opera.com/articles/view/opera-mini-and-javascript/#detectingmini) to opt-out and return false.**
+* Opera 9.10: Fails Correctly (Not supported)
+* Opera 12: Passes
+
+#### [The old `location.replace` Method](http://www.zachleat.com/test/css-target-feature-test/querySelector.html)
+
+*(Included for posterity)*
 
 * Chrome 31: Passes
 * Firefox 3.6: Opts out of the test to use document.scripts. Otherwise, would pass.
@@ -79,22 +97,6 @@ A previous version of this blog post included [a feature test](http://www.zachle
 * BB5: Opt-ed out of the test using a [weak inference](https://gist.github.com/jdalton/812950). This test caused BB5 to go all infinite redirect, so the feature test hard-returns false for any non-WebKit Blackberry.
 * Kindle 3.4: Passes (But adds a history entry)
 * Opera Mini: Fails Correctly (Not supported)
-* Opera 9.10: Fails Correctly (Not supported)
-* Opera 12: Passes
-
-### The new `document.querySelectorAll(':target')` Method:
-
-* Chrome 31: Passes
-* Firefox 25: Passes
-* IE7, IE8: Fails Correctly (Not supported)
-* IE9, IE10: Passes
-* Safari 7: Passes
-* Android 2.3: Passes
-* Windows Phone 7.5: Passes
-* BB6.1, BB7: Passes
-* **BB5: Passes Correctly** and does not require an opt-out like the other method.
-* **Kindle 3.4: Passes** and does not add a history entry like the other method.
-* **Opera Mini: Would pass incorrectly (unlike the other method) but we use [window.operamini](http://dev.opera.com/articles/view/opera-mini-and-javascript/#detectingmini) to opt-out and return false.**
 * Opera 9.10: Fails Correctly (Not supported)
 * Opera 12: Passes
 
