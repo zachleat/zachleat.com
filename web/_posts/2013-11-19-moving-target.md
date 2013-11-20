@@ -58,7 +58,7 @@ Requirements for a good `:target` feature test:
 
 ## [Demo and Source Code](http://www.zachleat.com/test/css-target-feature-test/querySelector.html)
 
-A previous version of this blog post included a feature test that attempted to set the hash and measure the updated CSS rules to see if `:target` applied. This turned out to be woefully overcomplicated. We can exploit the fact that `querySelector` will throw an error if you feed it an unsupported selector (`:target`, for example). This means we don’t have to modify the hash at all, which is much safer. (Credit to [@wilto](https://twitter.com/wilto) for showing me this method.)
+A previous version of this blog post included [a feature test](http://www.zachleat.com/test/css-target-feature-test/insertNode.html) that attempted to set the hash and measure the updated CSS rules to see if `:target` applied. This turned out to be woefully overcomplicated. We can exploit the fact that `querySelector` will throw an error if you feed it an unsupported selector (`:target`, for example). This means we don’t have to modify the hash at all, which is much safer. (Credit to [@wilto](https://twitter.com/wilto) for showing me this method.)
 
 * [Code is also available on GitHub](https://github.com/zachleat/Compatibility-Tests/tree/master/css-target-feature-test) (both the new `querySelector` method and the old `insertNode` method)
 
