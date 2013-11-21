@@ -63,7 +63,7 @@ A previous version of this blog post included a feature test that attempted to s
 
 ### Demos
 
-#### [The new `document.querySelectorAll(':target')` Method](http://www.zachleat.com/test/css-target-feature-test/insertNode.html)
+#### [The new `document.querySelectorAll(':target')` Method](http://www.zachleat.com/test/css-target-feature-test/querySelector.html)
 
 * Chrome 31: Passes
 * Firefox 25: Passes
@@ -79,7 +79,7 @@ A previous version of this blog post included a feature test that attempted to s
 * Opera 9.10: Fails Correctly (Not supported)
 * Opera 12: Passes
 
-#### [The old `location.replace` Method](http://www.zachleat.com/test/css-target-feature-test/querySelector.html)
+#### [The old `location.replace` Method](http://www.zachleat.com/test/css-target-feature-test/insertNode.html)
 
 *(Included for posterity)*
 
