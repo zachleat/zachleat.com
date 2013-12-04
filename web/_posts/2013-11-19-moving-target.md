@@ -10,6 +10,8 @@ date: 2013-11-20 17:59:00
 
 **Update: I rewrote this post after determining my feature test was unnecessarily complex. Check out the [post diff](https://github.com/zachleat/zachleat.com/commit/54b7cc7f4e26bacc849696dfa58fadec5dad5709).**
 
+**Update #2: This has [made its way into Modernizr](https://github.com/Modernizr/Modernizr/pull/1107).**
+
 *If you’re not familiar with `:target`, check out [this very simple example](http://www.zachleat.com/test/css-target-feature-test/control.html) before reading this post.*
 
 `:target` is a CSS pseudo-class that is often overlooked. It’s a very useful tool in the performance toolkit for moving content hiding from JavaScript up the toolchain into CSS. *“Anything CSS can do, JavaScript can do worse”*.
@@ -75,7 +77,7 @@ A previous version of this blog post included a feature test that attempted to s
 * BB6.1, BB7: Passes
 * **BB5: Passes Correctly** and does not require an opt-out like the other method.
 * **Kindle 3.4: Passes** and does not add a history entry like the other method.
-* **Opera Mini: Would pass incorrectly (unlike the other method) but we use [window.operamini](http://dev.opera.com/articles/view/opera-mini-and-javascript/#detectingmini) to opt-out and return false.**
+* **Opera Mini: Passes correctly (unlike the other method) but [requires a server refresh to repaint the page](https://github.com/Modernizr/Modernizr/pull/1107).**
 * Opera 9.10: Fails Correctly (Not supported)
 * Opera 12: Passes
 
@@ -97,7 +99,7 @@ A previous version of this blog post included a feature test that attempted to s
 * BB6.1, BB7: Passes
 * BB5: Opt-ed out of the test using a [weak inference](https://gist.github.com/jdalton/812950). This test caused BB5 to go all infinite redirect, so the feature test hard-returns false for any non-WebKit Blackberry.
 * Kindle 3.4: Passes (But adds a history entry)
-* Opera Mini: Fails Correctly (Not supported)
+* Opera Mini: Fails Incorrectly (Is supported, but buggy)
 * Opera 9.10: Fails Correctly (Not supported)
 * Opera 12: Passes
 
