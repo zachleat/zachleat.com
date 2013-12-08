@@ -70,12 +70,6 @@ function isEnhancedExperience() {
 		distFolder + "icons/icons.data.png.css",
 		distFolder + "icons/icons.fallback.css" ] );
 
-	// I Live in Omaha Banner
-	var iliveinomaha = doc.createElement( 'div' );
-	iliveinomaha.className = 'iliveinomaha';
-	iliveinomaha.innerHTML = '<a href="http://iliveinomaha.com"><img src="/web/img/iliveinomaha.gif" alt="I live in Omaha."></a>';
-	doc.body.appendChild( iliveinomaha );
-
 	// Filter Posts Menu
 	var filter = doc.getElementById( 'post-filter' ),
 		filterForm = doc.getElementById( 'post-filter-form' ),
