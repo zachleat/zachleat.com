@@ -3,12 +3,6 @@ title: 'Wake up to YouTube on my Internet Alarm Clock'
 author: Zach Leatherman
 layout: post
 permalink: /wake-up-to-youtube-on-my-internet-alarm-clock/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299717799:0
 categories:
   - Interface Design
   - Projects
@@ -16,7 +10,7 @@ tags:
   - highlight
 ---
 
-***Update**: Try the new [ALARMd 2 Beta][1], with Google Calendar integration and offline Youtube caching.*
+**Update**: Try the new [ALARMd 2 Beta][1], with Google Calendar integration and offline Youtube caching.
 
  [1]: http://www.zachleat.com/web/2008/04/06/alarmd-2-beta-with-google-calendar-integration/
 

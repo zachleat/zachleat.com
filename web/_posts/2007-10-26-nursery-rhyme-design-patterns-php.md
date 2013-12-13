@@ -3,12 +3,6 @@ title: 'Nursery Rhyme Code Poem [PHP]'
 author: Zach Leatherman
 layout: post
 permalink: /nursery-rhyme-design-patterns-php/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719076:0
 categories:
   - Artistic
   - PHP

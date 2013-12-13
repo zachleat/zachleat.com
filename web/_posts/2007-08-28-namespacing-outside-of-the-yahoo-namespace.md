@@ -3,12 +3,6 @@ title: 'Namespacing outside of the YAHOO Namespace'
 author: Zach Leatherman
 layout: post
 permalink: /namespacing-outside-of-the-yahoo-namespace/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299084705:1
 categories:
   - JavaScript
 tags:
@@ -91,4 +85,4 @@ However, you can use it for jQuery functions, such as this:
 
 For more information, you can read [Global Domination](http://yuiblog.com/blog/2006/06/01/global-domination/), an article written by Douglas Crockford, or [Best Practices for Writing jQuery plugins](http://docs.jquery.com/Plugins/Authoring).
 
-***Updated**: fixed some weird source parsing errors introduced by the code formatting plugin.*
+**Updated**: fixed some weird source parsing errors introduced by the code formatting plugin.
