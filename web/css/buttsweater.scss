@@ -386,13 +386,38 @@ td.emulate { background-color: #40A662; color: #fff; }
 	border: 1px solid #ccc;
 	padding: .5em;
 }
+.action p:first-child {
+	margin-top: 0;
+}
+.action p {
+	margin: .5em 0 0 0;
+	text-align: center;
+}
 .action a {
 	white-space: nowrap;
 	text-decoration: none;
+	font-weight: 700;
 }
 .action a i {
-	vertical-align: middle;
+	vertical-align: text-bottom;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-left: .2em;
 }
+.action a.twitter,
+.action a.twitter:visited {
+	color: #00c9ff;
+}
+.action a.github,
+.action a.github:visited {
+	color: #000;
+}
+.action a.feed,
+.action a.feed:visited {
+	color: #ff9132;
+}
+
 .deprecation-warning {
 	margin-top: 1em;
 }

@@ -20,7 +20,8 @@ module.exports = function(grunt) {
 			imgSrc: '<%= config.root %>img/',
 			iconsSrc: '<%= config.imgSrc %>icons/',
 			distFolder: '<%= config.root %>dist/<%= pkg.version %>/',
-			distFeed: '<%- config.root %>_site/feed/atom.xml'
+			distFeed: '<%- config.root %>_site/feed/atom.xml',
+			bowerDir: 'bower_components/'
 		},
 		yaml: {
 			file: '<%= config.root %>_config.yml',
@@ -32,8 +33,9 @@ module.exports = function(grunt) {
 				baseurl: '/web',
 				markdown: 'rdiscount',
 				// https://github.com/mojombo/jekyll/wiki/Permalinks
-				permalink: '<%= config.root %>/:title/',
+				permalink: '/<%= config.root %>:title/',
 				pygments: true,
+				relative_permalinks: false,
 				distFolder: '/<%= config.distFolder %>'
 			}
 		},
@@ -87,7 +89,7 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {
-					'<%= config.distFolder %>global.css': ['<%= config.cssSrc %>buttsweater.scss', '<%= config.cssSrc %>socialmenu.scss', '<%= config.cssSrc %>thirdparty.scss', '<%= config.cssSrc %>iliveinomaha.css', '<%= config.cssSrc %>pygments.css']
+					'<%= config.distFolder %>global.css': ['<%= config.cssSrc %>buttsweater.scss', '<%= config.cssSrc %>socialmenu.scss', '<%= config.cssSrc %>thirdparty.scss', '<%= config.bowerDir %>iliveinomaha/iliveinomaha.css', '<%= config.cssSrc %>pygments.css']
 				}
 			}
 		},
@@ -108,16 +110,16 @@ module.exports = function(grunt) {
 					src: '<%= config.iconsSrc %>',
 					dest: "<%= config.distFolder %>icons/",
 					customselectors: {
-						"twitter-active": ".icon-twitter:hover,.icon-twitter:focus",
-						"github-active": ".icon-github:hover,.icon-github:focus",
-						"feed-active": ".icon-feed:hover,.icon-feed:focus"
+						"twitter-active": ".icon-twitter:hover,.icon-twitter:focus,.action a i.icon-twitter",
+						"github-active": ".icon-github:hover,.icon-github:focus,.action a i.icon-github",
+						"feed-active": ".icon-feed:hover,.icon-feed:focus,.action a i.icon-feed"
 					}
 				}
 			}
 		},
 		shell: {
 			jekyll: {
-				command: 'jekyll --no-auto',
+				command: 'jekyll build --config _config.yml',
 				options: {
 					stdout: true,
 					execOptions: {
@@ -175,11 +177,12 @@ module.exports = function(grunt) {
 			str.push( j + ': ' + vars[ j ] );
 		}
 
-		fs.writeFile( output, str.join( '\n' ), function(err) {
-			if(err) {
-				console.log(err);
-			}
-		}); 
+		var err = fs.writeFileSync( output, str.join( '\n' ) );
+		if(err) {
+			console.log(err);
+		} else {
+			console.log( output + ' write successful.');
+		}
 	});
 
 	grunt.registerTask( 'feedburner-size', function() {
