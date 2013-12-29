@@ -3,12 +3,6 @@ title: 'DOMDom, easy DOM Element Creation'
 author: Zach Leatherman
 layout: post
 permalink: /domdom-easy-dom-element-creation/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718330:0
 categories:
   - JavaScript
   - Projects
@@ -17,6 +11,7 @@ tags:
   - DOM
   - ExtJS
   - YUI
+  - project
 ---
 
 Generally when approaching a complex problem involving web programming in JavaScript, the first question I ask myself is ‘What would Jesus do?’ As much as I am entertained by a mental picture of Mr. Jesus himself sitting on his [Jesux Distro][1] appending children (and parents) into his DOM, I am instead distracted by an intense “passionate” hatred for Mel Gibson swelling in my chest. It’s actually quite distracting to the problem I am having, but I calm myself by punching my 4 foot tall inflatable Mad Max and wonder how much time I waste doing this. I figure it happens about twice an hour. (Digression)

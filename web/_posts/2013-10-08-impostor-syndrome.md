@@ -6,6 +6,8 @@ permalink: /impostor/
 categories:
   - Presentations
 tags:
+  - video
+videolength: 7 min
 ---
 
 Ever since I attended my first [Barcamp Omaha](http://barcampomaha.org/) unconference last year, I wanted to give a talk. For this year, I had planned on recycling [the talk I gave at Awesome Camp earlier this year](https://speakerdeck.com/zachleat/side-projects) but I was inspired to speak on a different topic.

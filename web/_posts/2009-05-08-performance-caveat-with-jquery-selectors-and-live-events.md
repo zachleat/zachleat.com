@@ -7,6 +7,8 @@ Version Specific Article:
   - jQuery 1.3.2
 categories:
   - JavaScript
+tags:
+  - research
 ---
 
 *Prerequisite: Knowledge/Experience with [jQuery Live Events][1] (new in jQuery 1.3), and the concept of [Event Delegation][2].*

@@ -8,6 +8,7 @@ categories:
   - Web Browsers
 tags:
   - highlight
+  - research
 ---
 
 **Quick Summary**

@@ -3,10 +3,10 @@ title: 'ALARMd Unix Time Format for 1234567890 Day'
 author: Zach Leatherman
 layout: post
 permalink: /alarmd-unix-time-format-for-1234567890-day/
-bttc_cache:
-  - 1299718514:0
 categories:
   - Projects
+tags:
+  - project
 ---
 
 In honor of [1234567890 day][1], I’ve added the Unix time format to [ALARMd][2].

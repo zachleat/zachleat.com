@@ -5,6 +5,7 @@ layout: post
 permalink: /moving-target/
 categories:
 tags:
+  - research
 date: 2013-11-20 17:59:00
 ---
 

@@ -5,6 +5,7 @@ layout: post
 permalink: /domain-swap/
 categories:
 tags:
+  - project
 ---
 
 > When in the Course of ~~human~~ DOM events it becomes necessary for one ~~people~~ developer to dissolve the ~~political bands~~ DNS bindings which have connected them with another and to assume among the powers of the earth, the separate and equal station to which the Laws of ~~Nature~~ Moore and of ~~Nature's~~ Source Code’s God entitle them, a decent respect to the opinions of ~~man~~developerkind requires that they should declare the causes which impel them to the separation.

@@ -3,16 +3,11 @@ title: 'Dear IE6: Please Cache my Images.'
 author: Zach Leatherman
 layout: post
 permalink: /dear-ie6-please-cache-my-images/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299607041:6
 categories:
   - Other
 tags:
   - linkedin
+  - research
 ---
 
 A few months ago, I took on a new role at [Union Pacific Railroad](http://www.unionpacific.jobs/careers/explore/prof/index.shtml) as the lead architect for an internal project: a Union Pacific UI Library used in our IT department on all new web-based projects.  Based on [jQuery](http://jquery.com/), it is similar to a project like [jQuery UI](http://ui.jquery.com/), but it has a few more components and they’re branded to our color scheme and programmed to our usability requirements.

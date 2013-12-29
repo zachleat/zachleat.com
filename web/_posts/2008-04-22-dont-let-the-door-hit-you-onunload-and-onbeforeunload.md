@@ -11,6 +11,7 @@ categories:
   - Web Browsers
 tags:
   - highlight
+  - research
 ---
 
 Many people attempt a last ditch effort to save page state in the browser by using the onunload or onbeforeunload events. This has been studied at great length by [Patrick Hunlock][1], who uses the perhaps now common knowledge of using a Synchronous Ajax call to perform the page state save.

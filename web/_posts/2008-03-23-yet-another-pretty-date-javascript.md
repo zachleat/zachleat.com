@@ -3,17 +3,12 @@ title: 'Yet Another Pretty Date JavaScript'
 author: Zach Leatherman
 layout: post
 permalink: /yet-another-pretty-date-javascript/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299657488:2
 categories:
   - JavaScript
   - Projects
 tags:
   - highlight
+  - project
 ---
 
 I can’t let this Pretty Date thing go. I decided to use a modification of [John Resig’s Pretty Date JavaScript implementation][1] written by Dean Landolt and shared in the comments on John’s page. The script was an obvious choice for the next iteration of [Alarmd][2], which is nearing completion as I type.

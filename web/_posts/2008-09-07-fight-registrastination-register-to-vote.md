@@ -3,10 +3,6 @@ title: 'Fight Registrastination. Register to vote!'
 author: Zach Leatherman
 layout: post
 permalink: /fight-registrastination-register-to-vote/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
 bttc_cache:
   - 1299718919:0
 categories:
@@ -14,6 +10,7 @@ categories:
 tags:
   - geocode
   - location
+  - project
 ---
 
 *Apologies to international readers, this spam message is intended for citizens of the USA only. Thanks for understanding.*

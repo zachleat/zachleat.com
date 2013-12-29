@@ -7,6 +7,8 @@ categories:
   - Presentations
 tags:
   - highlight
+  - video
+videolength: 59 min
 ---
 
 This is a talk I gave at [Nebraska Code Camp 2013](http://www.nebraskacodecamp.com/Sessions/6).

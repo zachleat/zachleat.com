@@ -1,17 +1,15 @@
 ---
 title: 'Scare Your Visitors with this JavaScript Gravatar Plugin'
 author: Zach Leatherman
-excerpt: "Here's a use case.  An unregistered visitor visits your blog, and decides that your <strong>content is so good that it merits a comment</strong>!  Congratulations, you've fooled them!  But since they're leaving a comment, why not show them a preview of their gravatar?"
 layout: post
 permalink: /scare-your-visitors-with-this-javascript-gravatar-plugin/
-bttc_cache:
-  - 1299718312:0
 categories:
   - JavaScript
   - Projects
 tags:
   - Gravatar
   - jQuery
+  - project
 ---
 
 ## [See the Demo][1]

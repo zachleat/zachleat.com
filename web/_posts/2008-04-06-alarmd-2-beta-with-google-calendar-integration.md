@@ -3,18 +3,13 @@ title: 'ALARMd 2 Beta, with Google Calendar Integration'
 author: Zach Leatherman
 layout: post
 permalink: /alarmd-2-beta-with-google-calendar-integration/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718915:0
 categories:
   - Interface Design
   - JavaScript
   - Projects
 tags:
   - highlight
+  - project
 ---
 
 [Take a look: ALARMd 2 Beta][1]

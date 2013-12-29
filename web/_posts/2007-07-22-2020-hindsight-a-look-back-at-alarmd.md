@@ -3,16 +3,11 @@ title: '20/20 Hindsight, a Look Back at ALARMd'
 author: Zach Leatherman
 layout: post
 permalink: /2020-hindsight-a-look-back-at-alarmd/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719449:0
 categories:
   - Projects
 tags:
   - Alarmd
+  - project
 ---
 
 Now that the traffic has died down a little bit on ALARMd, I’d like to write a little bit about my experiences with something I don’t think anyone predicted would garner so much interest.

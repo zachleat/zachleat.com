@@ -7,6 +7,7 @@ categories:
   - JavaScript
 tags:
   - highlight
+  - project
 ---
 
 Earlier this week, [@TrentWalton][1] [tweeted][2]:

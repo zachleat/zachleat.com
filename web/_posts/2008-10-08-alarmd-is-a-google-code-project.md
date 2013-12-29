@@ -7,6 +7,7 @@ categories:
   - Projects
 tags:
   - Alarmd
+  - project
 ---
 
 **Update: [ALARMd has been moved to GitHub](/web/alarmd-is-now-on-github/).**

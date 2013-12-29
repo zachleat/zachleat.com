@@ -10,10 +10,7 @@ categories:
   - JavaScript
   - Projects
 tags:
-  - Firebug
-  - Firebug Lite
-  - log4javascript
-  - YUI Logger
+  - project
 ---
 
 ![][1]

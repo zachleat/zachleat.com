@@ -7,6 +7,8 @@ categories:
   - Contests
   - JavaScript
 tags:
+  - video
+videolength: 5 min
 ---
 
 ***Update 2**: [The JavaScript Testing Challenge Winner][1]*

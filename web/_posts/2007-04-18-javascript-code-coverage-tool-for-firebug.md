@@ -3,12 +3,6 @@ title: 'JavaScript Code Coverage Tool for Firebug'
 author: Zach Leatherman
 layout: post
 permalink: /javascript-code-coverage-tool-for-firebug/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718326:2
 categories:
   - JavaScript
   - Projects
@@ -19,6 +13,7 @@ tags:
   - Firefox
   - Selenium
   - deprecated
+  - project
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]

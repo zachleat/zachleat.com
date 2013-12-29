@@ -4,8 +4,10 @@ layout: default
 
 <article>
 	<ol class="posts">
-		{% for post in site.categories.Presentations %}
-			<li><a href="{{ site.baseurl }}{{ post.url }}"><span class="date">{{ post.date | date: "%h %Y" }}</span> {{ post.title }}</a></li>
+		{% for post in site.categories.presentations %}
+			<li><a href="{{ site.baseurl }}{{ post.url }}"><span class="date">{{ post.date | date: "%h %Y" }}</span> {{ post.title }}
+				{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.videolength %} <span class="length">{{ post.videolength }}</span>{% endif %}</span>{% endif %}
+			</a></li>
 		{% endfor %}
 	</ol>
 	<h2>Elsewhere</h2>

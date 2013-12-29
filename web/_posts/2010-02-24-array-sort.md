@@ -7,6 +7,7 @@ categories:
   - JavaScript
 tags:
   - highlight
+  - research
 ---
 
 What would you expect to be the result of executing the following code?

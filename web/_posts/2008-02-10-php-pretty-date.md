@@ -3,18 +3,13 @@ title: 'PHP Pretty Date'
 author: Zach Leatherman
 layout: post
 permalink: /php-pretty-date/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718307:0
 categories:
   - PHP
   - Projects
 tags:
   - Dates
   - Propel
+  - project
 ---
 
 This class is pretty much a direct port of [John Resig’s JavaScript Pretty Date][1] to PHP 5. A few notes:

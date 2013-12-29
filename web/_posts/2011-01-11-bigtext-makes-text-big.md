@@ -9,6 +9,7 @@ categories:
   - Typography
 tags:
   - highlight
+  - project
 ---
 
 *I like shortcuts: Fork [BigText on Github][github] or Check out the [BigText Demo Wizard][wizard]

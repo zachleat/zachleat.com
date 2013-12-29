@@ -496,3 +496,31 @@ td.emulate { background-color: #40A662; color: #fff; }
 	background-color: transparent;
 	@include undo-a11y-only(relative);
 }
+
+/* Tags */
+.tag {
+	font: 11px sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #999;
+	color: #fff;
+	padding: .2em .4em;
+	margin: 0 .5em;
+	vertical-align: middle;
+}
+.tag.video .length {
+	text-transform: none;
+}
+/* orangered, steelblue */
+.tag.video {
+	background: cadetblue;
+}
+.tag.project {
+	background: indianred;
+}
+.tag.research {
+	background: mediumpurple;
+}
+.tag.tweet {
+	background: #00c9ff;
+}
