@@ -250,13 +250,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 /* thanks to http://www.sitepoint.com/making-css-count-backwards/ */
 .posts li {
 	position: relative;
-	border-top: 1px solid #eee;
 }
 .posts-count li {
 	counter-increment:start-from -1;
-}
-.posts li:first-child {
-	border-top: none;
 }
 .posts a {
 	display: block;
@@ -277,9 +273,6 @@ td.emulate { background-color: #40A662; color: #fff; }
 	position: relative;
 	top: 3px;
 	padding-right: .5em;
-}
-.posts .highlight {
-	background-color: rgba(255, 255, 204, .3);
 }
 .posts .deprecated,
 .posts .deprecated .date,
@@ -493,14 +486,15 @@ td.emulate { background-color: #40A662; color: #fff; }
 	@include a11y-only;
 }
 .posts.highlighted .highlight {
-	background-color: transparent;
 	@include undo-a11y-only(relative);
+}
+.posts .highlight .date:after {
+	content: " ★";
 }
 
 /* Tags */
 .tag {
 	font: 11px sans-serif;
-	font-weight: 700;
 	text-transform: uppercase;
 	background: #999;
 	color: #fff;
