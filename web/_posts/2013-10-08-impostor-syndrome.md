@@ -7,6 +7,7 @@ categories:
   - Presentations
 tags:
   - video
+  - highlight
 videolength: 7 min
 ---
 

@@ -8,6 +8,7 @@ categories:
   - Web Browsers
 tags:
   - project
+  - deprecated
 ---
 
 The premise is simple. When attempting to find movies to watch in my local theater, I often stumble upon titles that I feel to be more rental quality than theater quality. So I wanted an easier way to add those movies to my Netflix queue. I created a Google Chrome extension to accomplish just that.

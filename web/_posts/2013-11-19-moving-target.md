@@ -6,6 +6,7 @@ permalink: /moving-target/
 categories:
 tags:
   - research
+  - highlight
 date: 2013-11-20 17:59:00
 ---
 
