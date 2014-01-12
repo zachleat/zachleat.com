@@ -150,11 +150,11 @@ module.exports = function(grunt) {
 		watch: {
 			assets: {
 				files: ['<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
-				tasks: ['default']
+				tasks: ['assets', 'content']
 			},
 			grunticon: {
 				files: ['<%= config.iconsSrc %>**/*'],
-				tasks: ['grunticon']
+				tasks: ['grunticon', 'content']
 			},
 			content: {
 				files: ['<%= config.root %>_posts/**/*', '<%= config.root %>_layouts/**/*', '<%= config.root %>speaking/**/*', '<%= config.root %>projects/**/*', '<%= config.root %>about/**/*', '<%= config.root %>license/**/*', '<%= config.root %>feed/**/*', '<%= config.root %>index.html', '<%= config.root %>_plugins/**/*', '<%= config.root %>_includes/**/*' ],
