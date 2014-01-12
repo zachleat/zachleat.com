@@ -90,7 +90,5 @@ A strange project creating a marquee.
 
 * * *
 
-## [Unmaintained Projects](/web/projects/unmaintained/)
-
 ## [Retired Projects](/web/projects/retired/)
 
