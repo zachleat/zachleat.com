@@ -261,6 +261,14 @@ td.emulate { background-color: #40A662; color: #fff; }
 	line-height: 110%;
 	text-decoration: none;
 }
+.posts .smalltitle a {
+	font-size: 1.210526316em; /* calc:23px/19px */
+}
+@media (min-width: 30em) {
+	.posts .smalltitle a {
+		font-size: 1.375em; /* 22px */
+	}
+}
 .posts .date,
 .posts-count li:after {
 	@include monospaceFont;
