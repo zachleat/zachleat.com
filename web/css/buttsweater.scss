@@ -256,7 +256,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 .posts a {
 	display: block;
-	padding: 0.5em .363636364em; /* 11px 8px */
+	padding: .636363636em .363636364em; /* 14px 8px */
 	font-size: 1.375em; /* 22px */
 	line-height: 110%;
 	text-decoration: none;
@@ -304,20 +304,21 @@ td.emulate { background-color: #40A662; color: #fff; }
 	}
 
 	.posts a {
-		padding: .5em 2em .5em 4em;
+		padding-left: .5em;
+		padding-right: 4em;
 	}
 	.posts-count li:after {
 		pointer-events: none;
 		position: absolute;
-		right: .8em; /* 8px */
-		bottom: 0;
+		right: .7em;
+		top: 0;
 		content: "#" counter(start-from) "";
 		color: #ccc;
 		font-size: .625em; /* 10px */
 	}
 	.posts .date {
 		position: absolute;
-		left: .615384615em; /* 8px */
+		right: 0;
 		top: 1.2em;
 	}
 }
@@ -499,6 +500,15 @@ td.emulate { background-color: #40A662; color: #fff; }
 .posts .highlight .date:after {
 	content: " ★";
 }
+@media (min-width: 30em) {
+	.posts .highlight .date:before {
+		content: "★ ";
+	}
+	.posts .highlight .date:after {
+		content: "";
+	}
+}
+
 
 /* Tags */
 .tag {
