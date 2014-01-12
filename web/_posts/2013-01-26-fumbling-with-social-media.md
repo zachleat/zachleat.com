@@ -47,7 +47,7 @@ Plaster your name on everything you do. Link to your Twitter account and RSS fee
 I’ve screwed the pooch on this quite often—most notably on [SocialCount][6] and BigText especially. I’ve had people say to me: “Oh—SocialCount? You built that?” Obviously not ideal. Personally, I felt that both of those plugins were higher quality than [parseIntimate][7] (Event #5), but parseIntimate had my twitter handle right on the front which bumped my followers more than SocialCount or BigText (prior to FitText).
 
  [6]: https://github.com/filamentgroup/SocialCount
- [7]: http://parseIntimate.com
+ [7]: http://zachleat.com/parseintimate/
 
 ## Align Career with Community
 

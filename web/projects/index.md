@@ -42,9 +42,9 @@ Local JavaScript User Group.
 A tool to find your noisiest Twitter friends.
 
 ## [parseIntimate][pi]
-[![](/web/wp-content/uploads/2009/12/Screen-Shot-2012-02-17-at-7.49.26-PM1.png "parseIntimate.com")][pi]
+[![](/web/wp-content/uploads/2009/12/Screen-Shot-2012-02-17-at-7.49.26-PM1.png "parseIntimate")][pi]
 
-[pi]: http://parseintimate.com
+[pi]: http://zachleat.com/parseintimate/
 
  A Valentine’s Day website to spend a little quality time with JavaScript and it’s quirky parseInt function. Don’t be afraid to get parseIntimate.
 
