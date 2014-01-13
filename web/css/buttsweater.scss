@@ -22,7 +22,7 @@ html {
 /* Layout */
 .rail {
 	text-align: center;
-	padding: 5em 1em 1em;
+	padding: 3em 1em 1em;
 }
 .content {
 	text-align: left;
@@ -44,14 +44,14 @@ html {
 	.rail {
 		text-align: left;
 		position: absolute;
-		left: 0;
+		right: 0;
 		top: 0;
 		width: 18em;
-		padding: 7em 0 0 3em;
+		padding: 7em 3em 0 0;
 	}
 	.content {
 		padding: 2em 0;
-		margin-left: 17em;
+		margin-right: 17em;
 		position: relative;
 		min-height: 32em;
 	}
@@ -387,6 +387,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 	background: #ffc;
 	border: 1px solid #ccc;
 	padding: .5em;
+}
+.twitter-follow + .action {
+	margin-top: 1em;
 }
 .action p:first-child {
 	margin-top: 0;

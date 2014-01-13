@@ -2,7 +2,7 @@ function isEnhancedExperience() {
 	return 'querySelectorAll' in document;
 }
 
-(function( doc ) {
+;(function( doc ) {
 	if( !isEnhancedExperience() ) {
 		return;
 	}
@@ -12,15 +12,6 @@ function isEnhancedExperience() {
 		distFolder = distMeta ? distMeta.content : '';
 
 	document.documentElement.className += withJs;
-
-	// TypeKit
-	(function() {
-		var config = {
-			kitId: 'lhh1seg',
-			scriptTimeout: 3000
-		};
-		var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-	})();
 
 	// grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license.
 	window.grunticon = function( css, foo ){
@@ -80,7 +71,7 @@ function isEnhancedExperience() {
 // Disqus Comments
 var disqus_shortname = 'web367';
 
-(function() {
+;(function() {
 	if( !isEnhancedExperience() ) {
 		return;
 	}
@@ -92,6 +83,28 @@ var disqus_shortname = 'web367';
 		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	}
+})();
+
+// TypeKit
+;(function() {
+	if( !isEnhancedExperience() ) {
+		return;
+	}
+
+	var config = {
+		kitId: 'lhh1seg',
+		scriptTimeout: 3000
+	};
+	var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s);
+})();
+
+// Twitter Follow Button
+;(function() {
+	if( !isEnhancedExperience() || !document.querySelectorAll( '.twitter-follow' ).length ) {
+		return;
+	}
+
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 })();
 
 // Google Analytics
