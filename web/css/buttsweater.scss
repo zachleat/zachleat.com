@@ -34,10 +34,16 @@ html {
 	font-size: 1.1875em;
 	line-height: 160%;
 }
-.maxwidth {
-	max-width: 31em;
+.maxwidth,
+.maxwidth-list {
 	padding: 0 .75em; /* 12px */
 	margin: 0 auto;
+}
+.maxwidth {
+	max-width: 31em;
+}
+.maxwidth-list {
+	max-width: 42em;
 }
 
 @media (min-width: $twoColLayoutMinWidth) {
@@ -47,7 +53,7 @@ html {
 		right: 0;
 		top: 0;
 		width: 18em;
-		padding: 7em 3em 0 0;
+		padding: 5em 3em 0 0;
 	}
 	.content {
 		padding: 2em 0;
@@ -56,7 +62,7 @@ html {
 		min-height: 32em;
 	}
 }
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 25em) {
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 27em) {
 	.rail {
 		position: fixed;
 	}
@@ -218,7 +224,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.links {
-		padding-top: 3em;
+		padding-top: 2em;
 	}
 	.links a {
 		display: block;
@@ -226,7 +232,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 		padding-right: 0;
 	}
 }
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 32em) {
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 34em) {
 	.links-sub {
 		display: block;
 		padding: 0 0 0 .6em;

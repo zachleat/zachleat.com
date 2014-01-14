@@ -79,5 +79,3 @@ Reluctant to put this one on here because I felt like it was a little too snarky
 * [AnchorsAway](https://gist.github.com/zachleat/6386606), a bookmarklet to find and display anchor links to content on pages.
 * Worked with [John Hobbs](https://twitter.com/jmhobbs) on [Domain Swap](https://chrome.google.com/webstore/detail/domain-swap/ngiiihlebepigjbefembddhdplmaghep/), a Chrome Extension to easily switch between domains and keep the URL path.
 * Worked with [Matt Steele](https://twitter.com/mattdsteele) to publish an [updated retina-friendly banner](https://github.com/zachleat/iliveinomaha-banner) for the [I Live in Omaha project](https://twitter.com/iliveinomaha).
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

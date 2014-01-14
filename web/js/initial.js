@@ -100,7 +100,7 @@ var disqus_shortname = 'web367';
 
 // Twitter Follow Button
 ;(function() {
-	if( !isEnhancedExperience() || !document.querySelectorAll( '.twitter-follow' ).length ) {
+	if( !isEnhancedExperience() ) {
 		return;
 	}
 

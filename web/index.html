@@ -2,25 +2,27 @@
 layout: default
 ---
 
-<article>
-	<ol id="main-posts-list" class="posts posts-count" style="counter-reset:start-from {{ site.posts | size | plus: 1 }}">
-		{% for post in site.posts %}
-			<li{% if post.tags contains 'deprecated' or post.tags contains 'highlight' or post.tags contains 'smalltitle' %} class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}"{% endif %}{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
-				<a href="{{ site.baseurl }}{{ post.url }}"><span class="date">{{ post.date | date: "%h %Y" }}</span> {{ post.title }}
-					{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.videolength %} <span class="length">{{ post.videolength }}</span>{% endif %}</span>{% endif %}
-					{% if post.tags contains 'project' %}<span class="tag project">Project</span>{% endif %}
-					{% if post.tags contains 'research' %}<span class="tag research">Research</span>{% endif %}
-				</a>
-			</li>
-		{% endfor %}
-	</ol>
-	<form class="post-filter" id="post-filter-form">
-		<label for="post-filter">Filter: </label>
-		<select id="post-filter">
-			<option value="all">Show all posts</option>
-			<option value="deprecated" selected>Show all but deprecated posts</option>
-			<option value="highlighted">Show only highlighted posts</option>
-		</select>
-	</form>
-</article>
-{% include footer.html %}
+<div class="maxwidth-list">
+	<article>
+		<ol id="main-posts-list" class="posts posts-count" style="counter-reset:start-from {{ site.posts | size | plus: 1 }}">
+			{% for post in site.posts %}
+				<li{% if post.tags contains 'deprecated' or post.tags contains 'highlight' or post.tags contains 'smalltitle' %} class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}"{% endif %}{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
+					<a href="{{ site.baseurl }}{{ post.url }}"><span class="date">{{ post.date | date: "%h %Y" }}</span> {{ post.title }}
+						{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.videolength %} <span class="length">{{ post.videolength }}</span>{% endif %}</span>{% endif %}
+						{% if post.tags contains 'project' %}<span class="tag project">Project</span>{% endif %}
+						{% if post.tags contains 'research' %}<span class="tag research">Research</span>{% endif %}
+					</a>
+				</li>
+			{% endfor %}
+		</ol>
+		<form class="post-filter" id="post-filter-form">
+			<label for="post-filter">Filter: </label>
+			<select id="post-filter">
+				<option value="all">Show all posts</option>
+				<option value="deprecated" selected>Show all but deprecated posts</option>
+				<option value="highlighted">Show only highlighted posts</option>
+			</select>
+		</form>
+	</article>
+	{% include footer.html %}
+</div><!-- /.maxwidth-list -->
