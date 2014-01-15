@@ -285,15 +285,19 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 .posts a {
 	display: block;
-	padding: .636363636em .363636364em; /* 14px 8px */
+	padding: .636363636em 0; /* 14px 8px */
 	font-size: 1.375em; /* 22px */
 	line-height: 110%;
 	text-decoration: none;
 }
 .posts .smalltitle a {
-	font-size: 1.210526316em; /* calc:23px/19px */
+	font-size: 1.157894737em; /* calc:23px/19px */
 }
 @media (min-width: 30em) {
+	.posts a {
+		padding-left: .363636364em; /* 8px */
+		padding-right: .363636364em; /* 8px */
+	}
 	.posts .smalltitle a {
 		font-size: 1.375em; /* 22px */
 	}
