@@ -91,7 +91,7 @@ body {
 }
 h1, h2, h3, h4, h5 {
 	font-weight: 700;
-	@include headerFont;
+	@include serifFont;
 	margin-top: 1.4em;
 	text-transform: uppercase;
 }
