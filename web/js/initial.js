@@ -8,10 +8,11 @@ function isEnhancedExperience() {
 	}
 
 	var withJs = ' with-js',
+		templateName = doc.querySelector( 'meta[name="template"]' ),
 		distMeta = doc.querySelector( 'meta[name="dist"]' ),
 		distFolder = distMeta ? distMeta.content : '';
 
-	document.documentElement.className += withJs;
+	document.documentElement.className += withJs + ( templateName ? " tmpl-" + templateName.content : "" );
 
 	// grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license.
 	window.grunticon = function( css, foo ){
@@ -99,25 +100,25 @@ var disqus_shortname = 'web367';
 })();
 
 // Twitter Follow Button
-;(function() {
-	if( !isEnhancedExperience() ) {
+;(function( doc ) {
+	// Don’t load the button on the home page.
+	if( !isEnhancedExperience() || !doc.querySelector( 'meta[name="template"][content="page"]' ) ) {
 		return;
 	}
 
 	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-})();
+})( document );
 
 // Google Analytics
-//
-// var _gaq = _gaq || [];
-// _gaq.push(['_setAccount', '']);
-// _gaq.push(['_trackPageview']);
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-588046-1']);
+_gaq.push(['_trackPageview']);
 
-// (function() {
-// 	var ga = document.createElement('script');
-// 	ga.type = 'text/javascript';
-// 	ga.async = true;
-// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-// 	var s = document.getElementsByTagName('script')[0];
-// 	s.parentNode.insertBefore(ga, s);
-// })();
+(function() {
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+})();

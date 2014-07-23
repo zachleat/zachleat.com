@@ -7,6 +7,9 @@
 		<meta name="author" content="Zach Leatherman">
 		<meta name="description" content="Zach Leatherman (zachleat) is a Front End Engineer.">
 		<meta name="dist" content="{{ site.distFolder }}">
+{% if page.title %}
+		<meta name="template" content="page">
+{% endif %}
 		<link href="/web/feed/" rel="alternate" title="Zach Leatherman’s Posts Feed" type="application/atom+xml">
 		<link href="{{ site.distFolder }}global.min.css" rel="stylesheet">
 	</head>

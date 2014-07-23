@@ -27,10 +27,14 @@
 
 /* Twitter Follow Button */
 .twitter-follow {
+	display: none;
+}
+/* Don’t show the button on the home page */
+.with-js.tmpl-page .twitter-follow {
 	display: block;
 	text-align: center;
 	margin-top: 1em;
 }
-.content .twitter-follow {
+.with-js.tmpl-page .content .twitter-follow {
 	margin-top: 4em;
 }
