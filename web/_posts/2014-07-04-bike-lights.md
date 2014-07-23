@@ -66,8 +66,16 @@ I took a daytime picture since the nighttime video above didn’t really show mu
 
 ## Extra Credit
 
+### Multicolor
+
 <img src="/web/img/posts/bike-lights/ledstripmulticolor.jpg">
 
 I put a [multicolor 12V LED Strip](http://www.amazon.com/dp/B00IN4Y7VS/) on my wife’s bike which came with a handy infrared remote for changing the color. To hook this up to the battery I simply cut the power supply cord, tossed the AC adapter wall plug and hooked the positive wire to the positive of the battery and the negative wire to the negative of the battery.
 
+### Caseless
+
 In a pinch, you don’t have to use a battery case. You can just tape the batteries tightly together using electrical tape (+ to -, + to -, etc) and then tape the positive wire from the LED strip to the positive end of your first battery and the negative wire from the LED strip to the negative end of the last battery. This configuration will save you about $3 but it’s far too brittle and has no built in on-off switch. Just buy a battery case.
+
+### Lower Voltage LED Strips
+
+There are a bunch of 5V LED strips available but all of the ones I could find had individually addressable lights for programming. To be honest, I just wanted something bright and cheap so I went the 12V route. You’re looking at about $2.2/m for “dumb” lights versus $30/m for “smart” lights.
