@@ -21,7 +21,8 @@
     "matchdep": "~0.1.2",
     "grunt-grunticon": "~0.5.1",
     "grunt-contrib-compress": "~0.10.0",
-    "grunt-contrib-htmlmin": "~0.3.0"
+    "grunt-contrib-htmlmin": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0"
   },
   "scripts": {},
   "repository": {

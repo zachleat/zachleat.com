@@ -104,6 +104,13 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		copy: {
+			includes: {
+				files: {
+					'<%= config.root %>_includes/global.min.css': ['<%= config.distFolder %>global.min.css']
+				}
+			}
+		},
 		grunticon: {
 			icons: {
 				options: {
@@ -254,7 +261,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('assets', ['sass', 'jshint', 'concat:js', 'uglify', 'cssmin']);
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
-	grunt.registerTask('content', ['shell:jekyll', 'htmlmin', 'compress', 'feedburner-size']);
+	grunt.registerTask('content', [ 'copy:includes', 'shell:jekyll', 'htmlmin', 'compress', 'feedburner-size']);
 	grunt.registerTask('default', ['config', 'assets', 'images', 'content']);
 
 	// Upload to Production
