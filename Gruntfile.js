@@ -117,6 +117,55 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		compress: {
+			main: {
+				options: {
+					mode: 'gzip'
+				},
+				files: [
+					{
+						expand: true,
+						cwd: '<%= config.root %>/_site/',
+						src: ['**/*.html'],
+						dest: '<%= config.root %>/_site/',
+						extDot: 'last',
+						ext: '.html.zgz'
+					},
+					{
+						expand: true,
+						cwd: '<%= config.root %>/_site/',
+						src: ['**/*.js'],
+						dest: '<%= config.root %>/_site/',
+						extDot: 'last',
+						ext: '.js.zgz'
+					},
+					{
+						expand: true,
+						cwd: '<%= config.root %>/_site/',
+						src: ['**/*.css'],
+						dest: '<%= config.root %>/_site/',
+						extDot: 'last',
+						ext: '.css.zgz'
+					}
+				]
+			}
+		},
+		htmlmin: {
+			main: {
+				options: {
+					removeComments: true,
+					collapseWhitespace: true
+				},
+				files: [
+					{
+						expand: true,
+						cwd: '<%= config.root %>/_site/',
+						src: '**/*.html',
+						dest: '<%= config.root %>/_site/'
+					}
+				]
+			}
+		},
 		shell: {
 			jekyll: {
 				command: 'jekyll build --config _config.yml',
@@ -205,7 +254,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('assets', ['sass', 'jshint', 'concat:js', 'uglify', 'cssmin']);
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
-	grunt.registerTask('content', ['shell:jekyll', 'feedburner-size']);
+	grunt.registerTask('content', ['shell:jekyll', 'htmlmin', 'compress', 'feedburner-size']);
 	grunt.registerTask('default', ['config', 'assets', 'images', 'content']);
 
 	// Upload to Production

@@ -1,6 +1,6 @@
 {
   "name": "zachleat.com",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "The website of @zachleat",
   "main": "index.js",
   "dependencies": {
@@ -15,10 +15,13 @@
     "grunt-contrib-sass": "~0.3.0",
     "install": "~0.1.7",
     "npm": "~1.2.18",
+    "grunt": "~0.4.5",
     "grunt-shell": "~0.2.2",
     "grunt-contrib-cssmin": "~0.6.0",
     "matchdep": "~0.1.2",
-    "grunt-grunticon": "~0.5.1"
+    "grunt-grunticon": "~0.5.1",
+    "grunt-contrib-compress": "~0.10.0",
+    "grunt-contrib-htmlmin": "~0.3.0"
   },
   "scripts": {},
   "repository": {

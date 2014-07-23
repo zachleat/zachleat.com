@@ -15,9 +15,12 @@ RedirectMatch 301 /web/\d{4}/\d{2}/\d{2}/(.*)$ /web/$1
 RedirectMatch 301 /web/\d{4}/(.*)$ /web/$1
 </IfModule>
 
-<IfModule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-</IfModule>
+# mod_deflate isn't included on the production host, so we have a workaround
+# in /web/.htaccess
+
+#<IfModule mod_deflate.c>
+#AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+#</IfModule>
 
 # Use UTF-8 encoding for anything served as `text/html` or `text/plain`.
 AddDefaultCharset utf-8
@@ -28,34 +31,37 @@ AddDefaultCharset utf-8
 AddCharset utf-8 .atom .css .js .json .rss .xml
 
 # Audio
-AddType audio/mp4 m4a f4a f4b
-AddType audio/ogg oga ogg
+AddType audio/mp4 .m4a .f4a .f4b
+AddType audio/ogg .oga .ogg
+
+AddType text/html .html .html.gz
+AddType text/css .css .css.gz
 
 # JavaScript
 # Normalize to standard type (it's sniffed in IE anyways):
 # http://tools.ietf.org/html/rfc4329#section-7.2
-AddType application/javascript js jsonp
-AddType application/json json
+AddType application/javascript .js .jsonp .js.gz
+AddType application/json .json
 
 # Video
-AddType video/mp4 mp4 m4v f4v f4p
-AddType video/ogg ogv
-AddType video/webm webm
+AddType video/mp4 .mp4 .m4v .f4v .f4p
+AddType video/ogg .ogv
+AddType video/webm .webm
 
 # Web fonts
-AddType application/font-woff woff
-AddType application/vnd.ms-fontobject eot
+AddType application/font-woff .woff
+AddType application/vnd.ms-fontobject .eot
 
 # Browsers usually ignore the font MIME types and sniff the content,
 # however, Chrome shows a warning if other MIME types are used for the
 # following fonts.
-AddType application/x-font-ttf ttc ttf
-AddType font/opentype otf
+AddType application/x-font-ttf .ttc .ttf
+AddType font/opentype .otf
 
 # Make SVGZ fonts work on iPad:
 # https://twitter.com/FontSquirrel/status/14855840545
-AddType image/svg+xml svg svgz
-AddEncoding gzip svgz
+AddType image/svg+xml .svg .svgz
+AddEncoding gzip .svgz
 
 </IfModule>
 
