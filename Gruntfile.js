@@ -132,27 +132,35 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: '<%= config.root %>/_site/',
+						cwd: '<%= config.root %>_site/',
 						src: ['**/*.html'],
-						dest: '<%= config.root %>/_site/',
+						dest: '<%= config.root %>_site/',
 						extDot: 'last',
 						ext: '.html.zgz'
 					},
 					{
 						expand: true,
-						cwd: '<%= config.root %>/_site/',
+						cwd: '<%= config.root %>_site/',
 						src: ['**/*.js'],
-						dest: '<%= config.root %>/_site/',
+						dest: '<%= config.root %>_site/',
 						extDot: 'last',
 						ext: '.js.zgz'
 					},
 					{
 						expand: true,
-						cwd: '<%= config.root %>/_site/',
+						cwd: '<%= config.root %>_site/',
 						src: ['**/*.css'],
-						dest: '<%= config.root %>/_site/',
+						dest: '<%= config.root %>_site/',
 						extDot: 'last',
 						ext: '.css.zgz'
+					},
+					{
+						expand: true,
+						cwd: '<%= config.root %>_site/',
+						src: ['**/*.svg'],
+						dest: '<%= config.root %>_site/',
+						extDot: 'last',
+						ext: '.svg.zgz'
 					}
 				]
 			}
@@ -166,9 +174,9 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: '<%= config.root %>/_site/',
+						cwd: '<%= config.root %>_site/',
 						src: '**/*.html',
-						dest: '<%= config.root %>/_site/'
+						dest: '<%= config.root %>_site/'
 					}
 				]
 			}
