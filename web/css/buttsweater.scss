@@ -265,6 +265,10 @@ td.emulate { background-color: #40A662; color: #fff; }
 		font-size: .857142857em; /* 12px */
 		letter-spacing: 1px;
 	}
+	.links-sub > li {
+		width: 49%;
+		float: left;
+	}
 	.links-sub > li a {
 		margin-top: 0;
 	}
