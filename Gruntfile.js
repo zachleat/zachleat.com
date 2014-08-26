@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {
-					'<%= config.distFolder %>global.css': ['<%= config.cssSrc %>buttsweater.scss', '<%= config.cssSrc %>socialmenu.scss', '<%= config.cssSrc %>thirdparty.scss', '<%= config.bowerDir %>iliveinomaha/iliveinomaha.css', '<%= config.cssSrc %>pygments.css']
+					'<%= config.distFolder %>global.css': ['<%= config.cssSrc %>buttsweater.scss', '<%= config.cssSrc %>socialmenu.scss', '<%= config.cssSrc %>thirdparty.scss', '<%= config.bowerDir %>iliveinomaha/iliveinomaha.css', '<%= config.cssSrc %>w3c-banners.css', '<%= config.cssSrc %>pygments.css']
 				}
 			}
 		},

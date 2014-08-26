@@ -12,7 +12,10 @@ function isEnhancedExperience() {
 		distMeta = doc.querySelector( 'meta[name="dist"]' ),
 		distFolder = distMeta ? distMeta.content : '';
 
-	document.documentElement.className += withJs + ( templateName ? " tmpl-" + templateName.content : "" );
+	/* Fake w3c banner */
+	var banner = ' w3c-b ' + [ 'ud', 'wd', 'cr', 'pr', 'r', 'wgn', 'ign', 'ed' ][ Math.floor( Math.random() * 8 ) ];
+
+	document.documentElement.className += withJs + ( templateName ? " tmpl-" + templateName.content : "" ) + banner;
 
 	// grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license.
 	window.grunticon = function( css, foo ){

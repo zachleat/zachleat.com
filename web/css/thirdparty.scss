@@ -38,3 +38,14 @@
 .with-js.tmpl-page .content .twitter-follow {
 	margin-top: 4em;
 }
+
+/* Fake W3C Banners */
+.w3c-b:before {
+	display: none;
+}
+@media ( min-width: 42em ) {
+	.with-js.w3c-b:before {
+		display: block;
+		z-index: 1;
+	}
+}
