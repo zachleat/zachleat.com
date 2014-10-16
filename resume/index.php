@@ -21,8 +21,6 @@ date_default_timezone_set('America/Chicago');
             </a>
           </h1>
           <ul>
-            <li><a class="email" href="mailto:resume@zachleat.com">resume@zachleat.com</a></li>
-            <li><span class="tel">+1 402 742 7871</span> using Voice or Text</li>
             <li><a class="url" href="http://twitter.com/zachleat/">@zachleat</a> on Twitter</li>
             <li><a class="url" href="http://github.com/zachleat/">zachleat</a> on GitHub</li>
             <li><a class="url" href="http://www.zachleat.com/" rel="me">http://www.zachleat.com/</a></li>
