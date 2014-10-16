@@ -25,7 +25,7 @@ If you’re curious how `fontfaceonload` works internally, [documentation is ava
 
 But there was another hurdle. There is no API through which you can retrieve a list of all the installed fonts, so I had to compile a list manually. If you have access to the shell on the host operating system, *nix machines provide a `fc-list` command to retrieve a list of installed fonts. Also, most operating systems actually publish a [list of installed fonts on the web in their support pages](https://github.com/zachleat/font-family-reunion/blob/master/artifacts/source-list.txt), so I compiled [one big giant list of font families](https://github.com/zachleat/font-family-reunion/blob/master/test/src/font-families.json) from a bunch of these sources.
 
-The test page then iterates through the list and tests over 1000 different font family names to see if the current browser supports them. I used [Browserstack](browserstack.com) for most of this, as well as one of the best perk’s of working at [Filament Group](http://filamentgroup.com/), my own device test lab. Running the test page on a bunch of devices and virtual machines gives us a nice list of results: the default installed fonts.
+The test page then iterates through the list and tests over 1000 different font family names to see if the current browser supports them. I used [Browserstack](browserstack.com) for most of this, as well as one of the best perks of working at [Filament Group](http://filamentgroup.com/), a home device test lab. Running the test page on a bunch of devices and virtual machines gives us a nice list of results: the default installed fonts.
 
 ## Default Keywords are Browser Madness
 
