@@ -29,12 +29,11 @@ module.exports = function(grunt) {
 				name: 'Web 3.0, 6 Bladed Razors, 7 Minute Abs',
 				description: 'A web development blog written by @zachleat.',
 				safe: false,
-				auto: true,
 				baseurl: '/web',
 				markdown: 'rdiscount',
 				// https://github.com/mojombo/jekyll/wiki/Permalinks
 				permalink: '/<%= config.root %>:title/',
-				pygments: true,
+				highlighter: 'pygments',
 				relative_permalinks: false,
 				distFolder: '/<%= config.distFolder %>'
 			}
@@ -189,7 +188,7 @@ module.exports = function(grunt) {
 		},
 		shell: {
 			jekyll: {
-				command: 'jekyll build --config _config.yml',
+				command: 'jekyll build --config _config.yml --trace',
 				options: {
 					stdout: true,
 					execOptions: {
