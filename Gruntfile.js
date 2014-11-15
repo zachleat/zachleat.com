@@ -86,10 +86,11 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'expanded'
+					style: 'expanded',
+					sourcemap: 'file'
 				},
 				files: {
-					'<%= config.distFolder %>global.css': ['<%= config.cssSrc %>buttsweater.scss', '<%= config.cssSrc %>socialmenu.scss', '<%= config.cssSrc %>thirdparty.scss', '<%= config.bowerDir %>iliveinomaha/iliveinomaha.css', '<%= config.cssSrc %>w3c-banners.css', '<%= config.cssSrc %>pygments.css']
+					'<%= config.distFolder %>global.css': '<%= config.cssSrc %>global.scss'
 				}
 			}
 		},
@@ -105,6 +106,11 @@ module.exports = function(grunt) {
 			}
 		},
 		copy: {
+			'css-to-sass': {
+				files: {
+					'<%= config.cssSrc %>iliveinomaha.scss': ['<%= config.bowerDir %>iliveinomaha/iliveinomaha.css']
+				}
+			},
 			includes: {
 				files: {
 					'<%= config.root %>_includes/global.min.css': ['<%= config.distFolder %>global.min.css']
@@ -213,7 +219,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			assets: {
-				files: ['<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
+				files: ['<%= config.bowerDir %>**/*', '<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
 				tasks: ['assets', 'content']
 			},
 			grunticon: {
@@ -266,7 +272,7 @@ module.exports = function(grunt) {
 	});
 
 	// Default task.
-	grunt.registerTask('assets', ['sass', 'jshint', 'concat:js', 'uglify', 'cssmin']);
+	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'jshint', 'concat:js', 'uglify', 'cssmin']);
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
 	grunt.registerTask('content', [ 'copy:includes', 'shell:jekyll', 'htmlmin', 'compress', 'feedburner-size']);
