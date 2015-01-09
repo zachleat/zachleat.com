@@ -61,7 +61,7 @@ html {
 		min-height: 32em;
 	}
 }
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 27em) {
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 30em) {
 	.rail {
 		position: fixed;
 	}
@@ -263,24 +263,6 @@ td.emulate { background-color: #40A662; color: #fff; }
 		display: block;
 		padding-left: 0;
 		padding-right: 0;
-	}
-}
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 38em) {
-	.links-sub {
-		display: block;
-		padding: 0 0 0 .6em;
-		margin: 0;
-		list-style: none;
-		overflow: hidden;
-		font-size: .857142857em; /* 12px */
-		letter-spacing: 1px;
-	}
-	.links-sub > li {
-		width: 49%;
-		float: left;
-	}
-	.links-sub > li a {
-		margin-top: 0;
 	}
 }
 

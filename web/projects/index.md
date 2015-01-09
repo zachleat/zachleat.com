@@ -6,12 +6,16 @@ layout: page
 
 View all project source code on [GitHub](https://github.com/zachleat/).
 
-## [SocialCount][socialcount]
-[![](socialcount.png "SocialCount")][socialcount]
+## Filament Group Open Source
+
+* [Tablesaw](https://github.com/filamentgroup/tablesaw)
+* [fixed-sticky](https://github.com/filamentgroup/fixed-sticky)
+* [WOFF2 Feature Test](https://github.com/filamentgroup/woff2-feature-test)
+* [A Font Garde](https://github.com/filamentgroup/a-font-garde)
+* [Politespace](https://github.com/filamentgroup/politespace)
+* [SocialCount][socialcount], a small jQuery plugin for progressively enhanced, lazy loaded, mobile friendly social networking widgets.
 
 [socialcount]: /web/socialcount/
-
-SocialCount is a small jQuery plugin for progressively enhanced, lazy loaded, mobile friendly social networking widgets.
 
 ## [BigText][bt]
 [![](/web/wp-content/uploads/2009/12/Screen-shot-2011-01-14-at-6.46.00-PM.png "BigText")][bt]
