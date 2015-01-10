@@ -7,10 +7,11 @@ layout: default
 		<ol id="main-posts-list" class="posts posts-count" style="counter-reset:start-from {{ site.posts | size | plus: 1 }}">
 			{% for post in site.posts %}
 				<li{% if post.tags contains 'deprecated' or post.tags contains 'highlight' or post.tags contains 'smalltitle' %} class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}"{% endif %}{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
-					<a href="{{ site.baseurl }}{{ post.url }}"><span class="date">{{ post.date | date: "%h %Y" }}</span> {{ post.title }}
+					<a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}
 						{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.videolength %} <span class="length">{{ post.videolength }}</span>{% endif %}</span>{% endif %}
 						{% if post.tags contains 'project' %}<span class="tag project">Project</span>{% endif %}
 						{% if post.tags contains 'research' %}<span class="tag research">Research</span>{% endif %}
+						<span class="date">{{ post.date | date: "%h %Y" }}</span>
 					</a>
 				</li>
 			{% endfor %}
