@@ -30,12 +30,12 @@
 	display: none;
 }
 /* Don’t show the button on the home page */
-.with-js.tmpl-page .twitter-follow {
+.enhanced-js.tmpl-page .twitter-follow {
 	display: block;
 	text-align: center;
 	margin-top: 1em;
 }
-.with-js.tmpl-page .content .twitter-follow {
+.enhanced-js.tmpl-page .content .twitter-follow {
 	margin-top: 4em;
 }
 
@@ -44,7 +44,7 @@
 	display: none;
 }
 @media ( min-width: 42em ) {
-	.with-js.tmpl-page.w3c-b:before {
+	.enhanced-js.tmpl-page.w3c-b:before {
 		display: block;
 		z-index: 1;
 	}

@@ -1,21 +1,60 @@
-function isEnhancedExperience() {
-	return 'querySelectorAll' in document;
-}
-
 ;(function( doc ) {
-	if( !isEnhancedExperience() ) {
+	// IE9+
+	if( !( 'geolocation' in navigator ) ) {
 		return;
 	}
 
-	var withJs = ' with-js',
-		templateName = doc.querySelector( 'meta[name="template"]' ),
-		distMeta = doc.querySelector( 'meta[name="dist"]' ),
-		distFolder = distMeta ? distMeta.content : '';
+	var templateName = doc.querySelector( 'meta[name="template"]' );
 
 	/* Fake w3c banner */
 	var banner = ' w3c-b ' + [ 'ud', 'wd', 'cr', 'pr', 'r', 'wgn', 'ign', 'ed' ][ Math.floor( Math.random() * 8 ) ];
 
-	document.documentElement.className += withJs + ( templateName ? " tmpl-" + templateName.content : "" ) + banner;
+	document.documentElement.className += ' enhanced-js' +
+		( templateName ? " tmpl-" + templateName.content : "" ) +
+		// gradient inference
+		( 'matchMedia' in window ? " has-gradient" : "" ) + 
+		banner;
+
+	// Filter Posts Menu
+	var filter = doc.getElementById( 'post-filter' ),
+		filterForm = doc.getElementById( 'post-filter-form' ),
+		posts = doc.getElementById( 'main-posts-list' ),
+		initialClassName = '';
+
+	function updateFilter() {
+		posts.className = initialClassName + ' ' + filter.options[ filter.selectedIndex ].value;
+	}
+
+	if( filter && posts && 'addEventListener' in doc ) {
+		initialClassName = posts.className;
+		updateFilter();
+		filter.addEventListener( 'change', updateFilter, false );
+	}
+})( document );
+
+// TypeKit
+;(function( doc ) {
+	// IE9+
+	if( !( 'geolocation' in navigator ) ) {
+		return;
+	}
+
+	var config = {
+		kitId: 'lhh1seg',
+		scriptTimeout: 3000
+	};
+	var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s);
+})( document );
+
+// Grunticon
+;(function( doc ) {
+	// IE8+
+	if( !( 'querySelector' in doc ) ) {
+		return;
+	}
+
+	var distMeta = doc.querySelector( 'meta[name="dist"]' ),
+		distFolder = distMeta ? distMeta.content : '';
 
 	// grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license.
 	window.grunticon = function( css, foo ){
@@ -47,36 +86,21 @@ function isEnhancedExperience() {
 				loadCSS( img.width === 1 && img.height === 1 );
 			};
 
-			img.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+		img.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 	};
 
 	grunticon( [ distFolder + "icons/icons.data.svg.css",
 		distFolder + "icons/icons.data.png.css",
 		distFolder + "icons/icons.fallback.css" ] );
 
-	// Filter Posts Menu
-	var filter = doc.getElementById( 'post-filter' ),
-		filterForm = doc.getElementById( 'post-filter-form' ),
-		posts = doc.getElementById( 'main-posts-list' ),
-		initialClassName = '';
-
-	function updateFilter() {
-		posts.className = initialClassName + ' ' + filter.options[ filter.selectedIndex ].value;
-	}
-
-	if( filter && posts && 'addEventListener' in doc ) {
-		filterForm.className += withJs;
-		initialClassName = posts.className;
-		updateFilter();
-		filter.addEventListener( 'change', updateFilter, false );
-	}
 })( document );
 
 // Disqus Comments
 var disqus_shortname = 'web367';
 
 ;(function() {
-	if( !isEnhancedExperience() ) {
+	// IE9+
+	if( !( 'geolocation' in navigator ) ) {
 		return;
 	}
 
@@ -89,23 +113,10 @@ var disqus_shortname = 'web367';
 	}
 })();
 
-// TypeKit
-;(function() {
-	if( !isEnhancedExperience() ) {
-		return;
-	}
-
-	var config = {
-		kitId: 'lhh1seg',
-		scriptTimeout: 3000
-	};
-	var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s);
-})();
-
 // Twitter Follow Button
 ;(function( doc ) {
-	// Don’t load the button on the home page.
-	if( !isEnhancedExperience() || !doc.querySelector( 'meta[name="template"][content="page"]' ) ) {
+	// IE9+ and not on the home page.
+	if( !( 'geolocation' in navigator ) || !doc.querySelector( 'meta[name="template"][content="page"]' ) ) {
 		return;
 	}
 

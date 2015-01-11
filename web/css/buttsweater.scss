@@ -31,7 +31,21 @@ html {
 	color: $textColor;
 	@include serifFont;
 	font-size: 1.1875em;
-	line-height: 160%;
+	line-height: 165%;
+}
+.has-gradient.tmpl-page .content a {
+	text-decoration: none;
+	background-image: -webkit-linear-gradient(top, currentColor 75%, currentColor 75%);
+	background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%);
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	background-repeat: repeat-x;
+	background-size: 1px 1px;
+	background-position: 0 97%;
+}
+.has-gradient.tmpl-page .content h2 a,
+.has-gradient.tmpl-page .content h3 a,
+.has-gradient.tmpl-page .content h4 a {
+	background-position: 0 88%;
 }
 .maxwidth,
 .maxwidth-list {
@@ -190,6 +204,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 .rail h1 {
 	font-size: 1.4em;
+	font-weight: 400;
 	display: inline-block;
 	color: #aaa;
 	width: 8em;
@@ -358,6 +373,10 @@ td.emulate { background-color: #40A662; color: #fff; }
 	margin: 2em 0;
 	overflow: hidden;
 }
+.has-gradient.tmpl-page .content .pagination a {
+	background-image: none;
+	text-shadow: none;
+}
 .previous-post,
 .next-post {
 	display: block;
@@ -432,6 +451,10 @@ td.emulate { background-color: #40A662; color: #fff; }
 	white-space: nowrap;
 	text-decoration: none;
 	font-weight: 700;
+}
+.has-gradient.tmpl-page .content .action a {
+	background-image: none;
+	text-shadow: none;
 }
 .action a i {
 	vertical-align: text-bottom;
@@ -520,7 +543,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 	padding: 0 .666666667em; /* 0 8px */
 	margin-top: 2em;
 }
-.post-filter.with-js {
+.enhanced-js .post-filter {
 	display: block;
 }
 .posts.deprecated .deprecated,
