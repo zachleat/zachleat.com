@@ -29,10 +29,20 @@ html {
 	background-color: #fff;
 	background-color: rgba(255,255,255,.9);
 	color: $textColor;
-	@include serifFont;
 	font-size: 1.1875em;
 	line-height: 165%;
 }
+
+.content ol,
+.content ul {
+	padding-left: 0;
+}
+.content ol li,
+.content ul li {
+	padding-left: .3em;
+	margin-left: -.3em;
+}
+
 .has-gradient.tmpl-page .content a {
 	text-decoration: none;
 	background-image: -webkit-linear-gradient(top, currentColor 75%, currentColor 75%);
@@ -83,12 +93,15 @@ html {
 
 /* App specific */
 body {
-	@include sansSerifFont;
+	font-family: $sansSerifFont;
 	padding: 0;
 	margin: 0;
 	background-color: $backgroundColor;
 	font-size: 100%;
 	line-height: 140%;
+}
+.lato-loaded body {
+	font-family: Lato, $sansSerifFont;
 }
 :link {
 	color: #67a281;
@@ -104,7 +117,6 @@ body {
 }
 h1, h2, h3, h4, h5 {
 	font-weight: 700;
-	@include serifFont;
 	margin-top: 1.4em;
 	text-transform: uppercase;
 }
@@ -149,8 +161,8 @@ h2 {
 	padding: 0;
 }
 code {
-	@include monospaceFont;
-	font-size: .875em;
+	font-family: $monospaceFont;
+	font-size: .947368421em; /* 18px / 19px */
 }
 pre {
 	font-size: .8125em;
@@ -191,7 +203,6 @@ th {
 }
 
 /* Compatibility Tables */
-table.compatibility { @include sansSerifFont; }
 td.yes { background-color: #00882D; color: #fff; }
 td.no { background-color: #CB000F; color: #fff; }
 td.emulate { background-color: #40A662; color: #fff; }
@@ -219,15 +230,6 @@ td.emulate { background-color: #40A662; color: #fff; }
 	margin-right: .5em;
 	border-radius: 50%;
 }
-.rail em {
-	display: block;
-	padding-top: 2em;
-	color: #bbb;
-	@include serifFont;
-	font-size: .75em;
-	line-height: 110%;
-	text-align: center;
-}
 .rail .navigation {
 	margin: 2em 0;
 }
@@ -242,7 +244,6 @@ td.emulate { background-color: #40A662; color: #fff; }
 
 /* Header Links */
 .links {
-	@include sansSerifFont;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: .75em;
@@ -313,10 +314,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 		font-size: 1.375em; /* 22px */
 	}
 }
-.posts .date,
 .posts-count li:after {
-	@include monospaceFont;
-	font-weight: normal;
+	font-family: $monospaceFont;
+	font-weight: 400;
 }
 .posts .date {
 	color: #aaa;
@@ -526,7 +526,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 .footer {
 	margin-top: 2em;
 	padding: .666666667em; /* 8px */
-	@include serifFont;
+	font-family: $serifFont;
 	font-style: italic;
 	font-size: .75em; /* 12px */
 	line-height: 120%;
@@ -553,6 +553,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 .posts.highlighted .highlight {
 	@include undo-a11y-only(relative);
 }
+.posts .highlight a {
+	font-weight: 700;
+}
 .posts .highlight .date:after {
 	content: " ★";
 }
@@ -568,7 +571,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 
 /* Tags */
 .tag {
-	font: 11px sans-serif;
+	font-size: 11px;
+	font-weight: 400;
 	text-transform: uppercase;
 	background: #999;
 	color: #fff;
@@ -592,4 +596,13 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 .tag.tweet {
 	background: #00c9ff;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url('/web/css/fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+			 url('/web/css/fonts/lato/lato-regular-webfont.woff') format('woff'),
+			 url('/web/css/fonts/lato/lato-regular-webfont.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }

@@ -1,13 +1,7 @@
 // Fonts
-@mixin monospaceFont {
-	font-family: Consolas, monospace;
-}
-@mixin sansSerifFont {
-	font-family: Helvetica Neue, Helvetica, sans-serif;
-}
-@mixin serifFont {
-	font-family: Georgia, serif;
-}
+$monospaceFont: Consolas, monospace;
+$sansSerifFont: Helvetica, sans-serif;
+$serifFont: Georgia, serif;
 
 // Colors
 $blockquoteColor: #888;

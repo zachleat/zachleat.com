@@ -89,7 +89,8 @@ module.exports = function(grunt) {
 					sourcemap: 'file'
 				},
 				files: {
-					'<%= config.distFolder %>global.css': '<%= config.cssSrc %>global.scss'
+					'<%= config.distFolder %>global.css': '<%= config.cssSrc %>global.scss',
+					'<%= config.distFolder %>fonts-defer.css': '<%= config.cssSrc %>fonts-defer.scss'
 				}
 			}
 		},
@@ -100,16 +101,19 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'<%= config.distFolder %>global.min.css': ['<%= config.distFolder %>global.css'],
-					'<%= config.distFolder %>icons.min.css': ['<%= config.distFolder %>icons.css']
+					'<%= config.distFolder %>icons.min.css': ['<%= config.distFolder %>icons.css'],
+					'<%= config.distFolder %>fonts-defer.min.css': ['<%= config.distFolder %>fonts-defer.css']
 				}
 			}
 		},
 		copy: {
+			// Because sass won’t import css files
 			'css-to-sass': {
 				files: {
 					'<%= config.cssSrc %>iliveinomaha.scss': ['<%= config.bowerDir %>iliveinomaha/iliveinomaha.css']
 				}
 			},
+			// For CSS inlining
 			includes: {
 				files: {
 					'<%= config.root %>_includes/global.min.css': ['<%= config.distFolder %>global.min.css']
