@@ -98,8 +98,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'<%= config.distFolder %>initial.css': '<%= config.cssSrc %>initial.scss',
-					'<%= config.distFolder %>defer.css': '<%= config.cssSrc %>defer.scss',
-					'<%= config.distFolder %>fonts-defer.css': '<%= config.cssSrc %>fonts-defer.scss'
+					'<%= config.distFolder %>defer.css': '<%= config.cssSrc %>defer.scss'
 				}
 			}
 		},
@@ -111,8 +110,7 @@ module.exports = function(grunt) {
 				files: {
 					'<%= config.distFolder %>initial.min.css': ['<%= config.distFolder %>initial.css'],
 					'<%= config.distFolder %>defer.min.css': ['<%= config.distFolder %>defer.css'],
-					'<%= config.distFolder %>icons.min.css': ['<%= config.distFolder %>icons.css'],
-					'<%= config.distFolder %>fonts-defer.min.css': ['<%= config.distFolder %>fonts-defer.css']
+					'<%= config.distFolder %>icons.min.css': ['<%= config.distFolder %>icons.css']
 				}
 			}
 		},
