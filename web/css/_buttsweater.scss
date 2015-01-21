@@ -43,6 +43,10 @@ html {
 	margin-left: -.3em;
 }
 
+.content a {
+	margin: 0 .25em;
+}
+
 .has-gradient.tmpl-page .content a {
 	text-decoration: none;
 	background-image: -webkit-linear-gradient(top, currentColor 75%, currentColor 75%);
@@ -187,6 +191,7 @@ h2 {
 code {
 	font-family: $monospaceFont;
 	font-size: .947368421em; /* 18px / 19px */
+	line-height: 100%;
 }
 pre {
 	font-size: .8125em;
