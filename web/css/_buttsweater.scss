@@ -354,10 +354,12 @@ td.emulate { background-color: #40A662; color: #fff; }
 	color: #aaa;
 	font-size: .5909em; /* 13px */
 	vertical-align: middle;
-	position: relative;
-	top: 3px;
 	padding-right: .5em;
 	white-space: nowrap;
+}
+.posts .tag + .date {
+	position: relative;
+	top: -1px;
 }
 .posts .deprecated,
 .posts .deprecated .date,
@@ -393,7 +395,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 		color: #ccc;
 		font-size: .625em; /* 10px */
 	}
-	.posts .date {
+	.posts .date,
+	.posts .tag + .date {
 		position: absolute;
 		right: 0;
 		top: 1.2em;
