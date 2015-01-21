@@ -47,6 +47,10 @@ module.exports = function(grunt) {
 			js: {
 				src: ['<%= config.jsSrc %>initial.js'],
 				dest: '<%= config.distFolder %>initial.js'
+			},
+			jsDefer: {
+				src: ['<%= config.jsSrc %>defer.js'],
+				dest: '<%= config.distFolder %>defer.js'
 			}
 			// CSS concat handled by SASS
 		},
@@ -57,6 +61,10 @@ module.exports = function(grunt) {
 			js: {
 				src: '<%= concat.js.dest %>',
 				dest: '<%= config.distFolder %>initial.min.js'
+			},
+			jsDefer: {
+				src: '<%= concat.jsDefer.dest %>',
+				dest: '<%= config.distFolder %>defer.min.js'
 			}
 		},
 		jshint: {
@@ -89,7 +97,8 @@ module.exports = function(grunt) {
 					sourcemap: 'file'
 				},
 				files: {
-					'<%= config.distFolder %>global.css': '<%= config.cssSrc %>global.scss',
+					'<%= config.distFolder %>initial.css': '<%= config.cssSrc %>initial.scss',
+					'<%= config.distFolder %>defer.css': '<%= config.cssSrc %>defer.scss',
 					'<%= config.distFolder %>fonts-defer.css': '<%= config.cssSrc %>fonts-defer.scss'
 				}
 			}
@@ -100,7 +109,8 @@ module.exports = function(grunt) {
 					banner: '<%= banner %>'
 				},
 				files: {
-					'<%= config.distFolder %>global.min.css': ['<%= config.distFolder %>global.css'],
+					'<%= config.distFolder %>initial.min.css': ['<%= config.distFolder %>initial.css'],
+					'<%= config.distFolder %>defer.min.css': ['<%= config.distFolder %>defer.css'],
 					'<%= config.distFolder %>icons.min.css': ['<%= config.distFolder %>icons.css'],
 					'<%= config.distFolder %>fonts-defer.min.css': ['<%= config.distFolder %>fonts-defer.css']
 				}
@@ -110,13 +120,14 @@ module.exports = function(grunt) {
 			// Because sass won’t import css files
 			'css-to-sass': {
 				files: {
-					'<%= config.cssSrc %>iliveinomaha.scss': ['<%= config.bowerDir %>iliveinomaha/iliveinomaha.css']
+					'<%= config.cssSrc %>_iliveinomaha.scss': ['<%= config.bowerDir %>iliveinomaha/iliveinomaha.css']
 				}
 			},
 			// For CSS inlining
 			includes: {
 				files: {
-					'<%= config.root %>_includes/global.min.css': ['<%= config.distFolder %>global.min.css']
+					'<%= config.root %>_includes/initial.min.css': ['<%= config.distFolder %>initial.min.css'],
+					'<%= config.root %>_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js']
 				}
 			}
 		},
@@ -275,7 +286,7 @@ module.exports = function(grunt) {
 	});
 
 	// Default task.
-	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'jshint', 'concat:js', 'uglify', 'cssmin']);
+	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'jshint', 'concat', 'uglify', 'cssmin']);
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
 	grunt.registerTask('content', [ 'copy:includes', 'shell:jekyll', 'htmlmin', 'compress', 'feedburner-size']);

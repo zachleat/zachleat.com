@@ -11,8 +11,13 @@
 {% if page.title %}
 		<meta name="template" content="page">
 {% endif %}
-		<style>{% include global.min.css %}</style>
 		<link href="/web/feed/" rel="alternate" title="Zach Leatherman’s Posts Feed" type="application/atom+xml">
+
+		<style>{% include initial.min.css %}</style>
+		<noscript>
+			<link href="{{ site.distFolder }}defer.min.css" rel="stylesheet">
+		</noscript>
+		<script>{% include initial.min.js %}</script>
 	</head>
 	<body>
 		<div class="rail">
@@ -48,6 +53,6 @@
 				<a href="http://www.iliveinomaha.com">I live in Omaha.</a>
 			</div>
 		</footer>
-		<script src="{{ site.distFolder }}initial.min.js"></script>
+		<script src="{{ site.distFolder }}defer.min.js"></script>
 	</body>
 </html>

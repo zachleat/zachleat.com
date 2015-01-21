@@ -115,10 +115,34 @@ body {
 :visited:hover {
 	color: #d94625;
 }
+.latobold-loaded strong,
+.latobold-loaded em,
+.latobold-loaded strong em,
+.latobold-loaded em strong {
+	font-weight: 400;
+	font-style: normal;
+}
+.latobold-loaded strong {
+	font-family: LatoBold;
+}
+.latoitalic-loaded em {
+	font-family: LatoItalic;
+}
+.latobolditalic-loaded strong em,
+.latobolditalic-loaded em strong {
+	font-family: LatoBoldItalic;
+}
 h1, h2, h3, h4, h5 {
-	font-weight: 700;
 	margin-top: 1.4em;
 	text-transform: uppercase;
+}
+.latobold-loaded h1,
+.latobold-loaded h2,
+.latobold-loaded h3,
+.latobold-loaded h4,
+.latobold-loaded h5 {
+	font-family: LatoBold;
+	font-weight: 400;
 }
 h1 {
 	color: #222;
@@ -223,6 +247,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 	overflow: hidden;
 	margin: .7em 0 0 0;
 	vertical-align: top;
+}
+.lato-loaded .rail h1 {
+	font-family: Lato;
 }
 .rail img {
 	width: 80px;
@@ -555,6 +582,10 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 .posts .highlight a {
 	font-weight: 700;
+}
+.latobold-loaded .posts .highlight a {
+	font-family: LatoBold;
+	font-weight: 400;
 }
 .posts .highlight .date:after {
 	content: " ★";
