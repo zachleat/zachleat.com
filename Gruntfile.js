@@ -142,10 +142,10 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		compress: {
+		zopfli: {
 			main: {
 				options: {
-					mode: 'gzip'
+					iteration: 20
 				},
 				files: [
 					{
@@ -287,9 +287,10 @@ module.exports = function(grunt) {
 	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'jshint', 'concat', 'uglify', 'cssmin']);
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
-	grunt.registerTask('content', [ 'copy:includes', 'shell:jekyll', 'htmlmin', 'compress', 'feedburner-size']);
+	grunt.registerTask('content', ['copy:includes', 'shell:jekyll']);
 	grunt.registerTask('default', ['config', 'assets', 'images', 'content']);
 
 	// Upload to Production
-	grunt.registerTask('deploy', ['default', 'shell:upload']);
+	grunt.registerTask('stage', ['default', 'htmlmin', 'zopfli', 'feedburner-size']);
+	grunt.registerTask('deploy', ['stage', 'shell:upload']);
 };
