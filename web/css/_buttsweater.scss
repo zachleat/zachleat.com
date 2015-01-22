@@ -33,14 +33,16 @@ html {
 	line-height: 165%;
 }
 
-.content ol,
-.content ul {
-	padding-left: 0;
-}
-.content ol li,
-.content ul li {
-	padding-left: .3em;
-	margin-left: -.3em;
+@media (min-width: 42em) {
+	.content ol,
+	.content ul {
+		padding-left: 0;
+	}
+	.content ol li,
+	.content ul li {
+		padding-left: .3em;
+		margin-left: -.3em;
+	}
 }
 
 .has-gradient.tmpl-page .content a {
