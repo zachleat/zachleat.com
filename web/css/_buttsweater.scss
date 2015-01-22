@@ -43,10 +43,6 @@ html {
 	margin-left: -.3em;
 }
 
-.content a {
-	margin: 0 .25em;
-}
-
 .has-gradient.tmpl-page .content a {
 	text-decoration: none;
 	background-image: -webkit-linear-gradient(top, currentColor 75%, currentColor 75%);
@@ -121,19 +117,25 @@ body {
 }
 .latobold-loaded strong,
 .latobold-loaded em,
+.latobold-loaded blockquote,
 .latobold-loaded strong em,
-.latobold-loaded em strong {
+.latobold-loaded strong blockquote,
+.latobold-loaded em strong,
+.latobold-loaded blockquote strong {
 	font-weight: 400;
 	font-style: normal;
 }
 .latobold-loaded strong {
 	font-family: LatoBold;
 }
-.latoitalic-loaded em {
+.latoitalic-loaded em,
+.latoitalic-loaded blockquote {
 	font-family: LatoItalic;
 }
 .latobolditalic-loaded strong em,
-.latobolditalic-loaded em strong {
+.latobolditalic-loaded strong blockquote,
+.latobolditalic-loaded em strong,
+.latobolditalic-loaded blockquote strong {
 	font-family: LatoBoldItalic;
 }
 h1, h2, h3, h4, h5 {

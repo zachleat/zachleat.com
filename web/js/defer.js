@@ -1,42 +1,7 @@
 ;(function( doc ) {
-	function loadCSS( href ){
-		/*!
-		loadCSS: load a CSS file asynchronously.
-		[c]2014 @scottjehl, Filament Group, Inc.
-		Licensed MIT
-		*/
-		var ss = document.createElement( "link" );
-		var ref = document.getElementsByTagName( "script" )[ 0 ];
-		var sheets = document.styleSheets;
-		ss.rel = "stylesheet";
-		ss.href = ZL.getDistFolder() + href;
-		ss.media = "only x";
-
-		// inject link
-		ref.parentNode.insertBefore( ss, ref );
-
-		function toggleMedia(){
-			var defined;
-			for( var i = 0; i < sheets.length; i++ ){
-				if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){
-					defined = true;
-				}
-			}
-			if( defined ){
-				ss.media = "all";
-			}
-			else {
-				setTimeout( toggleMedia );
-			}
-		}
-		toggleMedia();
-
-		return ss;
-	}
-
 	// IE8+
 	if( 'querySelector' in doc ) {
-		loadCSS( "defer.min.css" );
+		grunticon.loadCSS( ZL.getDistFolder() + "defer.min.css" );
 	}
 })( document );
 
