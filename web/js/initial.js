@@ -44,23 +44,19 @@ var ZL = {
 		success: function() {
 			docEl.className += " lato-loaded";
 
-			FontFaceOnload( "LatoBold", {
+			var counter = 0;
+			var options = {
 				success: function() {
-					docEl.className += " latobold-loaded";
+					counter++;
+					if( counter === 3 ) {
+						docEl.className += " lato-b-loaded";
+					}
 				}
-			});
+			}
 
-			FontFaceOnload( "LatoItalic", {
-				success: function() {
-					docEl.className += " latoitalic-loaded";
-				}
-			});
-
-			FontFaceOnload( "LatoBoldItalic", {
-				success: function() {
-					docEl.className += " latobolditalic-loaded";
-				}
-			});
+			FontFaceOnload( "LatoBold", options );
+			FontFaceOnload( "LatoItalic", options );
+			FontFaceOnload( "LatoBoldItalic", options );
 		}
 	});
 

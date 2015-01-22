@@ -115,40 +115,37 @@ body {
 :visited:hover {
 	color: #d94625;
 }
-.latobold-loaded strong,
-.latobold-loaded em,
-.latobold-loaded blockquote,
-.latobold-loaded strong em,
-.latobold-loaded strong blockquote,
-.latobold-loaded em strong,
-.latobold-loaded blockquote strong {
+.lato-b-loaded strong {
+	font-family: LatoBold;
 	font-weight: 400;
 	font-style: normal;
 }
-.latobold-loaded strong {
-	font-family: LatoBold;
-}
-.latoitalic-loaded em,
-.latoitalic-loaded blockquote {
+.lato-b-loaded em,
+.lato-b-loaded blockquote {
 	font-family: LatoItalic;
+	font-weight: 400;
+	font-style: normal;
 }
-.latobolditalic-loaded strong em,
-.latobolditalic-loaded strong blockquote,
-.latobolditalic-loaded em strong,
-.latobolditalic-loaded blockquote strong {
+.lato-b-loaded strong em,
+.lato-b-loaded strong blockquote,
+.lato-b-loaded em strong,
+.lato-b-loaded blockquote strong {
 	font-family: LatoBoldItalic;
+	font-weight: 400;
+	font-style: normal;
 }
 h1, h2, h3, h4, h5 {
 	margin-top: 1.4em;
 	text-transform: uppercase;
 }
-.latobold-loaded h1,
-.latobold-loaded h2,
-.latobold-loaded h3,
-.latobold-loaded h4,
-.latobold-loaded h5 {
+.lato-b-loaded h1,
+.lato-b-loaded h2,
+.lato-b-loaded h3,
+.lato-b-loaded h4,
+.lato-b-loaded h5 {
 	font-family: LatoBold;
 	font-weight: 400;
+	font-style: normal;
 }
 h1 {
 	color: #222;
@@ -593,7 +590,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 .posts .highlight a {
 	font-weight: 700;
 }
-.latobold-loaded .posts .highlight a {
+.lato-b-loaded .posts .highlight a {
 	font-family: LatoBold;
 	font-weight: 400;
 }
