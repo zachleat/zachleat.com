@@ -9,6 +9,7 @@ categories:
 tags:
   - highlight
   - research
+  - smalltitle
 ---
 
 **Quick Summary**
