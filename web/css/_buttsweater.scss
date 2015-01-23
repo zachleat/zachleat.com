@@ -223,6 +223,9 @@ td,
 th {
 	padding: .4em .4em;
 }
+th {
+	vertical-align: top;
+}
 
 /* Compatibility Tables */
 td.yes { background-color: #00882D; color: #fff; }
