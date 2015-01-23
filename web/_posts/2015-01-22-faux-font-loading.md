@@ -112,27 +112,33 @@ FontFaceOnload( "Lato", {
 		docEl.className += " lato-loaded";
 
 		var counter = 0;
-		var options = {
-			success: function() {
-				counter++;
-				if( counter === 3 ) {
-
-					// Stage 2 Complete
-					// All Fonts loaded.
-					docEl.className += " lato-b-loaded";
-				}
+		var success = function() {
+			counter++;
+			if( counter === 3 ) {
+				// Stage 2 Complete
+				// All Fonts Loaded
+				docEl.className += " lato-b-loaded";
 			}
-		}
+		};
 
-		// Trigger the others after Roman loads
-		FontFaceOnload( "LatoBold", options );
-		FontFaceOnload( "LatoItalic", options );
-		FontFaceOnload( "LatoBoldItalic", options );
+		FontFaceOnload( "LatoBold", {
+			weight: 700,
+			success: success
+		});
+		FontFaceOnload( "LatoItalic", {
+			style: 'italic',
+			success: success
+		});
+		FontFaceOnload( "LatoBoldItalic", {
+			weight: 700,
+			style: 'italic',
+			success: success
+		});
 	}
 });
 ```
 
-[*See the full JavaScript for the zachleat.com Implementation of the FOFT.*](https://github.com/zachleat/zachleat.com/blob/7e23f9f193f0003cd14c4e5de9488c599c7a0330/web/js/initial.js#L43)
+[*See the full JavaScript for the zachleat.com Implementation of the FOFT.*](https://github.com/zachleat/zachleat.com/blob/e7912017032a731cf6f958c94cacaae35b23a839/web/js/initial.js#L42)
 
 ```css
 body {
@@ -169,7 +175,7 @@ body {
 	font-family: LatoBoldItalic;
 }
 ```
-*[See the full CSS for the zachleat.com Implementation of the FOFT](https://github.com/zachleat/zachleat.com/blob/7e23f9f193f0003cd14c4e5de9488c599c7a0330/web/css/_buttsweater.scss) with the [`@font-face` blocks hidden at the bottom](https://github.com/zachleat/zachleat.com/blob/7e23f9f193f0003cd14c4e5de9488c599c7a0330/web/css/_buttsweater.scss#L633).*
+*[See the full CSS for the zachleat.com Implementation of the FOFT](https://github.com/zachleat/zachleat.com/blob/e7912017032a731cf6f958c94cacaae35b23a839/web/css/_buttsweater.scss) with the [`@font-face` blocks hidden at the bottom](https://github.com/zachleat/zachleat.com/blob/e7912017032a731cf6f958c94cacaae35b23a839/web/css/_buttsweater.scss#L636).*
 
 ***Important Note**: you have to use different aliased `font-family` names for each `@font-face` block used here. If not, your second stage (the Flash of Faux-Text) will suffer the same Flash of Invisible Text problem that we’re trying to avoid with font loading.*
 
