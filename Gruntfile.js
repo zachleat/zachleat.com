@@ -229,6 +229,9 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		clean: {
+			js: [ '<%= config.root %>/_site/**/*.zgz' ]
+		},
 		watch: {
 			assets: {
 				files: ['<%= config.bowerDir %>**/*', '<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
@@ -288,7 +291,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
 	grunt.registerTask('content', ['copy:includes', 'shell:jekyll']);
-	grunt.registerTask('default', ['config', 'assets', 'images', 'content']);
+	grunt.registerTask('default', ['clean', 'config', 'assets', 'images', 'content']);
 
 	// Upload to Production
 	grunt.registerTask('stage', ['default', 'htmlmin', 'zopfli', 'feedburner-size']);
