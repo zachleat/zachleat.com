@@ -119,22 +119,16 @@ body {
 }
 .lato-b-loaded strong {
 	font-family: LatoBold;
-	font-weight: 400;
-	font-style: normal;
 }
 .lato-b-loaded em,
 .lato-b-loaded blockquote {
 	font-family: LatoItalic;
-	font-weight: 400;
-	font-style: normal;
 }
 .lato-b-loaded strong em,
 .lato-b-loaded strong blockquote,
 .lato-b-loaded em strong,
 .lato-b-loaded blockquote strong {
 	font-family: LatoBoldItalic;
-	font-weight: 400;
-	font-style: normal;
 }
 h1, h2, h3, h4, h5 {
 	margin-top: 1.4em;
@@ -146,8 +140,6 @@ h1, h2, h3, h4, h5 {
 .lato-b-loaded h4,
 .lato-b-loaded h5 {
 	font-family: LatoBold;
-	font-weight: 400;
-	font-style: normal;
 }
 h1 {
 	color: #222;
@@ -652,7 +644,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 	src: url('/web/css/fonts/lato/lato-bold-webfont.woff2') format('woff2'),
 			 url('/web/css/fonts/lato/lato-bold-webfont.woff') format('woff'),
 			 url('/web/css/fonts/lato/lato-bold-webfont.ttf') format('truetype');
-	font-weight: 400;
+	font-weight: 700;
 	font-style: normal;
 }
 
@@ -662,7 +654,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 			 url('/web/css/fonts/lato/lato-italic-webfont.woff') format('woff'),
 			 url('/web/css/fonts/lato/lato-italic-webfont.ttf') format('truetype');
 	font-weight: 400;
-	font-style: normal;
+	font-style: italic;
 }
 
 @font-face {
@@ -670,6 +662,6 @@ td.emulate { background-color: #40A662; color: #fff; }
 	src: url('/web/css/fonts/lato/lato-bolditalic-webfont.woff2') format('woff2'),
 			 url('/web/css/fonts/lato/lato-bolditalic-webfont.woff') format('woff'),
 			 url('/web/css/fonts/lato/lato-bolditalic-webfont.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
+	font-weight: 700;
+	font-style: italic;
 }
