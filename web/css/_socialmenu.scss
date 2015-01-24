@@ -4,19 +4,29 @@
 .social {
 	font-size: 1.6em;
 }
+.social > div {
+	display: inline;
+}
 @media (min-width: $twoColLayoutMinWidth) {
 	.social {
-		text-align: center;
+		text-align: right;
 		position: static;
+	}
+	.social > div {
+		padding-top: .3em;
+		display: block;
 	}
 }
 .social a {
 	text-decoration: none;
 	display: inline-block;
 	margin-left: .4em;
-	text-indent: -9999px;
+	text-indent: 9999px;
 	width: 32px;
 	height: 32px;
+}
+.social a.icon-filamentgroup {
+	white-space: nowrap;
 }
 .social a:first-child {
 	margin-left: 0;

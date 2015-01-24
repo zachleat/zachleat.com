@@ -245,9 +245,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 	color: #aaa;
 	width: 8em;
 	text-align: left;
-	overflow: hidden;
-	margin: .7em 0 0 0;
-	vertical-align: top;
+	margin: 0 0 .1em 0;
+	vertical-align: bottom;
 }
 .lato-loaded .rail h1 {
 	font-family: Lato;
@@ -256,17 +255,25 @@ td.emulate { background-color: #40A662; color: #fff; }
 	width: 80px;
 	height: 80px;
 	margin-right: .5em;
-	border-radius: 50%;
+	border-radius: 0 50%;
 }
 .rail .navigation {
 	margin: 2em 0;
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.rail a.header {
-		text-align: center;
+		text-align: right;
+	}
+	.rail img {
+		margin-right: 0;
+	}
+	.rail:hover img {
+		transition: 1s border-radius;
+		border-radius: 50% 0;
 	}
 	.rail h1 {
-		text-align: center;
+		margin-top: .3em;
+		text-align: right;
 	}
 }
 
@@ -307,6 +314,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 		display: block;
 		padding-left: 0;
 		padding-right: 0;
+		text-align: right;
 	}
 }
 

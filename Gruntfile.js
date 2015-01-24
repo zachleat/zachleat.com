@@ -137,7 +137,8 @@ module.exports = function(grunt) {
 					customselectors: {
 						"twitter-active": ".icon-twitter:hover,.icon-twitter:focus,.action a i.icon-twitter",
 						"github-active": ".icon-github:hover,.icon-github:focus,.action a i.icon-github",
-						"feed-active": ".icon-feed:hover,.icon-feed:focus,.action a i.icon-feed"
+						"feed-active": ".icon-feed:hover,.icon-feed:focus,.action a i.icon-feed",
+						"filamentgroup-active": ".icon-filamentgroup:hover,.icon-filamentgroup:focus,.action a i.icon-filamentgroup"
 					}
 				}
 			}
