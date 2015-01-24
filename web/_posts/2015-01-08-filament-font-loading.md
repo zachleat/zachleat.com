@@ -6,6 +6,7 @@ permalink: /filament-font-loading/
 tags:
   - external
   - highlight
+  - research
 external_url: http://www.filamentgroup.com/lab/font-loading.html
 ---
 

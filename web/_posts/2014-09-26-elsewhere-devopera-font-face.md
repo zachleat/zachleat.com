@@ -7,6 +7,7 @@ external_url: https://dev.opera.com/articles/better-font-face/
 tags:
   - external
   - highlight
+  - research
 date: 2014-09-26 12:00:00
 ---
 

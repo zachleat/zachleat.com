@@ -6,6 +6,7 @@ permalink: /bulletproof-icon-fonts/
 tags:
   - external
   - highlight
+  - research
 external_url: http://www.filamentgroup.com/lab/bulletproof_icon_fonts.html
 ---
 

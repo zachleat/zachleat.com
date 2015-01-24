@@ -5,6 +5,7 @@ layout: post
 permalink: /politespace/
 tags:
   - external
+  - project
 external_url: http://www.filamentgroup.com/lab/politespace.html
 ---
 
