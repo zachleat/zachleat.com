@@ -641,6 +641,13 @@ td.emulate { background-color: #40A662; color: #fff; }
 	background: #00c9ff;
 }
 
+/* Icons */
+.icon-link-external {
+	width: 14px;
+	height: 16px;
+	display: inline-block;
+}
+
 @font-face {
 	font-family: Lato;
 	src: url('/web/css/fonts/lato/lato-regular-webfont.woff2') format('woff2'),
