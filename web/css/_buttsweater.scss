@@ -624,11 +624,13 @@ td.emulate { background-color: #40A662; color: #fff; }
 	vertical-align: middle;
 	white-space: nowrap;
 }
-.tag.video .length {
+.tag.video .length,
+.tag.audio .length {
 	text-transform: none;
 }
 /* orangered, steelblue */
-.tag.video {
+.tag.video,
+.tag.audio {
 	background: cadetblue;
 }
 .tag.project {

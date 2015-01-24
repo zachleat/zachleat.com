@@ -8,7 +8,7 @@ categories:
   - JavaScript
 tags:
   - video
-videolength: 5 min
+medialength: 5 min
 ---
 
 ***Update 2**: [The JavaScript Testing Challenge Winner][1]*

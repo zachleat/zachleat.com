@@ -1,0 +1,16 @@
+<li{% if post.tags contains 'deprecated' or post.tags contains 'highlight' or post.tags contains 'smalltitle' %} class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}"{% endif %}{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
+	{% if post.tags contains 'external' %}
+	<a href="{{ post.external_url }}">
+	{% else %}
+	<a href="{{ site.baseurl }}{{ post.url }}">
+	{% endif %}
+		{% if post.tags contains 'external' %}<span class="tag external">External</span>{% endif %}
+		{{ post.title }}
+		{% if post.tags contains 'external' %}<span class="icon-link-external"></span>{% endif %}
+		{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}
+		{% if post.tags contains 'audio' %}<span class="tag audio">Audio{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}
+		{% if post.tags contains 'project' %}<span class="tag project">Project</span>{% endif %}
+		{% if post.tags contains 'research' %}<span class="tag research">Research</span>{% endif %}
+		<span class="date">{{ post.date | date: "%h %Y" }}</span>
+	</a>
+</li>

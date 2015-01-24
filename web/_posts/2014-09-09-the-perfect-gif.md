@@ -7,8 +7,7 @@ categories:
   - Presentations
 tags:
   - video
-  - highlight
-videolength: 12 min
+medialength: 12 min
 ---
 
 Last year at [Barcamp Omaha](http://barcampomaha.org/), I did a tongue-in-cheek talk on [Impostor Syndrome](/web/impostor/). This year, I was floundering on picking a topic for Barcamp—until [Derek Eskens](https://twitter.com/snekse) suggested I do a talk on GIFs. With only two days to prepare, I think it turned out fairly well.
