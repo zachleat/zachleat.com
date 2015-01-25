@@ -13,7 +13,7 @@
 		position: static;
 	}
 	.social > div {
-		padding-top: .3em;
+		padding-top: .5em;
 		display: block;
 	}
 }
@@ -22,8 +22,10 @@
 	display: inline-block;
 	margin-left: .4em;
 	text-indent: 9999px;
+	overflow: hidden;
 	width: 32px;
 	height: 32px;
+	vertical-align: top;
 }
 .social a.icon-filamentgroup {
 	white-space: nowrap;
@@ -81,8 +83,6 @@
 	line-height: 80%;
 	background-color: #ccc;
 	border-radius: .2em;
-	position: relative;
-	top: 7px;
 }
 .social .nebraskajs,
 .social .nebraskajs:link,

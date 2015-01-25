@@ -4,7 +4,7 @@
 	{% else %}
 	<a href="{{ site.baseurl }}{{ post.url }}">
 	{% endif %}
-		{% if post.tags contains 'external' %}<span class="tag external">External</span>{% endif %}
+		{% if post.tags contains 'external' %}<span class="external">Off-Site</span>{% endif %}
 		{{ post.title }}
 		{% if post.tags contains 'external' %}<span class="icon-link-external"></span>{% endif %}
 		{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}

@@ -628,7 +628,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 .tag.audio .length {
 	text-transform: none;
 }
-/* orangered, steelblue */
+/* orangered */
 .tag.video,
 .tag.audio {
 	background: cadetblue;
@@ -643,7 +643,20 @@ td.emulate { background-color: #40A662; color: #fff; }
 	background: #00c9ff;
 }
 
-/* Icons */
+/* External Links */
+.external {
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #999;
+	line-height: 100%;
+}
+.lato-loaded .posts .highlight a .external {
+	font-family: Lato;
+	font-weight: 400;
+}
+.external:after {
+	content: ": ";
+}
 .icon-link-external {
 	width: 14px;
 	height: 16px;

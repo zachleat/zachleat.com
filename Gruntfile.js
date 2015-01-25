@@ -146,7 +146,7 @@ module.exports = function(grunt) {
 		zopfli: {
 			main: {
 				options: {
-					iteration: 20
+					iteration: 15
 				},
 				files: [
 					{
