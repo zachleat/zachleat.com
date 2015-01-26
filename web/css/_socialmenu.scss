@@ -5,7 +5,8 @@
 	font-size: 1.6em;
 }
 .social > div {
-	display: inline;
+	display: inline-block;
+	padding-left: 0.1em;
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.social {
@@ -14,6 +15,7 @@
 	}
 	.social > div {
 		padding-top: .5em;
+		padding-left: 0;
 		display: block;
 	}
 }
