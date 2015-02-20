@@ -2,7 +2,6 @@
   "name": "zachleat.com",
   "version": "0.2.11",
   "description": "The website of @zachleat",
-  "main": "index.js",
   "dependencies": {
     "grunt-cli": "~0.1.7"
   },
@@ -32,6 +31,5 @@
     "url": "git://github.com/zachleat/zachleat.com.git"
   },
   "author": "Zach Leatherman",
-  "license": "MIT",
-  "gitHead": "0ef70ac454010dee358126fe5ff667c9a35c235b"
+  "license": "MIT"
 }
