@@ -5,7 +5,12 @@ layout: default
 	<article>
 	<h1 {% if page.tags contains 'smalltitle' %}class="smalltitle"{% endif %}>{{ page.title }}</h1>
 	<div class="sub">
-		<em class="date">{{ page.date | date_to_long_string }}</em><em class="words">Read this in {{ page.content | reading_time }}.</em>
+		<em class="date">{{ page.date | date_to_long_string }}</em>
+{% if page.tags contains 'video' %}
+		<em class="words">Watch this video in {{ page.medialength }}.</em>
+{% else %}
+		<em class="words">Read this in {{ page.content | reading_time }}.</em>
+{% endif %}
 	</div>
 	{% if page.tags contains 'deprecated' %}
 	<article>
