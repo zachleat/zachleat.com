@@ -2,7 +2,9 @@
 
 /* Social links */
 .social {
-	font-size: 1.6em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .75em;
 }
 .social > div {
 	display: inline-block;
@@ -14,20 +16,25 @@
 		position: static;
 	}
 	.social > div {
-		padding-top: .5em;
+		padding-top: 1em;
 		padding-left: 0;
 		display: block;
 	}
 }
 .social a {
+	display: block;
+}
+.grunticon .social a {
+	font-size: 1.6em;
 	text-decoration: none;
 	display: inline-block;
 	margin-left: .4em;
-	text-indent: 9999px;
 	overflow: hidden;
 	width: 32px;
 	height: 32px;
 	vertical-align: top;
+	text-indent: 9999px;
+	white-space: nowrap;
 }
 .social a.icon-filamentgroup {
 	white-space: nowrap;
@@ -77,27 +84,36 @@
 }
 
 .nebraskajs {
-	font-size: .6em;
+	word-spacing: -4px;
+}
+.grunticon .nebraskajs.nebraskajs {
+	font-size: 1.2em;
 	text-transform: uppercase;
 	text-align: right;
 	font-family: Arial;
 	font-weight: bold;
-	line-height: 80%;
+	line-height: 92%;
 	background-color: #ccc;
 	border-radius: .2em;
+	word-spacing: 0;
+	letter-spacing: 1px;
+	white-space: normal;
 }
-.social .nebraskajs,
-.social .nebraskajs:link,
-.social .nebraskajs:visited {
+.grunticon .nebraskajs span {
+	@include a11y-only;
+}
+.grunticon .social .nebraskajs,
+.grunticon .social .nebraskajs:link,
+.grunticon .social .nebraskajs:visited {
 	color: #fff;
 	padding: .3em .1em 0 0;
 	margin-left: .6em;
 	text-indent: 0;
 }
-.nebraskajs:link:hover,
-.nebraskajs:link:focus,
-.nebraskajs:visited:hover,
-.nebraskajs:visited:focus {
+.grunticon .nebraskajs:link:hover,
+.grunticon .nebraskajs:link:focus,
+.grunticon .nebraskajs:visited:hover,
+.grunticon .nebraskajs:visited:focus {
 	background-color: #f5da1c;
 	color: #000;
 }
