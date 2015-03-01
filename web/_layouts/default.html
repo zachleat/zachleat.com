@@ -4,8 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{% if page.title %}{{ page.title }}—zachleat.com{% else %}zachleat.com{% endif %}</title>
+		<meta property="og:title" content="{% if page.title %}{{ page.title }}—zachleat.com{% else %}zachleat.com{% endif %}" />
 		<meta name="author" content="Zach Leatherman">
-		<meta name="description" content="Zach Leatherman (zachleat) is a Front End Engineer.">
+		<meta property="og:site_name" content="Zach Leatherman" />
+		<meta name="description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer.">
+		<meta property="og:description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer." />
+		<meta property="og:image" content="{% if page.headimage %}{{ page.headimage }}{% else %}/web/img/avatar.png{% endif %}" />
 
 		<meta name="dist" content="{{ site.distFolder }}">
 {% if page.title %}

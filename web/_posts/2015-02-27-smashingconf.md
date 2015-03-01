@@ -3,6 +3,8 @@ title: 'SmashingConf Whistler 2014—Font Loading'
 author: Zach Leatherman
 layout: post
 permalink: /smashingconf/2014/
+description: Recap of SmashingConf in Whistler (December 2014)
+headimage: https://farm9.staticflickr.com/8589/16658643251_22386813f2_c.jpg
 categories:
   - Presentations
 tags:
@@ -11,13 +13,15 @@ tags:
 medialength: 48 min
 ---
 
+<figure>
+	<img src="https://farm9.staticflickr.com/8589/16658643251_22386813f2_c.jpg" alt="Whistler Gondola View by zachleat">
+	<figcaption><a href="https://flic.kr/p/ro4Ug6">Whistler Gondola View</a></figcaption>
+</figure>
+
 Of all the talks I’ve given thus far in my career, I think this one is the one I’m most proud of. The conference was fun: the attendees were lively and attentive, the location was beautiful (after it quit raining), and [Vitaly](https://twitter.com/smashingmag) sprinkled a bunch of easter eggs into the conference which always adds a little something extra. A huge thank you to [Tim Kadlec](https://twitter.com/tkadlec) for inviting me to speak.
 
 * [SmashingConf Whistler 2014](http://smashingconf.com/whistler-2014/)
 * [SmashingConf Whistler 2014 Direct Session Link](http://smashingconf.com/whistler-2014/speakers/zach-leatherman)
-
-[![](https://farm9.staticflickr.com/8589/16658643251_22386813f2_c.jpg)
-*Whistler Gondola View by zachleat, on Flickr*](https://flic.kr/p/ro4Ug6)
 
 ## Video
 
