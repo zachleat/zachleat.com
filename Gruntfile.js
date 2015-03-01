@@ -202,6 +202,7 @@ module.exports = function(grunt) {
 		},
 		shell: {
 			jekyll: {
+				// command: 'jekyll build --config _config.yml --trace --drafts',
 				command: 'jekyll build --config _config.yml --trace',
 				options: {
 					stdout: true,
@@ -243,7 +244,7 @@ module.exports = function(grunt) {
 				tasks: ['grunticon', 'content']
 			},
 			content: {
-				files: ['<%= config.root %>_posts/**/*', '<%= config.root %>_layouts/**/*', '<%= config.root %>speaking/**/*', '<%= config.root %>projects/**/*', '<%= config.root %>about/**/*', '<%= config.root %>license/**/*', '<%= config.root %>feed/**/*', '<%= config.root %>index.html', '<%= config.root %>_plugins/**/*', '<%= config.root %>_includes/**/*' ],
+				files: ['<%= config.root %>_posts/**/*', '<%= config.root %>_layouts/**/*', '<%= config.root %>_drafts/**/*', '<%= config.root %>speaking/**/*', '<%= config.root %>projects/**/*', '<%= config.root %>about/**/*', '<%= config.root %>license/**/*', '<%= config.root %>feed/**/*', '<%= config.root %>index.html', '<%= config.root %>_plugins/**/*', '<%= config.root %>_includes/**/*' ],
 				tasks: ['content']
 			},
 			config: {
