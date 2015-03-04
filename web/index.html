@@ -4,7 +4,7 @@ layout: default
 
 <div class="maxwidth-list">
 	<article>
-		<ol id="main-posts-list" class="posts posts-count" style="counter-reset:start-from {{ site.posts | size | plus: 1 }}">
+		<ol id="main-posts-list" class="posts posts-count" style="counter-reset: start-from {{ site.posts | size | plus: 1 }}">
 			{% for post in site.posts %}
 				{% include post-list-entry.html %}
 			{% endfor %}

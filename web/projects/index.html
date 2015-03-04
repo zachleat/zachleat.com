@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+<div class="maxwidth-list">
+	View all project source code on <a href="https://github.com/zachleat/">GitHub</a>.
+
+	<ol class="posts">
+		{% for post in site.categories.project %}
+			{% include post-list-entry.html view="project" %}
+		{% endfor %}
+	</ol>
+
+	<h2><a href="/web/projects/retired/">Retired Projects</a></h2>
+
+</div><!-- /.maxwidth-list -->

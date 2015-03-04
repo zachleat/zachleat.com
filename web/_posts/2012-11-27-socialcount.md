@@ -4,8 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /socialcount/
 categories:
-  - JavaScript
-  - Projects
+  - project
 tags:
   - highlight
   - project

@@ -340,46 +340,45 @@ td.emulate { background-color: #40A662; color: #fff; }
 .posts li {
 	position: relative;
 }
-.posts-count li {
-	counter-increment:start-from -1;
-}
 .posts a {
 	display: block;
-	padding: .636363636em 0; /* 14px 8px */
+	padding: 14px 0;
 	font-size: 1.375em; /* 22px */
 	line-height: 110%;
 	text-decoration: none;
 }
+.posts .year {
+	padding: 0;
+	line-height: 140%;
+	margin-top: 2em;
+	border-bottom: 1px dotted #ccc;
+}
+.posts img {
+	display: block;
+	margin: .5em 0;
+}
+.posts .description {
+	font-size: .730769231em; /* 19x /26 */
+	margin: .5em 0;
+	color: #333;
+}
 .posts .smalltitle a {
-	font-size: 1.157894737em; /* calc:23px/19px */
+	font-size: 23px;
 }
 @media (min-width: 30em) {
-	.posts a {
-		padding-left: .363636364em; /* 8px */
-		padding-right: .363636364em; /* 8px */
+	.posts a,
+	.posts .year {
+		padding-left: 13px;
+		padding-right: 13px;
 	}
 	.posts .smalltitle a {
 		font-size: 1.375em; /* 22px */
 	}
 }
-.posts-count li:after {
-	font-family: $monospaceFont;
-	font-weight: 400;
-}
 .posts .date {
-	color: #aaa;
-	font-size: .5909em; /* 13px */
-	vertical-align: middle;
-	padding-right: .5em;
-	white-space: nowrap;
-}
-.posts .tag + .date {
-	position: relative;
-	top: -1px;
+	@include a11y-only;
 }
 .posts .deprecated,
-.posts .deprecated .date,
-.posts .deprecated:after,
 .posts .deprecated :link,
 .posts .deprecated :visited {
 	color: #ddd;
@@ -397,25 +396,30 @@ td.emulate { background-color: #40A662; color: #fff; }
 	.sub em {
 		display: inline;
 	}
-
-	.posts a {
-		padding-left: .5em;
-		padding-right: 4em;
+	.posts-count li {
+		counter-increment: start-from -1;
 	}
-	.posts-count li:after {
+	.posts-count .year {
+		counter-increment: none;
+	}
+	.posts-count .year,
+	.posts-count li a {
+		padding-left: 55px;
+	}
+	.posts-count li:before {
 		pointer-events: none;
 		position: absolute;
-		right: .7em;
-		top: 0;
-		content: "#" counter(start-from) "";
-		color: #ccc;
+		left: 13px;
+		top: 27px;
+		content: "" counter(start-from) ". ";
+		color: #888;
+		line-height: 100%;
+		width: 2.5em;
+		text-align: right;
 		font-size: .625em; /* 10px */
 	}
-	.posts .date,
-	.posts .tag + .date {
-		position: absolute;
-		right: 0;
-		top: 1.2em;
+	.posts-count .year:before {
+		content: "";
 	}
 }
 
@@ -531,7 +535,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 	margin-top: 1em;
 }
 .deprecation-warning h3 {
-	display: run-in;
+	display: inline;
 	margin-right: .6em;
 }
 .deprecation-warning h3:after {
@@ -604,25 +608,6 @@ td.emulate { background-color: #40A662; color: #fff; }
 .posts.highlighted .highlight {
 	@include undo-a11y-only(relative);
 }
-.posts .highlight a {
-	font-weight: 700;
-}
-.lato-b-loaded .posts .highlight a {
-	font-family: LatoBold;
-	font-weight: 400;
-}
-.posts .highlight .date:after {
-	content: " ★";
-}
-@media (min-width: 30em) {
-	.posts .highlight .date:before {
-		content: "★ ";
-	}
-	.posts .highlight .date:after {
-		content: "";
-	}
-}
-
 
 /* Tags */
 .tag {
@@ -653,6 +638,13 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 .tag.tweet {
 	background: #00c9ff;
+}
+.tag.highlight {
+	background: #444;
+	color: #fff;
+}
+.tag + .tag.highlight {
+	margin-left: -11px;
 }
 
 /* External Links */
