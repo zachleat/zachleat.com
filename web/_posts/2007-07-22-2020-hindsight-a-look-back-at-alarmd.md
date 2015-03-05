@@ -4,10 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /2020-hindsight-a-look-back-at-alarmd/
 categories:
-  - Projects
 tags:
-  - Alarmd
-  - project
 ---
 
 Now that the traffic has died down a little bit on ALARMd, I’d like to write a little bit about my experiences with something I don’t think anyone predicted would garner so much interest.
@@ -23,4 +20,4 @@ It was on delicious popular bookmarks for a while. It actually also ended up bei
 
 And just recently, I put up the alarmd.com domain as a redirect to the site for all the hard-core users still going to it and using it. It’s still getting a couple of hundred hits a day. 
 
-So, hindsight. The alarm clock is a device that everyone uses and easily relates to, but also a device that people have low expectations for. Most alarms only have one or two times they go off for, and with only a few options for alerting: buzzer or radio. Most go off every day, even on the weekends when you want to sleep in. But people put up with their crappy alarm clocks because there is literally no good alarm clock hardware out there. And some of the features I’ve put into ALARMd can also be seen in alarm clocks that cost over $100 USD. Ridiculous. I would bet that there is a huge market for someone to come out with an alarm clock that doesn’t suck and costs $40, or maybe people just want to use their cell phones all the time. I wonder if the iPhone alarm is any good. Look for my next project, which will be just as, if not more, retarded as the Internet Alarm Clock.
+So, hindsight. The alarm clock is a device that everyone uses and easily relates to, but also a device that people have low expectations for. Most alarms only have one or two times they go off for, and with only a few options for alerting: buzzer or radio. Most go off every day, even on the weekends when you want to sleep in. But people put up with their crappy alarm clocks because there is literally no good alarm clock hardware out there. And some of the features I’ve put into ALARMd can also be seen in alarm clocks that cost over $100 USD. Ridiculous. I would bet that there is a huge market for someone to come out with an alarm clock that doesn’t suck and costs $40, or maybe people just want to use their cell phones all the time. I wonder if the iPhone alarm is any good. Look for my next project, which will be just as, if not more, stupid as the Internet Alarm Clock.

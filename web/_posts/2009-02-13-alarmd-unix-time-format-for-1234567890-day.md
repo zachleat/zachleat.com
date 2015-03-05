@@ -4,9 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /alarmd-unix-time-format-for-1234567890-day/
 categories:
-  - Projects
 tags:
-  - project
 ---
 
 In honor of [1234567890 day][1], I’ve added the Unix time format to [ALARMd][2].

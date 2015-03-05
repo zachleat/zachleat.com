@@ -4,10 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /alarmd-is-a-google-code-project/
 categories:
-  - Projects
 tags:
-  - Alarmd
-  - project
 ---
 
 **Update: [ALARMd has been moved to GitHub](/web/alarmd-is-now-on-github/).**

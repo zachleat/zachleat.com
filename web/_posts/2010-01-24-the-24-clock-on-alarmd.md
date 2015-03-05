@@ -3,15 +3,8 @@ title: 'The 24 Clock on ALARMd'
 author: Zach Leatherman
 layout: post
 permalink: /the-24-clock-on-alarmd/
-bttc_cache:
-  - 1299363135:1
 categories:
-  - CSS
-  - Projects
 tags:
-  - Alarmd
-  - font-face
-  - project
 ---
 
 If you’re only using @font-face for titles and text, you’re missing out on a whole [wealth of use cases][1] that have yet to be explored. For instance, I created a very simple [7 Segment Display Numeric font][2] to be used for a skin on [alarmd.com][3] and changed the color using nothing but CSS to create the “24″ Clock (true fans will note that the actual font is italic and [has a serif on the 1][4]). Nonetheless, this is just another useful application of @font-face.
