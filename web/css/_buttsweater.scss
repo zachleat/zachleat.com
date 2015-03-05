@@ -34,6 +34,9 @@ figcaption {
 	margin-bottom: 1em;
 	line-height: 150%;
 }
+.lato-b-loaded figcaption {
+	font-family: LatoItalic;
+}
 
 /* Layout */
 .rail {
@@ -80,7 +83,7 @@ figcaption {
 	max-width: 31em;
 }
 .maxwidth-list {
-	max-width: 42em;
+	max-width: 60em;
 }
 
 @media (min-width: $twoColLayoutMinWidth) {
@@ -353,14 +356,24 @@ td.emulate { background-color: #40A662; color: #fff; }
 	margin-top: 2em;
 	border-bottom: 1px dotted #ccc;
 }
+.posts .year:first-child {
+	margin-top: 0;
+}
+.posts img,
+.posts .description {
+	margin: .5em 0;
+	padding-left: 24px;
+}
 .posts img {
 	display: block;
-	margin: .5em 0;
 }
 .posts .description {
 	font-size: .730769231em; /* 19x /26 */
-	margin: .5em 0;
 	color: #333;
+	font-style: italic;
+}
+.lato-b-loaded .posts .description {
+	font-family: LatoItalic;
 }
 .posts .smalltitle a {
 	font-size: 23px;
@@ -371,8 +384,16 @@ td.emulate { background-color: #40A662; color: #fff; }
 		padding-left: 13px;
 		padding-right: 13px;
 	}
+	.posts .year {
+		margin-top: 3em;
+	}
 	.posts .smalltitle a {
 		font-size: 1.375em; /* 22px */
+	}
+}
+@media (min-width: $twoColLayoutMinWidth) {
+	.posts .year:first-child {
+		margin-top: 18px;
 	}
 }
 .posts .date {
