@@ -1,6 +1,6 @@
 {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
 {% if currentyear != year %}
-	<li class="year">{{ currentyear }}</li>
+	<li class="subhed">{{ currentyear }}</li>
 	{% capture year %}{{currentyear}}{% endcapture %} 
 {% endif %}
 <li{% if post.tags contains 'deprecated' or post.tags contains 'highlight' or post.tags contains 'smalltitle' %} class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}"{% endif %}{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>

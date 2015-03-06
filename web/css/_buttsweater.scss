@@ -350,13 +350,14 @@ td.emulate { background-color: #40A662; color: #fff; }
 	line-height: 110%;
 	text-decoration: none;
 }
-.posts .year {
+.posts .subhed {
 	padding: 0;
 	line-height: 140%;
 	margin-top: 2em;
 	border-bottom: 1px dotted #ccc;
+	text-transform: uppercase;
 }
-.posts .year:first-child {
+.posts .subhed:first-child {
 	margin-top: 0;
 }
 .posts img,
@@ -380,11 +381,11 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 @media (min-width: 30em) {
 	.posts a,
-	.posts .year {
+	.posts .subhed {
 		padding-left: 13px;
 		padding-right: 13px;
 	}
-	.posts .year {
+	.posts .subhed {
 		margin-top: 3em;
 	}
 	.posts .smalltitle a {
@@ -392,7 +393,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 	}
 }
 @media (min-width: $twoColLayoutMinWidth) {
-	.posts .year:first-child {
+	.posts .subhed:first-child {
 		margin-top: 18px;
 	}
 }
@@ -420,10 +421,10 @@ td.emulate { background-color: #40A662; color: #fff; }
 	.posts-count li {
 		counter-increment: start-from -1;
 	}
-	.posts-count .year {
+	.posts-count .subhed {
 		counter-increment: none;
 	}
-	.posts-count .year,
+	.posts-count .subhed,
 	.posts-count li a {
 		padding-left: 55px;
 	}
@@ -439,7 +440,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 		text-align: right;
 		font-size: .625em; /* 10px */
 	}
-	.posts-count .year:before {
+	.posts-count .subhed:before {
 		content: "";
 	}
 }
