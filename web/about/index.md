@@ -11,7 +11,7 @@ bttc_cache:
 
 This web blog is written by **Zach Leatherman**. 
 
-Zach is a Front End Engineer / Web Developer with [Filament Group](https://github.com/filamentgroup). He has given talks at conferences like [CSSConf](/web/cssconf/2014/) and [Smashing Conference](/web/smashingconf/2014/). He also herds [NebraskaJS](http://nebraskajs.com), a JavaScript meetup. He previously held the title of User Interface Architect for Union Pacific Railroad. His [résumé][2] is probably outdated.
+{% include bio-text.html %} He previously held the title of User Interface Architect for Union Pacific Railroad. His [résumé][2] is probably outdated.
 
 ![Avatar][1]
 
