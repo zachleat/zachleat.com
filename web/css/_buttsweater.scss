@@ -21,9 +21,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-ul {
-	list-style-type: circle;
-}
 figure {
 	margin: 0;
 }
@@ -52,17 +49,9 @@ figcaption {
 	font-size: 1.1875em;
 	line-height: 165%;
 }
-
-@media (min-width: 42em) {
-	.content ol,
-	.content ul {
-		padding-left: 0;
-	}
-	.content ol li,
-	.content ul li {
-		padding-left: 0;
-		margin-left: 0;
-	}
+.content ol,
+.content ul {
+	padding-left: 1em;
 }
 
 .has-gradient.tmpl-page .content a {
