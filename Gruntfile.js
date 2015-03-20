@@ -293,9 +293,9 @@ module.exports = function(grunt) {
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
 	grunt.registerTask('content', ['copy:includes', 'shell:jekyll']);
-	grunt.registerTask('default', ['clean', 'config', 'assets', 'images', 'content']);
+	grunt.registerTask('default', ['clean', 'config', 'assets', 'images', 'content', 'feedburner-size']);
 
 	// Upload to Production
-	grunt.registerTask('stage', ['default', 'htmlmin', 'zopfli', 'feedburner-size']);
+	grunt.registerTask('stage', ['default', 'htmlmin', 'zopfli']);
 	grunt.registerTask('deploy', ['stage', 'shell:upload']);
 };
