@@ -410,7 +410,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 	.posts-count li {
 		counter-increment: start-from -1;
 	}
-	.posts-count .subhed {
+	.posts-count .subhed,
+	.posts-count .upcoming {
 		counter-increment: none;
 	}
 	.posts-count .subhed,
@@ -429,7 +430,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 		text-align: right;
 		font-size: .625em; /* 10px */
 	}
-	.posts-count .subhed:before {
+	.posts-count .subhed:before,
+	.posts-count .upcoming:before {
 		content: "";
 	}
 }

@@ -3,13 +3,15 @@
 	<li class="subhed">{{ currentyear }}</li>
 	{% capture year %}{{currentyear}}{% endcapture %} 
 {% endif %}
-<li{% if post.tags contains 'deprecated' or post.tags contains 'highlight' or post.tags contains 'smalltitle' %} class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}"{% endif %}{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
+<li class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}{% if post.tags contains 'upcoming' %}upcoming {% endif %}"{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
 	{% if post.tags contains 'external' %}
 	<a href="{{ post.external_url }}">
 	{% else %}
 	<a href="{{ site.baseurl }}{{ post.url }}">
 	{% endif %}
-		{% if post.tags contains 'external' %}<span class="external">Off-Site</span>{% endif %}
+		{% if post.tags contains 'upcoming' %}<span class="external">Scheduled</span>
+		{% elsif post.tags contains 'external' %}<span class="external">Off-Site</span>
+		{% endif %}
 		{% if include.view == 'project' %}
 			{% if post.project_name %}{{ post.project_name }}{% else %}{{ post.title }}{% endif %}
 		{% else %}

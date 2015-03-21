@@ -15,7 +15,7 @@ layout: null
 	</author>
 
 	{% for post in site.posts %}
-	{% unless post.tags contains 'deprecated' or post.tags contains 'feedtrim' %}
+	{% unless post.tags contains 'deprecated' or post.tags contains 'feedtrim' or post.tags contains 'upcoming' %}
 	<entry>
 		<title>{{ post.title }}</title>
 		<link href="http://www.zachleat.com/web{{ post.url }}"/>
