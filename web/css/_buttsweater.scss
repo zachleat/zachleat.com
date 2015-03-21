@@ -410,8 +410,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 	.posts-count li {
 		counter-increment: start-from -1;
 	}
-	.posts-count .subhed,
-	.posts-count .upcoming {
+	.posts-count .subhed {
 		counter-increment: none;
 	}
 	.posts-count .subhed,
