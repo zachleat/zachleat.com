@@ -2,6 +2,7 @@
 module.exports = function(grunt) {
 
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+	require('time-grunt')(grunt);
 
 	// Project configuration.
 	grunt.initConfig({
@@ -221,6 +222,7 @@ module.exports = function(grunt) {
 					}
 				}
 			},
+			// TODO https://github.com/shama/grunt-beep
 			upload: {
 				command: 'echo "Note: Requires an \'zachleat\' host in .ssh/config"; rsync -avz ssh ./_site/ zachleat:/home/public/<%= config.root %>',
 				options: {
@@ -293,9 +295,9 @@ module.exports = function(grunt) {
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
 	grunt.registerTask('content', ['copy:includes', 'shell:jekyll']);
-	grunt.registerTask('default', ['clean', 'config', 'assets', 'images', 'content', 'feedburner-size']);
+	grunt.registerTask('default', ['clean', 'config', 'assets', 'content', 'feedburner-size']);
 
 	// Upload to Production
-	grunt.registerTask('stage', ['default', 'htmlmin', 'zopfli']);
+	grunt.registerTask('stage', ['clean', 'config', 'assets', 'images', 'content', 'feedburner-size', 'htmlmin', 'zopfli']);
 	grunt.registerTask('deploy', ['stage', 'shell:upload']);
 };

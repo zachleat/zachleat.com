@@ -23,7 +23,8 @@
     "grunt-zopfli": "^0.3.2",
     "install": "~0.1.7",
     "matchdep": "~0.1.2",
-    "npm": "~1.2.18"
+    "npm": "~1.2.18",
+    "time-grunt": "^1.1.0"
   },
   "scripts": {},
   "repository": {
