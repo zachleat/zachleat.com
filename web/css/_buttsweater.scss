@@ -53,6 +53,9 @@ figcaption {
 .content ul {
 	padding-left: 1em;
 }
+#main-posts-list {
+	padding-left: 0;
+}
 
 .has-gradient.tmpl-page .content a {
 	text-decoration: none;
@@ -403,6 +406,14 @@ td.emulate { background-color: #40A662; color: #fff; }
 	content: '—';
 }
 
+#about-index {
+	font-style: italic;
+	margin-bottom: 3em;
+}
+.lato-b-loaded #about-index {
+	font-family: LatoItalic;
+}
+
 @media (min-width: 30em) {
 	.sub em {
 		display: inline;
@@ -414,7 +425,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 		counter-increment: none;
 	}
 	.posts-count .subhed,
-	.posts-count li a {
+	.posts-count li a,
+	#about-index {
 		padding-left: 55px;
 	}
 	.posts-count li:before {
