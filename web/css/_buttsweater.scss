@@ -27,8 +27,8 @@ figure {
 figcaption {
 	font-size: .75em;
 	font-style: italic;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: .2em;
+	margin-bottom: 4em;
 	line-height: 150%;
 }
 .lato-b-loaded figcaption {
@@ -194,6 +194,7 @@ code {
 	line-height: 100%;
 }
 pre {
+	font-family: $monospaceFont;
 	font-size: .8125em;
 	line-height: 160%;
 	white-space: pre-wrap;
@@ -692,6 +693,22 @@ td.emulate { background-color: #40A662; color: #fff; }
 	width: 14px;
 	height: 16px;
 	display: inline-block;
+}
+
+/* Printed Pages */
+.printed-page {
+	border: 1px solid #999;
+	box-shadow: 4px 4px 0 #ddd;
+	padding: 3em;
+	font-size: 14px
+}
+.printed-page > img {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 3em;
+}
+.printed-page .redacted {
+	background-color: #000;
 }
 
 @font-face {
