@@ -102,7 +102,7 @@ Try it out on this page, I’ve implemented this approach on my site. Open up th
 
 As mentioned, my blog is currently using this experiment in font loading. Here is the JavaScript and CSS I used to implement it, using the [`fontfaceonload` polyfill](https://github.com/zachleat/fontfaceonload).
 
-```js
+{% highlight js %}
 FontFaceOnload( "Lato", {
 	success: function() {
 		var docEl = doc.documentElement;
@@ -136,11 +136,11 @@ FontFaceOnload( "Lato", {
 		});
 	}
 });
-```
+{% endhighlight %}
 
 [*See the full JavaScript for the zachleat.com Implementation of the FOFT.*](https://github.com/zachleat/zachleat.com/blob/e7912017032a731cf6f958c94cacaae35b23a839/web/js/initial.js#L42)
 
-```css
+{% highlight css %}
 body {
 	font-family: sans-serif;
 }
@@ -174,7 +174,8 @@ body {
 .lato-b-loaded blockquote strong {
 	font-family: LatoBoldItalic;
 }
-```
+{% endhighlight %}
+
 *[See the full CSS for the zachleat.com Implementation of the FOFT](https://github.com/zachleat/zachleat.com/blob/e7912017032a731cf6f958c94cacaae35b23a839/web/css/_buttsweater.scss) with the [`@font-face` blocks hidden at the bottom](https://github.com/zachleat/zachleat.com/blob/e7912017032a731cf6f958c94cacaae35b23a839/web/css/_buttsweater.scss#L636).*
 
 ***Important Note**: you have to use different aliased `font-family` names for each `@font-face` block used here. If not, your second stage (the Flash of Faux-Text) will suffer the same Flash of Invisible Text problem that we’re trying to avoid with font loading.*
