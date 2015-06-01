@@ -14,6 +14,7 @@ categories:
   - JavaScript
 tags:
   - Conservative Design
+  - feedtrim
 ---
 
 All of the posts in the Conservative Design series so far have been brainstorming of design patterns. But how about some real life examples, some actual code? Let’s dive in.

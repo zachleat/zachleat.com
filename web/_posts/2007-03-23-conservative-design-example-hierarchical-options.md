@@ -15,6 +15,7 @@ categories:
 tags:
   - Conservative Design
   - Hierarchical Select
+  - feedtrim
 ---
 
 Welcome, one and all, to the second installment of actual code examples for the Conservative Design series. The decision was made (by me) to rename the component in question from the original Hierarchical Select to Hierarchical Options, due to the fact that the hierarchy can consist of any multiple option component, and is not limited to just a select. And to this face, this particular component was documented in the original post entitled [Conservative Design: Hierarchical Select Boxes][1].

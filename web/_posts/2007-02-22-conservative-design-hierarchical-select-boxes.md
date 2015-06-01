@@ -15,6 +15,7 @@ tags:
   - Conservative Design
   - Design Patterns
   - Hierarchical Select
+  - feedtrim
 ---
 
 This is a post in a series entitled [Conservative Design Patterns for Form Elements][1].
