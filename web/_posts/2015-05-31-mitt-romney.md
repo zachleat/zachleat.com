@@ -24,7 +24,9 @@ In January, [James Muspratt](https://twitter.com/jmuspratt) tweeted the followin
 	<figcaption><a href="https://twitter.com/jmuspratt/status/561239961924403200">A tweet from James Muspratt</a></figcaption>
 </figure>
 
-The headline from Slate.com was important breaking news about Mitt Romney’s intention to run for President. The headline was rendered using the [Apres typeface](http://www.fontbureau.com/fonts/Apres/) but using two different web fonts, one for bold and one for combination bold and italic. If you don’t see the italic variation above, I’ll explain why.
+The headline from Slate.com was important breaking news about Mitt Romney’s intention to run for President. The headline was rendered using the <del>[Apres](http://www.fontbureau.com/fonts/Apres/)</del> [Titling Gothing FB](http://www.fontbureau.com/fonts/TitlingGothicFB/) typeface but using two different web fonts, one for bold and one for combination bold and italic. If you don’t see the italic variation above, I’ll explain why.
+
+_**Correction: As [Stephen Coles notes in the comments](http://www.zachleat.com/web/mitt-romney-webfont-problem/#comment-2055839587) the typeface is Titling Gothic, not Apres.**_
 
 This is how the page looks when all of the web fonts have finished loading:
 
