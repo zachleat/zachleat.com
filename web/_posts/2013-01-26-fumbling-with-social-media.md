@@ -3,8 +3,6 @@ title: 'A Web Developer Fumbling with Social Media'
 author: Zach Leatherman
 layout: post
 permalink: /fumbling-with-social-media/
-categories:
-  - Personal
 ---
 
 As a curious web developer that’s moderately obsessed with statistics, I decided to go back and look at my history of side projects, blog posts, and other junk I’ve posted on twitter to see what has had the biggest impact on my ‘social reach.’ Yeah, I know. It felt wrong typing ‘social reach’—I’ll put a dollar in the jar. I’ll probably owe a few of those before this post is done.

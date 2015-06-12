@@ -3,7 +3,10 @@ title: A Frugal and Simple Guide to Putting Lights on your Bike
 author: Zach Leatherman
 layout: post
 permalink: /bike-lights/
+categories:
+  - Personal
 tags:
+  - feedtrim
 ---
 
 Last weekend I put up a tweet:
