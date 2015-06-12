@@ -197,6 +197,9 @@ pre {
 	font-family: $monospaceFont;
 	font-size: .8125em;
 	line-height: 160%;
+	padding: .5em 1em;
+	background-color: #f7f7f7;
+	border: 1px solid #e1e1e1;
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -pre-wrap;
@@ -209,9 +212,6 @@ pre {
 	}
 	h1, h2 {
 		padding: 0;
-	}
-	pre {
-		font-size: 1em;
 	}
 }
 blockquote {
