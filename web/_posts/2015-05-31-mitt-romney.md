@@ -6,6 +6,8 @@ permalink: /mitt-romney-webfont-problem/
 headimage: https://c2.staticflickr.com/8/7178/6791949310_09afb2e2cf_b.jpg
 categories:
   - research
+tags:
+  - highlight
 ---
 
 <figure>
