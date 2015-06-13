@@ -710,6 +710,10 @@ td.emulate { background-color: #40A662; color: #fff; }
 .printed-page .redacted {
 	background-color: #000;
 }
+.printed-page pre {
+	border-color: transparent;
+	background-color: transparent;
+}
 
 @font-face {
 	font-family: Lato;
