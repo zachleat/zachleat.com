@@ -77,4 +77,12 @@
 	.w3c-b.rr:before {
 		content: "W3C Rescinded Recommendation";
 	}
+	/* Rainbow gradient */
+	.w3c-custom.w3c-custom,
+	.w3c-b.w3c-b:before {
+		background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+		background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+		text-shadow: 0 0 4px rgba(0,0,0,0.6);
+		box-shadow: 0 0 2px rgba(0,0,0,0.6);
+	}
 }
