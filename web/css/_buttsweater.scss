@@ -192,6 +192,13 @@ code {
 	font-family: $monospaceFont;
 	font-size: .947368421em; /* 18px / 19px */
 	line-height: 100%;
+	border: 1px solid #ccc;
+  padding: .2em .2em .1em;
+  margin: 0 0.1em;
+  color: #444;
+}
+pre > code {
+	border: none;
 }
 pre {
 	font-family: $monospaceFont;
