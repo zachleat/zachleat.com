@@ -192,7 +192,7 @@ code {
 	font-family: $monospaceFont;
 	font-size: .947368421em; /* 18px / 19px */
 	line-height: 100%;
-	border: 1px solid #ccc;
+	background-color: #e9e9e9;
   padding: .2em .2em .1em;
   margin: 0 0.1em;
   color: #444;
@@ -204,15 +204,14 @@ h4 code,
 h5 code,
 h6 code,
 pre > code {
-	border: none;
+	background-color: transparent;
 }
 pre {
 	font-family: $monospaceFont;
 	font-size: .8125em;
 	line-height: 160%;
 	padding: .5em 1em;
-	background-color: #f7f7f7;
-	border: 1px solid #e1e1e1;
+	background-color: #f4f4f4;
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -pre-wrap;
