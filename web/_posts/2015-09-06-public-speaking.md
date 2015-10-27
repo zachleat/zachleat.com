@@ -22,7 +22,7 @@ I crafted a presentation about public speaking in which I didn't say a single wo
 The web-based presentation tool I used was created explicitly for this talk (you may recognize [BigText](/web/bigtext-makes-text-big/)) and it allowed me to do a few special things (break the rules) in a way that would have been much more difficult with traditional presentation software like Apple’s Keynote. I don't think I'll give away any more than that, have a look at the video below.
 
 <figure>
-	<div class="fluid-width-video-wrapper"><iframe src="//www.youtube.com/embed/uH_-_mrksV4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+	<div class="fluid-width-video-wrapper"><iframe src="https://www.youtube.com/embed/uH_-_mrksV4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 	<figcaption><a href="https://www.youtube.com/watch?v=uH_-_mrksV4">Barcamp Omaha 2015 &mdash; Zach Leatherman on A Hypocrite’s Guide to Public Speaking</a>.</figcaption>
 </figure>
 
