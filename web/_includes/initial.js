@@ -1,4 +1,4 @@
-/*! zachleat.com - v0.2.20 - 2015-10-20
+/*! zachleat.com - v0.2.20 - 2015-10-26
 * Copyright (c) 2015 Zach Leatherman; MIT License */
 var ZL = {
 	getDistFolder: function() {
@@ -15,10 +15,21 @@ var ZL = {
 	}
 
 	var templateName = doc.querySelector( 'meta[name="template"]' );
-	document.documentElement.className += ' enhanced-js' +
-		( templateName ? " tmpl-" + templateName.content : "" ) +
-		// gradient inference
-		( 'matchMedia' in window ? " has-gradient" : "" );
+	var classes = [ "enhanced-js" ];
+
+	if( templateName ) {
+		classes.push( "tmpl-" + templateName.content );
+	}
+	// gradient inference
+	if( 'matchMedia' in window ) {
+		classes.push( "has-gradient" );
+	}
+	if( sessionStorage.latoLoaded && sessionStorage.latoBoldItalicLoaded ) {
+		classes.push( "lato-loaded" );
+		classes.push( "lato-b-loaded" );
+	}
+
+	document.documentElement.className += " " + classes.join( " " );
 })( document );
 
 // Fonts
@@ -235,9 +246,7 @@ var ZL = {
 
 	var docEl = doc.documentElement;
 
-	if( sessionStorage.latoLoaded && sessionStorage.latoBoldItalicLoaded ) {
-		docEl.className += " lato-loaded lato-b-loaded";
-	} else {
+	if( !sessionStorage.latoLoaded || sessionStorage.latoBoldItalicLoaded ) {
 		FontFaceOnload( "Lato", {
 			error: function() {},
 			success: function() {
