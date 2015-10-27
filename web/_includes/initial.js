@@ -1,3 +1,5 @@
+/*! zachleat.com - v0.2.20 - 2015-10-20
+* Copyright (c) 2015 Zach Leatherman; MIT License */
 var ZL = {
 	getDistFolder: function() {
 		var distMeta = document.querySelector( 'meta[name="dist"]' );

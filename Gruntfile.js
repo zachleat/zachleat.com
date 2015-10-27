@@ -126,7 +126,9 @@ module.exports = function(grunt) {
 			includes: {
 				files: {
 					'<%= config.root %>_includes/initial.min.css': ['<%= config.distFolder %>initial.min.css'],
-					'<%= config.root %>_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js']
+					'<%= config.root %>_includes/initial.css': ['<%= config.distFolder %>initial.css'],
+					'<%= config.root %>_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
+					'<%= config.root %>_includes/initial.js': ['<%= config.distFolder %>initial.js']
 				}
 			}
 		},
