@@ -17,7 +17,6 @@ Prerequisites: Node.js and Ruby
 1. [`gem install jekyll`](http://jekyllrb.com/docs/installation/) (requires 1.0+)
 1. `gem install sass`
 1. `npm install`
-1. `bower install iliveinomaha`
 1. `grunt`
 
 ## Local Development Workflow

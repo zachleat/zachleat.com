@@ -21,8 +21,7 @@ module.exports = function(grunt) {
 			imgSrc: '<%= config.root %>img/',
 			iconsSrc: '<%= config.imgSrc %>icons/',
 			distFolder: '<%= config.root %>dist/<%= pkg.version %>/',
-			distFeed: '<%- config.root %>_site/feed/atom.xml',
-			bowerDir: 'bower_components/'
+			distFeed: '<%- config.root %>_site/feed/atom.xml'
 		},
 		yaml: {
 			file: '<%= config.root %>_config.yml',
@@ -118,9 +117,7 @@ module.exports = function(grunt) {
 		copy: {
 			// Because sass won’t import css files
 			'css-to-sass': {
-				files: {
-					'<%= config.cssSrc %>_iliveinomaha.scss': ['<%= config.bowerDir %>iliveinomaha/iliveinomaha.css']
-				}
+				files: {}
 			},
 			// For CSS inlining
 			includes: {
@@ -240,7 +237,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			assets: {
-				files: ['<%= config.bowerDir %>**/*', '<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
+				files: ['<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
 				tasks: ['assets', 'content']
 			},
 			grunticon: {
