@@ -1,4 +1,4 @@
-/*! zachleat.com - v0.2.21 - 2015-10-26
+/*! zachleat.com - v0.2.22 - 2015-11-13
 * Copyright (c) 2015 Zach Leatherman; MIT License */
 var ZL = {
 	getDistFolder: function() {
