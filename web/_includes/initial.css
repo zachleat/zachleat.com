@@ -122,10 +122,12 @@ body {
   background-color: #fff;
   font-size: 100%;
   line-height: 140%;
+  font-size-adjust: .51;
 }
 
 .lato-loaded body {
   font-family: Lato, sans-serif;
+  font-size-adjust: none;
 }
 
 :link {
@@ -508,11 +510,13 @@ td.emulate {
 
 #about-index {
   font-style: italic;
+  font-size-adjust: .47;
   margin-bottom: 3em;
 }
 
 .lato-b-loaded #about-index {
   font-family: LatoItalic;
+  font-size-adjust: none;
 }
 
 @media (min-width: 30em) {
@@ -797,6 +801,7 @@ td.emulate {
 
 .tags {
   white-space: nowrap;
+  line-height: 1;
 }
 
 .tag.video .length,

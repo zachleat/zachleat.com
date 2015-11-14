@@ -108,9 +108,11 @@ body {
 	background-color: $backgroundColor;
 	font-size: 100%;
 	line-height: 140%;
+	font-size-adjust: .51;
 }
 .lato-loaded body {
 	font-family: Lato, $sansSerifFont;
+	font-size-adjust: none;
 }
 :link {
 	color: #67a281;
@@ -421,10 +423,12 @@ td.emulate { background-color: #40A662; color: #fff; }
 
 #about-index {
 	font-style: italic;
+	font-size-adjust: .47;
 	margin-bottom: 3em;
 }
 .lato-b-loaded #about-index {
 	font-family: LatoItalic;
+	font-size-adjust: none;
 }
 
 @media (min-width: 30em) {
@@ -660,6 +664,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 }
 .tags {
 	white-space: nowrap;
+	line-height: 1;
 }
 .tag.video .length,
 .tag.audio .length {
