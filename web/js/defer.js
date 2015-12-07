@@ -24,3 +24,32 @@
 	}
 })( document );
 
+// Template JS
+;(function( doc ) {
+	// IE9+
+	if( !( 'geolocation' in navigator ) ) {
+		return;
+	}
+
+	var templateName = doc.querySelector( 'meta[name="template"]' );
+
+	/* Fake w3c banner */
+	var banner = ' w3c-b ' + [ 'ud', 'wd', 'cr', 'pr', 'r', 'wgn', 'ign', 'ed' ][ Math.floor( Math.random() * 8 ) ];
+	document.documentElement.className += banner;
+
+	// Filter Posts Menu
+	var filter = doc.getElementById( 'post-filter' ),
+		filterForm = doc.getElementById( 'post-filter-form' ),
+		posts = doc.getElementById( 'main-posts-list' ),
+		initialClassName = '';
+
+	function updateFilter() {
+		posts.className = initialClassName + ' ' + filter.options[ filter.selectedIndex ].value;
+	}
+
+	if( filter && posts && 'addEventListener' in doc ) {
+		initialClassName = posts.className;
+		updateFilter();
+		filter.addEventListener( 'change', updateFilter, false );
+	}
+})( document );

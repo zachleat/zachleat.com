@@ -4,28 +4,6 @@
 		return;
 	}
 
-	var templateName = doc.querySelector( 'meta[name="template"]' );
-
-	/* Fake w3c banner */
-	var banner = ' w3c-b ' + [ 'ud', 'wd', 'cr', 'pr', 'r', 'wgn', 'ign', 'ed' ][ Math.floor( Math.random() * 8 ) ];
-	document.documentElement.className += banner;
-
-	// Filter Posts Menu
-	var filter = doc.getElementById( 'post-filter' ),
-		filterForm = doc.getElementById( 'post-filter-form' ),
-		posts = doc.getElementById( 'main-posts-list' ),
-		initialClassName = '';
-
-	function updateFilter() {
-		posts.className = initialClassName + ' ' + filter.options[ filter.selectedIndex ].value;
-	}
-
-	if( filter && posts && 'addEventListener' in doc ) {
-		initialClassName = posts.className;
-		updateFilter();
-		filter.addEventListener( 'change', updateFilter, false );
-	}
-
 	// Hamburger Icon
 	if( 'requestAnimationFrame' in window ) {
 
@@ -47,7 +25,7 @@
 			return Math.floor(Math.random() * (max - min + 1)) + min;
 		}
 
-		var active;
+		var state = 0;
 		var docHeight;
 		var docWidth;
 		var icon = doc.getElementById( 'hamburger' );
@@ -57,25 +35,13 @@
 			if( !docHeight ) {
 				docHeight = getDocHeight();
 			}
-			if( !docWidth ) {
-				docWidth = getDocWidth();
-			}
 			var node = doc.createElement( 'div' );
 			node.className = 'beforeanimate';
 			icon.appendChild( node );
 			icon.offsetWidth;
 			node.className = '';
 
-			// window.setTimeout(function() {
-			// 	var x = getRand( -1*docWidth + 16, 16 );
-			// 	var y = getRand( -40, 40 );
-			// 	var rotate = getRand( -180, 180 );
-			// 	var scale = Math.random() * 2;
-			// 	var transform = 'translateX(' + x + 'px) translateY(' + y + 'px) rotate(' + rotate + 'deg)';
-			// 	node.style.transform = transform;
-			// }, 400 );
-
-			if( active ) {
+			if( !!state ) {
 				if( icon.offsetHeight < docHeight - 20 ) {
 					requestAnimationFrame( addLayer );
 				} // else trigger complete
@@ -83,15 +49,43 @@
 		}
 
 		icon.addEventListener( 'click', function() {
-			if( active ) {
-				active = false;
+			if( state > 2 ) {
+				state = 0;
 
 				// reset
 				requestAnimationFrame(function() {
-					icon.innerHTML = "<div></div><div></div><div></div>";
+					icon.innerHTML = '<div></div><div></div><div></div>';
 				});
+				icon.className = 'hamburger enabled';
+			} else if( state === 2 ) {
+				state++;
+				var bars = icon.childNodes;
+				for( var j = 0, k = bars.length; j < k; j++ ) {
+					bars[ j ].style.transform = 'none';
+				}
+			} else if( state === 1 ) {
+				state++;
+				var bars = icon.childNodes;
+
+				if( !docWidth ) {
+					docWidth = getDocWidth();
+				}
+
+				for( var j = 0, k = bars.length; j < k; j++ ) {
+					(function() {
+						var bar = bars[ j ];
+						requestAnimationFrame(function() {
+							var x = getRand( -1*docWidth + 16, 16 );
+							var y = getRand( -40, 40 );
+							var rotate = getRand( -180, 180 );
+							var scale = Math.random() * 2;
+							var transform = 'translateX(' + x + 'px) translateY(' + y + 'px) rotate(' + rotate + 'deg)';
+							bar.style.transform = transform;
+						});
+					})();
+				}
 			} else {
-				active = true;
+				state = 1;
 				icon.innerHTML = '';
 				requestAnimationFrame( addLayer );
 			}

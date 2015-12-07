@@ -14,7 +14,7 @@
 	.hamburger div {
 		position: relative;
 		opacity: 1;
-		transition: all .4s cubic-bezier(0.13, 0.49, 0.29, 0.87);
+		transition: all .6s cubic-bezier(0.13, 0.49, 0.29, 0.87);
 	}
 	.hamburger div.beforeanimate {
 		opacity: 0;
@@ -25,6 +25,6 @@
 		display: block;
 		border-top: 3px solid rgba(60, 96, 60, .8); //$primaryColor;
 		padding-bottom: 3px;
-		background-color: rgba( 255, 255, 255, .7 );
+		// background-color: rgba( 255, 255, 255, .7 );
 	}
 }
