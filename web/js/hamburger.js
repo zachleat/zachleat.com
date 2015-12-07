@@ -25,6 +25,15 @@
 			return Math.floor(Math.random() * (max - min + 1)) + min;
 		}
 
+		function moveRandom( bar ) {
+			var x = getRand( -1 * docWidth + 16, 16 );
+			var y = getRand( -40, 40 );
+			var rotate = getRand( -180, 180 );
+			var scale = Math.random() * 2;
+			var transform = 'translateX(' + x + 'px) translateY(' + y + 'px) rotate(' + rotate + 'deg)';
+			bar.style.transform = transform;
+		}
+
 		var state = 0;
 		var docHeight;
 		var docWidth;
@@ -42,6 +51,9 @@
 			node.className = '';
 
 			if( !!state ) {
+				if( state === 2 ) {
+					moveRandom( node );
+				}
 				if( icon.offsetHeight < docHeight - 20 ) {
 					requestAnimationFrame( addLayer );
 				} // else trigger complete
@@ -75,12 +87,7 @@
 					(function() {
 						var bar = bars[ j ];
 						requestAnimationFrame(function() {
-							var x = getRand( -1*docWidth + 16, 16 );
-							var y = getRand( -40, 40 );
-							var rotate = getRand( -180, 180 );
-							var scale = Math.random() * 2;
-							var transform = 'translateX(' + x + 'px) translateY(' + y + 'px) rotate(' + rotate + 'deg)';
-							bar.style.transform = transform;
+							moveRandom( bar );
 						});
 					})();
 				}
