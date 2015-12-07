@@ -6,6 +6,147 @@ var ZL = {
 	}
 };
 
+// FOUT log
+;(function( doc ) {
+	return;
+
+	var start;
+	var times = [];
+	var loadingStartTimes = {};
+	var loadingEndTimes = {};
+	var cancel = false;
+	window.onload = function() {
+		cancel = true;
+	};
+
+	function getDimensions( element ) {
+		return {
+			width: element.offsetWidth,
+			height: element.offsetHeight
+		};
+	}
+
+	function getNodesSize( parent, nodes ) {
+		var size = getDimensions( parent );
+		var hasTextChildren = false;
+		var totalExemptSize = 0;
+		var exemptSizes = [];
+
+		parent.childNodes.forEach(function( child ) {
+			var childSize;
+			if( child.nodeType === 3 && child.textContent.trim() ) {
+				hasTextChildren = true;
+			} else if( child.nodeType === 1 ) {
+				switch ( child.tagName.toLowerCase() ) {
+					// things that might change size when they’re loading
+					case "iframe":
+					case "img":
+					case "picture":
+					case "svg":
+					case "object":
+					case "video":
+					case "audio":
+					// case "canvas":
+						childSize = getDimensions( child )
+						exemptSizes.push( childSize );
+						break;
+				}
+
+				nodes = getNodesSize( child, nodes );
+			}
+		});
+
+		if( !parent.reflowData ) {
+			parent.reflowData = {
+				sizes: [],
+				exempted: []
+			};
+		}
+
+		if( hasTextChildren ) {
+			parent.reflowData.sizes.push( size );
+			parent.reflowData.exempted.push( exemptSizes );
+			nodes.push( parent );
+		}
+
+		return nodes;
+	}
+
+	function init() {
+		times.push( performance.now() );
+		var nodes = getNodesSize( document.body, [] );
+
+		if( !cancel ) {
+			requestAnimationFrame(init);
+		} else {
+			finish( times, nodes )
+		}
+	}
+
+	function finish( times, nodes ) {
+		console.log( "Iterations: ", times.length );
+		var totalScore = 0;
+		nodes.forEach(function( node ) {
+			var score = calculateReflow( node );
+			node.reflowData.score = score;
+			totalScore += score;
+		});
+		console.log( "Total Text Reflow Score: ", totalScore );
+		nodes.forEach(function( node ) {
+			var percent = ( node.reflowData.score / totalScore ).toFixed( 5 ) * 100;
+			if( percent > 1 ) {
+				console.log( node.reflowData.score, percent + "%", node );
+			}
+		});
+	}
+
+	function calculateReflow( node ) {
+		var sizes = node.reflowData.sizes;
+		var reflowScore = 0;
+		for( var j = 1, k = sizes.length; j < k; j++ ) {
+			if( sizes[ j ].width !== sizes[ j - 1 ].width || 
+				sizes[ j ].height !== sizes[ j - 1 ].height ) {
+				reflowScore += Math.abs( sizes[ j ].width * sizes[ j ].height - sizes[ j - 1].width * sizes[ j - 1].height );
+				// TODO exempt sizes
+			}
+		}
+		return reflowScore;
+	}
+
+	requestAnimationFrame(init);
+
+	function isWebFont( family ) {
+		var result = false;
+		doc.fonts.forEach(function( font ) {
+			if( font.family === family ) {
+				result = true;
+			}
+		});
+
+		return true;
+	}
+
+	// Returns false if not a webfont
+	// TODO featureSettings, stretch, unicodeRange, variant
+	function getFontFaceInstance( family, weight, style ) {
+		var result = false;
+		var weightLookup = {
+			normal: '400',
+			bold: '700'
+		};
+
+		doc.fonts.forEach(function( font ) {
+			if( font.family === family &&
+				( font.weight === weight || font.weight === weightLookup[ weight ] ) &&
+				font.style === style ) {
+				result = font;
+			}
+		});
+
+		return result;
+	}
+})( document );
+
 ;(function( doc ) {
 	// IE9+
 	if( !( 'geolocation' in navigator ) ) {
@@ -243,9 +384,10 @@ var ZL = {
 })( this, this.document );
 
 	var docEl = doc.documentElement;
-
+return;
 	if( !sessionStorage.latoLoaded || sessionStorage.latoBoldItalicLoaded ) {
-		FontFaceOnload( "Lato", {
+		// FontFaceOnload( "Lato", {
+		FontFaceOnload( "LatoSubset", {
 			error: function() {},
 			success: function() {
 				docEl.className += " lato-loaded";
@@ -254,12 +396,16 @@ var ZL = {
 				var counter = 0;
 				var success = function() {
 					counter++;
-					if( counter === 3 ) {
+					// if( counter === 3 ) {
+					if( counter === 4 ) {
 						docEl.className += " lato-b-loaded";
 						sessionStorage.latoBoldItalicLoaded = true;
 					}
 				};
 
+				FontFaceOnload( "Lato", {
+					success: success
+				});
 				FontFaceOnload( "LatoBold", {
 					weight: 700,
 					success: success

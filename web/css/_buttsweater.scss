@@ -30,9 +30,7 @@ figcaption {
 	margin-top: .2em;
 	margin-bottom: 4em;
 	line-height: 150%;
-}
-.lato-b-loaded figcaption {
-	font-family: LatoItalic;
+	@include webfontItalic;
 }
 
 /* Layout */
@@ -109,9 +107,9 @@ body {
 	font-size: 100%;
 	line-height: 140%;
 	font-size-adjust: .51;
+	@include webfont;
 }
 .lato-loaded body {
-	font-family: Lato, $sansSerifFont;
 	font-size-adjust: none;
 }
 :link {
@@ -126,29 +124,23 @@ body {
 :visited:hover {
 	color: #d94625;
 }
-.lato-b-loaded strong {
-	font-family: LatoBold;
+strong {
+	@include webfontBold;
 }
-.lato-b-loaded em,
-.lato-b-loaded blockquote {
-	font-family: LatoItalic;
+em,
+blockquote {
+	@include webfontItalic;
 }
-.lato-b-loaded strong em,
-.lato-b-loaded strong blockquote,
-.lato-b-loaded em strong,
-.lato-b-loaded blockquote strong {
-	font-family: LatoBoldItalic;
+strong em,
+strong blockquote,
+em strong,
+blockquote strong {
+	@include webfontBoldItalic;
 }
 h1, h2, h3, h4, h5 {
 	margin-top: 1.4em;
 	text-transform: uppercase;
-}
-.lato-b-loaded h1,
-.lato-b-loaded h2,
-.lato-b-loaded h3,
-.lato-b-loaded h4,
-.lato-b-loaded h5 {
-	font-family: LatoBold;
+	@include webfontBold;
 }
 h1 {
 	color: #222;
@@ -269,9 +261,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 	text-align: left;
 	margin: 0 0 .1em 0;
 	vertical-align: bottom;
-}
-.lato-loaded .rail h1 {
-	font-family: Lato;
+	@include webfont;
 }
 .rail img {
 	width: 80px;
@@ -380,10 +370,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 .posts .description {
 	font-size: .730769231em; /* 19x /26 */
 	color: #333;
-	font-style: italic;
-}
-.lato-b-loaded .posts .description {
-	font-family: LatoItalic;
+	@include webfontItalic;
 }
 .posts .smalltitle a {
 	font-size: 23px;
@@ -427,9 +414,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 	font-style: italic;
 	font-size-adjust: .47;
 	margin-bottom: 3em;
+	@include webfontItalic;
 }
 .lato-b-loaded #about-index {
-	font-family: LatoItalic;
 	font-size-adjust: none;
 }
 
@@ -701,9 +688,8 @@ td.emulate { background-color: #40A662; color: #fff; }
 	color: #999;
 	line-height: 100%;
 }
-.lato-loaded .posts .highlight a .external {
-	font-family: Lato;
-	font-weight: 400;
+.posts .highlight a .external {
+	@include webfont;
 }
 .external:after {
 	content: ": ";
@@ -734,6 +720,17 @@ td.emulate { background-color: #40A662; color: #fff; }
 	background-color: transparent;
 }
 
+
+// @font-face {
+// 	font-family: LatoSubset;
+// 	src: url('/web/css/fonts/lato/lato-regular-alphabetsubset.woff2') format('woff2'),
+// 			 url('/web/css/fonts/lato/lato-regular-alphabetsubset.woff') format('woff'),
+// 			 url('/web/css/fonts/lato/lato-regular-alphabetsubset.ttf') format('truetype');
+// 	font-weight: 400;
+// 	font-style: normal;
+// 	unicode-range: U+65-U+90, U+97-122;
+// }
+
 @font-face {
 	font-family: Lato;
 	src: url('/web/css/fonts/lato/lato-regular-webfont.woff2') format('woff2'),
@@ -741,6 +738,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 			 url('/web/css/fonts/lato/lato-regular-webfont.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
+	// font-display: swap;
 }
 
 @font-face {
@@ -750,6 +748,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 			 url('/web/css/fonts/lato/lato-bold-webfont.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
+	// font-display: swap;
 }
 
 @font-face {
@@ -759,6 +758,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 			 url('/web/css/fonts/lato/lato-italic-webfont.ttf') format('truetype');
 	font-weight: 400;
 	font-style: italic;
+	// font-display: swap;
 }
 
 @font-face {
@@ -768,4 +768,5 @@ td.emulate { background-color: #40A662; color: #fff; }
 			 url('/web/css/fonts/lato/lato-bolditalic-webfont.ttf') format('truetype');
 	font-weight: 700;
 	font-style: italic;
+	// font-display: swap;
 }
