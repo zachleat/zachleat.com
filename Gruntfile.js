@@ -49,7 +49,13 @@ module.exports = function(grunt) {
 				dest: '<%= config.distFolder %>initial.js'
 			},
 			jsDefer: {
-				src: ['<%= config.jsSrc %>defer.js'],
+				src: [
+					'<%= config.jsSrc %>defer.js',
+					'<%= config.jsSrc %>hamburger.js',
+					'<%= config.jsSrc %>google-analytics.js',
+					'<%= config.jsSrc %>disqus.js',
+					'<%= config.jsSrc %>twitter-api.js'
+					],
 				dest: '<%= config.distFolder %>defer.js'
 			}
 			// CSS concat handled by SASS

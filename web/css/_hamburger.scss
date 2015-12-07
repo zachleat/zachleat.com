@@ -1,0 +1,30 @@
+/* Hamburger Menu */
+@media only all {
+	.hamburger {
+		display: none;
+	}
+	.hamburger.enabled {
+		display: block;
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		width: 1.5em;
+		cursor: pointer;
+	}
+	.hamburger div {
+		position: relative;
+		opacity: 1;
+		transition: all .4s cubic-bezier(0.13, 0.49, 0.29, 0.87);
+	}
+	.hamburger div.beforeanimate {
+		opacity: 0;
+	}
+	.hamburger div,
+	.hamburger div:before,
+	.hamburger div:after {
+		display: block;
+		border-top: 3px solid rgba(60, 96, 60, .8); //$primaryColor;
+		padding-bottom: 3px;
+		background-color: rgba( 255, 255, 255, .7 );
+	}
+}
