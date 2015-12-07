@@ -99,7 +99,7 @@ figcaption {
     right: 0;
     top: 0;
     width: 18em;
-    padding: 5em 3em 0 0;
+    padding: 5em 5em 0 0;
   }
 
   .content {
@@ -334,6 +334,8 @@ td.emulate {
   height: 80px;
   margin-right: .5em;
   border-radius: 0 50%;
+  background-color: #3c603c;
+  color: transparent;
 }
 
 .rail .navigation {
