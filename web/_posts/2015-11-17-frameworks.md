@@ -10,7 +10,7 @@ Earlier this week, Paul Lewis wrote a [great post gathering data on the performa
 
 > “It seems to me that developer ergonomics should be less important than our users’ needs.”—Paul Lewis
 
-One of the great things about Paul’s post is that his data clearly debunks a relationship between framework file size and JavaScript execution time. Notably, React and Polymer had similar results despite Polymer having ~3.5x the file size.
+One of the great things about Paul’s post is that his data clearly debunks a relationship between framework file size and JavaScript execution time. Notably, React and Polymer had similar results despite React having ~3.5x the file size.
 
 _(Related: Scott Jehl’s [More Weight Doesn’t Mean More Wait](https://www.filamentgroup.com/lab/weight-wait.html))_
 
@@ -59,3 +59,7 @@ Again, I wouldn’t and couldn’t credibly say that you should forgo frameworks
 Your framework choice sets the performance baseline that your application code will pile on top of. Visitors are impatient and choosing the wrong framework can set the performance baseline too high even for “miniscule” applications.
 
 Vote with your `npm install` and choose one that is focused on (mobile) performance. Frameworks exist that don’t prohibitively hamper the perceived performance of your site. Frameworks exist that have a fast initial (preferably server side) render. The data is clear. Choose wisely. Your users will stick around long enough to thank you for it.
+
+---
+
+_A previous version of this article stated that Polymer was 3.5x the file size of React. The reverse is true. Thanks [notbrent](https://twitter.com/notbrent/status/667740388279451649)._
