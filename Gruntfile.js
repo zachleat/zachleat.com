@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 			jsDefer: {
 				src: [
 					'<%= config.jsSrc %>defer.js',
-					'<%= config.jsSrc %>hamburger.js',
+					'node_modules/infinity-burger/infinity-burger.js',
 					'<%= config.jsSrc %>google-analytics.js',
 					'<%= config.jsSrc %>disqus.js',
 					'<%= config.jsSrc %>twitter-api.js'
@@ -123,7 +123,9 @@ module.exports = function(grunt) {
 		copy: {
 			// Because sass won’t import css files
 			'css-to-sass': {
-				files: {}
+				files: {
+					'web/css/lib/_infinity-burger.scss': 'node_modules/infinity-burger/infinity-burger.css'
+				}
 			},
 			// For CSS inlining
 			includes: {
