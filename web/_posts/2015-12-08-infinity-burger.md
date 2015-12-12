@@ -5,6 +5,7 @@ layout: post
 categories:
  - project
 tags:
+ - project
 permalink: /infinity-burger/
 ---
 
