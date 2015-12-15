@@ -655,6 +655,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 	white-space: nowrap;
 	line-height: 1;
 }
+.tags:empty {
+	display: none;
+}
 .tag.video .length,
 .tag.audio .length {
 	text-transform: none;
@@ -678,7 +681,7 @@ td.emulate { background-color: #40A662; color: #fff; }
 	color: #fff;
 }
 .tag + .tag.highlight {
-	margin-left: -11px;
+	margin-left: -6px;
 }
 
 /* External Links */

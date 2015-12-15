@@ -17,14 +17,7 @@
 		{% else %}
 			{{ post.title }}
 		{% endif %}
-		<span class="tags">
-			{% if post.tags contains 'external' %}<span class="icon-link-external"></span>{% endif %}
-			{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}
-			{% if post.tags contains 'audio' %}<span class="tag audio">Audio{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}
-			{% if post.tags contains 'project' %}<span class="tag project">Project</span>{% endif %}
-			{% if post.tags contains 'research' %}<span class="tag research">Research</span>{% endif %}
-			{% if post.tags contains 'highlight' %}<span class="tag highlight" aria-hidden="true" title="Highlight">★</span>{% endif %}
-		</span>
+		<span class="tags">{% if post.tags contains 'external' %}<span class="icon-link-external"></span>{% endif %}{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}{% if post.tags contains 'audio' %}<span class="tag audio">Audio{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}{% if post.tags contains 'project' %}<span class="tag project">Project</span>{% endif %}{% if post.tags contains 'research' %}<span class="tag research">Research</span>{% endif %}{% if post.tags contains 'highlight' %}<span class="tag highlight" aria-hidden="true" title="Highlight">★</span>{% endif %}</span>
 		<span class="date">{{ post.date | date: "%h %Y" }}</span>
 		{% if include.view == 'project' %}
 			{% if post.headimage %}<img src="{{ post.headimage }}">{% endif %}
