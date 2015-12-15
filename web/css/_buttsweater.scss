@@ -631,6 +631,9 @@ td.emulate { background-color: #40A662; color: #fff; }
 .enhanced-js .post-filter {
 	display: block;
 }
+.enhanced-js .posts:not(.enhanced) .deprecated {
+	@include a11y-only;
+}
 .posts.deprecated .deprecated,
 .posts.highlighted li {
 	@include a11y-only;

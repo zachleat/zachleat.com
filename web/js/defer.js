@@ -48,7 +48,7 @@
 	}
 
 	if( filter && posts && 'addEventListener' in doc ) {
-		initialClassName = posts.className;
+		initialClassName = posts.className + ' enhanced';
 		updateFilter();
 		filter.addEventListener( 'change', updateFilter, false );
 	}
