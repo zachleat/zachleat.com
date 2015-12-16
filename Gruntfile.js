@@ -130,8 +130,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'<%= config.distFolder %>initial.min.css': ['<%= config.distFolder %>initial.css'],
-					'<%= config.distFolder %>defer.min.css': ['<%= config.distFolder %>defer.css'],
-					'<%= config.distFolder %>icons.min.css': ['<%= config.distFolder %>icons.css']
+					'<%= config.distFolder %>defer.min.css': ['<%= config.distFolder %>defer.css']
 				}
 			}
 		},
