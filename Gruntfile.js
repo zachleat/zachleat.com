@@ -62,7 +62,6 @@ module.exports = function(grunt) {
 			},
 			jsDefer: {
 				src: [
-					'<%= config.jsSrc %>defer.js',
 					'node_modules/infinity-burger/infinity-burger.js',
 					'<%= config.jsSrc %>google-analytics.js',
 					'<%= config.jsSrc %>disqus.js',
