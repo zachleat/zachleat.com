@@ -1,4 +1,4 @@
-/*! zachleat.com - v0.2.26 - 2015-12-09
+/*! zachleat.com - v0.2.26 - 2015-12-15
 * Copyright (c) 2015 Zach Leatherman; MIT License */
 var ZL = {
 	getDistFolder: function() {
@@ -24,7 +24,9 @@ var ZL = {
 	if( 'matchMedia' in window ) {
 		classes.push( "has-gradient" );
 	}
-	if( sessionStorage.latoLoaded && sessionStorage.latoBoldItalicLoaded ) {
+
+	// Fonts
+	if( sessionStorage.latoStageOne && sessionStorage.latoStageTwo ) {
 		classes.push( "lato-loaded" );
 		classes.push( "lato-b-loaded" );
 	}
@@ -32,16 +34,8 @@ var ZL = {
 	document.documentElement.className += " " + classes.join( " " );
 })( document );
 
-// Fonts
-;(function( doc ) {
-	// IE9+
-	if( !( 'geolocation' in navigator ) ) {
-		return;
-	}
 
-	// TODO import this using npm and grunt
-
-/*! fontfaceonload - v0.1.6 - 2015-03-13
+/*! fontfaceonload - v0.1.7 - 2015-10-26
  * https://github.com/zachleat/fontfaceonload
  * Copyright (c) 2015 Zach Leatherman (@zachleat)
  * MIT License */
@@ -52,12 +46,6 @@ var ZL = {
 	var TEST_STRING = 'AxmTYklsjo190QW',
 		SANS_SERIF_FONTS = 'sans-serif',
 		SERIF_FONTS = 'serif',
-
-		// lighter and bolder not supported
-		weightLookup = {
-			normal: '400',
-			bold: '700'
-		},
 
 		defaultOptions = {
 			tolerance: 2, // px
@@ -117,7 +105,7 @@ var ZL = {
 			parent = that.parent,
 			appended = that.appended,
 			dimensions,
-			options = this.options,
+			options = that.options,
 			ref = options.reference;
 
 		function getStyle( family ) {
@@ -189,7 +177,14 @@ var ZL = {
 	FontFaceOnloadInstance.prototype.cleanFamilyName = function( family ) {
 		return family.replace( /[\'\"]/g, '' ).toLowerCase();
 	};
+
 	FontFaceOnloadInstance.prototype.cleanWeight = function( weight ) {
+		// lighter and bolder not supported
+		var weightLookup = {
+			normal: '400',
+			bold: '700'
+		};
+
 		return '' + (weightLookup[ weight ] || weight);
 	};
 
@@ -244,24 +239,35 @@ var ZL = {
 	win.FontFaceOnload = FontFaceOnload;
 })( this, this.document );
 
+;(function( doc ) {
+	// IE9+
+	if( !( 'geolocation' in navigator ) ) {
+		return;
+	}
+
 	var docEl = doc.documentElement;
 
-	if( !sessionStorage.latoLoaded || sessionStorage.latoBoldItalicLoaded ) {
-		FontFaceOnload( "Lato", {
+	if( !sessionStorage.latoStageOne || !sessionStorage.latoStageTwo ) {
+		// FontFaceOnload( "Lato", {
+		FontFaceOnload( "LatoSubset", {
 			error: function() {},
 			success: function() {
 				docEl.className += " lato-loaded";
-				sessionStorage.latoLoaded = true;
+				sessionStorage.latoStageOne = true;
 
 				var counter = 0;
 				var success = function() {
 					counter++;
-					if( counter === 3 ) {
+					// if( counter === 3 ) {
+					if( counter === 4 ) {
 						docEl.className += " lato-b-loaded";
-						sessionStorage.latoBoldItalicLoaded = true;
+						sessionStorage.latoStageTwo = true;
 					}
 				};
 
+				FontFaceOnload( "Lato", {
+					success: success
+				});
 				FontFaceOnload( "LatoBold", {
 					weight: 700,
 					success: success
