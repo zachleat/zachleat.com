@@ -9,10 +9,6 @@
 .social > div {
 	display: inline-block;
 	padding-left: .1em;
-	margin-left: 1em;
-}
-.grunticon .social > div {
-	margin-left: 0;
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.social {
@@ -22,7 +18,6 @@
 	.social > div {
 		padding-top: 1em;
 		padding-left: 0;
-		margin-left: 0;
 		display: block;
 	}
 }
@@ -30,8 +25,12 @@
 	display: inline-block;
 	font-family: sans-serif;
 	margin-left: 1em;
+	opacity: .3;
 }
-.social_icon:first-child {
+.social_icon:hover {
+	opacity: 1;
+}
+.social > .social_icon:first-child {
 	margin-left: 0;
 }
 .grunticon .social_icon {
@@ -46,6 +45,9 @@
 	vertical-align: top;
 	text-indent: 9999px;
 	white-space: nowrap;
+}
+.grunticon .social .icon-nebraskajs {
+	width: 69px;
 }
 .social a.icon-filamentgroup {
 	white-space: nowrap;
@@ -78,50 +80,9 @@
 .twitter:visited:focus {
 	color: #00c9ff;
 }
-.googleplus:link:hover,
-.googleplus:link:focus,
-.googleplus:visited:hover,
-.googleplus:visited:focus {
-	color: #ec3a1f;
-}
-.linkedin:link:hover,
-.linkedin:link:focus,
-.linkedin:visited:hover,
-.linkedin:visited:focus {
-	color: #1374af;
-}
-
-.nebraskajs {
-	word-spacing: -4px;
-}
-.nebraskajs span {
-	@include a11y-only;
-}
-.grunticon .nebraskajs.nebraskajs {
-	font-size: 1.2em;
-	text-transform: uppercase;
-	text-align: right;
-	font-family: Arial;
-	font-weight: bold;
-	line-height: 92%;
-	background-color: #ccc;
-	border-radius: .2em;
-	word-spacing: 0;
-	letter-spacing: 1px;
-	white-space: normal;
-}
-.grunticon .social .nebraskajs,
-.grunticon .social .nebraskajs:link,
-.grunticon .social .nebraskajs:visited {
-	color: #fff;
-	padding: .3em .1em 0 0;
-	margin-left: .6em;
-	text-indent: 0;
-}
-.grunticon .nebraskajs:link:hover,
-.grunticon .nebraskajs:link:focus,
-.grunticon .nebraskajs:visited:hover,
-.grunticon .nebraskajs:visited:focus {
-	background-color: #f5da1c;
-	color: #000;
+.nebraskajs:link:hover,
+.nebraskajs:link:focus,
+.nebraskajs:visited:hover,
+.nebraskajs:visited:focus {
+	color: #f5da1c;
 }
