@@ -8,7 +8,11 @@
 }
 .social > div {
 	display: inline-block;
-	padding-left: 0.1em;
+	padding-left: .1em;
+	margin-left: 1em;
+}
+.grunticon .social > div {
+	margin-left: 0;
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.social {
@@ -18,17 +22,24 @@
 	.social > div {
 		padding-top: 1em;
 		padding-left: 0;
+		margin-left: 0;
 		display: block;
 	}
 }
-.social a {
-	display: block;
+.social_icon {
+	display: inline-block;
+	font-family: sans-serif;
+	margin-left: 1em;
+}
+.social_icon:first-child {
+	margin-left: 0;
+}
+.grunticon .social_icon {
+	margin-left: .4em;
 }
 .grunticon .social a {
 	font-size: 1.6em;
 	text-decoration: none;
-	display: inline-block;
-	margin-left: .4em;
 	overflow: hidden;
 	width: 32px;
 	height: 32px;
@@ -38,9 +49,6 @@
 }
 .social a.icon-filamentgroup {
 	white-space: nowrap;
-}
-.social a:first-child {
-	margin-left: 0;
 }
 .social a:link,
 .social a:visited {
@@ -86,6 +94,9 @@
 .nebraskajs {
 	word-spacing: -4px;
 }
+.nebraskajs span {
+	@include a11y-only;
+}
 .grunticon .nebraskajs.nebraskajs {
 	font-size: 1.2em;
 	text-transform: uppercase;
@@ -98,9 +109,6 @@
 	word-spacing: 0;
 	letter-spacing: 1px;
 	white-space: normal;
-}
-.grunticon .nebraskajs span {
-	@include a11y-only;
 }
 .grunticon .social .nebraskajs,
 .grunticon .social .nebraskajs:link,

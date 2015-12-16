@@ -45,8 +45,20 @@ module.exports = function(grunt) {
 				stripBanners: true
 			},
 			js: {
-				src: ['<%= config.jsSrc %>initial.js'],
+				src: [
+					'<%= config.jsSrc %>initial.js',
+					'node_modules/fontfaceonload/dist/fontfaceonload.js',
+					'<%= config.jsSrc %>fonts.js',
+				],
 				dest: '<%= config.distFolder %>initial.js'
+			},
+			jsAsync: {
+				src: [
+					'node_modules/fg-loadjs/loadJS.js',
+					'node_modules/grunt-grunticon/example/output/grunticon.loader.js',
+					'<%= config.jsSrc %>async.js'
+					],
+				dest: '<%= config.distFolder %>async.js'
 			},
 			jsDefer: {
 				src: [
@@ -67,6 +79,10 @@ module.exports = function(grunt) {
 			js: {
 				src: '<%= concat.js.dest %>',
 				dest: '<%= config.distFolder %>initial.min.js'
+			},
+			jsAsync: {
+				src: '<%= concat.jsAsync.dest %>',
+				dest: '<%= config.distFolder %>async.min.js'
 			},
 			jsDefer: {
 				src: '<%= concat.jsDefer.dest %>',
@@ -133,7 +149,9 @@ module.exports = function(grunt) {
 					'<%= config.root %>_includes/initial.min.css': ['<%= config.distFolder %>initial.min.css'],
 					'<%= config.root %>_includes/initial.css': ['<%= config.distFolder %>initial.css'],
 					'<%= config.root %>_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
-					'<%= config.root %>_includes/initial.js': ['<%= config.distFolder %>initial.js']
+					'<%= config.root %>_includes/initial.js': ['<%= config.distFolder %>initial.js'],
+					'<%= config.root %>_includes/async.min.js': ['<%= config.distFolder %>async.min.js'],
+					'<%= config.root %>_includes/async.js': ['<%= config.distFolder %>async.js']
 				}
 			}
 		},

@@ -1,0 +1,66 @@
+/* Call to Action and Deprecation Warning */
+.action,
+.deprecation-warning {
+	font-size: 1.125em;
+	margin-top: 3em;
+	line-height: 140%;
+	background: #ffc;
+	border: 1px solid #ccc;
+	padding: .5em;
+}
+.twitter-follow + .action {
+	margin-top: 1em;
+}
+.action p:first-child {
+	margin-top: 0;
+}
+.action p {
+	margin: .5em 0 0 0;
+	text-align: center;
+}
+.action a {
+	white-space: nowrap;
+	text-decoration: none;
+	font-weight: 700;
+}
+.has-gradient.tmpl-page .content .action a {
+	background-image: none;
+	text-shadow: none;
+}
+.action a i {
+	vertical-align: text-bottom;
+	display: none;
+	width: 32px;
+	height: 32px;
+	margin-left: .2em;
+}
+.grunticon .action a i {
+	display: inline-block;
+}
+.action a.twitter,
+.action a.twitter:visited {
+	color: #00c9ff;
+}
+.action a.github,
+.action a.github:visited {
+	color: #000;
+}
+.action a.feed,
+.action a.feed:visited {
+	color: #ff9132;
+}
+
+.deprecation-warning {
+	margin-top: 1em;
+}
+.deprecation-warning h3 {
+	display: inline;
+	margin-right: .6em;
+}
+.deprecation-warning h3:after {
+	content: ':';
+}
+.deprecation-warning p {
+	font-style: italic;
+	margin: 0;
+}
