@@ -822,11 +822,6 @@ th {
   display: inline-block;
   font-family: sans-serif;
   margin-left: 1em;
-  opacity: .3;
-}
-
-.social_icon:hover {
-  opacity: 1;
 }
 
 .social > .social_icon:first-child {
@@ -834,7 +829,12 @@ th {
 }
 
 .grunticon .social_icon {
+  opacity: .3;
   margin-left: .4em;
+}
+
+.grunticon .social_icon:hover {
+  opacity: 1;
 }
 
 .grunticon .social a {
@@ -858,7 +858,7 @@ th {
 
 .social a:link,
 .social a:visited {
-  color: #ccc;
+  color: #aaa;
 }
 
 .github:link:hover,
