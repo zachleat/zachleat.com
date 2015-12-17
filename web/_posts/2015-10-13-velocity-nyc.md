@@ -7,7 +7,7 @@ categories:
   - presentations
 tags:
   - external
-  - upcoming
+  - pending
 external_url: http://velocityconf.com/devops-web-performance-ny-2015/public/schedule/detail/46234
 
 ---

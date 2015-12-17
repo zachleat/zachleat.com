@@ -10,6 +10,7 @@
 	<a href="{{ site.baseurl }}{{ post.url }}">
 	{% endif %}
 		{% if post.tags contains 'upcoming' %}<span class="external">Scheduled</span>
+		{% elsif post.tags contains 'pending' %}<span class="external">Pending</span>
 		{% elsif post.tags contains 'external' %}<span class="external">Off-Site</span>
 		{% endif %}
 		{% if include.view == 'project' %}

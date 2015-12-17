@@ -7,7 +7,7 @@ categories:
   - presentations
 tags:
   - external
-  - upcoming
+  - pending
 external_url: http://lanyrd.com/2015/smashingconf-barcelona/
 
 ---
