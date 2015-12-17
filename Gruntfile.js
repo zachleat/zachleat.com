@@ -229,7 +229,6 @@ module.exports = function(grunt) {
 				// command: 'jekyll build --config _config.yml --trace --drafts',
 				command: 'jekyll build --config _config.yml --trace',
 				options: {
-					stdout: true,
 					execOptions: {
 						cwd: '<%= config.root %>'
 					}
@@ -239,7 +238,6 @@ module.exports = function(grunt) {
 			pygments: {
 				command: 'pygmentize -S default -f html > pygments.css',
 				options: {
-					stdout: true,
 					execOptions: {
 						cwd: '<%= config.cssSrc %>'
 					}
@@ -247,9 +245,9 @@ module.exports = function(grunt) {
 			},
 			// TODO https://github.com/shama/grunt-beep
 			upload: {
-				command: 'echo "Note: Requires an \'zachleat\' host in .ssh/config"; rsync -avz ssh ./_site/ zachleat:/home/public/<%= config.root %>',
+				command: 'echo "Note: Requires an \'zachleat\' host in .ssh/config"; rsync --archive --verbose --stats --compress --rsh=ssh ./_site/ zachleat:/home/public/<%= config.root %>',
 				options: {
-					stdout: true,
+					maxBuffer: 1024 * 1024 * 64,
 					execOptions: {
 						cwd: '<%= config.root %>'
 					}
