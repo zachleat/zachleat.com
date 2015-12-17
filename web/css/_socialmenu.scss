@@ -25,16 +25,16 @@
 	display: inline-block;
 	font-family: sans-serif;
 	margin-left: 1em;
-	opacity: .3;
-}
-.social_icon:hover {
-	opacity: 1;
 }
 .social > .social_icon:first-child {
 	margin-left: 0;
 }
 .grunticon .social_icon {
+	opacity: .3;
 	margin-left: .4em;
+}
+.grunticon .social_icon:hover {
+	opacity: 1;
 }
 .grunticon .social a {
 	font-size: 1.6em;
@@ -54,7 +54,7 @@
 }
 .social a:link,
 .social a:visited {
-	color: #ccc;
+	color: #aaa;
 }
 .github:link:hover,
 .github:link:focus,
