@@ -1,6 +1,5 @@
 // FOUT log
 ;(function( doc ) {
-return;
 	var start;
 	var times = [];
 	var loadingStartTimes = {};
@@ -135,35 +134,4 @@ return;
 	}
 
 	requestAnimationFrame(init);
-
-	// function isWebFont( family ) {
-	// 	var result = false;
-	// 	doc.fonts.forEach(function( font ) {
-	// 		if( font.family === family ) {
-	// 			result = true;
-	// 		}
-	// 	});
-
-	// 	return true;
-	// }
-
-	// Returns false if not a webfont
-	// TODO featureSettings, stretch, unicodeRange, variant
-	function getFontFaceInstance( family, weight, style ) {
-		var result = false;
-		var weightLookup = {
-			normal: '400',
-			bold: '700'
-		};
-
-		doc.fonts.forEach(function( font ) {
-			if( font.family === family &&
-				( font.weight === weight || font.weight === weightLookup[ weight ] ) &&
-				font.style === style ) {
-				result = font;
-			}
-		});
-
-		return result;
-	}
 })( document );
