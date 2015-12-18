@@ -49,6 +49,8 @@ module.exports = function(grunt) {
 					'<%= config.jsSrc %>initial.js',
 					'node_modules/fontfaceonload/dist/fontfaceonload.js',
 					'<%= config.jsSrc %>fonts.js',
+					// 'node_modules/fontfaceobserver/fontfaceobserver.js',
+					// '<%= config.jsSrc %>fonts-fontfaceobserver.js'
 				],
 				dest: '<%= config.distFolder %>initial.js'
 			},
