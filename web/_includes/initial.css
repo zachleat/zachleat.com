@@ -311,7 +311,6 @@ th {
 
 .rail h1 {
   font-size: 1.4em;
-  font-weight: 400;
   display: inline-block;
   color: #aaa;
   width: 8em;
@@ -319,14 +318,10 @@ th {
   margin: 0 0 .1em 0;
   vertical-align: bottom;
 }
-.rail h1 {
-  font-family: sans-serif;
-}
-.lato-loaded .rail h1 {
-  font-family: LatoSubset, sans-serif;
-}
 .lato-b-loaded .rail h1 {
-  font-family: Lato, sans-serif;
+  font-family: LatoBold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .rail img {
@@ -822,6 +817,7 @@ th {
   display: inline-block;
   font-family: sans-serif;
   margin-left: 1em;
+  line-height: 32px;
 }
 
 .social > .social_icon:first-child {
