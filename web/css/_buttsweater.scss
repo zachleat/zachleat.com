@@ -249,14 +249,13 @@ th {
 }
 .rail h1 {
 	font-size: 1.4em;
-	font-weight: 400;
 	display: inline-block;
 	color: #aaa;
 	width: 8em;
 	text-align: left;
 	margin: 0 0 .1em 0;
 	vertical-align: bottom;
-	@include webfont;
+	@include webfontBold;
 }
 .rail img {
 	width: 80px;
