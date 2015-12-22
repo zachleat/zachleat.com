@@ -7,40 +7,50 @@
 
 	var docEl = doc.documentElement;
 
-	if( !sessionStorage.latoStageOne || !sessionStorage.latoStageTwo ) {
-		// FontFaceOnload( "Lato", {
+	if( sessionStorage.latoStageOne && sessionStorage.latoStageTwo ) {
+
+	} else {
 		FontFaceOnload( "LatoSubset", {
-			error: function() {},
 			success: function() {
 				docEl.className += " lato-loaded";
 				sessionStorage.latoStageOne = true;
 
-				var counter = 0;
-				var success = function() {
-					counter++;
-					// if( counter === 3 ) {
-					if( counter === 4 ) {
-						docEl.className += " lato-b-loaded";
-						sessionStorage.latoStageTwo = true;
+				var stage2 = {
+					Lato: {},
+					LatoBold: {
+						weight: 700
+					},
+					LatoItalic: {
+						style: "italic"
+					},
+					LatoBoldItalic: {
+						weight: 700,
+						style: "italic"
 					}
 				};
+				var counter = 0;
+				var name;
+				var param;
+				var success = (function() {
+					var numberOfFonts = 0;
+					for( var name in stage2 ) {
+						numberOfFonts++;
+					}
 
-				FontFaceOnload( "Lato", {
-					success: success
-				});
-				FontFaceOnload( "LatoBold", {
-					weight: 700,
-					success: success
-				});
-				FontFaceOnload( "LatoItalic", {
-					style: 'italic',
-					success: success
-				});
-				FontFaceOnload( "LatoBoldItalic", {
-					weight: 700,
-					style: 'italic',
-					success: success
-				});
+					return function() {
+						counter++;
+						if( counter === numberOfFonts ) {
+							docEl.className += " lato-b-loaded";
+							sessionStorage.latoStageTwo = true;
+						}
+					};
+				})();
+
+				for( var name in stage2 ) {
+					param = stage2[ name ];
+					param.success = success;
+					FontFaceOnload( name, param );
+				}
 			}
 		});
 		
