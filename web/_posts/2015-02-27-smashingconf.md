@@ -1,5 +1,5 @@
 ---
-title: 'SmashingConf Whistler 2014—Font Loading'
+title: 'Better @font-face with Font Load Events—SmashingConf Whistler'
 author: Zach Leatherman
 layout: post
 permalink: /smashingconf/2014/
