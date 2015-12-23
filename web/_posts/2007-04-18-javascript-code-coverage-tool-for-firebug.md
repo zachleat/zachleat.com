@@ -14,6 +14,7 @@ tags:
   - Selenium
   - deprecated
   - project
+  - feedtrim
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]

@@ -14,6 +14,7 @@ categories:
 tags:
   - Captcha
   - Security
+  - feedtrim
 ---
 
 On Ajaxian recently, there have been a few posts touting new and inventive replacements for the more traditional distorted and discolored “What does this image say?” Captcha gatekeeper for your web form. Of course these are all intended to provide a mechanism to tell the difference between an automated web bot that is spamming your web form and a human being.

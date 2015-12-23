@@ -5,6 +5,7 @@ layout: post
 permalink: /2020-hindsight-a-look-back-at-alarmd/
 categories:
 tags:
+  - feedtrim
 ---
 
 Now that the traffic has died down a little bit on ALARMd, I’d like to write a little bit about my experiences with something I don’t think anyone predicted would garner so much interest.

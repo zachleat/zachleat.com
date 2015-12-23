@@ -16,6 +16,7 @@ tags:
   - Internet Explorer
   - Rendering Modes
   - deprecated
+  - feedtrim
 ---
 
 Many developers (myself included) complain endlessly about the problematic ECMAScript implementation that Internet Explorer uses called JScript. And after reading [one such very detailed complaint][1] in the comments on Dave Massy’s website at MSDN, and reading [Chris Wilson’s post about ECMAScript 3][2], it has become increasingly obvious of Microsoft’s opinion on the subject of Forward Compatibility with JavaScript. It’s something they keep pounding their fists on the ground about, how they are adamant that new versions of their browser not “Break the Web.”

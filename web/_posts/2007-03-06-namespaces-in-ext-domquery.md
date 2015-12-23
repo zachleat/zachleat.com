@@ -9,6 +9,7 @@ categories:
   - JavaScript
 tags:
   - deprecated
+  - feedtrim
 ---
 
 Do you want to use [custom attributes][1] in your XHTML? Do you use the YUI Library and Jack Slocum’s wonderful [DomQuery selector engine][2]?

@@ -11,6 +11,7 @@ categories:
   - JavaScript
 tags:
   - deprecated
+  - feedtrim
 ---
 
 **Please note that this post has been updated to the new version of YUI, 2.3.0 in an article called [“Enlarging your YUI DataTable in 29 Seconds or Less!”][1]**
