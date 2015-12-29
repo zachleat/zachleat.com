@@ -7,7 +7,6 @@ categories:
   - presentations
 tags:
   - video
-  - highlight
 medialength: 42 min
 
 ---
