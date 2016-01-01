@@ -34,12 +34,13 @@
 	}
 
 	var distFolder = ZL.getDistFolder();
-	grunticon.loadCSS( distFolder + "icons/icons.data.svg.css" ).onloadcssdefined(function() {
-		doc.documentElement.className += " grunticon";
-	});
-	// grunticon( [ distFolder + "icons/icons.data.svg.css",
-	// 	distFolder + "icons/icons.data.png.css",
-	// 	distFolder + "icons/icons.fallback.css" ] );
+	// grunticon.loadCSS( distFolder + "icons/icons.data.svg.css" ).onloadcssdefined(function() {
+	// 	// only switches the icons on after they’ve loaded
+	// 	doc.documentElement.className += " grunticon";
+	// });
+	grunticon( [ distFolder + "icons/icons.data.svg.css",
+		distFolder + "icons/icons.data.png.css",
+		distFolder + "icons/icons.fallback.css" ] );
 
 })( document );
 

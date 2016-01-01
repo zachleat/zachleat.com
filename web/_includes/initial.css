@@ -71,26 +71,28 @@ figcaption {
   }
 }
 /* Full width images */
-@media (max-width: 36.75em) {
-  .content img.primary {
-    margin-left: calc( -.75em );
-    margin-right: calc( -.75em );
-    max-width: none;
-    width: calc( 100vw );
+@supports (display: block) {
+  @media (max-width: 36.75em) {
+    .content img.primary {
+      margin-left: -.75em;
+      margin-right: -.75em;
+      max-width: none;
+      width: 100vw;
+    }
   }
-}
-@media (min-width: 36.8125em) and (max-width: 59.9375em) {
-  .content img.primary {
-    margin-left: calc( -1 * ( 100vw - 29.5em ) / 2 );
-    max-width: none;
-    width: calc( 100vw );
+  @media (min-width: 36.8125em) and (max-width: 59.9375em) {
+    .content img.primary {
+      margin-left: calc( -1 * ( 100vw - 29.5em ) / 2 );
+      max-width: none;
+      width: calc( 100vw );
+    }
   }
-}
-@media (min-width: 60em) {
-  .content img.primary {
-    margin-left: calc( -1 * ( 100vw - 17em - 29.5em ) / 2 );
-    max-width: 58.125rem;
-    width: calc( 100vw - 17em );
+  @media (min-width: 60em) {
+    .content img.primary {
+      margin-left: calc( -1 * ( 100vw - 17em - 29.5em ) / 2 );
+      max-width: 58.125rem;
+      width: calc( 100vw - 17em );
+    }
   }
 }
 @media (min-width: 78.3125em) {
