@@ -22,7 +22,7 @@ This web blog is written by **Zach Leatherman**.
  [1]: /web/img/trifecta.png
  [2]: /résumé/
 
-He enjoys watching and playing soccer, piano, finding patterns in both people and machines, movies that make him think or feel and oxford commas. He enjoys spending time with his beautiful wife Traci and their two Great Danes, [Roxie](http://packlove.com/roxie) and [Ella](http://packlove.com/133-ella).
+He enjoys watching and playing soccer, piano, finding patterns in both people and machines, movies that make him think or feel and oxford commas. He enjoys spending time with his beautiful wife and daughter and their two Great Danes, [Roxie](http://packlove.com/roxie) and [Ella](http://packlove.com/133-ella).
 
 You can find him on the following services, but not all simultaneously and certainly not frequently.
     
@@ -30,13 +30,13 @@ You can find him on the following services, but not all simultaneously and certa
 ## [Twitter](http://twitter.com/zachleat)
 ## [GitHub](http://github.com/zachleat)
 ## [Pinboard](https://pinboard.in/u:zachleat/)
-## [Instagram](http://instagram.com/zachleat)
-## [Rdio](http://www.rdio.com/people/zachleat/)
 ## [Facebook](http://www.facebook.com/zachleat)
 ## [Flickr](http://www.flickr.com/photos/zachleat)
 ## [Google+](https://plus.google.com/116527541913322293396/posts)
 ## [YouTube](http://www.youtube.com/profile?user=zachleat)
 <!--
+## [Instagram](http://instagram.com/zachleat)
+## [Rdio](http://www.rdio.com/people/zachleat/)
 ## [Stack Overflow](http://stackoverflow.com/users/16711/zachleat)
 ## [GoodReads](http://www.goodreads.com/review/list/1612586)
 ## [LinkedIn](http://www.linkedin.com/in/zachleat)

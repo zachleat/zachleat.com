@@ -29,6 +29,14 @@ The title of the talk was a reference to a hugely popular book written by Stephe
 
 ## [Slides on Speaker Deck](https://speakerdeck.com/zachleat/a-brief-history-of-that-time-you-used-web-fonts) (144 slides)
 
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Most !important thing learned at <a href="https://twitter.com/hashtag/SmashingConf?src=hash">#SmashingConf</a> from <a href="https://twitter.com/zachleat">@zachleat</a> <a href="https://t.co/OVOb6ao8Ef">pic.twitter.com/OVOb6ao8Ef</a></p>&mdash; Tim Malabuyo (@malabooboo) <a href="https://twitter.com/malabooboo/status/656846109286014976">October 21, 2015</a></blockquote>
+
+## Venue
+
+Paired nicely with the other amazing talks at SmashingConf, the event was held at Palau de la Musica Orfeo Catalana, rated as the [#3 thing to see in all of Barcelona by TripAdvisor](http://www.tripadvisor.com/Attraction_Review-g187497-d190824-Reviews-Palau_de_la_Musica_Orfeo_Catalana-Barcelona_Catalonia.html). It was beautiful.
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Still blown away by this venue. <a href="https://twitter.com/hashtag/smashingconf?src=hash">#smashingconf</a> <a href="https://t.co/vbmNCQZVmk">pic.twitter.com/vbmNCQZVmk</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/656485663823499264">October 20, 2015</a></blockquote>
+
 ## Links (in order of slide appearance)
 
 * [Across all Google Web Fonts, WOFF2 is ~30% smaller than WOFF.](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/j27Ou4RtvQI/discussion)

@@ -49,8 +49,47 @@ figcaption {
 }
 .content ol,
 .content ul {
-	padding-left: 1em;
+	padding-left: 1.5em;
 }
+@media (min-width: 41.25em) {
+	.content ol,
+	.content ul {
+		padding-left: 0;
+	}
+}
+/* Full width images */
+@media (max-width: 36.75em) {
+	.content img.primary {
+		margin-left: calc( -.75em );
+		margin-right: calc( -.75em );
+		max-width: none;
+		width: calc( 100vw );
+	}
+}
+@media (min-width: 36.8125em) and (max-width: $oneColLayoutMaxWidth) {
+	.content img.primary {
+		margin-left: calc( -1 * ( 100vw - 29.5em ) / 2 );
+		max-width: none;
+		width: calc( 100vw );
+	}
+}
+@media (min-width: $twoColLayoutMinWidth) {
+	.content img.primary {
+		// Add in rail
+		margin-left: calc( -1 * ( 100vw - 17em - 29.5em ) / 2 );
+		max-width: 58.125rem;
+		width: calc( 100vw - 17em );
+	}
+}
+@media (min-width: 78.3125em) {
+	.content img.primary {
+		// Add in rail
+		margin-left: -184.75px;
+		max-width: none;
+		width: 930px;
+	}
+}
+
 #main-posts-list {
 	padding-left: 0;
 }
