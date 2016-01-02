@@ -10,6 +10,7 @@ categories:
   - Web Browsers
 tags:
   - deprecated
+  - feedtrim
 ---
 
 Look at this code. What do you expect to be the outcome?

@@ -14,6 +14,7 @@ categories:
 tags:
   - TIBCO General Interface
   - XSLT
+  - feedtrim
 ---
 
 *Sorry about the title, I couldn’t resist.*

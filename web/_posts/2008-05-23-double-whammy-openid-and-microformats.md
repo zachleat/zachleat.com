@@ -23,6 +23,7 @@ tags:
   - OpenID
   - Technorati
   - Twitter
+  - feedtrim
 ---
 
 ## Microformategery

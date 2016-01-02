@@ -15,6 +15,7 @@ tags:
   - Callbacks
   - Events
   - jQuery
+  - feedtrim
 ---
 
 *Warning: Blog Post written for Beginner and Intermediate JavaScript Developers*

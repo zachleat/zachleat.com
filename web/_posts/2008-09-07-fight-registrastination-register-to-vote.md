@@ -11,6 +11,7 @@ tags:
   - geocode
   - location
   - project
+  - feedtrim
 ---
 
 *Apologies to international readers, this spam message is intended for citizens of the USA only. Thanks for understanding.*
