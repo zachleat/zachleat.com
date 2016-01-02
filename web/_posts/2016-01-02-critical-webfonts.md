@@ -19,8 +19,12 @@ The history of web font loading has included many different iterations:
 
 This method builds on the Flash of Faux Text (FOFT) with two stages of web fonts, but instead of a full Roman web font in the first stage, it loads a small subset of the Roman web font, usually with only the upper case and lower case alphabetic characters. You could optionally include numbers here as well.
 
+I have implemented this technique live on my web site. Here I use four webfonts: Lato Roman, Lato Bold, Lato Italic, and Lato Bold Italic.
+
 * Lato Roman is 25KB in WOFF2 format
 * Lato Roman with only the `A-Za-z` code points is only 9KB in WOFF2 format (**36% of the original**)
+
+The shrinks the first stage quite significantly.
 
 ## Filmstrip Comparisons
 
