@@ -17,7 +17,7 @@ medialength: 3 min
 About one month ago, I received the following e-mail:
 
 <div class="printed-page">
-<img src="/web/img/posts/whmeetup/seal.svg" onerror="this.src='/web/img/posts/whmeetup/seal.png'; this.onerror=null;">
+<img src="/web/img/posts/whmeetup/seal.svg" onerror="this.src='/web/img/posts/whmeetup/seal.png'; this.onerror=null;" alt="The White House Official Seal">
 <pre>
 On April 17, we’re hosting community organizers, city and state officials, and technology thought leaders for a Tech Meetup at the White House. Our goals in gathering are to support America’s innovators, to better bridge digital divides, to interconnect us on common topics, to better collaborate on challenging projects where we have deep need and passion to solve them, and figure out how to include all Americans everywhere in our #InnovationNation.
 
