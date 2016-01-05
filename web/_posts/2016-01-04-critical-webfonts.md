@@ -29,7 +29,7 @@ The shrinks the first stage quite significantly.
 
 ## Filmstrip Comparisons
 
-The yellow frame highlights when the roman web font (used for most body content) has loaded and rendered.
+The yellow frame highlights when the roman web font (used for most body content) has loaded and rendered. Note that all of these film strips were captured on [zachleat.com](http://www.zachleat.com/web/) using Chrome’s “Regular 3G” network throttling feature.
 
 ### Default
 
