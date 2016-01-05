@@ -18,7 +18,7 @@ The history of web font loading has included many different iterations:
 
 ## The Next Iteration: Critical FOFT
 
-This method builds on the Flash of Faux Text (FOFT) using a two stages loading process (sounds like rocket science), but instead of a full Roman web font in the first stage, it loads a small subset of the Roman web font, in this case with only the upper case and lower case alphabetic characters. You could optionally include numbers here as well.
+This method builds on the Flash of Faux Text (FOFT) using a two stages loading process (sounds like, but is not actually rocket science), but instead of a full Roman web font in the first stage, it loads a small subset of the Roman web font, in this case with only the upper case and lower case alphabetic characters. You could optionally include numbers here as well.
 
 I have implemented this technique live on my web site. Here I use four webfonts: Lato Roman, Lato Bold, Lato Italic, and Lato Bold Italic.
 
