@@ -1,4 +1,4 @@
-/*! zachleat.com - v0.3.3 - 2016-01-01
+/*! zachleat.com - v0.3.4 - 2016-01-04
 * Copyright (c) 2016 Zach Leatherman; MIT License */
 /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
 (function( w ){
@@ -23,9 +23,154 @@
 	}
 }( typeof global !== "undefined" ? global : this ));
 
-/*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+/*!
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
 
-!function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;d<t.length;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;d<n.length;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;d<r.length;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s}(grunticon,this)}();
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined(function() {
+			ss.media = media || "all";
+		});
+		return ss;
+	};
+	// commonjs
+	if( typeof module !== "undefined" ){
+		module.exports = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+
+
+/*!
+onloadCSS: adds onload support for asynchronous stylesheets loaded with loadCSS.
+[c]2014 @zachleat, Filament Group, Inc.
+Licensed MIT
+*/
+
+/* global navigator */
+/* exported onloadCSS */
+function onloadCSS( ss, callback ) {
+	ss.onload = function() {
+		ss.onload = null;
+		if( callback ) {
+			callback.call( ss );
+		}
+	};
+
+	// This code is for browsers that don’t support onload, any browser that
+	// supports onload should use that instead.
+	// No support for onload:
+	//	* Android 4.3 (Samsung Galaxy S4, Browserstack)
+	//	* Android 4.2 Browser (Samsung Galaxy SIII Mini GT-I8200L)
+	//	* Android 2.3 (Pantech Burst P9070)
+
+	// Weak inference targets Android < 4.4
+	if( "isApplicationInstalled" in navigator && "onloadcssdefined" in ss ) {
+		ss.onloadcssdefined( callback );
+	}
+}
+
+/*global onloadCSS:true*/
+/*! Forked from grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+
+(function(window){
+	var grunticon = function( css, onload ){
+		"use strict";
+		// expects a css array with 3 items representing CSS paths to datasvg, datapng, urlpng
+		if( !css || css.length !== 3 ){
+			return;
+		}
+
+		var navigator = window.navigator;
+		var document = window.document;
+		var Image = window.Image;
+
+		// Thanks Modernizr & Erik Dahlstrom
+		var svg = !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect && !!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1") && !(window.opera && navigator.userAgent.indexOf('Chrome') === -1) && navigator.userAgent.indexOf('Series40') === -1;
+
+		var img = new Image();
+
+		img.onerror = function(){
+			grunticon.method = "png";
+			grunticon.href = css[2];
+			loadCSS( css[2] );
+		};
+
+		img.onload = function(){
+			var data = img.width === 1 && img.height === 1,
+				href = css[ data && svg ? 0 : data ? 1 : 2 ];
+
+			if( data && svg ){
+				grunticon.method = "svg";
+			} else if( data ){
+				grunticon.method = "datapng";
+			} else {
+				grunticon.method = "png";
+			}
+
+			grunticon.href = href;
+
+			var ss = loadCSS( href );
+			onloadCSS( ss, onload );
+			onloadCSS( ss, function() {
+				document.documentElement.className += " grunticon";
+			});
+		};
+
+		img.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+	};
+	grunticon.loadCSS = loadCSS;
+	grunticon.onloadCSS = onloadCSS;
+	window.grunticon = grunticon;
+}(this));
 // Grunticon
 ;(function( doc ) {
 	// IE8+
