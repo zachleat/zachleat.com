@@ -6,6 +6,7 @@ permalink: /critical-webfonts/
 categories:
 tags:
  - research
+ - highlight
 ---
 
 The history of web font loading has included many different iterations:
@@ -13,16 +14,16 @@ The history of web font loading has included many different iterations:
 1. *Doing nothing*: including a `@font-face` CSS block and using it in your CSS without qualification. I consider this to be an anti-pattern. It introduces a Flash of Invisible Text (FOIT) in some browsers and worse, creates a single point of failure in browsers that do not have a font loading timeout (WebKit).
 1. *Data URIs* for the Flash of Unstyled Text (FOUT): Loading a [CSS stylesheet asynchronously](https://www.filamentgroup.com/lab/font-loading.html) (or using an AJAX Request) with the web fonts embedded as Data URIs (and putting it into localStorage for repeat views). This approach is deprecated because it can introduce a short Flash of Invisible Text (FOIT) on some older lower powered devices.
 1. *A Scoped Class* for the Flash of Unstyled Text (FOUT): Using the CSS Font Loading API (or a polyfill to do the same, like [FontFaceOnload](https://github.com/zachleat/fontfaceonload/) or [fontfaceobserver](https://github.com/bramstein/fontfaceobserver)) to [add a scoping class protecting our content from our web fonts before they load](https://dev.opera.com/articles/better-font-face/) (also documented on the [Filament Group Lab](https://www.filamentgroup.com/lab/font-events.html)). This is what I’d consider to be a bare minimum best practice, or Intro to Font Loading 101.
-1. *Two Scoped Classes* for the Flash of Faux Text (FOFT): This method complicates things a little bit more and uses two different stages of scoped classes. The first stage loads only the Roman font, then any variations of that are loaded in the second stage: Bold, Italic, Bold Italic. It’s great for slower connections in that it puts the biggest amount of reflow higher in your page load waterfall to make it less noticeable and less impactful to end users. I’d classify this approach as Intermediate Font Loading 201.
+1. *Two Scoped Classes* for the Flash of Faux Text (FOFT): This method complicates things a little bit more and uses two different stages of scoped classes. The first stage loads only the Roman font, then any variations of that are loaded in the second stage: Bold, Italic, Bold Italic. It’s great for slower connections in that it puts the biggest amount of reflow later in your page load waterfall to make it less noticeable and less impactful to end users. I’d classify this approach as Intermediate Font Loading 201.
 
 ## The Next Iteration: Critical FOFT
 
-This method builds on the Flash of Faux Text (FOFT) with two stages of web fonts, but instead of a full Roman web font in the first stage, it loads a small subset of the Roman web font, usually with only the upper case and lower case alphabetic characters. You could optionally include numbers here as well.
+This method builds on the Flash of Faux Text (FOFT) using a two stages loading process (sounds like rocket science), but instead of a full Roman web font in the first stage, it loads a small subset of the Roman web font, in this case with only the upper case and lower case alphabetic characters. You could optionally include numbers here as well.
 
 I have implemented this technique live on my web site. Here I use four webfonts: Lato Roman, Lato Bold, Lato Italic, and Lato Bold Italic.
 
-* Lato Roman is 25KB in WOFF2 format
-* Lato Roman with only the `A-Za-z` code points is only 9KB in WOFF2 format (**36% of the original**)
+* The original Lato Roman is 25KB in WOFF2 format.
+* Lato Roman with only the `A-Za-z` glyphs is only 9KB in WOFF2 format (**36% of the original**)
 
 The shrinks the first stage quite significantly.
 
@@ -50,10 +51,18 @@ The yellow frame highlights when the roman web font (used for most body content)
 
 <img src="/web/img/posts/critical-fonts/benchmarks.svg" onerror="this.src='/web/img/posts/critical-fonts/benchmarks.png'; this.onerror=null;" alt="A visual comparison showing the waterfalls for Default, FOUT, FOFT, and Critical FOFT">
 
-We’re essentially lengthening the load complete time at the end of the waterfall to reduce the jarring reflow shown to the user. Once `font-size-adjust` is implemented in more than just Firefox, this technique’s effectiveness will be reduced, if not making it unnecessary. But until then, this is essential to reducing interruption to the user’s reading flow.
+We’re essentially lengthening the load complete time at the end of the waterfall to reduce the jarring reflow shown to the user. Once `font-size-adjust` is implemented in more than just Firefox, the need for this technique will be reduced, if not rendering it unnecessary. But until then, I consider this approach essential to reducing interruption to the user’s reading flow.
 
 Enable 3G throttling in your favorite web browser (some of you may not have to enable anything to have a slow connection) and watch the page render. The web fonts do feel faster, even if the total time spent loading web fonts is greater.
 
 ## Repeat Views
 
-Another great thing about this technique is that you can continue using the same mechanism you were using before for repeat views. I use [@bram_stein’s `sessionStorage` trick](https://speakerdeck.com/bramstein/web-fonts-performance?slide=115) so that I don’t have to do anything server-side. You can see my implementation in code on GitHub [here](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/initial.js#L27) and [here](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/fonts.js#L10) (also lines [16](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/fonts.js#L16) and [44](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/fonts.js#L44)).
+You can continue using the same mechanism you were using before for repeat views. I use [@bram_stein’s `sessionStorage` trick](https://speakerdeck.com/bramstein/web-fonts-performance?slide=115) so that I don’t have to do anything server-side. You can see the implementation in code on GitHub in [initial.js](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/initial.js#L27) and [fonts.js](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/fonts.js#L10) (also lines [16](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/fonts.js#L16) and [44](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/fonts.js#L44)).
+
+## Ideas for Improvement
+
+You could use something similar to the Critical CSS workflow and scan the page to find out what actual characters are used in a fixed large viewport (`grunt-criticalcss` uses `1200x900`) to subset the web font more accurately to perhaps an even smaller size. This will require more care, given that it would need to run for every unique URL, and would probably not be sustainable for medium-sized or larger web sites.
+
+In fact, this is exactly what some font providers already do. [Dynamic Subsetting](http://www.ascendercorp.us/services/screen-imaging-solutions/dynamicsubsetting) generates a subset of a font on the fly using only the glyphs used on a page. [Dynamic Augmentation](http://blog.typekit.com/2015/06/15/announcing-east-asian-web-font-support/) add glyphs to an already loaded font on the fly, sort of like font streaming.
+
+I bet you could wire up something similar to this using the amazing [Plumin.js](http://www.pluminjs.com/) but unfortunately the library is too large (~400KB minimized) for this use case. For now, I’ll just stick with a simple 9KB baseline WOFF2 that gets replaced with a 25KB full version. The library would need to at least be smaller than your baseline to get good mileage out of a dynamic font (but I would never dream of equating web font weight with JavaScript weight—they have different performance impacts).
