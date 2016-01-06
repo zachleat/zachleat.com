@@ -1,4 +1,4 @@
-/*! zachleat.com - v0.3.4 - 2016-01-04
+/*! zachleat.com - v0.3.4 - 2016-01-06
 * Copyright (c) 2016 Zach Leatherman; MIT License */
 var ZL = {
 	getDistFolder: function() {
@@ -242,59 +242,49 @@ var ZL = {
 
 ;(function( doc ) {
 	// IE9+
-	if( !( 'geolocation' in navigator ) ) {
+	if( !( 'geolocation' in navigator ) ||
+		!( "keys" in Object ) ||
+		sessionStorage.latoStageOne && sessionStorage.latoStageTwo ) {
 		return;
 	}
 
 	var docEl = doc.documentElement;
 
-	if( sessionStorage.latoStageOne && sessionStorage.latoStageTwo ) {
+	FontFaceOnload( "LatoSubset", {
+		success: function() {
+			docEl.className += " lato-loaded";
+			sessionStorage.latoStageOne = true;
 
-	} else {
-		FontFaceOnload( "LatoSubset", {
-			success: function() {
-				docEl.className += " lato-loaded";
-				sessionStorage.latoStageOne = true;
-
-				var stage2 = {
-					Lato: {},
-					LatoBold: {
-						weight: 700
-					},
-					LatoItalic: {
-						style: "italic"
-					},
-					LatoBoldItalic: {
-						weight: 700,
-						style: "italic"
-					}
-				};
-				var counter = 0;
-				var name;
-				var param;
-				var success = (function() {
-					var numberOfFonts = 0;
-					for( var name in stage2 ) {
-						numberOfFonts++;
-					}
-
-					return function() {
-						counter++;
-						if( counter === numberOfFonts ) {
-							docEl.className += " lato-b-loaded";
-							sessionStorage.latoStageTwo = true;
-						}
-					};
-				})();
-
-				for( var name in stage2 ) {
-					param = stage2[ name ];
-					param.success = success;
-					FontFaceOnload( name, param );
+			var stage2 = {
+				Lato: {},
+				LatoBold: {
+					weight: 700
+				},
+				LatoItalic: {
+					style: "italic"
+				},
+				LatoBoldItalic: {
+					weight: 700,
+					style: "italic"
 				}
+			};
+			var counter = 0;
+			var param;
+			var numberOfFonts = Object.keys( stage2 ).length;
+			var success = function() {
+				counter++;
+				if( counter === numberOfFonts ) {
+					docEl.className += " lato-b-loaded";
+					sessionStorage.latoStageTwo = true;
+				}
+			};
+
+			for( var name in stage2 ) {
+				param = stage2[ name ];
+				param.success = success;
+				FontFaceOnload( name, param );
 			}
-		});
-		
-	}
+		}
+	});
 
 })( document );
