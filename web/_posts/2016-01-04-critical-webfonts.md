@@ -55,9 +55,13 @@ We’re essentially lengthening the load complete time at the end of the waterfa
 
 Enable 3G throttling in your favorite web browser (some of you may not have to enable anything to have a slow connection) and watch the page render. The web fonts do feel faster, even if the total time spent loading web fonts is greater.
 
-## Repeat Views
+## The Code
 
-You can continue using the same mechanism you were using before for repeat views. I use [@bram_stein’s `sessionStorage` trick](https://speakerdeck.com/bramstein/web-fonts-performance?slide=115) so that I don’t have to do anything server-side. You can see the implementation in code on GitHub in [initial.js](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/initial.js#L27) and [fonts.js](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/fonts.js#L10) (also lines [16](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/fonts.js#L16) and [44](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/fonts.js#L44)).
+The [code used to implement this approach can be viewed on GitHub](https://github.com/zachleat/zachleat.com/blob/5369a74e3edf32e861d5b0bfdbf0177dbc3e596f/web/js/fonts.js). It’s using FontFaceOnload for the font loading polyfill.
+
+If you’re interested, I’ve also implemented the [same approach using promises and Bram Stein’s FontFaceObserver](https://github.com/zachleat/zachleat.com/blob/5369a74e3edf32e861d5b0bfdbf0177dbc3e596f/web/js/fonts-fontfaceobserver.js).
+
+For repeat views, you can continue using the same mechanism you were using before. I use [Bram Stein’s `sessionStorage` trick](https://speakerdeck.com/bramstein/web-fonts-performance?slide=115) so that I don’t have to do anything server-side. You can see the implementation in code on GitHub in [initial.js](https://github.com/zachleat/zachleat.com/blob/0bf3acde8ad9c7ad99bcd32e2332465004c765ce/web/js/initial.js#L27) and [fonts.js](https://github.com/zachleat/zachleat.com/blob/5369a74e3edf32e861d5b0bfdbf0177dbc3e596f/web/js/fonts.js#L6) (also lines [15](https://github.com/zachleat/zachleat.com/blob/5369a74e3edf32e861d5b0bfdbf0177dbc3e596f/web/js/fonts.js#L15) and [37](https://github.com/zachleat/zachleat.com/blob/5369a74e3edf32e861d5b0bfdbf0177dbc3e596f/web/js/fonts.js#L37)).
 
 ## Ideas for Improvement
 
