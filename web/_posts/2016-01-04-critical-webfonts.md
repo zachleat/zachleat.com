@@ -33,19 +33,19 @@ The yellow frame highlights when the roman web font (used for most body content)
 
 ### Default
 
-<img src="/web/img/posts/critical-fonts/default-3.png" alt="Default Font Loading Filmstrip showing FOIT">
+<img src="/web/img/posts/critical-fonts/default-3.png" alt="Default Font Loading Filmstrip showing FOIT" class="primary">
 
 ### Scoped class for FOUT
 
-<img src="/web/img/posts/critical-fonts/fout-1.png" alt="Font Loading Filmstrip showing FOUT">
+<img src="/web/img/posts/critical-fonts/fout-1.png" alt="Font Loading Filmstrip showing FOUT" class="primary">
 
 ### Two scoped classes for FOFT
 
-<img src="/web/img/posts/critical-fonts/foft-1.png" alt="Font Loading Filmstrip showing FOFT">
+<img src="/web/img/posts/critical-fonts/foft-1.png" alt="Font Loading Filmstrip showing FOFT" class="primary">
 
 ### Two scoped classes for Critical FOFT
 
-<img src="/web/img/posts/critical-fonts/critical-foft-2.png" alt="Font Loading Filmstrip showing Critical + FOFT">
+<img src="/web/img/posts/critical-fonts/critical-foft-2.png" alt="Font Loading Filmstrip showing Critical + FOFT" class="primary">
 
 ## Performance Comparison
 
@@ -71,4 +71,4 @@ You could use extend this approach using something similar to the Critical CSS w
 
 In fact, you could wire up something similar to this using the amazing [Plumin.js](http://www.pluminjs.com/) but unfortunately the library is too large (~`400KB` minimized) for this use case. For now, I’ll just stick with a simple `9KB` baseline WOFF2 that gets replaced with a `25KB` full version. The library would need to at least be smaller than your baseline to get good mileage out of a dynamic font (but I would never dream of equating a web font KB with a JavaScript KB—they have different performance impacts).
 
-[Live Font Interpolation on the Web](http://alistapart.com/article/live-font-interpolation-on-the-web), an article written for A List Apart by [Andrew Johnson](https://twitter.com/aetherpoint) is also worth mentioning. It’s worth keeping an eye on this approach, which would allow us to dynamically generate weights and styles from font masters, hopefully saving bytes on the wire for designs using a wide variety of weights and styles.
+[Live Font Interpolation on the Web](http://alistapart.com/article/live-font-interpolation-on-the-web), an article written for A List Apart by [Andrew Johnson](https://twitter.com/aetherpoint) is also worth mentioning. Keep an eye on this approach—it would allow us to dynamically generate weights and styles from font masters, hopefully saving bytes on the wire for designs using a wide variety of weights and styles. I’d love to see this web-standardized.
