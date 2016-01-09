@@ -53,7 +53,6 @@ figcaption {
   text-align: left;
   padding: 0;
   background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.9);
   color: #525252;
   font-size: 1.1875em;
   line-height: 165%;
@@ -137,18 +136,18 @@ figcaption {
     position: absolute;
     right: 0;
     top: 0;
-    width: 18em;
-    padding: 5em 5em 0 0;
+    width: 17em;
+    padding: 4em 4em 0 0;
   }
 
   .content {
     padding: 2em 0;
-    margin-right: 17em;
+    margin-right: 15em;
     position: relative;
-    min-height: 32em;
+    min-height: 36em;
   }
 }
-@media (min-width: 60em) and (min-height: 30em) {
+@media (min-width: 60em) and (min-height: 34.375em) {
   .rail {
     position: fixed;
   }
@@ -372,7 +371,7 @@ th {
 }
 
 .rail .navigation {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 @media (min-width: 60em) {
@@ -399,7 +398,6 @@ th {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: .75em;
-  padding-top: .8em;
 }
 
 .links a {
@@ -422,14 +420,22 @@ th {
   display: none;
 }
 
+.links_cat {
+  display: block;
+}
+
 @media (min-width: 30em) {
   .links {
     font-size: .875em;
   }
 }
+@media (min-width: 39em) {
+  .links_cat {
+    display: inline-block;
+  }
+}
 @media (min-width: 60em) {
   .links {
-    padding-top: 2em;
     text-align: left;
   }
 
@@ -438,6 +444,10 @@ th {
     padding-left: 0;
     padding-right: 0;
     text-align: right;
+  }
+
+  .links_cat {
+    display: block;
   }
 }
 /* Posts and Content */
@@ -545,8 +555,12 @@ th {
 
 #about-index {
   font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
   font-size-adjust: .47;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
+  max-width: 50em;
+  /* 800px */
 }
 .lato-b-loaded #about-index {
   font-family: LatoItalic, sans-serif;
@@ -577,6 +591,10 @@ th {
     padding-left: 55px;
   }
 
+  #about-index {
+    margin-right: 2em;
+  }
+
   .posts-count li:before {
     pointer-events: none;
     position: absolute;
@@ -594,6 +612,16 @@ th {
   .posts-count .subhed:before,
   .posts-count .upcoming:before {
     content: "";
+  }
+}
+@media (min-width: 43.75em) {
+  #about-index {
+    padding-right: 55px;
+  }
+}
+@media (min-width: 50em) and (max-width: 59.9375em) {
+  #about-index {
+    max-width: 100%;
   }
 }
 /* About Me Link Block */
@@ -691,16 +719,28 @@ th {
 
 /* Tags */
 .tag {
-  font-size: 11px;
-  font-weight: 400;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
   text-transform: uppercase;
-  background: #999;
-  color: #fff;
-  padding: .2em .4em;
+  color: #999;
+  padding: 0 .4em 0 1.6em;
   margin: 0 .5em;
   vertical-align: middle;
   white-space: nowrap;
   display: inline-block;
+  position: relative;
+}
+
+.tag:not(.highlight):before {
+  content: " ";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 13px;
+  width: 13px;
+  background-color: currentColor;
 }
 
 .tags {
@@ -720,28 +760,28 @@ th {
 /* orangered */
 .tag.video,
 .tag.audio {
-  background: cadetblue;
+  color: cadetblue;
 }
 
 .tag.project {
-  background: indianred;
+  color: indianred;
 }
 
 .tag.research {
-  background: steelblue;
+  color: steelblue;
 }
 
 .tag.tweet {
-  background: #00c9ff;
+  color: #00c9ff;
 }
 
 .tag.highlight {
-  background: #444;
-  color: #fff;
+  color: #444;
+  padding-left: .4em;
   font-family: sans-serif;
 }
 
-.tag + .tag.highlight {
+.tag + .tag {
   margin-left: -6px;
 }
 
@@ -832,6 +872,7 @@ th {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: .75em;
+  margin-top: 2em;
 }
 
 .social > div {
