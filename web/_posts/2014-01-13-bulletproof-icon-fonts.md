@@ -7,6 +7,7 @@ headimage: /web/img/posts/pua-default.png
 categories:
   - project
 tags:
+  - project
   - external
   - highlight
   - research
