@@ -581,12 +581,12 @@ th {
 /* Tags */
 .tag {
 	border: 1px solid rgba(0, 0, 0, .08);
-	font-size: 13px;
+	font-size: 11px;
 	font-weight: 700;
-	line-height: 19px;
+	line-height: 16px;
 	text-transform: uppercase;
 	color: #999;
-	padding: 0 .4em 0 1.6em;
+	padding: 0 .4em 0 1.5em;
 	margin: 0 .5em;
 	vertical-align: middle;
 	white-space: nowrap;
@@ -598,8 +598,8 @@ th {
 	position: absolute;
 	top: 3px;
 	left: 3px;
-	height: 13px;
-	width: 13px;
+	height: 10px;
+	width: 10px;
 	background-color: currentColor;
 }
 .tags {
