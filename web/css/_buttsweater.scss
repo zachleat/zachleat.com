@@ -675,17 +675,6 @@ th {
 	background-color: transparent;
 }
 
-
-@font-face {
-	font-family: LatoSubset;
-	src: url('/web/css/fonts/lato/lato-regular-alphabetsubset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/lato-regular-alphabetsubset.woff') format('woff'),
-			 url('/web/css/fonts/lato/lato-regular-alphabetsubset.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
-	unicode-range: U+65-U+90, U+97-122;
-}
-
 @font-face {
 	font-family: Lato;
 	src: url('/web/css/fonts/lato/lato-regular-webfont.woff2') format('woff2'),

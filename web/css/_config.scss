@@ -31,34 +31,25 @@ $twoColLayoutMinWidth: 60em;
 }
 @mixin webfont {
 	& {
-		font-family: $sansSerifFont;
-	}
-	// .lato-loaded & {
-	// 	font-family: Lato, $sansSerifFont;
-	// }
-	.lato-loaded & {
-		font-family: LatoSubset, $sansSerifFont;
-	}
-	.lato-b-loaded & {
 		font-family: Lato, $sansSerifFont;
 	}
 }
 @mixin webfontBold {
-	.lato-b-loaded & {
+	& {
 		font-family: LatoBold, $sansSerifFont;
 		font-style: normal;
 		font-weight: 700;
 	}
 }
 @mixin webfontItalic {
-	.lato-b-loaded & {
+	& {
 		font-family: LatoItalic, $sansSerifFont;
 		font-style: italic;
 		font-weight: 400;
 	}
 }
 @mixin webfontBoldItalic {
-	.lato-b-loaded & {
+	& {
 		font-family: LatoBoldItalic, $sansSerifFont;
 		font-style: italic;
 		font-weight: 700;
