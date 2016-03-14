@@ -14,6 +14,7 @@ categories:
 tags:
   - Namespacing
   - YUI
+  - feedtrim
 ---
 
 *This is the first in a one part series of posts (the is optional) reviewing the actual code contained in the YUI library. This series is not intended for advanced JavaScripters, so if you’re insulted by reading things you already know, you probably aren’t a very good student.*
