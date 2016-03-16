@@ -1,4 +1,4 @@
-/*! zachleat.com - v0.3.6 - 2016-03-14
+/*! zachleat.com - v0.3.7 - 2016-03-15
 * Copyright (c) 2016 Zach Leatherman; MIT License */
 /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
 (function( w ){
