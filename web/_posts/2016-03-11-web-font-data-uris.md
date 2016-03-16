@@ -38,7 +38,7 @@ I’ve seen a similar variant of this Data URI approach used by Alibaba.com, alt
 
 I consider this approach to be an anti-pattern for normal font loading scenarios for a few reasons:
 
-1. It puts a large Data URI in the critical path. Remember that CSS blocks rendering. The goal here is to avoid a Flash of Invisible Text (FOIT) and minimize our Flash of Unstyled Text (FOUT). It obviously isn’t a good tradeoff to delay the entire page render to avoid FOIT and FOUT. Since [42% of web sites load more than 40KB of web font page weight](http://httparchive.org/interesting.php#bytesFont), most sites would need to put 40KB of Data URIs in their critical path, far exceeding the recommended 14KB window for critical content.
+1. It puts a large Data URI in the critical path. Remember that CSS blocks rendering. The goal here is to avoid a Flash of Invisible Text (FOIT) and minimize our Flash of Unstyled Text (FOUT). It obviously isn’t a good tradeoff to delay the entire page render to avoid FOIT and FOUT. Since [42% of web sites load more than 40KB of web font page weight](http://httparchive.org/interesting.php#bytesFont), many sites would need to put 40KB of Data URIs in their critical path, far exceeding the recommended 14KB window for critical content.
 1. The font format you embed is probably not optimal. If you embed a Data URI, you’ll probably embed the WOFF format to give you ubiquity (better browser support) even though the WOFF2 format usually has about a 30% smaller footprint. Embedding a single format removes the benefit of automatic format selection that a typical comma separated `src` attribute provides. You aren’t required to list only one `src` here, but for example let’s say you embed a WOFF2 format Data URI and list the WOFF format as an alternate external url in the `src` attribute. There are still quite a few modern browsers that don’t support WOFF2 and they would load that big Data URI and still have to resort to using a fallback format URL. *(See [Appendex 1, Data URI and Fallback src](#appendix-1) below.)*
 1. Ability to cache fonts suffers. This approach worsens with repeat views because the Data URI is tightly coupled to the markup and will not be cached (unless the user visits the same destination twice).
 1. The other drawback [Bram Stein mentions in his latest presentation (and has a great waterfall showing it, too)](https://speakerdeck.com/bramstein/web-fonts-performance?slide=103): if you have multiple web fonts, making them all Data URIs forces them to be loaded sequentially (bad) instead of in parallel (good).
@@ -208,6 +208,6 @@ Times look marginally better here too. Huh. I think I’m gonna roll with this a
 {% highlight css %}
 @font-face {
 	/* In many browsers it loads the giant Data URI but isn’t able to use it */
-	src: url("data:application/font-woff2;charset=utf-8;base64,...") format("woff2"), url( /path/to/webfont.woff );
+	src: url("data:application/font-woff2;charset=utf-8;base64,...") format("woff2"), url( /path/to/webfont.woff ) format( "woff" );
 }
 {% endhighlight %}
