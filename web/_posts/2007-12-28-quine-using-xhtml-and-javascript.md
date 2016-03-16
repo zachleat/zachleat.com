@@ -13,6 +13,7 @@ categories:
   - JavaScript
 tags:
   - Theory
+  - feedtrim
 ---
 
 Programming Hilarity! He has a [generator][1], and a pre-generated [example][2]. Wait, what’s a quine, you say?

@@ -1,5 +1,3 @@
-@import "config";
-
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -268,17 +266,20 @@ blockquote {
 
 table {
 	border-collapse: collapse;
-	font-size: .8125em;
 }
 tr {
 	border-bottom: 1px solid #ddd;
 }
 td,
 th {
+	font-size: .8125em;
 	padding: .4em .4em;
-}
-th {
 	vertical-align: top;
+}
+@media ( max-width: 24.9375em ) {
+	td, th {
+		font-size: .625em;
+	}
 }
 
 
