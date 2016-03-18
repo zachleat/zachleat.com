@@ -270,10 +270,15 @@ table {
 tr {
 	border-bottom: 1px solid #ddd;
 }
+caption {
+	margin-top: 1.5em;
+	border-bottom: 3px double #999;
+	padding-bottom: .6em;
+}
 td,
 th {
 	font-size: .8125em;
-	padding: .4em .4em;
+	padding: .4em;
 	vertical-align: top;
 }
 @media ( max-width: 24.9375em ) {
