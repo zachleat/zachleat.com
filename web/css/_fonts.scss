@@ -1,0 +1,33 @@
+@font-face {
+	font-family: ComicNeue;
+	src: url('/web/css/fonts/comic-neue/ComicNeue-Regular.woff2') format('woff2'),
+			 url('/web/css/fonts/comic-neue/ComicNeue-Regular.woff') format('woff'),
+			 url('/web/css/fonts/comic-neue/ComicNeue-Regular.ttf')  format('truetype');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: ComicNeueItalic;
+	src: url('/web/css/fonts/comic-neue/ComicNeue-Regular-Oblique.woff2') format('woff2'),
+			 url('/web/css/fonts/comic-neue/ComicNeue-Regular-Oblique.woff') format('woff'),
+			 url('/web/css/fonts/comic-neue/ComicNeue-Regular-Oblique.ttf')  format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: ComicNeueBold;
+	src: url('/web/css/fonts/comic-neue/ComicNeue-Bold.woff2') format('woff2'),
+			 url('/web/css/fonts/comic-neue/ComicNeue-Bold.woff') format('woff'),
+			 url('/web/css/fonts/comic-neue/ComicNeue-Bold.ttf')  format('truetype');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: ComicNeueBoldItalic;
+	src: url('/web/css/fonts/comic-neue/ComicNeue-Bold-Oblique.woff2') format('woff2'),
+			 url('/web/css/fonts/comic-neue/ComicNeue-Bold-Oblique.woff') format('woff'),
+			 url('/web/css/fonts/comic-neue/ComicNeue-Bold-Oblique.ttf')  format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
