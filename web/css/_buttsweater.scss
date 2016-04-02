@@ -144,7 +144,11 @@ body {
 	background-color: $backgroundColor;
 	font-size: 100%;
 	line-height: 140%;
+	font-size-adjust: .51;
 	@include webfont;
+}
+.webfont-stage-1 body {
+	font-size-adjust: none;
 }
 :link {
 	color: #67a281;
@@ -459,9 +463,13 @@ th {
 	font-style: italic;
 	font-size: 16px;
 	line-height: 1.5;
+	font-size-adjust: .47;
 	margin-bottom: 2em;
 	@include webfontItalic;
 	max-width: 50em; /* 800px */
+}
+.webfont-stage-2 #about-index {
+	font-size-adjust: none;
 }
 
 @media (min-width: 30em) {

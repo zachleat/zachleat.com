@@ -1,7 +1,7 @@
 // Fonts
 $monospaceFont: Consolas, monospace;
-$sansSerifFont: Comic Sans MS, Chalkboard SE, sans-serif;
-$serifFont: fantasy;
+$sansSerifFont: sans-serif;
+$serifFont: Georgia, serif;
 
 // Colors
 $blockquoteColor: #888;
@@ -33,28 +33,33 @@ $twoColLayoutMinWidth: 60em;
 	& {
 		font-family: $sansSerifFont;
 	}
+	// .webfont-stage-1 & {
+	// 	font-family: Lato, $sansSerifFont;
+	// }
 	.webfont-stage-1 & {
-		font-family: ComicNeue, $sansSerifFont;
-		font-weight: 300;
+		font-family: LatoSubset, $sansSerifFont;
+	}
+	.webfont-stage-2 & {
+		font-family: Lato, $sansSerifFont;
 	}
 }
 @mixin webfontBold {
 	.webfont-stage-2 & {
-		font-family: ComicNeueBold, $sansSerifFont;
+		font-family: LatoBold, $sansSerifFont;
 		font-style: normal;
 		font-weight: 700;
 	}
 }
 @mixin webfontItalic {
 	.webfont-stage-2 & {
-		font-family: ComicNeueItalic, $sansSerifFont;
+		font-family: LatoItalic, $sansSerifFont;
 		font-style: italic;
-		font-weight: 300;
+		font-weight: 400;
 	}
 }
 @mixin webfontBoldItalic {
 	.webfont-stage-2 & {
-		font-family: ComicNeueBoldItalic, $sansSerifFont;
+		font-family: LatoBoldItalic, $sansSerifFont;
 		font-style: italic;
 		font-weight: 700;
 	}

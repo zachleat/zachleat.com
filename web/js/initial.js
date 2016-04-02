@@ -23,6 +23,13 @@ var ZL = {
 		classes.push( "has-gradient" );
 	}
 
+	// Fonts
+	if( sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {
+		// Don’t push this class, webfont-stage-1 is just for the subset font (since full roman is layered on top, we don’t need it)
+		// classes.push( "webfont-stage-1" );
+		classes.push( "webfont-stage-2" );
+	}
+
 	document.documentElement.className += " " + classes.join( " " );
 })( document );
 
