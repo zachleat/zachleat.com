@@ -5,6 +5,7 @@ layout: post
 permalink: /a-new-font-stack/
 categories: 
 tags:
+distVersion: 0.3.8
 ---
 
 I’ve decided to move away from my old, trusty, font stack foundation of Lato and try out a new font loading strategy with a new font stack. A few details:

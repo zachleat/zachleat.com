@@ -4,14 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{% if page.title %}{{ page.title }}—zachleat.com{% else %}zachleat.com{% endif %}</title>
-		<meta property="og:title" content="{% if page.title %}{{ page.title }}—zachleat.com{% else %}zachleat.com{% endif %}" />
+		<meta property="og:title" content="{% if page.title %}{{ page.title }}—zachleat.com{% else %}zachleat.com{% endif %}">
 		<meta name="author" content="Zach Leatherman">
-		<meta property="og:site_name" content="Zach Leatherman" />
+		<meta property="og:site_name" content="Zach Leatherman">
 		<meta name="description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer.">
-		<meta property="og:description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer." />
-		<meta property="og:image" content="{% if page.headimage %}{{ page.headimage }}{% else %}/web/img/avatar.png{% endif %}" />
+		<meta property="og:description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer.">
+		<meta property="og:image" content="{% if page.headimage %}{{ page.headimage }}{% else %}/web/img/avatar.png{% endif %}">
 
-		<meta name="dist" content="{{ site.distFolder }}">
+		<meta name="dist" content="{% if page.distVersion %}/web/dist/{{ page.distVersion }}/{% else %}{{ site.distFolder }}{% endif %}">
 {% if page.title %}
 		<meta name="template" content="page">
 {% endif %}
@@ -19,7 +19,7 @@
 
 		<style>{% include initial.min.css %}</style>
 		<noscript>
-			<link href="{{ site.distFolder }}defer.min.css" rel="stylesheet">
+			<link href="{% if page.distVersion %}/web/dist/{{ page.distVersion }}/{% else %}{{ site.distFolder }}{% endif %}defer.min.css" rel="stylesheet">
 		</noscript>
 		<script>{% include initial.min.js %}</script>
 	</head>
@@ -68,6 +68,6 @@
 				<div></div>
 			</div>
 		</footer>
-		<script src="{{ site.distFolder }}async.min.js" async></script>
+		<script src="{% if page.distVersion %}/web/dist/{{ page.distVersion }}/{% else %}{{ site.distFolder }}{% endif %}async.min.js" async></script>
 	</body>
 </html>
