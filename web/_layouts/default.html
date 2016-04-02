@@ -1,3 +1,5 @@
+{% capture distIncludeFolder %}dist/{% if page.distVersion %}{{ page.distVersion }}{% else %}{{ site.distVersion }}{% endif %}/{% endcapture %}
+{% capture distFolder %}/web/{{ distIncludeFolder }}{% endcapture %}
 <!doctype html>
 <html lang="en">
 	<head>
@@ -11,17 +13,17 @@
 		<meta property="og:description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer.">
 		<meta property="og:image" content="{% if page.headimage %}{{ page.headimage }}{% else %}/web/img/avatar.png{% endif %}">
 
-		<meta name="dist" content="{% if page.distVersion %}/web/dist/{{ page.distVersion }}/{% else %}{{ site.distFolder }}{% endif %}">
+		<meta name="dist" content="{{distFolder}}">
 {% if page.title %}
 		<meta name="template" content="page">
 {% endif %}
 		<link href="/web/feed/" rel="alternate" title="Zach Leatherman’s Posts Feed" type="application/atom+xml">
 
-		<style>{% include initial.min.css %}</style>
+		<style>{% include {{distIncludeFolder}}initial.min.css %}</style>
 		<noscript>
-			<link href="{% if page.distVersion %}/web/dist/{{ page.distVersion }}/{% else %}{{ site.distFolder }}{% endif %}defer.min.css" rel="stylesheet">
+			<link href="{{ distFolder }}defer.min.css" rel="stylesheet">
 		</noscript>
-		<script>{% include initial.min.js %}</script>
+		<script>{% include {{distIncludeFolder}}initial.min.js %}</script>
 	</head>
 	<body>
 		<div class="rail">
@@ -68,6 +70,6 @@
 				<div></div>
 			</div>
 		</footer>
-		<script src="{% if page.distVersion %}/web/dist/{{ page.distVersion }}/{% else %}{{ site.distFolder }}{% endif %}async.min.js" async></script>
+		<script src="{{ distFolder }}async.min.js" async></script>
 	</body>
 </html>
