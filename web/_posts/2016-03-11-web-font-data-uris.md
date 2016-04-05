@@ -39,7 +39,7 @@ I’ve seen a similar variant of this Data URI approach used by Alibaba.com, alt
 I consider this approach to be an anti-pattern for normal font loading scenarios for a few reasons:
 
 1. It puts a large Data URI in the critical path. Remember that CSS blocks rendering. The goal here is to avoid a Flash of Invisible Text (FOIT) and minimize our Flash of Unstyled Text (FOUT). It obviously isn’t a good tradeoff to delay the entire page render to avoid FOIT and FOUT. Since [42% of web sites load more than 40KB of web font page weight](http://httparchive.org/interesting.php#bytesFont), many sites would need to put 40KB of Data URIs in their critical path, far exceeding the recommended 14KB window for critical content.
-1. The font format you embed is probably not optimal. If you embed a Data URI, you’ll probably embed the WOFF format to give you ubiquity (better browser support) even though the WOFF2 format usually has about a 30% smaller footprint. Embedding a single format removes the benefit of automatic format selection that a typical comma separated `src` attribute provides. You aren’t required to list only one `src` here, but for example let’s say you embed a WOFF2 format Data URI and list the WOFF format as an alternate external url in the `src` attribute. There are still quite a few modern browsers that don’t support WOFF2 and they would load that big Data URI and still have to resort to using a fallback format URL. *(See [Appendex 1, Data URI and Fallback src](#appendix-1) below.)*
+1. The font format you embed is probably not optimal. If you embed a Data URI, you’ll probably embed the WOFF format to give you ubiquity (better browser support) even though the WOFF2 format usually has about a 30% smaller footprint. Embedding a single format removes the benefit of automatic format selection that a typical comma separated `src` attribute provides. You aren’t required to list only one `src` here, but for example let’s say you embed a WOFF2 format Data URI and list the WOFF format as an alternate external url in the `src` attribute. There are still quite a few modern browsers that don’t support WOFF2 and they would load that big Data URI and still have to resort to using a fallback format URL. *(See [Appendix 1, Data URI and Fallback src](#appendix-1) below.)*
 1. Ability to cache fonts suffers. This approach worsens with repeat views because the Data URI is tightly coupled to the markup and will not be cached (unless the user visits the same destination twice).
 1. The other drawback [Bram Stein mentions in his latest presentation (and has a great waterfall showing it, too)](https://speakerdeck.com/bramstein/web-fonts-performance?slide=103): if you have multiple web fonts, making them all Data URIs forces them to be loaded sequentially (bad) instead of in parallel (good).
 
@@ -49,7 +49,7 @@ But just for the sake of argument, let’s put it into action and see how it aff
 
 *(Times generated using Chrome Canary’s Developer Tools Network Throttling in Regular 3G mode)*
 
-<table>
+<table id="results-default">
 	<thead>
 		<tr>
 			<th></th>
@@ -112,7 +112,9 @@ The discussion started with embedding the entire web font, but what if we apply 
 
 *(Times generated using Chrome Canary’s Developer Tools Network Throttling in Regular 3G mode)*
 
-<table>
+_**Update March 17, 2016**: Per a discussion with [@pixelambacht](https://twitter.com/zachleat/status/710136938196443136), we were able to optimize the WOFF font file to only 5KB! I’ve updated the results below. This shaved about 5-10 more milliseconds off in the tests that I ran, so depending on your design preferences you should make your own choices about whether those optimizations are worth it._
+
+<table id="results-foft">
 	<caption>Empty Cache Visit</caption>
 	<thead>
 		<tr>
@@ -125,32 +127,32 @@ The discussion started with embedding the entire web font, but what if we apply 
 		<tr>
 			<th>Initial Render</th>
 			<td>570ms <div>&#160;</div> 58.2KB HTML</td>
-			<td>585ms <div class="worse">(+2.6%)</div> 72.1KB HTML</td>
+			<td>580ms <div class="worse">(+1.7%)</div> 65.4KB HTML</td>
 		</tr>
 		<tr>
 			<th>Critical Roman Loaded</th>
 			<td>967ms</td>
-			<td>585ms <div class="better">(-39%)</div></td>
+			<td>580ms <div class="better">(-40%)</div></td>
 		</tr>
 		<tr>
 			<th>Roman Loaded</th>
 			<td>2.70s</td>
-			<td>2.44s <div class="better">(-9%)</div></td>
+			<td>2.42s <div class="better">(-10%)</div></td>
 		</tr>
 		<tr>
 			<th>Italic Loaded</th>
 			<td>2.70s</td>
-			<td>2.44s <div class="better">(-9%)</div></td>
+			<td>2.42s <div class="better">(-10%)</div></td>
 		</tr>
 		<tr>
 			<th>Bold Loaded</th>
 			<td>2.70s</td>
-			<td>2.44s <div class="better">(-9%)</div></td>
+			<td>2.42s <div class="better">(-10%)</div></td>
 		</tr>
 		<tr>
 			<th>Bold Italic Loaded</th>
 			<td>2.70s</td>
-			<td>2.44s <div class="better">(-9%)</div></td>
+			<td>2.42s <div class="better">(-10%)</div></td>
 		</tr>
 	</tbody>
 </table>
@@ -170,32 +172,32 @@ Wow! No visible FOUT! This is a huge deal. The critical web font is available on
 		<tr>
 			<th>Initial Render</th>
 			<td>309ms</td>
-			<td>291ms <div class="better">(-5.8%)</div></td>
+			<td>293ms <div class="better">(-5.1%)</div></td>
 		</tr>
 		<tr>
 			<th>Critical Roman Loaded</th>
 			<td>479ms</td>
-			<td>418ms <div class="better">(-12%)</div></td>
+			<td>435ms <div class="better">(-12%)</div></td>
 		</tr>
 		<tr>
 			<th>Roman Loaded</th>
 			<td>479ms</td>
-			<td>418ms <div class="better">(-12%)</div></td>
+			<td>435ms <div class="better">(-9%)</div></td>
 		</tr>
 		<tr>
 			<th>Italic Loaded</th>
 			<td>479ms</td>
-			<td>530ms <div class="worse">(+10%)</div></td>
+			<td>435ms <div class="better">(-9%)</div></td>
 		</tr>
 		<tr>
 			<th>Bold Loaded</th>
 			<td>479ms</td>
-			<td>418ms <div class="better">(-12%)</div></td>
+			<td>435ms <div class="better">(-9%)</div></td>
 		</tr>
 		<tr>
 			<th>Bold Italic Loaded</th>
 			<td>479ms</td>
-			<td>418ms <div class="better">(-12%)</div></td>
+			<td>435ms <div class="better">(-9%)</div></td>
 		</tr>
 	</tbody>
 </table>

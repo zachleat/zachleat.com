@@ -3,16 +3,15 @@
 	// IE9+
 	if( !( 'geolocation' in navigator ) ||
 		!( "keys" in Object ) ||
-		sessionStorage.latoStageOne && sessionStorage.latoStageTwo ) {
+		sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {
 		return;
 	}
 
 	var docEl = doc.documentElement;
-
 	FontFaceOnload( "LatoSubset", {
 		success: function() {
-			docEl.className += " lato-loaded";
-			sessionStorage.latoStageOne = true;
+			docEl.className += " webfont-stage-1";
+			sessionStorage.webfontStageOne = true;
 
 			var stage2 = {
 				Lato: {},
@@ -33,8 +32,8 @@
 			var success = function() {
 				counter++;
 				if( counter === numberOfFonts ) {
-					docEl.className += " lato-b-loaded";
-					sessionStorage.latoStageTwo = true;
+					docEl.className += " webfont-stage-2";
+					sessionStorage.webfontStageTwo = true;
 				}
 			};
 

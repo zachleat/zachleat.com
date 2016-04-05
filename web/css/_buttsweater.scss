@@ -16,7 +16,7 @@ html {
 	background-color: $borderColor;
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 figure {
@@ -147,7 +147,7 @@ body {
 	font-size-adjust: .51;
 	@include webfont;
 }
-.lato-loaded body {
+.webfont-stage-1 body {
 	font-size-adjust: none;
 }
 :link {
@@ -225,9 +225,9 @@ code {
 	font-size: .947368421em; /* 18px / 19px */
 	line-height: 100%;
 	background-color: #e9e9e9;
-  padding: .2em .2em .1em;
-  margin: 0 0.1em;
-  color: #444;
+	padding: .2em .2em .1em;
+	margin: 0 0.1em;
+	color: #444;
 }
 h1 code,
 h2 code,
@@ -270,10 +270,15 @@ table {
 tr {
 	border-bottom: 1px solid #ddd;
 }
+caption {
+	margin-top: 1.5em;
+	border-bottom: 3px double #999;
+	padding-bottom: .6em;
+}
 td,
 th {
 	font-size: .8125em;
-	padding: .4em .4em;
+	padding: .4em;
 	vertical-align: top;
 }
 @media ( max-width: 24.9375em ) {
@@ -463,7 +468,7 @@ th {
 	@include webfontItalic;
 	max-width: 50em; /* 800px */
 }
-.lato-b-loaded #about-index {
+.webfont-stage-2 #about-index {
 	font-size-adjust: none;
 }
 
@@ -674,44 +679,4 @@ th {
 .printed-page pre {
 	border-color: transparent;
 	background-color: transparent;
-}
-
-@font-face {
-	font-family: Lato;
-	src: url('/web/css/fonts/lato/lato-regular-webfont.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/lato-regular-webfont.woff') format('woff'),
-			 url('/web/css/fonts/lato/lato-regular-webfont.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
-	// font-display: swap;
-}
-
-@font-face {
-	font-family: LatoBold;
-	src: url('/web/css/fonts/lato/lato-bold-webfont.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/lato-bold-webfont.woff') format('woff'),
-			 url('/web/css/fonts/lato/lato-bold-webfont.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
-	// font-display: swap;
-}
-
-@font-face {
-	font-family: LatoItalic;
-	src: url('/web/css/fonts/lato/lato-italic-webfont.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/lato-italic-webfont.woff') format('woff'),
-			 url('/web/css/fonts/lato/lato-italic-webfont.ttf') format('truetype');
-	font-weight: 400;
-	font-style: italic;
-	// font-display: swap;
-}
-
-@font-face {
-	font-family: LatoBoldItalic;
-	src: url('/web/css/fonts/lato/lato-bolditalic-webfont.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/lato-bolditalic-webfont.woff') format('woff'),
-			 url('/web/css/fonts/lato/lato-bolditalic-webfont.ttf') format('truetype');
-	font-weight: 700;
-	font-style: italic;
-	// font-display: swap;
 }

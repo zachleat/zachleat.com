@@ -20,6 +20,7 @@ module.exports = function(grunt) {
 			cssSrc: '<%= config.root %>css/',
 			imgSrc: '<%= config.root %>img/',
 			iconsSrc: '<%= config.imgSrc %>icons/',
+			distVersion: '<%= pkg.version %>',
 			distFolder: '<%= config.root %>dist/<%= pkg.version %>/',
 			distFeed: '<%- config.root %>_site/feed/atom.xml'
 		},
@@ -35,6 +36,7 @@ module.exports = function(grunt) {
 				permalink: '/<%= config.root %>:title/',
 				highlighter: 'pygments',
 				relative_permalinks: false,
+				distVersion: '<%= pkg.version %>',
 				distFolder: '/<%= config.distFolder %>'
 			}
 		},
@@ -146,12 +148,10 @@ module.exports = function(grunt) {
 			// For CSS inlining
 			includes: {
 				files: {
-					'<%= config.root %>_includes/initial.min.css': ['<%= config.distFolder %>initial.min.css'],
-					'<%= config.root %>_includes/initial.css': ['<%= config.distFolder %>initial.css'],
-					'<%= config.root %>_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
-					'<%= config.root %>_includes/initial.js': ['<%= config.distFolder %>initial.js'],
-					'<%= config.root %>_includes/async.min.js': ['<%= config.distFolder %>async.min.js'],
-					'<%= config.root %>_includes/async.js': ['<%= config.distFolder %>async.js']
+					'<%= config.root %>_includes/dist/<%= pkg.version %>/initial.min.css': ['<%= config.distFolder %>initial.min.css'],
+					'<%= config.root %>_includes/dist/<%= pkg.version %>/initial.css': ['<%= config.distFolder %>initial.css'],
+					'<%= config.root %>_includes/dist/<%= pkg.version %>/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
+					'<%= config.root %>_includes/dist/<%= pkg.version %>/initial.js': ['<%= config.distFolder %>initial.js']
 				}
 			}
 		},

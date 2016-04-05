@@ -2,7 +2,7 @@
 ;(function( doc ) {
 	// IE9+
 	if( !( 'geolocation' in navigator ) ||
-		sessionStorage.latoStageOne && sessionStorage.latoStageTwo ) {
+		sessionStorage.webfontStage1 && sessionStorage.webfontStage2 ) {
 		return;
 	}
 
@@ -12,8 +12,8 @@
 	});
 
 	observer.check().then(function () {
-		docEl.className += " lato-loaded";
-		sessionStorage.latoStageOne = true;
+		docEl.className += " webfont-stage-1";
+		sessionStorage.webfontStage1 = true;
 
 		Promise.all([
 			(new FontFaceObserver( "Lato", {
@@ -30,8 +30,8 @@
 				style: "italic"
 			})).check(),
 		]).then(function () {
-			docEl.className += " lato-b-loaded";
-			sessionStorage.latoStageTwo = true;
+			docEl.className += " webfont-stage-2";
+			sessionStorage.webfontStage2 = true;
 		});
 	});
 
