@@ -8,6 +8,8 @@ tags:
 distVersion: 0.3.8
 ---
 
+*Update: This was an April Fools’ Joke. While it was originally implemented site-wide, moving forward I’ve kept the code for this approach quarantined to this page. Don’t use this font loading strategy. Feel free to use Comic Neue though, it seems solid.*
+
 I’ve decided to move away from my old, trusty, font stack foundation of Lato and try out a new font loading strategy with a new font stack. A few details:
 
 1. I’ve purposefully disabled the `sessionStorage` trick that optimized font loading for repeat views. This should ensure that every visitor receives a Flash of Unstyled Text, or FOUT.
