@@ -8,7 +8,6 @@
 	}
 
 	var docEl = doc.documentElement;
-console.log( 'test' );
 	FontFaceOnload( "LatoSubset", {
 		success: function() {
 			docEl.className += " webfont-stage-1";
