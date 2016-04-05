@@ -1,5 +1,5 @@
 ---
-title: 'WebFonts: Preloaded'
+title: 'The Web Fonts: Preloaded'
 author: Zach Leatherman
 layout: post
 permalink: /preload/
@@ -7,7 +7,6 @@ categories:
 tags:
  - research
  - highlight
- - pending
 ---
 
 After the recent release of [`loadCSS` 1.0](https://github.com/filamentgroup/loadCSS#recommended-usage-pattern) updated the utility into a `<link rel="preload">` polyfill for CSS and [Yoav Weiss’ excellent Smashing Magazine post on `preload`](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/), I decided to experiment with `preload` to see if it could improve the variety of web font loading approaches I’ve written about in the past.
