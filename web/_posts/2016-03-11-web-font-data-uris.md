@@ -65,33 +65,33 @@ But just for the sake of argument, let’s put it into action and see how it aff
 			<th>Initial Render</th>
 			<td>573ms <div>&#160;</div> 54KB HTML</td>
 			<td>953ms <div class="worse">(+66%)</div> 95.7KB HTML</td>
-			<td>1.27s <div class="worse">(+33%)</div> 133KB HTML</td>
-			<td>1.94s <div class="worse">(+52%)</div> 175KB HTML</td>
-			<td>2.30s <div class="worse">(+18%)</div> 212KB HTML</td>
+			<td>1.27s <div class="worse">(+121%)</div> 133KB HTML</td>
+			<td>1.94s <div class="worse">(+238%)</div> 175KB HTML</td>
+			<td>2.30s <div class="worse">(+301%)</div> 212KB HTML</td>
 		</tr>
 		<tr>
 			<th>Roman Loaded</th>
 			<td>2.12s</td>
 			<td>1.01s <div class="better">(-52%)</div></td>
-			<td>1.53s <div class="worse">(+51%)</div></td>
-			<td>2.03s <div class="worse">(+32%)</div></td>
-			<td>2.38s <div class="worse">(+17%)</div></td>
+			<td>1.53s <div class="better">(-28%)</div></td>
+			<td>2.03s <div class="better">(-4%)</div></td>
+			<td>2.38s <div class="worse">(+12%)</div></td>
 		</tr>
 		<tr>
 			<th>Italic Loaded</th>
 			<td>2.12s</td>
 			<td>2.05s <div class="better">(-3%)</div></td>
-			<td>1.53s <div class="better">(-25%)</div></td>
-			<td>2.03s <div class="worse">(+32%)</div></td>
-			<td>2.38s <div class="worse">(+17%)</div></td>
+			<td>1.53s <div class="better">(-28%)</div></td>
+			<td>2.03s <div class="better">(-4%)</div></td>
+			<td>2.38s <div class="worse">(+12%)</div></td>
 		</tr>
 		<tr>
 			<th>Bold Loaded</th>
 			<td>2.20s</td>
 			<td>2.11s <div class="better">(-4%)</div></td>
-			<td>2.16s <div class="worse">(+2%)</div></td>
-			<td>2.03s <div class="better">(-6%)</div></td>
-			<td>2.38s <div class="worse">(+17%)</div></td>
+			<td>2.16s <div class="better">(-2%)</div></td>
+			<td>2.03s <div class="better">(-8%)</div></td>
+			<td>2.38s <div class="worse">(+8%)</div></td>
 		</tr>
 		<tr>
 			<th>Bold Italic Loaded</th>
@@ -130,27 +130,12 @@ _**Update March 17, 2016**: Per a discussion with [@pixelambacht](https://twitte
 			<td>580ms <div class="worse">(+1.7%)</div> 65.4KB HTML</td>
 		</tr>
 		<tr>
-			<th>Critical Roman Loaded</th>
+			<th>Stage 1 Render <div>(Critical Roman)</div></th>
 			<td>967ms</td>
 			<td>580ms <div class="better">(-40%)</div></td>
 		</tr>
 		<tr>
-			<th>Roman Loaded</th>
-			<td>2.70s</td>
-			<td>2.42s <div class="better">(-10%)</div></td>
-		</tr>
-		<tr>
-			<th>Italic Loaded</th>
-			<td>2.70s</td>
-			<td>2.42s <div class="better">(-10%)</div></td>
-		</tr>
-		<tr>
-			<th>Bold Loaded</th>
-			<td>2.70s</td>
-			<td>2.42s <div class="better">(-10%)</div></td>
-		</tr>
-		<tr>
-			<th>Bold Italic Loaded</th>
+			<th>Stage 2 Render <div>(Roman, Italic, Bold, Bold Italic)</div></th>
 			<td>2.70s</td>
 			<td>2.42s <div class="better">(-10%)</div></td>
 		</tr>
