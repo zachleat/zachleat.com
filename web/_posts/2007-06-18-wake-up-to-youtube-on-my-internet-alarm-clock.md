@@ -10,6 +10,7 @@ categories:
 tags:
   - highlight
   - project
+  - feedtrim
 ---
 
 **Update**: Try the new [ALARMd 2 Beta][1], with Google Calendar integration and offline Youtube caching.
