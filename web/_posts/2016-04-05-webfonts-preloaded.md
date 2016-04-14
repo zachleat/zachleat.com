@@ -9,7 +9,7 @@ tags:
  - highlight
 ---
 
-***Summary**: If you’re not currently using a font loading strategy, using `preload` with web fonts will reduce the amount of FOIT visitors will see when they visit your site—usually paid by sacrificing initial render time. Don’t preload too much or the cost to initial render will be too high. For devs not only using a font loading strategy but a two stage strategy (I applaud you), `preload` will be a an improvement over Data URIs for the first stage once browser support is a bit broader. I wouldn’t preload any more than that.*
+***Summary**: If you’re not currently using a font loading strategy, using `preload` with web fonts will reduce the amount of FOIT visitors will see when they visit your site—paid for by sacrificing initial render time. Don’t preload too much or the cost to initial render will be too high. For devs using a font loading strategy, the same rules apply. Try to only preload a single web font, whether that be the only font in a single stage load or the subset font in the first stage of a two stage load. Further, `preload` is an improvement over Data URIs for two stage font loads in supporting browsers, and I will be happy to welcome it as a best practice when its browser support grows.*
 
 After the recent release of [`loadCSS` 1.0](https://github.com/filamentgroup/loadCSS#recommended-usage-pattern) updated the utility into a `<link rel="preload">` polyfill for CSS and [Yoav Weiss’ excellent Smashing Magazine post on `preload`](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/), I decided to experiment with `preload` to see if it could improve the variety of web font loading approaches I’ve written about in the past.
 
@@ -140,17 +140,17 @@ Perhaps obviously, the more fonts you preload the more initial render time suffe
 1. They don’t directly block render, although as shown above in low bandwidth situations they can delay initial render.
 1. You can add a `type` attribute to declare the font format to download. Right now only Chrome Canary has a working implementation of this feature and it also supports WOFF2. But this type attribute protects you if a browser implements `preload` without a newer font format (or vice versa).
 1. Works great with browser cache.
-1. Multiple preloaded fonts load in parallel.
+1. Multiple preloaded fonts load in parallel (although I wouldn’t recommend preloading multiple web fonts).
 
 ## Best Practice?
 
-If the alternative is doing nothing (please don’t), then yes I would recommend preloading the most heavily used web font on your site. In the example above, `Lato-Regular.woff2` was 25KB. If you preload more file weight (or more fonts), the tradeoff in initial render time might make it more difficult to accept.
+If the alternative is doing nothing (please don’t), then yes I would recommend preloading the most often used web font on your site. In the example above, `Lato-Regular.woff2` was 25KB. If you preload more file weight (or more fonts), the tradeoff in initial render time might make it more difficult to accept.
 
 ## Use with a Font Loading Strategy
 
 `preload` isn’t a panacea because it’s not sufficient by itself as a font loading strategy. There are two major considerations to font loading: *(1)* Eliminating the Flash of Invisible Text (FOIT) by showing a Flash of Unstyled Text (FOUT) and *(2)* Speeding up font loading to minimize the amount of time that fallback text is shown. We want to reduce the jarring reflows that happen when content is re-rendered with our new, shiny web fonts. An ideal strategy would eliminate both FOIT *and* FOUT.
 
-`preload` helps our second point but does nothing for the first. We still need to implement a FOUT strategy—of course, my favorite is still [Critical FOFT](/web/critical-webfonts/) with an [inline Data URI for the first stage](/web/web-font-data-uris). This strategy has shown to eliminate FOIT and FOUT, but at a cost documented above (and in the Data URI post). Let’s see how `preload` plays out there.
+`preload` helps our second point but does nothing for the first. We still need to implement a FOUT strategy—of course, my favorite is still [Critical FOFT](/web/critical-webfonts/) with an [inline Data URI for the first stage](/web/web-font-data-uris). This strategy has shown to eliminate FOIT and FOUT, but at a cost documented above (and in the Data URI post). Let’s see how `preload` plays out there:
 
 *(Times generated using Chrome Canary’s Developer Tools Network Throttling in Regular 3G mode)*
 
@@ -186,6 +186,8 @@ If the alternative is doing nothing (please don’t), then yes I would recommend
 	</tbody>
 </table>
 
+The results are pretty good for a Two Stage font loading approach. If your web font requirements are a little simpler and you’re only loading a single web font (One Stage font loading), then `preload` will have a similar beneficial performance gain. However, if you’re loading multiple web fonts in a grouped load (again, One Stage) with a single repaint/reflow step, `preload` isn’t wise: if you `preload` one of the fonts, the repaint/reflow will not happen until all web fonts have completed and it will be wasted; if you `preload` all of them, the sacrifices to initial render are too costly.
+
 ## Conclusion
 
-The benefits to `preload` for fonts are numerous—especially over the Data URI approach. The only nail in the `preload` coffin now is browser support. Once browser support for this is better, I will definitely switch from using Data URIs in the first stage of Critical FOFT to simply preloading the hosted Stage 1 WOFF2 file. Always measure the sacrifice in initial render time to determine if this tradeoff is worth it for your site.
+The benefits to `preload` for fonts are numerous—especially over the Two Stage Data URI approach. The only nail in the `preload` coffin now is browser support. Once browser support for this is better, I will definitely switch from using Data URIs in the first stage of Critical FOFT to simply preloading the hosted first stage WOFF2 file (or similarly if you’re only loading a single web font). Always measure the sacrifice in initial render time to determine if this trade-off is worth it for your site.
