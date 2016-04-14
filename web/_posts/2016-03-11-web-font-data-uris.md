@@ -43,6 +43,8 @@ I consider this approach to be an anti-pattern for normal font loading scenarios
 1. Ability to cache fonts suffers. This approach worsens with repeat views because the Data URI is tightly coupled to the markup and will not be cached (unless the user visits the same destination twice).
 1. The other drawback [Bram Stein mentions in his latest presentation (and has a great waterfall showing it, too)](https://speakerdeck.com/bramstein/web-fonts-performance?slide=103): if you have multiple web fonts, making them all Data URIs forces them to be loaded sequentially (bad) instead of in parallel (good).
 
+***Update**: Wim Leers has since informed me that the approach he was proposing was not inlined critical CSS, but rather a blocking CSS stylesheet, a la the approach used by Alibaba and Medium. The above drawbacks still stand, save for #3. What’s more, this approach probably exacerbates drawback #1, given the performance gains we already know exist when using Critical CSS.*
+
 For those reasons, *this method is considered to be an anti-pattern* and should not be utilized on a production site. It may seem superficially beneficial, but it’s actually **bad for performance**.
 
 But just for the sake of argument, let’s put it into action and see how it affects the fonts on my web site:
