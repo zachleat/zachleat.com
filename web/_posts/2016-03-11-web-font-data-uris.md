@@ -43,6 +43,8 @@ I consider this approach to be an anti-pattern for normal font loading scenarios
 1. Ability to cache fonts suffers. This approach worsens with repeat views because the Data URI is tightly coupled to the markup and will not be cached (unless the user visits the same destination twice).
 1. The other drawback [Bram Stein mentions in his latest presentation (and has a great waterfall showing it, too)](https://speakerdeck.com/bramstein/web-fonts-performance?slide=103): if you have multiple web fonts, making them all Data URIs forces them to be loaded sequentially (bad) instead of in parallel (good).
 
+***Update**: Wim Leers has since informed me that the approach he was proposing was not inlined critical CSS, but rather a blocking CSS stylesheet, a la the approach used by Alibaba and Medium. The above drawbacks still stand, save for #3. What’s more, this approach probably exacerbates drawback #1, given the performance gains we already know exist when using Critical CSS.*
+
 For those reasons, *this method is considered to be an anti-pattern* and should not be utilized on a production site. It may seem superficially beneficial, but it’s actually **bad for performance**.
 
 But just for the sake of argument, let’s put it into action and see how it affects the fonts on my web site:
@@ -65,33 +67,33 @@ But just for the sake of argument, let’s put it into action and see how it aff
 			<th>Initial Render</th>
 			<td>573ms <div>&#160;</div> 54KB HTML</td>
 			<td>953ms <div class="worse">(+66%)</div> 95.7KB HTML</td>
-			<td>1.27s <div class="worse">(+33%)</div> 133KB HTML</td>
-			<td>1.94s <div class="worse">(+52%)</div> 175KB HTML</td>
-			<td>2.30s <div class="worse">(+18%)</div> 212KB HTML</td>
+			<td>1.27s <div class="worse">(+121%)</div> 133KB HTML</td>
+			<td>1.94s <div class="worse">(+238%)</div> 175KB HTML</td>
+			<td>2.30s <div class="worse">(+301%)</div> 212KB HTML</td>
 		</tr>
 		<tr>
 			<th>Roman Loaded</th>
 			<td>2.12s</td>
 			<td>1.01s <div class="better">(-52%)</div></td>
-			<td>1.53s <div class="worse">(+51%)</div></td>
-			<td>2.03s <div class="worse">(+32%)</div></td>
-			<td>2.38s <div class="worse">(+17%)</div></td>
+			<td>1.53s <div class="better">(-28%)</div></td>
+			<td>2.03s <div class="better">(-4%)</div></td>
+			<td>2.38s <div class="worse">(+12%)</div></td>
 		</tr>
 		<tr>
 			<th>Italic Loaded</th>
 			<td>2.12s</td>
 			<td>2.05s <div class="better">(-3%)</div></td>
-			<td>1.53s <div class="better">(-25%)</div></td>
-			<td>2.03s <div class="worse">(+32%)</div></td>
-			<td>2.38s <div class="worse">(+17%)</div></td>
+			<td>1.53s <div class="better">(-28%)</div></td>
+			<td>2.03s <div class="better">(-4%)</div></td>
+			<td>2.38s <div class="worse">(+12%)</div></td>
 		</tr>
 		<tr>
 			<th>Bold Loaded</th>
 			<td>2.20s</td>
 			<td>2.11s <div class="better">(-4%)</div></td>
-			<td>2.16s <div class="worse">(+2%)</div></td>
-			<td>2.03s <div class="better">(-6%)</div></td>
-			<td>2.38s <div class="worse">(+17%)</div></td>
+			<td>2.16s <div class="better">(-2%)</div></td>
+			<td>2.03s <div class="better">(-8%)</div></td>
+			<td>2.38s <div class="worse">(+8%)</div></td>
 		</tr>
 		<tr>
 			<th>Bold Italic Loaded</th>
@@ -130,27 +132,12 @@ _**Update March 17, 2016**: Per a discussion with [@pixelambacht](https://twitte
 			<td>580ms <div class="worse">(+1.7%)</div> 65.4KB HTML</td>
 		</tr>
 		<tr>
-			<th>Critical Roman Loaded</th>
+			<th>Stage 1 Render <div>(Critical Roman)</div></th>
 			<td>967ms</td>
 			<td>580ms <div class="better">(-40%)</div></td>
 		</tr>
 		<tr>
-			<th>Roman Loaded</th>
-			<td>2.70s</td>
-			<td>2.42s <div class="better">(-10%)</div></td>
-		</tr>
-		<tr>
-			<th>Italic Loaded</th>
-			<td>2.70s</td>
-			<td>2.42s <div class="better">(-10%)</div></td>
-		</tr>
-		<tr>
-			<th>Bold Loaded</th>
-			<td>2.70s</td>
-			<td>2.42s <div class="better">(-10%)</div></td>
-		</tr>
-		<tr>
-			<th>Bold Italic Loaded</th>
+			<th>Stage 2 Render <div>(Roman, Italic, Bold, Bold Italic)</div></th>
 			<td>2.70s</td>
 			<td>2.42s <div class="better">(-10%)</div></td>
 		</tr>
