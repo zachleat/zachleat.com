@@ -13,6 +13,7 @@ categories:
   - JavaScript
 tags:
   - JSON
+  - feedtrim
 ---
 
 *The headline should more accurately read “Javascript Objects are not **necessarily** JSON.” But that waters it down a bit, don’t you think?*

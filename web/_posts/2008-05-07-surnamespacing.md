@@ -15,6 +15,8 @@ categories:
   - Java
   - JavaScript
   - PHP
+tags:
+  - feedtrim
 ---
 
 Everyone has a library. Everyone has their own utility classes and functions they’re using in their own personal and contracted projects. And now that everyone has a blog too, they’re all releasing their libraries as open source, using the commando underoo philosophy of wild, free, and unrestricted naming schemes for their code. Not anymore. Let’s surnamespace.
