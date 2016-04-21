@@ -2,6 +2,7 @@
 .better,
 .worse {
 	@include webfontBold;
+	white-space: nowrap;
 }
 .worse {
 	color: #CB000F;
