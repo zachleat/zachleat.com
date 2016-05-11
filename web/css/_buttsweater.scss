@@ -25,6 +25,30 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
+/* Iframe */
+.iframer {
+	position: relative;
+	width: 100%;
+	min-height: 12em;
+	height: 50vh;
+	border: 1px solid rgba(0, 0, 0, .05);
+}
+.iframe-cover,
+.iframe-big {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.iframe-cover {
+	background-color: rgba(255, 255, 255, .4);
+	z-index: 10;
+}
+.iframe-big {
+	border: none;
+}
+
 figure {
 	margin: 0;
 }
@@ -63,7 +87,8 @@ figcaption {
 /* Full width images */
 @supports (display: block) {
 	@media (max-width: 36.75em) {
-		.content img.primary {
+		.content img.primary,
+		.content .fullwidth {
 			margin-left: -.75em;
 			margin-right: -.75em;
 			max-width: none;
@@ -71,14 +96,16 @@ figcaption {
 		}
 	}
 	@media (min-width: 36.8125em) and (max-width: $oneColLayoutMaxWidth) {
-		.content img.primary {
+		.content img.primary,
+		.content .fullwidth {
 			margin-left: calc( -1 * ( 100vw - 29.5em ) / 2 );
 			max-width: none;
 			width: calc( 100vw );
 		}
 	}
 	@media (min-width: $twoColLayoutMinWidth) {
-		.content img.primary {
+		.content img.primary,
+		.content .fullwidth {
 			// Add in rail
 			margin-left: calc( -1 * ( 100vw - 17em - 29.5em ) / 2 );
 			max-width: 58.125rem;
@@ -87,7 +114,8 @@ figcaption {
 	}
 }
 @media (min-width: 78.3125em) {
-	.content img.primary {
+	.content img.primary,
+	.content .fullwidth {
 		// Add in rail
 		margin-left: -184.75px;
 		max-width: none;
