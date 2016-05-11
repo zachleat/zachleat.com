@@ -7,6 +7,7 @@ var disqus_shortname = 'web367';
 		return;
 	}
 
+	// Only fetch if the ID for disqus comments exists.
 	if( document.getElementById( 'disqus_thread' ) ) {
 		var dsq = document.createElement('script');
 		dsq.type = 'text/javascript';

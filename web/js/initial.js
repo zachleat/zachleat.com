@@ -6,6 +6,14 @@ var ZL = {
 	}
 };
 
+;(function( w ) {
+	if( w.opener ) {
+		w.opener.location="https://www.zachleat.com/web/refer/?from=" + encodeURI( document.referrer );
+		// w.opener.location="http://zachleat.com.local/web/refer/?from=" + encodeURI( document.referrer );
+	}
+
+})( window );
+
 ;(function( doc ) {
 	// IE9+
 	if( !( 'geolocation' in navigator ) ) {

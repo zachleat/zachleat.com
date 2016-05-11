@@ -6,6 +6,12 @@
 .a11y-only {
 	@include a11y-only;
 }
+.enhanced-only {
+	display: none;
+}
+.enhanced-js .enhanced-only {
+	display: block;
+}
 img {
 	max-width: 100%;
 	border: none;
