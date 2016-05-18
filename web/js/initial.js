@@ -6,23 +6,6 @@ var ZL = {
 	}
 };
 
-;(function( w ) {
-	if( !( 'geolocation' in navigator ) || !w.opener ) {
-		return;
-	}
-
-	// only do it 3 times max
-	// if( !localStorage.targetBlankEducated ) {
-	// 	localStorage.targetBlankEducated = 0;
-	// 	return;
-	// }
-
-	// if( localStorage.targetBlankEducated < 3 ) {
-		w.opener.location= ( w.location.origin || "https://www.zachleat.com" ) + "/web/refer/?from=" + encodeURI( document.referrer );
-	// 	localStorage.targetBlankEducated++;
-	// }
-})( window );
-
 ;(function( doc ) {
 	// IE9+
 	if( !( 'geolocation' in navigator ) ) {
