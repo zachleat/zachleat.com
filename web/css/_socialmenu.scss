@@ -32,7 +32,7 @@
 	margin-left: 0;
 }
 .grunticon .social_icon {
-	opacity: .3;
+	opacity: .6;
 	margin-left: .4em;
 }
 .grunticon .social_icon:hover {
@@ -56,35 +56,5 @@
 }
 .social a:link,
 .social a:visited {
-	color: #aaa;
-}
-.github:link:hover,
-.github:link:focus,
-.github:visited:hover,
-.github:visited:focus {
-	color: #000;
-}
-.facebook:link:hover,
-.facebook:link:focus,
-.facebook:visited:hover,
-.facebook:visited:focus {
-	color: #38539b;
-}
-.rss:link:hover,
-.rss:link:focus,
-.rss:visited:hover,
-.rss:visited:focus {
-	color: #ff9132;
-}
-.twitter:link:hover,
-.twitter:link:focus,
-.twitter:visited:hover,
-.twitter:visited:focus {
-	color: #00c9ff;
-}
-.nebraskajs:link:hover,
-.nebraskajs:link:focus,
-.nebraskajs:visited:hover,
-.nebraskajs:visited:focus {
-	color: #f5da1c;
+	color: #444;
 }

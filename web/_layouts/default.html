@@ -17,7 +17,7 @@
 {% if page.title %}
 		<meta name="template" content="page">
 {% endif %}
-		<link href="/web/feed/" rel="alternate" title="Zach Leatherman’s Posts Feed" type="application/atom+xml">
+		<link rel="alternate" href="/web/feed/" title="Zach Leatherman’s Posts Feed" type="application/atom+xml">
 
 		<style>{% include {{distIncludeFolder}}initial.min.css %}</style>
 		<noscript>
@@ -31,6 +31,7 @@
 				<a href="{{ site.baseurl }}/" class="header">
 					<img src="/web/img/avatar.png" alt="zachleat’s Ugly Mug">
 					<h1>Zach Leatherman</h1>
+					<div class="header_home links links-standalone">Home</div>
 				</a>
 			</header>
 			<aside>
@@ -38,7 +39,6 @@
 					<div class="navigation">
 						<div class="links">
 							<div class="links_cat">
-								<a href="/web/">Home</a>
 								<a href="/web/about/">About</a>
 								<a href="/web/projects/">Projects</a>
 							</div>
