@@ -274,8 +274,14 @@ h3 code,
 h4 code,
 h5 code,
 h6 code,
-pre > code {
+pre > code,
+a[href] > code {
 	background-color: transparent;
+}
+a[href] > code {
+	padding-left: 0;
+	padding-right: 0;
+	color: inherit;
 }
 pre {
 	font-family: $monospaceFont;
@@ -288,6 +294,7 @@ pre {
 	white-space: -pre-wrap;
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
+	tab-size: 4;
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	h1 {
