@@ -31,10 +31,10 @@ module.exports = function(grunt) {
 				description: 'A web development blog written by @zachleat.',
 				safe: false,
 				baseurl: '/web',
-				markdown: 'rdiscount',
+				markdown: 'kramdown',
+				highlighter: 'rouge',
 				// https://github.com/mojombo/jekyll/wiki/Permalinks
 				permalink: '/<%= config.root %>:title/',
-				highlighter: 'pygments',
 				relative_permalinks: false,
 				distVersion: '<%= pkg.version %>',
 				distFolder: '/<%= config.distFolder %>'
