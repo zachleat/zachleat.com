@@ -38,17 +38,17 @@ _This guide is not intended for use with font icons, which have different loadin
 
 ## Quick Guide
 
-I want an approach that:
+If you’re looking for a specific approach, I’ve prepared some handy links that will take you to the section you need. Let’s say you want an approach that:
 
-* _is the most well rounded approach that will be *good enough* for most use cases_: [FOUT with a Class](#fout-class).
+* *is the most well rounded approach that will be _good enough_ for most use cases*: [FOUT with a Class](#fout-class).
 
-* _is the easiest possible thing to implement_: I’ve learned a lot about web fonts and at time of writing this article the current browser support is lacking for the easiest methods for effective/robust web font implementation. It is with that in mind that I will admit—if you’re looking for the easy way out already, you should consider [not using web fonts](#abstain). If you don’t know what web fonts are doing to improve your design, they may not be right for you. Don’t get me wrong, web fonts are **great**. But educate yourself on the benefit first. ([In Defense of Web Fonts, _The Value of a Web Font_ by Robin Rendle](https://robinrendle.com/notes/in-defense-of-webfonts/#the-value-of-a-webfont) is a good start. If you have others, please leave a comment below!)
+* *is the easiest possible thing to implement*: I’ve learned a lot about web fonts and at time of writing this article the current browser support is lacking for the easiest methods for effective/robust web font implementation. It is with that in mind that I will admit—if you’re looking for the easy way out already, you should consider [not using web fonts](#abstain). If you don’t know what web fonts are doing to improve your design, they may not be right for you. Don’t get me wrong, web fonts are **great**. But educate yourself on the benefit first. ([In Defense of Web Fonts, _The Value of a Web Font_ by Robin Rendle](https://robinrendle.com/notes/in-defense-of-webfonts/#the-value-of-a-webfont) is a good start. If you have others, please leave a comment below!)
 
-* _is the best performance-oriented approach_: Use one of the Critical FOFT approaches. Personally, at time of writing my preference is [Critical FOFT with Data URI](#critical-foft-data-uri) but will shift toward [Critical FOFT with `preload`](#critical-foft-preload) as browser support for `preload` increases.
+* *is the best performance-oriented approach*: Use one of the Critical FOFT approaches. Personally, at time of writing my preference is [Critical FOFT with Data URI](#critical-foft-data-uri) but will shift toward [Critical FOFT with `preload`](#critical-foft-preload) as browser support for `preload` increases.
 
-* _will work well with a large number of web fonts_: If you’re web font obsessed (anything more than 4 or 5 web fonts or a total file size of more than 100KB) this one is kind of tricky. I’d first recommend trying to pare your web font usage down, but if that isn’t possible stick with a standard [FOFT, or FOUT with Two Stage Render](#foft) approach. Use separate FOFT approaches for each typeface (grouping of Roman, Bold, Italic, et cetera).
+* *will work well with a large number of web fonts*: If you’re web font obsessed (anything more than 4 or 5 web fonts or a total file size of more than 100KB) this one is kind of tricky. I’d first recommend trying to pare your web font usage down, but if that isn’t possible stick with a standard [FOFT, or FOUT with Two Stage Render](#foft) approach. Use separate FOFT approaches for each typeface (grouping of Roman, Bold, Italic, et cetera).
 
-* _will work with my existing cloud/web font hosting solution_: FOFT approaches generally require self hosting, so stick with the tried and true [FOUT with a Class](#fout-class) approach.
+* *will work with my existing cloud/web font hosting solution*: FOFT approaches generally require self hosting, so stick with the tried and true [FOUT with a Class](#fout-class) approach.
 
 
 ## Criteria
