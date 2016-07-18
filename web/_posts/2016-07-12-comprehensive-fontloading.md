@@ -79,7 +79,7 @@ Throw a naked @font-face block on your page and hope for the best. This is the d
 #### Cons
 
 * Bad rendering performance everywhere else: Maximum three second FOIT in most modern browsers, switches to FOUT if load takes longer. While requests may finish earlier, we know how unreliable the network can be—three seconds is a long time for invisible unreadable content.
-* Not very robust, yet: Some WebKits have no maximum FOIT timout (although WebKit has very recently fixed this and I believe it will be included with Safari version 10), which means web font requests may be a single point of failure for your content (if the request hangs, content will never display).
+* Not very robust, yet: Some WebKits have no maximum FOIT timeout (although WebKit has very recently fixed this and I believe it will be included with Safari version 10), which means web font requests may be a single point of failure for your content (if the request hangs, content will never display).
 * No easy way to group requests or repaints together. Each web font will incur a separate repaint/reflow step and its own FOIT/FOUT timeouts. This can create undesirable situations like the [Mitt Romney Web Font Problem](/web/mitt-romney-webfont-problem/).
 
 #### Verdict: Do not use.
@@ -93,7 +93,7 @@ Add a new `font-display: swap` descriptor to your `@font-face` block to opt-in t
 
 #### Pros
 
-* Very Simple: Only a single CSS descriptor added to your your `@font-face` block.
+* Very Simple: Only a single CSS descriptor added to your `@font-face` block.
 * Good rendering performance: if this approach had ubiquitous browser support, this would give us FOUT without any JavaScript. A CSS-only approach would be ideal.
 * Super future friendly: is orthogonal to web font formats. No other changes are required if you add new formats to your stack.
 * Very robust: a FOUT approach will show your fallback text in supported browsers even if the web font request hangs. Even better—you’re web fonts are not dependent on a JavaScript polyfill—which means if the JavaScript fails, users are still eligible for the web fonts.
@@ -109,7 +109,7 @@ Add a new `font-display: swap` descriptor to your `@font-face` block to opt-in t
 
 ## <span id="preload">Preload</span>
 
-Add `<link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>` to fetch your font sooner. Pairs nicely with an unceremonious `@font-face` block and feel free to also through in the `font-display` descriptor as well for bonus points.
+Add `<link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>` to fetch your font sooner. Pairs nicely with an unceremonious `@font-face` block and feel free to also throw in the `font-display` descriptor as well for bonus points.
 
 * **[Demo: `preload`](/web-fonts/demos/preload.html)**
 * Read more: [Preload: What is it Good For?](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/)
@@ -167,7 +167,7 @@ There are typically two kinds of inlining covered by this method: in a blocking 
 #### Cons
 
 * A catch with rendering performance: while this approach doesn’t FOUT, it can significantly delay initial render time. On the other hand it will render “finished.” But keep in mind that even a single WOFF2 web font is probably going to be around 10KB—15KB and inlining just one as a Data URI will likely take you over the HTTP/1 recommendation of only having 14KB or less in the critical rendering path.
-* Browser support: Doesn’t take advantage of the comma separated format list in `@font-face` blocks: this approach only embeds one format type. Usually in this wild this has meant WOFF, so using this method forces you to choose between ubiquity (WOFF) and much narrower user agent support but smaller file sizes (WOFF2).
+* Browser support: Doesn’t take advantage of the comma separated format list in `@font-face` blocks: this approach only embeds one format type. Usually in the wild this has meant WOFF, so using this method forces you to choose between ubiquity (WOFF) and much narrower user agent support but smaller file sizes (WOFF2).
 * Bad scalability: Requests don’t happen in parallel. They load serially.
 * Self hosting: Required, of course.
 
@@ -224,7 +224,7 @@ Use the CSS Font Loading API with a polyfill to detect when a specific font has 
 
 ## <span id="foft">FOFT, or FOUT with Two Stage Render</span>
 
-This approach builds on the [FOUT with a Class](#fout-class) method and is useful when you’re loading multiple weights or styles o f the same typeface, _e.g._ Roman, Bold, Italic, Bold Italic, Book, Heavy, and others. We split those web fonts into two stages: the Roman first, which will then also immediately render faux-bold and faux-italic content (using [font synthesis](https://www.igvita.com/2014/09/16/optimizing-webfont-selection-and-synthesis/)) while the real web fonts for heavier weights and alternative styles are loading.
+This approach builds on the [FOUT with a Class](#fout-class) method and is useful when you’re loading multiple weights or styles of the same typeface, _e.g._ Roman, Bold, Italic, Bold Italic, Book, Heavy, and others. We split those web fonts into two stages: the Roman first, which will then also immediately render faux-bold and faux-italic content (using [font synthesis](https://www.igvita.com/2014/09/16/optimizing-webfont-selection-and-synthesis/)) while the real web fonts for heavier weights and alternative styles are loading.
 
 * **[Demo: FOFT, or FOUT with Two Stage Render](/web-fonts/demos/foft.html)** (includes sessionStorage trick for repeat view optimization)
 * [Compare source code for FOFT against FOUT with a Class](https://gist.github.com/zachleat/3b9414a4be8565999a5d483039cf82d1/revisions?diff=split#diff-0)
