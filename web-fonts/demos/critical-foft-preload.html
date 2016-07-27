@@ -88,9 +88,16 @@
 			document.documentElement.className += " fonts-stage-1";
 
 			var fontA = new FontFaceObserver('Lato');
-			var fontB = new FontFaceObserver('LatoBold');
-			var fontC = new FontFaceObserver('LatoItalic');
-			var fontD = new FontFaceObserver('LatoBoldItalic');
+			var fontB = new FontFaceObserver('LatoBold', {
+					weight: 700
+				});
+			var fontC = new FontFaceObserver('LatoItalic', {
+					style: 'italic'
+				});
+			var fontD = new FontFaceObserver('LatoBoldItalic', {
+					weight: 700,
+					style: 'italic'
+				});
 
 			Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load()]).then(function () {
 				document.documentElement.className += " fonts-stage-2";
