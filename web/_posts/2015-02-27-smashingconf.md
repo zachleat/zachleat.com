@@ -6,7 +6,7 @@ permalink: /smashingconf/2014/
 description: Recap of SmashingConf in Whistler (December 2014)
 headimage: https://farm9.staticflickr.com/8589/16658643251_22386813f2_c.jpg
 categories:
-  - Presentations
+  - presentations
 tags:
   - video
   - highlight

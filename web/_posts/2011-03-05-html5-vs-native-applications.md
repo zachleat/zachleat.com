@@ -6,7 +6,7 @@ permalink: /html5-vs-native-applications/
 bttc_cache:
   - 1299633632:16
 categories:
-  - Presentations
+  - presentations
 tags:
   - HTML5
   - LocalStorage

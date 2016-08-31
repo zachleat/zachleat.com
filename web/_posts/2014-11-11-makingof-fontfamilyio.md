@@ -4,7 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /making-fontfamilyio/
 categories:
-  - Presentations
+  - presentations
 tags:
   - video
 medialength: 19 min

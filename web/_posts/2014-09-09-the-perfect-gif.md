@@ -4,7 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /the-perfect-gif/
 categories:
-  - Presentations
+  - presentations
 tags:
   - video
 medialength: 12 min

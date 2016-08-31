@@ -4,7 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /impostor/
 categories:
-  - Presentations
+  - presentations
 tags:
   - video
   - highlight

@@ -5,7 +5,7 @@ layout: post
 permalink: /smashingconf/2015/
 headimage: /web/img/posts/barcelona/stage.jpg
 categories:
-  - Presentations
+  - presentations
 tags:
   - video
   - highlight

@@ -4,7 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /word-break-podcast/
 categories:
-  - Presentations
+  - presentations
 tags:
   - audio
   - external

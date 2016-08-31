@@ -4,7 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /tool-or-die/
 categories:
-  - Presentations
+  - presentations
 tags:
   - highlight
   - video
