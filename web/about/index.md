@@ -7,7 +7,6 @@ btc_comment_counts:
 bttc_cache:
   - 1299717788:0
 ---
-# 
 
 This web blog is written by **Zach Leatherman**. 
 
@@ -26,26 +25,27 @@ He enjoys watching and playing soccer, piano, finding patterns in both people an
 
 You can find him on the following services, but not all simultaneously and certainly not frequently.
     
-## [E-mail](mailto:zachleatherman@gmail.com)
-## [Twitter](http://twitter.com/zachleat)
-## [GitHub](http://github.com/zachleat)
-## [Pinboard](https://pinboard.in/u:zachleat/)
-## [Facebook](http://www.facebook.com/zachleat)
-## [Flickr](http://www.flickr.com/photos/zachleat)
-## [Google+](https://plus.google.com/116527541913322293396/posts)
-## [YouTube](http://www.youtube.com/profile?user=zachleat)
+### [E-mail](mailto:zachleatherman@gmail.com)
+
+### [Twitter](http://twitter.com/zachleat)
+
+### [GitHub](http://github.com/zachleat)
+
+### [Lanyrd](http://lanyrd.com/profile/zachleat/)
+
+### [Facebook](http://www.facebook.com/zachleat)
+
+### [YouTube](http://www.youtube.com/profile?user=zachleat)
+
+### [Stack Overflow](http://stackoverflow.com/users/16711/zachleat)
+
 <!--
-## [Instagram](http://instagram.com/zachleat)
-## [Rdio](http://www.rdio.com/people/zachleat/)
-## [Stack Overflow](http://stackoverflow.com/users/16711/zachleat)
-## [GoodReads](http://www.goodreads.com/review/list/1612586)
-## [LinkedIn](http://www.linkedin.com/in/zachleat)
-## [Forrst][http://forr.st/-zachleat]
-## [Quora][http://www.quora.com/Zach-Leatherman]
-## [43 Things][http://www.43things.com/person/zachleatherman]
-## Pinterest
-## Foursquare
-## Meetup
+### [GoodReads](http://www.goodreads.com/review/list/1612586)
+### [Google+](https://plus.google.com/116527541913322293396/posts)
+### [Pinboard](https://pinboard.in/u:zachleat/)
+### [Flickr](http://www.flickr.com/photos/zachleat)
+### [Instagram](http://instagram.com/zachleat)
+### [LinkedIn](http://www.linkedin.com/in/zachleat)
 -->
   
 Zach trusts his spam filters. He’s had his e-mail in plaintext here since he started this website, so that you have an easy way to contact him. Feel free to do so, at your leisure.
