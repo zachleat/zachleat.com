@@ -2,6 +2,8 @@
 title: 'A Font Family Reunion'
 author: Zach Leatherman
 layout: post
+categories:
+  - project
 tags:
   - project
   - highlight
