@@ -25,6 +25,21 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
+/* Post Addendum Notes */
+.notes {
+	font-size: .75em;
+	line-height: 1.6;
+}
+.notes_link:target,
+.notes_note:target {
+	background-color: #ffc;
+}
+.notes_link {
+	position: relative;
+	top: -.7em;
+	font-size: .6875em;
+}
+
 /* Iframe */
 .iframer {
 	position: relative;
@@ -307,7 +322,7 @@ pre {
 blockquote {
 	font-style: italic;
 	color: $blockquoteColor;
-	margin: 1.2em 5% 1.8em;
+	margin: 1.2em 5%;
 }
 
 table {
