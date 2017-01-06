@@ -5,14 +5,14 @@ Prerequisites: Node.js and Ruby
 1. Apache Configuration
 
 		<VirtualHost *>
-		ServerName zachleat.com.local
+		ServerName zachleat.dev
 		DocumentRoot "/PATH_TO_SITE/"
 		Alias /web/ /PATH_TO_SITE/web/_site/
 		</virtualHost>
 		
 1. Add to `/etc/hosts`
 
-		127.0.0.1	zachleat.com.local
+		127.0.0.1	zachleat.dev
 
 1. [`gem install jekyll`](http://jekyllrb.com/docs/installation/) (requires 1.0+)
 1. `gem install sass`
@@ -22,7 +22,7 @@ Prerequisites: Node.js and Ruby
 ## Local Development Workflow
 
 1. `grunt watch`
-1. Open `http://zachleat.com.local/`
+1. Open `http://zachleat.dev/`
 
 To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 
