@@ -1,0 +1,55 @@
+.browserlogo-android,
+.browserlogo-android_64x64 {
+	background-image: url('png/android_64x64.png');
+}
+
+
+.browserlogo-chrome {
+	background-image: url('png/chrome.png');
+}
+
+
+.browserlogo-edge-tile {
+	background-image: url('png/edge-tile.png');
+}
+
+
+.browserlogo-edge {
+	background-image: url('png/edge.png');
+}
+
+.browserlogo-firefox,
+.browserlogo-firefox_64x64 {
+	background-image: url('png/firefox_64x64.png');
+}
+
+
+.browserlogo-internet-explorer-tile {
+	background-image: url('png/internet-explorer-tile.png');
+}
+
+
+.browserlogo-internet-explorer {
+	background-image: url('png/internet-explorer.png');
+}
+
+.browserlogo-opera-mini,
+.browserlogo-opera-mini_64x64 {
+	background-image: url('png/opera-mini_64x64.png');
+}
+
+
+.browserlogo-opera {
+	background-image: url('png/opera.png');
+}
+
+
+.browserlogo-safari-ios {
+	background-image: url('png/safari-ios.png');
+}
+
+
+.browserlogo-safari {
+	background-image: url('png/safari.png');
+}
+

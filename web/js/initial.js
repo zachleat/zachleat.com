@@ -1,8 +1,8 @@
 var ZL = {
-	getDistFolder: function() {
-		var distMeta = document.querySelector( 'meta[name="dist"]' );
+	getMeta: function( name ) {
+		var meta = document.querySelector( 'meta[name="' + name + '"]' );
 
-		return distMeta ? distMeta.content : '';
+		return meta ? meta.content : '';
 	}
 };
 

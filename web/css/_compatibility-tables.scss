@@ -25,6 +25,34 @@ td.emulate {
 	background-color: #40A662;
 }
 
+/* Browser Logos */
+.browserlogo {
+	position: relative;
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	background-size: 64px 64px;
+	text-indent: -9999px;
+}
+.browserlogo_version {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-size: .5em;
+	line-height: 20px;
+	text-indent: 0;
+	text-align: center;
+	color: #fff;
+	background-color: #333;
+	border-radius: 0 50% 0 50%;
+}
+
+/*
+// FACT CHECKING
+
 $fact-true-color: #00882d;
 $fact-false-color: #cb000f;
 $fact-misleading-color: #c5a402;
@@ -64,4 +92,4 @@ $fact-pass-color: #999;
 }
 .fact-block.fact-pass .fact-block-hed {
 	color: $fact-pass-color;
-}
+}*/
