@@ -8,7 +8,7 @@ bttc_cache:
 categories:
   - DOM
   - JavaScript
-  - Projects
+  - project
 tags:
   - project
 ---

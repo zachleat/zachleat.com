@@ -5,7 +5,7 @@ layout: post
 permalink: /javascript-code-coverage-tool-for-firebug/
 categories:
   - JavaScript
-  - Projects
+  - project
   - Web Browsers
 tags:
   - Code Coverage

@@ -7,7 +7,7 @@ layout: default
 
 	<ol class="posts">
 		<li><a href="https://github.com/zachleat/">View all project source code on GitHub <span aria-hidden="true">→</span></a></li>
-		{% for post in site.categories.project or post in site.tags.project %}
+		{% for post in site.tags.project %}
 			{% include post-list-entry.html view="project" %}
 		{% endfor %}
 		<li class="subhed">Retired</li>
