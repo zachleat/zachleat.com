@@ -26,6 +26,15 @@ Prerequisites: Node.js and Ruby
 
 To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 
+## Deploy
+
+1. `grunt deploy`
+
+Requires `zopfli`, which can be installed using:
+
+1. `brew install zopfli`
+
+
 ## Notes
 
  * [“zachleat.com is Dead, Long Live zachleat.com,” a blog post describing the initial launch](http://www.zachleat.com/web/zachleat-is-dead/)
