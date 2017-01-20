@@ -10,7 +10,7 @@ bttc_cache:
 
 This web blog is written by **Zach Leatherman**. 
 
-{% include bio-text.html %} He previously held the title of User Interface Architect for Union Pacific Railroad. His [résumé][2] is probably outdated.
+{% include bio-text.html %}
 
 ![Avatar][1]
 
@@ -19,9 +19,6 @@ This web blog is written by **Zach Leatherman**.
  > On the web there is often more than one way to solve problems of code and usability. It isn't sufficient to simply find a solution, you must discover the solution that balances often conflicting goals of accessibility, device independence, performance, usability, aesthetics, and future compatibility.
 
  [1]: /web/img/trifecta.png
- [2]: /résumé/
-
-He enjoys watching and playing soccer, piano, finding patterns in both people and machines, movies that make him think or feel and oxford commas. He enjoys spending time with his beautiful wife and daughter and their two Great Danes, [Roxie](http://packlove.com/roxie) and [Ella](http://packlove.com/133-ella).
 
 You can find him on the following services, but not all simultaneously and certainly not frequently.
     
@@ -32,21 +29,6 @@ You can find him on the following services, but not all simultaneously and certa
 ### [GitHub](http://github.com/zachleat)
 
 ### [Lanyrd](http://lanyrd.com/profile/zachleat/)
-
-### [Facebook](http://www.facebook.com/zachleat)
-
-### [YouTube](http://www.youtube.com/profile?user=zachleat)
-
-### [Stack Overflow](http://stackoverflow.com/users/16711/zachleat)
-
-<!--
-### [GoodReads](http://www.goodreads.com/review/list/1612586)
-### [Google+](https://plus.google.com/116527541913322293396/posts)
-### [Pinboard](https://pinboard.in/u:zachleat/)
-### [Flickr](http://www.flickr.com/photos/zachleat)
-### [Instagram](http://instagram.com/zachleat)
-### [LinkedIn](http://www.linkedin.com/in/zachleat)
--->
   
 Zach trusts his spam filters. He’s had his e-mail in plaintext here since he started this website, so that you have an easy way to contact him. Feel free to do so, at your leisure.
 
