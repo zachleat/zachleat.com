@@ -12,13 +12,9 @@ This web blog is written by **Zach Leatherman**.
 
 {% include bio-text.html %}
 
-![Avatar][1]
-
 *The views expressed on this website do not necessarily represent the views of his employer.*
 
  > On the web there is often more than one way to solve problems of code and usability. It isn't sufficient to simply find a solution, you must discover the solution that balances often conflicting goals of accessibility, device independence, performance, usability, aesthetics, and future compatibility.
-
- [1]: /web/img/trifecta.png
 
 You can find him on the following services, but not all simultaneously and certainly not frequently.
     
