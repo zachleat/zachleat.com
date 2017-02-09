@@ -4,7 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /smashingconf/2014/
 description: Recap of SmashingConf in Whistler (December 2014)
-headimage: https://farm9.staticflickr.com/8589/16658643251_22386813f2_c.jpg
+headimage: https://www.zachleat.com/web/img/posts/whistler-gondola.jpg
 categories:
   - presentations
 tags:
@@ -13,10 +13,7 @@ tags:
 medialength: 48 min
 ---
 
-<figure>
-	<img src="https://farm9.staticflickr.com/8589/16658643251_22386813f2_c.jpg" alt="Whistler Gondola View by zachleat">
-	<figcaption><a href="https://flic.kr/p/ro4Ug6">Whistler Gondola View</a></figcaption>
-</figure>
+<img src="/web/img/posts/whistler-gondola.jpg" alt="Whistler Gondola View">
 
 Of all the talks I’ve given thus far in my career, I think this one is the one I’m most proud of. The conference was fun: the attendees were lively and attentive, the location was beautiful (after it quit raining), and [Vitaly](https://twitter.com/smashingmag) sprinkled a bunch of easter eggs into the conference which always adds a little something extra. A huge thank you to [Tim Kadlec](https://twitter.com/tkadlec) for inviting me to speak.
 

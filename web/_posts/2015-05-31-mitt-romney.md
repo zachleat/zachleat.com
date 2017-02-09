@@ -3,14 +3,14 @@ title: The Mitt Romney Web Font Problem
 author: Zach Leatherman
 layout: post
 permalink: /mitt-romney-webfont-problem/
-headimage: https://c2.staticflickr.com/8/7178/6791949310_09afb2e2cf_b.jpg
+headimage: https://www.zachleat.com/web/img/posts/mittromney/face.jpg
 tags:
   - highlight
   - research
 ---
 
 <figure>
-	<img src="https://c2.staticflickr.com/8/7178/6791949310_09afb2e2cf_b.jpg" alt="Mitt Romney at Caster Concepts">
+	<img src="/web/img/posts/mittromney/face.jpg" alt="Mitt Romney at Caster Concepts">
 	<figcaption><a href="https://www.flickr.com/photos/davelawrence8/6791949310">Mitt Romney at Caster Concepts by Dave Lawrence, on Flickr</a></figcaption>
 </figure>
 

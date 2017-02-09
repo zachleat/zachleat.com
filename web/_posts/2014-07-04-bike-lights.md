@@ -64,7 +64,7 @@ Because the LED lights are so bright (may draw up to 2A) the battery isn’t goi
 
 I took a daytime picture since the nighttime video above didn’t really show much detail:
 
-<img src="https://farm4.staticflickr.com/3853/14573512084_73cc945120_z.jpg" alt="LED strip lights on the bike, illuminated">
+<img src="/web/img/posts/bike-lights/bikelights.jpg" alt="LED strip lights on the bike, illuminated">
 
 
 ## Extra Credit

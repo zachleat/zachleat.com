@@ -62,13 +62,13 @@ Holy shit.
 <a href="https://flic.kr/p/rUg3tx">Holy shit—my name is on the schedule.</a>
 
 <figure>
-	<img src="https://farm8.staticflickr.com/7595/17021532689_5b61eaf4dd_b.jpg" alt="Holy shit—I’m in the room.">
-	<figcaption><a href="https://flic.kr/p/rW8NDx">Holy shit—I’m in the room.</a></figcaption>
+	<img src="/web/img/posts/whmeetup/room.jpg" alt="">
+	<figcaption>Holy shit—I’m in the room.</figcaption>
 </figure>
 
 <figure>
-	<img src="https://farm9.staticflickr.com/8768/16597217544_e806e75e0f_b.jpg" alt="Holy shit—I’m on the stage.">
-	<figcaption><a href="https://flic.kr/p/rhD5xb">Holy shit—I’m on the stage.</a></figcaption>
+	<img src="/web/img/posts/whmeetup/onstage.jpg" alt="">
+	<figcaption>Holy shit—I’m on the stage.</figcaption>
 </figure>
 
 <span id="video"></span>
