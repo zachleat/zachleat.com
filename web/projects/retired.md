@@ -55,9 +55,7 @@ A site encouraging voter registration for the 2008 US Presidential Election.
 
 Create new DOM nodes from CSS Selector Syntax.
 
-## [scrollf][scr]
-[![Screenshot of Scrollf](/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-11.49.30-PM.png "Scrollf")][scr]
-
-[scr]: /scrollf/
+## scrollf
+![Screenshot of Scrollf](/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-11.49.30-PM.png "Scrollf")
 
 A draggable  infinite-scroll [flickr](http://www.flickr.com/) image browser (similar to Google Maps)

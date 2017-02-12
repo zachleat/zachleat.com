@@ -59,7 +59,7 @@ Later I discovered that they wanted me to do a very short talk (three minutes) a
 
 Holy shit.
 
-<a href="https://flic.kr/p/rUg3tx">Holy shit—my name is on the schedule.</a>
+<a href="/web/img/posts/whmeetup/schedule.jpg">Holy shit—my name is on the schedule.</a>
 
 <figure>
 	<img src="/web/img/posts/whmeetup/room.jpg" alt="">
@@ -95,7 +95,7 @@ Another huge thank you to everyone that has helped out with NebraskaJS: especial
 <span id="related"></span>
 ## Related Links
 
-* [My photo album from the event on Flickr](https://www.flickr.com/photos/zachleat/sets/72157652055129592/)
+* [My photo album from the event](https://goo.gl/photos/4imPhedXuVyRS9168)
 * [My storify from the event](https://storify.com/zachleat/white-house-meetup)
 * [\#WHMeetup Hashtag](https://twitter.com/search?q=%23whmeetup)
 
