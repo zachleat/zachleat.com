@@ -663,7 +663,6 @@ th {
 .tag {
 	border: 1px solid rgba(0, 0, 0, .08);
 	font-size: 11px;
-	font-weight: 700;
 	line-height: 16px;
 	text-transform: uppercase;
 	color: #666;
@@ -671,6 +670,8 @@ th {
 	margin: 0 .5em;
 	vertical-align: middle;
 	display: inline-block;
+
+	@include webfontBold;
 }
 .tags {
 	display: inline-block;
