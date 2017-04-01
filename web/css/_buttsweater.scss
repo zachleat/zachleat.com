@@ -25,6 +25,17 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
+.break {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+}
+.break-hyphen {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
 /* Post Addendum Notes */
 .notes {
 	font-size: .75em;
@@ -150,6 +161,11 @@ figcaption {
 	background-repeat: repeat-x;
 	background-size: 1px 1px;
 	background-position: 0 97%;
+}
+.has-gradient.tmpl-page .content a.exempt {
+	background-image: none;
+	text-decoration: underline;
+	text-shadow: none;
 }
 .maxwidth,
 .maxwidth-list {
