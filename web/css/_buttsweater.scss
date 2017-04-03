@@ -17,14 +17,7 @@ img {
 	border: none;
 }
 
-/* Border */
-html {
-	background-color: $borderColor;
-	-moz-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-
+/* Word Break */
 .break {
 	-ms-word-break: break-all;
 	word-break: break-all;
@@ -34,6 +27,14 @@ html {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
+}
+
+/* Border */
+html {
+	background-color: $borderColor;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 /* Post Addendum Notes */
@@ -277,7 +278,8 @@ h1:first-child {
 		hyphens: manual;
 	}
 }
-h2 {
+h2,
+.demo {
 	font-size: 1.375em; /* 22px */
 	padding: 0 .227272727em; /* 0 5px */
 }
@@ -514,6 +516,9 @@ th {
 }
 .posts .smalltitle a {
 	font-size: 23px;
+}
+.project_img {
+	max-width: 28.125rem;
 }
 @media (min-width: 30em) {
 	.posts a,
