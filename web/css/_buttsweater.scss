@@ -101,8 +101,8 @@ figcaption {
 	font-size: 1.1875em;
 	line-height: 165%;
 }
-.content ol,
-.content ul {
+.content ol:not(.posts),
+.content ul:not(.posts) {
 	padding-left: 1.5em;
 }
 @media (min-width: 41.25em) {
@@ -177,7 +177,7 @@ figcaption {
 	max-width: 31em;
 }
 .maxwidth-list {
-	max-width: 60em;
+	max-width: 45em;
 }
 
 @media (min-width: $twoColLayoutMinWidth) {
@@ -518,6 +518,7 @@ th {
 	font-size: 23px;
 }
 .project_img {
+	width: 100%;
 	max-width: 28.125rem;
 }
 @media (min-width: 30em) {
