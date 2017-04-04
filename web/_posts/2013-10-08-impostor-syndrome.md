@@ -11,6 +11,8 @@ tags:
 medialength: 7 min
 ---
 
+Related: **[*Impostor Syndrome* was transcribed into a subsequent Pastry Box guest post](/web/pastrybox-impostor-syndrome/).**
+
 Ever since I attended my first [Barcamp Omaha](http://barcampomaha.org/) unconference last year, I wanted to give a talk. For this year, I had planned on recycling [the talk I gave at Awesome Camp earlier this year](https://speakerdeck.com/zachleat/side-projects) but I was inspired to speak on a different topic.
 
 *Side note: Major props to [Grain & Mortar](http://grainandmortar.com/) for the [Barcamp Omaha site](http://barcampomaha.org/). Ridiculously good. Seems like [@RWD liked it too](https://twitter.com/RWD/status/376086131018067968).*
