@@ -21,7 +21,7 @@
 .action a {
 	white-space: nowrap;
 	text-decoration: none;
-	font-weight: 700;
+	@include webfontBold;
 }
 .has-gradient.tmpl-page .content .action a {
 	background-image: none;
