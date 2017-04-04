@@ -1,5 +1,5 @@
 ---
-title: 'Impostor Syndrome'
+title: 'Pastry Box: Impostor Syndrome'
 author: Zach Leatherman
 layout: post
 permalink: /pastrybox-impostor-syndrome/
