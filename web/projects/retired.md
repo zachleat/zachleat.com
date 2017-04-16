@@ -51,10 +51,6 @@ A site encouraging voter registration for the 2008 US Presidential Election.
 
  On [Github](http://github.com/zachleat/Firebug-Code-Coverage).
 
-### [DomDom, DOM Node Creation Utility](/web/domdom-easy-dom-element-creation/)
-
-Create new DOM nodes from CSS Selector Syntax.
-
 ## scrollf
 ![Screenshot of Scrollf](/web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-11.49.30-PM.png "Scrollf")
 
