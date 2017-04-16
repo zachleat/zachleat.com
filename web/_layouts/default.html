@@ -1,7 +1,7 @@
 {% capture distIncludeFolder %}dist/{% if page.distVersion %}{{ page.distVersion }}{% else %}{{ site.distVersion }}{% endif %}/{% endcapture %}
 {% capture distFolder %}/web/{{ distIncludeFolder }}{% endcapture %}
 <!doctype html>
-<html lang="en">
+<html lang="en"{% if page.tmpl %} class="tmpl-{{ page.tmpl }}"{% endif %}>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">

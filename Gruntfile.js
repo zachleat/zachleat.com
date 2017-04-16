@@ -30,6 +30,7 @@ module.exports = function(grunt) {
 				name: 'Web 3.0, 6 Bladed Razors, 7 Minute Abs',
 				description: 'A web development blog written by @zachleat.',
 				safe: false,
+				future: true,
 				baseurl: '/web',
 				markdown: 'kramdown',
 				highlighter: 'rouge',

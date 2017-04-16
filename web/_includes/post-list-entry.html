@@ -3,22 +3,22 @@
 	<li class="subhed">{{ currentyear }}</li>
 	{% capture year %}{{currentyear}}{% endcapture %} 
 {% endif %}
-<li class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}{% if post.tags contains 'upcoming' %}upcoming {% endif %}"{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
+<li class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}{% if post.tags contains 'upcoming' %}upcoming {% endif %}{% if post.tags contains 'nejsconf' %}nejsconf {% endif %}"{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
 	{% if post.tags contains 'external' %}
 	<a href="{{ post.external_url }}">
 	{% else %}
 	<a href="{{ site.baseurl }}{{ post.url }}">
 	{% endif %}
-		{% if post.tags contains 'upcoming' %}<span class="external">Scheduled</span>
-		{% elsif post.tags contains 'pending' %}<span class="external">Pending</span>
-		{% elsif post.tags contains 'external' %}<span class="external">Off-Site</span>
+		{% if post.tags contains 'upcoming' %}<span class="external" title="External Link">Scheduled</span>
+		{% elsif post.tags contains 'pending' %}<span class="external" title="External Link">Pending</span>
+		{% elsif post.tags contains 'external' %}<span class="external" title="External Link"><span class="icon-link-external"></span></span>
 		{% endif %}
 		{% if include.view == 'project' %}
 			{% if post.project_name %}{{ post.project_name }}{% else %}{{ post.title }}{% endif %}
 		{% else %}
 			{{ post.title }}
 		{% endif %}
-		<span class="tags">{% if post.tags contains 'external' %}<span class="icon-link-external"></span>{% endif %}{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}{% if post.tags contains 'audio' %}<span class="tag audio">Audio{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}{% if post.tags contains 'project' %}<span class="tag project">Project</span>{% endif %}{% if post.tags contains 'research' %}<span class="tag research">Research</span>{% endif %}{% if post.tags contains 'highlight' %}<span class="tag highlight" aria-hidden="true" title="Highlight">★</span>{% endif %}</span>
+		<span class="tags">{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}{% if post.tags contains 'audio' %}<span class="tag audio">Audio{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}{% if post.tags contains 'project' %}<span class="tag project">Project</span>{% endif %}{% if post.tags contains 'research' %}<span class="tag research">Research</span>{% endif %}{% if post.tags contains 'highlight' %}<span class="tag highlight" aria-hidden="true" title="Highlight">★</span>{% endif %}</span>
 		<span class="date">{{ post.date | date: "%h %Y" }}</span>
 		{% if include.view == 'project' %}
 			{% if post.headimage %}<img src="{{ post.headimage }}" class="project_img">{% endif %}

@@ -444,6 +444,9 @@ th {
 	color: #fff;
 	padding: .5em 1em;
 }
+.tmpl-home .conference {
+	display: none;
+}
 .links a {
 	display: inline-block;
 	margin-top: .4em;
@@ -645,6 +648,45 @@ th {
 	}
 }
 
+/* NEJS CONF links */
+.posts .nejsconf .external {
+	@include a11y-only;
+}
+.posts .nejsconf a {
+	display: block;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+.posts .nejsconf.upcoming a {
+	margin-left: -14.25px;
+	margin-right: -14.25px;
+}
+.posts .nejsconf a,
+.posts .nejsconf a:hover,
+.posts .nejsconf a:visited {
+	background-color: #e4c20a;
+	color: #fff;
+}
+.posts .nejsconf.upcoming a,
+.posts .nejsconf.upcoming a:hover,
+.posts .nejsconf.upcoming a:visited {
+	background-color: #444;
+}
+.posts-count .nejsconf:before {
+	color: #fff;
+}
+@media (min-width: 30em) {
+	.posts .nejsconf a {
+		display: inline-block;
+		padding-left: 55px;
+		padding-right: 55px;
+	}
+	.posts .nejsconf.upcoming a {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 /* About Me Link Block */
 .about {
 	border-bottom: 1px solid #ccc;
@@ -759,9 +801,9 @@ th {
 .posts .highlight a .external {
 	@include webfont;
 }
-.external:after {
+/*.external:after {
 	content: ": ";
-}
+}*/
 .icon-link-external {
 	width: 14px;
 	height: 16px;
