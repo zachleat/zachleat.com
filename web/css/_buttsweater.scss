@@ -528,7 +528,8 @@ th {
 	padding: 0;
 	line-height: 140%;
 	margin-top: 2em;
-	border-bottom: 1px dotted #ccc;
+	margin-bottom: 4px;
+	border-bottom: 1px dotted #999;
 	text-transform: uppercase;
 }
 .posts .subhed:first-child {
@@ -657,7 +658,7 @@ th {
 	padding-left: .5em;
 	padding-right: .5em;
 }
-.posts .nejsconf.upcoming a {
+.posts .nejsconf a {
 	margin-left: -14.25px;
 	margin-right: -14.25px;
 }
@@ -680,8 +681,6 @@ th {
 		display: inline-block;
 		padding-left: 55px;
 		padding-right: 55px;
-	}
-	.posts .nejsconf.upcoming a {
 		margin-left: 0;
 		margin-right: 0;
 	}
