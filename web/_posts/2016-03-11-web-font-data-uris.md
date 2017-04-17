@@ -3,10 +3,12 @@ title: 'Web Font Anti-pattern: Data URIs'
 author: Zach Leatherman
 layout: post
 permalink: /web-font-data-uris/
-categories: 
+categories:
+ - font-loading
 tags:
  - research
  - highlight
+ - font-loading
 ---
 
 After I posted my [Critical Web Fonts](/web/critical-webfonts/) article on Twitter, I had an interesting conversation with a developer named [Wim Leers](https://twitter.com/wimleers/) about embedding Web Fonts as Data URIs.

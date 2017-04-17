@@ -4,18 +4,12 @@ layout: default
 
 <div class="maxwidth-list">
 	<article>
+		<h1>Speaking</h1>
 		<ol class="posts">
 			<li><a href="mailto:zachleatherman@gmail.com"><em>Do you want me to speak at your event? Get in touch!</em></a></li>
 			{% for post in site.categories.presentations %}
 				{% include post-list-entry.html %}
 			{% endfor %}
-		</ol>
-		<h2>Elsewhere</h2>
-		<ol class="posts">
-			<li><a href="https://speakerdeck.com/zachleat/nodecopter"><span class="external">Off-Site</span> A Nodecopter Infomercial (HowConf) <span class="icon-link-external"></span> <span class="date">Sep 2013</span></a></li>
-			<li><a href="https://speakerdeck.com/zachleat/side-projects"><span class="external">Off-Site</span> Side Projects (Awesome Camp) <span class="icon-link-external"></span> <span class="date">Mar 2013</span></a></li>
-			<li><a href="http://nebraskajs.com/2012/performance-in-rwd/"><span class="external">Off-Site</span> Performance in Responsive Web Design (NebraskaJS) <span class="icon-link-external"></span> <span class="date">Nov 2012</span></a></li>
-			<li><a href="http://www.slideshare.net/zachleat/progressive-enhancement-8766538"><span class="external">Off-Site</span> Progressive Enhancement (jQuery Omaha) <span class="icon-link-external"></span> <span class="date">Aug 2011</span></a></li>
 		</ol>
 	</article>
 	{% include footer.html %}

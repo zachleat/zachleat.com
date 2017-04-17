@@ -4,9 +4,11 @@ author: Zach Leatherman
 layout: post
 permalink: /making-fontfamilyio/
 categories:
-  - presentations
+ - presentations
+ - font-loading
 tags:
-  - video
+ - video
+ - font-loading
 medialength: 19 min
 ---
 

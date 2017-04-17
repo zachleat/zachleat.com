@@ -4,9 +4,11 @@ author: Zach Leatherman
 layout: post
 permalink: /velocity/2015-nyc/
 categories:
-  - presentations
+ - presentations
+ - font-loading
 tags:
-  - video
+ - video
+ - font-loading
 medialength: 42 min
 
 ---

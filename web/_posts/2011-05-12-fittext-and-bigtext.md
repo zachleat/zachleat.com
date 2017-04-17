@@ -4,10 +4,11 @@ author: Zach Leatherman
 layout: post
 permalink: /fittext-and-bigtext/
 categories:
-  - JavaScript
+ - font-loading
 tags:
-  - highlight
-  - project
+ - highlight
+ - project
+ - font-loading
 ---
 
 Earlier this week, [@TrentWalton][1] [tweeted][2]:

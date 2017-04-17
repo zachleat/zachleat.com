@@ -4,9 +4,11 @@ author: Zach Leatherman
 layout: post
 permalink: /preload/
 categories: 
+ - font-loading
 tags:
  - research
  - highlight
+ - font-loading
 ---
 
 ***Summary**: If you’re not currently using a font loading strategy, using `preload` with web fonts will reduce the amount of FOIT visitors will see when they visit your site—paid for by sacrificing initial render time. Don’t preload too much or the cost to initial render will be too high. For devs using a font loading strategy, the same rules apply. Try to only preload a single web font, whether that be the only font in a single stage load or the subset font in the first stage of a two stage load. Further, `preload` is an improvement over Data URIs for two stage font loads in supporting browsers, and I will be happy to welcome it as a best practice when its browser support grows.*

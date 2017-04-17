@@ -7,10 +7,12 @@ description: The BigText jQuery plugin takes a single element and sizes the text
 headimage: /web/wp-content/uploads/2009/12/Screen-shot-2011-01-14-at-6.46.00-PM.png
 project_name: BigText
 categories:
-  - project
+ - project
+ - font-loading
 tags:
-  - highlight
-  - project
+ - highlight
+ - project
+ - font-loading
 ---
 
 *I like shortcuts: Fork [BigText on Github][github] or Check out the [BigText Demo Wizard][wizard]

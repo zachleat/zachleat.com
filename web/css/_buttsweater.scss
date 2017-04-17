@@ -250,10 +250,12 @@ h1 {
 	color: #222;
 	font-size: 1.7em; /* 27px */
 	line-height: 110%;
-	padding: 0 .15625em; /* 0 5px */
 }
 h1:first-child {
 	margin-top: 0;
+}
+.header h1 {
+	padding: 0 .15625em; /* 0 5px */
 }
 @media (min-width: 30em) {
 	h1 {
@@ -431,22 +433,6 @@ th {
 	letter-spacing: 2px;
 	font-size: .75em;
 }
-.conference {
-	@include webfontBold;
-	margin-top: 2em;
-	margin-left: -1em;
-	margin-right: -1em;
-	background-color: #444;
-}
-.conference a {
-	display: block;
-	font-size: 1.375em;
-	color: #fff;
-	padding: .5em 1em;
-}
-.tmpl-home .conference {
-	display: none;
-}
 .links a {
 	display: inline-block;
 	margin-top: .4em;
@@ -482,19 +468,6 @@ th {
 	.links {
 		text-align: left;
 	}
-	.conference {
-		position: absolute;
-		bottom: -4em;
-		left: 0;
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		padding-right: 4em;
-		text-align: right;
-	}
-	.conference a {
-		padding-right: 0;
-	}
 	.links-standalone,
 	.links a {
 		display: block;
@@ -504,6 +477,42 @@ th {
 	}
 	.links_cat {
 		display: block;
+	}
+}
+
+/* Conference Link */
+.conference {
+	@include webfontBold;
+	margin-top: 2em;
+	margin-left: -1em;
+	margin-right: -1em;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+.conference a {
+	display: block;
+	font-size: 1.375em;
+	padding: .5em 1em;
+}
+.tmpl-home .conference {
+	display: none;
+}
+@media (min-width: $twoColLayoutMinWidth) {
+	.conference {
+		position: absolute;
+		bottom: -4em;
+		left: 0;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 4em;
+		text-align: right;
+		background-color: #444;
+	}
+	.conference a {
+		background-color: #444;
+		color: #fff;
+		padding-right: 0;
 	}
 }
 
@@ -557,7 +566,8 @@ th {
 }
 @media (min-width: 30em) {
 	.posts a,
-	.posts .subhed {
+	.posts .subhed,
+	.maxwidth-list h1 {
 		padding-left: 13px;
 		padding-right: 13px;
 	}
@@ -745,9 +755,11 @@ th {
 	@include a11y-only;
 }
 .posts.deprecated .deprecated,
-.posts.highlighted li {
+.posts.highlighted li,
+.posts.fontloading li {
 	@include a11y-only;
 }
+.posts.fontloading .fontloading,
 .posts.highlighted .highlight {
 	@include undo-a11y-only(relative);
 }

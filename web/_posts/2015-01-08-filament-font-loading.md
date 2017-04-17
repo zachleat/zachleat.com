@@ -3,9 +3,12 @@ title: 'How we use web fonts responsibly, or, avoiding a @font-face-palm'
 author: Zach Leatherman
 layout: post
 permalink: /filament-font-loading/
+categories:
+ - font-loading
 tags:
-  - external
-  - research
+ - external
+ - research
+ - font-loading
 external_url: http://www.filamentgroup.com/lab/font-loading.html
 ---
 

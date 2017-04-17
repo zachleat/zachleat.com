@@ -4,10 +4,13 @@ author: Zach Leatherman
 layout: post
 permalink: /external/devopera-font-face/
 external_url: https://dev.opera.com/articles/better-font-face/
+categories:
+ - font-loading
 tags:
-  - external
-  - highlight
-  - research
+ - external
+ - highlight
+ - research
+ - font-loading
 date: 2014-09-26 12:00:00
 ---
 

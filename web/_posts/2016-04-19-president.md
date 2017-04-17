@@ -3,8 +3,10 @@ title: Web Fonts for President 2016
 author: Zach Leatherman
 layout: post
 permalink: /president-web-font/
-categories: 
+categories:
+ - font-loading
 tags:
+ - font-loading
 ---
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">US presidential candidates ordered by best font loading strategy<br><br>yes I’m a single issue voter</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/722480571390107648">April 19, 2016</a></blockquote>

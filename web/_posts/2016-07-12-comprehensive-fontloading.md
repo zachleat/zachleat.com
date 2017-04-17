@@ -3,9 +3,11 @@ title: A Comprehensive Guide to Font Loading Strategies
 author: Zach Leatherman
 layout: post
 permalink: /comprehensive-webfonts/
-categories: 
+categories:
+ - font-loading
 tags:
  - highlight
+ - font-loading
 ---
 
 _This guide is not intended for use with font icons, which have different loading priorities and use cases. Also, SVG is probably a better long term choice._

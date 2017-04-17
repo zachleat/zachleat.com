@@ -20,6 +20,11 @@ layout: default
 		</div>
 	</article>
 	{% endif %}
+	{% if page.external_url %}
+	<article>
+		<p>Originally posted at: <a href="{{ page.external_url }}">{{ page.external_url }}</a></p>
+	</article>
+	{% endif %}
 	{{ content }}
 	</article>
 	<article>

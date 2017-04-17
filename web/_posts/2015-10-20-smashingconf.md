@@ -5,10 +5,12 @@ layout: post
 permalink: /smashingconf/2015/
 headimage: /web/img/posts/barcelona/stage.jpg
 categories:
-  - presentations
+ - presentations
+ - font-loading
 tags:
-  - video
-  - highlight
+ - video
+ - highlight
+ - font-loading
 medialength: 48 min
 
 ---

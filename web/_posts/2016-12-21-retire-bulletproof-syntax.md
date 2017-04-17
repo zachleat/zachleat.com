@@ -3,8 +3,11 @@ title: 'No @font-face Syntax will ever be Bulletproof, Nor Should It Be.'
 author: Zach Leatherman
 layout: post
 permalink: /retire-bulletproof-syntax/
+categories:
+ - font-loading
 tags:
-  - external
+ - external
+ - font-loading
 external_url: http://calendar.perfplanet.com/2016/no-font-face-bulletproof-syntax/
 ---
 

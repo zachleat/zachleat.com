@@ -5,12 +5,14 @@ layout: post
 permalink: /bulletproof-icon-fonts/
 headimage: /web/img/posts/pua-default.png
 categories:
-  - project
+ - project
+ - font-loading
 tags:
-  - project
-  - external
-  - highlight
-  - research
+ - project
+ - external
+ - highlight
+ - research
+ - font-loading
 external_url: http://www.filamentgroup.com/lab/bulletproof_icon_fonts.html
 ---
 

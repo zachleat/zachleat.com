@@ -6,10 +6,12 @@ permalink: /smashingconf/2014/
 description: Recap of SmashingConf in Whistler (December 2014)
 headimage: https://www.zachleat.com/web/img/posts/whistler-gondola.jpg
 categories:
-  - presentations
+ - presentations
+ - font-loading
 tags:
-  - video
-  - highlight
+ - video
+ - highlight
+ - font-loading
 medialength: 48 min
 ---
 

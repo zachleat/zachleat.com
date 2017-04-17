@@ -4,9 +4,11 @@ author: Zach Leatherman
 layout: post
 permalink: /critical-webfonts/
 categories:
+ - font-loading
 tags:
  - research
  - highlight
+ - font-loading
 ---
 
 The history of web font loading has included many different iterations:
