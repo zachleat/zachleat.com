@@ -674,17 +674,28 @@ th {
 .posts .nejsconf a {
 	margin-left: -14.25px;
 	margin-right: -14.25px;
+	font-size: 1.157894736842em; /* 22px /19 */
+	letter-spacing: .6px;
+	text-transform: uppercase;
+}
+.posts-count .nejsconf:before {
+	top: 24px;
 }
 .posts .nejsconf a,
-.posts .nejsconf a:hover,
 .posts .nejsconf a:visited {
 	background-color: #e4c20a;
 	color: #fff;
 }
+.posts .nejsconf a:hover {
+	background-color: #ceb009;
+}
 .posts .nejsconf.upcoming a,
-.posts .nejsconf.upcoming a:hover,
 .posts .nejsconf.upcoming a:visited {
-	background-color: #444;
+	background-color: #efefef;
+	color: #333;
+}
+.posts .nejsconf.upcoming a:hover {
+	background-color: #ddd;
 }
 .posts-count .nejsconf:before {
 	color: #fff;
