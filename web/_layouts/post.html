@@ -22,7 +22,7 @@ layout: default
 	{% endif %}
 	{% if page.external_url %}
 	<article>
-		<p>Originally posted at: <a href="{{ page.external_url }}">{{ page.external_url }}</a></p>
+		<p>{% if page.tags contains 'upcoming' %}This is an upcoming event on {{ page.date | date: "%B %-d, %Y" }}, learn more at{% else %}Originally posted at{% endif %}: <a href="{{ page.external_url }}">{{ page.external_url }}</a></p>
 	</article>
 	{% endif %}
 	{{ content }}
