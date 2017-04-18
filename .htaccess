@@ -12,6 +12,7 @@ RedirectMatch 301 /projects/alarmd-beta/(.*)$ /alarmd2/$1
 RedirectMatch 301 /web/taxonomy/(.*)$ /web/pragmatic/$1
 RedirectMatch 301 /mobile/uno/Presentation.pdf /web/html5-vs-native-applications/
 RedirectMatch 301 /web/web/w3c-banners/ /web/w3c-status-banners/
+RedirectMatch 301 /web/web-fonts/ /web/fonts/
 RedirectMatch 301 /web/\d{4}/\d{2}/\d{2}/(.*)$ /web/$1
 RedirectMatch 301 /web/\d{4}/(.*)$ /web/$1
 </IfModule>

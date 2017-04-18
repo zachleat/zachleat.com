@@ -91,7 +91,9 @@ figcaption {
 /* Layout */
 .rail {
 	text-align: center;
-	padding: 3em 1em 1em;
+	padding: 1em 1em .5em;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid #dedede;
 }
 .content {
 	text-align: left;
@@ -101,6 +103,31 @@ figcaption {
 	font-size: 1.1875em;
 	line-height: 165%;
 }
+@media (min-width: $twoColLayoutMinWidth) {
+	.rail {
+		text-align: left;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 17em;
+		padding: 4em 4em 0 0;
+		border-bottom-width: 0;
+	}
+	.content {
+		padding: 2em 0;
+		margin-right: 15em;
+		position: relative;
+		min-height: 36em;
+	}
+}
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 34.375em) {
+	.rail {
+		position: fixed;
+	}
+}
+
+
+/* Content */
 .content ol:not(.posts),
 .content ul:not(.posts) {
 	padding-left: 1.5em;
@@ -180,27 +207,6 @@ figcaption {
 	max-width: 45em;
 }
 
-@media (min-width: $twoColLayoutMinWidth) {
-	.rail {
-		text-align: left;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 17em;
-		padding: 4em 4em 0 0;
-	}
-	.content {
-		padding: 2em 0;
-		margin-right: 15em;
-		position: relative;
-		min-height: 36em;
-	}
-}
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 34.375em) {
-	.rail {
-		position: fixed;
-	}
-}
 
 /* App specific */
 body {
@@ -255,7 +261,7 @@ h1:first-child {
 	margin-top: 0;
 }
 .header h1 {
-	padding: 0 .15625em; /* 0 5px */
+	padding: 0 0 0 .15625em; /* 5px */
 }
 @media (min-width: 30em) {
 	h1 {
@@ -375,7 +381,7 @@ th {
 	text-decoration: none;
 }
 .rail .header {
-	margin-bottom: .75em;
+	margin-bottom: .5em;
 }
 .rail h1 {
 	font-size: 1.4em;
@@ -419,9 +425,6 @@ th {
 		margin-top: .3em;
 		text-align: right;
 	}
-	.rail .navigation {
-		margin-top: .625em;
-	}
 	.header_home {
 		display: block;
 	}
@@ -432,11 +435,14 @@ th {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: .75em;
+	margin-bottom: .4em;
+}
+.links-standalone {
+	margin-bottom: 0;
 }
 .links a {
 	display: inline-block;
-	margin-top: .4em;
-	padding: .4em .8em;
+	padding: .2em .5em;
 }
 .links-standalone,
 .links a,
@@ -454,12 +460,6 @@ th {
 	display: block;
 }
 @media (min-width: 30em) {
-	.links-standalone,
-	.links {
-		font-size: .875em;
-	}
-}
-@media (min-width: 39em) {
 	.links_cat {
 		display: inline-block;
 	}
@@ -469,11 +469,18 @@ th {
 		text-align: left;
 	}
 	.links-standalone,
+	.links {
+		font-size: .875em;
+	}
+	.links-standalone {
+		display: block;
+		text-align: right;
+		padding: 0;
+	}
 	.links a {
 		display: block;
-		padding-left: 0;
-		padding-right: 0;
 		text-align: right;
+		padding: .4em 0;
 	}
 	.links_cat {
 		display: block;
@@ -481,38 +488,26 @@ th {
 }
 
 /* Conference Link */
-.conference {
-	@include webfontBold;
-	margin-top: 2em;
-	margin-left: -1em;
-	margin-right: -1em;
-	border-top: 1px solid;
-	border-bottom: 1px solid;
-}
-.conference a {
-	display: block;
-	font-size: 1.375em;
-	padding: .5em 1em;
-}
-.tmpl-home .conference {
-	display: none;
-}
 @media (min-width: $twoColLayoutMinWidth) {
-	.conference {
+	.conference-nejsconf.conference-nejsconf {
+		display: block;
+		@include webfontBold;
 		position: absolute;
-		bottom: -4em;
+		bottom: -3em;
 		left: 0;
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
-		padding-right: 4em;
+		padding: .5em 4rem .5em 0;
 		text-align: right;
 		background-color: #444;
-	}
-	.conference a {
-		background-color: #444;
 		color: #fff;
-		padding-right: 0;
+		font-size: 1.375em;
+	}
+	.conference-nejsconf:link,
+	.conference-nejsconf:visited,
+	.links .conference-nejsconf:hover {
+		color: #fff;
 	}
 }
 
@@ -564,10 +559,14 @@ th {
 	width: 100%;
 	max-width: 28.125rem;
 }
+.maxwidth-list p + ol.posts {
+	margin-top: 3em;
+}
 @media (min-width: 30em) {
 	.posts a,
 	.posts .subhed,
-	.maxwidth-list h1 {
+	.maxwidth-list h1,
+	.maxwidth-list p {
 		padding-left: 13px;
 		padding-right: 13px;
 	}
@@ -630,6 +629,10 @@ th {
 	}
 	#about-index {
 		margin-right: 2em;
+	}
+	#about-index p {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.posts-count li:before {
 		pointer-events: none;
