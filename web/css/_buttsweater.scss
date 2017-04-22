@@ -489,25 +489,8 @@ th {
 
 /* Conference Link */
 @media (min-width: $twoColLayoutMinWidth) {
-	.conference-nejsconf.conference-nejsconf {
-		display: block;
-		@include webfontBold;
-		position: absolute;
-		bottom: -3em;
-		left: 0;
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		padding: .5em 4rem .5em 0;
-		text-align: right;
-		background-color: #444;
-		color: #fff;
+	.conference-nejsconf {
 		font-size: 1.375em;
-	}
-	.conference-nejsconf:link,
-	.conference-nejsconf:visited,
-	.links .conference-nejsconf:hover {
-		color: #fff;
 	}
 }
 
