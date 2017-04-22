@@ -16,4 +16,4 @@ medialength: 57 min
 
 Or watch here:
 
-<div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/aFT2BpSsrk0/" frameborder="0" allowfullscreen></iframe></div>
+<div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/aFT2BpSsrk0/" frameborder="0" allowfullscreen></iframe></div>

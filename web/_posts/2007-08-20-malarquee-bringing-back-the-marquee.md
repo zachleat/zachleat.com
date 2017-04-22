@@ -23,7 +23,7 @@ Well today, we’re going to solve all of that. Today, I’m going to show you a
 ## [Malarquee](http://www.zachleat.com/Projects/Malarquee)
 
 
-<div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/9OiF8Hd6Db0/" frameborder="0"></iframe></div>
+<div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/9OiF8Hd6Db0/" frameborder="0"></iframe></div>
 
 ## What is it for?
 

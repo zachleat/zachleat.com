@@ -65,7 +65,7 @@ Turns out, the *BigText Demo Wizard* makes for really easy [Kinetic Typography][
 
  [ke]: http://vimeo.com/channels/kinetictypography
 
-<div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/OuqB6e6NPRM" frameborder="0"></iframe></div>
+<div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/OuqB6e6NPRM" frameborder="0"></iframe></div>
 
 The above is simply the manual process of typing lyrics into the *BigText Demo Wizard*. You can easily make one of these too, with the help of the following keyboard shortcuts:
 
