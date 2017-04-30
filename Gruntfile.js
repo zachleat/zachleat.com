@@ -128,7 +128,8 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'<%= config.distFolder %>initial.css': '<%= config.cssSrc %>initial.scss',
-					'<%= config.distFolder %>defer.css': '<%= config.cssSrc %>defer.scss'
+					'<%= config.distFolder %>defer.css': '<%= config.cssSrc %>defer.scss',
+					'<%= config.distFolder %>keynote-extractor.css': '<%= config.cssSrc %>keynote-extractor.scss'
 				}
 			}
 		},

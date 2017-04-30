@@ -203,6 +203,7 @@ figcaption {
 .maxwidth {
 	max-width: 31em;
 }
+.wider .maxwidth:first-child,
 .maxwidth-list {
 	max-width: 45em;
 }

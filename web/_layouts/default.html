@@ -1,7 +1,7 @@
 {% capture distIncludeFolder %}dist/{% if page.distVersion %}{{ page.distVersion }}{% else %}{{ site.distVersion }}{% endif %}/{% endcapture %}
 {% capture distFolder %}/web/{{ distIncludeFolder }}{% endcapture %}
 <!doctype html>
-<html lang="en"{% if page.tmpl %} class="tmpl-{{ page.tmpl }}"{% endif %}>
+<html lang="en" class="{% if page.tmpl %} tmpl-{{ page.tmpl }}{% endif %}{% if page.templateclass %} {{ page.templateclass }}{% endif %}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +24,9 @@
 			<link href="{{ distFolder }}defer.min.css" rel="stylesheet">
 		</noscript>
 		<script>{% include {{distIncludeFolder}}initial.min.js %}</script>
+{% if page.stylesheet %}
+		<link href="{{ distFolder }}{{ page.stylesheet }}" rel="stylesheet">
+{% endif %}
 	</head>
 	<body>
 		<div class="rail">
