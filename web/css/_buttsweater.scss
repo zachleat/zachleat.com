@@ -211,7 +211,7 @@ figcaption {
 
 /* App specific */
 body {
-	font-family: $sansSerifFont;
+	font-family: $fallbackSystemFont;
 	padding: 0;
 	margin: 0;
 	background-color: $backgroundColor;
@@ -729,7 +729,7 @@ th {
 .footer {
 	margin-top: 2em;
 	padding: .666666667em; /* 8px */
-	font-family: $serifFont;
+	font-family: Georgia, serif;
 	font-style: italic;
 	font-size: .75em; /* 12px */
 	line-height: 120%;

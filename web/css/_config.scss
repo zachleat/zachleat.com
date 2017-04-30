@@ -1,7 +1,6 @@
 // Fonts
 $monospaceFont: Consolas, monospace;
-$sansSerifFont: sans-serif;
-$serifFont: Georgia, serif;
+$fallbackSystemFont: sans-serif;
 
 // Colors
 $blockquoteColor: #888;
@@ -31,35 +30,32 @@ $twoColLayoutMinWidth: 60em;
 }
 @mixin webfont {
 	& {
-		font-family: $sansSerifFont;
+		font-family: $fallbackSystemFont;
 	}
-	// .webfont-stage-1 & {
-	// 	font-family: Lato, $sansSerifFont;
-	// }
 	.webfont-stage-1 & {
-		font-family: LatoSubset, $sansSerifFont;
+		font-family: LatoSubset, $fallbackSystemFont;
 	}
 	.webfont-stage-2 & {
-		font-family: Lato, $sansSerifFont;
+		font-family: Lato, $fallbackSystemFont;
 	}
 }
 @mixin webfontBold {
 	.webfont-stage-2 & {
-		font-family: LatoBold, $sansSerifFont;
+		font-family: LatoBold, $fallbackSystemFont;
 		font-style: normal;
 		font-weight: 700;
 	}
 }
 @mixin webfontItalic {
 	.webfont-stage-2 & {
-		font-family: LatoItalic, $sansSerifFont;
+		font-family: LatoItalic, $fallbackSystemFont;
 		font-style: italic;
 		font-weight: 400;
 	}
 }
 @mixin webfontBoldItalic {
 	.webfont-stage-2 & {
-		font-family: LatoBoldItalic, $sansSerifFont;
+		font-family: LatoBoldItalic, $fallbackSystemFont;
 		font-style: italic;
 		font-weight: 700;
 	}
