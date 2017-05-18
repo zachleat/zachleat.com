@@ -660,8 +660,7 @@ th {
 	margin-left: -14.25px;
 	margin-right: -14.25px;
 	font-size: 1.157894736842em; /* 22px /19 */
-	letter-spacing: .6px;
-	text-transform: uppercase;
+	letter-spacing: .5px;
 }
 .posts-count .nejsconf:before {
 	top: 24px;
@@ -673,14 +672,6 @@ th {
 }
 .posts .nejsconf a:hover {
 	background-color: #ceb009;
-}
-.posts .nejsconf.upcoming a,
-.posts .nejsconf.upcoming a:visited {
-	background-color: #efefef;
-	color: #333;
-}
-.posts .nejsconf.upcoming a:hover {
-	background-color: #ddd;
 }
 .posts-count .nejsconf:before {
 	color: #fff;
