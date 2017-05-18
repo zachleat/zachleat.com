@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule animate-oval-path/animate-oval-path.html$ animate-oval-path/index.html [L]
+</IfModule>

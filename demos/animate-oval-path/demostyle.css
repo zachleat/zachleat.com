@@ -1,0 +1,59 @@
+:root .demostyle {
+	--sun-size: 80px;
+}
+.demostyle {
+	font-family: sans-serif;
+	background-color: #000;
+	color: #fff;
+	/* via https://unsplash.com/photos/QFjSiok61xA */
+	background-image: url( "animate-oval-path-bg-sm.jpg" );
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.demostyle :link,
+.demostyle :visited {
+	color: #ddd;
+}
+.demostyle .oa-planet {
+	background-image: url( "animate-oval-path-earth.png" );
+	background-size: cover;
+}
+.demostyle .oa-sun {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: var(--sun-size);
+	height: var(--sun-size);
+	margin-left: calc( -1 * var(--sun-size) / 2 );
+	margin-top: calc( -1 * var(--sun-size) / 2 );
+}
+.demostyle .oa-sun:before,
+.demostyle .oa-sun:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-image: url( "animate-oval-path-sun.png" );
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.demostyle .oa-sun:before {
+	background-position: 50% 0%;
+	z-index: 1;
+}
+.demostyle .oa-sun:after {
+	top: 50%;
+	background-position: 50% 100%;
+	z-index: -1;
+}
+@media ( max-width: 40.5625em ) {
+	:root .demostyle {
+		/* make the earth smaller */
+		--object-size: 35px;
+	}
+}
+@media ( min-width: 40.625em ) {
+	:root .demostyle {
+		--sun-size: 320px;
+	}
+}

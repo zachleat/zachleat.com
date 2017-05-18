@@ -79,66 +79,13 @@
 		/*
 		 * End core style
 		 */
-
-		/*
-		 * Demo styles
-		 */
-		body.demostyle {
-			font-family: sans-serif;
-			background-color: #000;
-			color: #fff;
-			/* via https://unsplash.com/photos/QFjSiok61xA */
-			background-image: url( "animate-oval-path-bg-sm.jpg" );
-			background-size: cover;
-			background-position: 50% 50%;
-			min-width: 40.625em; /* min-width is only so the earth doesn’t collide with the sun */
-		}
-		.demostyle :link,
-		.demostyle :visited {
-			color: #ddd;
-		}
-		.demostyle .oa-planet {
-			background-image: url( "animate-oval-path-earth.png" );
-			background-size: cover;
-		}
-		.demostyle .oa-sun {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			margin-top: -160px;
-			margin-left: -163px;
-			width: 320px;
-			height: 326px;
-		}
-		.demostyle .oa-sun:before,
-		.demostyle .oa-sun:after {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 50%;
-			background-image: url( "animate-oval-path-sun.png" );
-			background-repeat: no-repeat;
-		}
-		.demostyle .oa-sun:before {
-			background-position: 50% 0%;
-			z-index: 1;
-		}
-		.demostyle .oa-sun:after {
-			top: 50%;
-			background-position: 50% 100%;
-			z-index: -1;
-		}
-		/*
-		 * End Demo styles
-		 */
 		</style>
+		<link rel="stylesheet" href="demostyle.css">
 	</head>
 	<body class="demostyle">
 		<form>
 			<a href="https://www.zachleat.com/web/demo-oval-animation/">👈 Back to zachleat.com</a>
-			<label><input type="checkbox" checked id="demostyle"> Render demo styles</label>
+			<label><input type="checkbox" checked id="demostyle"> Render demo styles (nothing is to scale)</label>
 			<a href="https://www.zachleat.com/demos/animate-oval-path.zip">Download as .zip</a>
 		</form>
 		<div class="oa-universe" aria-hidden="true">
