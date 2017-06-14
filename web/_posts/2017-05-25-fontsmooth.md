@@ -25,13 +25,15 @@ Controlling anti-aliasing modes in CSS is easy. A little too easy <a href="https
 
 ### Try it out on this page
 
-<fieldset class="fs-fieldset fs-choose" id="fs-choose" style="display: none">
-	Anti-aliasing: 
-	<label><input type="radio" name="choose" value="fs-none"><code>None</code></label>
-	<label><input type="radio" name="choose" value="fs-antialias"><code>Grayscale</code></label>
-	<label><input type="radio" name="choose" value="fs-auto" checked><code>Auto</code></label>
-	<label><input type="radio" name="choose" value="fs-subpixel"><code>Subpixel</code></label>
-</fieldset>
+<form>
+	<fieldset class="fs-fieldset fs-choose" id="fs-choose">
+		Anti-aliasing: 
+		<label><input type="radio" name="choose" value="fs-none"><code>None</code></label>
+		<label><input type="radio" name="choose" value="fs-antialias"><code>Grayscale</code></label>
+		<label><input type="radio" name="choose" value="fs-auto" checked><code>Auto</code></label>
+		<label><input type="radio" name="choose" value="fs-subpixel"><code>Subpixel</code></label>
+	</fieldset>
+</form>
 
 ## What’s the difference between these modes?
 
@@ -129,6 +131,14 @@ The safe bet here is to defer to browser and platform defaults and only use `fon
 * [Anti-Aliasing on the iPhone](https://daringfireball.net/2007/12/anti_aliasing_on_the_iphone) (2007) from John Gruber
 
 <style>
+.fs-choose {
+	display: none;
+}
+@media ( max-width: 34.9375em /* 559px */ ) {
+	.fs-choose label {
+		display: block;
+	}
+}
 .fs-fieldset {
 	border: none;
 	padding: .5em 0;
