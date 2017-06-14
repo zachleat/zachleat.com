@@ -10,13 +10,18 @@
 .previous-post,
 .next-post {
 	display: block;
-	width: 50%;
 	position: relative;
 	line-height: 130%;
 	padding: 1em .4em;
 	font-size: .842105263em; /* 16px */
 	border: 1px solid transparent;
 	text-decoration: none;
+}
+@media (min-width: 31.25em) {
+	.previous-post,
+	.next-post {
+		width: 50%;
+	}
 }
 .previous-post:hover,
 .previous-post:focus,
@@ -28,25 +33,27 @@
 .previous-post {
 	text-align: left;
 	float: left;
-	padding-left: 1.2em;
+	padding-left: 5em; /* 80px /16 */
 }
 .next-post {
 	text-align: right;
 	float: right;
-	padding-right: 1.2em;
+	padding-right: 3.375em; /* 54px /16 */
 }
 .previous-post:before,
 .next-post:after {
 	color: #aaa;
 	position: absolute;
-	top: 1em;
+	top: 1.5em; /* 18px /12 */
+	text-transform: uppercase;
+	font-size: .75em;
 }
 .previous-post:before {
-	content: "« ";
+	content: "« Previous";
 	left: .4em;
 }
 .next-post:after {
-	content: " »";
+	content: "Next »";
 	right: .4em;
 }
 .previous-post:hover:before,
