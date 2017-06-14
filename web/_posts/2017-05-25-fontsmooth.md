@@ -9,7 +9,7 @@ tags:
 
 _Recently, Twitter made a global anti-aliasing CSS change to their website. Before writing this post, I didn’t know very much about anti-aliasing—so I decided to learn everything I could about it to better understand the reasoning behind a decision like that. Here’s what I learned._
 
-Controlling anti-aliasing modes in CSS is easy. A little too easy <a href="https://en.wikipedia.org/wiki/Tin_foil_hat"><img src="/web/img/posts/font-smooth/tinfoilhat.png" alt="Tin foil hat" style="height: 1em"></a>. There are two non-standardized, implemented vendor-prefixed properties to control anti-aliasing on text: <code class="nowrap">-webkit-font-smoothing</code> and <code class="nowrap">-moz-osx-font-smoothing</code>. The full browser support matrix is available under <a href="http://caniuse.com/#feat=font-smooth">`font-smooth`on Can I Use</a>). But before we dive in, let’s level set on what the values for these properties are:
+Controlling anti-aliasing modes in CSS is easy. A little too easy <a href="https://en.wikipedia.org/wiki/Tin_foil_hat"><img src="/web/img/posts/font-smooth/tinfoilhat.png" alt="Tin foil hat" style="height: 1em"></a>. There are two non-standardized, implemented vendor-prefixed properties to control anti-aliasing on text: <code class="nowrap">-webkit-font-smoothing</code> and <code class="nowrap">-moz-osx-font-smoothing</code>. The full browser support matrix is available under <a href="http://caniuse.com/#feat=font-smooth">`font-smooth`on Can I Use</a>. But before we dive in, let’s level set on what the values for these properties are:
 
 * Disabled:
 	* `-webkit-font-smoothing: none`
