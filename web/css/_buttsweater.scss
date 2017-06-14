@@ -311,6 +311,9 @@ code {
 	margin: 0 0.1em;
 	color: #444;
 }
+code.nowrap {
+	white-space: nowrap;
+}
 h1 code,
 h2 code,
 h3 code,
@@ -829,4 +832,15 @@ th {
 .printed-page pre {
 	border-color: transparent;
 	background-color: transparent;
+}
+
+/* Grids */
+@supports ( display: grid ) {
+	@media ( min-width: 31.25em /* 500px */ ) {
+		.grid-3 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 2%;
+		}
+	}
 }
