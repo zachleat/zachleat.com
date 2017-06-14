@@ -1,5 +1,5 @@
 ---
-title: "Laissez-faire Font Smoothing, Anti-aliasing"
+title: "Laissez-faire Font Smoothing and Anti-aliasing"
 author: Zach Leatherman
 layout: post
 permalink: /font-smooth/
@@ -35,7 +35,7 @@ Controlling anti-aliasing modes in CSS is easy. A little too easy <a href="https
 
 ## What’s the difference between these modes?
 
-To get a closer look, I strapped a cheap 25x macro lens to my smartphone and did some photography. They’re pretty distorted around the edges because of the cheap lens, but they’re good enough to see what’s going on.
+To get a closer look, I strapped a cheap 25x macro lens to my smartphone and took some pictures. They’re pretty distorted around the edges because of the lens, but they’re good enough to see what’s going on.
 
 <video class="slide-image" controls preload="metadata" loop src="/web/img/posts/font-smooth/antialiasing.mp4">
   Sorry, your browser doesn't support embedded videos. Try <a href="/web/img/posts/font-smooth/antialiasing.mp4">downloading it</a> instead.
@@ -112,7 +112,11 @@ To see more big players in the `font-smooth` game, <a href="https://developer.mi
 
 ## Conclusion
 
-Taking a “smoke ’em if you got ’em” approach to subpixel anti-aliasing feels warranted here. It seems silly to opt-out of a technically superior subpixel approach if it’s supported on the user’s platform and browser. Even as iOS continues to hold out, a bigger picture look reveals that subpixel anti-aliasing is not going away any time soon. For those reasons, I’d recommend deferring to browser and platform defaults and only use `font-smooth` overrides sparingly and as a last resort.
+Taking a “smoke ’em if you got ’em” approach to subpixel anti-aliasing feels warranted here. It seems silly to opt-out of a technically superior subpixel approach if it’s supported on the user’s platform and browser.
+
+Platforms that support subpixel rendering may or may not support `font-smooth` to control it—Android is a prime example of this. After reading issues on web browser bug trackers, it almost seems like the browsers that did implement this now regret doing so. But independent of `font-smooth` support, subpixel anti-aliasing is not going away any time soon—even if iOS holds out forever.
+
+The safe bet here is to defer to browser and platform defaults and only use `font-smooth` overrides sparingly and as a last resort.
 
 ## Sources
 
