@@ -62,8 +62,8 @@ module.exports = function(grunt) {
 				src: [
 					'node_modules/fg-loadjs/loadJS.js',
 					// 'node_modules/grunt-grunticon/example/output/grunticon.loader.js',
-					'node_modules/fg-loadcss/loadCSS.js',
-					'node_modules/fg-loadcss/onloadCSS.js',
+					'node_modules/fg-loadcss/src/loadCSS.js',
+					'node_modules/fg-loadcss/src/onloadCSS.js',
 					'<%= config.jsSrc %>grunticon-loader.js',
 					'<%= config.jsSrc %>async.js'
 					],
