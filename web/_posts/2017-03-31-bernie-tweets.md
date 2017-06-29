@@ -24,3 +24,10 @@ You can click anywhere on the page to add your own tweet. Or you can just modify
 <a href="https://www.zachleat.com/bernie/realDonaldTrump/266038556504494082" class="exempt"><img src="/web/img/posts/bernie-tweets/sample1.jpg" alt="A @realDonaldTrump tweet on Bernie Tweets" class="primary"></a>
 
 Silly side projects keep us sane. 😎
+
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">★ Bernie Tweets: <a href="https://t.co/JI1Fn6Z3qk">https://t.co/JI1Fn6Z3qk</a><br><br>Put your own tweet on Bernie’s Senate floor visual aid.<br><br>See it at: <a href="https://t.co/nZSYVjVOhK">https://t.co/nZSYVjVOhK</a> <a href="https://t.co/EeBNYXvdds">pic.twitter.com/EeBNYXvdds</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/848259464847396869">April 1, 2017</a></blockquote>
+	</div>
+</div>

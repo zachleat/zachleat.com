@@ -73,17 +73,17 @@ Example variable names are for the [Raleway typeface](https://www.google.com/fon
 
 {% highlight css %}
 .raleway-loading body {
-  color: transparent;
+	color: transparent;
 }
 .raleway-fallback body,
 .raleway-loaded body {
-  color: inherit;
+	color: inherit;
 }
 .raleway-fallback body {
-  font-family: serif;
+	font-family: serif;
 }
 .raleway-loaded body {
-  font-family: Raleway, serif;
+	font-family: Raleway, serif;
 }
 {% endhighlight %}
 
@@ -96,17 +96,24 @@ docEl.className += " raleway-loading";
 // This example uses a 1 second timeout,
 // adjust as needed.
 window.setTimeout(function() {
-  docEl.className += " raleway-fallback";
+	docEl.className += " raleway-fallback";
 }, 1000);
 
 // Using the CSS Font Loading API
 Promise.all([
-  document.fonts.load("400 1em Raleway"),
-  document.fonts.load("700 1em Raleway")
+	document.fonts.load("400 1em Raleway"),
+	document.fonts.load("700 1em Raleway")
 ]).then(function () {
-  docEl.className += " raleway-loaded";
+	docEl.className += " raleway-loaded";
 });
 
 // Converting this to use a Polyfill syntax
 // is an exercise left to the reader.
 {% endhighlight %}
+
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ The Mitt Romney Web Font Problem <a href="http://t.co/isHBqCaTdb">http://t.co/isHBqCaTdb</a> or why loading multiple web fonts for a single typeface is dangerous.</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/605364712663093248">June 1, 2015</a></blockquote>
+	</div>
+</div>

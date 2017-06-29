@@ -183,3 +183,10 @@ body {
 ***Important Note**: you have to use different aliased `font-family` names for each `@font-face` block used here. If not, your second stage (the Flash of Faux-Text) will suffer the same Flash of Invisible Text problem that we’re trying to avoid with font loading.*
 
 This does make one wonder if it would be useful to have Browsers use this internally by making bold and italic variants a lower priority than roman. Blink already uses a similar approach with non-applicable `media` queries on `<link>` elements for CSS, why not fonts?
+
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ The Flash of Faux-Text—still more on Font Loading: <a href="http://t.co/1ubntrjKgd">http://t.co/1ubntrjKgd</a> Load normal weight first; show faux-bold while real bold loads.</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/558608085309468672">January 23, 2015</a></blockquote>
+	</div>
+</div>

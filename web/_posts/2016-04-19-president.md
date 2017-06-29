@@ -127,3 +127,9 @@ It’s interesting to note that the candidates that self hosted their fonts (Hil
 
 What did we learn here? Web Font loading is far too complex to draw conclusions about the quality of a web site based on where you load your web fonts. Using a web font service doesn’t necessarily mean that your web site will use best practices. We must be knowledgeable about the internals of the tools we use in order to best utilize them to our advantage. At the end of the day if you don’t want to put any effort into it, it’s safer to use TypeKit.
 
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">★Web Fonts for President 2016 <a href="https://t.co/wOLHuZH5CY">https://t.co/wOLHuZH5CY</a> A look at the font loading strategies of websites for US presidential candidates.</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/722860263750258688">April 20, 2016</a></blockquote>
+	</div>
+</div>

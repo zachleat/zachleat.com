@@ -74,3 +74,10 @@ You could use extend this approach using something similar to the Critical CSS w
 In fact, you could wire up something similar to this using the amazing [Plumin.js](http://www.pluminjs.com/) but unfortunately the library is too large (~`400KB` minimized) for this use case. For now, I’ll just stick with a simple `9KB` baseline WOFF2 that gets replaced with a `25KB` full version. The library would need to at least be smaller than your baseline to get good mileage out of a dynamic font (but I would never dream of equating a web font KB with a JavaScript KB—they have different performance impacts).
 
 [Live Font Interpolation on the Web](http://alistapart.com/article/live-font-interpolation-on-the-web), an article written for A List Apart by [Andrew Johnson](https://twitter.com/aetherpoint) is also worth mentioning. Keep an eye on this approach—it would allow us to dynamically generate weights and styles from font masters, hopefully saving bytes on the wire for designs using a wide variety of weights and styles. I’d love to see this web-standardized.
+
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ Critical Web Fonts, a two stage font loading approach to further minimize reflow impact from web fonts: <a href="https://t.co/vWNVagaGmr">https://t.co/vWNVagaGmr</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/684747486397779969">January 6, 2016</a></blockquote>
+	</div>
+</div>

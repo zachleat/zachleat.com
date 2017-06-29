@@ -203,3 +203,10 @@ Times look marginally better here too. Huh. I think I’m gonna roll with this a
 	src: url("data:application/font-woff2;charset=utf-8;base64,...") format("woff2"), url( /path/to/webfont.woff ) format( "woff" );
 }
 {% endhighlight %}
+
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ Web Font Anti-pattern: Data URIs: <a href="https://t.co/518QDCoh2W">https://t.co/518QDCoh2W</a> (or is it??)</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/709374507350249472">March 14, 2016</a></blockquote>
+	</div>
+</div>

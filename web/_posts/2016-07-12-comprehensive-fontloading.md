@@ -313,7 +313,6 @@ This variation of the Critical FOFT approach simply changes the mechanism throug
 
 <div class="retweettoshare">
 	<h3 class="retweettoshare_title">Retweet to share this post</h3>
-
 	<div class="retweettoshare_widget">
 		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ A Comprehensive Guide to Font Loading Strategies <a href="https://t.co/5LI0HZINku">https://t.co/5LI0HZINku</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/753220402134999042">July 13, 2016</a></blockquote>
 	</div>

@@ -193,3 +193,10 @@ The results are pretty good for a Two Stage font loading approach. If your web f
 ## Conclusion
 
 The benefits to `preload` for fonts are numerous—especially over the Two Stage Data URI approach. The only nail in the `preload` coffin now is browser support. Once browser support for this is better, I will definitely switch from using Data URIs in the first stage of Critical FOFT to simply preloading the hosted first stage WOFF2 file (or similarly if you’re only loading a single web font). Always measure the sacrifice in initial render time to determine if this trade-off is worth it for your site.
+
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ The Web Fonts: Preloaded <a href="https://t.co/Sk76FYXaIr">https://t.co/Sk76FYXaIr</a> A look at using `&lt;link rel=&quot;preload&quot;&gt;` for web fonts.</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/720593422063525889">April 14, 2016</a></blockquote>
+	</div>
+</div>
