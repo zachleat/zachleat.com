@@ -131,6 +131,14 @@ The safe bet here is to defer to browser and platform defaults and only use `fon
 * [Understanding Sub-Pixel (LCD Screen) Anti-Aliased Font Rendering](http://alienryderflex.com/sub_pixel/) (2007) from Darel Rex Finley
 * [Anti-Aliasing on the iPhone](https://daringfireball.net/2007/12/anti_aliasing_on_the_iphone) (2007) from John Gruber
 
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ Laissez-Faire Font Smoothing and Anti-aliasing <a href="https://t.co/mIxWPADXel">https://t.co/mIxWPADXel</a><br><br>Learn about `-webkit-font-smoothing` and `-moz-osx-font-smoothing`</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/874968707239297025">June 14, 2017</a></blockquote>
+	</div>
+</div>
+
 <style>
 .fs-choose {
 	display: none;
