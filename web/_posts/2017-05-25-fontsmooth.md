@@ -4,6 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /font-smooth/
 categories:
+ - font-loading
 tags:
 ---
 
