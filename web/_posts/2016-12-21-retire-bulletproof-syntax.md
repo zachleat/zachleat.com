@@ -6,9 +6,7 @@ permalink: /retire-bulletproof-syntax/
 categories:
  - font-loading
 tags:
- - external
  - font-loading
-external_url: http://calendar.perfplanet.com/2016/no-font-face-bulletproof-syntax/
 ---
 
 [***No @font-face Syntax will ever be Bulletproof, Nor Should It Be* was originally posted on the perfplanet.com Performance Calendar.**](http://calendar.perfplanet.com/2016/no-font-face-bulletproof-syntax/)
