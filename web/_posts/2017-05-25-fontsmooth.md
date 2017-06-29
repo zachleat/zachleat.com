@@ -26,7 +26,7 @@ Controlling anti-aliasing modes in CSS is easy. A little too easy <a href="https
 
 ### Try it out on this page
 
-<form>
+<form class="livedemo">
 	<fieldset class="fs-fieldset fs-choose" id="fs-choose">
 		Anti-aliasing: 
 		<label><input type="radio" name="choose" value="fs-none"><code>None</code></label>
