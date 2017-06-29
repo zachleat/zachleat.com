@@ -80,13 +80,18 @@ html {
 figure {
 	margin: 0;
 }
-figcaption {
+figcaption,
+.caption {
 	font-size: .75em;
 	font-style: italic;
 	margin-top: .2em;
 	margin-bottom: 4em;
 	line-height: 150%;
 	@include webfontItalic;
+}
+figcaption strong,
+.caption strong {
+	@include webfontBoldItalic;
 }
 
 /* Layout */
@@ -333,13 +338,15 @@ pre {
 	font-family: $monospaceFont;
 	font-size: .8125em;
 	line-height: 160%;
-	padding: .5em 1em;
+	padding: .75rem;
 	background-color: #f4f4f4;
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -pre-wrap;
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
 	tab-size: 2;
 }
 @media (min-width: $twoColLayoutMinWidth) {
@@ -843,4 +850,26 @@ th {
 			grid-column-gap: 2%;
 		}
 	}
+}
+
+/* Live test cases */
+.livedemo {
+	display: block;
+	padding: .75rem;
+	border: 1px dashed #888;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: .5rem;
+}
+.livedemo:after {
+	content: "Demonstration";
+	position: absolute;
+	right: .5rem;
+	bottom: -.375rem;
+	font-size: .75rem;
+	padding: 0 .25rem;
+	line-height: 1;
+	text-transform: uppercase;
+	background: #fff;
+	@include webfont;
 }
