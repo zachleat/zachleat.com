@@ -74,7 +74,8 @@ module.exports = function(grunt) {
 					'node_modules/infinity-burger/infinity-burger.js',
 					'<%= config.jsSrc %>google-analytics.js',
 					'<%= config.jsSrc %>disqus.js',
-					'<%= config.jsSrc %>twitter-api.js'
+					'<%= config.jsSrc %>twitter-api.js',
+					'<%= config.jsSrc %>fightforthefuture.js'
 					],
 				dest: '<%= config.distFolder %>defer.js'
 			}
