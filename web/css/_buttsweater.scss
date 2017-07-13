@@ -500,13 +500,6 @@ th {
 	}
 }
 
-/* Conference Link */
-@media (min-width: $twoColLayoutMinWidth) {
-	.conference-nejsconf {
-		font-size: 1.375em;
-	}
-}
-
 /* Posts and Content */
 .posts {
 	list-style: none;
@@ -659,36 +652,40 @@ th {
 }
 
 /* NEJS CONF links */
-.posts .nejsconf .external {
+.posts .nejsconf a {
+	letter-spacing: .5px;
+}
+.posts .nejsconf:not(.upcoming) a,
+.posts .nejsconf:not(.upcoming) a:visited {
+	color: #e4c20a;
+}
+.posts .nejsconf.upcoming .external {
 	@include a11y-only;
 }
-.posts .nejsconf a {
+.posts .nejsconf.upcoming a {
 	display: block;
 	padding-left: .5em;
 	padding-right: .5em;
-}
-.posts .nejsconf a {
 	margin-left: -14.25px;
 	margin-right: -14.25px;
 	font-size: 1.157894736842em; /* 22px /19 */
-	letter-spacing: .5px;
 }
-.posts-count .nejsconf:before {
+.posts-count .nejsconf.upcoming:before {
 	top: 24px;
 }
-.posts .nejsconf a,
-.posts .nejsconf a:visited {
+.posts .nejsconf.upcoming a,
+.posts .nejsconf.upcoming a:visited {
 	background-color: #e4c20a;
 	color: #fff;
 }
-.posts .nejsconf a:hover {
+.posts .nejsconf.upcoming a:hover {
 	background-color: #ceb009;
 }
-.posts-count .nejsconf:before {
+.posts-count .nejsconf.upcoming:before {
 	color: #fff;
 }
 @media (min-width: 30em) {
-	.posts .nejsconf a {
+	.posts .nejsconf.upcoming a {
 		display: inline-block;
 		padding-left: 55px;
 		padding-right: 55px;
