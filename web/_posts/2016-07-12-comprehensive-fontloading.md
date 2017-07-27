@@ -12,6 +12,8 @@ tags:
 
 _This guide is not intended for use with font icons, which have different loading priorities and use cases. Also, SVG is probably a better long term choice._
 
+**Updated July 27, 2017** with new information on `font-display`.
+
 ## Jump to:
 
 * [Unceremonious @font-face](#font-face)
@@ -89,7 +91,7 @@ Throw a naked @font-face block on your page and hope for the best. This is the d
 
 ## <span id="font-display">font-display</span>
 
-Add a new `font-display: swap` descriptor to your `@font-face` block to opt-in to FOUT on browsers that support it. Optionally, `font-display: fallback` or `font-display: optional` can be used if you consider web fonts to be unnecessary to the design. At time of writing, this feature is not available in any stable web browsers.
+Add a new `font-display: swap` descriptor to your `@font-face` block to opt-in to FOUT on browsers that support it. Optionally, `font-display: fallback` or `font-display: optional` can be used if you consider web fonts to be unnecessary to the design. ~~At time of writing, this feature is not available in any stable web browsers.~~ *Update: on July 25, 2017 Chrome 60 was released on the Chrome stable release channel which includes support for `font-display`.*
 
 * **[Demo: `font-display`](/web-fonts/demos/font-display.html)**: note browser support for this is very limited.
 * Read more: [`font-display` Specification](https://tabatkins.github.io/specs/css-font-display/)
@@ -104,11 +106,12 @@ Add a new `font-display: swap` descriptor to your `@font-face` block to opt-in t
 
 #### Cons
 
-* No stable browser support. Only [Chrome Platform Status](https://www.chromestatus.com/feature/4799947908055040) has a status page for it. It isn’t documented on [Firefox Platform Status](https://platform-status.mozilla.org/) or [Edge Platform Status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/). Until support is ubiquitous across A-grade browsers, developers will likely still need to pair this with a JavaScript approach.
+* Only available on Chrome (version 60+ on Desktop and Android, see [Chrome Platform Status](https://www.chromestatus.com/feature/4799947908055040)). In progress and behind a flag on [Firefox Platform Status](https://platform-status.mozilla.org/#css-font-display) but not yet documented at all on [Edge Platform Status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/). Until support is ubiquitous across A-grade browsers, developers will need to pair this with a JavaScript approach.
+* In fact, pairing this with a JavaScript approach doesn’t really buy you all that much on an empty-cache load, given that the JavaScript FOUT approaches documented on this page usually require modification of your CSS to avoid using any web fonts prior to font loading classes added by JavaScript. When the two approaches are paired together and the JavaScript fails you won’t get web fonts even though `font-display` is a CSS-only approach. It’ll help for repeat view optimizations though.
 * Limited flexibility: No way to group requests or repaints. This isn’t as bad as it sounds—if you FOUT everything you’ll avoid the Mitt Romney Web Font problem but grouping can be useful for other reasons—we’ll go into that later.
 * Hosting: No control of this property on any known web font host. It’s not included in the Google Fonts CSS, for example. This will probably change when browser support improves.
 
-#### Verdict: No harm in adding now, but not sufficient.
+#### Verdict: Definitely add it to your `@font-face` blocks, but by itself it’s not sufficient.
 
 ## <span id="preload">Preload</span>
 
