@@ -446,9 +446,14 @@ th {
 /* Header Links */
 .links {
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: .75em;
 	margin-bottom: .4em;
+}
+@media (min-width: 25em) {
+	.links {
+		letter-spacing: 2px;
+	}
 }
 .links-standalone {
 	margin-bottom: 0;
