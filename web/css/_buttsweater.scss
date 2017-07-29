@@ -65,6 +65,7 @@ html {
 	min-height: 12em;
 	height: 50vh;
 	border: 1px solid rgba(0, 0, 0, .05);
+	overflow: hidden;
 }
 .iframe-cover,
 .iframe-big {
@@ -80,6 +81,8 @@ html {
 }
 .iframe-big {
 	border: none;
+	width: 1px;
+	min-width: 100%;
 }
 
 figure {
