@@ -1,0 +1,40 @@
+$fact-true-color: #00882d;
+$fact-false-color: #cb000f;
+$fact-misleading-color: #c5a402;
+$fact-pass-color: #999;
+
+.fact-block {
+	border-left: 4px solid;
+	padding: 0 0 0 1em;
+	margin-bottom: 1em;
+}
+.fact-block .fact-block-hed {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 1em;
+}
+.fact-block.fact-true {
+	border-color: $fact-true-color;
+}
+.fact-block.fact-true .fact-block-hed {
+	color: $fact-true-color;
+}
+.fact-block.fact-false {
+	border-color: $fact-false-color;
+}
+.fact-block.fact-false .fact-block-hed {
+	color: $fact-false-color;
+}
+.fact-block.fact-misleading {
+	border-color: $fact-misleading-color;
+}
+.fact-block.fact-misleading .fact-block-hed {
+	color: $fact-misleading-color;
+}
+.fact-block.fact-pass {
+	border-color: $fact-pass-color;
+}
+.fact-block.fact-pass .fact-block-hed {
+	color: $fact-pass-color;
+}

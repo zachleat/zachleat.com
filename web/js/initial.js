@@ -18,10 +18,6 @@ var ZL = {
 	if( templateName ) {
 		classes.push( "tmpl-" + templateName.content );
 	}
-	// gradient inference
-	if( 'matchMedia' in window ) {
-		classes.push( "has-gradient" );
-	}
 
 	// Fonts
 	if( sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {

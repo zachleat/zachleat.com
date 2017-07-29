@@ -23,10 +23,6 @@
 	text-decoration: none;
 	@include webfontBold;
 }
-.has-gradient.tmpl-page .content .action a {
-	background-image: none;
-	text-shadow: none;
-}
 .action a i {
 	vertical-align: text-bottom;
 	display: none;
@@ -55,12 +51,13 @@
 }
 .deprecation-warning h3 {
 	display: inline;
+	line-height: 2;
 	margin-right: .6em;
 }
 .deprecation-warning h3:after {
 	content: ':';
 }
 .deprecation-warning p {
-	font-style: italic;
+	@include webfontItalic;
 	margin: 0;
 }

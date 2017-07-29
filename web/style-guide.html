@@ -1,0 +1,290 @@
+---
+title: Style Guide
+layout: page
+permalink: style-guide/
+---
+
+<ul>
+	<li><a href="#demos">Demos</a></li>
+	<li><a href="#typography">Typography</a></li>
+	<li><a href="#media">Lists</a></li>
+	<li><a href="#media">Tables</a></li>
+	<li><a href="#media">Fluid Media</a></li>
+	<li><a href="#other">Other components</a></li>
+</ul>
+
+<h2 id="demos">Demos</h2>
+<p class="livedemo top">This is a live demo example with the demonstration label on the top.</p>
+<p class="livedemo">This is a live demo example with the demonstration label on the bottom.</p>
+
+<h2 id="typography">Typography</h2>
+
+<h3 id="headers">Headers</h3>
+
+<div class="livedemo top">
+	<h1>Top Level Header</h1>
+	<p>Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text.</p>
+
+	<h2>Second Level Header</h2>
+	<p>Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text.</p>
+
+	<h3>Third Level Header</h3>
+	<p>Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text.</p>
+
+	<h4>Fourth Level Header</h4>
+	<p>Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text. Paragraph text.</p>
+</div>
+<p class="caption">First through fourth level headers with accompanying paragraph text. Fifth and six level headers aren’t in use on this site.</p>
+
+<h3>Web Fonts</h3>
+<div class="livedemo top"><p>Normal roman text. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
+
+<h3>Code</h3>
+<div class="livedemo top">
+	<p>This is a simple <code>code element.</code> It’s usually alongside some other text.</p>
+</div>
+
+<div class="livedemo top">
+	<pre>This is a simple pre element.</pre>
+
+	<pre><code>This is pre > code.</code></pre>
+
+	<pre><code>This is pre > code with a really long line length. It should wrap smartly without a scrollbar.</code></pre>
+</div>
+
+<h3>Blockquotes</h3>
+<div class="livedemo top">
+	<p>Normal paragraph text.</p>
+	<blockquote>Progressive enhancement is a touchy subject. It can be hard to discuss dispassionately because, like accessibility, it’s often framed as an issue of empathy and compassion.</blockquote>
+	<p>Normal paragraph text.</p>
+</div>
+
+<h3>Links</h3>
+<p>Use <code>text-decoration-skip</code>, fallback to <code>text-shadow</code>: <span class="livedemo top"><a href="#">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
+<p>Only use <code>text-decoration-skip</code>, no fallback: <span class="livedemo top"><a href="#" class="exempt">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
+
+<p><code>break</code> for super long links that you want to wrap nicely: <span class="livedemo top" style="display: inline-block; max-width: 15em"><a href="https://twitter.com/zachleat/status/890242957386944516" class="break">https://twitter.com/<strong>zachleat</strong>/status/<strong>890242957386944516</strong></a></span></p>
+
+<h2 id="lists">Lists</h2>
+<h3>Ordered List</h3>
+<div class="livedemo top">
+<ol>
+	<li>Ordered list item.</li>
+	<li>Ordered list item.</li>
+	<li>Ordered list item.</li>
+	<li>Ordered list item.</li>
+</ol>
+</div>
+
+<h3>Posts Ordered List</h3>
+<div class="livedemo top">
+<ol class="posts posts-count" style="counter-reset: start-from 5">
+	<li class="subhed">Year</li>
+	<li><a href="#">Blog post entry.</a></li>
+	<li><a href="#">Blog post entry.</a></li>
+	<li class="subhed">Year</li>
+	<li><a href="#">Blog post entry.</a></li>
+	<li><a href="#">Blog post entry.</a></li>
+</ol>
+</div>
+
+<h3>Unordered List</h3>
+<div class="livedemo top">
+<ul>
+	<li>Unordered list item.</li>
+	<li>Unordered list item.</li>
+	<li>Unordered list item.</li>
+	<li>Unordered list item.</li>
+</ul>
+</div>
+
+<!-- <h3>Definition List</h3>
+<div class="livedemo top">
+<dl>
+	<dt>Definition term list item.</dt>
+	<dd>Definition description list item.</dd>
+	<dt>Definition term list item.</dt>
+	<dd>Definition description list item.</dd>
+	<dt>Definition term list item.</dt>
+	<dd>Definition description list item.</dd>
+</ol>
+</div>
+<p class="caption">Not yet in use.</p>
+ -->
+<h3>Addendum Notes</h3>
+<div class="livedemo top">
+	<p>This is paragraph text with an addendum note attached<a href="#note-1" class="notes_link" id="link-note-1">1</a>.</p>
+
+	<h4>Appendix</h4>
+	<ol class="notes">
+		<li class="notes_note"><a id="note-1" href="#link-note-1" class="notes_linkback">Jump to the reference.</a> FOUC also refers to the scenario when your page renders before your CSS has successfully applied so I think it’d be better to stick with FOUT to avoid confusion.</li>
+	</ol>
+</div>
+
+<h2 id="tables">Tables</h2>
+
+<div class="livedemo top">
+	<table>
+		<caption>NebraskaJS Membership</caption>
+		<thead>
+			<tr>
+				<th>Year</th>
+				<th>Membership</th>
+				<th>Change</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>2009</th>
+				<td>Founded</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>2012</th>
+				<td>~220</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>2013</th>
+				<td>419</td>
+				<td><em class="better">(+199)</em> or <em class="worse">(-199)</em></td>
+			</tr>
+			<tr>
+				<th>2014</th>
+				<td>606</td>
+				<td><em class="better">(+187)</em> or <em class="worse">(-187)</em></td>
+			</tr>
+			<tr>
+				<th>2015</th>
+				<td>920</td>
+				<td><em class="better">(+314)</em> or <em class="worse">(-314)</em></td>
+			</tr>
+			<tr>
+				<th>2016</th>
+				<td>1127</td>
+				<td><em class="better">(+207)</em> or <em class="worse">(-207)</em></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h3>Compatibility Tables</h3>
+
+<div class="livedemo top">
+<table class="compatibility">
+<thead>
+<tr>
+<th>Browser</th>
+<th>Left Menu</th>
+<th>Bottom Menu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internet Explorer 8</td>
+<td class="no">no</td>
+<td class="no">no</td>
+</tr>
+<tr>
+<td>Google Chrome</td>
+<td class="yes">yes</td>
+<td class="no">no</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="media">Fluid Media</h2>
+<h3>Image</h3>
+<div class="livedemo top">
+	<picture>
+		<source type="image/webp" srcset="/web/img/posts/webp/0-original.webp">
+		<img src="/web/img/posts/webp/0-original.png" alt="Devtools Screenshot showing 18MB download">
+	</picture>
+</div>
+
+<h4>Full Width Image</h4>
+<div class="livedemo top">
+	<picture>
+		<source type="image/webp" srcset="/web/img/posts/webp/0-original.webp">
+		<img src="/web/img/posts/webp/0-original.png" alt="Devtools Screenshot showing 18MB download" class="primary">
+	</picture>
+</div>
+
+<h3>Video</h3>
+<div class="livedemo top">
+	<video controls preload="metadata" loop src="/web/img/posts/font-smooth/antialiasing.mp4">
+		Sorry, your browser doesn't support embedded videos. Try <a href="/web/img/posts/font-smooth/antialiasing.mp4">downloading it</a> instead.
+	</video>
+</div>
+
+<h3>Third Party Video</h3>
+<div class="livedemo top">
+	<div class="fluid-width-video-wrapper">
+		<iframe width="420" height="315" src="https://www.youtube.com/embed/NkVmhe-vvAo" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
+
+<h3>Figures with Captions</h3>
+<div class="livedemo top">
+	<figure>
+		<img src="/web/img/posts/whmeetup/room.jpg" alt="">
+		<figcaption>Holy shit—I’m in the room.</figcaption>
+	</figure>
+</div>
+
+<h4>Standalone Caption</h4>
+<div class="livedemo top">
+	<span class="caption"><strong>Supported</strong> in Safari (Mobile and Desktop) and <strong>Not Supported</strong> in Chrome, Firefox (as of 54)</span>
+</div>
+
+<h3>Full width Iframe</h3>
+<p>Includes an <code>iframe-cover</code> element to prevent interactivity with the iframe.</p>
+<div class="livedemo top">
+	<div class="iframer fullwidth">
+		<div class="iframe-cover"></div>
+		<iframe class="iframe-big" src="https://www.zachleat.com/web/"></iframe>
+	</div>
+</div>
+
+<h2 id="other">Other components</h2>
+
+<h3>Printed Page</h3>
+
+<div class="livedemo top">
+<div class="printed-page">
+	<img src="/web/img/posts/whmeetup/seal.svg" onerror="this.src='/web/img/posts/whmeetup/seal.png'; this.onerror=null;" alt="The White House Official Seal">
+<pre>
+On April 17, we’re hosting community organizers, …
+
+Megan
+U.S. Chief Technology Officer and Assistant to the President
+</pre>
+	</div>
+</div>
+
+<h3>Retweet to Share</h3>
+<div class="livedemo top">
+	<div class="retweettoshare retweettoshare-m">
+		<h3 class="retweettoshare_title">Retweet to share this post</h3>
+		<div class="retweettoshare_widget">
+			<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ A Comprehensive Guide to Font Loading Strategies <a href="https://t.co/5LI0HZINku">https://t.co/5LI0HZINku</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/753220402134999042">July 13, 2016</a></blockquote>
+		</div>
+	</div>
+</div>
+
+<h3>Action Links</h3>
+<div class="livedemo top">
+	<div class="action">
+		<p>Say hello on <a href="//twitter.com/zachleat/" class="twitter"><i class="icon-twitter"></i> Twitter</a> and <a href="//github.com/zachleat/" class="github"><i class="icon-github"></i> GitHub</a>.</p>
+		<p>Let my <a href="/web/feed/" class="feed"><i class="icon-feed"></i> Feed</a>  sit idle in your RSS Reader.</p>
+	</div>
+</div>
+
+<h3>Deprecation Warning</h3>
+<div class="livedemo top">
+	<div class="deprecation-warning">
+		<h3>Warning</h3>
+		<p>This article is old and may contain information that is outdated, irrelevant, or—dare I say it—no longer accurate. Read with care!</p>
+	</div>
+</div>

@@ -40,7 +40,7 @@ Controlling anti-aliasing modes in CSS is easy. A little too easy <a href="https
 
 To get a closer look, I strapped a cheap 25x macro lens to my smartphone and took some pictures. They’re pretty distorted around the edges because of the lens, but they’re good enough to see what’s going on.
 
-<video class="slide-image" controls preload="metadata" loop src="/web/img/posts/font-smooth/antialiasing.mp4">
+<video controls preload="metadata" loop src="/web/img/posts/font-smooth/antialiasing.mp4">
   Sorry, your browser doesn't support embedded videos. Try <a href="/web/img/posts/font-smooth/antialiasing.mp4">downloading it</a> instead.
 </video>
 
