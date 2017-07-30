@@ -63,7 +63,12 @@ permalink: style-guide/
 <p>Use <code>text-decoration-skip</code>, fallback to <code>text-shadow</code>: <span class="livedemo top"><a href="#">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
 <p>Only use <code>text-decoration-skip</code>, no fallback: <span class="livedemo top"><a href="#" class="exempt">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
 
-<p><code>break</code> for super long links that you want to wrap nicely: <span class="livedemo top" style="display: inline-block; max-width: 15em"><a href="https://twitter.com/zachleat/status/890242957386944516" class="break">https://twitter.com/<strong>zachleat</strong>/status/<strong>890242957386944516</strong></a></span></p>
+<p>
+	<code>break</code> for super long links that you want to wrap nicely:
+	<span class="livedemo top">
+		<span style="display: inline-block; width: 15em; resize: horizontal; overflow: hidden;"><a href="https://twitter.com/zachleat/status/890242957386944516" class="break">https://twitter.com/<strong>zachleat</strong>/status/<strong>890242957386944516</strong></a></span>
+	</span>
+</p>
 
 <h2 id="lists">Lists</h2>
 <h3>Ordered List</h3>
