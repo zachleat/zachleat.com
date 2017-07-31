@@ -511,6 +511,14 @@ th {
 .links_cat {
 	display: block;
 }
+.link-sm {
+	line-height: 1.1;
+	text-transform: none;
+	letter-spacing: 0.3px;
+}
+.link-sm:before {
+	content: "★ ";
+}
 @media (min-width: 30em) {
 	.links_cat {
 		display: inline-block;
