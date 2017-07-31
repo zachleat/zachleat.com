@@ -16,11 +16,15 @@ permalink: style-guide/
 
 <h2 id="colors">Colors</h2>
 
-<div class="swatch" style="background-color: #3c603c; color: #fff;">Primary Green</div>
-<div class="swatch" style="background-color: #7f917f; color: #fff;">Background Green</div>
-<div class="swatch" style="background-color: #525252; color: #fff;">Text Gray</div>
-<div class="swatch" style="background-color: #888; color: #fff;">Blockquote Text Gray</div>
-<div class="swatch" style="background-color: #e9e9e9;">Border Gray</div>
+<div class="swatches">
+	<div class="swatch" style="background-color: #3c603c; color: #fff;">Primary Green</div>
+	<div class="swatch" style="background-color: #7f917f; color: #fff;">Background Green</div>
+	<div class="swatch" style="background-color: #525252; color: #fff;">Text Gray</div>
+	<div class="swatch" style="background-color: #888; color: #fff;">Blockquote Text Gray</div>
+	<div class="swatch" style="background-color: #e9e9e9;">Border Gray</div>
+	<div class="swatch" style="background-color: #add8e6;">Demo Text Blue</div>
+	<div class="swatch" style="background-color: #8ac7db;">Demo Border Blue</div>
+</div>
 
 <h2 id="demos">Demos</h2>
 <p class="livedemo top">This is a live demo example with the demonstration label on the top.</p>
@@ -29,20 +33,22 @@ permalink: style-guide/
 <h2 id="typography">Typography</h2>
 
 <h3>Web Fonts (using Lato)</h3>
-<div class="livedemo top"><p>Normal roman text. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
+<div class="livedemo"><p>Normal roman text. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
 
 <h3>OpenType Features</h3>
 <p class="caption">The Lato webfont supports only the <code>liga</code> feature.</p>
 <h4>Ligatures</h4>
-<div class="livedemo top">
+<div class="livedemo">
 	<p style="font-size: 1.5em;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
-	<h5>Ligatures disabled (for comparison)</h5>
+</div>
+<h4>Ligatures disabled (for comparison)</h4>
+<div class="livedemo">
 	<p style="font-size: 1.5em; font-variant-ligatures: no-common-ligatures; font-feature-settings: 'liga' 0, 'clig' 0;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
 </div>
 
 <h3>Headers</h3>
 
-<div class="livedemo top">
+<div class="livedemo">
 	<h1>Top Level Header</h1>
 	<p>If you’re looking for a better web font loading solution, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
 
@@ -62,11 +68,11 @@ permalink: style-guide/
 
 
 <h3>Code</h3>
-<div class="livedemo top">
+<div class="livedemo">
 	<p>This is a simple <code>code element.</code> It’s usually alongside some other text.</p>
 </div>
 
-<div class="livedemo top">
+<div class="livedemo">
 	<pre>This is a simple pre element.</pre>
 
 	<pre><code>This is pre > code.</code></pre>
@@ -75,25 +81,25 @@ permalink: style-guide/
 </div>
 
 <h3>Blockquotes</h3>
-<div class="livedemo top">
+<div class="livedemo">
 	<p>Normal paragraph text.</p>
 	<blockquote>Progressive enhancement is a touchy subject. It can be hard to discuss dispassionately because, like accessibility, it’s often framed as an issue of empathy and compassion.</blockquote>
 	<p>Normal paragraph text.</p>
 </div>
 
 <h3>Links</h3>
-<p>Use <code>text-decoration-skip</code>, fallback to <code>text-shadow</code>: <span class="livedemo top"><a href="#">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
-<p>Only use <code>text-decoration-skip</code>, no fallback: <span class="livedemo top"><a href="#" class="exempt">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
+<p>Use <code>text-decoration-skip</code>, fallback to <code>text-shadow</code>: <span class="livedemo"><a href="#">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
+<p>Only use <code>text-decoration-skip</code>, no fallback: <span class="livedemo"><a href="#" class="exempt">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
 
 <p>
 	<code>break</code> for super long links that you want to wrap nicely:
-	<span class="livedemo top">
+	<span class="livedemo">
 		<span style="display: inline-block; width: 15em; resize: horizontal; overflow: hidden;"><a href="https://twitter.com/zachleat/status/890242957386944516" class="break">https://twitter.com/<strong>zachleat</strong>/status/<strong>890242957386944516</strong></a></span>
 	</span>
 </p>
 
 <h4>Action Links</h4>
-<div class="livedemo top">
+<div class="livedemo">
 	<div class="action">
 		<p>Say hello on <a href="//twitter.com/zachleat/" class="twitter"><i class="icon-twitter"></i> Twitter</a> and <a href="//github.com/zachleat/" class="github"><i class="icon-github"></i> GitHub</a>.</p>
 		<p>Let my <a href="/web/feed/" class="feed"><i class="icon-feed"></i> Feed</a>  sit idle in your RSS Reader.</p>
@@ -102,7 +108,7 @@ permalink: style-guide/
 
 <h2 id="lists">Lists</h2>
 <h3>Ordered List</h3>
-<div class="livedemo top">
+<div class="livedemo">
 <ol>
 	<li>Ordered list item.</li>
 	<li>Ordered list item.</li>
@@ -112,7 +118,7 @@ permalink: style-guide/
 </div>
 
 <h3>Posts Ordered List</h3>
-<div class="livedemo top">
+<div class="livedemo">
 <ol class="posts posts-count" style="counter-reset: start-from 5">
 	<li class="subhed">Year</li>
 	<li><a href="#">Blog post entry.</a></li>
@@ -124,7 +130,7 @@ permalink: style-guide/
 </div>
 
 <h3>Unordered List</h3>
-<div class="livedemo top">
+<div class="livedemo">
 <ul>
 	<li>Unordered list item.</li>
 	<li>Unordered list item.</li>
@@ -134,7 +140,7 @@ permalink: style-guide/
 </div>
 
 <!-- <h3>Definition List</h3>
-<div class="livedemo top">
+<div class="livedemo">
 <dl>
 	<dt>Definition term list item.</dt>
 	<dd>Definition description list item.</dd>
@@ -147,7 +153,7 @@ permalink: style-guide/
 <p class="caption">Not yet in use.</p>
  -->
 <h3>Addendum Notes</h3>
-<div class="livedemo top">
+<div class="livedemo">
 	<p>This is paragraph text with an addendum note attached<a href="#note-1" class="notes_link" id="link-note-1">1</a>.</p>
 
 	<h4>Appendix</h4>
@@ -158,7 +164,7 @@ permalink: style-guide/
 
 <h2 id="tables">Tables</h2>
 
-<div class="livedemo top">
+<div class="livedemo">
 	<table>
 		<caption>NebraskaJS Membership</caption>
 		<thead>
@@ -205,7 +211,7 @@ permalink: style-guide/
 
 <h3>Compatibility Tables</h3>
 
-<div class="livedemo top">
+<div class="livedemo">
 <table class="compatibility">
 <thead>
 <tr>
@@ -234,7 +240,7 @@ permalink: style-guide/
 
 <h2 id="media">Fluid Media</h2>
 <h3>Image</h3>
-<div class="livedemo top">
+<div class="livedemo">
 	<picture>
 		<source type="image/webp" srcset="/web/img/posts/webp/0-original.webp">
 		<img src="/web/img/posts/webp/0-original.png" alt="Devtools Screenshot showing 18MB download">
@@ -242,7 +248,7 @@ permalink: style-guide/
 </div>
 
 <h4>Full Width Image</h4>
-<div class="livedemo top">
+<div class="livedemo">
 	<picture>
 		<source type="image/webp" srcset="/web/img/posts/webp/0-original.webp">
 		<img src="/web/img/posts/webp/0-original.png" alt="Devtools Screenshot showing 18MB download" class="primary">
@@ -250,21 +256,21 @@ permalink: style-guide/
 </div>
 
 <h3>Video</h3>
-<div class="livedemo top">
+<div class="livedemo">
 	<video controls preload="metadata" loop src="/web/img/posts/font-smooth/antialiasing.mp4">
 		Sorry, your browser doesn't support embedded videos. Try <a href="/web/img/posts/font-smooth/antialiasing.mp4">downloading it</a> instead.
 	</video>
 </div>
 
 <h3>Third Party Video</h3>
-<div class="livedemo top">
+<div class="livedemo">
 	<div class="fluid-width-video-wrapper">
 		<iframe width="420" height="315" src="https://www.youtube.com/embed/NkVmhe-vvAo" frameborder="0" allowfullscreen></iframe>
 	</div>
 </div>
 
 <h3>Figures with Captions</h3>
-<div class="livedemo top">
+<div class="livedemo">
 	<figure>
 		<img src="/web/img/posts/whmeetup/room.jpg" alt="">
 		<figcaption>Holy shit—I’m in the room.</figcaption>
@@ -272,7 +278,7 @@ permalink: style-guide/
 </div>
 
 <h4>Standalone Caption</h4>
-<div class="livedemo top">
+<div class="livedemo">
 	<span class="caption"><strong>Supported</strong> in Safari (Mobile and Desktop) and <strong>Not Supported</strong> in Chrome, Firefox (as of 54)</span>
 </div>
 
@@ -280,7 +286,7 @@ permalink: style-guide/
 
 <h3>Printed Page</h3>
 
-<div class="livedemo top">
+<div class="livedemo">
 <div class="printed-page">
 	<img src="/web/img/posts/whmeetup/seal.svg" onerror="this.src='/web/img/posts/whmeetup/seal.png'; this.onerror=null;" alt="The White House Official Seal">
 <pre>
@@ -293,7 +299,7 @@ U.S. Chief Technology Officer and Assistant to the President
 </div>
 
 <h3>Retweet to Share</h3>
-<div class="livedemo top">
+<div class="livedemo">
 	<div class="retweettoshare retweettoshare-m">
 		<h3 class="retweettoshare_title">Retweet to share this post</h3>
 		<div class="retweettoshare_widget">
@@ -303,7 +309,7 @@ U.S. Chief Technology Officer and Assistant to the President
 </div>
 
 <h3>Deprecation Warning</h3>
-<div class="livedemo top">
+<div class="livedemo">
 	<div class="deprecation-warning">
 		<h3>Warning</h3>
 		<p>This article is old and may contain information that is outdated, irrelevant, or—dare I say it—no longer accurate. Read with care!</p>
@@ -312,7 +318,7 @@ U.S. Chief Technology Officer and Assistant to the President
 
 <!-- <h3>Full width Iframe</h3>
 <p>Includes an <code>iframe-cover</code> element to prevent interactivity with the iframe.</p>
-<div class="livedemo top">
+<div class="livedemo">
 	<div class="iframer fullwidth">
 		<div class="iframe-cover"></div>
 		<iframe class="iframe-big" src="https://www.zachleat.com/web/" scrolling="no"></iframe>
