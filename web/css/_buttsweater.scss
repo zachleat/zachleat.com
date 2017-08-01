@@ -231,6 +231,10 @@ body {
 	font-variant-ligatures: common-ligatures;
 	font-feature-settings: "liga", "clig";
 }
+.font-fallback,
+.font-fallback * {
+	font-family: $fallbackSystemFont !important;
+}
 .webfont-stage-1 body {
 	font-size-adjust: none;
 }
