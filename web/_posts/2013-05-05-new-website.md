@@ -26,7 +26,7 @@ That being said, if anyone knows of a really good Node.js site generator, please
 
 ## Theme
 
-It’s a simple minimalistic mobile-first responsive web design (that’s a mouthful, eh?) theme that I’ve built from scratch. I’m calling it **Butt Sweater**, for obvious reasons. Okay, not really. Well actually I mean to say, the reasons are not obvious—it’s really called [Butt Sweater](https://github.com/zachleat/zachleat.com/blob/master/web/css/buttsweater.scss).
+It’s a simple minimalistic mobile-first responsive web design (that’s a mouthful, eh?) theme that I’ve built from scratch. I’m calling it **Butt Sweater**, for obvious reasons. Okay, not really. Well actually I mean to say, the reasons are not obvious—it’s really called [Butt Sweater](https://github.com/zachleat/zachleat.com/blob/093aaa88642a5ba7b4d410828d1f53a3a047f8bd/web/css/_buttsweater.scss).
 
 ## Removals
 
