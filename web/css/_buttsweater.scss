@@ -235,6 +235,10 @@ body {
 .font-fallback * {
 	font-family: $fallbackSystemFont !important;
 }
+.font-latosubset,
+.font-latosubset * {
+	font-family: LatoSubset, $fallbackSystemFont !important;
+}
 .webfont-stage-1 body {
 	font-size-adjust: none;
 }
