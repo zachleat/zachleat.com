@@ -29,7 +29,6 @@ permalink: style-guide/
 <h2 id="demos">Demos</h2>
 <p class="livedemo top">This is a live demo example with the demonstration label on the top.</p>
 <p class="livedemo">This is a live demo example with the demonstration label on the bottom.</p>
-<p class="livedemo livedemo-resizable top">This is a resizable live demo example with the demonstration label on the top.</p>
 <p class="livedemo livedemo-resizable">This is a resizable live demo example with the demonstration label on the bottom.</p>
 
 
@@ -39,9 +38,12 @@ permalink: style-guide/
 <div class="livedemo"><p class="font-fallback">Normal roman text. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
 
 <h3>Web Fonts (Stage 1, Lato: Roman Subset Embedded)</h3>
+<p>Using the <a href="/web/comprehensive-webfonts/#critical-foft-data-uri">Critical FOFT with Data URI approach</a>, all bold and italic text below are faux rendered using <code>font-synthesis</code>.</p>
 <div class="livedemo"><p class="font-latosubset">Normal roman text. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
+<p class="caption">Hard to tell? You can highlight faux rendered text using the <a href="https://github.com/filamentgroup/faux-pas">Faux-Pas bookmarklet</a>.</p>
 
 <h3>Web Fonts (Stage 2, Lato: Roman, Bold, Italic, Bold-Italic)</h3>
+<p>At stage 2, all Lato weights and styles have finished loading and are no longer faux rendered.</p>
 <div class="livedemo"><p>Normal roman text. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
 
 <h3>OpenType Features</h3>
@@ -132,7 +134,17 @@ permalink: style-guide/
 </ol>
 </div>
 
-<h3>Posts Ordered List</h3>
+<h3>Unordered List</h3>
+<div class="livedemo">
+<ul>
+	<li>Unordered list item.</li>
+	<li>Unordered list item.</li>
+	<li>Unordered list item.</li>
+	<li>Unordered list item.</li>
+</ul>
+</div>
+
+<h3>Posts List</h3>
 <div class="livedemo">
 <ol class="posts posts-count" style="counter-reset: start-from 5">
 	<li class="subhed">Year</li>
@@ -142,16 +154,6 @@ permalink: style-guide/
 	<li><a href="#">Blog post entry.</a></li>
 	<li><a href="#">Blog post entry.</a></li>
 </ol>
-</div>
-
-<h3>Unordered List</h3>
-<div class="livedemo">
-<ul>
-	<li>Unordered list item.</li>
-	<li>Unordered list item.</li>
-	<li>Unordered list item.</li>
-	<li>Unordered list item.</li>
-</ul>
 </div>
 
 <!-- <h3>Definition List</h3>

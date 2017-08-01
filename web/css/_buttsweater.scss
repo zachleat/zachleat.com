@@ -393,6 +393,10 @@ pre {
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
 	tab-size: 2;
+
+	/* Disable ligatures */
+	font-variant-ligatures: no-common-ligatures;
+	font-feature-settings: 'liga' 0, 'clig' 0;
 }
 
 /* Quotes */
@@ -881,7 +885,7 @@ th {
 	border-radius: 5px;
 	box-shadow: 0 0 0 2px #add8e6;
 	position: relative;
-	margin: .5rem -.75rem;
+	margin: .5rem -.75rem 1.5rem;
 }
 .livedemo:after {
 	content: "Demonstration";
@@ -908,25 +912,27 @@ th {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.livedemo-resizable {
-	display: inline-block;
-	resize: horizontal;
-	overflow: hidden;
-	padding-bottom: 1.625rem; /* 26px /16 */
+@supports (resize: horizontal) {
+	.livedemo-resizable {
+		resize: horizontal;
+		overflow: hidden;
+		padding-bottom: 1.625rem; /* 26px /16 */
 
-	&.top {
-		padding-top: 1.625rem; /* 26px /16 */
-		padding-bottom: .75rem;
+		&.top {
+			padding-top: 1.625rem; /* 26px /16 */
+			padding-bottom: .75rem;
+		}
+		&:after,
+		&.top:after {
+			content: "Demonstration: Resize Me!";
+			padding: 0;
+			bottom: .2rem;
+			right: 1rem;
+		}
 	}
-	&:after {
-		content: "Demonstration (Resizable)";
-		padding: 0;
-		bottom: .5rem;
-	}
-	&.top:after {
-		bottom: auto;
-		top: .5rem;
-	}
+}
+.livedemo + .caption {
+	margin-top: -1rem;
 }
 
 /* Retweet to share widget on posts */
