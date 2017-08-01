@@ -23,6 +23,9 @@ video {
 	-ms-word-break: break-all;
 	word-break: break-all;
 	word-break: break-word;
+	-webkit-hyphens: manual;
+	-ms-hyphens: manual;
+	hyphens: manual;
 }
 
 /* Border */
@@ -118,6 +121,9 @@ figcaption strong,
 	color: $textColor;
 	font-size: 1.1875em;
 	line-height: 165%;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.rail {
@@ -893,6 +899,26 @@ th {
 .livedemo p:first-child:last-child {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+.livedemo-resizable {
+	display: inline-block;
+	resize: horizontal;
+	overflow: hidden;
+	padding-bottom: 1.625rem; /* 26px /16 */
+
+	&.top {
+		padding-top: 1.625rem; /* 26px /16 */
+		padding-bottom: .75rem;
+	}
+	&:after {
+		content: "Demonstration (Resizable)";
+		padding: 0;
+		bottom: .5rem;
+	}
+	&.top:after {
+		bottom: auto;
+		top: .5rem;
+	}
 }
 
 /* Retweet to share widget on posts */
