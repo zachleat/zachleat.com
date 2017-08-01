@@ -34,19 +34,19 @@ layout: default
 			<a href="https://twitter.com/zachleat" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large" data-dnt="true">Follow @zachleat</a>
 		</div>
 		<div class="action">
-			<p>Say hello on <a href="//twitter.com/zachleat/" class="twitter"><i class="icon-twitter"></i> Twitter</a> and <a href="//github.com/zachleat/" class="github"><i class="icon-github"></i> GitHub</a>.</p>
-			<p>Let my <a href="/web/feed/" class="feed"><i class="icon-feed"></i> Feed</a>  sit idle in your RSS Reader.</p>
+			<p>Say hello on <a href="//twitter.com/zachleat/" class="twitter link-u-exempt"><i class="icon-twitter"></i> Twitter</a> and <a href="//github.com/zachleat/" class="github link-u-exempt"><i class="icon-github"></i> GitHub</a>.</p>
+			<p>Let my <a href="/web/feed/" class="feed link-u-exempt"><i class="icon-feed"></i> Feed</a>  sit idle in your RSS Reader.</p>
 		</div>
 		{% include about.html %}
 	</article>
 	<article>
 		<div class="pagination">
 			{% if page.previous.url %} 
-				<a href="{{site.baseurl}}{{page.previous.url}}" class="previous-post">{{page.previous.title}}</a>
+				<a href="{{site.baseurl}}{{page.previous.url}}" class="previous-post link-u-exempt">{{page.previous.title}}</a>
 			{% endif %}
 
 			{% if page.next.url %} 
-				<a href="{{site.baseurl}}{{page.next.url}}" class="next-post">{{page.next.title}}</a>
+				<a href="{{site.baseurl}}{{page.next.url}}" class="next-post link-u-exempt">{{page.next.title}}</a>
 			{% endif %}
 		</div>
 	</article>
