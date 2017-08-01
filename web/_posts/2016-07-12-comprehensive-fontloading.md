@@ -101,7 +101,7 @@ Add a new `font-display: swap` descriptor to your `@font-face` block to opt-in t
 * Very Simple: Only a single CSS descriptor added to your `@font-face` block.
 * Good rendering performance: if this approach had ubiquitous browser support, this would give us FOUT without any JavaScript. A CSS-only approach would be ideal.
 * Super future friendly: is orthogonal to web font formats. No other changes are required if you add new formats to your stack.
-* Very robust: a FOUT approach will show your fallback text in supported browsers even if the web font request hangs. Even better—you’re web fonts are not dependent on a JavaScript polyfill—which means if the JavaScript fails, users are still eligible for the web fonts.
+* Very robust: a FOUT approach will show your fallback text in supported browsers even if the web font request hangs. Even better—your web fonts are not dependent on a JavaScript polyfill—which means if the JavaScript fails, users are still eligible for the web fonts.
 * Does not require modification of the fonts (through subsetting or otherwise). Very license friendly.
 
 #### Cons
