@@ -1,16 +1,17 @@
 /* Next and Previous Links */
 .pagination {
+	display: flex;
+	align-items: stretch;
 	margin: 2em 0;
 	overflow: hidden;
+	width: 100%;
 }
 .previous-post,
 .next-post {
-	display: block;
 	position: relative;
 	line-height: 130%;
 	padding: 1em .4em;
 	font-size: .842105263em; /* 16px */
-	border: 1px solid transparent;
 	text-decoration: none;
 }
 @media (min-width: 31.25em) {
@@ -24,7 +25,6 @@
 .next-post:hover,
 .next-post:focus {
 	background-color: #f6f6f6;
-	border-color: #ccc;
 }
 .previous-post {
 	text-align: left;
@@ -43,6 +43,12 @@
 	top: 1.5em; /* 18px /12 */
 	text-transform: uppercase;
 	font-size: .75em;
+}
+.previous-post:hover:before,
+.previous-post:active:before,
+.next-post:hover:after,
+.next-post:active:after {
+	text-decoration: underline;
 }
 .previous-post:before {
 	content: "« Previous";

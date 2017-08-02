@@ -17,6 +17,9 @@ video {
 	max-width: 100%;
 	border: none;
 }
+hr {
+	border: 1px solid #e9e9e9;
+}
 
 /* Word Break */
 .break {
@@ -402,7 +405,7 @@ pre {
 /* Quotes */
 blockquote {
 	font-style: italic;
-	color: $blockquoteColor;
+	color: #777;
 	margin: 1.2em 5%;
 }
 
@@ -521,6 +524,8 @@ th {
 	display: block;
 }
 .link-sm {
+	padding-top: .5em;
+	padding-bottom: .5em;
 	line-height: 1.1;
 	text-transform: none;
 	letter-spacing: 0.3px;
@@ -645,6 +650,11 @@ th {
 .posts .deprecated :visited {
 	opacity: .6;
 }
+
+.sub {
+	margin-top: 2rem;
+	font-size: 0.8421052631579em; /* 16px /19 */
+}
 .sub em {
 	margin-right: 1em;
 	color: #888;
@@ -729,6 +739,9 @@ th {
 	margin-top: 1em;
 	font-size: .875em;
 	line-height: 160%;
+	-webkit-hyphens: manual;
+	-ms-hyphens: manual;
+	hyphens: manual;
 }
 .about > a {
 	display: block;
@@ -987,4 +1000,28 @@ th {
 	margin-right: .25em;
 	margin-bottom: .25em;
 	border-radius: 5px;
+}
+
+/* Demo Link */
+.primarylink,
+.demolink {
+	@include webfontBold;
+	font-size: 1.157894736842em; /* 22px /19 */
+}
+.primarylink:before,
+.demolink:before {
+	content: "➡ ";
+}
+.demolink:after {
+	content: " (Demo)";
+}
+
+/* Background inline */
+@supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
+	.text-highlight.text-highlight {
+		display: inline;
+		padding: 0 .2em;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+	}
 }

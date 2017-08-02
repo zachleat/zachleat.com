@@ -12,10 +12,9 @@
 	padding-left: .1em;
 }
 @media (min-width: $twoColLayoutMinWidth) {
-	.social {
-		text-align: right;
-		position: static;
+	.rail .social {
 		margin-top: 2em;
+		text-align: right;
 	}
 	.social > div {
 		padding-top: 1em;

@@ -1,0 +1,26 @@
+blockquote:before,
+blockquote:after {
+	font-size: 2.5em;
+	vertical-align: bottom;
+	position: relative;
+	bottom: -0.2em;
+}
+blockquote:after {
+	content: "”";
+	padding-left: .1em;
+}
+blockquote:before {
+	content: "“";
+	padding-right: .2em;
+}
+
+@supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
+	blockquote {
+		display: inline;
+		padding: .2em .4em;
+		margin: 0 0 0 -.4em;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		background-color: #eee;
+	}
+}
