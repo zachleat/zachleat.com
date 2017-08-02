@@ -836,6 +836,9 @@ th {
 	font-family: sans-serif;
 	border: none;
 }
+.tag.font-loading {
+	background-color: #f1f1f1;
+}
 .tag + .tag {
 	margin-left: -6px;
 }
