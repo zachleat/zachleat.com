@@ -386,7 +386,7 @@ layout: page
 permalink: best-of/
 ---
 
-<p>Top fifty blog posts and pages on <code>/web/</code>, ordered by Average Pageviews per Day. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically from the Google Analytics API</a>. <em>Last updated ${(new Date()).toDateString()}</em></p>
+<p>Top fifty blog posts and pages on <code>/web/</code> ordered by Average Pageviews per Day. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically from the Google Analytics API</a>. <em>Last updated ${(new Date()).toDateString()}</em></p>
 
 <table>
 	<thead>
