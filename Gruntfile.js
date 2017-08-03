@@ -386,7 +386,7 @@ layout: page
 permalink: best-of/
 ---
 
-<p>Top fifty blog posts and pages on <code>/web/</code> ordered by Average Generic Units Per Day (normalized pageviews to a 1–100 scale). Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically from the Google Analytics API</a>. <em>Last updated ${(new Date()).toDateString()}</em></p>
+<p><em>Last updated ${(new Date()).toDateString()}</em></p>
 
 <table>
 	<thead>
@@ -400,7 +400,7 @@ permalink: best-of/
 `;
 
 		var unitNormalizer = pageviewsArr[ 0 ].averageViews;
-		pageviewsArr.slice(0, 50).forEach(function(entry, j) {
+		pageviewsArr.slice(0, 20).forEach(function(entry, j) {
 			html += `
 		<tr>
 			<td>${j+1}</td>
@@ -411,7 +411,14 @@ permalink: best-of/
 
 		html += `
 	</tbody>
-</table>`;
+</table>
+
+<h2>How does it work?</h2>
+<p>Top twenty blog posts and pages on <code>/web/</code> ordered by Average Generic Units
+Per Day, a metric that normalizes pageviews to a 1–100 scale. Units per day are calculated
+from the day the post was published. Data
+<a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically from
+the Google Analytics API</a>.</p>`;
 
 		fs.writeFileSync( "web/best-of/index.html", html );
 	});
