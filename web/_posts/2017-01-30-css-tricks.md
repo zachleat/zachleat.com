@@ -5,6 +5,7 @@ layout: post
 permalink: /css-tricks-screencast/
 categories:
   - presentations
+  - font-loading
 tags:
   - video
   - external

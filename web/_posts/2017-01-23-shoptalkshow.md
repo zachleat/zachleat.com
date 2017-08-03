@@ -5,6 +5,7 @@ layout: post
 permalink: /show-talk-show/
 categories:
   - presentations
+  - font-loading
 tags:
   - audio
   - external

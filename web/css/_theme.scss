@@ -427,6 +427,10 @@ th {
 	padding: .4em;
 	vertical-align: top;
 }
+td.numeric,
+th.numeric {
+	text-align: right;
+}
 @media ( max-width: 24.9375em ) {
 	td, th {
 		font-size: .625em;
@@ -949,7 +953,7 @@ th {
 }
 .livedemo + .caption {
 	margin-top: -1rem;
-	margin-bottom: 3em;
+	margin-bottom: 1rem;
 }
 
 /* Retweet to share widget on posts */

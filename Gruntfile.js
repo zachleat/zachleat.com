@@ -111,6 +111,8 @@ module.exports = function(grunt) {
 				boss: true,
 				eqnull: true,
 				browser: true,
+				// TODO make this only for Gruntfile.js
+				esversion: 6,
 				globals: {}
 			},
 			gruntfile: {
@@ -327,6 +329,91 @@ module.exports = function(grunt) {
 		}
 	});
 
+	grunt.registerTask( 'bestof', function() {
+		var fs = require('fs');
+		var cheerio = require('cheerio');
+		var bestof = grunt.file.readJSON('zachleat-bestof.json').rows;
+		var pageviews = {};
+
+		bestof.forEach(function(entry) {
+			var path = entry[ 0 ];
+			if( path.indexOf( "?" ) > -1 ) {
+				path = path.substr( 0, entry[ 0 ].indexOf( "?" ) );
+			}
+			var slug = path.match(/^\/web\/(?:\d{4}\/\d{2}\/\d{2}\/)?([A-Za-z0-9-\/]+)/);
+			if( slug && slug.length > 1 ) {
+				var newslug = slug[1] + ( slug[1].substr(-1) !== "/" ? "/" : "" );
+				var filename = "web/_site/" + newslug + "index.html";
+				if( fs.existsSync( filename ) ) {
+					console.log( "POST EXISTS!", newslug, entry[1] );
+					if( !pageviews[ newslug ] ) {
+						var postTemplate = cheerio.load( fs.readFileSync( filename, 'utf8' ) );
+						pageviews[ newslug ] = {
+							slug: newslug,
+							views: 0,
+							title: postTemplate( "title" ).html().replace(/&#x2014;zachleat.com/, ""),
+							postedDate: Date.parse( postTemplate( ".sub .date" ).html() )
+						};
+					}
+					pageviews[ newslug ].views += parseInt( entry[1], 10 );
+
+					if( pageviews[ newslug ].postedDate ) {
+						pageviews[ newslug ].postedYear = "(" + (new Date(pageviews[ newslug ].postedDate)).getFullYear() + ")";
+						pageviews[ newslug ].averageViews = (pageviews[ newslug ].views / ((Date.now() - pageviews[ newslug ].postedDate)/(1000*60*60*24))).toFixed(1);
+					} else {
+						pageviews[ newslug ].postedYear = "";
+						pageviews[ newslug ].averageViews = "";
+					}
+				}/* else {
+					console.log( "POST NOT FOUND!", slug[1] );
+				}*/
+			} else {
+				// console.log( "bad match:", entry[ 0 ], " to ", path );
+			}
+		});
+
+		var pageviewsArr = [];
+		for( var j in pageviews ) {
+			pageviewsArr.push( pageviews[j] );
+		}
+		pageviewsArr = pageviewsArr.sort(function(a, b) {
+			return b.averageViews - a.averageViews;
+		});
+
+		var html = `---
+title: Most Popular
+layout: page
+permalink: best-of/
+---
+
+<p>Top fifty blog posts and pages on <code>/web/</code>, ordered by Average Pageviews per Day. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically from the Google Analytics API</a>. <em>Last updated ${(new Date()).toDateString()}</em></p>
+
+<table>
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Title</th>
+			<th class="numeric">Pageviews Per Day</th>
+		</tr>
+	</thead>
+	<tbody>
+`;
+		pageviewsArr.slice(0, 50).forEach(function(entry, j) {
+			html += `
+		<tr>
+			<td>${j+1}</td>
+			<td><a href="/web/${entry.slug}">${entry.title}</a> ${entry.postedYear}</td>
+			<td class="numeric">${entry.averageViews}</td>
+		</tr>`;
+		});
+
+		html += `
+	</tbody>
+</table>`;
+
+		fs.writeFileSync( "web/best-of/index.html", html );
+	});
+
 	// Default task.
 	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'jshint', 'concat', 'uglify', 'cssmin']);
 	grunt.registerTask('images', ['grunticon']);
@@ -335,6 +422,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['clean', 'config', 'assets', 'images', 'content', 'feedburner-size']);
 
 	// Upload to Production
-	grunt.registerTask('stage', ['clean', 'config', 'assets', 'images', 'content', 'feedburner-size', 'htmlmin', 'zopfli']);
+	grunt.registerTask('stage', ['bestof', 'clean', 'config', 'assets', 'images', 'content', 'feedburner-size', 'htmlmin', 'zopfli']);
 	grunt.registerTask('deploy', ['stage', 'shell:upload']);
 };
