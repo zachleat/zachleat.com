@@ -427,6 +427,10 @@ th {
 	padding: .4em;
 	vertical-align: top;
 }
+th.nowrap,
+td.nowrap {
+	white-space: nowrap;
+}
 td.numeric,
 th.numeric {
 	text-align: right;

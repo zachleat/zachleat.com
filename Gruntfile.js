@@ -386,24 +386,26 @@ layout: page
 permalink: best-of/
 ---
 
-<p>Top fifty blog posts and pages on <code>/web/</code> ordered by Average Pageviews per Day. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically from the Google Analytics API</a>. <em>Last updated ${(new Date()).toDateString()}</em></p>
+<p>Top fifty blog posts and pages on <code>/web/</code> ordered by Average Generic Units Per Day (normalized pageviews to a 1–100 scale). Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically from the Google Analytics API</a>. <em>Last updated ${(new Date()).toDateString()}</em></p>
 
 <table>
 	<thead>
 		<tr>
 			<th>#</th>
 			<th>Title</th>
-			<th class="numeric">Pageviews Per Day</th>
+			<th class="numeric nowrap">Units Per Day</th>
 		</tr>
 	</thead>
 	<tbody>
 `;
+
+		var unitNormalizer = pageviewsArr[ 0 ].averageViews;
 		pageviewsArr.slice(0, 50).forEach(function(entry, j) {
 			html += `
 		<tr>
 			<td>${j+1}</td>
 			<td><a href="/web/${entry.slug}">${entry.title}</a> ${entry.postedYear}</td>
-			<td class="numeric">${entry.averageViews}</td>
+			<td class="numeric">${( entry.averageViews * 100 / unitNormalizer).toFixed(1)}</td>
 		</tr>`;
 		});
 
