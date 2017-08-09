@@ -55,6 +55,8 @@ module.exports = function( grunt ) {
 			return b.averageViews - a.averageViews;
 		});
 
+		/* Warning this date won’t match the analytics data fetch date. */
+		/* TODO: use the file modified date on the zachleat-bestof.json include above. */
 		var updatedDate = new Date().toLocaleString("en-US", {
 			year: 'numeric',
 			month: 'long',
@@ -101,7 +103,7 @@ permalink: best-of/
 <p>Top twenty blog posts on <code>/web/</code> ordered by Average Generic Units Per Day, a metric that normalizes pageviews on a 0–100 scale. Units per day are calculated from the day the post was published. I used generic units instead of raw Pageviews to avoid feeling like I was either bragging about or disappointed in any of my posts. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically from the Google Analytics API</a>.</p>
 
 <h2>Tweets</h2>
-<p>I also keep a <a href="https://twitter.com/i/moments/816767407326949377">highlight reel of my best tweets</a> too.</p>
+<p>I also keep a <a href="https://twitter.com/i/moments/816767407326949377">Twitter moment highlight reel of the most popular tweets</a> too.</p>
 `;
 
 		fs.writeFileSync("web/best-of/index.html", html);
