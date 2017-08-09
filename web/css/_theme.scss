@@ -544,7 +544,6 @@ th.numeric {
 .links a {
 	display: inline-block;
 	padding: .2em .5em;
-	line-height: 1.4;
 }
 .links-standalone,
 .links a,
@@ -590,7 +589,7 @@ th.numeric {
 	.links-standalone {
 		display: block;
 		text-align: right;
-		padding: 0;
+		padding: .4em 0;
 	}
 	.links a {
 		display: block;
