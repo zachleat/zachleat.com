@@ -138,6 +138,15 @@ figcaption strong,
 	-ms-hyphens: auto;
 	hyphens: auto;
 }
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+	-webkit-hyphens: manual;
+	-moz-hyphens: manual;
+	hyphens: manual;
+}
 @media (min-width: $twoColLayoutMinWidth) {
 	.rail {
 		text-align: left;
