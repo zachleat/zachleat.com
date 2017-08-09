@@ -280,7 +280,7 @@ body {
 }
 
 .about-description a,
-.tmpl-page .content a {
+html:not(.tmpl-list) .content a {
 	@include textDecorationSkipInkFallback;
 }
 
