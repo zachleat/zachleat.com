@@ -934,12 +934,18 @@ th.numeric {
 /* Live test cases */
 .livedemo {
 	display: block;
-	padding: .75rem .75rem 1rem .75rem;
+	padding: .5rem .5rem 1rem .5rem;
 	border: none;
 	border-radius: 5px;
 	box-shadow: 0 0 0 2px #add8e6;
 	position: relative;
-	margin: .5rem -.75rem 1.5rem;
+	margin: .5rem -.5rem 1.5rem;
+
+	@media (min-width: $twoColLayoutMinWidth) {
+		padding: .875rem .875rem 1rem .875rem;
+		margin-left: -.875rem;
+		margin-right: -.875rem;
+	}
 }
 .livedemo:after {
 	content: "Demonstration";
