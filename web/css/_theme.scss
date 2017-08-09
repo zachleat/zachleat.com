@@ -280,8 +280,11 @@ body {
 }
 
 .about-description a,
-html:not(.tmpl-list) .content a {
+html:not(.tmpl-list):not(.tmpl-home) .content a:not(.social_icon) {
 	@include textDecorationSkipInkFallback;
+}
+html:not(.tmpl-list):not(.tmpl-home) .content .posts a:not(.social_icon) {
+	@include undoTextDecorationSkipInkFallback;
 }
 
 /* Emphasis */
