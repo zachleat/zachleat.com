@@ -5,7 +5,6 @@
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: .75em;
-	margin-top: 1em;
 }
 .social > div {
 	display: inline-block;
@@ -42,14 +41,15 @@
 	font-size: 1.6em;
 	text-decoration: none;
 	overflow: hidden;
-	width: 32px;
-	height: 32px;
+	width: 24px;
+	height: 24px;
+	background-size: auto 100%;
 	vertical-align: top;
 	text-indent: 9999px;
 	white-space: nowrap;
 }
 .grunticon .social .icon-nebraskajs {
-	width: 69px;
+	width: 53px;
 }
 .social a.icon-filamentgroup {
 	white-space: nowrap;
@@ -57,4 +57,13 @@
 .social a:link,
 .social a:visited {
 	color: #444;
+}
+@media (min-width: $twoColLayoutMinWidth) {
+	.grunticon .social a {
+		width: 32px;
+		height: 32px;
+	}
+	.grunticon .social .icon-nebraskajs {
+		width: 69px;
+	}
 }

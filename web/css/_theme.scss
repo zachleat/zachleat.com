@@ -110,6 +110,16 @@ figcaption strong,
 	@include webfontBoldItalic;
 }
 
+/* Layout Helpers */
+.layout-show-2col {
+	display: none;
+}
+@media (min-width: $twoColLayoutMinWidth) {
+	.layout-show-2col {
+		display: block;
+	}
+}
+
 /* Layout */
 .rail {
 	text-align: center;
@@ -234,6 +244,8 @@ body {
 	font-variant-ligatures: common-ligatures;
 	font-feature-settings: "liga", "clig";
 }
+
+/* Style guide classes */
 .font-fallback,
 .font-fallback * {
 	font-family: $fallbackSystemFont !important;
@@ -242,6 +254,8 @@ body {
 .font-latosubset * {
 	font-family: LatoSubset, $fallbackSystemFont !important;
 }
+/* End style guide classes */
+
 .webfont-stage-1 body {
 	font-size-adjust: none;
 }
@@ -453,22 +467,22 @@ th.numeric {
 .rail h1 {
 	font-size: 1.4em;
 	display: inline-block;
-	width: 8em;
 	text-align: left;
 	margin: 0 0 .1em 0;
 	vertical-align: bottom;
 	@include webfontBold;
 }
 .rail img {
-	width: 80px;
-	height: 80px;
+	width: 24px;
+	height: 24px;
 	margin-right: .5em;
 	border-radius: 0 50%;
 	background-color: $primaryColor;
 	color: transparent;
+	margin-bottom: -2px;
 }
 .rail .navigation {
-	margin: .25em 0 1em;
+	margin: 0 0 .5em;
 }
 .rail .header .links {
 	margin-top: 1em;
@@ -482,6 +496,8 @@ th.numeric {
 		margin-bottom: 0;
 	}
 	.rail img {
+		width: 80px;
+		height: 80px;
 		margin-right: 0;
 	}
 	.rail:hover img {
@@ -489,6 +505,7 @@ th.numeric {
 		border-radius: 50% 0;
 	}
 	.rail h1 {
+		width: 8em;
 		margin-top: .3em;
 		text-align: right;
 	}
@@ -502,7 +519,7 @@ th.numeric {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: .75em;
-	margin-bottom: .4em;
+	margin-bottom: 1em;
 }
 @media (min-width: 25em) {
 	.links {
@@ -515,6 +532,7 @@ th.numeric {
 .links a {
 	display: inline-block;
 	padding: .2em .5em;
+	line-height: 1.4;
 }
 .links-standalone,
 .links a,
