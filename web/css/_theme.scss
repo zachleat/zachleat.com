@@ -1032,16 +1032,14 @@ th.numeric {
 }
 
 /* Demo Link */
-.primarylink,
-.demolink {
+.primarylink {
 	@include webfontBold;
 	font-size: 1.157894736842em; /* 22px /19 */
 }
-.primarylink:before,
-.demolink:before {
+.primarylink:before {
 	content: "➡ ";
 }
-.demolink:after {
+.primarylink-demo:after {
 	content: " (Demo)";
 }
 
