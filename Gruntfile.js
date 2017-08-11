@@ -278,8 +278,8 @@ module.exports = function(grunt) {
 			},
 			content: {
 				files: [
-					'<%= config.root %>**/*.html', 
-					'<%= config.root %>_posts/**/*',
+					'<%= config.root %>**/*.html',
+					'<%= config.root %>**/*.md',
 					'<%= config.root %>_layouts/**/*',
 					'<%= config.root %>_drafts/**/*',
 					'<%= config.root %>license/**/*',
