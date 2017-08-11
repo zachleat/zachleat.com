@@ -26,6 +26,8 @@ hr {
 	-ms-word-break: break-all;
 	word-break: break-all;
 	word-break: break-word;
+
+	/* Disable hyphenation */
 	-webkit-hyphens: manual;
 	-ms-hyphens: manual;
 	hyphens: manual;
@@ -143,6 +145,7 @@ figcaption strong,
 .content h3,
 .content h4,
 .content h5 {
+	/* Disable hyphenation */
 	-webkit-hyphens: manual;
 	-moz-hyphens: manual;
 	hyphens: manual;
@@ -348,6 +351,8 @@ h1:first-child {
 		-ms-word-break: normal;
 		word-break: normal;
 		word-break: normal;
+
+		/* Disable hyphenation */
 		-webkit-hyphens: manual;
 		-moz-hyphens: manual;
 		hyphens: manual;
@@ -389,6 +394,11 @@ code {
 	padding: .2em .2em .1em;
 	margin: 0 .25em 0 .1em;
 	color: #444;
+
+	/* Disable hyphenation */
+	-webkit-hyphens: manual;
+	-ms-hyphens: manual;
+	hyphens: manual;
 }
 code.nowrap {
 	white-space: nowrap;
@@ -424,6 +434,11 @@ pre {
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
 	tab-size: 2;
+
+	/* Disable hyphenation */
+	-webkit-hyphens: manual;
+	-ms-hyphens: manual;
+	hyphens: manual;
 
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
@@ -778,6 +793,8 @@ th.numeric {
 	margin-top: 1em;
 	font-size: .875em;
 	line-height: 160%;
+
+	/* Disable hyphenation */
 	-webkit-hyphens: manual;
 	-ms-hyphens: manual;
 	hyphens: manual;
