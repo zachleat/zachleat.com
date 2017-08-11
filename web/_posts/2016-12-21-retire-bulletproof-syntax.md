@@ -7,6 +7,7 @@ categories:
  - font-loading
 tags:
  - font-loading
+ - highlight
 ---
 
 [***No @font-face Syntax will ever be Bulletproof, Nor Should It Be* was originally posted on the perfplanet.com Performance Calendar.**](http://calendar.perfplanet.com/2016/no-font-face-bulletproof-syntax/)

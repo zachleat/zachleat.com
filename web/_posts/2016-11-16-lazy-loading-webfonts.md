@@ -7,6 +7,7 @@ categories:
  - font-loading
 tags:
  - font-loading
+ - highlight
 ---
 
 One month ago [Monica Dinculescu wrote a blog post entitled *Web fonts, boy, I don’t know*](https://meowni.ca/posts/web-fonts/). In it, she writes:

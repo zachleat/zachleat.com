@@ -7,6 +7,7 @@ categories:
  - font-loading
 tags:
  - research
+ - highlight
 ---
 
 _Recently, Twitter made a global anti-aliasing CSS change to their website. Before writing this post, I didn’t know very much about anti-aliasing—so I decided to learn everything I could about it to better understand the reasoning behind a decision like that. Here’s what I learned._

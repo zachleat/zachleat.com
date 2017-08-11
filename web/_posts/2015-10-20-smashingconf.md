@@ -9,7 +9,6 @@ categories:
  - font-loading
 tags:
  - video
- - highlight
  - font-loading
 medialength: 48 min
 

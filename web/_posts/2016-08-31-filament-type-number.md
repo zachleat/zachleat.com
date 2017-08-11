@@ -6,6 +6,7 @@ permalink: /filament-type-number/
 tags:
   - external
   - research
+  - highlight
 external_url: https://www.filamentgroup.com/lab/type-number.html
 ---
 
