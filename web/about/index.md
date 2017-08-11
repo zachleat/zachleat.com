@@ -2,15 +2,13 @@
 title: 'About'
 author: Zach Leatherman
 layout: page
-btc_comment_counts:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299717788:0
 ---
 
 This web blog is written by **Zach Leatherman**. 
 
 {% include bio-text.html %}
+
+Perhaps irrelevant now, but Zach does hold a Bachelor of Science degree in Computer Engineering with a minor in Mathematics.
 
 *The views expressed on this website do not necessarily represent the views of his employer.*
 
@@ -29,6 +27,41 @@ You can find him on the following services, but not all simultaneously and certa
 Zach trusts his spam filters. He’s had his e-mail in plaintext here since he started this website, so that you have an easy way to contact him. Feel free to do so, at your leisure.
 
 This entry, like Mr. Leatherman himself, is a work in progress.
+
+## Bio Pictures
+
+<figure>
+	<picture>
+		<source type="image/webp" srcset="/img/bio.webp">
+		<img src="/img/bio.jpg" alt="Just a picture of my face.">
+	</picture>
+	<figcaption>Picture taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="https://smashingconf.com/whistler-2014/">SmashingConf Whistler</a>. Download <a href="/img/bio.jpg">the JPEG version</a>.</figcaption>
+</figure>
+
+<figure>
+	<img src="/img/avatar-big.png" alt="" style="max-width: 363px">
+	<figcaption>Modified from above for avatar use.</figcaption>
+</figure>
+
+<figure>
+	<img src="/img/avatar-big.png" alt="" style="max-width: 363px; border-radius: 50%;">
+	<figcaption>Circular test case.</figcaption>
+</figure>
+
+<figure>
+	<picture>
+		<source type="image/webp" srcset="/img/reading.webp">
+		<img src="/img/reading.jpg" alt="Reading in the book store, Coding with JavaScript for Dummies.">
+	</picture>
+	<figcaption>Download <a href="/img/reading.jpg">the JPEG version</a>.</figcaption>
+</figure>
+
+<figure>
+	<img src="/img/avatar-old.png" alt="" style="max-width: 158px">
+	<figcaption>Deprecated.</figcaption>
+</figure>
+
+## Archive
 
 <figure>
 	<img src="/web/img/web367.png" alt="Web 367 Logo">
