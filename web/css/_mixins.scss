@@ -24,26 +24,32 @@
 	}
 }
 @mixin webfontBold {
-	.webfont-stage-2 & {
-		font-family: LatoBold, $fallbackSystemFont;
+	& {
 		font-style: normal;
 		font-weight: 700;
 	}
+	.webfont-stage-2 & {
+		font-family: LatoBold, $fallbackSystemFont;
+	}
 }
 @mixin webfontItalic {
+	& {
+		font-style: italic;
+		font-weight: 400;
+	}
 	.webfont-stage-2 & {
 		font-family: LatoItalic, $fallbackSystemFont;
 		/*font-family: SFNSText-Italic, $fallbackSystemFont;*/
-		font-style: italic;
 		/*font-variation-settings: 'wght' 1.37351;*/
-		font-weight: 400;
 	}
 }
 @mixin webfontBoldItalic {
-	.webfont-stage-2 & {
-		font-family: LatoBoldItalic, $fallbackSystemFont;
+	& {
 		font-style: italic;
 		font-weight: 700;
+	}
+	.webfont-stage-2 & {
+		font-family: LatoBoldItalic, $fallbackSystemFont;
 	}
 }
 @mixin textDecorationSkipInkFallback {

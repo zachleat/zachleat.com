@@ -603,6 +603,9 @@ th.numeric {
 		padding-left: 13px;
 		padding-right: 13px;
 	}
+	.maxwidth-list h1.posts-indent {
+		padding-left: 55px;
+	}
 	.posts .subhed {
 		margin-top: 3em;
 	}
@@ -637,14 +640,15 @@ th.numeric {
 	content: '—';
 }
 
-#about-index {
-	font-style: italic;
+.posts-paragraph {
 	font-size: 16px;
 	line-height: 1.5;
-	font-size-adjust: .47;
 	margin-bottom: 2em;
 	@include webfontItalic;
 	max-width: 50em; /* 800px */
+}
+#about-index {
+	font-size-adjust: .47;
 }
 .webfont-stage-2 #about-index {
 	font-size-adjust: none;
@@ -669,13 +673,14 @@ th.numeric {
 	}
 	.posts-count .subhed,
 	.posts-count li,
-	#about-index {
+	.posts-indent,
+	.posts-paragraph {
 		padding-left: 55px;
 	}
-	#about-index {
+	.posts-paragraph {
 		margin-right: 2em;
 	}
-	#about-index p {
+	.posts-paragraph p {
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -697,12 +702,13 @@ th.numeric {
 	}
 }
 @media (min-width: 43.75em) {
-	#about-index {
+	.posts-indent,
+	.posts-paragraph {
 		padding-right: 55px;
 	}
 }
 @media (min-width: 50em) and (max-width: $oneColLayoutMaxWidth) {
-	#about-index {
+	.posts-paragraph {
 		max-width: 100%;
 	}
 }
