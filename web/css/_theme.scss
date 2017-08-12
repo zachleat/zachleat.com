@@ -658,6 +658,12 @@ th.numeric {
 	.posts-count li {
 		counter-increment: start-from -1;
 	}
+	.posts-count-forward {
+		counter-reset: start-from;
+	}
+	.posts-count-forward li {
+		counter-increment: start-from;
+	}
 	.posts-count .subhed {
 		counter-increment: none;
 	}
@@ -825,13 +831,14 @@ a.tag:visited:hover {
 .tag.video,
 .tag.audio {
 	text-transform: lowercase;
-	border: none;
+	border-color: transparent;
 }
 .tag.tweet {
 	color: #00c9ff;
 }
+.tags .tag.postrank,
 .tags .tag.highlight {
-	border: none;
+	border-color: transparent;
 }
 .tags .highlight-label {
 	@include a11y-only;

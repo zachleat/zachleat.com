@@ -12,6 +12,7 @@
   "private": true,
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "gray-matter": "^3.0.2",
     "grunt": "~1.0.1",
     "grunt-cli": "~1.2.0",
     "grunt-contrib-clean": "^1.1.0",
@@ -28,6 +29,7 @@
     "grunt-shell": "~2.1.0",
     "grunt-zopfli": "^0.3.3",
     "install": "~0.10.1",
+    "lodash.uniq": "^4.5.0",
     "matchdep": "~1.0.1",
     "npm": "~5.0.4",
     "time-grunt": "^1.4.0"

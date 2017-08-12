@@ -3,10 +3,12 @@ title: The Infinity Hamburger Menu
 author: Zach Leatherman
 layout: post
 categories:
- - project
+  - project
 tags:
- - project
+  - project
+  - popular-posts
 permalink: /infinity-burger/
+postRank: 15
 ---
 
 A whimsical hamburger menu* that goes on forever.

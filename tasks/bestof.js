@@ -1,10 +1,10 @@
-module.exports = function( grunt ) {
+module.exports = function(grunt) {
 	"use strict";
-
-	grunt.registerTask('bestof', function() {
-
+	grunt.registerTask("bestof", function() {
 		var fs = require("fs");
 		var cheerio = require("cheerio");
+		var matter = require("gray-matter");
+		var uniq = require('lodash.uniq');
 		var bestof = grunt.file.readJSON("zachleat-bestof.json").rows;
 		var pageviews = {};
 
@@ -18,16 +18,24 @@ module.exports = function( grunt ) {
 				var newslug = slug[1] + (slug[1].substr(-1) !== "/" ? "/" : "");
 				var filename = "web/_site/" + newslug + "index.html";
 				if (fs.existsSync(filename)) {
-					console.log("Analytics post entry found:", newslug, entry[1]);
 					if (!pageviews[newslug]) {
+						console.log("New analytics post entry found:", newslug, entry[1]);
+
 						var postTemplate = cheerio.load(fs.readFileSync(filename, "utf8"));
+						var postPath = postTemplate("meta[property='jekyll:path']").attr("content");
+						console.log("Found path to original file:", postPath);
+
 						pageviews[newslug] = {
 							slug: newslug,
+							path: "web/" + postPath,
 							views: 0,
 							title: postTemplate("title").html().replace(/&#x2014;zachleat.com/, ""),
 							postedDate: Date.parse(postTemplate(".sub .date").html())
 						};
+					} else {
+						// console.log("Adding to already existing analytics post entry:", newslug, entry[1]);
 					}
+
 					pageviews[newslug].views += parseInt(entry[1], 10);
 
 					if (pageviews[newslug].postedDate) {
@@ -55,57 +63,46 @@ module.exports = function( grunt ) {
 			return b.averageViews - a.averageViews;
 		});
 
+		console.log( "> Editing post front matter." );
+		pageviewsArr.slice(0, 20).forEach(function(entry, j) {
+			// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
+			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
+			frontmatter.data.postRank = ( j + 1 );
+			if( !frontmatter.data.tags ) {
+				frontmatter.data.tags = [];
+			}
+			frontmatter.data.tags.push( 'popular-posts' );
+			frontmatter.data.tags = uniq( frontmatter.data.tags );
+			console.log( "Writing", entry.path );
+			fs.writeFileSync( entry.path, frontmatter.stringify());
+		});
+
+		console.log( "> Writing best-of jekyll template file." );
 		/* Warning this date won’t match the analytics data fetch date. */
 		/* TODO: use the file modified date on the zachleat-bestof.json include above. */
 		var updatedDate = new Date().toLocaleString("en-US", {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric',
-			hour: 'numeric',
-			minute: '2-digit',
-			timeZoneName: 'short'
+			year: "numeric",
+			month: "long",
+			day: "numeric",
+			hour: "numeric",
+			minute: "2-digit",
+			timeZoneName: "short"
 		});
 
-		var html = `---
-title: Most Popular
-layout: page
-permalink: best-of/
----
+		var bestOfTemplatePath = "web/best-of/index.html";
+		var bestofFrontMatter = matter( fs.readFileSync( bestOfTemplatePath, 'utf8') );
+		bestofFrontMatter.data.dataUpdatedDate = updatedDate;
+		console.log( "Writing", bestOfTemplatePath );
+		fs.writeFileSync( bestOfTemplatePath, bestofFrontMatter.stringify());
 
-<p><em>Last updated ${updatedDate}</em></p>
-
-<table>
-	<thead>
-		<tr>
-			<th>#</th>
-			<th>Title</th>
-			<th class="numeric nowrap">Units Per Day</th>
-		</tr>
-	</thead>
-	<tbody>
-`;
-
-		var unitNormalizer = pageviewsArr[0].averageViews;
-		pageviewsArr.slice(0, 20).forEach(function(entry, j) {
-			html += `
-		<tr>
-			<td>${j + 1}</td>
-			<td><a href="/web/${entry.slug}">${entry.title}</a> ${entry.postedYear}</td>
-			<td class="numeric">${(entry.averageViews * 100 / unitNormalizer).toFixed(1)}</td>
-		</tr>`;
-		});
-
-		html += `
-	</tbody>
-</table>
-
-<h2>How does it work?</h2>
-<p>Top twenty blog posts on <code>/web/</code> ordered by Average Generic Units Per Day, a metric that normalizes pageviews on a 0–100 scale. Units per day are calculated from the day the post was published. I used generic units instead of raw Pageviews to avoid feeling like I was either bragging about or disappointed in any of my posts. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically from the Google Analytics API</a>.</p>
-
-<h2>Tweets</h2>
-<p>I also keep a <a href="https://twitter.com/i/moments/816767407326949377">Twitter moment highlight reel of the most popular tweets</a> too.</p>
-`;
-
-		fs.writeFileSync("web/best-of/index.html", html);
+		// var unitNormalizer = pageviewsArr[0].averageViews;
+		// pageviewsArr.slice(0, 20).forEach(function(entry, j) {
+		// 	html += `
+		// <tr>
+		// 	<td>${j + 1}</td>
+		// 	<td><a href="/web/${entry.slug}">${entry.title}</a> ${entry.postedYear}</td>
+		// 	<td class="numeric">${(entry.averageViews * 100 / unitNormalizer).toFixed(1)}</td>
+		// </tr>`;
+		// });
 	});
 };

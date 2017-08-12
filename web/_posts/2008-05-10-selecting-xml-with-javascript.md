@@ -1,5 +1,5 @@
 ---
-title: 'Selecting XML Nodes with JavaScript (Peril of getElementsByTagName)'
+title: Selecting XML Nodes with JavaScript (Peril of getElementsByTagName)
 author: Zach Leatherman
 layout: post
 permalink: /selecting-xml-with-javascript/
@@ -9,6 +9,8 @@ tags:
   - highlight
   - research
   - smalltitle
+  - popular-posts
+postRank: 13
 ---
 
 *There are two popular camps for ajax data formats right now: XML and JSON. Both have their (dis-)advantages. The purpose of this article is to show you how to effectively parse XML in the browser.*

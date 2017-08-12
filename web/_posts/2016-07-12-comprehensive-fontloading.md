@@ -4,10 +4,12 @@ author: Zach Leatherman
 layout: post
 permalink: /comprehensive-webfonts/
 categories:
- - font-loading
+  - font-loading
 tags:
- - highlight
- - font-loading
+  - highlight
+  - font-loading
+  - popular-posts
+postRank: 1
 ---
 
 _This guide is not intended for use with font icons, which have different loading priorities and use cases. Also, SVG is probably a better long term choice._

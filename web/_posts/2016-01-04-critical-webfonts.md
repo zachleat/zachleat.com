@@ -1,14 +1,16 @@
 ---
-title: 'Critical Web Fonts'
+title: Critical Web Fonts
 author: Zach Leatherman
 layout: post
 permalink: /critical-webfonts/
 categories:
- - font-loading
+  - font-loading
 tags:
- - research
- - highlight
- - font-loading
+  - research
+  - highlight
+  - font-loading
+  - popular-posts
+postRank: 6
 ---
 
 The history of web font loading has included many different iterations:

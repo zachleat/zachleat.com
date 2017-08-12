@@ -4,11 +4,13 @@ author: Zach Leatherman
 layout: post
 permalink: /fittext-and-bigtext/
 categories:
- - font-loading
+  - font-loading
 tags:
- - highlight
- - project
- - font-loading
+  - highlight
+  - project
+  - font-loading
+  - popular-posts
+postRank: 12
 ---
 
 Earlier this week, [@TrentWalton][1] [tweeted][2]:

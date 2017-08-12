@@ -7,9 +7,12 @@ layout: default
 	<div class="sub">
 		<em class="date">{{ page.date | date_to_long_string }}</em>
 {% if page.tags contains 'video' %}
-		<em class="words">Watch this video in {{ page.medialength }}.</em>
+		<em class="words">Watch this video in {{ page.medialength }}</em>
 {% else %}
-		<em class="words">Read this in {{ page.content | reading_time }}.</em>
+		<em class="words">Read this in {{ page.content | reading_time }}</em>
+{% endif %}
+{% if page.postRank %}
+		<em class="words"><a href="/web/best-of/">#{{ page.postRank }} most popular post</a></em>
 {% endif %}
 	</div>
 	{% if page.tags contains 'deprecated' %}

@@ -27,6 +27,7 @@
 {% if page.stylesheet %}
 		<link href="{{ distFolder }}{{ page.stylesheet }}" rel="stylesheet">
 {% endif %}
+		<meta property="jekyll:path" content="{{ page.path }}">
 	</head>
 	<body>
 		<div class="rail">
@@ -53,7 +54,7 @@
 							<a href="/web/" class="tag{% if page.url == '/' %} active{% endif %}">All Posts</a>
 							<!-- <a href="/web/citations/" class="tag{% if page.url == '/citations/' %} active{% endif %}">Citations</a> -->
 							<!-- <a href="/web/highlights/" class="tag highlight{% if page.url == '/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> -->
-							<a href="/web/best-of/" class="tag{% if page.url == '/best-of/' %} active{% endif %}">Popular</a>
+							<a href="/web/best-of/" class="tag{% if page.url == '/best-of/' %} active{% endif %}">Popular 🔥</a>
 							<a href="/web/projects/" class="tag{% if page.url == '/projects/' %} active{% endif %}">Projects</a>
 							<a href="/web/research/" class="tag{% if page.url == '/research/' %} active{% endif %}">Research</a>
 							<a href="/web/speaking/" class="tag{% if page.url == '/speaking/' %} active{% endif %}">Speaking</a>
