@@ -788,10 +788,10 @@ th.numeric {
 .tag {
 	border: 1px solid rgba(0, 0, 0, .08);
 	font-size: 11px;
-	line-height: 16px;
+	line-height: 1;
 	text-transform: uppercase;
 	color: #666;
-	padding: 0 .363636364em; /* 4px /11 */
+	padding: .2727272727273em .363636364em; /* 3px 4px /11 */
 	margin: 0 5px;
 	vertical-align: middle;
 	display: inline-block;
@@ -827,7 +827,6 @@ a.tag:visited:hover {
 .tags {
 	display: inline-block;
 	white-space: nowrap;
-	line-height: 1;
 	vertical-align: middle;
 	margin-top: -10px;
 }
@@ -878,7 +877,6 @@ a.tag:visited:hover {
 		font-size: 13px;
 		padding-left: 0.6923076923077em; /* 9px /13 */
 		padding-right: 0.6923076923077em; /* 9px /13 */
-		line-height: 160%;
 	}
 }
 
