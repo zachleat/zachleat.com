@@ -42,17 +42,22 @@
 	document.documentElement.setAttribute( "data-w3c-banner-label", "Non-canonical web standards fan fiction" );
 
 	// Filter Posts Menu
-	var filter = doc.getElementById( 'post-filter' ),
-		filterForm = doc.getElementById( 'post-filter-form' ),
-		posts = doc.getElementById( 'main-posts-list' ),
-		initialClassName = '';
+	var filter = doc.getElementById( 'post-filter' );
+	var posts = doc.getElementById( 'main-posts-list' );
 
 	function updateFilter() {
-		posts.className = initialClassName + ' ' + filter.options[ filter.selectedIndex ].value;
+		if( !filter.checked ) {
+			posts.classList.remove( "all" );
+			posts.classList.add( "deprecated" );
+		} else {
+			posts.classList.remove( "deprecated" );
+			posts.classList.add( "all" );
+		}
 	}
 
-	if( filter && posts && 'addEventListener' in doc ) {
-		initialClassName = posts.className + ' enhanced';
+	if( filter && posts && ( "classList" in posts ) ) {
+		posts.classList.add( "enhanced" );
+
 		updateFilter();
 		filter.addEventListener( 'change', updateFilter, false );
 	}

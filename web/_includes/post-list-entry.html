@@ -5,9 +5,9 @@
 {% endif %}
 <li class="{% if post.tags contains 'deprecated' %}deprecated {% endif %}{% if post.tags contains 'highlight' %}highlight {% endif %}{% if post.tags contains 'smalltitle' %}smalltitle {% endif %}{% if post.tags contains 'upcoming' %}upcoming {% endif %}{% if post.tags contains 'nejsconf' %}nejsconf {% endif %}"{% if post.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
 	{% if post.tags contains 'external' %}
-	<a href="{{ post.external_url }}">
+	<a href="{{ post.external_url }}" class="posts-link">
 	{% else %}
-	<a href="{{ site.baseurl }}{{ post.url }}">
+	<a href="{{ site.baseurl }}{{ post.url }}" class="posts-link">
 	{% endif %}
 		{% if post.tags contains 'upcoming' %}<span class="external" title="External Link">Scheduled</span>
 		{% elsif post.tags contains 'pending' %}<span class="external" title="External Link">Pending</span>
@@ -18,11 +18,11 @@
 		{% else %}
 			{{ post.title }}
 		{% endif %}
-		<span class="tags">{% if post.categories contains 'font-loading' %}<span class="tag font-loading">Web Fonts</span>{% endif %}{% if post.tags contains 'project' %}<span class="tag project">Project</span>{% endif %}{% if post.tags contains 'research' %}<span class="tag research">Research</span>{% endif %}{% if post.tags contains 'video' %}<span class="tag video">Video{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}{% if post.tags contains 'audio' %}<span class="tag audio">Audio{% if post.medialength %} <span class="length">{{ post.medialength }}</span>{% endif %}</span>{% endif %}{% if post.tags contains 'highlight' %}<span class="tag highlight" aria-hidden="true" title="Highlight">★</span>{% endif %}</span>
-		<span class="date">{{ post.date | date: "%h %Y" }}</span>
-		{% if include.view == 'project' %}
-			{% if post.headimage %}<img src="{{ post.headimage }}" class="project_img">{% endif %}
-			{% if post.description %}<p class="description">{{ post.description }}</p>{% endif %}
-		{% endif %}
 	</a>
+	<span class="tags">{% if post.categories contains 'font-loading' %}<a href="/web/fonts/" class="tag font-loading">Web Fonts</a>{% endif %}{% if post.tags contains 'project' %}<a href="/web/projects/" class="tag">Project</a>{% endif %}{% if post.tags contains 'research' %}<a href="/web/research/" class="tag">Research</a>{% endif %}{% if post.tags contains 'speaking' or post.tags contains 'video' or post.tags contains 'audio' %}<a href="/web/speaking/" class="tag">Speaking</a>{% endif %}{% if post.tags contains 'video' %}<span class="tag video">{% if post.medialength %}<span class="length">{{ post.medialength }}</span>{% endif %} Video</span>{% endif %}{% if post.tags contains 'audio' %}<span class="tag audio">{% if post.medialength %}<span class="length">{{ post.medialength }}</span>{% endif %} Audio</span>{% endif %}{% if post.tags contains 'highlight' %}<a href="/web/highlights/" class="tag highlight" title="Highlight"><span class="highlight-label">Highlight </span><span class="highlight-star" aria-hidden="true">★</span></a>{% endif %}</span>
+	<span class="date">{{ post.date | date: "%h %Y" }}</span>
+	{% if include.view == 'project' %}
+		{% if post.headimage %}<img src="{{ post.headimage }}" class="project_img">{% endif %}
+		{% if post.description %}<p class="description">{{ post.description }}</p>{% endif %}
+	{% endif %}
 </li>

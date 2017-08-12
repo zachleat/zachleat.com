@@ -14,12 +14,7 @@ tmpl: home
 			{% endfor %}
 		</ol>
 		<form class="post-filter" id="post-filter-form">
-			<label for="post-filter">Filter: </label>
-			<select id="post-filter">
-				<option value="all">Show all posts</option>
-				<option value="deprecated" selected>Show all but deprecated posts</option>
-				<option value="highlighted">Show only highlighted posts</option>
-			</select>
+			<label for="post-filter"><input type="checkbox" id="post-filter"> Show deprecated posts too</label>
 		</form>
 	</article>
 	{% include footer.html %}

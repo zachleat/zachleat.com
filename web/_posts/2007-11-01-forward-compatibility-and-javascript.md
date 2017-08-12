@@ -3,19 +3,12 @@ title: 'Forward Compatibility and JavaScript'
 author: Zach Leatherman
 layout: post
 permalink: /forward-compatibility-and-javascript/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718646:0
 categories:
   - JavaScript
   - Web Browsers
 tags:
   - Internet Explorer
   - Rendering Modes
-  - deprecated
   - feedtrim
 ---
 

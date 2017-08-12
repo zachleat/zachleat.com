@@ -513,12 +513,7 @@ th.numeric {
 .rail .navigation {
 	margin: 0 0 .5em;
 }
-.rail .header .links {
-	margin-top: 1em;
-}
-.header_home {
-	display: none;
-}
+
 @media (min-width: $twoColLayoutMinWidth) {
 	.rail a.header {
 		text-align: right;
@@ -538,84 +533,6 @@ th.numeric {
 		margin-top: .3em;
 		text-align: right;
 	}
-	.header_home {
-		display: block;
-	}
-}
-
-/* Header Links */
-.links {
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: .75em;
-	margin-bottom: 1em;
-}
-@media (min-width: 25em) {
-	.links {
-		letter-spacing: 2px;
-	}
-}
-.links-standalone {
-	margin-bottom: 0;
-}
-.links a {
-	display: inline-block;
-	padding: .2em .5em;
-}
-.links-standalone,
-.links a,
-.links :visited {
-	color: #222;
-}
-.links a:hover,
-.links a:focus {
-	color: #000;
-}
-.links-sub {
-	display: none;
-}
-.links_cat {
-	display: block;
-}
-.link-sm {
-	padding-top: .5em;
-	padding-bottom: .5em;
-	line-height: 1.1;
-	text-transform: none;
-	letter-spacing: 0.3px;
-}
-.link-sm span {
-	white-space: nowrap;
-}
-.link-sm:before {
-	content: "★ ";
-}
-@media (min-width: 30em) {
-	.links_cat {
-		display: inline-block;
-	}
-}
-@media (min-width: $twoColLayoutMinWidth) {
-	.links {
-		text-align: left;
-	}
-	.links-standalone,
-	.links {
-		font-size: .875em;
-	}
-	.links-standalone {
-		display: block;
-		text-align: right;
-		padding: .4em 0;
-	}
-	.links a {
-		display: block;
-		text-align: right;
-		padding: .4em 0;
-	}
-	.links_cat {
-		display: block;
-	}
 }
 
 /* Posts and Content */
@@ -624,21 +541,23 @@ th.numeric {
 	margin: 0;
 	padding: 0;
 }
-/* thanks to http://www.sitepoint.com/making-css-count-backwards/ */
 .posts li {
 	position: relative;
+	padding-top: 14px;
+	padding-bottom: 6px;
 }
-.posts a {
-	display: block;
-	padding: 14px 0;
+.posts .posts-link {
+	display: inline;
+	padding: 0;
+	margin-right: 6px;
 	font-size: 1.375em; /* 22px */
 	line-height: 110%;
 	text-decoration: none;
 }
 @supports (text-decoration-skip: ink) {
-	.posts a:hover,
-	.posts a:focus,
-	.posts a:active {
+	.posts .posts-link:hover,
+	.posts .posts-link:focus,
+	.posts .posts-link:active {
 		text-decoration: underline;
 	}
 }
@@ -662,11 +581,11 @@ th.numeric {
 	display: block;
 }
 .posts .description {
-	font-size: .730769231em; /* 19x /26 */
+	margin-top: .210526316em; /* 4px /19 */
 	color: #333;
 	@include webfontItalic;
 }
-.posts .smalltitle a {
+.posts .smalltitle .posts-link {
 	font-size: 23px;
 }
 .project_img {
@@ -677,8 +596,8 @@ th.numeric {
 	margin-top: 3em;
 }
 @media (min-width: 30em) {
-	.posts a,
 	.posts .subhed,
+	.posts li,
 	.maxwidth-list h1,
 	.maxwidth-list p {
 		padding-left: 13px;
@@ -687,7 +606,7 @@ th.numeric {
 	.posts .subhed {
 		margin-top: 3em;
 	}
-	.posts .smalltitle a {
+	.posts .smalltitle .posts-link {
 		font-size: 1.375em; /* 22px */
 	}
 }
@@ -735,6 +654,7 @@ th.numeric {
 	.sub em {
 		display: inline;
 	}
+	/* thanks to http://www.sitepoint.com/making-css-count-backwards/ */
 	.posts-count li {
 		counter-increment: start-from -1;
 	}
@@ -742,7 +662,7 @@ th.numeric {
 		counter-increment: none;
 	}
 	.posts-count .subhed,
-	.posts-count li a,
+	.posts-count li,
 	#about-index {
 		padding-left: 55px;
 	}
@@ -848,14 +768,8 @@ th.numeric {
 .enhanced-js .posts:not(.enhanced) .deprecated {
 	@include a11y-only;
 }
-.posts.deprecated .deprecated,
-.posts.highlighted li,
-.posts.fontloading li {
+.posts.deprecated .deprecated {
 	@include a11y-only;
-}
-.posts.fontloading .fontloading,
-.posts.highlighted .highlight {
-	@include undo-a11y-only(relative);
 }
 
 /* Tags */
@@ -865,38 +779,94 @@ th.numeric {
 	line-height: 16px;
 	text-transform: uppercase;
 	color: #666;
-	padding: 0 .4em;
-	margin: 0 .5em;
+	padding: 0 .363636364em; /* 4px /11 */
+	margin: 0 5px;
 	vertical-align: middle;
 	display: inline-block;
 
 	@include webfontBold;
 }
+.tag:first-child {
+	margin-left: 0;
+}
+.tag:last-child {
+	margin-right: 0;
+}
+a.tag,
+a.tag:visited {
+	color: #666;
+	text-decoration: none;
+}
+.tag.about,
+.tag.about:visited {
+	border-color: transparent;
+	font-weight: 700;
+	text-decoration: underline;
+}
+.tag.active,
+.tag.active:visited,
+a.tag:hover,
+a.tag:visited:hover {
+	background-color: #444;
+	color: #fff;
+	border-color: #444;
+}
+
 .tags {
 	display: inline-block;
 	white-space: nowrap;
 	line-height: 1;
+	vertical-align: middle;
+	margin-top: -10px;
 }
 .tags:empty {
 	display: none;
 }
-.tag.video .length,
-.tag.audio .length {
-	text-transform: none;
+.tag.video,
+.tag.audio {
+	text-transform: lowercase;
+	border: none;
 }
 .tag.tweet {
 	color: #00c9ff;
 }
-.tag.highlight {
-	padding-left: .4em;
-	font-family: sans-serif;
+.tags .tag.highlight {
 	border: none;
+}
+.tags .highlight-label {
+	@include a11y-only;
+}
+.tag .highlight-star {
+	font-family: sans-serif;
+	font-size: 12px;
 }
 .tag.font-loading {
 	background-color: #f1f1f1;
 }
 .tag + .tag {
 	margin-left: -6px;
+}
+
+.tags-rail {
+	margin-top: 1em;
+	text-align: center;
+}
+.tags-rail .tag {
+	margin-right: 0;
+	margin-left: 1px;
+	margin-bottom: 5px;
+}
+@media (min-width: $twoColLayoutMinWidth) {
+	.tags-rail {
+		margin-top: 2em;
+		text-align: right;
+	}
+	.tags-rail .tag {
+		font-size: 13px;
+		padding-left: 0.6923076923077em; /* 9px /13 */
+		padding-right: 0.6923076923077em; /* 9px /13 */
+		line-height: 160%;
+	}
 }
 
 /* External Links */
