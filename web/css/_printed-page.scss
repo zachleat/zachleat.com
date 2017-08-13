@@ -1,0 +1,19 @@
+/* Printed Pages */
+.printed-page {
+	border: 1px solid #999;
+	box-shadow: 4px 4px 0 #ddd;
+	padding: 3em;
+	font-size: 14px
+}
+.printed-page > img {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 3em;
+}
+.printed-page .redacted {
+	background-color: #000;
+}
+.printed-page pre {
+	border-color: transparent;
+	background-color: transparent;
+}

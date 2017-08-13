@@ -1,0 +1,46 @@
+.font-foit,
+.font-foit *,
+.font-foit *:before,
+.font-foit *:after {
+	font-family: $fallbackSystemFont !important;
+	color: transparent !important;
+}
+.font-fallback,
+.font-fallback *,
+.font-fallback *:before,
+.font-fallback *:after {
+	font-family: $fallbackSystemFont !important;
+}
+.font-latosubset,
+.font-latosubset *,
+.font-latosubset *:before,
+.font-latosubset *:after {
+	font-family: LatoSubset, $fallbackSystemFont !important;
+}
+.fontloademu,
+.fontloademu * {
+	font-family: LatoItalic, sans-serif !important;
+	color: #525252 !important;
+}
+
+/* Color swatches */
+.swatches {
+	overflow: hidden;
+}
+.swatch {
+	float: left;
+	padding: .75em;
+	margin-right: .25em;
+	margin-bottom: .25em;
+	border-radius: 5px;
+}
+
+/* Background inline */
+@supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
+	.text-highlight.text-highlight {
+		display: inline;
+		padding: 0 .2em;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+	}
+}
