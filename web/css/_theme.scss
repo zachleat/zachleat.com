@@ -486,12 +486,10 @@ th.numeric {
 
 
 /* Logo and Rail */
-.rail a {
-	display: inline-block;
-	text-decoration: none;
-}
 .rail .header {
+	display: block;
 	margin-bottom: .5em;
+	text-decoration: none;
 }
 .rail h1 {
 	font-size: 1.4em;
@@ -515,7 +513,7 @@ th.numeric {
 }
 
 @media (min-width: $twoColLayoutMinWidth) {
-	.rail a.header {
+	.rail .header {
 		text-align: right;
 		margin-bottom: 0;
 	}
@@ -790,13 +788,14 @@ th.numeric {
 	border: 1px solid rgba(0, 0, 0, .08);
 	font-size: 11px;
 	line-height: 18px;
-	height: 20px;
+	height: auto;
 	text-transform: uppercase;
 	color: #666;
 	padding: 0 4px;
 	margin: 0 5px;
 	vertical-align: middle;
 	display: inline-block;
+	text-decoration: none;
 
 	@include webfontBold;
 }
@@ -806,22 +805,19 @@ th.numeric {
 .tag:last-child {
 	margin-right: 0;
 }
-a.tag,
-a.tag:visited {
+.tag:visited {
 	color: #666;
 	text-decoration: none;
 }
-.tag.home,
-.tag.home:visited,
-.tag.about,
-.tag.about:visited {
+.tag-borderless,
+.tag-borderless:visited {
 	border-color: transparent;
 	text-decoration: underline;
 }
 .tag.active,
 .tag.active:visited,
-a.tag:hover,
-a.tag:visited:hover {
+a[href].tag:hover,
+a[href].tag:visited:hover {
 	background-color: #444;
 	color: #fff;
 	border-color: #444;
@@ -858,6 +854,10 @@ a.tag:visited:hover {
 .tag.font-loading {
 	background-color: #f1f1f1;
 }
+.tag.font-loading-guide {
+	text-transform: none;
+	text-decoration: none;
+}
 .tag + .tag {
 	margin-left: -6px;
 }
@@ -872,12 +872,6 @@ a.tag:visited:hover {
 	margin-left: 1px;
 	margin-bottom: 5px;
 }
-.tags-rail .tag.home,
-.tags-rail .tag.about {
-	font-size: 13px;
-	line-height: 20px;
-	height: 22px;
-}
 
 @media (min-width: $twoColLayoutMinWidth) {
 	.tags-rail {
@@ -887,13 +881,11 @@ a.tag:visited:hover {
 		padding-left: 0.6923076923077em; /* 9px /13 */
 		padding-right: 0.6923076923077em; /* 9px /13 */
 	}
-	.tags-rail .tag.home,
-	.tags-rail .tag.about {
-		display: block;
-		margin: 8px -9px 8px 0;
-	}
-	.tags-rail .tag.about {
-		margin-bottom: 16px;
+	.tags-rail .tag-bigger {
+		font-size: 14px;
+		line-height: 20px;
+		height: 22px;
+		margin: 8px 0 16px;
 	}
 }
 

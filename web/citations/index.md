@@ -8,7 +8,7 @@ tmpl: list
 <div class="maxwidth-list">
 	<article>
 		<h1>Citations</h1>
-		<p>A list of notable non-ephemeral (mostly book) citations.</p>
+		<p>A list of notable non-ephemeral (mostly book) things I’ve been cited in.</p>
 		<ol class="posts">
 			<li class="subhed">2017</li>
 			<li><a href="https://abookapart.com/products/webfont-handbook" class="posts-link">WebFont Handbook</a> <span class="tags"><span class="tag">Book</span></span><p class="description">—Bram Stein</p></li>
