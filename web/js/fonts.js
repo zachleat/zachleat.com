@@ -7,11 +7,21 @@
 		return;
 	}
 
+	// Emulator Radio in Footer
+	if( "FontLoadEmuSet" in window ) {
+		FontLoadEmuSet( "font-fallback" );
+	}
+
 	var docEl = doc.documentElement;
 	FontFaceOnload( "LatoSubset", {
 		success: function() {
 			docEl.className += " webfont-stage-1";
 			sessionStorage.webfontStageOne = true;
+
+			// Emulator Radio in Footer
+			if( "FontLoadEmuSet" in window ) {
+				FontLoadEmuSet( "font-latosubset" );
+			}
 
 			var stage2 = {
 				Lato: {},
@@ -34,6 +44,11 @@
 				if( counter === numberOfFonts ) {
 					docEl.className += " webfont-stage-2";
 					sessionStorage.webfontStageTwo = true;
+
+					// Emulator Radio in Footer
+					if( "FontLoadEmuSet" in window ) {
+						FontLoadEmuSet( "" );
+					}
 				}
 			};
 

@@ -72,6 +72,7 @@ module.exports = function(grunt) {
 			jsDefer: {
 				src: [
 					'node_modules/infinity-burger/infinity-burger.js',
+					'<%= config.jsSrc %>fontloademu.js',
 					'<%= config.jsSrc %>google-analytics.js',
 					'<%= config.jsSrc %>disqus.js',
 					'<%= config.jsSrc %>twitter-api.js'
