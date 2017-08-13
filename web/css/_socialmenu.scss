@@ -6,19 +6,10 @@
 	letter-spacing: 2px;
 	font-size: .75em;
 }
-.social > div {
-	display: inline-block;
-	padding-left: .1em;
-}
 @media (min-width: $twoColLayoutMinWidth) {
 	.rail .social {
 		margin-top: 1.5em;
 		text-align: right;
-	}
-	.social > div {
-		padding-top: 1em;
-		padding-left: 0;
-		display: block;
 	}
 }
 .social_icon {
@@ -32,7 +23,7 @@
 }
 .grunticon .social_icon {
 	opacity: .6;
-	margin-left: .4em;
+	margin-left: .2em;
 }
 .grunticon .social_icon:hover {
 	opacity: 1;
@@ -57,13 +48,4 @@
 .social a:link,
 .social a:visited {
 	color: #444;
-}
-@media (min-width: $twoColLayoutMinWidth) {
-	.grunticon .social a {
-		width: 32px;
-		height: 32px;
-	}
-	.grunticon .social .icon-nebraskajs {
-		width: 69px;
-	}
 }

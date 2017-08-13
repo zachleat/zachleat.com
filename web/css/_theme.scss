@@ -811,6 +811,8 @@ a.tag:visited {
 	color: #666;
 	text-decoration: none;
 }
+.tag.home,
+.tag.home:visited,
 .tag.about,
 .tag.about:visited {
 	border-color: transparent;
@@ -869,18 +871,29 @@ a.tag:visited:hover {
 	margin-right: 0;
 	margin-left: 1px;
 	margin-bottom: 5px;
+}
+.tags-rail .tag.home,
+.tags-rail .tag.about {
 	font-size: 13px;
 	line-height: 20px;
 	height: 22px;
 }
+
 @media (min-width: $twoColLayoutMinWidth) {
 	.tags-rail {
-		margin-top: 2em;
 		text-align: right;
 	}
 	.tags-rail .tag {
 		padding-left: 0.6923076923077em; /* 9px /13 */
 		padding-right: 0.6923076923077em; /* 9px /13 */
+	}
+	.tags-rail .tag.home,
+	.tags-rail .tag.about {
+		display: block;
+		margin: 8px -9px 8px 0;
+	}
+	.tags-rail .tag.about {
+		margin-bottom: 16px;
 	}
 }
 
