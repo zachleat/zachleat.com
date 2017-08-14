@@ -1,16 +1,25 @@
 /* Fonts */
 ;(function( doc ) {
+	// Radio select emulator in footer
+	function setEmulatorRadioValue( value ) {
+		var radios = document.querySelectorAll( '#fontloademu [name="fontloademu"]' );
+		for( var j = 0, k = radios.length; j < k; j++ ) {
+			radios[ j ].checked = value === radios[ j ].value;
+		}
+	}
+
 	// IE9+
-	if( !( 'geolocation' in navigator ) ||
-		!( "keys" in Object ) ||
-		sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {
+	if( !( 'geolocation' in navigator ) || !( "keys" in Object ) ) {
+		return;
+	} else if( sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {
+		document.addEventListener( "DOMContentLoaded", function() {
+			setEmulatorRadioValue( "" );
+		}, false );
+
 		return;
 	}
 
-	// Emulator Radio in Footer
-	if( "FontLoadEmuSet" in window ) {
-		FontLoadEmuSet( "font-fallback" );
-	}
+	setEmulatorRadioValue( "font-fallback" );
 
 	var docEl = doc.documentElement;
 	FontFaceOnload( "LatoSubset", {
@@ -18,10 +27,7 @@
 			docEl.className += " webfont-stage-1";
 			sessionStorage.webfontStageOne = true;
 
-			// Emulator Radio in Footer
-			if( "FontLoadEmuSet" in window ) {
-				FontLoadEmuSet( "font-latosubset" );
-			}
+			setEmulatorRadioValue( "font-latosubset" );
 
 			var stage2 = {
 				Lato: {},
@@ -45,10 +51,7 @@
 					docEl.className += " webfont-stage-2";
 					sessionStorage.webfontStageTwo = true;
 
-					// Emulator Radio in Footer
-					if( "FontLoadEmuSet" in window ) {
-						FontLoadEmuSet( "" );
-					}
+					setEmulatorRadioValue( "" );
 				}
 			};
 

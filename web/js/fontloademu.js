@@ -1,9 +1,10 @@
 (function() {
 	// Font Loading Emulator (in the footer)
-	var fontloademu = document.getElementsByClassName( 'fontloademu' )[ 0 ];
+	var fontloademu = document.getElementById( 'fontloademu' );
 	if( !fontloademu ) {
 		return;
 	}
+
 	// JS form, enabled with JS.
 	fontloademu.style.display = "block";
 
@@ -25,11 +26,5 @@
 				docEl.classList.add( this.value );
 			}
 		}, false);
-	}
-
-	window.FontLoadEmuSet = function( value ) {
-		for( var j = 0, k = radios.length; j < k; j++ ) {
-			radios[ j ].checked = value === radios[ j ].value;
-		}
 	}
 })();
