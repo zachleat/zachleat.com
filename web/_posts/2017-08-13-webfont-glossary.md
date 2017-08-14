@@ -41,8 +41,8 @@ After publishing [The Comprehensive Guide to Font Loading Strategies](/web/compr
 	<dt id="subsetting">Subsetting</dt>
 	<dd>Modifying the font file to include only a small portion of the original glyphs and features, typically used to optimize a font file for a single language on the web. This can be dangerous because no language is an island—proper nouns can crop up in many different places! This results in smaller font files but may also violate your font’s license agreement. Use with the <code>unicode-range</code> descriptor for even better results. The <a href="https://github.com/filamentgroup/glyphhanger">glyphhanger</a> tool can help you diagnose what characters you need on a statically generated site to better subset your web font files.</dd>
 
-	<dt id="roman">A roman font</dt>
-	<dd>Traditionally used to mean non-italic but in my experience (while perhaps not pedantically correct) it’s usually extended to non-bold as well. The “regular” font. Read a <a href="https://english.stackexchange.com/questions/16090/whats-the-most-appropriate-name-for-non-italicized-text-roman-or-upright">Non-italicized FAQ on Stack Exchange</a> or <a href="https://en.wikipedia.org/wiki/Emphasis_(typography)#Design">Emphasis on Wikipedia</a>.</dd>
+	<dt id="roman">Roman font</dt>
+	<dd>Traditionally lowercased, roman is used to mean non-italic but in my experience (while perhaps not pedantically correct) it’s usually extended to non-bold as well. The “regular” font. Read a <a href="https://english.stackexchange.com/questions/16090/whats-the-most-appropriate-name-for-non-italicized-text-roman-or-upright">Non-italicized FAQ on Stack Exchange</a> or <a href="https://en.wikipedia.org/wiki/Emphasis_(typography)#Design">Emphasis on Wikipedia</a>.</dd>
 
 </dl>
 
