@@ -171,21 +171,31 @@ permalink: style-guide/
 
 <h3>Posts List</h3>
 <div class="livedemo">
-<ol class="posts posts">
+<ol class="posts">
 	<li class="subhed">Year</li>
+	<li><a href="#" class="posts-link">Blog post entry.</a></li>
 	<li><a href="#" class="posts-link">Blog post entry.</a></li>
 	<li><a href="#" class="posts-link">Blog post entry.</a></li>
 </ol>
 </div>
 
-<h4>with Counter</h4>
+<h4>with Standard Counter (Counts up)</h4>
 <div class="livedemo">
-<ol class="posts posts-count" style="counter-reset: start-from 5">
+<ol class="posts posts-count posts-count-forward">
+	<li class="subhed">Sub-header</li>
+	<li><a href="#" class="posts-link">Blog post entry.</a></li>
+	<li><a href="#" class="posts-link">Blog post entry.</a></li>
+	<li><a href="#" class="posts-link">Blog post entry.</a></li>
+</ol>
+</div>
+
+<h4>with Post Counter (Counts down)</h4>
+<div class="livedemo">
+<ol class="posts posts-count" style="counter-reset: start-from 4">
 	<li class="subhed">Year</li>
 	<li><a href="#" class="posts-link">Blog post entry.</a></li>
 	<li><a href="#" class="posts-link">Blog post entry.</a></li>
 	<li class="subhed">Year</li>
-	<li><a href="#" class="posts-link">Blog post entry.</a></li>
 	<li><a href="#" class="posts-link">Blog post entry.</a></li>
 </ol>
 </div>
