@@ -3,7 +3,12 @@
 	font-size: 0.9285714285714em; /* 13px /14 */
 }
 .fontloademu label {
-	display: inline-block;
+	display: block;
 	white-space: nowrap;
 	margin-left: .5em;
+}
+@media (min-width: 37.5em) {
+	.fontloademu label {
+		display: inline-block;
+	}
 }
