@@ -15,6 +15,7 @@ postRank: 1
 _This guide is not intended for use with font icons, which have different loading priorities and use cases. Also, SVG is probably a better long term choice._
 
 **Updated July 27, 2017** with new information on `font-display`.
+**Updated August 14, 2017** with a link to a [glossary page](/web/webfont-glossary/).
 
 ## Jump to:
 
@@ -43,6 +44,10 @@ _This guide is not intended for use with font icons, which have different loadin
 </style>
 <a href="/web/img/posts/comprehensive-webfonts/strategies.svg"><img src="/web/img/posts/comprehensive-webfonts/strategies.svg" alt="A diagram describing the relationship between the font loading strategies" class="primary" id="webfont-strategies-chart"></a>
 
+## Glossary
+
+If you run into a term that you don’t know, please consult the [glossary of web font loading terms](/web/webfont-glossary/) I’ve prepared. If you don’t find something on there, please [let me know on Twitter @zachleat](https://twitter.com/zachleat) or in the comments below!
+
 ## Quick Guide
 
 If you’re looking for a specific approach, I’ve prepared some handy links that will take you to the section you need. Let’s say you want an approach that:
@@ -53,7 +58,7 @@ If you’re looking for a specific approach, I’ve prepared some handy links th
 
 * **is the best performance-oriented approach**: Use one of the Critical FOFT approaches. Personally, at time of writing my preference is [Critical FOFT with Data URI](#critical-foft-data-uri) but will shift toward [Critical FOFT with `preload`](#critical-foft-preload) as browser support for `preload` increases.
 
-* **will work well with a large number of web fonts**: If you’re web font obsessed (anything more than 4 or 5 web fonts or a total file size of more than 100KB) this one is kind of tricky. I’d first recommend trying to pare your web font usage down, but if that isn’t possible stick with a standard [FOFT, or FOUT with Two Stage Render](#foft) approach. Use separate FOFT approaches for each typeface (grouping of Roman, Bold, Italic, et cetera).
+* **will work well with a large number of web fonts**: If you’re web font obsessed (anything more than 4 or 5 web fonts or a total file size of more than 100KB) this one is kind of tricky. I’d first recommend trying to pare your web font usage down, but if that isn’t possible stick with a standard [FOFT, or FOUT with Two Stage Render](#foft) approach. Use separate FOFT approaches for each typeface (grouping of roman, bold, italic, et cetera).
 
 * **will work with my existing cloud/web font hosting solution**: FOFT approaches generally require self hosting, so stick with the tried and true [FOUT with a Class](#fout-class) approach.
 
@@ -232,7 +237,7 @@ Use the CSS Font Loading API with a polyfill to detect when a specific font has 
 
 ## <span id="foft">FOFT, or FOUT with Two Stage Render</span>
 
-This approach builds on the [FOUT with a Class](#fout-class) method and is useful when you’re loading multiple weights or styles of the same typeface, _e.g._ Roman, Bold, Italic, Bold Italic, Book, Heavy, and others. We split those web fonts into two stages: the Roman first, which will then also immediately render faux-bold and faux-italic content (using [font synthesis](https://www.igvita.com/2014/09/16/optimizing-webfont-selection-and-synthesis/)) while the real web fonts for heavier weights and alternative styles are loading.
+This approach builds on the [FOUT with a Class](#fout-class) method and is useful when you’re loading multiple weights or styles of the same typeface, _e.g._ roman, bold, italic, bold italic, book, heavy, and others. We split those web fonts into two stages: the roman first, which will then also immediately render faux-bold and faux-italic content (using [font synthesis](https://www.igvita.com/2014/09/16/optimizing-webfont-selection-and-synthesis/)) while the real web fonts for heavier weights and alternative styles are loading.
 
 * **[Demo: FOFT, or FOUT with Two Stage Render](/web-fonts/demos/foft.html)** (includes sessionStorage trick for repeat view optimization)
 * [Compare source code for FOFT against FOUT with a Class](https://gist.github.com/zachleat/3b9414a4be8565999a5d483039cf82d1/revisions?diff=split#diff-0)
@@ -241,7 +246,7 @@ This approach builds on the [FOUT with a Class](#fout-class) method and is usefu
 ### Pros
 
 * _All the existing Pros of the [FOUT with a Class](#fout-class) approach._
-* Rendering performance: Greatly reduces the amount of content jumping that occurs when the web font has loaded. Given that we divide our web font loads into two stages, this allows the first stage (the Roman font—the one that will incur the most reflow) much quicker than if we had grouped all our fonts together into a single repaint.
+* Rendering performance: Greatly reduces the amount of content jumping that occurs when the web font has loaded. Given that we divide our web font loads into two stages, this allows the first stage (the roman font—the one that will incur the most reflow) much quicker than if we had grouped all our fonts together into a single repaint.
 
 ### Cons
 
@@ -252,7 +257,7 @@ This approach builds on the [FOUT with a Class](#fout-class) method and is usefu
 
 ## <span id="critical-foft">Critical FOFT</span>
 
-The only difference between this method and standard FOFT approach is that instead of the full Roman web font in the first stage, we use a subset Roman web font (usually only containing A-Z and optionally 0-9 and/or punctuation). The full Roman web font is instead loaded in the second stage with the other weights and styles.
+The only difference between this method and standard FOFT approach is that instead of the full roman web font in the first stage, we use a subset roman web font (usually only containing A-Z and optionally 0-9 and/or punctuation). The full roman web font is instead loaded in the second stage with the other weights and styles.
 
 * **[Demo: Critical FOFT](/web-fonts/demos/critical-foft.html)** (includes sessionStorage trick for repeat view optimization)
 * [Compare source code for Critical FOFT against FOFT](https://gist.github.com/zachleat/1c2ee3c30ded23922cf4a9720283edfe/revisions?diff=split#diff-0)
@@ -266,14 +271,14 @@ The only difference between this method and standard FOFT approach is that inste
 ### Cons
 
 * _All the existing Cons of the [FOFT](#foft) approach._
-* Introduces a small amount overhead in that the subset Roman font loaded in the first stage is duplicated by the full Roman web font loaded in the second stage. This is the price we’re paying to minimize reflow.
+* Introduces a small amount overhead in that the subset roman font loaded in the first stage is duplicated by the full roman web font loaded in the second stage. This is the price we’re paying to minimize reflow.
 * License restriction: Requires subsetting.
 
 ### Verdict: Use one of the improved Critical FOFT variations below.
 
 ## <span id="critical-foft-data-uri">Critical FOFT with Data URI</span>
 
-This variation of the Critical FOFT approach simply changes the mechanism through which we load the first stage.  Instead of using our normal font loading JavaScript API to initiate a download, we simply embed the web font as a inline Data URI directly in the markup. As previously discussed, this will block initial render but since we’re only embedding a very small subset Roman web font this is a small price to pay to mostly eliminate FOUT.
+This variation of the Critical FOFT approach simply changes the mechanism through which we load the first stage.  Instead of using our normal font loading JavaScript API to initiate a download, we simply embed the web font as a inline Data URI directly in the markup. As previously discussed, this will block initial render but since we’re only embedding a very small subset roman web font this is a small price to pay to mostly eliminate FOUT.
 
 * **[Demo: Critical FOFT with Data URI](/web-fonts/demos/critical-foft-data-uri.html)** (includes sessionStorage trick for repeat view optimization)
 * [Compare source code for Critical FOFT with Data URI against Critical FOFT](https://gist.github.com/zachleat/b57b7fce3e1eb6d8c301221607d53c34/revisions?diff=split#diff-0)
@@ -282,7 +287,7 @@ This variation of the Critical FOFT approach simply changes the mechanism throug
 ### Pros
 
 * _All the existing Pros of the [Critical FOFT](#critical-foft) approach._
-* Eliminates FOIT and greatly reduces FOUT for the Roman font. A small reflow will occur for additional characters loaded in the second stage and when the other weights and styles are loaded, but it will have a much smaller impact.
+* Eliminates FOIT and greatly reduces FOUT for the roman font. A small reflow will occur for additional characters loaded in the second stage and when the other weights and styles are loaded, but it will have a much smaller impact.
 
 ### Cons
 
