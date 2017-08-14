@@ -9,7 +9,7 @@ tags:
   - font-loading
 ---
 
-After publishing [The Comprehensive Guide to Web Font Loading](/web/comprehensive-webfonts/), I had a few requests to define a few terms used there. This document is a response to those requests. If you don’t find something on here, please [let me know on Twitter @zachleat](https://twitter.com/zachleat) or in the comments below!
+After publishing [The Comprehensive Guide to Font Loading Strategies](/web/comprehensive-webfonts/), I had a few requests to define a few terms used there. This document is a response to those requests. If you don’t find something on here, please [let me know on Twitter @zachleat](https://twitter.com/zachleat) or in the comments below!
 
 <ul>
 	<li><a href="#foft">FOFT</a></li>
