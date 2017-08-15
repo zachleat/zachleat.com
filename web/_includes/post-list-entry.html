@@ -14,11 +14,10 @@
 		{% elsif post.tags contains 'external' %}<span class="external" title="External Link"><span class="icon-link-external"></span></span>
 		{% endif %}
 		{% if include.view == 'project' %}
-			{% if post.project_name %}{{ post.project_name }}{% else %}{{ post.title }}{% endif %}
+			{% if post.project_name %}{{ post.project_name }}{% else %}{{ post.title }}{% endif %}</a>
 		{% else %}
-			{{ post.title }}
+			{{ post.title }}</a>
 		{% endif %}
-	</a>
 	<span class="tags">{% if post.categories contains 'font-loading' %}<a href="/web/fonts/" class="tag font-loading">Web Fonts</a>{% endif %}{% if post.tags contains 'project' %}<a href="/web/projects/" class="tag">Project</a>{% endif %}{% if post.tags contains 'research' %}<a href="/web/research/" class="tag">Research</a>{% endif %}{% if post.tags contains 'speaking' or post.tags contains 'video' or post.tags contains 'audio' %}<a href="/web/speaking/" class="tag">Speaking</a>{% endif %}{% if post.tags contains 'video' %}<span class="tag video">{% if post.medialength %}<span class="length">{{ post.medialength }}</span>{% endif %} Video</span>{% endif %}{% if post.tags contains 'audio' %}<span class="tag audio">{% if post.medialength %}<span class="length">{{ post.medialength }}</span>{% endif %} Audio</span>{% endif %}{% if post.postRank %}<a href="/web/best-of/" class="tag postrank" title="Popularity Ranking">🔥 #{{ post.postRank }}</a>{% endif %}{% if post.tags contains 'highlight' %}<a href="/web/highlights/" class="tag highlight" title="Highlight"><span class="highlight-label">Highlight </span><span class="highlight-star" aria-hidden="true">★</span></a>{% endif %}</span>
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>
 	{% if include.view == 'project' %}

@@ -42,11 +42,11 @@ _This guide is not intended for use with font icons, which have different loadin
 	}
 }
 </style>
-<a href="/web/img/posts/comprehensive-webfonts/strategies.svg"><img src="/web/img/posts/comprehensive-webfonts/strategies.svg" alt="A diagram describing the relationship between the font loading strategies" class="primary" id="webfont-strategies-chart"></a>
+<img src="/web/img/posts/comprehensive-webfonts/strategies.svg" alt="A diagram describing the relationship between the font loading strategies" class="primary" id="webfont-strategies-chart">
 
 ## Glossary
 
-If you run into a term that you don’t know, please consult the [glossary of web font loading terms](/web/webfont-glossary/) I’ve prepared. If you don’t find something on there, please [let me know on Twitter @zachleat](https://twitter.com/zachleat) or in the comments below!
+If you run into a term that you don’t know, please consult the [glossary of web font loading terms](/web/webfont-glossary/) I’ve prepared. If a term is missing in the glossary, please [let me know on Twitter @zachleat](https://twitter.com/zachleat) or in the comments.
 
 ## Quick Guide
 

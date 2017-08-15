@@ -28,7 +28,6 @@ dt {
 dd {
 	font-size: 0.9473684210526em; /* 18px /19 */
 	margin: 0 0 1.5em 0;
-	@include webfontItalic;
 }
 
 /* Word Break */
@@ -823,8 +822,10 @@ a[href].tag:visited:hover {
 	background-color: #f1f1f1;
 }
 .tag.font-loading-guide {
+	display: block;
 	text-transform: none;
 	text-decoration: none;
+	font-size: 13px;
 }
 .tag + .tag {
 	margin-left: -6px;

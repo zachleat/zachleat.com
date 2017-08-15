@@ -9,7 +9,7 @@ tags:
   - font-loading
 ---
 
-After publishing [The Comprehensive Guide to Font Loading Strategies](/web/comprehensive-webfonts/), I had a few requests to define a few terms used there. This document is a response to those requests. If you don’t find something on here, please [let me know on Twitter @zachleat](https://twitter.com/zachleat) or in the comments below!
+After publishing [The Comprehensive Guide to Font Loading Strategies](/web/comprehensive-webfonts/), I had a few requests to define a few terms used there. This document is a response to those requests. If something is missing below, please [let me know on Twitter @zachleat](https://twitter.com/zachleat) or in the comments.
 
 <ul>
 	<li><a href="#foft">FOFT</a></li>
@@ -58,3 +58,10 @@ After publishing [The Comprehensive Guide to Font Loading Strategies](/web/compr
 	<dt id="foft">FOFT</dt>
 	<dd><a href="/web/foft/">Flash of Faux Text</a>: A font loading strategy to render a roman web font first, and then use <code>font-synthesis</code> to render bold and italic variations immediately while the remaining true bold and true italic web font variations continue to load.</dd>
 </dl>
+
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ The Web Font Loading Glossary, a companion to the Font Loading Strategies Guide <a href="https://t.co/RRzVWDrPMB">https://t.co/RRzVWDrPMB</a><br><br>Hopefully more beginner-friendly!</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/897092905617281024">August 14, 2017</a></blockquote>
+	</div>
+</div>
