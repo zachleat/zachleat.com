@@ -176,7 +176,7 @@ figcaption strong,
 		min-height: 36em;
 	}
 }
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 34.375em) {
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 28.75em) { /* 430px /16 */
 	.rail {
 		position: fixed;
 	}
@@ -855,6 +855,9 @@ a[href].tag:visited:hover {
 		line-height: 20px;
 		height: 22px;
 		margin: 8px 0 16px;
+	}
+	.tag.font-loading-guide {
+		margin-top: 0.6153846153846em; /* 8px /13 */
 	}
 }
 
