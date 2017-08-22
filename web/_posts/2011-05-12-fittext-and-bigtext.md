@@ -10,7 +10,7 @@ tags:
   - project
   - font-loading
   - popular-posts
-postRank: 12
+postRank: 13
 ---
 
 Earlier this week, [@TrentWalton][1] [tweeted][2]:
