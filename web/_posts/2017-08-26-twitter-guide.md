@@ -7,8 +7,10 @@ categories:
   - presentations
 tags:
   - speaking
+  - popular-posts
 stylesheet: keynote-extractor.css
 templateclass: wider
+postRank: 13
 ---
 
 <div class="slide">
