@@ -3,6 +3,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.sr-only,
 .a11y-only {
 	@include a11y-only;
 }
@@ -348,6 +349,10 @@ h2{
 	margin-top: 3em;
 	padding-bottom: .5em;
 	border-bottom: 1px solid #e9e9e9;
+}
+.maxwidth .slide h2 {
+	margin-top: .5em;
+	border-bottom: none;
 }
 h4,
 h5 {
