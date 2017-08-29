@@ -48,11 +48,11 @@ module.exports = function(grunt) {
 						pageviews[newslug].postedYear = "";
 						pageviews[newslug].averageViews = "";
 					}
-				} /* else {
-						console.log( "POST NOT FOUND!", slug[1] );
-					}*/
+				} else {
+					console.warn( ">>> WARNING POST NOT FOUND!", slug[1] );
+				}
 			} else {
-				// console.log( "bad match:", entry[ 0 ], " to ", path );
+				console.warn( ">>> WARNING bad match:", entry[ 0 ], " to ", path );
 			}
 		});
 
@@ -62,6 +62,14 @@ module.exports = function(grunt) {
 		}
 		pageviewsArr = pageviewsArr.sort(function(a, b) {
 			return b.averageViews - a.averageViews;
+		});
+
+		var totalviewsArr = [];
+		for (var j in pageviews) {
+			totalviewsArr.push(pageviews[j]);
+		}
+		totalviewsArr = totalviewsArr.sort(function(a, b) {
+			return b.views - a.views;
 		});
 
 		console.log( "> Deleting previous post ranks, tags from front matters." );
@@ -76,6 +84,18 @@ module.exports = function(grunt) {
 			fs.writeFileSync( entry.path, frontmatter.stringify());
 		});
 
+		totalviewsArr.forEach(function(entry, j) {
+			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
+			delete frontmatter.data.postRankTotalViews;
+			if( frontmatter.data.tags ) {
+				_remove( frontmatter.data.tags, function( tag ) {
+					return tag === "popular-posts-total";
+				});
+			}
+			fs.writeFileSync( entry.path, frontmatter.stringify());
+		});
+		console.log( "> Deleting complete." );
+
 		console.log( "> Editing post front matter with post ranks (avg per day)." );
 		pageviewsArr.slice(0, 20).forEach(function(entry, j) {
 			// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
@@ -87,26 +107,6 @@ module.exports = function(grunt) {
 			frontmatter.data.tags.push( 'popular-posts' );
 			frontmatter.data.tags = _uniq( frontmatter.data.tags );
 			console.log( "Writing", entry.path );
-			fs.writeFileSync( entry.path, frontmatter.stringify());
-		});
-
-		var totalviewsArr = [];
-		for (var j in pageviews) {
-			totalviewsArr.push(pageviews[j]);
-		}
-		totalviewsArr = totalviewsArr.sort(function(a, b) {
-			return b.views - a.views;
-		});
-
-		console.log( "> Deleting previous post ranks, tags from front matters." );
-		totalviewsArr.forEach(function(entry, j) {
-			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
-			delete frontmatter.data.postRankTotalViews;
-			if( frontmatter.data.tags ) {
-				_remove( frontmatter.data.tags, function( tag ) {
-					return tag === "popular-posts-total";
-				});
-			}
 			fs.writeFileSync( entry.path, frontmatter.stringify());
 		});
 

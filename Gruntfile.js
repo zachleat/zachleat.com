@@ -340,6 +340,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['clean', 'config', 'assets', 'images', 'content', 'feedburner-size']);
 
 	// Upload to Production
-	grunt.registerTask('stage', ['bestof', 'clean', 'config', 'assets', 'images', 'content', 'feedburner-size', 'htmlmin', 'zopfli']);
+	grunt.registerTask('stage', ['clean', 'config', 'assets', 'images', 'content', 'feedburner-size', 'htmlmin', 'zopfli']);
 	grunt.registerTask('deploy', ['stage', 'shell:upload']);
 };
