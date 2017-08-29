@@ -3,8 +3,8 @@ title: 'In Case You Missed It: 2013'
 author: Zach Leatherman
 layout: post
 permalink: /icymi/2013/
-categories:
-tags:
+categories: null
+tags: null
 ---
 
 Rather than a bunch of individual “In Case You Missed It” tweets, I thought I’d just do one big yearly semi-comprehensive recap of the web community things that I contributed to this year. Enjoy!

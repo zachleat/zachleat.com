@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript Frameworks and JSF'
+title: JavaScript Frameworks and JSF
 author: Zach Leatherman
 layout: post
 permalink: /javascript-frameworks-and-jsf/
@@ -18,6 +18,8 @@ tags:
   - Prototype
   - deprecated
   - feedtrim
+  - popular-posts-total
+postRankTotalViews: 17
 ---
 
 You’re programming a new web application using JSF, maybe with Facelets, maybe without. Which client-side JavaScript framework is going to work with it’s unstandardized method of assigning ID attributes to it’s elements? Here is an example of a JSF file:  

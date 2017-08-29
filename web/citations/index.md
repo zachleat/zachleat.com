@@ -1,5 +1,5 @@
 ---
-title: 'Citations'
+title: Citations
 author: Zach Leatherman
 layout: default
 tmpl: list

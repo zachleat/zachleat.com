@@ -3,8 +3,6 @@ title: 'Trash that &#8220;Back to Top&#8221; Link'
 author: Zach Leatherman
 layout: post
 permalink: /trash-that-back-to-top-link/
-bttc_cache:
-  - 1299718429:0
 categories:
   - Interface Design
   - JavaScript

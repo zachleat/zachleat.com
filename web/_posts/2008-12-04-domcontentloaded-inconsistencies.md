@@ -1,5 +1,5 @@
 ---
-title: 'DOMContentLoaded Inconsistencies (in Browsers and JavaScript Libraries)'
+title: DOMContentLoaded Inconsistencies (in Browsers and JavaScript Libraries)
 author: Zach Leatherman
 layout: post
 permalink: /domcontentloaded-inconsistencies/
@@ -10,6 +10,8 @@ tags:
   - highlight
   - research
   - smalltitle
+  - popular-posts-total
+postRankTotalViews: 12
 ---
 
 **Quick Summary**

@@ -3,12 +3,6 @@ title: 'YUI Code Review: YAHOO.namespace'
 author: Zach Leatherman
 layout: post
 permalink: /yui-code-review-yahoonamespace/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718871:0
 categories:
   - JavaScript
 tags:

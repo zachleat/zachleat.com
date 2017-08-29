@@ -1,5 +1,5 @@
 ---
-title: 'Jonathan Sharp at The Ajax Experience'
+title: Jonathan Sharp at The Ajax Experience
 author: Zach Leatherman
 layout: post
 permalink: /jonathan-sharp-at-the-ajax-experience/

@@ -10,8 +10,6 @@ tags:
   - highlight
   - research
   - font-loading
-  - popular-posts
-postRank: 20
 ---
 
 <figure>

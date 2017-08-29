@@ -1,10 +1,8 @@
 ---
-title: 'Fight Registrastination. Register to vote!'
+title: Fight Registrastination. Register to vote!
 author: Zach Leatherman
 layout: post
 permalink: /fight-registrastination-register-to-vote/
-bttc_cache:
-  - 1299718919:0
 categories:
   - Projects
 tags:

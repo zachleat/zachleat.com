@@ -8,7 +8,7 @@ categories:
 tags:
   - external
   - project
-external_url: http://www.filamentgroup.com/lab/politespace.html
+external_url: 'http://www.filamentgroup.com/lab/politespace.html'
 ---
 
 [**Read *Politespace, an unobtrusive alternative to input masks* on the Filament Group Lab.**](http://www.filamentgroup.com/lab/politespace.html)

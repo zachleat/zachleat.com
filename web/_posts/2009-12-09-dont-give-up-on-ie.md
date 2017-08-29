@@ -3,8 +3,6 @@ title: 'Don&#8217;t Give Up on Internet Explorer Yet'
 author: Zach Leatherman
 layout: post
 permalink: /dont-give-up-on-ie/
-bttc_cache:
-  - 1295487427:2
 categories:
   - Web Browsers
 tags:

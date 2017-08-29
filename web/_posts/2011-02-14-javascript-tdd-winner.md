@@ -1,10 +1,8 @@
 ---
-title: 'The JavaScript Testing Challenge Winner'
+title: The JavaScript Testing Challenge Winner
 author: Zach Leatherman
 layout: post
 permalink: /javascript-tdd-winner/
-bttc_cache:
-  - 1299495998:2
 categories:
   - Contests
   - JavaScript

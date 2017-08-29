@@ -3,12 +3,6 @@ title: 'Conservative Design Example: Multiple Option List'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-example-multiple-option-list/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719519:0
 categories:
   - Interface Design
   - JavaScript

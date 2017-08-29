@@ -1,5 +1,5 @@
 ---
-title: 'Changelog Podcast Interview for NEJS CONF 2015'
+title: Changelog Podcast Interview for NEJS CONF 2015
 author: Zach Leatherman
 layout: post
 permalink: /changelog-podcast/
@@ -8,7 +8,7 @@ categories:
 tags:
   - audio
   - external
-external_url: https://changelog.com/166/
+external_url: 'https://changelog.com/166/'
 medialength: 69 min
 ---
 

@@ -1,15 +1,14 @@
 ---
 title: Surnamespacing
 author: Zach Leatherman
-excerpt: "Everyone has a library.  Everyone has their own utility classes and functions they're using in their own personal and contracted projects.  And now that everyone has a blog too, they're all releasing their libraries as open source, using the commando underoo philosophy of wild, free, and unrestricted naming schemes for their code.  Not anymore.  Let's surnamespace."
+excerpt: >-
+  Everyone has a library.  Everyone has their own utility classes and functions
+  they're using in their own personal and contracted projects.  And now that
+  everyone has a blog too, they're all releasing their libraries as open source,
+  using the commando underoo philosophy of wild, free, and unrestricted naming
+  schemes for their code.  Not anymore.  Let's surnamespace.
 layout: post
 permalink: /surnamespacing/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718970:0
 categories:
   - Humor
   - Java

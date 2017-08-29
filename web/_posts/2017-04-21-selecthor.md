@@ -3,9 +3,9 @@ title: 'Selecthor: A Better way to Learn and Demo CSS Selectors'
 author: Zach Leatherman
 layout: post
 permalink: /selecthor/
-categories:
+categories: null
 tags:
- - project
+  - project
 headimage: /web/img/posts/selecthor/preview.jpg
 ---
 

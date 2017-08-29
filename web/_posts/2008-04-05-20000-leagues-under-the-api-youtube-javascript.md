@@ -3,12 +3,6 @@ title: '20000 Leagues Under the API: YouTube JavaScript'
 author: Zach Leatherman
 layout: post
 permalink: /20000-leagues-under-the-api-youtube-javascript/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718752:0
 categories:
   - CSS
   - JavaScript

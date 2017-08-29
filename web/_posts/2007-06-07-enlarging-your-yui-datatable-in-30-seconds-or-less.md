@@ -1,5 +1,5 @@
 ---
-title: 'Enlarging your YUI DataTable in 30 Seconds or Less!'
+title: Enlarging your YUI DataTable in 30 Seconds or Less!
 author: Zach Leatherman
 layout: post
 permalink: /enlarging-your-yui-datatable-in-30-seconds-or-less/

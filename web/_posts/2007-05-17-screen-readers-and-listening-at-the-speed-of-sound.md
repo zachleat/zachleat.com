@@ -1,14 +1,8 @@
 ---
-title: 'Screen Readers and Listening at the Speed of Sound'
+title: Screen Readers and Listening at the Speed of Sound
 author: Zach Leatherman
 layout: post
 permalink: /screen-readers-and-listening-at-the-speed-of-sound/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719057:0
 categories:
   - Application Design
   - Web Browsers

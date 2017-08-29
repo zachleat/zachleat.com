@@ -1,14 +1,8 @@
 ---
-title: 'Tips for Programming JavaScript Functions'
+title: Tips for Programming JavaScript Functions
 author: Zach Leatherman
 layout: post
 permalink: /tips-for-programming-javascript-functions/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719340:0
 categories:
   - JavaScript
 tags:

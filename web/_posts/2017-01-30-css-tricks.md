@@ -9,7 +9,7 @@ categories:
 tags:
   - video
   - external
-external_url: https://css-tricks.com/video-screencasts/152-font-loading-zach-leatherman/
+external_url: 'https://css-tricks.com/video-screencasts/152-font-loading-zach-leatherman/'
 medialength: 57 min
 ---
 

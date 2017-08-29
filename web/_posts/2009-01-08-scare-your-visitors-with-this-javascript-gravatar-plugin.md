@@ -1,5 +1,5 @@
 ---
-title: 'Scare Your Visitors with this JavaScript Gravatar Plugin'
+title: Scare Your Visitors with this JavaScript Gravatar Plugin
 author: Zach Leatherman
 layout: post
 permalink: /scare-your-visitors-with-this-javascript-gravatar-plugin/

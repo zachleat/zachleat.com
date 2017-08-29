@@ -1,5 +1,5 @@
 ---
-title: 'About'
+title: About
 author: Zach Leatherman
 layout: page
 ---

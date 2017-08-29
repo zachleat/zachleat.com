@@ -1,5 +1,5 @@
 ---
-title: 'A Web Developer Fumbling with Social Media'
+title: A Web Developer Fumbling with Social Media
 author: Zach Leatherman
 layout: post
 permalink: /fumbling-with-social-media/
@@ -23,7 +23,7 @@ Out of those seven events, three were the direct result of Mr. Paul Irish. While
 
 Trailblazing can lead to isolation. Solve problems collaboratively or competitively—don’t solve your own problems alone.
 
-After [BigText][4] came out, I was getting ` 2` RSS subscribers per day. Four months later when Paravel released [FitText][5] (Event #4) and linked to BigText that number jumped to ` 6`. Even though the two plugins were competitors, we were both trying to solve a similar problem and our growth became intertwined.
+After [BigText][4] came out, I was getting `2` RSS subscribers per day. Four months later when Paravel released [FitText][5] (Event #4) and linked to BigText that number jumped to `6`. Even though the two plugins were competitors, we were both trying to solve a similar problem and our growth became intertwined.
 
  [4]: http://www.zachleat.com/web/bigtext-makes-text-big/
  [5]: http://fittextjs.com

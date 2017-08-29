@@ -3,7 +3,6 @@ title: 'Frameworks, not Blameworks'
 author: Zach Leatherman
 layout: post
 permalink: /javascript-frameworks/
-
 ---
 
 Earlier this week, Paul Lewis wrote a [great post gathering data on the performance of popular JavaScript frameworks on mobile devices](https://aerotwist.com/blog/the-cost-of-frameworks/). It was a great conversation starter, evidenced by the many blog post responses it garnered from [Tom Dale](http://tomdale.net/2015/11/javascript-frameworks-and-mobile-performance/), [Dave Rupert](http://daverupert.com/2015/11/framework-cost/), and [Soledad Penadés](http://soledadpenades.com/2015/11/17/some-additional-thoughts-on-the-recent-discussion-about-frameworks-vs-vanilla-js-on-mobile/).

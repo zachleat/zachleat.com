@@ -3,12 +3,6 @@ title: 'Code Like the Big Boys: Flickr'
 author: Zach Leatherman
 layout: post
 permalink: /code-like-the-big-boys-flickr/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718760:0
 categories:
   - CSS
   - JavaScript

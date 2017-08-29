@@ -1,5 +1,5 @@
 ---
-title: 'Yet Another Pretty Date JavaScript'
+title: Yet Another Pretty Date JavaScript
 author: Zach Leatherman
 layout: post
 permalink: /yet-another-pretty-date-javascript/
@@ -10,6 +10,8 @@ tags:
   - highlight
   - project
   - feedtrim
+  - popular-posts-total
+postRankTotalViews: 15
 ---
 
 I can’t let this Pretty Date thing go. I decided to use a modification of [John Resig’s Pretty Date JavaScript implementation][1] written by Dean Landolt and shared in the comments on John’s page. The script was an obvious choice for the next iteration of [Alarmd][2], which is nearing completion as I type.

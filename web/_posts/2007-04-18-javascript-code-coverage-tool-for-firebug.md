@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript Code Coverage Tool for Firebug'
+title: JavaScript Code Coverage Tool for Firebug
 author: Zach Leatherman
 layout: post
 permalink: /javascript-code-coverage-tool-for-firebug/
@@ -15,6 +15,8 @@ tags:
   - deprecated
   - project
   - feedtrim
+  - popular-posts-total
+postRankTotalViews: 16
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]

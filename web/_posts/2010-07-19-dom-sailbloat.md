@@ -1,10 +1,8 @@
 ---
-title: 'Maiden Voyage of the DOM Sailbloat'
+title: Maiden Voyage of the DOM Sailbloat
 author: Zach Leatherman
 layout: post
 permalink: /dom-sailbloat/
-bttc_cache:
-  - 1299373451:4
 categories:
   - DOM
   - JavaScript

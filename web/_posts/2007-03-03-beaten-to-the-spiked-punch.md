@@ -1,14 +1,8 @@
 ---
-title: 'Beaten to the Spiked Punch'
+title: Beaten to the Spiked Punch
 author: Zach Leatherman
 layout: post
 permalink: /beaten-to-the-spiked-punch/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719161:0
 categories:
   - Other
 tags:

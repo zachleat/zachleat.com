@@ -4,7 +4,8 @@ module.exports = function(grunt) {
 		var fs = require("fs");
 		var cheerio = require("cheerio");
 		var matter = require("gray-matter");
-		var uniq = require('lodash.uniq');
+		var _uniq = require('lodash.uniq');
+		var _remove = require('lodash.remove');
 		var bestof = grunt.file.readJSON("zachleat-bestof.json").rows;
 		var pageviews = {};
 
@@ -63,7 +64,19 @@ module.exports = function(grunt) {
 			return b.averageViews - a.averageViews;
 		});
 
-		console.log( "> Editing post front matter." );
+		console.log( "> Deleting previous post ranks, tags from front matters." );
+		pageviewsArr.forEach(function(entry, j) {
+			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
+			delete frontmatter.data.postRank;
+			if( frontmatter.data.tags ) {
+				_remove( frontmatter.data.tags, function( tag ) {
+					return tag === "popular-posts";
+				});
+			}
+			fs.writeFileSync( entry.path, frontmatter.stringify());
+		});
+
+		console.log( "> Editing post front matter with post ranks (avg per day)." );
 		pageviewsArr.slice(0, 20).forEach(function(entry, j) {
 			// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
@@ -72,12 +85,55 @@ module.exports = function(grunt) {
 				frontmatter.data.tags = [];
 			}
 			frontmatter.data.tags.push( 'popular-posts' );
-			frontmatter.data.tags = uniq( frontmatter.data.tags );
+			frontmatter.data.tags = _uniq( frontmatter.data.tags );
+			console.log( "Writing", entry.path );
+			fs.writeFileSync( entry.path, frontmatter.stringify());
+		});
+
+		var totalviewsArr = [];
+		for (var j in pageviews) {
+			totalviewsArr.push(pageviews[j]);
+		}
+		totalviewsArr = totalviewsArr.sort(function(a, b) {
+			return b.views - a.views;
+		});
+
+		console.log( "> Deleting previous post ranks, tags from front matters." );
+		totalviewsArr.forEach(function(entry, j) {
+			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
+			delete frontmatter.data.postRankTotalViews;
+			if( frontmatter.data.tags ) {
+				_remove( frontmatter.data.tags, function( tag ) {
+					return tag === "popular-posts-total";
+				});
+			}
+			fs.writeFileSync( entry.path, frontmatter.stringify());
+		});
+
+		console.log( "> Editing post front matter with post ranks (total)." );
+		totalviewsArr.slice(0, 20).forEach(function(entry, j) {
+			// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
+			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
+			frontmatter.data.postRankTotalViews = ( j + 1 );
+			if( !frontmatter.data.tags ) {
+				frontmatter.data.tags = [];
+			}
+			frontmatter.data.tags.push( 'popular-posts-total' );
+			frontmatter.data.tags = _uniq( frontmatter.data.tags );
 			console.log( "Writing", entry.path );
 			fs.writeFileSync( entry.path, frontmatter.stringify());
 		});
 
 		console.log( "> Writing best-of jekyll template file." );
+		
+
+		function updateUpdatedDate( bestOfTemplatePath, updatedDate ) {
+			var bestofFrontMatter = matter( fs.readFileSync( bestOfTemplatePath, 'utf8') );
+			bestofFrontMatter.data.dataUpdatedDate = updatedDate;
+			console.log( "Writing", bestOfTemplatePath );
+			fs.writeFileSync( bestOfTemplatePath, bestofFrontMatter.stringify());
+		}
+
 		/* Warning this date won’t match the analytics data fetch date. */
 		/* TODO: use the file modified date on the zachleat-bestof.json include above. */
 		var updatedDate = new Date().toLocaleString("en-US", {
@@ -89,11 +145,8 @@ module.exports = function(grunt) {
 			timeZoneName: "short"
 		});
 
-		var bestOfTemplatePath = "web/best-of/index.html";
-		var bestofFrontMatter = matter( fs.readFileSync( bestOfTemplatePath, 'utf8') );
-		bestofFrontMatter.data.dataUpdatedDate = updatedDate;
-		console.log( "Writing", bestOfTemplatePath );
-		fs.writeFileSync( bestOfTemplatePath, bestofFrontMatter.stringify());
+		updateUpdatedDate( "web/best-of/index.html", updatedDate );
+		updateUpdatedDate( "web/best-of/best-of-total-views.html", updatedDate );
 
 		// var unitNormalizer = pageviewsArr[0].averageViews;
 		// pageviewsArr.slice(0, 20).forEach(function(entry, j) {

@@ -3,12 +3,6 @@ title: 'Nursery Rhyme Code Poem [JavaScript]'
 author: Zach Leatherman
 layout: post
 permalink: /nursery-rhyme-code-poem-js/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719071:0
 categories:
   - Artistic
   - JavaScript

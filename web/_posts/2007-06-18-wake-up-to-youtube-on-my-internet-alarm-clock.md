@@ -14,7 +14,9 @@ tags:
   - project
   - feedtrim
   - popular-posts
+  - popular-posts-total
 postRank: 20
+postRankTotalViews: 8
 ---
 
 **Update**: Try the new [ALARMd 2 Beta][1], with Google Calendar integration and offline Youtube caching.

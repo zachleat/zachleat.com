@@ -1,5 +1,5 @@
 ---
-title: 'Tech Meetup at the White House'
+title: Tech Meetup at the White House
 author: Zach Leatherman
 layout: post
 permalink: /whitehouse/

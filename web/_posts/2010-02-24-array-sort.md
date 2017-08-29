@@ -1,5 +1,5 @@
 ---
-title: 'Internet Explorer Array.sort Unreliable'
+title: Internet Explorer Array.sort Unreliable
 author: Zach Leatherman
 layout: post
 permalink: /array-sort/
@@ -8,6 +8,8 @@ categories:
 tags:
   - highlight
   - research
+  - popular-posts-total
+postRankTotalViews: 19
 ---
 
 What would you expect to be the result of executing the following code?

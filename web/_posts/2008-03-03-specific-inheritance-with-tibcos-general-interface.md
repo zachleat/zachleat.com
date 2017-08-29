@@ -3,12 +3,6 @@ title: 'Specific Inheritance with TIBCO&#8217;s General Interface'
 author: Zach Leatherman
 layout: post
 permalink: /specific-inheritance-with-tibcos-general-interface/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719358:0
 categories:
   - JavaScript
 tags:

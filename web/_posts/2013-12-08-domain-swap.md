@@ -3,7 +3,7 @@ title: 'Domain Swap: A Google Chrome Extension'
 author: Zach Leatherman
 layout: post
 permalink: /domain-swap/
-categories:
+categories: null
 tags:
   - project
 ---

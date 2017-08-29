@@ -1,5 +1,5 @@
 ---
-title: 'Forgive My Feed'
+title: Forgive My Feed
 author: Zach Leatherman
 layout: post
 permalink: /forgive-my-feed/

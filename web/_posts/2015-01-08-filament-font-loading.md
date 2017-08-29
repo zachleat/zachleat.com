@@ -4,12 +4,12 @@ author: Zach Leatherman
 layout: post
 permalink: /filament-font-loading/
 categories:
- - font-loading
+  - font-loading
 tags:
- - external
- - research
- - font-loading
-external_url: http://www.filamentgroup.com/lab/font-loading.html
+  - external
+  - research
+  - font-loading
+external_url: 'http://www.filamentgroup.com/lab/font-loading.html'
 ---
 
 [**Read *How we use web fonts responsibly, or, avoiding a @font-face-palm* on the Filament Group Lab.**](http://www.filamentgroup.com/lab/font-loading.html)

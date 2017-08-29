@@ -1,5 +1,5 @@
 ---
-title: 'Namespaces in Ext DomQuery'
+title: Namespaces in Ext DomQuery
 author: Zach Leatherman
 layout: post
 permalink: /namespaces-in-ext-domquery/

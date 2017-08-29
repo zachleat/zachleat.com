@@ -3,12 +3,6 @@ title: 'Conservative Design: Option List'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-option-list/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719545:0
 categories:
   - Interface Design
 tags:

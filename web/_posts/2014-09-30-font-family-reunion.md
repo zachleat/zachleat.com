@@ -1,14 +1,14 @@
 ---
-title: 'A Font Family Reunion'
+title: A Font Family Reunion
 author: Zach Leatherman
 layout: post
 categories:
- - project
- - font-loading
+  - project
+  - font-loading
 tags:
- - project
- - highlight
- - font-loading
+  - project
+  - highlight
+  - font-loading
 permalink: /font-family-reunion/
 ---
 

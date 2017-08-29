@@ -1,5 +1,5 @@
 ---
-title: 'Problems with Looping through window.setInterval'
+title: Problems with Looping through window.setInterval
 author: Zach Leatherman
 layout: post
 permalink: /problems-with-looping-through-windowsetinterval/

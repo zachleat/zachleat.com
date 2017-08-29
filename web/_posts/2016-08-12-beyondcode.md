@@ -1,5 +1,5 @@
 ---
-title: 'Beyond Code Interview at NEJS CONF 2015'
+title: Beyond Code Interview at NEJS CONF 2015
 author: Zach Leatherman
 layout: post
 permalink: /beyond-code-interview/
@@ -8,7 +8,7 @@ categories:
 tags:
   - video
   - external
-external_url: https://beyondcode.tv/zach-leatherman/
+external_url: 'https://beyondcode.tv/zach-leatherman/'
 medialength: 3 min
 ---
 

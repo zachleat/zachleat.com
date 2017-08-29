@@ -1,12 +1,12 @@
 ---
-title: 'Bernie Tweets'
+title: Bernie Tweets
 author: Zach Leatherman
 layout: post
 permalink: /bernie-tweets/
-categories:
+categories: null
 headimage: /web/img/posts/bernie-tweets/preview.jpg
 tags:
- - project
+  - project
 ---
 
 Of course Bernie would print a tweet. Of course. He probably went to a local Kinkos/Fedex himself and made a giant copy of Donald’s tweet to use as a prop for a Senate hearing.

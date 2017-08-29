@@ -1,16 +1,15 @@
 ---
-title: 'The Performance and Usability of Web Fonts—Velocity New York City'
+title: The Performance and Usability of Web Fonts—Velocity New York City
 author: Zach Leatherman
 layout: post
 permalink: /velocity/2015-nyc/
 categories:
- - presentations
- - font-loading
+  - presentations
+  - font-loading
 tags:
- - video
- - font-loading
+  - video
+  - font-loading
 medialength: 42 min
-
 ---
 
 * [Slides on Speakerdeck](https://speakerdeck.com/zachleat/the-performance-and-usability-of-font-loading-velocity-nyc-2015)

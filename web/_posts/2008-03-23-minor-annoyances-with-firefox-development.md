@@ -1,14 +1,8 @@
 ---
-title: 'Minor Annoyances with Firefox Development'
+title: Minor Annoyances with Firefox Development
 author: Zach Leatherman
 layout: post
 permalink: /minor-annoyances-with-firefox-development/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718896:0
 categories:
   - Web Browsers
 tags:

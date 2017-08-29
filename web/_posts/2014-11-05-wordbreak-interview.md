@@ -1,5 +1,5 @@
 ---
-title: 'word-break Podcast Interview'
+title: word-break Podcast Interview
 author: Zach Leatherman
 layout: post
 permalink: /word-break-podcast/
@@ -8,7 +8,7 @@ categories:
 tags:
   - audio
   - external
-external_url: http://word-break.com/podcast/episode-01-with-zach-leatherman/
+external_url: 'http://word-break.com/podcast/episode-01-with-zach-leatherman/'
 medialength: 49 min
 ---
 

@@ -16,7 +16,9 @@ tags:
   - project
   - font-loading
   - popular-posts
+  - popular-posts-total
 postRank: 5
+postRankTotalViews: 1
 ---
 
 *I like shortcuts: Fork [BigText on Github][github] or Check out the [BigText Demo Wizard][wizard]

@@ -1,17 +1,17 @@
 ---
-title: 'Better @font-face with Font Load Events on Dev.Opera'
+title: Better @font-face with Font Load Events on Dev.Opera
 author: Zach Leatherman
 layout: post
 permalink: /external/devopera-font-face/
-external_url: https://dev.opera.com/articles/better-font-face/
+external_url: 'https://dev.opera.com/articles/better-font-face/'
 categories:
- - font-loading
+  - font-loading
 tags:
- - external
- - highlight
- - research
- - font-loading
-date: 2014-09-26 12:00:00
+  - external
+  - highlight
+  - research
+  - font-loading
+date: 2014-09-26T12:00:00.000Z
 ---
 
 [**Read *Better @font-face with Font Load Events* on Dev.Opera.**](https://dev.opera.com/articles/better-font-face/)

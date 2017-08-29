@@ -1,14 +1,8 @@
 ---
-title: 'What Sound Does a Cow Make?  MooTools.'
+title: What Sound Does a Cow Make?  MooTools.
 author: Zach Leatherman
 layout: post
 permalink: /what-sound-does-a-cow-make-mootools/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719220:0
 categories:
   - JavaScript
   - Reviews

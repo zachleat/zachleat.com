@@ -1,5 +1,5 @@
 ---
-title: 'Pragmatic Progressive Enhancement'
+title: Pragmatic Progressive Enhancement
 author: Zach Leatherman
 layout: post
 permalink: /pragmatic/

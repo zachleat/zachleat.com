@@ -1,17 +1,17 @@
 ---
-title: 'Better @font-face with Font Load Events—SmashingConf Whistler'
+title: Better @font-face with Font Load Events—SmashingConf Whistler
 author: Zach Leatherman
 layout: post
 permalink: /smashingconf/2014/
 description: Recap of SmashingConf in Whistler (December 2014)
-headimage: https://www.zachleat.com/web/img/posts/whistler-gondola.jpg
+headimage: 'https://www.zachleat.com/web/img/posts/whistler-gondola.jpg'
 categories:
- - presentations
- - font-loading
+  - presentations
+  - font-loading
 tags:
- - video
- - highlight
- - font-loading
+  - video
+  - highlight
+  - font-loading
 medialength: 48 min
 ---
 

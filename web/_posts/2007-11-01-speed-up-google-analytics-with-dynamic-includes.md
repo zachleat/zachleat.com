@@ -1,5 +1,5 @@
 ---
-title: 'Speed up Including Google Analytics'
+title: Speed up Including Google Analytics
 author: Zach Leatherman
 layout: post
 permalink: /speed-up-google-analytics-with-dynamic-includes/

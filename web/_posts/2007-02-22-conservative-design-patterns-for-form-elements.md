@@ -1,5 +1,5 @@
 ---
-title: 'Conservative Design Patterns for Form Elements'
+title: Conservative Design Patterns for Form Elements
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-patterns-for-form-elements/

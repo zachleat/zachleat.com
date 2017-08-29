@@ -1,10 +1,10 @@
 ---
-title: 'Trying out a new Font Stack'
+title: Trying out a new Font Stack
 author: Zach Leatherman
 layout: post
 permalink: /a-new-font-stack/
-categories: 
-tags:
+categories: null
+tags: null
 distVersion: 0.3.8
 ---
 

@@ -3,8 +3,6 @@ title: 'DIY Webdings &#8211; CSS Sprites using @font-face'
 author: Zach Leatherman
 layout: post
 permalink: /css-sprites-using-font-face/
-bttc_cache:
-  - 1299711533:19
 categories:
   - CSS
 tags:

@@ -1,12 +1,10 @@
 ---
-title: 'ALARMd is now on Github'
+title: ALARMd is now on Github
 author: Zach Leatherman
 layout: post
 permalink: /alarmd-is-now-on-github/
-bttc_cache:
-  - 1299718342:0
-categories:
-tags:
+categories: null
+tags: null
 ---
 
 In an effort to ~~mindlessly copy what everyone else on the internet is doing~~ keep current on the latest and greatest Source Code Management tools, I decided that it would be good practice to move my open source project ALARMd (as seen on [Lifehacker][1]) from [Google Code][2] to Github.

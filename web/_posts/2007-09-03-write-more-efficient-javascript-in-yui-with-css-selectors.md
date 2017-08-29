@@ -1,5 +1,5 @@
 ---
-title: 'Write More Efficient Javascript in YUI with CSS Selectors'
+title: Write More Efficient Javascript in YUI with CSS Selectors
 author: Zach Leatherman
 layout: post
 permalink: /write-more-efficient-javascript-in-yui-with-css-selectors/

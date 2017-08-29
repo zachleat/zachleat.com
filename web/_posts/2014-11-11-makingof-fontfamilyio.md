@@ -1,14 +1,14 @@
 ---
-title: 'The Making of fontfamily.io'
+title: The Making of fontfamily.io
 author: Zach Leatherman
 layout: post
 permalink: /making-fontfamilyio/
 categories:
- - presentations
- - font-loading
+  - presentations
+  - font-loading
 tags:
- - video
- - font-loading
+  - video
+  - font-loading
 medialength: 19 min
 ---
 

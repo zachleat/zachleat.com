@@ -1,17 +1,16 @@
 ---
-title: 'A Brief History of that Time You Used Web Fonts—SmashingConf Barcelona'
+title: A Brief History of that Time You Used Web Fonts—SmashingConf Barcelona
 author: Zach Leatherman
 layout: post
 permalink: /smashingconf/2015/
 headimage: /web/img/posts/barcelona/stage.jpg
 categories:
- - presentations
- - font-loading
+  - presentations
+  - font-loading
 tags:
- - video
- - font-loading
+  - video
+  - font-loading
 medialength: 48 min
-
 ---
 
 <img src="/web/img/posts/barcelona/stage.jpg" alt="About to go on stage at SmashingConf Barcelona">

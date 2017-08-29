@@ -1,13 +1,13 @@
 ---
-title: 'Lazy Loading Web Fonts Is Probably Not What You Want'
+title: Lazy Loading Web Fonts Is Probably Not What You Want
 author: Zach Leatherman
 layout: post
 permalink: /lazy-loading-webfonts/
 categories:
- - font-loading
+  - font-loading
 tags:
- - font-loading
- - highlight
+  - font-loading
+  - highlight
 ---
 
 One month ago [Monica Dinculescu wrote a blog post entitled *Web fonts, boy, I don’t know*](https://meowni.ca/posts/web-fonts/). In it, she writes:

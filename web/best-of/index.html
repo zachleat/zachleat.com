@@ -1,9 +1,9 @@
 ---
-title: Top 20 Popular Posts
+title: Top 20 Popular Posts (sorted by Views per Day)
 layout: default
 tmpl: list
 permalink: best-of/
-dataUpdatedDate: 'August 21, 2017, 9:14 PM CDT'
+dataUpdatedDate: 'August 24, 2017, 10:49 AM CDT'
 ---
 
 <div class="maxwidth-list">
@@ -11,11 +11,11 @@ dataUpdatedDate: 'August 21, 2017, 9:14 PM CDT'
 		<h1 class="posts-indent">Top 20 Popular Posts 🔥</h1>
 
 		<div class="posts-paragraph posts-indent">
-			<p>Last updated {{ page.dataUpdatedDate }}. Ordered by average number of pageviews per day. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically</a> from the Google Analytics API. I also keep a highlight reel of the <a href="https://twitter.com/i/moments/816767407326949377">most popular tweets</a>.</p>
+			<p>Last updated {{ page.dataUpdatedDate }}. Ordered by pageviews per day. <a href="/web/best-of/total-views/">Sort instead by total pageviews ☀️</a>. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically</a> from the Google Analytics API. I also keep a highlight reel of the <a href="https://twitter.com/i/moments/816767407326949377">most popular tweets</a>.</p>
 		</div>
 
 		{% assign rankedPosts = site.tags.popular-posts | sort:"postRank" %}  
-		<ol class="posts posts-count posts-count-forward">
+		<ol class="posts posts-count posts-count-forward posts-showall">
 			{% for post in rankedPosts %}
 				{% include post-list-entry.html ignoreYear="true" %}
 			{% endfor %}

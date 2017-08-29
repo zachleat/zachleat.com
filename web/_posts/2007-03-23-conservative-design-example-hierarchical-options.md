@@ -3,12 +3,6 @@ title: 'Conservative Design Example: Hierarchical Options'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-example-hierarchical-options/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299719508:0
 categories:
   - Interface Design
   - JavaScript

@@ -3,11 +3,11 @@ title: 'The Elusive :target Feature Test'
 author: Zach Leatherman
 layout: post
 permalink: /moving-target/
-categories:
+categories: null
 tags:
   - research
   - highlight
-date: 2013-11-20 17:59:00
+date: 2013-11-20T17:59:00.000Z
 ---
 
 **Update: I rewrote this post after determining my feature test was unnecessarily complex. Check out the [post diff](https://github.com/zachleat/zachleat.com/commit/54b7cc7f4e26bacc849696dfa58fadec5dad5709).**

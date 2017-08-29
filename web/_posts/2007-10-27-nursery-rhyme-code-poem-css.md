@@ -3,12 +3,6 @@ title: 'Nursery Rhyme Code Poem [CSS]'
 author: Zach Leatherman
 layout: post
 permalink: /nursery-rhyme-code-poem-css/
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718771:0
 categories:
   - Artistic
   - CSS

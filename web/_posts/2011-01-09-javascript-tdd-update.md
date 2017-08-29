@@ -1,10 +1,8 @@
 ---
-title: 'An Update to The JavaScript Testing Challenge'
+title: An Update to The JavaScript Testing Challenge
 author: Zach Leatherman
 layout: post
 permalink: /javascript-tdd-update/
-bttc_cache:
-  - 1299595404:2
 categories:
   - Contests
   - JavaScript

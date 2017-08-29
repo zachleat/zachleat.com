@@ -1,16 +1,10 @@
 ---
-title: 'Faster YUI DataTable with 5 Lines of Code'
+title: Faster YUI DataTable with 5 Lines of Code
 author: Zach Leatherman
 layout: post
 permalink: /faster-yui-datatable-with-5-lines-of-code/
-Warning, written for:
+'Warning, written for':
   - YUI 2.4.1
-btc_comment_counts:
-  - 'a:0:{}'
-btc_comment_summary:
-  - 'a:0:{}'
-bttc_cache:
-  - 1299718826:0
 categories:
   - JavaScript
 tags:

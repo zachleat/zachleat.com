@@ -3,13 +3,11 @@ title: 'If the Menu Fitts, We Must Acquit'
 author: Zach Leatherman
 layout: post
 permalink: /if-the-menu-fitts-we-must-acquit/
-bttc_cache:
-  - 1299576486:3
 categories:
   - Interface Design
   - Usability
 tags:
-  - "Fitts's Law"
+  - Fitts's Law
   - Gmail
   - Google Reader
   - MacOS

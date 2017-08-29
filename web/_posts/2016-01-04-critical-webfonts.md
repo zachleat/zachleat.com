@@ -10,7 +10,9 @@ tags:
   - highlight
   - font-loading
   - popular-posts
+  - popular-posts-total
 postRank: 7
+postRankTotalViews: 10
 ---
 
 The history of web font loading has included many different iterations:
