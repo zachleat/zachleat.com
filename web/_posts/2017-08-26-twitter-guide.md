@@ -10,8 +10,10 @@ tags:
   - popular-posts
 stylesheet: keynote-extractor.css
 templateclass: wider
-postRank: 13
+postRank: 15
 ---
+
+<!-- TO ADD: disable RTs on a specific user -->
 
 <div class="slide">
 	<picture class="slide-image">
@@ -28,7 +30,7 @@ postRank: 13
 		<img src="/presentations/twitter-commandments/carlton.gif" alt="">
 	</div>
 	<div class="slide-annotations">
-		<p>Not Carlton from Fresh Prince</p>
+		<p>Not Carlton from Fresh Prince.</p>
 	</div>
 </div>
 
@@ -101,7 +103,7 @@ postRank: 13
 		<img src="/presentations/twitter-commandments/images.012.jpg" alt="" />
 	</picture>
 	<div class="slide-annotations">
-		<p>The default use to be an egg, which was clever given Twitter’s bird theme.</p>
+		<p>The default used to be an egg, which was clever given Twitter’s bird theme.</p>
 	</div>
 </div>
 
@@ -111,7 +113,7 @@ postRank: 13
 		<img src="/presentations/twitter-commandments/images.013.jpg" alt="" />
 	</picture>
 	<div class="slide-annotations">
-		<p>That was too creative so the design had to be creatively dampened with this literally-spineless abomination.</p>
+		<p>That was too creative so the design had to be dampened with this literally-spineless abomination.</p>
 	</div>
 </div>
 
@@ -188,9 +190,9 @@ postRank: 13
 </div>
 
 <div class="slide">
-	<video class="slide-image" src="/presentations/twitter-commandments/hestonzoom1.mp4" muted loop autoplay>
-    Sorry, your browser doesn't support embedded videos. Try <a href="/presentations/twitter-commandments/hestonzoom1.mp4">downloading it</a> instead.
-  </video>
+	<video class="slide-image" src="/presentations/twitter-commandments/hestonzoom1.mp4" muted loop controls>
+		Sorry, your browser doesn't support embedded videos. Try <a href="/presentations/twitter-commandments/hestonzoom1.mp4">downloading it</a> instead.
+	</video>
 	<div class="slide-annotations">
 		
 	</div>
@@ -203,6 +205,7 @@ postRank: 13
 	</picture>
 	<div class="slide-annotations">
 		<h2>Twitter Commandment #4</h2>
+		<p>Thou shalt have very mixed feelings about Twitter verification, aka Twitter’s caste system.</p>
 		<p>Sometimes you get benefits, like higher priority display on replies to big tweets. And verification is good for celebrities and brands™. But for everyone else it’s just kind of a Sneetches situation.</p>
 	</div>
 </div>
@@ -292,7 +295,7 @@ postRank: 13
 </div>
 
 <div class="slide">
-	<video class="slide-image" src="/presentations/twitter-commandments/hestonzoom2.mp4" muted loop autoplay>
+	<video class="slide-image" src="/presentations/twitter-commandments/hestonzoom2.mp4" muted loop controls>
 		Sorry, your browser doesn't support embedded videos. Try <a href="/presentations/twitter-commandments/hestonzoom2.mp4">downloading it</a> instead.
 	</video>
 	<div class="slide-annotations">
@@ -382,7 +385,7 @@ postRank: 13
 </div>
 
 <div class="slide">
-	<video class="slide-image" src="/presentations/twitter-commandments/hestonzoom3.mp4" muted loop autoplay>
+	<video class="slide-image" src="/presentations/twitter-commandments/hestonzoom3.mp4" muted loop controls>
 		Sorry, your browser doesn't support embedded videos. Try <a href="/presentations/twitter-commandments/hestonzoom3.mp4">downloading it</a> instead.
 	</video>
 	<div class="slide-annotations">
@@ -526,7 +529,7 @@ postRank: 13
 </div>
 
 <div class="slide">
-	<video class="slide-image" src="/presentations/twitter-commandments/hestonzoom4.mp4" muted loop autoplay>
+	<video class="slide-image" src="/presentations/twitter-commandments/hestonzoom4.mp4" muted loop controls>
 		Sorry, your browser doesn't support embedded videos. Try <a href="/presentations/twitter-commandments/hestonzoom4.mp4">downloading it</a> instead.
 	</video>
 	<div class="slide-annotations">
@@ -883,7 +886,7 @@ postRank: 13
 		<img src="/presentations/twitter-commandments/images.104.jpg" alt="" />
 	</picture>
 	<div class="slide-annotations">
-		<p>104/104 In conclusion, hopefully this gives you a look at some of the more nuanced pices of Twitter.</p>
+		<p>104/104 In conclusion, hopefully this gives you a look at some of the more nuanced pieces of Twitter.</p>
 	</div>
 </div>
 
@@ -918,3 +921,10 @@ postRank: 13
 </div>
 
 <p class="credits">Created with <a href="https://www.keynote-extractor.com">Keynote Extractor</a>.</p>
+
+<div class="retweettoshare">
+	<h3 class="retweettoshare_title">Retweet to share this post</h3>
+	<div class="retweettoshare_widget">
+		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ The Ten Twitter Commandments <a href="https://t.co/f1ApEuZamm">https://t.co/f1ApEuZamm</a><br><br>A talk full of advanced tips for using Twitter.</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/902533984202235904">August 29, 2017</a></blockquote>
+	</div>
+</div>
