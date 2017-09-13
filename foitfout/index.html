@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FOIT vs FOUT, Open Sans</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i"> -->
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	p {
+		margin-top: 0;
+	}
+
+	.js .warning {
+		display: none;
+	}
+	.js body {
+		visibility: hidden;
+	}
+	.fonts-loaded body {
+		visibility: visible;
+		font-family: Open Sans, sans-serif;
+	}
+	.card-foit,
+	.card-foit * {
+		color: transparent;
+	}
+	.card-fallback {
+		font-family: sans-serif;
+	}
+
+	@media (min-width: 41.25em) { /* 660px /16 */
+		.card-panel {
+			float: left;
+			width: 50%;
+		}
+	}
+	.card-label {
+		margin-bottom: 0;
+	}
+	.card-label b {
+		font-size: 0.75em; /* 18px /24 */
+		font-weight: 400;
+	}
+	.card-label .card-repaints {
+		color: red;
+		font-weight: 700;
+		font-size: 0.5833333333333em; /* 14px /24 */
+		margin-bottom: 0.2142857142857em; /* 3px /14 */
+	}
+	@media (min-width: 41.25em) and (max-width: 56.1875em) { /* 660px /16, 899px /16 */
+		.card-label .card-repaints {
+			display: block;
+		}
+	}
+	.card {
+		border: 1px solid #aaa;
+		padding: 1em;
+		hyphens: auto;
+		height: 10em;
+		overflow: hidden;
+		margin-bottom: 1em;
+		color: #333;
+		font-size: 1.5em;
+	}
+	.card em {
+		/*text-decoration: underline;*/
+		/*border-bottom: 1px solid;*/
+	}
+	.card strong {
+		background-color: #eee;
+	}
+	.card-start,
+	.card-start strong {
+		background-color: #333;
+	}
+	.card-finish:not(.card-start) {
+		background-color: #ccc;
+		opacity: .3;
+	}
+	</style>
+	<script>
+	(function() {
+		document.documentElement.className += " js";
+
+		var config = {
+			delayBeforeFinish: 800,
+			delayBeforeNextTest: 800,
+			foitTimeout: 3000,
+			pairs: 1
+		}
+
+		if( "fonts" in document ) {
+			Promise.all([
+				document.fonts.load("1em Open Sans"),
+				document.fonts.load("700 1em Open Sans"),
+				document.fonts.load("italic 1em Open Sans"),
+				document.fonts.load("italic 700 1em Open Sans")
+			]).then(function () {
+				document.documentElement.className += " fonts-loaded";
+			});
+		}
+
+		function emulateLoad( loadtime, foitCard, foutCard, callback ) {
+			var foitRepaints = foitCard.previousElementSibling.querySelector( ".card-repaints" );
+			var foutRepaints = foutCard.previousElementSibling.querySelector( ".card-repaints" );
+			foitRepaints.innerHTML = "&#160;";
+			foutRepaints.innerHTML = "&#160;";
+
+			foitCard.previousElementSibling.querySelector( ".card-timer" ).innerHTML = loadtime;
+			foutCard.previousElementSibling.querySelector( ".card-timer" ).innerHTML = loadtime;
+
+			foitCard.classList.add( "card-foit" );
+			foitCard.classList.add( "card-fallback" );
+			foutCard.classList.add( "card-fallback" );
+
+			foitCard.classList.remove( "card-start", "card-finish" );
+			foutCard.classList.remove( "card-start", "card-finish" );
+
+			// FOIT
+			if( loadtime <= config.foitTimeout ) {
+				window.setTimeout(function() {
+					foitCard.classList.remove( "card-fallback" );
+					foitCard.classList.remove( "card-foit" );
+					foitRepaints.innerHTML = "1 repaint, 1 reflow";
+
+					window.setTimeout(function() {
+						foitCard.classList.add( "card-finish" );
+					}, config.delayBeforeFinish );
+				}, loadtime);
+			} else {
+				window.setTimeout(function() {
+					foitCard.classList.remove( "card-foit" );
+					foitRepaints.innerHTML = "1 repaint";
+				}, config.foitTimeout);
+
+				window.setTimeout(function() {
+					foitCard.classList.remove( "card-fallback" );
+					foitCard.classList.add( "card-repaint" );
+					foitRepaints.innerHTML = "2 repaints, 1 reflow";
+					window.setTimeout(function() {
+						foitCard.classList.add( "card-finish" );
+					}, config.delayBeforeFinish );
+				}, loadtime);
+			}
+
+			// FOUT
+			window.setTimeout(function() {
+				foutCard.classList.remove( "card-fallback" );
+				foutRepaints.innerHTML = "1 repaint, 1 reflow";
+
+				window.setTimeout(function() {
+					foutCard.classList.add( "card-finish" );
+				}, config.delayBeforeFinish );
+
+				if( callback ) {
+					window.setTimeout( callback, config.delayBeforeNextTest );
+				}
+			}, loadtime);
+		}
+
+		function loadCard( cardNo, loadtime, callback ) {
+			emulateLoad( loadtime, document.getElementById( "card" + cardNo + "-foit" ), document.getElementById( "card" + cardNo + "-fout" ), callback );
+		}
+
+		function loadFontsSerial( loadtime ) {
+			loadCard( 1, loadtime || 1000, function() {
+
+			});
+		}
+
+		document.addEventListener( "DOMContentLoaded", function() {
+			var formEl = document.getElementById( "timeout" );
+			formEl.addEventListener( "submit", function( e ) {
+				e.preventDefault();
+
+				var foitEl;
+				var foutEl;
+				for( var j = 1, k = config.pairs; j <= k; j++ ) {
+					foitEl = document.querySelector( "#card" + j + "-foit" );
+					foitEl.classList.add( "card-start" );
+
+					foutEl = document.querySelector( "#card" + j + "-fout" );
+					foutEl.classList.add( "card-start" );
+				}
+
+				// reset repaint/reflow counters
+				var cardRepaints = document.querySelectorAll( ".card-repaints" );
+				for( j = 0, k = cardRepaints.length; j < k; j++ ) {
+					cardRepaints[ j ].innerHTML = "&#160;";
+				}
+
+				var loadtimeEl = document.getElementById( "loadtime" );
+				loadFontsSerial( loadtimeEl ? loadtimeEl.valueAsNumber : null );
+			});
+		});
+	})();
+	</script>
+</head>
+<body>
+	<form id="timeout">
+		<p class="warning">Due to the dynamic nature of this demonstration, this page requires JavaScript.</p>
+		<label>
+			Load time:
+			<input type="number" id="loadtime" value="1000" step="100">ms
+		</label>
+		<button type="submit">Start</button>
+	</form>
+	<div class="card-pair">
+		<div class="card-panel">
+			<h2 class="card-label">FOIT <b>with 3s Timeout</b> <b>(<span class="card-timer">0</span>ms)</b> <b class="card-repaints">&#160;</b></h2>
+			<div class="card card-foit card-start" id="card1-foit">
+				<p>This is a paragraph. <strong>This is heavier text.</strong> <em>This is emphasized text.</em> <strong><em>This is heavier and emphasized text.</em></strong></p>
+			</div>
+		</div>
+
+		<div class="card-panel">
+			<h2 class="card-label">FOUT <b>(<span class="card-timer">0</span>ms)</b> <b class="card-repaints">&#160;</b></h2>
+			<div class="card card-fallback card-start" id="card1-fout">
+				<p>This is a paragraph. <strong>This is heavier text.</strong> <em>This is emphasized text.</em> <strong><em>This is heavier and emphasized text.</em></strong></p>
+			</div>
+		</div>
+	</div>
+	<!-- <p>4000ms (4 seconds) is equal to one ~40KB font loading on Fast 3G</p> -->
+</body>
+</html>
