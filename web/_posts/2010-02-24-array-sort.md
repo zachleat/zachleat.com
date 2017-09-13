@@ -9,7 +9,7 @@ tags:
   - highlight
   - research
   - popular-posts-total
-postRankTotalViews: 19
+postRankTotalViews: 20
 ---
 
 What would you expect to be the result of executing the following code?
