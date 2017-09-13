@@ -276,6 +276,7 @@ body {
 :visited {
 	text-decoration: underline;
 	text-decoration-skip: ink;
+	text-decoration-color: #4caf50;
 }
 :link {
 	color: #467259;
@@ -283,11 +284,15 @@ body {
 :visited {
 	color: #304f3e;
 }
+.content :link,
+.content :visited {
+	color: inherit;
+}
 :link:active,
 :link:hover,
 :link:focus,
 :visited:hover {
-	color: #d94625;
+	color: #4caf50;
 }
 
 .about-description a,
