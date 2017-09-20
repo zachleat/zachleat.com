@@ -6,7 +6,6 @@ permalink: /fout-foit-history/
 categories:
   - font-loading
 tags:
-  - highlight
   - font-loading
 ---
 
@@ -26,7 +25,7 @@ tags:
 		<tr>
 			<td>1997</td>
 			<td></td>
-			<td>CSS 2 Working Draft <a href="https://www.w3.org/TR/WD-CSS2-971104/fonts.html#h-14.3.4">Fonts</a> introduced</td>
+			<td>CSS 2 <a href="https://www.w3.org/TR/WD-CSS2-971104/fonts.html#h-14.3.4">Fonts</a> W3C Working Draft</td>
 		</tr>
 		<tr>
 			<td>1997</td>
@@ -36,7 +35,7 @@ tags:
 		<tr>
 			<td>1998</td>
 			<td></td>
-			<td>CSS 2 Recommendation <a href="https://www.w3.org/TR/REC-CSS2/fonts.html">Fonts</a> introduced</td>
+			<td>CSS 2 <a href="https://www.w3.org/TR/REC-CSS2/fonts.html">Fonts</a> W3C Recommendation</td>
 		</tr>
 		<tr>
 			<td class="nowrap">2008 <span class="hide-sm"><abbr title="November">Nov</abbr> 12</span></td>
