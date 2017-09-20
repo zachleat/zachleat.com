@@ -15,6 +15,7 @@
 @mixin webfont {
 	& {
 		font-family: $fallbackSystemFont;
+		font-weight: 400;
 	}
 	.webfont-stage-1 & {
 		font-family: LatoSubset, $fallbackSystemFont;
