@@ -33,13 +33,45 @@ permalink: style-guide/
 <p class="livedemo">This is a live demo example with the demonstration label on the bottom.</p>
 <p class="livedemo livedemo-resizable">This is a resizable live demo example with the demonstration label on the bottom.</p>
 
-<h3>Links to Demos</h3>
-<div class="livedemo">
-	<p class="primarylink primarylink-demo"><a href="#">Go to the Style Guide</a></p>
-	<p class="primarylink"><a href="#">Read the Randsom Note</a></p>
-</div>
-
 <h2 id="typography">Typography</h2>
+
+<h3>Headers and Text</h3>
+
+<div class="livedemo">
+	<h1>Top Level Header</h1>
+	<p>If you’re looking for a better <a href="#">web font loading solution</a>, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
+
+	<h2>Second Level Header</h2>
+	<p>If you’re looking for a better <a href="#">web font loading solution</a>, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
+
+	<h3>Third Level Header</h3>
+	<p>If you’re looking for a better <a href="#">web font loading solution</a>, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
+
+	<h4>Fourth Level Header</h4>
+	<p>If you’re looking for a better <a href="#">web font loading solution</a>, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
+
+	<h5>Fifth Level Header</h5>
+	<p>If you’re looking for a better <a href="#">web font loading solution</a>, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
+</div>
+<p class="caption">First through fifth level headers with accompanying paragraph text. Sixth level headers aren’t in use on this site.</p>
+
+<h3>Links</h3>
+<p>Use <code>text-decoration-skip</code>, fallback to <code>text-shadow</code>: <span class="livedemo"><a href="#">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
+<p>Only use <code>text-decoration-skip</code>, no fallback: <span class="livedemo"><a href="#" class="exempt">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
+
+<p>
+	<code>break</code> for super long links that you want to wrap nicely:
+	<span class="livedemo livedemo-resizable" style="width: 15em;">
+		<a href="https://twitter.com/zachleat/status/890242957386944516" class="break">https://twitter.com/<strong>zachleat</strong>/status/<strong>890242957386944516</strong></a>
+	</span>
+</p>
+
+<p>Primary links to demos and other main content:
+	<span class="livedemo">
+		<span class="primarylink primarylink-demo"><a href="#">Go to the Style Guide</a></span>
+		<span class="primarylink"><a href="#">Read the Randsom Note</a></span>
+	</span>
+</p>
 
 <h3>Web Fonts</h3>
 
@@ -55,6 +87,12 @@ permalink: style-guide/
 <h4>Web Fonts (Stage 2, Lato Roman, Bold, Italic, Bold-Italic)</h4>
 <div class="livedemo"><p>Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
 
+<h3>Hyphenation</h3>
+<div class="livedemo livedemo-resizable" style="width: 15em;">
+	<p>Supercalifragilisticexpialidocious</p>
+	<p>Pneumonoultramicroscopicsilicovolcanoconiosis</p>
+</div>
+
 <h3>OpenType Features</h3>
 <h4>Ligatures</h4>
 <div class="livedemo">
@@ -65,38 +103,6 @@ permalink: style-guide/
 	<p style="font-size: 1.5em; font-variant-ligatures: no-common-ligatures; font-feature-settings: 'liga' 0, 'clig' 0;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
 </div>
 <p class="caption">The Lato webfont supports only the <code>liga</code> feature.</p>
-
-<h3>Hyphenation</h3>
-<div class="livedemo livedemo-resizable" style="width: 15em;">
-	<p>Supercalifragilisticexpialidocious</p>
-	<p>Pneumonoultramicroscopicsilicovolcanoconiosis</p>
-</div>
-
-<h3>Headers</h3>
-
-<div class="livedemo">
-	<h1>Top Level Header</h1>
-	<p>If you’re looking for a better web font loading solution, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
-
-	<h2>Second Level Header</h2>
-	<p>If you’re looking for a better web font loading solution, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
-
-	<h3>Third Level Header</h3>
-	<p>If you’re looking for a better web font loading solution, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
-
-	<h4>Fourth Level Header</h4>
-	<p>If you’re looking for a better web font loading solution, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
-
-	<h5>Fifth Level Header</h5>
-	<p>If you’re looking for a better web font loading solution, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
-</div>
-<p class="caption">First through fifth level headers with accompanying paragraph text. Sixth level headers aren’t in use on this site.</p>
-
-<h4>Text Highlighted Header</h4>
-<p>Works with any header level. Set any <code>background-color</code> and <code>color</code> on the element.</p>
-<div class="livedemo">
-	<h1 class="text-highlight" style="background-color: #333; color: #fff">This is a Top Level Header that wraps to multiple lines to show how the background color wraps too.</h1>
-</div>
 
 <h3>Code</h3>
 <div class="livedemo">
@@ -118,23 +124,18 @@ permalink: style-guide/
 	<p>Normal paragraph text.</p>
 </div>
 
-<h3>Links</h3>
-<p>Use <code>text-decoration-skip</code>, fallback to <code>text-shadow</code>: <span class="livedemo"><a href="#">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
-<p>Only use <code>text-decoration-skip</code>, no fallback: <span class="livedemo"><a href="#" class="exempt">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
-
-<p>
-	<code>break</code> for super long links that you want to wrap nicely:
-	<span class="livedemo livedemo-resizable" style="width: 15em;">
-		<a href="https://twitter.com/zachleat/status/890242957386944516" class="break">https://twitter.com/<strong>zachleat</strong>/status/<strong>890242957386944516</strong></a>
-	</span>
-</p>
-
-<h4>Action Links</h4>
+<h3>Action Links</h3>
 <div class="livedemo">
 	<div class="action">
 		<p>Say hello on <a href="//twitter.com/zachleat/" class="twitter"><i class="icon-twitter"></i> Twitter</a> and <a href="//github.com/zachleat/" class="github"><i class="icon-github"></i> GitHub</a>.</p>
 		<p>Let my <a href="/web/feed/" class="feed"><i class="icon-feed"></i> Feed</a>  sit idle in your RSS Reader.</p>
 	</div>
+</div>
+
+<h3>Text Highlighted Header</h3>
+<p>Works with any header level. Set any <code>background-color</code> and <code>color</code> on the element.</p>
+<div class="livedemo">
+	<h1 class="text-highlight" style="background-color: #333; color: #fff">This is a Top Level Header that wraps to multiple lines to show how the background color wraps too.</h1>
 </div>
 
 <h2 id="icons">Icons</h2>
