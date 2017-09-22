@@ -1,5 +1,5 @@
 ---
-title: An Historical Look at FOUT and FOIT
+title: A Historical Look at FOUT and FOIT
 author: Zach Leatherman
 layout: post
 permalink: /fout-foit-history/
@@ -10,6 +10,10 @@ tags:
   - popular-posts
 postRank: 1
 ---
+
+<em>Prerequisite: not sure what FOUT or FOIT are? Read the <a href="/web/webfont-glossary/#foit">definitions on the Web Font Loading Glossary</a>.</em>
+
+For a recent talk at <a href="http://css-minsk-js.by/">CSS-Minsk-JS</a>, I did some research on the history of default font loading behaviors. I thought it was interesting, so I packaged it up below.
 
 <video controls preload="metadata" src="/presentations/rocket-science/history1080p.mp4">
 	Sorry, your browser doesn't support embedded videos. Try <a href="/presentations/rocket-science/history1080p.mp4">downloading it</a> instead.
@@ -112,7 +116,7 @@ postRank: 1
 	</tbody>
 </table>
 
-Browsers implementing a FOUT/FOIT/FOIT-3s behavior first (trailblazers) are denoted as (1st) above. Browsers second to implement an existing behavior (two makes a crowd) are donated as (2nd) above.
+Browsers implementing a FOUT/FOIT/FOIT-3s behavior first (trailblazers) are denoted as (1st) above. Browsers second to implement an existing behavior (two makes a crowd) are denoted as (2nd) above.
 
 ## Highlights
 
