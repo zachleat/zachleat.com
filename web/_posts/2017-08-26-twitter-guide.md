@@ -10,7 +10,7 @@ tags:
   - popular-posts
 stylesheet: keynote-extractor.css
 templateclass: wider
-postRank: 5
+postRank: 8
 ---
 
 <!-- TO ADD: disable RTs on a specific user -->

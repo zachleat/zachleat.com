@@ -11,9 +11,7 @@ categories:
 tags:
   - deprecated
   - feedtrim
-  - popular-posts
   - popular-posts-total
-postRank: 20
 postRankTotalViews: 7
 ---
 
