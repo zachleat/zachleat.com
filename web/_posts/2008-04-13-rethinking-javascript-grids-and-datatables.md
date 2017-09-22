@@ -16,6 +16,8 @@ tags:
   - feedtrim
   - popular-posts-total
 postRankTotalViews: 18
+daysPosted: 3449
+yearsPosted: 9.5
 ---
 
 In the world of front end engineering, one must consider the end-user of the interface first, and above all other things. The priorities should not start with development ease, nor external library preference. The priorities should start with the needs of the consumer of your end product.

@@ -823,9 +823,25 @@ a[href].tag:visited:hover {
 .tag.tweet {
 	color: #00c9ff;
 }
+.tags .tag.timeago,
 .tags .tag.postrank,
 .tags .tag.highlight {
 	border-color: transparent;
+}
+.tags .tag.timeago {
+	text-transform: none;
+	margin-left: -15px;
+	border-left: none;
+	border-right: none;
+	@include webfontBoldItalic;
+}
+.tags .tag.timeago.years {
+	color: #777;
+}
+.tags .tag:hover + .tag.timeago {
+	background-image: linear-gradient(90deg, #444, #777);
+	background-color: #444;
+	color: #fff;
 }
 .tags .highlight-label {
 	@include a11y-only;

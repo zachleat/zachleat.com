@@ -11,6 +11,8 @@ tags:
 stylesheet: keynote-extractor.css
 templateclass: wider
 postRank: 8
+daysPosted: 27
+yearsPosted: 0.1
 ---
 
 <!-- TO ADD: disable RTs on a specific user -->

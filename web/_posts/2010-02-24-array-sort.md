@@ -10,6 +10,8 @@ tags:
   - research
   - popular-posts-total
 postRankTotalViews: 20
+daysPosted: 2767
+yearsPosted: 7.6
 ---
 
 What would you expect to be the result of executing the following code?

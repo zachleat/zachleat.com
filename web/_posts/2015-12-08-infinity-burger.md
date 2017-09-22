@@ -9,6 +9,8 @@ tags:
   - popular-posts
 permalink: /infinity-burger/
 postRank: 18
+daysPosted: 654
+yearsPosted: 1.8
 ---
 
 A whimsical hamburger menu* that goes on forever.

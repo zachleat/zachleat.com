@@ -40,13 +40,17 @@ module.exports = function(grunt) {
 					pageviews[newslug].views += parseInt(entry[1], 10);
 
 					if (pageviews[newslug].postedDate) {
+						var numDays = ((Date.now() - pageviews[newslug].postedDate) / (1000 * 60 * 60 * 24));
 						pageviews[newslug].postedYear =
 							"(" + new Date(pageviews[newslug].postedDate).getFullYear() + ")";
-						pageviews[newslug].averageViews = (pageviews[newslug].views /
-							((Date.now() - pageviews[newslug].postedDate) / (1000 * 60 * 60 * 24))).toFixed(1);
+						pageviews[newslug].averageViews = (pageviews[newslug].views / numDays).toFixed(1);
+						pageviews[newslug].daysPosted = Math.round( parseFloat( numDays ) );
+						pageviews[newslug].yearsPosted = parseFloat( (numDays / 365).toFixed(1) );
 					} else {
 						pageviews[newslug].postedYear = "";
 						pageviews[newslug].averageViews = "";
+						pageviews[newslug].daysPosted = "";
+						pageviews[newslug].yearsPosted = "";
 					}
 				} else {
 					console.warn( ">>> WARNING POST NOT FOUND!", slug[1] );
@@ -76,6 +80,8 @@ module.exports = function(grunt) {
 		pageviewsArr.forEach(function(entry, j) {
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
 			delete frontmatter.data.postRank;
+			delete frontmatter.data.daysPosted;
+			delete frontmatter.data.yearsPosted;
 			if( frontmatter.data.tags ) {
 				_remove( frontmatter.data.tags, function( tag ) {
 					return tag === "popular-posts";
@@ -87,6 +93,8 @@ module.exports = function(grunt) {
 		totalviewsArr.forEach(function(entry, j) {
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
 			delete frontmatter.data.postRankTotalViews;
+			delete frontmatter.data.daysPosted;
+			delete frontmatter.data.yearsPosted;
 			if( frontmatter.data.tags ) {
 				_remove( frontmatter.data.tags, function( tag ) {
 					return tag === "popular-posts-total";
@@ -101,6 +109,8 @@ module.exports = function(grunt) {
 			// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
 			frontmatter.data.postRank = ( j + 1 );
+			frontmatter.data.daysPosted = entry.daysPosted;
+			frontmatter.data.yearsPosted = entry.yearsPosted;
 			if( !frontmatter.data.tags ) {
 				frontmatter.data.tags = [];
 			}
@@ -115,6 +125,8 @@ module.exports = function(grunt) {
 			// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
 			frontmatter.data.postRankTotalViews = ( j + 1 );
+			frontmatter.data.daysPosted = entry.daysPosted;
+			frontmatter.data.yearsPosted = entry.yearsPosted;
 			if( !frontmatter.data.tags ) {
 				frontmatter.data.tags = [];
 			}

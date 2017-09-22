@@ -12,6 +12,8 @@ tags:
   - smalltitle
   - popular-posts-total
 postRankTotalViews: 12
+daysPosted: 3214
+yearsPosted: 8.8
 ---
 
 **Quick Summary**

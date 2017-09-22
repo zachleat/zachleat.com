@@ -3,7 +3,7 @@ title: Top 20 Popular Posts (sorted by Views per Day)
 layout: default
 tmpl: list
 permalink: best-of/
-dataUpdatedDate: 'September 22, 2017, 7:14 AM CDT'
+dataUpdatedDate: 'September 22, 2017, 8:10 AM CDT'
 ---
 
 <div class="maxwidth-list">
@@ -17,7 +17,7 @@ dataUpdatedDate: 'September 22, 2017, 7:14 AM CDT'
 		{% assign rankedPosts = site.tags.popular-posts | sort:"postRank" %}  
 		<ol class="posts posts-count posts-count-forward posts-showall">
 			{% for post in rankedPosts %}
-				{% include post-list-entry.html ignoreYear="true" %}
+				{% include post-list-entry.html ignoreYear="true" showDays="true" %}
 			{% endfor %}
 		</ol>
 	</article>
