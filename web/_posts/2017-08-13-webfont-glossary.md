@@ -52,7 +52,7 @@ After publishing [The Comprehensive Guide to Font Loading Strategies](/web/compr
 
 <dl>
 	<dt id="foit">FOIT</dt>
-	<dd>Flash of Invisible Text: Default browser behavior to render text invisible while the web font is loading. In modern browsers, FOIT lasts a maximum of three seconds. When people say that web fonts are blocking resources, they are likely referring to FOIT. FOIT is our enemy.</dd>
+	<dd>Flash of Invisible Text: Default browser behavior to render text invisible while the web font is loading. In modern browsers, FOIT lasts a maximum of three seconds. Sometimes when I’m being incredibly accurate (pedantic), I’ll differentiate between FOIT ∞ and FOIT 3s by including the timeout as a suffix. When people say that web fonts are blocking resources, they are likely referring to FOIT. FOIT is our enemy.</dd>
 
 	<dt id="fout">FOUT</dt>
 	<dd>Flash of Unstyled Text: Default behavior to render text with the fallback <a href="#system-fonts">system font</a> while the web font has loaded. Fallback text renders after the FOIT timeout has passed—usually three seconds. Internet Explorer and Edge don’t wait—they render fallback text <em>immediately</em> ❤️. FOUT is preferable to FOIT but care must be taken to minimize its reflow effect.</dd>
