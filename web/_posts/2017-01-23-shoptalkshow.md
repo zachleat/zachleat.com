@@ -1,5 +1,5 @@
 ---
-title: 'Shop Talk Show 247: The Performance Equation'
+title: 'Shop Talk Show #247: The Performance Equation'
 author: Zach Leatherman
 layout: post
 permalink: /show-talk-show/
