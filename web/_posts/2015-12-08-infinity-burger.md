@@ -8,8 +8,8 @@ tags:
   - project
   - popular-posts
 permalink: /infinity-burger/
-postRank: 18
-daysPosted: 654
+postRank: 19
+daysPosted: 658
 yearsPosted: 1.8
 ---
 
