@@ -32,36 +32,36 @@ This entry, like Mr. Leatherman himself, is a work in progress.
 
 <figure>
 	<picture>
-		<source type="image/webp" srcset="/img/bio.webp">
-		<img src="/img/bio.jpg" alt="Just a picture of my face.">
+		<source type="image/webp" srcset="/img/bio-2017.webp">
+		<img src="/img/bio-2017.jpg" alt="Just a picture of my face.">
 	</picture>
-	<figcaption>Picture taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="https://smashingconf.com/whistler-2014/">SmashingConf Whistler</a>. Download <a href="/img/bio.jpg">the JPEG version</a>.</figcaption>
+	<figcaption>Picture taken by <a href="https://www.facebook.com/andrey.davydchyk">Andrey Davydchyk</a> at <a href="https://www.facebook.com/cssminskjs/">CSS Minsk JS</a>. <a href="/img/bio-2017.jpg">Download JPEG version</a>.</figcaption>
 </figure>
 
 <figure>
-	<img src="/img/avatar-big.png" alt="" style="max-width: 363px">
+	<img src="/img/avatar-2017-big.png" alt="" style="max-width: 363px; border-radius: 50%;">
 	<figcaption>Modified from above for avatar use.</figcaption>
 </figure>
 
-<figure>
-	<img src="/img/avatar-big.png" alt="" style="max-width: 363px; border-radius: 50%;">
-	<figcaption>Circular test case.</figcaption>
-</figure>
-
-<figure>
+<!-- <figure>
 	<picture>
 		<source type="image/webp" srcset="/img/reading.webp">
 		<img src="/img/reading.jpg" alt="Reading in the book store, Coding with JavaScript for Dummies.">
 	</picture>
-	<figcaption>Download <a href="/img/reading.jpg">the JPEG version</a>.</figcaption>
+	<figcaption><a href="/img/reading.jpg">Download JPEG version</a>.</figcaption>
+</figure> -->
+
+## Deprecated
+
+<figure>
+	<img src="/img/avatar-big.png" alt="" style="max-width: 363px; border-radius: 50%;">
+	<figcaption>Picture taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="https://smashingconf.com/whistler-2014/">SmashingConf Whistler</a>. <a href="/img/bio.jpg">Download JPEG version</a>. Download the <a href="/img/bio.jpg">original version</a>.</figcaption>
 </figure>
 
 <figure>
 	<img src="/img/avatar-old.png" alt="" style="max-width: 158px">
 	<figcaption>Deprecated.</figcaption>
 </figure>
-
-## Archive
 
 <figure>
 	<img src="/web/img/web367.png" alt="Web 367 Logo">
