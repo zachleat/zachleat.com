@@ -51,15 +51,14 @@ module.exports = function(grunt) {
 				src: [
 					// '<%= config.jsSrc %>reflow-log.js',
 					'<%= config.jsSrc %>initial.js',
-					'node_modules/fontfaceonload/dist/fontfaceonload.js',
-					'<%= config.jsSrc %>fonts.js',
-					// 'node_modules/fontfaceobserver/fontfaceobserver.js',
-					// '<%= config.jsSrc %>fonts-fontfaceobserver.js'
+					'<%= config.jsSrc %>fonts.js'
 				],
 				dest: '<%= config.distFolder %>initial.js'
 			},
 			jsAsync: {
 				src: [
+					'node_modules/fontfaceonload/dist/fontfaceonload.js',
+					'<%= config.jsSrc %>fonts-polyfill-fontfaceonload.js',
 					'node_modules/fg-loadjs/loadJS.js',
 					// 'node_modules/grunt-grunticon/example/output/grunticon.loader.js',
 					'node_modules/fg-loadcss/src/loadCSS.js',

@@ -1,66 +1,31 @@
 /* Fonts */
 ;(function( doc ) {
-	// Radio select emulator in footer
-	function setEmulatorRadioValue( value ) {
-		var radios = document.querySelectorAll( '#fontloademu [name="fontloademu"]' );
-		for( var j = 0, k = radios.length; j < k; j++ ) {
-			radios[ j ].checked = value === radios[ j ].value;
-		}
-	}
-
-	// IE9+
-	if( !( 'geolocation' in navigator ) || !( "keys" in Object ) ) {
+	if( !( "fonts" in document ) ) {
 		return;
 	} else if( sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {
-		document.addEventListener( "DOMContentLoaded", function() {
-			setEmulatorRadioValue( "" );
-		}, false );
-
+		// a little leaky here
+		ZL.setEmulatorRadioValue( "" );
 		return;
 	}
 
-	setEmulatorRadioValue( "font-fallback" );
-
 	var docEl = doc.documentElement;
-	FontFaceOnload( "LatoSubset", {
-		success: function() {
-			docEl.className += " webfont-stage-1";
-			sessionStorage.webfontStageOne = true;
+	document.fonts.load("1em LatoSubset").then(function() {
+		docEl.classList.add( "webfont-stage-1" );
+		sessionStorage.webfontStageOne = true;
 
-			setEmulatorRadioValue( "font-latosubset" );
+		ZL.setEmulatorRadioValue( "font-latosubset" );
 
-			var stage2 = {
-				Lato: {},
-				LatoBold: {
-					weight: 700
-				},
-				LatoItalic: {
-					style: "italic"
-				},
-				LatoBoldItalic: {
-					weight: 700,
-					style: "italic"
-				}
-			};
-			var counter = 0;
-			var param;
-			var numberOfFonts = Object.keys( stage2 ).length;
-			var success = function() {
-				counter++;
-				if( counter === numberOfFonts ) {
-					docEl.className += " webfont-stage-2";
-					sessionStorage.webfontStageTwo = true;
+		Promise.all([
+			document.fonts.load("1em Lato"),
+			document.fonts.load("700 1em LatoBold"),
+			document.fonts.load("italic 1em LatoItalic"),
+			document.fonts.load("italic 700 1em LatoBoldItalic")
+		]).then(function () {
+			docEl.classList.add( "webfont-stage-2" );
+			sessionStorage.webfontStageTwo = true;
 
-					setEmulatorRadioValue( "" );
-				}
-			};
-
-			for( var name in stage2 ) {
-				param = stage2[ name ];
-				param.success = success;
-				FontFaceOnload( name, param );
-			}
-		}
+			ZL.setEmulatorRadioValue( "" );
+		});
 	});
 
 })( document );

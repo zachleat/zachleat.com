@@ -23,10 +23,11 @@
 		<noscript>
 			<link href="{{ distFolder }}defer.min.css" rel="stylesheet">
 		</noscript>
-		<script>{% include {{distIncludeFolder}}initial.min.js %}</script>
 {% if page.stylesheet %}
 		<link href="{{ distFolder }}{{ page.stylesheet }}" rel="stylesheet">
 {% endif %}
+		<script>{% include {{distIncludeFolder}}initial.min.js %}</script>
+		<script src="{{ distFolder }}async.min.js" async></script>
 		<meta property="jekyll:path" content="{{ page.path }}">
 	</head>
 	<body>
@@ -75,6 +76,5 @@
 				<div></div>
 			</div>
 		</footer>
-		<script src="{{ distFolder }}async.min.js" async></script>
 	</body>
 </html>
