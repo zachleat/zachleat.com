@@ -265,7 +265,7 @@ module.exports = function(grunt) {
 			}
 		},
 		clean: {
-			js: [ '<%= config.root %>/_site/**/*.zgz' ]
+			zopfli: [ '<%= config.root %>/_site/**/*.zgz' ]
 		},
 		watch: {
 			assets: {
