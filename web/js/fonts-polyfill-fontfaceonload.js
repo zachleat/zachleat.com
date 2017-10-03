@@ -30,7 +30,9 @@
 			var success = function() {
 				counter++;
 				if( counter === numberOfFonts ) {
-					docEl.className += " webfont-stage-2";
+					// Currently emulating `font-display: optional`
+					// Uncomment to switch to `font-display: swap`
+					// docEl.className += " webfont-stage-2";
 					sessionStorage.webfontStageTwo = true;
 				}
 			};
