@@ -3,8 +3,6 @@
 	if( !( "fonts" in document ) ) {
 		return;
 	} else if( sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {
-		// a little leaky here
-		ZL.setEmulatorRadioValue( "" );
 		return;
 	}
 
@@ -12,8 +10,6 @@
 	document.fonts.load("1em LatoSubset").then(function() {
 		docEl.classList.add( "webfont-stage-1" );
 		sessionStorage.webfontStageOne = true;
-
-		ZL.setEmulatorRadioValue( "font-latosubset" );
 
 		Promise.all([
 			document.fonts.load("1em Lato"),
@@ -23,8 +19,6 @@
 		]).then(function () {
 			docEl.classList.add( "webfont-stage-2" );
 			sessionStorage.webfontStageTwo = true;
-
-			ZL.setEmulatorRadioValue( "" );
 		});
 	});
 

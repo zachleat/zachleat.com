@@ -39,4 +39,26 @@
 		}, false );
 	}
 
+	if( sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {
+		// a little leaky here
+		ZL.setEmulatorRadioValue( "" );
+		return;
+	}
+
+	
+	var secondStagePromise = [];
+	document.fonts.forEach(function( font ) {
+		if( font.family === "LatoSubset" ) {
+			font.loaded.then(function() {
+				ZL.setEmulatorRadioValue( "font-latosubset" );
+			});
+		} else {
+			secondStagePromise.push( font.loaded );
+		}
+	});
+
+	Promise.all( secondStagePromise ).then(function() {
+		ZL.setEmulatorRadioValue( "" );
+	});
+
 })();
