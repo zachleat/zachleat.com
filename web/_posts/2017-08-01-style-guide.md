@@ -6,8 +6,8 @@ permalink: /now-with-style-guide/
 categories: null
 tags:
   - popular-posts
-postRank: 4
-daysPosted: 60
+postRank: 5
+daysPosted: 71
 yearsPosted: 0.2
 ---
 

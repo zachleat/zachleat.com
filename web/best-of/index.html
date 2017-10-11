@@ -3,7 +3,7 @@ title: Top 20 Popular Posts (sorted by Views per Day)
 layout: default
 tmpl: list
 permalink: best-of/
-dataUpdatedDate: 'September 29, 2017, 10:37 PM CDT'
+dataUpdatedDate: 'October 10, 2017, 2:18 PM CDT'
 ---
 
 <div class="maxwidth-list">
@@ -14,7 +14,7 @@ dataUpdatedDate: 'September 29, 2017, 10:37 PM CDT'
 			<p>Last updated {{ page.dataUpdatedDate }}. Ordered by pageviews per day. <a href="/web/best-of/total-views/">Sort instead by total pageviews ☀️</a>. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically</a> from the Google Analytics API. I also keep a highlight reel of the <a href="https://twitter.com/i/moments/816767407326949377">most popular tweets</a>.</p>
 		</div>
 
-		{% assign rankedPosts = site.tags.popular-posts | sort:"postRank" %}  
+		{% assign rankedPosts = site.tags.popular-posts | sort:"postRank" %}
 		<ol class="posts posts-count posts-count-forward posts-showall">
 			{% for post in rankedPosts %}
 				{% include post-list-entry.html ignoreYear="true" showDays="true" %}

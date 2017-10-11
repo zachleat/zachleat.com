@@ -20,8 +20,8 @@ tags:
   - feedtrim
   - popular-posts-total
 postRankTotalViews: 17
-daysPosted: 3735
-yearsPosted: 10.2
+daysPosted: 3746
+yearsPosted: 10.3
 ---
 
 You’re programming a new web application using JSF, maybe with Facelets, maybe without. Which client-side JavaScript framework is going to work with it’s unstandardized method of assigning ID attributes to it’s elements? Here is an example of a JSF file:  
