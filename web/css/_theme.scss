@@ -143,10 +143,13 @@ figcaption strong,
 
 /* Layout */
 .rail {
-	text-align: center;
 	padding: 1em 1em .5em;
 	margin-bottom: 1.5em;
 	border-bottom: 1px solid #dedede;
+
+	@media (max-width: $oneColLayoutMaxWidth) {
+		text-align: center;
+	}
 }
 .content {
 	text-align: left;
@@ -171,12 +174,11 @@ figcaption strong,
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.rail {
-		text-align: left;
 		position: absolute;
-		right: 0;
+		right: 3.5em;
 		top: 0;
-		width: 17em;
-		padding: 2em 3.5em 0 0;
+		width: 13.5em;
+		padding: 2em 0 0 0;
 		border-bottom-width: 0;
 	}
 	.content {
@@ -186,9 +188,11 @@ figcaption strong,
 		min-height: 36em;
 	}
 }
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 28.75em) { /* 430px /16 */
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 17.5em) { /* 280px */
 	.rail {
 		position: fixed;
+		height: 100%;
+		margin-bottom: 0;
 	}
 }
 
@@ -301,7 +305,7 @@ body {
 :link:hover,
 :link:focus,
 :visited:hover {
-	color: #4caf50;
+	color: $linkActiveColor;
 }
 
 .about-description a,
@@ -343,8 +347,10 @@ h1 {
 h1:first-child {
 	margin-top: 0;
 }
-.header h1 {
-	padding: 0 0 0 .15625em; /* 5px */
+@media (max-width: $oneColLayoutMaxWidth) {
+	.header h1 {
+		padding: 0 0 0 .15625em; /* 5px */
+	}
 }
 @media (min-width: 30em) {
 	h1 {
@@ -496,16 +502,19 @@ th.numeric {
 .rail h1 {
 	font-size: 1.4em;
 	display: inline-block;
-	text-align: left;
 	margin: 0 0 .1em 0;
 	vertical-align: bottom;
 	@include webfontBold;
+
+	@media (max-width: $oneColLayoutMaxWidth) {
+		text-align: center;
+	}
 }
 .rail img {
-	width: 24px;
-	height: 24px;
+	width: 1.5em; /* 24px /16 */
+	height: 1.5em; /* 24px /16 */
 	margin-right: .5em;
-	border-radius: 0 50%;
+	border-radius: 50%;
 	background-color: $primaryColor;
 	color: transparent;
 	margin-bottom: -2px;
@@ -516,22 +525,17 @@ th.numeric {
 
 @media (min-width: $twoColLayoutMinWidth) {
 	.rail .header {
-		text-align: right;
-		margin-bottom: 0;
+		@include clearfix;
 	}
 	.rail img {
-		width: 80px;
-		height: 80px;
-		margin-right: 0;
-	}
-	.rail:hover img {
-		transition: 1s border-radius;
-		border-radius: 50% 0;
+		width: 2.75em; /* 44px /16 */
+		height: 2.75em; /* 44px /16 */
+		float: left;
+		margin-right: 0.75em; /* 12px /16 */
 	}
 	.rail h1 {
-		width: 8em;
-		margin-top: .3em;
-		text-align: right;
+		float: left;
+		width: 160px;
 	}
 }
 
@@ -855,20 +859,17 @@ a[href].tag:visited:hover {
 .tag.font-loading {
 	background-color: #f1f1f1;
 }
-.tag.font-loading-guide {
-	display: block;
-	text-transform: none;
-	text-decoration: none;
-	font-size: 13px;
-}
 .tag + .tag {
 	margin-left: -6px;
 }
 
 .tags-rail {
 	margin-top: 1em;
-	text-align: center;
 	white-space: normal;
+
+	@media (max-width: $oneColLayoutMaxWidth) {
+		text-align: center;
+	}
 }
 .tags-rail .tag {
 	margin-right: 0;
@@ -877,8 +878,9 @@ a[href].tag:visited:hover {
 }
 
 @media (min-width: $twoColLayoutMinWidth) {
-	.tags-rail {
-		text-align: right;
+	.tags-bigger {
+		display: block;
+		text-align: center;
 	}
 	.tags-rail .tag {
 		padding-left: 0.6923076923077em; /* 9px /13 */
@@ -890,8 +892,52 @@ a[href].tag:visited:hover {
 		height: 22px;
 		margin: 8px 0 16px;
 	}
-	.tag.font-loading-guide {
+}
+
+/* Top 5 Rail module */
+.tags-rail-top5 {
+	display: none;
+}
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 35em) { /* 560px */
+	.tag-popular {
+		display: none;
+	}
+
+	/* Top 5 posts */
+	.tags-rail-top5 {
+		display: block;
+		position: absolute;
+		bottom: 1em;
+		width: 100%;
+	}
+	.top5 {
+		font-size: 13px;
+		margin-top: 4em;
+		margin-bottom: .5em;
+		color: #666;
+	}
+	.top5 a {
+		text-decoration: none;
+	}
+	.tag.tag-popular-rail {
+		text-transform: none;
+		text-decoration: none;
+		font-size: 12px;
 		margin-top: 0.6153846153846em; /* 8px /13 */
+		padding-left: 0;
+		padding-right: 0;
+		@include webfont;
+	}
+	.tag.tag-popular-rail em {
+		white-space: nowrap;
+		color: #999;
+	}
+	.top5 a:hover,
+	a[href].tag.tag-popular-rail:hover {
+		background-color: transparent;
+		border-color: transparent;
+		color: $linkActiveColor;
+		text-decoration: underline;
 	}
 }
 
