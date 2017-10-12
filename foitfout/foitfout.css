@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	max-width: 64em; /* 1024px /16 */
+	margin: 0 auto;
+}
+p {
+	margin-top: 0;
+}
+input[readonly],
+input[disabled] {
+	background-color: #999;
+	color: #000;
+	opacity: .8;
+	cursor: not-allowed;
+}
+label {
+	display: block;
+}
+fieldset {
+	border: none;
+	padding: 0;
+	padding-left: 7em;
+	position: relative;
+}
+label,
+fieldset {
+	margin: 0.5rem 0; /* 8px /16 */
+}
+label:first-child {
+	width: 12em;
+	text-align: right;
+	padding-right: .5em;
+}
+label,
+fieldset legend,
+button {
+	font-size: 1.125em; /* 18px /16 */
+}
+fieldset legend {
+	position: absolute;
+	left: 0;
+	top: 1px;
+}
+fieldset label {
+	display: inline-block;
+	margin: 0;
+}
+input[type=text],
+input[type=number] {
+	font-size: 1em;
+	width: 5em;
+}
+button[type=button],
+button[type=submit] {
+	float: left;
+	clear: both;
+	margin-top: 0.2222222222222em; /* 4px /18 */
+	margin-left: 12.22222222222em; /* 220px /18 */
+}
+button[type=submit] {
+	margin-top: 0.7777777777778em; /* 14px /18 */
+}
+
+.js .warning {
+	display: none;
+}
+.js body {
+	visibility: hidden;
+}
+.fonts-loaded body {
+	visibility: visible;
+	font-family: Open Sans, sans-serif;
+}
+
+
+/* FoitFout CSS */
+.ff-card {
+	border: 1px solid #aaa;
+	padding: 1em;
+	hyphens: auto;
+	height: 10em;
+	overflow: hidden;
+	margin-bottom: 1em;
+	color: #333;
+	font-size: 1.5em;
+}
+.ff-card em {
+	/*text-decoration: underline;*/
+	/*border-bottom: 1px solid;*/
+}
+.ff-card strong {
+	background-color: #eee;
+}
+
+.ff-card-foit-roman .-roman,
+.ff-card-foit-bold .-bold,
+.ff-card-foit-italic .-italic,
+.ff-card-foit-bolditalic .-bolditalic {
+	color: transparent;
+}
+
+.ff-card-fallback-roman .-roman,
+.ff-card-fallback-bold .-bold,
+.ff-card-fallback-italic .-italic,
+.ff-card-fallback-bolditalic .-bolditalic {
+	font-family: sans-serif;
+}
+
+@media (min-width: 41.25em) { /* 660px /16 */
+	.ff-card-panel {
+		float: left;
+		width: 50%;
+	}
+}
+.ff-card-label {
+	margin-bottom: 0;
+}
+.ff-card-label b {
+	font-size: 0.75em; /* 18px /24 */
+	font-weight: 400;
+}
+.ff-card-label .ff-card-repaints {
+	color: red;
+	font-weight: 700;
+	font-size: 0.5833333333333em; /* 14px /24 */
+	margin-bottom: 0.2142857142857em; /* 3px /14 */
+}
+@media (min-width: 41.25em) and (max-width: 56.1875em) { /* 660px /16, 899px /16 */
+	.ff-card-label .ff-card-repaints {
+		display: block;
+	}
+}
+.ff-card-start,
+.ff-card-start strong {
+	background-color: #333;
+}
+.ff-card-finish:not(.ff-card-start) {
+	background-color: #ccc;
+	opacity: .3;
+}
