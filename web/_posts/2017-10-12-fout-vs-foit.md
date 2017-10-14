@@ -17,9 +17,7 @@ headvideo: /web/img/posts/foutvsfoit/demo.mp4
 
 Before we continue, check out <a href="/foitfout/">this demo that showcases the difference between FOIT and FOUT</a>, side by side—in order to more easily compare and constrast the functional differences between the two. Decide for yourself—which feels faster? Which feels more stable?
 
-<p class="primarylink"><a href="/foitfout/">Check out the FOIT vs. FOUT demo</a></p>
-
-*FOIT vs. FOUT is also available <a href="https://github.com/zachleat/foitfout">on GitHub</a>.*
+<p class="primarylink"><a href="/foitfout/">Check out FOIT vs. FOUT</a></p>
 
 A few things stuck out to me after playing around with it:
 
@@ -27,6 +25,8 @@ A few things stuck out to me after playing around with it:
 1. FOIT feels more stable if you can guarantee your fonts will load before the timeout (note: you can’t). This is likely why I’m seeing more developers gravitating to a `font-display: optional` (render only if cached) approach.
 1. FOIT with fonts that hit the timeout and render using the fallback feel more unstable that FOUT!
 1. Page stability is *greatly increased* when you group your repaints (using the CSS Font Loading API or a polyfill).
+
+<p class="primarylink"><a href="https://github.com/zachleat/foitfout">Contribute on <span class="icon-inline icon-github">GitHub</span></a></p>
 
 ## Context
 
@@ -42,7 +42,7 @@ Rather, FOIT was introduced to reduce the jarring visual impact of the transitio
 
 In retrospect the unintented side effects of hiding text are clear now, primarily because repaints amongst different web fonts for a single typeface are not grouped together by default. This creates race conditions leading to the [Mitt Romney Web Font Problem](/web/mitt-romney-webfont-problem/), changing the actual meaning of sentences that mix two or more web fonts together.
 
-<p class="primarylink"><a href="/foitfout/#800,800,3000,3000">Check out the Mitt Romney Problem on FOIT vs. FOUT</a></p>
+<p class="primarylink"><a href="/foitfout/#800,800,3000,3000">Demo of The Mitt Romney Web Font Problem</a></p>
 
-Where does this leave us? Hopefully the demo has convinced you that FOIT isn’t really a good default font loading behavior for web browsers. Note that the alternative isn’t necessarily FOUT. It isn’t a dichotomy. There are font loading strategies that eliminate FOIT and greatly reduce FOUT reflow. You can check those out on my <a href="/web/comprehensive-webfonts/">Comprehensive Guide to Font Loading Strategies</a>.
+Where does this leave us? Hopefully the demo has convinced you that FOIT isn’t really a good default font loading behavior for web browsers. Note that the alternative doesn’t have to be FOUT. It isn’t a dichotomy. There are font loading strategies that eliminate FOIT and greatly reduce FOUT reflow. You can read about those out on my <a href="/web/comprehensive-webfonts/">Comprehensive Guide to Font Loading Strategies</a>.
 
