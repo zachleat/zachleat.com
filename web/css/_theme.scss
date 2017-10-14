@@ -578,6 +578,7 @@ th.numeric {
 	margin-top: 0;
 }
 .posts img,
+.posts video,
 .posts .description {
 	margin: .5em 0;
 	padding-left: 24px;
@@ -593,7 +594,8 @@ th.numeric {
 .posts .smalltitle .posts-link {
 	font-size: 23px;
 }
-.project_img {
+.project_img,
+.project_video {
 	width: 100%;
 	max-width: 28.125rem;
 }

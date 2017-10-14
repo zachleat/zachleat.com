@@ -19,6 +19,7 @@
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>
 	{% if include.view == 'project' %}
 		{% if post.headimage %}<img src="{{ post.headimage }}" class="project_img">{% endif %}
+		{% if post.headvideo %}<video muted controls preload="metadata" src="{{ post.headvideo }}" class="project_video"></video>{% endif %}
 		{% if post.description %}<p class="description">{{ post.description }}</p>{% endif %}
 	{% endif %}
 </li>
