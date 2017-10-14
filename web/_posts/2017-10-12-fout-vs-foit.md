@@ -1,5 +1,5 @@
 ---
-title: FOIT versus FOUT, a Cage Match
+title: FOIT vs. FOUT, a Side by Side Comparison
 author: Zach Leatherman
 layout: post
 permalink: /fout-vs-foit/
@@ -15,7 +15,7 @@ headvideo: /web/img/posts/foutvsfoit/demo.mp4
 
 <a href="/foitfout/"><video autoplay muted preload src="/web/img/posts/foutvsfoit/demo.mp4"></video></a>
 
-Before we continue, check out <a href="/foitfout/">this demo that showcases the difference between FOIT and FOUT</a>, side by side—in order to more easily compare and constrast the functional differences between the two. Decide for yourself—which feels faster? Which feels more stable?
+Before we continue, check out <a href="/foitfout/">this demo that showcases the difference between FOIT and FOUT</a>—side by side—in order to more easily compare and constrast the functional differences between the two. Decide for yourself—which feels faster? Which feels more stable? *(Keep reading for my opinion)*
 
 <p class="primarylink"><a href="/foitfout/">Check out FOIT vs. FOUT</a></p>
 
