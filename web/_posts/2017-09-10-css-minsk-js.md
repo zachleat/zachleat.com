@@ -5,12 +5,11 @@ layout: post
 permalink: css-minsk-js/
 categories:
   - presentations
-  - font-loading
 tags:
   - external
-  - upcoming
-  - font-loading
+  - conference
   - speaking
 external_url: 'http://css-minsk-js.by/'
+event_date: 'September 10'
 ---
 

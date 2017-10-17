@@ -720,11 +720,6 @@ th.numeric {
 	}
 }
 
-/* NEJS CONF links */
-.posts .nejsconf a {
-	letter-spacing: .5px;
-}
-
 /* About Me Link Block */
 .about {
 	border-bottom: 1px solid #ccc;
@@ -804,6 +799,11 @@ th.numeric {
 .tag-borderless:visited {
 	border-color: transparent;
 	text-decoration: underline;
+}
+.tag-event {
+	border-color: transparent;
+	text-decoration: none;
+	text-transform: none;
 }
 .tag.active,
 .tag.active:visited,
