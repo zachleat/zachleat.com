@@ -1,5 +1,5 @@
 ---
-title: FOIT vs. FOUT, a Side by Side Comparison
+title: 'FOIT vs. FOUT, a Side by Side Comparison'
 author: Zach Leatherman
 layout: post
 permalink: /fout-vs-foit/
@@ -8,7 +8,11 @@ categories:
 tags:
   - font-loading
   - project
+  - popular-posts
 headvideo: /web/img/posts/foutvsfoit/demo.mp4
+postRank: 8
+daysPosted: 5
+yearsPosted: 0
 ---
 
 <em>Prerequisite: not sure what FOUT or FOIT are? Read the <a href="/web/webfont-glossary/#foit">definitions on the Web Font Loading Glossary</a>.</em>
