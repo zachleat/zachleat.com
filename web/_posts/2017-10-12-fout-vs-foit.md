@@ -30,7 +30,11 @@ A few things stuck out to me after playing around with it:
 1. FOIT with fonts that hit the timeout and render using the fallback feel more unstable that FOUT!
 1. Page stability is *greatly increased* when you group your repaints (using the CSS Font Loading API or a polyfill).
 
-<a href="https://github.com/zachleat/foitfout"><em>The source code for FOIT vs. FOUT is on GitHub</em></a>
+## Related
+
+* [The source code for FOIT vs. FOUT is on GitHub](https://github.com/zachleat/foitfout)
+* Blog Post: [A Historical Look at FOUT and FOIT](/web/fout-foit-history/)
+* Blog Post: [The Web Font Loading Glossary](/web/webfont-glossary/)
 
 ## Context
 
