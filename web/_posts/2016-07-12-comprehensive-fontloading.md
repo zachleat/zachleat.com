@@ -218,7 +218,7 @@ Use a tool like [`loadCSS`](https://github.com/filamentgroup/loadCSS/) to fetch 
 
 Use the CSS Font Loading API with a polyfill to detect when a specific font has loaded and only apply that web font in your CSS after it has loaded successfully. Usually this means toggling a class on your `<html>` element. Use with SASS or LESS mixins for easier maintenance. 
 
-* **[Demo: FOUT with a Class](/web-fonts/demos/fout-with-class.html)** (includes sessionStorage trick for repeat view optimization)
+* **[Demo: FOUT with a Class](/web-fonts/demos/fout-with-class-polyfill.html)** (includes sessionStorage trick for repeat view optimization)
 * Read more: [Better @font-face with Font Load Events on Dev.Opera](https://dev.opera.com/articles/better-font-face/) and [Font Loading Revisited with Font Events on the Filament Group Lab](https://www.filamentgroup.com/lab/font-events.html)
 
 ### Pros
@@ -263,7 +263,7 @@ This approach builds on the [FOUT with a Class](#fout-class) method and is usefu
 
 The only difference between this method and standard FOFT approach is that instead of the full roman web font in the first stage, we use a subset roman web font (usually only containing A-Z and optionally 0-9 and/or punctuation). The full roman web font is instead loaded in the second stage with the other weights and styles.
 
-* **[Demo: Critical FOFT](/web-fonts/demos/critical-foft.html)** (includes sessionStorage trick for repeat view optimization)
+* **[Demo: Critical FOFT](/web-fonts/demos/critical-foft-polyfill.html)** (includes sessionStorage trick for repeat view optimization)
 * [Compare source code for Critical FOFT against FOFT](https://gist.github.com/zachleat/1c2ee3c30ded23922cf4a9720283edfe/revisions?diff=split#diff-0)
 * Read more: [Critical Web Fonts](/web/critical-webfonts/)
 
@@ -284,7 +284,7 @@ The only difference between this method and standard FOFT approach is that inste
 
 This variation of the Critical FOFT approach simply changes the mechanism through which we load the first stage.  Instead of using our normal font loading JavaScript API to initiate a download, we simply embed the web font as a inline Data URI directly in the markup. As previously discussed, this will block initial render but since we’re only embedding a very small subset roman web font this is a small price to pay to mostly eliminate FOUT.
 
-* **[Demo: Critical FOFT with Data URI](/web-fonts/demos/critical-foft-data-uri.html)** (includes sessionStorage trick for repeat view optimization)
+* **[Demo: Critical FOFT with Data URI](/web-fonts/demos/critical-foft-data-uri-polyfill.html)** (includes sessionStorage trick for repeat view optimization)
 * [Compare source code for Critical FOFT with Data URI against Critical FOFT](https://gist.github.com/zachleat/b57b7fce3e1eb6d8c301221607d53c34/revisions?diff=split#diff-0)
 * Read more: [Web Font Anti-Pattern: Data URIs—_But Wait_](/web/web-font-data-uris/#but-wait)
 
@@ -305,7 +305,7 @@ This variation of the Critical FOFT approach simply changes the mechanism throug
 
 This variation of the Critical FOFT approach simply changes the mechanism through which we load the first stage. Instead of using our normal font loading JavaScript API to initiate a download, we use the new `preload` web standard as described above in the [`preload` method](#preload). This should trigger the download sooner than previously possible.
 
-* **[Demo: Critical FOFT with `preload`](/web-fonts/demos/critical-foft-preload.html)** (includes sessionStorage trick for repeat view optimization)
+* **[Demo: Critical FOFT with `preload`](/web-fonts/demos/critical-foft-preload-polyfill.html)** (includes sessionStorage trick for repeat view optimization)
 * [Compare source code for Critical FOFT with preload against Critical FOFT](https://gist.github.com/zachleat/b651f6bdbc47c563affbfbed16d2d922/revisions?diff=split#diff-0)
 * Read more: [The Web Fonts: Preloaded, Use With a Font Loading Strategy section](/web/preload/#use-with-a-font-loading-strategy)
 
