@@ -866,8 +866,8 @@ a[href].tag:visited:hover {
 }
 
 .tags-rail {
-	margin-top: 1em;
 	white-space: normal;
+	margin-top: .5em;
 
 	@media (max-width: $oneColLayoutMaxWidth) {
 		text-align: center;
@@ -877,23 +877,6 @@ a[href].tag:visited:hover {
 	margin-right: 0;
 	margin-left: 1px;
 	margin-bottom: 5px;
-}
-
-@media (min-width: $twoColLayoutMinWidth) {
-	.tags-bigger {
-		display: block;
-		text-align: center;
-	}
-	.tags-rail .tag {
-		padding-left: 0.6923076923077em; /* 9px /13 */
-		padding-right: 0.6923076923077em; /* 9px /13 */
-	}
-	.tags-rail .tag-bigger {
-		font-size: 14px;
-		line-height: 20px;
-		height: 22px;
-		margin: 8px 0 16px;
-	}
 }
 
 /* Top 5 Rail module */

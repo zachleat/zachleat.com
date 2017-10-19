@@ -6,10 +6,11 @@
 	letter-spacing: 2px;
 	font-size: .75em;
 }
-@media (min-width: $twoColLayoutMinWidth) {
-	.rail .social {
-		margin-top: 1.5em;
-		text-align: center;
+.rail .social {
+	margin-top: .3em;
+
+	@media (min-width: $twoColLayoutMinWidth) {
+		margin-top: 1em;
 	}
 }
 .social_icon {
