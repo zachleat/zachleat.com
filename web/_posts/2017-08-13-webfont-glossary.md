@@ -8,8 +8,8 @@ categories:
 tags:
   - font-loading
   - popular-posts
-postRank: 5
-daysPosted: 65
+postRank: 6
+daysPosted: 68
 yearsPosted: 0.2
 ---
 

@@ -10,9 +10,9 @@ tags:
   - popular-posts
 stylesheet: keynote-extractor.css
 templateclass: wider
-postRank: 11
-daysPosted: 52
-yearsPosted: 0.1
+postRank: 12
+daysPosted: 55
+yearsPosted: 0.2
 ---
 
 <!-- TO ADD: disable RTs on a specific user -->
