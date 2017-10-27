@@ -11,7 +11,7 @@
 		<meta property="og:site_name" content="Zach Leatherman">
 		<meta name="description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer.">
 		<meta property="og:description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer.">
-		<meta property="og:image" content="{% if page.headimage %}{{ page.headimage }}{% else %}/web/img/avatar.png{% endif %}">
+		<meta property="og:image" content="{% if page.headimage %}{{ page.headimage }}{% else %}{{ site.avatarImgSrc }}{% endif %}">
 
 		<meta name="dist" content="{{distFolder}}">
 {% if page.title %}

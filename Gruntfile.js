@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 		yaml: {
 			file: '<%= config.root %>_config.yml',
 			vars: {
-				name: 'Web 3.0, 6 Bladed Razors, 7 Minute Abs',
+				name: 'Zach Leatherman',
 				description: 'A web development blog written by @zachleat.',
 				safe: false,
 				future: true,
@@ -38,7 +38,8 @@ module.exports = function(grunt) {
 				permalink: '/<%= config.root %>:title/',
 				relative_permalinks: false,
 				distVersion: '<%= pkg.version %>',
-				distFolder: '/<%= config.distFolder %>'
+				distFolder: '/<%= config.distFolder %>',
+				avatarImgSrc: '/img/avatar-2017.png'
 			}
 		},
 		// Task configuration.
