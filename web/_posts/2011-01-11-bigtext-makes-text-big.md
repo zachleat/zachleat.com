@@ -17,8 +17,8 @@ tags:
   - font-loading
   - popular-posts
   - popular-posts-total
-postRank: 4
-daysPosted: 2474
+postRank: 3
+daysPosted: 2481
 yearsPosted: 6.8
 postRankTotalViews: 1
 ---

@@ -6,11 +6,7 @@ categories:
   - project
 tags:
   - project
-  - popular-posts
 permalink: /infinity-burger/
-postRank: 20
-daysPosted: 682
-yearsPosted: 1.9
 ---
 
 A whimsical hamburger menu* that goes on forever.
