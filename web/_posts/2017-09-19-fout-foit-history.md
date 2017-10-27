@@ -17,7 +17,7 @@ yearsPosted: 0.1
 
 For a recent talk at <a href="http://css-minsk-js.by/">CSS-Minsk-JS</a>, I did some research on the history of default font loading behaviors. I thought it was interesting, so I packaged it up below.
 
-<video controls preload="metadata" src="/presentations/rocket-science/history1080p.mp4" poster="/presentations/rocket-science/history-poster.png">
+<video controls preload="metadata" src="/presentations/rocket-science/history1080p.mp4" poster="/presentations/rocket-science/history-poster.png" muted>
 	Sorry, your browser doesn't support embedded videos. Try <a href="/presentations/rocket-science/history1080p.mp4">downloading it</a> instead.
 	<img src="/presentations/rocket-science/history-poster.png" alt="Modern day support: IE/Edge FOUT, everyone else FOITs with a 3 second timeout">
 </video>
