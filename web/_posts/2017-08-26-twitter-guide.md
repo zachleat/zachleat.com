@@ -10,8 +10,8 @@ tags:
   - popular-posts
 stylesheet: keynote-extractor.css
 templateclass: wider
-postRank: 14
-daysPosted: 62
+postRank: 18
+daysPosted: 80
 yearsPosted: 0.2
 ---
 

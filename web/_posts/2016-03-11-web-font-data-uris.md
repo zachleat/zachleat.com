@@ -10,9 +10,9 @@ tags:
   - highlight
   - font-loading
   - popular-posts
-postRank: 19
-daysPosted: 595
-yearsPosted: 1.6
+postRank: 20
+daysPosted: 613
+yearsPosted: 1.7
 ---
 
 After I posted my [Critical Web Fonts](/web/critical-webfonts/) article on Twitter, I had an interesting conversation with a developer named [Wim Leers](https://twitter.com/wimleers/) about embedding Web Fonts as Data URIs.

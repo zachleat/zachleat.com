@@ -10,5 +10,6 @@ tags:
   - conference
   - speaking
 external_url: 'https://smashingconf.com/'
-event_date: 'February 7'
+event_date: February 7
 ---
+

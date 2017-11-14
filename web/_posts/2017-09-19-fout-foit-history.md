@@ -8,9 +8,9 @@ categories:
 tags:
   - font-loading
   - popular-posts
-postRank: 4
-daysPosted: 38
-yearsPosted: 0.1
+postRank: 6
+daysPosted: 56
+yearsPosted: 0.2
 ---
 
 <em>Prerequisite: not sure what FOUT or FOIT are? Read the <a href="/web/webfont-glossary/#foit">definitions on the Web Font Loading Glossary</a>.</em>
