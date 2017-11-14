@@ -11,8 +11,6 @@
 	font-family: Lato;
 	src: url('/web/css/fonts/lato/2.0/LatoLatin-Regular.subset.woff2') format('woff2'),
 			 url('/web/css/fonts/lato/2.0/LatoLatin-Regular.subset.zopfli.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
 }
 
 @font-face {
@@ -20,14 +18,12 @@
 	src: url('/web/css/fonts/lato/2.0/LatoLatin-Semibold.subset.woff2') format('woff2'),
 			 url('/web/css/fonts/lato/2.0/LatoLatin-Semibold.subset.zopfli.woff') format('woff');
 	font-weight: 700;
-	font-style: normal;
 }
 
 @font-face {
 	font-family: LatoItalic;
 	src: url('/web/css/fonts/lato/2.0/LatoLatin-Italic.subset.woff2') format('woff2'),
 			 url('/web/css/fonts/lato/2.0/LatoLatin-Italic.subset.zopfli.woff') format('woff');
-	font-weight: 400;
 	font-style: italic;
 }
 
