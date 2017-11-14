@@ -23,13 +23,10 @@ After the recent release of [`loadCSS` 1.0](https://github.com/filamentgroup/loa
 
 Here’s all you need to add to the `<head>` of your page to start preloading:
 
-<figure>
-{% highlight html %}
+```
 <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
-{% endhighlight %}
-
-<figcaption>via <a href="https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/">Preload: What Is It Good For? by Yoav Weiss</a></figcaption>
-</figure>
+```
+<span class="caption">via <a href="https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/">Preload: What Is It Good For? by Yoav Weiss</a>
 
 *If you have WOFF2 formats in your `@font-face` block, make sure you preload the WOFF2 format. In fact, you should probably limit preload to the first format in your `@font-face` `src` stack. If you `preload` a WOFF file and have WOFF2 first in your stack, the browser will download both. This is undesirable.*
 
