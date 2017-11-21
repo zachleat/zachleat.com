@@ -9,9 +9,9 @@ tags:
   - font-loading
   - project
   - popular-posts
-postRank: 1
-daysPosted: 13
-yearsPosted: 0
+postRank: 2
+daysPosted: 20
+yearsPosted: 0.1
 ---
 
 One of the most painful pieces of maintaining a web font loading strategy is meticulously managing the CSS that goes with it. You have to carefully manage the CSS to make sure that any use of your web font `font-family` is protected by a class added by the JS after the fonts have loaded successfully.
