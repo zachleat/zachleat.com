@@ -7,12 +7,8 @@ categories:
   - presentations
 tags:
   - speaking
-  - popular-posts
 stylesheet: keynote-extractor.css
 templateclass: wider
-postRank: 18
-daysPosted: 87
-yearsPosted: 0.2
 ---
 
 <!-- TO ADD: disable RTs on a specific user -->

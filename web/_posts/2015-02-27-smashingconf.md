@@ -11,6 +11,8 @@ categories:
 tags:
   - video
   - highlight
+  - speaking
+  - conference
   - font-loading
 medialength: 48 min
 ---

@@ -8,6 +8,8 @@ categories:
 tags:
   - highlight
   - video
+  - speaking
+  - conference
 medialength: 59 min
 ---
 

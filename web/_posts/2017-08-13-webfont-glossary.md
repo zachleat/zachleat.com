@@ -8,9 +8,9 @@ categories:
 tags:
   - font-loading
   - popular-posts
-postRank: 6
-daysPosted: 100
-yearsPosted: 0.3
+postRank: 7
+daysPosted: 142
+yearsPosted: 0.4
 ---
 
 After publishing [The Comprehensive Guide to Font Loading Strategies](/web/comprehensive-webfonts/), I had a few requests to define a few terms used there. This document is a response to those requests. If something is missing below, please [let me know on Twitter @zachleat](https://twitter.com/zachleat) or in the comments.

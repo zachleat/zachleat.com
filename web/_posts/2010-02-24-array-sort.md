@@ -8,10 +8,6 @@ categories:
 tags:
   - highlight
   - research
-  - popular-posts-total
-postRankTotalViews: 20
-daysPosted: 2827
-yearsPosted: 7.7
 ---
 
 What would you expect to be the result of executing the following code?

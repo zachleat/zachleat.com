@@ -10,6 +10,8 @@ categories:
 tags:
   - video
   - font-loading
+  - speaking
+  - conference
 medialength: 48 min
 ---
 

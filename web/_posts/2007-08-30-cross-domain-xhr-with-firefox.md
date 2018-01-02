@@ -13,8 +13,8 @@ tags:
   - feedtrim
   - popular-posts-total
 postRankTotalViews: 7
-daysPosted: 3736
-yearsPosted: 10.2
+daysPosted: 3778
+yearsPosted: 10.4
 ---
 
 By now know you know that trying to do an XMLHttpRequest (XHR or AJAX) call to a domain that is different from the domain of the hosted JavaScript in Firefox will throw an exception.

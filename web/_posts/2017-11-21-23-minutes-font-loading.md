@@ -7,6 +7,12 @@ categories:
   - font-loading
 tags:
   - font-loading
+  - popular-posts
+  - popular-posts-total
+postRank: 1
+daysPosted: 42
+yearsPosted: 0.1
+postRankTotalViews: 18
 ---
 
 Last night I hopped on Twitter after my daughter went to sleep with a little bit of time to kill before a 9 PM <a href="https://twitter.com/nejsconf">NEJS CONF</a> 2018 planning meeting. What greeted me was perhaps the most tailored, best targetted content I’ve seen on the platform since Donald’s Twitter account was deactivated for a blissful 11 minutes.
@@ -46,7 +52,7 @@ Work was underway. I have not worked on this project before. I didn’t know any
 
 <figure>
 	<img src="/web/img/posts/make8bitart/glyphhanger.png" alt="" class="primary">
-	<figcaption>`glyphhanger` command output, automatically subsetting both web fonts.</figcaption>
+	<figcaption><code>glyphhanger</code> command output, automatically subsetting both web fonts.</figcaption>
 </figure>
 
 
@@ -66,7 +72,7 @@ Let’s see how the page loads before and after we made changes.
 
 * First paint: 773ms (screenshots do not include network time)
 * Page weight: 296 KB (dang, Jenn—_nice work_)
-* Font weight (WOFF2): 7.1 KB + 84.8KB = 91.1 KB
+* Font weight (TTF and WOFF): 7.1 KB + 84.8KB = 91.1 KB
 * FOIT:
   * 773ms -> 1.91s for `8bit Art Sans`: 1.137s total
   * 773ms -> 3.72s for `VT323`: 2.947s total (just under that 3s FOIT timeout window)

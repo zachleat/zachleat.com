@@ -1,5 +1,5 @@
 ---
-title: 'CSS Position Sticky'
+title: CSS Position Sticky
 author: Zach Leatherman
 layout: post
 permalink: /css-position-sticky/
@@ -8,7 +8,7 @@ categories:
 tags:
   - video
   - external
-external_url: https://nebraskajs.com/2017/sticky/
+external_url: 'https://nebraskajs.com/2017/sticky/'
 medialength: 10 min
 ---
 
