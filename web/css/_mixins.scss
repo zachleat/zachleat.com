@@ -54,7 +54,7 @@
 	}
 }
 @mixin textDecorationSkipInkFallback {
-	@supports (background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%)) and (not(text-decoration-skip: ink)) {
+	@supports (background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%)) and (not(text-decoration-skip-ink: auto)) {
 		& {
 			text-decoration: none;
 			background-image: -webkit-linear-gradient(top, currentColor 75%, currentColor 75%);
@@ -75,7 +75,7 @@
 	}
 }
 @mixin undoTextDecorationSkipInkFallback {
-	@supports (background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%)) and (not(text-decoration-skip: ink)) {
+	@supports (background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%)) and (not(text-decoration-skip-ink: auto)) {
 		& {
 			text-decoration: none;
 			background-image: none;

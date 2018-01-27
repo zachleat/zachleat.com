@@ -563,7 +563,7 @@ th.numeric {
 	line-height: 110%;
 	text-decoration: none;
 }
-@supports (text-decoration-skip: ink) {
+@supports (text-decoration-skip-ink: auto) {
 	.posts .posts-link:hover,
 	.posts .posts-link:focus,
 	.posts .posts-link:active {

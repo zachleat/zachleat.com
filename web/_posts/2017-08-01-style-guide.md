@@ -22,7 +22,7 @@ Not only has it helped collate all of the components I’ve built for individual
 There are a few cool things in there:
 * Shows the different stages in web font loading and how they each render.
 * Tests for hyphenation and ligatures on web fonts.
-* `text-decoration-skip: ink` on links (to avoid overlap between descenders and link underlines) with feature tested fallback to a gradient approach.
+* `text-decoration-skip-ink: auto` on links (to avoid overlap between descenders and link underlines) with feature tested fallback to a gradient approach.
 * Fluid (and breakout full width) images, videos (including third party players) using only CSS.
 * Inline resizable demos.
 
