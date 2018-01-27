@@ -5,10 +5,10 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Zach Leatherman</title>
 	<subtitle>The blog formerly known as Web 3.0, 6 Bladed Razors, 7 Minute Abs</subtitle>
-	<link href="http://www.zachleat.com/web/feed/" rel="self"/>
-	<link href="http://www.zachleat.com/web/"/>
+	<link href="https://www.zachleat.com/web/feed/" rel="self"/>
+	<link href="https://www.zachleat.com/web/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://www.zachleat.com/</id>
+	<id>https://www.zachleat.com/</id>
 	<author>
 		<name>Zach Leatherman</name>
 		<email>zachleat@zachleat.com</email>
@@ -18,9 +18,9 @@ layout: null
 	{% unless post.tags contains 'deprecated' or post.tags contains 'feedtrim' or post.tags contains 'upcoming' or post.tags contains 'pending' %}
 	<entry>
 		<title>{{ post.title }}</title>
-		<link href="http://www.zachleat.com/web{{ post.url }}"/>
+		<link href="https://www.zachleat.com/web{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>http://www.zachleat.com/web{{ post.id }}</id>
+		<id>https://www.zachleat.com/web{{ post.id }}</id>
 		<content type="html">{{ post.content | relative_urls_to_absolute | xml_escape }}</content>
 	</entry>
 	{% endunless %}
