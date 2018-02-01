@@ -1,40 +1,40 @@
-{% capture distIncludeFolder %}dist/{% if page.distVersion %}{{ page.distVersion }}{% else %}{{ site.distVersion }}{% endif %}/{% endcapture %}
+{% capture distIncludeFolder %}dist/{% if distVersion %}{{ distVersion }}{% else %}{{ package.version }}{% endif %}/{% endcapture %}
 {% capture distFolder %}/web/{{ distIncludeFolder }}{% endcapture %}
 <!doctype html>
-<html lang="en" class="{% if page.tmpl %} tmpl-{{ page.tmpl }}{% endif %}{% if page.templateclass %} {{ page.templateclass }}{% endif %}">
+<html lang="en" class="{% if post.tmpl %} tmpl-{{ post.tmpl }}{% endif %}{% if post.templateclass %} {{ post.templateclass }}{% endif %}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{% if page.title %}{{ page.title }}—zachleat.com{% else %}zachleat.com{% endif %}</title>
-		<meta property="og:title" content="{% if page.title %}{{ page.title }}—zachleat.com{% else %}zachleat.com{% endif %}">
+		<title>{% if title %}{{ title }}—zachleat.com{% else %}zachleat.com{% endif %}</title>
+		<meta property="og:title" content="{% if title %}{{ title }}—zachleat.com{% else %}zachleat.com{% endif %}">
 		<meta name="author" content="Zach Leatherman">
 		<meta property="og:site_name" content="Zach Leatherman">
-		<meta name="description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer.">
-		<meta property="og:description" content="{% if page.description %}{{ page.description }}, {% endif %}{% if page.title %}A post by {% endif %}Zach Leatherman (zachleat), a Front End Engineer.">
-		<meta property="og:image" content="{% if page.headimage %}{{ page.headimage }}{% else %}{{ site.avatarImgSrc }}{% endif %}">
+		<meta name="description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
+		<meta property="og:description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
+		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{{ site.avatarImgSrc }}{% endif %}">
 
 		<meta name="dist" content="{{distFolder}}">
-{% if page.title %}
+{% if title %}
 		<meta name="template" content="page">
 {% endif %}
 		<link rel="alternate" href="/web/feed/" title="Zach Leatherman’s Posts Feed" type="application/atom+xml">
 		<link rel="preload" href="/web/css/fonts/lato/2.0/LatoLatin-Regular.supersubset.woff2" as="font" type="font/woff2" crossorigin>
 
-		<style>{% include {{distIncludeFolder}}initial.min.css %}</style>
+		<style>{% include initial.min.css %}</style>
 		<noscript>
 			<link href="{{ distFolder }}defer.min.css" rel="stylesheet">
 		</noscript>
-{% if page.stylesheet %}
-		<link href="{{ distFolder }}{{ page.stylesheet }}" rel="stylesheet">
+{% if stylesheet %}
+		<link href="{{ distFolder }}{{ stylesheet }}" rel="stylesheet">
 {% endif %}
-		<script>{% include {{distIncludeFolder}}initial.min.js %}</script>
+		<script>{% include initial.min.js %}</script>
 		<script src="{{ distFolder }}async.min.js" async></script>
-		<meta property="jekyll:path" content="{{ page.path }}">
+		<meta property="eleventy:path" content="{{ page.url }}">
 	</head>
 	<body>
 		<div class="rail">
 			<header>
-				<a href="{{ site.baseurl }}/" class="header">
+				<a href="{{ '/' | url }}" class="header">
 					<img src="/img/avatar-2017-88.png" alt="zachleat’s Ugly Mug">
 					<h1>Zach Leatherman</h1>
 				</a>
@@ -65,12 +65,11 @@
 							<a href="http://www.filamentgroup.com/" class="social_icon icon-filamentgroup">Filament Group</a>
 						</div><!-- /.social -->
 						<div class="tags tags-rail tags-rail-top5">
-							{% assign rankedPostsRail = site.tags.popular-posts | sort:"postRank" %}
 							<h2 class="top5"><a href="/web/best-of/">Popular 🔥 ➡</a></h2>
 
-							{% for post in rankedPostsRail %}
+							{% for post in collections.popularPostsRanked %}
 							{% if forloop.index <= 5 %}
-							<a href="{{ site.baseurl }}{{ post.url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.title }} <em>{% if post.daysPosted < 365 %}{{ post.daysPosted }} day{% if post.daysPosted != 1 %}s{% endif %}{% else %}{{ post.yearsPosted }} year{% if post.yearsPosted != 1 %}s{% endif %}{% endif %}</em></a>
+							<a href="{{ post.url | url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{% if post.data.daysPosted < 365 %}{{ post.data.daysPosted }} day{% if post.data.daysPosted != 1 %}s{% endif %}{% else %}{{ post.data.yearsPosted }} year{% if post.data.yearsPosted != 1 %}s{% endif %}{% endif %}</em></a>
 							{% endif %}
 							{% endfor %}
 						</div>

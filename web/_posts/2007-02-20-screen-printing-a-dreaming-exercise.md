@@ -3,8 +3,6 @@ title: 'Screen Printing, Fake Interfaces Part 1'
 author: Zach Leatherman
 layout: post
 permalink: /screen-printing-a-dreaming-exercise/
-categories:
-  - Interface Design
 tags:
   - Authentication
   - Offline

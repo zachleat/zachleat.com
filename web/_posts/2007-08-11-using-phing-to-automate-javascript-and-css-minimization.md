@@ -5,10 +5,6 @@ layout: post
 permalink: /using-phing-to-automate-javascript-and-css-minimization/
 Version Specific Article:
   - Phing (Unknown)
-categories:
-  - CSS
-  - JavaScript
-  - PHP
 tags:
   - deprecated
   - feedtrim

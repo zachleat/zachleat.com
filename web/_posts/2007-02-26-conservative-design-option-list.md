@@ -3,8 +3,6 @@ title: 'Conservative Design: Option List'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-option-list/
-categories:
-  - Interface Design
 tags:
   - Conservative Design
   - Design Patterns

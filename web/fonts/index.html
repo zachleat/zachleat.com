@@ -9,7 +9,9 @@ tmpl: list
 		<h1>Web Fonts & Type</h1>
 		<p>A list of every post or project dealing with web fonts, web font loading, or typography.</p>
 		<ol class="posts">
-			{% for post in site.categories.font-loading %}
+			{% assign year = "" %}
+			{% assign currentyear = "" %}
+			{% for post in collections.font-loading %}
 				{% include post-list-entry.html %}
 			{% endfor %}
 		</ol>

@@ -3,10 +3,6 @@ title: JavaScript Code Coverage Tool for Firebug
 author: Zach Leatherman
 layout: post
 permalink: /javascript-code-coverage-tool-for-firebug/
-categories:
-  - JavaScript
-  - project
-  - Web Browsers
 tags:
   - Code Coverage
   - Firebug

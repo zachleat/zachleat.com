@@ -3,7 +3,6 @@ title: '20/20 Hindsight, a Look Back at ALARMd'
 author: Zach Leatherman
 layout: post
 permalink: /2020-hindsight-a-look-back-at-alarmd/
-categories: null
 tags:
   - feedtrim
 ---

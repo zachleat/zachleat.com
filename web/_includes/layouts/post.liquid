@@ -3,19 +3,19 @@ layout: default
 ---
 <div class="maxwidth">
 	<article>
-	<h1 {% if page.tags contains 'smalltitle' %}class="smalltitle"{% endif %}>{{ page.title }}</h1>
+	<h1 {% if tags contains 'smalltitle' %}class="smalltitle"{% endif %}>{{ title }}</h1>
 	<div class="sub">
-		<em class="date">{{ page.date | date_to_long_string }}</em>
-{% if page.tags contains 'video' %}
-		<em class="words">Watch in {{ page.medialength }}</em>
+		<em class="date">{{ date | date_to_long_string }}</em>
+{% if tags contains 'video' %}
+		<em class="words">Watch in {{ medialength }}</em>
 {% else %}
-		<em class="words">Read in {{ page.content | reading_time }}</em>
+		<em class="words">Read in {{ content | reading_time }}</em>
 {% endif %}
-{% if page.postRank %}
-		<em class="words"><a href="/web/best-of/">#{{ page.postRank }} most popular</a></em>
+{% if postRank %}
+		<em class="words"><a href="/web/best-of/">#{{ postRank }} most popular</a></em>
 {% endif %}
 	</div>
-	{% if page.tags contains 'deprecated' %}
+	{% if tags contains 'deprecated' %}
 	<article>
 		<div class="deprecation-warning">
 			<h3>Warning</h3>
@@ -23,9 +23,9 @@ layout: default
 		</div>
 	</article>
 	{% endif %}
-	{% if page.external_url %}
+	{% if external_url %}
 	<article>
-		<p>{% if page.tags contains 'upcoming' %}This is an upcoming event on {{ page.date | date: "%B %-d, %Y" }}, learn more at{% else %}Originally posted at{% endif %}: <a href="{{ page.external_url }}">{{ page.external_url }}</a></p>
+		<p>{% if tags contains 'upcoming' %}This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at{% else %}Originally posted at{% endif %}: <a href="{{ external_url }}">{{ external_url }}</a></p>
 	</article>
 	{% endif %}
 	{{ content }}
@@ -38,21 +38,11 @@ layout: default
 		</div>
 		<div class="action">
 			<p>Say hello on <a href="//twitter.com/zachleat/" class="twitter link-u-exempt"><i class="icon-twitter"></i> Twitter</a> and <a href="//github.com/zachleat/" class="github link-u-exempt"><i class="icon-github"></i> GitHub</a>.</p>
-			<p>Let my <a href="/web/feed/" class="feed link-u-exempt"><i class="icon-feed"></i> Feed</a>  sit idle in your RSS Reader.</p>
+			<p>Let my <a href="/web/feed/" class="feed link-u-exempt"><i class="icon-feed"></i> Feed</a> sit idle in your RSS Reader.</p>
 		</div>
 		{% include about.html %}
 	</article>
-	<article>
-		<div class="pagination">
-			{% if page.previous.url %} 
-				<a href="{{site.baseurl}}{{page.previous.url}}" class="previous-post link-u-exempt">{{page.previous.title}}</a>
-			{% endif %}
 
-			{% if page.next.url %} 
-				<a href="{{site.baseurl}}{{page.next.url}}" class="next-post link-u-exempt">{{page.next.title}}</a>
-			{% endif %}
-		</div>
-	</article>
 	<div id="disqus_thread"></div>
 	<noscript><strong>Note</strong>: To view and add comments, you’ll need to enable JavaScript. (<a href="http://disqus.com/?ref_noscript">powered by Disqus</a>)</noscript>
 	{% include footer.html %}

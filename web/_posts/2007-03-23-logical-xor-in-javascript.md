@@ -3,8 +3,6 @@ title: Logical XOR in JavaScript
 author: Zach Leatherman
 layout: post
 permalink: /logical-xor-in-javascript/
-categories:
-  - JavaScript
 tags:
   - Math
   - project

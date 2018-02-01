@@ -8,7 +8,9 @@ tmpl: list
 	<article>
 		<h1>Research</h1>
 		<ol class="posts">
-			{% for post in site.tags.research %}
+			{% assign year = "" %}
+			{% assign currentyear = "" %}
+			{% for post in collections.research %}
 				{% include post-list-entry.html %}
 			{% endfor %}
 		</ol>

@@ -9,8 +9,10 @@ tmpl: list
 	<h1>Projects</h1>
 	<ol class="posts">
 		<li><a href="https://github.com/zachleat/" class="posts-link">View all project source code on GitHub <span aria-hidden="true">→</span></a></li>
-		{% for post in site.tags.project %}
-			{% include post-list-entry.html view="project" %}
+		{% assign year = "" %}
+		{% assign currentyear = "" %}
+		{% for post in collections.projects %}
+			{% include post-list-entry.html, view: "project" %}
 		{% endfor %}
 		<li class="subhed">Retired</li>
 		<li><a href="/web/projects/retired/">Retired Projects</a></li>

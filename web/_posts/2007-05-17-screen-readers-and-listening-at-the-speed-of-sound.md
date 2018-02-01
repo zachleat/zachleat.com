@@ -3,9 +3,6 @@ title: Screen Readers and Listening at the Speed of Sound
 author: Zach Leatherman
 layout: post
 permalink: /screen-readers-and-listening-at-the-speed-of-sound/
-categories:
-  - Application Design
-  - Web Browsers
 tags:
   - Accessibility
   - feedtrim

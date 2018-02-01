@@ -5,10 +5,6 @@ layout: post
 permalink: /adventures-in-i-frame-shims-or-how-i-learned-to-love-the-bomb/
 Version Specific Article:
   - Internet Explorer 6
-categories:
-  - CSS
-  - JavaScript
-  - Web Browsers
 tags:
   - deprecated
   - feedtrim

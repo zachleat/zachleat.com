@@ -5,8 +5,6 @@ layout: post
 permalink: /yui-button-lite/
 Version Specific Article:
   - YUI 2.2.0
-categories:
-  - JavaScript
 tags:
   - deprecated
   - feedtrim

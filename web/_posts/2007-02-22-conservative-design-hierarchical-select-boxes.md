@@ -3,8 +3,6 @@ title: 'Conservative Design: Hierarchical Select'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-hierarchical-select-boxes/
-categories:
-  - Interface Design
 tags:
   - Conservative Design
   - Design Patterns

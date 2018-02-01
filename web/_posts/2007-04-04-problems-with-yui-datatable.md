@@ -5,11 +5,6 @@ layout: post
 permalink: /problems-with-yui-datatable/
 Version Specific Article:
   - YUI 2.2.0
-categories:
-  - CSS
-  - Interface Design
-  - JavaScript
-  - Reviews
 tags:
   - deprecated
   - feedtrim

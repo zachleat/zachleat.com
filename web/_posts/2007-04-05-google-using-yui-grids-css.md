@@ -3,10 +3,6 @@ title: Google Using YUI Grids CSS
 author: Zach Leatherman
 layout: post
 permalink: /google-using-yui-grids-css/
-categories:
-  - CSS
-  - JavaScript
-  - Reviews
 tags:
   - highlight
   - feedtrim

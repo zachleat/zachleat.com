@@ -5,10 +5,6 @@ layout: post
 permalink: /enlarging-your-yui-datatable-in-30-seconds-or-less/
 Version Specific Article:
   - YUI 2.2.2
-categories:
-  - CSS
-  - Interface Design
-  - JavaScript
 tags:
   - deprecated
   - feedtrim

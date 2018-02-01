@@ -5,8 +5,6 @@ layout: post
 permalink: /8-things-the-yui-library-needs-to-win-me-back/
 Version Specific Article:
   - YUI 2.2.2
-categories:
-  - JavaScript
 tags:
   - deprecated
   - feedtrim

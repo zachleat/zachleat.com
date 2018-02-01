@@ -11,13 +11,14 @@ dataUpdatedDate: 'January 1, 2018, 11:25 PM CST'
 		<h1 class="posts-indent">Top 20 Popular Posts ☀️</h1>
 
 		<div class="posts-paragraph posts-indent">
-			<p>Last updated {{ page.dataUpdatedDate }}. Ordered by total pageviews. <a href="/web/best-of/">Sort instead by pageviews per day 🔥</a>. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically</a> from the Google Analytics API. I also keep a highlight reel of the <a href="https://twitter.com/i/moments/816767407326949377">most popular tweets</a>.</p>
+			<p>Last updated {{ dataUpdatedDate }}. Ordered by total pageviews. <a href="/web/best-of/">Sort instead by pageviews per day 🔥</a>. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically</a> from the Google Analytics API. I also keep a highlight reel of the <a href="https://twitter.com/i/moments/816767407326949377">most popular tweets</a>.</p>
 		</div>
 
-		{% assign rankedPosts = site.tags.popular-posts-total | sort:"postRankTotalViews" %}  
 		<ol class="posts posts-count posts-count-forward posts-showall">
-			{% for post in rankedPosts %}
-				{% include post-list-entry.html ignoreYear="true" showRankTotalViews="true" showDays="true" %}
+			{% assign year = "" %}
+			{% assign currentyear = "" %}
+			{% for post in collections.popularPostsTotalRanked %}
+				{% include post-list-entry.html, ignoreYear: "true", showRankTotalViews: "true", showDays: "true" %}
 			{% endfor %}
 		</ol>
 	</article>

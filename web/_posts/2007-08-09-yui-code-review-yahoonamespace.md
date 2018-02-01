@@ -3,8 +3,6 @@ title: 'YUI Code Review: YAHOO.namespace'
 author: Zach Leatherman
 layout: post
 permalink: /yui-code-review-yahoonamespace/
-categories:
-  - JavaScript
 tags:
   - Namespacing
   - YUI

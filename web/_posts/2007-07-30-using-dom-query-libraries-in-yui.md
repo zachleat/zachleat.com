@@ -5,8 +5,6 @@ layout: post
 permalink: /using-dom-query-libraries-in-yui/
 Version Specific Article:
   - YUI 2.3.0
-categories:
-  - JavaScript
 tags:
   - deprecated
   - feedtrim

@@ -9,7 +9,9 @@ tmpl: list
 		<h1>Highlights</h1>
 		<p>A list of self-curated posts that I’m most proud of. If you want to see what everyone else liked, check out <a href="/web/best-of/">popular posts</a>.</p>
 		<ol class="posts">
-			{% for post in site.tags.highlight %}
+			{% assign year = "" %}
+			{% assign currentyear = "" %}
+			{% for post in collections.highlight %}
 				{% include post-list-entry.html %}
 			{% endfor %}
 		</ol>

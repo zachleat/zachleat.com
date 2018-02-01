@@ -1,0 +1,26 @@
+---
+permalink: feed/atom.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>{{ site.name }}</title>
+	<subtitle>{{ site.description }}</subtitle>
+	<link href="https://zachleat.com/web/feed/" rel="self"/>
+	<link href="https://zachleat.com/"/>
+	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+	<id>https://zachleat.com/</id>
+	<author>
+		<name>Zach Leatherman</name>
+		<email>zachleatherman@gmail.com</email>
+	</author>
+	{%- for post in collections.feedPosts %}
+	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl('https://zachleat.com/') }}{% endset %}
+	<entry>
+		<title>{{ post.data.title }}</title>
+		<link href="{{ absolutePostUrl }}"/>
+		<updated>{{ post.date | rssDate }}</updated>
+		<id>{{ absolutePostUrl }}</id>
+		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+	</entry>
+	{%- endfor %}
+</feed>

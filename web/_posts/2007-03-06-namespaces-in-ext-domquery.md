@@ -5,8 +5,6 @@ layout: post
 permalink: /namespaces-in-ext-domquery/
 Version Specific Article:
   - ExtJS 0.33
-categories:
-  - JavaScript
 tags:
   - deprecated
   - feedtrim

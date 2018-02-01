@@ -3,8 +3,6 @@ title: Beaten to the Spiked Punch
 author: Zach Leatherman
 layout: post
 permalink: /beaten-to-the-spiked-punch/
-categories:
-  - Other
 tags:
   - Self
   - deprecated

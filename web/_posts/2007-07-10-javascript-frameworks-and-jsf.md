@@ -5,9 +5,6 @@ layout: post
 permalink: /javascript-frameworks-and-jsf/
 Version Specific Article:
   - Specified Below
-categories:
-  - Java
-  - JavaScript
 tags:
   - Dojo
   - ExtJS

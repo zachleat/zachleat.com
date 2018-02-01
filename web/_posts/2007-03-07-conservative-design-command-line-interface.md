@@ -3,8 +3,6 @@ title: 'Conservative Design: Command Line Interface'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-command-line-interface/
-categories:
-  - Interface Design
 tags:
   - Command Line
   - Conservative Design

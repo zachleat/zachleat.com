@@ -5,9 +5,6 @@ layout: post
 permalink: /yui-datatable-and-you-making-the-marriage-work/
 Version Specific Article:
   - YUI 2.2.2
-categories:
-  - CSS
-  - JavaScript
 tags:
   - deprecated
   - feedtrim

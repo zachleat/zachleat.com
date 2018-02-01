@@ -7,8 +7,6 @@ project_name: ALARMd
 description: >-
   First iteration of the alarm clock that plays YouTube videos or other
   multimedia sources. Updated to ALARMd 2.
-categories:
-  - project
 tags:
   - highlight
   - project

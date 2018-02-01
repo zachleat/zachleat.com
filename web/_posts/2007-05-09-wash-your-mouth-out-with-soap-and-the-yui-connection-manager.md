@@ -5,8 +5,6 @@ layout: post
 permalink: /wash-your-mouth-out-with-soap-and-the-yui-connection-manager/
 Version Specific Article:
   - YUI 2.2.2
-categories:
-  - JavaScript
 tags:
   - deprecated
   - feedtrim
