@@ -5,7 +5,7 @@ layout: default
 	<article>
 	<h1 {% if tags contains 'smalltitle' %}class="smalltitle"{% endif %}>{{ title }}</h1>
 	<div class="sub">
-		<em class="date">{{ date | date_to_long_string }}</em>
+		<em class="date">{{ page.date | readableDate }}</em>
 {% if tags contains 'video' %}
 		<em class="words">Watch in {{ medialength }}</em>
 {% else %}

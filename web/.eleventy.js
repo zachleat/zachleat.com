@@ -1,3 +1,4 @@
+const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
@@ -8,6 +9,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.liquid');
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
+
+	eleventyConfig.addFilter("readableDate", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
+	});
 
 	eleventyConfig.addLiquidFilter("reading_time", function(content) {
 		return "a few minutes";
