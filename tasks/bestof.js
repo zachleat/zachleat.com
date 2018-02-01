@@ -1,12 +1,14 @@
 module.exports = function(grunt) {
+	const fs = require("fs");
+	const cheerio = require("cheerio");
+	const matter = require("gray-matter");
+	const _uniq = require('lodash.uniq');
+	const _remove = require('lodash.remove');
+	const normalize = require("normalize-path");
+	const bestof = grunt.file.readJSON("zachleat-bestof.json").rows;
+
 	"use strict";
 	grunt.registerTask("bestof", function() {
-		var fs = require("fs");
-		var cheerio = require("cheerio");
-		var matter = require("gray-matter");
-		var _uniq = require('lodash.uniq');
-		var _remove = require('lodash.remove');
-		var bestof = grunt.file.readJSON("zachleat-bestof.json").rows;
 		var pageviews = {};
 
 		bestof.forEach(function(entry) {
@@ -18,17 +20,22 @@ module.exports = function(grunt) {
 			if (slug && slug.length > 1) {
 				var newslug = slug[1] + (slug[1].substr(-1) !== "/" ? "/" : "");
 				var filename = "web/_site/" + newslug + "index.html";
+
 				if (fs.existsSync(filename)) {
 					if (!pageviews[newslug]) {
 						console.log("New analytics post entry found:", newslug, entry[1]);
 
 						var postTemplate = cheerio.load(fs.readFileSync(filename, "utf8"));
-						var postPath = postTemplate("meta[property='jekyll:path']").attr("content");
+						var postPath = postTemplate("meta[property='eleventy:path']").attr("content");
+						if( postPath.indexOf( "./" ) === 0 ) {
+							postPath = postPath.substr(2);
+						}
+						postPath = normalize('web/' + postPath);
 						console.log("Found path to original file:", postPath);
 
 						pageviews[newslug] = {
 							slug: newslug,
-							path: "web/" + postPath,
+							path: postPath,
 							views: 0,
 							title: postTemplate("title").html().replace(/&#x2014;zachleat.com/, ""),
 							postedDate: Date.parse(postTemplate(".sub .date").html())
@@ -53,7 +60,7 @@ module.exports = function(grunt) {
 						pageviews[newslug].yearsPosted = "";
 					}
 				} else {
-					console.warn( ">>> WARNING POST NOT FOUND!", slug[1] );
+					console.warn( ">>> WARNING POST NOT FOUND!", filename );
 				}
 			} else {
 				console.warn( ">>> WARNING bad match:", entry[ 0 ], " to ", path );
