@@ -40,7 +40,8 @@
     "time-grunt": "^1.4.0"
   },
   "scripts": {
-    "bestof": "grunt bestof && grunt"
+    "bestof": "grunt bestof && grunt",
+    "default": "grunt"
   },
   "repository": {
     "type": "git",
