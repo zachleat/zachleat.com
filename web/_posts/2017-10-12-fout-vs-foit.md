@@ -8,11 +8,7 @@ categories:
 tags:
   - font-loading
   - project
-  - popular-posts
 headvideo: /web/img/posts/foutvsfoit/demo.mp4
-postRank: 20
-daysPosted: 82
-yearsPosted: 0.2
 ---
 
 <em>Prerequisite: not sure what FOUT or FOIT are? Read the <a href="/web/webfont-glossary/#foit">definitions on the Web Font Loading Glossary</a>.</em>

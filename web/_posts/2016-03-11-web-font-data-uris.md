@@ -11,8 +11,8 @@ tags:
   - font-loading
   - popular-posts
 postRank: 19
-daysPosted: 662
-yearsPosted: 1.8
+daysPosted: 692
+yearsPosted: 1.9
 ---
 
 After I posted my [Critical Web Fonts](/web/critical-webfonts/) article on Twitter, I had an interesting conversation with a developer named [Wim Leers](https://twitter.com/wimleers/) about embedding Web Fonts as Data URIs.

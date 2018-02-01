@@ -10,9 +10,9 @@ tags:
   - popular-posts
   - popular-posts-total
 postRank: 1
-daysPosted: 42
-yearsPosted: 0.1
-postRankTotalViews: 18
+daysPosted: 72
+yearsPosted: 0.2
+postRankTotalViews: 15
 ---
 
 Last night I hopped on Twitter after my daughter went to sleep with a little bit of time to kill before a 9 PM <a href="https://twitter.com/nejsconf">NEJS CONF</a> 2018 planning meeting. What greeted me was perhaps the most tailored, best targetted content I’ve seen on the platform since Donald’s Twitter account was deactivated for a blissful 11 minutes.
