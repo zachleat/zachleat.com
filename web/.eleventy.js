@@ -15,7 +15,11 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidFilter("reading_time", function(content) {
-		return "a few minutes";
+		let wordsPerMinute = 100;
+		let words = content.split(" ").length;
+		let minutes = Math.floor(words / wordsPerMinute);
+		let minutesLabel = "minute" + (minutes !== 1 ? "s" : "");
+		return minutes > 0 ? `about ${minutes} ${minutesLabel}` : 'less than a minute';
 	});
 
 	function postsMarkdown(item) {
