@@ -44,6 +44,10 @@ module.exports = function(eleventyConfig) {
 		return collection.getFilteredByTag("project").reverse();
 	});
 
+	eleventyConfig.addCollection("researchdesc", function(collection) {
+		return collection.getFilteredByTag("research").reverse();
+	});
+
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
