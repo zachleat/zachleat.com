@@ -431,12 +431,12 @@ a[href] > code {
 }
 pre {
 	font-family: $monospaceFont;
-	font-size: .8125em;
+	font-size: .8125rem;
 	line-height: 160%;
-	padding: .75rem;
-	margin-left: -.875rem;
-	margin-right: -.875rem;
-	background-color: #f4f4f4;
+	padding: .75rem 0; /* padding added by syntax-line-highlight plugin */
+	margin: .5em -.875rem;
+	background: #272822;
+	color: #f8f8f2;
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -pre-wrap;
@@ -454,6 +454,17 @@ pre {
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
+}
+pre:not([class*="language-"]) {
+	padding: .75rem;
+}
+pre > code {
+	font-size: .9375rem;
+	line-height: 160%;
+	padding: 0;
+	margin: 0;
+	background-color: #272822;
+	color: #f8f8f2;
 }
 
 /* Quotes */

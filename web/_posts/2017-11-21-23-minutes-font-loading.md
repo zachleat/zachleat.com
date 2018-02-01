@@ -41,12 +41,12 @@ Work was underway. I have not worked on this project before. I didn’t know any
 
 1. Delete all of the web font files that aren’t TTF files from the project—we’re gonna make our own.
 1. Use [`glyphhanger`](https://github.com/filamentgroup/glyphhanger) to subset the fonts automatically to the code points used on the actual site (while also including ASCII). I ran:
-  * `glyphhanger http://make8bitart.localhost/ --US_ASCII --subset=assets/fonts/*.ttf`
-  * Note that `glyphhanger` outputs optimized subset WOFF2, WOFF (with zopfli encoding for more savings), and TTF files.
+    * `glyphhanger http://make8bitart.localhost/ --US_ASCII --subset=assets/fonts/*.ttf`
+    * Note that `glyphhanger` outputs optimized subset WOFF2, WOFF (with zopfli encoding for more savings), and TTF files.
 1. Update the `@font-face` CSS blocks to point to the new subset files and remove all of the other formats—we’re only using WOFF2, WOFF, and TTF here. Maybe `glyphhanger` needs a feature to help with this step too!
 1. Add `font-display: swap` for full FOUT on supporting browsers (just Chrome right now but support will grow over time).
 1. `preload` both web fonts to make requests start earlier and reduce FOIT and FOUT:
-  * `<link rel="preload" href="FILE_PATH.woff2" as="font" type="font/woff2" crossorigin>`
+    * `<link rel="preload" href="FILE_PATH.woff2" as="font" type="font/woff2" crossorigin>`
 1. Update the Service Worker to cache the WOFF2 versions only, since [Service Worker](https://caniuse.com/#feat=serviceworkers) is a browser support subset of [WOFF2](https://caniuse.com/#feat=woff2).
 1. Check it all in and make a [pull request](https://github.com/jennschiffer/make8bitart/pull/62)
 

@@ -21,23 +21,23 @@ After I posted my [Critical Web Fonts](/web/critical-webfonts/) article on Twitt
 
 His suggestion was to embed the font directly in a style block on the server rendered markup, something like:
 
-{% highlight html %}
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<style>
+{% highlight-plain -%}
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;style&gt;
 	@font-face {
 		font-family: Open Sans;
-		src: url("data:application/x-font-woff;charset=utf-8;base64,...") format("woff");
+		src: url(&quot;data:application/x-font-woff;charset=utf-8;base64,...&quot;) format(&quot;woff&quot;);
 		font-weight: 400;
 		font-style: normal;
 	}
-	</style>
-</head>
-…
-</html>
-{% endhighlight %}
+	&lt;/style&gt;
+&lt;/head&gt;
+&hellip;
+&lt;/html&gt;
+{%- endhighlight %}
 
 This approach should not to be confused with the [asynchronous `loadCSS` Data URI approach](https://www.filamentgroup.com/lab/font-loading.html) documented (but deprecated) on the Filament Group blog.
 
@@ -199,9 +199,10 @@ Wow! No visible FOUT! This is a huge deal. The critical web font is available on
 Times look marginally better here too. Huh. I think I’m gonna roll with this approach on my website and see how it plays out live. Thanks for the discussion Wim! I guess I learned here that just because something is an anti-pattern doesn’t mean you should throw the baby out with the bath water. You might get some benefit from using a piece of the approach. Data URI Critical FOFT!
 
 <div id="appendix-1" style="margin-top: 8em"></div>
+
 ## Appendix 1, Data URI and Fallback src
 
-{% highlight css %}
+{% highlight css 2 %}
 @font-face {
 	/* In many browsers it loads the giant Data URI but isn’t able to use it */
 	src: url("data:application/font-woff2;charset=utf-8;base64,...") format("woff2"), url( /path/to/webfont.woff ) format( "woff" );

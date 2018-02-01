@@ -1,0 +1,17 @@
+.highlight-line {
+	padding: 0.125em .75rem; /* 2px 12px /16 */
+}
+.highlight-line-isdir {
+	color: #b0b0b0;
+	background-color: #222;
+}
+.highlight-line-active {
+	background-color: #444;
+	background-color: hsla(0, 0%, 27%, .8);
+}
+.highlight-line-add {
+	background-color: #45844b;
+}
+.highlight-line-remove {
+	background-color: #902f2f;
+}
