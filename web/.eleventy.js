@@ -91,6 +91,7 @@ module.exports = function(eleventyConfig) {
 			"png",
 			"webp",
 			"svg",
+			"gif",
 			"mp4"
 		],
 		"pathPrefix": "/web/",
