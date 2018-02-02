@@ -10,6 +10,14 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.liquid');
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
+	eleventyConfig.addNunjucksFilter("rssNewestUpdatedDate", collection => {
+    if( !collection || !collection.length ) {
+      throw new Error( "Collection is empty in lastUpdatedDate filter." );
+    }
+
+    return DateTime.fromJSDate(collection[ 0 ].date).toISO({ includeOffset: true, suppressMilliseconds: true });
+  });
+
 	eleventyConfig.addFilter("readableDate", dateObj => {
 		return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
 	});
@@ -68,7 +76,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("feedPosts", function(collection) {
-		return collection.getAllSorted().reverse().filter(postsMarkdown).filter(function(item) {
+		return collection.getSortedByDate().reverse().filter(postsMarkdown).filter(function(item) {
 			return !item.data.tags ||
 				item.data.tags.indexOf("deprecated") === -1 &&
 				item.data.tags.indexOf("feedtrim") === -1 &&
