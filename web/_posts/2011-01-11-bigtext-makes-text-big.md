@@ -23,7 +23,7 @@ yearsPosted: 7.1
 postRankTotalViews: 1
 ---
 
-*I like shortcuts: Fork [BigText on Github][github] or Check out the [BigText Demo Wizard][wizard]
+_I like shortcuts: Fork [BigText on Github][github] or Check out the [BigText Demo Wizard][wizard]_
 
  [github]: https://github.com/zachleat/BigText
  [wizard]: /bigtext/demo/
@@ -39,14 +39,18 @@ It all began with a simple web foray to [Designing Monsters][designingmonsters].
 
 At its simplest, the BigText jQuery plugin takes a single element and **sizes the text inside of its child `<div>`s to fit the width of the parent element**. Gives the text that lovely vertical alignment.
 
-    <div id="bigtext" style="width: 300px">
-        <div>The elusive</div>
-        <div>BIGTEXT</div>
-        <div>plugin exclusively</div>
-        <div>captured on film</div>
-    </div>
+```
+<div id="bigtext" style="width: 300px">
+  <div>The elusive</div>
+  <div>BIGTEXT</div>
+  <div>plugin exclusively</div>
+  <div>captured on film</div>
+</div>
+```
 
-    $('#bigtext').bigtext();
+{% highlight js %}
+$('#bigtext').bigtext();
+{% endhighlight %}
 
 ## Implementation Details
 

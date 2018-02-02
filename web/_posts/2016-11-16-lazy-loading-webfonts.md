@@ -57,7 +57,6 @@ A big thank you for [Monica Dinculescu](https://twitter.com/notwaldorf/) for rev
 
 <div class="retweettoshare">
 	<h3 class="retweettoshare_title">Retweet to share this post</h3>
-
 	<div class="retweettoshare_widget">
 		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ Lazy Loading Web Fonts Is Probably Not What You Want <a href="https://t.co/B6ffIrk8mG">https://t.co/B6ffIrk8mG</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/804654337087700992">December 2, 2016</a></blockquote>
 	</div>

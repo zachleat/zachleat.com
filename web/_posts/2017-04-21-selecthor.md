@@ -18,7 +18,6 @@ I wanted a better way to live demo what nodes a CSS selector matches on the actu
 
 <div class="retweettoshare">
 	<h3 class="retweettoshare_title">Retweet to share this post</h3>
-
 	<div class="retweettoshare_widget">
 		<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">★ Selecthor helps you learn, test, and demo CSS Selectors.<br><br>Demo: <a href="https://t.co/Miia3PmKyl">https://t.co/Miia3PmKyl</a><br>GitHub: <a href="https://t.co/snYOgSj8Xe">https://t.co/snYOgSj8Xe</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/855413012760588292">April 21, 2017</a></blockquote>
 	</div>

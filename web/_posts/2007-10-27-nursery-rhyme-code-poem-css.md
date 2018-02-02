@@ -16,11 +16,13 @@ Code Poems are fun! The trick is to take a [nursery rhyme][1] (but really, it co
 
  [1]: http://en.wikipedia.org/wiki/List_of_nursery_rhymes_in_English
 
-    #theChurch {}
-    #theChurch #theSteeple {}
-    #theChurch .door[state="open"] .people { visibility: visible; }
-    #theChurch #theParson { display: none; }
-    #theChurch > .upstairs #theParson:active { display: block; }
-    #theChurch #theParson:lang(prayers) { display: block; }
+{% highlight css %}
+#theChurch {}
+#theChurch #theSteeple {}
+#theChurch .door[state="open"] .people { visibility: visible; }
+#theChurch #theParson { display: none; }
+#theChurch > .upstairs #theParson:active { display: block; }
+#theChurch #theParson:lang(prayers) { display: block; }
+{% endhighlight %}
 
 *The above code poem is released under the BSD license.* To use in production environment without error, do not include an element with an id attribute of “theChurch”. Obviously I’m kidding, don’t use this code. Not even for enterprise software.
