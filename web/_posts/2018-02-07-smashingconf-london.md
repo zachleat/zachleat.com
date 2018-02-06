@@ -1,7 +1,5 @@
 ---
 title: SmashingConf London
-author: Zach Leatherman
-layout: post
 permalink: smashingconf-london/
 categories:
   - presentations

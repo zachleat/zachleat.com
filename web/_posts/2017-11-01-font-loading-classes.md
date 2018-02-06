@@ -1,7 +1,5 @@
 ---
 title: Managing Font Loading CSS Was Painful—Not Anymore
-author: Zach Leatherman
-layout: post
 permalink: /font-loading-classes/
 categories:
   - font-loading

@@ -1,7 +1,5 @@
 ---
 title: 'CSS-Tricks Video Screencasts #152: Font Loading'
-author: Zach Leatherman
-layout: post
 permalink: /css-tricks-screencast/
 categories:
   - presentations

@@ -1,7 +1,5 @@
 ---
 title: Laissez-faire Font Smoothing and Anti-aliasing
-author: Zach Leatherman
-layout: post
 permalink: /font-smooth/
 categories:
   - font-loading

@@ -1,7 +1,5 @@
 ---
 title: NebraskaJS Omaha
-author: Zach Leatherman
-layout: post
 permalink: /rocket-science-nebraskajs/
 categories:
   - presentations

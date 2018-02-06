@@ -1,7 +1,5 @@
 ---
 title: The Web Font Loading Glossary
-author: Zach Leatherman
-layout: post
 permalink: /webfont-glossary/
 categories:
   - font-loading

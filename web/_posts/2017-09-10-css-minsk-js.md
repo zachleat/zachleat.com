@@ -1,7 +1,5 @@
 ---
 title: CSS-Minsk-JS
-author: Zach Leatherman
-layout: post
 permalink: css-minsk-js/
 categories:
   - presentations

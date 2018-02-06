@@ -4,7 +4,7 @@ author: Zach Leatherman
 layout: post
 permalink: /manifesto/
 description: Guidelines I use when looking at the big picture as a Front End Web Developer.
-headimage: /web/projects/f2em.png
+headimage: /web/img/projects/f2em.png
 categories:
   - project
 tags:

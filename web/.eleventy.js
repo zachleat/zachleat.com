@@ -85,22 +85,17 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addPassthroughCopy("css/fonts");
+	eleventyConfig.addPassthroughCopy("img");
+	eleventyConfig.addPassthroughCopy("wp-content");
+	eleventyConfig.addPassthroughCopy("dist");
+
 	return {
 		"templateFormats": [
 			"liquid",
 			"md",
 			"njk",
-			"html",
-			"woff2",
-			"woff",
-			"css",
-			"js",
-			"jpg",
-			"png",
-			"webp",
-			"svg",
-			"gif",
-			"mp4"
+			"html"
 		],
 		"pathPrefix": "/web/",
 		"passthroughFileCopy": true,

@@ -1,9 +1,6 @@
 ---
 title: Bernie Tweets
-author: Zach Leatherman
-layout: post
 permalink: /bernie-tweets/
-categories: null
 headimage: /web/img/posts/bernie-tweets/preview.jpg
 tags:
   - project

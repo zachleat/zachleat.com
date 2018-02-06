@@ -1,7 +1,5 @@
 ---
 title: A Historical Look at FOUT and FOIT
-author: Zach Leatherman
-layout: post
 permalink: /fout-foit-history/
 categories:
   - font-loading

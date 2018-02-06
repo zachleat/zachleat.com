@@ -1,7 +1,5 @@
 ---
 title: I made a style guide for my personal web site and you should too.
-author: Zach Leatherman
-layout: post
 permalink: /now-with-style-guide/
 categories: null
 tags:

@@ -1,7 +1,5 @@
 ---
 title: The Ten Twitter Commandments
-author: Zach Leatherman
-layout: post
 permalink: twitter-guide/
 categories:
   - presentations
@@ -296,9 +294,7 @@ templateclass: wider
 	<video class="slide-image" src="/presentations/twitter-commandments/hestonzoom2.mp4" muted loop controls>
 		Sorry, your browser doesn't support embedded videos. Try <a href="/presentations/twitter-commandments/hestonzoom2.mp4">downloading it</a> instead.
 	</video>
-	<div class="slide-annotations">
-		
-	</div>
+	<div class="slide-annotations"></div>
 </div>
 
 <div class="slide">

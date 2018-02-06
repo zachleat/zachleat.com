@@ -1,7 +1,5 @@
 ---
 title: 'Web Standards Podcast #85'
-author: Zach Leatherman
-layout: post
 permalink: web-standards-podcast/
 categories:
   - font-loading

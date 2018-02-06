@@ -1,7 +1,5 @@
 ---
 title: 'FOIT vs. FOUT, a Side by Side Comparison'
-author: Zach Leatherman
-layout: post
 permalink: /fout-vs-foit/
 categories:
   - font-loading

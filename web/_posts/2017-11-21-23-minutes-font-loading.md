@@ -1,7 +1,5 @@
 ---
 title: 23 Minutes of Work for Better Font Loading
-author: Zach Leatherman
-layout: post
 permalink: 23-minutes/
 categories:
   - font-loading
