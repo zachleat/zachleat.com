@@ -192,7 +192,7 @@ module.exports = function(grunt) {
 		},
 		shell: {
 			eleventy: {
-				command: 'eleventy --quiet',
+				command: 'npx eleventy --quiet',
 				options: {
 					execOptions: {
 						cwd: '<%= config.root %>'
