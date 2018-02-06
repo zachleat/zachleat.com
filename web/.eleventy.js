@@ -11,12 +11,12 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
 	eleventyConfig.addNunjucksFilter("rssNewestUpdatedDate", collection => {
-    if( !collection || !collection.length ) {
-      throw new Error( "Collection is empty in lastUpdatedDate filter." );
-    }
+		if( !collection || !collection.length ) {
+			throw new Error( "Collection is empty in lastUpdatedDate filter." );
+		}
 
-    return DateTime.fromJSDate(collection[ 0 ].date).toISO({ includeOffset: true, suppressMilliseconds: true });
-  });
+		return DateTime.fromJSDate(collection[ 0 ].date).toISO({ includeOffset: true, suppressMilliseconds: true });
+	});
 
 	eleventyConfig.addFilter("readableDate", dateObj => {
 		return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
@@ -30,14 +30,8 @@ module.exports = function(eleventyConfig) {
 		return minutes > 0 ? `about ${minutes} ${minutesLabel}` : 'less than a minute';
 	});
 
-	function postsMarkdown(item) {
-		// Only return content that was originally a markdown file
-		let extension = item.inputPath.split('.').pop();
-		return item.inputPath.indexOf("./_posts/") === 0 && extension === "md";
-	}
-
 	eleventyConfig.addCollection("posts", function(collection) {
-		return collection.getAllSorted().reverse().filter(postsMarkdown);
+		return collection.getFilteredByGlob("./_posts/*.md").reverse();
 	});
 
 	// font-loading category mapped to collection
@@ -76,7 +70,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("feedPosts", function(collection) {
-		return collection.getSortedByDate().reverse().filter(postsMarkdown).filter(function(item) {
+		return collection.getFilteredByGlob("./_posts/*.md").reverse().filter(function(item) {
 			return !item.data.tags ||
 				item.data.tags.indexOf("deprecated") === -1 &&
 				item.data.tags.indexOf("feedtrim") === -1 &&
