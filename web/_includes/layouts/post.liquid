@@ -25,7 +25,7 @@ layout: default
 	{% endif %}
 	{% if external_url %}
 	<article>
-		<p>{% if tags contains 'upcoming' %}This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at{% else %}Originally posted at{% endif %}: <a href="{{ external_url }}">{{ external_url }}</a></p>
+		<p><em>{% if tags contains 'upcoming' %}This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at{% else %}Originally posted at{% endif %}: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
 	</article>
 	{% endif %}
 	{{ content }}

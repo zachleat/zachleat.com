@@ -17,6 +17,7 @@
 		{{ post.data.title }}</a>
 	{% endif %}
 	<span class="tags">
+		{%- if post.data.tags contains 'eleventy' %}<a class="tag">Eleventy</a>{% endif -%}
 		{%- if post.data.tags contains 'font-loading' %}<a href="/web/fonts/" class="tag font-loading">Web Fonts</a>{% endif -%}
 		{%- if post.data.tags contains 'project' %}<a href="/web/projects/" class="tag">Project</a>{% endif -%}
 		{%- if post.data.tags contains 'research' %}<a href="/web/research/" class="tag">Research</a>{% endif -%}

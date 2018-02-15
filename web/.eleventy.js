@@ -31,7 +31,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("posts", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*.md").reverse();
+		return collection.getFilteredByGlob("./_posts/*").reverse();
 	});
 
 	// font-loading category mapped to collection
@@ -53,7 +53,8 @@ module.exports = function(eleventyConfig) {
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
-			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("presentations") > -1;
+			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("presentations") > -1 ||
+				"tags" in item.data && item.data.tags && item.data.tags.indexOf("speaking") > -1;
 		}).reverse();
 	});
 
@@ -70,7 +71,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("feedPosts", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*.md").reverse().filter(function(item) {
+		return collection.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
 			return !item.data.tags ||
 				item.data.tags.indexOf("deprecated") === -1 &&
 				item.data.tags.indexOf("feedtrim") === -1 &&
