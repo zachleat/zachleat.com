@@ -23,7 +23,7 @@ Eleventy was created for three reasons:
 
 * Flexibility
 * Betting on JavaScript
-* But Eleventy is not a JavaScript Framework
+* Not a JavaScript Framework
 
 ## Flexibility
 
