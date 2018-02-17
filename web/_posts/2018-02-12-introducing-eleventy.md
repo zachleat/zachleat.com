@@ -17,6 +17,8 @@ Eleventy is a new static site generator.
 
 Another static site generator? Yes. But why? Fair question.
 
+_If you’re not familiar with static site generators and their benefits, check out this great Smashing Magazine post: [Why Static Site Generators Are The Next Big Thing](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/) from [@biilmann](https://twitter.com/biilmann)._
+
 Eleventy was created for three reasons:
 
 * Flexibility
