@@ -37,7 +37,8 @@ module.exports = function(eleventyConfig) {
 	// font-loading category mapped to collection
 	eleventyConfig.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
-			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1;
+			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 ||
+				"tags" in item.data && item.data.tags && item.data.tags.indexOf("font-loading") > -1;
 		}).reverse();
 	});
 
