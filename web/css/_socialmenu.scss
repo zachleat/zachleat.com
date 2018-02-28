@@ -33,15 +33,19 @@
 	font-size: 1.6em;
 	text-decoration: none;
 	overflow: hidden;
-	width: 24px;
-	height: 24px;
-	background-size: auto 100%;
+	width: 22px;
+	height: 22px;
+	background-size: contain;
+	background-position: 50% 50%;
 	vertical-align: top;
 	text-indent: 9999px;
 	white-space: nowrap;
 }
 .grunticon .social .icon-nebraskajs {
-	width: 53px;
+	width: 42px;
+}
+.grunticon .social .icon-npm {
+	width: 36px;
 }
 .social a.icon-filamentgroup {
 	white-space: nowrap;
