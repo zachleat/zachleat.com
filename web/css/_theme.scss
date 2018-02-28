@@ -52,12 +52,14 @@ dd {
 	hyphens: manual;
 }
 
-/* Border */
 html {
-	background-color: $borderColor;
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+}
+html,
+body {
+	background-color: backgroundColor;
 }
 
 /* Post Addendum Notes */
@@ -270,7 +272,6 @@ body {
 	font-family: $fallbackSystemFont;
 	padding: 0;
 	margin: 0;
-	background-color: $backgroundColor;
 	font-size: 100%;
 	line-height: 140%;
 	font-size-adjust: .51;
