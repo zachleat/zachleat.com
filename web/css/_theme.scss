@@ -710,14 +710,14 @@ th.numeric {
 	.posts-count li:before {
 		pointer-events: none;
 		position: absolute;
-		left: 13px;
-		top: 19px;
-		content: "" counter(start-from, decimal-leading-zero) ". ";
+		left: -14px;
+		top: 12px;
+		content: counter(start-from, decimal-leading-zero);
 		color: #888;
 		line-height: 100%;
 		width: 2.5em;
 		text-align: right;
-		font-size: .625em; /* 10px */
+		font-size: 1em; /* 19px /19 */
 	}
 	.posts-count .subhed:before,
 	.posts-count .upcoming:before {
