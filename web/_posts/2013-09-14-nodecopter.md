@@ -1,11 +1,11 @@
 ---
-title: 'A Nodecopter Informercial (at HOW Conf)'
+title: A Nodecopter Informercial (at HOW Conf)
 author: Zach Leatherman
 layout: post
 permalink: /nodecopter/
 categories:
- - presentations
-tags:
+  - presentations
+tags: null
 ---
 
 <script async class="speakerdeck-embed" data-id="bbc239c04cbd013178de1eef186a2630" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

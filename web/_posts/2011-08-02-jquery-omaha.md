@@ -1,11 +1,11 @@
 ---
-title: 'Progressive Enhancement (at jQuery Omaha)'
+title: Progressive Enhancement (at jQuery Omaha)
 author: Zach Leatherman
 layout: post
 permalink: /jquery-omaha/
 categories:
- - presentations
-tags:
+  - presentations
+tags: null
 ---
 
 A presentation for the jQuery Omaha meetup group, later transformed into NebraskaJS.

@@ -7,9 +7,9 @@ tags:
   - research
   - highlight
   - popular-posts
-postRank: 14
-daysPosted: 252
-yearsPosted: 0.7
+postRank: 15
+daysPosted: 278
+yearsPosted: 0.8
 ---
 
 _Recently, Twitter made a global anti-aliasing CSS change to their website. Before writing this post, I didn’t know very much about anti-aliasing—so I decided to learn everything I could about it to better understand the reasoning behind a decision like that. Here’s what I learned._

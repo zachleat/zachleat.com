@@ -1,11 +1,7 @@
 ---
 title: Relative URLs including the Domain
 author: Zach Leatherman
-excerpt: >-
-  Just a neat little trick I saw while browsing the source code of Google
-  Calendar.  In some of their CSS files, they link to background-images using
-  URLs that include everything but the protocol, which is something I hadn't
-  seen before.
+excerpt: 'Just a neat little trick I saw while browsing the source code of Google Calendar.  In some of their CSS files, they link to background-images using URLs that include everything but the protocol, which is something I hadn''t seen before.'
 layout: post
 permalink: /relative-urls-including-the-domain/
 categories:

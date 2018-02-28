@@ -4,17 +4,15 @@ author: Zach Leatherman
 layout: post
 permalink: /wake-up-to-youtube-on-my-internet-alarm-clock/
 project_name: ALARMd
-description: >-
-  First iteration of the alarm clock that plays YouTube videos or other
-  multimedia sources. Updated to ALARMd 2.
+description: First iteration of the alarm clock that plays YouTube videos or other multimedia sources. Updated to ALARMd 2.
 tags:
   - highlight
   - project
   - feedtrim
   - popular-posts-total
 postRankTotalViews: 8
-daysPosted: 3881
-yearsPosted: 10.6
+daysPosted: 3907
+yearsPosted: 10.7
 ---
 
 **Update**: Try the new [ALARMd 2 Beta][1], with Google Calendar integration and offline Youtube caching.

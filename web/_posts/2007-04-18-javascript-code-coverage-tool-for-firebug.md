@@ -13,8 +13,8 @@ tags:
   - feedtrim
   - popular-posts-total
 postRankTotalViews: 18
-daysPosted: 3942
-yearsPosted: 10.8
+daysPosted: 3968
+yearsPosted: 10.9
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]

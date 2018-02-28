@@ -1,9 +1,13 @@
 ---
-title: Introducing Eleventy, a new Static Site Generator
+title: 'Introducing Eleventy, a new Static Site Generator'
 permalink: /introducing-eleventy/
 tags:
   - eleventy
   - project
+  - popular-posts
+postRank: 3
+daysPosted: 15
+yearsPosted: 0
 ---
 
 <p>

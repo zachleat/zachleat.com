@@ -8,6 +8,6 @@ tags:
   - conference
   - speaking
 external_url: 'http://css-minsk-js.by/'
-event_date: 'September 10'
+event_date: September 10
 ---
 

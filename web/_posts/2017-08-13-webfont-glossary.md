@@ -6,8 +6,8 @@ categories:
 tags:
   - font-loading
   - popular-posts
-postRank: 7
-daysPosted: 172
+postRank: 9
+daysPosted: 198
 yearsPosted: 0.5
 ---
 

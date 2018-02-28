@@ -7,8 +7,8 @@ tags:
   - font-loading
   - project
   - popular-posts
-postRank: 4
-daysPosted: 92
+postRank: 6
+daysPosted: 118
 yearsPosted: 0.3
 ---
 

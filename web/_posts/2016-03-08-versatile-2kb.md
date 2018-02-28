@@ -1,5 +1,5 @@
 ---
-title: 'A Versatile 2KB of JS'
+title: A Versatile 2KB of JS
 author: Zach Leatherman
 layout: post
 permalink: /versatile-2kb/
@@ -8,7 +8,7 @@ categories:
 tags:
   - video
   - external
-external_url: https://nebraskajs.com/2017/versatile2kb/
+external_url: 'https://nebraskajs.com/2017/versatile2kb/'
 medialength: 25 min
 ---
 

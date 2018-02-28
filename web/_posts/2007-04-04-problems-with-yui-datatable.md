@@ -10,8 +10,8 @@ tags:
   - feedtrim
   - popular-posts-total
 postRankTotalViews: 10
-daysPosted: 3956
-yearsPosted: 10.8
+daysPosted: 3982
+yearsPosted: 10.9
 ---
 
 If you have read anything I’ve written before or know me at all, you know that my go-to JavaScript library is the one and only YUI. So obviously, when I was looking around for a Grid (or as YUI jargon goes, a DataTable), naturally I’m going to turn to YUI compatible components. First, I looked at Jack Slocum’s EXT, which has a nice looking Grid component that had a lot of features I wouldn’t need, but I didn’t really want to take a 0.5 MB hit for the limited feature set I was requiring. Adding the YUI DataTable would only tack on approximately 70-75 KB of additional download. So first, let me establish what I’m going for:
