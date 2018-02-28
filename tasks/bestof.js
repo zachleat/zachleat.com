@@ -6,6 +6,7 @@ module.exports = function(grunt) {
 	const _remove = require('lodash.remove');
 	const normalize = require("normalize-path");
 	const bestof = grunt.file.readJSON("zachleat-bestof.json").rows;
+	const debug = require("debug")("bestof");
 
 	"use strict";
 	grunt.registerTask("bestof", function() {
@@ -86,28 +87,37 @@ module.exports = function(grunt) {
 		console.log( "> Deleting previous post ranks, tags from front matters." );
 		pageviewsArr.forEach(function(entry, j) {
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
-			delete frontmatter.data.postRank;
-			delete frontmatter.data.daysPosted;
-			delete frontmatter.data.yearsPosted;
-			if( frontmatter.data.tags ) {
-				_remove( frontmatter.data.tags, function( tag ) {
+			var data = frontmatter.data;
+			delete data.postRank;
+			delete data.daysPosted;
+			delete data.yearsPosted;
+			if( data.tags ) {
+				_remove( data.tags, function( tag ) {
 					return tag === "popular-posts";
 				});
 			}
-			fs.writeFileSync( entry.path, frontmatter.stringify());
+
+			debug("Remove existing ranked posts by per-day views for %o", entry.path);
+			debug("frontmatter.content: %O", frontmatter.content);
+			debug("frontmatter data: %O", data);
+			fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
 		});
 
 		totalviewsArr.forEach(function(entry, j) {
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
-			delete frontmatter.data.postRankTotalViews;
-			delete frontmatter.data.daysPosted;
-			delete frontmatter.data.yearsPosted;
-			if( frontmatter.data.tags ) {
-				_remove( frontmatter.data.tags, function( tag ) {
+			var data = frontmatter.data;
+			delete data.postRankTotalViews;
+			delete data.daysPosted;
+			delete data.yearsPosted;
+			if( data.tags ) {
+				_remove( data.tags, function( tag ) {
 					return tag === "popular-posts-total";
 				});
 			}
-			fs.writeFileSync( entry.path, frontmatter.stringify());
+			debug("Remove existing ranked posts by total views for %o", entry.path);
+			debug("frontmatter.content: %O", frontmatter.content);
+			debug("frontmatter data: %O", data);
+			fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
 		});
 		console.log( "> Deleting complete." );
 
@@ -115,32 +125,38 @@ module.exports = function(grunt) {
 		pageviewsArr.slice(0, 20).forEach(function(entry, j) {
 			// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
-			frontmatter.data.postRank = ( j + 1 );
-			frontmatter.data.daysPosted = entry.daysPosted;
-			frontmatter.data.yearsPosted = entry.yearsPosted;
-			if( !frontmatter.data.tags ) {
-				frontmatter.data.tags = [];
+			var data = frontmatter.data;
+			data.postRank = ( j + 1 );
+			data.daysPosted = entry.daysPosted;
+			data.yearsPosted = entry.yearsPosted;
+			if( !data.tags ) {
+				data.tags = [];
 			}
-			frontmatter.data.tags.push( 'popular-posts' );
-			frontmatter.data.tags = _uniq( frontmatter.data.tags );
+			data.tags.push( 'popular-posts' );
+			data.tags = _uniq( data.tags );
+
 			console.log( "Writing", entry.path );
-			fs.writeFileSync( entry.path, frontmatter.stringify());
+			debug("Add existing ranked posts by per-day views for %o", entry.path);
+			debug("frontmatter.content: %O", frontmatter.content);
+			debug("frontmatter data: %O", data);
+			fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
 		});
 
 		console.log( "> Editing post front matter with post ranks (total)." );
 		totalviewsArr.slice(0, 20).forEach(function(entry, j) {
 			// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
-			frontmatter.data.postRankTotalViews = ( j + 1 );
-			frontmatter.data.daysPosted = entry.daysPosted;
-			frontmatter.data.yearsPosted = entry.yearsPosted;
-			if( !frontmatter.data.tags ) {
-				frontmatter.data.tags = [];
+			var data = frontmatter.data;
+			data.postRankTotalViews = ( j + 1 );
+			data.daysPosted = entry.daysPosted;
+			data.yearsPosted = entry.yearsPosted;
+			if( !data.tags ) {
+				data.tags = [];
 			}
-			frontmatter.data.tags.push( 'popular-posts-total' );
-			frontmatter.data.tags = _uniq( frontmatter.data.tags );
+			data.tags.push( 'popular-posts-total' );
+			data.tags = _uniq( data.tags );
 			console.log( "Writing", entry.path );
-			fs.writeFileSync( entry.path, frontmatter.stringify());
+			fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
 		});
 
 		console.log( "> Writing best-of jekyll template file." );
@@ -148,9 +164,10 @@ module.exports = function(grunt) {
 
 		function updateUpdatedDate( bestOfTemplatePath, updatedDate ) {
 			var bestofFrontMatter = matter( fs.readFileSync( bestOfTemplatePath, 'utf8') );
-			bestofFrontMatter.data.dataUpdatedDate = updatedDate;
+			var data = bestofFrontMatter.data;
+			data.dataUpdatedDate = updatedDate;
 			console.log( "Writing", bestOfTemplatePath );
-			fs.writeFileSync( bestOfTemplatePath, bestofFrontMatter.stringify());
+			fs.writeFileSync( bestOfTemplatePath, matter.stringify(bestofFrontMatter.content, data, {lineWidth: 9999}));
 		}
 
 		/* Warning this date won’t match the analytics data fetch date. */
