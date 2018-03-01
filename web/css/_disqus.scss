@@ -1,5 +1,7 @@
-.enhanced-js .disqus-loader {
-	display: block;
+.enhanced-js .disqus-container {
+	margin: 3em 0 4em;
 	text-align: center;
-	padding: 1em 0;
+}
+.enhanced-js .disqus-loader {
+	display: inline;
 }

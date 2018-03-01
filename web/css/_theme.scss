@@ -652,8 +652,16 @@ th.numeric {
 }
 
 .sub {
-	margin-top: 2rem;
+	margin-top: 0;
 	font-size: 0.8421052631579em; /* 16px /19 */
+}
+h1 + .sub {
+	margin-top: -1.5em;
+}
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 34.375em) {
+	.sub {
+		margin-bottom: 5rem;
+	}
 }
 .sub em {
 	margin-right: 1em;
@@ -739,9 +747,7 @@ th.numeric {
 
 /* About Me Link Block */
 .about {
-	border-bottom: 1px solid #ccc;
-	padding: 1em 0;
-	margin-top: 1em;
+	margin: 5em 0;
 	font-size: .875em;
 	line-height: 160%;
 
@@ -770,7 +776,22 @@ th.numeric {
 .about img {
 	float: left;
 	width: 80px;
+	height: 80px;
 	margin: 0 1em 1em 0;
+	border-radius: 50%;
+}
+.about .social {
+	display: block;
+	margin: 1.5em 0;
+}
+@media (min-width: 30em) {
+	.about {
+		display: flex;
+	}
+	.about img {
+		float: none;
+		flex: 0 0 80px;
+	}
 }
 
 /* Footer */
