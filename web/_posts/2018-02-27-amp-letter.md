@@ -1,6 +1,11 @@
 ---
-title: '“A letter about Google AMP”'
+title: “A letter about Google AMP”
 permalink: /amp-letter/
+postRank: 14
+daysPosted: 3
+yearsPosted: 0
+tags:
+  - popular-posts
 ---
 
 On Twitter alone, AMP and I have a [long](https://twitter.com/zachleat/status/908417702183735297) [sordid](https://twitter.com/zachleat/status/941375406095167489) [history](https://twitter.com/zachleat/status/950419903328215040).
