@@ -1,5 +1,5 @@
 ---
-title: 'DIY Webdings &#8211; CSS Sprites using @font-face'
+title: 'DIY Webdings—CSS Sprites using @font-face'
 author: Zach Leatherman
 layout: post
 permalink: /css-sprites-using-font-face/
@@ -8,6 +8,7 @@ categories:
 tags:
   - highlight
   - research
+  - font-loading
 ---
 
 Almost everyone knows the Webdings font or its sibling Wingdings. Even if you don’t, chances are pretty good that it’s installed on your system.

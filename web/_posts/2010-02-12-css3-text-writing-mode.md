@@ -8,6 +8,7 @@ categories:
   - Web Browsers
 tags:
   - research
+  - font-loading
   - popular-posts-total
 postRankTotalViews: 11
 daysPosted: 2937
