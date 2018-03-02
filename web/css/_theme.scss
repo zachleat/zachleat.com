@@ -879,10 +879,8 @@ a[href].tag:visited:hover {
 	margin-left: -15px;
 	border-left: none;
 	border-right: none;
-	@include webfontBoldItalic;
-}
-.tags .tag.timeago.years {
 	color: #777;
+	@include webfontBoldItalic;
 }
 .tags .tag:hover + .tag.timeago {
 	background-image: linear-gradient(90deg, #444, #777);

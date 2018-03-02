@@ -10,7 +10,19 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.liquid');
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
-	eleventyConfig.addNunjucksFilter("rssNewestUpdatedDate", collection => {
+	eleventyConfig.addFilter("timePosted", date => {
+		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
+		let daysPosted = Math.round( parseFloat( numDays ) );
+		let yearsPosted = parseFloat( (numDays / 365).toFixed(1) );
+
+		if( daysPosted < 365 ) {
+			return daysPosted + " day" + (daysPosted !== 1 ? "s" : "");
+		} else {
+			return yearsPosted + " year" + (yearsPosted !== 1 ? "s" : "");
+		}
+	});
+
+	eleventyConfig.addFilter("rssNewestUpdatedDate", collection => {
 		if( !collection || !collection.length ) {
 			throw new Error( "Collection is empty in lastUpdatedDate filter." );
 		}

@@ -10,8 +10,6 @@ tags:
   - popular-posts
   - popular-posts-total
 postRank: 5
-daysPosted: 682
-yearsPosted: 1.9
 postRankTotalViews: 6
 ---
 

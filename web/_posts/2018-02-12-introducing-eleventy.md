@@ -6,8 +6,6 @@ tags:
   - project
   - popular-posts
 postRank: 3
-daysPosted: 18
-yearsPosted: 0
 ---
 
 <p>

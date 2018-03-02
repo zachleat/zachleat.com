@@ -7,13 +7,10 @@ categories:
   - font-loading
 tags:
   - highlight
-  - project
   - font-loading
   - popular-posts
   - popular-posts-total
 postRank: 17
-daysPosted: 2486
-yearsPosted: 6.8
 postRankTotalViews: 5
 ---
 

@@ -71,7 +71,7 @@
 
 							{% for post in collections.popularPostsRanked %}
 							{% if forloop.index <= 5 %}
-							<a href="{{ post.url | url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{% if post.data.daysPosted < 365 %}{{ post.data.daysPosted }} day{% if post.data.daysPosted != 1 %}s{% endif %}{% else %}{{ post.data.yearsPosted }} year{% if post.data.yearsPosted != 1 %}s{% endif %}{% endif %}</em></a>
+							<a href="{{ post.url | url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
 							{% endif %}
 							{% endfor %}
 						</div>

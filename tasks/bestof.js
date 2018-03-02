@@ -52,13 +52,9 @@ module.exports = function(grunt) {
 						pageviews[newslug].postedYear =
 							"(" + new Date(pageviews[newslug].postedDate).getFullYear() + ")";
 						pageviews[newslug].averageViews = (pageviews[newslug].views / numDays).toFixed(1);
-						pageviews[newslug].daysPosted = Math.round( parseFloat( numDays ) );
-						pageviews[newslug].yearsPosted = parseFloat( (numDays / 365).toFixed(1) );
 					} else {
 						pageviews[newslug].postedYear = "";
 						pageviews[newslug].averageViews = "";
-						pageviews[newslug].daysPosted = "";
-						pageviews[newslug].yearsPosted = "";
 					}
 				} else {
 					console.warn( ">>> WARNING POST NOT FOUND!", filename );
@@ -127,8 +123,6 @@ module.exports = function(grunt) {
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
 			var data = frontmatter.data;
 			data.postRank = ( j + 1 );
-			data.daysPosted = entry.daysPosted;
-			data.yearsPosted = entry.yearsPosted;
 			if( !data.tags ) {
 				data.tags = [];
 			}
@@ -148,8 +142,6 @@ module.exports = function(grunt) {
 			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
 			var data = frontmatter.data;
 			data.postRankTotalViews = ( j + 1 );
-			data.daysPosted = entry.daysPosted;
-			data.yearsPosted = entry.yearsPosted;
 			if( !data.tags ) {
 				data.tags = [];
 			}
