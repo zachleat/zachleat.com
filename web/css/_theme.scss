@@ -254,15 +254,24 @@ figcaption strong,
 }
 
 .maxwidth,
-.maxwidth-list {
-	padding: 0 .75em; /* 12px */
+.maxwidth + footer,
+.maxwidth-list,
+.maxwidth-list + footer {
 	margin: 0 auto;
+	padding: 0 .75em; /* 12px */
 }
-.maxwidth {
+.maxwidth + footer .footer,
+.maxwidth-list + footer .footer {
+	padding-left: 0;
+	padding-right: 0;
+}
+.maxwidth,
+.maxwidth + footer {
 	max-width: 31em;
 }
 .wider .maxwidth:first-child,
-.maxwidth-list {
+.maxwidth-list,
+.maxwidth-list + footer {
 	max-width: 45em;
 }
 
@@ -801,10 +810,6 @@ h1 + .sub {
 	font-size: 0.7368421052632em; /* 14px /19 */
 	line-height: 135%;
 	@include webfontItalic;
-}
-.maxwidth .footer {
-	padding-left: 0;
-	padding-right: 0;
 }
 
 /* Tags */
