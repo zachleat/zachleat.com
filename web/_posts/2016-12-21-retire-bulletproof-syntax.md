@@ -10,7 +10,9 @@ tags:
   - highlight
 ---
 
-[***No @font-face Syntax will ever be Bulletproof, Nor Should It Be* was originally posted on the perfplanet.com Performance Calendar.**](http://calendar.perfplanet.com/2016/no-font-face-bulletproof-syntax/)
+_Originally posted as [No @font-face Syntax will ever be Bulletproof, Nor Should It Be](http://calendar.perfplanet.com/2016/no-font-face-bulletproof-syntax/) on the [perfplanet.com 2016 Performance Calendar](http://calendar.perfplanet.com/2016/)._
+
+---
 
 When you’ve been in the web development game long enough, you see patterns repeat themselves. It wasn’t all that long ago that developers attempted the Sisyphean task of making all  experiences identical for every user independent of their web browser or device’s technical capability. We’ve since learned to shed those shackles in pursuit of something far better: reach.
 

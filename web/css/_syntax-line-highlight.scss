@@ -1,6 +1,17 @@
 .highlight-line {
 	padding: 0.125em .75rem; /* 2px 12px /16 */
 }
+.highlight-line:empty {
+	min-height: 1.5rem;
+}
+.highlight-line:not(:empty):not(:last-child) {
+	border-bottom: 1px dotted #555;
+}
+.highlight-line.highlight-line.highlight-line-active,
+.highlight-line.highlight-line.highlight-line-add,
+.highlight-line.highlight-line.highlight-line-remove {
+	border-color: transparent;
+}
 .highlight-line-isdir {
 	color: #b0b0b0;
 	background-color: #222;
