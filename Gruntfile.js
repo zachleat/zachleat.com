@@ -226,12 +226,8 @@ module.exports = function(grunt) {
 				files: [
 					'<%= config.root %>**/*.html',
 					'<%= config.root %>**/*.md',
-					'<%= config.root %>_layouts/**/*',
-					'<%= config.root %>_drafts/**/*',
-					'<%= config.root %>license/**/*',
-					'<%= config.root %>feed/**/*',
-					'<%= config.root %>_plugins/**/*',
-					'<%= config.root %>_includes/**/*' ],
+					'<%= config.root %>_includes/**/*',
+					'!<%= config.root %>_site/*' ],
 				tasks: ['content']
 			}
 		}
@@ -247,5 +243,5 @@ module.exports = function(grunt) {
 
 	// Upload to Production
 	grunt.registerTask('stage', ['clean', 'assets', 'images', 'content', 'htmlmin', 'zopfli']);
-	grunt.registerTask('deploy', ['stage', 'shell:upload']);
+	grunt.registerTask('deploy', ['stage', 'shell:upload', 'clean']);
 };
