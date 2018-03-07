@@ -1,9 +1,13 @@
 ---
 title: It’s Dangerous to Go Stallone. Take Glyphhanger
 permalink: /glyphhanger/
+tags:
+  - font-loading
+  - project
+  - highlight
 ---
 
-_Originally posted as [glyphhanger is for Subsetting Web Fonts](http://filamentgroup.com/lab/glyphhanger/) on the [Filament Group Lab](http://filamentgroup.com/lab/). Title by [Scott Jehl](https://www.filamentgroup.com/about/#scott-jehl)_
+_Originally posted as [It’s Dangerous to Go Stallone. Take Glyphhanger](http://filamentgroup.com/lab/glyphhanger/) on the [Filament Group Lab](http://filamentgroup.com/lab/). Title by [Scott Jehl](https://www.filamentgroup.com/about/#scott-jehl)_
 
 ---
 
@@ -56,7 +60,7 @@ U+20,U+21,U+26,U+28,U+29,U+2B-38,U+3A,U+3F-47,U+49,U+4C-50,U+52-55,U+57-5A,U+61-
 
 Let’s take `Roboto-Regular.ttf` and subset it this Unicode range. glyphhanger can help with this too:
 
-_Subsetting functionality in glyphhanger requires you to install [fonttools], a python project. The glyphhanger README includes [installation instructions for Mac OS X](https://github.com/filamentgroup/glyphhanger#installing-pyftsubset)._
+_Subsetting functionality in glyphhanger requires you to install [fonttools](https://github.com/fonttools/fonttools), a python project. The glyphhanger README includes [installation instructions for Mac OS X](https://github.com/filamentgroup/glyphhanger#installing-pyftsubset)._
 
 {% highlight-plain %}
 $ glyphhanger https://www.filamentgroup.com/ --subset=Roboto-Regular.ttf --formats=woff2,woff
