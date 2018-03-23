@@ -8,6 +8,7 @@ permalink: style-guide/
 	<li><a href="#colors">Colors</a></li>
 	<li><a href="#demos">Demos</a></li>
 	<li><a href="#typography">Typography</a></li>
+	<li><a href="#code">Code</a></li>
 	<li><a href="#icons">Icons</a></li>
 	<li><a href="#lists">Lists</a></li>
 	<li><a href="#tables">Tables</a></li>
@@ -105,7 +106,20 @@ permalink: style-guide/
 </div>
 <p class="caption">The Lato webfont supports only the <code>liga</code> feature.</p>
 
-<h3>Code</h3>
+<h3>Blockquotes</h3>
+<div class="livedemo">
+	<p>Normal paragraph text.</p>
+	<blockquote>Progressive enhancement is a touchy subject. It can be hard to discuss dispassionately because, like accessibility, it’s often framed as an issue of empathy and compassion.</blockquote>
+	<p>Normal paragraph text.</p>
+</div>
+
+<h3>Text Highlighted Header</h3>
+<p>Works with any header level. Set any <code>background-color</code> and <code>color</code> on the element.</p>
+<div class="livedemo">
+	<h1 class="text-highlight" style="background-color: #333; color: #fff">This is a Top Level Header that wraps to multiple lines to show how the background color wraps too.</h1>
+</div>
+
+<h2 id="code">Code</h2>
 <div class="livedemo">
 	<p>This is a simple <code>code element</code>. It’s usually alongside some other text.</p>
 </div>
@@ -116,7 +130,9 @@ permalink: style-guide/
 	<pre><code>This is pre > code.</code></pre>
 
 	<pre><code>This is pre > code with a really long line length. It should wrap smartly without a scrollbar.</code></pre>
+</div>
 
+<div class="livedemo">
 {% highlight css %}
 .my-class {
 	this: is;
@@ -142,19 +158,6 @@ permalink: style-guide/
 {% endhighlight %}
 
 <p>Using Prism.js and <a href="https://github.com/11ty/eleventy-plugin-syntaxhighlight"><code>eleventy-plugin-syntaxhighlight</code></a> for line highlights.</p>
-</div>
-
-<h3>Blockquotes</h3>
-<div class="livedemo">
-	<p>Normal paragraph text.</p>
-	<blockquote>Progressive enhancement is a touchy subject. It can be hard to discuss dispassionately because, like accessibility, it’s often framed as an issue of empathy and compassion.</blockquote>
-	<p>Normal paragraph text.</p>
-</div>
-
-<h3>Text Highlighted Header</h3>
-<p>Works with any header level. Set any <code>background-color</code> and <code>color</code> on the element.</p>
-<div class="livedemo">
-	<h1 class="text-highlight" style="background-color: #333; color: #fff">This is a Top Level Header that wraps to multiple lines to show how the background color wraps too.</h1>
 </div>
 
 <h2 id="icons">Icons</h2>
