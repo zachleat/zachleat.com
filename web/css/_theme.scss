@@ -355,7 +355,7 @@ h1, h2, h3 {
 }
 h1 {
 	color: #222;
-	font-size: 1.7em; /* 27px */
+	font-size: 1.421052631579em; /* 27px /19 */
 	line-height: 110%;
 }
 h1:first-child {
@@ -368,11 +368,11 @@ h1:first-child {
 }
 @media (min-width: 30em) {
 	h1 {
-		font-size: 2em;
+		font-size: 2em; /* 38px /19 */
 	}
 }
 h2{
-	font-size: 1.375em; /* 22px */
+	font-size: 1.421052631579em; /* 27px /19 */
 	padding: 0 .227272727em; /* 0 5px */
 }
 .maxwidth h1,
@@ -388,15 +388,15 @@ h2{
 	margin-top: .5em;
 	border-bottom: none;
 }
+h3 {
+	font-size: 1.157894736842em; /* 22px /19 */
+}
 h4,
 h5 {
 	font-size: 1em;
 	margin-bottom: .5em;
 }
 @media (min-width: $twoColLayoutMinWidth) {
-	h1 {
-		font-size: 2.375em; /* 38px */
-	}
 	h1, h2 {
 		padding: 0;
 	}
@@ -813,7 +813,16 @@ h1 + .sub {
 }
 
 /* Tags */
-.tag {
+.tags {
+	display: inline-block;
+	white-space: nowrap;
+	vertical-align: middle;
+	margin-top: -10px;
+}
+.tags:empty {
+	display: none;
+}
+.tags .tag {
 	border: 1px solid rgba(0, 0, 0, .08);
 	font-size: 10.5px;
 	line-height: 18px;
@@ -828,50 +837,41 @@ h1 + .sub {
 
 	@include webfontBold;
 }
-.tag:first-child {
+.tags .tag:first-child {
 	margin-left: 0;
 }
-.tag:last-child {
+.tags .tag:last-child {
 	margin-right: 0;
 }
-.tag:visited {
+.tags .tag:visited {
 	color: #666;
 	text-decoration: none;
 }
-.tag-borderless,
-.tag-borderless:visited {
+.tags .tag-borderless,
+.tags .tag-borderless:visited {
 	border-color: transparent;
 	text-decoration: underline;
 }
-.tag-event {
+.tags .tag-event {
 	border-color: transparent;
 	text-decoration: none;
 	text-transform: none;
 }
-.tag.active,
-.tag.active:visited,
-a[href].tag:hover,
-a[href].tag:visited:hover {
+.tags .tag.active,
+.tags .tag.active:visited,
+.tags a[href].tag:hover,
+.tags a[href].tag:visited:hover {
 	background-color: #444;
 	color: #fff;
 	border-color: #444;
 }
 
-.tags {
-	display: inline-block;
-	white-space: nowrap;
-	vertical-align: middle;
-	margin-top: -10px;
-}
-.tags:empty {
-	display: none;
-}
-.tag.video,
-.tag.audio {
+.tags .tag.video,
+.tags .tag.audio {
 	text-transform: lowercase;
 	border-color: transparent;
 }
-.tag.tweet {
+.tags .tag.tweet {
 	color: #00c9ff;
 }
 .tags .tag.timeago,
@@ -895,18 +895,18 @@ a[href].tag:visited:hover {
 .tags .highlight-label {
 	@include a11y-only;
 }
-.tag .highlight-star {
+.tags .tag .highlight-star {
 	font-family: sans-serif;
 	font-size: 12px;
 }
-.tag.font-loading {
+.tags .tag.font-loading {
 	background-color: #f1f1f1;
 }
-.tag + .tag {
+.tags .tag + .tag {
 	margin-left: -6px;
 }
 
-.tags-rail {
+.tags.tags-rail {
 	white-space: normal;
 	margin-top: .5em;
 
@@ -914,38 +914,38 @@ a[href].tag:visited:hover {
 		text-align: center;
 	}
 }
-.tags-rail .tag {
+.tags.tags-rail .tag {
 	margin-right: 0;
 	margin-left: 1px;
 	margin-bottom: 5px;
 }
 
 /* Top 5 Rail module */
-.tags-rail-top5 {
+.tags.tags-rail-top5 {
 	display: none;
 }
 @media (min-width: $twoColLayoutMinWidth) and (min-height: 35em) { /* 560px */
-	.tag-popular {
+	.tags .tag-popular {
 		display: none;
 	}
 
 	/* Top 5 posts */
-	.tags-rail-top5 {
+	.tags.tags-rail-top5 {
 		display: block;
 		position: absolute;
 		bottom: 1em;
 		width: 100%;
 	}
-	.top5 {
+	.tags .top5 {
 		font-size: 13px;
 		margin-top: 4em;
 		margin-bottom: .5em;
 		color: #666;
 	}
-	.top5 a {
+	.tags .top5 a {
 		text-decoration: none;
 	}
-	.tag.tag-popular-rail {
+	.tags .tag.tag-popular-rail {
 		text-transform: none;
 		text-decoration: none;
 		font-size: 12px;
@@ -954,12 +954,12 @@ a[href].tag:visited:hover {
 		padding-right: 0;
 		@include webfont;
 	}
-	.tag.tag-popular-rail em {
+	.tags .tag.tag-popular-rail em {
 		white-space: nowrap;
 		color: #999;
 	}
-	.top5 a:hover,
-	a[href].tag.tag-popular-rail:hover {
+	.tags .top5 a:hover,
+	.tags a[href].tag.tag-popular-rail:hover {
 		background-color: transparent;
 		border-color: transparent;
 		color: $linkActiveColor;
