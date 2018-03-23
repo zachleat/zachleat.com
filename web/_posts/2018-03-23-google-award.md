@@ -1,5 +1,5 @@
 ---
-title: 'Open Source Peer Bonus Winner for Eleventy'
+title: 'Google Open Source Award for Eleventy'
 permalink: /eleventy-google-award/
 tags:
   - eleventy
