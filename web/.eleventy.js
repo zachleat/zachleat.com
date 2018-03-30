@@ -34,12 +34,18 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
 	});
 
-	eleventyConfig.addLiquidFilter("reading_time", function(content) {
+	eleventyConfig.addLiquidFilter("wordcount", function(content) {
+		let words = content.split(" ").length;
+		let wordsLabel = "word" + (words !== 1 ? "s" : "");
+		return `${words} ${wordsLabel}`;
+	});
+
+	eleventyConfig.addLiquidFilter("readingtime", function(content) {
 		let wordsPerMinute = 100;
 		let words = content.split(" ").length;
 		let minutes = Math.floor(words / wordsPerMinute);
 		let minutesLabel = "minute" + (minutes !== 1 ? "s" : "");
-		return minutes > 0 ? `about ${minutes} ${minutesLabel}` : 'less than a minute';
+		return "Read in " + (minutes > 0 ? `about ${minutes} ${minutesLabel}` : "less than a minute");
 	});
 
 	eleventyConfig.addCollection("posts", function(collection) {
@@ -89,7 +95,8 @@ module.exports = function(eleventyConfig) {
 				item.data.tags.indexOf("deprecated") === -1 &&
 				item.data.tags.indexOf("feedtrim") === -1 &&
 				item.data.tags.indexOf("upcoming") === -1 &&
-				item.data.tags.indexOf("pending") === -1;
+				item.data.tags.indexOf("pending") === -1 &&
+				item.data.tags.indexOf("draft") === -1;
 		});
 	});
 

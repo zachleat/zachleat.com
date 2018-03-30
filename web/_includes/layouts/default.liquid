@@ -35,7 +35,7 @@
 		<div class="rail">
 			<header>
 				<a href="{{ '/' | url }}" class="header">
-					<img src="/img/avatar-2017-88.png" alt="zachleat’s Ugly Mug">
+					<img src="/img/avatar-2017-88.png" alt="Zach’s ugly mug (his face)">
 					<h1>Zach Leatherman</h1>
 				</a>
 			</header>
@@ -47,7 +47,7 @@
 								<a href="/web/" class="tag tag-borderless{% if page.url == '/' %} active{% endif %}">Home</a>
 								<a href="/web/about/" class="tag tag-borderless{% if page.url == '/about/' %} active{% endif %}">About</a>
 							</span>
-							<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/best-of/' %} active{% endif %}">Popular 🔥</a>
+							<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/best-of/' %} active{% endif %}{% if hasToc == true %} has-toc{% endif %}">Popular 🔥</a>
 							<a href="/web/eleventy/" class="tag{% if page.url == '/eleventy/' %} active{% endif %}">Eleventy</a>
 							<a href="/web/projects/" class="tag{% if page.url == '/projects/' %} active{% endif %}">Projects</a>
 							<a href="/web/research/" class="tag{% if page.url == '/research/' %} active{% endif %}">Research</a>
@@ -66,6 +66,7 @@
 							<a href="http://nebraskajs.com/" class="social_icon icon-nebraskajs">NebraskaJS</a>
 							<a href="/web/feed/" class="social_icon icon-feed" title="Zach Leatherman’s RSS Feed">RSS</a>
 						</div><!-- /.social -->
+{% if hasToc != true %}
 						<div class="tags tags-rail tags-rail-top5">
 							<h2 class="top5"><a href="/web/best-of/">Popular 🔥 ➡</a></h2>
 
@@ -75,6 +76,7 @@
 							{% endif %}
 							{% endfor %}
 						</div>
+{% endif %}
 					</div>
 				</nav>
 			</aside>

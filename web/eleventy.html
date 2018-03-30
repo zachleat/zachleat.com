@@ -9,11 +9,9 @@ tmpl: list
 		<h1>Eleventy</h1>
 		<p>Blog posts and tutorials for the <a href="https://github.com/11ty/eleventy/">Eleventy static site generator</a>.</p>
 		<p class="primarylink"><a href="https://www.11ty.io">11ty.io</a></p>
-		<ol class="posts">
-			{% assign year = "" %}
-			{% assign currentyear = "" %}
+		<ol class="posts posts-count posts-count-forward">
 			{% for post in collections.eleventy %}
-				{% include post-list-entry.html %}
+				{% include post-list-entry.html, ignoreYear: "true" %}
 			{% endfor %}
 		</ol>
 	</article>

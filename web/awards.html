@@ -1,0 +1,16 @@
+---
+title: Awards
+layout: default
+tmpl: list
+---
+
+<div class="maxwidth-list">
+	<article>
+		<h1>Awards</h1>
+		<ol class="posts posts-count posts-count-forward">
+			{% for post in collections.award %}
+				{% include post-list-entry.html, ignoreYear: "true" %}
+			{% endfor %}
+		</ol>
+	</article>
+</div><!-- /.maxwidth-list -->

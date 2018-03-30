@@ -353,6 +353,9 @@ h1, h2, h3, h4, h5 {
 h1, h2, h3 {
 	text-transform: uppercase;
 }
+h1.cased, h2.cased, h3.cased {
+	text-transform: none;
+}
 h1 {
 	color: #222;
 	font-size: 1.421052631579em; /* 27px /19 */
@@ -674,7 +677,7 @@ h1 + .sub {
 }
 .sub em {
 	margin-right: 1em;
-	color: #888;
+	color: #666;
 	display: block;
 }
 .sub em:before {
@@ -822,6 +825,7 @@ h1 + .sub {
 .tags:empty {
 	display: none;
 }
+.tag-inline,
 .tags .tag {
 	border: 1px solid rgba(0, 0, 0, .08);
 	font-size: 10.5px;
@@ -836,6 +840,10 @@ h1 + .sub {
 	text-decoration: none;
 
 	@include webfontBold;
+}
+.tag-inline {
+	font-size: 12px;
+	margin-left: 0;
 }
 .tags .tag:first-child {
 	margin-left: 0;
@@ -927,6 +935,9 @@ h1 + .sub {
 @media (min-width: $twoColLayoutMinWidth) and (min-height: 35em) { /* 560px */
 	.tags .tag-popular {
 		display: none;
+	}
+	.tags .tag-popular.has-toc {
+		display: inline-block;
 	}
 
 	/* Top 5 posts */
@@ -1026,6 +1037,9 @@ h1 + .sub {
 	color: #8ac7db;
 	@include webfont;
 }
+.livedemo[data-demo-label]:after {
+	content: attr(data-demo-label);
+}
 .livedemo.top {
 	padding-top: 1rem;
 	padding-bottom: .75rem;
@@ -1037,6 +1051,16 @@ h1 + .sub {
 .livedemo p:first-child:last-child {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+.livedemo.square-top {
+	padding-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.livedemo.square-bottom {
+	padding-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
 @supports (resize: horizontal) {
 	.livedemo-resizable {
@@ -1079,4 +1103,32 @@ h1 + .sub {
 /* Generic Nowrap */
 .nowrap {
 	white-space: nowrap;
+}
+
+/* Table of Contents on Right */
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 35em) {
+	.toc {
+		font-size: 1rem;
+		display: block;
+		position: fixed;
+		bottom: 1em;
+		width: 13.5em;
+		right: 3.5em;
+	}
+	.toc.toc h2,
+	.toc.toc h3 {
+		font-size: .8125rem;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	.toc.toc ul {
+		list-style: none;
+		padding-left: 0;
+		font-size: .8125rem;
+		margin-top: 0;
+	}
+	.toc.toc ul li {
+		line-height: 1.5;
+	}
 }
