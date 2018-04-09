@@ -2,19 +2,24 @@
 title: Style Guide
 layout: page
 permalink: style-guide/
+hasToc: true
 ---
 
-<ul>
-	<li><a href="#colors">Colors</a></li>
-	<li><a href="#demos">Demos</a></li>
-	<li><a href="#typography">Typography</a></li>
-	<li><a href="#code">Code</a></li>
-	<li><a href="#icons">Icons</a></li>
-	<li><a href="#lists">Lists</a></li>
-	<li><a href="#tables">Tables</a></li>
-	<li><a href="#media">Fluid Media</a></li>
-	<li><a href="#other">Other components</a></li>
-</ul>
+<div class="toc">
+	<h2>Contents</h2>
+	<ul>
+		<li><a href="#colors">Colors</a></li>
+		<li><a href="#demos">Demos</a></li>
+		<li><a href="#typography">Typography</a></li>
+		<li><a href="#web-fonts">Web Fonts</a></li>
+		<li><a href="#code">Code</a></li>
+		<li><a href="#icons">Icons</a></li>
+		<li><a href="#lists">Lists</a></li>
+		<li><a href="#tables">Tables</a></li>
+		<li><a href="#media">Fluid Media</a></li>
+		<li><a href="#other">Other components</a></li>
+	</ul>
+</div>
 
 <h2 id="colors">Colors</h2>
 
@@ -80,36 +85,11 @@ permalink: style-guide/
 	</span>
 </p>
 
-<h3>Web Fonts</h3>
-
-<p>Using the <a href="/web/comprehensive-webfonts/#critical-foft-data-uri">Critical FOFT with Data URI approach</a>. At stage 1 (initial), a Lato subset is rendered and all bold and italic text below are faux rendered using <code>font-synthesis</code>. At stage 2, all Lato weights and styles have finished loading and are no longer faux rendered.</p>
-
-<h4>Fallback Fonts (only if WOFF not supported)</h4>
-<div class="livedemo"><p class="font-fallback">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
-
-<h4>Web Fonts (Stage 1, Lato Roman Subset)</h4>
-<div class="livedemo"><p class="font-latosubset">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
-<p class="caption">Hard to tell what’s faux and what isn’t? Use the <a href="https://github.com/filamentgroup/faux-pas">Faux-Pas bookmarklet</a> and it’ll show you.</p>
-
-<h4>Web Fonts (Stage 2, Lato Roman, Bold, Italic, Bold-Italic)</h4>
-<div class="livedemo"><p>Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
-
 <h3>Hyphenation</h3>
 <div class="livedemo livedemo-resizable" style="width: 15em;">
 	<p>Supercalifragilisticexpialidocious</p>
 	<p>Pneumonoultramicroscopicsilicovolcanoconiosis</p>
 </div>
-
-<h3>OpenType Features</h3>
-<h4>Ligatures</h4>
-<div class="livedemo">
-	<p style="font-size: 1.5em;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
-</div>
-<h4>Ligatures disabled (for comparison)</h4>
-<div class="livedemo">
-	<p style="font-size: 1.5em; font-variant-ligatures: no-common-ligatures; font-feature-settings: 'liga' 0, 'clig' 0;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
-</div>
-<p class="caption">The Lato webfont supports only the <code>liga</code> feature.</p>
 
 <h3>Blockquotes</h3>
 <div class="livedemo">
@@ -123,6 +103,31 @@ permalink: style-guide/
 <div class="livedemo">
 	<h1 class="text-highlight" style="background-color: #333; color: #fff">This is a Top Level Header that wraps to multiple lines to show how the background color wraps too.</h1>
 </div>
+
+<h2 id="web-fonts">Web Fonts</h2>
+
+<p>Using the <a href="/web/comprehensive-webfonts/#critical-foft-data-uri">Critical FOFT with preload Strategy</a>. At stage 1 (initial), a Lato subset is rendered and all bold and italic text below are faux rendered using <code>font-synthesis</code>. At stage 2, all Lato weights and styles have finished loading and are no longer faux rendered.</p>
+
+<h3 class="cased">Fallback Fonts (Stage 0, pre-preload or if preload not supported)</h3>
+<div class="livedemo"><p class="font-fallback">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
+
+<h3 class="cased">Web Fonts (Stage 1, Lato Roman Subset)</h3>
+<div class="livedemo"><p class="font-latosubset">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
+<p class="caption">Hard to tell what’s faux and what isn’t? Use the <a href="https://github.com/filamentgroup/faux-pas">Faux-Pas bookmarklet</a> and it’ll show you.</p>
+
+<h3 class="cased">Web Fonts (Stage 2, Lato Roman, Bold, Italic, Bold-Italic)</h3>
+<div class="livedemo"><p>Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
+
+<h3>OpenType Features</h3>
+<h4>Ligatures</h4>
+<div class="livedemo">
+	<p style="font-size: 1.5em;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
+</div>
+<h4>Ligatures disabled (for comparison)</h4>
+<div class="livedemo">
+	<p style="font-size: 1.5em; font-variant-ligatures: no-common-ligatures; font-feature-settings: 'liga' 0, 'clig' 0;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
+</div>
+<p class="caption">The Lato webfont supports only the <code>liga</code> feature.</p>
 
 <h2 id="code">Code</h2>
 <div class="livedemo">
@@ -385,11 +390,12 @@ permalink: style-guide/
 <h2 id="other">Other components</h2>
 
 <h3>Fixed Table of Contents</h3>
-<div class="livedemo">
-	<div class="toc">
-		Table of Contents
-	</div>
+<p>We’re only showing the source code here because this component is already in use on this page and there can be only one (Highlander). Make sure you add <code>hasToc: true</code> to your front matter.</p>
+{% highlight html %}
+<div class="toc">
+	Table of Contents
 </div>
+{% endhighlight %}
 
 <h3>Printed Page</h3>
 
