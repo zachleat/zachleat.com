@@ -87,6 +87,6 @@ You can review the [HTML](https://github.com/zachleat/web-font-loading-recipes/b
 
 It’s frustrating that Microsoft browsers don’t support the CSS Font Loading API. But this is where The Compromise shines—it allows us to serve and render web fonts using the CSS Font Loading API (no polyfills) on an empty-cache page loads. If a browser doesn’t support the CSS Font Loading API (uh, IE and Edge) we take a more relaxed `font-display: optional`-ish repeat-view approach.
 
-_The Compromise_ has been battle tested. It has been in production on this web site for quite some time (zachleat.com) and is the strategy we used for the font loading on the lovely redesign of [Smashing Magazine](https://www.smashingmagazine.com/).
+_The Compromise_ has been battle tested. It has been in production on this web site for quite some time (zachleat.com) and is the strategy we used for the font loading on the lovely redesign of [Smashing Magazine](https://www.smashingmagazine.com/) (although with FOFT instead of Critical FOFT).
 
 Keep those web fonts frosty, y’all 👍.
