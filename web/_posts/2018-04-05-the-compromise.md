@@ -62,7 +62,11 @@ Senthil and Raja’s eBay method is great! However, I would make one small chang
 
 If you’ve been following along at [The Comprehensive Guide to Font Loading Strategies](/web/comprehensive-webfonts/), you may be aware that my personal favorite method is currently transitioning to [Critical FOFT with preload](/web/comprehensive-webfonts/#critical-foft-preload), given that [preload](https://caniuse.com/#feat=link-rel-preload) support is on the cusp of widespread support. Let’s Frankenstein them together!
 
-In this example, we’ll be using a traditional 4+1 Lato setup: Roman (plus a super subset `A-Za-z` Roman), Italic, Bold, Italic Bold.
+<p class="primarylink primarylink-demo"><a href="https://www.zachleat.com/web-fonts/demos/critical-foft-preload-fallback-optional.html">“The Compromise”</a></p>
+
+You can review the [HTML](https://github.com/zachleat/web-font-loading-recipes/blob/master/critical-foft-preload-fallback-optional.html) and [Lazy loaded JavaScript](https://github.com/zachleat/web-font-loading-recipes/blob/master/critical-foft-preload-fallback-optional.js) (only used if the CSS Font Loading API is not supported). The Compromise is also on [`web-font-loading-recipes`](https://github.com/zachleat/web-font-loading-recipes#the-compromise-critical-foft-with-preload-with-a-polyfill-fallback-emulating-font-display-optional).
+
+In this example, we used a traditional 4+1 Lato setup: Roman (plus a super subset `A-Za-z` Roman), Italic, Bold, Italic Bold.
 
 1. Preload the super subset Roman (WOFF2)
 2. If `sessionStorage` key exists for repeat views, add the `fonts-loaded-2` class and stop here!
@@ -78,10 +82,6 @@ In this example, we’ll be using a traditional 4+1 Lato setup: Roman (plus a su
     3. Do not render these fonts (no classes added)
     4. Skip to step 5.
 5. All the fonts have confirmed to be loaded, add the `sessionStorage` key for repeat views.
-
-<p class="primarylink primarylink-demo"><a href="https://www.zachleat.com/web-fonts/demos/critical-foft-preload-fallback-optional.html">“The Compromise”</a></p>
-
-You can review the [HTML](https://github.com/zachleat/web-font-loading-recipes/blob/master/critical-foft-preload-fallback-optional.html) and [Lazy loaded JavaScript](https://github.com/zachleat/web-font-loading-recipes/blob/master/critical-foft-preload-fallback-optional.js) (only used if the CSS Font Loading API is not supported). The Compromise is also on [`web-font-loading-recipes`](https://github.com/zachleat/web-font-loading-recipes#the-compromise-critical-foft-with-preload-with-a-polyfill-fallback-emulating-font-display-optional).
 
 ## In the wild
 
