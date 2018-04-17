@@ -45,28 +45,28 @@ We can test our site to see what glyphs are used at a URL using a tool we’ve d
 
 Find `glyphhanger` on [**GitHub**](https://github.com/filamentgroup/glyphhanger) or [**npm**](https://www.npmjs.com/package/glyphhanger).
 
-{% highlight-plain %}
+``` bash
 npm install -g glyphhanger
-{% endhighlight %}
+```
 
 At its simplest, glyphhanger can take a URL and return a Unicode range for all of the content used on the site.
 
 For example (don’t include the `$` if you copy these commands):
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger https://www.filamentgroup.com/
 U+20,U+21,U+26,U+28,U+29,U+2B-38,U+3A,U+3F-47,U+49,U+4C-50,U+52-55,U+57-5A,U+61-70,U+72-77,U+79,U+7C,U+A9,U+DC,U+2014,U+2019,U+25A2
-{% endhighlight %}
+```
 
 Let’s take `Roboto-Regular.ttf` and subset it this Unicode range. glyphhanger can help with this too:
 
 _Subsetting functionality in glyphhanger requires you to install [fonttools](https://github.com/fonttools/fonttools), a python project. The glyphhanger README includes [installation instructions for Mac OS X](https://github.com/filamentgroup/glyphhanger#installing-pyftsubset)._
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger https://www.filamentgroup.com/ --subset=Roboto-Regular.ttf --formats=woff2,woff
 Subsetting Roboto-Regular.ttf to Roboto-Regular-subset.woff (was 298.45 KB, now 14.09 KB)
 Subsetting Roboto-Regular.ttf to Roboto-Regular-subset.woff2 (was 298.45 KB, now 10.63 KB)
-{% endhighlight %}
+```
 
 Note that in the above example, `--formats=woff2,woff` means to output both a WOFF and WOFF2 subset file. Valid options include: `woff2`, `woff`, `woff-zopfli` (for better WOFF compression compared to `woff`), and `ttf`.
 
@@ -82,17 +82,17 @@ Let’s look at a few examples:
 
 #### Pass in multiple URLs
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger https://www.filamentgroup.com/ https://www.filamentgroup.com/code/
-{% endhighlight %}
+```
 
 #### Use the Spider to find URLs for you
 
 Use the `--spider` option to find all of the `a[href]` attribute values that contain local URLs and spider those pages as well. This will report the union of all of the Unicode ranges.
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger https://www.filamentgroup.com/ --spider --spider-limit=10
-{% endhighlight %}
+```
 
 Configure the maximum limit with `--spider-limit` (default is 10).
 
@@ -102,23 +102,23 @@ Use the `--whitelist` option to pass in a Unicode range or a list of characters 
 
 Using `--whitelist` makes the URL argument optional.
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger --whitelist="ABCD"
 U+41-44
-{% endhighlight %}
+```
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger --US_ASCII
 U+20-7E
-{% endhighlight %}
+```
 
 Let’s subset our Roboto font using a whitelist.
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger --whitelist="U+20-7E" --subset=Roboto-Regular.ttf --formats=woff2
 U+20-7E
 Subsetting Roboto-Regular.ttf to Roboto-Regular-subset.woff2 (was 298.45 KB, now 10.78 KB)
-{% endhighlight %}
+```
 
 Nice, right?
 
@@ -126,23 +126,23 @@ Nice, right?
 
 Let’s say, instead of Roboto, we have a specific monospace web font we’d like to use in our code blocks and syntax highlighted code on our site. The Unicode range for monospace code content may be very different from the characters used for other content on our site. glyphhanger can help here too. We can pass in a comma separated list of one or more `font-family` names to fetch only the content in nodes using those `font-family` values.
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger --family='Consolas,monospace' https://www.filamentgroup.com/lab/preload-ctm.html
 U+A,U+20-22,U+26,U+28,U+29,U+2B-30,U+38,U+3A-3E,U+41-43,U+45,U+4A,U+4C-4E,U+53,U+54,U+5B,U+5D,U+61-79,U+7B-7D
-{% endhighlight %}
+```
 
 It works with `--subset` too. You can also use `--json` to see all ranges organized by `font-family`. `"*"` is the universal list of all characters on the page.
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger https://www.filamentgroup.com/code/ --json
 {"*": "U+20,U+21,U+26,U+28,U+29,U+2B-38,U+3A,U+3F-4A,U+4C-59,U+61-7A,U+A9,U+B0,U+2019,U+201C,U+201D","Source Sans Pro": "U+20,U+21,U+26,U+28,U+29,U+2B-38,U+3A,U+3F-4A,U+4C-59,U+61-7A,U+A9,U+B0,U+2019,U+201C,U+201D","Consolas": "U+20,U+28,U+29,U+3A,U+40,U+61,U+63-66,U+69,U+6B-70,U+72-75,U+78-7A"}
-{% endhighlight %}
+```
 
 ### Output CSS that you can use
 
 glyphhanger will even make your `@font-face` blocks in CSS for you. Using `--css` will output a `@font-face` block to the console. Of course, it’ll add the `unicode-range`, but it’ll also add the right `src` with the correct file names returned from `--subset`. If you’re using `--family`, it’ll add a `font-family` value too.
 
-{% highlight-plain %}
+``` bash
 $ glyphhanger --US_ASCII --family='Source Sans Pro' --subset=Roboto-Regular.ttf --formats=woff2,woff --css
 U+20-7E
 Subsetting Roboto-Regular.ttf to Roboto-Regular-subset.woff (was 298.45 KB, now 14.37 KB)
@@ -153,7 +153,7 @@ Subsetting Roboto-Regular.ttf to Roboto-Regular-subset.woff2 (was 298.45 KB, now
   src: url(Roboto-Regular-subset.woff2) format("woff2"), url(Roboto-Regular-subset.zopfli.woff) format("woff");
   unicode-range: U+20-7E;
 }
-{% endhighlight %}
+```
 
 ## A Web Font Utility Belt
 

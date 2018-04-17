@@ -102,14 +102,14 @@ But not all screens share the same horizontal stripe [pixel geometry](https://en
 
 Recently [twitter.com](https://twitter.com/) switched their website to force grayscale anti-aliasing on HiDPI screens:
 
-{% highlight css %}
+``` css
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
 	body {
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
 	}
 }
-{% endhighlight %}
+```
 
 Asthetically as we’ve seen, using grayscale anti-aliasing makes things appear lighter and thinner. It’s usually employed to lighten text or icons that are placed on dark backgrounds, almost as a shortcut to avoid loading an additional (but perhaps more appropriate) Light or Hairline web font. It is unusual to apply this change to a site globally but from a technical perspective it is consistent with iOS’ preference for grayscale anti-aliasing. Perhaps it would clash with Android’s embrace of subpixel anti-aliasing if `-webkit-font-smoothing` were supported there.
 

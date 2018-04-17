@@ -13,19 +13,19 @@ Head over to the [Google Homepage][1]. Log In using your Google Account. Make su
  [1]: http://www.google.com/ig?hl=en
  [2]: http://www.google.com/ig/f/tB22vfBbv0g/ig.css
 
-{% highlight css %}
+``` css
 #modules .yui-b{position:static;display:block;margin:0 0 1em 0;float:none;width:auto;overflow:hidden;}
 .yui-gb .yui-u{float:left;margin-left:2%;*margin-left:1.895%;width:32%;}
 .yui-gb div.first{margin-left:0;}
 #modules,.yui-gb{zoom:1;}
-{% endhighlight %}
+```
 
 This code includes identical Class names taken from the [Yahoo User Interface library Grids CSS][3] component. Here is the source in the [grids.css][4] file from Yahoo (truncated for simplicity).
 
  [3]: http://developer.yahoo.com/yui/grids/
  [4]: http://yui.yahooapis.com/2.2.0/build/grids/grids-min.css
 
-{% highlight css %}
+``` css
 #yui-main .yui-b{position:static;}
 .yui-t7 #yui-main .yui-b {
   display:block;margin:0 0 1em 0;
@@ -34,7 +34,7 @@ This code includes identical Class names taken from the [Yahoo User Interface li
 .yui-gb .yui-u{float:left;margin-left:2%;*margin-left:1.895%;width:32%;}
 .yui-gb div.first{margin-left:0;}
 #bd,.yui-gb{zoom:1;}
-{% endhighlight %}
+```
 
 Obviously, it’s the same code, with a few minor differences.
 
@@ -54,7 +54,7 @@ The copyright notice they’re referring to is not included anywhere on the Goog
 **Update**  
 Google has added the BSD license statement and attribution to Yahoo in their CSS file ([ig.css][2]):
 
-{% highlight css %}
+``` css
 /* ===============BEGIN BSD LICENSED PORTION============= */
 /*
 Copyright (c) 2007, Yahoo! Inc. All rights reserved.
@@ -84,6 +84,6 @@ version: 2.2.0
   zoom:1;
 }
 /* ===============END BSD LICENSED PORTION============= */
-{% endhighlight %}
+```
 
 Sorry to everyone visiting the page for the extra millisecond or two it will take to load these comments.

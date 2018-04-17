@@ -25,7 +25,7 @@ At first, Deferred objects sound scary. I can assure you that they’re actually
 
 Here is the standard Geolocation API to retrieve the user’s current position:
 
-{% highlight js %}
+``` js
 navigator.geolocation.getCurrentPosition(function(position) {
   // success
 }, function(error) {
@@ -34,25 +34,25 @@ navigator.geolocation.getCurrentPosition(function(position) {
   // options
   enableHighAccuracy: true
 });
-{% endhighlight %}
+```
 
 When the above API is called, a prompt is shown to the user asking if they want to divulge their location information to the domain of the currently active web site. Typically this prompt is a non-blocking asynchronous operation (although not explicitly defined in the specification).
 
 Let’s go ahead and change it to use a jQuery Deferred object:
 
-{% highlight js %}
+``` js
 function getCurrentPositionDeferred(options) {
   var deferred = $.Deferred();
   navigator.geolocation.getCurrentPosition(deferred.resolve, deferred.reject, options);
   return deferred.promise();
 };
-{% endhighlight %}
+```
 
 Notice that the success callback is replaced by the deferred object’s resolve method and the error callback is replaced by the reject method. All of our function arguments are removed from the API. We’re left with one simple options argument.
 
 This allows us to do things like:
 
-{% highlight js %}
+``` js
 getCurrentPositionDeferred({
   enableHighAccuracy: true
 }).done(function() {
@@ -65,16 +65,16 @@ getCurrentPositionDeferred({
 });
 // You can add an arbitrary number of
 // callbacks using done, fail, or always.
-{% endhighlight %}
+```
 
 We could also use `$.when` to run code upon completion of two arbitrary and contrived operations like a Geolocation call and an Ajax request. Awesome.
 
 To coordinate between multiple Deferred objects, use $.when:
 
-{% highlight js %}
+``` js
 $.when(getCurrentPositionDeferred(), $.ajax("/someUrl")).done(function() {
   // both the ajax call and the geolocation call have finished successfully.
 });
-{% endhighlight %}
+```
 
 I wonder what other browser native APIs could be better served by using Deferred objects instead of function arguments.

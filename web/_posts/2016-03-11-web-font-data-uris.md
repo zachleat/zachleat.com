@@ -19,7 +19,7 @@ After I posted my [Critical Web Fonts](/web/critical-webfonts/) article on Twitt
 
 His suggestion was to embed the font directly in a style block on the server rendered markup, something like:
 
-{% highlight-plain -%}
+``` text
 &lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -35,7 +35,7 @@ His suggestion was to embed the font directly in a style block on the server ren
 &lt;/head&gt;
 &hellip;
 &lt;/html&gt;
-{%- endhighlight %}
+```
 
 This approach should not to be confused with the [asynchronous `loadCSS` Data URI approach](https://www.filamentgroup.com/lab/font-loading.html) documented (but deprecated) on the Filament Group blog.
 
@@ -200,12 +200,12 @@ Times look marginally better here too. Huh. I think I’m gonna roll with this a
 
 ## Appendix 1, Data URI and Fallback src
 
-{% highlight css 2 %}
+``` css/2
 @font-face {
 	/* In many browsers it loads the giant Data URI but isn’t able to use it */
 	src: url("data:application/font-woff2;charset=utf-8;base64,...") format("woff2"), url( /path/to/webfont.woff ) format( "woff" );
 }
-{% endhighlight %}
+```
 
 <div class="retweettoshare">
 	<h3 class="retweettoshare_title">Retweet to share this post</h3>

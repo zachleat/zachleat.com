@@ -44,9 +44,9 @@ At its simplest, the BigText jQuery plugin takes a single element and **sizes th
 </div>
 ```
 
-{% highlight js %}
+``` js
 $('#bigtext').bigtext();
-{% endhighlight %}
+```
 
 ## Implementation Details
 

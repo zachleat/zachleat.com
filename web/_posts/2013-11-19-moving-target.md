@@ -22,12 +22,12 @@ With proper Progressive Enhancement, using `:target` can unfairly feel like it�
 
 Another great benefit to using target is that it allows you to use history entries when navigating around on the page (and direct linking to specific content) unless you opt-out of this feature using JavaScript. Chris Coyier describes this is in his post *[On Target](http://css-tricks.com/on-target/)* (see the section titled ‘Fighting the Jump’). One limitation of this approach is the current [WebKit (and Blink)](https://bugs.webkit.org/show_bug.cgi?id=83490) and Gecko bugs that do not reevaluate CSS when the hash is updated using `replaceState` (without modifying history) or `pushState` (to add a history entry) ([JSBin Example](http://jsbin.com/esunoh/2)).
 
-{% highlight js %}
+``` js
 $("a[href^=#]").on("click", function(e) {
   e.preventDefault();
   history.pushState({}, "", this.href);
 });
-{% endhighlight %}
+```
 
 There are two issues with this method of Fighting the Jump:
 
@@ -36,21 +36,21 @@ There are two issues with this method of Fighting the Jump:
 
 We can eliminate the second issue with the long forgotten [`location.replace()`](https://developer.mozilla.org/en-US/docs/Web/API/Location.replace) method (or it’s twin brother `location.hash`). You can use `replace` in lieu of `replaceState` (or `hash` instead of `pushState`) to update the hash and re-evaluate CSS.
 
-{% highlight js %}
+``` js
 // Will re-evaluate CSS.
 // Yes, including any newly applicable :target rules.
 location.replace( '#myhash' );
-{% endhighlight %}
+```
 
 Sadly, this method does not resolve the first issue with “Fighting the Jump.” The page will still scroll to the newly targetted content. But it does allow us to avoid adding a history entry. (If you are fine with the history entry, don’t add any JavaScript at all.)
 
-{% highlight js %}
+``` js
 $("a[href^=#]").on("click", function(e) {
   e.preventDefault();
   // Basically the same as doing nothing except we bypass a history entry.
   location.replace( '#' + this.href.substr( this.href.lastIndexOf( '#' ) + 1 ) );
 });
-{% endhighlight %}
+```
 
 However, we won’t use the same mechanism for our feature test. As it turns out, a `:target` feature test is much simpler.
 

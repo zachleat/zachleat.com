@@ -29,14 +29,14 @@ Before we begin, let’s just get it out of the way—yes, Hillary has her own C
 * **+2 points** for [commissioning your own typeface variant](https://medium.com/@pinwale/more-on-hillary-clinton-s-custom-typeface-called-unity-7e601dc050f8).
 * A small bug: the same font file is listed for both the WOFF2 and WOFF formats. See below:
 
-{% highlight css -%}
+``` css
 @font-face {
   font-family: 'SharpUnity';
   /* This should be SharpUnity-Book.woff2 */
   src: url("../fonts/SharpUnity-Book.woff") format("woff2"),
        url("../fonts/SharpUnity-Book.woff") format("woff");
 }
-{%- endhighlight %}
+```
 
 #### Candidate Web Font Score: -3
 

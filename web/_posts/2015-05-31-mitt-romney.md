@@ -71,7 +71,7 @@ Example variable names are for the [Raleway typeface](https://www.google.com/fon
 
 ### CSS
 
-{% highlight css %}
+``` css
 .raleway-loading body {
 	color: transparent;
 }
@@ -85,11 +85,11 @@ Example variable names are for the [Raleway typeface](https://www.google.com/fon
 .raleway-loaded body {
 	font-family: Raleway, serif;
 }
-{% endhighlight %}
+```
 
 ### JavaScript
 
-{% highlight js %}
+``` js
 var docEl = document.documentElement;
 docEl.className += " raleway-loading";
 
@@ -109,7 +109,7 @@ Promise.all([
 
 // Converting this to use a Polyfill syntax
 // is an exercise left to the reader.
-{% endhighlight %}
+```
 
 <div class="retweettoshare">
 	<h3 class="retweettoshare_title">Retweet to share this post</h3>

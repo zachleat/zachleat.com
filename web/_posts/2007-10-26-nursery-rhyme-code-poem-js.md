@@ -12,7 +12,7 @@ tags:
   - Nursery Rhymes
 ---
 
-{% highlight js %}
+``` js
 (function()
 {
     function BlindMouse() {}
@@ -77,6 +77,6 @@ tags:
         alert('as ' + mice.declare() + '?');
     }
 }());
-{% endhighlight %}
+```
 
 *The above **code poem** is released under the BSD license. To use in production environment without error, please enclose with a try-catch block. Obviously I’m kidding, don’t use this code. Not even for enterprise software.*

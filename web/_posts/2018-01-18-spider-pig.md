@@ -14,14 +14,14 @@ tags:
 
 Get a list of local URL links from a root URL. Works with JavaScript generated content.
 
-{% highlight-plain %}
-&lt;a href=&quot;test.html&quot;&gt;Test&lt;/a&gt;&lt;!-- match --&gt;
-&lt;a href=&quot;test2.html&quot;&gt;Test&lt;/a&gt;&lt;!-- match --&gt;
-&lt;a href=&quot;test2.html&quot;&gt;Duplicate Test&lt;/a&gt;&lt;!-- do not match --&gt;
-&lt;a href=&quot;root.html&quot;&gt;URL to self&lt;/a&gt;&lt;!-- match --&gt;
-&lt;a href=&quot;mailto:test@example.com&quot;&gt;Email link&lt;/a&gt;&lt;!-- do not match --&gt;
-&lt;a href=&quot;http://www.google.com/&quot;&gt;External&lt;/a&gt;&lt;!-- do not match --&gt;
-{% endhighlight %}
+``` html
+<a href="test.html">Test</a><!-- match -->
+<a href="test2.html">Test</a><!-- match -->
+<a href="test2.html">Duplicate Test</a><!-- do not match -->
+<a href="root.html">URL to self</a><!-- match -->
+<a href="mailto:test@example.com">Email link</a><!-- do not match -->
+<a href="http://www.google.com/">External</a><!-- do not match -->
+```
 
 Can also act as a live-DOM CSS search across multiple files (find all the templates that are using the CSS selector I want to change). If I’m worried about changing code in a CSS selector, I’ll use this tool to search for instances of the selector across my project.
 

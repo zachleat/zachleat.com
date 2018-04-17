@@ -26,17 +26,17 @@ But even after this shift occurred, we carried the baggage of our old ways forwa
 
 The web font world has changed. It’s time to move the chains forward. Given that web fonts for readable content fall back to system fonts when formats are not supported, it’s ok to be progressive here. Here’s the modern @font-face syntax I’d recommend:
 
-{% highlight css 2 -1 %}
+``` css/2/-1
 @font-face {
   font-family: Open Sans;
   src: url(opensans.woff2) format('woff2'),
        url(opensans.woff) format('woff');
 }
-{% endhighlight %}
+```
 
 Pretty simple, right? Just two formats. Much simpler than what we were using before:
 
-{% highlight css -1 2,3,5,6 %}
+``` css/-1/2,3,5,6
 @font-face {
   font-family: Open Sans;
   src: url('opensans.eot');
@@ -45,7 +45,7 @@ Pretty simple, right? Just two formats. Much simpler than what we were using bef
        url('opensans.ttf')  format('truetype'),
        url('opensans.svg#svgFontName') format('svg');
 }
-{% endhighlight %}
+```
 
 We’ve eliminated the [Embedded OpenType (EOT) format](http://caniuse.com/#feat=eot) (supported only by Internet Explorer and is the format served to IE versions up to 11) which required a strange double `src` declaration to workaround a syntax bug. [Bram Stein](https://twitter.com/bram_stein), renowned web font performance expert, notes that while EOT formats _can_ be compressed they are often served uncompressed, which is less than optimal given that newer WOFF files include compression by default.
 

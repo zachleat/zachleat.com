@@ -64,28 +64,29 @@ Just running `eleventy` will process files in the current directory and output t
 
 #### Finds files in current directory and outputs to a _site folder
 
-{% highlight-plain shell 0 %}
+``` bash
 eleventy
-{% endhighlight %}
+```
 
 #### Finds files in src directory and outputs to a _gh_pages folder
 
-{% highlight-plain shell 0 %}
+``` bash
 eleventy --input=src --output=_gh_pages
-{% endhighlight %}
+```
 
 #### Finds files in current directory and outputs to current directory
 
-{% highlight-plain shell 0 %}
+``` bash
 eleventy --input=. --output=.
-{% endhighlight %}
+```
 
 #### I only want to transform one file
 
 Eleventy can work as a small utility function to do one-off files too. This will transform `README.md` into `README.html`.
-{% highlight-plain shell 0 %}
+
+``` bash
 eleventy --input=README.md --output=.
-{% endhighlight %}
+```
 
 ## Bet on JavaScript
 
@@ -110,7 +111,7 @@ Just a fair warning—always analyze the output of static site generators, espec
 
 I hope you’ll give Eleventy a try! Install it!
 
-```
+``` bash
 npm install -g @11ty/eleventy
 ```
 
