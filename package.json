@@ -11,9 +11,9 @@
   },
   "private": true,
   "devDependencies": {
-    "@11ty/eleventy": "^0.3.0",
-    "@11ty/eleventy-plugin-rss": "^1.0.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^1.0.1",
+    "@11ty/eleventy": "^0.3.3",
+    "@11ty/eleventy-plugin-rss": "^1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^1.0.4",
     "cheerio": "^1.0.0-rc.2",
     "debug": "^3.1.0",
     "gray-matter": "^3.1.1",

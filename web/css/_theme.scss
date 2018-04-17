@@ -353,8 +353,11 @@ h1, h2, h3, h4, h5 {
 h1, h2, h3 {
 	text-transform: uppercase;
 }
-h1.cased, h2.cased, h3.cased {
+.cased {
 	text-transform: none;
+}
+.upper {
+	text-transform: uppercase;
 }
 h1 {
 	color: #222;
@@ -576,8 +579,8 @@ th.numeric {
 }
 .posts li {
 	position: relative;
-	padding-top: 6px;
-	padding-bottom: 6px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	margin-bottom: 6px;
 }
 .posts .posts-link {
@@ -934,7 +937,7 @@ h1 + .sub {
 .tags.tags-rail-top5 {
 	display: none;
 }
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 35em) { /* 560px */
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 40.625em) {
 	.tags .tag-popular {
 		display: none;
 	}
@@ -1108,7 +1111,7 @@ h1 + .sub {
 }
 
 /* Table of Contents on Right */
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 35em) {
+@media (min-width: $twoColLayoutMinWidth) and (min-height: 40.625em) {
 	.toc {
 		font-size: 1rem;
 		display: block;

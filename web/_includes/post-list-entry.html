@@ -6,16 +6,16 @@
 <li class="{% if post.data.tags contains 'note' %}post-note {% endif %}{% if post.data.tags contains 'deprecated' %}deprecated {% endif %}{% if post.data.tags contains 'highlight' %}highlight {% endif %}{% if post.data.tags contains 'smalltitle' %}smalltitle {% endif %}{% if post.data.tags contains 'upcoming' %}upcoming {% endif %}{% if post.data.tags contains 'nejsconf' %}nejsconf {% endif %}"{% if post.data.tags contains 'deprecated' %} title="Deprecated/Outdated Post"{% endif %}>
 	{% if post.data.tags contains 'external' %}<span class="external" title="External Link"><span class="icon-link-external"></span></span>{% endif %}
 	{% if post.data.tags contains 'upcoming' %}<span class="external" title="External Link">Scheduled</span>{% endif %}
-	{% if post.data.tags contains 'external' %}
-	<a href="{{ post.data.external_url }}" class="posts-link">
-	{% else %}
-	<a href="{{ post.url | url }}" class="posts-link">
-	{% endif %}
-	{% if view == 'project' %}
-		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}</a>
-	{% else %}
-		{{ post.data.title }}</a>
-	{% endif %}
+	
+	<a href="{% if post.data.tags contains 'external' %}{{ post.data.external_url }}{% else %}{{ post.url | url }}{% endif %}" class="posts-link">
+	{%- if post.data.event_country %}{{ post.data.event_country }} {% endif -%}
+	{%- if view == 'project' -%}
+		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}
+	{%- else -%}
+		{{ post.data.title }}
+	{%- endif -%}
+	</a>
+
 	<span class="tags">
 		{%- if post.data.tags contains 'eleventy' %}<a href="/web/eleventy/" class="tag">Eleventy</a>{% endif -%}
 		{%- if post.data.tags contains 'font-loading' %}<a href="/web/fonts/" class="tag font-loading">Web Fonts</a>{% endif -%}

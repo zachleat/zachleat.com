@@ -1,5 +1,5 @@
 ---
-title: '“The Compromise”—a Modern but Compatible Font Loading Strategy'
+title: “The Compromise”—a Modern but Compatible Font Loading Strategy
 permalink: /the-compromise/
 tags:
   - font-loading
@@ -60,7 +60,11 @@ I’ve also added the [eBay Method to `web-font-loading-recipes`](https://github
 
 Senthil and Raja’s eBay method is great! However, I would make one small change to their approach (and this is also why I don’t prefer `font-display: optional`)—I like rendering web fonts on an empty cache load! Thus, the Compromise is born, borrowing _heavily_ from eBay’s approach.
 
-If you’ve been following along at [The Comprehensive Guide to Font Loading Strategies](/web/comprehensive-webfonts/), you may be aware that my personal favorite method is currently transitioning to [Critical FOFT with preload](/web/comprehensive-webfonts/#critical-foft-preload), given that [preload](https://caniuse.com/#feat=link-rel-preload) support is on the cusp of widespread support. Let’s Frankenstein them together!
+If you’ve been following along at [The Comprehensive Guide to Font Loading Strategies](/web/comprehensive-webfonts/), you may be aware that my personal favorite method is currently transitioning to [Critical FOFT with preload](/web/comprehensive-webfonts/#critical-foft-preload), given that [preload](https://caniuse.com/#feat=link-rel-preload) support is on the cusp of widespread support.
+
+_Curious what FOFT is? Check the [Web Font Loading Glossary](/web/webfont-glossary/)._
+
+Let’s Frankenstein the eBay method and the Critical FOFT method together:
 
 <p class="primarylink primarylink-demo"><a href="https://www.zachleat.com/web-fonts/demos/critical-foft-preload-fallback-optional.html">“The Compromise”</a></p>
 
@@ -90,3 +94,7 @@ It’s frustrating that Microsoft browsers don’t support the CSS Font Loading 
 _The Compromise_ has been battle tested. It has been in production on this web site for quite some time (zachleat.com) and is the strategy we used for the font loading on the lovely redesign of [Smashing Magazine](https://www.smashingmagazine.com/) (although with FOFT instead of Critical FOFT).
 
 Keep those web fonts frosty, y’all 👍.
+
+## Addendum
+
+_If some of the terms in the above article were new to you, you may want to look them up on the [Web Font Loading Glossary](/web/webfont-glossary/)._

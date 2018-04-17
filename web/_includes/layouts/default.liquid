@@ -68,6 +68,10 @@
 						</div><!-- /.social -->
 {% if hasToc != true %}
 						<div class="tags tags-rail tags-rail-top5">
+{% if collections.localposts[0] %}
+							<h2 class="top5">Latest Post:</h2>
+							<a href="{{ collections.localposts[0].url | url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ collections.localposts[0].data.title }}</a>
+{% endif %}
 							<h2 class="top5"><a href="/web/best-of/">Popular 🔥 ➡</a></h2>
 
 							{% for post in collections.popularPostsRanked %}

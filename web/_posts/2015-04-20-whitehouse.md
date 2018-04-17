@@ -10,6 +10,7 @@ tags:
   - video
   - highlight
 medialength: 3 min
+event_country: "<span role=\"img\" aria-label=\"United States of America\" title=\"United States of America\">\U0001F1FA\U0001F1F8</span>"
 ---
 
 *Skip to: [Video](#video), [Thank You Notes](#thankyou), [Related Links](#related), or [Press](#press).*

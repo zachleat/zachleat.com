@@ -35,6 +35,7 @@ hasToc: true
 </div>
 
 <h2 id="demos">Demos</h2>
+
 <p class="livedemo top">This is a live demo example with the demonstration label on the top.</p>
 <p class="livedemo">This is a live demo example with the demonstration label on the bottom.</p>
 <p class="livedemo" data-demo-label="New Label Override">This is a live demo example with a label text override in the markup.</p>
@@ -71,19 +72,34 @@ hasToc: true
 <p>Only use <code>text-decoration-skip-ink</code>, no fallback: <span class="livedemo"><a href="#" class="exempt">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
 <p><em><strong>Update</strong>: renamed from <a href="https://www.chromestatus.com/feature/5631679087509504"><code>text-decoration-skip</code></a>.</em></p>
 
-<p>
-	<code>break</code> for super long links that you want to wrap nicely:
-	<span class="livedemo livedemo-resizable" style="width: 15em;">
-		<a href="https://twitter.com/zachleat/status/890242957386944516" class="break">https://twitter.com/<strong>zachleat</strong>/status/<strong>890242957386944516</strong></a>
-	</span>
+<div class="livedemo top square-bottom" data-demo-label="Break a Link (no Hyphens)">
+	<p style="width: 15em;">
+		<a href="https://twitter.com/zachleat/status/890242957386944516" class="break">https://twitter.com/zachleat/status/890242957386944516</a>
+	</p>
+{% highlight html %}
+<p style="width: 15em;">
+	<a href="https://twitter.com/zachleat/status/890242957386944516" class="break">https://twitter.com/zachleat/status/890242957386944516</a>
 </p>
+{% endhighlight %}
+</div>
 
-<p>Primary links to demos and other main content:
-	<span class="livedemo">
-		<span class="primarylink primarylink-demo"><a href="#">Go to the Style Guide</a></span>
-		<span class="primarylink"><a href="#">Read the Randsom Note</a></span>
-	</span>
+<div class="livedemo top square-bottom" data-demo-label="Primary Link">
+	<p class="primarylink"><a href="#">Read the Web Font Randsom Note</a></p>
+{% highlight html %}
+<p class="primarylink">
+	<a href="#">Read the Web Font Randsom Note</a>
 </p>
+{% endhighlight %}
+</div>
+
+<div class="livedemo top square-bottom" data-demo-label="Primary Demo Link">
+	<p class="primarylink primarylink-demo"><a href="#">Go to the Style Guide</a></p>
+{% highlight html %}
+<p class="primarylink primarylink-demo">
+	<a href="#">Go to the Style Guide</a>
+</p>
+{% endhighlight %}
+</div>
 
 <h3>Hyphenation</h3>
 <div class="livedemo livedemo-resizable" style="width: 15em;">

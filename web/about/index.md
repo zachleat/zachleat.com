@@ -31,19 +31,19 @@ winners of the <a href="https://www.filamentgroup.com/lab/agency-of-year.html">N
 
 <div class="livedemo top square-bottom" data-demo-label="Plaintext">
 {% highlight-plain -%}
-Zach is a Web Developer with the award winning Filament Group. He’s currently fixated on web fonts and static site generators. His public speaking résumé includes talks at Smashing Conference 🇨🇦🇪🇸🇬🇧, O’Reilly Velocity, CSSConf, and The White House 🇺🇸. He also herds the NebraskaJS meetup and NEJS CONF.
+Zach is a Web Developer with the award winning Filament Group. He’s currently fixated on web fonts and static site generators. His public speaking résumé includes talks at Smashing Conference 🇨🇦🇪🇸🇬🇧, CSS-Minsk-JS 🇧🇾, O’Reilly Velocity, CSSConf, and The White House 🇺🇸. He also herds the NebraskaJS meetup and NEJS CONF.
 {%- endhighlight %}
 </div>
 
 <div class="livedemo top square-bottom" data-demo-label="HTML">
 {% highlight html -%}
-Zach is a Web Developer with the award winning <a href="http://www.filamentgroup.com/">Filament Group</a>. He’s currently fixated on <a href="/web/fonts/">web fonts</a> and <a href="/web/introducing-eleventy/">static site generators</a>. His <a href="/web/speaking/">public speaking résumé</a> includes talks at Smashing Conference 🇨🇦🇪🇸🇬🇧, O’Reilly Velocity, CSSConf, and <a href="/web/whitehouse/">The White House</a> 🇺🇸. He also herds the <a href="http://nebraskajs.com">NebraskaJS</a> meetup and <a href="http://nejsconf.com/">NEJS CONF</a>.
+Zach is a Web Developer with the award winning <a href="http://www.filamentgroup.com/">Filament Group</a>. He’s currently fixated on <a href="https://www.zachleat.com/web/fonts/">web fonts</a> and <a href="https://www.zachleat.com/web/introducing-eleventy/">static site generators</a>. His <a href="https://www.zachleat.com/web/speaking/">public speaking résumé</a> includes talks at Smashing Conference 🇨🇦🇪🇸🇬🇧, CSS-Minsk-JS 🇧🇾, O’Reilly Velocity, CSSConf, and <a href="https://www.zachleat.com/web/whitehouse/">The White House</a> 🇺🇸. He also herds the <a href="http://nebraskajs.com">NebraskaJS</a> meetup and <a href="http://nejsconf.com/">NEJS CONF</a>.
 {%- endhighlight %}
 </div>
 
 <div class="livedemo top square-bottom" data-demo-label="Markdown">
 {% highlight markdown -%}
-Zach is a Web Developer with the award winning [Filament Group](http://www.filamentgroup.com/). He’s currently fixated on [web fonts](/web/fonts/) and [static site generators](/web/introducing-eleventy/). His [public speaking résumé](/web/speaking/) includes talks at Smashing Conference 🇨🇦🇪🇸🇬🇧, O’Reilly Velocity, CSSConf, and [The White House](/web/whitehouse/) 🇺🇸. He also herds the [NebraskaJS](http://nebraskajs.com) meetup and [NEJS CONF](http://nejsconf.com/).
+Zach is a Web Developer with the award winning [Filament Group](http://www.filamentgroup.com/). He’s currently fixated on [web fonts](https://www.zachleat.com/web/fonts/) and [static site generators](https://www.zachleat.com/web/introducing-eleventy/). His [public speaking résumé](https://www.zachleat.com/web/speaking/) includes talks at Smashing Conference 🇨🇦🇪🇸🇬🇧, CSS-Minsk-JS 🇧🇾, O’Reilly Velocity, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/) 🇺🇸. He also herds the [NebraskaJS](http://nebraskajs.com) meetup and [NEJS CONF](http://nejsconf.com/).
 {%- endhighlight %}
 </div>
 

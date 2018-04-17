@@ -13,24 +13,23 @@ Of course there wouldn’t be an XOR function in JavaScript when I needed one. S
 
  [1]: http://www.howtocreate.co.uk/xor.html
 
-{% highlight js %}
-function xor()
-{
+``` js
+function xor() {
   var b = false;
-  for( var j = 0; j < arguments.length; j++ )
-  {
+  for( var j = 0; j < arguments.length; j++ ) {
     if( arguments[ j ] && !b ) b = true;
     else if( arguments[ j ] && b ) return false;
   }
+
   return b;
 };
-{% endhighlight %}
+```
 
 Usage:
 
-{% highlight js %}
+``` js
 xor( false, true ); // true
 xor( true, true ); // false
 xor( false, false, true, true, true, false, true, false ); // false
 xor( false, false, false, true, false, false, false, false ); // true
-{% endhighlight %}
+```
