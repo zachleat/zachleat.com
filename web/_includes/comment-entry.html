@@ -1,0 +1,9 @@
+<div class="static-comments-reply">
+	<img src="{{ comment.avatar }}" class="static-comments-img">
+	<h3 class="static-comments-hed">{{ comment.author }}</h3>
+	<em class="static-comments-date">{{ comment.date | readableDateFromISO }}</em>
+	<div class="static-comments-msg">{{ comment.message }}</div>
+	{% for reply in comment.replies %}
+		{% include comment-entry.html, comment: reply %}
+	{% endfor %}
+</div>

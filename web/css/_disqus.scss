@@ -1,7 +1,41 @@
-.enhanced-js .disqus-container {
-	margin: 3em 0 4em;
-	text-align: center;
-}
 .enhanced-js .disqus-loader {
-	display: inline;
+	display: block;
+	text-align: center;
+	margin: 0 0 2em;
+}
+.static-comments {
+	font-size: 80%;
+}
+.static-comments-reply {
+	margin: 1em 0 3em;
+}
+.static-comments-reply > .static-comments-reply {
+	padding-left: 1.5em;
+	border-left: 4px solid #eee;
+}
+.static-comments-hed {
+	float: left;
+	margin: 0;
+}
+.static-comments-img {
+	float: left;
+	max-width: 30px;
+	margin-right: 1em;
+	border-radius: 50%;
+}
+.static-comments-msg {
+	clear: both;
+	line-height: 1.7;
+	margin-top: 1.5em;
+	@include clearfix;
+}
+.static-comments-date {
+	float: left;
+	clear: left;
+}
+@media (min-width: 25em) { /* 400px */
+	.static-comments-date {
+		float: right;
+		clear: none;
+	}
 }

@@ -40,6 +40,10 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
 	});
 
+	eleventyConfig.addFilter("readableDateFromISO", dateStr => {
+		return DateTime.fromISO(dateStr).toFormat("dd LLL yyyy 'at' hh:mma");
+	});
+
 	eleventyConfig.addLiquidFilter("wordcount", function(content) {
 		let words = content.split(" ").length;
 		let wordsLabel = "word" + (words !== 1 ? "s" : "");
