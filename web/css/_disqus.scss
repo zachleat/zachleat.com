@@ -17,6 +17,9 @@
 	float: left;
 	margin: 0;
 }
+.static-comments-hed.static-comments-hed {
+	@include webfont;
+}
 .static-comments-img {
 	float: left;
 	max-width: 30px;
