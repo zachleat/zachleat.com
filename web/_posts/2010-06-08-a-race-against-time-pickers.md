@@ -3,12 +3,6 @@ title: A Race Against Time Pickers
 author: Zach Leatherman
 layout: post
 permalink: /a-race-against-time-pickers/
-categories:
-  - Interface Design
-tags:
-  - Design
-  - Time
-  - Usability
 ---
 
 The Date Picker component is one of the most popular user interface components on the web today.  Its operation is very simple: focus into a field (sometimes a click on a dedicated calendar button is required) intended to contain a specific date and an on-screen calendar will be shown next to the form field, allowing the user to click on a specific date to populate the form field.

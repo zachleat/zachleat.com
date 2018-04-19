@@ -3,9 +3,7 @@ title: 'Conservative Design Example: Multiple Option List'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-example-multiple-option-list/
-tags:
-  - Conservative Design
-  - feedtrim
+feedtrim: true
 ---
 
 All of the posts in the Conservative Design series so far have been brainstorming of design patterns. But how about some real life examples, some actual code? Let’s dive in.

@@ -5,8 +5,6 @@ layout: post
 permalink: /performance-caveat-with-jquery-selectors-and-live-events/
 Version Specific Article:
   - jQuery 1.3.2
-categories:
-  - JavaScript
 tags:
   - research
 ---

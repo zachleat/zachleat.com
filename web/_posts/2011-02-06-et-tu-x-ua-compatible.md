@@ -3,9 +3,6 @@ title: 'Et tu, X-UA-Compatible?'
 author: Zach Leatherman
 layout: post
 permalink: /et-tu-x-ua-compatible/
-categories:
-  - JavaScript
-  - Web Browsers
 tags:
   - highlight
   - research

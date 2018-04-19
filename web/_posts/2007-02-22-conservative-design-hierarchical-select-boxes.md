@@ -3,11 +3,7 @@ title: 'Conservative Design: Hierarchical Select'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-hierarchical-select-boxes/
-tags:
-  - Conservative Design
-  - Design Patterns
-  - Hierarchical Select
-  - feedtrim
+feedtrim: true
 ---
 
 This is a post in a series entitled [Conservative Design Patterns for Form Elements][1].

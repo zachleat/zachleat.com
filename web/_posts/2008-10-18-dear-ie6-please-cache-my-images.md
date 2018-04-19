@@ -3,10 +3,7 @@ title: 'Dear IE6: Please Cache my Images.'
 author: Zach Leatherman
 layout: post
 permalink: /dear-ie6-please-cache-my-images/
-categories:
-  - Other
 tags:
-  - linkedin
   - research
 ---
 

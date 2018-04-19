@@ -3,9 +3,6 @@ title: The JavaScript Testing Challenge
 author: Zach Leatherman
 layout: post
 permalink: /javascript-tdd/
-categories:
-  - Contests
-  - JavaScript
 tags:
   - video
 medialength: 5 min

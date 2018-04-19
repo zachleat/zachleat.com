@@ -3,12 +3,7 @@ title: 'Specific Inheritance with TIBCO&#8217;s General Interface'
 author: Zach Leatherman
 layout: post
 permalink: /specific-inheritance-with-tibcos-general-interface/
-categories:
-  - JavaScript
-tags:
-  - TIBCO General Interface
-  - XSLT
-  - feedtrim
+feedtrim: true
 ---
 
 *Sorry about the title, I couldn’t resist.*

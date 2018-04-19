@@ -3,13 +3,7 @@ title: 'Architecture Choices: Callbacks and Events in JavaScript'
 author: Zach Leatherman
 layout: post
 permalink: /architecture-choices-callbacks-and-events-in-javascript/
-categories:
-  - JavaScript
-tags:
-  - Callbacks
-  - Events
-  - jQuery
-  - feedtrim
+feedtrim: true
 ---
 
 *Warning: Blog Post written for Beginner and Intermediate JavaScript Developers*

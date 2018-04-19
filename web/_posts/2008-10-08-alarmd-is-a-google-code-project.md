@@ -3,8 +3,6 @@ title: ALARMd is a Google Code Project
 author: Zach Leatherman
 layout: post
 permalink: /alarmd-is-a-google-code-project/
-categories: null
-tags: null
 ---
 
 **Update: [ALARMd has been moved to GitHub](/web/alarmd-is-now-on-github/).**

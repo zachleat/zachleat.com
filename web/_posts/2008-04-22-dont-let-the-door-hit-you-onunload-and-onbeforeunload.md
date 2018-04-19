@@ -5,10 +5,6 @@ layout: post
 permalink: /dont-let-the-door-hit-you-onunload-and-onbeforeunload/
 Version Specific Article:
   - Opera 9.27
-categories:
-  - Interface Design
-  - JavaScript
-  - Web Browsers
 tags:
   - highlight
   - research

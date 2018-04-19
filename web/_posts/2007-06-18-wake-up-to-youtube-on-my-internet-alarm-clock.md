@@ -8,9 +8,9 @@ description: First iteration of the alarm clock that plays YouTube videos or oth
 tags:
   - highlight
   - project
-  - feedtrim
   - popular-posts-total
 postRankTotalViews: 8
+feedtrim: true
 ---
 
 **Update**: Try the new [ALARMd 2 Beta][1], with Google Calendar integration and offline Youtube caching.

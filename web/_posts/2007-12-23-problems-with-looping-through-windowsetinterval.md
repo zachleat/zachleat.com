@@ -5,12 +5,8 @@ layout: post
 permalink: /problems-with-looping-through-windowsetinterval/
 Version Specific Article:
   - Firefox 2
-categories:
-  - JavaScript
-  - Web Browsers
-tags:
-  - deprecated
-  - feedtrim
+deprecated: true
+feedtrim: true
 ---
 
 Look at this code. What do you expect to be the outcome?

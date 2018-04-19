@@ -3,10 +3,7 @@ title: 'Conservative Design: Option List'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-option-list/
-tags:
-  - Conservative Design
-  - Design Patterns
-  - feedtrim
+feedtrim: true
 ---
 
 This is another post in the series entitled [Conservative Design Patterns for Form Elements][1].

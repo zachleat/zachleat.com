@@ -4,8 +4,6 @@ author: Zach Leatherman
 layout: post
 permalink: /dom-sailbloat/
 categories:
-  - DOM
-  - JavaScript
   - project
 tags:
   - project

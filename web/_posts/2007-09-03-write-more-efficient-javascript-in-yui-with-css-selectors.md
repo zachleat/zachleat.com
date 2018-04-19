@@ -8,9 +8,9 @@ Version Specific Article:
 categories:
   - JavaScript
 tags:
-  - deprecated
   - project
-  - feedtrim
+deprecated: true
+feedtrim: true
 ---
 
 *This is an updated version of a previous article entitled [Using DOM Query Libraries in YUI][1] for the new version of YAHOO.util.Dom included with YUI 2.3.0 as well as including support for passing context nodes into Dom functions.*

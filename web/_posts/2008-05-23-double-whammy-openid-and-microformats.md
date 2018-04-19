@@ -3,17 +3,7 @@ title: 'Double Whammy: OpenID and Microformats'
 author: Zach Leatherman
 layout: post
 permalink: /double-whammy-openid-and-microformats/
-categories:
-  - Application Design
-  - Interface Design
-tags:
-  - Flickr
-  - hCard
-  - microformat
-  - OpenID
-  - Technorati
-  - Twitter
-  - feedtrim
+feedtrim: true
 ---
 
 ## Microformategery

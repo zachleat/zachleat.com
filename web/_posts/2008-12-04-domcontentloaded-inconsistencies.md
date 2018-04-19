@@ -3,13 +3,10 @@ title: DOMContentLoaded Inconsistencies (in Browsers and JavaScript Libraries)
 author: Zach Leatherman
 layout: post
 permalink: /domcontentloaded-inconsistencies/
-categories:
-  - JavaScript
-  - Web Browsers
+smalltitle: true
 tags:
   - highlight
   - research
-  - smalltitle
   - popular-posts-total
 postRankTotalViews: 12
 ---

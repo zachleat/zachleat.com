@@ -5,7 +5,6 @@ layout: post
 permalink: /jquery-omaha/
 categories:
   - presentations
-tags: null
 ---
 
 A presentation for the jQuery Omaha meetup group, later transformed into NebraskaJS.

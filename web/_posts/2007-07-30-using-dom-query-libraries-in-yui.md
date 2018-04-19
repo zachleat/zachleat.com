@@ -5,9 +5,8 @@ layout: post
 permalink: /using-dom-query-libraries-in-yui/
 Version Specific Article:
   - YUI 2.3.0
-tags:
-  - deprecated
-  - feedtrim
+deprecated: true
+feedtrim: true
 ---
 
 Recently, I posted the top 8 things I thought the YUI Library needed to be a top tier JavaScript library again. One of those things included a CSS Selector DOM Querying class. Use one of these babies for awhile, and you’ll never be able to code without it again. They’re amazingly useful and will shorten your code quite beautifully.

@@ -4,15 +4,11 @@ author: Zach Leatherman
 layout: post
 permalink: /javascript-code-coverage-tool-for-firebug/
 tags:
-  - Code Coverage
-  - Firebug
-  - Firefox
-  - Selenium
-  - deprecated
   - project
-  - feedtrim
   - popular-posts-total
 postRankTotalViews: 18
+deprecated: true
+feedtrim: true
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]

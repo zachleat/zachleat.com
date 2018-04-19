@@ -3,15 +3,8 @@ title: 'Code Like the Big Boys: Flickr'
 author: Zach Leatherman
 layout: post
 permalink: /code-like-the-big-boys-flickr/
-categories:
-  - CSS
-  - JavaScript
-  - Reviews
-tags:
-  - Flickr
-  - PNG
-  - deprecated
-  - feedtrim
+deprecated: true
+feedtrim: true
 ---
 
 *Code like the Big Boys is a series of posts about code solutions used by major websites. What can we learn from these professional websites to use in our own code?*

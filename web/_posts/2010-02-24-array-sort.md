@@ -3,8 +3,6 @@ title: Internet Explorer Array.sort Unreliable
 author: Zach Leatherman
 layout: post
 permalink: /array-sort/
-categories:
-  - JavaScript
 tags:
   - highlight
   - research

@@ -3,9 +3,7 @@ title: What Sound Does a Cow Make?  MooTools.
 author: Zach Leatherman
 layout: post
 permalink: /what-sound-does-a-cow-make-mootools/
-tags:
-  - Mootools
-  - feedtrim
+feedtrim: true
 ---
 
 Frameworks, Frameworks everywhere. There are the big six: Dojo, jQuery, prototype/scriptaculous, Ext, Mootools, and YUI. (Honorable meantion to Open Rico and Mochikit) I’ve had limited experience with all of these frameworks, but have actually worked on projects involving YUI and jQuery. So when I was shopping around for a framework that I didn’t have extensive experience with for my next project, I decided to with Mootools. They’ve been getting a lot of traffic lately for posting their [SlickSpeed Selectors Test][1], so I figured why not try their wares.

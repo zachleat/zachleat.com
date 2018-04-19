@@ -5,16 +5,9 @@ layout: post
 permalink: /javascript-frameworks-and-jsf/
 Version Specific Article:
   - Specified Below
-tags:
-  - Dojo
-  - ExtJS
-  - Facelets
-  - jQuery
-  - JSF
-  - Mootools
-  - Prototype
-  - deprecated
-  - feedtrim
+deprecated: true
+feedtrim: true
+---
   - popular-posts-total
 postRankTotalViews: 19
 ---

@@ -3,13 +3,7 @@ title: 'Nursery Rhyme Code Poem [JavaScript]'
 author: Zach Leatherman
 layout: post
 permalink: /nursery-rhyme-code-poem-js/
-categories:
-  - Artistic
-  - JavaScript
-tags:
-  - Code Poem
-  - feedtrim
-  - Nursery Rhymes
+feedtrim: true
 ---
 
 ``` js

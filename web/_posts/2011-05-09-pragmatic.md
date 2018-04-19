@@ -3,9 +3,6 @@ title: Pragmatic Progressive Enhancement
 author: Zach Leatherman
 layout: post
 permalink: /pragmatic/
-categories:
-  - Application Design
-  - Opinion
 tags:
   - highlight
 ---

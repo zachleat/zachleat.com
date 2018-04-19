@@ -5,9 +5,8 @@ layout: post
 permalink: /fundamental-problem-with-yui-button/
 Version Specific Article:
   - YUI 2.2.0
-tags:
-  - deprecated
-  - feedtrim
+deprecated: true
+feedtrim: true
 ---
 
 Buttons! Let’s make them obvious and good looking. Let’s make them have inline images and cool hover colors. Let’s make them three dimensional. Especially so, let’s make them from markup so that we don’t take functionality away from technology disabled users.

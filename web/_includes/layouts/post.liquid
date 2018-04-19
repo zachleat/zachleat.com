@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="maxwidth">
 	<article>
-	<h1 {% if tags contains 'smalltitle' %}class="smalltitle"{% endif %}>{{ title }}</h1>
+	<h1 {% if smalltitle %}class="smalltitle"{% endif %}>{{ title }}</h1>
 	<div class="sub">
 		<em class="date">{{ page.date | readableDate }}</em>
 {% if tags contains 'video' %}
@@ -15,7 +15,7 @@ layout: default
 		<em class="words"><a href="/web/best-of/">#{{ postRank }} most popular</a></em>
 {% endif %}
 	</div>
-	{% if tags contains 'deprecated' %}
+	{% if deprecated %}
 	<article>
 		<div class="deprecation-warning">
 			<h3>Warning</h3>

@@ -3,9 +3,6 @@ title: 'CSS 3 Text: A Tale of writing-mode Woe'
 author: Zach Leatherman
 layout: post
 permalink: /css3-text-writing-mode/
-categories:
-  - CSS
-  - Web Browsers
 tags:
   - research
   - font-loading

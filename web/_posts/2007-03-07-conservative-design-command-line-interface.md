@@ -3,10 +3,7 @@ title: 'Conservative Design: Command Line Interface'
 author: Zach Leatherman
 layout: post
 permalink: /conservative-design-command-line-interface/
-tags:
-  - Command Line
-  - Conservative Design
-  - feedtrim
+feedtrim: true
 ---
 
 This is another post in the series entitled [Conservative Design Patterns for Form Elements][1].

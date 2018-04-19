@@ -6,10 +6,8 @@ permalink: /fight-registrastination-register-to-vote/
 categories:
   - Projects
 tags:
-  - geocode
-  - location
   - project
-  - feedtrim
+feedtrim: true
 ---
 
 *Apologies to international readers, this spam message is intended for citizens of the USA only. Thanks for understanding.*

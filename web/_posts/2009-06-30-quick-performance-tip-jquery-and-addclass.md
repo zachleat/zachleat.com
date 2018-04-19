@@ -5,9 +5,6 @@ layout: post
 permalink: /quick-performance-tip-jquery-and-addclass/
 Version Specific Article:
   - jQuery 1.3.2
-categories:
-  - JavaScript
-tags: null
 ---
 
 Abstractions are helpful and dangerous. But the more we know about a library’s internals, the less danger we’ll be in later. Here’s an issue I ran into where I had assumed that jQuery would be optimized for this case, but it wasn’t. I’ll go over my bad assumption and how to workaround it.

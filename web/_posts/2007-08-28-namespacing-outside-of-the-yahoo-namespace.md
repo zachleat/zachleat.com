@@ -3,13 +3,7 @@ title: Namespacing outside of the YAHOO Namespace
 author: Zach Leatherman
 layout: post
 permalink: /namespacing-outside-of-the-yahoo-namespace/
-categories:
-  - JavaScript
-tags:
-  - jQuery
-  - Namespacing
-  - YUI
-  - feedtrim
+feedtrim: true
 ---
 
 YAHOO.namespace(). A lovely little utility function subject that [I’ve written about before][1]. If you’ve never heard of YAHOO.namespace or aren’t even familiar with namespacing, I’d read that article first.

@@ -4,14 +4,6 @@ author: Zach Leatherman
 excerpt: 'A lot of people <strong>complain about registration forms</strong>. Some people have suggested getting rid of them altogether, allowing users to utilize login credentials from accounts they already have through OpenID.  But registration forms aren''t going away.  How can we make them more friendly?'
 layout: post
 permalink: /registration-forms-suck-lets-mitigate-suckiness/
-categories:
-  - Application Design
-tags:
-  - API
-  - Forms
-  - OpenID
-  - Registration
-  - Security
 ---
 
 ![Signup Form][1]

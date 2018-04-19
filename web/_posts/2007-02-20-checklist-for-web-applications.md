@@ -3,8 +3,7 @@ title: Checklist for Web Applications
 author: Zach Leatherman
 layout: post
 permalink: /checklist-for-web-applications/
-tags:
-  - feedtrim
+feedtrim: true
 ---
 
 As the first post in this new category of web development, I’ve decided to keep it simple and post the different components and architecture considerations a developer must consider when making a new application, especially in today’s world of in-page dynamic interaction and the complications that has put on the problems that were considered solved in yesterday’s page level world. Mostly this is a place to collect my thoughts on this subject.

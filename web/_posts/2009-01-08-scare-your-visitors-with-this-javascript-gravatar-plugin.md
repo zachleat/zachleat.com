@@ -8,8 +8,6 @@ description: Retrieve a gravatar image dynamically from any e-mail address.
 categories:
   - project
 tags:
-  - Gravatar
-  - jQuery
   - project
 ---
 

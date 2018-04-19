@@ -5,11 +5,9 @@ layout: post
 permalink: /raging-netflix-queue/
 headimage: /web/wp-content/uploads/2011/02/Screen-shot-2011-02-21-at-10.15.44-AM.png
 description: This Google Chrome extension will recognize movie web sites and one click on the extension will automatically add that title to your queue.
-categories:
-  - retired-projects
 tags:
   - project
-  - deprecated
+deprecated: true
 ---
 
 The premise is simple. When attempting to find movies to watch in my local theater, I often stumble upon titles that I feel to be more rental quality than theater quality. So I wanted an easier way to add those movies to my Netflix queue. I created a Google Chrome extension to accomplish just that.

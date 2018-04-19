@@ -5,9 +5,8 @@ layout: post
 permalink: /namespaces-in-ext-domquery/
 Version Specific Article:
   - ExtJS 0.33
-tags:
-  - deprecated
-  - feedtrim
+deprecated: true
+feedtrim: true
 ---
 
 Do you want to use [custom attributes][1] in your XHTML? Do you use the YUI Library and Jack Slocum’s wonderful [DomQuery selector engine][2]?

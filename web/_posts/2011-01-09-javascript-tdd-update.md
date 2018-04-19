@@ -3,11 +3,6 @@ title: An Update to The JavaScript Testing Challenge
 author: Zach Leatherman
 layout: post
 permalink: /javascript-tdd-update/
-categories:
-  - Contests
-  - JavaScript
-tags:
-  - JsTestDriver
 ---
 
 ***Update**: [The JavaScript Testing Challenge Winner][1]*
