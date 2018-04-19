@@ -89,21 +89,21 @@ module.exports = function(eleventyConfig) {
 		return collection.getAllSorted().filter(function(item) {
 			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 ||
 				"tags" in item.data && item.data.tags && item.data.tags.indexOf("font-loading") > -1;
-		}).reverse();
+		});
 	});
 
 	// projects
 	eleventyConfig.addCollection("projects", function(collection) {
-		return collection.getFilteredByTag("project").reverse();
+		return collection.getFilteredByTag("project");
 	});
 
-	eleventyConfig.addCollection("researchdesc", function(collection) {
-		return collection.getFilteredByTag("research").reverse();
+	eleventyConfig.addCollection("researchDescending", function(collection) {
+		return collection.getFilteredByTag("research");
 	});
 
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
-		return collection.getAllSorted().filter(function(item) {
+		return collection.getAllSorted().reverse().filter(function(item) {
 			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("presentations") > -1 ||
 				"tags" in item.data && item.data.tags && item.data.tags.indexOf("speaking") > -1;
 		}).reverse();
