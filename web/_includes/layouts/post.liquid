@@ -36,14 +36,13 @@ layout: default
 		{% include about.html %}
 	</article>
 
-{% capture fullurl %}/web{{page.url}}{% endcapture %}
-{% capture commentcount %}{{ disqus[fullurl].commentCount }}{% endcapture %}
+{% capture commentcount %}{{ disqus.commentCount }}{% endcapture %}
 	<div id="disqus_thread" class="static-comments">
-		<h2>
-			{{ commentcount }} Comment{% if commentcount != 1 %}s{% endif %}
+		<h2 id="comments">
+			{{ commentcount }} Comment{% if commentcount != "1" %}s{% endif %}
 		</h2>
 		<h3 class="disqus-loader"><a href="#" id="disqus-loader">➡ Load Disqus to Leave a Comment ⬅</a></h3>
-		{% for comment in disqus[fullurl].comments %}
+		{% for comment in disqus.comments %}
 			{% include comment-entry.html %}
 		{% endfor %}
 	</div>

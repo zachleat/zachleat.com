@@ -6,15 +6,16 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
+	eleventyConfig.setDynamicPermalinks(false);
+
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.liquid');
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
-	eleventyConfig.addCollection("latestPost", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
-			return !( "tags" in item.data ) || item.data.tags && item.data.tags.indexOf("external") === -1;
-		});
-	});
+	eleventyConfig.addPassthroughCopy("css/fonts");
+	eleventyConfig.addPassthroughCopy("img");
+	eleventyConfig.addPassthroughCopy("wp-content");
+	eleventyConfig.addPassthroughCopy("dist");
 
 	eleventyConfig.addFilter("timePosted", date => {
 		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
@@ -62,6 +63,27 @@ module.exports = function(eleventyConfig) {
 		return collection.getFilteredByGlob("./_posts/*").reverse();
 	});
 
+	eleventyConfig.addCollection("feedPosts", function(collection) {
+		return collection.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
+			return !item.data.tags ||
+				item.data.tags.indexOf("deprecated") === -1 &&
+				!item.data.deprecated &&
+				!item.data.feedtrim &&
+				item.data.tags.indexOf("pending") === -1 &&
+				item.data.tags.indexOf("draft") === -1;
+		});
+	});
+
+	eleventyConfig.addCollection("latestPost", function(collection) {
+		let posts = collection.getSortedByDate().reverse();
+		for( let item of posts ) {
+			if( !!item.inputPath.match(/\/_posts\//) &&
+				"tags" in item.data && item.data.tags && item.data.tags.indexOf("external") === -1 ) {
+				return [ item ];
+			}
+		}
+	});
+
 	// font-loading category mapped to collection
 	eleventyConfig.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
@@ -98,21 +120,6 @@ module.exports = function(eleventyConfig) {
 			return b.data.postRankTotalViews - a.data.postRankTotalViews;
 		}).reverse();
 	});
-
-	eleventyConfig.addCollection("feedPosts", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
-			return !item.data.tags ||
-				item.data.tags.indexOf("deprecated") === -1 &&
-				item.data.tags.indexOf("feedtrim") === -1 &&
-				item.data.tags.indexOf("pending") === -1 &&
-				item.data.tags.indexOf("draft") === -1;
-		});
-	});
-
-	eleventyConfig.addPassthroughCopy("css/fonts");
-	eleventyConfig.addPassthroughCopy("img");
-	eleventyConfig.addPassthroughCopy("wp-content");
-	eleventyConfig.addPassthroughCopy("dist");
 
 	return {
 		"templateFormats": [

@@ -865,6 +865,9 @@ h1 + .sub {
 	border-color: transparent;
 	text-decoration: underline;
 }
+.tags .tag-cased {
+	text-transform: none;
+}
 .tags .tag-event {
 	border-color: transparent;
 	text-decoration: none;
