@@ -6,9 +6,9 @@ permalink: /javascript-code-coverage-tool-for-firebug/
 tags:
   - project
   - popular-posts-total
-postRankTotalViews: 18
 deprecated: true
 feedtrim: true
+postRankTotalViews: 18
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]
