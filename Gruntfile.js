@@ -240,7 +240,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('content', ['copy:includes', 'shell:eleventy']);
 	grunt.registerTask('default', ['clean', 'assets', 'images', 'content']);
-	grunt.registerTask('separate', ['clean', 'assets', 'images', 'copy:includes']);
+	grunt.registerTask('separate', ['clean', 'assets', 'copy:includes']);
 
 	// Upload to Production
 	grunt.registerTask('stage', ['clean', 'assets', 'images', 'content', 'htmlmin', 'zopfli']);

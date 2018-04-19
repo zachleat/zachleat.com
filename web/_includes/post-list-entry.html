@@ -1,5 +1,3 @@
-{% capture fullurl %}/web{{post.url}}{% endcapture %}
-{% capture commentcount %}{{ commentsCounts[fullurl] }}{% endcapture %}
 
 {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
 {% if currentyear != year and ignoreYear != "true" %}
@@ -19,7 +17,8 @@
 	</a>
 
 	<span class="tags">
-		{%- if commentcount > 0 %}<span class="tag tag-cased" title="{{ commentcount }} comment{% if commentcount != "1" %}s{% endif %}">📢 {{ commentcount }}</span>{% endif -%}
+		{% capture fullurl %}/web{{post.url}}{% endcapture %}
+		{%- if commentsCounts[fullurl] > 0 %}<span class="tag tag-cased" title="{{ commentsCounts[fullurl] }} comment{% if commentsCounts[fullurl] != 1 %}s{% endif %}">📢 {{ commentsCounts[fullurl] }}</span>{% endif -%}
 		{%- if post.data.tags contains 'eleventy' %}<a href="/web/eleventy/" class="tag">Eleventy</a>{% endif -%}
 		{%- if post.data.tags contains 'font-loading' %}<a href="/web/fonts/" class="tag font-loading">Web Fonts</a>{% endif -%}
 		{%- if post.data.tags contains 'project' %}<a href="/web/projects/" class="tag">Project</a>{% endif -%}
