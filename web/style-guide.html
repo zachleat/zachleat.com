@@ -15,6 +15,7 @@ hasToc: true
 		<li><a href="#code">Code</a></li>
 		<li><a href="#icons">Icons</a></li>
 		<li><a href="#lists">Lists</a></li>
+		<li><a href="#comments">Comments</a></li>
 		<li><a href="#tables">Tables</a></li>
 		<li><a href="#media">Fluid Media</a></li>
 		<li><a href="#other">Other components</a></li>
@@ -281,6 +282,45 @@ hasToc: true
 	<ol class="notes">
 		<li class="notes_note"><a id="note-1" href="#link-note-1" class="notes_linkback">Jump to the reference.</a> FOUC also refers to the scenario when your page renders before your CSS has successfully applied so I think it’d be better to stick with FOUT to avoid confusion.</li>
 	</ol>
+</div>
+
+<h2 id="comments">Comments</h2>
+
+<div class="livedemo">
+	<div class="static-comments">
+		<div class="static-comments-reply" id="comment-UNIQUE_ID_A">
+			<div class="static-comments-hed">
+				<img src="https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&amp;s=60" class="static-comments-img">
+				<h3 class="static-comments-title">zachleat</h3>
+				<em class="static-comments-date"><a href="#comment-UNIQUE_ID_A">26 Nov 2017 at 09:16PM</a></em>
+			</div>
+			<div class="static-comments-msg"><p>I think preload is great but think you should add info on how one can feature detect support for link rel=preload</p></div>
+		</div><!-- /static-comments-reply -->
+	</div><!-- /static-comments -->
+</div>
+
+<h3>Nested Replies</h3>
+
+<div class="livedemo">
+	<div class="static-comments">
+		<div class="static-comments-reply" id="comment-UNIQUE_ID_B">
+			<div class="static-comments-hed">
+				<img src="https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&amp;s=60" class="static-comments-img">
+				<h3 class="static-comments-title">zachleat</h3>
+				<em class="static-comments-date"><a href="#comment-UNIQUE_ID_B">26 Nov 2017 at 09:16PM</a></em>
+			</div>
+			<div class="static-comments-msg"><p>I think preload is great but think you should add info on how one can feature detect support for link rel=preload</p></div>
+
+			<div class="static-comments-reply" id="comment-UNIQUE_ID_B2">
+				<div class="static-comments-hed">
+					<img src="https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&amp;s=60" class="static-comments-img">
+					<h3 class="static-comments-title">zachleat</h3>
+					<em class="static-comments-date"><a href="#comment-UNIQUE_ID_B2">26 Nov 2017 at 10:22PM</a></em>
+				</div>
+				<div class="static-comments-msg"><p>Shouldn’t need to feature detect. Fallbacks are built into the @font-face blocks.</p></div>
+			</div><!-- /static-comments-reply -->
+		</div><!-- /static-comments-reply -->
+	</div><!-- /static-comments -->
 </div>
 
 <h2 id="tables">Tables</h2>

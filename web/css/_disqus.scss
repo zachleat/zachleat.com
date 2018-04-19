@@ -10,14 +10,18 @@
 	margin: 1em 0 3em;
 }
 .static-comments-reply > .static-comments-reply {
+	margin-top: 2em;
 	padding-left: 1.5em;
 	border-left: 4px solid #eee;
 }
 .static-comments-hed {
+	@include clearfix;
+}
+.static-comments-title {
 	float: left;
 	margin: 0;
 }
-.static-comments-hed.static-comments-hed {
+.static-comments-title.static-comments-title {
 	@include webfont;
 }
 .static-comments-img {
@@ -29,7 +33,7 @@
 .static-comments-msg {
 	clear: both;
 	line-height: 1.7;
-	margin-top: 1.5em;
+	margin-top: 1em;
 	@include clearfix;
 }
 .static-comments-date {
