@@ -104,7 +104,6 @@ module.exports = function(eleventyConfig) {
 			return !item.data.tags ||
 				item.data.tags.indexOf("deprecated") === -1 &&
 				item.data.tags.indexOf("feedtrim") === -1 &&
-				item.data.tags.indexOf("upcoming") === -1 &&
 				item.data.tags.indexOf("pending") === -1 &&
 				item.data.tags.indexOf("draft") === -1;
 		});
