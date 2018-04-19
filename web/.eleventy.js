@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.liquid');
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
-	eleventyConfig.addCollection("localposts", function(collection) {
+	eleventyConfig.addCollection("latestPost", function(collection) {
 		return collection.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
 			return !( "tags" in item.data ) || item.data.tags && item.data.tags.indexOf("external") === -1;
 		});
