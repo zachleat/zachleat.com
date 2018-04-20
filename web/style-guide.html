@@ -45,6 +45,12 @@ hasToc: true
 <div class="livedemo square-top square-bottom" data-demo-label="Both Square">Test</div>
 <div class="livedemo top square-top square-bottom" data-demo-label="Both Square">Test</div>
 <p class="livedemo livedemo-resizable">This is a resizable live demo example with the demonstration label on the bottom.</p>
+<div class="livedemo top" data-demo-label="Nested Parent">
+	<p>This is a live demo example with the demonstration label on the bottom.</p>
+	<div class="livedemo top" data-demo-label="Nested Child">
+		<p>This is a live demo example with the demonstration label on the bottom.</p>
+	</div>
+</div>
 
 <h2 id="typography">Typography</h2>
 
@@ -123,9 +129,9 @@ hasToc: true
 
 <h2 id="web-fonts">Web Fonts</h2>
 
-<p>Using the <a href="/web/comprehensive-webfonts/#critical-foft-data-uri">Critical FOFT with preload Strategy</a>. At stage 1 (initial), a Lato subset is rendered and all bold and italic text below are faux rendered using <code>font-synthesis</code>. At stage 2, all Lato weights and styles have finished loading and are no longer faux rendered.</p>
+<p>Using the Critical FOFT with preload Strategy with a Lazy-loaded <code>font-display: optional</code> Polyfilled Fallback, otherwise known as <a href="/web/the-compromise/"><em>The Compromise</em></a>. At stage 1 (initial), a Lato subset is rendered and all bold and italic text below are faux rendered using <code>font-synthesis</code>. At stage 2, all Lato weights and styles have finished loading and are no longer faux rendered.</p>
 
-<h3 class="cased">Fallback Fonts (Stage 0, pre-preload or if preload not supported)</h3>
+<h3 class="cased">Fallback Fonts (Stage 0, pre-preload, if preload not supported, or empty-cache visit on IE/Edge)</h3>
 <div class="livedemo"><p class="font-fallback">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
 
 <h3 class="cased">Web Fonts (Stage 1, Lato Roman Subset)</h3>
@@ -137,14 +143,13 @@ hasToc: true
 
 <h3>OpenType Features</h3>
 <h4>Ligatures</h4>
-<div class="livedemo">
+<div class="livedemo top" data-demo-label="Ligatures">
 	<p style="font-size: 1.5em;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
+
+	<div class="livedemo top" data-demo-label="Ligatures Disabled">
+		<p style="font-size: 1.5em; font-variant-ligatures: no-common-ligatures; font-feature-settings: 'liga' 0, 'clig' 0;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
+	</div>
 </div>
-<h4>Ligatures disabled (for comparison)</h4>
-<div class="livedemo">
-	<p style="font-size: 1.5em; font-variant-ligatures: no-common-ligatures; font-feature-settings: 'liga' 0, 'clig' 0;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
-</div>
-<p class="caption">The Lato webfont supports only the <code>liga</code> feature.</p>
 
 <h2 id="code">Code</h2>
 <div class="livedemo">

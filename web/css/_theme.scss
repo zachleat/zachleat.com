@@ -1045,6 +1045,14 @@ h1 + .sub {
 	color: #8ac7db;
 	@include webfont;
 }
+.livedemo .livedemo {
+	margin-right: -0.5rem;
+	margin-left: -0.5rem;
+	box-shadow: 0 0 0 2px #ddf0f6;
+}
+.livedemo .livedemo:last-child {
+	margin-bottom: -0.4375rem; /* -7px /16 */
+}
 .livedemo[data-demo-label]:after {
 	content: attr(data-demo-label);
 }
@@ -1139,4 +1147,17 @@ h1 + .sub {
 	.toc.toc ul li {
 		line-height: 1.5;
 	}
+}
+
+/* Alignment */
+.grid-2 {
+	@include clearfix;
+}
+.grid-2 > :first-child {
+	width: 48%;
+	float: left;
+}
+.grid-2 > :last-child {
+	width: 48%;
+	float: right;
 }
