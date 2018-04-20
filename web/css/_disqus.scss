@@ -36,6 +36,9 @@
 	margin-top: 1em;
 	@include clearfix;
 }
+.static-comments-msg p:first-child {
+	margin-top: 0;
+}
 .static-comments-date {
 	float: left;
 	clear: left;
