@@ -15,4 +15,9 @@ Lately, I’ve seen a few developers recommend `font-display: optional`. `font-d
 
 However, after seeing some confusion on Twitter, I think it’s probably worth noting that if you decide to use `font-display: optional`, it would be a waste of your page’s resources to also use `preload`. It won’t break anything, it’ll just trigger that web font request early (causing network congestion if you have other critical path resources that need to be fetched). An early request won’t buy you much if the web fonts aren’t going to render when they finish.
 
+* `preload` with `font-display: optional`: Not great ⚠️
+* `preload` with `font-display: swap`: Good ✅
+* `preload` with `font-display: optional`: Good ✅
+* `font-display: block` with anything: Bad 🚫
+
 Hope that clears up some of the confusion!
