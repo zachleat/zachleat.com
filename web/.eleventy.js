@@ -75,8 +75,11 @@ module.exports = function(eleventyConfig) {
 				let lastWord = splitSpace.pop();
 				let secondLastWord = splitSpace.pop();
 				// skip when last two words are super long 😭
-				let longClass = `${secondLastWord} ${lastWord}`.length >= 15 ? " prevent-orphan-long" : "";
-				after += `<span class="prevent-orphan${longClass}">${secondLastWord} ${lastWord}</span>`;
+				if(`${secondLastWord} ${lastWord}`.length >= 15) {
+					after += `${secondLastWord} ${lastWord}`;
+				} else {
+					after += `<span class="prevent-orphan">${secondLastWord} ${lastWord}</span>`;
+				}
 			}
 
 			return splitSpace.join(" ") + after;
