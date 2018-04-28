@@ -408,6 +408,54 @@ h5 {
 	}
 }
 
+.primary-title {
+	font-size: 1.736842105263em; /* 33px /19 */
+	line-height: 0.85;
+	color: #333;
+	margin-bottom: .3em;
+	letter-spacing: -22px;
+
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+.primary-title.cased {
+	text-transform: none;
+	line-height: 1;
+}
+.primary-title.smalltitle .long-word {
+	text-transform: none;
+	font-size: 75%;
+}
+
+.primary-title.primary-title {
+	font-weight: 900;
+	font-family: system-ui, -apple-system, sans-serif;
+}
+@media (min-width: 31.25em) { /* 500px */
+	.primary-title {
+		font-size: 8vw;
+	}
+}
+@media (min-width: $twoColLayoutMinWidth) {
+	.primary-title {
+		font-size: 6vw;
+		line-height: 0.75;
+		transform: rotate3d(0,1,5,-0.2deg);
+	}
+	/* override .posts-indent */
+	.primary-title.primary-title.primary-title {
+		padding: 0;
+	}
+	html:not(.wider) .primary-title {
+		font-size: 7.5vw;
+		margin-left: calc((100vw - 100% - 24.5rem) * -.5);
+		width: calc(100vw - 24.5rem);
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 /* Code */
 code {
 	font-family: $monospaceFont;
@@ -590,6 +638,11 @@ th.numeric {
 	font-size: 1.368421052632em; /* 26px /19 */
 	line-height: 110%;
 	text-decoration: none;
+
+	/* Disable hyphenation */
+	-webkit-hyphens: manual;
+	-ms-hyphens: manual;
+	hyphens: manual;
 }
 @supports (text-decoration-skip-ink: auto) {
 	.posts .posts-link:hover,
@@ -669,9 +722,6 @@ th.numeric {
 .sub {
 	margin-top: 0;
 	font-size: 0.8421052631579em; /* 16px /19 */
-}
-h1 + .sub {
-	margin-top: -1.5em;
 }
 @media (min-width: $twoColLayoutMinWidth) and (min-height: 34.375em) {
 	.sub {
@@ -1160,4 +1210,12 @@ h1 + .sub {
 .grid-2 > :last-child {
 	width: 48%;
 	float: right;
+}
+
+/* Orphan Wrap */
+.prevent-orphan {
+	white-space: nowrap;
+}
+.prevent-orphan-long {
+	white-space: normal;
 }

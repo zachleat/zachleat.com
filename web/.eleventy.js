@@ -45,6 +45,44 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromISO(dateStr).toFormat("dd LLL yyyy 'at' hh:mma");
 	});
 
+	eleventyConfig.addFilter("longWordWrap", str => {
+		return str.split(" ").map(function(word) {
+			return word.split("—").map(function(word) {
+				return word.split("(").map(function(word) {
+					return word.split(")").map(function(word) {
+						return word.length >= 14 ? `<span class="long-word">${word}</span>` : word;
+					}).join(")");
+				}).join("(");
+			}).join("—");
+		}).join(" ");
+	});
+
+	eleventyConfig.addFilter("orphanWrap", str => {
+		return str.split("—").map(function(str, index, dashSplit) {
+			// Uncomment this to prevent orphans only at the end of the string, not before every —
+			// if( index !== dashSplit.length - 1 ) {
+			// 	return str;
+			// }
+
+			let splitSpace = str.split(" ");
+			let after = "";
+			if( splitSpace.length > 1 ) {
+				if( splitSpace.length > 2 ) {
+					after += " ";
+				}
+
+				// TODO strip HTML from this?
+				let lastWord = splitSpace.pop();
+				let secondLastWord = splitSpace.pop();
+				// skip when last two words are super long 😭
+				let longClass = `${secondLastWord} ${lastWord}`.length >= 15 ? " prevent-orphan-long" : "";
+				after += `<span class="prevent-orphan${longClass}">${secondLastWord} ${lastWord}</span>`;
+			}
+
+			return splitSpace.join(" ") + after;
+		}).join("​—​");
+	});
+
 	eleventyConfig.addLiquidFilter("wordcount", function(content) {
 		let words = content.split(" ").length;
 		let wordsLabel = "word" + (words !== 1 ? "s" : "");

@@ -54,7 +54,7 @@
 							<a href="/web/style-guide/" class="tag{% if page.url == '/style-guide/' %} active{% endif %}">Style Guide</a>
 							<a href="/web/fonts/" class="tag font-loading{% if page.url == '/fonts/' %} active{% endif %}">Web Fonts</a>
 							<!-- <a href="/web/" class="tag{% if page.url == '/' %} active{% endif %}">All Posts</a> -->
-							<!-- <a href="/web/citations/" class="tag{% if page.url == '/citations/' %} active{% endif %}">Citations</a> -->
+							<a href="/web/citations/" class="tag{% if page.url == '/citations/' %} active{% endif %}">Citations</a>
 							<!-- <a href="/web/highlights/" class="tag highlight{% if page.url == '/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> -->
 							<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/best-of/' %} active{% endif %}{% if hasToc == true %} has-toc{% endif %}">Popular 🔥</a>
 						</div>
@@ -69,7 +69,7 @@
 {% if hasToc != true %}
 						<div class="tags tags-rail tags-rail-top5">
 {% if collections.latestPost[0] %}
-							<h2 class="top5">Latest Post:</h2>
+							<h2 class="top5">Latest:</h2>
 							<a href="{{ collections.latestPost[0].url | url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ collections.latestPost[0].data.title }}</a>
 {% endif %}
 							<h2 class="top5"><a href="/web/best-of/">Popular 🔥 ➡</a></h2>

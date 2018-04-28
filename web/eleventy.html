@@ -1,13 +1,13 @@
 ---
-title: Eleventy
+title: Why Are There So Many Static Site Generators
 layout: default
 tmpl: list
 ---
 
 <div class="maxwidth-list">
 	<article>
-		<h1>Eleventy</h1>
-		<p>Blog posts and tutorials for the <a href="https://github.com/11ty/eleventy/">Eleventy static site generator</a>.</p>
+		<h1 class="primary-title">{{ title | orphanWrap }}</h1>
+		<p>Blog posts and tutorials for perhaps my biggest side project yet, the <a href="https://github.com/11ty/eleventy/">Eleventy static site generator</a>.</p>
 		<p class="primarylink"><a href="https://www.11ty.io">11ty.io</a></p>
 		<ol class="posts posts-count posts-count-forward">
 			{% for post in collections.eleventy %}

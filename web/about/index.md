@@ -1,6 +1,5 @@
 ---
-title: About
-author: Zach Leatherman
+title: I’m Zach and You’re Reading About Me
 layout: page
 ---
 
