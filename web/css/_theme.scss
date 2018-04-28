@@ -413,7 +413,6 @@ h5 {
 	line-height: 0.85;
 	color: #333;
 	margin-bottom: .3em;
-	letter-spacing: -22px;
 
 	-webkit-hyphens: none;
 	-ms-hyphens: none;
@@ -442,6 +441,7 @@ h5 {
 		font-size: 6vw;
 		line-height: 0.75;
 		transform: rotate3d(0,1,5,-0.2deg);
+		letter-spacing: -2px;
 	}
 	/* override .posts-indent */
 	.primary-title.primary-title.primary-title {
