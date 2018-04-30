@@ -46,11 +46,16 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("longWordWrap", str => {
+		let words = {
+			"domcontentloaded": true,
+			"getelementsbytagname": true
+		};
+
 		return str.split(" ").map(function(word) {
 			return word.split("—").map(function(word) {
 				return word.split("(").map(function(word) {
 					return word.split(")").map(function(word) {
-						return word.length >= 14 ? `<span class="long-word">${word}</span>` : word;
+						return words[word.toLowerCase()] || word.length >= 12 ? `<span class="long-word">${word}</span>` : word;
 					}).join(")");
 				}).join("(");
 			}).join("—");

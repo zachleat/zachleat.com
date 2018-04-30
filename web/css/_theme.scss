@@ -164,15 +164,12 @@ figcaption strong,
 	-ms-hyphens: auto;
 	hyphens: auto;
 }
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5 {
-	/* Disable hyphenation */
-	-webkit-hyphens: manual;
-	-moz-hyphens: manual;
-	hyphens: manual;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	@include unhyphenate;
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.rail {
@@ -409,24 +406,19 @@ h5 {
 }
 
 .primary-title {
-	font-size: 1.736842105263em; /* 33px /19 */
+	font-size: 2em; /* 38px /19 */
 	line-height: 0.85;
 	color: #333;
 	margin-bottom: .3em;
-
-	-webkit-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+	@include unhyphenate;
 }
-.primary-title.cased {
-	text-transform: none;
-	line-height: 1;
+.primary-title-smalltitle {
+	font-size: 1.684210526316em; /* 32px /19 */
+	@include hyphenate;
 }
-.primary-title.smalltitle .long-word {
-	text-transform: none;
-	font-size: 75%;
+.primary-title .long-word {
+	@include hyphenate;
 }
-
 .primary-title.primary-title {
 	font-weight: 900;
 	font-family: system-ui, -apple-system, sans-serif;
@@ -434,6 +426,15 @@ h5 {
 @media (min-width: 31.25em) { /* 500px */
 	.primary-title {
 		font-size: 8vw;
+	}
+}
+@media (min-width: 40em) {
+	.primary-title-smalltitle,
+	.primary-title .long-word {
+		@include unhyphenate;
+	}
+	.primary-title-smalltitle .long-word {
+		@include hyphenate;
 	}
 }
 @media (min-width: $twoColLayoutMinWidth) {
@@ -468,10 +469,7 @@ code {
 	margin: 0 .25em 0 .1em;
 	color: #444;
 
-	/* Disable hyphenation */
-	-webkit-hyphens: manual;
-	-ms-hyphens: manual;
-	hyphens: manual;
+	@include unhyphenate;
 
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
@@ -510,10 +508,7 @@ pre {
 	-o-tab-size: 2;
 	tab-size: 2;
 
-	/* Disable hyphenation */
-	-webkit-hyphens: manual;
-	-ms-hyphens: manual;
-	hyphens: manual;
+	@include unhyphenate;
 
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
@@ -639,10 +634,7 @@ th.numeric {
 	line-height: 110%;
 	text-decoration: none;
 
-	/* Disable hyphenation */
-	-webkit-hyphens: manual;
-	-ms-hyphens: manual;
-	hyphens: manual;
+	@include unhyphenate;
 }
 @supports (text-decoration-skip-ink: auto) {
 	.posts .posts-link:hover,
@@ -818,10 +810,7 @@ th.numeric {
 	font-size: .875em;
 	line-height: 160%;
 
-	/* Disable hyphenation */
-	-webkit-hyphens: manual;
-	-ms-hyphens: manual;
-	hyphens: manual;
+	@include unhyphenate;
 }
 .about > a {
 	display: block;
@@ -1213,6 +1202,8 @@ th.numeric {
 }
 
 /* Orphan Wrap */
-.prevent-orphan {
-	white-space: nowrap;
+@media (min-width: 25em) { /* 400px */
+	.prevent-orphan {
+		white-space: nowrap;
+	}
 }
