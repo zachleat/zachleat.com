@@ -1,17 +1,15 @@
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.sr-only,
-.a11y-only {
-	@include a11y-only;
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
-.enhanced-only {
-	display: none;
-}
-.enhanced-js .enhanced-only {
-	display: block;
+html,
+body {
+	background-color: #fff;
 }
 img,
 video {
@@ -25,6 +23,19 @@ abbr {
 	text-decoration: none;
 }
 
+/* Accessibility and Cut the Mustard */
+.sr-only,
+.a11y-only {
+	@include a11y-only;
+}
+.enhanced-only {
+	display: none;
+}
+.enhanced-js .enhanced-only {
+	display: block;
+}
+
+/* Hide on small viewport */
 @media( max-width: 31.1875em) { /* 499px /16 */
 	.hide-sm {
 		display: none;
@@ -50,16 +61,6 @@ dd {
 	-webkit-hyphens: manual;
 	-ms-hyphens: manual;
 	hyphens: manual;
-}
-
-html {
-	-moz-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-html,
-body {
-	background-color: backgroundColor;
 }
 
 /* Post Addendum Notes */
