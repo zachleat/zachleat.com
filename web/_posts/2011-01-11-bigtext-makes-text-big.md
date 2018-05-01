@@ -35,7 +35,7 @@ It all began with a simple web foray to [Designing Monsters][designingmonsters].
 
 At its simplest, the BigText jQuery plugin takes a single element and **sizes the text inside of its child `<div>`s to fit the width of the parent element**. Gives the text that lovely vertical alignment.
 
-```
+```html
 <div id="bigtext" style="width: 300px">
   <div>The elusive</div>
   <div>BIGTEXT</div>
@@ -73,7 +73,7 @@ Turns out, the *BigText Demo Wizard* makes for really easy [Kinetic Typography][
 
  [ke]: http://vimeo.com/channels/kinetictypography
 
-<div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/OuqB6e6NPRM" frameborder="0"></iframe></div>
+<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/OuqB6e6NPRM" frameborder="0"></iframe></div></div>
 
 The above is simply the manual process of typing lyrics into the *BigText Demo Wizard*. You can easily make one of these too, with the help of the following keyboard shortcuts:
 

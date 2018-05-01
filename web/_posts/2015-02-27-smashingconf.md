@@ -28,7 +28,7 @@ Of all the talks I’ve given thus far in my career, I think this one is the one
 ## Video
 
 <figure>
-	<div class="fluid-width-video-wrapper"><iframe src="//player.vimeo.com/video/118908533?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+	<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe src="//player.vimeo.com/video/118908533?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>
 	<figcaption><a href="https://vimeo.com/118908533">SmashingConf Whistler &mdash; Zach Leatherman on Better @font-face with Font Load Events</a> from <a href="https://vimeo.com/smashingmagazine">Smashing Magazine</a> on <a href="https://vimeo.com">Vimeo</a>.</figcaption>
 </figure>
 
