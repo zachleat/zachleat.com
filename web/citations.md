@@ -7,7 +7,7 @@ tmpl: list
 
 <div class="maxwidth-list">
 	<article>
-		<h1 class="primary-title">{{ title | orphanWrap }}</h1>
+		<h1 class="primary-title">{{ title }}</h1>
 		<p>A list of notable non-ephemeral (mostly book) things I’ve been cited in.</p>
 		<ol class="posts">
 			<li class="subhed">2017</li>

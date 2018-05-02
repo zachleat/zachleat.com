@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="maxwidth">
 	<article>
-	<h1 class="primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{{ title | longWordWrap | orphanWrap }}</h1>
+	<h1 class="primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{{ title | longWordWrap }}</h1>
 	<div class="sub">
 		<em class="date">{{ page.date | readableDate }}</em>
 {% if tags contains 'video' %}
