@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const stripHtml = require("string-strip-html")
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
@@ -99,7 +100,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addLiquidFilter("readingtime", function(content) {
 		let wordsPerMinute = 100;
-		let words = content.split(" ").length;
+		let words = stripHtml(content).split(" ").length;
 		let minutes = Math.floor(words / wordsPerMinute);
 		let minutesLabel = "minute" + (minutes !== 1 ? "s" : "");
 		return "Read in " + (minutes > 0 ? `about ${minutes} ${minutesLabel}` : "less than a minute");
@@ -120,11 +121,14 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
+	function hasTag(post, tag) {
+		return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
+	}
+
 	eleventyConfig.addCollection("latestPost", function(collection) {
 		let posts = collection.getSortedByDate().reverse();
 		for( let item of posts ) {
-			if( !!item.inputPath.match(/\/_posts\//) &&
-				"tags" in item.data && item.data.tags && item.data.tags.indexOf("external") === -1 ) {
+			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") ) {
 				return [ item ];
 			}
 		}
