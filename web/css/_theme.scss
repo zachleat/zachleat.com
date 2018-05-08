@@ -36,6 +36,7 @@ abbr {
 }
 
 /* Hide on small viewport */
+/* Use a max-width here so it inherits the original value at 500px */
 @media( max-width: 31.1875em) { /* 499px /16 */
 	.hide-sm {
 		display: none;
@@ -554,7 +555,7 @@ caption {
 }
 td,
 th {
-	font-size: .8125em;
+	font-size: .625em;
 	padding: .4em;
 	vertical-align: top;
 }
@@ -562,9 +563,9 @@ td.numeric,
 th.numeric {
 	text-align: right;
 }
-@media ( max-width: 24.9375em ) {
+@media ( min-width: 25em ) {
 	td, th {
-		font-size: .625em;
+		font-size: .8125em;
 	}
 }
 

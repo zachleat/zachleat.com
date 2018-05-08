@@ -227,7 +227,7 @@ module.exports = function(grunt) {
 					'<%= config.root %>**/*.html',
 					'<%= config.root %>**/*.md',
 					'<%= config.root %>_includes/**/*',
-					'!<%= config.root %>_site/*' ],
+					'!<%= config.root %>_site/**/*' ],
 				tasks: ['content']
 			}
 		}
