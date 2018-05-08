@@ -14,6 +14,9 @@
 		<meta property="og:image" content="{% if page.headimage %}{{ page.headimage }}{% else %}/web/img/avatar.png{% endif %}">
 
 		<meta name="dist" content="{{distFolder}}">
+{% if page.tags contains 'browserlogos' %}
+		<meta name="icons" content="browserlogos">
+{% endif %}
 {% if page.title %}
 		<meta name="template" content="page">
 {% endif %}

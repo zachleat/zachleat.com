@@ -157,6 +157,16 @@ module.exports = function(grunt) {
 					'<%= config.root %>_includes/dist/<%= pkg.version %>/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
 					'<%= config.root %>_includes/dist/<%= pkg.version %>/initial.js': ['<%= config.distFolder %>initial.js']
 				}
+			},
+			browserlogos: {
+				files: [
+					{
+						expand: true,
+						cwd: 'node_modules/browser-logo-icon-set/64',
+						src: [ '**' ],
+						dest: '<%= config.distFolder %>browserlogos/'
+					}
+				]
 			}
 		},
 		grunticon: {
@@ -318,7 +328,7 @@ module.exports = function(grunt) {
 	});
 
 	// Default task.
-	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'jshint', 'concat', 'uglify', 'cssmin']);
+	grunt.registerTask('assets', ['copy:browserlogos', 'copy:css-to-sass', 'sass', 'jshint', 'concat', 'uglify', 'cssmin']);
 	grunt.registerTask('images', ['grunticon']);
 	grunt.registerTask('config', ['yaml']);
 	grunt.registerTask('content', ['copy:includes', 'shell:jekyll']);

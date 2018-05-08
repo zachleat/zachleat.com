@@ -1,13 +1,12 @@
 /* Icons */
 
-// Grunticon
 ;(function( doc ) {
-	// IE8+
+	// IE9+, Android 2.3+
 	if( !( 'geolocation' in navigator ) ) {
 		return;
 	}
 
-	var distFolder = ZL.getDistFolder();
+	var distFolder = ZL.getMeta( 'dist' );
 	// grunticon.loadCSS( distFolder + "icons/icons.data.svg.css" ).onloadcssdefined(function() {
 	// 	// only switches the icons on after they’ve loaded
 	// 	doc.documentElement.className += " grunticon";
@@ -16,14 +15,22 @@
 		distFolder + "icons/icons.data.png.css",
 		distFolder + "icons/icons.fallback.css" ] );
 
+	var icons = ZL.getMeta( "icons" );
+	if( icons === "browserlogos" ) {
+		grunticon( [ distFolder + "browserlogos/icons.data.svg.css",
+			distFolder + "browserlogos/icons.data.png.css",
+			distFolder + "browserlogos/icons.fallback.css" ]);
+	}
+
 })( document );
 
 // Load Defer JS and CSS
 ;(function( doc ) {
 	// IE8+
 	if( 'querySelector' in doc ) {
-		grunticon.loadCSS( ZL.getDistFolder() + "defer.min.css" );
-		loadJS( ZL.getDistFolder() + "defer.min.js" );
+		var distFolder = ZL.getMeta( 'dist' );
+		grunticon.loadCSS( distFolder + "defer.min.css" );
+		loadJS( distFolder + "defer.min.js" );
 	}
 })( document );
 
@@ -33,8 +40,6 @@
 	if( !( 'geolocation' in navigator ) ) {
 		return;
 	}
-
-	var templateName = doc.querySelector( 'meta[name="template"]' );
 
 	/* Fake w3c banner */
 	var banner = ' w3c-b ' + [ 'ud', 'wd', 'cr', 'pr', 'r', 'wgn', 'ign', 'ed' ][ Math.floor( Math.random() * 8 ) ];
