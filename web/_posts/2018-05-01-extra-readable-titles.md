@@ -1,6 +1,8 @@
 ---
 title: 'Obnoxiously Readable Responsive Text with Viewport Units'
 permalink: /obnoxiously-readable/
+tags:
+  - font-loading
 ---
 
 Ever since I created [BigText](/web/bigtext-makes-text-big/) over _seven years_ ago, I’ve been a little bit obsessed with beautifully large text. Unfortunately my own blog had post titles that were—to be honest—a little bland. I wanted to spice it up a bit and move from fixed text sizes to dynamic text that grows with the viewport size. I’ve seen many iterations of this approach using `resize` handlers in JavaScript:
@@ -140,3 +142,8 @@ If your screen is wide enough (perhaps—say—a viewport size of 3440px), you c
 <img src="/web/img/posts/extra-readable-titles/big.png" alt="Giant Viewport Preview of the Blog Post Title" class="primary">
 
 This is likely just the beginning of a long string of changes I’ll make to the super-wide layout for my blog.
+
+<div class="callout">
+    <h3>Update</h3>
+    <p>One hefty drawback to this approach (using only <code>vw</code> units to scale text) noted by <a href="https://twitter.com/andrew__romanov/status/992482401053036544">Andrew Romanov</a> is that the text no longer zooms appropriately with page zoom! He proposes using <code>calc</code> with a combination of fixed and viewport units for at least some text zooming.</p>
+</div>

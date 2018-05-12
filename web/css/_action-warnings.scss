@@ -1,21 +1,24 @@
 /* Call to Action and Deprecation Warning */
-.deprecation-warning {
+.callout {
 	font-size: 1.125em;
 	line-height: 140%;
-	background: #ffc;
-	border: 1px solid #ccc;
 	padding: .5em;
 	margin-top: 1em;
+	border-radius: 5px;
+	box-shadow: 0 0 0 2px #ccc;
 }
-.deprecation-warning h3 {
+.callout h3 {
 	display: inline;
 	line-height: 2;
 	margin-right: .6em;
 }
-.deprecation-warning h3:after {
+.callout h3:after {
 	content: ':';
 }
-.deprecation-warning p {
+.callout p {
 	@include webfontItalic;
 	margin: 0;
+}
+.callout-warning {
+	background-color: #ffc;
 }
