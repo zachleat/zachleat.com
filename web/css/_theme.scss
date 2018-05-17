@@ -213,39 +213,49 @@ h5 {
 @supports (display: block) {
 	@media (max-width: 36.75em) {
 		.content img.primary,
-		.content .fullwidth {
-			margin-left: -.75em;
-			margin-right: -.75em;
+		.content .fullwidth,
+		.content pre {
+			margin-left: -12px;
+			margin-right: -12px;
 			max-width: none;
 			width: 100vw;
 		}
 	}
 	@media (min-width: 36.8125em) and (max-width: $oneColLayoutMaxWidth) {
 		.content img.primary,
-		.content .fullwidth {
-			margin-left: calc( -1 * ( 100vw - 29.5em ) / 2 );
+		.content .fullwidth,
+		.content pre {
+			margin-left: calc( -1 * ( 100vw - 565px ) / 2 );
 			max-width: none;
 			width: calc( 100vw );
 		}
 	}
 	@media (min-width: $twoColLayoutMinWidth) {
 		.content img.primary,
-		.content .fullwidth {
+		.content .fullwidth,
+		.content pre {
 			// Add in rail
-			margin-left: calc( -1 * ( 100vw - 17em - 29.5em ) / 2 );
-			max-width: 58.125rem;
-			width: calc( 100vw - 17em );
+			margin-left: calc( -1 * ( 100vw - 323px - 565px ) / 2 );
+			max-width: 1104.375px;
+			width: calc( 100vw - 323px );
 		}
 	}
 }
 @media (min-width: 78.3125em) {
 	.content img.primary,
-	.content .fullwidth {
+	.content .fullwidth,
+	.content pre {
 		// Add in rail
 		margin-left: -184.75px;
 		max-width: none;
 		width: 930px;
 	}
+}
+/* Stay inside of the primarydemo boxes */
+.content .livedemo pre {
+	margin-left: calc( -1.076923076923em ); /* -14px /13 */
+	width: calc( 100% + 28px );
+	max-width: none;
 }
 
 #main-posts-list {
@@ -257,7 +267,7 @@ h5 {
 .maxwidth-list,
 .maxwidth-list + footer {
 	margin: 0 auto;
-	padding: 0 .75em; /* 12px */
+	padding: 0 0.6315789473684em; /* 12px /19 */
 }
 .maxwidth + footer .footer,
 .maxwidth-list + footer .footer {
@@ -321,7 +331,8 @@ body {
 html:not(.tmpl-list):not(.tmpl-home) .content a:not(.social_icon) {
 	@include textDecorationSkipInkFallback;
 }
-html:not(.tmpl-list):not(.tmpl-home) .content .posts a:not(.social_icon) {
+html:not(.tmpl-list):not(.tmpl-home) .content .posts a:not(.social_icon),
+html:not(.tmpl-list):not(.tmpl-home) a[href].no-underline.no-underline {
 	@include undoTextDecorationSkipInkFallback;
 }
 
@@ -526,6 +537,14 @@ pre > code {
 	margin: 0;
 	background-color: #272822;
 	color: #f8f8f2;
+}
+@media (min-width: 60em) { /* 960px */
+	pre {
+		border-radius: 0.6153846153846em; /* 8px /13 */
+	}
+	.livedemo pre {
+		border-radius: 0;
+	}
 }
 
 /* Quotes */
