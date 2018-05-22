@@ -29,6 +29,8 @@ I’d like something that scales to a little bit more complex of a project than 
 
 That’s one of my favorite things about [Eleventy](https://www.11ty.io/). It is flexible enough to work with any kind of project or directory structure, transforming data and templates into HTML content quickly and easily. It’s more of a tool than a framework.
 
+{% include eleventy-links.html %}
+
 ## The Simplest Critical CSS That Can Possibly Work Well
 
 Critical CSS can be one of the biggest wins a project can do to improve their time to first render. Critical CSS build tools ([Filament Group](https://github.com/filamentgroup/criticalCSS) has one, as well as [Addy Osmani](https://github.com/addyosmani/critical) and others) will find the CSS used in a stock _Above the Fold_ viewport size and inject that right into the markup for near-instant rendering. However, we don’t really need to do this analysis at all if our stylesheets are small enough! The wins from this approach improve with stylesheet size. With a tiny stylesheet, we can just inject the whole CSS stylesheet right into the page. Good enough. 😇
