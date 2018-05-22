@@ -468,6 +468,10 @@ h5 {
 		padding-left: 0;
 		padding-right: 0;
 	}
+	html:not(.wider).tmpl-list .primary-title {
+		margin-left: calc((100vw - 100% - 20.8125rem) * -.5);
+		width: calc(100vw - 20.8125rem);
+	}
 }
 
 /* Code */
