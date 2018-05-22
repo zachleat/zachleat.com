@@ -4,7 +4,7 @@ permalink: /preload-font-display-optional/
 tags:
   - font-loading
   - popular-posts
-postRank: 4
+postRank: 14
 ---
 
 Most of the _quick win_ font loading advice I’m seeing right now (and some [that I give out](/web/23-minutes/)) involves combining `preload` and the `font-display` CSS descriptor.

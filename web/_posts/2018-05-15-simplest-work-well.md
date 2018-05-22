@@ -1,9 +1,11 @@
 ---
-title: 'The Simplest Web Site That Could Possibly Work Well'
+title: The Simplest Web Site That Could Possibly Work Well
 permalink: /that-could-possibly-work/
 tags:
   - nejsconf
   - eleventy
+  - popular-posts
+postRank: 1
 ---
 
 This week we’ve launched the [new web site for NEJS CONF 2018](https://2018.nejsconf.com/) and I am so excited for our theme this year: ✨ outer space ✨.
