@@ -115,6 +115,8 @@ For a recent talk at <a href="http://css-minsk-js.by/">CSS-Minsk-JS</a>, I did s
 
 Browsers implementing a FOUT/FOIT/FOIT-3s behavior first (trailblazers) are denoted as (1st) above. Browsers second to implement an existing behavior (two makes a crowd) are denoted as (2nd) above.
 
+This list is limited to stable releases, and does not include information about dev channel/beta/technology previews.
+
 ## Highlights
 
 * Microsoft’s adherence to FOUT. It’s the most reliable way to render web fonts without the perceived performance penalties and race conditions that come with FOIT so honestly, I admire this. They were first and they’ve stuck to their guns.

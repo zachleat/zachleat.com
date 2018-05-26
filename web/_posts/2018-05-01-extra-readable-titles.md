@@ -105,6 +105,8 @@ After you have your pixels, of course you can convert to `rem` or `em` as desire
 
 If you want the text to grow or shrink at a reduced rate, you can use `calc` to sum a `vw` unit with a fixed CSS unit (like `px` or `em`)—but getting your boundaries aligned properly is a bit more difficult and beyond the scope of what I’d like to cover here. An exercise left up to the reader 😇.
 
+_Update on 2018 May 25_: There is an incredible article written by <a href="https://fvsch.com/">Florens Verschelde</a> about <a href="https://fvsch.com/code/css-locks/">The Math of CSS Locks</a> which covers this exact subject. Seriously, go read it—it’s amazing.
+
 ### Twin Props
 
 {% highlight css %}
@@ -147,5 +149,5 @@ This is likely just the beginning of a long string of changes I’ll make to the
 
 <div class="callout">
     <h3>Update</h3>
-    <p>One hefty drawback to this approach (using only <code>vw</code> units to scale text) noted by <a href="https://twitter.com/andrew__romanov/status/992482401053036544">Andrew Romanov</a> is that the text no longer zooms appropriately with page zoom! He proposes using <code>calc</code> with a combination of fixed and viewport units for at least some text zooming.</p>
+    <p>One hefty drawback to this approach (using only <code>vw</code> units to scale text) noted by <a href="https://twitter.com/andrew__romanov/status/992482401053036544">Andrew Romanov</a> is that the text no longer zooms appropriately with page zoom! He proposes using <code>calc</code> with a combination of fixed and viewport units for at least some text zooming. Read the <a href="https://fvsch.com/code/css-locks/">The Math of CSS Locks</a> for more on that approach.</p>
 </div>
