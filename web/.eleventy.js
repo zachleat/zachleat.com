@@ -102,8 +102,8 @@ module.exports = function(eleventyConfig) {
 		let wordsPerMinute = 100;
 		let words = stripHtml(content).split(" ").length;
 		let minutes = Math.floor(words / wordsPerMinute);
-		let minutesLabel = "minute" + (minutes !== 1 ? "s" : "");
-		return "Read in " + (minutes > 0 ? `about ${minutes} ${minutesLabel}` : "less than a minute");
+
+		return (minutes > 0 ? `${minutes} min read` : "");
 	});
 
 	eleventyConfig.addCollection("posts", function(collection) {

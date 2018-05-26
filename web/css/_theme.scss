@@ -745,6 +745,9 @@ th.numeric {
 		margin-bottom: 5rem;
 	}
 }
+.sub em:empty {
+	display: none;
+}
 .sub em {
 	margin-right: 1em;
 	color: #666;
@@ -752,6 +755,11 @@ th.numeric {
 }
 .sub em:before {
 	content: '—';
+}
+@media (min-width: 35em) { /* 560px */
+	.sub em {
+		display: inline;
+	}
 }
 
 .posts-paragraph {
@@ -769,9 +777,6 @@ th.numeric {
 }
 
 @media (min-width: 30em) {
-	.sub em {
-		display: inline;
-	}
 	/* thanks to http://www.sitepoint.com/making-css-count-backwards/ */
 	.posts-count li {
 		counter-increment: start-from -1;
