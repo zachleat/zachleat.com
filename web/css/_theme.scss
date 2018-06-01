@@ -251,12 +251,6 @@ h5 {
 		width: 930px;
 	}
 }
-/* Stay inside of the primarydemo boxes */
-.content .livedemo pre {
-	margin-left: calc( -1.076923076923em ); /* -14px /13 */
-	width: calc( 100% + 28px );
-	max-width: none;
-}
 
 #main-posts-list {
 	padding-left: 0;
@@ -1099,6 +1093,17 @@ th.numeric {
 		padding: .875rem .875rem 1rem .875rem;
 		margin-left: -.875rem;
 		margin-right: -.875rem;
+	}
+}
+/* Stay inside of the primarydemo boxes */
+.content .livedemo > pre {
+	margin-left: calc( -.5rem );
+	width: calc( 100% + 1rem );
+	max-width: none;
+
+	@media (min-width: $twoColLayoutMinWidth) {
+		margin-left: calc( -.875rem );
+		width: calc( 100% + 1.75rem );
 	}
 }
 .livedemo:after {
