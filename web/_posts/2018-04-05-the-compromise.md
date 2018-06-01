@@ -4,7 +4,7 @@ permalink: /the-compromise/
 tags:
   - font-loading
   - popular-posts
-postRank: 13
+postRank: 14
 ---
 
 <style>
