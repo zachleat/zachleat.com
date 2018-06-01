@@ -214,7 +214,7 @@ h5 {
 	@media (max-width: 36.75em) {
 		.content img.primary,
 		.content .fullwidth,
-		.content pre {
+		.content pre:not(.fullwidthexempt) {
 			margin-left: -12px;
 			margin-right: -12px;
 			max-width: none;
@@ -224,7 +224,7 @@ h5 {
 	@media (min-width: 36.8125em) and (max-width: $oneColLayoutMaxWidth) {
 		.content img.primary,
 		.content .fullwidth,
-		.content pre {
+		.content pre:not(.fullwidthexempt) {
 			margin-left: calc( -1 * ( 100vw - 565px ) / 2 );
 			max-width: none;
 			width: calc( 100vw );
@@ -233,7 +233,7 @@ h5 {
 	@media (min-width: $twoColLayoutMinWidth) {
 		.content img.primary,
 		.content .fullwidth,
-		.content pre {
+		.content pre:not(.fullwidthexempt) {
 			// Add in rail
 			margin-left: calc( -1 * ( 100vw - 323px - 565px ) / 2 );
 			max-width: 1104.375px;
@@ -244,7 +244,7 @@ h5 {
 @media (min-width: 78.3125em) {
 	.content img.primary,
 	.content .fullwidth,
-	.content pre {
+	.content pre:not(.fullwidthexempt) {
 		// Add in rail
 		margin-left: -184.75px;
 		max-width: none;

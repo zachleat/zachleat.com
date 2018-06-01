@@ -18,3 +18,8 @@
 	background-color: transparent;
 	color: #000;
 }
+.printed-page pre:not(.fullwidthexempt) {
+	margin-left: auto;
+	max-width: none;
+	width: auto;
+}
