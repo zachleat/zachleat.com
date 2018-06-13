@@ -133,6 +133,11 @@ The safe bet here is to defer to browser and platform defaults and only use `fon
 * [Understanding Sub-Pixel (LCD Screen) Anti-Aliased Font Rendering](http://alienryderflex.com/sub_pixel/) (2007) from Darel Rex Finley
 * [Anti-Aliasing on the iPhone](https://daringfireball.net/2007/12/anti_aliasing_on_the_iphone) (2007) from John Gruber
 
+## Updates
+
+* Sub-pixel anti-aliasing reportedly removed in macOS Mojave: <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Subpixel antialiasing for text is gone in macOS Mojave.</p>&mdash; John Siracusa (@siracusa) <a href="https://twitter.com/siracusa/status/1004143205078597633?ref_src=twsrc%5Etfw">June 5, 2018</a></blockquote>
+
+
 <div class="retweettoshare">
 	<h3 class="retweettoshare_title">Retweet to share this post</h3>
 	<div class="retweettoshare_widget">
