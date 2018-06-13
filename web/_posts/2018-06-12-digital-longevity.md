@@ -1,14 +1,16 @@
 ---
-title: How Long Can Our Content Last?
+title: The Life Expectancy of Digital Content
 permalink: /digital-longevity/
 ---
-I snuck back on to Twitter for a few moments this morning and was presented with a fascinating video from [Anthony Bourdain’s series Raw Craft on the Arion Press](https://www.youtube.com/watch?v=i-5NhxYRqUI), a magical and fascinating little business in San Francisco that hand-crafts books. Thank you so much [Robin Rendle](https://twitter.com/robinrendle/status/1005176531075780608) for sharing this.
+I snuck back on to Twitter for a few moments this morning and was presented with a fascinating video from [**Anthony Bourdain’s series Raw Craft on the Arion Press**](https://www.youtube.com/watch?v=i-5NhxYRqUI), a magical and fascinating little business in San Francisco that hand-crafts books. Thank you so much [Robin Rendle](https://twitter.com/robinrendle/status/1005176531075780608) for sharing this.
 
 Watching these master craftspeople in their element left me **in awe of the amount of respect** that goes into a single book. The typesetting, the printing, the sewing and binding, the proofreading. It’s reminiscent of monastic scribes carefully and artfully crafting every page, spending their waking lives crafting manuscripts comprised of words written by other people. I pray their work always have enough demand to justify their continued existence.
 
 I particularly enjoyed this gem:
 
 > “If ever there were a time to be making books, that’s exciting, say within the last century—I would say now is that moment. The interweb has really relieved the burden of the encyclopedia from the book. So we’re in this very unique moment now where it can be restored to it’s certain sparkly self. It’s kind of up to all of us to figure out what that book will look like in the 21st century.”—Blake Riley
+
+“Relieved the burden of the encyclopedia from the book.” Wow.
 
 Seeing this bookmaking in action has me **wondering about the longevity of digital content**, too. The web was an antidote to closed document formats and revolutionary because of its ubiquitous accessibility. But when you’re thinking on a bigger scale, in comparison to a lovingly crafted book, even the most open of digital formats—raw HTML on the web—sacrifices longevity for access and ubiquity. It’s tough to imagine that any digital content that you or I create or maybe even consume will be around in the same way that an intergenerational book lives on, passed from parents to children.
 
@@ -24,4 +26,4 @@ We may be trapped in a web of competing formats, open and closed, standardized a
 
 Digital content longevity will continue to be highly variable, depending only *in part* on the file format used.  HTML has existed for about 27 years and I wouldn’t venture a guess to say how much longer it’ll go. I can say that a reduction in ceremony around opening and reading a file is better for that file’s longevity. Relatedly, the ubiquity of software necessary to read a file lends to its future proofing as well. And **what software has been historically and continues to be more ubiquitous than the lowly web browser?** I’m not sure such software exists.
 
-So feel free to keep creating your content in Microsoft Word or in Markdown or using JSX or Mustache templates or in your WordPress database. **But if you want the content to live a full and happy life, publish it in HTML to the web**.
+So feel free to keep creating your content in Microsoft Word or in Markdown or using JSX or Mustache templates or in your WordPress database. **But if you want the content to live a full and happy life, publish it in HTML on the web**.
