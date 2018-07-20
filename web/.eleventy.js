@@ -1,7 +1,8 @@
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const stripHtml = require("string-strip-html");
+// TODO replace with https://www.npmjs.com/package/striptags
+// const stripHtml = require("string-strip-html");
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
@@ -18,7 +19,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("wp-content");
 	eleventyConfig.addPassthroughCopy("dist");
 
-	eleventyConfig.addFilter("timePosted", date => {
+	eleventyConfig.addLiquidFilter("timePosted", date => {
 		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
 		let daysPosted = Math.round( parseFloat( numDays ) );
 		let yearsPosted = parseFloat( (numDays / 365).toFixed(1) );
@@ -30,7 +31,7 @@ module.exports = function(eleventyConfig) {
 		}
 	});
 
-	eleventyConfig.addFilter("rssNewestUpdatedDate", collection => {
+	eleventyConfig.addNunjucksFilter("rssNewestUpdatedDate", collection => {
 		if( !collection || !collection.length ) {
 			throw new Error( "Collection is empty in lastUpdatedDate filter." );
 		}
@@ -38,15 +39,15 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromJSDate(collection[ 0 ].date).toISO({ includeOffset: true, suppressMilliseconds: true });
 	});
 
-	eleventyConfig.addFilter("readableDate", dateObj => {
+	eleventyConfig.addLiquidFilter("readableDate", dateObj => {
 		return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
 	});
 
-	eleventyConfig.addFilter("readableDateFromISO", dateStr => {
+	eleventyConfig.addLiquidFilter("readableDateFromISO", dateStr => {
 		return DateTime.fromISO(dateStr).toFormat("dd LLL yyyy 'at' hh:mma");
 	});
 
-	eleventyConfig.addFilter("longWordWrap", str => {
+	eleventyConfig.addLiquidFilter("longWordWrap", str => {
 		let words = {
 			"domcontentloaded": true,
 			"getelementsbytagname": true
@@ -63,7 +64,7 @@ module.exports = function(eleventyConfig) {
 		}).join(" ");
 	});
 
-	eleventyConfig.addFilter("orphanWrap", str => {
+	eleventyConfig.addLiquidFilter("orphanWrap", str => {
 		return str.split("—").map(function(str, index, dashSplit) {
 			// Uncomment this to prevent orphans only at the end of the string, not before every —
 			// if( index !== dashSplit.length - 1 ) {
@@ -100,7 +101,8 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addLiquidFilter("readingtime", function(content) {
 		let wordsPerMinute = 100;
-		let words = stripHtml(content).split(" ").length;
+		// let words = stripHtml(content).split(" ").length;
+		let words = content.split(" ").length;
 		let minutes = Math.floor(words / wordsPerMinute);
 
 		return (minutes > 0 ? `${minutes} min read` : "");
@@ -139,21 +141,21 @@ module.exports = function(eleventyConfig) {
 		return collection.getAllSorted().filter(function(item) {
 			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 ||
 				"tags" in item.data && item.data.tags && item.data.tags.indexOf("font-loading") > -1;
-		});
+		}).reverse();
 	});
 
 	// projects
 	eleventyConfig.addCollection("projects", function(collection) {
-		return collection.getFilteredByTag("project");
+		return collection.getFilteredByTag("project").reverse();
 	});
 
-	eleventyConfig.addCollection("researchDescending", function(collection) {
-		return collection.getFilteredByTag("research");
+	eleventyConfig.addCollection("researches", function(collection) {
+		return collection.getFilteredByTag("research").reverse();
 	});
 
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
-		return collection.getAllSorted().reverse().filter(function(item) {
+		return collection.getAllSorted().filter(function(item) {
 			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("presentations") > -1 ||
 				"tags" in item.data && item.data.tags && item.data.tags.indexOf("speaking") > -1;
 		}).reverse();
@@ -180,6 +182,7 @@ module.exports = function(eleventyConfig) {
 		],
 		"pathPrefix": "/web/",
 		"passthroughFileCopy": true,
+		"dataTemplateEngine": false,
 		"htmlTemplateEngine": "liquid",
 		"markdownTemplateEngine": "liquid"
 	};

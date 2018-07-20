@@ -1,17 +1,14 @@
 ---
-title: How Deep Can One Deep Dive Go
+title: NEJS CONF
 layout: default
 tmpl: list
 ---
-
 <div class="maxwidth-list">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
 		<ol class="posts">
-			{% assign year = "" %}
-			{% assign currentyear = "" %}
-			{% for post in collections.researches %}
-				{% include post-list-entry.html %}
+			{% for post in collections.nejsconf %}
+				{% include post-list-entry.html, ignoreYear: "true" %}
 			{% endfor %}
 		</ol>
 	</article>
