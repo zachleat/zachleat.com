@@ -14,9 +14,7 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 	<a href="/web/feed/" class="social_icon icon-feed" title="Zach Leatherman’s RSS Feed">RSS</a>
 </span><!-- /.social -->
 
-## Short Bio
-
-Zach likes making websites.
+<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" style="max-width: 300px; border-radius: 50%; margin: 2em auto 0; display: block">
 
 ## Bio
 
@@ -28,7 +26,11 @@ winners of the <a href="https://www.filamentgroup.com/lab/agency-of-year.html">N
 
 {% include bio-text-medium.html %}
 
-<div class="livedemo top square-bottom" data-demo-label="Plaintext">
+### Alternate Formats
+
+Here to fetch my bio? Let’s appeal to your base instinct to copy and paste:
+
+<div class="livedemo top left square-bottom" data-demo-label="Plaintext">
 
 ``` text
 Zach is a Web Developer with the award winning Filament Group. He’s currently fixated on web fonts and static site generators. His public speaking résumé includes talks at Smashing Conference, CSS-Minsk-JS, O’Reilly Velocity, CSSConf, and The White House. He also helps herd the NebraskaJS meetup and NEJS CONF.
@@ -36,7 +38,7 @@ Zach is a Web Developer with the award winning Filament Group. He’s currently 
 
 </div>
 
-<div class="livedemo top square-bottom" data-demo-label="HTML">
+<div class="livedemo top left square-bottom" data-demo-label="HTML">
 
 ``` html
 Zach is a Web Developer with the award winning <a href="http://www.filamentgroup.com/">Filament Group</a>. He’s currently fixated on <a href="https://www.zachleat.com/web/fonts/">web fonts</a> and <a href="https://www.zachleat.com/web/introducing-eleventy/">static site generators</a>. His <a href="https://www.zachleat.com/web/speaking/">public speaking résumé</a> includes talks at Smashing Conference, CSS-Minsk-JS, O’Reilly Velocity, CSSConf, and <a href="https://www.zachleat.com/web/whitehouse/">The White House</a>. He also helps herd the <a href="http://nebraskajs.com">NebraskaJS</a> meetup and <a href="http://nejsconf.com/">NEJS CONF</a>.
@@ -44,7 +46,7 @@ Zach is a Web Developer with the award winning <a href="http://www.filamentgroup
 
 </div>
 
-<div class="livedemo top square-bottom" data-demo-label="Markdown">
+<div class="livedemo top left square-bottom" data-demo-label="Markdown">
 
 ``` markdown
 Zach is a Web Developer with the award winning [Filament Group](http://www.filamentgroup.com/). He’s currently fixated on [web fonts](https://www.zachleat.com/web/fonts/) and [static site generators](https://www.zachleat.com/web/introducing-eleventy/). His [public speaking résumé](https://www.zachleat.com/web/speaking/) includes talks at Smashing Conference, CSS-Minsk-JS, O’Reilly Velocity, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/). He also helps herd the [NebraskaJS](http://nebraskajs.com) meetup and [NEJS CONF](http://nejsconf.com/).
