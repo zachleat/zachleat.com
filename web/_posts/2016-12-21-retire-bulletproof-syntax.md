@@ -26,7 +26,7 @@ But even after this shift occurred, we carried the baggage of our old ways forwa
 
 The web font world has changed. It’s time to move the chains forward. Given that web fonts for readable content fall back to system fonts when formats are not supported, it’s ok to be progressive here. Here’s the modern @font-face syntax I’d recommend:
 
-``` css/2/-1
+```css/2/-1
 @font-face {
   font-family: Open Sans;
   src: url(opensans.woff2) format('woff2'),
@@ -36,7 +36,7 @@ The web font world has changed. It’s time to move the chains forward. Given th
 
 Pretty simple, right? Just two formats. Much simpler than what we were using before:
 
-``` css/-1/2,3,5,6
+```css/-1/2,3,5,6
 @font-face {
   font-family: Open Sans;
   src: url('opensans.eot');

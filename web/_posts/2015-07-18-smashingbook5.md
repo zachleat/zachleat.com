@@ -1,5 +1,5 @@
 ---
-title: "Smashing Book #5"
+title: 'Smashing Book #5'
 permalink: /smashingbook5/
 tags:
   - resume

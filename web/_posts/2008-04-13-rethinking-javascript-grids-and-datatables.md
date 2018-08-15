@@ -3,10 +3,8 @@ title: Rethinking JavaScript Grids and DataTables
 author: Zach Leatherman
 layout: post
 permalink: /rethinking-javascript-grids-and-datatables/
-tags:
-  - popular-posts-total
+tags: []
 feedtrim: true
-postRankTotalViews: 20
 ---
 
 In the world of front end engineering, one must consider the end-user of the interface first, and above all other things. The priorities should not start with development ease, nor external library preference. The priorities should start with the needs of the consumer of your end product.

@@ -4,7 +4,7 @@ permalink: /now-with-style-guide/
 categories: null
 tags:
   - popular-posts
-postRank: 14
+postRank: 17
 ---
 
 As my own little corner of the web uncermoniously turned _ten years old_ this year, it’s really starting to feel more like a garden than a piece of software. I certainly enjoy tending to it. I can plant what I like and with proper care it can grow into something useful.
