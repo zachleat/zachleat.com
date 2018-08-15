@@ -14,6 +14,7 @@ tmpl: home
 			{% endcomment %}
 			{% assign year = "" %}
 			{% assign currentyear = "" %}
+			{% assign currentyearpostcount = 0 %}
 			{% for post in collections.posts %}
 				{% include post-list-entry.html %}
 			{% endfor %}

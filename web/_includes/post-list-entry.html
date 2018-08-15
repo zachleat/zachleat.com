@@ -1,9 +1,17 @@
 
+{% capture previousyear %}{{ currentyear }}{% endcapture %}
 {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
 {% if currentyear != year and ignoreYear != "true" %}
-	<li class="subhed" id="{{ currentyear }}">{{ currentyear }}</li>
-	{% capture year %}{{currentyear}}{% endcapture %} 
+{% comment %}
+{% if currentyearpostcount > 0 %}
+	<li class="subhed yearcount">{{ currentyearpostcount }} post{%if currentyearpostcount != 1 %}s{% endif %}{% if previousyear %} in {{ previousyear }}{% endif %}</li>
 {% endif %}
+{% endcomment %}
+	<li class="subhed" id="{{ currentyear }}">{{ currentyear }}</li>
+	{% capture year %}{{currentyear}}{% endcapture %}
+	{% assign currentyearpostcount = 0 %}
+{% endif %}
+{% increment currentyearpostcount %}
 <li class="{% if post.data.tags contains 'note' %}post-note {% endif %}{% if post.data.deprecated %}deprecated {% endif %}{% if post.data.tags contains 'highlight' %}highlight {% endif %}{% if post.data.smalltitle %}smalltitle {% endif %}{% if post.data.tags contains 'upcoming' %}upcoming {% endif %}{% if post.data.tags contains 'nejsconf' %}nejsconf {% endif %}"{% if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}>
 	{% if post.data.tags contains 'external' %}<span class="external" title="External Link"><span class="icon-link-external"></span></span>{% endif %}
 	
