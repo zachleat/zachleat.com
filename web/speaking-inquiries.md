@@ -1,6 +1,6 @@
 ---
-title: Speaking Inquiries
-layout: post
+title: I Can Say Words Out Loud At Your Event
+layout: page
 permalink: /speaking/inquiries/
 ---
 
@@ -10,9 +10,14 @@ As a [long time conference organizer](/web/nejsconf/), I know that organizing ca
 
 As such, I keep a certain set of personal guidelines that I hold myself accountable to when agreeing to speak at a conference.
 
-* Travel and lodging must be paid for _every speaker_ that is traveling to the conference. I’ve seen behind the curtain. I know the economics of conferences. This should be the first item in the budget.
-* Speaker diversity must be a priority.
+* Speaker diversity must be a priority. I will likely remove myself from the lineup if I discover that it was not made a priority.
+* Travel and lodging must be paid for every speaker that is traveling to the conference. I’ve seen behind the curtain. I know the economics of conferences. This should be the first item in the budget.
 
-_(Work in progress)_
+Sound good? Great! [Email me](mailto:zachleatherman@gmail.com) and we can get started!
 
-_Heavily inspired by [Ethan Marcotte’s <u>My Questions for Event Organizers</u>](https://ethanmarcotte.com/wrote/my-questions-for-event-organizers/)._
+If you’re looking for Bio text and pictures, head on over to my [About page](/web/about/).
+
+---
+
+* _This page should be considered a living document. Last updated {{ "now" | date: "%Y-%m-%d" }}_
+* _Heavily inspired by [Ethan Marcotte’s <u>My Questions for Event Organizers</u>](https://ethanmarcotte.com/wrote/my-questions-for-event-organizers/)._
