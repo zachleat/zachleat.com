@@ -1,6 +1,7 @@
 ---
 title: I Can Say Words Out Loud At Your Event
 layout: page
+date: Last Modified
 permalink: /speaking/inquiries/
 ---
 
@@ -19,5 +20,7 @@ If you’re looking for Bio text and pictures, head on over to my [About page](/
 
 ---
 
-* _This page should be considered a living document. Last updated {{ "now" | date: "%Y-%m-%d" }}_
-* _Heavily inspired by [Ethan Marcotte’s <u>My Questions for Event Organizers</u>](https://ethanmarcotte.com/wrote/my-questions-for-event-organizers/)._
+* _This page should be considered a living document._
+* _Last updated {{ page.date | date: "%Y-%m-%d" }}_
+
+_Heavily inspired by [Ethan Marcotte’s <u>My Questions for Event Organizers</u>](https://ethanmarcotte.com/wrote/my-questions-for-event-organizers/)._
