@@ -7,9 +7,11 @@ categories:
   - presentations
 tags:
   - video
-  - external
-external_url: 'https://beyondcode.tv/zach-leatherman/'
 medialength: 3 min
 ---
 
-[Listen to the Interview on beyondcode.tv](https://beyondcode.tv/zach-leatherman/) (2:52) <span class="tag video">Video</span>
+[Watch the Interview on YouTube](https://www.youtube.com/watch?v=WokZgLqX_e8) (2:52) (or embedded below)
+
+{% youtubeEmbed "WokZgLqX_e8" %}
+
+* Check out the [the Beyond Code Season 4 playlist](https://www.youtube.com/watch?v=opJvhfyz-Fo&list=PLCzseuA9sYreUnA0HXg220O7eIr2NB1IY)
