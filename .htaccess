@@ -146,3 +146,9 @@ Header append Cache-Control "public"
 # static content.
 # developer.yahoo.com/performance/rules.html#etags
 FileETag None
+
+# ----------------------------------------------------------------------
+# 404 not found page
+# ----------------------------------------------------------------------
+
+ErrorDocument 404 /web/404/index.html
