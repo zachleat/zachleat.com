@@ -4,6 +4,7 @@ permalink: talkscript-podcast/
 tags:
   - speaking
   - audio
+  - nejsconf
 medialength: 34 min
 ---
 
