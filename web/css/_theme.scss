@@ -515,9 +515,6 @@ pre {
 	white-space: -pre-wrap;
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
-	-moz-tab-size: 2;
-	-o-tab-size: 2;
-	tab-size: 2;
 
 	@include unhyphenate;
 
@@ -542,6 +539,22 @@ pre > code {
 	}
 	.livedemo pre {
 		border-radius: 0;
+	}
+}
+
+pre {
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+}
+@media (min-width: 34.375em) { /* 550px */
+	pre {
+		tab-size: 3;
+	}
+}
+@media (min-width: 48em) { /* 768px */
+	pre {
+		tab-size: 4;
 	}
 }
 
