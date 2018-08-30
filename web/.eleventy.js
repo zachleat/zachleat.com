@@ -140,6 +140,20 @@ module.exports = function(eleventyConfig) {
 		}
 	});
 
+	eleventyConfig.addCollection("latestPosts", function(collection) {
+		let posts = collection.getSortedByDate().reverse();
+		let items = [];
+		for( let item of posts ) {
+			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") ) {
+				items.push( item );
+				if( items.length >= 5 ) {
+					return items;
+				}
+			}
+		}
+	});
+
+
 	// font-loading category mapped to collection
 	eleventyConfig.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {

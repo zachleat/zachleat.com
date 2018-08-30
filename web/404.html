@@ -1,0 +1,38 @@
+---
+title: Not Found
+layout: default
+tmpl: list
+---
+
+<div class="maxwidth-list">
+	<article>
+		<h1 class="primary-title">{{ title }}</h1>
+		<p>We couldn’t find what you were looking for—sorry!<p>
+		<p>I wonder if I can convert you to read one of these blog posts instead without it coming off as scammy and awkward.</p>
+
+
+		<hr style="margin-top: 10vw">
+
+		<h2><a href="/web/">Latest</a></h2>
+		<ol class="posts">
+			{% for post in collections.latestPosts %}
+				{% if forloop.index <= 3 %}
+				{% include post-list-entry.html, ignoreYear: "true" %}
+				{% endif %}
+			{% endfor %}
+		</ol>
+
+		<h2><a href="/web/best-of/">Popular 🔥</a></h2>
+		<ol class="posts">
+			{% for post in collections.popularPostsRanked %}
+				{% if forloop.index <= 3 %}
+				{% include post-list-entry.html, ignoreYear: "true" %}
+				{% endif %}
+			{% endfor %}
+		</ol>
+
+		<article>
+			{% include about.html %}
+		</article>
+	</article>
+</div><!-- /.maxwidth-list -->
