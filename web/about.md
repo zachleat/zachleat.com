@@ -5,14 +5,7 @@ layout: page
 
 This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zachleatherman@gmail.com). Résumé available upon request.
 
-<span class="social">
-	<a href="https://twitter.com/zachleat" class="social_icon icon-twitter" title="@zachleat on Twitter">Twitter</a>
-	<a href="https://www.npmjs.com/~zachleat" class="social_icon icon-npm" title="@zachleat on npm">npm</a>
-	<a href="https://github.com/zachleat/" class="social_icon icon-github" title="@zachleat on GitHub">GitHub</a>
-	<a href="http://www.filamentgroup.com/" class="social_icon icon-filamentgroup">Filament Group</a>
-	<a href="http://nebraskajs.com/" class="social_icon icon-nebraskajs">NebraskaJS</a>
-	<a href="/web/feed/" class="social_icon icon-feed" title="Zach Leatherman’s RSS Feed">RSS</a>
-</span><!-- /.social -->
+{% include social.html %}
 
 <img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" style="max-width: 300px; border-radius: 50%; margin: 2em auto 0; display: block">
 
