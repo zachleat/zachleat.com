@@ -160,12 +160,13 @@ figcaption strong,
 	padding: 0;
 	background-color: #fff;
 	color: $textColor;
-	font-size: 1.1875em;
+	font-size: 1.1875em; /* 19px /16 */
 	line-height: 165%;
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
 }
+
 h1,
 h2,
 h3,
@@ -196,6 +197,16 @@ h5 {
 		margin-bottom: 0;
 	}
 }
+@media (min-width: 64em) { /* 1024px */
+	.tmpl-page .content {
+		font-size: 1.3125em; /* 21px /16 */
+	}
+}
+@media (min-width: 75em) { /* 1200px */
+	.tmpl-page .content {
+		font-size: 1.4375em; /* 23px /16 */
+	}
+}
 
 
 /* Content */
@@ -209,8 +220,11 @@ h5 {
 		padding-left: 0;
 	}
 }
+
 /* Full width images */
 @supports (display: block) {
+	$primaryMaxWidth: 895px;
+
 	@media (max-width: 36.75em) {
 		.content img.primary,
 		.content .fullwidth,
@@ -226,29 +240,51 @@ h5 {
 		.content .fullwidth,
 		.content pre:not(.fullwidthexempt) {
 			margin-left: calc( -1 * ( 100vw - 565px ) / 2 );
-			max-width: none;
 			width: calc( 100vw );
 		}
 	}
 	@media (min-width: $twoColLayoutMinWidth) {
+		/* 323px is the width of everything but the image: rail left padding, right padding, etc */
 		.content img.primary,
 		.content .fullwidth,
 		.content pre:not(.fullwidthexempt) {
 			// Add in rail
 			margin-left: calc( -1 * ( 100vw - 323px - 565px ) / 2 );
-			max-width: 1104.375px;
+			max-width: $primaryMaxWidth;
 			width: calc( 100vw - 323px );
 		}
 	}
-}
-@media (min-width: 78.3125em) {
-	.content img.primary,
-	.content .fullwidth,
-	.content pre:not(.fullwidthexempt) {
-		// Add in rail
-		margin-left: -184.75px;
+	@media (min-width: 64em) { /* 1024px */
+		.content img.primary,
+		.content .fullwidth,
+		.content pre:not(.fullwidthexempt) {
+			margin-left: calc( -1 * ( 100vw - 323px - 651px ) / 2 );
+		}
+	}
+	@media (min-width: 75em) { /* 1200px */
+		.content img.primary,
+		.content .fullwidth,
+		.content pre:not(.fullwidthexempt) {
+			margin-left: calc( -1 * ( 100vw - 323px - 748px ) / 2 ); /* 748 is an estimate */
+		}
+	}
+
+	@media (min-width: 81.25em) { /* 1300px */
+		.content img.primary,
+		.content .fullwidth,
+		.content pre:not(.fullwidthexempt) {
+			margin-left: -105.5px; /* estimate */
+			max-width: none;
+			width: $primaryMaxWidth; /* 713px + 91 * 2 */
+		}
+	}
+
+	/* Don’t fullwidth things inside of lists */
+	.content li pre:not(.thisisaspecificitybooster) {
+		margin-left: 0;
+		margin-right: 0;
+		width: auto;
 		max-width: none;
-		width: 930px;
 	}
 }
 
