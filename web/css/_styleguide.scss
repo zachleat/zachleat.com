@@ -17,6 +17,30 @@
 .font-latosubset *:after {
 	font-family: LatoSubset, $fallbackSystemFont !important;
 }
+.font-lato,
+.font-lato *,
+.font-lato *:before,
+.font-lato *:after {
+	font-family: Lato, $fallbackSystemFont !important;
+}
+.font-latobold,
+.font-latobold *,
+.font-latobold *:before,
+.font-latobold *:after {
+	font-family: LatoBold, $fallbackSystemFont !important;
+}
+.font-latoitalic,
+.font-latoitalic *,
+.font-latoitalic *:before,
+.font-latoitalic *:after {
+	font-family: LatoItalic, $fallbackSystemFont !important;
+}
+.font-latobolditalic,
+.font-latobolditalic *,
+.font-latobolditalic *:before,
+.font-latobolditalic *:after {
+	font-family: LatoItalic, $fallbackSystemFont !important;
+}
 .fontloademu,
 .fontloademu * {
 	font-family: LatoItalic, sans-serif !important;

@@ -1177,6 +1177,9 @@ th.numeric {
 	color: #8ac7db;
 	@include webfont;
 }
+.livedemo-mixed:after {
+	text-transform: none;
+}
 .livedemo.left:after {
 	right: auto;
 	left: .5rem;
