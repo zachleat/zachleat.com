@@ -241,6 +241,7 @@ h5 {
 		.content pre:not(.fullwidthexempt) {
 			margin-left: calc( -1 * ( 100vw - 565px ) / 2 );
 			width: calc( 100vw );
+			max-width: none;
 		}
 	}
 	@media (min-width: $twoColLayoutMinWidth) {
@@ -493,14 +494,14 @@ h5 {
 	}
 	html:not(.wider) .primary-title {
 		font-size: 7.5vw;
-		margin-left: calc((100vw - 100% - 24.5rem) * -.5);
-		width: calc(100vw - 24.5rem);
+		margin-left: calc((100vw - 100% - 26.5rem) * -.5);
+		width: calc(100vw - 26.5rem);
 		padding-left: 0;
 		padding-right: 0;
 	}
 	html:not(.wider).tmpl-list .primary-title {
-		margin-left: calc((100vw - 100% - 20.8125rem) * -.5);
-		width: calc(100vw - 20.8125rem);
+		margin-left: calc((100vw - 100% - 23.8125rem) * -.5);
+		width: calc(100vw - 23.8125rem);
 	}
 }
 
