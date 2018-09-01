@@ -51,4 +51,4 @@ _(Behavior after a Web Font has loaded)_
 Each independent `@font-face` block has its own loading life-cycle. Its own FOIT, its own FOUT, its own repaint and reflow. When using two or more web fonts for a single family, its important to group the repaints together to reduce reflow of text on your page.
 
 * _Strategy:_ Use the [CSS Font Loading API](/web/comprehensive-webfonts/#fout-class) to group your repaints.
-* _Strategy:_ Use Variable fonts
+* _Strategy:_ Use [Variable fonts](https://medium.com/variable-fonts/https-medium-com-tiro-introducing-opentype-variable-fonts-12ba6cd2369) (Browser support at [Can I Use: Variable Fonts](https://caniuse.com/#feat=variable-fonts))
