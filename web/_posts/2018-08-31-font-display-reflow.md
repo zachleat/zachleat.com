@@ -3,6 +3,8 @@ title: The Problem with font-display and Reflow
 permalink: /font-display-reflow/
 tags:
   - font-loading
+  - popular-posts
+postRank: 4
 ---
 
 <style>
