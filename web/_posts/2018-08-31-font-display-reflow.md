@@ -28,7 +28,15 @@ I’m sure you’ve been browsing around the web, halfway through reading your f
 
 ## font-display
 
-I love `font-display`. It’s easy to use. It’s the go-to for [improving your web font loading quickly and easily](/web/23-minutes/). It hasn’t really been picked up by any third party font hosting services yet, but we can’t really blame `font-display` for that can we? `font-display` pairs great with preload. It shines brightest if you’re only using one web font on your page. However, if you’re using multiple web fonts for a single family—things may not operate as smoothly as we would like—especially if you’re trying to reduce movement during page load (the last item on [the checklist](/web/font-checklist/)).
+I love `font-display`. It’s easy to use.
+
+* It’s the go-to for [improving your web font loading quickly and easily](/web/23-minutes/).
+* It hasn’t really been picked up by any third party font hosting services yet, but we can’t really blame `font-display` for that can we?
+* `font-display` pairs great with preload (well, [mostly](/web/preload-font-display-optional/))
+* It shines brightest if you’re only using one web font on your page.
+* Some day I may write an article about how it was absolutely not designed for icon fonts (sorry—that day is not today).
+
+If you’re using multiple web fonts for a single family—things may not operate as smoothly as we would like—especially if you’re trying to reduce movement during page load (see the last item on [the checklist](/web/font-checklist/)).
 
 Consider this [`font-display: swap` demo from Web Font Loading Recipes](https://github.com/zachleat/web-font-loading-recipes#font-display-swap) ([Demo](https://www.zachleat.com/web-fonts/demos/font-display.html)):
 
@@ -75,16 +83,14 @@ What does this mean? Each web font has its own loading lifecycle and may have it
 1. The easiest way to fix this is to _use `font-display: optional`_. This will use the fallback font on first render and only grab web fonts stored in the cache. In theory this means that your web fonts will only be used if they are available in the first 100ms, greatly reducing the impact from reflow or eliminating it altogether. Unfortunately this means no web fonts on empty cache views.
 1. Another way to fix this is to _use a Variable Font_! Variable fonts, while increasing in popularity, are still somewhat of a rarity. They are also bigger than their non-variable counterparts but due to their single-file nature your repaints will be grouped for free. Even better: use variable fonts with `font-display: swap` for FOUT _and_ a single grouped repaint. One more nuanced drawback to variable fonts is that the extra file size weight is loaded serially, and not in parallel as the waterfall screenshot of non-variable web fonts above depicted.
 1. Another, more complex solution that will offer web fonts on an empty cache is to _use the CSS Font Loading API_. Use the [FOUT with a Class](/web/comprehensive-webfonts/#fout-class) approach to group web font renders for a single family into a single repaint. For extra points, go even further and use a font-synthesis FOFT approach to all-but-eliminate noticeable reflow from your page **(even on empty cache views)**. Try _[The Compromise](/web/the-compromise/)_!
-1. One way to minimize the problem is to try to match the metrics (dimensions) of your fallback text as closely as possible to your web font. Check out the [Font Style Matcher, created by Monica Dinculescu](https://meowni.ca/font-style-matcher/), to help you with this.
-1. In this same vein, there is the notion of [Metric compatible fonts](https://wiki.archlinux.org/index.php/Metric-compatible_fonts), designed to match another font’s dimensions perfectly. It’s unlikely that the web font you’ve chosen has a metric compatible system font available for use—they’re quite rare—but they do exist!
+1. One way to minimize the problem is to try to match the metrics (dimensions) of your fallback text as closely as possible to your web font. Check out the [Font Style Matcher, created by Monica Dinculescu](https://meowni.ca/font-style-matcher/), to help you with this. Note that this method requires JavaScript and wouldn’t work with just `font-display` alone.
+1. In this same vein, there are [Metric compatible fonts](https://wiki.archlinux.org/index.php/Metric-compatible_fonts), designed to match another font’s dimensions perfectly. It’s unlikely that the web font you’ve chosen has a metric compatible system font available for use—they’re quite rare—but they do exist! Using a Metric compatible font would not require JavaScript and _would_ work with `font-display` alone.
 
 Go forth and web font, y’all!
 
 ## Related
 
-* [A Comprehensive Guide to Font Loading Strategies](/web/comprehensive-webfonts/)
-* [The Web Font Loading Glossary](/web/webfont-glossary/)
-* [Web Font Loading Recipes](https://github.com/zachleat/web-font-loading-recipes) _(Code examples)_
+{% include highlighted-fonts-articles.md %}
 
 <script>
 if( "fonts" in document ) {
