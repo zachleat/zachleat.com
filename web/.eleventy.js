@@ -93,6 +93,10 @@ module.exports = function(eleventyConfig) {
 		}).join("​—​");
 	});
 
+	eleventyConfig.addLiquidFilter("emoji", function(content) {
+		return `<span aria-hidden="true">${content}`;
+	});
+
 	eleventyConfig.addLiquidFilter("wordcount", function(content) {
 		let words = content.split(" ").length;
 		let wordsLabel = "word" + (words !== 1 ? "s" : "");

@@ -34,14 +34,14 @@
 		{%- if post.data.tags contains 'nejsconf' %}<a href="/web/nejsconf/" class="tag">NEJS CONF</a>{% endif -%}
 		{%- if post.data.tags contains 'conference' -%}
 			<a class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>Conference{% if post.data.tags contains 'speaking' %} Speaking{% elsif post.data.tags contains 'organizing' %} Organizing{% endif %}</a>
-			{%- if post.data.event_date %}<span class="tag tag-event">on 📅 {{ post.data.event_date }}</span>{% endif -%}
+			{%- if post.data.event_date %}<span class="tag tag-event">on {{ "📅" | emoji }} {{ post.data.event_date }}</span>{% endif -%}
 		{%- elsif post.data.tags contains 'presentations' or post.data.tags contains 'speaking' or post.data.tags contains 'video' or post.data.tags contains 'audio' -%}
 			<a href="/web/speaking/" class="tag">Speaking</a>
-			{%- if post.data.event_date %}<span class="tag tag-event">on 📅 {{ post.data.event_date }}</span>{% endif -%}
+			{%- if post.data.event_date %}<span class="tag tag-event">on {{ "📅" | emoji }} {{ post.data.event_date }}</span>{% endif -%}
 		{%- endif -%}
 		{%- if post.data.tags contains 'video' %}<span class="tag video">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Video</span>{% endif -%}
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Audio</span>{% endif -%}
-		{%- if post.data.postRank or post.data.postRankTotalViews %}<a href="/web/best-of/" class="tag postrank" title="Popularity Ranking">{% if post.data.postRankTotalViews and showRankTotalViews == "true" %}☀️ #{{ post.data.postRankTotalViews }}{% elsif post.data.postRank %}🔥 #{{ post.data.postRank }}{% endif %}</a>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
+		{%- if post.data.postRank or post.data.postRankTotalViews %}<a href="/web/best-of/" class="tag postrank" title="Popularity Ranking">{% if post.data.postRankTotalViews and showRankTotalViews == "true" %}{{ "☀️" | emoji }} #{{ post.data.postRankTotalViews }}{% elsif post.data.postRank %}{{ "🔥" | emoji }}</span> #{{ post.data.postRank }}{% endif %}</a>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
 		{%- if post.data.tags contains 'highlight' %}<a href="/web/highlights/" class="tag highlight" title="Highlight"><span class="highlight-label">Highlight </span><span class="highlight-star" aria-hidden="true">★</span></a>{% endif -%}
 	</span>
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>
