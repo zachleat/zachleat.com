@@ -4,7 +4,7 @@ permalink: /obnoxiously-readable/
 tags:
   - font-loading
   - popular-posts
-postRank: 6
+postRank: 7
 ---
 
 Ever since I created [BigText](/web/bigtext-makes-text-big/) over _seven years_ ago, I’ve been a little bit obsessed with beautifully large text. Unfortunately my own blog had post titles that were—to be honest—a little bland. I wanted to spice it up a bit and move from fixed text sizes to dynamic text that grows with the viewport size. I’ve seen many iterations of this approach using `resize` handlers in JavaScript:
