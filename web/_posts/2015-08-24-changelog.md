@@ -8,6 +8,7 @@ categories:
 tags:
   - audio
   - external
+  - nejsconf
 external_url: 'https://changelog.com/166/'
 medialength: 69 min
 ---
