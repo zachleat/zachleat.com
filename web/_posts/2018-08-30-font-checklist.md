@@ -4,7 +4,7 @@ permalink: /font-checklist/
 tags:
   - font-loading
   - popular-posts
-postRank: 2
+postRank: 1
 ---
 
 <style>
