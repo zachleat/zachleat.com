@@ -23,23 +23,12 @@ external_url: 'https://medium.com/@11ty/making-a-simple-web-site-with-the-simple
 		<p class="graf graf--p graf-after--p" id="16dd">Full finished source code for Level 1 of this tutorial is <a class="markup--anchor markup--p-anchor" data-href="https://github.com/11ty/giffleball/tree/level-1" href="https://github.com/11ty/giffleball/tree/level-1" rel="noopener" target="_blank">available on GitHub</a>.</p>
 		<h4 class="graf graf--h4 graf-after--p" id="69fe">Create the&nbsp;files</h4>
 		<p class="graf graf--p graf-after--h4" id="aa1b">Make a directory for our beautiful new web site. <em class="markup--em markup--p-em">(Do not include the</em> <code class="markup--code markup--p-code"><em class="markup--em markup--p-em">~ $</em></code> <em class="markup--em markup--p-em">when running the command)</em></p>
-{% highlight-plain %}~ $ mkdir giffleball{% endhighlight %}
+{% highlight text %}
+~ $ mkdir giffleball
+{% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="6201">Let’s add some images to our site. Attached here are a choice selection of bird-themed GIF-gems from the esteemed bukk.it itself.</p>
 	</div>
-	<div class="section-inner sectionLayout--outsetRow" data-paragraph-count="2">
-		<figure class="graf graf--figure graf--layoutOutsetRow is-partialWidth graf-after--p" id="41a8">
-			<img class="graf-image" data-height="473" data-image-id="1*9_SoEA-aNHeVF8QKzEUhiw.jpeg" data-width="660" src="https://cdn-images-1.medium.com/max/600/1*9_SoEA-aNHeVF8QKzEUhiw.jpeg">
-			<figcaption>
-				via <a class="markup--anchor markup--figure-anchor" data-href="https://bukk.it/%e2%80%a6.jpg" href="https://bukk.it/%e2%80%a6.jpg" rel="nofollow noopener" target="_blank">https://bukk.it/%e2%80%a6.jpg</a>
-			</figcaption>
-		</figure>
-		<figure class="graf graf--figure graf--layoutOutsetRowContinue is-partialWidth graf-after--figure" id="ae3b">
-			<img class="graf-image" data-height="502" data-image-id="1*JIkW2kqH59V9KaKsjEKqdQ.jpeg" data-width="600" src="https://cdn-images-1.medium.com/max/600/1*JIkW2kqH59V9KaKsjEKqdQ.jpeg">
-			<figcaption>
-				via <a class="markup--anchor markup--figure-anchor" data-href="https://bukk.it/%3f%3f%3f.jpg" href="https://bukk.it/%3f%3f%3f.jpg" rel="nofollow noopener" target="_blank">https://bukk.it/%3f%3f%3f.jpg</a>
-			</figcaption>
-		</figure>
-	</div>
+
 	<div class="section-inner sectionLayout--insetColumn">
 		<figure class="graf graf--figure graf-after--figure" id="3282">
 			<img class="graf-image" data-height="25" data-image-id="1*E9LIfVl7pcVu3_moXc743w.gif" data-width="35" src="https://cdn-images-1.medium.com/max/800/1*E9LIfVl7pcVu3_moXc743w.gif">
@@ -48,7 +37,7 @@ external_url: 'https://medium.com/@11ty/making-a-simple-web-site-with-the-simple
 			</figcaption>
 		</figure>
 		<p class="graf graf--p graf-after--figure" id="deca">Save these image files into an <code class="markup--code markup--p-code">img</code> folder inside of our<code class="markup--code markup--p-code">giffleball</code> directory.</p>
-{% highlight-plain shell 1-4 -1 %}
+{% highlight bash 1-4 -1 %}
 giffleball/
   img/             *new
     ???.jpg        *new
@@ -57,7 +46,7 @@ giffleball/
 {% endhighlight %}
 		<h4 class="graf graf--h4 graf-after--pre" id="8627">Create a&nbsp;template</h4>
 		<p class="graf graf--p graf-after--h4" id="d26f">Let’s make a template! Create a file called <code class="markup--code markup--p-code">index.html</code> in the <code class="markup--code markup--p-code">giffleball</code> directory.</p>
-{% highlight-plain shell 1 -1 %}
+{% highlight bash 1 -1 %}
 giffleball/
   index.html       *new
   img/
@@ -66,73 +55,87 @@ giffleball/
     parrot.gif
 {% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="46a4">Let’s add a list with some links to our GIFS to the <code class="markup--code markup--p-code">index.html</code> file:</p>
-{% highlight-plain html 9-11 %}&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
- &lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Giffleball&lt;/title&gt;
- &lt;/head&gt;
- &lt;body&gt;
-  &lt;h1&gt;Giffleball&lt;/h1&gt;
-  &lt;ul&gt;
-   &lt;li&gt;&lt;a href=&quot;img/???.jpg&quot;&gt;???.jpg&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href=&quot;img/&hellip;.jpg&quot;&gt;&hellip;.jpg&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href=&quot;img/parrot.gif&quot;&gt;parrot.gif&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
- &lt;/body&gt;
-&lt;/html&gt;{% endhighlight %}
+{% highlight html 9-11 %}
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Giffleball</title>
+ </head>
+ <body>
+  <h1>Giffleball</h1>
+  <ul>
+   <li><a href="img/???.jpg">???.jpg</a></li>
+   <li><a href="img/….jpg">….jpg</a></li>
+   <li><a href="img/parrot.gif">parrot.gif</a></li>
+  </ul>
+ </body>
+</html>
+{% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="eac5">So far, nothing special going on here. But, we can run <code class="markup--code markup--p-code">eleventy</code> and generate our site anyway. We’ll pass in the extensions that we want eleventy to process with<code class="markup--code markup--p-code">--formats</code>.</p>
-{% highlight-plain shell 0-1 %}~ $ cd giffleball
+{% highlight bash 0-1 %}
+~ $ cd giffleball
 ~/giffleball $ eleventy --formats=html,gif,jpg
 Writing _site/index.html from ./index.html.
-Wrote 1 file in 0.07 seconds{% endhighlight %}
+Wrote 1 file in 0.07 seconds
+{% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="c0a2">This created our new web site in the <code class="markup--code markup--p-code">_site</code> directory. If you want it to go somewhere else, simply pass a new directory to <code class="markup--code markup--p-code">--output</code>:</p>
-{% highlight-plain shell 0 %}~/giffleball $ eleventy --output=somewhereelse
+{% highlight bash 0 %}
+~/giffleball $ eleventy --output=somewhereelse
 Writing somewhereelse/index.html from ./index.html.
-Wrote 1 file in 0.07 seconds{% endhighlight %}
+Wrote 1 file in 0.07 seconds
+{% endhighlight %}
 		<h3 class="graf graf--h3 graf-after--pre" id="d1c2">Make it Data&nbsp;Driven</h3>
 		<p class="graf graf--p graf-after--h3" id="071c">Okay, so far we could have just loaded up our <code class="markup--code markup--p-code">index.html</code> in the browser and it would have looked the same. The output matched the input. So, let’s layer on some <code class="markup--code markup--p-code">eleventy</code> things. Let’s move some of the site data into our front matter:</p>
-{% highlight-plain none 0-6 -1 %}---
+{% highlight text 0-6 -1 %}
+---
 title: Giffleball
 images:
   - ???.jpg
   - ….jpg
   - parrot.gif
 ---
-&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
- &lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;{{ title }}&lt;/title&gt;
- &lt;/head&gt;
- &lt;body&gt;
-  &lt;h1&gt;{{ title }}&lt;/h1&gt;
-  &lt;ul&gt;
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+ </head>
+ <body>
+  <h1>{{ title }}</h1>
+  <ul>
   {% for filename in images %}
-   &lt;li&gt;&lt;a href=&quot;img/{{ filename }}&quot;&gt;{{ filename }}&lt;/a&gt;&lt;/li&gt;
+   <li><a href="img/{{ filename }}">{{ filename }}</a></li>
   {% endfor %}
-  &lt;/ul&gt;
- &lt;/body&gt;
- &lt;/html&gt;{% endhighlight %}
+  </ul>
+ </body>
+ </html>
+ {% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="659a">We’ve moved our site’s title (used in two different places) to our front matter and the list of images as well.</p>
 		<p class="graf graf--p graf-after--p" id="b9fb">By default in Eleventy, the <code class="markup--code markup--p-code">liquid</code> templating engine syntax is available on HTML and Markdown files. Eleventy supports a wide variety of templating engine syntaxes (peep <a class="markup--anchor markup--p-anchor" data-href="https://github.com/11ty/eleventy/#eleventy-" href="https://github.com/11ty/eleventy/#eleventy-" rel="noopener" target="_blank">the full list</a>), and those are available when you use specific file extensions. For example, our <code class="markup--code markup--p-code">index.html</code> could have been named <code class="markup--code markup--p-code">index.liquid</code> and it would be functionally equivalent:</p>
-{% highlight-plain shell 0-1 %}~/giffleball $ mv index.html index.liquid
+{% highlight bash 0-1 %}
+~/giffleball $ mv index.html index.liquid
 ~/giffleball $ eleventy --formats=liquid,html,jpg,gif
 Writing _site/index.html from ./index.liquid.
-Wrote 1 file in 0.07 seconds{% endhighlight %}
+Wrote 1 file in 0.07 seconds
+{% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="a00c">We also allow you to change the defaults, of course, but we’ll get to that in a future tutorial (or you can skip ahead and <a class="markup--anchor markup--p-anchor" data-href="https://github.com/11ty/eleventy/#configuration-optional" href="https://github.com/11ty/eleventy/#configuration-optional" rel="noopener" target="_blank">peep the README</a>).</p>
 		<p class="graf graf--p graf-after--p" id="a78a">Using a templating engine has a few benefits:</p>
 		<ol class="postList">
 			<li class="graf graf--li graf-after--p" id="48b7">Change your data in one place. To change our site’s name, we can do it in one place (the front matter) instead of two. To add or remove images, we don’t have to edit the template HTML.</li>
 			<li class="graf graf--li graf-after--li" id="121f">Change the markup for your image links once. Say we wanted to modify the HTML for our list items. Because we’re data-driven here, we can modify our template HTML in our loop instead of having to modify threeor more <code class="markup--code markup--li-code">&lt;li&gt;</code> entries individually. Three isn’t bad. But what if our site grows to 300 images?</li>
 			<li class="graf graf--li graf-after--li" id="247b">Special characters in the file names. Looking in the browser, it seems like&nbsp;<code class="markup--code markup--li-code">???.jpg</code> isn’t really playing nice with my web server. The file doesn’t show up correctly. What if our file names have weird characters that aren’t supported by our web browser or web server? We need to escape them! The Liquid templating syntax has just the thing: a <code class="markup--code markup--li-code">url_encode</code> filter. Let’s update our template to use it:
-{% highlight-plain html -1 1 %}{% for filename in images %}
-  &lt;li&gt;&lt;a href=&quot;img/{{ filename }}&quot;&gt;{{ filename }}&lt;/a&gt;&lt;/li&gt;
-{% endfor %}{% endhighlight %}
+{% highlight html -1 1 %}
+{% for filename in images %}
+  <li><a href="img/{{ filename }}">{{ filename }}</a></li>
+{% endfor %}
+{% endhighlight %}
 becomes:
-{% highlight-plain html 1 -1 %}{% for filename in images %}
-  &lt;li&gt;&lt;a href=&quot;img/{{ filename | url_encode }}&quot;&gt;{{ filename }}&lt;/a&gt;&lt;/li&gt;
-{% endfor %}{% endhighlight %}
+{% highlight html 1 -1 %}
+{% for filename in images %}
+  <li><a href="img/{{ filename | url_encode }}">{{ filename }}</a></li>
+{% endfor %}
+{% endhighlight %}
 Ah, much better. Works perfectly.</li>
 		</ol>
 		<h3 class="graf graf--h3 graf-after--p" id="ff9a">Wrapping up</h3>
