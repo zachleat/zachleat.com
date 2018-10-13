@@ -7,28 +7,28 @@
 
 @font-face {
 	font-family: Lato;
-	src: url('/web/css/fonts/lato/2.0/LatoLatin-Regular.subset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/2.0/LatoLatin-Regular.subset.zopfli.woff') format('woff');
+	src: url('/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.woff2') format('woff2'),
+			 url('/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.zopfli.woff') format('woff');
 }
 
 @font-face {
 	font-family: LatoBold;
-	src: url('/web/css/fonts/lato/2.0/LatoLatin-Semibold.subset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/2.0/LatoLatin-Semibold.subset.zopfli.woff') format('woff');
+	src: url('/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.woff2') format('woff2'),
+			 url('/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.zopfli.woff') format('woff');
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: LatoItalic;
-	src: url('/web/css/fonts/lato/2.0/LatoLatin-Italic.subset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/2.0/LatoLatin-Italic.subset.zopfli.woff') format('woff');
+	src: url('/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.woff2') format('woff2'),
+			 url('/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.zopfli.woff') format('woff');
 	font-style: italic;
 }
 
 @font-face {
 	font-family: LatoBoldItalic;
-	src: url('/web/css/fonts/lato/2.0/LatoLatin-SemiboldItalic.subset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/2.0/LatoLatin-SemiboldItalic.subset.zopfli.woff') format('woff');
+	src: url('/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.woff2') format('woff2'),
+			 url('/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.zopfli.woff') format('woff');
 	font-weight: 700;
 	font-style: italic;
 }
