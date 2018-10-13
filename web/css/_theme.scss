@@ -798,6 +798,10 @@ th.numeric {
 		margin-bottom: 5rem;
 	}
 }
+.sub em span {
+	font-style: normal;
+	font-family: sans-serif;
+}
 .sub em:empty {
 	display: none;
 }

@@ -7,14 +7,14 @@ layout: default
 	<div class="sub">
 		<em class="date">{{ page.date | readableDate }}</em>
 		<em>Zach Leatherman</em>
-{% if tags contains 'video' %}
-		<em class="words">Watch in {{ medialength }}</em>
-{% else %}
-		<em class="words">{% if showWords %}{{ content | wordcount }}{% else %}{{ content | readingtime }}{% endif %}</em>
-{% endif %}
+		<div>
 {% if postRank %}
-		<em class="words"><a href="/web/best-of/">#{{ postRank }} most popular</a></em>
+			<em class="words"><a href="/web/best-of/">#{{ postRank }} popular</a></em>
 {% endif %}
+{% if tags contains 'video' %}
+			<em class="words">Watch in {{ medialength }}</em>
+{% else %}{{ content | readingtime }}{% endif %}
+		</div>
 	</div>
 	{% if deprecated %}
 	<article>

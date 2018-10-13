@@ -10,6 +10,10 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.setDynamicPermalinks(false);
 
+	eleventyConfig.setLiquidOptions({
+		strict_filters: true
+	});
+
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.liquid');
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
@@ -108,12 +112,14 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidFilter("readingtime", function(content) {
-		let wordsPerMinute = 100;
+		// SLOWWW
 		// let words = stripHtml(content).split(" ").length;
-		let words = content.split(" ").length;
-		let minutes = Math.floor(words / wordsPerMinute);
+		let words = Math.floor(content.split(" ").length / 10) * 10;
+		if( words && words > 300 ) {
+			return `About ${words} ${words.length != 1 ? "words" : "word"}`;
+		}
 
-		return (minutes > 0 ? `${minutes} min read` : "");
+		return "";
 	});
 
 	eleventyConfig.addCollection("posts", function(collection) {

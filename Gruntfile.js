@@ -224,9 +224,10 @@ module.exports = function(grunt) {
 			},
 			content: {
 				files: [
+					'<%= config.root %>**/*.liquid',
+					'<%= config.root %>**/*.njk',
 					'<%= config.root %>**/*.html',
 					'<%= config.root %>**/*.md',
-					'<%= config.root %>_includes/**/*',
 					'!<%= config.root %>_site/**/*' ],
 				tasks: ['content']
 			}
