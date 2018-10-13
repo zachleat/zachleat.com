@@ -30,6 +30,7 @@ module.exports = function(grunt) {
 				src: [
 					// '<%= config.jsSrc %>reflow-log.js',
 					'<%= config.jsSrc %>initial.js',
+					'<%= config.jsSrc %>serviceworker-loader.js',
 					'<%= config.jsSrc %>fonts.js'
 				],
 				dest: '<%= config.distFolder %>initial.js'

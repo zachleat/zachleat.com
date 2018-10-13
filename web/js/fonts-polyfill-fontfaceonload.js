@@ -1,11 +1,11 @@
 /* Fonts */
 ;(function( doc ) {
 	if( "fonts" in document ||
+		navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.state === "activated" ||
 		sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {
 		return;
 	}
 
-	var docEl = doc.documentElement;
 	var stage2 = {
 		Lato: {},
 		LatoBold: {

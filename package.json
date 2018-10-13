@@ -16,6 +16,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
     "cheerio": "^1.0.0-rc.2",
     "debug": "^3.1.0",
+    "fast-glob": "^2.2.3",
     "gray-matter": "^3.1.1",
     "grunt": "~1.0.1",
     "grunt-cli": "~1.2.0",
