@@ -37,7 +37,7 @@ This means absolutely **no invisible text**. This is known as the [flash of invi
 * _Strategy:_ Use [`font-display`](/web/comprehensive-webfonts/#font-display)
 * _Strategy:_ Use the [CSS Font Loading API](/web/comprehensive-webfonts/#fout-class)
 
-### <label><input type="checkbox" class="post-checklist" checked> 🐢🐇 Make Fonts Smaller</label>
+### <label><input type="checkbox" class="post-checklist" checked> 🐢🐇 Make Font Files Smaller</label>
 
 _(Reduce Web Font load time)_
 
