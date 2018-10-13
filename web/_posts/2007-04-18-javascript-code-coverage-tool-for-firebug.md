@@ -8,7 +8,7 @@ tags:
   - popular-posts-total
 deprecated: true
 feedtrim: true
-postRankTotalViews: 18
+postRankTotalViews: 19
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]
