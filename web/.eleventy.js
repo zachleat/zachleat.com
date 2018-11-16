@@ -122,12 +122,18 @@ module.exports = function(eleventyConfig) {
 		return "";
 	});
 
+	function getPosts(collectionApi) {
+		return collectionApi.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
+			return !!item.data.permalink;
+		});
+	}
+
 	eleventyConfig.addCollection("posts", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*").reverse();
+		return getPosts(collection);
 	});
 
 	eleventyConfig.addCollection("feedPosts", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
+		return getPosts(collection).filter(function(item) {
 			return !item.data.tags ||
 				item.data.tags.indexOf("deprecated") === -1 &&
 				!item.data.deprecated &&

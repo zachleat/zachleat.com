@@ -234,6 +234,7 @@ module.exports = function(grunt) {
 		}
 	});
 
+	// bestof
 	grunt.task.loadTasks('tasks');
 
 	// Default task.
