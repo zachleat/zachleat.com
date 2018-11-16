@@ -4,7 +4,7 @@ permalink: /font-display-reflow/
 tags:
   - font-loading
   - popular-posts
-postRank: 5
+postRank: 7
 ---
 
 <style>
