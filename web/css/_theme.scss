@@ -969,8 +969,6 @@ th.numeric {
 	vertical-align: middle;
 	display: inline-block;
 	text-decoration: none;
-
-	@include webfontBold;
 }
 .tag-inline {
 	font-size: 12px;
