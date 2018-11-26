@@ -108,7 +108,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug) {
-		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/${slug}/" frameborder="0"></iframe></div></div>`;
+		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
 	});
 
 	eleventyConfig.addLiquidFilter("readingtime", function(content) {
