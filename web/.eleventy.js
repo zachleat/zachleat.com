@@ -111,17 +111,6 @@ module.exports = function(eleventyConfig) {
 		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
 	});
 
-	eleventyConfig.addLiquidFilter("readingtime", function(content) {
-		// SLOWWW
-		// let words = stripHtml(content).split(" ").length;
-		let words = Math.floor(content.split(" ").length / 10) * 10;
-		if( words && words > 300 ) {
-			return `About ${words} ${words.length != 1 ? "words" : "word"}`;
-		}
-
-		return "";
-	});
-
 	function getPosts(collectionApi) {
 		return collectionApi.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
 			return !!item.data.permalink;
