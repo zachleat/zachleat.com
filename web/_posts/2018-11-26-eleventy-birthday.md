@@ -15,7 +15,7 @@ The [reviews and feedback so far](https://www.11ty.io/docs/testimonials/) have b
 
 ## Project Naming
 
-Astute observers will note that the [first version](https://github.com/11ty/eleventy/commit/00ad9192605d5d501de6aae193701c5a2297ef2c) was actually called `elevenisland`. I had intended to use the abbreviation `11Il`, three distinct letters noted for their typographic confusion. Looking back on this, I think I made the right decision not to take this path.
+Astute observers will note that the [first version](https://github.com/11ty/eleventy/commit/00ad9192605d5d501de6aae193701c5a2297ef2c) was actually called `elevenisland`. I had intended to use the abbreviation `11Il`, three distinct characters noted for their typographic confusion. Looking back on this, I think I made the right decision not to take this path.
 
 Some might think that the name Eleventy is an homage to Spinal Tap (_turn it up to eleven_) or more directly, Lord of the Rings. I chose it because of a story my grandma Nonnie loved to tell about how I learned to count. Rather than move from ten to eleven like a normal child, I felt it appropriate to use the `teen` suffix for the numbers eleven and twelve, counting “ten, eleventy-teen, twelvety-teen, thirteen, …” I always liked that story and it seemed as appropriate a reason as any.
 
