@@ -25,7 +25,7 @@ His suggestion was to embed the font directly in a style block on the server ren
 	&lt;style&gt;
 	@font-face {
 		font-family: Open Sans;
-		src: url(&quot;data:application/x-font-woff;charset=utf-8;base64,...&quot;) format(&quot;woff&quot;);
+		src: url(&quot;data:font/woff;charset=utf-8;base64,…&quot;) format(&quot;woff&quot;);
 		font-weight: 400;
 		font-style: normal;
 	}
@@ -201,7 +201,7 @@ Times look marginally better here too. Huh. I think I’m gonna roll with this a
 ``` css/2
 @font-face {
 	/* In many browsers it loads the giant Data URI but isn’t able to use it */
-	src: url("data:application/font-woff2;charset=utf-8;base64,...") format("woff2"), url( /path/to/webfont.woff ) format( "woff" );
+	src: url("data:font/woff2;charset=utf-8;base64,…") format("woff2"), url( /path/to/webfont.woff ) format( "woff" );
 }
 ```
 
