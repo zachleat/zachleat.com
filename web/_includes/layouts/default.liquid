@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{% if title %}{{ title }}—zachleat.com{% else %}zachleat.com{% endif %}</title>
+		<title>{% if title %}{% if titleOverride %}{{ titleOverride }}{% else %}{{ title }}{% endif %}—zachleat.com{% else %}zachleat.com{% endif %}</title>
 		<meta property="og:title" content="{% if title %}{{ title }}—zachleat.com{% else %}zachleat.com{% endif %}">
 		<meta name="author" content="Zach Leatherman">
 		<meta property="og:site_name" content="Zach Leatherman">

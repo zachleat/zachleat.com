@@ -23,6 +23,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("wp-content");
 	eleventyConfig.addPassthroughCopy("dist");
 
+	eleventyConfig.addLiquidFilter("simpleTagStrip", str => {
+		return str.replace(/<[^>]*>/g, "");
+	});
+
 	eleventyConfig.addLiquidFilter("timePosted", date => {
 		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
 		let daysPosted = Math.round( parseFloat( numDays ) );
