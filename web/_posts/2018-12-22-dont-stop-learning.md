@@ -63,4 +63,4 @@ It’s tough to communicate all of this nuance in a single tweet. Unfortunately,
 
 If we still disagree, that’s okay. I have hope that we can disagree productively.
 
-**Keep on building, learning, and be excellent to each other, y’all.** 👍
+**Keep on building, learning, and be excellent to each other.** 👍👍👍
