@@ -3,7 +3,9 @@ title: Don’t Stop Learning <del>Frameworks</del>
 titleOverride: Don’t Stop Learning F̵r̵a̵m̵e̵w̵o̵r̵k̵s̵
 permalink: /dont-stop-learning/
 ---
-A few days ago, I read [an article](https://sizovs.net/2018/12/17/stop-learning-frameworks/). I liked it. I [shared it on Twitter](https://twitter.com/zachleat/status/1074776108422307840). I didn’t agree with everything in the blog post. In my experience if total agreement were a prerequisite to tweet, I would share zero things on Twitter (don’t get your hopes up 😇).
+A few days ago, I read [an article](https://sizovs.net/2018/12/17/stop-learning-frameworks/). I liked it. I [shared it on Twitter](https://twitter.com/zachleat/status/1074776108422307840). Some of the feedback to it was pretty negative. This post is a response to that feedback.
+
+First and foremost, I should say that I didn’t agree with everything in the blog post. If total agreement were a prerequisite to tweet, I would share zero things on Twitter (don’t get your hopes up 😇).
 
 > More fundamentals! Less frameworks!<br><br>Skills with long shelf lives (unordered):<br><br>* HTML<br>* CSS<br>* JavaScript<br>* Progressive Enhancement<br>* Accessibility<br>* Typography<br>* Usability<br>* Design<br>* Clean Code and writing Testable Code<br><br>Lots of gold here: <a href="https://sizovs.net/2018/12/17/stop-learning-frameworks/">https://sizovs.net/2018/12/17/stop-learning-frameworks/</a><br><br>via <a href="https://twitter.com/nicknisi">@nicknisi</a>
 > <br><a href="https://twitter.com/zachleat/status/1074776108422307840">December 17, 2018</a>
@@ -18,7 +20,7 @@ One caveat—I don’t think that learning a framework is a waste of time. Any a
 * If you’re trying to find a job and the job listing requirements all say “React experience,” you’re going to want to learn React.
 * If you already have a job and the senior developers/architects have decided that the official stack uses Angular, you’re going to want to learn Angular.
 
-> Learn fundamentals for a career! Learn frameworks for a job! <br>[Aaron Ralls ☃️☕️ (@cajunAA) on December 18, 2018](https://twitter.com/cajunAA/status/1075170373841367041)
+> Learn fundamentals for a career! Learn frameworks for a job! <br>[@cajunAA on December 18, 2018](https://twitter.com/cajunAA/status/1075170373841367041)
 
 ## My Own Experience
 
@@ -30,7 +32,7 @@ I poured over this thing—I learned it inside and out. Even though it was close
 
 Looking back on this project—even though this framework never really came out of obscurity (and certainly passed back into it very quickly), I was able to take away some very beneficial skills independent of the framework and the project software stack. Not just skills about things that worked well, but insight into things that didn’t work well too. Perhaps unsurprisingly XSLT didn’t last 😎 but you get the idea. I picked up some skills that would be valuable moving forward. That’s the key and perhaps the nuance that the original article was missing—if and when your circumstances dictate that you’re going to be knee deep in a framework, look for those opportunities to learn something that will be useful to you on the next project using the next _framework du jour_.
 
-> Been studying React’s source lately. Double buffering, lazy initialisation, singly linked lists, requestIdleCallback...you can learn a ton by reading the code of a popular open source project. <br>[Carl Mungazi 🇿🇼 (@CarlMungazi) December 21, 2018](https://twitter.com/CarlMungazi/status/1075912692685332480)
+> Been studying React’s source lately. Double buffering, lazy initialisation, singly linked lists, requestIdleCallback...you can learn a ton by reading the code of a popular open source project. <br>[@CarlMungazi on December 21, 2018](https://twitter.com/CarlMungazi/status/1075912692685332480)
 
 (See, Carl gets it.)
 
@@ -57,10 +59,8 @@ My original tweet was only making the claim that investing time in some of the t
 
 ## Hot Drama
 
-It’s tough to communicate all of this nuance in a single tweet. Unfortunately, I think my words were misunderstood and misconstrued in a pretty heated five-hours-long Linus Torvalds-esque Quote Tweet 😞 thread from the [COO of npm](https://twitter.com/seldo/status/1075027798333493249). Quote Tweets can be devastating, especially when they come from a high profile person. The devastation compounds when the thread begins to argue against positions that you didn’t say and wouldn’t take.
+It’s tough to communicate all of this nuance in a single tweet. Unfortunately, I think my words were misunderstood and/or misconstrued on Twitter in a few Quote Tweet threads. Quote Tweets can be devastating, especially when they come from high profile people. The devastation compounds when the threads begin to argue against positions that you didn’t say and wouldn’t take. Hopefully this blog post has clarified my position on the matter.
 
-All that said, I agree with some of the positions outlined in the Twitter thread and do not think our accurately communicated positions to be mutually exclusive. Yes, some inflammatory language was used in both the original blog post and in the tweet thread. But I really think the failure here wasn’t in the language but rather a breakdown in communication. An overeagerness to jump to outrage before spending time to listen. To that end I will to continue to listen to both Laurie and the original author of the blog post with the same deference that a healthy community needs to thrive.
-
-If we still disagree, I have hope that we can disagree productively. Unfortunately the Quote Tweet format does very little to buoy that optimism. Hopefully this blog post has clarified my position.
+If we still disagree, that’s okay. I have hope that we can disagree productively.
 
 **Keep on building, learning, and be excellent to each other, y’all.** 👍
