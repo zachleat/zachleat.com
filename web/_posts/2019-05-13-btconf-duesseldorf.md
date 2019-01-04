@@ -1,5 +1,5 @@
 ---
-title: "beyond tellerrand—Düesseldorf"
+title: "beyond tellerrand—Düsseldorf"
 permalink: btconf-duesseldorf
 categories:
   - presentations
