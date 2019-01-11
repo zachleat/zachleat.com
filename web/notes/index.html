@@ -14,7 +14,7 @@ pagination:
 
 {%- for note in notes %}
 <h2><a href="{{ note.url | url }}">{{ note.data.title }}</a></h2>
-{{ note.templateContent }}
+<div class="notes-content"><a href="{{ note.url | url }}" class="notes-content-link">Read More</a>{{ note.templateContent }}</div>
 {%- endfor %}
 
 {% if pagination.previousPageHref %}<a href="{{ pagination.previousPageHref | url }}">≪ Previous Page</a>{% endif %}

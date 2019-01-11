@@ -1322,6 +1322,29 @@ th.numeric {
 	margin-top: 5em;
 	margin-bottom: -3.5em;
 }
+.notes-content {
+	max-height: 10em;
+	overflow: hidden;
+	position: relative;
+}
+.notes-content-link {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	text-indent: -9999px;
+}
+.notes-content:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 6em;
+	background-image: linear-gradient(to bottom, transparent, #fff);
+}
 /*.tmpl-notetagpage .fontloademu {
 	display: none !important;
 }*/
