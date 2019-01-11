@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{% if title %}{% if titleOverride %}{{ titleOverride }}{% else %}{{ title }}{% endif %}—zachleat.com{% else %}zachleat.com{% endif %}</title>
+		<title>{% if title %}{% if titleOverride %}{{ titleOverride }}{% else %}{% if renderData.title %}{{ renderData.title }}{% else %}{{ title }}{% endif %}{% endif %}—zachleat.com{% else %}zachleat.com{% endif %}</title>
 		<meta property="og:title" content="{% if title %}{{ title }}—zachleat.com{% else %}zachleat.com{% endif %}">
 		<meta name="author" content="Zach Leatherman">
 		<meta property="og:site_name" content="Zach Leatherman">
@@ -51,6 +51,7 @@
 							<a href="/web/eleventy/" class="tag{% if page.url == '/eleventy/' %} active{% endif %}">Eleventy</a>
 							<a href="/web/speaking/" class="tag{% if page.url == '/speaking/' %} active{% endif %}">Speaking</a>
 							<a href="/web/projects/" class="tag{% if page.url == '/projects/' %} active{% endif %}">Projects</a>
+							<a href="/web/notes/" class="tag{% if page.url == '/notes/' %} active{% endif %}">Notes</a>
 							<a href="/web/research/" class="tag{% if page.url == '/research/' %} active{% endif %}">Research</a>
 							<a href="/web/citations/" class="tag{% if page.url == '/citations/' %} active{% endif %}">Citations</a>
 							<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/best-of/' %} active{% endif %}{% if hasToc == true %} has-toc{% endif %}">Popular 🔥</a>

@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
-	eleventyConfig.setDynamicPermalinks(false);
+	eleventyConfig.setDataDeepMerge(true);
 
 	eleventyConfig.setLiquidOptions({
 		strict_filters: true
@@ -47,7 +47,7 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromJSDate(collection[ 0 ].date).toISO({ includeOffset: true, suppressMilliseconds: true });
 	});
 
-	eleventyConfig.addLiquidFilter("readableDate", dateObj => {
+	eleventyConfig.addFilter("readableDate", dateObj => {
 		return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
 	});
 
@@ -134,6 +134,33 @@ module.exports = function(eleventyConfig) {
 				item.data.tags.indexOf("pending") === -1 &&
 				item.data.tags.indexOf("draft") === -1;
 		});
+	});
+
+	eleventyConfig.addCollection("noteTagList", function(collection) {
+		let noteTags = new Set();
+		collection.getAll().forEach(function(item) {
+			if(Array.isArray(item.data["note-tags"])) {
+				for(let noteTag of item.data["note-tags"]) {
+					noteTags.add(noteTag);
+				}
+			}
+		});
+		return Array.from(noteTags).sort();
+	});
+
+	eleventyConfig.addCollection("noteTagCollections", function(collection) {
+		let resultArrays = {};
+		collection.getAll().forEach(function(item) {
+			if(Array.isArray(item.data["note-tags"])) {
+				for(let noteTag of item.data["note-tags"]) {
+					if( !resultArrays[noteTag] ) {
+						resultArrays[noteTag] = [];
+					}
+					resultArrays[noteTag].push(item);
+				}
+			}
+		});
+		return resultArrays;
 	});
 
 	function hasTag(post, tag) {

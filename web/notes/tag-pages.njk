@@ -1,0 +1,18 @@
+---
+renderData:
+  title: "Notes Tagged ‘{{ noteTag }}’"
+override:tags: []
+layout: layouts/page.liquid
+permalink: /notes/tag/{{ noteTag | slug }}/
+tmpl: page
+pagination:
+  data: collections.noteTagList
+  size: 1
+  alias: noteTag
+---
+<em class="notes-subnote"><a href="/web/notes/">⬅ Back to all Notes</a></em>
+
+{%- for post in collections.noteTagCollections[ noteTag ] %}
+<h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+{{ post.templateContent | safe }}
+{%- endfor %}

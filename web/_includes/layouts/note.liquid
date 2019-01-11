@@ -1,0 +1,12 @@
+---
+layout: layouts/page.liquid
+---
+{% assign noteCount = collections.note | size %}
+<em class="notes-subnote">This is a  <a href="{{ "/notes/" | url }}">note</a> written on {{ page.date | readableDate }}. It is short. It is terse. It is not a blog post. It does not go into my RSS feed. In total I’ve written <a href="{{ "/notes/" | url }}">{{ noteCount }} note{% if noteCount != 1 %}s{% endif %}</a>.{% if tweet %} This note was inspired by <a href="{{ tweet }}">a tweet</a>.{% endif %}</em>
+{% if note-tags %}<em class="notes-subnote">{% for tag in note-tags %}🏷 <a href="/web/notes/tag/{{ tag | slug }}/">{{ tag | downcase }}</a> {% endfor %}</em>{% endif %}
+
+{{ content }}
+
+<div class="notes-backlink"><a href="{{ "/notes/" | url }}">Go back to the rest of the notes.</a></div>
+
+{% include about.html %}

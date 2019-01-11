@@ -894,9 +894,6 @@ th.numeric {
 	margin: 5em 0;
 	padding-top: 1em;
 	border-top: 1px solid #ccc;
-	font-size: .875em;
-	line-height: 160%;
-
 	@include unhyphenate;
 }
 .about > a {
@@ -911,6 +908,9 @@ th.numeric {
 	text-decoration: underline;
 }
 .about p {
+	font-size: 16px;
+	line-height: 1.5;
+	@include webfontItalic;
 	margin-top: 0;
 }
 .about p:last-child {
@@ -1310,3 +1310,18 @@ th.numeric {
 		white-space: nowrap;
 	}
 }
+
+/* Subnote */
+.notes-subnote {
+	display: inline-block;
+	font-size: 0.8125em; /* 13px /16 */
+	line-height: 140%;
+}
+.notes-backlink {
+	display: block;
+	margin-top: 5em;
+	margin-bottom: -3.5em;
+}
+/*.tmpl-notetagpage .fontloademu {
+	display: none !important;
+}*/
