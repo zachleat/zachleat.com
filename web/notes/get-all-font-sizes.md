@@ -3,7 +3,7 @@ title: Get all Font Sizes in use on a Web Page
 note-tags:
   - JavaScript
   - Fonts
-tweet: https://twitter.com/zachleat/status/1083063192182575105
+tweet: 'https://twitter.com/zachleat/status/1083063192182575105'
 ---
 While doing some testing on font hinting, I wanted an easy way to make a test page that had examples of every single `font-size` in use on a page. Pasting the following snippet into your DevTools console retrieves an `Array` of sorted `font-size` values in use on a page.
 

@@ -503,6 +503,11 @@ h5 {
 		margin-left: calc((100vw - 100% - 23.8125rem) * -.5);
 		width: calc(100vw - 23.8125rem);
 	}
+	html:not(.wider) .primary-title-exempt,
+	html:not(.wider).tmpl-list .primary-title-exempt {
+		margin-left: auto;
+		width: auto;
+	}
 }
 
 /* Code */
@@ -1323,7 +1328,7 @@ th.numeric {
 	margin-bottom: -3.5em;
 }
 .notes-content {
-	max-height: 10em;
+	max-height: 6em;
 	overflow: hidden;
 	position: relative;
 }

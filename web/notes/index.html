@@ -1,7 +1,8 @@
 ---
 title: Notes
-override:tags: []
-layout: "layouts/page.liquid"
+primaryTitleExemptWidth: true
+'override:tags': []
+layout: layouts/page.liquid
 pagination:
   data: collections.note
   reverse: true
@@ -9,11 +10,11 @@ pagination:
   alias: notes
 ---
 {% assign noteCount = collections.note | size %}
-<em class="notes-subnote">These are my notes. They are short. They are terse. They are not blog posts. They do not go into my RSS feed. In total I’ve written {{ noteCount }} note{% if noteCount != 1 %}s{% endif %}.</em>
-<em class="notes-subnote">Tags: {% for tag in collections.noteTagList %}🏷 <a href="/web/notes/tag/{{ tag | slug }}/">{{ tag | downcase }}</a><!--({{ collections.noteTagCollections[tag] | size }})--> {% endfor %}</em>
+<em class="notes-subnote">These are my notes. They are short. They are terse. In total I’ve written {{ noteCount }} note{% if noteCount != 1 %}s{% endif %}. Subscribe to the <a href="/web/notes/feed/">Notes RSS feed</a>.</em>
+<em class="notes-subnote">{% for tag in collections.noteTagList %}🏷 <a href="/web/notes/tag/{{ tag | slug }}/">{{ tag | downcase }}</a><!--({{ collections.noteTagCollections[tag] | size }})--> {% endfor %}</em>
 
 {%- for note in notes %}
-<h2><a href="{{ note.url | url }}">{{ note.data.title }}</a></h2>
+<h3><a href="{{ note.url | url }}">{{ note.data.title }}</a></h3>
 <div class="notes-content"><a href="{{ note.url | url }}" class="notes-content-link">Read More</a>{{ note.templateContent }}</div>
 {%- endfor %}
 

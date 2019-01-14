@@ -1,0 +1,29 @@
+---
+permalink: notes/feed/atom.xml
+layout: false
+override:tags: []
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>{{ site.name }}’s Notes</title>
+	<subtitle>The run-off from a web development blog written by @zachleat.</subtitle>
+	<link href="https://www.zachleat.com/web/notes/feed/" rel="self"/>
+	<link href="https://www.zachleat.com/web/notes/"/>
+	<updated>{{ collections.note | rssNewestUpdatedDate }}</updated>
+	<id>http://www.zachleat.com/web/notes/</id>
+	<author>
+		<name>Zach Leatherman</name>
+		<email>zachleat@zachleat.com</email>
+	</author>
+	{%- for post in collections.note %}
+	{% set idUrl %}{{ post.url | url | absoluteUrl('http://www.zachleat.com/') }}{% endset %}
+	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl('https://www.zachleat.com/') }}{% endset %}
+	<entry>
+		<title>{{ post.data.title }}</title>
+		<link href="{{ absolutePostUrl }}"/>
+		<updated>{{ post.date | rssDate }}</updated>
+		<id>{{ idUrl }}</id>
+		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+	</entry>
+	{%- endfor %}
+</feed>
