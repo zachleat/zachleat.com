@@ -1340,6 +1340,8 @@ th.numeric {
 	right: 0;
 	bottom: 0;
 	text-indent: -9999px;
+	text-decoration: none !important;
+	background-image: none !important;
 }
 .notes-content:after {
 	content: "";
