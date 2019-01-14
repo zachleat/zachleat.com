@@ -60,7 +60,7 @@ module.exports = function(grunt) {
 					console.warn( ">>> WARNING POST NOT FOUND!", filename );
 				}
 			} else {
-				console.warn( ">>> WARNING bad match:", entry[ 0 ], " to ", path );
+				// console.warn( ">>> WARNING bad match:", entry[ 0 ], " to ", path );
 			}
 		});
 
@@ -82,21 +82,26 @@ module.exports = function(grunt) {
 
 		console.log( "> Deleting previous post ranks, tags from front matters." );
 		pageviewsArr.forEach(function(entry, j) {
-			var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
-			var data = frontmatter.data;
-			delete data.postRank;
-			delete data.daysPosted;
-			delete data.yearsPosted;
-			if( data.tags ) {
-				_remove( data.tags, function( tag ) {
-					return tag === "popular-posts";
-				});
-			}
+			if (fs.existsSync(entry.path)) {
+				let content = fs.readFileSync(entry.path, 'utf8');
+				var frontmatter = matter( content );
+				var data = frontmatter.data;
+				delete data.postRank;
+				delete data.daysPosted;
+				delete data.yearsPosted;
+				if( data.tags ) {
+					_remove( data.tags, function( tag ) {
+						return tag === "popular-posts";
+					});
+				}
 
-			debug("Remove existing ranked posts by per-day views for %o", entry.path);
-			debug("frontmatter.content: %O", frontmatter.content);
-			debug("frontmatter data: %O", data);
-			fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
+				debug("Remove existing ranked posts by per-day views for %o", entry.path);
+				debug("frontmatter.content: %O", frontmatter.content);
+				debug("frontmatter data: %O", data);
+				fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
+			} else {
+				console.log( ">>> WARNING output file found but input file not found", entry.path );
+			}
 		});
 
 		totalviewsArr.forEach(function(entry, j) {

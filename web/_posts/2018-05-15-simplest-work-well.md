@@ -4,8 +4,6 @@ permalink: /that-could-possibly-work/
 tags:
   - nejsconf
   - eleventy
-  - popular-posts
-postRank: 15
 ---
 
 This week we’ve launched the [new web site for NEJS CONF 2018](https://2018.nejsconf.com/) and I am so excited for our theme this year: ✨ outer space ✨.

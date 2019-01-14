@@ -6,7 +6,7 @@ tags:
   - popular-posts
   - popular-posts-total
 postRank: 1
-postRankTotalViews: 12
+postRankTotalViews: 10
 ---
 
 <style>

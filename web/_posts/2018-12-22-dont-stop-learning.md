@@ -2,6 +2,9 @@
 title: Don’t Stop Learning <del>Frameworks</del>
 titleOverride: Don’t Stop Learning F̵r̵a̵m̵e̵w̵o̵r̵k̵s̵
 permalink: /dont-stop-learning/
+postRank: 7
+tags:
+  - popular-posts
 ---
 A few days ago, I read [an article](https://sizovs.net/2018/12/17/stop-learning-frameworks/). I liked it. I [shared it on Twitter](https://twitter.com/zachleat/status/1074776108422307840). Some of the feedback to it was pretty negative. This post is a response to that feedback.
 
