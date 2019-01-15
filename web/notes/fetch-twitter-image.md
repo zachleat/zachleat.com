@@ -61,7 +61,7 @@ chmod +x fetch-twitter-image.sh
 
 ## Bonus tip: Iterate over a Data File
 
-Given this arbitrary JSON:
+Given this arbitrary `data.json` JSON file:
 
 ```json
 [{
@@ -71,7 +71,7 @@ Given this arbitrary JSON:
 }]
 ```
 
-Iterate over the data using [`jq`](https://stedolan.github.io/jq/) and fetch all the images.
+Iterate over `data.json` using [`jq`](https://stedolan.github.io/jq/) and fetch all the images.
 
 ```bash
 for handle in $(cat data.json | jq -r '.[] | .twitterUsername'); do
