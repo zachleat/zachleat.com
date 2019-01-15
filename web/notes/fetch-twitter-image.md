@@ -57,6 +57,8 @@ chmod +x fetch-twitter-image.sh
 * [jpegtran](https://github.com/imagemin/jpegtran-bin) `npm install -g jpegtran-bin`
 * [pngcrush](https://github.com/imagemin/pngcrush-bin#readme) `npm install -g pngcrush-bin`
 
+(This script should be its own module on npm, huh?)
+
 ## Bonus tip: Iterate over a Data File
 
 Given this arbitrary JSON:
