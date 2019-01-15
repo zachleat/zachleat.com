@@ -102,7 +102,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidFilter("emoji", function(content) {
-		return `<span aria-hidden="true">${content}`;
+		return `<span aria-hidden="true">${content}</span>`;
 	});
 
 	eleventyConfig.addLiquidFilter("wordcount", function(content) {
@@ -163,19 +163,18 @@ module.exports = function(eleventyConfig) {
 		return resultArrays;
 	});
 
+
+	// Get the first `n` elements of a collection.
+	eleventyConfig.addFilter("head", (array, n) => {
+		if( n < 0 ) {
+			return array.slice(n);
+		}
+		return array.slice(0, n);
+	});
+
 	function hasTag(post, tag) {
 		return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
 	}
-
-	eleventyConfig.addCollection("latestPost", function(collection) {
-		let posts = collection.getSortedByDate().reverse();
-		for( let item of posts ) {
-			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") ) {
-				return [ item ];
-			}
-		}
-	});
-
 	eleventyConfig.addCollection("latestPosts", function(collection) {
 		let posts = collection.getSortedByDate().reverse();
 		let items = [];
@@ -189,29 +188,17 @@ module.exports = function(eleventyConfig) {
 		}
 	});
 
-
 	// font-loading category mapped to collection
 	eleventyConfig.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
-			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 ||
-				"tags" in item.data && item.data.tags && item.data.tags.indexOf("font-loading") > -1;
+			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 || hasTag(item, "font-loading");
 		}).reverse();
-	});
-
-	// projects
-	eleventyConfig.addCollection("projects", function(collection) {
-		return collection.getFilteredByTag("project").reverse();
-	});
-
-	eleventyConfig.addCollection("researches", function(collection) {
-		return collection.getFilteredByTag("research").reverse();
 	});
 
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
-			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("presentations") > -1 ||
-				"tags" in item.data && item.data.tags && item.data.tags.indexOf("speaking") > -1;
+			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("presentations") > -1 || hasTag(item, "speaking");
 		}).reverse();
 	});
 

@@ -10,7 +10,7 @@ tmpl: list
 		<ol class="posts">
 			{% assign year = "" %}
 			{% assign currentyear = "" %}
-			{% for post in collections.researches %}
+			{% for post in collections.research reversed %}
 				{% include post-list-entry.html %}
 			{% endfor %}
 		</ol>

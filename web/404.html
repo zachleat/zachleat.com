@@ -13,21 +13,17 @@ tmpl: list
 
 		<hr style="margin-top: 10vw">
 
-		<h2><a href="/web/">Latest</a></h2>
+		<h2><a href="/web/">Latest Posts</a></h2>
 		<ol class="posts">
-			{% for post in collections.latestPosts %}
-				{% if forloop.index <= 3 %}
+			{% for post in collections.latestPosts limit:3 %}
 				{% include post-list-entry.html, ignoreYear: "true" %}
-				{% endif %}
 			{% endfor %}
 		</ol>
 
 		<h2><a href="/web/best-of/">Popular 🔥</a></h2>
 		<ol class="posts">
-			{% for post in collections.popularPostsRanked %}
-				{% if forloop.index <= 3 %}
+			{% for post in collections.popularPostsRanked limit:3 %}
 				{% include post-list-entry.html, ignoreYear: "true" %}
-				{% endif %}
 			{% endfor %}
 		</ol>
 

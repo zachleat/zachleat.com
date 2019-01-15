@@ -710,6 +710,9 @@ th.numeric {
 
 	@include unhyphenate;
 }
+.posts .posts-note .posts-link {
+	font-size: 1.157894736842em; /* 22px /19 */
+}
 @supports (text-decoration-skip-ink: auto) {
 	.posts .posts-link:hover,
 	.posts .posts-link:focus,
@@ -849,7 +852,8 @@ th.numeric {
 	.posts-count-forward li {
 		counter-increment: start-from;
 	}
-	.posts-count .subhed {
+	.posts-count .subhed,
+	.posts-count .posts-count-exempt {
 		counter-increment: none;
 	}
 	.posts-count .subhed,
@@ -877,6 +881,7 @@ th.numeric {
 		text-align: right;
 		font-size: 1em; /* 19px /19 */
 	}
+	.posts-count .posts-count-exempt:before,
 	.posts-count .subhed:before,
 	.posts-count .upcoming:before {
 		content: "";
