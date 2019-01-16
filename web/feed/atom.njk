@@ -21,7 +21,12 @@ permalink: feed/atom.xml
 		<link href="{{ absolutePostUrl }}"/>
 		<updated>{{ post.date | rssDate }}</updated>
 		<id>{{ idUrl }}</id>
-		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+		<content type="html">
+			{%- if post.data.external_url and not post.templateContent %}
+				&lt;p&gt;&lt;em&gt;This content lives somewhere else. It was originally posted at: &lt;a href=&quot;{{ post.data.external_url }}&quot;&gt;{{ post.data.external_url }}&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+			{%- endif %}
+			{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+		</content>
 	</entry>
 	{%- endfor %}
 </feed>
