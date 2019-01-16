@@ -872,14 +872,15 @@ th.numeric {
 	.posts-count li:before {
 		pointer-events: none;
 		position: absolute;
-		left: -14px;
-		top: 12px;
-		content: counter(start-from, decimal-leading-zero);
+		left: 8px;
+		top: 20px;
+		content: "№ " counter(start-from, decimal-leading-zero);
 		color: #888;
 		line-height: 100%;
-		width: 2.5em;
+		width: 3em;
 		text-align: right;
-		font-size: 1em; /* 19px /19 */
+		font-size: 13px;
+		white-space: nowrap;
 	}
 	.posts-count .posts-count-exempt:before,
 	.posts-count .subhed:before,
@@ -1135,7 +1136,7 @@ th.numeric {
 }*/
 .icon-link-external {
 	width: 14px;
-	height: 16px;
+	height: 15px;
 	display: inline-block;
 }
 
