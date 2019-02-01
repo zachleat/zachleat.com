@@ -29,7 +29,9 @@ layout: default
 		{%- if tags contains 'upcoming' %}
 		<p><em>This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
 		{%- else %}
+		{%- unless ignoreExternalLinkInLayoutFile %}
 		<p><em>Originally posted at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
+		{%- endunless %}
 		{%- endif %}
 	</article>
 	{% endif %}
@@ -41,6 +43,7 @@ layout: default
 		{% include about.html %}
 	</article>
 
+{% unless disableComments %}
 	<div id="disqus_thread" class="static-comments">
 		<h2 id="comments">
 			{{ disqus.commentCount }} Comment{% if disqus.commentCount != 1 %}s{% endif %}
@@ -50,4 +53,5 @@ layout: default
 			{% include comment-entry.html %}
 		{% endfor %}
 	</div>
+{% endunless %}
 </div><!-- /.maxwidth -->
