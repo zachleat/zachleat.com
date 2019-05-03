@@ -210,6 +210,14 @@ h5 {
 
 
 /* Content */
+/*.content article > .sub + p:first-of-type:first-line,
+.content article > h2 + p:first-line*/
+.intro-smallcaps {
+	font-family: Georgia;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
 .content ol:not(.posts),
 .content ul:not(.posts) {
 	padding-left: 1.5em;
@@ -799,31 +807,28 @@ th.numeric {
 
 .sub {
 	margin-top: 0;
-	font-size: 0.8421052631579em; /* 16px /19 */
+	font-size: 0.7368421052632em; /* 14px /19 */
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 @media (min-width: $twoColLayoutMinWidth) and (min-height: 34.375em) {
 	.sub {
 		margin-bottom: 5rem;
 	}
 }
-.sub em span {
-	font-style: normal;
-	font-family: sans-serif;
-}
 .sub em:empty {
 	display: none;
 }
 .sub em {
-	margin-right: 1em;
 	color: #666;
-	display: block;
 }
-.sub em:before {
-	content: '—';
-}
-@media (min-width: 35em) { /* 560px */
+@media (min-width: 26.5625em) { /* 425px */
+	.sub {
+		display: block;
+	}
 	.sub em {
-		display: inline;
+		margin-right: 1em;
 	}
 }
 
@@ -1110,7 +1115,7 @@ th.numeric {
 	}
 	.tags .tag.tag-popular-rail em {
 		white-space: nowrap;
-		color: #999;
+		color: #387731;
 	}
 	.tags .top5 a:hover,
 	.tags a[href].tag.tag-popular-rail:hover {
@@ -1333,6 +1338,9 @@ th.numeric {
 	margin-top: 5em;
 	margin-bottom: -3.5em;
 }
+.notes-hed {
+	margin-bottom: 0;
+}
 .notes-content {
 	max-height: 6em;
 	overflow: hidden;
@@ -1357,6 +1365,9 @@ th.numeric {
 	right: 0;
 	height: 6em;
 	background-image: linear-gradient(to bottom, transparent, #fff);
+}
+.notes-content-link:first-child + * {
+	margin-top: .5em;
 }
 /*.tmpl-notetagpage .fontloademu {
 	display: none !important;

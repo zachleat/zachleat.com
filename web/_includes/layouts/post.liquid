@@ -6,15 +6,12 @@ layout: default
 	<h1 class="primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
 	<div class="sub">
 		<em class="date">{{ page.date | readableDate }}</em>
-		<em>Zach Leatherman</em>
-		<div>
 {% if postRank %}
-			<em class="words"><a href="/web/best-of/">#{{ postRank }} popular</a></em>
+		<em class="words"><a href="/web/best-of/">#{{ postRank }} Popular</a></em>
 {% endif %}
 {% if tags contains 'video' %}
-			<em class="words">Watch in {{ medialength }}</em>
+		<em class="words">Watch in {{ medialength | medialengthCleanup }}</em>
 {% endif %}
-		</div>
 	</div>
 	{% if deprecated %}
 	<article>

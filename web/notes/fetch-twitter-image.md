@@ -2,7 +2,7 @@
 title: Download a Twitter User’s Profile Image
 note-tags:
   - JavaScript
-  - Bash
+  - Command Line
   - Twitter
 ---
 The [11ty.io web site](https://www.11ty.io/) uses avatar images for its Testimonial and Sites Using Eleventy features. I wrote a [script to automatically download those avatar images](https://github.com/11ty/11ty.io/blob/master/avatars.sh) based on usernames stored in data files in the 11ty.io repository.

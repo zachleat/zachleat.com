@@ -6,7 +6,7 @@ postRank: 7
 tags:
   - popular-posts
 ---
-A few days ago, I read [an article](https://sizovs.net/2018/12/17/stop-learning-frameworks/). I liked it. I [shared it on Twitter](https://twitter.com/zachleat/status/1074776108422307840). Some of the feedback to it was pretty negative. This post is a response to that feedback.
+<span class="intro-smallcaps">A few days ago,</span> I read [an article](https://sizovs.net/2018/12/17/stop-learning-frameworks/). I liked it. I [shared it on Twitter](https://twitter.com/zachleat/status/1074776108422307840). Some of the feedback to it was pretty negative. This post is a response to that feedback.
 
 First and foremost, I should say that I didn’t agree with everything in the blog post. If total agreement were a prerequisite to tweet, I would share zero things on Twitter (don’t get your hopes up 😇).
 

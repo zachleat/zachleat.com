@@ -14,7 +14,7 @@ pagination:
 <em class="notes-subnote">{% for tag in collections.noteTagList %}🏷 <a href="/web/notes/tag/{{ tag | slug }}/">{{ tag | downcase }}</a><!--({{ collections.noteTagCollections[tag] | size }})--> {% endfor %}</em>
 
 {%- for note in notes %}
-<h3><a href="{{ note.url | url }}">{{ note.data.title }}</a></h3>
+<h3 class="notes-hed"><a href="{{ note.url | url }}">{{ note.data.title }}</a></h3>
 <div class="notes-content"><a href="{{ note.url | url }}" class="notes-content-link">Read More</a>{{ note.templateContent }}</div>
 {%- endfor %}
 

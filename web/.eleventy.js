@@ -23,6 +23,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("wp-content");
 	eleventyConfig.addPassthroughCopy("dist");
 
+	eleventyConfig.addLiquidFilter("medialengthCleanup", str => {
+		let split = str.split(" ");
+		return `${split[0]}<span aria-hidden="true">m</span><span class="sr-only"> minutes</span>`;
+	});
+
 	eleventyConfig.addLiquidFilter("simpleTagStrip", str => {
 		return str.replace(/<[^>]*>/g, "");
 	});
@@ -48,7 +53,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("readableDate", dateObj => {
-		return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
+		return DateTime.fromJSDate(dateObj).toFormat("LLLL dd, yyyy");
 	});
 
 	eleventyConfig.addLiquidFilter("readableDateFromISO", dateStr => {

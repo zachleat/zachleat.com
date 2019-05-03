@@ -2,7 +2,7 @@
 title: Navigate directly to a GitHub Issue
 note-tags:
   - Git
-  - Bash
+  - Command Line
 ---
 At Filament Group when we do new feature or bug fix branch, our workflow is to create a new branch and name it using the GitHub issue number. A bug fix for Issue #3214 would be live in a branch named `3214` (e.g. `git branch -B 3214`).
 
