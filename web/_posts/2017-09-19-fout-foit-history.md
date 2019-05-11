@@ -6,6 +6,7 @@ categories:
 tags:
   - font-loading
 ---
+<p class="sub"><em>May 9, 2019 updated with <code>font-display</code> support.</em></p>
 
 <em>Prerequisite: not sure what FOUT or FOIT are? Read the <a href="/web/webfont-glossary/#foit">definitions on the Web Font Loading Glossary</a>.</em>
 
@@ -109,6 +110,31 @@ For a recent talk at <a href="http://css-minsk-js.by/">CSS-Minsk-JS</a>, I did s
 			<td class="nowrap">2016 <span class="hide-sm"><abbr title="September">Sep</abbr> 20</span></td>
 			<td><strong>FOIT 3<abbr title="seconds">s</abbr></strong></td>
 			<td>Safari (v10) finally added a FOIT timeout, almost eight full years after introducing FOIT to the world.</td>
+		</tr>
+		<tr>
+			<td class="nowrap">2017 <span class="hide-sm"><abbr title="July">Jul</abbr> 24</span></td>
+			<td class="yes"><strong class="nowrap">font-display</strong> (1st)</td>
+			<td>Chrome (v60) was first to implement <code>font-display</code>, allowing developers control over default FOUT and FOIT behavior with a CSS descriptor.</td>
+		</tr>
+		<tr>
+			<td class="nowrap">2017 <span class="hide-sm"><abbr title="August">Aug</abbr> 8</span></td>
+			<td class="emulate"><strong class="nowrap">font-display</strong> (2nd)</td>
+			<td>Opera (v47) was second to add support for <code>font-display</code>.</td>
+		</tr>
+		<tr>
+			<td class="nowrap">2018 <span class="hide-sm"><abbr title="January">Jan</abbr> 22</span></td>
+			<td><strong class="nowrap">font-display</strong></td>
+			<td>Firefox (v58) adds <code>font-display</code> support</td>
+		</tr>
+		<tr>
+			<td class="nowrap">2018 <span class="hide-sm"><abbr title="March">Mar</abbr> 28</span></td>
+			<td><strong class="nowrap">font-display</strong></td>
+			<td>Safari (v11.1) adds <code>font-display</code> support</td>
+		</tr>
+		<tr>
+			<td class="nowrap">2018 <span class="hide-sm"><abbr title="December">Dec</abbr> 29</span></td>
+			<td><strong class="nowrap">font-display</strong></td>
+			<td>Samsung Internet (v8.2) adds <code>font-display</code> support</td>
 		</tr>
 	</tbody>
 </table>

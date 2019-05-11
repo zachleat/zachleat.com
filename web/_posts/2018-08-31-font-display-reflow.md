@@ -70,7 +70,7 @@ At 1.91s the bold italic variant has loaded and repainted.
 
 <img src="/web/img/posts/font-display-reflow/render-4.png" alt="A screenshot of render at 1.95s" class="post-img">
 
-<div class="livedemo livedemo-mixed sizeme" data-demo-label="DEMO: 1.91s Roman & Bold">
+<div class="livedemo livedemo-mixed sizeme" data-demo-label="DEMO: 1.95s Roman & Bold">
     <p class="font-lato"><span class="highlight">This is a paragraph. </span><strong class="font-latobold highlight">This is heavier text.</strong> <em class="font-latoitalic">This is emphasized text.</em> <strong><em class="font-latobolditalic">This is heavier and emphasized text.</em></strong></p>
 </div>
 

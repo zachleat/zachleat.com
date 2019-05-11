@@ -41,14 +41,15 @@ layout: default
 	</article>
 
 {% unless disableComments %}
+{% if disqus.commentCount > 0 %}
 	<div id="disqus_thread" class="static-comments">
 		<h2 id="comments">
 			{{ disqus.commentCount }} Comment{% if disqus.commentCount != 1 %}s{% endif %}
 		</h2>
-		<h3 class="disqus-loader"><a href="#" id="disqus-loader">➡ Load Disqus to Leave a Comment ⬅</a></h3>
 		{% for comment in disqus.comments %}
 			{% include comment-entry.html %}
 		{% endfor %}
 	</div>
+{% endif %}
 {% endunless %}
 </div><!-- /.maxwidth -->
