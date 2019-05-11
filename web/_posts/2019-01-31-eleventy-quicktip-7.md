@@ -1,10 +1,10 @@
 ---
-title: "Eleventy Quick Tip №7: Fetch GitHub Stargazers Count (and More) at Build Time"
+title: 'Eleventy Quick Tip №7: Fetch GitHub Stargazers Count (and More) at Build Time'
 permalink: /eleventy-quicktip-7/
 tags:
   - eleventy
   - external
-external_url: https://www.11ty.io/docs/quicktips/eliminate-js/
+external_url: 'https://www.11ty.io/docs/quicktips/eliminate-js/'
 ignoreExternalLinkInLayoutFile: true
 ---
 

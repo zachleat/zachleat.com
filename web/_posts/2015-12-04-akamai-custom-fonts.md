@@ -1,5 +1,5 @@
 ---
-title: Using Custom Fonts Responsibly, an Akamai Animated Short
+title: 'Using Custom Fonts Responsibly, an Akamai Animated Short'
 permalink: akamai-custom-fonts/
 tags:
   - font-loading
