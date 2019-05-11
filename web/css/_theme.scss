@@ -89,6 +89,40 @@ dd {
 	font-size: .6875em;
 }
 
+/* Links from slide decks */
+.reference-links.reference-links.reference-links {
+	list-style: none;
+	padding: 0;
+}
+.reference-links li {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid hsla(0, 0%, 75%, 0.5);
+}
+.reference-links a[href] {
+	display: inline-block;
+	padding: .25em .5em;
+}
+.reference-links a[href][id]:target,
+.reference-links :target a[href] {
+	background-color: #ffc;
+}
+.reference-links a[href]:before {
+	content: "#" attr(id);
+	font-size: .75em;
+	padding-right: 1em;
+	float: left;
+	min-width: 3em;
+}
+.reference-links a[href]:after {
+	content: attr(href);
+	font-size: .75em;
+	padding-left: 1em;
+	margin-top: .5em;
+	display: block;
+	line-height: 1.3;
+}
+
 /* Iframe */
 .iframer {
 	position: relative;
@@ -233,22 +267,12 @@ h5 {
 @supports (display: block) {
 	$primaryMaxWidth: 895px;
 
-	@media (max-width: 36.75em) {
+	@media (max-width: $oneColLayoutMaxWidth) { /* 699px */
 		.content img.primary,
 		.content .fullwidth,
 		.content pre:not(.fullwidthexempt) {
 			margin-left: -12px;
 			margin-right: -12px;
-			max-width: none;
-			width: 100vw;
-		}
-	}
-	@media (min-width: 36.8125em) and (max-width: $oneColLayoutMaxWidth) {
-		.content img.primary,
-		.content .fullwidth,
-		.content pre:not(.fullwidthexempt) {
-			margin-left: calc( -1 * ( 100vw - 565px ) / 2 );
-			width: calc( 100vw );
 			max-width: none;
 		}
 	}
@@ -458,11 +482,24 @@ h5 {
 }
 
 .primary-title {
-	font-size: 2em; /* 38px /19 */
+	font-size: 2.5em;
+	@include webfontBoldItalic;
 	line-height: 0.85;
-	color: #333;
-	margin-bottom: .3em;
-	letter-spacing: -0.02631578947368em; /* 1px /38 */
+}
+.primary-title.primary-title {
+	margin: 1em 0 .5em;
+}
+@media (min-width: $twoColLayoutMinWidth) {
+	.primary-title {
+		font-size: 3em;
+	}
+	.primary-title.primary-title {
+		margin-top: 25vh;
+	}
+}
+
+/* Hyphenation */
+.primary-title {
 	@include unhyphenate;
 }
 .primary-title-smalltitle {
@@ -472,15 +509,6 @@ h5 {
 .primary-title .long-word {
 	@include hyphenate;
 }
-.primary-title.primary-title {
-	font-weight: 900;
-	font-family: system-ui, -apple-system, sans-serif;
-}
-@media (min-width: 31.25em) { /* 500px */
-	.primary-title {
-		font-size: 8vw;
-	}
-}
 @media (min-width: 40em) {
 	.primary-title-smalltitle,
 	.primary-title .long-word {
@@ -488,33 +516,6 @@ h5 {
 	}
 	.primary-title-smalltitle .long-word {
 		@include hyphenate;
-	}
-}
-@media (min-width: $twoColLayoutMinWidth) {
-	.primary-title {
-		font-size: 6vw;
-		line-height: 0.8;
-		letter-spacing: -0.02777777777778em; /* 2px /72 */
-	}
-	/* override .posts-indent */
-	.primary-title.primary-title.primary-title {
-		padding: 0;
-	}
-	html:not(.wider) .primary-title {
-		font-size: 7.5vw;
-		margin-left: calc((100vw - 100% - 26.5rem) * -.5);
-		width: calc(100vw - 26.5rem);
-		padding-left: 0;
-		padding-right: 0;
-	}
-	html:not(.wider).tmpl-list .primary-title {
-		margin-left: calc((100vw - 100% - 23.8125rem) * -.5);
-		width: calc(100vw - 23.8125rem);
-	}
-	html:not(.wider) .primary-title-exempt,
-	html:not(.wider).tmpl-list .primary-title-exempt {
-		margin-left: auto;
-		width: auto;
 	}
 }
 
@@ -583,7 +584,7 @@ pre > code {
 	background-color: #272822;
 	color: #f8f8f2;
 }
-@media (min-width: 60em) { /* 960px */
+@media (min-width: 37.75em) { /* 604px */
 	pre {
 		border-radius: 0.6153846153846em; /* 8px /13 */
 	}
@@ -816,6 +817,9 @@ th.numeric {
 	.sub {
 		margin-bottom: 5rem;
 	}
+	.sub + .sub {
+		margin-top: -5.5rem;
+	}
 }
 .sub em:empty {
 	display: none;
@@ -960,6 +964,10 @@ th.numeric {
 	font-size: 0.7368421052632em; /* 14px /19 */
 	line-height: 135%;
 	@include webfontItalic;
+
+	@media (min-width: $twoColLayoutMinWidth) {
+		margin-top: 30vh;
+	}
 }
 
 /* Tags */
@@ -1166,6 +1174,12 @@ th.numeric {
 	position: relative;
 	margin: .5rem -.5rem 1.5rem;
 
+	@media (min-width: 38.25em) { /* 612px */
+		padding-left: .75rem;
+		padding-right: .75rem;
+		margin-left: -.75rem;
+		margin-right: -.75rem;
+	}
 	@media (min-width: $twoColLayoutMinWidth) {
 		padding: .875rem .875rem 1rem .875rem;
 		margin-left: -.875rem;
@@ -1182,6 +1196,9 @@ th.numeric {
 		margin-left: calc( -.875rem );
 		width: calc( 100% + 1.75rem );
 	}
+}
+pre + .livedemo {
+	margin-top: 2rem;
 }
 .livedemo:after {
 	content: "Demonstration";
