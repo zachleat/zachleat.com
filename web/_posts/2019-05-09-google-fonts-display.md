@@ -71,8 +71,15 @@ It’s also a bit of trailblazing, too. To my knowledge, this is the first web f
             <td class="no"><strong>font-display</strong> Not supported</td>
             <td>Typography.com (by Hoefler&Co)</td>
         </tr>
+        <tr>
+            <td class="nowrap"><em>Not yet</em></td>
+            <td class="no"><strong>font-display</strong> Not supported</td>
+            <td>fonts.com (by Monotype)</td>
+        </tr>
     </tbody>
 </table>
+
+<sub>(Monotype tip via <a href="https://twitter.com/thomasdeinhamer/status/1127213122517962753">@thomasdeinhamer</a>)</sub>
 
 Want a [full history of FOIT and FOUT](/web/fout-foit-history/)?
 
