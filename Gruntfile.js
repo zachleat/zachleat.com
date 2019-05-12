@@ -201,7 +201,7 @@ module.exports = function(grunt) {
 			},
 			// TODO https://github.com/shama/grunt-beep
 			upload: {
-				command: 'echo "Note: Requires an \'zachleat\' host in .ssh/config"; rsync --archive --verbose --stats --compress --rsh=ssh ./_site/ zachleat:/home/public/<%= config.root %>',
+				command: 'echo "Note: Requires an \'zachleat\' host in .ssh/config"; rsync --archive --verbose --stats --compress --rsh=ssh ./_site/ zachleat:/home/public/<%= config.root %>; rsync --archive --verbose --stats --compress --rsh=ssh ./index.html zachleat:/home/public/',
 				options: {
 					maxBuffer: 1024 * 1024 * 64,
 					execOptions: {

@@ -10,24 +10,24 @@ permalinkBypassOutputDir: true
 		<p>{% include bio-text-medium.html %} <a href="/web/about/">Read more<span class="a11y-only"> about Zach</span> &raquo;</a></p>
 	</div>
 	<article>
-		<ol class="posts posts-flush">
+		<ol class="posts">
 			<h2>Writing</h2>
 			{% for post in collections.latestPosts limit:4 %}
 				{% include post-list-entry.html, ignoreYear: "true" %}
 			{% endfor %}
-			<li><a href="/web/" class="posts-link"><strong>…see all posts.</strong></a></li>
+			<li><a href="/web/" class="posts-link"><strong>…see full archive.</strong></a></li>
 		</ol>
 
-		<ol class="posts posts-flush">
+		<ol class="posts">
 			<h2>Feed</h2>
-			{% for post in collections.posts limit:4 %}
+			{% for post in collections.posts limit:8 %}
 				{% include post-list-entry.html, ignoreYear: "true" %}
 			{% endfor %}
 			<li><a href="/web/" class="posts-link"><strong>…see full feed.</strong></a></li>
 		</ol>
 
 		<h2>Popular 🔥</h2>
-		<ol class="posts posts-flush">
+		<ol class="posts">
 			{% for post in collections.popularPostsRanked limit:5 %}
 				{% include post-list-entry.html, ignoreYear: "true" %}
 			{% endfor %}

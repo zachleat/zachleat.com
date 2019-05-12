@@ -283,7 +283,6 @@ h5 {
 		.content pre:not(.fullwidthexempt) {
 			// Add in rail
 			margin-left: calc( -1 * ( 100vw - 323px - 565px ) / 2 );
-			max-width: $primaryMaxWidth;
 			width: calc( 100vw - 323px );
 		}
 	}
@@ -307,7 +306,6 @@ h5 {
 		.content .fullwidth,
 		.content pre:not(.fullwidthexempt) {
 			margin-left: -105.5px; /* estimate */
-			max-width: none;
 			width: $primaryMaxWidth; /* 713px + 91 * 2 */
 		}
 	}
@@ -777,17 +775,6 @@ th.numeric {
 	margin-top: 3em;
 }
 @media (min-width: 30em) {
-	.posts .subhed,
-	.posts li,
-	.maxwidth-list h1,
-	.maxwidth-list p {
-		padding-left: 13px;
-		padding-right: 13px;
-	}
-	.posts-flush li {
-		padding-left: 0;
-		padding-right: 0;
-	}
 	.maxwidth-list h1.posts-indent {
 		padding-left: 55px;
 	}
