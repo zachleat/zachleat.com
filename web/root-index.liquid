@@ -1,0 +1,38 @@
+---
+layout: layouts/default.liquid
+tmpl: root
+permalink: ../index.html
+permalinkBypassOutputDir: true
+---
+
+<div class="maxwidth-list">
+	<div id="about-index" class="about-description">
+		<p>{% include bio-text-medium.html %} <a href="/web/about/">Read more<span class="a11y-only"> about Zach</span> &raquo;</a></p>
+	</div>
+	<article>
+		<ol class="posts posts-flush">
+			<h2>Writing</h2>
+			{% for post in collections.latestPosts limit:4 %}
+				{% include post-list-entry.html, ignoreYear: "true" %}
+			{% endfor %}
+			<li><a href="/web/" class="posts-link"><strong>…see all posts.</strong></a></li>
+		</ol>
+
+		<ol class="posts posts-flush">
+			<h2>Feed</h2>
+			{% for post in collections.posts limit:4 %}
+				{% include post-list-entry.html, ignoreYear: "true" %}
+			{% endfor %}
+			<li><a href="/web/" class="posts-link"><strong>…see full feed.</strong></a></li>
+		</ol>
+
+		<h2>Popular 🔥</h2>
+		<ol class="posts posts-flush">
+			{% for post in collections.popularPostsRanked limit:5 %}
+				{% include post-list-entry.html, ignoreYear: "true" %}
+			{% endfor %}
+			<li><a href="/web/best-of" class="posts-link"><strong>…see all popular posts.</strong></a></li>
+		</ol>
+
+	</article>
+</div><!-- /.maxwidth -->

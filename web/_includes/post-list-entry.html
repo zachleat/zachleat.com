@@ -34,7 +34,7 @@
 		{%- if post.data.tags contains 'research' %}<a href="/web/research/" class="tag">Research</a>{% endif -%}
 		{%- if post.data.tags contains 'nejsconf' %}<a href="/web/nejsconf/" class="tag">NEJS CONF</a>{% endif -%}
 		{%- if post.data.tags contains 'conference' -%}
-			<a class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>Conference{% if post.data.tags contains 'speaking' %} Speaking{% elsif post.data.tags contains 'organizing' %} Organizing{% endif %}</a>
+			<a class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>{% if post.data.tags contains 'speaking' %}Speaking{% elsif post.data.tags contains 'organizing' %}Organizing{% else %}Conference{% endif %}</a>
 			{%- if post.data.event_date %}<span class="tag tag-event">on {{ "📅" | emoji }} {{ post.data.event_date }}</span>{% endif -%}
 		{%- elsif post.data.tags contains 'presentations' or post.data.tags contains 'speaking' or post.data.tags contains 'video' or post.data.tags contains 'audio' -%}
 			<a href="/web/speaking/" class="tag">Speaking</a>

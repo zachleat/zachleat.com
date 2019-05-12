@@ -6,7 +6,7 @@ RewriteRule résumé/$ /resume/ [L]
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{REQUEST_URI} !^/.well-known/acme-challenge
 
-RewriteRule ^$ /web [L]
+# RewriteRule ^$ /web/ [L]
 RedirectMatch 301 /Projects$ /projects/
 RedirectMatch 301 /Projects/(.*)$ /projects/$1
 RedirectMatch 301 /projects/alarmd$ /alarmd/
