@@ -8,10 +8,10 @@ At Google I/O this week, [Anna Migas](https://twitter.com/szynszyliszys) shared 
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You will not have to self-host Google Fonts any more to get font-display: swap; 🙌 <a href="https://twitter.com/hashtag/io19?src=hash&amp;ref_src=twsrc%5Etfw">#io19</a> <a href="https://t.co/SldOuoNInF">pic.twitter.com/SldOuoNInF</a></p>&mdash; Anna Migas @ Google I/O (@szynszyliszys) <a href="https://twitter.com/szynszyliszys/status/1126261253280649216?ref_src=twsrc%5Etfw">May 8, 2019</a></blockquote>
 
-Google Fonts is adding support for `font-display`! 🎉🎉🎉🎉
+Google Fonts is adding support for `font-display`! 🎉🎉🎉🎉 Although the I/O preview used the `font-display` URL parameter, [the final implementation uses `display` instead](https://twitter.com/addyosmani/status/1128548064287952896).
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Lobster&font-display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 ```
 
 <p class="livedemo top" data-demo-label="Learn more">Want to learn more about <code>font-display</code>? Check out this <a href="https://font-display.glitch.me/"><code>font-display</code> Playground demo on Glitch</a> from Monica Dinculescu.</p>
