@@ -4,11 +4,15 @@ permalink: google-fonts-display/
 tags:
   - font-loading
 ---
-At Google I/O this week, [Anna Migas](https://twitter.com/szynszyliszys) shared a photo of an Addy Osmani and Katie Hempenius session that dropped a font loading bombshell on the world.
+<p class="sub"><em>May 15, 2019 renamed URL parameter to <code>display</code>. Thank you <a href="https://mathiasbynens.be/">Mathias</a>!</em></p>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You will not have to self-host Google Fonts any more to get font-display: swap; 🙌 <a href="https://twitter.com/hashtag/io19?src=hash&amp;ref_src=twsrc%5Etfw">#io19</a> <a href="https://t.co/SldOuoNInF">pic.twitter.com/SldOuoNInF</a></p>&mdash; Anna Migas @ Google I/O (@szynszyliszys) <a href="https://twitter.com/szynszyliszys/status/1126261253280649216?ref_src=twsrc%5Etfw">May 8, 2019</a></blockquote>
+At Google I/O this week, [Anna Migas](https://twitter.com/szynszyliszys) shared a photo of an [Addy Osmani](https://addyosmani.com/) and [Katie Hempenius](https://katiehempenius.com/) session that dropped a font loading bombshell on the world.
 
-Google Fonts is adding support for `font-display`! 🎉🎉🎉🎉 Although the I/O preview used the `font-display` URL parameter, [the final implementation uses `display` instead](https://twitter.com/addyosmani/status/1128548064287952896).
+<blockquote><p lang="en" dir="ltr">You will not have to self-host Google Fonts any more to get font-display: swap; 🙌 <a href="https://twitter.com/hashtag/io19?src=hash&amp;ref_src=twsrc%5Etfw">#io19</a> <a href="https://t.co/SldOuoNInF">pic.twitter.com/SldOuoNInF</a></p>&mdash; Anna Migas @ Google I/O (@szynszyliszys) <a href="?ref_src=twsrc%5Etfw">May 8, 2019</a></blockquote>
+
+Google Fonts is adding support for `font-display`! 🎉🎉🎉🎉
+
+_(Note: although the I/O preview used the `font-display` URL parameter, [the final implementation uses `display` instead](https://twitter.com/addyosmani/status/1128548064287952896))_
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -57,8 +61,8 @@ It’s also a bit of trailblazing, too. To my knowledge, this is the first web f
             <td>Samsung Internet (v8.2)</td>
         </tr>
         <tr>
-            <td class="nowrap">Announced <br>2019 <span class="hide-sm"><abbr title="May">May</abbr> 8</span></td>
-            <td class="emulate"><strong>font-display</strong> <em>Pending</em></td>
+            <td class="nowrap"><br>2019 <span class="hide-sm"><abbr title="May">May</abbr> 15</span></td>
+            <td class="yes"><strong>font-display</strong> Supported</td>
             <td>Google Fonts</td>
         </tr>
         <tr>
