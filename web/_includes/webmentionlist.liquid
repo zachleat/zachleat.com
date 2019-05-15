@@ -1,0 +1,30 @@
+{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
+{%- assign mentions = webmentions.children | webmentionsForUrl: absoluteUrl -%}
+{%- assign mentionsSize = mentions | size -%}
+<div class="webmentions" id="webmentions">
+  <h3>Webmentions</h3>
+
+  {% if mentionsSize > 0 %}
+    <div class="webmentions__facepile">
+      {% for webmention in mentions limit:5 %} <!-- TODO reverse -->
+        <img src="{% if webmention.author.photo %}{{ webmention.author.photo }}{% else %}{{ '/img/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions__face" />
+      {% endfor %}
+      {% if mentionsSize > 5 %}
+        {% assign leftoverCount = mentionsSize | minus:5 %}
+        <span>+{{ leftoverCount }}</span>
+        }
+      {% endif %}
+    </div>
+
+    <ol class="webmentions__list">
+      {% for webmention in mentions %} <!-- TODO reverse -->
+        <li class="webmentions__item">
+          {% include webmention %}
+        </li>
+      {% endfor %}
+    </ol>
+
+  {% else %}
+    <p>No mentions yet.</p>
+  {% endif %}
+</div>

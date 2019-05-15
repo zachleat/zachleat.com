@@ -1,0 +1,26 @@
+<article class="webmention h-cite" id="webmention-{{ webmention['wm-id'] }}">
+  <div class="webmention__meta">
+    {% if webmention.author %}
+      <a class="webmention__author p-author h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+        {% if webmention.author.photo %}
+          <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}">
+        {% else %}
+          <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="">
+        {% endif %}
+        <strong class="p-name">{{ webmention.author.name }}</strong>
+      </a>
+    {% else %}
+      <span class="webmention__author">
+        <img class="webmention__author__photo" src="{{ '/assets/images/avatar-default.svg' | url }}" alt="">
+        <strong>Anonymous</strong>
+      </span>
+    {% endif %}
+
+    {% if webmention.published %}
+      <time class="webmention__pubdate dt-published" datetime="{{ webmention.published }}">{{ webmention.published | dateFromTimestamp | readableDate }}</time>
+    {% endif %}
+  </div>
+  <div class="webmention__content p-content">
+    {{ webmention.content.value }}
+  </div>
+</article>

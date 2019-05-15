@@ -1,5 +1,6 @@
 ---
 layout: default
+enableWebmentions: true
 ---
 <div class="maxwidth">
 	<article>
@@ -51,5 +52,7 @@ layout: default
 		{% endfor %}
 	</div>
 {% endif %}
+
+	{% include webmentionlist %}
 {% endunless %}
 </div><!-- /.maxwidth -->

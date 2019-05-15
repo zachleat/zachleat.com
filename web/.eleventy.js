@@ -1,5 +1,8 @@
 const { DateTime } = require("luxon");
+const { URL } = require("url");
+const sanitizeHTML = require('sanitize-html')
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const siteData = require("./_data/site.json");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 // TODO replace with https://www.npmjs.com/package/striptags
 // const stripHtml = require("string-strip-html");
@@ -32,6 +35,18 @@ module.exports = function(eleventyConfig) {
 		return str.replace(/<[^>]*>/g, "");
 	});
 
+	eleventyConfig.addLiquidFilter("absoluteUrl", (url, base) => {
+		if( !base ) {
+			base = siteData.url;
+		}
+		try {
+			return (new URL(url, base)).toString();
+			} catch(e) {
+			console.log(`Trying to convert ${url} to be an absolute url with base ${base} and failed.`);
+			return url;
+		}
+	});
+
 	eleventyConfig.addLiquidFilter("timePosted", date => {
 		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
 		let daysPosted = Math.round( parseFloat( numDays ) );
@@ -58,6 +73,10 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addLiquidFilter("readableDateFromISO", dateStr => {
 		return DateTime.fromISO(dateStr).toFormat("dd LLL yyyy 'at' hh:mma");
+	});
+
+	eleventyConfig.addFilter('dateFromTimestamp', timestamp => {
+		return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
 	});
 
 	eleventyConfig.addLiquidFilter("longWordWrap", str => {
@@ -218,6 +237,31 @@ module.exports = function(eleventyConfig) {
 			return b.data.postRankTotalViews - a.data.postRankTotalViews;
 		}).reverse();
 	});
+
+	// Webmentions Filter
+	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
+		const allowedTypes = ['mention-of', 'in-reply-to']
+		const allowedHTML = {
+			allowedTags: ['b', 'i', 'em', 'strong', 'a'],
+			allowedAttributes: {
+				a: ['href']
+			}
+		}
+
+		const clean = entry => {
+			const { content } = entry
+			if (content && content['content-type'] === 'text/html') {
+				content.value = sanitizeHTML(content.value, allowedHTML)
+			}
+			return entry
+		}
+
+		return webmentions
+			.filter(entry => entry['wm-target'] === url)
+			.filter(entry => allowedTypes.includes(entry['wm-property']))
+			// .filter(entry => !!entry.content)
+			.map(clean)
+	})
 
 	return {
 		"templateFormats": [
