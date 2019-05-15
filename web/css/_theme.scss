@@ -494,7 +494,7 @@ h5 {
 		font-size: 3em;
 	}
 	.primary-title.primary-title {
-		margin-top: 25vh;
+		margin-top: 10vh;
 	}
 }
 
@@ -1071,12 +1071,20 @@ th.numeric {
 
 	@media (max-width: $oneColLayoutMaxWidth) {
 		text-align: center;
+		margin-left: -.5em;
+		margin-right: -.5em;
 	}
 }
 .tags.tags-rail .tag {
 	margin-right: 0;
 	margin-left: 1px;
 	margin-bottom: 5px;
+
+	@media (max-width: $oneColLayoutMaxWidth) {
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-left: 0;
+	}
 }
 
 /* Top 5 Rail module */

@@ -42,7 +42,7 @@
 	<body>
 		<div class="rail">
 			<header>
-				<a href="{{ '/' | url }}" class="header">
+				<a href="/" class="header">
 					<img src="/img/avatar-2017-88.png" alt="Zach’s ugly mug (his face)">
 					<h1>Zach Leatherman</h1>
 				</a>
@@ -52,19 +52,12 @@
 					<div class="navigation">
 						<div class="tags tags-rail">
 							<span class="tags-bigger">
-								<a href="/web/" class="tag tag-borderless{% if page.url == '/' %} active{% endif %}">Home</a>
+								<a href="/" class="tag tag-borderless{% if page.url == '/../' %} active{% endif %}">Home</a>
+								<a href="/web/" class="tag tag-borderless{% if page.url == '/' %} active{% endif %}">Archives</a>
 								<a href="/web/about/" class="tag tag-borderless{% if page.url == '/about/' %} active{% endif %}">About</a>
 							</span>
 							<a href="/web/fonts/" class="tag font-loading{% if page.url == '/fonts/' %} active{% endif %}">Web Fonts</a>
 							<a href="/web/eleventy/" class="tag{% if page.url == '/eleventy/' %} active{% endif %}">Eleventy</a>
-							<a href="/web/speaking/" class="tag{% if page.url == '/speaking/' %} active{% endif %}">Speaking</a>
-							<a href="/web/projects/" class="tag{% if page.url == '/projects/' %} active{% endif %}">Projects</a>
-							<a href="/web/notes/" class="tag{% if page.url == '/notes/' %} active{% endif %}">Notes</a>
-							<a href="/web/research/" class="tag{% if page.url == '/research/' %} active{% endif %}">Research</a>
-							<a href="/web/citations/" class="tag{% if page.url == '/citations/' %} active{% endif %}">Citations</a>
-							<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/best-of/' %} active{% endif %}{% if hasToc == true %} has-toc{% endif %}">Popular 🔥</a>
-							<!-- <a href="/web/" class="tag{% if page.url == '/' %} active{% endif %}">All Posts</a> -->
-							<!-- <a href="/web/highlights/" class="tag highlight{% if page.url == '/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> -->
 						</div>
 						<div class="social">
 							<a href="https://twitter.com/zachleat" class="social_icon icon-twitter" title="@zachleat on Twitter">Twitter</a>
@@ -74,7 +67,16 @@
 							<a href="http://nebraskajs.com/" class="social_icon icon-nebraskajs">NebraskaJS</a>
 							<a href="/web/feed/" class="social_icon icon-feed" title="Zach Leatherman’s RSS Feed">RSS</a>
 						</div><!-- /.social -->
-{% if hasToc != true %}
+						<div class="tags tags-rail">
+							<a href="/web/notes/" class="tag{% if page.url == '/notes/' %} active{% endif %}">Notes</a>
+							<a href="/web/speaking/" class="tag{% if page.url == '/speaking/' %} active{% endif %}">Speaking</a>
+							<a href="/web/projects/" class="tag{% if page.url == '/projects/' %} active{% endif %}">Projects</a>
+							<a href="/web/research/" class="tag{% if page.url == '/research/' %} active{% endif %}">Research</a>
+							<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/best-of/' %} active{% endif %}{% if hasToc == true or hidePopularInSidebar == true %} has-toc{% endif %}">Popular 🔥</a>
+							<!-- <a href="/web/citations/" class="tag{% if page.url == '/citations/' %} active{% endif %}">Citations</a> -->
+							<!-- <a href="/web/highlights/" class="tag highlight{% if page.url == '/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> -->
+						</div>
+{% if hasToc != true and hidePopularInSidebar != true %}
 						<div class="tags tags-rail tags-rail-top5">
 {% if collections.latestPosts[0] %}
 							<h2 class="top5">Latest</h2>
