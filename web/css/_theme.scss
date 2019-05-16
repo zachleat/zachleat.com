@@ -494,7 +494,7 @@ h5 {
 		font-size: 3em;
 	}
 	.primary-title.primary-title {
-		margin-top: 25vh;
+		margin-top: 10vh;
 	}
 }
 
@@ -719,8 +719,8 @@ th.numeric {
 
 	@include unhyphenate;
 }
-.posts .posts-note .posts-link {
-	font-size: 1.157894736842em; /* 22px /19 */
+.posts .posts-link-more {
+	text-decoration: underline;
 }
 @supports (text-decoration-skip-ink: auto) {
 	.posts .posts-link:hover,
@@ -805,13 +805,15 @@ th.numeric {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	line-height: 1.5;
+	min-height: 2.285714285714em; /* 32px /14 */
 }
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 34.375em) {
+@media (min-width: $twoColLayoutMinWidth) {
 	.sub {
-		margin-bottom: 5rem;
+		margin-bottom: 5.714285714286em; /* 80px /14 */
 	}
 	.sub + .sub {
-		margin-top: -5.5rem;
+		margin-top: -6.285714285714em; /* -88px /14 */
 	}
 }
 .sub em:empty {
@@ -1069,12 +1071,20 @@ th.numeric {
 
 	@media (max-width: $oneColLayoutMaxWidth) {
 		text-align: center;
+		margin-left: -.5em;
+		margin-right: -.5em;
 	}
 }
 .tags.tags-rail .tag {
 	margin-right: 0;
 	margin-left: 1px;
 	margin-bottom: 5px;
+
+	@media (max-width: $oneColLayoutMaxWidth) {
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-left: 0;
+	}
 }
 
 /* Top 5 Rail module */

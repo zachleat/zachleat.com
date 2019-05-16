@@ -1,13 +1,12 @@
 ---
+title: Archives
 layout: default
-tmpl: home
+tmpl: list
 ---
 
 <div class="maxwidth-list">
-	<div id="about-index" class="about-description posts-paragraph">
-		<p>{% include bio-text-medium.html %} <a href="/web/about/">Read more<span class="a11y-only"> about Zach</span> &raquo;</a></p>
-	</div>
 	<article>
+		<h1 class="primary-title posts-indent">{{ title }}</h1>
 		<ol id="main-posts-list" class="posts posts-count" style="counter-reset: start-from {{ collections.posts | size | plus: 1 }}">
 			{% comment %}
 				liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
@@ -15,10 +14,6 @@ tmpl: home
 			{% assign year = "" %}
 			{% assign currentyear = "" %}
 			{% assign currentyearpostcount = 0 %}
-			{% for post in collections.note reversed %}
-				{% include post-list-entry.html %}
-				{% break %}
-			{% endfor %}
 			{% for post in collections.posts %}
 				{% include post-list-entry.html %}
 			{% endfor %}
