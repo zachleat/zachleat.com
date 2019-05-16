@@ -1,19 +1,25 @@
 <article class="webmention h-cite" id="webmention-{{ webmention['wm-id'] }}">
   <div class="webmention__meta">
-    {% if webmention.author %}
-      <a class="webmention__author p-author h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-        {% if webmention.author.photo %}
-          <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}">
+    {% if webmention.url != "" %}
+    <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+    {% endif %}
+    {% if webmention.author and webmention.author.name != "" %}
+      <span class="webmention__author p-author">
+        {% if webmention.author.photo != "" %}
+          <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" loading="lazy">
         {% else %}
-          <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="">
+          <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="" loading="lazy">
         {% endif %}
         <strong class="p-name">{{ webmention.author.name }}</strong>
-      </a>
+      </span>
     {% else %}
       <span class="webmention__author">
-        <img class="webmention__author__photo" src="{{ '/assets/images/avatar-default.svg' | url }}" alt="">
+        <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="" loading="lazy">
         <strong>Anonymous</strong>
       </span>
+    {% endif %}
+    {% if webmention.url != "" %}
+    </a>
     {% endif %}
 
     {% if webmention.published %}

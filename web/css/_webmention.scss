@@ -18,10 +18,12 @@
 }
 .webmentions__list {
     list-style-type: none;
+}
+.webmentions__list.webmentions__list.webmentions__list {
     padding:0;
 }
 .webmentions__item {
-    margin-bottom: 2rem;
+    margin-bottom: 1em;
 }
 
 /* Single Webmention */
@@ -50,4 +52,24 @@
 }
 .webmention__pubdate {
     font-style: italic;
+}
+
+/* Webmention form */
+.form-webmention {
+    margin-bottom: 2rem;
+}
+.form-webmention label {
+    display: block;
+}
+.form-webmention input {
+    height: 2rem;
+}
+.form-webmention input[type="url"] {
+    width: calc(100% - 13em);
+    max-width: 30em;
+}
+.form-webmention [type="submit"] {
+    -webkit-appearance: none;
+    margin-left: .25em;
+    width: 12em;
 }

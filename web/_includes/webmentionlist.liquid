@@ -2,29 +2,33 @@
 {%- assign mentions = webmentions.children | webmentionsForUrl: absoluteUrl -%}
 {%- assign mentionsSize = mentions | size -%}
 <div class="webmentions" id="webmentions">
+
+{% if mentionsSize > 0 %}
   <h3>Webmentions</h3>
+  <div class="webmentions__facepile">
+    {% for webmention in mentions limit:5 %} <!-- TODO reverse -->
+      <img src="{% if webmention.author.photo != "" %}{{ webmention.author.photo }}{% else %}{{ '/img/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions__face" />
+    {% endfor %}
+    {% if mentionsSize > 5 %}
+      {% assign leftoverCount = mentionsSize | minus:5 %}
+      <span>+{{ leftoverCount }}</span>
+      }
+    {% endif %}
+  </div>
 
-  {% if mentionsSize > 0 %}
-    <div class="webmentions__facepile">
-      {% for webmention in mentions limit:5 %} <!-- TODO reverse -->
-        <img src="{% if webmention.author.photo %}{{ webmention.author.photo }}{% else %}{{ '/img/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions__face" />
-      {% endfor %}
-      {% if mentionsSize > 5 %}
-        {% assign leftoverCount = mentionsSize | minus:5 %}
-        <span>+{{ leftoverCount }}</span>
-        }
-      {% endif %}
-    </div>
+  <ol class="webmentions__list">
+    {% for webmention in mentions %} <!-- TODO reverse -->
+      <li class="webmentions__item">
+        {% include webmention %}
+      </li>
+    {% endfor %}
+  </ol>
+{% endif %}
 
-    <ol class="webmentions__list">
-      {% for webmention in mentions %} <!-- TODO reverse -->
-        <li class="webmentions__item">
-          {% include webmention %}
-        </li>
-      {% endfor %}
-    </ol>
-
-  {% else %}
-    <p>No mentions yet.</p>
-  {% endif %}
+  <!-- <form action="https://webmention.io/www.zachleat.com/webmention" method="post" class="form-webmention">
+    <label for="form-webmention-target">Send a webmention here from:</label>
+    <input type="hidden" name="source" value="https://www.zachleat.com/web{{ page.url }}">
+    <input id="form-webmention-target" type="url" name="target" placeholder="https://example.com">
+    <input type="submit" class="button" value="Send Webmention">
+  </form> -->
 </div>
