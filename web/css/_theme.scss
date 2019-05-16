@@ -719,8 +719,8 @@ th.numeric {
 
 	@include unhyphenate;
 }
-.posts .posts-note .posts-link {
-	font-size: 1.157894736842em; /* 22px /19 */
+.posts .posts-link-more {
+	text-decoration: underline;
 }
 @supports (text-decoration-skip-ink: auto) {
 	.posts .posts-link:hover,

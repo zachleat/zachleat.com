@@ -14,10 +14,6 @@ tmpl: list
 			{% assign year = "" %}
 			{% assign currentyear = "" %}
 			{% assign currentyearpostcount = 0 %}
-			{% for post in collections.note reversed %}
-				{% include post-list-entry.html %}
-				{% break %}
-			{% endfor %}
 			{% for post in collections.posts %}
 				{% include post-list-entry.html %}
 			{% endfor %}
