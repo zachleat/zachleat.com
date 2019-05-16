@@ -89,7 +89,7 @@ Want a [full history of FOIT and FOUT](/web/fout-foit-history/)?
 
 ## Related
 
-* [Video of the announcement at Google I/O](https://www.youtube.com/watch?time_continue=28095&v=cb_oxa4Y1Bc) (Starts at 7:48:15, is only about a minute long)
+* [Video of the announcement at Google I/O](https://www.youtube.com/watch?v=YJGCZCaIZkQ&t=31m20s)
 
 ## Future wishlist
 
