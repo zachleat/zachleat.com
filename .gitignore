@@ -2,14 +2,12 @@
 /index.html
 .DS_Store
 node_modules
-bower_components
 .sass-cache
 _site
 _cache
 dist
 web/_config.yml
 web/_drafts
-logs
 zachleat-bestof.json
 package-lock.json
 web/_includes/*.css
