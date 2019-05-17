@@ -1,6 +1,5 @@
 ---
 title: NebraskaJS Omaha
-permalink: /rocket-science-nebraskajs/
 categories:
   - presentations
 tags:

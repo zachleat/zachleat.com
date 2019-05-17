@@ -2,7 +2,6 @@
 title: 'enterval, an automatic setInterval chainer.'
 author: Zach Leatherman
 layout: post
-permalink: /enterval-an-automatic-setinterval-chainer/
 tags:
   - project
 feedtrim: true

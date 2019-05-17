@@ -2,7 +2,6 @@
 title: The Perfect GIF
 author: Zach Leatherman
 layout: post
-permalink: /the-perfect-gif/
 categories:
   - presentations
 tags:

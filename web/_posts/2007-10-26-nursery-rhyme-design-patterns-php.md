@@ -2,7 +2,6 @@
 title: 'Nursery Rhyme Code Poem [PHP]'
 author: Zach Leatherman
 layout: post
-permalink: /nursery-rhyme-design-patterns-php/
 feedtrim: true
 ---
 

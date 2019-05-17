@@ -2,7 +2,6 @@
 title: JavaScript Frameworks and JSF
 author: Zach Leatherman
 layout: post
-permalink: /javascript-frameworks-and-jsf/
 Version Specific Article:
   - Specified Below
 deprecated: true

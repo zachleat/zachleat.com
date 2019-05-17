@@ -1,6 +1,5 @@
 ---
 title: Google Open Source Award for Eleventy
-permalink: /eleventy-google-award/
 tags:
   - eleventy
   - award

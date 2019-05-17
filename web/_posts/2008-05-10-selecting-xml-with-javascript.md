@@ -2,7 +2,6 @@
 title: 'Selecting XML Nodes with JavaScript, or the Peril of getElementsByTagName'
 author: Zach Leatherman
 layout: post
-permalink: /selecting-xml-with-javascript/
 smalltitle: true
 tags:
   - highlight

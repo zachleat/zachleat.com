@@ -1,6 +1,5 @@
 ---
 title: It’s Dangerous to Go Stallone. Take Glyphhanger
-permalink: /glyphhanger/
 tags:
   - font-loading
   - project

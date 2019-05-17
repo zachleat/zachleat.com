@@ -2,7 +2,6 @@
 title: 'maLArquee, Bringing Back the Marquee'
 author: Zach Leatherman
 layout: post
-permalink: /malarquee-bringing-back-the-marquee/
 project_name: maLArquee
 description: A strange project creating a marquee.
 headimage: /web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-10.50.55-PM.png

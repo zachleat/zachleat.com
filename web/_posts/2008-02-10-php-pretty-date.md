@@ -2,7 +2,6 @@
 title: PHP Pretty Date
 author: Zach Leatherman
 layout: post
-permalink: /php-pretty-date/
 description: PHP script to show the relative difference between a time and now.
 categories:
   - project

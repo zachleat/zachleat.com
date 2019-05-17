@@ -2,7 +2,6 @@
 title: 'HTML5 vs. Native Applications, The Presentation'
 author: Zach Leatherman
 layout: post
-permalink: /html5-vs-native-applications/
 categories:
   - presentations
 ---

@@ -2,7 +2,7 @@
 title: Impostor Syndrome
 author: Zach Leatherman
 layout: post
-permalink: /impostor/
+permalink: /web/impostor/
 categories:
   - presentations
 tags:

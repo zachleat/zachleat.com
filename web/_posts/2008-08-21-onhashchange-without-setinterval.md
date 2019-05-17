@@ -2,7 +2,6 @@
 title: Emulating onhashchange without setInterval
 author: Zach Leatherman
 layout: post
-permalink: /onhashchange-without-setinterval/
 tags:
   - highlight
   - research

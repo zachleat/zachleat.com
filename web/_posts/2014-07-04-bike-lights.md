@@ -1,8 +1,6 @@
 ---
 title: A Frugal and Simple Guide to Putting Lights on your Bike
-author: Zach Leatherman
 layout: post
-permalink: /bike-lights/
 feedtrim: true
 ---
 

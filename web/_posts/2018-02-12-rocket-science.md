@@ -1,6 +1,5 @@
 ---
 title: Web Fonts are ▢▢▢ Rocket Science
-permalink: rocket-science
 categories:
 tags:
   - external

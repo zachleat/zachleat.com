@@ -2,7 +2,6 @@
 title: 'Quick Performance Tip: jQuery and addClass'
 author: Zach Leatherman
 layout: post
-permalink: /quick-performance-tip-jquery-and-addclass/
 Version Specific Article:
   - jQuery 1.3.2
 ---

@@ -2,7 +2,6 @@
 title: Enlarging your YUI DataTable in 29 Seconds or Less!
 author: Zach Leatherman
 layout: post
-permalink: /enlarging-your-yui-datatable-in-29-seconds-or-less/
 Version Specific Article:
   - YUI 2.3.0
 categories:

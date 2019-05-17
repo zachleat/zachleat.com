@@ -1,6 +1,5 @@
 ---
 title: Import your Disqus Comments to Eleventy
-permalink: /disqus-import/
 tags:
   - eleventy
 ---

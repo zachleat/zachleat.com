@@ -2,7 +2,6 @@
 title: Fundamental Problem with YUI Button
 author: Zach Leatherman
 layout: post
-permalink: /fundamental-problem-with-yui-button/
 Version Specific Article:
   - YUI 2.2.0
 deprecated: true

@@ -1,6 +1,6 @@
 ---
 title: 23 Minutes of Work for Better Font Loading
-permalink: 23-minutes/
+permalink: /web/23-minutes/
 categories:
   - font-loading
 tags:

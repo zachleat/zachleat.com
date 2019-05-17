@@ -1,6 +1,5 @@
 ---
 title: The Ten Twitter Commandments
-permalink: twitter-guide/
 categories:
   - presentations
 tags:

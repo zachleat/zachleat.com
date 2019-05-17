@@ -1,6 +1,5 @@
 ---
 title: spider-pig Searches for Nodes that match a CSS Selector
-permalink: /spider-pig/
 tags:
   - project
 ---

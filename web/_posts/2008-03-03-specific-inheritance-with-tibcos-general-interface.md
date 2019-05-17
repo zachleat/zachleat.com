@@ -2,7 +2,6 @@
 title: 'Specific Inheritance with TIBCO&#8217;s General Interface'
 author: Zach Leatherman
 layout: post
-permalink: /specific-inheritance-with-tibcos-general-interface/
 feedtrim: true
 ---
 

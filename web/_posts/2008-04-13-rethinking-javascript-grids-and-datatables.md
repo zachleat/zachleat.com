@@ -2,7 +2,6 @@
 title: Rethinking JavaScript Grids and DataTables
 author: Zach Leatherman
 layout: post
-permalink: /rethinking-javascript-grids-and-datatables/
 tags: []
 feedtrim: true
 ---

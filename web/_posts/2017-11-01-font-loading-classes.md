@@ -1,6 +1,5 @@
 ---
 title: Managing Font Loading CSS Was Painful—Not Anymore
-permalink: /font-loading-classes/
 categories:
   - font-loading
 tags:

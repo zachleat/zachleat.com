@@ -1,6 +1,5 @@
 ---
 title: 'Introducing Eleventy, a new Static Site Generator'
-permalink: /introducing-eleventy/
 tags:
   - eleventy
   - project

@@ -2,7 +2,6 @@
 title: 'Conservative Design: Command Line Interface'
 author: Zach Leatherman
 layout: post
-permalink: /conservative-design-command-line-interface/
 feedtrim: true
 ---
 

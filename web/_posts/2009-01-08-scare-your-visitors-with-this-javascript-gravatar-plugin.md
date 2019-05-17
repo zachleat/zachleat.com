@@ -2,7 +2,6 @@
 title: Scare Your Visitors with this JavaScript Gravatar Plugin
 author: Zach Leatherman
 layout: post
-permalink: /scare-your-visitors-with-this-javascript-gravatar-plugin/
 project_name: jQuery.gravatar
 description: Retrieve a gravatar image dynamically from any e-mail address.
 categories:

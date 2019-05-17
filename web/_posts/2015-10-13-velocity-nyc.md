@@ -2,7 +2,7 @@
 title: The Performance and Usability of Web Fonts—Velocity New York City
 author: Zach Leatherman
 layout: post
-permalink: /velocity/2015-nyc/
+permalink: /web/velocity/2015-nyc/
 categories:
   - presentations
   - font-loading

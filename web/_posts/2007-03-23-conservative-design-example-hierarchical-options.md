@@ -2,7 +2,6 @@
 title: 'Conservative Design Example: Hierarchical Options'
 author: Zach Leatherman
 layout: post
-permalink: /conservative-design-example-hierarchical-options/
 feedtrim: true
 ---
 

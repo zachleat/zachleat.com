@@ -1,6 +1,5 @@
 ---
 title: 'Smashing Book #5'
-permalink: /smashingbook5/
 tags:
   - resume
   - font-loading

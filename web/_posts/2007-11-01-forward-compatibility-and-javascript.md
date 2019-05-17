@@ -2,7 +2,6 @@
 title: Forward Compatibility and JavaScript
 author: Zach Leatherman
 layout: post
-permalink: /forward-compatibility-and-javascript/
 feedtrim: true
 ---
 

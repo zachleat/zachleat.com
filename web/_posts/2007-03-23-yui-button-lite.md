@@ -2,7 +2,6 @@
 title: YUI Button Lite
 author: Zach Leatherman
 layout: post
-permalink: /yui-button-lite/
 Version Specific Article:
   - YUI 2.2.0
 deprecated: true

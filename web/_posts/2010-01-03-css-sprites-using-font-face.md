@@ -2,7 +2,6 @@
 title: DIY Webdings—CSS Sprites using @font-face
 author: Zach Leatherman
 layout: post
-permalink: /css-sprites-using-font-face/
 tags:
   - highlight
   - research

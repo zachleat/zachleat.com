@@ -2,7 +2,6 @@
 title: ALARMd now supports URLs
 author: Zach Leatherman
 layout: post
-permalink: /alarmd-now-supports-urls/
 feedtrim: true
 ---
 

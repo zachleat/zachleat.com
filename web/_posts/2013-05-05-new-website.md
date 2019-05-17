@@ -1,8 +1,7 @@
 ---
 title: 'zachleat.com is Dead, Long Live zachleat.com'
-author: Zach Leatherman
 layout: post
-permalink: /zachleat-is-dead/
+permalink: /web/zachleat-is-dead/
 ---
 
 *If you’re reading this in the RSS Feed, please accept my humble apologies for not transparently converting my feed. This is one of the perils of switching from WordPress to Jekyll. The URL for the feed has **not** changed, but you’ll probably see a lot of unread items appearing here, so feel free to “mark all as read.”*

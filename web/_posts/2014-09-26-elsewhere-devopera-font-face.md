@@ -2,7 +2,7 @@
 title: Better @font-face with Font Load Events on Dev.Opera
 author: Zach Leatherman
 layout: post
-permalink: /external/devopera-font-face/
+permalink: /web/external/devopera-font-face/
 external_url: 'https://dev.opera.com/articles/better-font-face/'
 categories:
   - font-loading

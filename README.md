@@ -6,8 +6,7 @@ Prerequisites: Node.js and Ruby
 
 		<VirtualHost *>
 		ServerName zachleat.localhost
-		DocumentRoot "/PATH_TO_SITE/"
-		Alias /web/ /PATH_TO_SITE/web/_site/
+		DocumentRoot "/PATH_TO_SITE/_site/"
 		</virtualHost>
 		
 1. Add to `/etc/hosts`

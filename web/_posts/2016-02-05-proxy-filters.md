@@ -2,7 +2,7 @@
 title: A Story About Proxy Filters
 author: Zach Leatherman
 layout: post
-permalink: /proxy-filter/
+permalink: /web/proxy-filter/
 categories: null
 tags: null
 ---

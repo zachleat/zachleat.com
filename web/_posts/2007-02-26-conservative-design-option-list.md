@@ -2,7 +2,6 @@
 title: 'Conservative Design: Option List'
 author: Zach Leatherman
 layout: post
-permalink: /conservative-design-option-list/
 feedtrim: true
 ---
 

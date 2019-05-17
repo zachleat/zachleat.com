@@ -2,7 +2,7 @@
 title: 'The Web Fonts: Preloaded'
 author: Zach Leatherman
 layout: post
-permalink: /preload/
+permalink: /web/preload/
 categories:
   - font-loading
 tags:

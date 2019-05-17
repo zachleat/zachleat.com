@@ -8,13 +8,13 @@
         {% if webmention.author.photo != "" %}
           <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" loading="lazy">
         {% else %}
-          <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="" loading="lazy">
+          <img class="webmention__author__photo" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="" loading="lazy">
         {% endif %}
         <strong class="p-name">{{ webmention.author.name }}</strong>
       </span>
     {% else %}
       <span class="webmention__author">
-        <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="" loading="lazy">
+        <img class="webmention__author__photo" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="" loading="lazy">
         <strong>Anonymous</strong>
       </span>
     {% endif %}

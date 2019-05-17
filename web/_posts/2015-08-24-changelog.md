@@ -2,7 +2,7 @@
 title: 'Changelog #166, NEJS CONF 2015'
 author: Zach Leatherman
 layout: post
-permalink: /changelog-podcast/
+permalink: /web/changelog-podcast/
 categories:
   - presentations
 tags:

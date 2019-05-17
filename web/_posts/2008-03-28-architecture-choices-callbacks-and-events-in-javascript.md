@@ -2,7 +2,6 @@
 title: 'Architecture Choices: Callbacks and Events in JavaScript'
 author: Zach Leatherman
 layout: post
-permalink: /architecture-choices-callbacks-and-events-in-javascript/
 feedtrim: true
 ---
 

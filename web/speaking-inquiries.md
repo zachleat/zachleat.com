@@ -2,7 +2,7 @@
 title: I Can Say Words Out Loud At Your Event
 layout: page
 date: Last Modified
-permalink: /speaking/inquiries/
+permalink: /web/speaking/inquiries/
 ---
 
 So you’ve reviewed my [past speaking experience](/web/speaking/) and decided that I might be a good fit to speak at your event—how exciting!

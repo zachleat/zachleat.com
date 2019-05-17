@@ -1,6 +1,5 @@
 ---
 title: 'Selecthor: A Better way to Learn and Demo CSS Selectors'
-permalink: /selecthor/
 tags:
   - project
 headimage: /web/img/posts/selecthor/preview.jpg

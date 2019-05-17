@@ -1,6 +1,5 @@
 ---
 title: SmashingConf London 2018
-permalink: smashingconf-london/
 categories:
   - presentations
 tags:

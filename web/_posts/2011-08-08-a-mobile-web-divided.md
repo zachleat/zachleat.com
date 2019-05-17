@@ -2,7 +2,6 @@
 title: A Mobile Web Divided
 author: Zach Leatherman
 layout: post
-permalink: /a-mobile-web-divided/
 categories:
   - Application Design
 ---

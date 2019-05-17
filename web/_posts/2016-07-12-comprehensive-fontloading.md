@@ -2,7 +2,7 @@
 title: A Comprehensive Guide to Font Loading Strategies
 author: Zach Leatherman
 layout: post
-permalink: /comprehensive-webfonts/
+permalink: /web/comprehensive-webfonts/
 categories:
   - font-loading
 tags:

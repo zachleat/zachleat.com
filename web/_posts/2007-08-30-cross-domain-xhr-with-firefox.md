@@ -2,7 +2,6 @@
 title: Cross Domain XHR with Firefox 2
 author: Zach Leatherman
 layout: post
-permalink: /cross-domain-xhr-with-firefox/
 Version Specific Article:
   - Firefox 2
 tags:

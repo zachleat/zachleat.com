@@ -2,7 +2,6 @@
 title: Tech Meetup at the White House
 author: Zach Leatherman
 layout: post
-permalink: /whitehouse/
 headimage: /web/img/posts/whmeetup/seal.png
 categories:
   - presentations

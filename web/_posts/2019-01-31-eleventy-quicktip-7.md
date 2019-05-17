@@ -1,6 +1,5 @@
 ---
 title: 'Eleventy Quick Tip №7: Fetch GitHub Stargazers Count (and More) at Build Time'
-permalink: /eleventy-quicktip-7/
 tags:
   - eleventy
   - external

@@ -1,6 +1,5 @@
 ---
 title: A Historical Look at FOUT and FOIT
-permalink: /fout-foit-history/
 categories:
   - font-loading
 tags:

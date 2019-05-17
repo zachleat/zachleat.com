@@ -2,7 +2,6 @@
 title: 'Nursery Rhyme Code Poem [JavaScript]'
 author: Zach Leatherman
 layout: post
-permalink: /nursery-rhyme-code-poem-js/
 feedtrim: true
 ---
 

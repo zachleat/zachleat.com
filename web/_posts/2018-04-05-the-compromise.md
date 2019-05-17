@@ -1,6 +1,5 @@
 ---
 title: “The Compromise”—a Modern but Compatible Font Loading Strategy
-permalink: /the-compromise/
 tags:
   - font-loading
 ---

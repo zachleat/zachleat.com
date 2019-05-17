@@ -2,7 +2,6 @@
 title: Javascript Objects are NOT JSON
 author: Zach Leatherman
 layout: post
-permalink: /javascript-objects-are-not-json/
 feedtrim: true
 ---
 

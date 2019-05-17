@@ -1,6 +1,5 @@
 ---
 title: "Web Engineering Düsseldorf"
-permalink: web-engineering-duesseldorf
 categories:
   - presentations
 tags:

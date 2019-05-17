@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 	const _uniq = require('lodash/uniq');
 	const _remove = require('lodash/remove');
 	const normalize = require("normalize-path");
-	const bestof = grunt.file.readJSON("zachleat-bestof.json").rows;
+	const bestof = grunt.file.readJSON("_cache/zachleat-bestof.json").rows;
 	const debug = require("debug")("bestof");
 
 	"use strict";
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 			var slug = path.match(/^\/web\/(?:\d{4}\/\d{2}\/\d{2}\/)?([A-Za-z0-9-\/]+)/);
 			if (slug && slug.length > 1) {
 				var newslug = slug[1] + (slug[1].substr(-1) !== "/" ? "/" : "");
-				var filename = "web/_site/" + newslug + "index.html";
+				var filename = "_site/web/" + newslug + "index.html";
 
 				if (fs.existsSync(filename)) {
 					if (!pageviews[newslug]) {
@@ -168,7 +168,7 @@ module.exports = function(grunt) {
 		}
 
 		/* Warning this date won’t match the analytics data fetch date. */
-		/* TODO: use the file modified date on the zachleat-bestof.json include above. */
+		/* TODO: use the file modified date on the _cache/zachleat-bestof.json include above. */
 		var updatedDate = new Date().toLocaleString("en-US", {
 			year: "numeric",
 			month: "long",

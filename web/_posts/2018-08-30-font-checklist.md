@@ -1,6 +1,5 @@
 ---
 title: The Font Loading Checklist
-permalink: /font-checklist/
 tags:
   - font-loading
   - popular-posts

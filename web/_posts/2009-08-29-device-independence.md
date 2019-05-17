@@ -2,7 +2,6 @@
 title: Device Independence on the Open Web
 author: Zach Leatherman
 layout: post
-permalink: /device-independence/
 tags:
   - highlight
 ---

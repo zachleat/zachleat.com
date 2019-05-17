@@ -2,7 +2,6 @@
 title: Write More Efficient Javascript in YUI with CSS Selectors
 author: Zach Leatherman
 layout: post
-permalink: /write-more-efficient-javascript-in-yui-with-css-selectors/
 Version Specific Article:
   - YUI 2.3.0
 categories:

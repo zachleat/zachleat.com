@@ -2,7 +2,7 @@
 title: Projects (Retired)
 author: Zach Leatherman
 layout: page
-permalink: projects/retired/
+permalink: /web/projects/retired/
 ---
 
 ### Tournology

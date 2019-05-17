@@ -2,7 +2,6 @@
 title: Namespacing outside of the YAHOO Namespace
 author: Zach Leatherman
 layout: post
-permalink: /namespacing-outside-of-the-yahoo-namespace/
 feedtrim: true
 ---
 

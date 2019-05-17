@@ -2,7 +2,6 @@
 title: 'YUI DataTable and You: Making the Marriage Work'
 author: Zach Leatherman
 layout: post
-permalink: /yui-datatable-and-you-making-the-marriage-work/
 Version Specific Article:
   - YUI 2.2.2
 tags:

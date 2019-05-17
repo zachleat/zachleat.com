@@ -2,7 +2,6 @@
 title: I Wanted to Type a Number
 author: Zach Leatherman
 layout: post
-permalink: /filament-type-number/
 tags:
   - external
   - research

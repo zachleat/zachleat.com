@@ -2,7 +2,6 @@
 title: 'Tool or Die, a Web Developer’s Workflow'
 author: Zach Leatherman
 layout: post
-permalink: /tool-or-die/
 categories:
   - presentations
 tags:

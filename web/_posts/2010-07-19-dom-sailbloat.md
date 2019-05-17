@@ -2,7 +2,6 @@
 title: Maiden Voyage of the DOM Sailbloat
 author: Zach Leatherman
 layout: post
-permalink: /dom-sailbloat/
 categories:
   - project
 tags:

@@ -2,7 +2,7 @@
 title: CSS Position Sticky
 author: Zach Leatherman
 layout: post
-permalink: /css-position-sticky/
+permalink: /web/css-position-sticky/
 categories:
   - presentations
 tags:

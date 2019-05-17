@@ -9,7 +9,6 @@ tags:
   - project
   - highlight
   - font-loading
-permalink: /font-family-reunion/
 ---
 
 *Go directly to [Font Family Reunion](http://fontfamily.io/) or read more about it:*

@@ -1,7 +1,6 @@
 ---
 title: Should I Use JavaScript to Load My Web Fonts?
 layout: post
-permalink: /javascript-web-fonts/
 categories:
   - font-loading
 tags:

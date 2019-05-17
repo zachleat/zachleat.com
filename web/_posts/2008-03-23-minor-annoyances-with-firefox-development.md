@@ -2,7 +2,6 @@
 title: Minor Annoyances with Firefox Development
 author: Zach Leatherman
 layout: post
-permalink: /minor-annoyances-with-firefox-development/
 feedtrim: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'preload with font-display: optional is an Anti-pattern'
-permalink: /preload-font-display-optional/
+permalink: /web/preload-font-display-optional/
 tags:
   - font-loading
 ---

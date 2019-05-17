@@ -2,7 +2,6 @@
 title: Logical XOR in JavaScript
 author: Zach Leatherman
 layout: post
-permalink: /logical-xor-in-javascript/
 tags:
   - project
 feedtrim: true

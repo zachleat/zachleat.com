@@ -1,8 +1,6 @@
 ---
 title: Bulletproof Accessible Icon Fonts
-author: Zach Leatherman
 layout: post
-permalink: /bulletproof-icon-fonts/
 headimage: /web/img/posts/pua-default.png
 categories:
   - project

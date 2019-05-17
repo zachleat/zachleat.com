@@ -2,7 +2,6 @@
 title: What Sound Does a Cow Make?  MooTools.
 author: Zach Leatherman
 layout: post
-permalink: /what-sound-does-a-cow-make-mootools/
 feedtrim: true
 ---
 

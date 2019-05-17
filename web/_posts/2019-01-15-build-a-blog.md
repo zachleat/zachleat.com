@@ -1,7 +1,5 @@
 ---
 title: Build your own Blog from Scratch using Eleventy
-permalink: /build-a-blog/
-categories: null
 tags:
   - external
   - eleventy

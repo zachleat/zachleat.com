@@ -1,6 +1,6 @@
 ---
 title: Obnoxiously Readable Responsive Text with Viewport Units
-permalink: /obnoxiously-readable/
+permalink: /web/obnoxiously-readable/
 tags:
   - font-loading
   - popular-posts

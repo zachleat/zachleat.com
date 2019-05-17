@@ -2,7 +2,6 @@
 title: A Nodecopter Informercial (at HOW Conf)
 author: Zach Leatherman
 layout: post
-permalink: /nodecopter/
 categories:
   - presentations
 tags: null

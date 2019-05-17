@@ -1,6 +1,6 @@
 ---
 title: 'CSS-Tricks Video Screencasts #152: Font Loading'
-permalink: /css-tricks-screencast/
+permalink: /web/css-tricks-screencast/
 categories:
   - presentations
   - font-loading

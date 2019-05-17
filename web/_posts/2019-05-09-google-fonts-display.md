@@ -1,6 +1,5 @@
 ---
 title: "Google Fonts is Adding font-display 🎉"
-permalink: google-fonts-display/
 tags:
   - font-loading
 ---

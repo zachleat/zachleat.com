@@ -2,7 +2,6 @@
 title: Wake up to YouTube on my Internet Alarm Clock
 author: Zach Leatherman
 layout: post
-permalink: /wake-up-to-youtube-on-my-internet-alarm-clock/
 project_name: ALARMd
 description: First iteration of the alarm clock that plays YouTube videos or other multimedia sources. Updated to ALARMd 2.
 tags:

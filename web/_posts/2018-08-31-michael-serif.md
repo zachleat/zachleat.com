@@ -1,6 +1,5 @@
 ---
 title: A Group of Web Font Repaints is called a Michael Serif
-permalink: /michael-serif/
 tags:
   - font-loading
 ---

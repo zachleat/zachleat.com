@@ -110,12 +110,10 @@ module.exports = function(grunt) {
 			// For CSS inlining
 			includes: {
 				files: {
-					// Copy this into data since we’re running in /web/ and don’t have access to the package.json (it’s up a dir)
-					'<%= config.root %>_data/package.json': ['package.json'],
-					'<%= config.root %>_includes/initial.min.css': ['<%= config.distFolder %>initial.min.css'],
-					'<%= config.root %>_includes/initial.css': ['<%= config.distFolder %>initial.css'],
-					'<%= config.root %>_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
-					'<%= config.root %>_includes/initial.js': ['<%= config.distFolder %>initial.js']
+					'_includes/initial.min.css': ['<%= config.distFolder %>initial.min.css'],
+					'_includes/initial.css': ['<%= config.distFolder %>initial.css'],
+					'_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
+					'_includes/initial.js': ['<%= config.distFolder %>initial.js']
 				}
 			}
 		},
@@ -141,33 +139,33 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: '<%= config.root %>_site/',
+						cwd: '_site/',
 						src: ['**/*.html'],
-						dest: '<%= config.root %>_site/',
+						dest: '_site/',
 						extDot: 'last',
 						ext: '.html.zgz'
 					},
 					{
 						expand: true,
-						cwd: '<%= config.root %>_site/',
+						cwd: '_site/',
 						src: ['**/*.js'],
-						dest: '<%= config.root %>_site/',
+						dest: '_site/',
 						extDot: 'last',
 						ext: '.js.zgz'
 					},
 					{
 						expand: true,
-						cwd: '<%= config.root %>_site/',
+						cwd: '_site/',
 						src: ['**/*.css'],
-						dest: '<%= config.root %>_site/',
+						dest: '_site/',
 						extDot: 'last',
 						ext: '.css.zgz'
 					},
 					{
 						expand: true,
-						cwd: '<%= config.root %>_site/',
+						cwd: '_site/',
 						src: ['**/*.svg'],
-						dest: '<%= config.root %>_site/',
+						dest: '_site/',
 						extDot: 'last',
 						ext: '.svg.zgz'
 					}
@@ -183,9 +181,9 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: '<%= config.root %>_site/',
+						cwd: '_site/',
 						src: '**/*.html',
-						dest: '<%= config.root %>_site/'
+						dest: '_site/'
 					}
 				]
 			}
@@ -194,24 +192,20 @@ module.exports = function(grunt) {
 			eleventy: {
 				command: 'npx eleventy --quiet',
 				options: {
-					execOptions: {
-						cwd: '<%= config.root %>'
-					}
+					execOptions: {}
 				}
 			},
 			// TODO https://github.com/shama/grunt-beep
 			upload: {
-				command: 'echo "Note: Requires an \'zachleat\' host in .ssh/config"; rsync --archive --verbose --stats --compress --rsh=ssh ./web/_site/ zachleat:/home/public/web/; rsync --archive --verbose --stats --compress --rsh=ssh ./index.html zachleat:/home/public/',
+				command: 'echo "Note: Requires an \'zachleat\' host in .ssh/config"; rsync --archive --verbose --stats --compress --rsh=ssh ./_site/ zachleat:/home/public/',
 				options: {
 					maxBuffer: 1024 * 1024 * 64,
-					execOptions: {
-						// cwd: '<%= config.root %>'
-					}
+					execOptions: {}
 				}
 			}
 		},
 		clean: {
-			zopfli: [ '<%= config.root %>/_site/**/*.zgz' ]
+			zopfli: [ '_site/**/*.zgz' ]
 		},
 		watch: {
 			assets: {
@@ -224,11 +218,11 @@ module.exports = function(grunt) {
 			},
 			content: {
 				files: [
-					'<%= config.root %>**/*.liquid',
-					'<%= config.root %>**/*.njk',
-					'<%= config.root %>**/*.html',
-					'<%= config.root %>**/*.md',
-					'!<%= config.root %>_site/**/*' ],
+					'**/*.liquid',
+					'**/*.njk',
+					'**/*.html',
+					'**/*.md',
+					'!_site/**/*' ],
 				tasks: ['content']
 			}
 		}

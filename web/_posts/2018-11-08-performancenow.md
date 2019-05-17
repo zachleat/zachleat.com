@@ -1,6 +1,6 @@
 ---
 title: "performance.now(); the Web Performance Conference"
-permalink: performance.now/
+permalink: /web/performance.now/
 categories:
   - presentations
 tags:

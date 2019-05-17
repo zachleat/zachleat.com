@@ -2,7 +2,6 @@
 title: DOMContentLoaded Inconsistencies (in Browsers and JavaScript Libraries)
 author: Zach Leatherman
 layout: post
-permalink: /domcontentloaded-inconsistencies/
 smalltitle: true
 tags:
   - highlight

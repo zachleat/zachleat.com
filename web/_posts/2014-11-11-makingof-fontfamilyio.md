@@ -2,7 +2,7 @@
 title: The Making of fontfamily.io
 author: Zach Leatherman
 layout: post
-permalink: /making-fontfamilyio/
+permalink: /web/making-fontfamilyio/
 categories:
   - presentations
   - font-loading

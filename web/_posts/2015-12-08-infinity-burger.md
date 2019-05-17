@@ -6,7 +6,6 @@ categories:
   - project
 tags:
   - project
-permalink: /infinity-burger/
 ---
 
 A whimsical hamburger menu* that goes on forever.

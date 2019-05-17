@@ -2,7 +2,6 @@
 title: Quine using XHTML and JavaScript
 author: Zach Leatherman
 layout: post
-permalink: /quine-using-xhtml-and-javascript/
 feedtrim: true
 ---
 

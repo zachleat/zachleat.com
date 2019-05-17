@@ -1,6 +1,5 @@
 ---
 title: The Life Expectancy of Digital Content
-permalink: /digital-longevity/
 ---
 I snuck back on to Twitter for a few moments this morning and was presented with a fascinating video from [**Anthony Bourdain’s series Raw Craft on the Arion Press**](https://www.youtube.com/watch?v=i-5NhxYRqUI), a magical and fascinating little business in San Francisco that hand-crafts books. Thank you so much [Robin Rendle](https://twitter.com/robinrendle/status/1005176531075780608) for sharing this.
 

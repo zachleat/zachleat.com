@@ -7,7 +7,7 @@
   <h3>Webmentions</h3>
   <div class="webmentions__facepile">
     {% for webmention in mentions limit:5 %} <!-- TODO reverse -->
-      <img src="{% if webmention.author.photo != "" %}{{ webmention.author.photo }}{% else %}{{ '/img/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions__face" />
+      <img src="{% if webmention.author.photo != "" %}{{ webmention.author.photo }}{% else %}{{ '/web/img/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions__face" />
     {% endfor %}
     {% if mentionsSize > 5 %}
       {% assign leftoverCount = mentionsSize | minus:5 %}

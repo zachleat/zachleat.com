@@ -2,7 +2,6 @@
 title: I-Frame Shims or How I Learned to Stop Worrying and Love the Bomb
 author: Zach Leatherman
 layout: post
-permalink: /adventures-in-i-frame-shims-or-how-i-learned-to-love-the-bomb/
 Version Specific Article:
   - Internet Explorer 6
 deprecated: true

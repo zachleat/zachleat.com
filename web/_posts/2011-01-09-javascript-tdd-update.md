@@ -2,7 +2,6 @@
 title: An Update to The JavaScript Testing Challenge
 author: Zach Leatherman
 layout: post
-permalink: /javascript-tdd-update/
 ---
 
 ***Update**: [The JavaScript Testing Challenge Winner][1]*

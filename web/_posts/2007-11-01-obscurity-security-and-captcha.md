@@ -2,7 +2,6 @@
 title: 'Obscurity, Security, and Captcha'
 author: Zach Leatherman
 layout: post
-permalink: /obscurity-security-and-captcha/
 feedtrim: true
 ---
 

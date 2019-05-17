@@ -2,7 +2,7 @@
 title: Side Projects (at Awesome Camp)
 author: Zach Leatherman
 layout: post
-permalink: /side-projects/
+permalink: /web/side-projects/
 categories:
   - presentations
 ---

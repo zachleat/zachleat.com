@@ -1,6 +1,5 @@
 ---
 title: The Scoville Scale of Web Font Loading Opinions
-permalink: scoville-scale/
 categories:
   - presentations
 tags:

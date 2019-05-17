@@ -2,7 +2,7 @@
 title: The Mitt Romney Web Font Problem
 author: Zach Leatherman
 layout: post
-permalink: /mitt-romney-webfont-problem/
+permalink: /web/mitt-romney-webfont-problem/
 headimage: 'https://www.zachleat.com/web/img/posts/mittromney/face.jpg'
 categories:
   - font-loading

@@ -2,7 +2,6 @@
 title: The JavaScript Testing Challenge
 author: Zach Leatherman
 layout: post
-permalink: /javascript-tdd/
 tags:
   - video
 medialength: 5 min

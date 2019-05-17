@@ -2,7 +2,6 @@
 title: 'Trash that &#8220;Back to Top&#8221; Link'
 author: Zach Leatherman
 layout: post
-permalink: /trash-that-back-to-top-link/
 ---
 
 > It would seem that perfection is attained not when no more can be added, but when no more can be removed.

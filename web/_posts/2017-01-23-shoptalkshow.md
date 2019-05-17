@@ -1,6 +1,6 @@
 ---
 title: 'Shop Talk Show #247: The Performance Equation'
-permalink: /show-talk-show/
+permalink: /web/show-talk-show/
 categories:
   - presentations
   - font-loading

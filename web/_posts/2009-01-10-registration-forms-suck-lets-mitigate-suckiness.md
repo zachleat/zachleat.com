@@ -3,7 +3,6 @@ title: 'Registration Forms Suck, Let&#8217;s Mitigate Suckiness'
 author: Zach Leatherman
 excerpt: 'A lot of people <strong>complain about registration forms</strong>. Some people have suggested getting rid of them altogether, allowing users to utilize login credentials from accounts they already have through OpenID.  But registration forms aren''t going away.  How can we make them more friendly?'
 layout: post
-permalink: /registration-forms-suck-lets-mitigate-suckiness/
 ---
 
 ![Signup Form][1]

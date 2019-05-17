@@ -2,7 +2,7 @@
 title: Web Fonts for President 2016
 author: Zach Leatherman
 layout: post
-permalink: /president-web-font/
+permalink: /web/president-web-font/
 categories:
   - font-loading
 tags:

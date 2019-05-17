@@ -8,24 +8,35 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 // const stripHtml = require("string-strip-html");
 
 module.exports = function(eleventyConfig) {
-	eleventyConfig.addPlugin(pluginRss);
-	eleventyConfig.addPlugin(pluginSyntaxHighlight);
-
 	eleventyConfig.setDataDeepMerge(true);
 
 	eleventyConfig.setLiquidOptions({
 		strict_filters: true
 	});
 
+	/* PLUGINS */
+	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(pluginSyntaxHighlight);
+
+	/* COPY */
+	eleventyConfig.addPassthroughCopy("demos/");
+	eleventyConfig.addPassthroughCopy("img/");
+	eleventyConfig.addPassthroughCopy("presentations/");
+	eleventyConfig.addPassthroughCopy("robots.txt");
+	eleventyConfig.addPassthroughCopy("humans.txt");
+	eleventyConfig.addPassthroughCopy("keybase.txt");
+
+	eleventyConfig.addPassthroughCopy("web/css/fonts");
+	eleventyConfig.addPassthroughCopy("web/img");
+	eleventyConfig.addPassthroughCopy("web/wp-content");
+	eleventyConfig.addPassthroughCopy("web/dist");
+
+	/* LAYOUTS */
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.liquid');
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
-	eleventyConfig.addPassthroughCopy("css/fonts");
-	eleventyConfig.addPassthroughCopy("img");
-	eleventyConfig.addPassthroughCopy("wp-content");
-	eleventyConfig.addPassthroughCopy("dist");
-
+	/* FILTERS */
 	eleventyConfig.addLiquidFilter("medialengthCleanup", str => {
 		let split = str.split(" ");
 		return `${split[0]}<span aria-hidden="true">m</span><span class="sr-only"> minutes</span>`;
@@ -135,12 +146,46 @@ module.exports = function(eleventyConfig) {
 		return `${words} ${wordsLabel}`;
 	});
 
+	// Get the first `n` elements of a collection.
+	eleventyConfig.addFilter("head", (array, n) => {
+		if( n < 0 ) {
+			return array.slice(n);
+		}
+		return array.slice(0, n);
+	});
+
+	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
+		const allowedTypes = ['mention-of', 'in-reply-to']
+		const allowedHTML = {
+			allowedTags: ['b', 'i', 'em', 'strong', 'a'],
+			allowedAttributes: {
+				a: ['href']
+			}
+		}
+
+		const clean = entry => {
+			const { content } = entry
+			if (content && content['content-type'] === 'text/html') {
+				content.value = sanitizeHTML(content.value, allowedHTML)
+			}
+			return entry
+		}
+
+		return webmentions
+			.filter(entry => entry['wm-target'] === url)
+			.filter(entry => allowedTypes.includes(entry['wm-property']))
+			// .filter(entry => !!entry.content)
+			.map(clean)
+	})
+
+	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug) {
 		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
 	});
 
+	/* COLLECTIONS */
 	function getPosts(collectionApi) {
-		return collectionApi.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
+		return collectionApi.getFilteredByGlob("./web/_posts/*").reverse().filter(function(item) {
 			return !!item.data.permalink;
 		});
 	}
@@ -187,15 +232,6 @@ module.exports = function(eleventyConfig) {
 		return resultArrays;
 	});
 
-
-	// Get the first `n` elements of a collection.
-	eleventyConfig.addFilter("head", (array, n) => {
-		if( n < 0 ) {
-			return array.slice(n);
-		}
-		return array.slice(0, n);
-	});
-
 	function hasTag(post, tag) {
 		return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
 	}
@@ -238,31 +274,6 @@ module.exports = function(eleventyConfig) {
 		}).reverse();
 	});
 
-	// Webmentions Filter
-	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
-		const allowedTypes = ['mention-of', 'in-reply-to']
-		const allowedHTML = {
-			allowedTags: ['b', 'i', 'em', 'strong', 'a'],
-			allowedAttributes: {
-				a: ['href']
-			}
-		}
-
-		const clean = entry => {
-			const { content } = entry
-			if (content && content['content-type'] === 'text/html') {
-				content.value = sanitizeHTML(content.value, allowedHTML)
-			}
-			return entry
-		}
-
-		return webmentions
-			.filter(entry => entry['wm-target'] === url)
-			.filter(entry => allowedTypes.includes(entry['wm-property']))
-			// .filter(entry => !!entry.content)
-			.map(clean)
-	})
-
 	return {
 		"templateFormats": [
 			"liquid",
@@ -270,7 +281,6 @@ module.exports = function(eleventyConfig) {
 			"njk",
 			"html"
 		],
-		"pathPrefix": "/web/",
 		"passthroughFileCopy": true,
 		"dataTemplateEngine": false,
 		"htmlTemplateEngine": "liquid",

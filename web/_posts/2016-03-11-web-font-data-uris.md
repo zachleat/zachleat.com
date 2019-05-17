@@ -2,7 +2,6 @@
 title: 'Web Font Anti-pattern: Data URIs'
 author: Zach Leatherman
 layout: post
-permalink: /web-font-data-uris/
 categories:
   - font-loading
 tags:

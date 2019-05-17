@@ -2,7 +2,6 @@
 title: 'Don&#8217;t Let the Door Hit You Onunload and Onbeforeunload'
 author: Zach Leatherman
 layout: post
-permalink: /dont-let-the-door-hit-you-onunload-and-onbeforeunload/
 Version Specific Article:
   - Opera 9.27
 tags:

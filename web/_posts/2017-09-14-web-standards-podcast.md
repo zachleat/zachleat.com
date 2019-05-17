@@ -1,6 +1,5 @@
 ---
 title: 'Web Standards Podcast #85'
-permalink: web-standards-podcast/
 categories:
   - font-loading
   - presentations

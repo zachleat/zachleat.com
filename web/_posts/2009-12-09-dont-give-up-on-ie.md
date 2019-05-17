@@ -2,7 +2,6 @@
 title: 'Don&#8217;t Give Up on Internet Explorer Yet'
 author: Zach Leatherman
 layout: post
-permalink: /dont-give-up-on-ie/
 ---
 
 These days, the browser landscape is more fragmented than ever. Were times easier back when IE6 and Firefox ruled the internet? Easier perhaps in terms of the number of browsers you had to launch for testing, but **not better** for any user’s experience. We are in a new world, where more web browsers are causing developers to become **increasingly pragmatic** with their designs and code. Sure, standards have created a safe haven under the newest versions of the Big 3 (Firefox, IE, Safari), but the lay majority are still using whatever default has been installed onto their computer, and they probably can’t tell you [the difference between their web browser and a search engine][1].

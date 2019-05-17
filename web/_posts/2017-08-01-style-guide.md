@@ -1,6 +1,6 @@
 ---
 title: I made a style guide for my personal web site and you should too.
-permalink: /now-with-style-guide/
+permalink: /web/now-with-style-guide/
 categories: null
 tags: []
 ---

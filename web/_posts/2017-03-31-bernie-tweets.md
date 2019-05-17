@@ -1,6 +1,5 @@
 ---
 title: Bernie Tweets
-permalink: /bernie-tweets/
 headimage: /web/img/posts/bernie-tweets/preview.jpg
 tags:
   - project

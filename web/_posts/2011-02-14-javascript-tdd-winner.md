@@ -2,7 +2,6 @@
 title: The JavaScript Testing Challenge Winner
 author: Zach Leatherman
 layout: post
-permalink: /javascript-tdd-winner/
 ---
 
 Congratulations to [Steve Love][1], who was the first to complete [The JavaScript Testing Challenge][2].

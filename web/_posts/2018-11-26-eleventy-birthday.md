@@ -1,6 +1,5 @@
 ---
 title: Happy Birthday Eleventy! 🎉
-permalink: eleventy-birthday/
 tags:
   - eleventy
 ---

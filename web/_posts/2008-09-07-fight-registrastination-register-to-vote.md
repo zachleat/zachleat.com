@@ -2,7 +2,6 @@
 title: Fight Registrastination. Register to vote!
 author: Zach Leatherman
 layout: post
-permalink: /fight-registrastination-register-to-vote/
 categories:
   - Projects
 tags:

@@ -1,6 +1,5 @@
 ---
 title: CSS-Minsk-JS
-permalink: css-minsk-js/
 categories:
   - presentations
 tags:

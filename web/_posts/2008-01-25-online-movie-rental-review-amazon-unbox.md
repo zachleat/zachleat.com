@@ -2,7 +2,6 @@
 title: 'Online Movie Rental Review &#8211; Amazon Unbox'
 author: Zach Leatherman
 layout: post
-permalink: /online-movie-rental-review-amazon-unbox/
 deprecated: true
 feedtrim: true
 ---

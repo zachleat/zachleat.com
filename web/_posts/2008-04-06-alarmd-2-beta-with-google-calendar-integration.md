@@ -2,7 +2,6 @@
 title: 'ALARMd 2 Beta, with Google Calendar Integration'
 author: Zach Leatherman
 layout: post
-permalink: /alarmd-2-beta-with-google-calendar-integration/
 project_name: ALARMd 2
 description: 'An online alarm clock that wakes you up to YouTube, Pandora, MP3 or other multimedia source. Featuring integration with Google Calendar.'
 headimage: /web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-10.50.03-PM.png

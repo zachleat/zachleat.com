@@ -2,7 +2,7 @@
 title: 'Beyond Code #4 at NEJS CONF 2015'
 author: Zach Leatherman
 layout: post
-permalink: /beyond-code-interview/
+permalink: /web/beyond-code-interview/
 categories:
   - presentations
 tags:

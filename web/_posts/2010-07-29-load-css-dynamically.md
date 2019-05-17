@@ -2,7 +2,6 @@
 title: Faking Onload for Link Elements
 author: Zach Leatherman
 layout: post
-permalink: /load-css-dynamically/
 tags:
   - highlight
   - research

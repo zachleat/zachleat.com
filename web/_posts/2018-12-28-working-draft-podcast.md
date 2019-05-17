@@ -1,6 +1,5 @@
 ---
 title: 'Working Draft Podcast: On Tour @ #perfnow 5/6'
-permalink: working-draft-podcast
 categories:
   - font-loading
   - presentations

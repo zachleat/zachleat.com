@@ -1,6 +1,6 @@
 ---
 title: Laissez-faire Font Smoothing and Anti-aliasing
-permalink: /font-smooth/
+permalink: /web/font-smooth/
 categories:
   - font-loading
 tags:

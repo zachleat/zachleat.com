@@ -2,7 +2,7 @@
 title: 'word-break Podcast #1'
 author: Zach Leatherman
 layout: post
-permalink: /word-break-podcast/
+permalink: /web/word-break-podcast/
 categories:
   - presentations
 tags:

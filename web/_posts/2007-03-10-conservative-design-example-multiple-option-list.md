@@ -2,7 +2,6 @@
 title: 'Conservative Design Example: Multiple Option List'
 author: Zach Leatherman
 layout: post
-permalink: /conservative-design-example-multiple-option-list/
 feedtrim: true
 ---
 

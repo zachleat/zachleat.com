@@ -2,7 +2,6 @@
 title: 'FitText + BigText: A Tale of Two Plugins'
 author: Zach Leatherman
 layout: post
-permalink: /fittext-and-bigtext/
 categories:
   - font-loading
 tags:

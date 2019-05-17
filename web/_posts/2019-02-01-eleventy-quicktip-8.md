@@ -1,6 +1,5 @@
 ---
 title: 'Eleventy Quick Tip №8: Trigger a Netlify Build Every Day with IFTTT'
-permalink: /eleventy-quicktip-8/
 tags:
   - eleventy
   - external

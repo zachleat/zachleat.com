@@ -2,7 +2,6 @@
 title: Tips for Programming JavaScript Functions
 author: Zach Leatherman
 layout: post
-permalink: /tips-for-programming-javascript-functions/
 feedtrim: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Passing the Lead NebraskaJS Organizer Baton
-permalink: /passing-the-nebraskajs-baton/
+permalink: /web/passing-the-nebraskajs-baton/
 tags: []
 ---
 

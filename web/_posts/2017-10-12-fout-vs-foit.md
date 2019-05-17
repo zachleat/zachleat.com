@@ -1,6 +1,5 @@
 ---
 title: 'FOIT vs. FOUT, a Side by Side Comparison'
-permalink: /fout-vs-foit/
 categories:
   - font-loading
 tags:

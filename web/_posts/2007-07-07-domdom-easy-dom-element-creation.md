@@ -2,7 +2,6 @@
 title: 'DOMDom, easy DOM Element Creation'
 author: Zach Leatherman
 layout: post
-permalink: /domdom-easy-dom-element-creation/
 tags:
   - project
 feedtrim: true

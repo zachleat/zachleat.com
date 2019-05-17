@@ -2,7 +2,6 @@
 title: 'A Front End Engineer&#8217;s Manifesto'
 author: Zach Leatherman
 layout: post
-permalink: /manifesto/
 description: Guidelines I use when looking at the big picture as a Front End Web Developer.
 headimage: /web/img/projects/f2em.png
 categories:

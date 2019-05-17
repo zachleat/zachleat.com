@@ -2,7 +2,6 @@
 title: Problems with Looping through window.setInterval
 author: Zach Leatherman
 layout: post
-permalink: /problems-with-looping-through-windowsetinterval/
 Version Specific Article:
   - Firefox 2
 deprecated: true

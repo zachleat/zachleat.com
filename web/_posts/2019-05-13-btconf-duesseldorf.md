@@ -1,6 +1,5 @@
 ---
 title: "beyond tellerrand—Düsseldorf"
-permalink: btconf-duesseldorf
 categories:
   - presentations
 tags:

@@ -2,7 +2,6 @@
 title: Problems with YUI DataTable
 author: Zach Leatherman
 layout: post
-permalink: /problems-with-yui-datatable/
 Version Specific Article:
   - YUI 2.2.0
 tags:

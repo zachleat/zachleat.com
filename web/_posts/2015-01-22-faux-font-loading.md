@@ -2,7 +2,7 @@
 title: Flash of Faux Text—still more on Font Loading
 author: Zach Leatherman
 layout: post
-permalink: /foft/
+permalink: /web/foft/
 categories:
   - font-loading
 tags:

@@ -1,6 +1,5 @@
 ---
 title: 'Using Custom Fonts Responsibly, an Akamai Animated Short'
-permalink: akamai-custom-fonts/
 tags:
   - font-loading
   - video

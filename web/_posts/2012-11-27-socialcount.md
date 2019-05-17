@@ -2,7 +2,6 @@
 title: 'SocialCount, Faster &#038; Lighter Social Networking Widgets'
 author: Zach Leatherman
 layout: post
-permalink: /socialcount/
 categories:
   - project
 tags:

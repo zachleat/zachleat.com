@@ -2,7 +2,6 @@
 title: Lazy Loading Web Fonts Is Probably Not What You Want
 author: Zach Leatherman
 layout: post
-permalink: /lazy-loading-webfonts/
 categories:
   - font-loading
 tags:

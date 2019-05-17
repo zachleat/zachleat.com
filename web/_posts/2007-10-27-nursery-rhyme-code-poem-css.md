@@ -2,7 +2,6 @@
 title: 'Nursery Rhyme Code Poem [CSS]'
 author: Zach Leatherman
 layout: post
-permalink: /nursery-rhyme-code-poem-css/
 feedtrim: true
 ---
 

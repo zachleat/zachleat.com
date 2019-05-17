@@ -2,7 +2,6 @@
 title: Critical Web Fonts
 author: Zach Leatherman
 layout: post
-permalink: /critical-webfonts/
 categories:
   - font-loading
 tags:

@@ -1,7 +1,5 @@
 ---
 title: Concatenate Conference
-permalink: /concatenate/
-categories: null
 tags:
   - external
   - conference

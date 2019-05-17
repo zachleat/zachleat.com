@@ -1,6 +1,5 @@
 ---
 title: "NebraskaJS Omaha"
-permalink: scoville-nebraskajs
 categories:
   - presentations
 tags:

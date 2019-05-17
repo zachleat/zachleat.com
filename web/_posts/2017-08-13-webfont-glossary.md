@@ -1,6 +1,5 @@
 ---
 title: The Web Font Loading Glossary
-permalink: /webfont-glossary/
 categories:
   - font-loading
 tags:

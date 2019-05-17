@@ -1,6 +1,6 @@
 ---
 title: 'TalkScript Episode #14'
-permalink: talkscript-podcast/
+permalink: /web/talkscript-podcast/
 tags:
   - speaking
   - audio
