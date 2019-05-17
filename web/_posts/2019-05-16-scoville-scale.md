@@ -30,7 +30,7 @@ The [full slide deck is available on Not.ist](https://noti.st/zachleat/Abp5Y7/th
 
 <ol class="reference-links">
     <!-- <li id="test1"><a href="#" class="no-underline">Some other thing</a></li> -->
-    <li><a id="bwb" href="https://docs.google.com/spreadsheets/d/1lXw1vtJUgouOgpiq2LeES4gOf0SLO7HylDKdVhlRJ04/edit?usp=sharing" class="no-underline">The Best Web Browser for Web Fonts—Check my work on Google Sheets</a></li>
+    <li><a id="bwb" href="https://docs.google.com/spreadsheets/d/1lXw1vtJUgouOgpiq2LeES4gOf0SLO7HylDKdVhlRJ04/edit?usp=sharing" class="no-underline break">The Best Web Browser for Web Fonts—Check my work on Google Sheets</a></li>
 </ol>
 
 ## Resources
