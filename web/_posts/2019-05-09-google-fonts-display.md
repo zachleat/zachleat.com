@@ -9,7 +9,7 @@ At Google I/O this week, [Anna Migas](https://twitter.com/szynszyliszys) shared 
 
 <blockquote><p lang="en" dir="ltr">You will not have to self-host Google Fonts any more to get font-display: swap; 🙌 <a href="https://twitter.com/hashtag/io19?src=hash&amp;ref_src=twsrc%5Etfw">#io19</a> <a href="https://t.co/SldOuoNInF">pic.twitter.com/SldOuoNInF</a></p>&mdash; Anna Migas @ Google I/O (@szynszyliszys) <a href="?ref_src=twsrc%5Etfw">May 8, 2019</a></blockquote>
 
-Google Fonts is adding support for `font-display`! 🎉🎉🎉🎉
+Google Fonts <del>is adding</del> added support for `font-display`! 🎉🎉🎉🎉
 
 _(Note: although the I/O preview used the `font-display` URL parameter, [the final implementation uses `display` instead](https://twitter.com/addyosmani/status/1128548064287952896))_
 
@@ -21,7 +21,7 @@ _(Note: although the I/O preview used the `font-display` URL parameter, [the fin
 
 This is big news—it means developers now have more control over Google Fonts web font loading behavior. We can enforce instant rendering of fallback text (when using `font-display: swap`) rather than relying on the browser default behavior of invisible text for up to 3 seconds while the web font request is in-flight.
 
-It’s also a bit of trailblazing, too. To my knowledge, this is the first web font host that’s shipping support for this very important `font-display` feature. Yeah, the [GitHub issue asking for this](https://github.com/google/fonts/issues/358) was filed in August of 2016 (just short of three years ago), but Google Fonts is still ahead of the game here.
+It’s also a bit of trailblazing, too. To my knowledge, this is the first web font host that’s shipping support for this very important `font-display` feature. Yeah, the [GitHub issue asking for this](https://github.com/google/fonts/issues/358) was filed in August of 2016 (just short of three years ago), but Google Fonts is still ahead of the competition here.
 
 ## Timeline
 

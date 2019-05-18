@@ -205,6 +205,7 @@ module.exports = function(grunt) {
 			}
 		},
 		clean: {
+			drafts: [ '_site/web/drafts/**' ],
 			zopfli: [ '_site/**/*.zgz' ]
 		},
 		watch: {
@@ -239,6 +240,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('separate', ['clean', 'assets', 'copy:includes']);
 
 	// Upload to Production
-	grunt.registerTask('stage', ['clean', 'assets', 'images', 'content', 'htmlmin', 'zopfli']);
+	grunt.registerTask('stage', ['clean', 'assets', 'images', 'content', 'clean:drafts', 'htmlmin', 'zopfli']);
 	grunt.registerTask('deploy', ['stage', 'shell:upload', 'clean']);
 };

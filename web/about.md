@@ -7,7 +7,7 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 
 {% include social.html %}
 
-<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" style="max-width: 300px; border-radius: 50%; margin: 2em auto 0; display: block">
+<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" style="max-width: 260px; border-radius: 50%; margin: 2em auto 0; display: block">
 
 ## Bio
 
@@ -58,7 +58,7 @@ Zach is a Web Developer with the award winning [Filament Group](http://www.filam
 </figure>
 
 <figure>
-	<img src="/img/avatar-2017-big.png" alt="" style="max-width: 363px; border-radius: 50%;">
+	<img src="/img/avatar-2017-big.png" alt="" style="max-width: 260px; border-radius: 50%;">
 	<figcaption>Modified from above for avatar use.</figcaption>
 </figure>
 

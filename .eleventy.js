@@ -154,14 +154,19 @@ module.exports = function(eleventyConfig) {
 		return array.slice(0, n);
 	});
 
-	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
-		const allowedTypes = ['mention-of', 'in-reply-to']
+	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
+		// const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of'];
+		if( !allowedTypes ) {
+			allowedTypes = ['mention-of'];
+		} else if( typeof allowedTypes === "string" ) {
+			allowedTypes = [ allowedTypes ];
+		}
 		const allowedHTML = {
 			allowedTags: ['b', 'i', 'em', 'strong', 'a'],
 			allowedAttributes: {
 				a: ['href']
 			}
-		}
+		};
 
 		const clean = entry => {
 			const { content } = entry
@@ -170,9 +175,13 @@ module.exports = function(eleventyConfig) {
 			}
 			return entry
 		}
-
 		return webmentions
-			.filter(entry => entry['wm-target'] === url)
+			.filter(entry => {
+				let hashSplit = entry['wm-target'].split("#");
+				let queryparamSplit = hashSplit[0].split("?");
+				let target = queryparamSplit[0];
+				return target === url;
+			})
 			.filter(entry => allowedTypes.includes(entry['wm-property']))
 			// .filter(entry => !!entry.content)
 			.map(clean)

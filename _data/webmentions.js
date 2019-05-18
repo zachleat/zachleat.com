@@ -84,13 +84,10 @@ function readFromCache() {
 
 module.exports = async function() {
   const cache = readFromCache();
-  // Uncomment to use `since`
   const { lastFetched } = cache;
 
-  // Only fetch new mentions in production
-  if (process.env.ELEVENTY_ENV === 'production' || !lastFetched) {
+  if (process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf("webmentions") > -1 || !lastFetched) {
     const feed = await fetchWebmentions(lastFetched);
-    // const feed = await fetchWebmentions()
 
     if (feed) {
       const webmentions = {

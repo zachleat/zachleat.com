@@ -724,6 +724,9 @@ th.numeric {
 .posts .posts-link-more {
 	text-decoration: underline;
 }
+.event-link {
+	font-size: 80.76923076923%; /* 21px /26 */
+}
 @supports (text-decoration-skip-ink: auto) {
 	.posts .posts-link:hover,
 	.posts .posts-link:focus,

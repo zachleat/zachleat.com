@@ -42,7 +42,8 @@
   },
   "scripts": {
     "bestof": "grunt bestof && grunt",
-    "default": "grunt"
+    "default": "grunt",
+    "webmentions": "ELEVENTY_FEATURES=webmentions npx eleventy --quiet"
   },
   "repository": {
     "type": "git",

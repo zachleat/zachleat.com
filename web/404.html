@@ -1,30 +1,31 @@
 ---
 title: Not Found
 layout: default
-tmpl: list
+tmpl: page
 ---
 
-<div class="maxwidth-list">
+<div class="maxwidth">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
 		<p>We couldn’t find what you were looking for—sorry!<p>
 		<p>I wonder if I can convert you to read one of these blog posts instead without it coming off as scammy and awkward.</p>
 
-
 		<hr style="margin-top: 10vw">
 
-		<h2><a href="/web/">Latest Posts</a></h2>
+		<h2>Writing</h2>
 		<ol class="posts">
-			{% for post in collections.latestPosts limit:3 %}
+			{% for post in collections.latestPosts limit:4 %}
 				{% include post-list-entry.html, ignoreYear: "true" %}
 			{% endfor %}
+			<li><em><a href="/web/" class="posts-link posts-link-more">…see archives.</a></em></li>
 		</ol>
 
-		<h2><a href="/web/best-of/">Popular 🔥</a></h2>
+		<h2>Popular 🔥</h2>
 		<ol class="posts">
 			{% for post in collections.popularPostsRanked limit:3 %}
 				{% include post-list-entry.html, ignoreYear: "true" %}
 			{% endfor %}
+			<li><em><a href="/web/best-of" class="posts-link posts-link-more">…see all popular posts.</a></em></li>
 		</ol>
 
 		<article>
