@@ -263,11 +263,8 @@ h2,
 h3,
 h4,
 h5,
-.hed-h1,
 .hed-h2,
-.hed-h3,
-.hed-h4,
-.hed-h5 {
+.hed-h3 {
   -ms-word-break: normal;
   word-break: normal;
   word-break: normal;
@@ -1384,6 +1381,7 @@ th.numeric {
   text-decoration: underline;
 }
 
+.tag-inline.tag-cased,
 .tags .tag-cased {
   text-transform: none;
 }
