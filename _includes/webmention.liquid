@@ -1,32 +1,25 @@
-<article class="webmention h-cite" id="webmention-{{ webmention['wm-id'] }}">
-  <div class="webmention__meta">
-    {% if webmention.url != "" %}
-    <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-    {% endif %}
-    {% if webmention.author and webmention.author.name != "" %}
-      <span class="webmention__author p-author">
-        {% if webmention.author.photo != "" %}
-          <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" loading="lazy">
-        {% else %}
-          <img class="webmention__author__photo" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="" loading="lazy">
-        {% endif %}
-        <strong class="p-name">{{ webmention.author.name }}</strong>
-      </span>
+<li class="static-comments-reply h-cite" id="webmention-{{ webmention['wm-id'] }}">
+  <div class="static-comments-hed">
+    {% if webmention.url != "" %}<a class="static-comments-original h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">{% endif %}
+    {% if webmention.author and webmention.author.photo != "" %}
+      <img class="static-comments-img u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" loading="lazy">
     {% else %}
-      <span class="webmention__author">
-        <img class="webmention__author__photo" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="" loading="lazy">
-        <strong>Anonymous</strong>
-      </span>
-    {% endif %}
-    {% if webmention.url != "" %}
-    </a>
+      <img class="static-comments-img" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="" loading="lazy">
     {% endif %}
 
+    {% if webmention.author %}
+      <h3 class="static-comments-title p-name">{% if webmention.author.name != "" %}{{ webmention.author.name }}{% else %}Anonymous{% endif %}</h3>
+    {% endif %}
+    {% if webmention.url != "" %}</a>{% endif %}
+
     {% if webmention.published %}
-      <time class="webmention__pubdate dt-published" datetime="{{ webmention.published }}">{{ webmention.published | dateFromTimestamp | readableDate }}</time>
+      <em class="static-comments-date"><a href="#webmention-{{ webmention['wm-id'] }}"><time class="dt-published" datetime="{{ webmention.published }}">{{ webmention.published | dateFromTimestamp | readableDate }}</time></a></em>
     {% endif %}
   </div>
-  <div class="webmention__content p-content">
-    {{ webmention.content.value }}
-  </div>
-</article>
+  {% if ignoreContent %}
+  {% else %}
+  <div class="static-comments-msg p-content"><p>
+    {{ webmention.content.text }}
+  </p></div>
+  {% endif %}
+</li><!-- /static-comments-reply -->

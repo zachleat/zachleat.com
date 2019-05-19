@@ -1,10 +1,8 @@
-{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
 <div class="webmentions" id="webmentions">
-
   {%- assign reposts = webmentions.children | webmentionsForUrl: absoluteUrl, 'repost-of' -%}
   {%- assign repostsSize = reposts | size -%}
   {% if repostsSize > 0 %}
-  <h3>Retweets</h3>
+  <h3>{{ repostsSize }} Retweet{% if repostsSize != 1 %}s{% endif %}</h3>
   <div class="webmentions__facepile">
     {% for webmention in reposts %} <!-- TODO reverse -->
       {% if webmention.url != "" %}
@@ -22,7 +20,7 @@
   {%- assign likes = webmentions.children | webmentionsForUrl: absoluteUrl, 'like-of' -%}
   {%- assign likesSize = likes | size -%}
   {% if likesSize > 0 %}
-  <h3>Likes</h3>
+  <h3>{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</h3>
   <div class="webmentions__facepile">
     {% for webmention in likes %} <!-- TODO reverse -->
       {% if webmention.url != "" %}
@@ -37,35 +35,16 @@
   </div>
   {% endif %}
 
-  {%- assign replies = webmentions.children | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
-  {%- assign repliesSize = replies | size -%}
-  {% if repliesSize > 0 %}
-  <h3>Replies</h3>
-  <div class="webmentions__facepile">
-    {% for webmention in replies %} <!-- TODO reverse -->
-      {% if webmention.url != "" %}
-      <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-      {% endif %}
-      <img src="{% if webmention.author.photo != "" %}{{ webmention.author.photo }}{% else %}{{ '/web/img/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions__face" />
-      {% if webmention.url != "" %}
-      </a>
-      {% endif %}
-      &#160;
-    {% endfor %}
-  </div>
-  {% endif %}
-
-  {%- assign mentions = webmentions.children | webmentionsForUrl: absoluteUrl, 'mention-of' -%}
+  {%- assign mentions = webmentions.children | webmentionsForUrl: absoluteUrl -%}
   {%- assign mentionsSize = mentions | size -%}
-  <h3>Mentions</h3>
-
-  <ol class="webmentions__list">
-    {% for webmention in mentions %} <!-- TODO reverse -->
-      <li class="webmentions__item">
+  <details>
+    <summary class="hed-h3">{{ mentionsSize }} Mention{% if mentionsSize != 1 %}s{% endif %}</summary>
+    <ol class="static-comments">
+      {% for webmention in mentions %} <!-- TODO reverse -->
         {% include webmention %}
-      </li>
-    {% endfor %}
-  </ol>
+      {% endfor %}
+    </ol>
+  </details>
 
   <form action="https://webmention.io/www.zachleat.com/webmention" method="post" class="form-webmention">
     <label for="form-webmention-source">Mention this post from your site:</label>

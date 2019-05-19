@@ -1,5 +1,6 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
+const { DateTime } = require("luxon");
 const unionBy = require('lodash/unionBy');
 const domain = require("./site.json").domain;
 
@@ -92,7 +93,9 @@ module.exports = async function() {
     if (feed) {
       const webmentions = {
         lastFetched: new Date().toISOString(),
-        children: mergeWebmentions(cache, feed)
+        children: mergeWebmentions(cache, feed).sort(function(a, b) {
+          return DateTime.fromISO(b.published || b['wm-received'], { zone: 'utc' }).toJSDate().getTime() - DateTime.fromISO(a.published || a['wm-received'], { zone: 'utc' }).toJSDate().getTime();
+        })
       };
 
       writeToCache(webmentions);

@@ -157,7 +157,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
 		// const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of'];
 		if( !allowedTypes ) {
-			allowedTypes = ['mention-of'];
+			allowedTypes = ['mention-of', 'in-reply-to'];
 		} else if( typeof allowedTypes === "string" ) {
 			allowedTypes = [ allowedTypes ];
 		}
@@ -177,6 +177,10 @@ module.exports = function(eleventyConfig) {
 		}
 		return webmentions
 			.filter(entry => {
+				if(!url) {
+					return true;
+				}
+
 				let hashSplit = entry['wm-target'].split("#");
 				let queryparamSplit = hashSplit[0].split("?");
 				let target = queryparamSplit[0];

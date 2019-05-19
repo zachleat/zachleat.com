@@ -5,9 +5,14 @@
 }
 .static-comments {
 	font-size: 80%;
+	max-width: 30em;
+}
+.static-comments.static-comments.static-comments {
+	padding-left: 0;
+	list-style: none;
 }
 .static-comments-reply {
-	margin: 1em 0 3em;
+	margin: 1em 0 1em;
 }
 .static-comments-reply > .static-comments-reply {
 	margin-top: 2em;
@@ -33,7 +38,7 @@
 .static-comments-msg {
 	clear: both;
 	line-height: 1.7;
-	margin-top: 1em;
+	margin-top: .5em;
 	@include clearfix;
 }
 .static-comments-msg p:first-child {

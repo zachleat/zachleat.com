@@ -53,6 +53,7 @@ enableWebmentions: true
 	</div>
 {% endif %}
 
-	{% include webmentionlist %}
+	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
+	{% include webmentionlist, absoluteUrl: absoluteUrl %}
 {% endunless %}
 </div><!-- /.maxwidth -->
