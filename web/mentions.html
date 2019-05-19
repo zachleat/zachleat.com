@@ -1,0 +1,12 @@
+---
+title: Last 20 Webmentions
+layout: page
+---
+{%- assign mentions = webmentions.children -%}
+{%- assign mentionsSize = mentions | size -%}
+<p>{{ mentionsSize }} webmention{% if mentionsSize != 1 %}s{% endif %} total.</p>
+<ol class="static-comments">
+  {% for webmention in mentions limit: 20 %}
+    {% include webmention, showTarget: true %}
+  {% endfor %}
+</ol>

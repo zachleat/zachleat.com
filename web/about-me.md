@@ -1,6 +1,5 @@
 ---
 title: About Zach Leatherman
-author: Zach Leatherman
 layout: page
 ---
 

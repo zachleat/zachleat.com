@@ -42,17 +42,6 @@ enableWebmentions: true
 	</article>
 
 {% unless disableComments %}
-{% if disqus.commentCount > 0 %}
-	<div id="disqus_thread" class="static-comments">
-		<h2 id="comments">
-			{{ disqus.commentCount }} Comment{% if disqus.commentCount != 1 %}s{% endif %}
-		</h2>
-		{% for comment in disqus.comments %}
-			{% include comment-entry.html %}
-		{% endfor %}
-	</div>
-{% endif %}
-
 	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
 	{% include webmentionlist, absoluteUrl: absoluteUrl %}
 {% endunless %}

@@ -4,7 +4,7 @@
   {% if repostsSize > 0 %}
   <h3>{{ repostsSize }} Retweet{% if repostsSize != 1 %}s{% endif %}</h3>
   <div class="webmentions__facepile">
-    {% for webmention in reposts %} <!-- TODO reverse -->
+    {% for webmention in reposts %}
       {% if webmention.url != "" %}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {% endif %}
@@ -22,7 +22,7 @@
   {% if likesSize > 0 %}
   <h3>{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</h3>
   <div class="webmentions__facepile">
-    {% for webmention in likes %} <!-- TODO reverse -->
+    {% for webmention in likes %}
       {% if webmention.url != "" %}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {% endif %}
@@ -35,12 +35,33 @@
   </div>
   {% endif %}
 
-  {%- assign mentions = webmentions.children | webmentionsForUrl: absoluteUrl -%}
+  {%- assign replies = webmentions.children | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
+  {% assign disqusCommentSize = 0 %}
+  {% if disqus %}{% assign disqusCommentSize = disqus.commentCount %}{% endif %}
+  {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}
+  {% if repliesSize > 0 %}
+  <details id="comments">
+    <summary class="hed-h3">{{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}</summary>
+    <ol class="static-comments">
+      {% for webmention in replies %}
+        {% include webmention %}
+      {% endfor %}
+    </ol>
+
+    <ol class="static-comments">
+    {% for comment in disqus.comments %}
+      {% include comment-entry.html %}
+    {% endfor %}
+    </ol>
+  </details>
+  {% endif %}
+
+  {%- assign mentions = webmentions.children | webmentionsForUrl: absoluteUrl, 'mention-of' -%}
   {%- assign mentionsSize = mentions | size -%}
   <details>
     <summary class="hed-h3">{{ mentionsSize }} Mention{% if mentionsSize != 1 %}s{% endif %}</summary>
     <ol class="static-comments">
-      {% for webmention in mentions %} <!-- TODO reverse -->
+      {% for webmention in mentions %}
         {% include webmention %}
       {% endfor %}
     </ol>

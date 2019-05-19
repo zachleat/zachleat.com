@@ -1,11 +1,13 @@
-<div class="static-comments-reply" id="comment-{{ comment.postId }}">
+<li class="static-comments-reply" id="comment-{{ comment.postId }}">
 	<div class="static-comments-hed">
 		<img src="{{ comment.avatar }}" class="static-comments-img">
-		<h3 class="static-comments-title">{{ comment.author }}</h3>
+		<h3 class="static-comments-title cased">{{ comment.author }} <span class="tag-inline" title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">Disqus</span></h3>
 		<em class="static-comments-date"><a href="#comment-{{ comment.postId }}">{{ comment.date | readableDateFromISO }}</a></em>
 	</div>
 	<div class="static-comments-msg">{{ comment.message }}</div>
+	<ol>
 	{% for reply in comment.replies %}
 		{% include comment-entry.html, comment: reply %}
 	{% endfor %}
-</div>
+	</ol>
+</li>

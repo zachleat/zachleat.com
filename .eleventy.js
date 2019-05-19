@@ -86,10 +86,6 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromISO(dateStr).toFormat("dd LLL yyyy 'at' hh:mma");
 	});
 
-	eleventyConfig.addFilter('dateFromTimestamp', timestamp => {
-		return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
-	});
-
 	eleventyConfig.addLiquidFilter("longWordWrap", str => {
 		let words = {
 			"domcontentloaded": true,
@@ -152,6 +148,10 @@ module.exports = function(eleventyConfig) {
 			return array.slice(n);
 		}
 		return array.slice(0, n);
+	});
+
+	eleventyConfig.addFilter('localUrl', (absoluteUrl) => {
+		return absoluteUrl.replace("https://www.zachleat.com", "");
 	});
 
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {

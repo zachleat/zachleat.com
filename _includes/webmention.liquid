@@ -1,4 +1,4 @@
-<li class="static-comments-reply h-cite" id="webmention-{{ webmention['wm-id'] }}">
+<li class="static-comments-reply h-cite{% if webmention.author.name == '' %} static-comments-reply-anonymous{% endif %}" id="webmention-{{ webmention['wm-id'] }}">
   <div class="static-comments-hed">
     {% if webmention.url != "" %}<a class="static-comments-original h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">{% endif %}
     {% if webmention.author and webmention.author.photo != "" %}
@@ -8,18 +8,28 @@
     {% endif %}
 
     {% if webmention.author %}
-      <h3 class="static-comments-title p-name">{% if webmention.author.name != "" %}{{ webmention.author.name }}{% else %}Anonymous{% endif %}</h3>
+      <h3 class="static-comments-title p-name cased">{% if webmention.author.name != "" %}{{ webmention.author.name }}{% else %}Anonymous{% endif %}</h3>
     {% endif %}
     {% if webmention.url != "" %}</a>{% endif %}
 
+    {% if webmention['wm-property'] == "repost-of" %}&#160;<span class="tag-inline">Retweet</span>{% endif %}
+    {% if webmention['wm-property'] == "like-of" %}&#160;<span class="tag-inline">Like</span>{% endif %}
+    {% if webmention['wm-property'] == "in-reply-to" %}&#160;<span class="tag-inline">Reply</span>{% endif %}
+    {% if webmention['wm-property'] == "mention-of" %}&#160;<span class="tag-inline">Mention</span>{% endif %}
+
     {% if webmention.published %}
-      <em class="static-comments-date"><a href="#webmention-{{ webmention['wm-id'] }}"><time class="dt-published" datetime="{{ webmention.published }}">{{ webmention.published | dateFromTimestamp | readableDate }}</time></a></em>
+      <em class="static-comments-date"><a href="#webmention-{{ webmention['wm-id'] }}"><time class="dt-published" datetime="{{ webmention.published }}">{{ webmention.published | readableDateFromISO }}</time></a></em>
     {% endif %}
   </div>
-  {% if ignoreContent %}
+
+  {% if webmention['wm-property'] == "repost-of" or webmention['wm-property'] == "like-of" %}
   {% else %}
   <div class="static-comments-msg p-content"><p>
-    {{ webmention.content.text }}
+    {% if webmention.content.html %}{{ webmention.content.html }}{% else %}{{ webmention.content.text }}{% endif %}
   </p></div>
+  {% endif %}
+
+  {% if showTarget %}
+  <a href="{{ webmention['wm-target'] }}" class="tag-inline tag-cased">{{ webmention['wm-target'] | localUrl }}</a>
   {% endif %}
 </li><!-- /static-comments-reply -->

@@ -7,6 +7,7 @@
 	font-size: 80%;
 	max-width: 30em;
 }
+.static-comments.static-comments.static-comments ol,
 .static-comments.static-comments.static-comments {
 	padding-left: 0;
 	list-style: none;
@@ -14,7 +15,10 @@
 .static-comments-reply {
 	margin: 1em 0 1em;
 }
-.static-comments-reply > .static-comments-reply {
+.static-comments-reply-anonymous {
+	opacity: .5;
+}
+.static-comments-reply .static-comments-reply {
 	margin-top: 2em;
 	padding-left: 1.5em;
 	border-left: 4px solid #eee;
@@ -43,6 +47,9 @@
 }
 .static-comments-msg p:first-child {
 	margin-top: 0;
+}
+.static-comments-msg p:last-child {
+	margin-bottom: 0;
 }
 .static-comments-date {
 	float: left;
