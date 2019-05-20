@@ -8,17 +8,19 @@
     {% endif %}
 
     {% if webmention.author %}
-      <h3 class="static-comments-title p-name cased">{% if webmention.author.name != "" %}{{ webmention.author.name }}{% else %}Anonymous{% endif %}</h3>
+      <h3 class="static-comments-title p-name cased">{% if webmention.author.name != "" %}{{ webmention.author.name }}{% else %}Anonymous{% endif %} {% if webmention.author.url != "" %}<span class="static-comments-title-twitter">{{ webmention.author.url | twitterUsernameFromUrl }}</span>{% endif %}</h3>
     {% endif %}
     {% if webmention.url != "" %}</a>{% endif %}
 
-    {% if webmention['wm-property'] == "repost-of" %}&#160;<span class="tag-inline">Retweet</span>{% endif %}
-    {% if webmention['wm-property'] == "like-of" %}&#160;<span class="tag-inline">Like</span>{% endif %}
-    {% if webmention['wm-property'] == "in-reply-to" %}&#160;<span class="tag-inline">Reply</span>{% endif %}
-    {% if webmention['wm-property'] == "mention-of" %}&#160;<span class="tag-inline">Mention</span>{% endif %}
+    {% if showType %}
+    {% if webmention['wm-property'] == "repost-of" %} <span class="static-comments-tag tag-inline">Retweet</span>{% endif %}
+    {% if webmention['wm-property'] == "like-of" %} <span class="static-comments-tag tag-inline">Like</span>{% endif %}
+    {% if webmention['wm-property'] == "in-reply-to" %} <span class="static-comments-tag tag-inline">Reply</span>{% endif %}
+    {% if webmention['wm-property'] == "mention-of" %} <span class="static-comments-tag tag-inline">Mention</span>{% endif %}
+    {% endif %}
 
     {% if webmention.published %}
-      <em class="static-comments-date"><a href="#webmention-{{ webmention['wm-id'] }}"><time class="dt-published" datetime="{{ webmention.published }}">{{ webmention.published | readableDateFromISO }}</time></a></em>
+      <em class="static-comments-date"><a href="#webmention-{{ webmention['wm-id'] }}"><time class="dt-published" datetime="{{ webmention.published }}">{{ webmention.published | readableDateFromISO: "h:mma'—'dd LLL yyyy" }}</time></a></em>
     {% endif %}
   </div>
 

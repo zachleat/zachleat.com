@@ -7,6 +7,6 @@ layout: page
 <p>{{ mentionsSize }} webmention{% if mentionsSize != 1 %}s{% endif %} total.</p>
 <ol class="static-comments">
   {% for webmention in mentions limit: 20 %}
-    {% include webmention, showTarget: true %}
+    {% include webmention, showTarget: true, showType: true %}
   {% endfor %}
 </ol>

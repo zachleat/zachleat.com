@@ -82,8 +82,12 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat("LLLL dd, yyyy");
 	});
 
-	eleventyConfig.addLiquidFilter("readableDateFromISO", dateStr => {
-		return DateTime.fromISO(dateStr).toFormat("dd LLL yyyy 'at' hh:mma");
+	eleventyConfig.addLiquidFilter("readableDateFromISO", (dateStr, formatStr = "dd LLL yyyy 'at' hh:mma") => {
+		return DateTime.fromISO(dateStr).toFormat(formatStr);
+	});
+
+	eleventyConfig.addLiquidFilter("twitterUsernameFromUrl", (url) => {
+		return "@" + url.replace("https://twitter.com/", "");
 	});
 
 	eleventyConfig.addLiquidFilter("longWordWrap", str => {

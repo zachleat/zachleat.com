@@ -33,6 +33,10 @@
 .static-comments-title.static-comments-title {
 	@include webfont;
 }
+.static-comments-title-twitter {
+	font-size: 80%;
+	color: #666;
+}
 .static-comments-img {
 	float: left;
 	max-width: 30px;
@@ -45,6 +49,10 @@
 	margin-top: .5em;
 	@include clearfix;
 }
+.static-comments-webmentions .static-comments-reply {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 1em;
+}
 .static-comments-msg p:first-child {
 	margin-top: 0;
 }
@@ -56,9 +64,15 @@
 	clear: left;
 	font-size: 85%;
 }
+.static-comments-tag {
+	margin-left: 6px;
+}
 @media (min-width: 25em) { /* 400px */
 	.static-comments-date {
 		float: right;
 		clear: none;
+	}
+	.static-comments-webmentions .static-comments-msg {
+		padding-left: calc(30px + 1em);
 	}
 }
