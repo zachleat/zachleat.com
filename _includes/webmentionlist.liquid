@@ -41,7 +41,9 @@
   {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}
   {% if repliesSize > 0 %}
   <details id="comments">
-    <summary class="hed-h3">{{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}</summary>
+    <summary class="hed-h3">
+      {{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}
+    </summary>
     <ol class="static-comments static-comments-webmentions">
       {% for webmention in replies %}
         {% include webmention %}
@@ -58,8 +60,14 @@
 
   {%- assign mentions = webmentions.children | webmentionsForUrl: absoluteUrl, 'mention-of' -%}
   {%- assign mentionsSize = mentions | size -%}
-  <details>
-    <summary class="hed-h3">{{ mentionsSize }} Mention{% if mentionsSize != 1 %}s{% endif %}</summary>
+  <details class="{% if mentionsSize == 0 %}static-comments-empty{% endif %}">
+    <summary class="hed-h3">
+      {% if mentionsSize > 0 -%}
+      {{ mentionsSize }} Mention{% if mentionsSize != 1 %}s{% endif %}
+      {%- else -%}
+      Webmentions
+      {%- endif %}
+    </summary>
     <ol class="static-comments static-comments-webmentions">
       {% for webmention in mentions %}
         {% include webmention %}

@@ -7,6 +7,13 @@
 	font-size: 80%;
 	max-width: 30em;
 }
+details.static-comments-empty > summary {
+	list-style: none;
+	pointer-events: none;
+}
+details.static-comments-empty > summary::-webkit-details-marker {
+	display: none;
+}
 .static-comments.static-comments.static-comments ol,
 .static-comments.static-comments.static-comments {
 	padding-left: 0;

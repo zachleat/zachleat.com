@@ -10,3 +10,8 @@ layout: layouts/page.liquid
 <!-- <div class="notes-backlink">⬅ <a href="{{ "/web/notes/" | url }}">Back to Notes</a></div> -->
 
 {% include about.html %}
+
+{% unless disableComments %}
+	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
+	{% include webmentionlist, absoluteUrl: absoluteUrl %}
+{% endunless %}
