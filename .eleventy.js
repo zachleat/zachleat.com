@@ -90,6 +90,11 @@ module.exports = function(eleventyConfig) {
 		return "@" + url.replace("https://twitter.com/", "");
 	});
 
+	eleventyConfig.addLiquidFilter("hostnameFromUrl", (url) => {
+		let urlObject = new URL(url);
+		return urlObject.hostname;
+	});
+
 	eleventyConfig.addLiquidFilter("longWordWrap", str => {
 		let words = {
 			"domcontentloaded": true,

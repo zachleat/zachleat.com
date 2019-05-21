@@ -15,9 +15,6 @@
 .static-comments-reply {
 	margin: 1em 0 1em;
 }
-.static-comments-reply-anonymous {
-	opacity: .5;
-}
 .static-comments-reply .static-comments-reply {
 	margin-top: 2em;
 	padding-left: 1.5em;
@@ -32,6 +29,9 @@
 }
 .static-comments-title.static-comments-title {
 	@include webfont;
+}
+.static-comments-title.static-comments-title em {
+	@include webfontItalic;
 }
 .static-comments-title-twitter {
 	font-size: 80%;

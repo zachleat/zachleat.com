@@ -1,4 +1,4 @@
-<li class="static-comments-reply h-cite{% if webmention.author.name == '' %} static-comments-reply-anonymous{% endif %}" id="webmention-{{ webmention['wm-id'] }}">
+<li class="static-comments-reply h-cite" id="webmention-{{ webmention['wm-id'] }}">
   <div class="static-comments-hed">
     {% if webmention.url != "" %}<a class="static-comments-original h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">{% endif %}
     {% if webmention.author and webmention.author.photo != "" %}
@@ -8,7 +8,7 @@
     {% endif %}
 
     {% if webmention.author %}
-      <h3 class="static-comments-title p-name cased">{% if webmention.author.name != "" %}{{ webmention.author.name }}{% else %}Anonymous{% endif %} {% if webmention.author.url != "" %}<span class="static-comments-title-twitter">{{ webmention.author.url | twitterUsernameFromUrl }}</span>{% endif %}</h3>
+      <h3 class="static-comments-title p-name cased">{% if webmention.author.name != "" %}{{ webmention.author.name }}{% elsif webmention.url %}<em>{{ webmention.url | hostnameFromUrl }}</em>{% else %}Anonymous{% endif %} {% if webmention.author.url != "" %}<span class="static-comments-title-twitter">{{ webmention.author.url | twitterUsernameFromUrl }}</span>{% endif %}</h3>
     {% endif %}
     {% if webmention.url != "" %}</a>{% endif %}
 
