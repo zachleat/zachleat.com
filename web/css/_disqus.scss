@@ -28,11 +28,16 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	border-left: 4px solid #eee;
 }
 .static-comments-hed {
-	@include clearfix;
+	display: flex;
+	align-items: top;
+	flex-wrap: nowrap;
 }
 .static-comments-title {
-	float: left;
+	flex: 1;
 	margin: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .static-comments-title.static-comments-title {
 	@include webfont;
@@ -45,9 +50,10 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	color: #666;
 }
 .static-comments-img {
-	float: left;
-	max-width: 30px;
-	margin-right: 1em;
+	vertical-align: top;
+	width: 30px;
+	height: 30px;
+	margin-right: .5em;
 	border-radius: 50%;
 }
 .static-comments-msg {
@@ -67,19 +73,26 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	margin-bottom: 0;
 }
 .static-comments-date {
-	float: left;
-	clear: left;
+	min-width: 7em;
 	font-size: 85%;
+	text-align: right;
+	line-height: 1.5;
 }
 .static-comments-tag {
 	margin-left: 6px;
 }
-@media (min-width: 25em) { /* 400px */
-	.static-comments-date {
-		float: right;
-		clear: none;
+.static-comments-selflink {
+	float: right;
+	margin-left: 12px;
+}
+@media (min-width: 28.125em) { /* 450px */
+	.static-comments-hed {
+		align-items: center;
 	}
 	.static-comments-webmentions .static-comments-msg {
-		padding-left: calc(30px + 1em);
+		padding-left: calc(30px + .5em);
+	}
+	.static-comments-date br {
+		display: none;
 	}
 }
