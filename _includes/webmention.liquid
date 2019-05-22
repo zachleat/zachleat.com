@@ -33,7 +33,7 @@
     {%- if webmention.published %}{% else if webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}
-    <a href="#webmention-{{ webmention['wm-id'] }}" class="static-comments-selflink">#</a>
+    <a href="#webmention-{{ webmention['wm-id'] }}" class="static-comments-selflink exempt">#</a>
   </p></div>
   {% endif %}
 
