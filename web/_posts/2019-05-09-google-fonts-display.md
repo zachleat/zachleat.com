@@ -4,6 +4,7 @@ tags:
   - font-loading
 ---
 <p class="sub"><em>May 15, 2019 renamed URL parameter to <code>display</code>. Thank you <a href="https://mathiasbynens.be/">Mathias</a>!</em></p>
+<p class="sub"><em>May 22, 2019 added note about <code>display=swap</code> in the default code embed.</em></p>
 
 At Google I/O this week, [Anna Migas](https://twitter.com/szynszyliszys) shared a photo of an [Addy Osmani](https://addyosmani.com/) and [Katie Hempenius](https://katiehempenius.com/) session that dropped a font loading bombshell on the world.
 
@@ -11,11 +12,13 @@ At Google I/O this week, [Anna Migas](https://twitter.com/szynszyliszys) shared 
 
 Google Fonts <del>is adding</del> added support for `font-display`! 🎉🎉🎉🎉
 
-_(Note: although the I/O preview used the `font-display` URL parameter, [the final implementation uses `display` instead](https://twitter.com/addyosmani/status/1128548064287952896))_
+_**Update My 15, 2019:** although the I/O preview used the `font-display` URL parameter, [the final implementation uses `display` instead](https://twitter.com/addyosmani/status/1128548064287952896)_
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 ```
+
+_**Update May 22, 2019**: [Houssein Djirdeh](https://twitter.com/hdjirdeh/status/1130895027712995329) also noticed that `display=swap` is now used by default when you copy and paste code from the Google Fonts site. This is a really big deal for visible text. Full credit to the Google Fonts team for this._
 
 <p class="livedemo top" data-demo-label="Learn more">Want to learn more about <code>font-display</code>? Check out this <a href="https://font-display.glitch.me/"><code>font-display</code> Playground demo on Glitch</a> from Monica Dinculescu.</p>
 
