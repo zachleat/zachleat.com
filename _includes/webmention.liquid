@@ -20,7 +20,7 @@
     {% if webmention.published %}
       <em class="static-comments-date">
         {%- if webmention.url != "" %}<a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">{% endif -%}
-        <time class="dt-published" datetime="{{ webmention.published }}">{{ webmention.published | readableDateFromISO: "h:mma'<br> 'dd LLL yyyy" }}</time>
+        <time class="dt-published" datetime="{{ webmention.published }}">{{ webmention.published | readableDateFromISO: "h:mma'<br>&#160;'dd LLL yyyy" }}</time>
         {%- if webmention.url != "" %}</a>{% endif -%}
       </em>
     {% endif %}
