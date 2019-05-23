@@ -8,13 +8,25 @@
     display:flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 8px;
+    margin-bottom: 1em;
+}
+.webmentions__facepile > h3 {
+    float: left;
+    margin: 0 1em 0 -8px;
+}
+.webmentions__facepile > a {
+    margin-left: -8px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    line-height: 1;
+    overflow: hidden;
 }
 .webmentions__face {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
     object-fit: cover;
-    flex: none;
+    height: 100%;
 }
 .webmentions__list {
     list-style-type: none;

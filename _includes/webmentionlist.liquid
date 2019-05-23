@@ -2,36 +2,34 @@
   {%- assign reposts = webmentions.children | webmentionsForUrl: absoluteUrl, 'repost-of' -%}
   {%- assign repostsSize = reposts | size -%}
   {% if repostsSize > 0 %}
-  <h3>{{ repostsSize }} Retweet{% if repostsSize != 1 %}s{% endif %}</h3>
   <div class="webmentions__facepile">
-    {% for webmention in reposts %}
-      {% if webmention.url != "" %}
+    <h3>{{ repostsSize }} Retweet{% if repostsSize != 1 %}s{% endif %}</h3>
+    {%- for webmention in reposts -%}
+      {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-      {% endif %}
+      {%- endif -%}
       <img src="{% if webmention.author.photo != "" %}{{ webmention.author.photo }}{% else %}{{ '/web/img/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions__face" />
-      {% if webmention.url != "" %}
+      {%- if webmention.url != "" -%}
       </a>
-      {% endif %}
-      &#160;
-    {% endfor %}
+      {%- endif -%}
+    {%- endfor -%}
   </div>
   {% endif %}
 
   {%- assign likes = webmentions.children | webmentionsForUrl: absoluteUrl, 'like-of' -%}
   {%- assign likesSize = likes | size -%}
   {% if likesSize > 0 %}
-  <h3>{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</h3>
   <div class="webmentions__facepile">
-    {% for webmention in likes %}
-      {% if webmention.url != "" %}
+    <h3>{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</h3>
+    {%- for webmention in likes -%}
+      {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-      {% endif %}
+      {%- endif -%}
       <img src="{% if webmention.author.photo != "" %}{{ webmention.author.photo }}{% else %}{{ '/web/img/webmention-avatar-default.svg' | url }}{% endif %}" title="{{ webmention.author.name }}" alt="" class="webmentions__face" />
-      {% if webmention.url != "" %}
+      {%- if webmention.url != "" -%}
       </a>
-      {% endif %}
-      &#160;
-    {% endfor %}
+      {%- endif -%}
+    {%- endfor -%}
   </div>
   {% endif %}
 

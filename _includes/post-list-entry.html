@@ -25,8 +25,12 @@
 	</a>
 
 	<span class="tags">
-		{% capture fullurl %}/web{{post.url}}{% endcapture %}
-		{%- if commentsCounts[fullurl] > 0 %}<span class="tag tag-cased" title="{{ commentsCounts[fullurl] }} comment{% if commentsCounts[fullurl] != 1 %}s{% endif %}">📢 {{ commentsCounts[fullurl] }}</span>{% endif -%}
+		{%- capture absoluteUrl -%}{{ post.url | url | absoluteUrl }}{%- endcapture -%}
+		{%- assign webmentionsCount = webmentions.children | webmentionsForUrl: absoluteUrl | size -%}
+		{%- assign activityCount = webmentionsCount -%}
+		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
+		{%- if activityCount > 0 %}<span class="tag tag-cased" title="{{ activityCount }} comment{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</span>{% endif -%}
+
 		{%- if post.data.tags contains 'note' %}<a href="/web/notes/" class="tag">Note</a>{% endif -%}
 		{%- if post.data.tags contains 'eleventy' %}<a href="/web/eleventy/" class="tag">Eleventy</a>{% endif -%}
 		{%- if post.data.tags contains 'font-loading' %}<a href="/web/fonts/" class="tag font-loading">Web Fonts</a>{% endif -%}
@@ -34,7 +38,7 @@
 		{%- if post.data.tags contains 'research' %}<a href="/web/research/" class="tag">Research</a>{% endif -%}
 		{%- if post.data.tags contains 'nejsconf' %}<a href="/web/nejsconf/" class="tag">NEJS CONF</a>{% endif -%}
 		{%- if post.data.tags contains 'conference' -%}
-			<a class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>{% if post.data.tags contains 'speaking' %}Speaking{% elsif post.data.tags contains 'organizing' %}Organizing{% else %}Conference{% endif %}</a>
+			{%- if post.data.tags contains 'speaking' %}<a class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>Speaking</a>{% endif -%}
 			{%- if post.data.event_date %}<span class="tag tag-event">on {{ "📅" | emoji }} {{ post.data.event_date }}</span>{% endif -%}
 		{%- elsif post.data.tags contains 'presentations' or post.data.tags contains 'speaking' or post.data.tags contains 'video' or post.data.tags contains 'audio' -%}
 			<a href="/web/speaking/" class="tag">Speaking</a>
