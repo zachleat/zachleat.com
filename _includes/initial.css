@@ -2037,12 +2037,8 @@ pre + .livedemo {
   font-weight: 700;
   font-style: italic;
 }
-.webmentions__face {
-  max-width: 2rem;
-}
-
-.webmention__author__photo {
-  max-width: 3rem;
+.webmentions__facepile > a {
+  width: 2rem;
 }
 
 /*# sourceMappingURL=initial.css.map */
