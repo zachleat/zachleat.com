@@ -8,7 +8,7 @@ There are myriad problems with icon fonts. I won’t rehash those again here but
 
 * [Delivering Octicons with SVG](https://github.blog/2016-02-22-delivering-octicons-with-svg/) on the GitHub Blog.
 * [Seriously, Don’t Use Icon Fonts](https://cloudfour.com/thinks/seriously-dont-use-icon-fonts/) by Tyler Sticka for the Cloud Four blog.
-* [Death to Icon Fonts](https://speakerdeck.com/ninjanails/death-to-icon-fonts), a talk by @ninjanails
+* [Death to Icon Fonts](https://speakerdeck.com/ninjanails/death-to-icon-fonts), a talk by [Seren Davies](http://www.serendavies.me/)
 * [Making the Switch Away from Icon Fonts to SVG: Converting Font Icons to SVG](https://www.sarasoueidan.com/blog/icon-fonts-to-svg/) by Sara Soueidan
 * [Inline SVG vs. Icon Fonts](https://css-tricks.com/icon-fonts-vs-svg/) by Chris Coyier on CSS Tricks
 * Have another? [Pass it along!](https://twitter.com/intent/tweet?screen_name=zachleat)

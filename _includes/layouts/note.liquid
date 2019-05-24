@@ -1,5 +1,6 @@
 ---
 layout: layouts/page.liquid
+enableWebmentions: true
 ---
 {% assign noteCount = collections.note | size %}
 <em class="notes-subnote">This is a note written on {{ page.date | readableDate }}. It is short. It is terse. In total I’ve written <a href="{{ "/web/notes/" | url }}">{{ noteCount }} note{% if noteCount != 1 %}s{% endif %}</a>.{% if tweet %} This note was inspired by <a href="{{ tweet }}">a tweet</a>.{% endif %} Subscribe to the <a href="/web/notes/feed/">Notes RSS feed</a>.</em>
