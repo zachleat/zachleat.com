@@ -1,5 +1,5 @@
 ---
-title: "beyond tellerrand—Düsseldorf"
+title: beyond tellerrand—Düsseldorf
 categories:
   - presentations
 tags:
@@ -10,5 +10,6 @@ metadata:
   - schedule
 external_url: 'https://beyondtellerrand.com/events/duesseldorf-2019'
 event_date: May 13–15
-event_country: '<span role="img" aria-label="Germany" title="Germany">🇩🇪</span>'
+event_country: "<span role=\"img\" aria-label=\"Germany\" title=\"Germany\">\U0001F1E9\U0001F1EA</span>"
 ---
+

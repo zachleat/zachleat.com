@@ -4,10 +4,8 @@ author: Zach Leatherman
 layout: post
 tags:
   - project
-  - popular-posts-total
 deprecated: true
 feedtrim: true
-postRankTotalViews: 20
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]

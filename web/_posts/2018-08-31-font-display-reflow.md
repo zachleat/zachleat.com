@@ -2,8 +2,6 @@
 title: The Problem with font-display and Reflow
 tags:
   - font-loading
-  - popular-posts
-postRank: 18
 ---
 
 <style>

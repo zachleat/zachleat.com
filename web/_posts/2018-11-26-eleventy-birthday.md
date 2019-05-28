@@ -1,5 +1,5 @@
 ---
-title: Happy Birthday Eleventy! 🎉
+title: "Happy Birthday Eleventy! \U0001F389"
 tags:
   - eleventy
 ---
