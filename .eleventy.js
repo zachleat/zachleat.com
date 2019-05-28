@@ -4,6 +4,11 @@ const sanitizeHTML = require('sanitize-html')
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const siteData = require("./_data/site.json");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
+const Analyzer = require('natural').SentimentAnalyzer;
+const stemmer = require('natural').PorterStemmer;
+const analyzer = new Analyzer("English", stemmer, "afinn");
+
 // TODO replace with https://www.npmjs.com/package/striptags
 // const stripHtml = require("string-strip-html");
 
@@ -199,6 +204,14 @@ module.exports = function(eleventyConfig) {
 			// .filter(entry => !!entry.content)
 			.map(clean)
 	})
+
+	eleventyConfig.addLiquidFilter("getSentimentValue", function(content) {
+		if( content ) {
+			return analyzer.getSentiment(content.split(" "));
+		}
+
+		return 0;
+	});
 
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug) {

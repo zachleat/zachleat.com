@@ -62,6 +62,9 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	margin-top: .5em;
 	@include clearfix;
 }
+.static-comments-reply-salty > .static-comments-msg {
+	font-family: Comic Sans MS, Chalkboard SE, fantasy;
+}
 .static-comments-webmentions .static-comments-reply {
 	border-bottom: 1px solid #eee;
 	padding-bottom: 1em;

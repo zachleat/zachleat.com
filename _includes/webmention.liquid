@@ -1,4 +1,5 @@
-<li class="static-comments-reply h-cite" id="webmention-{{ webmention['wm-id'] }}">
+{% assign sentiment = webmention.content.text | getSentimentValue %}
+<li class="static-comments-reply{% if sentiment < 0 %} static-comments-reply-salty{% endif %} h-cite" id="webmention-{{ webmention['wm-id'] }}">
   <div class="static-comments-hed">
     {% if webmention.author and webmention.author.photo != "" -%}
       <img class="static-comments-img u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" loading="lazy">
