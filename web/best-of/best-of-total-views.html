@@ -17,6 +17,7 @@ dataUpdatedDate: 'May 28, 2019, 8:12 AM CDT'
 		<ol class="posts posts-count posts-count-forward posts-showall">
 			{% assign year = "" %}
 			{% assign currentyear = "" %}
+			{% assign listItems = collections.popularPostsTotalRanked %}
 			{% for post in collections.popularPostsTotalRanked %}
 				{% include post-list-entry.html, ignoreYear: "true", showRankTotalViews: "true", showDays: "true" %}
 			{% endfor %}

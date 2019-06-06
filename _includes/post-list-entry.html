@@ -7,7 +7,7 @@
 	<li class="subhed yearcount">{{ currentyearpostcount }} post{%if currentyearpostcount != 1 %}s{% endif %}{% if previousyear %} in {{ previousyear }}{% endif %}</li>
 {% endif %}
 {% endcomment %}
-	<li class="subhed" id="{{ currentyear }}">{{ currentyear }}</li>
+	<li class="subhed" id="{{ currentyear }}">{{ currentyear }}{% if listItems %} <span class="subhed-count">×{{ listItems | getPostCountForYear: currentyear }}</span>{% endif %}</li>
 	{% capture year %}{{currentyear}}{% endcapture %}
 	{% assign currentyearpostcount = 0 %}
 {% endif %}
@@ -29,7 +29,7 @@
 		{%- assign webmentionsCount = webmentions.children | webmentionsForUrl: absoluteUrl | size -%}
 		{%- assign activityCount = webmentionsCount -%}
 		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
-		{%- if activityCount > 0 %}<span class="tag tag-cased" title="{{ activityCount }} comment{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</span>{% endif -%}
+		{%- if activityCount > 0 %}<span class="tag tag-cased" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</span>{% endif -%}
 
 		{%- if post.data.tags contains 'note' %}<a href="/web/notes/" class="tag">Note</a>{% endif -%}
 		{%- if post.data.tags contains 'eleventy' %}<a href="/web/eleventy/" class="tag">Eleventy</a>{% endif -%}

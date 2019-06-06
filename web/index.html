@@ -6,14 +6,16 @@ tmpl: list
 
 <div class="maxwidth-list">
 	<article>
-		<h1 class="primary-title posts-indent">{{ title }}</h1>
-		<ol id="main-posts-list" class="posts posts-count" style="counter-reset: start-from {{ collections.posts | size | plus: 1 }}">
+		<h1 class="primary-title">{{ title }}</h1>
+		<p>{{ collections.posts | size }} posts since 2007.</p>
+		<ol id="main-posts-list" class="posts">
 			{% comment %}
 				liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
 			{% endcomment %}
 			{% assign year = "" %}
 			{% assign currentyear = "" %}
 			{% assign currentyearpostcount = 0 %}
+			{% assign listItems = collections.posts %}
 			{% for post in collections.posts %}
 				{% include post-list-entry.html %}
 			{% endfor %}

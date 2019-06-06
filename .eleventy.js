@@ -95,6 +95,19 @@ module.exports = function(eleventyConfig) {
 		return "@" + url.replace("https://twitter.com/", "");
 	});
 
+	eleventyConfig.addLiquidFilter("getPostCountForYear", (posts, year) => {
+		return posts.filter(function(post) {
+			return !post.data.tags ||
+				post.data.tags.indexOf("deprecated") === -1 &&
+				!post.data.deprecated &&
+				!post.data.feedtrim &&
+				post.data.tags.indexOf("pending") === -1 &&
+				post.data.tags.indexOf("draft") === -1;
+		}).filter(function(post) {
+			return post.data.page.date.getFullYear() === parseInt(year, 10);
+		}).length;
+	});
+
 	eleventyConfig.addLiquidFilter("hostnameFromUrl", (url) => {
 		let urlObject = new URL(url);
 		return urlObject.hostname;

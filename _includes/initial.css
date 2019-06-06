@@ -1011,6 +1011,14 @@ th.numeric {
   margin-bottom: 4px;
   border-bottom: 1px dotted #999;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subhed-count {
+  font-size: 70%;
+  color: #777;
 }
 
 .posts .subhed.yearcount {

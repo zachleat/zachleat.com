@@ -11,6 +11,7 @@ tmpl: list
 		<ol class="posts">
 			{% assign year = "" %}
 			{% assign currentyear = "" %}
+			{% assign listItems = collections.highlight %}
 			{% for post in collections.highlight %}
 				{% include post-list-entry.html %}
 			{% endfor %}

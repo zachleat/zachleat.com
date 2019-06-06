@@ -11,6 +11,7 @@ tmpl: list
 		<li><a href="https://github.com/zachleat/" class="posts-link">View all project source code on GitHub <span aria-hidden="true">→</span></a></li>
 		{% assign year = "" %}
 		{% assign currentyear = "" %}
+		{% assign listItems = collections.project %}
 		{% for post in collections.project reversed %}
 			{% include post-list-entry.html, view: "project" %}
 		{% endfor %}
