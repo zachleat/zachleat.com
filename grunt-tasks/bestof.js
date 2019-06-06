@@ -31,7 +31,6 @@ module.exports = function(grunt) {
 						if( postPath.indexOf( "./" ) === 0 ) {
 							postPath = postPath.substr(2);
 						}
-						// postPath = normalize('web/' + postPath);
 						console.log("Found path to original file:", postPath);
 
 						pageviews[newslug] = {
