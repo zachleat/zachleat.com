@@ -29,9 +29,12 @@
     position: relative;
     z-index: 1;
 }
-.webmentions__face {
-    object-fit: cover;
-    height: 100%;
+@supports (object-fit: cover) {
+    .webmentions__face {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
 }
 .webmentions__list {
     list-style-type: none;

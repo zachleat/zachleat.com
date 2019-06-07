@@ -30,7 +30,7 @@
   {% if webmention['wm-property'] == "repost-of" or webmention['wm-property'] == "like-of" %}
   {% else %}
   <div class="static-comments-msg p-content"><p>
-    {{ webmention.content.text }}
+    {{ webmention.content.text | randomCase: sentiment }}
     {%- if webmention.published %}{% else if webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}

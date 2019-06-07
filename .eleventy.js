@@ -5,9 +5,9 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const siteData = require("./_data/site.json");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-const Analyzer = require('natural').SentimentAnalyzer;
-const stemmer = require('natural').PorterStemmer;
-const analyzer = new Analyzer("English", stemmer, "afinn");
+const Natural = require('natural');
+const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
+const randomCase = require('random-case');
 
 // TODO replace with https://www.npmjs.com/package/striptags
 // const stripHtml = require("string-strip-html");
@@ -218,9 +218,17 @@ module.exports = function(eleventyConfig) {
 			.map(clean)
 	})
 
+	eleventyConfig.addLiquidFilter("randomCase", function(content, sentimentValue) {
+		if(content && sentimentValue < 0) {
+			return randomCase(content);
+		}
+		return content;
+	});
+
 	eleventyConfig.addLiquidFilter("getSentimentValue", function(content) {
 		if( content ) {
-			return analyzer.getSentiment(content.split(" "));
+			const tokenizer = new Natural.WordTokenizer();
+			return analyze.getSentiment(tokenizer.tokenize(content));
 		}
 
 		return 0;
