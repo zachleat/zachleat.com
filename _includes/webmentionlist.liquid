@@ -75,7 +75,7 @@
 
   <form action="https://webmention.io/www.zachleat.com/webmention" method="post" class="form-webmention">
     <label for="form-webmention-source">Mention this post from your site:</label>
-    <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com">
+    <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required>
     <input type="hidden" name="target" value="https://www.zachleat.com/web{{ page.url }}">
     <input type="submit" class="button" value="Send Webmention">
   </form>
