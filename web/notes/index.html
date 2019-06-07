@@ -2,22 +2,29 @@
 title: Notes
 primaryTitleExemptWidth: true
 'override:tags': []
-layout: layouts/page.liquid
+layout: default
+tmpl: list
 permalink: '/web/notes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber}}/{% endif %}'
 pagination:
   data: collections.note
   reverse: true
-  size: 8
+  size: 20
   alias: notes
 ---
-{% assign noteCount = collections.note | size %}
-<em class="notes-subnote">These are my notes. They are short. They are terse. In total I’ve written {{ noteCount }} note{% if noteCount != 1 %}s{% endif %}. Subscribe to the <a href="/web/notes/feed/">Notes RSS feed</a>.</em>
-<em class="notes-subnote">{% for tag in collections.noteTagList %}🏷 <a href="/web/notes/tag/{{ tag | slug }}/">{{ tag | downcase }}</a><!--({{ collections.noteTagCollections[tag] | size }})--> {% endfor %}</em>
-
-{%- for note in notes %}
-<h3 class="notes-hed"><a href="{{ note.url | url }}">{{ note.data.title }}</a></h3>
-<div class="notes-content"><a href="{{ note.url | url }}" class="notes-content-link">Read More</a>{{ note.templateContent }}</div>
-{%- endfor %}
-
-{% if pagination.previousPageHref %}<a href="{{ pagination.previousPageHref | url }}">≪ Previous Page</a>{% endif %}
-{% if pagination.nextPageHref %}<a href="{{ pagination.nextPageHref | url }}">Next Page ≫</a>{% endif %}
+{% assign totalNoteCount = collections.note | size %}
+<div class="maxwidth-list">
+	<article>
+		<h1 class="primary-title">{{ title }}</h1>
+		<p>
+			<em class="notes-subnote">These are my notes. They are short. They are terse. In total I’ve written {{ totalNoteCount }} note{% if totalNoteCount != 1 %}s{% endif %}. Subscribe to the <a href="/web/notes/feed/">Notes RSS feed</a>.</em>
+			<em class="notes-subnote">{% for tag in collections.noteTagList %}🏷 <a href="/web/notes/tag/{{ tag | slug }}/">{{ tag | downcase }}</a><!--({{ collections.noteTagCollections[tag] | size }})--> {% endfor %}</em>
+		</p>
+		<ol class="posts">
+			{% for post in notes %}
+				{% include post-list-entry.html, ignoreYear: "true" %}
+			{% endfor %}
+		</ol>
+		{% if pagination.previousPageHref %}<a href="{{ pagination.previousPageHref | url }}">≪ Previous Page</a>{% endif %}
+		{% if pagination.nextPageHref %}<a href="{{ pagination.nextPageHref | url }}">Next Page ≫</a>{% endif %}
+	</article>
+</div><!-- /.maxwidth-list -->
