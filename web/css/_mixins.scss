@@ -21,7 +21,7 @@
 		font-family: LatoSubset, $fallbackSystemFont;
 	}
 	.webfont-stage-2 & {
-		font-family: Lato, $fallbackSystemFont;
+		font-family: Lato, Numero, $fallbackSystemFont;
 	}
 }
 @mixin webfontBold {
@@ -30,7 +30,7 @@
 		font-weight: 700;
 	}
 	.webfont-stage-2 & {
-		font-family: LatoBold, $fallbackSystemFont;
+		font-family: LatoBold, Numero, $fallbackSystemFont;
 	}
 }
 @mixin webfontItalic {
@@ -39,7 +39,7 @@
 		font-weight: 400;
 	}
 	.webfont-stage-2 & {
-		font-family: LatoItalic, $fallbackSystemFont;
+		font-family: LatoItalic, Numero, $fallbackSystemFont;
 		/*font-family: SFNSText-Italic, $fallbackSystemFont;*/
 		/*font-variation-settings: 'wght' 1.37351;*/
 	}
@@ -50,7 +50,7 @@
 		font-weight: 700;
 	}
 	.webfont-stage-2 & {
-		font-family: LatoBoldItalic, $fallbackSystemFont;
+		font-family: LatoBoldItalic, Numero, $fallbackSystemFont;
 	}
 }
 @mixin textDecorationSkipInkFallback {

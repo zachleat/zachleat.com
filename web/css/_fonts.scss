@@ -32,3 +32,20 @@
 	font-weight: 700;
 	font-style: italic;
 }
+
+@font-face {
+	font-family: Numero; /* 'Old Standard TT' */
+  src: url(/web/css/fonts/old-standard/OldStandard-Italic-subset.woff2) format("woff2"),
+       url(/web/css/fonts/old-standard/OldStandard-Italic-subset.zopfli.woff) format("woff");
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+2116;
+}
+
+@font-face {
+	font-family: Numero; /* 'Old Standard TT' */
+  src: url(/web/css/fonts/old-standard/OldStandard-Regular-subset.woff2) format("woff2"),
+       url(/web/css/fonts/old-standard/OldStandard-Regular-subset.zopfli.woff) format("woff");
+  font-display: swap;
+  unicode-range: U+2116;
+}
