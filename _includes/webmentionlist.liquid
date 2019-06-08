@@ -1,9 +1,11 @@
 <div class="webmentions" id="webmentions">
   {%- assign reposts = webmentions.children | webmentionsForUrl: absoluteUrl, 'repost-of' -%}
   {%- assign repostsSize = reposts | size -%}
+  {%- assign likes = webmentions.children | webmentionsForUrl: absoluteUrl, 'like-of' -%}
+  {%- assign likesSize = likes | size -%}
   {% if repostsSize > 0 %}
   <div class="webmentions__facepile">
-    <h3>{{ repostsSize }} Retweet{% if repostsSize != 1 %}s{% endif %}</h3>
+    <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ repostsSize }} Retweet{% if repostsSize != 1 %}s{% endif %}</h3>
     {%- for webmention in reposts -%}
       {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
@@ -16,11 +18,9 @@
   </div>
   {% endif %}
 
-  {%- assign likes = webmentions.children | webmentionsForUrl: absoluteUrl, 'like-of' -%}
-  {%- assign likesSize = likes | size -%}
   {% if likesSize > 0 %}
   <div class="webmentions__facepile">
-    <h3>{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</h3>
+    <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</h3>
     {%- for webmention in likes -%}
       {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
