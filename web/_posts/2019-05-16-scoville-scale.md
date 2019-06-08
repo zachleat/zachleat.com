@@ -7,7 +7,7 @@ tags:
   - speaking
   - font-loading
   - popular-posts
-postRank: 8
+postRank: 9
 ---
 
 _Originally presented at Beyond Tellerrand in Düsseldorf, Germany 🇩🇪 in May, 2019._
