@@ -1,4 +1,45 @@
 @charset "UTF-8";
+@font-face {
+  font-family: LatoSubset;
+  src: url("/web/css/fonts/lato/2.0/LatoLatin-Regular.supersubset.woff2") format("woff2");
+  /* space, Uppercase A-Z, lowercase a-z */
+  unicode-range: U+32, U+65 -U90, U+97-122;
+}
+@font-face {
+  font-family: Lato;
+  src: url("/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.woff2") format("woff2"), url("/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.zopfli.woff") format("woff");
+}
+@font-face {
+  font-family: LatoBold;
+  src: url("/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.woff2") format("woff2"), url("/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.zopfli.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: LatoItalic;
+  src: url("/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.woff2") format("woff2"), url("/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.zopfli.woff") format("woff");
+  font-style: italic;
+}
+@font-face {
+  font-family: LatoBoldItalic;
+  src: url("/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.woff2") format("woff2"), url("/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.zopfli.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Numero;
+  /* 'Old Standard TT' */
+  src: url(/web/css/fonts/old-standard/OldStandard-Italic-subset.woff2) format("woff2"), url(/web/css/fonts/old-standard/OldStandard-Italic-subset.zopfli.woff) format("woff");
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+2116;
+}
+@font-face {
+  font-family: Numero;
+  /* 'Old Standard TT' */
+  src: url(/web/css/fonts/old-standard/OldStandard-Regular-subset.woff2) format("woff2"), url(/web/css/fonts/old-standard/OldStandard-Regular-subset.zopfli.woff) format("woff");
+  font-display: swap;
+  unicode-range: U+2116;
+}
 * {
   box-sizing: border-box;
 }
@@ -61,7 +102,7 @@ dt {
   font-weight: 700;
 }
 .webfont-stage-2 dt {
-  font-family: LatoBold, sans-serif;
+  font-family: LatoBold, Numero, sans-serif;
 }
 
 dd {
@@ -208,7 +249,7 @@ figcaption,
 }
 .webfont-stage-2 figcaption,
 .webfont-stage-2 .caption {
-  font-family: LatoItalic, sans-serif;
+  font-family: LatoItalic, Numero, sans-serif;
   /*font-family: SFNSText-Italic, $fallbackSystemFont;*/
   /*font-variation-settings: 'wght' 1.37351;*/
 }
@@ -220,7 +261,7 @@ figcaption strong,
 }
 .webfont-stage-2 figcaption strong,
 .webfont-stage-2 .caption strong {
-  font-family: LatoBoldItalic, sans-serif;
+  font-family: LatoBoldItalic, Numero, sans-serif;
 }
 
 /* Layout Helpers */
@@ -441,7 +482,7 @@ body {
   font-family: LatoSubset, sans-serif;
 }
 .webfont-stage-2 body {
-  font-family: Lato, sans-serif;
+  font-family: Lato, Numero, sans-serif;
 }
 
 .webfont-stage-1 body {
@@ -514,7 +555,7 @@ strong {
   font-weight: 700;
 }
 .webfont-stage-2 strong {
-  font-family: LatoBold, sans-serif;
+  font-family: LatoBold, Numero, sans-serif;
 }
 
 em,
@@ -524,7 +565,7 @@ blockquote {
 }
 .webfont-stage-2 em,
 .webfont-stage-2 blockquote {
-  font-family: LatoItalic, sans-serif;
+  font-family: LatoItalic, Numero, sans-serif;
   /*font-family: SFNSText-Italic, $fallbackSystemFont;*/
   /*font-variation-settings: 'wght' 1.37351;*/
 }
@@ -540,7 +581,7 @@ blockquote strong {
 .webfont-stage-2 strong blockquote,
 .webfont-stage-2 em strong,
 .webfont-stage-2 blockquote strong {
-  font-family: LatoBoldItalic, sans-serif;
+  font-family: LatoBoldItalic, Numero, sans-serif;
 }
 
 /* Headers */
@@ -555,14 +596,14 @@ h1, h2, h3, h4, h5,
 .webfont-stage-2 h1, .webfont-stage-2 h2, .webfont-stage-2 h3, .webfont-stage-2 h4, .webfont-stage-2 h5,
 .webfont-stage-2 .hed-h2,
 .webfont-stage-2 .hed-h3 {
-  font-family: LatoBold, sans-serif;
+  font-family: LatoBold, Numero, sans-serif;
 }
 h1 em, h2 em, h3 em, h4 em, h5 em, .hed-h2 em, .hed-h3 em {
   font-style: italic;
   font-weight: 700;
 }
 .webfont-stage-2 h1 em, .webfont-stage-2 h2 em, .webfont-stage-2 h3 em, .webfont-stage-2 h4 em, .webfont-stage-2 h5 em, .webfont-stage-2 .hed-h2 em, .webfont-stage-2 .hed-h3 em {
-  font-family: LatoBoldItalic, sans-serif;
+  font-family: LatoBoldItalic, Numero, sans-serif;
 }
 
 h1, h2, h3,
@@ -657,7 +698,7 @@ h5 {
   font-weight: 700;
 }
 .webfont-stage-2 .primary-title {
-  font-family: LatoBoldItalic, sans-serif;
+  font-family: LatoBoldItalic, Numero, sans-serif;
 }
 
 .primary-title.primary-title {
@@ -863,7 +904,7 @@ th {
   font-weight: 700;
 }
 .webfont-stage-2 th {
-  font-family: LatoBold, sans-serif;
+  font-family: LatoBold, Numero, sans-serif;
 }
 
 caption {
@@ -907,7 +948,7 @@ th.numeric {
   font-weight: 700;
 }
 .webfont-stage-2 .rail h1 {
-  font-family: LatoBold, sans-serif;
+  font-family: LatoBold, Numero, sans-serif;
 }
 @media (max-width: 59.9375em) {
   .rail h1 {
@@ -1058,7 +1099,7 @@ th.numeric {
   font-weight: 400;
 }
 .webfont-stage-2 .posts .description {
-  font-family: LatoItalic, sans-serif;
+  font-family: LatoItalic, Numero, sans-serif;
   /*font-family: SFNSText-Italic, $fallbackSystemFont;*/
   /*font-variation-settings: 'wght' 1.37351;*/
 }
@@ -1163,7 +1204,7 @@ th.numeric {
   font-weight: 400;
 }
 .webfont-stage-2 .posts-paragraph {
-  font-family: LatoItalic, sans-serif;
+  font-family: LatoItalic, Numero, sans-serif;
   /*font-family: SFNSText-Italic, $fallbackSystemFont;*/
   /*font-variation-settings: 'wght' 1.37351;*/
 }
@@ -1282,7 +1323,7 @@ th.numeric {
   font-weight: 400;
 }
 .webfont-stage-2 .about p {
-  font-family: LatoItalic, sans-serif;
+  font-family: LatoItalic, Numero, sans-serif;
   /*font-family: SFNSText-Italic, $fallbackSystemFont;*/
   /*font-variation-settings: 'wght' 1.37351;*/
 }
@@ -1328,7 +1369,7 @@ th.numeric {
   font-weight: 400;
 }
 .webfont-stage-2 .footer {
-  font-family: LatoItalic, sans-serif;
+  font-family: LatoItalic, Numero, sans-serif;
   /*font-family: SFNSText-Italic, $fallbackSystemFont;*/
   /*font-variation-settings: 'wght' 1.37351;*/
 }
@@ -1437,7 +1478,7 @@ th.numeric {
   font-weight: 700;
 }
 .webfont-stage-2 .tags .tag.timeago {
-  font-family: LatoBoldItalic, sans-serif;
+  font-family: LatoBoldItalic, Numero, sans-serif;
 }
 
 .tags .tag:hover + .tag.timeago {
@@ -1542,7 +1583,7 @@ th.numeric {
     font-family: LatoSubset, sans-serif;
   }
   .webfont-stage-2 .tags .tag.tag-popular-rail {
-    font-family: Lato, sans-serif;
+    font-family: Lato, Numero, sans-serif;
   }
 
   .tags .tag.tag-popular-rail em {
@@ -1574,7 +1615,7 @@ th.numeric {
   font-family: LatoSubset, sans-serif;
 }
 .webfont-stage-2 .posts .highlight a .external {
-  font-family: Lato, sans-serif;
+  font-family: Lato, Numero, sans-serif;
 }
 
 /*.external:after {
@@ -1660,7 +1701,7 @@ pre + .livedemo {
   font-family: LatoSubset, sans-serif;
 }
 .webfont-stage-2 .livedemo:after {
-  font-family: Lato, sans-serif;
+  font-family: Lato, Numero, sans-serif;
 }
 
 .livedemo-mixed:after {
@@ -1749,7 +1790,7 @@ pre + .livedemo {
   font-weight: 700;
 }
 .webfont-stage-2 .primarylink {
-  font-family: LatoBold, sans-serif;
+  font-family: LatoBold, Numero, sans-serif;
 }
 
 .primarylink:before {
@@ -1767,7 +1808,7 @@ pre + .livedemo {
   font-family: LatoSubset, sans-serif;
 }
 .webfont-stage-2 .primarylink-demo:after {
-  font-family: Lato, sans-serif;
+  font-family: Lato, Numero, sans-serif;
 }
 
 /* Generic Nowrap */
@@ -2019,32 +2060,6 @@ pre + .livedemo {
   display: none;
 }
 
-@font-face {
-  font-family: LatoSubset;
-  src: url("/web/css/fonts/lato/2.0/LatoLatin-Regular.supersubset.woff2") format("woff2");
-  /* space, Uppercase A-Z, lowercase a-z */
-  unicode-range: U+32, U+65 -U90, U+97-122;
-}
-@font-face {
-  font-family: Lato;
-  src: url("/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.woff2") format("woff2"), url("/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.zopfli.woff") format("woff");
-}
-@font-face {
-  font-family: LatoBold;
-  src: url("/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.woff2") format("woff2"), url("/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.zopfli.woff") format("woff");
-  font-weight: 700;
-}
-@font-face {
-  font-family: LatoItalic;
-  src: url("/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.woff2") format("woff2"), url("/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.zopfli.woff") format("woff");
-  font-style: italic;
-}
-@font-face {
-  font-family: LatoBoldItalic;
-  src: url("/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.woff2") format("woff2"), url("/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.zopfli.woff") format("woff");
-  font-weight: 700;
-  font-style: italic;
-}
 .webmentions__facepile > a {
   width: 2rem;
 }
