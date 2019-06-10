@@ -1,0 +1,72 @@
+---
+title: The Crushing Weight of Webmention Facepiles
+---
+I was cruising my own web site with DevTools open (as one does) and browsed to my latest blog post only to be _slapped in the face_ with a 3.7MB web site. My web site (on a blog post page without content images) is normally about 400KB. What happened??
+
+Astute readers of blog post titles may already be ahead of me here—the more successful the blog post got on social media, the more webmentions it got, and the cluster of avatars below the post ([the facepile](https://indieweb.org/facepile), as it is known) grew and grew.
+
+## What should I do?
+
+1. My first instinct was to make the images intrinsically smaller. Solve the problem at the root! Some of them came back from webmention.io’s avatar cache as 256×256—one was 135KB 😱. I filed [an issue upstream](https://github.com/aaronpk/webmention.io/issues/126) for this. But I needed to solve this problem immediately, locally.
+2. Use [Cloudinary](https://cloudinary.com/) or [imgix](https://www.imgix.com/) or [Netlify Image transformations](https://www.netlify.com/docs/image-transformation/) or some other free-for-now or free-metered or fully paid service to resize these automatically. I started down this road and decided it was a little much for a personal site.
+3. _“Zach, you’re just being vain—simply cap the list and only show a few of these images maximum.”_ I mean, yeah, I guess. But I also like investing in showcasing webmentions fairly prominently on my site because I’m trying to be an advocate for [IndieWeb](https://indieweb.org/).
+4. Use `loading="lazy"` to lazy load these images. I was already doing this but [browser support is non-existent](https://caniuse.com/#feat=loading-lazy-attr), currently.
+5. Take control of it myself and use `IntersectionObserver` to lazy load them only when they come into view. `IntersectionObserver` [browser support](https://caniuse.com/#feat=intersectionobserver) is pretty good now. I decided to go with this low hanging fruit for now (at least as a short term solution).
+
+## Enter <span class="mixed">IntersectionObserver</span>
+
+### HTML
+
+```html
+<img src="/web/img/webmention-avatar-default.svg" data-src="https://webmention.io/avatar/…" alt="Author name" class="webmentions__face">
+```
+
+### JavaScript
+
+```js
+if( typeof IntersectionObserver !== "undefined" && "forEach" in NodeList.prototype ) {
+	var observer = new IntersectionObserver(function(changes) {
+		if ("connection" in navigator && navigator.connection.saveData === true) {
+			return;
+		}
+
+		changes.forEach(function(change) {
+			if(change.isIntersecting) {
+				change.target.setAttribute("src", change.target.getAttribute("data-src"));
+				observer.unobserve(change.target);
+			}
+		});
+	});
+
+	document.querySelectorAll("img[data-src]").forEach(function(img) {
+		observer.observe(img);
+	});
+}
+```
+
+This means that if JavaScript hasn’t loaded yet or failed somewhere, these avatars would stick with the default image I’ve specified—I’m okay with that.
+
+I also added a little check to skip the load if the [Save-Data user preference](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/save-data/) was enabled.
+
+## Bonus: Details
+
+The other great thing about using `IntersectionObserver` is that if the images aren’t visible they aren’t loaded. For example, I hide Replies and Mentions inside of closed `<details>` elements.
+
+<div class="livedemo">
+<details>
+	<summary>1 REPLY</summary>
+	<ol class="static-comments static-comments-webmentions">
+<li class="static-comments-reply static-comments-reply-salty h-cite" id="webmention-623655">
+  <div class="static-comments-hed">
+    <img class="static-comments-img u-photo" src="/web/img/webmention-avatar-default.svg" data-src="https://webmention.io/avatar/pbs.twimg.com/0bcc1fa9d76d585952d16f48507fe6905723dacefa6dfe47930e79eb03af864a.jpg" alt="Jeremy Swinnen"><h3 class="static-comments-title p-name cased" title="Jeremy Swinnen @jereswinnen">Jeremy Swinnen <span class="static-comments-title-twitter">@jereswinnen</span></h3>
+      <em class="static-comments-date"><a class="h-card u-url" href="https://twitter.com/jereswinnen/status/1137642852794687488" target="_blank" rel="noopener noreferrer"><time class="dt-published" datetime="2019-06-09T08:49:27+00:00">3:49AM<br>&#160;09 Jun 2019</time></a></em>
+  </div>
+  <div class="static-comments-msg p-content"><p>
+    TOTAlLy GOnNa STeAL THiS foR MY BLOg 😉<a href="#webmention-623655" class="static-comments-selflink exempt">#</a>
+  </p></div>
+</li><!-- /static-comments-reply -->
+</ol>
+</details>
+</div>
+
+If `<details>` is supported by the browser, the avatar images will only load on demand when the user expands `<details>` to show the content! I love it. And if `<details>` is not supported the avatars are lazy loaded just like any other content.
