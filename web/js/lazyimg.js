@@ -1,4 +1,4 @@
-if( typeof IntersectionObserver !== "undefined" ) {
+if( typeof IntersectionObserver !== "undefined" && "forEach" in NodeList.prototype ) {
 	var observer = new IntersectionObserver(function(changes) {
 		changes.forEach(function(change) {
 			if ("connection" in navigator && navigator.connection.saveData === true) {
