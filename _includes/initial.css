@@ -71,6 +71,11 @@ abbr {
   text-decoration: none;
 }
 
+.list-flush.list-flush.list-flush {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* Accessibility and Cut the Mustard */
 .sr-only,
 .a11y-only {
@@ -695,11 +700,11 @@ h5 {
   line-height: 0.85;
 }
 .primary-title {
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
 }
 .webfont-stage-2 .primary-title {
-  font-family: LatoBoldItalic, Numero, sans-serif;
+  font-family: LatoBold, Numero, sans-serif;
 }
 
 .primary-title.primary-title {

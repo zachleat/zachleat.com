@@ -22,6 +22,10 @@ hr {
 abbr {
 	text-decoration: none;
 }
+.list-flush.list-flush.list-flush {
+	list-style: none;
+	padding-left: 0;
+}
 
 /* Accessibility and Cut the Mustard */
 .sr-only,
@@ -495,7 +499,7 @@ h5 {
 
 .primary-title {
 	font-size: 2.5em;
-	@include webfontBoldItalic;
+	@include webfontBold;
 	line-height: 0.85;
 }
 .primary-title.primary-title {
