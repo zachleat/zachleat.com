@@ -24,6 +24,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
 	/* COPY */
+	eleventyConfig.addPassthroughCopy(".htaccess");
 	eleventyConfig.addPassthroughCopy("demos/");
 	eleventyConfig.addPassthroughCopy("img/");
 	eleventyConfig.addPassthroughCopy("presentations/");

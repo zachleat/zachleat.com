@@ -3,10 +3,13 @@ RewriteEngine On
 RewriteBase /
 RewriteRule résumé/$ /resume/ [L]
 
+RewriteCond %{HTTP:Accept-Encoding} br
+RewriteCond %{REQUEST_FILENAME}.zbr -f 
+RewriteRule ^(.*)$ $1.zbr [L]
+
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{REQUEST_URI} !^/.well-known/acme-challenge
 
-# RewriteRule ^$ /web/ [L]
 RedirectMatch 301 /Projects$ /projects/
 RedirectMatch 301 /Projects/(.*)$ /projects/$1
 RedirectMatch 301 /projects/alarmd$ /alarmd/
@@ -22,8 +25,8 @@ RedirectMatch 301 /web/\d{4}/\d{2}/\d{2}/(.*)$ /web/$1
 RedirectMatch 301 /web/\d{4}/(.*)$ /web/$1
 </IfModule>
 
-# mod_deflate isn't included on the production host, so we have a workaround
-# in /web/.htaccess
+# mod_deflate isn't included on the production host, so we have a workaround above
+AddEncoding br .zbr
 
 #<IfModule mod_deflate.c>
 #AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript

@@ -132,10 +132,13 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		zopfli: {
+		compress: {
 			main: {
 				options: {
-					iteration: 15
+					mode: 'brotli',
+					brotli: {
+						mode: 1
+					}
 				},
 				files: [
 					{
@@ -144,7 +147,7 @@ module.exports = function(grunt) {
 						src: ['**/*.html'],
 						dest: '_site/',
 						extDot: 'last',
-						ext: '.html.zgz'
+						ext: '.html.zbr'
 					},
 					{
 						expand: true,
@@ -152,7 +155,7 @@ module.exports = function(grunt) {
 						src: ['**/*.js'],
 						dest: '_site/',
 						extDot: 'last',
-						ext: '.js.zgz'
+						ext: '.js.zbr'
 					},
 					{
 						expand: true,
@@ -160,7 +163,7 @@ module.exports = function(grunt) {
 						src: ['**/*.css'],
 						dest: '_site/',
 						extDot: 'last',
-						ext: '.css.zgz'
+						ext: '.css.zbr'
 					},
 					{
 						expand: true,
@@ -168,7 +171,7 @@ module.exports = function(grunt) {
 						src: ['**/*.svg'],
 						dest: '_site/',
 						extDot: 'last',
-						ext: '.svg.zgz'
+						ext: '.svg.zbr'
 					}
 				]
 			}
@@ -207,7 +210,7 @@ module.exports = function(grunt) {
 		},
 		clean: {
 			drafts: [ '_site/web/drafts/**' ],
-			zopfli: [ '_site/**/*.zgz' ]
+			compressed: [ '_site/**/*.zbr' ]
 		},
 		watch: {
 			assets: {
@@ -241,6 +244,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('separate', ['clean', 'assets', 'copy:includes']);
 
 	// Upload to Production
-	grunt.registerTask('stage', ['clean', 'assets', 'images', 'content', 'clean:drafts', 'htmlmin', 'zopfli']);
+	grunt.registerTask('stage', ['clean', 'assets', 'images', 'content', 'clean:drafts', 'htmlmin', 'compress']);
 	grunt.registerTask('deploy', ['stage', 'shell:upload', 'clean']);
 };
