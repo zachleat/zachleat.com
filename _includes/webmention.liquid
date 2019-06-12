@@ -29,11 +29,11 @@
 
   {% if webmention['wm-property'] == "repost-of" or webmention['wm-property'] == "like-of" %}
   {% else %}
-  <div class="static-comments-msg p-content"><p>
-    {{ webmention.content.text | randomCase: sentiment }}
+  <div class="static-comments-msg p-content{% if webmention.content.text.length > 5000 %} static-comments-msg-long{% endif %}"><p>
     {%- if webmention.published %}{% else if webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}
+    {{ webmention.content.text | escapeGoat | randomCase: sentiment }}
     <a href="#webmention-{{ webmention['wm-id'] }}" class="static-comments-selflink exempt">#</a>
   </p></div>
   {% endif %}

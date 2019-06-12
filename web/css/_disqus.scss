@@ -60,11 +60,30 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	clear: both;
 	line-height: 1.7;
 	margin-top: .5em;
-	@include clearfix;
 }
 .static-comments-reply-salty > .static-comments-msg {
 	font-family: Comic Sans MS, Chalkboard SE, fantasy;
 }
+
+.static-comments-msg-long {
+	max-height: 37.5em;
+	overflow: hidden;
+	position: relative;
+}
+.static-comments-msg-long:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 6em;
+	background-image: linear-gradient(to bottom,transparent,#fff);
+}
+.static-comments-reply-salty > .static-comments-msg-long {
+	font-family: inherit;
+}
+
 .static-comments-webmentions .static-comments-reply {
 	border-bottom: 1px solid #eee;
 	padding-bottom: 1em;

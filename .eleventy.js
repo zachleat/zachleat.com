@@ -8,6 +8,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const Natural = require('natural');
 const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
 const randomCase = require('random-case');
+const {htmlEscape} = require('escape-goat');
 
 // TODO replace with https://www.npmjs.com/package/striptags
 // const stripHtml = require("string-strip-html");
@@ -220,10 +221,14 @@ module.exports = function(eleventyConfig) {
 	})
 
 	eleventyConfig.addLiquidFilter("randomCase", function(content, sentimentValue) {
-		if(content && sentimentValue < 0) {
+		if(content && sentimentValue < 0 && content.length <= 5000) {
 			return randomCase(content);
 		}
 		return content;
+	});
+
+	eleventyConfig.addLiquidFilter("escapeGoat", function(content) {
+		return content ? htmlEscape(content) : content;
 	});
 
 	eleventyConfig.addLiquidFilter("getSentimentValue", function(content) {
