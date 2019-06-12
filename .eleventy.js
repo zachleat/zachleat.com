@@ -8,7 +8,6 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const Natural = require('natural');
 const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
 const randomCase = require('random-case');
-const {htmlEscape} = require('escape-goat');
 
 // TODO replace with https://www.npmjs.com/package/striptags
 // const stripHtml = require("string-strip-html");
@@ -183,6 +182,17 @@ module.exports = function(eleventyConfig) {
 		return absoluteUrl.replace("https://www.zachleat.com", "");
 	});
 
+	const allowedHTML = {
+		allowedTags: ['b', 'i', 'em', 'strong', 'a'],
+		allowedAttributes: {
+			a: ['href']
+		}
+	};
+
+	eleventyConfig.addLiquidFilter('sanitizeHTML', content => {
+		return sanitizeHTML(content, allowedHTML);
+	});
+
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
 		if( !allowedTypes ) {
 			// all types
@@ -190,20 +200,7 @@ module.exports = function(eleventyConfig) {
 		} else if( typeof allowedTypes === "string" ) {
 			allowedTypes = [ allowedTypes ];
 		}
-		const allowedHTML = {
-			allowedTags: ['b', 'i', 'em', 'strong', 'a'],
-			allowedAttributes: {
-				a: ['href']
-			}
-		};
 
-		const clean = entry => {
-			const { content } = entry
-			if (content && content['content-type'] === 'text/html') {
-				content.value = sanitizeHTML(content.value, allowedHTML)
-			}
-			return entry
-		}
 		return webmentions
 			.filter(entry => {
 				if(!url) {
@@ -215,20 +212,15 @@ module.exports = function(eleventyConfig) {
 				let target = queryparamSplit[0];
 				return target === url;
 			})
-			.filter(entry => allowedTypes.includes(entry['wm-property']))
-			// .filter(entry => !!entry.content)
-			.map(clean)
-	})
+			.filter(entry => allowedTypes.includes(entry['wm-property']));
+	});
+
 
 	eleventyConfig.addLiquidFilter("randomCase", function(content, sentimentValue) {
 		if(content && sentimentValue < 0 && content.length <= 5000) {
 			return randomCase(content);
 		}
 		return content;
-	});
-
-	eleventyConfig.addLiquidFilter("escapeGoat", function(content) {
-		return content ? htmlEscape(content) : content;
 	});
 
 	eleventyConfig.addLiquidFilter("getSentimentValue", function(content) {
