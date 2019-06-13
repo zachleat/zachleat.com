@@ -14,4 +14,5 @@ event_date: June 13
 
 <div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe src="https://noti.st/zachleat/xPa1on/embed" frameborder="0" allowfullscreen></iframe></div></div>
 
-* [Download PDF from Not.ist](https://on.notist.cloud/pdf/deck-61fcb30bb4ce0532.pdf)
+* View on [notist](https://noti.st/zachleat/xPa1on/the-five-whys-of-web-font-loading-performance)
+* [Download PDF from notist](https://noti.st/deck-c2be1cca67c57702.pdf)
