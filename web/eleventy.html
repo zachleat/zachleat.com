@@ -3,12 +3,34 @@ title: Why Are There So Many Static Site Generators
 layout: default
 tmpl: list
 ---
-
+<style>
+.eleventy-logo {
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+@media (min-width: 60em) and (min-height: 1000px) and (max-height: 0) { /* 960px */
+	.eleventy-logo {
+		position: absolute;
+		right: -14.375rem; /* -230px /16 */
+		width: 13.5rem; /* 216px /16 */
+		top: 50vh;
+		transform: translateY(-50%);
+	}
+}
+@media (min-width: 64em) and (min-height: 1000px) and (max-height: 0) { /* 1024px */
+	.eleventy-logo {
+		right: -16.25rem; /* -260px /16 */
+	}
+}
+</style>
 <div class="maxwidth-list">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
-		<p>Blog posts and tutorials for perhaps my biggest side project yet, the <a href="https://github.com/11ty/eleventy/">Eleventy static site generator</a>. This blog is generated using Eleventy.</p>
-		<p class="primarylink"><a href="https://www.11ty.io">11ty.io</a></p>
+		<a href="https://www.11ty.io/"><img src="/web/img/11ty.png" alt="Eleventy Logo" class="eleventy-logo"></a>
+		<p>Blog posts and tutorials for perhaps my biggest side project yet, the <a href="https://www.11ty.io/">Eleventy static site generator</a>. This blog is generated using Eleventy.</p>
+		<p class="primarylink"><a href="https://www.11ty.io/docs/">Eleventy Documentation</a></p>
+		<p class="primarylink"><a href="https://github.com/11ty/eleventy/">GitHub</a> · <a href="https://twitter.com/eleven_ty">Twitter</a> · <a href="https://opencollective.com/11ty">Open Collective</a></p>
 		<ol class="posts">
 			{% for post in collections.eleventy %}
 				{% include post-list-entry.html, ignoreYear: "true" %}

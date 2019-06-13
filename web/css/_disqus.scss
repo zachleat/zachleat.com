@@ -66,7 +66,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 }
 
 .static-comments-msg-long {
-	max-height: 37.5em;
+	max-height: 18.75em; /* 300px /16 */
 	overflow: hidden;
 	position: relative;
 }
@@ -104,8 +104,8 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	margin-left: 6px;
 }
 .static-comments-selflink {
-	float: right;
-	margin-left: 12px;
+	font-size: 80%;
+	margin-left: 8px;
 }
 @media (min-width: 28.125em) { /* 450px */
 	.static-comments-hed {

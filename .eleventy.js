@@ -24,18 +24,18 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
 	/* COPY */
-	eleventyConfig.addPassthroughCopy(".htaccess");
-	eleventyConfig.addPassthroughCopy("demos/");
-	eleventyConfig.addPassthroughCopy("img/");
-	eleventyConfig.addPassthroughCopy("presentations/");
-	eleventyConfig.addPassthroughCopy("robots.txt");
-	eleventyConfig.addPassthroughCopy("humans.txt");
-	eleventyConfig.addPassthroughCopy("keybase.txt");
-
-	eleventyConfig.addPassthroughCopy("web/css/fonts");
-	eleventyConfig.addPassthroughCopy("web/img");
-	eleventyConfig.addPassthroughCopy("web/wp-content");
-	eleventyConfig.addPassthroughCopy("web/dist");
+	eleventyConfig
+		.addPassthroughCopy(".htaccess")
+		.addPassthroughCopy("robots.txt")
+		.addPassthroughCopy("humans.txt")
+		.addPassthroughCopy("keybase.txt")
+		.addPassthroughCopy("demos/")
+		.addPassthroughCopy("img/")
+		.addPassthroughCopy("presentations/")
+		.addPassthroughCopy("web/css/fonts")
+		.addPassthroughCopy("web/img")
+		.addPassthroughCopy("web/wp-content")
+		.addPassthroughCopy("web/dist");
 
 	/* LAYOUTS */
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
@@ -190,7 +190,7 @@ module.exports = function(eleventyConfig) {
 	};
 
 	eleventyConfig.addLiquidFilter('sanitizeHTML', content => {
-		return sanitizeHTML(content, allowedHTML);
+		return content ? sanitizeHTML(content, allowedHTML) : "";
 	});
 
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {

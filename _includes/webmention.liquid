@@ -7,9 +7,7 @@
       <img class="static-comments-img" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="">
     {%- endif -%}
 
-    {%- if webmention.author -%}
-      <h3 class="static-comments-title p-name cased" title="{% if webmention.author.name != "" %}{{ webmention.author.name }}{% elsif webmention.url %}{{ webmention.url | hostnameFromUrl }}{% else %}Anonymous{% endif %} {% if webmention.author.url != "" %}{{ webmention.author.url | twitterUsernameFromUrl }}{% endif %}">{% if webmention.author.name != "" %}{{ webmention.author.name }}{% elsif webmention.url %}<em>{{ webmention.url | hostnameFromUrl }}</em>{% else %}Anonymous{% endif %} {% if webmention.author.url != "" %}<span class="static-comments-title-twitter">{{ webmention.author.url | twitterUsernameFromUrl }}</span>{% endif %}</h3>
-    {%- endif -%}
+    <h3 class="static-comments-title p-name cased" title="{% if webmention.author.name != "" %}{{ webmention.author.name }}{% elsif webmention.url %}{{ webmention.url | hostnameFromUrl }}{% else %}Anonymous{% endif %} {% if webmention.author.url != "" %}{{ webmention.author.url | twitterUsernameFromUrl }}{% endif %}">{% if webmention.author.name != "" %}{{ webmention.author.name }}{% elsif webmention.url %}<em>{{ webmention.url | hostnameFromUrl }}</em>{% else %}Anonymous{% endif %} {% if webmention.author.url != "" %}<span class="static-comments-title-twitter">{{ webmention.author.url | twitterUsernameFromUrl }}</span>{% endif %} <a href="#webmention-{{ webmention['wm-id'] }}" class="static-comments-selflink exempt">#</a></h3>
 
     {% if showType %}
     {% if webmention['wm-property'] == "repost-of" %} <span class="static-comments-tag tag-inline">Retweet</span>{% endif %}
@@ -34,7 +32,6 @@
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}
     {{ webmention.content.text | sanitizeHTML | randomCase: sentiment }}
-    <a href="#webmention-{{ webmention['wm-id'] }}" class="static-comments-selflink exempt">#</a>
   </p></div>
   {% endif %}
 
