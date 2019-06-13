@@ -5,8 +5,6 @@ categories:
 tags:
   - speaking
   - font-loading
-metadata:
-  - schedule
 event_date: June 13
 ---
 
