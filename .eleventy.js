@@ -289,6 +289,18 @@ module.exports = function(eleventyConfig) {
 	function hasTag(post, tag) {
 		return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
 	}
+	eleventyConfig.addCollection("writing", function(collection) {
+		let posts = collection.getSortedByDate().reverse();
+		let items = [];
+		for( let item of posts ) {
+			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") && !hasTag(item, "speaking") ) {
+				items.push( item );
+				if( items.length >= 5 ) {
+					return items;
+				}
+			}
+		}
+	});
 	eleventyConfig.addCollection("latestPosts", function(collection) {
 		let posts = collection.getSortedByDate().reverse();
 		let items = [];
