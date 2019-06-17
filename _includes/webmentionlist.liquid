@@ -33,6 +33,21 @@
   </div>
   {% endif %}
 
+  {%- assign bookmarks = webmentions.children | webmentionsForUrl: absoluteUrl, 'bookmark-of' -%}
+  {%- assign bookmarksSize = bookmarks | size -%}
+  {% if bookmarksSize > 0 %}
+  <details>
+    <summary class="hed-h3">
+      {{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}
+    </summary>
+    <ol class="static-comments static-comments-webmentions">
+      {% for webmention in bookmarks %}
+        {% include webmention %}
+      {% endfor %}
+    </ol>
+  </details>
+  {% endif %}
+
   {%- assign replies = webmentions.children | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
   {% assign disqusCommentSize = 0 %}
   {% if disqus %}{% assign disqusCommentSize = disqus.commentCount %}{% endif %}
@@ -72,6 +87,8 @@
       {% endfor %}
     </ol>
   </details>
+
+
 
   <form action="https://webmention.io/www.zachleat.com/webmention" method="post" class="form-webmention">
     <label for="form-webmention-source">Mention this post from your site:</label>

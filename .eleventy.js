@@ -93,7 +93,10 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidFilter("twitterUsernameFromUrl", (url) => {
-		return "@" + url.replace("https://twitter.com/", "");
+		if( url.indexOf("https://twitter.com/") > -1 ) {
+			return "@" + url.replace("https://twitter.com/", "");
+		}
+		return url;
 	});
 
 	eleventyConfig.addLiquidFilter("getPostCountForYear", (posts, year) => {
@@ -196,7 +199,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
 		if( !allowedTypes ) {
 			// all types
-			allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of'];
+			allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of', 'bookmark-of'];
 		} else if( typeof allowedTypes === "string" ) {
 			allowedTypes = [ allowedTypes ];
 		}
