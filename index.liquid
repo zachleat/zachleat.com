@@ -14,10 +14,10 @@ hidePopularInSidebar: true
 			{% for post in collections.writing limit:5 %}
 				{% include post-list-entry.html, ignoreYear: "true" %}
 			{% endfor %}
-			<li><em><a href="/web/" class="posts-link posts-link-more">…see archives.</a></em></li>
+			<li><em><a href="/web/writing/" class="posts-link posts-link-more">…see writing.</a></em></li>
 		</ol>
 
-		<h2>All Activity in Archives</h2>
+		<h2>Archives</h2>
 		<ol class="posts">
 			{% for post in collections.posts limit:5 %}
 				{% include post-list-entry.html, ignoreYear: "true" %}

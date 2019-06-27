@@ -292,17 +292,18 @@ module.exports = function(eleventyConfig) {
 	function hasTag(post, tag) {
 		return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
 	}
+	function hasCategory(post, category) {
+		return "categories" in post.data && post.data.categories && post.data.categories.indexOf(category) > -1;
+	}
 	eleventyConfig.addCollection("writing", function(collection) {
 		let posts = collection.getSortedByDate().reverse();
 		let items = [];
 		for( let item of posts ) {
-			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") && !hasTag(item, "speaking") ) {
+			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") && !hasTag(item, "speaking") && !hasCategory(item, "presentations") ) {
 				items.push( item );
-				if( items.length >= 5 ) {
-					return items;
-				}
 			}
 		}
+		return items;
 	});
 	eleventyConfig.addCollection("latestPosts", function(collection) {
 		let posts = collection.getSortedByDate().reverse();

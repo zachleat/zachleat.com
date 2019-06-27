@@ -1,5 +1,5 @@
 ---
-title: Archives
+title: Writing
 layout: default
 tmpl: list
 ---
@@ -7,7 +7,7 @@ tmpl: list
 <div class="maxwidth-list">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
-		<p>{{ collections.posts | size }} posts since 2007. Show <a href="/web/writing/">only writing</a>.</p>
+		<p>{{ collections.writing | size }} posts since 2007. Show <a href="/web/">all archives</a>.</p>
 		<ol id="main-posts-list" class="posts">
 			{% comment %}
 				liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
@@ -15,8 +15,8 @@ tmpl: list
 			{% assign year = "" %}
 			{% assign currentyear = "" %}
 			{% assign currentyearpostcount = 0 %}
-			{% assign listItems = collections.posts %}
-			{% for post in collections.posts %}
+			{% assign listItems = collections.writing %}
+			{% for post in collections.writing %}
 				{% include post-list-entry.html %}
 			{% endfor %}
 		</ol>

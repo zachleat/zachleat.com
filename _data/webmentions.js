@@ -28,6 +28,7 @@ async function fetchWebmentions(since) {
     return false;
   }
 
+  // TODO move to use since_id instead of since date
   let url = `${API_ORIGIN}?domain=${domain}&token=${TOKEN}`;
   if (since) {
     url += `&per-page=100&&since=${since}`;

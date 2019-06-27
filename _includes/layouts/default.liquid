@@ -57,7 +57,7 @@
 						<div class="tags tags-rail">
 							<span class="tags-bigger">
 								<a href="/" class="tag tag-borderless{% if page.url == '/' %} active{% endif %}">Home</a>
-								<a href="/web/" class="tag tag-borderless{% if page.url == '/web/' %} active{% endif %}">Archives</a>
+								<a href="/web/" class="tag tag-borderless{% if page.url == '/web/' or page.url == '/web/writing/' %} active{% endif %}">Archives</a>
 								<a href="/web/about/" class="tag tag-borderless{% if page.url == '/web/about/' %} active{% endif %}">About</a>
 							</span>
 							<a href="/web/fonts/" class="tag font-loading{% if page.url == '/web/fonts/' %} active{% endif %}">Web Fonts</a>
