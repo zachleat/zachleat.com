@@ -166,6 +166,11 @@ Preload will affect first render times, remove this if you would rather have FOU
 }
 ```
 
+We could add our subset `unicode-range` value we used above in our glyphhanger command, but it would not have any functional value. A few reasons for this:
+
+1. Our second stage will not be a distinct set of glyphs, it’s a superset of the first stage glyphs.
+2. Our second stage has other features that we don’t (or can’t yet) feature test for, namely hinting. See this [proposal for a `uses-hints` media query](https://github.com/w3c/csswg-drafts/issues/3926).
+
 **JavaScript for Second Stage**
 
 You can put this wherever you’d like. I like to inline it into the `<head>` too but you may have other high priority requests you’d like to load before these.
