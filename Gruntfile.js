@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 					'node_modules/infinity-burger/infinity-burger.js',
 					'<%= config.jsSrc %>fontloademu.js',
 					'<%= config.jsSrc %>google-analytics.js',
-					// '<%= config.jsSrc %>twitter-api.js',
+					'<%= config.jsSrc %>twitter-api.js',
 					'<%= config.jsSrc %>lazyimg.js',
 					// '<%= config.jsSrc %>fouterswap.js',
 					],
