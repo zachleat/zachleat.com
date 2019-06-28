@@ -2,13 +2,14 @@
 title: Archives
 layout: default
 tmpl: list
+enableWebmentions: true
 ---
 
 <div class="maxwidth-list">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
 		<p>{{ collections.posts | size }} posts since 2007. Show <a href="/web/writing/">only writing</a>.</p>
-		<ol id="main-posts-list" class="posts">
+		<ol id="main-posts-list" class="posts h-feed">
 			{% comment %}
 				liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
 			{% endcomment %}
@@ -17,7 +18,7 @@ tmpl: list
 			{% assign currentyearpostcount = 0 %}
 			{% assign listItems = collections.posts %}
 			{% for post in collections.posts %}
-				{% include post-list-entry.html %}
+				{% include post-list-entry.html, hfeed: true %}
 			{% endfor %}
 		</ol>
 		<form class="post-filter" id="post-filter-form">

@@ -19,9 +19,9 @@ pagination:
 			<em class="notes-subnote">These are my notes. They are short. They are terse. In total I’ve written {{ totalNoteCount }} note{% if totalNoteCount != 1 %}s{% endif %}. Subscribe to the <a href="/web/notes/feed/">Notes RSS feed</a>.</em>
 			<em class="notes-subnote">{% for tag in collections.noteTagList %}🏷 <a href="/web/notes/tag/{{ tag | slug }}/">{{ tag | downcase }}</a><!--({{ collections.noteTagCollections[tag] | size }})--> {% endfor %}</em>
 		</p>
-		<ol class="posts">
+		<ol class="posts h-feed">
 			{% for post in notes %}
-				{% include post-list-entry.html, ignoreYear: "true" %}
+				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
 			{% endfor %}
 		</ol>
 		{% if pagination.previousPageHref %}<a href="{{ pagination.previousPageHref | url }}">≪ Previous Page</a>{% endif %}

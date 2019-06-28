@@ -12,10 +12,10 @@
 	{% assign currentyearpostcount = 0 %}
 {% endif %}
 {% capture nullvoid %}{% increment currentyearpostcount %}{% endcapture %}
-<li class="{% if post.data.metadata contains 'schedule' and post.data.tags contains 'speaking' or post.data.event_link %}event-link {% endif %}{% if post.data.deprecated %}deprecated {% endif %}{% if post.data.tags contains 'highlight' %}highlight {% endif %}{% if post.data.smalltitle %}smalltitle {% endif %}{% if post.data.tags contains 'upcoming' %}upcoming {% endif %}{% if post.data.tags contains 'nejsconf' %}nejsconf {% endif %}"{% if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}>
+<li class="{% if post.data.metadata contains 'schedule' and post.data.tags contains 'speaking' or post.data.event_link %}event-link {% endif %}{% if post.data.deprecated %}deprecated {% endif %}{% if post.data.tags contains 'highlight' %}highlight {% endif %}{% if post.data.smalltitle %}smalltitle {% endif %}{% if post.data.tags contains 'upcoming' %}upcoming {% endif %}{% if post.data.tags contains 'nejsconf' %}nejsconf {% endif %}{% if hfeed %}h-entry {% endif %}"{% if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}>
 	{% if post.data.tags contains 'external' %}<span class="external" title="External Link"><span class="icon-link-external"></span></span>{% endif %}
 	
-	<a href="{% if post.data.tags contains 'external' %}{{ post.data.external_url }}{% else %}{{ post.url | url }}{% endif %}" class="posts-link">
+	<a href="{% if post.data.tags contains 'external' %}{{ post.data.external_url }}{% else %}{{ post.url | url }}{% endif %}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
 	{%- if post.data.event_country %}{{ post.data.event_country }} {% endif -%}
 	{%- if view == 'project' -%}
 		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}

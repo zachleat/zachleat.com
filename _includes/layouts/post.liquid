@@ -3,37 +3,39 @@ layout: default
 enableWebmentions: true
 ---
 <div class="maxwidth">
-	<article>
-	<h1 class="primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
-	<div class="sub">
-		<em class="date">{{ page.date | readableDate }}</em>
+	<article class="h-entry">
+		<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
+		<div class="sub p-description">
+			<em class="date">{{ page.date | readableDate }}</em>
 {% if postRank %}
-		<em class="words"><a href="/web/best-of/">#{{ postRank }} Popular</a></em>
+			<em class="words"><a href="/web/best-of/">#{{ postRank }} Popular</a></em>
 {% endif %}
 {% if tags contains 'video' %}
-		<em class="words">Watch in {{ medialength | medialengthCleanup }}</em>
+			<em class="words">Watch in {{ medialength | medialengthCleanup }}</em>
 {% endif %}
-	</div>
-	{% if deprecated %}
-	<article>
-		<div class="callout">
-			<h3>Warning</h3>
-			<p>This article is old and may contain information that is outdated, irrelevant, or—dare I say it—no longer accurate. Read with care!</p>
 		</div>
-	</article>
-	{% endif %}
-	{% if external_url %}
-	<article>
-		{%- if tags contains 'upcoming' %}
-		<p><em>This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
-		{%- else %}
-		{%- unless ignoreExternalLinkInLayoutFile %}
-		<p><em>Originally posted at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
-		{%- endunless %}
-		{%- endif %}
-	</article>
-	{% endif %}
-	{{ content }}
+{% if deprecated %}
+		<article>
+			<div class="callout">
+				<h3>Warning</h3>
+				<p>This article is old and may contain information that is outdated, irrelevant, or—dare I say it—no longer accurate. Read with care!</p>
+			</div>
+		</article>
+{% endif %}
+{% if external_url %}
+		<article>
+			{%- if tags contains 'upcoming' %}
+			<p><em>This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
+			{%- else %}
+			{%- unless ignoreExternalLinkInLayoutFile %}
+			<p><em>Originally posted at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
+			{%- endunless %}
+			{%- endif %}
+		</article>
+{% endif %}
+		<div class="e-content">
+		{{ content }}
+		</div>
 	</article>
 </div>
 <div class="maxwidth">
