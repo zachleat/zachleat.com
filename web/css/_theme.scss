@@ -1420,3 +1420,12 @@ pre + .livedemo {
 /*.tmpl-notetagpage .fontloademu {
 	display: none !important;
 }*/
+
+/* Lazy loading images */
+.img-error {
+	background-color: #afa;
+	opacity: .1;
+}
+.img-error img {
+	color: transparent;
+}
