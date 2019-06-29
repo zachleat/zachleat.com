@@ -698,7 +698,7 @@ h5 {
 .primary-title {
   font-size: 2.5em;
   line-height: 0.85;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
 }
 .primary-title {
   font-style: normal;
@@ -1932,6 +1932,16 @@ pre + .livedemo {
 /*.tmpl-notetagpage .fontloademu {
 	display: none !important;
 }*/
+/* Lazy loading images */
+.img-error {
+  background-color: #afa;
+  opacity: .1;
+}
+
+.img-error img {
+  color: transparent;
+}
+
 /* Social links */
 .social {
   text-transform: uppercase;
