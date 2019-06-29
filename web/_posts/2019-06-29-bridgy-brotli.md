@@ -7,7 +7,7 @@ title: Bridgy for Webmentions with Brotli
 
 On June 11, 2019 I tweeted:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Upgraded <a href="https://t.co/ggcRs3SQVf">https://t.co/ggcRs3SQVf</a> from Zopfli to Brotli compression this morning (only used if the browser supports it).<br><br>Saves a few more KB to spend frivolously on web fonts and facepiles 😇</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/1138427969326723073?ref_src=twsrc%5Etfw">June 11, 2019</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Upgraded zachleat.com from Zopfli to Brotli compression this morning (only used if the browser supports it).<br><br>Saves a few more KB to spend frivolously on web fonts and facepiles 😇</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/1138427969326723073?ref_src=twsrc%5Etfw">June 11, 2019</a></blockquote>
 
 Unfortunately, I would learn much later that this would cause my webmentions to stop working too!
 
