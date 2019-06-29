@@ -3,7 +3,12 @@ RewriteEngine On
 RewriteBase /
 RewriteRule résumé/$ /resume/ [L]
 
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.zgz -f
+RewriteRule ^(.*)$ $1.zgz [L]
+
 RewriteCond %{HTTP:Accept-Encoding} br
+#RewriteCond %{HTTP:Accept-Encoding} !br;q=0
 RewriteCond %{REQUEST_FILENAME}.zbr -f 
 RewriteRule ^(.*)$ $1.zbr [L]
 
@@ -27,6 +32,7 @@ RedirectMatch 301 /web/\d{4}/(.*)$ /web/$1
 
 # mod_deflate isn't included on the production host, so we have a workaround above
 AddEncoding br .zbr
+AddEncoding gzip .zgz
 
 #<IfModule mod_deflate.c>
 #AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript

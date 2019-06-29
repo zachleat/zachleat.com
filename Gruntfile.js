@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 					'node_modules/infinity-burger/infinity-burger.js',
 					'<%= config.jsSrc %>fontloademu.js',
 					'<%= config.jsSrc %>google-analytics.js',
-					'<%= config.jsSrc %>twitter-api.js',
+					// '<%= config.jsSrc %>twitter-api.js',
 					'<%= config.jsSrc %>lazyimg.js',
 					// '<%= config.jsSrc %>fouterswap.js',
 					],
@@ -133,13 +133,12 @@ module.exports = function(grunt) {
 			}
 		},
 		compress: {
-			main: {
+			mainGzip: {
 				options: {
-					mode: 'brotli',
-					brotli: {
-						mode: 1
-					}
+					mode: 'gzip'
 				},
+				// only do HTML files to comply with webmention brid.gy bug https://github.com/snarfed/bridgy/issues/878
+				// when that bug is fixed, this can go away (and .htaccess stuff for gzip)
 				files: [
 					{
 						expand: true,
@@ -147,8 +146,27 @@ module.exports = function(grunt) {
 						src: ['**/*.html'],
 						dest: '_site/',
 						extDot: 'last',
-						ext: '.html.zbr'
-					},
+						ext: '.html.zgz'
+					}
+				]
+			},
+			mainBrotli: {
+				options: {
+					mode: 'brotli',
+					brotli: {
+						mode: 1
+					}
+				},
+				files: [
+					// reenable when bridgy bug above in compress:mainGzip task is fixed.
+					// {
+					// 	expand: true,
+					// 	cwd: '_site/',
+					// 	src: ['**/*.html'],
+					// 	dest: '_site/',
+					// 	extDot: 'last',
+					// 	ext: '.html.zbr'
+					// },
 					{
 						expand: true,
 						cwd: '_site/',
@@ -210,7 +228,7 @@ module.exports = function(grunt) {
 		},
 		clean: {
 			drafts: [ '_site/web/drafts/**' ],
-			compressed: [ '_site/**/*.zbr' ]
+			compressed: [ '_site/**/*.zbr', '_site/**/*.zgz' ]
 		},
 		watch: {
 			assets: {
