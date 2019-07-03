@@ -6,8 +6,6 @@ tags:
   - conference
   - speaking
   - font-loading
-  - popular-posts
-postRank: 11
 ---
 
 _Originally presented at Beyond Tellerrand in Düsseldorf, Germany 🇩🇪 in May, 2019._

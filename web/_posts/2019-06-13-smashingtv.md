@@ -1,5 +1,5 @@
 ---
-title: "Smashing TV: The Five Whys of Web Font Loading Performance"
+title: 'Smashing TV: The Five Whys of Web Font Loading Performance'
 categories:
   - presentations
 tags:

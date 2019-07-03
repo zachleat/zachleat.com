@@ -98,6 +98,7 @@ module.exports = function(grunt) {
 				debug("frontmatter.content: %O", frontmatter.content);
 				debug("frontmatter data: %O", data);
 				fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
+				console.log( "Finished writing", entry.path );
 			} else {
 				console.log( ">>> WARNING output file found but input file not found", entry.path );
 			}
@@ -118,6 +119,7 @@ module.exports = function(grunt) {
 			debug("frontmatter.content: %O", frontmatter.content);
 			debug("frontmatter data: %O", data);
 			fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
+			console.log( "Finished writing", entry.path );
 		});
 		console.log( "> Deleting complete." );
 
@@ -129,6 +131,8 @@ module.exports = function(grunt) {
 			data.postRank = ( j + 1 );
 			if( !data.tags ) {
 				data.tags = [];
+			} else if( typeof data.tags === "string" ) {
+				data.tags = [ data.tags ];
 			}
 			data.tags.push( 'popular-posts' );
 			data.tags = _uniq( data.tags );
@@ -138,6 +142,7 @@ module.exports = function(grunt) {
 			debug("frontmatter.content: %O", frontmatter.content);
 			debug("frontmatter data: %O", data);
 			fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
+			console.log( "Finished writing", entry.path );
 		});
 
 		console.log( "> Editing post front matter with post ranks (total)." );
@@ -153,6 +158,7 @@ module.exports = function(grunt) {
 			data.tags = _uniq( data.tags );
 			console.log( "Writing", entry.path );
 			fs.writeFileSync( entry.path, matter.stringify(frontmatter.content, data, {lineWidth: 9999}));
+			console.log( "Finished writing", entry.path );
 		});
 
 		console.log( "> Writing best-of jekyll template file." );
