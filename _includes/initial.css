@@ -368,6 +368,8 @@ h5,
     .tmpl-list .content,
     .tmpl-page .content {
       max-width: none;
+      margin-left: initial;
+      margin-right: initial;
     }
 
     .tmpl-list .content-grid-sibling {
