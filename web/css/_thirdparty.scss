@@ -19,9 +19,11 @@
 .w3c-b:before {
 	display: none;
 }
-@media ( min-width: 48em) { /* 768px */
-	.enhanced-js.tmpl-page.w3c-b:before {
-		display: block;
+@supports (display: grid) {
+	@media ( min-width: 48em) { /* 768px */
+		.enhanced-js.tmpl-page.w3c-b:before {
+			display: block;
+		}
 	}
 }
 
@@ -34,8 +36,11 @@
 .infinity-burger.infinity-burger.enabled {
 	display: none;
 }
-@media (min-width: 60em) { /* 960px */
-	.infinity-burger.infinity-burger.enabled {
-		display: block;
+@supports (display: grid) {
+	@media (min-width: 60em) { /* 960px */
+		.infinity-burger.infinity-burger.enabled {
+			display: block;
+			right: 1.25em; /* 20px /16 */
+		}
 	}
 }

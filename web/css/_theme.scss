@@ -195,12 +195,10 @@ h5,
 
 /* Layout */
 .rail {
-	@media (max-width: $oneColLayoutMaxWidth) {
-		padding: 1em 1em .5em;
-		margin-bottom: 1.5em;
-		border-bottom: 1px solid #dedede;
-		text-align: center;
-	}
+	padding: 1em 1em .5em;
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid #dedede;
+	text-align: center;
 }
 .content {
 	text-align: left;
@@ -224,6 +222,7 @@ h5,
 
 @media (min-width: 25em) { /* 400px */
 	.content {
+		max-width: 31em;
 		padding-left: 0.75rem; /* 12px /16 */
 		padding-right: 0.75rem; /* 12px /16 */
 	}
@@ -234,9 +233,23 @@ h5,
 		margin-right: -0.75rem; /* -12px /16 */
 		width: calc(100% + 1.5rem);
 	}
+	.tmpl-list .content {
+		max-width: 45em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tmpl-page .content {
+		max-width: 31em;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 @supports (display: grid) {
 	@media (min-width: 32.5em) { /* 520px */
+		.tmpl-list .content,
+		.tmpl-page .content {
+			max-width: none;
+		}
 		.tmpl-list .content-grid-sibling {
 			max-width: 45em;
 			margin-left: auto;
@@ -270,6 +283,7 @@ h5,
 			padding: 0;
 			border-bottom-width: 0;
 			margin-bottom: 0;
+			text-align: left;
 		}
 		.rail-sticky {
 			position: sticky;
@@ -290,13 +304,12 @@ h5,
 		.hamburger { grid-area: 1/3/4/4; }
 
 		/* w3c banner */
-		.tmpl-page.w3c-b body {
+		.tmpl-page body {
 			grid-template-columns: 1.5rem 1fr 13.5rem 2.5rem;
 		}
-		.tmpl-page.w3c-b .content { grid-area: 1/2/4/3; }
-		.tmpl-page.w3c-b .rail { grid-area: 1/3/4/4; } 
-		.tmpl-page.w3c-b .hamburger { grid-area: 1/4/4/5; }
-
+		.tmpl-page .content { grid-area: 1/2/4/3; }
+		.tmpl-page .rail { grid-area: 1/3/4/4; } 
+		.tmpl-page .hamburger { grid-area: 1/4/4/5; }
 
 		body:after {
 			content: "";
@@ -663,19 +676,21 @@ th.numeric {
 	margin: 0 0 .5em;
 }
 
-@media (min-width: $twoColLayoutMinWidth) {
-	.rail .header {
-		@include clearfix;
-	}
-	.rail img {
-		width: 2.75em; /* 44px /16 */
-		height: 2.75em; /* 44px /16 */
-		float: left;
-		margin-right: 0.75em; /* 12px /16 */
-	}
-	.rail h1 {
-		float: left;
-		width: 160px;
+@supports (display: grid) {
+	@media (min-width: $twoColLayoutMinWidth) {
+		.rail .header {
+			@include clearfix;
+		}
+		.rail img {
+			width: 2.75em; /* 44px /16 */
+			height: 2.75em; /* 44px /16 */
+			float: left;
+			margin-right: 0.75em; /* 12px /16 */
+		}
+		.rail h1 {
+			float: left;
+			width: 160px;
+		}
 	}
 }
 
@@ -1084,46 +1099,48 @@ th.numeric {
 .tags.tags-rail-top5 {
 	display: none;
 }
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 40.625em) {
-	.tags .tag-popular {
-		display: none;
-	}
-	.tags .tag-popular.has-toc {
-		display: inline-block;
-	}
+@supports (display: grid) {
+	@media (min-width: $twoColLayoutMinWidth) and (min-height: 40.625em) {
+		.tags .tag-popular {
+			display: none;
+		}
+		.tags .tag-popular.has-toc {
+			display: inline-block;
+		}
 
-	/* Top 5 posts */
-	.tags.tags-rail-top5 {
-		display: block;
-	}
-	.tags .top5 {
-		font-size: 13px;
-		margin-top: 4em;
-		margin-bottom: .5em;
-		color: #666;
-	}
-	.tags .top5 a {
-		text-decoration: none;
-	}
-	.tags .tag.tag-popular-rail {
-		text-transform: none;
-		text-decoration: none;
-		font-size: 12px;
-		margin-top: 0.6153846153846em; /* 8px /13 */
-		padding-left: 0;
-		padding-right: 0;
-		@include webfont;
-	}
-	.tags .tag.tag-popular-rail em {
-		white-space: nowrap;
-		color: #387731;
-	}
-	.tags .top5 a:hover,
-	.tags a[href].tag.tag-popular-rail:hover {
-		background-color: transparent;
-		border-color: transparent;
-		color: $linkActiveColor;
-		text-decoration: underline;
+		/* Top 5 posts */
+		.tags.tags-rail-top5 {
+			display: block;
+		}
+		.tags .top5 {
+			font-size: 13px;
+			margin-top: 4em;
+			margin-bottom: .5em;
+			color: #666;
+		}
+		.tags .top5 a {
+			text-decoration: none;
+		}
+		.tags .tag.tag-popular-rail {
+			text-transform: none;
+			text-decoration: none;
+			font-size: 12px;
+			margin-top: 0.6153846153846em; /* 8px /13 */
+			padding-left: 0;
+			padding-right: 0;
+			@include webfont;
+		}
+		.tags .tag.tag-popular-rail em {
+			white-space: nowrap;
+			color: #387731;
+		}
+		.tags .top5 a:hover,
+		.tags a[href].tag.tag-popular-rail:hover {
+			background-color: transparent;
+			border-color: transparent;
+			color: $linkActiveColor;
+			text-decoration: underline;
+		}
 	}
 }
 
