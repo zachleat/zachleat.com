@@ -194,14 +194,16 @@ if( "fonts" in document ) {
 Notably if the browser doesn’t support the [CSS Font Loading API](https://caniuse.com/#feat=font-loading) (read: Edge/Internet Explorer) they will only see the First Stage web font load (which—remember—we specifically architected to be sufficient and is a fine compromise here). If you disagree (and it’s reasonable to do  so as this approach means that IE and Edge won’t get Hinting), use the following block too:
 
 ```js
-if(!("fonts" in document) && "querySelector" in document) {
+if(!("fonts" in document) && "head" in document) {
     // Awkwardly dump the second stage @font-face blocks in the head
     var style = document.createElement("style");
     // Note: Edge supports WOFF2
     style.innerHTML = "@font-face { font-family: Rubik; src: url(/rubik/Rubik-Regular-hint-all.woff2) format('woff2'), url(/rubik/Rubik-Regular-hint-all.woff) format('woff'); } @font-face { font-family: Rubik; font-weight: 700; src: url(/rubik/Rubik-Bold-hint-all.woff2) format('woff2'), url(/rubik/Rubik-Bold-hint-all.woff) format('woff'); }";
-    document.querySelector("head").appendChild(style);
+    document.head.appendChild(style);
 }
 ```
+
+_Update to use `document.head` per an excellent recommendation from [@simaodeveloper](https://twitter.com/simaodeveloper/status/1149032206318342147)._
 
 ## Additional Optimizations and Options
 
