@@ -18,9 +18,6 @@
 		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{{ site.avatarImgSrc }}{% endif %}">
 
 		<meta name="dist" content="{{distFolder}}">
-{% if title %}
-		<meta name="template" content="page">
-{% endif %}
 		<link rel="canonical" href="https://www.zachleat.com{{ page.url }}">
 {% if rssFeedUrl and rssFeedTitle %}
 		<link rel="alternate" href="{{ rssFeedUrl }}" title="{{ rssFeedTitle }}" type="application/atom+xml">
@@ -56,7 +53,7 @@
 					<h1>Zach Leatherman</h1>
 				</a>
 			</header>
-			<aside>
+			<aside class="rail-sticky">
 				<nav role="navigation">
 					<div class="navigation">
 						<div class="tags tags-rail">
@@ -108,12 +105,12 @@
 			{{ content }}
 			{% include footer.html %}
 		</div><!-- /.content -->
-		<footer class="layout-show-2col">
+		<div class="hamburger">
 			<div class="infinity-burger" id="infinity-burger" aria-hidden="true">
 				<div></div>
 				<div></div>
 				<div></div>
 			</div>
-		</footer>
+		</div>
 	</body>
 </html>

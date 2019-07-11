@@ -1,4 +1,4 @@
-<div class="webmentions" id="webmentions">
+<div class="webmentions content-grid-sibling" id="webmentions">
   {%- assign reposts = webmentions.children | webmentionsForUrl: absoluteUrl, 'repost-of' -%}
   {%- assign repostsSize = reposts | size -%}
   {%- assign likes = webmentions.children | webmentionsForUrl: absoluteUrl, 'like-of' -%}

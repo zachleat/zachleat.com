@@ -19,12 +19,7 @@ var ZL = {
 		return;
 	}
 
-	var templateName = doc.querySelector( 'meta[name="template"]' );
 	var classes = [ "enhanced-js" ];
-
-	if( templateName ) {
-		classes.push( "tmpl-" + templateName.content );
-	}
 
 	// Fonts
 	if( sessionStorage.webfontStageOne && sessionStorage.webfontStageTwo ) {

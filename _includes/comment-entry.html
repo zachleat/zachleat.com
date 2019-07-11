@@ -1,5 +1,5 @@
 {% assign sentiment = comment.message | getSentimentValue %}
-<li class="static-comments-reply{% if sentiment < 0 %} static-comments-reply-salty{% endif %}" id="comment-{{ comment.postId }}">
+<li class="static-comments-reply{% if sentiment < -0.07 %} static-comments-reply-salty{% endif %}" id="comment-{{ comment.postId }}" data-sentiment="{{ sentiment | round: 3 }}">
 	<div class="static-comments-hed">
 		<img src="{{ comment.avatar }}" class="static-comments-img">
 		<h3 class="static-comments-title cased">{{ comment.author }} <span class="tag-inline" title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">Disqus</span></h3>

@@ -60,6 +60,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	clear: both;
 	line-height: 1.7;
 	margin-top: .5em;
+	@include hyphenate;
 }
 .static-comments-reply-salty > .static-comments-msg {
 	font-family: Comic Sans MS, Chalkboard SE, fantasy;

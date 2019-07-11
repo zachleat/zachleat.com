@@ -8,7 +8,7 @@ postRank: 2
 <style>
 .sm-img {
     display: block;
-    max-width: 25rem;
+    max-width: 100%;
 }
 </style>
 

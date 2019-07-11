@@ -23,7 +23,7 @@ winners of the <a href="https://www.filamentgroup.com/lab/agency-of-year.html">N
 
 Here to fetch my bio? Let’s appeal to your base instinct to copy and paste:
 
-<div class="livedemo top left square-bottom" data-demo-label="Plaintext">
+<div class="fullwidth livedemo top left square-bottom" data-demo-label="Plaintext">
 
 ``` text
 Zach is a Web Craftsperson with the award winning Filament Group. He’s currently fixated on web fonts and static site generators. His public speaking résumé includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and The White House. He also helps herd NEJS CONF and the NebraskaJS meetup.
@@ -31,7 +31,7 @@ Zach is a Web Craftsperson with the award winning Filament Group. He’s current
 
 </div>
 
-<div class="livedemo top left square-bottom" data-demo-label="HTML">
+<div class="fullwidth livedemo top left square-bottom" data-demo-label="HTML">
 
 ``` html
 Zach is a Web Craftsperson with the award winning <a href="http://www.filamentgroup.com/">Filament Group</a>. He’s currently fixated on <a href="https://www.zachleat.com/web/fonts/">web fonts</a> and <a href="https://www.zachleat.com/web/introducing-eleventy/">static site generators</a>. His <a href="https://www.zachleat.com/web/speaking/">public speaking résumé</a> includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and <a href="https://www.zachleat.com/web/whitehouse/">The White House</a>. He also helps herd <a href="http://nejsconf.com/">NEJS CONF</a> and the <a href="http://nebraskajs.com">NebraskaJS</a> meetup.
@@ -39,7 +39,7 @@ Zach is a Web Craftsperson with the award winning <a href="http://www.filamentgr
 
 </div>
 
-<div class="livedemo top left square-bottom" data-demo-label="Markdown">
+<div class="fullwidth livedemo top left square-bottom" data-demo-label="Markdown">
 
 ``` markdown
 Zach is a Web Craftsperson with the award winning [Filament Group](http://www.filamentgroup.com/). He’s currently fixated on [web fonts](https://www.zachleat.com/web/fonts/) and [static site generators](https://www.zachleat.com/web/introducing-eleventy/). His [public speaking résumé](https://www.zachleat.com/web/speaking/) includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/). He also helps herd [NEJS CONF](http://nejsconf.com/) and the [NebraskaJS](http://nebraskajs.com) meetup.
@@ -49,7 +49,7 @@ Zach is a Web Craftsperson with the award winning [Filament Group](http://www.fi
 
 ## Pictures
 
-<figure>
+<figure class="fullwidth">
 	<picture>
 		<source type="image/webp" srcset="/img/bio-2017.webp">
 		<img src="/img/bio-2017.jpg" alt="Just a picture of my face.">

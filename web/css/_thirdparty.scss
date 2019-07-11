@@ -15,27 +15,27 @@
 	height: 100%;
 }
 
-/* Twitter Follow Button */
-.twitter-follow {
-	display: none;
-}
-/* Don’t show the button on the home page */
-.enhanced-js.tmpl-page .twitter-follow {
-	display: block;
-}
-
 /* Fake W3C Banners */
 .w3c-b:before {
 	display: none;
 }
-@media ( min-width: 42em ) {
+@media ( min-width: 48em) { /* 768px */
 	.enhanced-js.tmpl-page.w3c-b:before {
 		display: block;
-		z-index: 1;
 	}
 }
 
 /* Syntax Highlighter */
 .language-css .err {
 	border: none !important;
+}
+
+/* Infinity Burger */
+.infinity-burger.infinity-burger.enabled {
+	display: none;
+}
+@media (min-width: 60em) { /* 960px */
+	.infinity-burger.infinity-burger.enabled {
+		display: block;
+	}
 }

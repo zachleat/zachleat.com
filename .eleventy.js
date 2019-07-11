@@ -43,6 +43,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
 	/* FILTERS */
+	eleventyConfig.addLiquidFilter("round", function(num, digits = 2) {
+		return parseFloat(num).toFixed(digits);
+	});
+
 	eleventyConfig.addLiquidFilter("medialengthCleanup", str => {
 		let split = str.split(" ");
 		return `${split[0]}<span aria-hidden="true">m</span><span class="sr-only"> minutes</span>`;
@@ -127,7 +131,7 @@ module.exports = function(eleventyConfig) {
 			return word.split("—").map(function(word) {
 				return word.split("(").map(function(word) {
 					return word.split(")").map(function(word) {
-						return words[word.toLowerCase()] || word.length >= 12 ? `<span class="long-word">${word}</span>` : word;
+						return words[word.toLowerCase()] || word.length >= 11 ? `<span class="long-word">${word}</span>` : word;
 					}).join(")");
 				}).join("(");
 			}).join("—");
@@ -220,7 +224,7 @@ module.exports = function(eleventyConfig) {
 
 
 	eleventyConfig.addLiquidFilter("randomCase", function(content, sentimentValue) {
-		if(content && sentimentValue < 0 && content.length <= 5000) {
+		if(content && sentimentValue < -0.07 && content.length <= 5000) {
 			return randomCase(content);
 		}
 		return content;

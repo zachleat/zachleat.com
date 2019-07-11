@@ -12,7 +12,7 @@ pagination:
   alias: notes
 ---
 {% assign totalNoteCount = collections.note | size %}
-<div class="maxwidth-list">
+<div class="layout-list">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
 		<p>
@@ -27,4 +27,4 @@ pagination:
 		{% if pagination.previousPageHref %}<a href="{{ pagination.previousPageHref | url }}">≪ Previous Page</a>{% endif %}
 		{% if pagination.nextPageHref %}<a href="{{ pagination.nextPageHref | url }}">Next Page ≫</a>{% endif %}
 	</article>
-</div><!-- /.maxwidth-list -->
+</div><!-- /.layout-list -->

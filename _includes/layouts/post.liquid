@@ -1,9 +1,10 @@
 ---
 layout: default
 enableWebmentions: true
+tmpl: page
 ---
-<div class="maxwidth">
-	<article class="h-entry">
+<article class="h-entry">
+	<div class="content-grid-sibling">
 		<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
 		<div class="sub p-description">
 			<em class="date">{{ page.date | readableDate }}</em>
@@ -15,7 +16,7 @@ enableWebmentions: true
 {% endif %}
 		</div>
 {% if deprecated %}
-		<article>
+		<article class="content-sibling">
 			<div class="callout">
 				<h3>Warning</h3>
 				<p>This article is old and may contain information that is outdated, irrelevant, or—dare I say it—no longer accurate. Read with care!</p>
@@ -23,7 +24,7 @@ enableWebmentions: true
 		</article>
 {% endif %}
 {% if external_url %}
-		<article>
+		<article class="content-sibling">
 			{%- if tags contains 'upcoming' %}
 			<p><em>This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
 			{%- else %}
@@ -33,18 +34,16 @@ enableWebmentions: true
 			{%- endif %}
 		</article>
 {% endif %}
-		<div class="e-content">
-		{{ content }}
-		</div>
-	</article>
-</div>
-<div class="maxwidth">
-	<article>
-		{% include about.html %}
-	</article>
+	</div>
+	<div class="content-grid e-content">
+	{{ content }}
+	</div>
+</article>
+<article class="content-grid-sibling">
+	{% include about.html %}
+</article>
 
 {% unless disableComments %}
 	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
 	{% include webmentionlist, absoluteUrl: absoluteUrl %}
 {% endunless %}
-</div><!-- /.maxwidth -->

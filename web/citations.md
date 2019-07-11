@@ -5,7 +5,7 @@ layout: default
 tmpl: list
 ---
 
-<div class="maxwidth-list">
+<div class="layout-list">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
 		<p>A list of notable non-ephemeral (mostly book) things I’ve been cited in.</p>

@@ -1,9 +1,22 @@
 ---
 layout: default
+tmpl: page
 ---
-<div class="maxwidth">
-	<article class="h-entry">
+<article class="h-entry">
+	<div class="content-grid-sibling">
 		<h1 class="p-name primary-title{% if removeTitle %} sr-only{% endif %}{% if smalltitle %} primary-title-smalltitle{% endif %}{% if primaryTitleExemptWidth %} primary-title-exempt{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
+	</div>
+	<div class="content-grid e-content">
 		{{ content }}
-	</article>
-</div><!-- /.maxwidth -->
+	</div>
+</article>
+
+{% if showAbout %}
+<article class="content-grid-sibling">
+	{% include about.html %}
+</article>
+{% endif %}
+{% if showComments %}
+	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
+	{% include webmentionlist, absoluteUrl: absoluteUrl %}
+{% endif %}

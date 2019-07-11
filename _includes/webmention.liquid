@@ -1,5 +1,5 @@
 {% assign sentiment = webmention.content.text | getSentimentValue %}
-<li class="static-comments-reply{% if sentiment < 0 %} static-comments-reply-salty{% endif %} h-cite" id="webmention-{{ webmention['wm-id'] }}">
+<li class="static-comments-reply{% if sentiment < -0.07 %} static-comments-reply-salty{% endif %} h-cite" id="webmention-{{ webmention['wm-id'] }}" data-sentiment="{{ sentiment | round: 3 }}">
   <div class="static-comments-hed">
     {% if webmention.author and webmention.author.photo != "" -%}
       <img class="static-comments-img u-photo" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" data-src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}">
