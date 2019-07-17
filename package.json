@@ -33,6 +33,8 @@
     "grunt-shell": "~2.1.0",
     "lodash": "^4.17.11",
     "luxon": "^0.4.0",
+    "markdown-it": "^9.0.0",
+    "markdown-it-anchor": "^5.2.4",
     "matchdep": "~1.0.1",
     "natural": "^0.6.3",
     "node-fetch": "^2.3.0",
