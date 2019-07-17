@@ -31,7 +31,6 @@
 		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
 		{%- if activityCount > 0 %}<span class="tag tag-cased" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</span>{% endif -%}
 
-		{%- if post.data.tags contains 'note' %}<a href="/web/notes/" class="tag">Note</a>{% endif -%}
 		{%- if post.data.tags contains 'eleventy' %}<a href="/web/eleventy/" class="tag">Eleventy</a>{% endif -%}
 		{%- if post.data.tags contains 'font-loading' %}<a href="/web/fonts/" class="tag font-loading">Web Fonts</a>{% endif -%}
 		{%- if post.data.tags contains 'project' %}<a href="/web/projects/" class="tag">Project</a>{% endif -%}

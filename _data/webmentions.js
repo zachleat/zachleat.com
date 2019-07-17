@@ -70,6 +70,10 @@ function writeToCache(data) {
   });
 }
 
+function webmentionsEnabled() {
+  return process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf("webmentions") > -1;
+}
+
 // get cache contents from json file
 function readFromCache() {
   const filePath = `${CACHE_DIR}/webmentions.json`;
@@ -78,6 +82,7 @@ function readFromCache() {
     const cacheFile = fs.readFileSync(filePath);
     return JSON.parse(cacheFile);
   }
+
   return {
     lastFetched: null,
     children: []
@@ -88,7 +93,7 @@ module.exports = async function() {
   const cache = readFromCache();
   const { lastFetched } = cache;
 
-  if (process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf("webmentions") > -1 || !lastFetched) {
+  if (webmentionsEnabled() || !lastFetched) {
     const feed = await fetchWebmentions(lastFetched);
 
     if (feed) {
@@ -105,5 +110,5 @@ module.exports = async function() {
   }
 
   console.log(`${cache.children.length} webmentions loaded from cache`);
-  return cache
+  return cache;
 }

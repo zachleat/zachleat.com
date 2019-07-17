@@ -396,9 +396,9 @@ h5,
       grid-column-end: 3;
     }
 
-    .tmpl-page .content-grid img.primary,
-    .tmpl-page .content-grid .fullwidth,
-    .tmpl-page .content-grid pre:not(.fullwidthexempt) {
+    .tmpl-page .content-grid > img.primary,
+    .tmpl-page .content-grid > .fullwidth,
+    .tmpl-page .content-grid > pre:not(.fullwidthexempt) {
       grid-column-start: 1;
       grid-column-end: 4;
     }

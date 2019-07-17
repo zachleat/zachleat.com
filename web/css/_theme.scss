@@ -272,9 +272,9 @@ h5,
 			grid-column-start: 2;
 			grid-column-end: 3;
 		}
-		.tmpl-page .content-grid img.primary,
-		.tmpl-page .content-grid .fullwidth,
-		.tmpl-page .content-grid pre:not(.fullwidthexempt) {
+		.tmpl-page .content-grid > img.primary,
+		.tmpl-page .content-grid > .fullwidth,
+		.tmpl-page .content-grid > pre:not(.fullwidthexempt) {
 			grid-column-start: 1;
 			grid-column-end: 4;
 		}
@@ -1184,7 +1184,7 @@ th.numeric {
 	border-radius: 5px;
 	box-shadow: 0 0 0 2px #add8e6;
 	position: relative;
-	margin: .5rem -.5rem 1.5rem;
+	margin: .5rem -.25rem 1.5rem;
 
 	@media (min-width: 38.25em) { /* 612px */
 		padding-left: .75rem;
