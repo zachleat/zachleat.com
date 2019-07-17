@@ -117,7 +117,7 @@ First stage file size results:
 **Second Stage**
 
 - Fancy OpenType features (Ligatures, Fractions, Subscript and Superscript, etc)
-    - OpenType features are some of the coolest web font tech and they largely go unused. Worse, if you’re using loading Rubik from Google Fonts they prune most of them out! However, these features are clearly all Nice To Haves™ and as such we’ve deferred them to our second stage load.
+    - OpenType features are some of the coolest web font tech and they largely go unused. Worse, if you’re loading Rubik from Google Fonts they prune most of them out! However, these features are clearly all Nice To Haves™ and as such we’ve deferred them to our second stage load.
 - Hinting: extra instructions to fit individual glyphs to the available pixel grid
     - This may be a contentious choice as Mac OS largely ignores hinting so it isn’t used.
     - Some have argued that as screen resolutions get finer, hinting is increasingly unnecessary. You may even be tempted to hide this behind a [`resolution` media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/resolution)—but note that hinting (when used) is still important for small font sizes, which may or may not be relevant to your design.
@@ -214,7 +214,7 @@ _Update to use `document.head` per an excellent recommendation from [@simaodevel
 
 ## How does this load?
 
-For the most part, our performance profile will largely depends on how the CSS is loaded. If we add the current [HTTP Archive average CSS weight of 50KB](https://httparchive.org/reports/page-weight#bytesCss), using preload (with Fast 3G and 6x CPU slowdown in Chrome Devtools), our first stage loads before first render! This means (for this example) no FOUT! Here’s how our demo looks after the first stage is complete.
+For the most part, our performance profile will largely depend on how the CSS is loaded. If we add the current [HTTP Archive average CSS weight of 50KB](https://httparchive.org/reports/page-weight#bytesCss), using preload (with Fast 3G and 6x CPU slowdown in Chrome Devtools), our first stage loads before first render! This means (for this example) no FOUT! Here’s how our demo looks after the first stage is complete.
 
 - Live Demo hosted on [https://css-tricks-font-loading.netlify.com/](https://css-tricks-font-loading.netlify.com/)
 
