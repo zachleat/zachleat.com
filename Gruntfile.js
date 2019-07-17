@@ -212,7 +212,13 @@ module.exports = function(grunt) {
 		},
 		shell: {
 			eleventy: {
-				command: 'npx eleventy --quiet',
+				command: 'npx @11ty/eleventy --quiet',
+				options: {
+					execOptions: {}
+				}
+			},
+			eleventyProduction: {
+				command: 'ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet',
 				options: {
 					execOptions: {}
 				}
@@ -257,11 +263,14 @@ module.exports = function(grunt) {
 	// Default task.
 	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'concat', 'uglify', 'cssmin']);
 	grunt.registerTask('images', ['grunticon']);
+
 	grunt.registerTask('content', ['copy:includes', 'shell:eleventy']);
+	grunt.registerTask('content-production', ['copy:includes', 'shell:eleventyProduction']);
+
 	grunt.registerTask('default', ['clean', 'assets', 'images', 'content']);
 	grunt.registerTask('separate', ['clean', 'assets', 'copy:includes']);
 
 	// Upload to Production
-	grunt.registerTask('stage', ['clean', 'assets', 'images', 'content', 'clean:drafts', 'htmlmin', 'compress']);
+	grunt.registerTask('stage', ['clean', 'assets', 'images', 'content-production', 'clean:drafts', 'htmlmin', 'compress']);
 	grunt.registerTask('deploy', ['stage', 'shell:upload', 'clean']);
 };
