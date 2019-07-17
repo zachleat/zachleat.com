@@ -348,6 +348,23 @@ module.exports = function(eleventyConfig) {
 		}).reverse();
 	});
 
+	/* Markdown */
+	let markdownIt = require("markdown-it");
+	let markdownItAnchor = require("markdown-it-anchor");
+	let options = {
+		html: true,
+		breaks: true,
+		linkify: true
+	};
+	let opts = {
+		permalink: true,
+		permalinkClass: "direct-link",
+		permalinkSymbol: "#",
+		level: [1,2,3,4]
+	};
+
+	eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
+
 	return {
 		"templateFormats": [
 			"liquid",
