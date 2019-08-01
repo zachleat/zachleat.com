@@ -23,7 +23,7 @@ And here is a small sampling of my favorite macros:
 | Zero Width Space | `;zerow` | `​` |
 | Feet | `;feet` | `′` |
 | Inches | `;inch` | `″` |
-| My email address | `;ema` | `zachleatherman@gmail.com` |
+| My email address | `;ema` | `zach@zachleat.com` |
 | Shrug face | `;?` | `¯\_(ツ)_/¯` |
 | Troll | `;troll` | `ಠ_ಠ` |
 

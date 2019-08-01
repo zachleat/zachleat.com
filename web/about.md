@@ -3,7 +3,7 @@ title: I’m Zach and You’re Reading About Me
 layout: page
 ---
 
-This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zachleatherman@gmail.com). Résumé available upon request.
+This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach@zachleat.com). Résumé available upon request.
 
 {% include social.html %}
 

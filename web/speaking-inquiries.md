@@ -14,7 +14,7 @@ As such, I keep a certain set of personal guidelines that I hold myself accounta
 * Speaker diversity must be a priority. I will likely remove myself from the lineup if I discover that it was not made a priority.
 * Travel and lodging must be paid for every speaker that is traveling to the conference. I’ve seen behind the curtain. I know the economics of conferences. This should be the first item in the budget.
 
-Sound good? Great! [Email me](mailto:zachleatherman@gmail.com) and we can get started!
+Sound good? Great! [Email me](mailto:zach@zachleat.com) and we can get started!
 
 If you’re looking for Bio text and pictures, head on over to my [About page](/web/about/).
 

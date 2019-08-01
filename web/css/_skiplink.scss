@@ -1,0 +1,27 @@
+.skiplink-fn {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	white-space: nowrap;
+	/* via https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe#.229xwniks */
+}
+.skiplink-fn:focus {
+	position: fixed;
+	width: auto;
+	height: auto;
+	clip: auto;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.skiplink {
+	text-align: center;
+	background: #222;
+	color: #fff;
+	padding: 1em;
+	text-decoration: none;
+	@include webfontBold;
+}

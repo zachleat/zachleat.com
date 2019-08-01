@@ -37,7 +37,7 @@
 		<meta property="eleventy:path" content="{{ page.inputPath }}">
 
 		<!-- IndieAuth -->
-		<link href="mailto:zachleatherman@gmail.com" rel="me">
+		<link href="mailto:zach@zachleat.com" rel="me">
 		<link href="https://twitter.com/zachleat" rel="me">
 		<link href="https://github.com/zachleat" rel="me">
 {% if enableWebmentions %}
@@ -46,6 +46,7 @@
 {% endif %}
 	</head>
 	<body>
+		<a href="#skiplink-content" id="skiplink-top" class="skiplink skiplink-fn">Skip to Content</a>
 		<div class="rail">
 			<header>
 				<a href="/" class="header">
@@ -101,7 +102,7 @@
 				</nav>
 			</aside>
 		</div><!-- /.rail -->
-		<div class="content" data-role="main">
+		<div class="content" data-role="main" id="skiplink-content">
 			{{ content }}
 			{% include footer.html %}
 		</div><!-- /.content -->
