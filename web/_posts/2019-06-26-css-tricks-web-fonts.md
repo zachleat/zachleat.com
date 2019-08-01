@@ -3,7 +3,7 @@ title: Developing a Robust Font Loading Strategy for CSS-Tricks
 tags:
   - font-loading
   - popular-posts
-postRank: 1
+postRank: 2
 ---
 <style>
 .sm-img {
