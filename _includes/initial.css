@@ -1647,7 +1647,7 @@ th.numeric {
   border-radius: 5px;
   box-shadow: 0 0 0 2px #add8e6;
   position: relative;
-  margin: .5rem -.5rem 1.5rem;
+  margin: .5rem -.25rem 1.5rem;
 }
 @media (min-width: 38.25em) {
   .livedemo {
@@ -2074,6 +2074,41 @@ pre + .livedemo {
 
 .webmentions__facepile > a {
   width: 2rem;
+}
+
+.skiplink-fn {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  white-space: nowrap;
+  /* via https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe#.229xwniks */
+}
+
+.skiplink-fn:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  clip: auto;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.skiplink {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 1em;
+  text-decoration: none;
+}
+.skiplink {
+  font-style: normal;
+  font-weight: 700;
+}
+.webfont-stage-2 .skiplink {
+  font-family: LatoBold, Numero, sans-serif;
 }
 
 /*# sourceMappingURL=initial.css.map */
