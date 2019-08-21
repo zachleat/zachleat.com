@@ -2068,10 +2068,6 @@ pre + .livedemo {
   border-color: transparent;
 }
 
-.disqus-loader {
-  display: none;
-}
-
 .webmentions__facepile > a {
   width: 2rem;
 }
