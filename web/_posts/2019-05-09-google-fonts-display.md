@@ -5,7 +5,7 @@ tags:
   - popular-posts
   - popular-posts-total
 postRank: 1
-postRankTotalViews: 9
+postRankTotalViews: 7
 ---
 <p class="sub"><em>May 15, 2019 renamed URL parameter to <code>display</code>. Thank you <a href="https://mathiasbynens.be/">Mathias</a>!</em></p>
 <p class="sub"><em>May 22, 2019 added note about <code>display=swap</code> in the default code embed.</em></p>
