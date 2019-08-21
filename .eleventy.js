@@ -32,6 +32,7 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("demos/")
 		.addPassthroughCopy("img/")
 		.addPassthroughCopy("presentations/")
+		.addPassthroughCopy("resume/")
 		.addPassthroughCopy("web/css/fonts")
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")

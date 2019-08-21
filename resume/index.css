@@ -1,0 +1,90 @@
+.primary-title {
+	position: absolute;
+	height: 1px;
+	width: 1px; 
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+ul,
+p.footer {
+	padding: 0 20px;
+}
+div.contact {
+	text-align: center;
+}
+abbr {
+	border-bottom: 1px dotted #666;
+}
+h1 a {
+	display: block;
+}
+.content.content ul {
+	padding-left: 0; /* Blog CSS override */
+}
+.content.content ul ul {
+	padding-left: 2em;
+}
+li {
+	list-style: none;
+	padding: .4em 0 1em;
+}
+.description li {
+	list-style: disc;
+	padding: 0 0 .2em;
+}
+#tools li,
+#honors li,
+li li {
+	border: none;
+	padding: .4em 0;
+}
+.contact li {
+	display: inline;
+	white-space: nowrap;
+	padding: 0 1em;
+}
+ul li:first-child {
+	padding-top: 0;
+}
+.experience .url,
+.experience .title {
+	font-weight: bold;
+}
+.description {
+	font-size: 90%;
+}
+.experience .org,
+.adr {
+	font-family: LatoItalic;
+	font-style: italic;
+}
+address {
+	float: right;
+}
+p.footer {
+	font-size: 80%;
+}
+
+#tools {
+	-webkit-column-width: 7em;
+	-moz-column-width: 7em;
+	column-width: 7em;
+}
+#tools {
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;
+	column-gap: 2em;
+}
+
+@media print {
+	html,
+	body,
+	h1,
+	h2 {
+		border: none;
+		padding: 0;
+		margin: 0;
+		background-color: #fff;
+		color: #000;
+	}
+}
