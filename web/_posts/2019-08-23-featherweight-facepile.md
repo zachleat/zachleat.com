@@ -11,7 +11,7 @@ Fortunately, this is super straightforward using Open Collective’s lovely JSON
 
 As I created the [Supporters page](https://www.11ty.io/docs/supporters/) from this data I noticed the same recurring problem that had plagued me before when using third party social avatars on my web site: the image dimensions and file sizes varied by _a lot_.
 
-I wrote _ [The Crushing Weight of the Facepile](/web/facepile/)_ about this exact issue.
+I wrote [_The Crushing Weight of the Facepile_](/web/facepile/) about this exact issue.
 
 As an example, one individual image was over 500KB. This ballooned the supporters page up to 1.9MB of images—not good.
 
