@@ -5,17 +5,17 @@ tags:
   - project
 ---
 
-Ever since Eleventy started an Open Collective to take financial backing (by request, mind you), I’ve had it on my to-do list to add a Eleventy Open Collective Supporters page to [11ty.io](https://www.11ty.io/).
+Ever since Eleventy started an Open Collective to take financial backing (by request, mind you), I’ve had it on my to-do list to add an Eleventy Supporters page to [11ty.io](https://www.11ty.io/).
 
 Fortunately, this is super straightforward using Open Collective’s lovely JSON API (no authentication or tokens required: 😱 but mostly 🎉). Have a look at the [members JSON for the 11ty organization](https://opencollective.com/11ty/members/all.json).
 
-As I created the [Supporters page](https://www.11ty.io/docs/supporters/) from this data I noticed the same recurring problem that had plagued me before with third party social avatars on my web site: the image dimensions and file sizes varied _a lot_.
+As I created the [Supporters page](https://www.11ty.io/docs/supporters/) from this data I noticed the same recurring problem that had plagued me before when using third party social avatars on my web site: the image dimensions and file sizes varied by _a lot_.
 
-_**Read**: [The Crushing Weight of the Facepile](/web/facepile/)._
+I wrote _ [The Crushing Weight of the Facepile](/web/facepile/)_ about this exact issue.
 
 As an example, one individual image was over 500KB. This ballooned the supporters page up to 1.9MB of images—not good.
 
-For the webmention avatars on my own site, I had already implemented a [JavaScript solution using IntersectionObserver](/web/facepile/)—specifically, the images would only be loaded when they were visible in the viewport. This was a nice solution for webmentions because they were supplementary to the main content of the page (the blog post). Using JavaScript seemed like a nice mitigation step. But it didn’t really _solve_ the root issue: the images were _too damn big_.
+For the webmention avatars on my own site, I had already implemented a [JavaScript solution using IntersectionObserver](/web/facepile/). Specifically, the images would only be loaded when they were visible in the viewport. This was a nice solution for webmentions because they were supplementary to the main content of the page (the blog post). Using JavaScript seemed like a nice mitigation step. But it didn’t really _solve_ the root issue: the images were _too damn big_.
 
 For the Eleventy Supporters page, the avatars *are* the primary content. I didn’t want to use JavaScript as a dependency to load these. I needed to solve the root issue: I needed smaller images.
 
@@ -54,7 +54,7 @@ It might look something like (note that `webp` is first in the array):
 ]
 ```
 
-For 11ty.io, I then iterate over this to create a `<picture>` file if the array has two entries (the first is guaranteed to be a `webp`). It ends up looking like:
+For 11ty.io, I then iterate over this data to create a `<picture>` file if the array has two entries (the first is guaranteed to be a `webp`). It ends up looking like:
 
 ```html
 <picture>
@@ -63,23 +63,23 @@ For 11ty.io, I then iterate over this to create a `<picture>` file if the array 
 </picture>
 ```
 
-If the array had only one item it would be guaranteed to be `png` or `jpeg` and I could create an `<img>` tag instead of needing `<picture>`.
+If the array had only one item it would be guaranteed to be `png` or `jpeg` and I could create an `<img>` tag instead of using `<picture>`.
 
 ## Results
 
 For this particular avatar on the Supporters page, the [original URL from the opencollective API JSON](https://opencollective-production.s3.us-west-1.amazonaws.com/3e53bc60-bd71-11e9-977d-87c4e0ce5473.jpeg) was a 1240×1240 `jpeg` that weighed in at a whopping **121KB**.
 
-The maximum width I used for the `avatar-local-cache` images was 73px. Obviously this was going to be smaller: the `webp` format was only **1028 bytes** and the fallback `jpg` format was 1594 bytes.
+The maximum width I used for the `avatar-local-cache` images was 73px. Of course this smaller image would be a smaller file size (and it was): the `webp` format was only **1028 bytes** and the fallback `jpg` format was 1594 bytes.
 
-_For a single image, dropping from 121KB to 1KB is some nice savings._
+_For a single image, dropping from 121KB to 1KB is some real nice savings._
 
 ### Aggregate Savings
 
 Before implementing `avatar-local-cache`, the Supporters page images weighed in at a total of **1.9MB**.
 
-* Using `png` files only, it dropped to 206KB.
-* Using `jpg` files only, it dropped to 122KB.
-* Using `avatar-local-cache`’s smart image format selection (`webp,{jpg,png}` or `{jpg,png}`), it dropped to **107KB**.
+* Using `png` files only, the total weight dropped to 206KB.
+* Using `jpg` files only, the total weight dropped to 122KB.
+* Using `avatar-local-cache`’s smart image format selection (`webp,{jpg,png}` or `{jpg,png}`), the total weight dropped to **107KB**.
 
 _For all of these images, dropping from 1.9MB to 107KB is pretty great!_
 
