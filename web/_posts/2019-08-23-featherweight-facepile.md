@@ -3,6 +3,8 @@ title: A Featherweight Facepile
 tags:
   - eleventy
   - project
+  - popular-posts
+postRank: 14
 ---
 
 Ever since Eleventy started an Open Collective to take financial backing (by request, mind you), I’ve had it on my to-do list to add an Eleventy Supporters page to [11ty.io](https://www.11ty.io/).
