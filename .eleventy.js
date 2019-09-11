@@ -304,7 +304,10 @@ module.exports = function(eleventyConfig) {
 		let posts = collection.getSortedByDate().reverse();
 		let items = [];
 		for( let item of posts ) {
-			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") && !hasTag(item, "speaking") && !hasCategory(item, "presentations") ) {
+			if( !!item.inputPath.match(/\/_posts\//) &&
+				(!hasTag(item, "external") || hasTag(item, "writing") || (item.data.external_url || "").indexOf("filamentgroup.com") > -1) &&
+				!hasTag(item, "speaking") &&
+				!hasCategory(item, "presentations") ) {
 				items.push( item );
 			}
 		}
