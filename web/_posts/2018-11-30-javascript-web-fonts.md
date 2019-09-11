@@ -6,6 +6,7 @@ categories:
 tags:
   - external
   - font-loading
+  - research
 external_url: 'https://www.filamentgroup.com/lab/js-web-fonts.html'
 ---
 
