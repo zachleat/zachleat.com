@@ -1,266 +1,218 @@
 ---
 layout: layouts/page.liquid
 title: Résumé
+hidePopularInSidebar: true
 stylesheetFull: /resume/index.css
 ---
-<div class="hresume">
-  <header>
-    <div id="hcard-Zach-Leatherman" class="vcard contact">
-      <h1>
-        <a class="fn n" id="hcard-Zach-Leatherman-name">
-          <span class="given-name">Zach</span>
-          <span class="family-name">Leatherman</span>
-        </a>
-      </h1>
-      <ul>
-        <li><a class="url" href="http://twitter.com/zachleat/">@zachleat</a> on Twitter</li>
-        <li><a class="url" href="http://github.com/zachleat/">zachleat</a> on GitHub</li>
-        <li><a class="url" href="http://www.zachleat.com/" rel="me">http://www.zachleat.com/</a></li>
-      </ul>
-      <div class="adr">
-        <span class="locality">Omaha</span>,
-        <abbr class="region" title="Nebraska">NE</abbr>
-        <abbr class="country-name" title="United States of America">USA</abbr>
-      </div>
-    </div>
+<div class="h-resume">
+  <header class="resume-header h-card p-contact">
+    <a href="https://www.zachleat.com/" class="resume-title resume-header-block link-u-exempt u-url">
+      <h1 class="resume-title-hed p-name">Zach Leatherman</h1>
+    </a>
+
+    <ul class="resume-header-block list-inline resume-block-sm">
+      <li><a href="mailto:zach@zachleat.com" class="u-email">zach@zachleat.com</a></li>
+      <li><a href="https://twitter.com/zachleat/">@zachleat</a></li>
+      <li><a href="https://www.zachleat.com/resume/">zachleat.com/resume</a></li>
+    </ul>
   </header>
 
   <section>
-    <article>
-      <header>
-        <h2>Professional Experience</h2>
-      </header>
-      <ul id="experience" class="vcalendar">
-        <li class="experience vevent vcard">
-          <a href="#hcard-Zach-Leatherman-name" class="include" title="Zach Leatherman"></a>
-          <div>
-            <span class="summary title">Web Developer</span> for
-            <a href="http://filamentgroup.com/" class="org">Filament Group</a>
-          </div>
-          <address class="adr">
-            <span class="locality">Boston</span>,
-            <abbr class="region" title="Massachusetts">MA</abbr>
-          </address>
-          <abbr class="dtstart" title="2012-06-04">Jun 2012</abbr> to
-          <abbr class="dtend" title="{{ "now" | date: "%Y-%m-%d" }}">Present</abbr>
-        </li>
-        <li class="experience vevent vcard">
-          <a href="#hcard-Zach-Leatherman-name" class="include" title="Zach Leatherman"></a>
-          <div>
-            <span class="summary title">Front End Architect</span> for
-            <span class="org">Union Pacific Railroad Co.</span>
-          </div>
-          <address class="adr">
-            <span class="locality">Omaha</span>,
-            <abbr class="region" title="Nebraska">NE</abbr>
-          </address>
-          <abbr class="dtstart" title="2011-06-01">Jun 2011</abbr> to
-          <abbr class="dtend" title="2012-05-25">May 2012</abbr>
-          <div class="description">
-            <ul>
-              <li>While maintaining a technical leadership role on prior projects, also responsible for setting the company's direction for mobile application development.</li>
-              <li>Developed a small mobile reusable component library based on jQuery Mobile to apply to both mobile web and hybrid native applications.</li>
-              <li>Took full ownership of front end development on all company authentication pages, both internal/external and mobile/desktop. Used progressive enhancement to expand device support.</li>
-              <li>Continued to evangelize front end development best practices including cross-browser compatible code, progressive enhancement, automated JavaScript testing, and Responsive Design.</li>
-              <li>Started an HTML5 and Open Web User Group to educate developers on cutting edge web browser features.</li>
-            </ul>
-          </div>
-        </li>
-        <li class="experience vevent vcard">
-          <a href="#hcard-Zach-Leatherman-name" class="include" title="Zach Leatherman"></a>
-          <div>
-            <span class="summary title">Reusable Component Library Project Lead</span> for
-            <span class="org">Union Pacific Railroad Co.</span>
-          </div>
-          <address class="adr">
-            <span class="locality">Omaha</span>,
-            <abbr class="region" title="Nebraska">NE</abbr>
-          </address>
-          <abbr class="dtstart" title="2008-07-01">Jul 2008</abbr> to <abbr class="dtend" title="2011-05-01">May 2011</abbr>
-          <div class="description">
-            <ul>
-              <li>Lead developer and support team for the standard User Interface framework used on all new web projects.</li>
-              <li>Included 62 separate reusable components across 5 simultaneous major code branches and over 50 different released versions.</li>
-              <li>Sole provider of support to a large developer base (~1500 employees and contractors in IT) which yielded an average of over 400 support tickets per year.</li>
-              <li>Reduced total yearly defect support tickets by 43% from 2008 to 2010.</li>
-              <li>Migrated existing code base to comply with new <abbr title="internationalization">i18n</abbr> requirements without incurring a runtime performance penalty.</li>
-              <li>Adapted to marketing department's company wide brand refresh, centrally and easily applied to all applications.</li>
-              <li>Improved performance by reducing component initialization times between major versions by 5.2X in IE7 with the addition of prerendered markup in a Java framework.</li>
-              <li>Prevented an Adobe Flexpocalypse by opposing adoption of Adobe Flex as the primary UI development tool using the merits of the Open Web.</li>
-              <li>Put into practice an automated test suite using JsTestDriver.</li>
-            </ul>
-          </div>
-        </li>
-        <li class="experience vevent vcard">
-          <a href="#hcard-Zach-Leatherman-name" class="include" title="Zach Leatherman"></a>
-          <div>
-            <span class="summary title">Front End Engineer</span> for
-            <span class="org">Union Pacific Railroad Co.</span>
-          </div>
-          <address class="adr">
-            <span class="locality">Omaha</span>,
-            <abbr class="region" title="Nebraska">NE</abbr>
-          </address>
-          <abbr class="dtstart" title="2006-06-01">Jun 2006</abbr> to
-          <abbr class="dtend" title="2008-07-01">Jul 2008</abbr>
-          <div class="description">
-            <ul>
-              <li>User Interface development for three internal projects, one of which received approximately 15 million hits per month.</li>
-              <li>Developed build process for automated deployment including CSS and JS minimization.</li>
-              <li>Utilized a full front end testing suite, including DSL for generating Selenium tests, JSUnit tests, JSLint, and client-side logging using log4javascript.</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </article>
-
-    <article>
-      <header>
-        <h2>Honors and Activities</h2>
-      </header>
-      <ul id="honors" class="vcalendar">
-        <li class="experience vevent">
-          <a class="url" href="http://www.zachleat.com/">zachleat.com</a>
-          <span class="summary">Web Development Blog</span>
-          <abbr class="dtstart" title="2007-02">Feb 2007</abbr> to
-          <abbr class="dtend" title="{{ "now" | date: "%Y-%m-%d" }}">Present</abbr>
-          <div class="description">
-            <ul>
-              <li>Presently at 2.547 million lifetime page views.</li>
-            </ul>
-          </div>
-        </li>
-        <li class="experience vevent">
-          Herding <a class="url" href="http://nebraskajs.com/">NebraskaJS</a>,
-          <span class="summary">a local JavaScript meetup.</span>
-          <abbr class="dtstart" title="2012-07">July 2012</abbr> to
-          <abbr class="dtend" title="{{ "now" | date: "%Y-%m-%d" }}">Present</abbr>
-          <div class="description">
-            <ul>
-              <li>Over 275 members.</li>
-            </ul>
-          </div>
-        </li>
-        <li class="experience vevent">
-          Code contributions accepted into <a class="url" href="https://github.com/jquery/jquery-mobile/commits?author=zachleat">jQuery Mobile</a>, <a class="url" href="https://github.com/johndyer/mediaelement/commits?author=zachleat">MediaElement.js</a>, <a class="url" href="https://github.com/h5bp/html5please/commits?author=zachleat">html5please</a>, <a href="https://github.com/a11yproject/a11yproject.com/commits?author=zachleat" class="url">a11yproject</a>, and <a href="https://github.com/stubbornella/csslint/commits?author=zachleat" class="url">CSS Lint</a>.
-        </li>
-        <li class="experience vevent">
-          Presented at <a class="url" href="http://www.nebraskacodecamp.com/">Nebraska Code Camp</a> on <a href="http://www.zachleat.com/web/tool-or-die/">Tool or Die, a Web Developer’s Workflow</a>
-          <abbr class="dtstart" title="2013-03-16">Mar 2013</abbr>
-        </li>
-        <li class="experience vevent">
-          Presented at <a class="url" href="http://awesomecamp.com/">Awesome Camp</a> on <a href="https://speakerdeck.com/zachleat/side-projects">Side Projects</a>
-          <abbr class="dtstart" title="2013-03-02">Mar 2013</abbr>
-        </li>
-        <li class="experience vevent">
-          Presented at <a class="url" href="http://nebraskajs.com/">NebraskaJS</a> on <a href="http://nebraskajs.com/2012/performance-in-rwd/">Performance in Responsive Web Design</a>
-          <abbr class="dtstart" title="2012-11-08">Nov 2012</abbr>
-        </li>
-        <li class="experience vevent">
-          Presented at <a class="url" href="http://www.meetup.com/jquery-omaha/events/25042581/">jQuery Omaha</a> on <a href="http://www.slideshare.net/zachleat/progressive-enhancement-8766538">Progressive Enhancement</a>
-          <abbr class="dtstart" title="2011-08-02">Aug 2011</abbr>
-        </li>
-        <li class="experience vevent">
-          Presented at <a class="url" href="http://nebraskacodecamp.com/">Nebraska Code Camp</a> on <a href="http://f2em.com/">The Front End Engineering Manifesto</a>
-          <abbr class="dtstart" title="2011-04-09">Apr 2011</abbr>
-        </li>
-        <li class="experience vevent">
-          Guest Lecturer at Mobile Application Development course at <abbr title="University of Nebraska: Omaha">UNO</abbr> on <a class="url" href="http://www.zachleat.com/web/html5-vs-native-applications/">HTML5 vs Native Applications</a>
-          <abbr class="dtstart" title="2011-02">Feb 2011</abbr>
-        </li>
-        <li class="experience vevent">
-          <a class="url" href="http://www.zachleat.com/web/bigtext-makes-text-big/">BigText, a jQuery plugin for responsive text</a>
-          <abbr class="dtstart" title="2011-02">Feb 2011</abbr>
-        </li>
-        <li class="experience vevent">
-          <a class="url" href="http://omaha.startupweekend.org/">Omaha Startup Weekend</a>
-          <span class="summary">Member of two winning teams.</span>
-          <abbr class="dtstart" title="2010-03">Mar 2010</abbr>
-          <abbr class="dtstart" title="2010-09">Sep 2010</abbr>
-        </li>
-        <li class="experience vevent">
-          <a class="url" href="https://github.com/zachleat/Humane-Dates">Humane Dates, a jQuery plugin for relative dates</a>
-          <abbr class="dtstart" title="2008-03-23">Mar 2008</abbr>
-        </li>
-        <li class="experience vevent">
-          <a class="url" href="http://www.ajaxian.com/">Ajaxian.com</a>
-          <span class="summary">Two published articles.</span>
-          <a href="http://ajaxian.com/archives/domdom-more-dom-less-dom"><abbr class="dtstart" title="2007-07-12">Jul 2007</abbr></a>
-          <a href="http://ajaxian.com/archives/emulating-onhashchange-without-setinterval"><abbr class="dtstart" title="2008-08-22">Aug 2008</abbr></a>
-        </li>
-        <li class="experience vevent">
-          <span class="summary">College of Engineering Deans List</span>
-          <abbr class="dtstart" title="2005-05">Spring 2005</abbr>
-        </li>
-        <li class="experience vevent">
-          <a class="url" href="http://sourceforge.net/projects/alp/">Autonomous LAN Party</a>
-          <abbr class="dtstart" title="2003-12">Dec 2003</abbr> to
-          <abbr class="dtend" title="2004-08">Aug 2004</abbr>
-          <div class="description">
-            Lead developer for an Open Source PHP Project passed to a new development team and still
-            in use worldwide.
-          </div>
-        </li>
-      </ul>
-    </article>
-
-    <article>
-      <header>
-        <h2>Education</h2>
-      </header>
-      <ul id="education" class="vcalendar">
-        <li class="education vevent">
-          <div>
-            <a href="http://www.unl.edu/" class="url">University of Nebraska</a>
-          </div>
-          <address class="adr">
-            <span class="locality">Lincoln</span>,
-            <abbr class="region" title="Nebraska">NE</abbr>
-          </address>
-          <abbr class="dtstart" title="2001-08">Aug 2001</abbr> to
-          <abbr class="dtend" title="2006-05">May 2006</abbr>
-          <div class="summary">
-          Bachelor of Science, with a Major in Computer Engineering and Minor in Mathematics
-          </div>
-          <div class="description">
-            Related Course Work: Semantic Web, Computer Architecture, Data Structures and Algorithms, Database Systems, Software Engineering, Artificial Intelligence, Cryptography and Security, GUI and Unix Programming, Operating Systems and Kernels
-          </div>
-        </li>
-        <li class="education vevent">
-          <div class="summary">Engineering Study Abroad Program</div>
-          <address class="adr">
-            <span class="locality">Fortaleza</span>,
-            <abbr class="region" title="Cear&aacute;">CE</abbr>,
-            <span class="country-name">Brazil</span>
-          </address>
-          <abbr class="dtstart" title="2005-05-10">May</abbr>
-          <abbr class="dtend" title="2005-06-05">2005</abbr>
-          <div class="description">Studies in Brazilian Culture and the Portuguese Language</div>
-        </li>
-      </ul>
-    </article>
-
-    <article>
-      <header>
-        <h2>Tools and Languages</h2>
-      </header>
-      <ul id="tools" class="tools">
-        <li class="skill">JavaScript</li>
-        <li class="skill">node.js</li>
-        <li class="skill">HTML</li>
-        <li class="skill">CSS</li>
-        <li class="skill">Git</li>
-        <li class="skill">Subversion</li>
-        <li class="skill">PHP</li>
-        <li class="skill">MySQL</li>
-        <li class="skill">XSLT</li>
-        <li class="skill">Apache Ant</li>
-        <li class="skill">Java</li>
-      </ul>
-      <p>Cursory knowledge of: <span class="skill">Adobe Illustrator</span>, <span class="skill">Ruby</span>, <span class="skill">Erlang</span>, <span class="skill">Common LISP</span>, <span class="skill">MIPS Assembly</span></p>
-    </article>
+    <ul class="resume-toc list-inline">
+      <li class="list-inline-nosep resume-ahw"><strong>Experience:</strong></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#professional">Professional</a></li>
+      <li><a href="#education">Educational</a></li>
+    </ul>
   </section>
-  <footer>
-    <p class="footer">You're invited to view the source code. This page uses the following:  Microformats (hResume, hCard, hCalendar, XFN, and adr).</p>
-  </footer>
+
+  <section>
+    <h2 id="community">Community Experience</h2>
+
+    <ul class="resume-list">
+      <li>
+        <strong class="p-skill">Public Speaker</strong> in 8 different countries: 15 conferences, 12 meetups, 7 barcamps, 10 podcasts, and one University guest lecture.<!-- Manual update required -->
+        <ul class="resume-desc">
+          <li>Events like <a href="https://beyondtellerrand.com/"><span class="resume-nbsp">{% assign imgObj = "btconf" | avatarObject %}{% img imgObj %}Beyond</span> Tellerrand</a>, <a href="https://smashingconf.com/"><span class="resume-nbsp">{% assign imgObj = "smashingconf" | avatarObject %}{% img imgObj %}Smashing</span> Conference</a> <span class="resume-subnote">(×3)</span>, <a href="https://2014.cssconf.com/" class="resume-nbsp resume-avatars-square">{% assign imgObj = "CSSConf" | avatarObject %}{% img imgObj %}CSSConf</a>, and the first ever <a href="https://obamawhitehouse.archives.gov/blog/2015/04/14/friday-tech-meetup-white-house-0">Tech Meetup at {% assign imgObj = "TheWhiteHouse" | avatarObject %}{% img imgObj %}The White House</a>.</li>
+          <li><a href="/web/speaking/" class="resume-print-link">Full Speaking History</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong class="p-skill">Technical Writer</strong> on <a href="http://www.zachleat.com/">zachleat.com</a>, a Web Development Blog.
+        <ul class="resume-desc">
+          <li><a href="/web/writing/">{{ collections.writing | size | renderNumber }} posts</a> since February 2007, <a href="/web/fonts/">{{ collections.font-loading | size | renderNumber }} entries on Web Fonts</a>. On my writing,
+            <ul>
+              <li><span class="resume-nbsp">{% assign imgObj = "sarah_edo" | avatarObject %}{% img imgObj %}Sarah</span> Drasner <a href="https://twitter.com/sarah_edo/status/1067122136412614656">said</a> she <em>“shaved full seconds off this big application […] by following some of Zach’s great materials […]”</em></li>
+              <li><span class="resume-nbsp">{% assign imgObj = "adactio" | avatarObject %}{% img imgObj %}Jeremy</span> Keith <a href="https://adactio.com/links/14311">twice</a> <a href="https://adactio.com/journal/14329">said</a> <em>“Always ask yourself What Would Zach Do?”</em></li>
+              <li><span class="resume-nbsp">{% assign imgObj = "paul_irish" | avatarObject %}{% img imgObj %}Paul</span> Irish <a href="https://twitter.com/paul_irish/status/295705697117691904">called me</a> <em>“damn smart”</em>—a debatable claim, to be sure.</li>
+            </ul>
+          </li>
+          <li>2.569 million lifetime page views and growing.<!-- Manual update required --></li>
+          <li><a href="/web/best-of/" class="resume-print-link">Popular Blog Posts</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong class="p-skill">Conference Organizer</strong> and Co-founder of <a href="https://nejsconf.com/">{% assign imgObj = "nejsconf" | avatarObject %}{% img imgObj %}NEJS CONF</a>.
+        <ul class="resume-desc">
+          <li class="resume-date">2015 to 2019</li>
+          <li>Five conferences, 46 speakers, about 200 attendees per year.</li>
+          <!-- <li><a href="https://noti.st/zachleat/UZNqr1/nejs-conf-2015-2019">Highlights</a></li> -->
+        </ul>
+      </li>
+
+      <li>
+        <strong class="p-skill">Lead Organizer</strong> for <a href="https://nebraskajs.com/">{% assign imgObj = "nebraskajs" | avatarObject %}{% img imgObj %}NebraskaJS</a>, a JavaScript meetup.
+        <ul class="resume-desc">
+          <li class="resume-date">July 2012 to March 2018</li>
+          <li>{{ meetup.nebraskajs }} members and growing, 50+ speakers, 90+ events.</li>
+          <!-- <li><a href="/web/passing-the-nebraskajs-baton/#❤️-nebraskajs">Highlights</a></li> -->
+        </ul>
+      </li>
+
+      <li>
+        <strong>Open Source</strong>
+        <ul class="resume-desc">
+          <li><a href="https://www.11ty.io/">{% assign imgObj = "eleven_ty" | avatarObject %}{% img imgObj %}Eleventy</a> <span class="resume-subnote">(☆ {{ stargazers.eleventy | renderNumber }})</span> <span class="p-skill">Open Source Author</span>. A simpler static site generator. Used in production by Google (<a href="https://v8.dev">v8.dev</a>, <a href="https://web.dev">web.dev</a>, and <a href="https://developer.chrome.com/devsummit/">Chrome’s dev summit</a>), <a href="https://worldwideweb.cern.ch/colophon/">CERN</a>, <a href="https://conferences.css-tricks.com">CSS-Tricks</a>, <a href="https://everydayia.com/">A Book Apart</a>, <a href="https://www.filamentgroup.com">Filament Group</a>, <a href="https://templates.netlify.com">Netlify</a>, <a href="https://khanacademyannualreport.org">Khan Academy</a>, and more.
+            <ul>
+              <li>Two-time winner of the Google Open Source Peer Bonus Award for Eleventy in <a href="https://opensource.googleblog.com/2018/03/congratulating-open-source-peer-bonus-winners.html" class="dtstart">2018</a> and <a href="https://opensource.googleblog.com/2019/04/google-open-source-peer-bonus-winners.html" class="dtstart">2019</a>.</li>
+              <li><span class="resume-nbsp">{% assign imgObj = "addyosmani" | avatarObject %}{% img imgObj %}Addy</span> Osmani called it <em>“absolutely wonderful.”</em></li>
+              <li><span class="resume-nbsp">{% assign imgObj = "chriscoyier" | avatarObject %}{% img imgObj %}Chris</span> Coyier said it was <em>“almost fascinatingly simple.”</em></li>
+              <li>Read <a href="https://www.11ty.io/docs/testimonials/" class="resume-print-link resume-print-link-ext" data-print-href="11ty.io/docs/testimonials/">more Eleventy testimonials from <span class="resume-nbsp">{% assign imgObj = "mathias" | avatarObject %}{% img imgObj %}Mathias</span> Bynens, <span class="resume-nbsp">{% assign imgObj = "aerotwist" | avatarObject %}{% img imgObj %}Paul</span> Lewis, <span class="resume-nbsp">{% assign imgObj = "MinaMarkham" | avatarObject %}{% img imgObj %}Mina</span> Markham, Tatiana Mac, and others</a>.</li>
+            </ul>
+          </li>
+          <li>Other projects include <a href="https://github.com/filamentgroup/tablesaw/">Tablesaw</a> <span class="resume-subnote">(☆ {{ stargazers.tablesaw | renderNumber }})</span>, <a href="https://github.com/zachleat/web-font-loading-recipes">web-font-loading-recipes</a> <span class="resume-subnote">(☆ {{ stargazers.webfontrecipes  | renderNumber}})</span>, <a href="https://github.com/filamentgroup/glyphhanger">GlyphHanger</a> <span class="resume-subnote">(☆ {{ stargazers.glyphhanger | renderNumber }})</span>, <a href="http://www.zachleat.com/web/bigtext-makes-text-big/">BigText</a> <span class="resume-subnote">(☆ {{ stargazers.bigtext | renderNumber }})</span>, and others.</li>
+          <li>Contributions to <a href="https://github.com/twbs/bootstrap/pull/16171">Bootstrap</a>, <a href="https://github.com/Modernizr/Modernizr/pull/1107">Modernizr</a>, <a href="https://github.com/scottjehl/Respond/graphs/contributors">Respond.js</a>, <a href="https://github.com/filamentgroup/loadCSS/graphs/contributors">loadCSS</a>, <a href="https://github.com/Fyrd/caniuse/pull/4645">caniuse</a>, <a href="https://github.com/jquery/jquery-mobile/commits?author=zachleat">jQuery Mobile</a>, <a href="https://github.com/johndyer/mediaelement/commits?author=zachleat">MediaElement.js</a>, <a href="https://github.com/h5bp/html5please/commits?author=zachleat">html5please</a>, <a href="https://github.com/a11yproject/a11yproject.com/commits?author=zachleat">a11yproject</a>, and <a href="https://github.com/stubbornella/csslint/commits?author=zachleat">CSS Lint</a>, and others.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Community</strong>
+        <ul class="resume-desc">
+          <li>Implemented the current Font Loading strategies for redesigns of <a href="/web/css-tricks-web-fonts/">{% assign imgObj = "css" | avatarObject %}{% img imgObj %}CSS Tricks</a> and <a href="/web/the-compromise/">{% assign imgObj = "smashingmag" | avatarObject %}{% img imgObj %}Smashing Magazine</a>.</li>
+          <li>Managing four Web Development Twitter accounts:
+            <ul>
+              <li><a href="https://twitter.com/zachleat" class="resume-nbsp">{% assign imgObj = "zachleat" | avatarObject %}{% img imgObj %}@zachleat</a> <span class="resume-subnote">({{ twitter.zachleat | renderNumber }} followers)</span></li>
+
+              <li><a href="https://twitter.com/eleven_ty" class="resume-nbsp">{% assign imbObj = "eleven_ty" | avatarObject %}{% img imbObj %}@eleven_ty</a> <span class="resume-subnote">({{ twitter.eleven_ty | renderNumber }} followers)</span></li>
+
+              <li><a href="https://twitter.com/nebraskajs" class="resume-nbsp">{% assign imgObj = "nebraskajs" | avatarObject %}{% img imgObj %}@nebraskajs</a> <span class="resume-subnote">({{ twitter.nebraskajs | renderNumber }} followers)</span></li>
+
+              <li><a href="https://twitter.com/nejsconf" class="resume-nbsp">{% assign imgObj = "nejsconf" | avatarObject %}{% img imgObj %}@nejsconf</a> <span class="resume-subnote">({{ twitter.nejsconf | renderNumber }} followers)</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="professional">Professional Experience</h2>
+
+    <ul class="resume-list">
+      <li>
+        <strong>Web Developer</strong> for <a href="http://filamentgroup.com/">{% assign imgObj = "filamentgroup" | avatarObject %}{% img imgObj %}Filament Group</a>
+        <address class="resume-location h-adr">
+          <span class="p-locality">Boston</span>,
+          <abbr class="p-region" title="Massachusetts">MA</abbr>
+        </address>
+        <ul class="resume-desc">
+          <li class="resume-date">June 2012 to Present</li>
+          <li>Web development and consulting focused on a web for everyone: Performance, Responsive Design, Accessibility, and more. Personal specialties included web fonts, accessible forms, and responsive tables.</li>
+          <li>Voted Agency of the Year, <a href="https://thenetawards.com/">.net Awards 2015</a></li>
+          <li>Worked with clients like <a href="https://www.lego.com/">LEGO</a>, <a href="https://www.akamai.com">Akamai</a>, <a href="https://globalnews.ca">Global News</a>, <a href="https://www.rent.com/">rent.com</a>, <a href="https://www.salary.com/">salary.com</a>, <a href="https://www.ebay.com">ebay</a>, <a href="https://www.cnn.com">CNN</a>, <a href="https://forrester.com/">Forrester Research</a>, <a href="https://www.attivio.com">attivio</a>, Objective Logistics, <a href="https://www.retailmenot.com">RetailMeNot</a>, <a href="https://www.libertymutual.com">Liberty Mutual</a>, and more.</li>
+          <li>Converted type character designs into a multi-layer multi-typeface web font implementation for previewing monograms on retail clothing.</li>
+          <li>Standardized the new project boilerplate and the release process for project maintenance.</li>
+          <li>Wrote a lightweight no-dependency IE8-compatible polyfill for custom events.</li>
+          <li>Developed a responsive reusable component library for email.</li>
+        </ul>
+      </li>
+
+      <li class="resume-avatars-fff">
+        <strong>Front End Architect</strong> for <span class="resume-nbsp">{% assign imgObj = "UnionPacific" | avatarObject %}{% img imgObj %}Union</span> Pacific Railroad
+        <address class="resume-location h-adr">
+          <span class="p-locality">Omaha</span>,
+          <abbr class="p-region" title="Nebraska">NE</abbr>
+        </address>
+        <ul class="resume-desc">
+          <li class="resume-date">June 2011 to May 2012</li>
+          <li>While maintaining a technical leadership role for the component library, also responsible for setting the company's direction for mobile application development.</li>
+          <li>Developed a input-device independent reusable component library to serve both mobile web and hybrid native applications.</li>
+          <li>Ownership of all company authentication pages, internal/external and mobile/desktop. Used progressive enhancement to expand device support.</li>
+          <li>Evangelize front end development best practices including cross-browser compatible code, progressive enhancement, automated testing, and Responsive Web Design.</li>
+          <li>Started an internal HTML5 and Open Web User Group to educate developers on new web platform features.</li>
+        </ul>
+      </li>
+
+      <li class="resume-avatars-fff">
+        <strong>Project Lead</strong> for <span class="resume-nbsp">{% assign imgObj = "UnionPacific" | avatarObject %}{% img imgObj %}Union</span> Pacific Railroad
+        <address class="resume-location h-adr">
+          <span class="p-locality">Omaha</span>,
+          <abbr class="p-region" title="Nebraska">NE</abbr>
+        </address>
+        <ul class="resume-desc">
+          <li class="resume-date">July 2008 to May 2011</li>
+          <li>Lead developer and support team for company-standard User Interface library used on all new web projects.</li>
+          <li>62 separate reusable components across 5 simultaneous major code branches and over 50 versions.</li>
+          <li>Sole individual provider of support to a large developer base (~1500 employees and contractors in IT) which yielded an average of over 400 support tickets per year. <em>Reduced total yearly defect support tickets by 43%.</em></li>
+          <li>Migrated existing code base to comply with new <abbr title="internationalization">i18n</abbr> requirements without incurring a runtime performance cost.</li>
+          <li>Adapted to marketing department's company wide brand refresh, centrally and easily applied to all applications.</li>
+          <li>Improved performance by reducing component initialization times between major versions by 5.2× in IE7 with the addition of prerendered markup in a Java framework.</li>
+          <li>Prevented an Adobe Flexpocalypse by opposing adoption of Adobe Flex as the primary UI development tool using the merits of the Open Web.</li>
+        </ul>
+      </li>
+
+      <li class="resume-avatars-fff">
+        <strong>Front End Engineer</strong> for <span class="resume-nbsp">{% assign imgObj = "UnionPacific" | avatarObject %}{% img imgObj %}Union</span> Pacific Railroad
+        <address class="resume-location h-adr">
+          <span class="p-locality">Omaha</span>,
+          <abbr class="p-region" title="Nebraska">NE</abbr>
+        </address>
+        <ul class="resume-desc">
+          <li class="resume-date">June 2006 to July 2008</li>
+          <li>User Interface development for three internal projects, one of which received approximately 15 million hits per month.</li>
+          <li>Developed build process for automated deployment including CSS and JS minimization, with linting (JSLint), integration testing (Selenium) and unit testing (JSUnit).</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="education">Educational Experience</h2>
+
+    <ul class="resume-list">
+      <li>
+        <strong>Computer Engineering</strong> at <a href="http://www.unl.edu/"><span class="resume-nbsp">{% assign imgObj = "UNLincoln" | avatarObject %}{% img imgObj %}University</span> of Nebraska</a>
+        <address class="resume-location h-adr">
+          <span class="p-locality">Lincoln</span>,
+          <abbr class="p-region" title="Nebraska">NE</abbr>
+        </address>
+        <ul class="resume-desc">
+          <li class="resume-date">August 2001 to May 2006</li>
+          <li><abbr title="Bachelor of Science">BS</abbr> in Computer Engineering, Minor in Mathematics</li>
+          <!-- <li>College of Engineering Deans List <abbr class="dtstart" title="2005-05">Spring 2005</abbr></li> -->
+          <li>Course Work in Semantic Web, Computer Architecture, Data Structures and Algorithms, Database Systems, Artificial Intelligence, Cryptography and Security, GUI and Unix Programming, Operating Systems and Kernels</li>
+        </ul>
+      </li>
+
+      <li>
+        Engineering Study Abroad Program
+        <address class="resume-location h-adr">
+          <span class="p-locality">Fortaleza</span>,
+          <abbr class="p-region" title="Ceará">CE</abbr>,
+          <span class="p-country-name">Brazil</span>
+        </address>
+        <ul class="resume-desc">
+          <li class="resume-date">May 2005</li>
+          <li>Studies in Brazilian Culture and the Portuguese Language</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="resume-invitation">
+      <span class="resume-print-only"><a href="/resume/" class="resume-print-link">This resume is best viewed online</a>.</span> You're invited to view the source code. This page uses the <code>h-resume</code> microformat. Resume generated on {{ now | readableDate }}.
+    </p>
+  </section>
 </div>

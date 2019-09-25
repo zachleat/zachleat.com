@@ -220,7 +220,7 @@ h5,
 	border-bottom: 1px solid #dedede;
 	text-align: center;
 }
-.content {
+.content-main {
 	text-align: left;
 	padding: 0 0.25rem; /* 4px /16 */
 	background-color: #fff;
@@ -231,9 +231,9 @@ h5,
 	-ms-hyphens: auto;
 	hyphens: auto;
 }
-.content img.primary,
-.content .fullwidth,
-.content pre:not(.fullwidthexempt) {
+.content-main img.primary,
+.content-main .fullwidth,
+.content-main pre:not(.fullwidthexempt) {
 	margin-left: calc(-0.25rem); /* -4px /16 */
 	margin-right: calc(-0.25rem); /* -4px /16 */
 	width: calc(100% + .5rem);
@@ -241,24 +241,24 @@ h5,
 }
 
 @media (min-width: 25em) { /* 400px */
-	.content {
+	.content-main {
 		max-width: 31em;
 		padding-left: 0.75rem; /* 12px /16 */
 		padding-right: 0.75rem; /* 12px /16 */
 	}
-	.content img.primary,
-	.content .fullwidth,
-	.content pre:not(.fullwidthexempt) {
+	.content-main img.primary,
+	.content-main .fullwidth,
+	.content-main pre:not(.fullwidthexempt) {
 		margin-left: -0.75rem; /* -12px /16 */
 		margin-right: -0.75rem; /* -12px /16 */
 		width: calc(100% + 1.5rem);
 	}
-	.tmpl-list .content {
+	.tmpl-list .content-main {
 		max-width: 45em;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.tmpl-page .content {
+	.tmpl-page .content-main {
 		max-width: 31em;
 		margin-left: auto;
 		margin-right: auto;
@@ -266,8 +266,8 @@ h5,
 }
 @supports (display: grid) {
 	@media (min-width: 32.5em) { /* 520px */
-		.tmpl-list .content,
-		.tmpl-page .content {
+		.tmpl-list .content-main,
+		.tmpl-page .content-main {
 			max-width: none;
 			margin-left: initial;
 			margin-right: initial;
@@ -321,7 +321,7 @@ h5,
 			padding-top: 1rem;
 		}
 
-		.content { grid-area: 1/1/4/2; }
+		.content-main { grid-area: 1/1/4/2; }
 		.rail { grid-area: 1/2/4/3; } 
 		.hamburger { grid-area: 1/3/4/4; }
 
@@ -329,7 +329,7 @@ h5,
 		.tmpl-page body {
 			grid-template-columns: 1.5rem 1fr 13.5rem 2.5rem;
 		}
-		.tmpl-page .content { grid-area: 1/2/4/3; }
+		.tmpl-page .content-main { grid-area: 1/2/4/3; }
 		.tmpl-page .rail { grid-area: 1/3/4/4; } 
 		.tmpl-page .hamburger { grid-area: 1/4/4/5; }
 
@@ -346,33 +346,33 @@ h5,
 }
 
 @media (min-width: $twoColLayoutMinWidth) {
-	.tmpl-page .content {
+	.tmpl-page .content-main {
 		font-size: 1.3125em; /* 21px /16 */
 	}
 }
 @media (min-width: 75em) { /* 1200px */
-	.tmpl-page .content {
+	.tmpl-page .content-main {
 		font-size: 1.4375em; /* 23px /16 */
 	}
 }
 
 
 /* Content */
-/*.content article > .sub + p:first-of-type:first-line,
-.content article > h2 + p:first-line*/
+/*.content-main article > .sub + p:first-of-type:first-line,
+.content-main article > h2 + p:first-line*/
 .intro-smallcaps {
 	font-family: Georgia;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-.content ol:not(.posts),
-.content ul:not(.posts) {
+.content-main ol:not(.posts),
+.content-main ul:not(.posts) {
 	padding-left: 1.5em;
 }
 @media (min-width: 41.25em) {
-	.content ol,
-	.content ul {
+	.content-main ol,
+	.content-main ul {
 		padding-left: 0;
 	}
 }
@@ -400,8 +400,8 @@ body {
 :visited {
 	color: #304f3e;
 }
-.content :link,
-.content :visited {
+.content-main :link,
+.content-main :visited {
 	color: inherit;
 }
 :link:active,
@@ -484,14 +484,14 @@ h2,
 	font-size: 1.421052631579em; /* 27px /19 */
 	padding: 0 .227272727em; /* 0 5px */
 }
-.content h2,
-.content .hed-h2 {
+.content-main h2,
+.content-main .hed-h2 {
 	margin-top: 3em;
 	padding: 0 0 .5em 0;
 	border-bottom: 1px solid #e9e9e9;
 }
-.content .slide h2,
-.content .slide .hed-h2 {
+.content-main .slide h2,
+.content-main .slide .hed-h2 {
 	margin-top: .5em;
 	border-bottom: none;
 }
@@ -580,10 +580,10 @@ pre {
 	margin: .5em -0.25rem; /* -4px /16 */
 	background: #272822;
 	color: #f8f8f2;
-	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -pre-wrap;
 	white-space: -o-pre-wrap;
+	white-space: pre-wrap;
 	word-wrap: break-word;
 
 	@include unhyphenate;
@@ -1221,7 +1221,7 @@ th.numeric {
 	}
 }
 /* Stay inside of the primarydemo boxes */
-.content .livedemo > pre {
+.content-main .livedemo > pre {
 	margin-left: calc( -.5rem );
 	width: calc( 100% + 1rem );
 	max-width: none;

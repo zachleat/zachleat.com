@@ -1,6 +1,8 @@
 const { DateTime } = require("luxon");
 const { URL } = require("url");
-const sanitizeHTML = require('sanitize-html')
+const sanitizeHTML = require("sanitize-html")
+const numeral = require("numeral")
+const pluginImg = require("@11ty/eleventy-plugin-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const siteData = require("./_data/site.json");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -22,6 +24,7 @@ module.exports = function(eleventyConfig) {
 	/* PLUGINS */
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
+	eleventyConfig.addPlugin(pluginImg);
 
 	/* COPY */
 	eleventyConfig
@@ -44,6 +47,19 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
 	/* FILTERS */
+	eleventyConfig.addLiquidFilter("avatarObject", function(username) {
+		return {
+			src: `https://twitter.com/${username}/profile_image?size=bigger`,
+		  alt: `${username}’s Avatar`,
+		  class: "resume-avatar",
+		  loading: "lazy"
+		}
+	});
+
+	eleventyConfig.addLiquidFilter("renderNumber", function renderNumber(num) {
+		return numeral(parseInt(num, 10)).format("0,0");
+	});
+
 	eleventyConfig.addLiquidFilter("round", function(num, digits = 2) {
 		return parseFloat(num).toFixed(digits);
 	});

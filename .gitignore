@@ -4,6 +4,7 @@ node_modules
 .env
 _site
 _cache
+.cache
 web/dist
 web/_drafts
 web/_includes/*.css
