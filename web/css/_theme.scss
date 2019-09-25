@@ -60,6 +60,26 @@ dd {
 	margin: 0 0 1.5em 0;
 }
 
+/* Inline List */
+.list-inline {
+	@include clearfix;
+}
+.list-inline > li {
+	float: left;
+	list-style: none;
+}
+.list-inline > li:not(:last-child):after {
+	content: "";
+	padding-left: .75em;
+}
+.list-inline > li:not(.list-inline-nosep):not(:last-child):after {
+	border-right: 1px solid #ddd;
+	margin-right: .75em;
+}
+.content-main .list-inline:not(.posts) {
+	padding-left: 0; /* Override */
+}
+
 /* Word Break */
 .break {
 	-ms-word-break: break-all;
