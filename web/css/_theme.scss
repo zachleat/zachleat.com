@@ -372,7 +372,6 @@ body {
 :link,
 :visited {
 	text-decoration: underline;
-	text-decoration-skip: ink;
 	text-decoration-color: #4caf50;
 }
 :link {
@@ -395,13 +394,16 @@ body {
 .about-description p {
 	margin-top: 0;
 }
-.about-description a,
-html:not(.tmpl-list) .content a:not(.social_icon) {
-	@include textDecorationSkipInkFallback;
+html:not(.tmpl-list) .content-main .posts a:not(.social_icon),
+html:not(.tmpl-list) .content-main pre a[href],
+html:not(.tmpl-list) .content-main code a[href],
+html:not(.tmpl-list) a[href].no-underline.no-underline,
+html:not(.tmpl-list) pre a[href].no-underline.no-underline {
+	text-decoration: none;
 }
-html:not(.tmpl-list) .content .posts a:not(.social_icon),
-html:not(.tmpl-list) a[href].no-underline.no-underline {
-	@include undoTextDecorationSkipInkFallback;
+html:not(.tmpl-list) .content-main pre a[href],
+html:not(.tmpl-list) .content-main code a[href] {
+	text-decoration: underline;
 }
 
 /* Emphasis */

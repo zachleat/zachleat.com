@@ -53,36 +53,8 @@
 		font-family: LatoBoldItalic, Numero, $fallbackSystemFont;
 	}
 }
-@mixin textDecorationSkipInkFallback {
-	@supports (background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%)) and (not(text-decoration-skip-ink: auto)) {
-		& {
-			text-decoration: none;
-			background-image: -webkit-linear-gradient(top, currentColor 75%, currentColor 75%);
-			background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%);
-			text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-			background-repeat: repeat-x;
-			background-size: 1px 1px;
-			background-position: 0 97%;
-		}
-		&.link-u-exempt,
-		&.exempt {
-			background-image: none;
-			text-shadow: none;
-		}
-		&.exempt {
-			text-decoration: underline;
-		}
-	}
-}
-@mixin undoTextDecorationSkipInkFallback {
-	@supports (background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%)) and (not(text-decoration-skip-ink: auto)) {
-		& {
-			text-decoration: none;
-			background-image: none;
-			text-shadow: none;
-		}
-	}
-}
+/* TODO remove .link-u-exempt and .exempt classes from markup */
+
 @mixin clearfix {
 	&:before,
 	&:after {
