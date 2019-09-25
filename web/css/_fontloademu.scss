@@ -2,6 +2,16 @@
 	margin-top: 1em;
 	font-size: 0.9285714285714em; /* 13px /14 */
 }
+.fontloademu fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.fontloademu legend {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
 .fontloademu label {
 	display: block;
 	white-space: nowrap;
