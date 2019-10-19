@@ -1,5 +1,5 @@
 ---
-title: A look back at NEJS CONF, 2015–2019
+title: 'A look back at NEJS CONF, 2015–2019'
 permalink: /web/nejsconf/final/
 tags:
   - conference
