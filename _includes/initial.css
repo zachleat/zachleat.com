@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* TODO remove .link-u-exempt and .exempt classes from markup */
 @font-face {
   font-family: LatoSubset;
   src: url("/web/css/fonts/lato/2.0/LatoLatin-Regular.supersubset.woff2") format("woff2");
@@ -120,6 +121,35 @@ dd {
   font-size: 0.9473684210526em;
   /* 18px /19 */
   margin: 0 0 1.5em 0;
+}
+
+/* Inline List */
+.list-inline:before, .list-inline:after {
+  content: " ";
+  display: table;
+}
+.list-inline:after {
+  clear: both;
+}
+
+.list-inline > li {
+  float: left;
+  list-style: none;
+}
+
+.list-inline > li:not(:last-child):after {
+  content: "";
+  padding-left: .75em;
+}
+
+.list-inline > li:not(.list-inline-nosep):not(:last-child):after {
+  border-right: 1px solid #ddd;
+  margin-right: .75em;
+}
+
+.content-main .list-inline:not(.posts) {
+  padding-left: 0;
+  /* Override */
 }
 
 /* Word Break */
@@ -305,7 +335,7 @@ h5,
   text-align: center;
 }
 
-.content {
+.content-main {
   text-align: left;
   padding: 0 0.25rem;
   /* 4px /16 */
@@ -319,9 +349,9 @@ h5,
   hyphens: auto;
 }
 
-.content img.primary,
-.content .fullwidth,
-.content pre:not(.fullwidthexempt) {
+.content-main img.primary,
+.content-main .fullwidth,
+.content-main pre:not(.fullwidthexempt) {
   margin-left: calc(-0.25rem);
   /* -4px /16 */
   margin-right: calc(-0.25rem);
@@ -332,7 +362,7 @@ h5,
 
 @media (min-width: 25em) {
   /* 400px */
-  .content {
+  .content-main {
     max-width: 31em;
     padding-left: 0.75rem;
     /* 12px /16 */
@@ -340,9 +370,9 @@ h5,
     /* 12px /16 */
   }
 
-  .content img.primary,
-  .content .fullwidth,
-  .content pre:not(.fullwidthexempt) {
+  .content-main img.primary,
+  .content-main .fullwidth,
+  .content-main pre:not(.fullwidthexempt) {
     margin-left: -0.75rem;
     /* -12px /16 */
     margin-right: -0.75rem;
@@ -350,13 +380,13 @@ h5,
     width: calc(100% + 1.5rem);
   }
 
-  .tmpl-list .content {
+  .tmpl-list .content-main {
     max-width: 45em;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .tmpl-page .content {
+  .tmpl-page .content-main {
     max-width: 31em;
     margin-left: auto;
     margin-right: auto;
@@ -365,8 +395,8 @@ h5,
 @supports (display: grid) {
   @media (min-width: 32.5em) {
     /* 520px */
-    .tmpl-list .content,
-    .tmpl-page .content {
+    .tmpl-list .content-main,
+    .tmpl-page .content-main {
       max-width: none;
       margin-left: initial;
       margin-right: initial;
@@ -426,7 +456,7 @@ h5,
       padding-top: 1rem;
     }
 
-    .content {
+    .content-main {
       grid-area: 1/1/4/2;
     }
 
@@ -443,7 +473,7 @@ h5,
       grid-template-columns: 1.5rem 1fr 13.5rem 2.5rem;
     }
 
-    .tmpl-page .content {
+    .tmpl-page .content-main {
       grid-area: 1/2/4/3;
     }
 
@@ -467,35 +497,35 @@ h5,
   }
 }
 @media (min-width: 60em) {
-  .tmpl-page .content {
+  .tmpl-page .content-main {
     font-size: 1.3125em;
     /* 21px /16 */
   }
 }
 @media (min-width: 75em) {
   /* 1200px */
-  .tmpl-page .content {
+  .tmpl-page .content-main {
     font-size: 1.4375em;
     /* 23px /16 */
   }
 }
 /* Content */
-/*.content article > .sub + p:first-of-type:first-line,
-.content article > h2 + p:first-line*/
+/*.content-main article > .sub + p:first-of-type:first-line,
+.content-main article > h2 + p:first-line*/
 .intro-smallcaps {
   font-family: Georgia;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.content ol:not(.posts),
-.content ul:not(.posts) {
+.content-main ol:not(.posts),
+.content-main ul:not(.posts) {
   padding-left: 1.5em;
 }
 
 @media (min-width: 41.25em) {
-  .content ol,
-  .content ul {
+  .content-main ol,
+  .content-main ul {
     padding-left: 0;
   }
 }
@@ -522,7 +552,6 @@ body {
 :link,
 :visited {
   text-decoration: underline;
-  text-decoration-skip: ink;
   text-decoration-color: #4caf50;
 }
 
@@ -534,8 +563,8 @@ body {
   color: #304f3e;
 }
 
-.content :link,
-.content :visited {
+.content-main :link,
+.content-main :visited {
   color: inherit;
 }
 
@@ -550,36 +579,17 @@ body {
   margin-top: 0;
 }
 
-@supports (background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%)) and (not (text-decoration-skip-ink: auto)) {
-  .about-description a,
-  html:not(.tmpl-list) .content a:not(.social_icon) {
-    text-decoration: none;
-    background-image: -webkit-linear-gradient(top, currentColor 75%, currentColor 75%);
-    background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%);
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-    background-repeat: repeat-x;
-    background-size: 1px 1px;
-    background-position: 0 97%;
-  }
-  .about-description a.link-u-exempt, .about-description a.exempt,
-  html:not(.tmpl-list) .content a:not(.social_icon).link-u-exempt,
-  html:not(.tmpl-list) .content a:not(.social_icon).exempt {
-    background-image: none;
-    text-shadow: none;
-  }
-  .about-description a.exempt,
-  html:not(.tmpl-list) .content a:not(.social_icon).exempt {
-    text-decoration: underline;
-  }
+html:not(.tmpl-list) .content-main .posts a:not(.social_icon),
+html:not(.tmpl-list) .content-main pre a[href],
+html:not(.tmpl-list) .content-main code a[href],
+html:not(.tmpl-list) a[href].no-underline.no-underline,
+html:not(.tmpl-list) pre a[href].no-underline.no-underline {
+  text-decoration: none;
 }
 
-@supports (background-image: linear-gradient(to bottom, currentColor 75%, currentColor 75%)) and (not (text-decoration-skip-ink: auto)) {
-  html:not(.tmpl-list) .content .posts a:not(.social_icon),
-  html:not(.tmpl-list) a[href].no-underline.no-underline {
-    text-decoration: none;
-    background-image: none;
-    text-shadow: none;
-  }
+html:not(.tmpl-list) .content-main pre a[href],
+html:not(.tmpl-list) .content-main code a[href] {
+  text-decoration: underline;
 }
 
 /* Emphasis */
@@ -683,15 +693,15 @@ h2,
   /* 0 5px */
 }
 
-.content h2,
-.content .hed-h2 {
+.content-main h2,
+.content-main .hed-h2 {
   margin-top: 3em;
   padding: 0 0 .5em 0;
   border-bottom: 1px solid #e9e9e9;
 }
 
-.content .slide h2,
-.content .slide .hed-h2 {
+.content-main .slide h2,
+.content-main .slide .hed-h2 {
   margin-top: .5em;
   border-bottom: none;
 }
@@ -820,10 +830,10 @@ pre {
   /* -4px /16 */
   background: #272822;
   color: #f8f8f2;
-  white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
+  white-space: pre-wrap;
   word-wrap: break-word;
   /* Disable ligatures */
   font-variant-ligatures: no-common-ligatures;
@@ -1667,13 +1677,13 @@ th.numeric {
 }
 
 /* Stay inside of the primarydemo boxes */
-.content .livedemo > pre {
+.content-main .livedemo > pre {
   margin-left: calc( -.5rem );
   width: calc( 100% + 1rem );
   max-width: none;
 }
 @media (min-width: 60em) {
-  .content .livedemo > pre {
+  .content-main .livedemo > pre {
     margin-left: calc( -.875rem );
     width: calc( 100% + 1.75rem );
   }
