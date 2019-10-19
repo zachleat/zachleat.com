@@ -11,9 +11,6 @@ const Natural = require('natural');
 const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
 const randomCase = require('random-case');
 
-// TODO replace with https://www.npmjs.com/package/striptags
-// const stripHtml = require("string-strip-html");
-
 module.exports = function(eleventyConfig) {
 	eleventyConfig.setDataDeepMerge(true);
 

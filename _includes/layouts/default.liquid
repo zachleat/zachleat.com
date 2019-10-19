@@ -63,8 +63,8 @@
 						<div class="tags tags-rail">
 							<span class="tags-bigger">
 								<a href="/" class="tag tag-borderless{% if page.url == '/' %} active{% endif %}">Home</a>
-								<a href="/web/" class="tag tag-borderless{% if page.url == '/web/' or page.url == '/web/writing/' %} active{% endif %}">Archives</a>
 								<a href="/web/about/" class="tag tag-borderless{% if page.url == '/web/about/' %} active{% endif %}">About</a>
+								<a href="/web/" class="tag tag-borderless{% if page.url == '/web/' or page.url == '/web/writing/' %} active{% endif %}">Archives</a>
 							</span>
 							<a href="/web/fonts/" class="tag font-loading{% if page.url == '/web/fonts/' %} active{% endif %}">Web Fonts</a>
 							<a href="/web/eleventy/" class="tag{% if page.url == '/web/eleventy/' %} active{% endif %}">Eleventy</a>
@@ -78,10 +78,11 @@
 							<a href="/web/feed/" class="social_icon icon-feed" title="Zach Leatherman’s RSS Feed">RSS</a>
 						</div><!-- /.social -->
 						<div class="tags tags-rail">
+							<a href="/twitter/" class="tag">Twitter Archive</a>
 							<a href="/web/notes/" class="tag{% if page.url == '/web/notes/' %} active{% endif %}">Notes</a>
 							<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %}">Speaking</a>
 							<a href="/web/projects/" class="tag{% if page.url == '/web/projects/' %} active{% endif %}">Projects</a>
-							<a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a>
+							<!-- <a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a> -->
 							<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/web/best-of/' or page.url == '/web/best-of/total-views/' %} active{% endif %}{% if hasToc == true or hidePopularInSidebar == true %} has-toc{% endif %}">Popular 🔥</a>
 							<!-- <a href="/web/citations/" class="tag{% if page.url == '/web/citations/' %} active{% endif %}">Citations</a> -->
 							<!-- <a href="/web/highlights/" class="tag highlight{% if page.url == '/web/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> -->
@@ -105,7 +106,7 @@
 				</nav>
 			</aside>
 		</div><!-- /.rail -->
-		<div class="content" data-role="main" id="skiplink-content">
+		<div class="content-main" data-role="main" id="skiplink-content">
 			{{ content }}
 			{% include footer.html %}
 		</div><!-- /.content -->

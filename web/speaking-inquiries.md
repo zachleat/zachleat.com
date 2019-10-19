@@ -13,6 +13,12 @@ As such, I keep a certain set of personal guidelines that I hold myself accounta
 
 * Speaker diversity must be a priority. I will likely remove myself from the lineup if I discover that it was not made a priority.
 * Travel and lodging must be paid for every speaker that is traveling to the conference. I’ve seen behind the curtain. I know the economics of conferences. This should be the first item in the budget.
+* I don’t allow editorial review of my presentations prior to their delivery.
+
+I will provide:
+
+* A professional talk delivered reliably and on time. All my talks will work without an Internet connection. If my laptop fails at the event, I will have backups of my content.
+* A speaker that will _be present_ at the event. I limit myself to a few conferences per year and as such like to listen to the other talks at the event and interact with speakers and attendees.
 
 Sound good? Great! [Email me](mailto:zach@zachleat.com) and we can get started!
 

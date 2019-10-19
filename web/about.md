@@ -41,7 +41,7 @@ Zach is a Web Craftsperson with the award winning <a href="http://www.filamentgr
 
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="Markdown">
 
-``` markdown
+``` text
 Zach is a Web Craftsperson with the award winning [Filament Group](http://www.filamentgroup.com/). He’s currently fixated on [web fonts](https://www.zachleat.com/web/fonts/) and [static site generators](https://www.zachleat.com/web/introducing-eleventy/). His [public speaking résumé](https://www.zachleat.com/web/speaking/) includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/). He also helps herd [NEJS CONF](http://nejsconf.com/) and the [NebraskaJS](http://nebraskajs.com) meetup.
 ```
 
