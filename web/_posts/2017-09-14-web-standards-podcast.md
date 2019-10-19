@@ -8,6 +8,9 @@ tags:
   - font-loading
   - speaking
   - audio
+metadata:
+  speaking:
+    type: podcast
 external_url: 'https://medium.com/web-standards/episode-85-7c6c6635b97e'
 medialength: 1 hour 26 min
 ---

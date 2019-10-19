@@ -14,6 +14,10 @@ tags:
   - speaking
   - conference
   - font-loading
+metadata:
+  speaking:
+    type: conference
+    country: Canada
 medialength: 48 min
 event_country: "<span role=\"img\" aria-label=\"Canada\" title=\"Canada\">\U0001F1E8\U0001F1E6</span>"
 ---

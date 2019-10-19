@@ -4,6 +4,10 @@ author: Zach Leatherman
 layout: post
 categories:
   - presentations
+metadata:
+  speaking:
+    type: meetup
+    country: US
 ---
 
 A presentation for the jQuery Omaha meetup group, later transformed into NebraskaJS.

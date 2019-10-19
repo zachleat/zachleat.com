@@ -9,6 +9,9 @@ tags:
   - audio
   - external
   - nejsconf
+metadata:
+  speaking:
+    type: podcast
 external_url: 'https://changelog.com/166/'
 medialength: 69 min
 ---

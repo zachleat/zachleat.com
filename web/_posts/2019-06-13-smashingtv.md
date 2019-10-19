@@ -5,6 +5,9 @@ categories:
 tags:
   - speaking
   - font-loading
+metadata:
+  speaking:
+    type: podcast
 event_date: June 13
 ---
 

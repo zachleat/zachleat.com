@@ -8,6 +8,9 @@ tags:
   - font-loading
   - speaking
   - audio
+metadata:
+  speaking:
+    type: podcast
 external_url: 'https://workingdraft.de/on-tour-perfnow-zach-leatherman/'
 medialength: 21 min
 ---

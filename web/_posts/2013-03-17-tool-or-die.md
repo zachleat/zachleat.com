@@ -9,6 +9,10 @@ tags:
   - video
   - speaking
   - conference
+metadata:
+  speaking:
+    type: conference
+    country: US
 medialength: 59 min
 ---
 

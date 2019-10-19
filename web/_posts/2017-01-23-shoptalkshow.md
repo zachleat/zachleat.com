@@ -7,6 +7,9 @@ categories:
 tags:
   - audio
   - external
+metadata:
+  speaking:
+    type: podcast
 external_url: http://shoptalkshow.com/episodes/247-performance-equation/
 medialength: 72 min
 ---

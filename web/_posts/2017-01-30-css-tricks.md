@@ -7,6 +7,9 @@ categories:
 tags:
   - video
   - external
+metadata:
+  speaking:
+    type: podcast
 external_url: 'https://css-tricks.com/video-screencasts/152-font-loading-zach-leatherman/'
 medialength: 57 min
 ---

@@ -6,6 +6,10 @@ categories:
   - presentations
 tags:
   - video
+metadata:
+  speaking:
+    type: barcamp
+    country: US
 medialength: 12 min
 ---
 

@@ -5,6 +5,9 @@ tags:
   - speaking
   - audio
   - nejsconf
+metadata:
+  speaking:
+    type: podcast
 medialength: 34 min
 ---
 

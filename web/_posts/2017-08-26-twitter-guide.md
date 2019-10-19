@@ -4,6 +4,10 @@ categories:
   - presentations
 tags:
   - speaking
+metadata:
+  speaking:
+    type: barcamp
+    country: US
 stylesheet: keynote-extractor.css
 templateclass: wider
 ---

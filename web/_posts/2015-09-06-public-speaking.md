@@ -9,6 +9,10 @@ categories:
 tags:
   - video
   - highlight
+metadata:
+  speaking:
+    type: barcamp
+    country: US
 medialength: 17 min
 ---
 

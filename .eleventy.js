@@ -47,6 +47,36 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
 	/* FILTERS */
+	eleventyConfig.addLiquidFilter("numberString", function(num) {
+		let strs = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+		if( num < strs.length ) {
+			return strs[num];
+		}
+		return num;
+	});
+
+	// Count total number of items that have speaking metadata set
+	eleventyConfig.addLiquidFilter("getSpeakingCount", function(allCollection, propName, propValueMatch) {
+		let count = 0;
+		for(let item of allCollection) {
+			if(item.data.metadata && item.data.metadata.speaking && item.data.metadata.speaking[propName] && (!propValueMatch || item.data.metadata.speaking[propName] === propValueMatch)) {
+				count++;
+			}
+		}
+		return count;
+	});
+
+	// Count unique number of items for a speaking metadata property
+	eleventyConfig.addLiquidFilter("getSpeakingUniqueCount", function(allCollection, propName) {
+		let count = new Set();
+		for(let item of allCollection) {
+			if(item.data.metadata && item.data.metadata.speaking && item.data.metadata.speaking[propName]) {
+				count.add(item.data.metadata.speaking[propName]);
+			}
+		}
+		return count.size;
+	});
+
 	eleventyConfig.addLiquidFilter("avatarObject", function(username) {
 		return {
 			src: `https://twitter.com/${username}/profile_image?size=bigger`,

@@ -9,6 +9,10 @@ categories:
 tags:
   - video
   - font-loading
+metadata:
+  speaking:
+    type: meetup
+    country: US
 medialength: 19 min
 ---
 

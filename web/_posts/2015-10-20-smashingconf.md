@@ -12,6 +12,10 @@ tags:
   - font-loading
   - speaking
   - conference
+metadata:
+  speaking:
+    type: conference
+    country: Spain
 medialength: 48 min
 event_country: "<span role=\"img\" aria-label=\"Spain\" title=\"Spain\">\U0001F1EA\U0001F1F8</span>"
 ---

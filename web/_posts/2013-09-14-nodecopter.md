@@ -4,6 +4,10 @@ author: Zach Leatherman
 layout: post
 categories:
   - presentations
+metadata:
+  speaking:
+    type: conference
+    country: US
 tags: null
 ---
 

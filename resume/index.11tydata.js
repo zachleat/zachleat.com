@@ -1,6 +1,10 @@
 const fetch = require("node-fetch");
+const chalk = require("chalk");
 
 module.exports = async function() {
+	console.log( "Fetching new resume counts…" );
+
+	// console.log( chalk.yellow("WARNING: Using terrible data for resume counts because you need to implement Eleventy caching at the data layer.") );
 	// return {
 	// 	stargazers: {
 	// 		eleventy: 9999,
@@ -20,7 +24,6 @@ module.exports = async function() {
 	// 	}
 	// };
 
-	console.log( "Fetching new resume counts…" );
 	// https://developer.github.com/v3/repos/#get
 	try {
 		let initialData = {
@@ -125,7 +128,6 @@ module.exports = async function() {
 
 		return data;
 	} catch(e) {
-		console.log( "Failed, returning 0" );
-		return initialData;
+		throw new Error( "Failed fetching resume counts: " + e.message );
 	}
 };

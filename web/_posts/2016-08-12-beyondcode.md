@@ -7,6 +7,9 @@ categories:
   - presentations
 tags:
   - video
+metadata:
+  speaking:
+    type: podcast
 medialength: 3 min
 ---
 
