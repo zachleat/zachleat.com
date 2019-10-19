@@ -6,7 +6,7 @@ tags:
   - speaking
 ---
 
-_Originally presented at JAMstack_conf_sf in San Francisco, CA USA 🇺🇸 on October 17, 2019_
+_Originally presented at JAMstack_conf_sf in San Francisco, CA USA 🇺🇸 on October 17, 2019. Based on the blog post [I’m Taking Ownership of my Tweets](/web/own-my-tweets/) on this very web site._
 
 For this talk I built a social media platform: [MySpaceBook.info](https://myspacebook.info/), the only social media site exclusively for astronauts. Unfortunately midway through the presentation an investor called me up to make an offer on the site and I was left with no choice but to sell it, taking all of the user data down with it. If you use the principles I outline in this talk, you would have been able to take agency over your data, preserving it on your own terms.
 
