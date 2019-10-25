@@ -8,7 +8,7 @@ tmpl: list
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
 		<ol class="posts">
-			<li style="font-size: 40px">
+			<li style="font-size: 40px; vertical-align: middle;">
 				<span role="img" aria-label="United States of America" title="United States of America">🇺🇸</span>
 				<span role="img" aria-label="Canada" title="Canada">🇨🇦</span>
 				<span role="img" aria-label="Spain" title="Spain">🇪🇸</span>
@@ -17,6 +17,20 @@ tmpl: list
 				<span role="img" aria-label="Nigeria" title="Nigeria">🇳🇬</span>
 				<span role="img" aria-label="Netherlands" title="Netherlands">🇳🇱</span>
 				<span role="img" aria-label="Germany" title="Germany">🇩🇪</span>
+			</li>
+			<li>
+				{% assign countryCount = collections.all | getSpeakingUniqueCount: "country" %}
+        {% assign conferenceCount = collections.all | getSpeakingCount: "type", "conference" %}
+        {% assign meetupCount = collections.all | getSpeakingCount: "type", "meetup" %}
+        {% assign barcampCount = collections.all | getSpeakingCount: "type", "barcamp" %}
+        {% assign podcastCount = collections.all | getSpeakingCount: "type", "podcast" %}
+        {% assign lectureCount = collections.all | getSpeakingCount: "type", "lecture" %}
+        {{ countryCount | numberString | capitalize }} different countries,
+        {{ conferenceCount }} conference{% if conferenceCount != 1 %}s{% endif %},
+        {{ meetupCount }} meetup{% if meetupCount != 1 %}s{% endif %},
+        {{ barcampCount }} barcamp{% if barcampCount != 1 %}s{% endif %},
+        {{ podcastCount }} podcast{% if podcastCount != 1 %}s{% endif %},
+        and {{ lectureCount | numberString }} University guest lecture{% if lectureCount != 1 %}s{% endif %}.
 			</li>
 			<li><a href="/web/speaking/inquiries/" class="posts-link"><em>Do you want me to speak at your event? Read on→</em></a></li>
 			{% assign year = "" %}
