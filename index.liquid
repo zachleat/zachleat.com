@@ -12,7 +12,7 @@ enableWebmentions: true
 	<article>
 		<h2>Writing</h2>
 		<ol class="posts h-feed">
-			{% for post in collections.writing limit:5 %}
+			{% for post in collections.writing limit:3 %}
 				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
 			{% endfor %}
 			<li><em><a href="/web/writing/" class="posts-link posts-link-more">…see writing.</a></em></li>
@@ -20,19 +20,10 @@ enableWebmentions: true
 
 		<h2>Archives</h2>
 		<ol class="posts h-feed">
-			{% for post in collections.posts limit:5 %}
+			{% for post in collections.posts limit:3 %}
 				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
 			{% endfor %}
 			<li><em><a href="/web/" class="posts-link posts-link-more">…see archives.</a></em></li>
-		</ol>
-
-		<h2>Last three <a href="/web/notes/">notes</a></h2>
-		<ol class="posts h-feed">
-			{% for post in collections.note reversed %}
-				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
-				{% if forloop.index > 2 %}{% break %}{% endif %}
-			{% endfor %}
-			<li class="posts-note"><em><a href="/web/notes/" class="posts-link posts-link-more">…see all notes.</a></em></li>
 		</ol>
 
 		<h2>Popular 🔥</h2>
@@ -42,6 +33,15 @@ enableWebmentions: true
 			{% endfor %}
 			<li><em><a href="/web/best-of" class="posts-link posts-link-more">…see all popular posts.</a></em></li>
 		</ol>
+
+		<!-- <h2>Last <a href="/web/notes/">note</a></h2>
+		<ol class="posts h-feed">
+			{% for post in collections.note reversed %}
+				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
+				{% if forloop.index > 0 %}{% break %}{% endif %}
+			{% endfor %}
+			<li class="posts-note"><em><a href="/web/notes/" class="posts-link posts-link-more">…see all notes.</a></em></li>
+		</ol> -->
 
 	</article>
 </div><!-- /.layout-list -->
