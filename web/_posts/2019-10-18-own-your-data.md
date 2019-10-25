@@ -4,6 +4,8 @@ permalink: /web/own-your-content/
 tags:
   - conference
   - speaking
+  - popular-posts
+postRank: 4
 ---
 
 _Originally presented at JAMstack_conf_sf in San Francisco, CA USA 🇺🇸 on October 17, 2019. Based on the blog post [I’m Taking Ownership of my Tweets](/web/own-my-tweets/) on this very web site._
