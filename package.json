@@ -49,6 +49,7 @@
   "scripts": {
     "bestof": "grunt bestof && grunt",
     "default": "grunt",
+    "deploy": "./refresh-populars.sh && grunt deploy",
     "11ty": "npx @11ty/eleventy --quiet",
     "dev": "npx @11ty/eleventy --quiet --serve",
     "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet"
