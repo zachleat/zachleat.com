@@ -78,7 +78,7 @@ module.exports = function(eleventyConfig) {
 		return {
 			src: `https://twitter.com/${username}/profile_image?size=bigger`,
 		  alt: `${username}’s Avatar`,
-		  class: "resume-avatar",
+		  class: "z-avatar",
 		  loading: "lazy"
 		}
 	});
@@ -113,6 +113,9 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidFilter("timePosted", date => {
+		if(typeof date === "string") {
+			date = Date.parse(date);
+		}
 		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
 		let daysPosted = Math.round( parseFloat( numDays ) );
 		let yearsPosted = parseFloat( (numDays / 365).toFixed(1) );
@@ -343,14 +346,18 @@ module.exports = function(eleventyConfig) {
 	function hasCategory(post, category) {
 		return "categories" in post.data && post.data.categories && post.data.categories.indexOf(category) > -1;
 	}
+	function isWriting(item) {
+		return !!item.inputPath.match(/\/_posts\//) &&
+				(!hasTag(item, "external") || hasTag(item, "writing") || (item.data.external_url || "").indexOf("filamentgroup.com") > -1) &&
+				!hasTag(item, "speaking") &&
+				!hasCategory(item, "presentations");
+	}
+
 	eleventyConfig.addCollection("writing", function(collection) {
 		let posts = collection.getSortedByDate().reverse();
 		let items = [];
 		for( let item of posts ) {
-			if( !!item.inputPath.match(/\/_posts\//) &&
-				(!hasTag(item, "external") || hasTag(item, "writing") || (item.data.external_url || "").indexOf("filamentgroup.com") > -1) &&
-				!hasTag(item, "speaking") &&
-				!hasCategory(item, "presentations") ) {
+			if( isWriting(item) ) {
 				items.push( item );
 			}
 		}

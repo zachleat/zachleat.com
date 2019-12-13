@@ -10,25 +10,17 @@ enableWebmentions: true
 		<p><em>{% include bio-text-medium.html %} <a href="/web/about/">Read more<span class="a11y-only"> about Zach</span> &raquo;</a></em></p>
 	</div>
 	<article>
-		<h2>Writing</h2>
+		<h2>Newest</h2>
 		<ol class="posts h-feed">
-			{% for post in collections.writing limit:3 %}
+			{% for post in collections.posts limit:6 %}
 				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
 			{% endfor %}
-			<li><em><a href="/web/writing/" class="posts-link posts-link-more">…see writing.</a></em></li>
-		</ol>
-
-		<h2>Archives</h2>
-		<ol class="posts h-feed">
-			{% for post in collections.posts limit:3 %}
-				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
-			{% endfor %}
-			<li><em><a href="/web/" class="posts-link posts-link-more">…see archives.</a></em></li>
+			<li><em><a href="/web/" class="posts-link posts-link-more">…see full archives.</a></em></li>
 		</ol>
 
 		<h2>Popular 🔥</h2>
 		<ol class="posts h-feed">
-			{% for post in collections.popularPostsRanked limit:5 %}
+			{% for post in collections.popularPostsRanked limit:6 %}
 				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
 			{% endfor %}
 			<li><em><a href="/web/best-of" class="posts-link posts-link-more">…see all popular posts.</a></em></li>

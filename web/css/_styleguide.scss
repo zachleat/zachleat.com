@@ -64,6 +64,8 @@
 	.text-highlight.text-highlight {
 		display: inline;
 		padding: 0 .2em;
+		margin-left: -.2em;
+		margin-right: -.2em;
 		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
 	}

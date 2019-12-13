@@ -4,25 +4,27 @@ const chalk = require("chalk");
 module.exports = async function() {
 	console.log( "Fetching new resume counts…" );
 
-	// console.log( chalk.yellow("WARNING: Using terrible data for resume counts because you need to implement Eleventy caching at the data layer.") );
-	// return {
-	// 	stargazers: {
-	// 		eleventy: 9999,
-	// 		tablesaw: 9999,
-	// 		glyphhanger: 9999,
-	// 		bigtext: 9999,
-	// 		webfontrecipes: 9999
-	// 	},
-	// 	meetup: {
-	// 		nebraskajs: 9999
-	// 	},
-	// 	twitter: {
-	// 		eleven_ty: 9999,
-	// 		zachleat: 9999,
-	// 		nebraskajs: 9999,
-	// 		nejsconf: 9999
-	// 	}
-	// };
+	if(!process.env.ELEVENTY_FEATURES || process.env.ELEVENTY_FEATURES.split(",").indexOf("counts") === -1) {
+		console.log( chalk.yellow("WARNING: Using terrible data for resume counts because you need to implement Eleventy caching at the data layer.") );
+		return {
+			stargazers: {
+				eleventy: 9999,
+				tablesaw: 9999,
+				glyphhanger: 9999,
+				bigtext: 9999,
+				webfontrecipes: 9999
+			},
+			meetup: {
+				nebraskajs: 9999
+			},
+			twitter: {
+				eleven_ty: 9999,
+				zachleat: 9999,
+				nebraskajs: 9999,
+				nejsconf: 9999
+			}
+		};
+	}
 
 	// https://developer.github.com/v3/repos/#get
 	try {

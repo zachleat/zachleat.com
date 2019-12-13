@@ -1,0 +1,43 @@
+/* Lists */
+dt {
+	@include webfontBold;
+}
+dd {
+	font-size: 0.9473684210526em; /* 18px /19 */
+	margin: 0 0 1.5em 0;
+}
+dd ul,
+dd ol {
+	margin: 0;
+}
+dd ul.via {
+	font-size: 0.875em; /* 14px /16 */
+}
+.dl-inline dt {
+	float: left;
+	margin-right: .5em;
+}
+.dl-inline dt:after {
+	content: ":";
+	@include webfont;
+}
+
+/* Inline List */
+.list-inline {
+	@include clearfix;
+}
+.list-inline > li {
+	float: left;
+	list-style: none;
+}
+.list-inline > li:not(:last-child):after {
+	content: "";
+	padding-left: .75em;
+}
+.list-inline > li:not(.list-inline-nosep):not(:last-child):after {
+	border-right: 1px solid #ddd;
+	margin-right: .75em;
+}
+.content-main .list-inline:not(.posts) {
+	padding-left: 0; /* Override */
+}

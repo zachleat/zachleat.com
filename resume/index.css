@@ -118,21 +118,6 @@ ul.resume-desc {
 	}
 }
 
-/* Avatars */
-.resume-avatar {
-	width: 1.3em;
-	height: 1.3em;
-	border-radius: 50%;
-	vertical-align: middle;
-	margin: 0 .25em 0 .125em;
-}
-.resume-avatars-square .resume-avatar {
-	border-radius: 5%;
-}
-.resume-avatars-fff .resume-avatar {
-	box-shadow: 0 0 0px 1px #000;
-}
-
 /* Locations */
 .resume-location {
 	float: right;

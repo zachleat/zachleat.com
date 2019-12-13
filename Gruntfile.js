@@ -43,6 +43,7 @@ module.exports = function(grunt) {
 					'node_modules/fg-loadcss/src/loadCSS.js',
 					'node_modules/fg-loadcss/src/onloadCSS.js',
 					'<%= config.jsSrc %>grunticon-loader.js',
+					'<%= config.jsSrc %>timeago.js',
 					'<%= config.jsSrc %>async.js'
 					],
 				dest: '<%= config.distFolder %>async.js'
@@ -218,7 +219,7 @@ module.exports = function(grunt) {
 				}
 			},
 			eleventyProduction: {
-				command: 'ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet',
+				command: 'ELEVENTY_FEATURES=webmentions,counts npx @11ty/eleventy --quiet',
 				options: {
 					execOptions: {}
 				}
