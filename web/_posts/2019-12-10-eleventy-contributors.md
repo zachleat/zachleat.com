@@ -2,6 +2,7 @@
 title: Building Exclusive Features For Open Collective Contributors on Netlify
 tags:
   - eleventy
+  - project
 ---
 After the unbelievably gracious reception for [Eleventy](https://www.11ty.dev/) at the recent [JAMstack_conf](https://jamstackconf.com/) in San Francisco, I’ve been thinking about ways to invest more in the project’s longevity. It was surreal to see Eleventy get _as many_ if not more grassroots mentions in the talks and in the hallway than many of the companies with booths, employing full time staff to support and develop their projects.
 
