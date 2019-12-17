@@ -4,7 +4,6 @@ module.exports = function(grunt) {
 	const matter = require("gray-matter");
 	const _uniq = require('lodash/uniq');
 	const _remove = require('lodash/remove');
-	const normalize = require("normalize-path");
 	const bestof = grunt.file.readJSON("_cache/zachleat-bestof.json").rows;
 	const debug = require("debug")("bestof");
 
@@ -185,15 +184,5 @@ module.exports = function(grunt) {
 
 		updateUpdatedDate( "web/best-of/index.html", updatedDate );
 		updateUpdatedDate( "web/best-of/best-of-total-views.html", updatedDate );
-
-		// var unitNormalizer = pageviewsArr[0].averageViews;
-		// pageviewsArr.slice(0, 20).forEach(function(entry, j) {
-		// 	html += `
-		// <tr>
-		// 	<td>${j + 1}</td>
-		// 	<td><a href="/web/${entry.slug}">${entry.title}</a> ${entry.postedYear}</td>
-		// 	<td class="numeric">${(entry.averageViews * 100 / unitNormalizer).toFixed(1)}</td>
-		// </tr>`;
-		// });
 	});
 };
