@@ -41,10 +41,10 @@ imgOptions:
         {% assign lectureCount = collections.all | getSpeakingCount: "type", "lecture" %}
         <strong class="p-skill">Public Speaker</strong> in
         {{ countryCount | numberString }} different countries:
-        {{ conferenceCount }} conference{% if conferenceCount != 1 %}s{% endif %},
-        {{ meetupCount }} meetup{% if meetupCount != 1 %}s{% endif %},
-        {{ barcampCount }} barcamp{% if barcampCount != 1 %}s{% endif %},
-        {{ podcastCount }} podcast{% if podcastCount != 1 %}s{% endif %},
+        {{ conferenceCount | numberString }} conference{% if conferenceCount != 1 %}s{% endif %},
+        {{ meetupCount | numberString }} meetup{% if meetupCount != 1 %}s{% endif %},
+        {{ barcampCount | numberString }} barcamp{% if barcampCount != 1 %}s{% endif %},
+        {{ podcastCount | numberString }} podcast{% if podcastCount != 1 %}s{% endif %},
         and {{ lectureCount | numberString }} University guest lecture{% if lectureCount != 1 %}s{% endif %}.
         <ul class="resume-desc">
           <li>Events like <a href="https://jamstackconf.com/" class="resume-nbsp">{% assign imgObj = "jamstackconf" | avatarObject %}{% img imgObj, imgOptions %}JAMstack_conf</a>, <a href="https://beyondtellerrand.com/"><span class="resume-nbsp">{% assign imgObj = "btconf" | avatarObject %}{% img imgObj, imgOptions %}Beyond</span> Tellerrand</a>, <a href="https://smashingconf.com/"><span class="resume-nbsp">{% assign imgObj = "smashingconf" | avatarObject %}{% img imgObj, imgOptions %}Smashing</span> Conference</a> <span class="resume-subnote">(×3)</span>, <a href="https://2014.cssconf.com/" class="resume-nbsp z-avatars-square">{% assign imgObj = "CSSConf" | avatarObject %}{% img imgObj, imgOptions %}CSSConf</a>, and the first ever <a href="https://obamawhitehouse.archives.gov/blog/2015/04/14/friday-tech-meetup-white-house-0">Tech Meetup at {% assign imgObj = "TheWhiteHouse" | avatarObject %}{% img imgObj, imgOptions %}The White House</a>.</li>

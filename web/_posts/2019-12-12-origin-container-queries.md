@@ -5,7 +5,7 @@ tags:
   - popular-posts
 imgOptions:
   duration: 30d
-postRank: 2
+postRank: 1
 ---
 Container Queries are an often requested feature of the web platform. It has become almost cliché to mention it when talking about problems we’d like the web platform to solve. Container Queries would go a long way toward helping web developers do their jobs better and its omission is a huge limitation when developing component-based code for the web.
 
@@ -16,7 +16,7 @@ Here are the earliest mentions of Container Queries that the community was able 
 <dl class="dl-inline">
     <dt>2013 April 1</dt>
     <dd>
-        <a href="https://ianstormtaylor.com/media-queries-are-a-hack/">{% assign imgObj = "ianstormtaylor" | avatarObject %}{% img imgObj, imgOptions %}Ian Storm Taylor’s _Media Queries are a Hack_ blog post</a>
+        <a href="https://ianstormtaylor.com/media-queries-are-a-hack/">{% assign imgObj = "ianstormtaylor" | avatarObject %}{% img imgObj, imgOptions %}Ian Storm Taylor’s <em>Media Queries are a Hack</em> blog post</a>
         <ul class="via">
             <li><em>via <a href="https://twitter.com/patrickfulton/status/1204490285536952321">{% assign imgObj = "patrickfulton" | avatarObject %}{% img imgObj, imgOptions %}Patrick Fulton</a></em></li>
         </ul>
@@ -56,7 +56,7 @@ Here are the earliest mentions of Container Queries that the community was able 
     </dd>
     <dt>2011 September 1</dt>
     <dd>
-        <a href="https://stackoverflow.com/questions/7271818/media-query-like-behaviour-on-width-of-a-specific-div">A question posted by user `Damon` on Stack Overflow</a>
+        <a href="https://stackoverflow.com/questions/7271818/media-query-like-behaviour-on-width-of-a-specific-div">A question posted by user <code>Damon</code> on Stack Overflow</a>
         <ul class="via">
             <li><em>via <a href="https://twitter.com/jay_hoffmann/status/1204508888730603526">{% assign imgObj = "jayhoffman" | avatarObject %}{% img imgObj, imgOptions %}Jay Hoffman</a></em></li>
         </ul>
