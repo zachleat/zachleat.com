@@ -12,7 +12,7 @@ metadata:
   speaking:
     type: podcast
 external_url: 'https://medium.com/web-standards/episode-85-7c6c6635b97e'
-medialength: 1 hour 26 min
+medialength: 86 min
 ---
 
 Listen to the Interview (1:26:16) <span class="tag audio">Audio</span> on:

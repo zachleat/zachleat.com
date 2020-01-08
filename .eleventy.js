@@ -287,8 +287,8 @@ module.exports = function(eleventyConfig) {
 	});
 
 	/* SHORTCODES */
-	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug) {
-		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
+	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug, startTime) {
+		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}${startTime ? `?start=${startTime}` : ''}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
 	});
 
 	/* COLLECTIONS */
