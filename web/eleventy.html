@@ -32,9 +32,10 @@ tmpl: list
 		<p class="primarylink"><a href="https://www.11ty.io/docs/">Eleventy Documentation</a></p>
 		<p class="primarylink"><a href="https://github.com/11ty/eleventy/">GitHub</a> · <a href="https://twitter.com/eleven_ty">Twitter</a> · <a href="https://opencollective.com/11ty">Open Collective</a></p>
 		<ol class="posts">
-			{% for post in collections.eleventy %}
+			{%- assign posts = collections.eleventy | reverse %}
+			{%- for post in posts %}
 				{% include post-list-entry.html, ignoreYear: "true" %}
-			{% endfor %}
+			{%- endfor %}
 		</ol>
 	</article>
 </div><!-- /.layout-list -->
