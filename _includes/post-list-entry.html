@@ -2,11 +2,6 @@
 {% capture previousyear %}{{ currentyear }}{% endcapture %}
 {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
 {% if currentyear != year and ignoreYear != "true" %}
-{% comment %}
-{% if currentyearpostcount > 0 %}
-	<li class="subhed yearcount">{{ currentyearpostcount }} post{%if currentyearpostcount != 1 %}s{% endif %}{% if previousyear %} in {{ previousyear }}{% endif %}</li>
-{% endif %}
-{% endcomment %}
 	<li class="subhed" id="{{ currentyear }}">{{ currentyear }}{% if listItems %} <span class="subhed-count">×{{ listItems | getPostCountForYear: currentyear }}</span>{% endif %}</li>
 	{% capture year %}{{currentyear}}{% endcapture %}
 	{% assign currentyearpostcount = 0 %}
