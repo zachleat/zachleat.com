@@ -13,9 +13,15 @@ const randomCase = require('random-case');
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.setDataDeepMerge(true);
+	eleventyConfig.setQuietMode(true);
 
 	eleventyConfig.setLiquidOptions({
 		strict_filters: true
+	});
+
+	eleventyConfig.setBrowserSyncConfig({
+		ui: false,
+		ghostMode: false
 	});
 
 	/* PLUGINS */
