@@ -21,7 +21,8 @@ module.exports = async function() {
 				eleven_ty: 9999,
 				zachleat: 9999,
 				nebraskajs: 9999,
-				nejsconf: 9999
+				nejsconf: 9999,
+				fontspeed: 9999
 			}
 		};
 	}
@@ -124,6 +125,14 @@ module.exports = async function() {
 				let match = text.match(/followers_count\&quot\;\:(\d+)/i);
 				data.twitter.nejsconf = match && match.length > 1 ? parseInt(match[1], 10) : undefined;
 				console.log( `nejsconf follower count: ${data.twitter.nejsconf}.` );
+			}));
+
+		promises.push(fetch("https://twitter.com/fontspeed/")
+			.then(res => res.text())
+			.then(text => {
+				let match = text.match(/followers_count\&quot\;\:(\d+)/i);
+				data.twitter.fontspeed = match && match.length > 1 ? parseInt(match[1], 10) : undefined;
+				console.log( `fontspeed follower count: ${data.twitter.fontspeed}.` );
 			}));
 
 		await Promise.all(promises);

@@ -1,6 +1,7 @@
 ---
 title: Developing a Robust Font Loading Strategy for CSS-Tricks
 tags:
+  - highlight
   - font-loading
   - research
   - popular-posts
