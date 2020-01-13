@@ -112,11 +112,14 @@ module.exports = function(eleventyConfig) {
 		}
 	});
 
-	eleventyConfig.addLiquidFilter("timePosted", date => {
-		if(typeof date === "string") {
-			date = Date.parse(date);
+	eleventyConfig.addLiquidFilter("timePosted", (startDate, endDate = Date.now()) => {
+		if(typeof startDate === "string") {
+			startDate = Date.parse(startDate);
 		}
-		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
+		if(typeof endDate === "string") {
+			endDate = Date.parse(endDate);
+		}
+		let numDays = ((endDate - startDate) / (1000 * 60 * 60 * 24));
 		let daysPosted = Math.round( parseFloat( numDays ) );
 		let yearsPosted = parseFloat( (numDays / 365).toFixed(1) );
 
