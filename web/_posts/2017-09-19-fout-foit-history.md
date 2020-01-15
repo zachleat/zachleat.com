@@ -135,6 +135,16 @@ For a recent talk at <a href="http://css-minsk-js.by/">CSS-Minsk-JS</a>, I did s
 			<td><strong class="nowrap">font-display</strong></td>
 			<td>Samsung Internet (v8.2) adds <code>font-display</code> support</td>
 		</tr>
+		<tr>
+			<td class="nowrap">2020 <span class="hide-sm"><abbr title="January">Jan</abbr> 15</span></td>
+			<td><strong>FOIT 3<abbr title="seconds">s</abbr></strong></td>
+			<td>Edge (v79) switches to Chromium and the now-cross browser standard of FOIT with a timeout is complete.</td>
+		</tr>
+		<tr>
+			<td class="nowrap">2020 <span class="hide-sm"><abbr title="January">Jan</abbr> 15</span></td>
+			<td><strong class="nowrap">font-display</strong></td>
+			<td>Edge (v79) switches to Chromium and gets <code>font-display</code> support</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -144,6 +154,6 @@ This list is limited to stable releases, and does not include information about 
 
 ## Highlights
 
-* Microsoft’s adherence to FOUT. It’s the most reliable way to render web fonts without the perceived performance penalties and race conditions that come with FOIT so honestly, I admire this. They were first and they’ve stuck to their guns.
+* <del>Microsoft’s adherence to FOUT. It’s the most reliable way to render web fonts without the perceived performance penalties and race conditions that come with FOIT so honestly, I admire this. They were first and they’ve stuck to their guns.</del>
 * Opera has been the most volatile of the bunch, mostly because of the unfortunately timing of their rendering engine switch.
 * I was disappointed at how much influence WebKit/Safari’s choices had on other browsers. I know how much of a pain point the default FOIT behavior is for developers and so it’s been a little disheartening to read those early bug tracker discussions. I’m glad they’ve added a FOIT timeout but we need a cross-browser way to easily control FOIT and FOUT—we need wider support for the `font-display` descriptor.
