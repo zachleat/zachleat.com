@@ -6,6 +6,7 @@ tags:
   - font-loading
 ---
 <p class="sub"><em>May 9, 2019 updated with <code>font-display</code> support.</em></p>
+<p class="sub"><em>January 15, 2020 updated with Edge Chromium information.</em></p>
 
 <em>Prerequisite: not sure what FOUT or FOIT are? Read the <a href="/web/webfont-glossary/#foit">definitions on the Web Font Loading Glossary</a>.</em>
 
