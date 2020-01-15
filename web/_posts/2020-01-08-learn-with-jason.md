@@ -1,5 +1,5 @@
 ---
-title: 'Let’s Learn Eleventy!—Learn With Jason'
+title: Let’s Learn Eleventy!—Learn With Jason
 tags:
   - speaking
   - eleventy

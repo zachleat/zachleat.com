@@ -2,6 +2,9 @@
 title: A Love Letter to Filament Group
 imgOptions:
   duration: 30d
+postRank: 1
+tags:
+  - popular-posts
 ---
 It is with great sadness that I must announce that these next two weeks will be my last as a member of [{% assign imgObj = "filamentgroup" | avatarObject %}{% img imgObj, imgOptions %}Filament Group](https://www.filamentgroup.com/).
 
