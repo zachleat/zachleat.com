@@ -101,7 +101,7 @@ The nice thing here is that you customize what you want on the first stage and w
     - While this is one of the heftier parts of our font, it *does* affect text movement if it’s not available up front. You may choose to defer this to the second stage—that’s fine! Just be aware of how much your text moves when it lazy loads in.
 - Subset to Latin Character Set: 221 characters of the total 686 available to us. This seems to be a standard unicode range across many of Google’s Fonts—so this range was borrowed directly from the Google Fonts CSS 😎.
 
-Here’s the `pyfsubset` command (from [fonttools](https://github.com/fonttools/fonttools)) I used to generate first stage font files:
+Here’s the `pyftsubset` command (from [fonttools](https://github.com/fonttools/fonttools)) I used to generate first stage font files:
 
 ```bash
 pyftsubset "Rubik-Bold.ttf" --output-file="Rubik-Bold-kern-latin.woff2" --flavor=woff2 --layout-features=ccmp,locl,mark,mkmk,kern --no-hinting --desubroutinize --unicodes=U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
