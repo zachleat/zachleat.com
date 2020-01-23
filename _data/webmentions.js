@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs-extra');
 const fetch = require('node-fetch');
 const { DateTime } = require("luxon");
 const unionBy = require('lodash/unionBy');
@@ -31,9 +31,9 @@ async function fetchWebmentions(since) {
   // TODO move to use since_id instead of since date
   let url = `${API_ORIGIN}?domain=${domain}&token=${TOKEN}`;
   if (since) {
-    url += `&per-page=999&&since=${since}`;
+    url += `&per-page=9999&&since=${since}`;
   } else {
-    url += `&per-page=999`;
+    url += `&per-page=9999`;
   }
   console.log( `Fetching webmentions from: ${url}` );
 
@@ -75,11 +75,12 @@ function webmentionsEnabled() {
 }
 
 // get cache contents from json file
-function readFromCache() {
+async function readFromCache() {
   const filePath = `${CACHE_DIR}/webmentions.json`;
+  let cacheExists = await fs.exists(filePath);
 
-  if (fs.existsSync(filePath)) {
-    const cacheFile = fs.readFileSync(filePath);
+  if (cacheExists) {
+    const cacheFile = await fs.readFile(filePath);
     return JSON.parse(cacheFile);
   }
 
@@ -90,7 +91,7 @@ function readFromCache() {
 }
 
 module.exports = async function() {
-  const cache = readFromCache();
+  const cache = await readFromCache();
   const { lastFetched } = cache;
 
   if (webmentionsEnabled() || !lastFetched) {

@@ -9,6 +9,9 @@
     "fontfaceonload": "^1.0.2",
     "infinity-burger": "^3.0.0"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "private": true,
   "devDependencies": {
     "@11ty/eleventy": "file:../eleventy",
@@ -19,6 +22,7 @@
     "cheerio": "^1.0.0-rc.2",
     "debug": "^3.1.0",
     "dotenv": "^6.2.0",
+    "fs-extra": "^8.1.0",
     "gray-matter": "^3.1.1",
     "grunt": "~1.0.1",
     "grunt-cli": "~1.2.0",
