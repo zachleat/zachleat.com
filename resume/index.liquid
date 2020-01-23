@@ -3,6 +3,12 @@ layout: layouts/page.liquid
 title: Résumé
 hidePopularInSidebar: true
 stylesheetFull: /resume/index.css
+twitterAccounts:
+ - zachleat
+ - eleven_ty
+ - nebraskajs
+ - nejsconf
+ - fontspeed
 imgOptions:
   duration: 1w
 ---
@@ -104,17 +110,12 @@ imgOptions:
         <strong>Community</strong>
         <ul class="resume-desc">
           <li>Implemented the current Font Loading strategies for redesigns of <a href="/web/css-tricks-web-fonts/">{% assign imgObj = "css" | avatarObject %}{% img imgObj, imgOptions %}CSS Tricks</a> and <a href="/web/the-compromise/">{% assign imgObj = "smashingmag" | avatarObject %}{% img imgObj, imgOptions %}Smashing Magazine</a>.</li>
-          <li>Managing four Web Development Twitter accounts:
+          <li>Managing {{ twitterAccounts | size | numberString }} Web Development Twitter accounts:
             <ul>
-              <li><a href="https://twitter.com/zachleat" class="resume-nbsp">{% assign imgObj = "zachleat" | avatarObject %}{% img imgObj, imgOptions %}@zachleat</a> <span class="resume-subnote">({{ twitter.zachleat | renderNumber }} followers)</span></li>
-
-              <li><a href="https://twitter.com/eleven_ty" class="resume-nbsp">{% assign imgObj = "eleven_ty" | avatarObject %}{% img imgObj, imgOptions %}@eleven_ty</a> <span class="resume-subnote">({{ twitter.eleven_ty | renderNumber }} followers)</span></li>
-
-              <li><a href="https://twitter.com/nebraskajs" class="resume-nbsp">{% assign imgObj = "nebraskajs" | avatarObject %}{% img imgObj, imgOptions %}@nebraskajs</a> <span class="resume-subnote">({{ twitter.nebraskajs | renderNumber }} followers)</span></li>
-
-              <li><a href="https://twitter.com/nejsconf" class="resume-nbsp">{% assign imgObj = "nejsconf" | avatarObject %}{% img imgObj, imgOptions %}@nejsconf</a> <span class="resume-subnote">({{ twitter.nejsconf | renderNumber }} followers)</span></li>
-
-              <li><a href="https://twitter.com/fontspeed" class="resume-nbsp">{% assign imgObj = "fontspeed" | avatarObject %}{% img imgObj, imgOptions %}@fontspeed</a> <span class="resume-subnote">({{ twitter.fontspeed | renderNumber }} followers)</span></li>
+              {%- for account in twitterAccounts %}
+              {%- assign followersObj = twitter[account] %}
+              <li><a href="https://twitter.com/{{ account }}" class="resume-nbsp">{% assign imgObj = account | avatarObject %}{% img imgObj, imgOptions %}@{{ account }}</a> <span class="resume-subnote">({{ followersObj | renderNumber }} followers)</span></li>
+              {%- endfor %}
             </ul>
           </li>
         </ul>
