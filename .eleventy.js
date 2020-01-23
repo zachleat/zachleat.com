@@ -11,6 +11,10 @@ const Natural = require('natural');
 const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
 const randomCase = require('random-case');
 
+function hasEleventyFeature(featureName) {
+	return process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf(featureName) > -1;
+}
+
 module.exports = function(eleventyConfig) {
 	eleventyConfig.setUseGitIgnore(false);
 	eleventyConfig.setDataDeepMerge(true);
@@ -33,17 +37,21 @@ module.exports = function(eleventyConfig) {
 	/* COPY */
 	eleventyConfig
 		.addPassthroughCopy(".htaccess")
-		.addPassthroughCopy("robots.txt")
-		.addPassthroughCopy("humans.txt")
-		.addPassthroughCopy("keybase.txt")
-		.addPassthroughCopy("demos/")
 		.addPassthroughCopy("img/")
-		.addPassthroughCopy("presentations/")
 		.addPassthroughCopy("resume/")
 		.addPassthroughCopy("web/css/fonts")
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("web/dist");
+
+	if(hasEleventyFeature("fullcopy")) {
+		eleventyConfig
+			.addPassthroughCopy("robots.txt")
+			.addPassthroughCopy("humans.txt")
+			.addPassthroughCopy("keybase.txt")
+			.addPassthroughCopy("demos/")
+			.addPassthroughCopy("presentations/");
+	}
 
 	/* LAYOUTS */
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
@@ -274,13 +282,15 @@ module.exports = function(eleventyConfig) {
 				if(!url) {
 					return true;
 				}
+				if(!allowedTypes.includes(entry['wm-property'])) {
+					return false;
+				}
 
 				let hashSplit = entry['wm-target'].split("#");
 				let queryparamSplit = hashSplit[0].split("?");
 				let target = queryparamSplit[0];
 				return target === url;
-			})
-			.filter(entry => allowedTypes.includes(entry['wm-property']));
+			});
 	});
 
 

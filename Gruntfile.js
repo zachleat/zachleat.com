@@ -219,7 +219,7 @@ module.exports = function(grunt) {
 				}
 			},
 			eleventyProduction: {
-				command: 'ELEVENTY_FEATURES=webmentions,counts npx @11ty/eleventy --quiet',
+				command: 'ELEVENTY_FEATURES=webmentions,counts,fullcopy npx @11ty/eleventy --quiet',
 				options: {
 					execOptions: {}
 				}
