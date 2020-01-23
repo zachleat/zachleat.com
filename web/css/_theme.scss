@@ -564,7 +564,7 @@ pre {
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
 }
-pre:not([class*="language-"]) {
+pre {
 	padding: .75rem;
 }
 pre > code {

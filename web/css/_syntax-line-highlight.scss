@@ -35,6 +35,8 @@
 /* Additions */
 .highlight-line {
 	padding: 0.125em .75rem; /* 2px 12px /16 */
+  margin-left: -.75rem;
+  margin-right: -.75rem;
 }
 .highlight-line:not(:empty):not(:last-child) {
 	border-bottom: 1px dashed #373737;
