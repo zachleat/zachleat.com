@@ -12,6 +12,7 @@ const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, 
 const randomCase = require('random-case');
 
 module.exports = function(eleventyConfig) {
+	eleventyConfig.setUseGitIgnore(false);
 	eleventyConfig.setDataDeepMerge(true);
 	eleventyConfig.setQuietMode(true);
 
@@ -439,7 +440,6 @@ module.exports = function(eleventyConfig) {
 			"njk",
 			"html"
 		],
-		"passthroughFileCopy": true,
 		"dataTemplateEngine": false,
 		"htmlTemplateEngine": "liquid",
 		"markdownTemplateEngine": "liquid"

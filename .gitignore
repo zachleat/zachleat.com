@@ -6,6 +6,6 @@ _site
 _cache
 .cache
 web/dist
-web/_drafts
-web/_includes/*.css
-web/_includes/*.js
+web/drafts
+_includes/*.css
+_includes/*.js

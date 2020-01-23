@@ -3,3 +3,9 @@ demos/
 grunt-tasks/
 web/dist/**/*.html
 README.md
+package-lock.json
+node_modules
+.env
+_cache
+.cache
+web/dist
