@@ -15,7 +15,7 @@
 	{%- if view == 'project' -%}
 		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}
 	{%- else -%}
-		{{ post.data.title }}
+		{%- if post.data.titleHtml %}{{ post.data.titleHtml }}{% else if post.data.renderData.title %}{{ post.data.renderData.title }}{% else %}{{ post.data.title }}{% endif -%}
 	{%- endif -%}
 	</a>
 

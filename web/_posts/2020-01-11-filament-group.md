@@ -1,12 +1,11 @@
 ---
 title: A Love Letter to Filament Group
-imgOptions:
-  duration: 30d
+titleHtml: 'A Love Letter to <img src="/img/1cd88f61.png" alt="filamentgroup’s Avatar" class="z-avatar z-avatar-eq">Filament Group'
 postRank: 1
 tags:
   - popular-posts
 ---
-It is with great sadness that I must announce that these next two weeks will be my last as a member of [{% assign imgObj = "filamentgroup" | avatarObject %}{% img imgObj, imgOptions %}Filament Group](https://www.filamentgroup.com/).
+It is with great sadness that I must announce that these next two weeks will be my last as a member of [{% assign imgObj = "filamentgroup" | avatarObject %}{% img imgObj, defaultImageOptions %}Filament Group](https://www.filamentgroup.com/).
 
 Filament Group, without a doubt, changed my life in the best way and I am so very grateful to have been a part of it for seven and a half years.
 
@@ -27,7 +26,7 @@ Consider how productive one can be when working with people that truly understan
 
 If you ever need their services, I highly recommend that you [get in touch with their amazingly talented team](https://www.filamentgroup.com/workwithus/).
 
-<span class="nowrap">[{% assign imgObj = "toddmparker" | avatarObject %}{% img imgObj, imgOptions %}Todd](https://twitter.com/toddmparker)</span>, <span class="nowrap">[{% assign imgObj = "pattytoland" | avatarObject %}{% img imgObj, imgOptions %}Patty](https://twitter.com/pattytoland)</span>, <span class="nowrap">[{% assign imgObj = "maggiewachs" | avatarObject %}{% img imgObj, imgOptions %}Maggie](https://twitter.com/maggiewachs)</span>, <span class="nowrap">[{% assign imgObj = "scottjehl" | avatarObject %}{% img imgObj, imgOptions %}Scott](https://twitter.com/scottjehl)</span>, and emeritus <span class="nowrap">[{% assign imgObj = "johnbender" | avatarObject %}{% img imgObj, imgOptions %}John](https://twitter.com/johnbender/)</span>, <span class="nowrap">[{% assign imgObj = "jefflembeck" | avatarObject %}{% img imgObj, imgOptions %}Jeff](https://twitter.com/jefflembeck/)</span>, <span class="nowrap">[{% assign imgObj = "wilto" | avatarObject %}{% img imgObj, imgOptions %}Mat](https://twitter.com/wilto)</span> and [{% assign imgObj = "Aetherpoint" | avatarObject %}{% img imgObj, imgOptions %}Andrew](https://twitter.com/Aetherpoint): I have learned so much from you all. Your relentless work ethic and incredibly high standard of quality is nothing short of inspiring. It truly has been a pleasure.
+<span class="nowrap">[{% assign imgObj = "toddmparker" | avatarObject %}{% img imgObj, defaultImageOptions %}Todd](https://twitter.com/toddmparker)</span>, <span class="nowrap">[{% assign imgObj = "pattytoland" | avatarObject %}{% img imgObj, defaultImageOptions %}Patty](https://twitter.com/pattytoland)</span>, <span class="nowrap">[{% assign imgObj = "maggiewachs" | avatarObject %}{% img imgObj, defaultImageOptions %}Maggie](https://twitter.com/maggiewachs)</span>, <span class="nowrap">[{% assign imgObj = "scottjehl" | avatarObject %}{% img imgObj, defaultImageOptions %}Scott](https://twitter.com/scottjehl)</span>, and emeritus <span class="nowrap">[{% assign imgObj = "johnbender" | avatarObject %}{% img imgObj, defaultImageOptions %}John](https://twitter.com/johnbender/)</span>, <span class="nowrap">[{% assign imgObj = "jefflembeck" | avatarObject %}{% img imgObj, defaultImageOptions %}Jeff](https://twitter.com/jefflembeck/)</span>, <span class="nowrap">[{% assign imgObj = "wilto" | avatarObject %}{% img imgObj, defaultImageOptions %}Mat](https://twitter.com/wilto)</span> and [{% assign imgObj = "Aetherpoint" | avatarObject %}{% img imgObj, defaultImageOptions %}Andrew](https://twitter.com/Aetherpoint): I have learned so much from you all. Your relentless work ethic and incredibly high standard of quality is nothing short of inspiring. It truly has been a pleasure.
 
 <a href="https://www.filamentgroup.com/"><img src="/img/fg-logo.svg" alt="Filament Group" style="max-width: 22em"></a>
 

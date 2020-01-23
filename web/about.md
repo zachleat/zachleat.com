@@ -26,7 +26,7 @@ Here to fetch my bio? Let’s appeal to your base instinct to copy and paste:
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="Plaintext">
 
 ``` text
-Zach is a Web Craftsperson with the award winning Filament Group. He’s currently fixated on web fonts and static site generators. His public speaking résumé includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and The White House. He also helps herd NEJS CONF and the NebraskaJS meetup.
+Zach is a Builder for the web with Netlify. He’s currently fixated on web fonts and static site generators. His public speaking résumé includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and The White House. He is an emeritus of Filament Group, NEJS CONF, and still chips in now and again with NebraskaJS.
 ```
 
 </div>
@@ -34,7 +34,7 @@ Zach is a Web Craftsperson with the award winning Filament Group. He’s current
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="HTML">
 
 ``` html
-Zach is a Web Craftsperson with the award winning <a href="http://www.filamentgroup.com/">Filament Group</a>. He’s currently fixated on <a href="https://www.zachleat.com/web/fonts/">web fonts</a> and <a href="https://www.zachleat.com/web/introducing-eleventy/">static site generators</a>. His <a href="https://www.zachleat.com/web/speaking/">public speaking résumé</a> includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and <a href="https://www.zachleat.com/web/whitehouse/">The White House</a>. He also helps herd <a href="http://nejsconf.com/">NEJS CONF</a> and the <a href="http://nebraskajs.com">NebraskaJS</a> meetup.
+{% include bio-text-medium.html %}
 ```
 
 </div>
@@ -42,7 +42,7 @@ Zach is a Web Craftsperson with the award winning <a href="http://www.filamentgr
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="Markdown">
 
 ``` text
-Zach is a Web Craftsperson with the award winning [Filament Group](http://www.filamentgroup.com/). He’s currently fixated on [web fonts](https://www.zachleat.com/web/fonts/) and [static site generators](https://www.zachleat.com/web/introducing-eleventy/). His [public speaking résumé](https://www.zachleat.com/web/speaking/) includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/). He also helps herd [NEJS CONF](http://nejsconf.com/) and the [NebraskaJS](http://nebraskajs.com) meetup.
+Zach is a builder for the web with [Netlify](https://www.netlify.com/). He’s currently fixated on [web fonts](/web/fonts/) and [static site generators](/web/introducing-eleventy/). His [public speaking résumé](/web/speaking/) includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and [The White House](/web/whitehouse/). He is an emeritus of [Filament Group](https://www.filamentgroup.com/), [NEJS CONF](https://nejsconf.com/), and still chips in now and then with [NebraskaJS](https://nebraskajs.com).
 ```
 
 </div>

@@ -5,7 +5,7 @@ tmpl: page
 ---
 <article class="h-entry">
 	<div class="content-grid-sibling">
-		<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
+		<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if titleHtml %}{{ titleHtml }}{% else if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
 		<div class="sub p-description">
 			<em class="date">{{ page.date | readableDate }}</em>
 {% if postRank %}

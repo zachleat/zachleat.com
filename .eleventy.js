@@ -178,6 +178,10 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidFilter("longWordWrap", str => {
+		if( !str || typeof str === "string" && str.indexOf("<") > -1 && str.indexOf(">") > str.indexOf("<")) {
+			return str;
+		}
+
 		let words = {
 			"domcontentloaded": true,
 			"getelementsbytagname": true
