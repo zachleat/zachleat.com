@@ -1,6 +1,7 @@
 ---
 layout: default
 tmpl: page
+disableComments: true
 ---
 <main>
 	<article class="h-entry">
@@ -17,8 +18,8 @@ tmpl: page
 		{% include about.html %}
 	</article>
 	{% endif %}
-	{% if showComments %}
+	{% unless disableComments %}
 		{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
 		{% include webmentionlist, absoluteUrl: absoluteUrl %}
-	{% endif %}
+	{% endunless %}
 </main>
