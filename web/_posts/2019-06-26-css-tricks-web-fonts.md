@@ -5,7 +5,7 @@ tags:
   - font-loading
   - research
   - popular-posts
-postRank: 5
+postRank: 6
 ---
 <style>
 .sm-img {

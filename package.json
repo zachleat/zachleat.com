@@ -51,7 +51,7 @@
     "time-grunt": "^1.4.0"
   },
   "scripts": {
-    "bestof": "grunt bestof && grunt",
+    "popular": "./refresh-populars.sh",
     "default": "grunt",
     "deploy": "./refresh-populars.sh && grunt deploy",
     "11ty": "npx @11ty/eleventy --quiet",
