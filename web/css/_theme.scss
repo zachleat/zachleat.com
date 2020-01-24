@@ -259,6 +259,9 @@ h5,
 			padding: 0;
 			grid-template-columns: 1fr minmax(auto, 31em) 1fr;
 			grid-column-gap: 0;
+			max-width: 56.52173913043em; /* 1300px /23 */
+			margin-left: auto;
+			margin-right: auto;
 		}
 		.tmpl-page .content-grid > * {
 			grid-column-start: 2;
@@ -269,6 +272,10 @@ h5,
 		.tmpl-page .content-grid > pre:not(.fullwidthexempt) {
 			grid-column-start: 1;
 			grid-column-end: 4;
+		}
+		.tmpl-page .content-grid > .fullwidth img {
+			width: 100%;
+			max-width: none;
 		}
 	}
 
