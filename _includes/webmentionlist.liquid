@@ -1,7 +1,7 @@
 <div class="webmentions content-grid-sibling" id="webmentions">
-  {%- assign reposts = webmentions.children | webmentionsForUrl: absoluteUrl, 'repost-of' -%}
+  {%- assign reposts = webmentions | webmentionsForUrl: absoluteUrl, 'repost-of' -%}
   {%- assign repostsSize = reposts | size -%}
-  {%- assign likes = webmentions.children | webmentionsForUrl: absoluteUrl, 'like-of' -%}
+  {%- assign likes = webmentions | webmentionsForUrl: absoluteUrl, 'like-of' -%}
   {%- assign likesSize = likes | size -%}
   {% if repostsSize > 0 %}
   <div class="webmentions__facepile">
@@ -33,7 +33,7 @@
   </div>
   {% endif %}
 
-  {%- assign bookmarks = webmentions.children | webmentionsForUrl: absoluteUrl, 'bookmark-of' -%}
+  {%- assign bookmarks = webmentions | webmentionsForUrl: absoluteUrl, 'bookmark-of' -%}
   {%- assign bookmarksSize = bookmarks | size -%}
   {% if bookmarksSize > 0 %}
   <details>
@@ -46,7 +46,7 @@
   </details>
   {% endif %}
 
-  {%- assign replies = webmentions.children | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
+  {%- assign replies = webmentions | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
   {% assign disqusCommentSize = 0 %}
   {% if disqus %}{% assign disqusCommentSize = disqus.commentCount %}{% endif %}
   {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}
@@ -67,7 +67,7 @@
   </details>
   {% endif %}
 
-  {%- assign mentions = webmentions.children | webmentionsForUrl: absoluteUrl, 'mention-of' -%}
+  {%- assign mentions = webmentions | webmentionsForUrl: absoluteUrl, 'mention-of' -%}
   {%- assign mentionsSize = mentions | size -%}
   <details class="{% if mentionsSize == 0 %}static-comments-empty{% endif %}">
     {% if mentionsSize > 0 -%}

@@ -1,9 +1,9 @@
 const fs = require('fs-extra');
 const fetch = require('node-fetch');
 const { DateTime } = require("luxon");
-const unionBy = require('lodash/unionBy');
+const uniqBy = require('lodash/uniqBy');
 const domain = require("./site.json").domain;
-
+const getBaseUrl = require("../_includes/getBaseUrl")
 // Load .env variables with dotenv
 require('dotenv').config();
 
@@ -49,11 +49,6 @@ async function fetchWebmentions(since) {
   return null;
 }
 
-// Merge fresh webmentions with cached entries, unique per id
-function mergeWebmentions(a, b) {
-  return unionBy(a.children, b.children, 'wm-id');
-}
-
 // save combined webmentions in cache file
 function writeToCache(data) {
   const filePath = `${CACHE_DIR}/webmentions.json`;
@@ -86,23 +81,43 @@ async function readFromCache() {
 
   return {
     lastFetched: null,
-    children: []
+    mentions: {}
   };
 }
 
 module.exports = async function() {
   const cache = await readFromCache();
-  const { lastFetched } = cache;
+  const { lastFetched, mentions } = cache;
 
   if (webmentionsEnabled() || !lastFetched) {
     const feed = await fetchWebmentions(lastFetched);
 
     if (feed) {
+      for(let webmention of feed.children) {
+        let url = getBaseUrl(webmention["wm-target"]);
+        if(!mentions[url]) {
+          mentions[url] = [];
+        }
+
+        mentions[url].push(webmention);
+      }
+
+      let totalCount = 0;
+      for(let url in mentions) {
+        mentions[url] = uniqBy(mentions[url], function(entry) {
+          return entry["wm-id"];
+        });
+
+        totalCount += mentions[url].length;
+        mentions[url].sort((a, b) => {
+          return DateTime.fromISO(b.published || b["wm-received"], { zone: "utc" }).toJSDate().getTime() - DateTime.fromISO(a.published || a["wm-received"], { zone: "utc" }).toJSDate().getTime();
+        });
+      }
+
       const webmentions = {
         lastFetched: new Date().toISOString(),
-        children: mergeWebmentions(cache, feed).sort(function(a, b) {
-          return DateTime.fromISO(b.published || b['wm-received'], { zone: 'utc' }).toJSDate().getTime() - DateTime.fromISO(a.published || a['wm-received'], { zone: 'utc' }).toJSDate().getTime();
-        })
+        count: totalCount,
+        mentions: mentions
       };
 
       writeToCache(webmentions);
@@ -110,6 +125,6 @@ module.exports = async function() {
     }
   }
 
-  console.log(`${cache.children.length} webmentions loaded from cache`);
+  console.log(`${cache.count} webmentions loaded from cache`);
   return cache;
 }

@@ -21,7 +21,7 @@
 
 	<span class="tags">
 		{%- capture absoluteUrl -%}{{ post.url | url | absoluteUrl }}{%- endcapture -%}
-		{%- assign webmentionsCount = webmentions.children | webmentionsForUrl: absoluteUrl | size -%}
+		{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
 		{%- assign activityCount = webmentionsCount -%}
 		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
 		{%- if activityCount > 0 %}<span class="tag tag-cased" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</span>{% endif -%}

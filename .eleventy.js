@@ -6,6 +6,7 @@ const pluginImg = require("@11ty/eleventy-plugin-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const siteData = require("./_data/site.json");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const getBaseUrl = require("./_includes/getBaseUrl");
 
 const Natural = require('natural');
 const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
@@ -277,19 +278,16 @@ module.exports = function(eleventyConfig) {
 			allowedTypes = [ allowedTypes ];
 		}
 
-		return webmentions
+		if(!url || !webmentions.mentions || !webmentions.mentions[url]) {
+			return [];
+		}
+
+		return webmentions.mentions[url]
 			.filter(entry => {
-				if(!url) {
-					return true;
-				}
 				if(!allowedTypes.includes(entry['wm-property'])) {
 					return false;
 				}
-
-				let hashSplit = entry['wm-target'].split("#");
-				let queryparamSplit = hashSplit[0].split("?");
-				let target = queryparamSplit[0];
-				return target === url;
+				return getBaseUrl(entry['wm-target']) === url;
 			});
 	});
 
