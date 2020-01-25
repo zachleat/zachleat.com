@@ -121,10 +121,11 @@ module.exports = async function() {
       };
 
       writeToCache(webmentions);
+      console.log( `Wrote ${webmentions.count} webmentions to cache.` );
       return webmentions;
     }
   }
 
-  console.log(`${cache.count} webmentions loaded from cache`);
+  console.log(`Loaded ${cache.count} webmentions from cache.`);
   return cache;
 }
