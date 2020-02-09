@@ -3,7 +3,7 @@ title: A Love Letter to Filament Group
 titleHtml: A Love Letter to <img src="/img/1cd88f61.png" alt="filamentgroup’s Avatar" class="z-avatar z-avatar-eq">Filament Group
 tags:
   - popular-posts
-postRank: 5
+postRank: 8
 ---
 It is with great sadness that I must announce that these next two weeks will be my last as a member of [{% assign imgObj = "filamentgroup" | avatarObject %}{% img imgObj, defaultImageOptions %}Filament Group](https://www.filamentgroup.com/).
 
