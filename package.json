@@ -10,7 +10,7 @@
     "infinity-burger": "^3.0.0"
   },
   "engines": {
-    "node": ">=10"
+    "node": "10"
   },
   "private": true,
   "devDependencies": {
@@ -25,7 +25,7 @@
     "fs-extra": "^8.1.0",
     "gray-matter": "^3.1.1",
     "grunt": "~1.0.1",
-    "grunt-cli": "~1.2.0",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-compress": "~1.4.3",
     "grunt-contrib-concat": "~1.0.1",
