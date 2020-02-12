@@ -41,3 +41,20 @@ dd ul.via {
 .content-main .list-inline:not(.posts) {
 	padding-left: 0; /* Override */
 }
+
+/* Next/prev */
+dl.nextprev {
+	display: flex;
+	flex-wrap: wrap;
+}
+dl.nextprev dt {
+	text-transform: uppercase;
+	font-size: 0.8125em; /* 13px /16 */
+	flex-basis: 6em;
+	margin-right: 1em;
+}
+dl.nextprev dd {
+	flex-basis: 23em;
+	flex-grow: 999;
+	margin-bottom: 0.625em; /* 10px /16 */
+}
