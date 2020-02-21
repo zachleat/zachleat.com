@@ -14,6 +14,13 @@ Everyone wants it, but it sure seems like no one is actively working on it. But 
 Here are the earliest mentions of Container Queries that the community was able to dig up (in reverse chronological order):
 
 <dl class="dl-inline">
+    <dt>2014 December 8</dt>
+    <dd>
+        <a href="https://github.com/eqcss/eqcss">{% assign imgObj = "innovati" | avatarObject %}{% img imgObj, imgOptions %}Tommy Hodgins’ <code>eqcss</code></a>
+        <ul class="via">
+            <li><em>via <a href="https://twitter.com/equinusocio/status/1230774576453341187">{% assign imgObj = "equinusocio" | avatarObject %}{% img imgObj, imgOptions %}Mattia Astorino</a></em></li>
+        </ul>
+    </dd>
     <dt>2013 April 1</dt>
     <dd>
         <a href="https://ianstormtaylor.com/media-queries-are-a-hack/">{% assign imgObj = "ianstormtaylor" | avatarObject %}{% img imgObj, imgOptions %}Ian Storm Taylor’s <em>Media Queries are a Hack</em> blog post</a>
