@@ -100,9 +100,9 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLiquidFilter("avatarObject", function(username) {
 		return {
 			src: `https://twitter.com/${username}/profile_image?size=bigger`,
-		  alt: `${username}’s Avatar`,
-		  class: "z-avatar",
-		  loading: "lazy"
+			alt: `${username}’s Avatar`,
+			class: "z-avatar",
+			loading: "lazy"
 		}
 	});
 
