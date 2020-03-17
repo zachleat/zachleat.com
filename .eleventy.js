@@ -39,7 +39,9 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy(".htaccess")
 		.addPassthroughCopy("img/")
-		.addPassthroughCopy("resume/")
+		.addPassthroughCopy("resume/.htaccess")
+		.addPassthroughCopy("resume/index.css")
+		.addPassthroughCopy("resume/resume.pdf")
 		.addPassthroughCopy("web/css/fonts")
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")

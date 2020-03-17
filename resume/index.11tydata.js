@@ -2,8 +2,6 @@ const fetch = require("node-fetch");
 const chalk = require("chalk");
 
 module.exports = async function() {
-	console.log( "Fetching new resume counts…" );
-
 	if(!process.env.ELEVENTY_FEATURES || process.env.ELEVENTY_FEATURES.split(",").indexOf("counts") === -1) {
 		console.log( chalk.yellow("WARNING: Using terrible data for resume counts because you need to implement Eleventy caching at the data layer.") );
 		return {
@@ -26,6 +24,8 @@ module.exports = async function() {
 			}
 		};
 	}
+
+	console.log( "Fetching new resume counts…" );
 
 	// https://developer.github.com/v3/repos/#get
 	try {
