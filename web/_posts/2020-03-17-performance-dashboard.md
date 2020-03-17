@@ -1,5 +1,5 @@
 ---
-title: Eleventy’s New Performance Dashboard
+title: Eleventy’s New Performance Leaderboard
 tags: eleventy
 ---
 Last week, the [AMP project](https://amp.dev/) and Eleventy crossed paths when AMP released an [official AMP plugin for Eleventy](https://blog.amp.dev/2020/03/11/easier-amp-development-with-the-new-amp-optimizer/).
