@@ -15,7 +15,7 @@
   "private": true,
   "devDependencies": {
     "@11ty/eleventy": "file:../eleventy",
-    "@11ty/eleventy-plugin-img": "file:../eleventy-plugin-img",
+    "@11ty/eleventy-plugin-img": "1.0.0-beta.3",
     "@11ty/eleventy-plugin-rss": "^1.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "chalk": "^2.4.2",
