@@ -35,4 +35,5 @@ Eleventy doesn’t do any special optimizations out of the box to make your site
 Keep it speedy, y’all. 🏆🏆🏆
 
 ---
-Update, I’ve pulled the leaderboard code out from the 11ty website and created the [`performance-leaderboard` npm package](https://github.com/zachleat/performance-leaderboard). Try it out! Build your own performance leaderboard!
+
+**Update:** I’ve pulled the leaderboard code out from the 11ty website and created the [`performance-leaderboard` npm package](https://github.com/zachleat/performance-leaderboard). Try it out! Build your own performance leaderboard!
