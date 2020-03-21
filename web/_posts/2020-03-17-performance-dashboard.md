@@ -33,3 +33,6 @@ After launch I’ve already received multiple reports of people updating their s
 Eleventy doesn’t do any special optimizations out of the box to make your sites fast. It doesn’t protect you from making a slow site. But importantly it also doesn’t add anything extra either. This sort of developer empowerment over the final product has seemed to attract an amazing group of performance oriented developers using the project and I am so grateful to every one of you.
 
 Keep it speedy, y’all. 🏆🏆🏆
+
+---
+Update, I’ve pulled the leaderboard code out from the 11ty website and created the [`performance-leaderboard` npm package](https://github.com/zachleat/performance-leaderboard). Try it out! Build your own performance leaderboard!
