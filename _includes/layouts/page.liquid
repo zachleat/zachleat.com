@@ -3,23 +3,21 @@ layout: default
 tmpl: page
 disableComments: true
 ---
-<main>
-	<article class="h-entry">
-		<div class="content-grid-sibling">
-			<h1 class="p-name primary-title{% if removeTitle %} sr-only{% endif %}{% if smalltitle %} primary-title-smalltitle{% endif %}{% if primaryTitleExemptWidth %} primary-title-exempt{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
-		</div>
-		<div class="content-grid e-content">
-			{{ content }}
-		</div>
-	</article>
+<article class="h-entry">
+	<div class="content-grid-sibling">
+		<h1 class="p-name primary-title{% if removeTitle %} sr-only{% endif %}{% if smalltitle %} primary-title-smalltitle{% endif %}{% if primaryTitleExemptWidth %} primary-title-exempt{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
+	</div>
+	<div class="content-grid e-content">
+		{{ content }}
+	</div>
+</article>
 
-	{% if showAbout %}
-	<article class="content-grid-sibling">
-		{% include about.html %}
-	</article>
-	{% endif %}
-	{% unless disableComments %}
-		{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
-		{% include webmentionlist, absoluteUrl: absoluteUrl %}
-	{% endunless %}
-</main>
+{% if showAbout %}
+<article class="content-grid-sibling">
+	{% include about.html %}
+</article>
+{% endif %}
+{% unless disableComments %}
+	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
+	{% include webmentionlist, absoluteUrl: absoluteUrl %}
+{% endunless %}
