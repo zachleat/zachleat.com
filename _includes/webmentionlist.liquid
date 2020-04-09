@@ -10,7 +10,7 @@
       {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {%- endif -%}
-      <img {% if webmention.author.photo != "" %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}" data-src="{{ webmention.author.photo }}"{% else %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}"{% endif %}" alt="{{ webmention.author.name }}" class="webmentions__face" />
+      <img {% if webmention.author.photo != "" %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}" data-src="{{ webmention.author.photo }}"{% else %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}"{% endif %}" alt="{{ webmention.author.name }}" class="webmentions__face" width="48" height="48" />
       {%- if webmention.url != "" -%}
       </a>
       {%- endif -%}
@@ -25,7 +25,7 @@
       {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {%- endif -%}
-      <img {% if webmention.author.photo != "" %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}" data-src="{{ webmention.author.photo }}"{% else %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}"{% endif %}" alt="{{ webmention.author.name }}" class="webmentions__face" />
+      <img {% if webmention.author.photo != "" %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}" data-src="{{ webmention.author.photo }}"{% else %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}"{% endif %}" alt="{{ webmention.author.name }}" class="webmentions__face" width="48" height="48" />
       {%- if webmention.url != "" -%}
       </a>
       {%- endif -%}
