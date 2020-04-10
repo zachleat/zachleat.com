@@ -2,6 +2,18 @@
 	<div class="footer">
 		Built with <a href="https://11ty.io/">Eleventy</a> · <a href="/web/style-guide/">Style Guide</a> · <a href="/web/license/">MIT license</a> · <a href="https://github.com/zachleat/zachleat.com/tree/master/{{ page.inputPath }}">Edit this page on GitHub</a> · <a href="https://twitter.com/search?f=tweets&src=typd&q=zachleat.com{{ page.url | url_encode }}">Discuss on Twitter</a>
 
+		<form class="toggle-features-form">
+			<button type="button" aria-pressed="true" class="toggle toggle-css">
+				<span class="toggle-control"></span>
+				<span class="toggle-text">CSS</span>
+			</button>
+
+			<button type="button" aria-pressed="true" class="toggle toggle-webfonts">
+				<span class="toggle-control"></span>
+				<span class="toggle-text">Web Fonts</span>
+			</button>
+		</form>
+{% comment %}
 		<form id="fontloademu" class="fontloademu" style="display: none">
 			<fieldset>
 				<legend>Web font loading emulator:</legend>
@@ -11,5 +23,6 @@
 				<label><input type="radio" name="fontloademu" value=""> Second stage, all web fonts finished.</label>
 			</fieldset>
 		</form>
+{% endcomment %}
 	</div>
 </footer>

@@ -1,28 +1,9 @@
 /* Icons */
 
-// Grunticon
-;(function( doc ) {
-	// IE8+
-	if( !( 'geolocation' in navigator ) ) {
-		return;
-	}
-
-	var distFolder = ZL.getDistFolder();
-	// grunticon.loadCSS( distFolder + "icons/icons.data.svg.css" ).onloadcssdefined(function() {
-	// 	// only switches the icons on after they’ve loaded
-	// 	doc.documentElement.className += " grunticon";
-	// });
-	grunticon( [ distFolder + "icons/icons.data.svg.css",
-		distFolder + "icons/icons.data.png.css",
-		distFolder + "icons/icons.fallback.css" ] );
-
-})( document );
-
-// Load Defer JS and CSS
+// Load Defer JS
 ;(function( doc ) {
 	// IE8+
 	if( 'querySelector' in doc ) {
-		grunticon.loadCSS( ZL.getDistFolder() + "defer.min.css" );
 		loadJS( ZL.getDistFolder() + "defer.min.js" );
 	}
 })( document );

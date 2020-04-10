@@ -1,0 +1,68 @@
+/* Toggle code */
+.toggle {
+  border: 0 solid transparent;
+  background-color: transparent;
+  -webkit-appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+  margin-right: 1em;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.toggle::-moz-focus-inner {
+  border: 0;
+}
+.toggle[disabled] {
+  cursor: not-allowed;
+  opacity: .35;
+}
+
+/* Focus style */
+@supports(box-shadow: none) {
+  .toggle:focus {
+    outline: none;
+  }
+  .toggle:focus .toggle-control {
+    box-shadow: 0 0 0 3px #89deff;
+  }
+}
+
+.toggle-text {
+  font-size: 1em; /* 16px /16 */
+  line-height: 150%;
+}
+.toggle-control {
+  display: inline-block;
+  position: relative;
+  margin-right: .5rem;
+  width: 2em; /* 32px /16 */
+  background-color: #ddd;
+}
+.toggle[aria-label] .toggle-control {
+  margin-right: 0;
+}
+.toggle-control,
+.toggle-control:after {
+  height: 1em; /* 16px /16 */
+  border-radius: 6.25em; /* 100px /16 */
+}
+.toggle-control:after {
+  transition: left .3s ease-in-out, background-color .15s ease-in-out;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 1em; /* 16px /16 */
+  background-color: #aaa;
+}
+.toggle[aria-pressed="true"] .toggle-control:after {
+  background-color: #2f987b;
+  left: 1em; /* 16px /16 */
+}
+
+/* Forms */
+.toggle-features-form {
+  margin-top: 1em;
+}

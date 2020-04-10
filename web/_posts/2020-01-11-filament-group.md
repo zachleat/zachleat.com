@@ -1,6 +1,6 @@
 ---
 title: A Love Letter to Filament Group
-titleHtml: A Love Letter to <img src="/img/1cd88f61.png" alt="filamentgroup’s Avatar" class="z-avatar z-avatar-eq">Filament Group
+titleHtml: A Love Letter to <img src="/img/1cd88f61.png" alt="filamentgroup’s Avatar" class="z-avatar z-avatar-eq" width="48" height="48">Filament Group
 tags:
   - popular-posts
 postRank: 10

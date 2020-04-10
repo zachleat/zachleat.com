@@ -18,38 +18,20 @@
 .social_icon {
 	display: inline-block;
 	font-family: sans-serif;
-	margin-left: 1em;
 	line-height: 32px;
+	opacity: .6;
+	margin-left: .2em;
 }
 .social > .social_icon:first-child {
 	margin-left: 0;
 }
-.grunticon .social_icon {
-	opacity: .6;
-	margin-left: .2em;
-}
-.grunticon .social_icon:hover {
+.social_icon:hover {
 	opacity: 1;
 }
-.grunticon .social a {
+.social a {
 	font-size: 1.6em;
 	text-decoration: none;
-	overflow: hidden;
-	width: 22px;
-	height: 22px;
-	background-size: contain;
-	background-position: 50% 50%;
 	vertical-align: top;
-	text-indent: 9999px;
-	white-space: nowrap;
-}
-.grunticon .social .icon-nebraskajs {
-	width: 42px;
-}
-.grunticon .social .icon-npm {
-	width: 36px;
-}
-.social a.icon-filamentgroup {
 	white-space: nowrap;
 }
 .social a:link,

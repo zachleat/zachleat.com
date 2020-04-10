@@ -39,10 +39,8 @@ module.exports = function(grunt) {
 					'node_modules/fontfaceonload/dist/fontfaceonload.js',
 					'<%= config.jsSrc %>fonts-polyfill-fontfaceonload.js',
 					'node_modules/fg-loadjs/loadJS.js',
-					// 'node_modules/grunt-grunticon/example/output/grunticon.loader.js',
 					'node_modules/fg-loadcss/src/loadCSS.js',
 					'node_modules/fg-loadcss/src/onloadCSS.js',
-					'<%= config.jsSrc %>grunticon-loader.js',
 					'<%= config.jsSrc %>timeago.js',
 					'<%= config.jsSrc %>async.js'
 					],
@@ -51,10 +49,11 @@ module.exports = function(grunt) {
 			jsDefer: {
 				src: [
 					'node_modules/infinity-burger/infinity-burger.js',
-					'<%= config.jsSrc %>fontloademu.js',
+					// '<%= config.jsSrc %>fontloademu.js',
 					'<%= config.jsSrc %>google-analytics.js',
 					// '<%= config.jsSrc %>twitter-api.js',
 					'<%= config.jsSrc %>lazyimg.js',
+					'<%= config.jsSrc %>toggle.js',
 					// '<%= config.jsSrc %>fouterswap.js',
 					],
 				dest: '<%= config.distFolder %>defer.js'
@@ -116,20 +115,6 @@ module.exports = function(grunt) {
 					'_includes/initial.css': ['<%= config.distFolder %>initial.css'],
 					'_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
 					'_includes/initial.js': ['<%= config.distFolder %>initial.js']
-				}
-			}
-		},
-		grunticon: {
-			icons: {
-				files: [{
-					expand: true,
-					cwd: "<%= config.iconsSrc %>",
-					src: [ "*.svg" ],
-					dest: "<%= config.distFolder %>icons/"
-				}],
-				options: {
-					cssprefix: '.icon-',
-					customselectors: {}
 				}
 			}
 		},
@@ -242,10 +227,6 @@ module.exports = function(grunt) {
 				files: ['<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
 				tasks: ['assets', 'content']
 			},
-			grunticon: {
-				files: ['<%= config.iconsSrc %>**/*'],
-				tasks: ['grunticon', 'content']
-			},
 			content: {
 				files: [
 					'**/*.liquid',
@@ -263,15 +244,14 @@ module.exports = function(grunt) {
 
 	// Default task.
 	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'concat', 'uglify', 'cssmin']);
-	grunt.registerTask('images', ['grunticon']);
 
 	grunt.registerTask('content', ['copy:includes', 'shell:eleventy']);
 	grunt.registerTask('content-production', ['copy:includes', 'shell:eleventyProduction']);
 
-	grunt.registerTask('default', ['clean', 'assets', 'images', 'content']);
+	grunt.registerTask('default', ['clean', 'assets', 'content']);
 	grunt.registerTask('separate', ['clean', 'assets', 'copy:includes']);
 
 	// Upload to Production
-	grunt.registerTask('stage', ['clean', 'assets', 'images', 'content-production', 'clean:drafts', 'htmlmin', 'compress']);
+	grunt.registerTask('stage', ['clean', 'assets', 'content-production', 'clean:drafts', 'htmlmin', 'compress']);
 	grunt.registerTask('deploy', ['stage', 'shell:upload', 'clean']);
 };
