@@ -102,7 +102,9 @@ module.exports = function(eleventyConfig) {
 			src: `https://twitter.com/${username}/profile_image?size=bigger`,
 			alt: `${username}’s Avatar`,
 			class: "z-avatar",
-			loading: "lazy"
+			loading: "lazy",
+			width: 48,
+			height: 48
 		}
 	});
 
