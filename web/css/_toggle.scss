@@ -1,5 +1,16 @@
 /* Toggle code */
 .toggle {
+  --toggle-padding: 2px;
+  --toggle-color: hsl(0,75%,54%);
+  --toggle-color-secondary: hsl(0,75%,80%);
+}
+.toggle[aria-pressed="true"] {
+  --toggle-color: hsl(156, 78%, 15%);
+  --toggle-color-secondary: hsl(156, 78%, 45%);
+}
+
+
+.toggle {
   border: 0 solid transparent;
   background-color: transparent;
   -webkit-appearance: none;
@@ -39,7 +50,11 @@
   position: relative;
   margin-right: .5rem;
   width: 2em; /* 32px /16 */
-  background-color: #ddd;
+  box-sizing: content-box;
+  padding: var(--toggle-padding);
+  border: 2px solid var(--toggle-color);
+  background-color: var(--toggle-color-secondary);
+  transition: background-color .15s ease-in-out;
 }
 .toggle[aria-label] .toggle-control {
   margin-right: 0;
@@ -53,13 +68,12 @@
   transition: left .3s ease-in-out, background-color .15s ease-in-out;
   position: absolute;
   content: "";
-  left: 0;
+  left: var(--toggle-padding);
   width: 1em; /* 16px /16 */
-  background-color: #aaa;
+  background-color: var(--toggle-color);
 }
 .toggle[aria-pressed="true"] .toggle-control:after {
-  background-color: #2f987b;
-  left: 1em; /* 16px /16 */
+  left: calc(1em + var(--toggle-padding)); /* 16px /16 */
 }
 
 /* Forms */
