@@ -2,8 +2,6 @@
 title: I’m Taking Ownership of My Tweets
 tags:
   - project
-  - popular-posts
-postRank: 19
 ---
 I’ve invested a lot into Twitter and I’ve received a lot of value from Twitter. I’ve made a lot of friends and professional connections on the site. I’ll be sad when Twitter goes away. Without a doubt, it will go away. It’s only a question of when.
 

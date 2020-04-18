@@ -2,7 +2,7 @@
 title: CSS Naked Day
 tags:
   - popular-posts
-postRank: 12
+postRank: 17
 ---
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">It’s been a few years since it was A Thing, true, but the most recent CSS Naked Day was held on the ninth of April. Anyone else interested in reviving the practice this Thursday? It’ll speed up your site! Temporarily. <a href="https://css-naked-day.github.io/">https://css-naked-day.github.io/</a></p>&mdash; Eric Meyer, CSS Nerd (@meyerweb) <a href="https://twitter.com/meyerweb/status/1247641433223376898?ref_src=twsrc%5Etfw">April 7, 2020</a></blockquote>
