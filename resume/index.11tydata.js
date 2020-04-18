@@ -5,6 +5,7 @@ module.exports = async function() {
 	if(!process.env.ELEVENTY_FEATURES || process.env.ELEVENTY_FEATURES.split(",").indexOf("counts") === -1) {
 		console.log( chalk.yellow("WARNING: Using terrible data for resume counts because you need to implement Eleventy caching at the data layer.") );
 		return {
+			now: new Date(),
 			stargazers: {
 				eleventy: 9999,
 				tablesaw: 9999,
