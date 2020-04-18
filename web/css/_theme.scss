@@ -272,14 +272,19 @@ h5,
 			grid-column-end: 3;
 		}
 		.tmpl-page .content-grid > img.primary,
-		.tmpl-page .content-grid > .fullwidth,
-		.tmpl-page .content-grid > pre:not(.fullwidthexempt) {
+		.tmpl-page .content-grid > .fullwidth {
 			grid-column-start: 1;
 			grid-column-end: 4;
 		}
 		.tmpl-page .content-grid > .fullwidth img {
 			width: 100%;
 			max-width: none;
+		}
+	}
+	@media (min-width: 32.5em) and (max-width: $oneColLayoutMaxWidth) { /* 520px–959px */
+		.tmpl-page .content-grid > pre:not(.fullwidthexempt) {
+			grid-column-start: 1;
+			grid-column-end: 4;
 		}
 	}
 
