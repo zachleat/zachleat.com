@@ -1,1 +1,9 @@
-U+20-7E,U+A9,U+B0,U+BB,U+D7,U+E9,U+EF,U+F1,U+F3,U+142,U+152,U+3C0,U+2013,U+2014,U+2018-2019,U+201C-201D,U+2026,U+2122
+U+20-7E,U+A9,U+B0,U+BB,U+C9,U+D7,U+E9,U+EF,U+F1,U+F3,U+142,U+152,U+3C0,U+2013,U+2014,U+2018-2019,U+201C-201D,U+2026,U+2122
+
+glyphhanger --whitelist=U+20-7E,U+A9,U+B0,U+BB,U+C9,U+D7,U+E9,U+EF,U+F1,U+F3,U+142,U+152,U+3C0,U+2013,U+2014,U+2018-2019,U+201C-201D,U+2026,U+2122 --subset=LatoLatin-Bold.ttf --formats=woff-zopfli,woff2
+
+glyphhanger --whitelist=U+20-7E,U+A9,U+B0,U+BB,U+C9,U+D7,U+E9,U+EF,U+F1,U+F3,U+142,U+152,U+3C0,U+2013,U+2014,U+2018-2019,U+201C-201D,U+2026,U+2122 --subset=LatoLatin-Regular.ttf --formats=woff-zopfli,woff2
+
+glyphhanger --whitelist=U+20-7E,U+A9,U+B0,U+BB,U+C9,U+D7,U+E9,U+EF,U+F1,U+F3,U+142,U+152,U+3C0,U+2013,U+2014,U+2018-2019,U+201C-201D,U+2026,U+2122 --subset=LatoLatin-Italic.ttf --formats=woff-zopfli,woff2
+
+glyphhanger --whitelist=U+20-7E,U+A9,U+B0,U+BB,U+C9,U+D7,U+E9,U+EF,U+F1,U+F3,U+142,U+152,U+3C0,U+2013,U+2014,U+2018-2019,U+201C-201D,U+2026,U+2122 --subset=LatoLatin-BoldItalic.ttf --formats=woff-zopfli,woff2
