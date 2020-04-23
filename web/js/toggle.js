@@ -9,8 +9,8 @@ function toggleCSS(enable) {
 	}
 }
 
-function toggleWebFonts(enable) {
-	document.documentElement.classList.toggle("font-fallback", !enable);
+function toggleClassname(enable, className) {
+	document.documentElement.classList.toggle(className, !enable);
 }
 
 document.addEventListener("click", function(event) {
@@ -23,8 +23,8 @@ document.addEventListener("click", function(event) {
 
 			if(toggle.classList.contains("toggle-css")) {
 				toggleCSS(isPressed);
-			} else if(toggle.classList.contains("toggle-webfonts")) {
-				toggleWebFonts(isPressed);
+			} else {
+				toggleClassname(isPressed, toggle.getAttribute("data-toggle-class"));
 			}
 		}
 	}
