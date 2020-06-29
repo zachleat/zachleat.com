@@ -11,10 +11,11 @@ function getImageMarkup(imageData, props = {}) {
 	let webp = imageData.webp[0];
 	let jpeg = imageData.jpeg[0];
 
-	return `<picture>
-<source type="${webp.sourceType}" srcset="${webp.srcset}">
-<img alt="${props.alt}" src="${jpeg.url}" width="${jpeg.width}" height="${jpeg.height}"${props.class ? ` class="${props.class}"` : ""}${props.loading ? ` loading="${props.loading}"` : ""}>
-</picture>`;
+	return [
+"<picture>",
+	`<source type="${webp.sourceType}" srcset="${webp.srcset}">`,
+	`<img alt="${props.alt}" src="${jpeg.url}" width="${jpeg.width}" height="${jpeg.height}"${props.class ? ` class="${props.class}"` : ""}${props.loading ? ` loading="${props.loading}"` : ""}>`,
+"</picture>"].join("");
 };
 
 async function getImageData(url) {
