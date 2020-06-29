@@ -1,5 +1,5 @@
 ---
-title: 'Trash that &#8220;Back to Top&#8221; Link'
+title: Trash that &#8220;Back to Top&#8221; Link
 author: Zach Leatherman
 layout: post
 ---

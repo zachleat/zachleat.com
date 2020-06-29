@@ -3,7 +3,7 @@ title: font-display is Incompatible with Icon Fonts
 tags:
   - font-loading
   - popular-posts
-postRank: 19
+postRank: 18
 ---
 
 There are myriad problems with icon fonts. I won’t rehash those again here but I did a section on this specific topic in [The Scoville Scale of Web Font Loading Opinions](/web/scoville-scale/). A bunch of people have written about this before:

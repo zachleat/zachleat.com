@@ -6,8 +6,8 @@ tags:
   - research
   - popular-posts
   - popular-posts-total
-postRank: 5
-postRankTotalViews: 19
+postRank: 4
+postRankTotalViews: 18
 ---
 <style>
 .sm-img {

@@ -1,5 +1,5 @@
 ---
-title: 'A Front End Engineer&#8217;s Manifesto'
+title: A Front End Engineer&#8217;s Manifesto
 author: Zach Leatherman
 layout: post
 description: Guidelines I use when looking at the big picture as a Front End Web Developer.

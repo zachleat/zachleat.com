@@ -1,5 +1,5 @@
 ---
-title: 'Specific Inheritance with TIBCO&#8217;s General Interface'
+title: Specific Inheritance with TIBCO&#8217;s General Interface
 author: Zach Leatherman
 layout: post
 feedtrim: true

@@ -1,5 +1,5 @@
 ---
-title: 'Online Movie Rental Review &#8211; Amazon Unbox'
+title: Online Movie Rental Review &#8211; Amazon Unbox
 author: Zach Leatherman
 layout: post
 deprecated: true

@@ -1,5 +1,5 @@
 ---
-title: 'Don&#8217;t Give Up on Internet Explorer Yet'
+title: Don&#8217;t Give Up on Internet Explorer Yet
 author: Zach Leatherman
 layout: post
 ---

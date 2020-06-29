@@ -1,5 +1,5 @@
 ---
-title: 'Let&#8217;s get parseIntimate.'
+title: Let&#8217;s get parseIntimate.
 author: Zach Leatherman
 layout: post
 project_name: parseIntimate

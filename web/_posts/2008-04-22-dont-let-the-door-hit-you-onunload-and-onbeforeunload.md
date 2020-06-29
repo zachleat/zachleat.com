@@ -1,5 +1,5 @@
 ---
-title: 'Don&#8217;t Let the Door Hit You Onunload and Onbeforeunload'
+title: Don&#8217;t Let the Door Hit You Onunload and Onbeforeunload
 author: Zach Leatherman
 layout: post
 Version Specific Article:
