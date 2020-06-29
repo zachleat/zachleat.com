@@ -102,7 +102,7 @@ module.exports = async function() {
 			.then(res => res.text())
 			.then(text => {
 				let $ = cheerio.load(text);
-				let count = $(`a[href="/zachleat/followers"] .statnum`).text();
+				let count = parseInt($(`a[href="/zachleat/followers"] .statnum`).text().replace(/,/g, ""), 10);
 				data.twitter.zachleat = count;
 				console.log( `zachleat follower count: ${data.twitter.zachleat}.` );
 			}));
@@ -111,7 +111,7 @@ module.exports = async function() {
 			.then(res => res.text())
 			.then(text => {
 				let $ = cheerio.load(text);
-				let count = $(`a[href="/eleven_ty/followers"] .statnum`).text();
+				let count = parseInt($(`a[href="/eleven_ty/followers"] .statnum`).text().replace(/,/g, ""), 10);
 				data.twitter.eleven_ty = count;
 				console.log( `eleven_ty follower count: ${data.twitter.eleven_ty}.` );
 			}));
@@ -120,7 +120,7 @@ module.exports = async function() {
 			.then(res => res.text())
 			.then(text => {
 				let $ = cheerio.load(text);
-				let count = $(`a[href="/nebraskajs/followers"] .statnum`).text();
+				let count = parseInt($(`a[href="/nebraskajs/followers"] .statnum`).text().replace(/,/g, ""), 10);
 				data.twitter.nebraskajs = count;
 				console.log( `nebraskajs follower count: ${data.twitter.nebraskajs}.` );
 			}));
@@ -129,7 +129,7 @@ module.exports = async function() {
 			.then(res => res.text())
 			.then(text => {
 				let $ = cheerio.load(text);
-				let count = $(`a[href="/nejsconf/followers"] .statnum`).text();
+				let count = parseInt($(`a[href="/nejsconf/followers"] .statnum`).text().replace(/,/g, ""), 10);
 				data.twitter.nejsconf = count;
 				console.log( `nejsconf follower count: ${data.twitter.nejsconf}.` );
 			}));
@@ -138,7 +138,7 @@ module.exports = async function() {
 			.then(res => res.text())
 			.then(text => {
 				let $ = cheerio.load(text);
-				let count = $(`a[href="/fontspeed/followers"] .statnum`).text();
+				let count = parseInt($(`a[href="/fontspeed/followers"] .statnum`).text().replace(/,/g, ""), 10);
 				data.twitter.fontspeed = count;
 				console.log( `fontspeed follower count: ${data.twitter.fontspeed}.` );
 			}));
