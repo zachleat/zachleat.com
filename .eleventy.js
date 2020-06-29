@@ -2,15 +2,15 @@ const { DateTime } = require("luxon");
 const { URL } = require("url");
 const sanitizeHTML = require("sanitize-html")
 const numeral = require("numeral")
-const pluginImg = require("@11ty/eleventy-plugin-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const siteData = require("./_data/site.json");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const getBaseUrl = require("./_includes/getBaseUrl");
-
 const Natural = require('natural');
 const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
 const randomCase = require('random-case');
+
+const getBaseUrl = require("./_includes/getBaseUrl");
+const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
 
 function hasEleventyFeature(featureName) {
 	return process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf(featureName) > -1;
@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
 	/* PLUGINS */
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
-	eleventyConfig.addPlugin(pluginImg);
+	eleventyConfig.addPlugin(pluginImageAvatar);
 
 	/* COPY */
 	eleventyConfig
@@ -95,17 +95,6 @@ module.exports = function(eleventyConfig) {
 			}
 		}
 		return count.size;
-	});
-
-	eleventyConfig.addLiquidFilter("avatarObject", function(username) {
-		return {
-			src: `https://twitter.com/${username}/profile_image?size=bigger`,
-			alt: `${username}’s Avatar`,
-			class: "z-avatar",
-			loading: "lazy",
-			width: 48,
-			height: 48
-		}
 	});
 
 	eleventyConfig.addLiquidFilter("renderNumber", function renderNumber(num) {
