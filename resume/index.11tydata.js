@@ -1,5 +1,6 @@
 const fetch = require("node-fetch");
 const chalk = require("chalk");
+const cheerio = require("cheerio");
 
 module.exports = async function() {
 	if(!process.env.ELEVENTY_FEATURES || process.env.ELEVENTY_FEATURES.split(",").indexOf("counts") === -1) {
@@ -96,43 +97,49 @@ module.exports = async function() {
 				data.meetup.nebraskajs = json.members;
 			}));
 
-		promises.push(fetch("https://twitter.com/zachleat/")
+
+		promises.push(fetch("https://mobile.twitter.com/zachleat/")
 			.then(res => res.text())
 			.then(text => {
-				let match = text.match(/followers_count\&quot\;\:(\d+)/i);
-				data.twitter.zachleat = match && match.length > 1 ? parseInt(match[1], 10) : undefined;
+				let $ = cheerio.load(text);
+				let count = $(`a[href="/zachleat/followers"] .statnum`).text();
+				data.twitter.zachleat = count;
 				console.log( `zachleat follower count: ${data.twitter.zachleat}.` );
 			}));
 
-		promises.push(fetch("https://twitter.com/eleven_ty/")
+		promises.push(fetch("https://mobile.twitter.com/eleven_ty/")
 			.then(res => res.text())
 			.then(text => {
-				let match = text.match(/followers_count\&quot\;\:(\d+)/i);
-				data.twitter.eleven_ty = match && match.length > 1 ? parseInt(match[1], 10) : undefined;
+				let $ = cheerio.load(text);
+				let count = $(`a[href="/eleven_ty/followers"] .statnum`).text();
+				data.twitter.eleven_ty = count;
 				console.log( `eleven_ty follower count: ${data.twitter.eleven_ty}.` );
 			}));
 
-		promises.push(fetch("https://twitter.com/nebraskajs/")
+		promises.push(fetch("https://mobile.twitter.com/nebraskajs/")
 			.then(res => res.text())
 			.then(text => {
-				let match = text.match(/followers_count\&quot\;\:(\d+)/i);
-				data.twitter.nebraskajs = match && match.length > 1 ? parseInt(match[1], 10) : undefined;
+				let $ = cheerio.load(text);
+				let count = $(`a[href="/nebraskajs/followers"] .statnum`).text();
+				data.twitter.nebraskajs = count;
 				console.log( `nebraskajs follower count: ${data.twitter.nebraskajs}.` );
 			}));
 
-		promises.push(fetch("https://twitter.com/nejsconf/")
+		promises.push(fetch("https://mobile.twitter.com/nejsconf/")
 			.then(res => res.text())
 			.then(text => {
-				let match = text.match(/followers_count\&quot\;\:(\d+)/i);
-				data.twitter.nejsconf = match && match.length > 1 ? parseInt(match[1], 10) : undefined;
+				let $ = cheerio.load(text);
+				let count = $(`a[href="/nejsconf/followers"] .statnum`).text();
+				data.twitter.nejsconf = count;
 				console.log( `nejsconf follower count: ${data.twitter.nejsconf}.` );
 			}));
 
-		promises.push(fetch("https://twitter.com/fontspeed/")
+		promises.push(fetch("https://mobile.twitter.com/fontspeed/")
 			.then(res => res.text())
 			.then(text => {
-				let match = text.match(/followers_count\&quot\;\:(\d+)/i);
-				data.twitter.fontspeed = match && match.length > 1 ? parseInt(match[1], 10) : undefined;
+				let $ = cheerio.load(text);
+				let count = $(`a[href="/fontspeed/followers"] .statnum`).text();
+				data.twitter.fontspeed = count;
 				console.log( `fontspeed follower count: ${data.twitter.fontspeed}.` );
 			}));
 
