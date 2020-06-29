@@ -40,7 +40,9 @@
 		{%- endif -%}
 		{%- if post.data.tags contains 'video' %}<span class="tag video">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Video</span>{% endif -%}
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Audio</span>{% endif -%}
+{%- if ignorePopularity != true %}
 		{%- if post.data.postRank or post.data.postRankTotalViews %}<a href="/web/best-of/" class="tag postrank" title="Popularity Ranking">{% if post.data.postRankTotalViews and showRankTotalViews == "true" %}{{ "☀️" | emoji }} #{{ post.data.postRankTotalViews }}{% elsif post.data.postRank %}{{ "🔥" | emoji }} #{{ post.data.postRank }}{% endif %}</a>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
+{%- endif %}
 	</span>
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>
 	{% if view == 'project' %}
