@@ -51,12 +51,12 @@
     "twitter-avatar-url": "^1.0.2"
   },
   "scripts": {
+    "build": "npx @11ty/eleventy --quiet",
+    "start": "npx @11ty/eleventy --quiet --watch",
     "popular": "./refresh-populars.sh",
     "default": "grunt",
-    "deploy": "./refresh-populars.sh && grunt deploy",
-    "11ty": "npx @11ty/eleventy --quiet",
-    "dev": "npx @11ty/eleventy --quiet --serve",
-    "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet"
+    "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
+    "deploy": "./refresh-populars.sh && grunt deploy"
   },
   "repository": {
     "type": "git",
