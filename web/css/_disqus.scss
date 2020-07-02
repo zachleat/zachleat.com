@@ -24,7 +24,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 }
 .static-comments-hed {
 	display: flex;
-	align-items: top;
+	align-items: flex-start;
 	flex-wrap: nowrap;
 }
 .static-comments-title {
