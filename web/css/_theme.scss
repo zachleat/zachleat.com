@@ -758,16 +758,7 @@ th.numeric {
 }
 .subhed-count {
 	font-size: 70%;
-	color: #777;
-}
-.posts .subhed.yearcount {
-	text-align: right;
-	border-bottom: none;
-	text-transform: none;
-	font-size: 0.7368421052632em; /* 14px /19 */
-	margin-top: 0;
-	padding-top: 0.6315789473684em; /* 12px /19 */
-	color: #888;
+	color: #555;
 }
 .posts .subhed:first-child {
 	margin-top: 0;
@@ -819,7 +810,18 @@ th.numeric {
 .posts .deprecated,
 .posts .deprecated :link,
 .posts .deprecated :visited {
-	opacity: .6;
+	color: #666;
+}
+.posts .deprecated,
+.posts .deprecated :link {
+	font-size: 1.25rem; /* 20px /16 */
+}
+.posts .deprecated .tags {
+	display: none;
+}
+.posts .deprecated:before {
+	content: "Deprecated: ";
+	@include webfontBold;
 }
 
 .sub {
