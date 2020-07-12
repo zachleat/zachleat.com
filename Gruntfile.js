@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 			'<%= grunt.template.today("yyyy-mm-dd") %>\n' +
 			'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
 			'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>;' +
-			' <%= pkg.license %> License */\n',
+			' @license <%= pkg.license %> License */\n',
 		config: {
 			root: 'web/', // from domain root, do not include the first slash, do include a trailing slash
 			jsSrc: '<%= config.root %>js/',
@@ -60,10 +60,9 @@ module.exports = function(grunt) {
 			}
 			// CSS concat handled by SASS
 		},
-		uglify: {
-			options: {
-				banner: '<%= banner %>'
-			},
+		terser: {
+			// TODO no banner
+			options: {},
 			js: {
 				src: '<%= concat.js.dest %>',
 				dest: '<%= config.distFolder %>initial.min.js'
@@ -243,7 +242,7 @@ module.exports = function(grunt) {
 	grunt.task.loadTasks('grunt-tasks');
 
 	// Default task.
-	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'concat', 'uglify', 'cssmin']);
+	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'concat', 'terser', 'cssmin']);
 
 	grunt.registerTask('content', ['copy:includes', 'shell:eleventy']);
 	grunt.registerTask('content-production', ['copy:includes', 'shell:eleventyProduction']);
