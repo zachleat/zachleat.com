@@ -13,6 +13,7 @@ html {
 html,
 body {
 	background-color: #fff;
+	color: #222;
 }
 body {
 	padding: 0;
@@ -372,7 +373,6 @@ h5,
 /* App specific */
 body {
 	font-family: $fallbackSystemFont;
-	font-size: 100%;
 	line-height: 140%;
 	@include webfont;
 
@@ -981,8 +981,8 @@ th.numeric {
 .footer {
 	margin-top: 2em;
 	margin-bottom: 1em;
-	font-size: 0.7368421052632em; /* 14px /19 */
-	line-height: 135%;
+	font-size: 1rem;
+	line-height: 130%;
 	@include webfontItalic;
 
 	@media (min-width: $twoColLayoutMinWidth) {
