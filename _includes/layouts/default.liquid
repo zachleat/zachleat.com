@@ -1,5 +1,6 @@
 {%- capture distIncludeFolder %}dist/{% if distVersion %}{{ distVersion }}{% else %}{{ pkg.version }}{% endif %}/{% endcapture -%}
 {%- capture distFolder %}/web/{{ distIncludeFolder }}{% endcapture -%}
+{%- capture fullUrl %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 <!doctype html>
 <html lang="en"{% if tmpl or templateclass %} class="{% if tmpl %} tmpl-{{ tmpl }}{% endif %}{% if templateclass %} {{ templateclass }}{% endif %}"{% endif %}>
 	<head>
@@ -17,9 +18,12 @@
 		<meta property="og:description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
 		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{{ site.avatarImgSrc }}{% endif %}">
 		<meta name="monetization" content="$pay.stronghold.co/1a155e3a09e210742be8c38ba7cab4795c4">
+{%- if speedlify[fullUrl] %}
+		<meta name="shorthash" content="{{ speedlify[fullUrl].hash }}">
+{%- endif %}
 
 		<meta name="dist" content="{{distFolder}}">
-		<link rel="canonical" href="https://www.zachleat.com{{ page.url }}">
+		<link rel="canonical" href="{{ fullUrl }}">
 {% if rssFeedUrl and rssFeedTitle %}
 		<link rel="alternate" href="{{ rssFeedUrl }}" title="{{ rssFeedTitle }}" type="application/atom+xml">
 {% else %}
@@ -77,7 +81,7 @@
 						{% include social.html %}
 						<div class="tags tags-rail">
 							<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %}">Speaking</a>
-							<a href="/twitter/" class="tag">Twitter Archive</a>
+							<a href="/twitter/" class="tag">Twitter<span class="hide-sm"> Archive</span></a>
 							<a href="/web/projects/" class="tag{% if page.url == '/web/projects/' %} active{% endif %}">Projects</a>
 							<a href="/web/notes/" class="tag{% if page.url == '/web/notes/' %} active{% endif %}">Notes</a>
 							<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/web/best-of/' or page.url == '/web/best-of/total-views/' %} active{% endif %}{% if hasToc == true or hidePopularInSidebar == true %} has-toc{% endif %}">Popular 🔥</a>

@@ -54,6 +54,7 @@ module.exports = function(grunt) {
 					// '<%= config.jsSrc %>twitter-api.js',
 					'<%= config.jsSrc %>lazyimg.js',
 					'<%= config.jsSrc %>toggle.js',
+					'<%= config.jsSrc %>speedlify-api.js',
 					// '<%= config.jsSrc %>fouterswap.js',
 					],
 				dest: '<%= config.distFolder %>defer.js'
