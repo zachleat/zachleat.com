@@ -22,7 +22,7 @@
 
 		let content = [];
 		content.push(`<span class="summary">${json.weight.summary}</span>`);
-		content.push(`<a href="https://speedlify.netlify.app/zachleat.com/">Lighthouse</a>${scores.join("")}`);
+		content.push(`<span><a href="https://speedlify.netlify.app/zachleat.com/">Lighthouse</a>${scores.join("")}</span>`);
 		target.innerHTML = content.join(" ");
 	}
 })();

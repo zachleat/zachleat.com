@@ -78,6 +78,7 @@
 
 /* Forms */
 .toggle-features-form {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 1em;
 }

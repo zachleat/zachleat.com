@@ -1433,31 +1433,3 @@ pre + .livedemo {
 	color: transparent;
 }
 
-/* Speedlify Lighthouse widget */
-.speedlify-lighthouse {
-	display: inline-flex;
-	align-items: center;
-	line-height: 150%;
-}
-.speedlify-lighthouse .summary {
-	margin-right: 1em;
-}
-.speedlify-lighthouse .score {
-	@include webfontBold;
-	font-size: 0.75rem; /* 12px /16 */
-	width: 2.6em;
-	height: 2.6em;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	border: 2px solid;
-	color: #0cce6b;
-	margin-left: 6px;
-}
-.speedlify-lighthouse .score-ok {
-	color: #ffa400;
-}
-.speedlify-lighthouse .score-bad {
-	color: #ff4e42;
-}
