@@ -15,7 +15,7 @@
 
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[fullUrl] %}
-			<speedlify-api hash="{{ speedlify[fullUrl].hash }}" speedlify-url="https://www.speedlify.dev" speedlify-direct-link="https://www.speedlify.dev/zachleat.com/"></span>
+			<speedlify-api hash="{{ speedlify[fullUrl].hash }}" speedlify-url="https://www.speedlify.dev" lighthouse-link="https://www.speedlify.dev/zachleat.com/"></span>
 {%- endif %}
 		</form>
 {% comment %}

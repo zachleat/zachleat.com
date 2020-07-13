@@ -7,7 +7,7 @@
 		constructor() {
 			super();
 			this.speedlifyUrl = this.getAttribute("speedlify-url");
-			this.directLink = this.getAttribute("speedlify-direct-link");
+			this.directLink = this.getAttribute("lighthouse-link");
 			this.shorthash = this.getAttribute("hash");
 
 			let attrs = [];

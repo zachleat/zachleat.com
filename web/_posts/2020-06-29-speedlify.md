@@ -18,7 +18,7 @@ Here are some of the ways I’ve used Lighthouse to help test my sites:
 
 Instantaneous measurement is a good first step. But how do we ensure that the site maintains good performance and best practices when deploys are happening every day? How do we keep the web site fast? The second step is continuous measurement. This is where Speedlify comes in. It’s an [{% imgavatar "eleven_ty" %}Eleventy](https://www.11ty.dev/)-generated web site published as an open source repository to help automate continuous performance measurements.
 
-<div class="primarylink"><a href="https://speedlify.netlify.app/ssg/">Speedlify Demo, for Static Site Generator web sites</a></div>
+<div class="primarylink"><a href="https://www.speedlify.dev/ssg/">Speedlify Demo, for Static Site Generator web sites</a></div>
 
 ## Source Code
 
@@ -27,7 +27,7 @@ Instantaneous measurement is a good first step. But how do we ensure that the si
 * **DIY**: Run it manually, locally on your computer and check in the data to your repo.
 * **Automated**: If you want to automate it, Speedlify can run entirely self-contained on Netlify. Be aware that there’s a maximum of 15 minutes per build (if you do 3 runs each, I’d guess this will let you test a maximum of around 20 pages). [Netlify’s free tier](https://www.netlify.com/pricing/) gives you 300 build minutes per month.
 
-<div class="fullwidth"><a href="https://speedlify.netlify.app/ssg/"><img src="/web/img/posts/speedlify/screenshot-1x.png" srcset="/web/img/posts/speedlify/screenshot-1x.png 600w, /web/img/posts/speedlify/screenshot-2x.png 1400w" sizes="(min-width: 60em) calc(100vw - 13.5rem), 100vw" alt="A very zoomed out screenshot of Speedlify" width="600" height="540"></a></div>
+<div class="fullwidth"><a href="https://www.speedlify.dev/ssg/"><img src="/web/img/posts/speedlify/screenshot-1x.png" srcset="/web/img/posts/speedlify/screenshot-1x.png 600w, /web/img/posts/speedlify/screenshot-2x.png 1400w" sizes="(min-width: 60em) calc(100vw - 13.5rem), 100vw" alt="A very zoomed out screenshot of Speedlify" width="600" height="540"></a></div>
 
 ## Next Steps
 
