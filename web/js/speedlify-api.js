@@ -40,12 +40,12 @@
 
 		getScoreClass(score) {
 			if(score < .5) {
-				return "score score-bad";
+				return "speedlify-score speedlify-score-bad";
 			}
 			if(score < .9) {
-				return "score score-ok";
+				return "speedlify-score speedlify-score-ok";
 			}
-			return "score score-good";
+			return "speedlify-score speedlify-score-good";
 		}
 
 		getHtml(data) {
@@ -64,10 +64,10 @@ speedlify-api {
 	flex-wrap: wrap;
 	align-items: center;
 }
-speedlify-api .summary {
+.speedlify-summary {
 	margin-right: 1em;
 }
-speedlify-api .score {
+.speedlify-score {
 	font-size: 0.8125em; /* 13px /16 */
 	width: 2.6em;
 	height: 2.6em;
@@ -79,17 +79,17 @@ speedlify-api .score {
 	color: #088645;
 	margin-left: 0.4615384615385em; /* 6px /13 */
 }
-speedlify-api .score-ok {
+.speedlify-score-ok {
 	color: #ffa400;
 	border-color: currentColor;
 }
-speedlify-api .score-bad {
+.speedlify-score-bad {
 	color: #ff4e42;
 	border-color: currentColor;
 }
 </style>`);
 
-			content.push(`<span class="summary">${data.weight.summary}</span>`);
+			content.push(`<span class="speedlify-summary">${data.weight.summary}</span>`);
 			content.push(`<span><a href="${this.directLink || this.speedlifyUrl}">Lighthouse</a>${scores.join("")}</span>`);
 			return content.join(" ");
 		}
