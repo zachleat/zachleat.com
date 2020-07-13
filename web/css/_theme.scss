@@ -542,7 +542,7 @@ code {
 	margin: 0 .25em 0 .1em;
 	color: #444;
 
-	@include unhyphenate;
+	@include extraunhyphenate;
 
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
@@ -576,9 +576,8 @@ pre {
 	white-space: -pre-wrap;
 	white-space: -o-pre-wrap;
 	white-space: pre-wrap;
-	word-wrap: break-word;
 
-	@include unhyphenate;
+	@include extraunhyphenate;
 
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
