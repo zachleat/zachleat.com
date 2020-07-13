@@ -36,7 +36,7 @@ I’ve hopefully streamlined the setup here enough that you can use this up for 
 3. Use the Web Component.
 	* Add the [JavaScript Source Code](https://github.com/zachleat/zachleat.com/blob/master/web/js/speedlify-api.js). The CSS is bundled inside (is this CSS-in-JS?).
 	* Add the `<speedlify-api>` markup to your page where you want the score to show up. I’d recommend putting it in the footer of your page.
-	* Use the `speedlify.js` Eleventy global data file we added earlier to set the `hash` attribute on the component. Have a look at [my `footer.html` to see how I did it using Liquid templates](https://github.com/zachleat/zachleat.com/blob/e6c9cc7eb3e05ba06d34c909bbf36eb9dea84273/_includes/footer.html#L16-L19) (only lines 16 through 19).
+	* Use the `speedlify.js` Eleventy global data file we added earlier to set the `hash` attribute on the component. Have a look at [my `footer.html` to see how I did it using Liquid templates](https://github.com/zachleat/zachleat.com/blob/4343bdf1684f01743c5941f15db2cd456a06f072/_includes/footer.html#L16-L19) (only lines 16 through 19).
 	* Also set the `speedlify-url` attribute to point to your Speedlify instance. Mine is {% highlight html %}speedlify-url="https://www.speedlify.dev"{% endhighlight %}
 	* Optional: If you want the Lighthouse text to link somewhere specific, set the `lighthouse-link` attribute too. I used {% highlight html %}lighthouse-link="https://www.speedlify.dev/zachleat.com/"{% endhighlight %}
 
