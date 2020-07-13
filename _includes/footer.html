@@ -13,7 +13,10 @@
 				<span class="toggle-text">Web Fonts</span>
 			</button>
 
-			<span class="speedlify-lighthouse" id="speedlify-lighthouse-score"></span>
+{%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
+{%- if speedlify[fullUrl] %}
+			<speedlify-api hash="{{ speedlify[fullUrl].hash }}" speedlify-url="https://www.speedlify.dev" speedlify-direct-link="https://www.speedlify.dev/zachleat.com/"></span>
+{%- endif %}
 		</form>
 {% comment %}
 		<form id="fontloademu" class="fontloademu" style="display: none">

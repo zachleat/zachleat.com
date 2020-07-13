@@ -36,11 +36,10 @@ module.exports = function(grunt) {
 			},
 			jsAsync: {
 				src: [
+					// TODO get rid of this and switch to the CSS Font Loading API
 					'node_modules/fontfaceonload/dist/fontfaceonload.js',
 					'<%= config.jsSrc %>fonts-polyfill-fontfaceonload.js',
 					'node_modules/fg-loadjs/loadJS.js',
-					'node_modules/fg-loadcss/src/loadCSS.js',
-					'node_modules/fg-loadcss/src/onloadCSS.js',
 					'<%= config.jsSrc %>timeago.js',
 					'<%= config.jsSrc %>async.js'
 					],
