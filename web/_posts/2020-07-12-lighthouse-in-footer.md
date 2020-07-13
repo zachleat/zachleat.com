@@ -28,7 +28,7 @@ This is marginally _okay_ as the widget is hidden at the very bottom of the page
 
 It’s actually not too difficult to set this up for your own site too, if you’re already using Eleventy. Just three short-ish steps.
 
-1. Run your own Speedlify instance. You can <a href="https://app.netlify.com/start/deploy?repository=https://github.com/zachleat/speedlify"><img src="https://www.netlify.com/img/deploy/button.svg" width="146" height="32"></a>
+1. Run your own Speedlify instance. You can click this button: <a href="https://app.netlify.com/start/deploy?repository=https://github.com/zachleat/speedlify"><img src="/img/deploy-to-netlify.svg" width="146" height="32"></a>
 	* Modify the files in Speedlify’s `_data/sites/*.js` folder with your own URLs!
 2. Consume the Speedlify API data files—they are generated automatically with your Speedlify instance.
 	* Use [Eleventy’s Cache Assets plugin](https://github.com/11ty/eleventy-cache-assets) {% highlight bash %}npm install @11ty/eleventy-cache-assets --save-dev{% endhighlight %}
