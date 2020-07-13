@@ -81,9 +81,11 @@ speedlify-api .score {
 }
 speedlify-api .score-ok {
 	color: #ffa400;
+	border-color: currentColor;
 }
 speedlify-api .score-bad {
 	color: #ff4e42;
+	border-color: currentColor;
 }
 </style>`);
 
