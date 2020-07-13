@@ -26,17 +26,17 @@ This is marginally _okay_ as the widget is hidden at the very bottom of the page
 
 ## Adding this to your Eleventy site!
 
-It’s actually not too difficult to set this up for your own site too, if you’re already using Eleventy. Just three short-ish steps.
+I’ve hopefully streamlined the setup here enough that you can use this up for your own site too (if you’re already using Eleventy). Three steps here:
 
 1. Run your own Speedlify instance. You can click this button: <a href="https://app.netlify.com/start/deploy?repository=https://github.com/zachleat/speedlify"><img src="/img/deploy-to-netlify.svg" width="146" height="32"></a>
 	* Modify the files in Speedlify’s `_data/sites/*.js` folder with your own URLs!
 2. Consume the Speedlify API data files—they are generated automatically with your Speedlify instance.
 	* Use [Eleventy’s Cache Assets plugin](https://github.com/11ty/eleventy-cache-assets) {% highlight bash %}npm install @11ty/eleventy-cache-assets --save-dev{% endhighlight %}
-	* Copy and paste the [`speedlify.js` Eleventy global data file](https://github.com/zachleat/zachleat.com/blob/e6c9cc7eb3e05ba06d34c909bbf36eb9dea84273/_data/speedlify.js) to your global data directory. Change the URL to point to your `/api/urls.json` file. Mine is `https://www.speedlify.dev/api/urls.json`.
+	* Copy and paste the small [`speedlify.js` Eleventy global data file](https://github.com/zachleat/zachleat.com/blob/e6c9cc7eb3e05ba06d34c909bbf36eb9dea84273/_data/speedlify.js) to your global data directory. This tells us which URLs are speed tested in Speedlify. Change the URL in `speedlify.js` to point to your `/api/urls.json` file. Mine is `https://www.speedlify.dev/api/urls.json`.
 3. Use the Web Component.
 	* Add the [JavaScript Source Code](https://github.com/zachleat/zachleat.com/blob/master/web/js/speedlify-api.js). The CSS is bundled inside (is this CSS-in-JS?).
 	* Add the `<speedlify-api>` markup to your page where you want the score to show up. I’d recommend putting it in the footer of your page.
-	* Use our Eleventy global data file we added earlier to set the `hash` attribute on the component. Have a look at [my `footer.html` to see how I did it using Liquid templates](https://github.com/zachleat/zachleat.com/blob/e6c9cc7eb3e05ba06d34c909bbf36eb9dea84273/_includes/footer.html#L16-L19).
+	* Use the `speedlify.js` Eleventy global data file we added earlier to set the `hash` attribute on the component. Have a look at [my `footer.html` to see how I did it using Liquid templates](https://github.com/zachleat/zachleat.com/blob/e6c9cc7eb3e05ba06d34c909bbf36eb9dea84273/_includes/footer.html#L16-L19) (only lines 16 through 19).
 	* Also set the `speedlify-url` attribute to point to your Speedlify instance. Mine is {% highlight html %}speedlify-url="https://www.speedlify.dev"{% endhighlight %}
 	* Optional: If you want the Lighthouse text to link somewhere specific, set the `lighthouse-link` attribute too. I used {% highlight html %}lighthouse-link="https://www.speedlify.dev/zachleat.com/"{% endhighlight %}
 
