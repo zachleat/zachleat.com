@@ -47,14 +47,11 @@ module.exports = function(grunt) {
 			},
 			jsDefer: {
 				src: [
-					'node_modules/infinity-burger/infinity-burger.js',
-					// '<%= config.jsSrc %>fontloademu.js',
 					'<%= config.jsSrc %>google-analytics.js',
-					// '<%= config.jsSrc %>twitter-api.js',
 					'<%= config.jsSrc %>lazyimg.js',
 					'<%= config.jsSrc %>toggle.js',
-					'<%= config.jsSrc %>speedlify-api.js',
-					// '<%= config.jsSrc %>fouterswap.js',
+					'node_modules/infinity-burger/infinity-burger.js',
+					'node_modules/speedlify-score/speedlify-score.js',
 					],
 				dest: '<%= config.distFolder %>defer.js'
 			}
@@ -104,7 +101,8 @@ module.exports = function(grunt) {
 			// Because sass won’t import css files
 			'css-to-sass': {
 				files: {
-					'web/css/lib/_infinity-burger.scss': 'node_modules/infinity-burger/infinity-burger.css'
+					'web/css/lib/_infinity-burger.scss': 'node_modules/infinity-burger/infinity-burger.css',
+					'web/css/lib/_speedlify-score.scss': 'node_modules/speedlify-score/speedlify-score.css',
 				}
 			},
 			// For CSS inlining

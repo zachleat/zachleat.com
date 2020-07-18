@@ -8,6 +8,7 @@
 @import "lib/prism-base16-monokai.dark";
 @import "compatibility-tables";
 @import "lib/infinity-burger";
+@import "lib/speedlify-score";
 @import "styleguide";
 @import "printed-page";
 @import "retweet-to-share";
@@ -16,3 +17,10 @@
 @import "webmention";
 @import "directlink";
 @import "toggle";
+
+.speedlify-link {
+	text-decoration: none;
+}
+.speedlify-link .speedlify-summary {
+	text-decoration: underline;
+}
