@@ -286,7 +286,7 @@ h5,
 			max-width: none;
 		}
 	}
-	@media (min-width: 32.5em) and (max-width: $oneColLayoutMaxWidth) { /* 520px–959px */
+	@media (min-width: 32.5em) { /* 520px */
 		.tmpl-page .content-grid > pre:not(.fullwidthexempt) {
 			grid-column-start: 1;
 			grid-column-end: 4;
