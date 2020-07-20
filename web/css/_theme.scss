@@ -491,6 +491,12 @@ h3,
 .hed-h3 {
 	font-size: 1.157894736842em; /* 22px /19 */
 }
+h3 {
+	margin-top: 2em;
+}
+h3 + p {
+	margin-top: 0;
+}
 h4,
 h5 {
 	font-size: 1em;
