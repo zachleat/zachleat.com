@@ -29,6 +29,8 @@ For my personal website, [I added Lighthouse scores to the footer](/web/lighthou
 
 <div class="primarylink"><a href="https://www.11ty.dev/docs/starter/">Eleventy Starter Projects with Lighthouse Scores</a></div>
 
+The Eleventy documentation already runs every day. Coupled with Speedlify’s daily updates, this means that the scores on the Eleventy documentation will automatically update with new Lighthouse score results every day too. So if a Starter Project author wants to update their project to improve their scores, it requires no manual intervention from me for the scores to update! Jamstack is pretty cool y’all.
+
 ### Step 3: Render the Data
 
 Next, I modified the [`<speedlify-score>` web component](https://github.com/zachleat/speedlify-score/) to render build-time-fetched API data. In markup it looks like this:
