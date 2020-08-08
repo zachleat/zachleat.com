@@ -53,6 +53,7 @@
   "scripts": {
     "build": "npx @11ty/eleventy --quiet",
     "start": "npx @11ty/eleventy --quiet --watch",
+    "starti": "npx @11ty/eleventy --quiet --watch --incremental",
     "popular": "./refresh-populars.sh",
     "default": "grunt",
     "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
