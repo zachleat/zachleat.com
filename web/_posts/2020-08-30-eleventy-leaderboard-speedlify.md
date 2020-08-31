@@ -1,5 +1,5 @@
 ---
-title: Eleventy Leaderboards Version 2 via Speedlify
+title: Eleventy Leaderboards v2 via Speedlify
 ---
 Wow—this entire thing has been a journey. The idea for the Eleventy Leaderboards was originally borne out of some lighthearted fun poking at the [AMP Carousel in Google Search results](/web/performance-dashboard/).
 
