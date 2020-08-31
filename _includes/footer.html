@@ -3,22 +3,27 @@
 		Built with <a href="https://11ty.io/">Eleventy</a> · <a href="/web/style-guide/">Style Guide</a> · <a href="/web/license/">MIT license</a> · <a href="https://github.com/zachleat/zachleat.com/tree/master/{{ page.inputPath }}">Edit this page on GitHub</a> · <a href="https://twitter.com/search?f=tweets&src=typd&q=zachleat.com{{ page.url | url_encode }}">Discuss on Twitter</a>
 
 		<form class="toggle-features-form">
-			<button type="button" aria-pressed="true" class="toggle toggle-css">
-				<span class="toggle-control"></span>
-				<span class="toggle-text">CSS</span>
-			</button>
-
-			<button type="button" aria-pressed="true" class="toggle" data-toggle-class="font-fallback">
-				<span class="toggle-control"></span>
-				<span class="toggle-text">Web Fonts</span>
-			</button>
+			<div class="lo">
+				<div>
+					<button type="button" aria-pressed="true" class="toggle toggle-css">
+						<span class="toggle-control"></span>
+						<span class="toggle-text">CSS</span>
+					</button>
+				</div>
+				<div>
+					<button type="button" aria-pressed="true" class="toggle" data-toggle-class="font-fallback">
+						<span class="toggle-control"></span>
+						<span class="toggle-text">Web Fonts</span>
+					</button>
+				</div>
 
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[urlWithOrigin] %}
-			<a href="https://www.speedlify.dev/zachleat.com/" class="speedlify-link">
-				<speedlify-score hash="{{ speedlify[urlWithOrigin].hash }}" speedlify-url="https://www.speedlify.dev" score weight requests></speedlify-score>
-			</a>
+				<a href="https://www.speedlify.dev/zachleat.com/" class="speedlify-link">
+					<speedlify-score hash="{{ speedlify[urlWithOrigin].hash }}" speedlify-url="https://www.speedlify.dev" score weight requests></speedlify-score>
+				</a>
 {%- endif %}
+			</div>
 		</form>
 {% comment %}
 		<form id="fontloademu" class="fontloademu" style="display: none">

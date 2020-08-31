@@ -1,0 +1,22 @@
+.lo {
+  --lo-stackpoint: initial;
+  --lo-margin-h: 0px;
+  --lo-margin-v: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: calc(-1 * var(--lo-margin-v));
+  margin-left: calc(-1 * var(--lo-margin-h));
+}
+.lo > * {
+  /* if a margin is in play, account for this in our stackpoint calculations */
+  /* notably this will also work if a stackpoint is not used. */
+  --lo-margin-mod: calc( var(--lo-stackpoint, -1 * var(--lo-margin-h)) - var(--lo-stackpoint, 0px) + var(--lo-margin-h) );
+  --lo-stackpoint-calc: calc( ( var(--lo-stackpoint, 100%) - 100% + var(--lo-margin-mod) ) * 999);
+
+  flex-grow: 1;
+  flex-basis: var(--lo-stackpoint-calc);
+  margin: 0;
+  margin-top: var(--lo-margin-v);
+  margin-left: var(--lo-margin-h);
+}
