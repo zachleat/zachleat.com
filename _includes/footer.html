@@ -16,7 +16,7 @@
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[urlWithOrigin] %}
 			<a href="https://www.speedlify.dev/zachleat.com/" class="speedlify-link">
-				<speedlify-score hash="{{ speedlify[urlWithOrigin].hash }}" speedlify-url="https://www.speedlify.dev"></speedlify-score>
+				<speedlify-score hash="{{ speedlify[urlWithOrigin].hash }}" speedlify-url="https://www.speedlify.dev" score weight requests></speedlify-score>
 			</a>
 {%- endif %}
 		</form>

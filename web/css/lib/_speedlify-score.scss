@@ -3,13 +3,12 @@ speedlify-score {
 	flex-wrap: wrap;
 	align-items: center;
 }
-.speedlify-summary {
-	margin-right: 1em;
-}
+/* The Lighthouse scoring circles */
 .speedlify-score {
 	font-size: 0.8125em; /* 13px /16 */
 	width: 2.6em;
 	height: 2.6em;
+	line-height: 1;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -25,4 +24,31 @@ speedlify-score {
 .speedlify-score-bad {
 	color: #ff4e42;
 	border-color: currentColor;
+}
+.speedlify-rank:before {
+	content: "Rank #";
+}
+.speedlify-rank-change {
+	font-size: 0.8125em; /* 13px /16 */
+}
+.speedlify-rank-change:before {
+	line-height: 1;
+}
+.speedlify-rank-change.up {
+	color: green;
+}
+.speedlify-rank-change.up:before {
+	content: "⬆";
+}
+.speedlify-rank-change.down {
+	color: red;
+}
+.speedlify-rank-change.down:before {
+	content: "⬇";
+}
+speedlify-score > :not(.speedlify-score) {
+	margin-left: 0.625em; /* 10px /16 */
+}
+speedlify-score > :first-child {
+	margin-left: 0;
 }
