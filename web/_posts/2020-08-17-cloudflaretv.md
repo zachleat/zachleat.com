@@ -1,5 +1,5 @@
 ---
-title: "Cloudflare’s Creative Corner with the Netlify team"
+title: Cloudflare’s Creative Corner with the Netlify team
 tags:
   - speaking
 ---
