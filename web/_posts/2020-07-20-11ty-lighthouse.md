@@ -25,7 +25,7 @@ First I manually compiled a list of starter project demo URLs to [Speedlify, a s
 
 ### Step 2: Fetch the Data
 
-For my personal website, [I added Lighthouse scores to the footer](/web/lighthouse-in-footer/) using a client-side request to the Speedlify API. That wouldn’t work here—at time of writing there are 18 starter projects. I wouldn’t want 18 requests to the Speedlify API on every page load! So I modified my [Eleventy data request to fetch and cache the API data at build time](https://github.com/11ty/11ty-website/blob/master/_data/speedlify.js).
+For my personal website, [I added Lighthouse scores to the footer](/web/lighthouse-in-footer/) using a client-side request to the Speedlify API. That wouldn’t work here—at time of writing there are 18 starter projects. I wouldn’t want 18 requests to the Speedlify API on every page load! So I modified my [Eleventy data request to fetch and cache the API data at build time](https://github.com/11ty/11ty-website/blob/81d5cc8f0e166ea3c2586558f60b670542f4901b/_data/speedlifyStarters.js).
 
 <div class="primarylink"><a href="https://www.11ty.dev/docs/starter/">Eleventy Starter Projects with Lighthouse Scores</a></div>
 
