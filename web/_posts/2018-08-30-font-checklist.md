@@ -4,8 +4,8 @@ tags:
   - font-loading
   - popular-posts
   - popular-posts-total
-postRank: 8
-postRankTotalViews: 11
+postRank: 7
+postRankTotalViews: 10
 ---
 
 <style>
