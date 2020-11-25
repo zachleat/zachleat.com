@@ -53,10 +53,10 @@ banner[hidden] {
 ```
 
 ```html
-<banner>
+<announcement-banner>
   <a href="https://www.netlify.com/sustainability/">Read about our Sustainability</a>
   <button type="button" data-banner-close>Close</button>
-</banner>
+</announcement-banner>
 ```
 
 ### JavaScript
@@ -109,7 +109,7 @@ class Banner extends HTMLElement {
   }
 }
 
-window.customElements.define("banner", Banner);
+window.customElements.define("announcement-banner", Banner);
 ```
 
 Astute readers will notice that the above is a web component but let’s just keep that between us.
