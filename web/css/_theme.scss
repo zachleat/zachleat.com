@@ -1205,7 +1205,7 @@ th.numeric {
 	padding: .5rem .5rem 1rem .5rem;
 	border: none;
 	border-radius: 5px;
-	box-shadow: 0 0 0 2px #add8e6;
+	box-shadow: 0 0 0 var(--box-shadow-width, 2px) #add8e6;
 	position: relative;
 	margin: .5rem -.25rem 1.5rem;
 
@@ -1314,6 +1314,19 @@ pre + .livedemo {
 .livedemo + .caption {
 	margin-top: -1rem;
 	margin-bottom: 1rem;
+}
+
+/* Centered, not full width, usually for an image */
+.livedemo-auto {
+	--box-shadow-width: 6px;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+.livedemo-auto:after {
+	font-size: 0.875rem; /* 14px /16 */
+	bottom: 0;
 }
 
 /* Demo Link */
