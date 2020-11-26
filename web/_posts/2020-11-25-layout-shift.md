@@ -38,8 +38,8 @@ We also split the JavaScript code for the component into two separate pieces: on
 We use opacity to toggle the close button so that it doesn’t reflow the component when it’s enabled via JavaScript.
 
 ```css
-.banner--hide banner,
-banner[hidden] {
+.banner--hide announcement-banner,
+announcement-banner[hidden] {
   display: none;
 }
 [data-banner-close] {
