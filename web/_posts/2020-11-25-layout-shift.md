@@ -33,6 +33,8 @@ This changes our previously mentioned Step 1, the page’s initial render, show 
 
 We also split the JavaScript code for the component into two separate pieces: one piece to check whether or not the user has the preference to hide and a separate Web Component to bind the events.
 
+_Update_: I’ve packaged up the code below and [put it on GitHub for re-use](https://github.com/zachleat/herald-of-the-dog).
+
 ### CSS and HTML
 
 We use opacity to toggle the close button so that it doesn’t reflow the component when it’s enabled via JavaScript.
@@ -65,7 +67,7 @@ announcement-banner[hidden] {
 
 ```js
 // the current banner CTA URL, we inject this from a JSON data file
-let ctaUrl = "https://www.netlify.com/pricing/";
+let ctaUrl = "https://www.netlify.com/sustainability/";
 let savedCtaUrl = localStorage.getItem("banner--cta-url");
 
 if(savedCtaUrl === ctaUrl) {
