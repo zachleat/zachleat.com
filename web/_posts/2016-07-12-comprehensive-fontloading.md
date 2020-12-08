@@ -221,7 +221,7 @@ Use the CSS Font Loading API with a polyfill to detect when a specific font has 
 
 ### Pros
 
-* Rendering performance: Eliminates FOIT. This method is tried and tested. It’s [one of the approaches recommended by TypeKit](https://helpx.adobe.com/typekit/using/embed-codes.html#Advancedembedcode).
+* Rendering performance: Eliminates FOIT. This method is tried and tested. It’s [one of the approaches recommended by TypeKit](https://helpx.adobe.com/fonts/user-guide.html/fonts/using/embed-codes.ug.html#JavaScriptembedcode).
 * Flexibility: Easy to group requests into a single repaint (use one class for multiple web font loads)
 * Scalability: Requests happen in parallel
 * Robust: if the request fails, fallback text is still shown.
