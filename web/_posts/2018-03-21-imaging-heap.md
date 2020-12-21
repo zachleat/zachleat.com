@@ -15,6 +15,12 @@ Works out-of-the-box with `img` (of course), `img[srcset]`, `img[srcset][sizes]`
 * View on: [GitHub](https://github.com/filamentgroup/imaging-heap) or [npm](https://www.npmjs.com/package/imaging-heap) 
 * [Retweet](https://twitter.com/zachleat/status/976535994781650944)
 
+
+## Inspired by
+
+* Hugely inspired by the [NCC Image Checker Chrome Extension](https://github.com/nccgroup/image-checker) (which is a great visual tool). The main difference here is that imaging-heap will collate data across viewport sizes and device pixel ratios.
+* [RespImageLint](https://ausi.github.io/respimagelint/) a Linter Bookmarklet for Responsive Images
+
 ## Sample output
 
 ```
