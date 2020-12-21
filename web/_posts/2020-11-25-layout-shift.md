@@ -1,6 +1,8 @@
 ---
-title: 'Ruthlessly Eliminating Layout Shift on netlify.com'
+title: Ruthlessly Eliminating Layout Shift on netlify.com
 tags:
+  - popular-posts
+postRank: 3
 ---
 On the Netlify web site, we have a little banner that appears at the top to drive traffic to new and exciting things happening in Netlify-land.
 

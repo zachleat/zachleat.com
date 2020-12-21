@@ -3,7 +3,7 @@ title: Use Speedlify to Continuously Measure Site Performance
 tags:
   - project
   - popular-posts
-postRank: 3
+postRank: 5
 ---
 When launching a brand new web site, it’s fairly common to run testing tools to ensure that the site is fast and follows best practices. One popular tool to accomplish these goals is [Google’s Lighthouse](https://developers.google.com/web/tools/lighthouse). It works great and is pretty comprehensive.
 
