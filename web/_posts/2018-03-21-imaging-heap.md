@@ -8,7 +8,7 @@ _From deep in the archives (2 years late!), filed under “things I built but ne
 
 A command line tool to measure the efficiency of your responsive image markup across viewport sizes and device pixel ratios.
 
-Works out-of-the-box with img (of course), img[srcset], img[srcset][sizes], picture, picture [srcset], picture [srcset][sizes]. Ignores .svg files. No support for background images (yet?).
+Works out-of-the-box with `img` (of course), `img[srcset]`, `img[srcset][sizes]`, `picture`, `picture[srcset]`, `picture[srcset][sizes]`. Ignores `*.svg` files. No support for background images yet.
 
 * `npm install -g imaging-heap`
 * e.g. `imagingheap https://www.zachleat.com/`
