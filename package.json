@@ -57,7 +57,7 @@
     "popular": "./refresh-populars.sh",
     "default": "grunt",
     "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
-    "deploy": "./refresh-populars.sh && grunt deploy"
+    "deploy": "nvm use 10 && ./refresh-populars.sh && grunt deploy"
   },
   "repository": {
     "type": "git",
