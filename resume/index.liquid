@@ -112,7 +112,7 @@ twitterAccounts:
             <ul>
               {%- for account in twitterAccounts %}
               {%- assign followersObj = twitter[account] %}
-              <li><a href="https://twitter.com/{{ account }}" class="resume-nbsp">{% imgavatar account  %}@{{ account }}</a> <span class="resume-subnote">({{ followersObj | renderNumber }} followers)</span></li>
+              <li><a href="https://twitter.com/{{ account }}" class="resume-nbsp">{% imgavatar account  %}@{{ account }}</a>{% comment %} <span class="resume-subnote">({{ followersObj | renderNumber }} followers)</span>{% endcomment %}</li>
               {%- endfor %}
             </ul>
           </li>
