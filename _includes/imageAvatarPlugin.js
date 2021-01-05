@@ -9,7 +9,7 @@ function getImageOptions(username) {
 		formats: ["avif", "webp", "jpeg"],
 		cacheDuration: "4w",
 		filenameFormat: function(id, src, width, format) {
-			return `${username}.${format}`;
+			return `${username.toLowerCase()}.${format}`;
 		}
 	};
 }
@@ -32,8 +32,9 @@ module.exports = function(eleventyConfig) {
 		usernames = new Set();
 	});
 	eleventyConfig.on("afterBuild", () => {
-		console.log( "Fetching Twitter avatars for: ", usernames );
-		getTwitterAvatarUrl(Array.from(usernames)).then(results => {
+		let arr = Array.from(usernames);
+		console.log( `Fetching Twitter avatars (${arr.length}): ${arr}` );
+		getTwitterAvatarUrl(arr).then(results => {
 			for(let result of results) {
 				fetchImageData(result.username, result.url.large);
 			}
