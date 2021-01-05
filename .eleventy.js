@@ -10,6 +10,7 @@ const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, 
 const randomCase = require('random-case');
 
 const getBaseUrl = require("./_includes/getBaseUrl");
+const pluginImage = require("./_includes/imagePlugin");
 const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
 
 function hasEleventyFeature(featureName) {
@@ -33,6 +34,7 @@ module.exports = function(eleventyConfig) {
 	/* PLUGINS */
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
+	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
 
 	/* COPY */
