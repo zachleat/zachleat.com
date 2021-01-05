@@ -1,57 +1,58 @@
 const getTwitterAvatarUrl = require("twitter-avatar-url");
-const eleventyImg = require("@11ty/eleventy-img");
-const RemoteCache = require("@11ty/eleventy-cache-assets");
-const AssetCache = RemoteCache.AssetCache;
+const eleventyImage = require("@11ty/eleventy-img");
 
-function getImageMarkup(imageData, props = {}) {
-	if(!props.alt) {
-		throw new Error("alt property required in `img` shortcode.")
-	}
+function getImageOptions(username) {
+	return {
+		widths: [72],
+		urlPath: "/img/avatars/",
+		outputDir: "./_site/img/avatars/",
+		formats: ["avif", "webp", "jpeg"],
+		cacheDuration: "4w",
+		filenameFormat: function(id, src, width, format) {
+			return `${username}.${format}`;
+		}
+	};
+}
 
-	let webp = imageData.webp[0];
-	let jpeg = imageData.jpeg[0];
-
-	return [
-"<picture>",
-	`<source type="${webp.sourceType}" srcset="${webp.srcset}">`,
-	`<img alt="${props.alt}" src="${jpeg.url}" width="${jpeg.width}" height="${jpeg.height}"${props.class ? ` class="${props.class}"` : ""}${props.loading ? ` loading="${props.loading}"` : ""}>`,
-"</picture>"].join("");
-};
-
-async function getImageData(url) {
+function fetchImageData(username, url) {
 	if(!url) {
 		throw new Error("src property required in `img` shortcode.");
 	}
-
-	let imageData = await eleventyImg(url, {
-		widths: [72],
-		urlPath: "/img/",
-		outputDir: "img",
-		formats: ["webp", "jpeg"],
-		cacheDuration: "4w",
+	
+	// return nothing, even though this returns a promise
+	eleventyImage(url, getImageOptions(username)).then(function() {
+		
 	});
-
-	return imageData;
 }
 
 module.exports = function(eleventyConfig) {
+	let usernames;
+
+	eleventyConfig.on("beforeBuild", () => {
+		usernames = new Set();
+	});
+	eleventyConfig.on("afterBuild", () => {
+		console.log( "Fetching Twitter avatars for: ", usernames );
+		getTwitterAvatarUrl(Array.from(usernames)).then(results => {
+			for(let result of results) {
+				fetchImageData(result.username, result.url.large);
+			}
+		});
+	});
+
 
 	eleventyConfig.addLiquidShortcode("imgavatar", async function(username) {
-		let asset = new AssetCache(`twitter-avatar-url-${username}`);
-		if(asset.isCacheValid("4w")) {
-			return asset.getCachedValue();
-		}
+		usernames.add(username.toLowerCase());
 
-		let avatarInfo = await getTwitterAvatarUrl(username);
-		console.log( `Twitter image for ${username}:`, avatarInfo.url.large );
-		let imgData = await getImageData(avatarInfo.url.large);
-		let markup = getImageMarkup(imgData, {
+		// We know where the images will be
+		let fakeUrl = `https://twitter.com/${username}.jpg`;
+		let imgData = eleventyImage.statsByDimensionsSync(fakeUrl, 400, 400, getImageOptions(username));
+		let markup = eleventyImage.generateHTML(imgData, {
 			alt: `${username}’s Avatar`,
 			class: "z-avatar",
-			loading: "lazy"
+			loading: "lazy",
+			decoding: "async",
 		});
-
-		asset.save(markup, "text");
 
 		return markup;
 	});
