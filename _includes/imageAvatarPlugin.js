@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
 	});
 	eleventyConfig.on("afterBuild", () => {
 		let arr = Array.from(usernames);
-		console.log( `Fetching Twitter avatars (${arr.length}): ${arr}` );
+		console.log( `Generating ${arr.length} Twitter avatars.` );
 		getTwitterAvatarUrl(arr).then(results => {
 			for(let result of results) {
 				fetchImageData(result.username, result.url.large);
@@ -53,6 +53,8 @@ module.exports = function(eleventyConfig) {
 			class: "z-avatar",
 			loading: "lazy",
 			decoding: "async",
+		}, {
+			whitespaceMode: "inline"
 		});
 
 		return markup;
