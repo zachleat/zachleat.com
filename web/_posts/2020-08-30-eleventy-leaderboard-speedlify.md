@@ -1,5 +1,7 @@
 ---
 title: Eleventy Leaderboards v2 via Speedlify
+eleventyComputed:
+  titleHtml: '{% imgavatar "eleven_ty", "z-avatar-eq" %}Eleventy Leaderboards v2 via {% imgavatar "speedlify", "z-avatar-eq" %}Speedlify'
 tags:
   - project
 ---
