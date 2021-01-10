@@ -42,7 +42,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 
-	eleventyConfig.addLiquidShortcode("imgavatar", async function(username) {
+	eleventyConfig.addLiquidShortcode("imgavatar", async function(username, classes = "") {
 		usernames.add(username.toLowerCase());
 
 		// We know where the images will be
@@ -50,7 +50,7 @@ module.exports = function(eleventyConfig) {
 		let imgData = eleventyImage.statsByDimensionsSync(fakeUrl, 400, 400, getImageOptions(username));
 		let markup = eleventyImage.generateHTML(imgData, {
 			alt: `${username}’s Avatar`,
-			class: "z-avatar",
+			class: "z-avatar" + (classes ? ` ${classes}` : ""),
 			loading: "lazy",
 			decoding: "async",
 		}, {
