@@ -2,29 +2,31 @@
 title: Ruthlessly Eliminating Layout Shift on netlify.com
 tags:
   - popular-posts
-postRank: 5
 imgNoPictureOptions:
-  formats: ["jpeg"]
-  widths: [null]
+  formats:
+    - jpeg
+  widths:
+    - null
 imageAttr:
   banner:
-    src: "./web/img/posts/layout-shift/banner.png"
+    src: ./web/img/posts/layout-shift/banner.png
     alt: Screenshot of the banner on netlify.com
   oldsite:
-    src: "./web/img/posts/layout-shift/old-site.png"
+    src: ./web/img/posts/layout-shift/old-site.png
     alt: Filmstrip showing hidden banner for ~600ms on old netlify.com design
     class: primary
   newsite:
-    src: "./web/img/posts/layout-shift/new-site.png"
+    src: ./web/img/posts/layout-shift/new-site.png
     alt: Filmstrip showing hidden banner for ~600ms on the new netlify.com design
     class: primary
   results:
-    src: "./web/img/posts/layout-shift/new-site-fixed.png"
+    src: ./web/img/posts/layout-shift/new-site-fixed.png
     alt: Filmstrip showing banner visible on first render
     class: primary
   chart:
-    src: "./web/img/posts/layout-shift/layout-shifts.png"
-    alt: "Graph of Layout Shifts: previous has .35 and new has 0"
+    src: ./web/img/posts/layout-shift/layout-shifts.png
+    alt: 'Graph of Layout Shifts: previous has .35 and new has 0'
+postRank: 5
 ---
 On the Netlify web site, we have a little banner that appears at the top to drive traffic to new and exciting things happening in Netlify-land.
 
