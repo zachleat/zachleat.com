@@ -28,7 +28,6 @@ module.exports = function(grunt) {
 			},
 			js: {
 				src: [
-					// '<%= config.jsSrc %>reflow-log.js',
 					'<%= config.jsSrc %>initial.js',
 					'<%= config.jsSrc %>fonts.js'
 				],
@@ -36,9 +35,6 @@ module.exports = function(grunt) {
 			},
 			jsAsync: {
 				src: [
-					// TODO get rid of this and switch to the CSS Font Loading API
-					'node_modules/fontfaceonload/dist/fontfaceonload.js',
-					'<%= config.jsSrc %>fonts-polyfill-fontfaceonload.js',
 					'node_modules/fg-loadjs/loadJS.js',
 					'<%= config.jsSrc %>timeago.js',
 					'<%= config.jsSrc %>async.js'
