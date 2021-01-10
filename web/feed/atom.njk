@@ -7,7 +7,7 @@ permalink: /web/feed/atom.xml
 	<subtitle>{{ site.description }}</subtitle>
 	<link href="https://www.zachleat.com/web/feed/" rel="self"/>
 	<link href="https://www.zachleat.com/web/"/>
-	<updated>{{ collections.feedPosts | rssNewestUpdatedDate }}</updated>
+	<updated>{{ collections.feedPosts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
 	<id>http://www.zachleat.com/</id>
 	<author>
 		<name>Zach Leatherman</name>
@@ -19,7 +19,7 @@ permalink: /web/feed/atom.xml
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link href="{{ absolutePostUrl }}"/>
-		<updated>{{ post.date | rssDate }}</updated>
+		<updated>{{ post.date | dateToRfc3339 }}</updated>
 		<id>{{ idUrl }}</id>
 		<content type="html">
 			{%- if post.data.external_url and not post.templateContent %}

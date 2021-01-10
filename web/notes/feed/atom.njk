@@ -9,7 +9,7 @@ override:tags: []
 	<subtitle>The run-off from a web development blog written by @zachleat.</subtitle>
 	<link href="https://www.zachleat.com/web/notes/feed/" rel="self"/>
 	<link href="https://www.zachleat.com/web/notes/"/>
-	<updated>{{ collections.note | rssNewestUpdatedDate }}</updated>
+	<updated>{{ collections.note | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
 	<id>http://www.zachleat.com/web/notes/</id>
 	<author>
 		<name>Zach Leatherman</name>
@@ -21,7 +21,7 @@ override:tags: []
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link href="{{ absolutePostUrl }}"/>
-		<updated>{{ post.date | rssDate }}</updated>
+		<updated>{{ post.date | dateToRfc3339 }}</updated>
 		<id>{{ idUrl }}</id>
 		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 	</entry>
