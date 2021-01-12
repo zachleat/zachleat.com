@@ -2,7 +2,7 @@
 title: A Love Letter to Filament Group
 tags: []
 eleventyComputed:
-  titleHtml: A Love Letter to {% imgavatar "filamentgroup", "z-avatar-eq" %}Filament Group
+  titleHtml: 'A Love Letter to {% imgavatar "filamentgroup", "z-avatar-eq" %}Filament Group'
 ---
 It is with great sadness that I must announce that these next two weeks will be my last as a member of [{% imgavatar "filamentgroup" %}Filament Group](https://www.filamentgroup.com/).
 
