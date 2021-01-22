@@ -1124,13 +1124,6 @@ th.numeric {
 }
 @supports (display: grid) {
 	@media (min-width: $twoColLayoutMinWidth) and (min-height: 40.625em) {
-		.tags .tag-popular {
-			display: none;
-		}
-		.tags .tag-popular.has-toc {
-			display: inline-block;
-		}
-
 		/* Top 5 posts */
 		.tags.tags-rail-top5 {
 			display: block;

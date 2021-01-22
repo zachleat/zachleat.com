@@ -345,6 +345,7 @@ module.exports = function(eleventyConfig) {
 		return !!item.inputPath.match(/\/_posts\//) &&
 				(!hasTag(item, "external") || hasTag(item, "writing") || (item.data.external_url || "").indexOf("filamentgroup.com") > -1) &&
 				!hasTag(item, "speaking") &&
+				!hasTag(item, "note") &&
 				!hasCategory(item, "presentations");
 	}
 	function isSpeaking(item) {
