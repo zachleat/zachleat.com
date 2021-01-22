@@ -1,5 +1,7 @@
 ---
 title: Get all Font Sizes in use on a Web Page
+tags:
+  - note
 note-tags:
   - JavaScript
   - Fonts

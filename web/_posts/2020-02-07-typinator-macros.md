@@ -1,5 +1,7 @@
 ---
 title: My Favorite Typinator Macros
+tags:
+  - note
 note-tags:
   - Productivity
   - Utilities

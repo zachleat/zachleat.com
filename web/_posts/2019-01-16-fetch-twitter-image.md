@@ -1,5 +1,7 @@
 ---
 title: Download a Twitter User’s Profile Image
+tags:
+  - note
 note-tags:
   - JavaScript
   - Command Line

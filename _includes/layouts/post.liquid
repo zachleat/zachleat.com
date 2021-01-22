@@ -14,6 +14,9 @@ tmpl: page
 {% if tags contains 'video' %}
 			<em class="words">Watch in {{ medialength | medialengthCleanup }}</em>
 {% endif %}
+{% if tweet %}
+			<em>Inspired by <a href="{{ tweet }}">a tweet</a>.</em>
+{% endif %}
 		</div>
 {% if deprecated %}
 		<article class="content-sibling">

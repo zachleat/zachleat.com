@@ -17,9 +17,10 @@ enableWebmentions: true
 					<option value="speaking">only speaking</option>
 					<option value="web-fonts">only web fonts</option>
 					<option value="eleventy">only Eleventy</option>
+					<option value="note">only notes</option>
 				</select>
 				&#160;
-				<span data-filter-results="post/posts">{{ collections.posts | size }} posts</span> since 2007.
+				<span data-filter-results="post/posts">{{ collections.posts | size }} posts</span>
 			</form>
 			<ol id="main-posts-list" class="posts h-feed">
 				{% comment %}

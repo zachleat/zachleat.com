@@ -1,5 +1,7 @@
 ---
 title: Navigate directly to a GitHub Issue
+tags:
+  - note
 note-tags:
   - Git
   - Command Line

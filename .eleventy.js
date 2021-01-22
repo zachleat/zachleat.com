@@ -335,33 +335,6 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addCollection("noteTagList", function(collection) {
-		let noteTags = new Set();
-		collection.getAll().forEach(function(item) {
-			if(Array.isArray(item.data["note-tags"])) {
-				for(let noteTag of item.data["note-tags"]) {
-					noteTags.add(noteTag);
-				}
-			}
-		});
-		return Array.from(noteTags).sort();
-	});
-
-	eleventyConfig.addCollection("noteTagCollections", function(collection) {
-		let resultArrays = {};
-		collection.getAll().forEach(function(item) {
-			if(Array.isArray(item.data["note-tags"])) {
-				for(let noteTag of item.data["note-tags"]) {
-					if( !resultArrays[noteTag] ) {
-						resultArrays[noteTag] = [];
-					}
-					resultArrays[noteTag].push(item);
-				}
-			}
-		});
-		return resultArrays;
-	});
-
 	function hasTag(post, tag) {
 		return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
 	}
@@ -378,15 +351,7 @@ module.exports = function(eleventyConfig) {
 		return "categories" in item.data &&
 			(item.data.categories || []).indexOf("presentations") > -1 || hasTag(item, "speaking");
 	}
-	
-	eleventyConfig.addLiquidFilter("isWriting", function(collectionItem) {
-		return isWriting(collectionItem);
-	});
-	
-	eleventyConfig.addLiquidFilter("isSpeaking", function(collectionItem) {
-		return isSpeaking(collectionItem);
-	});
-	
+
 	eleventyConfig.addLiquidFilter("getFilterCategories", function(collectionItem) {
 		let categories = [];
 		if(isSpeaking(collectionItem)) {
@@ -400,6 +365,9 @@ module.exports = function(eleventyConfig) {
 		}
 		if(hasTag(collectionItem, "font-loading") || hasCategory(collectionItem, "font-loading")) {
 			categories.push("web-fonts");
+		}
+		if(hasTag(collectionItem, "note")) {
+			categories.push("note");
 		}
 		return categories.join(",");
 	});
