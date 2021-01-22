@@ -20,7 +20,7 @@
 	{% if post.data.tags contains 'external' %}<span class="external" title="External Link"><span class="icon-link-external"></span></span>{% endif %}
 	
 	<a href="{% if post.data.tags contains 'external' %}{{ post.data.external_url }}{% else %}{{ post.url | url }}{% endif %}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
-	{%- if post.data.event_country %}{{ post.data.event_country }} {% endif -%}
+	{%- imgavatarForExternalUrl post.data.external_url "z-avatar-eq" -%}
 	{%- if view == 'project' -%}
 		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}
 	{%- else -%}
