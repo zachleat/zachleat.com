@@ -1451,3 +1451,18 @@ pre + .livedemo {
 	color: transparent;
 }
 
+/* Filtering select element */
+.filter-posts-form {
+	opacity: .4;
+	pointer-events: none;
+}
+.filter-container--js .filter-posts-form {
+	opacity: 1;
+	pointer-events: auto;
+}
+select[data-filter-bind] {
+	font-size: inherit;
+	color: inherit;
+	background: inherit;
+	border: none;
+}

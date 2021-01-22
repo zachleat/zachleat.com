@@ -374,6 +374,35 @@ module.exports = function(eleventyConfig) {
 				!hasTag(item, "speaking") &&
 				!hasCategory(item, "presentations");
 	}
+	function isSpeaking(item) {
+		return "categories" in item.data &&
+			(item.data.categories || []).indexOf("presentations") > -1 || hasTag(item, "speaking");
+	}
+	
+	eleventyConfig.addLiquidFilter("isWriting", function(collectionItem) {
+		return isWriting(collectionItem);
+	});
+	
+	eleventyConfig.addLiquidFilter("isSpeaking", function(collectionItem) {
+		return isSpeaking(collectionItem);
+	});
+	
+	eleventyConfig.addLiquidFilter("getFilterCategories", function(collectionItem) {
+		let categories = [];
+		if(isSpeaking(collectionItem)) {
+			categories.push("speaking");
+		}
+		if(isWriting(collectionItem)) {
+			categories.push("writing");
+		}
+		if(hasTag(collectionItem, "eleventy")) {
+			categories.push("eleventy");
+		}
+		if(hasTag(collectionItem, "font-loading") || hasCategory(collectionItem, "font-loading")) {
+			categories.push("web-fonts");
+		}
+		return categories.join(",");
+	});
 
 	eleventyConfig.addCollection("writing", function(collection) {
 		let posts = collection.getSortedByDate().reverse();
@@ -408,7 +437,7 @@ module.exports = function(eleventyConfig) {
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
-			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("presentations") > -1 || hasTag(item, "speaking");
+			return isSpeaking(item);
 		}).reverse();
 	});
 

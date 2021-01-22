@@ -3,22 +3,5 @@ title: Writing
 layout: default
 tmpl: list
 ---
-
-<div class="layout-list">
-	<article>
-		<h1 class="primary-title">{{ title }}</h1>
-		<p>{{ collections.writing | size }} posts since 2007. Show <a href="/web/">all archives</a>.</p>
-		<ol id="main-posts-list" class="posts">
-			{% comment %}
-				liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
-			{% endcomment %}
-			{% assign year = "" %}
-			{% assign currentyear = "" %}
-			{% assign currentyearpostcount = 0 %}
-			{% assign listItems = collections.writing %}
-			{% for post in collections.writing %}
-				{% include post-list-entry.html %}
-			{% endfor %}
-		</ol>
-	</article>
-</div><!-- /.layout-list -->
+<h1>This page has moved</h1>
+<a href="/web/">This functionality on this page has moved to the Archives page. Filter “only writing” using the select menu at the top.</a>

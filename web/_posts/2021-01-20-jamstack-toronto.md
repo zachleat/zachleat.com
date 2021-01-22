@@ -7,6 +7,7 @@ categories:
 tags:
   - external
   - speaking
+  - eleventy
 metadata:
   schedule: true
   speaking:

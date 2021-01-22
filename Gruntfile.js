@@ -48,6 +48,7 @@ module.exports = function(grunt) {
 					'<%= config.jsSrc %>toggle.js',
 					'node_modules/infinity-burger/infinity-burger.js',
 					'node_modules/speedlify-score/speedlify-score.js',
+					'node_modules/@zachleat/filter-container/filter-container.js',
 					],
 				dest: '<%= config.distFolder %>defer.js'
 			}

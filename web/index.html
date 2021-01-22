@@ -8,18 +8,31 @@ enableWebmentions: true
 <div class="layout-list">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
-		<p>{{ collections.posts | size }} posts since 2007. Show <a href="/web/writing/">only writing</a>.</p>
-		<ol id="main-posts-list" class="posts h-feed">
-			{% comment %}
-				liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
-			{% endcomment %}
-			{% assign year = "" %}
-			{% assign currentyear = "" %}
-			{% assign currentyearpostcount = 0 %}
-			{% assign listItems = collections.posts %}
-			{% for post in collections.posts %}
-				{% include post-list-entry.html, hfeed: true %}
-			{% endfor %}
-		</ol>
+		<filter-container>
+			<form class="filter-posts-form">
+				Show
+				<select data-filter-bind="category" data-filter-delimiter=",">
+					<option value="">all posts</option>
+					<option value="writing">only writing</option>
+					<option value="speaking">only speaking</option>
+					<option value="web-fonts">only web fonts</option>
+					<option value="eleventy">only Eleventy</option>
+				</select>
+				&#160;
+				<span data-filter-results="post/posts">{{ collections.posts | size }} posts</span> since 2007.
+			</form>
+			<ol id="main-posts-list" class="posts h-feed">
+				{% comment %}
+					liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
+				{% endcomment %}
+				{% assign year = "" %}
+				{% assign currentyear = "" %}
+				{% assign currentyearpostcount = 0 %}
+				{% assign listItems = collections.posts %}
+				{% for post in collections.posts %}
+					{% include post-list-entry.html, hfeed: true %}
+				{% endfor %}
+			</ol>
+		</filter-container>
 	</article>
 </div><!-- /.layout-list -->
