@@ -61,9 +61,9 @@ twitterAccounts:
         <ul class="resume-desc">
           <li><a href="/web/writing/">{{ collections.writing | size | renderNumber }} posts</a> since February 2007, <a href="/web/fonts/">{{ collections.font-loading | size | renderNumber }} entries on Web Fonts</a>. On my writing,
             <ul>
-              <li><span class="resume-nbsp">{% imgavatar "sarah_edo" %}Sarah</span> Drasner <a href="https://twitter.com/sarah_edo/status/1067122136412614656">said</a> she <em>“shaved full seconds off this big application […] by following some of Zach’s great materials […]”</em></li>
-              <li><span class="resume-nbsp">{% imgavatar "adactio" %}Jeremy</span> Keith <a href="https://adactio.com/links/14311">twice</a> <a href="https://adactio.com/journal/14329">said</a> <em>“Always ask yourself What Would Zach Do?”</em></li>
-              <li><span class="resume-nbsp">{% imgavatar "paul_irish" %}Paul</span> Irish <a href="https://twitter.com/paul_irish/status/295705697117691904">called me</a> <em>“damn smart”</em>—a debatable claim, to be sure.</li>
+              <li><span class="resume-nbsp">{% imgavatar "sarah_edo", "z-avatar-first" %}Sarah</span> Drasner <a href="https://twitter.com/sarah_edo/status/1067122136412614656">said</a> she <em>“shaved full seconds off this big application […] by following some of Zach’s great materials […]”</em></li>
+              <li><span class="resume-nbsp">{% imgavatar "adactio", "z-avatar-first" %}Jeremy</span> Keith <a href="https://adactio.com/links/14311">twice</a> <a href="https://adactio.com/journal/14329">said</a> <em>“Always ask yourself What Would Zach Do?”</em></li>
+              <li><span class="resume-nbsp">{% imgavatar "paul_irish", "z-avatar-first" %}Paul</span> Irish <a href="https://twitter.com/paul_irish/status/295705697117691904">called me</a> <em>“damn smart”</em>—a debatable claim, to be sure.</li>
             </ul>
           </li>
           <li>{{ 2658000 | renderNumber }} lifetime page views and growing.<!-- Manual update required, updated 2020 Jan 9 --></li>
@@ -92,11 +92,11 @@ twitterAccounts:
       <li>
         <strong>Open Source</strong>
         <ul class="resume-desc">
-          <li><a href="https://www.11ty.io/">{% imgavatar "eleven_ty" %}Eleventy</a> <span class="resume-subnote">(☆ {{ stargazers.eleventy | renderNumber }})</span> <span class="p-skill">Open Source Author</span>. A simpler static site generator. Used in production by Google (<a href="https://v8.dev">v8.dev</a>, <a href="https://web.dev">web.dev</a>, and <a href="https://developer.chrome.com/devsummit/">Chrome’s dev summit</a>), <a href="https://worldwideweb.cern.ch/colophon/">CERN</a>, <a href="https://conferences.css-tricks.com">CSS-Tricks</a>, <a href="https://everydayia.com/">A Book Apart</a>, <a href="https://www.filamentgroup.com">Filament Group</a>, <a href="https://templates.netlify.com">Netlify</a>, <a href="https://khanacademyannualreport.org">Khan Academy</a>, and more.
+          <li><a href="https://www.11ty.io/">{% imgavatar "eleven_ty", "z-avatar-first" %}Eleventy</a> <span class="resume-subnote">(☆ {{ stargazers.eleventy | renderNumber }})</span> <span class="p-skill">Open Source Author</span>. A simpler static site generator. Used in production by Google (<a href="https://v8.dev">v8.dev</a>, <a href="https://web.dev">web.dev</a>, and <a href="https://developer.chrome.com/devsummit/">Chrome’s dev summit</a>), <a href="https://worldwideweb.cern.ch/colophon/">CERN</a>, <a href="https://conferences.css-tricks.com">CSS-Tricks</a>, <a href="https://everydayia.com/">A Book Apart</a>, <a href="https://www.filamentgroup.com">Filament Group</a>, <a href="https://templates.netlify.com">Netlify</a>, <a href="https://khanacademyannualreport.org">Khan Academy</a>, and more.
             <ul>
               <li>Two-time winner of the Google Open Source Peer Bonus Award for Eleventy in <a href="https://opensource.googleblog.com/2018/03/congratulating-open-source-peer-bonus-winners.html" class="dtstart">2018</a> and <a href="https://opensource.googleblog.com/2019/04/google-open-source-peer-bonus-winners.html" class="dtstart">2019</a>.</li>
-              <li><span class="resume-nbsp">{% imgavatar "addyosmani" %}Addy</span> Osmani called it <em>“absolutely wonderful.”</em></li>
-              <li><span class="resume-nbsp">{% imgavatar "chriscoyier" %}Chris</span> Coyier said it was <em>“almost fascinatingly simple.”</em></li>
+              <li><span class="resume-nbsp">{% imgavatar "addyosmani", "z-avatar-first" %}Addy</span> Osmani called it <em>“absolutely wonderful.”</em></li>
+              <li><span class="resume-nbsp">{% imgavatar "chriscoyier", "z-avatar-first" %}Chris</span> Coyier said it was <em>“almost fascinatingly simple.”</em></li>
               <li>Read <a href="https://www.11ty.io/docs/testimonials/" class="resume-print-link resume-print-link-ext" data-print-href="11ty.io/docs/testimonials/">more Eleventy testimonials from <span class="resume-nbsp">{% imgavatar "mathias" %}Mathias</span> Bynens, <span class="resume-nbsp">{% imgavatar "aerotwist" %}Paul</span> Lewis, <span class="resume-nbsp">{% imgavatar "MinaMarkham" %}Mina</span> Markham, <span class="resume-nbsp">{% imgavatar "TatianaTMac" %}Tatiana</span> Mac, and others</a>.</li>
             </ul>
           </li>
@@ -107,12 +107,12 @@ twitterAccounts:
       <li>
         <strong>Community</strong>
         <ul class="resume-desc">
-          <li>Implemented the current Font Loading strategies for redesigns of <a href="/web/css-tricks-web-fonts/">{% imgavatar "css" %}CSS Tricks</a> and <a href="/web/the-compromise/">{% imgavatar "smashingmag" %}Smashing Magazine</a>.</li>
+          <li>Implemented Font Loading strategies for <a href="/web/css-tricks-web-fonts/">{% imgavatar "css" %}CSS Tricks</a> and <a href="/web/the-compromise/">{% imgavatar "smashingmag" %}Smashing Magazine</a>.</li>
           <li>Managing {{ twitterAccounts | size | numberString }} Web Development Twitter accounts:
             <ul>
               {%- for account in twitterAccounts %}
               {%- assign followersObj = twitter[account] %}
-              <li><a href="https://twitter.com/{{ account }}" class="resume-nbsp">{% imgavatar account  %}@{{ account }}</a>{% comment %} <span class="resume-subnote">({{ followersObj | renderNumber }} followers)</span>{% endcomment %}</li>
+              <li><a href="https://twitter.com/{{ account }}" class="resume-nbsp">{% imgavatar account, "z-avatar-first" %}{{ account }}</a>{% comment %} <span class="resume-subnote">({{ followersObj | renderNumber }} followers)</span>{% endcomment %}</li>
               {%- endfor %}
             </ul>
           </li>
