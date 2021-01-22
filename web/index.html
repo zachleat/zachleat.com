@@ -10,17 +10,19 @@ enableWebmentions: true
 		<h1 class="primary-title">{{ title }}</h1>
 		<filter-container>
 			<form class="filter-posts-form">
-				Show
-				<select data-filter-bind="category" data-filter-delimiter=",">
-					<option value="">all posts</option>
-					<option value="writing">only writing</option>
-					<option value="speaking">only speaking</option>
-					<option value="web-fonts">only web fonts</option>
-					<option value="eleventy">only Eleventy</option>
-					<option value="note">only notes</option>
-				</select>
+				<label>
+					<span class="sr-only">Filter</span>
+					<select data-filter-bind="category" data-filter-delimiter=",">
+						<option value="">Show all posts</option>
+						<option value="writing">Show only writing</option>
+						<option value="speaking">Show only speaking</option>
+						<option value="web-fonts">Show only web fonts</option>
+						<option value="eleventy">Show only Eleventy</option>
+						<option value="note">Show only notes</option>
+					</select>
+				</label>
 				&#160;
-				<span data-filter-results="post/posts">{{ collections.posts | size }} posts</span>
+				<span data-filter-results="post/posts" aria-live="polite">{{ collections.posts | size }} posts</span>
 			</form>
 			<ol id="main-posts-list" class="posts h-feed">
 				{% comment %}
