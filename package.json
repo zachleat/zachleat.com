@@ -57,7 +57,7 @@
     "popular": "./refresh-populars.sh",
     "default": "grunt",
     "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
-    "deploy": "echo 'Are you using node 10???' && node --version && ./refresh-populars.sh && grunt deploy"
+    "deploy": "echo 'Are you using node 10???' && node --version && ./refresh-populars.sh && ELEVENTY_PRODUCTION=true grunt deploy"
   },
   "repository": {
     "type": "git",

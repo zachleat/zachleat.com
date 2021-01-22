@@ -6,7 +6,7 @@ function getImageOptions(username) {
 		widths: [72],
 		urlPath: "/img/avatars/",
 		outputDir: "./_site/img/avatars/",
-		formats: ["avif", "webp", "jpeg"],
+		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "webp", "jpeg"] : ["webp", "jpeg"],
 		cacheDuration: "4w",
 		filenameFormat: function(id, src, width, format) {
 			return `${username.toLowerCase()}.${format}`;
