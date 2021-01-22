@@ -1,7 +1,7 @@
 ---
 title: Cloudflare’s Creative Corner with the Netlify team
 eleventyComputed:
-  titleHtml: '{% imgavatar "cloudflare", "z-avatar-eq" %}Cloudflare’s Creative Corner with the {% imgavatar "netlify", "z-avatar-eq" %}Netlify team'
+  titleHtml: '{% imgavatar "cloudflare", "z-avatar-eq z-avatar-first" %}Cloudflare’s Creative Corner with the {% imgavatar "netlify", "z-avatar-eq" %}Netlify team'
 tags:
   - speaking
 ---

@@ -3,7 +3,7 @@ title: Eleventy’s New Performance Leaderboard
 tags:
   - eleventy
 eleventyComputed:
-  titleHtml: '{% imgavatar "eleven_ty", "z-avatar-eq" %}Eleventy’s New Performance Leaderboard'
+  titleHtml: '{% imgavatar "eleven_ty", "z-avatar-eq z-avatar-first" %}Eleventy’s New Performance Leaderboard'
 ---
 Last week, the [AMP project](https://amp.dev/) and Eleventy crossed paths when AMP released an [official AMP plugin for Eleventy](https://blog.amp.dev/2020/03/11/easier-amp-development-with-the-new-amp-optimizer/).
 
