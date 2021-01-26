@@ -18,7 +18,7 @@ Well image optimization can’t solve that problem but I am here to tell you abo
 * [The Hello World](#the-hello-world)
 * [Remote Control](#remote-control)
 * [Travel Size](#travel-size)
-* [Please Don’t Make Me Write HTML](#please-dont-make-me-write-html)
+* [Please Don’t Make Me Write HTML](#please-don’t-make-me-write-html)
 * [SVG Flies First Class](#svg-flies-first-class)
 * [CSS Background Check](#css-background-check)
 
