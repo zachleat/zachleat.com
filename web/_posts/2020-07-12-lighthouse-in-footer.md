@@ -3,7 +3,7 @@ title: I added Lighthouse Scores to my Site’s Footer and You Can Too
 tags:
   - project
   - popular-posts
-postRank: 8
+postRank: 10
 ---
 [Speedlify](/web/speedlify/) started with a very simple goal: make it easy to continuously check a site’s performance. As my friend [Scott Jehl](https://scottjehl.com/) has said, “it can be easier to make a site fast than to keep it that way.” And as a performance advocate, I feel that it’s important to keep myself honest and to have some transparency behind the sites I build.
 

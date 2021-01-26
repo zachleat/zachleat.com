@@ -1,7 +1,9 @@
 ---
-title: 'A little collection of theme-less Web Components'
+title: A little collection of theme-less Web Components
 tags:
   - project
+  - popular-posts
+postRank: 8
 ---
 ## Filter Container
 

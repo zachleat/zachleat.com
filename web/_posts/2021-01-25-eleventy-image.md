@@ -1,5 +1,5 @@
 ---
-title: 'Don’t Shut Down Your Business! Instead Use Eleventy Image'
+title: Don’t Shut Down Your Business! Instead Use Eleventy Image
 tags:
   - project
   - eleventy
