@@ -8,10 +8,13 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const Natural = require('natural');
 const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
 const randomCase = require('random-case');
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
 const getBaseUrl = require("./_includes/getBaseUrl");
 const pluginImage = require("./_includes/imagePlugin");
 const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
+
 
 function hasEleventyFeature(featureName) {
 	return process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf(featureName) > -1;
@@ -423,8 +426,6 @@ module.exports = function(eleventyConfig) {
 	});
 
 	/* Markdown */
-	let markdownIt = require("markdown-it");
-	let markdownItAnchor = require("markdown-it-anchor");
 	let options = {
 		html: true,
 		breaks: true,
@@ -436,8 +437,16 @@ module.exports = function(eleventyConfig) {
 		permalinkSymbol: "#",
 		level: [1,2,3,4]
 	};
+	let md = markdownIt(options).use(markdownItAnchor, opts);
 
-	eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
+	eleventyConfig.setLibrary("md", md);
+	
+	eleventyConfig.addPairedShortcode("markdown", function(content, inline = false) {
+		if(inline) {
+			return md.renderInline(content);
+		}
+		return md.render(content);
+	});
 
 	return {
 		"templateFormats": [
