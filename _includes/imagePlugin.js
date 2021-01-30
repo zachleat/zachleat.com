@@ -11,7 +11,7 @@ async function imageShortcode(attrs = {}, options = {}) {
     },
   }, options);
 
-  let metadata = await Image(attrs.src, options);
+  let metadata = await Image(attrs.src || attrs.path, options);
 
   let imageAttributes = Object.assign({
     loading: "lazy",

@@ -1,7 +1,11 @@
 {
 	"name": "Zach Leatherman",
 	"description": "A web development blog written by @zachleat.",
-	"avatarImgSrc": "/img/avatar-2017.png",
+	"avatarImgAttrs": {
+		"path": "./img/avatar-2017.png",
+		"alt": "Zach’s ugly mug (his face)"
+	},
+	"avatarBigImgSrc": "/img/avatar-2017-big.png",
 	"domain": "www.zachleat.com",
 	"url": "https://www.zachleat.com/"
 }

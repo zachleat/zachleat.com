@@ -16,7 +16,7 @@
 		<meta property="og:site_name" content="Zach Leatherman">
 		<meta name="description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
 		<meta property="og:description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
-		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{{ site.avatarImgSrc }}{% endif %}">
+		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{{ site.avatarBigImgSrc }}{% endif %}">
 
 		<meta name="dist" content="{{distFolder}}">
 		<link rel="canonical" href="{{ fullUrl }}">
@@ -58,7 +58,7 @@
 		<div class="rail">
 			<header>
 				<a href="/" class="header">
-					<img src="/img/avatar-2017-88.png" alt="Zach’s ugly mug (his face)">
+					{% image site.avatarImgAttrs %}
 					<h1>Zach Leatherman</h1>
 				</a>
 			</header>

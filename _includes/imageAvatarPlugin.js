@@ -65,40 +65,31 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addLiquidShortcode("imgavatarForExternalUrl", async function(url = "", classes = "") {
 		let username;
-		if(url.indexOf("filamentgroup.com") > -1) {
-			username = "filamentgroup";
-		} else if(url.indexOf("netlify.com") > -1) {
-			username = "netlify";
-		} else if(url.indexOf("nebraskajs.com") > -1) {
-			username = "nebraskajs";
-		} else if(url.indexOf("11ty.dev") > -1 || url.indexOf("11ty.io") > -1) {
-			username = "eleven_ty";
-		} else if(url.indexOf("nejsconf.com") > -1) {
-			username = "nejsconf";
-		} else if(url.indexOf("shoptalkshow.com") > -1) {
-			username = "shoptalkshow";
-		} else if(url.indexOf("httparchive.org") > -1) {
-			username = "httparchive";
-		} else if(url.indexOf("changelog.com") > -1) {
-			username = "changelog";
-		} else if(url.indexOf("meetup.com") > -1) {
-			username = "meetup";
-		} else if(url.indexOf("jamstackconf.com") > -1) {
-			username = "jamstackconf";
-		} else if(url.indexOf("smashingconf.com") > -1) {
-			username = "smashingconf";
-		} else if(url.indexOf("beyondtellerrand.com") > -1) {
-			username = "btconf";
-		} else if(url.indexOf("perfnow.nl") > -1) {
-			username = "perfnowconf";
-		} else if(url.indexOf("concatenate.dev") > -1) {
-			username = "ConcatenateConf";
-		} else if(url.indexOf("css-minsk-js.by") > -1) {
-			username = "CSS_Minsk_JS";
-		} else if(url.indexOf("css-tricks.com") > -1) {
-			username = "css";
+		let domainToTwitterUsernameMap = {
+			"filamentgroup.com": "filamentgroup",
+			"netlify.com": "netlify",
+			"nebraskajs.com": "nebraskajs",
+			"11ty.dev": "eleven_ty",
+			"11ty.io": "eleven_ty",
+			"nejsconf.com": "nejsconf",
+			"shoptalkshow.com": "shoptalkshow",
+			"httparchive.org": "httparchive",
+			"changelog.com": "changelog",
+			"meetup.com": "meetup",
+			"jamstackconf.com": "jamstackconf",
+			"smashingconf.com": "smashingconf",
+			"beyondtellerrand.com": "btconf",
+			"perfnow.nl": "perfnowconf",
+			"concatenate.dev": "ConcatenateConf",
+			"css-minsk-js.by": "CSS_Minsk_JS",
+			"css-tricks.com": "css",
+		};
+		for(let domain in domainToTwitterUsernameMap) {
+			if(url.indexOf(domain) > -1) {
+				username = domainToTwitterUsernameMap[domain];
+				break;
+			}
 		}
-		
 
 		if(username) {
 			usernames.add(username.toLowerCase());
