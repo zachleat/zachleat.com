@@ -9,8 +9,8 @@ tags:
   - font-loading
   - popular-posts
   - popular-posts-total
-postRank: 13
-postRankTotalViews: 7
+postRank: 14
+postRankTotalViews: 8
 ---
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">US presidential candidates ordered by best font loading strategy<br><br>yes I’m a single issue voter</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/722480571390107648">April 19, 2016</a></blockquote>
