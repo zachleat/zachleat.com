@@ -113,7 +113,7 @@ The `100%` in `max-width` refers to the image’s dimensions. So the image will 
   </div>
 </div>
 
-In the above demo our `[width]` attribute matches the intrinsic size of the image. But if we set a different `[width]` attribute here, it will override the image’s intrinsic width.
+In the above demo our `[width]` attribute matches the intrinsic size of the image. But if we set a different `[width]` attribute here, it will override the image’s maximum width.
 
 Here’s an example of a 200×200 image using an upscaled (and inaccurate) `[width="400"]` attribute. Note that the image does not outgrow its `300px` container, which is good!
 
@@ -176,9 +176,9 @@ Keeping our two eligible image widths in play (200px and 400px) let’s swap to 
 
 This is where the rubber finally meets the road. For me, the above test was the most surprising part of the research—and why a deeper analysis of this perhaps introductory topic was worthwhile (for me).
 
-While I traditionally used `width: 100%` it bulldozed the `[width]` attribute. But a strict `max-width: 100%` now competes with the `[width]` attribute. One easy solution here is to add `width: auto` to pair with our `max-width: 100%` CSS. That looks like this:
+When I traditionally used `width: 100%` it bulldozed the `[width]` attribute. But a strict `max-width: 100%` now competes with the `[width]` attribute. One easy solution here is to add `width: auto` to pair with our `max-width: 100%` CSS. That looks like this:
 
-<div class="livedemo demo-container" data-demo-label="">
+<div class="livedemo demo-container" data-demo-label="" id="srcset-maxwidth-widthauto">
   <h3>srcset and max-width: 100%</h3>
 
   <h4>Using [width][height] and width: auto</h4>
@@ -214,5 +214,21 @@ Again—practically I would recommend to pair `max-width: 100%` with `width: aut
 
 * All of these approaches operate the same when the container is smaller than the image.
 * Using `width: 100%` can give you some blurry images if you’re not careful with your container sizes.
-* Using `max-width: 100%` caps the width, but be careful when you use this with `srcset`—it may cap smaller than you want! Pair with `width: auto` to fix this.
+* Using `max-width: 100%` caps the width, but be careful when you use this with `srcset`—it may cap smaller than you want when using `[width]`! Pair with `width: auto` to fix this.
 * But perhaps esoterically I’m walking away with this remaining question: when you have multiple image sizes listed in a `srcset` list, which dimensions do you use for the `[width]` and `[height]` attributes? I kinda want to use the largest one—any obvious downsides to that?
+
+### Copy and Paste
+
+Writing this blog post has swayed me to part from my `width: 100%` ways! I think this is what my boilerplate will be moving forward (it renders like the [above example using `width: auto`](#srcset-maxwidth-widthauto)):
+
+```css
+img {
+  max-width: 100%;
+}
+img[width] {
+  width: auto; /* Defer to max-width */
+}
+img[width][height] {
+  height: auto; /* Preserve aspect ratio */
+}
+```
