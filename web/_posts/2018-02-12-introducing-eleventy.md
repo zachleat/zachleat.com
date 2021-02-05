@@ -4,8 +4,6 @@ tags:
   - eleventy
   - project
   - highlight
-  - popular-posts
-postRank: 20
 ---
 
 <p>
