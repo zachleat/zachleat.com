@@ -3,7 +3,7 @@ title: Barebones CSS for Fluid Images
 tags:
   - research
   - popular-posts
-tweet: https://twitter.com/zachleat/status/1355197710954016769
+tweet: 'https://twitter.com/zachleat/status/1355197710954016769'
 nebulaImage:
   attrs:
     alt: The sample Nebula Image from Unsplash on the Eleventy Image docs
@@ -68,7 +68,7 @@ A few days back [{% imgavatar "CarolSaysThings" %}CarolSaysThings](https://twitt
   {% image nebulaImage.attrs nebulaImage.optionsTwoWidths %}
 -->
 
-Now, my usual take was to pop some `width: 100%` CSS on that thing and call it a day. `width: 100%` CSS forces the image to fill up the width of the container. This has the downside that the image can outgrow it’s own dimensions and can appear blurry.
+Now, my usual take was to pop some `width: 100%` CSS on that thing and call it a day. `width: 100%` CSS forces the image to fill up the width of the container. This overrides any `[width]` attribute you have set. This has the downside that the image can outgrow it’s own dimensions and can appear blurry.
 
 _Each case below uses a 200×200 image in both a `150px` container (to shrink) and a `300px` container (to grow)._
 
@@ -92,7 +92,11 @@ _Each case below uses a 200×200 image in both a `150px` container (to shrink) a
   </div>
 </div>
 
-The `100%` in `max-width` refers to the image’s dimensions. So the image will never grow larger than its own internal or intrinsic dimensions.
+The `100%` in `max-width` refers to the container dimensions. Sometimes the `[width]` attribute will be smaller than this container, which means the image will not always be full width. Practically speaking, the image will never grow larger than its own internal or intrinsic dimensions.
+
+Another way to think about this, the image width can range between `0` and `[width]`, depending on the container size.
+
+_Editors note: the above section had a pretty glaring error and was corrected thanks to [@CarolSaysThings](https://twitter.com/CarolSaysThings/), [@HarryMoore2409](https://twitter.com/HarryMoore2409/), and [@nhoizey](https://twitter.com/nhoizey/)! Sorry about that, y’all._
 
 <div class="livedemo demo-container" data-demo-label="">
   <h3>max-width: 100%</h3>
@@ -114,18 +118,6 @@ The `100%` in `max-width` refers to the image’s dimensions. So the image will 
   </div>
 </div>
 
-In the above demo our `[width]` attribute matches the intrinsic size of the image. But if we set a different `[width]` attribute here, it will override the image’s maximum width.
-
-Here’s an example of a 200×200 image using an upscaled (and inaccurate) `[width="400"]` attribute. Note that the image does not outgrow its `300px` container, which is good!
-
-<div class="livedemo demo-container" data-demo-label="">
-  <h3>max-width: 100% and Incorrect [width]</h3>
-
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 300px">
-    <img src="/img/built/6dfd7ac6-200.jpeg" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
-  </div>
-</div>
-
 Let’s use `srcset` to add another eligible image width (now 200px and 400px) and see what happens. Spoiler alert: no surprises here! 🎉
 
 <div class="livedemo demo-container" data-demo-label="">
@@ -134,20 +126,20 @@ Let’s use `srcset` to add another eligible image width (now 200px and 400px) a
 
   <h4>Without [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/6dfd7ac6-200.jpeg" srcset="/img/built/6dfd7ac6-200.jpeg 200w, /img/built/6dfd7ac6-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
+    <img src="/img/built/6dfd7ac6-200.jpeg" srcset="/img/built/6dfd7ac6-200.jpeg 200w, /img/built/6dfd7ac6-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="150px">
   </div>
   
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/6dfd7ac6-200.jpeg" srcset="/img/built/6dfd7ac6-200.jpeg 200w, /img/built/6dfd7ac6-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
+    <img src="/img/built/6dfd7ac6-200.jpeg" srcset="/img/built/6dfd7ac6-200.jpeg 200w, /img/built/6dfd7ac6-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="300px">
   </div>
 
   <h4>Using [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/6dfd7ac6-200.jpeg" srcset="/img/built/6dfd7ac6-200.jpeg 200w, /img/built/6dfd7ac6-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
+    <img src="/img/built/6dfd7ac6-200.jpeg" srcset="/img/built/6dfd7ac6-200.jpeg 200w, /img/built/6dfd7ac6-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="150px">
   </div>
   
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/6dfd7ac6-200.jpeg" srcset="/img/built/6dfd7ac6-200.jpeg 200w, /img/built/6dfd7ac6-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
+    <img src="/img/built/6dfd7ac6-200.jpeg" srcset="/img/built/6dfd7ac6-200.jpeg 200w, /img/built/6dfd7ac6-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="300px">
   </div>
 </div>
 
@@ -215,7 +207,7 @@ Again—practically I would recommend to pair `max-width: 100%` with `width: aut
 
 * All of these approaches operate the same when the container is smaller than the image.
 * Using `width: 100%` can give you some blurry images if you’re not careful with your container sizes.
-* Using `max-width: 100%` caps the width, but be careful when you use this with `srcset`—it may cap smaller than you want when using `[width]`! Pair with `width: auto` to fix this.
+* Using `max-width: 100%` constrains the image to the container, but be careful when you use this with `srcset`—it may cap smaller than you want when using `[width]`! Pair with `width: auto` to fix this.
 * But perhaps esoterically I’m walking away with this remaining question: when you have multiple image sizes listed in a `srcset` list, which dimensions do you use for the `[width]` and `[height]` attributes? I kinda want to use the largest one—any obvious downsides to that?
 
 ### Copy and Paste
@@ -231,5 +223,12 @@ img[width] {
 }
 img[width][height] {
   height: auto; /* Preserve aspect ratio */
+}
+
+/* Let SVG scale without boundaries */
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
 }
 ```
