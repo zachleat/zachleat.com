@@ -5,16 +5,18 @@ eleventyComputed:
 categories:
   - presentations
 tags:
-  - external
   - speaking
   - eleventy
-  - popular-posts
+  - video
 metadata:
-  schedule: true
   speaking:
     type: meetup
-external_url: 'https://agilitycms.com/resources/events/getting-started-with-eleventy'
-event_date: February 4
-postRank: 4
+medialength: 73 min
 ---
+{% youtubeEmbed "oUoFmurl71k" %}
+
+[Watch on YouTube.](https://www.youtube.com/watch?v=oUoFmurl71k)
+
+Also posted on the [Agility CMS web site](https://agilitycms.com/download/webinar-jamstack-eleventy-agilitycms).
+
 
