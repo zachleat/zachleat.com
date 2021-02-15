@@ -8,6 +8,7 @@ nebulaImage:
   attrs:
     alt: The sample Nebula Image from Unsplash on the Eleventy Image docs
     src: 'https://images.unsplash.com/photo-1608178398319-48f814d0750c'
+    sizes: "300px"
   optionsOneWidth:
     formats:
       - jpeg
