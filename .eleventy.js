@@ -10,6 +10,7 @@ const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, 
 const randomCase = require('random-case');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const {encode} = require("html-entities");
 
 const getBaseUrl = require("./_includes/getBaseUrl");
 const pluginImage = require("./_includes/imagePlugin");
@@ -115,8 +116,8 @@ module.exports = function(eleventyConfig) {
 		return `${split[0]}<span aria-hidden="true">m</span><span class="sr-only"> minutes</span>`;
 	});
 
-	eleventyConfig.addLiquidFilter("simpleTagStrip", str => {
-		return str.replace(/<[^>]*>/g, "");
+	eleventyConfig.addLiquidFilter("htmlEntities", str => {
+		return encode(str);
 	});
 
 	eleventyConfig.addLiquidFilter("absoluteUrl", (url, base) => {
