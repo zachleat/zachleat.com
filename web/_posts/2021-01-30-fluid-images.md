@@ -8,7 +8,7 @@ nebulaImage:
   attrs:
     alt: The sample Nebula Image from Unsplash on the Eleventy Image docs
     src: 'https://images.unsplash.com/photo-1608178398319-48f814d0750c'
-    sizes: "300px"
+    sizes: 300px
   optionsOneWidth:
     formats:
       - jpeg
@@ -202,6 +202,8 @@ When [Eleventy Image](https://www.11ty.dev/docs/plugins/image/) generates markup
 
 This makes `max-width: 100%` a bit more predictable, as the rendered size now matches the behavior when `[width][height]` are not included or when `width: auto` was left off. The maximum width now correctly matches the intrinsic width of the largest image in our `srcset` list.
 
+_February 24, 2021 Update: [Eleventy Image v0.8.0](https://github.com/11ty/eleventy-img/milestone/9?closed=1) was released with the [above `[width][height]` attribute optimization](https://github.com/11ty/eleventy-img/issues/63)._
+
 Again—practically I would recommend to pair `max-width: 100%` with `width: auto` to fix this in the easiest way but this _might_ help avoid some confusion for some folks that aren’t aware of this.
 
 ## Conclusions (aka TL;DR)
@@ -233,3 +235,5 @@ img[src$=".svg"] {
   max-width: none;
 }
 ```
+
+_February 24, 2021 Update: [Chris Coyier posted a great follow up to this post on CSS Tricks](https://css-tricks.com/barebones-css-for-fluid-images/) with some super valuable extra information about how `srcset` affects rendered image dimensions._
