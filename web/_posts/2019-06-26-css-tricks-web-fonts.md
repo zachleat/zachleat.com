@@ -6,7 +6,7 @@ tags:
   - research
   - popular-posts
   - popular-posts-total
-postRank: 8
+postRank: 7
 postRankTotalViews: 18
 ---
 <style>
