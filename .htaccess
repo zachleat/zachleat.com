@@ -29,6 +29,8 @@ RedirectMatch 301 /web/eleventy-google-award/ /web/google-award/
 RedirectMatch 301 /web/host-keynote-slides/ /web/webp/
 RedirectMatch 301 /web/\d{4}/\d{2}/\d{2}/(.*)$ /web/$1
 RedirectMatch 301 /web/\d{4}/(.*)$ /web/$1
+RedirectMatch 301 /techtalk$ https://this-website-is-a-tech-talk.netlify.app/
+RedirectMatch 301 /techtalk/$ https://this-website-is-a-tech-talk.netlify.app/
 </IfModule>
 
 # mod_deflate isn't included on the production host, so we have a workaround above
