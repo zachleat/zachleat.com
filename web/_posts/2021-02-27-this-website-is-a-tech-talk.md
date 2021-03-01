@@ -5,12 +5,13 @@ tags:
   - speaking
 medialength: 45 min
 ---
+Over the weekend I was finishing up some polish on the slides of my most recent conference talk when my daughter walked in to my office. We decided to record a short video of that interaction and put it up [on Twitter](https://twitter.com/zachleat/status/1365786974813093896).
+
+Needless to say, the tweet—uh—went much further than I expected.
+
+If you’re at all curious how we did it, I’ll explain it and more in this talk about building web sites. The talk also delves into Single Page Applications, Multi Page Applications, modern JavaScript Frameworks, and what I believe to be a better future for web development.
+
 {% youtubeEmbed "znLxHkdtQzk" %}
-
-
-I don’t want to spoil too much but if you agree with [this tweet by {% imgavatar "mmatuzo" %}Manuel Matuzović](https://twitter.com/mmatuzo/status/1315379719639109632) you’ll probably enjoy this talk.
-
-Or if you’ve seen [this tweet](https://twitter.com/zachleat/status/1365786974813093896) and wondered how we did it—I’ll show you!
 
 * [Original video recorded and posted on Vimeo by Smashing Conference](https://vimeo.com/468775760/1838969b45)
 * Talk originally delivered for [SmashingConf Austin 2020](https://smashingconf.com/austin-2020/)
