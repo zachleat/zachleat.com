@@ -3,7 +3,9 @@ title: This Web Site is a Tech Talk
 tags:
   - video
   - speaking
+  - popular-posts
 medialength: 45 min
+postRank: 2
 ---
 Over the weekend I was finishing up some polish on the slides of my most recent conference talk when my daughter walked in to my office. We decided to record a short video of that interaction and put it up on Twitter.
 
@@ -13,9 +15,14 @@ If you’re at all curious how we did it, I’ll explain it and more in this tal
 
 {% youtubeEmbed "znLxHkdtQzk" %}
 
-* I will publish the full slides tomorrow—stay tuned.
 * [Original video recorded and posted on Vimeo by Smashing Conference](https://vimeo.com/468775760/1838969b45)
 * Talk originally delivered for [SmashingConf Austin 2020](https://smashingconf.com/austin-2020/)
+
+## Slides and Source Code
+
+* [Check out the slides](https://techtalk.zachleat.dev/)
+* [Direct link to the slide featured in _The Tweet_](https://techtalk.zachleat.dev/slides/2.0/)
+* [Full source code on GitHub](https://github.com/zachleat/this-website-is-a-tech-talk)
 
 ---
 
