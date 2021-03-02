@@ -59,7 +59,8 @@ module.exports = function(eleventyConfig) {
 			.addPassthroughCopy("humans.txt")
 			.addPassthroughCopy("keybase.txt")
 			.addPassthroughCopy("demos/")
-			.addPassthroughCopy("presentations/");
+			.addPassthroughCopy("presentations/")
+			.addPassthroughCopy("unicode-range-interchange/");
 	}
 
 	/* LAYOUTS */
