@@ -3,6 +3,7 @@ title: Unicode Range Interchange
 tags:
   - project
   - popular-posts
+  - font-loading
 imageAttr:
   preview:
     src: ./web/img/posts/unicode-range-interchange/preview.png
