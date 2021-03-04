@@ -2,8 +2,8 @@
 title: Unicode Range Interchange
 tags:
   - project
-  - popular-posts
   - font-loading
+  - popular-posts
 imageAttr:
   preview:
     src: ./web/img/posts/unicode-range-interchange/preview.png
@@ -32,7 +32,7 @@ It looked like this:
 Then you can use `glyphhanger` to modify your web font files with the new `unicode-range` value.
 
 ```
-glyphhanger --whitelist=U+20-7E,U+E9,U+F4,U+F6,U+F8,U+15A,U+200B,U+2014,U+2019,U+2026 --formats=woff2 --subset=BenchNine.ttf
+glyphhanger --whitelist=U+20-7E,U+E9,U+F4,U+F6,U+F8,U+15A,U+200B,U+2014,U+2019,U+2026 --formats=woff2 --subset=BenchNine-Bold.ttf
 ```
 
 If you’d like you can also use `pyftsubset` (which `glyphhanger` uses behind the scenes):
