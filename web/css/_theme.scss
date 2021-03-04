@@ -1323,6 +1323,17 @@ pre + .livedemo {
 	bottom: 0;
 }
 
+/* No labels */
+.livedemo-nolabel {
+	padding: 0;
+}
+.livedemo-nolabel:after {
+	display: none;
+}
+.livedemo-nolabel img {
+	display: block;
+}
+
 /* Demo Link */
 .primarylink {
 	display: block;
