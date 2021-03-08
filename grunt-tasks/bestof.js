@@ -13,6 +13,7 @@ module.exports = function(grunt) {
 
 		bestof.forEach(function(entry) {
 			var path = entry[0];
+			console.log( path );
 			if (path.indexOf("?") > -1) {
 				path = path.substr(0, entry[0].indexOf("?"));
 			}
@@ -27,10 +28,10 @@ module.exports = function(grunt) {
 
 						var postTemplate = cheerio.load(fs.readFileSync(filename, "utf8"));
 						var postPath = postTemplate("meta[property='eleventy:path']").attr("content");
+						console.log( "post path", postPath, filename );
 						if( postPath.indexOf( "./" ) === 0 ) {
 							postPath = postPath.substr(2);
 						}
-						console.log("Found path to original file:", postPath);
 
 						pageviews[newslug] = {
 							slug: newslug,

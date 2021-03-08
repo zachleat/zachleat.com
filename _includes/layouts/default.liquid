@@ -21,6 +21,10 @@
 		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{% ogImageSource page.fileSlug %}{% endif %}">
 		<meta property="og:url" content="https://www.zachleat.com{{ page.url }}">
 
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@zachleat" />
+		<meta name="twitter:image" content="{% if headimage %}{{ headimage }}{% else %}{% ogImageSource page.fileSlug %}{% endif %}" />
+
 		<meta name="dist" content="{{distFolder}}">
 		<link rel="canonical" href="{{ fullUrl }}">
 {% if rssFeedUrl and rssFeedTitle %}
