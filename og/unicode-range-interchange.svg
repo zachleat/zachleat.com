@@ -1,0 +1,28 @@
+<svg version="1.1"
+     width="1200" height="630"
+     viewbox="0 0 1200 630"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="Circle">
+      <circle cx="360" cy="485" r="60"/>
+    </clipPath>
+    <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0c1e1e" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#0c1e1e" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="black" stop-opacity=".4"/>
+    </linearGradient>
+  </defs>
+
+  <image x="0" y="0" width="1200" height="630" xlink:href="sources/bookshelf.jpg"  preserveAspectRatio="xMidYMid slice"/>
+  <rect width="100%" height="100%" fill="url(#Gradient2)" />
+
+  <image x="300" y="425" width="120" height="120" xlink:href="sources/avatar.jpg" clip-path="url(#Circle)"/>
+
+  <!-- textLength="90%" -->
+  <text x="600" y="200" font-size="135" font-weight="900" text-anchor="middle" fill="white" font-family="Lato">Unicode Range</text>
+  <text x="600" y="350" font-size="168" font-weight="900" text-anchor="middle" fill="white" font-family="Lato">Interchange</text>
+
+  <text x="460" y="510" font-size="80" font-weight="300" text-anchor="left" fill="white" font-family="Lato">zachleat.com</text>
+
+</svg>

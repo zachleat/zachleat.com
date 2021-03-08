@@ -1,3 +1,4 @@
+const fs = require("fs");
 const { DateTime } = require("luxon");
 const { URL } = require("url");
 const sanitizeHTML = require("sanitize-html")
@@ -51,7 +52,8 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("web/css/fonts")
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
-		.addPassthroughCopy("web/dist");
+		.addPassthroughCopy("web/dist")
+		.addPassthroughCopy("og/img/");
 
 	if(hasEleventyFeature("fullcopy")) {
 		eleventyConfig
@@ -316,6 +318,14 @@ module.exports = function(eleventyConfig) {
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug, startTime) {
 		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}${startTime ? `?start=${startTime}` : ''}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
+	});
+
+	eleventyConfig.addLiquidShortcode("ogImageSource", function(slug) {
+		let url = `/og/${slug}.jpeg`;
+		if(!fs.existsSync(`.${url}`)) {
+			slug = "default";
+		}
+		return `https://www.zachleat.com/og/${slug}.jpeg`;
 	});
 
 	/* COLLECTIONS */

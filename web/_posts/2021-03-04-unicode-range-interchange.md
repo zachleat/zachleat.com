@@ -42,3 +42,5 @@ pyftsubset "BenchNine-Bold.ttf" --output-file="BenchNine-Bold-subset.woff2" --fl
 ```
 
 Now you have a new WOFF2 web font file, with a few new characters added (and importantly, no characters removed).
+
+And don’t be like me and forget to update your CSS with the new `unicode-range` value.

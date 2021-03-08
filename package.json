@@ -22,6 +22,7 @@
     "cheerio": "^1.0.0-rc.5",
     "debug": "^4.3.1",
     "dotenv": "^8.2.0",
+    "fast-glob": "^3.2.5",
     "fs-extra": "^9.0.1",
     "gray-matter": "^4.0.2",
     "grunt": "~1.0.1",
@@ -58,7 +59,7 @@
     "popular": "./refresh-populars.sh",
     "default": "grunt",
     "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
-    "deploy": "echo 'Are you using node 10???' && node --version && ./refresh-populars.sh && ELEVENTY_PRODUCTION=true grunt deploy"
+    "deploy": "echo 'Are you using node 10???' && node --version && node generate-og-images.js && ./refresh-populars.sh && ELEVENTY_PRODUCTION=true grunt deploy"
   },
   "repository": {
     "type": "git",
