@@ -18,11 +18,14 @@ If you’re at all curious how we did it, I’ll explain it and more in this tal
 * [Original video recorded and posted on Vimeo by Smashing Conference](https://vimeo.com/468775760/1838969b45)
 * Talk originally delivered for [SmashingConf Austin 2020](https://smashingconf.com/austin-2020/)
 
+_March 8, 2021: Update: make sure you check out [Queue Code](/web/queue-code/), a service to let you live code like I did in this talk._
+
 ## Slides and Source Code
 
 * [Check out the slides](https://techtalk.zachleat.dev/)
 * [Direct link to the slide featured in _The Tweet_](https://techtalk.zachleat.dev/slides/2.0/)
 * [Full source code on GitHub](https://github.com/zachleat/this-website-is-a-tech-talk)
+* Related: Queue Code](/web/queue-code/)
 
 ---
 
