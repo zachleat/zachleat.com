@@ -25,7 +25,7 @@ _March 8, 2021: Update: make sure you check out [Queue Code](/web/queue-code/), 
 * [Check out the slides](https://techtalk.zachleat.dev/)
 * [Direct link to the slide featured in _The Tweet_](https://techtalk.zachleat.dev/slides/2.0/)
 * [Full source code on GitHub](https://github.com/zachleat/this-website-is-a-tech-talk)
-* Related: Queue Code](/web/queue-code/)
+* Related: [Queue Code](/web/queue-code/)
 
 ---
 
