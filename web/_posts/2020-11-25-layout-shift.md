@@ -26,7 +26,7 @@ imageAttr:
   chart:
     src: ./web/img/posts/layout-shift/layout-shifts.png
     alt: 'Graph of Layout Shifts: previous has .35 and new has 0'
-postRank: 13
+postRank: 14
 ---
 On the Netlify web site, we have a little banner that appears at the top to drive traffic to new and exciting things happening in Netlify-land.
 

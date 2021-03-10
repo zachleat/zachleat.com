@@ -4,7 +4,7 @@ tags:
   - project
   - eleventy
   - popular-posts
-postRank: 8
+postRank: 9
 ---
 _This talk was first delivered for Jamstack Toronto._
 
