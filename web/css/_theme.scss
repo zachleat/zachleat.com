@@ -510,16 +510,19 @@ h5 {
 
 .primary-title {
 	font-size: 2.5em;
-	@include webfontBold;
-	line-height: 0.85;
-	letter-spacing: -1.5px;
+	line-height: 1;
+	letter-spacing: -1px;
 }
 .primary-title.primary-title {
+	font-family: system-ui, LatoBold, sans-serif;
+	font-weight: 900;
 	margin: 0 0 .5em;
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.primary-title {
-		font-size: 3em;
+		font-size: 3.5em;
+		letter-spacing: -0.025em;
+		font-size: clamp(2.5em, 4.5vw, 3.5em);
 	}
 }
 
