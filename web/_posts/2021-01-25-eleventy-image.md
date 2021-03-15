@@ -1,10 +1,12 @@
 ---
 title: Don’t Shut Down Your Business! Instead Use Eleventy Image
+eleventyComputed:
+  titleHtml: 'Don’t Shut Down Your Business! Instead Use{% imgavatar "eleven_ty", "z-avatar-eq" %}Eleventy Image'
 tags:
   - project
   - eleventy
   - popular-posts
-postRank: 9
+postRank: 10
 ---
 _This talk was first delivered for Jamstack Toronto._
 

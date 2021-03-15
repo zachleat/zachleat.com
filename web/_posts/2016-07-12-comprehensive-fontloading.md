@@ -10,7 +10,7 @@ tags:
   - font-loading
   - popular-posts
   - popular-posts-total
-postRank: 4
+postRank: 2
 postRankTotalViews: 1
 ---
 

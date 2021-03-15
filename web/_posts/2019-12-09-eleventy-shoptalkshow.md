@@ -9,7 +9,7 @@ tags:
 metadata:
   speaking:
     type: podcast
-external_url: https://shoptalkshow.com/episodes/390/
+external_url: 'https://shoptalkshow.com/episodes/390/'
 medialength: 62 min
 ---
 
