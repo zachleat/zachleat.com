@@ -10,7 +10,7 @@ tmpl: page
 			<em class="date">{{ page.date | readableDate }}</em>
 {% if postRank %}
 			<em class="words"><a href="/web/best-of/">#{{ postRank }} Popular</a></em>
-{% if analytics[page.url] %}
+{% if analytics[page.url] and analytics[page.url].views > 10000 %}
 			<em class="words">{{ analytics[page.url].views | renderNumber }} Views</em>
 {% endif %}
 {% endif %}
