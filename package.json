@@ -6,20 +6,20 @@
     "@zachleat/filter-container": "^1.0.3",
     "fg-loadjs": "^1.1.0",
     "infinity-burger": "^3.0.0",
-    "speedlify-score": "^2.0.1"
+    "speedlify-score": "^2.0.2"
   },
   "engines": {
     "node": "10"
   },
   "private": true,
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-cache-assets": "^2.0.4",
-    "@11ty/eleventy-img": "^0.8.0",
-    "@11ty/eleventy-plugin-rss": "^1.1.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
+    "@11ty/eleventy-img": "^0.8.3",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
     "chalk": "^4.1.0",
-    "cheerio": "^1.0.0-rc.5",
+    "cheerio": "^1.0.0-rc.6",
     "debug": "^4.3.1",
     "dotenv": "^8.2.0",
     "fast-glob": "^3.2.5",
@@ -38,7 +38,7 @@
     "grunt-shell": "~2.1.0",
     "grunt-terser": "^1.0.0",
     "html-entities": "^2.1.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "luxon": "^1.25.0",
     "markdown-it": "^9.0.0",
     "markdown-it-anchor": "^5.2.4",
@@ -48,7 +48,7 @@
     "normalize-path": "^3.0.0",
     "numeral": "^2.0.6",
     "random-case": "1.0.0",
-    "sanitize-html": "^2.3.0",
+    "sanitize-html": "^2.3.3",
     "time-grunt": "^1.4.0",
     "twitter-avatar-url": "^2.0.3"
   },
