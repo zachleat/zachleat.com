@@ -10,6 +10,13 @@ Everyone wants it, but it sure seems like no one is actively working on it. But 
 Here are the earliest mentions of Container Queries that the community was able to dig up (in reverse chronological order):
 
 <dl class="dl-inline">
+    <dt>2021 March 26</dt>
+    <dd>
+        Chrome Canary adds an experimental flag for a container queries implementation!
+        <ul class="via">
+            <li><em>via <a href="https://twitter.com/Una/status/1375419967718449155">{% imgavatar "una" %}Una Kravets</a></em></li>
+        </ul>
+    </dd>
     <dt>2014 December 8</dt>
     <dd>
         <a href="https://github.com/eqcss/eqcss">{% imgavatar "innovati" %}Tommy Hodgins’ <code>eqcss</code></a>
