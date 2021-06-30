@@ -1,9 +1,11 @@
 ---
-title: "Eleventy Serverless (formerly Eleventy Cloud) Thus Far"
-titleHtml: "Eleventy Serverless (<del>Eleventy Cloud</del>) Thus Far"
+title: Eleventy Serverless (formerly Eleventy Cloud) Thus Far
+titleHtml: Eleventy Serverless (<del>Eleventy Cloud</del>) Thus Far
 tags:
   - eleventy
 ---
+_Updated on June 30, 2021: A first draft of the [Eleventy Serverless documentation](https://www.11ty.dev/docs/plugins/serverless/) is now available._
+
 Many of y’all following me on Twitter have probably noticed that I’ve been talking a lot about Eleventy Serverless (formerly called Eleventy Cloud). Eleventy Serverless will allow Eleventy projects to:
 
 * Lazily render individual templates outside of your primary build using [Distributed Persistent Rendering](https://www.netlify.com/blog/2021/04/14/distributed-persistent-rendering-a-new-jamstack-approach-for-faster-builds/). This is super useful for large projects with a _lot_ of templates. For example, [my Twitter archive](/twitter/) (~32K templates) could greatly benefit from this.
