@@ -14,6 +14,8 @@ medialength: 73 min
 
 {% youtubeEmbed "wneO9XKkGTA" %}
 
+Ben has also added a [post on his web site with a full transcript](https://someantics.dev/first-look-eleventy-serverless/)!
+
 ## Related:
 
 * [Eleventy Serverless Thus Far](/web/eleventy-serverless-timeline/)
