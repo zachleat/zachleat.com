@@ -12,7 +12,7 @@ const CACHE_DIR = '_cache';
 const API_ORIGIN = 'https://webmention.io/api/mentions.jf2';
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
 
-async function fetchWebmentions(since) {
+async function fetchWebmentions(since, sinceId) {
   if (!domain || domain === 'myurl.com') {
     // If we dont have a domain name, abort
     console.warn(
@@ -28,12 +28,14 @@ async function fetchWebmentions(since) {
     return false;
   }
 
-  // TODO move to use since_id instead of since date
   let url = `${API_ORIGIN}?domain=${domain}&token=${TOKEN}`;
-  if (since) {
-    url += `&per-page=9999&&since=${since}`;
+  const commonArgs = '&per-page=9999';
+  if (sinceId && sinceId > 0) {
+    url += `${commonArgs}&&since_id=${sinceId}`;
+  } else if (since) {
+    url += `${commonArgs}&&since=${since}`;
   } else {
-    url += `&per-page=9999`;
+    url += commonArgs;
   }
   console.log( `Fetching webmentions from: ${url}` );
 
@@ -81,19 +83,24 @@ async function readFromCache() {
 
   return {
     lastFetched: null,
+    lastFetchedId: null,
     mentions: {}
   };
 }
 
 module.exports = async function() {
   const cache = await readFromCache();
-  const { lastFetched, mentions } = cache;
+  const { lastFetched, lastFetchedId, mentions } = cache;
 
   if (webmentionsEnabled() || !lastFetched) {
-    const feed = await fetchWebmentions(lastFetched);
+    const feed = await fetchWebmentions(lastFetched, lastFetchedId);
 
     if (feed) {
+      let maxSinceId = -1;
+
       for(let webmention of feed.children) {
+        if (webmention["wm-id"] > maxSinceId) maxSinceId = webmention["wm-id"];
+
         let url = getBaseUrl(webmention["wm-target"]);
         if(!mentions[url]) {
           mentions[url] = [];
@@ -115,7 +122,7 @@ module.exports = async function() {
       }
 
       const webmentions = {
-        lastFetched: new Date().toISOString(),
+        lastFetchedId: maxSinceId,
         count: totalCount,
         mentions: mentions
       };
