@@ -71,11 +71,12 @@ module.exports = function(grunt) {
 			}
 		},
 		sass: {
+			options: {
+				style: 'expanded',
+				implementation: require("node-sass"),
+				sourcemap: true
+			},
 			dist: {
-				options: {
-					style: 'expanded',
-					sourcemap: 'file'
-				},
 				files: {
 					'<%= config.distFolder %>initial.css': '<%= config.cssSrc %>initial.scss',
 					'<%= config.distFolder %>defer.css': '<%= config.cssSrc %>defer.scss',
