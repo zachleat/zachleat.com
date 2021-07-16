@@ -11,7 +11,7 @@ tags:
   - popular-posts
   - popular-posts-total
 postRank: 17
-postRankTotalViews: 12
+postRankTotalViews: 13
 ---
 
 The history of web font loading has included many different iterations:

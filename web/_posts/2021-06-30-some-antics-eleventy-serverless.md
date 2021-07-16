@@ -1,5 +1,5 @@
 ---
-title: "Some Antics with Ben Myers: A First Look at Eleventy Serverless!"
+title: 'Some Antics with Ben Myers: A First Look at Eleventy Serverless!'
 eleventyComputed:
   titleHtml: 'Some Antics with {% imgavatar "BenDMyers", "z-avatar-eq" %}Ben Myers: A First Look at Eleventy Serverless!'
 tags:
