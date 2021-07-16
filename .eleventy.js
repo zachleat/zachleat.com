@@ -53,7 +53,8 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("web/dist")
-		.addPassthroughCopy("og/*.jpeg");
+		.addPassthroughCopy("og/*.jpeg")
+		.addPassthroughCopy("og/*.png");
 
 	if(hasEleventyFeature("fullcopy")) {
 		eleventyConfig
@@ -321,11 +322,17 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidShortcode("ogImageSource", function(slug) {
-		let url = `/og/${slug}.jpeg`;
-		if(!fs.existsSync(`.${url}`)) {
-			slug = "default";
+		let domain = "https://www.zachleat.com";
+		let jpegPath = `/og/${slug}.jpeg`;
+		let pngPath = `/og/${slug}.png`;
+
+		if(fs.existsSync(`.${pngPath}`)) {
+			return `${domain}${pngPath}`;
 		}
-		return `https://www.zachleat.com/og/${slug}.jpeg`;
+		if(fs.existsSync(`.${jpegPath}`)) {
+			return `${domain}${jpegPath}`;
+		}
+		return `${domain}/og/default.jpeg`;
 	});
 
 	/* COLLECTIONS */
