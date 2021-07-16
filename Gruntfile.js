@@ -113,68 +113,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		compress: {
-			mainGzip: {
-				options: {
-					mode: 'gzip'
-				},
-				// only do HTML files to comply with webmention brid.gy bug https://github.com/snarfed/bridgy/issues/878
-				// when that bug is fixed, this can go away (and .htaccess stuff for gzip)
-				files: [
-					{
-						expand: true,
-						cwd: '_site/',
-						src: ['**/*.html'],
-						dest: '_site/',
-						extDot: 'last',
-						ext: '.html.zgz'
-					}
-				]
-			},
-			mainBrotli: {
-				options: {
-					mode: 'brotli',
-					brotli: {
-						mode: 1
-					}
-				},
-				files: [
-					// reenable when bridgy bug above in compress:mainGzip task is fixed.
-					// {
-					// 	expand: true,
-					// 	cwd: '_site/',
-					// 	src: ['**/*.html'],
-					// 	dest: '_site/',
-					// 	extDot: 'last',
-					// 	ext: '.html.zbr'
-					// },
-					{
-						expand: true,
-						cwd: '_site/',
-						src: ['**/*.js'],
-						dest: '_site/',
-						extDot: 'last',
-						ext: '.js.zbr'
-					},
-					{
-						expand: true,
-						cwd: '_site/',
-						src: ['**/*.css'],
-						dest: '_site/',
-						extDot: 'last',
-						ext: '.css.zbr'
-					},
-					{
-						expand: true,
-						cwd: '_site/',
-						src: ['**/*.svg'],
-						dest: '_site/',
-						extDot: 'last',
-						ext: '.svg.zbr'
-					}
-				]
-			}
-		},
 		htmlmin: {
 			main: {
 				options: {
@@ -201,14 +139,6 @@ module.exports = function(grunt) {
 			eleventyProduction: {
 				command: 'ELEVENTY_FEATURES=webmentions,counts,fullcopy npx @11ty/eleventy --quiet',
 				options: {
-					execOptions: {}
-				}
-			},
-			// TODO https://github.com/shama/grunt-beep
-			upload: {
-				command: 'echo "Note: Requires an \'zachleat\' host in .ssh/config"; rsync --archive --verbose --stats --compress --rsh=ssh ./_site/ zachleat:/home/public/',
-				options: {
-					maxBuffer: 1024 * 1024 * 64,
 					execOptions: {}
 				}
 			}
@@ -246,7 +176,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['clean', 'assets', 'content']);
 	grunt.registerTask('separate', ['clean', 'assets', 'copy:includes']);
 
-	// Upload to Production
-	grunt.registerTask('stage', ['clean', 'assets', 'content-production', 'clean:drafts', 'htmlmin', 'compress']);
-	grunt.registerTask('deploy', ['stage', 'shell:upload', 'clean']);
+	// Production
+	grunt.registerTask('stage', ['clean', 'assets', 'content-production', 'clean:drafts', 'htmlmin']);
 };
