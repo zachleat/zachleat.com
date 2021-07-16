@@ -1,19 +1,21 @@
 ## Local Development Setup
 
-Prerequisites: Node 12+
+Prerequisites: Node.js
 
+1. `gem install sass`
 1. `npm install`
+1. `grunt`
 
 ## Local Development Workflow
 
-1. `npm start`
-1. Open `http://localhost:8080/`
+1. `npx grunt watch`
+1. Open `http://zachleat.localhost/`
 
 To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 
 ## Deploy
 
-1. Commit to master.
+1. `npx grunt deploy`
 
 ## Notes
 
