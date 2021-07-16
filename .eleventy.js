@@ -443,13 +443,16 @@ module.exports = function(eleventyConfig) {
 		breaks: true,
 		linkify: true
 	};
-	let opts = {
-		permalink: true,
-		permalinkClass: "direct-link",
-		permalinkSymbol: "#",
-		level: [1,2,3,4]
-	};
-	let md = markdownIt(options).use(markdownItAnchor, opts);
+
+	let md = markdownIt(options).use(markdownItAnchor, {
+		permalink: markdownItAnchor.permalink.ariaHidden({
+			placement: "after",
+      class: "direct-link",
+      symbol: "#",
+			level: [1,2,3,4],
+    }),
+    slugify: eleventyConfig.getFilter("slug")
+  });
 
 	eleventyConfig.setLibrary("md", md);
 	
