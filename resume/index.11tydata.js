@@ -60,7 +60,7 @@ module.exports = async function() {
 				data.stargazers.tablesaw = json.stargazers_count;
 			}));
 
-		promises.push(fetch("https://api.github.com/repos/filamentgroup/glyphhanger")
+		promises.push(fetch("https://api.github.com/repos/zachleat/glyphhanger")
 			.then(res => res.json())
 			.then(json => {
 				if(json.message) {

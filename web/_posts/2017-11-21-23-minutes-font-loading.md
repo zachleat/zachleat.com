@@ -36,7 +36,7 @@ Work was underway. I have not worked on this project before. I didn’t know any
 ### Let’s make some changes
 
 1. Delete all of the web font files that aren’t TTF files from the project—we’re gonna make our own.
-1. Use [`glyphhanger`](https://github.com/filamentgroup/glyphhanger) to subset the fonts automatically to the code points used on the actual site (while also including ASCII). I ran:
+1. Use [`glyphhanger`](https://github.com/zachleat/glyphhanger) to subset the fonts automatically to the code points used on the actual site (while also including ASCII). I ran:
     * `glyphhanger http://make8bitart.localhost/ --US_ASCII --subset=assets/fonts/*.ttf`
     * Note that `glyphhanger` outputs optimized subset WOFF2, WOFF (with zopfli encoding for more savings), and TTF files.
 1. Update the `@font-face` CSS blocks to point to the new subset files and remove all of the other formats—we’re only using WOFF2, WOFF, and TTF here. Maybe `glyphhanger` needs a feature to help with this step too!
