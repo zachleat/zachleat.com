@@ -18,3 +18,8 @@ To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 ## Notes
 
  * [“zachleat.com is Dead, Long Live zachleat.com,” a blog post describing the initial launch](http://www.zachleat.com/web/zachleat-is-dead/)
+
+## Pending
+
+1. Re-add `refresh-populars.sh` to this project.
+2. .htacess files and 404 template
