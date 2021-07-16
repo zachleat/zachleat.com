@@ -56,13 +56,9 @@
   },
   "scripts": {
     "check-links": "npx check-html-links _site",
-    "build": "npx @11ty/eleventy --quiet",
-    "start": "npx @11ty/eleventy --quiet --serve",
-    "starti": "npx @11ty/eleventy --quiet --serve --incremental",
-    "popular": "./refresh-populars.sh",
-    "default": "grunt",
-    "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
-    "deploy": "node generate-og-images.js && npm run popular && ELEVENTY_PRODUCTION=true grunt deploy"
+    "build": "npx grunt",
+    "start": "npx grunt && npx @11ty/eleventy --quiet --serve",
+    "stage": "node generate-og-images.js && ELEVENTY_PRODUCTION=true grunt stage"
   },
   "repository": {
     "type": "git",
