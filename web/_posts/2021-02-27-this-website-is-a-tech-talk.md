@@ -5,7 +5,7 @@ tags:
   - speaking
   - popular-posts
 medialength: 45 min
-postRank: 6
+postRank: 7
 ---
 Over the weekend I was finishing up some polish on the slides of my most recent conference talk when my daughter walked in to my office. We decided to record a short video of that interaction and put it up on Twitter.
 

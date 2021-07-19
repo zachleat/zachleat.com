@@ -1,5 +1,5 @@
 ---
-title: "Inaugural Eleventy Meetup: Hello World (a talk about Eleventy Serverless)"
+title: 'Inaugural Eleventy Meetup: Hello World (a talk about Eleventy Serverless)'
 eleventyComputed:
   titleHtml: 'Inaugural {% imgavatar "EleventyMeetup", "z-avatar-eq" %}Eleventy Meetup: Hello World (a talk about Eleventy Serverless)'
 tags:
