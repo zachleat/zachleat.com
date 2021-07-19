@@ -1,7 +1,7 @@
 ---
 title: 'Eleventy Serverless, a talk video from The Eleventy Meetup'
 eleventyComputed:
-  titleHtml: 'Eleventy Serverless, a video from {% imgavatar "EleventyMeetup", "z-avatar-eq" %}The Eleventy Meetup'
+  titleHtml: 'Eleventy Serverless, a talk video from {% imgavatar "EleventyMeetup", "z-avatar-eq" %}The Eleventy Meetup'
 tags:
   - speaking
   - eleventy
