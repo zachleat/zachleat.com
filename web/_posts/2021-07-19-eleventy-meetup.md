@@ -8,6 +8,8 @@ tags:
   - video
 medialength: 43 min
 ---
+In this talk I started to build [Rainglow](/web/rainglow/) and showcased another tool called [Uniclode](/web/uniclode/).
+
 [Watch on YouTube](https://www.youtube.com/watch?v=nlbdRUIgyjo) or below:
 
 {% youtubeEmbed "nlbdRUIgyjo" %}
