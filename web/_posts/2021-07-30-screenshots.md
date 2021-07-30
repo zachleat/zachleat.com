@@ -1,5 +1,5 @@
 ---
-title: 'Building an Automated Screenshot Service on Netlify in about 100 Lines of Code'
+title: Building an Automated Screenshot Service on Netlify in ~140 Lines of Code
 tags:
   - eleventy
   - project
