@@ -470,6 +470,10 @@ module.exports = function(eleventyConfig) {
 		return md.render(content);
 	});
 
+	eleventyConfig.on("beforeWatch", () => {
+		console.log( "[zachleat.com] Building…" );
+	});
+
 	return {
 		"templateFormats": [
 			"liquid",

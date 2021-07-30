@@ -49,7 +49,7 @@ module.exports = function(eleventyConfig) {
 	});
 	eleventyConfig.on("afterBuild", () => {
 		let arr = Array.from(usernames);
-		console.log( `Generating ${arr.length} Twitter avatars.` );
+		console.log( `[zachleat.com] Generating ${arr.length} Twitter avatars.` );
 		getTwitterAvatarUrl(arr).then(results => {
 			for(let result of results) {
 				fetchImageData(result.username, result.url.large);

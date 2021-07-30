@@ -126,6 +126,6 @@ module.exports = async function() {
     }
   }
 
-  console.log(`Loaded ${cache.count} webmentions from cache.`);
+  console.log(`[zachleat.com] Loaded ${cache.count} webmentions from cache.`);
   return cache;
 }
