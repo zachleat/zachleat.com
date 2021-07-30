@@ -19,9 +19,9 @@ Having a service for these images is important as the Eleventy docs use a lot of
 
 The end result looks something like this ([`11ty.dev/docs`](https://www.11ty.dev/docs/) is shown):
 
-<img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/small/9:16/" class="screenshot screenshot-first-example" width="375" height="667" loading="lazy" decoding="async" alt="Screenshot of 11ty.dev">
+<img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/small/9:16/bigger/" class="screenshot screenshot-first-example" width="375" height="667" loading="lazy" decoding="async" alt="Screenshot of 11ty.dev">
 
-And the URL for the above image is `https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/small/9:16/`.
+And the URL for the above image is `https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/small/9:16/bigger/`.
 
 You can see this [live](https://www.11ty.dev/#built-with-eleventy) in [production](https://www.11ty.dev/docs/starter/) now in a [few](https://www.11ty.dev/docs/tutorials/) different [places](https://www.11ty.dev/authors/smthdotuk/) on the Eleventy docs.
 
