@@ -34,7 +34,7 @@ tmpl: list
 		<ol class="posts">
 			{%- assign posts = collections.eleventy | reverse %}
 			{%- for post in posts %}
-				{% include post-list-entry.html, ignoreYear: "true" %}
+				{% include "post-list-entry.html", ignoreYear: "true" %}
 			{%- endfor %}
 		</ol>
 	</article>

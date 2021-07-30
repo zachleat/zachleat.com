@@ -27,7 +27,7 @@ I’d like something that scales to a little bit more complex of a project than 
 
 That’s one of my favorite things about [Eleventy](https://www.11ty.io/). It is flexible enough to work with any kind of project or directory structure, transforming data and templates into HTML content quickly and easily. It’s more of a tool than a framework.
 
-{% include eleventy-links.html %}
+{% include "eleventy-links.html" %}
 
 ## The Simplest Critical CSS That Can Possibly Work Well
 
@@ -35,14 +35,14 @@ Critical CSS can be one of the biggest wins a project can do to improve their ti
 
 Here’s how that works in Eleventy using Nunjucks for a [layout template](https://github.com/NebraskaJS/2018.nejsconf.com/blob/master/_includes/empty.njk#L7):
 
+{% raw %}
 ``` html
-{%- raw -%}
 <!-- capture the CSS content as a Nunjucks variable -->
 {% set css %}{% include "theme.css" %}{% endset %}
 <!-- feed it through a cssmin filter to minify -->
 <style>{{ css | cssmin | safe }}</style>
-{%- endraw -%}
 ```
+{% endraw %}
 
 Here we are using a [`cssmin` filter in our eleventy Config](https://github.com/NebraskaJS/2018.nejsconf.com/blob/master/.eleventy.js#L7) to minify the CSS too:
 

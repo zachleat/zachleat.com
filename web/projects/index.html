@@ -13,7 +13,7 @@ tmpl: list
 		{% assign currentyear = "" %}
 		{% assign listItems = collections.project %}
 		{% for post in collections.project reversed %}
-			{% include post-list-entry.html, view: "project" %}
+			{% include "post-list-entry.html", view: "project" %}
 		{% endfor %}
 		<li class="subhed">Retired</li>
 		<li><a href="/web/projects/retired/">Retired Projects</a></li>

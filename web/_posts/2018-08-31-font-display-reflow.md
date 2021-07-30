@@ -87,7 +87,7 @@ Go forth and web font, y’all!
 
 ## Related
 
-{% include highlighted-fonts-articles.md %}
+{% include "highlighted-fonts-articles.md" %}
 
 <script>
 if( "fonts" in document ) {

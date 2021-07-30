@@ -47,7 +47,7 @@ tmpl: page
 </article>
 
 <article class="content-grid-sibling">
-	{% include about.html %}
+	{% include "about.html" %}
 </article>
 
 <article class="content-grid-sibling">
@@ -62,5 +62,5 @@ tmpl: page
 
 {% unless disableComments %}
 	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
-	{% include webmentionlist, absoluteUrl: absoluteUrl %}
+	{% include "webmentionlist", absoluteUrl: absoluteUrl %}
 {% endunless %}

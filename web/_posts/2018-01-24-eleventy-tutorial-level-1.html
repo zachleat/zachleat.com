@@ -9,8 +9,8 @@ postRank: 10
 postRankTotalViews: 12
 ---
 
-{% include eleventy-intro.html %}
-{% include eleventy-tutorials.html, currentTutorial: 1 %}
+{% include "eleventy-intro.html" %}
+{% include "eleventy-tutorials.html", currentTutorial: 1 %}
 <hr>
 <div class="section-content">
 	<div class="section-inner sectionLayout--insetColumn">
@@ -147,4 +147,4 @@ Ah, much better. Works perfectly.</li>
 </div>
 
 <h2>Eleventy Tutorials</h2>
-{% include eleventy-tutorials.html, currentTutorial: 1 %}
+{% include "eleventy-tutorials.html", currentTutorial: 1 %}

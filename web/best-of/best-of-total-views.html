@@ -20,7 +20,7 @@ hidePopularInSidebar: true
 			{% assign currentyear = "" %}
 			{% assign listItems = collections.popularPostsTotalRanked %}
 			{% for post in collections.popularPostsTotalRanked %}
-				{% include post-list-entry.html, ignoreYear: "true", showRankTotalViews: "true", showDays: "true", ignorePopularity: true %}
+				{% include "post-list-entry.html", ignoreYear: "true", showRankTotalViews: "true", showDays: "true", ignorePopularity: true %}
 			{% endfor %}
 		</ol>
 	</article>

@@ -33,7 +33,7 @@ enableWebmentions: true
 				{% assign currentyearpostcount = 0 %}
 				{% assign listItems = collections.posts %}
 				{% for post in collections.posts %}
-					{% include post-list-entry.html, hfeed: true %}
+					{% include "post-list-entry.html", hfeed: true %}
 				{% endfor %}
 			</ol>
 		</filter-container>

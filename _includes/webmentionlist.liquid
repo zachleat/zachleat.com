@@ -42,7 +42,7 @@
     <summary class="hed-h3">{{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}</summary>
     <ol class="static-comments static-comments-webmentions">
       {% for webmention in bookmarks %}
-        {% include webmention %}
+        {% include "webmention" %}
       {% endfor %}
     </ol>
   </details>
@@ -57,13 +57,13 @@
     <summary class="hed-h3">{{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}</summary>
     <ol class="static-comments static-comments-webmentions">
       {% for webmention in replies %}
-        {% include webmention %}
+        {% include "webmention" %}
       {% endfor %}
     </ol>
 
     <ol class="static-comments">
     {% for comment in disqus.comments %}
-      {% include comment-entry.html %}
+      {% include "comment-entry.html" %}
     {% endfor %}
     </ol>
   </details>
@@ -79,7 +79,7 @@
     {%- endif %}
     <ol class="static-comments static-comments-webmentions">
       {% for webmention in mentions %}
-        {% include webmention %}
+        {% include "webmention" %}
       {% endfor %}
     </ol>
   </details>

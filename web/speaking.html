@@ -37,7 +37,7 @@ tmpl: list
 			{% assign currentyear = "" %}
 			{% assign listItems = collections.presentations %}
 			{% for post in collections.presentations %}
-				{% include post-list-entry.html %}
+				{% include "post-list-entry.html" %}
 			{% endfor %}
 		</ol>
 	</article>

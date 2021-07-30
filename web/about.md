@@ -8,7 +8,7 @@ postRankTotalViews: 19
 
 This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach@zachleat.com). Peruse his [full résumé](/resume/).
 
-{% include social.html %}
+{% include "social.html" %}
 
 <img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" style="max-width: 260px; border-radius: 50%; margin: 2em auto 0; display: block">
 
@@ -20,7 +20,7 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 winners of the <a href="https://www.filamentgroup.com/lab/agency-of-year.html">Net Awards Agency of the Year</a> a Google open source award
 {% endcomment %}
 
-{% include bio-text-medium.html %}
+{% include "bio-text-medium.html" %}
 
 ### Alternate Formats
 
@@ -37,7 +37,7 @@ Zach is a Builder for the web with Netlify. He’s currently fixated on web font
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="HTML">
 
 ``` html
-{% include bio-text-medium.html %}
+{% include "bio-text-medium.html" %}
 ```
 
 </div>

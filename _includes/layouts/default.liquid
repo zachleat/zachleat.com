@@ -34,7 +34,7 @@
 {% endif %}
 		<link rel="feed" href="https://www.zachleat.com/web/">
 
-		<style>{% include initial.min.css %}</style>
+		<style>{% include "initial.min.css" %}</style>
 
 		<link rel="stylesheet" href="{{ distFolder }}defer.min.css" media="print" onload="this.media='all'">
 		<noscript>
@@ -46,7 +46,7 @@
 {% if stylesheetFull %}
 		<link href="{{ stylesheetFull }}" rel="stylesheet">
 {% endif %}
-		<script>{% include initial.min.js %}</script>
+		<script>{% include "initial.min.js" %}</script>
 		<script src="{{ distFolder }}async.min.js" async></script>
 
 		<meta property="eleventy:path" content="{{ page.inputPath }}">
@@ -81,7 +81,7 @@
 							<a href="/web/fonts/" class="tag font-loading{% if page.url == '/web/fonts/' %} active{% endif %}">Web Fonts</a>
 							<a href="/web/eleventy/" class="tag{% if page.url == '/web/eleventy/' %} active{% endif %}">Eleventy</a>
 						</div>
-						{% include social.html %}
+						{% include "social.html" %}
 						<div class="tags tags-rail">
 							<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %}">Speaking</a>
 							<a href="/twitter/" class="tag">Twitter<span class="hide-sm"> Archive</span></a>
@@ -112,7 +112,7 @@
 		</div><!-- /.rail -->
 		<main class="content-main" data-role="main" id="skiplink-content">
 			{{ content }}
-			{% include footer.html %}
+			{% include "footer.html" %}
 		</main><!-- /.content -->
 		<!-- TODO async load this -->
 		<svg display="none" aria-hidden="true">

@@ -13,7 +13,7 @@ tmpl: list
 			{% assign currentyear = "" %}
 			{% assign listItems = collections.font-loading %}
 			{% for post in collections.font-loading %}
-				{% include post-list-entry.html %}
+				{% include "post-list-entry.html" %}
 			{% endfor %}
 		</ol>
 	</article>

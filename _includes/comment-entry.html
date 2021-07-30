@@ -8,7 +8,7 @@
 	<div class="static-comments-msg{% if comment.message.length > 5000 %} static-comments-msg-long{% endif %}">{{ comment.message | sanitizeHTML | randomCase: sentiment }}</div>
 	<ol>
 	{% for reply in comment.replies %}
-		{% include comment-entry.html, comment: reply %}
+		{% include "comment-entry.html", comment: reply %}
 	{% endfor %}
 	</ol>
 </li>
