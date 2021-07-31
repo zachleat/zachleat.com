@@ -4,22 +4,26 @@ pagination:
   size: 1
   alias: post
 layout: layouts/og.liquid
-permalink: "/opengraph{{ post.data.page.url }}"
+permalink: "/opengraph{{ post.url }}"
 eleventyComputed:
-  sourceUrl: "http://www.zachleat.com{{ post.data.page.url }}"
+  sourceUrl: "http://www.zachleat.com{{ post.url }}"
 ---
-<main class="main">
+{%- capture absoluteUrl -%}{{ post.url | url | absoluteUrl }}{%- endcapture -%}
+{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
+<main class="main"{% if post.data.seo.openGraphBackgroundImage %} style="--og-bgimage: url('{{ post.data.seo.openGraphBackgroundImage }}')"{% endif %}>
   <div>
     <h1 class="primary-title main-hed"><span class="main-box">{% if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}</span></h1>
   </div>
-  <p>
-    <em class="main-box">{{ page.date | readableDate }}</em>
-    {% imgavatar "zachleat", "z-avatar-large" %} <strong class="main-box">Zach Leatherman</strong>
+  <p class="main-author">
+    {% imgavatar "zachleat", "z-avatar-large z-avatar-bottom" %} <strong class="main-box main-box-nowrap">Zach Leatherman</strong>
+  </p>
+  <p class="main-metadata">
+    {% if post.data.postRank %}<span class="main-box main-box-nowrap">#{{ post.data.postRank }} Popular</span><br>{% endif %}
+    {% if webmentionsCount > 0 %}<span class="main-box main-box-nowrap">{{ webmentionsCount }} Webmention{% if webmentionsCount != 1 %}s{% endif %}</span><br>{% endif %}
+    <em class="main-box main-box-nowrap">{{ post.date | readableDate }}</em><br>
   </p>
 </main>
 {% comment %}
 Ideas:
 * Git last updated
-* Number of comments
-* Popularity
 {% endcomment %}

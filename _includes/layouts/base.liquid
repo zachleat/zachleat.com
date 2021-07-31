@@ -60,9 +60,7 @@
 		<link rel="pingback" href="https://webmention.io/www.zachleat.com/xmlrpc" />
 {% endif %}
 	</head>
-	<body
-		{%- if classes and classes.body %} class="{{ classes.body }}"{% endif %}
-		{%- if style and style.body %} style="{{ style.body }}"{% endif %}>
+	<body{%- if classes and classes.body %} class="{{ classes.body }}"{% endif %}>
 		{{ content }}
 	</body>
 </html>

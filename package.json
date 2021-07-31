@@ -61,7 +61,7 @@
     "start": "npx @11ty/eleventy --quiet --serve",
     "popular": "./refresh-populars.sh",
     "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
-    "deploy": "node generate-og-images.js && npm run popular && ELEVENTY_PRODUCTION=true grunt deploy"
+    "deploy": "npm run popular && ELEVENTY_PRODUCTION=true grunt deploy"
   },
   "repository": {
     "type": "git",

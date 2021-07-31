@@ -3,6 +3,8 @@ title: Queue Code—“Live” Code without Errors
 tags:
   - project
   - eleventy
+seo:
+  openGraphBackgroundImage: "/og/sources/robot.jpg"
 ---
 I’ll be frank. (Hi Frank.) I don’t enjoy live coding. It doesn’t matter if it’s in front of two people or two hundred people. It fills me with unbridled anxiety.
 

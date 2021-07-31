@@ -1,0 +1,18 @@
+---
+layout: layouts/base.liquid
+---
+<style>
+.og {
+  background-color: #243137;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1200px);
+}
+.og-preview {
+  border: none;
+}
+</style>
+<div class="og">
+{%- for post in collections.posts %}
+  <iframe class="og-preview" loading="lazy" width="1200" height="630" src="/opengraph{{ post.url }}"></iframe>
+{%- endfor %}
+</div>

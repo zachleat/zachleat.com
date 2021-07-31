@@ -55,7 +55,8 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("web/dist")
 		.addPassthroughCopy("og/*.jpeg")
-		.addPassthroughCopy("og/*.png");
+		.addPassthroughCopy("og/*.png")
+		.addPassthroughCopy("og/sources/");
 
 	if(hasEleventyFeature("fullcopy")) {
 		eleventyConfig

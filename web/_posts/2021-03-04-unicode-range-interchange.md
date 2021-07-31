@@ -7,6 +7,8 @@ imageAttr:
   preview:
     src: ./web/img/posts/unicode-range-interchange/preview.png
     alt: 'A preview of the Unicode Range Interchange page, showing the instructions described in this post.'
+seo:
+  openGraphBackgroundImage: "/og/sources/bookshelf.jpg"
 ---
 Last week an [issue came in](https://github.com/11ty/11ty-website/issues/958) from [{% imgavatar "polarbirke" %}polarbirke on Twitter](https://twitter.com/polarbirke/status/1366016686579724289) that the web font we use for our titles was overly aggressively subset! Oh no!
 
