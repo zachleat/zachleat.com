@@ -322,10 +322,10 @@ module.exports = function(eleventyConfig) {
 		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}${startTime ? `?start=${startTime}` : ''}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
 	});
 
-	eleventyConfig.addLiquidShortcode("ogImageSource", function(slug, url) {
+	eleventyConfig.addLiquidShortcode("ogImageSource", function({fileSlug, url, inputPath}) {
 		let domain = "https://www.zachleat.com";
-		let jpegPath = `/og/${slug}.jpeg`;
-		let pngPath = `/og/${slug}.png`;
+		let jpegPath = `/og/${fileSlug}.jpeg`;
+		let pngPath = `/og/${fileSlug}.png`;
 
 		if(fs.existsSync(`.${pngPath}`)) {
 			return `${domain}${pngPath}`;
@@ -333,7 +333,16 @@ module.exports = function(eleventyConfig) {
 		if(fs.existsSync(`.${jpegPath}`)) {
 			return `${domain}${jpegPath}`;
 		}
-		return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}/opengraph${url}`)}/opengraph/`;
+
+		// special title og images, only for _posts
+		if(inputPath.startsWith("./web/_posts/")) {
+			return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}/opengraph${url}`)}/opengraph/`;
+		}
+
+		// raw screenshot
+		return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}${url}`)}/opengraph/`;
+
+		// return `${domain}/og/default.jpeg`;
 	});
 
 	/* COLLECTIONS */
