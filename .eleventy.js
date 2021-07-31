@@ -50,6 +50,7 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("resume/index.css")
 		.addPassthroughCopy("resume/resume.pdf")
 		.addPassthroughCopy("web/css/fonts")
+		.addPassthroughCopy("web/css/external")
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("web/dist")
@@ -321,7 +322,7 @@ module.exports = function(eleventyConfig) {
 		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}${startTime ? `?start=${startTime}` : ''}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
 	});
 
-	eleventyConfig.addLiquidShortcode("ogImageSource", function(slug) {
+	eleventyConfig.addLiquidShortcode("ogImageSource", function(slug, url) {
 		let domain = "https://www.zachleat.com";
 		let jpegPath = `/og/${slug}.jpeg`;
 		let pngPath = `/og/${slug}.png`;
@@ -332,7 +333,7 @@ module.exports = function(eleventyConfig) {
 		if(fs.existsSync(`.${jpegPath}`)) {
 			return `${domain}${jpegPath}`;
 		}
-		return `${domain}/og/default.jpeg`;
+		return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}/opengraph${url}`)}/opengraph/`;
 	});
 
 	/* COLLECTIONS */

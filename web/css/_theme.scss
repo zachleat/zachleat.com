@@ -305,7 +305,7 @@ h5,
 			top: 0;
 		}
 
-		body {
+		.body-grid {
 			display: grid;
 			grid-template-rows: 1fr 1fr 1fr;
 			grid-template-columns: 1fr 13.5rem 2.5rem;
@@ -326,7 +326,7 @@ h5,
 		.tmpl-page .rail { grid-area: 1/3/4/4; } 
 		.tmpl-page .hamburger { grid-area: 1/4/4/5; }
 
-		body:after {
+		.body-gradient:after {
 			content: "";
 			position: absolute;
 			right: 0;

@@ -1,0 +1,68 @@
+{%- capture distIncludeFolder %}dist/{% if distVersion %}{{ distVersion }}{% else %}{{ pkg.version }}{% endif %}/{% endcapture -%}
+{%- capture distFolder %}/web/{{ distIncludeFolder }}{% endcapture -%}
+{%- capture fullUrl %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
+<!doctype html>
+<html lang="en"{% if tmpl or templateclass %} class="{% if tmpl %} tmpl-{{ tmpl }}{% endif %}{% if templateclass %} {{ templateclass }}{% endif %}"{% endif %}>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>{% if title %}{% if titleOverride %}{{ titleOverride }}{% else %}{% if renderData.title %}{{ renderData.title }}{% else %}{{ title }}{% endif %}{% endif %}—zachleat.com{% else %}zachleat.com{% endif %}</title>
+
+		<link rel="preload" href="/web/css/fonts/lato/2.0/LatoLatin-Regular.supersubset.woff2" as="font" type="font/woff2" crossorigin>
+
+		<meta name="author" content="Zach Leatherman">
+		<meta name="description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
+
+		<meta property="og:title" content="{% if title %}{{ title }}—zachleat.com{% else %}zachleat.com{% endif %}">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Zach Leatherman">
+		<meta property="og:description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
+		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% elsif ogImageOverride %}{{ ogImageOverride }}{% else %}{% ogImageSource page.fileSlug, page.url %}{% endif %}">
+		<meta property="og:url" content="https://www.zachleat.com{{ page.url }}">
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@zachleat" />
+		<meta name="twitter:image" content="{% if headimage %}{{ headimage }}{% elsif ogImageOverride %}{{ ogImageOverride }}{% else %}{% ogImageSource page.fileSlug, page.url %}{% endif %}" />
+
+		<meta name="dist" content="{{distFolder}}">
+		<link rel="canonical" href="{{ fullUrl }}">
+{% if rssFeedUrl and rssFeedTitle %}
+		<link rel="alternate" href="{{ rssFeedUrl }}" title="{{ rssFeedTitle }}" type="application/atom+xml">
+{% else %}
+		<link rel="alternate" href="/web/feed/" title="Zach Leatherman’s Posts Feed" type="application/atom+xml">
+{% endif %}
+		<link rel="feed" href="https://www.zachleat.com/web/">
+
+		<style>{% include initial.min.css %}</style>
+
+		<link rel="stylesheet" href="{{ distFolder }}defer.min.css" media="print" onload="this.media='all'">
+		<noscript>
+			<link href="{{ distFolder }}defer.min.css" rel="stylesheet">
+		</noscript>
+{% if stylesheet %}
+		<link href="{{ distFolder }}{{ stylesheet }}" rel="stylesheet">
+{% endif %}
+{%- for url in stylesheets -%}
+		<link href="{{ url }}" rel="stylesheet">
+{%- endfor %}
+		<script>{% include initial.min.js %}</script>
+		<script src="{{ distFolder }}async.min.js" async></script>
+
+		<meta property="eleventy:path" content="{{ page.inputPath }}">
+
+		<!-- IndieAuth -->
+		<link href="mailto:zach@zachleat.com" rel="me">
+		<link href="https://twitter.com/zachleat" rel="me">
+		<link href="https://github.com/zachleat" rel="me">
+{% if enableWebmentions %}
+		<link rel="webmention" href="https://webmention.io/www.zachleat.com/webmention" />
+		<link rel="pingback" href="https://webmention.io/www.zachleat.com/xmlrpc" />
+{% endif %}
+	</head>
+	<body
+		{%- if classes and classes.body %} class="{{ classes.body }}"{% endif %}
+		{%- if style and style.body %} style="{{ style.body }}"{% endif %}>
+		{{ content }}
+	</body>
+</html>

@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+	font-family: -apple-system, system-ui, sans-serif;
+}
+
+:root {
+	--slide-border-width: 3px;
+}
+
+.slide {
+	min-height: 100%;
+	outline: none;
+	border: var(--slide-border-width) solid transparent;
+	background-color: #263238;
+}
+.slide,
+.slide :link,
+.slide :visited {
+	color: #fff;
+}
+
+.slide:not(.slide-preview) {
+	font-size: 1.25em; /* 20px /16 */
+}
+.slide:not(.slide-preview):not(.slide-editor),
+.slide:not(.slide-preview):not(.slide-editor) code[class*="language-"],
+.slide:not(.slide-preview):not(.slide-editor) pre[class*="language-"] {
+	background-color: #000;
+}
+.slide-preview-vertical,
+.slide-preview-vertical-flip,
+.slide-preview-horizontal,
+.slide-preview-horizontal-flip {
+	display: flex;
+}
+.slide-preview-vertical {
+	flex-direction: column-reverse;
+}
+.slide-preview-vertical-flip {
+	flex-direction: column;
+}
+.slide-preview-vertical > pre,
+.slide-preview-vertical-flip > pre {
+	/* flex-grow: 1; */
+	max-height: 58vh;
+	overflow: auto;
+}
+.slide-preview-horizontal {
+	flex-direction: row-reverse;
+}
+.slide-preview-horizontal-flip {
+	flex-direction: row;
+}
+.slide-preview-horizontal .frame,
+.slide-preview-horizontal-flip .frame {
+	max-width: 60%;
+}
+.slide-preview-vertical .frame-resizer.frame-resizer,
+.slide-preview-vertical-flip .frame-resizer.frame-resizer {
+	flex-grow: 0;
+	width: 70%;
+	min-height: 30vh;
+	resize: both;
+}
+.slide-preview-fullscreen .frame-resizer.frame-resizer {
+	width: 90vw;
+}
+
+/* Ratios */
+.slide-preview-30-70 pre {
+	flex-basis: 30%;
+}
+.slide-preview-30-70 .frame {
+	max-width: 100%;
+}
+.slide-preview-40-60 pre {
+	flex-basis: 40%;
+}
+.slide-preview-50-50 pre {
+	flex-basis: 50%;
+}
+.slide-preview-60-40 pre {
+	flex-basis: 60%;
+}
+.slide-preview-70-30 pre {
+	flex-basis: 70%;
+}
+
+/* Preview window */
+.frame {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: stretch;
+	padding: 2.5em;
+}
+.frame-resizer-iframe {
+	flex-grow: 999;
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+/* Fake window */
+.window {
+	display: flex;
+	flex-direction: column;
+  border-radius: .75em;
+  overflow: hidden;
+  box-shadow: 0 10px 40px 4px rgba(0, 0, 0, .4);
+	flex-grow: 999;
+}
+.window-hed {
+	display: flex;
+	background-color: #ddd;
+	gap: 6px;
+	padding: 6px;
+}
+.window-circle {
+	display: inline-block;
+	height: 12px;
+	min-width: 12px;
+	max-width: 12px;
+	border-radius: 12px;
+}
+.window-circle-red {
+	background-color: #FF5F56;
+}
+.window-circle-yellow {
+	background-color: #FFBD2E;
+}
+.window-circle-green {
+	background-color: #27C93F;
+}
+.window-title {
+	flex-grow: 999;
+	text-align: center;
+	font-size: 0.875em; /* 14px /16 */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background: #bbb;
+	border-radius: 0.5555555555556em; /* 5px /9 */
+	margin-left: 2em;
+	margin-right: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -3px;
+	margin-bottom: -3px;
+	text-decoration: none;
+}
+.window-title.window-title.window-title,
+.window-title.window-title.window-title:visited {
+	color: #000;
+}
+
+/* Main content */
+.main {
+	position: relative;
+  padding: 8px;
+  color: #000;
+  height: 100%;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	font-size: 2em;
+}
+.main > * {
+	z-index: 1;
+}
+.main:before {
+	content: "";
+	background-image: linear-gradient(238deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff0080);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.main:after {
+	content: "";
+	background-image: linear-gradient(to top, #ff00d5, transparent 70%, transparent 100%);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.main-hed {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+	width: 100%;
+	text-shadow: 0 0 4px rgba(255,255,255,0.6);
+}

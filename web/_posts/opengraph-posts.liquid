@@ -1,0 +1,20 @@
+---
+pagination:
+  data: collections.posts
+  size: 1
+  alias: post
+layout: layouts/og.liquid
+permalink: "/opengraph{{ post.data.page.url }}"
+eleventyComputed:
+  sourceUrl: "http://www.zachleat.com{{ post.data.page.url }}"
+---
+<main class="main">
+  <h1 class="primary-title main-hed">{{ post.data.title }}</h1>
+  <p><em>{{ page.date | readableDate }}</em> · {% imgavatar "zachleat", "z-avatar-bottom" %}<strong>Zach Leatherman</strong></p>
+</main>
+{% comment %}
+Ideas:
+* Git last updated
+* Number of comments
+* Popularity
+{% endcomment %}
