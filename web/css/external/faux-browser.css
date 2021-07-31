@@ -190,7 +190,8 @@ body {
 }
 .main:after {
 	content: "";
-	background-image: linear-gradient(to top, #ff00d5, transparent 70%, transparent 100%);
+	background-image: linear-gradient(to top, #ff00d5, rgba(255,255,255,0) 1%, rgba(255,255,255,0) 8%, rgba(255,255,255,.2) 8.1%, rgba(255,255,255,.5) 92%, rgba(255,255,255,0) 92.1%,  rgba(255,255,255,0) 99%, #ff00d5 100%),
+	radial-gradient(ellipse at bottom, #ff00d5, transparent 38%);
 	position: absolute;
 	left: 0;
 	right: 0;
