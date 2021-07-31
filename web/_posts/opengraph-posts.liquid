@@ -9,8 +9,13 @@ eleventyComputed:
   sourceUrl: "http://www.zachleat.com{{ post.data.page.url }}"
 ---
 <main class="main">
-  <h1 class="primary-title main-hed">{% if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}</h1>
-  <p><em>{{ page.date | readableDate }}</em> · {% imgavatar "zachleat", "z-avatar-bottom" %}<strong>Zach Leatherman</strong></p>
+  <div>
+    <h1 class="primary-title main-hed"><span class="main-box">{% if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}</span></h1>
+  </div>
+  <p>
+    <em class="main-box">{{ page.date | readableDate }}</em>
+    {% imgavatar "zachleat", "z-avatar-large" %} <strong class="main-box">Zach Leatherman</strong>
+  </p>
 </main>
 {% comment %}
 Ideas:
