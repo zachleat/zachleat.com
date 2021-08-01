@@ -10,8 +10,7 @@ html {
 	/* Force scrollbar */
 	overflow-y: scroll;
 }
-html,
-body {
+html {
 	background-color: #fff;
 	color: #222;
 }
@@ -203,7 +202,7 @@ h5,
 .content-main {
 	text-align: left;
 	padding: 0 0.25rem; /* 4px /16 */
-	background-color: #fff;
+	// background-color: #fff;
 	color: $textColor;
 	font-size: 1.1875em; /* 19px /16 */
 	line-height: 165%;
@@ -1474,4 +1473,20 @@ select[data-filter-bind] {
 	color: inherit;
 	background: inherit;
 	border-radius: .25em;
+}
+
+/* Post background images with gradient overlays */
+.body-hasbgimage:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	z-index: -1;
+	overflow: hidden;
+	background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .35), rgba(255, 255, 255, 1) 45%), var(--seo-bgimage);
+	background-position: top;
+	background-size: 100% 100%, 100% auto;
+	background-repeat: no-repeat;	
 }

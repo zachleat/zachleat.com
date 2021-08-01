@@ -20,7 +20,6 @@ body {
 	min-height: 100%;
 	outline: none;
 	border: var(--slide-border-width) solid transparent;
-	background-color: #263238;
 }
 .slide,
 .slide :link,
@@ -121,16 +120,16 @@ body {
 }
 .window-hed {
 	display: flex;
-	background-color: #ddd;
+	background-color: #222;
 	gap: 6px;
-	padding: 6px;
+	padding: 8px;
 }
 .window-circle {
 	display: inline-block;
-	height: 12px;
-	min-width: 12px;
-	max-width: 12px;
-	border-radius: 12px;
+	height: 14px;
+	min-width: 14px;
+	max-width: 14px;
+	border-radius: 14px;
 }
 .window-circle-red {
 	background-color: #FF5F56;
@@ -148,10 +147,10 @@ body {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	background: #bbb;
+	background: #444;
 	border-radius: 0.5555555555556em; /* 5px /9 */
-	margin-left: 2em;
-	margin-right: 2em;
+	margin-left: 20%;
+	margin-right: 20%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -161,7 +160,7 @@ body {
 }
 .window-title.window-title.window-title,
 .window-title.window-title.window-title:visited {
-	color: #000;
+	color: #fff;
 }
 
 /* Main content */

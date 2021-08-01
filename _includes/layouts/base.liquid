@@ -60,7 +60,11 @@
 		<link rel="pingback" href="https://webmention.io/www.zachleat.com/xmlrpc" />
 {% endif %}
 	</head>
-	<body{%- if classes and classes.body %} class="{{ classes.body }}"{% endif %}>
+	<body class="
+			{%- if classes and classes.body %} {{ classes.body }}{% endif -%}
+			{%- if seo and seo.openGraphBackgroundImage %} body-hasbgimage{% endif -%}
+		"
+		{% if seo and seo.openGraphBackgroundImage %} style="--seo-bgimage: {{ seo.openGraphBackgroundImage | backgroundimage: 1200 }}"{% endif %}>
 		{{ content }}
 	</body>
 </html>
