@@ -8,8 +8,9 @@ body {
   margin: 0;
   height: 100%;
 }
-body {
-	font-family: -apple-system, system-ui, sans-serif;
+@font-face {
+  font-family: SFDisplayBlack;
+  src: url(/og/sources/sf-pro-display-black-latin.woff2) format("woff2");
 }
 
 :root {
@@ -157,6 +158,8 @@ body {
 	margin-top: -3px;
 	margin-bottom: -3px;
 	text-decoration: none;
+	font-family: -apple-system, system-ui, sans-serif;
+	font-weight: 500;
 }
 .window-title.window-title.window-title,
 .window-title.window-title.window-title:visited {
@@ -217,9 +220,12 @@ body {
 	line-height: 1.3;
 }
 .main-hed.main-hed {
-	margin: 0 0 0;
+	margin: 0;
+	font-family: SFDisplayBlack, sans-serif;
 }
 @supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
+	.main .speedlify-requests,
+	.main .speedlify-weight,
 	.main-box {
 		display: inline;
 		padding: 0 .2em;
@@ -227,23 +233,60 @@ body {
 		box-decoration-break: clone;
 		background-color: #000;
 	}
+	.main .speedlify-requests,
+	.main .speedlify-weight,
 	.main-box-nowrap {
 		white-space: nowrap;
 	}
 }
-.main-author {
+.main-left {
 	position: absolute;
-	bottom: 1em;
+	bottom: 0.625em; /* 20px /32 */ /* avatar-name must vertical align with date on right side */
 	left: 1em;
 	text-align: left;
+	display: flex;
+	align-items: center;
 }
-.main-metadata {
+.main-left .main-avatar-name {
+	position: relative;
+	top: -12px;
+}
+.main-center {
+	position: absolute;
+	left: 50%;
+	bottom: 1em;
+	transform: translateX(-50%);
+}
+.main-right {
 	position: absolute;
 	font-size: 0.875em; /* 14px /16 */
 	bottom: 1em;
 	right: 1em;
 	text-align: right;
 }
-.main-metadata > * {
+.main-right > * {
 	line-height: 1.5;
+}
+
+.main-pageweight {
+	display: inline;
+	margin-left: 1em;
+}
+.main-lighthouse {
+	display: inline-flex;
+}
+.main .speedlify-score {
+	border-width: 4px;
+	background-color: white;
+	box-shadow: 0 0 0 4px white;
+	color: black;
+	font-weight: 700;
+	font-family: -apple-system, system-ui, sans-serif;
+	width: 64px; /* match the avatar */
+	height: 64px;
+	margin-top: -4px;
+}
+.main speedlify-score + .main-avatar .z-avatar {
+	box-shadow: 0 0 0 4px white;
+	margin-left: 12px;
 }

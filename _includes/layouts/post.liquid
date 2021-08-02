@@ -64,3 +64,11 @@ tmpl: page
 	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
 	{% include webmentionlist, absoluteUrl: absoluteUrl %}
 {% endunless %}
+
+<div class="share content-grid-sibling">
+	<details>
+		<summary class="hed-h3">Social Card Image Preview</summary>
+		<p>This is what will show up when you share this post on Social Media:</p>
+		<img class="share-img" src="{% if headimage %}{{ headimage }}{% else %}{% ogImageSource page %}{% endif %}" loading="lazy" width="1200" height="630">
+	</details>
+</div>

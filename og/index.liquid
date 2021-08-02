@@ -3,7 +3,7 @@ layout: layouts/base.liquid
 ---
 <style>
 .og {
-  background-color: #243137;
+  background-color: #fff;
   display: grid;
   grid-template-columns: repeat(auto-fill, 1200px);
 }
@@ -13,6 +13,6 @@ layout: layouts/base.liquid
 </style>
 <div class="og">
 {%- for post in collections.posts %}
-  <iframe class="og-preview" loading="lazy" width="1200" height="630" src="/opengraph{{ post.url }}"></iframe>
+  <a href="/opengraph{{ post.url }}"><iframe class="og-preview" style="pointer-events: none" loading="lazy" width="1200" height="630" src="/opengraph{{ post.url }}"></iframe></a>
 {%- endfor %}
 </div>

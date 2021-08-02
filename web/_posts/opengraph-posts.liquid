@@ -14,16 +14,18 @@ eleventyComputed:
   <div>
     <h1 class="primary-title main-hed"><span class="main-box">{% if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}</span></h1>
   </div>
-  <p class="main-author">
-    {% imgavatar "zachleat", "z-avatar-large z-avatar-bottom" %} <strong class="main-box main-box-nowrap">Zach Leatherman</strong>
+  <p class="main-left">
+    {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-lighthouse" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" score></speedlify-score>{%- endif %}
+    <span class="main-avatar">{% imgavatar "zachleat", "z-avatar-large z-avatar-bottom" %} <strong class="main-avatar-name main-box">zachleat</strong></span>
   </p>
-  <p class="main-metadata">
-    {% if post.data.postRank %}<span class="main-box main-box-nowrap">#{{ post.data.postRank }} Popular</span><br>{% endif %}
-    {% if webmentionsCount > 0 %}<span class="main-box main-box-nowrap">{{ webmentionsCount }} Webmention{% if webmentionsCount != 1 %}s{% endif %}</span><br>{% endif %}
-    <em class="main-box main-box-nowrap">{{ post.date | readableDate }}</em><br>
+  <p class="main-center"></p>
+  <p class="main-right">
+    {% comment %} {%- if post.data.postRank %}<span class="main-box main-box-nowrap">#{{ post.data.postRank }} Popular</span><br>{% endif %} {% endcomment %}
+    {%- if webmentionsCount > 0 %}<span class="main-box main-box-nowrap">{{ webmentionsCount }} Webmention{% if webmentionsCount != 1 %}s{% endif %}</span>{% endif %}
+    {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-pageweight" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" weight></speedlify-score>{%- endif %}<br>
+    <em class="main-box main-box-nowrap">{{ post.date | readableDate }}</em>
   </p>
 </main>
 {% comment %}
-Ideas:
-* Git last updated
+Ideas: Git last updated
 {% endcomment %}

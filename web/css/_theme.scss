@@ -1490,3 +1490,9 @@ select[data-filter-bind] {
 	background-size: 100% 100%, 100% auto;
 	background-repeat: no-repeat;	
 }
+
+/* Share image preview */
+.share-img {
+	max-width: 21.73913043478em; /* 500px /23 */
+	border-radius: 0.3913043478261em; /* 9px /23 */
+}
