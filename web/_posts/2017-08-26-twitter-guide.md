@@ -8,7 +8,8 @@ metadata:
   speaking:
     type: barcamp
     country: US
-stylesheet: keynote-extractor.css
+stylesheetsDist:
+  - keynote-extractor.css
 templateclass: wider
 ---
 
