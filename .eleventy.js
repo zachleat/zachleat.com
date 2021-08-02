@@ -297,6 +297,10 @@ module.exports = function(eleventyConfig) {
 				if(!allowedTypes.includes(entry['wm-property'])) {
 					return false;
 				}
+				// block list
+				if(`${entry.url}`.startsWith("https://sayed.cyou/")) {
+					return false;
+				}
 				return getBaseUrl(entry['wm-target']) === url;
 			});
 	});
