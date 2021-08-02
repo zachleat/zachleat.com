@@ -4,7 +4,7 @@ titleHtml: Eleventy Serverless (<del>Eleventy Cloud</del>) Thus Far
 tags:
   - eleventy
   - popular-posts
-postRank: 12
+postRank: 18
 ---
 _Updated on June 30, 2021: A first draft of the [Eleventy Serverless documentation](https://www.11ty.dev/docs/plugins/serverless/) is now available._
 
