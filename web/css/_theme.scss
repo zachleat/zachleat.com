@@ -1476,23 +1476,26 @@ select[data-filter-bind] {
 }
 
 /* Post background images with gradient overlays */
-.body-hasbgimage:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	height: 100vh;
-	z-index: -1;
-	overflow: hidden;
-	background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .7), rgba(255, 255, 255, 1) 45%), var(--seo-bgimage);
-	background-position: top;
-	background-size: 100% 100%, 100% auto;
-	background-repeat: no-repeat;	
+@media (min-width: $twoColLayoutMinWidth) {
+	.body-hasbgimage:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		z-index: -1;
+		overflow: hidden;
+		background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .7), rgba(255, 255, 255, 1) 45%), var(--seo-bgimage);
+		background-position: top;
+		background-size: 100% 100%, 100% auto;
+		background-repeat: no-repeat;	
+	}
 }
 
 /* Share image preview */
 .share-img {
 	max-width: 21.73913043478em; /* 500px /23 */
 	border-radius: 0.3913043478261em; /* 9px /23 */
+	background-color: #999;
 }
