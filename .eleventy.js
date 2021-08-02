@@ -345,6 +345,11 @@ module.exports = function(eleventyConfig) {
 	function getPosts(collectionApi) {
 		return collectionApi.getFilteredByGlob("./web/_posts/*").reverse().filter(function(item) {
 			return !!item.data.permalink;
+		}).filter(function(item) {
+			if(process.env.ELEVENTY_PRODUCTION) {
+				return !item.data.tags || !item.data.tags.includes("draft");
+			}
+			return true;
 		});
 	}
 
