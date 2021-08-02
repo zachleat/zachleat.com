@@ -346,8 +346,8 @@ module.exports = function(eleventyConfig) {
 		return collectionApi.getFilteredByGlob("./web/_posts/*").reverse().filter(function(item) {
 			return !!item.data.permalink;
 		}).filter(function(item) {
-			if(process.env.ELEVENTY_PRODUCTION) {
-				return !item.data.tags || !item.data.tags.includes("draft");
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
 			}
 			return true;
 		});
@@ -408,8 +408,8 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("writing", function(collection) {
 		return collection.getSortedByDate().reverse().filter(item => {
-			if(process.env.ELEVENTY_PRODUCTION) {
-				return !item.data.tags || !item.data.tags.includes("draft");
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
 			}
 
 			return isWriting(item);
@@ -422,6 +422,7 @@ module.exports = function(eleventyConfig) {
 			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
 				continue;
 			}
+
 			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") ) {
 				items.push( item );
 				if( items.length >= 5 ) {
@@ -434,8 +435,8 @@ module.exports = function(eleventyConfig) {
 	// font-loading category mapped to collection
 	eleventyConfig.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
-			if(process.env.ELEVENTY_PRODUCTION) {
-				return !item.data.tags || !item.data.tags.includes("draft");
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
 			}
 
 			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 || hasTag(item, "font-loading");
@@ -445,8 +446,8 @@ module.exports = function(eleventyConfig) {
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
-			if(process.env.ELEVENTY_PRODUCTION) {
-				return !item.data.tags || !item.data.tags.includes("draft");
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
 			}
 
 			return isSpeaking(item);
@@ -455,8 +456,8 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("popularPostsRanked", function(collection) {
 		return collection.getFilteredByTag("popular-posts").filter(item => {
-			if(process.env.ELEVENTY_PRODUCTION) {
-				return !item.data.tags || !item.data.tags.includes("draft");
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
 			}
 			return true;
 		}).sort(function(a, b) {
@@ -466,8 +467,8 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("popularPostsTotalRanked", function(collection) {
 		return collection.getFilteredByTag("popular-posts-total").filter(item => {
-			if(process.env.ELEVENTY_PRODUCTION) {
-				return !item.data.tags || !item.data.tags.includes("draft");
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
 			}
 			return true;
 		}).sort(function(a, b) {
