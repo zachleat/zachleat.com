@@ -407,19 +407,21 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("writing", function(collection) {
-		let posts = collection.getSortedByDate().reverse();
-		let items = [];
-		for( let item of posts ) {
-			if( isWriting(item) ) {
-				items.push( item );
+		return collection.getSortedByDate().reverse().filter(item => {
+			if(process.env.ELEVENTY_PRODUCTION) {
+				return !item.data.tags || !item.data.tags.includes("draft");
 			}
-		}
-		return items;
+
+			return isWriting(item);
+		});
 	});
 	eleventyConfig.addCollection("latestPosts", function(collection) {
 		let posts = collection.getSortedByDate().reverse();
 		let items = [];
 		for( let item of posts ) {
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				continue;
+			}
 			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") ) {
 				items.push( item );
 				if( items.length >= 5 ) {
@@ -432,6 +434,10 @@ module.exports = function(eleventyConfig) {
 	// font-loading category mapped to collection
 	eleventyConfig.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
+			if(process.env.ELEVENTY_PRODUCTION) {
+				return !item.data.tags || !item.data.tags.includes("draft");
+			}
+
 			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 || hasTag(item, "font-loading");
 		}).reverse();
 	});
@@ -439,18 +445,32 @@ module.exports = function(eleventyConfig) {
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
+			if(process.env.ELEVENTY_PRODUCTION) {
+				return !item.data.tags || !item.data.tags.includes("draft");
+			}
+
 			return isSpeaking(item);
 		}).reverse();
 	});
 
 	eleventyConfig.addCollection("popularPostsRanked", function(collection) {
-		return collection.getFilteredByTag("popular-posts").sort(function(a, b) {
+		return collection.getFilteredByTag("popular-posts").filter(item => {
+			if(process.env.ELEVENTY_PRODUCTION) {
+				return !item.data.tags || !item.data.tags.includes("draft");
+			}
+			return true;
+		}).sort(function(a, b) {
 			return b.data.postRank - a.data.postRank;
 		}).reverse();
 	});
 
 	eleventyConfig.addCollection("popularPostsTotalRanked", function(collection) {
-		return collection.getFilteredByTag("popular-posts-total").sort(function(a, b) {
+		return collection.getFilteredByTag("popular-posts-total").filter(item => {
+			if(process.env.ELEVENTY_PRODUCTION) {
+				return !item.data.tags || !item.data.tags.includes("draft");
+			}
+			return true;
+		}).sort(function(a, b) {
 			return b.data.postRankTotalViews - a.data.postRankTotalViews;
 		}).reverse();
 	});
