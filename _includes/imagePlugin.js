@@ -1,4 +1,11 @@
 const Image = require("@11ty/eleventy-img");
+const { createHash } = require("crypto");
+
+function getCryptoHash(src) {
+    let hash = createHash("sha1");
+    hash.update(src);
+    return hash.digest('hex').substring(0, 8);
+}
 
 async function imageShortcode(attrs = {}, options = {}) {
   options = Object.assign({},{
@@ -25,26 +32,29 @@ async function imageShortcode(attrs = {}, options = {}) {
 }
 
 function backgroundImageFilter(src, width, options = {}) {
+  let filename = `${getCryptoHash(src)}.jpeg`;
+
   options = Object.assign({},{
     widths: [width || "auto"],
     formats: ["jpeg"],
     urlPath: "/img/built/",
     outputDir: "./_site/img/built/",
+    filenameFormat: function (id, src, width, format, options) {
+      return filename;
+    },
     sharpAvifOptions: {
       lossless: true,
     },
   }, options);
 
-  src = `.${src}`;
+  if(!src.startsWith("http://") && !src.startsWith("https://")) {
+    src = `.${src}`;
+  }
 
   // async
   Image(src, options);
 
-  // sync
-  let metadata = Image.statsSync(src, options);
-
-  let css = `url('${metadata.jpeg[0].url}')`;
-  return css;
+  return `url('/img/built/${filename}')`;
 }
 
 module.exports = function(eleventyConfig) {

@@ -10,7 +10,7 @@ eleventyComputed:
 ---
 {%- capture absoluteUrl -%}{{ post.url | url | absoluteUrl }}{%- endcapture -%}
 {%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
-<main class="main"{% if post.data.seo.openGraphBackgroundImage %} style="--og-bgimage: url('{{ post.data.seo.openGraphBackgroundImage }}')"{% endif %}>
+<main class="main{% if post.data.seo.openGraphBackgroundImage %} main-bgimg{% endif %}"{% if post.data.seo.openGraphBackgroundImage %} style="--og-bgimage: url('{{ post.data.seo.openGraphBackgroundImage }}')"{% endif %}>
   <div>
     <h1 class="primary-title main-hed"><span class="main-box">{% if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}</span></h1>
   </div>

@@ -4,6 +4,8 @@ tags:
   - speaking
   - eleventy
   - video
+metadata:
+  youtubeId: Lg9BO8vBXsc
 medialength: 4 min
 ---
 [Watch on YouTube](https://www.youtube.com/watch?v=Lg9BO8vBXsc) or below:

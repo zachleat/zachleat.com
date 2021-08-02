@@ -165,6 +165,7 @@ body {
 
 /* Main content */
 .main {
+	--main-bg-overlay: rgba(255,255,255,.15);
 	position: relative;
   color: #fff;
   height: 100%;
@@ -191,13 +192,18 @@ body {
 }
 .main:after {
 	content: "";
-	background-image: linear-gradient(to top, #ff00d5, rgba(0,0,0,.2) 1%, rgba(0,0,0,.2) 99%, #ff00d5 100%),
-	radial-gradient(ellipse at bottom, #ff00d5, transparent 50%);
+	background-image: linear-gradient(to top, #ff00d5, var(--main-bg-overlay) 1%, var(--main-bg-overlay) 99%, #ff00d5 100%),
+		/* radial-gradient(ellipse at top right, #3b5f3d, transparent 100%), */
+		radial-gradient(ellipse at bottom left, #ff00d5, transparent 40%);
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
+}
+.main-bgimg {
+	/* --main-bg-overlay: rgba(0,0,0,.4); */
+	--main-bg-overlay: rgba(255,255,255,.3);
 }
 
 .main-hed {

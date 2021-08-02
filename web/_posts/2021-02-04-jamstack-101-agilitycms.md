@@ -11,6 +11,7 @@ tags:
 metadata:
   speaking:
     type: meetup
+#  youtubeId: oUoFmurl71k # no highres
 medialength: 73 min
 ---
 {% youtubeEmbed "oUoFmurl71k" %}

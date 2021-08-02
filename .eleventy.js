@@ -325,15 +325,6 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addLiquidShortcode("ogImageSource", function({fileSlug, url, inputPath}) {
 		let domain = "https://www.zachleat.com";
-		let jpegPath = `/og/${fileSlug}.jpeg`;
-		let pngPath = `/og/${fileSlug}.png`;
-
-		if(fs.existsSync(`.${pngPath}`)) {
-			return `${domain}${pngPath}`;
-		}
-		if(fs.existsSync(`.${jpegPath}`)) {
-			return `${domain}${jpegPath}`;
-		}
 
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./web/_posts/")) {

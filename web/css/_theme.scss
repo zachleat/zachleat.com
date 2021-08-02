@@ -1485,7 +1485,7 @@ select[data-filter-bind] {
 	height: 100vh;
 	z-index: -1;
 	overflow: hidden;
-	background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .35), rgba(255, 255, 255, 1) 45%), var(--seo-bgimage);
+	background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .7), rgba(255, 255, 255, 1) 45%), var(--seo-bgimage);
 	background-position: top;
 	background-size: 100% 100%, 100% auto;
 	background-repeat: no-repeat;	

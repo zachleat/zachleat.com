@@ -9,6 +9,7 @@ tags:
 metadata:
   speaking:
     type: podcast
+  youtubeId: j8mJrhhdHWc
 event_date: Jan 7
 medialength: 92 min
 ---
