@@ -79,6 +79,11 @@ module.exports = function(eleventyConfig) {
 		return str.substr(0, len) + suffix;
 	});
 
+	eleventyConfig.addFilter("selectRandomFromArray", (arr) => { // tweet sized default
+		let index = Math.floor(Math.random() * arr.length);
+		return arr[index];
+	});
+
 	eleventyConfig.addLiquidFilter("numberString", function(num) {
 		let strs = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 		if( num < strs.length ) {
