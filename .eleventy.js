@@ -303,7 +303,11 @@ module.exports = function(eleventyConfig) {
 					return false;
 				}
 				// block list
-				if(`${entry.url}`.startsWith("https://sayed.cyou/")) {
+				let blocked = [
+					"https://lzomedia.com/",
+					"https://sayed.cyou/"
+				];
+				if(blocked.filter(blockedUrl => `${entry.url}`.startsWith(blockedUrl)).length > 0) {
 					return false;
 				}
 				return getBaseUrl(entry['wm-target']) === url;
