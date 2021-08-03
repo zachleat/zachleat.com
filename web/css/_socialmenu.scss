@@ -57,15 +57,18 @@
 		margin-right: auto;
 	}
 	.rail .social {
-		padding-left: 2em;
-		padding-right: 2em;
-		flex-basis: 16em;
+		flex-basis: 10em;
+		display: flex;
+		justify-content: flex-end;
+		gap: 0.5em;
 	}
 	.rail .navigation .tags:first-child {
 		text-align: left;
+		padding-right: 1em;
 	}
 	.rail .navigation .social + .tags {
 		text-align: right;
+		padding-left: 1em;
 	}
 	.rail .navigation .tags a[href] {
 		padding-left: 1em;

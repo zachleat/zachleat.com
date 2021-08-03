@@ -20,11 +20,11 @@ classes:
 						<a href="/web/about/" class="tag tag-borderless{% if page.url == '/web/about/' %} active{% endif %}">About</a>
 						<a href="/web/" class="tag tag-borderless{% if page.url == '/web/' %} active{% endif %}">Archives</a>
 					</span>
-					<a href="/web/fonts/" class="tag font-loading{% if page.url == '/web/fonts/' %} active{% endif %}">Web Fonts</a>
-					<a href="/web/eleventy/" class="tag{% if page.url == '/web/eleventy/' %} active{% endif %}">Eleventy</a>
+					<a href="/web/fonts/" class="hide-md tag font-loading{% if page.url == '/web/fonts/' %} active{% endif %}">Web Fonts</a>
+					<a href="/web/eleventy/" class="hide-md tag{% if page.url == '/web/eleventy/' %} active{% endif %}">Eleventy</a>
 				</div>
 				{% include social.html %}
-				<div class="tags tags-rail">
+				<div class="tags tags-rail hide-md">
 					<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %}">Speaking</a>
 					<a href="/twitter/" class="tag">Twitter<span class="hide-sm"> Archive</span></a>
 					<a href="/web/projects/" class="tag{% if page.url == '/web/projects/' %} active{% endif %}">Projects</a>
