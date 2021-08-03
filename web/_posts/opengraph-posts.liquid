@@ -33,8 +33,11 @@ More Ideas:
         <span class="window-title">{{ quote }}</span>
       </div>
       <main class="main{% if post.data.seo.openGraphBackgroundImage %} main-bgimg{% endif %}"{% if post.data.seo.openGraphBackgroundImage %} style="--og-bgimage: url('{{ post.data.seo.openGraphBackgroundImage }}')"{% endif %}>
-        <div>
-          <h1 class="primary-title main-hed"><span class="main-box">{% if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}</span></h1>
+        <div class="main-top">
+          <h1 class="primary-title main-hed">
+            <span class="main-box">{% if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}</span>
+            {% comment %}<span class="main-hed-sup main-box main-box-nowrap"></span> {% endcomment %}
+          </h1>
         </div>
         <p class="main-left">
           {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-lighthouse" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" score></speedlify-score>{%- endif %}
@@ -45,6 +48,7 @@ More Ideas:
           {% comment %} {%- if post.data.postRank %}<span class="main-box main-box-nowrap">#{{ post.data.postRank }} Popular</span><br>{% endif %} {% endcomment %}
           {%- if webmentionsCount > 0 %}<span class="main-box main-box-nowrap">{{ webmentionsCount }} Webmention{% if webmentionsCount != 1 %}s{% endif %}</span>{% endif %}
           {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-pageweight" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" weight></speedlify-score>{%- endif %}<br>
+          <span class="main-postnumber main-box main-box-nowrap">№{{ pagination.pages.length | minus: pagination.pageNumber }}</span>
           <strong class="main-box main-box-nowrap">{{ post.date | readableDate }}</strong>
         </p>
       </main>

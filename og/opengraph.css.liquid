@@ -211,19 +211,34 @@ body {
 	--main-bg-overlay: rgba(255,255,255,.3);
 }
 
+.main-top {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
 .main-hed {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 4;
 	overflow: hidden;
-	padding: .1em .5em;
+	line-height: 1.3;
+	padding: 0;
 	width: 100%;
 	color: #fff;
-	line-height: 1.3;
 }
 .main-hed.main-hed {
 	margin: 0;
 	font-family: SFDisplayBlack, sans-serif;
+}
+.main-hed-sup {
+	line-height: 1.5;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 1.5rem;
+	vertical-align: top;
+	background-color: rgba(0,0,0,.3);
+	text-transform: none;
+	letter-spacing: 0;
 }
 @supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
 	.main .speedlify-requests,
@@ -290,4 +305,8 @@ body {
 .main speedlify-score + .main-avatar .z-avatar {
 	box-shadow: 0 0 0 4px white;
 	margin-left: 12px;
+	margin-top: -1px;
+}
+.main-postnumber {
+	margin-right: 1em;
 }
