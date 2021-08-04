@@ -413,6 +413,9 @@ module.exports = function(eleventyConfig) {
 		if(hasTag(collectionItem, "font-loading") || hasCategory(collectionItem, "font-loading")) {
 			categories.push("web-fonts");
 		}
+		if(hasTag(collectionItem, "project")) {
+			categories.push("project");
+		}
 		if(hasTag(collectionItem, "note")) {
 			categories.push("note");
 		}
