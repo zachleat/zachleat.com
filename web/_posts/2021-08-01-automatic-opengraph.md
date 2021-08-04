@@ -21,7 +21,7 @@ In the past, I did experiment a bit with using the [SVG to raster image feature 
 
 ## The Fancy Method
 
-With those experiences under my belt, I decided to custom design a page on my site ([source code](https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/web/_posts/opengraph-posts.liquid#L12)) for each blog post that could serve as the target for my screenshot service. This provided a couple of benefits:
+With those experiences under my belt, I decided to custom design a page on my site ([source code](https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/web/_posts/opengraph-posts.liquid#L12)) that would iterate over each blog post and could serve as the target for my screenshot service. This provided a couple of benefits:
 * I can use all of the existing HTML/CSS/JS/Fonts already in use on my site. That means fake browser chrome, custom Twitter avatars, Lighthouse scores, popularity ranks, among others!
 * I don’t have to run Puppeteer locally. I try to avoid this when possible—it is awesome but it slows down the build (a lot).
 
