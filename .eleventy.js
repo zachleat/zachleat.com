@@ -186,12 +186,16 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addLiquidFilter("getPostCountForYear", (posts, year) => {
 		return posts.filter(function(post) {
-			return !post.data.tags ||
-				post.data.tags.indexOf("deprecated") === -1 &&
-				!post.data.deprecated &&
-				!post.data.feedtrim &&
-				post.data.tags.indexOf("pending") === -1 &&
-				post.data.tags.indexOf("draft") === -1;
+			if(!post.data.tags) {
+				return true;
+			}
+			if(post.data.tags.includes("deprecated") || 
+				post.data.tags.includes("pending") || 
+				post.data.tags.includes("draft")) {
+				return false;
+			}
+
+			return true;
 		}).filter(function(post) {
 			return post.data.page.date.getFullYear() === parseInt(year, 10);
 		}).length;

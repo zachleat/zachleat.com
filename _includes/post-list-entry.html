@@ -1,6 +1,6 @@
 
 {%- capture previousyear %}{{ currentyear }}{% endcapture %}
-{%- capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+{%- capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
 {%- if currentyear != year and ignoreYear != "true" %}
 <li class="subhed" id="{{ currentyear }}">{{ currentyear }}{% if listItems %} <span class="subhed-count" data-filter-category data-filter-results-exclude>×{{ listItems | getPostCountForYear: currentyear }}</span>{% endif %}</li>
 	{%- capture year %}{{currentyear}}{% endcapture %}
