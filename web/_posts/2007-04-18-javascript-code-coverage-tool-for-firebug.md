@@ -5,7 +5,6 @@ layout: post
 tags:
   - project
 deprecated: true
-feedtrim: true
 ---
 
 [**Download FirebugCodeCoverage-0.1.xpi**][1]

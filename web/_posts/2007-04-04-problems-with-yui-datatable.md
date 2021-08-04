@@ -7,7 +7,6 @@ Version Specific Article:
 tags:
   - popular-posts-total
 deprecated: true
-feedtrim: true
 postRankTotalViews: 15
 ---
 

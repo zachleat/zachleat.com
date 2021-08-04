@@ -2,7 +2,6 @@
 title: '20000 Leagues Under the API: YouTube JavaScript'
 author: Zach Leatherman
 layout: post
-feedtrim: true
 ---
 
 Today, children, we’ll be exploring the wonderful world of the official JavaScript API published by YouTube a few weeks ago. I read a [few][1] [interesting][2] [posts][3] on the subject when it first came out, and it’s been on my list of things to explore for the next (and hopefully last) version of [Alarmd][4]. This isn’t going to be a long post so much as a laundry list of points worth mentioning and limitations there-of regarding the API itself.

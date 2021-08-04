@@ -8,7 +8,6 @@ tags:
   - highlight
   - project
   - popular-posts-total
-feedtrim: true
 postRankTotalViews: 9
 ---
 

@@ -2,7 +2,6 @@
 title: Specific Inheritance with TIBCO&#8217;s General Interface
 author: Zach Leatherman
 layout: post
-feedtrim: true
 ---
 
 *Sorry about the title, I couldn’t resist.*

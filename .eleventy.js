@@ -189,12 +189,9 @@ module.exports = function(eleventyConfig) {
 			if(!post.data.tags) {
 				return true;
 			}
-			if(post.data.tags.includes("deprecated") || 
-				post.data.tags.includes("pending") || 
-				post.data.tags.includes("draft")) {
+			if(post.data.tags.includes("draft")) {
 				return false;
 			}
-
 			return true;
 		}).filter(function(post) {
 			return post.data.page.date.getFullYear() === parseInt(year, 10);
@@ -373,10 +370,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addCollection("feedPosts", function(collection) {
 		return getPosts(collection).filter(function(item) {
 			return !item.data.tags ||
-				item.data.tags.indexOf("deprecated") === -1 &&
 				!item.data.deprecated &&
-				!item.data.feedtrim &&
-				item.data.tags.indexOf("pending") === -1 &&
 				item.data.tags.indexOf("draft") === -1;
 		});
 	});
