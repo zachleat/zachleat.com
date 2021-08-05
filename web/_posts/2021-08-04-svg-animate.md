@@ -106,7 +106,7 @@ if ('IntersectionObserver' in window)  {
 
 ## Try it yourself
 
-* Here’s a Codepen for you to play with: [SVG `<animation begin="indefinite">` with IntersectionObserver](https://codepen.io/zachleat/pen/JjNaQVq)
+* Try it out on [{% imgavatar "codepen" %}Codepen: SVG `<animation begin="indefinite">` with IntersectionObserver](https://codepen.io/zachleat/pen/JjNaQVq)
 
 
 ## More Links
