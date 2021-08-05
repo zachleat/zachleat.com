@@ -62,7 +62,7 @@
     "git-check": "if [[ $(git --no-pager diff HEAD --name-only) ]]; then echo 'You have uncommited changes.'; exit 1; fi",
     "tag-release": "npm run git-check && git tag `date '+deploy-%Y%m%d-%H%M%S'` && git push --tags",
     "popular": "npm run git-check && ./refresh-populars.sh && git add -A && git commit -m 'Popular posts data.' && git push origin master",
-    "deploy": "npm run popular && ELEVENTY_PRODUCTION=true grunt deploy && npm run tag-release"
+    "deploy": "ELEVENTY_PRODUCTION=true grunt deploy && npm run tag-release"
   },
   "repository": {
     "type": "git",
