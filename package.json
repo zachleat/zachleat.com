@@ -58,9 +58,10 @@
     "build-with-assets": "grunt",
     "build": "npx @11ty/eleventy --quiet",
     "start": "npx @11ty/eleventy --quiet --serve",
-    "popular": "./refresh-populars.sh",
+    "popular": "npm run git-check && ./refresh-populars.sh && git add -A && git commit -m 'Popular posts data.'",
     "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
-    "deploy": "npm run popular && ELEVENTY_PRODUCTION=true grunt deploy"
+    "deploy": "npm run popular && ELEVENTY_PRODUCTION=true grunt deploy",
+    "git-check": "if [[ $(git --no-pager diff HEAD --name-only) ]]; then echo 'You have uncommited changes.'; exit 1; fi"
   },
   "repository": {
     "type": "git",
