@@ -342,7 +342,9 @@ module.exports = function(eleventyConfig) {
 
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./web/_posts/")) {
-			return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}/opengraph${url}`)}/opengraph/`;
+			let d = new Date();
+			let cacheBuster = `_${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`
+			return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}/opengraph${url}`)}/opengraph/${cacheBuster}/`;
 		}
 
 		// raw screenshot
@@ -510,6 +512,14 @@ module.exports = function(eleventyConfig) {
 			return md.renderInline(content);
 		}
 		return md.render(content);
+	});
+
+	eleventyConfig.addLiquidFilter("includes", function(arr = [], value) {
+		return arr.includes(value);
+	});
+
+	eleventyConfig.addLiquidFilter("removeNewlines", function(str) {
+		return str.replace(/\n/g, "");
 	});
 
 	eleventyConfig.on("beforeWatch", () => {

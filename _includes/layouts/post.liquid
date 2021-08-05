@@ -65,6 +65,8 @@ tmpl: page
 	{% include webmentionlist, absoluteUrl: absoluteUrl %}
 {% endunless %}
 
+{%- assign isDraft = tags | includes: "draft" %}
+{% unless isDraft %}
 <div id="opengraph-preview" class="share content-grid-sibling">
 	<details>
 		<summary class="hed-h3">Social Card Image Preview</summary>
@@ -73,3 +75,4 @@ tmpl: page
 		<p>How did you do this? <a href="/web/automatic-opengraph/">I automated my Open Graph images.</a> (<a href="/opengraph{{ page.url }}">Peer behind the curtain at the test page</a>)</p>
 	</details>
 </div>
+{% endunless %}
