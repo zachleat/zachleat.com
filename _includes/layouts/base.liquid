@@ -18,7 +18,7 @@
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="Zach Leatherman">
 		<meta property="og:description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
-		<meta property="og:image" name="image" content="{% if headimage %}{{ headimage }}{% else %}{% ogImageSource page %}{% endif %}">
+		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{% ogImageSource page %}{% endif %}">
 		<meta property="og:url" content="https://www.zachleat.com{{ page.url }}">
 
 		<meta name="twitter:card" content="summary_large_image" />

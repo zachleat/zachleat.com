@@ -337,13 +337,17 @@ module.exports = function(eleventyConfig) {
 		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}${startTime ? `?start=${startTime}` : ''}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
 	});
 
+	function pad(num) {
+		return `${num}`.padStart(2, '0');
+	}
+
 	eleventyConfig.addLiquidShortcode("ogImageSource", function({fileSlug, url, inputPath}) {
 		let domain = "https://www.zachleat.com";
 
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./web/_posts/")) {
 			let d = new Date();
-			let cacheBuster = `_${d.getFullYear()}:${d.getMonth()+1}:${d.getDate()}`
+			let cacheBuster = `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`
 			return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}/opengraph${url}`)}/opengraph/${cacheBuster}/`;
 		}
 
