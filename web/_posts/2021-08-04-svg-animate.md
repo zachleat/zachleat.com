@@ -55,7 +55,7 @@ _(Side note: `repeatCount="1"` and `fill="freeze"` are best buddies. `fill="free
 
 Next go back to the original animation and change the `begin` attribute to `indefinite` (Read more at [MDN: `begin` - SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin#animate_animatecolor_animatemotion_animatetransform_set)). This tells the SVG not to start it until I use JavaScript to trigger it using `.beginElement()`.
 
-```markup/6
+```markup/7
 <animate
   id="mysvgline"
   attributeType="xml"
