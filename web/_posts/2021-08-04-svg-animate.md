@@ -79,6 +79,12 @@ if ('IntersectionObserver' in window)  {
   let elements = document.querySelectorAll("svg");
 
   let observer = new IntersectionObserver(entries => {
+    // quit early if users wants Reduced Motion
+    let mediaQuery = window.matchMedia('(prefers-reduced-motion: no-preference)');
+    if(!mediaQuery.matches) {
+      return;
+    }
+
     for(let entry of entries) {
       if(!entry.isIntersecting) {
         continue;
