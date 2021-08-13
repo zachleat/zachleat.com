@@ -7,7 +7,7 @@ tags:
   - popular-posts
   - popular-posts-total
 postRank: 9
-postRankTotalViews: 18
+postRankTotalViews: 19
 ---
 <style>
 .sm-img {
