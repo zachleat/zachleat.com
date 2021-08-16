@@ -8,7 +8,7 @@ tags:
   - highlight
   - project
   - popular-posts-total
-postRankTotalViews: 10
+postRankTotalViews: 11
 ---
 
 **Update**: Try the new [ALARMd 2 Beta][1], with Google Calendar integration and offline Youtube caching.
