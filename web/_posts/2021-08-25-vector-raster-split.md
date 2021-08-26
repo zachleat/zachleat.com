@@ -1,5 +1,8 @@
 ---
 title: Vector? Raster? Why Not Both!
+postRank: 1
+tags:
+  - popular-posts
 ---
 This week I ran into an interesting class of problem that—in hindsight—could use a much better workflow. Does it exist?
 
