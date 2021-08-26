@@ -347,7 +347,7 @@ module.exports = function(eleventyConfig) {
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./web/_posts/")) {
 			let d = new Date();
-			let cacheBuster = `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`
+			let cacheBuster = `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}_b`;
 			return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}/opengraph${url}`)}/opengraph/${cacheBuster}/`;
 		}
 
