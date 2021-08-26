@@ -1,5 +1,7 @@
 ---
 title: Vector? Raster? Why Not Both!
+seo:
+  openGraphBackgroundImage: /web/img/posts/vector-raster-split/preview.jpg
 tags:
   - popular-posts
 postRank: 1
@@ -36,7 +38,7 @@ So y’all know me well enough that I won’t be putting a 1.2 MB hero image in 
 I was impressed with the ~400 KB savings here from a single drag-and-drop onto ImageOptim but 831 is still too high.
 
 
-### Squoosh
+### [Squoosh](https://squoosh.app/)
 
 <details class="livedemo livedemo-dark livedemo-flush">
   <summary><code>376 KB</code> PNG optimized with Squoosh (Reduced Palette to 256 colors)</summary>
