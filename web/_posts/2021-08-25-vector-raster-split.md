@@ -151,4 +151,4 @@ From 10.06 MB to 78 KB—a savings of 9.9 MB.  Not too bad.
 
 Savings are in comparison to the previous attempt.
 
-_Disclaimer: If you check the above sizes to the currently implemented version on jamstackconf.com the raster image layer may be larger than expected! I still need to merge a PR to ship some final optimizations!_
+_Disclaimer: ~~If you check the above sizes to the currently implemented version on jamstackconf.com the raster image layer may be larger than expected! I still need to merge a PR to ship some final optimizations!~~ The PR has shipped!_
