@@ -29,7 +29,7 @@ Here to fetch my bio? Let’s appeal to your base instinct to copy and paste:
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="Plaintext">
 
 ``` text
-Zach is a Builder for the web with Netlify. He’s currently fixated on web fonts and static site generators. His public speaking résumé includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and The White House. He is an emeritus of Filament Group, NEJS CONF, and still helps out with NebraskaJS.
+Zach is a Builder for the web with Netlify. He created the Eleventy static site generator and is still fixated on web fonts. His public speaking résumé includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and The White House. He is an emeritus of Filament Group, NEJS CONF, and still helps out with NebraskaJS.
 ```
 
 </div>
@@ -45,7 +45,7 @@ Zach is a Builder for the web with Netlify. He’s currently fixated on web font
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="Markdown">
 
 ``` markdown
-Zach is a builder for the web with [Netlify](https://www.netlify.com/). He’s currently fixated on [web fonts](/web/fonts/) and [static site generators](/web/introducing-eleventy/). His [public speaking résumé](/web/speaking/) includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and [The White House](/web/whitehouse/). He is an emeritus of [Filament Group](https://www.filamentgroup.com/), [NEJS CONF](https://nejsconf.com/), and still helps out with [NebraskaJS](https://nebraskajs.com).
+Zach is a builder for the web with [Netlify](https://www.netlify.com/). He created the [Eleventy static site generator](https://www.11ty.dev/) and is still fixated on [web fonts](/web/fonts/). His [public speaking résumé](/web/speaking/) includes talks in eight different countries at events like Beyond Tellerrand, Smashing Conference, CSSConf, and [The White House](/web/whitehouse/). He is an emeritus of [Filament Group](https://www.filamentgroup.com/), [NEJS CONF](https://nejsconf.com/), and still helps out with [NebraskaJS](https://nebraskajs.com).
 ```
 
 </div>

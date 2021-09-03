@@ -943,8 +943,8 @@ th.numeric {
 /* About Me Link Block */
 .about {
 	margin: 5em 0;
-	padding-top: 1em;
-	border-top: 1px solid #ccc;
+	padding-top: 2em;
+	border-top: 1px solid #eee;
 	@include unhyphenate;
 }
 .about > a {
@@ -968,11 +968,9 @@ th.numeric {
 	margin-bottom: 0;
 }
 .about img {
-	float: left;
-	width: 80px;
-	height: 80px;
+	display: block;
+	margin: 0 auto 1em;
 	max-width: none;
-	margin: 0 1em 1em 0;
 	border-radius: 50%;
 }
 .about .social {
@@ -984,7 +982,7 @@ th.numeric {
 		display: flex;
 	}
 	.about img {
-		float: none;
+		margin-right: 1em;
 		flex: 0 0 80px;
 	}
 }
@@ -1207,7 +1205,6 @@ th.numeric {
 	border-radius: 8px;
 	box-shadow: 0 0 0 var(--box-shadow-width, 2px) #add8e6;
 	position: relative;
-	overflow: hidden;
 	margin: .5rem -.25rem 1.5rem;
 
 	@media (min-width: 38.25em) { /* 612px */
