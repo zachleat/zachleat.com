@@ -1,8 +1,7 @@
 ---
-title: Projects (Retired)
-author: Zach Leatherman
-layout: page
+title: A Few Retired Projects
 permalink: /web/projects/retired/
+tags: project
 ---
 
 ### Tournology

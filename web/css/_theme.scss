@@ -63,6 +63,16 @@ abbr {
 	}
 }
 
+/* Flex utility classes */
+.flex {
+	display: flex;
+	gap: .5em;
+	flex-wrap: wrap;
+}
+.flex-grow {
+	flex-grow: 999;
+}
+
 /* Word Break */
 .break {
 	-ms-word-break: break-all;
@@ -1504,6 +1514,8 @@ details.livedemo-dark > summary {
 
 /* Filtering select element */
 .filter-posts-form {
+	display: flex;
+	flex-wrap: wrap;
 	opacity: .4;
 	pointer-events: none;
 	margin-bottom: 1em;

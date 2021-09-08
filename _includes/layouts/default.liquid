@@ -20,18 +20,18 @@ classes:
 						<a href="/web/about/" class="tag tag-borderless{% if page.url == '/web/about/' %} active{% endif %}">About</a>
 						<a href="/web/" class="tag tag-borderless{% if page.url == '/web/' %} active{% endif %}">Archives</a>
 					</span>
-					<a href="/web/fonts/" class="hide-md tag font-loading{% if page.url == '/web/fonts/' %} active{% endif %}">Web Fonts</a>
-					<a href="/web/eleventy/" class="hide-md tag{% if page.url == '/web/eleventy/' %} active{% endif %}">Eleventy</a>
 				</div>
 				{% include social.html %}
 				<div class="tags tags-rail hide-md">
+					<a href="/web/eleventy/" class="hide-md tag{% if page.url == '/web/eleventy/' %} active{% endif %}">Eleventy</a>
+					{% comment %} <a href="/web/?category=web-fonts" class="hide-md tag font-loading">Web Fonts</a> {% endcomment %}
+					{% comment %} <a href="/web/?category=project" class="hide-md tag">Projects</a> {% endcomment %}
 					<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %}">Speaking</a>
 					<a href="/twitter/" class="tag">Twitter<span class="hide-sm"> Archive</span></a>
-					<a href="/web/projects/" class="tag{% if page.url == '/web/projects/' %} active{% endif %}">Projects</a>
 					<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/web/best-of/' or page.url == '/web/best-of/total-views/' %} active{% endif %}{% if hasToc == true or hidePopularInSidebar == true %} has-toc{% endif %}">Popular 🔥</a>
-					<!-- <a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a> -->
-					<!-- <a href="/web/citations/" class="tag{% if page.url == '/web/citations/' %} active{% endif %}">Citations</a> -->
-					<!-- <a href="/web/highlights/" class="tag highlight{% if page.url == '/web/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> -->
+					{% comment %} <a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a> {% endcomment %}
+					{% comment %} <a href="/web/citations/" class="tag{% if page.url == '/web/citations/' %} active{% endif %}">Citations</a> {% endcomment %}
+					{% comment %} <a href="/web/highlights/" class="tag highlight{% if page.url == '/web/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> {% endcomment %}
 				</div>
 {% if hasToc != true and hidePopularInSidebar != true %}
 				<div class="tags tags-rail tags-rail-top5">
