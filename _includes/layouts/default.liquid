@@ -27,16 +27,16 @@ classes:
 					{% comment %} <a href="/web/?category=web-fonts" class="hide-md tag font-loading">Web Fonts</a> {% endcomment %}
 					{% comment %} <a href="/web/?category=project" class="hide-md tag">Projects</a> {% endcomment %}
 					<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %}">Speaking</a>
-					<a href="/twitter/" class="tag">Twitter<span class="hide-sm"> Archive</span></a>
-					<a href="/web/best-of/" class="tag tag-popular{% if page.url == '/web/best-of/' or page.url == '/web/best-of/total-views/' %} active{% endif %}{% if hasToc == true or hidePopularInSidebar == true %} has-toc{% endif %}">Popular 🔥</a>
+					<a href="/twitter/" class="tag">Twitter</a>
+					{% comment %} <a href="/web/best-of/" class="tag tag-popular{% if page.url == '/web/best-of/' or page.url == '/web/best-of/total-views/' %} active{% endif %}{% if hasToc == true or hidePostsInSidebar == true %} has-toc{% endif %}">Popular 🔥</a> {% endcomment %}
 					{% comment %} <a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a> {% endcomment %}
 					{% comment %} <a href="/web/citations/" class="tag{% if page.url == '/web/citations/' %} active{% endif %}">Citations</a> {% endcomment %}
 					{% comment %} <a href="/web/highlights/" class="tag highlight{% if page.url == '/web/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> {% endcomment %}
 				</div>
-{% if hasToc != true and hidePopularInSidebar != true %}
+{% if hasToc != true and hidePostsInSidebar != true %}
 				<div class="tags tags-rail tags-rail-top5">
 {% if collections.latestPosts[0] %}
-					<h2 class="top5">Latest</h2>
+					<h2 class="top5">Newest</h2>
 					<a href="{{ collections.latestPosts[0].url | url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ collections.latestPosts[0].data.title }}</a>
 {% endif %}
 					<h2 class="top5"><a href="/web/best-of/">Popular 🔥 ➡</a></h2>
