@@ -127,6 +127,10 @@ module.exports = function(eleventyConfig) {
 		return `${split[0]}<span aria-hidden="true">m</span><span class="sr-only"> minutes</span>`;
 	});
 
+	eleventyConfig.addLiquidFilter("encodeUriComponent", str => {
+		return encodeURIComponent(str);
+	});
+
 	eleventyConfig.addLiquidFilter("htmlEntities", str => {
 		return encode(str);
 	});
@@ -196,6 +200,48 @@ module.exports = function(eleventyConfig) {
 		}).filter(function(post) {
 			return post.data.page.date.getFullYear() === parseInt(year, 10);
 		}).length;
+	});
+
+	//<img src="https://v1--eleventy-api-sparkline.netlify.app/400/100/1,4,10,3,2,40,5,6,20,40,5,1,10,100,5,90/red/" width="400" height="100">
+	eleventyConfig.addLiquidFilter("getYearlyPostCount", (posts, startYear = 2007) => {
+		let years = [];
+		for(let j = startYear; j <= (new Date()).getFullYear(); j++) {
+			let year = j;
+			let count = posts.filter(function(post) {
+				if(!post.data.tags) {
+					return true;
+				}
+				if(post.data.deprecated ||post.data.tags.includes("draft")) {
+					return false;
+				}
+				return true;
+			}).filter(function(post) {
+				return post.data.page.date.getFullYear() === parseInt(year, 10);
+			}).length;
+			years.push(count);
+		}
+		return years.join(",");
+	});
+
+	eleventyConfig.addLiquidFilter("getMonthlyPostCount", (posts, year) => {
+		let months = [];
+		for(let month = 0; month < 12; month++) {
+			let count = posts.filter(function(post) {
+				if(!post.data.tags) {
+					return true;
+				}
+				if(post.data.deprecated ||post.data.tags.includes("draft")) {
+					return false;
+				}
+				return true;
+			}).filter(function(post) {
+				let d = post.data.page.date;
+				return d.getFullYear() === parseInt(year, 10) && d.getMonth() === month;
+			}).length;
+
+			months.push(count);
+		}
+		return months.join(",");
 	});
 
 	eleventyConfig.addLiquidFilter("hostnameFromUrl", (url) => {

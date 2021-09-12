@@ -4,7 +4,6 @@ author: Zach Leatherman
 layout: post
 Version Specific Article:
   - YUI 2.2.2
-deprecated: true
 ---
 
 I’ve been cheating on my first love.  When I first started seriously JavaScripting and not CopyPasteScripting, my first framework was the Yahoo User Interface Library.  I was just beginning to realize the power of a JavaScript framework, but at the time I also thought that the Dom was an actor in Hollywood’s [The Cannonball Run](http://www.domdeluise.com).  Hey, everyone’s gotta get their start somewhere.
