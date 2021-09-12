@@ -202,7 +202,7 @@ module.exports = function(eleventyConfig) {
 		}).length;
 	});
 
-	//<img src="https://v1--eleventy-api-sparkline.netlify.app/400/100/1,4,10,3,2,40,5,6,20,40,5,1,10,100,5,90/red/" width="400" height="100">
+	//<img src="https://v1.sparkline.11ty.dev/400/100/1,4,10,3,2,40,5,6,20,40,5,1,10,100,5,90/red/" width="400" height="100">
 	eleventyConfig.addLiquidFilter("getYearlyPostCount", (posts, startYear = 2007) => {
 		let years = [];
 		for(let j = startYear; j <= (new Date()).getFullYear(); j++) {

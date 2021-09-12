@@ -35,7 +35,7 @@ classes:
 				</div>
 				<a href="/web/" class="spark hide-singlecol">
 					<span>2007</span>
-					<img src="https://v1--eleventy-api-sparkline.netlify.app/120x30/{{ collections.posts | getYearlyPostCount }}/{{ '#94b388' | encodeUriComponent }}/" width="120" height="30" alt="Sparkline representing frequency of posts written from 2007 to {{ currentYear }}" loading="lazy" decoding="async" class="spark-img">
+					<img src="https://v1.sparkline.11ty.dev/120x30/{{ collections.posts | getYearlyPostCount }}/{{ '#94b388' | encodeUriComponent }}/" width="120" height="30" alt="Sparkline representing frequency of posts written from 2007 to {{ currentYear }}" loading="lazy" decoding="async" class="spark-img">
 					<span>{{ currentYear }}</span>
 				</a>
 {% if hasToc != true and hidePostsInSidebar != true %}
