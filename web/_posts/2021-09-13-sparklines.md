@@ -1,5 +1,5 @@
 ---
-title: "Every \U0001F525 Needs a Sparkline"
+title: "Every Fire Needs a Sparkline"
 tags:
   - project
   - popular-posts
