@@ -707,7 +707,7 @@ th.numeric {
 		text-align: center;
 	}
 }
-.rail-avatar {
+.rail .my-avatar {
 	width: 1.5em; /* 24px /16 */
 	height: 1.5em; /* 24px /16 */
 	margin-right: .5em;
@@ -724,7 +724,7 @@ th.numeric {
 		.rail .header {
 			@include clearfix;
 		}
-		.rail-avatar {
+		.rail .my-avatar {
 			width: 2.75em; /* 44px /16 */
 			height: 2.75em; /* 44px /16 */
 			float: left;
