@@ -1,6 +1,9 @@
 ---
-title: Every 🔥 Needs a Sparkline
-tags: project
+title: "Every \U0001F525 Needs a Sparkline"
+tags:
+  - project
+  - popular-posts
+postRank: 5
 ---
 The Eleventy API ecosystem is growing. It started with [a screenshot service](/web/screenshots/). Now, we have a very simple service to generate SVG images for sparklines. This is using the [`sparkline-svg` package](https://www.npmjs.com/package/sparkline-svg) from [{% imgavatar "CharlesStover" %}CharlesStover](https://twitter.com/CharlesStover).
 
