@@ -13,9 +13,7 @@ async function imageShortcode(attrs = {}, options = {}) {
     formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "webp", "jpeg"] : ["webp", "jpeg"],
     urlPath: "/img/built/",
     outputDir: "./_site/img/built/",
-    sharpAvifOptions: {
-      lossless: true,
-    },
+    sharpAvifOptions: {},
   }, options);
 
   let metadata = await Image(attrs.src || attrs.path, options);
