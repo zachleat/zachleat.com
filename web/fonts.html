@@ -5,6 +5,15 @@ tmpl: list
 ---
 <div class="layout-list">
 	<article>
-		<h1 class="primary-title"><a href="/web/?category=web-fonts">This page has moved.</a></h1>
+		<h1 class="primary-title">{{ title }}</h1>
+		<p>A list of {{ collections.font-loading | size }} posts and projects dealing with web fonts, web font loading, or typography.</p>
+		<ol class="posts">
+			{% assign year = "" %}
+			{% assign currentyear = "" %}
+			{% assign listItems = collections.font-loading %}
+			{% for post in collections.font-loading %}
+				{% include post-list-entry.html %}
+			{% endfor %}
+		</ol>
 	</article>
 </div><!-- /.layout-list -->

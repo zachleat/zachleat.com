@@ -4,7 +4,7 @@
 {%- if currentyear != year and ignoreYear != "true" %}
 <li class="subhed" id="{{ currentyear }}"><span class="spark">
 		<span>{{ currentyear }}</span>
-		<span data-filter-category data-filter-results-exclude><img src="https://v1.sparkline.11ty.dev/80x16/{{ collections.posts | getMonthlyPostCount: currentyear }}/{{ '#94b388' | encodeUriComponent }}/" width="80" height="16" alt="Sparkline representing frequency of posts written by month in {{ currentyear }}" loading="lazy" decoding="async" class="spark-img"></span>
+		<span data-filter-category data-filter-results-exclude><img src="https://v1.sparkline.11ty.dev/80x16/{{ listItems | getMonthlyPostCount: currentyear }}/{{ '#94b388' | encodeUriComponent }}/" width="80" height="16" alt="Sparkline representing frequency of posts written by month in {{ currentyear }}" loading="lazy" decoding="async" class="spark-img"></span>
 	</span>{% if listItems %} <span class="subhed-count" data-filter-category data-filter-results-exclude>×{{ listItems | getPostCountForYear: currentyear }}</span>{% endif %}</li>
 	{%- capture year %}{{currentyear}}{% endcapture %}
 	{%- assign currentyearpostcount = 0 %}
@@ -36,24 +36,24 @@
 		{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
 		{%- assign activityCount = webmentionsCount -%}
 		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
-		{%- if activityCount > 0 %}<a href="{{ post.url | url }}#webmentions" class="tag tag-cased" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</a>{% endif -%}
+		{%- if activityCount > 0 %}<span class="tag tag-cased" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</span>{% endif -%}
 
-		{%- if post.data.tags contains 'eleventy' %}<a href="/web/eleventy/" class="tag">Eleventy</a>{% endif -%}
-		{%- if post.data.tags contains 'font-loading' %}<a href="/web/fonts/" class="tag font-loading">Web Fonts</a>{% endif -%}
-		{%- if post.data.tags contains 'project' %}<a href="/web/projects/" class="tag">Project</a>{% endif -%}
-		{%- if post.data.tags contains 'research' %}<a href="/web/research/" class="tag">Research</a>{% endif -%}
-		{%- if post.data.tags contains 'nejsconf' %}<a href="/web/nejsconf/" class="tag">NEJS CONF</a>{% endif -%}
+		{%- if post.data.tags contains 'eleventy' %}<span class="tag">Eleventy</span>{% endif -%}
+		{%- if post.data.tags contains 'font-loading' %}<span class="tag font-loading">Web Fonts</span>{% endif -%}
+		{%- if post.data.tags contains 'project' %}<span class="tag">Project</span>{% endif -%}
+		{%- if post.data.tags contains 'research' %}<span class="tag">Research</span>{% endif -%}
+		{%- if post.data.tags contains 'nejsconf' %}<span class="tag">NEJS CONF</span>{% endif -%}
 		{%- if post.data.tags contains 'conference' -%}
-			{%- if post.data.tags contains 'speaking' %}<a class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>Speaking</a>{% endif -%}
+			{%- if post.data.tags contains 'speaking' %}<span class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>Speaking</span>{% endif -%}
 			{%- if post.data.event_date %}<span class="tag tag-event">on {{ "📅" | emoji }} {{ post.data.event_date }}</span>{% endif -%}
 		{%- elsif post.data.tags contains 'presentations' or post.data.tags contains 'speaking' or post.data.tags contains 'video' or post.data.tags contains 'audio' -%}
-			<a href="/web/speaking/" class="tag">Speaking</a>
+			<span class="tag">Speaking</span>
 			{%- if post.data.event_date %}<span class="tag tag-event">on {{ "📅" | emoji }} {{ post.data.event_date }}</span>{% endif -%}
 		{%- endif -%}
 		{%- if post.data.tags contains 'video' %}<span class="tag video">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Video</span>{% endif -%}
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Audio</span>{% endif -%}
 {%- if ignorePopularity != true %}
-		{%- if post.data.postRank or post.data.postRankTotalViews %}<a href="/web/best-of/" class="tag postrank" title="Popularity Ranking">{% if post.data.postRankTotalViews and showRankTotalViews == "true" %}{{ "☀️" | emoji }} #{{ post.data.postRankTotalViews }}{% elsif post.data.postRank %}{{ "🔥" | emoji }} #{{ post.data.postRank }}{% endif %}</a>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
+		{%- if post.data.postRank or post.data.postRankTotalViews %}<span class="tag postrank" title="Popularity Ranking">{% if post.data.postRankTotalViews and showRankTotalViews == "true" %}{{ "☀️" | emoji }} #{{ post.data.postRankTotalViews }}{% elsif post.data.postRank %}{{ "🔥" | emoji }} #{{ post.data.postRank }}{% endif %}</span>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
 {%- endif %}
 	</span>
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>
