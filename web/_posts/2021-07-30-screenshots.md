@@ -4,7 +4,7 @@ tags:
   - eleventy
   - project
   - popular-posts
-postRank: 8
+postRank: 7
 ---
 <style>
 .screenshot {
