@@ -20,9 +20,9 @@
 		{%- if hfeed %}h-entry{% endif %}"
 	{%- if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}{% comment %}
 	{% endcomment %} data-filter-category="{{ post | getFilterCategories }}">
-	{%- if post.data.tags contains 'eleventy' %}<span class="tags"><span class="tag eleventy">11ty</span></span>{% endif -%}
 	
 	<a href="{% if post.data.tags contains 'external' %}{{ post.data.external_url }}{% else %}{{ post.url | url }}{% endif %}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
+	{%- if post.data.tags contains 'eleventy' %}<span class="tags"><span class="tag eleventy">11ty</span></span>{% endif -%}
 	{%- if post.data.tags contains 'external' -%}
 		<span class="external" title="External Link"><span class="icon-link-external"></span></span>
 		{%- imgavatarForExternalUrl post.data.external_url "z-avatar z-avatar-eq z-avatar-external" -%}

@@ -1040,6 +1040,10 @@ th.numeric {
 	display: inline-block;
 	text-decoration: none;
 }
+a[href].tag-inline:not(.tag-borderless),
+.tags a[href].tag:not(.tag-borderless) {
+	border: 1px solid rgba(0, 0, 0, .08);
+}
 .tag-inline {
 	font-size: 12px;
 	margin-left: 0;
@@ -1106,11 +1110,11 @@ th.numeric {
 .tags .tag.eleventy {
 	font-family: BenchNineEleventy;
 	font-size: 1.25rem;
-	background-color: #222;
+	background-color: #444;
 	color: #fff;
 	text-transform: none;
 	border-radius: 3px;
-	margin: 0 .25em;
+	margin: 0 .4em;
 }
 .tags:first-child .tag.eleventy {
 	margin-left: 0;

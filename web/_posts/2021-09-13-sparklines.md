@@ -2,6 +2,7 @@
 title: Every Fire Needs a Sparkline
 tags:
   - project
+  - eleventy
   - popular-posts
 postRank: 9
 ---
