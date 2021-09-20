@@ -20,10 +20,13 @@
 		{%- if hfeed %}h-entry{% endif %}"
 	{%- if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}{% comment %}
 	{% endcomment %} data-filter-category="{{ post | getFilterCategories }}">
-	{% if post.data.tags contains 'external' %}<span class="external" title="External Link"><span class="icon-link-external"></span></span>{% endif %}
+	{%- if post.data.tags contains 'eleventy' %}<span class="tags"><span class="tag eleventy">11ty</span></span>{% endif -%}
 	
 	<a href="{% if post.data.tags contains 'external' %}{{ post.data.external_url }}{% else %}{{ post.url | url }}{% endif %}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
-	{%- imgavatarForExternalUrl post.data.external_url "z-avatar-eq" -%}
+	{%- if post.data.tags contains 'external' -%}
+		<span class="external" title="External Link"><span class="icon-link-external"></span></span>
+		{%- imgavatarForExternalUrl post.data.external_url "z-avatar z-avatar-eq z-avatar-external" -%}
+	{%- endif -%}
 	{%- if view == 'project' -%}
 		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}
 	{%- else -%}
@@ -33,28 +36,28 @@
 
 	<span class="tags">
 		{%- capture absoluteUrl -%}{{ post.url | url | absoluteUrl }}{%- endcapture -%}
-		{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
-		{%- assign activityCount = webmentionsCount -%}
-		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
-		{%- if activityCount > 0 %}<span class="tag tag-cased" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</span>{% endif -%}
 
-		{%- if post.data.tags contains 'eleventy' %}<span class="tag">Eleventy</span>{% endif -%}
 		{%- if post.data.tags contains 'font-loading' %}<span class="tag font-loading">Web Fonts</span>{% endif -%}
 		{%- if post.data.tags contains 'project' %}<span class="tag">Project</span>{% endif -%}
 		{%- if post.data.tags contains 'research' %}<span class="tag">Research</span>{% endif -%}
 		{%- if post.data.tags contains 'nejsconf' %}<span class="tag">NEJS CONF</span>{% endif -%}
 		{%- if post.data.tags contains 'conference' -%}
 			{%- if post.data.tags contains 'speaking' %}<span class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>Speaking</span>{% endif -%}
-			{%- if post.data.event_date %}<span class="tag tag-event">on {{ "📅" | emoji }} {{ post.data.event_date }}</span>{% endif -%}
+			{%- if post.data.event_date %}<span class="tag tag-event">on {{ post.data.event_date }}</span>{% endif -%}
 		{%- elsif post.data.tags contains 'presentations' or post.data.tags contains 'speaking' or post.data.tags contains 'video' or post.data.tags contains 'audio' -%}
 			<span class="tag">Speaking</span>
-			{%- if post.data.event_date %}<span class="tag tag-event">on {{ "📅" | emoji }} {{ post.data.event_date }}</span>{% endif -%}
+			{%- if post.data.event_date %}<span class="tag tag-event">on {{ post.data.event_date }}</span>{% endif -%}
 		{%- endif -%}
 		{%- if post.data.tags contains 'video' %}<span class="tag video">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Video</span>{% endif -%}
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Audio</span>{% endif -%}
 {%- if ignorePopularity != true %}
-		{%- if post.data.postRank or post.data.postRankTotalViews %}<span class="tag postrank" title="Popularity Ranking">{% if post.data.postRankTotalViews and showRankTotalViews == "true" %}{{ "☀️" | emoji }} #{{ post.data.postRankTotalViews }}{% elsif post.data.postRank %}{{ "🔥" | emoji }} #{{ post.data.postRank }}{% endif %}</span>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
+		{%- if post.data.postRank or post.data.postRankTotalViews %}<span class="tag" title="Popularity Ranking">{% if post.data.postRankTotalViews and showRankTotalViews == "true" %}{{ "☀️" | emoji }} #{{ post.data.postRankTotalViews }}{% elsif post.data.postRank %}{{ "🔥" | emoji }} #{{ post.data.postRank }}{% endif %}</span>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
 {%- endif %}
+
+		{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
+		{%- assign activityCount = webmentionsCount -%}
+		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
+		{%- if activityCount > 0 %}<span class="tag" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</span>{% endif -%}
 	</span>
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>
 	{% if view == 'project' %}

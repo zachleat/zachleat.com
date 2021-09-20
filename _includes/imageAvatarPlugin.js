@@ -64,37 +64,11 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidShortcode("imgavatarForExternalUrl", async function(url = "", classes = "") {
-		let username;
-		let domainToTwitterUsernameMap = {
-			"filamentgroup.com": "filamentgroup",
-			"netlify.com": "netlify",
-			"nebraskajs.com": "nebraskajs",
-			"11ty.dev": "eleven_ty",
-			"11ty.io": "eleven_ty",
-			"nejsconf.com": "nejsconf",
-			"shoptalkshow.com": "shoptalkshow",
-			"httparchive.org": "httparchive",
-			"changelog.com": "changelog",
-			"meetup.com": "meetup",
-			"jamstackconf.com": "jamstackconf",
-			"smashingconf.com": "smashingconf",
-			"beyondtellerrand.com": "btconf",
-			"perfnow.nl": "perfnowconf",
-			"concatenate.dev": "ConcatenateConf",
-			"css-minsk-js.by": "CSS_Minsk_JS",
-			"css-tricks.com": "css",
-		};
-		for(let domain in domainToTwitterUsernameMap) {
-			if(url.indexOf(domain) > -1) {
-				username = domainToTwitterUsernameMap[domain];
-				break;
-			}
+		if(url.includes("11ty.dev") || url.includes("11ty.io")) {
+			return;
 		}
 
-		if(username) {
-			usernames.add(username.toLowerCase());
-			return imgAvatar(username, classes);
-		}
-		return "";
+		let screenshotUrl = `https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(url)}/`;
+		return `<img alt="IndieWeb Avatar for ${url}" class="${classes}" loading="lazy" decoding="async" src="${screenshotUrl}" width="72" height="72">`;
 	});
 };

@@ -17,6 +17,14 @@
 	width: 1em;
 	height: 1em;
 }
+.posts .z-avatar-eq {
+	display: inline-block;
+	padding: 0;
+	margin: 0 .25em;
+}
+.posts .z-avatar-eq.z-avatar-external {
+	margin-left: 0;
+}
 .primary-title .z-avatar-eq {
 	margin-top: -0.2em;
 	max-width: 75px;
