@@ -14,18 +14,25 @@
 		<meta name="author" content="Zach Leatherman">
 		<meta name="description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
 
+		<!-- Icons -->
+		<link rel="icon" sizes="192x192" href="/img/avatar-2017-big.png">
+		<link rel="apple-touch-icon" href="/img/avatar-2017-big.png">
+
+		<!-- Social -->
 		<meta property="og:title" content="{% if title %}{{ title }}—zachleat.com{% else %}zachleat.com{% endif %}">
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="Zach Leatherman">
 		<meta property="og:description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
 		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{% ogImageSource page %}{% endif %}">
 		<meta property="og:url" content="https://www.zachleat.com{{ page.url }}">
-
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="@zachleat" />
 		<meta name="twitter:image" content="{% if headimage %}{{ headimage }}{% else %}{% ogImageSource page %}{% endif %}" />
 
+		<!-- Site-specific -->
 		<meta name="dist" content="{{distFolder}}">
+
+		<!-- SEO/Feeds -->
 		<link rel="canonical" href="{{ fullUrl }}">
 {% if rssFeedUrl and rssFeedTitle %}
 		<link rel="alternate" href="{{ rssFeedUrl }}" title="{{ rssFeedTitle }}" type="application/atom+xml">
