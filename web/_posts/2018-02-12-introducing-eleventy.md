@@ -7,7 +7,7 @@ tags:
 ---
 
 <p>
-	<div class="primarylink"><a href="https://www.11ty.io">11ty.io</a></div>
+	<div class="primarylink"><a href="https://www.11ty.dev">11ty.dev</a></div>
 	<div class="primarylink"><a href="https://github.com/11ty/eleventy">eleventy on GitHub</a></div>
 </p>
 
@@ -112,6 +112,6 @@ I hope you’ll give Eleventy a try! Install it!
 npm install -g @11ty/eleventy
 ```
 
-Check out the tutorials on [11ty.io](https://www.11ty.io/). Let me know what you like or don’t like about it! I’d love to hear your feedback.
+Check out the tutorials on [11ty.dev](https://www.11ty.dev/). Let me know what you like or don’t like about it! I’d love to hear your feedback.
 
 One of the smallest but nicest things you can do for the project is to [star it on GitHub](https://github.com/11ty/eleventy). The big giant list of static site generators on [staticgen.com](https://www.staticgen.com/) is ordered by GitHub stars, so that will help our ranking out a lot. Thank you!

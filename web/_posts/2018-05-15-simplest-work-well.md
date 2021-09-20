@@ -25,7 +25,7 @@ I’d like something that scales to a little bit more complex of a project than 
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">How to make a web page in 2017: <a href="https://t.co/80BpM1BM5x">pic.twitter.com/80BpM1BM5x</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/866398752722092032?ref_src=twsrc%5Etfw">May 21, 2017</a></blockquote>
 
-That’s one of my favorite things about [Eleventy](https://www.11ty.io/). It is flexible enough to work with any kind of project or directory structure, transforming data and templates into HTML content quickly and easily. It’s more of a tool than a framework.
+That’s one of my favorite things about [Eleventy](https://www.11ty.dev/). It is flexible enough to work with any kind of project or directory structure, transforming data and templates into HTML content quickly and easily. It’s more of a tool than a framework.
 
 {% include eleventy-links.html %}
 
