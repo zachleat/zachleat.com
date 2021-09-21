@@ -774,9 +774,6 @@ th.numeric {
 .posts .posts-link-more {
 	text-decoration: underline;
 }
-.event-link {
-	font-size: 80.76923076923%; /* 21px /26 */
-}
 @supports (text-decoration-skip-ink: auto) {
 	.posts .posts-link:hover,
 	.posts .posts-link:focus,
@@ -1216,6 +1213,7 @@ a[href].tag-inline:not(.tag-borderless),
 	display: inline-block;
 	background-size: contain;
 	background-image: url("/web/img/icons/link-external.svg");
+	background-repeat: no-repeat;
 	vertical-align: middle;
 }
 

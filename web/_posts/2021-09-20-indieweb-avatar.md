@@ -12,7 +12,7 @@ The Eleventy API ecosystem is growing (again).
 * [Sparklines](/web/sparklines/)
 * And now, avatars.
 
-I use Twitter avatars everywhere. They require an Twitter Developer account and an API key to use. They require folks to have a Twitter account (not everyone does). I wanted a more open alternative. I decided to build a little image service that would fetch the icon from any web site and return that instead.
+I use Twitter avatars everywhere. They require an Twitter Developer account and an API key to implement. They require the talent being pictured to have a Twitter account (not everyone does). I wanted a more open alternative. I decided to build a little image service that would fetch the icon from any web site, optimize it using [Eleventy Image](https://www.11ty.dev/docs/plugins/image/), and return that instead.
 
 ## Demo
 

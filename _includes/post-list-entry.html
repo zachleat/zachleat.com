@@ -12,7 +12,6 @@
 {%- capture nullvoid %}{% increment currentyearpostcount %}{% endcapture %}
 <li
 	class="
-		{%- if post.data.metadata and post.data.metadata.schedule and post.data.tags contains 'speaking' or post.data.event_link %}event-link {% endif %}
 		{%- if post.data.deprecated %}deprecated {% endif %}
 		{%- if post.data.smalltitle %}smalltitle {% endif %}
 		{%- if post.data.tags contains 'upcoming' %}upcoming {% endif %}
