@@ -903,7 +903,7 @@
 <rect x="863.48" y="863.484" width="29.2666" height="29.2666" stroke="#161A2B" stroke-width="0.5"/>
 </g>
 <g filter="url(#filter0_d)">
-<ellipse cx="403.943" cy="446.643" rx="288.494" ry="149.137" transform="rotate(-15 403.943 446.643)" stroke="url(#paint1_linear)" shape-rendering="crispEdges"/>
+<ellipse cx="403.943" cy="446.643" rx="288.494" ry="149.137" transform="rotate(-15 403.943 446.643)" stroke="url(#paint1_linear)" shape-rendering="optimizeQuality"/>
 </g>
 <defs>
 <filter id="filter0_d" x="114.082" y="275.853" width="579.72" height="341.581" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
