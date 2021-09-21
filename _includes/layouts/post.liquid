@@ -20,6 +20,9 @@ tmpl: page
 {% if tweet %}
 			<em>Inspired by <a href="{{ tweet }}">a tweet</a>.</em>
 {% endif %}
+{%- if tags contains 'eleventy' %}
+			<a href="/web/eleventy/" class="tags"><span class="tag eleventy">11ty</span></a>
+{%- endif -%}
 		</div>
 {% if deprecated %}
 		<article class="content-sibling">

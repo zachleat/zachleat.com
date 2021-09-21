@@ -71,9 +71,21 @@ abbr {
 
 /* Flex utility classes */
 .flex {
+	--flex-gap: .5em;
 	display: flex;
-	gap: .5em;
+	gap: var(--flex-gap);
 	flex-wrap: wrap;
+}
+.flexcol-1-4 {
+	flex-grow: 1;
+	flex-basis: calc(25% - var(--flex-gap) / 2);
+}
+.flexcol-3-4 {
+	flex-grow: 1;
+	flex-basis: calc(75% - var(--flex-gap) / 2);
+}
+.flexcol-3-4 > p:first-child {
+	margin-top: 0;
 }
 .flex-grow {
 	flex-grow: 999;

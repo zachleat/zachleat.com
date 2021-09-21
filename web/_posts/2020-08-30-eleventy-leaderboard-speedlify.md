@@ -4,6 +4,7 @@ eleventyComputed:
   titleHtml: 'Eleventy Leaderboards v2 via{% imgavatar "speedlify", "z-avatar-eq" %}Speedlify'
 tags:
   - project
+  - eleventy
 ---
 Wow—this entire thing has been a journey. The idea for the Eleventy Leaderboards was originally borne out of some lighthearted fun poking at the [AMP Carousel in Google Search results](/web/performance-dashboard/).
 
