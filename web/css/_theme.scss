@@ -1118,15 +1118,22 @@ a[href].tag-inline:not(.tag-borderless),
 }
 .tags .tag.eleventy {
 	font-family: BenchNineEleventy;
-	font-size: 1.25rem;
-	background-color: #444;
+	font-size: 1rem;
+	background-color: #222;
 	color: #fff;
 	text-transform: none;
 	border-radius: 3px;
 	margin: 0 .4em;
+	padding: 0.0625em 0.375em; /* 1px 6px /16 */
 }
 .tags:first-child .tag.eleventy {
 	margin-left: 0;
+}
+a[href] .tag.eleventy {
+	transition: .3s opacity ease-in-out;
+}
+a[href]:not(:focus,:hover) .tag.eleventy {
+	opacity: .5;
 }
 .tags .tag + .tag {
 	margin-left: -6px;
