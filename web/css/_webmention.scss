@@ -33,7 +33,8 @@
     z-index: 1;
 }
 @supports (object-fit: cover) {
-    .webmentions__face {
+    .webmentions__face,
+    .webmentions__face[width][height] {
         object-fit: cover;
         height: 100%;
         width: 100%;
