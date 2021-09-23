@@ -4,7 +4,7 @@ tags:
   - project
   - eleventy
   - popular-posts
-postRank: 2
+postRank: 3
 ---
 The Eleventy API ecosystem is growing (again).
 
