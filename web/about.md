@@ -3,7 +3,7 @@ title: I’m Zach and You’re Reading About Me
 layout: page
 tags:
   - popular-posts-total
-postRankTotalViews: 18
+postRankTotalViews: 17
 ---
 
 This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach@zachleat.com). Peruse his [full résumé](/resume/).
