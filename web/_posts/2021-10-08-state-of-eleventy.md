@@ -4,9 +4,11 @@ tags:
   - eleventy
   - video
   - speaking
+  - popular-posts
 metadata:
   youtubeId: kcRtANKWCLQ
 medialength: 2 min
+postRank: 3
 ---
 Maybe you watched [last year’s Jamsnack video for Jamstack Conf 2020](/web/jamsnack/). It’s that time again! I made a short two minute video for Jamstack Conf 2021.
 
