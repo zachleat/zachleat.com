@@ -24,7 +24,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
       <td>Angular</td>
       <td></td>
       <td>Google</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Astro</td>
@@ -42,7 +42,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
       <td>Gatsby</td>
       <td>$46.8M</td>
       <td>Gatsby (Inc.)</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Jekyll</td>
@@ -66,7 +66,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
       <td>Next.js</td>
       <td>$163M</td>
       <td>Vercel</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Nuxt.js</td>
@@ -84,7 +84,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
       <td>React</td>
       <td></td>
       <td>Facebook</td>
-      <td></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Remix Run</td>
