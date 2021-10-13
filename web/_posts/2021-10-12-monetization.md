@@ -2,6 +2,9 @@
 title: Who Pays for Web Frameworks?
 tags:
   - popular-posts
+seo:
+  openGraphBackgroundImage: /og/sources/deposit-boxes.jpg
+  openGraphCacheBuster: "deposit"
 postRank: 3
 ---
 Three years into working on Eleventy, I continue to be blown away by [the adoption and community support](https://www.11ty.dev/blog/jamstack-survey-2021/) of folks contributing to the underdog.
@@ -140,3 +143,6 @@ After compiling the data, there are a couple of clear trends at play here:
 ## Conclusion
 
 I don’t have the answers. I definitely wouldn’t agree that Eleventy has figured out our sustainable monetization strategy but I do really admire the success that Vue has had solving this exact problem. I do know that I have no interest in Trend 2 but I’ll continue to keep a keen eye on what other indie-framework folks are doing.
+
+
+_[Open Graph image from Jason Pofahl on Unsplash](https://unsplash.com/photos/6AQY7pO1lS0)_

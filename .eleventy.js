@@ -387,13 +387,15 @@ module.exports = function(eleventyConfig) {
 		return `${num}`.padStart(2, '0');
 	}
 
-	eleventyConfig.addLiquidShortcode("ogImageSource", function({fileSlug, url, inputPath}) {
+	eleventyConfig.addLiquidShortcode("ogImageSource", function({fileSlug, url, inputPath}, cacheBusterSuffix) {
 		let domain = "https://www.zachleat.com";
 
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./web/_posts/")) {
 			let d = new Date();
-			let cacheBuster = `__${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+			// daily cache buster
+			let cacheBuster = `__${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}${cacheBusterSuffix}`;
+
 			return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}/opengraph${url}`)}/opengraph/${cacheBuster}/`;
 		}
 
