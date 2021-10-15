@@ -87,7 +87,7 @@ Lab data is taken in a controlled environment. Field data is gathered from the r
 
 Most of the methods we’ve talked about so far are only reporting lab data. But having field data is great, too! The caution I’d offer here is when someone focuses too closely on Field Data and never mentions Lab Data. But why? Isn’t it better to measure the real world? Why does it matter what happens in the lab?
 
-Let us consult this [classic blog post from Chris Zacharias: Page Weight Matters](https://blog.chriszacharias.com/page-weight-matters), in which Chris discusses a case study on the YouTube web site in which they decreased the page weight and the measured lab data got worse!
+Let us consult this [classic blog post from Chris Zacharias: Page Weight Matters](https://blog.chriszacharias.com/page-weight-matters), in which Chris discusses a case study on the YouTube web site in which they decreased the page weight and the measured field data results got worse!
 
 > I had decreased the total page weight and number of requests to a tenth of what they were previously and somehow the numbers were showing that it was taking LONGER
 
