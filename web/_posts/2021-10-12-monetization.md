@@ -136,9 +136,9 @@ After compiling the data, there are a couple of clear trends at play here:
 2. Raise investment, form a hosting company for the framework. Meteor was one of the first examples I found to take this approach. But both Gatsby and Next.js have popularized this. I don’t feel comfortable with this, either. The way to make money becomes hosting vendor lock-in at the framework level 😱
 3. Take donations. I think Vue is doing the best job of this. The other thing Vue does well is:
 4. Sell sponsorships. Though, a word of caution as some [less-than-reputable sponsors have figured out that sponsorship is a cheap way to buy backlinks](https://twitter.com/zachleat/status/1295370536600707078), which some very popular projects have decided is a necessary evil to monetization (I don’t agree). <!--Babel, Jest, Bower, and Socket.io -->
-5. Sell subscriptions. Remix went this way originally. They had some success but low adoption and changed it up to raise investment.
+5. Sell subscriptions. Remix went this way originally. They had some success but low adoption and changed it up when they raised investment.
 
-1 and 2 are almost exclusively distinct. 3 does not pair well with 1/2. 3 and 4 can pair nicely.
+1 and 2 are almost exclusively distinct. 3 does not pair well with 1 or 2. 3 and 4 can pair nicely.
 
 ## Conclusion
 
