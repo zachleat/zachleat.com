@@ -69,9 +69,9 @@
 	</head>
 	<body class="
 			{%- if classes and classes.body %} {{ classes.body }}{% endif -%}
-			{%- if seo and seo.openGraphBackgroundImage %} body-hasbgimage{% endif -%}
+			{%- if seo and seo.openGraphSkipPageBackground %}{% else %}{% if seo and seo.openGraphBackgroundImage %} body-hasbgimage{% endif %}{% endif -%}
 		"
-		{% if seo and seo.openGraphBackgroundImage %} style="--seo-bgimage: {{ seo.openGraphBackgroundImage | backgroundimage: 1200 }}"{% endif %}>
+		{% if seo and seo.openGraphSkipPageBackground %}{% else %}{% if seo and seo.openGraphBackgroundImage %} style="--seo-bgimage: {{ seo.openGraphBackgroundImage | backgroundimage: 1200 }}"{% endif %}{% endif %}>
 		{{ content }}
 	</body>
 </html>
