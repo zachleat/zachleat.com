@@ -1,9 +1,12 @@
 ---
-title: The Art of Deception, Lighthouse Score Edition
+title: 'The Art of Deception, Lighthouse Score Edition'
 seo:
   openGraphBackgroundImage: /og/sources/lighthouse.jpg
   openGraphCacheBuster: lighthouse
   openGraphSkipPageBackground: true
+postRank: 1
+tags:
+  - popular-posts
 ---
 A few very interesting discussions on Twitter have led me to understand that some folks are talking about Lighthouse scores in a way that is—in my opinion—not as _forthright_ as it could be (intentionally or not). Let’s level set a bit and talk a bit about the different flavors of <em>wiggle room</em>:
 
