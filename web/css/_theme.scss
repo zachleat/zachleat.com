@@ -76,6 +76,9 @@ abbr {
 	gap: var(--flex-gap);
 	flex-wrap: wrap;
 }
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
 .flexcol-1-4 {
 	flex-grow: 1;
 	flex-basis: calc(25% - var(--flex-gap) / 2);
@@ -666,6 +669,13 @@ blockquote {
 	color: #777;
 	margin: 1.2em 5%;
 }
+blockquote > p:first-child {
+	margin-top: 0;
+}
+blockquote > p:last-child {
+	margin-bottom: 0;
+}
+
 
 /* Paragraphs */
 
@@ -1237,10 +1247,11 @@ a[href]:not(:focus,:hover) .tag.eleventy {
 
 /* Live test cases */
 .livedemo {
+	--box-shadow-color: #add8e6;
 	display: block;
 	padding: .5rem .5rem 1rem .5rem;
 	border: none;
-	box-shadow: 0 0 0 var(--box-shadow-width, 2px) #add8e6;
+	box-shadow: 0 0 0 var(--box-shadow-width, 2px) var(--box-shadow-color);
 	position: relative;
 	margin: .5rem -.25rem 1.5rem;
 
@@ -1393,6 +1404,35 @@ pre + .livedemo {
 .livedemo-dark code {
 	background-color: inherit;
 	color: inherit;
+}
+
+/* Evil mode */
+.livedemo-evil {
+	--box-shadow-color: #521454;
+	background-color: hsl(290deg, 47%, 38%);
+	color: #fff;
+	font-style: italic;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+.livedemo-evil:before,
+.livedemo-evil:after {
+	content: "😈😈😈";
+	font-size: 1em;
+	text-shadow: 0px 0px 1em var(--box-shadow-color);
+	font-style: normal;
+	background-color: transparent;
+	position: absolute;
+	top: -1em;
+	left: 50%;
+	bottom: auto;
+	right: auto;
+	transform: translateX(-50%);
+	letter-spacing: .5em;
+}
+.livedemo-evil:after {
+	bottom: -.7em;
+	top: auto;
 }
 
 /* Flush */
