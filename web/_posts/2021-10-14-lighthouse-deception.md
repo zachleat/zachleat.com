@@ -13,6 +13,8 @@ Here’s the same result on my MacBook Air (M1, 2020) using Chrome 94:
 
 <img src="/web/img/posts/lighthouse/nextjs-mobile-new-hardware.png" alt="nextjs.org Lighthouse Score for Mobile: 94 on Performance, 89 on Accessibility, 93 on Best Practices, 100 on SEO" class="primary">
 
+It’s incredible to me the variability effect that your hardware can have: from a 64 on Performance to a 94—that’s a thirty point swing!
+
 <div class="livedemo livedemo-evil">
   <strong>Don’t Do This™ Evil Tip:</strong> When running Lighthouse, only use the best, beefiest, latest and greatest, most expensive hardware and network connections.
 </div>
@@ -67,6 +69,8 @@ _MacBook Air (M1, 2020) using Chrome 94._
 There has been [some discussion](https://github.com/GoogleChrome/lighthouse/issues/9379) about [adding a visual indicator](https://github.com/GoogleChrome/lighthouse/issues/8178) to make the mode more obvious, which would help greatly!
 
 _Some more [related  Patrick Hulce discussion on Twitter](https://twitter.com/zachleat/status/1286345175149826052)._
+
+I feel as though I should also mention—in a perfect world—if a web benchmark were to start from scratch with a new Lighthouse, the slow hardware simulation, network throttling, viewport size testing should be built into a single mode. I’d love it if the next version of Lighthouse ran Mobile mode, then Desktop mode, and displayed both scores together or combined them somehow. Get rid of the separation and it would clear up a bunch of the confusion in a very clean way.
 
 ## Lab Data versus Field Data
 
