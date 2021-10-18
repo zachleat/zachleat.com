@@ -3,8 +3,6 @@ title: 'IndieWeb Avatar, yet another Eleventy Image Service API'
 tags:
   - project
   - eleventy
-  - popular-posts
-postRank: 20
 ---
 The Eleventy API ecosystem is growing (again).
 
