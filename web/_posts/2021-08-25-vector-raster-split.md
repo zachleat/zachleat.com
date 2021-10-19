@@ -4,7 +4,7 @@ seo:
   openGraphBackgroundImage: /web/img/posts/vector-raster-split/preview.jpg
 tags:
   - popular-posts
-postRank: 3
+postRank: 2
 ---
 This week I ran into an interesting class of problem that—in hindsight—could use a much better workflow. Does it exist?
 
