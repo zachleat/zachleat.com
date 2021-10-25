@@ -386,21 +386,27 @@ module.exports = function(eleventyConfig) {
 	function pad(num) {
 		return `${num}`.padStart(2, '0');
 	}
-
-	eleventyConfig.addLiquidShortcode("ogImageSource", function({fileSlug, url, inputPath}, cacheBusterSuffix) {
+	function getScreenshotUrl(path, cacheBuster = "") {
 		let domain = "https://www.zachleat.com";
+		return `https://v1.screenshot.11ty.dev/${encodeURIComponent(domain + path)}/opengraph/${cacheBuster ? `${cacheBuster}/` : ""}`;
+	}
 
+	eleventyConfig.addLiquidShortcode("rawScreenshotImage", function(postUrl) {
+		return getScreenshotUrl(postUrl);
+	});
+
+	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}, cacheBusterSuffix) {
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./web/_posts/")) {
 			let d = new Date();
 			// daily cache buster
 			let cacheBuster = `__${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}${cacheBusterSuffix}`;
 
-			return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}/opengraph${url}`)}/opengraph/${cacheBuster}/`;
+			return getScreenshotUrl(`/opengraph${url}`, cacheBuster);
 		}
 
 		// raw screenshot
-		return `https://v1.screenshot.11ty.dev/${encodeURIComponent(`${domain}${url}`)}/opengraph/`;
+		return getScreenshotUrl(url);
 
 		// return `${domain}/og/default.jpeg`;
 	});
