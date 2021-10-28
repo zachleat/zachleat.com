@@ -67,7 +67,7 @@ module.exports = function(eleventyConfig) {
 
     let options = {
       formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
-      widths: [375, 650, 1200],
+      widths: [375, 650], // 1200 is not used, max rendered size is about 450px.
       urlFormat: function({width, format}) {
         let size;
         if(width <= 400) {
