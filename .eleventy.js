@@ -17,7 +17,6 @@ const getBaseUrl = require("./_includes/getBaseUrl");
 const pluginImage = require("./_includes/imagePlugin");
 const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
 
-
 function hasEleventyFeature(featureName) {
 	return process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf(featureName) > -1;
 }
@@ -381,34 +380,6 @@ module.exports = function(eleventyConfig) {
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug, startTime) {
 		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}${startTime ? `?start=${startTime}` : ''}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
-	});
-
-	function pad(num) {
-		return `${num}`.padStart(2, '0');
-	}
-	function getScreenshotUrl(path, cacheBuster = "") {
-		let domain = "https://www.zachleat.com";
-		return `https://v1.screenshot.11ty.dev/${encodeURIComponent(domain + path)}/opengraph/${cacheBuster ? `${cacheBuster}/` : ""}`;
-	}
-
-	eleventyConfig.addLiquidShortcode("rawScreenshotImage", function(postUrl) {
-		return getScreenshotUrl(postUrl);
-	});
-
-	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}, cacheBusterSuffix = "") {
-		// special title og images, only for _posts
-		if(inputPath.startsWith("./web/_posts/")) {
-			let d = new Date();
-			// daily cache buster
-			let cacheBuster = `__${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}${cacheBusterSuffix}`;
-
-			return getScreenshotUrl(`/opengraph${url}`, cacheBuster);
-		}
-
-		// raw screenshot
-		return getScreenshotUrl(url);
-
-		// return `${domain}/og/default.jpeg`;
 	});
 
 	/* COLLECTIONS */

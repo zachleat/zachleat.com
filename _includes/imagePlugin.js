@@ -91,4 +91,38 @@ module.exports = function(eleventyConfig) {
       class: "project_img",
     });
   });
+
+  function getScreenshotUrlFromPath(path, cacheBuster = "") {
+		let domain = "https://www.zachleat.com";
+		return getScreenshotUrl(domain + path, cacheBuster);
+	}
+	function getScreenshotUrl(fullUrl, cacheBuster = "") {
+		return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${cacheBuster ? `${cacheBuster}/` : ""}`;
+	}
+
+	eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl) {
+		return getScreenshotUrl(fullUrl);
+	});
+	eleventyConfig.addLiquidShortcode("rawScreenshotImage", function(postUrl) {
+		return getScreenshotUrlFromPath(postUrl);
+	});
+
+	function pad(num) {
+		return `${num}`.padStart(2, '0');
+	}
+	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}, cacheBusterSuffix = "") {
+		// special title og images, only for _posts
+		if(inputPath.startsWith("./web/_posts/")) {
+			let d = new Date();
+			// daily cache buster
+			let cacheBuster = `__${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}${cacheBusterSuffix}`;
+
+			return getScreenshotUrl(`/opengraph${url}`, cacheBuster);
+		}
+
+		// raw screenshot
+		return getScreenshotUrl(url);
+
+		// return `${domain}/og/default.jpeg`;
+	});
 };
