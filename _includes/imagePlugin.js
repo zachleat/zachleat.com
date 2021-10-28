@@ -117,11 +117,11 @@ module.exports = function(eleventyConfig) {
 			// daily cache buster
 			let cacheBuster = `__${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}${cacheBusterSuffix}`;
 
-			return getScreenshotUrl(`/opengraph${url}`, cacheBuster);
+			return getScreenshotUrlFromPath(`/opengraph${url}`, cacheBuster);
 		}
 
 		// raw screenshot
-		return getScreenshotUrl(url);
+		return getScreenshotUrlFromPath(url);
 
 		// return `${domain}/og/default.jpeg`;
 	});
