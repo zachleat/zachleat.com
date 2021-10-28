@@ -832,6 +832,13 @@ th.numeric {
 .project_video {
 	width: 100%;
 	max-width: 28.125rem;
+	border: 1px solid #fff;
+	border-radius: .3em;
+	box-shadow: 0 6px 26px 4px rgba(0, 0, 0, .4);
+}
+.posts .project_img,
+.posts .project_video {
+	margin-bottom: 1em;
 }
 @supports (object-fit: cover) {
 	.project_img,
