@@ -843,10 +843,9 @@ th.numeric {
 @supports (object-fit: cover) {
 	.project_img,
 	.project_video {
-		max-height: 14.76562504rem; // proper aspect ratio for OG images 1200×630
-		// max-height: 8.5rem;
+		max-height: 13.4375rem;
 		object-fit: cover;
-		object-position: top;;
+		object-position: top;
 	}
 }
 .layout-list p + ol.posts {
@@ -882,10 +881,6 @@ th.numeric {
 }
 .posts .deprecated .tags {
 	display: none;
-}
-.posts .deprecated:before {
-	content: "Deprecated: ";
-	@include webfontBold;
 }
 
 .posts-withimg {
