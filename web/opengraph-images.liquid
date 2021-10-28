@@ -21,7 +21,7 @@ More Ideas:
 {% endcomment %}
 {%- capture absoluteUrl -%}{{ post.url | url | absoluteUrl }}{%- endcapture -%}
 {%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
-<div class="slide slide-preview slide-preview-vertical slide-preview-60-40" tabindex="0" autofocus>
+<div class="slide slide-chromeless slide-preview slide-preview-vertical slide-preview-60-40" tabindex="0" autofocus>
 	<div class="frame">
     <div class="window frame-resizer-main">
       <div class="window-hed">

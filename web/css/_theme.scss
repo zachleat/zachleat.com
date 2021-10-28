@@ -813,6 +813,8 @@ th.numeric {
 .posts video,
 .posts .description {
 	margin: .5em 0;
+}
+.posts .description {
 	padding-left: 24px;
 }
 .posts img {
@@ -830,6 +832,15 @@ th.numeric {
 .project_video {
 	width: 100%;
 	max-width: 28.125rem;
+}
+@supports (object-fit: cover) {
+	.project_img,
+	.project_video {
+		max-height: 14.76562504rem; // proper aspect ratio for OG images 1200×630
+		// max-height: 8.5rem;
+		object-fit: cover;
+		object-position: top;;
+	}
 }
 .layout-list p + ol.posts {
 	margin-top: 3em;
@@ -868,6 +879,16 @@ th.numeric {
 .posts .deprecated:before {
 	content: "Deprecated: ";
 	@include webfontBold;
+}
+
+.posts-withimg {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+.posts-withimg > * {
+	flex-grow: 1;
+	flex-basis: 20em;
 }
 
 .sub {

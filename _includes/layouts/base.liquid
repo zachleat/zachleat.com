@@ -23,11 +23,11 @@
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="Zach Leatherman">
 		<meta property="og:description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
-		<meta property="og:image" content="{% if headimage %}{{ headimage }}{% else %}{% ogImageSource page, seo.openGraphCacheBuster %}{% endif %}">
+		<meta property="og:image" content="{% if headimage %}{{ headimage | absoluteUrl }}{% else %}{% ogImageSource page, seo.openGraphCacheBuster %}{% endif %}">
 		<meta property="og:url" content="https://www.zachleat.com{{ page.url }}">
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="@zachleat" />
-		<meta name="twitter:image" content="{% if headimage %}{{ headimage }}{% else %}{% ogImageSource page, seo.openGraphCacheBuster %}{% endif %}" />
+		<meta name="twitter:image" content="{% if headimage %}{{ headimage | absoluteUrl }}{% else %}{% ogImageSource page, seo.openGraphCacheBuster %}{% endif %}" />
 
 		<!-- Site-specific -->
 		<meta name="dist" content="{{distFolder}}">
@@ -42,6 +42,9 @@
 		<link rel="feed" href="https://www.zachleat.com/web/">
 
 		<style>{% include initial.min.css %}</style>
+
+		<!-- Preconnect to OpenGraph service -->
+		<link href="https://v1.opengraph.11ty.dev" rel="preconnect" crossorigin>
 
 		<link rel="stylesheet" href="{{ distFolder }}defer.min.css" media="print" onload="this.media='all'">
 		<noscript>

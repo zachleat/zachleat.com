@@ -60,4 +60,35 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
   // eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+
+  eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url}) {
+    let domain = "https://www.zachleat.com";
+    let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(domain + url)}/`;
+
+    let options = {
+      formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
+      widths: [375, 650, 1200],
+      urlFormat: function({width, format}) {
+        let size;
+        if(width <= 400) {
+          size = "small";
+        } else if(width <= 700) {
+          size = "medium";
+        } else {
+          size = "auto";
+        }
+
+        return `${fullUrl}${size}/${format}/`;
+      }
+    };
+
+    let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
+    return Image.generateHTML(stats, {
+      alt: `OpenGraph image for ${url}`,
+      loading: "lazy",
+      decoding: "async",
+      sizes: "(min-width: 64em) 50vw, 100vw",
+      class: "project_img",
+    });
+  });
 };
