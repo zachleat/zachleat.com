@@ -395,7 +395,7 @@ module.exports = function(eleventyConfig) {
 		return getScreenshotUrl(postUrl);
 	});
 
-	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}, cacheBusterSuffix) {
+	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}, cacheBusterSuffix = "") {
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./web/_posts/")) {
 			let d = new Date();
