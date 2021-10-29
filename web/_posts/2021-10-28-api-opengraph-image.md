@@ -2,6 +2,7 @@
 title: 'Recycling Open Graph Images for display on my Web Site'
 tags:
   - project
+  - eleventy
 seo:
   openGraphBackgroundImage: /og/sources/canrainbow.jpg
 ---
