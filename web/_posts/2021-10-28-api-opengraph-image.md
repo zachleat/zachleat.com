@@ -49,7 +49,7 @@ When I want to make changes, I do so in one place and it cascades to all of thes
 
 For me, this all ties back to good visual attribution. Of course, this example is very self serving—but it works with any external site too!
 
-When I want to link to a person:, I’ll use their [IndieWeb Avatar](/web/indieweb-avatar/) next to their name.
+When I want to link to a person: I’ll use their [IndieWeb Avatar](/web/indieweb-avatar/) next to their name.
 
 When I want to link to a specific web page, I now have two options:
 
