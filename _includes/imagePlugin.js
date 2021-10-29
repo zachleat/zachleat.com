@@ -58,9 +58,9 @@ function backgroundImageFilter(src, width, options = {}) {
 function pad(num) {
   return `${num}`.padStart(2, '0');
 }
-function getCurrentDate() {
+function getCacheBuster() {
   let d = new Date();
-  return `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+  return `__${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
 }
 
 module.exports = function(eleventyConfig) {
@@ -86,7 +86,7 @@ module.exports = function(eleventyConfig) {
           size = "auto";
         }
 
-        return `${fullUrl}${size}/${format}/_${getCurrentDate()}/`;
+        return `${fullUrl}${size}/${format}/${getCacheBuster()}/`;
       }
     };
 
@@ -100,12 +100,11 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  function getScreenshotUrl(fullUrl, cacheBuster = "") {
-    return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${cacheBuster ? `${cacheBuster}/` : ""}`;
+  function getScreenshotUrl(fullUrl) {
+    return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getCacheBuster()}/`;
   }
-  function getScreenshotUrlFromPath(path, cacheBuster = "") {
-		let domain = "https://www.zachleat.com";
-		return getScreenshotUrl(domain + path, cacheBuster);
+  function getScreenshotUrlFromPath(path) {
+		return getScreenshotUrl("https://www.zachleat.com" + path);
 	}
 
   eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl) {
@@ -115,13 +114,10 @@ module.exports = function(eleventyConfig) {
     return getScreenshotUrlFromPath(postUrl);
 	});
 
-	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}, cacheBusterSuffix = "") {
+	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}) {
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./web/_posts/")) {
-			// daily cache buster
-			let cacheBuster = `_${getCurrentDate()}${cacheBusterSuffix}`;
-
-			return getScreenshotUrlFromPath(`/opengraph${url}`, cacheBuster);
+			return getScreenshotUrlFromPath(`/opengraph${url}`);
 		}
 
 		// raw screenshot

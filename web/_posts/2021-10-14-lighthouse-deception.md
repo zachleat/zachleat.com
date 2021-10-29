@@ -2,7 +2,6 @@
 title: 'The Art of Deception, Lighthouse Score Edition'
 seo:
   openGraphBackgroundImage: /og/sources/lighthouse.jpg
-  openGraphCacheBuster: lighthouse
   openGraphSkipPageBackground: true
 tags:
   - popular-posts
