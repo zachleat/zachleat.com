@@ -59,18 +59,16 @@ function pad(num) {
   return `${num}`.padStart(2, '0');
 }
 function getCacheBuster() {
-  let d = new Date();
-  return `____${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
-}
-
-function getDomainUrl(path) {
-  // TODO this but better
-  // show boring home page image for everything so we don’t prematurely request a post image that hasn’t been published yet.
-  let domain = "https://www.zachleat.com";
   if(process.env.ELEVENTY_PRODUCTION) {
-    return domain + path;
+    let d = new Date();
+    return `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
   }
-  return domain;
+  // return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
+  return "_localdev";
+}
+function getFullUrlFromPath(path) {
+  let domain = "https://www.zachleat.com";
+  return domain + path;
 }
 
 module.exports = function(eleventyConfig) {
@@ -80,7 +78,7 @@ module.exports = function(eleventyConfig) {
   // eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
   eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url, data}) {
-    let targetUrl = getDomainUrl(url);
+    let targetUrl = getFullUrlFromPath(url);
     let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl)}/`;
 
     let options = {
@@ -114,7 +112,7 @@ module.exports = function(eleventyConfig) {
     return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getCacheBuster()}/`;
   }
   function getScreenshotUrlFromPath(path) {
-    return getScreenshotUrl(getDomainUrl(path));
+    return getScreenshotUrl(getFullUrlFromPath(path));
 	}
 
   eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl) {

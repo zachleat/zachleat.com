@@ -39,11 +39,30 @@ The image service:
 1. Resizes and optimizes the image
 1. Returns the result
 
-Just pause for a second and consider the authoring workflow here when I create a new blog post. I create a new markdown file. I pick a background image to use (usually from Unsplash) and point to that image path in the front matter of my markdown file. The Open Graph image is created automatically and resized/optimized. The preview thumbnail on my home page now reuses that same Open Graph image for nice visuals on my own site.
+Now I’d just like to pause for a second and appreciate the authoring workflow when I create a new blog post: I create a new markdown file. I pick a background image to use (usually from [Unsplash](https://unsplash.com/)) and point to that image path in the front matter of my markdown file.
 
-It’s even nicer if I add a YouTube video to the front matter for the post—the cover image is downloaded from the video and used automatically.
+The Open Graph image is created automatically and resized/optimized. The preview thumbnail on my home page now reuses that same Open Graph image for nice visuals on my own site. It’s even nicer if I add a YouTube video to the front matter for the post—the cover image is downloaded from the video and used automatically.
 
 When I want to make changes, I do so in one place and it cascades to all of these different spots automatically.
+
+## Attribution
+
+For me, this all ties back to good visual attribution. Of course, this example is very self serving—but it works with any external site too!
+
+When I want to link to a person:, I’ll use their [IndieWeb Avatar](/web/indieweb-avatar/) next to their name.
+
+When I want to link to a specific web page, I now have two options:
+
+* Use the optimized Open Graph image for that page.
+* Use an Open Graph sized [screenshot](/web/screenshots/) for that page. 
+
+[Nicolas Hoizey has already suggested](https://github.com/11ty/api-opengraph-image/issues/1) that this service fall back to the screenshot if the Open Graph image is not found—great idea!
+
+## A love letter to On-demand Builders
+
+This Eleventy API service renaissance is owed largely to [Netlify’s On-demand Builders](https://docs.netlify.com/configure-builds/on-demand-builders/) feature. Running a JavaScript file in the cloud and caching the output on the Edge CDN for all repeat requests (with no extra cost in Functions quotas) is incredibly powerful. It’s awesome. I love it. (Please do remember that I am employed by Netlify).
+
+I’ve already built four hosted services and made sure that the [Eleventy Serverless plugin](https://www.11ty.dev/docs/plugins/serverless/) was compatible with the feature. I can absolutely say that none of those things would exist without On-demand Builders. I already have more ideas for more stuff—this is an awesome time to be a builder, y’all!
 
 ## Demos
 
@@ -120,7 +139,7 @@ The above Open Graph image is using a YouTube video cover image in the backgroun
   </a>
 </div>
 
-I am slowly creating all of the building blocks necessary to create a social network. Please send help.
+_I have now realized that I am slowly creating all of the building blocks necessary to create a social network. Please send help._
 
 
 ---
