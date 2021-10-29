@@ -60,7 +60,7 @@ function pad(num) {
 }
 function getCacheBuster() {
   let d = new Date();
-  return `__${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+  return `___${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
 }
 
 module.exports = function(eleventyConfig) {
