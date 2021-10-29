@@ -60,7 +60,7 @@ function pad(num) {
 }
 function getCacheBuster() {
   let d = new Date();
-  return `___${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+  return `____${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
 }
 
 function getDomainUrl(path) {
