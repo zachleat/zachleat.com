@@ -63,6 +63,16 @@ function getCacheBuster() {
   return `___${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
 }
 
+function getDomainUrl(path) {
+  // TODO this but better
+  // show boring home page image for everything so we don’t prematurely request a post image that hasn’t been published yet.
+  let domain = "https://www.zachleat.com";
+  if(process.env.ELEVENTY_PRODUCTION) {
+    return domain + path;
+  }
+  return domain;
+}
+
 module.exports = function(eleventyConfig) {
   // eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
@@ -70,8 +80,8 @@ module.exports = function(eleventyConfig) {
   // eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
   eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url, data}) {
-    let domain = "https://www.zachleat.com";
-    let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(domain + url)}/`;
+    let targetUrl = getDomainUrl(url);
+    let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl)}/`;
 
     let options = {
       formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
@@ -92,7 +102,7 @@ module.exports = function(eleventyConfig) {
 
     let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
     return Image.generateHTML(stats, {
-      alt: data.title || `OpenGraph image for ${url}`,
+      alt: data.title || `OpenGraph image for ${targetUrl}`,
       loading: "lazy",
       decoding: "async",
       sizes: "(min-width: 64em) 50vw, 100vw",
@@ -104,7 +114,7 @@ module.exports = function(eleventyConfig) {
     return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getCacheBuster()}/`;
   }
   function getScreenshotUrlFromPath(path) {
-		return getScreenshotUrl("https://www.zachleat.com" + path);
+    return getScreenshotUrl(getDomainUrl(path));
 	}
 
   eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl) {
@@ -122,6 +132,6 @@ module.exports = function(eleventyConfig) {
 
 		// raw screenshot
 		return getScreenshotUrlFromPath(url);
-		// return `${domain}/og/default.jpeg`;
+		// return getScreenshotUrlFromPath("/og/default.jpeg");
 	});
 };
