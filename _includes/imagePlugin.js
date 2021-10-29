@@ -1,4 +1,5 @@
 const Image = require("@11ty/eleventy-img");
+const pkg = require("../package.json")
 const { createHash } = require("crypto");
 
 function getCryptoHash(src) {
@@ -61,7 +62,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
   // eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
-  eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url}) {
+  eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url, data}) {
     let domain = "https://www.zachleat.com";
     let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(domain + url)}/`;
 
@@ -78,13 +79,13 @@ module.exports = function(eleventyConfig) {
           size = "auto";
         }
 
-        return `${fullUrl}${size}/${format}/`;
+        return `${fullUrl}${size}/${format}/_${pkg.version}/`;
       }
     };
 
     let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
     return Image.generateHTML(stats, {
-      alt: `OpenGraph image for ${url}`,
+      alt: data.title || `OpenGraph image for ${url}`,
       loading: "lazy",
       decoding: "async",
       sizes: "(min-width: 64em) 50vw, 100vw",
@@ -92,19 +93,19 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  function getScreenshotUrl(fullUrl, cacheBuster = "") {
+    return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${cacheBuster ? `${cacheBuster}/` : ""}`;
+  }
   function getScreenshotUrlFromPath(path, cacheBuster = "") {
 		let domain = "https://www.zachleat.com";
 		return getScreenshotUrl(domain + path, cacheBuster);
 	}
-	function getScreenshotUrl(fullUrl, cacheBuster = "") {
-		return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${cacheBuster ? `${cacheBuster}/` : ""}`;
-	}
 
-	eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl) {
-		return getScreenshotUrl(fullUrl);
-	});
+  eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl) {
+    return getScreenshotUrl(fullUrl);
+  });
 	eleventyConfig.addLiquidShortcode("rawScreenshotImage", function(postUrl) {
-		return getScreenshotUrlFromPath(postUrl);
+    return getScreenshotUrlFromPath(postUrl);
 	});
 
 	function pad(num) {
