@@ -1,5 +1,4 @@
 const Image = require("@11ty/eleventy-img");
-const pkg = require("../package.json")
 const { createHash } = require("crypto");
 
 function getCryptoHash(src) {
@@ -56,6 +55,14 @@ function backgroundImageFilter(src, width, options = {}) {
   return `url('/img/built/${filename}')`;
 }
 
+function pad(num) {
+  return `${num}`.padStart(2, '0');
+}
+function getCurrentDate() {
+  let d = new Date();
+  return `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+}
+
 module.exports = function(eleventyConfig) {
   // eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
@@ -79,7 +86,7 @@ module.exports = function(eleventyConfig) {
           size = "auto";
         }
 
-        return `${fullUrl}${size}/${format}/_${pkg.version}/`;
+        return `${fullUrl}${size}/${format}/_${getCurrentDate()}/`;
       }
     };
 
@@ -108,22 +115,17 @@ module.exports = function(eleventyConfig) {
     return getScreenshotUrlFromPath(postUrl);
 	});
 
-	function pad(num) {
-		return `${num}`.padStart(2, '0');
-	}
 	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}, cacheBusterSuffix = "") {
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./web/_posts/")) {
-			let d = new Date();
 			// daily cache buster
-			let cacheBuster = `__${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}${cacheBusterSuffix}`;
+			let cacheBuster = `_${getCurrentDate()}${cacheBusterSuffix}`;
 
 			return getScreenshotUrlFromPath(`/opengraph${url}`, cacheBuster);
 		}
 
 		// raw screenshot
 		return getScreenshotUrlFromPath(url);
-
 		// return `${domain}/og/default.jpeg`;
 	});
 };
