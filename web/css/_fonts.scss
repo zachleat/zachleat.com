@@ -47,11 +47,3 @@
   font-display: swap;
   unicode-range: U+2116;
 }
-
-/* 11ty logo */
-@font-face {
-	font-family: BenchNineEleventy;
-  src: url(/web/css/fonts/benchnine/BenchNine-Bold-11ty-subset.woff2) format("woff2");
-  font-display: swap;
-  unicode-range: U+31,U+74,U+79;
-}

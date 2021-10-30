@@ -67,12 +67,6 @@ module.exports = function(eleventyConfig) {
 
 
 	function indieAvatarHtml(url = "", classes = "z-avatar") {
-		if(url === "https://www.11ty.dev/" || url === "https://www.11ty.dev") {
-			// do nothing
-		} else if(url.includes("11ty.dev") || url.includes("11ty.io")) {
-			return;
-		}
-
 		let screenshotUrl = `https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(url)}/`;
 		return `<img alt="IndieWeb Avatar for ${url}" class="${classes}" loading="lazy" decoding="async" src="${screenshotUrl}" width="60" height="60">`;
 	}
