@@ -122,18 +122,14 @@ ul.resume-desc {
 .resume-location {
 	float: right;
 	margin-left: 0.5em;
+	font-family: Lato, sans-serif;
 	font-style: italic;
-}
-.webfont-stage-2 .resume-location {
-	font-family: LatoItalic, sans-serif;
 }
 
 /* Dates */
 .resume-date {
+	font-family: Lato, sans-serif;
 	font-style: italic;
-}
-.webfont-stage-2 .resume-date {
-	font-family: LatoItalic, sans-serif;
 }
 
 /* Footer */

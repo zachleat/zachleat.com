@@ -1,36 +1,33 @@
 @font-face {
-	font-family: LatoSubset;
-	src: url("/web/css/fonts/lato/2.0/LatoLatin-Regular.supersubset.woff2") format("woff2");
-	/* space, Uppercase A-Z, lowercase a-z */
-	unicode-range: U+32,U+65-U+90,U+97-122;
+	font-family: Lato;
+	src: url('/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.woff2') format('woff2'),
+			 url('/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.zopfli.woff') format('woff');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Lato;
-	src: url('/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.zopfli.woff') format('woff');
-}
-
-@font-face {
-	font-family: LatoBold;
 	src: url('/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.woff2') format('woff2'),
 			 url('/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.zopfli.woff') format('woff');
 	font-weight: 700;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: LatoItalic;
+	font-family: Lato;
 	src: url('/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.woff2') format('woff2'),
 			 url('/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.zopfli.woff') format('woff');
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: LatoBoldItalic;
+	font-family: Lato;
 	src: url('/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.woff2') format('woff2'),
 			 url('/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.zopfli.woff') format('woff');
 	font-weight: 700;
 	font-style: italic;
+	font-display: swap;
 }
 
 /* Also I liked Josefin Sans */

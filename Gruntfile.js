@@ -29,7 +29,6 @@ module.exports = function(grunt) {
 			js: {
 				src: [
 					'<%= config.jsSrc %>initial.js',
-					'<%= config.jsSrc %>fonts.js'
 				],
 				dest: '<%= config.distFolder %>initial.js'
 			},

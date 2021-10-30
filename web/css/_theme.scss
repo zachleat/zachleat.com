@@ -932,12 +932,6 @@ th.numeric {
 	@include webfontItalic;
 	max-width: 50em; /* 800px */
 }
-#about-index {
-	font-size-adjust: .47;
-}
-.webfont-stage-2 #about-index {
-	font-size-adjust: none;
-}
 
 @media (min-width: 30em) {
 	/* thanks to http://www.sitepoint.com/making-css-count-backwards/ */
