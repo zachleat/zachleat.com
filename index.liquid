@@ -18,9 +18,9 @@ enableWebmentions: true
 		</ol>
 
 		<h2>Popular 🔥</h2>
-		<ol class="posts h-feed">
+		<ol class="posts posts-withimg h-feed">
 			{% for post in collections.popularPostsRanked limit:6 %}
-				{% include post-list-entry.html, ignoreYear: "true", hfeed: true, ignorePopularity: true %}
+				{% include post-list-entry.html, ignoreYear: "true", hfeed: true, ignorePopularity: true, previewImages: true %}
 			{% endfor %}
 			<li><em><a href="/web/best-of" class="posts-link posts-link-more">…see all popular posts.</a></em></li>
 		</ol>
