@@ -57,11 +57,14 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
-
-	eleventyConfig.addLiquidShortcode("imgavatar", async function(username, classes = "") {
+	async function twitterAvatarHtml(username, classes = "") {
 		usernames.add(username.toLowerCase());
 		return imgAvatar(username, classes);
-	});
+	}
+
+	eleventyConfig.addLiquidShortcode("imgavatar", twitterAvatarHtml);
+	eleventyConfig.addLiquidShortcode("twitterAvatar", twitterAvatarHtml);
+
 
 	function indieAvatarHtml(url = "", classes = "z-avatar") {
 		if(url === "https://www.11ty.dev/" || url === "https://www.11ty.dev") {
@@ -71,7 +74,7 @@ module.exports = function(eleventyConfig) {
 		}
 
 		let screenshotUrl = `https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(url)}/`;
-		return `<img alt="IndieWeb Avatar for ${url}" class="${classes}" loading="lazy" decoding="async" src="${screenshotUrl}" width="72" height="72">`;
+		return `<img alt="IndieWeb Avatar for ${url}" class="${classes}" loading="lazy" decoding="async" src="${screenshotUrl}" width="60" height="60">`;
 	}
 
 	eleventyConfig.addLiquidShortcode("indieAvatar", indieAvatarHtml);

@@ -66,5 +66,7 @@
 		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
 		{%- if activityCount > 0 %}<span class="tag" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">📢 {{ activityCount }}</span>{% endif -%}
 	</span>
+{% comment %}
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>
+{% endcomment %}
 </li>
