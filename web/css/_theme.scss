@@ -1019,7 +1019,7 @@ th.numeric {
 .about p:last-child {
 	margin-bottom: 0;
 }
-.about img {
+.about .my-avatar {
 	display: block;
 	margin: 0 auto 1em;
 	max-width: none;
@@ -1033,7 +1033,7 @@ th.numeric {
 	.about {
 		display: flex;
 	}
-	.about img {
+	.about .my-avatar {
 		margin-right: 1em;
 		flex: 0 0 80px;
 	}
