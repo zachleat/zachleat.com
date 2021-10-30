@@ -31,7 +31,7 @@
 	{%- endif %}
 	{%- if post.data.tags contains 'eleventy' %}<span class="tags"><span class="tag eleventy">11ty</span></span>{% endif -%}
 	{%- if post.data.tags contains 'external' -%}
-		<span class="external" title="External Link"><span class="icon-link-external"></span></span>
+		<span class="external" title="External Link">{% include ../web/img/icons/link-external.svg %}</span>
 		{%- indieAvatar post.data.external_url "z-avatar z-avatar-eq z-avatar-external" -%}
 	{%- endif -%}
 	{%- if view == 'project' -%}
