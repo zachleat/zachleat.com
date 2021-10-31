@@ -1012,7 +1012,7 @@ th.numeric {
 }
 .about p {
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.8;
 	@include webfontItalic;
 	margin-top: 0;
 }
@@ -1065,14 +1065,13 @@ th.numeric {
 }
 .tag-inline,
 .tags .tag {
-	border-left: 1px solid rgba(0, 0, 0, .08);
 	font-size: 10.5px;
 	line-height: 18px;
 	height: auto;
 	text-transform: uppercase;
 	color: #666;
-	padding: 4px 6px;
-	margin: 0 5px;
+	padding: 4px;
+	margin: 0 4px;
 	vertical-align: middle;
 	display: inline-block;
 	text-decoration: none;
