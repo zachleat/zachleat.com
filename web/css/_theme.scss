@@ -733,7 +733,6 @@ th.numeric {
 	width: 1.5em; /* 24px /16 */
 	height: 1.5em; /* 24px /16 */
 	margin-right: .5em;
-	border-radius: 50%;
 	background-color: $primaryColor;
 	color: transparent;
 	margin-bottom: -2px;
@@ -999,6 +998,9 @@ th.numeric {
 	border-top: 1px solid #eee;
 	@include unhyphenate;
 }
+.about :first-child {
+	text-align: center;
+}
 .about > a {
 	display: block;
 	text-decoration: none;
@@ -1019,11 +1021,13 @@ th.numeric {
 .about p:last-child {
 	margin-bottom: 0;
 }
+.my-avatar {
+	border-radius: 15%;
+}
 .about .my-avatar {
 	display: block;
 	margin: 0 auto 1em;
-	max-width: none;
-	border-radius: 50%;
+	max-width: 120px;
 }
 .about .social {
 	display: block;
@@ -1032,9 +1036,9 @@ th.numeric {
 @media (min-width: 30em) {
 	.about {
 		display: flex;
+		gap: 1em;
 	}
 	.about .my-avatar {
-		margin-right: 1em;
 		flex: 0 0 80px;
 	}
 }
