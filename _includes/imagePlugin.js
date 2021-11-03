@@ -100,7 +100,7 @@ module.exports = function(eleventyConfig) {
 
     let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
     return Image.generateHTML(stats, {
-      alt: data.title || `OpenGraph image for ${targetUrl}`,
+      alt: `OpenGraph image for ${targetUrl}`,
       loading: "lazy",
       decoding: "async",
       sizes: "(min-width: 64em) 50vw, 100vw",
