@@ -833,7 +833,19 @@ th.numeric {
 	max-width: 28.125rem;
 	border: 1px solid #fff;
 	border-radius: .3em;
+	transition: .25s box-shadow;
 	box-shadow: 0 6px 26px 4px rgba(0, 0, 0, .4);
+}
+a[href]:hover .project_img {
+	box-shadow: 0 0 0 6px rgba(0, 0, 0, .8);
+}
+@supports (box-shadow: none) {
+	a[href]:focus .project_img {
+		box-shadow: 0 0 0 6px rgba(0, 0, 0, .8);
+	}
+	.posts-withimg .posts-link:focus {
+		outline: none;
+	}
 }
 .posts .project_img,
 .posts .project_video {
