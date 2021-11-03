@@ -32,9 +32,7 @@
 	{%- if post.data.tags contains 'external' -%}
 		<span class="external" title="External Link">{% include ../web/img/icons/link-external.svg %}</span>
 		{%- indieAvatar post.data.external_url "z-avatar z-avatar-eq z-avatar-external" -%}
-	{%- elsif post.data.tags contains 'eleventy' -%}
-		{%- indieAvatar "https://www.11ty.dev/", "z-avatar z-avatar-eq z-avatar-external" -%}
-	{%- endif -%}
+	{%- endif %}
 	{%- if view == 'project' -%}
 		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}
 	{%- else -%}
