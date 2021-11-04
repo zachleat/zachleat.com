@@ -20,7 +20,7 @@
 	{%- if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}{% comment %}
 	{% endcomment %} data-filter-category="{{ post | getFilterCategories }}">
 	
-	<a href="{% if post.data.tags contains 'external' %}{{ post.data.external_url }}{% else %}{{ post.url | url }}{% endif %}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
+	<a href="{{ post.url | url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
 	{%- if previewImages %}
 		{% comment %}{% if post.data.headvideo %}<video muted controls preload="metadata" src="{{ post.data.headvideo }}" class="project_video"></video>{% endif %} {% endcomment %}
 		{% if post.data.headimage -%}
@@ -30,7 +30,6 @@
 		{%- endif %}
 	{%- endif %}
 	{%- if post.data.tags contains 'external' -%}
-		<span class="external" title="External Link">{% include ../web/img/icons/link-external.svg %}</span>
 		{%- indieAvatar post.data.external_url "z-avatar z-avatar-eq z-avatar-external" -%}
 	{%- endif %}
 	{%- if view == 'project' -%}

@@ -35,7 +35,9 @@ tmpl: page
 			<p><em>This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
 			{%- else %}
 			{%- unless ignoreExternalLinkInLayoutFile %}
-			<p><em>Originally posted at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
+			<p>
+				<em>Originally posted at: <a href="{{ external_url }}" class="opengraph-card">{% screenshotImageHtmlFullUrl external_url %}<span>{{ external_url }}</span></a></em>
+			</p>
 			{%- endunless %}
 			{%- endif %}
 		</article>

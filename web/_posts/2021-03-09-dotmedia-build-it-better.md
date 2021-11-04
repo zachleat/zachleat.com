@@ -9,7 +9,9 @@ tags:
   - external
 medialength: 58 min
 external_url: 'https://www.youtube.com/watch?v=eRRkvI-w5Ik'
+ignoreExternalLinkInLayoutFile: true
 ---
 {% youtubeEmbed "eRRkvI-w5Ik" %}
 
-_via [Tweet](https://twitter.com/ThisDotMedia/status/1369342730359439363)._
+* [Watch on Youtube]({{ external_url }})
+* _via [Tweet](https://twitter.com/ThisDotMedia/status/1369342730359439363)._

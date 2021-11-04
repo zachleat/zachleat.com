@@ -71,41 +71,46 @@ function getFullUrlFromPath(path) {
   return domain + path;
 }
 
+function opengraphImageHtml(targetUrl) {
+  let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl)}/`;
+
+  let options = {
+    formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
+    widths: [375, 650], // 1200 is not used, max rendered size is about 450px.
+    urlFormat: function({width, format}) {
+      let size;
+      if(width <= 400) {
+        size = "small";
+      } else if(width <= 700) {
+        size = "medium";
+      } else {
+        size = "auto";
+      }
+
+      return `${fullUrl}${size}/${format}/${getCacheBuster()}/`;
+    }
+  };
+
+  let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
+  return Image.generateHTML(stats, {
+    alt: `OpenGraph image for ${targetUrl}`,
+    loading: "lazy",
+    decoding: "async",
+    sizes: "(min-width: 64em) 50vw, 100vw",
+    class: "project_img",
+  });
+}
+
 module.exports = function(eleventyConfig) {
   // eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
   // eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
-  eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url, data}) {
-    let targetUrl = getFullUrlFromPath(url);
-    let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl)}/`;
+  eleventyConfig.addLiquidShortcode("opengraphImageHtmlFullUrl", opengraphImageHtml);
 
-    let options = {
-      formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
-      widths: [375, 650], // 1200 is not used, max rendered size is about 450px.
-      urlFormat: function({width, format}) {
-        let size;
-        if(width <= 400) {
-          size = "small";
-        } else if(width <= 700) {
-          size = "medium";
-        } else {
-          size = "auto";
-        }
-
-        return `${fullUrl}${size}/${format}/${getCacheBuster()}/`;
-      }
-    };
-
-    let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
-    return Image.generateHTML(stats, {
-      alt: `OpenGraph image for ${targetUrl}`,
-      loading: "lazy",
-      decoding: "async",
-      sizes: "(min-width: 64em) 50vw, 100vw",
-      class: "project_img",
-    });
+  eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url}) {
+    return opengraphImageHtml(getFullUrlFromPath(url));
   });
 
   function getScreenshotUrl(fullUrl) {
@@ -115,6 +120,24 @@ module.exports = function(eleventyConfig) {
     return getScreenshotUrl(getFullUrlFromPath(path));
 	}
 
+  eleventyConfig.addLiquidShortcode("screenshotImageHtmlFullUrl", function(fullUrl) {
+    let targetUrl = getScreenshotUrl(fullUrl);
+    let options = {
+      formats: ["jpeg"],
+      widths: ["auto"],
+      urlFormat: function() {
+        return targetUrl;
+      }
+    };
+
+    let stats = Image.statsByDimensionsSync(targetUrl, 1200, 630, options);
+    return Image.generateHTML(stats, {
+      alt: `Screenshot image for ${targetUrl}`,
+      loading: "lazy",
+      decoding: "async",
+      class: "",
+    });
+  });
   eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl) {
     return getScreenshotUrl(fullUrl);
   });
