@@ -101,6 +101,32 @@ function opengraphImageHtml(targetUrl) {
   });
 }
 
+function getScreenshotUrl(fullUrl) {
+  return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getCacheBuster()}/`;
+}
+function getScreenshotUrlFromPath(path) {
+  return getScreenshotUrl(getFullUrlFromPath(path));
+}
+
+function screenshotImageHtmlFullUrl(fullUrl) {
+  let targetUrl = getScreenshotUrl(fullUrl);
+  let options = {
+    formats: ["jpeg"],
+    widths: ["auto"],
+    urlFormat: function() {
+      return targetUrl;
+    }
+  };
+
+  let stats = Image.statsByDimensionsSync(targetUrl, 1200, 630, options);
+  return Image.generateHTML(stats, {
+    alt: `Screenshot image for ${targetUrl}`,
+    loading: "lazy",
+    decoding: "async",
+    class: "",
+  });
+}
+
 module.exports = function(eleventyConfig) {
   // eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
@@ -113,31 +139,7 @@ module.exports = function(eleventyConfig) {
     return opengraphImageHtml(getFullUrlFromPath(url));
   });
 
-  function getScreenshotUrl(fullUrl) {
-    return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getCacheBuster()}/`;
-  }
-  function getScreenshotUrlFromPath(path) {
-    return getScreenshotUrl(getFullUrlFromPath(path));
-	}
-
-  eleventyConfig.addLiquidShortcode("screenshotImageHtmlFullUrl", function(fullUrl) {
-    let targetUrl = getScreenshotUrl(fullUrl);
-    let options = {
-      formats: ["jpeg"],
-      widths: ["auto"],
-      urlFormat: function() {
-        return targetUrl;
-      }
-    };
-
-    let stats = Image.statsByDimensionsSync(targetUrl, 1200, 630, options);
-    return Image.generateHTML(stats, {
-      alt: `Screenshot image for ${targetUrl}`,
-      loading: "lazy",
-      decoding: "async",
-      class: "",
-    });
-  });
+  eleventyConfig.addLiquidShortcode("screenshotImageHtmlFullUrl", screenshotImageHtmlFullUrl);
   eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl) {
     return getScreenshotUrl(fullUrl);
   });
@@ -156,3 +158,5 @@ module.exports = function(eleventyConfig) {
 		// return getScreenshotUrlFromPath("/og/default.jpeg");
 	});
 };
+
+module.exports.screenshotImageHtmlFullUrl = screenshotImageHtmlFullUrl;

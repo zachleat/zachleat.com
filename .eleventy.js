@@ -15,6 +15,8 @@ const {encode} = require("html-entities");
 
 const getBaseUrl = require("./_includes/getBaseUrl");
 const pluginImage = require("./_includes/imagePlugin");
+const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
+
 const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
 
 function hasEleventyFeature(featureName) {
@@ -382,6 +384,10 @@ module.exports = function(eleventyConfig) {
 		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}${startTime ? `?start=${startTime}` : ''}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
 	});
 
+	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url) {
+		return `<em>Originally posted at: <a href="${url}" class="opengraph-card">${screenshotImageHtmlFullUrl(url)}<span>${url}</span></a></em>`;
+	});
+
 	/* COLLECTIONS */
 	function getPosts(collectionApi) {
 		return collectionApi.getFilteredByGlob("./web/_posts/*").reverse().filter(function(item) {
@@ -464,7 +470,7 @@ module.exports = function(eleventyConfig) {
 				continue;
 			}
 
-			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") ) {
+			if( !!item.inputPath.match(/\/_posts\//)) {
 				items.push( item );
 				if( items.length >= 5 ) {
 					return items;

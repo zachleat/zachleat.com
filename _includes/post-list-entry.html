@@ -29,7 +29,7 @@
 			{% opengraphImageHtml post %}
 		{%- endif %}
 	{%- endif %}
-	{%- if post.data.tags contains 'external' -%}
+	{%- if post.data.external_url -%}
 		{%- indieAvatar post.data.external_url "z-avatar z-avatar-eq z-avatar-external" -%}
 	{%- endif %}
 	{%- if view == 'project' -%}
