@@ -6,7 +6,7 @@ tags:
   - popular-posts
 seo:
   openGraphBackgroundImage: /og/sources/canrainbow.jpg
-postRank: 8
+postRank: 10
 ---
 <div class="primarylink"><a href="https://github.com/11ty/api-opengraph-image"><code>11ty/api-opengraph-image</code> on GitHub</a></div>
 
