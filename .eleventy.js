@@ -1,4 +1,3 @@
-const fs = require("fs");
 const { DateTime } = require("luxon");
 const { URL } = require("url");
 const sanitizeHTML = require("sanitize-html")
