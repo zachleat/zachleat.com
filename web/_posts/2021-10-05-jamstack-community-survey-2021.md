@@ -1,10 +1,10 @@
 ---
-title: "Jamstack Community Survey 2021 Results"
+title: Jamstack Community Survey 2021 Results
 layout: post
 tags: eleventy
-external_url: https://www.11ty.dev/blog/jamstack-survey-2021/
+external_url: 'https://www.11ty.dev/blog/jamstack-survey-2021/'
 ignoreExternalLinkInLayoutFile: true
-overrideOgImageScreenshotBackground: https://jamstack.org/survey/2021/
+overrideOgImageScreenshotBackground: 'https://jamstack.org/survey/2021/'
 ---
 {% originalPostEmbed external_url %}
 

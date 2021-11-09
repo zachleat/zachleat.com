@@ -7,7 +7,9 @@ categories:
   - font-loading
 tags:
   - font-loading
+  - popular-posts
   - popular-posts-total
+postRank: 20
 postRankTotalViews: 9
 ---
 
