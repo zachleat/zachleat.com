@@ -4,6 +4,7 @@ tags:
   - project
   - eleventy
   - speaking
+  - video
 metadata:
   youtubeId: At19o2Ox57Y
 medialength: 7 min
