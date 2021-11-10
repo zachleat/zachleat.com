@@ -14,7 +14,11 @@ urls:
   source: 'https://github.com/11ty/demo-eleventy-serverless-oauth'
 postRank: 18
 ---
-A demo project and walkthrough showing how to secure some of your Eleventy Serverless pages behind authentication providers like GitHub, Netlify, or GitLab.
+A demo project and walkthrough showing how to secure some of your Eleventy Serverless pages behind OAuth authentication providers.
+
+* Login with GitHub, Netlify, or GitLab (and easily extensible to add more!)
+* This demo uses zero clientside JavaScript.
+* Serverless templates can be secured with a simple addition to the template front matter.
 
 ## Walk-through
 {% youtubeEmbed "At19o2Ox57Y" %}
