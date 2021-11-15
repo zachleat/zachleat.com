@@ -12,7 +12,7 @@ medialength: 7 min
 urls:
   demo: 'https://demo-eleventy-serverless-oauth.netlify.app/'
   source: 'https://github.com/11ty/demo-eleventy-serverless-oauth'
-postRank: 8
+postRank: 5
 ---
 A demo project and walkthrough showing how to secure some of your Eleventy Serverless pages behind OAuth authentication providers.
 
