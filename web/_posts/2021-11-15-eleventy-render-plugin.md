@@ -3,8 +3,10 @@ title: Mix and Match Template Syntax in Eleventy using the Render Plugin
 tags:
   - project
   - eleventy
-external_url: https://www.11ty.dev/docs/plugins/render/
+  - popular-posts
+external_url: 'https://www.11ty.dev/docs/plugins/render/'
 ignoreExternalLinkInLayoutFile: true
+postRank: 17
 ---
 This plugin adds new `renderTemplate` and `renderFile` shortcodes to Eleventy projects for mixing and matching rendering in a single parent template!
 
