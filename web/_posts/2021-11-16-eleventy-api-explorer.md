@@ -6,7 +6,6 @@ tags:
 external_url: 'https://api-explorer.11ty.dev/'
 urls:
   docs: https://www.11ty.dev/docs/api-services/
-  self: https://www.zachleat.com/web/eleventy-api-explorer/
 ignoreExternalLinkInLayoutFile: true
 ---
 Right now the Eleventy API ecosystem has four services.
@@ -20,7 +19,7 @@ I wanted an easy way to test each of these services, so I built the [Eleventy AP
 
 {% originalPostEmbed external_url %}
 
-Test out the [API Explorer for this very blog post]({{ external_url }}?url={{ urls.self | url_encode }}).
+Test out the [API Explorer for my last blog post]({{ external_url }}?url={{ "https://www.zachleat.com/web/eleventy-render-plugin/" | url_encode }}).
 
 ---
 
