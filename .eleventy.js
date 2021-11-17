@@ -384,7 +384,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url) {
-		return `<a href="${url}" class="opengraph-card">${screenshotImageHtmlFullUrl(url)}<span><em>${url}</em></span></a>`;
+		return `<a href="${url}" class="opengraph-card">${screenshotImageHtmlFullUrl(url)}<span><em class="break" title="${url}">${url}</em></span></a>`;
 	});
 
 	/* COLLECTIONS */
