@@ -31,6 +31,6 @@ And the suite of services have finally found a real home on the Eleventy documen
 
 ---
 
-Marginally related, this is a great small example of a project that runs entirely through Eleventy Serverless.
+Marginally related, this is a great small example of a project that runs entirely through [Eleventy Serverless](https://www.11ty.dev/docs/plugins/serverless/).
 
 Everything runs through the [main `index.njk` template](https://github.com/11ty/api-explorer/blob/497ec182fdab08f9450ce7c2bd324e2101c38b5b/index.njk). Check out the [full source code on GitHub](https://github.com/11ty/api-explorer).
