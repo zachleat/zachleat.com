@@ -6,7 +6,7 @@ tags:
   - popular-posts
 external_url: 'https://www.11ty.dev/docs/plugins/render/'
 ignoreExternalLinkInLayoutFile: true
-postRank: 17
+postRank: 13
 ---
 This plugin adds new `renderTemplate` and `renderFile` shortcodes to Eleventy projects for mixing and matching rendering in a single parent template!
 

@@ -3,10 +3,12 @@ title: The Eleventy API Explorer
 tags:
   - project
   - eleventy
+  - popular-posts
 external_url: 'https://api-explorer.11ty.dev/'
 urls:
-  docs: https://www.11ty.dev/docs/api-services/
+  docs: 'https://www.11ty.dev/docs/api-services/'
 ignoreExternalLinkInLayoutFile: true
+postRank: 10
 ---
 Right now the Eleventy API ecosystem has four services.
 
