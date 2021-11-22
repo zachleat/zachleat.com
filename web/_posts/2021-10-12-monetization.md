@@ -4,7 +4,7 @@ tags:
   - popular-posts
 seo:
   openGraphBackgroundImage: /og/sources/deposit-boxes.jpg
-postRank: 4
+postRank: 6
 ---
 Three years into working on Eleventy, I continue to be blown away by [the adoption and community support](https://www.11ty.dev/blog/jamstack-survey-2021/) of folks contributing to the underdog.
 
