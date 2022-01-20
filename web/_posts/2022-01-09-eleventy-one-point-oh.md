@@ -1,5 +1,5 @@
 ---
-title: Eleventy 1.0.0, the stable release.
+title: Eleventy v1.0.0, the stable release.
 tags:
   - project
   - eleventy
