@@ -2,7 +2,9 @@
 title: 'If I work really hard on my Open Graph Images, People will share my Blog Posts'
 seo:
   openGraphBackgroundImage: /og/sources/graphpaper.jpg
-tags: []
+tags:
+  - popular-posts
+postRank: 7
 ---
 [Open Graph](https://ogp.me/) images. Those little images that show up when your site is shared on social media. The ones for my site were… bad. My default was to use one, huge, boring branded image for everything—which provided no extra value and just cluttered up y’alls feeds (sorry!). I wanted to make them better and here’s what I did.
 

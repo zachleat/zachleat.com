@@ -8,6 +8,10 @@ categories:
 tags:
   - highlight
   - font-loading
+  - popular-posts
+  - popular-posts-total
+postRank: 1
+postRankTotalViews: 1
 ---
 
 _This guide is not intended for use with font icons, which have different loading priorities and use cases. Also, SVG is probably a better long term choice._

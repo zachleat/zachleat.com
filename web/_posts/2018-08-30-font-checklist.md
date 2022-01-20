@@ -2,6 +2,10 @@
 title: The Font Loading Checklist
 tags:
   - font-loading
+  - popular-posts
+  - popular-posts-total
+postRank: 12
+postRankTotalViews: 10
 ---
 
 <style>

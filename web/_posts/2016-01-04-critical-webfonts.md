@@ -8,6 +8,8 @@ tags:
   - research
   - highlight
   - font-loading
+  - popular-posts-total
+postRankTotalViews: 13
 ---
 
 The history of web font loading has included many different iterations:
