@@ -62,10 +62,10 @@ function getCacheBuster() {
   if(process.env.ELEVENTY_PRODUCTION) {
     let d = new Date();
     // Daily
-    // return `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+    return `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
 
     // Weekly
-    return `_${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
+    // return `_${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
   }
   // return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
   return "_localdev";
@@ -76,7 +76,7 @@ function getFullUrlFromPath(path) {
 }
 
 function opengraphImageHtml(targetUrl) {
-  let urlCacheBust = "?bust";
+  let urlCacheBust = "?busted";
   let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl + urlCacheBust)}/`;
 
   let options = {
