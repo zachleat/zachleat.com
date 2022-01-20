@@ -1,7 +1,6 @@
 ---
 title: Eleventy v1.0.0, the stable release.
 tags:
-  - project
   - eleventy
 external_url: 'https://github.com/11ty/eleventy/releases/tag/v1.0.0'
 ---
