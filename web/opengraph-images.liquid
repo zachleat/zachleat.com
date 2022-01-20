@@ -1,0 +1,57 @@
+---
+pagination:
+  data: "collections.posts"
+  size: 1
+  alias: "post"
+layout: layouts/base.liquid
+permalink: "/opengraph{{ post.url }}"
+headimage: https://www.zachleat.com/og/default.jpeg
+stylesheetsDist:
+ - opengraph.css
+eleventyComputed:
+  sourceUrl: "https://www.zachleat.com{{ post.url }}"
+  quote: "{{ quotes | selectRandomFromArray }}"
+quotes:
+ - The person that shared this is awesome
+---
+{% comment %}
+More Ideas:
+* Git last updated
+* Put a TL;DR right there in the OG image (with alt text of course)
+{% endcomment %}
+{%- capture absoluteUrl -%}{{ post.url | url | absoluteUrl }}{%- endcapture -%}
+{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
+<div class="slide slide-chromeless slide-preview slide-preview-vertical slide-preview-60-40" tabindex="0" autofocus>
+	<div class="frame">
+    <div class="window frame-resizer-main">
+      <div class="window-hed">
+        <div class="window-circle window-circle-red"></div>
+        <div class="window-circle window-circle-yellow"></div>
+        <div class="window-circle window-circle-green"></div>
+        <a href="{{ sourceUrl }}" class="window-title">{{ sourceUrl }}</a>
+        <div class="window-spacer"></div>
+        <span class="window-title">{{ quote }}</span>
+      </div>
+      <main class="main main-bgimg" style="--og-bgimage: url('{% if post.data.seo.openGraphBackgroundImage %}{{ post.data.seo.openGraphBackgroundImage }}{% elsif post.data.overrideOgImageScreenshotBackground %}{% rawScreenshotImageFromFullUrl post.data.overrideOgImageScreenshotBackground %}{% elsif post.data.external_url %}{% rawScreenshotImageFromFullUrl post.data.external_url %}{% else %}{% rawScreenshotImage post.url %}{% endif %}')">
+        <div class="main-top">
+          <h1 class="primary-title main-hed">
+            <span class="main-box">{% if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}</span>
+            {% comment %}<span class="main-hed-sup main-box main-box-nowrap"></span> {% endcomment %}
+          </h1>
+        </div>
+        <p class="main-left">
+          {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-lighthouse" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" score></speedlify-score>{%- endif %}
+          <span class="main-avatar">{% imgavatar "zachleat", "z-avatar-large z-avatar-bottom" %} <strong class="main-avatar-name main-box">zachleat</strong></span>
+        </p>
+        <p class="main-center"></p>
+        <p class="main-right">
+          {% comment %} {%- if post.data.postRank %}<span class="main-box main-box-nowrap">#{{ post.data.postRank }} Popular</span><br>{% endif %} {% endcomment %}
+          {%- if webmentionsCount > 0 %}<span class="main-box main-box-nowrap">{{ webmentionsCount }} Webmention{% if webmentionsCount != 1 %}s{% endif %}</span>{% endif %}
+          {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-pageweight" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" weight></speedlify-score>{%- endif %}<br>
+          <span class="main-postnumber main-box main-box-nowrap">№{{ pagination.pages.length | minus: pagination.pageNumber }}</span>
+          <strong class="main-box main-box-nowrap">{{ post.date | readableDate }}</strong>
+        </p>
+      </main>
+    </div>
+	</div>
+</div>

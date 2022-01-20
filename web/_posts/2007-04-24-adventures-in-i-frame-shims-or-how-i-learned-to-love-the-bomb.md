@@ -5,7 +5,6 @@ layout: post
 Version Specific Article:
   - Internet Explorer 6
 deprecated: true
-feedtrim: true
 ---
 
 So again, I show up late to the party. IE7 is already out, but my target customers are still using IE6. So today, boys and girls, we’re going to discover the magical world of using I-Frame shims to hide those bleeding heart select boxes from showing through our layered elements.

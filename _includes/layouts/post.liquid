@@ -35,7 +35,9 @@ tmpl: page
 			<p><em>This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
 			{%- else %}
 			{%- unless ignoreExternalLinkInLayoutFile %}
-			<p><em>Originally posted at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
+			<p>
+				<em>Originally posted at: <a href="{{ external_url }}" class="opengraph-card">{% screenshotImageHtmlFullUrl external_url %}<span>{{ external_url }}</span></a></em>
+			</p>
 			{%- endunless %}
 			{%- endif %}
 		</article>
@@ -63,4 +65,16 @@ tmpl: page
 {% unless disableComments %}
 	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
 	{% include "webmentionlist", absoluteUrl: absoluteUrl %}
+{% endunless %}
+
+{%- assign isDraft = tags | includes: "draft" %}
+{% unless isDraft %}
+<div id="opengraph-preview" class="share content-grid-sibling">
+	<details>
+		<summary class="hed-h3">Social Card Image Preview</summary>
+		<p>This is what will show up when you share this post on Social Media:</p>
+		<img class="share-img" src="{% if headimage %}{{ headimage | absoluteUrl }}{% else %}{% ogImageSource page %}{% endif %}" loading="lazy" width="1200" height="630">
+		<p>How did you do this? <a href="/web/automatic-opengraph/">I automated my Open Graph images.</a> (<a href="/opengraph{{ page.url }}">Peer behind the curtain at the test page</a>)</p>
+	</details>
+</div>
 {% endunless %}

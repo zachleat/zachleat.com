@@ -27,7 +27,7 @@
 		font-size: 0.8947368421053em; /* 17px /19 */
 	}
 }
-@media (min-width: 60em) { /* 960px */
+@media (min-width: 61.25em) { /* 980px /16 */
 	.resume-toc {
 		margin-bottom: -1.944444444444em; /* -35px /18 */
 		font-size: 0.8571428571429em; /* 18px /21 */
@@ -122,18 +122,14 @@ ul.resume-desc {
 .resume-location {
 	float: right;
 	margin-left: 0.5em;
+	font-family: Lato, sans-serif;
 	font-style: italic;
-}
-.webfont-stage-2 .resume-location {
-	font-family: LatoItalic, sans-serif;
 }
 
 /* Dates */
 .resume-date {
+	font-family: Lato, sans-serif;
 	font-style: italic;
-}
-.webfont-stage-2 .resume-date {
-	font-family: LatoItalic, sans-serif;
 }
 
 /* Footer */

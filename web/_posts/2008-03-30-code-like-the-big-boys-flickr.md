@@ -3,7 +3,6 @@ title: 'Code Like the Big Boys: Flickr'
 author: Zach Leatherman
 layout: post
 deprecated: true
-feedtrim: true
 ---
 
 *Code like the Big Boys is a series of posts about code solutions used by major websites. What can we learn from these professional websites to use in our own code?*

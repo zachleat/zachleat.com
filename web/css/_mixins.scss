@@ -14,43 +14,29 @@
 }
 @mixin webfont {
 	& {
-		font-family: $fallbackSystemFont;
-		font-weight: 400;
-	}
-	.webfont-stage-1 & {
-		font-family: LatoSubset, $fallbackSystemFont;
-	}
-	.webfont-stage-2 & {
 		font-family: Lato, Numero, $fallbackSystemFont;
+		font-weight: 400;
 	}
 }
 @mixin webfontBold {
 	& {
+		font-family: Lato, Numero, $fallbackSystemFont;
 		font-style: normal;
 		font-weight: 700;
-	}
-	.webfont-stage-2 & {
-		font-family: LatoBold, Numero, $fallbackSystemFont;
 	}
 }
 @mixin webfontItalic {
 	& {
+		font-family: Lato, Numero, $fallbackSystemFont;
 		font-style: italic;
 		font-weight: 400;
-	}
-	.webfont-stage-2 & {
-		font-family: LatoItalic, Numero, $fallbackSystemFont;
-		/*font-family: SFNSText-Italic, $fallbackSystemFont;*/
-		/*font-variation-settings: 'wght' 1.37351;*/
 	}
 }
 @mixin webfontBoldItalic {
 	& {
+		font-family: Lato, Numero, $fallbackSystemFont;
 		font-style: italic;
 		font-weight: 700;
-	}
-	.webfont-stage-2 & {
-		font-family: LatoBoldItalic, Numero, $fallbackSystemFont;
 	}
 }
 /* TODO remove .link-u-exempt and .exempt classes from markup */

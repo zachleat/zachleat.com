@@ -1,7 +1,5 @@
 ---
 title: Content is Data—Sanity Open House
-eleventyComputed:
-  titleHtml: 'Content is Data—{% imgavatar "sanity_io", "z-avatar-eq" %}Sanity Open House'
 tags:
   - external
   - speaking

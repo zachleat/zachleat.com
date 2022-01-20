@@ -5,7 +5,6 @@ layout: post
 Version Specific Article:
   - YUI 2.2.2
 deprecated: true
-feedtrim: true
 ---
 
 Now you’ve done it. You watched an R rated movie while your parents weren’t looking and used some of your newfound acquired colorful language in front of them. Your mom goes for the Dial Liquid Soap, she’s going to wash that profanity right out of your dirty little mouth.

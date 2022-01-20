@@ -2,7 +2,6 @@
 title: 'Nursery Rhyme Code Poem [PHP]'
 author: Zach Leatherman
 layout: post
-feedtrim: true
 ---
 
     <?php

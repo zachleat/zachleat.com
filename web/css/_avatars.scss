@@ -2,18 +2,34 @@
 .z-avatar {
 	width: 1.3em;
 	height: 1.3em;
-	border-radius: 50%;
-	vertical-align: middle;
+	border-radius: 15%;
+	vertical-align: text-top;
 	margin: 0 .25em;
+}
+.z-avatar-bottom {
+	vertical-align: text-bottom;
+}
+.z-avatar-large {
+	width: 2em;
+	height: 2em;
 }
 .z-avatar-eq {
 	width: 1em;
 	height: 1em;
 }
+.posts .z-avatar-eq {
+	display: inline-block;
+	padding: 0;
+	margin: 0 .25em;
+}
+.posts .z-avatar-eq.z-avatar-external {
+	margin-left: 0;
+}
 .primary-title .z-avatar-eq {
 	margin-top: -0.2em;
 	max-width: 75px;
 	max-height: 75px;
+	vertical-align: text-bottom;
 }
 .z-avatars-square .z-avatar {
 	border-radius: 5%;

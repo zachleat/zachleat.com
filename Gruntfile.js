@@ -29,7 +29,6 @@ module.exports = function(grunt) {
 			js: {
 				src: [
 					'<%= config.jsSrc %>initial.js',
-					'<%= config.jsSrc %>fonts.js'
 				],
 				dest: '<%= config.distFolder %>initial.js'
 			},
@@ -192,12 +191,6 @@ module.exports = function(grunt) {
 			}
 		},
 		shell: {
-			eleventy: {
-				command: 'npx @11ty/eleventy --quiet',
-				options: {
-					execOptions: {}
-				}
-			},
 			eleventyProduction: {
 				command: 'ELEVENTY_FEATURES=webmentions,counts,fullcopy npx @11ty/eleventy --quiet',
 				options: {
@@ -216,21 +209,6 @@ module.exports = function(grunt) {
 		clean: {
 			drafts: [ '_site/web/drafts/**' ],
 			compressed: [ '_site/**/*.zbr', '_site/**/*.zgz' ]
-		},
-		watch: {
-			assets: {
-				files: ['<%= config.cssSrc %>**/*', '<%= config.jsSrc %>**/*'],
-				tasks: ['assets', 'content']
-			},
-			content: {
-				files: [
-					'**/*.liquid',
-					'**/*.njk',
-					'**/*.html',
-					'**/*.md',
-					'!_site/**/*' ],
-				tasks: ['content']
-			}
 		}
 	});
 
@@ -240,11 +218,10 @@ module.exports = function(grunt) {
 	// Default task.
 	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'concat', 'terser', 'cssmin']);
 
-	grunt.registerTask('content', ['copy:includes', 'shell:eleventy']);
 	grunt.registerTask('content-production', ['copy:includes', 'shell:eleventyProduction']);
 
-	grunt.registerTask('default', ['clean', 'assets', 'content']);
-	grunt.registerTask('separate', ['clean', 'assets', 'copy:includes']);
+	// no eleventy (for use with `npx grunt && npm start`)
+	grunt.registerTask('default', ['clean', 'assets', 'copy:includes']);
 
 	// Upload to Production
 	grunt.registerTask('stage', ['clean', 'assets', 'content-production', 'clean:drafts', 'htmlmin', 'compress']);

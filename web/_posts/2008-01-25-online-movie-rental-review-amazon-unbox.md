@@ -3,7 +3,6 @@ title: Online Movie Rental Review &#8211; Amazon Unbox
 author: Zach Leatherman
 layout: post
 deprecated: true
-feedtrim: true
 ---
 
 Renting movies online. Steve Jobs was hilariously excited about his new Apple TV product and being able to rent movies online and stream them directly to your television. So, with all this movie-watching titillation, I decided to check out if the hubbub was actually worthy of my attention. Turns out, not so much.

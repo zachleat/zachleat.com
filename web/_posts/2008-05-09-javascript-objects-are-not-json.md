@@ -2,7 +2,6 @@
 title: Javascript Objects are NOT JSON
 author: Zach Leatherman
 layout: post
-feedtrim: true
 ---
 
 *The headline should more accurately read “Javascript Objects are not **necessarily** JSON.” But that waters it down a bit, don’t you think?*

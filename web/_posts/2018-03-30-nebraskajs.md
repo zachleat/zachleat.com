@@ -23,7 +23,7 @@ Some of the absolute highlights for me have been:
 * Our prestigious [Presenters Wall](https://nebraskajs.com/presenters/) where the number of borders around your photo represents the number of times you’ve presented at the meetup. If you hit a certain threshold where the CSS can’t handle any more borders you get the coveted yellow ring!
 * [Open Source Hack Night](https://nebraskajs.com/2014/open-source-hack-night/) when I helped get someone started on a PR to node.js core!
 * [Branching out to Lincoln](https://nebraskajs.com/2014/nebraskajs-lincoln/)
-* The after-meetup conversations that led to so many side projects. Both [Eleventy](https://www.11ty.io/) and [fontspeed](http://fontspeed.io/) were started after a conversation sparked at NebraskaJS.
+* The after-meetup conversations that led to so many side projects. Both [Eleventy](https://www.11ty.dev/) and [fontspeed](http://fontspeed.io/) were started after a conversation sparked at NebraskaJS.
 
 I am also super thankful to our rock-solid venue sponsor [Blue Cross Blue Shield](https://twitter.com/BCBSNebraska) and our unwavering food sponsor [Agape Red](https://twitter.com/agape_red). The meetup would not be possible without them.
 

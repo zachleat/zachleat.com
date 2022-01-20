@@ -7,7 +7,7 @@ note-tags:
   - Command Line
   - Twitter
 ---
-The [11ty.io web site](https://www.11ty.io/) uses avatar images for its Testimonial and Sites Using Eleventy features. I wrote a [script to automatically download those avatar images](https://github.com/11ty/11ty.io/blob/master/avatars.sh) based on usernames stored in data files in the 11ty.io repository.
+The [11ty.dev web site](https://www.11ty.dev/) uses avatar images for its Testimonial and Sites Using Eleventy features. I wrote a [script to automatically download those avatar images](https://github.com/11ty/11ty.dev/blob/master/avatars.sh) based on usernames stored in data files in the 11ty.dev repository.
 
 In that same vein, I created a simpler utility borne from that script. It will:
 

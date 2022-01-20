@@ -127,16 +127,26 @@ totalviewsArr.forEach(function(entry, j) {
 console.log( "> Deleting complete." );
 
 console.log( "> Editing post front matter with post ranks (avg per day)." );
-pageviewsArr.slice(0, 20).forEach(function(entry, j) {
+let counter = 0;
+pageviewsArr.forEach(function(entry) {
+	if(counter >= 20) {
+		return;
+	}
 	// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
 	var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
 	var data = frontmatter.data;
-	data.postRank = ( j + 1 );
+	if(data.tags && data.tags.includes("draft")) {
+		return;
+	}
+
+	data.postRank = ( counter + 1 );
 	if( !data.tags ) {
 		data.tags = [];
 	} else if( typeof data.tags === "string" ) {
 		data.tags = [ data.tags ];
 	}
+	counter++;
+
 	data.tags.push( 'popular-posts' );
 	data.tags = _uniq( data.tags );
 
@@ -149,14 +159,23 @@ pageviewsArr.slice(0, 20).forEach(function(entry, j) {
 });
 
 console.log( "> Editing post front matter with post ranks (total)." );
-totalviewsArr.slice(0, 20).forEach(function(entry, j) {
+counter = 0;
+totalviewsArr.forEach(function(entry) {
+	if(counter >= 20) {
+		return;
+	}
 	// TODO convert this to use jekyll datafiles instead? http://jekyllrb.com/docs/datafiles/
 	var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );
 	var data = frontmatter.data;
-	data.postRankTotalViews = ( j + 1 );
+	if(data.tags && data.tags.includes("draft")) {
+		return;
+	}
+	data.postRankTotalViews = ( counter + 1 );
 	if( !data.tags ) {
 		data.tags = [];
 	}
+	counter++;
+
 	data.tags.push( 'popular-posts-total' );
 	data.tags = _uniq( data.tags );
 	console.log( "Writing", entry.path );

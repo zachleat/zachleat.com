@@ -1,0 +1,323 @@
+---
+permalink: "web/dist/{{ pkg.version }}/opengraph.css"
+---
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+@font-face {
+  font-family: SFDisplayBlack;
+  src: url(/og/sources/sf-pro-display-black-latin.woff2) format("woff2");
+}
+
+:root {
+	--slide-border-width: 3px;
+}
+
+.slide {
+	min-height: 100%;
+	outline: none;
+	border: var(--slide-border-width) solid transparent;
+}
+.slide,
+.slide :link,
+.slide :visited {
+	color: #fff;
+}
+
+.slide:not(.slide-preview) {
+	font-size: 1.25em; /* 20px /16 */
+}
+.slide:not(.slide-preview):not(.slide-editor),
+.slide:not(.slide-preview):not(.slide-editor) code[class*="language-"],
+.slide:not(.slide-preview):not(.slide-editor) pre[class*="language-"] {
+	background-color: #000;
+}
+.slide-preview-vertical,
+.slide-preview-vertical-flip,
+.slide-preview-horizontal,
+.slide-preview-horizontal-flip {
+	display: flex;
+}
+.slide-preview-vertical {
+	flex-direction: column-reverse;
+}
+.slide-preview-vertical-flip {
+	flex-direction: column;
+}
+.slide-preview-vertical > pre,
+.slide-preview-vertical-flip > pre {
+	/* flex-grow: 1; */
+	max-height: 58vh;
+	overflow: auto;
+}
+.slide-preview-horizontal {
+	flex-direction: row-reverse;
+}
+.slide-preview-horizontal-flip {
+	flex-direction: row;
+}
+.slide-preview-horizontal .frame,
+.slide-preview-horizontal-flip .frame {
+	max-width: 60%;
+}
+.slide-preview-vertical .frame-resizer.frame-resizer,
+.slide-preview-vertical-flip .frame-resizer.frame-resizer {
+	flex-grow: 0;
+	width: 70%;
+	min-height: 30vh;
+	resize: both;
+}
+.slide-preview-fullscreen .frame-resizer.frame-resizer {
+	width: 90vw;
+}
+
+/* Ratios */
+.slide-preview-30-70 pre {
+	flex-basis: 30%;
+}
+.slide-preview-30-70 .frame {
+	max-width: 100%;
+}
+.slide-preview-40-60 pre {
+	flex-basis: 40%;
+}
+.slide-preview-50-50 pre {
+	flex-basis: 50%;
+}
+.slide-preview-60-40 pre {
+	flex-basis: 60%;
+}
+.slide-preview-70-30 pre {
+	flex-basis: 70%;
+}
+
+/* Preview window */
+.frame {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: stretch;
+	padding: 1em;
+}
+.frame-resizer-iframe {
+	flex-grow: 999;
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+/* Fake window */
+.window {
+	display: flex;
+	flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 40px 4px rgba(0, 0, 0, .4);
+	flex-grow: 999;
+}
+.window-hed {
+	display: flex;
+	background-color: #222;
+	gap: 6px;
+	padding: 8px;
+}
+.window-circle {
+	display: inline-block;
+	height: 14px;
+	min-width: 14px;
+	max-width: 14px;
+	border-radius: 14px;
+}
+.window-circle-red {
+	background-color: #FF5F56;
+}
+.window-circle-yellow {
+	background-color: #FFBD2E;
+}
+.window-circle-green {
+	background-color: #27C93F;
+}
+.window-spacer {
+	flex-grow: 999;
+}
+.window-title {
+	text-align: center;
+	font-size: 0.75em; /* 12px /16 */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: -4px 0 -6px;
+	text-decoration: none;
+	font-family: -apple-system, system-ui, sans-serif;
+	font-weight: 600;
+}
+.window-title.window-title.window-title,
+.window-title.window-title.window-title:visited {
+	color: #fff;
+}
+
+/* Main content */
+.main {
+	--main-bg-overlay: rgba(255,255,255,.15);
+	position: relative;
+  color: #fff;
+  height: 100%;
+  display: flex;
+	flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+	font-size: 2em;
+	padding-top: 1em;
+}
+.main > * {
+	z-index: 1;
+}
+.main:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: var(--og-bgimage, linear-gradient(238deg, #a9c7a0, #96b58d, #7aa16f, #466e3b, #496d41, #3d5a3d, #203b1d, #162a15));
+	background-size: 100% auto;
+	background-position: center;
+}
+.main:after {
+	content: "";
+	background-image: linear-gradient(to top, #ff00d5, var(--main-bg-overlay) 1%, var(--main-bg-overlay) 99%, #ff00d5 100%),
+		radial-gradient(ellipse at bottom left, #ff00d5, rgba(255,255,255,.15) 23%);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.main-bgimg {
+	/* --main-bg-overlay: rgba(0,0,0,.4); */
+	--main-bg-overlay: rgba(255,255,255,.3);
+}
+
+.main-top {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.main-hed {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+	line-height: 1.3;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+}
+.main-hed.main-hed {
+	margin: 0;
+	font-family: SFDisplayBlack, sans-serif;
+}
+.main-hed-sup {
+	line-height: 1.5;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 1.5rem;
+	vertical-align: top;
+	background-color: rgba(0,0,0,.3);
+	text-transform: none;
+	letter-spacing: 0;
+}
+@supports (box-decoration-break: clone) or (-webkit-box-decoration-break: clone) {
+	.main .speedlify-requests,
+	.main .speedlify-weight,
+	.main-box {
+		display: inline;
+		padding: 0 .2em;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		background-color: #000;
+	}
+	.main .speedlify-requests,
+	.main .speedlify-weight,
+	.main-box-nowrap {
+		white-space: nowrap;
+	}
+}
+.main-left {
+	position: absolute;
+	bottom: 0.625em; /* 20px /32 */ /* avatar-name must vertical align with date on right side */
+	left: 1em;
+	text-align: left;
+	display: flex;
+	align-items: center;
+}
+.main-left .main-avatar-name {
+	position: relative;
+	top: -12px;
+}
+.main-center {
+	position: absolute;
+	left: 50%;
+	bottom: 1em;
+	transform: translateX(-50%);
+}
+.main-right {
+	position: absolute;
+	font-size: 0.875em; /* 14px /16 */
+	bottom: 1em;
+	right: 1em;
+	text-align: right;
+}
+.main-right > * {
+	line-height: 1.5;
+}
+
+.main-pageweight {
+	display: inline;
+	margin-left: 1em;
+}
+.main-lighthouse {
+	display: inline-flex;
+}
+.main .speedlify-score {
+	border-width: 4px;
+	background-color: white;
+	box-shadow: 0 0 0 4px white;
+	font-weight: 700;
+	font-family: -apple-system, system-ui, sans-serif;
+	width: 64px; /* match the avatar */
+	height: 64px;
+	margin-top: -4px;
+}
+.main speedlify-score + .main-avatar .z-avatar {
+	box-shadow: 0 0 0 4px white;
+	margin-left: 12px;
+	margin-top: -1px;
+}
+.main-postnumber {
+	margin-right: 1em;
+}
+
+.slide-chromeless {
+	border: none;
+}
+.slide-chromeless .frame {
+	padding: 0;
+}
+.slide-chromeless .window {
+	box-shadow: none;
+}
+.slide-chromeless .window-hed {
+	display: none;
+}

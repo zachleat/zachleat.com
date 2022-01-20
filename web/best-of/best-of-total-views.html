@@ -3,8 +3,8 @@ title: Top 20 Popular Posts (sorted by Total Views)
 layout: default
 tmpl: list
 permalink: /web/best-of/total-views/
-dataUpdatedDate: 'July 19, 2021, 8:44 AM CDT'
-hidePopularInSidebar: true
+dataUpdatedDate: 'November 29, 2021, 9:26 AM CST'
+hidePostsInSidebar: true
 ---
 
 <div class="layout-list">
@@ -15,12 +15,12 @@ hidePopularInSidebar: true
 			<p>Last updated {{ dataUpdatedDate }}. Ordered by total pageviews. <a href="/web/best-of/">Sort instead by pageviews per day 🔥</a>. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically</a> from the Google Analytics API. I also keep a highlight reel of the <a href="/twitter/popular/">most popular tweets</a>.</p>
 		</div>
 
-		<ol class="posts posts-count posts-count-forward posts-showall">
+		<ol class="posts posts-showall posts-withimg">
 			{% assign year = "" %}
 			{% assign currentyear = "" %}
 			{% assign listItems = collections.popularPostsTotalRanked %}
 			{% for post in collections.popularPostsTotalRanked %}
-				{% include "post-list-entry.html", ignoreYear: "true", showRankTotalViews: "true", showDays: "true", ignorePopularity: true %}
+				{% include "post-list-entry.html", ignoreYear: "true", showRankTotalViews: "true", showDays: "true", ignorePopularity: true, previewImages: true %}
 			{% endfor %}
 		</ol>
 	</article>

@@ -4,7 +4,6 @@ author: Zach Leatherman
 layout: post
 tags:
   - project
-feedtrim: true
 ---
 
 Generally when approaching a complex problem involving web programming in JavaScript, the first question I ask myself is ‘What would Jesus do?’ As much as I am entertained by a mental picture of Mr. Jesus himself sitting on his [Jesux Distro][1] appending children (and parents) into his DOM, I am instead distracted by an intense “passionate” hatred for Mel Gibson swelling in my chest. It’s actually quite distracting to the problem I am having, but I calm myself by punching my 4 foot tall inflatable Mad Max and wonder how much time I waste doing this. I figure it happens about twice an hour. (Digression)

@@ -1,7 +1,6 @@
 ---
 title: A Frugal and Simple Guide to Putting Lights on your Bike
 layout: post
-feedtrim: true
 ---
 
 Last weekend I put up a tweet:

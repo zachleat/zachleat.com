@@ -7,9 +7,7 @@ Version Specific Article:
 tags:
   - highlight
   - research
-  - popular-posts
   - popular-posts-total
-postRank: 17
 postRankTotalViews: 3
 ---
 

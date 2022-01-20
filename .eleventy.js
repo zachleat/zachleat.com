@@ -1,4 +1,3 @@
-const fs = require("fs");
 const { DateTime } = require("luxon");
 const { URL } = require("url");
 const sanitizeHTML = require("sanitize-html")
@@ -15,8 +14,9 @@ const {encode} = require("html-entities");
 
 const getBaseUrl = require("./_includes/getBaseUrl");
 const pluginImage = require("./_includes/imagePlugin");
-const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
+const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
 
+const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
 
 function hasEleventyFeature(featureName) {
 	return process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf(featureName) > -1;
@@ -50,11 +50,13 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("resume/index.css")
 		.addPassthroughCopy("resume/resume.pdf")
 		.addPassthroughCopy("web/css/fonts")
+		.addPassthroughCopy("web/css/external")
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("web/dist")
 		.addPassthroughCopy("og/*.jpeg")
-		.addPassthroughCopy("og/*.png");
+		.addPassthroughCopy("og/*.png")
+		.addPassthroughCopy("og/sources/");
 
 	if(hasEleventyFeature("fullcopy")) {
 		eleventyConfig
@@ -75,6 +77,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("truncate", (str, len = 280) => { // tweet sized default
 		let suffix = str.length > len ? `… <span class="tag-inline">Truncated</span>` : "";
 		return str.substr(0, len) + suffix;
+	});
+
+	eleventyConfig.addFilter("selectRandomFromArray", (arr) => { // tweet sized default
+		let index = Math.floor(Math.random() * arr.length);
+		return arr[index];
 	});
 
 	eleventyConfig.addLiquidFilter("numberString", function(num) {
@@ -118,6 +125,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLiquidFilter("medialengthCleanup", str => {
 		let split = str.split(" ");
 		return `${split[0]}<span aria-hidden="true">m</span><span class="sr-only"> minutes</span>`;
+	});
+
+	eleventyConfig.addLiquidFilter("encodeUriComponent", str => {
+		return encodeURIComponent(str);
 	});
 
 	eleventyConfig.addLiquidFilter("htmlEntities", str => {
@@ -179,15 +190,58 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addLiquidFilter("getPostCountForYear", (posts, year) => {
 		return posts.filter(function(post) {
-			return !post.data.tags ||
-				post.data.tags.indexOf("deprecated") === -1 &&
-				!post.data.deprecated &&
-				!post.data.feedtrim &&
-				post.data.tags.indexOf("pending") === -1 &&
-				post.data.tags.indexOf("draft") === -1;
+			if(!post.data.tags) {
+				return true;
+			}
+			if(post.data.tags.includes("draft")) {
+				return false;
+			}
+			return true;
 		}).filter(function(post) {
 			return post.data.page.date.getFullYear() === parseInt(year, 10);
 		}).length;
+	});
+
+	//<img src="https://v1.sparkline.11ty.dev/400/100/1,4,10,3,2,40,5,6,20,40,5,1,10,100,5,90/red/" width="400" height="100">
+	eleventyConfig.addLiquidFilter("getYearlyPostCount", (posts, startYear = 2007) => {
+		let years = [];
+		for(let j = startYear; j <= (new Date()).getFullYear(); j++) {
+			let year = j;
+			let count = posts.filter(function(post) {
+				if(!post.data.tags) {
+					return true;
+				}
+				if(post.data.deprecated ||post.data.tags.includes("draft")) {
+					return false;
+				}
+				return true;
+			}).filter(function(post) {
+				return post.data.page.date.getFullYear() === parseInt(year, 10);
+			}).length;
+			years.push(count);
+		}
+		return years.join(",");
+	});
+
+	eleventyConfig.addLiquidFilter("getMonthlyPostCount", (posts, year) => {
+		let months = [];
+		for(let month = 0; month < 12; month++) {
+			let count = posts.filter(function(post) {
+				if(!post.data.tags) {
+					return true;
+				}
+				if(post.data.deprecated ||post.data.tags.includes("draft")) {
+					return false;
+				}
+				return true;
+			}).filter(function(post) {
+				let d = post.data.page.date;
+				return d.getFullYear() === parseInt(year, 10) && d.getMonth() === month;
+			}).length;
+
+			months.push(count);
+		}
+		return months.join(",");
 	});
 
 	eleventyConfig.addLiquidFilter("hostnameFromUrl", (url) => {
@@ -295,6 +349,14 @@ module.exports = function(eleventyConfig) {
 				if(!allowedTypes.includes(entry['wm-property'])) {
 					return false;
 				}
+				// block list
+				let blocked = [
+					"https://lzomedia.com/",
+					"https://sayed.cyou/"
+				];
+				if(blocked.filter(blockedUrl => `${entry.url}`.startsWith(blockedUrl)).length > 0) {
+					return false;
+				}
 				return getBaseUrl(entry['wm-target']) === url;
 			});
 	});
@@ -321,24 +383,19 @@ module.exports = function(eleventyConfig) {
 		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}${startTime ? `?start=${startTime}` : ''}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
 	});
 
-	eleventyConfig.addLiquidShortcode("ogImageSource", function(slug) {
-		let domain = "https://www.zachleat.com";
-		let jpegPath = `/og/${slug}.jpeg`;
-		let pngPath = `/og/${slug}.png`;
-
-		if(fs.existsSync(`.${pngPath}`)) {
-			return `${domain}${pngPath}`;
-		}
-		if(fs.existsSync(`.${jpegPath}`)) {
-			return `${domain}${jpegPath}`;
-		}
-		return `${domain}/og/default.jpeg`;
+	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url) {
+		return `<a href="${url}" class="opengraph-card">${screenshotImageHtmlFullUrl(url)}<span><em class="break" title="${url}">${url}</em></span></a>`;
 	});
 
 	/* COLLECTIONS */
 	function getPosts(collectionApi) {
 		return collectionApi.getFilteredByGlob("./web/_posts/*").reverse().filter(function(item) {
 			return !!item.data.permalink;
+		}).filter(function(item) {
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
+			}
+			return true;
 		});
 	}
 
@@ -349,10 +406,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addCollection("feedPosts", function(collection) {
 		return getPosts(collection).filter(function(item) {
 			return !item.data.tags ||
-				item.data.tags.indexOf("deprecated") === -1 &&
 				!item.data.deprecated &&
-				!item.data.feedtrim &&
-				item.data.tags.indexOf("pending") === -1 &&
 				item.data.tags.indexOf("draft") === -1;
 		});
 	});
@@ -389,6 +443,9 @@ module.exports = function(eleventyConfig) {
 		if(hasTag(collectionItem, "font-loading") || hasCategory(collectionItem, "font-loading")) {
 			categories.push("web-fonts");
 		}
+		if(hasTag(collectionItem, "project")) {
+			categories.push("project");
+		}
 		if(hasTag(collectionItem, "note")) {
 			categories.push("note");
 		}
@@ -396,20 +453,23 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("writing", function(collection) {
-		let posts = collection.getSortedByDate().reverse();
-		let items = [];
-		for( let item of posts ) {
-			if( isWriting(item) ) {
-				items.push( item );
+		return collection.getSortedByDate().reverse().filter(item => {
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
 			}
-		}
-		return items;
+
+			return isWriting(item);
+		});
 	});
 	eleventyConfig.addCollection("latestPosts", function(collection) {
 		let posts = collection.getSortedByDate().reverse();
 		let items = [];
 		for( let item of posts ) {
-			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") ) {
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				continue;
+			}
+
+			if( !!item.inputPath.match(/\/_posts\//)) {
 				items.push( item );
 				if( items.length >= 5 ) {
 					return items;
@@ -421,6 +481,10 @@ module.exports = function(eleventyConfig) {
 	// font-loading category mapped to collection
 	eleventyConfig.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
+			}
+
 			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 || hasTag(item, "font-loading");
 		}).reverse();
 	});
@@ -428,18 +492,32 @@ module.exports = function(eleventyConfig) {
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
+			}
+
 			return isSpeaking(item);
 		}).reverse();
 	});
 
 	eleventyConfig.addCollection("popularPostsRanked", function(collection) {
-		return collection.getFilteredByTag("popular-posts").sort(function(a, b) {
+		return collection.getFilteredByTag("popular-posts").filter(item => {
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
+			}
+			return true;
+		}).sort(function(a, b) {
 			return b.data.postRank - a.data.postRank;
 		}).reverse();
 	});
 
 	eleventyConfig.addCollection("popularPostsTotalRanked", function(collection) {
-		return collection.getFilteredByTag("popular-posts-total").sort(function(a, b) {
+		return collection.getFilteredByTag("popular-posts-total").filter(item => {
+			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
+			}
+			return true;
+		}).sort(function(a, b) {
 			return b.data.postRankTotalViews - a.data.postRankTotalViews;
 		}).reverse();
 	});
@@ -468,6 +546,18 @@ module.exports = function(eleventyConfig) {
 			return md.renderInline(content);
 		}
 		return md.render(content);
+	});
+
+	eleventyConfig.addLiquidFilter("includes", function(arr = [], value) {
+		return arr.includes(value);
+	});
+
+	eleventyConfig.addLiquidFilter("removeNewlines", function(str) {
+		return str.replace(/\n/g, "");
+	});
+
+	eleventyConfig.on("beforeWatch", () => {
+		console.log( "[zachleat.com] Building…" );
 	});
 
 	return {

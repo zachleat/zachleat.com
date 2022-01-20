@@ -1,7 +1,7 @@
 ---
 title: Let’s Learn Eleventy!—Learn With Jason
 eleventyComputed:
-  titleHtml: 'Let’s Learn {% imgavatar "eleven_ty", "z-avatar-eq" %}Eleventy! on {% imgavatar "LWJShow", "z-avatar-eq" %}Learn with Jason'
+  titleHtml: 'Let’s Learn Eleventy! on {% imgavatar "LWJShow", "z-avatar-eq" %}Learn with Jason'
 tags:
   - speaking
   - eleventy
@@ -9,6 +9,7 @@ tags:
 metadata:
   speaking:
     type: podcast
+  youtubeId: j8mJrhhdHWc
 event_date: Jan 7
 medialength: 92 min
 ---

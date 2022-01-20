@@ -5,7 +5,6 @@ layout: post
 Version Specific Article:
   - Specified Below
 deprecated: true
-feedtrim: true
 tags: []
 ---
 
