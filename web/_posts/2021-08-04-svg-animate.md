@@ -9,7 +9,7 @@ postRank: 8
 Had a use case come in where the design had an SVG animation that ran one interation and only one. It looked like this (some content has been removed):
 
 {% capture svgContents %}
-{% include posts/smil-animation.svg %}
+{% include "posts/smil-animation.svg" %}
 {% endcapture %}
 {{ svgContents | removeNewlines }}
 

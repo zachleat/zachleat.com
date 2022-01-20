@@ -41,7 +41,7 @@
 {% endif %}
 		<link rel="feed" href="https://www.zachleat.com/web/">
 
-		<style>{% include initial.min.css %}</style>
+		<style>{% include "initial.min.css" %}</style>
 
 		<!-- Preconnect to Eleventy services -->
 		<link href="https://v1.opengraph.11ty.dev" rel="preconnect" crossorigin>
@@ -57,7 +57,7 @@
 {%- for stylesheet in stylesheetsDist -%}
 		<link href="{{ distFolder }}{{ stylesheet }}" rel="stylesheet">
 {%- endfor %}
-		<script>{% include initial.min.js %}</script>
+		<script>{% include "initial.min.js" %}</script>
 		<script src="{{ distFolder }}async.min.js" async></script>
 
 		<meta property="eleventy:path" content="{{ page.inputPath }}">
