@@ -837,11 +837,9 @@ th.numeric {
 	box-shadow: 0 6px 26px 4px rgba(0, 0, 0, .4);
 }
 .project_img {
-	filter: grayscale(1);
 	transition: .3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 a[href]:hover .project_img {
-	filter: grayscale(0);
 	transform: scale(1.04);
 	box-shadow: 0 0 0 6px rgba(0, 0, 0, .8);
 }
