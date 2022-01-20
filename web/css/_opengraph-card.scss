@@ -10,6 +10,9 @@
   margin: .5em 0;
 	max-width: 22em;
 }
+.opengraph-card-block {
+	display: flex;
+}
 a[href].opengraph-card:focus,
 a[href].opengraph-card:hover {
 	border-color: #000;
