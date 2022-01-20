@@ -3,10 +3,8 @@ title: Recycling Open Graph Images for display on my Web Site
 tags:
   - project
   - eleventy
-  - popular-posts
 seo:
   openGraphBackgroundImage: /og/sources/canrainbow.jpg
-postRank: 18
 ---
 <div class="primarylink"><a href="https://github.com/11ty/api-opengraph-image"><code>11ty/api-opengraph-image</code> on GitHub</a></div>
 

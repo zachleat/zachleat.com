@@ -9,8 +9,6 @@ tags:
   - research
   - highlight
   - font-loading
-  - popular-posts-total
-postRankTotalViews: 14
 ---
 
 ***Summary**: After we’ve defeated the Flash of Invisible Text, we also want to decrease the amount of reflow a user sees when the font switches from fallback to `@font-face`. We already split our CSS into critical and deferred, why not fonts? Prioritize your fonts by **loading only your roman (or plain/normal) font first, which will cause the browser to use font synthesis to create faux-bold/italic versions automatically**. Next, trigger requests for the real bold and italic fonts. This will minimize the amount of reflow while the user is reading the content.*

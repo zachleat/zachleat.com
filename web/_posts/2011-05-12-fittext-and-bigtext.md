@@ -7,8 +7,6 @@ categories:
 tags:
   - highlight
   - font-loading
-  - popular-posts-total
-postRankTotalViews: 6
 ---
 
 Earlier this week, [@TrentWalton][1] [tweeted][2]:
