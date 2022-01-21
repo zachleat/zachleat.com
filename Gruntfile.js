@@ -212,9 +212,6 @@ module.exports = function(grunt) {
 		}
 	});
 
-	// bestof
-	grunt.task.loadTasks('grunt-tasks');
-
 	// Default task.
 	grunt.registerTask('assets', ['copy:css-to-sass', 'sass', 'concat', 'terser', 'cssmin']);
 
