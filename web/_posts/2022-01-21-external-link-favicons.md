@@ -24,24 +24,22 @@ a[href*="twitter.com"]:before {
 
 ## Demo
 
-<div class="demo">
-  <ul>
-    <li><a href="https://twitter.com/">twitter.com</a></li>
-    <li><a href="https://www.wikipedia.org/">wikipedia.org</a></li>
-    <li><a href="https://www.google.com/">google.com</a></li>
-    <li><a href="https://www.zachleat.com/">zachleat.com</a></li>
-    <li><a href="https://www.netlify.com/">netlify.com</a></li>
-    <li><a href="https://www.11ty.dev/">11ty.dev</a></li>
-  </ul>
-</div>
+<ul>
+  <li><a href="https://twitter.com/">twitter.com</a></li>
+  <li><a href="https://www.wikipedia.org/">wikipedia.org</a></li>
+  <li><a href="https://www.google.com/">google.com</a></li>
+  <li><a href="https://www.zachleat.com/">zachleat.com</a></li>
+  <li><a href="https://www.netlify.com/">netlify.com</a></li>
+  <li><a href="https://www.11ty.dev/">11ty.dev</a></li>
+</ul>
 
 <style>
-a[href*="twitter.com"]:before,
-.demo a[href*="wikipedia.org"]:before,
-.demo a[href*="zachleat.com"]:before,
-.demo a[href*="netlify.com"]:before,
-.demo a[href*="11ty.dev"]:before,
-.demo a[href*="google.com"]:before {
+.content-grid a[href*="twitter.com"]:before,
+.content-grid a[href*="wikipedia.org"]:before,
+.content-grid a[href*="zachleat.com"]:before,
+.content-grid a[href*="netlify.com"]:before,
+.content-grid a[href*="11ty.dev"]:before,
+.content-grid a[href*="google.com"]:before {
   content: "";
   display: inline-block;
   vertical-align: text-bottom;
@@ -50,22 +48,22 @@ a[href*="twitter.com"]:before,
   background-size: cover;
   margin: 0 .2em;
 }
-a[href*="twitter.com"]:before {
+.content-grid a[href*="twitter.com"]:before {
   background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.twitter.com%2F/");
 }
-.demo a[href*="wikipedia.org"]:before {
+.content-grid a[href*="wikipedia.org"]:before {
   background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.wikipedia.org%2F/");
 }
-.demo a[href*="google.com"]:before {
+.content-grid a[href*="google.com"]:before {
   background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.google.com%2F/");
 }
-.demo a[href*="zachleat.com"]:before {
+.content-grid a[href*="zachleat.com"]:before {
   background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2F/");
 }
-.demo a[href*="netlify.com"]:before {
+.content-grid a[href*="netlify.com"]:before {
   background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.netlify.com%2F/");
 }
-.demo a[href*="11ty.dev"]:before {
+.content-grid a[href*="11ty.dev"]:before {
   background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2F/");
 }
 </style>
