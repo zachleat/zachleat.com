@@ -59,9 +59,9 @@ function pad(num) {
   return `${num}`.padStart(2, '0');
 }
 function getTargetUrlCacheBuster(targetUrl = "") {
-  if(process.env.ELEVENTY_PRODUCTION && (targetUrl.startsWith("https://zachleat.com") || targetUrl.startsWith("https://www.zachleat.com"))) {
-    return "?cb" + ((new Date()).getDate() % 7);
-  }
+  // if(process.env.ELEVENTY_PRODUCTION && (targetUrl.startsWith("https://zachleat.com") || targetUrl.startsWith("https://www.zachleat.com"))) {
+  //   return "?cb" + ((new Date()).getDate() % 7);
+  // }
   return "";
 }
 function getServiceCacheBuster() {
