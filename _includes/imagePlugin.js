@@ -60,7 +60,7 @@ function pad(num) {
 }
 function getTargetUrlCacheBuster(targetUrl = "") {
   if(process.env.ELEVENTY_PRODUCTION && (targetUrl.startsWith("https://zachleat.com") || targetUrl.startsWith("https://www.zachleat.com"))) {
-    return "?cb" + (d.getDate() % 7);
+    return "?cb" + ((new Date()).getDate() % 7);
   }
   return "";
 }
