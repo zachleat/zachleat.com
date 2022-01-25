@@ -7,7 +7,7 @@ After some discussion with [{% indieAvatar "https://whitep4nth3r.com/" %}Salma](
 - `http://zachleat.com/resource`
 - `http://zachleat.com/resource/`
 
-I did what any curious but self-doubting person might do in this situation. I [posted a Twitter poll](https://twitter.com/chriscoyier/status/1485079001689255936). The results surprised me!
+I did what any curious but self-doubting person might do in this situation. I [posted a Twitter poll](https://twitter.com/zachleat/status/1485010201937944578). The results surprised me!
 
 But before we go much further, let’s go over the problems we’re trying to solve:
 
