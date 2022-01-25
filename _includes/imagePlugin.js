@@ -58,27 +58,33 @@ function backgroundImageFilter(src, width, options = {}) {
 function pad(num) {
   return `${num}`.padStart(2, '0');
 }
-function getCacheBuster() {
+function getTargetUrlCacheBuster(targetUrl = "") {
+  if(process.env.ELEVENTY_PRODUCTION && (targetUrl.startsWith("https://zachleat.com") || targetUrl.startsWith("https://www.zachleat.com"))) {
+    return "?cb" + (d.getDate() % 7);
+  }
+  return "";
+}
+function getServiceCacheBuster() {
   if(process.env.ELEVENTY_PRODUCTION) {
     let d = new Date();
     // Daily
     // return `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
 
     // Weekly
-    return `_${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
+    return `__${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
   }
 
   // return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
   return "_localdev";
 }
+
 function getFullUrlFromPath(path) {
   let domain = "https://www.zachleat.com";
   return domain + path;
 }
 
 function opengraphImageHtml(targetUrl) {
-  let urlCacheBust = "?cb1";
-  let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl + urlCacheBust)}/`;
+  let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl + getTargetUrlCacheBuster())}/`;
 
   let options = {
     formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
@@ -93,7 +99,7 @@ function opengraphImageHtml(targetUrl) {
         size = "auto";
       }
 
-      return `${fullUrl}${size}/${format}/${getCacheBuster()}/`;
+      return `${fullUrl}${size}/${format}/${getServiceCacheBuster()}/`;
     }
   };
 
@@ -108,8 +114,7 @@ function opengraphImageHtml(targetUrl) {
 }
 
 function getScreenshotUrl(fullUrl) {
-  let urlCacheBust = "?cb1";
-  return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl + urlCacheBust)}/opengraph/${getCacheBuster()}/`;
+  return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl + getTargetUrlCacheBuster(fullUrl))}/opengraph/${getServiceCacheBuster()}/`;
 }
 function getScreenshotUrlFromPath(path) {
   return getScreenshotUrl(getFullUrlFromPath(path));
