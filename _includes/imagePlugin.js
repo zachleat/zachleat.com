@@ -77,7 +77,7 @@ function getFullUrlFromPath(path) {
 }
 
 function opengraphImageHtml(targetUrl) {
-  let urlCacheBust = "";
+  let urlCacheBust = "?cb1";
   let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl + urlCacheBust)}/`;
 
   let options = {
