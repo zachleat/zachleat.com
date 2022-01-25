@@ -36,17 +36,18 @@ _Disclosure: I am both an employee of Netlify and the creator/maintainer of Elev
 
 Gatsby, Docusaurus, NuxtJS, and Eleventy all use folder generated `resource/index.html` files to offer an easy and portable way to use trailing slashes by default.
 
+The default filename `index.html` is a convention that’s pretty safely cemented in web history at this point. It represents the file shown when a file name is not specified in the URL. _Citations from [Apache](https://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex), [NGINX](https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/), [LiteSpeed](https://docs.litespeedtech.com/cp/cpanel/switch-apache/#what-changes-do-i-need-to-make-to-my-apache-configuration-to-make-it-work), [Microsoft IIS](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/defaultdocument/)._
+
 Here’s what happens when a web browser makes a request to a URL representing this content:
 
 - `/resource`
   - ✅ GitHub Pages, Netlify, and Cloudflare Pages redirect to the trailing slash `/resource/` as expected.
-  - 🟡 Vercel, Render, and Azure Static Web Apps: slashless `/resource` returns content but without redirects, resulting in multiple endpoints for the same content.
+  - 🟡 **Warning:** Vercel, Render, and Azure Static Web Apps: slashless `/resource` returns content but without redirects, resulting in multiple endpoints for the same content.
 - `/resource/`
   - ✅ All hosts agree that `/resource/` should return content from `resource/index.html`
-
-All that said, `index.html` is a convention that’s pretty safely cemented in web history at this point to represent the default file name to be shown when a file name is not specified in the URL.
-
-_Citations provided from [Apache](https://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex), [NGINX](https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/), [LiteSpeed](https://docs.litespeedtech.com/cp/cpanel/switch-apache/#what-changes-do-i-need-to-make-to-my-apache-configuration-to-make-it-work), [Microsoft IIS](https://docs.microsoft.com/en-us/iis/configuration/system.webserver/defaultdocument/)._
+- 💔 **Warning:** If you’re using relative resource URLs, the assets may be missing on Vercel, Render, and Azure Static Web Apps (depending on which duplicated endpoint you’ve visited).
+  - `<img src="image.avif">` on `/resource/` resolves to `/resource/image.avif`
+  - `<img src="image.avif">` on `/resource` resolves to `/image.avif`
 
 ### Writing `resource.html`
 
@@ -56,10 +57,10 @@ Here’s what happens when a web browser makes a request to a URL representing t
 
 - `/resource`
   - ✅ Almost everyone agrees that `/resource` should return content from `resource.html`
-  - 🆘 Confusingly Vercel is the only host tested that returns a HTTP 404 error for `/resource`.
+  - 🆘 **Warning:** Confusingly Vercel is the only host tested that returns a HTTP 404 error for `/resource`.
 - `/resource/`
   - ✅ Netlify and Cloudflare Pages redirect to the slashless `/resource`.
-  - 🆘-ish GitHub Pages, Vercel, and Azure Static Web Apps all return a HTTP 404 error. I’ll admit this one is a little more contentious. I won’t take a hardline here—I can see the reasoning behind it. But I do consider it better to redirect than 404.
+  - 🆘 **Warning:** GitHub Pages, Vercel, and Azure Static Web Apps all return a HTTP 404 error. I’ll admit this one is a little more contentious. I won’t take a hardline here—I can see the reasoning behind it. But I do consider it better to redirect than 404.
 
 ### ⚠️ Writing Both `resource.html` and `resource/index.html`
 
@@ -69,7 +70,7 @@ There exists an even edgier edge case here. What happens when `resource.html` an
   - ✅ Everyone agrees that `/resource` should return content from `resource.html`
 - `/resource/`
   - ✅ Almost everyone agrees that `/resource/` should return content from `resource/index.html`
-  - 🆘-ish Netlify redirects to `/resource` instead.
+  - 🆘 **Warning:** Netlify redirects to `/resource` instead.
 
 More seriously, I think this case actually represents a larger URL _usability problem_ for the content. In this case, though pedantically and technically correct, `/resource` and `/resource/` confusingly resolve to different pieces of content. I think this should be avoided if at all possible and a **tooling error** is warranted. It could be argued that Netlify takes an opinionated stance here to attempt to resolve the ambiguity at a platform level.
 
