@@ -1,22 +1,24 @@
 const { DateTime } = require("luxon");
 const { URL } = require("url");
-const sanitizeHTML = require("sanitize-html")
-const numeral = require("numeral")
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const siteData = require("./_data/site.json");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const Natural = require('natural');
-const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
+const sanitizeHTML = require("sanitize-html");
+const numeral = require("numeral");
 const randomCase = require('random-case');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const {encode} = require("html-entities");
+const Natural = require('natural');
 
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
+
+const siteData = require("./_data/site.json");
 const getBaseUrl = require("./_includes/getBaseUrl");
 const pluginImage = require("./_includes/imagePlugin");
 const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
-
 const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
+
+const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
 
 function hasEleventyFeature(featureName) {
 	return process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf(featureName) > -1;
@@ -41,6 +43,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
+	eleventyConfig.addPlugin(EleventyRenderPlugin);
 
 	/* COPY */
 	eleventyConfig
@@ -370,7 +373,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidFilter("getSentimentValue", function(content) {
-		if( content ) {
+		if( process.env.ELEVENTY_PRODUCTION && content ) {
 			const tokenizer = new Natural.WordTokenizer();
 			return analyze.getSentiment(tokenizer.tokenize(content));
 		}

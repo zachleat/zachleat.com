@@ -5,7 +5,7 @@
 	padding: .5em;
 	margin-top: 1em;
 	border-radius: 5px;
-	box-shadow: 0 0 0 2px #ccc;
+	box-shadow: 0 0 0 2px var(--callout-color, #ccc);
 }
 .callout h3 {
 	display: inline;
@@ -15,10 +15,22 @@
 .callout h3:after {
 	content: ':';
 }
+.callout-hed {
+	@include webfontBold;
+	text-transform: uppercase;
+	margin-bottom: .5em;
+}
 .callout p {
 	@include webfontItalic;
 	margin: 0;
 }
 .callout-warning {
 	background-color: #ffc;
+}
+.callout--11ty {
+	--callout-color: #000;
+}
+.callout--sm {
+	font-size: 0.9375em; /* 15px /16 */
+	line-height: 1.6;
 }
