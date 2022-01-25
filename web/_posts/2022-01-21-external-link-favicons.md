@@ -49,7 +49,7 @@ a[href^="https://twitter.com"]:before {
   margin: 0 .2em;
 }
 .content-grid a[href^="https://twitter.com"]:before {
-  background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Ftwitter.com%2F/");
+  background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.twitter.com%2F/");
 }
 .content-grid a[href^="https://www.wikipedia.org"]:before {
   background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.wikipedia.org%2F/");
