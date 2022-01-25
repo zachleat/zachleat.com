@@ -1,5 +1,8 @@
 ---
-title: "Trailing Slashes on URLs: Contentious or Settled?"
+title: 'Trailing Slashes on URLs: Contentious or Settled?'
+postRank: 1
+tags:
+  - popular-posts
 ---
 
 After some discussion with [{% indieAvatar "https://whitep4nth3r.com/" %}Salma](https://whitep4nth3r.com/) last week, I decided it was worthwhile to do a deep dive on Trailing Slashes in URLs. More specifically, which of these should I be using?

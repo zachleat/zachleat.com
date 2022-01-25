@@ -5,7 +5,7 @@ seo:
   openGraphSkipPageBackground: true
 tags:
   - popular-posts
-postRank: 2
+postRank: 4
 ---
 A few very interesting discussions on Twitter have led me to understand that some folks are talking about Lighthouse scores in a way that is—in my opinion—not as _forthright_ as it could be (intentionally or not). Let’s level set a bit and talk a bit about the different flavors of <em>wiggle room</em>:
 

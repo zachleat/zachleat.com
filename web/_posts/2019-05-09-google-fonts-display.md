@@ -4,7 +4,7 @@ tags:
   - font-loading
   - popular-posts
   - popular-posts-total
-postRank: 5
+postRank: 7
 postRankTotalViews: 5
 ---
 <p class="sub"><em>May 15, 2019 renamed URL parameter to <code>display</code>. Thank you <a href="https://mathiasbynens.be/">Mathias</a>!</em></p>
