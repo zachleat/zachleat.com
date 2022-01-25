@@ -84,7 +84,7 @@ function getFullUrlFromPath(path) {
 }
 
 function opengraphImageHtml(targetUrl) {
-  let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl + getTargetUrlCacheBuster())}/`;
+  let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl + getTargetUrlCacheBuster(targetUrl))}/`;
 
   let options = {
     formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
