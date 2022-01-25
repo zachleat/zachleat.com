@@ -65,7 +65,7 @@ function getCacheBuster() {
     // return `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
 
     // Weekly
-    return `__${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
+    return `_${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
   }
 
   // return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
@@ -108,7 +108,8 @@ function opengraphImageHtml(targetUrl) {
 }
 
 function getScreenshotUrl(fullUrl) {
-  return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getCacheBuster()}/`;
+  let urlCacheBust = "?cb1";
+  return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl + urlCacheBust)}/opengraph/${getCacheBuster()}/`;
 }
 function getScreenshotUrlFromPath(path) {
   return getScreenshotUrl(getFullUrlFromPath(path));
