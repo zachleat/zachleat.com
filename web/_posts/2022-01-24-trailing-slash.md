@@ -30,7 +30,7 @@ I think the leaky part of the poll in question is that there are a bunch of diff
 
 _Disclosure: I am both an employee of Netlify and the creator/maintainer of Eleventy._
 
-[{% indieAvatar "https://sebastienlorber.com/" %}Sebastien Lorber](https://sebastienlorber.com/) has put together an [incredible repository of research results](https://github.com/slorber/trailing-slash-guide) showing how this works on a variety of popular hosts and static site generators. I’ll reference this data throughout this post.
+[{% indieAvatar "https://sebastienlorber.com/" %}Sebastien Lorber](https://sebastienlorber.com/) has put together an [incredible repository of research results](https://github.com/slorber/trailing-slash-guide) showing how this works on a variety of popular hosts and static site generators. I’ll reference this data throughout this post. Sebastien also included results for a variety of different configuration options on those different platforms. I used platform-default behavior for this post.
 
 ### Writing `resource/index.html`
 
