@@ -8,7 +8,7 @@ enableWebmentions: true
 <div class="layout-list">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
-		<filter-container data-oninit>
+		<filter-container oninit>
 			<div class="flex">
 				<div class="flex-grow">
 					<a href="/web/best-of/">View Popular Posts 🔥</a>
@@ -17,7 +17,7 @@ enableWebmentions: true
 					<span data-filter-results="post/posts" aria-live="polite">{{ collections.posts | size }} posts</span>&#160;
 					<label>
 						<span class="sr-only">Filter</span>
-						<select data-filter-bind="category" data-filter-delimiter=",">
+						<select data-filter-key="category">
 							<option value="">Show all posts</option>
 							<option value="writing">Show only Writing</option>
 							<option value="speaking">Show only Speaking</option>
