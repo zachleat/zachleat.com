@@ -338,8 +338,8 @@ module.exports = function(eleventyConfig) {
 		if( !allowedTypes ) {
 			// all types
 			allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of', 'bookmark-of'];
-		} else if( typeof allowedTypes === "string" ) {
-			allowedTypes = [ allowedTypes ];
+		} else {
+			allowedTypes = allowedTypes.split(",");
 		}
 
 		if(!url || !webmentions.mentions || !webmentions.mentions[url]) {

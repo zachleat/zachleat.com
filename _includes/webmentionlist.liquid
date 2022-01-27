@@ -1,5 +1,6 @@
 <div class="webmentions content-grid-sibling" id="webmentions">
-  {%- assign reposts = webmentions | webmentionsForUrl: absoluteUrl, 'repost-of' -%}
+  {% comment %}Note thie combines both repost and mention, similar to how Twitter now combines retweet and quote tweet{% endcomment %}
+  {%- assign reposts = webmentions | webmentionsForUrl: absoluteUrl, "repost-of,mention-of" -%}
   {%- assign repostsSize = reposts | size -%}
   {%- assign likes = webmentions | webmentionsForUrl: absoluteUrl, 'like-of' -%}
   {%- assign likesSize = likes | size -%}
@@ -66,23 +67,6 @@
     </ol>
   </details>
   {% endif %}
-
-  {%- assign mentions = webmentions | webmentionsForUrl: absoluteUrl, 'mention-of' -%}
-  {%- assign mentionsSize = mentions | size -%}
-  <details class="{% if mentionsSize == 0 %}static-comments-empty{% endif %}">
-    {% if mentionsSize > 0 -%}
-    <summary class="hed-h3">{{ mentionsSize }} Mention{% if mentionsSize != 1 %}s{% endif %}</summary>
-    {%- else -%}
-    <summary class="sr-only">Webmentions</summary>
-    {%- endif %}
-    <ol class="static-comments static-comments-webmentions favicon-optin">
-      {% for webmention in mentions %}
-        {% include "webmention" %}
-      {% endfor %}
-    </ol>
-  </details>
-
-
 
   <form action="https://webmention.io/www.zachleat.com/webmention" method="post" class="form-webmention">
     <label for="form-webmention-source">Mention this post from your site:</label>
