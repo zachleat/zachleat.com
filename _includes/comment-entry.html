@@ -3,7 +3,7 @@
 	<div class="static-comments-hed">
 		<img src="{{ comment.avatar }}" class="static-comments-img" width="48" height="48">
 		<h3 class="static-comments-title cased">{{ comment.author }} <span class="tag-inline" title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">Disqus</span></h3>
-		<em class="static-comments-date"><a href="#comment-{{ comment.postId }}">{{ comment.date | readableDateFromISO }}</a></em>
+		<em class="static-comments-date"><a href="#comment-{{ comment.postId }}">{{ comment.date | readableDateFromISO: "dd LLL yyyy" }}</a></em>
 	</div>
 	<div class="static-comments-msg{% if comment.message.length > 5000 %} static-comments-msg-long{% endif %}">{{ comment.message | sanitizeHTML | randomCase: sentiment }}</div>
 	<ol>

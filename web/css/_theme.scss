@@ -1672,16 +1672,16 @@ a[href].favicon:before,
 .favicon-optin a[href^="https://twitter.com"]:before,
 .favicon-optin a[href^="https://github.com"]:before {
 	content: "";
-  display: inline-block;
-  vertical-align: text-bottom;
-  width: 1em;
-  height: 1em;
-  margin: 0 .2em;
-  background-size: contain;
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 1em;
+	height: 1em;
+	margin: 0 .2em;
+	background-size: contain;
 }
 .favicon-optin a[href^="https://twitter.com"]:before {
-  background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.twitter.com%2F/");
+	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.twitter.com%2F/");
 }
 .favicon-optin a[href^="https://github.com"]:before {
-  background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fgithub.com%2F/");
+	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fgithub.com%2F/");
 }

@@ -188,7 +188,6 @@ module.exports = function(eleventyConfig) {
 		if( url.indexOf("https://twitter.com/") > -1 ) {
 			return "@" + url.replace("https://twitter.com/", "");
 		}
-		return url;
 	});
 
 	eleventyConfig.addLiquidFilter("getPostCountForYear", (posts, year) => {
@@ -355,7 +354,8 @@ module.exports = function(eleventyConfig) {
 				// block list
 				let blocked = [
 					"https://lzomedia.com/",
-					"https://sayed.cyou/"
+					"https://sayed.cyou/",
+					"https://h4host.com/",
 				];
 				if(blocked.filter(blockedUrl => `${entry.url}`.startsWith(blockedUrl)).length > 0) {
 					return false;

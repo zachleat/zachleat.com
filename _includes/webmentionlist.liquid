@@ -38,7 +38,7 @@
   {% if bookmarksSize > 0 %}
   <details>
     <summary class="hed-h3">{{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}</summary>
-    <ol class="static-comments static-comments-webmentions">
+    <ol class="static-comments static-comments-webmentions favicon-optin">
       {% for webmention in bookmarks %}
         {% include "webmention" %}
       {% endfor %}
@@ -53,13 +53,13 @@
   {% if repliesSize > 0 %}
   <details id="comments">
     <summary class="hed-h3">{{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}</summary>
-    <ol class="static-comments static-comments-webmentions">
+    <ol class="static-comments static-comments-webmentions favicon-optin">
       {% for webmention in replies %}
         {% include "webmention" %}
       {% endfor %}
     </ol>
 
-    <ol class="static-comments">
+    <ol class="static-comments favicon-optin">
     {% for comment in disqus.comments %}
       {% include "comment-entry.html" %}
     {% endfor %}
@@ -75,7 +75,7 @@
     {%- else -%}
     <summary class="sr-only">Webmentions</summary>
     {%- endif %}
-    <ol class="static-comments static-comments-webmentions">
+    <ol class="static-comments static-comments-webmentions favicon-optin">
       {% for webmention in mentions %}
         {% include "webmention" %}
       {% endfor %}

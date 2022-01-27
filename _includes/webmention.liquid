@@ -3,11 +3,14 @@
   <div class="static-comments-hed">
     {% if webmention.author and webmention.author.photo != "" -%}
       <img class="static-comments-img u-photo" src="{{ webmention.author.photo | eleventyImageService }}" alt="{{ webmention.author.name | htmlEntities }}" width="48" height="48" loading="lazy" decoding="async">
+    {%- elsif webmention.url -%}
+      {% indieAvatar webmention.url %}
     {%- else -%}
       <img class="static-comments-img" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="Default avatar image" width="48" height="48" loading="lazy" decoding="async">
     {%- endif -%}
 
-    <h3 class="static-comments-title p-name cased" title="{% if webmention.author.name != "" %}{{ webmention.author.name | htmlEntities }}{% elsif webmention.url %}{{ webmention.url | hostnameFromUrl }}{% else %}Anonymous{% endif %} {% if webmention.author.url != "" %}{{ webmention.author.url | twitterUsernameFromUrl }}{% endif %}">{% if webmention.author.name != "" %}{{ webmention.author.name | htmlEntities }}{% elsif webmention.url %}<em>{{ webmention.url | hostnameFromUrl }}</em>{% else %}Anonymous{% endif %} {% if webmention.author.url != "" %}<span class="static-comments-title-twitter">{{ webmention.author.url | twitterUsernameFromUrl }}</span>{% endif %} <a href="#webmention-{{ webmention['wm-id'] }}" class="static-comments-selflink exempt">#</a></h3>
+    {%- assign twitterUsername =  webmention.author.url | twitterUsernameFromUrl %}
+    <h3 class="static-comments-title p-name cased">{% if twitterUsername %}<em>{{ twitterUsername }}</em>{% elsif webmention.author.name != "" %}{{ webmention.author.name | htmlEntities }}{% elsif webmention.url %}<em>{{ webmention.url | hostnameFromUrl }}</em>{% else %}Anonymous{% endif %}<!-- <a href="#webmention-{{ webmention['wm-id'] }}" class="static-comments-selflink exempt">🔗</a>--></h3>
 
     {% if showType %}
     {% if webmention['wm-property'] == "repost-of" %} <span class="static-comments-tag tag-inline">Retweet</span>{% endif %}
@@ -19,14 +22,14 @@
     {% if webmention.published %}
       <em class="static-comments-date">
         {%- if webmention.url != "" %}<a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">{% endif -%}
-        <time class="dt-published" datetime="{{ webmention.published }}">{{ webmention.published | readableDateFromISO: "h:mma'<br>&#160;'dd LLL yyyy" }}</time>
+        <time class="dt-published" datetime="{{ webmention.published }}">{{ webmention.published | readableDateFromISO: "dd LLL yyyy" }}</time>
         {%- if webmention.url != "" %}</a>{% endif -%}
       </em>
     {% endif %}
   </div>
 
   {% if webmention['wm-property'] == "repost-of" or webmention['wm-property'] == "like-of" %}
-  {% else %}
+  {% elsif webmention.content.text.length <= 5000 %}
   <div class="static-comments-msg p-content{% if webmention.content.text.length > 5000 %} static-comments-msg-long{% endif %}"><p>
     {%- if webmention.published %}{% else if webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>

@@ -126,6 +126,9 @@ module.exports = async function() {
     }
   }
 
+  // IF YOU’RE WANTING TO FILTER A HOST OUT OF BEING LISTED IN WEBMENTIONS
+  // DO THIS IN .eleventy.js -> webmentionsForUrl filter
+
   console.log(`[zachleat.com] Loaded ${cache.count} webmentions from cache.`);
   return cache;
 }

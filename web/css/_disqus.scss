@@ -91,7 +91,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	margin-bottom: 0;
 }
 .static-comments-date {
-	min-width: 7em;
+	min-width: 6em;
 	font-size: 85%;
 	text-align: right;
 	line-height: 1.5;
@@ -101,7 +101,8 @@ details.static-comments-empty > summary::-webkit-details-marker {
 }
 .static-comments-selflink {
 	font-size: 80%;
-	margin-left: 8px;
+	margin-left: 2px;
+	margin-right: 8px;
 }
 @media (min-width: 28.125em) { /* 450px */
 	.static-comments-hed {
