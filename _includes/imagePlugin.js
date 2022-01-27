@@ -145,6 +145,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
   // eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
+  /* Hosted image service to optimize webmention photos */
+  eleventyConfig.addLiquidFilter("eleventyImageService", (url) => {
+    return `https://v1.image.11ty.dev/${encodeURIComponent(url)}/jpeg/72/`;
+  });
+
   eleventyConfig.addLiquidShortcode("opengraphImageHtmlFullUrl", opengraphImageHtml);
 
   eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url}) {
