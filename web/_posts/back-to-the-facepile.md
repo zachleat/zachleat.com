@@ -1,5 +1,8 @@
 ---
-title: Back to the Facepile, Featherweight Edition
+title: 'Back to the Facepile, Featherweight Edition'
+postRank: 2
+tags:
+  - popular-posts
 ---
 A short three years ago, I wrote about [The Crushing Weight of the Facepile](/web/facepile/): how the image weight of the webmention avatar images were proving to be prohibitvely large.
 
