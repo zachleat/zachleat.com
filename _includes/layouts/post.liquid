@@ -36,7 +36,7 @@ tmpl: page
 			{%- else %}
 			{%- unless ignoreExternalLinkInLayoutFile %}
 			<p>
-				<em>Originally posted at: <a href="{{ external_url }}" class="opengraph-card opengraph-card-block">{% screenshotImageHtmlFullUrl external_url %}<span>{{ external_url }}</span></a></em>
+				<em>Originally posted at: <a href="{{ external_url }}" class="opengraph-card favicon-optout opengraph-card-block">{% screenshotImageHtmlFullUrl external_url %}<span>{{ external_url }}</span></a></em>
 			</p>
 			{%- endunless %}
 			{%- endif %}
