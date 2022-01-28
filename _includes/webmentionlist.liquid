@@ -26,7 +26,7 @@
       {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {%- endif -%}
-      <img {% if webmention.author.photo != "" %}src="{{ webmention.author.photo | eleventyImageService }}"{% else %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}"{% endif %} alt="{{ webmention.author.name | htmlEntities }}" class="webmentions__face" width="48" height="48" loading="lazy" decoding="async"/>
+      {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
       {%- if webmention.url != "" -%}
       </a>
       {%- endif -%}
@@ -36,15 +36,20 @@
 
   {%- assign bookmarks = webmentions | webmentionsForUrl: absoluteUrl, 'bookmark-of' -%}
   {%- assign bookmarksSize = bookmarks | size -%}
+
   {% if bookmarksSize > 0 %}
-  <details>
-    <summary class="hed-h3">{{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}</summary>
-    <ol class="static-comments static-comments-webmentions favicon-optin">
-      {% for webmention in bookmarks %}
-        {% include "webmention" %}
-      {% endfor %}
-    </ol>
-  </details>
+  <div class="webmentions__facepile">
+    <h3{% if bookmarksSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}</h3>
+    {%- for webmention in bookmarks -%}
+      {%- if webmention.url != "" -%}
+      <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+      {%- endif -%}
+      {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
+      {%- if webmention.url != "" -%}
+      </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
   {% endif %}
 
   {%- assign replies = webmentions | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
@@ -53,7 +58,7 @@
   {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}
   {% if repliesSize > 0 %}
   <details id="comments">
-    <summary class="hed-h3">{{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}</summary>
+    <summary class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != "1" %}s{% endif %}</summary>
     <ol class="static-comments static-comments-webmentions favicon-optin">
       {% for webmention in replies %}
         {% include "webmention" %}
