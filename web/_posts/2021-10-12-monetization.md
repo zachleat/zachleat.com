@@ -6,6 +6,8 @@ seo:
   openGraphBackgroundImage: /og/sources/deposit-boxes.jpg
 postRank: 18
 ---
+_Updated on January 28, 2022 with new information for Svelte and Astro._
+
 Three years into working on Eleventy, I continue to be blown away by [the adoption and community support](https://www.11ty.dev/blog/jamstack-survey-2021/) of folks contributing to the underdog.
 
 It has me thinking about sustainability models for this style of web framework—[what are other folks doing to fund development](https://twitter.com/zachleat/status/1447940347384971275)? Recent news would suggest that more and more folks are going the route of taking investment. It has me considering the hidden costs of such routes.
@@ -30,7 +32,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
     </tr>
     <tr>
       <td>Astro</td>
-      <td>(as Skypack CDN)</td>
+      <td><a href="https://astro.build/blog/the-astro-technology-company/">$7M</a><br><a href="#subnote1" id="link-subnote-1">[Note 1]</a></td>
       <td></td>
       <td><a href="https://opencollective.com/astrodotbuild">Open Collective</a></td>
     </tr>
@@ -96,7 +98,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
     </tr>
     <tr>
       <td>Svelte</td>
-      <td></td>
+      <td><a href="#subnote2" id="link-subnote-2">[Note 2]</a></td>
       <td></td>
       <td><a href="https://opencollective.com/svelte">Open Collective</a></td>
     </tr>
@@ -114,6 +116,11 @@ Nonetheless, I thought the best place to start would be to compile the data.
     </tr>
   </tbody>
 </table>
+
+<ol class="notes">
+  <li class="notes_note"><a id="subnote-1" href="#link-subnote-1" class="notes_linkback">Jump to the reference.</a> Unknown amount previously raised as Skypack CDN.</li>
+  <li class="notes_note"><a id="subnote-2" href="#link-subnote-2" class="notes_linkback">Jump to the reference.</a> <a href="https://vercel.com/blog/vercel-welcomes-rich-harris-creator-of-svelte">Rich Harris is full time sponsored by Vercel</a>.</li>
+</ol>
 
 _This list was loosely compliled from the [Jamstack Community Survey 2021](https://jamstack.org/survey/2021/#choices-frameworks)._
 
