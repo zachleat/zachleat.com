@@ -1,4 +1,2 @@
-cd ../zachleat-popular
-npm run default
-cd ../zachleat.com
+node bestof-get-from-google-analytics.js
 node bestof.js

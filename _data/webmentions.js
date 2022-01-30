@@ -5,7 +5,7 @@ const uniqBy = require('lodash/uniqBy');
 const domain = require("./site.json").domain;
 const getBaseUrl = require("../_includes/getBaseUrl")
 // Load .env variables with dotenv
-require('dotenv').config();
+require('dotenv').config({ multiline: true });
 
 // Configuration Parameters
 const CACHE_DIR = '_cache';

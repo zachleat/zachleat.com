@@ -11,9 +11,11 @@ Prerequisites: Node 12+
 
 To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 
-## Deploy
+## Important Environment Variables
 
-1. Commit to master.
+* `WEBMENTION_IO_TOKEN`
+* `GOOGLE_AUTH_CLIENT_EMAIL` (for popular posts from Google Analytics)
+* `GOOGLE_AUTH_PRIVATE_KEY` (for popular posts from Google Analytics; warning: multiline key)
 
 ## Notes
 
@@ -22,4 +24,4 @@ To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 ## Pending
 
 1. Re-add `refresh-populars.sh` to this project.
-2. .htacess files and 404 template
+2. .htaccess files and 404 template
