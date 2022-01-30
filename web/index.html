@@ -8,22 +8,27 @@ enableWebmentions: true
 <div class="layout-list">
 	<article>
 		<h1 class="primary-title">{{ title }}</h1>
-		<filter-container>
-			<form class="filter-posts-form">
-				<label>
-					<span class="sr-only">Filter</span>
-					<select data-filter-bind="category" data-filter-delimiter=",">
-						<option value="">Show all posts</option>
-						<option value="writing">Show only writing</option>
-						<option value="speaking">Show only speaking</option>
-						<option value="web-fonts">Show only web fonts</option>
-						<option value="eleventy">Show only Eleventy</option>
-						<option value="note">Show only notes</option>
-					</select>
-				</label>
-				&#160;
-				<span data-filter-results="post/posts" aria-live="polite">{{ collections.posts | size }} posts</span>
-			</form>
+		<filter-container oninit>
+			<div class="flex">
+				<div class="flex-grow">
+					<a href="/web/best-of/">View Popular Posts 🔥</a>
+				</div>
+				<form class="filter-posts-form">
+					<span data-filter-results="post/posts" aria-live="polite">{{ collections.posts | size }} posts</span>&#160;
+					<label>
+						<span class="sr-only">Filter</span>
+						<select data-filter-key="category">
+							<option value="">Show all posts</option>
+							<option value="writing">Show only Writing</option>
+							<option value="speaking">Show only Speaking</option>
+							<option value="web-fonts">Show only Web Fonts</option>
+							<option value="eleventy">Show only Eleventy</option>
+							<option value="project">Show only Projects</option>
+							<option value="note">Show only Notes</option>
+						</select>
+					</label>
+				</form>
+			</div>
 			<ol id="main-posts-list" class="posts h-feed">
 				{% comment %}
 					liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
@@ -33,7 +38,7 @@ enableWebmentions: true
 				{% assign currentyearpostcount = 0 %}
 				{% assign listItems = collections.posts %}
 				{% for post in collections.posts %}
-					{% include post-list-entry.html, hfeed: true %}
+					{% include "post-list-entry.html", hfeed: true %}
 				{% endfor %}
 			</ol>
 		</filter-container>

@@ -23,6 +23,9 @@ dd ul.via {
 }
 
 /* Inline List */
+.list-inline-nom {
+	margin: 0;
+}
 .list-inline {
 	@include clearfix;
 }

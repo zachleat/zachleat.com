@@ -1,6 +1,5 @@
 presentations/
 demos/
-grunt-tasks/
 web/dist/**/*.html
 README.md
 package-lock.json
@@ -9,3 +8,4 @@ node_modules
 _cache
 .cache
 web/dist
+og/index.liquid

@@ -4,6 +4,8 @@ tags:
   - font-loading
   - video
   - speaking
+metadata:
+  youtubeId: 247dsXVxzH8
 medialength: 19 min
 ---
 A short chat with Vitaly Friedman in February, 2020 about web font loading in anticipation of a Smashing Conference:

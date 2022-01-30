@@ -3,7 +3,8 @@
 	"description": "A web development blog written by @zachleat.",
 	"avatarImgAttrs": {
 		"src": "./img/avatar-2017.png",
-		"alt": "Zach’s ugly mug (his face)"
+		"alt": "Zach’s ugly mug (his face)",
+		"class": "my-avatar"
 	},
 	"domain": "www.zachleat.com",
 	"url": "https://www.zachleat.com/"

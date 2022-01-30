@@ -6,9 +6,7 @@ smalltitle: true
 tags:
   - highlight
   - research
-  - popular-posts
   - popular-posts-total
-postRank: 19
 postRankTotalViews: 4
 ---
 

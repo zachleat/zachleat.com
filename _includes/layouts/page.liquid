@@ -14,10 +14,10 @@ disableComments: true
 
 {% if showAbout %}
 <article class="content-grid-sibling">
-	{% include about.html %}
+	{% include "about.html" %}
 </article>
 {% endif %}
 {% unless disableComments %}
 	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
-	{% include webmentionlist, absoluteUrl: absoluteUrl %}
+	{% include "webmentionlist", absoluteUrl: absoluteUrl %}
 {% endunless %}

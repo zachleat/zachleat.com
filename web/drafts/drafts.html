@@ -17,7 +17,7 @@ tmpl: list
 			{% assign currentyearpostcount = 0 %}
 			{% assign listItems = collections.draft %}
 			{% for post in collections.draft %}
-				{% include post-list-entry.html, ignoreYear: "true" %}
+				{% include "post-list-entry.html", ignoreYear: "true" %}
 			{% endfor %}
 		</ol>
 	</article>

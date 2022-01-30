@@ -1,5 +1,6 @@
 <div class="webmentions content-grid-sibling" id="webmentions">
-  {%- assign reposts = webmentions | webmentionsForUrl: absoluteUrl, 'repost-of' -%}
+  {% comment %}Note thie combines both repost and mention, similar to how Twitter now combines retweet and quote tweet{% endcomment %}
+  {%- assign reposts = webmentions | webmentionsForUrl: absoluteUrl, "repost-of,mention-of" -%}
   {%- assign repostsSize = reposts | size -%}
   {%- assign likes = webmentions | webmentionsForUrl: absoluteUrl, 'like-of' -%}
   {%- assign likesSize = likes | size -%}
@@ -10,7 +11,7 @@
       {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {%- endif -%}
-      <img {% if webmention.author.photo != "" %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}" data-src="{{ webmention.author.photo }}"{% else %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}"{% endif %}" alt="{{ webmention.author.name | htmlEntities }}" class="webmentions__face" width="48" height="48" />
+      <img {% if webmention.author.photo != "" %}src="{{ webmention.author.photo | eleventyImageService }}"{% else %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}"{% endif %} alt="{{ webmention.author.name | htmlEntities }}" class="webmentions__face" width="48" height="48" loading="lazy" decoding="async" />
       {%- if webmention.url != "" -%}
       </a>
       {%- endif -%}
@@ -19,33 +20,36 @@
   {% endif %}
 
   {% if likesSize > 0 %}
-  <details>
-    <summary class="hed-h3{% if repostsSize > 11 or likesSize > 11 %} webmentions__facepile__hedlg{% endif %}">{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</summary>
-    <div class="webmentions__facepile">
+  <div class="webmentions__facepile">
+    <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</h3>
     {%- for webmention in likes -%}
       {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {%- endif -%}
-      <img {% if webmention.author.photo != "" %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}" data-src="{{ webmention.author.photo }}"{% else %}src="{{ '/web/img/webmention-avatar-default.svg' | url }}"{% endif %}" alt="{{ webmention.author.name | htmlEntities }}" class="webmentions__face" width="48" height="48" />
+      {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
       {%- if webmention.url != "" -%}
       </a>
       {%- endif -%}
     {%- endfor -%}
-    </div>
-  </details>
+  </div>
   {% endif %}
 
   {%- assign bookmarks = webmentions | webmentionsForUrl: absoluteUrl, 'bookmark-of' -%}
   {%- assign bookmarksSize = bookmarks | size -%}
+
   {% if bookmarksSize > 0 %}
-  <details>
-    <summary class="hed-h3">{{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}</summary>
-    <ol class="static-comments static-comments-webmentions">
-      {% for webmention in bookmarks %}
-        {% include webmention %}
-      {% endfor %}
-    </ol>
-  </details>
+  <div class="webmentions__facepile">
+    <h3{% if bookmarksSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}</h3>
+    {%- for webmention in bookmarks -%}
+      {%- if webmention.url != "" -%}
+      <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+      {%- endif -%}
+      {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
+      {%- if webmention.url != "" -%}
+      </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
   {% endif %}
 
   {%- assign replies = webmentions | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
@@ -54,37 +58,20 @@
   {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}
   {% if repliesSize > 0 %}
   <details id="comments">
-    <summary class="hed-h3">{{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}</summary>
-    <ol class="static-comments static-comments-webmentions">
+    <summary class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != "1" %}s{% endif %}</summary>
+    <ol class="static-comments static-comments-webmentions favicon-optin">
       {% for webmention in replies %}
-        {% include webmention %}
+        {% include "webmention" %}
       {% endfor %}
     </ol>
 
-    <ol class="static-comments">
+    <ol class="static-comments favicon-optin">
     {% for comment in disqus.comments %}
-      {% include comment-entry.html %}
+      {% include "comment-entry.html" %}
     {% endfor %}
     </ol>
   </details>
   {% endif %}
-
-  {%- assign mentions = webmentions | webmentionsForUrl: absoluteUrl, 'mention-of' -%}
-  {%- assign mentionsSize = mentions | size -%}
-  <details class="{% if mentionsSize == 0 %}static-comments-empty{% endif %}">
-    {% if mentionsSize > 0 -%}
-    <summary class="hed-h3">{{ mentionsSize }} Mention{% if mentionsSize != 1 %}s{% endif %}</summary>
-    {%- else -%}
-    <summary class="sr-only">Webmentions</summary>
-    {%- endif %}
-    <ol class="static-comments static-comments-webmentions">
-      {% for webmention in mentions %}
-        {% include webmention %}
-      {% endfor %}
-    </ol>
-  </details>
-
-
 
   <form action="https://webmention.io/www.zachleat.com/webmention" method="post" class="form-webmention">
     <label for="form-webmention-source">Mention this post from your site:</label>

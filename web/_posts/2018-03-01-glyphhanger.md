@@ -42,7 +42,7 @@ Does your content necessitate characters for those languages? Or are those chara
 
 We can test our site to see what glyphs are used at a URL using a tool we’ve developed called `glyphhanger`.
 
-Find `glyphhanger` on [**GitHub**](https://github.com/filamentgroup/glyphhanger) or [**npm**](https://www.npmjs.com/package/glyphhanger).
+Find `glyphhanger` on [**GitHub**](https://github.com/zachleat/glyphhanger) or [**npm**](https://www.npmjs.com/package/glyphhanger).
 
 ``` bash
 npm install -g glyphhanger
@@ -59,7 +59,7 @@ U+20,U+21,U+26,U+28,U+29,U+2B-38,U+3A,U+3F-47,U+49,U+4C-50,U+52-55,U+57-5A,U+61-
 
 Let’s take `Roboto-Regular.ttf` and subset it this Unicode range. glyphhanger can help with this too:
 
-_Subsetting functionality in glyphhanger requires you to install [fonttools](https://github.com/fonttools/fonttools), a python project. The glyphhanger README includes [installation instructions for Mac OS X](https://github.com/filamentgroup/glyphhanger#installing-pyftsubset)._
+_Subsetting functionality in glyphhanger requires you to install [fonttools](https://github.com/fonttools/fonttools), a python project. The glyphhanger README includes [installation instructions for Mac OS X](https://github.com/zachleat/glyphhanger#installing-pyftsubset)._
 
 ``` bash
 $ glyphhanger https://www.filamentgroup.com/ --subset=Roboto-Regular.ttf --formats=woff2,woff
@@ -161,4 +161,4 @@ Subsetting Roboto-Regular.ttf to Roboto-Regular-subset.woff2 (was 298.45 KB, now
 1. Make sure subsetting agrees with the licensing restrictions on the font file.
 2. Don’t be too aggressive with your subset. If you’re using web fonts for user generated content or content that is likely to change in the future, your Unicode range should be broad enough to accommodate this.
 
-Download glyphhanger and give it a try! We welcome any and all feedback at our [Issue Tracker](https://github.com/filamentgroup/glyphhanger/issues). What else would you like to do with your web fonts?
+Download glyphhanger and give it a try! We welcome any and all feedback at our [Issue Tracker](https://github.com/zachleat/glyphhanger/issues). What else would you like to do with your web fonts?

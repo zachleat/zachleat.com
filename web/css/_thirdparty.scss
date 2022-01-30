@@ -37,7 +37,7 @@
 	display: none;
 }
 @supports (display: grid) {
-	@media (min-width: 60em) { /* 960px */
+	@media (min-width: 64em) { /* 1024px */
 		.infinity-burger.infinity-burger.enabled {
 			display: block;
 			right: 1.25em; /* 20px /16 */

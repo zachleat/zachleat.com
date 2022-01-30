@@ -8,9 +8,9 @@ Eleventy’s [very first commit](https://github.com/11ty/eleventy/commit/00ad919
 
 Not familiar with Eleventy? Read more about [the project’s goals](/web/introducing-eleventy/).
 
-In one short year, Eleventy has released [40 different versions](https://www.11ty.io/docs/versions/), collected [~1100 GitHub stars](https://github.com/11ty/eleventy/stargazers), closed 257 issues, and written 535 unit tests! We have historical documentation for [all versions of the project](https://www.11ty.io/docs/versions/).
+In one short year, Eleventy has released [40 different versions](https://www.11ty.dev/docs/versions/), collected [~1100 GitHub stars](https://github.com/11ty/eleventy/stargazers), closed 257 issues, and written 535 unit tests! We have historical documentation for [all versions of the project](https://www.11ty.dev/docs/versions/).
 
-The [reviews and feedback so far](https://www.11ty.io/docs/testimonials/) have been really lovely. The project won a [Google Open Source Award](/web/google-award/). It’s being used to build the [official Google V8 JavaScript engine web site](https://v8.dev/) (and [many other sites](https://www.11ty.io/docs/sites/)).
+The [reviews and feedback so far](https://www.11ty.dev/docs/testimonials/) have been really lovely. The project won a [Google Open Source Award](/web/google-award/). It’s being used to build the [official Google V8 JavaScript engine web site](https://v8.dev/) (and [many other sites](https://www.11ty.dev/docs/sites/)).
 
 ## Project Naming
 

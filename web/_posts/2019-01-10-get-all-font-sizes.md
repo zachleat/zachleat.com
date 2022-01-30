@@ -31,4 +31,4 @@ For example, this page returned:
 
 _⚠️ Careful if you use `vw` units, these are computed values only._
 
-I’ve also filed this as a [possible enhancement for GlyphHanger](https://github.com/filamentgroup/glyphhanger/issues/62).
+I’ve also filed this as a [possible enhancement for GlyphHanger](https://github.com/zachleat/glyphhanger/issues/62).

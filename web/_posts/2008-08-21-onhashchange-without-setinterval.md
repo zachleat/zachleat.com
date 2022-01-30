@@ -5,7 +5,6 @@ layout: post
 tags:
   - highlight
   - research
-feedtrim: true
 ---
 
 There is one limitation that all of the major JavaScript browser history management plugins have to hack around:  How to tell when there is a change to the `location.hash`?  Sure, you can tell when you’re modifying the hash yourself, but what if the user hits the back/forward button?

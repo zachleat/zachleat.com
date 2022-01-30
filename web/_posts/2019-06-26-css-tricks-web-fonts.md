@@ -6,8 +6,8 @@ tags:
   - research
   - popular-posts
   - popular-posts-total
-postRank: 7
-postRankTotalViews: 18
+postRank: 15
+postRankTotalViews: 19
 ---
 <style>
 .sm-img {
@@ -127,7 +127,7 @@ First stage file size results:
     - Some have argued that as screen resolutions get finer, hinting is increasingly unnecessary. You may even be tempted to hide this behind a [`resolution` media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/resolution)—but note that hinting (when used) is still important for small font sizes, which may or may not be relevant to your design.
     - Option: you may want to remove this altogether. Add `--no-hinting --desubroutinize` to your `pyftsubset` command below to remove it.
 - The remaining character set. Our first stage only loaded 221 characters, so let’s load the remaining 465 available in the Rubik typeface.
-    - Option: you may want to second stage with a smaller subset of characters if your content allows it. Customize with `--unicodes`. Have a look at a project I maintain called [GlyphHanger](https://github.com/filamentgroup/glyphhanger) that takes a URL as input and spits out the `unicode-range` of characters used on that URL (it does a lot of other things too).
+    - Option: you may want to second stage with a smaller subset of characters if your content allows it. Customize with `--unicodes`. Have a look at a project I maintain called [GlyphHanger](https://github.com/zachleat/glyphhanger) that takes a URL as input and spits out the `unicode-range` of characters used on that URL (it does a lot of other things too).
 
 `pyfsubset` command (from [fonttools](https://github.com/fonttools/fonttools)) to generate second stage font files:
 

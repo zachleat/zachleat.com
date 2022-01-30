@@ -1,19 +1,18 @@
 ---
 layout: layouts/default.liquid
 tmpl: list
-hidePopularInSidebar: true
 enableWebmentions: true
 ---
 
 <div class="layout-list">
 	<div id="about-index" class="about-description">
-		<p><em>{% include bio-text-medium.html %} <a href="/web/about/">Read more<span class="a11y-only"> about Zach</span> &raquo;</a></em></p>
+		<p>{% include "bio-text-medium.html" %} <a href="/web/about/">Read more<span class="a11y-only"> about Zach</span> &raquo;</a></p>
 	</div>
 	<article>
 		<h2>Newest</h2>
-		<ol class="posts h-feed">
+		<ol class="posts posts-withimg h-feed">
 			{% for post in collections.posts limit:6 %}
-				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
+				{% include "post-list-entry.html", ignoreYear: "true", hfeed: true, previewImages: true %}
 			{% endfor %}
 			<li><em><a href="/web/" class="posts-link posts-link-more">…see full archives.</a></em></li>
 		</ol>
@@ -21,19 +20,9 @@ enableWebmentions: true
 		<h2>Popular 🔥</h2>
 		<ol class="posts h-feed">
 			{% for post in collections.popularPostsRanked limit:6 %}
-				{% include post-list-entry.html, ignoreYear: "true", hfeed: true, ignorePopularity: true %}
+				{% include "post-list-entry.html", ignoreYear: "true", hfeed: true, ignorePopularity: true %}
 			{% endfor %}
 			<li><em><a href="/web/best-of" class="posts-link posts-link-more">…see all popular posts.</a></em></li>
 		</ol>
-
-		<!-- <h2>Last <a href="/web/notes/">note</a></h2>
-		<ol class="posts h-feed">
-			{% for post in collections.note reversed %}
-				{% include post-list-entry.html, ignoreYear: "true", hfeed: true %}
-				{% if forloop.index > 0 %}{% break %}{% endif %}
-			{% endfor %}
-			<li class="posts-note"><em><a href="/web/notes/" class="posts-link posts-link-more">…see all notes.</a></em></li>
-		</ol> -->
-
 	</article>
 </div><!-- /.layout-list -->

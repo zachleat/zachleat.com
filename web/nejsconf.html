@@ -8,7 +8,7 @@ tmpl: list
 		<h1 class="primary-title">{{ title }}</h1>
 		<ol class="posts">
 			{% for post in collections.nejsconf %}
-				{% include post-list-entry.html, ignoreYear: "true" %}
+				{% include "post-list-entry.html", ignoreYear: "true" %}
 			{% endfor %}
 		</ol>
 	</article>

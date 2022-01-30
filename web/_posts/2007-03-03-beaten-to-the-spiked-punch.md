@@ -3,7 +3,6 @@ title: Beaten to the Spiked Punch
 author: Zach Leatherman
 layout: post
 deprecated: true
-feedtrim: true
 ---
 
 No matter what you think, [someone else is thinking the same thing][1]. I guess this guy might just be living with my same brain waves but a year or so earlier. It has never been a better time to just stop thinking.

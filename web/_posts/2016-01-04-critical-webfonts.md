@@ -8,9 +8,7 @@ tags:
   - research
   - highlight
   - font-loading
-  - popular-posts
   - popular-posts-total
-postRank: 17
 postRankTotalViews: 13
 ---
 

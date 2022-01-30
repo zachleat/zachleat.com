@@ -1,12 +1,10 @@
 ---
 title: Don’t Shut Down Your Business! Instead Use Eleventy Image
-eleventyComputed:
-  titleHtml: 'Don’t Shut Down Your Business! Instead Use{% imgavatar "eleven_ty", "z-avatar-eq" %}Eleventy Image'
 tags:
   - project
   - eleventy
   - popular-posts
-postRank: 15
+postRank: 20
 ---
 _This talk was first delivered for Jamstack Toronto._
 
@@ -20,7 +18,7 @@ Well image optimization can’t solve that problem but I am here to tell you abo
 * [The Hello World](#the-hello-world)
 * [Remote Control](#remote-control)
 * [Travel Size](#travel-size)
-* [Please Don’t Make Me Write HTML](#please-don’t-make-me-write-html)
+* [Please Don’t Make Me Write HTML](#please-don't-make-me-write-html)
 * [SVG Flies First Class](#svg-flies-first-class)
 * [CSS Background Check](#css-background-check)
 

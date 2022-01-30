@@ -4,13 +4,12 @@ tags:
   - eleventy
   - popular-posts
   - popular-posts-total
-external_url: 'https://medium.com/@11ty/making-a-simple-web-site-with-the-simplest-static-site-generator-level-1-7fc6febca1'
-postRank: 9
-postRankTotalViews: 12
+postRank: 14
+postRankTotalViews: 7
 ---
 
-{% include eleventy-intro.html %}
-{% include eleventy-tutorials.html, currentTutorial: 1 %}
+{% include "eleventy-intro.html" %}
+{% include "eleventy-tutorials.html", currentTutorial: 1 %}
 <hr>
 <div class="section-content">
 	<div class="section-inner sectionLayout--insetColumn">
@@ -147,4 +146,4 @@ Ah, much better. Works perfectly.</li>
 </div>
 
 <h2>Eleventy Tutorials</h2>
-{% include eleventy-tutorials.html, currentTutorial: 1 %}
+{% include "eleventy-tutorials.html", currentTutorial: 1 %}

@@ -1,0 +1,10 @@
+{%- unless imageClass %}
+  {%- assign imageClass = "static-comments-img u-photo" %}
+{%- endunless %}
+{% if webmention.author and webmention.author.photo != "" -%}
+  <img class="{{ imageClass }}" src="{{ webmention.author.photo | eleventyImageService }}" alt="{{ webmention.author.name | htmlEntities }}" width="48" height="48" loading="lazy" decoding="async">
+{%- elsif webmention.url -%}
+  {% indieAvatar webmention.url, imageClass %}
+{%- else -%}
+  <img class="{{ imageClass }}" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="Default avatar image" width="48" height="48" loading="lazy" decoding="async">
+{%- endif -%}

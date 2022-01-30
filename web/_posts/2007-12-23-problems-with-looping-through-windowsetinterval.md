@@ -5,7 +5,6 @@ layout: post
 Version Specific Article:
   - Firefox 2
 deprecated: true
-feedtrim: true
 ---
 
 Look at this code. What do you expect to be the outcome?

@@ -2,7 +2,6 @@
 title: 'Conservative Design: Hierarchical Select'
 author: Zach Leatherman
 layout: post
-feedtrim: true
 ---
 
 This is a post in a series entitled [Conservative Design Patterns for Form Elements][1].

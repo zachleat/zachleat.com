@@ -13,7 +13,7 @@ I fully expect my personal website to outlive Twitter and as such have decided t
 
 * Each tweet has its own independent page: `zachleat.com/twitter/:id`.
     - If you have an existing URL to one of my tweets, you can easily translate it to my self hosted version. <pre><code>twitter.com/zachleat/status/905054076408393729 becomes zachleat.com/twitter/905054076408393729</code></pre>
-    - This was also a very interesting stress test for [Eleventy](https://www.11ty.io/), as it generates 27K pages with every run of the build 😲
+    - This was also a very interesting stress test for [Eleventy](https://www.11ty.dev/), as it generates 27K pages with every run of the build 😲
     - Each tweet page has some nice pagination links at the top to navigate between tweets (historically).
 * Super [fast HTML first rendering](/twitter/1169998370041208832/) (that tweet is 2.0 KB for the entire page)
 * Focus on the text first and less on the media. Links to external media are included ([sample](/twitter/1171621079745540096/)) and Videos, images, and animated GIFs are supported. Media are not self hosted (yet) and uses a `max-height` of `10em`. All media are scrunched into a single row. Media is _not_ upscaled like Twitter likes to do on their web site 😱

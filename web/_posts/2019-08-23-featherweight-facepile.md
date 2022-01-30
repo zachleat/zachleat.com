@@ -5,11 +5,11 @@ tags:
   - project
 ---
 
-Ever since Eleventy started an Open Collective to take financial backing (by request, mind you), I’ve had it on my to-do list to add an Eleventy Supporters page to [11ty.io](https://www.11ty.io/).
+Ever since Eleventy started an Open Collective to take financial backing (by request, mind you), I’ve had it on my to-do list to add an Eleventy Supporters page to [11ty.dev](https://www.11ty.dev/).
 
 Fortunately, this is super straightforward using Open Collective’s lovely JSON API (no authentication or tokens required: 😱 but mostly 🎉). Have a look at the [members JSON for the 11ty organization](https://opencollective.com/11ty/members/all.json).
 
-As I created the [Supporters page](https://www.11ty.io/docs/supporters/) from this data I noticed the same recurring problem that had plagued me before when using third party social avatars on my web site: the image dimensions and file sizes varied by _a lot_.
+As I created the [Supporters page](https://www.11ty.dev/docs/supporters/) from this data I noticed the same recurring problem that had plagued me before when using third party social avatars on my web site: the image dimensions and file sizes varied by _a lot_.
 
 I wrote [_The Crushing Weight of the Facepile_](/web/facepile/) about this exact issue.
 
@@ -54,7 +54,7 @@ It might look something like (note that `webp` is first in the array):
 ]
 ```
 
-For 11ty.io, I then iterate over this data to create a `<picture>` file if the array has two entries (the first is guaranteed to be a `webp`). It ends up looking like:
+For 11ty.dev, I then iterate over this data to create a `<picture>` file if the array has two entries (the first is guaranteed to be a `webp`). It ends up looking like:
 
 ```html
 <picture>
@@ -85,7 +85,7 @@ _For all of these images, dropping from 1.9MB to 107KB is pretty great!_
 
 ### Rollout
 
-We use social avatars all over the place on 11ty.io. I ended up rolling out this solution to the entire site and it dropped the home page’s [image weight from **411KB to 102KB**](https://twitter.com/zachleat/status/1164905436950253569). There are _a lot_ of avatars on the home page (111 😎 at time of writing).
+We use social avatars all over the place on 11ty.dev. I ended up rolling out this solution to the entire site and it dropped the home page’s [image weight from **411KB to 102KB**](https://twitter.com/zachleat/status/1164905436950253569). There are _a lot_ of avatars on the home page (111 😎 at time of writing).
 
 ## Try it out!
 

@@ -2,7 +2,6 @@
 title: '20/20 Hindsight, a Look Back at ALARMd'
 author: Zach Leatherman
 layout: post
-feedtrim: true
 ---
 
 Now that the traffic has died down a little bit on ALARMd, I’d like to write a little bit about my experiences with something I don’t think anyone predicted would garner so much interest.

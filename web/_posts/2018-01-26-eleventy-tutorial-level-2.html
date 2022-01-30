@@ -2,12 +2,11 @@
 title: 'Making a Simple Web Site with the Simplest Static Site Generator, Level 2—Adding Filters'
 tags:
   - eleventy
-external_url: 'https://medium.com/@11ty/making-a-simple-web-site-with-eleventy-level-2-1b356183377c'
 ---
 
 
-{% include eleventy-intro.html %}
-{% include eleventy-tutorials.html, currentTutorial: 2 %}
+{% include "eleventy-intro.html" %}
+{% include "eleventy-tutorials.html", currentTutorial: 2 %}
 
 <hr>
 
@@ -134,4 +133,4 @@ module.exports = (function(eleventyConfig) {
 <p name="67c8" id="67c8" class="graf graf--p graf-after--h3">I hope you see the great power in using filters in our templates. They can transform simple content with the great power of the NPM ecosystem. I know I said Level 2 would be Layouts, but we’ll make it to Layouts and multiple templates in Level 3.</p>
 
 <h2>Eleventy Tutorials</h2>
-{% include eleventy-tutorials.html, currentTutorial: 2 %}
+{% include "eleventy-tutorials.html", currentTutorial: 2 %}

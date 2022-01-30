@@ -40,19 +40,33 @@ hasToc: true
 
 <p class="livedemo top">This is a live demo example with the demonstration label on the top.</p>
 <p class="livedemo">This is a live demo example with the demonstration label on the bottom.</p>
+
 <p class="livedemo" data-demo-label="New Label Override">This is a live demo example with a label text override in the markup.</p>
 <p class="livedemo livedemo-mixed" data-demo-label="New Label Override, Mixed Case">This is a live demo example with a label text override in the markup.</p>
-<div class="livedemo square-top" data-demo-label="Square Top"><pre><code>// Code</code></pre></div>
-<div class="livedemo top square-bottom" data-demo-label="Square Bottom"><pre><code>// Code</code></pre></div>
-<div class="livedemo square-top square-bottom" data-demo-label="Both Square">Test</div>
-<div class="livedemo top square-top square-bottom" data-demo-label="Both Square">Test</div>
-<p class="livedemo livedemo-resizable">This is a resizable live demo example with the demonstration label on the bottom.</p>
 <div class="livedemo top" data-demo-label="Nested Parent">
 	<p>This is a live demo example with the demonstration label on the bottom.</p>
 	<div class="livedemo top" data-demo-label="Nested Child">
 		<p>This is a live demo example with the demonstration label on the bottom.</p>
 	</div>
 </div>
+
+<h3>Square Demos</h3>
+<div class="livedemo square-top" data-demo-label="Square Top"><pre><code>// Code</code></pre></div>
+<div class="livedemo top square-bottom" data-demo-label="Square Bottom"><pre><code>// Code</code></pre></div>
+<div class="livedemo square-top square-bottom" data-demo-label="Both Square">Test</div>
+<div class="livedemo top square-top square-bottom" data-demo-label="Both Square">Test</div>
+
+<h3>More snowflakes</h3>
+<div class="livedemo livedemo-evil">This is a an evil tip and you shouldn’t do it.</div>
+<p class="livedemo livedemo-resizable">This is a resizable live demo example with the demonstration label on the bottom.</p>
+<p class="livedemo livedemo-flush">Flush no padding.</p>
+
+<h3>Dark mode</h3>
+<p class="livedemo livedemo-dark">Dark mode.</p>
+<details class="livedemo livedemo-dark livedemo-flush">
+	<summary>Details, expand this</summary>
+	This is the details content.
+</details>
 
 <h2 id="typography">Typography</h2>
 
@@ -202,7 +216,7 @@ hasToc: true
 <h2 id="icons">Icons</h2>
 
 <div class="livedemo">
-	{% include social.html %}
+	{% include "social.html" %}
 </div>
 
 <h2 id="lists">Lists</h2>
@@ -483,7 +497,7 @@ U.S. Chief Technology Officer and Assistant to the President
 	</div>
 </div>
 
-<h3>Retweet to Share</h3>
+<h3 id="retweet-to-share">Retweet to Share</h3>
 <div class="livedemo">
 	<div class="retweettoshare retweettoshare-m">
 		<h3 class="retweettoshare_title">Retweet to share this post</h3>
