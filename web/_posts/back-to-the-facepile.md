@@ -2,7 +2,7 @@
 title: 'Back to the Facepile, Featherweight Edition'
 tags:
   - popular-posts
-postRank: 2
+postRank: 3
 ---
 A short three years ago, I wrote about [The Crushing Weight of the Facepile](/web/facepile/): how the image weight of the webmention avatar images were proving to be prohibitvely large.
 

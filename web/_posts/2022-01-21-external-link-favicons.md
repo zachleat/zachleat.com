@@ -3,7 +3,7 @@ title: CSS-only External Link Favicons
 tags:
   - project
   - popular-posts
-postRank: 3
+postRank: 2
 ---
 Saw a [fascinating idea in a tweet from @simevidas to show favicons on external links](https://twitter.com/simevidas/status/1481753210578690064) on a site. Full credit for the original idea to [Kiko Beats](https://kikobeats.com/).
 

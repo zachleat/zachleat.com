@@ -6,7 +6,7 @@ categories:
 tags:
   - font-loading
   - popular-posts-total
-postRankTotalViews: 18
+postRankTotalViews: 19
 ---
 
 Last night I hopped on Twitter after my daughter went to sleep with a little bit of time to kill before a 9 PM <a href="https://twitter.com/nejsconf">NEJS CONF</a> 2018 planning meeting. What greeted me was perhaps the most tailored, best targetted content I’ve seen on the platform since Donald’s Twitter account was deactivated for a blissful 11 minutes.
