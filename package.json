@@ -57,7 +57,7 @@
     "check-links": "npx check-html-links _site",
     "build": "npx grunt && npx @11ty/eleventy --quiet",
     "start": "npx grunt && npx @11ty/eleventy --quiet --serve",
-    "production": "./refresh-populars.sh && npx grunt production"
+    "production": "./refresh-populars.sh && ELEVENTY_PRODUCTION=true npx grunt production"
   },
   "repository": {
     "type": "git",
