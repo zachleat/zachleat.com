@@ -1,0 +1,27 @@
+# Automatic 404, see /404.html
+
+# Old Wordpress redirects
+/web/:year/:month/:date/* /web/:splat 301!
+/web/:year/* /web/:splat 301!
+
+# Weird URL
+/résumé/ /resume/ 301!
+
+# Demos
+/demos/animate-oval-path/animate-oval-path.html /demos/animate-oval-path/ 301!
+
+# Old projects redirects
+/Projects/ /projects/ 301!
+/Projects/* /projects/:splat 301!
+/projects/alarmd/ /alarmd/ 301!
+/projects/alarmd/* /alarmd/:splat 301!
+/projects/alarmd-beta/ /alarmd2/ 301!
+/projects/alarmd-beta/* /alarmd2/:splat 301!
+
+# Grab bag
+/web/taxonomy/* /web/pragmatic/:splat 301!
+/web/web/w3c-banners/ /web/w3c-status-banners/ 301!
+/web/web-fonts/ /web/fonts/ 301!
+/web/eleventy-google-award/ /web/google-award/ 301!
+/web/host-keynote-slides/ /web/webp/ 301!
+/mobile/uno/Presentation.pdf /web/html5-vs-native-applications/ 301!

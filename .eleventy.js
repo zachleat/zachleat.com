@@ -47,9 +47,8 @@ module.exports = function(eleventyConfig) {
 
 	/* COPY */
 	eleventyConfig
-		.addPassthroughCopy(".htaccess")
+		.addPassthroughCopy("_redirects")
 		.addPassthroughCopy("img/")
-		.addPassthroughCopy("resume/.htaccess")
 		.addPassthroughCopy("resume/index.css")
 		.addPassthroughCopy("resume/resume.pdf")
 		.addPassthroughCopy("web/css/fonts")
@@ -59,17 +58,13 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("web/dist")
 		.addPassthroughCopy("og/*.jpeg")
 		.addPassthroughCopy("og/*.png")
-		.addPassthroughCopy("og/sources/");
-
-	if(hasEleventyFeature("fullcopy")) {
-		eleventyConfig
-			.addPassthroughCopy("robots.txt")
-			.addPassthroughCopy("humans.txt")
-			.addPassthroughCopy("keybase.txt")
-			.addPassthroughCopy("demos/")
-			.addPassthroughCopy("presentations/")
-			.addPassthroughCopy("unicode-range-interchange/");
-	}
+		.addPassthroughCopy("og/sources/")
+		.addPassthroughCopy("robots.txt")
+		.addPassthroughCopy("humans.txt")
+		.addPassthroughCopy("keybase.txt")
+		.addPassthroughCopy("demos/")
+		.addPassthroughCopy("presentations/")
+		.addPassthroughCopy("unicode-range-interchange/");
 
 	/* LAYOUTS */
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');

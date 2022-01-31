@@ -29,7 +29,6 @@
     "grunt": "^1.4.1",
     "grunt-cli": "^1.4.3",
     "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-compress": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^4.0.0",
@@ -56,15 +55,9 @@
   },
   "scripts": {
     "check-links": "npx check-html-links _site",
-    "build-with-assets": "grunt",
-    "build": "npx @11ty/eleventy --quiet",
-    "start": "npx @11ty/eleventy --quiet --serve",
-    "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
-    "git-check": "if [[ $(git --no-pager diff HEAD --name-only) ]]; then echo 'You have uncommited changes.'; exit 1; fi",
-    "tag-release": "npm run git-check && git tag `date '+deploy-%Y%m%d-%H%M%S'` && git push --tags",
-    "popular": "npm run git-check && ./refresh-populars.sh && git add -A && git commit -m 'Popular posts data.' && git push origin master",
-    "deploy": "ELEVENTY_PRODUCTION=true grunt deploy && npm run tag-release",
-    "popular-deploy": "npm run popular && npm run deploy"
+    "build": "npx grunt && npx @11ty/eleventy --quiet",
+    "start": "npx grunt && npx @11ty/eleventy --quiet --serve",
+    "production": "./refresh-populars.sh && npx grunt production"
   },
   "repository": {
     "type": "git",
