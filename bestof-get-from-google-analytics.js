@@ -43,6 +43,7 @@ function queryData(analytics) {
 				console.log(err);
 				return;
 			}
+			fs.mkdirSync("./_cache/", { recursive: true });
 			fs.writeFileSync("./_cache/zachleat-bestof.json", JSON.stringify(response, null, 2), "utf8");
 		}
 	);
