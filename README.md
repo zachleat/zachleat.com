@@ -15,7 +15,7 @@ To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 
 * `WEBMENTION_IO_TOKEN`
 * `GOOGLE_AUTH_CLIENT_EMAIL` (for popular posts from Google Analytics)
-* `GOOGLE_AUTH_PRIVATE_KEY` (for popular posts from Google Analytics; warning: multiline key)
+* `GOOGLE_AUTH_PRIVATE_KEY` (for popular posts from Google Analytics)
 
 ## Notes
 
