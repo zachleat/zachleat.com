@@ -23,5 +23,4 @@ To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 
 ## Pending
 
-1. Re-add `refresh-populars.sh` to this project.
-2. .htaccess files and 404 template
+1. Separate app for unicode-range-interchange and redirect.
