@@ -109,7 +109,8 @@ pageviewsArr.forEach(function(entry, j) {
 
 totalviewsArr.filter(entry => {
 	return [
-		"web/_posts/2021-12-12-tailwind.md"
+		"web/_posts/2021-12-12-tailwind.md",
+		"web/404.html",
 	].indexOf(entry.path) === -1;
 }).forEach(function(entry, j) {
 	var frontmatter = matter( fs.readFileSync(entry.path, 'utf8') );

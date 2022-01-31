@@ -11,7 +11,7 @@ if(!process.env.GOOGLE_AUTH_CLIENT_EMAIL || !process.env.GOOGLE_AUTH_PRIVATE_KEY
 let jwtClient = new google.auth.JWT(
 	process.env.GOOGLE_AUTH_CLIENT_EMAIL,
 	null,
-	process.env.GOOGLE_AUTH_PRIVATE_KEY,
+	process.env.GOOGLE_AUTH_PRIVATE_KEY.replace(/\\n/gm, "\n"),
 	["https://www.googleapis.com/auth/analytics.readonly"],
 	null
 );
