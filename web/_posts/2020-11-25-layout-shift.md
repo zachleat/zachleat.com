@@ -1,6 +1,7 @@
 ---
 title: Ruthlessly Eliminating Layout Shift on netlify.com
-tags: []
+tags:
+  - web-components
 imgNoPictureOptions:
   formats:
     - jpeg

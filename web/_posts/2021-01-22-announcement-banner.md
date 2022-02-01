@@ -1,6 +1,6 @@
 ---
-title: "announcement-bar Web Component"
-titleHtml: "&lt;announcement-bar&gt; Web Component"
+title: "announcement-banner Web Component"
+titleHtml: "&lt;announcement-banner&gt; Web Component"
 tags:
   - project
   - web-components
