@@ -435,17 +435,20 @@ module.exports = function(eleventyConfig) {
 		if(isWriting(collectionItem)) {
 			categories.push("writing");
 		}
-		if(hasTag(collectionItem, "eleventy")) {
-			categories.push("eleventy");
-		}
 		if(hasTag(collectionItem, "font-loading") || hasCategory(collectionItem, "font-loading")) {
 			categories.push("web-fonts");
 		}
-		if(hasTag(collectionItem, "project")) {
-			categories.push("project");
-		}
-		if(hasTag(collectionItem, "note")) {
-			categories.push("note");
+
+		let tags = [
+			"eleventy",
+			"project",
+			"note",
+			"web-components",
+		];
+		for(let tag of tags) {
+			if(hasTag(collectionItem, tag)) {
+				categories.push(tag);
+			}
 		}
 		return categories.join(",");
 	});

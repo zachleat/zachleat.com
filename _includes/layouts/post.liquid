@@ -20,6 +20,9 @@ tmpl: page
 {% if tweet %}
 			<em>Inspired by <a href="{{ tweet }}">a tweet</a>.</em>
 {% endif %}
+{% if tags contains "web-components" %}
+			<em>Check out <a href="/web/?category=web-components">all the web components</a>.</em>
+{% endif %}
 		</div>
 {% if deprecated %}
 		<article class="content-sibling">
@@ -47,6 +50,12 @@ tmpl: page
 	{{ content }}
 	</div>
 </article>
+
+{% if tags contains "web-components" %}
+<article class="content-grid-sibling">
+	<em>This is a web component—I have others! Check out <a href="/web/?category=web-components">all the web components</a>.</em>
+</article>
+{% endif %}
 
 <article class="content-grid-sibling">
 	{% include "about.html" %}
