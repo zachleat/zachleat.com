@@ -1,30 +1,26 @@
 @font-face {
 	font-family: Lato;
-	src: url('/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/2.0/LatoLatin-Regular-subset.zopfli.woff') format('woff');
+	src: url('/web/css/fonts/lato/2.0/latolatin-regular-subset.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: Lato;
-	src: url('/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/2.0/LatoLatin-Bold-subset.zopfli.woff') format('woff');
+	src: url('/web/css/fonts/lato/2.0/latolatin-bold-subset.woff2') format('woff2');
 	font-weight: 700;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: Lato;
-	src: url('/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/2.0/LatoLatin-Italic-subset.zopfli.woff') format('woff');
+	src: url('/web/css/fonts/lato/2.0/latolatin-italic-subset.woff2') format('woff2');
 	font-style: italic;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: Lato;
-	src: url('/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.woff2') format('woff2'),
-			 url('/web/css/fonts/lato/2.0/LatoLatin-BoldItalic-subset.zopfli.woff') format('woff');
+	src: url('/web/css/fonts/lato/2.0/latolatin-bolditalic-subset.woff2') format('woff2');
 	font-weight: 700;
 	font-style: italic;
 	font-display: swap;
@@ -33,8 +29,7 @@
 /* Also I liked Josefin Sans */
 @font-face {
 	font-family: Numero; /* 'Old Standard TT' */
-  src: url(/web/css/fonts/old-standard/OldStandard-Italic-subset.woff2) format("woff2"),
-       url(/web/css/fonts/old-standard/OldStandard-Italic-subset.zopfli.woff) format("woff");
+  src: url(/web/css/fonts/old-standard/oldstandard-italic-subset.woff2) format("woff2");
   font-style: italic;
   font-display: swap;
   unicode-range: U+2116;
@@ -42,8 +37,7 @@
 
 @font-face {
 	font-family: Numero; /* 'Old Standard TT' */
-  src: url(/web/css/fonts/old-standard/OldStandard-Regular-subset.woff2) format("woff2"),
-       url(/web/css/fonts/old-standard/OldStandard-Regular-subset.zopfli.woff) format("woff");
+  src: url(/web/css/fonts/old-standard/oldstandard-regular-subset.woff2) format("woff2");
   font-display: swap;
   unicode-range: U+2116;
 }
