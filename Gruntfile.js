@@ -130,7 +130,7 @@ module.exports = function(grunt) {
 		},
 		shell: {
 			eleventyProduction: {
-				command: 'ELEVENTY_FEATURES=webmentions,counts npx @11ty/eleventy --quiet',
+				command: 'ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions,counts npx @11ty/eleventy --quiet',
 				options: {
 					execOptions: {}
 				}
