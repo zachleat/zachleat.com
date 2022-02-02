@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+      @font-face {
+        font-family: Roboto Smcp;
+        src: url(fonts/Roboto-Regular.ttf) format("truetype");
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+      code.label {
+        margin-top: 1em;
+        font-size: 1rem;
+        display: block;
+      }
+      .roboto,
+      .roboto-smcp {
+        border: 1px solid #f00;
+        padding: 1rem;
+        font-size: 3rem;
+      }
+      .roboto {
+        font-family: Roboto, fantasy;
+      }
+      .roboto-smcp {
+        font-family: Roboto Smcp, fantasy;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Roboto with no real small-caps</h2>
+    <div class="roboto">
+      <code class="label">Control</code>
+      ABCDEF abcdef
+      <code class="label">font-variant: small-caps (expected: fake small caps)</code>
+      <span style="font-variant: small-caps">abcdef</span>
+      <code class="label">font-feature-settings: 'smcp' on (expected: lowercase)</code>
+      <span style="font-feature-settings: 'smcp' on">abcdef</span>
+      <code class="label">font-feature-settings: 'smcp' off (expected: lowercase)</code>
+      <span style="font-feature-settings: 'smcp' off">abcdef</span>
+    </div>
+    <div class="roboto">
+      <code class="label">Combining properties</code>
+      <code class="label">font-variant: small-caps; font-feature-settings: 'smcp' on (expected: fake small caps)</code>
+      <span style="font-variant: small-caps; font-feature-settings: 'smcp' on">abcdef</span>
+      <code class="label">font-variant: small-caps; font-feature-settings: 'smcp' off (expected: ?)</code>
+      <span style="font-variant: small-caps; font-feature-settings: 'smcp' off">abcdef</span>
+      <code class="label">font-feature-settings: 'smcp' off; font-variant: small-caps; (expected: ?)</code>
+      <span style="font-feature-settings: 'smcp' off; font-variant: small-caps">abcdef</span>
+      <code class="label">font-variant: initial; font-feature-settings: 'smcp' on (expected: lowercase)</code>
+      <span style="font-variant: initial; font-feature-settings: 'smcp' on">abcdef</span>
+      <code class="label">font-variant: initial; font-feature-settings: 'smcp' off (expected: lowercase)</code>
+      <span style="font-variant: initial; font-feature-settings: 'smcp' off">abcdef</span>
+    </div>
+    <br>
+    <h2>Roboto with Real small-caps support:</h2>
+    <div class="roboto-smcp">
+      <code class="label">Control</code>
+      ABCDEF abcdef
+      <code class="label">font-variant: small-caps (expected: real small caps)</code>
+      <span style="font-variant: small-caps">abcdef</span>
+      <code class="label">font-feature-settings: 'smcp' on (expected: real small caps)</code>
+      <span style="font-feature-settings: 'smcp' on">abcdef</span>
+      <code class="label">font-feature-settings: 'smcp' off (expected: lowercase)</code>
+      <span style="font-feature-settings: 'smcp' off">abcdef</span>
+    </div>
+    <div class="roboto-smcp">
+      <code class="label">Combining properties</code>
+      <code class="label">font-variant: small-caps; font-feature-settings: 'smcp' on (expected: real small caps)</code>
+      <span style="font-variant: small-caps; font-feature-settings: 'smcp' on">abcdef</span>
+      <code class="label">font-variant: small-caps; font-feature-settings: 'smcp' off (expected: ?)</code>
+      <span style="font-variant: small-caps; font-feature-settings: 'smcp' off">abcdef</span>
+      <code class="label">font-feature-settings: 'smcp' off; font-variant: small-caps; (expected: ?)</code>
+      <span style="font-feature-settings: 'smcp' off; font-variant: small-caps">abcdef</span>
+      <code class="label">font-variant: initial; font-feature-settings: 'smcp' on (expected: real small caps)</code>
+      <span style="font-variant: initial; font-feature-settings: 'smcp' on">abcdef</span>
+      <code class="label">font-variant: initial; font-feature-settings: 'smcp' off (expected: lowercase)</code>
+      <span style="font-variant: initial; font-feature-settings: 'smcp' off">abcdef</span>
+    </div>
+
+  </body>
+</html>
