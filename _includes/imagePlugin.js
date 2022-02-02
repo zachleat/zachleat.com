@@ -58,12 +58,6 @@ function backgroundImageFilter(src, width, options = {}) {
 function pad(num) {
   return `${num}`.padStart(2, '0');
 }
-function getTargetUrlCacheBuster(targetUrl = "") {
-  // if(process.env.ELEVENTY_PRODUCTION && (targetUrl.startsWith("https://zachleat.com") || targetUrl.startsWith("https://www.zachleat.com"))) {
-  //   return "?cb" + ((new Date()).getDate() % 7);
-  // }
-  return "";
-}
 function getServiceCacheBuster() {
   if(process.env.ELEVENTY_PRODUCTION) {
     let d = new Date();
@@ -84,7 +78,7 @@ function getFullUrlFromPath(path) {
 }
 
 function opengraphImageHtml(targetUrl) {
-  let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl + getTargetUrlCacheBuster(targetUrl))}/`;
+  let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl)}/`;
 
   let options = {
     formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
@@ -114,7 +108,7 @@ function opengraphImageHtml(targetUrl) {
 }
 
 function getScreenshotUrl(fullUrl) {
-  return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl + getTargetUrlCacheBuster(fullUrl))}/opengraph/${getServiceCacheBuster()}/`;
+  return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getServiceCacheBuster()}/`;
 }
 function getScreenshotUrlFromPath(path) {
   return getScreenshotUrl(getFullUrlFromPath(path));
