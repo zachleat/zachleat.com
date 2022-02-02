@@ -1,6 +1,6 @@
 ---
-title: "video-radio-star Web Component"
-titleHtml: "&lt;video-radio-star&gt; Web Component"
+title: video-radio-star Web Component
+titleHtml: '&lt;video-radio-star&gt; Web Component'
 tags:
   - project
   - web-components

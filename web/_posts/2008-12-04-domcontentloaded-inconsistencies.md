@@ -6,8 +6,6 @@ smalltitle: true
 tags:
   - highlight
   - research
-  - popular-posts-total
-postRankTotalViews: 20
 ---
 
 **Quick Summary**

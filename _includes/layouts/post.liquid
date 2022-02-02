@@ -8,10 +8,11 @@ tmpl: page
 		<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if titleHtml %}{{ titleHtml }}{% else if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
 		<div class="sub p-description">
 			<em class="date">{{ page.date | readableDate }}</em>
-{% if postRank %}
+{%- assign postRank = analytics[page.url].rankPerDaysPosted %}
+{% if postRank and postRank <= 20 %}
 			<em class="words"><a href="/web/best-of/">#{{ postRank }} Popular</a></em>
-{% if analytics[page.url] and analytics[page.url].views > 10000 %}
-			<em class="words">{{ analytics[page.url].views | renderNumber }} Views</em>
+{% if analytics[page.url].pageViews > 10000 %}
+			<em class="words">{{ analytics[page.url].pageViews | renderNumber }} Views</em>
 {% endif %}
 {% endif %}
 {% if tags contains 'video' %}

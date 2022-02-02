@@ -1,6 +1,5 @@
 ---
 title: 'Shop Talk Show #390: Eleventy with Zach Leatherman'
-permalink: /web/eleventy-shoptalkshow/
 tags:
   - speaking
   - audio

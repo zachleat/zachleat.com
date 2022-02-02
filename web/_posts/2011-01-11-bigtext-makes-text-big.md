@@ -12,10 +12,6 @@ tags:
   - highlight
   - project
   - font-loading
-  - popular-posts
-  - popular-posts-total
-postRank: 7
-postRankTotalViews: 2
 ---
 
 _I like shortcuts: Fork [BigText on Github][github] or Check out the [BigText Demo Wizard][wizard]_

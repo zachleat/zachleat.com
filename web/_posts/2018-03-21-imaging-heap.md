@@ -1,6 +1,5 @@
 ---
 title: 'imaging-heap, Measuring Responsive Image Efficiency'
-permalink: /web/imaging-heap/
 tags:
   - project
 ---

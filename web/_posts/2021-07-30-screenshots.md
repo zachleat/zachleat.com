@@ -3,8 +3,6 @@ title: Building an Automated Screenshot Service on Netlify in ~140 Lines of Code
 tags:
   - eleventy
   - project
-  - popular-posts
-postRank: 17
 ---
 <style>
 .screenshot {

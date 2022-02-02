@@ -2,9 +2,7 @@
 title: 'Eleventy v1.0.0, the stable release.'
 tags:
   - eleventy
-  - popular-posts
 external_url: 'https://github.com/11ty/eleventy/releases/tag/v1.0.0'
-postRank: 10
 ---
 * [Full docs for v1.0.0 on our web site](https://v1-0-0.11ty.dev/docs/)
 

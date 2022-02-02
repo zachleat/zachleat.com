@@ -3,7 +3,6 @@ title: Top 20 Popular Posts (sorted by Total Views)
 layout: default
 tmpl: list
 permalink: /web/best-of/total-views/
-dataUpdatedDate: 'January 30, 2022, 9:35 PM CST'
 hidePostsInSidebar: true
 ---
 
@@ -12,7 +11,7 @@ hidePostsInSidebar: true
 		<h1 class="primary-title posts-indent">{{ "Popular Posts ☀️" | orphanWrap }}</h1>
 
 		<div class="posts-paragraph posts-indent">
-			<p>Last updated {{ dataUpdatedDate }}. Ordered by total pageviews. <a href="/web/best-of/">Sort instead by pageviews per day 🔥</a>. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically</a> from the Google Analytics API. I also keep a highlight reel of the <a href="/twitter/popular/">most popular tweets</a>.</p>
+			<p>Ordered by total pageviews. <a href="/web/best-of/">Sort instead by pageviews per day 🔥</a>. Data <a href="http://2ality.com/2015/10/google-analytics-api.html">generated automatically</a> from the Google Analytics API. I also keep a highlight reel of the <a href="/twitter/popular/">most popular tweets</a>.</p>
 		</div>
 
 		<ol class="posts posts-showall posts-withimg">
@@ -20,7 +19,7 @@ hidePostsInSidebar: true
 			{% assign currentyear = "" %}
 			{% assign listItems = collections.popularPostsTotalRanked %}
 			{% for post in collections.popularPostsTotalRanked %}
-				{% include "post-list-entry.html", ignoreYear: "true", showRankTotalViews: "true", showDays: "true", ignorePopularity: true, previewImages: true %}
+				{% include "post-list-entry.html", ignoreYear: "true", ignorePopularity: true, previewImages: true %}
 			{% endfor %}
 		</ol>
 	</article>

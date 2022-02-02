@@ -1,10 +1,7 @@
 ---
 title: Who Pays for Web Frameworks?
-tags:
-  - popular-posts
 seo:
   openGraphBackgroundImage: /og/sources/deposit-boxes.jpg
-postRank: 18
 ---
 _Updated on January 28, 2022 with new information for Svelte and Astro._
 

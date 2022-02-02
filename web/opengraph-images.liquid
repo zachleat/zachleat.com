@@ -45,7 +45,6 @@ More Ideas:
         </p>
         <p class="main-center"></p>
         <p class="main-right">
-          {% comment %} {%- if post.data.postRank %}<span class="main-box main-box-nowrap">#{{ post.data.postRank }} Popular</span><br>{% endif %} {% endcomment %}
           {%- if webmentionsCount > 0 %}<span class="main-box main-box-nowrap">{{ webmentionsCount }} Webmention{% if webmentionsCount != 1 %}s{% endif %}</span>{% endif %}
           {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-pageweight" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" weight></speedlify-score>{%- endif %}<br>
           <span class="main-postnumber main-box main-box-nowrap">№{{ pagination.pages.length | minus: pagination.pageNumber }}</span>

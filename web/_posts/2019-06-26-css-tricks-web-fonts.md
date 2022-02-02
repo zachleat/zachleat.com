@@ -4,10 +4,6 @@ tags:
   - highlight
   - font-loading
   - research
-  - popular-posts
-  - popular-posts-total
-postRank: 15
-postRankTotalViews: 18
 ---
 <style>
 .sm-img {

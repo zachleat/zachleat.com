@@ -56,7 +56,8 @@
 		{%- if post.data.tags contains 'video' %}<span class="tag video">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Video</span>{% endif -%}
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Audio</span>{% endif -%}
 {%- if ignorePopularity != true %}
-		{%- if post.data.postRank or post.data.postRankTotalViews %}<span class="tag" title="Popularity Ranking">{% if post.data.postRankTotalViews and showRankTotalViews == "true" %}{{ "☀️" | emoji }} #{{ post.data.postRankTotalViews }}{% elsif post.data.postRank %}{{ "🔥" | emoji }} #{{ post.data.postRank }}{% endif %}</span>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
+		{%- assign postRank = analytics[post.url].rankPerDaysPosted -%}
+		{%- if postRank and postRank <= 20 %}<span class="tag" title="Popularity Ranking">{% if postRank %}{{ "🔥" | emoji }} #{{ postRank }}{% endif %}</span>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
 {%- endif %}
 
 		{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}

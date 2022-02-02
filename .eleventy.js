@@ -13,16 +13,13 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 const siteData = require("./_data/site.json");
+const analyticsData = require("./_data/analytics.json");
 const getBaseUrl = require("./_includes/getBaseUrl");
 const pluginImage = require("./_includes/imagePlugin");
 const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
 const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
 
 const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
-
-function hasEleventyFeature(featureName) {
-	return process.env.ELEVENTY_FEATURES && process.env.ELEVENTY_FEATURES.split(",").indexOf(featureName) > -1;
-}
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.setUseGitIgnore(false);
@@ -502,25 +499,31 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("popularPostsRanked", function(collection) {
-		return collection.getFilteredByTag("popular-posts").filter(item => {
+		return collection.getFilteredByGlob("./web/_posts/*.md").filter(item => {
 			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
+			}
+			if(!analyticsData[item.url]) {
 				return false;
 			}
 			return true;
 		}).sort(function(a, b) {
-			return b.data.postRank - a.data.postRank;
-		}).reverse();
+			return analyticsData[b.url].rankPerDaysPosted - analyticsData[a.url].rankPerDaysPosted;
+		}).reverse().slice(0, 20);
 	});
 
 	eleventyConfig.addCollection("popularPostsTotalRanked", function(collection) {
-		return collection.getFilteredByTag("popular-posts-total").filter(item => {
+		return collection.getFilteredByGlob("./web/_posts/*.md").filter(item => {
 			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+				return false;
+			}
+			if(!analyticsData[item.url]) {
 				return false;
 			}
 			return true;
 		}).sort(function(a, b) {
-			return b.data.postRankTotalViews - a.data.postRankTotalViews;
-		}).reverse();
+			return analyticsData[b.url].rankTotal - analyticsData[a.url].rankTotal;
+		}).reverse().slice(0, 20);
 	});
 
 	/* Markdown */

@@ -2,9 +2,6 @@
 title: Fire SVG animations (SMIL) when the SVG is visible
 seo:
   openGraphBackgroundImage: /og/sources/glasses.jpg
-tags:
-  - popular-posts
-postRank: 13
 ---
 Had a use case come in where the design had an SVG animation that ran one interation and only one. It looked like this (some content has been removed):
 

@@ -2,9 +2,6 @@
 title: Vector? Raster? Why Not Both!
 seo:
   openGraphBackgroundImage: /web/img/posts/vector-raster-split/preview.jpg
-tags:
-  - popular-posts
-postRank: 6
 ---
 This week I ran into an interesting class of problem that—in hindsight—could use a much better workflow. Does it exist?
 
