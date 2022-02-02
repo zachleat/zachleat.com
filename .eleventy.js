@@ -44,11 +44,9 @@ module.exports = function(eleventyConfig) {
 
 	/* COPY */
 	eleventyConfig
-		.addPassthroughCopy("_redirects")
 		.addPassthroughCopy("img/")
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
-		.addPassthroughCopy("resume/resume.pdf")
 		.addPassthroughCopy("web/css/fonts")
 		.addPassthroughCopy("web/css/external")
 		.addPassthroughCopy("web/img")
@@ -56,14 +54,21 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("web/dist")
 		.addPassthroughCopy("og/*.jpeg")
 		.addPassthroughCopy("og/*.png")
-		.addPassthroughCopy("og/sources/")
-		.addPassthroughCopy("demos/")
-		.addPassthroughCopy("presentations/")
-		.addPassthroughCopy("archive/")
-		.addPassthroughCopy("unicode-range-interchange/")
-		.addPassthroughCopy("bigtext/")
-		.addPassthroughCopy("alarmd/")
-		.addPassthroughCopy("alarmd2/");
+		.addPassthroughCopy("og/sources/");
+
+	// Production only passthrough copy
+	if(process.env.ELEVENTY_PRODUCTION) {
+		eleventyConfig
+			.addPassthroughCopy("_redirects")
+			.addPassthroughCopy("demos/")
+			.addPassthroughCopy("resume/resume.pdf")
+			.addPassthroughCopy("presentations/")
+			.addPassthroughCopy("archive/")
+			.addPassthroughCopy("unicode-range-interchange/")
+			.addPassthroughCopy("bigtext/")
+			.addPassthroughCopy("alarmd/")
+			.addPassthroughCopy("alarmd2/");
+	}
 
 	/* LAYOUTS */
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
