@@ -23,6 +23,12 @@
 /foitfout/ /web-fonts/foitfout/ 301!
 #/history/* /archive/:splat 301!
 
+# Proxy redirects
+/twitter/* https://zachleat.nfshost.com/twitter/:splat 200!
+/web-fonts/demos/* https://zachleat.nfshost.com/web-fonts/demos/:splat 200!
+/web-fonts/scroll-anchoring/* https://zachleat.nfshost.com/web-fonts/scroll-anchoring/:splat 200!
+/registrastination/* https://zachleat.nfshost.com/registrastination/:splat 200!
+
 # Old projects redirects
 /Projects/ /projects/ 301!
 /Projects/* /projects/:splat 301!
