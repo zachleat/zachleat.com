@@ -65,6 +65,7 @@ module.exports = function(eleventyConfig) {
 			.addPassthroughCopy("presentations/")
 			.addPassthroughCopy("archive/")
 			.addPassthroughCopy("unicode-range-interchange/")
+			.addPassthroughCopy("web-fonts/demos/")
 			.addPassthroughCopy("bigtext/")
 			.addPassthroughCopy("alarmd/")
 			.addPassthroughCopy("alarmd2/");

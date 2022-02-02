@@ -25,7 +25,6 @@
 
 # Proxy redirects
 /twitter/* https://zachleat.nfshost.com/twitter/:splat 200!
-/web-fonts/demos/* https://zachleat.nfshost.com/web-fonts/demos/:splat 200!
 /web-fonts/scroll-anchoring/* https://zachleat.nfshost.com/web-fonts/scroll-anchoring/:splat 200!
 /registrastination/* https://zachleat.nfshost.com/registrastination/:splat 200!
 

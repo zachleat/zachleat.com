@@ -10,3 +10,6 @@ npx degit zachleat/bigtext bigtext
 
 rm -rf presentations/toolordie/
 npx degit zachleat/ToolOrDie presentations/toolordie
+
+rm -rf web-fonts/demos/
+npx degit zachleat/web-font-loading-recipes web-fonts/demos
