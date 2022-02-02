@@ -1,4 +1,6 @@
 # Automatic 404, see /404.html
+/feed/ /web/feed/ 301!
+/web/feed/ /web/feed/atom.xml 200!
 
 # Passthrough
 /web/css/* /web/css/:splat 200!
