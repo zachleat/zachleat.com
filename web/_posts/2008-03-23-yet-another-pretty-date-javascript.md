@@ -23,7 +23,7 @@ So, I’ve cleaned up his great start, and am releasing it to the world in the s
 
 **Download**: [Yet Another Pretty Date Implementation][4] (2 KB)
 
- [4]: http://www.zachleat.com/Lib/jquery/humane.js
+ [4]: /demos/humane/humane.js
 
 **Update**: Dates for this script must have a specific [ISO8601 format][5]: *YYYY-MM-DDTHH:MM:SSZ* (in UTC) where T and Z are literals.
 

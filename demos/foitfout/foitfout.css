@@ -1,0 +1,190 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	max-width: 64em; /* 1024px /16 */
+	margin: 0 auto;
+	padding: 0 1em;
+	font-family: sans-serif;
+}
+p {
+	margin-top: 0;
+}
+.sr-only {
+	position: absolute;
+	height: 1px;
+	width: 1px; 
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+
+/* Forms */
+form {
+	border: 1px solid #dedede;
+	padding: 1em;
+}
+input[readonly],
+input[disabled] {
+	background-color: #999;
+	color: #000;
+	opacity: .8;
+	cursor: not-allowed;
+}
+label {
+	display: block;
+}
+fieldset {
+	border: none;
+	padding: 0;
+}
+label:first-child {
+	width: 6.5em; /* 104px /16 */
+	text-align: right;
+	padding-right: .5em;
+}
+label,
+button[type=submit] {
+	font-size: 1.125em; /* 18px /16 */
+}
+button[type=button] {
+	font-size: 1em; /* 16px /16 */
+}
+fieldset label {
+	display: inline-block;
+	margin: 0;
+}
+input[type=text],
+input[type=number] {
+	font-size: 1em;
+	width: 5em;
+}
+button,
+.buttons label {
+	margin-top: 0.2222222222222em; /* 4px /18 */
+}
+button {
+	float: left;
+	clear: left;
+}
+button[type=submit] {
+	margin-top: 0.8888888888889em; /* 16px /18 */
+	font-weight: 700;
+}
+@media ( max-width: 36.8125em ) { /* 589px */
+	.buttons {
+		margin: 1em auto 0;
+		padding-top: 1em;
+		border-top: 1px solid #dedede;
+	}
+}
+@media ( min-width: 36.875em ) { /* 590px */
+	fieldset {
+		float: left;
+	}
+	.buttons {
+		float: left;
+		margin-left: 2em;
+		padding-left: 1em;
+		border-left: 1px solid #dedede;
+	}
+}
+
+.warning {
+	color: #f00;
+	font-weight: 700;
+}
+.js .warning {
+	display: none;
+}
+.js body {
+	visibility: hidden;
+}
+.fonts-loaded body {
+	visibility: visible;
+	font-family: Open Sans, sans-serif;
+}
+
+
+/* FoitFout CSS */
+.ff-card {
+	border: 1px solid #aaa;
+	padding: 1em;
+	hyphens: auto;
+	height: 10em;
+	overflow: hidden;
+	margin-bottom: 1em;
+	color: #333;
+	font-size: 1.5em;
+}
+.ff-card em {
+	/*text-decoration: underline;*/
+	/*border-bottom: 1px solid;*/
+}
+.ff-card strong {
+	background-color: #eee;
+}
+
+.ff-card-foit-roman .-roman,
+.ff-card-foit-bold .-bold,
+.ff-card-foit-italic .-italic,
+.ff-card-foit-bolditalic .-bolditalic {
+	color: transparent;
+}
+
+.ff-card-fallback-roman .-roman,
+.ff-card-fallback-bold .-bold,
+.ff-card-fallback-italic .-italic,
+.ff-card-fallback-bolditalic .-bolditalic {
+	font-family: sans-serif;
+}
+
+.ff-card h1,
+.ff-card h2,
+.ff-card h3,
+.ff-card h4,
+.ff-card h5,
+.ff-card h6 {
+	font-size: 1.5rem; /* 24px /16 */
+	margin: 0 0 .375rem; /* 6px /16 */
+}
+
+@media (min-width: 41.25em) { /* 660px /16 */
+	.ff-card-panel {
+		float: left;
+		width: 50%;
+	}
+}
+.ff-card-label {
+	margin-bottom: 0;
+}
+.ff-card-label b {
+	font-size: 0.75em; /* 18px /24 */
+	font-weight: 400;
+}
+.ff-card-label .ff-card-repaints {
+	color: red;
+	font-weight: 700;
+	font-size: 0.5833333333333em; /* 14px /24 */
+	margin-bottom: 0.2142857142857em; /* 3px /14 */
+}
+@media (min-width: 41.25em) and (max-width: 56.1875em) { /* 660px /16, 899px /16 */
+	.ff-card-label .ff-card-repaints {
+		display: block;
+	}
+}
+.ff-card-start,
+.ff-card-start strong {
+	background-color: #333;
+}
+.ff-card-finish:not(.ff-card-start) {
+	background-color: #ccc;
+	opacity: .3;
+}

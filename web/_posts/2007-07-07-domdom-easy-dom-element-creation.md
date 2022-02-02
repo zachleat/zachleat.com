@@ -200,9 +200,9 @@ If you're still reading this encyclopedia, here are some links:
 
 
  [3]: http://www.jackslocum.com/blog/examples/domhelper.php
- [4]: http://www.zachleat.com/Projects/DOMDom/benchmark.html
- [5]: http://www.zachleat.com/Projects/DOMDom/DOMDom.js
- [6]: http://www.zachleat.com/Projects/DOMDom/DOMDom-min-jsmin.js
- [7]: http://www.zachleat.com/Projects/DOMDom/DOMDom-min-packer.js
- [8]: http://www.zachleat.com/Projects/DOMDom/tests.html
+ [4]: http://www.zachleat.com/projects/domdom/benchmark.html
+ [5]: http://www.zachleat.com/projects/domdom/DOMDom.js
+ [6]: http://www.zachleat.com/projects/domdom/DOMDom-min-jsmin.js
+ [7]: http://www.zachleat.com/projects/domdom/DOMDom-min-packer.js
+ [8]: http://www.zachleat.com/projects/domdom/tests.html
  [9]: http://www.encyclopedia.com/doc/1O27-dom1.html

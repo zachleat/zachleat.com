@@ -1,0 +1,13 @@
+.ymod-scrollingHeader { width: 100%; overflow-x: hidden; position: relative; }
+.ymod-scrollingBody { width: 100%; overflow: auto; _padding-bottom: 16px; /* hack for scrollbar */ }
+.ymod-scrollingBoth .ymod-scrollingBody { overflow-y: auto; padding-bottom: 0; }
+
+/* colors and customizations */
+.yui-skin-sam .ymod-scrollingBody table { border: 0; }
+
+/* skin overrides */
+.yui-skin-sam .ymod-scrollingBody .yui-dt-table td.yui-dt-last { border-right: 0; }
+.yui-skin-sam .ymod-scrollingBody .yui-dt-table tbody { border: 0; }
+
+/* .ymod-scrollingBody { overflow-y: hidden; } */
+.ymod-scrollingBody { height: 100px; }

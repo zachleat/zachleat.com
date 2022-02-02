@@ -1,0 +1,66 @@
+html { overflow: hidden; }
+body { background: #000; color: #777; font-weight: bold; }
+a { color: #777/*#0c0*/; }
+input, select, button { background-color: #000; color: #777; border: 1px solid #777; }
+label { padding-right: 14px; }
+.hidden { display: none ! important; }
+.shown {}
+.blended { color: #444; }
+#clock { text-align: center; font: 220px Arial; font-weight: bold; white-space: nowrap; }
+#notes { padding: 4px 0 0 8px; color: #444; font-weight: normal; text-align: left; }
+#notes .clickable { font-weight: bold; }
+#alarm { position: absolute; left: 0; bottom: 70px; z-index: 2; text-align: center; width: 100%; }
+#alarm object, #alarm embed { margin: auto; }
+#alarm span { display: block; font-size: 72px; border: 1px solid; width: 425px; margin: auto; background-color: #111; }
+#alarm #kill-note { font-size: 14px; border-top: 0; }
+#footer { position: absolute; left: 0; bottom: 0; padding: 8px; display: block; text-align: left; white-space: nowrap; }
+#cr { position: absolute; top: 0; right: 0; padding: 4px 8px 0 0; }
+#cr label { display: block; text-align: right; padding-right: 0; margin-top: 6px; }
+#cr div.inline { margin-top: 6px; }
+#cr label.first { margin-top: 0; }
+#cr div.inline label { display: inline; padding-right: 0; padding-left: 14px; }
+
+#dow { z-index: 2; text-align:right; position: absolute; bottom: 0; right: 0; padding: 8px; }
+#dow label input { margin-right: 4px; cursor: pointer; }
+#dow label { padding-right: 6px; cursor: pointer; }
+.clickable { cursor: pointer; }
+.suffix { font-size: 40%; }
+#menu { clear: left; }
+#active { height: 120px; }
+#active div.alarm { float: left; margin-left: 8px; padding: 10px 6px; border: 1px solid #222; text-align: center; width: 140px; }
+#active div.alarm.first { margin-left: 0; }
+#active div.alarm div.time { font-size: 26px; }
+#active div.alarm div.diff { font-size: 26px; }
+#active div.alarm.first div.diff { font-size: 40px; }
+#active span.kill { float: right; font: 86% 'Arial Black'; position: relative; top: -6px; text-transform: uppercase; font-weight: bolder; text-align: right; }
+#preferences { margin-top: 10px; opacity: 0.86; background-color: #222; padding: 10px; }
+#preferences label { padding: 3px 0 6px 6px !important; text-align: left; }
+#fontBigger, #fontSmaller { vertical-align: bottom; font-size: 120%; }
+#srcList button { margin-left: 4px; }
+.checkbox { border: 0; }
+
+.red .color-day { color: #f00; }
+.red .color-dusk { color: #a00; }
+.red .color-morning { color: #900; }
+.red .color-night { color: #600; }
+.red .color-night-border { border-color: #300 !important; }
+
+.green .color-day { color: #0f0; }
+.green .color-dusk { color: #0a0; }
+.green .color-morning { color: #090; }
+.green .color-night { color: #060; }
+.green .color-night-border { border-color: #030 !important; }
+
+.blue .color-day { color: #00f; }
+.blue .color-dusk { color: #00a; }
+.blue .color-morning { color: #009; }
+.blue .color-night { color: #006; }
+.blue .color-night-border { border-color: #003 !important; }
+
+.darkred { color: #222; }
+.darkred .color-day { color: #400; }
+.darkred .color-dusk { color: #200; }
+.darkred .color-morning { color: #300; }
+.darkred .color-night { color: #200; }
+.darkred .color-night-border { border-color: #100 !important; }
+.darkred input, .darkred select, .darkred button { color: #222; border: 1px solid #222; }

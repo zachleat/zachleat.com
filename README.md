@@ -22,6 +22,6 @@ To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 
  * [“zachleat.com is Dead, Long Live zachleat.com,” a blog post describing the initial launch](http://www.zachleat.com/web/zachleat-is-dead/)
 
-## Pending
+## Migration outstanding items
 
-1. Separate app for unicode-range-interchange and redirect.
+1. `/history/volc/`

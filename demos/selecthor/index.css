@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	font-size: 16px;
+}
+html,
+body {
+	margin: 0;
+}
+body {
+	background-color: #333;
+	color: #fff;
+	font-family: sans-serif;
+}
+pre {
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+	font-size: 1em;
+}
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+.sourcecode {
+	font-size: 1.5em;
+	margin: 0;
+	margin-top: 1.666666666667em; /* 40px /24 */
+}
+.sourcecode-wrap {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+.selector {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.selector-input {
+	font-size: 1.5em;
+	width: 100%;
+	padding: 6px 10px;
+	font-family: monospace;
+	background-color: #555;
+	color: #fff;
+	border-width: 0;
+	border-bottom: 1px solid #000;
+	box-shadow: 0 2px 0 2px rgba( 0, 0, 0, .4);
+}
+.selector-input:focus {
+	outline-offset: -2px;
+}
+.selector-count {
+	position: absolute;
+	right: 6em;
+	top: 0;
+	text-transform: uppercase;
+	line-height: 2.5;
+}
+.selector-wrap {
+	position: absolute;
+	top: 0;
+	right: 1em;
+	line-height: 2.5;
+}
+.match {
+	background-color: #900;
+}
+.hljs {
+	overflow-x: initial;
+}
+.hljs-tag {
+	transition: background-color .4s;
+}

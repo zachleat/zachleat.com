@@ -68,7 +68,7 @@ Next, we’ll extend the YAHOO.util.Dom class into a new Y2 namespace. This will
             <b></b>
           </div>
         </div>
-        <script type="text/javascript" src="/Lib/yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="modules/yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
         <script type="text/javascript" src="jdomquery-1.1.3.1-packer.js"></script>
         <!-- <script type="text/javascript" src="DomQuery-packer.js"> -->
         <script type="text/javascript" src="Dom.js"></script>

@@ -9,3 +9,7 @@ _cache
 .cache
 web/dist
 og/index.liquid
+
+# Archived static content not available on git via fetch-projects.sh
+archive/
+alarmd/

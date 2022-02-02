@@ -21,6 +21,7 @@
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "debug": "^4.3.3",
+    "degit": "^2.8.4",
     "dotenv": "^14.3.2",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.0.0",
@@ -54,10 +55,11 @@
     "twitter-avatar-url": "^2.1.0"
   },
   "scripts": {
+    "fetch-projects": "fetch-projects.sh",
     "check-links": "npx check-html-links _site",
     "build": "npx grunt && npx @11ty/eleventy --quiet",
     "start": "npx grunt && npx @11ty/eleventy --quiet --serve",
-    "production": "node fetch-analytics-data.js && npx grunt production"
+    "production": "npm run fetch-projects && node fetch-analytics-data.js && npx grunt production"
   },
   "repository": {
     "type": "git",

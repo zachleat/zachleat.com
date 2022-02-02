@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>selecthor</title>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/agate.min.css">
+		<link rel="stylesheet" href="index.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+		<script src="index.js" async></script>
+	</head>
+	<body>
+		<form class="selector">
+			<label class="sr-only">CSS Selector</label>
+				<input type="text" id="selector-input" class="selector-input" placeholder="CSS selector" autofocus>
+			</label>
+			<label class="selector-wrap">
+				<input type="checkbox" id="sourcecode-wrap"> Wrap
+			</label>
+			<div id="selector-count" class="selector-count"></div>
+		</form>
+		<pre class="sourcecode" id="source-code"><code class="html" id="import-target"></code></pre>
+		<script>
+		// Google Analytics
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-588046-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+	</body>
+</html>

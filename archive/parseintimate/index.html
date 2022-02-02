@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Let's get parseIntimate</title>
+		<link type="text/plain" rel="author" href="http://zachleat.com/parseintimate/humans.txt">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Pinyon+Script:400normal&subset=all">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="src/parseintimate.css">
+		<style>
+		body {
+			/* Backgrounds provided by romancebookcovers.com
+			   Note that I do not vouch for the SFW-iness of that site. */
+			/* christmas, darkgold, darkprince, ship, passion */
+			background-image: url(img/darkgold.jpg);
+		}
+		</style>
+	</head>
+	<body>
+		<h2 id="title">Let's get <span class="brand">parseIntimate</span></h2>
+		<div id="instructions" class="modal">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">x</a>
+				<h3>Let's get <span class="brand">parseIntimate</span></h3>
+			</div>
+			<div class="modal-body">
+				<p>Did you know that JavaScript's <code>parseInt</code> function to convert strings to integers has an optional second argument to <em>explicitly</em> define a <code>radix</code>? It specifies the base of the number you're going to parse. New JavaScript developers often assume that not specifying a base means it will use the most common one: base 10. <strong>This is not always true</strong>! Most JavaScript runtimes will attempt to guess the radix based on the start of the value.  If the number begins with a <code>0</code>, it will parse as octal (radix of 8). If the number starts with <code>0x</code>, it will parse as hexadecimal (radix of 16).</p>
+				<p>That's why it's very important that our code <strong>always specify a radix</strong>.</p>
+				<p>Try it out: <code class="example">parseInt("09");</code> or <code class="example">parseInt("010");</code></p>
+				<ul>
+					<li><strong>Read more</strong>: <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/parseInt">parseInt on Mozilla Developer Network</a>, taking special note that ECMAScript 5 removes implicit octal parsing.</li>
+					<li>Current status: Octal parsing has been removed in <a href="http://trac.webkit.org/changeset/103922">WebKit nightly</a> and <a href="http://msdn.microsoft.com/en-us/library/x53yedee%28VS.85%29.aspx">Internet Explorer 9</a>. A <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=510415#c5">Firefox Bugzilla ticket</a> is still in the air. (Via <a href="http://twitter.com/paul_irish">@paul_irish</a>)
+				</ul>
+				This site was hand-crafted by The Ambassador of JavaScript Love: <a href="http://twitter.com/zachleat/">@zachleat</a>
+			</div>
+		</div>
+		<div id="log"></div>
+		<div class="terminal" id="commandline">
+			<div class="command"><span class="prompt">&gt; </span>parseInt(</strong>“<span id="parseintimate" class="numeric">imate</span>”<strong>);</strong></div>
+			<a id="show-instructions" class="btn" data-toggle="modal" href="#instructions">How do I get parseIntimate?</a>
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.js"></script>
+		<script src="src/parseintimate.js"></script>
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-588046-6']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			document.body.appendChild(ga);
+		})();
+		</script>
+	</body>
+</html>

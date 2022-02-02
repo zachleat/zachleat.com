@@ -7,6 +7,7 @@ categories:
   - project
 tags:
   - project
+deprecated: true
 ---
 
 This class is pretty much a direct port of [John Resig’s JavaScript Pretty Date][1] to PHP 5. A few notes:

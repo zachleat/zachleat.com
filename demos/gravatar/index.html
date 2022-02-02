@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JavaScript Gravatar Plugin written by Zach Leatherman</title>
+        <meta name="author" content="Zach Leatherman, http://www.zachleat.com/">
+        <meta name="description" content="Dynamically insert a gravatar image on your page.">
+        <meta name="keywords" content="jQuery, plugin, gravatar, dynamic, preview">
+        <meta name="robots" content="index, follow">
+        <style type="text/css">
+        body, input, select, button { font-family: Georgia,"Times New Roman",Times,serif; }
+        body { text-align: center; }
+        input { width: 190px; }
+        img { border: 0; vertical-align: top; }
+        div { width: 620px; margin: auto; text-align: left; }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p><a href="/web/2009/01/08/scare-your-visitors-with-this-javascript-gravatar-plugin/"><img src="http://www.zachleat.com/web/wp-content/themes/hemingway/images/title.png"/></a></p>
+
+            <h1>JavaScript Gravatar Plugin</h1>
+            <h4>This is a demo for a <a href="/web/2009/01/08/scare-your-visitors-with-this-javascript-gravatar-plugin/">zachleat.com blog post</a>.</h4>
+            <p>
+                <em>This field isn't even in a form (thus cannot be submitted anywhere),
+                    and Firebug will tell you that I'm not ajaxing it anywhere.  Are you having Twply flashbacks?
+                    I'll give you my e-mail for free.</em>
+            </p>
+            <p>
+                <label for="email">E-mail Address</label> <input type="text" id="email" value="zachleatherman@gmail.com"/>
+                <button id="fetch">Fetch</button>
+            </p>
+            <p>
+                <label for="rating">Options:</label>
+                <select id="rating">
+                    <option value="g">Max Rated G</option>
+                    <option value="pg" selected="selected">Max Rated PG</option>
+                    <option value="r">Max Rated R</option>
+                    <option value="x">Max Rated X</option>
+                </select>
+                <select id="size">
+                    <option value="40">Tiny (40px)</option>
+                    <option value="" selected="selected">Default (80px)</option>
+                    <option value="140">Medium (180px)</option>
+                    <option value="250">Huge (250px)</option>
+                </select>
+                <select id="url">
+                    <option value="" selected="selected">Default to:</option>
+                    <option value="identicon">Identicon</option>
+                    <option value="monsterid">MonsterID</option>
+                    <option value="wavatar">Wavatar</option>
+                </select>
+                <input type="text" id="suppliedurl" value="http://www.tournology.com/images/larger-icon.png"/>
+            </p>
+        </div>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+        <script type="text/javascript" src="md5.js"></script>
+        <script type="text/javascript" src="jquery.gravatar.js"></script>
+        <script type="text/javascript">
+        $(function()
+        {
+            $('#fetch').click(function(event)
+            {
+                $('div').append($.gravatar($('#email').val(), {
+                    method: 'append',
+                    size: $('#size').val(),
+                    image: $('#url').val() || $('#suppliedurl').val(),
+                    rating: $('#rating').val()
+                })); 
+            });
+        });        </script>
+        <script type="text/javascript" src="http://www.google-analytics.com/urchin.js"></script>
+        <script type="text/javascript">_uacct = "UA-588046-1";urchinTracker();</script>
+    </body>
+</html>

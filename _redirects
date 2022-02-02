@@ -9,8 +9,18 @@
 # Weird URL
 /résumé/ /resume/ 301!
 
+# Libraries
+/Lib/jquery/humane.js /demos/humane/humane.js 200!
+/Lib/* /archive/lib/:splat 200!
+
 # Demos
+/javascript/gravatar/ /demos/gravatar/ 301!
 /demos/animate-oval-path/animate-oval-path.html /demos/animate-oval-path/ 301!
+/foitfout/ /demos/foitfout/ 301!
+/domsailbloat/ /demos/domsailbloat/ 301!
+/randsom/ /demos/randsom/ 301!
+/selecthor/ /demos/selecthor/ 301!
+#/history/* /archive/:splat 301!
 
 # Old projects redirects
 /Projects/ /projects/ 301!
@@ -19,6 +29,9 @@
 /projects/alarmd/* /alarmd/:splat 301!
 /projects/alarmd-beta/ /alarmd2/ 301!
 /projects/alarmd-beta/* /alarmd2/:splat 301!
+/bigtext/ /bigtext/demo/ 301!
+/parseintimate/ /archive/parseintimate/ 301!
+/busyness-sample/ /archive/busyness-sample/ 301!
 
 # Grab bag
 /web/taxonomy/* /web/pragmatic/:splat 301!

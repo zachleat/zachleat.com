@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+		<title>ALARMd.com Internet Alarm Clock</title>
+		<meta name="author" content="Zach Leatherman, zachleatherman@gmail.com"/>
+		<meta name="description" content="User customizable, browser embedded online internet alarm clock.  Plays your YouTube videos, MP3's, and Last.fm streams."/>
+		<meta name="keywords" content="alarm clock, internet alarm clock, online alarm clock, alarm, youtube, last.fm"/>
+		<meta name="robots" content="index, follow"/>
+		<link rel="stylesheet" type="text/css" href="lib/reset-fonts-grids.css"/>
+		<link rel="stylesheet" type="text/css" href="alarmd.css"/>
+	</head>
+	<body class="red">
+		<div id="cr">
+			<label class="first"><a href="http://www.alarmd.com" title="New Domain!">ALARMd<span class="blended">.com</span></a><span class="hide-night-mode"> by <a href="http://www.zachleat.com/">zachleat</a></span></label>
+			<label for="lite" class="clickable">
+				<input id="lite" type="checkbox" class="checkbox" value="lite" /> Naked
+			</label>
+			<label id="about" class="hide-night-mode"><a href="http://www.zachleat.com/web/2007/06/18/wake-up-to-youtube-on-my-internet-alarm-clock/" title="Read about ALARMd">Readme</a></label>
+			<label id="save" class="color-dusk clickable hide-night-mode">Save</label>
+			<label id="preferences-display" class="clickable color-day hide-night-mode">Options</label>
+			<div id="preferences" class="hidden">
+				<label class="color-night-border">
+					Font |
+					<span id="fontSmaller" class="clickable color-dusk">&laquo;&laquo;</span> |
+					<span id="fontSet" class="clickable color-dusk">Size</span> |
+					<span id="fontBigger" class="clickable color-dusk">&raquo;&raquo;</span> |
+					<span id="fontMax" class="clickable color-dusk">Max</span>
+				</label>
+				<label class="color-night-border">
+					Color |
+					<span alarmd:color="red" class="colorSet color-dusk clickable">R</span> |
+					<span alarmd:color="green" class="colorSet color-dusk clickable">G</span> |
+					<span alarmd:color="blue" class="colorSet color-dusk clickable">B</span>
+				</label>
+				<label id="reset" class="color-night-border color-dusk clickable">Delete All Alarms</label>
+				<label id="default" class="color-night-border color-dusk clickable">Reset All Settings</label>
+			</div>
+			<label id="cached" class="hidden">Cached</label>
+			<label for="offline" class="clickable hidden">
+				<input id="offline" type="checkbox" class="checkbox" value="offline" /> Offline
+			</label>
+		</div>
+		<div id="dow">
+			<div id="tomorrow-alert" class="hidden color-dusk">Tomorrow is not checked.</div>
+			<div id="today-alert" class="hidden color-day">Today is not checked,<br/>ALARMS WILL NOT SOUND</div>
+			<label class="dow color-dusk hide-night-mode" for="alarm-dow-0" title="Sunday"> <input type="checkbox" class="checkbox" id="alarm-dow-0" value="0"/> S </label>
+			<label class="dow hide-night-mode" for="alarm-dow-1" title="Monday"> <input type="checkbox" class="checkbox" id="alarm-dow-1" value="1"/> M </label>
+			<label class="dow hide-night-mode" for="alarm-dow-2" title="Tuesday"> <input type="checkbox" class="checkbox" id="alarm-dow-2" value="2"/> T </label>
+			<label class="dow hide-night-mode" for="alarm-dow-3" title="Wednesday"> <input type="checkbox" class="checkbox" id="alarm-dow-3" value="3"/> W </label>
+			<label class="dow hide-night-mode" for="alarm-dow-4" title="Thursday"> <input type="checkbox" class="checkbox" id="alarm-dow-4" value="4"/> T </label>
+			<label class="dow hide-night-mode" for="alarm-dow-5" title="Friday"> <input type="checkbox" class="checkbox" id="alarm-dow-5" value="5"/> F </label>
+			<label class="dow hide-night-mode" for="alarm-dow-6" title="Saturday"> <input type="checkbox" class="checkbox" id="alarm-dow-6" value="6"/> S </label>
+		</div>
+		<div id="notes" class="hide-night-mode">
+			<label for="format" class="clickable">
+				<input id="format" type="checkbox" class="checkbox" value="24" /> 24 Hour
+			</label>
+			<label for="seconds" class="clickable">
+				<input id="seconds" type="checkbox" class="checkbox" value="seconds" /> Seconds
+			</label>
+			<label for="countdown" class="clickable">
+				<input id="countdown" type="checkbox" class="checkbox" value="countdown" /> Count Down
+			</label>
+			<label id="zone"></label>
+		</div>
+		<div id="clock" class="color-day"></div>
+		<div id="alarm"></div>
+		<div id="footer">
+			<div id="active" class="hide-night-mode"></div>
+			<div id="menu">
+				<label id="add" class="color-dusk clickable hide-night-mode">Add Ala<u>r</u>m</label>
+				<label id="test" class="color-dusk clickable hide-night-mode">Test</label>
+				<label id="srcList" valdi:widget="multipleOptionList" class="hide-night-mode">
+					<select id="src" valdi:widgetComponent="optionList" valdi:allowDelete="true">
+						<option value="">-- Pick an alarm --</option>
+						<option value="http://www.youtube.com/v/42peBWLbYto">Watch Rage Against the Machine - Wake Up</option>
+						<option value="http://www.youtube.com/v/-50fhqD3HtA">Watch Technotronic - Get Up</option>
+						<option value="http://www.youtube.com/v/T4Igb5Yors4">Watch Andy McKee - For My Father</option>
+						<option value="http://www.youtube.com/v/Q9t7TrCESnM">Watch Foo Fighters - Best of You</option>
+						<option value="last.fm/tag/indie">Listen to last.fm tagged Indie</option>
+						<option value="last.fm/tag/rock">Listen to last.fm tagged Rock</option>
+						<!-- <option value="last.fm/user/theweezel">Listen to last.fm User theweezel</option> -->
+						<!-- <option value="last.fm/playlist/theweezel">Listen to last.fm Playlist from theweezel</option> -->
+						<!-- <option value="https://www.pandora.com:443/radio/tuner_8_0_0_0_pandora_mini.swf">Pandora Internet Radio (Embedded)</option> -->
+						<option value="http://www.pandora.com/?cmd=mini">Listen to Pandora Radio (New Window)</option>
+					</select>
+					<button valdi:widgetComponent="removeButton">Delete</button>
+					<button valdi:widgetComponent="addButton" valdi:prompt="Input the URL of the source (Accepts: MP3, YouTube) OR last.fm ('last.fm/tag/yourTag', 'last.fm/user/yourUsername') OR defaults to any URL">Add</button>
+					<!--button id="default">Reset</button-->
+				</label>
+			</div>
+		</div>
+		<!-- Notes: Opera doesn't fire the onunload, so settings are not saved when the page is left. -->
+		<script type="text/javascript" src="lib/utilities.js"></script>
+		<script type="text/javascript">var Ext = {};</script>
+		<script type="text/javascript" src="modules/ext/source/DomQuery.js"></script>
+		<script type="text/javascript" src="lib/valdi.js"></script>
+		<script type="text/javascript" src="valdi.alarmd.js"></script>
+		<script type="text/javascript" src="lib/valdi.form.js"></script>
+		<script type="text/javascript" src="lib/valdi.element.js"></script>
+		<script type="text/javascript" src="lib/valdi.cookie.js"></script>
+		<script type="text/javascript" src="lib/valdi.widgets.js"></script>
+		<script type="text/javascript" src="alarmd.js"></script>
+		<script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+		<script type="text/javascript">_uacct = "UA-588046-1";urchinTracker();</script>
+	</body>
+</html>

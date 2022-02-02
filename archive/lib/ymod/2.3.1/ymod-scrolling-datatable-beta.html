@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html debug="true">
+	<head>
+		<link type="text/css" rel="stylesheet" href="/Lib/yui/2.3.1/reset-fonts-grids/reset-fonts-grids.css">
+		<link type="text/css" rel="stylesheet" href="/Lib/yui/2.3.1/base/base-min.css">
+		<style type="text/css"><!-- pretty example css -->
+		.label { font-weight: bold; }
+		.top { float: right; }
+		</style>
+		<link type="text/css" rel="stylesheet" href="/Lib/yui/2.3.1/datatable/assets/skins/sam/datatable.css">
+		<link type="text/css" rel="stylesheet" href="ymod-scrolling.css">
+        <style type="text/css">
+		.yui-dt-table th, .yui-dt-table tr.yui-dt-first td { width: 100px; } /* table header and only the first row (for drag and drop) */
+		.ymod-scrollingBody .yui-dt-table tr.yui-dt-first td.yui-dt-last { width: 84px; } /* last table cell (for crappy scrollbar problem) */
+		.ymod-scrollingHeader table { width: 800px; }
+		.ymod-scrollingBody table { width: 784px; }
+		</style>
+	</head>
+	<body class="yui-skin-sam">
+		<div id="doc3">
+			<div id="bd">
+				<div class="yui-gd"> 
+					<div class="yui-u first">
+						<div>
+							<div>Test Environment:</div>
+							<ul>
+								<li>
+									<script type="text/javascript">
+										document.write( document.compatMode=='CSS1Compat' ? 'Is in Standards Mode, NOT Quirks Mode.' : 'Is in Quirks Mode, NOT Standards Mode.' );
+									</script>
+								</li>
+								<li>
+									Standards Mode causes the W3C Box Model, which may affect any width declarations you make in CSS (Width excludes padding, border, and margins). Learn more about <a href="http://css.maxdesign.com.au/listamatic/about-boxmodel.htm">Box Models</a>.
+								</li>
+							</ul>
+							<div>Tests:</div>
+							<ul>
+								<!-- <li><a href="#standardDataTable">Standard, No Perks</a></li> -->
+								<li><a href="#scrollingDataTable">Scrolling</a></li>
+								<!-- <li><a href="#nestedHeaderDataTable">Nested Column Headers</a></li>
+								<li><a href="#sortingDataTable">Sorting</a></li> -->
+								<li><a href="#abDataTable">Scrolling and Nested Column Headers</a></li>
+								<li><a href="#acDataTable">Scrolling and Sorting</a></li>
+								<!-- <li><a href="#bcDataTable">Nested Column Headers and Sorting</a></li> -->
+								<li><a href="#abcDataTable">Scrolling, Nested Column Headers, and Sorting</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="yui-u">
+						<!-- <div class="label">Standard, No Perks</div>
+						<div id="standardDataTable" class="dataTable"></div>
+						<br/> -->
+						<div>
+							<div class="label">Scrolling with Vertical Overflow (Header Should Remain at the Top when Scrolling)</div>
+						</div>
+						<div id="scrollingDataTable" class="dataTable"></div>
+						<a href="#doc3" class="top">Top</a>
+						<br/>
+						<!-- <div>
+							<div class="label">Nested Column Headers</div>
+						</div>
+						<div id="nestedHeaderDataTable" class="dataTable"></div>
+						<a href="#doc3" class="top">Top</a>
+						<br/>
+						<div>
+							<div class="label">Sorting</div>
+						</div>
+						<div id="sortingDataTable" class="dataTable"></div>
+						<a href="#doc3" class="top">Top</a>
+						<br/> -->
+						<div>
+							<div class="label">Scrolling and Nested Column Headers</div>
+						</div>
+						<div id="abDataTable" class="dataTable"></div>
+						<a href="#doc3" class="top">Top</a>
+						<br/>
+						<div>
+							<div class="label">Scrolling and Sorting</div>
+						</div>
+						<div id="acDataTable" class="dataTable"></div>
+						<a href="#doc3" class="top">Top</a>
+						<br/>
+						<!-- <div>
+							<div class="label">Nested Column Headers and Sorting</div>
+						</div>
+						<div id="bcDataTable" class="dataTable"></div>
+						<a href="#doc3" class="top">Top</a>
+						<br/> -->
+						<div>
+							<div class="label">Scrolling, Nested Column Headers, and Sorting</div>
+						</div>
+						<div id="abcDataTable" class="dataTable"></div>
+						<a href="#doc3" class="top">Top</a>
+						<br/>
+						<br/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/Lib/yui/2.3.1/yahoo-dom-event/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="/Lib/yui/2.3.1/element/element-beta-min.js"></script>
+		<script type="text/javascript" src="/Lib/yui/2.3.1/datasource/datasource-beta-min.js"></script>
+		<script type="text/javascript" src="/Lib/yui/2.3.1/datatable/datatable-beta-min.js"></script>
+		<!-- <script type="text/javascript" src="ymod-scrolling-datatable-beta.js"></script> -->
+		<script type="text/javascript">
+		var data = [
+			{ columnA: 1, columnB: '2', columnC: '3', columnD: '4', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 5, columnB: '6', columnC: '7', columnD: '8', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 9, columnB: '10', columnC: '11', columnD: '12', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 13, columnB: '14', columnC: '15', columnD: '16', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 17, columnB: '18', columnC: '19', columnD: '20', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 21, columnB: '22', columnC: '23', columnD: '24', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 25, columnB: '26', columnC: '27', columnD: '28', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 29, columnB: '30', columnC: '31', columnD: '32', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 33, columnB: '34', columnC: '35', columnD: '36', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 37, columnB: '38', columnC: '39', columnD: '40', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 41, columnB: '42', columnC: '43', columnD: '44', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 45, columnB: '46', columnC: '47', columnD: '48', columnE: '5', columnF: '6', columnG: '7', columnH: '8' },
+			{ columnA: 49, columnB: '50', columnC: '51', columnD: '52', columnE: '5', columnF: '6', columnG: '7', columnH: '8' }
+		];
+		var columnSet = [
+			{ key: 'columnA', label: 'Column A', resizeable: true },
+			{ key: 'columnB', label: 'Column B', resizeable: true },
+			{ key: 'columnC', label: 'Column C', resizeable: true },
+			{ key: 'columnD', label: 'Column D', resizeable: true },
+			{ key: 'columnE', label: 'Column E', resizeable: true },
+			{ key: 'columnF', label: 'Column F', resizeable: true },
+			{ key: 'columnG', label: 'Column G', resizeable: true },
+			{ key: 'columnH', label: 'Column H', resizeable: true }
+		];
+
+		var dataSource = new YAHOO.util.DataSource( data );
+		dataSource.responseType = YAHOO.util.DataSource.TYPE_JSARRAY;
+		dataSource.responseSchema = {
+			fields: [ 'columnA', 'columnB', 'columnC', 'columnD', 'columnE', 'columnF', 'columnG', 'columnH' ]
+		};
+		//var table = new YAHOO.widget.DataTable( 'standardDataTable', columnSet, dataSource, { selectionMode: 'single' } );
+		//table.subscribe('cellClickEvent',table.onEventSelectRow); 
+
+		var table = new YAHOO.widget.DataTable( 'scrollingDataTable', columnSet, dataSource, { scrollable: true, selectionMode: 'single' } );
+		table.subscribe('cellClickEvent',table.onEventSelectRow); 
+
+		var nestedColumnSet = [
+			{ key: 'columnA', label: 'Column A', resizeable: true },
+			{ label: 'Column Group', 
+				children: [
+					{ key: 'columnB', label: 'Column B', resizeable: true },
+					{ key: 'columnC', label: 'Column C', resizeable: true }
+				]
+			},
+			{ key: 'columnD', label: 'Column D', resizeable: true },
+			{ key: 'columnE', label: 'Column E', resizeable: true },
+			{ key: 'columnF', label: 'Column F', resizeable: true },
+			{ key: 'columnG', label: 'Column G', resizeable: true },
+			{ key: 'columnH', label: 'Column H', resizeable: true }
+		];
+		//var table = new YAHOO.widget.DataTable( 'nestedHeaderDataTable', nestedColumnSet, dataSource, { selectionMode: 'single' } );
+		//table.subscribe('cellClickEvent',table.onEventSelectRow); 
+
+		var sortingColumnSet = [
+			{ key: 'columnA', label: 'Column A', sortable: true, type: 'number', resizeable: true },
+			{ key: 'columnB', label: 'Column B', sortable: true, type: 'number', resizeable: true },
+			{ key: 'columnC', label: 'Column C', sortable: true, type: 'number', resizeable: true },
+			{ key: 'columnD', label: 'Column D', sortable: true, type: 'number', resizeable: true },
+			{ key: 'columnE', label: 'Column E', sortable: true, resizeable: true },
+			{ key: 'columnF', label: 'Column F', sortable: true, resizeable: true },
+			{ key: 'columnG', label: 'Column G', sortable: true, resizeable: true },
+			{ key: 'columnH', label: 'Column H', sortable: true, resizeable: true }
+		];
+		//var table = new YAHOO.widget.DataTable( 'sortingDataTable', sortingColumnSet, dataSource, { selectionMode: 'single' } );
+		//table.subscribe('cellClickEvent',table.onEventSelectRow); 
+
+		var table = new YAHOO.widget.DataTable( 'abDataTable', nestedColumnSet, dataSource, { scrollable: true, selectionMode: 'single' } );
+		table.subscribe('cellClickEvent',table.onEventSelectRow); 
+		var table = new YAHOO.widget.DataTable( 'acDataTable', sortingColumnSet, dataSource, { scrollable: true, selectionMode: 'single' } );
+		table.subscribe('cellClickEvent',table.onEventSelectRow); 
+
+		var nestedSortingColumnSet = [
+			{ key: 'columnA', label: 'Column A', sortable: true, type: 'number', resizeable: true },
+			{ label: 'Column Group', 
+				children: [
+					{ key: 'columnB', label: 'Column B', sortable: true, type: 'number', resizeable: true },
+					{ key: 'columnC', label: 'Column C', sortable: true, type: 'number', resizeable: true }
+				]
+			},
+			{ key: 'columnD', label: 'Column D', sortable: true, type: 'number', resizeable: true },
+			{ key: 'columnE', label: 'Column E', sortable: true, resizeable: true },
+			{ key: 'columnF', label: 'Column F', sortable: true, resizeable: true },
+			{ key: 'columnG', label: 'Column G', sortable: true, resizeable: true },
+			{ key: 'columnH', label: 'Column H', sortable: true, resizeable: true }
+		];
+		//var table = new YAHOO.widget.DataTable( 'bcDataTable', nestedSortingColumnSet, dataSource, { selectionMode: 'single' } );
+		//table.subscribe('cellClickEvent',table.onEventSelectRow); 
+
+		var table = new YAHOO.widget.DataTable( 'abcDataTable', nestedSortingColumnSet, dataSource, { scrollable: true, selectionMode: 'single' } );
+		table.subscribe('cellClickEvent',table.onEventSelectRow);
+		</script>
+	</body>
+</html>

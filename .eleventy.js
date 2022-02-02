@@ -46,6 +46,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy("_redirects")
 		.addPassthroughCopy("img/")
+		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
 		.addPassthroughCopy("resume/resume.pdf")
 		.addPassthroughCopy("web/css/fonts")
@@ -56,12 +57,13 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("og/*.jpeg")
 		.addPassthroughCopy("og/*.png")
 		.addPassthroughCopy("og/sources/")
-		.addPassthroughCopy("robots.txt")
-		.addPassthroughCopy("humans.txt")
-		.addPassthroughCopy("keybase.txt")
 		.addPassthroughCopy("demos/")
 		.addPassthroughCopy("presentations/")
-		.addPassthroughCopy("unicode-range-interchange/");
+		.addPassthroughCopy("archive/")
+		.addPassthroughCopy("unicode-range-interchange/")
+		.addPassthroughCopy("bigtext/")
+		.addPassthroughCopy("alarmd/")
+		.addPassthroughCopy("alarmd2/");
 
 	/* LAYOUTS */
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');

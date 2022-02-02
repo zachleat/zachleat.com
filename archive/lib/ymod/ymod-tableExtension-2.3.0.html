@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/2.3.0/build/datatable/assets/skins/sam/datatable.css">
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/element/element-beta-min.js"></script>
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/datasource/datasource-beta-min.js"></script>
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/datatable/datatable-beta-min.js"></script>
+        <script type="text/javascript" src="ymod-tableExtension-2.3.0.js"></script>
+        <style type="text/css">
+            /* The original table row clicked on */
+            tr.ymod-expanded {}
+            /* Row containing the expanded content */
+            tr.ymod-expandedData {}
+            /* Div containing the expanded content inside the row */
+            tr.ymod-expandedData div.ymod-expandedDataContent { background-color: navy; padding: 2px 6px; }
+        </style>
+    </head>
+	<body class="yui-skin-sam">
+        <div id="myMarkedUpContainer">
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>AAA</th>
+                        <th>BBB</th>
+                        <th>CCC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Test Data</td>
+                        <td>CCCP</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>This</td>
+                        <td>everyone</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>is</td>
+                        <td>hello</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>my</td>
+                        <td>coccyx</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>test</td>
+                        <td>hairline</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>data</td>
+                        <td>receding</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>for</td>
+                        <td>kingpin</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script type="text/javascript">
+        var myDataSource = new YAHOO.util.DataSource(YAHOO.util.Dom.get("myTable"));
+        myDataSource.responseType = YAHOO.util.DataSource.TYPE_HTMLTABLE;
+        myDataSource.responseSchema = {
+            fields: [{key:"AAA", parser:YAHOO.util.DataSource.parseNumber},
+                    {key:"BBB"},
+                    {key:"CCC"}
+            ]
+        };
+
+        var myColumnDefs = [
+            {key:"AAA", sortable: true},
+            {key:"BBB", sortable: true},
+            {key:"CCC", sortable: true}
+        ];
+
+        var myDataTable = new YAHOO.widget.DataTable("myMarkedUpContainer", myColumnDefs, myDataSource, { selectionMode: 'single' });
+        YAHOO.ymod.tableExtension.setup( myDataTable, function( contentDiv )
+    	{
+    		var myContent = '';
+    		var selectedRows = this.getSelectedRows();
+    		if( selectedRows.length > 0 )
+    		{
+    			myContent += 'Do something based on<br/>the row that is selected!';
+    		}
+    		contentDiv.innerHTML = myContent;
+    	} );
+        </script>
+    </body>
+</html>
