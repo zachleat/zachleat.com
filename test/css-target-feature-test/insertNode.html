@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<script>
+		var historyLength = window.history.length;
+
+		// :target feature test
+		var targetSupport = (function( win, doc ) {
+			// This test makes Blackberry OS 5 go infinite, so we opt-out here.
+			// Tested OK on other proxy browsers (Kindle, Opera Mini)
+			if( window.blackberry && !window.WebKitPoint || !doc.scripts.length ) {
+				return false;
+			}
+
+			// Side note: BB OS5 does not support doc.scripts.
+			var ref = doc.scripts[0],
+				node = doc.createElement( 'div' ),
+				id = 'id' + ( new Date() ).getTime(),
+				previousHash = ( win.location.hash || '' ).substr( 1 );
+
+			node.innerHTML = '<style>#' + id + '{color:#000;}#' + id + ':target{color: red;}</style><div id="' + id + '"></div>';
+			ref.parentNode.insertBefore( node, ref );
+
+			// replacestate and location.hash don’t work here: https://bugs.webkit.org/show_bug.cgi?id=83490
+			win.location.replace( '#' + id );
+
+			var color = (win.getComputedStyle ? win.getComputedStyle(node, null) : node.currentStyle).color,
+				supported = !!color && color !== '#000000';
+
+			// Clean up
+			node.parentNode.removeChild( node );
+
+			// Remove the random hash and the #
+			if( !previousHash && 'replaceState' in history ) {
+				history.replaceState( '', '', location.pathname );
+			} else {
+				win.location.replace( '#' + previousHash );
+			}
+
+			return supported;
+		})( this, this.document );
+		// End feature test
+
+		// Results
+		alert( ':target is' + (targetSupport ? '' : ' not') + ' supported' );
+		if( window.history.length !== historyLength ) {
+			alert( 'Warning, a history entry was added.' );
+		}
+		</script>
+		<style>
+		#test:target {
+			color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="test">Body Content.</div>
+		<a href="#test">Click this link to visually test if :target is supported. “Body Content” above should turn red.</a>
+	</body>
+</html>

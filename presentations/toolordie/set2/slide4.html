@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/global.css">
+		<title>Tool or Die, a Web Developer’s Workflow</title>
+	</head>
+	<body>
+		<h1>Cut the Mustard</h1>
+		<h2>Pick a feature that matches your definition of a modern browser, <em>fork on it</em>.</h2>
+
+		<h3>JavaScript</h3>
+		<code><pre>// IE8+, BB 5+
+"querySelectorAll" in document</pre></code>
+		<code><pre>// IE7+ (jQuery Mobile 1.0)
+$.support.mediaquery || $.mobile.browser.ie && $.mobile.browser.ie >= 7;</pre></code>
+		<code><pre>// IE9+, BB 7+
+"getElementsByClassName" in document</pre></code>
+
+		<h3>CSS</h3>
+		<code><pre>/* IE9+ (CSS3 media query) */
+/* Optional: polyfill to older IE with Respond.js */
+@media only all {}</pre></code>
+		<code><pre>/* IE9+ (selector) */
+:root {}</pre></code>
+
+		<a href="slide5.html">Next &gt;</a>
+
+		<h3>Sources</h3>
+		<ul>
+			<li>See browser support on <a href="http://caniuse.com">caniuse.com</a></li>
+		</ul>
+		<iframe class="caniuse" src="http://caniuse.com/queryselector/embed/"></iframe>
+
+	</body>
+</html>

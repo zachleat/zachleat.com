@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/global.css">
+		<meta name="viewport" content="width=device-width">
+		<title>Tool or Die, a Web Developer’s Workflow</title>
+	</head>
+	<body>
+		<div class="slide color">
+			<header>
+				<h1>Alright, whew. How’d we do?</h1>
+			</header>
+
+			<nav role="navigation">
+				<a class="next" href="performance-wbench.html">Next</a>
+			</nav>
+
+			<main role="main">
+				<p>Let’s check some quick performance metrics using <a href="http://yslow.org/phantomjs/">YSlow (in phantomjs)</a>:</p>
+				<p>Barebones, <a href="http://toolordie.local/set0/slide1.html">HTML-only slide</a>:
+<pre><code>$ phantomjs yslow.js --disk-cache=false --info basic --format plain http://toolordie.local/set0/slide1.html
+<strong>size: 0.3K (301 bytes)</strong>
+overall score: A (98)
+url: http://toolordie.local/set0/slide1.html
+# of requests: 2
+ruleset: ydefault
+page load time: 22</code></pre></p>
+				<p>Barebones, <a href="http://toolordie.local/set3/html.html">HTML5-only slide</a>:
+<pre><code>$ phantomjs yslow.js --disk-cache=false --info basic --format plain http://toolordie.local/set3/html.html
+<strong>size: 1.7K (1730 bytes)</strong>
+overall score: A (98)
+url: http://toolordie.local/set3/html.html
+# of requests: 2
+ruleset: ydefault
+page load time: 53</code></pre></p>
+				<p><a href="http://toolordie.local/set3/css.html">CSS-added slide</a>:
+<pre><code>$ phantomjs yslow.js --disk-cache=false --info basic --format plain http://toolordie.local/set3/css.html
+<strong>size: 3.4K (3402 bytes)</strong>
+overall score: A (95)
+url: http://toolordie.local/set3/css.html
+# of requests: 3
+ruleset: ydefault
+page load time: 31</code></pre></p>
+				<p><a href="http://toolordie.local/set3/javascript.html">JS and @font-face slide</a>:
+<pre><code>$ phantomjs yslow.js --disk-cache=false --info basic --format plain http://toolordie.local/set3/javascript.html
+<strong>size: 23.2K (23253 bytes)</strong>
+overall score: A (90)
+url: http://toolordie.local/set3/javascript.html
+# of requests: 6
+ruleset: ydefault
+page load time: 121</code></pre></p>
+			</main>
+
+			<!--<aside class="links">
+				<h3>Related Links/Sources</h3>
+				<ol>
+				</ol>
+			</aside> -->
+		</div>
+		<script src="../js/global.js"></script>
+	</body>
+</html>

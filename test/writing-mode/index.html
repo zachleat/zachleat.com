@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+    <style type="text/css">
+    div { clear: left; }
+    div div { width: 200px; height: 200px; display: block; float: left; margin: 10px; padding: 4px; clear: none; }
+    div:first-child div { height: 60px; font-weight: bold; }
+    div div, td { border: 1px solid #000; }
+    .unspecd { background-color: #ddd; }
+    .rotate {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    } 
+    </style>
+    <body>
+        <div>
+            <div>writing-mode<br/><br/><br/></div>
+            <div>direction<br/>block-progression<br/><br/></div>
+            <div>(proprietary) rotate<br/>direction<br/>block-progression</div>
+        </div>
+        <div>
+            <div style="writing-mode: lr-tb;">
+                writing-mode: lr-tb;<br/>
+                <br/>
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: ltr; block-progression: tb;">
+                direction: ltr;<br/>
+                block-progression: tb;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: ltr; block-progression: tb;">
+                direction: ltr;<br/>
+                block-progression: tb;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div style="writing-mode: rl-tb">
+                writing-mode: rl-tb;<br/>
+                <br/>
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: rtl; block-progression: tb;">
+                direction: rtl;<br/>
+                block-progression: tb;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: rtl; block-progression: tb;">
+                direction: rtl;<br/>
+                block-progression: tb;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="unspecd">
+            <div style="writing-mode: lr-bt;">
+                writing-mode: lr-bt;<br/>
+                <br/>
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: ltr; block-progression: bt;">
+                direction: ltr;<br/>
+                block-progression: bt;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: ltr; block-progression: bt;">
+                direction: ltr;<br/>
+                block-progression: bt;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="unspecd">
+            <div style="writing-mode: rl-bt;">
+                writing-mode: rl-bt;<br/>
+                <br/>
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: rtl; block-progression: bt;">
+                direction: rtl;<br/>
+                block-progression: bt;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: rtl; block-progression: bt;">
+                direction: rtl;<br/>
+                block-progression: bt;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <div style="writing-mode: tb-lr;">
+                writing-mode: tb-lr;<br/>
+                <br/>
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: ltr; block-progression: lr;">
+                direction: ltr;<br/>
+                block-progression: lr;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div class="rotate" style="direction: ltr; block-progression: lr;">
+                direction: ltr;<br/>
+                block-progression: lr;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <div style="writing-mode: tb-rl;">
+                writing-mode: tb-rl;<br/>
+                <br/>
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: ltr; block-progression: rl;">
+                direction: ltr;<br/>
+                block-progression: rl;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div class="rotate" style="direction: ltr; block-progression: rl;">
+                direction: ltr;<br/>
+                block-progression: rl;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <div style="writing-mode: bt-lr;">
+                writing-mode: bt-lr;<br/>
+                <br/>
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: rtl; block-progression: lr;">
+                direction: rtl;<br/>
+                block-progression: lr;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div class="rotate" style="direction: rtl; block-progression: lr;">
+                direction: rtl;<br/>
+                block-progression: lr;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <div style="writing-mode: bt-rl;">
+                writing-mode: bt-rl;<br/>
+                <br/>
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div style="direction: rtl; block-progression: rl;">
+                direction: rtl;<br/>
+                block-progression: rl;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+            <div class="rotate" style="direction: rtl; block-progression: rl;">
+                direction: rtl;<br/>
+                block-progression: rl;
+                <table>
+                     <tr> 
+                         <td> 1a </td> <td> 2a </td> <td> 3a </td>
+                     </tr>
+                     <tr>
+                         <td> 4a </td> <td> 5a </td> <td> 6a </td>
+                     </tr>
+                     <tr>
+                         <td> 7a </td> <td> 8a </td> <td> 9a </td>
+                     </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

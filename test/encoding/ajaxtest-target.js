@@ -1,0 +1,1 @@
+globalString = "This is a special test: ñóøþ";

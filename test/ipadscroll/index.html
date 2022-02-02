@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+    iframe { border: 4px solid #000; }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script>
+    function test()
+    {
+       alert($('#xdomain').height());
+    }
+    window.onerror = function(errorMsg, url, lineNumber)
+    {
+        alert(errorMsg + '; ' + url + '; Line ' + lineNumber);
+    };
+    </script>
+</head>
+<body>
+<h2>Iframe:</h2>
+<iframe id="samedomain" src="child.html"></iframe>
+<iframe id="xdomain" src="http://www.up150.com/" onload="test()"></iframe>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/global.css">
+		<meta name="viewport" content="width=device-width">
+		<title>Tool or Die, a Web Developer’s Workflow</title>
+	</head>
+	<body>
+		<div class="slide color">
+			<header>
+				<h1>JavaScript Authoring Tips</h1>
+			</header>
+
+			<nav role="navigation">
+				<a class="next" href="../set4/performance.html">Next</a>
+			</nav>
+
+			<main role="main">
+				<ul>
+					<li>Use <a href="http://www.jshint.com/">JSHint</a>
+						<ul>
+							<li>Inline in Sublime Text 2 with <a href="https://github.com/SublimeLinter/SublimeLinter">SublimeLinter</a></li>
+							<li>Warns when: not using strict mode, bad == comparisons (type coersion problems) and <a href="http://www.jshint.com/docs/">many others</a></li>
+						</ul>
+					</li>
+					<li><code>"use strict"; // for dev (not production code)</code> <sup><a href="#strict">[1]</a></sup></li>
+				</ul>
+			</main>
+
+			<aside class="links">
+				<h3>Related Links/Sources</h3>
+				<ol>
+					<li id="strict"><a href="http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/">It’s time to start using JavaScript Strict Mode by Nicholas Zakas</a></li>
+				</ol>
+			</aside> 
+		</div>
+		<script src="../js/global.js"></script>
+		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</body>
+</html>

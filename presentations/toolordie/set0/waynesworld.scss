@@ -1,0 +1,98 @@
+/* Kudos to @mcostello http://codepen.io/MikeCostello/pen/sgeJj */
+$blur: 10px;
+$colors: #217a67 #43936a #a6b039 #d7a715 #de6505 #ea252d #e623a5 #781ba9 #2c77c9 #2e7683 #29825f #98b16b #a1ad1c #ef9017 #df2117 #f22d82 #f22d82;
+ 
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+ 
+@include keyframes(schwing) {
+	0% {
+		text-shadow:
+			0 0 0 black,
+			0 0 $blur nth($colors, 1),
+ 
+			0 0 0 black,
+			0 0 $blur nth($colors, 1),
+ 
+			0 0 0 black,
+			0 0 $blur nth($colors, 1);
+	}
+ 
+	// 5% through 85%
+	@for $i from 1 through 17 {
+		#{$i*5}%#{null} {
+ 
+			@if $i % 4 == 0 {
+				text-shadow:
+					1em -1em 0 black,
+					1em -1em $blur nth($colors, $i),
+ 
+					2em -2em 0 black,
+					2em -2em $blur nth($colors, $i),
+ 
+					3em -3em 0 black,
+					3em -3em $blur nth($colors, $i);
+			} @else if $i % 4 == 3 {
+				text-shadow:
+					-1em -1em 0 black,
+					-1em -1em $blur nth($colors, $i),
+ 
+					-2em -2em 0 black,
+					-2em -2em $blur nth($colors, $i),
+ 
+					-3em -3em 0 black,
+					-3em -3em $blur nth($colors, $i);
+			} @else if $i % 4 == 2 {
+				text-shadow:
+					-1em 1em 0 black,
+					-1em 1em $blur nth($colors, $i),
+ 
+					-2em 2em 0 black,
+					-2em 2em $blur nth($colors, $i),
+ 
+					-3em 3em 0 black,
+					-3em 3em $blur nth($colors, $i);
+			} @else {
+				text-shadow:
+					1em 1em 0 black,
+					1em 1em $blur nth($colors, $i),
+ 
+					2em 2em 0 black,
+					2em 2em $blur nth($colors, $i),
+ 
+					3em 3em 0 black,
+					3em 3em $blur nth($colors, $i);
+			}
+		}
+	}
+ 
+	90% {
+		text-shadow:
+			0 0 0 black,
+			0 0 $blur nth($colors, length($colors)),
+ 
+			0 0 0 black,
+			0 0 $blur nth($colors, length($colors)),
+ 
+			0 0 0 black,
+			0 0 $blur nth($colors, length($colors));
+	}
+	91% {
+		text-shadow: none;
+	}
+	100% {
+		text-shadow: none;
+	}
+}

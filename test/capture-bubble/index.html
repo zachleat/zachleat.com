@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div>
+		<p>This is a paragraph.</p>
+		<ul>
+			<li>This is a list item.</li>
+			<li>This is a list item.</li>
+			<li>This is a list item.</li>
+			<li>This is a list item.</li>
+		</ul>
+		<button>This is a button.</button>
+	</div>
+	<p style="cursor: pointer">THIS HAS CURSOR POINTER ON IT</p>
+	<div id="logger"></div>
+	<script>
+	var log = document.getElementById('logger');
+
+	function capture(event)
+	{
+		log.innerHTML += '<div>' + event.target.tagName + ' was captured on ' + event.type + '.</div>';
+	}
+	function bubble(event)
+	{
+		log.innerHTML += '<div>' + event.target.tagName + ' was bubbled on ' + event.type + '.</div>';
+	}
+
+	document.addEventListener('mousedown', capture, true);
+	document.addEventListener('mouseup', capture, true);
+	document.addEventListener('click', capture, true);
+	document.addEventListener('mousedown', bubble, false);
+	document.addEventListener('mouseup', bubble, false);
+	document.addEventListener('click', bubble, false);
+	</script>
+</body>
+</html>

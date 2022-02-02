@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+    <head>
+    <title>jQuery UI Icons using @font-face</title>
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui-1.7.2.custom.css"/>
+    <style type="text/css">
+    @font-face {
+        font-family: 'jQueryUISubpixelRegular';
+        src: url('jquery_ui_subpixel.eot');
+        src: local('jQuery UI Subpixel Regular'), local('jQuery-UI-Subpixel'), url('jquery_ui_subpixel.ttf') format('truetype');
+    }
+
+    #beforeTest { font-family: jQueryUISubpixelRegular; font-size: 200%; }
+    #beforeTest:before { content: 'A'; }
+    #beforeTest:after { content: 'C'; }
+
+    .ui-icon { float: left; }
+    .supersize .alphabet {
+        font-size: 400%;
+    }
+    .alphabet,
+    .font-icon {
+        font-family: jQueryUISubpixelRegular;
+    }
+    .font-icon-carat-1-n:before { content: 'A'; }
+    .font-icon-carat-1-ne:before { content: 'B'; }
+    .font-icon-carat-1-e:before { content: 'C'; }
+    .font-icon-carat-1-se:before { content: 'D'; }
+    .font-icon-carat-1-s:before { content: 'E'; }
+    .font-icon-carat-1-sw:before { content: 'F'; }
+    .font-icon-carat-1-w:before { content: 'G'; }
+    .font-icon-carat-1-nw:before { content: 'H'; }
+    .font-icon-carat-2-n-s:before { content: 'I'; line-height: 23px; }
+    .font-icon-carat-2-e-w:before { content: 'J'; }
+    .font-icon-triangle-1-n:before { content: 'K'; }
+    .font-icon-triangle-1-ne:before { content: 'L'; }
+    .font-icon-triangle-1-e:before { content: 'M'; }
+    .font-icon-triangle-1-se:before { content: 'N'; }
+    .font-icon-triangle-1-s:before { content: 'O'; }
+    .font-icon-triangle-1-sw:before { content: 'P'; }
+    .font-icon-triangle-1-w:before { content: 'Q'; }
+    .font-icon-triangle-1-nw:before { content: 'R'; }
+    .font-icon-triangle-2-n-s:before { content: 'S'; line-height: 23px; }
+    .font-icon-triangle-2-e-w:before { content: 'T'; }
+
+    .red-icons { color: #f00; }
+    .blue-icons { color: #00f; }
+    </style>
+    </head>
+    <body>
+        <h1><a href="http://www.zachleat.com/">zachleat.com</a>: <a href="http://www.zachleat.com/web/2010/01/03/css-sprites-using-font-face/">CSS Sprites Using @font-face</a></h1>
+
+        <h2>Original Size using Embedded Font</h2>
+        <div class="alphabet">ABCDEFGHIJKLMNOPQRST</div>
+
+        <h2>400% Size using Embedded Font</h2>
+        <div class="supersize">
+            <div class="alphabet">ABCDEFGHIJKLMNOPQRST</div>
+        </div>
+
+        <h2>Test for :before/:after Content Trick</h2>
+        3 Characters should show here: <span id="beforeTest">B</span>
+
+        <h2>Original jQuery UI Icons</h2>
+        <span class="ui-icon ui-icon-carat-1-n"></span>
+        <span class="ui-icon ui-icon-carat-1-ne"></span>
+        <span class="ui-icon ui-icon-carat-1-e"></span>
+        <span class="ui-icon ui-icon-carat-1-se"></span>
+        <span class="ui-icon ui-icon-carat-1-s"></span>
+        <span class="ui-icon ui-icon-carat-1-sw"></span>
+        <span class="ui-icon ui-icon-carat-1-w"></span>
+        <span class="ui-icon ui-icon-carat-1-nw"></span>
+        <span class="ui-icon ui-icon-carat-1-n"></span>
+        <span class="ui-icon ui-icon-carat-2-n-s"></span>
+        <span class="ui-icon ui-icon-carat-2-e-w"></span>
+        <span class="ui-icon ui-icon-triangle-1-n"></span>
+        <span class="ui-icon ui-icon-triangle-1-ne"></span>
+        <span class="ui-icon ui-icon-triangle-1-e"></span>
+        <span class="ui-icon ui-icon-triangle-1-se"></span>
+        <span class="ui-icon ui-icon-triangle-1-s"></span>
+        <span class="ui-icon ui-icon-triangle-1-sw"></span>
+        <span class="ui-icon ui-icon-triangle-1-w"></span>
+        <span class="ui-icon ui-icon-triangle-1-nw"></span>
+        <span class="ui-icon ui-icon-triangle-1-n"></span>
+        <span class="ui-icon ui-icon-triangle-2-n-s"></span>
+        <span class="ui-icon ui-icon-triangle-2-e-w"></span>
+        <br/>
+        <br/>
+        <h2>jQuery UI Icons using Embedded Font (and :before content trick)</h2>
+        <span class="font-icon font-icon-carat-1-n"></span>
+        <span class="font-icon font-icon-carat-1-ne"></span>
+        <span class="font-icon font-icon-carat-1-e"></span>
+        <span class="font-icon font-icon-carat-1-se"></span>
+        <span class="font-icon font-icon-carat-1-s"></span>
+        <span class="font-icon font-icon-carat-1-sw"></span>
+        <span class="font-icon font-icon-carat-1-w"></span>
+        <span class="font-icon font-icon-carat-1-nw"></span>
+        <span class="font-icon font-icon-carat-1-n"></span>
+        <span class="font-icon font-icon-carat-2-n-s"></span>
+        <span class="font-icon font-icon-carat-2-e-w"></span>
+        <span class="font-icon font-icon-triangle-1-n"></span>
+        <span class="font-icon font-icon-triangle-1-ne"></span>
+        <span class="font-icon font-icon-triangle-1-e"></span>
+        <span class="font-icon font-icon-triangle-1-se"></span>
+        <span class="font-icon font-icon-triangle-1-s"></span>
+        <span class="font-icon font-icon-triangle-1-sw"></span>
+        <span class="font-icon font-icon-triangle-1-w"></span>
+        <span class="font-icon font-icon-triangle-1-nw"></span>
+        <span class="font-icon font-icon-triangle-1-n"></span>
+        <span class="font-icon font-icon-triangle-2-n-s"></span>
+        <span class="font-icon font-icon-triangle-2-e-w"></span>
+        <br/>
+        <br/>
+        CSS color: red;
+        <span class="red-icons">
+            <span class="font-icon font-icon-carat-1-n"></span>
+            <span class="font-icon font-icon-carat-1-ne"></span>
+            <span class="font-icon font-icon-carat-1-e"></span>
+            <span class="font-icon font-icon-carat-1-se"></span>
+            <span class="font-icon font-icon-carat-1-s"></span>
+            <span class="font-icon font-icon-carat-1-sw"></span>
+            <span class="font-icon font-icon-carat-1-w"></span>
+            <span class="font-icon font-icon-carat-1-nw"></span>
+            <span class="font-icon font-icon-carat-1-n"></span>
+            <span class="font-icon font-icon-carat-2-n-s"></span>
+            <span class="font-icon font-icon-carat-2-e-w"></span>
+            <span class="font-icon font-icon-triangle-1-n"></span>
+            <span class="font-icon font-icon-triangle-1-ne"></span>
+            <span class="font-icon font-icon-triangle-1-e"></span>
+            <span class="font-icon font-icon-triangle-1-se"></span>
+            <span class="font-icon font-icon-triangle-1-s"></span>
+            <span class="font-icon font-icon-triangle-1-sw"></span>
+            <span class="font-icon font-icon-triangle-1-w"></span>
+            <span class="font-icon font-icon-triangle-1-nw"></span>
+            <span class="font-icon font-icon-triangle-1-n"></span>
+            <span class="font-icon font-icon-triangle-2-n-s"></span>
+            <span class="font-icon font-icon-triangle-2-e-w"></span>
+        </span>
+        <br/>
+        <br/>
+        CSS color: blue;
+        <span class="blue-icons">
+            <span class="font-icon font-icon-carat-1-n"></span>
+            <span class="font-icon font-icon-carat-1-ne"></span>
+            <span class="font-icon font-icon-carat-1-e"></span>
+            <span class="font-icon font-icon-carat-1-se"></span>
+            <span class="font-icon font-icon-carat-1-s"></span>
+            <span class="font-icon font-icon-carat-1-sw"></span>
+            <span class="font-icon font-icon-carat-1-w"></span>
+            <span class="font-icon font-icon-carat-1-nw"></span>
+            <span class="font-icon font-icon-carat-1-n"></span>
+            <span class="font-icon font-icon-carat-2-n-s"></span>
+            <span class="font-icon font-icon-carat-2-e-w"></span>
+            <span class="font-icon font-icon-triangle-1-n"></span>
+            <span class="font-icon font-icon-triangle-1-ne"></span>
+            <span class="font-icon font-icon-triangle-1-e"></span>
+            <span class="font-icon font-icon-triangle-1-se"></span>
+            <span class="font-icon font-icon-triangle-1-s"></span>
+            <span class="font-icon font-icon-triangle-1-sw"></span>
+            <span class="font-icon font-icon-triangle-1-w"></span>
+            <span class="font-icon font-icon-triangle-1-nw"></span>
+            <span class="font-icon font-icon-triangle-1-n"></span>
+            <span class="font-icon font-icon-triangle-2-n-s"></span>
+            <span class="font-icon font-icon-triangle-2-e-w"></span>
+        </span>
+    </body>
+</html>

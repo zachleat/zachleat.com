@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<script>
+		// :target feature test
+		var targetSupport = (function( win, doc ) {
+			try {
+				var result = document.querySelectorAll( ':target' );
+				// document.querySelectorAll( ':last-child:lskdjflkzjdkljfklzjdsf' );
+				// alert(1);
+				// document.querySelectorAll( ':first-child' );
+				// alert(2);
+				// document.querySelectorAll( ':root' );
+				// alert(3);
+				// document.querySelectorAll( ':blank' );
+				// alert(4);
+				// document.querySelectorAll( ':any-link' );
+				alert( 'didn’t error:' + result.length );
+			} catch(e) {
+				alert( e.toString() )
+			}
+		})( this, this.document );
+		// End feature test
+		</script>
+		<style>
+		#test:target {
+			color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="test">Test Content</a>
+		<a href="#test">Activate #test</a>
+	</body>
+</html>

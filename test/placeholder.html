@@ -1,0 +1,459 @@
+<!doctype html>
+<html>
+	<head>
+		<title>placeholder Tests</title>
+		<style>
+			body {
+				font-family: sans-serif;
+				font-size: 12px;
+			}
+			td {
+				padding: 3px;
+			}
+			td.works,
+			td.broken,
+			td.expected,
+			td.invalid {
+				color: #fff;
+			}
+			td.expected,
+			td.works {
+				background-color: darkgreen;
+			}
+			td.invalid,
+			td.broken {
+				background-color: red;
+			}
+			sup {
+				padding-left: 3px;
+			}
+			:target {
+				background-color: #ffc;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>placeholder Tests</h1>
+		Back to <a href="/web/placeholder/"><em>Web 367: Placeholder Title for an Article about HTML5 Placeholders</em></a>.
+		<form action="" method="get">
+			<table>
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Expected Behavior</th>
+						<th>Element</th>
+						<th>Chrome 17.0.963.79</th>
+						<th>Chrome (Canary) 19.0.1065.0</th>
+						<th>Firefox 10.0</th>
+						<th>Firefox (Nightly) 13.0</th>
+						<th>Safari 5.1.2</th>
+						<th>Opera 11.61</th>
+						<th>Internet Explorer 9.0.8112.16421</th>
+						<th>Internet Explorer 10.0.8102.0</th>
+						<th>iOS 5.0 (9A334)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Keeps placeholder until user enters a non-empty value</td>
+						<td class="optional">Optional</td>
+						<td></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="works">Implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">N/A</td>
+						<td class="">Not implemented</td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>input type="text"</td>
+						<td class="expected">Expected</td>
+						<td><input type="text" placeholder="Placeholder" name="text"></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="invalid">Not implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>input type="search"</td>
+						<td class="expected">Expected</td>
+						<td><input type="search" placeholder="Placeholder" name="search"></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="invalid">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>input type="password"</td>
+						<td class="expected">Expected<br/>Placeholder text should show as plaintext.</td>
+						<td><input type="password" placeholder="Placeholder" name="password"></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="invalid">Not implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>input type="tel"</td>
+						<td class="expected">Expected</td>
+						<td><input type="tel" placeholder="Placeholder" name="tel"></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="invalid">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>input type="url"</td>
+						<td class="expected">Expected</td>
+						<td><input type="url" placeholder="Placeholder" name="url"></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="invalid">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>input type="email"</td>
+						<td class="expected">Expected</td>
+						<td><input type="email" placeholder="Placeholder" name="email"></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="invalid">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>input type="datetime"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="datetime" placeholder="Placeholder" name="datetime"></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>input type="date"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="date" placeholder="Placeholder" name="date"></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>input type="month"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="month" placeholder="Placeholder" name="month"></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>input type="week"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="week" placeholder="Placeholder" name="week"></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>input type="time"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="time" placeholder="Placeholder" name="time"></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>input type="datetime-local"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="datetime-local" placeholder="Placeholder" name="datetime-local"></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>input type="number"</td>
+						<td class="expected">Expected</td>
+						<td><input type="number" placeholder="Placeholder" name="number"></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="invalid">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="invalid">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="invalid">Not implemented</td>
+						<td class="works">Implemented</td>
+						<td class="invalid">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="invalid">Not implemented</td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>input type="range"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="range" placeholder="Placeholder" name="range"></td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="">N/A</td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>input type="color"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="color" placeholder="Placeholder" name="color"></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="">Not implemented</td>
+						<td class="">Element not available<sup><a href="#fallback">1</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+						<td class="">Element not available<sup><a href="#fallback-broken">2</a>.</sup></td>
+					</tr>
+					<tr>
+						<td>input type="checkbox"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="checkbox" placeholder="Placeholder" name="checkbox"></td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+					</tr>
+					<tr>
+						<td>input type="radio"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="radio" placeholder="Placeholder" name="radio"></td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+					</tr>
+					<tr>
+						<td>input type="hidden"</td>
+						<td class="invalid">Invalid</td>
+						<td><input type="hidden" placeholder="Placeholder" name="hidden"></td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+					</tr>
+					<tr>
+						<td>input type="file"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="file" placeholder="Placeholder" name="file"></td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>input type="submit"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="submit" placeholder="Placeholder" name="submit"></td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+					</tr>
+					<tr>
+						<td>input type="image"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="image" placeholder="Placeholder" name="image"></td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+					</tr>
+					<tr>
+						<td>input type="reset"<br></td>
+						<td class="invalid">Invalid</td>
+						<td><input type="reset" placeholder="Placeholder" name="reset"></td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+						<td class="">N/A</td>
+					</tr>
+					<tr>
+						<td>textarea<br></td>
+						<td class="expected">Expected</td>
+						<td><textarea placeholder="Placeholder" name="textarea"></textarea></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class="invalid">Not implemented</td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>select<br></td>
+						<td class="invalid">Invalid</td>
+						<td><select placeholder="Placeholder" name="select"><option>First option</option></select></td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>contenteditable<br></td>
+						<td class="invalid">Invalid</td>
+						<td><div contenteditable placeholder="Placeholder" name="contenteditable"></div></td>
+						<td class="">Not implemented, <a href="https://bugs.webkit.org/show_bug.cgi?id=21286">#21286</a></td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+						<td class="">Not implemented</td>
+					</tr>
+					<tr>
+						<td>placeholder does not submit with form</td>
+						<td class="expected">Expected</td>
+						<td></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class=""></td>
+						<td class=""></td>
+						<td class=""></td>
+						<td class=""></td>
+						<td class="">N/A</td>
+						<td class=""></td>
+						<td class="works">Implemented</td>
+					</tr>
+					<tr>
+						<td>placeholder resets with form reset</td>
+						<td class="expected">Expected</td>
+						<td></td>
+						<td class="works">Implemented</td>
+						<td class="works">Implemented</td>
+						<td class=""></td>
+						<td class=""></td>
+						<td class=""></td>
+						<td class=""></td>
+						<td class="">N/A</td>
+						<td class=""></td>
+						<td class="works">Implemented</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		Notes:
+		<ol>
+			<li id="fallback">Element was not implemented by the browser, so it falls back to input type="text" which should work in all browsers that are supported by the placeholder.</li>
+			<li id="fallback-broken">Element was not implemented by the browser and it falls back to input type="text" but placeholder does not work.</li>
+		</ol>
+		With help from <a href="http://miketaylr.com/code/input-type-attr.html">Mike Taylr's HTML5 inputs and attribute support</a>.
+	</body>
+</html>

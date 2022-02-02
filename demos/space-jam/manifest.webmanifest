@@ -1,0 +1,18 @@
+{
+    "background_color": "#000000",
+    "description": "Space Jam, the movie.",
+    "dir": "ltr",
+    "display": "minimal-ui",
+    "icons": [
+        {
+            "src": "/space-jam/img/icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "lang": "en",
+    "name": "SPACE JAM",
+    "short_name": "SPACE JAM",
+    "start_url": "/space-jam/",
+    "theme_color": "#000000"
+}

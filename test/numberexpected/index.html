@@ -1,0 +1,63 @@
+<!doctype html> 
+<html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+    </head> 
+    <body> 
+        <pre><script type="text/javascript"> 
+        function test(num)
+        {
+            try {
+                var obj = [];
+                for(var j=0, k=num; j<k; j++) {
+                    obj.push('ABCD'+j);
+                }
+ 
+                obj.sort(function(m,p){
+                    /*
+                    works:
+                        m.replace('nomatch', ''),
+                        m.concat(''),
+                        ''+m
+                    fails:
+                        new String(old),
+                        m.substr(0),
+                        m.substring(0),
+                        m.split('nomatch')[0],
+                        m.slice(0),
+                        m.toLowerCase(),
+                        m.toUpperCase(),
+                        m+'newstring',
+                        m.concat('newstring')
+                        (''+m).toLowerCase()
+                        (''+m).toUpperCase()
+                        m.concat('').toLowerCase();
+                        m.concat('').toUpperCase();
+                        m='new string';
+                     */
+                    m=(''+m).toLowerCase();
+                    p=(''+p).toLowerCase();
+                    //document.writeln('   |' + m + '|' + p + '| ');
+                    //document.writeln('   |' + typeof m + '|' + typeof p + '| ');
+ 
+                    if(m > p){
+                        return 1;
+                    }
+                    if(m < p) {
+                        return -1;
+                    }
+                    return 0;
+                });
+ 
+                document.writeln('<span style="color: green">Success (' + obj.length + ')</span> ');
+            } catch(e) {
+                document.writeln('<span style="color: red">Failed (' + obj.length + ') ' + e.message + '</span>');
+            }
+        }
+ 
+        for(var j=1, k=150; j<=k; j++) {
+            test(j);
+        }
+        </script></pre> 
+    </body> 
+</html>

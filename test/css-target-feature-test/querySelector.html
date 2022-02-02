@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<script>
+		// :target feature test
+		var targetSupport = (function( win, doc ) {
+			if( !( 'querySelectorAll' in document ) || Object.prototype.toString.call(window.operamini ) === '[object OperaMini]' ) {
+				return false;
+			}
+
+			try {
+				doc.querySelectorAll( ':target' );
+				return true;
+			} catch(e) {
+				return false;
+			}
+		})( this, this.document );
+		// End feature test
+
+		// Results
+		alert( ':target is' + (targetSupport ? '' : ' not') + ' supported' );
+		</script>
+		<style>
+		#test:target {
+			color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="test">Body Content.</div>
+		<a href="#test">Click this link to visually test if :target is supported. “Body Content” above should turn red.</a>
+	</body>
+</html>

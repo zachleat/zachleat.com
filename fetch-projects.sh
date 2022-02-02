@@ -7,3 +7,6 @@ npx degit zachleat/ALARMd alarmd2
 
 rm -rf bigtext
 npx degit zachleat/bigtext bigtext
+
+rm -rf presentations/toolordie/
+npx degit zachleat/ToolOrDie presentations/toolordie

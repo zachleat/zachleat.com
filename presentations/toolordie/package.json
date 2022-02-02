@@ -1,0 +1,36 @@
+{
+  "name": "toolordie",
+  "title": "ToolOrDie",
+  "description": "Tool or Die, A Web Developer’s Workflow",
+  "version": "0.1.0",
+  "homepage": "https://github.com/zachleat/ToolOrDie",
+  "author": "zachleat <zachleatherman@gmail.com> (http://www.zachleat.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zachleat/ToolOrDie.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zachleat/ToolOrDie/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/zachleat/ToolOrDie/blob/master/LICENSE-MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-uglify": "latest"
+  },
+  "keywords": [],
+  "gitHead": "3a5b03edbde12a42c57efa8889a078d7dd09f34d",
+  "main": "grunt.js",
+  "scripts": {
+    "test": "grunt qunit"
+  },
+  "license": "MIT"
+}

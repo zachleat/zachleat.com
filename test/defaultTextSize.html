@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Default Text Size</title>
+	</head>
+	<body>
+		Default Text Size: 
+		<script>
+		var node = document.body;
+		document.write((window.getComputedStyle ? window.getComputedStyle(node, null) : node.currentStyle).fontSize);
+		</script>
+	</body>
+</html>

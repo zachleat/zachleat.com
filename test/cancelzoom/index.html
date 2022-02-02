@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+        <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0"> -->
+        <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"> -->
+    </head>
+    <body>
+        <form>
+            <input type="text"/>
+        </form>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+        <script>
+        // Notes:
+        // width=device-width,initial-scale=1.0 =>
+        //      if dynamically add a maximum-scale where no default exists,
+        //      dynamic addition will persist even after removed from viewport.content
+        // width=device-width,initial-scale=1.0,maximum-scale=2.0,maximum-scale=1.0
+        //      second declaration will take precedence.
+        // will respect original maximum-scale, if set.
+        function cancelZoom()
+        {
+            var d = document,
+                viewport,
+                content,
+                maxScale = ',maximum-scale=',
+                maxScaleRegex = /,*maximum\-scale\=\d*\.*\d*/;
+
+            // this should be a focusable DOM Element
+            if(!this.addEventListener || !d.querySelector) {
+                return;
+            }
+
+            viewport = d.querySelector('meta[name="viewport"]');
+            content = viewport.content;
+
+            function changeViewport(event)
+            {
+                // http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
+                viewport.content = content + (event.type == 'blur' ? (content.match(maxScaleRegex, '') ? '' : maxScale + 10) : maxScale + 1);
+            }
+
+            // We could use DOMFocusIn here, but it's deprecated.
+            this.addEventListener('focus', changeViewport, true);
+            this.addEventListener('blur', changeViewport, false);
+        }
+
+        (function($)
+        {
+            $.fn.cancelZoom = function()
+            {
+                return this.each(cancelZoom);
+            };
+
+            $('input').cancelZoom();
+        })(jQuery);
+        </script>
+    </body>
+</html>

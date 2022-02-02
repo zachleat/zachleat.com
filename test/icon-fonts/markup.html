@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Icon Fonts</title>
+<style>
+	@font-face {
+		font-family: icomoon;
+		src:url('fonts/icomoon.eot');
+		src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+			url('fonts/icomoon.ttf') format('truetype'),
+			url('fonts/icomoon.woff') format('woff'),
+			url('fonts/icomoon.svg#icomoon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	.icon-critical-text .icon {
+		display: none;
+	}
+		/* Fallback glyph */
+	.icon-critical-icon .icon:before {
+		content: "\2302"; /* House */
+	}
+
+	.icon-critical-icon label,
+	.supports-fontface .icon-critical-icon label,
+	.supports-fontface .icon-critical-text label {
+		/* visually hide but accessible (h5bp.com) */
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+	.supports-fontface .icon-critical-text .icon {
+		display: inline-block;
+	}
+	.supports-fontface .icon-decorative:before,
+	.supports-fontface .icon-critical-icon .icon:before,
+	.supports-fontface .icon-critical-text .icon:before {
+		font-family: icomoon;
+	}
+	.supports-fontface .icon-decorative:before,
+	.supports-fontface .icon-critical-icon .icon:before,
+	.supports-fontface .icon-critical-text .icon:before {
+		content: "\e600";
+	}
+	/* TODO Instead of a Fallback glyph */
+	.nosupports-fontface .icon-critical-icon .icon:before {
+		background-image: url('fallbackglyph.png');
+	}
+</style>
+<script src="faceoff.js"></script>
+</head>
+<body>
+	<h2>Critical Icons with Fallback Text</h2>
+
+	<span class="icon-critical-text">
+		<!-- requires an element for aria-hidden -->
+		<span class="icon" aria-hidden="true"></span>
+		<label>Fallback Text</label>
+	</span>
+
+	<h3>Failed experiments:</h3>
+	<ul>
+		<li>Eliminate the label element and use letter/word-spacing with overflow: hidden; to clip the excess. Requires us to know the width of each glyph. Easier to just keep the label.</li>
+	</ul>
+
+	<h2>Critical Icons with Fallback Icon</h2>
+
+	<span class="icon-critical-icon">
+		<span class="icon" aria-hidden="true"></span>
+		<label>Fallback Text</label>
+	</span>
+
+	<h3>Failed experiments:</h3>
+	<ul>
+		<li>We could just put the icon character in the <code>&lt;span class="icon"&gt;</code> content so we don’t need to rely on :before/:after, but it’s simpler to replace with a fallback glyph if it’s all in the CSS.</li>
+	</ul>
+
+	<h2>Decorative Icon without Fallback</h2>
+
+	<span class="icon-decorative" aria-hidden="true"></span>
+	Primary Text (Sibling)
+
+	<p>Warning: If you nest the text, the icon may confuse screen readers.</p>
+
+	<span class="icon-decorative">Primary Text (Nested)</span>
+</body>
+</html>

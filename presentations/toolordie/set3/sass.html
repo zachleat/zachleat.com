@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/global.css">
+		<title>Tool or Die, a Web Developer’s Workflow</title>
+	</head>
+	<body>
+		<div class="slide">
+			<header>
+				<h1>CSS Authoring Tips (2)</h1>
+			</header>
+
+			<nav role="navigation">
+				<a class="next" href="sass2.html">Next</a>
+			</nav>
+
+			<main role="main">
+				<h2>I like SASS, let’s use SASS.</h2>
+				<ul>
+					<li>Great for Vendor Prefixes (<a href="http://compass-style.org/reference/compass/css3/">Compass</a>)
+						<pre><code>@include background-image(linear-gradient(#333, #0c0));</code></pre>
+						expands to include all vendor prefixes for gradients.
+						<pre><code>background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333), color-stop(100%, #0c0));
+background-image: -webkit-linear-gradient(#333, #0c0);
+background-image: -moz-linear-gradient(#333, #0c0);
+background-image: -o-linear-gradient(#333, #0c0);
+background-image: linear-gradient(#333, #0c0);</code></pre></li>
+				</ul>
+			</main>
+
+			<aside class="links">
+				<h3>Related Links/Sources</h3>
+				<ol>
+					<li><a href="http://css3please.com/">CSS3 Please is a great resource for relevant vendor prefixes</a></li>
+				</ol>
+			</aside>
+		</div>
+	</body>
+</html>

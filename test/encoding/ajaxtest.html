@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+		<title>Component Test Page</title>
+	</head>
+	<body>
+        Works as HTML String: Ubicacíon<br/>
+        Works as JavaScript String: <script type="text/javascript">document.write("Ubicacíon");</script><br/>
+        HTML Character Entity: &OElig;<br/>
+        <!-- Raw Unicode Character: <br/> -->
+        <div id="test-jquery"></div>
+        <div id="test-jquery2"></div>
+        <!-- <div id="test-script"></div> -->
+
+        <script type="text/javascript">
+        document.write(document.characterSet || document.defaultCharset);
+        </script>
+        <!-- <script type="text/javascript">
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        //s.charset = 'iso-8859-1';
+        //s.src = 'http://localhost/ajaxtest-target.js';
+        s.src = 'ajaxtest-target.js';
+        document.getElementsByTagName('head')[0].appendChild(s);
+        window.setTimeout(function()
+        {
+            alert(globalString);
+            document.getElementById('test-script').innerHTML = globalString;
+        }, 300);
+        </script> -->
+        
+        <!--  -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            //$('#test').load('ajaxtest-target.html');
+            $.ajax({
+                url: 'ajaxtest-target.js',
+                dataType: 'script',
+                //contentType: 'application/x-javascript; charset=iso-8859-1',
+                //scriptCharset: 'iso-8859-1',
+                beforeSend: function(xhr) {
+                    //xhr.setRequestHeader("Accept-Charset","iso-8859-1");
+                    //xhr.setRequestHeader("Content-type","application/x-javascript; charset=iso-8859-1");
+                    if (xhr.overrideMimeType) {
+                        //xhr.overrideMimeType('application/x-javascript; charset=iso-8859-1');
+                    }
+                },
+                success: function(data)
+                {
+                    document.getElementById('test-jquery').innerHTML = globalString;
+                }
+            });
+        });
+        </script>
+	</body>
+</html>
