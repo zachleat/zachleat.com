@@ -29,6 +29,8 @@
 /twitter/* https://zachleat.nfshost.com/twitter/:splat 200!
 /web-fonts/scroll-anchoring/* https://zachleat.nfshost.com/web-fonts/scroll-anchoring/:splat 200!
 /registrastination/* https://zachleat.nfshost.com/registrastination/:splat 200!
+/async-css-loading/* /test/async-css-loading/:splat 301!
+/test/async-css-loading/* https://zachleat.nfshost.com/async-css-loading/:splat 200!
 
 # Old projects redirects
 /Projects/ /projects/ 301!
