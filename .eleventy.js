@@ -334,6 +334,10 @@ module.exports = function(eleventyConfig) {
 		return content ? sanitizeHTML(content, allowedHTML) : "";
 	});
 
+	eleventyConfig.addFilter('webmentionIsType', (webmention, type) => {
+		return type === webmention['wm-property'];
+	});
+
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
 		if( !allowedTypes ) {
 			// all types
@@ -356,8 +360,12 @@ module.exports = function(eleventyConfig) {
 					"https://lzomedia.com/",
 					"https://sayed.cyou/",
 					"https://h4host.com/",
+					"https://thebrandingstore.net/",
+					".affpaypaid.xyz"
 				];
-				if(blocked.filter(blockedUrl => `${entry.url}`.startsWith(blockedUrl)).length > 0) {
+				if(blocked.filter(blockedUrl => {
+					return `${entry.url}`.startsWith(blockedUrl) || entry.url.indexOf(blockedUrl) > -1
+				}).length > 0) {
 					return false;
 				}
 				return getBaseUrl(entry['wm-target']) === url;
