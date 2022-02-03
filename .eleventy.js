@@ -59,6 +59,7 @@ module.exports = function(eleventyConfig) {
 	// Production only passthrough copy
 	if(process.env.ELEVENTY_PRODUCTION) {
 		eleventyConfig
+			.addPassthroughCopy("keybase.txt")
 			.addPassthroughCopy("_redirects")
 			.addPassthroughCopy("demos/")
 			.addPassthroughCopy("resume/resume.pdf")
