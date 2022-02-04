@@ -29,7 +29,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
     </tr>
     <tr>
       <td>Astro</td>
-      <td><a href="https://astro.build/blog/the-astro-technology-company/">$7M</a><br><a href="#subnote1" id="link-subnote-1">[Note 1]</a></td>
+      <td><a href="https://astro.build/blog/the-astro-technology-company/">$7M</a><br><a href="#subnote-1" id="link-subnote-1">[Note 1]</a></td>
       <td></td>
       <td><a href="https://opencollective.com/astrodotbuild">Open Collective</a></td>
     </tr>
@@ -95,7 +95,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
     </tr>
     <tr>
       <td>Svelte</td>
-      <td><a href="#subnote2" id="link-subnote-2">[Note 2]</a></td>
+      <td><a href="#subnote-2" id="link-subnote-2">[Note 2]</a></td>
       <td></td>
       <td><a href="https://opencollective.com/svelte">Open Collective</a></td>
     </tr>
