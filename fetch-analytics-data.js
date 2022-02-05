@@ -4,7 +4,9 @@ const fs = require("fs");
 const glob = require("fast-glob");
 const matter = require("gray-matter");
 
-const google = require("googleapis");
+const { google } = require("googleapis");
+const analytics = google.analytics('v3');
+
 const VIEW_ID = "ga:966455";
 const START_DATE = "2006-09-05";
 const MAX_RESULTS = 1000;
@@ -15,58 +17,33 @@ if(!process.env.GOOGLE_AUTH_CLIENT_EMAIL || !process.env.GOOGLE_AUTH_PRIVATE_KEY
 	throw new Error("Missing environment variables for Google auth.")
 }
 
-async function queryData(analytics, jwtClient) {
-	return new Promise((resolve, reject) => {
-		analytics.data.ga.get(
-			{
-				auth: jwtClient,
-				ids: VIEW_ID,
-				metrics: "ga:pageviews",
-				dimensions: "ga:pagePath",
-				"start-date": START_DATE,
-				"end-date": "today",
-				sort: "-ga:pageviews",
-				"max-results": MAX_RESULTS,
-			},
-			function(err, data) {
-				if (err) {
-					reject(err);
-				} else {
-					resolve(data.rows);
-				}
-			}
-		);
-	})
-}
+const scopes = ["https://www.googleapis.com/auth/analytics.readonly"];
+const jwt = new google.auth.JWT({
+  email: process.env.GOOGLE_AUTH_CLIENT_EMAIL,
+  key: process.env.GOOGLE_AUTH_PRIVATE_KEY.replace(/\\n/gm, "\n"),
+  scopes,
+});
 
-async function getClient() {
-	let jwtClient = new google.auth.JWT(
-		process.env.GOOGLE_AUTH_CLIENT_EMAIL,
-		null,
-		process.env.GOOGLE_AUTH_PRIVATE_KEY.replace(/\\n/gm, "\n"),
-		["https://www.googleapis.com/auth/analytics.readonly"],
-		null
-	);
-
-	return new Promise((resolve, reject) => {
-		jwtClient.authorize(function(err, tokens) {
-			if (err) {
-				reject(err);
-			} else {
-				let analytics = google.analytics("v3");
-				resolve({
-					analytics,
-					client: jwtClient
-				});
-			}
-		});
-	})
+async function queryData() {
+	let results = await analytics.data.ga.get({
+		auth: jwt,
+		ids: VIEW_ID,
+		metrics: "ga:pageviews",
+		dimensions: "ga:pagePath",
+		"start-date": START_DATE,
+		"end-date": "today",
+		sort: "-ga:pageviews",
+		"max-results": MAX_RESULTS,
+	});
+	if(results.data && results.data.rows) {
+		return results.data.rows;
+	}
+	console.error( "No data.rows found in return data:", results );
+	return [];
 }
 
 async function fetchAnalyticsData() {
-	let { analytics, client } = await getClient();
-	let data = await queryData(analytics, client);
-
+	let data = await queryData();
 	let ordered = [];
 	for(let [url, pageViews] of data) {
 		if(url.startsWith("/opengraph/")) {
