@@ -1,10 +1,10 @@
 const fetch = require("node-fetch");
-const chalk = require("chalk");
+const kleur = require("kleur");
 const cheerio = require("cheerio");
 
 module.exports = async function() {
 	if(!process.env.ELEVENTY_FEATURES || process.env.ELEVENTY_FEATURES.split(",").indexOf("counts") === -1) {
-		console.log( "[zachleat.com]", chalk.yellow("WARNING: Using terrible data for resume counts because you need to implement Eleventy caching at the data layer.") );
+		console.log( "[zachleat.com]", kleur.yellow("WARNING: Using terrible data for resume counts because you need to implement Eleventy caching at the data layer.") );
 		return {
 			now: new Date(),
 			stargazers: {
