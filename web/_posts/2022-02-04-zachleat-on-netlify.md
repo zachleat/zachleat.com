@@ -33,7 +33,7 @@ The pretty big limitation preventing a wider application of this code (why I hav
 
 ### Deleting Hand-rolled Code
 
-My previous deployment method was using `rsync`. I got rid of all the code from my repo. I deleted six npm scripts that supported my old deployment process, whew. I was also able to get rid of a bunch of [custom code to add Brotli compression to my site](https://github.com/zachleat/zachleat.com/commit/2b0c00bf8ee7c5cb59e8bb0ae0702623e3edf9e5#diff-8e7e5f941c67b0cf481a9d650295119d4922b96117e7adc069ba30a81a78c65f) (now that’s [done for me automatically on Netlify](https://www.netlify.com/blog/2020/05/20/gain-instant-performance-boosts-as-brotli-comes-to-netlify-edge/)).
+My previous deployment method was using `rsync`. I got rid of all that extra hand-rolled code from my repo. I deleted six npm scripts that supported my old deployment process, whew. I was also able to get rid of a bunch of [custom code to add Brotli compression to my site](https://github.com/zachleat/zachleat.com/commit/2b0c00bf8ee7c5cb59e8bb0ae0702623e3edf9e5#diff-8e7e5f941c67b0cf481a9d650295119d4922b96117e7adc069ba30a81a78c65f) (now that’s [done for me automatically on Netlify](https://www.netlify.com/blog/2020/05/20/gain-instant-performance-boosts-as-brotli-comes-to-netlify-edge/)).
 
 ### Deployment Race Conditions
 
