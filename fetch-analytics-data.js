@@ -38,8 +38,7 @@ async function queryData() {
 	if(results.data && results.data.rows) {
 		return results.data.rows;
 	}
-	console.error( "No data.rows found in return data:", results );
-	return [];
+	throw new Error( "No data.rows found in return data. Returned: " + results );
 }
 
 async function fetchAnalyticsData() {
