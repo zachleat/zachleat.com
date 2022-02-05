@@ -166,5 +166,7 @@ function getPageViewsPerDayRanks(analyticsData) {
 			finalResults[entry.url] = entry;
 		}
 	}
-	fs.writeFileSync("./_data/analytics.json", JSON.stringify(finalResults, null, 2), "utf8");
+	let globalDataFilePath = "./_data/analytics.json";
+	fs.writeFileSync(globalDataFilePath, JSON.stringify(finalResults, null, 2), "utf8");
+	console.log( `Wrote ${globalDataFilePath}` );
 })();
