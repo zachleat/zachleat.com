@@ -2,18 +2,18 @@
 permalink: "web/dist/{{ pkg.version }}/opengraph.css"
 ---
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 html,
 body {
-  margin: 0;
-  height: 100%;
+	margin: 0;
+	height: 100%;
 }
 @font-face {
-  font-family: SFDisplayBlack;
-  src: url(/og/sources/sf-pro-display-black-latin.woff2) format("woff2");
+	font-family: SFDisplayBlack;
+	src: url(/og/sources/sf-pro-display-black-latin.woff2) format("woff2");
 }
 
 :root {
@@ -117,8 +117,8 @@ body {
 .window {
 	display: flex;
 	flex-direction: column;
-  overflow: hidden;
-  box-shadow: 0 10px 40px 4px rgba(0, 0, 0, .4);
+	overflow: hidden;
+	box-shadow: 0 10px 40px 4px rgba(0, 0, 0, .4);
 	flex-grow: 999;
 }
 .window-hed {
@@ -171,17 +171,20 @@ body {
 .main {
 	--main-bg-overlay: rgba(255,255,255,.15);
 	position: relative;
-  color: #fff;
-  height: 100%;
-  display: flex;
+	color: #fff;
+	height: 100%;
+	display: flex;
 	flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+	justify-content: flex-start;
+	align-items: center;
 	font-size: 2em;
 	padding-top: 1em;
 }
 .main > * {
 	z-index: 1;
+}
+.main > .main-top {
+	z-index: 2;
 }
 .main:before {
 	content: "";
@@ -246,7 +249,7 @@ body {
 		padding: 0 .2em;
 		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
-		background-color: #000;
+		background-color: rgba(0,0,0,.9);
 	}
 	.main .speedlify-requests,
 	.main .speedlify-weight,
@@ -256,15 +259,16 @@ body {
 }
 .main-left {
 	position: absolute;
-	bottom: 0.625em; /* 20px /32 */ /* avatar-name must vertical align with date on right side */
-	left: 1em;
+	bottom: 0;
+	left: 0;
 	text-align: left;
 	display: flex;
 	align-items: center;
 }
-.main-left .main-avatar-name {
-	position: relative;
-	top: -12px;
+.main-left .main-avatar-img-big {
+	margin-left: -1em;
+	margin-bottom: 0;
+	width: 13em;
 }
 .main-center {
 	position: absolute;
@@ -283,12 +287,18 @@ body {
 	line-height: 1.5;
 }
 
+.main-host {
+	margin-right: 1em;
+}
 .main-pageweight {
 	display: inline;
 	margin-left: 1em;
 }
 .main-lighthouse {
 	display: inline-flex;
+	align-self: flex-end;
+	margin-bottom: .5em;
+	margin-left: -2em;
 }
 .main .speedlify-score {
 	border-width: 4px;
@@ -299,11 +309,6 @@ body {
 	width: 64px; /* match the avatar */
 	height: 64px;
 	margin-top: -4px;
-}
-.main speedlify-score + .main-avatar .z-avatar {
-	box-shadow: 0 0 0 4px white;
-	margin-left: 12px;
-	margin-top: -1px;
 }
 .main-postnumber {
 	margin-right: 1em;
