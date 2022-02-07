@@ -58,7 +58,7 @@
   {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}
   {% if repliesSize > 0 %}
   <details id="comments">
-    <summary class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != "1" %}s{% endif %}</summary>
+    <summary class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}</summary>
     <ol class="static-comments static-comments-webmentions favicon-optin">
       {% for webmention in replies %}
         {% include "webmention" %}
