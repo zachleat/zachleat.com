@@ -41,10 +41,10 @@ More Ideas:
         </div>
         <p class="main-left">
           <img src="/img/avatar-2017-transparent.png" width="515" height="458" alt="Zach’s ugly mug, overlaid in green" loading="lazy" decoding="async" class="main-avatar-img-big">
-          {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-lighthouse" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" score></speedlify-score>{%- endif %}
         </p>
         <p class="main-center"></p>
         <p class="main-right">
+          {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-lighthouse" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" score></speedlify-score>{%- endif %}
           {%- if webmentionsCount > 0 %}<span class="main-box main-box-nowrap">{{ webmentionsCount }} Webmention{% if webmentionsCount != 1 %}s{% endif %}</span>{% endif %}
           {%- if speedlify[absoluteUrl] %}<speedlify-score class="main-pageweight" hash="{{ speedlify[absoluteUrl].hash }}" speedlify-url="https://www.speedlify.dev" weight></speedlify-score>{%- endif %}<br>
           <strong class="main-host main-box">zachleat.com</strong>

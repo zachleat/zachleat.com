@@ -199,8 +199,7 @@ body {
 }
 .main:after {
 	content: "";
-	background-image: linear-gradient(to top, #ff00d5, var(--main-bg-overlay) 1%, var(--main-bg-overlay) 99%, #ff00d5 100%),
-		radial-gradient(ellipse at bottom left, #ff00d5, rgba(255,255,255,.15) 23%);
+	background-color: var(--main-bg-overlay);
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -208,8 +207,10 @@ body {
 	bottom: 0;
 }
 .main-bgimg {
-	/* --main-bg-overlay: rgba(0,0,0,.4); */
-	--main-bg-overlay: rgba(255,255,255,.3);
+	{% comment %} --main-bg-overlay: rgba(0,0,0,.4); {% endcomment %}
+	{% comment %} --main-bg-overlay: rgba(255,255,255,.3); {% endcomment %}
+	{% comment %} --main-bg-overlay: hsla(107deg, 23%, 70%, .3); {% endcomment %}
+	--main-bg-overlay: hsla(117deg, 24%, 30%, .4);
 }
 
 .main-top {
@@ -266,9 +267,9 @@ body {
 	align-items: center;
 }
 .main-left .main-avatar-img-big {
-	margin-left: -1em;
+	margin-left: -2em;
 	margin-bottom: 0;
-	width: 13em;
+	width: 16em;
 }
 .main-center {
 	position: absolute;
@@ -295,10 +296,9 @@ body {
 	margin-left: 1em;
 }
 .main-lighthouse {
-	display: inline-flex;
-	align-self: flex-end;
+	display: flex;
+	justify-content: flex-end;
 	margin-bottom: .5em;
-	margin-left: -2em;
 }
 .main .speedlify-score {
 	border-width: 4px;
