@@ -160,7 +160,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}) {
 		// special title og images, only for _posts
-		if(inputPath.startsWith("./web/_posts/")) {
+		if(inputPath.startsWith("./_posts/")) {
 			return getScreenshotUrlFromPath(`/opengraph${url}`);
 		}
 

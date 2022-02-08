@@ -112,7 +112,7 @@ function getPageViewsPerDayRanks(analyticsData) {
 }
 
 (async () => {
-	let inputMap = getInputMap(["./web/_posts/*.md"]);
+	let inputMap = getInputMap(["./_posts/*.md"]);
 	
 	let analyticsData = await fetchAnalyticsData();
 	

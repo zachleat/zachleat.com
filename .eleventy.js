@@ -391,7 +391,7 @@ module.exports = function(eleventyConfig) {
 
 	/* COLLECTIONS */
 	function getPosts(collectionApi) {
-		return collectionApi.getFilteredByGlob("./web/_posts/*").reverse().filter(function(item) {
+		return collectionApi.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
 			return !!item.data.permalink;
 		}).filter(function(item) {
 			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
@@ -506,7 +506,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("popularPostsRanked", function(collection) {
-		return collection.getFilteredByGlob("./web/_posts/*.md").filter(item => {
+		return collection.getFilteredByGlob("./_posts/*.md").filter(item => {
 			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
 				return false;
 			}
@@ -520,7 +520,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("popularPostsTotalRanked", function(collection) {
-		return collection.getFilteredByGlob("./web/_posts/*.md").filter(item => {
+		return collection.getFilteredByGlob("./_posts/*.md").filter(item => {
 			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
 				return false;
 			}
