@@ -1,5 +1,6 @@
 ---
-title: "Add Responsive-Friendly Enhancements to &lt;details&gt; with &lt;details-utils&gt;"
+title: "Add Responsive-Friendly Enhancements to `details` with `details-utils`"
+titleHtml: "Add Responsive-Friendly Enhancements to &lt;details&gt; with &lt;details-utils&gt;"
 tags:
   - project
   - web-components
