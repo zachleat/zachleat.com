@@ -34,8 +34,11 @@ More Ideas:
       </div>
       <main class="main main-bgimg" style="--og-bgimage: url('{% if post.data.seo.openGraphBackgroundImage %}{{ post.data.seo.openGraphBackgroundImage }}{% elsif post.data.overrideOgImageScreenshotBackground %}{% rawScreenshotImageFromFullUrl post.data.overrideOgImageScreenshotBackground %}{% elsif post.data.external_url %}{% rawScreenshotImageFromFullUrl post.data.external_url %}{% else %}{% rawScreenshotImage post.url %}{% endif %}')">
         <div class="main-top">
-          <h1 class="primary-title main-hed">
-            <span class="main-box">{% if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}</span>
+          {%- capture titleContent %}
+            {%- if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}
+          {%- endcapture %}
+          <h1 class="primary-title main-hed{% if titleContent.length > 68 %} main-hed-long{% endif %}">
+            <span class="main-box">{{ titleContent }}</span>
             {% comment %}<span class="main-hed-sup main-box main-box-nowrap"></span> {% endcomment %}
           </h1>
         </div>
