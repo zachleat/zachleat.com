@@ -65,7 +65,7 @@ function getServiceCacheBuster() {
     // return `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
 
     // Weekly
-    return `_w${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
+    return `_w52_${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
   }
 
   // return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
