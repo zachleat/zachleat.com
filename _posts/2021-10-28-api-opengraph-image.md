@@ -24,7 +24,7 @@ And while it was nice to have some prettier things displaying on social media—
 I’m now using it on [my home page](/):
 
 <div class="livedemo">
-  <img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2F/large/"
+  <img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2F/large/{% cachebuster %}/"
     alt="Screenshot of https://www.zachleat.com/"
     width="1024"
     height="1024"

@@ -168,6 +168,10 @@ module.exports = function(eleventyConfig) {
 		return getScreenshotUrlFromPath(url);
 		// return getScreenshotUrlFromPath("/og/default.jpeg");
 	});
+
+	eleventyConfig.addLiquidShortcode("cachebuster", function() {
+		return getServiceCacheBuster();
+	});
 };
 
 module.exports.screenshotImageHtmlFullUrl = screenshotImageHtmlFullUrl;
