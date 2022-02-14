@@ -4,10 +4,11 @@ tags:
   - speaking
   - eleventy
   - video
-metadata:
-  youtubeId: pPkWxn0TF9w
-external_url: 'https://www.11ty.dev/blog/eleventy-oss/'
+#metadata:
+#  youtubeId: pPkWxn0TF9w
+external_url: "https://www.11ty.dev/blog/eleventy-oss/"
 ignoreExternalLinkInLayoutFile: true
+medialength: 2 min
 ---
 And now a special message via [YouTube](https://www.youtube.com/watch?v=pPkWxn0TF9w) and [Twitter](https://twitter.com/eleven_ty/status/1493284209925967872).
 
