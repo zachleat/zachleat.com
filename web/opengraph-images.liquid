@@ -7,12 +7,14 @@ layout: layouts/base.liquid
 permalink: "/opengraph{{ post.url }}"
 headimage: https://www.zachleat.com/og/default.jpeg
 stylesheetsDist:
- - opengraph.css
+  - opengraph.css
 eleventyComputed:
   sourceUrl: "https://www.zachleat.com{{ post.url }}"
   quote: "{{ quotes | selectRandomFromArray }}"
 quotes:
- - The person that shared this is awesome
+  - The person that shared this is awesome
+secondScreenshotBackgroundOptions:
+  timeout: 5
 ---
 {% comment %}
 More Ideas:
@@ -32,7 +34,7 @@ More Ideas:
         <div class="window-spacer"></div>
         <span class="window-title">{{ quote }}</span>
       </div>
-      <main class="main main-bgimg" style="--og-bgimage: url('{% if post.data.seo.openGraphBackgroundImage %}{{ post.data.seo.openGraphBackgroundImage }}{% elsif post.data.overrideOgImageScreenshotBackground %}{% rawScreenshotImageFromFullUrl post.data.overrideOgImageScreenshotBackground %}{% elsif post.data.external_url %}{% rawScreenshotImageFromFullUrl post.data.external_url %}{% else %}{% rawScreenshotImage post.url %}{% endif %}')">
+      <main class="main main-bgimg" style="--og-bgimage: url('{% if post.data.seo.openGraphBackgroundImage %}{{ post.data.seo.openGraphBackgroundImage }}{% elsif post.data.overrideOgImageScreenshotBackground %}{% rawScreenshotImageFromFullUrl post.data.overrideOgImageScreenshotBackground, secondScreenshotBackgroundOptions %}{% elsif post.data.external_url %}{% rawScreenshotImageFromFullUrl post.data.external_url, secondScreenshotBackgroundOptions %}{% else %}{% rawScreenshotImage post.url, secondScreenshotBackgroundOptions %}{% endif %}')">
         <div class="main-top">
           {%- capture titleContent %}
             {%- if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}

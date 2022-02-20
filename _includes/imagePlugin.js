@@ -107,11 +107,15 @@ function opengraphImageHtml(targetUrl) {
 	});
 }
 
-function getScreenshotUrl(fullUrl) {
-	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getServiceCacheBuster()}/`;
+function getScreenshotUrl(fullUrl, options = {}) {
+	let o = [];
+	for(let key in options) {
+		o.push(`_${key}:${options[key]}`);
+	}
+	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getServiceCacheBuster()}${o.join("")}/`;
 }
-function getScreenshotUrlFromPath(path) {
-	return getScreenshotUrl(getFullUrlFromPath(path));
+function getScreenshotUrlFromPath(path, options) {
+	return getScreenshotUrl(getFullUrlFromPath(path), options);
 }
 
 function screenshotImageHtmlFullUrl(fullUrl) {
@@ -151,11 +155,11 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidShortcode("screenshotImageHtmlFullUrl", screenshotImageHtmlFullUrl);
-	eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl) {
-		return getScreenshotUrl(fullUrl);
+	eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl, options) {
+		return getScreenshotUrl(fullUrl, options);
 	});
-	eleventyConfig.addLiquidShortcode("rawScreenshotImage", function(postUrl) {
-		return getScreenshotUrlFromPath(postUrl);
+	eleventyConfig.addLiquidShortcode("rawScreenshotImage", function(postUrl, options) {
+		return getScreenshotUrlFromPath(postUrl, options);
 	});
 
 	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}) {
