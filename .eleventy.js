@@ -381,8 +381,11 @@ module.exports = function(eleventyConfig) {
 	});
 
 	/* SHORTCODES */
-	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug, startTime) {
-		return `<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe class="youtube-player" src="https://www.youtube.com/embed/${slug}${startTime ? `?start=${startTime}` : ''}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>`;
+	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug, startTime, label) {
+		// TODO only load youtube css/js on pages that use it (via this.page)
+		return `<div class="fullwidth"><lite-youtube videoid="${slug}" params="start=${startTime}" playlabel="Play${label ? `: ${label}` : ""}">
+	<a href="https://youtube.com/watch?v=${slug}" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden">Play Video${label ? `: ${label}` : ""}</span></a>
+</lite-youtube></div>`;
 	});
 
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url) {
@@ -543,12 +546,12 @@ module.exports = function(eleventyConfig) {
 	let md = markdownIt(options).use(markdownItAnchor, {
 		permalink: markdownItAnchor.permalink.ariaHidden({
 			placement: "after",
-      class: "direct-link",
-      symbol: "#",
+			class: "direct-link",
+			symbol: "#",
 			level: [1,2,3,4],
-    }),
-    slugify: eleventyConfig.getFilter("slug")
-  });
+		}),
+		slugify: eleventyConfig.getFilter("slug")
+	});
 
 	eleventyConfig.setLibrary("md", md);
 	

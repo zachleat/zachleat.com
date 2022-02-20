@@ -48,6 +48,7 @@ module.exports = function(grunt) {
 					'node_modules/infinity-burger/infinity-burger.js',
 					'node_modules/speedlify-score/speedlify-score.js',
 					'node_modules/@zachleat/filter-container/filter-container.js',
+					'node_modules/lite-youtube-embed/src/lite-yt-embed.js',
 					],
 				dest: '<%= config.distFolder %>defer.js'
 			}
@@ -100,6 +101,7 @@ module.exports = function(grunt) {
 				files: {
 					'web/css/lib/_infinity-burger.scss': 'node_modules/infinity-burger/infinity-burger.css',
 					'web/css/lib/_speedlify-score.scss': 'node_modules/speedlify-score/speedlify-score.css',
+					'web/css/lib/_lite-yt-embed.scss': 'node_modules/lite-youtube-embed/src/lite-yt-embed.css',
 				}
 			},
 			// For CSS inlining

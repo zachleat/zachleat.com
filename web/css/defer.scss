@@ -19,10 +19,14 @@
 @import "toggle";
 @import "layout";
 @import "opengraph-card";
+@import "lib/lite-yt-embed";
 
 .speedlify-link {
 	text-decoration: none;
 }
 .filter-category--hide {
 	display: none;
+}
+lite-youtube {
+	max-width: 100%;
 }
