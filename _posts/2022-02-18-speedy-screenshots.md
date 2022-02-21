@@ -11,7 +11,7 @@ There is a limitation with the [Screenshot Service](https://www.11ty.dev/docs/se
 
 While this fallback behavior is _okay_ I was starting to see it more often than I’d like. Why, you might ask? Why would it take more than 10 seconds to fetch a screenshot?
 
-Here’s a sample OpenGraph image declaration from the `<head>` of one of my blog posts ([the `<detail-utils>` one](/web/details-utils/)):
+Here’s a sample OpenGraph image declaration from the `<head>` of one of my blog posts ([the `<details-utils>` one](/web/details-utils/)):
 
 ```html
 <meta name="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fdetails-utils%2F/opengraph/">
