@@ -2,7 +2,7 @@ const getTwitterAvatarUrl = require("twitter-avatar-url");
 const eleventyImage = require("@11ty/eleventy-img");
 
 if(process.env.ELEVENTY_PRODUCTION) {
-	eleventyImage.concurrency = 2;
+	eleventyImage.concurrency = 5;
 }
 
 function getImageOptions(username) {
