@@ -1,7 +1,8 @@
 function convertYouTubeUrlToImageUrl(url) {
 	if(url.startsWith("https://www.youtube.com/watch?v=")) {
 		let [, youtubeId] = url.split("https://www.youtube.com/watch?v=");
-		return `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
+		// return `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
+		return `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
 	}
 }
 

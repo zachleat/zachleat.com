@@ -4,8 +4,8 @@ tags:
   - speaking
   - eleventy
   - video
-#metadata:
-#  youtubeId: pPkWxn0TF9w
+metadata:
+  youtubeId: pPkWxn0TF9w
 external_url: "https://www.11ty.dev/blog/eleventy-oss/"
 ignoreExternalLinkInLayoutFile: true
 medialength: 2 min
