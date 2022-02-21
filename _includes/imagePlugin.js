@@ -58,14 +58,20 @@ function backgroundImageFilter(src, width, options = {}) {
 function pad(num) {
 	return `${num}`.padStart(2, '0');
 }
-function getServiceCacheBuster() {
+function getDailyServiceCacheBuster() {
 	if(process.env.ELEVENTY_PRODUCTION) {
 		let d = new Date();
-		// Daily
-		// return `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+		return `_${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+	}
 
+	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
+	return "_localdev";
+}
+function getWeeklyServiceCacheBuster() {
+	if(process.env.ELEVENTY_PRODUCTION) {
+		let d = new Date();
 		// Weekly
-		return `_w52_${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
+		return `_${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
 	}
 
 	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
@@ -93,7 +99,7 @@ function opengraphImageHtml(targetUrl) {
 				size = "auto";
 			}
 
-			return `${fullUrl}${size}/${format}/${getServiceCacheBuster()}/`;
+			return `${fullUrl}${size}/${format}/${getDailyServiceCacheBuster()}/`;
 		}
 	};
 
@@ -112,7 +118,7 @@ function getScreenshotUrl(fullUrl, options = {}) {
 	for(let key in options) {
 		o.push(`_${key}:${options[key]}`);
 	}
-	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getServiceCacheBuster()}${o.join("")}/`;
+	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getWeeklyServiceCacheBuster()}${o.join("")}/`;
 }
 function getScreenshotUrlFromPath(path, options) {
 	return getScreenshotUrl(getFullUrlFromPath(path), options);
@@ -174,7 +180,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidShortcode("cachebuster", function() {
-		return getServiceCacheBuster();
+		return getWeeklyServiceCacheBuster();
 	});
 };
 
