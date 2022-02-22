@@ -45,9 +45,9 @@ For the second rendered screenshot in my Open Graph image chain (the one of the 
 
 You can see it in action on this [12 second blocking external CSS file demo](https://www.zachleat.com/test/async-css-loading/default-12.html). Note that when the page loads successfully (after 12 seconds), it has a green background.
 
-Now check out this screenshot of the 12 second demo with a 4 second screenshot timeout:
+Now check out this screenshot of the 12 second demo with a 3 second screenshot timeout:
 
-<img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Ftest%2Fasync-css-loading%2Fdefault-12.html/small/_timeout:4/" alt="Screenshot showing a white background, the CSS file was not loaded" width="375" height="375" loading="lazy" decoding="async">
+<img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Ftest%2Fasync-css-loading%2Fdefault-12.html/small/_timeout:3/" alt="Screenshot showing a white background, the CSS file was not loaded" width="375" height="375" loading="lazy" decoding="async">
 
 Previously, running the screenshot service against this page would have shown the fallback 11ty logo.
 
