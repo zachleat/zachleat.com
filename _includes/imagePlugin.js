@@ -118,8 +118,7 @@ function getScreenshotUrl(fullUrl, options = {}) {
 	for(let key in options) {
 		o.push(`_${key}:${options[key]}`);
 	}
-	// return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getWeeklyServiceCacheBuster()}${o.join("")}/`;
-	return `https://update-deps--eleventy-api-screenshot.netlify.app/${encodeURIComponent(fullUrl)}/opengraph/${getWeeklyServiceCacheBuster()}${o.join("")}_wait:3/`;
+	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getWeeklyServiceCacheBuster()}${o.join("")}_wait:2/`;
 }
 function getScreenshotUrlFromPath(path, options) {
 	return getScreenshotUrl(getFullUrlFromPath(path), options);
