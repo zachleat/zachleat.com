@@ -119,7 +119,7 @@ function getScreenshotUrl(fullUrl, options = {}) {
 		o.push(`_${key}:${options[key]}`);
 	}
 	// return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${getWeeklyServiceCacheBuster()}${o.join("")}/`;
-	return `https://update-deps--eleventy-api-screenshot.netlify.app/${encodeURIComponent(fullUrl)}/opengraph/${getWeeklyServiceCacheBuster()}${o.join("")}/`;
+	return `https://update-deps--eleventy-api-screenshot.netlify.app/${encodeURIComponent(fullUrl)}/opengraph/${getWeeklyServiceCacheBuster()}${o.join("")}_wait:3/`;
 }
 function getScreenshotUrlFromPath(path, options) {
 	return getScreenshotUrl(getFullUrlFromPath(path), options);
