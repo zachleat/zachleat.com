@@ -1,6 +1,13 @@
 ---
 permalink: "web/dist/{{ pkg.version }}/opengraph.css"
 ---
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji");
+
+@font-face {
+	font-family: SFDisplayBlack;
+	src: url(/og/sources/sf-pro-display-black-latin.woff2) format("woff2");
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -10,10 +17,6 @@ html,
 body {
 	margin: 0;
 	height: 100%;
-}
-@font-face {
-	font-family: SFDisplayBlack;
-	src: url(/og/sources/sf-pro-display-black-latin.woff2) format("woff2");
 }
 
 :root {
@@ -230,7 +233,7 @@ body {
 }
 .main-hed.main-hed {
 	margin: 0;
-	font-family: SFDisplayBlack, sans-serif;
+	font-family: SFDisplayBlack, Noto Color Emoji, sans-serif;
 }
 .main-hed-long {
 	font-size: clamp(2.2em, 4.5vw, 3.5em)
