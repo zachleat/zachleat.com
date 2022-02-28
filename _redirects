@@ -47,6 +47,9 @@
 /busyness-sample/ /archive/busyness-sample/ 301!
 
 # Grab bag
+/web/notes/feed/ /web/notes/ 301!
+/web/notes/ /web/?category=note 301!
+/web/notes/* /web/:splat 301!
 /web/taxonomy/* /web/pragmatic/:splat 301!
 /web/web/w3c-banners/ /web/w3c-status-banners/ 301!
 /web/web-fonts/ /web/fonts/ 301!
