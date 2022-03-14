@@ -43,6 +43,7 @@
 /projects/alarmd-beta/* /alarmd2/:splat 301!
 /bigtext/ /bigtext/demo/ 301!
 /bigtext/demo/ /bigtext/demo/wizard.html 200!
+/bigtext/dist/* /bigtext/dist/:splat 200!
 /bigtext/* /bigtext/demo/:splat 200!
 /parseintimate/ /archive/parseintimate/ 301!
 /busyness-sample/ /archive/busyness-sample/ 301!
