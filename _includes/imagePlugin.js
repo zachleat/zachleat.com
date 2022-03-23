@@ -71,7 +71,7 @@ function getWeeklyServiceCacheBuster() {
 	if(process.env.ELEVENTY_PRODUCTION) {
 		let d = new Date();
 		// Weekly
-		return `_${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
+		return `__${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
 	}
 
 	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
