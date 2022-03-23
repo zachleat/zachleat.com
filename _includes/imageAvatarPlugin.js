@@ -67,7 +67,7 @@ module.exports = function(eleventyConfig) {
 	}
 
 	eleventyConfig.addLiquidShortcode("imgavatar", twitterAvatarHtml);
-	eleventyConfig.addLiquidShortcode("twitterAvatar", twitterAvatarHtml);
+	eleventyConfig.addLiquidShortcode("twitteravatar", twitterAvatarHtml);
 
 
 	function indieAvatarHtml(url = "", classes = "z-avatar") {
