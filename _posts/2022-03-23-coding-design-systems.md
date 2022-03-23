@@ -1,5 +1,5 @@
 ---
-title: "Coding Design Systems Episode 11: Design Systems with 11ty"
+title: "Coding Design Systems episode 11: Design Systems with 11ty"
 tags:
   - eleventy
   - speaking
