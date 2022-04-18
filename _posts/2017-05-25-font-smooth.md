@@ -132,7 +132,11 @@ The safe bet here is to defer to browser and platform defaults and only use `fon
 
 ## Updates
 
-* Sub-pixel anti-aliasing reportedly removed in macOS Mojave: <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Subpixel antialiasing for text is gone in macOS Mojave.</p>&mdash; John Siracusa (@siracusa) <a href="https://twitter.com/siracusa/status/1004143205078597633?ref_src=twsrc%5Etfw">June 5, 2018</a></blockquote>
+Sub-pixel anti-aliasing reportedly removed in macOS Mojave: <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Subpixel antialiasing for text is gone in macOS Mojave.</p>—John Siracusa (@siracusa) <a href="https://twitter.com/siracusa/status/1004143205078597633?ref_src=twsrc%5Etfw">June 5, 2018</a></blockquote>
+
+<blockquote><p>Subpixel AA was removed from the OS, but browsers still do it by default. See <a href="https://www.joshwcomeau.com/css/custom-css-reset/#digit-font-smoothing">https://www.joshwcomeau.com/css/custom-css-reset/#digit-font-smoothing</a></p>—@simevidas <a href="https://twitter.com/simevidas/status/1514712146105540608">April 14, 2022</a></blockquote>
+
+
 
 
 <div class="retweettoshare">
