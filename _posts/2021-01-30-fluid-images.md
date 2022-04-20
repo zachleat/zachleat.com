@@ -76,18 +76,18 @@ _Each case below uses a 200×200 image in both a `150px` container (to shrink) a
 
   <h4>Without [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
   </div>
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
   </div>
 
   <h4>Using [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
   </div>
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width">
   </div>
 </div>
 
@@ -102,18 +102,18 @@ _Editors note: the above section had a pretty glaring error and was corrected th
 
   <h4>Without [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
   </div>
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
   </div>
 
   <h4>Using [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
   </div>
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
   </div>
 </div>
 
@@ -125,20 +125,20 @@ Let’s use `srcset` to add another eligible image width (now 200px and 400px) a
 
   <h4>Without [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="150px">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="150px">
   </div>
   
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="300px">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="300px">
   </div>
 
   <h4>Using [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="150px">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="150px">
   </div>
   
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="300px">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="300px">
   </div>
 </div>
 
@@ -149,20 +149,20 @@ Keeping our two eligible image widths in play (200px and 400px) let’s swap to 
 
   <h4>Without [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth"  sizes="150px">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth"  sizes="150px">
   </div>
   
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth"  sizes="300px">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth"  sizes="300px">
   </div>
 
   <h4 id="id-srcset-widthheight">Using [width][height]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" sizes="150px">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" sizes="150px">
   </div>
   
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" sizes="300px">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" sizes="300px">
   </div>
 </div>
 
@@ -179,11 +179,11 @@ That looks like this:
 
   <h4>Using [width][height] and width: auto ⚠️ incurs CLS costs</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth demo-img-widthauto">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth demo-img-widthauto">
   </div>
   
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth demo-img-widthauto">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth demo-img-widthauto">
   </div>
 </div>
 
@@ -194,11 +194,11 @@ When [Eleventy Image](https://www.11ty.dev/docs/plugins/image/) generates markup
 
   <h4>Using [width="400"][height="400"]</h4>
   <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
   </div>
   
   <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
-    <img src="/img/built/xQ6FwA08Vj-200.jpeg" srcset="/img/built/xQ6FwA08Vj-200.jpeg 200w, /img/built/xQ6FwA08Vj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
+    <img src="/img/built/yL0QoCVMHj-200.jpeg" srcset="/img/built/yL0QoCVMHj-200.jpeg 200w, /img/built/yL0QoCVMHj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth">
   </div>
 </div>
 
