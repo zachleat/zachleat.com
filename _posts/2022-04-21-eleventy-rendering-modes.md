@@ -1,5 +1,8 @@
 ---
-title: "Eleventy: Build versus Serverless versus Edge"
+title: "Eleventy: Build vs. Serverless vs. Edge"
+tags:
+  - eleventy
+  - speaking
 slideWidths:
   - 800
   - 1200
@@ -45,6 +48,15 @@ slideAlts:
   38: For any project mix and match Build, Serverless, and Edge
   39: "For any route/page: mix and match Build, Serverless, Edge, Build + Edge, Serverless + Edge"
 ---
+_This was a talk given at the [Eleventy Meetup (11tymeetup.dev)](https://11tymeetup.dev/events/ep-8-state-of-the-possumverse-and-panel-on-transitioning-to-11ty/). While it was originally titled a “State of 11ty” talk, it somehow got laser-focused on differentiating between the Eleventy rendering modes: Build, [Serverless](https://www.11ty.dev/docs/plugins/serverless/), and [Edge](https://www.11ty.dev/docs/plugins/edge/)._
+
+## Video Pending
+
+I’ll link up the video here when it’s added to the [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup).
+
+
+## Slides
+
 <div class="fullwidth">
   <div class="carousel carousel-16-9">
   {%- for i in (1..39) %}
@@ -59,8 +71,3 @@ slideAlts:
 
 Scroll for slide content →
 
-## Relevant links
-
-* Check out the [Event details on 11tymeetup.dev](https://11tymeetup.dev/events/ep-8-state-of-the-possumverse-and-panel-on-transitioning-to-11ty/)
-
-I’ll link up the video here when it’s added to the [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup).
