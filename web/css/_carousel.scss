@@ -8,14 +8,15 @@
 .carousel > * {
   scroll-snap-align: center;
 }
-.carousel-16-9,
-.carousel-16-9 > * {
+
+.carousel-16-9 picture,
+.carousel-16-9 img {
+  display: block;
   aspect-ratio: 16/9;
 }
 .fullwidth .carousel.carousel img {
-  // width: auto;
+  width: auto;
   height: auto;
-  max-width: 100%;
 }
 @media (min-width: 61.25em) { /* 980px */
   .carousel {
