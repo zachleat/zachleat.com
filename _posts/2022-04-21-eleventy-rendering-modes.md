@@ -50,9 +50,7 @@ slideAlts:
 ---
 _This was a talk given at the [Eleventy Meetup (11tymeetup.dev)](https://11tymeetup.dev/events/ep-8-state-of-the-possumverse-and-panel-on-transitioning-to-11ty/). While it was originally titled a “State of 11ty” talk, it somehow got laser-focused on differentiating between the Eleventy rendering modes: Build, [Serverless](https://www.11ty.dev/docs/plugins/serverless/), and [Edge](https://www.11ty.dev/docs/plugins/edge/)._
 
-## Video Pending
-
-I’ll link up the video here when it’s added to the [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup).
+_Video pending._ I’ll link up the video here when it’s added to the [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup).
 
 
 ## Slides
