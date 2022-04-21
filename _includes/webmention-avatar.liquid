@@ -5,7 +5,7 @@
 {%- if isBookmark and webmention.url %}
   {% indieAvatar webmention.url, imageClass %}
 {%- elsif webmention.author and webmention.author.photo != "" -%}
-  <img class="{{ imageClass }}" src="{{ webmention.author.photo | eleventyImageService }}" alt="{{ webmention.author.name | htmlEntities }}" width="48" height="48" loading="lazy" decoding="async">
+  <img class="{{ imageClass }}" src="{{ webmention.author.photo | eleventyImageServiceAvatar }}" alt="{{ webmention.author.name | htmlEntities }}" width="48" height="48" loading="lazy" decoding="async">
 {%- elsif webmention.url -%}
   {% indieAvatar webmention.url, imageClass %}
 {%- else -%}

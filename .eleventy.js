@@ -67,6 +67,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
 
 	/* FILTERS */
+	eleventyConfig.addFilter("leftpad", (str, length = 3) => {
+		let padding = Array.from({length}).map(t => "0").join("");
+		return (padding + str).substring((""+str).length);
+	});
+
 	eleventyConfig.addFilter("truncate", (str, len = 280) => { // tweet sized default
 		let suffix = str.length > len ? `… <span class="tag-inline">Truncated</span>` : "";
 		return str.substr(0, len) + suffix;

@@ -113,6 +113,27 @@ function opengraphImageHtml(targetUrl) {
 	});
 }
 
+function getImageServiceHtml(targetUrl, width, height, outputWidths = [], alt="") {
+	let fullUrl = `https://v1.image.11ty.dev/${encodeURIComponent(targetUrl)}/`;
+
+	let options = {
+		formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
+		widths: outputWidths,
+		urlFormat: function({width, format}) {
+
+			return `${fullUrl}jpeg/${width}/`;
+		}
+	};
+
+	let stats = Image.statsByDimensionsSync(fullUrl, width, height, options);
+	return Image.generateHTML(stats, {
+		alt,
+		loading: "lazy",
+		decoding: "async",
+		sizes: "(min-width: 61.25em) calc(100vw - 20.625em), 100vw"
+	});
+}
+
 function getScreenshotUrl(fullUrl, options = {}) {
 	let o = [];
 	for(let key in options) {
@@ -150,9 +171,11 @@ module.exports = function(eleventyConfig) {
 	// eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
 	/* Hosted image service to optimize webmention photos */
-	eleventyConfig.addLiquidFilter("eleventyImageService", (url) => {
+	eleventyConfig.addLiquidFilter("eleventyImageServiceAvatar", (url) => {
 		return `https://v1.image.11ty.dev/${encodeURIComponent(url)}/jpeg/72/`;
 	});
+
+	eleventyConfig.addLiquidShortcode("eleventyImageServiceHtml", getImageServiceHtml);
 
 	eleventyConfig.addLiquidShortcode("opengraphImageHtmlFullUrl", opengraphImageHtml);
 
