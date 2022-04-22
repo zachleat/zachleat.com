@@ -4,9 +4,11 @@
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
+  max-height: 80vh;
 }
 .carousel > * {
   scroll-snap-align: center;
+  min-width: 100%;
 }
 
 .carousel-16-9 picture,
@@ -15,8 +17,9 @@
   aspect-ratio: 16/9;
 }
 .fullwidth .carousel.carousel img {
-  width: auto;
+  width: 100%;
   height: auto;
+  max-width: none;
 }
 @media (min-width: 61.25em) { /* 980px */
   .carousel {
