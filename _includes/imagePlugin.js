@@ -121,7 +121,7 @@ function getImageServiceHtml(targetUrl, width, height, outputWidths = [], alt=""
 		widths: outputWidths,
 		urlFormat: function({width, format}) {
 
-			return `${fullUrl}jpeg/${width}/`;
+			return `${fullUrl}${format}/${width}/`;
 		}
 	};
 
