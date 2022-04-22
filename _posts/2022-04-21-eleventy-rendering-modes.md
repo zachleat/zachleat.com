@@ -16,6 +16,7 @@ slideLinks:
   27: https://www.11ty.dev/
   28: https://v0-12-1.11ty.dev/
   30: https://v0-12-1.11ty.dev/authors/
+  31: https://www.youtube.com/watch?v=bENDCw9aLV0
   32: https://www.11ty.dev/authors/
   34: https://www.11ty.dev/docs/account/
 slideAlts:
@@ -58,10 +59,10 @@ _Video pending._ I’ll link up the video here when it’s added to the [Elevent
 <div class="fullwidth">
   <div class="carousel carousel-16-9">
   {%- for i in (1..39) %}
-    {%- capture url %}https://www.zachleat.com/presentations/rendering-modes/rendering-modes.{{ i | leftpad: 3 }}.jpeg{% endcapture %}
+    {%- capture productionUrl %}https://www.zachleat.com/presentations/rendering-modes/rendering-modes.{{ i | leftpad: 3 }}.jpeg{% endcapture %}
     {%- capture alt %}{% if slideAlts[i] %}{{ slideAlts[i] }}{% else %}Slide {{ i }}{% endif %}{% endcapture %}
     {%- if slideLinks[i] %}<a href="{{ slideLinks[i] }}">{% endif %}
-    {% eleventyImageServiceHtml url, 1920, 1080, slideWidths, alt %}
+    {% eleventyImageServiceHtml productionUrl, 1920, 1080, slideWidths, alt %}
     {%- if slideLinks[i] %}</a>{% endif %}
   {%- endfor %}
   </div>
