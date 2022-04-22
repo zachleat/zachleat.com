@@ -3,6 +3,12 @@ title: "Eleventy: Build vs. Serverless vs. Edge"
 tags:
   - eleventy
   - speaking
+  - video
+metadata:
+  speaking:
+    type: meetup
+  youtubeId: 40yPK3EKE60
+medialength: 21 min
 slides:
   imageHost: https://www.zachleat.com/presentations/rendering-modes/
   count: 39
@@ -53,7 +59,9 @@ slides:
 ---
 _This was a talk given at the [Eleventy Meetup (11tymeetup.dev)](https://11tymeetup.dev/events/ep-8-state-of-the-possumverse-and-panel-on-transitioning-to-11ty/). While it was originally titled a “State of 11ty” talk, it somehow got laser-focused on differentiating between the Eleventy rendering modes: Build, [Serverless](https://www.11ty.dev/docs/plugins/serverless/), and [Edge](https://www.11ty.dev/docs/plugins/edge/)._
 
-_Video pending._ I’ll link up the video here when it’s added to the [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup).
+{% youtubeEmbed "40yPK3EKE60" %}
+
+[Watch on YouTube](https://www.youtube.com/watch?v=40yPK3EKE60). Video courtesy of the [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup).
 
 
 ## Slides
