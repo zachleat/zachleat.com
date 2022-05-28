@@ -1,3 +1,4 @@
+const pkg = require("./package.json");
 const { DateTime } = require("luxon");
 const { URL } = require("url");
 const sanitizeHTML = require("sanitize-html");
@@ -37,6 +38,9 @@ module.exports = function(eleventyConfig) {
 	/* COPY */
 	eleventyConfig
 		.addPassthroughCopy("img/")
+		.addPassthroughCopy({
+			"node_modules/lite-youtube-embed/src/lite-yt-embed.js": `web/dist/${pkg.version}/lite-yt-embed.js`
+		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
 		.addPassthroughCopy("web/css/fonts")
@@ -77,7 +81,7 @@ module.exports = function(eleventyConfig) {
 		return str.substr(0, len) + suffix;
 	});
 
-	eleventyConfig.addFilter("selectRandomFromArray", (arr) => { // tweet sized default
+	eleventyConfig.addFilter("selectRandomFromArray", (arr) => {
 		let index = Math.floor(Math.random() * arr.length);
 		return arr[index];
 	});
@@ -380,9 +384,9 @@ module.exports = function(eleventyConfig) {
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug, startTime, label) {
 		// TODO only load youtube css/js on pages that use it (via this.page)
-		return `<div class="fullwidth"><lite-youtube videoid="${slug}" params="start=${startTime}" playlabel="Play${label ? `: ${label}` : ""}">
+		return `<div class="fullwidth"><is-land on:visible import="/web/dist/${pkg.version}/lite-yt-embed.js" style="display: block; aspect-ratio: 16/9"><lite-youtube videoid="${slug}" params="start=${startTime}" playlabel="Play${label ? `: ${label}` : ""}">
 	<a href="https://youtube.com/watch?v=${slug}" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden">Play Video${label ? `: ${label}` : ""}</span></a>
-</lite-youtube></div>`;
+</lite-youtube></is-land></div>`;
 	});
 
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url) {

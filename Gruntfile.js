@@ -32,23 +32,15 @@ module.exports = function(grunt) {
 				],
 				dest: '<%= config.distFolder %>initial.js'
 			},
-			jsAsync: {
-				src: [
-					'node_modules/fg-loadjs/loadJS.js',
-					'<%= config.jsSrc %>timeago.js',
-					'<%= config.jsSrc %>async.js'
-					],
-				dest: '<%= config.distFolder %>async.js'
-			},
 			jsDefer: {
 				src: [
 					'<%= config.jsSrc %>google-analytics.js',
-					'<%= config.jsSrc %>lazyimg.js',
+					'<%= config.jsSrc %>timeago.js',
 					'<%= config.jsSrc %>toggle.js',
+					'<%= config.jsSrc %>islands.js',
 					'node_modules/infinity-burger/infinity-burger.js',
 					'node_modules/speedlify-score/speedlify-score.js',
 					'node_modules/@zachleat/filter-container/filter-container.js',
-					'node_modules/lite-youtube-embed/src/lite-yt-embed.js',
 					],
 				dest: '<%= config.distFolder %>defer.js'
 			}
@@ -60,10 +52,6 @@ module.exports = function(grunt) {
 			js: {
 				src: '<%= concat.js.dest %>',
 				dest: '<%= config.distFolder %>initial.min.js'
-			},
-			jsAsync: {
-				src: '<%= concat.jsAsync.dest %>',
-				dest: '<%= config.distFolder %>async.min.js'
 			},
 			jsDefer: {
 				src: '<%= concat.jsDefer.dest %>',

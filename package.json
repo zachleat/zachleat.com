@@ -1,10 +1,9 @@
 {
   "name": "zachleat.com",
-  "version": "2.5.1",
+  "version": "2.6.0",
   "description": "The website of @zachleat",
   "dependencies": {
     "@zachleat/filter-container": "^3.0.4",
-    "fg-loadjs": "^1.1.0",
     "infinity-burger": "^3.0.0",
     "lite-youtube-embed": "^0.2.0",
     "speedlify-score": "^2.0.2"
@@ -60,8 +59,7 @@
     "clean": "rm -rf _site && rm -rf .cache",
     "check-links": "npx check-html-links _site",
     "build": "npx grunt && npx @11ty/eleventy --quiet",
-    "start": "npx grunt && npx @11ty/eleventy --quiet --serve --port=8090",
-    "webmentions": "ELEVENTY_FEATURES=webmentions npx @11ty/eleventy --quiet",
+    "start": "npx grunt && npx @11ty/eleventy --quiet --serve --port=8090 --incremental",
     "build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions,counts npx @11ty/eleventy --quiet",
     "production": "./fetch-projects.sh && node fetch-analytics-data.js && npx grunt production"
   },
