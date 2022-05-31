@@ -59,6 +59,9 @@
 {%- endfor %}
 		<script>{% include "initial.min.js" %}</script>
 		<script src="{{ distFolder }}defer.min.js" defer></script>
+{%- for script in scriptsDist -%}
+		<script src="{{ distFolder }}{{ script }}" defer></script>
+{%- endfor %}
 
 		<meta property="eleventy:path" content="{{ page.inputPath }}">
 

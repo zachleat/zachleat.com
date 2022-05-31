@@ -20,7 +20,9 @@
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[urlWithOrigin] %}
 				<a href="https://www.speedlify.dev/zachleat.com/#site-{{ speedlify[urlWithOrigin].hash }}" class="speedlify-link">
-					<speedlify-score hash="{{ speedlify[urlWithOrigin].hash }}" speedlify-url="https://www.speedlify.dev" score weight requests></speedlify-score>
+					<is-land on:visible import="/web/dist/{{pkg.version}}/speedlify-score.js">
+						<speedlify-score hash="{{ speedlify[urlWithOrigin].hash }}" speedlify-url="https://www.speedlify.dev" score weight requests></speedlify-score>
+					</is-land>
 				</a>
 {%- endif %}
 			</div>

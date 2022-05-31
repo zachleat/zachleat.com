@@ -8,6 +8,8 @@ permalink: "/opengraph{{ post.url }}"
 headimage: https://www.zachleat.com/og/default.jpeg
 stylesheetsDist:
   - opengraph.css
+scriptsDist:
+  - speedlify-score.js
 eleventyComputed:
   sourceUrl: "https://www.zachleat.com{{ post.url }}"
   quote: "{{ quotes | selectRandomFromArray }}"

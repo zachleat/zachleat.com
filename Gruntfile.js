@@ -34,12 +34,11 @@ module.exports = function(grunt) {
 			},
 			jsDefer: {
 				src: [
+					'<%= config.jsSrc %>islands.js',
 					'<%= config.jsSrc %>google-analytics.js',
 					'<%= config.jsSrc %>timeago.js',
 					'<%= config.jsSrc %>toggle.js',
-					'<%= config.jsSrc %>islands.js',
 					'node_modules/infinity-burger/infinity-burger.js',
-					'node_modules/speedlify-score/speedlify-score.js',
 					'node_modules/@zachleat/filter-container/filter-container.js',
 					],
 				dest: '<%= config.distFolder %>defer.js'
