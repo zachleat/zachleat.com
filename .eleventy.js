@@ -28,6 +28,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.setDataDeepMerge(true);
 	eleventyConfig.setQuietMode(true);
 
+	eleventyConfig.setServerOptions({
+		domdiff: false,
+		showVersion: true,
+	});
+
 	/* PLUGINS */
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
