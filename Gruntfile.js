@@ -32,9 +32,14 @@ module.exports = function(grunt) {
 				],
 				dest: '<%= config.distFolder %>initial.js'
 			},
+			jsDeferModule: {
+				src: [
+					'node_modules/@11ty/is-land/is-land.js',
+					],
+				dest: '<%= config.distFolder %>defer-mod.js'
+			},
 			jsDefer: {
 				src: [
-					'<%= config.jsSrc %>islands.js',
 					'<%= config.jsSrc %>google-analytics.js',
 					'<%= config.jsSrc %>timeago.js',
 					'<%= config.jsSrc %>toggle.js',
@@ -51,6 +56,10 @@ module.exports = function(grunt) {
 			js: {
 				src: '<%= concat.js.dest %>',
 				dest: '<%= config.distFolder %>initial.min.js'
+			},
+			jsDeferMod: {
+				src: '<%= concat.jsDeferModule.dest %>',
+				dest: '<%= config.distFolder %>defer-mod.min.js'
 			},
 			jsDefer: {
 				src: '<%= concat.jsDefer.dest %>',

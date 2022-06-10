@@ -59,6 +59,7 @@
 		<link href="{{ distFolder }}{{ stylesheet }}" rel="stylesheet">
 {%- endfor %}
 		<script>{% include "initial.min.js" %}</script>
+		<script src="{{ distFolder }}defer-mod.min.js" type="module" defer></script>
 		<script src="{{ distFolder }}defer.min.js" defer></script>
 {%- for script in scriptsDist -%}
 		<script src="{{ distFolder }}{{ script }}" defer></script>

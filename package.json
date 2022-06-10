@@ -3,6 +3,7 @@
   "version": "2.6.0",
   "description": "The website of @zachleat",
   "dependencies": {
+    "@11ty/is-land": "^1.0.0",
     "@zachleat/filter-container": "^3.0.4",
     "infinity-burger": "^3.0.0",
     "lite-youtube-embed": "^0.2.0",
