@@ -390,7 +390,7 @@ module.exports = function(eleventyConfig) {
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug, startTime, label) {
 		// TODO only load youtube css/js on pages that use it (via this.page)
-		return `<div class="fullwidth"><is-land on:visible import="/web/dist/${pkg.version}/lite-yt-embed.js" class="fluid-width-video-wrapper"><lite-youtube videoid="${slug}" params="start=${startTime}" playlabel="Play${label ? `: ${label}` : ""}">
+		return `<div class="fullwidth"><is-land on:visible import="/web/dist/${pkg.version}/lite-yt-embed.js" class="fluid-width-video-wrapper"><lite-youtube videoid="${slug}"${startTime ? ` params="start=${startTime}"` : ""} playlabel="Play${label ? `: ${label}` : ""}" style="background-image:url('https://i.ytimg.com/vi/${slug}/maxresdefault.jpg')">
 	<a href="https://youtube.com/watch?v=${slug}" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden">Play Video${label ? `: ${label}` : ""}</span></a>
 </lite-youtube></is-land></div>`;
 	});
