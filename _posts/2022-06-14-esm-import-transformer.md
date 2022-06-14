@@ -12,6 +12,8 @@ import {html, css, LitElement} from "lit";
 import {html, css, LitElement} from "https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js";
 ```
 
+* [Source code on GitHub](https://github.com/zachleat/esm-import-transformer)
+
 This is useful when you want to use the same input source JavaScript code to run in both a server context and a client context, without making huge modifications to the code!
 
 _Practically speaking, I used this in a [couple places](https://twitter.com/zachleat/status/1534205971807064071) to implement the SSR examples for [`<is-land>`](https://github.com/11ty/is-land)._
@@ -44,7 +46,7 @@ let outputCode = it.transform(sourceCode, importMap);
 
 ## Installation
 
-Available on [npm](https://www.npmjs.com/package/esm-import-transformer)
+Available on [npm](https://www.npmjs.com/package/esm-import-transformer) and [GitHub](https://github.com/zachleat/esm-import-transformer)
 
 ```
 npm install esm-import-transformer
