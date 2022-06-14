@@ -80,6 +80,7 @@ One term, two contexts, two definitions! I do think it’s important that folks 
 > SSR isn’t “free”. These SSR frameworks exist because they make a profit for their creators.
 > —[Cory House](https://twitter.com/housecor/status/1534527068888776705)
 
+The worst outcome from this overloaded definition (in my mind) would be that folks mistakenly assume that component framework SSR requires a Node.js server! It _does not_. I’d hate to see ambiguity in a technical term leveraged for profit. Just know that you _can_ use a static build to implement component SSR (maybe also known as prerendered markup) without a Node.js server, a serverless function adapter, or any of those unnecessary (and more costly) alternatives.
 ---
 
 This post inspired by tweets from:
