@@ -14,7 +14,7 @@ import {html, css, LitElement} from "https://cdn.jsdelivr.net/gh/lit/dist@2/core
 
 * [Source code on GitHub](https://github.com/zachleat/esm-import-transformer)
 
-This is useful when you want to use the same input source JavaScript code to run in both a server context and a client context, without making huge modifications to the code!
+This is useful when you want to use the same input source JavaScript code to run in both a server context and a client context, without making huge modifications to the code! It could also be used as a build-time workaround for import maps until [browser support improves](https://caniuse.com/import-maps).
 
 _Practically speaking, I used this in a [couple places](https://twitter.com/zachleat/status/1534205971807064071) to implement the SSR examples for [`<is-land>`](https://github.com/11ty/is-land)._
 
