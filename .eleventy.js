@@ -355,6 +355,7 @@ module.exports = function(eleventyConfig) {
 			return [];
 		}
 
+		let knownUrls = {};
 		return webmentions.mentions[url]
 			.filter(entry => {
 				if(!allowedTypes.includes(entry['wm-property'])) {
@@ -366,7 +367,27 @@ module.exports = function(eleventyConfig) {
 				}).length > 0) {
 					return false;
 				}
-				return getBaseUrl(entry['wm-target']) === url;
+				if(getBaseUrl(entry['wm-target']) !== url) {
+					return false;
+				}
+				// no dupes
+				if(entry.url) {
+					if(knownUrls[entry.url]) {
+						return false;
+					}
+					knownUrls[entry.url] = true;
+				}
+				return true;
+			}).sort((a, b) => {
+				// Show oldest entries first
+				let adate = a.published || a['wm-received'];
+				let bdate = b.published || a['wm-received'];
+				if(bdate < adate) {
+					return 1;
+				} else if(bdate > adate) {
+					return -1;
+				}
+				return 0;
 			});
 	});
 

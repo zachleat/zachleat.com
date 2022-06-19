@@ -3,11 +3,11 @@
 {%- endunless %}
 {%- assign isBookmark = webmention | webmentionIsType: "bookmark-of" %}
 {%- if isBookmark and webmention.url %}
-  {% indieAvatar webmention.url, imageClass %}
+  {% indieAvatarBare webmention.url, imageClass %}
 {%- elsif webmention.author and webmention.author.photo != "" -%}
   <img class="{{ imageClass }}" src="{{ webmention.author.photo | eleventyImageServiceAvatar }}" alt="{{ webmention.author.name | htmlEntities }}" width="48" height="48" loading="lazy" decoding="async">
 {%- elsif webmention.url -%}
-  {% indieAvatar webmention.url, imageClass %}
+  {% indieAvatarBare webmention.url, imageClass %}
 {%- else -%}
   <img class="{{ imageClass }}" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="Default avatar image" width="48" height="48" loading="lazy" decoding="async">
 {%- endif -%}

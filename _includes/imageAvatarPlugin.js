@@ -70,10 +70,21 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLiquidShortcode("twitteravatar", twitterAvatarHtml);
 
 
-	function indieAvatarHtml(url = "", classes = "z-avatar") {
+	function indieAvatarHtml(url = "", classes = "z-avatar", onerror = "") {
 		let screenshotUrl = `https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(url)}/`;
-		return `<img alt="IndieWeb Avatar for ${url}" class="${classes}" loading="lazy" decoding="async" src="${screenshotUrl}" width="60" height="60">`;
+		return `<img alt="IndieWeb Avatar for ${url}" class="${classes}" loading="lazy" decoding="async" src="${screenshotUrl}" width="60" height="60"${onerror ? ` onerror="${onerror}"`: ""}>`;
 	}
 
 	eleventyConfig.addLiquidShortcode("indieAvatar", indieAvatarHtml);
+
+	eleventyConfig.addLiquidShortcode("indieAvatarBare", function(url = "", classes = "") {
+		let origin;
+		try {
+			origin = (new URL(url)).origin;
+		} catch(e) {
+			origin = url;
+		}
+
+		return indieAvatarHtml(origin, classes, "this.parentNode.classList.add('error')");
+	});
 };

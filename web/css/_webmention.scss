@@ -32,6 +32,12 @@
     position: relative;
     z-index: 1;
 }
+.webmentions__face {
+    background-color: rgba(0,0,0,.03);
+}
+.error > .webmentions__face {
+    visibility: hidden;
+}
 @supports (object-fit: cover) {
     .webmentions__face,
     .webmentions__face[width][height] {
