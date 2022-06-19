@@ -1463,7 +1463,7 @@ pre + .livedemo {
 	padding: 0;
 }
 
-.livedemo img {
+.livedemo img:not(.z-avatar) {
 	display: block;
 }
 
