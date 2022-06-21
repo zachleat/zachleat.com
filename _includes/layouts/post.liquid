@@ -81,7 +81,7 @@ tmpl: page
 {% unless isDraft %}
 <div id="opengraph-preview" class="share content-grid-sibling">
 	<details>
-		<summary class="hed-h3">Social Card Image Preview</summary>
+		<summary class="hed-h4"><strong>Sharing on social media?</strong></summary>
 		<p>This is what will show up when you share this post on Social Media:</p>
 		<img class="share-img" src="{% if headimage %}{{ headimage | absoluteUrl }}{% else %}{% ogImageSource page %}{% endif %}" decoding="async" loading="lazy" width="1200" height="630">
 		<p>How did you do this? <a href="/web/automatic-opengraph/">I automated my Open Graph images.</a> (<a href="/opengraph{{ page.url }}">Peer behind the curtain at the test page</a>)</p>

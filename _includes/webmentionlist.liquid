@@ -73,8 +73,10 @@
   </details>
   {% endif %}
 
+  <h4>Shamelessly plug your related post:</h4>
+
   <form action="https://webmention.io/www.zachleat.com/webmention" method="post" class="form-webmention">
-    <label for="form-webmention-source">Mention this post from your site:</label>
+    <label for="form-webmention-source" class="sr-only">URL of your site:</label>
     <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required>
     <input type="hidden" name="target" value="https://www.zachleat.com{{ page.url }}">
     <input type="submit" class="button" value="Send Webmention">
