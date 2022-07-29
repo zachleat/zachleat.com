@@ -1457,6 +1457,15 @@ pre + .livedemo {
 	bottom: -.7em;
 	top: auto;
 }
+.livedemo-sm {
+	font-size: 0.7142857142857em; /* 15px /21 */
+	max-width: 26em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.livedemo-evil .emoji {
+	font-style: normal;
+}
 
 /* Flush */
 .livedemo-flush {

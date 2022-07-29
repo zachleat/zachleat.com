@@ -307,7 +307,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addLiquidFilter("emoji", function(content) {
-		return `<span aria-hidden="true">${content}</span>`;
+		return `<span aria-hidden="true" class="emoji">${content}</span>`;
 	});
 
 	eleventyConfig.addLiquidFilter("wordcount", function(content) {
