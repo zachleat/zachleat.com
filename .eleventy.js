@@ -46,6 +46,8 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy({
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.js": `web/dist/${pkg.version}/lite-yt-embed.js`,
 			"node_modules/speedlify-score/speedlify-score.js": `web/dist/${pkg.version}/speedlify-score.js`,
+			"node_modules/artificial-chart/artificial-chart.js": `web/dist/${pkg.version}/artificial-chart.js`,
+			"node_modules/artificial-chart/artificial-chart.css": `web/dist/${pkg.version}/artificial-chart.css`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")

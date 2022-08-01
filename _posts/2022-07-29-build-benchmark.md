@@ -1,6 +1,37 @@
 ---
 title: "Which Generator builds Markdown the fastest?"
+stylesheetsDist:
+  - "artificial-chart.css"
 ---
+<svg style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+  <defs>
+    <linearGradient id="gradient-sunrise-h">
+      <stop offset="0%" stop-color="#F0047F"/>
+      <stop offset="100%" stop-color="#FC814A"/>
+    </linearGradient>
+    <linearGradient id="gradient-sunrise-v" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#F0047F"/>
+      <stop offset="100%" stop-color="#FC814A"/>
+    </linearGradient>
+    <linearGradient id="gradient-blue-h">
+      <stop offset="0%" stop-color="#0090c9"/>
+      <stop offset="100%" stop-color="#00c0ad"/>
+    </linearGradient>
+    <linearGradient id="gradient-blue-v" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0090c9"/>
+      <stop offset="100%" stop-color="#00c0ad"/>
+    </linearGradient>
+    <linearGradient id="gradient-sun-h">
+      <stop offset="0%" stop-color="#FFC803"/>
+      <stop offset="100%" stop-color="#FC814A"/>
+    </linearGradient>
+    <linearGradient id="gradient-sun-v" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFC803"/>
+      <stop offset="100%" stop-color="#FC814A"/>
+    </linearGradient>
+  </defs>
+</svg>
+
 Blogging. The quintessential starter project for most—if not all—[site generators](https://jamstack.org/generators/). Here’s a few samples:
 
 * Next.js guides new developers to [`Learn Next.js`](https://nextjs.org/learn/basics/create-nextjs-app) _“by creating a very simple blog app.”_
@@ -19,29 +50,96 @@ _(Order is alphabetical. Disclosure: I am the maintainer of [Eleventy](https://w
 
 ## Benchmark Results
 
-<iframe style="width: 100%; aspect-ratio: 1.61725067;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ2twipZhRDnkvUZOjRh3ufR2h05O1DlHbsNDnc-qVpwrodiRaqv3g1pV9FljuuSqhdeCZPwMQJcs7/pubchart?oid=296294569&amp;format=interactive" frameborder="0" scrolling="no"></iframe>
+<is-land on:visible>
+<style>
+#markdown-bench-chart svg { overflow: visible; }
+</style>
+<div id="markdown-bench-chart"></div>
+<script type="module/island">
+import "https://d3js.org/d3.v7.min.js";
+import { Line } from "/web/dist/{{pkg.version}}/artificial-chart.js";
+new Line("markdown-bench-chart", "markdown-bench-datatable", {
+  showLegend: false,
+  valueType: ["float"],
+  max: {
+    y: 32
+  },
+  margin: {
+    left: 25,
+    right: 70,
+  }
+});
+</script>
+</is-land>
 
-* [_View on Google Sheets_](https://docs.google.com/spreadsheets/d/1wFWKkpNRsToixdGyWeznA8xaUB0ZJggpLiTPLnaeL4k/)
+_Times shown are in seconds. Lower is better._
 
-<details>
-<summary>Show table of results</summary>
+<table id="markdown-bench-datatable">
+<thead>
+<tr>
+<th>Markdown Files:</th>
+<th>250</th>
+<th>500</th>
+<th>1000</th>
+<th>2000</th>
+<th>4000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Astro <code>1.0.0-rc2</code></td>
+<td>3.044</td>
+<td>4.361</td>
+<td>7.331</td>
+<td>13.349</td>
+<td>30.258</td>
+</tr>
+<tr>
+<td>Eleventy <code>1.0.1</code></td>
+<td>0.584</td>
+<td>0.683</td>
+<td>0.914</td>
+<td>1.250</td>
+<td>1.938</td>
+</tr>
+<tr>
+<td>Gatsby <code>4.19.0</code> (cli)</td>
+<td>14.462</td>
+<td>15.722</td>
+<td>17.967</td>
+<td>22.356</td>
+<td>29.059</td>
+</tr>
+<tr>
+<td>Hugo <code>v0.101.0</code></td>
+<td>0.071</td>
+<td>0.110</td>
+<td>0.171</td>
+<td>0.352</td>
+<td>0.684</td>
+</tr>
+<tr>
+<td>Next.js <code>12.2.3</code></td>
+<td>6.552</td>
+<td>6.932</td>
+<td>8.034</td>
+<td>9.582</td>
+<td>13.409</td>
+</tr>
+<tr>
+<td>Remix <code>1.6.5</code></td>
+<td>2.876</td>
+<td>8.258</td>
+<td>46.918</td>
+<td>349.125</td>
+<td>1800</td>
+</tr>
+</tbody>
+</table>
 
-Times are in seconds.
+_\* The last Remix test was force-quit at 30 minutes—it didn’t finish._
 
-|Generator|250× `.md`|500× `.md`|1000× `.md`|2000× `.md`|4000× `.md`|
-|---|---|---|---|---|---|
-|Astro `1.0.0-rc2`|3.044|4.361|7.331|13.349|30.258|
-|Eleventy `1.0.1`|0.584|0.683|0.914|1.250|1.938|
-|Gatsby `4.19.0` (cli)|14.462|15.722|17.967|22.356|29.059|
-|Hugo `v0.101.0`|0.071|0.110|0.171|0.352|0.684|
-|Next.js `12.2.3`|6.552|6.932|8.034|9.582|13.409|
-|Remix `1.6.5`|2.876|8.258|46.918|349.125|&lt; 1800\*|
-
-_\* Force quit at 30 minutes—it didn’t finish._
-
-</details>
-
-Note that the above chart uses a logarithmic scale. Each run was repeated 3 times and the lowest/fastest time was selected. This result set was generated on a MacBook Air (M1, 2020), macOS Monterey 12.5, 16 GB memory.
+Each run was repeated 3 times and the lowest/fastest time was selected. This result set was generated on a MacBook Air (M1, 2020), macOS Monterey 12.5, 16 GB memory.
 
 All of the code for [this benchmark is fully open source](https://github.com/zachleat/bench-framework-markdown) and welcomes review.
 
@@ -68,23 +166,61 @@ I put out a [Twitter poll](https://twitter.com/zachleat/status/15527237093954068
 
 ### Bonus: `npm install` Benchmarks
 
-<iframe style="width: 100%; aspect-ratio: 1.61725067;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQRE6QkRJgCj-Tr_LfevwmrjzU68TqjhontCqJO0-hdVZO02BmBo9i6zPtMVeKk1LGWC6uP6bXOCyZ/pubchart?oid=1884126262&amp;format=interactive" frameborder="0" scrolling="no"></iframe>
+<is-land on:visible>
+<div id="npm-install-chart"></div>
+<script type="module/island">
+import "https://d3js.org/d3.v7.min.js";
+import { HorizontalBar } from "/web/dist/{{pkg.version}}/artificial-chart.js";
+new HorizontalBar("npm-install-chart", "npm-install-datatable", {
+  showLegend: false,
+  showInlineBarValues: "outside",
+  valueType: ["float"],
+  margin: {
+    left: 170
+  }
+});
+</script>
+</is-land>
 
-* [_View on Google Sheets_](https://docs.google.com/spreadsheets/d/1q38KB7cmD6Mk3Fxm7vY-pdmFdrN6kbq3DhuMmB9kij0/)
+_Times shown are in seconds. Lower is better._
 
 <details>
 <summary>Show table of results</summary>
 
-Times are in seconds.
-
-|Framework|`npm install`|
-|---|---|
-|Astro `1.0.0-rc2`|19.870s|
-|Eleventy `1.0.1`|15.168s|
-|Eleventy `2.0.0-canary.14`|7.195s|
-|Gatsby `4.19.0` (cli)|68.516s|
-|Next.js `12.2.3`|15.589s|
-|Remix `1.6.5`|28.619s|
+<table id="npm-install-datatable">
+<thead>
+  <tr>
+    <th>Framework</th>
+    <th><code>npm install</code> Time</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Astro <code>1.0.0-rc2</code></td>
+    <td>19.870</td>
+  </tr>
+  <tr>
+    <td>Eleventy <code>1.0.1</code></td>
+    <td>15.168</td>
+  </tr>
+  <tr>
+    <td>Eleventy <code>2.0.0-canary.14</code></td>
+    <td>7.195</td>
+  </tr>
+  <tr>
+    <td>Gatsby <code>4.19.0</code> (cli)</td>
+    <td>68.516</td>
+  </tr>
+  <tr>
+    <td>Next.js <code>12.2.3</code></td>
+    <td>15.589</td>
+  </tr>
+  <tr>
+    <td>Remix <code>1.6.5</code></td>
+    <td>28.619</td>
+  </tr>
+</tbody>
+</table>
 
 </details>
 
