@@ -78,61 +78,61 @@ _Times shown are in seconds. Lower is better._
 <thead>
 <tr>
 <th>Markdown Files:</th>
-<th>250</th>
-<th>500</th>
-<th>1000</th>
-<th>2000</th>
-<th>4000</th>
+<th class="numeric">250</th>
+<th class="numeric">500</th>
+<th class="numeric">1000</th>
+<th class="numeric">2000</th>
+<th class="numeric">4000</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Astro <code>1.0.0-rc2</code></td>
-<td>3.044</td>
-<td>4.361</td>
-<td>7.331</td>
-<td>13.349</td>
-<td>30.258</td>
+<td class="numeric">3.044</td>
+<td class="numeric">4.361</td>
+<td class="numeric">7.331</td>
+<td class="numeric">13.349</td>
+<td class="numeric">30.258</td>
 </tr>
 <tr>
 <td>Eleventy <code>1.0.1</code></td>
-<td>0.584</td>
-<td>0.683</td>
-<td>0.914</td>
-<td>1.250</td>
-<td>1.938</td>
+<td class="numeric">0.584</td>
+<td class="numeric">0.683</td>
+<td class="numeric">0.914</td>
+<td class="numeric">1.250</td>
+<td class="numeric">1.938</td>
 </tr>
 <tr>
 <td>Gatsby <code>4.19.0</code> (cli)</td>
-<td>14.462</td>
-<td>15.722</td>
-<td>17.967</td>
-<td>22.356</td>
-<td>29.059</td>
+<td class="numeric">14.462</td>
+<td class="numeric">15.722</td>
+<td class="numeric">17.967</td>
+<td class="numeric">22.356</td>
+<td class="numeric">29.059</td>
 </tr>
 <tr>
 <td>Hugo <code>v0.101.0</code></td>
-<td>0.071</td>
-<td>0.110</td>
-<td>0.171</td>
-<td>0.352</td>
-<td>0.684</td>
+<td class="numeric">0.071</td>
+<td class="numeric">0.110</td>
+<td class="numeric">0.171</td>
+<td class="numeric">0.352</td>
+<td class="numeric">0.684</td>
 </tr>
 <tr>
 <td>Next.js <code>12.2.3</code></td>
-<td>6.552</td>
-<td>6.932</td>
-<td>8.034</td>
-<td>9.582</td>
-<td>13.409</td>
+<td class="numeric">6.552</td>
+<td class="numeric">6.932</td>
+<td class="numeric">8.034</td>
+<td class="numeric">9.582</td>
+<td class="numeric">13.409</td>
 </tr>
 <tr>
 <td>Remix <code>1.6.5</code></td>
-<td>2.876</td>
-<td>8.258</td>
-<td>46.918</td>
-<td>349.125</td>
-<td>1800</td>
+<td class="numeric">2.876</td>
+<td class="numeric">8.258</td>
+<td class="numeric">46.918</td>
+<td class="numeric">349.125</td>
+<td class="numeric">1800</td>
 </tr>
 </tbody>
 </table>
