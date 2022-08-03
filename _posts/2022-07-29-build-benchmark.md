@@ -190,7 +190,7 @@ I put out a [Twitter poll](https://twitter.com/zachleat/status/15527237093954068
 
 ### Summary
 
-_updated August 3, 2022 with notes about file-based routing of markdown in Remix and Next.js, as well as Astro MDX._
+_Updated August 3, 2022 with notes about file-based routing of markdown in Remix and Next.js, as well as Astro MDX._
 
 1. Hugo remains the undisputed speed champ—no question about that.
 1. Eleventy was the fastest JavaScript-based generator.
