@@ -54,7 +54,7 @@ _(Order is alphabetical. Disclosure: I am the maintainer of [Eleventy](https://w
 <style>
 #markdown-bench-chart svg { overflow: visible; }
 </style>
-<div id="markdown-bench-chart"></div>
+<div id="markdown-bench-chart" style="height: 850px"></div>
 <script type="module/island">
 import "https://d3js.org/d3.v7.min.js";
 import { Line } from "/web/dist/{{pkg.version}}/artificial-chart.js";
@@ -62,7 +62,7 @@ new Line("markdown-bench-chart", "markdown-bench-datatable", {
   showLegend: false,
   valueType: ["float"],
   max: {
-    y: 32
+    y: 70
   },
   margin: {
     left: 25,
@@ -119,7 +119,7 @@ _Times shown are in seconds. Lower is better._
 <td class="numeric">0.684</td>
 </tr>
 <tr>
-<td>Next.js <code>12.2.3</code></td>
+<td>Next.js <code>12.2.3</code> (JS routing)</td>
 <td class="numeric">6.552</td>
 <td class="numeric">6.932</td>
 <td class="numeric">8.034</td>
@@ -127,17 +127,49 @@ _Times shown are in seconds. Lower is better._
 <td class="numeric">13.409</td>
 </tr>
 <tr>
-<td>Remix <code>1.6.5</code></td>
+<td>Next.js <code>12.2.3</code> (File routing)</td>
+<td class="numeric">7.958</td>
+<td class="numeric">9.551</td>
+<td class="numeric">14.304</td>
+<td class="numeric">25.038</td>
+<td class="numeric">70.653</td>
+</tr>
+<tr>
+<td>Remix <code>1.6.5</code> (File routing)</td>
 <td class="numeric">2.876</td>
 <td class="numeric">8.258</td>
 <td class="numeric">46.918</td>
 <td class="numeric">349.125</td>
-<td class="numeric">1800</td>
+<td class="numeric"><em>1800</em></td>
 </tr>
 </tbody>
 </table>
 
-_\* The last Remix test was force-quit at 30 minutes—it didn’t finish._
+<div class="caption">The last Remix (File routing) test was force-quit at 1800 seconds (30 minutes)—it had not completed.</div>
+
+<table>
+<thead>
+<tr>
+<th>Markdown Files:</th>
+<th class="numeric">250</th>
+<th class="numeric">500</th>
+<th class="numeric">1000</th>
+<th class="numeric">2000</th>
+<th class="numeric">4000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remix <code>1.6.5</code> (JS routing)</td>
+<td class="numeric">0.868</td>
+<td class="numeric">0.834</td>
+<td class="numeric">0.891</td>
+<td class="numeric">0.887</td>
+<td class="numeric">0.901</td>
+</tr>
+</tbody>
+</table>
+<div class="caption"><em>Updated August 3, 2022:</em> Perhaps controversially, the Remix (JS routing) method is excluded from the chart because it does not perform any processing of markdown. One <em>could</em> argue that this is the fastest way but also simultaneously irrelevant to this benchmark! Make sure you read the <a href="#remix-addendum">Remix addendum below</a>.</div>
 
 Each run was repeated 3 times and the lowest/fastest time was selected. This result set was generated on a MacBook Air (M1, 2020), macOS Monterey 12.5, 16 GB memory.
 
@@ -152,17 +184,23 @@ For each generator sample I attempted to create a reduced project with the sole 
 * For Gatsby, I used `npm init gatsby` with Markdown support (not MDX).
 * For Hugo, I went through the [Quickstart (skipping the theme)](https://gohugo.io/getting-started/quick-start/)
 * For Next.js I deleted a bunch of things out of the [`blog-starter` example](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) linked from the docs on [Static Generation](https://nextjs.org/docs/basic-features/pages#static-generation-recommended).
-* For Remix I went through the [Blog tutorial](https://remix.run/docs/en/v1/tutorials/blog) but did not use a database.
+* For Remix I went through the [Blog tutorial](https://remix.run/docs/en/v1/tutorials/blog) but did not use a database. _(Read the [Remix addendum](#remix-addendum) below)._
 
 I put out a [Twitter poll](https://twitter.com/zachleat/status/1552723709395406849) to gauge how folks felt about project sizes. 1000 files was considered a Large project by 58.8% of voters, Medium for 36.8% of voters. Markdown samples borrowed from [Sean C Davis’s SSG Build Performance Comparison repository](https://github.com/seancdavis/ssg-build-performance-tests). I have not yet added tests for Jekyll or Nuxt but [I’m open to it!](https://github.com/zachleat/bench-framework-markdown/issues)
 
 ### Summary
 
+_updated August 3, 2022 with notes about file-based routing of markdown in Remix and Next.js, as well as Astro MDX._
+
 1. Hugo remains the undisputed speed champ—no question about that.
 1. Eleventy was the fastest JavaScript-based generator.
 1. Generators that create per-page JavaScript bundles (for single page apps, primarily) are usually slower to build, unsurprisingly. Heavier pages aren’t exclusively slower for end users—they’re slower for developers too.
+1. File-based routing of markdown files in _both Next.js and Remix_ is a bit slow! Take care to add the additional boilerplate routing code needed to load markdown files more efficiently.
+    * Read more on [(nextjs.org) Advanced Features: Using MDX with Next.js](https://nextjs.org/docs/advanced-features/using-mdx) and [(remix.run) MDX](https://remix.run/docs/en/v1/guides/mdx) and on the [Remix addendum](#remix-addendum) below.
 1. Astro was on-par with Next.js at mid-range (1k) and on-par with Gatsby at the upper-range (4k) of this benchmark.
-1. I would [welcome a code review on the Remix site](https://twitter.com/zachleat/status/1553056554966040578)—it scaled so poorly that I suspect that I may have misconfigured something? I would be happy to update with corrections.
+    * [Jon Neal submitted a PR to do Astro markdown processing via the MDX plugin](https://github.com/zachleat/bench-framework-markdown/pull/7). I re-ran the tests but the data for Astro didn’t change in a statistically significant way (yet?). Likely more to come there, this feature is _brand new_!
+1. ~~I would [welcome a code review on the Remix site](https://twitter.com/zachleat/status/1553056554966040578)—it scaled so poorly that I suspect that I may have misconfigured something? I would be happy to update with corrections.~~
+    * As noted in point 4 above, it is recommended for Remix projects by the Remix team to **not use file-system based routing for `.mdx` or `.md` files**. _(Read the [Remix addendum](#remix-addendum) below)._
 
 ### Bonus: `npm install` Benchmarks
 
@@ -208,7 +246,7 @@ _Times shown are in seconds. Lower is better._
     <td>7.195</td>
   </tr>
   <tr>
-    <td>Gatsby <code>4.19.0</code> (cli)</td>
+    <td>Gatsby <code>4.19.0-cli</code></td>
     <td>68.516</td>
   </tr>
   <tr>
@@ -225,3 +263,31 @@ _Times shown are in seconds. Lower is better._
 </details>
 
 Each run was repeated 5 times and the lowest/fastest time was selected. `npm cache clean --force` was run before each to ensure a cold install. This result set was generated on a MacBook Air (M1, 2020), macOS Monterey 12.5, 16 GB memory.
+
+## Remix Addendum
+
+_Updated August 3, 2022 (this entire section is new)_
+
+I understand why Remix folks think this benchmark is unfair to Remix. I’ve heard **lots** of feedback and some of it has been decidedly unfriendly—but I do get it. I don’t really have any desire to wade into some of the larger debates about Remix or Jamstack on this post.
+
+From my perspective, the benchmark encountered a build performance-related bug in how Remix—a request-time architected tool—performs a build-time precompilation of Markdown routes. It doesn’t have to be any more than a build-performance related bug. Once the bug is fixed (or if the approach is deprecated), I’ll make updates to this post.
+
+<div class="livedemo" data-demo-label="Technical Detail">
+
+For completeness and a bit more technical detail, the Remix team has asked me to highlight that it is **not recommended to use MDX file-system based routing** for `.mdx` or `.md` files. **Specifically: do not put `.md` or `.mdx` files into your `app/routes/` folder.** Make sure you read/heed the warnings on the [Remix MDX plugin documentation](https://remix.run/docs/en/v1/guides/mdx).
+
+</div>
+
+I maintain that markdown file-based routing is a useful feature and it seems likely that the Remix folks will be able to (at some point in the future) allow a peaceful coexistence of markdown routes _without_ a heavy build-time compilation step. The demand clearly exists as many other frameworks do support it!
+
+But until then the Remix team recommends to opt out of file-based routing for Markdown to bypass the costly build-time compilation step. You can use a scripted route file to load Markdown files from the file system in a different source directory (not `app/routes/`). You can see an [implementation example](https://github.com/zachleat/bench-framework-markdown/tree/main/remix/my-remix-app) from [@ebey_jacob](https://twitter.com/ebey_jacob) in the `bench-framework-markdown` repository.
+
+### One last note about Build Performance
+
+> “While you were waiting for your static site to build, distributed web infra­structure got really good. Break through the static.”—https://remix.run/
+
+The only other thing I’d like to say here is that whether a tool spits out bundled JavaScript for runtime server deployment on the Edge or HTML in a static build for the CDN, whether it’s categorized as a Static Site Generator or a Site Generator or none of the above: all of the tools tested in this benchmark are **performing a build step** to generate code for deployment and can encounter build-related performance issues.
+
+All that to say: I think we can agree that build performance is not a concern exclusive to static site generators! There will always be a healthy tension between request-time and build-time and the tools that make use of both to complement each other will likely end up being the most useful to developers.
+
+Keep measuring and keep building—appreciate y’all!

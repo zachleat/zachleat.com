@@ -211,6 +211,12 @@ figcaption strong,
 .caption strong {
 	@include webfontBoldItalic;
 }
+table + .caption {
+	margin-top: .5em;
+}
+.caption + .caption {
+	margin-top: -3.5em;
+}
 
 /* Layout Helpers */
 .layout-list {
