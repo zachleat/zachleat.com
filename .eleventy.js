@@ -24,6 +24,10 @@ const pluginImageAvatar = require("./_includes/imageAvatarPlugin");
 const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
 
 module.exports = function(eleventyConfig) {
+	if(!process.env.ELEVENTY_PRODUCTION) {
+		eleventyConfig.ignores.add("./web/feed/*");
+	}
+
 	eleventyConfig.setUseGitIgnore(false);
 	eleventyConfig.setDataDeepMerge(true);
 	eleventyConfig.setQuietMode(true);
