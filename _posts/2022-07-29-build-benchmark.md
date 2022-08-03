@@ -103,7 +103,7 @@ _Times shown are in seconds. Lower is better._
 <td class="numeric">1.938</td>
 </tr>
 <tr>
-<td>Gatsby <code>4.19.0</code> (cli)</td>
+<td>Gatsby <code>4.19.0-cli</code></td>
 <td class="numeric">14.462</td>
 <td class="numeric">15.722</td>
 <td class="numeric">17.967</td>
