@@ -87,12 +87,12 @@ _Times shown are in seconds. Lower is better._
 </thead>
 <tbody>
 <tr>
-<td>Astro <code>1.0.0-rc2</code></td>
-<td class="numeric">3.044</td>
-<td class="numeric">4.361</td>
-<td class="numeric">7.331</td>
-<td class="numeric">13.349</td>
-<td class="numeric">30.258</td>
+<td>Astro <code>1.0.1</code></td>
+<td class="numeric">2.270</td>
+<td class="numeric">3.172</td>
+<td class="numeric">5.098</td>
+<td class="numeric">9.791</td>
+<td class="numeric">22.907</td>
 </tr>
 <tr>
 <td>Eleventy <code>1.0.1</code></td>
@@ -146,6 +146,7 @@ _Times shown are in seconds. Lower is better._
 </table>
 
 <div class="caption">The last Remix (File routing) test was force-quit at 1800 seconds (30 minutes)—it had not completed.</div>
+<div class="caption"><em>Updated August 10, 2022:</em> Astro results were updated to <code>1.0.1</code>.</div>
 
 <table>
 <thead>
@@ -179,7 +180,7 @@ All of the code for [this benchmark is fully open source](https://github.com/zac
 
 For each generator sample I attempted to create a reduced project with the sole use case of processing markdown files. I opt-ed out of TypeScript when options were presented in various cli tools to do so. Output folders and framework specific cache folders were deleted before each run.
 
-* For Astro I used the [Blog example](https://github.com/withastro/astro/tree/latest/examples/blog?on=github) which uses a pre-release of Astro 1.0.
+* For Astro I used the [Blog example](https://github.com/withastro/astro/tree/latest/examples/blog?on=github) which uses a ~~pre-release of Astro 1.0~~. _Updated August 10, 2022_ Results were updated to Astro 1.0.1 after stable release!
 * For Eleventy I used [`eleventy-base-blog`](https://github.com/11ty/eleventy-base-blog), even though it has a few extra plugins and templates in play on top of the barebones core experience.
 * For Gatsby, I used `npm init gatsby` with Markdown support (not MDX).
 * For Hugo, I went through the [Quickstart (skipping the theme)](https://gohugo.io/getting-started/quick-start/)
@@ -199,6 +200,7 @@ _Updated August 3, 2022 with notes about file-based routing of markdown in Remix
     * Read more on [(nextjs.org) Advanced Features: Using MDX with Next.js](https://nextjs.org/docs/advanced-features/using-mdx) and [(remix.run) MDX](https://remix.run/docs/en/v1/guides/mdx) and on the [Remix addendum](#remix-addendum) below.
 1. Astro was on-par with Next.js at mid-range (1k) and on-par with Gatsby at the upper-range (4k) of this benchmark.
     * [Jon Neal submitted a PR to do Astro markdown processing via the MDX plugin](https://github.com/zachleat/bench-framework-markdown/pull/7). I re-ran the tests but the data for Astro didn’t change in a statistically significant way (yet?). Likely more to come there, this feature is _brand new_!
+    * _Updated August 10, 2022_ Astro results were updated to use newly released stable version 1.0.1. This resulted in a ~25% improvement for Astro across the board 🏆
 1. ~~I would [welcome a code review on the Remix site](https://twitter.com/zachleat/status/1553056554966040578)—it scaled so poorly that I suspect that I may have misconfigured something? I would be happy to update with corrections.~~
     * As noted in point 4 above, it is recommended for Remix projects by the Remix team to **not use file-system based routing for `.mdx` or `.md` files**. _(Read the [Remix addendum](#remix-addendum) below)._
 
@@ -234,8 +236,8 @@ _Times shown are in seconds. Lower is better._
 </thead>
 <tbody>
   <tr>
-    <td>Astro <code>1.0.0-rc2</code></td>
-    <td>19.870</td>
+    <td>Astro <code>1.0.1</code></td>
+    <td>13.214</td>
   </tr>
   <tr>
     <td>Eleventy <code>1.0.1</code></td>
