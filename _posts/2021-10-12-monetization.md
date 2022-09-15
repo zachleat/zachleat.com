@@ -123,7 +123,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
   <li class="notes_note">Note 4: <a id="subnote-4" href="#link-subnote-4" class="notes_linkback">Jump to the reference.</a> <a href="https://dev.to/ryansolid/when-netlify-asks-you-to-full-time-oss-you-say-yes-5ccf">Ryan Carniato is now full time sponsored by Netlify to work on SolidJS</a>.</li>
 </ol>
 
-_This list was loosely compliled from the [Jamstack Community Survey 2021](https://jamstack.org/survey/2021/#choices-frameworks)._
+_This list was loosely compiled from the [Jamstack Community Survey 2021](https://jamstack.org/survey/2021/#choices-frameworks)._
 
 ## Ownership
 
