@@ -54,6 +54,12 @@ Nonetheless, I thought the best place to start would be to compile the data.
       <td><a href="https://opencollective.com/jekyll">Open Collective</a></td>
     </tr>
     <tr>
+      <td>Lit</td>
+      <td></td>
+      <td>Google</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Marko</td>
       <td></td>
       <td><a href="https://github.com/eBay">eBay</a></td>
