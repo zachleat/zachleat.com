@@ -5,7 +5,7 @@ tags:
   - speaking
 medialength: 150 min
 ---
-{% youtubeEmbed "iuwqOkH6jKY" %}
+<div class="fullwidth"><youtube-lite-player @slug="iuwqOkH6jKY" @label="{{ title }}" @poster="https://i1.ytimg.com/vi/iuwqOkH6jKY/hqdefault.jpg"></youtube-lite-player></div>
 
 * _The [video is hosted on YouTube](https://www.youtube.com/watch?v=iuwqOkH6jKY)._
 * Subscribe to [Ryan on Twitch](https://www.twitch.tv/ryansolid)!

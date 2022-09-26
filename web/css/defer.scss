@@ -18,7 +18,6 @@
 @import "toggle";
 @import "layout";
 @import "opengraph-card";
-@import "lib/lite-yt-embed";
 
 .speedlify-link {
 	text-decoration: none;
@@ -27,10 +26,3 @@
 	display: none;
 }
 
-lite-youtube {
-	max-width: 100%;
-}
-/* Plugin bug: clicking the red youtube play icon in the center would navigate to youtube.com */
-.enhanced-js lite-youtube > .lty-playbtn {
-	pointer-events: none;
-}

@@ -13,7 +13,7 @@ metadata:
     type: meetup
 medialength: 73 min
 ---
-{% youtubeEmbed "oUoFmurl71k" %}
+<div class="fullwidth"><youtube-lite-player @slug="oUoFmurl71k" @label="{{ title }}"></youtube-lite-player></div>
 
 [Watch on YouTube.](https://www.youtube.com/watch?v=oUoFmurl71k)
 

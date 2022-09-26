@@ -43,7 +43,7 @@ _April 3, 2021_. This is probably the [canonical home base for this feature](htt
 
 _April 27, 2021_, [via Tweet](https://twitter.com/zachleat/status/1387101402279907334). In this video I [removed 400+ pages from the Eleventy web site build and moved them to use On-demand Builders](/web/eleventy-cloud-authors-pages/). This sped up the main build and generated these pages on-first-request only. Subsequent requests to On-demand Builders are served a persisted version of that first request’s content.
 
-{% youtubeEmbed "bENDCw9aLV0" %}
+<div class="fullwidth"><youtube-lite-player @slug="bENDCw9aLV0" @label="{{ title }}"></youtube-lite-player></div>
 
 ## Rename from Eleventy Cloud to Eleventy Serverless
 

@@ -1,3 +1,5 @@
+const pkg = require("../package.json");
+
 module.exports = function(eleventyConfig) {
 	let componentsMap = false; // cache the glob search
 	let count = 0;
@@ -17,12 +19,17 @@ module.exports = function(eleventyConfig) {
 				let page = new WebC();
 				page.setBundlerMode(false);
 				if(componentsMap === false) {
-					componentsMap = WebC.getComponentsMap("./_includes/webc/**/*.webc");
+					componentsMap = WebC.getComponentsMap("./_includes/webc/*.webc");
 				}
 				page.defineComponents(componentsMap);
 				page.setContent(content, this.outputPath);
 
-				let { html } = await page.compile();
+				let { html } = await page.compile({
+					// global data
+					data: {
+						pkg
+					}
+				});
 				count++;
 				return html;
 			}

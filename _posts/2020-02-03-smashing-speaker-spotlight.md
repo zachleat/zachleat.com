@@ -10,4 +10,4 @@ medialength: 19 min
 ---
 A short chat with Vitaly Friedman in February, 2020 about web font loading in anticipation of a Smashing Conference:
 
-{% youtubeEmbed "247dsXVxzH8" %}
+<div class="fullwidth"><youtube-lite-player @slug="247dsXVxzH8" @label="{{ title }}"></youtube-lite-player></div>

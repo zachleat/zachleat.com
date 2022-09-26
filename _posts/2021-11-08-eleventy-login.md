@@ -19,7 +19,8 @@ A demo project and walkthrough showing how to secure some of your Eleventy Serve
 * Serverless templates can be secured with a simple addition to the template front matter.
 
 ## Walk-through
-{% youtubeEmbed "At19o2Ox57Y" %}
+
+<div class="fullwidth"><youtube-lite-player @slug="At19o2Ox57Y" @label="{{ title }}"></youtube-lite-player></div>
 
 ## Demo
 {% originalPostEmbed urls.demo %}

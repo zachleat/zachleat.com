@@ -14,7 +14,7 @@ In this talk I started to build [Rainglow](/web/rainglow/) and showcased another
 
 [Watch on YouTube](https://www.youtube.com/watch?v=nlbdRUIgyjo) or below:
 
-{% youtubeEmbed "nlbdRUIgyjo" %}
+<div class="fullwidth"><youtube-lite-player @slug="nlbdRUIgyjo" @label="{{ title }}"></youtube-lite-player></div>
 
 ## Related:
 

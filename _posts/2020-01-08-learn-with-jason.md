@@ -18,6 +18,6 @@ medialength: 92 min
 
 ## Video
 
-{% youtubeEmbed "j8mJrhhdHWc", 57 %}
+<div class="fullwidth"><youtube-lite-player @slug="j8mJrhhdHWc" @label="{{ title }}" @start="57"></youtube-lite-player></div>
 
 * [View full video on YouTube](https://www.youtube.com/watch?time_continue=57&v=j8mJrhhdHWc).

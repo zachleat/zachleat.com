@@ -16,5 +16,4 @@ It also includes the world premiere of the [Eleventy Cloud Demo repository](http
 
 [Watch on YouTube](https://www.youtube.com/watch?v=6XtVDfJKFzs) or below:
 
-{% youtubeEmbed "6XtVDfJKFzs" %}
-
+<div class="fullwidth"><youtube-lite-player @slug="6XtVDfJKFzs" @label="{{ title }}"></youtube-lite-player></div>

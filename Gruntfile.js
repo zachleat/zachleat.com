@@ -96,7 +96,6 @@ module.exports = function(grunt) {
 			'css-to-sass': {
 				files: {
 					'web/css/lib/_infinity-burger.scss': 'node_modules/infinity-burger/infinity-burger.css',
-					'web/css/lib/_lite-yt-embed.scss': 'node_modules/lite-youtube-embed/src/lite-yt-embed.css',
 				}
 			},
 			// For CSS inlining

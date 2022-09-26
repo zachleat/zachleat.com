@@ -51,9 +51,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy("img/")
 		.addPassthroughCopy({
-			"_includes/webc/**/*.css": `web/dist/${pkg.version}/`,
+			// "_includes/webc/**/*.css": `web/dist/${pkg.version}/`,
 			"node_modules/speedlify-score/speedlify-score.css": `web/dist/${pkg.version}/speedlify-score.css`,
 			"node_modules/speedlify-score/speedlify-score.js": `web/dist/${pkg.version}/speedlify-score.js`,
+			"node_modules/lite-youtube-embed/src/lite-yt-embed.css": `web/dist/${pkg.version}/lite-yt-embed.css`,
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.js": `web/dist/${pkg.version}/lite-yt-embed.js`,
 			"node_modules/artificial-chart/artificial-chart.js": `web/dist/${pkg.version}/artificial-chart.js`,
 			"node_modules/artificial-chart/artificial-chart.css": `web/dist/${pkg.version}/artificial-chart.css`,
@@ -420,17 +421,6 @@ module.exports = function(eleventyConfig) {
 	});
 
 	/* SHORTCODES */
-	eleventyConfig.addLiquidShortcode("youtubeEmbed", function(slug, startTime, label) {
-		let posterImage = `https://i.ytimg.com/vi/${slug}/maxresdefault.jpg`;
-		if(slug === "iuwqOkH6jKY") {
-			posterImage = `https://i1.ytimg.com/vi/iuwqOkH6jKY/hqdefault.jpg`;
-		}
-		// TODO only load youtube css/js on pages that use it (via this.page)
-		return `<div class="fullwidth"><is-land on:visible import="/web/dist/${pkg.version}/lite-yt-embed.js" class="fluid-width-video-wrapper"><lite-youtube videoid="${slug}"${startTime ? ` params="start=${startTime}"` : ""} playlabel="Play${label ? `: ${label}` : ""}" style="background-image:url('${posterImage}')">
-	<a href="https://youtube.com/watch?v=${slug}" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden">Play Video${label ? `: ${label}` : ""}</span></a>
-</lite-youtube></is-land></div>`;
-	});
-
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url) {
 		return `<a href="${url}" class="opengraph-card favicon-optout">${screenshotImageHtmlFullUrl(url)}<span><em class="break" title="${url}">${url}</em></span></a>`;
 	});

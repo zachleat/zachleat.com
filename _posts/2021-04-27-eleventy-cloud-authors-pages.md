@@ -10,7 +10,7 @@ medialength: 8 min
 ---
 [Watch on YouTube](https://www.youtube.com/watch?v=bENDCw9aLV0) or below:
 
-{% youtubeEmbed "bENDCw9aLV0" %}
+<div class="fullwidth"><youtube-lite-player @slug="bENDCw9aLV0" @label="{{ title }}"></youtube-lite-player></div>
 
 ## Related:
 
