@@ -17,10 +17,11 @@ module.exports = function(eleventyConfig) {
 			if(!this.inputPath.endsWith(".webc") && this.outputPath?.endsWith(".html")) {
 				const { WebC } = await import("@11ty/webc");
 				let page = new WebC();
-				page.setBundlerMode(false);
+
 				if(componentsMap === false) {
 					componentsMap = WebC.getComponentsMap("./_includes/webc/*.webc");
 				}
+
 				page.defineComponents(componentsMap);
 				page.setContent(content, this.outputPath);
 
