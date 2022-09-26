@@ -42,7 +42,6 @@ module.exports = function(grunt) {
 				src: [
 					'<%= config.jsSrc %>google-analytics.js',
 					'<%= config.jsSrc %>timeago.js',
-					'<%= config.jsSrc %>toggle.js',
 					'node_modules/infinity-burger/infinity-burger.js',
 					'node_modules/@zachleat/filter-container/filter-container.js',
 					],

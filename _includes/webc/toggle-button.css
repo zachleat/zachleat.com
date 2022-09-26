@@ -1,0 +1,102 @@
+/* Toggle code */
+.toggle {
+	--toggle-padding: 2px;
+	--toggle-color: hsl(0,75%,54%);
+	--toggle-color-secondary: hsl(0,75%,80%);
+}
+.toggle[aria-pressed="true"] {
+	--toggle-color: hsl(156, 78%, 15%);
+	--toggle-color-secondary: hsl(156, 78%, 45%);
+}
+
+
+.toggle {
+	border: 0 solid transparent;
+	background-color: transparent;
+	-webkit-appearance: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	padding: 0;
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+}
+.toggle::-moz-focus-inner {
+	border: 0;
+}
+.toggle[disabled] {
+	cursor: not-allowed;
+	opacity: .35;
+}
+
+/* Focus style */
+@supports(box-shadow: none) {
+	.toggle:focus {
+		outline: none;
+	}
+	.toggle:focus .toggle-control {
+		box-shadow: 0 0 0 3px #89deff;
+	}
+}
+
+.toggle-text {
+	font-size: 1em; /* 16px /16 */
+	line-height: 150%;
+}
+.toggle-control {
+	display: inline-block;
+	position: relative;
+	margin-right: .5rem;
+	width: 2em; /* 32px /16 */
+	box-sizing: content-box;
+	padding: var(--toggle-padding);
+	border: 2px solid var(--toggle-color);
+	background-color: var(--toggle-color-secondary);
+	transition: background-color .15s ease-in-out;
+}
+.toggle[aria-label] .toggle-control {
+	margin-right: 0;
+}
+.toggle-control,
+.toggle-control:after {
+	height: 1em; /* 16px /16 */
+	border-radius: 6.25em; /* 100px /16 */
+}
+.toggle-control:after {
+	transition: left .3s ease-in-out, background-color .15s ease-in-out;
+	position: absolute;
+	content: "";
+	left: var(--toggle-padding);
+	width: 1em; /* 16px /16 */
+	background-color: var(--toggle-color);
+}
+.toggle[aria-pressed="true"] .toggle-control:after {
+	left: calc(1em + var(--toggle-padding)); /* 16px /16 */
+}
+
+/* Forms */
+.toggle-features-form {
+	margin-top: .5em;
+}
+.toggle-features-form button {
+	white-space: nowrap;
+}
+.toggle-features-form > .lo {
+	--lo-margin-h: 1em;
+	--lo-margin-v: .5em;
+	align-items: center;
+}
+.toggle-features-form > .lo > * {
+	display: flex;
+	flex-grow: 0;
+}
+.toggle-features-form .lo .speedlify-link {
+	flex-grow: 999;
+	flex-basis: 20em; /* 320px /16 */
+}
+@media (max-width: 21.8125em) { /* 349px */
+	.toggle-features-form .speedlify-requests {
+		display: none;
+	}
+}

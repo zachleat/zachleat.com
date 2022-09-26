@@ -5,16 +5,10 @@
 		<form class="toggle-features-form">
 			<div class="lo">
 				<div>
-					<button type="button" aria-pressed="true" class="toggle toggle-css">
-						<span class="toggle-control"></span>
-						<span class="toggle-text">CSS</span>
-					</button>
+					<toggle-button label="CSS" class="toggle-css"></toggle-button>
 				</div>
 				<div>
-					<button type="button" aria-pressed="true" class="toggle" data-toggle-class="font-fallback">
-						<span class="toggle-control"></span>
-						<span class="toggle-text">Web Fonts</span>
-					</button>
+					<toggle-button label="Web Fonts" @toggleclass="font-fallback"></toggle-button>
 				</div>
 
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}

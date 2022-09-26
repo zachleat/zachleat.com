@@ -1,0 +1,10 @@
+<is-land on:visible>
+	<button type="button" aria-pressed="true" :class="`toggle${this.class ? ` ${this.class}`: ''}`" :data-toggle-class="this.toggleclass">
+		<span class="toggle-control"></span>
+		<span class="toggle-text" @html="this.label"></span>
+	</button>
+	<template data-island="once">
+		<link rel="stylesheet" :href="`/web/dist/${this.pkg.version}/toggle-button.css`">
+		<script :src="`/web/dist/${this.pkg.version}/toggle-button.js`"></script>
+	</template>
+</is-land>

@@ -51,7 +51,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy("img/")
 		.addPassthroughCopy({
-			// "_includes/webc/**/*.css": `web/dist/${pkg.version}/`,
+			"_includes/webc/*.css": `web/dist/${pkg.version}/`,
+			"_includes/webc/*.js": `web/dist/${pkg.version}/`,
 			"node_modules/speedlify-score/speedlify-score.css": `web/dist/${pkg.version}/speedlify-score.css`,
 			"node_modules/speedlify-score/speedlify-score.js": `web/dist/${pkg.version}/speedlify-score.js`,
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.css": `web/dist/${pkg.version}/lite-yt-embed.css`,
