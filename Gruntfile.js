@@ -42,7 +42,6 @@ module.exports = function(grunt) {
 				src: [
 					'<%= config.jsSrc %>google-analytics.js',
 					'<%= config.jsSrc %>timeago.js',
-					'node_modules/infinity-burger/infinity-burger.js',
 					'node_modules/@zachleat/filter-container/filter-container.js',
 					],
 				dest: '<%= config.distFolder %>defer.js'
@@ -91,12 +90,6 @@ module.exports = function(grunt) {
 			}
 		},
 		copy: {
-			// Because sass won’t import css files
-			'css-to-sass': {
-				files: {
-					'web/css/lib/_infinity-burger.scss': 'node_modules/infinity-burger/infinity-burger.css',
-				}
-			},
 			// For CSS inlining
 			includes: {
 				files: {
@@ -138,7 +131,6 @@ module.exports = function(grunt) {
 
 	// Default task.
 	grunt.registerTask('assets', [
-		'copy:css-to-sass',
 		'sass',
 		'concat',
 		'terser',

@@ -57,8 +57,10 @@ module.exports = function(eleventyConfig) {
 			"node_modules/speedlify-score/speedlify-score.js": `web/dist/${pkg.version}/speedlify-score.js`,
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.css": `web/dist/${pkg.version}/lite-yt-embed.css`,
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.js": `web/dist/${pkg.version}/lite-yt-embed.js`,
-			"node_modules/artificial-chart/artificial-chart.js": `web/dist/${pkg.version}/artificial-chart.js`,
 			"node_modules/artificial-chart/artificial-chart.css": `web/dist/${pkg.version}/artificial-chart.css`,
+			"node_modules/artificial-chart/artificial-chart.js": `web/dist/${pkg.version}/artificial-chart.js`,
+			"node_modules/infinity-burger/infinity-burger.css": `web/dist/${pkg.version}/infinity-burger.css`,
+			"node_modules/infinity-burger/infinity-burger.js": `web/dist/${pkg.version}/infinity-burger.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")

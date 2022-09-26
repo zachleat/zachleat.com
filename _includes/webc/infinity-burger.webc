@@ -1,0 +1,27 @@
+<is-land on:idle on:visible>
+	<div class="hamburger">
+		<div class="infinity-burger" id="infinity-burger" aria-hidden="true">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<template data-island="once">
+		<script :src="`/web/dist/${this.pkg.version}/infinity-burger.js`"></script>
+		<link rel="stylesheet" :href="`/web/dist/${this.pkg.version}/infinity-burger.css`">
+		<style>
+		.infinity-burger.infinity-burger.enabled {
+			display: none;
+		}
+		@supports (display: grid) {
+			@media (min-width: 64em) { /* 1024px */
+				.infinity-burger.infinity-burger.enabled {
+					display: block;
+					right: 1.25em; /* 20px /16 */
+				}
+			}
+		}
+		</style>
+	</template>
+</is-land>
