@@ -12,6 +12,7 @@ const Natural = require('natural');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const pluginEleventyWebCTransform = require("./_includes/11tyWebcTransform.js");
 
 const siteData = require("./_data/site.json");
 const analyticsData = require("./_data/analytics.json");
@@ -38,6 +39,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	/* PLUGINS */
+	eleventyConfig.addPlugin(pluginEleventyWebCTransform);
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginImage);
@@ -48,8 +50,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy("img/")
 		.addPassthroughCopy({
-			"node_modules/lite-youtube-embed/src/lite-yt-embed.js": `web/dist/${pkg.version}/lite-yt-embed.js`,
+			"_includes/webc/**/*.css": `web/dist/${pkg.version}/`,
+			"node_modules/speedlify-score/speedlify-score.css": `web/dist/${pkg.version}/speedlify-score.css`,
 			"node_modules/speedlify-score/speedlify-score.js": `web/dist/${pkg.version}/speedlify-score.js`,
+			"node_modules/lite-youtube-embed/src/lite-yt-embed.js": `web/dist/${pkg.version}/lite-yt-embed.js`,
 			"node_modules/artificial-chart/artificial-chart.js": `web/dist/${pkg.version}/artificial-chart.js`,
 			"node_modules/artificial-chart/artificial-chart.css": `web/dist/${pkg.version}/artificial-chart.css`,
 		})

@@ -55,7 +55,8 @@ _(Order is alphabetical. Disclosure: I am the maintainer of [Eleventy](https://w
 #markdown-bench-chart svg { overflow: visible; }
 </style>
 <div id="markdown-bench-chart" style="height: 850px"></div>
-<script type="module/island">
+<template data-island>
+<script type="module">
 import "https://d3js.org/d3.v7.min.js";
 import { Line } from "/web/dist/{{pkg.version}}/artificial-chart.js";
 new Line("markdown-bench-chart", "markdown-bench-datatable", {
@@ -70,6 +71,7 @@ new Line("markdown-bench-chart", "markdown-bench-datatable", {
   }
 });
 </script>
+</template>
 </is-land>
 
 _Times shown are in seconds. Lower is better._
@@ -208,7 +210,8 @@ _Updated August 3, 2022 with notes about file-based routing of markdown in Remix
 
 <is-land on:visible>
 <div id="npm-install-chart"></div>
-<script type="module/island">
+<template data-island>
+<script type="module">
 import "https://d3js.org/d3.v7.min.js";
 import { HorizontalBar } from "/web/dist/{{pkg.version}}/artificial-chart.js";
 new HorizontalBar("npm-install-chart", "npm-install-datatable", {
@@ -220,6 +223,7 @@ new HorizontalBar("npm-install-chart", "npm-install-datatable", {
   }
 });
 </script>
+</template>
 </is-land>
 
 _Times shown are in seconds. Lower is better._

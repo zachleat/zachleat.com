@@ -1,5 +1,4 @@
-{%- capture distIncludeFolder %}dist/{% if distVersion %}{{ distVersion }}{% else %}{{ pkg.version }}{% endif %}/{% endcapture -%}
-{%- capture distFolder %}/web/{{ distIncludeFolder }}{% endcapture -%}
+{%- capture distFolder %}/web/dist/{% if distVersion %}{{ distVersion }}{% else %}{{ pkg.version }}{% endif %}/{% endcapture -%}
 {%- capture fullUrl %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 <!doctype html>
 <html lang="en"{% if tmpl or templateclass %} class="{% if tmpl %} tmpl-{{ tmpl }}{% endif %}{% if templateclass %} {{ templateclass }}{% endif %}"{% endif %}>
@@ -61,9 +60,6 @@
 		<script>{% include "initial.min.js" %}</script>
 		<script src="{{ distFolder }}defer-mod.min.js" type="module" defer></script>
 		<script src="{{ distFolder }}defer.min.js" defer></script>
-{%- for script in scriptsDist -%}
-		<script src="{{ distFolder }}{{ script }}" defer></script>
-{%- endfor %}
 
 		<meta property="eleventy:path" content="{{ page.inputPath }}">
 

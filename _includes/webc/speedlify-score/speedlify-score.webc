@@ -1,0 +1,8 @@
+<is-land on:visible>
+	<speedlify-score webc:raw :class="this.class" :hash="this.hash" speedlify-url="https://www.speedlify.dev" :score="this.score" :weight="this.weight" :requests="this.requests"></speedlify-score>
+
+	<template data-island>
+		<link rel="stylesheet" :href="`/web/dist/${this.distversion}/speedlify-score.css`">
+		<script :src="`/web/dist/${this.distversion}/speedlify-score.js`"></script>
+	</template>
+</is-land>
