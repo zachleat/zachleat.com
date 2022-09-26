@@ -27,6 +27,7 @@ const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, 
 module.exports = function(eleventyConfig) {
 	if(!process.env.ELEVENTY_PRODUCTION) {
 		eleventyConfig.ignores.add("./web/feed/*");
+		eleventyConfig.ignores.add("./web/opengraph-images.liquid");
 	}
 
 	eleventyConfig.setUseGitIgnore(false);
