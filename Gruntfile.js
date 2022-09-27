@@ -99,22 +99,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		htmlmin: {
-			main: {
-				options: {
-					removeComments: true,
-					collapseWhitespace: true
-				},
-				files: [
-					{
-						expand: true,
-						cwd: '_site/',
-						src: '**/*.html',
-						dest: '_site/'
-					}
-				]
-			}
-		},
 		shell: {
 			eleventyProduction: {
 				command: 'npm run build-production',
@@ -148,6 +132,5 @@ module.exports = function(grunt) {
 		'default',
 		'shell:eleventyProduction',
 		'clean:drafts',
-		'htmlmin'
 	]);
 };

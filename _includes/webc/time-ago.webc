@@ -1,8 +1,8 @@
 <span class="timeago">
-  <is-land on:idle>
-    <slot></slot>
-    <template data-island="once">
-      <style :src="`/web/dist/${this.pkg.version}/time-ago.js`"></style>
-    </template>
-  </is-land>
+	<is-land on:idle>
+		<slot></slot>
+		<template data-island="once">
+			<style :src="`/web/dist/${this.pkg.version}/time-ago.js`"></style>
+		</template>
+	</is-land>
 </span>
