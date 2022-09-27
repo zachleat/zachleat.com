@@ -11,8 +11,8 @@ const Natural = require('natural');
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
-const pluginEleventyWebCTransform = require("./_includes/11tyWebcTransform.js");
 
 const siteData = require("./_data/site.json");
 const analyticsData = require("./_data/analytics.json");
@@ -40,11 +40,17 @@ module.exports = function(eleventyConfig) {
 	});
 
 	/* PLUGINS */
-	eleventyConfig.addPlugin(pluginEleventyWebCTransform);
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
+	eleventyConfig.addPlugin(pluginWebc, {
+		components: "./_includes/webc/*.webc",
+		useTransform: true,
+		transformData: {
+			pkg
+		}
+	});
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 
 	/* COPY */
