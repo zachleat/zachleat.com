@@ -1,8 +1,8 @@
-<span class="timeago">
+<template webc:root>
 	<is-land on:idle>
 		<slot></slot>
 		<template data-island="once">
-			<style :src="`/web/dist/${this.pkg.version}/time-ago.js`"></style>
+			<script :src="`/web/dist/${this.pkg.version}/time-ago.js`"></script>
 		</template>
 	</is-land>
-</span>
+</template>
