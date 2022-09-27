@@ -88,10 +88,10 @@ Andy Hume’s work, thus far, seems to be the original! If you have others that 
 
 <p class="livedemo livedemo-sm top" data-demo-label="Get out your wallet">Look at all this link rot! We’re so lucky that many of these entries were preserved by The Wayback Machine. You too can <a href="https://archive.org/donate/">donate to the Internet Archive</a> to support their obviously valuable mission.</p>
 
-<h1><span class="text-highlight" style="background-color: #333; color: #fff">The Container Queries idea was planted <span class="timeago" data-date="14 Jul 2011 11:40:00 CDT">{{ "14 Jul 2011 11:40:00 CDT" | timePosted }}</span> ago</span></h1>
+<h1><span class="text-highlight" style="background-color: #333; color: #fff">The Container Queries idea was planted <time-ago data-date="14 Jul 2011 11:40:00 CDT">{{ "14 Jul 2011 11:40:00 CDT" | timePosted }}</time-ago> ago</span></h1>
 
-For comparison, Ethan Marcotte’s original A List Apart article on Responsive Web Design was published <span class="timeago" data-date="25 May 2010 00:00:00 GMT">{{ "25 May 2010 00:00:00 GMT" | timePosted }}</span> ago on May 25, 2010.
+For comparison, Ethan Marcotte’s original A List Apart article on Responsive Web Design was published <time-ago data-date="25 May 2010 00:00:00 GMT">{{ "25 May 2010 00:00:00 GMT" | timePosted }}</time-ago> ago on May 25, 2010.
 
-The first large-scale [Responsive Web Design project at the Boston Globe](https://www.filamentgroup.com/lab/introducing-the-new-responsive-designed-bostonglobecom.html) was launched _after container queries were planted_ <span class="timeago" data-date="9 Sep 2011 00:00:00 GMT">{{ "9 Sep 2011 00:00:00 GMT" | timePosted }}</span> ago on September 9, 2011. The Boston Globe launch further planted the seeds for [responsive image approaches](https://alistapart.com/article/responsive-images/) that would result in web browser implementations of both `<img srcset>` and `<picture>` just three years later in 2014.
+The first large-scale [Responsive Web Design project at the Boston Globe](https://www.filamentgroup.com/lab/introducing-the-new-responsive-designed-bostonglobecom.html) was launched _after container queries were planted_ <time-ago data-date="9 Sep 2011 00:00:00 GMT">{{ "9 Sep 2011 00:00:00 GMT" | timePosted }}</time-ago> ago on September 9, 2011. The Boston Globe launch further planted the seeds for [responsive image approaches](https://alistapart.com/article/responsive-images/) that would result in web browser implementations of both `<img srcset>` and `<picture>` just three years later in 2014.
 
 In conclusion, 🤷‍♂️.

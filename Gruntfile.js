@@ -41,7 +41,6 @@ module.exports = function(grunt) {
 			jsDefer: {
 				src: [
 					'<%= config.jsSrc %>google-analytics.js',
-					'<%= config.jsSrc %>timeago.js',
 					'node_modules/@zachleat/filter-container/filter-container.js',
 					],
 				dest: '<%= config.distFolder %>defer.js'
