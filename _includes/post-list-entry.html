@@ -19,7 +19,7 @@
 		{%- if hfeed %}h-entry{% endif %}"
 	{%- if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}{% comment %}
 	{% endcomment %} data-filter-category="{{ post | getFilterCategories }}">
-	
+
 	<a href="{{ post.url | url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
 	{%- if previewImages %}
 		{% comment %}{% if post.data.headvideo %}<video muted controls preload="metadata" src="{{ post.data.headvideo }}" class="project_video"></video>{% endif %} {% endcomment %}
@@ -57,7 +57,7 @@
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Audio</span>{% endif -%}
 {%- if ignorePopularity != true %}
 		{%- assign postRank = analytics[post.url].rankPerDaysPosted -%}
-		{%- if postRank and postRank <= 20 %}<span class="tag" title="Popularity Ranking">{% if postRank %}{{ "🔥" | emoji }} #{{ postRank }}{% endif %}</span>{% if showDays == "true" %} <span class="tag timeago">posted for {{ post.date | timePosted }}</span>{% endif %}{% endif -%}
+		{%- if postRank and postRank <= 20 %}<span class="tag" title="Popularity Ranking">{% if postRank %}{{ "🔥" | emoji }} #{{ postRank }}{% endif %}</span>{% endif -%}
 {%- endif %}
 
 		{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
