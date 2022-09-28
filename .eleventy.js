@@ -45,20 +45,24 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
 	eleventyConfig.addPlugin(pluginWebc, {
-		components: "./_includes/webc/*.webc",
+		components: "./_webc/*.webc",
 		useTransform: true,
 		transformData: {
 			pkg
 		}
 	});
+	eleventyConfig.addPassthroughCopy({
+		"_webc/*.css": `web/dist/${pkg.version}/`,
+		"_webc/*.js": `web/dist/${pkg.version}/`,
+	});
+	eleventyConfig.ignores.add("./_webc/*.webc");
+
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 
 	/* COPY */
 	eleventyConfig
 		.addPassthroughCopy("img/")
 		.addPassthroughCopy({
-			"_includes/webc/*.css": `web/dist/${pkg.version}/`,
-			"_includes/webc/*.js": `web/dist/${pkg.version}/`,
 			"node_modules/speedlify-score/speedlify-score.css": `web/dist/${pkg.version}/speedlify-score.css`,
 			"node_modules/speedlify-score/speedlify-score.js": `web/dist/${pkg.version}/speedlify-score.js`,
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.css": `web/dist/${pkg.version}/lite-yt-embed.css`,
