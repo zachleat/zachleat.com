@@ -367,6 +367,9 @@ h5,
 		.tmpl-page .rail { grid-area: 1/3/4/4; }
 		.tmpl-page .hamburger { grid-area: 1/4/5/5; }
 
+		.body-gradient {
+			position: relative;
+		}
 		.body-gradient:after {
 			content: "";
 			position: absolute;
@@ -1453,8 +1456,8 @@ pre + .livedemo {
 .livedemo-sm {
 	font-size: 0.7142857142857em; /* 15px /21 */
 	max-width: 26em;
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 .livedemo-evil .emoji {
 	font-style: normal;
