@@ -44,7 +44,7 @@ Vue components are great! Here are a few things I loved:
 * Single file component authoring nicely co-locates HTML, CSS, and (for this plugin at least) server-only JavaScript.
 * Vue components felt more like authoring HTML (not JavaScript for everything).
 * Vue [merges `class` and `style` attributes](https://vuejs.org/guide/components/attrs.html#class-and-style-merging) smartly between host components and component definitions. I know it’s a little thing but this felt like a huge authoring win when your component is HTML-aware (which shortcodes are not).
-* Using the `is` attribute to redefine components inline
+* Using the `is` attribute to redefine components inline.
 * Using [attribute bindings](https://vuejs.org/guide/essentials/template-syntax.html#attribute-bindings) for scripting attribute values.
 * Vue SFCs also offer [CSS scoping](https://vuejs.org/api/sfc-css-features.html) built-in, although in practice I didn’t use it much! I liked to have more descriptive classes for components I build.
 * The Eleventy Vue plugin also generated [per page CSS bundles](https://github.com/11ty/eleventy-plugin-vue#advanced-use-with-eleventy-assets) and brought first-class incremental builds to Eleventy Vue projects (not all template languages in Eleventy support incremental builds).
