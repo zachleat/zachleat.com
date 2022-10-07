@@ -1,6 +1,8 @@
 ---
 title: Adding Components to Eleventy with WebC
 tags:
+  - project
+  - web-components
   - speaking
   - eleventy
 metadata:
