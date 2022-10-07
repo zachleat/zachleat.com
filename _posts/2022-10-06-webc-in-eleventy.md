@@ -51,7 +51,7 @@ Vue components are great! Here are a few things I loved:
 
 ### Maintenance Woes
 
-The biggest drawback of this approach was that the Eleventy Vue plugin uses [`rollup-plugin-vue`](https://github.com/vuejs/rollup-plugin-vue) which—perhaps obviously—is tightly coupled to the Rollup bundler! I’ve talked a bit about the long term risk of coupling to an official bundler in Eleventy, and those certainly played out with some prescient accuracy here.
+The biggest drawback of this approach was that the Eleventy Vue plugin uses [`rollup-plugin-vue`](https://github.com/vuejs/rollup-plugin-vue) which—perhaps obviously—is tightly coupled to the Rollup bundler! I’ve talked a bit about the long term risk of coupling to an official bundler in Eleventy, and that concern certainly played out with some prescient accuracy here.
 
 Vue 3 was released (beta in April 2020, stable in September 2020) after the Eleventy Vue plugin and an official Vue 3 [`rollup-plugin-vue@6.0.0`](https://www.npmjs.com/package/rollup-plugin-vue) was released in November 2020. Notably, this was happening at the same time as a rapid rise in popularity for Vite. Accordingly, the `rollup-plugin-vue` repo is now _archived and not maintained_ and folks are recommended to use Vite instead of the rollup plugin for Vue compilation.
 
