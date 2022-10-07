@@ -4,6 +4,7 @@ tags:
   - eleventy
   - speaking
   - video
+external_url: https://11tymeetup.dev/events/ep-8-state-of-the-possumverse-and-panel-on-transitioning-to-11ty/
 metadata:
   speaking:
     type: meetup

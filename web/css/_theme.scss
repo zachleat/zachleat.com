@@ -50,6 +50,14 @@ abbr {
 	display: block;
 }
 
+/* Ellipsis */
+.text-ellipsis {
+  display: block;
+  overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
 /* Hide on small viewport */
 /* Use a max-width here so it inherits the original value at 500px */
 @media( max-width: 31.1875em) { /* 499px /16 */
