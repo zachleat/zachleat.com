@@ -21,8 +21,14 @@ tmpl: page
 {% if tweet %}
 			<em>Inspired by <a href="{{ tweet }}">a tweet</a>.</em>
 {% endif %}
-{% if tags contains "web-components" %}
-			<em>Check out <a href="/web/?category=web-components">all the web components</a>.</em>
+{% if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
+			<em>Tagged:
+	{% if tags contains "eleventy" %}<a href="/web/?category=eleventy">Eleventy</a>{% endif %}
+	{% if tags contains "project" %}<a href="/web/?category=project">Project</a>{% endif %}
+	{% if tags contains "speaking" %}<a href="/web/?category=speaking">Speaking</a>{% endif %}
+	{% if tags contains "web-components" %}<a href="/web/?category=web-components">Web Components</a>{% endif %}
+	{% if tags contains "web-fonts" %}<a href="/web/?category=web-fonts">Web Fonts</a>{% endif %}
+			</em>
 {% endif %}
 		</div>
 {% if deprecated %}
