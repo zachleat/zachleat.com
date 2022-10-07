@@ -59,7 +59,7 @@ Unfortunately, due to Vue’s upstream moves here, we’ll likely end up archivi
 
 Building [netlify.com](https://www.netlify.com/) with server-rendered zero-bundle Vue components was a great experience but interestingly we didn’t ship any client-side Vue components on the site (during my tenure). For interactivity we were leaning on Web Components (mostly Custom Elements), which offered a very similar zero-overhead mentality in the client-side world.
 
-When you talk about web components publicly, it’s almost certain that you’ll get a helpful link to a 2019 blog post from Rich Harris (the creator of Svelte) titled [_Why I don’t use web components_](https://dev.to/richharris/why-i-don-t-use-web-components-2cia). The post has has some valid criticism (though it leans kinda hard into complaints about Shadow DOM, that I quickly realized was an optional feature and conveniently ignored it 😅 for technical reasons that are outside the scope of this talk).
+When you talk about web components publicly, it’s almost certain that you’ll get a helpful link to a 2019 blog post from Rich Harris (the creator of Svelte) titled [_Why I don’t use web components_](https://dev.to/richharris/why-i-don-t-use-web-components-2cia). The post has has some valid criticism (though it leans kinda hard into complaints about Shadow DOM, that I quickly realized was an optional feature and conveniently ignored it 😅 for technical reasons that are outside the scope of this post).
 
 But Rich’s top issue in the post is Progressive Enhancement. _Yes, lots to agree on there._ Rich starts his argument with the point that he can write a Svelte component that spits out server-rendered HTML like this:
 
