@@ -129,6 +129,6 @@ Here are a few links to get started with WebC:
 5. [More sugar for loops/conditional rendering](https://github.com/11ty/webc/issues/28). Those this is possible using template syntax or JavaScript render functions now, it could be less verbose!
 6. Tighter integration with [`<is-land>`](https://www.11ty.dev/docs/plugins/partial-hydration/): I’d like to see us get to the point where WebC components will be able to declare assets to load conditionally based on `<is-land>` loading conditions. Super granular control and power!
 
-The best way to keep up to date here is to subscribe to our [YouTube channel](https://www.11ty.dev/youtube) or [follow us on Twitter](https://www.11ty.dev/twitter)!
+The best way to keep up to date here is to subscribe to our [YouTube channel](https://www.11ty.dev/youtube) or follow us on Twitter [@eleven_ty](https://www.11ty.dev/twitter) and/or [@webc_omponents](https://twitter.com/webc_omponents)!
 
 Thanks, y’all!
