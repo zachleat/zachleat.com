@@ -1,5 +1,5 @@
 ---
-title: "WebC is neat! livecoding.ca Stream with Nick Taylor"
+title: "Nick Taylor’s livecoding.ca: WebC is neat!"
 tags:
   - eleventy
   - speaking
