@@ -25,9 +25,11 @@ tmpl: list
         {% assign barcampCount = collections.all | getSpeakingCount: "type", "barcamp" %}
         {% assign podcastCount = collections.all | getSpeakingCount: "type", "podcast" %}
         {% assign lectureCount = collections.all | getSpeakingCount: "type", "lecture" %}
+        {% assign streamCount = collections.all | getSpeakingCount: "type", "livestream" %}
         {{ countryCount | numberString | capitalize }} different countries,
         {{ conferenceCount }} conference{% if conferenceCount != 1 %}s{% endif %},
         {{ meetupCount }} meetup{% if meetupCount != 1 %}s{% endif %},
+        {{ streamCount }} livestream{% if streamCount != 1 %}s{% endif %},
         {{ barcampCount }} barcamp{% if barcampCount != 1 %}s{% endif %},
         {{ podcastCount }} podcast{% if podcastCount != 1 %}s{% endif %},
         and {{ lectureCount | numberString }} University guest lecture{% if lectureCount != 1 %}s{% endif %}.
