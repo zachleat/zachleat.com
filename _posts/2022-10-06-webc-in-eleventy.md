@@ -5,6 +5,7 @@ tags:
   - web-components
   - speaking
   - eleventy
+  - writing
 metadata:
   speaking:
     type: meetup

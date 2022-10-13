@@ -469,11 +469,19 @@ module.exports = function(eleventyConfig) {
 		return "categories" in post.data && post.data.categories && post.data.categories.indexOf(category) > -1;
 	}
 	function isWriting(item) {
-		return !!item.inputPath.match(/\/_posts\//) &&
-				(!hasTag(item, "external") || hasTag(item, "writing") || (item.data.external_url || "").indexOf("filamentgroup.com") > -1) &&
-				!hasTag(item, "speaking") &&
-				!hasTag(item, "note") &&
-				!hasCategory(item, "presentations");
+		if(!item.inputPath.match(/\/_posts\//)) {
+			return false;
+		}
+
+		if(hasTag(item, "writing")) {
+			return true;
+		}
+
+		if(hasTag(item, "speaking") || hasCategory(item, "presentations")) {
+			return false;
+		}
+
+		return true;
 	}
 	function isSpeaking(item) {
 		return "categories" in item.data &&
