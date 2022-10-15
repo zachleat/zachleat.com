@@ -120,6 +120,7 @@ Here are a few links to get started with WebC:
 * [Crash Course in Eleventy’s new WebC Plugin](https://www.youtube.com/watch?v=X-Bpjrkz-V8) (5m14s video)
 * [Interactive Progressively-enhanced Web Components with WebC](https://www.youtube.com/watch?v=p0wDUK0Z5Nw) (9m23s video)
 * As this blog post was originally a [talk given at the Eleventy Meetup](https://11tymeetup.dev/events/ep-11-webc-with-zach/), when the video is published I will include a deep link to the demo portion of WebC here which built on the above _Interactive Progressively-enhanced…_ video and featured some larger points around tradeoffs between server-side rendering and progressive enhancement (mostly surrounding content layout shift). I imagine that we’ll likely continue to have those discussions moving forward!
+  * Here’s [the source code for the number counter component we built in the talk](https://github.com/11ty/demo-webc-counter).
 
 ## What’s Next for WebC?
 
