@@ -55,7 +55,6 @@ module.exports = function(eleventyConfig) {
 		"_webc/*.css": `web/dist/${pkg.version}/`,
 		"_webc/*.js": `web/dist/${pkg.version}/`,
 	});
-	eleventyConfig.ignores.add("./_webc/*.webc");
 
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 

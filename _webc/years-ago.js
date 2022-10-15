@@ -1,5 +1,5 @@
-class TimeAgo extends HTMLElement {
-	static tagName = "time-ago";
+class YearsAgo extends HTMLElement {
+	static tagName = "years-ago";
 
 	getDate() {
 		let timestamp = this.getAttribute("timestamp");
@@ -24,5 +24,5 @@ class TimeAgo extends HTMLElement {
 }
 
 if(("customElements" in window) && Date.parse && ("Intl" in window) && Intl.RelativeTimeFormat) {
-	window.customElements.define(TimeAgo.tagName, TimeAgo);
+	window.customElements.define(YearsAgo.tagName, YearsAgo);
 }
