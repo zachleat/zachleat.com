@@ -6,6 +6,7 @@ seo:
 _Updated on January 28, 2022 with new information for Svelte and Astro._
 _Updated on April 9, 2022 with new information for Eleventy._
 _Updated on June 15, 2022 with new information for SolidJS._
+_Updated on October 31, 2022 with new information for Remix._
 
 Three years into working on Eleventy, I continue to be blown away by [the adoption and community support](https://www.11ty.dev/blog/jamstack-survey-2021/) of folks contributing to the underdog.
 
@@ -37,7 +38,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
     </tr>
     <tr>
       <td>Eleventy</td>
-      <td><a href="#subnote-3" id="link-subnote-3">[Note 3]</a></td>
+      <td><a href="#subnote-3" id="link-subnote-3">[Update 3]</a></td>
       <td>-</td>
       <td><a href="https://opencollective.com/11ty">Open Collective</a></td>
     </tr>
@@ -96,20 +97,20 @@ Nonetheless, I thought the best place to start would be to compile the data.
       <td>-</td>
     </tr>
     <tr>
-      <td>Remix Run</td>
-      <td><a href="https://remix.run/blog/seed-funding-for-remix">$3M</a></td>
+      <td>Remix</td>
+      <td><a href="https://remix.run/blog/seed-funding-for-remix">$3M</a> <a href="#subnote-5" id="link-subnote-5">[Update 5]</a></td>
       <td></td>
       <td><del>Paid Subscriptions</del></td>
     </tr>
     <tr>
       <td>Svelte</td>
-      <td><a href="#subnote-2" id="link-subnote-2">[Note 2]</a></td>
+      <td><a href="#subnote-2" id="link-subnote-2">[Update 2]</a></td>
       <td></td>
       <td><a href="https://opencollective.com/svelte">Open Collective</a></td>
     </tr>
     <tr>
       <td>SolidJS</td>
-      <td><a href="#subnote-4" id="link-subnote-4">[Note 4]</a></td>
+      <td><a href="#subnote-4" id="link-subnote-4">[Update 4]</a></td>
       <td></td>
       <td><a href="https://opencollective.com/solid">Open Collective</a></td>
     </tr>
@@ -124,9 +125,10 @@ Nonetheless, I thought the best place to start would be to compile the data.
 
 <ol class="notes">
   <li class="notes_note">Note 1: <a id="subnote-1" href="#link-subnote-1" class="notes_linkback">Jump to the reference.</a> Unknown amount previously raised as Skypack CDN.</li>
-  <li class="notes_note">Note 2: <a id="subnote-2" href="#link-subnote-2" class="notes_linkback">Jump to the reference.</a> <a href="https://vercel.com/blog/vercel-welcomes-rich-harris-creator-of-svelte">Rich Harris is full time sponsored by Vercel to work on Svelte</a>.</li>
-  <li class="notes_note">Note 3: <a id="subnote-3" href="#link-subnote-3" class="notes_linkback">Jump to the reference.</a> <a href="https://www.zachleat.com/web/eleventy-oss/">I am now full time sponsored by Netlify to work on Eleventy</a>.</li>
-  <li class="notes_note">Note 4: <a id="subnote-4" href="#link-subnote-4" class="notes_linkback">Jump to the reference.</a> <a href="https://dev.to/ryansolid/when-netlify-asks-you-to-full-time-oss-you-say-yes-5ccf">Ryan Carniato is now full time sponsored by Netlify to work on SolidJS</a>.</li>
+  <li class="notes_note">Update 2: <a id="subnote-2" href="#link-subnote-2" class="notes_linkback">Jump to the reference.</a> <a href="https://vercel.com/blog/vercel-welcomes-rich-harris-creator-of-svelte">Rich Harris is full time sponsored by Vercel to work on Svelte</a>.</li>
+  <li class="notes_note">Update 3: <a id="subnote-3" href="#link-subnote-3" class="notes_linkback">Jump to the reference.</a> <a href="https://www.zachleat.com/web/eleventy-oss/">I am now full time sponsored by Netlify to work on Eleventy</a>.</li>
+  <li class="notes_note">Update 4: <a id="subnote-4" href="#link-subnote-4" class="notes_linkback">Jump to the reference.</a> <a href="https://dev.to/ryansolid/when-netlify-asks-you-to-full-time-oss-you-say-yes-5ccf">Ryan Carniato is now full time sponsored by Netlify to work on SolidJS</a>.</li>
+  <li class="notes_note">Update 5: <a id="subnote-5" href="#link-subnote-5" class="notes_linkback">Jump to the reference.</a> <a href="https://remix.run/blog/remixing-shopify">Remix joins Shopify</a>.</li>
 </ol>
 
 _This list was loosely compiled from the [Jamstack Community Survey 2021](https://jamstack.org/survey/2021/#choices-frameworks)._
