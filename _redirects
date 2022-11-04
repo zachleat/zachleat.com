@@ -2,6 +2,11 @@
 /feed/ /web/feed/ 301!
 /web/feed/ /web/feed/atom.xml 200!
 
+# Mastodon @zachleat.com
+/.well-known/host-meta* https://fediverse.zachleat.com/.well-known/host-meta:splat 301
+/.well-known/webfinger* https://fediverse.zachleat.com/.well-known/webfinger:splat 301
+/.well-known/nodeinfo* https://fediverse.zachleat.com/.well-known/nodeinfo:splat 301
+
 # Passthrough
 /web/css/* /web/css/:splat 200!
 /web/img/* /web/img/:splat 200!
