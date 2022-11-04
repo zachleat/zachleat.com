@@ -6,9 +6,17 @@ tags:
 metadata:
   speaking:
     type: livestream
+  youtubeId: UqfU0L4KqRM
 medialength: 88 min
 ---
-Watch a few select highlights here:
+> Zach Leatherman joins Nick Taylor on the stream to tell us all about web components and WebC, https://github.com/11ty/webc!
+
+> Here's the project they built out, https://github.com/nickytonline/webc-fun
+
+* Subscribe to [Nick on Twitch](https://www.twitch.tv/nickytonline)!
+* Related tweets from [@zachleat](https://twitter.com/zachleat/status/1580267677998026755) and [@nickytonline](https://twitter.com/nickytonline/status/1580252525835350017).
+
+Watch a few select highlights from Twitch here:
 
 <is-land on:visible>
 	<template data-island>
@@ -17,10 +25,10 @@ Watch a few select highlights here:
 </is-land>
 
 * _Watch the [highlights on Twitch](https://www.twitch.tv/videos/1622666476)._
-* _Watch the full video [for a short while on Twitch](https://www.twitch.tv/videos/1622305299)._
-* Subscribe to [Nick on Twitch](https://www.twitch.tv/nickytonline)!
-* Related tweets from [@zachleat](https://twitter.com/zachleat/status/1580267677998026755) and [@nickytonline](https://twitter.com/nickytonline/status/1580252525835350017).
 
-> Zach Leatherman joins Nick Taylor on the stream to tell us all about web components and WebC, https://github.com/11ty/webc!
+## Full video on YouTube
 
-> Here's the project they built out, https://github.com/nickytonline/webc-fun
+<div class="fullwidth"><youtube-lite-player @slug="UqfU0L4KqRM" @label="{{ title }}"></youtube-lite-player></div>
+
+* Watch the [full video on YouTube](https://www.youtube.com/watch?v=UqfU0L4KqRM).
+
