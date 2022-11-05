@@ -1685,7 +1685,6 @@ select[data-filter-key] {
 a[href].favicon:before,
 // .favicon-optin a[href^="https://opencollective.com"]:not(.favicon-optout):before,
 .favicon-optin a[href^="https://www.npmjs.com"]:not(.favicon-optout):before,
-.favicon-optin a[href^="https://twitter.com"]:not(.favicon-optout):before,
 .favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before {
 	content: "";
 	display: inline-block;
@@ -1694,9 +1693,6 @@ a[href].favicon:before,
 	height: 1em;
 	margin: 0 .2em;
 	background-size: contain;
-}
-.favicon-optin a[href^="https://twitter.com"]:not(.favicon-optout):before {
-	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.twitter.com%2F/");
 }
 .favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fgithub.com%2F/");
