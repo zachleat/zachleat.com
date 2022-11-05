@@ -52,8 +52,8 @@ abbr {
 
 /* Ellipsis */
 .text-ellipsis {
-  display: block;
-  overflow: hidden;
+	display: block;
+	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
@@ -1068,10 +1068,11 @@ a[href]:hover .project_img {
 .about .my-avatar {
 	display: block;
 	margin: 0 auto 1em;
-	max-width: 120px;
+	max-width: 130px;
 }
 .about .social {
-	display: block;
+	display: flex;
+	gap: 0 .5em;
 	margin: 1.5em 0;
 }
 @media (min-width: 30em) {
