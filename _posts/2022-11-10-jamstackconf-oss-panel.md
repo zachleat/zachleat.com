@@ -1,5 +1,5 @@
 ---
-title: "OSS Is Out to End the Framework Wars!—Jamstack Conf 2022"
+title: "OSS is Out to End the Framework Wars—Jamstack Conf 2022"
 tags:
   - eleventy
   - speaking
