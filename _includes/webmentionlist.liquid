@@ -6,7 +6,7 @@
   {%- assign likesSize = likes | size -%}
   {% if repostsSize > 0 %}
   <div class="webmentions__facepile">
-    <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ repostsSize }} Retweet{% if repostsSize != 1 %}s{% endif %}</h3>
+    <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ repostsSize }} Repost{% if repostsSize != 1 %}s{% endif %}</h3>
     {%- for webmention in reposts -%}
       {%- if webmention.url != "" -%}
       <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
