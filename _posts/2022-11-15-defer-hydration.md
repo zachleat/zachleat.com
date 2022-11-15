@@ -60,4 +60,5 @@ When the `<is-land>` loading conditions are met and the island hydrates, it remo
 
 The `defer-hydration` attribute removal then triggers the `attributeChangedCallback` which runs the `hydrate()` method.
 
-_Special thanks to [Doug Parker (of the Angular team) for suggesting this for `<is-land>` on Mastodon!](https://techhub.social/@develwithoutacause/109332565955255126)_
+* [Live Demo on `is-land.11ty.dev`](https://is-land.11ty.dev/demo-defer-hydration.html)
+* _Special thanks to [Doug Parker (of the Angular team) for suggesting this for `<is-land>` on Mastodon!](https://techhub.social/@develwithoutacause/109332565955255126)_
