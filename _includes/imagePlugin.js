@@ -61,7 +61,7 @@ function pad(num) {
 function getDailyServiceCacheBuster() {
 	if(process.env.ELEVENTY_PRODUCTION) {
 		let d = new Date();
-		return `_x${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+		return `_z${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
 	}
 
 	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
@@ -71,7 +71,7 @@ function getWeeklyServiceCacheBuster() {
 	if(process.env.ELEVENTY_PRODUCTION) {
 		let d = new Date();
 		// Weekly
-		return `_x${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
+		return `_z${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
 	}
 
 	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
@@ -196,7 +196,7 @@ module.exports = function(eleventyConfig) {
 		if(inputPath.startsWith("./_posts/")) {
 			return getScreenshotUrlFromPath(`/opengraph${url}`);
 		}
-		
+
 		// raw screenshot
 		return getScreenshotUrlFromPath(url);
 		// return getScreenshotUrlFromPath("/og/default.jpeg");
