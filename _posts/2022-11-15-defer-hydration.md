@@ -36,7 +36,7 @@ class MyComponent extends HTMLElement {
 	}
 
 	attributeChangedCallback(name, old, value) {
-	  // when defined it triggers an attribute change from `null` to `""`
+		// when defined it triggers an attribute change from `null` to `""`
 		if(name ==="defer-hydration" && value === null) {
 			this.hydrate();
 		}
