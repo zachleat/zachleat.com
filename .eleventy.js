@@ -51,6 +51,7 @@ module.exports = function(eleventyConfig) {
 			pkg
 		}
 	});
+
 	eleventyConfig.addPassthroughCopy({
 		"_webc/*.css": `web/dist/${pkg.version}/`,
 		"_webc/*.js": `web/dist/${pkg.version}/`,
@@ -632,7 +633,8 @@ module.exports = function(eleventyConfig) {
 			"liquid",
 			"md",
 			"njk",
-			"html"
+			"html",
+			"11ty.js",
 		],
 		"dataTemplateEngine": false,
 		"htmlTemplateEngine": "liquid",
