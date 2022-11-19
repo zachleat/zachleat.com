@@ -34,6 +34,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.setDataDeepMerge(true);
 	eleventyConfig.setQuietMode(true);
 
+	eleventyConfig.setLiquidOptions({
+		jsTruthy: true
+	});
+
 	eleventyConfig.setServerOptions({
 		domdiff: false,
 		showVersion: true,
@@ -636,7 +640,6 @@ module.exports = function(eleventyConfig) {
 			"html",
 			"11ty.js",
 		],
-		"dataTemplateEngine": false,
 		"htmlTemplateEngine": "liquid",
 		"markdownTemplateEngine": "liquid"
 	};

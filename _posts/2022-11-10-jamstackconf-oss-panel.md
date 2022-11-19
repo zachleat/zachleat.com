@@ -34,3 +34,4 @@ _(First posted on Mastodon <a href="https://fediverse.zachleat.com/@zachleat/109
   * and the same on a Tweet from [`@thenewstack`](https://twitter.com/thenewstack/status/1590423225254973441)
 * A tweet from [`@patak_dev`](https://twitter.com/patak_dev/status/1589944457784602626): _“The @jamstackconf’s OSS Is Out to End the Frameworks Wars panel was heart-warming. As @biilmann said, it was great to set the right tone. The Web is better if we collaborate, exchange ideas, and explore different tradeoffs. Look at that smiles!”_
 * A tweet from [`@MuxHQ`](https://twitter.com/MuxHQ/status/1589739906502651904): _“Anything else? @zachleat yells “web components” right before walking off stage 🧡🧡”_
+* On `redmonk.com`: [Jamstack Conf 2022: Armistice Day for the Framework Wars](https://redmonk.com/kholterhoff/2022/11/16/jamstack-conf-2022-armistice-day-for-the-framework-wars/)
