@@ -21,8 +21,7 @@ const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 
 module.exports = function(eleventyConfig) {
-	eleventyConfig.ignores.add("./_11ty/*");
-
+	// More in .eleventyignore
 	if(!process.env.ELEVENTY_PRODUCTION) {
 		eleventyConfig.ignores.add("./web/feed/*");
 		eleventyConfig.ignores.add("./web/opengraph-images.liquid");
@@ -56,8 +55,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginWebmentions);
 
 	eleventyConfig.addPassthroughCopy({
-		"_webc/*.css": `web/dist/${pkg.version}/`,
-		"_webc/*.js": `web/dist/${pkg.version}/`,
+		"_components/*.css": `web/dist/${pkg.version}/`,
+		"_components/*.js": `web/dist/${pkg.version}/`,
 	});
 
 	eleventyConfig.addPlugin(EleventyRenderPlugin);

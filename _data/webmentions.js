@@ -8,7 +8,7 @@ const getBaseUrl = require("../_includes/getBaseUrl")
 require('dotenv').config();
 
 // Configuration Parameters
-const CACHE_DIR = '_cache';
+const CACHE_DIR = '.cache';
 const API_ORIGIN = 'https://webmention.io/api/mentions.jf2';
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
 
