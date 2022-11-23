@@ -10,7 +10,7 @@ Twitter is backsliding into irrelevance. It has been a whirlwind three weeks of 
 * Shipping and pausing an $8 blue check program that began a series of very embarrassing high-profiled Impersonator “Verified” accounts (including a lot of fake-brands, which I’m sure advertisers loved).
 * _November 14, 2022:_ Firing an employee for disagreeing with him on Twitter. ([_Source_](https://www.nbcnews.com/tech/tech-news/elon-musk-appears-fire-software-engineer-argued-twitter-rcna57170))
 * _November 17, 2022:_ M\*sk’s “hardcore ultimatum” fired approximately 1000 more ([_Source_](https://www.theverge.com/2022/11/21/23472025/elon-musk-twitter-hiring-again-ending-layoffs))
-* _November 19, 2022:_ Reinstatment of D\*nald Tr\*mp’s twitter account ([_Source_](https://www.theatlantic.com/ideas/archive/2022/11/elon-musk-donald-trump-twitter/672195/))
+* _November 19, 2022:_ Reinstatment of D\*nald Tr\*mp’s twitter account ([_Source_](https://www.theatlantic.com/ideas/archive/2022/11/elon-musk-donald-trump-twitter/672195/)), which he had promised to do in May of this year ([_Source_](https://www.npr.org/2022/05/10/1097942860/elon-musk-reverse-donald-trump-twitter-ban)).
 
 That last one was the last straw for many folks.
 
