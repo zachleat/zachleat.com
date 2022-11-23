@@ -17,7 +17,9 @@ module.exports = class {
 		feed.addSource("youtubeUser", "YouTube", "UCMlSs0Ltg57qpYdFwUVLR2A");
 		feed.addSource("atom", "Blog","https://www.zachleat.com/web/feed/");
 		feed.addSource("rss", "Mastodon", "https://fediverse.zachleat.com/users/zachleat.rss");
-		feed.addSource("twitterUser", "Twitter", "zachleat", "96383");
+
+		// It’s private for now
+		// feed.addSource("twitterUser", "Twitter", "zachleat", "96383");
 
 		return feed.toRssFeed({
 			title: "Zach Leatherman’s Activity Feed",

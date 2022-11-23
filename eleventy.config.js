@@ -51,14 +51,12 @@ module.exports = function(eleventyConfig) {
 			pkg
 		}
 	});
-
-	eleventyConfig.addPlugin(pluginWebmentions);
-
 	eleventyConfig.addPassthroughCopy({
 		"_components/*.css": `web/dist/${pkg.version}/`,
 		"_components/*.js": `web/dist/${pkg.version}/`,
 	});
 
+	eleventyConfig.addPlugin(pluginWebmentions);
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 
 	/* COPY */
