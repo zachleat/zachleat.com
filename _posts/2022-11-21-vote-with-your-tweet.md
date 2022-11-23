@@ -12,7 +12,7 @@ Twitter is backsliding into irrelevance. It has been a whirlwind three weeks of 
 * _November 17, 2022:_ M\*sk’s “hardcore ultimatum” fired approximately 1000 more ([_Source_](https://www.theverge.com/2022/11/21/23472025/elon-musk-twitter-hiring-again-ending-layoffs))
 * _November 19, 2022:_ Reinstatment of D\*nald Tr\*mp’s twitter account ([_Source_](https://www.theatlantic.com/ideas/archive/2022/11/elon-musk-donald-trump-twitter/672195/)), which he had promised to do in May of this year ([_Source_](https://www.npr.org/2022/05/10/1097942860/elon-musk-reverse-donald-trump-twitter-ban)).
 
-That last one was the last straw for many folks.
+That last one was the last straw for many folks. In time we should probably analyze _why_ this was the last straw and not some of the other previously very terrible things, but in the mean time (and more productively) we can use that momentum to organize!
 
 On the same night as the controversial reinstatement, I shipped a microsite for folks to organize and take action in response:
 
