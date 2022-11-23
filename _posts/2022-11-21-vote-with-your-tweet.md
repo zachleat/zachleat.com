@@ -1,5 +1,8 @@
 ---
 title: Vote With Your Tweet
+tags: project
+# seo:
+#   openGraphBackgroundImage: /web/img/posts/votewithyourtweet/screenshot.png
 ---
 Twitter is backsliding into irrelevance. It has been a whirlwind three weeks of bad managerial decisions over there, including:
 
