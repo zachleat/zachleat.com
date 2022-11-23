@@ -1072,6 +1072,7 @@ a[href]:hover .project_img {
 }
 .about .social {
 	display: flex;
+	justify-content: center;
 	gap: 0 .5em;
 	margin: 1.5em 0;
 }
@@ -1121,6 +1122,9 @@ a[href]:hover .project_img {
 	vertical-align: middle;
 	display: inline-block;
 	text-decoration: none;
+}
+.tag svg {
+	vertical-align: middle;
 }
 a[href].tag-inline:not(.tag-borderless),
 .tags a[href].tag:not(.tag-borderless) {

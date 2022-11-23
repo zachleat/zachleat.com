@@ -10,14 +10,16 @@ layout: post
 
 They rely on the fact that sites like Twitter and Flickr publish an [hCard microformat](http://microformats.org/wiki/hcard) for all of their users publicly on their website.  If you go to [my twitter page](http://twitter.com/zachleat/) and view the source, you’ll find the following code available to anyone (without authentication):
 
-    <address>
-       <ul class="about vcard entry-author">
-          <li><span class="label">Name</span> <span class="fn">Zach Leatherman</span></li>
-          <li><span class="label">Location</span> <span class="adr">Omaha, NE USA</span></li>
-          <li><span class="label">Web</span> <a href="http://www.zachleat.com/" class="url" rel="me">http://www.zachle...</a></li>
-          <li id="bio"><span class="label">Bio</span> <span class="bio">UI Programmer, JavaScript Enthusiast, Soccer Hooligan</span></li>
-       </ul>
-    </address>
+```html
+<address>
+   <ul class="about vcard entry-author">
+      <li><span class="label">Name</span> <span class="fn">Zach Leatherman</span></li>
+      <li><span class="label">Location</span> <span class="adr">Omaha, NE USA</span></li>
+      <li><span class="label">Web</span> <a href="http://www.zachleat.com/" class="url" rel="me">http://www.zachle...</a></li>
+      <li id="bio"><span class="label">Bio</span> <span class="bio">UI Programmer, JavaScript Enthusiast, Soccer Hooligan</span></li>
+   </ul>
+</address>
+```
 
 The premise here is that hCard tells you how to parse this markup to get usable information.  The `adr` CSS class tells you what my address is.  The `fn` CSS class tells you what my name is, and so on.  So, Get Satisfaction goes and spiders this page behind the scenes and autopopulates your profile with what it can find.  Pretty sweet.
 
