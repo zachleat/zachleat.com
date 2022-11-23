@@ -11,7 +11,7 @@ enableWebmentions: true
 	<article>
 		<h2>Newest</h2>
 		<ol class="posts posts-withimg h-feed">
-			{% for post in collections.posts limit:6 %}
+			{% for post in collections.homepageNewestPosts limit:6 %}
 				{% include "post-list-entry.html", ignoreYear: "true", hfeed: true, previewImages: true %}
 			{% endfor %}
 			<li><em><a href="/web/" class="posts-link posts-link-more">…see full archives.</a></em></li>

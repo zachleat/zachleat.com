@@ -375,6 +375,10 @@ module.exports = function(eleventyConfig) {
 		return getPosts(collection);
 	});
 
+	eleventyConfig.addCollection("homepageNewestPosts", function(collection) {
+		return getPosts(collection).filter(({data}) => data.showOnHomePage === true);
+	});
+
 	eleventyConfig.addCollection("feedPosts", function(collection) {
 		return getPosts(collection).filter(function(item) {
 			return !item.data.tags ||
