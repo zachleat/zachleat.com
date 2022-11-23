@@ -7,7 +7,7 @@ Twitter is backsliding into irrelevance. It has been a whirlwind three weeks of 
 * _November 3, 2022:_ Twitter lays off ~3,700 of 7,500 employees, including folks on the Human Rights team ([_Source_](https://www.cnn.com/2022/11/03/tech/twitter-layoffs)), the Trust and Safety team, the Accessibility team, and more.
 * _November 12, 2022:_ Laying off 5,000 contractors ([_Source_](https://arstechnica.com/tech-policy/2022/11/musk-recruits-engineers-for-twitter-2-0-after-mass-layoffs-and-resignations/))
 * Unilaterally banning remote work and destroying any previously established work-life balance norms.
-* Shipping and pausing an $8 blue check program that began a series of very embarrassing high-profiled Impersonator “Verified” accounts (including a lot of fake-brands, which I’m sure advertisers loved).
+* Shipping and pausing an $8 blue check program that began a series of very embarrassing high-profile Impersonator “Verified” accounts (including a lot of fake-brands, which I’m sure advertisers loved).
 * _November 14, 2022:_ Firing an employee for disagreeing with him on Twitter. ([_Source_](https://www.nbcnews.com/tech/tech-news/elon-musk-appears-fire-software-engineer-argued-twitter-rcna57170))
 * _November 17, 2022:_ M\*sk’s “hardcore ultimatum” fired approximately 1000 more ([_Source_](https://www.theverge.com/2022/11/21/23472025/elon-musk-twitter-hiring-again-ending-layoffs))
 * _November 19, 2022:_ Reinstatment of D\*nald Tr\*mp’s twitter account ([_Source_](https://www.theatlantic.com/ideas/archive/2022/11/elon-musk-donald-trump-twitter/672195/)), which he had promised to do in May of this year ([_Source_](https://www.npr.org/2022/05/10/1097942860/elon-musk-reverse-donald-trump-twitter-ban)).
