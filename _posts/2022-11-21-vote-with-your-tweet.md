@@ -41,4 +41,6 @@ I’ve taken a number of steps to reduce my Twitter footprint, both professional
 
 I think these steps are sufficient for now. I don’t have a plan to bulk delete any tweets.
 
+I have been shifting all of my previous Twitter-energy into Mastodon instead and it’s been great. You can find me on [zachleat.com/@zachleat](http://zachleat.com/@zachleat) and [fosstodon.org/@eleventy](https://fosstodon.org/@eleventy).
+
 If Twitter takes substantiative and measurable steps to improve, I may scale back some of these—but given current trends this seems unlikely.
