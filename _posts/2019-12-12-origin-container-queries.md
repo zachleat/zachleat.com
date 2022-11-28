@@ -28,7 +28,7 @@ Here are the earliest mentions of Container Queries that the community was able 
     <dd>
         <a href="https://ianstormtaylor.com/media-queries-are-a-hack/">{% imgavatar "ianstormtaylor" %}Ian Storm Taylor’s <em>Media Queries are a Hack</em> blog post</a>
         <ul class="via">
-            <li><em>via <a href="https://twitter.com/patrickfulton/status/1204490285536952321">{% imgavatar "patrickfulton" %}Patrick Fulton</a></em></li>
+            <li><em>via <a href="https://twitter.com/patrickfulton/status/1204490285536952321">Patrick Fulton</a></em></li>
         </ul>
     </dd>
     <dt>2013 March 17</dt>
