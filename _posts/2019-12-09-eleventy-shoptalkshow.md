@@ -12,6 +12,6 @@ external_url: 'https://shoptalkshow.com/episodes/390/'
 medialength: 62 min
 ---
 
-[Listen to the Interview on Shop Talk Show](https://shoptalkshow.com/episodes/390/) (1:02:19) <span class="tag audio">Audio</span>
+[Listen to the Interview on Shop Talk Show](https://shoptalkshow.com/episodes/390/) (1:02:19)
 
 
