@@ -3,6 +3,8 @@ title: I’m Taking Ownership of My Tweets
 tags:
   - project
 ---
+**_Update November 28, 2022:_ This project [has now been open sourced as Tweetback](/web/tweetback/).**
+
 I’ve invested a lot into Twitter and I’ve received a lot of value from Twitter. I’ve made a lot of friends and professional connections on the site. I’ll be sad when Twitter goes away. Without a doubt, it will go away. It’s only a question of when.
 
 I fully expect my personal website to outlive Twitter and as such have decided to take full ownership of the content I’ve posted there. In true [IndieWeb](https://indieweb.org/) fashion, I’m taking ownership of my data.
