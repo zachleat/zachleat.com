@@ -5,6 +5,7 @@ tags:
   - audio
   - external
   - eleventy
+  - shoptalkshow
 metadata:
   speaking:
     type: podcast
@@ -14,4 +15,4 @@ medialength: 62 min
 
 [Listen to the Interview on Shop Talk Show](https://shoptalkshow.com/episodes/390/) (1:02:19)
 
-
+{% include "shoptalkshow-episodes.liquid" %}

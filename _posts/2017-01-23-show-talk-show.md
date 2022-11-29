@@ -6,6 +6,7 @@ categories:
 tags:
   - audio
   - external
+  - shoptalkshow
 metadata:
   speaking:
     type: podcast
@@ -15,4 +16,4 @@ medialength: 72 min
 
 [Listen to the Interview on Shop Talk Show](http://shoptalkshow.com/episodes/247-performance-equation/) (1:11:54)
 
-
+{% include "shoptalkshow-episodes.liquid" %}
