@@ -25,3 +25,7 @@ Topics:
 
 [Listen to the Interview on Shop Talk Show](https://shoptalkshow.com/543/) (58:40)
 
+## Previously
+
+* [Show Talk Show #390: Eleventy with Zach Leatherman](https://www.zachleat.com/web/eleventy-shoptalkshow/)
+* [Show Talk Show #247: The Performance Equation](https://www.zachleat.com/web/show-talk-show/)
