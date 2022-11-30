@@ -3,11 +3,7 @@ title: The Origin Story of Container Queries
 tags:
   - research
 ---
-Container Queries are an often requested feature of the web platform. It has become almost cliché to mention it when talking about problems we’d like the web platform to solve. Container Queries would go a long way toward helping web developers do their jobs better and its omission is a huge limitation when developing component-based code for the web.
-
-Everyone wants it, but it sure seems like no one is actively working on it. But I’m not here to soapbox about that. Here I only mean to discover the earliest mention of Container Queries (or Element Queries or any implementations of this similar idea) to learn _how long_ this feature has been requested by web developers. I’m curious: is this length of time customary for a new feature of the web platform? Or is something else going on?
-
-Here are the earliest mentions of Container Queries that the community was able to dig up (in reverse chronological order):
+**_Update November 2022_** Container Queries are now available in stable browser versions! 🎉🎉🎉🎉
 
 <dl class="dl-inline">
 	<dt>✅ 2022 October 2</dt>
@@ -22,6 +18,17 @@ Here are the earliest mentions of Container Queries that the community was able 
 	<dd>
 		Safari 16 ships with Container Query support.
 	</dd>
+</dl>
+
+<hr>
+
+Container Queries are an often requested feature of the web platform. It has become almost cliché to mention it when talking about problems we’d like the web platform to solve. Container Queries would go a long way toward helping web developers do their jobs better and its omission is a huge limitation when developing component-based code for the web.
+
+Everyone wants it, but it sure seems like no one is actively working on it. But I’m not here to soapbox about that. Here I only mean to discover the earliest mention of Container Queries (or Element Queries or any implementations of this similar idea) to learn _how long_ this feature has been requested by web developers. I’m curious: is this length of time customary for a new feature of the web platform? Or is something else going on?
+
+Here are the earliest mentions of Container Queries that the community was able to dig up (in reverse chronological order):
+
+<dl class="dl-inline">
 	<dt>2021 March 26</dt>
 	<dd>
 		Chrome Canary adds an experimental flag for a container queries implementation!
