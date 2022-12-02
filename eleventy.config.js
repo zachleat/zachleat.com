@@ -13,12 +13,12 @@ const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 const siteData = require("./_data/site.json");
-const analyticsData = require("./_data/analytics.json");
 
 const pluginImage = require("./_11ty/imagePlugin.js");
 const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
 const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
+const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
 
 module.exports = function(eleventyConfig) {
 	// More in .eleventyignore
@@ -58,6 +58,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(pluginWebmentions);
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
+	eleventyConfig.addPlugin(pluginAnalytics);
 
 	/* COPY */
 	eleventyConfig
@@ -485,34 +486,6 @@ module.exports = function(eleventyConfig) {
 
 			return isSpeaking(item);
 		}).reverse();
-	});
-
-	eleventyConfig.addCollection("popularPostsRanked", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*.md").filter(item => {
-			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
-				return false;
-			}
-			if(!analyticsData[item.url]) {
-				return false;
-			}
-			return true;
-		}).sort(function(a, b) {
-			return analyticsData[b.url].rankPerDaysPosted - analyticsData[a.url].rankPerDaysPosted;
-		}).reverse().slice(0, 20);
-	});
-
-	eleventyConfig.addCollection("popularPostsTotalRanked", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*.md").filter(item => {
-			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
-				return false;
-			}
-			if(!analyticsData[item.url]) {
-				return false;
-			}
-			return true;
-		}).sort(function(a, b) {
-			return analyticsData[b.url].rankTotal - analyticsData[a.url].rankTotal;
-		}).reverse().slice(0, 20);
 	});
 
 	/* Markdown */
