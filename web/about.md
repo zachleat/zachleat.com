@@ -7,7 +7,7 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 
 {% include "social.html" %}
 
-<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" style="max-width: 260px; border-radius: 50%; margin: 2em auto 0; display: block">
+<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" width="516" height="516" style="max-width: 260px; border-radius: 50%; margin: 2em auto 0; display: block">
 
 ## Bio
 
