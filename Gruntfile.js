@@ -77,22 +77,10 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		cssmin: {
-			dist: {
-				options: {
-					banner: '<%= banner %>'
-				},
-				files: {
-					'<%= config.distFolder %>initial.min.css': ['<%= config.distFolder %>initial.css'],
-					'<%= config.distFolder %>defer.min.css': ['<%= config.distFolder %>defer.css']
-				}
-			}
-		},
 		copy: {
 			// For CSS inlining
 			includes: {
 				files: {
-					'_includes/initial.min.css': ['<%= config.distFolder %>initial.min.css'],
 					'_includes/initial.css': ['<%= config.distFolder %>initial.css'],
 					'_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
 					'_includes/initial.js': ['<%= config.distFolder %>initial.js']
@@ -117,7 +105,6 @@ module.exports = function(grunt) {
 		'sass',
 		'concat',
 		'terser',
-		'cssmin'
 	]);
 
 	// no eleventy (for use with `npx grunt && npm start`)

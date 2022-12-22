@@ -9,7 +9,7 @@
     <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ repostsSize }} Repost{% if repostsSize != 1 %}s{% endif %}</h3>
     {%- for webmention in reposts -%}
       {%- if webmention.url != "" -%}
-      <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+      <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {%- endif -%}
       {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
       {%- if webmention.url != "" -%}
@@ -24,7 +24,7 @@
     <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</h3>
     {%- for webmention in likes -%}
       {%- if webmention.url != "" -%}
-      <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+      <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {%- endif -%}
       {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
       {%- if webmention.url != "" -%}
@@ -42,7 +42,7 @@
     <h3{% if bookmarksSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}</h3>
     {%- for webmention in bookmarks -%}
       {%- if webmention.url != "" -%}
-      <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+      <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {%- endif -%}
       {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
       {%- if webmention.url != "" -%}

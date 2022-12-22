@@ -42,15 +42,15 @@
 {% endif %}
 		<link rel="feed" href="https://www.zachleat.com/web/">
 
-		<style>{% include "initial.min.css" %}</style>
+		<style>{% include "initial.css" %}</style>
 
 		<!-- Preconnect to Eleventy services -->
 		<link href="https://v1.opengraph.11ty.dev" rel="preconnect" crossorigin>
 		<link href="https://v1.indieweb-avatar.11ty.dev" rel="preconnect" crossorigin>
 
-		<link rel="stylesheet" href="{{ distFolder }}defer.min.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="{{ distFolder }}defer.css" media="print" onload="this.media='all'">
 		<noscript>
-			<link href="{{ distFolder }}defer.min.css" rel="stylesheet">
+			<link href="{{ distFolder }}defer.css" rel="stylesheet">
 		</noscript>
 {%- for url in stylesheets -%}
 		<link href="{{ url }}" rel="stylesheet">
