@@ -30,13 +30,6 @@
     "fs-extra": "^10.1.0",
     "googleapis": "^104.0.0",
     "gray-matter": "^4.0.3",
-    "grunt": "^1.5.3",
-    "grunt-cli": "^1.4.3",
-    "grunt-contrib-clean": "^2.0.1",
-    "grunt-contrib-concat": "^2.1.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-shell": "^4.0.0",
-    "grunt-terser": "^2.0.0",
     "html-entities": "^2.3.3",
     "kleur": "^4.1.5",
     "lodash": "^4.17.21",
@@ -52,17 +45,15 @@
     "random-case": "1.0.0",
     "sanitize-html": "^2.7.3",
     "sass": "^1.57.1",
-    "terser": "^5.15.1",
-    "time-grunt": "^1.4.0",
     "twitter-avatar-url": "^2.2.0"
   },
   "scripts": {
     "clean": "rm -rf _site && rm -rf .cache",
     "check-links": "npx check-html-links _site",
-    "build": "npx grunt && npx @11ty/eleventy",
-    "start": "npx grunt && npx @11ty/eleventy --serve --port=8090 --incremental",
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --port=8090 --incremental",
     "build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions,counts npx @11ty/eleventy",
-    "production": "./fetch-projects.sh && node fetch-analytics-data.js && npx grunt production"
+    "production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production"
   },
   "repository": {
     "type": "git",
