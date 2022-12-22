@@ -16,6 +16,7 @@ const siteData = require("./_data/site.json");
 
 const pluginImage = require("./_11ty/imagePlugin.js");
 const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
+const pluginSass = require("./_11ty/sassPlugin.js");
 const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
@@ -25,6 +26,8 @@ module.exports = function(eleventyConfig) {
 	if(!process.env.ELEVENTY_PRODUCTION) {
 		eleventyConfig.ignores.add("./web/feed/*");
 		eleventyConfig.ignores.add("./web/opengraph-images.liquid");
+	} else {
+		eleventyConfig.addGlobalData("isProduction", true);
 	}
 
 	eleventyConfig.setUseGitIgnore(false);
@@ -41,16 +44,19 @@ module.exports = function(eleventyConfig) {
 	});
 
 	/* PLUGINS */
+	eleventyConfig.addPlugin(pluginSass);
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
+
 	eleventyConfig.addPlugin(pluginWebc, {
 		useTransform: true,
 		transformData: {
 			pkg
 		}
 	});
+
 	eleventyConfig.addPassthroughCopy({
 		"_components/*.css": `web/dist/${pkg.version}/`,
 		"_components/*.js": `web/dist/${pkg.version}/`,
@@ -62,6 +68,8 @@ module.exports = function(eleventyConfig) {
 
 	/* COPY */
 	eleventyConfig
+		.addPassthroughCopy("css/*.css")
+		.addPassthroughCopy("css/fonts")
 		.addPassthroughCopy("img/")
 		.addPassthroughCopy({
 			"node_modules/speedlify-score/speedlify-score.css": `web/dist/${pkg.version}/speedlify-score.css`,
@@ -75,8 +83,6 @@ module.exports = function(eleventyConfig) {
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
-		.addPassthroughCopy("web/css/fonts")
-		.addPassthroughCopy("web/css/external")
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("web/dist")

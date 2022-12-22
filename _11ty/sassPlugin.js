@@ -1,29 +1,32 @@
-// const sass = require("sass");
-// const path = require("node:path");
+const sass = require("sass");
+const path = require("node:path");
 
-// module.exports = function(eleventyConfig) {
-//    // add as a valid template language to process, e.g. this adds to --formats
-//   eleventyConfig.addTemplateFormats("scss");
+module.exports = function(eleventyConfig) {
+	eleventyConfig.addTemplateFormats("scss");
 
-//   eleventyConfig.addExtension("scss", {
-//     outputFileExtension: "css", // optional, default: "html"
+	eleventyConfig.addExtension("scss", {
+		outputFileExtension: "css",
 
-//     // can be an async function
-//     compile: function (inputContent, inputPath) {
-//       let parsed = path.parse(inputPath);
+		compile: function (inputContent, inputPath) {
+			let parsed = path.parse(inputPath);
 
-//       let result = sass.compileString(inputContent, {
-//         loadPaths: [
-//           parsed.dir || ".",
-//           this.config.dir.includes
-//         ]
-//       });
+			// skip underscore file names
+			if(parsed.name.startsWith("_")) {
+				return;
+			}
 
-//       this.addDependencies(inputPath, result.loadedUrls);
+			let result = sass.compileString(inputContent, {
+				loadPaths: [
+					parsed.dir || ".",
+					this.config.dir.includes
+				]
+			});
 
-//       return (data) => {
-//         return result.css;
-//       };
-//     }
-//   });
-// };
+			this.addDependencies(inputPath, result.loadedUrls);
+
+			return (data) => {
+				return result.css;
+			};
+		}
+	});
+};

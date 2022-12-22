@@ -8,7 +8,7 @@
 
 		<title>{% if title %}{% if titleOverride %}{{ titleOverride }}{% else %}{% if renderData.title %}{{ renderData.title }}{% else %}{{ title }}{% endif %}{% endif %}—zachleat.com{% else %}zachleat.com{% endif %}</title>
 
-		<link rel="preload" href="/web/css/fonts/lato/2.0/latolatin-regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/css/fonts/lato/2.0/latolatin-regular-subset.woff2" as="font" type="font/woff2" crossorigin>
 
 		<meta name="author" content="Zach Leatherman">
 		<meta name="description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
@@ -42,15 +42,20 @@
 {% endif %}
 		<link rel="feed" href="https://www.zachleat.com/web/">
 
-		<style>{% include "initial.css" %}</style>
+{% comment %}Critical CSS in production, blocking stylesheet for local dev for better livereload{% endcomment %}
+{% if isProduction %}
+		<style>{% renderFile "./css/initial.scss" %}</style>
+{% else %}
+		<link rel="stylesheet" href="/css/initial.css">
+{% endif %}
 
 		<!-- Preconnect to Eleventy services -->
 		<link href="https://v1.opengraph.11ty.dev" rel="preconnect" crossorigin>
 		<link href="https://v1.indieweb-avatar.11ty.dev" rel="preconnect" crossorigin>
 
-		<link rel="stylesheet" href="{{ distFolder }}defer.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="/css/defer.css" media="print" onload="this.media='all'">
 		<noscript>
-			<link href="{{ distFolder }}defer.css" rel="stylesheet">
+			<link href="/css/defer.css" rel="stylesheet">
 		</noscript>
 {%- for url in stylesheets -%}
 		<link href="{{ url }}" rel="stylesheet">
@@ -58,7 +63,8 @@
 {%- for stylesheet in stylesheetsDist -%}
 		<link href="{{ distFolder }}{{ stylesheet }}" rel="stylesheet">
 {%- endfor %}
-		<script>{% include "initial.min.js" %}</script>
+		{%- capture jsIncludeLocation %}.{{ distFolder }}initial.min.js{% endcapture %}
+		<script>{% include jsIncludeLocation %}</script>
 		<script src="{{ distFolder }}defer-mod.min.js" type="module" defer></script>
 		<script src="{{ distFolder }}defer.min.js" defer></script>
 

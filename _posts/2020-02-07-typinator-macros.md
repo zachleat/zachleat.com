@@ -6,9 +6,8 @@ note-tags:
   - Productivity
   - Utilities
 tweet: 'https://twitter.com/zachleat/status/902227572184023040'
-templateEngineOverride: md
 ---
-
+{% raw %}
 I used to use [TextExpander](https://textexpander.com/) for text expansion/macros and use [Typinator](https://www.ergonis.com/products/typinator/) now. I don’t remember why I switched (I think it was vaguely associated with performance) but I’m happy with Typinator now. I use this utility a lot, probably more than a hundred times per day.
 
 Here is an example of what it looks like:
@@ -92,3 +91,4 @@ console.log( {^} );
 ```
 
 _I totally use proper debugging tools and unit tests and barely use this one I swear._
+{% endraw %}

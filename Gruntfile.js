@@ -16,8 +16,6 @@ module.exports = function(grunt) {
 			root: 'web/', // from domain root, do not include the first slash, do include a trailing slash
 			jsSrc: '<%= config.root %>js/',
 			cssSrc: '<%= config.root %>css/',
-			imgSrc: '<%= config.root %>img/',
-			iconsSrc: '<%= config.imgSrc %>icons/',
 			distFolder: '<%= config.root %>dist/<%= pkg.version %>/'
 		},
 		// Task configuration.
@@ -35,17 +33,16 @@ module.exports = function(grunt) {
 			jsDeferModule: {
 				src: [
 					'node_modules/@11ty/is-land/is-land.js',
-					],
+				],
 				dest: '<%= config.distFolder %>defer-mod.js'
 			},
 			jsDefer: {
 				src: [
 					'<%= config.jsSrc %>google-analytics.js',
 					'node_modules/@zachleat/filter-container/filter-container.js',
-					],
+				],
 				dest: '<%= config.distFolder %>defer.js'
 			}
-			// CSS concat handled by SASS
 		},
 		terser: {
 			// TODO no banner
@@ -63,30 +60,6 @@ module.exports = function(grunt) {
 				dest: '<%= config.distFolder %>defer.min.js'
 			}
 		},
-		sass: {
-			options: {
-				style: 'expanded',
-				implementation: require("node-sass"),
-				sourcemap: true
-			},
-			dist: {
-				files: {
-					'<%= config.distFolder %>initial.css': '<%= config.cssSrc %>initial.scss',
-					'<%= config.distFolder %>defer.css': '<%= config.cssSrc %>defer.scss',
-					'<%= config.distFolder %>keynote-extractor.css': '<%= config.cssSrc %>keynote-extractor.scss'
-				}
-			}
-		},
-		copy: {
-			// For CSS inlining
-			includes: {
-				files: {
-					'_includes/initial.css': ['<%= config.distFolder %>initial.css'],
-					'_includes/initial.min.js': ['<%= config.distFolder %>initial.min.js'],
-					'_includes/initial.js': ['<%= config.distFolder %>initial.js']
-				}
-			}
-		},
 		shell: {
 			eleventyProduction: {
 				command: 'npm run build-production',
@@ -102,7 +75,6 @@ module.exports = function(grunt) {
 
 	// Default task.
 	grunt.registerTask('assets', [
-		'sass',
 		'concat',
 		'terser',
 	]);
@@ -111,7 +83,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'clean',
 		'assets',
-		'copy:includes'
 	]);
 
 	// Upload to Production

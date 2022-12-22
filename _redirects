@@ -10,7 +10,6 @@
 /.well-known/nodeinfo* https://fediverse.zachleat.com/.well-known/nodeinfo:splat 301
 
 # Passthrough
-/web/css/* /web/css/:splat 200!
 /web/img/* /web/img/:splat 200!
 /web/dist/* /web/dist/:splat 200!
 /web/wp-content/* /web/wp-content/:splat 200!
@@ -72,4 +71,3 @@
 
 # Old Wordpress redirects
 /web/:year/:month/:day/* /web/:splat 301!
-# /web/:year/* /web/:splat 301!
