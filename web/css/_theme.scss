@@ -1687,7 +1687,8 @@ select[data-filter-key] {
 /* External Link Favicons */
 /* This is for wider application of a few use cases. It’s better to use the indieAvatar shortcode for one-off instances */
 a[href].favicon:before,
-// .favicon-optin a[href^="https://opencollective.com"]:not(.favicon-optout):before,
+.favicon-optin a[href^="https://fediverse.zachleat.com"]:not(.favicon-optout):before,
+.favicon-optin a[href^="https://fosstodon.org"]:not(.favicon-optout):before,
 .favicon-optin a[href^="https://www.npmjs.com"]:not(.favicon-optout):before,
 .favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before {
 	content: "";
@@ -1698,12 +1699,14 @@ a[href].favicon:before,
 	margin: 0 .2em;
 	background-size: contain;
 }
+.favicon-optin a[href^="https://fediverse.zachleat.com"]:not(.favicon-optout):before,
+.favicon-optin a[href^="https://fosstodon.org"]:not(.favicon-optout):before {
+	border-radius: 0.3125em; /* 5px /16 */
+	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fjoinmastodon.org%2F/");
+}
 .favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fgithub.com%2F/");
 }
 .favicon-optin a[href^="https://www.npmjs.com"]:not(.favicon-optout):before {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.npmjs.com%2F/");
 }
-// .favicon-optin a[href^="https://opencollective.com"]:not(.favicon-optout):before {
-// 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fopencollective.com%2F/");
-// }
