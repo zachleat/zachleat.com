@@ -16,6 +16,7 @@ module.exports = {
 	author: "Zach Leatherman",
 	layout: "layouts/post.liquid",
 	permalink: "/web/{{ page.fileSlug }}/",
+	tags: ["blog-post"],
 	showOnHomePage: true,
 	eleventyComputed: {
 		seo: {
