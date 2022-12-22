@@ -15,7 +15,7 @@
   },
   "private": true,
   "devDependencies": {
-    "@11ty/eleventy": "2.0.0-canary.22",
+    "@11ty/eleventy": "2.0.0-canary.23",
     "@11ty/eleventy-activity-feed": "^1.0.5",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^2.0.1",
@@ -60,7 +60,7 @@
     "clean": "rm -rf _site && rm -rf .cache",
     "check-links": "npx check-html-links _site",
     "build": "npx grunt && npx @11ty/eleventy",
-    "start": "npx grunt && npx @11ty/eleventy --serve --port=8090",
+    "start": "npx grunt && npx @11ty/eleventy --serve --port=8090 --incremental",
     "build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions,counts npx @11ty/eleventy",
     "production": "./fetch-projects.sh && node fetch-analytics-data.js && npx grunt production"
   },
