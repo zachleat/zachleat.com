@@ -2,7 +2,7 @@
 	<years-ago :date="date">
 		<slot></slot>
 		<template data-island="once">
-			<script :src="`/web/dist/${pkg.version}/years-ago.js`"></script>
+			<script src="/static/years-ago.js"></script>
 		</template>
 	</years-ago>
 </is-land>

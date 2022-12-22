@@ -1,4 +1,3 @@
-{%- capture distFolder %}/web/dist/{% if distVersion %}{{ distVersion }}{% else %}{{ pkg.version }}{% endif %}/{% endcapture -%}
 {%- capture fullUrl %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 <!doctype html>
 <html lang="en"{% if tmpl or templateclass %} class="{% if tmpl %} tmpl-{{ tmpl }}{% endif %}{% if templateclass %} {{ templateclass }}{% endif %}"{% endif %}>
@@ -8,7 +7,7 @@
 
 		<title>{% if title %}{% if titleOverride %}{{ titleOverride }}{% else %}{% if renderData.title %}{{ renderData.title }}{% else %}{{ title }}{% endif %}{% endif %}—zachleat.com{% else %}zachleat.com{% endif %}</title>
 
-		<link rel="preload" href="/css/fonts/lato/2.0/latolatin-regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/static/fonts/lato/2.0/latolatin-regular-subset.woff2" as="font" type="font/woff2" crossorigin>
 
 		<meta name="author" content="Zach Leatherman">
 		<meta name="description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
@@ -29,9 +28,6 @@
 		<meta name="twitter:site" content="@zachleat" />
 		<meta name="twitter:image" content="{% if headimage %}{{ headimage | absoluteUrl }}{% else %}{% ogImageSource page %}{% endif %}" />
 
-		<!-- Site-specific -->
-		<meta name="dist" content="{{distFolder}}">
-
 		<!-- SEO/Feeds -->
 		<link rel="canonical" href="{{ fullUrl }}">
 {% if rssFeedUrl and rssFeedTitle %}
@@ -44,29 +40,28 @@
 
 {% comment %}Critical CSS in production, blocking stylesheet for local dev for better livereload{% endcomment %}
 {% if isProduction %}
-		<style>{% renderFile "./css/initial.scss" %}</style>
+		<style>{% renderFile "./static/initial.scss" %}</style>
 {% else %}
-		<link rel="stylesheet" href="/css/initial.css">
+		<link rel="stylesheet" href="/static/initial.css">
 {% endif %}
 
 		<!-- Preconnect to Eleventy services -->
 		<link href="https://v1.opengraph.11ty.dev" rel="preconnect" crossorigin>
 		<link href="https://v1.indieweb-avatar.11ty.dev" rel="preconnect" crossorigin>
 
-		<link rel="stylesheet" href="/css/defer.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="/static/defer.css" media="print" onload="this.media='all'">
 		<noscript>
-			<link href="/css/defer.css" rel="stylesheet">
+			<link href="/static/defer.css" rel="stylesheet">
 		</noscript>
 {%- for url in stylesheets -%}
 		<link href="{{ url }}" rel="stylesheet">
 {%- endfor %}
 {%- for stylesheet in stylesheetsDist -%}
-		<link href="{{ distFolder }}{{ stylesheet }}" rel="stylesheet">
+		<link href="/static/{{ stylesheet }}" rel="stylesheet">
 {%- endfor %}
-		{%- capture jsIncludeLocation %}.{{ distFolder }}initial.min.js{% endcapture %}
-		<script>{% include jsIncludeLocation %}</script>
-		<script src="{{ distFolder }}defer-mod.min.js" type="module" defer></script>
-		<script src="{{ distFolder }}defer.min.js" defer></script>
+		<script>{% include "./static/initial.min.js" %}</script>
+		<script src="/static/defer-mod.min.js" type="module" defer></script>
+		<script src="/static/defer.min.js" defer></script>
 
 		<meta property="eleventy:path" content="{{ page.inputPath }}">
 

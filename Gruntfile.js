@@ -15,8 +15,6 @@ module.exports = function(grunt) {
 		config: {
 			root: 'web/', // from domain root, do not include the first slash, do include a trailing slash
 			jsSrc: '<%= config.root %>js/',
-			cssSrc: '<%= config.root %>css/',
-			distFolder: '<%= config.root %>dist/<%= pkg.version %>/'
 		},
 		// Task configuration.
 		concat: {
@@ -28,20 +26,20 @@ module.exports = function(grunt) {
 				src: [
 					'<%= config.jsSrc %>initial.js',
 				],
-				dest: '<%= config.distFolder %>initial.js'
+				dest: 'static/initial.js'
 			},
 			jsDeferModule: {
 				src: [
 					'node_modules/@11ty/is-land/is-land.js',
 				],
-				dest: '<%= config.distFolder %>defer-mod.js'
+				dest: 'static/defer-mod.js'
 			},
 			jsDefer: {
 				src: [
 					'<%= config.jsSrc %>google-analytics.js',
 					'node_modules/@zachleat/filter-container/filter-container.js',
 				],
-				dest: '<%= config.distFolder %>defer.js'
+				dest: 'static/defer.js'
 			}
 		},
 		terser: {
@@ -49,15 +47,15 @@ module.exports = function(grunt) {
 			options: {},
 			js: {
 				src: '<%= concat.js.dest %>',
-				dest: '<%= config.distFolder %>initial.min.js'
+				dest: 'static/initial.min.js'
 			},
 			jsDeferMod: {
 				src: '<%= concat.jsDeferModule.dest %>',
-				dest: '<%= config.distFolder %>defer-mod.min.js'
+				dest: 'static/defer-mod.min.js'
 			},
 			jsDefer: {
 				src: '<%= concat.jsDefer.dest %>',
-				dest: '<%= config.distFolder %>defer.min.js'
+				dest: 'static/defer.min.js'
 			}
 		},
 		shell: {

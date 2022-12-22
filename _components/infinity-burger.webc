@@ -6,8 +6,8 @@
 	</div>
 
 	<template data-island="once">
-		<script :src="`/web/dist/${pkg.version}/infinity-burger.js`"></script>
-		<link rel="stylesheet" :href="`/web/dist/${pkg.version}/infinity-burger.css`">
+		<script src="/static/infinity-burger.js"></script>
+		<link rel="stylesheet" href="/static/infinity-burger.css">
 		<style>
 		.infinity-burger.infinity-burger.enabled {
 			display: none;

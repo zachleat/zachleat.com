@@ -1,4 +1,4 @@
-<is-land on:visible :import="`/web/dist/${pkg.version}/lite-yt-embed.js`" class="fluid-width-video-wrapper">
+<is-land on:visible import="/static/lite-yt-embed.js`" class="fluid-width-video-wrapper">
 	<lite-youtube :videoid="slug" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image:url('${this.poster || `https://i.ytimg.com/vi/${this.slug}/maxresdefault.jpg`}'); max-width: 100%`">
 		<a :href="`https://youtube.com/watch?v=${slug}`" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden" @html="`Play Video${label ? `: ${label}` : ''}`"></span></a>
 	</lite-youtube>
@@ -9,6 +9,6 @@
 			pointer-events: none;
 		}
 		</style>
-		<link rel="stylesheet" :href="`/web/dist/${pkg.version}/lite-yt-embed.css`">
+		<link rel="stylesheet" href="/static/lite-yt-embed.css">
 	</template>
 </is-land>

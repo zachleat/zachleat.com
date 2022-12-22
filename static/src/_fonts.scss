@@ -1,26 +1,26 @@
 @font-face {
 	font-family: Lato;
-	src: url('/css/fonts/lato/2.0/latolatin-regular-subset.woff2') format('woff2');
+	src: url('/static/fonts/lato/2.0/latolatin-regular-subset.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: Lato;
-	src: url('/css/fonts/lato/2.0/latolatin-bold-subset.woff2') format('woff2');
+	src: url('/static/fonts/lato/2.0/latolatin-bold-subset.woff2') format('woff2');
 	font-weight: 700;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: Lato;
-	src: url('/css/fonts/lato/2.0/latolatin-italic-subset.woff2') format('woff2');
+	src: url('/static/fonts/lato/2.0/latolatin-italic-subset.woff2') format('woff2');
 	font-style: italic;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: Lato;
-	src: url('/css/fonts/lato/2.0/latolatin-bolditalic-subset.woff2') format('woff2');
+	src: url('/static/fonts/lato/2.0/latolatin-bolditalic-subset.woff2') format('woff2');
 	font-weight: 700;
 	font-style: italic;
 	font-display: swap;
@@ -29,7 +29,7 @@
 /* Also I liked Josefin Sans */
 @font-face {
 	font-family: Numero; /* 'Old Standard TT' */
-  src: url(/css/fonts/old-standard/oldstandard-italic-subset.woff2) format("woff2");
+  src: url(/static/fonts/old-standard/oldstandard-italic-subset.woff2) format("woff2");
   font-style: italic;
   font-display: swap;
   unicode-range: U+2116;
@@ -37,7 +37,7 @@
 
 @font-face {
 	font-family: Numero; /* 'Old Standard TT' */
-  src: url(/css/fonts/old-standard/oldstandard-regular-subset.woff2) format("woff2");
+  src: url(/static/fonts/old-standard/oldstandard-regular-subset.woff2) format("woff2");
   font-display: swap;
   unicode-range: U+2116;
 }

@@ -41,11 +41,6 @@
 .font-latobolditalic *:after {
 	font-family: LatoItalic, $fallbackSystemFont !important;
 }
-.fontloademu,
-.fontloademu * {
-	font-family: LatoItalic, sans-serif !important;
-	color: #525252 !important;
-}
 
 /* Color swatches */
 .swatches {

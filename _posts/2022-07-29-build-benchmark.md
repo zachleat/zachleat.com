@@ -58,7 +58,7 @@ _(Order is alphabetical. Disclosure: I am the maintainer of [Eleventy](https://w
 <template data-island>
 <script type="module">
 import "https://d3js.org/d3.v7.min.js";
-import { Line } from "/web/dist/{{pkg.version}}/artificial-chart.js";
+import { Line } from "/static/artificial-chart.js";
 new Line("markdown-bench-chart", "markdown-bench-datatable", {
   showLegend: false,
   valueType: ["float"],
@@ -213,7 +213,7 @@ _Updated August 3, 2022 with notes about file-based routing of markdown in Remix
 <template data-island>
 <script type="module">
 import "https://d3js.org/d3.v7.min.js";
-import { HorizontalBar } from "/web/dist/{{pkg.version}}/artificial-chart.js";
+import { HorizontalBar } from "/static/artificial-chart.js";
 new HorizontalBar("npm-install-chart", "npm-install-datatable", {
   showLegend: false,
   showInlineBarValues: "outside",

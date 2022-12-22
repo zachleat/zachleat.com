@@ -40,7 +40,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.setServerOptions({
 		domdiff: false,
-		showVersion: true,
+		showVersion: false,
 	});
 
 	/* PLUGINS */
@@ -57,37 +57,32 @@ module.exports = function(eleventyConfig) {
 		}
 	});
 
-	eleventyConfig.addPassthroughCopy({
-		"_components/*.css": `web/dist/${pkg.version}/`,
-		"_components/*.js": `web/dist/${pkg.version}/`,
-	});
-
 	eleventyConfig.addPlugin(pluginWebmentions);
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 	eleventyConfig.addPlugin(pluginAnalytics);
 
 	/* COPY */
 	eleventyConfig
-		.addPassthroughCopy("css/*.css")
-		.addPassthroughCopy("css/fonts")
-		.addPassthroughCopy("img/")
 		.addPassthroughCopy({
-			"node_modules/speedlify-score/speedlify-score.css": `web/dist/${pkg.version}/speedlify-score.css`,
-			"node_modules/speedlify-score/speedlify-score.js": `web/dist/${pkg.version}/speedlify-score.js`,
-			"node_modules/lite-youtube-embed/src/lite-yt-embed.css": `web/dist/${pkg.version}/lite-yt-embed.css`,
-			"node_modules/lite-youtube-embed/src/lite-yt-embed.js": `web/dist/${pkg.version}/lite-yt-embed.js`,
-			"node_modules/infinity-burger/infinity-burger.css": `web/dist/${pkg.version}/infinity-burger.css`,
-			"node_modules/infinity-burger/infinity-burger.js": `web/dist/${pkg.version}/infinity-burger.js`,
-			"node_modules/artificial-chart/artificial-chart.css": `web/dist/${pkg.version}/artificial-chart.css`,
-			"node_modules/artificial-chart/artificial-chart.js": `web/dist/${pkg.version}/artificial-chart.js`,
+			// WebC assets
+			"_components/*.{css,js}": `static/`,
+
+			// CSS/JS
+			"static/fonts": "static/fonts",
+			"static/*.{css,js}": "static/",
+
+			// External modules
+			"node_modules/speedlify-score/speedlify-score.{css,js}": `static/`,
+			"node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `static/`,
+			"node_modules/infinity-burger/infinity-burger.{css,js}": `static/`,
+			"node_modules/artificial-chart/artificial-chart.{css,js}": `static/`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
+		.addPassthroughCopy("img/")
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
-		.addPassthroughCopy("web/dist")
-		.addPassthroughCopy("og/*.jpeg")
-		.addPassthroughCopy("og/*.png")
+		.addPassthroughCopy("og/*.{jpeg,png}")
 		.addPassthroughCopy("og/sources/");
 
 	// Production only passthrough copy
