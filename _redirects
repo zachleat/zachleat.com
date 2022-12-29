@@ -31,7 +31,7 @@
 #/history/* /archive/:splat 301!
 
 # Proxy redirects
-/twitter/* https://zachleat.nfshost.com/twitter/:splat 200!
+/twitter/* https://twitter-zachleat.netlify.app/:splat 200!
 /bernie/* https://zachleat.nfshost.com/bernie/:splat 200!
 /web-fonts/scroll-anchoring/* https://zachleat.nfshost.com/web-fonts/scroll-anchoring/:splat 200!
 /registrastination/* https://zachleat.nfshost.com/registrastination/:splat 200!
