@@ -341,7 +341,13 @@ h5,
 			grid-column-end: 4;
 		}
 	}
-
+	@media (max-width: $oneColLayoutMaxWidth) { /* 979px */
+		.tmpl-page .primary-title {
+			max-width: 13.47826086957em; /* 589px /43.7 */
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 	@media (min-width: $twoColLayoutMinWidth) { /* 980px */
 		.rail {
 			padding: 0;
@@ -486,8 +492,13 @@ blockquote strong {
 }
 
 /* Headers */
-h1, h2, h3, h4, h5,
-.hed-h2, .hed-h3 {
+h1, h2, h3, .hed-h2, .hed-h3 {
+	margin-top: 1.4em;
+	font-family: Hex Franklin Tight, -apple-system, system-ui, LatoBold, sans-serif;
+	font-variation-settings: "wdth" 100, "TYTE" -35, "NOTC" 1;
+	font-weight: 900;
+}
+h4, h5 {
 	margin-top: 1.4em;
 	@include webfontBold;
 
@@ -539,6 +550,11 @@ h2,
 	margin-top: .5em;
 	border-bottom: none;
 }
+@media (min-width: 30em) {
+	h2, .hed-h2 {
+		font-size: 1.789473684211em; /* 34px /19 */
+	}
+}
 h3,
 .hed-h3 {
 	font-size: 1.157894736842em; /* 22px /19 */
@@ -563,18 +579,21 @@ h5 {
 .primary-title {
 	font-size: 2.3em;
 	line-height: 1;
-	letter-spacing: -1px;
-}
-.primary-title.primary-title {
-	font-family: -apple-system, system-ui, LatoBold, sans-serif;
+	font-variation-settings: "wdth" 96, "TYTE" -80, "NOTC" 1;
 	font-weight: 900;
 	margin: 0 0 .5em;
+}
+.primary-title code {
+	font-family: inherit;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.primary-title {
 		font-size: 3.5em;
-		letter-spacing: -0.025em;
-		font-size: clamp(2.3em, 4.5vw, 3.5em);
+		font-size: clamp(2.3em, 7vw, 7em);
 	}
 }
 
@@ -748,7 +767,11 @@ th.numeric {
 	display: inline-block;
 	margin: 0 0 .1em 0;
 	vertical-align: bottom;
-	@include webfont;
+	font-family: Hex Franklin Tight, -apple-system, system-ui, sans-serif;
+	font-variation-settings: "wdth" 100, "TYTE" -50, "NOTC" 0;
+	font-weight: 900;
+	line-height: 1;
+	color: #444;
 
 	@media (max-width: $oneColLayoutMaxWidth) {
 		text-align: center;
@@ -1221,6 +1244,7 @@ a[href].tag-inline:not(.tag-borderless),
 			margin-top: 4em;
 			margin-bottom: .5em;
 			color: #666;
+			@include webfontBold;
 		}
 		.tags .tag.tag-popular-rail {
 			text-transform: none;

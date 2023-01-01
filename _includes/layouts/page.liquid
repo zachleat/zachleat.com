@@ -4,9 +4,7 @@ tmpl: page
 disableComments: true
 ---
 <article class="h-entry">
-	<div class="content-grid-sibling">
-		<h1 class="p-name primary-title{% if removeTitle %} sr-only{% endif %}{% if smalltitle %} primary-title-smalltitle{% endif %}{% if primaryTitleExemptWidth %} primary-title-exempt{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
-	</div>
+	<h1 class="p-name primary-title{% if removeTitle %} sr-only{% endif %}{% if smalltitle %} primary-title-smalltitle{% endif %}{% if primaryTitleExemptWidth %} primary-title-exempt{% endif %}">{% if renderData.title %}{{ renderData.title | longWordWrap }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
 	<div class="content-grid e-content">
 		{{ content }}
 	</div>
