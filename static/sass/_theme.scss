@@ -593,7 +593,7 @@ h5 {
 @media (min-width: $twoColLayoutMinWidth) {
 	.primary-title {
 		font-size: 3.5em;
-		font-size: clamp(2.3em, 7vw, 7em);
+		font-size: clamp(2.95652173913em, calc(-0.61913043em + 8.39vw), 5.2173913em); /* 68px 120px /23 */
 	}
 }
 
