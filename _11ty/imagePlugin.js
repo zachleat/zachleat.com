@@ -165,10 +165,8 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 }
 
 module.exports = function(eleventyConfig) {
-	// eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
-	eleventyConfig.addLiquidShortcode("image", imageShortcode);
+	eleventyConfig.addAsyncShortcode("image", imageShortcode);
 	eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
-	// eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
 	/* Hosted image service to optimize webmention photos */
 	eleventyConfig.addLiquidFilter("eleventyImageServiceAvatar", (url) => {

@@ -22,10 +22,10 @@ function fetchImageData(username, url) {
 	if(!url) {
 		throw new Error("src property required in `img` shortcode.");
 	}
-	
+
 	// return nothing, even though this returns a promise
 	eleventyImage(url, getImageOptions(username)).then(function() {
-		
+
 	});
 }
 
@@ -41,7 +41,7 @@ async function imgAvatar(username, classes = "") {
 	}, {
 		whitespaceMode: "inline"
 	});
-	
+
 	return markup;
 }
 
@@ -66,8 +66,8 @@ module.exports = function(eleventyConfig) {
 		return imgAvatar(username, classes);
 	}
 
-	eleventyConfig.addLiquidShortcode("imgavatar", twitterAvatarHtml);
-	eleventyConfig.addLiquidShortcode("twitteravatar", twitterAvatarHtml);
+	eleventyConfig.addAsyncShortcode("imgavatar", twitterAvatarHtml);
+	eleventyConfig.addAsyncShortcode("twitteravatar", twitterAvatarHtml);
 
 
 	function indieAvatarHtml(url = "", classes = "z-avatar", onerror = "") {
