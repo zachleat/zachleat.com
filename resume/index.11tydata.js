@@ -135,15 +135,6 @@ module.exports = async function() {
 		// 		console.log( `nejsconf follower count: ${data.twitter.nejsconf}.` );
 		// 	}));
 
-		// promises.push(fetch("https://mobile.twitter.com/fontspeed/")
-		// 	.then(res => res.text())
-		// 	.then(text => {
-		// 		let $ = cheerio.load(text);
-		// 		let count = parseInt($(`a[href="/fontspeed/followers"] .statnum`).text().replace(/,/g, ""), 10);
-		// 		data.twitter.fontspeed = count;
-		// 		console.log( `fontspeed follower count: ${data.twitter.fontspeed}.` );
-		// 	}));
-
 		await Promise.all(promises);
 
 		return data;
