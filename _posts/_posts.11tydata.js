@@ -15,7 +15,9 @@ function convertYouTubeUrlToImageUrl(url) {
 module.exports = {
 	author: "Zach Leatherman",
 	layout: "layouts/post.liquid",
-	permalink: "/web/{{ page.fileSlug }}/",
+	permalink: function({page}) {
+		return `/web/${ page.fileSlug }/`
+	},
 	tags: ["blog-post"],
 	showOnHomePage: true,
 	eleventyComputed: {
