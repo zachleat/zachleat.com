@@ -39,7 +39,7 @@ Well, wait. When you’re straddling the divide, you pretty clearly recognize th
 
 > “Astro, Remix and Next.js (among others) are making us reconsider how much code we really need to ship to the client.”—[Source](https://2022.stateofjs.com/en-US/)
 
-Well, wait. When you straddle the divide, you know that [Remix](https://www.zachleat.com/twitter/1534588439580090368/) (67.7 kB compressed) and [Next.js](https://www.zachleat.com/twitter/1584995586918731776/) (90 kB compressed) have not meaningfully reduced their bundle sizes at all. Measurement reveals that bundles are growing: Next.js was [72.2 kB compressed in 2021](https://www.zachleat.com/twitter/1468419834501337088).
+Well, wait. When you’re straddling the divide, you know that [Remix](https://www.zachleat.com/twitter/1534588439580090368/) (67.7 kB compressed) and [Next.js](https://www.zachleat.com/twitter/1584995586918731776/) (90 kB compressed) have not meaningfully reduced their bundle sizes at all. Measurement reveals that bundles are growing: Next.js was [72.2 kB compressed in 2021](https://www.zachleat.com/twitter/1468419834501337088).
 
 ## The Great Dissonance
 
