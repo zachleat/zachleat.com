@@ -18,13 +18,7 @@ medialength: 88 min
 
 Watch a few select highlights from Twitch here:
 
-<is-land on:visible>
-	<template data-island>
-		<iframe src="https://player.twitch.tv/?video=1622666476&parent=www.zachleat.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-	</template>
-</is-land>
-
-* _Watch the [highlights on Twitch](https://www.twitch.tv/videos/1622666476)._
+<twitch-embed id="1622666476"></twitch-embed>
 
 ## Full video on YouTube
 
