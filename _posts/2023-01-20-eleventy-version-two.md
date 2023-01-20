@@ -17,6 +17,8 @@ npm install @11ty/eleventy@beta
 
 Read the [**full release notes on 11ty.dev**](https://www.11ty.dev/blog/eleventy-v2-beta/) or [on GitHub](https://github.com/11ty/eleventy/releases/tag/v2.0.0-beta.1).
 
+If you want to **help spread the word**, I would love a [boost on this toot](https://fosstodon.org/@eleventy/109711447318774161)! Or, even a [star on GitHub would be lovely too](https://github.com/11ty/eleventy)!
+
 
 ## Release Video
 
