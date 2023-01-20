@@ -1,5 +1,6 @@
 ---
 title: The Magical Eleventy v2.0.0-beta.1 Release
+tags: eleventy
 ---
 I am super delighted to announce the [very first beta release of Eleventy v2.0](https://www.11ty.dev/blog/eleventy-v2-beta/)! This is our first major release after [Netlify’s full time sponsorship of the project](/web/eleventy-oss/).
 
