@@ -67,7 +67,6 @@ module.exports = function(eleventyConfig) {
 	}
 
 	eleventyConfig.addAsyncShortcode("imgavatar", twitterAvatarHtml);
-	eleventyConfig.addAsyncShortcode("twitteravatar", twitterAvatarHtml);
 
 
 	function indieAvatarHtml(url = "", classes = "z-avatar", onerror = "") {

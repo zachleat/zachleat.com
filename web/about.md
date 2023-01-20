@@ -26,7 +26,7 @@ Here to fetch my bio? Let’s appeal to your base instinct to copy and paste:
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="Plaintext">
 
 ``` text
-Zach is a builder for the web with Netlify. He created the Eleventy site generator and is still fixated on web fonts. His public speaking résumé includes talks in eight different countries at events like Jamstack Conf, Beyond Tellerrand, Smashing Conference, CSSConf, and The White House. He is an emeritus of Filament Group, NEJS CONF, and still helps out with NebraskaJS.
+Zach is a builder for the web. He created Eleventy (11ty), an award-winning open source site generator now full-time sponsored by Netlify. At one point he became entirely too fixated on web fonts. He has given {{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries at events like Jamstack Conf, Beyond Tellerrand, Smashing Conference, CSSConf, and The White House. Formerly part of Filament Group, NEJS CONF, and NebraskaJS.
 ```
 
 </div>
@@ -34,7 +34,7 @@ Zach is a builder for the web with Netlify. He created the Eleventy site generat
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="HTML">
 
 ``` html
-Zach is a builder for the web with <a href="https://www.netlify.com/">Netlify</a>. He created the <a href="https://www.11ty.dev/">Eleventy site generator</a> and is still fixated on <a href="/web/fonts/">web fonts</a>. His <a href="/web/speaking/">public speaking résumé</a> includes talks in eight different countries at events like Jamstack Conf, Beyond Tellerrand, Smashing Conference, CSSConf, and <a href="/web/whitehouse/">The White House</a>. He is an emeritus of <a href="https://www.filamentgroup.com/">Filament Group</a>, <a href="http://nejsconf.com/">NEJS CONF</a>, and still helps out with <a href="http://nebraskajs.com">NebraskaJS</a>.
+Zach is a builder for the web. He created <a href="https://www.11ty.dev">Eleventy (11ty)</a>, an award-winning open source site generator <a href="/web/eleventy-oss/">now full-time sponsored by Netlify</a>. At one point he became entirely <a href="https://www.zachleat.com/web/fonts/"><em>too fixated</em> on web fonts</a>. He has given <a href="https://www.zachleat.com/web/speaking/">{{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries</a> at events like Jamstack Conf, Beyond Tellerrand, Smashing Conference, CSSConf, and <a href="https://www.zachleat.com/web/whitehouse/">The White House</a>. Formerly part of <a href="https://www.filamentgroup.com/">Filament Group</a>, <a href="http://nejsconf.com/">NEJS CONF</a>, and <a href="http://nebraskajs.com">NebraskaJS</a>.
 ```
 
 </div>
@@ -42,7 +42,7 @@ Zach is a builder for the web with <a href="https://www.netlify.com/">Netlify</a
 <div class="fullwidth livedemo top left square-bottom" data-demo-label="Markdown">
 
 ``` markdown
-Zach is a builder for the web with [Netlify](https://www.netlify.com/). He created the [Eleventy site generator](https://www.11ty.dev/) and is still fixated on [web fonts](/web/fonts/). His [public speaking résumé](/web/speaking/) includes talks in eight different countries at events like Jamstack Conf, Beyond Tellerrand, Smashing Conference, CSSConf, and [The White House](/web/whitehouse/). He is an emeritus of [Filament Group](https://www.filamentgroup.com/), [NEJS CONF](https://nejsconf.com/), and still helps out with [NebraskaJS](https://nebraskajs.com).
+Zach is a builder for the web. He created [Eleventy (11ty)](https://www.11ty.dev), an award-winning open source site generator [now full-time sponsored by Netlify](/web/eleventy-oss/). At one point he became entirely [_too fixated_ on web fonts](https://www.zachleat.com/web/fonts/). He has given [{{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries](https://www.zachleat.com/web/speaking/) at events like Jamstack Conf, Beyond Tellerrand, Smashing Conference, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/). Formerly part of [Filament Group](https://www.filamentgroup.com/), [NEJS CONF](http://nejsconf.com/), and [NebraskaJS](http://nebraskajs.com).
 ```
 
 </div>

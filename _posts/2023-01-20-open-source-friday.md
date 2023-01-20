@@ -1,6 +1,9 @@
 ---
 title: "GitHub’s Open Source Friday: WebC, The Web Components Framework"
 tags: ["eleventy", "speaking"]
+metadata:
+  speaking:
+    type: livestream
 ---
 I was on GitHub’s Open Source Friday to chat a bit about WebC and Eleventy.
 

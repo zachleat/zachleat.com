@@ -6,7 +6,7 @@ tags:
 medialength: 27 min
 external_url: https://podcasts.apple.com/us/podcast/eleventy-with-zach-leatherman/id1539945251?i=1000564676022
 ---
-I was on the [{% twitteravatar "podrocketpod" %}PodRocket](https://twitter.com/podrocketpod) podcast (from the folks at [{% twitteravatar "logrocket" %}LogRocket](https://twitter.com/logrocket))
+I was on the [`@PodRocket`](https://twitter.com/podrocketpod) podcast (from the folks at [`@LogRocket`](https://twitter.com/logrocket))
 
 > We talk to Zach Leatherman, creator and maintainer of Eleventy, about Eleventy, what it was like to be acquired by Netlify, and how Eleventy reached 3 million downloads on npm.
 
