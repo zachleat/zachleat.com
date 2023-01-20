@@ -15,7 +15,7 @@
   },
   "private": true,
   "devDependencies": {
-    "@11ty/eleventy": "2.0.0-canary.23",
+    "@11ty/eleventy": "^2.0.0-beta.1",
     "@11ty/eleventy-activity-feed": "^1.0.5",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^2.0.1",
@@ -34,7 +34,7 @@
     "html-entities": "^2.3.3",
     "kleur": "^4.1.5",
     "lodash": "^4.17.21",
-    "luxon": "^2.4.0",
+    "luxon": "^3.2.1",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.6",
     "matchdep": "^2.0.0",
@@ -52,7 +52,8 @@
     "clean": "rm -rf _site && rm -rf .cache",
     "check-links": "npx check-html-links _site",
     "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve --port=8090 --incremental",
+    "start": "npx @11ty/eleventy --serve --port=8090 --incremental --ignore-initial",
+    "startfull": "npx @11ty/eleventy --serve --port=8090 --incremental",
     "build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions,counts npx @11ty/eleventy",
     "production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production"
   },
