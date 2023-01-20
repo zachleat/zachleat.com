@@ -28,21 +28,18 @@ async function fetchWebmentions(since) {
     return false;
   }
 
+	// https://github.com/aaronpk/webmention.io#api
   // TODO move to use since_id instead of since date
-  let url = `${API_ORIGIN}?domain=${domain}&token=${TOKEN}`;
+  let url = `${API_ORIGIN}?domain=${domain}&token=${TOKEN}&per-page=9999&page=0`;
   if (since) {
-    url += `&per-page=9999&&since=${since}`;
-  } else {
-    url += `&per-page=9999`;
+    url += `&since=${since}`;
   }
   console.log( `Fetching webmentions from: ${url}` );
 
   const response = await fetch(url);
   if (response.ok) {
     const feed = await response.json();
-    console.log(
-      `${feed.children.length} webmentions fetched from ${API_ORIGIN}`
-    );
+    console.log(`${feed.children.length} webmentions fetched from ${API_ORIGIN}`);
     return feed;
   }
 
