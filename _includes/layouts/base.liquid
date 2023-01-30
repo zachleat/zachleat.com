@@ -40,10 +40,10 @@
 		<link rel="feed" href="https://www.zachleat.com/web/">
 
 {% comment %}Critical CSS in production, blocking stylesheet for local dev for better livereload{% endcomment %}
-{% if isProduction %}
-		<style>{% renderFile "./static/initial.scss" %}</style>
-{% else %}
+{% if eleventy.env.runMode == "serve" %}
 		<link rel="stylesheet" href="/static/initial.css">
+{% else %}
+		<style>{% renderFile "./static/initial.scss" %}</style>
 {% endif %}
 
 		<!-- Preconnect to Eleventy services -->

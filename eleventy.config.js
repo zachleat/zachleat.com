@@ -22,12 +22,12 @@ const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
 
 module.exports = function(eleventyConfig) {
+	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
 	// More in .eleventyignore
 	if(!process.env.ELEVENTY_PRODUCTION) {
 		eleventyConfig.ignores.add("./web/feed/*");
 		eleventyConfig.ignores.add("./web/opengraph-images.liquid");
-	} else {
-		eleventyConfig.addGlobalData("isProduction", true);
 	}
 
 	eleventyConfig.setUseGitIgnore(false);
