@@ -13,7 +13,7 @@ The React popularization of client-side rendering did not exist in a vacuum. It 
 
 <div class="livedemo" data-demo-label="Side Note">
 
-_I’m reminded of Mark Zuckerburg famously [admitting that Facebook bet _too much_ on HTML5 for mobile](https://www.youtube.com/watch?v=GBp_xCGIATk), although I haven’t seen a connection between that 2012 quote and React’s initial release in 2013_
+_I’m reminded of Mark Zuckerberg famously [admitting that Facebook bet _too much_ on HTML5 for mobile](https://www.youtube.com/watch?v=GBp_xCGIATk), although I haven’t seen a connection between that 2012 quote and React’s initial release in 2013._
 
 </div>
 
