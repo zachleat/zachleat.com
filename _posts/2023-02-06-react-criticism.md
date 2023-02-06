@@ -69,7 +69,7 @@ A study of 4.3 million desktop and 5.4 million mobile URLs showed that React sit
 
 I remember this tweet pretty vividly, even now! What an exciting possibility—and “soon”!
 
-The tweet was posted on September 13, 2021, almost a full year before [Next.js v13 shipped on October 25, 2022](https://nextjs.org/blog/next-13). Astute readers might note that Next.js v13 did not ship with øJS. The Next.js v13 bundle size was **44 kB larger** than v12—about **half of one React library larger**, in fact.
+The tweet was posted on September 13, 2021, a full year before [Next.js v13 shipped on October 25, 2022](https://nextjs.org/blog/next-13). Astute readers might note that Next.js v13 did not ship with øJS. The Next.js v13 bundle size was **44 kB larger** than v12—about **half of one React library larger**, in fact.
 
 <div class="livedemo" data-demo-label="Side Note">
 
