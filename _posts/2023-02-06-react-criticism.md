@@ -41,7 +41,7 @@ _It **is** interesting that they have anointed Next.js as the official chosen fu
 
 _(Update, this entry was added after publishing)_
 
-[Thomas A. Powell notes that in June 2016](https://fosstodon.org/@thomasapowell/109819540720439366), React’s home page was changed to remove copy touting the performance benefits of Virtual DOM with a pivot to a focus on efficiency benefits instead.
+[Thomas A. Powell notes that in June 2016](https://fosstodon.org/@thomasapowell/109819540720439366), React’s home page was changed to remove copy touting the performance benefit of Virtual DOM with a pivot to a focus on efficiency instead.
 
 Prior to this change it declared:
 
