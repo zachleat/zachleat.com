@@ -37,6 +37,16 @@ _It **is** interesting that they have anointed Next.js as the official chosen fu
 
 </div>
 
+## {{ "16 Jun 2016" | timePosted }} ago
+
+_(Update, this entry was added after publishing)_
+
+[Thomas A. Powell notes that in June 2016](https://fosstodon.org/@thomasapowell/109819540720439366), React’s home page was changed to remove copy touting the performance benefits of Virtual DOM with a pivot to a focus on efficiency benefits instead.
+
+Prior to this change it declared:
+
+> “React abstracts away the DOM, giving a simpler programming model and better performance.”—`https://facebook.github.io./react/`
+
 ## {{ "10 Dec 2016" | timePosted }} ago
 
 Alright, so you’re _not_ a beginner or you’re not building an app. You know better than to fall into the Create React App pit of performance problems and use a React framework that uses Server Side Rendering, right? Well, _not so fast_.
