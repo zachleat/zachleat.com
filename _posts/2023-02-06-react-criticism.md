@@ -13,6 +13,8 @@ The React popularization of client-side rendering did not exist in a vacuum. It 
 
 _(I’m reminded of Mark Zuckerburg famously [admitting that Facebook bet _too much_ on HTML5 for mobile](https://www.youtube.com/watch?v=GBp_xCGIATk), although I haven’t seen a connection between that 2012 quote and React’s initial release in 2013)_
 
+In the post, John states:
+
 > There are practical approaches we can already use today to reliably produce very fast rendering times, but they work best when HTML content is delivered from the server side rather than generating it solely on the client. That approach benefits many areas of user experience aside from performance alone…
 
 The above quote seems incredibly prescient in hindsight and still (somehow) relevant to modern day React discourse as they finally _begin_ to pivot away from `create-react-app`.
