@@ -83,7 +83,9 @@ The tweet was posted on September 13, 2021, a full year before [Next.js v13 ship
 
 <div class="livedemo" data-demo-label="Side Note">
 
-_As an aside, I’m curious how much of this had to do with miscommunicated expectations around React Server Components, given the criticisms [also levied by the Remix team](https://twitter.com/FredKSchott/status/1587095801917865984)._
+_As an aside, I’m curious how much of this had to do with miscommunicated expectations around React Server Components, given the criticisms [also levied by the Hydrogen team at Shopify](https://twitter.com/FredKSchott/status/1587095801917865984)._
+
+_Update: previously this section incorrectly [stated the Remix team as the origin behind issues with server components](https://mas.to/@frehner/109819967948651263)._
 
 </div>
 
