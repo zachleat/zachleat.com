@@ -39,7 +39,7 @@ _It **is** interesting that they have anointed Next.js as the official chosen fu
 
 ## {{ "10 Dec 2016" | timePosted }} ago
 
-Alright, so you’re _not_ a beginner or you’re not building an app. You know better than to fall into the Create React App pit of performance problems and use a React framework that uses Server Side Rendering, right? Well, not so fast.
+Alright, so you’re _not_ a beginner or you’re not building an app. You know better than to fall into the Create React App pit of performance problems and use a React framework that uses Server Side Rendering, right? Well, _not so fast_.
 
 [🌟 When everything's important, nothing is! 🌟—Paul Lewis](https://aerotwist.com/blog/when-everything-is-important-nothing-is/) _(December 10, 2016)_
 
@@ -53,7 +53,7 @@ The Progressive Booting section (to me) reads as the precursor to [Islands archi
 
 Rob Dodson filed [RFC: Plan for custom element attributes/properties in React 19 #11347](https://github.com/facebook/react/issues/11347)
 
-React 18.2.0 passes 0/14 of the advanced tests on the [Custom Elements Everywhere tests](https://custom-elements-everywhere.com/). An experimental build of React is available but it is not in (and at this point may never ship?) in a stable release.
+React 18.2.0 passes 0/14 of the advanced tests on the [Custom Elements Everywhere tests](https://custom-elements-everywhere.com/). An experimental build of React is available but it is not (and at this point may never ship?) in a stable release.
 
 ## {{ "21 Apr 2020" | timePosted }} ago
 
