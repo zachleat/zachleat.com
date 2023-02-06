@@ -11,7 +11,11 @@ To my knowledge this was the first data-backed criticism of the SPA/clientside r
 
 The React popularization of client-side rendering did not exist in a vacuum. It was happening _as_ developers struggled to make this model of client-side React work on an increasingly diverse and demanding world-wide mobile device landscape, especially as [Responsive Web Design won](https://www.zachleat.com/twitter/1262795599390420994) over m-dot architectures for most web work.
 
-_(I’m reminded of Mark Zuckerburg famously [admitting that Facebook bet _too much_ on HTML5 for mobile](https://www.youtube.com/watch?v=GBp_xCGIATk), although I haven’t seen a connection between that 2012 quote and React’s initial release in 2013)_
+<div class="livedemo" data-demo-label="Side Note">
+
+_I’m reminded of Mark Zuckerburg famously [admitting that Facebook bet _too much_ on HTML5 for mobile](https://www.youtube.com/watch?v=GBp_xCGIATk), although I haven’t seen a connection between that 2012 quote and React’s initial release in 2013_
+
+</div>
 
 In the post, John states:
 
@@ -27,7 +31,11 @@ It hasn’t improved with the new beta React Docs either:
 
 > [“If you’re learning React, we recommend Create React App. It is the most popular way to try out React and build a new single-page, client-side application”](https://beta.reactjs.org/learn/start-a-new-react-project)
 
-Although it is interesting that they have anointed Next.js as the official chosen full-featured framework moving forward in the Beta documentation. _I’m sure it has nothing to do with [Next.js 13 being](https://twitter.com/RyanCarniato/status/1584973099740499968) the [“real React 18 release”](https://twitter.com/acdlite/status/1549853625673023488)._
+<div class="livedemo" data-demo-label="Side Note">
+
+_It **is** interesting that they have anointed Next.js as the official chosen full-featured framework moving forward in the Beta documentation. I’m sure it has nothing to do with [Next.js 13 being](https://twitter.com/RyanCarniato/status/1584973099740499968) the [“real React 18 release”](https://twitter.com/acdlite/status/1549853625673023488)._
+
+</div>
 
 ## {{ "10 Dec 2016" | timePosted }} ago
 
@@ -63,7 +71,11 @@ I remember this tweet pretty vividly, even now! What an exciting possibility—a
 
 The tweet was posted on September 13, 2021, almost a full year before [Next.js v13 shipped on October 25, 2022](https://nextjs.org/blog/next-13). Astute readers might note that Next.js v13 did not ship with øJS. The Next.js v13 bundle size was **44 kB larger** than v12—about **half of one React library larger**, in fact.
 
+<div class="livedemo" data-demo-label="Side Note">
+
 _As an aside, I’m curious how much of this had to do with miscommunicated expectations around React Server Components, given the criticisms [also levied by the Remix team](https://twitter.com/FredKSchott/status/1587095801917865984)._
+
+</div>
 
 We might also remember that these frameworks are recommended by the React team on the official documentation for _content sites_ and that [Next.js, Gatsby, and Remix have long used the _blog site_ as the quintessential starter project in their respective Getting Started documentation](/web/build-benchmark/).
 
