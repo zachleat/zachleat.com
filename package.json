@@ -45,8 +45,7 @@
     "numeral": "^2.0.6",
     "random-case": "1.0.0",
     "sanitize-html": "^2.8.1",
-    "sass": "^1.57.1",
-    "twitter-avatar-url": "^2.2.0"
+    "sass": "^1.57.1"
   },
   "scripts": {
     "clean": "rm -rf _site && rm -rf .cache",
