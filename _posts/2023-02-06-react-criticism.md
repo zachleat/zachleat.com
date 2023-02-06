@@ -51,7 +51,7 @@ The Progressive Booting section (to me) reads as the precursor to [Islands archi
 
 ## {{ "24 Oct 2017" | timePosted }} ago
 
-Rob Dodson filed [RFC: Plan for custom element attributes/properties in React 19 #11347](https://github.com/facebook/react/issues/11347)
+Rob Dodson filed [RFC: Plan for custom element attributes/properties in React ~~17~~, ~~18~~, 19 #11347](https://github.com/facebook/react/issues/11347)
 
 React 18.2.0 passes 0/14 of the advanced tests on the [Custom Elements Everywhere tests](https://custom-elements-everywhere.com/). An experimental build of React is available but it is not (and at this point may never ship?) in a stable release.
 
