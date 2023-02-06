@@ -129,4 +129,9 @@ Currently only _26% of sites using Next.js have good Core Web Vitals_. This is l
 
 * [The self-fulfilling prophecy of React—Josh Collinsworth](https://joshcollinsworth.com/blog/self-fulfilling-prophecy-of-react) _(July 27, 2022)_
 * [`krausest/js-framework-benchmark`](https://github.com/krausest/js-framework-benchmark) (with commits dating back to 2016) with [results](https://krausest.github.io/js-framework-benchmark/)
-* In this post I didn’t mention the [rise and fall of CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b) (a phenomenon of its own in the React ecosystem), attempting to introduce a JavaScript runtime and dependency for CSS.
+
+### CSS-in-JS
+
+_(Update, this section was modified after publishing)_
+
+In this post I didn’t mention the [rise and fall of CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)—an approach [created by the React team](https://speakerdeck.com/vjeux/react-css-in-js) in November 2014 and further popularized in the React community before quietly [walking it back almost 7 years later](https://github.com/reactwg/react-18/discussions/110)). _A thank you to Mayank who clarified some history on CSS-in-JS, and you can [read more on their blog post](https://blog.mayank.co/is-css-in-js-actually-bad#heading-closing-thoughts)._
