@@ -37,7 +37,7 @@ This post was a very early criticism of how Server Side Rendered frameworks usin
 
 > SSR typically gets you a faster First Meaningful Paint. That's great for perceived performance, but for libraries / frameworks that recreate the DOM virtually, TTI seems to be pushed back, sometimes a long way. I guess the diffing of real DOM to make VDOM is more expensive than starting fresh?
 
-The Progressive Booting section to me reads as the precursor to [Islands architecture](https://jasonformat.com/islands-architecture/) _(August 11, 2020)_, with a special call in both this and the Islands architecture post to make more use of `requestIdleCallback` in frameworks, which as far as I could tell is [not included with React 18](https://github.com/facebook/react/issues/21662#issuecomment-859671432) (with or without Suspense).
+The Progressive Booting section (to me) reads as the precursor to [Islands architecture](https://jasonformat.com/islands-architecture/) _(August 11, 2020)_, with a special call in both this and the Islands architecture post to make more use of `requestIdleCallback` in frameworks, which as far as I could tell is [not included with React 18](https://github.com/facebook/react/issues/21662#issuecomment-859671432) (with or without Suspense).
 
 ## {{ "24 Oct 2017" | timePosted }} ago
 
