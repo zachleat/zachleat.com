@@ -184,6 +184,7 @@ Currently only _26% of sites using Next.js have good Core Web Vitals_. This is l
 
 * [VDOM vs lit-html—Surma and Jake Archibald](https://www.youtube.com/watch?v=uCHZJy2n8Qs) _(November 7, 2017)_
 * [React—Charlie Owen](https://web.archive.org/web/20191202190319/https://www.sonniesedge.net/posts/react/) _(August 26, 2019)_
+	* _This is a `web.archive.org` link posted with permission from the original author._
 * [Static Svelte: JavaScript Blogging with 93% less JavaScript—Shawn Wang](https://www.swyx.io/svelte-static) _(September 13, 2019)_
 * [React is a subsidy—Emma Humphries](https://emmas.site/blog/2020/09/12/react-is-a-subsidy) _(September 12, 2020)_
 * [The self-fulfilling prophecy of React—Josh Collinsworth](https://joshcollinsworth.com/blog/self-fulfilling-prophecy-of-react) _(July 27, 2022)_
