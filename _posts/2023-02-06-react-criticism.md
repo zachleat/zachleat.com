@@ -79,6 +79,18 @@ _**Update February 6, 2023**: this entry was added._
 
 </div>
 
+## {{ "16 Jul 2016" | timePosted }} ago
+
+[Your license to use React.js can be revoked if you compete with Facebook—Jorgé](https://react-etc.net/entry/your-license-to-use-react-js-can-be-revoked-if-you-compete-with-facebook) _(July 16, 2016)_
+
+> If you are using or considering using React in a project you might want to consult a lawyer. Because of the patent clause you are not allowed to do anything that constitutes as competing with Facebook. If you do take legal actions or in other ways challenge Facebook, your license to use React is immediately revoked. Your license is also revoked if you have any legal disputes if you have legal disputes with any other company using React.
+
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update February 7, 2023**: this entry was added._
+
+</div>
+
 ## {{ "10 Dec 2016" | timePosted }} ago
 
 Alright, so you’re _not_ a beginner or you’re not building an app. You know better than to fall into the Create React App pit of client-side rendering performance problems and use a React framework that uses **server side** rendering, right? Well, _not so fast_.
@@ -91,17 +103,6 @@ This post was a very early criticism of how Server Side Rendered frameworks usin
 
 The Progressive Booting section (to me) reads as the precursor to [Islands architecture](https://jasonformat.com/islands-architecture/) _(August 11, 2020)_, with a special call in both this and the Islands architecture post to make more use of `requestIdleCallback` in frameworks, which as far as I could tell is [not included with React 18](https://github.com/facebook/react/issues/21662#issuecomment-859671432) (with or without Suspense).
 
-## {{ "16 Jul 2016" | timePosted }} ago
-
-[Your license to use React.js can be revoked if you compete with Facebook—Jorgé](https://react-etc.net/entry/your-license-to-use-react-js-can-be-revoked-if-you-compete-with-facebook) _(July 16, 2016)_
-
-> If you are using or considering using React in a project you might want to consult a lawyer. Because of the patent clause you are not allowed to do anything that constitutes as competing with Facebook. If you do take legal actions or in other ways challenge Facebook, your license to use React is immediately revoked. Your license is also revoked if you have any legal disputes if you have legal disputes with any other company using React.
-
-<div class="livedemo" data-demo-label="Updated">
-
-_**Update February 7, 2023**: this entry was added._
-
-</div>
 
 ## {{ "18 Aug 2017" | timePosted }} ago
 
