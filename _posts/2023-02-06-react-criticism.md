@@ -57,10 +57,7 @@ _**Update February 7, 2023**: this entry was added._
 
 > React has significant costs, especially on mobile. React has a lot of computational work required to do all of its checks. On mobile the cost is far higher than I think is reasonable.
 
-> What's really at stake here, to my mind at least, are the performance benefits (read: user experience) and the developer ergonomics. React is very pleasant for developers to use, but at what cost to the user? It seems to me that developer ergonomics should be less important than our users' needs, as painful as that can be for us developers. Despite the claims, React does seem to have significant performance implications, at least under certain circumstances.
-
 > I really enjoyed using React, but I wouldn't personally use it on an app I'm building; I just don't think it would be fast enough.
-
 
 <div class="livedemo" data-demo-label="Updated">
 
@@ -174,7 +171,7 @@ I do want to also call out a similar but far more comprehensive (and maintained)
 
 This post includes a breathtaking array of receipts, especially in the [Sandy Foundations section](https://infrequently.org/2023/02/the-market-for-lemons/#sandy-foundations). I won’t attempt to summarize them here, but it’s definitely worth a read.
 
-## Today
+## {{ "6 Feb 2023" | timePosted }} ago
 
 An analysis of Core Web Vitals across 9.3 million web sites as of February 6, 2023 shows that Core Web Vitals for both [React and Next.js shows that both perform **worse**](https://lookerstudio.google.com/s/lD9m_MQgyGU) **than the aggregation of all other sites** in the archive for _both_ mobile and desktop.
 
