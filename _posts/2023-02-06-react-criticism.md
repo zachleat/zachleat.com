@@ -95,7 +95,7 @@ The Progressive Booting section (to me) reads as the precursor to [Islands archi
 
 [Your license to use React.js can be revoked if you compete with Facebook—Jorgé](https://react-etc.net/entry/your-license-to-use-react-js-can-be-revoked-if-you-compete-with-facebook) _(July 16, 2016)_
 
-> If you are using or considering using React in a project you might want to consult a lawyer. Because of the patent clause you are not allowed to do anything that constitutes as competing with Facebook. If you do take legal actions or in other ways challenge Facebook, your license to use React is immediately revoked. Your license is also revoked if you have any legal disputes if you have legal disputes with any other company using React. This is the reason why both Google and Microsoft employees are not allowed to use React.js in their work - according to Rob Eisenberg, creator of the Aurelia framework and a former member of the Angular 2 development team.
+> If you are using or considering using React in a project you might want to consult a lawyer. Because of the patent clause you are not allowed to do anything that constitutes as competing with Facebook. If you do take legal actions or in other ways challenge Facebook, your license to use React is immediately revoked. Your license is also revoked if you have any legal disputes if you have legal disputes with any other company using React.
 
 <div class="livedemo" data-demo-label="Updated">
 
