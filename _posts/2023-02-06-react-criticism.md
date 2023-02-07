@@ -7,7 +7,7 @@ There have been a number of criticisms levied at the React project over the year
 
 [Researching the Performance costs of JavaScript MVC Frameworks—John Bender](https://www.filamentgroup.com/lab/mv-initial-load-times/) _(December 12, 2014)_
 
-To my knowledge this was the first data-backed criticism of the SPA/clientside rendering model. It showed an average React performance baseline of 1.26 seconds to first render on a mobile device over 3G (prior to adding any application code).
+To my knowledge this was the first data-backed criticism of the SPA/clientside rendering model. It showed an average React performance baseline of 1.26 seconds to first render on a mobile device over 3G, when performance guidelines recommended a goal of first render in under one second.
 
 The React popularization of client-side rendering did not exist in a vacuum. It was happening _as_ developers struggled to make this model of client-side React work on an increasingly diverse and demanding world-wide mobile device landscape, especially as [Responsive Web Design won](https://www.zachleat.com/twitter/1262795599390420994) over m-dot architectures for most web work.
 
@@ -37,9 +37,38 @@ _It **is** interesting that they have anointed Next.js as the official chosen fu
 
 </div>
 
-## {{ "16 Jun 2016" | timePosted }} ago
+## {{ "20 Apr 2015" | timePosted }}
 
-_(Update, this entry was added after publishing)_
+[The DOM is NOT Slow, Your Abstraction Is—Andrea Giammarchi](https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1) _(April 20, 2015)_
+
+> Well, it turned out that React here at least worked (not on Android 2.3, only on webOS), but it delivers the worst performance compared with underscore, paperclip, or my DOM version.
+
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update February 7, 2023**: this entry was added._
+
+</div>
+
+## {{ "3 Jul 2015" | timePosted }}
+
+[React + Performance = ?—Paul Lewis](https://aerotwist.com/blog/react-plus-performance-equals-what/) _(July 3, 2015)_
+
+> For mobile there's a remarkable (performance) cost to using React over not doing so, and the cost is so high as to be reasonably prohibitive.
+
+> React has significant costs, especially on mobile. React has a lot of computational work required to do all of its checks. On mobile the cost is far higher than I think is reasonable.
+
+> What's really at stake here, to my mind at least, are the performance benefits (read: user experience) and the developer ergonomics. React is very pleasant for developers to use, but at what cost to the user? It seems to me that developer ergonomics should be less important than our users' needs, as painful as that can be for us developers. Despite the claims, React does seem to have significant performance implications, at least under certain circumstances.
+
+> I really enjoyed using React, but I wouldn't personally use it on an app I'm building; I just don't think it would be fast enough.
+
+
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update February 7, 2023**: this entry was added._
+
+</div>
+
+## {{ "16 Jun 2016" | timePosted }} ago
 
 [Thomas A. Powell notes that in June 2016](https://fosstodon.org/@thomasapowell/109819540720439366), React’s home page was changed to remove copy touting the performance benefit of Virtual DOM with a pivot to a focus on efficiency instead.
 
@@ -47,9 +76,15 @@ Prior to this change it declared:
 
 > “React abstracts away the DOM, giving a simpler programming model and better performance.”—`https://facebook.github.io./react/`
 
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update February 6, 2023**: this entry was added._
+
+</div>
+
 ## {{ "10 Dec 2016" | timePosted }} ago
 
-Alright, so you’re _not_ a beginner or you’re not building an app. You know better than to fall into the Create React App pit of performance problems and use a React framework that uses Server Side Rendering, right? Well, _not so fast_.
+Alright, so you’re _not_ a beginner or you’re not building an app. You know better than to fall into the Create React App pit of client-side rendering performance problems and use a React framework that uses **server side** rendering, right? Well, _not so fast_.
 
 [🌟 When everything's important, nothing is! 🌟—Paul Lewis](https://aerotwist.com/blog/when-everything-is-important-nothing-is/) _(December 10, 2016)_
 
@@ -58,6 +93,16 @@ This post was a very early criticism of how Server Side Rendered frameworks usin
 > SSR typically gets you a faster First Meaningful Paint. That's great for perceived performance, but for libraries / frameworks that recreate the DOM virtually, TTI seems to be pushed back, sometimes a long way. I guess the diffing of real DOM to make VDOM is more expensive than starting fresh?
 
 The Progressive Booting section (to me) reads as the precursor to [Islands architecture](https://jasonformat.com/islands-architecture/) _(August 11, 2020)_, with a special call in both this and the Islands architecture post to make more use of `requestIdleCallback` in frameworks, which as far as I could tell is [not included with React 18](https://github.com/facebook/react/issues/21662#issuecomment-859671432) (with or without Suspense).
+
+## {{ "18 Aug 2017" | timePosted }} ago
+
+React’s open source license (with a patent clause) was classified by the Apache Software Foundation as a Category-X (read: problematic) license, meaning that it could not be used for Apache.org projects.
+
+The React team at Facebook [posts an explanation doubling down on their licensing choice](https://code.facebook.com/posts/112130496157735/explaining-react-s-license/).
+
+One month after Facebook’s post, Matt Mullenweg (of WordPress) writes [a blog post stating that WordPress would divest from React](https://ma.tt/2017/09/on-react-and-wordpress/) in large in-progress projects Calpyso and Gutenberg.
+
+Facebook [reversed the decision](https://ma.tt/2017/09/facebook-dropping-patent-clause/) (for React v16) a few days later.
 
 ## {{ "24 Oct 2017" | timePosted }} ago
 
@@ -75,7 +120,7 @@ A study of 4.3 million desktop and 5.4 million mobile URLs showed that React sit
 
 ## {{ "13 Sep 2021" | timePosted }} ago
 
-> “øJS is coming to Next 🔜”—[@rauchg](https://twitter.com/rauchg/status/1437494013137805312)
+> “øJS is coming to Next 🔜”—[Guillermo Rauch](https://twitter.com/rauchg/status/1437494013137805312)
 
 I remember this tweet pretty vividly, even now! What an exciting possibility—and “soon”!
 
@@ -85,9 +130,11 @@ The tweet was posted on September 13, 2021, a full year before [Next.js v13 ship
 
 _As an aside, I’m curious how much of this had to do with miscommunicated expectations around React Server Components, given the criticisms [also levied by the Hydrogen team at Shopify](https://twitter.com/FredKSchott/status/1587095801917865984)._
 
-_Update: previously this section incorrectly [stated the Remix team as the origin behind issues with server components](https://mas.to/@frehner/109819967948651263)._
+_**Update February 6, 2023**: previously this section incorrectly [stated the Remix team as the origin behind issues with server components](https://mas.to/@frehner/109819967948651263)._
 
 </div>
+
+Notably, 2021 Guillermo Rauch is a welcome pivot from 2013 Guillermo Rauch, confidently [stating that “Single-page, JavaScript-driven apps are the future”](https://www.youtube.com/watch?v=Ar9R-CX217o&t=232s). Though [2023 Guillermo Rauch](https://twitter.com/rauchg/status/1619492334961569792) seems to have jumped the shark 😅.
 
 We might also remember that these frameworks are recommended by the React team on the official documentation for _content sites_ and that [Next.js, Gatsby, and Remix have long used the _blog site_ as the quintessential starter project in their respective Getting Started documentation](/web/build-benchmark/).
 
@@ -96,6 +143,12 @@ Here are a few baseline bundle sizes:
 * Next.js (v13) was [90 kB (compressed), 272 kB (uncompressed)](https://www.zachleat.com/twitter/1584995586918731776/) (as of 25 Oct 2022)
 * Remix (v1.5.1) was [67.7 kB (compressed)](https://www.zachleat.com/twitter/1534588439580090368/) (as of 8 Jun 2022)
 * Next.js (v12) was [72.2 kB (compressed), 228 kB (uncompressed)](https://www.zachleat.com/twitter/1468419834501337088) (as of 7 Dec 2021)
+
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update Feburary 7, 2023**: Added a bit of history on Single Page Applications._
+
+</div>
 
 
 ## {{ "14 Oct 2021" | timePosted }} ago
@@ -129,11 +182,25 @@ Currently only _26% of sites using Next.js have good Core Web Vitals_. This is l
 
 ## Addendum:
 
+* [VDOM vs lit-html—Surma and Jake Archibald](https://www.youtube.com/watch?v=uCHZJy2n8Qs) _(November 7, 2017)_
+* [React—Charlie Owen](https://web.archive.org/web/20191202190319/https://www.sonniesedge.net/posts/react/) _(August 26, 2019)_
+* [Static Svelte: JavaScript Blogging with 93% less JavaScript—Shawn Wang](https://www.swyx.io/svelte-static) _(September 13, 2019)_
+* [React is a subsidy—Emma Humphries](https://emmas.site/blog/2020/09/12/react-is-a-subsidy) _(September 12, 2020)_
 * [The self-fulfilling prophecy of React—Josh Collinsworth](https://joshcollinsworth.com/blog/self-fulfilling-prophecy-of-react) _(July 27, 2022)_
 * [`krausest/js-framework-benchmark`](https://github.com/krausest/js-framework-benchmark) (with commits dating back to 2016) with [results](https://krausest.github.io/js-framework-benchmark/)
 
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update February 7, 2023**: Added resources [from Timo Tijhof](https://fosstodon.org/@krinkle/109823277305506614) and [Thomas Michael Semmler](https://indieweb.social/@nachtfunke)!_
+
+</div>
+
 ### CSS-in-JS
 
-_(Update, this section was modified after publishing)_
+In this post I didn’t mention the [rise and fall of CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)—an approach [created by the React team](https://speakerdeck.com/vjeux/react-css-in-js) in November 2014 and further popularized in the React community before quietly [walking it back almost 7 years later](https://github.com/reactwg/react-18/discussions/110)).
 
-In this post I didn’t mention the [rise and fall of CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)—an approach [created by the React team](https://speakerdeck.com/vjeux/react-css-in-js) in November 2014 and further popularized in the React community before quietly [walking it back almost 7 years later](https://github.com/reactwg/react-18/discussions/110)). _A thank you to Mayank who clarified some history on CSS-in-JS, and you can [read more on their blog post](https://blog.mayank.co/is-css-in-js-actually-bad#heading-closing-thoughts)._
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update Feburary 6, 2023**: a thank you to Mayank who clarified some history on CSS-in-JS, and you can [read more on their blog post](https://blog.mayank.co/is-css-in-js-actually-bad#heading-closing-thoughts)._
+
+</div>
