@@ -91,15 +91,36 @@ This post was a very early criticism of how Server Side Rendered frameworks usin
 
 The Progressive Booting section (to me) reads as the precursor to [Islands architecture](https://jasonformat.com/islands-architecture/) _(August 11, 2020)_, with a special call in both this and the Islands architecture post to make more use of `requestIdleCallback` in frameworks, which as far as I could tell is [not included with React 18](https://github.com/facebook/react/issues/21662#issuecomment-859671432) (with or without Suspense).
 
+## {{ "16 Jul 2016" | timePosted }} ago
+
+[Your license to use React.js can be revoked if you compete with Facebook—Jorgé](https://react-etc.net/entry/your-license-to-use-react-js-can-be-revoked-if-you-compete-with-facebook) _(July 16, 2016)_
+
+> If you are using or considering using React in a project you might want to consult a lawyer. Because of the patent clause you are not allowed to do anything that constitutes as competing with Facebook. If you do take legal actions or in other ways challenge Facebook, your license to use React is immediately revoked. Your license is also revoked if you have any legal disputes if you have legal disputes with any other company using React. This is the reason why both Google and Microsoft employees are not allowed to use React.js in their work - according to Rob Eisenberg, creator of the Aurelia framework and a former member of the Angular 2 development team.
+
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update February 7, 2023**: this entry was added._
+
+</div>
+
 ## {{ "18 Aug 2017" | timePosted }} ago
 
-React’s open source license (with a patent clause) was classified by the Apache Software Foundation as a Category-X (read: problematic) license, meaning that it could not be used for Apache.org projects.
+React’s open source license (with a patent clause) was [classified by the Apache Software Foundation as a Category-X (read: problematic) license](https://issues.apache.org/jira/browse/LEGAL-303?focusedCommentId=16088736&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-16088736), meaning that it could not be used for Apache.org projects _(July 15, 2017)_.
 
-The React team at Facebook [posts an explanation doubling down on their licensing choice](https://code.facebook.com/posts/112130496157735/explaining-react-s-license/).
+The React team at Facebook [posted an explanation doubling down on a licensing choice](https://code.facebook.com/posts/112130496157735/explaining-react-s-license/) _(August 18, 2017)_ that had been in use since the project’s initial release in 2013.
 
-One month after Facebook’s post, Matt Mullenweg (of WordPress) writes [a blog post stating that WordPress would divest from React](https://ma.tt/2017/09/on-react-and-wordpress/) in large in-progress projects Calpyso and Gutenberg.
+One month after Facebook’s post, Matt Mullenweg (of WordPress) writes [a blog post stating that WordPress would divest from React](https://ma.tt/2017/09/on-react-and-wordpress/) _(September 14, 2017)_ in large in-progress projects Calpyso and Gutenberg.
 
-Facebook [reversed the decision](https://ma.tt/2017/09/facebook-dropping-patent-clause/) (for React v16) a few days later.
+Facebook [reversed the decision](https://engineering.fb.com/2017/09/22/web/relicensing-react-jest-flow-and-immutable-js/) _(September 22, 2017)_ for React v16 a few days later.
+
+The patent clause remained in place for many other open source projects at Facebook (and all prior versions of React).
+
+
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update February 7, 2023**: some addition timeline context was added._
+
+</div>
 
 ## {{ "24 Oct 2017" | timePosted }} ago
 
