@@ -201,13 +201,14 @@ Currently only _26% of sites using Next.js have good Core Web Vitals_. This is l
 
 ## Addendum:
 
+* [`krausest/js-framework-benchmark`](https://github.com/krausest/js-framework-benchmark) (with commits dating back to 2016) with [results](https://krausest.github.io/js-framework-benchmark/)
 * [VDOM vs lit-html—Surma and Jake Archibald](https://www.youtube.com/watch?v=uCHZJy2n8Qs) _(November 7, 2017)_
 * [React—Charlie Owen](https://web.archive.org/web/20191202190319/https://www.sonniesedge.net/posts/react/) _(August 26, 2019)_
 	* _This is a `web.archive.org` link posted with permission from the original author._
 * [Static Svelte: JavaScript Blogging with 93% less JavaScript—Shawn Wang](https://www.swyx.io/svelte-static) _(September 13, 2019)_
 * [React is a subsidy—Emma Humphries](https://emmas.site/blog/2020/09/12/react-is-a-subsidy) _(September 12, 2020)_
 * [The self-fulfilling prophecy of React—Josh Collinsworth](https://joshcollinsworth.com/blog/self-fulfilling-prophecy-of-react) _(July 27, 2022)_
-* [`krausest/js-framework-benchmark`](https://github.com/krausest/js-framework-benchmark) (with commits dating back to 2016) with [results](https://krausest.github.io/js-framework-benchmark/)
+* [Will Serving Real HTML Content Make A Website Faster? Let’s Experiment!—Scott Jehl](https://blog.webpagetest.org/posts/will-html-content-make-site-faster/) _(September 21, 2022)_
 
 <div class="livedemo" data-demo-label="Updated">
 
