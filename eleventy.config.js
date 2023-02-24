@@ -5,6 +5,7 @@ const { URL } = require("url");
 const numeral = require("numeral");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItToc = require("markdown-it-table-of-contents");
 const {encode} = require("html-entities");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -504,7 +505,20 @@ module.exports = function(eleventyConfig) {
 			level: [1,2,3,4],
 		}),
 		slugify: eleventyConfig.getFilter("slug")
-	});
+	}).use(markdownItToc, {
+		includeLevel: [2, 3, 4],
+		slugify: eleventyConfig.getFilter("slug"),
+		format: function(heading) {
+			return heading;
+		},
+		transformLink: function(link) {
+			if(typeof link === "string") {
+				// remove backticks from markdown code
+				return link.replace(/\%60/g, "");
+			}
+			return link;
+		}
+	});;
 
 	eleventyConfig.setLibrary("md", md);
 

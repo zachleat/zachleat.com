@@ -18,8 +18,8 @@ tmpl: page
 {% if tags contains 'video' %}
 			<em class="words">Watch in {{ medialength | medialengthCleanup }}</em>
 {% endif %}
-{% if tweet %}
-			<em>Inspired by <a href="{{ tweet }}">a tweet</a>.</em>
+{% if tweet or toot %}
+			<em>First, it was {% if tweet %}<a href="{{ tweet }}">a tweet</a>{% elsif toot %}<a href="{{ toot }}">a mastodon post</a>{% endif %}.</em>
 {% endif %}
 {% if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
 			<em>Tagged:
