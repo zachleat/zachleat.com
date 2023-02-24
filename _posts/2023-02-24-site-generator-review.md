@@ -10,7 +10,7 @@ It’s time again for every framework author’s favorite: The JavaScript Site G
 
 </details>
 
-Here is the list of site generators reviewed in alphabetical order::
+Here is the list of site generators reviewed in alphabetical order:
 
 * Astro `2.0.15`
 * Eleventy `2.0.0`
