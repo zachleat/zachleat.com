@@ -25,10 +25,10 @@ Each example site was created using a fresh run of the Quick Start or Getting St
 ## Previous Reviews
 
 * [Next.js v13 review](/twitter/1584995586918731776/)—_October 2022_
+* [Who Pays for Web Frameworks?](/web/monetization/)—_Last updated October 2022_
 * [Markdown benchmark](/web/build-benchmark/) and [`npm install` Benchmark](/web/build-benchmark/#bonus:-npm-install-benchmarks)—_July 2022_
 * [Remix v1.5.1 review](/twitter/1534588439580090368/)—_June 2022_
 * [Next.js review](/twitter/1534588439580090368/)—_December 2021_
-* [Who Pays for Web Frameworks?](/web/monetization/)—_Last updated October 2022_
 
 ## `npm install` Times
 
