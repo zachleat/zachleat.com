@@ -1542,6 +1542,10 @@ details.livedemo-dark > summary {
 	white-space: nowrap;
 }
 
+.toc p:empty {
+	display: none;
+}
+
 /* Table of Contents on Right */
 @media (min-width: $twoColLayoutMinWidth) and (min-height: 33.125em) {
 	.toc {
@@ -1552,6 +1556,8 @@ details.livedemo-dark > summary {
 		width: 13.5em;
 		right: 3.5em;
 	}
+	.toc.toc .hed-h2,
+	.toc.toc .hed-h3,
 	.toc.toc h2,
 	.toc.toc h3 {
 		font-size: .8125rem;
