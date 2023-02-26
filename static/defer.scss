@@ -1,3 +1,6 @@
+@use "../node_modules/@zachleat/flex-luthor/flex-luthor.css";
+// @use "../node_modules/@zachleat/flex-luthor/flex-luthor-separators.css";
+
 @import "sass/config";
 @import "sass/mixins";
 @import "sass/simple-blockquotes";
@@ -13,7 +16,6 @@
 @import "sass/disqus";
 @import "sass/webmention";
 @import "sass/directlink";
-@import "sass/layout";
 @import "sass/opengraph-card";
 
 .speedlify-link {
