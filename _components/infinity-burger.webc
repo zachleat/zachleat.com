@@ -5,7 +5,7 @@
 		<div></div>
 	</div>
 
-	<template data-island="once">
+	<template data-island="once" webc:raw>
 		<script src="/static/infinity-burger.js"></script>
 		<link rel="stylesheet" href="/static/infinity-burger.css">
 		<style>

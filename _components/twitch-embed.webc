@@ -1,5 +1,5 @@
 <is-land on:visible>
-	<template data-island>
+	<template data-island webc:raw>
 		<iframe :src="`https://player.twitch.tv/?video=${id}&parent=www.zachleat.com`" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
 	</template>
 </is-land>

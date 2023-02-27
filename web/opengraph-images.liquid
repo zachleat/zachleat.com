@@ -50,11 +50,11 @@ More Ideas:
         <p class="main-center"></p>
         <p class="main-right">
           {%- if speedlify[absoluteUrl] %}
-            <performance-score class="main-lighthouse" hash="{{ speedlify[absoluteUrl].hash }}" score></performance-score>
+            <speedlify-score class="main-lighthouse" hash="{{ speedlify[absoluteUrl].hash }}" score></speedlify-score>
           {%- endif %}
           {%- if webmentionsCount > 0 %}<span class="main-box main-box-nowrap">{{ webmentionsCount }} Webmention{% if webmentionsCount != 1 %}s{% endif %}</span>{% endif %}
           {%- if speedlify[absoluteUrl] -%}
-            <performance-score class="main-pageweight" hash="{{ speedlify[absoluteUrl].hash }}" weight></performance-score>
+            <speedlify-score class="main-pageweight" hash="{{ speedlify[absoluteUrl].hash }}" weight></speedlify-score>
           {%- endif %}<br>
           <strong class="main-host main-box">zachleat.com</strong>
           <span class="main-postnumber main-box main-box-nowrap">№{{ pagination.pages.length | minus: pagination.pageNumber }}</span>
