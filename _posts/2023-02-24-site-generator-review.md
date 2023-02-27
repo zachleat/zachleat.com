@@ -26,6 +26,7 @@ Here is the list of site generators reviewed in alphabetical order:
 
 * Astro `2.0.15`
 * Eleventy `2.0.0`
+* Enhance `1.4.6` _(added 27 February 2023)_
 * Gatsby `5.7.0`
 * Next.js `13.2.1`
 * Nuxt `3.2.2`
@@ -82,6 +83,10 @@ new HorizontalBar("npminstall-chart", "npminstall-datatable", {
   <tr>
     <td>Eleventy <code>2.0.0</code></td>
     <td>5.81</td>
+  </tr>
+	<tr>
+    <td>Enhance <code>1.4.6</code></td>
+    <td>29.71</td>
   </tr>
   <tr>
     <td>Gatsby <code>5.7.0</code></td>
@@ -156,6 +161,10 @@ new HorizontalBar("client-js-chart", "client-js-datatable", {
     <td>0</td>
   </tr>
   <tr>
+    <td>Enhance <code>1.4.6</code></td>
+    <td>0</td>
+  </tr>
+  <tr>
     <td>Gatsby <code>5.7.0</code></td>
     <td>210</td>
   </tr>
@@ -220,6 +229,10 @@ new HorizontalBar("nodemodules-chart", "nodemodules-datatable", {
     <td>Eleventy <code>2.0.0</code></td>
     <td>34</td>
   </tr>
+	<tr>
+    <td>Enhance <code>1.4.6</code></td>
+    <td>210</td>
+  </tr>
   <tr>
     <td>Gatsby <code>5.7.0</code></td>
     <td>583</td>
@@ -257,6 +270,7 @@ These tools hide `npm audit` reports:
 These tools show standard `npm audit` reports during project creation:
 
 * Eleventy ✅
+* Enhance ✅
 * Nuxt ✅
 * Remix ✅
 * SvelteKit ✅
@@ -279,6 +293,7 @@ Has Telemetry but it is opt-in:
 No known Telemetry or data collection:
 
 * Eleventy ✅
+* Enhance ✅
 * Remix ✅
 * SvelteKit ✅
 
