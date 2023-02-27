@@ -145,7 +145,7 @@ ul.resume-desc {
 	.resume-ahw {
 		position: absolute;
 		height: 1px;
-		width: 1px; 
+		width: 1px;
 		overflow: hidden;
 		clip: rect(1px, 1px, 1px, 1px);
 	}
@@ -206,7 +206,7 @@ ul.resume-desc {
 .primary-title {
 	position: absolute;
 	height: 1px;
-	width: 1px; 
+	width: 1px;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
 }
@@ -219,4 +219,29 @@ ul.resume-desc {
 .content-main a[href] {
 	-ms-hyphens: none;
 	hyphens: none;
+}
+
+/* Inline lists */
+.list-inline:before,
+.list-inline:after {
+	content: " ";
+	display: table;
+}
+.list-inline:after {
+	clear: both;
+}
+.list-inline > li {
+	float: left;
+	list-style: none;
+}
+.list-inline > li:not(:last-child):after {
+	content: "";
+	padding-left: .75em;
+}
+.list-inline > li:not(.list-inline-nosep):not(:last-child):after {
+	border-right: 1px solid #ddd;
+	margin-right: .75em;
+}
+.content-main .list-inline:not(.posts) {
+	padding-left: 0; /* Override */
 }

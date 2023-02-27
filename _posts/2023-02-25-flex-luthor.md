@@ -6,10 +6,7 @@ Just going through the backlog of some old projects and found this [Filament Gro
 
 Flex Luthor is a small CSS wrapper library to help with responsive intrinsic-sized Flexbox layouts that wrap based on content and container width (avoiding viewport-based media queries).
 
-<div class="fl fl-inline nowrap">
-	<div class="primarylink"><a href="https://flex-luthor.zachleat.dev/">Demo</a></div>
-	<div class="primarylink"><a href="https://github.com/zachleat/flex-luthor">Source Code</a></div>
-</div>
+View the <a href="https://flex-luthor.zachleat.dev/" class="hed-h3">Demo</a> or <a href="https://github.com/zachleat/flex-luthor" class="hed-h3">Source Code</a>
 
 This library predated Flexbox support for the `gap` property but I updated it to use `gap` in the new `v3.0.0` version. I think the coolest feature it provides is the addition of borders only when cells wrap to a new line (horizontal, vertical, or both).
 

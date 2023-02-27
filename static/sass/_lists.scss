@@ -23,26 +23,11 @@ dd ul.via {
 }
 
 /* Inline List */
-.list-inline-nom {
-	margin: 0;
-}
-.list-inline {
-	@include clearfix;
+.list-inline.list-inline.list-inline {
+	padding: 0;
 }
 .list-inline > li {
-	float: left;
 	list-style: none;
-}
-.list-inline > li:not(:last-child):after {
-	content: "";
-	padding-left: .75em;
-}
-.list-inline > li:not(.list-inline-nosep):not(:last-child):after {
-	border-right: 1px solid #ddd;
-	margin-right: .75em;
-}
-.content-main .list-inline:not(.posts) {
-	padding-left: 0; /* Override */
 }
 
 /* Next/prev */
