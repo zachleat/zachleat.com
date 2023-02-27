@@ -95,6 +95,9 @@
 	flex-grow: 999;
 	flex-basis: 20em; /* 320px /16 */
 }
+.toggle-features-form speedlify-score {
+	min-width: 20em;
+}
 @media (max-width: 21.8125em) { /* 349px */
 	.toggle-features-form .speedlify-requests {
 		display: none;
