@@ -12,7 +12,7 @@ module.exports = class {
 
 		let feed = new ActivityFeed();
 
-		feed.setCacheDuration("1h"); // cache is persisted now, so we’ll update this at maximum once per hour
+		feed.setCacheDuration("1d"); // cache is persisted now, so we’ll update this at maximum once per day
 
 		feed.addSource("youtubeUser", "YouTube", "UCMlSs0Ltg57qpYdFwUVLR2A");
 		feed.addSource("atom", "Blog","https://www.zachleat.com/web/feed/");

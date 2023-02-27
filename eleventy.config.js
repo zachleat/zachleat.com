@@ -27,6 +27,7 @@ module.exports = function(eleventyConfig) {
 
 	// More in .eleventyignore
 	if(!process.env.ELEVENTY_PRODUCTION) {
+		eleventyConfig.ignores.add("./web/follow/*");
 		eleventyConfig.ignores.add("./web/feed/*");
 		eleventyConfig.ignores.add("./web/opengraph-images.liquid");
 	}
