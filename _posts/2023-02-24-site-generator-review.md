@@ -109,9 +109,10 @@ new HorizontalBar("npminstall-chart", "npminstall-datatable", {
 
 Notes:
 
-* Next bundles all of its dependencies (save for `react` and `react-dom`) and as such bypasses functionality provided by npm.
+* Each tool was installed five times and the average of those five runs is shown above.
 * `npm cache clean --force` was used to clean the cache before each install.
 * [npm auditing](https://docs.npmjs.com/cli/v9/commands/npm-audit?v=true) was enabled for these tests.
+* Next bundles all of its dependencies (save for `react` and `react-dom`) and as such bypasses for-free minor dependency releases and most of the auditing functionality provided by npm.
 
 ## Client JavaScript Baseline
 
