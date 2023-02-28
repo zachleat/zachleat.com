@@ -284,11 +284,10 @@ These tools require you to opt-out of Telemetry:
 * Astro ⚠️
 * Next.js ⚠️
 * Gatsby ⚠️
-* Nuxt ⚠️
 
-Has Telemetry but it is opt-in:
+Has Telemetry but it prompts you to ask:
 
-* _None_
+* Nuxt _(see additional nuance below)_
 
 No known Telemetry or data collection:
 
@@ -297,7 +296,11 @@ No known Telemetry or data collection:
 * Remix ✅
 * SvelteKit ✅
 
-Notably and delightfully, Nuxt v2 prompts you to ask if you want to participate in Telemetry when you first run the development server. Though it is still technically opt-out, this seems like a great middle ground. Unfortunately I didn’t see this prompt when creating a Nuxt v3 project.
+_February 28, 2023 this note was updated with more accurate information on Nuxt with help from Nuxt maintainers._
+
+Notably and delightfully, Nuxt prompts to ask if you want to participate in Telemetry when you first run the development server. This is a global preference and you will only be prompted once; it applies to all Nuxt projects on your machine (stored in a `~/.nuxtrc` file).
+
+This prompt is still technically opt-out when using the development server. The default answer to the prompt is Yes, to participate in telemetry. But the prompt _does not execute_ on deployment servers and CI pipelines, so it’s actually _opt-in_ in those contexts. To me this seems like a well-executed middle ground.
 
 ## Feedback
 
