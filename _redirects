@@ -32,6 +32,7 @@
 
 # Proxy redirects
 /twitter/* https://twitter-zachleat.netlify.app/:splat 200!
+/toots/* https://mastodon-zachleat.netlify.app/:splat 200!
 /bernie/* https://zachleat.nfshost.com/bernie/:splat 200!
 /web-fonts/scroll-anchoring/* https://zachleat.nfshost.com/web-fonts/scroll-anchoring/:splat 200!
 /registrastination/* https://zachleat.nfshost.com/registrastination/:splat 200!
