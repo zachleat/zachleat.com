@@ -129,6 +129,16 @@ Rob Dodson filed [RFC: Plan for custom element attributes/properties in React ~~
 
 Currently, React 18.2.0 passes 0/14 of the advanced tests on the [Custom Elements Everywhere tests](https://custom-elements-everywhere.com/). An experimental build of React is available but it is not (and at this point may never ship?) in a stable release.
 
+## {{ "25 Oct 2017" | timePosted }} ago
+
+The [Netlify UI Engineering team tweeted](https://twitter.com/NetflixUIE/status/923374215041912833):
+
+> Removing client-side React.js (but keeping it on the server) resulted in a 50% performance improvement on our landing page
+
+which included a photo of a talk slide that read:
+
+> By getting rid of React and moving to plain JavaScript, we saw a 50% reduction in our Time to Interactive (TTI) metric.
+
 ## {{ "21 Apr 2020" | timePosted }} ago
 
 [The Cost of Javascript Frameworks—Tim Kadlec](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/) _(April 21, 2020)_
