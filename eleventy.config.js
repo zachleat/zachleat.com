@@ -86,7 +86,8 @@ module.exports = function(eleventyConfig) {
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("og/*.{jpeg,png}")
-		.addPassthroughCopy("og/sources/");
+		.addPassthroughCopy("og/sources/")
+		.addPassthroughCopy("presentations/");
 
 	// Production only passthrough copy
 	if(process.env.ELEVENTY_PRODUCTION) {
@@ -95,7 +96,6 @@ module.exports = function(eleventyConfig) {
 			.addPassthroughCopy("_redirects")
 			.addPassthroughCopy("demos/")
 			.addPassthroughCopy("resume/resume.pdf")
-			.addPassthroughCopy("presentations/")
 			.addPassthroughCopy("archive/")
 			.addPassthroughCopy("web-fonts/foitfout/")
 			.addPassthroughCopy("alarmd/");
