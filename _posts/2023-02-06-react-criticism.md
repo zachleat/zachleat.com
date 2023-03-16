@@ -139,6 +139,13 @@ which included a photo of a talk slide that read:
 
 > By getting rid of React and moving to plain JavaScript, we saw a 50% reduction in our Time to Interactive (TTI) metric.
 
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update March 16, 2023**: This section was added._
+
+</div>
+
+
 ## {{ "21 Apr 2020" | timePosted }} ago
 
 [The Cost of Javascript Frameworks—Tim Kadlec](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/) _(April 21, 2020)_
