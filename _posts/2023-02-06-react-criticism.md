@@ -131,7 +131,7 @@ Currently, React 18.2.0 passes 0/14 of the advanced tests on the [Custom Element
 
 ## {{ "25 Oct 2017" | timePosted }} ago
 
-The [Netlify UI Engineering team tweeted](https://twitter.com/NetflixUIE/status/923374215041912833):
+The [Netflix UI Engineering team tweeted](https://twitter.com/NetflixUIE/status/923374215041912833):
 
 > Removing client-side React.js (but keeping it on the server) resulted in a 50% performance improvement on our landing page
 
