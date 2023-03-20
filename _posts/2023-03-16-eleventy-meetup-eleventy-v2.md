@@ -55,12 +55,9 @@ slides:
     38: "Eleventy v3 🐥 (canary)"
     39: Thank you!
 ---
-{% comment %}<div class="fullwidth"><youtube-lite-player @slug="40yPK3EKE60" @label="{{ title }}"></youtube-lite-player></div>
+<div class="fullwidth"><youtube-lite-player @slug="aM24L2g0peA" @label="{{ title }}"></youtube-lite-player></div>
 
-[Watch on YouTube](https://www.youtube.com/watch?v=40yPK3EKE60).
-{% endcomment %}
-
-Look for the video on the [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup)!
+[Watch on YouTube](https://www.youtube.com/watch?v=aM24L2g0peA) or check out the full [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup)!
 
 ## Slides
 
