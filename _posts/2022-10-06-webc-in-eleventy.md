@@ -128,7 +128,7 @@ Here are a few links to get started with WebC:
 2. [HTML bucketing!](https://github.com/11ty/webc/issues/36) We already have CSS/JS asset aggregation. I’d like to see this with arbitrary HTML too. Think of a single WebC component file for a web font that includes both the `@font-face` CSS _and_ the preload HTML together! Or a WebC icon that only includes a single `<g>` that aggregates up to a reusable de-duplicated SVG icon set.
 3. [Writing asset bundles to files](https://github.com/11ty/eleventy-plugin-webc/issues/4) (now we’re really getting into bundler-functionality)
 4. Aliases for `node_modules` so you can import easily from npm! Folks can publish a webc file for re-use in any other project (that also includes the HTML, JS, and CSS) to use directly.
-5. [More sugar for loops/conditional rendering](https://github.com/11ty/webc/issues/28). Those this is possible using template syntax or JavaScript render functions now, it could be less verbose!
+5. [More sugar for loops/conditional rendering](https://github.com/11ty/webc/issues/28). Though this is possible using template syntax or JavaScript render functions now, it could be less verbose!
 6. Tighter integration with [`<is-land>`](https://www.11ty.dev/docs/plugins/partial-hydration/): I’d like to see us get to the point where WebC components will be able to declare assets to load conditionally based on `<is-land>` loading conditions. Super granular control and power!
 
 The best way to keep up to date here is to subscribe to our [YouTube channel](https://www.11ty.dev/youtube) or follow us on Twitter [@eleven_ty](https://www.11ty.dev/twitter) and/or [@webc_omponents](https://twitter.com/webc_omponents)!
