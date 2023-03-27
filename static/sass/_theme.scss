@@ -119,6 +119,9 @@ abbr {
 	font-size: .75em;
 	line-height: 1.6;
 }
+.notes_note {
+	padding: .25em .5em;
+}
 .notes_link:target,
 .notes_note :target {
 	background-color: #ffc;
@@ -134,10 +137,17 @@ abbr {
 	background-color: #ffc;
 }
 .notes_link {
-	position: relative;
-	top: -.7em;
+	font-weight: 400;
+	vertical-align: bottom;
 	font-size: .6875em;
-	line-height: 1;
+	background-color: #ddd;
+	margin: 0 0 0 .25em;
+	padding: .1em .4em;
+	border-radius: .25em;
+}
+.notes_link:link,
+.notes_link:visited {
+	text-decoration: none;
 }
 
 /* Links from slide decks */

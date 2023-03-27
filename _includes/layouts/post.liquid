@@ -39,7 +39,7 @@ tmpl: page
 			</div>
 		</article>
 {% endif %}
-{% if external_url %}
+{% if external_url and external_url_location != "end" %}
 		<article class="content-sibling">
 			{%- if tags contains 'upcoming' %}
 			<p><em>This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
@@ -60,6 +60,16 @@ tmpl: page
 	<div class="content-grid e-content favicon-optin">
 	{{ content }}
 	</div>
+{% if external_url_location == "end" %}
+	<div class="content-grid-sibling">
+		<article class="content-sibling">
+			<hr>
+			<p>
+				<em>Originally posted at: <a href="{{ external_url }}" class="opengraph-card favicon-optout opengraph-card-block">{% screenshotImageHtmlFullUrl external_url %}<span>{{ external_url }}</span></a></em>
+			</p>
+		</article>
+	</div>
+{% endif %}
 </article>
 
 {% if tags contains "web-components" %}
