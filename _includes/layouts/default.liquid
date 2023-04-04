@@ -47,6 +47,12 @@ classes:
 					<a href="{{ post.url | url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
 					{% endif %}
 					{% endfor %}
+
+					<h2 class="top5"><a href="/web/speaking/">Upcoming Talks</a></h2>
+
+					{% for post in collections.upcomingTalks %}
+					<a href="{{ post.data.external_url | default: post.url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
+					{% endfor %}
 				</div>
 {% endif %}
 			</div>

@@ -36,6 +36,7 @@
 		{%- endif %}
 		{%- indieAvatar iconUrl "z-avatar z-avatar-eq z-avatar-external" -%}
 	{%- endif %}
+	{%- if post.data.tags contains 'future-event' %}<em>Upcoming talk:</em> {% endif %}
 	{%- if view == 'project' -%}
 		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}
 	{%- else -%}

@@ -193,13 +193,19 @@ module.exports = function(eleventyConfig) {
 			endDate = Date.parse(endDate);
 		}
 		let numDays = ((endDate - startDate) / (1000 * 60 * 60 * 24));
+		let prefix = "";
+		if(numDays < 0) {
+			prefix = "in ";
+			numDays = Math.abs(numDays);
+		}
+
 		let daysPosted = Math.round( parseFloat( numDays ) );
 		let yearsPosted = parseFloat( (numDays / 365).toFixed(1) );
 
 		if( daysPosted < 365 ) {
-			return daysPosted + " day" + (daysPosted !== 1 ? "s" : "");
+			return prefix + daysPosted + " day" + (daysPosted !== 1 ? "s" : "");
 		} else {
-			return yearsPosted + " year" + (yearsPosted !== 1 ? "s" : "");
+			return prefix + yearsPosted + " year" + (yearsPosted !== 1 ? "s" : "");
 		}
 	});
 
@@ -384,10 +390,18 @@ module.exports = function(eleventyConfig) {
 		return getPosts(collection).filter(({data}) => data.showOnHomePage === true);
 	});
 
+	eleventyConfig.addCollection("upcomingTalks", function(collection) {
+		return getPosts(collection).reverse().filter(item => {
+			let tags = item.data?.tags || [];
+			return tags.includes("future-event") && tags.includes("speaking");
+		});
+	});
+
 	eleventyConfig.addCollection("feedPosts", function(collection) {
 		return getPosts(collection).filter(function(item) {
 			return !item.data.tags ||
 				!item.data.deprecated &&
+				item.data.tags.indexOf("future-event") === -1 &&
 				item.data.tags.indexOf("draft") === -1;
 		});
 	});

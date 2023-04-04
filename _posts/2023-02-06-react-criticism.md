@@ -37,7 +37,7 @@ _It **is** interesting that they have anointed Next.js as the official chosen fu
 
 </div>
 
-## {{ "20 Apr 2015" | timePosted }}
+## {{ "20 Apr 2015" | timePosted }} ago
 
 [The DOM is NOT Slow, Your Abstraction Is—Andrea Giammarchi](https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1) _(April 20, 2015)_
 
@@ -49,7 +49,7 @@ _**Update February 7, 2023**: this entry was added._
 
 </div>
 
-## {{ "3 Jul 2015" | timePosted }}
+## {{ "3 Jul 2015" | timePosted }} ago
 
 [React + Performance = ?—Paul Lewis](https://aerotwist.com/blog/react-plus-performance-equals-what/) _(July 3, 2015)_
 
