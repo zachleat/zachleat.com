@@ -21,7 +21,7 @@ More Ideas:
 * Git last updated
 * Put a TL;DR right there in the OG image (with alt text of course)
 {% endcomment %}
-{%- capture absoluteUrl -%}{{ post.url | url | absoluteUrl }}{%- endcapture -%}
+{%- capture absoluteUrl -%}{{ post.url | absoluteUrl }}{%- endcapture -%}
 {%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
 <div class="slide slide-chromeless slide-preview slide-preview-vertical slide-preview-60-40" tabindex="0" autofocus>
   <div class="frame">

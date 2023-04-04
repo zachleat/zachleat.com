@@ -7,7 +7,7 @@ tags:
 
 This week we’ve launched the [new web site for NEJS CONF 2018](https://2018.nejsconf.com/) and I am so excited for our theme this year: ✨ outer space ✨.
 
-<a href="https://2018.nejsconf.com/" class="no-underline"><img src="{{ "/web/img/posts/nejsconf/nejsconf-2018@620.png" | url }}" alt="2018.nejsconf.com" class="primary" srcset="{{ "/web/img/posts/nejsconf/nejsconf-2018@620.png" | url }} 620w, {{ "/web/img/posts/nejsconf/nejsconf-2018@1240.png" | url }} 1240w" sizes="(min-width: 1253px) 930px, (min-width: 980px) 70vw, 100vw"></a>
+<a href="https://2018.nejsconf.com/" class="no-underline"><img src="{{ "/web/img/posts/nejsconf/nejsconf-2018@620.png" }}" alt="2018.nejsconf.com" class="primary" srcset="{{ "/web/img/posts/nejsconf/nejsconf-2018@620.png" }} 620w, {{ "/web/img/posts/nejsconf/nejsconf-2018@1240.png" }} 1240w" sizes="(min-width: 1253px) 930px, (min-width: 980px) 70vw, 100vw"></a>
 
 ### NEJS CONF 2018
 
@@ -74,17 +74,17 @@ One of the intentional choices I made for NEJS CONF going into the second year w
 
 ### 2017
 
-<a href="https://2017.nejsconf.com/" class="no-underline"><img src="{{ "/web/img/posts/nejsconf/nejsconf-2017@620.png" | url }}" alt="2017.nejsconf.com" class="primary" srcset="{{ "/web/img/posts/nejsconf/nejsconf-2017@620.png" | url }} 620w, {{ "/web/img/posts/nejsconf/nejsconf-2017@1240.png" | url }} 1240w" sizes="(min-width: 1253px) 930px, (min-width: 980px) 70vw, 100vw"></a>
+<a href="https://2017.nejsconf.com/" class="no-underline"><img src="{{ "/web/img/posts/nejsconf/nejsconf-2017@620.png" }}" alt="2017.nejsconf.com" class="primary" srcset="{{ "/web/img/posts/nejsconf/nejsconf-2017@620.png" }} 620w, {{ "/web/img/posts/nejsconf/nejsconf-2017@1240.png" }} 1240w" sizes="(min-width: 1253px) 930px, (min-width: 980px) 70vw, 100vw"></a>
 
 ### 2016
 
-<a href="https://2016.nejsconf.com/" class="no-underline"><img src="{{ "/web/img/posts/nejsconf/nejsconf-2016@620.png" | url }}" alt="2016.nejsconf.com" class="primary" srcset="{{ "/web/img/posts/nejsconf/nejsconf-2016@620.png" | url }} 620w, {{ "/web/img/posts/nejsconf/nejsconf-2016@1240.png" | url }} 1240w" sizes="(min-width: 1253px) 930px, (min-width: 980px) 70vw, 100vw"></a>
+<a href="https://2016.nejsconf.com/" class="no-underline"><img src="{{ "/web/img/posts/nejsconf/nejsconf-2016@620.png" }}" alt="2016.nejsconf.com" class="primary" srcset="{{ "/web/img/posts/nejsconf/nejsconf-2016@620.png" }} 620w, {{ "/web/img/posts/nejsconf/nejsconf-2016@1240.png" }} 1240w" sizes="(min-width: 1253px) 930px, (min-width: 980px) 70vw, 100vw"></a>
 
 _Excuse that dotted underline there, I swear the default browser styles for `abbr` changed after this launched 😇._
 
 ### 2015
 
-<a href="https://2015.nejsconf.com/" class="no-underline"><img src="{{ "/web/img/posts/nejsconf/nejsconf-2015@620.png" | url }}" alt="2015.nejsconf.com" class="primary" srcset="{{ "/web/img/posts/nejsconf/nejsconf-2015@620.png" | url }} 620w, {{ "/web/img/posts/nejsconf/nejsconf-2015@1240.png" | url }} 1240w" sizes="(min-width: 1253px) 930px, (min-width: 980px) 70vw, 100vw"></a>
+<a href="https://2015.nejsconf.com/" class="no-underline"><img src="{{ "/web/img/posts/nejsconf/nejsconf-2015@620.png" }}" alt="2015.nejsconf.com" class="primary" srcset="{{ "/web/img/posts/nejsconf/nejsconf-2015@620.png" }} 620w, {{ "/web/img/posts/nejsconf/nejsconf-2015@1240.png" }} 1240w" sizes="(min-width: 1253px) 930px, (min-width: 980px) 70vw, 100vw"></a>
 
 ---
 

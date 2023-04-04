@@ -14,8 +14,8 @@ permalink: /web/feed/atom.xml
 		<email>zachleat@zachleat.com</email>
 	</author>
 	{%- for post in collections.feedPosts | head(30) %}
-	{% set idUrl %}{{ post.url | url | absoluteUrl('http://www.zachleat.com/') }}{% endset %}
-	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl('https://www.zachleat.com/') }}{% endset %}
+	{% set idUrl %}{{ post.url | absoluteUrl('http://www.zachleat.com/') }}{% endset %}
+	{% set absolutePostUrl %}{{ post.url | absoluteUrl('https://www.zachleat.com/') }}{% endset %}
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link href="{{ absolutePostUrl }}"/>

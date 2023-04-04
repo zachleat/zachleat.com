@@ -44,7 +44,7 @@ classes:
 
 					{% for post in collections.popularPostsRanked %}
 					{% if forloop.index <= 3 %}
-					<a href="{{ post.url | url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
+					<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
 					{% endif %}
 					{% endfor %}
 

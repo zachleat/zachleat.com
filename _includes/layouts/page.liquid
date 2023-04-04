@@ -16,6 +16,6 @@ disableComments: true
 </article>
 {% endif %}
 {% unless disableComments %}
-	{%- capture absoluteUrl -%}{{ page.url | url | absoluteUrl }}{%- endcapture -%}
+	{%- capture absoluteUrl -%}{{ page.url | absoluteUrl }}{%- endcapture -%}
 	{% include "webmentionlist", absoluteUrl: absoluteUrl %}
 {% endunless %}

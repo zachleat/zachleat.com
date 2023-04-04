@@ -9,5 +9,5 @@
 {%- elsif webmention.url -%}
   {% indieAvatarBare webmention.url, imageClass %}
 {%- else -%}
-  <img class="{{ imageClass }}" src="{{ '/web/img/webmention-avatar-default.svg' | url }}" alt="Default avatar image" width="48" height="48" loading="lazy" decoding="async">
+  <img class="{{ imageClass }}" src="{{ '/web/img/webmention-avatar-default.svg' }}" alt="Default avatar image" width="48" height="48" loading="lazy" decoding="async">
 {%- endif -%}

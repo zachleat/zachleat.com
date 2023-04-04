@@ -20,7 +20,7 @@
 	{%- if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}{% comment %}
 	{% endcomment %} data-filter-category="{{ post | getFilterCategories }}">
 
-	<a href="{{ post.url | url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
+	<a href="{{ post.url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
 	{%- if previewImages %}
 		{% comment %}{% if post.data.headvideo %}<video muted controls preload="metadata" src="{{ post.data.headvideo }}" class="project_video"></video>{% endif %} {% endcomment %}
 		{% if post.data.headimage -%}
@@ -45,7 +45,7 @@
 	</a>
 
 	<span class="tags">
-		{%- capture absoluteUrl -%}{{ post.url | url | absoluteUrl }}{%- endcapture -%}
+		{%- capture absoluteUrl -%}{{ post.url | absoluteUrl }}{%- endcapture -%}
 
 		{%- if post.data.tags contains 'font-loading' %}<span class="tag font-loading">Web Fonts</span>{% endif -%}
 		{%- if post.data.tags contains 'project' %}<span class="tag">Project</span>{% endif -%}
