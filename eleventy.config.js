@@ -553,10 +553,6 @@ module.exports = function(eleventyConfig) {
 		return str.replace(/\n/g, "");
 	});
 
-	eleventyConfig.on("beforeWatch", () => {
-		console.log( "[zachleat.com] Building…" );
-	});
-
 	return {
 		"templateFormats": [
 			"liquid",

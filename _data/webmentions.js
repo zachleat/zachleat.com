@@ -28,7 +28,7 @@ async function fetchWebmentions(since) {
     return false;
   }
 
-	// https://github.com/aaronpk/webmention.io#api
+  // https://github.com/aaronpk/webmention.io#api
   // TODO move to use since_id instead of since date
   let url = `${API_ORIGIN}?domain=${domain}&token=${TOKEN}&per-page=9999&page=0`;
   if (since) {
@@ -82,7 +82,7 @@ async function readFromCache() {
   };
 }
 
-module.exports = async function() {
+module.exports = async function({ eleventy }) {
   const cache = await readFromCache();
   const { lastFetched, mentions } = cache;
 
@@ -125,7 +125,8 @@ module.exports = async function() {
 
   // IF YOU’RE WANTING TO FILTER A HOST OUT OF BEING LISTED IN WEBMENTIONS
   // DO THIS IN .eleventy.js -> webmentionsForUrl filter
-
-  console.log(`[zachleat.com] Loaded ${cache.count} webmentions from cache.`);
+  if(eleventy.env.runMode !== "serve") {
+    console.log(`[zachleat.com] Loaded ${cache.count} webmentions from cache.`);
+  }
   return cache;
 }
