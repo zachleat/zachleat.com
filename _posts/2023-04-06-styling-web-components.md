@@ -245,7 +245,7 @@ Client-rendering is limiting here. While I wouldn’t be so prescriptive to say 
 
 ## 3. WebC
 
-_Haven’t heard of WebC? Learn more on the [WebC documentation.](https://www.11ty.dev/docs/languages/webc/)_
+_Haven’t heard of WebC? It’s a single file component format for Web Components—and it works great with Eleventy. Learn more on the [WebC docs.](https://www.11ty.dev/docs/languages/webc/)_
 
 Consider a **WebC component file** `sample-component.webc` with the following content:
 
