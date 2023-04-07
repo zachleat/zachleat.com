@@ -14,7 +14,7 @@ Here are the things we want to think about:
 
 1. **Encapsulation**. We don’t want styles from distinct components to interfere with each other (that’s what this blog post is here for, after all).
 1. **Performance**. Predictably, a method popularized for CSS encapsulation (CSS-in-JS) was less than ideal because it was slow-by-default. Let’s keep performance at the forefront of our minds.
-1. **Browser compatibility**. If we go too far out on the cutting edge that visitors get left out.
+1. **Browser compatibility**. Let’s not go so far out on the cutting edge that we leave some of our visitors behind.
 1. **Code re-use without duplication**, during both authoring and the output. We want to streamline our output to avoid sending any more code down the wire than we need to.
 1. **Client-side framework independent**. The methods described in this post do not use any client-side libraries or frameworks.
 
