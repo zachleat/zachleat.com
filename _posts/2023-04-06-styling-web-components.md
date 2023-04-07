@@ -285,7 +285,7 @@ After
 
 As you can see from the rendered code, the `webc:scoped` feature generates a component specific class name and adds that to the component for encapsulated styles. The class is shared across instances and the component CSS is only added once per page.
 
-This allows you to author your component CSS without additional ceremony and WebC will compile it to CSS that has an extremely wide browser compatibility profile (working in Firefox without JS and even in [legacy versions of the evergreens](https://css-tricks.com/evergreen-does-not-mean-immediately-available/).
+This allows you to author your component CSS without additional ceremony and WebC will compile it to CSS that has an extremely wide browser compatibility profile (working in Firefox without JS and even in [legacy versions of the evergreens](https://css-tricks.com/evergreen-does-not-mean-immediately-available/)).
 
 ### Client JavaScript
 
