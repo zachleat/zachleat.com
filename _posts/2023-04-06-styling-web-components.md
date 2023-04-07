@@ -339,4 +339,4 @@ Learn more:
 * https://github.com/w3c/csswg-drafts/issues/5809
 * https://drafts.csswg.org/css-cascade-6/#scoped-styles
 
-Stay tuned, it’s exciting!
+Keep an eye on this method—it’s exciting!
