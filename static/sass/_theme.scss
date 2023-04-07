@@ -679,6 +679,11 @@ pre {
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
 }
+.scrollable-code pre {
+	white-space: pre;
+	word-wrap: normal;
+	overflow-x: auto;
+}
 pre {
 	padding: .75rem;
 }
@@ -1522,7 +1527,7 @@ details.livedemo:after {
 	display: none;
 }
 details.livedemo > summary {
-	color: #8ac7db;
+	color: #2292b6;
 	font-size: 0.8695652173913em; /* 20px /23 */
 	padding: .15em .5em;
 	line-height: 1.5;

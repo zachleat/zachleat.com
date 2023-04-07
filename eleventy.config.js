@@ -53,6 +53,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginImageAvatar);
 
 	eleventyConfig.addPlugin(pluginWebc, {
+		components: [
+			"_components/**/*.webc",
+			"npm:@11ty/eleventy-plugin-syntaxhighlight/*.webc",
+		],
 		useTransform: true,
 		transformData: {
 			pkg
