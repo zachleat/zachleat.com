@@ -4,10 +4,9 @@ tags: ["eleventy", "speaking"]
 metadata:
   speaking:
     type: livestream
+external_url: https://www.youtube.com/watch?v=rD07m-uAGaE
 ---
 I was on GitHub’s Open Source Friday to chat a bit about WebC and Eleventy.
-
-I believe the full video will be posted [to GitHub’s Open Source Friday playlist on YouTube](https://www.youtube.com/playlist?list=PL0lo9MOBetEFmtstItnKlhJJVmMghxc0P) at some point in the future, and when that happens I’ll circle back and post it here.
 
 <twitch-embed id="1713160726"></twitch-embed>
 
