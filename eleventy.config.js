@@ -368,6 +368,11 @@ module.exports = function(eleventyConfig) {
 		return absoluteUrl.replace("https://www.zachleat.com", "");
 	});
 
+	eleventyConfig.addFilter("processAsWebC", async function(content) {
+		content = `<template webc:nokeep webc:nobundle>${content}</template>`;
+
+		return eleventyConfig.javascriptFunctions.renderTemplate.call(this, content, "webc");
+	});
 
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url) {
