@@ -4,11 +4,10 @@ tags: ["eleventy", "speaking"]
 metadata:
   speaking:
     type: livestream
-external_url: https://www.youtube.com/watch?v=rD07m-uAGaE
 ---
 I was on GitHub’s Open Source Friday to chat a bit about WebC and Eleventy.
 
-<twitch-embed id="1713160726"></twitch-embed>
+<div class="fullwidth"><youtube-lite-player @slug="rD07m-uAGaE" @label="{{ title }}"></youtube-lite-player></div>
 
 ## Related
 
