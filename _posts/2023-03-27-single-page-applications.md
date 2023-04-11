@@ -33,7 +33,9 @@ Learn more about alternative approaches that can provide some of the same SPA be
 * Use the [View Transitions API](https://developer.chrome.com/docs/web-platform/view-transitions/) to do smooth cross-page animations on navigation.
 * [Example code using the View Transitions API in an Eleventy project](https://github.com/pepelsbey/pepelsbey.dev/commit/accf0da) from Vadim Makeev.
 * [Predictive Prefetching can speed up navigations](https://addyosmani.com/blog/prefetching/).
-* [quicklink](https://getquick.link/) is a small JavaScript library to implement prefetching.
+* Prefetching JavaScript libraries:
+	* [quicklink](https://getquick.link/)
+	* [instant.page](https://instant.page/)
 
 ## Trade-offs
 
