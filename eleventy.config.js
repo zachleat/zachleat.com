@@ -48,7 +48,9 @@ module.exports = function(eleventyConfig) {
 	/* PLUGINS */
 	eleventyConfig.addPlugin(pluginSass);
 	eleventyConfig.addPlugin(pluginRss);
-	eleventyConfig.addPlugin(pluginSyntaxHighlight);
+	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+		lineSeparator: "\n",
+	});
 	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
 
