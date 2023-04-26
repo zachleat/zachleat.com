@@ -55,12 +55,12 @@ _Times shown are in seconds. Lower is better._
 import "https://d3js.org/d3.v7.min.js";
 import { HorizontalBar } from "/static/artificial-chart.js";
 new HorizontalBar("npminstall-chart", "npminstall-datatable", {
-  showLegend: false,
-  showInlineBarValues: "outside",
-  valueType: ["float"],
-  margin: {
-    left: 170
-  }
+	showLegend: false,
+	showInlineBarValues: "outside",
+	valueType: ["float"],
+	margin: {
+		left: 170
+	}
 });
 </script>
 </template>
@@ -70,44 +70,44 @@ new HorizontalBar("npminstall-chart", "npminstall-datatable", {
 <summary>Expand to show table of results</summary>
 <table id="npminstall-datatable">
 <thead>
-  <tr>
-    <th>Framework</th>
-    <th><code>npm install</code> Time</th>
-  </tr>
+	<tr>
+		<th>Framework</th>
+		<th><code>npm install</code> Time</th>
+	</tr>
 </thead>
 <tbody>
-  <tr>
-    <td>Astro <code>2.0.15</code></td>
-    <td>12.52</td>
-  </tr>
-  <tr>
-    <td>Eleventy <code>2.0.0</code></td>
-    <td>5.81</td>
-  </tr>
 	<tr>
-    <td>Enhance <code>1.4.6</code></td>
-    <td>29.71</td>
-  </tr>
-  <tr>
-    <td>Gatsby <code>5.7.0</code></td>
-    <td>43.36</td>
-  </tr>
-  <tr>
-    <td>Next.js <code>13.2.1</code></td>
-    <td>3.72</td>
-  </tr>
-  <tr>
-    <td>Nuxt <code>3.2.2</code></td>
-    <td>14.77</td>
-  </tr>
-  <tr>
-    <td>Remix <code>1.13.0</code></td>
-    <td>40.14</td>
-  </tr>
-  <tr>
-    <td>SvelteKit <code>1.8.3</code></td>
-    <td>6.78</td>
-  </tr>
+		<td>Astro <code>2.0.15</code></td>
+		<td>12.52</td>
+	</tr>
+	<tr>
+		<td>Eleventy <code>2.0.0</code></td>
+		<td>5.81</td>
+	</tr>
+	<tr>
+		<td>Enhance <code>1.4.6</code></td>
+		<td>29.71</td>
+	</tr>
+	<tr>
+		<td>Gatsby <code>5.7.0</code></td>
+		<td>43.36</td>
+	</tr>
+	<tr>
+		<td>Next.js <code>13.2.1</code></td>
+		<td>3.72</td>
+	</tr>
+	<tr>
+		<td>Nuxt <code>3.2.2</code></td>
+		<td>14.77</td>
+	</tr>
+	<tr>
+		<td>Remix <code>1.13.0</code></td>
+		<td>40.14</td>
+	</tr>
+	<tr>
+		<td>SvelteKit <code>1.8.3</code></td>
+		<td>6.78</td>
+	</tr>
 </tbody>
 </table>
 </details>
@@ -131,12 +131,12 @@ _Weights shown are in kilobytes of uncompressed resource size (not transfer size
 import "https://d3js.org/d3.v7.min.js";
 import { HorizontalBar } from "/static/artificial-chart.js";
 new HorizontalBar("client-js-chart", "client-js-datatable", {
-  showLegend: false,
-  showInlineBarValues: "outside",
-  valueType: ["float"],
-  margin: {
-    left: 170
-  }
+	showLegend: false,
+	showInlineBarValues: "outside",
+	valueType: ["float"],
+	margin: {
+		left: 170
+	}
 });
 </script>
 </template>
@@ -146,44 +146,44 @@ new HorizontalBar("client-js-chart", "client-js-datatable", {
 <summary>Expand to show table of results</summary>
 <table id="client-js-datatable">
 <thead>
-  <tr>
-    <th>Framework</th>
-    <th>Client JavaScript Baseline (kB)</th>
-  </tr>
+	<tr>
+		<th>Framework</th>
+		<th>Client JavaScript Baseline (kB)</th>
+	</tr>
 </thead>
 <tbody>
-  <tr>
-    <td>Astro <code>2.0.15</code></td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Eleventy <code>2.0.0</code></td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Enhance <code>1.4.6</code></td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Gatsby <code>5.7.0</code></td>
-    <td>210</td>
-  </tr>
-  <tr>
-    <td>Next.js <code>13.2.1</code></td>
-    <td>248</td>
-  </tr>
-  <tr>
-    <td>Nuxt <code>3.2.2</code></td>
-    <td>191</td>
-  </tr>
-  <tr>
-    <td>Remix <code>1.13.0</code></td>
-    <td>228</td>
-  </tr>
-  <tr>
-    <td>SvelteKit <code>1.8.3</code></td>
-    <td>53</td>
-  </tr>
+	<tr>
+		<td>Astro <code>2.0.15</code></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>Eleventy <code>2.0.0</code></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>Enhance <code>1.4.6</code></td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>Gatsby <code>5.7.0</code></td>
+		<td>210</td>
+	</tr>
+	<tr>
+		<td>Next.js <code>13.2.1</code></td>
+		<td>248</td>
+	</tr>
+	<tr>
+		<td>Nuxt <code>3.2.2</code></td>
+		<td>191</td>
+	</tr>
+	<tr>
+		<td>Remix <code>1.13.0</code></td>
+		<td>228</td>
+	</tr>
+	<tr>
+		<td>SvelteKit <code>1.8.3</code></td>
+		<td>53</td>
+	</tr>
 </tbody>
 </table>
 </details>
@@ -200,12 +200,12 @@ _Weights shown are in megabytes._
 import "https://d3js.org/d3.v7.min.js";
 import { HorizontalBar } from "/static/artificial-chart.js";
 new HorizontalBar("nodemodules-chart", "nodemodules-datatable", {
-  showLegend: false,
-  showInlineBarValues: "outside",
-  valueType: ["float"],
-  margin: {
-    left: 170
-  }
+	showLegend: false,
+	showInlineBarValues: "outside",
+	valueType: ["float"],
+	margin: {
+		left: 170
+	}
 });
 </script>
 </template>
@@ -215,44 +215,44 @@ new HorizontalBar("nodemodules-chart", "nodemodules-datatable", {
 <summary>Expand to show table of results</summary>
 <table id="nodemodules-datatable">
 <thead>
-  <tr>
-    <th>Framework</th>
-    <th>node_modules Weight (MB)</th>
-  </tr>
+	<tr>
+		<th>Framework</th>
+		<th>node_modules Weight (MB)</th>
+	</tr>
 </thead>
 <tbody>
-  <tr>
-    <td>Astro <code>2.0.15</code></td>
-    <td>169</td>
-  </tr>
-  <tr>
-    <td>Eleventy <code>2.0.0</code></td>
-    <td>34</td>
-  </tr>
 	<tr>
-    <td>Enhance <code>1.4.6</code></td>
-    <td>210</td>
-  </tr>
-  <tr>
-    <td>Gatsby <code>5.7.0</code></td>
-    <td>583</td>
-  </tr>
-  <tr>
-    <td>Next.js <code>13.2.1</code></td>
-    <td>158</td>
-  </tr>
-  <tr>
-    <td>Nuxt <code>3.2.2</code></td>
-    <td>164</td>
-  </tr>
-  <tr>
-    <td>Remix <code>1.13.0</code></td>
-    <td>497</td>
-  </tr>
-  <tr>
-    <td>SvelteKit <code>1.8.3</code></td>
-    <td>111</td>
-  </tr>
+		<td>Astro <code>2.0.15</code></td>
+		<td>169</td>
+	</tr>
+	<tr>
+		<td>Eleventy <code>2.0.0</code></td>
+		<td>34</td>
+	</tr>
+	<tr>
+		<td>Enhance <code>1.4.6</code></td>
+		<td>210</td>
+	</tr>
+	<tr>
+		<td>Gatsby <code>5.7.0</code></td>
+		<td>583</td>
+	</tr>
+	<tr>
+		<td>Next.js <code>13.2.1</code></td>
+		<td>158</td>
+	</tr>
+	<tr>
+		<td>Nuxt <code>3.2.2</code></td>
+		<td>164</td>
+	</tr>
+	<tr>
+		<td>Remix <code>1.13.0</code></td>
+		<td>497</td>
+	</tr>
+	<tr>
+		<td>SvelteKit <code>1.8.3</code></td>
+		<td>111</td>
+	</tr>
 </tbody>
 </table>
 </details>
@@ -307,30 +307,30 @@ This prompt is still technically opt-out when using the development server. The 
 Let me know if you have feedback—I’d also welcome recommendations on aspects of these tools that you’d like to see reviewed for next time!
 
 <svg style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
-  <defs>
-    <linearGradient id="gradient-sunrise-h">
-      <stop offset="0%" stop-color="#F0047F"/>
-      <stop offset="100%" stop-color="#FC814A"/>
-    </linearGradient>
-    <linearGradient id="gradient-sunrise-v" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#F0047F"/>
-      <stop offset="100%" stop-color="#FC814A"/>
-    </linearGradient>
-    <linearGradient id="gradient-blue-h">
-      <stop offset="0%" stop-color="#0090c9"/>
-      <stop offset="100%" stop-color="#00c0ad"/>
-    </linearGradient>
-    <linearGradient id="gradient-blue-v" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#0090c9"/>
-      <stop offset="100%" stop-color="#00c0ad"/>
-    </linearGradient>
-    <linearGradient id="gradient-sun-h">
-      <stop offset="0%" stop-color="#FFC803"/>
-      <stop offset="100%" stop-color="#FC814A"/>
-    </linearGradient>
-    <linearGradient id="gradient-sun-v" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#FFC803"/>
-      <stop offset="100%" stop-color="#FC814A"/>
-    </linearGradient>
-  </defs>
+	<defs>
+		<linearGradient id="gradient-sunrise-h">
+			<stop offset="0%" stop-color="#F0047F"/>
+			<stop offset="100%" stop-color="#FC814A"/>
+		</linearGradient>
+		<linearGradient id="gradient-sunrise-v" x1="0" x2="0" y1="0" y2="1">
+			<stop offset="0%" stop-color="#F0047F"/>
+			<stop offset="100%" stop-color="#FC814A"/>
+		</linearGradient>
+		<linearGradient id="gradient-blue-h">
+			<stop offset="0%" stop-color="#0090c9"/>
+			<stop offset="100%" stop-color="#00c0ad"/>
+		</linearGradient>
+		<linearGradient id="gradient-blue-v" x1="0" x2="0" y1="0" y2="1">
+			<stop offset="0%" stop-color="#0090c9"/>
+			<stop offset="100%" stop-color="#00c0ad"/>
+		</linearGradient>
+		<linearGradient id="gradient-sun-h">
+			<stop offset="0%" stop-color="#FFC803"/>
+			<stop offset="100%" stop-color="#FC814A"/>
+		</linearGradient>
+		<linearGradient id="gradient-sun-v" x1="0" x2="0" y1="0" y2="1">
+			<stop offset="0%" stop-color="#FFC803"/>
+			<stop offset="100%" stop-color="#FC814A"/>
+		</linearGradient>
+	</defs>
 </svg>

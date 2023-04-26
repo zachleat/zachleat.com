@@ -83,5 +83,8 @@
 		"
 		{% if seo and seo.openGraphSkipPageBackground %}{% else %}{% if seo and seo.openGraphBackgroundImage %} style="--seo-bgimage: {{ seo.openGraphBackgroundImage | backgroundimage: 1200 }}"{% endif %}{% endif %}>
 		{{ content }}
+{%- for url in scripts -%}
+		<script src="{{ url }}" defer>
+{%- endfor %}
 	</body>
 </html>

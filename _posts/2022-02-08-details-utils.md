@@ -2,8 +2,8 @@
 title: "Add Responsive-Friendly Enhancements to `details` with `details-utils`"
 titleHtml: "Add Responsive-Friendly Enhancements to &lt;details&gt; with &lt;details-utils&gt;"
 tags:
-  - project
-  - web-components
+ - project
+ - web-components
 ---
 I use `<details>`. I use `<details>` a lot. It is one of my favorite HTML elements.
 
@@ -22,8 +22,8 @@ I’ve decided to finally package those `<details>` helpers up and formally rele
 
 ```html
 <details-utils>
-  <details>…</details>
-  <!-- you can have one or more <details> elements in here -->
+	<details>…</details>
+	<!-- you can have one or more <details> elements in here -->
 </details-utils>
 ```
 
@@ -46,7 +46,7 @@ In this example, the `<details>` is forced open when viewport is wider than `48e
 
 ```html
 <details-utils force-open="(min-width: 48em)" force-restore>
-  <details open>…</details>
+	<details open>…</details>
 </details-utils>
 ```
 
@@ -59,12 +59,12 @@ The media query is optional, and using it as a bare attribute allows control of 
 ```html
 <!-- closed without JS, open with JS -->
 <details-utils force-open>
-  <details>…</details>
+	<details>…</details>
 </details-utils>
 
 <!-- open without JS, closed with JS -->
 <details-utils force-close>
-  <details open>…</details>
+	<details open>…</details>
 </details-utils>
 ```
 
@@ -76,7 +76,7 @@ If you click anywhere on the document (outside of the `<details>` content), the 
 
 ```html
 <details-utils close-click-outside>
-  <details>…</details>
+	<details>…</details>
 </details-utils>
 ```
 
@@ -84,7 +84,7 @@ You can scope this with a media query as well:
 
 ```html
 <details-utils close-click-outside="(min-width: 48em)">
-  <details>…</details>
+	<details>…</details>
 </details-utils>
 ```
 
@@ -93,16 +93,16 @@ Add your own bonus close button inside of the content (to complement `<summary>`
 ```css
 /* Hide button without JS */
 details-utils:not(:defined) [data-du-close-click] {
-  display: none;
+	display: none;
 }
 ```
 
 ```html
 <details-utils close-click-outside>
-  <details id="my-details">
-    <summary>…</summary>
-    <button type="button" aria-controls="my-details" data-du-close-click>Close</button>
-  </details>
+	<details id="my-details">
+		<summary>…</summary>
+		<button type="button" aria-controls="my-details" data-du-close-click>Close</button>
+	</details>
 </details-utils>
 ```
 
@@ -114,7 +114,7 @@ Closes the `<details>` when the `esc` key is hit on the keyboard. Media query is
 
 ```html
 <details-utils close-esc="(max-width: 767px)">
-  <details>…</details>
+	<details>…</details>
 </details-utils>
 ```
 
@@ -124,7 +124,7 @@ Closes the `<details>` when the `esc` key is hit on the keyboard. Media query is
 
 ```html
 <details-utils animate>
-  <details>…</details>
+	<details>…</details>
 </details-utils>
 ```
 
@@ -138,7 +138,7 @@ Just a full disclosure, the configuration around this one is pretty limited (re:
 
 ```html
 <details-utils toggle-document-class="my-class-name">
-  <details>…</details>
+	<details>…</details>
 </details-utils>
 ```
 

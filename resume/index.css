@@ -11,11 +11,16 @@
 }
 .resume-header-block {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0 0 .5rem;
+	gap: .5em 1em;
+	list-style: none;
 }
 .resume-toc {
+	list-style: none;
 	display: flex;
+	gap: .5em 1em;
 	justify-content: center;
 	margin-top: 0;
 	margin-bottom: -2.333333333333em; /* -35px /15 */
@@ -175,9 +180,6 @@ ul.resume-desc {
 		margin: 0 auto;
 		grid-template-columns: auto;
 	}
-	section {
-		page-break-inside: avoid;
-	}
 	code {
 		white-space: nowrap;
 	}
@@ -221,27 +223,24 @@ ul.resume-desc {
 	hyphens: none;
 }
 
-/* Inline lists */
-.list-inline:before,
-.list-inline:after {
-	content: " ";
-	display: table;
-}
-.list-inline:after {
-	clear: both;
-}
-.list-inline > li {
-	float: left;
-	list-style: none;
-}
-.list-inline > li:not(:last-child):after {
-	content: "";
-	padding-left: .75em;
-}
-.list-inline > li:not(.list-inline-nosep):not(:last-child):after {
-	border-right: 1px solid #ddd;
-	margin-right: .75em;
-}
 .content-main .list-inline:not(.posts) {
 	padding-left: 0; /* Override */
+}
+
+/* Global styles */
+address {
+	display: inline;
+}
+
+
+/* Details print styles */
+details > summary {
+	font-size: 0.875em; /* 14px /16 */
+	font-style: italic;
+	margin-left: 1em;
+}
+@media print {
+	details-utils > details {
+		display: none;
+	}
 }
