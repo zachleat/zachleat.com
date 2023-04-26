@@ -55,6 +55,7 @@
 /busyness-sample/ /archive/busyness-sample/ 301!
 
 # Grab bag
+/web/writing/ /web/?category=writing 301!
 /web/notes/feed/ /web/notes/ 301!
 /web/notes/ /web/?category=note 301!
 /web/notes/* /web/:splat 301!
