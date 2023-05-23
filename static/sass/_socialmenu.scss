@@ -2,13 +2,12 @@
 
 /* Social links */
 .social {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: .75em;
-}
-.rail .social {
 	display: flex;
 	gap: .5em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.rail .social {
 	margin-top: .6em;
 	margin-bottom: .5em;
 
@@ -22,6 +21,10 @@
 	font-family: sans-serif;
 	opacity: .6;
 	margin-left: .2em;
+}
+.social_icon img {
+	width: 1.75rem; /* 28px /16 */
+	height: 1.75rem; /* 28px /16 */
 }
 .social > .social_icon:first-child {
 	margin-left: 0;
