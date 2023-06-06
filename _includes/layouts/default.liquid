@@ -48,11 +48,13 @@ classes:
 					{% endif %}
 					{% endfor %}
 
+					{%- if collections.upcomingTalks | size %}
 					<h2 class="top5"><a href="/web/speaking/">Upcoming Talks</a></h2>
 
-					{% for post in collections.upcomingTalks %}
+					{%- for post in collections.upcomingTalks %}
 					<a href="{{ post.data.external_url | default: post.url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
-					{% endfor %}
+					{%- endfor %}
+					{%- endif %}
 				</div>
 {% endif %}
 			</div>
