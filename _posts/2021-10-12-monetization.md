@@ -3,6 +3,7 @@ title: Who Pays for Web Frameworks?
 seo:
   openGraphBackgroundImage: /og/sources/deposit-boxes.jpg
 ---
+_Updated on June 20, 2023 with new information for Eleventy._
 _Updated on January 28, 2022 with new information for Svelte and Astro._
 _Updated on April 9, 2022 with new information for Eleventy._
 _Updated on June 15, 2022 with new information for SolidJS._
@@ -38,7 +39,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
     </tr>
     <tr>
       <td>Eleventy</td>
-      <td><a href="#subnote-3" id="link-subnote-3">[Update 3]</a></td>
+      <td><a href="#subnote-3" id="link-subnote-3">[Update 3]</a> <a href="#subnote-3" id="link-subnote-6">[Update 6]</a></td>
       <td>-</td>
       <td><a href="https://opencollective.com/11ty">Open Collective</a></td>
     </tr>
@@ -126,9 +127,10 @@ Nonetheless, I thought the best place to start would be to compile the data.
 <ol class="notes">
   <li class="notes_note">Note 1: <a id="subnote-1" href="#link-subnote-1" class="notes_linkback">Jump to the reference.</a> Unknown amount previously raised as Skypack CDN.</li>
   <li class="notes_note">Update 2: <a id="subnote-2" href="#link-subnote-2" class="notes_linkback">Jump to the reference.</a> <a href="https://vercel.com/blog/vercel-welcomes-rich-harris-creator-of-svelte">Rich Harris is full time sponsored by Vercel to work on Svelte</a>.</li>
-  <li class="notes_note">Update 3: <a id="subnote-3" href="#link-subnote-3" class="notes_linkback">Jump to the reference.</a> <a href="https://www.zachleat.com/web/eleventy-oss/">I am now full time sponsored by Netlify to work on Eleventy</a>.</li>
+  <li class="notes_note">Update 3: <a id="subnote-3" href="#link-subnote-3" class="notes_linkback">Jump to the reference.</a> <a href="/web/eleventy-oss/">I am now full time sponsored by Netlify to work on Eleventy</a>.</li>
   <li class="notes_note">Update 4: <a id="subnote-4" href="#link-subnote-4" class="notes_linkback">Jump to the reference.</a> <a href="https://dev.to/ryansolid/when-netlify-asks-you-to-full-time-oss-you-say-yes-5ccf">Ryan Carniato is now full time sponsored by Netlify to work on SolidJS</a>.</li>
   <li class="notes_note">Update 5: <a id="subnote-5" href="#link-subnote-5" class="notes_linkback">Jump to the reference.</a> <a href="https://remix.run/blog/remixing-shopify">Remix joins Shopify</a>.</li>
+	<li class="notes_note">Update 6: <a id="subnote-3" href="#link-subnote-3" class="notes_linkback">Jump to the reference.</a> <a href="/web/eleventy-side-project/">Eleventy returns to side project status</a>.</li>
 </ol>
 
 _This list was loosely compiled from the [Jamstack Community Survey 2021](https://jamstack.org/survey/2021/#choices-frameworks)._
