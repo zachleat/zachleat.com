@@ -55,9 +55,10 @@
 		"check-links": "npx check-html-links _site",
 		"build": "npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --port=8090 --incremental --ignore-initial",
-		"startfull": "npx @11ty/eleventy --serve --port=8090 --incremental",
+		"start-full": "npx @11ty/eleventy --serve --port=8090 --incremental",
+		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production",
 		"build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy",
-		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production"
+		"start-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npm run start-full"
 	},
 	"repository": {
 		"type": "git",
