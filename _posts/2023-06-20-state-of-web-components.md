@@ -1,5 +1,6 @@
 ---
 title: "State of Web Components Panel (This Dot Media)"
+tags: speaking
 ---
 I was honored to speak alongside Justin Fagnani (Lit), Kristofer Joseph (Begin, Enhance.dev), and Rob Eisenberg about the current state of the Web Components ecosystem.
 
