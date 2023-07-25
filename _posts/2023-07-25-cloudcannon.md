@@ -1,19 +1,11 @@
 ---
 title: "Eleventy and CloudCannon: New Best Friends"
-tags:
-  - speaking
-  - eleventy
-  - video
-metadata:
-  speaking:
-    type: podcast
-  youtubeId: nypsmn70ipI
-medialength: 2 min
+tags: eleventy
 ---
 
-<div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}" @start="57"></youtube-lite-player></div>
+<div class="fullwidth"><youtube-lite-player @slug="nypsmn70ipI" @label="{{ title }}" @start="57"></youtube-lite-player></div>
 
-* [View full video on YouTube](https://www.youtube.com/watch?v={{ metadata.youtubeId }}).
+* [View full video on YouTube](https://www.youtube.com/watch?v=nypsmn70ipI).
 
 * Read more on the CloudCannon Blog: [_CloudCannon, the Official CMS Partner of Eleventy_](https://cloudcannon.com/blog/cloudcannon-the-official-cms-partner-of-eleventy/)
 * See the [post on Mastodon](https://fosstodon.org/@eleventy/110775434718494755)
