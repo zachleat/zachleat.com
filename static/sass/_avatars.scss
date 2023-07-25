@@ -2,6 +2,7 @@
 .z-avatar {
 	width: 1.3em;
 	height: 1.3em;
+	max-height: 1.3em;
 	border-radius: 15%;
 	vertical-align: text-top;
 	margin: 0 .25em;
@@ -12,10 +13,12 @@
 .z-avatar-large {
 	width: 2em;
 	height: 2em;
+	max-height: 2em;
 }
 .z-avatar-eq {
 	width: 1em;
 	height: 1em;
+	max-height: 1em;
 }
 .posts .z-avatar-eq {
 	display: inline-block;
