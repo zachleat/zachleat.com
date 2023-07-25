@@ -1,7 +1,6 @@
 ---
 title: "The Next Phase of Eleventy: Return of the Side Project"
-tags:
-  - eleventy
+tags: eleventy
 ---
 As Eleventy continues forward on its mission to help super-fans of HTML quickly and easily build things for the web, as a responsible steward of the project I must disclose that we are no longer doing so with full time sponsorship. As such, Eleventy will be returning to its roots as a side-project and transitioning away from full time development.
 
