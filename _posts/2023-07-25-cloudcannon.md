@@ -1,6 +1,8 @@
 ---
 title: "Eleventy and CloudCannon: New Best Friends"
 tags: eleventy
+external_url: https://www.11ty.dev/blog/cloudcannon/
+external_url_location: end
 ---
 
 <div class="fullwidth"><youtube-lite-player @slug="nypsmn70ipI" @label="{{ title }}" @start="57"></youtube-lite-player></div>
