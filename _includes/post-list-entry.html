@@ -29,12 +29,14 @@
 			{% opengraphImageHtml post %}
 		{%- endif %}
 	{%- endif %}
-	{%- if post.data.external_icon_url or post.data.external_url -%}
-		{%- assign iconUrl = post.data.external_url %}
-		{%- if post.data.external_icon_url %}
-			{%- assign iconUrl = post.data.external_icon_url %}
+	{%- if post.data.external_icon_url != false %}
+		{%- if post.data.external_icon_url or post.data.external_url -%}
+			{%- assign iconUrl = post.data.external_url %}
+			{%- if post.data.external_icon_url %}
+				{%- assign iconUrl = post.data.external_icon_url %}
+			{%- endif %}
+			{%- indieAvatar iconUrl "z-avatar z-avatar-eq z-avatar-external" -%}
 		{%- endif %}
-		{%- indieAvatar iconUrl "z-avatar z-avatar-eq z-avatar-external" -%}
 	{%- endif %}
 	{%- if post.data.tags contains 'future-event' %}<em>Upcoming talk:</em> {% endif %}
 	{%- if view == 'project' -%}

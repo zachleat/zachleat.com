@@ -5,6 +5,7 @@ layout: post
 tags:
   - external
 external_url: 'https://the-pastry-box-project.net/zach-leatherman/2014-june-7'
+external_icon_url: false
 ---
 
 Related: **[*Impostor Syndrome* was originally posted on the Pastry Box](https://the-pastry-box-project.net/zach-leatherman/2014-june-7) and was a transcription of an [earlier BarCamp talk](/web/impostor/).**

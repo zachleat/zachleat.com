@@ -10,6 +10,7 @@ metadata:
   speaking:
     type: meetup
 external_url: https://11tymeetup.dev/events/ep-11-webc-with-zach/
+external_icon_url: false
 ---
 Components have been an often requested feature in Eleventy. While I do consider it an unanswered question whether or not components are the best starting point for _new_ developers, it’s hard to argue with the efficiency and delivery gains to be had for folks with a bit more experience.
 

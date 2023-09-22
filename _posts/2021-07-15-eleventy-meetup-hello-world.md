@@ -9,6 +9,7 @@ tags:
 metadata:
   schedule: true
 external_url: 'https://11tymeetup.dev/events/hello-world/'
+external_icon_url: false
 event_date: July 15
 tweet: 'https://twitter.com/EleventyMeetup/status/1414655496930332673'
 ---
