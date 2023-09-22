@@ -6,6 +6,7 @@ tags:
 metadata:
   speaking:
     type: livestream
+external_icon_url: https://www.thisdotmedia.com/state-of-web-components-june-2023/
 ---
 I was honored to speak alongside Justin Fagnani (Lit), Kristofer Joseph (Begin, Enhance.dev), and Rob Eisenberg about the current state of the Web Components ecosystem.
 
