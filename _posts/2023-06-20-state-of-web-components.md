@@ -1,6 +1,8 @@
 ---
 title: "State of Web Components Panel (This Dot Media)"
-tags: speaking
+tags:
+  - speaking
+  - web-components
 metadata:
   speaking:
     type: livestream

@@ -4,6 +4,7 @@ external_url: https://webcamp.stanford.edu/session/the-good-the-bad-and-the-web-
 tags:
   - conference
   - speaking
+  - web-components
 metadata:
   schedule: true
   speaking:
