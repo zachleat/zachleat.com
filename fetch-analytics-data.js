@@ -3,58 +3,45 @@ require('dotenv').config();
 const fs = require("fs");
 const glob = require("fast-glob");
 const matter = require("gray-matter");
+const { queryData: queryGoogleData } = require("./_11ty/fetch-analytics/google-analytics.js");
+const { queryData: queryElizabeaconData } = require("./_11ty/fetch-analytics/elizabeacon.js");
 
-const { google } = require("googleapis");
-const analytics = google.analytics('v3');
-
-const VIEW_ID = "ga:966455";
-const START_DATE = "2006-09-05";
-const MAX_RESULTS = 1000;
 const MINIMUM_PAGEVIEWS = 50;
 
-
-if(!process.env.GOOGLE_AUTH_CLIENT_EMAIL || !process.env.GOOGLE_AUTH_PRIVATE_KEY) {
-	throw new Error("Missing environment variables for Google auth.")
-}
-
-const scopes = ["https://www.googleapis.com/auth/analytics.readonly"];
-const jwt = new google.auth.JWT({
-  email: process.env.GOOGLE_AUTH_CLIENT_EMAIL,
-  key: process.env.GOOGLE_AUTH_PRIVATE_KEY.replace(/\\n/gm, "\n"),
-  scopes,
-});
-
-async function queryData() {
-	let results = await analytics.data.ga.get({
-		auth: jwt,
-		ids: VIEW_ID,
-		metrics: "ga:pageviews",
-		dimensions: "ga:pagePath",
-		"start-date": START_DATE,
-		"end-date": "today",
-		sort: "-ga:pageviews",
-		"max-results": MAX_RESULTS,
-	});
-	if(results.data && results.data.rows) {
-		return results.data.rows;
-	}
-	throw new Error( "No data.rows found in return data. Returned: " + results );
-}
-
 async function fetchAnalyticsData() {
-	let data = await queryData();
-	let ordered = [];
-	for(let [url, pageViews] of data) {
+	let googleData = await queryGoogleData();
+	let elizabeaconData = await queryElizabeaconData();
+
+	let unordered = [];
+	let visited = {};
+	for(let [url, pageViews] of googleData) {
 		if(url.startsWith("/opengraph/")) {
 			continue;
 		}
 
-		ordered.push({
+		visited[url] = true;
+		unordered.push({
 			url,
-			pageViews: parseInt(pageViews),
+			pageViews: parseInt(pageViews) + (elizabeaconData[url]?.count || 0),
 		})
 	}
-	return ordered;
+	// add urls not in google data
+	for(let url in elizabeaconData) {
+		if(url.startsWith("/opengraph/")) {
+			continue;
+		}
+
+		if(!visited[url]) {
+			unordered.push({
+				url,
+				pageViews: elizabeaconData[url].count
+			})
+		}
+	}
+
+	return unordered.sort((a, b) => {
+		return b.pageViews - a.pageViews;
+	});
 };
 
 function getInputMap(globs) {
@@ -113,9 +100,9 @@ function getPageViewsPerDayRanks(analyticsData) {
 
 (async () => {
 	let inputMap = getInputMap(["./_posts/*.md"]);
-	
+
 	let analyticsData = await fetchAnalyticsData();
-	
+
 	let j = 1;
 	for(let entry of analyticsData) {
 		if(inputMap[entry.url]) {
