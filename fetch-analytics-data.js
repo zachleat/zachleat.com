@@ -104,6 +104,7 @@ function getPageViewsPerDayRanks(analyticsData) {
 	let analyticsData = await fetchAnalyticsData();
 
 	let j = 1;
+	let totalPageViews = 0;
 	for(let entry of analyticsData) {
 		if(inputMap[entry.url]) {
 			entry.from = inputMap[entry.url];
@@ -113,6 +114,8 @@ function getPageViewsPerDayRanks(analyticsData) {
 
 			entry.rankTotal = j;
 			j++;
+
+			totalPageViews += entry.pageViews;
 		}
 	}
 
@@ -131,5 +134,5 @@ function getPageViewsPerDayRanks(analyticsData) {
 	}
 	let globalDataFilePath = "./_data/analytics.json";
 	fs.writeFileSync(globalDataFilePath, JSON.stringify(finalResults, null, 2), "utf8");
-	console.log( `Wrote ${globalDataFilePath}` );
+	console.log( `Wrote ${globalDataFilePath} with ${totalPageViews} total page views.` );
 })();
