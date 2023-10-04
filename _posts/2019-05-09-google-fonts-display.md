@@ -28,6 +28,8 @@ It’s also a bit of trailblazing, too. To my knowledge, this is the first web f
 
 ## Timeline
 
+<script type="module" src="/static/table-saw.js"></script>
+<div><table-saw text-align>
 <table>
     <thead>
         <tr>
@@ -63,7 +65,7 @@ It’s also a bit of trailblazing, too. To my knowledge, this is the first web f
             <td>Samsung Internet (v8.2)</td>
         </tr>
         <tr>
-            <td class="nowrap"><br>2019 <span class="hide-sm"><abbr title="May">May</abbr> 15</span></td>
+            <td class="nowrap">2019 <span class="hide-sm"><abbr title="May">May</abbr> 15</span></td>
             <td class="yes"><strong>font-display</strong> Supported</td>
             <td>Google Fonts</td>
         </tr>
@@ -84,6 +86,7 @@ It’s also a bit of trailblazing, too. To my knowledge, this is the first web f
         </tr>
     </tbody>
 </table>
+</table-saw></div>
 
 <sub>(Monotype tip via <a href="https://twitter.com/thomasdeinhamer/status/1127213122517962753">@thomasdeinhamer</a>)</sub>
 
@@ -95,7 +98,7 @@ Want a [full history of FOIT and FOUT](/web/fout-foit-history/)?
 
 ## Future wishlist
 
-[Stable font file URL in Google Fonts](https://github.com/google/fonts/issues/1067) so that we can embed the CSS in our sites directly. This would alleviate the two-hop penalty you’re paying to use these fonts (one render-blocking hop for the CSS and another to fetch the font files). Not only would this be fewer hops, but then you could use it with `preload` too, which would be incredible. 
+[Stable font file URL in Google Fonts](https://github.com/google/fonts/issues/1067) so that we can embed the CSS in our sites directly. This would alleviate the two-hop penalty you’re paying to use these fonts (one render-blocking hop for the CSS and another to fetch the font files). Not only would this be fewer hops, but then you could use it with `preload` too, which would be incredible.
 
 > Font URLs are cached for a year and CSS URLs are cached for only a day—[@googlefonts](https://twitter.com/googlefonts/status/862870935975714816)
 

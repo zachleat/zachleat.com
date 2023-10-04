@@ -118,57 +118,60 @@ Using the raster layer as the foreground image and the supplementary vector imag
 
 From 10.06 MB to 78 KB—a savings of 9.9 MB.  Not too bad.
 
+<script type="module" src="/static/table-saw.js"></script>
+<div><table-saw text-align>
 <table>
   <thead>
     <tr>
       <th>Method</th>
-      <th>Size</th>
-      <th>Savings</th>
+      <th class="numeric">Size</th>
+      <th class="numeric">Savings</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Original SVG</td>
-      <td>10.06 MB</td>
-      <td></td>
+      <td class="numeric">10.06 MB</td>
+      <td class="numeric"></td>
     </tr>
     <tr>
       <td>SVG optimized with SVGOMG</td>
-      <td>9.92 MB</td>
-      <td><em class="better">-0.14 MB</em></td>
+      <td class="numeric">9.92 MB</td>
+      <td class="numeric"><em class="better">-0.14 MB</em></td>
     </tr>
     <tr>
       <td>PNG</td>
-      <td>1.16 MB</td>
-      <td><em class="better">-8.76 MB</em></td>
+      <td class="numeric">1.16 MB</td>
+      <td class="numeric"><em class="better">-8.76 MB</em></td>
     </tr>
     <tr>
       <td>PNG optimized with ImageOptim</td>
-      <td>831 KB</td>
-      <td><em class="better">-329 KB</em></td>
+      <td class="numeric">831 KB</td>
+      <td class="numeric"><em class="better">-329 KB</em></td>
     </tr>
     <tr>
       <td>PNG optimized with Squoosh (Reduced palette)</td>
-      <td>376 KB</td>
-      <td><em class="better">-455 KB</em></td>
+      <td class="numeric">376 KB</td>
+      <td class="numeric"><em class="better">-455 KB</em></td>
     </tr>
     <tr>
       <td>WebP optimized with Squoosh (Reduced palette)</td>
-      <td>152 KB</td>
-      <td><em class="better">-224 KB</em></td>
+      <td class="numeric">152 KB</td>
+      <td class="numeric"><em class="better">-224 KB</em></td>
     </tr>
      <tr>
       <td>AVIF optimized with Squoosh (Full palette)</td>
-      <td>168 KB</td>
-      <td><em class="worse">+16 KB</em></td>
+      <td class="numeric">168 KB</td>
+      <td class="numeric"><em class="worse">+16 KB</em></td>
     </tr>
     <tr>
       <td>Two Layers: SVG (SVGOMG), AVIF/WebP/PNG (Squoosh)</td>
-      <td>78 KB</td>
-      <td><em class="better">-90KB</em></td>
+      <td class="numeric">78 KB</td>
+      <td class="numeric"><em class="better">-90KB</em></td>
     </tr>
   </tbody>
 </table>
+</table-saw></div>
 
 Savings are in comparison to the previous attempt.
 

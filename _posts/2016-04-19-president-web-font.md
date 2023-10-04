@@ -38,7 +38,7 @@ Before we begin, let’s just get it out of the way—yes, Hillary has her own C
 ## Bernie Sanders
 
 * **+5 points** for going full FOUT. This is a better alternative to using stock browser behavior for font loading. This gives the user immediately readable text on first render and very minimal invisible text during the loading process. Bernie is using TypeKit here, which loads a [stylesheet full of Web Font Data URIs](https://www.filamentgroup.com/lab/font-loading.html).
-* **+1 point** for average web font weight &lt; 30KB. (204KB total for 7 web fonts) 
+* **+1 point** for average web font weight &lt; 30KB. (204KB total for 7 web fonts)
 * **-4 points** for using 7 web fonts total. _Insert (performance) budget joke here_. (-1 point for each web font over 3)
 * **-1 point** for using a serif fallback for a sans-serif web font. Likely he’s trying to reach across the aisle and unite the two major font-family parties, but this makes for an awkward transition.
 
@@ -74,6 +74,8 @@ Ted Cruz’s web site is… well, it’s 17MB with 167 requests and took 36 seco
 
 *(Times generated using Chrome Canary’s Developer Tools Network Throttling in Regular 3G mode)*
 
+<script type="module" src="/static/table-saw.js"></script>
+<div><table-saw text-align>
 <table id="results">
 	<thead>
 		<tr>
@@ -115,6 +117,7 @@ Ted Cruz’s web site is… well, it’s 17MB with 167 requests and took 36 seco
 		</tr>
 	</tbody>
 </table>
+</table-saw></div>
 
 ## Conclusion
 

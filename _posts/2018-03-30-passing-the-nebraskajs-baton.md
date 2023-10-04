@@ -25,6 +25,8 @@ Some of the absolute highlights for me have been:
 
 I am also super thankful to our rock-solid venue sponsor [Blue Cross Blue Shield](https://twitter.com/BCBSNebraska) and our unwavering food sponsor [Agape Red](https://twitter.com/agape_red). The meetup would not be possible without them.
 
+<script type="module" src="/static/table-saw.js"></script>
+<div><table-saw>
 <table>
 	<caption>NebraskaJS Membership</caption>
 	<thead>
@@ -77,5 +79,6 @@ I am also super thankful to our rock-solid venue sponsor [Blue Cross Blue Shield
 		</tr>
 	</tbody>
 </table>
+</table-saw></div>
 
 Keep on JavaScripting, y’all! [Our next event is April 3rd!](https://www.meetup.com/nebraskajs/events/249230237/)

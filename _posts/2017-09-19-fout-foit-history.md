@@ -17,6 +17,8 @@ For a recent talk at <a href="http://css-minsk-js.by/">CSS-Minsk-JS</a>, I did s
 	<img src="/presentations/rocket-science/history-poster.png" alt="Modern day support: IE/Edge FOUT, everyone else FOITs with a 3 second timeout">
 </video>
 
+<script type="module" src="/static/table-saw.js"></script>
+<div><table-saw text-align>
 <table>
 	<thead>
 		<tr>
@@ -148,6 +150,7 @@ For a recent talk at <a href="http://css-minsk-js.by/">CSS-Minsk-JS</a>, I did s
 		</tr>
 	</tbody>
 </table>
+</table-saw></div>
 
 Browsers implementing a FOUT/FOIT/FOIT-3s behavior first (trailblazers) are denoted as (1st) above. Browsers second to implement an existing behavior (two makes a crowd) are denoted as (2nd) above.
 

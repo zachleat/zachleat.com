@@ -21,19 +21,14 @@ For simplicity, the wild west of pre-1.0 releases are counted when calculating t
 
 Here’s a smattering of semverflation calculations:
 
+<script type="module" src="/static/table-saw.js"></script>
+<div><table-saw text-align>
 <table>
   <thead>
     <tr>
-      <th></th>
-      <th colspan="3" style="background-color: #f4f4f4">Releases</th>
-      <th></th>
-      <th></th>
-    </tr>
-    <tr>
       <th>Package</th>
-      <th>First</th>
-      <th>Newest</th>
-      <th class="numeric">Years</th>
+      <th class="numeric" style="background-color: #f4f4f4">First – Newest Release</th>
+      <th class="numeric" style="background-color: #f4f4f4">Years</th>
       <th class="numeric">Version Number</th>
       <th class="numeric">Semverflation</th>
     </tr>
@@ -41,46 +36,42 @@ Here’s a smattering of semverflation calculations:
   <tbody>
     <tr>
       <td>Chrome</td>
-      <td>2008/9/2</td>
-      <td>2022/3/29</td>
+      <td class="numeric">2008/09/02 – 2022/03/29</td>
       <td class="numeric">13.57</td>
       <td class="numeric">100</td>
       <td class="numeric">73.6</td>
     </tr>
      <tr>
       <td>Safari</td>
-      <td>2003/1/7</td>
-      <td>2022/3/13</td>
+      <td class="numeric">2003/01/07 – 2022/03/13</td>
       <td class="numeric">19.19</td>
       <td class="numeric">15.4</td>
       <td class="numeric">8.0</td>
     </tr>
      <tr>
       <td>Firefox</td>
-      <td>2002/9/23</td>
-      <td>2022/3/23</td>
+      <td class="numeric">2002/09/23 – 2022/03/23</td>
       <td class="numeric">19.50</td>
       <td class="numeric">98</td>
       <td class="numeric">50.2</td>
     </tr>
     <tr>
       <td>React</td>
-      <td>2013/5/29</td>
-      <td>2022/3/29</td>
+      <td class="numeric">2013/05/29 – 2022/03/29</td>
       <td class="numeric">8.83</td>
       <td class="numeric">18</td>
       <td class="numeric">20.4</td>
     </tr>
     <tr>
       <td>Eleventy</td>
-      <td>2018/1/9</td>
-      <td>2022/1/8</td>
+      <td class="numeric">2018/01/09 – 2022/01/08</td>
       <td class="numeric">4.00</td>
       <td class="numeric">1</td>
       <td class="numeric">2.5</td>
     </tr>
   </tbody>
 </table>
+</table-saw></div>
 
 ## What does it mean?
 

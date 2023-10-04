@@ -15,6 +15,8 @@ It has me thinking about sustainability models for this style of web frameworkâ€
 
 Nonetheless, I thought the best place to start would be to compile the data.
 
+<script type="module" src="/static/table-saw.js"></script>
+<div><table-saw>
 <table>
   <thead>
     <tr>
@@ -123,6 +125,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
     </tr>
   </tbody>
 </table>
+</table-saw></div>
 
 <ol class="notes">
   <li class="notes_note">Note 1: <a id="subnote-1" href="#link-subnote-1" class="notes_linkback">Jump to the reference.</a> Unknown amount previously raised as Skypack CDN.</li>
