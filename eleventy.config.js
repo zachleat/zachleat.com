@@ -83,7 +83,7 @@ module.exports = function(eleventyConfig) {
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `static/`,
 			"node_modules/infinity-burger/infinity-burger.{css,js}": `static/`,
 			"node_modules/artificial-chart/artificial-chart.{css,js}": `static/`,
-			"node_modules/@zachleat/table-saw/table-saw.js": `static/`,
+			"node_modules/@zachleat/table-saw/table-saw.js": `static/table-saw.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
