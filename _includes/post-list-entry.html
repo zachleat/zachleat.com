@@ -56,7 +56,7 @@
 		{%- if post.data.tags contains 'conference' -%}
 			{%- if post.data.tags contains 'speaking' %}<span class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>Speaking</span>{% endif -%}
 			{%- if post.data.event_date %}<span class="tag tag-event">on {{ post.data.event_date }}</span>{% endif -%}
-		{%- elsif post.data.tags contains 'presentations' or post.data.tags contains 'speaking' or post.data.tags contains 'video' or post.data.tags contains 'audio' -%}
+		{%- elsif post.data.tags contains 'presentations' or post.data.tags contains 'speaking' -%}
 			<span class="tag">Speaking</span>
 			{%- if post.data.event_date %}<span class="tag tag-event">on {{ post.data.event_date }}</span>{% endif -%}
 		{%- endif -%}
