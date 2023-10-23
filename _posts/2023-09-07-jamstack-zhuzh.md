@@ -8,6 +8,7 @@ metadata:
     type: panel
   youtubeId: xVmKdCi-Gpo
 medialength: 109 min
+opengraphSkipFace: true
 ---
 <div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 

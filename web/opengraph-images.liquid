@@ -44,9 +44,11 @@ More Ideas:
             {% comment %}<span class="main-hed-sup main-box main-box-nowrap"></span> {% endcomment %}
           </h1>
         </div>
+        {%- if !post.data.opengraphSkipFace %}
         <p class="main-left">
           <img src="/img/avatar-2017-powerstance.png" width="336" height="288" alt="Zach standing in a powerstance, to appear powerful" loading="lazy" decoding="async" class="main-avatar-img-big">
         </p>
+        {%- endif %}
         <p class="main-center"></p>
         <p class="main-right">
           {%- if speedlify[absoluteUrl] %}
