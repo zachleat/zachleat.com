@@ -84,6 +84,7 @@ module.exports = function(eleventyConfig) {
 			"node_modules/infinity-burger/infinity-burger.{css,js}": `static/`,
 			"node_modules/artificial-chart/artificial-chart.{css,js}": `static/`,
 			"node_modules/@zachleat/table-saw/table-saw.js": `static/table-saw.js`,
+			"node_modules/@zachleat/browser-window/browser-window.js": `static/browser-window.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
@@ -378,7 +379,8 @@ module.exports = function(eleventyConfig) {
 
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url) {
-		return `<a href="${url}" class="opengraph-card favicon-optout">${screenshotImageHtmlFullUrl(url)}<span><em class="break" title="${url}">${url}</em></span></a>`;
+		return `<script type="module" src="/static/browser-window.js"></script>
+<div><browser-window icon url="${url}" shadow flush><a href="${url}">${screenshotImageHtmlFullUrl(url)}</a></browser-window></div>`;
 	});
 
 	/* COLLECTIONS */

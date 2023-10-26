@@ -24,4 +24,11 @@
 .filter-category--hide {
 	display: none;
 }
+/* originalPostEmbed shortcode */
+browser-window {
+	margin: 1em 0;
+}
+browser-window > a {
+	display: flex;
+}
 
