@@ -27,7 +27,7 @@ Notably (as this component is best for demos) it does use client rendering via S
 	</browser-window>
 	<p>This one has a URL bar (with favicon) and an iframe:</p>
 	<browser-window shadow flush url="https://www.11ty.dev/" icon>
-		<iframe src="https://www.11ty.dev/" scrolling="no" style="width: 100%; height: 250px; border: 0; overflow: hidden"></iframe>
+		<iframe sandbox src="https://www.11ty.dev/" scrolling="no" style="pointer-events: none; width: 100%; height: 250px; border: 0; overflow: hidden"></iframe>
 	</browser-window>
 	<p>Or maybe another demo of a screenshot of the <a href="https://zachleat.github.io/browser-window/demo.html">demo page</a>:</p>
 	<browser-window flush shadow url="https://zachleat.github.io/browser-window/demo.html">
