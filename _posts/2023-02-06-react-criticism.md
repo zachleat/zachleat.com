@@ -3,7 +3,14 @@ title: "A Historical Reference of React Criticism"
 ---
 There have been a number of criticisms levied at the React project over the years, some of them handled and some of them still wavering in the wind. In this post, I’ll summarize the ones that are most prominent in my memory as a way of maintaining a record (primarily for my own use but maybe you’ll find it useful too). If you have others, [please send them my way](https://fediverse.zachleat.com/@zachleat)!
 
-## {{ "12 Dec 2014" | timePosted }} ago
+## December 2014
+
+_{{ "12 Dec 2014" | timePosted }} ago:_
+
+<script type="module" src="/static/browser-window.js"></script>
+<div><browser-window icon flush shadow url="https://www.filamentgroup.com/lab/mv-initial-load-times/">
+	<a href="https://www.filamentgroup.com/lab/mv-initial-load-times/">{% screenshotImageHtmlFullUrl "https://www.filamentgroup.com/lab/mv-initial-load-times/" %}</a>
+</browser-window></div>
 
 [Researching the Performance costs of JavaScript MVC Frameworks—John Bender](https://www.filamentgroup.com/lab/mv-initial-load-times/) _(December 12, 2014)_
 
@@ -37,7 +44,13 @@ _It **is** interesting that they have anointed Next.js as the official chosen fu
 
 </div>
 
-## {{ "20 Apr 2015" | timePosted }} ago
+## April 2015
+
+_{{ "20 Apr 2015" | timePosted }} ago:_
+
+<div><browser-window icon flush shadow url="https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1">
+	<a href="https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1">{% screenshotImageHtmlFullUrl "https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1" %}</a>
+</browser-window></div>
 
 [The DOM is NOT Slow, Your Abstraction Is—Andrea Giammarchi](https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1) _(April 20, 2015)_
 
@@ -49,7 +62,13 @@ _**Update February 7, 2023**: this entry was added._
 
 </div>
 
-## {{ "3 Jul 2015" | timePosted }} ago
+## July 2015
+
+_{{ "3 Jul 2015" | timePosted }} ago:_
+
+<div><browser-window icon flush shadow url="https://aerotwist.com/blog/react-plus-performance-equals-what/">
+	<a href="https://aerotwist.com/blog/react-plus-performance-equals-what/">{% screenshotImageHtmlFullUrl "https://aerotwist.com/blog/react-plus-performance-equals-what/" %}</a>
+</browser-window></div>
 
 [React + Performance = ?—Paul Lewis](https://aerotwist.com/blog/react-plus-performance-equals-what/) _(July 3, 2015)_
 
@@ -65,7 +84,9 @@ _**Update February 7, 2023**: this entry was added._
 
 </div>
 
-## {{ "16 Jun 2016" | timePosted }} ago
+## June 2016
+
+_{{ "16 Jun 2016" | timePosted }} ago:_
 
 [Thomas A. Powell notes that in June 2016](https://fosstodon.org/@thomasapowell/109819540720439366), React’s home page was changed to remove copy touting the performance benefit of Virtual DOM with a pivot to a focus on efficiency instead.
 
@@ -79,7 +100,9 @@ _**Update February 6, 2023**: this entry was added._
 
 </div>
 
-## {{ "16 Jul 2016" | timePosted }} ago
+## July 2016
+
+_{{ "16 Jul 2016" | timePosted }} ago:_
 
 [Your license to use React.js can be revoked if you compete with Facebook—Jorgé](https://react-etc.net/entry/your-license-to-use-react-js-can-be-revoked-if-you-compete-with-facebook) _(July 16, 2016)_
 
@@ -91,9 +114,16 @@ _**Update February 7, 2023**: this entry was added._
 
 </div>
 
-## {{ "10 Dec 2016" | timePosted }} ago
+## December 2016
+
+_{{ "10 Dec 2016" | timePosted }} ago:_
 
 Alright, so you’re _not_ a beginner or you’re not building an app. You know better than to fall into the Create React App pit of client-side rendering performance problems and use a React framework that uses **server side** rendering, right? Well, _not so fast_.
+
+<script type="module" src="/static/browser-window.js"></script>
+<div><browser-window icon flush shadow url="https://aerotwist.com/blog/when-everything-is-important-nothing-is/">
+	<a href="https://aerotwist.com/blog/when-everything-is-important-nothing-is/">{% screenshotImageHtmlFullUrl "https://aerotwist.com/blog/when-everything-is-important-nothing-is/" %}</a>
+</browser-window></div>
 
 [🌟 When everything's important, nothing is! 🌟—Paul Lewis](https://aerotwist.com/blog/when-everything-is-important-nothing-is/) _(December 10, 2016)_
 
@@ -104,7 +134,9 @@ This post was a very early criticism of how Server Side Rendered frameworks usin
 The Progressive Booting section (to me) reads as the precursor to [Islands architecture](https://jasonformat.com/islands-architecture/) _(August 11, 2020)_, with a special call in both this and the Islands architecture post to make more use of `requestIdleCallback` in frameworks, which as far as I could tell is [not included with React 18](https://github.com/facebook/react/issues/21662#issuecomment-859671432) (with or without Suspense).
 
 
-## {{ "18 Aug 2017" | timePosted }} ago
+## August 2017
+
+_{{ "18 Aug 2017" | timePosted }} ago:_
 
 React’s open source license (with a patent clause) was [classified by the Apache Software Foundation as a Category-X (read: problematic) license](https://issues.apache.org/jira/browse/LEGAL-303?focusedCommentId=16088736&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-16088736), meaning that it could not be used for Apache.org projects _(July 15, 2017)_.
 
@@ -123,13 +155,21 @@ _**Update February 7, 2023**: some addition timeline context was added._
 
 </div>
 
-## {{ "24 Oct 2017" | timePosted }} ago
+## October 2017
+
+_{{ "24 Oct 2017" | timePosted }} ago:_
+
+<div><browser-window icon flush shadow url="https://github.com/facebook/react/issues/11347">
+	<a href="https://github.com/facebook/react/issues/11347">{% screenshotImageHtmlFullUrl "https://github.com/facebook/react/issues/11347" %}</a>
+</browser-window></div>
 
 Rob Dodson filed [RFC: Plan for custom element attributes/properties in React ~~17~~, ~~18~~, 19 #11347](https://github.com/facebook/react/issues/11347), noting compatibility issues between Web Components and React.
 
 Currently, React 18.2.0 passes 0/14 of the advanced tests on the [Custom Elements Everywhere tests](https://custom-elements-everywhere.com/). An experimental build of React is available but it is not (and at this point may never ship?) in a stable release.
 
-## {{ "25 Oct 2017" | timePosted }} ago
+---
+
+_{{ "25 Oct 2017" | timePosted }} ago:_
 
 The [Netflix UI Engineering team tweeted](https://twitter.com/NetflixUIE/status/923374215041912833):
 
@@ -146,7 +186,13 @@ _**Update March 16, 2023**: This section was added._
 </div>
 
 
-## {{ "21 Apr 2020" | timePosted }} ago
+## April 2020
+
+_{{ "21 Apr 2020" | timePosted }} ago:_
+
+<div><browser-window icon flush shadow url="https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/">
+	<a href="https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/">{% screenshotImageHtmlFullUrl "https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/" %}</a>
+</browser-window></div>
 
 [The Cost of Javascript Frameworks—Tim Kadlec](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/) _(April 21, 2020)_
 
@@ -154,7 +200,9 @@ A study of 4.3 million desktop and 5.4 million mobile URLs showed that React sit
 
 > …while Angular sites shipped more JavaScript than React sites, they (Angular) actually spend less time on the CPU—much less time.
 
-## {{ "13 Sep 2021" | timePosted }} ago
+## September 2021
+
+_{{ "13 Sep 2021" | timePosted }} ago:_
 
 > “øJS is coming to Next 🔜”—[Guillermo Rauch](https://twitter.com/rauchg/status/1437494013137805312)
 
@@ -187,7 +235,13 @@ _**Update Feburary 7, 2023**: Added a bit of history on Single Page Applications
 </div>
 
 
-## {{ "14 Oct 2021" | timePosted }} ago
+## October 2021
+
+_{{ "14 Oct 2021" | timePosted }} ago:_
+
+<div><browser-window icon flush shadow url="https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f">
+	<a href="https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f">{% screenshotImageHtmlFullUrl "https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f" %}</a>
+</browser-window></div>
 
 [Ryan Carniato: JavaScript Framework TodoMVC Size Comparison](https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f) _(October 14, 2021)_
 
@@ -204,17 +258,40 @@ _(sizes shown are Brotli compressed)_
 
 I do want to also call out a similar but far more comprehensive (and maintained) analysis of [framework bundle sizes was done at `webcomponents.dev`](https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/#bundle-size) (first published in [February 2020](https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component-mar2020/)).
 
-## {{ "4 Feb 2023" | timePosted }} ago
+## February 2023
+
+<div><browser-window icon flush shadow url="https://infrequently.org/2023/02/the-market-for-lemons/">
+	<a href="https://infrequently.org/2023/02/the-market-for-lemons/">{% screenshotImageHtmlFullUrl "https://infrequently.org/2023/02/the-market-for-lemons/" %}</a>
+</browser-window></div>
 
 [Alex Russell: _The Market for Lemons_](https://infrequently.org/2023/02/the-market-for-lemons/) _(February 4, 2023)_
 
 This post includes a breathtaking array of receipts, especially in the [Sandy Foundations section](https://infrequently.org/2023/02/the-market-for-lemons/#sandy-foundations). I won’t attempt to summarize them here, but it’s definitely worth a read.
 
-## {{ "6 Feb 2023" | timePosted }} ago
+---
 
 An analysis of Core Web Vitals across 9.3 million web sites as of February 6, 2023 shows that Core Web Vitals for both [React and Next.js shows that both perform **worse**](https://lookerstudio.google.com/s/lD9m_MQgyGU) **than the aggregation of all other sites** in the archive for _both_ mobile and desktop.
 
 Currently only _26% of sites using Next.js have good Core Web Vitals_. This is lower than React at-large (32.81%) and the entirety of all sites in the data set (39.37%).
+
+## August 2023
+
+<div><browser-window icon flush shadow url="https://joshcollinsworth.com/blog/antiquated-react">
+	<a href="https://joshcollinsworth.com/blog/antiquated-react">{% screenshotImageHtmlFullUrl "https://joshcollinsworth.com/blog/antiquated-react" %}</a>
+</browser-window></div>
+
+_[Things you forgot (or never knew) because of React](https://joshcollinsworth.com/blog/antiquated-react)—Josh Collingsworth (August 4, 2023)_
+
+## October 2023
+
+
+<div><browser-window flush shadow url="https://www.epicweb.dev/why-i-wont-use-nextjs">
+	<a href="https://www.epicweb.dev/why-i-wont-use-nextjs">{% screenshotImageHtmlFullUrl "https://www.epicweb.dev/why-i-wont-use-nextjs" %}</a>
+</browser-window></div>
+
+_[Why I Won’t Use Next.js](https://www.epicweb.dev/why-i-wont-use-nextjs)—Kent C. Dodds_
+
+Kent lists a host of problems with Vercel’s Next.js in [_Why I Won’t Use Next.js_](https://www.epicweb.dev/why-i-wont-use-nextjs), and many of those criticisms aren’t limited to Next.js but levied more broadly at the React ecosystem.
 
 ## Addendum:
 
