@@ -5,7 +5,7 @@ tags:
   - project
   - web-components
 ---
-A lightweight structural-only zero-dependency web component wrapper to emulate a Safari-esque browser window for demos and presentations.
+A lightweight themed zero-dependency web component wrapper to emulate a Safari-esque browser window for demos and presentations.
 
 * [Demo](https://zachleat.github.io/browser-window/demo.html)
 * [Repository](https://github.com/zachleat/browser-window)
