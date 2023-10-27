@@ -280,7 +280,7 @@ Currently only _26% of sites using Next.js have good Core Web Vitals_. This is l
 	<a href="https://joshcollinsworth.com/blog/antiquated-react">{% screenshotImageHtmlFullUrl "https://joshcollinsworth.com/blog/antiquated-react" %}</a>
 </browser-window></div>
 
-_[Things you forgot (or never knew) because of React](https://joshcollinsworth.com/blog/antiquated-react)—Josh Collingsworth (August 4, 2023)_
+_[Things you forgot (or never knew) because of React](https://joshcollinsworth.com/blog/antiquated-react)—Josh Collinsworth (August 4, 2023)_
 
 ## October 2023
 
