@@ -1,10 +1,11 @@
 <script webc:setup>
 function getPosterImage(slug) {
-	return `https://i1.ytimg.com/vi/${slug}/hqdefault.jpg`;
+	return `https://img.youtube.com/vi/${slug}/maxresdefault.jpg`;
+	// return `https://i1.ytimg.com/vi/${slug}/hqdefault.jpg`;
 	// return `https://i.ytimg.com/vi/${slug}/maxresdefault.jpg`;
 }
 </script>
-<is-land on:visible import="/static/lite-yt-embed.js" class="fluid-width-video-wrapper">
+<is-land on:visible class="fluid-width-video-wrapper">
 	<lite-youtube :videoid="slug" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image:url('${poster || getPosterImage(slug)}'); max-width: 100%`">
 		<a :href="`https://youtube.com/watch?v=${slug}`" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden" @html="`Play Video${label ? `: ${label}` : ''}`"></span></a>
 	</lite-youtube>
@@ -16,5 +17,6 @@ function getPosterImage(slug) {
 		}
 		</style>
 		<link rel="stylesheet" href="/static/lite-yt-embed.css">
+		<script src="/static/lite-yt-embed.js" type="module"></script>
 	</template>
 </is-land>
