@@ -5,7 +5,7 @@ external_url: https://www.11ty.dev/blog/cloudcannon/
 external_url_location: end
 ---
 
-<div class="fullwidth"><youtube-lite-player @slug="nypsmn70ipI" @label="{{ title }}" @start="57"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="nypsmn70ipI" @label="{{ title }}" @start="57"></youtube-lite-player></div>
 
 * [View full video on YouTube](https://www.youtube.com/watch?v=nypsmn70ipI).
 

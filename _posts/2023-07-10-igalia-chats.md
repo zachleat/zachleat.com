@@ -26,4 +26,4 @@ You can see the [CloudCannon announcement](/web/cloudcannon/) posted two weeks a
 
 or embedded on YouTube:
 
-<div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
