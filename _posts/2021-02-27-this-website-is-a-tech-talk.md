@@ -36,3 +36,7 @@ _March 8, 2021: Update: make sure you check out [Queue Code](/web/queue-code/), 
 > I think I’ve put more work into this @smashingconf talk than any other talk I’ve given in my life 😅😅😅—[October 9, 2020](https://twitter.com/zachleat/status/1314650004791885824)
 
 > I am really excited and nervous to give this talk but I also want to punch past me for being obsessed with this weird idea—[October 12, 2020](https://twitter.com/zachleat/status/1315658230761172993)
+
+## Related posts
+
+* [This Web Site is a Tech Talk, a review from Chris Coyier](https://css-tricks.com/this-web-site-is-a-tech-talk/)
