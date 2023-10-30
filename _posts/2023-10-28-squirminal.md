@@ -53,4 +53,5 @@ This was an important reminder to me that progressive enhancement is a continuum
 
 ## In the wild
 
+* [{% indieAvatar "https://your-year-on.netlify.com" %}Your Year on Netlify](https://your-year-on.netlify.com)
 * [{% indieAvatar "https://echo.rknight.me/" %}Robb Knight’s Echo RSS Cross Poster](https://echo.rknight.me/)
