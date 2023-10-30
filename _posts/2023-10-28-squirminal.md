@@ -30,6 +30,8 @@ Here’s a demo screencast I recorded of my personal Your Year on Netlify flow.
 	<youtube-lite-player @slug="3PK0Yq9n5SI" @label="Walkthrough of the Your Year On Netlify Microsite"></youtube-lite-player>
 </div>
 
+Watch [_Walkthrough of the Your Year On Netlify Microsite_ on YouTube](https://www.youtube.com/watch?v=3PK0Yq9n5SI).
+
 
 ## Better than Before
 
