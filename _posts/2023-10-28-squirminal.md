@@ -50,3 +50,7 @@ Squirminal is a better approach that doesn’t require expensive DOM modificatio
 There is an important lesson here—in this case the best progressive enhancement compromise involved less server rendering! Ultimately this use case and interaction _required_ clientside interactivity, so it was okay to lean into that a bit more—while still building on a good progressive enhancement baseline.
 
 This was an important reminder to me that progressive enhancement is a continuum of possible solutions—and it’s important to adjust where your solution lives on that continuum as needed and for your individual requirements (and hopefully your tools don’t force you into a corner before you can make those decisions).
+
+## In the wild
+
+* [{% indieAvatar "https://echo.rknight.me/" %}Robb Knight’s Echo RSS Cross Poster](https://echo.rknight.me/)
