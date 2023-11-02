@@ -48,11 +48,11 @@ _It **is** interesting that they have anointed Next.js as the official chosen fu
 
 _{{ "20 Apr 2015" | timePosted }} ago:_
 
-<div><browser-window icon flush shadow url="https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1">
-	<a href="https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1">{% screenshotImageHtmlFullUrl "https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1" %}</a>
+<div><browser-window icon flush shadow url="https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html">
+	<a href="https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html">{% screenshotImageHtmlFullUrl "https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html" %}</a>
 </browser-window></div>
 
-[The DOM is NOT Slow, Your Abstraction Is—Andrea Giammarchi](https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html?m=1) _(April 20, 2015)_
+[The DOM is NOT Slow, Your Abstraction Is—Andrea Giammarchi](https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html) _(April 20, 2015)_
 
 > Well, it turned out that React here at least worked (not on Android 2.3, only on webOS), but it delivers the worst performance compared with underscore, paperclip, or my DOM version.
 
