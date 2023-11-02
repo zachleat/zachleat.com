@@ -1762,7 +1762,7 @@ a[href].favicon:before,
 }
 .favicon-optin a[href^="https://fediverse.zachleat.com"]:not(.favicon-optout):after,
 .favicon-optin a[href^="https://fosstodon.org"]:not(.favicon-optout):after {
-	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fjoinmastodon.org%2F/");
+	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Ffosstodon.org%2F/");
 }
 .favicon-optin a[href^="/twitter/"]:not(.favicon-optout):after,
 .favicon-optin a[href^="https://www.zachleat.com/twitter/"]:not(.favicon-optout):after {
