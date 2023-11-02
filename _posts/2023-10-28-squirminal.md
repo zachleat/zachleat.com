@@ -8,8 +8,8 @@ A lightweight structural-only zero-dependency web component to progressively ani
 
 This one is a few years old (but I am currently cataloguing my web components) and was developed to fake an antique terminal for the web-based CLI used in the [Your Year on Netlify](#live-site-walkthrough) project.
 
-* [Demo](https://squirminal.zachleat.dev/)
-* [Repository](https://github.com/zachleat/squirminal)
+* [Source Code](https://github.com/zachleat/squirminal)
+* [Demo](https://squirminal.zachleat.dev/) _(more [demos below](#demos))_
 
 <script type="module" src="/static/browser-window.js"></script>
 <div><browser-window flush shadow url="https://squirminal.zachleat.dev/"><a href="https://squirminal.zachleat.dev/">{% screenshotImageHtmlFullUrl "https://squirminal.zachleat.dev/" %}</a></browser-window></div>
@@ -21,17 +21,6 @@ This one is a few years old (but I am currently cataloguing my web components) a
 * Add a blinking cursor via `<squirm-inal cursor>`
 * Autoplay (only when visible) via `<squirm-inal autoplay>`
 * Works with text nodes inside **any arbitrary HTML content**.
-
-## Live Site Walkthrough
-
-Here’s a demo screencast I recorded of my personal Your Year on Netlify flow.
-
-<div>
-	<youtube-lite-player @slug="3PK0Yq9n5SI" @label="Walkthrough of the Your Year On Netlify Microsite"></youtube-lite-player>
-</div>
-
-Watch [_Walkthrough of the Your Year On Netlify Microsite_ on YouTube](https://www.youtube.com/watch?v=3PK0Yq9n5SI).
-
 
 ## Better than Before
 
@@ -51,7 +40,41 @@ There is an important lesson here—in this case the best progressive enhancemen
 
 This was an important reminder to me that progressive enhancement is a continuum of possible solutions—and it’s important to adjust where your solution lives on that continuum as needed and for your individual requirements (and hopefully your tools don’t force you into a corner before you can make those decisions).
 
-## In the wild
+## Demos
 
-* [{% indieAvatar "https://your-year-on.netlify.com" %}Your Year on Netlify](https://your-year-on.netlify.com)
+<script type="module" src="/static/squirminal.js"></script>
+<style>pre { margin: 0; }</style>
+<div><squirm-inal autoplay speed=".6" dimensions>
+{%- highlight js %}
+class MyComponent extends HTMLElement {
+	connectedCallback() {
+		// web component stuff
+		// web component stuff
+		// web component stuff
+		// web component stuff
+		// web component stuff
+		// web component stuff
+		// web component stuff
+		// web component stuff
+	}
+}
+if("customElements" in window) {
+	customElements.define("my-component", MyComponent);
+}
+{%- endhighlight %}
+</squirm-inal></div>
+
+### In the wild
+
 * [{% indieAvatar "https://echo.rknight.me/" %}Robb Knight’s Echo RSS Cross Poster](https://echo.rknight.me/)
+* [{% indieAvatar "https://your-year-on.netlify.com" %}Your Year on Netlify](https://your-year-on.netlify.com)
+
+### Live Site Walkthrough
+
+Here’s a demo screencast I recorded of my personal Your Year on Netlify flow.
+
+<div>
+	<youtube-lite-player @slug="3PK0Yq9n5SI" @label="Walkthrough of the Your Year On Netlify Microsite"></youtube-lite-player>
+</div>
+
+Watch [_Walkthrough of the Your Year On Netlify Microsite_ on YouTube](https://www.youtube.com/watch?v=3PK0Yq9n5SI).
