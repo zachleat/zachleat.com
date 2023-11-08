@@ -5,18 +5,21 @@ function getPosterImage(slug) {
 	// return `https://i.ytimg.com/vi/${slug}/maxresdefault.jpg`;
 }
 </script>
-<is-land on:visible class="fluid-width-video-wrapper">
-	<lite-youtube :videoid="slug" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image:url('${poster || getPosterImage(slug)}'); max-width: 100%`">
-		<a :href="`https://youtube.com/watch?v=${slug}`" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden" @html="`Play Video${label ? `: ${label}` : ''}`"></span></a>
-	</lite-youtube>
-	<template data-island="once" webc:raw>
-		<style>
-		/* Plugin bug: clicking the red youtube play icon in the center would navigate to youtube.com */
-		lite-youtube:defined .lty-playbtn {
-			pointer-events: none;
-		}
-		</style>
-		<link rel="stylesheet" href="/static/lite-yt-embed.css">
-		<script src="/static/lite-yt-embed.js" type="module"></script>
-	</template>
-</is-land>
+<script type="module" src="/static/browser-window.js" webc:keep></script>
+<browser-window flush :url="`https://youtube.com/watch?v=${slug}`" shadow>
+	<is-land on:visible class="fluid-width-video-wrapper">
+		<lite-youtube :videoid="slug" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image:url('${poster || getPosterImage(slug)}'); max-width: 100%`">
+			<a :href="`https://youtube.com/watch?v=${slug}`" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden" @html="`Play Video${label ? `: ${label}` : ''}`"></span></a>
+		</lite-youtube>
+		<template data-island="once" webc:raw>
+			<style>
+			/* Plugin bug: clicking the red youtube play icon in the center would navigate to youtube.com */
+			lite-youtube:defined .lty-playbtn {
+				pointer-events: none;
+			}
+			</style>
+			<link rel="stylesheet" href="/static/lite-yt-embed.css">
+			<script type="module" src="/static/lite-yt-embed.js"></script>
+		</template>
+	</is-land>
+</browser-window>
