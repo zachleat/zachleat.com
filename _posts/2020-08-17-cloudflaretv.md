@@ -1,7 +1,5 @@
 ---
 title: Cloudflare’s Creative Corner with the Netlify team
-eleventyComputed:
-  titleHtml: 'Cloudflare’s Creative Corner with the {% imgavatar "netlify", "z-avatar-eq" %}Netlify team'
 tags: speaking
 external_url: https://cloudflare.tv/event/cloudflare-s-creative-corner-featuring-special-guests-from-the-netlify-team/oZKbA8a4
 ignoreExternalLinkInLayoutFile: true

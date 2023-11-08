@@ -49,9 +49,10 @@ tmpl: page
 				{%- if metadata.speaking and not tags contains "future-event" %}
 				<em class="text-ellipsis">Originally a talk given at: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
 				{%- else %}
-				<em>Originally posted at: <a href="{{ external_url }}" class="opengraph-card favicon-optout opengraph-card-block">{% screenshotImageHtmlFullUrl external_url %}<span>{{ external_url }}</span></a></em>
+				<em>Originally posted at: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
 				{%- endif %}
 			</p>
+			{%- originalPostEmbed external_url %}
 			{%- endunless %}
 			{%- endif %}
 		</article>

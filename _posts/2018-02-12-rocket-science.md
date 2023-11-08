@@ -1,6 +1,5 @@
 ---
 title: Web Fonts are ▢▢▢ Rocket Science
-categories: null
 tags:
   - external
   - speaking
