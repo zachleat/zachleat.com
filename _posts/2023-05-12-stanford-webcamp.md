@@ -5,6 +5,7 @@ tags:
   - conference
   - speaking
   - web-components
+  - video
 metadata:
   schedule: true
   speaking:
@@ -13,7 +14,6 @@ metadata:
 medialength: 29 min
 showOnHomePage: false
 ---
-<br>
 <div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 
 * Watch [the video on YouTube](https://www.youtube.com/watch?v={{ metadata.youtubeId }}).
