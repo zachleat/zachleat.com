@@ -11,8 +11,7 @@ This one is a few years old (but I am currently cataloguing my web components) a
 * [Source Code](https://github.com/zachleat/squirminal)
 * [Demo](https://squirminal.zachleat.dev/) _(more [demos below](#demos))_
 
-<script type="module" src="/static/browser-window.js"></script>
-<div><browser-window flush shadow url="https://squirminal.zachleat.dev/"><a href="https://squirminal.zachleat.dev/">{% screenshotImageHtmlFullUrl "https://squirminal.zachleat.dev/" %}</a></browser-window></div>
+{% originalPostEmbed "https://squirminal.zachleat.dev/", true %}
 
 ## Features
 
@@ -28,7 +27,7 @@ When I worked on the slide deck for my [Smashing Conference talk in 2021](/web/t
 
 I wrote about this in [Queue Code—“Live” Code without Errors](https://www.zachleat.com/web/queue-code/) and you can play around with it on the demo below:
 
-<div><browser-window flush shadow url="https://queuecode.zachleat.dev/"><a href="https://queuecode.zachleat.dev/">{% screenshotImageHtmlFullUrl "https://queuecode.zachleat.dev/" %}</a></browser-window></div>
+{% originalPostEmbed "https://queuecode.zachleat.dev/", true %}
 
 That approach leaned heavily into server rendering unnecessarily—the whole point of this effect _required_ client interaction and the fallback experience was the original content in its entirety.
 

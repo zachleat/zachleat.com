@@ -7,10 +7,7 @@ There have been a number of criticisms levied at the React project over the year
 
 _{{ "12 Dec 2014" | timePosted }} ago:_
 
-<script type="module" src="/static/browser-window.js"></script>
-<div><browser-window icon flush shadow url="https://www.filamentgroup.com/lab/mv-initial-load-times/">
-	<a href="https://www.filamentgroup.com/lab/mv-initial-load-times/">{% screenshotImageHtmlFullUrl "https://www.filamentgroup.com/lab/mv-initial-load-times/" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://www.filamentgroup.com/lab/mv-initial-load-times/" %}
 
 [Researching the Performance costs of JavaScript MVC Frameworks—John Bender](https://www.filamentgroup.com/lab/mv-initial-load-times/) _(December 12, 2014)_
 
@@ -48,9 +45,7 @@ _It **is** interesting that they have anointed Next.js as the official chosen fu
 
 _{{ "20 Apr 2015" | timePosted }} ago:_
 
-<div><browser-window icon flush shadow url="https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html">
-	<a href="https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html">{% screenshotImageHtmlFullUrl "https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html" %}
 
 [The DOM is NOT Slow, Your Abstraction Is—Andrea Giammarchi](https://webreflection.blogspot.com/2015/04/the-dom-is-not-slow-your-abstraction-is.html) _(April 20, 2015)_
 
@@ -66,9 +61,7 @@ _**Update February 7, 2023**: this entry was added._
 
 _{{ "3 Jul 2015" | timePosted }} ago:_
 
-<div><browser-window icon flush shadow url="https://aerotwist.com/blog/react-plus-performance-equals-what/">
-	<a href="https://aerotwist.com/blog/react-plus-performance-equals-what/">{% screenshotImageHtmlFullUrl "https://aerotwist.com/blog/react-plus-performance-equals-what/" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://aerotwist.com/blog/react-plus-performance-equals-what/" %}
 
 [React + Performance = ?—Paul Lewis](https://aerotwist.com/blog/react-plus-performance-equals-what/) _(July 3, 2015)_
 
@@ -120,10 +113,7 @@ _{{ "10 Dec 2016" | timePosted }} ago:_
 
 Alright, so you’re _not_ a beginner or you’re not building an app. You know better than to fall into the Create React App pit of client-side rendering performance problems and use a React framework that uses **server side** rendering, right? Well, _not so fast_.
 
-<script type="module" src="/static/browser-window.js"></script>
-<div><browser-window icon flush shadow url="https://aerotwist.com/blog/when-everything-is-important-nothing-is/">
-	<a href="https://aerotwist.com/blog/when-everything-is-important-nothing-is/">{% screenshotImageHtmlFullUrl "https://aerotwist.com/blog/when-everything-is-important-nothing-is/" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://aerotwist.com/blog/when-everything-is-important-nothing-is/" %}
 
 [🌟 When everything's important, nothing is! 🌟—Paul Lewis](https://aerotwist.com/blog/when-everything-is-important-nothing-is/) _(December 10, 2016)_
 
@@ -159,9 +149,7 @@ _**Update February 7, 2023**: some addition timeline context was added._
 
 _{{ "24 Oct 2017" | timePosted }} ago:_
 
-<div><browser-window icon flush shadow url="https://github.com/facebook/react/issues/11347">
-	<a href="https://github.com/facebook/react/issues/11347">{% screenshotImageHtmlFullUrl "https://github.com/facebook/react/issues/11347" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://github.com/facebook/react/issues/11347" %}
 
 Rob Dodson filed [RFC: Plan for custom element attributes/properties in React ~~17~~, ~~18~~, 19 #11347](https://github.com/facebook/react/issues/11347), noting compatibility issues between Web Components and React.
 
@@ -190,9 +178,7 @@ _**Update March 16, 2023**: This section was added._
 
 _{{ "21 Apr 2020" | timePosted }} ago:_
 
-<div><browser-window icon flush shadow url="https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/">
-	<a href="https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/">{% screenshotImageHtmlFullUrl "https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/" %}
 
 [The Cost of Javascript Frameworks—Tim Kadlec](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/) _(April 21, 2020)_
 
@@ -239,9 +225,7 @@ _**Update Feburary 7, 2023**: Added a bit of history on Single Page Applications
 
 _{{ "14 Oct 2021" | timePosted }} ago:_
 
-<div><browser-window icon flush shadow url="https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f">
-	<a href="https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f">{% screenshotImageHtmlFullUrl "https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f" %}
 
 [Ryan Carniato: JavaScript Framework TodoMVC Size Comparison](https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f) _(October 14, 2021)_
 
@@ -260,9 +244,7 @@ I do want to also call out a similar but far more comprehensive (and maintained)
 
 ## February 2023
 
-<div><browser-window icon flush shadow url="https://infrequently.org/2023/02/the-market-for-lemons/">
-	<a href="https://infrequently.org/2023/02/the-market-for-lemons/">{% screenshotImageHtmlFullUrl "https://infrequently.org/2023/02/the-market-for-lemons/" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://infrequently.org/2023/02/the-market-for-lemons/" %}
 
 [Alex Russell: _The Market for Lemons_](https://infrequently.org/2023/02/the-market-for-lemons/) _(February 4, 2023)_
 
@@ -276,18 +258,13 @@ Currently only _26% of sites using Next.js have good Core Web Vitals_. This is l
 
 ## August 2023
 
-<div><browser-window icon flush shadow url="https://joshcollinsworth.com/blog/antiquated-react">
-	<a href="https://joshcollinsworth.com/blog/antiquated-react">{% screenshotImageHtmlFullUrl "https://joshcollinsworth.com/blog/antiquated-react" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://joshcollinsworth.com/blog/antiquated-react" %}
 
 _[Things you forgot (or never knew) because of React](https://joshcollinsworth.com/blog/antiquated-react)—Josh Collinsworth (August 4, 2023)_
 
 ## October 2023
 
-
-<div><browser-window flush shadow url="https://www.epicweb.dev/why-i-wont-use-nextjs">
-	<a href="https://www.epicweb.dev/why-i-wont-use-nextjs">{% screenshotImageHtmlFullUrl "https://www.epicweb.dev/why-i-wont-use-nextjs" %}</a>
-</browser-window></div>
+{% originalPostEmbed "https://www.epicweb.dev/why-i-wont-use-nextjs" %}
 
 _[Why I Won’t Use Next.js](https://www.epicweb.dev/why-i-wont-use-nextjs)—Kent C. Dodds_
 
