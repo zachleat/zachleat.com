@@ -381,7 +381,7 @@ module.exports = function(eleventyConfig) {
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url) {
 		return `<script type="module" src="/static/browser-window.js"></script>
-<div><browser-window icon url="${url}" shadow flush><a href="${url}">${screenshotImageHtmlFullUrl(url)}</a></browser-window></div>`;
+<div><browser-window icon url="${url}" shadow flush><a href="${url}" class="favicon-optout">${screenshotImageHtmlFullUrl(url)}</a></browser-window></div>`;
 	});
 
 	/* COLLECTIONS */
