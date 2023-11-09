@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+const { AssetCache } = require("@11ty/eleventy-fetch");
+
 const faunadb = require("faunadb");
 const q = faunadb.query;
 
@@ -8,18 +10,27 @@ const client = new faunadb.Client({
 });
 
 module.exports.queryData = async function queryData() {
-	let query = await client.query(
-		q.Map(
-			q.Paginate(q.Documents(q.Collection('hits')), {
-				size: 10000, // maximum 10k documents
-			}),
-			q.Lambda(show => q.Get(show))
-		)
-	);
-	let { data } = query;
-	let sorted = data.map(entry => entry.data).sort((a, b) => {
-		return b.count - a.count;
-	});
+	let asset = new AssetCache("elizabeacon_data");
+
+	// check if the cache is fresh within the last day
+	let data;
+
+	if(asset.isCacheValid("1d")) {
+		console.log( "[elizabeacon] Using cached data." );
+		data = await asset.getCachedValue();
+	} else {
+		let query = await client.query(
+			q.Map(
+				q.Paginate(q.Documents(q.Collection('hits')), {
+					size: 10000, // maximum 10k documents
+				}),
+				q.Lambda(show => q.Get(show))
+			)
+		);
+		data = query.data;
+
+		await asset.save(data, "json");
+	}
 
 	let ret = {};
 	let total = 0;
@@ -34,5 +45,6 @@ module.exports.queryData = async function queryData() {
 		}
 	}
 	console.log( "[elizabeacon] Found", data.length, "URLs with", total, "Pageviews" );
+
 	return ret;
 }
