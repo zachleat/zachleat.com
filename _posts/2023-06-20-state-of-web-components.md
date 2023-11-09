@@ -3,10 +3,12 @@ title: "State of Web Components Panel (This Dot Media)"
 tags:
   - speaking
   - web-components
+  - video
 metadata:
   speaking:
     type: livestream
 external_icon_url: https://www.thisdotmedia.com/state-of-web-components-june-2023/
+medialength: 94 min
 ---
 I was honored to speak alongside Justin Fagnani (Lit), Kristofer Joseph (Begin, Enhance.dev), and Rob Eisenberg about the current state of the Web Components ecosystem.
 
