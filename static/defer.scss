@@ -26,8 +26,12 @@
 }
 /* originalPostEmbed shortcode */
 browser-window {
+	--bw-shadow-hsl: 0deg 0% 70%;
 	margin: 1em 0;
 	font-size: 1rem;
+}
+browser-window[shadow][mode="dark"] {
+	--bw-border: none;
 }
 browser-window > a {
 	display: flex;
