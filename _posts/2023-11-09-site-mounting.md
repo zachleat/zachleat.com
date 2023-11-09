@@ -5,6 +5,7 @@ tags:
   - cloudcannon
   - video
 medialength: 5 min
+toot: https://fediverse.zachleat.com/@zachleat/111381417124715846
 ---
 CloudCannon launched a new feature today called [Site Mounting](https://cloudcannon.com/documentation/articles/site-mounting/) and I’m very excited about it. I put together a quick video demoing the feature, which I’ve immediately put to good use across a bunch of projects.
 
