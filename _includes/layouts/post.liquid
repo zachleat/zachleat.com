@@ -80,11 +80,11 @@ tmpl: page
 </article>
 {% endif %}
 
-<article class="content-grid-sibling">
+<article class="content-grid-sibling" data-pagefind-ignore>
 	{% include "about.html" %}
 </article>
 
-<article class="content-grid-sibling">
+<article class="content-grid-sibling" data-pagefind-ignore>
 	{% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
 	{% assign nextPost = collections.posts | getNextCollectionItem: page %}
 
@@ -101,7 +101,7 @@ tmpl: page
 
 {%- assign isDraft = tags | includes: "draft" %}
 {% unless isDraft %}
-<div id="opengraph-preview" class="share content-grid-sibling">
+<div id="opengraph-preview" class="share content-grid-sibling" data-pagefind-ignore>
 	<details>
 		<summary class="hed-h4"><strong>Sharing on social media?</strong></summary>
 		<p>This is what will show up when you share this post on Social Media:</p>
