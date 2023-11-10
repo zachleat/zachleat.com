@@ -14,6 +14,7 @@
 		"infinity-burger": "^3.0.0",
 		"lite-youtube-embed": "^0.2.0",
 		"markdown-it-table-of-contents": "^0.6.0",
+		"pagefind": "^1.0.3",
 		"speedlify-score": "^3.0.0"
 	},
 	"engines": {
@@ -57,10 +58,12 @@
 	"scripts": {
 		"clean": "rm -rf _site && rm -rf .cache",
 		"check-links": "npx check-html-links _site",
+		"create-search-index": "npx pagefind --site \"_site\" --glob \"{web,resume}/**/*.html\"",
 		"build": "npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --port=8090 --incremental --ignore-initial",
+		"start-search": "npm run build && npm run create-search-index && npm run start",
 		"start-full": "npx @11ty/eleventy --serve --port=8090 --incremental",
-		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production",
+		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production && npm run create-search-index",
 		"build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy",
 		"start-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npm run start-full"
 	},

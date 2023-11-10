@@ -1,4 +1,4 @@
-<div class="webmentions content-grid-sibling" id="webmentions">
+<div class="webmentions content-grid-sibling" id="webmentions" data-pagefind-ignore>
   {% comment %}Note thie combines both repost and mention, similar to how Twitter now combines retweet and quote tweet{% endcomment %}
   {%- assign reposts = webmentions | webmentionsForUrl: absoluteUrl, "repost-of,mention-of" -%}
   {%- assign repostsSize = reposts | size -%}

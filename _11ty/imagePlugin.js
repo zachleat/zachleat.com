@@ -58,24 +58,21 @@ function backgroundImageFilter(src, width, options = {}) {
 function pad(num) {
 	return `${num}`.padStart(2, '0');
 }
-function getDailyServiceCacheBuster() {
+function _getCacheBuster(date, suffix) {
 	if(process.env.ELEVENTY_PRODUCTION) {
-		let d = new Date();
-		return `_z${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+		return `_z${date.getFullYear()}${pad(date.getMonth()+1)}${suffix}`;
 	}
 
 	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
-	return "_localdev";
+	return "_localdev1";
+}
+function getDailyServiceCacheBuster() {
+	let date = new Date();
+	return _getCacheBuster(date, pad(date.getDate()));
 }
 function getWeeklyServiceCacheBuster() {
-	if(process.env.ELEVENTY_PRODUCTION) {
-		let d = new Date();
-		// Weekly
-		return `_z${d.getFullYear()}${pad(d.getMonth()+1)}_${d.getDate() % 7}`;
-	}
-
-	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
-	return "_localdev";
+	let date = new Date();
+	return _getCacheBuster(date, `_${date.getDate() % 7}`);
 }
 
 function getFullUrlFromPath(path) {

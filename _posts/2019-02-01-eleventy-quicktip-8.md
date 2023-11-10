@@ -4,7 +4,6 @@ tags:
   - eleventy
   - external
 external_url: 'https://www.11ty.dev/docs/quicktips/netlify-ifttt/'
-ignoreExternalLinkInLayoutFile: true
 ---
 Run your Eleventy build every day to update “static data” on your site.
 
