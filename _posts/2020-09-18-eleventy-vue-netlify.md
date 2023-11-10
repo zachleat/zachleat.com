@@ -3,7 +3,10 @@ title: 'Eleventy and Vue, a match made to power Netlify.com'
 tags:
   - external
 external_url: 'https://www.netlify.com/blog/2020/09/18/eleventy-and-vue-a-match-made-to-power-netlify.com/'
+ignoreExternalLinkInLayoutFile: true
 ---
+_Originally posted on [{{ external_url }}]({{ external_url }})_
+
 Earlier in the calendar year at Netlify we undertook an ambitious project to take our web site to the next level: to simultaneously iterate on the design and improve our tech stack. You may have noticed this [launch in May](https://twitter.com/zachleat/status/1265387661742743560) of this year, approximately 734 months ago.
 
 We had a few goals in mind:
