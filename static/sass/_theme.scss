@@ -986,8 +986,8 @@ a[href]:hover .project_img {
 	margin-top: 0;
 	font-size: 0.7368421052632em; /* 14px /19 */
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
+	gap: .5em 1.5em;
 	line-height: 1.5;
 	min-height: 2.285714285714em; /* 32px /14 */
 }
@@ -1004,14 +1004,6 @@ a[href]:hover .project_img {
 }
 .sub em {
 	color: #666;
-}
-@media (min-width: 26.5625em) { /* 425px */
-	.sub {
-		display: block;
-	}
-	.sub em {
-		margin-right: 1em;
-	}
 }
 
 .posts-paragraph {

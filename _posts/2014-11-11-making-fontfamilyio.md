@@ -11,7 +11,7 @@ tags:
 metadata:
   speaking:
     type: meetup
-    country: US
+    country: USA
 medialength: 19 min
 ---
 

@@ -7,7 +7,7 @@ tags:
 metadata:
   speaking:
     type: barcamp
-    country: US
+    country: USA
 stylesheetsDist:
   - keynote-extractor.css
 templateclass: wider

@@ -16,6 +16,5 @@ metadata:
 permalink: /web/jamstack-toronto/2021/
 external_url: 'https://www.meetup.com/JAMstack-Toronto/events/275601729/'
 event_date: January 20
-event_country: "<span role=\"img\" aria-label=\"Canada\" title=\"Canada\">\U0001F1E8\U0001F1E6</span>"
 ---
 

@@ -12,7 +12,7 @@ tags:
 metadata:
   speaking:
     type: conference
-    country: US
+    country: USA
 medialength: 59 min
 ---
 
@@ -25,7 +25,7 @@ This is a talk I gave at [Nebraska Code Camp 2013](http://www.nebraskacodecamp.c
 > “Tool and die makers are a class of machinists who work primarily in toolroom environments—…often in an environment with flexible, semipermeable boundaries from production work.”
 >
 > These are the people that make the tools to make the products. This was the environment I grew up in—watching my father work as a tool and die maker. He could make anything! But more importantly, he knew the value of good tools—even if you had to construct them yourself.
-> 
+>
 > Tools are important and tooling for Web Development is improving! I’ll go through a few of my favorites: Node.js, grunt.js, npm, yepnope, SASS, grunticon, Browser devtools, Testing tools, and others.
 
 ## [Watch on YouTube](http://www.youtube.com/watch?v=NkVmhe-vvAo)

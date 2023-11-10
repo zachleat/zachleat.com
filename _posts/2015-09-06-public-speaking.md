@@ -12,7 +12,7 @@ tags:
 metadata:
   speaking:
     type: barcamp
-    country: US
+    country: USA
 medialength: 17 min
 ---
 

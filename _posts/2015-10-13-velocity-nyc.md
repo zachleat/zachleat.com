@@ -14,9 +14,8 @@ tags:
 metadata:
   speaking:
     type: conference
-    country: US
+    country: USA
 medialength: 42 min
-event_country: "<span role=\"img\" aria-label=\"United States of America\" title=\"United States of America\">\U0001F1FA\U0001F1F8</span>"
 ---
 
 * [Slides on Speakerdeck](https://speakerdeck.com/zachleat/the-performance-and-usability-of-font-loading-velocity-nyc-2015)

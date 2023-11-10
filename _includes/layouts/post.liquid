@@ -21,6 +21,9 @@ tmpl: page
 {% if tweet or toot %}
 			<em>First, it was {% if tweet %}<a href="{{ tweet }}">a tweet</a>{% elsif toot %}<a href="{{ toot }}">a mastodon post</a>{% endif %}.</em>
 {% endif %}
+{% if metadata.speaking.country %}
+			<span>{{ metadata.speaking.country | nameToFlag }} <em> {{ metadata.speaking.country }}</em></span>
+{% endif %}
 {% if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
 			<em>Tagged:
 	{% if tags contains "eleventy" %}<a href="/web/?category=eleventy">Eleventy</a>{% endif %}

@@ -8,7 +8,6 @@ metadata:
     type: conference
     country: Germany
 external_url: https://smashingconf.com/freiburg-2023
-event_country: '<span role="img" aria-label="Germany" title="Germany">🇩🇪</span>'
 permalink: /web/smashingconf/2023/
 ---
 I was very fortunate to be invited to be the Mystery Speaker at Smashing Conference in Freiburg this year! We really did trap hundreds of people in a room to teach them about web components 😈😈😈

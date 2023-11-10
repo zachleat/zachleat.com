@@ -7,7 +7,7 @@ categories:
 metadata:
   speaking:
     type: barcamp
-    country: US
+    country: USA
 ---
 
 <script async class="speakerdeck-embed" data-id="559ebfc065bf01304e0e123138154d90" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

@@ -9,7 +9,7 @@ tags:
 metadata:
   speaking:
     type: conference
-    country: US
+    country: USA
 ---
 
 _Originally presented at NEJS CONF 2019 in Omaha, NE USA 🇺🇸 on August 8, 2019_

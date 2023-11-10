@@ -7,7 +7,7 @@ categories:
 metadata:
   speaking:
     type: conference
-    country: US
+    country: USA
 tags: null
 ---
 

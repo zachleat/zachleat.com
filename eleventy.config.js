@@ -378,6 +378,25 @@ module.exports = function(eleventyConfig) {
 		return eleventyConfig.javascriptFunctions.renderTemplate.call(this, content, "webc");
 	});
 
+	eleventyConfig.addFilter("nameToFlag", (countryName = "") => {
+		let flag = {
+			"germany": "🇩🇪",
+			"us": "🇺🇸",
+			"usa": "🇺🇸",
+			"netherlands": "🇳🇱",
+			"canada": "🇨🇦",
+			"spain": "🇪🇸",
+			"belarus": "🇧🇾",
+			"united kingdom": "🇬🇧",
+			"nigeria": "🇳🇬",
+			"romania": "🇷🇴",
+		}[countryName.toLowerCase()] || "";
+
+		return `<span role="img" aria-label="${countryName}">${flag}</span>`;
+	});
+
+	/* END FILTERS */
+
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url, skipIcon = false) {
 		return `<script type="module" src="/static/browser-window.js"></script>

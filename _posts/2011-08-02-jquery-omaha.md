@@ -7,7 +7,7 @@ categories:
 metadata:
   speaking:
     type: meetup
-    country: US
+    country: USA
 ---
 
 A presentation for the jQuery Omaha meetup group, later transformed into NebraskaJS.

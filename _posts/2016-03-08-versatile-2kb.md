@@ -10,7 +10,7 @@ tags:
 metadata:
   speaking:
     type: meetup
-    country: US
+    country: USA
 external_url: 'https://nebraskajs.com/2017/versatile2kb/'
 medialength: 25 min
 ---
