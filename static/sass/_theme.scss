@@ -1411,25 +1411,6 @@ pre + .livedemo {
 	font-size: 0.7826086956522em; /* 18px /23 */
 	line-height: 165%;
 }
-@supports (resize: horizontal) {
-	.livedemo-resizable {
-		resize: horizontal;
-		overflow: hidden;
-		padding-bottom: 1.625rem; /* 26px /16 */
-
-		&.top {
-			padding-top: 1.625rem; /* 26px /16 */
-			padding-bottom: .75rem;
-		}
-		&:after,
-		&.top:after {
-			content: "Demonstration: Resize Me!";
-			padding: 0;
-			bottom: .2rem;
-			right: 1rem;
-		}
-	}
-}
 .livedemo + .caption {
 	margin-top: -1rem;
 	margin-bottom: 1rem;
