@@ -15,7 +15,7 @@ module.exports.queryData = async function queryData() {
 	// check if the cache is fresh within the last day
 	let data;
 
-	if(asset.isCacheValid("1d")) {
+	if(asset.isCacheValid("6h")) {
 		console.log( "[elizabeacon] Using cached data." );
 		data = await asset.getCachedValue();
 	} else {
