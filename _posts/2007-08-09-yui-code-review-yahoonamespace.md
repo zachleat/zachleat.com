@@ -1,7 +1,5 @@
 ---
 title: 'YUI Code Review: YAHOO.namespace'
-author: Zach Leatherman
-layout: post
 ---
 
 *This is the first in a one part series of posts (the is optional) reviewing the actual code contained in the YUI library. This series is not intended for advanced JavaScripters, so if you’re insulted by reading things you already know, you probably aren’t a very good student.*
@@ -16,7 +14,7 @@ This will create a YAHOO.myNamespace object that can be used many different ways
 
 ``` js
 YAHOO.myNamespace = function() {};
- 
+
 YAHOO.myNamespace();
 ```
 
@@ -27,13 +25,13 @@ Or you can assign multiple functions to it (with private variables included) usi
 ``` js
 YAHOO.myNamespace = function() {
   var myPrivateVariable;
- 
+
   return {
     myFirstFunction: function() { return myPrivateVariable; },
     mySecondFunction: function() {}
   }
 }();
- 
+
 var hisOrHerPrivateVariable = YAHOO.myNamespace.myFirstFunction();
 YAHOO.myNamespace.mySecondFunction();
 ```

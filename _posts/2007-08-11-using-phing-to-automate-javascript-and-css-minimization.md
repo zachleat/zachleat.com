@@ -1,7 +1,5 @@
 ---
 title: Using Phing to automate JavaScript and CSS Minimization
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - Phing (Unknown)
 deprecated: true
@@ -25,12 +23,12 @@ Here’s what you’ll be responsible for:
 1.  Download both CSSTidy and the PHP port of Packer using the links above.
 2.  Download Phing if you don’t already have it, and install it. Note the following change I had to make to my Phing binphing.bat file to get it working: Change `set PHP_CLASSPATH="%PHING_HOME%classes"` to remove the quotes: `set PHP_CLASSPATH=%PHING_HOME%classes`
 3.  Download the two Filters I made for Phing: **[JSPackerFilter.phps][4]** and **[CssTidyFilter.phps][5]**, change the extensions to .php and copy into your phing directory `\classes\phing\filters\`
-4.  Change the path in the include_once declaration at the top of each of the files to point to the csstidy and packer libraries you downloaded above: 
+4.  Change the path in the include_once declaration at the top of each of the files to point to the csstidy and packer libraries you downloaded above:
 
         include_once "C:\Lib\packer.php-1.0\class.JavaScriptPacker.php";
         include_once "C:\Lib\csstidy-1.3\class.csstidy.php";
 
-5.  Get a working build file set up to point the directories your project is using. Here is a sample I made:     
+5.  Get a working build file set up to point the directories your project is using. Here is a sample I made:
 
         <project name="testProject" default="pack-all">
             <target name="pack-all" depends="pack-javascript,pack-css"/>
@@ -39,7 +37,7 @@ Here’s what you’ll be responsible for:
                     <fileset dir="../Web/js">
                         <include name="*.js" />
                     </fileset>
-         
+
                     <filterchain>
                         <filterreader classname="phing.filters.JSPackerFilter">
                           <param name="encoding" value="62"/><!-- 0,10,62,95 or 'None', 'Numeric', 'Normal', 'High ASCII'. -->
@@ -54,7 +52,7 @@ Here’s what you’ll be responsible for:
                     <fileset dir="../Web/css">
                         <include name="*.css" />
                     </fileset>
-         
+
                     <filterchain>
                         <filterreader classname="phing.filters.CssTidyFilter">
                             <param name="remove_last_;" value="true"/>
@@ -65,27 +63,27 @@ Here’s what you’ll be responsible for:
                 </copy>
             </target>
         </project>
-        
-    
+
+
     Templates for CssTidy include: `low_compression`, `default`, `high_compression` (declarations are limited to one line apiece), `highest_compression` (everything is put on one line).
-    
+
     The above build file is set up to work with the following directory structure:
-    
-    *   Build 
-        *   Web 
+
+    *   Build
+        *   Web
             *   css
             *   js
         *   **build.xml**
-    *   Web 
+    *   Web
         *   css
         *   js
-    
+
     Files are copied from the source in /Web to the /Build/Web directory. I hope that you can see from the build.xml file above that the target directory is specified in the copy tag, todir attribute.
-    
+
         <copy todir="./Web/js" overwrite="true">
-    
+
     and the source directory is specified in the fileset tag, dir attribute.
-    
+
         <fileset dir="../Web/css">
             <include name="*.css" />
         </fileset>

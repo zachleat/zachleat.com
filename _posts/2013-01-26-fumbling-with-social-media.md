@@ -1,7 +1,5 @@
 ---
 title: A Web Developer Fumbling with Social Media
-author: Zach Leatherman
-layout: post
 ---
 
 As a curious web developer that’s moderately obsessed with statistics, I decided to go back and look at my history of side projects, blog posts, and other junk I’ve posted on twitter to see what has had the biggest impact on my ‘social reach.’ Yeah, I know. It felt wrong typing ‘social reach’—I’ll put a dollar in the jar. I’ll probably owe a few of those before this post is done.
@@ -29,7 +27,7 @@ After [BigText][4] came out, I was getting `2` RSS subscribers per day. Four mon
 
 ## Concentrate on the Right Network
 
-It’s a lot easier to get an RSS subscriber or get circled on Google than it is to get someone to follow you on Twitter. It would seem that Twitter users curate their Twitter friends very closely since it’s one big unconfigurable stream (don’t get me started about how useless lists are). RSS and Google both let you self-organize your incoming posts in such a way that makes it easier to ignore content without unsubscribing. 
+It’s a lot easier to get an RSS subscriber or get circled on Google than it is to get someone to follow you on Twitter. It would seem that Twitter users curate their Twitter friends very closely since it’s one big unconfigurable stream (don’t get me started about how useless lists are). RSS and Google both let you self-organize your incoming posts in such a way that makes it easier to ignore content without unsubscribing.
 
 If I had to choose, I’d take a Twitter follower over an RSS feed subscriber over a Google follower. But it ain’t a zero sum game.
 

@@ -1,7 +1,5 @@
 ---
 title: DOMContentLoaded Inconsistencies (in Browsers and JavaScript Libraries)
-author: Zach Leatherman
-layout: post
 smalltitle: true
 tags:
   - highlight
@@ -80,7 +78,7 @@ But the naming scheme isn’t the only part about this event that’s inconsiste
 </table>
 
 [![Benchmark for Library DOMContentLoaded Implementations][benchmarkimg]][benchmark]
-  
+
 [*Benchmark for Library DOMContentLoaded Implementations*][benchmark]
 
  [benchmark]: http://zachleat.com/Projects/domcontentloaded/

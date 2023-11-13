@@ -1,7 +1,5 @@
 ---
 title: 'No @font-face Syntax will ever be Bulletproof, Nor Should It Be.'
-author: Zach Leatherman
-layout: post
 categories:
   - font-loading
 tags:

@@ -1,7 +1,5 @@
 ---
 title: Don&#8217;t Give Up on Internet Explorer Yet
-author: Zach Leatherman
-layout: post
 ---
 
 These days, the browser landscape is more fragmented than ever. Were times easier back when IE6 and Firefox ruled the internet? Easier perhaps in terms of the number of browsers you had to launch for testing, but **not better** for any user’s experience. We are in a new world, where more web browsers are causing developers to become **increasingly pragmatic** with their designs and code. Sure, standards have created a safe haven under the newest versions of the Big 3 (Firefox, IE, Safari), but the lay majority are still using whatever default has been installed onto their computer, and they probably can’t tell you [the difference between their web browser and a search engine][1].
@@ -18,7 +16,7 @@ As web developers, it has become increasingly easy to become disenfranchised wit
 
 When developers engage in quasi-web development, perhaps in the form of an iPhone specific web application or an Adobe AIR desktop application, it fosters similar feelings. The work shares many languages and technologies with real (wide-open) web development, but is targeted towards a single web browser. This benefits of this sort of tunnel vision device targeting must be carefully weighed against the penalties you’re paying in narrowed default-install client compatibility. At that point, it’s just **friends with benefits**.
 
-![Denial of Access with Internet Explorer Screenshot][3]  
+![Denial of Access with Internet Explorer Screenshot][3]
 Google Wave, in fact, requires the use of Safari, Firefox, Chrome, or the Google Chrome Frame plugin (which doesn’t count as actual browser support). As of the time this article was written, as many as **64% of all users** ([source][4]) are met with the above screen when trying to access Google Wave. Let’s be clear: **Ease of development is not an excuse to abandon users.** Whatever happened to [Device Independence][5]?
 
  [3]: /web/wp-content/uploads/2009/12/google-wave-ie8.png "Denial of Access with Internet Explorer Screenshot"

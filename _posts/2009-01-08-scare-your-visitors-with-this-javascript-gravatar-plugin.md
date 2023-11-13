@@ -1,7 +1,5 @@
 ---
 title: Scare Your Visitors with this JavaScript Gravatar Plugin
-author: Zach Leatherman
-layout: post
 project_name: jQuery.gravatar
 description: Retrieve a gravatar image dynamically from any e-mail address.
 categories:
@@ -18,9 +16,9 @@ tags:
 
  [2]: /javascript/gravatar/jquery.gravatar.js
 
-  
-  
-  
+
+
+
 
 
 ![Tournology Blog Comment Form][3]
@@ -32,9 +30,9 @@ Here’s a use case. An unregistered visitor visits your blog, and decides that 
  [4]: http://www.centernetworks.com/twply-twitter-replies-auction
  [5]: http://www.tournology.com/blog/
 
-  
-  
-  
+
+
+
 
 
 ![Tournology Blog Comment Form With Gravatar][6]
@@ -45,9 +43,9 @@ Well, since they’re typing their e-mail address, wouldn’t it be cool if we c
 
  [7]: http://www.zachleat.com/javascript/gravatar/jquery.gravatar.js
 
-  
-  
-  
+
+
+
 
 
 ![Gravatar Signup Page][8]
@@ -58,25 +56,25 @@ Hell, [gravatar.com][9] could even use this to **improve the user experience of 
 
  [9]: http://en.gravatar.com/
 
-  
+
 
 
 ## [See the Demo][1]
 
 ## [Download the Source Code][2]
 
-  
+
 
 
 ## Licensing
 
-Licensed under the [WTFPL][10], as highly recommended by [Isaac Schleuter][11] ([see discussion][12]). 
+Licensed under the [WTFPL][10], as highly recommended by [Isaac Schleuter][11] ([see discussion][12]).
 
  [10]: http://sam.zoy.org/wtfpl/
  [11]: http://foohack.com/
  [12]: /web/2007/04/05/google-using-yui-grids-css/
 
-  
+
 
 
 ## JavaScript Dependencies:
@@ -87,7 +85,7 @@ Licensed under the [WTFPL][10], as highly recommended by [Isaac Schleuter][11] (
  [13]: http://jquery.com
  [14]: http://pajhome.org.uk/crypt/md5/md5.js
 
-  
+
 
 
 ## Example Usage:

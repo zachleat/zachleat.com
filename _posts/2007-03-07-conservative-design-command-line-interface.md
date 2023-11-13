@@ -1,7 +1,5 @@
 ---
 title: 'Conservative Design: Command Line Interface'
-author: Zach Leatherman
-layout: post
 ---
 
 This is another post in the series entitled [Conservative Design Patterns for Form Elements][1].
@@ -14,12 +12,12 @@ But with the exception of form input, we’ve almost completely moved away from 
 
 This component could exist as a standalone command line interface component or as a supplement to any search bar your page may contain. The basic premise of the Command Line Interface component is to provide a standardized method of navigating your website using nothing but the keyboard. It could fulfill more complex operations, but the scope of this article will just cover command line rudimentary navigation.
 
-Screen Printing: Fake Command Line Example  
+Screen Printing: Fake Command Line Example
 ![Command Line][2]
 
  [2]: /web/wp-content/uploads/2007/03/commandline.gif
 
-Screen Printing: Fake Command Line Example of AutoComplete Capabilities  
+Screen Printing: Fake Command Line Example of AutoComplete Capabilities
 ![Command Line AutoComplete][3]
 
  [3]: /web/wp-content/uploads/2007/03/commandline_f.gif
@@ -28,7 +26,7 @@ Screen Printing: Fake Command Line Example of AutoComplete Capabilities
 
  [4]: http://jfulton.org/?page=Software&file=gui.php
 
-*   Autocomplete: must be able to finish the current command being typed by presenting a list of available options to the user. Must be compatible with keyboard navigation: 
+*   Autocomplete: must be able to finish the current command being typed by presenting a list of available options to the user. Must be compatible with keyboard navigation:
     *   UP and DOWN arrows to select from list
     *   TAB autocompletes to first option
 *   Markup Scanning for Applicable Links: scan the current dom for  tags with a href element that could be used in autocomplete.

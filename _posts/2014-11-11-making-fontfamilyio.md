@@ -1,7 +1,5 @@
 ---
 title: The Making of fontfamily.io
-author: Zach Leatherman
-layout: post
 categories:
   - presentations
   - font-loading

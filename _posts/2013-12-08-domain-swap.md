@@ -1,7 +1,5 @@
 ---
 title: 'Domain Swap: A Google Chrome Extension'
-layout: post
-categories: null
 tags:
   - project
 ---

@@ -1,7 +1,5 @@
 ---
 title: 'Conservative Design Example: Multiple Option List'
-author: Zach Leatherman
-layout: post
 ---
 
 All of the posts in the Conservative Design series so far have been brainstorming of design patterns. But how about some real life examples, some actual code? Let’s dive in.
@@ -10,7 +8,7 @@ The first example I decided to tackle was the [Option List][1], specifically the
 
  [1]: http://www.zachleat.com/web/2007/02/26/conservative-design-option-list/
 
-[![Multiple Option List Real Example][3]][3]  
+[![Multiple Option List Real Example][3]][3]
 Click the image to see the actual example.
 
  []: http://www.zachleat.com/Projects/valdi/multipleSelectList.html
@@ -32,17 +30,17 @@ Features:
 
 Screenshots for the Lazy People:
 
-Multiple Options are Added  
+Multiple Options are Added
 ![Multiple Option List Real Example][3]
 
  [3]: /web/wp-content/uploads/2007/03/optionlist_multiple_real1.gif
 
-Validation when an Option is not selected:  
+Validation when an Option is not selected:
 ![Multiple Option List Real Example][4]
 
  [4]: /web/wp-content/uploads/2007/03/optionlist_multiple_real21.gif
 
-Success, they selected something and submitted:  
+Success, they selected something and submitted:
 ![Multiple Option List Real Example][5]
 
  [5]: /web/wp-content/uploads/2007/03/optionlist_multiple_real31.gif

@@ -1,7 +1,5 @@
 ---
 title: Placeholder Title for Article about HTML5 Placeholders
-author: Zach Leatherman
-layout: post
 tags:
   - highlight
   - research
@@ -13,15 +11,15 @@ The Mankini’s development predated the HTML5 specification but the end result 
 
 One of the most important design considerations our interaction design team specified for The Mankini was that it was not to be used as a replacement for a form label. It was a complement to the form label and nothing more. The [HTML5 specification came to the same conclusion][13]: *“The placeholder attribute should not be used as an alternative to a label.”* The reasoning is obvious: if the form field has a non-empty value, you need to be able to easily identify the value’s semantic meaning.
 
-![][14]  
+![][14]
 Instead of putting the label text into the placeholder, use the placeholder to supplement the labels with an example e-mail and URL to provide more of a hint to the user for proper formatting. This example isn’t a huge usability issue since the three fields’ values would be easily identifiable, but it’s important to keep in mind.
 
 ## Placeholder Testing
 
 I decided to run a [few compatibility tests][15] on the placeholder attribute to see where I could reuse the HTML5 placeholder inside of The Mankini (the test results are also available on [GitHub][16]). This yielded a few interesting things about some consistent and inconsistent cross-browser incompatibilities with the specification that I thought were worth sharing.
 
-1.  The HTML5 spec states that the placeholder should be visible when *“element’s value is the empty string and/or the control is not focused.”* The and/or presents the implementor with a decision. Do they keep the placeholder text visible when the field is focused but the value is still empty? Or do I remove the placeholder when focusing into an empty field?  
-      
+1.  The HTML5 spec states that the placeholder should be visible when *“element’s value is the empty string and/or the control is not focused.”* The and/or presents the implementor with a decision. Do they keep the placeholder text visible when the field is focused but the value is still empty? Or do I remove the placeholder when focusing into an empty field?
+
     My personal preference is that the text remains until the user starts to type. Safari 5.1, iOS 5, and Chrome 17%2B were the only browser implementations to agree with this as of time of writing.
 2.  The HTML5 spec has suggested (not required) that placeholders *only* apply to `<input type="text, search, password, tel, url, email, number">` and `<textarea>`. For some input types such as `hidden`, `radio`, or `checkbox` this limitation makes sense, the placeholder would add nothing to these elements. But for others like `datetime`, `date`, `month`, `week`, `time`, `datetime-local`, `color`, or `file` the argument can be made that it would be useful.
 3.  There is [an open WebKit issue][17] to add placeholder support to contenteditable. Hopefully the specification gets modified and this gets added, as it would have been useful for my [BigText Demo Wizard][18] which manually implemented that same feature.
@@ -34,8 +32,8 @@ As a side note, it should be said that both Opera and iOS both have comprehensiv
 *   For those browsers that did implement the placeholder, it was well supported in password fields, showing as plaintext and then converting to masked input when the user started to enter data. This was a nice surprise, but polyfilling that behavior in old Internet Explorers will require additional lifting since dynamically changing the type attribute is not permitted.
 *   Placeholder text should not be included with form submit.
 *   Placeholder text should reinitialize on form reset (note: there is no `delegate` event for `reset` in jQuery)
-*   Performance. Is the component required to iterate over all elements and add a class to initialize each one individually? For best performance, use CSS attribute selectors (`input[type="text"][placeholder]`) for the default style and iterate only to remove the light gray color on form elements with non-empty values. This only requires a className modification for a much smaller set of elements, only the ones with non-empty values. Remember that the browsers we polyfill are often the slowest.  
-      
+*   Performance. Is the component required to iterate over all elements and add a class to initialize each one individually? For best performance, use CSS attribute selectors (`input[type="text"][placeholder]`) for the default style and iterate only to remove the light gray color on form elements with non-empty values. This only requires a className modification for a much smaller set of elements, only the ones with non-empty values. Remember that the browsers we polyfill are often the slowest.
+
     Does the component modify the `className` property on `focus` and `blur`? I found this to be a huge performance issue for the Mankini in IE7 and IE8 on pages with large DOM trees and was a lot faster if the Mankini only modified one element’s style (think jQuery’s `$(this).css('color', '#000')`).
 *   Clear the values on page unload. After page refresh, some browsers will attempt to save unsubmitted form values and re-enter the values when the page reloads (added after reviewing [Mathias Bynen’s jQuery-placeholder][20]).
 

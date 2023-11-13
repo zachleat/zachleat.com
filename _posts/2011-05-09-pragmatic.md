@@ -1,7 +1,5 @@
 ---
 title: Pragmatic Progressive Enhancement
-author: Zach Leatherman
-layout: post
 tags:
   - highlight
 ---

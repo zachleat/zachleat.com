@@ -1,7 +1,5 @@
 ---
 title: PHP Pretty Date
-author: Zach Leatherman
-layout: post
 description: PHP script to show the relative difference between a time and now.
 categories:
   - project
@@ -26,13 +24,13 @@ Usage:
     // pass in a String DateTime, compared to another String DateTime (defaults to now)
     $myString = Date_Difference::getStringResolved('-7 weeks');
     $myString = Date_Difference::getStringResolved('-7 weeks', '+1 week');
-     
+
     // pass in a DateTime object, compared to another DateTime object (defaults to now)
     // useful with the Propel ORM, which uses DateTime objects internally.
     $myString = Date_Difference::getString(new DateTime('-7 weeks'));
     $myString = Date_Difference::getString(new DateTime('-7 weeks'), new DateTime('+1 week'));
 
-[Download PHP Pretty Date][4] (PHP 5.10 , 1.86KB)  
+[Download PHP Pretty Date][4] (PHP 5.10 , 1.86KB)
 
  [4]: http://www.zachleat.com/Projects/phpPrettyDate/Date_Difference.phps
 

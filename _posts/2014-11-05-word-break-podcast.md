@@ -1,7 +1,5 @@
 ---
 title: 'word-break Podcast #1'
-author: Zach Leatherman
-layout: post
 categories:
   - presentations
 tags:

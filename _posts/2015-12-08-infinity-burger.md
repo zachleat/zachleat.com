@@ -1,7 +1,5 @@
 ---
 title: The Infinity Hamburger Menu
-author: Zach Leatherman
-layout: post
 categories:
   - project
 tags:

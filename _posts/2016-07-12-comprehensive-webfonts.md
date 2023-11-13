@@ -1,7 +1,5 @@
 ---
 title: A Comprehensive Guide to Font Loading Strategies
-author: Zach Leatherman
-layout: post
 categories:
   - font-loading
 tags:
@@ -209,7 +207,7 @@ Use a tool like [`loadCSS`](https://github.com/filamentgroup/loadCSS/) to fetch 
 
 ## <span id="fout-class">FOUT with a Class</span>
 
-Use the CSS Font Loading API with a polyfill to detect when a specific font has loaded and only apply that web font in your CSS after it has loaded successfully. Usually this means toggling a class on your `<html>` element. Use with SASS or LESS mixins for easier maintenance. 
+Use the CSS Font Loading API with a polyfill to detect when a specific font has loaded and only apply that web font in your CSS after it has loaded successfully. Usually this means toggling a class on your `<html>` element. Use with SASS or LESS mixins for easier maintenance.
 
 * **[Demo: FOUT with a Class](/web-fonts/demos/fout-with-class-polyfill.html)** (includes sessionStorage trick for repeat view optimization)
 * Read more: [Better @font-face with Font Load Events on Dev.Opera](https://dev.opera.com/articles/better-font-face/) and [Font Loading Revisited with Font Events on the Filament Group Lab](https://www.filamentgroup.com/lab/font-events.html)

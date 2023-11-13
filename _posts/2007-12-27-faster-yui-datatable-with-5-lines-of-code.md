@@ -1,7 +1,5 @@
 ---
 title: Faster YUI DataTable with 5 Lines of Code
-author: Zach Leatherman
-layout: post
 'Warning, written for':
   - YUI 2.4.1
 ---
@@ -17,7 +15,7 @@ Instead, you should pass in an unattached DOM node instead of a string!
 
 Try this code on for size:
 
-    var myDataTable = new YAHOO.widget.DataTable(document.createElement('div'), myColumnDefs, myDataSource); 
+    var myDataTable = new YAHOO.widget.DataTable(document.createElement('div'), myColumnDefs, myDataSource);
     myDataTable.subscribe('initEvent',function() {
         // CHANGE THIS -- match the id of the container you want.
         var d = document.getElementById('myContainer');

@@ -1,7 +1,5 @@
 ---
 title: ALARMd now supports URLs
-author: Zach Leatherman
-layout: post
 ---
 
 When you add an alarm source to [ALARMd, the Internet Alarm Clock][1], it will now default to opening the input URL in a new window, if the URL is determined not to be an MP3, Youtube video, or a LAST.FM user or tag.

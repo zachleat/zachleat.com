@@ -1,7 +1,5 @@
 ---
 title: Let&#8217;s get parseIntimate.
-author: Zach Leatherman
-layout: post
 project_name: parseIntimate
 description: A Valentine’s Day website to spend a little quality time with JavaScript and it’s quirky parseInt function. Don’t be afraid to get parseIntimate.
 headimage: /web/wp-content/uploads/2009/12/Screen-Shot-2012-02-17-at-7.49.26-PM1.png

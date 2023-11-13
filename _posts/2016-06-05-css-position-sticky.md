@@ -1,7 +1,5 @@
 ---
 title: CSS Position Sticky
-author: Zach Leatherman
-layout: post
 categories:
   - presentations
 tags:

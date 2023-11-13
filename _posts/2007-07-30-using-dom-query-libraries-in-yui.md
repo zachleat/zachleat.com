@@ -1,7 +1,5 @@
 ---
 title: Using DOM Query Libraries in YUI
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - YUI 2.3.0
 deprecated: true
@@ -25,7 +23,7 @@ If you want to read more about DomQuery, you can go to [Jack’s site all about 
 
  [2]: http://www.jackslocum.com/blog/2007/01/11/domquery-css-selector-basic-xpath-implementation-with-benchmarks/
 
-Download: [Jack Slocum’s DomQuery Standalone File (24 KB)][3] 1.0 Alpha 3 – Rev 4  
+Download: [Jack Slocum’s DomQuery Standalone File (24 KB)][3] 1.0 Alpha 3 – Rev 4
 Download: [Jack Slocum’s DomQuery Standalone File Packed (7 KB)][4] 1.0 Alpha 3 – Rev 4
 
  [3]: /Projects/Y2/DomQuery.js
@@ -33,7 +31,7 @@ Download: [Jack Slocum’s DomQuery Standalone File Packed (7 KB)][4] 1.0 Alpha 
 
 If you want to use jQuery’s selector engine, I’ve stripped out the functions unnecessary to the selector engine in the 1.1.3.1 release and packaged it up as jDomQuery. There are differences between these two package’s syntax, so make sure you keep that in mind, especially when looking at the pseudos, like :gt() and :lt() for example.
 
-Download: [jDomQuery Standalone File (23 KB)][5] 1.1.3.1  
+Download: [jDomQuery Standalone File (23 KB)][5] 1.1.3.1
 Download: [jDomQuery Standalone File Packed (10 KB)][6] 1.1.3.1
 
  [5]: /Projects/Y2/jdomquery-1.1.3.1.js

@@ -1,7 +1,5 @@
 ---
 title: Performance Caveat with jQuery Selectors and Live Events
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - jQuery 1.3.2
 tags:
@@ -47,7 +45,7 @@ What can we do? Let’s create a jQuery function, instead of a method, so it won
     $.live('span.myTooltip', 'mouseover', function(event) {
         // activate tooltip
     });
-     
+
     // Multiple event types (you can call the jQuery live method on the return value from the function)
     $.live('span.myTooltip')
         .live('mouseover', function(event) {

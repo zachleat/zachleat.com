@@ -1,7 +1,5 @@
 ---
 title: I Wanted to Type a Number
-author: Zach Leatherman
-layout: post
 tags:
   - external
   - research

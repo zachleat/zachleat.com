@@ -1,7 +1,5 @@
 ---
 title: Forward Compatibility and JavaScript
-author: Zach Leatherman
-layout: post
 ---
 
 Many developers (myself included) complain endlessly about the problematic ECMAScript implementation that Internet Explorer uses called JScript. And after reading [one such very detailed complaint](http://blogs.msdn.com/dmassy/archive/2006/11/30/vpc-to-run-ie6-and-ie7-on-the-same-machine.aspx) in the comments on Dave Massy’s website at MSDN, and reading [Chris Wilson’s post about ECMAScript 3](http://blogs.msdn.com/ie/archive/2007/10/30/ecmascript-3-and-beyond.aspx), it has become increasingly obvious of Microsoft’s opinion on the subject of Forward Compatibility with JavaScript. It’s something they keep pounding their fists on the ground about, how they are adamant that new versions of their browser not “Break the Web.”

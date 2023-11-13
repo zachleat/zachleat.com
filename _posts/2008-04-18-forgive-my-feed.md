@@ -1,7 +1,5 @@
 ---
 title: Forgive My Feed
-author: Zach Leatherman
-layout: post
 deprecated: true
 ---
 

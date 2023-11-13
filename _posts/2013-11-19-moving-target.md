@@ -1,7 +1,5 @@
 ---
 title: 'The Elusive :target Feature Test'
-author: Zach Leatherman
-layout: post
 categories: null
 tags:
   - research

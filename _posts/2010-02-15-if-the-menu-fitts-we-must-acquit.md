@@ -1,7 +1,5 @@
 ---
 title: 'If the Menu Fitts, We Must Acquit'
-author: Zach Leatherman
-layout: post
 ---
 
 One of the first things you’ll learn when diving into a self-taught course on usability is the hugely popular Fitts’s Law. In a nutshell, Fitts’s Law tries to predict the time needed to move to a “target area” (usually a link, menu, button, or form element) as a function of the distance to the element and its size. **The bigger/closer the element, the faster a user can move to it.**

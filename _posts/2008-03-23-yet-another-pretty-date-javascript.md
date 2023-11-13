@@ -1,7 +1,5 @@
 ---
 title: Yet Another Pretty Date JavaScript
-author: Zach Leatherman
-layout: post
 description: JavaScript to show the relative difference between a time and now.
 categories:
   - project

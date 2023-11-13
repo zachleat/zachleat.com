@@ -1,7 +1,5 @@
 ---
 title: A Versatile 2KB of JS
-author: Zach Leatherman
-layout: post
 categories:
   - presentations
 tags:

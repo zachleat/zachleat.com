@@ -1,7 +1,5 @@
 ---
 title: 'Code Like the Big Boys: Flickr'
-author: Zach Leatherman
-layout: post
 deprecated: true
 ---
 
@@ -14,7 +12,7 @@ Looking at the source code of the Flickr home page is actually pretty strange. F
  [1]: http://webfx.eae.net/dhtml/pngbehavior/pngbehavior.html
  [2]: http://msdn2.microsoft.com/en-us/library/ms531018(VS.85).aspx
 
-**CSS**  
+**CSS**
 They’ve taken the same route as one of the tips from [Jonathan Snook][3], and declared all styles for an element on a single line. They use your standard css to reset to a base starting point, much like YUI’s Reset CSS we’re all familiar with. One interesting declaration I noticed prominently inside of their CSS was the .Butt css class, declared on their primary Search form button. I’m curious to know the semantic meaning behind that one.
 
  [3]: http://snook.ca/archives/html_and_css/top_css_tips/

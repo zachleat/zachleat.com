@@ -1,7 +1,5 @@
 ---
 title: 'Nursery Rhyme Code Poem [JavaScript]'
-author: Zach Leatherman
-layout: post
 ---
 
 ``` js
@@ -10,7 +8,7 @@ layout: post
     function BlindMouse() {}
     BlindMouse.prototype.tail = true;
     BlindMouse.prototype.run = function(after) {};
- 
+
     function Mice(mouse1, mouse2, mouse3)
     {
         this.mice = [];
@@ -32,19 +30,19 @@ layout: post
             }
         };
     }
- 
+
     var mice = new Mice(new BlindMouse(), new BlindMouse(), new BlindMouse());
     alert(mice.declare());
     alert(mice.declare());
- 
+
     function seeHow(they, func)
     {
         they[func]();
     }
- 
+
     seeHow(mice, 'run');
     seeHow(mice, 'run');
- 
+
     var farmersWife = function()
     {
         var weapon = 'Carving Knife';
@@ -55,16 +53,16 @@ layout: post
             }
         }
     }();
- 
+
     mice.run(farmersWife);
- 
+
     farmersWife.cutOff(mice, 'tail');
- 
+
     function haveYouSeen(obj, timeSpan)
     {
         return true;
     }
- 
+
     if(haveYouSeen('Such a Thing', 'Your Life')) {
         alert('as ' + mice.declare() + '?');
     }

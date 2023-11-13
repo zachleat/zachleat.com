@@ -1,7 +1,5 @@
 ---
 title: The Perfect GIF
-author: Zach Leatherman
-layout: post
 categories:
   - presentations
 tags:

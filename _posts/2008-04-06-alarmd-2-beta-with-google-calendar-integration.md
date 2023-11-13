@@ -1,7 +1,5 @@
 ---
 title: 'ALARMd 2 Beta, with Google Calendar Integration'
-author: Zach Leatherman
-layout: post
 project_name: ALARMd 2
 description: 'An online alarm clock that wakes you up to YouTube, Pandora, MP3 or other multimedia source. Featuring integration with Google Calendar.'
 headimage: /web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-10.50.03-PM.png
@@ -27,12 +25,12 @@ Why did I make another online alarm clock? Mostly due to missing features and li
 Here are a few new features and addressed limitations in ALARMd 2.
 
 *   Easy Alarm Mode: No more fumbling around when you just want one simple easy-to-add alarm.
-*   Google Calendar Alarm Mode: Customize your alarm schedule to your heart’s content, it will load your alarms straight from a publicly available Google Calendar. There are some great features with this: 
+*   Google Calendar Alarm Mode: Customize your alarm schedule to your heart’s content, it will load your alarms straight from a publicly available Google Calendar. There are some great features with this:
     *   Load only the first calendar event of every day
     *   Day Limiter (Example: Only load calendar events within the next 3 days)
     *   Minute Adjuster (Example: Alarm me 90 minutes before work without adding a separate event)
     *   Google does a nice job of normalizing dates as well, so you don’t have to worry about calendar time syncing. If it says 8AM on your calendar, it’s going to alarm you at 8AM on your computer’s local time.
-*   New Clock Formats: 
+*   New Clock Formats:
     *   Human Readable Clock Format: Think “Half Past Two”, or “Quarter Til Twelve”. This idea is from [Laurence Willmott’s Project “It’s about Time”][3]. I took some liberties with his labeling scheme, I hope he doesn’t mind too much.
     *   [Metric Time Format][4]: Shows the measurement Centi-days in Local Metric Time. Basically, it’s a percentage of much of the day has passed. If it’s 80.000, 80 percent of the day has passed, which coincides with 7:12 PM.
     *   Unit Circle Time Format: Displays the time in radians that would be shown if a clock were [pasted on top of a unit circle][5]. If it’s 12 o’clock, it will read π/2. After programming this one, it’s starting to seem normal in my brain. Oh, it’s 3π/2? Time to eat dinner. How the hell did it get 2π/3??
@@ -41,13 +39,13 @@ Here are a few new features and addressed limitations in ALARMd 2.
 *   The old ALARMd required an internet connection for all sources, and provided no safeguard if your internet went down whilst you were sleeping. ALARMd 2 preloads all Youtube videos in the background when the page loads using the new [Youtube JavaScript API][7]. A nice benefit of this is that the browser window no longer requires focus to play the YouTube video.
 *   Less clunky interface for adding new alarm sources.
 *   Repeat option for YouTube videos and MP3′s. Turn infinite loop on or off. Careful with this one. Don’t leave ALARMd going if you’re not going to be home when it goes off.
-*   CSS Skins, Use the really simple ones I’ve included for Red, Green, or Blue, or include your own URL to your own hosted CSS file. Have a good skin? I’ll include it in the select list and give you some props here, just link to it in the comments below. Use some CSS class hooks to spice up your skins (they are mutually exclusive). These are CSS classes that are added to the body tag to allow you to style the alarm differently depending on the alarm clock’s current state. *Future enhancements* might include more than just alarm-based hooks: Year, day of the year, and hour of the day might be useful, that way you could style the clock to show a lighter background during the day and a darker background at night. 
+*   CSS Skins, Use the really simple ones I’ve included for Red, Green, or Blue, or include your own URL to your own hosted CSS file. Have a good skin? I’ll include it in the select list and give you some props here, just link to it in the comments below. Use some CSS class hooks to spice up your skins (they are mutually exclusive). These are CSS classes that are added to the body tag to allow you to style the alarm differently depending on the alarm clock’s current state. *Future enhancements* might include more than just alarm-based hooks: Year, day of the year, and hour of the day might be useful, that way you could style the clock to show a lighter background during the day and a darker background at night.
     *   .alarmWithin30Minutes
     *   .alarmWithin15Minutes
     *   .alarmWithin5Minutes
     *   .alarmWithin1Minute
     *   .alarmActive (Alarm is being played)
-*   Still has all the old favorites: 
+*   Still has all the old favorites:
     *   Test Button to make sure the video or source is working and to check your volume.
     *   Count Down mode to show the time between now and the first alarm.
     *   Store your own list of alarm sources, using YouTube, MP3, Last.FM, or any URL (Pandora is included).

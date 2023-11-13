@@ -1,7 +1,5 @@
 ---
 title: JavaScript Code Coverage Tool for Firebug
-author: Zach Leatherman
-layout: post
 tags:
   - project
 deprecated: true
@@ -27,7 +25,7 @@ Of course, I immediately thought of [Joe Hewitt’s Firebug][3] extension for Fi
 
 So, now, to test my JavaScript code coverage, I will write automated tests using the Selenium IDE plug-in for Firefox, hit the Code Coverage button in Firebug, and try to get my Code Coverage statistics in the upper 90%’s.
 
-Screenshot Example of running the tool at yahoo.com  
+Screenshot Example of running the tool at yahoo.com
 ![Code Coverage][5]
 
  [5]: /web/wp-content/uploads/2007/04/coverage2.gif

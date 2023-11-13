@@ -1,7 +1,5 @@
 ---
 title: 'CSS 3 Text: A Tale of writing-mode Woe'
-author: Zach Leatherman
-layout: post
 tags:
   - research
   - font-loading

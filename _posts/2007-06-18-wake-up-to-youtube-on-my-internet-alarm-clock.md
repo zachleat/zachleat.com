@@ -1,7 +1,5 @@
 ---
 title: Wake up to YouTube on my Internet Alarm Clock
-author: Zach Leatherman
-layout: post
 project_name: ALARMd
 description: First iteration of the alarm clock that plays YouTube videos or other multimedia sources. Updated to ALARMd 2.
 tags:
@@ -13,7 +11,7 @@ tags:
 
  [1]: http://www.zachleat.com/web/2008/04/06/alarmd-2-beta-with-google-calendar-integration/
 
-Did you take your contacts out last night and you can’t see the time on your alarm clock from all the way across the room? 
+Did you take your contacts out last night and you can’t see the time on your alarm clock from all the way across the room?
 
 I’m here to calm your fears. Enter [ALARMD, the Internet Alarm Clock][2]. Wake up to any Youtube video (that allows embedding), a last.fm user stream or tag, or any mp3 hosted online. There are a few defaults in there, but you can add and modify your own.
 

@@ -1,7 +1,5 @@
 ---
 title: Maiden Voyage of the DOM Sailbloat
-author: Zach Leatherman
-layout: post
 categories:
   - project
 tags:
@@ -65,7 +63,7 @@ But, in the future, how might this type of problem be more easily diagnosed and 
 
 So in the spirit of exploratory development to help troubleshoot real-world problems, I decided to make a Firebug Lite plugin. This would give me an easy cross-browser tool to diagnose my problem in a familiar interface. Load up Firebug Lite, load the *DOM Sailbloat* JavaScript file, and easily spot the HTML love handles.
 
-Here’s what it looks like in action:  
+Here’s what it looks like in action:
 ![][5]
 
  [5]: /web/wp-content/uploads/2010/07/Screen-shot-2010-07-19-at-9.59.49-PM.png "Screen shot of the DOM Sailbloat Firebug Lite plugin"

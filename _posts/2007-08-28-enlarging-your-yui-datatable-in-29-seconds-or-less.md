@@ -1,7 +1,5 @@
 ---
 title: Enlarging your YUI DataTable in 29 Seconds or Less!
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - YUI 2.3.0
 categories:
@@ -37,9 +35,9 @@ I know you’re asking yourself, how the hell do I add this to my YUI DataTable?
 
 ### How To
 
-1. Include the [ymod-tableExtension-2.3.0.js][source] file.  
-2. Create your DataTable. If you don’t know how to do this, go to the [official documentation for help and examples][5].  
-3. Make sure your DataTable has the selectionMode parameter set to ‘single’. This can be achieved by passing in `{ selectionMode: 'single' }` in as the 4th argument to the DataTable constructor.  
+1. Include the [ymod-tableExtension-2.3.0.js][source] file.
+2. Create your DataTable. If you don’t know how to do this, go to the [official documentation for help and examples][5].
+3. Make sure your DataTable has the selectionMode parameter set to ‘single’. This can be achieved by passing in `{ selectionMode: 'single' }` in as the 4th argument to the DataTable constructor.
 4. Use the following code to setup your table extension:
 
  [source]: http://www.zachleat.com/Lib/ymod/ymod-tableExtension-2.3.0.js
@@ -76,7 +74,7 @@ Here’s some CSS hooks to do some styling. The expanded row will include the yu
 
 ## Limitations
 
- * Resorting removes the expanded content. Otherwise it was messing with the sort.  
+ * Resorting removes the expanded content. Otherwise it was messing with the sort.
  * It only works with single row selection mode, which allows only one row to be selected at a time. This is not the default (standard), which allows multiple rows to be selected with SHIFT or CTRL. Feel free to modify this to work with other modes!
 
 ### [Download ymod-tableExtension-2.3.0.js][source]

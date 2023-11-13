@@ -1,7 +1,5 @@
 ---
 title: 'enterval, an automatic setInterval chainer.'
-author: Zach Leatherman
-layout: post
 tags:
   - project
 ---
@@ -13,7 +11,7 @@ Instead of:
 ``` js
 window.setInterval(function(){ /* Payload! */ }, 100);
 window.setInterval(function(){ /* Payload! */ }, 100);
-window.setInterval(function(){ /* Payload! */ }, 100); 
+window.setInterval(function(){ /* Payload! */ }, 100);
 // results in three separate timers.
 ```
 
@@ -32,7 +30,7 @@ Here’s the code:
 var enterval = (function()
 {
     var intervals   = {};
- 
+
     function add(callback, interval)
     {
         var index = 0;
@@ -45,7 +43,7 @@ var enterval = (function()
         }
         return interval+':'+index;
     }
- 
+
     function call(interval)
     {
         var d = intervals[interval];
@@ -54,7 +52,7 @@ var enterval = (function()
         }
         window.setTimeout(call, interval, interval);
     }
- 
+
     return {
         set: function(callback, interval, data)
         {

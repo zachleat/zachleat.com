@@ -1,7 +1,5 @@
 ---
 title: Enlarging your YUI DataTable in 30 Seconds or Less!
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - YUI 2.2.2
 deprecated: true
@@ -19,19 +17,19 @@ Of course! In fact, we guarantee this DataTable to satisfy all of the women you 
 
 Wow! How does it work?
 
- 
+
 Click here for an example!
 
 ![Normal DataTable][3]
 
-![Expanded DataTable][4]  
+![Expanded DataTable][4]
 
 
 When you click on a row in the DataTable, it inserts a child row beneath the row with an HTML string passed in to populate the dynamic content. When you click on the parent row or the new row that was inserted, the content disappears! It’s that easy! You don’t have to apply any gross awful smelling creams, or take any large horse-sized pills for this to work! You literally only use the following code to do it:
 
 Usage Code:
 
-    var myDataTable = new YAHOO.widget.DataTable("myContainer",myColumnSet,myDataSource);  
+    var myDataTable = new YAHOO.widget.DataTable("myContainer",myColumnSet,myDataSource);
     myDataTable.subscribe("cellClickEvent", myDataTable.onEventSelectRow); // make sure you're firing the row selection event
     myDataTable.subscribe("cellClickEvent", function( e ) {
        var myCustomHtml = 'Hello, this is my expanded content.<br />:-)<br />'; // generate the string, could use an ajax call if you wanted.
@@ -58,7 +56,7 @@ Library Code:
                 if( expandedHtml != null ) newDiv.innerHTML = expandedHtml;
                 newCell.appendChild( newDiv );
                 newCell.colSpan = selectedRows[ 0 ].childNodes.length;
-                newRow.appendChild( newCell );      
+                newRow.appendChild( newCell );
                 YAHOO.util.Dom.addClass( newRow, 'ymod-expandedData' );
                 if( YAHOO.util.Dom.hasClass( selectedRows[ 0 ], 'yui-dt-odd' ) ) YAHOO.util.Dom.addClass( newRow, 'yui-dt-odd' );
                 else if( YAHOO.util.Dom.hasClass( selectedRows[ 0 ], 'yui-dt-even' ) ) YAHOO.util.Dom.addClass( newRow, 'yui-dt-even' );
@@ -80,7 +78,7 @@ Library Code:
             }
         }
     };
-     
+
     // pass in the expanded content, NOT the parent row.
     YAHOO.ymod.datatable.collapseRow = function( row )
     {

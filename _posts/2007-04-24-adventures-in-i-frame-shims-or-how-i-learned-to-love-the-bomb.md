@@ -1,7 +1,5 @@
 ---
 title: I-Frame Shims or How I Learned to Stop Worrying and Love the Bomb
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - Internet Explorer 6
 deprecated: true
@@ -17,17 +15,17 @@ Typically, when creating an I-Frame shim, you’re going to create the i-frame d
 
 Now for some caveats you might have encountered with code not matching the above:
 
-**I-Frame frameBorder attribute**  
+**I-Frame frameBorder attribute**
 Are you trying to get rid of that nasty i-frame border in Internet Explorer 6 (IE6)? Tried CSS properties? Tried setting the frameBorder attribute? It turns out that when setting the frameBorder attribute, the name of the attribute is case sensitive. Using frameborder will not work correctly, but using frameBorder (with a capital B) will give the desired result. [Source: [FlashApe][1]]
 
  [1]: http://www.visible-form.com/blog/createelement-and-events-and-iframe-borders/
 
-**HTTPS and I-Frame src attribute**  
+**HTTPS and I-Frame src attribute**
 Is your page hosted on a secure domain (https instead of just http)? Is the dynamically created iframe causing the following error message in Internet Explorer?
 
 *This page contains both secure and nonsecure items. Do you want to display the nonsecure items?*
 
-Some have suggested that changing the src attribute to point to a blank html page with no content is the solution, but that’s an extra http request on your page that is unnecessary. Others have suggested that that changing the src attribute to javascript:false works. It does, in fact, but writes the text ‘false’ to your iframe content. Others have suggested javascript:void(0) as your src attribute value [Source: [ewbi.develops][2]], but some Internet Explorer clients still have secure and nonsecure items alert popup. I have not figured out the factors that separate these Internet Explorer clients. 
+Some have suggested that changing the src attribute to point to a blank html page with no content is the solution, but that’s an extra http request on your page that is unnecessary. Others have suggested that that changing the src attribute to javascript:false works. It does, in fact, but writes the text ‘false’ to your iframe content. Others have suggested javascript:void(0) as your src attribute value [Source: [ewbi.develops][2]], but some Internet Explorer clients still have secure and nonsecure items alert popup. I have not figured out the factors that separate these Internet Explorer clients.
 
  [2]: http://ewbi.blogs.com/develops/2004/07/ie_iframe_and_h.html
 

@@ -1,7 +1,5 @@
 ---
 title: A Font Family Reunion
-author: Zach Leatherman
-layout: post
 categories:
   - project
   - font-loading

@@ -1,7 +1,5 @@
 ---
 title: Cross Domain XHR with Firefox 2
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - Firefox 2
 deprecated: true
@@ -53,7 +51,7 @@ Another solution involves setting the `capability.policy.default.XMLHttpRequest.
         user_pref("capability.policy.default.XMLHttpRequest.send", "allAccess");
         user_pref("capability.policy.default.XMLHttpRequest.setRequestHeader", "allAccess");
 
-This code was copied (with the exception of 1 line) from a source repository at [[kryogenix.org][3]]  
+This code was copied (with the exception of 1 line) from a source repository at [[kryogenix.org][3]]
 used in jackfield. It wasn’t intended to be used for this purpose, but it works.
 
  [3]: http://svn.kryogenix.org/filedetails.php?repname=kryogenix.org&path=/jackfield/trunk/htmlui/prefs.js&rev=0&sc=0

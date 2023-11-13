@@ -1,7 +1,5 @@
 ---
 title: Speed up Including Google Analytics
-author: Zach Leatherman
-layout: post
 deprecated: true
 ---
 
@@ -12,7 +10,7 @@ Have you ever noticed that your homepage hangs when including the Google Analyti
 
 Of course, remember to put near the end of your `<body>`, and not directly in your `<head>`.
 
-    
+
     <script type="text/javascript">
     (function()
     {

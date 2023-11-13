@@ -1,7 +1,5 @@
 ---
 title: Faking Onload for Link Elements
-author: Zach Leatherman
-layout: post
 tags:
   - highlight
   - research
@@ -66,7 +64,7 @@ In all of the library source code I evaluated, Internet Explorer didn’t cause 
  [3]: http://github.com/yui/yui3/blob/master/build/yui/get.js#L311
 
     // FireFox does not support the onload event for link nodes, so there is
-    // no way to make the css requests synchronous. This means that the css 
+    // no way to make the css requests synchronous. This means that the css
     // rules in multiple files could be applied out of order in this browser
     // if a later request returns before an earlier one.  Safari too.
     if ((ua.webkit || ua.gecko) && q.type === "css") {
@@ -107,12 +105,12 @@ Here’s what I came up with (using jQuery for brevity, note that this solution 
 
     var url = 'css.php',
         id = 'dynamicCss' + (new Date).getTime();
-    
+
     $('<style/>').attr({
         id: id,
         type: 'text/css'
     }).html('@import url(' + url + ')').appendTo(document.getElementsByTagName('head')[0]);
-    
+
     function poll() {
         try {
             var sheets = document.styleSheets;

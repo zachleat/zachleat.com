@@ -1,7 +1,5 @@
 ---
 title: 'Nursery Rhyme Code Poem [CSS]'
-author: Zach Leatherman
-layout: post
 ---
 
 Code Poems are fun! The trick is to take a [nursery rhyme][1] (but really, it could be any commonplace work of writing – Famous Speeches, Bible Verses, Famous Quotes, etc.), and then turn it into pseudocode. The code must follow both the programming or markup language you’re using and the rhyme as closely as possible. See how precise you can make your rhyme fit. I accept critiques and suggestions for improving me rhyme code (or you could just rewrite my rhyme as you see fit).

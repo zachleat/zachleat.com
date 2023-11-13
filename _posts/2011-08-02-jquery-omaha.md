@@ -1,7 +1,5 @@
 ---
 title: Progressive Enhancement (at jQuery Omaha)
-author: Zach Leatherman
-layout: post
 categories:
   - presentations
 metadata:

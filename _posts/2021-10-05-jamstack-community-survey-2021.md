@@ -1,6 +1,5 @@
 ---
 title: Jamstack Community Survey 2021 Results
-layout: post
 tags: eleventy
 external_url: 'https://www.11ty.dev/blog/jamstack-survey-2021/'
 ignoreExternalLinkInLayoutFile: true

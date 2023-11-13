@@ -1,7 +1,5 @@
 ---
 title: Fight Registrastination. Register to vote!
-author: Zach Leatherman
-layout: post
 categories:
   - Projects
 tags:

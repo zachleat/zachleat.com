@@ -1,7 +1,5 @@
 ---
 title: Beaten to the Spiked Punch
-author: Zach Leatherman
-layout: post
 deprecated: true
 ---
 

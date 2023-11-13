@@ -1,7 +1,5 @@
 ---
 title: Conservative Design Patterns for Form Elements
-author: Zach Leatherman
-layout: post
 ---
 
 Have you ever been to a web site that looks as though it has been built exclusively using pre-made bulky widgets cookie cuttered right onto the page? Lovely grid components, sweet over-featured WYSIWYG editors, maybe a Google or Yahoo map thrown in on the page for good measure. Conformist web sites using the conditioning forced upon them by time, executive, or work-ethic based constraints. The widgets on these websites either seem too bulky, reinventing the wheel with avant-garde user interaction for a confusing user experience, or they are just too lightweight to justify using at all.
@@ -30,7 +28,7 @@ To describe what we want, let’s first see what we have.
 
 **Existing HTML Elements**
 
-*   Buttons (clicking performs a data altering action or form submission action) 
+*   Buttons (clicking performs a data altering action or form submission action)
     *   Submit
     *   Reset
     *   Push (without attached behavior)

@@ -1,7 +1,5 @@
 ---
 title: Adobe Reverts Flex Store to Open Web
-author: Zach Leatherman
-layout: post
 deprecated: true
 ---
 

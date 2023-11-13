@@ -1,7 +1,5 @@
 ---
 title: 'Conservative Design: Option List'
-author: Zach Leatherman
-layout: post
 ---
 
 This is another post in the series entitled [Conservative Design Patterns for Form Elements][1].
@@ -16,8 +14,8 @@ Next we’ll look at a web component that is almost ubiquitous among user interf
 
 We’ll describe each of these variants separately.
 
-**Multiple Selections**:  
-![Option List Multiple Selections][2]  
+**Multiple Selections**:
+![Option List Multiple Selections][2]
 **Minimum Feature Set**:
 
  [2]: /web/wp-content/uploads/2007/02/optionlist_multiple1.gif
@@ -27,7 +25,7 @@ We’ll describe each of these variants separately.
 *   Customizable Values: optionally allow the user to add their own options (one, an integer range, or many) to the list.
 *   Other Variants: Any Select Element, as described in the original post.
 
-**Single Selection**:  
+**Single Selection**:
 ![Option List Single Selection][3]
 
  [3]: /web/wp-content/uploads/2007/02/optionlist_single1.gif
@@ -39,7 +37,7 @@ We’ll describe each of these variants separately.
 *   Customizable Value: optionally allow the user to add their own option (only one is required, since only one can be selected).
 *   Other Variants: Any Select1 Element, as described in the original post.
 
-**User Input List**:  
+**User Input List**:
 ![Option List User Input][4]
 
  [4]: /web/wp-content/uploads/2007/02/optionlist_all4.gif

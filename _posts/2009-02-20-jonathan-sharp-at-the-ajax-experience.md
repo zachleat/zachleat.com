@@ -1,7 +1,5 @@
 ---
 title: Jonathan Sharp at The Ajax Experience
-author: Zach Leatherman
-layout: post
 deprecated: true
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: 'FitText + BigText: A Tale of Two Plugins'
-author: Zach Leatherman
-layout: post
 categories:
   - font-loading
 tags:
@@ -14,7 +12,7 @@ Earlier this week, [@TrentWalton][1] [tweeted][2]:
  [1]: http://twitter.com/trentwalton
  [2]: http://twitter.com/TrentWalton/status/67972022776508416
 
-> We at [@paravelinc][3] happily present to you FitText—a jQuery plugin for inflating web type: 
+> We at [@paravelinc][3] happily present to you FitText—a jQuery plugin for inflating web type:
 
  [3]: http://twitter.com/paravelinc
 
@@ -22,7 +20,7 @@ Naturally, I wondered how it compared to BigText, a plugin of my own creation to
 
  [4]: http://twitter.com/TrentWalton/status/67989004427079682
 
-> It’s in the GitHub readme, but I want to recognize BigText from [@zachleat][5] as another font sizer for non-fluid sites: 
+> It’s in the GitHub readme, but I want to recognize BigText from [@zachleat][5] as another font sizer for non-fluid sites:
 
  [5]: http://twitter.com/zachleat
 

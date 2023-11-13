@@ -1,7 +1,5 @@
 ---
 title: Side Projects (at Awesome Camp)
-author: Zach Leatherman
-layout: post
 categories:
   - presentations
 metadata:

@@ -1,7 +1,5 @@
 ---
 title: Web Fonts for President 2016
-author: Zach Leatherman
-layout: post
 categories:
   - font-loading
 tags:

@@ -1,7 +1,5 @@
 ---
 title: 'Double Whammy: OpenID and Microformats'
-author: Zach Leatherman
-layout: post
 ---
 
 ## Microformategery

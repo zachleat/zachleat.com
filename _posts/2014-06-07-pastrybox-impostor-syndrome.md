@@ -1,7 +1,5 @@
 ---
 title: 'Pastry Box: Impostor Syndrome'
-author: Zach Leatherman
-layout: post
 tags:
   - external
 external_url: 'https://the-pastry-box-project.net/zach-leatherman/2014-june-7'

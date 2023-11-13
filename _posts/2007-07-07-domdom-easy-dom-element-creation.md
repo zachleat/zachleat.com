@@ -1,7 +1,5 @@
 ---
 title: 'DOMDom, easy DOM Element Creation'
-author: Zach Leatherman
-layout: post
 tags:
   - project
 ---
@@ -37,7 +35,7 @@ Single Node String with Style Syntax
     'div{height=80px,color=#f90,border=1px solid #000}'
 
     <div style="border: 1px solid #000; height: 80px; color: #f90"></div>
-    
+
 
 Complex Single Node String with ID, multiple classes, Style, and Namespaced Attribute)
 
@@ -150,24 +148,24 @@ Use `<$var> ` to indicate a variable, in this example `<$test>`
         DOMDom.append( str, d, { test: j } );
     }
 
-## Benchmarks 
+## Benchmarks
 
 **(If you have Firebug open, make sure it's not on the HTML tab, this will slow down the benchmark significantly)**
 
-Most of my work here has been inspired by the DomQuery and DomHelper classes written by JavaScript rock star Jack Slocum (the guy's initials are J.S. for God's sake), so I modeled my benchmark after [his benchmark hosted on his website to test the DomHelper class][3]. I'm running the same nodes he's testing on his website, so the results should be comparable. You can [test my benchmark for DOMDom here][4]. Here are some results, reporting the average of 3 results with the format of an uncompiled element first and the compiled template in square brackets.  
- 
+Most of my work here has been inspired by the DomQuery and DomHelper classes written by JavaScript rock star Jack Slocum (the guy's initials are J.S. for God's sake), so I modeled my benchmark after [his benchmark hosted on his website to test the DomHelper class][3]. I'm running the same nodes he's testing on his website, so the results should be comparable. You can [test my benchmark for DOMDom here][4]. Here are some results, reporting the average of 3 results with the format of an uncompiled element first and the compiled template in square brackets.
+
 ### DOMDom Results
 
-Internet Explorer 6: 666 ms [328 ms]  
-Firefox 2.0.0.4: 1880 ms [666 ms]  
-Safari 3.0.2 [Windows]: 546 ms [151 ms]  
+Internet Explorer 6: 666 ms [328 ms]
+Firefox 2.0.0.4: 1880 ms [666 ms]
+Safari 3.0.2 [Windows]: 546 ms [151 ms]
 Opera 9.21: 343 ms [140 ms]
 
 ### Comparative numbers from Jack Slocum's DomHelper
 
-Internet Explorer 6: 2458 ms [677 ms]  
-Firefox 2.0.0.4: 672 ms [458 ms]  
-Safari 3.0.2 [Windows]: 291 ms [119 ms]  
+Internet Explorer 6: 2458 ms [677 ms]
+Firefox 2.0.0.4: 672 ms [458 ms]
+Safari 3.0.2 [Windows]: 291 ms [119 ms]
 Opera 9.21: 370 ms [166 ms]
 
 The thing to take away from this is the question of why Satan is haunting my benchmarks? Two 666 averages? Anyway, DOMDom is quite a bit faster in the most popular browser, Internet Explorer, although I haven't tested it on IE7 yet. In Firefox, the opposite is true, with DomHelper taking the lead. Opera is comparable and Safari is faster in DomHelper as well. You can run your own tests using the links above.
@@ -196,7 +194,7 @@ If you're still reading this encyclopedia, here are some links:
 
 [*-dom suffix denoting condition or state, as in freedom, wisdom, or DOMDom*][9]
 
-**Update**: changed the variable syntax to allow variables inside of nodes (not just text). 
+**Update**: changed the variable syntax to allow variables inside of nodes (not just text).
 
 
  [3]: http://www.jackslocum.com/blog/examples/domhelper.php

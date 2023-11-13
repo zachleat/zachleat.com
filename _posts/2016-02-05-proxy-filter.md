@@ -1,7 +1,5 @@
 ---
 title: A Story About Proxy Filters
-author: Zach Leatherman
-layout: post
 ---
 
 _At local development meetups, I quite often see former coworkers. Omaha, while having a metro population of over 900,000, feels like a small town and the development community is tightly knit. At a recent meetup, I was reminded of this story by a former colleague that I though would be fun to share._

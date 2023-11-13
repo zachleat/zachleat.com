@@ -1,7 +1,5 @@
 ---
 title: Quine using XHTML and JavaScript
-author: Zach Leatherman
-layout: post
 ---
 
 Programming Hilarity! He has a [generator][1], and a pre-generated [example][2]. Wait, what’s a quine, you say?

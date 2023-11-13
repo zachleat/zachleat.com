@@ -1,7 +1,5 @@
 ---
 title: Problems with Looping through window.setInterval
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - Firefox 2
 deprecated: true

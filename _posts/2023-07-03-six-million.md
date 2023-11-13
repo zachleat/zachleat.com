@@ -1,6 +1,5 @@
 ---
 title: Six Million npm Downloads for Eleventy
-layout: post
 tags: eleventy
 external_url: 'https://www.11ty.dev/blog/six-million/'
 ignoreExternalLinkInLayoutFile: true

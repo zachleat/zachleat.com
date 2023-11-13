@@ -1,7 +1,5 @@
 ---
 title: The JavaScript Testing Challenge
-author: Zach Leatherman
-layout: post
 tags:
   - video
 medialength: 5 min
@@ -25,13 +23,13 @@ Prerequisite: Java on the classpath
 
 1.  Download the [JavaScript-Code-Katas Source (ZIP)][3] (or checkout the code from the [Github Repository][4], if you have git available)
 2.  Extract and browse to it using your operating system’s command line.
-3.  Run (Windows)  
+3.  Run (Windows)
 
-    `> JsTestDriver.bat Template` 
+    `> JsTestDriver.bat Template`
 
     Run (MacOS)
 
-    `$ ./JsTestDriver.sh Template`  
+    `$ ./JsTestDriver.sh Template`
     *This script will close Safari (be careful if you’re using Safari in other windows)*
 
 If a web browser popped up on your screen, congratulations! You have an automated testing environment set up and running. Easy, right?
@@ -55,7 +53,7 @@ Now you should see something like the following:
 
     Total 1 tests (Passed: 1; Fails: 0; Errors: 0) (2.00 ms)
       Safari 533.18.5 Mac OS: Run 1 tests (Passed: 1; Fails: 0; Errors 0) (2.00 ms)
-    
+
 
 **Notice how you didn’t have to touch any HTML boilerplate code or manually bring up a web browser?** Productivity ensues! You’ve made it this far, are you brave enough to dive into a Code Kata?
 
@@ -76,7 +74,7 @@ I’ve recorded an unmodified single-take screencast of myself performing the ka
 
 If you want to learn more a about JsTestDriver, check out their [Google Code][9] page. “But I use QUnit!” you say. That’s fine, [there is an adaptor for that][10]. Using both tools together, you won’t need to launch each individual browser manually and trigger the tests to start. It will save you time.
 
-In the interest of full disclosure, here are the issues I’ve ran into so far using JsTestDriver: 
+In the interest of full disclosure, here are the issues I’ve ran into so far using JsTestDriver:
 
  * Doesn’t apply CSS in some browsers. [Issue #81][11]
  * Defaults to quirks mode. [Issue #79][12]

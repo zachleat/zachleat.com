@@ -1,7 +1,5 @@
 ---
 title: DIY Webdings—CSS Sprites using @font-face
-author: Zach Leatherman
-layout: post
 tags:
   - highlight
   - research
@@ -10,11 +8,11 @@ tags:
 
 Almost everyone knows the Webdings font or its sibling Wingdings. Even if you don’t, chances are pretty good that it’s installed on your system.
 
-> Webdings is a symbol font designed in 1997 as a response to the need of Web designers for a fast and easy method of incorporating graphics in their pages.  
+> Webdings is a symbol font designed in 1997 as a response to the need of Web designers for a fast and easy method of incorporating graphics in their pages.
 > …
-> 
+>
 > Webdings is ideal for enriching the appearance of a Web page. Because it’s a font, it can be installed on the user’s system, (or embedded in the document itself) is fully scaleable [sic] and quick to render. It’s a perfect way of including graphics on your site without making users wait for lots of graphic files to download.
-> 
+>
 > – Source [Microsoft Typography][1]
 
  [1]: http://www.microsoft.com/typography/fonts/family.aspx?FID=5
@@ -31,8 +29,8 @@ Microsoft was onto something here, and there is a nice parallel that can be draw
 
 *   Font glyphs can only contain one color.
 *   May experience the Flash of unstyled text (FOUT) while the font is loading.
-*   Extra markup required for IE6 and IE7. While @font-face is supported in all non-extinct versions of IE, each @font-face sprite requires a corresponding text character on the screen. For instance, `A`, the A is required to display the @font-face Sprite stored under the A glyph.  
-      
+*   Extra markup required for IE6 and IE7. While @font-face is supported in all non-extinct versions of IE, each @font-face sprite requires a corresponding text character on the screen. For instance, `A`, the A is required to display the @font-face Sprite stored under the A glyph.
+
     Luckily, in most browsers we can inject a character using CSS :after/:before and the `content` property. Unfortunately, this is [not supported in IE6 or IE7][2]. I haven’t investigated whether or not this might be solved using other means (CSS expressions) yet.
 *   Safari asks for permission to use the font with a scary popup box, which I assume is a security precaution gleaned from the Windows Vista playbook.
 
@@ -57,7 +55,7 @@ It was pretty trivial to create [a font][5] with a subset of the jQuery UI icons
 
 Let me know what you think!
 
-Successfully tested on: 
+Successfully tested on:
 
  *   Google Chrome 4 (Mac)
  *   Safari 4 (Mac)

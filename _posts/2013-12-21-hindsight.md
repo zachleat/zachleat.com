@@ -1,6 +1,5 @@
 ---
 title: 'In Case You Missed It: 2013'
-layout: post
 permalink: /web/icymi/2013/
 ---
 

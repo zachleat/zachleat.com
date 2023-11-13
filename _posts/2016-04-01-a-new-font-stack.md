@@ -1,7 +1,5 @@
 ---
 title: Trying out a new Font Stack
-author: Zach Leatherman
-layout: post
 ---
 
 *Update: This was an April Fools’ Joke. While it was originally implemented site-wide, moving forward I’ve removed the code. Don’t use this font loading strategy. Feel free to use Comic Neue though, it seems solid.*

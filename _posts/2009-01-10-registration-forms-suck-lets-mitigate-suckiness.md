@@ -1,8 +1,6 @@
 ---
 title: 'Registration Forms Suck, Let&#8217;s Mitigate Suckiness'
-author: Zach Leatherman
 excerpt: 'A lot of people <strong>complain about registration forms</strong>. Some people have suggested getting rid of them altogether, allowing users to utilize login credentials from accounts they already have through OpenID.  But registration forms aren''t going away.  How can we make them more friendly?'
-layout: post
 ---
 
 ![Signup Form][1]
@@ -26,7 +24,7 @@ Please keep in mind that this power can be used for both good and evil. Essentia
 
 Once a user has typed in their **e-mail address**, we can:
 
-*   Retrieve Twitter profile information ([example shown on Chris Heilmann’s blog][5]): 
+*   Retrieve Twitter profile information ([example shown on Chris Heilmann’s blog][5]):
     *   Full Name
     *   Short Personal Description
     *   Location
@@ -35,7 +33,7 @@ Once a user has typed in their **e-mail address**, we can:
     *   Favorite Colors (used on their profile)
 *   Retrieve an **avatar** if they’ve registered for the Gravatar web service ([See my earlier post discussing this][6]).
 *   Get their [upcoming calendar events][7] from a public Google Calendar. (Perhaps not as useful for autocompleting forms, but interesting)
-*   Find their [UID on Flickr][8], which gives you [a source][9] for: 
+*   Find their [UID on Flickr][8], which gives you [a source][9] for:
     *   Full Name
     *   Location
     *   Flickr Avatar
@@ -48,8 +46,8 @@ Once a user has typed in their **e-mail address**, we can:
 
 If you know any of their social networking usernames, you can:
 
-*   [find their MyBlogLog profile][10], if they’ve linked the service to their account ([Sample query, I added my twitter][11]). Now we have: 
-    *   MyBlogLog Screen Name and ID, from which you get their [MyBlogLog profile][12]: 
+*   [find their MyBlogLog profile][10], if they’ve linked the service to their account ([Sample query, I added my twitter][11]). Now we have:
+    *   MyBlogLog Screen Name and ID, from which you get their [MyBlogLog profile][12]:
         *   Nickname
         *   Picture
         *   Age
@@ -67,10 +65,10 @@ Those are only some of the proof of concept API’s that I’ve listed here. The
 One can only imagine how many leaves are in this tree. For example:
 
 *   Facebook’s [Users.getInfo][13] ([in JavaScript][14])
-*   Yahoo’s Social Tools, get an [end user’s GUID][15] and go to town on [their profile][16]. 
-    *   Google Contacts, I didn’t even start to look through [their API’s][17]. 
+*   Yahoo’s Social Tools, get an [end user’s GUID][15] and go to town on [their profile][16].
+    *   Google Contacts, I didn’t even start to look through [their API’s][17].
     Before you start jumping the privacy fence to a self induced heart attack, remember that **all this information has been volunteered** by each individual participating in each of these services. Remember, with great power comes great responsibility.
-    
+
     What do you think? Scary or useful?
 
  [13]: http://wiki.developers.facebook.com/index.php/Users.getInfo

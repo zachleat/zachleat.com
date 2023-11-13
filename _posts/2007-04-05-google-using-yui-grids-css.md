@@ -1,7 +1,5 @@
 ---
 title: Google Using YUI Grids CSS
-author: Zach Leatherman
-layout: post
 tags:
   - highlight
 ---
@@ -44,12 +42,12 @@ The interesting thing to note is that the YUI Grids CSS source code is licensed 
 
  [6]: http://developer.yahoo.com/yui/license.html
 
-> Redistributions of source code must retain the above copyright notice, this list of conditions and the  
+> Redistributions of source code must retain the above copyright notice, this list of conditions and the
 > following disclaimer.
 
 The copyright notice they’re referring to is not included anywhere on the Google Personalized Homepage (and would seem to be a violation of the license). Now this may seem like a small infraction when we’re just talking about 4 lines of CSS code. But really, if they think the code is good enough that they will use it in such a prominent way and not write it from scratch using their own means, they should follow the licensing agreements stipulated.
 
-**Update**  
+**Update**
 Google has added the BSD license statement and attribution to Yahoo in their CSS file ([ig.css][2]):
 
 ``` css
@@ -60,7 +58,7 @@ Code licensed under the BSD License:
 http://developer.yahoo.net/yui/license.txt
 version: 2.2.0
 */
- 
+
 #modules .yui-b {
   position:static;
   display:block;

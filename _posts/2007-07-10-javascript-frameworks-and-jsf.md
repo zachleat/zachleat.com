@@ -1,14 +1,12 @@
 ---
 title: JavaScript Frameworks and JSF
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - Specified Below
 deprecated: true
 tags: []
 ---
 
-You’re programming a new web application using JSF, maybe with Facelets, maybe without. Which client-side JavaScript framework is going to work with it’s unstandardized method of assigning ID attributes to it’s elements? Here is an example of a JSF file:  
+You’re programming a new web application using JSF, maybe with Facelets, maybe without. Which client-side JavaScript framework is going to work with it’s unstandardized method of assigning ID attributes to it’s elements? Here is an example of a JSF file:
 
     <%@ taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
     <%@ taglib uri="http://java.sun.com/jsf/core" prefix="f" %>
@@ -22,7 +20,7 @@ You’re programming a new web application using JSF, maybe with Facelets, maybe
     </body>
     </html>
 
-or maybe the same thing using Facelets:  
+or maybe the same thing using Facelets:
 
     <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:h="http://java.sun.com/jsf/html"
@@ -36,7 +34,7 @@ or maybe the same thing using Facelets:
     </body>
     </html>
 
-These will both output the following result:  
+These will both output the following result:
 
     <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:ui="http://java.sun.com/jsf/facelets">

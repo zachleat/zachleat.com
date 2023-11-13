@@ -1,7 +1,5 @@
 ---
 title: Lazy Loading Web Fonts Is Probably Not What You Want
-author: Zach Leatherman
-layout: post
 categories:
   - font-loading
 tags:
@@ -29,7 +27,7 @@ Lots of great stuff in Monica’s post. However, in the introduction, she writes
 
 > Anyway, the thing about 2G is that I fully understand that it will take me 10 seconds to load a page. What sucks is the fresh rage of the following 4 seconds where instead of content I get phantom underlines, waiting for a slightly-different-sans-serif to download. Listen: it doesn’t have to be this way. You can lazy load your font.
 
-Hmm, alarm bells are starting to go off. Before I continue on, I want to say that I have an incredible amount of respect for Monica’s work. She builds [really great things](https://twitter.com/notwaldorf/status/801138269719171073). I don’t want this post to feel like I’m singling her out—she does amazing work. The reason I’m writing this post: I’ve seen this exact mistake made by many before. 
+Hmm, alarm bells are starting to go off. Before I continue on, I want to say that I have an incredible amount of respect for Monica’s work. She builds [really great things](https://twitter.com/notwaldorf/status/801138269719171073). I don’t want this post to feel like I’m singling her out—she does amazing work. The reason I’m writing this post: I’ve seen this exact mistake made by many before.
 
 One of the most confusing parts about web font loading is that the time in which the web font starts to download (and makes the text invisible using FOIT) requires more conditions to be satisfied than just a valid `@font-face` block. Whether or not a web font will download depends on a few things:
 

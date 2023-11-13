@@ -1,7 +1,5 @@
 ---
 title: 8 Things the YUI Library Needs to Win Me Back
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - YUI 2.2.2
 ---

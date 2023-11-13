@@ -1,7 +1,5 @@
 ---
 title: Internet Explorer Array.sort Unreliable
-author: Zach Leatherman
-layout: post
 tags:
   - highlight
   - research
@@ -15,12 +13,12 @@ What would you expect to be the result of executing the following code?
         // the value here doesn't matter.
         obj.push('ABCD'+j);
     }
-     
+
     // Sort the array alphabetically.
     obj.sort(function(m,p){
         m=(''+m).toLowerCase();
         p=(''+p).toLowerCase();
-     
+
         if(m > p) return 1;
         if(m < p) return -1;
         return 0;
@@ -76,7 +74,7 @@ Normally, reusing argument variables is a safe practice for primitives, since th
     obj.sort(function(m1,p1){
         var m=(''+m1).toLowerCase(),
             p=(''+p1).toLowerCase();
-     
+
         if(m > p) return 1;
         if(m < p) return -1;
         return 0;

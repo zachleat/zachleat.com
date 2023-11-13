@@ -1,7 +1,5 @@
 ---
 title: 'Architecture Choices: Callbacks and Events in JavaScript'
-author: Zach Leatherman
-layout: post
 ---
 
 *Warning: Blog Post written for Beginner and Intermediate JavaScript Developers*
@@ -57,5 +55,5 @@ As you can see above, custom events are much more extensible and customizable to
 
 Let’s Review.
 
-**Callback Functions**: Private Disposable – Limited by Design of Parent Code (Number of callbacks)  
+**Callback Functions**: Private Disposable – Limited by Design of Parent Code (Number of callbacks)
 **Custom Events**: Extensible (Any number of functions attached) – Public – Not Disposable (Functions stay attached after execution, and continue to fire when triggered)

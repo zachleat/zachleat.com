@@ -1,7 +1,5 @@
 ---
 title: 'Et tu, X-UA-Compatible?'
-author: Zach Leatherman
-layout: post
 tags:
   - highlight
   - research
@@ -89,22 +87,22 @@ Consider [a great piece of JavaScript written by James Padosley][13] to find Int
  [13]: https://gist.github.com/527683
 
     // Place this script after jQuery, but before any code that uses jQuery.browser
-    // Modified to only test for IE 6 , since jQuery only supports 6 
+    // Modified to only test for IE 6 , since jQuery only supports 6
     (function($)
     {
         if(!$.browser.msie) {
             return;
         }
-    
+
         var v = 5,
             div = document.createElement('div'),
             all = div.getElementsByTagName('i');
-    
+
         while (
             div.innerHTML = '',
             all[0]
         );
-    
+
         $.browser.version = v;
     })(jQuery);
 

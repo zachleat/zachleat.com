@@ -1,7 +1,5 @@
 ---
 title: 'Changelog #166, NEJS CONF 2015'
-author: Zach Leatherman
-layout: post
 categories:
   - presentations
 tags:

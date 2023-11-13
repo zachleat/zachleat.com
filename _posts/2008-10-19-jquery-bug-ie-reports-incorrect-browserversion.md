@@ -1,7 +1,5 @@
 ---
 title: 'jQuery Bug: IE reports incorrect $.browser.version'
-author: Zach Leatherman
-layout: post
 deprecated: true
 ---
 

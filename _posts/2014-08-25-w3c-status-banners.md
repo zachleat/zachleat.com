@@ -1,7 +1,5 @@
 ---
 title: W3C Status Banners
-author: Zach Leatherman
-layout: post
 categories:
   - project
 tags:
@@ -19,7 +17,7 @@ For really no reason whatsoever, I’ve generated a random status banner on each
 
 I’d be chuffed if the W3C actually used this code. I created a [repo for it on GitHub](https://github.com/zachleat/w3c-banners). Usage instructions and browser compatibility are included there.
 
-## Performance 
+## Performance
 
 While it should be noted that switching from image content to CSS means that you’re shifting from non-blocking to blocking content, care can be taken to load the CSS in [an asynchronous fashion](https://github.com/filamentgroup/loadCSS/) to minimize the impact on initial page render.
 

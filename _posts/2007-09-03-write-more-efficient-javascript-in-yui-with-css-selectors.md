@@ -1,7 +1,5 @@
 ---
 title: Write More Efficient Javascript in YUI with CSS Selectors
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - YUI 2.3.0
 categories:
@@ -31,7 +29,7 @@ Get the easy **ALL-IN-ONE file**: [Y2.js][2] (31 KB original source) OR [Y2-p.js
 
 Also, first you’ll need to get Jack’s nice DomQuery class.
 
-Download: [Jack Slocum’s DomQuery Standalone File (24 KB)][6] 1.0 Alpha 3 – Rev 4  
+Download: [Jack Slocum’s DomQuery Standalone File (24 KB)][6] 1.0 Alpha 3 – Rev 4
 Download: [Jack Slocum’s DomQuery Standalone File Packed (7 KB)][7] 1.0 Alpha 3 – Rev 4
 
  [6]: /Lib/Y2/DomQuery.js
@@ -323,10 +321,10 @@ Sets the horizontal placement (X), vertical placement (Y), or both (XY) of the f
     // returns void
     Y2.util.Dom.setX('div.second', 60);
     Y2.util.Dom.setX('div.second', context, 60);
-    
+
     Y2.util.Dom.setY('div.second', 60);
     Y2.util.Dom.setY('div.second', context, 60);
-    
+
     Y2.util.Dom.setXY('div.second', [120,120]);
     Y2.util.Dom.setXY('div.second', context, [120,120]);
 
@@ -337,10 +335,10 @@ Sets the horizontal placement (X), vertical placement (Y), or both (XY) of all m
     // returns void
     Y2.util.Dom.setXAll('div.second', 60);
     Y2.util.Dom.setXAll('div.second', context, 60);
-    
+
     Y2.util.Dom.setYAll('div.second', 60);
     Y2.util.Dom.setYAll('div.second', context, 60);
-    
+
     Y2.util.Dom.setXYAll('div.second', [120,120]);
     Y2.util.Dom.setXYAll('div.second', context, [120,120]);
 
@@ -351,10 +349,10 @@ Gets the horizontal placement (X), vertical placement (Y), or both (XY) of the f
     // returns Integer
     Y2.util.Dom.getX('div.second');
     Y2.util.Dom.getX('div.second', context);
-    
+
     Y2.util.Dom.getY('div.second');
     Y2.util.Dom.getY('div.second', context);
-    
+
     Y2.util.Dom.getXY('div.second');
     Y2.util.Dom.getXY('div.second', context);
 
@@ -365,10 +363,10 @@ Gets the horizontal placement (X), vertical placement (Y), or both (XY) of all m
     // returns Array of Integers
     Y2.util.Dom.getXAll('div.second');
     Y2.util.Dom.getXAll('div.second', context);
-    
+
     Y2.util.Dom.getYAll('div.second');
     Y2.util.Dom.getYAll('div.second', context);
-    
+
     Y2.util.Dom.getXYAll('div.second');
     Y2.util.Dom.getXYAll('div.second', context);
 

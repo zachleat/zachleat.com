@@ -1,15 +1,13 @@
 ---
 title: Trash that &#8220;Back to Top&#8221; Link
-author: Zach Leatherman
-layout: post
 ---
 
 > It would seem that perfection is attained not when no more can be added, but when no more can be removed.
-> 
+>
 > —Antoine de Saint Exupéry
 
-  
-  
+
+
 While most would argue that the principles espoused in the above quote might also be applied to the quote itself, it would serve us better to consider how we can **attempt perfection in our User Interface designs** instead.
 
 The most complete litany of reasons why you should spend your page weight on more useful bytes has been [compiled by Jukka Korpela][1], although he seems to both confirm that they are harmful and still use them on his site.
@@ -44,7 +42,7 @@ Don’t agree? If you’re stubborn as hell and hate simplicity, you’re going 
         // Requires jQuery
         $('#back-to-top').click(function() {
             window.scrollTo(0,0);
-         
+
             // don't change the hash if not needed
             return false;
         });
@@ -55,12 +53,12 @@ Don’t agree? If you’re stubborn as hell and hate simplicity, you’re going 
         $(function() {
             $('#back-to-top').hide();
         });
-         
+
         // If the page scrolls, we know there is a scrollbar.
         $(window).scroll(function() {
             $('#back-to-top').show();
         });
-         
+
         // For completeness, you may also want to
         //   add logic to the "resize" event.
 

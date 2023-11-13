@@ -1,7 +1,5 @@
 ---
 title: Wash your mouth out with SOAP and the YUI Connection Manager
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - YUI 2.2.2
 deprecated: true
@@ -17,7 +15,7 @@ What are we here for? Not liquid soap, perhaps some profanity. But really, you w
 
  [2]: http://developer.yahoo.com/yui/connection/
 
-How is SOAP different than any other AJAX call using the Connection Manager? Well, normally, when you perform an HTTP Post AJAX call, it is passing in a key-value pair string encoded with the normal key=value&key2=value format. But when doing a SOAP call, we want to post an XML SOAP Envelope to the server instead of this key-value pair string. In case you’re reading this article and don’t know what a SOAP Envelope looks like, I’ll post a sample here:  
+How is SOAP different than any other AJAX call using the Connection Manager? Well, normally, when you perform an HTTP Post AJAX call, it is passing in a key-value pair string encoded with the normal key=value&key2=value format. But when doing a SOAP call, we want to post an XML SOAP Envelope to the server instead of this key-value pair string. In case you’re reading this article and don’t know what a SOAP Envelope looks like, I’ll post a sample here:
 
     <s11:Envelope xmlns:s11="http://schemas.xmlsoap.org/soap/envelope/">
     <s11:Header>
@@ -31,11 +29,11 @@ Of course, it is beyond the scope of this article to argue whether a REST or a S
 So, let’s post our SOAP Envelope using the YUI Connection Manager with the code provided below:
 
     var targetUrl = 'http://www.zachleat.com/postToServer.php'; // this is not a real URL
-     
+
     var callback = {
       success: function(o)
       {
-        var root = o.responseXML.documentElement; 
+        var root = o.responseXML.documentElement;
         if( root.getElementsByTagName( 'faultstring' ).length > 0 ) // faultstring is a standard SOAP error message format
         {
           var faultstring = root.getElementsByTagName( 'faultstring' )[0].firstChild.nodeValue;
@@ -48,15 +46,15 @@ So, let’s post our SOAP Envelope using the YUI Connection Manager with the cod
         } else {
           // this is an actual success.
         }
-      }, 
+      },
       failure: function( o )
       {
         // do something with your failure.
       }
     };
-     
+
     var message = '<s11:Envelope...YOUR SOAP MESSAGE HERE';
-     
+
     // we need to set our own header.
     YAHOO.util.Connect._use_default_post_header = false;
     YAHOO.util.Connect.initHeader( 'Content-Type', 'text/xml', false );

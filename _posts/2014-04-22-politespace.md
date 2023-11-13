@@ -1,7 +1,5 @@
 ---
 title: 'Politespace, an unobtrusive alternative to input masks'
-author: Zach Leatherman
-layout: post
 categories:
   - project
 tags:

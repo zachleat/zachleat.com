@@ -1,7 +1,5 @@
 ---
 title: 'Nursery Rhyme Code Poem [PHP]'
-author: Zach Leatherman
-layout: post
 ---
 
     <?php
@@ -12,24 +10,24 @@ layout: post
             $star->size = 'little';
             $star->twinkle();
             $star->twinkle();
-     
+
             self::wonder($star, 'What are you?');
-     
+
             $world = new World();
             $world->elevation = 'So High';
             $star->setAbove($world);
-     
+
             $d = new Diamond();
             $d->position = 'In the sky';
             $star->setLike($d);
-     
+
             $star->twinkle();
             $star->twinkle();
             $star->size; // returns 'little'
-     
+
             self::wonder($star, 'What are you?');
         }
-     
+
         public static function wonder($obj, $query)
         {
             $obj->query($query);

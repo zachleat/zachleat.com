@@ -1,7 +1,5 @@
 ---
 title: 'Raging Netflix Queue, a Google Chrome Extension'
-author: Zach Leatherman
-layout: post
 headimage: /web/wp-content/uploads/2011/02/Screen-shot-2011-02-21-at-10.15.44-AM.png
 description: This Google Chrome extension will recognize movie web sites and one click on the extension will automatically add that title to your queue.
 tags:

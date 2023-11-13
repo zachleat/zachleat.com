@@ -1,7 +1,5 @@
 ---
 title: An Update to The JavaScript Testing Challenge
-author: Zach Leatherman
-layout: post
 ---
 
 ***Update**: [The JavaScript Testing Challenge Winner][1]*

@@ -1,7 +1,5 @@
 ---
 title: 'maLArquee, Bringing Back the Marquee'
-author: Zach Leatherman
-layout: post
 project_name: maLArquee
 description: A strange project creating a marquee.
 headimage: /web/wp-content/uploads/2009/12/Screen-shot-2009-12-30-at-10.50.55-PM.png
@@ -9,7 +7,7 @@ tags:
   - project
 ---
 
-What did you spend your Saturday afternoon on? Did you kick up your feet in your hammock with a nice glass of lemonade in the shade of your favorite tree and read the HTML specification? Me too! Who knew that we’d have so much in common? Since you’re obviously like me, you’ve probably wondered to yourself: where did the marquee tag go? Why isn’t the internet graced with scrolling text gently flowing like a babbling brook across the pixels of your web browser? Well since you spent your Saturday reading the HTML specifications, you would know that the `` tag was only supported by Internet Explorer, and wasn’t even a part of the HTML spec. Unbelievable right? And to think the `` tag I came to know and love wasn’t part of the spec either! I’m just offended as you, let me reassure you. 
+What did you spend your Saturday afternoon on? Did you kick up your feet in your hammock with a nice glass of lemonade in the shade of your favorite tree and read the HTML specification? Me too! Who knew that we’d have so much in common? Since you’re obviously like me, you’ve probably wondered to yourself: where did the marquee tag go? Why isn’t the internet graced with scrolling text gently flowing like a babbling brook across the pixels of your web browser? Well since you spent your Saturday reading the HTML specifications, you would know that the `` tag was only supported by Internet Explorer, and wasn’t even a part of the HTML spec. Unbelievable right? And to think the `` tag I came to know and love wasn’t part of the spec either! I’m just offended as you, let me reassure you.
 
 Well today, we’re going to solve all of that. Today, I’m going to show you a full screen web browser marquee that will both amaze and excite you. Here we go:
 
@@ -42,7 +40,7 @@ For your son or daughter: [You were adopted.][4]
 
 I knew you’d ask. If you click the Options link in the top right corner, you can scroll your text across **multiple web clients**! Input the number of clients you’d like to use and the number of your current client. Hit the update and save button to refresh your page. It will automatically parse your text accordingly (adding extra spaces at the end as blank slides if needed). You can test this using one computer by bringing up the following two links in separate windows side by side (you can use a different web browser for each link if you’d like):
 
-[maLArquee Client #1][5]  
+[maLArquee Client #1][5]
 [maLArquee Client #2][6]
 
  [5]: /Projects/Malarquee/index.html?c=1&n=2

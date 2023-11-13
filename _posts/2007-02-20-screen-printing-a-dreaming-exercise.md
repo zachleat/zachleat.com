@@ -1,7 +1,5 @@
 ---
 title: 'Screen Printing, Fake Interfaces Part 1'
-author: Zach Leatherman
-layout: post
 ---
 
 Why not error messages that tell you when your internet has been disconnected? How about one that tells you when you’ve been logged out (maybe in another window) and allow you to reauthenticate to the server right there? I don’t believe there are any architecture problems with these two ideas.

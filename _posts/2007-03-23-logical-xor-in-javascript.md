@@ -1,7 +1,5 @@
 ---
 title: Logical XOR in JavaScript
-author: Zach Leatherman
-layout: post
 tags:
   - project
 ---

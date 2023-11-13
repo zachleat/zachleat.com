@@ -1,7 +1,5 @@
 ---
 title: 'Conservative Design: Hierarchical Select'
-author: Zach Leatherman
-layout: post
 ---
 
 This is a post in a series entitled [Conservative Design Patterns for Form Elements][1].
@@ -14,12 +12,12 @@ For now, I’ll start off with an easy web component that a lot of you have prob
 
 Behavior: 2 or more select boxes working in parallel, where selection of an option in a parent dynamically adjusts the options of the child.
 
-Screenshot (Prior to any selection):  
+Screenshot (Prior to any selection):
 ![Prior to any selection][2]
 
  [2]: /web/wp-content/uploads/2007/02/hierselects1.jpg
 
-Screenshot (After an option is chosen in the first select box):  
+Screenshot (After an option is chosen in the first select box):
 ![After a selection is made][3]
 
  [3]: /web/wp-content/uploads/2007/02/hierselects2.jpg

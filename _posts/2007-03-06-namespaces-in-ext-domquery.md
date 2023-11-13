@@ -1,7 +1,5 @@
 ---
 title: Namespaces in Ext DomQuery
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - ExtJS 0.33
 deprecated: true

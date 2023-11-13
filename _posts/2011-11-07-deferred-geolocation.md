@@ -1,7 +1,5 @@
 ---
 title: Deferreds and a Better Geolocation API
-author: Zach Leatherman
-layout: post
 categories:
   - JavaScript
 ---

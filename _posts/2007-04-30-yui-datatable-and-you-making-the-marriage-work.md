@@ -1,7 +1,5 @@
 ---
 title: 'YUI DataTable and You: Making the Marriage Work'
-author: Zach Leatherman
-layout: post
 Version Specific Article:
   - YUI 2.2.2
 tags: []
@@ -20,7 +18,7 @@ Earlier I had stated that there were a few problems with the DataTable, in its c
 *   Bug #2: Single Select bug where multiple rows were being selected when column was sorted (All browsers, Sortable and SingleSelect Tables)
 *   Bug #3: Header displayed out of document flow when the window was resized (IE6, Scrollable Tables)
 *   Bug #4: Content was being displayed approximately 60-70 pixels inside the bottom table boundary. (Firefox, Scrollable Tables) Note the position of the ‘Top’ links in the test document below.
-*   Bug #5: More of a limitation than a bug, the DataTable does not allow a fixed width table with horizontal overflow. Say you have a table that you have fixed column widths for, but if the width of the real estate available for the table is less than this minimum, the table should overflow with a scroll bar, but at the same time showing the column headers if you scroll vertically. A picture is better:  
+*   Bug #5: More of a limitation than a bug, the DataTable does not allow a fixed width table with horizontal overflow. Say you have a table that you have fixed column widths for, but if the width of the real estate available for the table is less than this minimum, the table should overflow with a scroll bar, but at the same time showing the column headers if you scroll vertically. A picture is better:
     ![Scrollable][2]
 
  [2]: /web/wp-content/uploads/2007/04/yui-datatable1.gif
@@ -47,8 +45,8 @@ Bug #3, #4, and #5: I have produced an alternate DataTable file that fixes these
 
 Developed in and last tested with YUI version 2.2.2.
 
-Download it here:  
-Full (169 KB): [ymod-datatable-beta.js][5]  
+Download it here:
+Full (169 KB): [ymod-datatable-beta.js][5]
 Minimized using [JSMIN][6] (67 KB): [ymod-datatable-beta-min.js][7]
 
  [5]: /web/wp-content/uploads/2007/04/ymod-datatable-beta.js "ymod-datatable-beta.js"
