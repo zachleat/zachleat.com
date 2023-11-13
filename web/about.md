@@ -73,8 +73,8 @@ Zach is a builder for the web at [CloudCannon](https://cloudcannon.com/). He cre
 ### Deprecated but saved for Posterity
 
 <figure>
-	<img src="/img/avatar-big.png" alt="" style="width: 158px; border-radius: 50%;">
-	<figcaption>Picture taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="https://smashingconf.com/whistler-2014/">SmashingConf Whistler</a>. <a href="/img/bio.jpg">Download JPEG version</a>. Download the <a href="/img/bio.jpg">original version</a>.</figcaption>
+	<img src="/img/avatar.png" alt="" style="width: 158px; border-radius: 50%;">
+	<figcaption>Picture taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="/web/smashingconf/2014/">SmashingConf Whistler</a>. Download the <a href="/img/bio.jpg">original version</a>.</figcaption>
 </figure>
 
 <figure>
