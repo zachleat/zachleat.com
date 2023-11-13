@@ -1,49 +1,43 @@
 ---
 title: Archives
-layout: default
-tmpl: list
+layout: layouts/pagealign.liquid
 enableWebmentions: true
 eleventyImport:
   collections: ["blog-post"]
 ---
-<div class="layout-list">
-	<article>
-		<h1 class="primary-title">{{ title }}</h1>
-		<filter-container oninit>
-			<div class="flex">
-				<div class="flex-grow">
-					<a href="/search/">Search</a>
-					· <a href="/web/best-of/">Popular Posts 🔥</a>
-				</div>
-				<form class="filter-posts-form">
-					<span data-filter-results="post/posts" aria-live="polite">{{ collections.posts | size }} posts</span>&#160;
-					<label>
-						<span class="sr-only">Filter</span>
-						<select data-filter-key="category">
-							<option value="">Show all posts</option>
-							<option value="writing">Only Writing</option>
-							<option value="speaking">Only Speaking</option>
-							<option value="eleventy">Only Eleventy</option>
-							<option value="project">Only Projects</option>
-							<option value="web-components">Only Web Components</option>
-							<option value="web-fonts">Only Web Fonts</option>
-							<option value="note">Only Notes</option>
-						</select>
-					</label>
-				</form>
-			</div>
-			<ol id="main-posts-list" class="posts h-feed">
-				{% comment %}
-					liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
-				{% endcomment %}
-				{% assign year = "" %}
-				{% assign currentyear = "" %}
-				{% assign currentyearpostcount = 0 %}
-				{% assign listItems = collections.posts %}
-				{% for post in collections.posts %}
-					{% include "post-list-entry.html", hfeed: true %}
-				{% endfor %}
-			</ol>
-		</filter-container>
-	</article>
-</div><!-- /.layout-list -->
+<filter-container oninit>
+	<div class="flex">
+		<div class="flex-grow">
+			<a href="/search/">Search</a>
+			· <a href="/web/best-of/">Popular Posts 🔥</a>
+		</div>
+		<form class="filter-posts-form">
+			<span data-filter-results="post/posts" aria-live="polite">{{ collections.posts | size }} posts</span>&#160;
+			<label>
+				<span class="sr-only">Filter</span>
+				<select data-filter-key="category">
+					<option value="">Show all posts</option>
+					<option value="writing">Only Writing</option>
+					<option value="speaking">Only Speaking</option>
+					<option value="eleventy">Only Eleventy</option>
+					<option value="project">Only Projects</option>
+					<option value="web-components">Only Web Components</option>
+					<option value="web-fonts">Only Web Fonts</option>
+					<option value="note">Only Notes</option>
+				</select>
+			</label>
+		</form>
+	</div>
+	<ol id="main-posts-list" class="posts h-feed">
+		{% comment %}
+			liquidjs doesn’t do hoisting the same, so we have to hoist these loop variables ourselves.
+		{% endcomment %}
+		{% assign year = "" %}
+		{% assign currentyear = "" %}
+		{% assign currentyearpostcount = 0 %}
+		{% assign listItems = collections.posts %}
+		{% for post in collections.posts %}
+			{% include "post-list-entry.html", hfeed: true %}
+		{% endfor %}
+	</ol>
+</filter-container>

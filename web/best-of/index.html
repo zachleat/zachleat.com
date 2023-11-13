@@ -1,26 +1,16 @@
 ---
-title: Top 20 Popular Posts (sorted by Views per Day)
-layout: default
-tmpl: list
+title: Popular Posts 🔥
+layout: layouts/pagealign.liquid
 permalink: /web/best-of/
 hidePostsInSidebar: true
 ---
+<p>Ordered by pageviews per day. <a href="/web/best-of/total-views/">Sort instead by total pageviews ☀️</a>. Data previously sourced from <a href="http://2ality.com/2015/10/google-analytics-api.html">Google Analytics</a> but is now using a handrolled method. I also keep a highlight reel of the <a href="/twitter/popular/">most popular tweets</a>.</p>
 
-<div class="layout-list">
-	<article>
-		<h1 class="primary-title posts-indent">{{ "Popular Posts 🔥" | orphanWrap }}</h1>
-
-		<div class="posts-paragraph posts-indent">
-			<p>Ordered by pageviews per day. <a href="/web/best-of/total-views/">Sort instead by total pageviews ☀️</a>. Data previously sourced from <a href="http://2ality.com/2015/10/google-analytics-api.html">Google Analytics</a> but is now using a handrolled method. I also keep a highlight reel of the <a href="/twitter/popular/">most popular tweets</a>.</p>
-		</div>
-
-		<ol class="posts posts-showall posts-withimg">
-			{% assign year = "" %}
-			{% assign currentyear = "" %}
-			{% assign listItems = collections.popularPostsRanked %}
-			{% for post in collections.popularPostsRanked %}
-				{% include "post-list-entry.html", ignoreYear: "true", ignorePopularity: true, previewImages: true %}
-			{% endfor %}
-		</ol>
-	</article>
-</div><!-- /.layout-list -->
+<ol class="posts posts-showall posts-withimg">
+	{% assign year = "" %}
+	{% assign currentyear = "" %}
+	{% assign listItems = collections.popularPostsRanked %}
+	{% for post in collections.popularPostsRanked %}
+		{% include "post-list-entry.html", ignoreYear: "true", ignorePopularity: true, previewImages: true %}
+	{% endfor %}
+</ol>

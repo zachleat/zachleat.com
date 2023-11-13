@@ -1,7 +1,6 @@
 ---
 title: Why Are There So Many Static Site Generators
-layout: default
-tmpl: list
+layout: layouts/pagealign.liquid
 eleventyImport:
   collections: ["eleventy"]
 ---
@@ -11,24 +10,19 @@ eleventyImport:
 	border-radius: 1em;
 }
 </style>
-<div class="layout-list">
-	<article>
-		<h1 class="primary-title">{{ title }}</h1>
-		<div class="flex" style="--flex-gap: 1.25em;">
-			<a href="https://www.11ty.dev/" class="flexcol-1-4">
-				<img src="/web/img/11ty.png" alt="Eleventy Logo" width="1568" height="2186" class="eleventy-logo">
-			</a>
-			<div class="flexcol-3-4">
-				<p>Blog posts and tutorials for the <a href="https://www.11ty.dev/">Eleventy static site generator</a>. You can read more at the <a href="https://www.11ty.dev/news/">Eleventy News Blog</a>. This website is generated using Eleventy.</p>
-				<p class="primarylink"><a href="https://www.11ty.dev/docs/">Eleventy Documentation</a></p>
-				<p class="primarylink"><a href="https://github.com/11ty/eleventy/">GitHub</a> · <a href="https://twitter.com/eleven_ty">Twitter</a> · <a href="https://opencollective.com/11ty">Open Collective</a></p>
-			</div>
-		</div>
-		<ol class="posts">
-			{%- assign listItems = collections.eleventy | reverse %}
-			{%- for post in listItems %}
-				{% include "post-list-entry.html" %}
-			{%- endfor %}
-		</ol>
-	</article>
-</div><!-- /.layout-list -->
+<div class="flex" style="--flex-gap: 1.25em;">
+	<a href="https://www.11ty.dev/" class="flexcol-1-4">
+		<img src="/web/img/11ty.png" alt="Eleventy Logo" width="1568" height="2186" class="eleventy-logo">
+	</a>
+	<div class="flexcol-3-4">
+		<p>Blog posts and tutorials for the <a href="https://www.11ty.dev/">Eleventy static site generator</a>. You can read more at the <a href="https://www.11ty.dev/news/">Eleventy News Blog</a>. This website is generated using Eleventy.</p>
+		<p class="primarylink"><a href="https://www.11ty.dev/docs/">Eleventy Documentation</a></p>
+		<p class="primarylink"><a href="https://github.com/11ty/eleventy/">GitHub</a> · <a href="https://twitter.com/eleven_ty">Twitter</a> · <a href="https://opencollective.com/11ty">Open Collective</a></p>
+	</div>
+</div>
+<ol class="posts">
+	{%- assign listItems = collections.eleventy | reverse %}
+	{%- for post in listItems %}
+		{% include "post-list-entry.html" %}
+	{%- endfor %}
+</ol>

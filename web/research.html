@@ -1,20 +1,13 @@
 ---
 title: How Deep Can One Deep Dive Go
-layout: default
-tmpl: list
+layout: layouts/pagealign.liquid
 ---
-
-<div class="layout-list">
-	<article>
-		<h1 class="primary-title">{{ title }}</h1>
-		<p>Read also the list of things that <a href="/web/citations/">cite my work</a>.</p>
-		<ol class="posts">
-			{% assign year = "" %}
-			{% assign currentyear = "" %}
-			{% assign listItems = collections.research %}
-			{% for post in collections.research reversed %}
-				{% include "post-list-entry.html" %}
-			{% endfor %}
-		</ol>
-	</article>
-</div><!-- /.layout-list -->
+<p>Read also the list of things that <a href="/web/citations/">cite my work</a>.</p>
+<ol class="posts">
+	{% assign year = "" %}
+	{% assign currentyear = "" %}
+	{% assign listItems = collections.research %}
+	{% for post in collections.research reversed %}
+		{% include "post-list-entry.html" %}
+	{% endfor %}
+</ol>

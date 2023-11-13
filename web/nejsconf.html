@@ -1,15 +1,9 @@
 ---
 title: NEJS CONF
-layout: default
-tmpl: list
+layout: layouts/pagealign.liquid
 ---
-<div class="layout-list">
-	<article>
-		<h1 class="primary-title">{{ title }}</h1>
-		<ol class="posts">
-			{% for post in collections.nejsconf %}
-				{% include "post-list-entry.html", ignoreYear: "true" %}
-			{% endfor %}
-		</ol>
-	</article>
-</div><!-- /.layout-list -->
+<ol class="posts">
+	{% for post in collections.nejsconf %}
+		{% include "post-list-entry.html", ignoreYear: "true" %}
+	{% endfor %}
+</ol>

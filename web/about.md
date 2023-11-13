@@ -1,6 +1,6 @@
 ---
-title: I’m Zach and You’re Reading About Me
-layout: layouts/page.liquid
+title: You’re Reading About Me
+layout: layouts/pagealign.liquid
 ---
 
 This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach@zachleat.com). Peruse his [full résumé](/resume/).
