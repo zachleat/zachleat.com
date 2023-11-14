@@ -114,7 +114,9 @@ function getPageViewsPerDayRanks(analyticsData) {
 
 			entry.rankTotal = j;
 			j++;
+		}
 
+		if(entry.pageViews) {
 			totalPageViews += entry.pageViews;
 		}
 	}

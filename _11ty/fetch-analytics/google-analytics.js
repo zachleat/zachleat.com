@@ -5,7 +5,8 @@ const analytics = google.analytics('v3');
 
 const VIEW_ID = "ga:966455";
 const START_DATE = "2006-09-05";
-const MAX_RESULTS = 1000;
+// the long tail is very long and it didn’t change the results to add more entries here.
+const MAX_RESULTS = 5000;
 
 if(!process.env.GOOGLE_AUTH_CLIENT_EMAIL || !process.env.GOOGLE_AUTH_PRIVATE_KEY) {
 	throw new Error("Missing environment variables for Google auth.")
