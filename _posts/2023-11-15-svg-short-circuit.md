@@ -3,13 +3,9 @@ title: "A New Technique for Image Optimization: SVG Short Circuiting"
 video_title: Stop worrying about huge image uploads with Eleventy Image and CloudCannon CMS
 tags:
   - cloudcannon
-  - video
-medialength: 6 min
 metadata:
   youtubeId: Dsd831CSazA
 opengraphSkipFace: true
-external_url: https://cloudcannon.com/blog/automatically-optimize-your-images-with-eleventy-image-and-cloudcannon/
-external_url_location: end
 ---
 Working on an [Image Optimization tutorial for CloudCannon (using Eleventy)](https://cloudcannon.com/blog/automatically-optimize-your-images-with-eleventy-image-and-cloudcannon/), I stumbled into what I think is a neat little trick for automated image optimization.
 
@@ -193,3 +189,9 @@ With a nod to the tech stack, here are a few things I used to construct the demo
 <div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ video_title }}"></youtube-lite-player></div>
 
 [{% indieAvatar "https://youtube.com/" %}Watch on YouTube: _{{ video_title }}_](https://www.youtube.com/watch?v={{ metadata.youtubeId }})
+
+---
+
+_Originally posted on:_
+
+{% originalPostEmbed "https://cloudcannon.com/blog/automatically-optimize-your-images-with-eleventy-image-and-cloudcannon/" %}
