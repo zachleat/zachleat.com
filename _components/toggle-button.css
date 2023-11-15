@@ -98,8 +98,3 @@
 	flex-grow: 999;
 	flex-basis: 20em; /* 320px /16 */
 }
-@media (max-width: 21.8125em) { /* 349px */
-	.toggle-features-form .speedlify-requests {
-		display: none;
-	}
-}
