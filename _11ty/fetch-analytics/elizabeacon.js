@@ -15,21 +15,26 @@ module.exports.queryData = async function queryData() {
 	// check if the cache is fresh within the last day
 	let data;
 
-	if(asset.isCacheValid("6h")) {
+	if(asset.isCacheValid("12h")) {
 		console.log( "[elizabeacon] Using cached data." );
 		data = await asset.getCachedValue();
 	} else {
-		let query = await client.query(
-			q.Map(
-				q.Paginate(q.Documents(q.Collection('hits')), {
-					size: 10000, // maximum 10k documents
-				}),
-				q.Lambda(show => q.Get(show))
-			)
-		);
-		data = query.data;
+		try {
+			let query = await client.query(
+				q.Map(
+					q.Paginate(q.Documents(q.Collection('hits')), {
+						size: 10000, // maximum 10k documents
+					}),
+					q.Lambda(show => q.Get(show))
+				)
+			);
+			data = query.data;
 
-		await asset.save(data, "json");
+			await asset.save(data, "json");
+		} catch(e) {
+			console.error( "[elizabeacon] Error:", e );
+			data = await asset.getCachedValue();
+		}
 	}
 
 	let ret = {};
