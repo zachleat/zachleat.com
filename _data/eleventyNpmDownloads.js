@@ -22,7 +22,9 @@ module.exports = async function() {
 		for(let year = START_YEAR, k = (new Date).getFullYear(); year<=k; year++) {
 			count += await getDownloadsForYear(year);
 		}
-		console.log( `[zachleat.com] Found ${count} npm downloads for @11ty/eleventy.` );
+		if(process.env.ELEVENTY_RUN_MODE === "build") {
+			console.log( `[zachleat.com] Found ${count} npm downloads for @11ty/eleventy.` );
+		}
 		return {
 			downloads: count
 		};
