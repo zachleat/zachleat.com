@@ -79,19 +79,22 @@
 .toggle-features-form {
 	margin-top: .5em;
 }
+.toggle-features-form is-land {
+	display: flex;
+}
 .toggle-features-form button {
 	white-space: nowrap;
 }
-.toggle-features-form > .lo {
+.toggle-features-form > .fl {
 	--lo-margin-h: 1em;
 	--lo-margin-v: .5em;
 	align-items: center;
 }
-.toggle-features-form > .lo > * {
+.toggle-features-form > .fl > * {
 	display: flex;
 	flex-grow: 0;
 }
-.toggle-features-form .lo .speedlify-link {
+.toggle-features-form .fl .speedlify-link {
 	flex-grow: 999;
 	flex-basis: 20em; /* 320px /16 */
 }

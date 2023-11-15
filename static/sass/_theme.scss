@@ -1128,15 +1128,11 @@ a[href]:hover .project_img {
 
 /* Footer */
 .footer {
-	margin-top: 2em;
+	margin-top: clamp(2em, 15vh, 4em);
 	margin-bottom: 1em;
 	font-size: 1rem;
 	line-height: 130%;
 	@include webfontItalic;
-
-	@media (min-width: $twoColLayoutMinWidth) {
-		margin-top: 30vh;
-	}
 }
 
 /* Tags */
