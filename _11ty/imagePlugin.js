@@ -10,7 +10,7 @@ function getCryptoHash(src) {
 async function imageShortcode(attrs = {}, options = {}) {
 	options = Object.assign({},{
 		widths: [null],
-		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "webp", "jpeg"] : ["webp", "jpeg"],
+		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "webp", "jpeg"] : ["webp"],
 		urlPath: "/img/built/",
 		outputDir: "./_site/img/built/",
 		sharpAvifOptions: {},

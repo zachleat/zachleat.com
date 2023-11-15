@@ -9,7 +9,7 @@ function getImageOptions(username) {
 		widths: [72],
 		urlPath: "/img/avatars/",
 		outputDir: "./img/avatars/",
-		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "webp", "jpeg"] : ["webp", "jpeg"],
+		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "webp", "jpeg"] : ["webp"],
 		dryRun: true,
 		cacheDuration: "*",
 		filenameFormat: function(id, src, width, format) {

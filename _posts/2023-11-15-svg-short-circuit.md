@@ -21,7 +21,6 @@ Read more about the [Eleventy Image options for SVG](https://www.11ty.dev/docs/p
 
 <p data-demo-label="Related Post" class="livedemo">Astute readers might remember the post <a href="/web/vector-raster-split/"><em>Vector? Raster? Why not Both!</em></a> which detailed an approach to manually subset and overlay an image as two separate layers: a vector layer and a raster layer.</p>
 
-
 ## SVG Short Circuiting Examples
 
 ### Mexico
