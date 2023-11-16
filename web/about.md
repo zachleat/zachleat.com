@@ -8,8 +8,8 @@ bioImageAttrs:
   alt: Just a picture of my face.
 avatarBioImageAttrs:
   src: "./img/avatar-2017-big.png"
-  alt: ""
-  style: "max-width: 260px; border-radius: 50%;"
+  alt: "Photo of Zach Leatherman’s Bearded Face"
+  class: "about-primary-avatar"
 deprecatedBioImageAttrs:
   src: "./img/avatar.png"
   alt: A very bearded picture of my face.
@@ -25,7 +25,20 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 
 {% include "social.html" %}
 
-<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" width="516" height="516" style="max-width: 260px; border-radius: 50%; margin: 2em auto 0; display: block">
+<style>
+.about-primary-avatar {
+	display: block;
+	max-width: 260px;
+	border-radius: 50%;
+	margin: 2em auto 0;
+}
+figure .about-primary-avatar {
+	margin: 0;
+	border-radius: 0;
+}
+</style>
+
+{% image avatarBioImageAttrs %}
 
 ## Bio
 
