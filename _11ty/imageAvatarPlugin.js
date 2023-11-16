@@ -4,12 +4,12 @@ if(process.env.ELEVENTY_PRODUCTION) {
 	eleventyImage.concurrency = 20;
 }
 
-function getImageOptions(username) {
+function getAvatarImageOptions(username) {
 	return {
 		widths: [72],
 		urlPath: "/img/avatars/",
 		outputDir: "./img/avatars/",
-		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "jpeg"] : ["auto"],
+		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "jpeg"] : ["jpeg"],
 		dryRun: true,
 		cacheDuration: "*",
 		filenameFormat: function(id, src, width, format) {
@@ -21,7 +21,7 @@ function getImageOptions(username) {
 async function imgAvatar(username, classes = "") {
 	// We know where the images will be
 	let fakeUrl = `https://twitter.com/${username}.jpg`;
-	let imgData = eleventyImage.statsByDimensionsSync(fakeUrl, 400, 400, getImageOptions(username));
+	let imgData = eleventyImage.statsByDimensionsSync(fakeUrl, 400, 400, getAvatarImageOptions(username));
 	let markup = eleventyImage.generateHTML(imgData, {
 		alt: `${username}’s Avatar`,
 		class: "z-avatar" + (classes ? ` ${classes}` : ""),

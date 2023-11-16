@@ -1,6 +1,8 @@
 ---
 title: You’re Reading About Me
 layout: layouts/pagealign.liquid
+largeImageOptions:
+  widths: [400, 800, "auto"]
 bioImageAttrs:
   src: "./img/bio-2017.jpg"
   alt: Just a picture of my face.
@@ -66,7 +68,7 @@ Zach is a builder for the web at [CloudCannon](https://cloudcannon.com/). He cre
 ## Pictures
 
 <figure>
-	{% image bioImageAttrs %}
+	{% image bioImageAttrs, largeImageOptions %}
 	<figcaption>Picture taken by <a href="https://www.facebook.com/andrey.davydchyk">Andrey Davydchyk</a> at <a href="https://www.facebook.com/cssminskjs/">CSS Minsk JS</a>. <a href="/img/bio-2017.jpg">Download JPEG version</a>.</figcaption>
 </figure>
 

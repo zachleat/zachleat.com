@@ -6,7 +6,7 @@ imgNoPictureOptions:
   formats:
     - jpeg
   widths:
-    - null
+    - auto
 imageAttr:
   banner:
     src: ./web/img/posts/layout-shift/banner.png

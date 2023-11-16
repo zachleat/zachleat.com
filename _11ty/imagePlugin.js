@@ -23,6 +23,10 @@ async function imageShortcode(attrs = {}, options = {}) {
 		decoding: "async",
 	}, attrs);
 
+	if(options.widths.length > 0) {
+		imageAttributes.sizes = "(min-width: 64em) 50vw, 100vw"
+	}
+
 	// You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
 	return Image.generateHTML(metadata, imageAttributes, {
 		whitespaceMode: "inline"
