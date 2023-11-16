@@ -1,6 +1,22 @@
 ---
 title: You’re Reading About Me
 layout: layouts/pagealign.liquid
+bioImageAttrs:
+  src: "./img/bio-2017.jpg"
+  alt: Just a picture of my face.
+avatarBioImageAttrs:
+  src: "./img/avatar-2017-big.png"
+  alt: ""
+  style: "max-width: 260px; border-radius: 50%;"
+deprecatedBioImageAttrs:
+  src: "./img/avatar.png"
+  alt: A very bearded picture of my face.
+veryDeprecatedBioImageAttrs:
+  src: "./img/avatar-old.png"
+  alt: An avatar with zachleat vertical text aside.
+web367ImageAttrs:
+  src: "./web/img/web367.png"
+  alt: "The very first logo for this blog: Web 3.0 6 Bladed Razors and 7 Minute Abs"
 ---
 
 This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach@zachleat.com). Peruse his [full résumé](/resume/).
@@ -49,40 +65,29 @@ Zach is a builder for the web at [CloudCannon](https://cloudcannon.com/). He cre
 
 ## Pictures
 
-<figure class="fullwidth">
-	<picture>
-		<source type="image/webp" srcset="/img/bio-2017.webp">
-		<img src="/img/bio-2017.jpg" alt="Just a picture of my face.">
-	</picture>
+<figure>
+	{% image bioImageAttrs %}
 	<figcaption>Picture taken by <a href="https://www.facebook.com/andrey.davydchyk">Andrey Davydchyk</a> at <a href="https://www.facebook.com/cssminskjs/">CSS Minsk JS</a>. <a href="/img/bio-2017.jpg">Download JPEG version</a>.</figcaption>
 </figure>
 
 <figure>
-	<img src="/img/avatar-2017-big.png" alt="" style="max-width: 260px; border-radius: 50%;">
+	{% image avatarBioImageAttrs %}
 	<figcaption>Modified from above for avatar use.</figcaption>
 </figure>
-
-<!-- <figure>
-	<picture>
-		<source type="image/webp" srcset="/img/reading.webp">
-		<img src="/img/reading.jpg" alt="Reading in the book store, Coding with JavaScript for Dummies.">
-	</picture>
-	<figcaption><a href="/img/reading.jpg">Download JPEG version</a>.</figcaption>
-</figure> -->
 
 ### Deprecated but saved for Posterity
 
 <figure>
-	<img src="/img/avatar.png" alt="" style="width: 158px; border-radius: 50%;">
+	{% image deprecatedBioImageAttrs %}
 	<figcaption>Picture taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="/web/smashingconf/2014/">SmashingConf Whistler</a>. Download the <a href="/img/bio.jpg">original version</a>.</figcaption>
 </figure>
 
 <figure>
-	<img src="/img/avatar-old.png" alt="" style="width: 158px">
+	{% image veryDeprecatedBioImageAttrs %}
 	<figcaption>Deprecated.</figcaption>
 </figure>
 
 <figure>
-	<img src="/web/img/web367.png" alt="Web 367 Logo" style="width: 158px">
+	{% image web367ImageAttrs %}
 	<figcaption>This web site was started in 2007 and was originally titled <strong>Web 3.0, 6 Bladed Razors, and 7 Minute Abs</strong>.</figcaption>
 </figure>

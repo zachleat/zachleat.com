@@ -2,14 +2,13 @@
 title: Vector? Raster? Why Not Both!
 seo:
   openGraphBackgroundImage: /web/img/posts/vector-raster-split/preview.jpg
+imageAttributes:
+  src: "./web/img/posts/vector-raster-split/preview.png"
+  alt: "Screenshot of jamstackconf.com"
 ---
 This week I ran into an interesting class of problem that—in hindsight—could use a much better workflow. Does it exist?
 
-<picture>
-  <source type="image/webp" srcset="/web/img/posts/vector-raster-split/preview.webp 1159w">
-  <source type="image/png" srcset="/web/img/posts/vector-raster-split/preview.png 1159w">
-  <img src="/web/img/posts/vector-raster-split/preview.png" alt="Screenshot of jamstackconf.com" loading="lazy" decoding="async" width="1159" height="849">
-</picture>
+{% image imageAttributes %}
 
 It has to do with the hero image on the right side of the home page on jamstackconf.com. We work using Figma on the marketing team at Netlify and my first attempt at exporting this image was fraught with peril.
 

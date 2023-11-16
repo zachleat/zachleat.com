@@ -10,7 +10,7 @@ function getCryptoHash(src) {
 async function imageShortcode(attrs = {}, options = {}) {
 	options = Object.assign({},{
 		widths: [null],
-		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "webp", "jpeg"] : ["webp"],
+		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "jpeg"] : ["auto"],
 		urlPath: "/img/built/",
 		outputDir: "./_site/img/built/",
 		sharpAvifOptions: {},
@@ -84,7 +84,8 @@ function opengraphImageHtml(targetUrl) {
 	let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl)}/`;
 
 	let options = {
-		formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
+		// careful, AVIF here is a little slow!
+		formats: ["webp", "jpeg"],
 		widths: [375, 650], // 1200 is not used, max rendered size is about 450px.
 		urlFormat: function({width, format}) {
 			let size;
@@ -114,10 +115,10 @@ function getImageServiceHtml(targetUrl, width, height, outputWidths = [], alt=""
 	let fullUrl = `https://v1.image.11ty.dev/${encodeURIComponent(targetUrl)}/`;
 
 	let options = {
-		formats: ["webp", "jpeg"], // careful, AVIF here is a little slow!
+		// careful, AVIF here is a little slow!
+		formats: ["webp", "jpeg"],
 		widths: outputWidths,
 		urlFormat: function({width, format}) {
-
 			return `${fullUrl}${format}/${width}/`;
 		}
 	};
@@ -145,6 +146,7 @@ function getScreenshotUrlFromPath(path, options) {
 function screenshotImageHtmlFullUrl(fullUrl) {
 	let targetUrl = getScreenshotUrl(fullUrl);
 	let options = {
+		// format here is static
 		formats: ["jpeg"],
 		widths: ["auto"],
 		urlFormat: function() {
