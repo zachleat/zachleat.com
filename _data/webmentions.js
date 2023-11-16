@@ -16,14 +16,14 @@ async function fetchWebmentions(since) {
 	if (!domain || domain === 'myurl.com') {
 		// If we dont have a domain name, abort
 		console.warn(
-			'unable to fetch webmentions: no domain specified in metadata.'
+			'[zachleat.com] unable to fetch webmentions: no domain specified in metadata.'
 		);
 		return false;
 	}
 	if (!TOKEN) {
 		// If we dont have a domain access token, abort
 		console.warn(
-			'unable to fetch webmentions: no access token specified in environment.'
+			'[zachleat.com] unable to fetch webmentions: no access token specified in environment.'
 		);
 		return false;
 	}
@@ -34,12 +34,12 @@ async function fetchWebmentions(since) {
 	if (since) {
 		url += `&since=${since}`;
 	}
-	console.log( `Fetching webmentions from: ${url}` );
+	console.log( `[zachleat.com] Fetching webmentions from: ${url}` );
 
 	const response = await fetch(url);
 	if (response.ok) {
 		const feed = await response.json();
-		console.log(`${feed.children.length} webmentions fetched from ${API_ORIGIN}`);
+		console.log(`[zachleat.com] ${feed.children.length} webmentions fetched from ${API_ORIGIN}`);
 		return feed;
 	}
 
@@ -58,7 +58,7 @@ function writeToCache(data) {
 	// write data to cache json file
 	fs.writeFile(filePath, fileContent, err => {
 		if (err) throw err;
-		console.log(`webmentions cached to ${filePath}`);
+		console.log(`[zachleat.com] webmentions cached to ${filePath}`);
 	});
 }
 
@@ -118,7 +118,7 @@ module.exports = async function({ eleventy }) {
 			};
 
 			writeToCache(webmentions);
-			console.log( `Wrote ${webmentions.count} webmentions to cache.` );
+			console.log( `[zachleat.com] Wrote ${webmentions.count} webmentions to cache.` );
 			return webmentions;
 		}
 	}

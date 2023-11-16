@@ -21,7 +21,7 @@
     {%- if webmention.published %}{% else if webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}
-    {{ webmention.content.text | sanitizeHTML | randomCase: sentiment | truncate }}
+    {{ webmention.content.text | escape | randomCase: sentiment | truncate }}
   </p></div>
   {% endif %}
 
