@@ -1645,13 +1645,11 @@ details.livedemo-dark > summary {
 .filter-posts-form {
 	display: flex;
 	flex-wrap: wrap;
-	opacity: .4;
-	pointer-events: none;
 	margin-bottom: 1em;
 }
-.filter-container--js .filter-posts-form {
-	opacity: 1;
-	pointer-events: auto;
+filter-container:not(:defined) .filter-posts-form {
+	opacity: .4;
+	pointer-events: none;
 }
 select[data-filter-key] {
 	font-size: inherit;
