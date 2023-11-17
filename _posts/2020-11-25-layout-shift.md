@@ -58,7 +58,7 @@ This changes our previously mentioned Step 1, the page’s initial render, show 
 
 We also split the JavaScript code for the component into two separate pieces: one piece to check whether or not the user has the preference to hide and a separate Web Component to bind the events.
 
-_Update_: I’ve packaged up the code below and [put it on GitHub for re-use](https://github.com/zachleat/herald-of-the-dog).
+_Update_: I’ve packaged up the code below and [put it on GitHub for re-use](https://github.com/zachleat/announcement-banner).
 
 ### CSS and HTML
 
