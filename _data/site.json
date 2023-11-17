@@ -4,7 +4,9 @@
 	"avatarImgAttrs": {
 		"src": "./img/avatar-2017.png",
 		"alt": "Zach’s ugly mug (his face)",
-		"class": "my-avatar"
+		"class": "my-avatar",
+		"loading": "eager",
+		"fetchpriority": "high"
 	},
 	"domain": "www.zachleat.com",
 	"url": "https://www.zachleat.com/"

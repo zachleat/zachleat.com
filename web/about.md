@@ -10,6 +10,12 @@ avatarBioImageAttrs:
   src: "./img/avatar-2017-big.png"
   alt: "Photo of Zach Leatherman’s Bearded Face"
   class: "about-primary-avatar"
+  loading: eager
+  fetchpriority: high
+avatarBioImageAttrsSecondary:
+  src: "./img/avatar-2017-big.png"
+  alt: "Photo of Zach Leatherman’s Bearded Face"
+  class: "about-secondary-avatar"
 deprecatedBioImageAttrs:
   src: "./img/avatar.png"
   alt: A very bearded picture of my face.
@@ -32,9 +38,10 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 	border-radius: 50%;
 	margin: 2em auto 0;
 }
-figure .about-primary-avatar {
+.about-secondary-avatar {
+	display: block;
+	max-width: 260px;
 	margin: 0;
-	border-radius: 0;
 }
 </style>
 
@@ -86,7 +93,7 @@ Zach is a builder for the web at [CloudCannon](https://cloudcannon.com/). He cre
 </figure>
 
 <figure>
-	{% image avatarBioImageAttrs %}
+	{% image avatarBioImageAttrsSecondary %}
 	<figcaption>Modified from above for avatar use.</figcaption>
 </figure>
 
