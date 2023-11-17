@@ -27,6 +27,8 @@ imageAttr:
     src: ./web/img/posts/layout-shift/layout-shifts.png
     alt: 'Graph of Layout Shifts: previous has .35 and new has 0'
 ---
+_Updated on 17 November 2023 to simplify the CSS to use `:defined`_
+
 On the Netlify web site, we have a little banner that appears at the top to drive traffic to new and exciting things happening in Netlify-land.
 
 <div class="livedemo livedemo-mixed livedemo-auto" data-demo-label="Announcement Banner">{% image imageAttr.banner %}</div>
@@ -69,13 +71,12 @@ We use opacity to toggle the close button so that it doesn’t reflow the compon
 announcement-banner[hidden] {
   display: none;
 }
-[data-banner-close] {
+/* The close button will not be visible until the component is registered,
+ * preventing ghost clicks on the button before the event listener is added.
+ */
+announcement-banner:not(:defined) [data-banner-close] {
   opacity: 0;
   pointer-events: none;
-}
-.banner--show-close [data-banner-close] {
-  opacity: 1;
-  pointer-events: auto;
 }
 ```
 
@@ -105,22 +106,13 @@ if(savedCtaUrl === ctaUrl) {
 ```js
 class Banner extends HTMLElement {
   connectedCallback() {
-    // No matter when this runs, the close button will not be visible
-    // until after this class is added—prevents ghost clicks on the button
-    // before the event listener is added.
-    this.classList.add("banner--show-close");
-
-    let button = this.getButton();
+    let button = this.querySelector("[data-banner-close]");
     if(button) {
       button.addEventListener("click", () => {
         this.savePreference();
         this.close();
       });
     }
-  }
-
-  getButton() {
-    return this.querySelector("[data-banner-close]");
   }
 
   savePreference() {
