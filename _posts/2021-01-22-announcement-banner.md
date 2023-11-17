@@ -5,8 +5,8 @@ tags:
   - project
   - web-components
 ---
-Lovingly named "Herald of the Dog", this is an announcement bar/banner component with a Hide button that avoids content layout shifts.
+~~Lovingly named "Herald of the Dog"~~ This is an announcement bar/banner component with a Hide button that avoids content layout shifts.
 
-* [Blog Post: Ruthlessly Eliminating Layout Shift on netlify.com](https://www.zachleat.com/web/layout-shift/)
 * [Demo](https://zachleat.github.io/announcement-banner/demo.html)
 * [Repository](https://github.com/zachleat/announcement-banner)
+* [Blog Post: Ruthlessly Eliminating Layout Shift on netlify.com](https://www.zachleat.com/web/layout-shift/)
