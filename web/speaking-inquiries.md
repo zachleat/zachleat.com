@@ -1,6 +1,6 @@
 ---
 title: I Can Say Words Out Loud At Your Event
-layout: page
+layout: layouts/page.liquid
 date: Last Modified
 permalink: /web/speaking/inquiries/
 ---

@@ -1,7 +1,7 @@
 ---
 title: License
 author: Zach Leatherman
-layout: page
+layout: layouts/page.liquid
 ---
 
 The MIT License (MIT)

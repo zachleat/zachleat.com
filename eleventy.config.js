@@ -27,7 +27,7 @@ module.exports = function(eleventyConfig) {
 
 	// More in .eleventyignore
 	if(!process.env.ELEVENTY_PRODUCTION) {
-		eleventyConfig.ignores.add("./web/follow/*");
+		eleventyConfig.ignores.add("./follow/*");
 		eleventyConfig.ignores.add("./web/feed/*");
 		eleventyConfig.ignores.add("./web/opengraph-images.liquid");
 	}
@@ -110,9 +110,8 @@ module.exports = function(eleventyConfig) {
 	}
 
 	/* LAYOUTS */
-	eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
-	eleventyConfig.addLayoutAlias('page', 'layouts/page.liquid');
-	eleventyConfig.addLayoutAlias('post', 'layouts/post.liquid');
+	eleventyConfig.addLayoutAlias("default", "layouts/default.liquid");
+	eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
 
 	/* FILTERS */
 	eleventyConfig.addFilter("leftpad", (str, length = 3) => {
@@ -241,14 +240,6 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addLiquidFilter("getPostCountForYear", (posts, year) => {
 		return posts.filter(function(post) {
-			if(!post.data.tags) {
-				return true;
-			}
-			if(post.data.tags.includes("draft")) {
-				return false;
-			}
-			return true;
-		}).filter(function(post) {
 			return post.data.page.date.getFullYear() === parseInt(year, 10);
 		}).length;
 	});
@@ -259,14 +250,6 @@ module.exports = function(eleventyConfig) {
 		for(let j = startYear; j <= (new Date()).getFullYear(); j++) {
 			let year = j;
 			let count = posts.filter(function(post) {
-				if(!post.data.tags) {
-					return true;
-				}
-				if(post.data.deprecated ||post.data.tags.includes("draft")) {
-					return false;
-				}
-				return true;
-			}).filter(function(post) {
 				return post.data.page.date.getFullYear() === parseInt(year, 10);
 			}).length;
 			years.push(count);
@@ -278,14 +261,6 @@ module.exports = function(eleventyConfig) {
 		let months = [];
 		for(let month = 0; month < 12; month++) {
 			let count = posts.filter(function(post) {
-				if(!post.data.tags) {
-					return true;
-				}
-				if(post.data.deprecated ||post.data.tags.includes("draft")) {
-					return false;
-				}
-				return true;
-			}).filter(function(post) {
 				let d = post.data.page.date;
 				return d.getFullYear() === parseInt(year, 10) && d.getMonth() === month;
 			}).length;
@@ -407,11 +382,6 @@ module.exports = function(eleventyConfig) {
 	function getPosts(collectionApi) {
 		return collectionApi.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
 			return !!item.data.permalink;
-		}).filter(function(item) {
-			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
-				return false;
-			}
-			return true;
 		});
 	}
 
@@ -434,8 +404,7 @@ module.exports = function(eleventyConfig) {
 		return getPosts(collection).filter(function(item) {
 			return !item.data.tags ||
 				!item.data.deprecated &&
-				item.data.tags.indexOf("future-event") === -1 &&
-				item.data.tags.indexOf("draft") === -1;
+				item.data.tags.indexOf("future-event") === -1;
 		});
 	});
 
@@ -493,10 +462,6 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("writing", function(collection) {
 		return collection.getSortedByDate().reverse().filter(item => {
-			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
-				return false;
-			}
-
 			return isWriting(item);
 		});
 	});
@@ -504,10 +469,6 @@ module.exports = function(eleventyConfig) {
 		let posts = collection.getSortedByDate().reverse();
 		let items = [];
 		for( let item of posts ) {
-			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
-				continue;
-			}
-
 			if( !!item.inputPath.match(/\/_posts\//)) {
 				items.push( item );
 				if( items.length >= 5 ) {
@@ -520,10 +481,6 @@ module.exports = function(eleventyConfig) {
 	// font-loading category mapped to collection
 	eleventyConfig.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
-			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
-				return false;
-			}
-
 			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 || hasTag(item, "font-loading");
 		}).reverse();
 	});
@@ -531,10 +488,6 @@ module.exports = function(eleventyConfig) {
 	// presentations category mapped to collection
 	eleventyConfig.addCollection("presentations", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
-			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
-				return false;
-			}
-
 			return isSpeaking(item);
 		}).reverse();
 	});
