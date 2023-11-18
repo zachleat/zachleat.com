@@ -125,6 +125,17 @@ My first thought was to the [`Intl.DateTimeFormat`](https://developer.mozilla.or
 
 <strong>All of the components above use progressive enhancement</strong> and fallback to the nested HTML content before/without JavaScript—the crux of the humble HTML Web Component.
 
+### A Very Short History of HTML Web Components
+
+_We settled on this name very quickly, ok._
+
+* [{% indieAvatar "https://fediverse.zachleat.com/@zachleat/111211208759538433" %}Naming party on Mastodon](https://fediverse.zachleat.com/@zachleat/111211208759538433) (October 10, 2023)
+* [{% indieAvatar "https://adactio.com/journal/20618" %}HTML web components](https://adactio.com/journal/20618)—Jeremy Keith (November 9, 2023)
+* [{% indieAvatar "https://blog.jim-nielsen.com/2023/html-web-components/" %}HTML Web Components](https://blog.jim-nielsen.com/2023/html-web-components/)—Jim Nielsen (November 13, 2023)
+* [{% indieAvatar "https://miriam.codes/2023/11/15/components/" %}HTML Web Components are Just JavaScript?](https://miriam.codes/2023/11/15/components/)—Miriam Eric Suzanne (November 15, 2023)
+* [{% indieAvatar "https://gomakethings.com/html-web-components/" %}HTML Web Components](https://gomakethings.com/html-web-components/)—Chris Ferdinandi (November 16, 2023)
+
+
 ## JavaScript Web Components
 
 For the sake of completeness, I will sheepishly admit that I have created non-HTML Web Components too (and gotten value out of those). These are lower-priority optional use cases that pair with existing content and though it’s not ideal—for this specific use case I’ve made the trade off.
