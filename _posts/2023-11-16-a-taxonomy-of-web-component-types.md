@@ -1,18 +1,19 @@
 ---
 title: An Attempted Taxonomy of Web Components
-tags: web-components
+tags:
+  - web-components
+  - draft
+eleventyExcludeFromCollections: true
 ---
-As my experience with web components grows, my view of how to build a web component is also evolving. In some cases I’ve gone back and refactored a few older components with the new knowledge and experience I’ve gained. In other cases, these older components sit as evidence of the learning path I traveled.
+As my experience with web components grows, my personal view of how to build a web component is also evolving. In some cases I’ve gone back and refactored older components with the new knowledge and experience I’ve gained. In other cases, these older components sit as evidence of the learning path I traveled.
 
 _For the record, I mean zero-dependency web components that do not use an upstream library—they inherit directly from `HTMLElement` or similar platform classes._
 
-I thought it might be useful to catalog my journey of eleven open source web components as a way to provide a map for others.
+I thought it might be useful to catalog my journey of these open source web components as a way to provide a map for others.
 
 ## HTML Web Components
 
 These components layer on interactivity and add behaviors in true progressive enhancement fashion. These are the bread and butter of web components. They are unlikely to be improved with additional leverage of server-side rendering—all of the client-side DOM modifications are in service of a particular client-side behavior.
-
-<p data-demo-label="Related" class="livedemo">If you haven’t <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:defined">learned about <code>:defined</code></a> yet, make sure you check that one out—it blew my mind when I first learned about it!</p>
 
 <style>
 .web-components-table a[href],
@@ -54,12 +55,12 @@ These components layer on interactivity and add behaviors in true progressive en
 			<td><a href="https://github.com/11ty/is-land"><code>is-land</code></a></td>
 			<td><code>3.1 kB</code></td>
 			<td><em>None.</em></td>
-			<td>Unknown custom elements are renamed for lazy loading.</td>
+			<td>Unknown custom elements are renamed for lazy initialization.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/zachleat/squirminal"><code>squirm-inal</code></a></td>
 			<td><code>3.0 kB</code></td>
-			<td><em>JS injected.</em> CSS is global and only injected once. The CSS is only necessary for JS enhanced experience.</td>
+			<td><em>JS injected.</em> CSS is global and only injected once. The CSS is only necessary for the JS enhanced experience.</td>
 			<td>Child content is removed and re-added incrementally.</td>
 		</tr>
 		<tr>
@@ -72,7 +73,9 @@ These components layer on interactivity and add behaviors in true progressive en
 </table>
 </table-saw></div>
 
-The following components augment nested HTML. These components could be improved with a tighter coupling to server rendering but work great as-is in low-JavaScript environments.
+<p data-demo-label="Related" class="livedemo">Obligatory nod to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:defined"><code>:defined</code></a>—incredibly useful for styling HTML Web Components.</p>
+
+The following components augment nested HTML. These components could be improved with a tighter coupling to server rendering (e.g. a [WebC](https://www.11ty.dev/docs/languages/webc/) implementation) but work great as-is in low-JavaScript environments.
 
 <div><table-saw type="container" breakpoint="(max-width: 30em)">
 <table class="web-components-table">
@@ -121,7 +124,7 @@ The following components augment nested HTML. These components could be improved
 
 There is also a third category of HTML web component that augments the HTML in a way that is dynamic and specific to an individual user agent in a way that is unlikely to make sense on the server (or is not achievable due to hosting limitations)—but I haven’t open sourced one of these yet.
 
-I do have a local time web component floating around in a project somewhere that fits this description (acknowledging that it _could_ be server rendered in an edge function with a tradeoff in limited hosting portability).
+My first thought was to the [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) wrapper web component to localize datetimes that’s floating around in one of my projects somewhere. I also acknowledge that it _could_ be server rendered in an edge function but with a tradeoff limiting its hosting portability.
 
 <strong>All of the components above use progressive enhancement</strong> and fallback to the nested HTML content before/without JavaScript—the crux of the humble HTML Web Component.
 
@@ -158,15 +161,15 @@ I usually gauge the quality of a web component based on the amount of JavaScript
 
 ### Injecting CSS with Javascript
 
-I was and am wary of this generally but there is some additional nuance to keep in mind comparing this to much-maligned CSS-in-JS approaches. The JavaScript injected CSS happening here is at the stylesheet level using the CSSStyleSheet API.
+I was and am wary of this generally but there is additional nuance to keep in mind when comparing this to the much-maligned CSS-in-JS approach. The JavaScript injected CSS happening here is at the stylesheet level using the CSSStyleSheet API.
 
 That is, one stylesheet is injected globally for all instances of the custom element (unless otherwise specified). `<table-saw>` is one exception to that, but the stylesheet is de-duplicated if more than one instance uses the same breakpoint and media/container query type.
 
-The jury is still out on how expensive Shadow DOM constructable stylesheets are. The [Eleventy Leaderboards](https://www.11ty.dev/speedlify/) are a pretty good stress test of that currently: `<speedlify-score>` uses Shadow DOM with a constructable stylesheet and currently has 918 component instances on that page (though lazy initialized via `<is-land>`).
+The jury is still out on how expensive Shadow DOM constructable stylesheets are. The [Eleventy Leaderboards](https://www.11ty.dev/speedlify/) are a pretty good stress test of that currently: `<speedlify-score>` uses Shadow DOM with a constructable stylesheet and currently has 918 component instances on the page (though lazy initialized via `<is-land>`).
 
 The part I like about injecting CSS with JavaScript is that I don’t need to worry about distributing my CSS separate from JavaScript—it feels like a _web-platform single file component_.
 
-This is a fine tradeoff to make when the component’s CSS is tightly coupled and in service to the JavaScript. It just _wouldn’t buy you anything if you need to style the before/without JavaScript (fallback) experience_, so buyer beware!
+This is a fine tradeoff to make when the component’s CSS is tightly coupled and in service to the JavaScript. **Injecting CSS with JS will not get you anywhere if you need to style the before/without JavaScript (fallback) experience**, so buyer beware!
 
 ### Nuances of Shadow DOM
 
@@ -179,3 +182,12 @@ If you generate content and markup with JavaScript—it may be okay to put it in
 * [{% indieAvatar "https://nolanlawson.com/2022/06/14/dialogs-and-shadow-dom-can-we-make-it-accessible/" %}Dialogs and shadow DOM: can we make it accessible?](https://nolanlawson.com/2022/06/14/dialogs-and-shadow-dom-can-we-make-it-accessible/)—Nolan Lawson (June 2022)
 * [{% indieAvatar "https://marcysutton.com/accessibility-and-the-shadow-dom" %}Accessibility and the Shadow DOM](https://marcysutton.com/accessibility-and-the-shadow-dom)—Marcy Sutton (February 2014)
 
+### Some components can’t be web components (for now?)
+
+Some components _require_ server rendering. You couldn’t do a _good enough_ `<img>` or `<picture>` wrapper component (e.g. [Eleventy Image](https://www.11ty.dev/docs/plugins/image/) or Next.js’ `<Image>`) using custom elements. I suppose you might be able to [attempt such a thing](https://is-land.11ty.dev/demo-image-loading) and limit it exclusively to `loading="lazy"` images, but that seems a bit risky and fraught with peril. A custom element can’t beat the [preload scanner](https://web.dev/articles/preload-scanner) and that markup is best served server-rendered.
+
+## Conclusions
+
+There is a lot of complexity in this space right now. But there is hope as the community refocuses on an approach with a good pit of success: the humble HTML Web Component. A very important takeaway here is that creating an HTML Web Component doesn’t require a hard stance of Light or Shadow DOM in your implementation (though Shadow DOM still has dragons). It is only concerned with the before/after JavaScript, with web performance and durability considerations in mind.
+
+It will require discipline to avoid overindexing on JavaScript-injected CSS. I think `<browser-window>` may have jumped over the line here and I’m still a little uneasy about the tradeoffs I made there but the portability benefits are quite tempting!
