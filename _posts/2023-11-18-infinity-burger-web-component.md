@@ -27,7 +27,7 @@ All of the above must be true before the script is loaded. Here’s the markup:
 ```html
 <is-land on:idle on:visible on:media="(prefers-reduced-motion: no-preference) and (min-width: 61.1875em)">
 	<infinity-burger></infinity-burger>
-	<template>
+	<template data-island>
 		<script type="module" src="/static/infinity-burger.js"></script>
 	</template>
 </is-land>
