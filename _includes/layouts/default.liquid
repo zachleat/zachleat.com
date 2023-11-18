@@ -75,5 +75,19 @@ classes:
 </svg>
 
 <div class="hamburger">
-	<infinity-burger></infinity-burger>
+	<is-land on:idle on:visible on:media="(prefers-reduced-motion: no-preference) and (min-width: 61.1875em)">
+		<infinity-burger></infinity-burger>
+
+		<template data-island="once">
+			<style>
+			/* Desktop only, for extra laughs */
+			@media (max-width: 61.1875em) { /* 979px */
+				infinity-burger {
+					display: none;
+				}
+			}
+			</style>
+			<script type="module" src="/static/infinity-burger.js"></script>
+		</template>
+	</is-land>
 </div>
