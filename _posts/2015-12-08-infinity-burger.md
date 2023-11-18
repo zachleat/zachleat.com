@@ -5,6 +5,12 @@ categories:
 tags:
   - project
 ---
+<div class="livedemo" data-demo-label="Updated">
+
+_**Update November 18, 2023**: this [code was re-released as a web component](/web/infinity-burger-web-component/)!_
+
+</div>
+
 
 A whimsical hamburger menu* that goes on forever.
 
