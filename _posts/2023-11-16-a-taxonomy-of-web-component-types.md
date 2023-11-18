@@ -1,9 +1,6 @@
 ---
 title: An Attempted Taxonomy of Web Components
-tags:
-  - web-components
-  - draft
-eleventyExcludeFromCollections: true
+tags: web-components
 ---
 As my experience with web components grows, my personal view of how to build a web component is also evolving. In some cases I’ve gone back and refactored older components with the new knowledge and experience I’ve gained. In other cases, these older components sit as evidence of the learning path I traveled.
 
