@@ -39,7 +39,7 @@ Click or tap the hamburger menu icon on the top of this page (at desktop viewpor
 
 ## Get it
 
-* Sourc code on [GitHub](https://github.com/zachleat/infinity-burger)
+* Source code on [GitHub](https://github.com/zachleat/infinity-burger)
 * Install it on your own web site via `npm` with `npm install infinity-burger` or by downloading [`infinity-burger.js` manually](https://github.com/zachleat/infinity-burger/blob/main/infinity-burger.js).
 
 ### Related reading:
