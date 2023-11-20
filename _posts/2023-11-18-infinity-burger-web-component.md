@@ -1,5 +1,5 @@
 ---
-title: The Infinity Hamburger Menu, now in Web Component Form
+title: The Infinity Hamburger Menu, now in Web Component form
 tags:
   - project
   - web-components
@@ -9,13 +9,13 @@ A whimsical hamburger menu* that goes on forever.
 
 *_Not actually a functioning menu._
 
-First inspired by [24ways.org](https://www.zachleat.com/twitter/673503114096345089/). I’ve been absolutely delighted when folks have sent me various messages over the years saying that they loved the menu. Add some whimsy to your personal site, it’s fun!
+First open sourced in 2015 as a [vanilla _not_-web-component](/web/infinity-burger/) and inspired by a [hamburger menu on 24ways.org](https://www.zachleat.com/twitter/673503114096345089/). I’ve been absolutely delighted when folks have sent me various messages over the years saying that they loved the menu. Add some whimsy to your personal site, it’s fun!
 
-First open sourced in 2015 as a [vanilla not-web-component](/web/infinity-burger/). Notably, the [commit updating the code from a CSS/JavaScript component to a Shadow DOM encapsulated standalone JavaScript component](https://github.com/zachleat/infinity-burger/commit/defc3d6de4e24153c9f6bdc8f390e36f12fc3e3e) might be educational, if you’re interested in that!
+Notably, the [commit updating the code from a CSS/JavaScript component to a Shadow DOM encapsulated standalone JavaScript component](https://github.com/zachleat/infinity-burger/commit/defc3d6de4e24153c9f6bdc8f390e36f12fc3e3e) might be educational, if you’re interested in that!
 
-Interestingly, this simplifed the markup required to use this to a single empty custom element (this is a JavaScript Web Component) and simplified the assets necessary to use it too (a single JavaScript file instead of CSS and JavaScript files).
+This code update resulted in a simplification to the markup (one empty custom element, this is a JavaScript Web Component) and simplified the assets necessary to use it too (a single JavaScript file instead of CSS and JavaScript files).
 
-This also allowed me to make use of [`<is-land>`](https://www.11ty.dev/docs/plugins/partial-hydration/), which meant that I got a bunch of features for-free:
+Using a custom element in this way also unlocks the use of [`<is-land>`](https://www.11ty.dev/docs/plugins/partial-hydration/), which meant that I got a bunch of features for-free:
 
 1. Only runs the JS when the page is idle (`requestIdleCallback`).
 1. Only runs the JS when the component is visible (if you’re scrolled down, the component JavaScript doesn’t load!).
