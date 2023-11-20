@@ -98,7 +98,7 @@ Here’s what the generated markup looks like:
 </picture>
 ```
 
-_(`sizes` attribute ommitted for clarity)_
+_(`sizes` attribute omitted for clarity)_
 
 This approach is _somewhat experimental_ (and is not enabled by default in Eleventy Image), although it works well in practice. This technique involves replacing large raster formats in `<source>` with SVG. Specifically, you might notice the `image/jpeg` type above has an SVG image included: `<source type="image/jpeg" srcset="1IB2wrqzRT-400.jpeg 400w, 1IB2wrqzRT-980.svg 980w">`.
 
