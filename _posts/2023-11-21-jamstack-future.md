@@ -1,16 +1,16 @@
 ---
 title: "The Tension and Future of Jamstack"
 ---
-At the [**Jamstack ZHUZH**](https://www.youtube.com/watch?v=xVmKdCi-Gpo) last month, we had a lovely panel discussion on the current and future status of the Jamstack ecosystem.
+At the [**Jamstack ZHUZH**](https://www.youtube.com/watch?v=xVmKdCi-Gpo), we had a lovely panel discussion on the current and future status of the Jamstack ecosystem.
 
-Some stakeholders and detractors have declared the Jamstack “dead,” in part evidenced by the recent [shuttering of the Jamstack Discord](https://dev.to/remotesynth/is-jamstack-officially-finished-50kb), the discontinuation of [Jamstack Conf](https://jamstack.org/conf/) (as Netlify pivots toward the marketing term Composable and a [new conference](https://www.netlify.com/conference/) under that name), and the end of the [Jamstack Community Survey](https://jamstack.org/survey/2022/).
+Some stakeholders and detractors have declared the Jamstack “dead,” in part evidenced by the recent [shuttering of the Jamstack Discord](https://dev.to/remotesynth/is-jamstack-officially-finished-50kb), the discontinuation of [Jamstack Conf](https://jamstack.org/conf/) (as Netlify pivots toward the marketing term Composable and a new conference under that name), and the end of the [Jamstack Community Survey](https://jamstack.org/survey/2022/).
 
 The evidence does support the claim that _Netlify_ has moved on from shepherding the Jamstack (community/architecture)—which is fine! (and maybe preferable?)
 
 A post-Netlify Jamstack opens up a few opportunities that were not possible before:
 
 1. To refocus the definition and pull it back from post-pivot silver-bullet marketing, which was arguably an overstep attempt to pull dynamic/SSR/on-request frameworks like (non-static export) Next.js, Remix, Fresh (et al) under the umbrella.
-2. To strengthen the community with a broader group of leaders and stakeholders with a vested interest in continuing the community-building aspect of the Jamstack. A multi-vendor gaggle would represent a maturation of the community, insulating it from the influencer rumor-mill.
+2. To strengthen the community with a broader group of leaders and stakeholders with a vested interest in continuing the community-building aspect of the Jamstack. A multi-vendor gaggle would represent a maturation of the community, insulating it from an influencer rumor-mill.
 
 ## Refocus
 
@@ -30,4 +30,8 @@ This intellectual honesty allows us to make better decisions when architecting p
 
 ## Next Steps
 
-If you want to be involved—get in touch! We already have a few folks gathered together that see the unique value in the Jamstack community and we’re very interested in keeping this momentum going.
+If you want to be involved, we’re gathering folks together that see the unique value in the Jamstack architecture and the community around it.
+
+Join us by filling out the survey on https://thefutureofjamstack.org/
+
+{% originalPostEmbed "https://thefutureofjamstack.org/" %}
