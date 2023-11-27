@@ -132,7 +132,7 @@ _The community has settled on this name very quickly, ok._
 * [{% indieAvatar "https://fediverse.zachleat.com/@zachleat/111211208759538433" %}Naming party on Mastodon](https://fediverse.zachleat.com/@zachleat/111211208759538433) (October 10, 2023)
 * [{% indieAvatar "https://adactio.com/journal/20618" %}HTML web components](https://adactio.com/journal/20618)—Jeremy Keith (November 9, 2023)
 * [{% indieAvatar "https://blog.jim-nielsen.com/2023/html-web-components/" %}HTML Web Components](https://blog.jim-nielsen.com/2023/html-web-components/)—Jim Nielsen (November 13, 2023)
-* [{% indieAvatar "https://miriam.codes/2023/11/15/components/" %}HTML Web Components are Just JavaScript?](https://miriam.codes/2023/11/15/components/)—Miriam Eric Suzanne (November 15, 2023)
+* [{% indieAvatar "https://www.oddbird.net/2023/11/17/components/" %}HTML Web Components are Just JavaScript?](https://www.oddbird.net/2023/11/17/components/)—Miriam Eric Suzanne (November 15, 2023)
 * [{% indieAvatar "https://gomakethings.com/html-web-components/" %}HTML Web Components](https://gomakethings.com/html-web-components/)—Chris Ferdinandi (November 16, 2023)
 
 
