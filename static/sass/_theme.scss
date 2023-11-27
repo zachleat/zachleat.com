@@ -620,11 +620,6 @@ h5 {
 .primary-title .long-word {
 	@include hyphenate;
 }
-@media (min-width: 40em) {
-	.primary-title .long-word {
-		@include unhyphenate;
-	}
-}
 
 /* Code */
 code {
