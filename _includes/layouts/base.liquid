@@ -61,8 +61,7 @@
 		<link href="/static/{{ stylesheet }}" rel="stylesheet">
 {%- endfor %}
 		<script>{% include "./static/initial.js" %}</script>
-		<script src="/static/defer-mod.js" type="module" defer></script>
-		<script src="/static/defer.js" defer></script>
+		<script src="/static/defer.js" type="module"></script>
 
 		<meta property="eleventy:path" content="{{ page.inputPath }}">
 

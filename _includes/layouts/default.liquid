@@ -76,7 +76,7 @@ classes:
 
 <div class="hamburger">
 	<is-land on:idle on:visible on:media="(prefers-reduced-motion: no-preference) and (min-width: 61.1875em)">
-		<infinity-burger></infinity-burger>
+		<infinity-burger theme-fn></infinity-burger>
 
 		<template data-island="once">
 			<style>
@@ -87,6 +87,11 @@ classes:
 				}
 			}
 			</style>
+			<script>
+			function InfinityBurgerColor(count) {
+				return `hsl(${count * 5 % 360}, 100%, 50%)`
+			}
+			</script>
 			<script type="module" src="/static/infinity-burger.js"></script>
 		</template>
 	</is-land>
