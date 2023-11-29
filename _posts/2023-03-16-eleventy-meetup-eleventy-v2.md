@@ -56,25 +56,23 @@ slides:
     38: "Eleventy v3 🐥 (canary)"
     39: Thank you!
 ---
-<div class="fullwidth"><youtube-lite-player @slug="aM24L2g0peA" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="aM24L2g0peA" @label="{{ title }}"></youtube-lite-player></div>
 
 [Watch on YouTube](https://www.youtube.com/watch?v=aM24L2g0peA) or check out the full [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup)!
 
 ## Slides
 
-<div class="fullwidth">
-  <div class="carousel carousel-16-9">
-  {%- assign slideCount = slides.count %}
-  {%- assign slideImageWidth = slides.originalImageDimensions[0] %}
-  {%- assign slideImageHeight = slides.originalImageDimensions[1] %}
-  {%- for i in (1..slideCount) %}
-    {%- capture productionUrl %}{{ slides.imageHost }}image-export-low.{{ i | leftpad: 3 }}.jpeg{% endcapture %}
-    {%- capture alt %}{% if slides.alt[i] %}{{ slides.alt[i] }}{% else %}Slide {{ i }}{% endif %}{% endcapture %}
-    {%- if slides.links[i] %}<a href="{{ slides.links[i] }}">{% endif %}
-    <img src="/presentations/eleventy-v2/image-export-low.{{ i | leftpad: 3 }}.jpeg" alt="{{ alt }}" width="{{ slideImageWidth }}" height="{{ slideImageHeight }}" loading="lazy" decoding="async">
-    {%- if slides.links[i] %}</a>{% endif %}
-  {%- endfor %}
-  </div>
+<div class="carousel carousel-16-9">
+{%- assign slideCount = slides.count %}
+{%- assign slideImageWidth = slides.originalImageDimensions[0] %}
+{%- assign slideImageHeight = slides.originalImageDimensions[1] %}
+{%- for i in (1..slideCount) %}
+  {%- capture productionUrl %}{{ slides.imageHost }}image-export-low.{{ i | leftpad: 3 }}.jpeg{% endcapture %}
+  {%- capture alt %}{% if slides.alt[i] %}{{ slides.alt[i] }}{% else %}Slide {{ i }}{% endif %}{% endcapture %}
+  {%- if slides.links[i] %}<a href="{{ slides.links[i] }}">{% endif %}
+  <img src="/presentations/eleventy-v2/image-export-low.{{ i | leftpad: 3 }}.jpeg" alt="{{ alt }}" width="{{ slideImageWidth }}" height="{{ slideImageHeight }}" loading="lazy" decoding="async">
+  {%- if slides.links[i] %}</a>{% endif %}
+{%- endfor %}
 </div>
 
 Scroll for slide content →

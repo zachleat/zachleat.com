@@ -7,7 +7,7 @@ metadata:
 ---
 I was on GitHub’s Open Source Friday to chat a bit about WebC and Eleventy.
 
-<div class="fullwidth"><youtube-lite-player @slug="rD07m-uAGaE" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="rD07m-uAGaE" @label="{{ title }}"></youtube-lite-player></div>
 
 ## Related
 

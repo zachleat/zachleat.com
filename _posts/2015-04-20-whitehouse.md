@@ -78,7 +78,7 @@ Holy shit.
 Jump to the **2h 23m 26s** mark to see my portion.
 
 <figure>
-	<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe src="https://www.youtube.com/embed/3OPJPvUZbP0?t=2h23m26s" frameborder="0" allowfullscreen></iframe></div></div>
+	<div class="fluid-width-video-wrapper"><iframe src="https://www.youtube.com/embed/3OPJPvUZbP0?t=2h23m26s" frameborder="0" allowfullscreen></iframe></div>
 	<figcaption><a href="https://www.youtube.com/watch?v=3OPJPvUZbP0&amp;t=2h23m26s">Tech Meetup at the White House &mdash; Zach Leatherman on NebraskaJS</a> on YouTube.</figcaption>
 </figure>
 

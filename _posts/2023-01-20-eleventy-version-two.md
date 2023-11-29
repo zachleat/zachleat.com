@@ -23,6 +23,6 @@ If you want to **help spread the word**, I would love a [boost on this toot](htt
 
 ## Release Video
 
-<div class="fullwidth"><youtube-lite-player @slug="TcTR0TLqM3I" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="TcTR0TLqM3I" @label="{{ title }}"></youtube-lite-player></div>
 
 _The [video is hosted on YouTube](https://www.youtube.com/watch?v=TcTR0TLqM3I)._

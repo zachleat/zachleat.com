@@ -20,7 +20,7 @@ A demo project and walkthrough showing how to secure some of your Eleventy Serve
 
 ## Walk-through
 
-<div class="fullwidth"><youtube-lite-player @slug="At19o2Ox57Y" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="At19o2Ox57Y" @label="{{ title }}"></youtube-lite-player></div>
 
 ## Demo
 {% originalPostEmbed urls.demo %}

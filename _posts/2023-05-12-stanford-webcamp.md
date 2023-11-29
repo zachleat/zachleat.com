@@ -14,7 +14,7 @@ metadata:
 medialength: 29 min
 showOnHomePage: false
 ---
-<div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 
 * Watch [the video on YouTube](https://www.youtube.com/watch?v={{ metadata.youtubeId }}).
 * [Event Page on `webcamp.stanford.edu`]({{ external_url }})

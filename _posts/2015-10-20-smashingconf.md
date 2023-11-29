@@ -27,7 +27,7 @@ The title of the talk was a reference to a hugely popular book written by Stephe
 ## Video
 
 <figure>
-  <div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe src="//player.vimeo.com/video/145055818?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>
+  <div class="fluid-width-video-wrapper"><iframe src="//player.vimeo.com/video/145055818?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
   <figcaption><a href="https://vimeo.com/145055818">SmashingConf Barcelona &mdash; Zach Leatherman on A Brief History of that Time You Used Web Fonts</a> from <a href="https://vimeo.com/smashingmagazine">Smashing Magazine</a>.</figcaption>
 </figure>
 

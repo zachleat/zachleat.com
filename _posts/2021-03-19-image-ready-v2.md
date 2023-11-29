@@ -16,7 +16,7 @@ This talk was also converted to blog post format at: **[Don’t Shut Down Your B
 
 ---
 
-<div class="fullwidth"><youtube-lite-player @slug="RL_0Gkn4B_U" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="RL_0Gkn4B_U" @label="{{ title }}"></youtube-lite-player></div>
 
 [Watch on YouTube.](https://www.youtube.com/watch?v=RL_0Gkn4B_U)
 

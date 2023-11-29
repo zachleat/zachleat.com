@@ -21,7 +21,7 @@ For this talk I built a social media platform: MySpaceBook.​info, the only soc
 
 This [video is hosted on YouTube](https://www.youtube.com/watch?v=X3SrZuH00GQ).
 
-<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/X3SrZuH00GQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+<div><div class="fluid-width-video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/X3SrZuH00GQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
 
 ## Slides
 
@@ -29,7 +29,7 @@ Download a [locally hosted PDF copy of the slides](/presentations/2019-own-your-
 
 This talk is also [on Not.ist](https://noti.st/zachleat/Uo8jkv/own-your-content-on-social-media-with-the-indie-web), which you can preview below:
 
-<div class="fullwidth"><div class="fluid-width-video-wrapper"><iframe src="https://noti.st/zachleat/Uo8jkv/embed" frameborder="0" allowfullscreen></iframe></div></div>
+<div><div class="fluid-width-video-wrapper"><iframe src="https://noti.st/zachleat/Uo8jkv/embed" frameborder="0" allowfullscreen></iframe></div></div>
 
 ## Twitter Archive
 

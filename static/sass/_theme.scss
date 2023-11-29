@@ -271,21 +271,12 @@ h5,
 	-ms-hyphens: auto;
 	hyphens: auto;
 }
-.content-main img.primary,
-.content-main .fullwidth {
-	margin-left: calc(-0.25rem); /* -4px /16 */
-	margin-right: calc(-0.25rem); /* -4px /16 */
-	width: calc(100% + .5rem);
-	max-width: none;
-}
 
 @media (min-width: 25em) { /* 400px */
 	.content-main {
 		padding-left: 0.75rem; /* 12px /16 */
 		padding-right: 0.75rem; /* 12px /16 */
 	}
-	.content-main img.primary,
-	.content-main .fullwidth,
 	.content-main pre {
 		margin-left: -0.75rem; /* -12px /16 */
 		margin-right: -0.75rem; /* -12px /16 */
