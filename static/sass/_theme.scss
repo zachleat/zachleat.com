@@ -374,14 +374,6 @@ h5,
 		.rail { grid-area: 1/2/4/3; }
 		.hamburger { grid-area: 1/3/4/4; }
 
-		/* w3c banner */
-		.tmpl-page body {
-			grid-template-columns: 1.5rem 1fr 13.5rem 2.5rem;
-		}
-		.tmpl-page .content-main { grid-area: 1/2/4/3; }
-		.tmpl-page .rail { grid-area: 1/3/4/4; }
-		.tmpl-page .hamburger { grid-area: 1/4/5/5; }
-
 		.body-gradient {
 			position: relative;
 		}
@@ -410,8 +402,6 @@ h5,
 
 
 /* Content */
-/*.content-main article > .sub + p:first-of-type:first-line,
-.content-main article > h2 + p:first-line*/
 .intro-smallcaps {
 	font-family: Georgia;
 	font-weight: 700;
