@@ -25,6 +25,21 @@ Notably (as this component is best for demos) it does use client rendering via S
 	<browser-window shadow>
 		<p>This one has a shadow.</p>
 	</browser-window>
+</div>
+
+Source code:
+
+```html
+<browser-window>
+	<p>Here’s a <em>live demo</em> of it in action.</p>
+</browser-window>
+
+<browser-window shadow>
+	<p>This one has a shadow.</p>
+</browser-window>
+```
+
+<div>
 	<p>This one has a URL bar (with favicon) and an iframe:</p>
 	<browser-window shadow flush url="https://www.11ty.dev/" icon>
 		<iframe sandbox src="https://www.11ty.dev/" scrolling="no" style="pointer-events: none; width: 100%; height: 250px; border: 0; overflow: hidden"></iframe>

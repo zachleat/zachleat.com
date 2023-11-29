@@ -12,6 +12,7 @@
 }
 table .yes,
 table .no,
+table .maybe,
 table .emulate {
 	color: #fff;
 }
@@ -20,6 +21,9 @@ table .yes {
 }
 table .no {
 	background-color: #CB000F;
+}
+table .maybe {
+	background-color: #969600;
 }
 table .emulate {
 	background-color: #40A662;
