@@ -1,10 +1,9 @@
 ---
 title: W3C Status Banners
-categories:
-  - project
 tags:
   - project
 ---
+<p class="sub"><em>November 29, 2023: this was updated <a href="/web/w3c-banner-web-component/">as a web component</a>.</em></p>
 
 Browsing the World Wide Web this weekend on a fancy HDPi screen, I noticed the iconic W3C Status Banners on the [W3C specification documents were blurry images](http://www.w3.org/TR/CSS2/). In true first world problem fashion, I decided to improve them and recreate the banners using CSS.
 

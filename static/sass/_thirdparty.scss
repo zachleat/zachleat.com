@@ -1,15 +1,3 @@
-/* Fake W3C Banners */
-.w3c-b:before {
-	display: none;
-}
-@supports (display: grid) {
-	@media ( min-width: 48em) { /* 768px */
-		.enhanced-js.tmpl-page.w3c-b:before {
-			display: block;
-		}
-	}
-}
-
 /* Syntax Highlighter */
 .language-css .err {
 	border: none !important;

@@ -197,10 +197,6 @@ ul.resume-desc {
 	.tmpl-page .content-grid {
 		grid-template-columns: auto;
 	}
-	.tmpl-page.w3c-b.w3c-b.w3c-b:before,
-	.tmpl-page.w3c-b.w3c-b.w3c-b:before {
-		display: none;
-	}
 }
 
 

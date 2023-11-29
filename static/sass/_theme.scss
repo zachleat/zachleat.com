@@ -43,9 +43,6 @@ abbr {
 .a11y-only {
 	@include a11y-only;
 }
-html:not(.enhanced-js) .enhanced-only {
-	display: none !important;
-}
 
 /* Ellipsis */
 .text-ellipsis {
