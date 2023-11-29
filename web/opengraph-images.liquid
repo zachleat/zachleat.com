@@ -26,14 +26,6 @@ More Ideas:
 <div class="slide slide-chromeless slide-preview slide-preview-vertical slide-preview-60-40" tabindex="0" autofocus>
   <div class="frame">
     <div class="window frame-resizer-main">
-      <div class="window-hed">
-        <div class="window-circle window-circle-red"></div>
-        <div class="window-circle window-circle-yellow"></div>
-        <div class="window-circle window-circle-green"></div>
-        <a href="{{ sourceUrl }}" class="window-title">{{ sourceUrl }}</a>
-        <div class="window-spacer"></div>
-        <span class="window-title">{{ quote }}</span>
-      </div>
       <main class="main main-bgimg" style="--og-bgimage: url('{% if post.data.seo.openGraphBackgroundImage %}{{ post.data.seo.openGraphBackgroundImage }}{% elsif post.data.overrideOgImageScreenshotBackground %}{% rawScreenshotImageFromFullUrl post.data.overrideOgImageScreenshotBackground, secondScreenshotBackgroundOptions %}{% elsif post.data.external_url %}{% rawScreenshotImageFromFullUrl post.data.external_url, secondScreenshotBackgroundOptions %}{% else %}{% rawScreenshotImage post.url, secondScreenshotBackgroundOptions %}{% endif %}')">
         <div class="main-top">
           {%- capture titleContent %}
@@ -51,7 +43,6 @@ More Ideas:
         {%- endunless %}
         <p class="main-center"></p>
         <p class="main-right">
-          {%- if webmentionsCount > 0 %}<span class="main-box main-box-nowrap">{{ webmentionsCount }} Webmention{% if webmentionsCount != 1 %}s{% endif %}</span>{% endif %}
           <strong class="main-host main-box">zachleat.com</strong>
           <span class="main-postnumber main-box main-box-nowrap">№{{ pagination.pages.length | minus: pagination.pageNumber }}</span>
           <strong class="main-box main-box-nowrap">{{ post.date | readableDate }}</strong>
