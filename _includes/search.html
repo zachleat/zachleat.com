@@ -1,13 +1,13 @@
 <is-land on:visible on:save-data="false">
-	<form action="https://duckduckgo.com/" method="get">
-		<label for="search-term" class="sr-only">Search Terms</label>
-		<input type="search" name="q" id="search-term" class="search-txt" autocomplete="off" autofocus>
-		<input aria-hidden="true" hidden="" name="sites" value="www.zachleat.com">
-		<button type="submit" class="search-btn btn-form">Search</button>
-	</form>
-	<template data-island="replace">
-		<div id="search"></div>
-		<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-		<script src="/pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+	<pagefind-search _show_images="false">
+		<form action="https://duckduckgo.com/" method="get" style="min-height: 3.36842105em">
+			<label for="search-term" class="sr-only">Search Terms</label>
+			<input type="search" name="q" id="search-term" autocomplete="off" autofocus>
+			<input type="hidden" name="sites" value="www.zachleat.com">
+			<button type="submit">Search</button>
+		</form>
+	</pagefind-search>
+	<template data-island>
+		<script type="module" src="/static/pagefind-search.js"></script>
 	</template>
 </is-land>
