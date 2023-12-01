@@ -29,14 +29,12 @@ web367ImageAttrs:
 
 This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach@zachleat.com). Peruse his [full résumé](/resume/).
 
-{% include "social.html" %}
-
 <style>
 .about-primary-avatar {
 	display: block;
 	max-width: 260px;
 	border-radius: 50%;
-	margin: 2em auto 0;
+	margin: 2em auto;
 }
 .about-secondary-avatar {
 	display: block;
@@ -46,6 +44,13 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 </style>
 
 {% image avatarBioImageAttrs %}
+
+* [{% indieAvatar "https://fediverse.zachleat.com/@zachleat" %}Mastodon `@zachleat@zachleat.com`](https://fediverse.zachleat.com/@zachleat)
+* [{% indieAvatar "https://github.com/" %}GitHub `@zachleat`](https://github.com/zachleat/)
+* [{% indieAvatar "https://bsky.app/" %}Bluesky `@zachleat.com`](https://bsky.app/profile/zachleat.com)
+* [LinkedIn `/in/zachleat`](https://www.linkedin.com/in/zachleat/)
+* [Twitter `@zachleat`](https://twitter.com/zachleat/) _(dormant)_
+
 
 ## Bio
 
