@@ -10,6 +10,8 @@ metadata:
   youtubeId: mZUTXX13X-I
 medialength: 37 min
 opengraphSkipFace: true
+external_url: https://www.11ty.dev/blog/static-feedback/
+external_url_location: end
 ---
 <div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 
