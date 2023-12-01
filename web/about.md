@@ -47,9 +47,14 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 
 * [{% indieAvatar "https://fediverse.zachleat.com/@zachleat" %}Mastodon `@zachleat@zachleat.com`](https://fediverse.zachleat.com/@zachleat)
 * [{% indieAvatar "https://github.com/" %}GitHub `@zachleat`](https://github.com/zachleat/)
+* [{% indieAvatar "https://npmjs.com/" %}npm `zachleat`](https://www.npmjs.com/~zachleat)
 * [{% indieAvatar "https://bsky.app/" %}Bluesky `@zachleat.com`](https://bsky.app/profile/zachleat.com)
 * [LinkedIn `/in/zachleat`](https://www.linkedin.com/in/zachleat/)
-* [Twitter `@zachleat`](https://twitter.com/zachleat/) _(dormant)_
+* [OpenCollective](https://opencollective.com/zachleat)
+* [{% indieAvatar "https://letterboxd.com/" %}Letterboxd](https://letterboxd.com/zachleat/)
+* {% indieAvatar "https://nintendo.com/" %}Nintendo
+* {% indieAvatar "https://tidal.com/" %}Tidal
+* [Twitter](https://twitter.com/zachleat/) _(dormant)_
 
 
 ## Bio
