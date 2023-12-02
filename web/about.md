@@ -45,17 +45,18 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 
 {% image avatarBioImageAttrs %}
 
-* [{% indieAvatar "https://fediverse.zachleat.com/@zachleat" %}Mastodon `@zachleat@zachleat.com`](https://fediverse.zachleat.com/@zachleat)
-* [{% indieAvatar "https://github.com/" %}GitHub `@zachleat`](https://github.com/zachleat/)
-* [{% indieAvatar "https://npmjs.com/" %}npm `zachleat`](https://www.npmjs.com/~zachleat)
-* [{% indieAvatar "https://bsky.app/" %}Bluesky `@zachleat.com`](https://bsky.app/profile/zachleat.com)
-* [LinkedIn `/in/zachleat`](https://www.linkedin.com/in/zachleat/)
-* [OpenCollective](https://opencollective.com/zachleat)
-* [{% indieAvatar "https://letterboxd.com/" %}Letterboxd](https://letterboxd.com/zachleat/)
-* {% indieAvatar "https://nintendo.com/" %}Nintendo
-* {% indieAvatar "https://tidal.com/" %}Tidal
-* [Twitter](https://twitter.com/zachleat/) _(dormant)_
-
+<ul class="list-inline fl fl-inline fl-nowrap">
+	<li><a href="https://fediverse.zachleat.com/@zachleat">{% indieAvatar "https://fediverse.zachleat.com/@zachleat" %}Mastodon</a></li>
+	<li><a href="https://github.com/zachleat/">{% indieAvatar "https://github.com/" %}GitHub</a></li>
+	<li><a href="https://www.npmjs.com/~zachleat">{% indieAvatar "https://npmjs.com/" %}npm</a></li>
+	<li><a href="https://bsky.app/profile/zachleat.com">{% indieAvatar "https://bsky.app/" %}Bluesky</a></li>
+	<li><a href="https://www.linkedin.com/in/zachleat/">{% indieAvatar "https://www.linkedin.com/" %}LinkedIn</a></li>
+	<li><a href="https://opencollective.com/zachleat">{% indieAvatar "https://opencollective.com/" %}OpenCollective</a></li>
+	<li><a href="https://letterboxd.com/zachleat/">{% indieAvatar "https://letterboxd.com/" %}Letterboxd</a></li>
+	<li>{% indieAvatar "https://nintendo.com/" %}Nintendo</li>
+	<li>{% indieAvatar "https://tidal.com/" %}Tidal</li>
+	<li><a href="https://twitter.com/zachleat/">{% indieAvatar "https://x.com/" %}Twitter</a> <em>(dormant)</em></li>
+</ul>
 
 ## Bio
 
