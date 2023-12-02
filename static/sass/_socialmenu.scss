@@ -20,7 +20,6 @@
 	display: inline-block;
 	font-family: sans-serif;
 	opacity: .6;
-	margin-left: .2em;
 }
 .social_icon img {
 	width: 1.75rem; /* 28px /16 */
@@ -55,27 +54,25 @@
 	.rail .navigation {
 		display: flex;
 		justify-content: center;
-		max-width: 31em;
+		gap: 1em;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.rail .social {
-		flex-basis: 10em;
 		display: flex;
-		justify-content: flex-end;
-		gap: 0.5em;
+		justify-content: center;
+		gap: 0.75em;
 	}
 	.rail .navigation .tags:first-child {
 		text-align: left;
-		padding-right: 1em;
 	}
 	.rail .navigation .social + .tags {
 		text-align: right;
 		padding-left: 1em;
 	}
 	.rail .navigation .tags a[href] {
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: .75em;
+		padding-right: .75em;
 		white-space: nowrap;
 	}
 }

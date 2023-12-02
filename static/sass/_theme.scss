@@ -59,7 +59,7 @@ abbr {
 		display: none !important;
 	}
 }
-@media( max-width: 36.1875em) { /* 579px */
+@media( max-width: 38.6875em) { /* 619px */
 	.hide-md {
 		display: none !important;
 	}
@@ -355,7 +355,7 @@ h5,
 		.body-grid {
 			display: grid;
 			grid-template-rows: 1fr 1fr 1fr;
-			grid-template-columns: 1fr 13.5rem 2.5rem;
+			grid-template-columns: 1fr 14rem 2.5rem;
 			grid-column-gap: 1rem;
 			grid-row-gap: 0;
 			padding-top: 1rem;
@@ -1179,12 +1179,6 @@ a[href].tag-inline:not(.tag-borderless),
 .tags.tags-rail {
 	white-space: normal;
 	margin-top: .5em;
-
-	@media (max-width: $oneColLayoutMaxWidth) {
-		text-align: center;
-		margin-left: -.5em;
-		margin-right: -.5em;
-	}
 }
 .tags.tags-rail .tag {
 	margin-right: 0;

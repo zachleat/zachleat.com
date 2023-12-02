@@ -27,7 +27,7 @@ Instantaneous measurement is a good first step. But how do we ensure that the si
 * **DIY**: Run it manually, locally on your computer and check in the data to your repo.
 * **Automated**: If you want to automate it, Speedlify can run entirely self-contained on Netlify. Be aware that there’s a maximum of 15 minutes per build (if you do 3 runs each, I’d guess this will let you test a maximum of around 20 pages). [Netlify’s free tier](https://www.netlify.com/pricing/) gives you 300 build minutes per month.
 
-<div class="fullwidth"><a href="https://www.speedlify.dev/ssg/"><img src="/web/img/posts/speedlify/screenshot-1x.png" srcset="/web/img/posts/speedlify/screenshot-1x.png 600w, /web/img/posts/speedlify/screenshot-2x.png 1400w" sizes="(min-width: 60em) calc(100vw - 13.5rem), 100vw" alt="A very zoomed out screenshot of Speedlify" width="600" height="540"></a></div>
+<div class="fullwidth"><a href="https://www.speedlify.dev/ssg/"><img src="/web/img/posts/speedlify/screenshot-1x.png" srcset="/web/img/posts/speedlify/screenshot-1x.png 600w, /web/img/posts/speedlify/screenshot-2x.png 1400w" sizes="(min-width: 60em) calc(100vw - 14rem), 100vw" alt="A very zoomed out screenshot of Speedlify" width="600" height="540"></a></div>
 
 ## Next Steps
 
