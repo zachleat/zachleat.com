@@ -59,7 +59,7 @@ abbr {
 		display: none !important;
 	}
 }
-@media( max-width: 38.6875em) { /* 619px */
+@media( max-width: 39.9375em) { /* 639px */
 	.hide-md {
 		display: none !important;
 	}
@@ -255,8 +255,8 @@ h5,
 
 /* Layout */
 .rail {
-	padding: 1em 1em .5em;
-	margin-bottom: .5em;
+	padding: 1em .5em;
+	margin-bottom: 1em;
 	border-bottom: 1px solid #dedede;
 	text-align: center;
 }
@@ -768,7 +768,7 @@ th.numeric {
 	margin-bottom: -2px;
 }
 .rail .navigation {
-	margin: 0;
+	margin: 1em 0 0;
 }
 @supports (display: grid) {
 	@media (min-width: $twoColLayoutMinWidth) {
@@ -1096,7 +1096,6 @@ a[href]:hover .project_img {
 	display: inline-block;
 	white-space: nowrap;
 	vertical-align: middle;
-	margin-top: -10px;
 	font-family: -apple-system, system-ui, sans-serif;
 }
 .tags:empty {
@@ -1111,7 +1110,7 @@ a[href]:hover .project_img {
 	color: #666;
 	padding: 4px;
 	margin: 0 4px;
-	vertical-align: middle;
+	vertical-align: text-bottom;
 	display: inline-block;
 	text-decoration: none;
 }
@@ -1178,12 +1177,10 @@ a[href].tag-inline:not(.tag-borderless),
 
 .tags.tags-rail {
 	white-space: normal;
-	margin-top: .5em;
 }
 .tags.tags-rail .tag {
 	margin-right: 0;
 	margin-left: 1px;
-	margin-bottom: 5px;
 
 	@media (max-width: $oneColLayoutMaxWidth) {
 		padding-left: 3px;
