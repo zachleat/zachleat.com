@@ -68,7 +68,8 @@ The Prime Factors Code Kata requires a function that takes a single integer argu
 
 I’ve recorded an unmodified single-take screencast of myself performing the kata below. I’m using the same source code I provided above, but with the [JsTestDriver Eclipse plugin][8] instead of using the command line to run the tests. The plugin is great for the screencast, because it very easily shows when the tests are failing or passing. You might also notice that it reruns the tests automatically every time I save.
 
-<div class="fluid-width-video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/zsCYkmAJBAY" frameborder="0" allowfullscreen></iframe></div>
+<div><youtube-lite-player @slug="zsCYkmAJBAY" @label="{{ title }}"></youtube-lite-player></div>
+
 
 ## JsTestDriver
 

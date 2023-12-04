@@ -16,4 +16,5 @@ We must declare our independence from the shackles of our development domains! F
 
 It is also available on [GitHub](https://github.com/jmhobbs/domain-swap).
 
-<div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/rBjWONjqwNg/" frameborder="0"></iframe></div>
+<div><youtube-lite-player @slug="rBjWONjqwNg" @label="{{ title }}"></youtube-lite-player></div>
+

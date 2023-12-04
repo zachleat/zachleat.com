@@ -15,7 +15,7 @@ medialength: 19 min
 
 ## Video
 
-<div class="fluid-width-video-wrapper"><iframe src="//www.youtube.com/embed/LbCT38Idhyk" frameborder="0" allowfullscreen></iframe></div>
+<div><youtube-lite-player @slug="LbCT38Idhyk" @label="{{ title }}"></youtube-lite-player></div>
 
 [Watch the talk on YouTube](https://www.youtube.com/watch?v=LbCT38Idhyk) (18:45) <span class="tag video">Video</span>
 

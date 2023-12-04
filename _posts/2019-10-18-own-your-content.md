@@ -21,7 +21,7 @@ For this talk I built a social media platform: MySpaceBook.​info, the only soc
 
 This [video is hosted on YouTube](https://www.youtube.com/watch?v=X3SrZuH00GQ).
 
-<div><div class="fluid-width-video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/X3SrZuH00GQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+<div><youtube-lite-player @slug="X3SrZuH00GQ" @label="{{ title }}"></youtube-lite-player></div>
 
 ## Slides
 

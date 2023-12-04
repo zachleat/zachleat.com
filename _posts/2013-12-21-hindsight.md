@@ -9,9 +9,7 @@ Rather than a bunch of individual “In Case You Missed It” tweets, I thought 
 
 If you only watch one web development talk I’ve done this year, make it this one. It’s a soup to nuts talk about a variety of topics and will show you how to build a future-proof, performance driven website from start to finish.
 
-<div class="fluid-width-video-wrapper">
-<iframe width="420" height="315" src="https://www.youtube.com/embed/NkVmhe-vvAo" frameborder="0" allowfullscreen></iframe>
-</div>
+<div><youtube-lite-player @slug="NkVmhe-vvAo" @label="{{ title }}"></youtube-lite-player></div>
 
 *Related Blog Post: [Tool or Die, a Web Developer’s Workflow](/web/tool-or-die/)*
 

@@ -17,4 +17,4 @@ medialength: 25 min
 
 Or watch here:
 
-<div class="fluid-width-video-wrapper"><iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/TUxTai00v1k/" frameborder="0" allowfullscreen></iframe></div>
+<div><youtube-lite-player @slug="TUxTai00v1k" @label="{{ title }}"></youtube-lite-player></div>
