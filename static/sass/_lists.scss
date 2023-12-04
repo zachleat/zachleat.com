@@ -36,22 +36,20 @@ dl.nextprev img {
 }
 dl.nextprev {
 	display: grid;
-	gap: 0.5em 1em;
+	gap: 0.5em 1.5em;
 	grid-template-columns: 1fr 1fr;
 }
 @media (min-width: 31.25em) { /* 500px */
 	dl.nextprev {
-		gap: 0.5em 2em;
+		gap: 0.5em 20%;
 	}
 }
 dl.nextprev dt {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: relative;
 	z-index: 1;
 	margin-bottom: 0;
-	// background-color: rgba(255,255,255,.4);
 	pointer-events: none;
 }
 dl.nextprev dt span {
@@ -73,25 +71,29 @@ dl.nextprev .project_img {
 	box-shadow: 0 2px 12px 0px rgba(0, 0, 0, 0.2);
 }
 dl.nextprev a[href]:not(:active, :focus) .project_img:not(:hover) {
-	opacity: .7;
+	opacity: .75;
 }
 
+dl.nextprev dd,
+dl.nextprev dt {
+	grid-row: 1;
+}
 dt.nextprev-prev {
 	grid-column: 1;
-	grid-row: 1;
 	justify-self: flex-start;
 }
 dt.nextprev-next {
 	grid-column: 2;
-	grid-row: 1;
-	text-align: right;
 	justify-self: flex-end;
 }
 dd.nextprev-prev {
-	grid-row: 1;
 	grid-column: 1;
 }
 dd.nextprev-next {
-	grid-row: 1;
 	grid-column: 2;
+}
+dl.nextprev dd:empty {
+	background-color: #eee;
+	border-radius: .5em;
+	cursor: not-allowed;
 }

@@ -19,11 +19,11 @@
     min-width: 180px;
 }
 .webmentions__facepile > a {
-    margin-left: -16px;
+    margin-left: -12px;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    border: 4px solid #fff;
+    border: 2px solid #fff;
     line-height: 1;
     overflow: hidden;
     box-sizing: content-box;
@@ -33,10 +33,11 @@
     z-index: 1;
 }
 .webmentions__face {
-    background-color: rgba(0,0,0,.03);
+    background-color: rgba(0,0,0,.2);
 }
-.error > .webmentions__face {
-    visibility: hidden;
+/* Hide errors, note: this makes the number reported on the page inaccurate */
+.webmentions__facepile .error {
+    display: none;
 }
 @supports (object-fit: cover) {
     .webmentions__face,
