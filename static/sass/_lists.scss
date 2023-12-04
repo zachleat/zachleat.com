@@ -33,7 +33,7 @@ dd ul.via {
 /* Next/prev */
 dl.nextprev {
 	display: grid;
-	gap: 1em;
+	gap: 0.5em 2em;
 }
 dl.nextprev dt {
 	font-size: 0.8125em; /* 13px /16 */
@@ -45,6 +45,10 @@ dl.nextprev dt span {
 	font-weight: 700;
 	margin-bottom: .25em;
 	text-transform: uppercase;
+}
+dl.nextprev .project_img {
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 12px 0px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 31.1875em) { /* 499px */
 	dl.nextprev dd {
