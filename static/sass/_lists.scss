@@ -31,6 +31,9 @@ dd ul.via {
 }
 
 /* Next/prev */
+dl.nextprev img {
+	display: block;
+}
 dl.nextprev {
 	display: grid;
 	gap: 0.5em 1em;
