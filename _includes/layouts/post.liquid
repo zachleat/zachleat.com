@@ -92,8 +92,30 @@ tmpl: page
 	{% assign nextPost = collections.posts | getNextCollectionItem: page %}
 
 	<dl class="nextprev">
-	{% if previousPost %}<dt class="nextprev-prev">Previous</dt><dd class="nextprev-prev"><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></dd>{% endif %}
-	{% if nextPost %}<dt class="nextprev-next">Next</dt><dd class="nextprev-next"><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></dd>{% endif %}
+	{%- if previousPost %}
+		<dt class="nextprev-prev">
+			<span>Previous:</span>
+			<a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+		</dt>
+		<dd class="nextprev-prev">
+			<a href="{{ previousPost.url }}">
+				{% opengraphImageHtml previousPost %}
+			</a>
+		</dd>
+	{%- endif %}
+	{%- if nextPost %}
+		<dt class="nextprev-next">
+			<span>Next:</span>
+			<a href="{{ nextPost.url }}">
+				{{ nextPost.data.title }}
+			</a>
+		</dt>
+		<dd class="nextprev-next">
+			<a href="{{ nextPost.url }}">
+				{% opengraphImageHtml nextPost %}
+			</a>
+		</dd>
+	{%- endif %}
 	</dl>
 </article>
 
