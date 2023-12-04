@@ -51,6 +51,7 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 	<li><a href="https://www.npmjs.com/~zachleat">{% indieAvatar "https://npmjs.com/" %}npm</a></li>
 	<li><a href="https://bsky.app/profile/zachleat.com">{% indieAvatar "https://bsky.app/" %}Bluesky</a></li>
 	<li><a href="https://www.linkedin.com/in/zachleat/">{% indieAvatar "https://www.linkedin.com/" %}LinkedIn</a></li>
+	<li><a href="https://codepen.io/zachleat/">Codepen</a></li>
 	<li><a href="https://opencollective.com/zachleat">{% indieAvatar "https://opencollective.com/" %}OpenCollective</a></li>
 	<li><a href="https://letterboxd.com/zachleat/">{% indieAvatar "https://letterboxd.com/" %}Letterboxd</a></li>
 	<li>{% indieAvatar "https://nintendo.com/" %}Nintendo</li>
