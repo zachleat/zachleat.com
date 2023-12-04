@@ -639,21 +639,15 @@ pre {
 	margin: .5em -0.25rem; /* -4px /16 */
 	background: #272822;
 	color: #f8f8f2;
-	white-space: -moz-pre-wrap;
-	white-space: -pre-wrap;
-	white-space: -o-pre-wrap;
-	white-space: pre-wrap;
+	white-space: pre;
+	word-wrap: normal;
+	overflow-x: auto;
 
 	@include extraunhyphenate;
 
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
-}
-.scrollable-code pre {
-	white-space: pre;
-	word-wrap: normal;
-	overflow-x: auto;
 }
 pre {
 	padding: .75rem;

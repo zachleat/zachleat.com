@@ -127,7 +127,7 @@ If you want to add additional clientside interactivity to the component, use the
 
 This is less than ideal, as it places a JavaScript dependency on CSS (in Firefox only).
 
-<div class="scrollable-code"><syntax-highlight @language="html">
+<div><syntax-highlight @language="html">
 <script>
 if("customElements" in window) {
 	customElements.define("sample-component", class extends HTMLElement {
@@ -140,7 +140,7 @@ if("customElements" in window) {
 </script>
 </syntax-highlight></div>
 
-<details class="scrollable-code livedemo">
+<details class="livedemo">
 <summary>Expand to see the Declarative Shadow DOM polyfill code.</summary>
 <script webc:is="syntax-highlight" @language="js">
 // Declarative Shadow DOM polyfill
@@ -175,7 +175,7 @@ function polyfillDeclarativeShadowDom(node) {
 
 This method uses JavaScript to client-render markup into Shadow DOM. Here’s a code sample of how two instances of `<sample-component>` might look in your editor:
 
-<div class="scrollable-code"><syntax-highlight @language="html">
+<div><syntax-highlight @language="html">
 <sample-component>Fallback content.</sample-component>
 <sample-component>Fallback content.</sample-component>
 
@@ -268,7 +268,7 @@ And on our page we’ll use it twice to show how it scales:
 
 This is how the above template renders:
 
-<div class="scrollable-code"><syntax-highlight @language="html">
+<div><syntax-highlight @language="html">
 <style>.ws0ljrjcl{text-decoration:underline;text-decoration-color:blue}</style>
 <sample-component class="ws0ljrjcl">Server rendered HTML.</sample-component>
 <sample-component class="ws0ljrjcl">Server rendered HTML.</sample-component>
@@ -291,7 +291,7 @@ This allows you to author your component CSS without additional ceremony and Web
 
 WebC de-duplicates JS in the same way as CSS too. This means we can add `<script>` in the component file for our Custom Element client JavaScript and this code will only appear on the page once, no matter how many instances of the component exist on the page.
 
-<details class="scrollable-code">
+<details>
 <summary>Expand to see <code>sample-component.webc</code> using the Custom Elements API</summary>
 <syntax-highlight @language="html">
 Server rendered HTML
