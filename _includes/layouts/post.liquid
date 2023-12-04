@@ -94,8 +94,7 @@ tmpl: page
 	<dl class="nextprev">
 	{%- if previousPost %}
 		<dt class="nextprev-prev">
-			<span>Newer:</span>
-			<a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+			<span>&lt; Newer</span>
 		</dt>
 		<dd class="nextprev-prev">
 			<a href="{{ previousPost.url }}">
@@ -105,10 +104,7 @@ tmpl: page
 	{%- endif %}
 	{%- if nextPost %}
 		<dt class="nextprev-next">
-			<span>Older:</span>
-			<a href="{{ nextPost.url }}">
-				{{ nextPost.data.title }}
-			</a>
+			<span>Older &gt;</span>
 		</dt>
 		<dd class="nextprev-next">
 			<a href="{{ nextPost.url }}">
