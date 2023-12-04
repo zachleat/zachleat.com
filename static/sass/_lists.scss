@@ -50,6 +50,10 @@ dl.nextprev .project_img {
 	border: 1px solid #ccc;
 	box-shadow: 0 2px 12px 0px rgba(0, 0, 0, 0.2);
 }
+dl.nextprev a[href]:not(:active, :focus) .project_img:not(:hover) {
+	opacity: .7;
+}
+
 @media (max-width: 31.1875em) { /* 499px */
 	dl.nextprev dd {
 		display: none;
