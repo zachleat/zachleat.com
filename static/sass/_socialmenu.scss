@@ -3,7 +3,7 @@
 /* Social links */
 .social {
 	display: flex;
-	gap: .5em;
+	gap: .75em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -60,9 +60,7 @@
 		}
 	}
 	.rail .social {
-		display: flex;
 		justify-content: center;
-		gap: 0.75em;
 	}
 	.rail .navigation .tags a[href] {
 		padding-left: .75em;
