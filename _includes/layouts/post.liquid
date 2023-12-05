@@ -100,7 +100,7 @@ tmpl: page
 		<dd class="nextprev-prev">
 			{%- if previousPost %}
 			<a href="{{ previousPost.url }}">
-				{% opengraphImageHtml previousPost %}
+				{% opengraphImageHtml previousPost, previousPost.data.title %}
 			</a>
 			{%- endif -%}
 		</dd>
@@ -112,7 +112,7 @@ tmpl: page
 		<dd class="nextprev-next">
 			{%- if nextPost %}
 			<a href="{{ nextPost.url }}">
-				{% opengraphImageHtml nextPost %}
+				{% opengraphImageHtml nextPost, nextPost.data.title %}
 			</a>
 			{%- endif -%}
 		</dd>

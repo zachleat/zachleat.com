@@ -107,7 +107,7 @@ function opengraphImageHtml(targetUrl, alt = "") {
 
 	let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
 	return Image.generateHTML(stats, {
-		alt: alt || `OpenGraph image for ${targetUrl}`,
+		alt: alt ?? `OpenGraph image for ${targetUrl}`,
 		loading: "lazy",
 		decoding: "async",
 		sizes: "(min-width: 64em) 50vw, 100vw",
@@ -179,8 +179,8 @@ module.exports = function(eleventyConfig) {
 	// Screenshots
 	eleventyConfig.addLiquidShortcode("eleventyImageServiceHtml", getImageServiceHtml);
 
-	eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url, data}) {
-		return opengraphImageHtml(getFullUrlFromPath(url), data.title);
+	eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url}, alt) {
+		return opengraphImageHtml(getFullUrlFromPath(url), alt);
 	});
 
 	eleventyConfig.addLiquidShortcode("screenshotImageHtmlFullUrl", screenshotImageHtmlFullUrl);
