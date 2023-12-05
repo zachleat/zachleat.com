@@ -404,7 +404,20 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("homepageNewestPosts", function(collection) {
-		return getPosts(collection).filter(({data}) => data.showOnHomePage === true);
+		return getPosts(collection)
+			.filter(({data}) => data.showOnHomePage === true)
+			.sort((a, b) => {
+				if(a.data.pinned && b.data.pinned) {
+					return 0;
+				}
+				if(a.data.pinned) {
+					return -1;
+				}
+				if(b.data.pinned) {
+					return 1;
+				}
+				return 0;
+			})
 	});
 
 	eleventyConfig.addCollection("upcomingTalks", function(collection) {

@@ -20,7 +20,7 @@
 	{%- if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}{% comment %}
 	{% endcomment %} data-filter-category="{{ post | getFilterCategories }}">
 
-	<a href="{{ post.url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
+	<a href="{{ post.url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}{% if post.data.pinned %} posts-link-pinned{% endif %}">
 	{%- if previewImages %}
 		{% comment %}{% if post.data.headvideo %}<video muted controls preload="metadata" src="{{ post.data.headvideo }}" class="project_video"></video>{% endif %} {% endcomment %}
 		{% if post.data.headimage -%}

@@ -1,6 +1,7 @@
 ---
 title: "The Tension and Future of Jamstack"
 overrideOgImageScreenshotBackground: https://thefutureofjamstack.org/
+pinned: true
 ---
 At the [**Jamstack ZHUZH**](https://www.youtube.com/watch?v=xVmKdCi-Gpo), we had a lovely panel discussion on the current and future status of the Jamstack ecosystem.
 
