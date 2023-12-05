@@ -39,20 +39,25 @@ If a web browser popped up on your screen, congratulations! You have an automate
 Now, let’s write our first test!
 
 1.  Open up `templateTest.js` in your favorite IDE.
-2.  Add the following:     TemplateTest = TestCase('TemplateTest');
-        TemplateTest.prototype.testSample = function()
-        {
-            assertTrue(true);
-            assertFalse(false);
-            assertEquals(true, true);
-        };
+2.  Add the following:
+```js
+  TemplateTest = TestCase('TemplateTest');
+  TemplateTest.prototype.testSample = function()
+  {
+      assertTrue(true);
+      assertFalse(false);
+      assertEquals(true, true);
+  };
+```
 
 3.  Re-run the JsTestDriver shell script from Step #3 above.
 
 Now you should see something like the following:
 
+```sh
     Total 1 tests (Passed: 1; Fails: 0; Errors: 0) (2.00 ms)
       Safari 533.18.5 Mac OS: Run 1 tests (Passed: 1; Fails: 0; Errors 0) (2.00 ms)
+```
 
 
 **Notice how you didn’t have to touch any HTML boilerplate code or manually bring up a web browser?** Productivity ensues! You’ve made it this far, are you brave enough to dive into a Code Kata?

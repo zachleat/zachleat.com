@@ -2,7 +2,7 @@
 title: 'Nursery Rhyme Code Poem [JavaScript]'
 ---
 
-``` js
+```js
 (function()
 {
     function BlindMouse() {}

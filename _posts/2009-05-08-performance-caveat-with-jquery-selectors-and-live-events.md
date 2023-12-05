@@ -22,14 +22,17 @@ Event delegation is a great way to program for performance. The `live` jQuery me
 
 For example, say you have a page containing approximately 500 custom tooltip components on it (not typical, but stick with me, this is to prove a point). How might one go about adding a simple live event to activate each tooltip when the user hovers over it?
 
+```js
     $('span.myTooltip').live('mouseover', function(event) {
         // activate tooltip
     });
+```
 
 See the problem? jQuery will actually run the selector on the document, resulting in unnecessary overhead. jQuery is only assigning a single event handler to top level of the document, why does it need to know what nodes it will be binding to before assigning the callback?
 
 What can we do? Let’s create a jQuery function, instead of a method, so it won’t query the document. Try this on for size:
 
+```js
     $.live = function(selector, type, fn) {
         var r = $([]);
         r.selector = selector;
@@ -38,9 +41,11 @@ What can we do? Let’s create a jQuery function, instead of a method, so it won
         }
         return r;
     };
+```
 
 ## Usage
 
+```js
     // Single event type
     $.live('span.myTooltip', 'mouseover', function(event) {
         // activate tooltip
@@ -54,10 +59,13 @@ What can we do? Let’s create a jQuery function, instead of a method, so it won
         .live('mouseout', function(event) {
             // deactivate tooltip
         });
+```
 
 Also, as a side note, keep in mind that jQuery `live` **doesn’t** support space separated events, like `bind` does.
 
+```js
     // Will not work.
     $('span.myTooltip').live('mouseover mouseout', function() {});
+```
 
 Have fun!

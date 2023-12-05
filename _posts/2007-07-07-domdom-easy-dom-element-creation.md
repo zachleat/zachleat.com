@@ -14,54 +14,82 @@ But wait, why are we doing this when there are literally 80 billion other DOM el
 
 Single Node String
 
-    'div'
+```js
+'div'
+```
 
-    <div></div>
+```html
+<div></div>
+```
 
 Single Node String with ID and Classes
 
-    'div#id1.class1.class2'
+```js
+'div#id1.class1.class2'
+```
 
-    <div id="id1" class="class1 class2"></div>
+```html
+<div id="id1" class="class1 class2"></div>
+```
 
 Single Node String for a Form Element
 
-    'input[name="myTextBox",type="text",maxlength="5"]'
+```js
+'input[name="myTextBox",type="text",maxlength="5"]'
+```
 
-    <input name="myTextBox" maxlength="5" type="text"/>
+```html
+<input name="myTextBox" maxlength="5" type="text"/>
+```
 
 Single Node String with Style Syntax
 
-    'div{height=80px,color=#f90,border=1px solid #000}'
+```js
+'div{height=80px,color=#f90,border=1px solid #000}'
+```
 
-    <div style="border: 1px solid #000; height: 80px; color: #f90"></div>
+```html
+<div style="border: 1px solid #000; height: 80px; color: #f90"></div>
+```
 
 
 Complex Single Node String with ID, multiple classes, Style, and Namespaced Attribute)
 
-    'div#id1.class1.class2[style="width:60px;color:#f90",@class="class4",@att="true",@namespace:att="false"]'
+```js
+'div#id1.class1.class2[style="width:60px;color:#f90",@class="class4",@att="true",@namespace:att="false"]'
+```
 
-    <div id="id1" att="true" namespace:att="false" class="class1 class2 class4" style="width: 60px; color: #f90;"></div>
+```html
+<div id="id1" att="true" namespace:att="false" class="class1 class2 class4" style="width: 60px; color: #f90;"></div>
+```
 
 
 Multiple Node String: Linear (Parents with one Child)
 
-    'div span div'
+```js
+'div span div'
+```
 
-    <div>
-         <span>
-              <div></div>
-         </span>
-    </div>
+```html
+<div>
+	<span>
+		<div></div>
+	</span>
+</div>
+```
 
 Multiple Node String: Non-Linear (Parent with more than one Child)
 
-    { 'div': [ 'span', 'span' ] }
+```js
+{ 'div': [ 'span', 'span' ] }
+```
 
-    <div>
-         <span></span>
-         <span></span>
-    </div>
+```html
+<div>
+	<span></span>
+	<span></span>
+</div>
+```
 
 ## How Does It Work?
 
@@ -81,72 +109,98 @@ You should already be able to tell how to create a node from the examples above.
 
 Creating a node with an id
 
-    'div#myId'
+```js
+'div#myId'
+```
 
 Creating a node with CSS classes
 
-    'div.class1.class2'
+```js
+'div.class1.class2'
+```
 
 Creating two nodes at the same level
 
-    [ 'div', 'div' ]
+```js
+[ 'div', 'div' ]
+```
 
 Creating a node with two children
 
-    { 'div': [ 'div', 'div' ] }
+```js
+{ 'div': [ 'div', 'div' ] }
+```
 
 You can mix the {} and [] syntax wherever you like, but if you want a node to have non-linear children, you have to use the {} object notation.
 
 Creating a text node (start the node declaration with a #, you can change this to another non-conflicting character in the code if you like)
 
-    '#Any Text Here'
+```js
+'#Any Text Here'
+```
 
 Creating a node with attributes (the @ is optional)
 
-    'div[class="class3",style="width:60px;color:#f90",@att="true",@namespace:att="false"]'
+```js
+'div[class="class3",style="width:60px;color:#f90",@att="true",@namespace:att="false"]'
+```
 
 Creating a node with a Style Shortcut (mixing with a style attribute is handled properly)
 
-    'div{color=#f90,border=1px solid #000}[style="height:80px;background:#fff"]'
+```js
+'div{color=#f90,border=1px solid #000}[style="height:80px;background:#fff"]'
+```
 
 A few notes on attributes. Quotes are required on attributes (single or double but be consistent), but are not required in the style shortcut declaration. Quotes are not allowed to be nested inside of attributes (a single quote cannot be inside of a double quote and vice versa).
 
 And of course, all of the above can be mixed together
 
-    'div#myId.class1.class2{color=#f90}[customAttr="true",@customAttr2="false"] div#child1 div#child2'
+```js
+'div#myId.class1.class2{color=#f90}[customAttr="true",@customAttr2="false"] div#child1 div#child2'
+```
 
 ## Usage
 
 **Appending** at the end of a parent’s children:
 
-    DOMDom.append( 'div', yourParentNode );
+```js
+DOMDom.append( 'div', yourParentNode );
+```
 
 **Replacing** the children of a parent:
 
-    DOMDom.replace( 'div', yourParentNode );
+```js
+DOMDom.replace( 'div', yourParentNode );
+```
 
 **Unshifting **(inserting at the beginning of a parent’s children):
 
-    DOMDom.unshift( 'div', yourParentNode );
+```js
+DOMDom.unshift( 'div', yourParentNode );
+```
 
 **Inserting** before a certain integer index of a parent’s children:
 
-    // must have at least 3 children, the index is 0 based, if index is null with unshift by default
-    DOMDom.insert( 'div', yourParentNode, 2 );
+```js
+// must have at least 3 children, the index is 0 based, if index is null with unshift by default
+DOMDom.insert( 'div', yourParentNode, 2 );
+```
 
 ## Templates
 
 Use `<$var> ` to indicate a variable, in this example `<$test>`
 
-    // "Compile" the template
-    var str = DOMDom.compile( { 'div.test span': '#Test <$test>' } );
+```js
+// "Compile" the template
+var str = DOMDom.compile( { 'div.test span': '#Test <$test>' } );
 
-    // Use your template in some context, notice the test variable being set.
-    for( var j = 0; j < 1000; j++ )
-    {
-        // knows we're using a compiled template since we're passing in variables as a third argument.
-        DOMDom.append( str, d, { test: j } );
-    }
+// Use your template in some context, notice the test variable being set.
+for( var j = 0; j < 1000; j++ )
+{
+    // knows we're using a compiled template since we're passing in variables as a third argument.
+    DOMDom.append( str, d, { test: j } );
+}
+```
 
 ## Benchmarks
 
@@ -174,15 +228,17 @@ The thing to take away from this is the question of why Satan is haunting my ben
 
 This library was built to work with Yahoo User Interface (YUI), but could be trivially ported to another library by changing the function dependencies listed in the ADAPTER variable in the code.
 
-    var ADAPTER = {
-      setStyle: YAHOO.util.Dom.setStyle,
-      addClass: YAHOO.util.Dom.addClass,
-      isString: YAHOO.lang.isString,
-      isArray: YAHOO.lang.isArray,
-      isNumber: YAHOO.lang.isNumber,
-      isObject: YAHOO.lang.isObject,
-      get: YAHOO.util.Dom.get
-    }; // to port, change these references
+```js
+var ADAPTER = {
+  setStyle: YAHOO.util.Dom.setStyle,
+  addClass: YAHOO.util.Dom.addClass,
+  isString: YAHOO.lang.isString,
+  isArray: YAHOO.lang.isArray,
+  isNumber: YAHOO.lang.isNumber,
+  isObject: YAHOO.lang.isObject,
+  get: YAHOO.util.Dom.get
+}; // to port, change these references
+```
 
 If you're still reading this encyclopedia, here are some links:
 

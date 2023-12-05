@@ -20,14 +20,18 @@ Here are a few quick examples:
 
 ## Valid JSON
 
-    {"myKey": "myString"}
+```js
+{"myKey": "myString"}
+```
 
 Don’t use single quotes. Don’t use unquoted object keys.
 
 ## Invalid JSON
 
-    {myKey: "myString"}
-    {'myKey': 'myString'}
+```js
+{myKey: "myString"}
+{'myKey': 'myString'}
+```
 
 Credits to Jonathan Snook for the [initial write-up][4] and Crockford for formalizing JSON.
 

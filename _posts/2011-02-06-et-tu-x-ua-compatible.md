@@ -57,8 +57,10 @@ The User Agent isn’t the only thing being determined. The prerequisite Microso
 
 Also note that using IE’s **Conditional Compilation** feature to return the version of JScript will be the same, independent of Document Mode.
 
-    var ie = /*@cc_on @_jscript_version @*/0;
-    // Always returns 5.8 in IE8, independent of Document Mode.
+```js
+var ie = /*@cc_on @_jscript_version @*/0;
+// Always returns 5.8 in IE8, independent of Document Mode.
+```
 
 *Example Code from [Scott Jehl’s respond.js][7]*
 
@@ -86,6 +88,7 @@ Consider [a great piece of JavaScript written by James Padosley][13] to find Int
 
  [13]: https://gist.github.com/527683
 
+```js
     // Place this script after jQuery, but before any code that uses jQuery.browser
     // Modified to only test for IE 6 , since jQuery only supports 6
     (function($)
@@ -105,6 +108,7 @@ Consider [a great piece of JavaScript written by James Padosley][13] to find Int
 
         $.browser.version = v;
     })(jQuery);
+```
 
 Now, of course, since we’re creating nodes there is a small performance penalty in using the above script over Regular Expressions and document.documentMode. I feel this to be worthwhile, given that I’ve been [burned by Internet Explorer’s version number before][14]. But next time, I reserve the right to choose performance over simplicity.
 

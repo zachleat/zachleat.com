@@ -88,8 +88,8 @@ tmpl: page
 </article>
 
 <article class="content-grid-sibling" data-pagefind-ignore>
-	{% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
-	{% assign nextPost = collections.posts | getNextCollectionItem: page %}
+	{% assign previousPost = collections.activePosts | getPreviousCollectionItem: page %}
+	{% assign nextPost = collections.activePosts | getNextCollectionItem: page %}
 
 	<dl class="nextprev">
 		<dt class="nextprev-prev">

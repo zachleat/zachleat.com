@@ -115,6 +115,13 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
 
 	/* FILTERS */
+	eleventyConfig.addFilter("archiveUrl", (url, targetYear) => {
+		if(!targetYear) {
+			targetYear = (new Date).getFullYear();
+		}
+		return `https://web.archive.org/web/20230000000000*/${url}`;
+	});
+
 	eleventyConfig.addFilter("leftpad", (str, length = 3) => {
 		let padding = Array.from({length}).map(t => "0").join("");
 		return (padding + str).substring((""+str).length);
@@ -388,6 +395,12 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("posts", function(collection) {
 		return getPosts(collection);
+	});
+
+	eleventyConfig.addCollection("activePosts", function(collection) {
+		return getPosts(collection).filter(function(item) {
+			return !item.data.deprecated;
+		});
 	});
 
 	eleventyConfig.addCollection("homepageNewestPosts", function(collection) {

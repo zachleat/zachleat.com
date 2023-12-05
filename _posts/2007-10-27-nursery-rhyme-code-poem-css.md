@@ -6,7 +6,7 @@ Code Poems are fun! The trick is to take a [nursery rhyme][1] (but really, it co
 
  [1]: http://en.wikipedia.org/wiki/List_of_nursery_rhymes_in_English
 
-``` css
+```css
 #theChurch {}
 #theChurch #theSteeple {}
 #theChurch .door[state="open"] .people { visibility: visible; }

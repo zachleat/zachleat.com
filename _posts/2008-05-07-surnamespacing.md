@@ -15,6 +15,7 @@ Jesus Christ, please show me some examples:
 
 **JavaScript Surnamespacing**
 
+```js
     var Christ = {
         Jesus: {
             walkOn: function(obj) {},
@@ -26,18 +27,22 @@ Jesus Christ, please show me some examples:
     Christ.Jesus.walkOn('water');
     Christ.Jesus.turn('water', 'wine');
     Christ.Jesus.respawn();
+```
 
 **Java Surnamespacing**
 
+```js
     package Christ;
     public class Jesus {
         public void walkOn(String s) {}
         public void turn(String from, String to) {}
         public void respawn() {}
     }
+```
 
 **PHP 6 Surnamespacing ([projected usage][1])**
 
+```js
     namespace Christ {
         class Jesus {
             public function walkOn($obj) {}
@@ -45,6 +50,7 @@ Jesus Christ, please show me some examples:
             public function respawn() {}
         }
     }
+```
 
 **Update**: Apparently I can’t write Java code. Don’t tell work.
 

@@ -123,40 +123,56 @@ As far as my tests go, the only browser to support the `writing-mode` property a
 
 ### Writing Mode: `lr-tb`
 
+```css
     // Do nothing, this is the default
+```
 
 ### Writing Mode: `rl-tb`
 
+```css
     direction: rtl;
+```
 
 ### Writing Mode: `lr-bt`
 
+```css
     // Not possible using W3C spec
+```
 
 ### Writing Mode: `rl-bt`
 
+```css
     // Not possible using W3C spec
+```
 
 ### Writing Mode: `tb-lr`
 
+```css
     // Not possible using W3C spec
+```
 
 ### Writing Mode: `tb-rl`
 
+```css
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+```
 
 ### Writing Mode: `bt-lr`
 
+```css
     // Not possible using W3C spec
+```
 
 ### Writing Mode: `bt-rl`
 
+```css
     direction: rtl;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+```
 
 ## Conclusion
 

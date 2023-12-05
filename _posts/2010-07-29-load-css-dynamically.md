@@ -63,13 +63,15 @@ In all of the library source code I evaluated, Internet Explorer didn’t cause 
 
  [3]: http://github.com/yui/yui3/blob/master/build/yui/get.js#L311
 
-    // FireFox does not support the onload event for link nodes, so there is
-    // no way to make the css requests synchronous. This means that the css
-    // rules in multiple files could be applied out of order in this browser
-    // if a later request returns before an earlier one.  Safari too.
-    if ((ua.webkit || ua.gecko) && q.type === "css") {
-        _next(id, url);
-    }
+```js
+// FireFox does not support the onload event for link nodes, so there is
+// no way to make the css requests synchronous. This means that the css
+// rules in multiple files could be applied out of order in this browser
+// if a later request returns before an earlier one.  Safari too.
+if ((ua.webkit || ua.gecko) && q.type === "css") {
+    _next(id, url);
+}
+```
 
 I wouldn’t be surprised if the commit log there was from Bon Jovi; that code is living on a prayer.
 
@@ -79,17 +81,19 @@ I wouldn’t be surprised if the commit log there was from Bon Jovi; that code i
 
  [4]: http://github.com/rgrove/lazyload/blob/master/lazyload.js#L283
 
-    // Gecko and WebKit don't support the onload event on link nodes. In
-    // WebKit, we can poll for changes to document.styleSheets to figure out
-    // when stylesheets have loaded, but in Gecko we just have to finish
-    // after a brief delay and hope for the best.
-    if (ua.webkit) {
-        // resolve relative URLs (or polling won't work)
-        p.urls[i] = node.href;
-        poll();
-    } else {
-        setTimeout(_finish, 50 * len);
-    }
+```js
+// Gecko and WebKit don't support the onload event on link nodes. In
+// WebKit, we can poll for changes to document.styleSheets to figure out
+// when stylesheets have loaded, but in Gecko we just have to finish
+// after a brief delay and hope for the best.
+if (ua.webkit) {
+    // resolve relative URLs (or polling won't work)
+    p.urls[i] = node.href;
+    poll();
+} else {
+    setTimeout(_finish, 50 * len);
+}
+```
 
 Better, closer, warmer. This includes a nice method for working with webkit browsers. The poll method compares `document.styleSheets`, since Webkit has the nice option of only appending to the styleSheets object when the styleSheet has successfully loaded.
 
@@ -103,30 +107,32 @@ So we have working solutions for IE and Safari/Chrome. The only unsolved piece o
 
 Here’s what I came up with (using jQuery for brevity, note that this solution **only fixes Firefox**, and does not incorporate the above already solved solutions):
 
-    var url = 'css.php',
-        id = 'dynamicCss' + (new Date).getTime();
+```js
+var url = 'css.php',
+    id = 'dynamicCss' + (new Date).getTime();
 
-    $('<style/>').attr({
-        id: id,
-        type: 'text/css'
-    }).html('@import url(' + url + ')').appendTo(document.getElementsByTagName('head')[0]);
+$('<style/>').attr({
+    id: id,
+    type: 'text/css'
+}).html('@import url(' + url + ')').appendTo(document.getElementsByTagName('head')[0]);
 
-    function poll() {
-        try {
-            var sheets = document.styleSheets;
-            for(var j=, k=sheets.length; j<k; j++) {
-                if(sheets[j].ownerNode.id == id) {
-                    sheets[j].cssRules;
-                }
+function poll() {
+    try {
+        var sheets = document.styleSheets;
+        for(var j=, k=sheets.length; j<k; j++) {
+            if(sheets[j].ownerNode.id == id) {
+                sheets[j].cssRules;
             }
-            // If you made it here, success!
-            alert('success!');
-        } catch(e) {
-            window.setTimeout(poll, 50);
         }
+        // If you made it here, success!
+        alert('success!');
+    } catch(e) {
+        window.setTimeout(poll, 50);
     }
+}
 
-    window.setTimeout(poll, 50);
+window.setTimeout(poll, 50);
+```
 
 ### [See this Demo in Action][demo] (Firefox Only)
 

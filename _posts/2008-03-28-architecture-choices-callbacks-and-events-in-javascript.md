@@ -15,20 +15,24 @@ A callback function is a function passed into your code as an argument that will
 
 End-Developer’s Code:
 
-     $.ajax({
-       type: "POST",
-       url: "some.php",
-       data: "name=John&location=Boston",
-       success: function(msg){
-         alert( "Data Saved: " + msg );
-       }
-     });
+```js
+$.ajax({
+	type: "POST",
+	url: "some.php",
+	data: "name=John&location=Boston",
+	success: function(msg){
+		alert( "Data Saved: " + msg );
+	}
+});
+```
 
 Library Code (from jQuery):
 
-    // taken out of context, just know that s stands for the options object passed into $.ajax() above.
-    if ( s.success )
-      s.success( data, status );
+```js
+// taken out of context, just know that s stands for the options object passed into $.ajax() above.
+if ( s.success )
+	s.success( data, status );
+```
 
 In the above code example taken straight from the [jQuery documentation][1], the success key of the object being passed into the ajax() function is a callback function. It will be executed after the Ajax request has successfully completed.
 
@@ -38,18 +42,22 @@ The other mechanism you can use for controlling dependent function execution is 
 
 End-Developer’s Code:
 
-    $(document).bind("myCustomEvent", function(e, msg){
-       alert( "Data Saved: " + msg );
-    });
-    $(document).bind("myCustomEvent", function(e, msg){
-       alert( "More Data Saved: " + msg );
-    });
-    // We can subscribe as many functions as we want to myCustomEvent.
+```js
+$(document).bind("myCustomEvent", function(e, msg){
+	alert( "Data Saved: " + msg );
+});
+$(document).bind("myCustomEvent", function(e, msg){
+	alert( "More Data Saved: " + msg );
+});
+// We can subscribe as many functions as we want to myCustomEvent.
+```
 
 Library Code:
 
-    // again, no context here
-    $(document).trigger("myCustomEvent", [ "My Message" ]);
+```js
+// again, no context here
+$(document).trigger("myCustomEvent", [ "My Message" ]);
+```
 
 As you can see above, custom events are much more extensible and customizable to your needs. Want to attach 10 functions to myCustomEvent? Sure, go right ahead. Want to try to attach 10 callbacks to the ajax success method above, that’s going to be a bit more work. The benefit to using callbacks lies in their disposability and isolation. Perhaps you don’t want to publish to the world when your Ajax Request completes — maybe you just want to handle the completion and be done with it.
 

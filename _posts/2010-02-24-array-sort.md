@@ -7,6 +7,7 @@ tags:
 
 What would you expect to be the result of executing the following code?
 
+```js
     // Create a medium size array, at least 100 items
     var obj = [];
     for(var j=0, k=150; j<k; j++) {
@@ -23,6 +24,7 @@ What would you expect to be the result of executing the following code?
         if(m < p) return -1;
         return 0;
     });
+```
 
 The `obj` Array should now be sorted, in alphabetical order based on value.  **BUT, in our best friend Internet Explorer, a `Number Expected` error may be the result.**  Don&#8217;t be fooled if your test array behaves correctly, it only happens intermittently for arrays of varying size!
 
@@ -59,8 +61,10 @@ So, I [whipped up a quick test to check the damage](http://www.zachleat.com/test
 
 Of course, the `Number Expected` error is going to result whenever your code doesn&#8217;t return a number inside of the function callback.  But the problem here is something deeper than simple application code failure.  The problem is in JScript itself.  Any modification to the sort arguments may result in the `Number Expected` error.
 
+```js
     // modifies the argument m and is unreliable.
     m=(''+m).toLowerCase();
+```
 
 This problem will manifest itself more frequently if you use the Google Closure Compiler, which restructures JavaScript to reuse argument variables if possible, probably to save the 4 character penalty of a &#8220;var &#8221; declaration.
 
@@ -70,6 +74,7 @@ Normally, reusing argument variables is a safe practice for primitives, since th
 
 **Don&#8217;t reuse the argument variables inside of an Array sort function.**
 
+```js
     // Changing the above example
     obj.sort(function(m1,p1){
         var m=(''+m1).toLowerCase(),
@@ -79,6 +84,7 @@ Normally, reusing argument variables is a safe practice for primitives, since th
         if(m < p) return -1;
         return 0;
     });
+```
 
 _Check the [source code of the demo file](http://www.zachleat.com/test/numberexpected/) to see the different methods of modifying the arguments that I attempted._
 

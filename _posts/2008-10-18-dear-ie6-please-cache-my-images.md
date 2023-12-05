@@ -12,6 +12,7 @@ This week presented an interesting, albeit decreasingly relevant scenario, where
 
 Consider the following (jQuery) code to **add three new images** to the page using JavaScript:
 
+```html
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
     <html>
         <head>
@@ -30,6 +31,7 @@ Consider the following (jQuery) code to **add three new images** to the page usi
             </script>
         </body>
     </html>
+```
 
 Note how each image being added dynamically has a **background-image** as well.
 
@@ -67,11 +69,13 @@ Turns out there are two independent issues at play here:
 
 1.  The classic _[IE6 background-image flicker](http://www.mister-pixel.com/#Content__state=is_that_simple)_ problem.  This has been documented extensively, and the problem is that IE6 bypasses its local web browser cache for any image requests made for CSS background-images inserted on the page dynamically.  The good news for this one is that the fix is a simple one.
 
+```js
         if(jQuery.browser.msie && parseInt(jQuery.browser.version, 10) == 6) {
           try {
             document.execCommand("BackgroundImageCache", false, true);
           } catch(err) {}
         }
+```
 
     Note the simple check for IE 6 execution only.  This is optional, but keep in mind that this problem is not present in IE7+.  During your testing, also keep in mind that Mister Pixel reports (and I can confirm) that once you run this command, this setting **will persist in your browser**, even if you empty your cache and remove the code from your scripts.  You’ll need to close your browser window to reset the setting to default.
 

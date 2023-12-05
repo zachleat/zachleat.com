@@ -37,8 +37,11 @@ Don’t agree? If you’re stubborn as hell and hate simplicity, you’re going 
 
 1.  Use **progressive enhancement**:
 
+```html
         <a href="#" id="back-to-top">Back to Top</a>
+```
 
+```js
         // Requires jQuery
         $('#back-to-top').click(function() {
             window.scrollTo(0,0);
@@ -46,9 +49,11 @@ Don’t agree? If you’re stubborn as hell and hate simplicity, you’re going 
             // don't change the hash if not needed
             return false;
         });
+```
 
 2.  **Hide the link** if the page doesn’t have a scrollbar. If no scrollbar exists, the user will **always be “at the top.”**     // Continuing with Previous Example
 
+```js
         // Continuing with Previous Example
         $(function() {
             $('#back-to-top').hide();
@@ -61,5 +66,6 @@ Don’t agree? If you’re stubborn as hell and hate simplicity, you’re going 
 
         // For completeness, you may also want to
         //   add logic to the "resize" event.
+```
 
 Really though, **just delete the link.**
