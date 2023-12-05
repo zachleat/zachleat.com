@@ -58,9 +58,18 @@
 /web/about-me/ /web/about/ 301!
 /web/projects/ /web/?category=project 301!
 /web/writing/ /web/?category=writing 301!
+
 /web/notes/feed/ /web/notes/ 301!
 /web/notes/ /web/?category=note 301!
-/web/notes/* /web/:splat 301!
+/web/notes/get-all-font-sizes/ /web/get-all-font-sizes/ 301!
+/web/notes/typinator-macros/ /web/typinator-macros/ 301!
+/web/notes/fetch-twitter-image/ /web/fetch-twitter-image/ 301!
+/web/notes/go-to-github-issue/ /web/go-to-github-issue/ 301!
+/web/notes/week/2019/06/14/ /web/week/2019/06/14/ 301!
+/web/notes/week/2019/05/24/ /web/week/2019/05/24/ 301!
+/web/notes/week/2019/06/07/ /web/week/2019/06/07/ 301!
+/web/notes/week/2019/06/07/ /web/week/2019/06/07/ 301!
+
 /web/taxonomy/* /web/pragmatic/:splat 301!
 /web/web/w3c-banners/ /web/w3c-status-banners/ 301!
 /web/web-fonts/ /web/fonts/ 301!

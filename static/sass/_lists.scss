@@ -38,6 +38,7 @@ dl.nextprev {
 	display: grid;
 	gap: 0.5em 1.5em;
 	grid-template-columns: 1fr 1fr;
+	margin: 4em 0;
 }
 @media (min-width: 31.25em) { /* 500px */
 	dl.nextprev {
