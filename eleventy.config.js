@@ -403,6 +403,10 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addCollection("pinnedPosts", function(collection) {
+		return getPosts(collection).filter(({data}) => data.pinned === true)
+	});
+
 	eleventyConfig.addCollection("homepageNewestPosts", function(collection) {
 		return getPosts(collection)
 			.filter(({data}) => data.showOnHomePage === true)

@@ -349,7 +349,7 @@ h5,
 		}
 		.rail-sticky {
 			position: sticky;
-			top: 0;
+			top: 1em;
 		}
 
 		.body-grid {
@@ -1187,6 +1187,9 @@ a[href].tag-inline:not(.tag-borderless),
 }
 
 .tags.tags-rail {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
 	white-space: normal;
 }
 .tags.tags-rail .tag {
@@ -1201,19 +1204,17 @@ a[href].tag-inline:not(.tag-borderless),
 }
 
 /* Top 5 Rail module */
-.tags.tags-rail-top5 {
-	display: none;
-}
 @supports (display: grid) {
-	@media (min-width: $twoColLayoutMinWidth) and (min-height: 33.125em) {
+	@media (min-width: $twoColLayoutMinWidth) {
 		/* Top 5 posts */
 		.tags.tags-rail-top5 {
-			display: block;
+			margin-top: 2em;
+			gap: 2em;
 		}
 		.tags .top5 {
-			font-size: 13px;
-			margin-top: 4em;
-			margin-bottom: .5em;
+			font-size: 0.8125rem; /* 13px /16 */
+			margin: 0;
+			margin-bottom: 1em;
 			color: #666;
 			@include webfontBold;
 		}
@@ -1221,7 +1222,7 @@ a[href].tag-inline:not(.tag-borderless),
 			text-transform: none;
 			text-decoration: none;
 			font-size: 12px;
-			margin-top: 0.6153846153846em; /* 8px /13 */
+			margin: 0;
 			padding-left: 0;
 			padding-right: 0;
 			@include webfont;
@@ -1236,6 +1237,17 @@ a[href].tag-inline:not(.tag-borderless),
 			border-color: transparent;
 			color: $linkActiveColor;
 			text-decoration: underline;
+		}
+		.tags .tag.tag-pinned-rail {
+			display: block;
+			width: calc(100% + 1em);
+			font-weight: 600;
+			color: #fff;
+			border-radius: .4em;
+			padding: .5em .5em;
+			margin: 0 -.5em 0;
+			font-size: 0.875em; /* 14px /16 */
+			background-color: #537949;
 		}
 	}
 }
@@ -1649,7 +1661,7 @@ select[data-filter-key] {
 	text-transform: none;
 }
 .rail .spark {
-	margin-top: 1em;
+	margin-top: 2em;
 	@include webfontBold;
 }
 .spark .spark-img {

@@ -16,7 +16,10 @@
 .social_icon {
 	display: inline-block;
 	font-family: sans-serif;
-	opacity: .6;
+	opacity: .8;
+}
+.social_icon-rounded img {
+	border-radius: .15em;
 }
 .social_icon img {
 	width: 1.75rem; /* 28px /16 */
