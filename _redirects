@@ -65,7 +65,6 @@
 /web/notes/typinator-macros/ /web/typinator-macros/ 301!
 /web/notes/fetch-twitter-image/ /web/fetch-twitter-image/ 301!
 /web/notes/go-to-github-issue/ /web/go-to-github-issue/ 301!
-/web/notes/week/* /web/week/:splat 301!
 
 /web/taxonomy/* /web/pragmatic/:splat 301!
 /web/web/w3c-banners/ /web/w3c-status-banners/ 301!
@@ -79,6 +78,3 @@
 
 # Presentation Files
 /mobile/uno/Presentation.pdf /web/html5-vs-native-applications/ 301!
-
-# Old Wordpress redirects
-#/web/:year/:month/:day/* /web/:splat 301
