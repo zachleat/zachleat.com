@@ -112,4 +112,4 @@ Consider [a great piece of JavaScript written by James Padosley][13] to find Int
 
 Now, of course, since we’re creating nodes there is a small performance penalty in using the above script over Regular Expressions and document.documentMode. I feel this to be worthwhile, given that I’ve been [burned by Internet Explorer’s version number before][14]. But next time, I reserve the right to choose performance over simplicity.
 
- [14]: /web/2008/10/19/jquery-bug-ie-reports-incorrect-browserversion/
+ [14]: /web/jquery-bug-ie-reports-incorrect-browserversion/

@@ -4,7 +4,7 @@ title: 'Conservative Design: Hierarchical Select'
 
 This is a post in a series entitled [Conservative Design Patterns for Form Elements][1].
 
- [1]: http://www.zachleat.com/web/2007/02/22/conservative-design-patterns-for-form-elements/
+ [1]: http://www.zachleat.com/web/conservative-design-patterns-for-form-elements/
 
 For now, I’ll start off with an easy web component that a lot of you have probably already had some experience with. But, strangely enough, it is not included in any of the JavaScript libraries that are out there, that I’ve seen. If you know of one, go ahead and post it in the comments.
 
@@ -37,4 +37,4 @@ Luxury Feature Set:
 *   Must be able to nest select elements in a tree structure: selecting an option in a parent element could modify 2 child select elements.
 *   Could be able to modify the options for any element that displays options (Select1 or Select as described in the [Conservative Design Post][6]: Checkbox Group, Radio Group, Select Single or Multiple)
 
- [6]: /web/2007/02/22/conservative-design-patterns-for-form-elements/
+ [6]: /web/conservative-design-patterns-for-form-elements/

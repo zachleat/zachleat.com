@@ -5,7 +5,7 @@ title: The JavaScript Testing Challenge Winner
 Congratulations to [Steve Love][1], who was the first to complete [The JavaScript Testing Challenge][2].
 
  [1]: http://twitter.com/stevelove
- [2]: /web/2010/11/13/javascript-tdd/
+ [2]: /web/javascript-tdd/
 
 [![][book]][4]
 
@@ -24,7 +24,7 @@ Stay tuned for more coding challenges!
 
 Related: [An Update to The JavaScript Testing Challenge][6]
 
- [6]: /web/2011/01/09/javascript-tdd-update/
+ [6]: /web/javascript-tdd-update/
 
 Here’s Steve’s screencast (using, I assume, a mechanical keyboard?):
 

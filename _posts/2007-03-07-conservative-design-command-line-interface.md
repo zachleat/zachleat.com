@@ -4,7 +4,7 @@ title: 'Conservative Design: Command Line Interface'
 
 This is another post in the series entitled [Conservative Design Patterns for Form Elements][1].
 
- [1]: http://www.zachleat.com/web/2007/02/22/conservative-design-patterns-for-form-elements/
+ [1]: http://www.zachleat.com/web/conservative-design-patterns-for-form-elements/
 
 The argument has existed since the dawn of the Graphical User Interface (GUI). Which is better, keyboard-exclusive Command Line or mouse-intensive GUI’s? As more enterprise architectures are moving from terminals to web interfaces for their products, and as time is moving forward with the everyman user desiring an interface that looks pretty and easy to use, we’re seeing a drastic reduction in the utilization of the keyboard.
 

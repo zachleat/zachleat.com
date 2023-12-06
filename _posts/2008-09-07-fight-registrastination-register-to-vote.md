@@ -17,7 +17,7 @@ Have a friend that hasn’t registered to vote yet? Do your civic duty by guilti
 For those demanding technical content from each blog post, the page does use a nice [JavaScript IP Address Geocoder hosted by MaxMind][2] that’s worth a look. It also uses a previously mentioned [JavaScript Pretty Date Difference][3] script.
 
 [2]: http://www.maxmind.com/app/javascript_city
-[3]: http://www.zachleat.com/web/2008/03/23/yet-another-pretty-date-javascript/
+[3]: http://www.zachleat.com/web/yet-another-pretty-date-javascript/
 
 Here’s a few other things that one might also look at if they were making a location aware application:
 

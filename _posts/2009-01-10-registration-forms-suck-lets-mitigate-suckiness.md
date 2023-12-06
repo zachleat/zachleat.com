@@ -39,7 +39,7 @@ Once a user has typed in their **e-mail address**, we can:
     *   Flickr Avatar
 
  [5]: http://www.wait-till-i.com/2009/01/08/using-twitter-as-a-data-provider-to-automatically-fill-forms/
- [6]: http://www.zachleat.com/web/2009/01/08/scare-your-visitors-with-this-javascript-gravatar-plugin/
+ [6]: http://www.zachleat.com/web/scare-your-visitors-with-this-javascript-gravatar-plugin/
  [7]: http://gdata-javascript-client.googlecode.com/svn/trunk/samples/calendar/simple_sample/simple_sample.html
  [8]: http://www.flickr.com/services/api/flickr.people.findByEmail.html
  [9]: http://www.flickr.com/services/api/flickr.people.getInfo.html

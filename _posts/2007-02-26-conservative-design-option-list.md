@@ -4,7 +4,7 @@ title: 'Conservative Design: Option List'
 
 This is another post in the series entitled [Conservative Design Patterns for Form Elements][1].
 
- [1]: http://www.zachleat.com/web/2007/02/22/conservative-design-patterns-for-form-elements/
+ [1]: http://www.zachleat.com/web/conservative-design-patterns-for-form-elements/
 
 Next we’ll look at a web component that is almost ubiquitous among user interfaces today, the Option List. The Option List can take any one of the following three forms.
 

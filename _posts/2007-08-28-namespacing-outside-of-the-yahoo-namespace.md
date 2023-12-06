@@ -4,7 +4,7 @@ title: Namespacing outside of the YAHOO Namespace
 
 YAHOO.namespace(). A lovely little utility function subject that [I’ve written about before][1]. If you’ve never heard of YAHOO.namespace or aren’t even familiar with namespacing, I’d read that article first.
 
- [1]: http://www.zachleat.com/web/2007/08/09/yui-code-review-yahoonamespace/
+ [1]: http://www.zachleat.com/web/yui-code-review-yahoonamespace/
 
 I’ll be honest, using the YAHOO namespace to store my own code makes my bunghole tighten just a little bit. What if I had written code stored under YAHOO.tool, which was unused prior to YUI 2.3.0? What would I do now? I’d have to rewrite my code, or never include any of the wonderful `YAHOO.tool.TestCase`, put together by [Nicholas Zakas][2]. As is traditional with most of my weblog posts, I try not to just complain about a problem without giving you a solution (but let’s be honest, only if it doesn’t take too much work).
 

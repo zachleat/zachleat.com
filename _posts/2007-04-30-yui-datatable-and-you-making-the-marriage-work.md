@@ -10,7 +10,7 @@ The DataTable/Grid Component, the ball and chain of GUI components. It doesn’t
 
 Earlier I published an article entitled [Problems with the YUI DataTable][1]. Now we’re going to work out those problems together, through better communication and more effective problem solving techniques. We’re going to save your marriage.
 
- [1]: /web/2007/04/04/problems-with-yui-datatable/
+ [1]: /web/problems-with-yui-datatable/
 
 Earlier I had stated that there were a few problems with the DataTable, in its current form. Let’s review (but not play the blame game).
 

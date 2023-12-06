@@ -15,6 +15,7 @@ Create the button as the YUI Button Examples and Documentation say to do so. Inc
 
 Instead, use the following JavaScript to replace the functions for button coloring for hover, focus, and active.
 
+```js
     YAHOO.util.Event.addListener( window, 'load', function( e )
     {
         var yuiButtons = YAHOO.util.Dom.getElementsByClassName( 'yuibutton', 'span' );
@@ -43,5 +44,6 @@ Instead, use the following JavaScript to replace the functions for button colori
             YAHOO.util.Dom.removeClass( this, 'focus' );
         } );
     } );
+```
 
 If you’re just using the standard buttons anyway, you’re going to see a speed improvement in performance on hover color changes.

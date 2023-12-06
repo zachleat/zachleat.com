@@ -2,7 +2,6 @@
 title: Using DOM Query Libraries in YUI
 Version Specific Article:
   - YUI 2.3.0
-deprecated: true
 ---
 
 Recently, I posted the top 8 things I thought the YUI Library needed to be a top tier JavaScript library again. One of those things included a CSS Selector DOM Querying class. Use one of these babies for awhile, and you’ll never be able to code without it again. They’re amazingly useful and will shorten your code quite beautifully.
@@ -40,7 +39,7 @@ Download: [jDomQuery Standalone File Packed (10 KB)][6] 1.1.3.1
 If you want to read about jQuery syntax, [go over to their documentation][7]. My current preference is the jQuery syntax, given that it [works with poorly implemented JSF ID attributes][8]. But that’s a different argument.
 
  [7]: http://docs.jquery.com/Selectors
- [8]: /web/2007/07/10/javascript-frameworks-and-jsf/
+ [8]: /web/javascript-frameworks-and-jsf/
 
 If you want to use the full jQuery library, that should work too, but if you want to do that, you might just want to switch to using jQuery at that point (dare I say it).
 

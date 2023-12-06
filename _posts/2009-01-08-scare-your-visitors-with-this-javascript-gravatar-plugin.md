@@ -72,7 +72,7 @@ Licensed under the [WTFPL][10], as highly recommended by [Isaac Schleuter][11] (
 
  [10]: http://sam.zoy.org/wtfpl/
  [11]: http://foohack.com/
- [12]: /web/2007/04/05/google-using-yui-grids-css/
+ [12]: /web/google-using-yui-grids-css/
 
 
 

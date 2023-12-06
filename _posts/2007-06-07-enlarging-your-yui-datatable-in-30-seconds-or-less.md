@@ -7,7 +7,7 @@ deprecated: true
 
 **Please note that this post has been updated to the new version of YUI, 2.3.0 in an article called [“Enlarging your YUI DataTable in 29 Seconds or Less!”][1]**
 
- [1]: /web/2007/08/28/enlarging-your-yui-datatable-in-29-seconds-or-less/
+ [1]: /web/enlarging-your-yui-datatable-in-29-seconds-or-less/
 
 Do you want to fit more content onto your DataTable, but don’t know how? Do you wish that you had fewer columns, or more horizontal screen-estate? Well now you can enlarge your table easily with these simple functions! Instead of adding more information into additional columns, we have used our patented method of not actually patenting anything to bring you a secret formula that will allow you to dynamically insert rows into your table, designed for holding additional, non-constrained customizable content!
 

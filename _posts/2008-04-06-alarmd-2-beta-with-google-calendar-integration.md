@@ -55,7 +55,7 @@ Here are a few new features and addressed limitations in ALARMd 2.
  [3]: http://www.insightoutsight.co.uk/viewproject.php?cid=2&pid=3&iid=2
  [4]: http://zapatopi.net/metrictime/
  [5]: http://www.cafepress.com/poofietomato.49111330
- [6]: http://www.zachleat.com/web/2008/03/23/yet-another-pretty-date-javascript/
+ [6]: http://www.zachleat.com/web/yet-another-pretty-date-javascript/
  [7]: http://apiblog.youtube.com/2008/03/something-to-write-home-about.html
 
 Finished reading? I’m surprised you didn’t click the link at the top: [ALARMd 2 Beta][1]

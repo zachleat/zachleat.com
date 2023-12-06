@@ -5,7 +5,6 @@ categories:
   - project
 tags:
   - project
-deprecated: true
 ---
 
 This class is pretty much a direct port of [John Resig’s JavaScript Pretty Date][1] to PHP 5. A few notes:
@@ -21,14 +20,16 @@ This class is pretty much a direct port of [John Resig’s JavaScript Pretty Dat
 
 Usage:
 
-    // pass in a String DateTime, compared to another String DateTime (defaults to now)
-    $myString = Date_Difference::getStringResolved('-7 weeks');
-    $myString = Date_Difference::getStringResolved('-7 weeks', '+1 week');
+```php
+// pass in a String DateTime, compared to another String DateTime (defaults to now)
+$myString = Date_Difference::getStringResolved('-7 weeks');
+$myString = Date_Difference::getStringResolved('-7 weeks', '+1 week');
 
-    // pass in a DateTime object, compared to another DateTime object (defaults to now)
-    // useful with the Propel ORM, which uses DateTime objects internally.
-    $myString = Date_Difference::getString(new DateTime('-7 weeks'));
-    $myString = Date_Difference::getString(new DateTime('-7 weeks'), new DateTime('+1 week'));
+// pass in a DateTime object, compared to another DateTime object (defaults to now)
+// useful with the Propel ORM, which uses DateTime objects internally.
+$myString = Date_Difference::getString(new DateTime('-7 weeks'));
+$myString = Date_Difference::getString(new DateTime('-7 weeks'), new DateTime('+1 week'));
+```
 
 [Download PHP Pretty Date][4] (PHP 5.10 , 1.86KB)
 

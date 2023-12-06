@@ -21,7 +21,7 @@ Google Wave, in fact, requires the use of Safari, Firefox, Chrome, or the Google
 
  [3]: /web/wp-content/uploads/2009/12/google-wave-ie8.png "Denial of Access with Internet Explorer Screenshot"
  [4]: http://en.wikipedia.org/wiki/Usage_share_of_web_browsers
- [5]: http://www.zachleat.com/web/2009/08/29/device-independence/
+ [5]: http://www.zachleat.com/web/device-independence/
 
 Not surprisingly, Google Wave’s stand against Internet Explorer **has not started a trend**. Instead of all out war, the community at large has decided that subtlety is what’s needed to win this fight. Let’s hold back the [sexual healing][6] of rounded corners, even though perhaps users will call our design harsh or cold. Let’s give them plain buttons instead of nice three dimensional buttons with text and box shadows, even though they may be less actionable.
 

@@ -82,4 +82,5 @@
 # Presentation Files
 /mobile/uno/Presentation.pdf /web/html5-vs-native-applications/ 301!
 
+# These are super important, show up a lot in analytics
 /web/:year/:month/:day/* /web/:splat 301

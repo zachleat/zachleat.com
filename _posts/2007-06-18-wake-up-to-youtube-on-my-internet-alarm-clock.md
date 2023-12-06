@@ -9,7 +9,7 @@ tags:
 
 **Update**: Try the new [ALARMd 2 Beta][1], with Google Calendar integration and offline Youtube caching.
 
- [1]: http://www.zachleat.com/web/2008/04/06/alarmd-2-beta-with-google-calendar-integration/
+ [1]: http://www.zachleat.com/web/alarmd-2-beta-with-google-calendar-integration/
 
 Did you take your contacts out last night and you can’t see the time on your alarm clock from all the way across the room?
 

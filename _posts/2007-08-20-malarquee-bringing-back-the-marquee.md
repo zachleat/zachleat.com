@@ -51,9 +51,9 @@ You could also go into a computer lab and scroll some text on a couple different
 
 I think it’s fun to try new things on the web, experiment a bit. That’s also why I made [ALARMd, an Internet Alarm Clock][7]. For this project, I think it might be fun to try a new JavaScript library, just to get a little bit more experience with a range of different coding types. So I decided to use [MooTools][8], and wrote [a little review][9] on my experience, coming from a YUI and jQuery background.
 
- [7]: http://www.zachleat.com/web/2007/06/18/wake-up-to-youtube-on-my-internet-alarm-clock/
+ [7]: http://www.zachleat.com/web/wake-up-to-youtube-on-my-internet-alarm-clock/
  [8]: http://www.mootools.net/
- [9]: http://www.zachleat.com/web/2007/07/22/what-sound-does-a-cow-make-mootools/
+ [9]: http://www.zachleat.com/web/what-sound-does-a-cow-make-mootools/
 
 ## How does it work?
 

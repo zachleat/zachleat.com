@@ -46,6 +46,7 @@ async function fetchAnalyticsData() {
 
 function getInputMap(globs) {
 	let results = {};
+	let alternates = {};
 	let entries = glob.sync(globs);
 	for(inputPath of entries) {
 		let result = {
@@ -60,6 +61,9 @@ function getInputMap(globs) {
 			let slug = slugSplit.join(".");
 			result.url = `/web/${slug}/`;
 
+			// old /YYYY/MM/DD/ urls
+			alternates[`/web/${date.split("-").join("/")}/${slug}/`] = result.url;
+
 			result.date = date;
 			result.time = (new Date(date)).getTime();
 		}
@@ -73,7 +77,10 @@ function getInputMap(globs) {
 
 		results[result.url] = result;
 	}
-	return results;
+	return {
+		inputMap: results,
+		alternates,
+	};
 }
 
 function getPageViewsPerDayRanks(analyticsData) {
@@ -99,13 +106,36 @@ function getPageViewsPerDayRanks(analyticsData) {
 }
 
 (async () => {
-	let inputMap = getInputMap(["./_posts/*.md"]);
+	let { inputMap, alternates } = getInputMap(["./_posts/*.md"]);
 
 	let analyticsData = await fetchAnalyticsData();
+
+	// Important: these may not exist in analytics data
+	let alternatesPageViews = {};
+	for(let entry of analyticsData) {
+		let rootUrl = alternates[entry.url];
+		if(rootUrl) {
+			if(!alternatesPageViews[rootUrl]) {
+				alternatesPageViews[rootUrl] = 0;
+			}
+			alternatesPageViews[rootUrl] += entry.pageViews;
+		}
+	}
+
+	// Add /web/YYYY/MM/DD/slug urls to root /web/slug data
+	for(let entry of analyticsData) {
+		if(alternatesPageViews[entry.url]) {
+			entry.pageViews += alternatesPageViews[entry.url];
+		}
+	}
 
 	let j = 1;
 	let totalPageViews = 0;
 	for(let entry of analyticsData) {
+		if(entry.url.startsWith("/search?") || entry.url.startsWith("/translate_c?")) {
+			continue;
+		}
+
 		if(inputMap[entry.url]) {
 			entry.from = inputMap[entry.url];
 

@@ -9,7 +9,7 @@ deprecated: true
 
 *This is an updated version of the [Enlarging your YUI DataTable in 30 Seconds or Less!][1] modified for the newly released YUI 2.3.0.*
 
- [1]: /web/2007/06/07/enlarging-your-yui-datatable-in-30-seconds-or-less/
+ [1]: /web/enlarging-your-yui-datatable-in-30-seconds-or-less/
 
 This method adds an extra row to the YUI DataTable when a row is selected, below the selected row. This allows the developer to add additional content that might not be applicable to the column constraints of a typical datatable or grid and allow that content be displayed more fluidly inside a single row spanning all of the viewable columns.
 

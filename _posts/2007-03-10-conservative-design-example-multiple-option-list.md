@@ -6,7 +6,7 @@ All of the posts in the Conservative Design series so far have been brainstormin
 
 The first example I decided to tackle was the [Option List][1], specifically the variant that allows multiple options to be selected. Let me start out by saying that I didn’t abstract out the type of source element that you could put into this example, I only programmed the element for a  element. For the impatient, let’s just start with the result:
 
- [1]: http://www.zachleat.com/web/2007/02/26/conservative-design-option-list/
+ [1]: http://www.zachleat.com/web/conservative-design-option-list/
 
 [![Multiple Option List Real Example][3]][3]
 Click the image to see the actual example.

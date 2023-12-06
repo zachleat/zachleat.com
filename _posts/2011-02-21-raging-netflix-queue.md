@@ -4,7 +4,6 @@ headimage: /web/wp-content/uploads/2011/02/Screen-shot-2011-02-21-at-10.15.44-AM
 description: This Google Chrome extension will recognize movie web sites and one click on the extension will automatically add that title to your queue.
 tags:
   - project
-deprecated: true
 ---
 
 The premise is simple. When attempting to find movies to watch in my local theater, I often stumble upon titles that I feel to be more rental quality than theater quality. So I wanted an easier way to add those movies to my Netflix queue. I created a Google Chrome extension to accomplish just that.
@@ -15,9 +14,9 @@ The premise is simple. When attempting to find movies to watch in my local theat
 
 Raging Netflix Queue supports Rotten Tomatoes, IMDB, Google Movies, Apple Trailers, Movie Fone, movies.com, Yahoo Movies, and Fandango. Let me know if you have others you’d like to see added.
 
-## [Download Raging Netflix Queue][2]
+## Download Raging Netflix Queue
 
- [2]: https://chrome.google.com/extensions/detail/nbnnepgogimidfbfkbcfmdeimmfadmmp
+`https://chrome.google.com/extensions/detail/nbnnepgogimidfbfkbcfmdeimmfadmmp` This project is no longer available for download: [Netflix retired the API](https://github.com/zachleat/Raging-Netflix-Queue/issues/13).
 
 ## Screencast
 
@@ -50,8 +49,8 @@ Titles like “The King’s Speech” don’t match, due to another limitation w
 
 It’s true that I have built a [web browser plugin (to an add-on) before][6], and even a [plug-in to a ported web browser add-on][7], but it was a great experience to build an actual web browser extension and Google Chrome has made it very easy to do so. This was also a **jQuery-free project**, as I would think that all Google Chrome extensions would be. jQuery is intended to solve cross browser compatibility issues, and a web browser specific extension shouldn’t have any of those. Sure, it feels like you’re being spoiled to use native String `trim()`, Array `forEach`, and `document.querySelector`. But damn it, I deserve nice things every once in awhile.
 
- [6]: /web/2007/04/18/javascript-code-coverage-tool-for-firebug/
- [7]: /web/2010/07/19/dom-sailbloat/
+ [6]: /web/javascript-code-coverage-tool-for-firebug/
+ [7]: /web/dom-sailbloat/
 
 [*I’m getting such a huge queue right now.*][8]
 

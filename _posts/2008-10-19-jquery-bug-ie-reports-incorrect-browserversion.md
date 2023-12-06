@@ -10,7 +10,7 @@ I’ve witnessed installations of IE where the navigator.userAgent reported both
 You can monitor the [jQuery bug][1] in the bug tracker, or see the original research performed by [Jamie Thompson][2]. Here’s a better workaround that merges two different approaches used on Jamie’s page, which fixes $.browser.version instead of using $.browser.msie6. This is to be considered temporary until the next (fixed) version of jQuery comes out.
 
  [1]: http://dev.jquery.com/ticket/3169
- [2]: http://jamazon.co.uk/web/2008/03/14/jquerybrowserversion-doesnt-recognise-ie7/
+ [2]: http://jamazon.co.uk/web/jquerybrowserversion-doesnt-recognise-ie7/
 
     jQuery.browser.version = jQuery.browser.msie && /msie 7\.0/i.test(navigator.userAgent) ?
       "7.0" :

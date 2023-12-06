@@ -22,7 +22,7 @@ Do what Google Calendar does and use the following style:
 
 Note the lack of `http:` or `https:` from the URL. If this page [were hosted on https][3] (we don’t pay for certificates around here, so you’ll have to put up with the security warning), the last image source will load from https as well at no additional development cost.
 
- [3]: https://www.zachleat.com/web/2008/10/16/relative-urls-including-the-domain/
+ [3]: https://www.zachleat.com/web/relative-urls-including-the-domain/
 
 This seems like it would be especially useful if you were using the YDN Performance tip to [Split Components Across Domains][4]. Remember, we’re not just talking images. This involves how the browser resolves URLs, so could be used inside href tags, css urls (as Google Calendar did), etc.
 
