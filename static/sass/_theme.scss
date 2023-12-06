@@ -263,10 +263,9 @@ h5,
 .content-main {
 	text-align: left;
 	padding: 0 0.25rem; /* 4px /16 */
-	// background-color: #fff;
 	color: $textColor;
 	font-size: 1.1875em; /* 19px /16 */
-	line-height: 165%;
+	line-height: 1.65;
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
@@ -699,7 +698,11 @@ table {
 	border-collapse: collapse;
 	min-width: 100%;
 }
+.content-main table {
+	line-height: 1.4;
+}
 tr {
+	margin: 0 !important;
 	border-bottom: 1px solid #ddd;
 }
 th {
@@ -713,22 +716,22 @@ caption {
 td,
 th {
 	font-size: 0.625em; /* 10px /16 */
-	padding: 0.3em; /* 3px /10 */
+	padding: .45em .3em;
 	vertical-align: top;
-}
-table-saw td,
-table-saw th {
-	font-size: 0.8125em; /* 13px /16 */
 }
 td.numeric,
 th.numeric {
 	text-align: right;
+}
+table-saw :is(th, td) {
+	font-size: 0.8125em; /* 13px /16 */
 }
 @media ( min-width: 25em ) {
 	td, th {
 		font-size: .8125em;
 	}
 }
+
 
 
 /* Logo and Rail */
