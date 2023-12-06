@@ -1,15 +1,5 @@
-function convertYouTubeUrlToImageUrl(url) {
-	if(url.startsWith("https://www.youtube.com/watch?v=")) {
-		let [, youtubeId] = url.split("https://www.youtube.com/watch?v=");
-		// return `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
-
-		// hard coded fallback
-		if(youtubeId === "pPkWxn0TF9w") {
-			return `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
-		}
-
-		return `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`
-	}
+function convertYouTubeUrlToImageUrl(videoUrl) {
+	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(videoUrl)}/`;
 }
 
 module.exports = {
