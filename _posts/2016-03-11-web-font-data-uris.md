@@ -195,7 +195,7 @@ Times look marginally better here too. Huh. I think I’m gonna roll with this a
 
 ## Appendix 1, Data URI and Fallback src
 
-``` css/2
+```css
 @font-face {
 	/* In many browsers it loads the giant Data URI but isn’t able to use it */
 	src: url("data:font/woff2;charset=utf-8;base64,…") format("woff2"), url( /path/to/webfont.woff ) format( "woff" );

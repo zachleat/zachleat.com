@@ -35,26 +35,26 @@ tags:
 			</figcaption>
 		</figure>
 		<p class="graf graf--p graf-after--figure" id="deca">Save these image files into an <code class="markup--code markup--p-code">img</code> folder inside of our<code class="markup--code markup--p-code">giffleball</code> directory.</p>
-{% highlight bash 1-4 -1 %}
-giffleball/
-  img/             *new
-    ???.jpg        *new
-    ….jpg          *new
-    parrot.gif     *new
+{% highlight diff-bash %}
+​ giffleball/
++  img/             *new
++    ???.jpg        *new
++    ….jpg          *new
++    parrot.gif     *new
 {% endhighlight %}
 		<h4 class="graf graf--h4 graf-after--pre" id="8627">Create a&nbsp;template</h4>
 		<p class="graf graf--p graf-after--h4" id="d26f">Let’s make a template! Create a file called <code class="markup--code markup--p-code">index.html</code> in the <code class="markup--code markup--p-code">giffleball</code> directory.</p>
-{% highlight bash 1 -1 %}
-giffleball/
-  index.html       *new
-  img/
-  	???.jpg
-    ….jpg
-    parrot.gif
+{% highlight diff-bash %}
+​ giffleball/
++  index.html       *new
+   img/
+   	???.jpg
+     ….jpg
+     parrot.gif
 {% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="46a4">Let’s add a list with some links to our GIFS to the <code class="markup--code markup--p-code">index.html</code> file:</p>
-{% highlight html 9-11 %}
-<!doctype html>
+{% highlight html %}
+​<!doctype html>
 <html lang="en">
  <head>
   <meta charset="utf-8">
@@ -71,47 +71,47 @@ giffleball/
 </html>
 {% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="eac5">So far, nothing special going on here. But, we can run <code class="markup--code markup--p-code">eleventy</code> and generate our site anyway. We’ll pass in the extensions that we want eleventy to process with<code class="markup--code markup--p-code">--formats</code>.</p>
-{% highlight bash 0-1 %}
+{% highlight bash %}
 ~ $ cd giffleball
 ~/giffleball $ eleventy --formats=html,gif,jpg
 Writing _site/index.html from ./index.html.
 Wrote 1 file in 0.07 seconds
 {% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="c0a2">This created our new web site in the <code class="markup--code markup--p-code">_site</code> directory. If you want it to go somewhere else, simply pass a new directory to <code class="markup--code markup--p-code">--output</code>:</p>
-{% highlight bash 0 %}
+{% highlight bash %}
 ~/giffleball $ eleventy --output=somewhereelse
 Writing somewhereelse/index.html from ./index.html.
 Wrote 1 file in 0.07 seconds
 {% endhighlight %}
 		<h3 class="graf graf--h3 graf-after--pre" id="d1c2">Make it Data&nbsp;Driven</h3>
 		<p class="graf graf--p graf-after--h3" id="071c">Okay, so far we could have just loaded up our <code class="markup--code markup--p-code">index.html</code> in the browser and it would have looked the same. The output matched the input. So, let’s layer on some <code class="markup--code markup--p-code">eleventy</code> things. Let’s move some of the site data into our front matter:</p>
-{% highlight html 0-6 -1 %}
----
-title: Giffleball
-images:
-  - ???.jpg
-  - ….jpg
-  - parrot.gif
----
-<!doctype html>
-<html lang="en">
- <head>
-  <meta charset="utf-8">
-  <title>{{ title }}</title>
- </head>
- <body>
-  <h1>{{ title }}</h1>
-  <ul>
-  {% for filename in images %}
-   <li><a href="img/{{ filename }}">{{ filename }}</a></li>
-  {% endfor %}
-  </ul>
- </body>
+{% highlight diff-html %}
++---
++title: Giffleball
++images:
++  - ???.jpg
++  - ….jpg
++  - parrot.gif
++---
+ <!doctype html>
+ <html lang="en">
+  <head>
+   <meta charset="utf-8">
+   <title>{{ title }}</title>
+  </head>
+  <body>
+   <h1>{{ title }}</h1>
+   <ul>
+   {% for filename in images %}
+    <li><a href="img/{{ filename }}">{{ filename }}</a></li>
+   {% endfor %}
+   </ul>
+  </body>
  </html>
- {% endhighlight %}
+{% endhighlight %}
 		<p class="graf graf--p graf-after--pre" id="659a">We’ve moved our site’s title (used in two different places) to our front matter and the list of images as well.</p>
 		<p class="graf graf--p graf-after--p" id="b9fb">By default in Eleventy, the <code class="markup--code markup--p-code">liquid</code> templating engine syntax is available on HTML and Markdown files. Eleventy supports a wide variety of templating engine syntaxes (peep <a class="markup--anchor markup--p-anchor" data-href="https://github.com/11ty/eleventy/#eleventy-" href="https://github.com/11ty/eleventy/#eleventy-" rel="noopener" target="_blank">the full list</a>), and those are available when you use specific file extensions. For example, our <code class="markup--code markup--p-code">index.html</code> could have been named <code class="markup--code markup--p-code">index.liquid</code> and it would be functionally equivalent:</p>
-{% highlight bash 0-1 %}
+{% highlight bash %}
 ~/giffleball $ mv index.html index.liquid
 ~/giffleball $ eleventy --formats=liquid,html,jpg,gif
 Writing _site/index.html from ./index.liquid.
@@ -123,13 +123,13 @@ Wrote 1 file in 0.07 seconds
 			<li class="graf graf--li graf-after--p" id="48b7">Change your data in one place. To change our site’s name, we can do it in one place (the front matter) instead of two. To add or remove images, we don’t have to edit the template HTML.</li>
 			<li class="graf graf--li graf-after--li" id="121f">Change the markup for your image links once. Say we wanted to modify the HTML for our list items. Because we’re data-driven here, we can modify our template HTML in our loop instead of having to modify three or more <code class="markup--code markup--li-code">&lt;li&gt;</code> entries individually. Three isn’t bad. But what if our site grows to 300 images?</li>
 			<li class="graf graf--li graf-after--li" id="247b">Special characters in the file names. Looking in the browser, it seems like&nbsp;<code class="markup--code markup--li-code">???.jpg</code> isn’t really playing nice with my web server. The file doesn’t show up correctly. What if our file names have weird characters that aren’t supported by our web browser or web server? We need to escape them! The Liquid templating syntax has just the thing: a <code class="markup--code markup--li-code">url_encode</code> filter. Let’s update our template to use it:
-{% highlight html -1 1 %}
+{% highlight html %}
 {% for filename in images %}
   <li><a href="img/{{ filename }}">{{ filename }}</a></li>
 {% endfor %}
 {% endhighlight %}
 becomes:
-{% highlight html 1 -1 %}
+{% highlight html %}
 {% for filename in images %}
   <li><a href="img/{{ filename | url_encode }}">{{ filename }}</a></li>
 {% endfor %}

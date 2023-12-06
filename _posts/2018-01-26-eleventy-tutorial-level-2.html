@@ -23,7 +23,7 @@ tags:
 <p name="04fd" id="04fd" class="graf graf--p graf-after--pre">You don’t have to use <code class="markup--code markup--p-code">.eleventy.js</code> but every time you run <code class="markup--code markup--p-code">eleventy</code> you’ll have to pass in the config file name with <code class="markup--code markup--p-code">--config=myConfig.js</code>. So, it’s easier to use the default.</p>
 <p name="1550" id="1550" class="graf graf--p graf-after--p">Let’s add our filter with the <code class="markup--code markup--p-code">.addFilter</code> method. We’ll call it <code class="markup--code markup--p-code">filesize</code> and it will just return some dummy text.</p>
 
-{% highlight js 1-3 -1 %}module.exports = (function(eleventyConfig) {
+{% highlight js %}module.exports = (function(eleventyConfig) {
  eleventyConfig.addFilter("filesize", function(path) {
   return "0 KB";
  });
@@ -40,7 +40,7 @@ tags:
 
 <p name="0618" id="0618" class="graf graf--p graf-after--pre">Notice how we’re using a built-in filter <code class="markup--code markup--p-code">url_encode</code> provided by the Liquid templating engine. Yeah, we made our own though, so let’s add some stuff to call the filter we made, like this:</p>
 
-{% highlight text 2-3 -1 %}&lt;ul&gt;
+{% highlight text %}&lt;ul&gt;
 {% for filename in images %}
  {% capture path %}img/{{ filename }}{% endcapture %}
  &lt;li&gt;&lt;a href=&quot;img/{{ filename | url_encode }}&quot;&gt;{{ filename }}&lt;/a&gt; {{ path | filesize }}&lt;/li&gt;
@@ -62,7 +62,7 @@ tags:
 
 <p name="fabc" id="fabc" class="graf graf--p graf-after--pre">Okay, that’s close—but why does it have extra whitespace? <em class="markup--em markup--p-em">(Take special care to note that this is a rhetorical question and if you keep reading I will provide you with the answer.)</em> When Liquid processes templates, it doesn’t remove line breaks and spacing around Liquid tags. Luckily, it does provide tools to control whitespace! Instead of<code class="markup--code markup--p-code">{{ "{%" }}</code>, use <code class="markup--code markup--p-code">{{ "{%-" }}</code> to remove the whitespace before the Liquid tag. And independently, instead of <code class="markup--code markup--p-code">{{ "%}" }}</code> you can also use <code class="markup--code markup--p-code">{{ "-%}" }}</code> at the end to remove whitespace after the Liquid tag. One or the other. Both. Personally, I think it looks the best with just <code class="markup--code markup--p-code">{{ "{%-" }}</code> at the beginning. A clean View Source is important to me, so let’s clean it up:</p>
 
-{% highlight text 1-3 -1 %}&lt;ul&gt;
+{% highlight text %}&lt;ul&gt;
  {%- for filename in images %}
  {%- capture path %}img/{{ filename }}{% endcapture %}
  &lt;li&gt;&lt;a href=&quot;img/{{ filename | url_encode }}&quot;&gt;{{ filename }}&lt;/a&gt; {{ path | filesize }}&lt;/li&gt;
@@ -81,7 +81,7 @@ tags:
 <h3 name="255e" id="255e" class="graf graf--h3 graf-after--p">Don’t celebrate yet, our filter doesn’t work</h3>
 <p name="3fb3" id="3fb3" class="graf graf--p graf-after--h3">Okay, let’s make our filter actually work instead of just returning <code class="markup--code markup--p-code">&quot;0 KB&quot;</code> all the time. Change our <code class="markup--code markup--p-code">.eleventy.js</code> file to this:</p>
 
-{% highlight js 4-8 -1 %}const fs = require("fs");
+{% highlight js %}const fs = require("fs");
 
 module.exports = (function(eleventyConfig) {
  eleventyConfig.addFilter("filesize", function(path) {
@@ -105,7 +105,7 @@ module.exports = (function(eleventyConfig) {
 
 <p name="d635" id="d635" class="graf graf--p graf-after--pre">Let’s use it in our <code class="markup--code markup--p-code">.eleventy.js</code> filter code:</p>
 
-{% highlight js 1,7 -1 %}const fs = require("fs");
+{% highlight js %}const fs = require("fs");
 const filesize = require("file-size");
 
 module.exports = (function(eleventyConfig) {

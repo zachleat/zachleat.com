@@ -81,15 +81,15 @@ By default, Eleventy Image creates a `webp` and `jpeg` version of the image you 
 
 If you want to create different formats, you can change this behavior using the `formats` option. It looks like this:
 
-```js/5
-const Image = require("@11ty/eleventy-img");
+```diff-js
+ const Image = require("@11ty/eleventy-img");
 
-(async () => {
-  let stats = await Image("nebula.jpg", {
-    // ["webp", "jpeg"] is the default
-    formats: ["jpeg"],
-  });
-})();
+ (async () => {
+   let stats = await Image("nebula.jpg", {
+     // ["webp", "jpeg"] is the default
++    formats: ["jpeg"],
+   });
+ })();
 ```
 
 You can use `jpeg`, `png`, `webp`, `avif` (new!), and `svg` (although SVG requires an SVG input file).
@@ -147,38 +147,38 @@ Going back to our nebula image—at over 6MB—it’s obviously way too big.
 
 Let’s resize our Nebula to `1400px`.
 
-```js/5
-const Image = require("@11ty/eleventy-img");
+```diff-js
+ const Image = require("@11ty/eleventy-img");
 
-(async () => {
-  let stats = await Image("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop", {
-    formats: ["jpeg"],
-    widths: [1400], // by default this uses the original size
-  });
+ (async () => {
+   let stats = await Image("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop", {
+     formats: ["jpeg"],
++    widths: [1400], // by default this uses the original size
+   });
 
-  console.log( stats );
-})();
+   console.log( stats );
+ })();
 ```
 
 which outputs:
 
-```bash/5,12
-~/Code/jamstack-toronto ᐅ node demo.js
-{
-  jpeg: [
-    {
-      format: 'jpeg',
-      width: 1400,
-      height: 1329,
-      filename: '2056cbb-1400.jpeg',
-      outputPath: 'img/2056cbb-1400.jpeg',
-      url: '/img/2056cbb-1400.jpeg',
-      sourceType: 'image/jpeg',
-      srcset: '/img/2056cbb-1400.jpeg 1400w',
-      size: 170827
-    }
-  ]
-}
+```diff-bash
+ ~/Code/jamstack-toronto ᐅ node demo.js
+ {
+   jpeg: [
+     {
+       format: 'jpeg',
++      width: 1400,
+       height: 1329,
+       filename: '2056cbb-1400.jpeg',
+       outputPath: 'img/2056cbb-1400.jpeg',
+       url: '/img/2056cbb-1400.jpeg',
+       sourceType: 'image/jpeg',
+       srcset: '/img/2056cbb-1400.jpeg 1400w',
++      size: 170827
+     }
+   ]
+ }
 ```
 
 A much more reasonable 170KB.
@@ -187,19 +187,19 @@ A much more reasonable 170KB.
 
 If you don’t want to write the HTML, Eleventy Image can do that for you too.
 
-```js/8-10
-const Image = require("@11ty/eleventy-img");
+```diff-js
+ const Image = require("@11ty/eleventy-img");
 
-(async () => {
-  let stats = await Image("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop", {
-    formats: ["jpeg"],
-    widths: [1400],
-  });
+ (async () => {
+   let stats = await Image("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop", {
+     formats: ["jpeg"],
+     widths: [1400],
+   });
 
-  console.log( Image.generateHTML(stats, {
-    alt: "A bomb ass nebula",
-  }) );
-})();
++  console.log( Image.generateHTML(stats, {
++    alt: "A bomb ass nebula",
++  }) );
+ })();
 ```
 
 Outputs:
@@ -215,21 +215,21 @@ The second argument to `generateHTML` is any HTML attributes you’d like to inc
 
 It gets better. Let’s feed it a more complicated `stats` object, with more formats and more widths:
 
-```js/4,5,10,11
-const Image = require("@11ty/eleventy-img");
+```diff-js
+ const Image = require("@11ty/eleventy-img");
 
-(async () => {
-  let stats = await Image("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop", {
-    formats: ["avif", "webp", "jpeg"],
-    widths: [600, 1200, 1800],
-  });
+ (async () => {
+   let stats = await Image("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop", {
++    formats: ["avif", "webp", "jpeg"],
++    widths: [600, 1200, 1800],
+   });
 
-  console.log( Image.generateHTML(stats, {
-    alt: "A bomb ass nebula",
-    loading: "lazy",
-    decoding: "async",
-  }) );
-})();
+   console.log( Image.generateHTML(stats, {
+     alt: "A bomb ass nebula",
++    loading: "lazy",
++    decoding: "async",
+   }) );
+ })();
 ```
 
 Outputs:
@@ -252,17 +252,17 @@ Next try passing a `sizes` attribute to your generateHTML call.
 
 It’s easy to do vector to raster conversion, too. This would likely work great for programmatically generating OpenGraph images, for example.
 
-```js/3
-const Image = require("@11ty/eleventy-img");
+```diff-js
+ const Image = require("@11ty/eleventy-img");
 
-(async () => {
-  let stats = await Image("https://upload.wikimedia.org/wikipedia/commons/f/fd/Ghostscript_Tiger.svg", {
-    formats: ["avif"],
-    widths: [1200],
-  });
+ (async () => {
++  let stats = await Image("https://upload.wikimedia.org/wikipedia/commons/f/fd/Ghostscript_Tiger.svg", {
+     formats: ["avif"],
+     widths: [1200],
+   });
 
-  console.log( stats );
-})();
+   console.log( stats );
+ })();
 ```
 
 Outputs:

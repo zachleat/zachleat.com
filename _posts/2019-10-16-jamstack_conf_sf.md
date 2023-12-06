@@ -1,5 +1,5 @@
 ---
-title: JAMstack_conf_sf 2019
+title: JAMstack Conf SF 2019
 tags:
   - external
   - conference

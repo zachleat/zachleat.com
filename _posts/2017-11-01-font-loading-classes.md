@@ -46,30 +46,30 @@ body {
 
 and `postcss-foft-classes` will export this code for a single stage approach (FOUT):
 
-``` css/0-2
-body {
-  font-family: sans-serif;
-}
+```diff-css
+-body {
+-  font-family: sans-serif;
+-}
 
-.fonts-loaded body {
-  font-family: Lato;
-}
++.fonts-loaded body {
++  font-family: Lato;
++}
 ```
 
 or `postcss-foft-classes` will export this code for a two stage approach (FOFT):
 
-``` css/0-2
-body {
-  font-family: sans-serif;
-}
+```diff-css
+-body {
+-  font-family: sans-serif;
+-}
 
-.fonts-loaded body {
-  font-family: LatoInitial;
-}
++.fonts-loaded body {
++  font-family: LatoInitial;
++}
 
-.fonts-loaded-2 body {
-  font-family: Lato;
-}
++.fonts-loaded-2 body {
++  font-family: Lato;
++}
 ```
 
 So much easier.

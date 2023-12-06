@@ -16,8 +16,7 @@ This conference really was something special. [Marc Thiele](https://twitter.com/
 
 ## Video
 
-<div><div class="fluid-width-video-wrapper"><iframe src="https://player.vimeo.com/video/336091879" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div>
-<p><a href="https://vimeo.com/336091879">The Scoville Scale of Web Font Loading Opinions - Zach Leatherman</a> from <a href="https://vimeo.com/beyondtellerrand">beyond tellerrand</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<div><youtube-lite-player @slug="xnaazDFHn40" @label="{{ title }}"></youtube-lite-player></div>
 
 ## Slides
 

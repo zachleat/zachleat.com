@@ -18,16 +18,16 @@ I wanted to wire the animations up to IntersectionObserver to make sure they onl
 
 I found all of the instances of `<animate>` or `<animateTransform>` and wired up the `begin` attributes to properly cascade the order of the animation internally. I want all of them to start when my bezier curve starts animating, so I added an `id` to that animation (there was an issue with dashes in that `id`, so beware using dashes):
 
-```markup/1
-<animate
-  id="mysvgline"
-  attributeType="xml"
-  attributeName="stroke-dashoffset"
-  from="500"
-  to="0"
-  dur=".8s"
-  begin="0s"
-/>
+```diff-markup
+ <animate
++  id="mysvgline"
+   attributeType="xml"
+   attributeName="stroke-dashoffset"
+   from="500"
+   to="0"
+   dur=".8s"
+   begin="0s"
+ />
 ```
 
 _Learn how to animate a line/curve: [{% imgavatar "css" %}CSS Tricks: How SVG Line Animation Works](https://css-tricks.com/svg-line-animation-works/)_
@@ -36,14 +36,14 @@ Take note of the `begin` attribute above, that will be important later.
 
 Now I want to find the other animations in my SVG that I want to start at the same time and change their `begin` attribute to use the `id` from above with a `.begin` suffix. This starts this animation when the referenced animation starts. It looks like this:
 
-```markup/1
-<animateMotion
-  begin="mysvgline.begin"
-  dur=".8s"
-  repeatCount="1"
-  fill="freeze"
-  path="M35.5 20C216.281 20 352.411 182 512.5 182"
-/>
+```diff-markup
+ <animateMotion
++  begin="mysvgline.begin"
+   dur=".8s"
+   repeatCount="1"
+   fill="freeze"
+   path="M35.5 20C216.281 20 352.411 182 512.5 182"
+ />
 ```
 
 Alternatively, you can use `.end` to start this animation when the referenced animation ends.
@@ -52,16 +52,16 @@ _(Side note: `repeatCount="1"` and `fill="freeze"` are best buddies. `fill="free
 
 Next go back to the original animation and change the `begin` attribute to `indefinite` (Read more at [MDN: `begin` - SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin#animate_animatecolor_animatemotion_animatetransform_set)). This tells the SVG not to start it until I use JavaScript to trigger it using `.beginElement()`.
 
-```markup/7
-<animate
-  id="mysvgline"
-  attributeType="xml"
-  attributeName="stroke-dashoffset"
-  from="500"
-  to="0"
-  dur=".8s"
-  begin="indefinite"
-/>
+```diff-markup
+ <animate
+   id="mysvgline"
+   attributeType="xml"
+   attributeName="stroke-dashoffset"
+   from="500"
+   to="0"
+   dur=".8s"
++  begin="indefinite"
+ />
 ```
 
 _(Another side note: just thinking aloud here as I write this—I wonder if I can use `<noscript>` inside of SVG as a no-JS fallback)_
