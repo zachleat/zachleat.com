@@ -26,9 +26,6 @@ web367ImageAttrs:
   src: "./web/img/web367.png"
   alt: "The very first logo for this blog: Web 3.0 6 Bladed Razors and 7 Minute Abs"
 ---
-
-This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach@zachleat.com). Peruse his [full résumé](/resume/).
-
 <style>
 .about-primary-avatar {
 	display: block;
@@ -45,8 +42,12 @@ This web blog is written by **Zach Leatherman**. [Send him an email](mailto:zach
 
 {% image avatarBioImageAttrs %}
 
+This web blog is written by **Zach Leatherman**.
+
 <ul class="list-inline fl fl-inline fl-nowrap">
-	<li><a href="https://fediverse.zachleat.com/@zachleat">{% indieAvatar "https://fediverse.zachleat.com/@zachleat" %}Mastodon</a></li>
+	<li><a href="mailto:zach@zachleat.com" data-icon="✉️"><b>Email</b></a></a>
+	<li><a href="/resume/" data-icon="📃"><span>Résumé</span></a></li>
+	<li><a href="https://fediverse.zachleat.com/@zachleat">{% indieAvatar "https://fediverse.zachleat.com/@zachleat" %}<strong>Mastodon</strong></a></li>
 	<li><a href="https://github.com/zachleat/">{% indieAvatar "https://github.com/" %}GitHub</a></li>
 	<li><a href="https://www.npmjs.com/~zachleat">{% indieAvatar "https://npmjs.com/" %}npm</a></li>
 	<li><a href="https://bsky.app/profile/zachleat.com">{% indieAvatar "https://bsky.app/" %}Bluesky</a></li>

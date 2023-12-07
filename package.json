@@ -8,7 +8,7 @@
 		"@zachleat/details-utils": "^2.0.2",
 		"@zachleat/filter-container": "^4.0.0",
 		"@zachleat/flex-luthor": "^4.0.2",
-		"@zachleat/pagefind-search": "^1.0.2",
+		"@zachleat/pagefind-search": "^1.0.3",
 		"@zachleat/squirminal": "^2.0.4",
 		"@zachleat/table-saw": "^1.0.5",
 		"artificial-chart": "^2.0.3",
@@ -65,8 +65,7 @@
 		"start-search": "npm run build && npm run create-search-index && npm run start",
 		"start-full": "npx @11ty/eleventy --serve --port=8090 --incremental",
 		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production && npm run create-search-index",
-		"build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy",
-		"start-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npm run start-full"
+		"build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy"
 	},
 	"repository": {
 		"type": "git",

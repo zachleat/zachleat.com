@@ -291,6 +291,12 @@ h5,
 	}
 }
 @supports (display: grid) {
+	@media (min-width: $twoColLayoutMinWidth) {
+		.content-main pre {
+			max-width: calc(100vw - 24em);
+		}
+	}
+
 	@media (min-width: 40.625em) { /* 650px */
 		.tmpl-list .content-main,
 		.tmpl-page .content-main {
@@ -1520,7 +1526,7 @@ details.livedemo-dark > summary {
 		display: block;
 		position: fixed;
 		bottom: 1em;
-		width: 13.5em;
+		width: 14em;
 		right: 3.5em;
 	}
 	.toc.toc .hed-h3,
@@ -1670,6 +1676,26 @@ select[data-filter-key] {
 .spark .spark-img {
 	padding: 0;
 	margin: 0;
+}
+
+/* Emoji Icons */
+a[href][data-icon]:has(> *) {
+	text-decoration: none;
+}
+a[href][data-icon]:has(> *) > * {
+	text-decoration: underline;
+}
+[data-icon]:before {
+	display: inline-flex;
+	height: 1.75em;
+	width: 1.75em;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	content: attr(data-icon);
+	margin-right: .25em;
+	background: linear-gradient(#000, #48714c);
+	border-radius: 50%;
 }
 
 /* External Link Favicons */
