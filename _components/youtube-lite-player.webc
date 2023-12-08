@@ -16,10 +16,6 @@ function getLinkUrl(slug, start) {
 	background-position: 0 .35em;
 	padding-left: 1.25em;
 }
-.lite-youtube-link--solo {
-	margin-left: auto;
-	margin-right: auto;
-}
 is-land[ready] lite-youtube {
 	--yt-poster-img-url: var(--yt-poster-img-url-lazy);
 }
@@ -44,4 +40,4 @@ is-land[ready] lite-youtube {
 		</template>
 	</is-land>
 </browser-window>
-<a :href="getLinkUrl(slug, start)" class="lite-youtube-link text-ellipsis-multi" :class="label ? '' : 'lite-youtube-link--solo'">Watch on YouTube<span webc:if="label" webc:nokeep>: <em webc:if="label" @text="label"></em></span></a>
+<a :href="getLinkUrl(slug, start)" class="lite-youtube-link text-ellipsis-multi">Watch on YouTube<span webc:if="label" webc:nokeep>: <em webc:if="label" @text="label"></em></span></a>
