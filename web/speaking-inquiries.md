@@ -22,7 +22,7 @@ I will provide:
 
 Sound good? Great! [Email me](mailto:zach@zachleat.com) and we can get started!
 
-If you’re looking for Bio text and pictures, head on over to my [About page](/web/about/).
+If you’re looking for Bio text and pictures, head on over to my [About page](/about/).
 
 ---
 

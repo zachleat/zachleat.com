@@ -70,7 +70,7 @@ About a week before launch, I decided that it would be good to put up a preview 
 
 ## The Simplest Brand That Can Possibly Work Well
 
-One of the intentional choices I made for NEJS CONF going into the second year was to maintain a consistent typeface throughout our different themes and redesigns. We’ve had three different designers working on the project in four years, but our typeface has remained constant. Using [Effra](https://typekit.com/fonts/effra) every year (loaded from TypeKit) keeps a thread of consistency across wildly varying themes and helps people recognize our community-run conference as we grow and build a larger audience. Somewhat relatedly, this is also why [I keep the green tint](/web/about/) when I change my avatar on social media. A bit of consistency in an inconsistent world.
+One of the intentional choices I made for NEJS CONF going into the second year was to maintain a consistent typeface throughout our different themes and redesigns. We’ve had three different designers working on the project in four years, but our typeface has remained constant. Using [Effra](https://typekit.com/fonts/effra) every year (loaded from TypeKit) keeps a thread of consistency across wildly varying themes and helps people recognize our community-run conference as we grow and build a larger audience. Somewhat relatedly, this is also why [I keep the green tint](/about/) when I change my avatar on social media. A bit of consistency in an inconsistent world.
 
 ### 2017
 
