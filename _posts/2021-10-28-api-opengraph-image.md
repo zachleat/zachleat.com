@@ -8,6 +8,8 @@ seo:
   openGraphAlt: "A close-up of painted aluminium cans, colored like a rainbow"
 posterImage:
   showOnPage: true
+  name: Nick Fewings
+  source: https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Fewings
 ---
 <div class="primarylink"><a href="https://github.com/11ty/api-opengraph-image"><code>11ty/api-opengraph-image</code> on GitHub</a></div>
 
@@ -144,6 +146,3 @@ The above Open Graph image is using a YouTube video cover image in the backgroun
 
 _I have now realized that I am slowly creating all of the building blocks necessary to create a social network. Please send help._
 
-
----
-_Open Graph post background image by <a href="https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Fewings</a> on <a href="https://unsplash.com/s/photos/recycle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>._
