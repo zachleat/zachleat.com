@@ -828,13 +828,13 @@ table-saw :is(th, td) {
 	position: absolute;
 	right: 1em;
 	top: 2em;
-	content: "Pinned";
+	content: "📌 Pinned";
 	text-transform: uppercase;
 	font-size: 1rem;
 	font-weight: 700;
 	border-radius: .25em;
 	padding: 0 .5em;
-	background-color: #55794d;
+	background-color: rgba(0,0,0,.5);
 	color: #fff;
 	pointer-events: none;
 }

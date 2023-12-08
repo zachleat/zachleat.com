@@ -42,9 +42,12 @@ classes:
 {% if hasToc != true and hidePostsInSidebar != true %}
 					<div class="tags tags-rail tags-rail-top5 hide-singlecol">
 						<div>
-							{% for post in collections.pinnedPosts limit:1 %}
-							<a href="{{ post.url }}" class="tag tag-popular-rail tag-pinned-rail tag-borderless">{{ post.data.title }}</a>
-							{% endfor %}
+							{%- if collections.pinnedPosts | size %}
+							<h2 class="top5">📌 Pinned Post</h2>
+							{%- for post in collections.pinnedPosts limit:1 %}
+								<a href="{{ post.url }}" class="tag tag-popular-rail tag-pinned-rail tag-borderless">{{ post.data.title }}</a>
+							{%- endfor %}
+							{%- endif %}
 						</div>
 
 						<div>
