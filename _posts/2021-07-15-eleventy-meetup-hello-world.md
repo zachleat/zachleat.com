@@ -13,4 +13,6 @@ external_icon_url: false
 event_date: July 15
 tweet: 'https://twitter.com/EleventyMeetup/status/1414655496930332673'
 ---
+This is an event post. The talk content is available here:
 
+{% originalPostEmbed "https://www.zachleat.com/web/eleventy-meetup/" %}

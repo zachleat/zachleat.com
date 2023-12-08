@@ -19,4 +19,10 @@ The domain for this link lapsed.
 
 Originally hosted at: `http://css-minsk-js.by/` but you can have a look at [archive.org](https://web.archive.org/web/20171225134653/http://css-minsk-js.by/).
 
+---
+
+This is an event post. The talk content is available here:
+
+{% originalPostEmbed "https://www.zachleat.com/web/rocket-science/" %}
+
 

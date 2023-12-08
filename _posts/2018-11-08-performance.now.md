@@ -14,3 +14,6 @@ metadata:
 external_url: 'https://perfnow.nl/'
 event_date: November 8–9
 ---
+This is an event post. The talk content is available here:
+
+{% originalPostEmbed "https://www.zachleat.com/web/five-whys/" %}

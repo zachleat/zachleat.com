@@ -17,4 +17,6 @@ permalink: /web/jamstack-toronto/2021/
 external_url: 'https://www.meetup.com/JAMstack-Toronto/events/275601729/'
 event_date: January 20
 ---
+This is an event post. The talk content is available here:
 
+{% originalPostEmbed "https://www.zachleat.com/web/eleventy-image/" %}
