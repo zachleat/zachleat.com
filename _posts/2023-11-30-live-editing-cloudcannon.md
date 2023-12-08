@@ -9,9 +9,8 @@ metadata:
 medialength: 9 min
 opengraphSkipFace: true
 ---
-<div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 
-* [Watch the full video on YouTube](https://www.youtube.com/watch?v={{ metadata.youtubeId }})
 ---
 
 * [Microblog Source Code](https://github.com/zachleat-cc/demo-cloudcannon-microblog)

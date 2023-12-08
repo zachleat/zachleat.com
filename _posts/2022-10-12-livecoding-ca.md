@@ -24,5 +24,3 @@ Watch a few select highlights from Twitch here:
 
 <div><youtube-lite-player @slug="UqfU0L4KqRM" @label="{{ title }}"></youtube-lite-player></div>
 
-* Watch the [full video on YouTube](https://www.youtube.com/watch?v=UqfU0L4KqRM).
-

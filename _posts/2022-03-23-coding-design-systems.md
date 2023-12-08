@@ -11,4 +11,4 @@ metadata:
 
 Catch the [two minute highlight reel on this tweet from `@m4d_z`](https://twitter.com/m4d_z/status/1506644072374714369).
 
-<div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>

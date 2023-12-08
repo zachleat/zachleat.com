@@ -189,8 +189,6 @@ With a nod to the tech stack, here are a few things I used to construct the demo
 
 <div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ video_title }}"></youtube-lite-player></div>
 
-[{% indieAvatar "https://youtube.com/" %}Watch on YouTube: _{{ video_title }}_](https://www.youtube.com/watch?v={{ metadata.youtubeId }})
-
 ---
 
 _Originally posted on:_

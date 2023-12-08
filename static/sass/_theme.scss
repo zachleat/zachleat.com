@@ -51,6 +51,14 @@ abbr {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
+.text-ellipsis-multi {
+	display: block;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: var(--ellipsis-lines, 3);
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 
 /* Hide on small viewport */
 /* Use a max-width here so it inherits the original value at 500px */

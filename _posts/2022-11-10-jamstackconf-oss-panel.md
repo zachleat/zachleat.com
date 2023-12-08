@@ -9,9 +9,8 @@ metadata:
   youtubeId: 1Qz6ZKwsKFY
 medialength: 35 min
 ---
-<div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 
-* _The [video is on YouTube](https://www.youtube.com/watch?v={{ metadata.youtubeId }})._
 * [Jamstack Conf Agenda](https://jamstack.org/conf/agenda/panel-oss-is-out-to-end-the-framework-wars/)
 
 > Ryan Carniato (SolidJS), Fred K. Schott (Astro), Zach Leatherman (11ty), Jessica Janiuk (Angular), Alexandre Chopin (Nuxt), Sara Vieira (Axo)

@@ -12,7 +12,7 @@ medialength: 2 min
 ---
 And now a special message via [YouTube](https://www.youtube.com/watch?v=pPkWxn0TF9w) and [Twitter](https://twitter.com/eleven_ty/status/1493284209925967872).
 
-<div class="fullwidth"><youtube-lite-player @slug="pPkWxn0TF9w" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="pPkWxn0TF9w" @label="{{ title }}"></youtube-lite-player></div>
 
 * [Read more on the Netlify Blog: _Doubling down on the ecosystem: open source and integrations_](https://www.netlify.com/blog/growing-our-open-source-contributions)
 * [Watch on YouTube](https://www.youtube.com/watch?v=pPkWxn0TF9w)

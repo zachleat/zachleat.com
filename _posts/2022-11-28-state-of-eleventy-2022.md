@@ -12,8 +12,6 @@ We did it in [2020](/web/jamsnack/). We did it in [2021](/web/state-of-eleventy/
 
 <div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 
-Watch [The State of Eleventy in Two Minutes (2022) on YouTube](https://www.youtube.com/watch?v={{ metadata.youtubeId }}).
-
 ## What’s New in 2022?
 
 So many things! But here are the big highlights:

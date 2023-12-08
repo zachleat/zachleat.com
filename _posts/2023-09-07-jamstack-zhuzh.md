@@ -10,9 +10,7 @@ metadata:
 medialength: 69 min
 opengraphSkipFace: true
 ---
-<div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
-
-* [Watch the full video on YouTube](https://www.youtube.com/watch?v=xVmKdCi-Gpo)
+<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 
 Jamstack needs a Zhuzh. What’s a Zhuzh?? In this panel we discussed the future of the community that has organized around the umbrella term Jamstack.
 

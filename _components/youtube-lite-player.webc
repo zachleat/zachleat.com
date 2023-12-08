@@ -3,12 +3,29 @@ function getPosterImage(slug) {
 	let videoUrl = `https://youtube.com/watch?v=${slug}`;
 	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(videoUrl)}/`;
 }
+function getLinkUrl(slug, start) {
+	return `https://youtube.com/watch?v=${slug}${start ? `&t=${start}s` : ''}`;
+}
 </script>
+<style>
+.lite-youtube-link {
+	--ellipsis-lines: 2;
+	margin-top: 0.5em; /* 8px /16 */
+	background: url(https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fyoutube.com/) no-repeat;
+	background-size: 1em auto;
+	background-position: 0 .35em;
+	padding-left: 1.25em;
+}
+.lite-youtube-link--solo {
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
 <script type="module" src="/static/browser-window.js" webc:keep></script>
-<browser-window mode="dark" flush icon :url="`https://youtube.com/watch?v=${slug}`" shadow>
+<browser-window mode="dark" flush icon :url="getLinkUrl(slug, start)" shadow>
 	<is-land on:visible class="fluid-width-video-wrapper">
 		<lite-youtube :videoid="slug" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image:url('${poster || getPosterImage(slug)}');`">
-			<a :href="`https://youtube.com/watch?v=${slug}`" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden" @html="`Play Video${label ? `: ${label}` : ''}`"></span></a>
+			<a :href="getLinkUrl(slug, start)" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden" @html="`Play Video${label ? `: ${label}` : ''}`"></span></a>
 		</lite-youtube>
 		<template data-island="once" webc:raw>
 			<style>
@@ -26,3 +43,4 @@ function getPosterImage(slug) {
 		</template>
 	</is-land>
 </browser-window>
+<a :href="getLinkUrl(slug, start)" class="lite-youtube-link text-ellipsis-multi" :class="label ? '' : 'lite-youtube-link--solo'">Watch on YouTube<span webc:if="label" webc:nokeep>: <em webc:if="label" @text="label"></em></span></a>

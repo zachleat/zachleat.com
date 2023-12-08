@@ -4,10 +4,7 @@ tags: eleventy
 external_url: https://www.11ty.dev/blog/cloudcannon/
 external_url_location: end
 ---
-
 <div><youtube-lite-player @slug="nypsmn70ipI" @label="{{ title }}" @start="57"></youtube-lite-player></div>
-
-* [View full video on YouTube](https://www.youtube.com/watch?v=nypsmn70ipI).
 
 * Read more on the CloudCannon Blog: [_CloudCannon, the Official CMS Partner of Eleventy_](https://cloudcannon.com/blog/cloudcannon-the-official-cms-partner-of-eleventy/)
 * See the [post on Mastodon](https://fosstodon.org/@eleventy/110775434718494755)

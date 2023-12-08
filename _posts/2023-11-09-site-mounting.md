@@ -11,8 +11,6 @@ CloudCannon launched a new feature today called [Site Mounting](https://cloudcan
 
 <div><youtube-lite-player @slug="IwZf9VdQbKo" @label="{{ video_title }}"></youtube-lite-player></div>
 
-[{% indieAvatar "https://youtube.com/" %}Watch on YouTube: _{{ video_title }}_](https://www.youtube.com/watch?v=IwZf9VdQbKo)
-
 If you’re interested in looking at the demos used in the video above, here they are: [Style Guide](https://wandering-cow.cloudvent.net/), [Site Mounting](https://ardent-desert.cloudvent.net/), and [Geolocation](https://busy-jellyfish.cloudvent.net/).
 
 ## Use Cases

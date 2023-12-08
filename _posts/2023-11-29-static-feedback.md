@@ -13,9 +13,7 @@ opengraphSkipFace: true
 external_url: https://www.11ty.dev/blog/static-feedback/
 external_url_location: end
 ---
-<div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
-
-* [Watch the full video on YouTube](https://www.youtube.com/watch?v={{ metadata.youtubeId }})
+<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 
 > Zach Leatherman joins Mike Neumegen to discuss the background of Eleventy (11ty) and what the future holds for this static site generator.
 

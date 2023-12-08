@@ -18,5 +18,6 @@ Watch the livestream below:
 
 <div><youtube-lite-player @slug="lC9sI-S7O8g" @label="{{ title }}"></youtube-lite-player></div>
 
-* [Watch on YouTube](https://www.youtube.com/watch?v=lC9sI-S7O8g).
-* [Go to the event page](https://www.thisdotmedia.com/state-of-the-web/state-of-web-components-june-2023)
+Or, [go to the event page](https://www.thisdotmedia.com/state-of-the-web/state-of-web-components-june-2023):
+
+{% originalPostEmbed "https://www.thisdotmedia.com/state-of-the-web/state-of-web-components-june-2023" %}

@@ -9,9 +9,8 @@ metadata:
   youtubeId: bz_RxLnSAqc
 medialength: 57 min
 ---
-<div class="fullwidth"><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
 
-* _The [video is on YouTube (unlisted!)](https://www.youtube.com/watch?v={{ metadata.youtubeId }})._
 * Related tweet from [@FITC](https://twitter.com/FITC/status/1585305272666312704).
 
 > Dustin Goodman, Miško Hevery, Fred Schott & Zach Leatherman

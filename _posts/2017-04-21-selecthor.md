@@ -4,7 +4,7 @@ tags:
   - project
 headimage: /web/img/posts/selecthor/preview.jpg
 ---
-<div class="fullwidth"><youtube-lite-player @slug="CwZniQc0zg0" @label="{{ title }}"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="CwZniQc0zg0" @label="{{ title }}"></youtube-lite-player></div>
 
 I wanted a better way to live demo what nodes a CSS selector matches on the actual HTML source code (instead of the rendered view), so I built one. I show how it works in the video above.
 
