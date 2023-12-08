@@ -8,7 +8,7 @@ function getCryptoHash(src) {
 		return hash.digest('hex').substring(0, 8);
 }
 
-async function imageShortcode(attrs = {}, options = {}) {
+async function imageShortcode(attrs = {}, options = {}, isFullWidth = false) {
 	options = Object.assign({},{
 		widths: [null],
 		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "jpeg"] : ["auto"],
@@ -24,8 +24,13 @@ async function imageShortcode(attrs = {}, options = {}) {
 		decoding: "async",
 	}, attrs);
 
-	if(options.widths.length > 0) {
-		imageAttributes.sizes = "(min-width: 64em) 50vw, 100vw"
+	if(options.widths.length > 1) {
+		if(isFullWidth) {
+			imageAttributes.sizes = "(min-width: 106.25em) 82.75em, (min-width: 61.25em) calc(91.43vw - 13.25em), 100vw";
+		} else {
+			// imageAttributes.sizes = "(min-width: 75em) 44.5625em, (min-width: 61.25em) calc(100vw - 20em), 100vw"
+			imageAttributes.sizes = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
+		}
 	}
 
 	// You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
@@ -169,16 +174,16 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 }
 
 module.exports = function(eleventyConfig) {
-	eleventyConfig.addAsyncShortcode("imageInline", (src, alt) => {
+	eleventyConfig.addAsyncShortcode("imageInline", (src, alt, isFullWidth) => {
 		let attrs = {
 			src: path.join(".", src),
 			alt,
 			loading: "eager",
 		};
 		let options = {
-			widths: [400, 800, 1600]
+			widths: [400, 980, 1324]
 		};
-		return imageShortcode(attrs, options);
+		return imageShortcode(attrs, options, isFullWidth);
 	});
 	eleventyConfig.addAsyncShortcode("image", imageShortcode);
 	eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
