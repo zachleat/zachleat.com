@@ -1,3 +1,4 @@
+const path = require("node:path");
 const Image = require("@11ty/eleventy-img");
 const { createHash } = require("crypto");
 
@@ -168,6 +169,17 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 }
 
 module.exports = function(eleventyConfig) {
+	eleventyConfig.addAsyncShortcode("imageInline", (src, alt) => {
+		let attrs = {
+			src: path.join(".", src),
+			alt,
+			loading: "eager",
+		};
+		let options = {
+			widths: [400, 800, 1600]
+		};
+		return imageShortcode(attrs, options);
+	});
 	eleventyConfig.addAsyncShortcode("image", imageShortcode);
 	eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
 

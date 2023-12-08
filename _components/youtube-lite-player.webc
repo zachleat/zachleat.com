@@ -15,6 +15,7 @@ function getLinkUrl(slug, start) {
 	background-size: 1em auto;
 	background-position: 0 .35em;
 	padding-left: 1.25em;
+	line-height: 1.4;
 }
 is-land[ready] lite-youtube {
 	--yt-poster-img-url: var(--yt-poster-img-url-lazy);

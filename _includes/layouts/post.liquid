@@ -62,6 +62,9 @@ tmpl: page
 {% endif %}
 	</div>
 	<div class="content-grid e-content favicon-optin">
+{% if posterImage.showOnPage and seo.openGraphBackgroundImage %}
+		<div class="fullwidth m-4">{% imageInline seo.openGraphBackgroundImage, seo.openGraphAlt %}</div>
+{% endif %}
 	{{ content }}
 	</div>
 {% if external_url_location == "end" %}
@@ -75,7 +78,13 @@ tmpl: page
 		</article>
 	</div>
 {% endif %}
+{% if posterImage.source %}
+	<div class="content-grid-sibling">
+		<p><a href="{{ posterImage.source }}"><em>Poster image{% if posterImage.name %} by {{ posterImage.name }}{% endif %}.</em></a></p>
+	</div>
+{% endif %}
 </article>
+
 
 {% if tags contains "web-components" %}
 <article class="content-grid-sibling">

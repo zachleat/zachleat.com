@@ -299,6 +299,21 @@ h5,
 	}
 }
 @supports (display: grid) {
+	.tmpl-page .content-grid > .fullwidth img {
+		width: calc(100% + .5rem);
+		height: auto;
+		max-width: none;
+		margin-left: -0.25rem;
+		margin-right: -0.25rem;
+	}
+	@media (min-width: 25em) { /* 400px */
+		.tmpl-page .content-grid > .fullwidth img {
+			width: calc(100% + 1.5rem);
+			margin-left: -0.75rem;
+			margin-right: -0.75rem;
+		}
+	}
+
 	@media (min-width: $twoColLayoutMinWidth) {
 		.content-main pre {
 			max-width: calc(100vw - 24em);
@@ -339,11 +354,6 @@ h5,
 		.tmpl-page .content-grid > .fullwidth {
 			grid-column-start: 1;
 			grid-column-end: 4;
-		}
-		.tmpl-page .content-grid > .fullwidth img {
-			width: 100%;
-			height: auto;
-			max-width: none;
 		}
 	}
 	@media (max-width: $oneColLayoutMaxWidth) { /* 979px */
@@ -1770,6 +1780,10 @@ html:root {
 }
 
 /* Utility Margin Classes */
+.m-4 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
 .m-8 {
 	margin-top: 2em;
 	margin-bottom: 2em;

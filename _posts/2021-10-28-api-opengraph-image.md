@@ -5,6 +5,9 @@ tags:
   - eleventy
 seo:
   openGraphBackgroundImage: /og/sources/canrainbow.jpg
+  openGraphAlt: "A close-up of painted aluminium cans, colored like a rainbow"
+posterImage:
+  showOnPage: true
 ---
 <div class="primarylink"><a href="https://github.com/11ty/api-opengraph-image"><code>11ty/api-opengraph-image</code> on GitHub</a></div>
 
@@ -54,7 +57,7 @@ When I want to link to a person: I’ll use their [IndieWeb Avatar](/web/indiewe
 When I want to link to a specific web page, I now have two options:
 
 * Use the optimized Open Graph image for that page.
-* Use an Open Graph sized [screenshot](/web/screenshots/) for that page. 
+* Use an Open Graph sized [screenshot](/web/screenshots/) for that page.
 
 [Nicolas Hoizey has already suggested](https://github.com/11ty/api-opengraph-image/issues/1) that this service fall back to the screenshot if the Open Graph image is not found—great idea!
 

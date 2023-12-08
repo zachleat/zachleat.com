@@ -6,8 +6,6 @@ tags:
   - video
 metadata:
   youtubeId: 6XtVDfJKFzs
-seo:
-  openGraphBackgroundImage: /web/img/posts/netlify-powers-events/netlify-powers-events.jpeg
 medialength: 23 min
 ---
 Netlify power-hitters [{% imgavatar "AshlynnPolini", "z-avatar-eq" %}Ashlynn Polini](https://twitter.com/AshlynnPolini), [{% imgavatar "huguestennier", "z-avatar-eq" %}Hugues Tennier](https://twitter.com/huguestennier) (and me too, I guess) participated in a panel at [Sanity’s Content is Data Open House](https://www.sanity.io/content-is-data-open-house-2021). We demoed how we used Sanity to empower Netlify’s marketing team to create new Events.

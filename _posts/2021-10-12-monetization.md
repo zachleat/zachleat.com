@@ -2,6 +2,9 @@
 title: Who Pays for Web Frameworks?
 seo:
   openGraphBackgroundImage: /og/sources/deposit-boxes.jpg
+  openGraphAlt: "A bunch of open and ransacked safe deposit boxes"
+posterImage:
+  showOnPage: true
 ---
 _Updated on June 20, 2023 with new information for Eleventy._
 _Updated on January 28, 2022 with new information for Svelte and Astro._
