@@ -76,7 +76,7 @@ $.ajax('some.php', {
 });
 ```
 
-This way, it is immediately obvious which is a required argument and which is optional, and your required arguments will never be accidentally assigned a default value in your code. If the end-user doesn’t send in all of the required arguments, the resulting error message will be obvious and easily fixed, without a ton of code inside of your function to check that the end-user obeyed the function defintion.
+This way, it is immediately obvious which is a required argument and which is optional, and your required arguments will never be accidentally assigned a default value in your code. If the end-user doesn’t send in all of the required arguments, the resulting error message will be obvious and easily fixed, without a ton of code inside of your function to check that the end-user obeyed the function definition.
 
 ## Setting Default Values for Optional Arguments
 
