@@ -64,7 +64,7 @@ function pad(num) {
 }
 function _getCacheBuster(date, suffix) {
 	if(process.env.ELEVENTY_PRODUCTION) {
-		return `_zz${date.getFullYear()}${pad(date.getMonth()+1)}${suffix}`;
+		return `_zzz${date.getFullYear()}${pad(date.getMonth()+1)}${suffix}`;
 	}
 
 	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
