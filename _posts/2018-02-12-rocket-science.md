@@ -27,7 +27,7 @@ In this talk, we discuss practical ways to stabilize the four main pillars of pr
 	</figcaption>
 </figure>
 
-## Timestamps for Content
+## Timestamps
 
 * `01:25` [The Mitt Romney Web Font Loading Problem](/web/mitt-romney-webfont-problem/)
 * `03:08` The Flash of Invisible Text (FOIT) and Flash of Unstyled Text (FOUT)

@@ -1709,9 +1709,14 @@ a[href][data-icon]:has(> *) > * {
 	border-radius: 50%;
 }
 
+.favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):after {
+	content: " (archive.org)";
+	@include webfont;
+}
 /* External Link Favicons */
 /* This is for wider application of a few use cases. It’s better to use the indieAvatar shortcode for one-off instances */
 a[href].favicon:before,
+.favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):before,
 .favicon-optin a[href^="https://www.npmjs.com"]:not(.favicon-optout):before,
 .favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before,
 .favicon-optin a[href^="https://cloudcannon.com"]:not(.favicon-optout):before {
@@ -1722,6 +1727,9 @@ a[href].favicon:before,
 	height: 1em;
 	margin: 0 .2em;
 	background-size: contain;
+}
+.favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):before {
+	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Farchive.org%2F/");
 }
 .favicon-optin a[href^="https://cloudcannon.com"]:not(.favicon-optout):before {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fcloudcannon.com%2F/");

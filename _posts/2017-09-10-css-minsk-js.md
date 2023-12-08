@@ -18,7 +18,7 @@ event_date: September 10
 ---
 The domain for this link lapsed.
 
-Originally hosted at: `http://css-minsk-js.by/` but you can have a look at [archive.org](https://web.archive.org/web/20171225134653/http://css-minsk-js.by/).
+[`http://css-minsk-js.by/`](https://web.archive.org/web/20171225134653/http://css-minsk-js.by/)
 
 ---
 

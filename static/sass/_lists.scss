@@ -13,14 +13,6 @@ dd ol {
 dd ul.via {
 	font-size: 0.875em; /* 14px /16 */
 }
-.dl-inline dt {
-	float: left;
-	margin-right: .5em;
-}
-.dl-inline dt:after {
-	content: ":";
-	@include webfont;
-}
 
 /* Inline List */
 .list-inline.list-inline.list-inline {

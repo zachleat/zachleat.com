@@ -5,7 +5,7 @@ tags:
 ---
 **_Update November 2022_** Container Queries are now available in stable browser versions! 🎉🎉🎉🎉
 
-<dl class="dl-inline">
+<dl>
 	<dt>✅ 2022 October 2</dt>
 	<dd>
 		Edge 106 ships with Container Query support.
@@ -28,7 +28,7 @@ Everyone wants it, but it sure seems like no one is actively working on it. But 
 
 Here are the earliest mentions of Container Queries that the community was able to dig up (in reverse chronological order):
 
-<dl class="dl-inline">
+<dl>
 	<dt>2021 March 26</dt>
 	<dd>
 		Chrome Canary adds an experimental flag for a container queries implementation!
