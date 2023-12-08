@@ -298,6 +298,13 @@ h5,
 		margin-right: auto;
 	}
 }
+@supports (object-fit: cover) {
+	.fullwidth-poster img {
+		max-height: 14em;
+		object-fit: cover;
+		object-position: 50% 35%;
+	}
+}
 @supports (display: grid) {
 	.tmpl-page .content-grid > .fullwidth img {
 		width: calc(100% + .5rem);
