@@ -20,13 +20,14 @@ function getLinkUrl(slug, start) {
 	margin-left: auto;
 	margin-right: auto;
 }
+is-land[ready] lite-youtube {
+	--yt-poster-img-url: var(--yt-poster-img-url-lazy);
+}
 </style>
 <script type="module" src="/static/browser-window.js" webc:keep></script>
 <browser-window mode="dark" flush icon :url="getLinkUrl(slug, start)" shadow>
 	<is-land on:visible class="fluid-width-video-wrapper">
-		<lite-youtube :videoid="slug" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image:url('${poster || getPosterImage(slug)}');`">
-			<a :href="getLinkUrl(slug, start)" class="lty-playbtn" title="Play Video"><span class="lyt-visually-hidden" @html="`Play Video${label ? `: ${label}` : ''}`"></span></a>
-		</lite-youtube>
+		<lite-youtube :videoid="slug" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image: var(--yt-poster-img-url); --yt-poster-img-url-lazy: url('${poster || getPosterImage(slug)}');`"></lite-youtube>
 		<template data-island="once" webc:raw>
 			<style>
 			lite-youtube {
