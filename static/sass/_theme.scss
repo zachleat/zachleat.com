@@ -1260,14 +1260,18 @@ a[href].tag-inline:not(.tag-borderless),
 		}
 		.tags .tag.tag-pinned-rail {
 			display: block;
-			width: calc(100% + 1em);
+			width: calc(100% + 1rem);
 			font-weight: 600;
-			color: #fff;
-			border-radius: .4em;
-			padding: .5em .5em;
-			margin: 0 -.5em 0;
+			border-radius: .5em;
+			padding: .5rem;
+			margin: -.5em -.5rem 0;
 			font-size: 0.875em; /* 14px /16 */
-			background-color: #537949;
+			color: #fff;
+			background: linear-gradient(to right, #456b46, #2d472f);
+		}
+		.tags a[href].tag.tag-pinned-rail:hover {
+			color: #fff;
+			background: #1c2c1d;
 		}
 	}
 }
