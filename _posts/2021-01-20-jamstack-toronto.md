@@ -20,4 +20,8 @@ event_date: January 20
 ---
 This is an event post. The talk content is available here:
 
+{% originalPostEmbed "https://www.zachleat.com/web/image-ready-v2/" %}
+
+and here:
+
 {% originalPostEmbed "https://www.zachleat.com/web/eleventy-image/" %}
