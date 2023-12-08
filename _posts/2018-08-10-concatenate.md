@@ -3,6 +3,7 @@ title: Concatenate Conference
 tags:
   - conference
   - speaking
+  - scheduled
 metadata:
   schedule: true
   speaking:

@@ -4,6 +4,7 @@ tags:
   - external
   - speaking
   - eleventy
+  - scheduled
 metadata:
   schedule: true
 external_url: 'https://www.sanity.io/content-is-data-open-house-2021'

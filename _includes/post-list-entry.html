@@ -12,6 +12,7 @@
 {%- capture nullvoid %}{% increment currentyearpostcount %}{% endcapture %}
 <li
 	class="
+		{%- if post.data.tags contains 'scheduled' %}scheduled {% endif %}
 		{%- if post.data.deprecated %}deprecated {% endif %}
 		{%- if post.data.smalltitle %}smalltitle {% endif %}
 		{%- if post.data.tags contains 'upcoming' %}upcoming {% endif %}
@@ -52,7 +53,6 @@
 		{%- if post.data.tags contains 'font-loading' %}<span class="tag font-loading">Web Fonts</span>{% endif -%}
 		{%- if post.data.tags contains 'project' %}<span class="tag">Project</span>{% endif -%}
 		{%- if post.data.tags contains 'research' %}<span class="tag">Research</span>{% endif -%}
-		{%- if post.data.tags contains 'nejsconf' %}<span class="tag">NEJS CONF</span>{% endif -%}
 		{%- if post.data.tags contains 'conference' -%}
 			{%- if post.data.tags contains 'speaking' %}<span class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>Speaking</span>{% endif -%}
 			{%- if post.data.event_date %}<span class="tag tag-event">on {{ post.data.event_date }}</span>{% endif -%}

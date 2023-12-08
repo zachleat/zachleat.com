@@ -5,6 +5,7 @@ categories:
 tags:
   - external
   - speaking
+  - scheduled
 metadata:
   schedule: true
   speaking:

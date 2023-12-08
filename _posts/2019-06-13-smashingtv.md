@@ -5,6 +5,7 @@ categories:
 tags:
   - speaking
   - font-loading
+  - scheduled
 metadata:
   speaking:
     type: podcast

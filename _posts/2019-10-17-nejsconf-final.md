@@ -10,6 +10,7 @@ metadata:
   speaking:
     type: conference
     country: USA
+external_icon_url: 'https://nebraskajs.com/'
 ---
 
 _Originally presented at NEJS CONF 2019 in Omaha, NE USA 🇺🇸 on August 8, 2019_

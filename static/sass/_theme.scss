@@ -944,6 +944,9 @@ a[href]:hover .project_img {
 .posts .date {
 	@include a11y-only;
 }
+.posts .scheduled {
+	@include webfontItalic;
+}
 .posts .deprecated,
 .posts .deprecated :link,
 .posts .deprecated :visited {

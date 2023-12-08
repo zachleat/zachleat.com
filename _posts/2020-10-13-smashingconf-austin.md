@@ -1,11 +1,13 @@
 ---
-title: SmashingConf Austin 2020
+title: Smashing Conference Austin 2020
 categories:
   - presentations
 tags:
   - external
   - conference
   - speaking
+  - scheduled
+  - scheduled
 metadata:
   schedule: true
   speaking:
