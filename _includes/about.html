@@ -2,8 +2,11 @@
 	<div>
 		{% image site.avatarImgAttrs %}
 	</div>
-	<p>
-		{% include "bio-text-medium.html" %}
-		<a href="/about/">Read more<span class="a11y-only"> about Zach</span> &raquo;</a>
-	</p>
+	<div>
+		<p>{% include "bio-text-medium.html" %}</p>
+		<ul class="favicon-optin">
+			<li><a href="https://fediverse.zachleat.com/@zachleat"><strong>Follow Zach on Mastodon</strong></a></li>
+			<li><a href="/about/">Learn more<span class="a11y-only"> about Zach</span> &raquo;</a></li>
+		</ul>
+	</div>
 </div>
