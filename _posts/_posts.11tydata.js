@@ -1,5 +1,9 @@
-function convertYouTubeUrlToImageUrl(videoUrl) {
-	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(videoUrl)}/`;
+function openGraphImageUrl(url) {
+	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(url)}/`;
+}
+
+function screenshotImageUrl(url) {
+	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(url)}/opengraph/`;
 }
 
 module.exports = {
@@ -17,10 +21,10 @@ module.exports = {
 					return data.seo.openGraphBackgroundImage;
 				}
 				if(data.external_url && data.external_url.startsWith("https://www.youtube.com/watch?v=")) {
-					return convertYouTubeUrlToImageUrl(data.external_url);
+					return openGraphImageUrl(data.external_url);
 				}
 				if(data.metadata && data.metadata.youtubeId) {
-					return convertYouTubeUrlToImageUrl(`https://www.youtube.com/watch?v=${data.metadata.youtubeId}`);
+					return openGraphImageUrl(`https://www.youtube.com/watch?v=${data.metadata.youtubeId}`);
 				}
 			}
 		}

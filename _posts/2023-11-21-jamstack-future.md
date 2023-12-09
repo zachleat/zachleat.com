@@ -1,7 +1,11 @@
 ---
 title: "The Tension and Future of Jamstack"
-overrideOgImageScreenshotBackground: https://thefutureofjamstack.org/
 pinned: true
+seo:
+  openGraphBackgroundImage: https://thefutureofjamstack.org/images/bg.webp
+  openGraphAlt: "Starry background from thefutureofjamstack.org"
+posterImage:
+  showOnPage: true
 ---
 At the [**Jamstack ZHUZH**](https://www.youtube.com/watch?v=xVmKdCi-Gpo), we had a lovely panel discussion on the current and future status of the Jamstack ecosystem.
 
