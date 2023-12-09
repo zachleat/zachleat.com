@@ -2,7 +2,7 @@
 title: "The Tension and Future of Jamstack"
 pinned: true
 seo:
-  openGraphBackgroundImage: https://thefutureofjamstack.org/images/bg.webp
+  openGraphBackgroundImage: /og/sources/futurejamstack.webp
   openGraphAlt: "Starry background from thefutureofjamstack.org"
 posterImage:
   showOnPage: true
