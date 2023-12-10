@@ -1,13 +1,15 @@
 <div class="about">
-	<div>
-		{% image site.avatarImgAttrs %}
-	</div>
-	<div>
-		<p>{% include "bio-text-medium.html" %}</p>
-		<ul class="favicon-optin">
-			<li><a href="/about/">Learn more<span class="a11y-only"> about Zach</span> &raquo;</a></li>
-			<li><a href="https://fediverse.zachleat.com/@zachleat"><strong>Follow Zach on Mastodon</strong></a></li>
-			<li><a href="/web/feed/"><strong>Subscribe to this blog</strong></a></li>
-		</ul>
-	</div>
+	<p>{% include "bio-text-medium.html" %} <a href="/about/">Learn more<span class="a11y-only"> about Zach</span> &raquo;</a></p>
+	<ul>
+		<li>
+			<a href="https://fediverse.zachleat.com/@zachleat">
+				<svg width="28" height="28" viewBox="0 0 216.4 232" preserveAspectRatio="xMinYMin" aria-hidden="true" focusable="false" class="z-avatar z-avatar-sq"><use xlink:href="#icon-mastodon"></use></svg><strong>Follow on Mastodon</strong>
+			</a>
+		</li>
+		<li>
+			<a href="/web/feed/">
+				<svg width="28" height="28" viewBox="0 0 32 32" preserveAspectRatio="xMinYMin" aria-hidden="true" focusable="false" class="z-avatar z-avatar-sq"><use xlink:href="#icon-feed"></use></svg><strong>Subscribe</strong>
+			</a>
+		</li>
+	</ul>
 </div>

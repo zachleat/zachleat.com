@@ -1081,46 +1081,28 @@ a[href]:hover .project_img {
 /* About Me Link Block */
 .about {
 	margin: 5em 0;
-	padding-top: 2em;
-	border-top: 1px solid #eee;
+	padding: 1em 1em;
+	background-color: #f4f4f4;
+	border: 1px solid #ccc;
+	border-radius: .35em;
 	font-size: 0.875em; /* 14px /16 */
 	@include unhyphenate;
 }
-.about > a {
-	display: block;
-	text-decoration: none;
+@media (min-width: 40.625em) { /* 650px */
+	.about {
+		margin-left: -1em;
+		margin-right: -1em;
+	}
 }
-.about > a:hover,
-.about > a:focus {
-	color: #3b624a;
-}
-.about > a span {
-	text-decoration: underline;
+.about a {
+	word-break: keep-all;
 }
 .about p {
 	@include webfontItalic;
 	margin-top: 0;
 }
-.my-avatar {
-	border-radius: 15%;
-}
-.about .my-avatar {
-	display: block;
-	margin: 0 auto 1em;
-	max-width: 130px;
-}
-.about .social {
-	justify-content: center;
-	margin: 1.5em 0;
-}
-@media (min-width: 30em) {
-	.about {
-		display: flex;
-		gap: 1em;
-	}
-	.about .my-avatar {
-		flex: 0 0 80px;
-	}
+.about ul:last-child {
+	margin-bottom: 0;
 }
 
 /* Footer */

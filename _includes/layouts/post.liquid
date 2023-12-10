@@ -93,10 +93,6 @@ tmpl: page
 {% endif %}
 
 <article class="content-grid-sibling" data-pagefind-ignore>
-	{% include "about.html" %}
-</article>
-
-<article class="content-grid-sibling" data-pagefind-ignore>
 	{% assign previousPost = collections.activePosts | getPreviousCollectionItem: page %}
 	{% assign nextPost = collections.activePosts | getNextCollectionItem: page %}
 
@@ -126,6 +122,10 @@ tmpl: page
 			{%- endif -%}
 		</dd>
 	</dl>
+</article>
+
+<article class="content-grid-sibling" data-pagefind-ignore>
+	{% include "about.html" %}
 </article>
 
 {% unless disableComments %}
