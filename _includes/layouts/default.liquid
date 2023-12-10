@@ -16,21 +16,17 @@ classes:
 			<nav role="navigation">
 				<div class="navigation">
 					<div class="tags tags-rail">
-						<span class="tags-bigger">
-							<a href="/" class="tag{% if page.url == '/' %} active{% endif %}">Home</a>
-							<a href="/about/" class="tag{% if page.url == '/about/' %} active{% endif %}">About</a>
-							<a href="/web/" class="tag{% if page.url == '/web/' %} active{% endif %}">Archives</a>
-							<a href="/search/" class="tag{% if page.url == '/search/' %} active{% endif %}">Search</a>
-						</span>
-						<span class="hide-md">
-							<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %}">Talks</a>
-							<a href="/web/eleventy/" class="tag{% if page.url == '/web/eleventy/' %} active{% endif %}">Eleventy</a>
-							{% comment %} <a href="/web/?category=project" class="tag">Projects</a> {% endcomment %}
-							{% comment %} <a href="/web/best-of/" class="tag tag-popular{% if page.url == '/web/best-of/' or page.url == '/web/best-of/total-views/' %} active{% endif %}{% if hasToc == true or hidePostsInSidebar == true %} has-toc{% endif %}">Popular 🔥</a> {% endcomment %}
-							{% comment %} <a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a> {% endcomment %}
-							{% comment %} <a href="/web/citations/" class="tag{% if page.url == '/web/citations/' %} active{% endif %}">Citations</a> {% endcomment %}
-							{% comment %} <a href="/web/highlights/" class="tag highlight{% if page.url == '/web/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> {% endcomment %}
-						</span>
+						<a href="/" class="tag{% if page.url == '/' %} active{% endif %}">Home</a>
+						<a href="/about/" class="tag{% if page.url == '/about/' %} active{% endif %}">About</a>
+						<a href="/web/" class="tag{% if page.url == '/web/' %} active{% endif %}">Archives</a>
+						<a href="/search/" class="tag{% if page.url == '/search/' %} active{% endif %} hide-md">Search</a>
+						<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %} hide-md">Talks</a>
+						<a href="/web/eleventy/" class="tag{% if page.url == '/web/eleventy/' %} active{% endif %} hide-md">Eleventy</a>
+						{% comment %} <a href="/web/?category=project" class="tag">Projects</a> {% endcomment %}
+						{% comment %} <a href="/web/best-of/" class="tag tag-popular{% if page.url == '/web/best-of/' or page.url == '/web/best-of/total-views/' %} active{% endif %}{% if hasToc == true or hidePostsInSidebar == true %} has-toc{% endif %}">Popular 🔥</a> {% endcomment %}
+						{% comment %} <a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a> {% endcomment %}
+						{% comment %} <a href="/web/citations/" class="tag{% if page.url == '/web/citations/' %} active{% endif %}">Citations</a> {% endcomment %}
+						{% comment %} <a href="/web/highlights/" class="tag highlight{% if page.url == '/web/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> {% endcomment %}
 					</div>
 					{% include "social.html" %}
 					<a href="/web/" class="spark hide-singlecol">
