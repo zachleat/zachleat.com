@@ -42,12 +42,12 @@ web367ImageAttrs:
 
 {% image avatarBioImageAttrs %}
 
-This web blog is written by **Zach Leatherman**.
+This web blog is written by **Zach Leatherman**. View his <a href="/resume/"> full résumé</a>.
 
 <ul class="list-inline fl fl-inline fl-nowrap">
-	<li><a href="mailto:zach@zachleat.com" data-icon="✉️"><b>Email</b></a></a>
-	<li><a href="/resume/" data-icon="📃"><span>Résumé</span></a></li>
 	<li><a href="https://fediverse.zachleat.com/@zachleat">{% indieAvatar "https://fediverse.zachleat.com/@zachleat" %}<strong>Mastodon</strong></a></li>
+	<li><a href="/web/feed/"><svg width="28" height="28" viewBox="0 0 32 32" preserveAspectRatio="xMinYMin" aria-hidden="true" focusable="false" class="z-avatar z-avatar-sq"><use xlink:href="#icon-feed"></use></svg><strong>Subscribe</strong></a></li>
+	<li><a href="mailto:zach@zachleat.com" data-icon="✉️"><span>Email</span></a></a>
 	<li><a href="https://github.com/zachleat/">{% indieAvatar "https://github.com/" %}GitHub</a></li>
 	<li><a href="https://www.npmjs.com/~zachleat">{% indieAvatar "https://npmjs.com/" %}npm</a></li>
 	<li><a href="https://bsky.app/profile/zachleat.com">{% indieAvatar "https://bsky.app/" %}Bluesky</a></li>

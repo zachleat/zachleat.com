@@ -61,9 +61,9 @@
 		"check-links": "npx check-html-links _site",
 		"create-search-index": "npx pagefind --site \"_site\" --glob \"{web,resume}/**/*.html\"",
 		"build": "npx @11ty/eleventy",
-		"start": "npx @11ty/eleventy --serve --port=8090 --incremental --ignore-initial",
+		"start": "npx @11ty/eleventy --serve --port=8090 --incremental",
 		"start-search": "npm run build && npm run create-search-index && npm run start",
-		"start-full": "npx @11ty/eleventy --serve --port=8090 --incremental",
+		"start-quick": "npx @11ty/eleventy --serve --port=8090 --incremental --ignore-initial",
 		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production && npm run create-search-index",
 		"build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy"
 	},
