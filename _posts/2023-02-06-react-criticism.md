@@ -216,7 +216,7 @@ Here are a few baseline bundle sizes:
 
 <div class="livedemo" data-demo-label="Updated">
 
-_**Update Feburary 7, 2023**: Added a bit of history on Single Page Applications._
+_**Update February 7, 2023**: Added a bit of history on Single Page Applications._
 
 </div>
 
@@ -293,6 +293,6 @@ In this post I didn’t mention the [rise and fall of CSS-in-JS](https://dev.to/
 
 <div class="livedemo" data-demo-label="Updated">
 
-_**Update Feburary 6, 2023**: a thank you to Mayank who clarified some history on CSS-in-JS, and you can [read more on their blog post](https://blog.mayank.co/is-css-in-js-actually-bad#heading-closing-thoughts)._
+_**Update February 6, 2023**: a thank you to Mayank who clarified some history on CSS-in-JS, and you can [read more on their blog post](https://blog.mayank.co/is-css-in-js-actually-bad#heading-closing-thoughts)._
 
 </div>
