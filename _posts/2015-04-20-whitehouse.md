@@ -1,6 +1,5 @@
 ---
 title: Tech Meetup at the White House
-headimage: /web/img/posts/whmeetup/seal.png
 categories:
   - presentations
 tags:

@@ -1,12 +1,14 @@
 ---
 title: The Mitt Romney Web Font Problem
-headimage: 'https://www.zachleat.com/web/img/posts/mittromney/face.jpg'
 categories:
   - font-loading
 tags:
   - highlight
   - research
   - font-loading
+seo:
+  openGraphBackgroundImage: /web/img/posts/mittromney/face.jpg
+  openGraphAlt: Mitt Romney at Caster Concepts
 ---
 
 <figure>

@@ -2,7 +2,6 @@
 title: 'Selecthor: A Better way to Learn and Demo CSS Selectors'
 tags:
   - project
-headimage: /web/img/posts/selecthor/preview.jpg
 ---
 <div><youtube-lite-player @slug="CwZniQc0zg0" @label="{{ title }}"></youtube-lite-player></div>
 

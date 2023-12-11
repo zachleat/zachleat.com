@@ -1,7 +1,6 @@
 ---
 title: A Hypocrite’s Guide to Public Speaking
 description: Recap of Barcamp Omaha Talk (August 2015)
-headimage: /img/posts/public-speaking/preview.png
 categories:
   - presentations
 tags:

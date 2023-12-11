@@ -1,7 +1,6 @@
 ---
 title: A Brief History of that Time You Used Web Fonts—SmashingConf Barcelona
 permalink: /web/smashingconf/2015/
-headimage: /web/img/posts/barcelona/stage.jpg
 categories:
   - presentations
   - font-loading

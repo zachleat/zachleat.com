@@ -2,7 +2,6 @@
 title: Better @font-face with Font Load Events—SmashingConf Whistler
 permalink: /web/smashingconf/2014/
 description: Recap of SmashingConf in Whistler (December 2014)
-headimage: 'https://www.zachleat.com/web/img/posts/whistler-gondola.jpg'
 categories:
   - presentations
   - font-loading
