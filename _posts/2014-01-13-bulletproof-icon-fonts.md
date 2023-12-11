@@ -1,6 +1,5 @@
 ---
 title: Bulletproof Accessible Icon Fonts
-headimage: /web/img/posts/pua-default.png
 categories:
   - project
   - font-loading
