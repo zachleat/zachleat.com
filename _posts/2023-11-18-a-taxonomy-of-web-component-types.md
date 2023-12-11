@@ -1,6 +1,15 @@
 ---
 title: An Attempted Taxonomy of Web Components
 tags: web-components
+seo:
+  openGraphBackgroundImage: /og/sources/books.jpg
+  openGraphAlt: A top-down photo of a large selection of open books
+posterImage:
+  showOnPage: true
+  height: 16em
+  offset: 60%
+  name: Patrick Tomasso
+  source: https://unsplash.com/photos/open-book-lot-Oaqk7qqNh_c
 ---
 As my experience with web components grows, my personal view of how to build a web component is also evolving. In some cases I’ve gone back and refactored older components with the new knowledge and experience I’ve gained. In other cases, these older components sit as evidence of the learning path I traveled.
 
