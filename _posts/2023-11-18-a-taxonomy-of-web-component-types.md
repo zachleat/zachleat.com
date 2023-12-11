@@ -6,8 +6,7 @@ seo:
   openGraphAlt: A top-down photo of a large selection of open books
 posterImage:
   showOnPage: true
-  height: 16em
-  offset: 60%
+  height: 15em
   name: Patrick Tomasso
   source: https://unsplash.com/photos/open-book-lot-Oaqk7qqNh_c
 ---
