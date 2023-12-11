@@ -23,12 +23,8 @@
 
 	<a href="{{ post.url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}{% if post.data.pinned %} posts-link-pinned{% endif %}">
 	{%- if previewImages %}
-		{% if post.data.headimage -%}
-			<img src="{{ post.data.headimage }}" class="project_img" loading="lazy" decoding="async" alt="">
-		{%- else -%}
-			{%- comment %}We can use alt="" here so we don’t duplicate the content with the post title{% endcomment %}
-			{% opengraphImageHtml post, "" %}
-		{%- endif %}
+		{%- comment %}We can use alt="" here so we don’t duplicate the content with the post title{% endcomment %}
+		{% opengraphImageHtml post, "" %}
 	{%- endif %}
 	{%- if post.data.external_icon_url != false %}
 		{%- if post.data.external_icon_url or post.data.external_url -%}
