@@ -3,7 +3,6 @@ title: BigText Makes Text Big
 description: The BigText jQuery plugin takes a single element and sizes the text inside of its child block elements to fit the width of the parent element.
 seo:
   openGraphBackgroundImage: /web/wp-content/uploads/2009/12/Screen-shot-2011-01-14-at-6.46.00-PM.png
-  openGraphSkipPageBackground: true
 project_name: BigText
 categories:
   - project

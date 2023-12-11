@@ -299,13 +299,15 @@ h5,
 	}
 }
 @supports (object-fit: cover) {
-	.fullwidth-poster img {
-		max-height: var(--poster-maxheight, 8em);
+	.fullwidth-poster:not(.fullwidth-poster--inline) img {
+		width: 100%;
+		max-height: var(--poster-maxheight, 10vh);
 		object-fit: cover;
-		object-position: 50% 50%;
+		object-position: 50% var(--poster-offset, 50%);
 	}
 }
 @supports (display: grid) {
+	.tmpl-page .fullwidth-poster img,
 	.tmpl-page .content-grid > .fullwidth img {
 		width: calc(100% + .5rem);
 		height: auto;
@@ -314,10 +316,18 @@ h5,
 		margin-right: -0.25rem;
 	}
 	@media (min-width: 25em) { /* 400px */
+		.tmpl-page .fullwidth-poster img,
 		.tmpl-page .content-grid > .fullwidth img {
 			width: calc(100% + 1.5rem);
 			margin-left: -0.75rem;
 			margin-right: -0.75rem;
+		}
+	}
+	@media (min-width: 61.25em) { /* 980px */
+		.tmpl-page .fullwidth-poster img,
+		.tmpl-page .content-grid > .fullwidth img {
+			width: calc(100% + .75rem);
+			margin-right: 0;
 		}
 	}
 
@@ -1637,25 +1647,6 @@ filter-container:not(:defined) .filter-posts-form {
 }
 select[data-filter-key] {
 	font-size: inherit;
-}
-
-/* Post background images with gradient overlays */
-@media (min-width: $twoColLayoutMinWidth) {
-	.body-hasbgimage:before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 0;
-		right: 0;
-		height: 100vh;
-		max-height: 54em;
-		z-index: -1;
-		overflow: hidden;
-		background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .9), rgba(255, 255, 255, 1) 45%), var(--seo-bgimage);
-		background-position: top;
-		background-size: 100% 100%, 100% auto;
-		background-repeat: no-repeat;
-	}
 }
 
 /* Share image preview */

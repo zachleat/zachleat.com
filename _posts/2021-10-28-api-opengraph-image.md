@@ -8,6 +8,7 @@ seo:
   openGraphAlt: "A close-up of painted aluminium cans, colored like a rainbow"
 posterImage:
   showOnPage: true
+  offset: 80%
   name: Nick Fewings
   source: https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Fewings
 ---

@@ -5,6 +5,15 @@ tmpl: page
 ---
 <article class="h-entry">
 	<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if titleHtml %}{{ titleHtml }}{% else %}{{ title | longWordWrap }}{% endif %}</h1>
+{% if posterImage.showOnPage and seo.openGraphBackgroundImage %}
+	{% if posterImage.showOnPage == "inline" %}
+	<div class="content-grid e-content">
+	{% endif %}
+		<div class="fullwidth fullwidth-poster m-4{% if posterImage.showOnPage == "inline" %} fullwidth-poster--inline{% endif %}" style="{% if posterImage.height %}--poster-maxheight: {{ posterImage.height }};{% endif %}{% if posterImage.offset %}--poster-offset: {{ posterImage.offset }}{% endif %}">{% imageInline seo.openGraphBackgroundImage, seo.openGraphAlt, true %}</div>
+	{% if posterImage.showOnPage == "inline" %}
+	</div>
+	{% endif %}
+{% endif %}
 	<div class="content-grid-sibling">
 		<div class="sub p-description">
 			<em class="date">{{ page.date | readableDate }}</em>
@@ -62,9 +71,6 @@ tmpl: page
 {% endif %}
 	</div>
 	<div class="content-grid e-content favicon-optin">
-{% if posterImage.showOnPage and seo.openGraphBackgroundImage %}
-		<div class="fullwidth fullwidth-poster m-4"{% if posterImage.height %} style="--poster-maxheight: {{ posterImage.height }}"{% endif %}>{% imageInline seo.openGraphBackgroundImage, seo.openGraphAlt, true %}</div>
-{% endif %}
 	{{ content }}
 	</div>
 {% if external_url_location == "end" %}

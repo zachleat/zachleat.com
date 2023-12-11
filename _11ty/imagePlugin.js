@@ -181,7 +181,7 @@ module.exports = function(eleventyConfig) {
 			loading: "eager",
 		};
 		let options = {
-			widths: [400, 980, 1324]
+			widths: [400, 980, 1324, 2000]
 		};
 		return imageShortcode(attrs, options, isFullWidth);
 	});
