@@ -30,11 +30,20 @@ dl.nextprev {
 	display: grid;
 	gap: 0.5em 1.5em;
 	grid-template-columns: 1fr 1fr;
-	margin: 4em 0;
+	margin: 5em 0 0;
+	padding: 1em;
+	border-radius: .35em .35em 0 0;
+	background-color: #ccc;
 }
 @media (min-width: 31.25em) { /* 500px */
 	dl.nextprev {
 		gap: 0.5em 20%;
+	}
+}
+@media (min-width: 40.625em) {
+	dl.nextprev {
+		margin-left: -1rem;
+		margin-right: -1rem;
 	}
 }
 dl.nextprev dt {

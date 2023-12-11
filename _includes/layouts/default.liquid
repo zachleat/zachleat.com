@@ -35,17 +35,17 @@ classes:
 						<span>{{ currentYear }}</span>
 					</a>
 
-{% if hasToc != true and hidePostsInSidebar != true %}
 					<div class="tags tags-rail tags-rail-top5 hide-singlecol">
+						{%- if collections.pinnedPosts | size %}
 						<div>
-							{%- if collections.pinnedPosts | size %}
 							<h2 class="top5">📌 Pinned</h2>
 							{%- for post in collections.pinnedPosts limit:1 %}
 								<a href="{{ post.url }}" class="tag tag-popular-rail tag-pinned-rail tag-borderless">{{ post.data.title }}</a>
 							{%- endfor %}
-							{%- endif %}
 						</div>
+						{%- endif %}
 
+					{%- if hasToc != true and hidePostsInSidebar != true %}
 						<div>
 							<h2 class="top5"><a href="/web/best-of/">Popular 🔥</a></h2>
 
@@ -63,8 +63,8 @@ classes:
 							{%- endfor %}
 						</div>
 						{%- endif %}
+					{%- endif %}
 					</div>
-{% endif %}
 				</div>
 			</nav>
 		</aside>
