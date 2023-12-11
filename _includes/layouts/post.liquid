@@ -63,7 +63,7 @@ tmpl: page
 	</div>
 	<div class="content-grid e-content favicon-optin">
 {% if posterImage.showOnPage and seo.openGraphBackgroundImage %}
-		<div class="fullwidth fullwidth-poster m-4">{% imageInline seo.openGraphBackgroundImage, seo.openGraphAlt, true %}</div>
+		<div class="fullwidth fullwidth-poster m-4"{% if posterImage.height %} style="--poster-maxheight: {{ posterImage.height }}"{% endif %}>{% imageInline seo.openGraphBackgroundImage, seo.openGraphAlt, true %}</div>
 {% endif %}
 	{{ content }}
 	</div>

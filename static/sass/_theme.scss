@@ -300,9 +300,9 @@ h5,
 }
 @supports (object-fit: cover) {
 	.fullwidth-poster img {
-		max-height: 14em;
+		max-height: var(--poster-maxheight, 8em);
 		object-fit: cover;
-		object-position: 50% 35%;
+		object-position: 50% 50%;
 	}
 }
 @supports (display: grid) {
@@ -861,6 +861,7 @@ table-saw :is(th, td) {
 	padding: 0 .5em;
 	background-color: rgba(0,0,0,.5);
 	color: #fff;
+	border: 2px solid rgba(255,255,255,0.2);
 	pointer-events: none;
 }
 
@@ -1279,9 +1280,6 @@ a[href].tag-inline:not(.tag-borderless),
 .posts .highlight a .external {
 	@include webfont;
 }
-/*.external:after {
-	content: ": ";
-}*/
 .icon-link-external {
 	width: 14px;
 	height: 15px;
