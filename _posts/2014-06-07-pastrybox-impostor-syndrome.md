@@ -1,12 +1,8 @@
 ---
 title: 'Pastry Box: Impostor Syndrome'
-tags:
-  - external
-external_url: 'https://the-pastry-box-project.net/zach-leatherman/2014-june-7'
-external_icon_url: false
 ---
 
-Related: **[*Impostor Syndrome* was originally posted on the Pastry Box](https://the-pastry-box-project.net/zach-leatherman/2014-june-7) and was a transcription of an [earlier BarCamp talk](/web/impostor/).**
+Related: **[*Impostor Syndrome* was originally posted on the Pastry Box](https://web.archive.org/web/20150321000649/https://the-pastry-box-project.net/zach-leatherman/2014-june-7) and was a transcription of an [earlier BarCamp talk](/web/impostor/).**
 
 > People with Impostor Syndrome are unable to internalize their accomplishments and are convinced that they are frauds and do not deserve the success they have achieved.
 
