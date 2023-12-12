@@ -21,9 +21,6 @@ tmpl: page
 {% if postRank and postRank <= 20 %}
 			<em class="words"><a href="/web/best-of/">#{{ postRank }} Popular</a></em>
 {% endif %}
-{% if analytics[page.url].pageViews > 1000 %}
-			<em class="words">{{ analytics[page.url].pageViews | renderNumber }} Views</em>
-{% endif %}
 {% if tags contains 'video' %}
 			<em class="words">Watch in {{ medialength | medialengthCleanup }}</em>
 {% endif %}
@@ -32,15 +29,6 @@ tmpl: page
 {% endif %}
 {% if metadata.speaking.country %}
 			<span>{{ metadata.speaking.country | nameToFlag }} <em> {{ metadata.speaking.country }}</em></span>
-{% endif %}
-{% if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
-			<em>Tagged:
-	{% if tags contains "eleventy" %}<a href="/web/?category=eleventy">Eleventy</a>{% endif %}
-	{% if tags contains "project" %}<a href="/web/?category=project">Project</a>{% endif %}
-	{% if tags contains "speaking" %}<a href="/web/?category=speaking">Speaking</a>{% endif %}
-	{% if tags contains "web-components" %}<a href="/web/?category=web-components">Web Components</a>{% endif %}
-	{% if tags contains "web-fonts" %}<a href="/web/?category=web-fonts">Web Fonts</a>{% endif %}
-			</em>
 {% endif %}
 		</div>
 {% if deprecated %}
@@ -84,20 +72,28 @@ tmpl: page
 		</article>
 	</div>
 {% endif %}
-{% if posterImage.source %}
-	<div class="content-grid-sibling">
-		<hr>
-		<p><a href="{{ posterImage.source }}"><em>Poster image{% if posterImage.name %} by {{ posterImage.name }}{% endif %}.</em></a></p>
-	</div>
-{% endif %}
 </article>
 
-
-{% if tags contains "web-components" %}
+<hr>
 <article class="content-grid-sibling">
-	<p><em>This is a post about web components! Check out <a href="/web/?category=web-components">all the web components posts</a>.</em></p>
+	<p class="post-metadata">
+		{%- if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
+		<em>Tagged:
+{% if tags contains "eleventy" %}<a href="/web/?category=eleventy">Eleventy</a>{% endif %}
+{% if tags contains "project" %}<a href="/web/?category=project">Project</a>{% endif %}
+{% if tags contains "speaking" %}<a href="/web/?category=speaking">Speaking</a>{% endif %}
+{% if tags contains "web-components" %}<a href="/web/?category=web-components">Web Components</a>{% endif %}
+{% if tags contains "web-fonts" %}<a href="/web/?category=web-fonts">Web Fonts</a>{% endif %}
+		</em>
+	{%- endif %}
+	{%- if analytics[page.url].pageViews > 1000 %}
+		<em class="words"><code>{{ analytics[page.url].pageViews | renderNumber }}</code> Views</em>
+	{%- endif %}
+	</p>
+	{%- if posterImage.source %}
+	<p><a href="{{ posterImage.source }}"><em>{% indieAvatar "https://unsplash.com/" %}Poster image{% if posterImage.name %} by {{ posterImage.name }}{% endif %}</em></a></p>
+	{%- endif %}
 </article>
-{% endif %}
 
 <article class="content-grid-sibling" data-pagefind-ignore>
 	{% assign previousPost = collections.activePosts | getPreviousCollectionItem: page %}

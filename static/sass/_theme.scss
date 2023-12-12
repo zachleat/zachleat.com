@@ -451,6 +451,13 @@ h5,
 	}
 }
 
+/* Metadata at bottom of blog posts */
+.post-metadata {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .5em 1em;
+}
+
 /* App specific */
 body {
 	font-family: $fallbackSystemFont;
@@ -641,6 +648,7 @@ code {
 	padding: .2em .2em .1em;
 	margin: 0 .25em 0 .1em;
 	color: #444;
+	border-radius: .2em;
 
 	@include extraunhyphenate;
 
@@ -699,12 +707,12 @@ pre > code {
 }
 @media (min-width: 40.625em) { /* 650px */
 	:where(.tmpl-page) pre {
-		border-radius: 0.6153846153846em; /* 8px /13 */
+		border-radius: 0.5rem; /* 8px /16 */
 	}
 }
 @media (min-width: 56.25em) { /* 900px */
 	pre {
-		border-radius: 0.6153846153846em; /* 8px /13 */
+		border-radius: 0.5rem; /* 8px /16 */
 	}
 	.livedemo pre {
 		border-radius: 0;
