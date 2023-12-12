@@ -332,8 +332,8 @@ h5,
 	}
 
 	@media (min-width: $twoColLayoutMinWidth) {
-		.content-main pre {
-			max-width: calc(100vw - 24em);
+		.tmpl-list .content-main pre {
+			max-width: calc(100vw - 20rem);
 		}
 	}
 
