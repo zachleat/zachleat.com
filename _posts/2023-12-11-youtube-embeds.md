@@ -27,7 +27,7 @@ The weight also grows linearly with every embed—resources are _not_ shared: tw
 
 ## A better solution
 
-Instead of the above, I typically use [Paul Irish’s `lite-youtube` web component](https://github.com/paulirish/lite-youtube-embed) for better YouTube embeds on my site. The results speak for themselves: the _entirety of this blog post_ weighs a grand total of 204 kB (and that includes the demo YouTube embed below)—just 17% of the original YouTube embed.
+Instead of the above, I typically use [Paul Irish’s `lite-youtube` web component](https://github.com/paulirish/lite-youtube-embed) for better YouTube embeds on my site. The results speak for themselves: the _entirety of this blog post_ weighs a grand total of 229 kB (and that includes the demo YouTube embed below)—just 17% of the original YouTube embed.
 
 Even better, `<lite-youtube>` is a web component which means it can be managed with [`<is-land>`](/web/is-land/).
 
