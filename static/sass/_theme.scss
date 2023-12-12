@@ -673,8 +673,6 @@ a[href] > code {
 }
 pre {
 	font-family: $monospaceFont;
-	font-size: 0.8125rem; /* 13px /16 */
-	line-height: 160%;
 	padding: .75rem 0; /* padding added by syntax-line-highlight plugin */
 	margin: .5em -0.25rem; /* -4px /16 */
 	background: #272822;
@@ -693,8 +691,6 @@ pre {
 	padding: .75rem;
 }
 pre > code {
-	font-size: .9375rem;
-	line-height: 160%;
 	padding: 0;
 	margin: 0;
 	background-color: #272822;
