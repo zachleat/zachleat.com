@@ -1,9 +1,5 @@
 function openGraphImageUrl(url) {
-	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(url)}/`;
-}
-
-function screenshotImageUrl(url) {
-	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(url)}/opengraph/`;
+	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(url)}/auto/jpeg/`;
 }
 
 module.exports = {

@@ -1,7 +1,7 @@
 <script webc:setup>
-function getPosterImage(slug) {
+function getPosterImage(slug, posterSize = "auto") {
 	let videoUrl = `https://youtube.com/watch?v=${slug}`;
-	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(videoUrl)}/`;
+	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(videoUrl)}/${posterSize}/jpeg/`;
 }
 function getLinkUrl(slug, start) {
 	return `https://youtube.com/watch?v=${slug}${start ? `&t=${start}s` : ''}`;
@@ -17,14 +17,20 @@ function getLinkUrl(slug, start) {
 	padding-left: 1.25em;
 	line-height: 1.4;
 }
+is-land lite-youtube {
+	background-color: #eee;
+	border-radius: .5em;
+	background-size: cover;
+}
 is-land[ready] lite-youtube {
+	/* gotta set in `style` to override the 480w image from lite-youtube */
 	--yt-poster-img-url: var(--yt-poster-img-url-lazy);
 }
 </style>
 <script type="module" src="/static/browser-window.js" webc:keep></script>
 <browser-window mode="dark" flush icon :url="getLinkUrl(slug, start)" shadow>
 	<is-land on:visible class="fluid-width-video-wrapper">
-		<lite-youtube :videoid="slug" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image: var(--yt-poster-img-url); --yt-poster-img-url-lazy: url('${poster || getPosterImage(slug)}');`"></lite-youtube>
+		<lite-youtube :videoid="slug" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image: var(--yt-poster-img-url);--yt-poster-img-url-lazy: url('${poster || getPosterImage(slug, posterSize)}');`"></lite-youtube>
 		<template data-island="once" webc:raw>
 			<style>
 			lite-youtube {
