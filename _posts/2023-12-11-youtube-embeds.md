@@ -21,11 +21,17 @@ The default YouTube embed is… well… atrocious (sorry). Consider an embed for
 
 _(compressed wire weights reported)_
 
-This, uh, conspicuously—does not include any video content.
+This, uh, conspicuously—does not include any preloading of video content.
 
-Instead of the above, I typically use [Paul Irish’s `lite-youtube` web component](https://github.com/paulirish/lite-youtube-embed) for better YouTube embeds on my site. The benefit here is that if a user does not play the video, they don’t have to pay the bandwidth overhead.
+The weight also grows linearly with every embed—resources are _not_ shared: two embeds weigh 2.4 MB; three embeds weigh 3.6 MB (you get the idea).
 
-This component weighs in:
+## A better solution
+
+Instead of the above, I typically use [Paul Irish’s `lite-youtube` web component](https://github.com/paulirish/lite-youtube-embed) for better YouTube embeds on my site. The results speak for themselves: the _entirety of this blog post_ weighs a grand total of 204 kB (and that includes the demo YouTube embed below)—just 17% of the original YouTube embed.
+
+Even better, `<lite-youtube>` is a web component which means it can be managed with [`<is-land>`](/web/is-land/).
+
+If you look at just the weight of `<lite-youtube>`:
 
 * `31 kB` total weight, including:
 * `6 kB` JavaScript
@@ -79,4 +85,4 @@ As this is using `<is-land>` this re-enables the JavaScript dependency for the p
 
 You can see all of this in action below:
 
-<div><youtube-lite-player @slug="YYJpFdEaAuc" @start="188" @label="Partial Hydration and Islands Architecture—Eleventy 🎈 Weekly №12" poster-size="medium"></youtube-lite-player></div>
+<div><youtube-lite-player @slug="YYJpFdEaAuc" @start="188" @label="Partial Hydration and Islands Architecture—Eleventy 🎈 Weekly №12"></youtube-lite-player></div>
