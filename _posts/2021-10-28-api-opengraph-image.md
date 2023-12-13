@@ -10,7 +10,7 @@ posterImage:
   showOnPage: true
   offset: 80%
   name: Nick Fewings
-  source: https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Fewings
+  source: https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 ---
 <div class="primarylink"><a href="https://github.com/11ty/api-opengraph-image"><code>11ty/api-opengraph-image</code> on GitHub</a></div>
 

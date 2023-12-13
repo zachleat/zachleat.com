@@ -94,7 +94,7 @@ tmpl: page
 		<em><a href="/web/best-of/" data-icon="🔥">#{{ postRank }} Popular</a></em>
 		<em><a href="/web/best-of/total-views/" data-icon="☀️">#{{ postRankAllTime }}</a></em>
 	{% endif %}
-	{%- if analytics[page.url].pageViews > 200 %}
+	{%- if analytics[page.url].pageViews > 500 %}
 		<em data-icon="👀">{{ analytics[page.url].pageViews | renderNumber }} Views</em>
 	{%- endif %}
 	</p>

@@ -10,6 +10,7 @@ tags:
 medialength: 58 min
 external_url: 'https://www.youtube.com/watch?v=eRRkvI-w5Ik'
 ignoreExternalLinkInLayoutFile: true
+opengraphSkipFace: true
 ---
 <div><youtube-lite-player @slug="eRRkvI-w5Ik" @label="{{ title }}"></youtube-lite-player></div>
 
