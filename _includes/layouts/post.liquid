@@ -19,14 +19,16 @@ tmpl: page
 			<em class="date">{{ page.date | readableDate }}</em>
 {%- assign postRank = analytics[page.url].rankPerDaysPosted %}
 {% if postRank and postRank <= 20 %}
-			<em class="words"><a href="/web/best-of/">#{{ postRank }} Popular</a></em>
+			<em><a href="/web/best-of/">#{{ postRank }} Popular</a></em>
 {% endif %}
 {% if tags contains 'video' %}
-			<em class="words">Watch in {{ medialength | medialengthCleanup }}</em>
+			<em>Watch in {{ medialength | medialengthCleanup }}</em>
 {% endif %}
-{% if tweet or toot %}
-			<em>First, it was {% if tweet %}<a href="{{ tweet }}">a tweet</a>{% elsif toot %}<a href="{{ toot }}">a mastodon post</a>{% endif %}.</em>
-{% endif %}
+{%- if tweet %}
+			<em><a href="{{ tweet | tweetbackUrl }}">On Twitter (archived)</em></a>
+{%- elsif toot %}
+			<em><a href="{{ toot }}">On Mastodon</a></em>
+{%- endif %}
 {% if metadata.speaking.country %}
 			<span>{{ metadata.speaking.country | nameToFlag }} <em> {{ metadata.speaking.country }}</em></span>
 {% endif %}
@@ -86,8 +88,14 @@ tmpl: page
 {% if tags contains "web-fonts" %}<a href="/web/?category=web-fonts">Web Fonts</a>{% endif %}
 		</em>
 	{%- endif %}
+	{%- assign postRank = analytics[page.url].rankPerDaysPosted %}
+	{%- assign postRankAllTime = analytics[page.url].rankTotal %}
+	{% if postRank and postRank <= 20 or postRankAllTime and postRankAllTime <= 20 %}
+		<span><a href="/web/best-of/">#{{ postRank }} Popular 🔥</a></span>
+		<span><a href="/web/best-of/total-views/">#{{ postRankAllTime }} ☀️</a></span>
+	{% endif %}
 	{%- if analytics[page.url].pageViews > 1000 %}
-		<em class="words"><code>{{ analytics[page.url].pageViews | renderNumber }}</code> Views</em>
+		<em><code>{{ analytics[page.url].pageViews | renderNumber }}</code> Views</em>
 	{%- endif %}
 	</p>
 	{%- if posterImage.source %}
