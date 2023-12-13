@@ -14,11 +14,11 @@ A few very interesting discussions on Twitter have led me to understand that som
 
 Here’s a screenshot of a Lighthouse result from this morning, October 14th, 2021, run on an old MacBook Air (2012) using Chrome 86.
 
-<img src="/web/img/posts/lighthouse/nextjs-mobile-old-hardware.png" alt="nextjs.org Lighthouse Score for Mobile on Old Hardware: 64 on Performance, 97 on Accessibility, 100 on Best Practices, 100 on SEO" class="primary">
+<img src="/web/img/posts/lighthouse/nextjs-mobile-old-hardware.png" alt="nextjs.org Lighthouse Score for Mobile on Old Hardware: 64 on Performance, 97 on Accessibility, 100 on Best Practices, 100 on SEO">
 
 Here’s the same result on my MacBook Air (M1, 2020) using Chrome 94:
 
-<img src="/web/img/posts/lighthouse/nextjs-mobile-new-hardware.png" alt="nextjs.org Lighthouse Score for Mobile: 94 on Performance, 89 on Accessibility, 93 on Best Practices, 100 on SEO" class="primary">
+<img src="/web/img/posts/lighthouse/nextjs-mobile-new-hardware.png" alt="nextjs.org Lighthouse Score for Mobile: 94 on Performance, 89 on Accessibility, 93 on Best Practices, 100 on SEO">
 
 It’s incredible to me the variability effect that your hardware can have: from a 64 on Performance to a 94—that’s a thirty point swing!
 

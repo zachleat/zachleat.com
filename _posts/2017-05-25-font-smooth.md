@@ -5,6 +5,7 @@ categories:
 tags:
   - research
   - highlight
+tweet: https://twitter.com/zachleat/status/874968707239297025
 ---
 
 _Recently, Twitter made a global anti-aliasing CSS change to their website. Before writing this post, I didn’t know very much about anti-aliasing—so I decided to learn everything I could about it to better understand the reasoning behind a decision like that. Here’s what I learned._
@@ -27,7 +28,7 @@ Controlling anti-aliasing modes in CSS is easy. A little too easy <a href="https
 
 <form class="livedemo">
 	<fieldset class="fs-fieldset fs-choose" id="fs-choose">
-		Anti-aliasing: 
+		Anti-aliasing:
 		<label><input type="radio" name="choose" value="fs-none"><code>None</code></label>
 		<label><input type="radio" name="choose" value="fs-antialias"><code>Grayscale</code></label>
 		<label><input type="radio" name="choose" value="fs-auto" checked><code>Auto</code></label>
@@ -136,15 +137,6 @@ Sub-pixel anti-aliasing reportedly removed in macOS Mojave: <blockquote class="t
 
 <blockquote><p>Subpixel AA was removed from the OS, but browsers still do it by default. See <a href="https://www.joshwcomeau.com/css/custom-css-reset/#digit-font-smoothing">https://www.joshwcomeau.com/css/custom-css-reset/#digit-font-smoothing</a></p>—@simevidas <a href="https://twitter.com/simevidas/status/1514712146105540608">April 14, 2022</a></blockquote>
 
-
-
-
-<div class="retweettoshare">
-	<h3 class="retweettoshare_title">Retweet to share this post</h3>
-	<div class="retweettoshare_widget">
-		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ Laissez-Faire Font Smoothing and Anti-aliasing <a href="https://t.co/mIxWPADXel">https://t.co/mIxWPADXel</a><br><br>Learn about `-webkit-font-smoothing` and `-moz-osx-font-smoothing`</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/874968707239297025">June 14, 2017</a></blockquote>
-	</div>
-</div>
 
 <style>
 .fs-choose {

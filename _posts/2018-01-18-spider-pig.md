@@ -24,4 +24,4 @@ Get a list of local URL links from a root URL. Works with JavaScript generated c
 
 Can also act as a live-DOM CSS search across multiple files (find all the templates that are using the CSS selector I want to change). If I’m worried about changing code in a CSS selector, I’ll use this tool to search for instances of the selector across my project.
 
-<img src="/web/img/posts/spider-pig/spider-pig.jpg" alt="spider-pig on the command line" class="primary">
+<img src="/web/img/posts/spider-pig/spider-pig.jpg" alt="spider-pig on the command line">

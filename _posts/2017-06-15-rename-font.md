@@ -5,6 +5,7 @@ categories:
 tags:
   - research
   - highlight
+tweet: https://twitter.com/zachleat/status/880392657847160832
 ---
 
 Are you tired of developers abusing the smooth traditionalism of Helvetica? Do you wish your web page was a little bit more fun? Do you also want to avoid discussing things with your peers? Well, do I have some code for you. Add this little block into your project and it will globally alias (rename) Helvetica to Comic Sans MS (and Chalkboard SE, [browser support](http://fontfamily.io/Comic_Sans_MS,Chalkboard_SE)). _(Yes, I know I recently wrote a blog post about [anti-aliasing](/web/font-smooth/)—that’s a different thing.)_
@@ -47,7 +48,7 @@ If you have Mac OS, open up the default font browser—Font Book—and select a 
 
 <picture>
   <source type="image/webp" srcset="/web/img/posts/aliasing/font-info.webp">
-  <img src="/web/img/posts/aliasing/font-info.png" alt="How to find the Full Font and PostScript font names in Font Book" class="primary">
+  <img src="/web/img/posts/aliasing/font-info.png" alt="How to find the Full Font and PostScript font names in Font Book">
 </picture>
 
 Keep in mind that you can’t override generic family keywords, like `serif`, `sans-serif`, `cursive`, `fantasy`, or `monospace`. Not even if you quote them in your `font-family` property, although pedantically speaking this should probably work since `font-family: "serif"` refers to something different than `font-family: serif`.
@@ -235,9 +236,3 @@ p {
 * [Using UI System Fonts In Web Design: A Quick Practical Guide](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/) by [Marcin Wichary](https://twitter.com/mwichary)
 * [I Left My System Fonts in San Francisco](http://furbo.org/2015/07/09/i-left-my-system-fonts-in-san-francisco/) by [Craig Hockenberry](https://twitter.com/chockenberry)
 
-<div class="retweettoshare">
-	<h3 class="retweettoshare_title">Retweet to share this post</h3>
-	<div class="retweettoshare_widget">
-		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ Font Aliasing, or How to Rename a Font in CSS <a href="https://t.co/YFADzHxBSP">https://t.co/YFADzHxBSP</a><br><br>…as a bonus: the best alias to use San Francisco as a system font.</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/880392657847160832">June 29, 2017</a></blockquote>
-	</div>
-</div>

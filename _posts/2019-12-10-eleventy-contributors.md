@@ -12,7 +12,7 @@ Since then I have also been thinking a lot about what the next step for the Elev
 
 One small step I’ve taken that I think will help incentivize donors to contribute is to start creating exclusive features on the documentation for open source patrons. The first of these such features is Eleventy documentation search.
 
-<img src="/web/img/posts/pro-open-source/eleventy-search.jpg" alt="Eleventy Contributor Account search for Pagination" class="primary">
+<img src="/web/img/posts/pro-open-source/eleventy-search.jpg" alt="Eleventy Contributor Account search for Pagination">
 
 Notably this enhances from a baseline DuckDuckGo search experience that is served to non-authenticated users. It even includes `site:www.11ty.dev` in the search field so that the search is properly scoped without JavaScript.
 

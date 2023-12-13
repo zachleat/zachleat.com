@@ -20,7 +20,7 @@ When doing any web font strategy recommendation, the first thing I like to do is
 
 The new design uses the [Rubik typeface, available on Google Fonts](https://fonts.google.com/specimen/Rubik). That’s exciting, as most of the typefaces available on Google Fonts have open licenses and this was no exception: Rubik uses the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web), which gives us license 😎 to make the modifications we need to optimize the font for the CSS-Tricks web site.
 
-<img src="/web/img/posts/css-tricks/design.png" alt="" class="primary">
+<img src="/web/img/posts/css-tricks/design.png" alt="">
 
 As Chris has helpfully annotated above, the design has three different weights of Rubik in play: Regular (`normal` or `400`), Medium (`500`), and Bold (`700`).
 
@@ -76,7 +76,7 @@ One of the best tools I’ve found for inspecting a web font’s internals is ca
 
 Wakamai Fondue works transparently with WOFF and WOFF2 files too—which makes it a nice replacement for Mac OS X Preview until Preview gets support for those formats. It’s really great. Let’s drag and drop the `Rubik-Bold.ttf` file we just downloaded and take a peek inside.
 
-<img src="/web/img/posts/css-tricks/wakamai-fondue.png" alt="" class="primary">
+<img src="/web/img/posts/css-tricks/wakamai-fondue.png" alt="">
 
 Wakamai Fondue shows that Rubik Bold (140KB TTF, 46KB WOFF2 compressed) has 686 characters and a bunch of fancy OpenType features:
 
@@ -128,7 +128,7 @@ First stage file size results:
 `pyfsubset` command (from [fonttools](https://github.com/fonttools/fonttools)) to generate second stage font files:
 
     pyftsubset "Rubik-Bold.ttf" --output-file="Rubik-Bold-hint-all.woff2" --flavor=woff2 --layout-features="*" --unicodes=U+0-10FFFF
-    
+
     # Run again using "Rubik-Regular.ttf"
     # To generate woff files, use `--flavor=woff`
 
@@ -222,13 +222,13 @@ For the most part, our performance profile will largely depend on how the CSS is
 
 Any OpenType features will display their unsupported versions while we wait for the second stage to complete. Any text rendering that relies on hinting will be unhinted (for now). Any non-Latin characters will display fallbacks.
 
-<img src="/web/img/posts/css-tricks/first-stage.png" alt="" class="primary">
+<img src="/web/img/posts/css-tricks/first-stage.png" alt="">
 
 **Second Stage**
 
 All the OpenType features available in the original font, hinting as the designer intended (not depicted in this screenshot), true non-Latin characters.
 
-<img src="/web/img/posts/css-tricks/second-stage.png" alt="" class="primary">
+<img src="/web/img/posts/css-tricks/second-stage.png" alt="">
 
 ## Conclusion
 

@@ -115,6 +115,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
 
 	/* FILTERS */
+	eleventyConfig.addFilter("tweetbackUrl", async (url) => {
+		const { transform } = await import("@tweetback/canonical");
+		return transform(url);
+	});
+
 	eleventyConfig.addFilter("archiveUrl", (url, targetYear) => {
 		if(!targetYear) {
 			targetYear = (new Date).getFullYear();

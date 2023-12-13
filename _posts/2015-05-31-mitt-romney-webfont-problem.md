@@ -9,6 +9,7 @@ tags:
 seo:
   openGraphBackgroundImage: /web/img/posts/mittromney/face.jpg
   openGraphAlt: Mitt Romney at Caster Concepts
+tweet: https://twitter.com/zachleat/status/605364712663093248
 ---
 
 <figure>
@@ -109,10 +110,3 @@ Promise.all([
 // Converting this to use a Polyfill syntax
 // is an exercise left to the reader.
 ```
-
-<div class="retweettoshare">
-	<h3 class="retweettoshare_title">Retweet to share this post</h3>
-	<div class="retweettoshare_widget">
-		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ The Mitt Romney Web Font Problem <a href="http://t.co/isHBqCaTdb">http://t.co/isHBqCaTdb</a> or why loading multiple web fonts for a single typeface is dangerous.</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/605364712663093248">June 1, 2015</a></blockquote>
-	</div>
-</div>

@@ -37,7 +37,7 @@ If you’re using multiple web fonts for a single family—things may not operat
 
 Consider this [`font-display: swap` demo from Web Font Loading Recipes](https://github.com/zachleat/web-font-loading-recipes#font-display-swap) ([Demo](https://www.zachleat.com/web-fonts/demos/font-display.html)):
 
-<img src="/web/img/posts/font-display-reflow/waterfall.png" alt="font-display: swap Screenshot of Devtools Network Tab, 1 HTML request and 4 Web Font requests loading in parallel" class="primary">
+<img src="/web/img/posts/font-display-reflow/waterfall.png" alt="font-display: swap Screenshot of Devtools Network Tab, 1 HTML request and 4 Web Font requests loading in parallel">
 
 A pretty standard controlled waterfall experiment, network throttled to Fast 3G in Chrome Devtools. The browser finds four web fonts of almost identical size using `font-display: swap` and downloads them in parallel.
 

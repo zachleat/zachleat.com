@@ -140,7 +140,7 @@ All of this build-up is really just to say that I made all my blog post titles h
 
 If your screen is wide enough (perhaps—say—a viewport size of 3440px), you can probably read them from space:
 
-<img src="/web/img/posts/extra-readable-titles/big.png" alt="Giant Viewport Preview of the Blog Post Title" class="primary">
+<img src="/web/img/posts/extra-readable-titles/big.png" alt="Giant Viewport Preview of the Blog Post Title">
 
 This is likely just the beginning of a long string of changes I’ll make to the super-wide layout for my blog.
 

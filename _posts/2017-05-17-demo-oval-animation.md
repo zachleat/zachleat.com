@@ -1,7 +1,6 @@
 ---
 title: 'Quick Demo: Animating on an Oval Path'
-categories: null
-tags: null
+tweet: https://twitter.com/zachleat/status/865212928571707392
 ---
 
 I was experimenting with animating a planet for the [new NEJSCONF web site](https://2017.nejsconf.com/) *(early bird tickets now available)* and stumbled upon this amazingly detailed [Codepen of our Solar System](https://codepen.io/juliangarnier/pen/idhuG). Fortunately, it did exactly what I wanted—so I set out to parse the CSS secrets (nay, Tricks) within. While the code didn’t make it in to the final site, I thought I’d publish a pared down version of the demo in case someone else might find the simplified CSS useful.
@@ -34,9 +33,4 @@ This demo uses [CSS variables](http://caniuse.com/#feat=css-variables) because i
 
 *Update: sorry for the framerate of those videos. I’m using [Kap](https://getkap.co/) and I’ve bumped up the default FPS for next time.*
 
-<div class="retweettoshare">
-	<h3 class="retweettoshare_title">Retweet to share this post</h3>
-	<div class="retweettoshare_widget">
-		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">👀 Quick Demo: Animating on an Oval Path <a href="https://t.co/fd74SOncqN">https://t.co/fd74SOncqN</a><a href="https://t.co/KKtbjSszg2">https://t.co/KKtbjSszg2</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/865212928571707392">May 18, 2017</a></blockquote>
-	</div>
-</div>
+

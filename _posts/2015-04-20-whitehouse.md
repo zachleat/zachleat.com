@@ -62,12 +62,12 @@ Holy shit.
 <a href="/web/img/posts/whmeetup/schedule.jpg">Holy shit—my name is on the schedule.</a>
 
 <figure>
-	<img class="primary" src="/web/img/posts/whmeetup/room.jpg" alt="">
+	<img src="/web/img/posts/whmeetup/room.jpg" alt="">
 	<figcaption>Holy shit—I’m in the room.</figcaption>
 </figure>
 
 <figure>
-	<img class="primary" src="/web/img/posts/whmeetup/onstage.jpg" alt="">
+	<img src="/web/img/posts/whmeetup/onstage.jpg" alt="">
 	<figcaption>Holy shit—I’m on the stage.</figcaption>
 </figure>
 

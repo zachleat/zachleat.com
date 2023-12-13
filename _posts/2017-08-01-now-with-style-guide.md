@@ -1,5 +1,6 @@
 ---
 title: I made a style guide for my personal web site and you should too.
+tweet: https://twitter.com/zachleat/status/892719561191153664
 ---
 
 As my own little corner of the web uncermoniously turned _ten years old_ this year, it’s really starting to feel more like a garden than a piece of software. I certainly enjoy tending to it. I can plant what I like and with proper care it can grow into something useful.
@@ -26,10 +27,3 @@ Software will always require changes, but speaking from someone who has maintain
 ---
 
 <p class="caption">(Read—but don’t judge—my <a href="/web/checklist-for-web-applications/">first post from February 2007</a>.)</p>
-
-<div class="retweettoshare">
-	<h3 class="retweettoshare_title">Retweet to share this post</h3>
-	<div class="retweettoshare_widget">
-		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ I made a style guide for my personal web site and you should too. <a href="https://t.co/RJqcBPFYUx">https://t.co/RJqcBPFYUx</a><br><br>Style guide: <a href="https://t.co/kh7gR5CA8X">https://t.co/kh7gR5CA8X</a></p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/892719561191153664">August 2, 2017</a></blockquote>
-	</div>
-</div>

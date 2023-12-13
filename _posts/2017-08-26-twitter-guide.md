@@ -11,6 +11,7 @@ metadata:
 stylesheetsDist:
   - keynote-extractor.css
 templateclass: wider
+tweet: https://twitter.com/zachleat/status/902533984202235904
 ---
 
 <!-- TO ADD: disable RTs on a specific user -->
@@ -914,9 +915,3 @@ templateclass: wider
 
 <p class="credits">Created with <a href="https://www.keynote-extractor.com">Keynote Extractor</a>.</p>
 
-<div class="retweettoshare">
-	<h3 class="retweettoshare_title">Retweet to share this post</h3>
-	<div class="retweettoshare_widget">
-		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">★ The Ten Twitter Commandments <a href="https://t.co/f1ApEuZamm">https://t.co/f1ApEuZamm</a><br><br>A talk full of advanced tips for using Twitter.</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/902533984202235904">August 29, 2017</a></blockquote>
-	</div>
-</div>

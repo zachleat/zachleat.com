@@ -4,6 +4,7 @@
 	"description": "The website of @zachleat",
 	"dependencies": {
 		"@11ty/is-land": "^4.0.0",
+		"@tweetback/canonical": "^2.0.37",
 		"@zachleat/browser-window": "^1.0.12",
 		"@zachleat/details-utils": "^2.0.2",
 		"@zachleat/filter-container": "^4.0.0",
