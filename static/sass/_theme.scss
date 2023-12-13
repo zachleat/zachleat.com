@@ -1687,6 +1687,7 @@ a[href][data-icon]:has(> *) > * {
 	text-decoration: underline;
 }
 [data-icon]:before {
+	--icon-shadow-color: #62a255;
 	content: attr(data-icon);
 	display: inline-flex;
 	font-size: 0.75em; /* 12px /16 */
@@ -1699,9 +1700,10 @@ a[href][data-icon]:has(> *) > * {
 	margin-right: .4em;
 	background: linear-gradient(#dfdfdf, #b6d9ab);
 	border-radius: 50%;
+	text-shadow: 1px 1px var(--icon-shadow-color), -1px -1px var(--icon-shadow-color), -1px 1px var(--icon-shadow-color), 1px -1px var(--icon-shadow-color);
 }
-[data-icon][data-icon-theme="dark"]:before {
-	background: linear-gradient(#000, #48714c);
+[data-icon][data-icon-skip-shadow]:before {
+	text-shadow: none;
 }
 
 .favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):after {

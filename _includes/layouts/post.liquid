@@ -80,7 +80,7 @@ tmpl: page
 <article class="content-grid-sibling">
 	<p class="post-metadata">
 		{%- if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
-		<em>Tagged:
+		<em data-icon="🏷️" data-icon-shadow>Tags:
 			{% if tags contains "eleventy" %}<a href="/web/?category=eleventy">Eleventy</a>{% endif %}
 			{% if tags contains "project" %}<a href="/web/?category=project">Project</a>{% endif %}
 			{% if tags contains "speaking" %}<a href="/web/?category=speaking">Speaking</a>{% endif %}
@@ -91,8 +91,8 @@ tmpl: page
 	{%- assign postRank = analytics[page.url].rankPerDaysPosted %}
 	{%- assign postRankAllTime = analytics[page.url].rankTotal %}
 	{%- if postRank and postRank <= 20 or postRankAllTime and postRankAllTime <= 20 %}
-		<em><a href="/web/best-of/" data-icon="🔥">#{{ postRank }} Popular</a></em>
-		<em><a href="/web/best-of/total-views/" data-icon="☀️">#{{ postRankAllTime }}</a></em>
+		<em><a href="/web/best-of/" data-icon="🔥" data-icon-skip-shadow>#{{ postRank }} Popular</a></em>
+		<em><a href="/web/best-of/total-views/" data-icon="☀️" data-icon-skip-shadow>#{{ postRankAllTime }}</a></em>
 	{% endif %}
 	{%- if analytics[page.url].pageViews > 500 %}
 		<em data-icon="👀">{{ analytics[page.url].pageViews | renderNumber }} Views</em>
