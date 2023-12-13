@@ -524,6 +524,7 @@ blockquote strong {
 /* Headers */
 h1, h2, h3, .hed-h1 {
 	margin-top: 1.4em;
+	line-height: 1.4;
 }
 h1, h2, h3, .hed-h3, .hed-h1 {
 	font-family: Hex Franklin Tight, -apple-system, system-ui, LatoBold, sans-serif;
@@ -1005,19 +1006,19 @@ a[href]:hover .project_img {
 
 .sub {
 	margin-top: 0;
-	font-size: 0.7368421052632em; /* 14px /19 */
+	font-size: 0.8421052631579em; /* 16px /19 */
 	display: flex;
 	flex-wrap: wrap;
 	gap: .5em 1.5em;
 	line-height: 1.5;
-	min-height: 2.285714285714em; /* 32px /14 */
+	min-height: 2em; /* 32px /16 */
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.sub {
-		margin-bottom: 5.714285714286em; /* 80px /14 */
+		margin-bottom: 5em; /* 80px /16 */
 	}
 	.sub + .sub {
-		margin-top: -6.285714285714em; /* -88px /14 */
+		margin-top: -5.5em; /* -88px /16 */
 	}
 }
 .sub em:empty {
@@ -1114,7 +1115,6 @@ a[href]:hover .project_img {
 	word-break: keep-all;
 }
 .about p {
-	@include webfontItalic;
 	margin-top: 0;
 }
 .about ul:last-child {
@@ -1690,14 +1690,18 @@ a[href][data-icon]:has(> *) > * {
 	content: attr(data-icon);
 	display: inline-flex;
 	font-size: 0.75em; /* 12px /16 */
+	font-style: normal;
 	height: 1.75em; /* 21px /12 */
 	width: 1.75em; /* 21px /12 */
 	align-items: center;
 	justify-content: center;
 	vertical-align: text-bottom;
-	margin-right: .25em;
-	background: linear-gradient(#000, #48714c);
+	margin-right: .4em;
+	background: linear-gradient(#dfdfdf, #b6d9ab);
 	border-radius: 50%;
+}
+[data-icon][data-icon-theme="dark"]:before {
+	background: linear-gradient(#000, #48714c);
 }
 
 .favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):after {

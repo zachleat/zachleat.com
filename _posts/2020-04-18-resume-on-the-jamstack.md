@@ -8,7 +8,7 @@ This post was inspired by a few other résumé helpers I found floating around t
 * [How to not make a résumé in React by {% imgavatar "ericwbailey" %}Eric Bailey](https://ericwbailey.design/writing/how-to-not-make-a-resume-in-react.html)
 * [Eleventy Résumé Builder by {% imgavatar "mxbck" %}Max Böck](https://mxb.dev/blog/eleventy-resume-builder/)
 
-## Have a gander at the ol’ résumé
+## Have a gander at the ol’ resume
 
 * View [**Zach Leatherman’s Résumé**](/resume/)
 * Have a peek at the [Source Code](https://github.com/zachleat/zachleat.com/blob/b2b538994cd7696839900a22acde3e72daf9f5ab/resume/index.liquid)
@@ -45,6 +45,6 @@ GitHub star counts for projects I’ve worked on are injected from real data.
 
 Twitter follower counts are also retrieved and updated by the build.
 
-## Update your résumé for the last time (not really)
+## Update your resume for the last time (not really)
 
 Hopefully this has given you some inspiration to automate some of your résumé content so that you don’t have to keep it updated manually! As always, it’s important not to automate too much or it’ll appear robotic—but knowing what to automate and what to keep manual is part of the magic.

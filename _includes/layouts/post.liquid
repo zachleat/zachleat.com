@@ -81,21 +81,21 @@ tmpl: page
 	<p class="post-metadata">
 		{%- if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
 		<em>Tagged:
-{% if tags contains "eleventy" %}<a href="/web/?category=eleventy">Eleventy</a>{% endif %}
-{% if tags contains "project" %}<a href="/web/?category=project">Project</a>{% endif %}
-{% if tags contains "speaking" %}<a href="/web/?category=speaking">Speaking</a>{% endif %}
-{% if tags contains "web-components" %}<a href="/web/?category=web-components">Web Components</a>{% endif %}
-{% if tags contains "web-fonts" %}<a href="/web/?category=web-fonts">Web Fonts</a>{% endif %}
+			{% if tags contains "eleventy" %}<a href="/web/?category=eleventy">Eleventy</a>{% endif %}
+			{% if tags contains "project" %}<a href="/web/?category=project">Project</a>{% endif %}
+			{% if tags contains "speaking" %}<a href="/web/?category=speaking">Speaking</a>{% endif %}
+			{% if tags contains "web-components" %}<a href="/web/?category=web-components">Web Components</a>{% endif %}
+			{% if tags contains "web-fonts" %}<a href="/web/?category=web-fonts">Web Fonts</a>{% endif %}
 		</em>
 	{%- endif %}
 	{%- assign postRank = analytics[page.url].rankPerDaysPosted %}
 	{%- assign postRankAllTime = analytics[page.url].rankTotal %}
-	{% if postRank and postRank <= 20 or postRankAllTime and postRankAllTime <= 20 %}
-		<span><a href="/web/best-of/">#{{ postRank }} Popular 🔥</a></span>
-		<span><a href="/web/best-of/total-views/">#{{ postRankAllTime }} ☀️</a></span>
+	{%- if postRank and postRank <= 20 or postRankAllTime and postRankAllTime <= 20 %}
+		<em><a href="/web/best-of/" data-icon="🔥">#{{ postRank }} Popular</a></em>
+		<em><a href="/web/best-of/total-views/" data-icon="☀️">#{{ postRankAllTime }}</a></em>
 	{% endif %}
-	{%- if analytics[page.url].pageViews > 1000 %}
-		<em><code>{{ analytics[page.url].pageViews | renderNumber }}</code> Views</em>
+	{%- if analytics[page.url].pageViews > 200 %}
+		<em data-icon="👀">{{ analytics[page.url].pageViews | renderNumber }} Views</em>
 	{%- endif %}
 	</p>
 	{%- if posterImage.source %}

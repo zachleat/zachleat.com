@@ -1,3 +1,7 @@
+.token.deleted,
+.token.inserted {
+	line-height: 1.5;
+}
 .token.deleted {
   background-color: #712b2b;
 }
@@ -25,6 +29,7 @@ pre[class*="language-diff-"] {
 .token.inserted:not(.prefix),
 .token.deleted:not(.prefix) {
 	display: block;
+	min-width: min-content;
 }
 
 /*
