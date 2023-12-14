@@ -11,7 +11,7 @@ const {encode} = require("html-entities");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
+// const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 const siteData = require("./_data/site.json");
 
@@ -22,7 +22,9 @@ const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
 
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
+	const { EleventyRenderPlugin } = await import("@11ty/eleventy");
+
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
 	// More in .eleventyignore
