@@ -69,7 +69,7 @@
 }
 .resume-subnote {
 	white-space: nowrap;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 	font-size: 0.6842105263158em; /* 13px /19 */
 	color: #666;
 	font-family: system-ui, sans-serif;
