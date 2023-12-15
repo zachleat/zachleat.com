@@ -89,6 +89,7 @@ module.exports = async function(eleventyConfig) {
 			"node_modules/@zachleat/browser-window/browser-window.js": `static/browser-window.js`,
 			"node_modules/@zachleat/squirminal/squirminal.js": `static/squirminal.js`,
 			"node_modules/@zachleat/pagefind-search/pagefind-search.js": `static/pagefind-search.js`,
+			"node_modules/@zachleat/snow-fall/snow-fall.js": `static/snow-fall.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
