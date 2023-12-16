@@ -1,5 +1,3 @@
-const pkg = require("./package.json");
-
 const { DateTime } = require("luxon");
 const { URL } = require("url");
 const numeral = require("numeral");
@@ -11,10 +9,9 @@ const {encode} = require("html-entities");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
-// const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
+const pkg = require("./package.json");
 const siteData = require("./_data/site.json");
-
 const pluginImage = require("./_11ty/imagePlugin.js");
 const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
 const pluginSass = require("./_11ty/sassPlugin.js");
@@ -23,6 +20,7 @@ const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
 
 module.exports = async function(eleventyConfig) {
+	// TODO move this back out after this config file is ESM
 	const { EleventyRenderPlugin } = await import("@11ty/eleventy");
 
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
