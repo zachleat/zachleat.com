@@ -46,7 +46,9 @@ Here’s what the chart looks like using absolute values for satisfaction percen
 
 I am aware that Netlify has historically employed a Data Scientist with statistics and data analysis background to conduct this survey and prepare the report. This person departed the company months ago. The Data Scientist in question was very good at documenting and publishing the survey and report’s methodology and you can see [one such (2022) document](https://jamstack.org/survey/2022/community-survey-2022-methodology.pdf).
 
-This 2022 methodology document reported _how_ the data was collected (sources) and margins of error and included the following notable section at the end:
+The 2023 report did not include a methodology document.
+
+The 2022 methodology document reported _how_ the data was collected (sources) and margins of error and included the following notable section at the end:
 
 > Conclusions we cannot draw:
 >
