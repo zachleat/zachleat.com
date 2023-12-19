@@ -36,7 +36,7 @@ On page 32 (of 39) of the report buried _deep_ into the Appendices section the r
 
 {% imageInline "./web/img/posts/netlify-nextjs/sentiment.jpg" "Astro has the best positive sentiment too at 87%, Next is 78% and Eleventy is 74%" %}
 
-Now we learn that Next.js is ranked #3 (tied with SolidStart) for satisfaction and 11ty is ranked #6 (tied with Nuxt).
+Now we learn that Next.js is ranked #3 (tied with SolidStart and Remix) for satisfaction and 11ty is ranked #6 (tied with Nuxt).
 
 Here’s what the chart looks like using absolute values for satisfaction percentages and usage, painting a story that Netlify probably doesn’t want to share:
 
