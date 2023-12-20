@@ -610,6 +610,7 @@ h5 {
 
 .primary-title {
 	font-size: 2.3em;
+	font-size: var(--fluid-type, 2.3em);
 	line-height: 1;
 	font-variation-settings: "wdth" 96, "TYTE" -80, "NOTC" 1;
 	font-weight: 900;
@@ -625,8 +626,12 @@ h5 {
 }
 @media (min-width: $twoColLayoutMinWidth) {
 	.primary-title {
-		font-size: 3.5em;
-		font-size: clamp(2.95652173913em, calc(-0.61913043em + 8.39vw), 5.2173913em); /* 68px 120px /23 */
+		// https://utopia.fyi/clamp/calculator/?a=960,1600,68%E2%80%94120
+		--fluid-type: clamp(4.25rem, -0.625rem + 8.125vw, 7.5rem); /* 68px–120px /23 */
+	}
+	.primary-title-smalltitle {
+		// https://utopia.fyi/clamp/calculator/?a=960,1600,44%E2%80%9490
+		--fluid-type: clamp(2.75rem, -1.5625rem + 7.1875vw, 5.625rem); /* 44px—90px /23 */
 	}
 }
 
@@ -634,8 +639,12 @@ h5 {
 .primary-title {
 	@include unhyphenate;
 }
-.primary-title .long-word {
-	@include hyphenate;
+@media (max-width: $oneColLayoutMaxWidth) {
+	.primary-title-smalltitle {
+		-ms-word-break: break-all;
+		word-break: break-all;
+		word-break: break-word;
+	}
 }
 
 /* Code */
@@ -948,14 +957,6 @@ a[href]:hover .project_img {
 	max-width: none;
 	margin-bottom: 1em;
 }
-@supports (object-fit: cover) {
-	.project_img,
-	.project_video {
-		max-height: 13.4375rem;
-		object-fit: cover;
-		object-position: top;
-	}
-}
 .layout-list p + ol.posts {
 	margin-top: 3em;
 }
@@ -1101,12 +1102,15 @@ a[href]:hover .project_img {
 	padding: 1em 1em;
 	background-color: #f4f4f4;
 	border: 1px solid #ccc;
-	border-radius: 0 0 .35em .35em;
+	border-radius: .35em;
 	font-size: 0.875em; /* 14px /16 */
 	@include unhyphenate;
 }
+.tmpl-page .about {
+	border-radius: 0 0 .35em .35em;
+}
 @media (min-width: 40.625em) { /* 650px */
-	.about {
+	.tmpl-page .about {
 		margin-left: -1rem;
 		margin-right: -1rem;
 	}

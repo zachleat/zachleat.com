@@ -289,64 +289,8 @@ module.exports = async function(eleventyConfig) {
 		return urlObject.hostname;
 	});
 
-	eleventyConfig.addLiquidFilter("longWordWrap", str => {
-		if( !str || typeof str === "string" && str.indexOf("<") > -1 && str.indexOf(">") > str.indexOf("<")) {
-			return str;
-		}
-
-		let words = {
-			"domcontentloaded": true,
-			"getelementsbytagname": true
-		};
-
-		return str.split(" ").map(function(word) {
-			return word.split("—").map(function(word) {
-				return word.split("(").map(function(word) {
-					return word.split(")").map(function(word) {
-						return words[word.toLowerCase()] || word.length >= 11 ? `<span class="long-word">${word}</span>` : word;
-					}).join(")");
-				}).join("(");
-			}).join("—");
-		}).join(" ");
-	});
-
-	eleventyConfig.addLiquidFilter("orphanWrap", str => {
-		return str.split("—").map(function(str, index, dashSplit) {
-			// Uncomment this to prevent orphans only at the end of the string, not before every —
-			// if( index !== dashSplit.length - 1 ) {
-			// 	return str;
-			// }
-
-			let splitSpace = str.split(" ");
-			let after = "";
-			if( splitSpace.length > 1 ) {
-				if( splitSpace.length > 2 ) {
-					after += " ";
-				}
-
-				// TODO strip HTML from this?
-				let lastWord = splitSpace.pop();
-				let secondLastWord = splitSpace.pop();
-				// skip when last two words are super long 😭
-				if(`${secondLastWord} ${lastWord}`.length >= 15) {
-					after += `${secondLastWord} ${lastWord}`;
-				} else {
-					after += `<span class="prevent-orphan">${secondLastWord} ${lastWord}</span>`;
-				}
-			}
-
-			return splitSpace.join(" ") + after;
-		}).join("​—​");
-	});
-
 	eleventyConfig.addLiquidFilter("emoji", function(content) {
 		return `<span aria-hidden="true" class="emoji">${content}</span>`;
-	});
-
-	eleventyConfig.addLiquidFilter("wordcount", function(content) {
-		let words = content.split(" ").length;
-		let wordsLabel = "word" + (words !== 1 ? "s" : "");
-		return `${words} ${wordsLabel}`;
 	});
 
 	// Get the first `n` elements of a collection.
