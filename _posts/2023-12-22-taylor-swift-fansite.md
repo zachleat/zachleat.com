@@ -26,7 +26,7 @@ In the above video I walk through a [Taylor Swift lyrics fansite](https://fluent
 	* Using [`rosetta` for string transformation](https://www.npmjs.com/package/rosetta)
 * Custom redirects are not necessary! The HTML links _just work_.
 * For-free inter-language page-aware language chooser _(e.g. “Also available in…”)_
-* Translated header, footer, and banner (in a different repo via Site Mounting)
+* Translated header, footer, and banner (in a [different repo](https://github.com/CloudCannon/demo-marketing-components) via Site Mounting)
 * For-free [locale aware search from Pagefind](https://pagefind.app/docs/multilingual/)
 * Album art pulled from Spotify Open Graph images
 * Deep links to various streaming services
