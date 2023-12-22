@@ -1,5 +1,5 @@
 ---
-title: Building a multi-language Taylor Swift fan site with CloudCannon and Eleventy (Zach's Version)
+title: Building a multi-language Taylor Swift fan site with CloudCannon and Eleventy (10 Minute Version) (Zach's Version)
 tags:
   - speaking
   - video
