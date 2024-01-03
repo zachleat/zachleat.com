@@ -1,7 +1,7 @@
 ---
 title: 'Jamstack 101: Getting Started with Eleventy'
 eleventyComputed:
-  titleHtml: 'Jamstack 101: Getting Started with Eleventy, presented by{% imgavatar "agilitycms", "z-avatar-eq" %}Agility CMS'
+  titleHtml: 'Jamstack 101: Getting Started with Eleventy, presented by {% imgavatar "agilitycms", "z-avatar-eq" %}Agility CMS'
 categories:
   - presentations
 tags:

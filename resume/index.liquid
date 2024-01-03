@@ -55,9 +55,9 @@ scripts:
 				<ul class="resume-desc">
 					<li><a href="/web/?category=writing">{{ collections.writing | size | renderNumber }} posts</a> since February 2007. On my writing,
 						<ul>
-							<li><span class="resume-nbsp">{% imgavatar "sarah_edo", "z-avatar-first" %}Sarah</span> Drasner <a href="https://twitter.com/sarah_edo/status/1067122136412614656">said</a> she <em>“shaved full seconds off this big application […] by following some of Zach’s great materials […]”</em></li>
-							<li><span class="resume-nbsp">{% imgavatar "adactio", "z-avatar-first" %}Jeremy</span> Keith <a href="https://adactio.com/links/14311">twice</a> <a href="https://adactio.com/journal/14329">said</a> <em>“Always ask yourself What Would Zach Do?”</em></li>
-							<li><span class="resume-nbsp">{% imgavatar "paul_irish", "z-avatar-first" %}Paul</span> Irish <a href="https://twitter.com/paul_irish/status/295705697117691904">called me</a> <em>“damn smart”</em>—a debatable claim, to be sure.</li>
+							<li><span class="resume-nbsp">{% imgavatar "sarah_edo" %}Sarah</span> Drasner <a href="https://twitter.com/sarah_edo/status/1067122136412614656">said</a> she <em>“shaved full seconds off this big application […] by following some of Zach’s great materials […]”</em></li>
+							<li><span class="resume-nbsp">{% imgavatar "adactio" %}Jeremy</span> Keith <a href="https://adactio.com/links/14311">twice</a> <a href="https://adactio.com/journal/14329">said</a> <em>“Always ask yourself What Would Zach Do?”</em></li>
+							<li><span class="resume-nbsp">{% imgavatar "paul_irish" %}Paul</span> Irish <a href="https://twitter.com/paul_irish/status/295705697117691904">called me</a> <em>“damn smart”</em>—a debatable claim, to be sure.</li>
 						</ul>
 					</li>
 					<li>{{ totalAnalyticsPageViews | renderNumber }} lifetime pageviews and growing. <a href="/web/best-of/" class="resume-print-link">Read the most popular ones</a></li>
@@ -81,13 +81,13 @@ scripts:
 			<li>
 				<strong>Open Source</strong>
 				<ul class="resume-desc">
-					<li><a href="https://www.11ty.dev/">{% imgavatar "eleven_ty", "z-avatar-first" %}Eleventy</a> <span class="resume-subnote">(☆ {{ stargazers.eleventy | renderNumber }})</span> <span class="p-skill">creator and maintainer</span>.
+					<li><a href="https://www.11ty.dev/">{% imgavatar "eleven_ty" %}Eleventy</a> <span class="resume-subnote">(☆ {{ stargazers.eleventy | renderNumber }})</span> <span class="p-skill">creator and maintainer</span>.
 						<ul>
 							<li>Used in production by Google, V8, W3C, Cern, MIT, Stanford, WebPageTest, CSS-Tricks, Netlify, Red Hat, <a href="https://www.11ty.dev/#logos">and others</a>.</li>
 							<li>Shipped <a href="https://www.11ty.dev/blog/stability/">56 versions</a>, with {{ eleventyNpmDownloads.downloads | renderNumber }} downloads (npm), in use by <a href="https://github.com/11ty/eleventy/network/dependents">65<abbr title="thousand">K</abbr>+ repositories (GitHub)</a>.</li>
 							<li>Three-time winner of the Google Open Source Peer Bonus Award in <a href="https://opensource.googleblog.com/2018/03/congratulating-open-source-peer-bonus-winners.html" class="dtstart">2018</a>, <a href="https://opensource.googleblog.com/2019/04/google-open-source-peer-bonus-winners.html" class="dtstart">2019</a>, and <a href="https://opensource.googleblog.com/2022/03/Announcing-First-Group-of-Google-Open-Source-Peer-Bonus-Winners-in-2022.html">2022</a> and <a href="https://www.producthunt.com/products/eleventy">#1 Product of the Day</a> on Product Hunt.</li>
-							<li><span class="resume-nbsp">{% imgavatar "addyosmani", "z-avatar-first" %}Addy</span> Osmani called it <em>“absolutely wonderful.”</em></li>
-							<li><span class="resume-nbsp">{% imgavatar "chriscoyier", "z-avatar-first" %}Chris</span> Coyier said it was <em>“almost fascinatingly simple.”</em></li>
+							<li><span class="resume-nbsp">{% imgavatar "addyosmani" %}Addy</span> Osmani called it <em>“absolutely wonderful.”</em></li>
+							<li><span class="resume-nbsp">{% imgavatar "chriscoyier" %}Chris</span> Coyier said it was <em>“almost fascinatingly simple.”</em></li>
 							<li>Read <a href="https://www.11ty.dev/docs/testimonials/" class="resume-print-link resume-print-link-ext" data-print-href="11ty.dev/docs/testimonials/">more Eleventy testimonials from <span class="resume-nbsp">{% imgavatar "mathias" %}Mathias</span> Bynens, <span class="resume-nbsp">{% imgavatar "MinaMarkham" %}Mina</span> Markham, and others</a>.</li>
 						</ul>
 					</li>
@@ -105,8 +105,8 @@ scripts:
 				<strong>Developer Advocate</strong> for <a href="https://cloudcannon.com/">{% indieAvatar "https://cloudcannon.com/" %}CloudCannon</a>
 				<address class="resume-location h-adr">
 					Remote to
-					<span class="p-locality">Dunedin</span>,
-					<abbr class="p-region" title="New Zealand">NZ</abbr>
+					<span class="p-locality">Dunedin</span>
+					<abbr class="p-country-name" title="New Zealand">NZ</abbr>
 				</address>
 				<ul class="resume-desc">
 					<li class="resume-date">August 2023 to Present</li>
@@ -119,10 +119,11 @@ scripts:
 					Remote to
 					<span class="p-locality">San Francisco</span>,
 					<abbr class="p-region" title="California">CA</abbr>
+					<abbr class="p-country-name" title="United States">USA</abbr>
 				</address>
 				<ul class="resume-desc">
 					<li class="resume-date">February 2022 to July 2023</li>
-					<li>Full time open source on <a href="https://www.11ty.dev/">{% imgavatar "eleven_ty", "z-avatar-first" %}Eleventy</a> <em>(read more above)</em></li>
+					<li>Full time open source on <a href="https://www.11ty.dev/">{% imgavatar "eleven_ty" %}Eleventy</a> <em>(read more above)</em></li>
 				</ul>
 			</li>
 
@@ -132,6 +133,7 @@ scripts:
 					Remote to
 					<span class="p-locality">San Francisco</span>,
 					<abbr class="p-region" title="California">CA</abbr>
+					<abbr class="p-country-name" title="United States">USA</abbr>
 				</address>
 				<ul class="resume-desc">
 					<li class="resume-date">January 2020 to February 2022</li>
@@ -148,6 +150,7 @@ scripts:
 					Remote to
 					<span class="p-locality">Boston</span>,
 					<abbr class="p-region" title="Massachusetts">MA</abbr>
+					<abbr class="p-country-name" title="United States">USA</abbr>
 				</address>
 				<ul class="resume-desc">
 					<li class="resume-date">June 2012 to January 2020</li>
@@ -173,6 +176,7 @@ scripts:
 				<address class="resume-location h-adr">
 					<span class="p-locality">Omaha</span>,
 					<abbr class="p-region" title="Nebraska">NE</abbr>
+					<abbr class="p-country-name" title="United States">USA</abbr>
 				</address>
 				<ul class="resume-desc">
 					<li class="resume-date">June 2011 to May 2012</li>
@@ -196,6 +200,7 @@ scripts:
 				<address class="resume-location h-adr">
 					<span class="p-locality">Omaha</span>,
 					<abbr class="p-region" title="Nebraska">NE</abbr>
+					<abbr class="p-country-name" title="United States">USA</abbr>
 				</address>
 				<ul class="resume-desc">
 					<li class="resume-date">July 2008 to May 2011</li>
@@ -219,6 +224,7 @@ scripts:
 				<address class="resume-location h-adr">
 					<span class="p-locality">Omaha</span>,
 					<abbr class="p-region" title="Nebraska">NE</abbr>
+					<abbr class="p-country-name" title="United States">USA</abbr>
 				</address>
 				<ul class="resume-desc">
 					<li class="resume-date">June 2006 to July 2008</li>
@@ -238,6 +244,7 @@ scripts:
 				<address class="resume-location h-adr">
 					<span class="p-locality">Lincoln</span>,
 					<abbr class="p-region" title="Nebraska">NE</abbr>
+					<abbr class="p-country-name" title="United States">USA</abbr>
 				</address>
 				<ul class="resume-desc">
 					<li class="resume-date">August 2001 to May 2006</li>

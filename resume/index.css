@@ -93,7 +93,7 @@
 }
 ul.resume-desc {
 	margin: .4em 0;
-	font-size: 90%;
+	font-size: 0.8421052631579em; /* 16px /19 */
 }
 .resume-desc li {
 	padding: 0;
@@ -125,8 +125,8 @@ ul.resume-desc {
 
 /* Locations */
 .resume-location {
-	float: right;
-	margin-left: 0.5em;
+	display: block;
+	font-size: 0.7894736842105em; /* 15px /19 */
 	font-family: Lato, sans-serif;
 	font-style: italic;
 }
@@ -139,7 +139,7 @@ ul.resume-desc {
 
 /* Footer */
 .resume-invitation {
-	font-size: 80%;
+	font-size: 0.8421052631579em; /* 16px /19 */
 	line-height: 165%;
 	border-top: 1px solid #ddd;
 	padding-top: 1em;
