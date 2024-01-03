@@ -2,6 +2,7 @@
 title: 'In Case You Missed It: 2013'
 permalink: /web/icymi/2013/
 ---
+{% include "icymi.html" %}
 
 Rather than a bunch of individual “In Case You Missed It” tweets, I thought I’d just do one big yearly semi-comprehensive recap of the web community things that I contributed to this year. Enjoy!
 
