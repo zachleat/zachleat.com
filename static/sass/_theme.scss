@@ -1272,6 +1272,7 @@ a[href].tag-inline:not(.tag-borderless),
 		}
 		.tags .tag.tag-pinned-rail {
 			display: block;
+			text-wrap: balance;
 			width: calc(100% + 1rem);
 			font-weight: 600;
 			border-radius: .5em;

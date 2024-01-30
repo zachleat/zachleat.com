@@ -14,6 +14,8 @@ const pkg = require("./package.json");
 const siteData = require("./_data/site.json");
 const pluginImage = require("./_11ty/imagePlugin.js");
 const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
+const opengraphImageHtml = pluginImage.opengraphImageHtml;
+
 const pluginSass = require("./_11ty/sassPlugin.js");
 const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
@@ -331,9 +333,16 @@ module.exports = async function(eleventyConfig) {
 	/* END FILTERS */
 
 	/* SHORTCODES */
-	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url, skipIcon = false) {
+	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url, skipIcon = false, mode = "screenshot") {
+		let imageHtml = "";
+		if(mode === "screenshot") {
+			imageHtml = screenshotImageHtmlFullUrl(url);
+		} else if(mode === "opengraph") {
+			imageHtml = opengraphImageHtml(url);
+		}
+
 		return `<script type="module" src="/static/browser-window.js"></script>
-<div><browser-window mode="dark"${skipIcon ? "" : " icon"} url="${url}" shadow flush><a href="${url}" class="favicon-optout">${screenshotImageHtmlFullUrl(url)}</a></browser-window></div>`;
+<div><browser-window mode="dark"${skipIcon ? "" : " icon"} url="${url}" shadow flush><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
 	});
 
 	/* COLLECTIONS */

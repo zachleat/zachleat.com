@@ -1,6 +1,5 @@
 ---
 title: "The Tension and Future of Jamstack"
-pinned: true
 seo:
   openGraphBackgroundImage: /og/sources/futurejamstack.webp
   openGraphAlt: "Starry background from thefutureofjamstack.org"

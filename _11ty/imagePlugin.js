@@ -90,7 +90,7 @@ function getFullUrlFromPath(path) {
 	return domain + path;
 }
 
-function opengraphImageHtml(targetUrl, alt = "") {
+function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 	let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl)}/`;
 
 	let options = {
@@ -117,8 +117,12 @@ function opengraphImageHtml(targetUrl, alt = "") {
 		loading: "lazy",
 		decoding: "async",
 		sizes: "(min-width: 64em) 50vw, 100vw",
-		class: "project_img",
+		class: cls || "",
 	});
+}
+
+function opengraphImageHtml(targetUrl, alt = "") {
+	return opengraphImageHtmlWithClass(targetUrl, alt, "project_img");
 }
 
 function getImageServiceHtml(targetUrl, width, height, outputWidths = [], alt="") {
@@ -224,4 +228,7 @@ module.exports = function(eleventyConfig) {
 	});
 };
 
+module.exports.imageShortcode = imageShortcode;
 module.exports.screenshotImageHtmlFullUrl = screenshotImageHtmlFullUrl;
+module.exports.opengraphImageHtml = opengraphImageHtmlWithClass;
+

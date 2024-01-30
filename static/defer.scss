@@ -30,6 +30,11 @@ browser-window[shadow][mode="dark"] {
 	--bw-border: none;
 }
 browser-window > a {
-	display: flex;
+	display: block;
+}
+browser-window img {
+	display: block;
+	width: 100%;
+	max-width: none;
 }
 

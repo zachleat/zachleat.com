@@ -54,7 +54,7 @@ tmpl: page
 				<em>Originally posted at: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
 				{%- endif %}
 			</p>
-			<p>{%- originalPostEmbed external_url %}</p>
+			<p>{%- originalPostEmbed external_url, external_url_skipicon, external_url_screenshotmode %}</p>
 			{%- endunless %}
 			{%- endif %}
 		</article>
