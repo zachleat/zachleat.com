@@ -11,10 +11,7 @@ metadata:
 #  youtubeId: 40yPK3EKE60
 #medialength: 21 min
 slides:
-  imageHost: https://www.zachleat.com/presentations/eleventy-v2/
-  count: 39
-  originalImageDimensions: [1920, 1080]
-  outputImageWidths: [800, 1200]
+  prefix: "/presentations/eleventy-v2/image-export-low."
   alt:
     1: Eleventy v2
     2: "Dependencies: v1.0.2 ×311, v2.0.0 ×211"
@@ -62,18 +59,5 @@ slides:
 
 ## Slides
 
-<div class="carousel carousel-16-9">
-{%- assign slideCount = slides.count %}
-{%- assign slideImageWidth = slides.originalImageDimensions[0] %}
-{%- assign slideImageHeight = slides.originalImageDimensions[1] %}
-{%- for i in (1..slideCount) %}
-  {%- capture productionUrl %}{{ slides.imageHost }}image-export-low.{{ i | leftpad: 3 }}.jpeg{% endcapture %}
-  {%- capture alt %}{% if slides.alt[i] %}{{ slides.alt[i] }}{% else %}Slide {{ i }}{% endif %}{% endcapture %}
-  {%- if slides.links[i] %}<a href="{{ slides.links[i] }}">{% endif %}
-  <img src="/presentations/eleventy-v2/image-export-low.{{ i | leftpad: 3 }}.jpeg" alt="{{ alt }}" width="{{ slideImageWidth }}" height="{{ slideImageHeight }}" loading="lazy" decoding="async">
-  {%- if slides.links[i] %}</a>{% endif %}
-{%- endfor %}
-</div>
-
-Scroll for slide content →
+{% slides slides.prefix, "1-39", slides.alt %}
 

@@ -12,10 +12,7 @@ metadata:
   youtubeId: 40yPK3EKE60
 medialength: 21 min
 slides:
-  imageHost: https://www.zachleat.com/presentations/rendering-modes/
-  count: 39
-  originalImageDimensions: [1920, 1080]
-  outputImageWidths: [800, 1200]
+  dir: "/presentations/rendering-modes/rendering-modes."
   links:
     13: https://demo-eleventy-serverless.netlify.app/
     14: https://objectfit-focalpoint.netlify.app/
@@ -68,18 +65,6 @@ _This was a talk given at the [Eleventy Meetup (11tymeetup.dev)](https://11tymee
 
 ## Slides
 
-<div class="carousel carousel-16-9">
-{%- assign slideCount = slides.count %}
-{%- assign slideImageWidth = slides.originalImageDimensions[0] %}
-{%- assign slideImageHeight = slides.originalImageDimensions[1] %}
-{%- for i in (1..slideCount) %}
-  {%- capture productionUrl %}{{ slides.imageHost }}rendering-modes.{{ i | leftpad: 3 }}.jpeg{% endcapture %}
-  {%- capture alt %}{% if slides.alt[i] %}{{ slides.alt[i] }}{% else %}Slide {{ i }}{% endif %}{% endcapture %}
-  {%- if slides.links[i] %}<a href="{{ slides.links[i] }}">{% endif %}
-  {%- eleventyImageServiceHtml productionUrl, slideImageWidth, slideImageHeight, slides.outputImageWidths, alt %}
-  {%- if slides.links[i] %}</a>{% endif %}
-{%- endfor %}
-</div>
+{% slides slides.dir, "1-39", slides.alt, slides.links %}
 
-Scroll for slide content →
 

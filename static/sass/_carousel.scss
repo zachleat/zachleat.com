@@ -26,3 +26,53 @@
     border-radius: .5em .5em 0 0;
   }
 }
+
+/* Carouscroll component CSS to reduce CLS */
+carou-scroll {
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+carou-scroll > * {
+	display: block;
+	min-width: 100%;
+	aspect-ratio: 16/9;
+}
+/* App styles */
+.carouscroll {
+	border: 2px solid #666;
+	border-bottom: none;
+	border-radius: .5rem .5rem 0 0;
+}
+.carouscroll-meta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #eee;
+	border: 2px solid #666;
+	border-top: none;
+	border-radius: 0 0 .5rem .5rem;
+	font-size: .75em;
+}
+[data-carousel-previous] {
+	border-bottom-left-radius: .4rem;
+}
+[data-carousel-next] {
+	border-bottom-right-radius: .4rem;
+}
+[data-carousel-previous],
+[data-carousel-next] {
+	padding: .25em .5em;
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	font: inherit;
+}
+[data-carousel-previous][disabled],
+[data-carousel-next][disabled] {
+	pointer-events: none;
+	opacity: .5;
+}
+:is([data-carousel-previous], [data-carousel-next]):is(:hover, :focus) {
+	background-color: rgba(0,0,0,.08);
+}

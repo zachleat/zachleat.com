@@ -1,3 +1,5 @@
+const fs = require("node:fs");
+const path = require("node:path");
 const { DateTime } = require("luxon");
 const { URL } = require("url");
 const numeral = require("numeral");
@@ -20,6 +22,8 @@ const pluginSass = require("./_11ty/sassPlugin.js");
 const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
+
+const { imageShortcode } = pluginImage;
 
 module.exports = async function(eleventyConfig) {
 	// TODO move this back out after this config file is ESM
@@ -90,6 +94,7 @@ module.exports = async function(eleventyConfig) {
 			"node_modules/@zachleat/squirminal/squirminal.js": `static/squirminal.js`,
 			"node_modules/@zachleat/pagefind-search/pagefind-search.js": `static/pagefind-search.js`,
 			"node_modules/@zachleat/snow-fall/snow-fall.js": `static/snow-fall.js`,
+			"node_modules/@zachleat/carouscroll/carouscroll.js": `static/carouscroll.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
@@ -130,10 +135,11 @@ module.exports = async function(eleventyConfig) {
 		return `https://web.archive.org/web/20230000000000*/${url}`;
 	});
 
-	eleventyConfig.addFilter("leftpad", (str, length = 3) => {
+	function leftpad(str, length = 3) {
 		let padding = Array.from({length}).map(t => "0").join("");
 		return (padding + str).substring((""+str).length);
-	});
+	}
+	eleventyConfig.addFilter("leftpad", leftpad);
 
 	eleventyConfig.addFilter("truncate", (str, len = 280) => { // tweet sized default
 		let suffix = str.length > len ? `… <span class="tag-inline">Truncated</span>` : "";
@@ -527,6 +533,47 @@ module.exports = async function(eleventyConfig) {
 
 	eleventyConfig.addLiquidFilter("removeNewlines", function(str) {
 		return str.replace(/\n/g, "");
+	});
+
+	eleventyConfig.addShortcode("slides", async function (prefix, indeces, alts, links) {
+		const {nanoid} = await import("nanoid");
+
+		let [indexStart, indexEnd] = indeces.split("-");
+		indexStart = parseInt(indexStart, 10);
+		indexEnd = parseInt(indexEnd, 10);
+		let id = `carouscroll-id-${nanoid(4)}`;
+
+		let html = [];
+		html.push(`<div><is-land on:idle on:visible>`);
+		html.push(`<template data-island><script type="module" src="/static/carouscroll.js"></script></template>`);
+		html.push(`<carou-scroll tabindex="0" id="${id}" class="carouscroll">`);
+
+		for(let j=indexStart, k=indexEnd; j <= k; j++) {
+
+			let slidePath = path.join(".", `${prefix}${leftpad(j, 3)}.jpeg`);
+			if(fs.existsSync(slidePath)) {
+				let alt = alts[j] ? alts[j] : `Slide ${j}`;
+				html.push(await imageShortcode({
+					src: slidePath,
+					alt
+				}, {
+					widths: [600, 1000],
+				}, true));
+
+				// Fallback for perf if non_production?
+				// html.push(`<img src="${slideUrl}" alt="${alt}" width="1920" height="1080" loading="lazy" decoding="async">`)
+			}
+		}
+
+		html.push(`</carou-scroll>`);
+		html.push(`<div class="carouscroll-meta">`)
+		html.push(`<button type="button" disabled data-carousel-previous="${id}">&lt; Previous</button>`);
+		html.push(`<output data-carousel-output="${id}"></output>`);
+		html.push(`<button type="button" disabled data-carousel-next="${id}">Next &gt;</button>`);
+		html.push(`</div>`)
+		html.push(`</is-land></div>`);
+
+		return html.join("");
 	});
 
 	return {
