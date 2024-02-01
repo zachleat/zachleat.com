@@ -44,6 +44,10 @@ carou-scroll > * {
 	border-bottom: none;
 	border-radius: .5rem .5rem 0 0;
 }
+.carouscroll-single {
+	overflow: hidden;
+	border-radius: .5rem;
+}
 .carouscroll-meta {
 	display: flex;
 	align-items: center;

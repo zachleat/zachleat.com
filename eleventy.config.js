@@ -535,23 +535,27 @@ module.exports = async function(eleventyConfig) {
 		return str.replace(/\n/g, "");
 	});
 
+	// TODO this could be a webc component
 	eleventyConfig.addShortcode("slides", async function (prefix, indeces, alts, links) {
 		const {nanoid} = await import("nanoid");
 
 		let [indexStart, indexEnd] = indeces.split("-");
 		indexStart = parseInt(indexStart, 10);
-		indexEnd = parseInt(indexEnd, 10);
+		indexEnd = parseInt(indexEnd, 10) || indexStart; // "33" becomes "33-33"
+		let isSingleSlide = indexStart === indexEnd;
 		let id = `carouscroll-id-${nanoid(4)}`;
 
 		let html = [];
 		html.push(`<div><is-land on:idle on:visible>`);
 		html.push(`<template data-island><script type="module" src="/static/carouscroll.js"></script></template>`);
-		html.push(`<carou-scroll tabindex="0" id="${id}" class="carouscroll">`);
+		html.push(`<carou-scroll tabindex="0" id="${id}" class="carouscroll${isSingleSlide ? " carouscroll-single" : ""}"${isSingleSlide ? " disabled" : ""}>`);
 
 		for(let j=indexStart, k=indexEnd; j <= k; j++) {
-
 			let slidePath = path.join(".", `${prefix}${leftpad(j, 3)}.jpeg`);
 			if(fs.existsSync(slidePath)) {
+				if(links && links[j]) {
+					html.push(`<a href="${links[j]}">`)
+				}
 				let alt = alts[j] ? alts[j] : `Slide ${j}`;
 				html.push(await imageShortcode({
 					src: slidePath,
@@ -562,15 +566,20 @@ module.exports = async function(eleventyConfig) {
 
 				// Fallback for perf if non_production?
 				// html.push(`<img src="${slideUrl}" alt="${alt}" width="1920" height="1080" loading="lazy" decoding="async">`)
+				if(links && links[j]) {
+					html.push(`</a>`)
+				}
 			}
 		}
 
 		html.push(`</carou-scroll>`);
-		html.push(`<div class="carouscroll-meta">`)
-		html.push(`<button type="button" disabled data-carousel-previous="${id}">&lt; Previous</button>`);
-		html.push(`<output data-carousel-output="${id}"></output>`);
-		html.push(`<button type="button" disabled data-carousel-next="${id}">Next &gt;</button>`);
-		html.push(`</div>`)
+		if(!isSingleSlide) {
+			html.push(`<div class="carouscroll-meta">`)
+			html.push(`<button type="button" disabled data-carousel-previous="${id}">&lt; Previous</button>`);
+			html.push(`<output data-carousel-output="${id}"></output>`);
+			html.push(`<button type="button" disabled data-carousel-next="${id}">Next &gt;</button>`);
+			html.push(`</div>`)
+		}
 		html.push(`</is-land></div>`);
 
 		return html.join("");
