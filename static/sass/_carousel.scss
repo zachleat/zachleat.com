@@ -44,10 +44,7 @@ carou-scroll > * {
 	border-bottom: none;
 	border-radius: .5rem .5rem 0 0;
 }
-.carouscroll-single {
-	overflow: hidden;
-	border-radius: .5rem;
-}
+/* Buttons */
 .carouscroll-meta {
 	display: flex;
 	align-items: center;
@@ -79,4 +76,13 @@ carou-scroll > * {
 }
 :is([data-carousel-previous], [data-carousel-next]):is(:hover, :focus) {
 	background-color: rgba(0,0,0,.08);
+}
+
+/* Single page */
+.carouscroll-single {
+	overflow: hidden;
+	border-radius: .5rem;
+}
+.carouscroll-single img {
+	vertical-align: middle;
 }
