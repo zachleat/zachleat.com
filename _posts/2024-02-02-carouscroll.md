@@ -58,9 +58,9 @@ carou-scroll {
 	overflow-y: hidden;
 }
 carou-scroll > * {
-	display: block;
 	min-width: 100%;
-	aspect-ratio: 16/9; /* Customize this as needed */
+	 /* Customize this as needed */
+	aspect-ratio: 16/9;
 }
 </style>
 
@@ -77,7 +77,7 @@ carou-scroll > * {
 
 #### Add buttons (optional)
 
-For maximum styling flexibility, these buttons can be placed anywhere in the document and are tied by an `id` back to the parent scroller.
+For maximum flexibility, these buttons can be placed anywhere in the document and are tied by an `id` back to the parent scroller.
 
 Make sure you think about the before/after JavaScript experience here. This component will remove `disabled` for you but you can add additional styling via your own CSS: `carou-scroll:defined {}`.
 
@@ -90,7 +90,7 @@ Make sure you think about the before/after JavaScript experience here. This comp
 
 This will update (and accessibly announce) a current status element with e.g. `Slide 1 of 10` text.
 
-For maximum styling flexibility, this element can be placed anywhere in the document and is tied by an `id` back to the parent scroller.
+For maximum flexibility, this element can be placed anywhere in the document and is tied by an `id` back to the parent scroller.
 
 ```html
 <output data-carousel-output="my-scroller"></output>
