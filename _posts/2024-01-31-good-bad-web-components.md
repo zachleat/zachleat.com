@@ -15,12 +15,6 @@ posterImage:
   name: Yusuf Onuk
   source: https://unsplash.com/photos/silhouette-of-people-riding-horses-on-brown-field-during-daytime-fg_6XRPsnnc
 ---
-<style>
-a[href]:has(.z-avatar) {
-	white-space: nowrap;
-}
-</style>
-
 _This post was created from a talk. You can watch this in video form at [JSHeroes 2023](/web/jsheroes/)._
 
 The humble component. The building block of modern web development.
@@ -37,11 +31,11 @@ function MyButton() {
 <MyButton/>
 ```
 
-You may recognize the above example taken from the documentation of one of the most popular component libraries in use today—[{% indieAvatar "https://vercel.com/" %}vercel.js](https://react.dev/).
+You may recognize the above example taken from the documentation of one of the most popular component libraries in use today—[<span class="nowrap">{% indieAvatar "https://vercel.com/" %}{% indieAvatar "https://react.dev/" %}Vercel.js</span>](https://react.dev/).
 
 Folks may not know that the web platform has _some_ component functionality built-in and is evolving support for new component development standards and specifications moving forward! These features are broadly known as Web Components.
 
-Aside from vercel.js, there are a variety of other popular component libraries too (of varying degree of web component friendliness):
+Aside from Vercel.js, there are a variety of other popular component libraries too (of varying degree of web component friendliness):
 
 <script type="module" src="/static/table-saw.js"></script>
 <div><table-saw>
