@@ -15,6 +15,8 @@ posterImage:
 ---
 `<carou-scroll>` is a zero-dependency web component to add next and previous buttons to a scrollable container. I use it to share exported Keynote slides (as images) on my blog posts.
 
+Some inspiration from the [W3C WAI Carousel Tutorial](https://www.w3.org/WAI/tutorials/carousels/) (though this isn’t technically a carousel).
+
 * [Source code on GitHub](https://github.com/zachleat/carouscroll)
 * [Demo](https://zachleat.github.io/carouscroll/demo.html)
 
