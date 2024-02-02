@@ -44,6 +44,9 @@ carou-scroll > * {
 	border-bottom: none;
 	border-radius: .5rem .5rem 0 0;
 }
+.carouscroll img {
+	vertical-align: middle;
+}
 /* Buttons */
 .carouscroll-meta {
 	display: flex;
@@ -82,7 +85,4 @@ carou-scroll > * {
 .carouscroll-single {
 	overflow: hidden;
 	border-radius: .5rem;
-}
-.carouscroll-single img {
-	vertical-align: middle;
 }
