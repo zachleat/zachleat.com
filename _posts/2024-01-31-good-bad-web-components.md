@@ -196,7 +196,7 @@ As we evolve to our next level of web components, we move up to Declarative Shad
 
 This solves the clientside rendering dependency for Shadow DOM but at the expense of repetition in authoring markup! The ol’ switcheroo (in some ways) feels like a de-evolution back to the approach we discussed in Custom Elements!
 
-Uniquely, this approach does allow you to use scoped CSS (and `<slot>`) without a JavaScript dependency. Non-declarative (imperative/JavaScript) Shadow DOM offers scoped CSS too but repeats some of the mistakes made by CSS-in-JS approaches and introduces a runtime JavaScript dependency on styling.
+Uniquely, this approach does allow you to use [scoped CSS](/web/styling-web-components/) (and `<slot>`) without a JavaScript dependency. Non-declarative (imperative/JavaScript) Shadow DOM offers scoped CSS too but repeats some of the mistakes made by CSS-in-JS approaches and introduces a runtime JavaScript dependency on styling.
 
 ```html
 <my-counter>
