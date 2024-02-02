@@ -149,14 +149,14 @@ Web Components is an umbrella term that encompasses many web platform technologi
 
 {% slides slides.dir, "35-49", slides.alt %}
 
-Custom Elements allow you to attach a JavaScript `class` to any custom element you define on your page, to add behaviors and JavaScript-generated content 😱 to the respective element instances on the page. These are automatically initialized for you for the full lifecycle of the page (for both server-rendered, JavaScript-generated, or content injected via `fetch()`).
+Custom Elements allow you to attach a JavaScript `class` to any custom element you define on your page, to add behaviors and JavaScript-generated content to any element instances on the page. These are automatically initialized for you for the full lifecycle of the page (for server-rendered, JavaScript-generated, or content injected via `fetch()`).
 
-1. Custom elements must not be void elements (like `<img>` or `<meta>`), they must have a start and end tag.
+1. Custom elements cannot be void elements (like `<img>` or `<meta>`): they must have a start and end tag.
 2. Custom elements must have a dash in the tag name, so as to not conflict with future additions to the web platform.
 
 {% slides slides.dir, "61", slides.alt %}
 
-If you use populate these with your own server-rendered nested HTML (also known as the default slot/Light DOM/plain ’ol HTML) and use Custom Elements to for behavior-only additions (and not modify rendered DOM), you can even avoid layout shift!
+If you populate these with your own server-rendered nested HTML (also known as the default slot/Light DOM/plain ’ol HTML) and use Custom Elements to for behavior-only additions (and not modify rendered DOM), you can even avoid layout shift!
 
 Some folks have started referring to this approach as creating [HTML Web Components](/web/a-taxonomy-of-web-component-types/#html-web-components) (see post for examples).
 
@@ -182,9 +182,9 @@ When we want to author this (and have it server-render as the above):
 
 Shadow DOM is the next level of our web components evolution. It solves the developer experience problem with repetition in authoring markup at the expense of clientside rendering 😭.
 
-This trade-off introduces additional complexities around managing layout shift and the flash of unstyled content (FOUC). Typical approaches to solve these problems either put all of the JavaScript into the critical rendering path (👎🏻 no thank you) and/or hide the components until they’re defined via JavaScript (also 👎🏻 no thank you).
+This trade-off introduces additional complexities around managing layout shift and the flash of unstyled content (FOUC). Typical approaches to solve these problems either put all of the JavaScript into the critical rendering path (in the `<head>`, which I try to avoid for performance reasons) and/or hide the components until they’re defined via JavaScript (which is by definition a performance problem for critical content).
 
-One such approach to have control over pre-definition and post-definition styling is to use [`:defined`](https://developer.mozilla.org/en-US/docs/Web/CSS/:defined). It’s a _very useful_ tool for styling and progressive enhancement (occupying some of the same architectural vibes as the [`scripting` media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting)), but in Shadow DOM heavy component libraries it is often applied to hide components pre-definition (👎🏻 no thank you).
+One such approach to assert control over pre-definition and post-definition styling is the CSS pseudo-class [`:defined`](https://developer.mozilla.org/en-US/docs/Web/CSS/:defined). It’s a _very useful_ tool for styling and progressive enhancement (occupying some of the same architectural vibes as the [`scripting` media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting)), but in Shadow DOM heavy component libraries it is often applied to hide components while loading (👎🏻 no thank you).
 
 {% slides slides.dir, "86-92", slides.alt %}
 
@@ -192,11 +192,11 @@ One such approach to have control over pre-definition and post-definition stylin
 
 {% slides slides.dir, "94-108", slides.alt %}
 
-How the pendulum swings! As we evolve to our next level of web components, we’re adding Declarative Shadow DOM. This allows you to put your Shadow DOM template in nested markup inside of each element instance.
+As we evolve to our next level of web components, we move up to Declarative Shadow DOM (sometimes known as DSD). This allows you to put your Shadow DOM template in nested markup inside of each element instance and the browser will create a `shadowRoot` for you with the template contents (no JavaScript required).
 
-This solves the clientside rendering dependency for Shadow DOM but at the expense of repetition in authoring markup! The ol’ switcheroo feels like a de-evolution back to the approach we discussed in Custom Elements!
+This solves the clientside rendering dependency for Shadow DOM but at the expense of repetition in authoring markup! The ol’ switcheroo (in some ways) feels like a de-evolution back to the approach we discussed in Custom Elements!
 
-One unique benefit this approach does provide is that it allows you to use scoped CSS inside of the component without a JavaScript dependency. Non-declarative (imperative) JavaScript Shadow DOM offers scoped CSS too but for me this repeats some of the mistakes made by CSS-in-JS approaches and introduces a runtime JavaScript dependency on styling.
+Uniquely, this approach does allow you to use scoped CSS (and `<slot>`) without a JavaScript dependency. Non-declarative (imperative/JavaScript) Shadow DOM offers scoped CSS too but repeats some of the mistakes made by CSS-in-JS approaches and introduces a runtime JavaScript dependency on styling.
 
 ```html
 <my-counter>
@@ -215,7 +215,7 @@ We can see the tension between authoring repetition and server-side rendering, r
 
 ## Server-side Rendering
 
-If we could have a reusable Declarative Shadow DOM template that did not require nesting, that would be pretty ideal, right? _(Some discussion happening in [this WICG issue](https://github.com/WICG/webcomponents/issues/1009))_
+If we could have a reusable Declarative Shadow DOM template that did not require nesting, that would be ideal, right? _(Discussion on this topic is happening in [this WICG issue](https://github.com/WICG/webcomponents/issues/1009))_
 
 I would love something like this (though I acknowledge the likely issues with streaming here):
 
@@ -234,13 +234,13 @@ I would love something like this (though I acknowledge the likely issues with st
 <my-counter>3</my-counter>
 ```
 
-This is why folks claim that server-side rendering is yet to be a solved problem—because it has not yet been solved at the web platform level. I’d also wager that this is the biggest complaint about web components, too. Folks expect this to be solved because this is a problem that many component libraries have solved. However, I would warn that we’re holding these two disparate things to different expectations.
+This is why folks will claim that server-side rendering is yet to be a solved problem—it has not yet been solved at the web platform level. I’d also wager that this is the biggest remaining complaint about web components.
 
-Clientside component frameworks _can_ be compared to web component specifications and tools (though in fairness, some overlap exists). But if your component framework introduces an additional server rendering step or abstraction, it seems unfair to compare that to clientside-only web components.
+Folks expect this to be solved because this is a problem that many component libraries have solved. However, I would warn that we’re holding these two disparate things to different expectations.
 
-Server-rendered Svelte or React should not be compared to Custom Elements or Shadow DOM—these are apples and oranges. Client rendered Svelte and React—fine, sure—but not server-rendered versions of these.
+Clientside component frameworks _can_ and should be compared to web component specifications and tools. But if your component framework introduces an additional server rendering step or abstraction, it seems unfair to compare that to clientside-only web components.
 
-For me these criticisms suggest that we need an additional server-rendered abstraction for web components, too.
+Full stack server-rendered Svelte or React cannot and should not be compared to clientside web component specifications like Custom Elements or Shadow DOM—these are apples and oranges. The biggest thing I hear from these criticisms is that we need an additional server-rendered abstraction for web components, too.
 
 ## Framework Tension
 
@@ -248,7 +248,7 @@ For me these criticisms suggest that we need an additional server-rendered abstr
 
 JavaScript Frameworks and Web Components can work together—though some are more web component friendly than others.
 
-In some respects it feels like the web platform chased the early clientside rendered, single page application (SPA) architectural vibes of React, Ember, Angular, and others. The more nimble frameworks have pivoted away from those mistakes. The platform will always be a bit behind but can offer more long term performance and maintenance potential.
+In some respects it feels like the web platform chased the early clientside rendered, single page application (SPA) architectural vibes of React, Ember, Angular, and others. The more nimble frameworks have pivoted away from those mistakes. The platform will always be a bit behind those that live further down the stack (and importantly, informed by their work) but with the right amount of patience can offer improved performance and long-term maintenance potential.
 
 * If you want to go all-in on Web Components, have a look at these answers to the server-rendered web component question:
 	* [{% indieAvatar "https://lit.dev/" %}Lit](https://lit.dev/)
@@ -259,7 +259,7 @@ In some respects it feels like the web platform chased the early clientside rend
 
 ## A WebC Example
 
-I built [WebC](https://www.11ty.dev/docs/languages/webc/) so I guess I can now pivot this blog post to show you a small example of the rendered output you get when using it.
+I built [WebC](https://www.11ty.dev/docs/languages/webc/) so I guess I can now pivot this post to show you a small example of the rendered output you get when using it.
 
 Consider a content template file `index.webc`:
 
