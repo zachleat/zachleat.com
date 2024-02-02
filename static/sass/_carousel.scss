@@ -28,21 +28,18 @@
 }
 
 /* Carouscroll component CSS to reduce CLS */
-carou-scroll {
+.carouscroll {
 	display: flex;
 	overflow-x: scroll;
 	overflow-y: hidden;
-}
-carou-scroll > * {
-	display: block;
-	min-width: 100%;
-	aspect-ratio: 16/9;
-}
-/* App styles */
-.carouscroll {
 	border: 2px solid #666;
 	border-bottom: none;
 	border-radius: .5rem .5rem 0 0;
+}
+.carouscroll > * {
+	display: block;
+	min-width: 100%;
+	aspect-ratio: 16/9;
 }
 .carouscroll img {
 	vertical-align: middle;
