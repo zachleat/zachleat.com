@@ -2,7 +2,7 @@
 title: The Good, The Bad, The Web Components
 tags:
   - web-components
-  - speaking
+  - eleventy
 slides:
   dir: "/presentations/good-bad-web-components/"
   alt: {}
