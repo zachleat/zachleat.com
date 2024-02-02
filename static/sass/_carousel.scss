@@ -1,30 +1,30 @@
 .carousel {
-  display: flex;
-  scroll-behavior: smooth;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
+	display: flex;
+	scroll-behavior: smooth;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scroll-snap-type: x mandatory;
 }
 .carousel > * {
-  scroll-snap-align: center;
-  min-width: 100%;
+	scroll-snap-align: center;
+	min-width: 100%;
 }
 
 .carousel-16-9 picture,
 .carousel-16-9 img {
-  display: block;
-  aspect-ratio: 16/9;
+	display: block;
+	aspect-ratio: 16/9;
 }
 .fullwidth .carousel.carousel img {
-  width: 100%;
-  height: auto;
-  max-width: none;
+	width: 100%;
+	height: auto;
+	max-width: none;
 }
 @media (min-width: 61.25em) { /* 980px */
-  .carousel {
-    border: 2px solid #ddd;
-    border-radius: .5em .5em 0 0;
-  }
+	.carousel {
+		border: 2px solid #ddd;
+		border-radius: .5em .5em 0 0;
+	}
 }
 
 /* Carouscroll component CSS to reduce CLS */
@@ -34,7 +34,6 @@
 	overflow-y: hidden;
 	border: 2px solid #666;
 	border-bottom: none;
-	border-radius: .5rem .5rem 0 0;
 }
 .carouscroll > * {
 	display: block;
@@ -52,14 +51,7 @@
 	background-color: #eee;
 	border: 2px solid #666;
 	border-top: none;
-	border-radius: 0 0 .5rem .5rem;
 	font-size: .75em;
-}
-[data-carousel-previous] {
-	border-bottom-left-radius: .4rem;
-}
-[data-carousel-next] {
-	border-bottom-right-radius: .4rem;
 }
 [data-carousel-previous],
 [data-carousel-next] {
@@ -78,8 +70,41 @@
 	background-color: rgba(0,0,0,.08);
 }
 
+@media (min-width: 25em) { /* 400px */
+	.content-main .carouscroll,
+	.content-main .carouscroll-meta {
+		margin-left: -0.75rem;
+		margin-right: -0.75rem;
+	}
+}
+
+@media (min-width: 40.625em) { /* 650px */
+	.carouscroll,
+	.carouscroll-meta {
+		border-radius: .5rem;
+	}
+	.carouscroll {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.carouscroll-meta {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	[data-carousel-previous] {
+		border-bottom-left-radius: .4rem;
+	}
+	[data-carousel-next] {
+		border-bottom-right-radius: .4rem;
+	}
+}
+
 /* Single page */
 .carouscroll-single {
 	overflow: hidden;
-	border-radius: .5rem;
+}
+@media (min-width: 40.625em) { /* 650px */
+	.carouscroll-single {
+		border-radius: .5rem;
+	}
 }
