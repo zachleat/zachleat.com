@@ -352,6 +352,6 @@ If you want to learn more, you can try out the [`eleventy-base-webc` starter pro
 This talk was given at four different events in 2023 (some of which videos are available):
 
 * [JS Heroes](/web/jsheroes/) (May 2023)
-* [Smashing Conference Freiburg](/web/smashingconf/2023/) (September 2023) _(video not yet available)_
+* [Smashing Conference Freiburg](/web/smashingconf/2023/video/) (September 2023)
 * [JS Nation](/web/jsnation/) (May 2023)
 * [Stanford Web Camp](/web/stanford-webcamp/) (May 2023)

@@ -1,16 +1,12 @@
 ---
 title: "SmashingConf Freiburg 2023"
-tags:
-  - speaking
-  - web-components
-metadata:
-  speaking:
-    type: conference
-    country: Germany
 external_url: https://smashingconf.com/freiburg-2023
+external_url_location: end
 permalink: /web/smashingconf/2023/
 ---
-I was very fortunate to be invited to be the Mystery Speaker at Smashing Conference in Freiburg this year! We really did trap hundreds of people in a room to teach them about web components 😈😈😈
+I was very fortunate to be invited to be the [Mystery Speaker at Smashing Conference](/web/smashingconf/2023/video/) in Freiburg this year! We really did trap hundreds of people in a room to teach them about web components 😈😈😈
+
+Check out [the video of the talk: The Good, The Bad, The Web Components](/web/smashingconf/2023/video/)
 
 ## Talk Notes
 
@@ -44,7 +40,7 @@ _via this [social post](https://fediverse.zachleat.com/@zachleat/111024972902995
 
 _via this [social post](https://fediverse.zachleat.com/@zachleat/111024952111155146)_
 
-### Miriam Eric Suzanne
+### Miriam Suzanne
 
 1. Gave much needed historical attribution to Jen Simmons for their work on Intrinsic Web Design.
 2. Reminded us that media queries aren’t going away even if container queries are ubiquitous. They’ll continue to be useful for non-size related things like `prefers-reduced-motion` and `hover`, etc.
@@ -63,4 +59,3 @@ _via this [social post](https://fediverse.zachleat.com/@zachleat/111025043021886
 ## Related
 
 * [Conference photos from Marc Thiele](https://marcthiele.com/photos/smashingconf-freiburg-2023)
-* [Day 2 collaborative note taking document](https://docs.google.com/document/d/1r2UxaSNZunftbq8uiBuijmPI15gQTeeFQNp1DJmL7iE/edit#heading=h.bapaw5nuj5yu)
