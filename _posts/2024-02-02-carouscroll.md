@@ -94,6 +94,9 @@ For maximum flexibility, this element can be placed anywhere in the document and
 
 ```html
 <output data-carousel-output="my-scroller"></output>
+
+<!-- Or customize with your own markup -->
+<output data-carousel-output="my-scroller" lang="ko">슬라이드 <span data-carousel-output-current>1</span>/<span data-carousel-output-total>10</span></output>
 ```
 
 #### Make it loop around (optional)
