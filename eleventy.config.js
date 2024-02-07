@@ -546,7 +546,8 @@ module.exports = async function(eleventyConfig) {
 		let id = `carouscroll-id-${nanoid(4)}`;
 
 		let html = [];
-		html.push(`<div><is-land on:idle on:visible>`);
+		html.push(`<script type="module" src="/static/browser-window.js"></script>`);
+		html.push(`<div><browser-window shadow flush><is-land on:idle on:visible>`);
 		html.push(`<template data-island><script type="module" src="/static/carouscroll.js"></script></template>`);
 		html.push(`<carou-scroll tabindex="0" id="${id}" class="carouscroll${isSingleSlide ? " carouscroll-single" : ""}"${isSingleSlide ? " disabled" : ""}>`);
 
@@ -578,7 +579,7 @@ module.exports = async function(eleventyConfig) {
 			html.push(`<button type="button" disabled data-carousel-previous="${id}">&lt; Previous</button>`);
 			html.push(`<output data-carousel-output="${id}"></output>`);
 			html.push(`<button type="button" disabled data-carousel-next="${id}">Next &gt;</button>`);
-			html.push(`</div>`)
+			html.push(`</browser-window></div>`)
 		}
 		html.push(`</is-land></div>`);
 

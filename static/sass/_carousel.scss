@@ -32,8 +32,6 @@
 	display: flex;
 	overflow-x: scroll;
 	overflow-y: hidden;
-	border: 2px solid #666;
-	border-bottom: none;
 }
 .carouscroll > * {
 	display: block;
@@ -48,10 +46,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #eee;
-	border: 2px solid #666;
 	border-top: none;
-	font-size: .75em;
 }
 [data-carousel-previous],
 [data-carousel-next] {
@@ -70,41 +65,7 @@
 	background-color: rgba(0,0,0,.08);
 }
 
-@media (min-width: 25em) { /* 400px */
-	.content-main .carouscroll,
-	.content-main .carouscroll-meta {
-		margin-left: -0.75rem;
-		margin-right: -0.75rem;
-	}
-}
-
-@media (min-width: 40.625em) { /* 650px */
-	.carouscroll,
-	.carouscroll-meta {
-		border-radius: .5rem;
-	}
-	.carouscroll {
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-	.carouscroll-meta {
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-	}
-	[data-carousel-previous] {
-		border-bottom-left-radius: .4rem;
-	}
-	[data-carousel-next] {
-		border-bottom-right-radius: .4rem;
-	}
-}
-
 /* Single page */
 .carouscroll-single {
 	overflow: hidden;
-}
-@media (min-width: 40.625em) { /* 650px */
-	.carouscroll-single {
-		border-radius: .5rem;
-	}
 }
