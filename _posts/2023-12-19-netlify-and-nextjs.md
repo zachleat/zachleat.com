@@ -2,6 +2,7 @@
 title: Netlify’s Disingenuous Survey-based Attack on Next.js (and Eleventy, too)
 tags:
   - eleventy
+  - jamstack
 seo:
   openGraphBackgroundImage: /og/sources/thumb-tacks.jpg
   openGraphAlt: A hand sticks a red thumb tack into a paper on a cork board.

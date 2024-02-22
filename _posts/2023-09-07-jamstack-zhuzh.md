@@ -3,6 +3,7 @@ title: "Jamstack ZHUZH: a Roundtable Discussion on the future of the Jamstack Co
 tags:
   - speaking
   - video
+  - jamstack
 metadata:
   speaking:
     type: panel

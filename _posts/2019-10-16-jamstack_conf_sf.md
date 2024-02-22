@@ -5,6 +5,7 @@ tags:
   - conference
   - speaking
   - scheduled
+  - jamstack
 metadata:
   schedule: true
   speaking:

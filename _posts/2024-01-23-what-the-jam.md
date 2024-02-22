@@ -4,6 +4,7 @@ tags:
   - speaking
   - video
   - eleventy
+  - jamstack
 metadata:
   speaking:
     type: interview

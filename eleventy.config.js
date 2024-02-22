@@ -447,6 +447,7 @@ module.exports = async function(eleventyConfig) {
 			"project",
 			"note",
 			"web-components",
+			"jamstack",
 		];
 		for(let tag of tags) {
 			if(hasTag(collectionItem, tag)) {

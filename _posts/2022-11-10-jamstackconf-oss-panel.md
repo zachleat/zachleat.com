@@ -3,6 +3,7 @@ title: "OSS is Out to End the Framework Wars—Jamstack Conf 2022"
 tags:
   - eleventy
   - speaking
+  - jamstack
 metadata:
   speaking:
     type: conference

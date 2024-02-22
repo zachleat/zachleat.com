@@ -1,5 +1,7 @@
 ---
 title: Resume/CV on the Jamstack
+tags:
+  - jamstack
 ---
 When I applied to work at Netlify, I put in a little work to update my dusty old résumé. It’s considered best practice to continually update your résumé, but who does that?? I’ve since discovered that my résumé can do some of this work for me and keep itself updated with a little help from the Jamstack, pulling in data from my blog and other data sources from around the web.
 

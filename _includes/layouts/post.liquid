@@ -86,6 +86,7 @@ tmpl: page
 			{% if tags contains "speaking" %}<a href="/web/?category=speaking">Speaking</a>{% endif %}
 			{% if tags contains "web-components" %}<a href="/web/?category=web-components">Web Components</a>{% endif %}
 			{% if tags contains "web-fonts" %}<a href="/web/?category=web-fonts">Web Fonts</a>{% endif %}
+			{% if tags contains "jamstack" %}<a href="/web/?category=jamstack">Jamstack</a>{% endif %}
 		</em>
 	{%- endif %}
 	{%- assign postRank = analytics[page.url].rankPerDaysPosted %}
