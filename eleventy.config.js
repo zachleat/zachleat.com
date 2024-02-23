@@ -445,7 +445,6 @@ module.exports = async function(eleventyConfig) {
 		let tags = [
 			"eleventy",
 			"project",
-			"note",
 			"web-components",
 			"jamstack",
 		];
