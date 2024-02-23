@@ -699,6 +699,7 @@ pre {
 	white-space: pre;
 	word-wrap: normal;
 	overflow-x: auto;
+	tab-size: 2;
 
 	@include extraunhyphenate;
 
@@ -727,10 +728,6 @@ pre > code {
 	.livedemo pre {
 		border-radius: 0;
 	}
-}
-
-pre {
-	tab-size: 2;
 }
 
 /* Quotes */

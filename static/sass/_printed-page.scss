@@ -13,13 +13,24 @@
 .printed-page .redacted {
 	background-color: #000;
 }
-.printed-page pre {
-	border-color: transparent;
+.printed-page blockquote {
+	font-family: $monospaceFont;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	border: none;
 	background-color: transparent;
 	color: #000;
-}
-.printed-page pre:not(.fullwidthexempt) {
-	margin-left: auto;
+	white-space: pre-wrap;
 	max-width: none;
-	width: auto;
+
+	@include extraunhyphenate;
+
+	/* Disable ligatures */
+	font-variant-ligatures: no-common-ligatures;
+	font-feature-settings: 'liga' 0, 'clig' 0;
+}
+
+.printed-page blockquote p {
+	padding: 0;
 }

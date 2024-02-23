@@ -18,35 +18,31 @@ About one month ago, I received the following e-mail:
 
 <div class="printed-page">
 <img src="/web/img/posts/whmeetup/seal.svg" onerror="this.src='/web/img/posts/whmeetup/seal.png'; this.onerror=null;" alt="The White House Official Seal">
-<pre class="fullwidthexempt">
-On April 17, we’re hosting community organizers, city and state officials, and technology thought leaders for a Tech Meetup at the White House. Our goals in gathering are to support America’s innovators, to better bridge digital divides, to interconnect us on common topics, to better collaborate on challenging projects where we have deep need and passion to solve them, and figure out how to include all Americans everywhere in our #InnovationNation.
 
-I hope you will be able to join us!
+> On April 17, we’re hosting community organizers, city and state officials, and technology thought leaders for a Tech Meetup at the White House. Our goals in gathering are to support America’s innovators, to better bridge digital divides, to interconnect us on common topics, to better collaborate on challenging projects where we have deep need and passion to solve them, and figure out how to include all Americans everywhere in our #InnovationNation.
+> I hope you will be able to join us!
+> Megan
+> U.S. Chief Technology Officer and Assistant to the President
 
-Megan
-U.S. Chief Technology Officer and Assistant to the President
-</pre>
 </div>
 
 To which I promptly responded:
 
 <div class="printed-page">
-<pre class="fullwidthexempt">
-Dear <span class="redacted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>,
 
-Please forgive my abruptness, but I’m sure I’m not the only one that has had this reaction—is this a real thing? Is it really at the White House?
+> Dear <span class="redacted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>,
+> Please forgive my abruptness, but I’m sure I’m not the only one that has had this reaction—is this a real thing? Is it really at the White House?
+> Thanks!
+> Zach
 
-Thanks!
-Zach
-</pre>
 </div>
 
 I received the following:
 
 <div class="printed-page">
-<pre class="fullwidthexempt">
-Hello Zach! This is the real thing :) -- and no, you are not the only person to react this way. It's a very special invitation, and yes, we are all really, truly invited to the White House.
-</pre>
+
+> Hello Zach! This is the real thing :) -- and no, you are not the only person to react this way. It's a very special invitation, and yes, we are all really, truly invited to the White House.
+
 </div>
 
 Holy shit.
