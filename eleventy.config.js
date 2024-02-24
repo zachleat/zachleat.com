@@ -6,7 +6,8 @@ const numeral = require("numeral");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItToc = require("markdown-it-table-of-contents");
-const {encode} = require("html-entities");
+const { encode, decode } = require("html-entities");
+const { YoutubeTranscript } = require("youtube-transcript");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -15,15 +16,12 @@ const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const pkg = require("./package.json");
 const siteData = require("./_data/site.json");
 const pluginImage = require("./_11ty/imagePlugin.js");
-const screenshotImageHtmlFullUrl = pluginImage.screenshotImageHtmlFullUrl;
-const opengraphImageHtml = pluginImage.opengraphImageHtml;
+const { imageShortcode, opengraphImageHtml, screenshotImageHtmlFullUrl } = pluginImage;
 
 const pluginSass = require("./_11ty/sassPlugin.js");
 const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
-
-const { imageShortcode } = pluginImage;
 
 module.exports = async function(eleventyConfig) {
 	// TODO move this back out after this config file is ESM
@@ -86,7 +84,7 @@ module.exports = async function(eleventyConfig) {
 			// External modules
 			"node_modules/@zachleat/details-utils/details-utils.js": `static/details-utils.js`,
 			"node_modules/speedlify-score/speedlify-score.{css,js}": `static/`,
-			"node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `static/`,
+			"node_modules/@zachleat/lite-youtube-embed/src/lite-yt-embed.{css,js}": `static/`,
 			"node_modules/infinity-burger/infinity-burger.{css,js}": `static/`,
 			"node_modules/artificial-chart/artificial-chart.{css,js}": `static/`,
 			"node_modules/@zachleat/table-saw/table-saw.js": `static/table-saw.js`,
@@ -309,7 +307,7 @@ module.exports = async function(eleventyConfig) {
 		return array.slice(0, n);
 	});
 
-	eleventyConfig.addFilter('localUrl', (absoluteUrl) => {
+	eleventyConfig.addFilter("localUrl", (absoluteUrl) => {
 		return absoluteUrl.replace("https://www.zachleat.com", "");
 	});
 
@@ -349,6 +347,20 @@ module.exports = async function(eleventyConfig) {
 
 		return `<script type="module" src="/static/browser-window.js"></script>
 <div><browser-window mode="dark"${skipIcon ? "" : " icon"} url="${url}" shadow flush><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
+	});
+
+	eleventyConfig.addShortcode("fetchTranscript", async videoId => {
+		let content = await YoutubeTranscript.fetchTranscript(videoId);
+		let html = `<div><youtube-deep-link videoid="${videoId}">
+${content.map(({offset, text}) => {
+	let offsetSeconds = parseInt(offset, 10) / 1000;
+	let minutes = Math.floor(offsetSeconds / 60);
+	let seconds = Math.floor(offsetSeconds - minutes * 60);
+
+	return `<span data-offset="${offset}"><code>${leftpad(minutes, 2)}:${leftpad(seconds, 2)}</code>${text.trim()}</span>`;
+}).join("")}
+</youtube-deep-link></div>`;
+		return html;
 	});
 
 	/* COLLECTIONS */

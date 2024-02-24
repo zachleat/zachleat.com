@@ -1,0 +1,12 @@
+<style>
+.lite-youtube-link {
+	--ellipsis-lines: 2;
+	margin-top: 0.5em; /* 8px /16 */
+	background: url(https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fyoutube.com/) no-repeat;
+	background-size: 1em auto;
+	background-position: 0 .35em;
+	padding-left: 1.25em;
+	line-height: 1.4;
+}
+</style>
+<a :href="href" class="lite-youtube-link text-ellipsis-multi">Watch on YouTube<span webc:if="label" webc:nokeep>: <em webc:if="label" @text="label"></em></span></a>

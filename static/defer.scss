@@ -38,3 +38,19 @@ browser-window img {
 	max-width: none;
 }
 
+/* Sticky video for transcripts */
+@media (min-height: 50em) { /* 800px */
+	.stickyvideo {
+		position: sticky;
+		top: 0;
+	}
+	.stickyvideo browser-window {
+		margin: 0;
+	}
+	.stickyvideo .lite-youtube-link {
+		background-color: rgba(255,255,255,.7);
+		font-size: 80%;
+		margin: 0;
+		text-align: center;
+	}
+}

@@ -1,0 +1,63 @@
+<style>
+youtube-deep-link [data-offset] {
+	display: inline;
+	text-align: left;
+	margin-inline-end: .25em;
+}
+youtube-deep-link:defined [data-offset]:hover,
+youtube-deep-link:defined [data-offset]:focus {
+	cursor: pointer;
+	text-decoration: underline;
+}
+youtube-deep-link code {
+	display: inline-block;
+	font-size: 75%;
+	margin-inline-end: .25em;
+	line-height: 1.2;
+	color: #444;
+	background: #eee;
+}
+</style>
+<script type="module">
+class YouTubeDeepLink extends HTMLElement {
+	static tagName = "youtube-deep-link";
+
+	static register(tagName) {
+		if(!("customElements" in globalThis)) {
+			return;
+		}
+		customElements.define(tagName || this.tagName, this);
+	}
+
+	get videoId() {
+		return this.getAttribute("videoid");
+	}
+
+	connectedCallback() {
+		let buttons = this.querySelectorAll("[data-offset]");
+		for(let btn of buttons) {
+			if(btn.tagName === "BUTTON") {
+				btn.removeAttribute("disabled");
+			} else {
+				btn.setAttribute("role", "button");
+			}
+
+			btn.addEventListener("click", (e) => {
+				let offset = parseInt(e.target.getAttribute("data-offset"), 10) / 1000;
+				this.seek(offset);
+				e.preventDefault();
+			});
+		}
+	}
+
+	async seek(offset) {
+		let video = document.querySelector(`lite-youtube[videoid="${this.videoId}"]`);
+		let player = await video.getPlayer();
+		// https://developers.google.com/youtube/iframe_api_reference#seekTo
+		player?.seekTo(offset, true);
+	}
+}
+
+YouTubeDeepLink.register();
+</script>
+<slot></slot>
