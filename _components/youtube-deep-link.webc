@@ -4,6 +4,21 @@ youtube-deep-link [data-offset] {
 	text-align: left;
 	margin-inline-end: .25em;
 }
+youtube-deep-link [data-offset] button {
+	display: inline-block;
+	font: inherit;
+	font-size: 80%;
+	border: none;
+	border-radius: 0.3em;
+	background: inherit;
+	font-family: Consolas, Monaco, monospace;
+	margin-inline-end: .25em;
+	line-height: 1.2;
+	color: #444;
+	background: #eee;
+	vertical-align: text-top;
+	padding: 0.15em 0.3em;
+}
 youtube-deep-link [data-offset].active {
 	background-color: #ffc;
 }
@@ -13,13 +28,7 @@ youtube-deep-link:defined [data-offset]:focus {
 	text-decoration: underline;
 }
 youtube-deep-link code {
-	display: inline-block;
-	font-size: 75%;
-	margin-inline-end: .25em;
-	line-height: 1.2;
-	color: #444;
-	background: #eee;
-	vertical-align: text-top;
+
 }
 </style>
 <script type="module">

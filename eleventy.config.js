@@ -358,7 +358,7 @@ ${content.map(({offset, text}, index) => {
 	let minutes = Math.floor(offsetSeconds / 60);
 	let seconds = Math.floor(offsetSeconds - minutes * 60);
 
-	return `${index % 4 === 0 ? `<br><br>` : ""}<span data-offset="${offsetSeconds}"><code>${leftpad(minutes, 2)}:${leftpad(seconds, 2)}</code>${text.trim()}</span>`;
+	return `${index % 4 === 0 ? `<br><br>` : ""}<span data-offset="${offsetSeconds}"><button type="button">${leftpad(minutes, 2)}:${leftpad(seconds, 2)}</button>${text.trim()}</span>`;
 }).join("")}
 </youtube-deep-link></div>`;
 		return html;
