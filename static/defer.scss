@@ -40,10 +40,10 @@ browser-window img {
 
 /* Sticky video for transcripts */
 @media (min-width: 61.25em) and (min-height: 50em) { /* 980px, 800px */
-	on-visible:not(.onvisible) {
+	on-visible:defined:not(.onvisible) {
 		aspect-ratio: 16/9;
 	}
-	on-visible:not(.onvisible) browser-window {
+	on-visible:defined:not(.onvisible) browser-window {
 		position: fixed;
 		right: 1em;
 		bottom: 1em;
