@@ -79,6 +79,7 @@ module.exports = async function(eleventyConfig) {
 
 			// CSS/JS
 			"static/fonts": "static/fonts",
+			"static/js": "static/js",
 			"static/*.{css,js}": "static/",
 
 			// External modules
@@ -352,12 +353,12 @@ module.exports = async function(eleventyConfig) {
 	eleventyConfig.addShortcode("fetchTranscript", async videoId => {
 		let content = await YoutubeTranscript.fetchTranscript(videoId);
 		let html = `<div><youtube-deep-link videoid="${videoId}">
-${content.map(({offset, text}) => {
-	let offsetSeconds = parseInt(offset, 10) / 1000;
+${content.map(({offset, text}, index) => {
+	let offsetSeconds = Math.round(parseInt(offset, 10) / 1000);
 	let minutes = Math.floor(offsetSeconds / 60);
 	let seconds = Math.floor(offsetSeconds - minutes * 60);
 
-	return `<span data-offset="${offset}"><code>${leftpad(minutes, 2)}:${leftpad(seconds, 2)}</code>${text.trim()}</span>`;
+	return `${index % 4 === 0 ? `<br><br>` : ""}<span data-offset="${offsetSeconds}"><code>${leftpad(minutes, 2)}:${leftpad(seconds, 2)}</code>${text.trim()}</span>`;
 }).join("")}
 </youtube-deep-link></div>`;
 		return html;

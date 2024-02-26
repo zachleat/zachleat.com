@@ -9,7 +9,14 @@ metadata:
 medialength: 10 min
 opengraphSkipFace: true
 ---
-<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+<script type="module" src="/static/js/onvisible.js"></script>
+<div>
+	<on-visible>
+		<youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}" @jsapi @hide-link></youtube-lite-player>
+	</on-visible>
+	<youtube-link @label="{{ title }}" href="https://youtube.com/watch?v={{ metadata.youtubeId }}"></youtube-link>
+</div>
+
 
 ---
 
@@ -34,3 +41,7 @@ In the above video I walk through a [Taylor Swift lyrics fansite](https://fluent
 	* Using `node` front matter in `songs.liquid` (to enable the `before` pagination callback in JavaScript)
 	* Using custom [dual pagination](https://github.com/11ty/eleventy/issues/332) with `before` chunking data between languages and songs.
 * Using the seasonally [appropriate `<snow-fall>` web component](/web/snow-fall/).
+
+## Searchable Transcript
+
+{% fetchTranscript metadata.youtubeId %}

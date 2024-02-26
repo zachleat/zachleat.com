@@ -4,6 +4,9 @@ youtube-deep-link [data-offset] {
 	text-align: left;
 	margin-inline-end: .25em;
 }
+youtube-deep-link [data-offset].active {
+	background-color: #ffc;
+}
 youtube-deep-link:defined [data-offset]:hover,
 youtube-deep-link:defined [data-offset]:focus {
 	cursor: pointer;
@@ -16,11 +19,19 @@ youtube-deep-link code {
 	line-height: 1.2;
 	color: #444;
 	background: #eee;
+	vertical-align: text-top;
 }
 </style>
 <script type="module">
 class YouTubeDeepLink extends HTMLElement {
+	#watching = false;
+	#video = null;
+
 	static tagName = "youtube-deep-link";
+
+	static classes = {
+		active: "active"
+	};
 
 	static register(tagName) {
 		if(!("customElements" in globalThis)) {
@@ -33,6 +44,17 @@ class YouTubeDeepLink extends HTMLElement {
 		return this.getAttribute("videoid");
 	}
 
+	set video(v) {
+		this.#video = v;
+	}
+
+	get video() {
+		if(!this.#video) {
+			this.#video = document.querySelector(`lite-youtube[videoid="${this.videoId}"]`);
+		}
+		return this.#video;
+	}
+
 	connectedCallback() {
 		let buttons = this.querySelectorAll("[data-offset]");
 		for(let btn of buttons) {
@@ -43,7 +65,9 @@ class YouTubeDeepLink extends HTMLElement {
 			}
 
 			btn.addEventListener("click", (e) => {
-				let offset = parseInt(e.target.getAttribute("data-offset"), 10) / 1000;
+				let target = e.target.closest("[data-offset]");
+				let offset = parseInt(target.getAttribute("data-offset"), 10); // in seconds
+				this.setActiveLink(offset);
 				this.seek(offset);
 				e.preventDefault();
 			});
@@ -51,10 +75,47 @@ class YouTubeDeepLink extends HTMLElement {
 	}
 
 	async seek(offset) {
-		let video = document.querySelector(`lite-youtube[videoid="${this.videoId}"]`);
-		let player = await video.getPlayer();
-		// https://developers.google.com/youtube/iframe_api_reference#seekTo
-		player?.seekTo(offset, true);
+		if(!this.video) {
+			// just scroll to the video, the viewport isn’t big enough to show the video and transcript together
+			let video = document.querySelector(`[videoid="${this.videoId}"]`);
+			video?.parentNode?.scrollIntoView(true);
+		} else {
+			let player = await this.video.getPlayer();
+			this.watch(); // keep the links active
+
+			// https://developers.google.com/youtube/iframe_api_reference#seekTo
+			player?.seekTo(offset, true);
+		}
+	}
+
+	setActiveLink(timeInSeconds) {
+		let activeElement = this.querySelector(`[data-offset="${Math.round(timeInSeconds)}"]`);
+		if(activeElement) {
+			// remove class from previous
+			let previousElement =  this.querySelector(`.${YouTubeDeepLink.classes.active}`);
+			previousElement?.classList.remove(YouTubeDeepLink.classes.active);
+
+			// add to new
+			activeElement.classList.add(YouTubeDeepLink.classes.active);
+		}
+	}
+
+	async watch() {
+		if(this.#watching) {
+			return;
+		}
+
+		let player = await this.video.getPlayer();
+
+		player.addEventListener("onStateChange", ({data}) => {
+			if(data === 1) { // playing
+				this.#watching = setInterval(() => {
+					this.setActiveLink(player.getCurrentTime())
+				}, 500);
+			} else { // paused
+				clearInterval(this.#watching);
+			}
+		})
 	}
 }
 
