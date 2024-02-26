@@ -67,12 +67,6 @@ class YouTubeDeepLink extends HTMLElement {
 	connectedCallback() {
 		let buttons = this.querySelectorAll("[data-offset]");
 		for(let btn of buttons) {
-			if(btn.tagName === "BUTTON") {
-				btn.removeAttribute("disabled");
-			} else {
-				btn.setAttribute("role", "button");
-			}
-
 			btn.addEventListener("click", (e) => {
 				let target = e.target.closest("[data-offset]");
 				let offset = parseInt(target.getAttribute("data-offset"), 10); // in seconds
