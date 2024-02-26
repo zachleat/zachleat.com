@@ -17,7 +17,6 @@ opengraphSkipFace: true
 	<youtube-link @label="{{ title }}" href="https://youtube.com/watch?v={{ metadata.youtubeId }}"></youtube-link>
 </div>
 
-
 ---
 
 In the above video I walk through a [Taylor Swift lyrics fansite](https://fluent-reef.cloudvent.net/) I built to demonstrate a few internationalization features with Eleventy and CloudCannon.

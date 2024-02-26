@@ -9,7 +9,13 @@ metadata:
 medialength: 9 min
 opengraphSkipFace: true
 ---
-<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+<script type="module" src="/static/js/onvisible.js"></script>
+<div>
+	<on-visible>
+		<youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}" @jsapi @hide-link></youtube-lite-player>
+	</on-visible>
+	<youtube-link @label="{{ title }}" href="https://youtube.com/watch?v={{ metadata.youtubeId }}"></youtube-link>
+</div>
 
 ---
 
@@ -24,3 +30,7 @@ opengraphSkipFace: true
 
 * Learn more about [Eleventy and CloudCannon CMS](https://cloudcannon.com/eleventy-cms/)
 * [CloudCannon Documentation: Introduction to Bookshop with Eleventy](https://cloudcannon.com/documentation/guides/bookshop-eleventy-guide/)
+
+## Searchable Transcript
+
+{% fetchTranscript metadata.youtubeId %}
