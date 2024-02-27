@@ -2,6 +2,14 @@
 title: "Elevating Video Transcripts as Searchable Content"
 tags:
   - web-components
+seo:
+  openGraphBackgroundImage: /og/sources/caption.jpg
+  openGraphAlt: The word CAPTION spelled out in Scrabble tiles
+posterImage:
+  showOnPage: true
+  height: 12em
+  name: Monica Flores
+  source: https://unsplash.com/photos/a-close-up-of-a-scrabble-tile-wall-with-words-written-on-it-p4mFOzM-asQ
 ---
 I helped work on the [Jamstack TV project](https://jamstack.org/tv/) _(now dormant with the rest of the jamstack.org site, though the feature is still up)_, which used a lovely Algolia integration to allow deep searching of video transcripts. It was a really cool feature.
 
