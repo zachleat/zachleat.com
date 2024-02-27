@@ -27,9 +27,6 @@ youtube-deep-link:defined [data-offset]:focus {
 	cursor: pointer;
 	text-decoration: underline;
 }
-youtube-deep-link code {
-
-}
 </style>
 <script type="module">
 class YouTubeDeepLink extends HTMLElement {

@@ -53,11 +53,11 @@ slides:
     38: "Eleventy v3 🐥 (canary)"
     39: Thank you!
 ---
-<script type="module" src="/static/js/onvisible.js"></script>
+<script type="module" src="/static/js/offviewport.js"></script>
 <div>
-	<on-visible>
+	<off-viewport>
 		<youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}" @jsapi @hide-link></youtube-lite-player>
-	</on-visible>
+	</off-viewport>
 	<youtube-link @label="{{ title }}" href="https://youtube.com/watch?v={{ metadata.youtubeId }}"></youtube-link>
 </div>
 

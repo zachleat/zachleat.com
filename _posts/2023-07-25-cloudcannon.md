@@ -6,11 +6,11 @@ metadata:
 external_url: https://www.11ty.dev/blog/cloudcannon/
 external_url_location: end
 ---
-<script type="module" src="/static/js/onvisible.js"></script>
+<script type="module" src="/static/js/offviewport.js"></script>
 <div>
-	<on-visible>
+	<off-viewport>
 		<youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}" @jsapi @hide-link></youtube-lite-player>
-	</on-visible>
+	</off-viewport>
 	<youtube-link @label="{{ title }}" href="https://youtube.com/watch?v={{ metadata.youtubeId }}"></youtube-link>
 </div>
 

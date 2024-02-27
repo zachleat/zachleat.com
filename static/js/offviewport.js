@@ -1,5 +1,5 @@
-class OnVisible extends HTMLElement {
-	static tagName = "on-visible";
+class OffViewport extends HTMLElement {
+	static tagName = "off-viewport";
 
 	static register(tagName) {
 		if(!("customElements" in globalThis)) {
@@ -9,7 +9,7 @@ class OnVisible extends HTMLElement {
 	}
 
 	static classes = {
-		visible: "onvisible"
+		active: "active"
 	};
 
 	static css = `:host { display: block; }`;
@@ -22,7 +22,7 @@ class OnVisible extends HTMLElement {
 
 		let root = this.attachShadow({ mode: "open" });
 		let sheet = new CSSStyleSheet();
-		sheet.replaceSync(OnVisible.css);
+		sheet.replaceSync(OffViewport.css);
 		root.adoptedStyleSheets = [sheet];
 		let slot = document.createElement("slot");
 		root.appendChild(slot);
@@ -30,9 +30,9 @@ class OnVisible extends HTMLElement {
 		let observer = new IntersectionObserver(entries => {
 			for(let entry of entries) {
 				if(entry.isIntersecting) {
-					this.classList.add(OnVisible.classes.visible);
+					this.classList.remove(OffViewport.classes.active);
 				} else {
-					this.classList.remove(OnVisible.classes.visible);
+					this.classList.add(OffViewport.classes.active);
 				}
 			}
 		},
@@ -44,4 +44,4 @@ class OnVisible extends HTMLElement {
 	}
 }
 
-OnVisible.register();
+OffViewport.register();
