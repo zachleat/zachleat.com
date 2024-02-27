@@ -1,28 +1,24 @@
 ---
 title: "Eleventy and CloudCannon: New Best Friends"
 tags: eleventy
+metadata:
+  youtubeId: nypsmn70ipI
 external_url: https://www.11ty.dev/blog/cloudcannon/
 external_url_location: end
 ---
-<div><youtube-lite-player @slug="nypsmn70ipI" @label="{{ title }}" @start="57"></youtube-lite-player></div>
+<script type="module" src="/static/js/onvisible.js"></script>
+<div>
+	<on-visible>
+		<youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}" @jsapi @hide-link></youtube-lite-player>
+	</on-visible>
+	<youtube-link @label="{{ title }}" href="https://youtube.com/watch?v={{ metadata.youtubeId }}"></youtube-link>
+</div>
 
 * Read more on the CloudCannon Blog: [_CloudCannon, the Official CMS Partner of Eleventy_](https://cloudcannon.com/blog/cloudcannon-the-official-cms-partner-of-eleventy/)
 * See the [post on Mastodon](https://fosstodon.org/@eleventy/110775434718494755)
 * Follow along on Mastodon: [`@eleventy@fosstodon.org`](https://fosstodon.org/@eleventy) and/or [`@cloudcannon@techhub.social`](https://techhub.social/@cloudcannon).
 
 
-## Video Transcript
+## Searchable Transcript
 
-What’s up everybody? I have some great news—in a few short weeks I will be joining CloudCannon as a developer advocate!
-
-And for folks in the Eleventy community, I am delighted to reveal that this move will unlock sponsorship of official open source development time for Eleventy! Importantly, Eleventy will continue on as an independent open source project and I’m excited about the opportunities ahead.
-
-If you aren’t familiar with CloudCannon—they are an incredible git-backed CMS with amazing visual editing features. CloudCannon have also been avid supporters of Eleventy for quite some time, relaunching their web site using Eleventy earlier this year. I’d also recommend checking out the framework independent open source projects they manage too—I personally love the Pagefind static search project we use on Eleventy’s documentation.
-
-After surveying the Eleventy community we found the data reflected an opportunity to refocus Eleventy as a static site generator, returning to our roots and the original benefits of the Jamstack that we all came to know and love: front-end web performance, improved security by decreasing runtimes, and reducing vendor lock-in for maximum hosting portability.
-
-We’ll use this newly sponsored development time to implement Project Slipstream, the code name we’re using for Eleventy’s simplification and rededication to the Jamstack. Stay tuned—work has already begun and we look forward to shipping our first 3.0 alpha release soon.
-
-And speaking personally, I continue to be thankful—not just to CloudCannon—but to everyone that reached out with offers of help for Eleventy—it speaks volumes to the kind and helpful folks that make up our community. Let’s keep those vibes going on the issue tracker, the Discord, on YouTube, on Mastodon and whatever other flavor of the week social network is happening this week! I appreciate y’all!
-
-And keep building for the web!
+{% fetchTranscript metadata.youtubeId %}

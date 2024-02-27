@@ -6,8 +6,7 @@ const numeral = require("numeral");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItToc = require("markdown-it-table-of-contents");
-const { encode, decode } = require("html-entities");
-const { YoutubeTranscript } = require("youtube-transcript");
+const { encode } = require("html-entities");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -22,6 +21,7 @@ const pluginSass = require("./_11ty/sassPlugin.js");
 const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
+const pluginYoutube = require("./_11ty/youtubePlugin.js");
 
 module.exports = async function(eleventyConfig) {
 	// TODO move this back out after this config file is ESM
@@ -70,6 +70,7 @@ module.exports = async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginWebmentions);
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 	eleventyConfig.addPlugin(pluginAnalytics);
+	eleventyConfig.addPlugin(pluginYoutube);
 
 	/* COPY */
 	eleventyConfig
@@ -348,20 +349,6 @@ module.exports = async function(eleventyConfig) {
 
 		return `<script type="module" src="/static/browser-window.js"></script>
 <div><browser-window mode="dark"${skipIcon ? "" : " icon"} url="${url}" shadow flush><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
-	});
-
-	eleventyConfig.addShortcode("fetchTranscript", async videoId => {
-		let content = await YoutubeTranscript.fetchTranscript(videoId);
-		let html = `<div><youtube-deep-link videoid="${videoId}">
-${content.map(({offset, text}, index) => {
-	let offsetSeconds = Math.round(parseInt(offset, 10) / 1000);
-	let minutes = Math.floor(offsetSeconds / 60);
-	let seconds = Math.floor(offsetSeconds - minutes * 60);
-
-	return `${index % 4 === 0 ? `<br><br>` : ""}<span data-offset="${offsetSeconds}"><button type="button">${leftpad(minutes, 2)}:${leftpad(seconds, 2)}</button>${text.trim()}</span>`;
-}).join("")}
-</youtube-deep-link></div>`;
-		return html;
 	});
 
 	/* COLLECTIONS */

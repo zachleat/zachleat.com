@@ -8,8 +8,8 @@ external_icon_url: false
 metadata:
   speaking:
     type: meetup
-#  youtubeId: 40yPK3EKE60
-#medialength: 21 min
+  youtubeId: aM24L2g0peA
+medialength: 21 min
 slides:
   prefix: "/presentations/eleventy-v2/image-export-low."
   alt:
@@ -53,7 +53,13 @@ slides:
     38: "Eleventy v3 🐥 (canary)"
     39: Thank you!
 ---
-<div><youtube-lite-player @slug="aM24L2g0peA" @label="{{ title }}"></youtube-lite-player></div>
+<script type="module" src="/static/js/onvisible.js"></script>
+<div>
+	<on-visible>
+		<youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}" @jsapi @hide-link></youtube-lite-player>
+	</on-visible>
+	<youtube-link @label="{{ title }}" href="https://youtube.com/watch?v={{ metadata.youtubeId }}"></youtube-link>
+</div>
 
 [Watch on YouTube](https://www.youtube.com/watch?v=aM24L2g0peA) or check out the full [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup)!
 
@@ -61,3 +67,6 @@ slides:
 
 {% slides slides.prefix, "1-39", slides.alt %}
 
+## Searchable Transcript
+
+{% fetchTranscript metadata.youtubeId %}
