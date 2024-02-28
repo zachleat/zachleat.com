@@ -35,4 +35,4 @@ There are a few web components at play here, but I don’t currently have the en
 
 ## Conclusion
 
-I’ve been making more and more videos and I _really_ like escalating that content as first-party text on my static site too. Investing in high quality closed captions (as a way to make the videos more accessible) elevates the content and aligns it more closely with my existing stack of tools, too.
+I’ve been making more and more videos and I _really_ like escalating that content as first-party text on my static site too. Investing in high quality closed captions (as a way to make the videos more accessible) elevates the content and aligns it more closely with my existing stack of tools.
