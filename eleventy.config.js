@@ -7,6 +7,8 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItToc = require("markdown-it-table-of-contents");
 const { encode } = require("html-entities");
+const { YoutubeTranscript } = require("youtube-transcript");
+const { AssetCache } = require("@11ty/eleventy-fetch");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -21,7 +23,7 @@ const pluginSass = require("./_11ty/sassPlugin.js");
 const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
-const pluginYoutube = require("./_11ty/youtubePlugin.js");
+
 
 module.exports = async function(eleventyConfig) {
 	// TODO move this back out after this config file is ESM
@@ -70,7 +72,6 @@ module.exports = async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginWebmentions);
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
 	eleventyConfig.addPlugin(pluginAnalytics);
-	eleventyConfig.addPlugin(pluginYoutube);
 
 	/* COPY */
 	eleventyConfig
@@ -123,6 +124,7 @@ module.exports = async function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
 
 	/* FILTERS */
+
 	eleventyConfig.addFilter("tweetbackUrl", async (url) => {
 		const { transform } = await import("@tweetback/canonical");
 		return transform(url);
@@ -313,12 +315,6 @@ module.exports = async function(eleventyConfig) {
 		return absoluteUrl.replace("https://www.zachleat.com", "");
 	});
 
-	eleventyConfig.addFilter("processAsWebC", async function(content) {
-		content = `<template webc:nokeep webc:nobundle>${content}</template>`;
-
-		return eleventyConfig.javascriptFunctions.renderTemplate.call(this, content, "webc");
-	});
-
 	eleventyConfig.addFilter("nameToFlag", (countryName = "") => {
 		let flag = {
 			"germany": "🇩🇪",
@@ -334,6 +330,18 @@ module.exports = async function(eleventyConfig) {
 		}[countryName.toLowerCase()] || "";
 
 		return `<span role="img" aria-label="${countryName}">${flag}</span>`;
+	});
+
+	// WebC things
+	eleventyConfig.addFilter("processAsWebC", async function(content) {
+		content = `<template webc:nokeep webc:nobundle>${content}</template>`;
+
+		return eleventyConfig.javascriptFunctions.renderTemplate.call(this, content, "webc");
+	});
+
+	// Workaround until WebC upgrades to new node-retrieve-globals
+	eleventyConfig.addJavaScriptFunction("fetchWebcDependencies", function() {
+		return { YoutubeTranscript, AssetCache, leftpad };
 	});
 
 	/* END FILTERS */

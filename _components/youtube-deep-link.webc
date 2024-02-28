@@ -28,6 +28,45 @@ youtube-deep-link:defined [data-offset]:focus {
 	text-decoration: underline;
 }
 </style>
+<script webc:setup>
+// Workaround for require/import until WebC uses new node-retrieve-globals package (see eleventy.config.js)
+let { AssetCache, YoutubeTranscript, leftpad } = this.fetchWebcDependencies();
+
+async function fetchTranscript(videoId) {
+	let asset = new AssetCache(`youtube_transcript_${videoId}`);
+	if(asset.isCacheValid("7d")) {
+		return asset.getCachedValue();
+	}
+
+	// Remote call
+	let transcript = await YoutubeTranscript.fetchTranscript(videoId);
+	await asset.save(transcript, "json");
+	return transcript;
+}
+
+async function fetchTranscriptMarkup(videoId) {
+	let content = await fetchTranscript(videoId);
+	let html= [];
+	let index = 0;
+
+	for(let {offset, text} of content) {
+		let offsetSeconds = Math.round(parseInt(offset, 10) / 1000);
+		let minutes = Math.floor(offsetSeconds / 60);
+		let seconds = Math.floor(offsetSeconds - minutes * 60);
+		if(index % 4 === 0) {
+			html.push("<br><br>");
+		}
+
+		html.push(`<span data-offset="${offsetSeconds}"><button type="button">${leftpad(minutes, 2)}:${leftpad(seconds, 2)}</button>${text.trim()}</span>`);
+		index++;
+	}
+
+	return html.join("");
+}
+</script>
+
+<div @html="fetchTranscriptMarkup(videoid)" webc:nokeep></div>
+
 <script type="module">
 class YouTubeDeepLink extends HTMLElement {
 	#watching = false;
@@ -121,4 +160,3 @@ class YouTubeDeepLink extends HTMLElement {
 
 YouTubeDeepLink.register();
 </script>
-<slot></slot>

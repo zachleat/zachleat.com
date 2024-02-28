@@ -69,4 +69,4 @@ slides:
 
 ## Searchable Transcript
 
-{% fetchTranscript metadata.youtubeId %}
+<div><youtube-deep-link videoid="{{ metadata.youtubeId }}"></youtube-deep-link></div>
