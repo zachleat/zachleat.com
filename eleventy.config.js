@@ -24,7 +24,6 @@ const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
 
-
 module.exports = async function(eleventyConfig) {
 	// TODO move this back out after this config file is ESM
 	const { EleventyRenderPlugin } = await import("@11ty/eleventy");
@@ -340,8 +339,16 @@ module.exports = async function(eleventyConfig) {
 	});
 
 	// Workaround until WebC upgrades to new node-retrieve-globals
-	eleventyConfig.addJavaScriptFunction("fetchWebcDependencies", function() {
-		return { YoutubeTranscript, AssetCache, leftpad };
+	eleventyConfig.addJavaScriptFunction("fetchYoutubeTranscript", async (videoId) => {
+		let asset = new AssetCache(`youtube_transcript_${videoId}`);
+		if(asset.isCacheValid("7d")) {
+			return asset.getCachedValue();
+		}
+
+		// Remote call
+		let transcript = await YoutubeTranscript.fetchTranscript(videoId);
+		await asset.save(transcript, "json");
+		return transcript;
 	});
 
 	/* END FILTERS */

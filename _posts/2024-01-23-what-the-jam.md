@@ -24,4 +24,4 @@ opengraphSkipFace: true
 
 ## Searchable Transcript
 
-<div><youtube-deep-link videoid="{{ metadata.youtubeId }}"></youtube-deep-link></div>
+<div><youtube-deep-link videoid="{{ metadata.youtubeId }}" :@captions="fetchYoutubeTranscript('{{ metadata.youtubeId }}')"></youtube-deep-link></div>
