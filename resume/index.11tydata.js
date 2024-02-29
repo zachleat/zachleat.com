@@ -26,7 +26,7 @@ module.exports = async function({eleventy}) {
 					console.log( json.message );
 				}
 				if(eleventy.env.runMode !== "serve") {
-					console.log( `eleventy star count: ${json.stargazers_count}.` );
+					console.log( `[zachleat.com] eleventy star count: ${json.stargazers_count}.` );
 				}
 				data.stargazers.eleventy = json.stargazers_count;
 			}));
@@ -34,7 +34,7 @@ module.exports = async function({eleventy}) {
 		promises.push(fetch("https://api.meetup.com/nebraskajs?&sign=true&photo-host=public")
 			.then(json => {
 				if(eleventy.env.runMode !== "serve") {
-					console.log( `NebraskaJS member count: ${json.members}.` );
+					console.log( `[zachleat.com] NebraskaJS member count: ${json.members}.` );
 				}
 				data.meetup.nebraskajs = json.members;
 			}));
