@@ -331,14 +331,6 @@ module.exports = async function(eleventyConfig) {
 		return `<span role="img" aria-label="${countryName}">${flag}</span>`;
 	});
 
-	// WebC things
-	eleventyConfig.addFilter("processAsWebC", async function(content) {
-		content = `<template webc:nokeep webc:nobundle>${content}</template>`;
-
-		return eleventyConfig.javascriptFunctions.renderTemplate.call(this, content, "webc");
-	});
-
-	// Workaround until WebC upgrades to new node-retrieve-globals
 	eleventyConfig.addJavaScriptFunction("fetchYoutubeTranscript", async (videoId) => {
 		let asset = new AssetCache(`youtube_transcript_${videoId}`);
 		if(asset.isCacheValid("7d")) {
@@ -349,6 +341,13 @@ module.exports = async function(eleventyConfig) {
 		let transcript = await YoutubeTranscript.fetchTranscript(videoId);
 		await asset.save(transcript, "json");
 		return transcript;
+	});
+
+	// WebC things
+	eleventyConfig.addFilter("processAsWebC", async function(content) {
+		content = `<template webc:nokeep webc:nobundle>${content}</template>`;
+
+		return eleventyConfig.javascriptFunctions.renderTemplate.call(this, content, "webc");
 	});
 
 	/* END FILTERS */
