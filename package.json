@@ -70,6 +70,7 @@
 		"start-search": "npm run build && npm run create-search-index && npm run start",
 		"start-quick": "npx @11ty/eleventy --serve --port=8090 --incremental --ignore-initial",
 		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production && npm run create-search-index",
+		"nocache-production": "./fetch-projects.sh && npm run build-production && npm run create-search-index",
 		"build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy"
 	},
 	"repository": {
