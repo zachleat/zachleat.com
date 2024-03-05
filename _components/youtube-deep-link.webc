@@ -103,7 +103,7 @@ class YouTubeDeepLink extends HTMLElement {
 			let video = document.querySelector(`[videoid="${this.videoId}"]`);
 			video?.parentNode?.scrollIntoView(true);
 		} else {
-			let player = await this.video.getPlayer();
+			let player = await this.video.getYTPlayer();
 			this.watch(); // keep the links active
 
 			// https://developers.google.com/youtube/iframe_api_reference#seekTo
@@ -128,7 +128,7 @@ class YouTubeDeepLink extends HTMLElement {
 			return;
 		}
 
-		let player = await this.video.getPlayer();
+		let player = await this.video.getYTPlayer();
 
 		player.addEventListener("onStateChange", ({data}) => {
 			if(data === 1) { // playing
