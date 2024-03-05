@@ -24,3 +24,8 @@ I _really_ enjoyed this panel. Let’s save the Jamstack community!
 > (host) Mike Neumegen: https://fosstodon.org/@mikeneu
 
 Learn more at [`thefutureofjamstack.org`](https://thefutureofjamstack.org/).
+
+## Related coverage
+
+* [Developer Panel Wants an ‘Anti-Capitalistic Jamstack’](https://thenewstack.io/developer-panel-wants-an-anti-capitalistic-jamstack/)
+* [The future of Jamstack is anti-capitalist](https://whitep4nth3r.com/blog/the-future-of-jamstack-is-anti-capitalist/)
