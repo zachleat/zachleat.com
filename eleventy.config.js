@@ -73,6 +73,8 @@ module.exports = async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginAnalytics);
 
 	/* COPY */
+	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
 	eleventyConfig
 		.addPassthroughCopy({
 			// WebC assets
