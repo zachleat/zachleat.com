@@ -42,7 +42,10 @@ web367ImageAttrs:
 
 {% image avatarBioImageAttrs %}
 
-This web blog is written by **Zach Leatherman**. View his <a href="/resume/"> full résumé</a>.
+<ul class="list-inline fl fl-inline fl-nowrap">
+	<li>This web site is maintained by <strong>Zach Leatherman</strong> <em>(he, him, they)</em>.</li>
+	<li>View his <a href="/resume/"> full résumé</a>.</li>
+</ul>
 
 <ul class="list-inline fl fl-inline fl-nowrap">
 	<li><a href="https://fediverse.zachleat.com/@zachleat">{% indieAvatar "https://fediverse.zachleat.com/@zachleat" %}<strong>Mastodon</strong></a></li>
