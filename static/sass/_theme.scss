@@ -928,9 +928,9 @@ table-saw :is(th, td) {
 .project_video {
 	width: 100%;
 	max-width: 28.125rem;
-	border: 1px solid #fff;
+	border: 1px solid #ddd;
 	border-radius: .2em;
-	transition: .25s box-shadow;
+	transition: .25s box-shadow, .25s border-color;
 	box-shadow: 0 6px 12px 0px rgba(0, 0, 0, .1);
 }
 .project_img {
@@ -938,6 +938,7 @@ table-saw :is(th, td) {
 }
 a[href]:hover .project_img {
 	transform: scale(1.05);
+	border-color: #fff;
 	box-shadow: 0 0 0 3px rgba(0, 106, 35, 0.8), 0 6px 40px 4px rgba(0, 0, 0, .25);
 }
 @supports (box-shadow: none) {
