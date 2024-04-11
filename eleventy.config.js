@@ -335,7 +335,7 @@ module.exports = async function(eleventyConfig) {
 
 	eleventyConfig.addJavaScriptFunction("fetchYoutubeTranscript", async (videoId) => {
 		let asset = new AssetCache(`youtube_transcript_${videoId}`);
-		if(asset.isCacheValid("7d")) {
+		if(asset.isCacheValid("*")) {
 			return asset.getCachedValue();
 		}
 
@@ -601,16 +601,16 @@ module.exports = async function(eleventyConfig) {
 
 		return html.join("");
 	});
+};
 
-	return {
-		"templateFormats": [
-			"liquid",
-			"md",
-			"njk",
-			"html",
-			"11ty.js",
-		],
-		"htmlTemplateEngine": "liquid",
-		"markdownTemplateEngine": "liquid"
-	};
+module.exports.config = {
+	templateFormats: [
+		"liquid",
+		"md",
+		"njk",
+		"html",
+		"11ty.js",
+	],
+	htmlTemplateEngine: "liquid",
+	markdownTemplateEngine: "liquid"
 };
