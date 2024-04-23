@@ -6,13 +6,7 @@ tmpl: page
 <article class="h-entry">
 	<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if titleHtml %}{{ titleHtml }}{% else %}{{ title }}{% endif %}</h1>
 {% if posterImage.showOnPage and seo.openGraphBackgroundImage %}
-	{% if posterImage.showOnPage == "inline" %}
-	<div class="content-grid e-content">
-	{% endif %}
-		<div class="fullwidth fullwidth-poster m-4{% if posterImage.showOnPage == "inline" %} fullwidth-poster--inline{% endif %}" style="{% if posterImage.height %}--poster-maxheight: {{ posterImage.height }};{% endif %}{% if posterImage.offset %}--poster-offset: {{ posterImage.offset }}{% endif %}">{% imageInline seo.openGraphBackgroundImage, seo.openGraphAlt, true %}</div>
-	{% if posterImage.showOnPage == "inline" %}
-	</div>
-	{% endif %}
+	<div class="fullwidth fullwidth-poster m-4" style="{% if posterImage.height %}--poster-maxheight: {{ posterImage.height }};{% endif %}{% if posterImage.offset %}--poster-offset: {{ posterImage.offset }}{% endif %}">{% imageInline seo.openGraphBackgroundImage, seo.openGraphAlt, true %}</div>
 {% endif %}
 	<div class="content-grid-sibling">
 		<div class="sub p-description">

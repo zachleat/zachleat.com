@@ -1,6 +1,7 @@
 const path = require("node:path");
 const Image = require("@11ty/eleventy-img");
 const { createHash } = require("crypto");
+const { eleventyImageOnRequestDuringServePlugin } = require("@11ty/eleventy-img");
 
 function getCryptoHash(src) {
 		let hash = createHash("sha1");
@@ -12,11 +13,13 @@ async function imageShortcode(attrs = {}, options = {}, isFullWidth = false) {
 	options = Object.assign({},{
 		widths: [null],
 		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "jpeg"] : ["auto"],
+		transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
 		urlPath: "/img/built/",
 		outputDir: "./_site/img/built/",
 		sharpAvifOptions: {},
 	}, options);
 
+	// @11ty/eleventy-img
 	let metadata = await Image(attrs.src || attrs.path, options);
 
 	let imageAttributes = Object.assign({
@@ -34,9 +37,7 @@ async function imageShortcode(attrs = {}, options = {}, isFullWidth = false) {
 	}
 
 	// You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-	return Image.generateHTML(metadata, imageAttributes, {
-		whitespaceMode: "inline"
-	});
+	return Image.generateHTML(metadata, imageAttributes);
 }
 
 function backgroundImageFilter(src, width, options = {}) {
@@ -60,6 +61,7 @@ function backgroundImageFilter(src, width, options = {}) {
 	}
 
 	// async
+	// @11ty/eleventy-img
 	Image(src, options);
 
 	return `url('/img/built/${filename}')`;
@@ -97,6 +99,7 @@ function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 		// careful, AVIF here is a little slow!
 		formats: ["webp", "jpeg"],
 		widths: [375, 650], // 1200 is not used, max rendered size is about 450px.
+		statsOnly: true,
 		urlFormat: function({width, format}) {
 			let size;
 			if(width <= 400) {
@@ -132,6 +135,7 @@ function getImageServiceHtml(targetUrl, width, height, outputWidths = [], alt=""
 		// careful, AVIF here is a little slow!
 		formats: ["webp", "jpeg"],
 		widths: outputWidths,
+		statsOnly: true,
 		urlFormat: function({width, format}) {
 			return `${fullUrl}${format}/${width}/`;
 		}
@@ -163,6 +167,7 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 		// format here is static
 		formats: ["jpeg"],
 		widths: ["auto"],
+		statsOnly: true,
 		urlFormat: function() {
 			return targetUrl;
 		}
@@ -178,6 +183,9 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 }
 
 module.exports = function(eleventyConfig) {
+	// Serve images on request
+	eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
+
 	eleventyConfig.addAsyncShortcode("imageInline", (src, alt, isFullWidth) => {
 		let attrs = {
 			src: path.join(".", src),
@@ -189,6 +197,7 @@ module.exports = function(eleventyConfig) {
 		};
 		return imageShortcode(attrs, options, isFullWidth);
 	});
+
 	eleventyConfig.addAsyncShortcode("image", imageShortcode);
 	eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
 

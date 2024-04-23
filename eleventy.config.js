@@ -46,8 +46,8 @@ module.exports = async function(eleventyConfig) {
 	});
 
 	eleventyConfig.setServerOptions({
-		domdiff: false,
-		showVersion: false,
+		domDiff: false,
+		showVersion: true,
 	});
 
 	/* PLUGINS */

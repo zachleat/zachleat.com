@@ -1,9 +1,5 @@
 const eleventyImage = require("@11ty/eleventy-img");
 
-if(process.env.ELEVENTY_PRODUCTION) {
-	eleventyImage.concurrency = 20;
-}
-
 function getAvatarImageOptions(username) {
 	return {
 		widths: [72],

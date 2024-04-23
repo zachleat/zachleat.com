@@ -300,7 +300,7 @@ h5,
 	}
 }
 @supports (object-fit: cover) {
-	.fullwidth-poster:not(.fullwidth-poster--inline) img {
+	.fullwidth-poster img {
 		width: 100%;
 		max-height: var(--poster-maxheight, 10vh);
 		object-fit: cover;
