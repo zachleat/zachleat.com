@@ -51,7 +51,7 @@ async function fetchTranscriptMarkup(captions) {
 
 <div @html="fetchTranscriptMarkup(captions)" webc:nokeep></div>
 
-<script type="module">
+<script type="module" webc:if="$data.JS_ENABLED">
 class YouTubeDeepLink extends HTMLElement {
 	#watching = false;
 	#video = null;

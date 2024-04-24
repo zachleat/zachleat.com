@@ -8,7 +8,7 @@
 
 	<speedlify-score webc:raw webc:root @attributes speedlify-url="https://www.speedlify.dev"></speedlify-score>
 
-	<template data-island="once" webc:raw>
+	<template data-island="once" webc:raw webc:if="$data.JS_ENABLED">
 		<script src="/static/speedlify-score.js"></script>
 	</template>
 </is-land>

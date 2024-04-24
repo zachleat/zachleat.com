@@ -1,7 +1,7 @@
 <is-land on:idle>
 	<years-ago :date="date">
 		<slot></slot>
-		<template data-island="once" webc:raw>
+		<template data-island="once" webc:raw webc:if="$data.JS_ENABLED">
 			<script src="/static/years-ago.js"></script>
 		</template>
 	</years-ago>

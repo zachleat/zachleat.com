@@ -24,9 +24,13 @@ const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
 
+const JS_ENABLED = false;
+
 module.exports = async function(eleventyConfig) {
 	// TODO move this back out after this config file is ESM
 	const { EleventyRenderPlugin } = await import("@11ty/eleventy");
+
+	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
@@ -363,7 +367,7 @@ module.exports = async function(eleventyConfig) {
 			imageHtml = opengraphImageHtml(url);
 		}
 
-		return `<script type="module" src="/static/browser-window.js"></script>
+		return `${JS_ENABLED ? `<script type="module" src="/static/browser-window.js"></script>` : ""}
 <div><browser-window mode="dark"${skipIcon ? "" : " icon"} url="${url}" shadow flush><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
 	});
 
@@ -562,9 +566,13 @@ module.exports = async function(eleventyConfig) {
 		let id = `carouscroll-id-${nanoid(4)}`;
 
 		let html = [];
-		html.push(`<script type="module" src="/static/browser-window.js"></script>`);
+		if(JS_ENABLED) {
+			html.push(`<script type="module" src="/static/browser-window.js"></script>`);
+		}
 		html.push(`<div><browser-window shadow flush><is-land on:idle on:visible>`);
-		html.push(`<template data-island><script type="module" src="/static/carouscroll.js"></script></template>`);
+		if(JS_ENABLED) {
+			html.push(`<template data-island><script type="module" src="/static/carouscroll.js"></script></template>`);
+		}
 		html.push(`<carou-scroll tabindex="0" id="${id}" class="carouscroll${isSingleSlide ? " carouscroll-single" : ""}"${isSingleSlide ? " disabled" : ""}>`);
 
 		for(let j=indexStart, k=indexEnd; j <= k; j++) {

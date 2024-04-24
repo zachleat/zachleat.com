@@ -55,18 +55,24 @@
 		<link href="https://v1.opengraph.11ty.dev" rel="preconnect" crossorigin>
 		<link href="https://v1.indieweb-avatar.11ty.dev" rel="preconnect" crossorigin>
 
+{%- if JS_ENABLED %}
 		<link rel="stylesheet" href="/static/defer.css" media="print" onload="this.media='all'">
 		<noscript>
 			<link href="/static/defer.css" rel="stylesheet">
 		</noscript>
+{%- else %}
+		<link href="/static/defer.css" rel="stylesheet">
+{%- endif %}
 {%- for url in stylesheets -%}
 		<link href="{{ url }}" rel="stylesheet">
 {%- endfor %}
 {%- for stylesheet in stylesheetsDist -%}
 		<link href="/static/{{ stylesheet }}" rel="stylesheet">
 {%- endfor %}
+{%- if JS_ENABLED %}
 		<script>{% include "./static/initial.js" %}</script>
 		<script src="/static/defer.js" type="module"></script>
+{%- endif %}
 
 		<meta property="eleventy:path" content="{{ page.inputPath }}">
 
@@ -84,8 +90,10 @@
 	<body class="{%- if classes and classes.body %} {{ classes.body }}{% endif -%}"
 		{% unless excludeFromSearch %} data-pagefind-body{% endunless %}>
 		{{ content }}
+{%- if JS_ENABLED %}
 {%- for url in scripts -%}
 		<script src="{{ url }}" defer>
 {%- endfor %}
+{%- endif %}
 	</body>
 </html>

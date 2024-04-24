@@ -96,12 +96,14 @@ classes:
 				}
 			}
 			</style>
+{%- if JS_ENABLED %}
 			<script>
 			function InfinityBurgerColor(count) {
 				return `hsl(${count * 5 % 360}, 100%, 50%)`
 			}
 			</script>
 			<script type="module" src="/static/infinity-burger.js"></script>
+{%- endif %}
 		</template>
 	</is-land>
 </div>
