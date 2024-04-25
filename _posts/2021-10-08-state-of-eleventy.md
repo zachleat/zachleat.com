@@ -10,7 +10,7 @@ medialength: 2 min
 ---
 Maybe you watched [last year’s Jamsnack video for Jamstack Conf 2020](/web/jamsnack/). It’s that time again! I made a short two minute video for Jamstack Conf 2021.
 
-<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## What’s New in 2021?
 

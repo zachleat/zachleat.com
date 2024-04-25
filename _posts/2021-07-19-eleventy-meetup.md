@@ -14,7 +14,7 @@ In this talk I started to build [Rainglow](/web/rainglow/) and showcased another
 
 [Watch on YouTube](https://www.youtube.com/watch?v=nlbdRUIgyjo) or below:
 
-<div><youtube-lite-player @slug="nlbdRUIgyjo" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## Related:
 

@@ -20,7 +20,7 @@ A demo project and walkthrough showing how to secure some of your Eleventy Serve
 
 ## Walk-through
 
-<div><youtube-lite-player @slug="At19o2Ox57Y" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## Demo
 {% originalPostEmbed urls.demo %}

@@ -16,7 +16,7 @@ medialength: 59 min
 
 This is a talk I gave at [Nebraska Code Camp 2013](http://www.nebraskacodecamp.com/Sessions/6).
 
-<div><youtube-lite-player @slug="NkVmhe-vvAo" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="NkVmhe-vvAo" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 > “Tool and die makers are a class of machinists who work primarily in toolroom environments—…often in an environment with flexible, semipermeable boundaries from production work.”
 >

@@ -10,6 +10,7 @@ metadata:
   speaking:
     type: conference
     country: USA
+  youtubeId: dqT5sDhNK90
 external_icon_url: 'https://nebraskajs.com/'
 ---
 
@@ -17,7 +18,7 @@ _Originally presented at NEJS CONF 2019 in Omaha, NE USA 🇺🇸 on August 8, 2
 
 This was, sadly, NEJS CONF’s last year. Our incredible and fearless organizer team put on five amazing events. I wanted to do a short recap of the special things we’ve done at NEJS CONF over those five years as a capstone to our five year run.
 
-<div><youtube-lite-player @slug="dqT5sDhNK90" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## Slides
 

@@ -9,7 +9,7 @@ metadata:
   youtubeId: bz_RxLnSAqc
 medialength: 57 min
 ---
-<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 * Related tweet from [@FITC](https://twitter.com/FITC/status/1585305272666312704).
 

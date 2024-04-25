@@ -55,10 +55,12 @@ slides:
 ---
 <script type="module" src="/static/js/offviewport.js"></script>
 <div>
+{%- renderTemplate "webc" %}
 	<off-viewport>
-		<youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}" @jsapi @hide-link></youtube-lite-player>
+		<youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title" @jsapi @hide-link></youtube-lite-player>
 	</off-viewport>
-	<youtube-link @label="{{ title }}" href="https://youtube.com/watch?v={{ metadata.youtubeId }}"></youtube-link>
+	<youtube-link :@label="$data.title" :href="`https://youtube.com/watch?v=${$data.metadata.youtubeId}`"></youtube-link>
+{%- endrenderTemplate %}
 </div>
 
 [Watch on YouTube](https://www.youtube.com/watch?v=aM24L2g0peA) or check out the full [Eleventy Meetup YouTube channel](https://www.youtube.com/c/theeleventymeetup)!
@@ -69,4 +71,6 @@ slides:
 
 ## Searchable Transcript
 
-<div><youtube-deep-link videoid="{{ metadata.youtubeId }}" :@captions="fetchYoutubeTranscript('{{ metadata.youtubeId }}')"></youtube-deep-link></div>
+{% renderTemplate "webc" %}
+<div><youtube-deep-link :videoid="$data.metadata.youtubeId" :@captions="fetchYoutubeTranscript($data.metadata.youtubeId)"></youtube-deep-link></div>
+{% endrenderTemplate %}

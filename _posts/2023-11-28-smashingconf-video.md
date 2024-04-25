@@ -14,7 +14,7 @@ medialength: 24 min
 external_icon_url: "https://smashingconf.com/"
 permalink: /web/smashingconf/2023/video/
 ---
-<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 * [Full event playlist on YouTube](https://www.youtube.com/playlist?list=PLxQqv_fazRs1W7oGj3X_Pjwijv3TXll7r).
 * [_smashingconf.com_](https://smashingconf.com/)

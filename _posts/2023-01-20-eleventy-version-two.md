@@ -23,4 +23,4 @@ If you want to **help spread the word**, I would love a [boost on this toot](htt
 
 ## Release Video
 
-<div><youtube-lite-player @slug="TcTR0TLqM3I" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="TcTR0TLqM3I" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}

@@ -11,4 +11,4 @@ metadata:
 
 Catch the [two minute highlight reel on this tweet from `@m4d_z`](https://twitter.com/m4d_z/status/1506644072374714369).
 
-<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}

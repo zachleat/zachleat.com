@@ -187,7 +187,7 @@ With a nod to the tech stack, here are a few things I used to construct the demo
 
 ## Walkthrough on YouTube
 
-<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ video_title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.video_title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ---
 

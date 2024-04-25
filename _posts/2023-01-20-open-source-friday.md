@@ -4,10 +4,11 @@ tags: ["eleventy", "speaking"]
 metadata:
   speaking:
     type: livestream
+  youtubeId: rD07m-uAGaE
 ---
 I was on GitHub’s Open Source Friday to chat a bit about WebC and Eleventy.
 
-<div><youtube-lite-player @slug="rD07m-uAGaE" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## Related
 

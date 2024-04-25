@@ -19,7 +19,7 @@ Raging Netflix Queue supports Rotten Tomatoes, IMDB, Google Movies, Apple Traile
 
 ## Screencast
 
-<div><youtube-lite-player @slug="YuRuYdfvTA0" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="YuRuYdfvTA0" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 
 ## Hiccups

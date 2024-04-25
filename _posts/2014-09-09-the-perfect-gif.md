@@ -17,7 +17,7 @@ Last year at [Barcamp Omaha](http://barcampomaha.org/), I did a tongue-in-cheek 
 
 In the talk I discuss: pronunciation, GIF sources, how to create your own GIFs, and GIF search and workflow. If you listen closely, you can hear the audience (playfully) boo when I finally pronounce GIF for the first time in the talk.
 
-<div><youtube-lite-player @slug="6nGxIBMMaFw" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="6nGxIBMMaFw" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 
 *[Watch on YouTube](https://www.youtube.com/watch?v=6nGxIBMMaFw)*

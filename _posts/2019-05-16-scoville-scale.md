@@ -17,7 +17,7 @@ This conference really was something special. [Marc Thiele](https://twitter.com/
 
 ## Video
 
-<div><youtube-lite-player @slug="xnaazDFHn40" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="xnaazDFHn40" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## Slides
 

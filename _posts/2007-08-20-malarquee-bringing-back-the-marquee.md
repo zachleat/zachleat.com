@@ -12,7 +12,7 @@ Well today, we’re going to solve all of that. Today, I’m going to show you a
 
 ## [Malarquee](http://www.zachleat.com/Projects/Malarquee)
 
-<div><youtube-lite-player @slug="9OiF8Hd6Db0" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="9OiF8Hd6Db0" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## What is it for?
 

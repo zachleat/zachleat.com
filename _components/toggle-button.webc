@@ -9,7 +9,7 @@
 		<span class="toggle-control"></span>
 		<span class="toggle-text" @html="label"></span>
 	</button>
-	<template data-island="once" webc:raw webc:if="$data.JS_ENABLED">
+	<template data-island="once" webc:raw>
 		<link rel="stylesheet" href="/static/toggle-button.css">
 		<script src="/static/toggle-button.js"></script>
 	</template>

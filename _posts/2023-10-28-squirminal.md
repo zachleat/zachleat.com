@@ -72,4 +72,6 @@ if("customElements" in window) {
 
 Here’s a demo screencast I recorded of my personal Your Year on Netlify flow.
 
+{%- renderTemplate "webc" %}
 <div><youtube-lite-player @slug="3PK0Yq9n5SI" @label="Walkthrough of the Your Year On Netlify Microsite"></youtube-lite-player></div>
+{%- endrenderTemplate %}

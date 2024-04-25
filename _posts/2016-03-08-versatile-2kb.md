@@ -17,4 +17,4 @@ medialength: 25 min
 
 Or watch here:
 
-<div><youtube-lite-player @slug="TUxTai00v1k" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="TUxTai00v1k" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}

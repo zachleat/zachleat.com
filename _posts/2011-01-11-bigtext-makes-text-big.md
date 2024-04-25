@@ -67,7 +67,7 @@ Turns out, the *BigText Demo Wizard* makes for really easy [Kinetic Typography][
 
  [ke]: http://vimeo.com/channels/kinetictypography
 
-<div><youtube-lite-player @slug="OuqB6e6NPRM" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="OuqB6e6NPRM" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 The above is simply the manual process of typing lyrics into the *BigText Demo Wizard*. You can easily make one of these too, with the help of the following keyboard shortcuts:
 

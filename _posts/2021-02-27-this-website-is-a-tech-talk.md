@@ -15,7 +15,7 @@ Needless to say, [the tweet](https://twitter.com/zachleat/status/136578697481309
 
 If you’re at all curious how we did it, I’ll explain it and more in this talk about building web sites. The talk also delves into Single Page Applications, Multi Page Applications, modern JavaScript Frameworks, and what I believe to be a better future for web development.
 
-<div><youtube-lite-player @slug="znLxHkdtQzk" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 * [Original video recorded and posted on Vimeo by Smashing Conference](https://vimeo.com/468775760/1838969b45)
 * Talk originally delivered for [SmashingConf Austin 2020](https://smashingconf.com/austin-2020/)

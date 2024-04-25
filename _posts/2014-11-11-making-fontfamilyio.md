@@ -15,7 +15,8 @@ medialength: 19 min
 
 ## Video
 
-<div><youtube-lite-player @slug="LbCT38Idhyk" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="LbCT38Idhyk" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
+
 
 [Watch the talk on YouTube](https://www.youtube.com/watch?v=LbCT38Idhyk) (18:45) <span class="tag video">Video</span>
 

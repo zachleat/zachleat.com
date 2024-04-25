@@ -85,4 +85,6 @@ As this is using `<is-land>` this re-enables the JavaScript dependency for the p
 
 You can see all of this in action below:
 
+{%- renderTemplate "webc" %}
 <div><youtube-lite-player @slug="YYJpFdEaAuc" @start="188" @label="Partial Hydration and Islands Architecture—Eleventy 🎈 Weekly №12"></youtube-lite-player></div>
+{%- endrenderTemplate %}

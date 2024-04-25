@@ -16,7 +16,7 @@ This talk was also converted to blog post format at: **[Don’t Shut Down Your B
 
 ---
 
-<div><youtube-lite-player @slug="RL_0Gkn4B_U" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 
 

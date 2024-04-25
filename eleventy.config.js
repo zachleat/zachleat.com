@@ -66,15 +66,12 @@ module.exports = async function(eleventyConfig) {
 			"_components/**/*.webc",
 			"npm:@11ty/eleventy-plugin-syntaxhighlight/*.webc",
 		],
-		useTransform: true,
-		transformData: {
-			pkg,
-			JS_ENABLED,
-		}
 	});
 
 	eleventyConfig.addPlugin(pluginWebmentions);
-	eleventyConfig.addPlugin(EleventyRenderPlugin);
+	eleventyConfig.addPlugin(EleventyRenderPlugin, {
+		accessGlobalData: true,
+	});
 	eleventyConfig.addPlugin(pluginAnalytics);
 
 	/* COPY */
@@ -222,7 +219,7 @@ module.exports = async function(eleventyConfig) {
 		}
 	});
 
-	eleventyConfig.addLiquidFilter("timePosted", (startDate, endDate = Date.now()) => {
+	eleventyConfig.addFilter("timePosted", (startDate, endDate = Date.now()) => {
 		if(typeof startDate === "string") {
 			startDate = Date.parse(startDate);
 		}
@@ -349,14 +346,6 @@ module.exports = async function(eleventyConfig) {
 		await asset.save(transcript, "json");
 		return transcript;
 	});
-
-	// WebC things
-	eleventyConfig.addFilter("processAsWebC", async function(content) {
-		content = `<template webc:nokeep webc:nobundle>${content}</template>`;
-
-		return eleventyConfig.javascriptFunctions.renderTemplate.call(this, content, "webc");
-	});
-
 	/* END FILTERS */
 
 	/* SHORTCODES */

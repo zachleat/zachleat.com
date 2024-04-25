@@ -10,7 +10,7 @@ medialength: 2 min
 ---
 We did it in [2020](/web/jamsnack/). We did it in [2021](/web/state-of-eleventy/). It’s that time again! The newest installment of Eleventy in Two Minutes premiered at Jamstack Conf 2022.
 
-<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## What’s New in 2022?
 

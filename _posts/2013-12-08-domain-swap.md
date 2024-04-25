@@ -16,5 +16,5 @@ We must declare our independence from the shackles of our development domains! F
 
 It is also available on [GitHub](https://github.com/jmhobbs/domain-swap).
 
-<div><youtube-lite-player @slug="rBjWONjqwNg" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="rBjWONjqwNg" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 

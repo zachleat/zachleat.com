@@ -8,17 +8,22 @@
 
 		<form class="toggle-features-form">
 			<div class="fl fl-inline fl-nowrap">
+				{%- renderTemplate "webc" %}
 				<div>
 					<toggle-button label="CSS" class="toggle-css"></toggle-button>
 				</div>
 				<div>
 					<toggle-button label="Web Fonts" @toggleclass="font-fallback"></toggle-button>
 				</div>
+				{%- endrenderTemplate %}
 
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[urlWithOrigin] %}
 				<a href="https://www.speedlify.dev/zachleat.com/#site-{{ speedlify[urlWithOrigin].hash }}" class="speedlify-link" aria-label="View the full results on speedlify.dev">
-					<speedlify-score hash="{{ speedlify[urlWithOrigin].hash }}" score weight></speedlify-score>
+					{%- assign hash = speedlify[urlWithOrigin].hash %}
+					{%- renderTemplate "webc", hash %}
+					<speedlify-score :hash="_" score weight></speedlify-score>
+					{%- endrenderTemplate %}
 				</a>
 {%- endif %}
 			</div>

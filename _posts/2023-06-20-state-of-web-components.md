@@ -7,6 +7,7 @@ tags:
 metadata:
   speaking:
     type: livestream
+  youtubeId: lC9sI-S7O8g
 external_icon_url: https://www.thisdotmedia.com/state-of-web-components-june-2023/
 medialength: 94 min
 ---
@@ -16,7 +17,7 @@ We talked a bit about the controversial `is` attribute, how we’re all excited 
 
 Watch the livestream below:
 
-<div><youtube-lite-player @slug="lC9sI-S7O8g" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 Or, [go to the event page](https://www.thisdotmedia.com/state-of-the-web/state-of-web-components-june-2023):
 

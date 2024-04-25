@@ -11,11 +11,10 @@ tags:
 metadata:
   speaking:
     type: meetup
+  youtubeId: oUoFmurl71k
 medialength: 73 min
 ---
-<div><youtube-lite-player @slug="oUoFmurl71k" @label="{{ title }}"></youtube-lite-player></div>
-
-[Watch on YouTube.](https://www.youtube.com/watch?v=oUoFmurl71k)
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 Also posted on the [Agility CMS web site](https://agilitycms.com/download/webinar-jamstack-eleventy-agilitycms).
 

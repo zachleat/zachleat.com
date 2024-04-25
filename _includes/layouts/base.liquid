@@ -50,6 +50,7 @@
 {% else %}
 		<style>{% renderFile "./static/initial.scss" %}</style>
 {% endif %}
+		<style>{% getBundle 'css' %}</style><!-- WebC -->
 
 		<!-- Preconnect to Eleventy services -->
 		<link href="https://v1.opengraph.11ty.dev" rel="preconnect" crossorigin>
@@ -69,8 +70,10 @@
 {%- for stylesheet in stylesheetsDist -%}
 		<link href="/static/{{ stylesheet }}" rel="stylesheet">
 {%- endfor %}
+
 {%- if JS_ENABLED %}
 		<script>{% include "./static/initial.js" %}</script>
+		<script type="module">{% getBundle 'js' %}</script><!-- WebC -->
 		<script src="/static/defer.js" type="module"></script>
 {%- endif %}
 

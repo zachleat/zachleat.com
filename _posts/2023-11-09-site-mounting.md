@@ -9,7 +9,9 @@ toot: https://fediverse.zachleat.com/@zachleat/111381417124715846
 ---
 CloudCannon launched a new feature today called [Site Mounting](https://cloudcannon.com/documentation/articles/site-mounting/) and I’m very excited about it. I put together a quick video demoing the feature, which I’ve immediately put to good use across a bunch of projects.
 
-<div><youtube-lite-player @slug="IwZf9VdQbKo" @label="{{ video_title }}"></youtube-lite-player></div>
+{%- renderTemplate "webc" %}
+<div><youtube-lite-player @slug="IwZf9VdQbKo" :@label="$data.video_title"></youtube-lite-player></div>
+{%- endrenderTemplate %}
 
 If you’re interested in looking at the demos used in the video above, here they are: [Style Guide](https://wandering-cow.cloudvent.net/), [Site Mounting](https://ardent-desert.cloudvent.net/), and [Geolocation](https://busy-jellyfish.cloudvent.net/).
 

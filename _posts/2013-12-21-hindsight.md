@@ -10,7 +10,7 @@ Rather than a bunch of individual “In Case You Missed It” tweets, I thought 
 
 If you only watch one web development talk I’ve done this year, make it this one. It’s a soup to nuts talk about a variety of topics and will show you how to build a future-proof, performance driven website from start to finish.
 
-<div><youtube-lite-player @slug="NkVmhe-vvAo" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="NkVmhe-vvAo" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 *Related Blog Post: [Tool or Die, a Web Developer’s Workflow](/web/tool-or-die/)*
 

@@ -108,7 +108,7 @@ slides:
 ---
 This talk was given at [TheJam.dev 2024](/web/thejam/).
 
-<div><youtube-lite-player @slug="{{ metadata.youtubeId }}" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 And the full slide deck is included below:
 

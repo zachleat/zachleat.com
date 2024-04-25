@@ -17,4 +17,4 @@ medialength: 57 min
 
 Or watch here:
 
-<div><youtube-lite-player @slug="aFT2BpSsrk0" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="aFT2BpSsrk0" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}

@@ -21,7 +21,7 @@ For this talk I built a social media platform: MySpaceBook.​info, the only soc
 
 This [video is hosted on YouTube](https://www.youtube.com/watch?v=X3SrZuH00GQ).
 
-<div><youtube-lite-player @slug="X3SrZuH00GQ" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="X3SrZuH00GQ" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## Slides
 

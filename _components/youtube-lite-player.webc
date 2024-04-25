@@ -18,11 +18,11 @@ is-land[ready] lite-youtube {
 	--yt-poster-img-url: var(--yt-poster-img-url-lazy);
 }
 </style>
-<script type="module" src="/static/browser-window.js" webc:keep webc:if="$data.JS_ENABLED"></script>
+<script type="module" src="/static/browser-window.js" webc:keep></script>
 <browser-window mode="dark" flush icon :url="getLinkUrl(slug, start)" shadow>
 	<is-land on:visible class="fluid-width-video-wrapper">
 		<lite-youtube :videoid="slug" :js-api="jsapi !== 'undefined' ? '' : false" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image: var(--yt-poster-img-url);--yt-poster-img-url-lazy: url('${poster || getPosterImage(slug, posterSize)}');`"></lite-youtube>
-		<template data-island="once" webc:raw webc:if="$data.JS_ENABLED">
+		<template data-island="once" webc:raw>
 			<style>
 			lite-youtube {
 				max-width: 100% !important;

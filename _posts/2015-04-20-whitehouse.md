@@ -72,10 +72,7 @@ Holy shit.
 
 Jump to the **2h 23m 26s** mark to see my portion.
 
-<figure>
-	<div><youtube-lite-player @slug="3OPJPvUZbP0" start="8607" @label="{{ title }}"></youtube-lite-player></div>
-	<figcaption><a href="https://www.youtube.com/watch?v=3OPJPvUZbP0&amp;t=8607">Tech Meetup at the White House &mdash; Zach Leatherman on NebraskaJS</a> on YouTube.</figcaption>
-</figure>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="3OPJPvUZbP0" :@label="$data.title" @start="8607"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 After my talk was over, I immediately posted this tweet:
 

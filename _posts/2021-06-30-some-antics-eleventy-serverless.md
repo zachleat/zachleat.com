@@ -12,7 +12,7 @@ medialength: 73 min
 
 [Watch on YouTube](https://www.youtube.com/watch?v=wneO9XKkGTA) or below:
 
-<div><youtube-lite-player @slug="wneO9XKkGTA" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="wneO9XKkGTA" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 Ben has also added a [post on his web site with a full transcript](https://someantics.dev/first-look-eleventy-serverless/)!
 

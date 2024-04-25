@@ -10,7 +10,7 @@ medialength: 4 min
 ---
 [Watch on YouTube](https://www.youtube.com/watch?v=Lg9BO8vBXsc) or below:
 
-<div><youtube-lite-player @slug="Lg9BO8vBXsc" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## Related:
 

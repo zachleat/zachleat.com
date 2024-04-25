@@ -20,7 +20,4 @@ medialength: 42 min
 * [Video on YouTube](https://www.youtube.com/watch?v=8XSRgKIuUqo)
 * [Velocity Session Link](http://velocityconf.com/devops-web-performance-ny-2015/public/schedule/detail/46234)
 
-<figure>
-	<div><youtube-lite-player @slug="8XSRgKIuUqo" @label="{{ title }}"></youtube-lite-player></div>
-	<figcaption><a href="https://www.youtube.com/watch?v=8XSRgKIuUqo">YouTube Video: Velocity Conference, The Performance and Usability of Font Loading</a></figcaption>
-</figure>
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="8XSRgKIuUqo" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}

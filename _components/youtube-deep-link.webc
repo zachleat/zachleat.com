@@ -48,10 +48,8 @@ async function fetchTranscriptMarkup(captions) {
 	return html.join("");
 }
 </script>
-
-<div @html="fetchTranscriptMarkup(captions)" webc:nokeep></div>
-
-<script type="module" webc:if="$data.JS_ENABLED">
+<div @html="fetchTranscriptMarkup(captions)"></div>
+<script type="module">
 class YouTubeDeepLink extends HTMLElement {
 	#watching = false;
 	#video = null;
@@ -86,6 +84,7 @@ class YouTubeDeepLink extends HTMLElement {
 
 	connectedCallback() {
 		let buttons = this.querySelectorAll("[data-offset]");
+
 		for(let btn of buttons) {
 			btn.addEventListener("click", (e) => {
 				let target = e.target.closest("[data-offset]");

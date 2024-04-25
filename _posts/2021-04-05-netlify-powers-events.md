@@ -14,4 +14,4 @@ It also includes the world premiere of the [Eleventy Cloud Demo repository](http
 
 [Watch on YouTube](https://www.youtube.com/watch?v=6XtVDfJKFzs) or below:
 
-<div><youtube-lite-player @slug="6XtVDfJKFzs" @label="{{ title }}"></youtube-lite-player></div>
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
