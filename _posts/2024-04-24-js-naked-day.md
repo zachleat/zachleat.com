@@ -4,8 +4,6 @@ external_url: https://js-naked-day.org/
 external_url_screenshotmode: opengraph
 tags:
   - external
-showOnHomePage: true
-pinned: true
 ---
 Today my personal web site is being served _sans-JavaScript_ in honor of JavaScript Naked Day.
 

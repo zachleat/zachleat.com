@@ -24,7 +24,7 @@ const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
 
-const JS_ENABLED = false;
+const JS_ENABLED = true;
 
 module.exports = async function(eleventyConfig) {
 	// TODO move this back out after this config file is ESM
@@ -68,7 +68,8 @@ module.exports = async function(eleventyConfig) {
 		],
 		useTransform: true,
 		transformData: {
-			pkg
+			pkg,
+			JS_ENABLED,
 		}
 	});
 
