@@ -26,6 +26,8 @@ A **huge thank you to our sponsors**:
 - [_Chris Ferdinandi:_ Learn how to make web sites real good](https://gomakethings.com/learn-how-to-make-websites-real-good/)
 - [_Alex Ward:_ 11ty Conference Thoughts](https://alextheward.com/posts/11ty-conference-thoughts/)
 - [_Brian Baldock:_ Opposum Symposium](https://www.brianbaldock.com/blog/opossum-symposium/)
+- [_Juha-Matti Santala:_ Recap of 11ty International Symposium on Making Web Sites Real Good](https://hamatti.org/posts/recap-of-international-symposium-on-making-web-sites-real-good/)
+- [_Tobias Fedder:_ My impressions on The 11ty International Symposium on Making Web Sites Real Good](https://tfedder.de/blog/impressions-11ty-conference/)
 
 ## Stream
 

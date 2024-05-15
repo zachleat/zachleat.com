@@ -775,6 +775,7 @@ th {
 td.numeric,
 th.numeric {
 	text-align: right;
+	white-space: nowrap;
 }
 table-saw :is(th, td) {
 	font-size: 0.8125em; /* 13px /16 */
