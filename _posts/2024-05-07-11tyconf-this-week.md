@@ -4,6 +4,7 @@ external_url: https://www.11ty.dev/blog/11ty-conf-final-week/
 external_url_screenshotmode: opengraph
 tags:
   - external
+  - eleventy
 showOnHomePage: true
 ---
 
