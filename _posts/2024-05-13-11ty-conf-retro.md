@@ -33,7 +33,7 @@ A **huge thank you to our sponsors**:
 
 ## Stream
 
-{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" @label="The 11ty International Symposium on Making Web Sites Real Good (Live stream)"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 ## Analytics and Stats
 
