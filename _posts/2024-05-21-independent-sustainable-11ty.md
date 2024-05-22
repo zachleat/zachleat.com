@@ -23,13 +23,15 @@ If you use 11ty at work, now is the time to get your company involved. To reinfo
 * Our preferred fundraising platform is Open Collective: [`opencollective.com/11ty`](https://opencollective.com/11ty)
 * We are also on GitHub Sponsors, which may already be a vendor approved by your company: [`github.com/sponsors/11ty`](https://github.com/sponsors/11ty) ([Learn more about sponsoring via GitHub sponsors](https://docs.github.com/en/sponsors/sponsoring-open-source-contributors/sponsoring-an-open-source-contributor-through-github))
 
-At time of writing, we have `$2308` in monthly recurring contributions. Our fundraising goal is `$6000` (monthly). We are currently 38% to this goal!
+At time of writing, we had approximately `$2200` in monthly recurring contributions. Our fundraising goal is `$6000` (monthly).
 
 <a href="https://opencollective.com/11ty">
 	<fundraising-status min="0" max="6000" value="{{ eleventyFundraising.monthly.value }}" style="--fs-color: #e23c2f;">
 		<img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2F/" width="30" height="30" alt="11ty Logo" loading="lazy" decoding="async">
 	</fundraising-status>
 </a>
+
+_The above chart updates daily with live data and we are currently {{ eleventyFundraising.monthly.value | times: 100 | divided_by: 6000 | round: 1 }}% to the goal: ${{ eleventyFundraising.monthly.value }} of $6000 USD._
 
 If you have questions or want to have a discussion about this (very big) news, [please email me directly](mailto:zach@11ty.dev). Let’s work together!
 
