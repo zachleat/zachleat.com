@@ -1719,8 +1719,7 @@ a[href][data-icon]:has(> *) > * {
 a[href].favicon:before,
 .favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):before,
 .favicon-optin a[href^="https://www.npmjs.com"]:not(.favicon-optout):before,
-.favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before,
-.favicon-optin a[href^="https://cloudcannon.com"]:not(.favicon-optout):before {
+.favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before {
 	content: "";
 	display: inline-block;
 	vertical-align: text-bottom;
@@ -1731,9 +1730,6 @@ a[href].favicon:before,
 }
 .favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):before {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Farchive.org%2F/");
-}
-.favicon-optin a[href^="https://cloudcannon.com"]:not(.favicon-optout):before {
-	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fcloudcannon.com%2F/");
 }
 .favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fgithub.com%2F/");
