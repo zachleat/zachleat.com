@@ -1,13 +1,7 @@
 const sanitizeHTML = require("sanitize-html");
-const randomCase = require('random-case');
-const Natural = require('natural');
 
 const webmentionBlockList = require("../_data/webmentionsBlockList.json");
 const getBaseUrl = require("../_includes/getBaseUrl");
-
-const SNARKY_ENABLED = false;
-
-const analyze = new Natural.SentimentAnalyzer("English", Natural.PorterStemmer, "afinn");
 
 module.exports = function(eleventyConfig) {
 
@@ -72,22 +66,5 @@ module.exports = function(eleventyConfig) {
 				}
 				return 0;
 			});
-	});
-
-
-	eleventyConfig.addLiquidFilter("randomCase", function(content, sentimentValue) {
-		if(SNARKY_ENABLED && content && sentimentValue < -0.07 && content.length <= 5000) {
-			return randomCase(content);
-		}
-		return content;
-	});
-
-	eleventyConfig.addLiquidFilter("getSentimentValue", function(content) {
-		if( SNARKY_ENABLED && process.env.ELEVENTY_PRODUCTION && content ) {
-			const tokenizer = new Natural.WordTokenizer();
-			return analyze.getSentiment(tokenizer.tokenize(content));
-		}
-
-		return 0;
 	});
 };

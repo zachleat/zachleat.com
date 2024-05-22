@@ -14,7 +14,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 
-const pkg = require("./package.json");
 const siteData = require("./_data/site.json");
 const pluginImage = require("./_11ty/imagePlugin.js");
 const { imageShortcode, opengraphImageHtml, screenshotImageHtmlFullUrl } = pluginImage;

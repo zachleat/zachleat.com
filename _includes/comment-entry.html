@@ -1,11 +1,10 @@
-{% assign sentiment = comment.message | getSentimentValue %}
-<li class="static-comments-reply{% if sentiment < -0.07 %} static-comments-reply-salty{% endif %}" id="comment-{{ comment.postId }}" data-sentiment="{{ sentiment | round: 3 }}">
+<li class="static-comments-reply" id="comment-{{ comment.postId }}">
 	<div class="static-comments-hed">
 		<img src="{{ comment.avatar }}" class="static-comments-img" width="48" height="48">
 		<h3 class="static-comments-title cased">{{ comment.author }} <span class="tag-inline" title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">Disqus</span></h3>
 		<em class="static-comments-date"><a href="#comment-{{ comment.postId }}">{{ comment.date | readableDateFromISO: "dd LLL yyyy" }}</a></em>
 	</div>
-	<div class="static-comments-msg{% if comment.message.length > 5000 %} static-comments-msg-long{% endif %}">{{ comment.message | sanitizeHTML | randomCase: sentiment }}</div>
+	<div class="static-comments-msg{% if comment.message.length > 5000 %} static-comments-msg-long{% endif %}">{{ comment.message | sanitizeHTML }}</div>
 	<ol>
 	{% for reply in comment.replies %}
 		{% include "comment-entry.html", comment: reply %}

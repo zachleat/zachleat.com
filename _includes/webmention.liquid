@@ -1,5 +1,4 @@
-{% assign sentiment = webmention.content.text | getSentimentValue %}
-<li class="static-comments-reply{% if sentiment < -0.07 %} static-comments-reply-salty{% endif %} u-comment h-cite" id="webmention-{{ webmention['wm-id'] }}" data-sentiment="{{ sentiment | round: 3 }}">
+<li class="static-comments-reply u-comment h-cite" id="webmention-{{ webmention['wm-id'] }}">
   <div class="static-comments-hed">
     {%- include "webmention-avatar.liquid" %}
 
@@ -21,7 +20,7 @@
     {%- if webmention.published %}{% else if webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}
-    {{ webmention.content.text | escape | randomCase: sentiment | truncate }}
+    {{ webmention.content.text | escape | truncate }}
   </p></div>
   {% endif %}
 
