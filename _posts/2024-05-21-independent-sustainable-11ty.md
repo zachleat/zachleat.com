@@ -1,5 +1,6 @@
 ---
 title: 'I Need Your Help to Make 11ty Fully Independent and Sustainable in 2024'
+pinned: true
 ---
 The 11ty International Symposium on Making Web Sites Real Good [wrapped up two short weeks ago](/web/11ty-conf-retro/) and it was _(to say the least)_ incredible. The speakers, the talks, and most importantly — the community.
 
