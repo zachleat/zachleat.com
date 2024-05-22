@@ -29,6 +29,13 @@ classes:
 						{% comment %} <a href="/web/highlights/" class="tag highlight{% if page.url == '/web/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> {% endcomment %}
 					</div>
 					{% include "social.html" %}
+
+					<a href="/web/independent-sustainable-11ty/">
+						<fundraising-status min="0" max="6000" value="2308" style="--fs-color: #e23c2f;" class="hide-singlecol">
+							<img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2F/" width="30" height="30" alt="11ty Logo" loading="lazy" decoding="async">
+						</fundraising-status>
+					</a>
+
 					<a href="/web/" class="spark hide-singlecol">
 						<span>2007</span>
 						<img src="https://v1.sparkline.11ty.dev/120x30/{{ collections.posts | getYearlyPostCount }}/{{ '#94b388' | encodeUriComponent }}/" width="120" height="30" alt="Sparkline representing frequency of posts written from 2007 to {{ currentYear }}" loading="lazy" decoding="async" class="spark-img">
