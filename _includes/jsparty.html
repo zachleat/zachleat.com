@@ -1,0 +1,5 @@
+## Even More JSParty:
+
+{%- for episode in collections.jsparty reversed %}{% if page.url != episode.url %}
+* [{{ episode.data.title }}]({{ episode.url }})
+{%- endif %}{% endfor %}
