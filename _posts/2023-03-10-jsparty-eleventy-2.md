@@ -13,4 +13,7 @@ I was on the JS Party podcast!
 
 Listen at {{ external_url }}
 
-{% include "jsparty.html" %}
+## Even More JSParty:
+
+{% assign relatedTag = "jsparty" %}
+{% include "relatedposts.html" %}

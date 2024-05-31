@@ -1,0 +1,4 @@
+{% assign posts = collections[relatedTag] %}
+{%- for post in posts reversed %}{% if page.url != post.url %}
+* [{{ post.data.title }}]({{ post.url }})
+{%- endif %}{% endfor %}

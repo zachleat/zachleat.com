@@ -25,7 +25,9 @@ _(The above graph will update daily with the current status.)_
 
 Listen at [`{{ external_url }}`]({{ external_url }}) or below:
 
-<iframe src="https://changelog.com/jsparty/325/embed?theme=night" width="100%" height="220" scrolling="no" frameborder="no"></iframe>
+<iframe loading="lazy" src="https://changelog.com/jsparty/325/embed?theme=night" width="100%" height="220" scrolling="no" frameborder="no"></iframe>
 
+## Even More JSParty:
 
-{% include "jsparty.html" %}
+{% assign relatedTag = "jsparty" %}
+{% include "relatedposts.html" %}
