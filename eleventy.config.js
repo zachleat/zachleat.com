@@ -27,7 +27,7 @@ const JS_ENABLED = true;
 
 module.exports = async function(eleventyConfig) {
 	// TODO move this back out after this config file is ESM
-	const { EleventyRenderPlugin } = await import("@11ty/eleventy");
+	const { RenderPlugin, InputPathToUrlTransformPlugin } = await import("@11ty/eleventy");
 
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 
@@ -68,9 +68,10 @@ module.exports = async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addPlugin(pluginWebmentions);
-	eleventyConfig.addPlugin(EleventyRenderPlugin, {
+	eleventyConfig.addPlugin(RenderPlugin, {
 		accessGlobalData: true,
 	});
+	// eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 	eleventyConfig.addPlugin(pluginAnalytics);
 
 	/* COPY */
@@ -576,6 +577,7 @@ module.exports = async function(eleventyConfig) {
 					alt
 				}, {
 					widths: [600, 1000],
+					eleventyConfig,
 				}, true));
 
 				// Fallback for perf if non_production?

@@ -193,12 +193,17 @@ module.exports = function(eleventyConfig) {
 			loading: "eager",
 		};
 		let options = {
-			widths: [400, 980, 1324, 2000]
+			widths: [400, 980, 1324, 2000],
+			eleventyConfig,
 		};
 		return imageShortcode(attrs, options, isFullWidth);
 	});
 
-	eleventyConfig.addAsyncShortcode("image", imageShortcode);
+	eleventyConfig.addAsyncShortcode("image", (attrs, options = {}) => {
+		options.eleventyConfig = eleventyConfig;
+
+		return imageShortcode(attrs, options);
+	});
 	eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
 
 	/* Hosted image service to optimize webmention photos */
