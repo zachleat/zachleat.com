@@ -13,7 +13,7 @@ I was on the JS Party podcast!
 
 Listen at https://changelog.com/jsparty/217
 
-## Even More JSParty:
+## Even More JSParty
 
 {% assign relatedTag = "jsparty" %}
 {% include "relatedposts.html" %}

@@ -27,7 +27,7 @@ Listen at [`{{ external_url }}`]({{ external_url }}) or below:
 
 <iframe loading="lazy" src="https://changelog.com/jsparty/325/embed?theme=night" width="100%" height="220" scrolling="no" frameborder="no"></iframe>
 
-## Even More JSParty:
+## Even More JSParty
 
 {% assign relatedTag = "jsparty" %}
 {% include "relatedposts.html" %}
