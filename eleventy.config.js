@@ -58,7 +58,7 @@ module.exports = async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
 
-	if(!process.env.PRODUCTION_BUILD) {
+	if(process.env.PRODUCTION_BUILD) {
 		eleventyConfig.addPlugin(feedPlugin, {
 			outputPath: "/web/feed/atom.xml",
 			collection: {
