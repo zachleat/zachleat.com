@@ -12,7 +12,7 @@ function getCryptoHash(src) {
 async function imageShortcode(attrs = {}, options = {}, isFullWidth = false) {
 	options = Object.assign({},{
 		widths: [null],
-		formats: process.env.ELEVENTY_PRODUCTION ? ["avif", "jpeg"] : ["auto"],
+		formats: process.env.PRODUCTION_BUILD ? ["avif", "jpeg"] : ["auto"],
 		transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
 		urlPath: "/img/built/",
 		outputDir: "./_site/img/built/",
@@ -71,7 +71,7 @@ function pad(num) {
 	return `${num}`.padStart(2, '0');
 }
 function _getCacheBuster(date, suffix) {
-	if(process.env.ELEVENTY_PRODUCTION) {
+	if(process.env.PRODUCTION_BUILD) {
 		return `_x${date.getFullYear()}${pad(date.getMonth()+1)}${suffix}`;
 	}
 

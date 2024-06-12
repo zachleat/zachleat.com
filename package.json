@@ -27,11 +27,11 @@
 	},
 	"private": true,
 	"devDependencies": {
-		"@11ty/eleventy": "3.0.0-alpha.12",
+		"@11ty/eleventy": "3.0.0-alpha.13",
 		"@11ty/eleventy-activity-feed": "^1.0.9",
 		"@11ty/eleventy-fetch": "^4.0.1",
 		"@11ty/eleventy-img": "5.0.0-beta.4",
-		"@11ty/eleventy-plugin-rss": "^1.2.0",
+		"@11ty/eleventy-plugin-rss": "2.0.0-beta.8",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
 		"@11ty/eleventy-plugin-webc": "^0.11.2",
 		"@types/markdown-it": "^12.2.3",
@@ -69,7 +69,7 @@
 		"start-quick": "npx @11ty/eleventy --serve --port=8090 --incremental --ignore-initial",
 		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production && npm run create-search-index",
 		"nocache-production": "./fetch-projects.sh && npm run build-production && npm run create-search-index",
-		"build-production": "ELEVENTY_PRODUCTION=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy"
+		"build-production": "PRODUCTION_BUILD=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy"
 	},
 	"repository": {
 		"type": "git",

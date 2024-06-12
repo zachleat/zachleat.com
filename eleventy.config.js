@@ -10,7 +10,7 @@ const { encode } = require("html-entities");
 const { YoutubeTranscript } = require("youtube-transcript");
 const { AssetCache } = require("@11ty/eleventy-fetch");
 
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 
@@ -27,16 +27,15 @@ const JS_ENABLED = true;
 
 module.exports = async function(eleventyConfig) {
 	// TODO move this back out after this config file is ESM
-	const { RenderPlugin, InputPathToUrlTransformPlugin } = await import("@11ty/eleventy");
+	const { RenderPlugin } = await import("@11ty/eleventy");
 
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
 	// More in .eleventyignore
-	if(!process.env.ELEVENTY_PRODUCTION) {
+	if(!process.env.PRODUCTION_BUILD) {
 		eleventyConfig.ignores.add("./follow/*");
-		eleventyConfig.ignores.add("./web/feed/*");
 		eleventyConfig.ignores.add("./web/opengraph-images.liquid");
 	}
 
@@ -55,11 +54,28 @@ module.exports = async function(eleventyConfig) {
 
 	/* PLUGINS */
 	eleventyConfig.addPlugin(pluginSass);
-	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
 
+	if(!process.env.PRODUCTION_BUILD) {
+		eleventyConfig.addPlugin(feedPlugin, {
+			outputPath: "/web/feed/atom.xml",
+			collection: {
+				name: "feedPosts",
+				limit: 10,
+			},
+			metadata: {
+				language: "en",
+				title: siteData.name,
+				subtitle: siteData.description,
+				base: siteData.url,
+				author: {
+					name: siteData.name,
+				}
+			}
+		});
+	}
 	eleventyConfig.addPlugin(pluginWebc, {
 		components: [
 			"_components/**/*.webc",
@@ -71,7 +87,6 @@ module.exports = async function(eleventyConfig) {
 	eleventyConfig.addPlugin(RenderPlugin, {
 		accessGlobalData: true,
 	});
-	// eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 	eleventyConfig.addPlugin(pluginAnalytics);
 
 	/* COPY */
@@ -110,7 +125,7 @@ module.exports = async function(eleventyConfig) {
 		.addPassthroughCopy("presentations/");
 
 	// Production only passthrough copy
-	if(process.env.ELEVENTY_PRODUCTION) {
+	if(process.env.PRODUCTION_BUILD) {
 		eleventyConfig
 			.addPassthroughCopy("keybase.txt")
 			.addPassthroughCopy("_redirects")
@@ -407,7 +422,7 @@ module.exports = async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("feedPosts", function(collection) {
-		return getPosts(collection).filter(function(item) {
+		return getPosts(collection).reverse().filter(function(item) {
 			return !item.data.tags ||
 				!item.data.deprecated &&
 				item.data.tags.indexOf("future-event") === -1;

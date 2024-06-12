@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("popularPostsRanked", function(collection) {
 		return collection.getFilteredByGlob("./_posts/*.md").filter(item => {
-			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+			if(process.env.PRODUCTION_BUILD && item.data.tags && item.data.tags.includes("draft")) {
 				return false;
 			}
 			if(!analyticsData[item.url]) {
@@ -23,7 +23,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addCollection("popularPostsTotalRanked", function(collection) {
 		return collection.getFilteredByGlob("./_posts/*.md").filter(item => {
-			if(process.env.ELEVENTY_PRODUCTION && item.data.tags && item.data.tags.includes("draft")) {
+			if(process.env.PRODUCTION_BUILD && item.data.tags && item.data.tags.includes("draft")) {
 				return false;
 			}
 			if(!analyticsData[item.url]) {
