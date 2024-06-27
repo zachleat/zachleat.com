@@ -27,7 +27,7 @@
 	},
 	"private": true,
 	"devDependencies": {
-		"@11ty/eleventy": "3.0.0-alpha.13",
+		"@11ty/eleventy": "3.0.0-alpha.14",
 		"@11ty/eleventy-activity-feed": "^1.0.9",
 		"@11ty/eleventy-fetch": "^4.0.1",
 		"@11ty/eleventy-img": "5.0.0-beta.4",
@@ -64,9 +64,8 @@
 		"check-links": "npx check-html-links _site",
 		"create-search-index": "npx pagefind --site \"_site\" --glob \"{web,resume}/**/*.html\"",
 		"build": "npx @11ty/eleventy",
-		"start": "npx @11ty/eleventy --serve --port=8090 --incremental",
+		"start": "npx @11ty/eleventy --serve --port=8090 --incremental --ignore-initial",
 		"start-search": "npm run build && npm run create-search-index && npm run start",
-		"start-quick": "npx @11ty/eleventy --serve --port=8090 --incremental --ignore-initial",
 		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production && npm run create-search-index",
 		"nocache-production": "./fetch-projects.sh && npm run build-production && npm run create-search-index",
 		"build-production": "PRODUCTION_BUILD=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy"

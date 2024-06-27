@@ -13,7 +13,6 @@ metadata:
 external_url: 'http://shoptalkshow.com/episodes/247-performance-equation/'
 medialength: 72 min
 ---
-
 [Listen to the Interview on Shop Talk Show](http://shoptalkshow.com/episodes/247-performance-equation/) (1:11:54)
 
 {% include "shoptalkshow-episodes.liquid" %}
