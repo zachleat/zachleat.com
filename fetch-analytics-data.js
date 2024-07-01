@@ -3,18 +3,18 @@ require('dotenv').config();
 const fs = require("fs");
 const glob = require("fast-glob");
 const matter = require("gray-matter");
-const { queryData: queryGoogleData } = require("./_11ty/fetch-analytics/google-analytics.js");
 const { queryData: queryElizabeaconData } = require("./_11ty/fetch-analytics/elizabeacon.js");
 
 const MINIMUM_PAGEVIEWS = 50;
 
 async function fetchAnalyticsData() {
-	let googleData = await queryGoogleData();
+	let googleData = require("./_11ty/fetch-analytics/google-analytics-export.json");
 	let elizabeaconData = await queryElizabeaconData();
 
 	let unordered = [];
 	let visited = {};
-	for(let [url, pageViews] of googleData) {
+	for(let entry of Object.values(googleData)) {
+		let {url, pageViews} = entry;
 		if(url.startsWith("/opengraph/")) {
 			continue;
 		}
@@ -25,6 +25,7 @@ async function fetchAnalyticsData() {
 			pageViews: parseInt(pageViews) + (elizabeaconData[url]?.count || 0),
 		})
 	}
+
 	// add urls not in google data
 	for(let url in elizabeaconData) {
 		if(url.startsWith("/opengraph/")) {
