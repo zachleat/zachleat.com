@@ -72,7 +72,7 @@ Microsoft seems to be iterating in the right direction with the long-term goal o
 
 Here’s how we’re trying to help Windows folks navigate this complexity:
 
-1. We added a tabs interface for the different commands for: macOS, Linux, Windows, and Cross Platform.
+1. We added a [tabs interface for the different commands](https://www.11ty.dev/#quick-start) for: macOS, Linux, Windows, and Cross Platform.
 1. The Windows tab shows the PowerShell specific command using `out-file`. It’s compatible with both Windows PowerShell and PowerShell Core.
 1. If `out-file` doesn’t work in your Windows terminal application (if you’re using Command Prompt), we recommend using the Cross Platform method.
 
