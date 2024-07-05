@@ -13,7 +13,7 @@ echo '# Heading' > index.md
 
 This worked fine for folks on macOS or Linux but in some cases caused issues for some Windows users.
 
-For folks using the **Command Prompt** application in Windows (also known as `cmd.exe`) this new `index.md` incorrectly included the single quotes in the file’s content: `'# Heading'`. Command Prompt developers need to run the command without the quotes:
+For folks using the **Command Prompt** application in Windows (also known as `cmd.exe`) this new `index.md` incorrectly included the single quotes in the file’s content: `'# Heading'`. Command Prompt users need to run the command without the quotes:
 
 ```sh
 echo # Header > index.md
@@ -21,7 +21,7 @@ echo # Header > index.md
 
 For folks using **Windows PowerShell** (default in the Windows **Terminal** application and currently bundled with VS Code on Windows, this is specifically versions of PowerShell v5 and prior), the `>` _redirection_ operator encodes files using UTF-16 (and not the typical UTF-8 expected by Eleventy) resulting in `��#� �H�e�a�d�i�n�g�` output in the browser.
 
-PowerShell developers need to use the following command:
+PowerShell users need to use the following command:
 
 ```sh
 echo '# Header' | out-file -encoding utf8 'index.md'
