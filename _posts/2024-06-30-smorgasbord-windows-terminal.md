@@ -19,15 +19,15 @@ For folks using the **Command Prompt** application in Windows (also known as `cm
 echo # Header > index.md
 ```
 
-For folks using the **Terminal** application in Windows (also known as **Windows PowerShell**—versions of PowerShell v5 and prior; the one that is bundled by default with VS Code), the `>` _redirection_ operator encodes files using UTF-16 (and not the typical UTF-8 expected by Eleventy) resulting in `��#� �H�e�a�d�i�n�g�` output in the browser.
+For folks using **Windows PowerShell** in Windows (default in the **Terminal** application and currently bundled with VS Code, this is specifically versions of PowerShell v5 and prior), the `>` _redirection_ operator encodes files using UTF-16 (and not the typical UTF-8 expected by Eleventy) resulting in `��#� �H�e�a�d�i�n�g�` output in the browser.
 
-Terminal/PowerShell developers need to use the following command:
+PowerShell developers need to use the following command:
 
 ```sh
 echo '# Header' | out-file -encoding utf8 'index.md'
 ```
 
-For folks using **PowerShell Core** (the new cross-platform open source terminal application from Microsoft) or **Windows Subsystem for Linux** (also known as WSL), the original command works without issue:
+For folks using **PowerShell Core** (the new cross-platform open source terminal application from Microsoft, specifically versions of PowerShell v6 or newer) or **Windows Subsystem for Linux** (also known as WSL), the original command works without issue:
 
 ```sh
 echo '# Header' > index.md
@@ -52,8 +52,8 @@ This _smorgasbord_ adds some hurdles. Folks on Windows machines need to:
       <td>Default</td>
     </tr>
     <tr>
-      <td>Terminal, Windows PowerShell <code>&lt;=5</code></td>
-      <td>Default, VS Code Default</td>
+      <td>Windows PowerShell <code>&lt;=5</code></td>
+      <td>Default, (via Terminal and VS Code)</td>
     </tr>
     <tr>
       <td>PowerShell Core <code>&gt;=6</code></td>
