@@ -19,7 +19,7 @@ For folks using the **Command Prompt** application in Windows (also known as `cm
 echo # Header > index.md
 ```
 
-For folks using **Windows PowerShell** in Windows (default in the **Terminal** application and currently bundled with VS Code, this is specifically versions of PowerShell v5 and prior), the `>` _redirection_ operator encodes files using UTF-16 (and not the typical UTF-8 expected by Eleventy) resulting in `��#� �H�e�a�d�i�n�g�` output in the browser.
+For folks using **Windows PowerShell** (default in the Windows **Terminal** application and currently bundled with VS Code on Windows, this is specifically versions of PowerShell v5 and prior), the `>` _redirection_ operator encodes files using UTF-16 (and not the typical UTF-8 expected by Eleventy) resulting in `��#� �H�e�a�d�i�n�g�` output in the browser.
 
 PowerShell developers need to use the following command:
 
