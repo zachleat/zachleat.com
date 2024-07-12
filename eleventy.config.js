@@ -49,7 +49,7 @@ module.exports = async function(eleventyConfig) {
 
 	eleventyConfig.setServerOptions({
 		domDiff: false,
-		showVersion: true,
+		// showVersion: true,
 	});
 
 	/* PLUGINS */
