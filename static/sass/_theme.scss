@@ -736,6 +736,9 @@ blockquote {
 	color: #777;
 	margin: 1.2em 5%;
 }
+blockquote p {
+	text-wrap: balance;
+}
 blockquote > p:first-child {
 	margin-top: 0;
 }
