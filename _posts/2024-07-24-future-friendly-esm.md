@@ -44,7 +44,11 @@ try {
 	// Eleventy.js is ESM so this throws if require(ESM) is not supported.
 	module.exports = require("./Eleventy.js");
 } catch(e) {
-	throw new Error("Your custom error message here");
+	if(e.code === "ERR_REQUIRE_ESM") {
+		throw new Error("Your custom error message here");
+	}
+
+	throw e;
 }
 ```
 
