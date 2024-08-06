@@ -14,7 +14,7 @@ The 11ty Screenshots API uses headless Chromium and Puppeteer, provided via [a c
 
 The deployment to Vercel was quick and easy: without hiccups. The live-updating Domains panel in the Project Settings of the Vercel app is _very_ impressive. It tells you exactly what records to add to your DNS provider and recognized immediately when I configured things correctly. This was especially appreciated as I tend to _sweat_ when making DNS changes.
 
-After letting it run exclusively on Vercel I started to get an idea for the production usage cost on Vercel. The Pro Tier ($20/month) provides 1000 GB-hours of included serverless function usage and in 12 days this service had already eaten 494.2 GB-hours of it! Given a 31 day billing cycle, this service alone was projected to use ~1276 GB-hrs per month. Given my other serverless function usage this would have resulted in about $160 per month extra on the Vercel bill (charged at $.18/GB-hr).
+After letting it run exclusively on Vercel I started to get an idea for the production usage cost on Vercel. The Pro Tier ($20/month) provides 1000 GB-hours of included serverless function usage and in 12 days this service had already eaten 494.2 GB-hours of it! Given a 31 day billing cycle, this service alone was projected to use ~1276 GB-Hrs per month. Given my other serverless function usage this would have resulted in about $160 per month extra on the Vercel bill (charged at $.18/GB-Hr).
 
 Sorry folks, I can’t afford to pay $2000 a year to run this!
 
@@ -38,7 +38,7 @@ Here’s a short summary of the steps:
 	* This is where you set up how unique you want your cache to be. I went as aggressive as possible here. I configured the cache to be unique to the URL path, discarding uniqueness of headers, query strings, and cookies. I set a default TTL of one month and a maximum TTL of one year.
 1. I then used [a Vercel Rewrite](https://vercel.com/docs/edge-network/rewrites) to point to the CloudFront instance.
 
-After watching this in production for 4 short days, I think AWS is likely its new permanent home.
+After watching this in production for 4 short days, I think AWS is likely its new permanent home. Even though Lambda *only* gives you 111.11 GB-Hrs of usage on the free tier my current projected usage is only 90% of that! Mind-boggling that the same service would use ~1276 GB-Hrs per month on Vercel and ~101 GB-Hrs on AWS.
 
 ## Lessons Learned
 
