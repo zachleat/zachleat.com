@@ -70,23 +70,16 @@ function backgroundImageFilter(src, width, options = {}) {
 function pad(num) {
 	return `${num}`.padStart(2, '0');
 }
-function _getCacheBuster(date, suffix) {
+function getCacheBuster() {
 	if(process.env.PRODUCTION_BUILD) {
+		let date = new Date();
+		let suffix = pad(date.getDate());
 		return `_x${date.getFullYear()}${pad(date.getMonth()+1)}${suffix}`;
 	}
 
 	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
 	return "_localdev1";
 }
-function getDailyServiceCacheBuster() {
-	let date = new Date();
-	return _getCacheBuster(date, pad(date.getDate()));
-}
-function getWeeklyServiceCacheBuster() {
-	let date = new Date();
-	return _getCacheBuster(date, `_${date.getDate() % 7}`);
-}
-
 function getFullUrlFromPath(path) {
 	let domain = "https://www.zachleat.com";
 	return domain + path;
@@ -110,7 +103,7 @@ function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 				size = "auto";
 			}
 
-			return `${fullUrl}${size}/${format}/${getDailyServiceCacheBuster()}/`;
+			return `${fullUrl}${size}/${format}/${getCacheBuster()}/`;
 		}
 	};
 
