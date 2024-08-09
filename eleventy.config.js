@@ -26,6 +26,7 @@ const JS_ENABLED = true;
 
 module.exports = async function(eleventyConfig) {
 	const { RenderPlugin, IdAttributePlugin } = await import("@11ty/eleventy");
+	const { default: memoize } = await import("memoize");
 
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 
@@ -217,9 +218,9 @@ module.exports = async function(eleventyConfig) {
 		return encodeURIComponent(str);
 	});
 
-	eleventyConfig.addLiquidFilter("htmlEntities", str => {
+	eleventyConfig.addLiquidFilter("htmlEntities", memoize(str => {
 		return encode(str);
-	});
+	}));
 
 	eleventyConfig.addLiquidFilter("absoluteUrl", (url, base) => {
 		if( !base ) {
