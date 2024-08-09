@@ -12,7 +12,7 @@ At Google I/O this week, [Anna Migas](https://twitter.com/szynszyliszys) shared 
 
 Google Fonts <del>is adding</del> added support for `font-display`! 🎉🎉🎉🎉
 
-_**Update My 15, 2019:** although the I/O preview used the `font-display` URL parameter, [the final implementation uses `display` instead](https://twitter.com/addyosmani/status/1128548064287952896)_
+_**Update May 15, 2019:** although the I/O preview used the `font-display` URL parameter, [the final implementation uses `display` instead](https://twitter.com/addyosmani/status/1128548064287952896)_
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
