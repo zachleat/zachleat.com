@@ -2,6 +2,8 @@
 layout: layouts/base.liquid
 classes:
   body: body-grid body-gradient
+scripts:
+ - "/static/js/heading-anchors.js"
 ---
 <a href="#skiplink-content" id="skiplink-top" class="skiplink skiplink-fn" data-pagefind-ignore>Skip to Content</a>
 <div class="rail" data-pagefind-ignore>
@@ -79,7 +81,9 @@ classes:
 	</div>
 </div>
 <main class="content-main" data-role="main" id="skiplink-content">
-	{{ content }}
+	<heading-anchors>
+		{{ content }}
+	</heading-anchors>
 	{% include "footer.html" %}
 </main><!-- /.content -->
 

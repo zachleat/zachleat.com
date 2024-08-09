@@ -4,7 +4,6 @@ const { DateTime } = require("luxon");
 const { URL } = require("url");
 const numeral = require("numeral");
 const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
 const markdownItToc = require("markdown-it-table-of-contents");
 const { encode } = require("html-entities");
 const { YoutubeTranscript } = require("youtube-transcript");
@@ -26,8 +25,7 @@ const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
 const JS_ENABLED = true;
 
 module.exports = async function(eleventyConfig) {
-	// TODO move this back out after this config file is ESM
-	const { RenderPlugin } = await import("@11ty/eleventy");
+	const { RenderPlugin, IdAttributePlugin } = await import("@11ty/eleventy");
 
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 
@@ -57,6 +55,7 @@ module.exports = async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
+	eleventyConfig.addPlugin(IdAttributePlugin);
 
 	if(process.env.PRODUCTION_BUILD) {
 		eleventyConfig.addPlugin(feedPlugin, {
@@ -514,36 +513,28 @@ module.exports = async function(eleventyConfig) {
 	});
 
 	/* Markdown */
-	let options = {
+	eleventyConfig.amendLibrary("md", (mdLib) => {
+		mdLib.use(markdownItToc, {
+			includeLevel: [2, 3, 4],
+			slugify: eleventyConfig.getFilter("slug"),
+			format: function(heading) {
+				return heading;
+			},
+			transformLink: function(link) {
+				if(typeof link === "string") {
+					// remove backticks from markdown code
+					return link.replace(/\%60/g, "");
+				}
+				return link;
+			}
+		})
+	});
+
+	let md = markdownIt({
 		html: true,
 		breaks: true,
-		linkify: true
-	};
-
-	let md = markdownIt(options).use(markdownItAnchor, {
-		permalink: markdownItAnchor.permalink.ariaHidden({
-			placement: "after",
-			class: "direct-link",
-			symbol: "#",
-			level: [1,2,3,4],
-		}),
-		slugify: eleventyConfig.getFilter("slug")
-	}).use(markdownItToc, {
-		includeLevel: [2, 3, 4],
-		slugify: eleventyConfig.getFilter("slug"),
-		format: function(heading) {
-			return heading;
-		},
-		transformLink: function(link) {
-			if(typeof link === "string") {
-				// remove backticks from markdown code
-				return link.replace(/\%60/g, "");
-			}
-			return link;
-		}
-	});;
-
-	eleventyConfig.setLibrary("md", md);
+		linkify: true,
+	});
 
 	eleventyConfig.addPairedShortcode("markdown", function(content, inline = false) {
 		if(inline) {
