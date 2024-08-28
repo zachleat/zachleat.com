@@ -1,10 +1,9 @@
 ---
-title: "Scheduled: Oddbird’s Winging It Live: Web Components"
+title: "Oddbird’s Winging It Live: Web Components"
 tags:
   - web-components
   - external
   - speaking
-  - scheduled
 metadata:
   speaking:
     type: livestream

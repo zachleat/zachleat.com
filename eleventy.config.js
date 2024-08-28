@@ -365,6 +365,10 @@ module.exports = async function(eleventyConfig) {
 
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url, skipIcon = false, mode = "screenshot") {
+		if(url.startsWith("https://www.youtube.com/") || url.startsWith("https://youtube.com/")) {
+			mode = "opengraph";
+		}
+
 		let imageHtml = "";
 		if(mode === "screenshot") {
 			imageHtml = screenshotImageHtmlFullUrl(url);
