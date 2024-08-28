@@ -67,19 +67,6 @@ function backgroundImageFilter(src, width, options = {}) {
 	return `url('/img/built/${filename}')`;
 }
 
-function pad(num) {
-	return `${num}`.padStart(2, '0');
-}
-function getCacheBuster() {
-	if(process.env.PRODUCTION_BUILD) {
-		let date = new Date();
-		let suffix = pad(date.getDate());
-		return `_x${date.getFullYear()}${pad(date.getMonth()+1)}${suffix}`;
-	}
-
-	// return a throwaway constant cachebuster ref so that we don’t accidentally request production urls during local dev before they’re available online.
-	return "_localdev1";
-}
 function getFullUrlFromPath(path) {
 	let domain = "https://www.zachleat.com";
 	return domain + path;
@@ -103,7 +90,11 @@ function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 				size = "auto";
 			}
 
-			return `${fullUrl}${size}/${format}/${getCacheBuster()}/`;
+			if(process.env.PRODUCTION_BUILD) {
+				return `${fullUrl}${size}/${format}/`;
+			}
+
+			return `${fullUrl}${size}/${format}/_localdev1/`;
 		}
 	};
 
@@ -151,7 +142,12 @@ function getScreenshotUrl(fullUrl, options = {}) {
 	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${o.join("")}/`;
 }
 function getScreenshotUrlFromPath(path, options) {
-	return getScreenshotUrl(getFullUrlFromPath(path), options);
+	let u = new URL(getFullUrlFromPath(path));
+
+	// bust cache for the screenshot target URL, useful when the open graph images need a refresh
+	u.searchParams.set("cache", "20240828");
+
+	return getScreenshotUrl(u.toString(), options);
 }
 
 function screenshotImageHtmlFullUrl(fullUrl) {
