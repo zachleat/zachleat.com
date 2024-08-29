@@ -114,6 +114,7 @@ module.exports = async function(eleventyConfig) {
 			"node_modules/@zachleat/pagefind-search/pagefind-search.js": `static/pagefind-search.js`,
 			"node_modules/@zachleat/snow-fall/snow-fall.js": `static/snow-fall.js`,
 			"node_modules/@zachleat/carouscroll/carouscroll.js": `static/carouscroll.js`,
+			"node_modules/@zachleat/heading-anchors/heading-anchors.js": `static/heading-anchors.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")

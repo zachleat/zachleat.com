@@ -5,6 +5,8 @@ tmpl: list
 <div class="layout-list">
 	<article>
 		<h1 class="primary-title{% if titleScreenReaderOnly %} sr-only{% endif %}">{{ title }}</h1>
-		{{ content }}
+		<heading-anchors selector="h2,h3">
+			{{ content }}
+		</heading-anchors>
 	</article>
 </div><!-- /.layout-list -->

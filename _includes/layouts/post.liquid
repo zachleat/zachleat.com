@@ -55,7 +55,9 @@ tmpl: page
 {% endif %}
 	</div>
 	<div class="content-grid e-content favicon-optin">
-	{{ content }}
+		<heading-anchors selector="h2,h3">
+			{{ content }}
+		</heading-anchors>
 	</div>
 {% if external_url_location == "end" %}
 	<div class="content-grid-sibling">

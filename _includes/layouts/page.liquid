@@ -6,7 +6,9 @@ disableComments: true
 <article class="h-entry">
 	<h1 class="p-name primary-title{% if removeTitle %} sr-only{% endif %}{% if smalltitle %} primary-title-smalltitle{% endif %}{% if primaryTitleExemptWidth %} primary-title-exempt{% endif %}">{{ title }}</h1>
 	<div class="content-grid e-content">
-		{{ content }}
+		<heading-anchors selector="h2,h3">
+			{{ content }}
+		</heading-anchors>
 	</div>
 </article>
 
