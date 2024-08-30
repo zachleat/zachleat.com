@@ -48,7 +48,7 @@ modules:
 					<div class="tags tags-rail tags-rail-top5 hide-singlecol">
 						{%- if collections.pinnedPosts | size %}
 						<div>
-							<h2 class="top5">📌 Pinned</h2>
+							<div class="top5">📌 Pinned</div>
 							{%- for post in collections.pinnedPosts limit:1 %}
 								<a href="{{ post.url }}" class="tag tag-popular-rail tag-pinned-rail tag-borderless">{{ post.data.title }}</a>
 							{%- endfor %}
@@ -57,7 +57,7 @@ modules:
 
 					{%- if hasToc != true and hidePostsInSidebar != true %}
 						<div>
-							<h2 class="top5"><a href="/web/best-of/">Popular 🔥</a></h2>
+							<div class="top5"><a href="/web/best-of/">Popular 🔥</a></div>
 
 							{% for post in collections.popularPostsRanked limit:3 %}
 							<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
@@ -66,7 +66,7 @@ modules:
 
 						{%- if collections.upcomingTalks | size %}
 						<div>
-							<h2 class="top5"><a href="/web/speaking/">Upcoming Talks</a></h2>
+							<div class="top5"><a href="/web/speaking/">Upcoming Talks</a></div>
 
 							{%- for post in collections.upcomingTalks %}
 							<a href="{{ post.data.external_url | default: post.url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>

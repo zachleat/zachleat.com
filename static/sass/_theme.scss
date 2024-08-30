@@ -1248,6 +1248,7 @@ a[href].tag-inline:not(.tag-borderless),
 			gap: 2em;
 		}
 		.tags .top5 {
+			text-transform: uppercase;
 			font-size: 0.8125rem; /* 13px /16 */
 			margin: 0;
 			margin-bottom: 1em;
