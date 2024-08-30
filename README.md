@@ -14,7 +14,6 @@ To install new local npm packages, use `npm install PACKAGE_NAME --save-dev`
 ## Important Environment Variables
 
 * `WEBMENTION_IO_TOKEN`
-* `FAUNA_SECRET_KEY` (for popular posts from FaunaDB)
 
 ## Notes
 
