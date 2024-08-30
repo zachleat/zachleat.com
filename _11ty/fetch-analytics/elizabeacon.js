@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const { AssetCache } = require("@11ty/eleventy-fetch");
+const fs = require("node:fs");
 
 const faunadb = require("faunadb");
 const q = faunadb.query;
@@ -34,6 +35,10 @@ module.exports.queryData = async function queryData() {
 		} catch(e) {
 			console.error( "[elizabeacon] Error:", e );
 			data = await asset.getCachedValue();
+			fs.mkdirSync("_site/", {
+				recursive: true
+			});
+			fs.writeFileSync("_site/faunadata.json", JSON.stringify(data, null, 2), "utf8");
 		}
 	}
 
