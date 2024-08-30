@@ -13,7 +13,7 @@ posterImage:
   name: James Qualtrough
   source: https://unsplash.com/photos/anchor-on-grass-shore-during-day-fXzcEptNAmQ
 ---
-`<heading-anchors>` adds sibling anchor links for heading elements (`h1`, `h2`, `h3`, `h4`, `h5`, `h6`) when they have an `id` attribute and positions those anchor links visually as though they were nested inside of the heading.
+`<heading-anchors>` adds sibling anchor links for heading elements (`h1`–`h6`) when they have an `id` attribute and positions those anchor links visually as though they were nested inside of the heading.
 
 * [Demo](https://zachleat.github.io/heading-anchors/demo.html)
 * [Source code on GitHub](https://github.com/zachleat/heading-anchors)
