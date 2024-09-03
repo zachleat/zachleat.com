@@ -104,7 +104,7 @@ Also note: the only usage stats I could still get out of Netlify (30 days retent
 ### Usage-based Pricing is Sneaky
 
 * Vercel’s vCPU is an unnecessary abstraction that further complicates pricing. Further, because usage is priced via GB-Hrs, **1 vCPU should use 1 GB of memory**. Instead, 1 vCPU is 1.7 GB of memory and 1000 GB-Hrs is actually 588 Hours of usage.
-* Vercel [rounds execution time up to the nearest 50ms](https://vercel.com/docs/functions/usage-and-pricing). AWS charges you by the millisecond. (I’m not sure what Netlify does here)
+* ~~Vercel [rounds execution time up to the nearest 50ms](https://vercel.com/docs/functions/usage-and-pricing).~~ _Update September 2024: Vercel’s docs are currently a little confusing here—the 50 ms execution unit is **only** applied for Edge Functions (not Serverless Functions). Lee from Vercel has passed along that they will update the docs for better clarity here._ AWS charges you by the millisecond. (I’m not sure what Netlify does here)
 
 I put together [a little spreadsheet that shows how different serverless providers grow based on _hours of usage_](https://docs.google.com/spreadsheets/d/1gsTXuAcZdjuvp0rt0HtL1w7WiyAljjRaDiojbWT_Sx8/edit?usp=sharing) at various memory configurations.
 

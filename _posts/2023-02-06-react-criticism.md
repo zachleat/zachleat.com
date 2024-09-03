@@ -27,7 +27,7 @@ In the post, John states:
 
 The above quote seems incredibly prescient in hindsight and still (somehow) relevant to modern day React discourse as they finally _begin_ to pivot away from `create-react-app`.
 
-But notably, **{{ "12 Dec 2014" | timePosted }}** after the blog post was written, that pivot is as of now only an [idea](https://github.com/reactjs/reactjs.org/pull/5487#issuecomment-1409720741). Currently the React documentation still recommends clientside rendering:
+But notably, 8.2 years after the blog post was written, that pivot is as of now only an [idea](https://github.com/reactjs/reactjs.org/pull/5487#issuecomment-1409720741). Currently the React documentation still recommends clientside rendering:
 
 > [“If you’re learning React or creating a new single-page app, use Create React App.”](https://reactjs.org/docs/create-a-new-react-app.html#recommended-toolchains)
 
