@@ -24,11 +24,11 @@
 	white-space: pre-wrap;
 	max-width: none;
 
-	@include extraunhyphenate;
-
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
+
+	@include extraunhyphenate;
 }
 
 .printed-page blockquote p {

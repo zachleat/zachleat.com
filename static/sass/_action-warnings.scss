@@ -16,13 +16,13 @@
 	content: ':';
 }
 .callout-hed {
-	@include webfontBold;
 	text-transform: uppercase;
 	margin-bottom: .5em;
+	@include webfontBold;
 }
 .callout p {
-	@include webfontItalic;
 	margin: 0;
+	@include webfontItalic;
 }
 .callout-warning {
 	background-color: #ffc;

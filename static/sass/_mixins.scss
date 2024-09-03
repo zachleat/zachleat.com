@@ -78,7 +78,7 @@
 
 @mixin extraunhyphenate {
 	& {
-		@include unhyphenate;
 		word-wrap: break-word;
+		@include unhyphenate;
 	}
 }

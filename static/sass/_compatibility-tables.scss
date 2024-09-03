@@ -1,8 +1,8 @@
 /* Compatibility Tables */
 .better,
 .worse {
-	@include webfontBold;
 	white-space: nowrap;
+	@include webfontBold;
 }
 .worse {
 	color: #CB000F;

@@ -463,10 +463,10 @@ h5,
 body {
 	font-family: $fallbackSystemFont;
 	line-height: 140%;
-	@include webfont;
-
 	font-variant-ligatures: common-ligatures;
 	font-feature-settings: "liga", "clig";
+
+	@include webfont;
 }
 
 /* Links */
@@ -662,11 +662,11 @@ code {
 	color: #444;
 	border-radius: .2em;
 
-	@include extraunhyphenate;
-
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
+
+	@include extraunhyphenate;
 }
 
 h1 code,
@@ -702,12 +702,11 @@ pre {
 	word-wrap: normal;
 	overflow-x: auto;
 	tab-size: 2;
-
-	@include extraunhyphenate;
-
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
+
+	@include extraunhyphenate;
 }
 pre {
 	padding: .75rem;
@@ -1037,8 +1036,8 @@ a[href]:hover .project_img {
 	font-size: 16px;
 	line-height: 1.5;
 	margin-bottom: 2em;
-	@include webfontItalic;
 	max-width: 50em; /* 800px */
+	@include webfontItalic;
 }
 
 @media (min-width: 30em) {
@@ -1529,8 +1528,8 @@ details.livedemo-dark > summary {
 /* Demo Link */
 .primarylink {
 	display: block;
-	@include webfontBold;
 	font-size: 1.157894736842em; /* 22px /19 */
+	@include webfontBold;
 }
 .primarylink:before {
 	content: "➡ ";
