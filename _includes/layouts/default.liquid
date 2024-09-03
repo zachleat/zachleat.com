@@ -32,13 +32,6 @@ modules:
 					</div>
 					{% include "social.html" %}
 
-					<a href="/web/independent-sustainable-11ty/">
-						<span class="sr-only">Sustainability Fundraising Goals for 11ty</span>
-						<fundraising-status min="0" max="6000" value="{{ eleventyFundraising.monthly.value }}" style="--fs-color: #e23c2f;" class="hide-singlecol" hide-currency>
-							<img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2F/" width="30" height="30" alt="11ty Logo" loading="lazy" decoding="async">
-						</fundraising-status>
-					</a>
-
 					<a href="/web/" class="spark hide-singlecol">
 						<span>2007</span>
 						<img src="https://v1.sparkline.11ty.dev/120x30/{{ collections.posts | getYearlyPostCount }}/{{ '#94b388' | encodeUriComponent }}/" width="120" height="30" alt="Sparkline representing frequency of posts written from 2007 to {{ currentYear }}" loading="lazy" decoding="async" class="spark-img">
