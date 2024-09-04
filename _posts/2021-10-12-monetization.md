@@ -136,7 +136,7 @@ Nonetheless, I thought the best place to start would be to compile the data.
   <li class="notes_note">Update 3: <a id="subnote-3" href="#link-subnote-3" class="notes_linkback">Jump to the reference.</a> <a href="/web/eleventy-oss/">I am now full time sponsored by Netlify to work on Eleventy</a>.</li>
   <li class="notes_note">Update 4: <a id="subnote-4" href="#link-subnote-4" class="notes_linkback">Jump to the reference.</a> <a href="https://dev.to/ryansolid/when-netlify-asks-you-to-full-time-oss-you-say-yes-5ccf">Ryan Carniato is now full time sponsored by Netlify to work on SolidJS</a>.</li>
   <li class="notes_note">Update 5: <a id="subnote-5" href="#link-subnote-5" class="notes_linkback">Jump to the reference.</a> <a href="https://remix.run/blog/remixing-shopify">Remix joins Shopify</a>.</li>
-	<li class="notes_note">Update 6: <a id="subnote-3" href="#link-subnote-3" class="notes_linkback">Jump to the reference.</a> <a href="/web/eleventy-side-project/">Eleventy returns to side project status</a>.</li>
+  <li class="notes_note">Update 6: <a id="subnote-6" href="#link-subnote-6" class="notes_linkback">Jump to the reference.</a> <a href="/web/eleventy-side-project/">Eleventy returns to side project status</a>.</li>
 </ol>
 
 _This list was loosely compiled from the [Jamstack Community Survey 2021](https://jamstack.org/survey/2021/#choices-frameworks)._

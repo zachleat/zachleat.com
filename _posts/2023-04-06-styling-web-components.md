@@ -207,7 +207,7 @@ Before
 Inbetween
 <sample-component-sd>Fallback content.</sample-component-sd>
 After
-<template id="shadow-dom-template">
+<template id="shadow-dom-template-2">
 	Client-rendered Shadow DOM
 	<style>
 	:host {
@@ -220,7 +220,7 @@ After
 if("customElements" in window) {
 	customElements.define("sample-component-sd", class extends HTMLElement {
 		connectedCallback() {
-			let template = document.getElementById("shadow-dom-template");
+			let template = document.getElementById("shadow-dom-template-2");
 			let shadowroot = this.attachShadow({ mode: "open" });
 			shadowroot.appendChild(template.content.cloneNode(true));
 		}
