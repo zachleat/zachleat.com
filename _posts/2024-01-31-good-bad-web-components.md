@@ -98,6 +98,12 @@ Aside from Vercel.js, there are a variety of other popular component libraries t
       <td class="no">67%</td>
     </tr>
     <tr>
+      <td>{% indieAvatar "https://19.react.dev/" %}React 19 RC</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">100%</td>
+    </tr>
+    <tr>
       <td>{% indieAvatar "https://www.solidjs.com" %}Solid</td>
       <td class="no">No</td>
       <td class="yes">Yes</td>
@@ -254,7 +260,7 @@ In some respects it feels like the web platform chased the early clientside rend
 	* [{% indieAvatar "https://lit.dev/" %}Lit](https://lit.dev/)
 	* [{% indieAvatar "https://enhance.dev/" %}Enhance](https://enhance.dev/)
 	* [{% indieAvatar "https://www.11ty.dev/" %}WebC](https://www.11ty.dev/docs/languages/webc/)
-* React has the worst [`custom-elements-everywhere.com`](https://custom-elements-everywhere.com/) compatibility test score. If you’re deep in React-world, look at using [{% indieAvatar "https://preactjs.com/" %}Preact](https://preactjs.com/) to provide a more future-friendly and compatible experience.
+* React (versions before v19) has the worst [`custom-elements-everywhere.com`](https://custom-elements-everywhere.com/) compatibility test score. If you’re deep in React-world, look at using React v19 or [{% indieAvatar "https://preactjs.com/" %}Preact](https://preactjs.com/) to provide a more future-friendly and compatible experience.
 * Solid, Angular, Svelte, and Vue support web components as a compilation target too.
 
 ## A WebC Example
