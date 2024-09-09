@@ -601,14 +601,16 @@ module.exports = async function(eleventyConfig) {
 		}
 
 		html.push(`</carou-scroll>`);
+
 		if(!isSingleSlide) {
-			html.push(`<div class="carouscroll-meta">`)
+			html.push(`<div class="carouscroll-meta">`);
 			html.push(`<button type="button" disabled data-carousel-previous="${id}">&lt; Previous</button>`);
 			html.push(`<output data-carousel-output="${id}"></output>`);
 			html.push(`<button type="button" disabled data-carousel-next="${id}">Next &gt;</button>`);
-			html.push(`</browser-window></div>`)
+			html.push(`</div>`);
 		}
-		html.push(`</is-land></div>`);
+
+		html.push(`</browser-window></is-land></div>`);
 
 		return html.join("");
 	});
