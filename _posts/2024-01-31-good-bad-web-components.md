@@ -95,12 +95,6 @@ Aside from Vercel.js, there are a variety of other popular component libraries t
       <td>{% indieAvatar "https://react.dev/" %}React</td>
       <td class="no">No</td>
       <td class="no">No</td>
-      <td class="no">67%</td>
-    </tr>
-    <tr>
-      <td>{% indieAvatar "https://19.react.dev/" %}React 19 RC</td>
-      <td class="no">No</td>
-      <td class="no">No</td>
       <td class="no">100%</td>
     </tr>
     <tr>
