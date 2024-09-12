@@ -21,7 +21,7 @@ More Ideas:
 <div class="slide slide-chromeless slide-preview slide-preview-vertical slide-preview-60-40" tabindex="0" autofocus>
   <div class="frame">
     <div class="window frame-resizer-main">
-      <main class="main main-bgimg" style="--og-bgimage: url('{% if post.data.seo.openGraphBackgroundImage %}{{ post.data.seo.openGraphBackgroundImage }}{% elsif post.data.overrideOgImageScreenshotBackground %}{% rawScreenshotImageFromFullUrl post.data.overrideOgImageScreenshotBackground, secondScreenshotBackgroundOptions %}{% elsif post.data.external_url %}{% rawScreenshotImageFromFullUrl post.data.external_url, secondScreenshotBackgroundOptions %}{% else %}{% rawScreenshotImage post.url, secondScreenshotBackgroundOptions %}{% endif %}')">
+      <main class="main main-bgimg" style="--og-bgimage: url('{% if post.data.external_url and post.data.external_url_screenshotmode == 'opengraph' %}https://v1.opengraph.11ty.dev/{{ post.data.external_url | url_encode }}/auto/jpeg/{% elsif post.data.seo.openGraphBackgroundImage %}{{ post.data.seo.openGraphBackgroundImage }}{% elsif post.data.overrideOgImageScreenshotBackground %}{% rawScreenshotImageFromFullUrl post.data.overrideOgImageScreenshotBackground, secondScreenshotBackgroundOptions %}{% elsif post.data.external_url %}{% rawScreenshotImageFromFullUrl post.data.external_url, secondScreenshotBackgroundOptions %}{% else %}{% rawScreenshotImage post.url, secondScreenshotBackgroundOptions %}{% endif %}')">
         <div class="main-top">
           {%- capture titleContent %}
             {%- if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif %}

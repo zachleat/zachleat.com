@@ -145,7 +145,7 @@ function getScreenshotUrlFromPath(path, options) {
 	let u = new URL(getFullUrlFromPath(path));
 
 	// bust cache for the screenshot target URL, useful when the open graph images need a refresh
-	u.searchParams.set("cache", "20240828");
+	u.searchParams.set("cache", "20240912");
 
 	return getScreenshotUrl(u.toString(), options);
 }
