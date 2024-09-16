@@ -27,11 +27,15 @@ tmpl: page
 			<span>{{ metadata.speaking.country | nameToFlag }} <em> {{ metadata.speaking.country }}</em></span>
 {% endif %}
 		</div>
-{% if deprecated %}
+{% if deprecated or calloutMessage %}
 		<article class="content-sibling">
-			<div class="callout">
+			<div class="callout{% if calloutMessage.class %} {{ calloutMessage.class }}{% endif %}">
+				{%- if deprecated %}
 				<h3>Warning</h3>
-				<p>This article is old and may contain information that is outdated, irrelevant, or—dare I say it—no longer accurate. Read with care!</p>
+				{%- elsif calloutMessage.title %}
+				<h3>{{ calloutMessage.title }}</h3>
+				{%- endif %}
+				<p>{% if deprecated %}This article is old and may contain information that is outdated, irrelevant, or—dare I say it—no longer accurate. Read with care!{% else %}{{ calloutMessage.content }}{% endif %}</p>
 			</div>
 		</article>
 {% endif %}

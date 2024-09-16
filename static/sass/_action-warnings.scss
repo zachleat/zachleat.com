@@ -5,15 +5,11 @@
 	padding: .5em;
 	margin-top: 1em;
 	border-radius: 5px;
-	box-shadow: 0 0 0 2px var(--callout-color, #ccc);
+	box-shadow: 0 0 0 2px var(--callout-color, #000);
 }
 .callout h3 {
 	display: inline;
-	line-height: 2;
 	margin-right: .6em;
-}
-.callout h3:after {
-	content: ':';
 }
 .callout-hed {
 	text-transform: uppercase;
@@ -22,13 +18,12 @@
 }
 .callout p {
 	margin: 0;
+	line-height: 160%;
 	@include webfontItalic;
 }
+.callout-alert,
 .callout-warning {
 	background-color: #ffc;
-}
-.callout--11ty {
-	--callout-color: #000;
 }
 .callout--sm {
 	font-size: 0.9375em; /* 15px /16 */
