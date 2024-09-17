@@ -12,7 +12,7 @@ posterImage:
 ---
 _I’ve been laid off twice_ in the past year and a half trying to navigate my professional career through the moderate success that has followed 11ty. I don’t feel as though I’ve been particularly successful at it, to be frank. What I _have_ felt is largely expendable.
 
-I don’t blame any companies or individuals for those feelings—for me it’s representative of a larger problem with the incentives of open source software. This is further complicated by the influence of temporary and unsustainable ideas of “free” influenced by venture capital, but I digress.
+I don’t blame any companies or individuals for those feelings—for me it’s representative of a larger problem with the incentives of open source software. This is further complicated by the influence of temporary and unsustainable ideas of “free” shaped by venture capital, but I digress.
 
 In seven years, the 11ty project has undergone various levels of funding:
 
@@ -54,7 +54,7 @@ I’ve updated all of the blog posts to reflect that we’re winding down our [s
 
 As always, if you have questions (even difficult or awkward questions)—please hit me up on [Mastodon](https://zachleat.com/@zachleat) (or any [other](/about/) social media that I check less frequently 😅).
 
-## Previous in this Series
+## Previously
 
 1. `Feb 2018` [Introducing Eleventy, a New Static Site Generator](/web/introducing-eleventy/)
 1. `Jan 2020` [Now Deploying to Netlify](/web/netlify/)
