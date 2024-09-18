@@ -4,12 +4,14 @@ const fs = require("fs");
 const glob = require("fast-glob");
 const matter = require("gray-matter");
 const { queryData: queryElizabeaconData } = require("./_11ty/fetch-analytics/elizabeacon.js");
+const { fetchData: queryGoatcounterData } = require("./_11ty/fetch-analytics/goatcounter.js");
 
 const MINIMUM_PAGEVIEWS = 50;
 
 async function fetchAnalyticsData() {
 	let googleData = require("./_11ty/fetch-analytics/google-analytics-export.json");
 	let elizabeaconData = await queryElizabeaconData();
+	let goatcounterData = await queryGoatcounterData();
 
 	let unordered = [];
 	let visited = {};
@@ -22,7 +24,7 @@ async function fetchAnalyticsData() {
 		visited[url] = true;
 		unordered.push({
 			url,
-			pageViews: parseInt(pageViews) + (elizabeaconData[url]?.count || 0),
+			pageViews: parseInt(pageViews) + (elizabeaconData[url]?.count || 0) + (goatcounterData[url]?.count || 0),
 		})
 	}
 
@@ -33,9 +35,25 @@ async function fetchAnalyticsData() {
 		}
 
 		if(!visited[url]) {
+			visited[url] = true;
 			unordered.push({
 				url,
-				pageViews: elizabeaconData[url].count
+				pageViews: elizabeaconData[url].count + (goatcounterData[url]?.count || 0)
+			})
+		}
+	}
+
+	// add urls not in google data
+	for(let url in goatcounterData) {
+		if(url.startsWith("/opengraph/")) {
+			continue;
+		}
+
+		if(!visited[url]) {
+			visited[url] = true;
+			unordered.push({
+				url,
+				pageViews: goatcounterData[url].count
 			})
 		}
 	}
