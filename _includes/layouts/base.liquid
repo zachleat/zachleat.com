@@ -1,6 +1,6 @@
 {%- capture fullUrl %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 <!doctype html>
-<html lang="en"{% if tmpl or templateclass %} class="{% if tmpl %} tmpl-{{ tmpl }}{% endif %}{% if templateclass %} {{ templateclass }}{% endif %}"{% endif %}>
+<html lang="en"{% if tmpl or templateclass %} class="{% if tmpl %} tmpl-{{ tmpl }}{% endif %}{% if templateclass %} {{ templateclass }}{% endif %}"{% endif %} data-eleventy-runmode="{{ eleventy.env.runMode }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
