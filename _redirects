@@ -5,6 +5,7 @@
 
 # Mastodon @zachleat.com
 /@zachleat https://fediverse.zachleat.com/@zachleat 301
+/users/zachleat.rss https://fediverse.zachleat.com/users/zachleat.rss 301
 /.well-known/host-meta* https://fediverse.zachleat.com/.well-known/host-meta:splat 301
 /.well-known/webfinger* https://fediverse.zachleat.com/.well-known/webfinger:splat 301
 /.well-known/nodeinfo* https://fediverse.zachleat.com/.well-known/nodeinfo:splat 301
