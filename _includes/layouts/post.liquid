@@ -156,3 +156,11 @@ tmpl: page
 	</details>
 </div>
 {% endunless %}
+
+<!--- if you remove this, re-enable in 2023-12-15-snow-fall.md --->
+<is-land on:media="(prefers-reduced-motion: no-preference)">
+	<template data-island="once">
+		<script type="module" src="/static/snow-fall.js"></script>
+	</template>
+	<snow-fall></snow-fall>
+</is-land>
