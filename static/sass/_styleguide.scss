@@ -1,45 +1,47 @@
+@use "config";
+
 .font-foit,
 .font-foit *,
 .font-foit *:before,
 .font-foit *:after {
-	font-family: $fallbackSystemFont !important;
+	font-family: config.$fallbackSystemFont !important;
 	color: transparent !important;
 }
 .font-fallback,
 .font-fallback *,
 .font-fallback *:before,
 .font-fallback *:after {
-	font-family: $fallbackSystemFont !important;
+	font-family: config.$fallbackSystemFont !important;
 }
 .font-latosubset,
 .font-latosubset *,
 .font-latosubset *:before,
 .font-latosubset *:after {
-	font-family: LatoSubset, $fallbackSystemFont !important;
+	font-family: LatoSubset, config.$fallbackSystemFont !important;
 }
 .font-lato,
 .font-lato *,
 .font-lato *:before,
 .font-lato *:after {
-	font-family: Lato, $fallbackSystemFont !important;
+	font-family: Lato, config.$fallbackSystemFont !important;
 }
 .font-latobold,
 .font-latobold *,
 .font-latobold *:before,
 .font-latobold *:after {
-	font-family: LatoBold, $fallbackSystemFont !important;
+	font-family: LatoBold, config.$fallbackSystemFont !important;
 }
 .font-latoitalic,
 .font-latoitalic *,
 .font-latoitalic *:before,
 .font-latoitalic *:after {
-	font-family: LatoItalic, $fallbackSystemFont !important;
+	font-family: LatoItalic, config.$fallbackSystemFont !important;
 }
 .font-latobolditalic,
 .font-latobolditalic *,
 .font-latobolditalic *:before,
 .font-latobolditalic *:after {
-	font-family: LatoItalic, $fallbackSystemFont !important;
+	font-family: LatoItalic, config.$fallbackSystemFont !important;
 }
 
 /* Color swatches */

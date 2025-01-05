@@ -1,3 +1,5 @@
+@use "mixins";
+
 .skiplink-fn {
 	position: absolute;
 	height: 1px;
@@ -23,5 +25,5 @@
 	color: #fff;
 	padding: 1em;
 	text-decoration: none;
-	@include webfontBold;
+	@include mixins.webfontBold;
 }

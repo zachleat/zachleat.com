@@ -1,5 +1,4 @@
 const fs = require('fs-extra');
-const fetch = require('node-fetch');
 const { DateTime } = require("luxon");
 const uniqBy = require('lodash/uniqBy');
 const domain = require("./site.json").domain;
@@ -36,6 +35,7 @@ async function fetchWebmentions(since) {
 	}
 	console.log( `[zachleat.com] Fetching webmentions from: ${url}` );
 
+	// TODO use eleventy-fetch
 	const response = await fetch(url);
 	if (response.ok) {
 		const feed = await response.json();

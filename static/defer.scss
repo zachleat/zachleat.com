@@ -1,19 +1,17 @@
 @use "../node_modules/@zachleat/flex-luthor/flex-luthor.css";
 @use "../node_modules/@zachleat/flex-luthor/flex-luthor-separators.css";
 
-@import "sass/config";
-@import "sass/mixins";
-@import "sass/simple-blockquotes";
-@import "sass/pagination";
-@import "sass/action-warnings";
-@import "sass/thirdparty";
-@import "sass/prism-base16-monokai.dark";
-@import "sass/compatibility-tables";
-@import "sass/styleguide";
-@import "sass/printed-page";
-@import "sass/disqus";
-@import "sass/webmention";
-@import "sass/opengraph-card";
+@use "sass/simple-blockquotes";
+@use "sass/pagination";
+@use "sass/action-warnings";
+@use "sass/thirdparty";
+@use "sass/prism-base16-monokai.dark";
+@use "sass/compatibility-tables";
+@use "sass/styleguide";
+@use "sass/printed-page";
+@use "sass/disqus";
+@use "sass/webmention";
+@use "sass/opengraph-card";
 
 .speedlify-link {
 	text-decoration: none;

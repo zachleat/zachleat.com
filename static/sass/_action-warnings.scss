@@ -1,3 +1,5 @@
+@use "mixins";
+
 /* Call to Action and Deprecation Warning */
 .callout {
 	font-size: 1.125em;
@@ -14,12 +16,12 @@
 .callout-hed {
 	text-transform: uppercase;
 	margin-bottom: .5em;
-	@include webfontBold;
+	@include mixins.webfontBold;
 }
 .callout p {
 	margin: 0;
 	line-height: 160%;
-	@include webfontItalic;
+	@include mixins.webfontItalic;
 }
 .callout-alert,
 .callout-warning {

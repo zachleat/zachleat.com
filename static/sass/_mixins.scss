@@ -1,3 +1,5 @@
+@use "config";
+
 @mixin a11y-only {
 	position: absolute;
 	height: 1px;
@@ -14,27 +16,27 @@
 }
 @mixin webfont {
 	& {
-		font-family: Lato, Numero, $fallbackSystemFont;
+		font-family: Lato, Numero, config.$fallbackSystemFont;
 		font-weight: 400;
 	}
 }
 @mixin webfontBold {
 	& {
-		font-family: Lato, Numero, $fallbackSystemFont;
+		font-family: Lato, Numero, config.$fallbackSystemFont;
 		font-style: normal;
 		font-weight: 700;
 	}
 }
 @mixin webfontItalic {
 	& {
-		font-family: Lato, Numero, $fallbackSystemFont;
+		font-family: Lato, Numero, config.$fallbackSystemFont;
 		font-style: italic;
 		font-weight: 400;
 	}
 }
 @mixin webfontBoldItalic {
 	& {
-		font-family: Lato, Numero, $fallbackSystemFont;
+		font-family: Lato, Numero, config.$fallbackSystemFont;
 		font-style: italic;
 		font-weight: 700;
 	}

@@ -1,6 +1,8 @@
+@use "mixins";
+
 /* Lists */
 dt {
-	@include webfontBold;
+	@include mixins.webfontBold;
 }
 dd {
 	font-size: 0.9473684210526em; /* 18px /19 */

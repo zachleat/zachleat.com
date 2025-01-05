@@ -1,3 +1,5 @@
+@use "mixins";
+
 .static-comments {
 	font-size: 80%;
 	max-width: 36em;
@@ -35,10 +37,10 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	text-overflow: ellipsis;
 }
 .static-comments-title.static-comments-title {
-	@include webfont;
+	@include mixins.webfont;
 }
 .static-comments-title.static-comments-title em {
-	@include webfontItalic;
+	@include mixins.webfontItalic;
 }
 .static-comments-title-twitter {
 	font-size: 80%;
@@ -55,7 +57,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	clear: both;
 	line-height: 1.7;
 	margin-top: .5em;
-	@include hyphenate;
+	@include mixins.hyphenate;
 }
 .static-comments-reply-salty > .static-comments-msg {
 	font-family: Comic Sans MS, Chalkboard SE, fantasy;

@@ -1,3 +1,6 @@
+@use "mixins";
+@use "config";
+
 * {
 	box-sizing: border-box;
 }
@@ -42,7 +45,7 @@ abbr {
 /* Accessibility and Cut the Mustard */
 .sr-only,
 .a11y-only {
-	@include a11y-only;
+	@include mixins.a11y-only;
 }
 
 /* Ellipsis */
@@ -73,7 +76,7 @@ abbr {
 		display: none !important;
 	}
 }
-@media( max-width: $oneColLayoutMaxWidth) {
+@media( max-width: config.$oneColLayoutMaxWidth) {
 	.hide-singlecol {
 		display: none !important;
 	}
@@ -137,11 +140,11 @@ button {
 	background-color: #ffc;
 }
 .notes_linkback {
-	@include a11y-only;
+	@include mixins.a11y-only;
 }
 .notes_linkback:target,
 .notes_linkback:focus {
-	@include undo-a11y-only;
+	@include mixins.undo-a11y-only;
 }
 .notes_note:focus-within {
 	background-color: #ffc;
@@ -233,11 +236,11 @@ figcaption,
 	margin-top: .2em;
 	margin-bottom: 4em;
 	line-height: 150%;
-	@include webfontItalic;
+	@include mixins.webfontItalic;
 }
 figcaption strong,
 .caption strong {
-	@include webfontBoldItalic;
+	@include mixins.webfontBoldItalic;
 }
 table + .caption {
 	margin-top: .5em;
@@ -260,7 +263,7 @@ h5,
 .hed-h1,
 .hed-h2,
 .hed-h3 {
-	@include unhyphenate;
+	@include mixins.unhyphenate;
 }
 
 /* Layout */
@@ -273,7 +276,7 @@ h5,
 .content-main {
 	text-align: left;
 	padding: 0 0.25rem; /* 4px /16 */
-	color: $textColor;
+	color: config.$textColor;
 	font-size: 1.1875em; /* 19px /16 */
 	line-height: 1.65;
 	-webkit-hyphens: auto;
@@ -333,7 +336,7 @@ h5,
 		}
 	}
 
-	@media (min-width: $twoColLayoutMinWidth) {
+	@media (min-width: config.$twoColLayoutMinWidth) {
 		.tmpl-list .content-main pre {
 			max-width: calc(100vw - 20rem);
 		}
@@ -375,14 +378,14 @@ h5,
 			grid-column-end: 4;
 		}
 	}
-	@media (max-width: $oneColLayoutMaxWidth) { /* 979px */
+	@media (max-width: config.$oneColLayoutMaxWidth) { /* 979px */
 		.tmpl-page .primary-title {
 			max-width: 13.47826086957em; /* 589px /43.7 */
 			margin-left: auto;
 			margin-right: auto;
 		}
 	}
-	@media (min-width: $twoColLayoutMinWidth) { /* 980px */
+	@media (min-width: config.$twoColLayoutMinWidth) { /* 980px */
 		.rail {
 			padding: 0;
 			border-bottom-width: 0;
@@ -422,7 +425,7 @@ h5,
 	}
 }
 
-@media (min-width: $twoColLayoutMinWidth) {
+@media (min-width: config.$twoColLayoutMinWidth) {
 	.tmpl-page .content-main {
 		font-size: 1.3125em; /* 21px /16 */
 	}
@@ -461,12 +464,12 @@ h5,
 
 /* App specific */
 body {
-	font-family: $fallbackSystemFont;
+	font-family: config.$fallbackSystemFont;
 	line-height: 140%;
 	font-variant-ligatures: common-ligatures;
 	font-feature-settings: "liga", "clig";
 
-	@include webfont;
+	@include mixins.webfont;
 }
 
 /* Links */
@@ -489,7 +492,7 @@ body {
 :link:hover,
 :link:focus,
 :visited:hover {
-	color: $linkActiveColor;
+	color: config.$linkActiveColor;
 }
 
 .about-description p {
@@ -509,17 +512,17 @@ html:not(.tmpl-list) .content-main code a[href] {
 
 /* Emphasis */
 strong {
-	@include webfontBold;
+	@include mixins.webfontBold;
 }
 em,
 blockquote {
-	@include webfontItalic;
+	@include mixins.webfontItalic;
 }
 strong em,
 strong blockquote,
 em strong,
 blockquote strong {
-	@include webfontBoldItalic;
+	@include mixins.webfontBoldItalic;
 }
 
 /* Headers */
@@ -532,10 +535,10 @@ h1, h2, h3, .hed-h1, .hed-h2, .hed-h3 {
 }
 h4, h5 {
 	margin-top: 1.4em;
-	@include webfontBold;
+	@include mixins.webfontBold;
 
 	em {
-		@include webfontBoldItalic;
+		@include mixins.webfontBoldItalic;
 	}
 }
 h1, h2, h3,
@@ -557,7 +560,7 @@ h1,
 h1:first-child {
 	margin-top: 0;
 }
-@media (max-width: $oneColLayoutMaxWidth) {
+@media (max-width: config.$oneColLayoutMaxWidth) {
 	.hed-h1 {
 		padding: 0 0 0 .15625em; /* 5px */
 	}
@@ -604,7 +607,7 @@ h5 {
 	font-size: 1em;
 	margin-bottom: .5em;
 }
-@media (min-width: $twoColLayoutMinWidth) {
+@media (min-width: config.$twoColLayoutMinWidth) {
 	h1, h2, .hed-h1, .hed-h2 {
 		padding: 0;
 	}
@@ -626,7 +629,7 @@ h5 {
 	padding: 0;
 	text-transform: uppercase;
 }
-@media (min-width: $twoColLayoutMinWidth) {
+@media (min-width: config.$twoColLayoutMinWidth) {
 	.primary-title {
 		// https://utopia.fyi/clamp/calculator/?a=960,1600,68%E2%80%94120
 		--fluid-type: clamp(4.25rem, -0.625rem + 8.125vw, 7.5rem); /* 68px–120px /23 */
@@ -639,9 +642,9 @@ h5 {
 
 /* Hyphenation */
 .primary-title {
-	@include unhyphenate;
+	@include mixins.unhyphenate;
 }
-@media (max-width: $oneColLayoutMaxWidth) {
+@media (max-width: config.$oneColLayoutMaxWidth) {
 	.primary-title-smalltitle {
 		-ms-word-break: break-all;
 		word-break: break-all;
@@ -651,7 +654,7 @@ h5 {
 
 /* Code */
 code {
-	font-family: $monospaceFont;
+	font-family: config.$monospaceFont;
 	font-size: .947368421em; /* 18px / 19px */
 	font-style: normal;
 	font-weight: 400;
@@ -666,7 +669,7 @@ code {
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
 
-	@include extraunhyphenate;
+	@include mixins.extraunhyphenate;
 }
 
 h1 code,
@@ -693,7 +696,7 @@ a[href] > code {
 	color: inherit;
 }
 pre {
-	font-family: $monospaceFont;
+	font-family: config.$monospaceFont;
 	padding: .75rem 0; /* padding added by syntax-line-highlight plugin */
 	margin: .5em -0.25rem; /* -4px /16 */
 	background: #272822;
@@ -706,7 +709,7 @@ pre {
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
 
-	@include extraunhyphenate;
+	@include mixins.extraunhyphenate;
 }
 pre {
 	padding: .75rem;
@@ -763,7 +766,7 @@ tr {
 	border-bottom: 1px solid #ddd;
 }
 th {
-	@include webfontBold;
+	@include mixins.webfontBold;
 }
 caption {
 	margin-top: 1.5em;
@@ -810,7 +813,7 @@ table-saw :is(th, td) {
 	line-height: 1;
 	color: #444;
 
-	@media (max-width: $oneColLayoutMaxWidth) {
+	@media (max-width: config.$oneColLayoutMaxWidth) {
 		text-align: center;
 	}
 }
@@ -818,7 +821,7 @@ table-saw :is(th, td) {
 	width: 1.1875em; /* 19px /16 */
 	height: 1.1875em; /* 19px /16 */
 	margin-right: .5em;
-	background-color: $primaryColor;
+	background-color: config.$primaryColor;
 	color: transparent;
 	margin-bottom: -2px;
 }
@@ -826,9 +829,9 @@ table-saw :is(th, td) {
 	margin: 1em 0 0;
 }
 @supports (display: grid) {
-	@media (min-width: $twoColLayoutMinWidth) {
+	@media (min-width: config.$twoColLayoutMinWidth) {
 		.rail .header {
-			@include clearfix;
+			@include mixins.clearfix;
 		}
 		.rail .my-avatar {
 			width: 2.75em; /* 44px /16 */
@@ -864,7 +867,7 @@ table-saw :is(th, td) {
 	line-height: 110%;
 	text-decoration: none;
 
-	@include unhyphenate;
+	@include mixins.unhyphenate;
 }
 .posts .posts-link-more {
 	text-decoration: underline;
@@ -924,7 +927,7 @@ table-saw :is(th, td) {
 .posts .description {
 	margin-top: .210526316em; /* 4px /19 */
 	color: #333;
-	@include webfontItalic;
+	@include mixins.webfontItalic;
 }
 .posts .smalltitle .posts-link {
 	font-size: 23px;
@@ -975,16 +978,16 @@ a[href]:hover .project_img {
 		font-size: 1.375em; /* 22px */
 	}
 }
-@media (min-width: $twoColLayoutMinWidth) {
+@media (min-width: config.$twoColLayoutMinWidth) {
 	.posts .subhed:first-child {
 		margin-top: 18px;
 	}
 }
 .posts .date {
-	@include a11y-only;
+	@include mixins.a11y-only;
 }
 .posts .scheduled {
-	@include webfontItalic;
+	@include mixins.webfontItalic;
 }
 .posts .deprecated,
 .posts .deprecated :link,
@@ -1018,7 +1021,7 @@ a[href]:hover .project_img {
 	line-height: 1.5;
 	min-height: 2em; /* 32px /16 */
 }
-@media (min-width: $twoColLayoutMinWidth) {
+@media (min-width: config.$twoColLayoutMinWidth) {
 	.sub {
 		margin-bottom: 5em; /* 80px /16 */
 	}
@@ -1038,7 +1041,7 @@ a[href]:hover .project_img {
 	line-height: 1.5;
 	margin-bottom: 2em;
 	max-width: 50em; /* 800px */
-	@include webfontItalic;
+	@include mixins.webfontItalic;
 }
 
 @media (min-width: 30em) {
@@ -1094,7 +1097,7 @@ a[href]:hover .project_img {
 		padding-right: 55px;
 	}
 }
-@media (min-width: 50em) and (max-width: $oneColLayoutMaxWidth) {
+@media (min-width: 50em) and (max-width: config.$oneColLayoutMaxWidth) {
 	.posts-paragraph {
 		max-width: 100%;
 	}
@@ -1108,7 +1111,7 @@ a[href]:hover .project_img {
 	border: 1px solid #ccc;
 	border-radius: .35em;
 	font-size: 0.875em; /* 14px /16 */
-	@include unhyphenate;
+	@include mixins.unhyphenate;
 }
 .tmpl-page .about {
 	border-radius: 0 0 .35em .35em;
@@ -1135,7 +1138,7 @@ a[href]:hover .project_img {
 	margin-bottom: 1em;
 	font-size: 1rem;
 	line-height: 130%;
-	@include webfontItalic;
+	@include mixins.webfontItalic;
 }
 
 /* Tags */
@@ -1212,7 +1215,7 @@ a[href].tag-inline:not(.tag-borderless),
 	color: #00c9ff;
 }
 .tags .highlight-label {
-	@include a11y-only;
+	@include mixins.a11y-only;
 }
 .tags .tag .highlight-star {
 	font-family: sans-serif;
@@ -1232,7 +1235,7 @@ a[href].tag-inline:not(.tag-borderless),
 	margin-right: 0;
 	margin-left: 1px;
 
-	@media (max-width: $oneColLayoutMaxWidth) {
+	@media (max-width: config.$oneColLayoutMaxWidth) {
 		padding-left: 3px;
 		padding-right: 3px;
 		margin-left: 0;
@@ -1241,7 +1244,7 @@ a[href].tag-inline:not(.tag-borderless),
 
 /* Top 5 Rail module */
 @supports (display: grid) {
-	@media (min-width: $twoColLayoutMinWidth) {
+	@media (min-width: config.$twoColLayoutMinWidth) {
 		/* Top 5 posts */
 		.tags.tags-rail-top5 {
 			margin-top: 2em;
@@ -1253,7 +1256,7 @@ a[href].tag-inline:not(.tag-borderless),
 			margin: 0;
 			margin-bottom: 1em;
 			color: #666;
-			@include webfontBold;
+			@include mixins.webfontBold;
 		}
 		.tags .tag.tag-popular-rail {
 			text-transform: none;
@@ -1262,7 +1265,7 @@ a[href].tag-inline:not(.tag-borderless),
 			margin: 0;
 			padding-left: 0;
 			padding-right: 0;
-			@include webfont;
+			@include mixins.webfont;
 		}
 		.tags .tag.tag-popular-rail em {
 			white-space: nowrap;
@@ -1272,7 +1275,7 @@ a[href].tag-inline:not(.tag-borderless),
 		.tags a[href].tag.tag-popular-rail:hover {
 			background-color: transparent;
 			border-color: transparent;
-			color: $linkActiveColor;
+			color: config.$linkActiveColor;
 			text-decoration: underline;
 		}
 		.tags .tag.tag-pinned-rail {
@@ -1303,7 +1306,7 @@ a[href].tag-inline:not(.tag-borderless),
 	margin-right: .25em;
 }
 .posts .highlight a .external {
-	@include webfont;
+	@include mixins.webfont;
 }
 .icon-link-external {
 	width: 14px;
@@ -1340,7 +1343,7 @@ a[href].tag-inline:not(.tag-borderless),
 		margin-left: -.75rem;
 		margin-right: -.75rem;
 	}
-	@media (min-width: $twoColLayoutMinWidth) {
+	@media (min-width: config.$twoColLayoutMinWidth) {
 		padding: .875rem .875rem 1rem .875rem;
 		margin-left: -.875rem;
 		margin-right: -.875rem;
@@ -1353,7 +1356,7 @@ a[href].tag-inline:not(.tag-borderless),
 	width: calc( 100% + 1rem );
 	max-width: none;
 
-	@media (min-width: $twoColLayoutMinWidth) {
+	@media (min-width: config.$twoColLayoutMinWidth) {
 		margin-left: calc( -.875rem );
 		width: calc( 100% + 1.75rem );
 	}
@@ -1372,7 +1375,7 @@ pre + .livedemo {
 	text-transform: uppercase;
 	background: #fff;
 	color: #8ac7db;
-	@include webfont;
+	@include mixins.webfont;
 }
 .livedemo-mixed:after {
 	text-transform: none;
@@ -1530,14 +1533,14 @@ details.livedemo-dark > summary {
 .primarylink {
 	display: block;
 	font-size: 1.157894736842em; /* 22px /19 */
-	@include webfontBold;
+	@include mixins.webfontBold;
 }
 .primarylink:before {
 	content: "➡ ";
 }
 .primarylink-demo:after {
 	content: " (Demo)";
-	@include webfont;
+	@include mixins.webfont;
 }
 
 /* Generic Nowrap */
@@ -1550,7 +1553,7 @@ details.livedemo-dark > summary {
 }
 
 /* Table of Contents on Right */
-@media (min-width: $twoColLayoutMinWidth) and (min-height: 33.125em) {
+@media (min-width: config.$twoColLayoutMinWidth) and (min-height: 33.125em) {
 	.toc {
 		font-size: 1rem;
 		display: block;
@@ -1581,7 +1584,7 @@ details.livedemo-dark > summary {
 
 /* Alignment */
 .grid-2 {
-	@include clearfix;
+	@include mixins.clearfix;
 }
 .grid-2 > :first-child {
 	width: 48%;
@@ -1683,7 +1686,7 @@ select[data-filter-key] {
 }
 .rail .spark {
 	margin-top: 2em;
-	@include webfontBold;
+	@include mixins.webfontBold;
 }
 .spark .spark-img {
 	padding: 0;
@@ -1719,7 +1722,7 @@ a[href][data-icon]:has(> *) > * {
 
 .favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):after {
 	content: " (archive.org)";
-	@include webfont;
+	@include mixins.webfont;
 }
 /* External Link Favicons */
 /* This is for wider application of a few use cases. It’s better to use the indieAvatar shortcode for one-off instances */

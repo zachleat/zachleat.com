@@ -191,21 +191,13 @@ hasToc: true
 }
 {% endhighlight %}
 
-{% highlight css 3 %}
+{% highlight diff-css %}
 .my-class {
-	this: is;
-	some: css;
-	this: line-is-highlighted;
-}
-{% endhighlight %}
-
-{% highlight css 3 4 %}
-.my-class {
-	this: is;
-	some: css;
-	this: line-is-added;
-	this: line-is-removed;
-}
+ 	this: is;
+ 	some: css;
++	this: line-is-added;
+-	this: line-is-removed;
+ }
 {% endhighlight %}
 
 <p>Using Prism.js and <a href="https://github.com/11ty/eleventy-plugin-syntaxhighlight"><code>eleventy-plugin-syntaxhighlight</code></a> for line highlights.</p>
