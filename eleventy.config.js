@@ -122,12 +122,12 @@ module.exports = async function(eleventyConfig) {
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("og/*.{jpeg,png}")
-		.addPassthroughCopy("og/sources/")
-		.addPassthroughCopy("presentations/");
+		.addPassthroughCopy("og/sources/");
 
 	// Production only passthrough copy
 	if(process.env.PRODUCTION_BUILD) {
 		eleventyConfig
+			.addPassthroughCopy("presentations/")
 			.addPassthroughCopy("keybase.txt")
 			.addPassthroughCopy("_redirects")
 			.addPassthroughCopy("demos/")
