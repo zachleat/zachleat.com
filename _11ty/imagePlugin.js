@@ -17,6 +17,9 @@ async function imageShortcode(attrs = {}, options = {}, isFullWidth = false) {
 		urlPath: "/img/built/",
 		outputDir: "./_site/img/built/",
 		sharpAvifOptions: {},
+		cacheOptions: {
+			duration: "14d",
+		},
 	}, options);
 
 	// @11ty/eleventy-img
@@ -53,6 +56,9 @@ function backgroundImageFilter(src, width, options = {}) {
 		},
 		sharpAvifOptions: {
 			lossless: true,
+		},
+		cacheOptions: {
+			duration: "14d",
 		},
 	}, options);
 
