@@ -139,6 +139,8 @@ Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and th
 
 ## Photos
 
+### Deprecated but saved for Posterity
+
 <figure>
 	{% image bioImageAttrs, largeImageOptions %}
 	<figcaption>Picture taken by <a href="https://www.facebook.com/andrey.davydchyk">Andrey Davydchyk</a> at <a href="https://www.facebook.com/cssminskjs/">CSS Minsk JS</a>. <a href="/img/bio-2017.jpg">Download JPEG version</a>.</figcaption>
@@ -148,8 +150,6 @@ Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and th
 	{% image avatarBioImageAttrsSecondary %}
 	<figcaption>Modified from above for avatar use.</figcaption>
 </figure>
-
-### Deprecated but saved for Posterity
 
 <figure>
 	{% image deprecatedBioImageAttrs %}

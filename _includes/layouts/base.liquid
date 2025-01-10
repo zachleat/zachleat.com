@@ -20,8 +20,8 @@
 {%- endif %}
 
 		<!-- Icons -->
-		<link rel="apple-touch-icon-precomposed" href="/img/rel-icon-192.png">
-		<link rel="icon" href="/img/rel-icon-192.jpg" sizes="192x192" type="image/jpeg">
+		<link rel="apple-touch-icon-precomposed" href="{% imagesingle site.avatarImgAttrs.src, 192, 'png' %}">
+		<link rel="icon" href="{% imagesingle site.avatarImgAttrs.src, 192, 'jpeg' %}" sizes="192x192" type="image/jpeg">
 
 		<!-- Social -->
 		<meta property="og:title" content="{% if title %}{{ title }}—zachleat.com{% else %}zachleat.com{% endif %}">

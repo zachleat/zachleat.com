@@ -9,9 +9,9 @@ function getCryptoHash(src) {
 		return hash.digest('hex').substring(0, 8);
 }
 
-async function imageShortcode(attrs = {}, options = {}, isFullWidth = false) {
+async function imageFactory(src, options = {}) {
 	options = Object.assign({},{
-		widths: [null],
+		widths: ["auto"],
 		formats: process.env.PRODUCTION_BUILD ? ["avif", "jpeg"] : ["auto"],
 		transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
 		urlPath: "/img/built/",
@@ -23,7 +23,14 @@ async function imageShortcode(attrs = {}, options = {}, isFullWidth = false) {
 	}, options);
 
 	// @11ty/eleventy-img
-	let metadata = await Image(attrs.src || attrs.path, options);
+	return {
+		options,
+		metadata: await Image(src, options),
+	}
+}
+
+async function imageShortcode(attrs = {}, originalOptions = {}, isFullWidth = false) {
+	let { options, metadata } = await imageFactory(attrs.src || attrs.path, originalOptions);
 
 	let imageAttributes = Object.assign({
 		loading: "lazy",
@@ -198,6 +205,18 @@ module.exports = function(eleventyConfig) {
 		options.eleventyConfig = eleventyConfig;
 
 		return imageShortcode(attrs, options);
+	});
+
+	// Only one image format, and return only the URL
+	eleventyConfig.addAsyncShortcode("imagesingle", async (src, width = "auto", format = "auto") => {
+		let options = {
+			eleventyConfig,
+			formats: [ format ],
+			widths: [ width ],
+		};
+		let { metadata } = await imageFactory(src, options);
+		let outputFormat = Object.keys(metadata).pop();
+		return metadata[outputFormat][0].url;
 	});
 	eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
 
