@@ -7,7 +7,7 @@ bioImageAttrs:
   src: "./img/bio-2017.jpg"
   alt: Just a picture of my face.
 avatarBioImageAttrs:
-  src: "./img/avatar-2017-big.png"
+  src: "./img/avatar-2025-green.png"
   alt: "Photo of Zach Leatherman’s Bearded Face"
   class: "about-primary-avatar"
   loading: eager
