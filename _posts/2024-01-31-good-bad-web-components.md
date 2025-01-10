@@ -95,13 +95,13 @@ Aside from Vercel.js, there are a variety of other popular component libraries t
       <td>{% indieAvatar "https://react.dev/" %}React</td>
       <td class="no">No</td>
       <td class="no">No</td>
-      <td class="no">67%</td>
+      <td class="yes">100%</td>
     </tr>
     <tr>
       <td>{% indieAvatar "https://www.solidjs.com" %}Solid</td>
       <td class="no">No</td>
       <td class="yes">Yes</td>
-      <td class="maybe">94%</td>
+      <td class="yes">100%</td>
     </tr>
     <tr>
       <td>{% indieAvatar "https://stenciljs.com/" %}Stencil</td>
@@ -113,7 +113,7 @@ Aside from Vercel.js, there are a variety of other popular component libraries t
       <td>{% indieAvatar "https://svelte.dev/" %}Svelte</td>
       <td class="no">No</td>
       <td class="yes">Yes</td>
-			<td class="maybe">94%</td>
+			<td class="yes">100%</td>
     </tr>
     <tr>
       <td>{% indieAvatar "https://vuejs.org/" %}Vue</td>
@@ -125,7 +125,7 @@ Aside from Vercel.js, there are a variety of other popular component libraries t
 </table>
 </table-saw></div>
 
-_Compatibility score data from [Custom Elements Everywhere](https://custom-elements-everywhere.com/), a test suite for web component compatibility._
+_Compatibility score data from [Custom Elements Everywhere](https://custom-elements-everywhere.com/), a test suite for web component compatibility (updated as of January 2025!)_
 
 ## Web Components are already a Success Story
 
@@ -254,7 +254,7 @@ In some respects it feels like the web platform chased the early clientside rend
 	* [{% indieAvatar "https://lit.dev/" %}Lit](https://lit.dev/)
 	* [{% indieAvatar "https://enhance.dev/" %}Enhance](https://enhance.dev/)
 	* [{% indieAvatar "https://www.11ty.dev/" %}WebC](https://www.11ty.dev/docs/languages/webc/)
-* React has the worst [`custom-elements-everywhere.com`](https://custom-elements-everywhere.com/) compatibility test score. If you’re deep in React-world, look at using [{% indieAvatar "https://preactjs.com/" %}Preact](https://preactjs.com/) to provide a more future-friendly and compatible experience.
+* Versions of React prior to 19 have a 67% [`custom-elements-everywhere.com`](https://custom-elements-everywhere.com/) compatibility test score. If you’re deep in React-world, upgrade to the React 19 or consider switching to [{% indieAvatar "https://preactjs.com/" %}Preact](https://preactjs.com/) to provide a more future-friendly and compatible experience.
 * Solid, Angular, Svelte, and Vue support web components as a compilation target too.
 
 ## A WebC Example
