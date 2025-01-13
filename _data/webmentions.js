@@ -1,4 +1,4 @@
-const fs = require('fs-extra');
+const fs = require('node:fs');
 const { DateTime } = require("luxon");
 const uniqBy = require('lodash/uniqBy');
 const domain = require("./site.json").domain;
@@ -53,13 +53,11 @@ function writeToCache(data) {
 
 	// create cache folder if it doesnt exist already
 	if (!fs.existsSync(CACHE_DIR)) {
-		fs.mkdirSync(CACHE_DIR);
+		fs.mkdirSync(CACHE_DIR, { recursive: true });
 	}
 	// write data to cache json file
-	fs.writeFile(filePath, fileContent, err => {
-		if (err) throw err;
-		console.log(`[zachleat.com] webmentions cached to ${filePath}`);
-	});
+	fs.writeFileSync(filePath, fileContent);
+	console.log(`[zachleat.com] webmentions cached to ${filePath}`);
 }
 
 function webmentionsEnabled() {
@@ -69,10 +67,10 @@ function webmentionsEnabled() {
 // get cache contents from json file
 async function readFromCache() {
 	const filePath = `${CACHE_DIR}/webmentions.json`;
-	let cacheExists = await fs.exists(filePath);
+	let cacheExists = fs.existsSync(filePath);
 
 	if (cacheExists) {
-		const cacheFile = await fs.readFile(filePath);
+		const cacheFile = fs.readFileSync(filePath);
 		return JSON.parse(cacheFile);
 	}
 

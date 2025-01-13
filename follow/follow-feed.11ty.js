@@ -14,12 +14,10 @@ module.exports = class {
 
 		feed.setCacheDuration("1d"); // cache is persisted now, so we’ll update this at maximum once per day
 
-		feed.addSource("youtubeUser", "YouTube", "UCMlSs0Ltg57qpYdFwUVLR2A");
+		feed.addSource("youtubeuser", "YouTube", "UCMlSs0Ltg57qpYdFwUVLR2A");
 		feed.addSource("atom", "Blog","https://www.zachleat.com/web/feed/");
 		feed.addSource("rss", "Mastodon", "https://fediverse.zachleat.com/users/zachleat.rss");
-
-		// It’s private for now
-		// feed.addSource("twitterUser", "Twitter", "zachleat", "96383");
+		feed.addSource("bluesky", "Bluesky", "@zachleat.com");
 
 		return feed.toRssFeed({
 			title: "Zach Leatherman’s Activity Feed",

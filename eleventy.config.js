@@ -84,6 +84,8 @@ module.exports = async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addPlugin(pluginWebmentions);
+
+	// TODO the `{% renderFile "./static/initial.scss" %}` call to scss is *expensive* and isn’t cached (but only on a full build)
 	eleventyConfig.addPlugin(RenderPlugin, {
 		accessGlobalData: true,
 	});
