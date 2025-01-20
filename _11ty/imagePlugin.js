@@ -163,8 +163,8 @@ function getScreenshotUrlFromPath(path, options) {
 	return getScreenshotUrl(u.toString(), options);
 }
 
-function screenshotImageHtmlFullUrl(fullUrl) {
-	let targetUrl = getScreenshotUrl(fullUrl);
+function screenshotImageHtmlFullUrl(targetUrl) {
+	let fullUrl = getScreenshotUrl(targetUrl);
 	let options = {
 		// format here is static
 		formats: ["jpeg"],
@@ -175,7 +175,7 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 		}
 	};
 
-	let stats = Image.statsByDimensionsSync(targetUrl, 1200, 630, options);
+	let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
 	return Image.generateHTML(stats, {
 		alt: `Screenshot image for ${targetUrl}`,
 		loading: "lazy",
