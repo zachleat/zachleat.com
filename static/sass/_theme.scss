@@ -1,6 +1,9 @@
 @use "mixins";
 @use "config";
 
+:root {
+	--z-border-radius-1: .25em;
+}
 * {
 	box-sizing: border-box;
 }
@@ -824,6 +827,7 @@ table-saw :is(th, td) {
 	background-color: config.$primaryColor;
 	color: transparent;
 	margin-bottom: -2px;
+	border-radius: var(--z-border-radius-1);
 }
 .rail .navigation {
 	margin: 1em 0 0;
@@ -1163,6 +1167,7 @@ a[href]:hover .project_img {
 	vertical-align: text-bottom;
 	display: inline-block;
 	text-decoration: none;
+	border-radius: var(--z-border-radius-1);
 }
 .tag svg {
 	vertical-align: middle;
