@@ -19,7 +19,7 @@ eleventyImport:
 		<li><em><a href="/web/" class="posts-link posts-link-more">…see full archives.</a></em></li>
 	</ol>
 
-	<h2>Popular 🔥</h2>
+	<h2>Popular{% icon "fas:fire" %}</h2>
 	<ol class="posts h-feed">
 		{% for post in collections.popularPostsRanked limit:6 %}
 			{% include "post-list-entry.html", ignoreYear: "true", hfeed: true, ignorePopularity: true %}

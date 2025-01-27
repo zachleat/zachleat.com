@@ -1698,38 +1698,12 @@ select[data-filter-key] {
 	margin: 0;
 }
 
-/* Emoji Icons */
-a[href][data-icon]:has(> *) {
-	text-decoration: none;
-}
-a[href][data-icon]:has(> *) > * {
-	text-decoration: underline;
-}
-[data-icon]:before {
-	--icon-shadow-color: #62a255;
-	content: attr(data-icon);
-	display: inline-flex;
-	font-size: 0.75em; /* 12px /16 */
-	font-style: normal;
-	height: 1.75em; /* 21px /12 */
-	width: 1.75em; /* 21px /12 */
-	align-items: center;
-	justify-content: center;
-	vertical-align: text-bottom;
-	margin-right: .4em;
-	background: linear-gradient(#dfdfdf, #b6d9ab);
-	border-radius: 50%;
-	text-shadow: 1px 1px var(--icon-shadow-color), -1px -1px var(--icon-shadow-color), -1px 1px var(--icon-shadow-color), 1px -1px var(--icon-shadow-color);
-}
-[data-icon][data-icon-skip-shadow]:before {
-	text-shadow: none;
-}
 
+/* External Link Favicons */
 .favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):after {
 	content: " (archive.org)";
 	@include mixins.webfont;
 }
-/* External Link Favicons */
 /* This is for wider application of a few use cases. It’s better to use the indieAvatar shortcode for one-off instances */
 a[href].favicon:before,
 .favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):before,
@@ -1785,4 +1759,21 @@ html:root {
 .m-8 {
 	margin-top: 2em;
 	margin-bottom: 2em;
+}
+
+/* Font Awesome Icons */
+.z-fa-icon {
+	vertical-align: middle;
+	margin: 0 .15em;
+	width: .75lh;
+	height: .75lh;
+}
+.z-fas-fa-fire {
+	color: #f90;
+}
+.z-fas-fa-comment {
+	color: lightblue;
+}
+.z-fas-fa-sun {
+	color: rgb(225, 225, 0);
 }

@@ -11,10 +11,6 @@ tmpl: page
 	<div class="content-grid-sibling">
 		<div class="sub p-description">
 			<em class="date">{{ page.date | readableDate }}</em>
-{%- assign postRank = analytics[page.url].rankPerDaysPosted %}
-{% if postRank and postRank <= 20 %}
-			<em><a href="/web/best-of/">#{{ postRank }} Popular</a></em>
-{% endif %}
 {% if tags contains 'video' %}
 			<em>Watch in {{ medialength | medialengthCleanup }}</em>
 {% endif %}
@@ -80,7 +76,7 @@ tmpl: page
 <article class="content-grid-sibling">
 	<p class="post-metadata">
 		{%- if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
-		<em data-icon="🏷️" data-icon-shadow>Tags:
+		<em>{% icon "fas:tag" %}Tags:
 			{% if tags contains "eleventy" %}<a href="/web/?category=eleventy">Eleventy</a>{% endif %}
 			{% if tags contains "project" %}<a href="/web/?category=project">Project</a>{% endif %}
 			{% if tags contains "speaking" %}<a href="/web/?category=speaking">Speaking</a>{% endif %}
@@ -89,14 +85,14 @@ tmpl: page
 			{% if tags contains "jamstack" %}<a href="/web/?category=jamstack">Jamstack</a>{% endif %}
 		</em>
 	{%- endif %}
-	{%- assign postRank = analytics[page.url].rankPerDaysPosted %}
-	{%- assign postRankAllTime = analytics[page.url].rankTotal %}
-	{%- if postRank and postRank <= 20 or postRankAllTime and postRankAllTime <= 20 %}
-		<em><a href="/web/best-of/" data-icon="🔥" data-icon-skip-shadow>#{{ postRank }} Popular</a></em>
-		<em><a href="/web/best-of/total-views/" data-icon="☀️" data-icon-skip-shadow>#{{ postRankAllTime }}</a></em>
+	{%- assign postRank = analytics[page.url].rankPerDaysPosted | default: 9999 %}
+	{%- assign postRankAllTime = analytics[page.url].rankTotal | default: 9999 %}
+	{%- if postRank <= 20 or postRankAllTime <= 20 %}
+		<em><a href="/web/best-of/">{% icon "fas:fire" %}#{{ postRank }}<span class="sr-only"> Popular (per day)</span></a></em>
+		<em><a href="/web/best-of/total-views/">{% icon "fas:sun" %}#{{ postRankAllTime }}<span class="sr-only"> Popular (total)</span></a></em>
 	{% endif %}
 	{%- if analytics[page.url].pageViews > 500 %}
-		<em data-icon="👀">{{ analytics[page.url].pageViews | renderNumber }} Views</em>
+		<em>{% icon "fas:eye" %}{{ analytics[page.url].pageViews | renderNumber }} Views</em>
 	{%- endif %}
 	</p>
 	{%- if posterImage.source %}

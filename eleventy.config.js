@@ -21,6 +21,7 @@ const pluginSass = require("./_11ty/sassPlugin.js");
 const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
+const pluginIcons = require("./_11ty/iconPlugin.js");
 
 const JS_ENABLED = true;
 
@@ -90,6 +91,7 @@ module.exports = async function(eleventyConfig) {
 		accessGlobalData: true,
 	});
 	eleventyConfig.addPlugin(pluginAnalytics);
+	eleventyConfig.addPlugin(pluginIcons);
 
 	/* COPY */
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
