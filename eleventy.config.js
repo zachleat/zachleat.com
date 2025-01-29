@@ -21,12 +21,12 @@ const pluginSass = require("./_11ty/sassPlugin.js");
 const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
 const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
 const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
-const pluginIcons = require("./_11ty/iconPlugin.js");
 
 const JS_ENABLED = true;
 
 module.exports = async function(eleventyConfig) {
 	const { RenderPlugin, IdAttributePlugin } = await import("@11ty/eleventy");
+	const { default: fontAwesomePlugin } = await import("@11ty/font-awesome");
 	const { default: memoize } = await import("memoize");
 
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
@@ -91,7 +91,11 @@ module.exports = async function(eleventyConfig) {
 		accessGlobalData: true,
 	});
 	eleventyConfig.addPlugin(pluginAnalytics);
-	eleventyConfig.addPlugin(pluginIcons);
+	eleventyConfig.addPlugin(fontAwesomePlugin, {
+		transform: false,
+		shortcode: "icon",
+		shortcodeClass: "z-icon",
+	});
 
 	/* COPY */
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
