@@ -94,7 +94,9 @@ module.exports = async function(eleventyConfig) {
 	eleventyConfig.addPlugin(fontAwesomePlugin, {
 		transform: false,
 		shortcode: "icon",
-		shortcodeClass: "z-icon",
+		defaultAttributes: {
+			class: "z-icon",
+		}
 	});
 
 	/* COPY */
