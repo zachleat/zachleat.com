@@ -1,17 +1,18 @@
 <span class="social">
-	<a href="https://github.com/zachleat/" class="social_icon icon-github" title="@zachleat on GitHub">
-		<svg width="28" height="28" viewBox="0 0 32 32" preserveAspectRatio="xMinYMin" aria-hidden="true" focusable="false"><use xlink:href="#icon-github"></use></svg>
-		<span class="a11y-only"> GitHub</span>
+	<a href="https://github.com/zachleat/" class="social_icon">
+		{% icon "fab:github" %}
+		<span class="a11y-only"> @zachleat on GitHub</span>
 	</a>
-	<a href="https://zachleat.com/@zachleat" class="social_icon icon-mastodon" title="@zachleat@zachleat.com on Mastodon">
-		<svg width="28" height="28" viewBox="0 0 216.4 232" preserveAspectRatio="xMinYMin" aria-hidden="true" focusable="false"><use xlink:href="#icon-mastodon"></use></svg>
-		<span class="a11y-only"> Mastodon</span>
+	<a href="https://zachleat.com/@zachleat" class="social_icon">
+		{% icon "fab:mastodon" %}
+		<span class="a11y-only"> @zachleat@zachleat.com on Mastodon</span>
 	</a>
-	<a href="https://bsky.app/profile/zachleat.com" class="social_icon hide-md" title="@zachleat.com on Bluesky">
-		{% indieAvatar "https://bsky.app/", "" %}
+	<a href="https://bsky.app/profile/zachleat.com" class="social_icon hide-md">
+		{% icon "fab:bluesky" %}
+		<span class="a11y-only"> @zachleat.com on Mastodon</span>
 	</a>
 	<a href="/web/feed/" class="social_icon" title="Zach Leatherman’s RSS Feed">
-		<svg width="28" height="28" viewBox="0 0 32 32" preserveAspectRatio="xMinYMin" aria-hidden="true" focusable="false"><use xlink:href="#icon-feed"></use></svg>
+		{% icon "fas:square-rss" %}
 		<span class="a11y-only"> RSS</span>
 	</a>
 	<a href="https://www.11ty.dev/" class="social_icon social_icon-rounded hide-md">

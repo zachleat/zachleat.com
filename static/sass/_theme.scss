@@ -1157,7 +1157,7 @@ a[href]:hover .project_img {
 }
 .tag-inline,
 .tags .tag {
-	font-size: 10.5px;
+	font-size: 12px;
 	line-height: 18px;
 	height: auto;
 	text-transform: uppercase;
@@ -1168,9 +1168,6 @@ a[href]:hover .project_img {
 	display: inline-block;
 	text-decoration: none;
 	border-radius: var(--z-border-radius-1);
-}
-.tag svg {
-	vertical-align: middle;
 }
 a[href].tag-inline:not(.tag-borderless),
 .tags a[href].tag:not(.tag-borderless) {
@@ -1763,10 +1760,10 @@ html:root {
 
 /* Font Awesome Icons */
 .z-fa-icon {
-	vertical-align: middle;
+	vertical-align: text-bottom;
 	margin: 0 .15em;
-	width: .75lh;
-	height: .75lh;
+	width: 1.3em;
+	height: 1.3em;
 }
 .z-fas-fa-fire {
 	color: #f90;

@@ -1,18 +1,18 @@
 const { library, findIconDefinition, icon } = require("@fortawesome/fontawesome-svg-core");
 const { fas } = require("@fortawesome/free-solid-svg-icons");
+const { fab } = require("@fortawesome/free-brands-svg-icons");
+const { far } = require("@fortawesome/free-regular-svg-icons");
 
-library.add(fas);
+library.add(fas); // `house` or `fas:house`
+library.add(far); // `user` or `far:user`
+library.add(fab); // `fab:bluesky` (requires prefix)
 
-function faIconToHtml(selector, color) {
+function faIconToHtml(selector) {
 	let [prefix, iconName] = selector.split(":");
 	let iconInfo = { prefix, iconName };
 	let iconDef = findIconDefinition(iconInfo);
 
 	let svg = icon(iconDef, {
-		// TODO
-		// styles: {
-		// 	color,
-		// },
 		symbol: true,
 	});
 

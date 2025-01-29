@@ -3,9 +3,11 @@
 /* Social links */
 .social {
 	display: flex;
+	align-items: center;
 	gap: .75em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+}
+.social .z-fa-icon {
+	margin: 0;
 }
 @media (min-width: config.$twoColLayoutMinWidth) {
 	.rail .social {
@@ -22,6 +24,7 @@
 	border-radius: .15em;
 }
 .social_icon img {
+	min-width: 1.75rem; /* 28px /16 */
 	width: 1.75rem; /* 28px /16 */
 	height: 1.75rem; /* 28px /16 */
 }
@@ -32,6 +35,7 @@
 	opacity: 1;
 }
 .social a {
+	display: inline-flex;
 	font-size: 1.6em;
 	text-decoration: none;
 	vertical-align: top;

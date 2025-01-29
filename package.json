@@ -4,6 +4,9 @@
 	"description": "The website of @zachleat",
 	"dependencies": {
 		"@11ty/is-land": "^4.0.0",
+		"@fortawesome/free-brands-svg-icons": "^6.7.2",
+		"@fortawesome/free-regular-svg-icons": "^6.7.2",
+		"@fortawesome/free-solid-svg-icons": "^6.7.2",
 		"@tweetback/canonical": "^2.0.46",
 		"@zachleat/browser-window": "^1.0.14",
 		"@zachleat/carouscroll": "^1.0.6",
@@ -37,7 +40,6 @@
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
 		"@11ty/eleventy-plugin-webc": "^0.12.0-beta.2",
 		"@fortawesome/fontawesome-svg-core": "^6.7.2",
-		"@fortawesome/free-solid-svg-icons": "^6.7.2",
 		"degit": "^2.8.4",
 		"dotenv": "^16.4.7",
 		"fast-glob": "^3.3.3",

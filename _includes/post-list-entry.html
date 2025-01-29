@@ -46,15 +46,9 @@
 	<span class="tags">
 		{%- capture absoluteUrl -%}{{ post.url | absoluteUrl }}{%- endcapture -%}
 
-		{%- if post.data.tags contains 'font-loading' %}<span class="tag font-loading">Web Fonts</span>{% endif -%}
-		{%- if post.data.tags contains 'project' %}<span class="tag">Project</span>{% endif -%}
-		{%- if post.data.tags contains 'research' %}<span class="tag">Research</span>{% endif -%}
-		{%- if post.data.tags contains 'conference' -%}
-			{%- if post.data.tags contains 'speaking' %}<span class="tag"{% if post.data.tags contains 'speaking' %} href="/web/speaking/"{% endif %}>Speaking</span>{% endif -%}
-			{%- if post.data.event_date %}<span class="tag tag-event">on {{ post.data.event_date }}</span>{% endif -%}
-		{%- elsif post.data.tags contains 'presentations' or post.data.tags contains 'speaking' -%}
-			<span class="tag">Speaking</span>
-			{%- if post.data.event_date %}<span class="tag tag-event">on {{ post.data.event_date }}</span>{% endif -%}
+		{%- if post.data.tags contains 'conference' and post.data.event_date -%}
+			<span class="tag">Event</span>
+			<span class="tag tag-event">on {{ post.data.event_date }}</span>
 		{%- endif -%}
 		{%- if post.data.tags contains 'video' %}<span class="tag video">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Video</span>{% endif -%}
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Audio</span>{% endif -%}
