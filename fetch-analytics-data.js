@@ -68,7 +68,7 @@ function getInputMap(globs) {
 	let results = {};
 	let alternates = {};
 	let entries = glob.sync(globs);
-	for(inputPath of entries) {
+	for(let inputPath of entries) {
 		let result = {
 			inputPath,
 		};

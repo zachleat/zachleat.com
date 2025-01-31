@@ -61,8 +61,10 @@
 		"build": "npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --port=8090 --incremental",
 		"start-search": "npm run build && npm run create-search-index && npm run start",
-		"production": "./fetch-projects.sh && node fetch-analytics-data.js && npm run build-production && npm run create-search-index",
-		"nocache-production": "./fetch-projects.sh && npm run build-production && npm run create-search-index",
+		"projects": "./fetch-projects.sh",
+		"analytics": "node fetch-analytics-data.js",
+		"production": "npm run projects && npm run analytics && npm run build-production && npm run create-search-index",
+		"nocache-production": "npm run projects && npm run build-production && npm run create-search-index",
 		"build-production": "PRODUCTION_BUILD=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy"
 	},
 	"repository": {
