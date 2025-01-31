@@ -1,4 +1,4 @@
-module.exports = class {
+export default class {
 	data() {
 		return {
 			permalink: "/follow/follow.rss",

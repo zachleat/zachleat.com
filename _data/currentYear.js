@@ -1,1 +1,3 @@
-module.exports = (new Date()).getFullYear();
+const currentYear = (new Date()).getFullYear();
+
+export default currentYear;

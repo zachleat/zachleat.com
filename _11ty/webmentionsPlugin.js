@@ -1,9 +1,9 @@
-const sanitizeHTML = require("sanitize-html");
+import sanitizeHTML from "sanitize-html";
 
-const webmentionBlockList = require("../_data/webmentionsBlockList.json");
-const getBaseUrl = require("../_includes/getBaseUrl");
+import webmentionBlockList from "../_data/webmentionsBlockList.json" with { type: "json" };
+import getBaseUrl from "../_includes/getBaseUrl.js";
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
 
 	const allowedHTML = {
 		allowedTags: ['b', 'i', 'em', 'strong', 'a'],

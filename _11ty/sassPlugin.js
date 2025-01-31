@@ -1,7 +1,7 @@
-const sass = require("sass");
-const path = require("node:path");
+import * as sass from 'sass'
+import path from "node:path";
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
 	eleventyConfig.addTemplateFormats("scss");
 
 	eleventyConfig.addExtension("scss", {

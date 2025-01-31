@@ -1,4 +1,4 @@
-const eleventyImage = require("@11ty/eleventy-img");
+import eleventyImage from "@11ty/eleventy-img";
 
 function getAvatarImageOptions(username) {
 	return {
@@ -30,7 +30,7 @@ async function imgAvatar(username, classes = "") {
 	return markup;
 }
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
 	// this will no longer generate new images so don’t use it
 	async function twitterAvatarHtml(username, classes = "") {
 		return imgAvatar(username, classes);

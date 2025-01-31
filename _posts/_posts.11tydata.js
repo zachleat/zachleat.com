@@ -2,7 +2,7 @@ function openGraphImageUrl(url) {
 	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(url)}/auto/jpeg/`;
 }
 
-module.exports = {
+export default {
 	author: "Zach Leatherman",
 	layout: "layouts/post.liquid",
 	permalink: function({page}) {

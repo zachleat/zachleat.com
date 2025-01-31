@@ -1,4 +1,4 @@
-const EleventyFetch = require("@11ty/eleventy-fetch");
+import EleventyFetch from "@11ty/eleventy-fetch";
 
 function fetch(url) {
 	return EleventyFetch(url, {
@@ -7,7 +7,7 @@ function fetch(url) {
 	})
 }
 
-module.exports = async function({eleventy}) {
+export default async function({eleventy}) {
 	// https://developer.github.com/v3/repos/#get
 	try {
 		let initialData = {

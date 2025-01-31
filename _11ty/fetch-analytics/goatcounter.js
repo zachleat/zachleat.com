@@ -1,6 +1,5 @@
-const EleventyFetch = require("@11ty/eleventy-fetch");
-
-require('dotenv').config();
+import 'dotenv/config'
+import EleventyFetch from "@11ty/eleventy-fetch";
 
 async function fetchData() {
 	try {
@@ -45,4 +44,4 @@ async function fetchData() {
 	}
 };
 
-module.exports.fetchData = fetchData;
+export { fetchData };

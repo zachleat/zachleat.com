@@ -1,6 +1,6 @@
-const analyticsData = require("../_data/analytics.json");
+import analyticsData from "../_data/analytics.json" with { type: "json" };
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
 	let total = 0;
 	for(let url in analyticsData) {
 		total += analyticsData[url].pageViews;

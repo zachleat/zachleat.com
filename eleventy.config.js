@@ -1,34 +1,31 @@
-const fs = require("node:fs");
-const path = require("node:path");
-const { DateTime } = require("luxon");
-const { URL } = require("url");
-const numeral = require("numeral");
-const markdownIt = require("markdown-it");
-const markdownItToc = require("markdown-it-table-of-contents");
-const { encode } = require("html-entities");
-const { YoutubeTranscript } = require("youtube-transcript");
-const { AssetCache } = require("@11ty/eleventy-fetch");
+import fs from "node:fs";
+import path from "node:path";
+import { DateTime } from "luxon";
+import memoize from "memoize";
+import numeral from "numeral";
+import markdownIt from "markdown-it";
+import markdownItToc from "markdown-it-table-of-contents";
+import { encode } from "html-entities";
+import { YoutubeTranscript } from "youtube-transcript";
 
-const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginWebc = require("@11ty/eleventy-plugin-webc");
+import { RenderPlugin, IdAttributePlugin } from "@11ty/eleventy";
+import { AssetCache } from "@11ty/eleventy-fetch";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginWebc from "@11ty/eleventy-plugin-webc";
+import fontAwesomePlugin from "@11ty/font-awesome";
 
-const siteData = require("./_data/site.json");
-const pluginImage = require("./_11ty/imagePlugin.js");
-const { imageShortcode, opengraphImageHtml, screenshotImageHtmlFullUrl } = pluginImage;
+import siteData from "./_data/site.json" with { type: "json" };
+import pluginImage, { imageShortcode, opengraphImageHtml, screenshotImageHtmlFullUrl } from "./_11ty/imagePlugin.js";
 
-const pluginSass = require("./_11ty/sassPlugin.js");
-const pluginImageAvatar = require("./_11ty/imageAvatarPlugin.js");
-const pluginWebmentions = require("./_11ty/webmentionsPlugin.js");
-const pluginAnalytics = require("./_11ty/analyticsPlugin.js");
+import pluginSass from "./_11ty/sassPlugin.js";
+import pluginImageAvatar from "./_11ty/imageAvatarPlugin.js";
+import pluginWebmentions from "./_11ty/webmentionsPlugin.js";
+import pluginAnalytics from "./_11ty/analyticsPlugin.js";
 
 const JS_ENABLED = true;
 
-module.exports = async function(eleventyConfig) {
-	const { RenderPlugin, IdAttributePlugin } = await import("@11ty/eleventy");
-	const { default: fontAwesomePlugin } = await import("@11ty/font-awesome");
-	const { default: memoize } = await import("memoize");
-
+export default async function(eleventyConfig) {
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
@@ -626,7 +623,7 @@ module.exports = async function(eleventyConfig) {
 	});
 };
 
-module.exports.config = {
+export const config = {
 	templateFormats: [
 		"liquid",
 		"md",
