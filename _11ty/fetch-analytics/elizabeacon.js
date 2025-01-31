@@ -1,6 +1,6 @@
-module.exports.queryData = async function queryData() {
-	let data = require("./fauna-export.json");
+import data from "./fauna-export.json" with { type: "json" };
 
+async function queryData() {
 	let ret = {};
 	let total = 0;
 	for(let entry of data) {
@@ -18,3 +18,5 @@ module.exports.queryData = async function queryData() {
 
 	return ret;
 }
+
+export { queryData };

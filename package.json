@@ -2,6 +2,7 @@
 	"name": "zachleat.com",
 	"version": "2.6.1",
 	"description": "The website of @zachleat",
+	"type": "module",
 	"dependencies": {
 		"@11ty/font-awesome": "^1.0.0-beta.6",
 		"@11ty/is-land": "^4.0.0",

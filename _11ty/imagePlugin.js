@@ -1,7 +1,6 @@
-const path = require("node:path");
-const Image = require("@11ty/eleventy-img");
-const { createHash } = require("crypto");
-const { eleventyImageOnRequestDuringServePlugin } = require("@11ty/eleventy-img");
+import path from "node:path";
+import { createHash } from "node:crypto";
+import Image, { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
 
 function getCryptoHash(src) {
 		let hash = createHash("sha1");
@@ -184,7 +183,7 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 	});
 }
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
 	// Serve images on request
 	eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
 
@@ -252,7 +251,9 @@ module.exports = function(eleventyConfig) {
 	});
 };
 
-module.exports.imageShortcode = imageShortcode;
-module.exports.screenshotImageHtmlFullUrl = screenshotImageHtmlFullUrl;
-module.exports.opengraphImageHtml = opengraphImageHtmlWithClass;
+export {
+	imageShortcode,
+	screenshotImageHtmlFullUrl,
+	opengraphImageHtmlWithClass as opengraphImageHtml,
+};
 

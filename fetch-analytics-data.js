@@ -1,15 +1,16 @@
-require('dotenv').config();
+import 'dotenv/config'
+import fs from "fs";
+import glob from "fast-glob";
+import matter from "gray-matter";
 
-const fs = require("fs");
-const glob = require("fast-glob");
-const matter = require("gray-matter");
-const { queryData: queryElizabeaconData } = require("./_11ty/fetch-analytics/elizabeacon.js");
-const { fetchData: queryGoatcounterData } = require("./_11ty/fetch-analytics/goatcounter.js");
+import { queryData as queryElizabeaconData } from "./_11ty/fetch-analytics/elizabeacon.js";
+import { fetchData as queryGoatcounterData } from "./_11ty/fetch-analytics/goatcounter.js";
+
+import googleData from "./_11ty/fetch-analytics/google-analytics-export.json" with { type: "json" };
 
 const MINIMUM_PAGEVIEWS = 50;
 
 async function fetchAnalyticsData() {
-	let googleData = require("./_11ty/fetch-analytics/google-analytics-export.json");
 	let elizabeaconData = await queryElizabeaconData();
 	let goatcounterData = await queryGoatcounterData();
 

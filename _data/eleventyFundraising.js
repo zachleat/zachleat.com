@@ -1,6 +1,6 @@
-const EleventyFetch = require("@11ty/eleventy-fetch");
+import EleventyFetch from "@11ty/eleventy-fetch";
 
-module.exports = async function() {
+export default async function() {
 	try {
 		let json = await EleventyFetch("https://www.11ty.dev/api/fundraising-status.json", {
 			type: "json",

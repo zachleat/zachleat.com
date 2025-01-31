@@ -1,12 +1,14 @@
-const fs = require('node:fs');
-const { DateTime } = require("luxon");
-const uniqBy = require('lodash/uniqBy');
-const domain = require("./site.json").domain;
-const getBaseUrl = require("../_includes/getBaseUrl")
-// Load .env variables with dotenv
-require('dotenv').config();
+import 'dotenv/config';
+
+import fs from 'node:fs';
+import { DateTime } from "luxon";
+import lodash from 'lodash';
+
+import siteData from "./site.json" with { type: "json" };
+import getBaseUrl from "../_includes/getBaseUrl.js";
 
 // Configuration Parameters
+const { domain } = siteData;
 const CACHE_DIR = '.cache';
 const API_ORIGIN = 'https://webmention.io/api/mentions.jf2';
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
@@ -80,7 +82,7 @@ async function readFromCache() {
 	};
 }
 
-module.exports = async function({ eleventy }) {
+export default async function({ eleventy }) {
 	const cache = await readFromCache();
 	const { lastFetched, mentions } = cache;
 
@@ -99,7 +101,7 @@ module.exports = async function({ eleventy }) {
 
 			let totalCount = 0;
 			for(let url in mentions) {
-				mentions[url] = uniqBy(mentions[url], function(entry) {
+				mentions[url] = lodash.uniqBy(mentions[url], function(entry) {
 					return entry["wm-id"];
 				});
 
