@@ -2,36 +2,12 @@
 title: Ruthlessly Eliminating Layout Shift on netlify.com
 tags:
   - web-components
-imgNoPictureOptions:
-  formats:
-    - jpeg
-  widths:
-    - auto
-imageAttr:
-  banner:
-    src: ./web/img/posts/layout-shift/banner.png
-    alt: Screenshot of the banner on netlify.com
-  oldsite:
-    src: ./web/img/posts/layout-shift/old-site.png
-    alt: Filmstrip showing hidden banner for ~600ms on old netlify.com design
-    class: primary
-  newsite:
-    src: ./web/img/posts/layout-shift/new-site.png
-    alt: Filmstrip showing hidden banner for ~600ms on the new netlify.com design
-    class: primary
-  results:
-    src: ./web/img/posts/layout-shift/new-site-fixed.png
-    alt: Filmstrip showing banner visible on first render
-    class: primary
-  chart:
-    src: ./web/img/posts/layout-shift/layout-shifts.png
-    alt: 'Graph of Layout Shifts: previous has .35 and new has 0'
 ---
 _Updated on 17 November 2023 to simplify the CSS to use `:defined`_
 
 On the Netlify web site, we have a little banner that appears at the top to drive traffic to new and exciting things happening in Netlify-land.
 
-<div class="livedemo livedemo-mixed livedemo-auto" data-demo-label="Announcement Banner">{% image imageAttr.banner %}</div>
+<div class="livedemo livedemo-mixed livedemo-auto" data-demo-label="Announcement Banner"><img src="/web/img/posts/layout-shift/banner.png" alt="A banner on top of netlify.com"></div>
 
 That banner has exactly two features:
 
@@ -46,11 +22,11 @@ There are a few key performance milestones in the lifecycle of this component, a
 
 Steps 2 and 3 were bundled and executed together in the same component code file. And in some [earlier iterations of the site](https://webpagetest.org/video/compare.php?tests=200526_GE_3bac7c5d7f3e40ea0eb25db86b65b66e-r%3A5-c%3A0&thumbSize=200&ival=16.67&end=visual), up the amount of time that elapsed between Step 1 and 2 could be up to ~600 ms.
 
-{% image imageAttr.oldsite imgNoPictureOptions %}
+<img src="/web/img/posts/layout-shift/old-site.png" alt="Filmstrip showing hidden banner for ~600ms on old netlify.com design" class="primary">
 
 On [our new site (faster, mind you) redesign](https://webpagetest.org/video/compare.php?tests=201125_Di9X_11c25281710129654355efb9be2104ea-r%3A3-c%3A0&thumbSize=200&ival=100&end=visual) we inlined the JavaScript for Steps 2 and 3 into the end of the `<body>` and the delay was still very present:
 
-{% image imageAttr.newsite imgNoPictureOptions %}
+<img src="/web/img/posts/layout-shift/new-site.png" alt="Filmstrip showing hidden banner for ~600ms on the new netlify.com design" class="primary">
 
 ## The fix
 
@@ -137,11 +113,11 @@ Astute readers will notice that the above is a web component but let’s just ke
 
 Note that the [first render contains the banner](https://webpagetest.org/video/compare.php?tests=201125_DiAJ_d03dece53d218fafa5a8e00c4c22a809-r%3A1-c%3A0&thumbSize=200&ival=100&end=visual)! This is the same render behavior whether or not JavaScript is in play.
 
-{% image imageAttr.results imgNoPictureOptions %}
+<img src="/web/img/posts/layout-shift/new-site-fixed.png" alt="Filmstrip showing banner visible on first render" class="primary">
 
 In this [waterfall comparison](https://webpagetest.org/video/compare.php?tests=201125_DiCC_6c46324998300e1d9695c4359b5004b4%2C201125_Di7H_7267acbae0816330717ab9192388c5d6&thumbSize=200&ival=100&end=visual), you might note that we reduced layout shift metrics to zero.
 
-{% image imageAttr.chart %}
+<img src="/web/img/posts/layout-shift/layout-shifts.png" alt="Graph of Layout Shifts: previous has .35 and new has 0">
 
 And because we inlined the script for repeat views into the `<head>`, when you hide the banner and navigate to a new page, the banner will be hidden before first render too.
 

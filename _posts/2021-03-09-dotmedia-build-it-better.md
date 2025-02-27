@@ -1,7 +1,7 @@
 ---
 title: 'Build IT Better: Architecture feat. Jason Lengstorf and Zach Leatherman'
 eleventyComputed:
-  titleHtml: '{% imgavatar "ThisDotMedia", "z-avatar-eq" %}Build IT Better: Architecture feat. {% imgavatar "jlengstorf", "z-avatar-eq" %}Jason Lengstorf and {% imgavatar "zachleat", "z-avatar-eq" %}Zach Leatherman'
+  titleHtml: '{% twitterImageAvatar "ThisDotMedia", "z-avatar-eq" %}Build IT Better: Architecture feat. {% twitterImageAvatar "jlengstorf", "z-avatar-eq" %}Jason Lengstorf and {% twitterImageAvatar "zachleat", "z-avatar-eq" %}Zach Leatherman'
 tweet: 'https://twitter.com/ThisDotMedia/status/1369342730359439363'
 tags:
   - speaking

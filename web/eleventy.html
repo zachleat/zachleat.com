@@ -3,10 +3,6 @@ title: Why Are There So Many Static Site Generators
 layout: layouts/pagealign.liquid
 eleventyImport:
   collections: ["eleventy"]
-logoImgAttributes:
-  src: "./web/img/11ty.png"
-  alt: Eleventy Logo
-  class: eleventy-logo
 ---
 <style>
 .eleventy-logo-c {
@@ -20,7 +16,7 @@ logoImgAttributes:
 </style>
 <div class="flex" style="--flex-gap: 1.25em;">
 	<a href="https://www.11ty.dev/" class="flexcol-1-4 eleventy-logo-c">
-		{% image logoImgAttributes %}
+		<img src="/web/img/11ty.png" alt="Eleventy Logo" class="eleventy-logo">
 	</a>
 	<div class="flexcol-3-4">
 		<p>Blog posts and tutorials for the <a href="https://www.11ty.dev/">Eleventy static site generator</a>. You can read more at the <a href="https://www.11ty.dev/news/">Eleventy News Blog</a>. This website is generated using Eleventy.</p>

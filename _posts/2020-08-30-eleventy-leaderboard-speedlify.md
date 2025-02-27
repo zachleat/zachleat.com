@@ -1,7 +1,7 @@
 ---
 title: Eleventy Leaderboards v2 via Speedlify
 eleventyComputed:
-  titleHtml: 'Eleventy Leaderboards v2 via {% imgavatar "speedlify", "z-avatar-eq" %}Speedlify'
+  titleHtml: 'Eleventy Leaderboards v2 via {% twitterImageAvatar "speedlify", "z-avatar-eq" %}Speedlify'
 tags:
   - project
   - eleventy
@@ -12,13 +12,13 @@ And now we have a fully fledged independent, self-hosted performance dashboard, 
 
 <div class="primarylink"><a href="https://www.11ty.dev/speedlify/">Eleventy Leaderboards (powered by Speedlify)</a></div>
 
-Follow [{% imgavatar "speedlify" %}speedlify](https://twitter.com/speedlify) on Twitter or check out [speedlify.dev](https://www.speedlify.dev/).
+Follow [{% twitterImageAvatar "speedlify" %}speedlify](https://twitter.com/speedlify) on Twitter or check out [speedlify.dev](https://www.speedlify.dev/).
 
 ## What’s New
 
 * It’s using [Speedlify](/web/speedlify/)! That means full historical Lighthouse results and full Axe scans (some Axe violations don’t show in Lighthouse).
 * You can add `<speedlify-score>` to your web site to show your latest Eleventy Leaderboard rank and score! Here’s a live example of the leaderboard entry for zachleat.com: <div class="livedemo livedemo-mixed" data-demo-label="Example for zachleat.com"><speedlify-score speedlify-url="https://www.11ty.dev/speedlify" hash="bbfa43c1" score weight rank rank-change></speedlify-score></div>The Eleventy Leaderboards also provide the `<speedlify-score>` markup you need to integrate the component on your site. Just copy and paste: <img src="/web/img/posts/11ty-leaderboard-source.png" alt="Example of how to copy speedlify-score markup on the Eleventy Leaderboards"> Add or remove the `score`, `weight`, `rank`, `rank-change`, and `requests` attributes to your needs.
-* Eleventy Author pages now show screenshots *and* Speedlify scores from the Leaderboard. e.g. [the {% imgavatar "zachleat" %}zachleat Eleventy Author page](https://www.11ty.dev/authors/zachleat/). A quick shout out to [{% imgavatar "smthdotuk" %}Sam Smith](https://www.11ty.dev/authors/smthdotuk/), who at time of writing had perfect scores on every one of the six sites listed on their Eleventy Author page.
+* Eleventy Author pages now show screenshots *and* Speedlify scores from the Leaderboard. e.g. [the {% twitterImageAvatar "zachleat" %}zachleat Eleventy Author page](https://www.11ty.dev/authors/zachleat/). A quick shout out to [{% twitterImageAvatar "smthdotuk" %}Sam Smith](https://www.11ty.dev/authors/smthdotuk/), who at time of writing had perfect scores on every one of the six sites listed on their Eleventy Author page.
 * As a bonus feature to Speedlify, we now show a warning on the results when redirects are impacting site performance. If someone forgot a trailing slash on their URL or a `www.`, I’ll usually fix those manually but sometimes they are legitimate parts of the experience (e.g. a redirect from `/` to `/en/` for internationalization).
 
 ### “The Algorithm” and Tiebreaker Changes

@@ -3,18 +3,14 @@ title: Unicode Range Interchange
 tags:
   - project
   - font-loading
-imageAttr:
-  preview:
-    src: ./web/img/posts/unicode-range-interchange/preview.png
-    alt: 'A preview of the Unicode Range Interchange page, showing the instructions described in this post.'
 seo:
   openGraphBackgroundImage: /og/sources/bookshelf.jpg
 ---
-Last week an [issue came in](https://github.com/11ty/11ty-website/issues/958) from [{% imgavatar "polarbirke" %}polarbirke on Twitter](https://twitter.com/polarbirke/status/1366016686579724289) that the web font we use for our titles was overly aggressively subset! Oh no!
+Last week an [issue came in](https://github.com/11ty/11ty-website/issues/958) from [{% twitterImageAvatar "polarbirke" %}polarbirke on Twitter](https://twitter.com/polarbirke/status/1366016686579724289) that the web font we use for our titles was overly aggressively subset! Oh no!
 
 I thought it might be instructive to go through how I would go about adding a character or set of characters to an existing subset web font. I’ll be using a new `unicode-range` calculator tool I shipped this week called [Unicode Range Interchange](https://www.zachleat.com/unicode-range-interchange/).
 
-_Behind the scenes, Unicode Range Interchange uses an awesome library from [{% imgavatar "bram_stein" %}Bram Stein called `characterset`](https://www.npmjs.com/package/characterset). I’ve used it for many web font things over the years—super useful._
+_Behind the scenes, Unicode Range Interchange uses an awesome library from [{% twitterImageAvatar "bram_stein" %}Bram Stein called `characterset`](https://www.npmjs.com/package/characterset). I’ve used it for many web font things over the years—super useful._
 
 1. Find the existing `unicode-range` value in your CSS @font-face block. 11ty.dev uses BenchNine and is subset with `unicode-range: U+20-7E,U+2014,U+2019`.
 1. Plug this into the first text input field on Unicode Range Interchange. It shows you the characters and the size of the set (in this case, 97 characters).
@@ -25,7 +21,7 @@ _Behind the scenes, Unicode Range Interchange uses an awesome library from [{% i
 
 It looked like this:
 
-<div class="livedemo livedemo-nolabel livedemo-auto" data-demo-label="">{% image imageAttr.preview %}</div>
+<div class="livedemo livedemo-nolabel livedemo-auto" data-demo-label=""><img src="/web/img/posts/unicode-range-interchange/preview.png" alt="A preview of the Unicode Range Interchange page, showing the instructions described in this post."></div>
 
 <p class="primarylink">Try it out for yourself: <a href="https://www.zachleat.com/unicode-range-interchange/">Unicode Range Interchange</a></p>
 

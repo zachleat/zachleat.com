@@ -46,7 +46,7 @@ scripts:
 				{{ podcastCount }} podcast{% if podcastCount != 1 %}s{% endif %},
 				and {{ lectureCount | numberString }} University lecture{% if lectureCount != 1 %}s{% endif %}.
 				<ul class="resume-desc">
-					<li>Events like <a href="https://jamstackconf.com/" class="resume-nbsp">{% imgavatar "jamstackconf" %}JAMstack_conf</a> <span class="resume-subnote">(×2)</span>, <a href="https://beyondtellerrand.com/"><span class="resume-nbsp">{% imgavatar "btconf" %}Beyond</span> Tellerrand</a>, <a href="https://smashingconf.com/"><span class="resume-nbsp">{% imgavatar "smashingconf" %}Smashing</span> Conference</a> <span class="resume-subnote">(×5)</span>, <a href="https://2014.cssconf.com/" class="resume-nbsp z-avatars-square">{% imgavatar "CSSConf" %}CSSConf</a>, and the first ever <a href="https://obamawhitehouse.archives.gov/blog/2015/04/14/friday-tech-meetup-white-house-0">Tech Meetup at {% imgavatar "TheWhiteHouse" %}The White House</a>.</li>
+					<li>Events like <a href="https://jamstackconf.com/" class="resume-nbsp">{% twitterImageAvatar "jamstackconf" %}JAMstack_conf</a> <span class="resume-subnote">(×2)</span>, <a href="https://beyondtellerrand.com/"><span class="resume-nbsp">{% twitterImageAvatar "btconf" %}Beyond</span> Tellerrand</a>, <a href="https://smashingconf.com/"><span class="resume-nbsp">{% twitterImageAvatar "smashingconf" %}Smashing</span> Conference</a> <span class="resume-subnote">(×5)</span>, <a href="https://2014.cssconf.com/" class="resume-nbsp z-avatars-square">{% twitterImageAvatar "CSSConf" %}CSSConf</a>, and the first ever <a href="https://obamawhitehouse.archives.gov/blog/2015/04/14/friday-tech-meetup-white-house-0">Tech Meetup at {% twitterImageAvatar "TheWhiteHouse" %}The White House</a>.</li>
 				</ul>
 			</li>
 
@@ -55,9 +55,9 @@ scripts:
 				<ul class="resume-desc">
 					<li><a href="/web/?category=writing">{{ collections.writing | size | renderNumber }} posts</a> since February 2007. On my writing,
 						<ul>
-							<li><span class="resume-nbsp">{% imgavatar "sarah_edo" %}Sarah</span> Drasner <a href="https://twitter.com/sarah_edo/status/1067122136412614656">said</a> she <em>“shaved full seconds off this big application […] by following some of Zach’s great materials […]”</em></li>
-							<li><span class="resume-nbsp">{% imgavatar "adactio" %}Jeremy</span> Keith <a href="https://adactio.com/links/14311">twice</a> <a href="https://adactio.com/journal/14329">said</a> <em>“Always ask yourself What Would Zach Do?”</em></li>
-							<li><span class="resume-nbsp">{% imgavatar "paul_irish" %}Paul</span> Irish <a href="https://twitter.com/paul_irish/status/295705697117691904">called me</a> <em>“damn smart”</em>—a debatable claim, to be sure.</li>
+							<li><span class="resume-nbsp">{% twitterImageAvatar "sarah_edo" %}Sarah</span> Drasner <a href="https://twitter.com/sarah_edo/status/1067122136412614656">said</a> she <em>“shaved full seconds off this big application […] by following some of Zach’s great materials […]”</em></li>
+							<li><span class="resume-nbsp">{% twitterImageAvatar "adactio" %}Jeremy</span> Keith <a href="https://adactio.com/links/14311">twice</a> <a href="https://adactio.com/journal/14329">said</a> <em>“Always ask yourself What Would Zach Do?”</em></li>
+							<li><span class="resume-nbsp">{% twitterImageAvatar "paul_irish" %}Paul</span> Irish <a href="https://twitter.com/paul_irish/status/295705697117691904">called me</a> <em>“damn smart”</em>—a debatable claim, to be sure.</li>
 						</ul>
 					</li>
 					<li>{{ totalAnalyticsPageViews | renderNumber }} lifetime pageviews and growing. <a href="/web/best-of/" class="resume-print-link">Read the most popular ones</a></li>
@@ -65,14 +65,14 @@ scripts:
 			</li>
 
 			<li>
-				<strong class="p-skill">Conference Organizer</strong> and Co-founder of <a href="https://nejsconf.com/">{% imgavatar "nejsconf" %}NEJS CONF</a>.
+				<strong class="p-skill">Conference Organizer</strong> and Co-founder of <a href="https://nejsconf.com/">{% twitterImageAvatar "nejsconf" %}NEJS CONF</a>.
 				<ul class="resume-desc">
 					<li><span class="resume-date">2015 to 2019</span>: five conferences, 46 speakers, ~200 attendees per year.</li>
 				</ul>
 			</li>
 
 			<li>
-				<strong class="p-skill">Lead Organizer</strong> for <a href="https://nebraskajs.com/">{% imgavatar "nebraskajs" %}NebraskaJS</a>, a JavaScript meetup.
+				<strong class="p-skill">Lead Organizer</strong> for <a href="https://nebraskajs.com/">{% twitterImageAvatar "nebraskajs" %}NebraskaJS</a>, a JavaScript meetup.
 				<ul class="resume-desc">
 					<li><span class="resume-date">2012 to 2018</span>: {{ meetup.nebraskajs | renderNumber }} members and growing, 50+ speakers, 90+ events.</li>
 				</ul>
@@ -81,17 +81,17 @@ scripts:
 			<li>
 				<strong>Open Source</strong>
 				<ul class="resume-desc">
-					<li><a href="https://www.11ty.dev/">{% imgavatar "eleven_ty" %}Eleventy</a> <span class="resume-subnote">(☆ {{ stargazers.eleventy | renderNumber }})</span> <span class="p-skill">creator and maintainer</span>.
+					<li><a href="https://www.11ty.dev/">{% twitterImageAvatar "eleven_ty" %}Eleventy</a> <span class="resume-subnote">(☆ {{ stargazers.eleventy | renderNumber }})</span> <span class="p-skill">creator and maintainer</span>.
 						<ul>
 							<li>Used in production by Google, V8, W3C, Cern, MIT, Stanford, WebPageTest, CSS-Tricks, Netlify, Red Hat, <a href="https://www.11ty.dev/#logos">and others</a>.</li>
 							<li>Shipped <a href="https://www.11ty.dev/blog/stability/">56 versions</a>, with {{ eleventyNpmDownloads.downloads | renderNumber }} downloads (npm), in use by <a href="https://github.com/11ty/eleventy/network/dependents">65<abbr title="thousand">K</abbr>+ repositories (GitHub)</a>.</li>
 							<li>Three-time winner of the Google Open Source Peer Bonus Award in <a href="https://opensource.googleblog.com/2018/03/congratulating-open-source-peer-bonus-winners.html" class="dtstart">2018</a>, <a href="https://opensource.googleblog.com/2019/04/google-open-source-peer-bonus-winners.html" class="dtstart">2019</a>, and <a href="https://opensource.googleblog.com/2022/03/Announcing-First-Group-of-Google-Open-Source-Peer-Bonus-Winners-in-2022.html">2022</a> and <a href="https://www.producthunt.com/products/eleventy">#1 Product of the Day</a> on Product Hunt.</li>
-							<li><span class="resume-nbsp">{% imgavatar "addyosmani" %}Addy</span> Osmani called it <em>“absolutely wonderful.”</em></li>
-							<li><span class="resume-nbsp">{% imgavatar "chriscoyier" %}Chris</span> Coyier said it was <em>“almost fascinatingly simple.”</em></li>
-							<li>Read <a href="https://www.11ty.dev/docs/testimonials/" class="resume-print-link resume-print-link-ext" data-print-href="11ty.dev/docs/testimonials/">more Eleventy testimonials from <span class="resume-nbsp">{% imgavatar "mathias" %}Mathias</span> Bynens, <span class="resume-nbsp">{% imgavatar "MinaMarkham" %}Mina</span> Markham, and others</a>.</li>
+							<li><span class="resume-nbsp">{% twitterImageAvatar "addyosmani" %}Addy</span> Osmani called it <em>“absolutely wonderful.”</em></li>
+							<li><span class="resume-nbsp">{% twitterImageAvatar "chriscoyier" %}Chris</span> Coyier said it was <em>“almost fascinatingly simple.”</em></li>
+							<li>Read <a href="https://www.11ty.dev/docs/testimonials/" class="resume-print-link resume-print-link-ext" data-print-href="11ty.dev/docs/testimonials/">more Eleventy testimonials from <span class="resume-nbsp">{% twitterImageAvatar "mathias" %}Mathias</span> Bynens, <span class="resume-nbsp">{% twitterImageAvatar "MinaMarkham" %}Mina</span> Markham, and others</a>.</li>
 						</ul>
 					</li>
-					<li>Implemented and documented font loading strategies for both <a href="/web/css-tricks-web-fonts/">{% imgavatar "css" %}CSS Tricks</a> and <a href="/web/the-compromise/">{% imgavatar "smashingmag" %}Smashing Magazine</a>.</li>
+					<li>Implemented and documented font loading strategies for both <a href="/web/css-tricks-web-fonts/">{% twitterImageAvatar "css" %}CSS Tricks</a> and <a href="/web/the-compromise/">{% twitterImageAvatar "smashingmag" %}Smashing Magazine</a>.</li>
 				</ul>
 			</li>
 		</ul>
@@ -146,7 +146,7 @@ scripts:
 				</address>
 				<ul class="resume-desc">
 					<li class="resume-date">February 2022 to July 2023</li>
-					<li>Full time open source on <a href="https://www.11ty.dev/">{% imgavatar "eleven_ty" %}Eleventy</a> <em>(read more above)</em></li>
+					<li>Full time open source on <a href="https://www.11ty.dev/">{% twitterImageAvatar "eleven_ty" %}Eleventy</a> <em>(read more above)</em></li>
 				</ul>
 			</li>
 
@@ -168,7 +168,7 @@ scripts:
 			</li>
 
 			<li>
-				<strong>Web Developer</strong> for <a href="https://filamentgroup.com/">{% imgavatar "filamentgroup" %}Filament Group</a>
+				<strong>Web Developer</strong> for <a href="https://filamentgroup.com/">{% twitterImageAvatar "filamentgroup" %}Filament Group</a>
 				<address class="resume-location h-adr">
 					Remote to
 					<span class="p-locality">Boston</span>,
@@ -195,7 +195,7 @@ scripts:
 			</li>
 
 			<li class="z-avatars-fff">
-				<strong>Front End Architect</strong> for <span class="resume-nbsp">{% imgavatar "UnionPacific" %}Union</span> Pacific Railroad
+				<strong>Front End Architect</strong> for <span class="resume-nbsp">{% twitterImageAvatar "UnionPacific" %}Union</span> Pacific Railroad
 				<address class="resume-location h-adr">
 					<span class="p-locality">Omaha</span>,
 					<abbr class="p-region" title="Nebraska">NE</abbr>
@@ -219,7 +219,7 @@ scripts:
 			</li>
 
 			<li class="z-avatars-fff">
-				<strong>Project Lead</strong> for <span class="resume-nbsp">{% imgavatar "UnionPacific" %}Union</span> Pacific Railroad
+				<strong>Project Lead</strong> for <span class="resume-nbsp">{% twitterImageAvatar "UnionPacific" %}Union</span> Pacific Railroad
 				<address class="resume-location h-adr">
 					<span class="p-locality">Omaha</span>,
 					<abbr class="p-region" title="Nebraska">NE</abbr>
@@ -243,7 +243,7 @@ scripts:
 			</li>
 
 			<li class="z-avatars-fff">
-				<strong>Web Developer</strong> for <span class="resume-nbsp">{% imgavatar "UnionPacific" %}Union</span> Pacific Railroad
+				<strong>Web Developer</strong> for <span class="resume-nbsp">{% twitterImageAvatar "UnionPacific" %}Union</span> Pacific Railroad
 				<address class="resume-location h-adr">
 					<span class="p-locality">Omaha</span>,
 					<abbr class="p-region" title="Nebraska">NE</abbr>
@@ -263,7 +263,7 @@ scripts:
 
 		<ul class="resume-list">
 			<li>
-				<strong>Computer Engineering</strong> at <a href="http://www.unl.edu/"><span class="resume-nbsp">{% imgavatar "UNLincoln" %}University</span> of Nebraska</a>
+				<strong>Computer Engineering</strong> at <a href="http://www.unl.edu/"><span class="resume-nbsp">{% twitterImageAvatar "UNLincoln" %}University</span> of Nebraska</a>
 				<address class="resume-location h-adr">
 					<span class="p-locality">Lincoln</span>,
 					<abbr class="p-region" title="Nebraska">NE</abbr>

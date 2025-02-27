@@ -1,30 +1,6 @@
 ---
 title: You’re Reading About Me
 layout: layouts/pagealign.liquid
-largeImageOptions:
-  widths: [400, 800, "auto"]
-bioImageAttrs:
-  src: "./img/bio-2017.jpg"
-  alt: Just a picture of my face.
-avatarBioImageAttrs:
-  src: "./img/avatar-2025-green.png"
-  alt: "Photo of Zach Leatherman’s Bearded Face"
-  class: "about-primary-avatar"
-  loading: eager
-  fetchpriority: high
-avatarBioImageAttrsSecondary:
-  src: "./img/avatar-2017-big.png"
-  alt: "Photo of Zach Leatherman’s Bearded Face"
-  class: "about-secondary-avatar"
-deprecatedBioImageAttrs:
-  src: "./img/avatar.png"
-  alt: A very bearded picture of my face.
-veryDeprecatedBioImageAttrs:
-  src: "./img/avatar-old.png"
-  alt: An avatar with zachleat vertical text aside.
-web367ImageAttrs:
-  src: "./web/img/web367.png"
-  alt: "The very first logo for this blog: Web 3.0 6 Bladed Razors and 7 Minute Abs"
 ---
 <style>
 .about-primary-avatar {
@@ -40,7 +16,7 @@ web367ImageAttrs:
 }
 </style>
 
-{% image avatarBioImageAttrs %}
+<img src="/img/avatar-2025-green.png" alt="Photo of Zach Leatherman’s Bearded Face" class="about-primary-avatar" loading="eager" fetchpriority="high">
 
 <ul class="list-inline fl fl-inline fl-nowrap">
 	<li>This web site is maintained by <strong>Zach Leatherman</strong> <em>(he, him, they)</em>.</li>
@@ -142,26 +118,26 @@ Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and th
 ### Deprecated but saved for Posterity
 
 <figure>
-	{% image bioImageAttrs, largeImageOptions %}
+	<img src="/img/bio-2017.jpg" alt="Just a picture of my face." eleventy:widths="400,800,auto">
 	<figcaption>Picture taken by <a href="https://www.facebook.com/andrey.davydchyk">Andrey Davydchyk</a> at <a href="https://www.facebook.com/cssminskjs/">CSS Minsk JS</a>. <a href="/img/bio-2017.jpg">Download JPEG version</a>.</figcaption>
 </figure>
 
 <figure>
-	{% image avatarBioImageAttrsSecondary %}
+	<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" class="about-secondary-avatar">
 	<figcaption>Modified from above for avatar use.</figcaption>
 </figure>
 
 <figure>
-	{% image deprecatedBioImageAttrs %}
+	<img src="/img/avatar.png" alt="A very bearded picture of my face.">
 	<figcaption>Picture taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="/web/smashingconf/2014/">SmashingConf Whistler</a>. Download the <a href="/img/bio.jpg">original version</a>.</figcaption>
 </figure>
 
 <figure>
-	{% image veryDeprecatedBioImageAttrs %}
+	<img src="/img/avatar-old.png" alt="An avatar with zachleat vertical text aside.">
 	<figcaption>Deprecated.</figcaption>
 </figure>
 
 <figure>
-	{% image web367ImageAttrs %}
+	<img src="./web/img/web367.png" alt="The very first logo for this blog: Web 3.0 6 Bladed Razors and 7 Minute Abs">
 	<figcaption>This web site was started in 2007 and was originally titled <strong>Web 3.0, 6 Bladed Razors, and 7 Minute Abs</strong>.</figcaption>
 </figure>

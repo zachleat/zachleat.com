@@ -13,7 +13,7 @@ medialength: 12 min
 
 Last year at [Barcamp Omaha](http://barcampomaha.org/), I did a tongue-in-cheek talk on [Impostor Syndrome](/web/impostor/). This year, I was floundering on picking a topic for Barcamp—until [Derek Eskens](https://twitter.com/snekse) suggested I do a talk on GIFs. With only two days to prepare, I think it turned out fairly well.
 
-<img src="/web/img/posts/perfectgif.jpg">
+<img src="/web/img/posts/perfectgif.jpg" alt="A photo of the audience watching the talk">
 
 In the talk I discuss: pronunciation, GIF sources, how to create your own GIFs, and GIF search and workflow. If you listen closely, you can hear the audience (playfully) boo when I finally pronounce GIF for the first time in the talk.
 

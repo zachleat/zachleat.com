@@ -23,17 +23,17 @@ This setup does not require any soldering.
 
 ### Step 1
 
-<img src="/web/img/posts/bike-lights/ledstrip.jpg">
+<img src="/web/img/posts/bike-lights/ledstrip.jpg" alt="A circular spindle of LED string lights">
 
 Decide how you’re going to attach the light strip to your bike. Here’s an image I had commissioned from a professional artist:
 
-<img src="/web/img/posts/bike-lights/attachment.png">
+<img src="/web/img/posts/bike-lights/attachment.png" alt="A diagram showing how the lights were attached to the bike frame">
 
 Remove the strip on the back of the lights to expose the sticky 3M backing. Start sticking the lights to the frame at the bike seat, go to the front, loop around the side to the back wheel then go back and repeat on the other side. Pretty easy.
 
 ### Step 2
 
-<img src="/web/img/posts/bike-lights/batterycase.jpg">
+<img src="/web/img/posts/bike-lights/batterycase.jpg" alt="The portable battery case for the LED light strips">
 
 Make sure your batteries are not in the case and the power switch is in the **off position**.
 
@@ -64,7 +64,7 @@ I took a daytime picture since the nighttime video above didn’t really show mu
 
 ### Multicolor
 
-<img src="/web/img/posts/bike-lights/ledstripmulticolor.jpg">
+<img src="/web/img/posts/bike-lights/ledstripmulticolor.jpg" alt="A multicolor bundle of LED light string with remote">
 
 I put a [multicolor 12V LED Strip](http://www.amazon.com/dp/B00IN4Y7VS/) on my wife’s bike which came with a handy infrared remote for changing the color. To hook this up to the battery I simply cut the power supply cord, tossed the AC adapter wall plug and hooked the positive wire to the positive of the battery and the negative wire to the negative of the battery.
 

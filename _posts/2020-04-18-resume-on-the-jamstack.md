@@ -7,8 +7,8 @@ When I applied to work at Netlify, I put in a little work to update my dusty old
 
 This post was inspired by a few other résumé helpers I found floating around the web past week:
 
-* [How to not make a résumé in React by {% imgavatar "ericwbailey" %}Eric Bailey](https://ericwbailey.design/writing/how-to-not-make-a-resume-in-react.html)
-* [Eleventy Résumé Builder by {% imgavatar "mxbck" %}Max Böck](https://mxb.dev/blog/eleventy-resume-builder/)
+* [How to not make a résumé in React by {% twitterImageAvatar "ericwbailey" %}Eric Bailey](https://ericwbailey.design/writing/how-to-not-make-a-resume-in-react.html)
+* [Eleventy Résumé Builder by {% twitterImageAvatar "mxbck" %}Max Böck](https://mxb.dev/blog/eleventy-resume-builder/)
 
 ## Have a gander at the ol’ resume
 

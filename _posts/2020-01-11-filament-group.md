@@ -2,9 +2,9 @@
 title: A Love Letter to Filament Group
 tags: []
 eleventyComputed:
-  titleHtml: 'A Love Letter to {% imgavatar "filamentgroup", "z-avatar-eq" %}Filament Group'
+  titleHtml: 'A Love Letter to {% twitterImageAvatar "filamentgroup", "z-avatar-eq" %}Filament Group'
 ---
-It is with great sadness that I must announce that these next two weeks will be my last as a member of [{% imgavatar "filamentgroup" %}Filament Group](https://www.filamentgroup.com/).
+It is with great sadness that I must announce that these next two weeks will be my last as a member of [{% twitterImageAvatar "filamentgroup" %}Filament Group](https://www.filamentgroup.com/).
 
 Filament Group, without a doubt, changed my life in the best way and I am so very grateful to have been a part of it for seven and a half years.
 
@@ -25,7 +25,7 @@ Consider how productive one can be when working with people that truly understan
 
 If you ever need their services, I highly recommend that you [get in touch with their amazingly talented team](https://www.filamentgroup.com/workwithus/).
 
-<span class="nowrap">[{% imgavatar "toddmparker" %}Todd](https://twitter.com/toddmparker)</span>, <span class="nowrap">[{% imgavatar "pattytoland" %}Patty](https://twitter.com/pattytoland)</span>, <span class="nowrap">[{% imgavatar "maggiewachs" %}Maggie](https://twitter.com/maggiewachs)</span>, <span class="nowrap">[{% imgavatar "scottjehl" %}Scott](https://twitter.com/scottjehl)</span>, and emeritus <span class="nowrap">[{% imgavatar "johnbender" %}John](https://twitter.com/johnbender/)</span>, <span class="nowrap">[{% imgavatar "jefflembeck" %}Jeff](https://twitter.com/jefflembeck/)</span>, <span class="nowrap">[{% imgavatar "wilto" %}Mat](https://twitter.com/wilto)</span> and [{% imgavatar "Aetherpoint" %}Andrew](https://twitter.com/Aetherpoint): I have learned so much from you all. Your relentless work ethic and incredibly high standard of quality is nothing short of inspiring. It truly has been a pleasure.
+<span class="nowrap">[{% twitterImageAvatar "toddmparker" %}Todd](https://twitter.com/toddmparker)</span>, <span class="nowrap">[{% twitterImageAvatar "pattytoland" %}Patty](https://twitter.com/pattytoland)</span>, <span class="nowrap">[{% twitterImageAvatar "maggiewachs" %}Maggie](https://twitter.com/maggiewachs)</span>, <span class="nowrap">[{% twitterImageAvatar "scottjehl" %}Scott](https://twitter.com/scottjehl)</span>, and emeritus <span class="nowrap">[{% twitterImageAvatar "johnbender" %}John](https://twitter.com/johnbender/)</span>, <span class="nowrap">[{% twitterImageAvatar "jefflembeck" %}Jeff](https://twitter.com/jefflembeck/)</span>, <span class="nowrap">[{% twitterImageAvatar "wilto" %}Mat](https://twitter.com/wilto)</span> and [{% twitterImageAvatar "Aetherpoint" %}Andrew](https://twitter.com/Aetherpoint): I have learned so much from you all. Your relentless work ethic and incredibly high standard of quality is nothing short of inspiring. It truly has been a pleasure.
 
 <a href="https://www.filamentgroup.com/"><img src="/img/fg-logo.svg" alt="Filament Group" style="max-width: 22em"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: 'Inaugural Eleventy Meetup: Hello World (a talk about Eleventy Serverless)'
 eleventyComputed:
-  titleHtml: 'Inaugural {% imgavatar "EleventyMeetup", "z-avatar-eq" %}Eleventy Meetup: Hello World (a talk about Eleventy Serverless)'
+  titleHtml: 'Inaugural {% twitterImageAvatar "EleventyMeetup", "z-avatar-eq" %}Eleventy Meetup: Hello World (a talk about Eleventy Serverless)'
 tags:
   - external
   - speaking

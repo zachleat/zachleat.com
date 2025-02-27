@@ -1,6 +1,9 @@
 import path from "node:path";
 import { createHash } from "node:crypto";
-import Image, { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
+import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+
+const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
+const SIZES_FULLWIDTH = "(min-width: 106.25em) 82.75em, (min-width: 61.25em) calc(91.43vw - 13.25em), 100vw";
 
 function getCryptoHash(src) {
 		let hash = createHash("sha1");
@@ -26,27 +29,6 @@ async function imageFactory(src, options = {}) {
 		options,
 		metadata: await Image(src, options),
 	}
-}
-
-async function imageShortcode(attrs = {}, originalOptions = {}, isFullWidth = false) {
-	let { options, metadata } = await imageFactory(attrs.src || attrs.path, originalOptions);
-
-	let imageAttributes = Object.assign({
-		loading: "lazy",
-		decoding: "async",
-	}, attrs);
-
-	if(options.widths.length > 1) {
-		if(isFullWidth) {
-			imageAttributes.sizes = "(min-width: 106.25em) 82.75em, (min-width: 61.25em) calc(91.43vw - 13.25em), 100vw";
-		} else {
-			// imageAttributes.sizes = "(min-width: 75em) 44.5625em, (min-width: 61.25em) calc(100vw - 20em), 100vw"
-			imageAttributes.sizes = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
-		}
-	}
-
-	// You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-	return Image.generateHTML(metadata, imageAttributes);
 }
 
 function backgroundImageFilter(src, width, options = {}) {
@@ -117,6 +99,7 @@ function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 		decoding: "async",
 		sizes: "(min-width: 64em) 50vw, 100vw",
 		class: cls || "",
+		"eleventy:ignore": "",
 	});
 }
 
@@ -142,7 +125,8 @@ function getImageServiceHtml(targetUrl, width, height, outputWidths = [], alt=""
 		alt,
 		loading: "lazy",
 		decoding: "async",
-		sizes: "(min-width: 61.25em) calc(100vw - 20.625em), 100vw"
+		sizes: "(min-width: 61.25em) calc(100vw - 20.625em), 100vw",
+		"eleventy:ignore": "",
 	});
 }
 
@@ -180,34 +164,24 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 		loading: "lazy",
 		decoding: "async",
 		class: "",
+		"eleventy:ignore": "",
 	});
 }
 
 export default function(eleventyConfig) {
-	// Serve images on request
-	eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
-
-	eleventyConfig.addAsyncShortcode("imageInline", (src, alt, isFullWidth) => {
-		let attrs = {
-			src: path.join(".", src),
-			alt,
-			loading: "eager",
-		};
-		let options = {
-			widths: [400, 980, 1324, 2000],
-			eleventyConfig,
-		};
-		return imageShortcode(attrs, options, isFullWidth);
-	});
-
-	eleventyConfig.addAsyncShortcode("image", (attrs, options = {}) => {
-		options.eleventyConfig = eleventyConfig;
-
-		return imageShortcode(attrs, options);
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		htmlOptions: {
+			imgAttributes: {
+				loading: "lazy",
+				decoding: "async",
+				sizes: SIZES_INLINE
+			},
+			pictureAttributes: {},
+		}
 	});
 
 	// Only one image format, and return only the URL
-	eleventyConfig.addAsyncShortcode("imagesingle", async (src, width = "auto", format = "auto") => {
+	eleventyConfig.addAsyncShortcode("getUrlForImage", async (src, width = "auto", format = "auto") => {
 		let options = {
 			eleventyConfig,
 			formats: [ format ],
@@ -252,7 +226,6 @@ export default function(eleventyConfig) {
 };
 
 export {
-	imageShortcode,
 	screenshotImageHtmlFullUrl,
 	opengraphImageHtmlWithClass as opengraphImageHtml,
 };

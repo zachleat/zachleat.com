@@ -6,7 +6,7 @@ tmpl: page
 <article class="h-entry">
 	<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if titleHtml %}{{ titleHtml }}{% else %}{{ title }}{% endif %}</h1>
 {% if posterImage.showOnPage and seo.openGraphBackgroundImage %}
-	<div class="fullwidth fullwidth-poster m-4" style="{% if posterImage.height %}--poster-maxheight: {{ posterImage.height }};{% endif %}{% if posterImage.offset %}--poster-offset: {{ posterImage.offset }}{% endif %}">{% imageInline seo.openGraphBackgroundImage, seo.openGraphAlt, true %}</div>
+	<div class="fullwidth fullwidth-poster m-4" style="{% if posterImage.height %}--poster-maxheight: {{ posterImage.height }};{% endif %}{% if posterImage.offset %}--poster-offset: {{ posterImage.offset }}{% endif %}"><img src="{{ seo.openGraphBackgroundImage }}" alt="{{ seo.openGraphAlt }}" sizes="100vw"></div>
 {% endif %}
 	<div class="content-grid-sibling">
 		<div class="sub p-description">
@@ -147,7 +147,7 @@ tmpl: page
 	<details>
 		<summary class="hed-h4"><strong>Sharing on social media?</strong></summary>
 		<p>This is what will show up when you share this post on Social Media:</p>
-		<img class="share-img" src="{% ogImageSource page %}" decoding="async" loading="lazy" width="1200" height="630">
+		<img class="share-img" src="{% ogImageSource page %}" decoding="async" loading="lazy" width="1200" height="630" alt="{{ title }}">
 		<p>How did you do this? <a href="/web/automatic-opengraph/">I automated my Open Graph images.</a> (<a href="/opengraph{{ page.url }}">Peer behind the curtain at the test page</a>)</p>
 	</details>
 </div>

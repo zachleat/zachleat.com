@@ -8,7 +8,7 @@ export default function(eleventyConfig) {
 	eleventyConfig.addGlobalData("totalAnalyticsPageViews", total);
 
 	eleventyConfig.addCollection("popularPostsRanked", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*.md").filter(item => {
+		return collection.getFilteredByGlob("./_posts/**/*.md").filter(item => {
 			if(process.env.PRODUCTION_BUILD && item.data.tags && item.data.tags.includes("draft")) {
 				return false;
 			}
@@ -22,7 +22,7 @@ export default function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("popularPostsTotalRanked", function(collection) {
-		return collection.getFilteredByGlob("./_posts/*.md").filter(item => {
+		return collection.getFilteredByGlob("./_posts/**/*.md").filter(item => {
 			if(process.env.PRODUCTION_BUILD && item.data.tags && item.data.tags.includes("draft")) {
 				return false;
 			}

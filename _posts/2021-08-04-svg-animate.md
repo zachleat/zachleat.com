@@ -30,7 +30,7 @@ I found all of the instances of `<animate>` or `<animateTransform>` and wired up
  />
 ```
 
-_Learn how to animate a line/curve: [{% imgavatar "css" %}CSS Tricks: How SVG Line Animation Works](https://css-tricks.com/svg-line-animation-works/)_
+_Learn how to animate a line/curve: [{% twitterImageAvatar "css" %}CSS Tricks: How SVG Line Animation Works](https://css-tricks.com/svg-line-animation-works/)_
 
 Take note of the `begin` attribute above, that will be important later.
 
@@ -109,9 +109,9 @@ if ('IntersectionObserver' in window)  {
 
 ## Try it yourself
 
-* Try it out on [{% imgavatar "codepen" %}Codepen: SVG `<animation begin="indefinite">` with IntersectionObserver](https://codepen.io/zachleat/pen/JjNaQVq)
+* Try it out on [{% twitterImageAvatar "codepen" %}Codepen: SVG `<animation begin="indefinite">` with IntersectionObserver](https://codepen.io/zachleat/pen/JjNaQVq)
 
 
 ## More Links
 
-* [{% imgavatar "AmeliasBrain" %}Amelia Bellamy-Royds linked up this reference guide on SMIL from her SVG Book](https://oreillymedia.github.io/Using_SVG/extras/ch19-SMIL.html)
+* [{% twitterImageAvatar "AmeliasBrain" %}Amelia Bellamy-Royds linked up this reference guide on SMIL from her SVG Book](https://oreillymedia.github.io/Using_SVG/extras/ch19-SMIL.html)

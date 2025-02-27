@@ -1,7 +1,7 @@
 ---
 title: Let’s Learn Eleventy!—Learn With Jason
 eleventyComputed:
-  titleHtml: 'Let’s Learn Eleventy! on {% imgavatar "LWJShow", "z-avatar-eq" %}Learn with Jason'
+  titleHtml: 'Let’s Learn Eleventy! on {% twitterImageAvatar "LWJShow", "z-avatar-eq" %}Learn with Jason'
 tags:
   - speaking
   - eleventy

@@ -25,7 +25,7 @@ This year’s report has a few changes to the presentation of results that I thi
 
 My primary beef with this year’s report is on page 10 (of 13) and features a section on rendering frameworks and site generators, with one and only one chart documenting changes in satisfaction score versus change in usage.
 
-{% imageInline "./web/img/posts/netlify-nextjs/frameworks.jpg" "This chart shows Astro’s stellar growth this year, the runaway winner for increased satisfaction and usage. Next and 11ty are shown in the bottom left corner, losing usage and satisfaction" %}
+<img src="/web/img/posts/netlify-nextjs/frameworks.jpg" alt="This chart shows Astro’s stellar growth this year, the runaway winner for increased satisfaction and usage. Next and 11ty are shown in the bottom left corner, losing usage and satisfaction">
 
 This chart looks bad for Next. It also looks bad for Eleventy. But the bigger problem here is that this chart shows _changes_ without any context of absolute scores. Next might have gotten some caveats in the text written in the section but 11ty did not.
 
@@ -35,13 +35,13 @@ _(I also took special note that the label for Gatsby—a framework purchased by 
 
 On page 32 (of 39) of the report buried _deep_ into the Appendices section the report finally includes the real scores (conveniently unordered):
 
-{% imageInline "./web/img/posts/netlify-nextjs/sentiment.jpg" "Astro has the best positive sentiment too at 87%, Next is 78% and Eleventy is 74%" %}
+<img src="/web/img/posts/netlify-nextjs/sentiment.jpg" alt="Astro has the best positive sentiment too at 87%, Next is 78% and Eleventy is 74%">
 
 Now we learn that Next.js is ranked #3 (tied with SolidStart and Remix) for satisfaction and 11ty is ranked #6 (tied with Nuxt).
 
 Here’s what the chart looks like using absolute values for satisfaction percentages and usage, painting a story that Netlify probably doesn’t want to share:
 
-{% imageInline "./web/img/posts/netlify-nextjs/better.jpg" "Next.js is the clear winner here. A cluster of Nuxt, Astro, 11ty, and Sveltekit all sit together with high scores and similar usage. Gatsby is an outlier with large usage but low satisfaction." %}
+<img src="/web/img/posts/netlify-nextjs/better.jpg" alt="Next.js is the clear winner here. A cluster of Nuxt, Astro, 11ty, and Sveltekit all sit together with high scores and similar usage. Gatsby is an outlier with large usage but low satisfaction.">
 
 ## Without ascribing malice
 
@@ -61,7 +61,7 @@ The 2023 report name change to _The State of Web Development_ seemingly goes aga
 
 The 2023 report also goes against the second point by eschewing any mention of bias. It (surprisingly) includes a section on the popularity of Netlify itself:
 
-{% imageInline "./web/img/posts/netlify-nextjs/netlify.jpg" "88% of Netlify customers want to use Netlify more. 79% of Netlify customers want to use Vercel more." %}
+<img src="/web/img/posts/netlify-nextjs/netlify.jpg" alt="88% of Netlify customers want to use Netlify more. 79% of Netlify customers want to use Vercel more.">
 
 I was taken-aback that Netlify would _publish_ statistics to show what percentage of Netlify customers want to use Vercel more—but apparently it’s 79%.
 

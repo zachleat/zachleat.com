@@ -126,7 +126,7 @@ function getPageViewsPerDayRanks(analyticsData) {
 }
 
 (async () => {
-	let { inputMap, alternates } = getInputMap(["./_posts/*.md"]);
+	let { inputMap, alternates } = getInputMap(["./_posts/**/*.md"]);
 
 	let analyticsData = await fetchAnalyticsData();
 

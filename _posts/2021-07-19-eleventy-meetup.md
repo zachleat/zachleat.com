@@ -1,7 +1,7 @@
 ---
 title: 'Eleventy Serverless, a talk video from The Eleventy Meetup'
 eleventyComputed:
-  titleHtml: 'Eleventy Serverless, a talk video from {% imgavatar "EleventyMeetup", "z-avatar-eq" %}The Eleventy Meetup'
+  titleHtml: 'Eleventy Serverless, a talk video from {% twitterImageAvatar "EleventyMeetup", "z-avatar-eq" %}The Eleventy Meetup'
 tags:
   - speaking
   - eleventy
@@ -19,4 +19,4 @@ In this talk I started to build [Rainglow](/web/rainglow/) and showcased another
 ## Related:
 
 * [Eleventy Meetup: Hello World!](https://11tymeetup.dev/events/hello-world/)
-* The other talk video from the inaugural Eleventy Meetup: [Templating: Eleventy's Superpower with {% imgavatar "peruvianidol" %}Mike Aparicio](https://www.youtube.com/watch?v=rZyNBd1WgVM)
+* The other talk video from the inaugural Eleventy Meetup: [Templating: Eleventy's Superpower with {% twitterImageAvatar "peruvianidol" %}Mike Aparicio](https://www.youtube.com/watch?v=rZyNBd1WgVM)

@@ -44,13 +44,13 @@ Next, in my base Eleventy layout file ([source code](https://github.com/zachleat
 
 It looks like this:
 
-<img src="{% ogImageSource page %}" loading="lazy" width="1200" height="630">
+<img src="{% ogImageSource page %}" loading="lazy" width="1200" height="630" alt="Open Graph sample image">
 
 I wanted the image to have the post title, my avatar, the published date, and the URL of the page.
 
 For bonus metadata, here’s one with a Lighthouse score attached ([updated regularly via Speedlify](https://www.speedlify.dev/zachleat.com/)), a webmentions count, and even the page weight (e.g. 226 KiB, also driven by Speedlify):
 
-<img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/" loading="lazy" width="1200" height="630">
+<img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/" loading="lazy" width="1200" height="630" alt="Open Graph sample image with Lighthouse score">
 
 ## Bonus Features
 

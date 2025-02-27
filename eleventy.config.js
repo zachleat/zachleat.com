@@ -16,7 +16,7 @@ import pluginWebc from "@11ty/eleventy-plugin-webc";
 import fontAwesomePlugin from "@11ty/font-awesome";
 
 import siteData from "./_data/site.json" with { type: "json" };
-import pluginImage, { imageShortcode, opengraphImageHtml, screenshotImageHtmlFullUrl } from "./_11ty/imagePlugin.js";
+import pluginImage, { opengraphImageHtml, screenshotImageHtmlFullUrl } from "./_11ty/imagePlugin.js";
 
 import pluginSass from "./_11ty/sassPlugin.js";
 import pluginImageAvatar from "./_11ty/imageAvatarPlugin.js";
@@ -129,7 +129,11 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy("web/img")
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("og/*.{jpeg,png}")
-		.addPassthroughCopy("og/sources/");
+		.addPassthroughCopy("og/sources/")
+		// For images that should _not_ be optimized via Eleventy Image (see 2021-01-30-fluid-images post)
+		.addPassthroughCopy("_posts/**/_ignored_*.*", {
+			mode: "html-relative"
+		})
 
 	// Production only passthrough copy
 	if(process.env.PRODUCTION_BUILD) {
@@ -390,7 +394,7 @@ export default async function(eleventyConfig) {
 
 	/* COLLECTIONS */
 	function getPosts(collectionApi) {
-		return collectionApi.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
+		return collectionApi.getFilteredByGlob("./_posts/**/*.md").reverse().filter(function(item) {
 			return !!item.data.permalink;
 		});
 	}
@@ -591,16 +595,9 @@ export default async function(eleventyConfig) {
 					html.push(`<a href="${links[j]}">`)
 				}
 				let alt = alts[j] ? alts[j] : `Slide ${j}`;
-				html.push(await imageShortcode({
-					src: slidePath,
-					alt
-				}, {
-					widths: [600, 1000],
-					eleventyConfig,
-				}, true));
 
-				// Fallback for perf if non_production?
-				// html.push(`<img src="${slideUrl}" alt="${alt}" width="1920" height="1080" loading="lazy" decoding="async">`)
+				html.push(`<img src="/${slidePath}" alt="${alt}" eleventy:widths="600,1000" sizes="(min-width: 106.25em) 82.75em, (min-width: 61.25em) calc(91.43vw - 13.25em), 100vw">`);
+
 				if(links && links[j]) {
 					html.push(`</a>`)
 				}

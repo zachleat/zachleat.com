@@ -1,7 +1,7 @@
 ---
 title: Images at Jamstack Toronto
 eleventyComputed:
-  titleHtml: 'Images at {% imgavatar "JAMstackTORONTO", "z-avatar-eq" %}Jamstack Toronto'
+  titleHtml: 'Images at {% twitterImageAvatar "JAMstackTORONTO", "z-avatar-eq" %}Jamstack Toronto'
 categories:
   - presentations
 tags:

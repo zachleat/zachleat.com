@@ -77,6 +77,6 @@ The full [source code is available on GitHub](https://github.com/11ty/api-screen
 
 ### Open Graph (1200×630)
 
-<img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/opengraph/" class="screenshot" width="1200" height="630">
+<img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/opengraph/" class="screenshot" width="1200" height="630" alt="Screenshot of Open Graph image of 11ty.dev">
 
 `https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/opengraph/`

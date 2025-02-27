@@ -3,7 +3,7 @@ title: Use Speedlify to Continuously Measure Site Performance
 tags:
   - project
 eleventyComputed:
-  titleHtml: 'Use {% imgavatar "speedlify", "z-avatar-eq" %}Speedlify to Continuously Measure Site Performance'
+  titleHtml: 'Use {% twitterImageAvatar "speedlify", "z-avatar-eq" %}Speedlify to Continuously Measure Site Performance'
 ---
 When launching a brand new web site, it’s fairly common to run testing tools to ensure that the site is fast and follows best practices. One popular tool to accomplish these goals is [Google’s Lighthouse](https://developers.google.com/web/tools/lighthouse). It works great and is pretty comprehensive.
 
@@ -16,7 +16,7 @@ Here are some of the ways I’ve used Lighthouse to help test my sites:
 * [Eleventy Leaderboards](https://www.11ty.dev/leaderboard/) allow the Eleventy community to compete on site performance and accessibility (also using `performance-leaderboard`).
 * [Lighthouse Viewer](https://googlechrome.github.io/lighthouse-ci/viewer/) can diff two different Lighthouse logs to see how the performance changed.
 
-Instantaneous measurement is a good first step. But how do we ensure that the site maintains good performance and best practices when deploys are happening every day? How do we keep the web site fast? The second step is continuous measurement. This is where Speedlify comes in. It’s an [{% imgavatar "eleven_ty" %}Eleventy](https://www.11ty.dev/)-generated web site published as an open source repository to help automate continuous performance measurements.
+Instantaneous measurement is a good first step. But how do we ensure that the site maintains good performance and best practices when deploys are happening every day? How do we keep the web site fast? The second step is continuous measurement. This is where Speedlify comes in. It’s an [{% twitterImageAvatar "eleven_ty" %}Eleventy](https://www.11ty.dev/)-generated web site published as an open source repository to help automate continuous performance measurements.
 
 <div class="primarylink"><a href="https://www.speedlify.dev/ssg/">Speedlify Demo, for Static Site Generator web sites</a></div>
 
