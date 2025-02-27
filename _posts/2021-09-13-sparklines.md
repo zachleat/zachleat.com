@@ -24,13 +24,13 @@ URLs support the following formats:
 
 ## Demos
 
-<img src="https://v1.sparkline.11ty.dev/120x30/41,25,9,12,10,6,12,14,19,17,23,30,36,21,25/%2394b388/" width="120" height="30" alt="Sparkline representing frequency of posts on zachleat.com written from 2007 to 2021" loading="lazy" decoding="async">
+<img src="https://v1.sparkline.11ty.dev/120x30/41,25,9,12,10,6,12,14,19,17,23,30,36,21,25/%2394b388/" width="120" height="30" alt="Sparkline representing frequency of posts on zachleat.com written from 2007 to 2021" loading="lazy" decoding="async" eleventy:ignore>
 
-<img src="https://v1.sparkline.11ty.dev/120x30/41,25,9,12,10,6,12,14,19,17,23,30,36,21,25/%23ff0000/" width="120" height="30" alt="Sparkline representing frequency of posts on zachleat.com written from 2007 to 2021" loading="lazy" decoding="async">
+<img src="https://v1.sparkline.11ty.dev/120x30/41,25,9,12,10,6,12,14,19,17,23,30,36,21,25/%23ff0000/" width="120" height="30" alt="Sparkline representing frequency of posts on zachleat.com written from 2007 to 2021" loading="lazy" decoding="async" eleventy:ignore>
 
-<img src="https://v1.sparkline.11ty.dev/120x30/41,25,9,12,10,6,12,14,19,17,23,30,36,21,25/%2300ff00/" width="120" height="30" alt="Sparkline representing frequency of posts on zachleat.com written from 2007 to 2021" loading="lazy" decoding="async">
+<img src="https://v1.sparkline.11ty.dev/120x30/41,25,9,12,10,6,12,14,19,17,23,30,36,21,25/%2300ff00/" width="120" height="30" alt="Sparkline representing frequency of posts on zachleat.com written from 2007 to 2021" loading="lazy" decoding="async" eleventy:ignore>
 
-<img src="https://v1.sparkline.11ty.dev/120x30/41,25,9,12,10,6,12,14,19,17,23,30,36,21,25/%230000ff/" width="120" height="30" alt="Sparkline representing frequency of posts on zachleat.com written from 2007 to 2021" loading="lazy" decoding="async">
+<img src="https://v1.sparkline.11ty.dev/120x30/41,25,9,12,10,6,12,14,19,17,23,30,36,21,25/%230000ff/" width="120" height="30" alt="Sparkline representing frequency of posts on zachleat.com written from 2007 to 2021" loading="lazy" decoding="async" eleventy:ignore>
 
 You can also view this on the sidebar of this very website (at larger viewport sizes).
 
