@@ -1,5 +1,6 @@
 [build]
-command = "node run-build.js"
+# command = "node run-build.js"
+command = "npm run production"
 
 [[plugins]]
 package = "netlify-plugin-cache"
