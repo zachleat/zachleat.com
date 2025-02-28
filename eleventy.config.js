@@ -6,7 +6,7 @@ import numeral from "numeral";
 import markdownIt from "markdown-it";
 import markdownItToc from "markdown-it-table-of-contents";
 import { encode } from "html-entities";
-import { YoutubeTranscript } from "youtube-transcript";
+// import { YoutubeTranscript } from "youtube-transcript";
 
 import { RenderPlugin, IdAttributePlugin } from "@11ty/eleventy";
 import { AssetCache } from "@11ty/eleventy-fetch";
@@ -362,15 +362,16 @@ export default async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addJavaScriptFunction("fetchYoutubeTranscript", async (videoId) => {
-		let asset = new AssetCache(`youtube_transcript_${videoId}`);
-		if(asset.isCacheValid("*")) {
-			return asset.getCachedValue();
-		}
+		return [];
+		// let asset = new AssetCache(`youtube_transcript_${videoId}`);
+		// if(asset.isCacheValid("*")) {
+		// 	return asset.getCachedValue();
+		// }
 
-		// Remote call
-		let transcript = await YoutubeTranscript.fetchTranscript(videoId);
-		await asset.save(transcript, "json");
-		return transcript;
+		// // Remote call
+		// let transcript = await YoutubeTranscript.fetchTranscript(videoId);
+		// await asset.save(transcript, "json");
+		// return transcript;
 	});
 	/* END FILTERS */
 

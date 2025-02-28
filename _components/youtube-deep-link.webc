@@ -29,19 +29,19 @@ youtube-deep-link:defined [data-offset]:focus {
 }
 </style>
 <script webc:setup>
-async function fetchTranscriptMarkup(captions) {
+async function fetchTranscriptMarkup(captions = []) {
 	let html= [];
 	let index = 0;
 
 	for(let {offset, text} of captions) {
-		let offsetSeconds = Math.round(parseInt(offset, 10) / 1000);
+		let offsetSeconds = Math.round(parseInt(offset, 10));
 		let minutes = Math.floor(offsetSeconds / 60);
 		let seconds = Math.floor(offsetSeconds - minutes * 60);
 		if(index % 4 === 0) {
 			html.push("<br><br>");
 		}
 
-		html.push(`<span data-offset="${offsetSeconds}"><button type="button">${leftpad(minutes, 2)}:${leftpad(seconds, 2)}</button>${text.trim()}</span>`);
+		html.push(`<span data-offset="${offsetSeconds}"><button type="button">${leftpad(minutes, 2)}:${leftpad(seconds, 2)}</button>${decode(text.trim())}</span>`);
 		index++;
 	}
 
