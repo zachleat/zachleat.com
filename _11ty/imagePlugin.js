@@ -1,9 +1,9 @@
 import path from "node:path";
 import { createHash } from "node:crypto";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { getImageColors } from "@11ty/image-color";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
-const SIZES_FULLWIDTH = "(min-width: 106.25em) 82.75em, (min-width: 61.25em) calc(91.43vw - 13.25em), 100vw";
 
 function getCryptoHash(src) {
 		let hash = createHash("sha1");
@@ -168,7 +168,25 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 	});
 }
 
+export async function getFilteredImageColors(target) {
+	let colors = await getImageColors(target);
+	return colors.filter(c => {
+		// colors with good contrast with light text or extra good with dark text (white is boring)
+		return (c.contrast.light >= 4.5 || c.contrast.dark > 7) && c.colorjs.oklch.l < .95;
+	}).sort((a, b) => {
+		// lightest + chroma colors first
+		return (b.colorjs.oklch.l + b.colorjs.oklch.c) - (a.colorjs.oklch.l + a.colorjs.oklch.c);
+	});
+}
+
 export default function(eleventyConfig) {
+	eleventyConfig.addFilter("getImageColors", function(target) {
+		if(!path.isAbsolute(target)) {
+			target = path.join(path.dirname(this.page.inputPath), target);
+		}
+		return getFilteredImageColors(target);
+	});
+
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		htmlOptions: {
 			imgAttributes: {

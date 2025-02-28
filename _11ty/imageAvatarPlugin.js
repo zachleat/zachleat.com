@@ -31,12 +31,16 @@ async function twitterImageAvatar(username, classes = "") {
 	return markup;
 }
 
+export function getIndieAvatarUrl(url) {
+	return `https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(url)}/`;
+}
+
 export default function(eleventyConfig) {
 	// this will no longer generate new images so don’t use it
 	eleventyConfig.addAsyncShortcode("twitterImageAvatar", twitterImageAvatar);
 
 	function indieAvatarHtml(url = "", classes = "z-avatar", onerror = "") {
-		let screenshotUrl = `https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(url)}/`;
+		let screenshotUrl = getIndieAvatarUrl(url);
 		return `<img alt="IndieWeb Avatar for ${url}" class="${classes}" loading="lazy" decoding="async" src="${screenshotUrl}" width="60" height="60"${onerror ? ` onerror="${onerror}"`: ""} eleventy:ignore>`;
 	}
 

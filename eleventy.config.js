@@ -16,10 +16,10 @@ import pluginWebc from "@11ty/eleventy-plugin-webc";
 import fontAwesomePlugin from "@11ty/font-awesome";
 
 import siteData from "./_data/site.json" with { type: "json" };
-import pluginImage, { opengraphImageHtml, screenshotImageHtmlFullUrl } from "./_11ty/imagePlugin.js";
+import pluginImage, { opengraphImageHtml, screenshotImageHtmlFullUrl, getFilteredImageColors } from "./_11ty/imagePlugin.js";
 
 import pluginSass from "./_11ty/sassPlugin.js";
-import pluginImageAvatar from "./_11ty/imageAvatarPlugin.js";
+import pluginImageAvatar, { getIndieAvatarUrl } from "./_11ty/imageAvatarPlugin.js";
 import pluginWebmentions from "./_11ty/webmentionsPlugin.js";
 import pluginAnalytics from "./_11ty/analyticsPlugin.js";
 
@@ -154,7 +154,6 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
 
 	/* FILTERS */
-
 	eleventyConfig.addFilter("tweetbackUrl", async (url) => {
 		const { transform } = await import("@tweetback/canonical");
 		return transform(url);
@@ -376,7 +375,7 @@ export default async function(eleventyConfig) {
 	/* END FILTERS */
 
 	/* SHORTCODES */
-	eleventyConfig.addLiquidShortcode("originalPostEmbed", function(url, skipIcon = false, mode = "screenshot") {
+	eleventyConfig.addLiquidShortcode("originalPostEmbed", async function(url, skipIcon = false, mode = "screenshot") {
 		if(url.startsWith("https://www.youtube.com/") || url.startsWith("https://youtube.com/")) {
 			mode = "opengraph";
 		}
@@ -388,8 +387,19 @@ export default async function(eleventyConfig) {
 			imageHtml = opengraphImageHtml(url);
 		}
 
+		let styles = [];
+		let theme = "dark";
+		if(!skipIcon && !url.includes("youtube.com")) {
+			let avatarUrl = getIndieAvatarUrl(url);
+			let colors = await getFilteredImageColors(avatarUrl);
+			if(colors.length > 0) {
+				styles.push(`--bw-background: ${colors.at(0).background}`);
+				theme = colors.at(0).mode;
+			}
+		}
+
 		return `${JS_ENABLED ? `<script type="module" src="/static/browser-window.js"></script>` : ""}
-<div><browser-window mode="dark"${skipIcon ? "" : " icon"} url="${url}" shadow flush><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
+<div><browser-window mode="${theme}"${skipIcon ? "" : " icon"} url="${url}" shadow flush style="${styles.join(";")}"><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
 	});
 
 	/* COLLECTIONS */
