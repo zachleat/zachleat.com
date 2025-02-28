@@ -1,3 +1,5 @@
+command = "node run-build.js"
+
 [[plugins]]
 package = "netlify-plugin-cache"
 
