@@ -7,7 +7,7 @@ tags:
 metadata:
   speaking:
     type: podcast
-  youtubeId: JoRpztLGyx4
+  youtubeId: dIJbS6unSxg
 external_url: 'https://schalkneethling.substack.com/p/unpacking-the-challenges-and-opportunities'
 medialength: 73 min
 ---
