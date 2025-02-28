@@ -9,7 +9,7 @@ import { encode } from "html-entities";
 // import { YoutubeTranscript } from "youtube-transcript";
 
 import { RenderPlugin, IdAttributePlugin } from "@11ty/eleventy";
-import { AssetCache } from "@11ty/eleventy-fetch";
+// import { AssetCache } from "@11ty/eleventy-fetch";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginWebc from "@11ty/eleventy-plugin-webc";
