@@ -1,6 +1,4 @@
-function openGraphImageUrl(url) {
-	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(url)}/auto/jpeg/`;
-}
+import { getOpenGraphImageUrl } from "../_11ty/imagePlugin.js";
 
 export default {
 	author: "Zach Leatherman",
@@ -17,10 +15,10 @@ export default {
 					return data.seo.openGraphBackgroundImage;
 				}
 				if(data.external_url && data.external_url.startsWith("https://www.youtube.com/watch?v=")) {
-					return openGraphImageUrl(data.external_url);
+					return getOpenGraphImageUrl(data.external_url, "jpeg");
 				}
 				if(data.metadata && data.metadata.youtubeId) {
-					return openGraphImageUrl(`https://www.youtube.com/watch?v=${data.metadata.youtubeId}`);
+					return getOpenGraphImageUrl(`https://www.youtube.com/watch?v=${data.metadata.youtubeId}` ,"jpeg");
 				}
 			}
 		}

@@ -1,9 +1,9 @@
-import path from "node:path";
 import { createHash } from "node:crypto";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { getImageColors } from "@11ty/image-color";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
+export const CACHEBUSTER = "20250228";
 
 function getCryptoHash(src) {
 		let hash = createHash("sha1");
@@ -66,8 +66,17 @@ function getFullUrlFromPath(path) {
 	return domain + path;
 }
 
+export function getOpenGraphImageUrl(url, format = "") {
+	let u = new URL(url);
+
+	// Not used, _${CACHEBUSTER} is applied directly to opengraph path in `opengraphImageHtmlWithClass`
+	// u.searchParams.set("cache", CACHEBUSTER);
+
+	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(u.toString())}/${format ? `auto/${format}/` : ""}`;
+}
+
 function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
-	let fullUrl = `https://v1.opengraph.11ty.dev/${encodeURIComponent(targetUrl)}/`;
+	let fullUrl = getOpenGraphImageUrl(targetUrl);
 
 	let options = {
 		// careful, AVIF here is a little slow!
@@ -85,9 +94,10 @@ function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 			}
 
 			if(process.env.PRODUCTION_BUILD) {
-				return `${fullUrl}${size}/${format}/`;
+				return `${fullUrl}${size}/${format}/_${CACHEBUSTER}/`;
 			}
 
+			// This could be better
 			return `${fullUrl}${size}/${format}/_localdev1/`;
 		}
 	};
@@ -141,7 +151,7 @@ function getScreenshotUrlFromPath(path, options) {
 	let u = new URL(getFullUrlFromPath(path));
 
 	// bust cache for the screenshot target URL, useful when the open graph images need a refresh
-	u.searchParams.set("cache", "20250228");
+	u.searchParams.set("cache", CACHEBUSTER);
 
 	return getScreenshotUrl(u.toString(), options);
 }
