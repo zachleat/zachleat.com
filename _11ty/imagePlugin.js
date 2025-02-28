@@ -180,13 +180,6 @@ export async function getFilteredImageColors(target) {
 }
 
 export default function(eleventyConfig) {
-	eleventyConfig.addFilter("getImageColors", function(target) {
-		if(!path.isAbsolute(target)) {
-			target = path.join(path.dirname(this.page.inputPath), target);
-		}
-		return getFilteredImageColors(target);
-	});
-
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		htmlOptions: {
 			imgAttributes: {

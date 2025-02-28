@@ -387,19 +387,19 @@ export default async function(eleventyConfig) {
 			imageHtml = opengraphImageHtml(url);
 		}
 
-		let styles = [];
 		let theme = "dark";
-		if(!skipIcon && !url.includes("youtube.com")) {
-			let avatarUrl = getIndieAvatarUrl(url);
-			let colors = await getFilteredImageColors(avatarUrl);
-			if(colors.length > 0) {
-				styles.push(`--bw-background: ${colors.at(0).background}`);
-				theme = colors.at(0).mode;
-			}
-		}
-
+		// let styles = [];
+		// if(!skipIcon && !url.includes("youtube.com")) {
+		// 	let avatarUrl = getIndieAvatarUrl(url);
+		// 	let colors = await getFilteredImageColors(avatarUrl);
+		// 	if(colors.length > 0) {
+		// 		styles.push(`--bw-background: ${colors.at(0).background}`);
+		// 		theme = colors.at(0).mode;
+		// 	}
+		// }
+		// // style="${styles.join(";")}"
 		return `${JS_ENABLED ? `<script type="module" src="/static/browser-window.js"></script>` : ""}
-<div><browser-window mode="${theme}"${skipIcon ? "" : " icon"} url="${url}" shadow flush style="${styles.join(";")}"><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
+<div><browser-window mode="${theme}"${skipIcon ? "" : " icon"} url="${url}" shadow flush><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
 	});
 
 	/* COLLECTIONS */
