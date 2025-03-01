@@ -66,7 +66,7 @@
 		"analytics": "node fetch-analytics-data.js",
 		"production": "npm run projects && npm run analytics && npm run build-production && npm run create-search-index",
 		"nocache-production": "npm run projects && npm run build-production && npm run create-search-index",
-		"build-production": "PRODUCTION_BUILD=true ELEVENTY_FEATURES=webmentions npx @11ty/eleventy"
+		"build-production": "PRODUCTION_BUILD=true npx @11ty/eleventy"
 	},
 	"repository": {
 		"type": "git",
