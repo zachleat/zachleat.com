@@ -77,7 +77,9 @@ function getInputMap(globs) {
 		if(matcher && matcher.length) {
 			let [, date, filename] = matcher;
 			let slugSplit = filename.split(".");
-			slugSplit.pop();
+			if(slugSplit.length > 1) {
+				slugSplit.pop();
+			}
 			let slug = slugSplit.join(".");
 			result.url = `/web/${slug}/`;
 
