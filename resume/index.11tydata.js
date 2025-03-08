@@ -1,8 +1,10 @@
 import EleventyFetch from "@11ty/eleventy-fetch";
 
+const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "7d" : "1d";
+
 function fetch(url) {
 	return EleventyFetch(url, {
-		duration: "1d",
+		duration: CACHE_DURATION,
 		type: "json",
 	})
 }

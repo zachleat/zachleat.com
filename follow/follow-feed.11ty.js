@@ -1,3 +1,5 @@
+const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "7d" : "1d";
+
 export default class {
 	data() {
 		return {
@@ -12,7 +14,7 @@ export default class {
 
 		let feed = new ActivityFeed();
 
-		feed.setCacheDuration("1d"); // cache is persisted now, so we’ll update this at maximum once per day
+		feed.setCacheDuration(CACHE_DURATION); // cache is persisted now, so we’ll update this at maximum once per day
 
 		feed.addSource("youtubeuser", "YouTube", "UCMlSs0Ltg57qpYdFwUVLR2A");
 		feed.addSource("atom", "Blog","https://www.zachleat.com/web/feed/");

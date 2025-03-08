@@ -11,6 +11,7 @@ import getBaseUrl from "../_includes/getBaseUrl.js";
 const { domain } = siteData;
 const API_ORIGIN = 'https://webmention.io/api/mentions.jf2';
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
+const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "7d" : "1d";
 
 async function getWebmentionPage(pageNumber = 0) {
 	// https://github.com/aaronpk/webmention.io#api
@@ -22,7 +23,7 @@ async function getWebmentionPage(pageNumber = 0) {
 
 	return Fetch(url, {
 		type: "json",
-		duration: "1d",
+		duration: CACHE_DURATION,
 	});
 }
 
