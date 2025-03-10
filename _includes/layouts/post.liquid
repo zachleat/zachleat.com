@@ -141,8 +141,6 @@ tmpl: page
 	{% include "webmentionlist", absoluteUrl: absoluteUrl %}
 {% endunless %}
 
-{%- assign isDraft = tags | includes: "draft" %}
-{% unless isDraft %}
 <div id="opengraph-preview" class="share content-grid-sibling" data-pagefind-ignore>
 	<details>
 		<summary class="hed-h4"><strong>Sharing on social media?</strong></summary>
@@ -151,7 +149,6 @@ tmpl: page
 		<p>How did you do this? <a href="/web/automatic-opengraph/">I automated my Open Graph images.</a> (<a href="/opengraph{{ page.url }}">Peer behind the curtain at the test page</a>)</p>
 	</details>
 </div>
-{% endunless %}
 
 {% comment %}
 <!--- if you remove this, re-enable in 2023-12-15-snow-fall.md --->

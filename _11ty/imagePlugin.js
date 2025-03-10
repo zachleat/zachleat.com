@@ -243,7 +243,6 @@ export default function(eleventyConfig) {
 
 		// raw screenshot
 		return getScreenshotUrlFromPath(url);
-		// return getScreenshotUrlFromPath("/og/default.jpeg");
 	});
 };
 

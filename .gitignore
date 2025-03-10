@@ -4,9 +4,6 @@ node_modules
 .env
 _site
 .cache
-web/dist
-web/drafts
+tmp/
 _includes/initial.*
 */.DS_Store
-og/*.jpeg
-resume/letter.liquid

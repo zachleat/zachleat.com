@@ -163,7 +163,7 @@ export default async function(eleventyConfig) {
 		if(!targetYear) {
 			targetYear = (new Date).getFullYear();
 		}
-		return `https://web.archive.org/web/20230000000000*/${url}`;
+		return `https://web.archive.org/web/${targetYear || 2023}0000000000*/${url}`;
 	});
 
 	function leftpad(str, length = 3) {
@@ -175,11 +175,6 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addFilter("truncate", (str, len = 280) => { // tweet sized default
 		let suffix = str.length > len ? `… <span class="tag-inline">Truncated</span>` : "";
 		return str.substr(0, len) + suffix;
-	});
-
-	eleventyConfig.addFilter("selectRandomFromArray", (arr) => {
-		let index = Math.floor(Math.random() * arr.length);
-		return arr[index];
 	});
 
 	eleventyConfig.addLiquidFilter("numberString", function(num) {
@@ -579,14 +574,13 @@ export default async function(eleventyConfig) {
 	});
 
 	// TODO this could be a webc component
+	let slugify = eleventyConfig.getFilter("slugify");
 	eleventyConfig.addShortcode("slides", async function (prefix, indeces, alts, links) {
-		const {nanoid} = await import("nanoid");
-
 		let [indexStart, indexEnd] = indeces.split("-");
 		indexStart = parseInt(indexStart, 10);
 		indexEnd = parseInt(indexEnd, 10) || indexStart; // "33" becomes "33-33"
 		let isSingleSlide = indexStart === indexEnd;
-		let id = `carouscroll-id-${nanoid(4)}`;
+		let id = `carouscroll-id-${slugify(this.page.url + "__" + indeces)}`;
 
 		let html = [];
 		if(JS_ENABLED) {
