@@ -56,24 +56,22 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginImageAvatar);
 	eleventyConfig.addPlugin(IdAttributePlugin);
 
-	if(process.env.PRODUCTION_BUILD) {
-		eleventyConfig.addPlugin(feedPlugin, {
-			outputPath: "/web/feed/atom.xml",
-			collection: {
-				name: "feedPosts",
-				limit: 10,
-			},
-			metadata: {
-				language: "en",
-				title: siteData.name,
-				subtitle: siteData.description,
-				base: siteData.url,
-				author: {
-					name: siteData.name,
-				}
+	eleventyConfig.addPlugin(feedPlugin, {
+		outputPath: "/web/feed/atom.xml",
+		collection: {
+			name: "feedPosts",
+			limit: 10,
+		},
+		metadata: {
+			language: "en",
+			title: siteData.name,
+			subtitle: siteData.description,
+			base: siteData.url,
+			author: {
+				name: siteData.name,
 			}
-		});
-	}
+		}
+	});
 	eleventyConfig.addPlugin(pluginWebc, {
 		components: [
 			"_components/**/*.webc",
