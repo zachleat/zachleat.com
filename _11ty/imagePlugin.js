@@ -180,6 +180,10 @@ function screenshotImageHtmlFullUrl(fullUrl) {
 }
 
 export async function getFilteredImageColors(target) {
+	if(process.env.ELEVENTY_RUN_MODE !== "build") {
+		return [];
+	}
+
 	let colors = await getImageColors(target);
 	return colors.filter(c => {
 		// colors with good contrast with light text or extra good with dark text (white is boring)
