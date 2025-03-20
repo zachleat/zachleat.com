@@ -4,7 +4,7 @@
 	"description": "The website of @zachleat",
 	"type": "module",
 	"dependencies": {
-		"@11ty/font-awesome": "^1.0.0-beta.6",
+		"@11ty/font-awesome": "1.0.0-beta.10",
 		"@11ty/is-land": "^4.0.1",
 		"@tweetback/canonical": "^2.0.46",
 		"@zachleat/browser-window": "^1.0.15",
@@ -33,7 +33,7 @@
 	"devDependencies": {
 		"@11ty/eleventy": "3.0.1-alpha.5",
 		"@11ty/eleventy-activity-feed": "^2.0.0",
-		"@11ty/eleventy-fetch": "5.1.0-beta.1",
+		"@11ty/eleventy-fetch": "5.1.0-beta.2",
 		"@11ty/eleventy-img": "^6.0.1",
 		"@11ty/eleventy-plugin-rss": "^2.0.3",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",

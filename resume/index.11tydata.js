@@ -33,14 +33,6 @@ export default async function({eleventy}) {
 				data.stargazers.eleventy = json.stargazers_count;
 			}));
 
-		promises.push(fetch("https://api.meetup.com/nebraskajs?&sign=true&photo-host=public")
-			.then(json => {
-				if(eleventy.env.runMode !== "serve") {
-					console.log( `[zachleat.com] NebraskaJS member count: ${json.members}.` );
-				}
-				data.meetup.nebraskajs = json.members;
-			}));
-
 		await Promise.all(promises);
 
 		return data;
