@@ -355,7 +355,11 @@ export default async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addJavaScriptFunction("fetchYoutubeTranscript", async (videoId) => {
-		let asset = new AssetCache(`youtube_transcript_${videoId}`);
+		let asset = new AssetCache(`youtube_transcript_${videoId}`, "./_11ty/transcripts/", {
+			filenameFormat: function(key, hash) {
+				return `youtube-${videoId}`;
+			}
+		});
 		if(asset.isCacheValid("*")) {
 			return asset.getCachedValue();
 		}
