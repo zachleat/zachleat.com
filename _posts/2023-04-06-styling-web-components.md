@@ -29,7 +29,7 @@ Methods for encapsulated styles:
 
 This is the newest kid on the block. And with [Safari recently shipping support (in 16.4)](https://caniuse.com/declarative-shadow-dom), only Firefox is now conspicuously missing from the evergreens.
 
-<div><syntax-highlight @language="html">
+```html
 <sample-component>
 	Fallback content.
 	<template shadowrootmode="open">
@@ -42,7 +42,7 @@ This is the newest kid on the block. And with [Safari recently shipping support 
 		</style>
 	</template>
 </sample-component>
-</syntax-highlight></div>
+```
 
 <div>
 	<p>Declarative Shadow DOM is <strong>⚠️ not supported</strong> in your browser and will require the polyfill.</p>
@@ -90,7 +90,8 @@ The big drawback of Declarative Shadow DOM comes when you have multiple instance
 
 <details>
 <summary>Expand to see an example.</summary>
-<syntax-highlight @language="html">
+
+```html
 <sample-component>
 	<!-- duplicated -->
 	Fallback content.
@@ -116,7 +117,8 @@ The big drawback of Declarative Shadow DOM comes when you have multiple instance
 		</style>
 	</template>
 </sample-component>
-</syntax-highlight>
+```
+
 </details>
 
 It’s worth noting that [WebC can assist you](#3.-webc) when you’re authoring components with Declarative Shadow DOM so that you don’t have to duplicate this template content yourself!
@@ -127,7 +129,7 @@ If you want to add additional clientside interactivity to the component, use the
 
 This is less than ideal, as it places a JavaScript dependency on CSS (in Firefox only).
 
-<div><syntax-highlight @language="html">
+```html
 <script>
 if("customElements" in window) {
 	customElements.define("sample-component", class extends HTMLElement {
@@ -138,11 +140,12 @@ if("customElements" in window) {
 	});
 }
 </script>
-</syntax-highlight></div>
+```
 
 <details class="livedemo">
 <summary>Expand to see the Declarative Shadow DOM polyfill code.</summary>
-<script webc:is="syntax-highlight" @language="js">
+
+```js
 // Declarative Shadow DOM polyfill
 // Supports both streaming (shadowrootmode) and non-streaming (shadowroot)
 function polyfillDeclarativeShadowDom(node) {
@@ -157,7 +160,8 @@ function polyfillDeclarativeShadowDom(node) {
 		}
 	}
 }
-</script>
+```
+
 </details>
 
 ### Summary
@@ -175,7 +179,7 @@ function polyfillDeclarativeShadowDom(node) {
 
 This method uses JavaScript to client-render markup into Shadow DOM. Here’s a code sample of how two instances of `<sample-component>` might look in your editor:
 
-<div><syntax-highlight @language="html">
+```html
 <sample-component>Fallback content.</sample-component>
 <sample-component>Fallback content.</sample-component>
 
@@ -199,7 +203,7 @@ if("customElements" in window) {
 	});
 }
 </script>
-</syntax-highlight></div>
+```
 
 <div class="livedemo">
 Before
@@ -249,7 +253,7 @@ _Haven’t heard of WebC? It’s a single file component format for Web Componen
 
 Consider a **WebC component file** `sample-component.webc` with the following content:
 
-<div><syntax-highlight @language="html">
+```html
 Server rendered HTML.
 <style webc:scoped>
 :host {
@@ -257,22 +261,22 @@ Server rendered HTML.
 	text-decoration-color: blue;
 }
 </style>
-</syntax-highlight></div>
+```
 
 And on our page we’ll use it twice to show how it scales:
 
-<div><syntax-highlight @language="html">
+```html
 <sample-component>Fallback content.</sample-component>
 <sample-component>Fallback content.</sample-component>
-</syntax-highlight></div>
+```
 
 This is how the above template renders:
 
-<div><syntax-highlight @language="html">
+```html
 <style>.ws0ljrjcl{text-decoration:underline;text-decoration-color:blue}</style>
 <sample-component class="ws0ljrjcl">Server rendered HTML.</sample-component>
 <sample-component class="ws0ljrjcl">Server rendered HTML.</sample-component>
-</syntax-highlight></div>
+```
 
 <div class="livedemo">
 <style>.ws0ljrjcl{text-decoration:underline;text-decoration-color:blue}</style>
@@ -293,7 +297,8 @@ WebC de-duplicates JS in the same way as CSS too. This means we can add `<script
 
 <details>
 <summary>Expand to see <code>sample-component.webc</code> using the Custom Elements API</summary>
-<syntax-highlight @language="html">
+
+```html
 Server rendered HTML
 
 <style webc:scoped>
@@ -312,7 +317,8 @@ if("customElements" in window) {
 	});
 }
 </script>
-</syntax-highlight>
+```
+
 </details>
 
 ### Summary
