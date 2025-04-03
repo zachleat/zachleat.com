@@ -37,9 +37,10 @@ layout: layouts/pagealign.liquid
 	<li><a href="https://letterboxd.com/zachleat/">{% icon "fab:square-letterboxd" %}Letterboxd</a></li>
 	<li>{% indieAvatar "https://nintendo.com/" %}Nintendo</li>
 	<li>{% icon "fab:apple" %}Apple Music</li>
+	<li><del>{% icon "fab:twitter" %}Twitter</del> (2006–2022)</li>
 	<li><a href="/twitter/">{% icon "fab:twitter" %}Twitter Archive</a></li>
-	{% comment %}<li><a href="https://twitter.com/zachleat/">{% indieAvatar "https://x.com/" %}Twitter</a> <em>(dormant)</em></li>
-	<li><a href="https://twitter.com/eleven_ty/">{% indieAvatar "https://x.com/" %}Twitter <code>@eleven_ty</code></a></li>{% endcomment %}
+	<li><del>{% icon "fab:facebook" %}Facebook</del> (2005–2016)</li>
+	{% comment %}<li><a href="https://twitter.com/eleven_ty/">{% indieAvatar "https://x.com/" %}Twitter <code>@eleven_ty</code></a></li>{% endcomment %}
 </ul>
 
 ## Bio

@@ -40,6 +40,14 @@ hr {
 abbr {
 	text-decoration: none;
 }
+del, s {
+	text-decoration-thickness: 0.25em;
+	text-decoration-color: rgba(255,0,0,.6);
+	opacity: .8;
+}
+del .z-icon {
+	opacity: .3;
+}
 .list-flush.list-flush.list-flush {
 	list-style: none;
 	padding-left: 0;

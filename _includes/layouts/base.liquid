@@ -70,7 +70,9 @@
 {%- endfor %}
 
 {%- if JS_ENABLED %}
+{%- if eleventy.runMode == "build" %}
 		<script data-goatcounter="https://zachleat.goatcounter.com/count" async src="//gc.zgo.at/count.v4.js" crossorigin="anonymous" integrity="sha384-nRw6qfbWyJha9LhsOtSb2YJDyZdKvvCFh0fJYlkquSFjUxp9FVNugbfy8q1jdxI+"></script>
+{%- endif %}
 		<script type="module">{% getBundle 'js' %}</script><!-- WebC -->
 		<script src="/static/defer.js" type="module"></script>
 {%- endif %}
