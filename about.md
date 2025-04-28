@@ -23,13 +23,15 @@ layout: layouts/pagealign.liquid
 	<li>View his <a href="/resume/"> full résumé</a>.</li>
 </ul>
 
+_For what it’s worth: if you’re trying to contact me I do prefer direct messages on Mastodon (or Bluesky) to email._
+
 <ul class="list-inline fl fl-inline fl-nowrap">
-	<li><a href="https://fediverse.zachleat.com/@zachleat">{% icon "fab:mastodon" %}<strong>Mastodon</strong></a></li>
 	<li><a href="/web/feed/">{% icon "fas:square-rss" %}<strong>Subscribe</strong></a></li>
-	<li><a href="mailto:zach@zachleat.com">{% icon "far:envelope" %}<span>Email</span></a></a>
-	<li><a href="https://github.com/zachleat/">{% icon "fab:github" %}GitHub</a></li>
-	<li><a href="https://www.npmjs.com/~zachleat">{% icon "fab:npm" %}npm</a></li>
+	<li><a href="https://fediverse.zachleat.com/@zachleat">{% icon "fab:mastodon" %}<strong>Mastodon</strong></a></li>
 	<li><a href="https://bsky.app/profile/zachleat.com">{% icon "fab:bluesky" %}Bluesky</a></li>
+	<li><a href="https://github.com/zachleat/">{% icon "fab:github" %}GitHub</a></li>
+	<li><a href="mailto:zach@zachleat.com">{% icon "far:envelope" %}<span>Email</span></a></li>
+	<li><a href="https://www.npmjs.com/~zachleat">{% icon "fab:npm" %}npm</a></li>
 	<li><a href="https://www.linkedin.com/in/zachleat/">{% icon "fab:linkedin" %}LinkedIn</a></li>
 	<li><a href="https://www.youtube.com/channel/UCMlSs0Ltg57qpYdFwUVLR2A">{% icon "fab:youtube" %}YouTube</a></li>
 	<li><a href="https://codepen.io/zachleat/">{% icon "fab:codepen" %}Codepen</a></li>
