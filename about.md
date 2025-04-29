@@ -36,7 +36,7 @@ _For what it’s worth: if you’re trying to contact me I do prefer direct mess
 	<li><a href="https://www.youtube.com/channel/UCMlSs0Ltg57qpYdFwUVLR2A">{% icon "fab:youtube" %}YouTube</a></li>
 	<li><a href="https://codepen.io/zachleat/">{% icon "fab:codepen" %}Codepen</a></li>
 	<li><a href="https://opencollective.com/zachleat">{% indieAvatar "https://opencollective.com/" %}OpenCollective</a></li>
-	<li><a href="https://letterboxd.com/zachleat/">{% icon "fab:square-letterboxd" %}Letterboxd</a></li>
+	<li><a href="https://letterboxd.com/zachleat/">{% indieAvatar "https://letterboxd.com/" %}Letterboxd</a></li>
 	<li>{% indieAvatar "https://nintendo.com/" %}Nintendo</li>
 	<li>{% icon "fab:apple" %}Apple Music</li>
 	<li><del>{% icon "fab:twitter" %}Twitter</del> (2006–2022)</li>
