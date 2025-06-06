@@ -6,8 +6,8 @@ npx degit zachleat/unicode-range-interchange _site/unicode-range-interchange
 rm -rf _site/alarmd2
 npx degit zachleat/ALARMd _site/alarmd2
 
-rm -rf _site/bigtext
-npx degit zachleat/bigtext _site/bigtext
+# rm -rf _site/bigtext
+# npx degit zachleat/bigtext _site/bigtext
 
 rm -rf _site/presentations/toolordie
 npx degit zachleat/ToolOrDie _site/presentations/toolordie
