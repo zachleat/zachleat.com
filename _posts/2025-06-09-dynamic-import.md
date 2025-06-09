@@ -95,10 +95,10 @@ A few more features for this new package:
 - Multi-runtime: tested with Node (18+), some limited testing in Deno, Chromium, Firefox, and WebKit.
 	- This was my first time using [Vitest](https://vitest.dev/) and it worked pretty well! I only hit one snag trying to [test `import.meta.resolve`](https://github.com/vitest-dev/vitest/issues/6953).
 - Supports top-level `async`/`await` (as expected in ES modules)
-- If you use `export`, the package uses your exports to determine what it returns. If there is no `export` in play, it implicitly exports all globals (via `var`, `let`, `const`, `function`, `Array` or `Object` destructuring assignment, `import` specifiers, etc), emulating the behavior in `node-retrieve-globals`.
+- If you use `export`, the package uses your exports to determine what it returns. If there is no `export` in play, it implicitly exports all globals (via `var`, `let`, `const`, `function`, `Array` or `Object` destructuring assignment, `import` specifiers, etc), emulating the behavior in `node-retrieve-globals`. You can disable implicit exports using `implicitExports: false`.
 - Emulates `import.meta.url` when the `filePath` option is supplied
 - `addRequire` option adds support for `require()` (this feature is exclusive to server runtimes)
-- Supports `data` option object to pass in data. Data must be `JSON.stringify` friendly, though I may add more serialization options later.
+- Supports a `data` object to pass in your own global variables to the script. These must be `JSON.stringify` friendly, though this restriction could be relaxed with more serialization options later.
 - When running in-browser, each script is subject to URL content size maximums: Chrome `512MB`, Safari `2048MB`, Firefox `512MB`, Firefox prior to v137 `32MB`.
 
 As always with dynamic script execution, do not use this mechanism to run code that is untrusted (_especially_ when running in-browser on a domain with privileged access to secure information like authentication tokens). Make sure you sandbox appropriately!
