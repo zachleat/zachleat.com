@@ -1740,7 +1740,7 @@ a[href].favicon:before,
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.npmjs.com%2F/");
 }
 .favicon-optin a[href^="https://fediverse.zachleat.com"]:not(.favicon-optout):after,
-.favicon-optin a[href^="https://fosstodon.org"]:not(.favicon-optout):after {
+.favicon-optin a[href^="https://neighborhood.11ty.dev"]:not(.favicon-optout):after {
 	content: "";
 	display: inline-block;
 	vertical-align: text-top;
@@ -1750,7 +1750,7 @@ a[href].favicon:before,
 	background-size: contain;
 }
 .favicon-optin a[href^="https://fediverse.zachleat.com"]:not(.favicon-optout):after,
-.favicon-optin a[href^="https://fosstodon.org"]:not(.favicon-optout):after {
+.favicon-optin a[href^="https://neighborhood.11ty.dev"]:not(.favicon-optout):after {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Ffosstodon.org%2F/");
 }
 
