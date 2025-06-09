@@ -44,16 +44,18 @@
 # Old projects redirects
 /Projects/ /projects/ 301!
 /Projects/* /projects/:splat 301!
+/parseintimate/ /archive/parseintimate/ 301!
+/busyness-sample/ /archive/busyness-sample/ 301!
+
 /projects/alarmd/ /alarmd/ 301!
 /projects/alarmd/* /alarmd/:splat 301!
 /projects/alarmd-beta/ /alarmd2/ 301!
 /projects/alarmd-beta/* /alarmd2/:splat 301!
+
 /bigtext/ /bigtext/demo/ 301!
 /bigtext/demo/ https://zachleat.github.io/BigText/demo/wizard.html 200!
 /bigtext/demo/* https://zachleat.github.io/BigText/demo/:splat 200!
 /bigtext/dist/bigtext.js https://zachleat.github.io/BigText/dist/bigtext.js 200!
-/parseintimate/ /archive/parseintimate/ 301!
-/busyness-sample/ /archive/busyness-sample/ 301!
 
 # Stuff that moved
 /web/about-me/ /about/ 301!
