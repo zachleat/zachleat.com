@@ -300,10 +300,12 @@ h5,
 		padding-left: 0.75rem; /* 12px /16 */
 		padding-right: 0.75rem; /* 12px /16 */
 	}
-	.content-main pre {
+	.content-main pre,
+	.content-main line-numbers pre {
 		margin-left: -0.75rem; /* -12px /16 */
 		margin-right: -0.75rem; /* -12px /16 */
 		width: calc(100% + 1.5rem);
+		max-width: none;
 	}
 	.tmpl-list .content-main {
 		margin-left: auto;
@@ -721,6 +723,11 @@ pre {
 	font-feature-settings: 'liga' 0, 'clig' 0;
 
 	@include mixins.extraunhyphenate;
+}
+:root {
+	--uln-padding-v: .75rem;
+	--uln-padding-h: 0 1.5rem;
+	--uln-color: #999;
 }
 pre {
 	padding: .75rem;

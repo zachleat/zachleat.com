@@ -120,6 +120,7 @@ export default async function(eleventyConfig) {
 			"node_modules/@zachleat/snow-fall/snow-fall.js": `static/snow-fall.js`,
 			"node_modules/@zachleat/carouscroll/carouscroll.js": `static/carouscroll.js`,
 			"node_modules/@zachleat/heading-anchors/heading-anchors.js": `static/heading-anchors.js`,
+			"node_modules/@zachleat/line-numbers/line-numbers.js": `static/line-numbers.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")

@@ -159,3 +159,15 @@ tmpl: page
 	<snow-fall></snow-fall>
 </is-land>
 {% endcomment %}
+
+<script type="module" src="/static/line-numbers.js"></script>
+<script type="module">
+const LineNumbers = customElements.get("line-numbers");
+Array.from(document.querySelectorAll("pre")).forEach(el => {
+	if(el.closest("blockquote") || el.innerText.split("\n").length <= 3) {
+		return;
+	}
+
+	LineNumbers.upgrade(el)
+});
+</script>
