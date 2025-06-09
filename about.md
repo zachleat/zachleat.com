@@ -20,7 +20,7 @@ layout: layouts/pagealign.liquid
 
 <ul class="list-inline fl fl-inline fl-nowrap">
 	<li>This web site is maintained by <strong>Zach Leatherman</strong> <em>(he, him, they)</em>.</li>
-	<li>View his <a href="/resume/"> full résumé</a>.</li>
+	<li>View his <a href="/resume/">full résumé</a> or about his <a href="/uses/">favorite tools</a>.</li>
 </ul>
 
 _For what it’s worth: if you’re trying to contact me I do prefer direct messages on Mastodon (or Bluesky) to email._
@@ -71,51 +71,6 @@ Zach is a builder for the web at <a href="https://fontawesome.com/">Font Awesome
 Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and the creator/maintainer of [Eleventy (11ty)](https://www.11ty.dev), an award-winning open source site generator. At one point he became entirely [_too fixated_ on web fonts](https://www.zachleat.com/web/fonts/). He has given [{{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries](https://www.zachleat.com/web/speaking/) at events like Beyond Tellerrand, Smashing Conference, Jamstack Conf, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/). Formerly part of Netlify, [Filament Group](https://www.filamentgroup.com/), [NEJS CONF](http://nejsconf.com/), and [NebraskaJS](http://nebraskajs.com).
 ```
 
-## Site History
-
-<table>
-	<thead>
-		<tr>
-			<th>Year</th>
-			<th>Type</th>
-			<th>Using</th>
-			<th>Learn more…</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><code>2007</code></td>
-			<td>Software</td>
-			<td>WordPress</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td><code>2009</code></td>
-			<td>Host</td>
-			<td><a href="https://www.nearlyfreespeech.net/">nearlyfreespeech.net</a></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td><code>2013</code></td>
-			<td>Software</td>
-			<td>Jekyll</td>
-			<td><a href="/web/zachleat-is-dead/"><em>zachleat.com is Dead, Long Live zachleat.com</em></a></td>
-		</tr>
-		<tr>
-			<td><code>2018</code></td>
-			<td>Software</td>
-			<td>Eleventy</td>
-			<td><a href="https://github.com/zachleat/zachleat.com/commit/0e10b089f3d7b86b8c0c13ade03782e9908347c1"><em>GitHub commit</em></a> (too busy to blog this one, apparently!)</td>
-		</tr>
-		<tr>
-			<td><code>2022</code></td>
-			<td>Host</td>
-			<td>Netlify</td>
-			<td><a href="/web/zachleat-on-netlify/"><em>Migrating My 16+ Year Old Web Site to Netlify in a Few Short Days</em></a></td>
-		</tr>
-	</tbody>
-</table>
-
 ## Photos
 
 ### Deprecated but saved for Posterity
@@ -144,3 +99,7 @@ Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and th
 	<img src="./web/img/web367.png" alt="The very first logo for this blog: Web 3.0 6 Bladed Razors and 7 Minute Abs">
 	<figcaption>This web site was started in 2007 and was originally titled <strong>Web 3.0, 6 Bladed Razors, and 7 Minute Abs</strong>.</figcaption>
 </figure>
+
+## Site History
+
+_This information has [moved to `/uses/`](/uses/)._

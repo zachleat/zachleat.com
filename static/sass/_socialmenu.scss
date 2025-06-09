@@ -6,6 +6,11 @@
 	align-items: center;
 	gap: .75em;
 }
+@media (max-width: 39.9375em) { /* 639px */
+	.social {
+		flex-wrap: wrap;
+	}
+}
 .social .z-icon {
 	margin: 0;
 }
@@ -61,13 +66,8 @@
 		gap: 1em;
 		margin: 1em auto 0;
 	}
-	@media (min-width: 40em) { /* 640px */
-		.rail .navigation {
-			gap: 2em;
-		}
-	}
 	.rail .social {
-		justify-content: center;
+		justify-content: flex-end;
 	}
 	.rail .navigation .tags a[href] {
 		padding-left: .75em;

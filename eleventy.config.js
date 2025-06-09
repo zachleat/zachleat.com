@@ -263,14 +263,6 @@ export default async function(eleventyConfig) {
 		}
 	});
 
-	eleventyConfig.addNunjucksFilter("rssNewestUpdatedDate", collection => {
-		if( !collection || !collection.length ) {
-			throw new Error( "Collection is empty in lastUpdatedDate filter." );
-		}
-
-		return DateTime.fromJSDate(collection[ 0 ].date).toISO({ includeOffset: true, suppressMilliseconds: true });
-	});
-
 	eleventyConfig.addFilter("readableDate", dateObj => {
 		return DateTime.fromJSDate(dateObj).toFormat("LLLL dd, yyyy");
 	});
