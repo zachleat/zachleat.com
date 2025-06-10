@@ -14,8 +14,7 @@ function getCryptoHash(src) {
 async function imageFactory(src, options = {}) {
 	options = Object.assign({},{
 		widths: ["auto"],
-		formats: process.env.PRODUCTION_BUILD ? ["svg", "avif", "jpeg"] : ["auto"],
-		svgShortCircuit: true,
+		formats: process.env.PRODUCTION_BUILD ? ["avif", "jpeg"] : ["auto"],
 		failOnError: false,
 		transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
 		urlPath: "/img/built/",
