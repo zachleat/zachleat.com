@@ -14,7 +14,9 @@ function getCryptoHash(src) {
 async function imageFactory(src, options = {}) {
 	options = Object.assign({},{
 		widths: ["auto"],
-		formats: process.env.PRODUCTION_BUILD ? ["avif", "jpeg"] : ["auto"],
+		formats: process.env.PRODUCTION_BUILD ? ["svg", "avif", "jpeg"] : ["auto"],
+		svgShortCircuit: true,
+		failOnError: false,
 		transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
 		urlPath: "/img/built/",
 		outputDir: "./_site/img/built/",
@@ -39,6 +41,7 @@ function backgroundImageFilter(src, width, options = {}) {
 		formats: ["jpeg"],
 		urlPath: "/img/built/",
 		outputDir: "./_site/img/built/",
+		failOnError: false,
 		filenameFormat: function (id, src, width, format, options) {
 			return filename;
 		},
@@ -196,6 +199,9 @@ export async function getFilteredImageColors(target) {
 
 export default function(eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		failOnError: false,
+		formats: ["svg", "avif", "jpeg"],
+		svgShortCircuit: true,
 		htmlOptions: {
 			imgAttributes: {
 				loading: "lazy",

@@ -37,7 +37,7 @@ _This guide is not intended for use with font icons, which have different loadin
 	}
 }
 </style>
-<img src="/web/img/posts/comprehensive-webfonts/strategies.svg" alt="A diagram describing the relationship between the font loading strategies" id="webfont-strategies-chart" eleventy:ignore>
+<img src="/web/img/posts/comprehensive-webfonts/strategies.svg" alt="A diagram describing the relationship between the font loading strategies" id="webfont-strategies-chart">
 
 ## Glossary
 
