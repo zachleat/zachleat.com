@@ -3,7 +3,7 @@ import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { getImageColors } from "@11ty/image-color";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
-export const CACHEBUSTER = "20250229";
+export const CACHEBUSTER = "20250610";
 
 function getCryptoHash(src) {
 		let hash = createHash("sha1");
@@ -149,7 +149,11 @@ function getScreenshotUrl(fullUrl, options = {}) {
 	for(let key in options) {
 		o.push(`_${key}:${options[key]}`);
 	}
-	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${o.join("")}/`;
+	let suffix = "";
+	if(o.length > 0) {
+		suffix = o.join("") + "/";
+	}
+	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${suffix}`;
 }
 function getScreenshotUrlFromPath(path, options) {
 	let u = new URL(getFullUrlFromPath(path));
