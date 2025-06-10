@@ -1159,6 +1159,11 @@ a[href]:hover .project_img {
 	line-height: 130%;
 	@include mixins.webfontItalic;
 }
+.footer-badge {
+	vertical-align: middle;
+	border-radius: .5em;
+	image-rendering: pixelated;
+}
 
 /* Tags */
 .tags {
@@ -1772,13 +1777,6 @@ html:root {
 .m-8 {
 	margin-top: 2em;
 	margin-bottom: 2em;
-}
-
-.util-va-m {
-	vertical-align: middle;
-}
-.util-br {
-	border-radius: .5em;
 }
 
 /* Font Awesome Icons */
