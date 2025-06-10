@@ -64,4 +64,4 @@ layout: layouts/pagealign.liquid
 - My primary desktop web browser is [{% icon "fab:firefox" %}Firefox](https://www.mozilla.org/firefox/).
 - I work on a {% icon "fab:apple" %}Macbook Air M1 (2020, 16 GB memory) with a {% icon "fas:desktop" %} 27″ Dell display (3840×2160).
 - My smartphone is an {% icon "fab:apple" %}iPhone 11 Pro (2019).
-- My primary IDE is [Visual Studio Code](https://vscode.dev/)
+- My primary IDE is [Visual Studio Code](https://vscode.dev/).
