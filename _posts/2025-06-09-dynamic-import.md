@@ -1,5 +1,6 @@
 ---
 title: How to import() a JavaScript String
+tags: project
 seo:
   openGraphBackgroundImage: /og/sources/bigolship.jpg
   openGraphAlt: A large container ship runs aground
