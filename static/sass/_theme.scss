@@ -965,7 +965,7 @@ table-saw :is(th, td) {
 }
 a[href]:focus .project_img,
 a[href]:hover .project_img {
-	transform: scale(1.1);
+	transform: scale(1.06);
 	border-color: #fff;
 	box-shadow: 0 0 0 3px rgba(0, 106, 35, 0.8), 0 6px 40px 4px rgba(0, 0, 0, .25);
 }
@@ -1024,11 +1024,11 @@ a[href]:hover .project_img {
 .posts-withimg {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2em;
+	gap: 1em;
 }
 .posts-withimg > * {
 	flex-grow: 1;
-	flex-basis: 14em;
+	flex-basis: 15em;
 }
 
 .sub {
