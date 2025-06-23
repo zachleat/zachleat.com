@@ -225,7 +225,7 @@ _**Update February 7, 2023**: Added a bit of history on Single Page Applications
 
 _{{ "14 Oct 2021" | timePosted }} ago:_
 
-{% originalPostEmbed "https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f" %}
+{% originalPostEmbed "https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f", false, "opengraph" %}
 
 [Ryan Carniato: JavaScript Framework TodoMVC Size Comparison](https://dev.to/this-is-learning/javascript-framework-todomvc-size-comparison-504f) _(October 14, 2021)_
 
@@ -258,13 +258,13 @@ Currently only _26% of sites using Next.js have good Core Web Vitals_. This is l
 
 ## August 2023
 
-{% originalPostEmbed "https://joshcollinsworth.com/blog/antiquated-react" %}
+{% originalPostEmbed "https://joshcollinsworth.com/blog/antiquated-react", false, "opengraph" %}
 
 _[Things you forgot (or never knew) because of React](https://joshcollinsworth.com/blog/antiquated-react)—Josh Collinsworth (August 4, 2023)_
 
 ## October 2023
 
-{% originalPostEmbed "https://www.epicweb.dev/why-i-wont-use-nextjs" %}
+{% originalPostEmbed "https://www.epicweb.dev/why-i-wont-use-nextjs", false, "opengraph" %}
 
 _[Why I Won’t Use Next.js](https://www.epicweb.dev/why-i-wont-use-nextjs)—Kent C. Dodds_
 

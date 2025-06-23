@@ -366,7 +366,8 @@ export default async function(eleventyConfig) {
 
 	/* SHORTCODES */
 	eleventyConfig.addLiquidShortcode("originalPostEmbed", async function(url, skipIcon = false, mode = "screenshot") {
-		if(url.startsWith("https://www.youtube.com/") || url.startsWith("https://youtube.com/")) {
+		// if(url.startsWith("https://www.youtube.com/") || url.startsWith("https://youtube.com/")) {
+		if(url.startsWith("https://www.youtube.com/") || url.startsWith("https://youtube.com/") || url.startsWith("https://github.com/")) {
 			mode = "opengraph";
 		}
 
