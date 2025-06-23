@@ -152,7 +152,7 @@ function getScreenshotUrl(fullUrl, options = {}) {
 	if(o.length > 0) {
 		suffix = o.join("") + "/";
 	}
-	return `https://v1.screenshot.11ty.dev/${encodeURIComponent(fullUrl)}/opengraph/${suffix}`;
+	return `https://screenshot.11ty.app/${encodeURIComponent(fullUrl)}/opengraph/${suffix}`;
 }
 function getScreenshotUrlFromPath(path, options) {
 	let u = new URL(getFullUrlFromPath(path));
