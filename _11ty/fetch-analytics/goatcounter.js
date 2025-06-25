@@ -7,6 +7,7 @@ async function fetchData() {
 			throw new Error("Missing GOATCOUNTER_TOKEN environment variable");
 		}
 
+		// The results are sorted by count descending
 		let json = await EleventyFetch("https://zachleat.goatcounter.com/api/v0/stats/hits?start=2024-08-30&limit=100&daily=true", {
 			type: "json",
 			duration: process.env.ELEVENTY_RUN_MODE === "build" ? "0s" : "1h",
