@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { DateTime } from "luxon";
 import memoize from "memoize";
@@ -25,10 +26,12 @@ import pluginAnalytics from "./_11ty/analyticsPlugin.js";
 
 const JS_ENABLED = true;
 
+function resolveModule(name) {
+	return fileURLToPath(import.meta.resolve(name));
+}
+
 export default async function(eleventyConfig) {
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
-
-	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
 	// More in .eleventyignore
 	if(!process.env.PRODUCTION_BUILD) {
@@ -108,19 +111,19 @@ export default async function(eleventyConfig) {
 			"static/*.{css,js}": "static/",
 
 			// External modules
-			"node_modules/@zachleat/details-utils/details-utils.js": `static/details-utils.js`,
 			"node_modules/speedlify-score/speedlify-score.{css,js}": `static/`,
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `static/`,
 			"node_modules/infinity-burger/infinity-burger.{css,js}": `static/`,
 			"node_modules/artificial-chart/artificial-chart.{css,js}": `static/`,
-			"node_modules/@zachleat/table-saw/table-saw.js": `static/table-saw.js`,
-			"node_modules/@zachleat/browser-window/browser-window.js": `static/browser-window.js`,
-			"node_modules/@zachleat/squirminal/squirminal.js": `static/squirminal.js`,
-			"node_modules/@zachleat/pagefind-search/pagefind-search.js": `static/pagefind-search.js`,
-			"node_modules/@zachleat/snow-fall/snow-fall.js": `static/snow-fall.js`,
-			"node_modules/@zachleat/carouscroll/carouscroll.js": `static/carouscroll.js`,
-			"node_modules/@zachleat/heading-anchors/heading-anchors.js": `static/heading-anchors.js`,
-			"node_modules/@zachleat/line-numbers/line-numbers.js": `static/line-numbers.js`,
+			[resolveModule("@zachleat/details-utils")]: `static/details-utils.js`,
+			[resolveModule("@zachleat/table-saw")]: `static/table-saw.js`,
+			[resolveModule("@zachleat/browser-window")]: `static/browser-window.js`,
+			[resolveModule("@zachleat/squirminal")]: `static/squirminal.js`,
+			[resolveModule("@zachleat/pagefind-search")]: `static/pagefind-search.js`,
+			[resolveModule("@zachleat/snow-fall")]: `static/snow-fall.js`,
+			[resolveModule("@zachleat/carouscroll")]: `static/carouscroll.js`,
+			[resolveModule("@zachleat/heading-anchors")]: `static/heading-anchors.js`,
+			[resolveModule("@zachleat/line-numbers")]: `static/line-numbers.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
