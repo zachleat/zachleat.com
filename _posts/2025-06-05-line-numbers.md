@@ -17,6 +17,7 @@ posterImage:
 
 - [**Demo**](https://zachleat.github.io/line-numbers/demo.html)
 - [npm package](https://www.npmjs.com/package/@zachleat/line-numbers)
+- [GitHub repository](https://github.com/zachleat/line-numbers)
 
 Install:
 
