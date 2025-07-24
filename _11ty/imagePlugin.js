@@ -1,16 +1,9 @@
-import { createHash } from "node:crypto";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { getImageColors } from "@11ty/image-color";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
 const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20250724b" : "_localdev1";
-
-function getCryptoHash(src) {
-		let hash = createHash("sha1");
-		hash.update(src);
-		return hash.digest('hex').substring(0, 8);
-}
 
 async function imageFactory(src, options = {}) {
 	options = Object.assign({},{
