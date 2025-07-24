@@ -298,7 +298,7 @@ While there are a few breaking changes when compared with Luxon output (noted ab
 	</thead>
 	<tbody>
 		<tr>
-			<td><code><a href="https://www.npmjs.com/package/@11ty/parse-date-strings">@11ty/parse-date-strings</a>@2.0.3</code></td>
+			<td><code><a href="https://www.npmjs.com/package/@11ty/parse-date-strings">@11ty/parse-date-strings</a>@2.0.4</code></td>
 			<td>ESM</td>
 			<td><code>6.69 kB</code></td>
 			<td><code>2.3 kB</code> (min)</td>
