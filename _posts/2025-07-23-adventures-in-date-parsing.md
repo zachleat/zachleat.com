@@ -101,171 +101,171 @@ There are a few notable differences:
 	<tbody>
 		<tr>
 			<td class="no"><code class="nowrap">YYYY</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
 		</tr>
 		<tr>
 			<td class="no"><code class="nowrap">YYYY-MM</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DD</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td class="yes"><code class="nowrap">±YYYYYY-MM-DD</code></td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td>Optional <code>-</code> delimiters in dates</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:square-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:square-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td class="yes"><code class="nowrap">YYYY-MM-DD HH</code> (space delimiter)</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %} <em>(huh)</em></td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td class="yes"><code class="nowrap">YYYY-MM-DDtHH</code> (lowercase delimiter)</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span>{% icon "far:face-surprise" %}<span class="a11y-only">Face looking surprised</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH:II</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH:II:SS</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td>Optional <code>:</code> delimiters in time</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH:II:SS.SSS</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span>{% icon "far:face-surprise" %}<span class="a11y-only">Face looking surprised</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH:II:SS,SSS</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td>Microseconds (6 digit precision)</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td>Nanoseconds (9 digit precision)</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH.H</code> Fractional hours</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH:II.I</code> Fractional minutes</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
 		</tr>
 		<tr>
 			<td class="no"><code class="nowrap">YYYY-W01</code> ISO Week Date</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
 		</tr>
 		<tr>
 			<td class="no"><code class="nowrap">YYYY-DDD</code> Year Day</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
 		</tr>
 		<tr>
 			<td class="no"><code class="nowrap">HH:II</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH:II:SSZ</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH:II:SS±00</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH:II:SS±00:00</code></td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
 			<td><code class="nowrap">YYYY-MM-DDTHH:II:SS±0000</code></td>
-			<td>{% icon "fas:circle-xmark" %} <em>(huh)</em></td>
-			<td>{% icon "fas:circle-xmark" %}</td>
-			<td>{% icon "fas:check" %}</td>
-			<td>{% icon "fas:check" %}</td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span>{% icon "far:face-surprise" %}<span class="a11y-only">Face looking surprised</span></td>
+			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 	</tbody>
 </table>
@@ -275,6 +275,8 @@ There are a few notable differences:
 	<dd>Unsupported</dd>
 	<dt>{% icon "fas:square-xmark" %}</dt>
 	<dd>Inaccurate parsing</dd>
+	<dt>{% icon "far:surprise" %}<span class="a11y-only">Face looking surprised</span></dt>
+	<dd>Surprising (to me)</dd>
 </dl>
 
 <em>* Note that <code>Date.parse</code> results may be browser/runtime dependent. The results above were generated from Node.js.</em>
