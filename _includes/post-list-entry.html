@@ -24,7 +24,7 @@
 	<a href="{{ post.url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}{% if post.data.pinned %} posts-link-pinned{% endif %}">
 	{%- if previewImages %}
 		{%- comment %}We can use alt="" here so we don’t duplicate the content with the post title{% endcomment %}
-		{% opengraphImageHtml post, "" %}
+		<img src="{% ogImageSource post.data.page %}" decoding="async" loading="lazy" width="1200" height="630" alt="" class="project_img" eleventy:widths="650,375" sizes="(min-width: 64em) 50vw, 100vw">
 	{%- endif %}
 	{%- if post.data.external_icon_url != false %}
 		{%- if post.data.external_icon_url or post.data.external_url -%}
