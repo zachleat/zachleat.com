@@ -152,7 +152,7 @@ There are a few notable differences:
 			<td class="yes"><code class="nowrap">YYYY-MM-DDtHH</code> (lowercase delimiter)</td>
 			<td>{% icon "fas:circle-xmark" %}<span class="a11y-only">Not supported</span></td>
 			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span>{% icon "far:face-surprise" %}<span class="a11y-only">Face looking surprised</span></td>
-			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
+			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span>{% icon "far:face-surprise" %}<span class="a11y-only">Face looking surprised</span></td>
 			<td>{% icon "fas:check" %}<span class="a11y-only">Supported</span></td>
 		</tr>
 		<tr>
