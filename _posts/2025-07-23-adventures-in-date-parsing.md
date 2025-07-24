@@ -29,7 +29,7 @@ As we move Eleventy to run in more JavaScript environments and runtimes (includi
 - 4.7 MB of 21.3 MB (22%) of `@11ty/eleventy` node_modules
 - 229 kB of 806 kB (28%) of `@11ty/client` (*not yet released!*) bundle size (unminified)
 
-Given that our use of Luxon is strictly limited to date parsing (not formatting or display), it would have been nice to enable tree-shaking on the Luxon library to reduce its size in the bundle (though that wouldn’t have helped the `node_modules` size, I might have settled for that trade-off). Unfortunately, [Luxon does not yet support tree-shaking](https://github.com/moment/luxon/issues/854) so it’s an all or nothing for the bundle.
+Given that our use of Luxon is strictly limited to the [`DateTime.fromISO` function for ISO 8601 date parsing](https://moment.github.io/luxon/#/parsing?id=iso-8601) (not formatting or display), it would have been nice to enable tree-shaking on the Luxon library to reduce its size in the bundle (though that wouldn’t have helped the `node_modules` size, I might have settled for that trade-off). Unfortunately, [Luxon does not yet support tree-shaking](https://github.com/moment/luxon/issues/854) so it’s an all or nothing for the bundle.
 
 ## The Search Begins
 
