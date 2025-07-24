@@ -113,7 +113,7 @@ tmpl: page
 		<dd class="nextprev-prev">
 			{%- if previousPost %}
 			<a href="{{ previousPost.url }}">
-				{% opengraphImageHtml previousPost, previousPost.data.title %}
+				<img src="{% ogImageSource previousPost %}"  alt="{{ previousPost.data.title }}" decoding="async" loading="lazy"class="project_img" eleventy:widths="650">
 			</a>
 			{%- endif -%}
 		</dd>
@@ -125,7 +125,7 @@ tmpl: page
 		<dd class="nextprev-next">
 			{%- if nextPost %}
 			<a href="{{ nextPost.url }}">
-				{% opengraphImageHtml nextPost, nextPost.data.title %}
+				<img src="{% ogImageSource nextPost %}"  alt="{{ nextPost.data.title }}" decoding="async" loading="lazy"class="project_img" eleventy:widths="650">
 			</a>
 			{%- endif -%}
 		</dd>

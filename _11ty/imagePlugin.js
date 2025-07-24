@@ -4,7 +4,7 @@ import { getImageColors } from "@11ty/image-color";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
-export const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20250724b" : "_localdev1";
+const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20250724b" : "_localdev1";
 
 function getCryptoHash(src) {
 		let hash = createHash("sha1");
@@ -31,37 +31,6 @@ async function imageFactory(src, options = {}) {
 		options,
 		metadata: await Image(src, options),
 	}
-}
-
-function backgroundImageFilter(src, width, options = {}) {
-	let filename = `${getCryptoHash(src)}.jpeg`;
-
-	options = Object.assign({},{
-		widths: [width || "auto"],
-		formats: ["jpeg"],
-		urlPath: "/img/built/",
-		outputDir: "./_site/img/built/",
-		failOnError: false,
-		filenameFormat: function (id, src, width, format, options) {
-			return filename;
-		},
-		sharpAvifOptions: {
-			lossless: true,
-		},
-		cacheOptions: {
-			duration: "14d",
-		},
-	}, options);
-
-	if(!src.startsWith("http://") && !src.startsWith("https://")) {
-		src = `.${src}`;
-	}
-
-	// async
-	// @11ty/eleventy-img
-	Image(src, options);
-
-	return `url('/img/built/${filename}')`;
 }
 
 function getFullUrlFromPath(path) {
@@ -218,7 +187,6 @@ export default function(eleventyConfig) {
 		let outputFormat = Object.keys(metadata).pop();
 		return metadata[outputFormat][0].url;
 	});
-	eleventyConfig.addLiquidFilter("backgroundimage", backgroundImageFilter);
 
 	/* Hosted image service to optimize webmention photos */
 	eleventyConfig.addLiquidFilter("eleventyImageServiceAvatar", (url) => {
@@ -226,12 +194,6 @@ export default function(eleventyConfig) {
 	});
 
 	// Screenshots
-	eleventyConfig.addLiquidShortcode("eleventyImageServiceHtml", getImageServiceHtml);
-
-	eleventyConfig.addLiquidShortcode("opengraphImageHtml", function({url}, alt) {
-		return opengraphImageHtml(getFullUrlFromPath(url), alt);
-	});
-
 	eleventyConfig.addLiquidShortcode("screenshotImageHtmlFullUrl", screenshotImageHtmlFullUrl);
 	eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl, options) {
 		return getScreenshotUrl(fullUrl, options);
