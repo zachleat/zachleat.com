@@ -20,7 +20,7 @@ _**Never**._ No exceptions.
 
 So… I’ve written my own date parsing library.
 
-_Why?_ Our story begins seven years ago in the year 2018. I made the very sensible choice to adopt `luxon` as the Date Parsing library for Eleventy. This parsing behavior is used Eleventy finds a String for the [`date` value in the Data Cascade](https://www.11ty.dev/docs/dates/) (though YAML front matter will bypass this behavior when encountering a YAML-compatible date).
+_Why?_ Our story begins seven years ago in the year 2018. I made the very sensible choice to adopt `luxon` as the Date Parsing library for Eleventy. This parsing behavior is used when Eleventy finds a String for the [`date` value in the Data Cascade](https://www.11ty.dev/docs/dates/) (though YAML front matter will bypass this behavior when encountering a YAML-compatible date).
 
 This choice was good for Eleventy’s Node.js-only requirements at the time: accurate and not _too_ big (relatively speaking). Eleventy has [used `luxon` since `@0.2.12`](https://github.com/11ty/eleventy/commit/4272311dab203d2b217ebd4f6b597eb0e816006b) and has grown with the dependency all the way through `@3.7.1`. Now that’s what I call a high quality dependency!
 
