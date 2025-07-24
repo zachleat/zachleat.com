@@ -4,7 +4,7 @@ import { getImageColors } from "@11ty/image-color";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
-export const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20250724" : "_localdev1";
+export const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20250724b" : "_localdev1";
 
 function getCryptoHash(src) {
 		let hash = createHash("sha1");
