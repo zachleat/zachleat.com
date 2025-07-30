@@ -31,6 +31,8 @@ function resolveModule(name) {
 }
 
 export default async function(eleventyConfig) {
+	const slugify = eleventyConfig.getFilter("slugify");
+
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 
 	// More in .eleventyignore
@@ -537,10 +539,9 @@ export default async function(eleventyConfig) {
 	eleventyConfig.amendLibrary("md", (mdLib) => {
 		mdLib.use(markdownItToc, {
 			includeLevel: [2, 3, 4],
-			slugify: eleventyConfig.getFilter("slug"),
-			format: function(heading) {
-				return heading;
-			},
+			// slug filter removed in Eleventy v4
+			slugify: (str) => slugify(str),
+			format: (heading) => heading,
 			transformLink: function(link) {
 				if(typeof link === "string") {
 					// remove backticks from markdown code
@@ -573,7 +574,6 @@ export default async function(eleventyConfig) {
 	});
 
 	// TODO this could be a webc component
-	let slugify = eleventyConfig.getFilter("slugify");
 	eleventyConfig.addShortcode("slides", async function (prefix, indeces, alts, links) {
 		let [indexStart, indexEnd] = indeces.split("-");
 		indexStart = parseInt(indexStart, 10);
