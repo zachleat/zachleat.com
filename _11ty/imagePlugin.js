@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { getImageColors } from "@11ty/image-color";
 
@@ -70,33 +72,6 @@ function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 	});
 }
 
-function opengraphImageHtml(targetUrl, alt = "") {
-	return opengraphImageHtmlWithClass(targetUrl, alt, "project_img");
-}
-
-function getImageServiceHtml(targetUrl, width, height, outputWidths = [], alt="") {
-	let fullUrl = `https://v1.image.11ty.dev/${encodeURIComponent(targetUrl)}/`;
-
-	let options = {
-		// careful, AVIF here is a little slow!
-		formats: ["webp", "jpeg"],
-		widths: outputWidths,
-		statsOnly: true,
-		urlFormat: function({width, format}) {
-			return `${fullUrl}${format}/${width}/`;
-		}
-	};
-
-	let stats = Image.statsByDimensionsSync(fullUrl, width, height, options);
-	return Image.generateHTML(stats, {
-		alt,
-		loading: "lazy",
-		decoding: "async",
-		sizes: "(min-width: 61.25em) calc(100vw - 20.625em), 100vw",
-		"eleventy:ignore": "",
-	});
-}
-
 function getScreenshotUrl(fullUrl, options = {}) {
 	let o = [];
 	for(let key in options) {
@@ -156,6 +131,8 @@ export async function getFilteredImageColors(target) {
 
 export default function(eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		urlPath: "/img/built/",
+		outputDir: ".cache/@11ty/img/",
 		failOnError: false,
 		formats: ["svg", "avif", "jpeg"],
 		svgShortCircuit: true,
@@ -168,6 +145,12 @@ export default function(eleventyConfig) {
 			pictureAttributes: {},
 		}
 	});
+
+	if(process.env.ELEVENTY_RUN_MODE === "build") {
+		eleventyConfig.on("eleventy.after", () => {
+			fs.cpSync(".cache/@11ty/img/", path.join(eleventyConfig.directories.output, "img/built/"), { recursive: true });
+		});
+	}
 
 	// Only one image format, and return only the URL
 	eleventyConfig.addAsyncShortcode("getUrlForImage", async (src, width = "auto", format = "auto") => {
