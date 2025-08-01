@@ -53,4 +53,4 @@ I think this approach is **very reusable** and we’ll likely bundle it into a f
 
 You may also need to [persist `.cache` on your web host](https://www.11ty.dev/docs/deployment/#persisting-cache). This behavior is provided for-free if you’re using Vercel or Cloudflare Pages.
 
-_Related to [`github.com/11ty/eleventy-img/issues/285`](https://github.com/11ty/eleventy-img/issues/285)_
+_Subscribe to [`github.com/11ty/eleventy-img/issues/285`](https://github.com/11ty/eleventy-img/issues/285) for future updates._
