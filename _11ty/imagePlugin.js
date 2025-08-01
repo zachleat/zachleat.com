@@ -83,11 +83,11 @@ function getScreenshotUrl(fullUrl, options = {}) {
 	}
 	return `https://screenshot.11ty.app/${encodeURIComponent(fullUrl)}/opengraph/${suffix}`;
 }
-function getScreenshotUrlFromPath(path, options) {
+function getScreenshotUrlFromPath(path, options, cacheBusterOverride) {
 	let u = new URL(getFullUrlFromPath(path));
 
 	// bust cache for the screenshot target URL, useful when the open graph images need a refresh
-	u.searchParams.set("cache", CACHEBUSTER);
+	u.searchParams.set("cache", cacheBusterOverride || CACHEBUSTER);
 
 	return getScreenshotUrl(u.toString(), options);
 }
@@ -178,9 +178,19 @@ export default function(eleventyConfig) {
 		return getScreenshotUrlFromPath(postUrl, options);
 	});
 
-	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath}) {
+	function isRecentPost(date) {
+		return Math.abs(Date.now() - date.getTime()) < 1000*60*60*24*2;
+	}
+
+	eleventyConfig.addFilter("isRecentPost", isRecentPost);
+	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath, date}) {
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./_posts/")) {
+			// pass in inputPath as cache buster for posts in the last 2 days
+			if(isRecentPost(date) && process.env.PRODUCTION_BUILD) {
+				return getScreenshotUrlFromPath(`/opengraph${url}`, {}, inputPath);
+			}
+
 			return getScreenshotUrlFromPath(`/opengraph${url}`);
 		}
 

@@ -24,7 +24,7 @@
 	<a href="{{ post.url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}{% if post.data.pinned %} posts-link-pinned{% endif %}">
 	{%- if previewImages %}
 		{%- comment %}We can use alt="" here so we don’t duplicate the content with the post title{% endcomment %}
-		<img src="{% ogImageSource post %}" alt="" decoding="async" loading="lazy" class="project_img" eleventy:widths="650,375" sizes="(min-width: 64em) 50vw, 100vw">
+		<img src="{% ogImageSource post %}" alt="" decoding="async" loading="lazy" class="project_img" eleventy:widths="650,375" sizes="(min-width: 64em) 50vw, 100vw"{% if post.date | isRecentPost %} eleventy:ignore{% endif %}>
 	{%- endif %}
 	{%- if post.data.external_icon_url != false %}
 		{%- if post.data.external_icon_url or post.data.external_url -%}
