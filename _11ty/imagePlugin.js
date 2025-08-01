@@ -182,13 +182,14 @@ export default function(eleventyConfig) {
 		return Math.abs(Date.now() - date.getTime()) < 1000*60*60*24*2;
 	}
 
+	let slugify = eleventyConfig.getFilter("slugify");
 	eleventyConfig.addFilter("isRecentPost", isRecentPost);
 	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath, date}) {
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./_posts/")) {
 			// pass in inputPath as cache buster for posts in the last 2 days
 			if(isRecentPost(date) && process.env.PRODUCTION_BUILD) {
-				return getScreenshotUrlFromPath(`/opengraph${url}`, {}, inputPath);
+				return getScreenshotUrlFromPath(`/opengraph${url}`, {}, slugify(inputPath));
 			}
 
 			return getScreenshotUrlFromPath(`/opengraph${url}`);

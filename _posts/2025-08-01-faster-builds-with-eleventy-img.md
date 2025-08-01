@@ -1,5 +1,5 @@
 ---
-title: One Weird Trick to Reduce Eleventy Image Build Times by 60%
+title: One weird trick to reduce Eleventy Image Build Times by 60%
 tags: eleventy
 ---
 This web site does a fair bit of built-time Image Optimization using the [HTML Transform method provided by the Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/#html-transform). I took a bit of a set-it-and-forget-it approach with the plugin on this site, mostly for my own convenience. My usage looked something like this:
