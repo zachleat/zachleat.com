@@ -5,7 +5,7 @@ import { getImageColors } from "@11ty/image-color";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
-const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20250801" : "_localdev1";
+const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20250802" : "_localdev1";
 
 async function imageFactory(src, options = {}) {
 	options = Object.assign({},{
@@ -178,20 +178,13 @@ export default function(eleventyConfig) {
 		return getScreenshotUrlFromPath(postUrl, options);
 	});
 
-	function isRecentPost(date) {
+	// Used to add eleventy:ignore to opengraph images that aren’t yet available for image optimization (would result in 404 not found opengraph images)
+	eleventyConfig.addFilter("isRecentPost", function(date) {
 		return Math.abs(Date.now() - date.getTime()) < 1000*60*60*24*2;
-	}
-
-	let slugify = eleventyConfig.getFilter("slugify");
-	eleventyConfig.addFilter("isRecentPost", isRecentPost);
+	});
 	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath, date}) {
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./_posts/")) {
-			// pass in inputPath as cache buster for posts in the last 2 days
-			if(isRecentPost(date) && process.env.PRODUCTION_BUILD) {
-				return getScreenshotUrlFromPath(`/opengraph${url}`, {}, slugify(inputPath));
-			}
-
 			return getScreenshotUrlFromPath(`/opengraph${url}`);
 		}
 
