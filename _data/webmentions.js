@@ -58,7 +58,9 @@ async function fetchWebmentions() {
 		page++;
 	}
 
-	console.log( `[zachleat.com] Found ${results.length} total webmentions.` );
+	if(process.env.ELEVENTY_RUN_MODE === "build") {
+		console.log( `[zachleat.com] Found ${results.length} total webmentions.` );
+	}
 
 	return results;
 }

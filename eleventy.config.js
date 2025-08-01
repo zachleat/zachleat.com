@@ -80,7 +80,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginWebc, {
 		components: [
 			"_components/**/*.webc",
-			"npm:@11ty/eleventy-plugin-syntaxhighlight/*.webc",
+			// "npm:@11ty/eleventy-plugin-syntaxhighlight/*.webc",
 		],
 	});
 

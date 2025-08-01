@@ -10,7 +10,7 @@ const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20250724b" : "_localdev1";
 async function imageFactory(src, options = {}) {
 	options = Object.assign({},{
 		widths: ["auto"],
-		formats: process.env.PRODUCTION_BUILD ? ["avif", "jpeg"] : ["auto"],
+		formats: ["avif", "jpeg"],
 		failOnError: false,
 		transformOnRequest: process.env.ELEVENTY_RUN_MODE === "serve",
 		urlPath: "/img/built/",

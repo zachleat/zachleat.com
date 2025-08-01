@@ -5,7 +5,7 @@ function getTwitterAvatarImageOptions(username) {
 		widths: [72],
 		urlPath: "/img/avatars/",
 		outputDir: "./img/avatars/",
-		formats: process.env.PRODUCTION_BUILD ? ["avif", "jpeg"] : ["jpeg"],
+		formats: ["avif", "jpeg"],
 		dryRun: true,
 		cacheDuration: "*",
 		filenameFormat: function(id, src, width, format) {
