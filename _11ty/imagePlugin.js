@@ -130,13 +130,13 @@ export async function getFilteredImageColors(target) {
 }
 
 export default function(eleventyConfig) {
-	let cacheImageOutputDir = ".cache/@11ty/img/";
-	let finalImageOutputDir = path.join(eleventyConfig.directories.output, "img/built/");
+	let TEMP_DIR = ".cache/@11ty/img/";
+	let IMAGE_OUTPUT_DIR = path.join(eleventyConfig.directories.output, "img/built/");
 
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		urlPath: "/img/built/",
 		// go through .cache on build
-		outputDir: process.env.ELEVENTY_RUN_MODE === "build" ? cacheImageOutputDir : finalImageOutputDir,
+		outputDir: process.env.ELEVENTY_RUN_MODE === "build" ? TEMP_DIR : IMAGE_OUTPUT_DIR,
 		failOnError: false,
 		formats: ["svg", "avif", "jpeg"],
 		svgShortCircuit: true,
@@ -153,7 +153,7 @@ export default function(eleventyConfig) {
 	if(process.env.ELEVENTY_RUN_MODE === "build") {
 		// copy .cache to output folder
 		eleventyConfig.on("eleventy.after", () => {
-			fs.cpSync(cacheImageOutputDir, finalImageOutputDir, { recursive: true });
+			fs.cpSync(TEMP_DIR, IMAGE_OUTPUT_DIR, { recursive: true });
 		});
 	}
 
