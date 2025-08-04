@@ -37,25 +37,23 @@ I think this approach is **very reusable** and we’ll likely bundle it into a f
  import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
  export default function(eleventyConfig) {
-+	const IMAGE_OUTPUT_DIR = path.join(eleventyConfig.directories.output, "/img/built/");
-
  	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 +		urlPath: "/img/built/",
-+		outputDir: process.env.ELEVENTY_RUN_MODE === "build" ? ".cache/@11ty/img/" : IMAGE_OUTPUT_DIR,
++		outputDir: ".cache/@11ty/img/",
  		failOnError: false,
  		formats: ["svg", "avif", "jpeg"],
  		svgShortCircuit: true,
  	});
 
-+	if(process.env.ELEVENTY_RUN_MODE === "build") {
-+		eleventyConfig.on("eleventy.after", () => {
-+			fs.cpSync(".cache/@11ty/img/", IMAGE_OUTPUT_DIR, {
-+				recursive: true
-+			});
++	eleventyConfig.on("eleventy.after", () => {
++		fs.cpSync(".cache/@11ty/img/", path.join(eleventyConfig.directories.output, "/img/built/"), {
++			recursive: true
 +		});
-+	}
++	});
  };
 ```
+
+You could improve the above example by restricting the copy step using the [`process.env.ELEVENTY_RUN_MODE` environment variable](https://www.11ty.dev/docs/environment-vars/#eleventy-supplied).
 
 You may also need to [persist `.cache` on your web host](https://www.11ty.dev/docs/deployment/#persisting-cache). This behavior is provided for-free if you’re using Vercel or Cloudflare Pages.
 
