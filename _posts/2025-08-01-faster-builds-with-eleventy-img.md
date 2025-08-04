@@ -1,8 +1,11 @@
 ---
 title: One weird trick to reduce Eleventy Image Build Times by 60%
 tags: eleventy
+iconAttributes:
+  trophy:
+    alt: "(trophy icon)"
 ---
-This web site does a fair bit of built-time Image Optimization using the [HTML Transform method provided by the Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/#html-transform). I took a bit of a set-it-and-forget-it approach with the plugin on this site, mostly for my own convenience. My usage looked something like this:
+This web site does a fair bit of build-time Image Optimization using the [HTML Transform method provided by the Eleventy Image plugin](https://www.11ty.dev/docs/plugins/image/#html-transform). I took a bit of a set-it-and-forget-it approach with the plugin on this site, mostly for my own convenience. My usage looked something like this:
 
 
 ```js
@@ -25,7 +28,7 @@ Eleventy Image includes a [fair number of caches and performance optimizations](
 
 The biggest drawback with the third method is that when you’re building on a deployment server, these environments start with an empty output folder (and thus, an empty disk cache). What can we do to re-use the disk cache and avoid reprocessing unchanged images on each new deploy?
 
-With just a [few lines of configuration code](https://github.com/zachleat/zachleat.com/commit/eead25b5b38431d3b61bfb318a186d3214c45260) to create an intermediate output folder in a location that is persisted between builds (`.cache`), I was able to drop my site’s build time from an embarrasing `9:40` down to a respectable `3:56` {% icon "fas:trophy" %} (for throughput info, the output folder has 7,779 files weighing 492.7 MB).
+With just a [few lines of configuration code](https://github.com/zachleat/zachleat.com/commit/eead25b5b38431d3b61bfb318a186d3214c45260) to create an intermediate output folder in a location that is persisted between builds (`.cache`), I was able to drop my site’s build time from an embarrasing `9:40` down to a respectable `3:56` {% icon "fas:trophy", iconAttributes.trophy %} (for throughput info, the output folder has 7,779 files weighing 492.7 MB).
 
 I think this approach is **very reusable** and we’ll likely bundle it into a future version of Eleventy Image. Until then, you can use it yourself by adding the following lines of configuration:
 
