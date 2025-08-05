@@ -33,6 +33,7 @@ With just a [few lines of configuration code](https://github.com/zachleat/zachle
 I think this approach is **very reusable** and we’ll likely bundle it into a future version of Eleventy Image. Until then, you can use it yourself by adding the following lines of configuration:
 
 ```diff-js
++import path from "node:path";
 +import fs from "node:fs";
  import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
