@@ -9,6 +9,7 @@ layout: layouts/pagealign.liquid
 	- [{% indieAvatar "https://liquidjs.com/" %}Liquid](https://liquidjs.com/)
 	- [WebC](https://www.11ty.dev/docs/languages/webc/)
 - Icons from [{% icon "fab:font-awesome" %}Font Awesome](https://fontawesome.com/)
+- Analytics from [GoatCounter](https://www.goatcounter.com/) (for [popular posts](/web/best-of/))
 - Search from [Pagefind](https://pagefind.app/) from [Liam Bigelow](https://github.com/bglw)
 - [`lite-youtube-embed`](https://github.com/paulirish/lite-youtube-embed) from [Paul Irish](https://www.paulirish.com/)
 - The lovely [Built with Eleventy animated 88×31 badge](https://chrisburnell.com/note/eleventy-animated-88x31/) in the footer was created by Chris Burnell.
@@ -59,9 +60,174 @@ layout: layouts/pagealign.liquid
 	</tbody>
 </table>
 
-## Hardware/Software
+## Software
 
-- My primary desktop web browser is [{% icon "fab:firefox" %}Firefox](https://www.mozilla.org/firefox/).
-- I work on a {% icon "fab:apple" %}Macbook Air M1 (2020, 16 GB memory) with a {% icon "fas:desktop" %} 27″ Dell display (3840×2160).
-- My smartphone is an {% icon "fab:apple" %}iPhone 11 Pro (2019).
-- My primary IDE is [Visual Studio Code](https://vscode.dev/).
+<table>
+	<thead>
+		<tr>
+			<th>Category</th>
+			<th>Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>{% icon "fas:globe" %} Web Browser</td>
+			<td>{% icon "fab:firefox" %} <a href="https://www.firefox.com/">Firefox</a></td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:code" %} Code Editor</td>
+			<td>{% icon "fab:microsoft" %} <a href="https://code.visualstudio.com/">Visual Studio Code</a></td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:code" %}</del> <del>Code Editor</del></td>
+			<td><del>Sublime Text 2</del></td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:code" %}</del> <del>Code Editor</del></td>
+			<td><del>Eclipse IDE</del></td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:code" %}</del> <del>Code Editor</del></td>
+			<td><del>Notepad++</del></td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:code" %}</del> <del>Code Editor</del></td>
+			<td><del>Allaire Homesite</del></td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:code" %}</del> <del>Code Editor</del></td>
+			<td><del>{% icon "fab:microsoft" %}</del> <del>Notepad.exe</del></td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:envelope" %} Email</td>
+			<td><a href="https://www.fastmail.com/">Fastmail</a></td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:note-sticky" %} Note Taking</td>
+			<td>{% icon "fab:apple" %} Apple Notes</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:key" %} Passwords</td>
+			<td>1Password</td>
+		</tr>
+	</tbody>
+</table>
+
+## Hardware
+
+<table>
+	<thead>
+		<tr>
+			<th>Category</th>
+			<th>In Use</th>
+			<th>Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>{% icon "fas:laptop" %} Computer</td>
+			<td><code>2025–</code></td>
+			<td>{% icon "fab:apple" %} Apple MacBook Pro M3 (2023)</td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:laptop" %}</del> <del>Computer</del></td>
+			<td><code>2021–2025</code></td>
+			<td><del>{% icon "fab:apple" %}</del> <del>Apple MacBook Air M1 (2020)</del></td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:desktop" %} External Monitor</td>
+			<td><code>2023–</code></td>
+			<td>27″ Dell S2722QC (16:9, 3840×2160)</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:phone" %} Mobile Device</td>
+			<td><code>2020–</code></td>
+			<td>{% icon "fab:apple" %} iPhone 11 Pro (2019)</td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:phone" %}</del> <del>Mobile Device</del></td>
+			<td><code>2017–2020</code></td>
+			<td><del>{% icon "fab:google" %}</del> <del>Google Pixel 2 (2017)</del></td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:phone" %}</del> <del>Mobile Device</del></td>
+			<td><code>2014–2017</code></td>
+			<td><del>{% icon "fab:apple" %}</del> <del>Apple iPhone 6 (2014)</del></td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:phone" %}</del> <del>Mobile Device</del></td>
+			<td><code>2011–2014</code></td>
+			<td><del>{% icon "fab:apple" %}</del> <del>Apple iPhone 4S (2011)</del></td>
+		</tr>
+		<tr>
+			<td><del>{% icon "fas:phone" %}</del> <del>Mobile Device</del></td>
+			<td><code>2009–2011</code></td>
+			<td><del>Palm Pre (2009) with webOS</del></td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:clock" %} Smart Watch</td>
+			<td><code>2020–</code></td>
+			<td>{% icon "fab:apple" %} Apple Watch Series 6 (2020)</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:keyboard" %} Keyboard</td>
+			<td><code>2024–</code></td>
+			<td>{% icon "fab:apple" %} Apple Magic Keyboard with Touch ID (without Numeric Keypad)</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:computer-mouse" %} Mouse</td>
+			<td><code>2022–</code></td>
+			<td>Logitech MX Master 3S</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:camera" %} Webcam</td>
+			<td><code>2020–</code></td>
+			<td>Logitech C920</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:microphone" %} Microphone</td>
+			<td><code>2023–</code></td>
+			<td>Shure MV7</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:building" %} Desk</td>
+			<td></td>
+			<td>Tresanti adjustable standing desk (Costco)</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:chair" %} Chair</td>
+			<td><code>2015–</code></td>
+			<td>Herman Miller Aeron Chair</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:print" %} Printer</td>
+			<td><code>2017–</code></td>
+			<td>Brother HL-L2340DW Laser Printer (Monochrome)</td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- ### Entertainment
+
+<table>
+	<thead>
+		<tr>
+			<th>Category</th>
+			<th>In Use</th>
+			<th>Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<tr>
+			<td>{% icon "fas:television" %} Streaming</td>
+			<td><code>2010–</code></td>
+			<td>Roku</td>
+		</tr>
+		<tr>
+			<td>{% icon "fas:television" %} Streaming</td>
+			<td><code>2025–</code></td>
+			<td>Apple TV</td>
+		</tr>
+	</tbody>
+</table> -->
