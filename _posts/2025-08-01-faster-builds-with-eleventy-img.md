@@ -22,7 +22,7 @@ export default function(eleventyConfig) {
 
 Eleventy Image includes a [fair number of caches and performance optimizations](https://www.11ty.dev/docs/plugins/image/#build-performance) to make this default behavior pretty fast.
 
-- It uses a memory cache to de-duplicates multiple requests to optimize the same image.
+- It uses a memory cache to de-duplicate multiple requests to optimize the same input image.
 - It uses an on-request image processing engine to avoid processing images during local development.
 - It uses a hash for output file name and checks the target file location to avoid reprocessing images.
 
