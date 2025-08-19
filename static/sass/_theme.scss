@@ -45,8 +45,10 @@ del, s {
 	text-decoration-color: rgba(255,0,0,.6);
 	opacity: .8;
 }
-del .z-icon {
-	opacity: .3;
+del .z-icon,
+del .z-avatar {
+	opacity: .8;
+	filter: grayscale(.4);
 }
 .list-flush.list-flush.list-flush {
 	list-style: none;
@@ -1777,6 +1779,9 @@ html:root {
 .m-8 {
 	margin-top: 2em;
 	margin-bottom: 2em;
+}
+.mi-2 {
+	margin-inline-end: .25em;
 }
 
 /* Font Awesome Icons */
