@@ -21,6 +21,21 @@ layout: layouts/pagealign.liquid
 	</template>
 </is-land>
 
+<script type="module">
+let pagefindEl = document.querySelector("pagefind-search");
+
+if(pagefindEl) {
+	await pagefindEl.scriptPromise;
+	let u = new URL(document.location);
+	let searchEl = document.querySelector(".pagefind-ui__search-input");
+	let term = u.searchParams.get("q");
+	if(term && searchEl) {
+		searchEl.value = term;
+		pagefindEl.pagefindUI.triggerSearch(term);
+	}
+}
+</script>
+
 <article>
 	{% include "about.html" %}
 </article>
