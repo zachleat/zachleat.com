@@ -1,5 +1,5 @@
 ---
-title: A Note from my Late Grandmother about Eleventy
+title: A note from my late Grandmother about Eleventy
 tags: eleventy
 ---
 Our basement flooded this week, so I’ve been cleaning up the mess. In that process, I found a 22-year-old letter from my grandmother (who passed away Christmas 2023) to my mom that had a little Eleventy naming history that some folks might enjoy.
