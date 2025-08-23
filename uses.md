@@ -70,6 +70,9 @@ layout: layouts/pagealign.liquid
 
 <filter-container oninit filter-mode="all">
 <style>
+td code {
+	white-space: nowrap;
+}
 tr:has(del) {
 	background-color: rgba(255, 228, 228, 1);
 	opacity: .85;
