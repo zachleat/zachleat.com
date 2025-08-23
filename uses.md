@@ -70,14 +70,14 @@ layout: layouts/pagealign.liquid
 
 <filter-container oninit filter-mode="all">
 <style>
-.row-deleted {
+tr:has(del) {
 	background-color: rgba(255, 228, 228, 1);
 	opacity: .85;
 }
-.row-deleted .z-icon {
+tr:has(del) .z-icon {
 	opacity: .6;
 }
-.row-deleted .z-avatar {
+tr:has(del) .z-avatar {
 	opacity: .85;
 }
 </style>
@@ -129,6 +129,15 @@ layout: layouts/pagealign.liquid
 		</tr>
 		<tr data-filter-category="software" data-filter-active="yes">
 			<td><strong>Software</strong></td>
+			<td>{% icon "fa:signature" %} Domains</td>
+			<td><code>2024–</code></td>
+			<td>{% indieAvatar "https://www.squarespace.com/" %}Squarespace Domains</td>
+			<td></td>
+			<td>{% icon "fa:money-bill-1" %}</td>
+			<td></td>
+		</tr>
+		<tr data-filter-category="software" data-filter-active="yes">
+			<td><strong>Software</strong></td>
 			<td>{% icon "fa:server" %} Web Sites</td>
 			<td><code>2024–</code></td>
 			<td>{% indieAvatar "https://vercel.com/" %}Vercel</td>
@@ -138,7 +147,10 @@ layout: layouts/pagealign.liquid
 		</tr>
 		<tr data-filter-category="software" data-filter-active="yes">
 			<td><strong>Software</strong></td>
-			<td>{% icon "fa:server" %} Web Sites</td>
+			<td>
+				{% icon "fa:server" %} Web Sites<br>
+				{% icon "fa:signature" %} Domains
+			</td>
 			<td><code>2024–</code></td>
 			<td>{% indieAvatar "https://www.cloudflare.com/" %}Cloudflare</td>
 			<td></td>
@@ -195,7 +207,7 @@ layout: layouts/pagealign.liquid
 			<td><code>2023–</code></td>
 			<td>{% indieAvatar "https://www.dell.com/" %}Dell 27″ S2722QC (16:9, 3840×2160)</td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="consumer" data-filter-active="no">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:music" %} Music</td>
 			<td><code>2022–2024</code></td>
@@ -237,6 +249,13 @@ layout: layouts/pagealign.liquid
 			<td></td>
 			<td></td>
 		</tr>
+		<!-- https://www.zachleat.com/twitter/1310951307063197700/ -->
+		<tr data-filter-category="software" data-filter-active="yes">
+			<td><strong>Software</strong></td>
+			<td>{% icon "fa:code" %} Code Editor</td>
+			<td><code>2020–</code></td>
+			<td><a href="https://code.visualstudio.com/">{% indieAvatar "https://www.microsoft.com/" %}Visual Studio Code</a></td>
+		</tr>
 		<tr data-filter-category="consumer" data-filter-active="yes">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:clock" %} Watch</td>
@@ -258,7 +277,7 @@ layout: layouts/pagealign.liquid
 			<td><code>2020–</code></td>
 			<td>{% indieAvatar "https://logitech.com/" %}Logitech C920</td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="hardware" data-filter-active="no">
+		<tr data-filter-category="hardware" data-filter-active="no">
 			<td><strong>Hardware</strong></td>
 			<td>{% icon "fa:computer-mouse" %} Mouse</td>
 			<td><code>2019–2022</code></td>
@@ -267,7 +286,7 @@ layout: layouts/pagealign.liquid
 			<td></td>
 			<td></td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="hardware" data-filter-active="no">
+		<tr data-filter-category="hardware" data-filter-active="no">
 			<td><strong>Hardware</strong></td>
 			<td>{% icon "fa:computer-mouse" %} Presenter Remote</td>
 			<td><code>2019–2020</code></td>
@@ -309,6 +328,15 @@ layout: layouts/pagealign.liquid
 			<td>{% icon "fa:money-bill-1" %}</td>
 			<td>{% icon "fa:heart" %}</td>
 		</tr>
+		<tr data-filter-category="software" data-filter-active="no">
+			<td><strong>Software</strong></td>
+			<td>{% icon "fa:signature" %} Domains</td>
+			<td><code>2018–2024</code></td>
+			<td><del>{% indieAvatar "https://www.google.com/" %}Google Domains</del> {% icon "fa:skull-crossbones" %}</td>
+			<td></td>
+			<td>{% icon "fa:money-bill-1" %}</td>
+			<td></td>
+		</tr>
 		<tr data-filter-category="software" data-filter-active="yes">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:server" %} Web Sites</td>
@@ -336,7 +364,7 @@ layout: layouts/pagealign.liquid
 			<td>{% icon "fa:money-bill-1" %}</td>
 			<td></td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="consumer" data-filter-active="no">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:phone" %} Mobile</td>
 			<td><code>2017–2020</code></td>
@@ -372,7 +400,7 @@ layout: layouts/pagealign.liquid
 			<td>{% icon "fa:money-bill-1" %}</td>
 			<td>{% icon "fa:heart" %}</td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="consumer" data-filter-active="no">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:clock" %} Watch</td>
 			<td></td>
@@ -402,7 +430,7 @@ layout: layouts/pagealign.liquid
 			<td><code>2015–2023</code></td>
 			<td>Blue Yeti {% icon "fa:circle-up" %}</td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="hardware" data-filter-active="no">
+		<tr data-filter-category="hardware" data-filter-active="no">
 			<td><strong>Hardware</strong></td>
 			<td>{% icon "fa:desktop" %} External Monitor</td>
 			<td><code>2015–2023</code></td>
@@ -411,7 +439,7 @@ layout: layouts/pagealign.liquid
 			<td></td>
 			<td></td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="consumer" data-filter-active="no">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:music" %} Music</td>
 			<td><code>2015–2022</code></td>
@@ -428,7 +456,16 @@ layout: layouts/pagealign.liquid
 			<td>{% icon "fa:briefcase" %}</td>
 			<td></td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="software" data-filter-active="no">
+		<tr data-filter-category="software" data-filter-active="no">
+			<td><strong>Software</strong></td>
+			<td>{% icon "fa:signature" %} Domains</td>
+			<td><code>2014–2025</code></td>
+			<td><del>{% indieAvatar "https://iwantmyname.com/" %}iwantmyname</del></td>
+			<td></td>
+			<td>{% icon "fa:money-bill-1" %}</td>
+			<td></td>
+		</tr>
+		<tr data-filter-category="software" data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:note-sticky" %} Note Taking</td>
 			<td><code>2014–2024</code></td>
@@ -437,7 +474,7 @@ layout: layouts/pagealign.liquid
 			<td></td>
 			<td></td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="consumer" data-filter-active="no">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:phone" %} Mobile</td>
 			<td><code>2014–2017</code></td>
@@ -452,7 +489,7 @@ layout: layouts/pagealign.liquid
 			<td><code>2014–</code></td>
 			<td>{% indieAvatar "https://logitech.com/" %}Logitech Wireless Presenter R400</td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="consumer" data-filter-active="no">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:music" %} Music</td>
 			<td><code>2012–2015</code></td>
@@ -461,13 +498,25 @@ layout: layouts/pagealign.liquid
 			<td>{% icon "fa:money-bill-1" %}</td>
 			<td>{% icon "fa:heart" %}</td>
 		</tr>
+		<tr data-filter-category="software"data-filter-active="no">
+			<td><strong>Software</strong></td>
+			<td>{% icon "fa:code" %} Code Editor</td>
+			<td><code>2011–2020</code></td>
+			<td><del>Sublime Text</del> {% icon "fa:circle-up" %}</td>
+			<td></td>
+			<td></td>
+			<td>{% icon "fa:heart" %}</td>
+		</tr>
 		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:phone" %} Mobile</td>
 			<td><code>2011–2014</code></td>
 			<td><del>{% indieAvatar "https://www.apple.com/" %}Apple iPhone 4S (2011)</del></td>
+			<td></td>
+			<td></td>
+			<td></td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="software" data-filter-active="no">
+		<tr data-filter-category="software" data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:key" %} Passwords</td>
 			<td><code>2010–2017</code></td>
@@ -482,7 +531,7 @@ layout: layouts/pagealign.liquid
 			<td><code>2009–2017</code></td>
 			<td><a href="https://www.google.com/chrome/">{% indieAvatar "https://www.google.com/chrome/" %}Google Chrome</a></td>
 		</tr> -->
-		<tr class="row-deleted" data-filter-category="consumer" data-filter-active="no">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:phone" %} Mobile</td>
 			<td><code>2009–2011</code></td>
@@ -491,9 +540,21 @@ layout: layouts/pagealign.liquid
 			<td></td>
 			<td></td>
 		</tr>
+		<tr data-filter-category="software" data-filter-active="no">
+			<td><strong>Software</strong></td>
+			<td>{% icon "fa:signature" %} Domains</td>
+			<td><code>2009–2013</code></td>
+			<td><del>{% indieAvatar "https://www.yahoo.com/" %}Yahoo Domains</del></td>
+			<td></td>
+			<td>{% icon "fa:money-bill-1" %}</td>
+			<td></td>
+		</tr>
 		<tr data-filter-category="software" data-filter-active="yes">
 			<td><strong>Software</strong></td>
-			<td>{% icon "fa:server" %} Web Sites</td>
+			<td>
+				{% icon "fa:server" %} Web Sites<br>
+				{% icon "fa:signature" %} Domains
+			</td>
 			<td><code>2009–</code></td>
 			<td><a href="https://www.nearlyfreespeech.net/">{% indieAvatar "https://www.nearlyfreespeech.net/" %}nearlyfreespeech.net</a></td>
 			<td></td>
@@ -518,7 +579,7 @@ layout: layouts/pagealign.liquid
 			<td><code>2007–2015</code></td>
 			<td>{% indieAvatar "https://www.dell.com/" %}Dell 24″ 2407WFP (16:10, 1920×1200) {% icon "fa:circle-up" %}</td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="consumer" data-filter-active="no">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:people-arrows" %} Social Network</td>
 			<td><code>2006–2022</code></td>
@@ -527,7 +588,7 @@ layout: layouts/pagealign.liquid
 			<td></td>
 			<td>{% icon "fa:heart-crack" %}</td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="software" data-filter-active="no">
+		<tr data-filter-category="software" data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:newspaper" %} RSS Reader</td>
 			<td><code>2006–2013</code></td>
@@ -536,7 +597,7 @@ layout: layouts/pagealign.liquid
 			<td></td>
 			<td>{% icon "fa:heart" %}</td>
 		</tr>
-		<tr class="row-deleted" data-filter-category="consumer" data-filter-active="no">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:people-arrows" %} Social Network</td>
 			<td><code>2005–2016</code></td>
@@ -565,14 +626,11 @@ layout: layouts/pagealign.liquid
 		</tr>
 	</tbody>
 </table>
-</filter-container>
-
 {% comment %}
 TODO:
 iPad, Kindle
 Roku (2010–), Apple TV (2025)
 donations Wikipedia, EFF
-DNS/Domains
 {% endcomment %}
 
 Haven’t hunted down dates for these yet:
@@ -586,49 +644,39 @@ Haven’t hunted down dates for these yet:
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td><strong>Software</strong></td>
-			<td>{% icon "fa:code" %} Code Editor</td>
-			<td><a href="https://code.visualstudio.com/">{% indieAvatar "https://www.microsoft.com/" %}Visual Studio Code</a></td>
-		</tr>
-		<tr>
-			<td><strong>Software</strong></td>
-			<td>{% icon "fa:code" %} Code Editor</td>
-			<td><del>Sublime Text</del> {% icon "fa:circle-up" %}</td>
-		</tr>
-		<tr>
+		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><del>Eclipse IDE</del> {% icon "fa:circle-up" %}</td>
 		</tr>
-		<tr>
+		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><del>Aptana Studio</del> {% icon "fa:circle-up" %}</td>
 		</tr>
-		<tr>
+		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><del>Notepad++</del> {% icon "fa:circle-up" %}</td>
 		</tr>
-		<tr>
+		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><del>Allaire Homesite</del> {% icon "fa:circle-up" %}</td>
 		</tr>
-		<tr>
+		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><del>{% indieAvatar "https://www.microsoft.com/" %}Notepad.exe</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 {% comment %}
-		<tr>
+		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fab:js" %} JavaScript</td>
 			<td></td>
 			<td>{% indieAvatar "https://www.yahoo.com/" %}Yahoo User Interface (YUI)</td>
 		</tr>
-		<tr>
+		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fab:js" %} JavaScript</td>
 			<td></td>
@@ -637,4 +685,5 @@ Haven’t hunted down dates for these yet:
 {% endcomment %}
 	</tbody>
 </table>
+</filter-container>
 
