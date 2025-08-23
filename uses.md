@@ -162,6 +162,9 @@ tr:has(del) .z-avatar {
 			<td>{% icon "fa:cube" %} 3D Printer</td>
 			<td><code>2024–</code></td>
 			<td>{% indieAvatar "https://bambulab.com/" %}Bambu Lab A1 with AMS lite (4-color)</td>
+			<td></td>
+			<td></td>
+			<td>{% icon "fa:heart" %}</td>
 		</tr>
 		<tr data-filter-category="consumer" data-filter-active="yes">
 			<td><strong>Consumer</strong></td>
@@ -311,7 +314,7 @@ tr:has(del) .z-avatar {
 			<td><a href="https://buttondown.com/">Buttondown</a></td>
 			<td></td>
 			<td>{% icon "fa:money-bill-1" %}</td>
-			<td>{% icon "fa:heart" %}</td>
+			<td></td>
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="no">
 			<td><strong>Hardware</strong></td>
@@ -404,7 +407,7 @@ tr:has(del) .z-avatar {
 			<td><strong>Consumer</strong></td>
 			<td>{% icon "fa:clock" %} Watch</td>
 			<td></td>
-			<td><del>Fitbit Alta (2016)</del></td>
+			<td><del>{% indieAvatar "https://www.google.com/" %}Fitbit Alta (2016)</del></td>
 			<td></td>
 			<td></td>
 			<td></td>
@@ -502,7 +505,7 @@ tr:has(del) .z-avatar {
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><code>2011–2020</code></td>
-			<td><del>Sublime Text</del> {% icon "fa:circle-up" %}</td>
+			<td><del>{% indieAvatar "https://www.sublimetext.com/" %}Sublime Text</del> {% icon "fa:circle-up" %}</td>
 			<td></td>
 			<td></td>
 			<td>{% icon "fa:heart" %}</td>
