@@ -29,7 +29,7 @@ youtube-deep-link:defined [data-offset]:focus {
 }
 </style>
 <script webc:setup>
-async function fetchTranscriptMarkup(captions = []) {
+export async function fetchTranscriptMarkup(captions = []) {
 	let html= [];
 	let index = 0;
 

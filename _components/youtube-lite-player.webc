@@ -1,9 +1,9 @@
 <script webc:setup>
-function getPosterImage(slug, posterSize = "auto") {
+export function getPosterImage(slug, posterSize = "auto") {
 	let videoUrl = `https://youtube.com/watch?v=${slug}`;
 	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(videoUrl)}/${posterSize}/jpeg/`;
 }
-function getLinkUrl(slug, start) {
+export function getLinkUrl(slug, start) {
 	return `https://youtube.com/watch?v=${slug}${start ? `&t=${start}s` : ''}`;
 }
 </script>
