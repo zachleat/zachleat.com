@@ -21,4 +21,4 @@ Thanks again for everything. Love, Mom">
 <img src="./dtm3.jpg" alt="There’s no such number as Eleventy Teen!!! Sure there is! It’s halfway between twoteen an’ leventy seventy! And how much is leventy seventy? It’s a hunnerd times twixty!">
 <img src="./dtm4.jpg" alt="You’re absolutely hopeless!! What’s her problem? She knows when she’s outnumbered.">
 
-_Miss you, Nonnie ❤️_
+_Miss you, Nonnie {% icon "fa:heart" %}_
