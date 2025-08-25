@@ -20,11 +20,11 @@ modules:
 					<div class="tags tags-rail">
 						<a href="/" class="tag{% if page.url == '/' %} active{% endif %}">Home</a>
 						<a href="/about/" class="tag{% if page.url == '/about/' %} active{% endif %}">About</a>
-						<a href="/uses/" class="tag{% if page.url == '/uses/' %} active{% endif %}">Uses</a>
 						<a href="/web/" class="tag{% if page.url == '/web/' %} active{% endif %}">Archives</a>
-						<a href="/search/" class="tag{% if page.url == '/search/' %} active{% endif %} hide-md">Search</a>
-						<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %} hide-md">Talks</a>
+						<a href="/search/" class="tag{% if page.url == '/search/' %} active{% endif %}">{% icon "fa:search" %}<span class="sr-only">Search</span></a>
 						<a href="/web/eleventy/" class="tag{% if page.url == '/web/eleventy/' %} active{% endif %} hide-md">Eleventy</a>
+						<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %} hide-md">Talks</a>
+						<a href="/uses/" class="tag{% if page.url == '/uses/' %} active{% endif %}">Uses</a>
 						{% comment %} <a href="/web/?category=project" class="tag">Projects</a> {% endcomment %}
 						{% comment %} <a href="/web/best-of/" class="tag tag-popular{% if page.url == '/web/best-of/' or page.url == '/web/best-of/total-views/' %} active{% endif %}{% if hasToc == true or hidePostsInSidebar == true %} has-toc{% endif %}">Popular{% icon "fas:fire" %}</a> {% endcomment %}
 						{% comment %} <a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a> {% endcomment %}
