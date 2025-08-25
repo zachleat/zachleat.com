@@ -244,7 +244,7 @@ tr:has(del) .z-avatar {
 			<td><code>2021–2025</code></td>
 			<td>{% indieAvatar "https://www.apple.com/" %}Apple MacBook Air M1 (13″ 2020) {% icon "fa:circle-up" %}</td>
 			<td class="hide-sm"></td>
-			<t class="hide-sm"d></td>
+			<td class="hide-sm"></td>
 			<td>{% icon "fa:heart" %}</td>
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="no">
@@ -614,6 +614,15 @@ tr:has(del) .z-avatar {
 			<td class="hide-sm"></td>
 			<td></td>
 		</tr>
+		<tr data-filter-category="software" data-filter-active="yes">
+			<td class="hide-sm"><strong>Software</strong></td>
+			<td>{% icon "fa:envelope" %} Email</td>
+			<td><code>2004–</code></td>
+			<td>{% indieAvatar "https://www.google.com/" %}Gmail</td>
+			<td class="hide-sm"></td>
+			<td class="hide-sm"></td>
+			<td></td>
+		</tr>
 		<tr data-filter-category="software" data-filter-active="no">
 			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:globe" %} Web Browser</td>
@@ -638,7 +647,9 @@ tr:has(del) .z-avatar {
 TODO:
 iPad, Kindle
 Roku (2010–), Apple TV (2025)
+laptop/backpack/camera/sling bags
 donations Wikipedia, EFF
+Backup storage (Google, Amazon Drive)
 {% endcomment %}
 
 Haven’t hunted down dates for these yet:
