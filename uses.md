@@ -61,12 +61,28 @@ layout: layouts/pagealign.liquid
 
 ## Uses Timeline
 
-**Legend**&#160;
-<em class="nowrap">{% icon "fa:skull-crossbones" %} Died</em>
-<em class="nowrap">{% icon "fa:circle-up" %} Upgraded (not from necessity)</em>
-<em class="nowrap hide-sm">{% icon "fa:briefcase" %} Employer-provided</em>
-<em class="nowrap hide-sm">{% icon "fa:money-bill-1" %} Paid subscription</em>
-<em class="nowrap">{% icon "fa:heart" %} Favorite</em>
+<dl class="flex">
+	<div>
+		<dt>{% icon "fa:skull-crossbones" %}</dt>
+		<dd>Died</dd>
+	</div>
+	<div>
+		<dt>{% icon "fa:circle-up" %}</dt>
+		<dd>Upgraded (not from necessity)</dd>
+	</div>
+	<div class="hide-sm">
+		<dt>{% icon "fa:briefcase" %}</dt>
+		<dd>Employer-provided</dd>
+	</div>
+	<div class="hide-sm">
+		<dt>{% icon "fa:money-bill-1" %}</dt>
+		<dd>Paid subscription</dd>
+	</div>
+	<div>
+		<dt>{% icon "fa:heart" %}</dt>
+		<dd>Favorite</dd>
+	</div>
+</dl>
 
 <filter-container oninit filter-mode="all">
 <style>
@@ -99,8 +115,12 @@ tr:has(del) .z-avatar {
 	(<span data-filter-results="entry/entries" aria-live="polite"></span>)
 	&#160;
 	<label>
-		<input type="checkbox" value="yes" data-filter-key="active">
-		Hide inactive
+		<span class="sr-only">Filter</span>
+		<select data-filter-key="active">
+			<option value="">Active and Inactive</option>
+			<option value="yes">Active only</option>
+			<option value="no">Inactive only</option>
+		</select>
 	</label>
 </form>
 <table>
@@ -116,6 +136,12 @@ tr:has(del) .z-avatar {
 		</tr>
 	</thead>
 	<tbody>
+		<tr data-filter-category="hardware" data-filter-active="yes">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:power-off" %} Power</td>
+			<td><code>2025–</code></td>
+			<td>{% indieAvatar "https://anker.com/" %}Anker Charging Station 140W (A9128){% comment %} 2×USB-C 2×USB-A 2×Power{% endcomment %}</td>
+		</tr>
 		<tr data-filter-category="consumer" data-filter-active="yes">
 			<td class="hide-sm"><strong>Consumer</strong></td>
 			<td>{% icon "fa:gamepad" %} Gaming</td>
@@ -124,9 +150,15 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="yes">
 			<td class="hide-sm"><strong>Hardware</strong></td>
-			<td>{% icon "fa:laptop" %} Computer</td>
+			<td>{% icon "fa:battery-half" %} Battery</td>
 			<td><code>2025–</code></td>
-			<td>{% indieAvatar "https://www.apple.com/" %}Apple MacBook Pro M3 (2023)</td>
+			<td>{% indieAvatar "https://anker.com/" %}Anker 20000mAh 87W (A1383){% comment %}1×USB-C 1×USB-A, built-in USB-C cable{% endcomment %}</td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="yes">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
+			<td><code>2025–</code></td>
+			<td>{% indieAvatar "https://www.apple.com/" %}Apple MacBook Pro M3 (14″ 2023)</td>
 			<td class="hide-sm">{% icon "fa:briefcase" %}</td>
 			<td class="hide-sm"></td>
 			<td></td>
@@ -192,7 +224,7 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="software" data-filter-active="yes">
 			<td class="hide-sm"><strong>Software</strong></td>
-			<td>{% icon "fa:note-sticky" %} Note Taking</td>
+			<td>{% icon "fa:note-sticky" %} Notes</td>
 			<td><code>2024–</code></td>
 			<td>{% indieAvatar "https://www.apple.com/" %}Apple Notes</td>
 		</tr>
@@ -210,7 +242,7 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="yes">
 			<td class="hide-sm"><strong>Hardware</strong></td>
-			<td>{% icon "fa:desktop" %} External Monitor</td>
+			<td>{% icon "fa:display" %} Display</td>
 			<td><code>2023–</code></td>
 			<td>{% indieAvatar "https://www.dell.com/" %}Dell 27″ S2722QC (16:9, 3840×2160)</td>
 		</tr>
@@ -240,7 +272,7 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="no">
 			<td class="hide-sm"><strong>Hardware</strong></td>
-			<td>{% icon "fa:laptop" %} Computer</td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
 			<td><code>2021–2025</code></td>
 			<td>{% indieAvatar "https://www.apple.com/" %}Apple MacBook Air M1 (13″ 2020) {% icon "fa:circle-up" %}</td>
 			<td class="hide-sm"></td>
@@ -249,7 +281,7 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="no">
 			<td class="hide-sm"><strong>Hardware</strong></td>
-			<td>{% icon "fa:laptop" %} Computer</td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
 			<td><code>2020–2021</code></td>
 			<td>{% indieAvatar "https://www.apple.com/" %}Apple MacBook Pro (16″ Intel 2019) {% icon "fa:circle-up" %}</td>
 			<td class="hide-sm">{% icon "fa:briefcase" %}</td>
@@ -346,6 +378,15 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="software" data-filter-active="yes">
 			<td class="hide-sm"><strong>Software</strong></td>
+			<td>{% icon "fa:note-sticky" %} Notes</td>
+			<td><code>2018–</code></td>
+			<td>{% indieAvatar "https://www.notion.com/" %}Notion</td>
+			<td class="hide-sm"></td>
+			<td class="hide-sm">{% icon "fa:money-bill-1" %}</td>
+			<td></td>
+		</tr>
+		<tr data-filter-category="software" data-filter-active="yes">
+			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:server" %} Web Sites</td>
 			<td><code>2018–</code></td>
 			<td><a href="https://www.netlify.com/">{% indieAvatar "https://www.netlify.com/" %}Netlify</a></td>
@@ -379,6 +420,21 @@ tr:has(del) .z-avatar {
 			<td class="hide-sm"></td>
 			<td class="hide-sm"></td>
 			<td></td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
+			<td><code>2017–2020</code></td>
+			<td><del>{% indieAvatar "https://www.apple.com/" %}Apple MacBook Pro (13″ 2017 Touchbar)</del></td>
+			<td class="hide-sm">{% icon "fa:briefcase" %}</td>
+			<td class="hide-sm"></td>
+			<td></td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="yes">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:battery-half" %} Battery</td>
+			<td><code>2017–</code></td>
+			<td>{% indieAvatar "https://anker.com/" %}Anker 20100mAh (AK-A1371012){% comment %}1×USB-C 2×USB-A{% endcomment %}</td>
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="yes">
 			<td class="hide-sm"><strong>Hardware</strong></td>
@@ -439,7 +495,7 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="no">
 			<td class="hide-sm"><strong>Hardware</strong></td>
-			<td>{% icon "fa:desktop" %} External Monitor</td>
+			<td>{% icon "fa:display" %} Display</td>
 			<td><code>2015–2023</code></td>
 			<td><del>{% indieAvatar "https://www.lg.com/" %}LG 34″ 34UM95-P (21:9 Ultrawide, 3440×1440)</del> {% icon "fa:skull-crossbones" %}</td>
 			<td class="hide-sm"></td>
@@ -475,7 +531,7 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="software" data-filter-active="no">
 			<td class="hide-sm"><strong>Software</strong></td>
-			<td>{% icon "fa:note-sticky" %} Note Taking</td>
+			<td>{% icon "fa:note-sticky" %} Notes</td>
 			<td><code>2014–2024</code></td>
 			<td><del>{% indieAvatar "https://www.simplenote.com/" %}Simplenote</del> {% icon "fa:circle-up" %}</td>
 			<td class="hide-sm"></td>
@@ -496,6 +552,15 @@ tr:has(del) .z-avatar {
 			<td>{% icon "fa:computer-mouse" %} Presenter Remote</td>
 			<td><code>2014–</code></td>
 			<td>{% indieAvatar "https://logitech.com/" %}Logitech Wireless Presenter R400</td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
+			<td><code>2012–2017</code></td>
+			<td><del>{% indieAvatar "https://www.apple.com/" %}Apple MacBook Pro (13″ 2012)</del></td>
+			<td class="hide-sm">{% icon "fa:briefcase" %}</td>
+			<td class="hide-sm"></td>
+			<td></td>
 		</tr>
 		<tr data-filter-category="consumer" data-filter-active="no">
 			<td class="hide-sm"><strong>Consumer</strong></td>
@@ -539,6 +604,15 @@ tr:has(del) .z-avatar {
 			<td><code>2009–2017</code></td>
 			<td><a href="https://www.google.com/chrome/">{% indieAvatar "https://www.google.com/chrome/" %}Google Chrome</a></td>
 		</tr> -->
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
+			<td><code>2009–2012</code></td>
+			<td><del>{% indieAvatar "https://www.apple.com/" %}Apple MacBook (<a href="https://en.wikipedia.org/wiki/MacBook_(2006%E2%80%932012)">2009 Polycarbonate</a>)</del></td>
+			<td class="hide-sm"></td>
+			<td class="hide-sm"></td>
+			<td></td>
+		</tr>
 		<tr data-filter-category="consumer" data-filter-active="no">
 			<td class="hide-sm"><strong>Consumer</strong></td>
 			<td>{% icon "fa:phone" %} Mobile</td>
@@ -583,7 +657,7 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="no">
 			<td class="hide-sm"><strong>Hardware</strong></td>
-			<td>{% icon "fa:desktop" %} External Monitor</td>
+			<td>{% icon "fa:display" %} Display</td>
 			<td><code>2007–2015</code></td>
 			<td>{% indieAvatar "https://www.dell.com/" %}Dell 24″ 2407WFP (16:10, 1920×1200) {% icon "fa:circle-up" %}</td>
 		</tr>
@@ -614,6 +688,15 @@ tr:has(del) .z-avatar {
 			<td class="hide-sm"></td>
 			<td></td>
 		</tr>
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
+			<td><code>2005–2009</code></td>
+			<td><del>{% indieAvatar "https://global.fujitsu/" %}Fujitsu P5010 Lifebook (1.1GHz Windows XP)</del></td>
+			<td class="hide-sm"></td>
+			<td class="hide-sm"></td>
+			<td></td>
+		</tr>
 		<tr data-filter-category="software" data-filter-active="yes">
 			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:envelope" %} Email</td>
@@ -631,6 +714,15 @@ tr:has(del) .z-avatar {
 			<td class="hide-sm"></td>
 			<td class="hide-sm"></td>
 			<td>{% icon "fa:heart" %}</td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:display" %} Display</td>
+			<td><code>2002–2007</code></td>
+			<td><del>{% indieAvatar "https://www.viewsonic.com/" %}Viewsonic P95f+ 19″ CRT (4:3, 2048×1536)</del></td>
+			<td class="hide-sm"></td>
+			<td class="hide-sm"></td>
+			<td></td>
 		</tr>
 		<tr data-filter-category="consumer" data-filter-active="yes">
 			<td class="hide-sm"><strong>Consumer</strong></td>
@@ -652,13 +744,14 @@ donations Wikipedia, EFF
 Backup storage (Google, Amazon Drive)
 {% endcomment %}
 
-Haven’t hunted down dates for these yet:
+Haven’t hunted down specific dates for these yet:
 
 <table>
 	<thead>
 		<tr>
 			<th>Category</th>
 			<th>Subcategory</th>
+			<th>~ Date</th>
 			<th>Name</th>
 		</tr>
 	</thead>
@@ -666,42 +759,77 @@ Haven’t hunted down dates for these yet:
 		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
+			<td><code>~2009</code></td>
 			<td><del>Eclipse IDE</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
+			<td><code>~2009</code></td>
 			<td><del>Aptana Studio</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
+			<td><code>~2006</code></td>
 			<td><del>Notepad++</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
+			<td><code>~2000</code></td>
 			<td><del>Allaire Homesite</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
+			<td><code>~1997</code></td>
 			<td><del>{% indieAvatar "https://www.microsoft.com/" %}Notepad.exe</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 {% comment %}
 		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fab:js" %} JavaScript</td>
-			<td></td>
+			<td><code>~2006</code></td>
 			<td>{% indieAvatar "https://www.yahoo.com/" %}Yahoo User Interface (YUI)</td>
 		</tr>
 		<tr data-filter-active="no">
 			<td><strong>Software</strong></td>
 			<td>{% icon "fab:js" %} JavaScript</td>
-			<td></td>
+			<td><code>~2008–2015</code></td>
 			<td>{% indieAvatar "https://jquery.com/" %}jQuery</td>
 		</tr>
 {% endcomment %}
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:computer" %} Desktop</td>
+			<td><code></code></td>
+			<td><del>{% indieAvatar "https://www.amd.com/" %}Custom Build (AMD 2.083GHz Windows 2000)</del></td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:computer-mouse" %} Mouse</td>
+			<td><code></code></td>
+			<td><del>{% indieAvatar "https://logitech.com/" %}Logitech Dual Optical Mouseman</del></td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:computer" %} Desktop</td>
+			<td><code></code></td>
+			<td><del>{% indieAvatar "https://www.amd.com/" %}Custom Build (AMD 1.1GHz)</del></td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
+			<td><code></code></td>
+			<td><del>{% indieAvatar "https://www.gatewayusa.com/" %}Gateway Solo 2550 (550MHz Windows 2000)</del></td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
+			<td><code></code></td>
+			<td><del>{% indieAvatar "https://www.ibm.com/" %}IBM Thinkpad 9547 (166MHz Windows 95)</del></td>
+		</tr>
 	</tbody>
 </table>
 </filter-container>

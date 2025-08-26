@@ -15,6 +15,13 @@ dd ol {
 dd ul.via {
 	font-size: 0.875em; /* 14px /16 */
 }
+dl.flex dd {
+	margin: 0;
+}
+dl > div {
+	display: flex;
+	flex-wrap: nowrap;
+}
 
 /* Inline List */
 .list-inline.list-inline.list-inline {
