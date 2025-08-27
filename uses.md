@@ -108,7 +108,6 @@ tr:has(del) .z-avatar {
 			<option value="hardware">Hardware only</option>
 			<option value="software">Software only</option>
 			<option value="consumer">Consumer only</option>
-			<!-- <option value="philanthropy">Philanthropy only</option> -->
 		</select>
 	</label>
 	&#160;
@@ -128,7 +127,7 @@ tr:has(del) .z-avatar {
 		<tr>
 			<th class="hide-sm">Category</th>
 			<th>Subcategory</th>
-			<th>In Use</th>
+			<th>Active</th>
 			<th>Device Name</th>
 			<th class="hide-sm">{% icon "fa:briefcase" %}</th>
 			<th class="hide-sm">{% icon "fa:money-bill-1" %}</th>
@@ -136,6 +135,15 @@ tr:has(del) .z-avatar {
 		</tr>
 	</thead>
 	<tbody>
+		<tr data-filter-category="software" data-filter-active="yes">
+			<td class="hide-sm"><strong>Software</strong></td>
+			<td>{% icon "fa:hand-holding-dollar" %} Donation</td>
+			<td><code>2025–</code></td>
+			<td><a href="https://www.wikimedia.org/">{% indieAvatar "https://www.wikimedia.org/" %}Wikimedia</a></td>
+			<td class="hide-sm"></td>
+			<td class="hide-sm">{% icon "fa:money-bill-1" %}</td>
+			<td>{% icon "fa:heart" %}</td>
+		</tr>
 		<tr data-filter-category="hardware" data-filter-active="yes">
 			<td class="hide-sm"><strong>Hardware</strong></td>
 			<td>{% icon "fa:power-off" %} Power</td>
@@ -358,9 +366,9 @@ tr:has(del) .z-avatar {
 			<td><code>2018–2024</code></td>
 			<td>{% indieAvatar "https://www.apple.com/" %}Apple Magic Keyboard {% icon "fa:circle-up" %}</td>
 		</tr>
-		<tr data-filter-category="philanthropy" data-filter-active="yes">
-			<td class="hide-sm"><strong>Philanthropy</strong></td>
-			<td>{% icon "fa:server" %} Donation</td>
+		<tr data-filter-category="software" data-filter-active="yes">
+			<td class="hide-sm"><strong>Software</strong></td>
+			<td>{% icon "fa:hand-holding-dollar" %} Donation</td>
 			<td><code>2018–</code></td>
 			<td><a href="https://archive.org/">{% indieAvatar "https://archive.org/" %}Internet Archive</a></td>
 			<td class="hide-sm"></td>
