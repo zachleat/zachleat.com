@@ -135,6 +135,12 @@ tr:has(del) .z-avatar {
 		</tr>
 	</thead>
 	<tbody>
+		<tr data-filter-category="hardware" data-filter-active="yes">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:building" %} Desk</td>
+			<td><code>2025–</code></td>
+			<td>{% indieAvatar "https://www.flexispot.com/" %}Flexispot E7 Plus Adjustable Height Desk</td>
+		</tr>
 		<tr data-filter-category="software" data-filter-active="yes">
 			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:hand-holding-dollar" %} Donation</td>
@@ -326,6 +332,12 @@ tr:has(del) .z-avatar {
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="no">
 			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:building" %} Desk</td>
+			<td><code>2019–2025</code></td>
+			<td>Tresanti adjustable standing desk (Costco) {% icon "fa:circle-up" %}</td>
+		</tr>
+		<tr data-filter-category="hardware" data-filter-active="no">
+			<td class="hide-sm"><strong>Hardware</strong></td>
 			<td>{% icon "fa:computer-mouse" %} Mouse</td>
 			<td><code>2019–2022</code></td>
 			<td><del>{% indieAvatar "https://logitech.com/" %}Logitech G903</del> {% icon "fa:skull-crossbones" %}</td>
@@ -479,12 +491,6 @@ tr:has(del) .z-avatar {
 			<td class="hide-sm"></td>
 			<td class="hide-sm"></td>
 			<td></td>
-		</tr>
-		<tr data-filter-category="hardware" data-filter-active="yes">
-			<td class="hide-sm"><strong>Hardware</strong></td>
-			<td>{% icon "fa:building" %} Desk</td>
-			<td></td>
-			<td>Tresanti adjustable standing desk (Costco)</td>
 		</tr>
 		<tr data-filter-category="consumer" data-filter-active="yes">
 			<td class="hide-sm"><strong>Consumer</strong></td>
