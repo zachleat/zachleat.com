@@ -54,5 +54,5 @@ Paired nicely with the other amazing talks at SmashingConf, the event was held a
 )
 * [CSS Font Loading API](http://dev.w3.org/csswg/css-font-loading/)
 * Font Loading Polyfills: [FontFaceOnload](http://github.com/zachleat/fontfaceonload) and [FontFaceObserver](http://github.com/bramstein/fontfaceobserver/)
-* [fontfamily.io, Compatibility Tables for Default Installed Fonts](http://fontfamily.io)
+* [Font Family Reunion, Compatibility Tables for Default Installed Fonts](https://fontfamily.zachleat.dev)
 * [FFFFallback](http://ffffallback.com/)

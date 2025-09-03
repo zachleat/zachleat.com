@@ -44,7 +44,7 @@ Skip to 3:43 to see me attempt to trick a crowd of 300 people into doing the fla
 * Use [FontSquirrel WebFont Generator for Custom Subsetting](http://www.fontsquirrel.com/tools/webfont-generator)
 * [CSS Font Loading API](http://www.w3.org/TR/css-font-loading/)
 * [FontFaceOnload](https://github.com/zachleat/fontfaceonload), a polyfill for font load events.
-* [Font Family Reunion](http://fontfamily.io/), compatibility tables for default installed fonts.
+* [Font Family Reunion](https://fontfamily.zachleat.dev), compatibility tables for default installed fonts.
 * [`font-rendering` CSS Property](https://github.com/KenjiBaheux/css-font-rendering)
 * [Unify, compatibility tables for Unicode characters](http://unicode.johnholtripley.co.uk/)
 * [A Font Garde](https://github.com/filamentgroup/a-font-garde), how to do Icon Fonts correctly.

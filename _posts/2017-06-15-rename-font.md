@@ -8,7 +8,7 @@ tags:
 tweet: https://twitter.com/zachleat/status/880392657847160832
 ---
 
-Are you tired of developers abusing the smooth traditionalism of Helvetica? Do you wish your web page was a little bit more fun? Do you also want to avoid discussing things with your peers? Well, do I have some code for you. Add this little block into your project and it will globally alias (rename) Helvetica to Comic Sans MS (and Chalkboard SE, [browser support](http://fontfamily.io/Comic_Sans_MS,Chalkboard_SE)). _(Yes, I know I recently wrote a blog post about [anti-aliasing](/web/font-smooth/)—that’s a different thing.)_
+Are you tired of developers abusing the smooth traditionalism of Helvetica? Do you wish your web page was a little bit more fun? Do you also want to avoid discussing things with your peers? Well, do I have some code for you. Add this little block into your project and it will globally alias (rename) Helvetica to Comic Sans MS (and Chalkboard SE, [browser support](https://fontfamily.zachleat.dev/Comic_Sans_MS,Chalkboard_SE)). _(Yes, I know I recently wrote a blog post about [anti-aliasing](/web/font-smooth/)—that’s a different thing.)_
 
 ``` css
 @​font-face {
@@ -105,7 +105,7 @@ _Update: I discovered later that the [System Font CSS](#system-font-css) project
 
 ## Live Demos
 
-*Note: The fallbacks in the demos below are mapped to `fantasy`. If you see `fantasy`, the alias didn’t work. On Apple products (where San Francisco is likely to be available) [`fantasy` renders as Papyrus](http://fontfamily.io/fantasy).*
+*Note: The fallbacks in the demos below are mapped to `fantasy`. If you see `fantasy`, the alias didn’t work. On Apple products (where San Francisco is likely to be available) [`fantasy` renders as Papyrus](https://fontfamily.zachleat.dev/fantasy).*
 
 ### -apple-system
 

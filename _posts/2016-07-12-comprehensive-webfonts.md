@@ -154,7 +154,7 @@ I won’t go into this approach too much because, well, it isn’t technically a
 
 #### Cons
 
-* Limited availability. Very few system fonts are available cross platform. Check [fontfamily.io](http://fontfamily.io/) to see if a system font has acceptable browser support for your needs.
+* Limited availability. Very few system fonts are available cross platform. Check [Font Familiy Reunion](https://fontfamily.zachleat.dev) to see if a system font has acceptable browser support for your needs.
 
 #### Verdict: Sure, I guess, but I wouldn’t be excited about it.
 

@@ -42,7 +42,7 @@ The inline comments on each property are a great compatibility table for CSS ven
 
 Has some overlap with *Can I Use* on font formats and CSS properties, The State of Web Type really shines for its tables on OpenType Features, specifically the many different options available to `font-feature-settings`.
 
-## [Font Family Reunion](http://fontfamily.io/)
+## [Font Family Reunion](https://fontfamily.zachleat.dev)
 
 <span class="tag">CSS</span> *—[Zach Leatherman](http://zachleat.com/)*
 

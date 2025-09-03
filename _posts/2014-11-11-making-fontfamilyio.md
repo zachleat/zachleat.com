@@ -1,5 +1,5 @@
 ---
-title: The Making of fontfamily.io
+title: The Making of Font Family Reunion
 categories:
   - presentations
   - font-loading
@@ -12,6 +12,7 @@ metadata:
     country: USA
 medialength: 19 min
 ---
+**Update (September 2025): I let the `fontfamily.io` domain expire. You can find [the site at fontfamily.zachleat.dev now](https://fontfamily.zachleat.dev/)**.
 
 ## Video
 
