@@ -55,10 +55,10 @@ layout: layouts/pagealign.liquid
 	- `opengraph.11ty.dev`
 	- `screenshot.11ty.dev`
 	- `sparkline.11ty.dev`
-1. [`eleventy.dev`](https://eleventy.dev/) (2020–): Redirect
-1. `11ty.io` (2018–): Redirect, [Deprecated](https://www.11ty.dev/blog/moving-house/)
 1. `11ty.app` (2024–)
 	- `screenshot.11ty.app`
+1. [`eleventy.dev`](https://eleventy.dev/) (2020–): Redirect
+1. `11ty.io` (2018–): Redirect, [Deprecated](https://www.11ty.dev/blog/moving-house/)
 1. [`esif.dev`](https://esif.dev/) (2023–): [Blog post](/web/esif/)
 1. [`speedlify.dev`](https://speedlify.dev/) (2020–): [Blog post](/web/speedlify/)
 1. [`fontspeed.dev`](https://fontspeed.dev/) (2019–): Parked

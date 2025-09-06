@@ -70,7 +70,7 @@
 	overflow: hidden;
 }
 
-/* Excluded from builds */
+/* This code is --serve only */
 [data-eleventy-runmode="serve"] carou-scroll img[alt*="Slide "] {
 	border: 1em solid red;
 }
