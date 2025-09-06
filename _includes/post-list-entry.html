@@ -3,9 +3,10 @@
 {%- capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
 {%- if currentyear != year and ignoreYear != "true" %}
 <li class="subhed" id="{{ currentyear }}"><span class="spark">
-		<span>{{ currentyear }}</span>
+		<span class="subhed-year">{{ currentyear }}</span>
+		{% if listItems %} <span class="subhed-count" data-filter-category data-filter-results-exclude>×{{ listItems | getPostCountForYear: currentyear }}</span>{% endif %}
 		<span data-filter-category data-filter-results-exclude><img src="https://v1.sparkline.11ty.dev/80x16/{{ listItems | getMonthlyPostCount: currentyear }}/{{ '#94b388' | encodeUriComponent }}/" width="80" height="16" alt="Sparkline representing frequency of posts written by month in {{ currentyear }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></span>
-	</span>{% if listItems %} <span class="subhed-count" data-filter-category data-filter-results-exclude>×{{ listItems | getPostCountForYear: currentyear }}</span>{% endif %}</li>
+	</span></li>
 	{%- capture year %}{{currentyear}}{% endcapture %}
 	{%- assign currentyearpostcount = 0 %}
 {%- endif %}

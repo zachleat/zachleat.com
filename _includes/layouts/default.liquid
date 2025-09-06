@@ -17,20 +17,19 @@ modules:
 		<aside>
 			<nav role="navigation">
 				<div class="navigation">
-					<div class="tags tags-rail">
-						<a href="/" class="tag{% if page.url == '/' %} active{% endif %}">Home</a>
-						<a href="/about/" class="tag{% if page.url == '/about/' %} active{% endif %}">About</a>
-						<a href="/web/" class="tag{% if page.url == '/web/' %} active{% endif %}">Archives</a>
-						<a href="/search/" class="tag{% if page.url == '/search/' %} active{% endif %}">{% icon "fa:search" %}<span class="sr-only">Search</span></a>
-						<a href="/web/eleventy/" class="tag{% if page.url == '/web/eleventy/' %} active{% endif %} hide-md">Eleventy</a>
-						<a href="/web/speaking/" class="tag{% if page.url == '/web/speaking/' %} active{% endif %} hide-md">Talks</a>
-						<a href="/uses/" class="tag{% if page.url == '/uses/' %} active{% endif %}">Uses</a>
-						{% comment %} <a href="/web/?category=project" class="tag">Projects</a> {% endcomment %}
-						{% comment %} <a href="/web/best-of/" class="tag tag-popular{% if page.url == '/web/best-of/' or page.url == '/web/best-of/total-views/' %} active{% endif %}{% if hasToc == true or hidePostsInSidebar == true %} has-toc{% endif %}">Popular{% icon "fas:fire" %}</a> {% endcomment %}
-						{% comment %} <a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a> {% endcomment %}
-						{% comment %} <a href="/web/citations/" class="tag{% if page.url == '/web/citations/' %} active{% endif %}">Citations</a> {% endcomment %}
-						{% comment %} <a href="/web/highlights/" class="tag highlight{% if page.url == '/web/highlights/' %} active{% endif %}" title="Highlight"><span class="highlight-label">Highlights </span><span class="highlight-star" aria-hidden="true">★</span></a> {% endcomment %}
-					</div>
+					<ul class="list-flush tags-rail-links m-8">
+						<li><a href="/" {% if page.url == '/' %}class="active"{% endif %}>{% icon "fa:house" %}Home</a></li>
+						<li><a href="/search/" {% if page.url == '/search/' %}class="active"{% endif %}>{% icon "fa:search" %}Search</a></li>
+						<li><a href="/about/" {% if page.url == '/about/' %}class="active"{% endif %}>About</a></li>
+						<li><a href="/web/" {% if page.url == '/web/' %}class="active"{% endif %}>Archives</a></li>
+						<li><a href="/uses/" {% if page.url == '/uses/' %}class="active"{% endif %}>Uses</a></li>
+						<li><a href="/domains/" {% if page.url == '/domains/' %}class="active"{% endif %}>Domains</a></li>
+						<li class="hide-md"><a href="/web/speaking/" {% if page.url == '/web/speaking/' %}class="active"{% endif %}>Speaking</a></li>
+						<li class="hide-md"><a href="/web/eleventy/" {% if page.url == '/web/eleventy/' %}class="active"{% endif %}>Eleventy</a></li>
+						{% comment %} <li><a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a></li> {% endcomment %}
+						{% comment %} <li><a href="/web/citations/" class="tag{% if page.url == '/web/citations/' %} active{% endif %}">Citations</a></li> {% endcomment %}
+					</ul>
+
 					{% include "social.html" %}
 
 					<a href="/web/" class="spark hide-singlecol">
@@ -57,16 +56,6 @@ modules:
 							<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
 							{% endfor %}
 						</div>
-
-						{%- if collections.upcomingTalks | size %}
-						<div>
-							<div class="top5"><a href="/web/speaking/">Upcoming Talks</a></div>
-
-							{%- for post in collections.upcomingTalks %}
-							<a href="{{ post.data.external_url | default: post.url }}" class="tag tag-popular-rail tag-borderless" style="text-align: left">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
-							{%- endfor %}
-						</div>
-						{%- endif %}
 					{%- endif %}
 					</div>
 				</div>

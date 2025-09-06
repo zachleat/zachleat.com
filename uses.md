@@ -1,5 +1,5 @@
 ---
-title: Here are a Few of my Tools
+title: I Never Blame My Tools
 layout: layouts/pagealign.liquid
 ---
 ## Site Colophon
@@ -59,7 +59,7 @@ layout: layouts/pagealign.liquid
 	</tbody>
 </table>
 
-## Uses Timeline
+## Timeline <span id="uses-timeline"></span>
 
 <dl class="flex">
 	<div>

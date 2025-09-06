@@ -1,0 +1,57 @@
+:root {
+	--z-border-radius-1: .25em;
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+
+	/* Force scrollbar */
+	overflow-y: scroll;
+}
+html {
+	background-color: #fff;
+	color: #222;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+img,
+video {
+	max-width: 100%;
+	border: none;
+}
+img[width][height] {
+	height: auto;
+}
+hr {
+	border: 1px solid #e9e9e9;
+	width: 90%;
+	margin: 2em auto;
+}
+abbr {
+	text-decoration: none;
+}
+del, s {
+	text-decoration-thickness: 0.25em;
+	text-decoration-color: rgba(255,0,0,.6);
+	opacity: .8;
+}
+del .z-icon,
+del .z-avatar {
+	opacity: .8;
+	filter: grayscale(.2);
+	color: rgba(255,0,0,.6);
+}
+
+/* Forms */
+input,
+button {
+	font-size: 1em;
+	font-family: inherit;
+}

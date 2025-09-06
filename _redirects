@@ -42,7 +42,6 @@
 /dump/* https://zachleat.nfshost.com/dump/:splat 200!
 
 # Old projects redirects
-/Projects/ /projects/ 301!
 /Projects/* /projects/:splat 301!
 /parseintimate/ /archive/parseintimate/ 301!
 /busyness-sample/ /archive/busyness-sample/ 301!

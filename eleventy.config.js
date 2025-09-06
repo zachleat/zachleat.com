@@ -436,13 +436,6 @@ export default async function(eleventyConfig) {
 			})
 	});
 
-	eleventyConfig.addCollection("upcomingTalks", function(collection) {
-		return getPosts(collection).reverse().filter(item => {
-			let tags = item.data?.tags || [];
-			return tags.includes("future-event") && tags.includes("speaking");
-		});
-	});
-
 	eleventyConfig.addCollection("feedPosts", function(collection) {
 		return getPosts(collection).reverse().filter(function(item) {
 			return !item.data.tags ||
@@ -652,5 +645,10 @@ export const config = {
 		"11ty.js",
 	],
 	htmlTemplateEngine: "liquid",
-	markdownTemplateEngine: "liquid"
+	markdownTemplateEngine: "liquid",
+
+	// disables pkg. imported in global data
+	keys: {
+		package: false,
+	}
 };

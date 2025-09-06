@@ -61,17 +61,13 @@
 @media (max-width: config.$oneColLayoutMaxWidth) {
 	.rail .navigation {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		gap: 1em;
 		margin: 1em auto 0;
 	}
-	.rail .social {
-		justify-content: flex-end;
-	}
 	.rail .navigation .tags a[href] {
-		padding-left: .75em;
-		padding-right: .75em;
+		display: inline-flex;
 		white-space: nowrap;
 	}
 }
