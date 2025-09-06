@@ -1237,6 +1237,11 @@ a[href].tag-inline:not(.tag-borderless),
 	letter-spacing: 1px;
 	font-weight: 900;
 }
+@media (min-width: config.$twoColLayoutMinWidth) {
+	.tags-rail-links {
+		margin-block: 2em;
+	}
+}
 @media (max-width: config.$oneColLayoutMaxWidth) {
 	.tags-rail-links {
 		display: flex;
