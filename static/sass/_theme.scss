@@ -775,7 +775,7 @@ table-saw :is(th, td) {
 	margin: 0 0 .1em 0;
 	vertical-align: bottom;
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
-	font-variation-settings: "wdth" 100, "TYTE" -100, "NOTC" 0;
+	font-variation-settings: "wdth" 80, "TYTE" 0, "NOTC" 1;
 	font-weight: 900;
 	line-height: 1;
 	color: #444;
@@ -1226,25 +1226,31 @@ a[href].tag-inline:not(.tag-borderless),
 .tags-rail-links a[href] {
 	display: inline-flex;
 	align-items: center;
-	padding: .25em 0;
+	padding: .4em .5em;
 	font-family: system-ui, sans-serif;
 	font-weight: 500;
 	letter-spacing: .5px;
+	border-radius: .25em;
 }
 .tags-rail-links a[href].active {
-	letter-spacing: 1px;
-	font-weight: 900;
-}
-@media (min-width: config.$twoColLayoutMinWidth) {
-	.tags-rail-links {
-		margin-block: 2em;
-	}
+	color: #f4f4f4;
+	background-color: #444;
 }
 @media (max-width: config.$oneColLayoutMaxWidth) {
 	.tags-rail-links {
 		display: flex;
 		flex-wrap: wrap;
-		gap: .25em 1em;
+		gap: .25em .5em;
+	}
+}
+@media (min-width: config.$twoColLayoutMinWidth) {
+	.tags-rail-links {
+		margin-block: 2em;
+		margin-inline-start: -.5em;
+	}
+	.tags-rail-links a[href].active {
+		letter-spacing: 1px;
+		font-weight: 900;
 	}
 }
 
