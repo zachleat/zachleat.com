@@ -1,5 +1,5 @@
 ---
-title: I Can Stop Buying Domains Any Time I Want
+title: ICANN Stop Buying Domains Any Time I Want
 layout: layouts/pagealign.liquid
 ---
 ## Domains and Subdomains
@@ -92,3 +92,5 @@ layout: layouts/pagealign.liquid
 1. ~~`twittertd.com`~~: Idea-only
 
 _(×2 entries have been redacted for personal reasons)_
+
+_Credit to [Jim Nielsen for the page title](https://bsky.app/profile/jim-nielsen.com/post/3ly6gk2fzjc2f)._
