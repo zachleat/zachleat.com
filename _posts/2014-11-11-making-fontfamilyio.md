@@ -27,4 +27,4 @@ medialength: 19 min
 
 [Slides on Speaker Deck](https://speakerdeck.com/zachleat/how-and-why-i-built-fontfamily-dot-io) (44 slides)
 
-[**Originally posted on nebraskajs.com.**](http://nebraskajs.com/2015/fontfamilyio/)
+[**Originally posted on nebraskajs.com.**](https://web.archive.org/web/20240518010357/http://nebraskajs.com/2015/fontfamilyio/)
