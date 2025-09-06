@@ -577,7 +577,7 @@ h5 {
 	font-size: 2.3em;
 	font-size: var(--fluid-type, 2.3em);
 	line-height: 1;
-	font-variation-settings: "wdth" 96, "TYTE" -80, "NOTC" 1;
+	font-variation-settings: "wdth" 96, "TYTE" -50, "NOTC" 1;
 	font-weight: 900;
 	margin: 0 0 .5em;
 	text-wrap: balance;
@@ -765,22 +765,20 @@ table-saw :is(th, td) {
 	display: block;
 	margin-bottom: .25em;
 	text-decoration: none;
+	@media (max-width: config.$oneColLayoutMaxWidth) {
+		text-align: center;
+	}
 }
-.rail h1,
 .rail .hed-h1 {
 	font-size: 1.4em;
 	display: inline-block;
 	margin: 0 0 .1em 0;
 	vertical-align: bottom;
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
-	font-variation-settings: "wdth" 100, "TYTE" -50, "NOTC" 0;
+	font-variation-settings: "wdth" 100, "TYTE" -100, "NOTC" 0;
 	font-weight: 900;
 	line-height: 1;
 	color: #444;
-
-	@media (max-width: config.$oneColLayoutMaxWidth) {
-		text-align: center;
-	}
 }
 .rail .my-avatar {
 	width: 1.1875em; /* 19px /16 */
@@ -874,7 +872,7 @@ table-saw :is(th, td) {
 }
 .subhed-year {
 	font-family: Hex Franklin Tight, system-ui, Lato, sans-serif;
-	letter-spacing: 2px;
+	font-variation-settings: "wdth" 60, "TYTE" 0, "NOTC" 0;
 	font-size: 2.736842105263em; /* 52px /19 */
 }
 .subhed-count {
