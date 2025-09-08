@@ -72,7 +72,7 @@ layout: layouts/pagealign.liquid
 1. [`nebraskajs.com`](https://nebraskajs.com/) (2012?–)
 1. [`f2em.com`](https://f2em.com/) (2012–): [Blog post](/web/manifesto/)
 1. [`alarmd.com`](https://alarmd.com/) (2007–): [Blog post](/web/wake-up-to-youtube-on-my-internet-alarm-clock/)
-1. ~~`votewithyourtweet.com`~~ (2022–2023): [Archive](https://web.archive.org/web/20230203192146/https://votewithyourtweet.com/)
+1. ~~`votewithyourtweet.com`~~ (2022–2023): [Blost post](/web/vote-with-your-tweet/), [Archive](https://web.archive.org/web/20230203192146/https://votewithyourtweet.com/)
 1. ~~`myspacebook.info`~~ (2019–2020): for a [Talk](/web/own-your-content/)
 1. ~~`donald-who.com`~~ (2017–2019): [Archive](https://web.archive.org/web/20181114201026/http://donald-who.com/)
 1. ~~`fontfamily.io`~~ (2014–2025): [Blog post](/web/font-family-reunion/). Moved to [`fontfamily.zachleat.dev`](https://fontfamily.zachleat.dev/)
