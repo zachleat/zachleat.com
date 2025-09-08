@@ -49,12 +49,13 @@ layout: layouts/pagealign.liquid
 	- [`is-land.11ty.dev`](https://is-land.11ty.dev/)
 	- [`api-explorer.11ty.dev`](https://api-explorer.11ty.dev/)
 	- [`twitter.11ty.dev`](https://twitter.11ty.dev/)
-	- `generator.11ty.dev`
+	- `generator.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/generator/)
 	- `image.11ty.dev`
-	- `indieweb-avatar.11ty.dev`
-	- `opengraph.11ty.dev`
-	- `screenshot.11ty.dev`
-	- `sparkline.11ty.dev`
+	- `indieweb-avatar.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/indieweb-avatar/)
+	- `opengraph.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/opengraph/)
+	- `screenshot.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/screenshots/)
+	- `sparkline.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/builtwith/)
+	- `builtwith.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/sparklines/)
 1. `11ty.app` (2024–)
 	- `screenshot.11ty.app`
 1. [`eleventy.dev`](https://eleventy.dev/) (2020–): Redirect
