@@ -873,7 +873,7 @@ table-saw :is(th, td) {
 .subhed-year {
 	font-family: Hex Franklin Tight, system-ui, Lato, sans-serif;
 	font-variation-settings: "wdth" 60, "TYTE" 0, "NOTC" 0;
-	font-size: 2.736842105263em; /* 52px /19 */
+	font-size: 4.736842105263em; /* 90px /19 */
 }
 .subhed-count {
 	color: #555;
@@ -1488,7 +1488,7 @@ select[data-filter-key] {
 .spark {
 	display: flex;
 	gap: 1em;
-	align-items: center;
+	align-items: baseline;
 	text-decoration: none;
 	text-transform: none;
 	font-weight: 700;
@@ -1496,6 +1496,7 @@ select[data-filter-key] {
 .rail .spark {
 	gap: .5em;
 	margin-top: 2em;
+	align-items: center;
 }
 .spark-img.spark-img {
 	padding: 0;

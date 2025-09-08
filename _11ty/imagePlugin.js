@@ -83,11 +83,11 @@ function getScreenshotUrl(fullUrl, options = {}) {
 	}
 	return `https://screenshot.11ty.app/${encodeURIComponent(fullUrl)}/opengraph/${suffix}`;
 }
-function getScreenshotUrlFromPath(path, options, cacheBusterOverride) {
+function getScreenshotUrlFromPath(path, options) {
 	let u = new URL(getFullUrlFromPath(path));
 
 	// bust cache for the screenshot target URL, useful when the open graph images need a refresh
-	u.searchParams.set("cache", cacheBusterOverride || CACHEBUSTER);
+	u.searchParams.set("cache", CACHEBUSTER);
 
 	return getScreenshotUrl(u.toString(), options);
 }
