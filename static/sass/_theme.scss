@@ -487,7 +487,7 @@ blockquote strong {
 
 /* Headers */
 h1, h2, h3, .hed-h1, .hed-h2, .hed-h3 {
-	font-family: Hex Franklin Tight, system-ui, Lato, sans-serif;
+	font-family: Hex Franklin Tight, system-ui, sans-serif;
 	font-variation-settings: "wdth" 100, "TYTE" -35, "NOTC" 1;
 	font-weight: 900;
 	margin-top: 1.4em;
@@ -871,7 +871,7 @@ table-saw :is(th, td) {
 	align-items: center;
 }
 .subhed-year {
-	font-family: Hex Franklin Tight, system-ui, Lato, sans-serif;
+	font-family: Hex Franklin Tight, system-ui, sans-serif;
 	font-variation-settings: "wdth" 60, "TYTE" 0, "NOTC" 0;
 	font-size: 4.736842105263em; /* 90px /19 */
 }
@@ -1217,8 +1217,9 @@ a[href].tag-inline:not(.tag-borderless),
 }
 
 .tags-rail-links {
-	text-transform: uppercase;
-	font-size: 1em; /* 16px /16 */
+	font-size: 1.25em; /* 20px /16 */
+	font-family: system-ui, sans-serif;
+	font-weight: 500;
 }
 .tags-rail-links .z-icon {
 	margin-inline-end: .4em;
@@ -1227,25 +1228,32 @@ a[href].tag-inline:not(.tag-borderless),
 	display: inline-flex;
 	align-items: center;
 	padding: .4em .5em;
-	font-family: system-ui, sans-serif;
-	font-weight: 500;
-	letter-spacing: .5px;
 	border-radius: .25em;
 }
 .tags-rail-links a[href].active {
 	color: #f4f4f4;
 	background-color: #444;
+	font-family: Hex Franklin Tight, system-ui, sans-serif;
+	font-variation-settings: "wdth" 80, "TYTE" 0, "NOTC" 1;
+	text-transform: uppercase;
 }
 @media (max-width: config.$oneColLayoutMaxWidth) {
 	.tags-rail-links {
 		display: flex;
 		flex-wrap: wrap;
 		gap: .25em .5em;
+		font-family: Hex Franklin Tight, system-ui, sans-serif;
+		font-variation-settings: "wdth" 80, "TYTE" 0, "NOTC" 1;
+		text-transform: uppercase;
+	}
+	.tags-rail-links .z-icon {
+		width: 1em;
+		height: 1em;
 	}
 }
 @media (min-width: config.$twoColLayoutMinWidth) {
 	.tags-rail-links {
-		margin-block: 2em;
+		margin-block: 1em 2em;
 		margin-inline-start: -.5em;
 	}
 	.tags-rail-links a[href].active {
