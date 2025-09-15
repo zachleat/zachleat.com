@@ -762,53 +762,45 @@ table-saw :is(th, td) {
 
 /* Logo and Rail */
 .rail .header {
-	display: block;
-	margin-bottom: .25em;
+	display: flex;
+	gap: .35em;
+	align-items: top;
+	justify-content: space-between;
+	margin: 0;
 	text-decoration: none;
+
 	@media (max-width: config.$oneColLayoutMaxWidth) {
-		text-align: center;
+		justify-content: center;
 	}
 }
 .rail .hed-h1 {
-	font-size: 1.4em;
-	display: inline-block;
-	margin: 0 0 .1em 0;
+	margin: 0;
+	padding: 0;
+	font-size: 1.6875em; /* 27px /16 */
 	vertical-align: bottom;
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
-	font-variation-settings: "wdth" 80, "TYTE" 0, "NOTC" 1;
+	font-variation-settings: "wdth" 65, "TYTE" 0, "NOTC" 1;
 	font-weight: 900;
 	line-height: 1;
 	color: #444;
+	text-transform: uppercase;
 }
 .rail .my-avatar {
-	width: 1.1875em; /* 19px /16 */
-	height: 1.1875em; /* 19px /16 */
-	margin-right: .5em;
+	--avatar-size: 1.75em; /* 28px /16 */
+	min-width: var(--avatar-size);
+	width: var(--avatar-size); /* 56px /16 */
+	height: var(--avatar-size); /* 56px /16 */
 	background-color: config.$primaryColor;
 	color: transparent;
 	margin-bottom: -2px;
-	border-radius: var(--z-border-radius-1);
+	border-radius: 0.75em;
+
+	@media (min-width: config.$twoColLayoutMinWidth) {
+		--avatar-size: 3.5em; /* 56px /16 */
+	}
 }
 .rail .navigation {
 	margin: 1em 0 0;
-}
-@supports (display: grid) {
-	@media (min-width: config.$twoColLayoutMinWidth) {
-		.rail .header {
-			@include mixins.clearfix;
-		}
-		.rail .my-avatar {
-			width: 2.75em; /* 44px /16 */
-			height: 2.75em; /* 44px /16 */
-			float: left;
-			margin-right: 0.75em; /* 12px /16 */
-		}
-		.rail h1,
-		.rail .hed-h1 {
-			float: left;
-			width: 160px;
-		}
-	}
 }
 
 /* Posts and Content */
@@ -872,7 +864,7 @@ table-saw :is(th, td) {
 }
 .subhed-year {
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
-	font-variation-settings: "wdth" 60, "TYTE" 0, "NOTC" 0;
+	font-variation-settings: "wdth" 65, "TYTE" 0, "NOTC" 0;
 	font-size: 4.736842105263em; /* 90px /19 */
 }
 .subhed-count {
@@ -1217,9 +1209,9 @@ a[href].tag-inline:not(.tag-borderless),
 }
 
 .tags-rail-links {
-	font-size: 1.25em; /* 20px /16 */
+	font-size: 1em; /* 16px /16 */
 	font-family: system-ui, sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 }
 .tags-rail-links .z-icon {
 	margin-inline-end: .4em;
@@ -1233,17 +1225,13 @@ a[href].tag-inline:not(.tag-borderless),
 .tags-rail-links a[href].active {
 	color: #f4f4f4;
 	background-color: #444;
-	font-family: Hex Franklin Tight, system-ui, sans-serif;
-	font-variation-settings: "wdth" 80, "TYTE" 0, "NOTC" 1;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 }
 @media (max-width: config.$oneColLayoutMaxWidth) {
 	.tags-rail-links {
 		display: flex;
 		flex-wrap: wrap;
 		gap: .25em .5em;
-		font-family: Hex Franklin Tight, system-ui, sans-serif;
-		font-variation-settings: "wdth" 80, "TYTE" 0, "NOTC" 1;
 		text-transform: uppercase;
 	}
 	.tags-rail-links .z-icon {
@@ -1253,12 +1241,18 @@ a[href].tag-inline:not(.tag-borderless),
 }
 @media (min-width: config.$twoColLayoutMinWidth) {
 	.tags-rail-links {
+		font-size: 1.25em; /* 20px /16 */
 		margin-block: 1em 2em;
 		margin-inline-start: -.5em;
+		font-weight: 400;
 	}
 	.tags-rail-links a[href].active {
-		letter-spacing: 1px;
-		font-weight: 900;
+		text-transform: uppercase;
+		// font-weight: 900;
+		// letter-spacing: 1px;
+		// font-weight: 900;
+		font-family: Hex Franklin Tight, system-ui, sans-serif;
+		font-variation-settings: "wdth" 100, "TYTE" -70, "NOTC" 1;
 	}
 }
 
@@ -1354,10 +1348,6 @@ a[href].tag-inline:not(.tag-borderless),
 }
 .primarylink:before {
 	content: "➡ ";
-}
-.primarylink-demo:after {
-	content: " (Demo)";
-	@include mixins.webfont;
 }
 
 /* Generic Nowrap */

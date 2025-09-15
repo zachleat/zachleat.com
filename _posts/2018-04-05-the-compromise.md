@@ -51,7 +51,7 @@ The eBay strategy was novel for two reasons, the first being that it emulated `f
 
 The second novelty was that it _took steps to partially eliminate polyfill usage_! Namely it did not inline a font loading polyfill! Instead it used the CSS Font Loading API if it was available and if not, asynchronously loaded the font loading polyfill to load the web fonts (again, only on IE and Edge).
 
-<p class="primarylink primarylink-demo"><a href="https://www.zachleat.com/web-fonts/demos/ebay-method.html">The eBay Method</a></p>
+<p class="primarylink"><a href="https://www.zachleat.com/web-fonts/demos/ebay-method.html">The eBay Method</a></p>
 
 I’ve also added the [eBay Method to `web-font-loading-recipes`](https://github.com/zachleat/web-font-loading-recipes#the-ebay-method) if you want to check out the code.
 
@@ -65,7 +65,7 @@ _Curious what FOFT is? Check the [Web Font Loading Glossary](/web/webfont-glossa
 
 Let’s Frankenstein the eBay method and the Critical FOFT method together:
 
-<p class="primarylink primarylink-demo"><a href="https://www.zachleat.com/web-fonts/demos/critical-foft-preload-fallback-optional.html">“The Compromise”</a></p>
+<p class="primarylink"><a href="https://www.zachleat.com/web-fonts/demos/critical-foft-preload-fallback-optional.html">“The Compromise”</a></p>
 
 You can review the [HTML](https://github.com/zachleat/web-font-loading-recipes/blob/master/critical-foft-preload-fallback-optional.html) and [Lazy loaded JavaScript](https://github.com/zachleat/web-font-loading-recipes/blob/master/critical-foft-preload-fallback-optional.js) (only used if the CSS Font Loading API is not supported). The Compromise is also on [`web-font-loading-recipes`](https://github.com/zachleat/web-font-loading-recipes#the-compromise-critical-foft-with-preload-with-a-polyfill-fallback-emulating-font-display-optional).
 
