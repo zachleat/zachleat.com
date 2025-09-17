@@ -96,6 +96,8 @@ export default async function(eleventyConfig) {
 		shortcode: "icon",
 		defaultAttributes: {
 			class: "z-icon",
+			width: "20",
+			height: "20",
 		}
 	});
 
