@@ -1,7 +1,8 @@
 ---
 layout: layouts/base.liquid
 classes:
-  body: body-grid body-gradient
+  html: page-gradient
+  body: body-grid
 modules:
  - "/static/heading-anchors.js"
 ---
@@ -22,10 +23,10 @@ modules:
 						<li><a href="/search/" {% if page.url == '/search/' %}class="active"{% endif %}>{% icon "fa:search" %}Search</a></li>
 						<li><a href="/web/" {% if page.url == '/web/' %}class="active"{% endif %}>{% icon "fa:book" %}Archives</a></li>
 						<li><a href="/about/" {% if page.url == '/about/' %}class="active"{% endif %}>{% icon "fa:user" %}About</a></li>
-						<li class="hide-singlecol"><a href="/web/eleventy/" {% if page.url == '/web/eleventy/' %}class="active"{% endif %}>Eleventy</a></li>
-						<li class="hide-singlecol"><a href="/uses/" {% if page.url == '/uses/' %}class="active"{% endif %}>Uses</a></li>
-						<li class="hide-singlecol"><a href="/domains/" {% if page.url == '/domains/' %}class="active"{% endif %}>Domains</a></li>
-						<li class="hide-singlecol"><a href="/web/speaking/" {% if page.url == '/web/speaking/' %}class="active"{% endif %}>Speaking</a></li>
+						<li class="hide-singlecol"><a href="/web/eleventy/" {% if page.url == '/web/eleventy/' %}class="active"{% endif %}>{% icon "fab:eleventy" %}Eleventy</a></li>
+						<li class="hide-singlecol"><a href="/uses/" {% if page.url == '/uses/' %}class="active"{% endif %}>{% icon "fa:gear" %}Uses</a></li>
+						<li class="hide-singlecol"><a href="/domains/" {% if page.url == '/domains/' %}class="active"{% endif %}>{% icon "fa:signature" %}Domains</a></li>
+						<li class="hide-singlecol"><a href="/web/speaking/" {% if page.url == '/web/speaking/' %}class="active"{% endif %}>{% icon "fa:microphone-lines" %}Speaking</a></li>
 						{% comment %} <li><a href="/web/research/" class="tag{% if page.url == '/web/research/' %} active{% endif %}">Research</a></li> {% endcomment %}
 						{% comment %} <li><a href="/web/citations/" class="tag{% if page.url == '/web/citations/' %} active{% endif %}">Citations</a></li> {% endcomment %}
 					</ul>
