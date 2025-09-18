@@ -2,7 +2,9 @@
 title: A tiny bit-o-CSS for Stable Scrollbar Gutters
 toot: https://fediverse.zachleat.com/@zachleat/112615302809374708
 ---
-I have my operating system configured to use visible scrollbars, a feature prominently elevated in macOS System Settings high enough to imply some level of common usage. I don’t necessarily _prefer_ the behavior this feature enables but I keep it enabled to reveal a measure of implied quality to the web sites I use.
+I have my operating system configured to use visible scrollbars, a feature prominently elevated in macOS’ System Settings high enough that it would seem to imply some level of common usage (even though it’s not a default).
+
+I don’t necessarily _prefer_ the behavior this feature enables but I use it as an implied measure of quality when browsing the web {% icon "fa:gavel" %}.
 
 I typically see the following problems:
 
