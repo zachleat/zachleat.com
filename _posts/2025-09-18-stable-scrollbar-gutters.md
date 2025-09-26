@@ -30,4 +30,8 @@ html {
 
 This would look great in your reset stylesheet.
 
-Related: [_Two Browsers Walked Into a Scrollbar (2019)_](https://www.filamentgroup.com/lab/scrollbars/)
+Related:
+
+- [_Two Browsers Walked Into a Scrollbar (2019)_](https://www.filamentgroup.com/lab/scrollbars/)
+- [`w3c/csswg-drafts#5232`: Drawing over the space reserved by `scrollbar-gutter`](https://github.com/w3c/csswg-drafts/issues/5232) (via [Lynn](https://bsky.app/profile/lynn.zone/post/3lz6udnp3dc2n))
+- [Chromium issue when using `both-edges`](https://issues.chromium.org/issues/40064879) (via [Bramus](https://bsky.app/profile/bram.us/post/3lz6zkbc42s2m))
