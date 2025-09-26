@@ -836,12 +836,19 @@ table-saw :is(th, td) {
 		top: 0;
 		z-index: -1;
 		transition: all 200ms;
-		transform: rotate(-5deg);
+		transform: rotate(3deg);
 	}
 	.rail .header:not(:hover, :focus-within) .my-avatar {
-		filter: grayscale(.4);
 		opacity: .95;
-		transform: rotate(5deg);
+	}
+	.navigation a[href] {
+		transition: all 200ms;
+	}
+	.tags-rail-links a[href]:is(:hover, :focus-within) {
+		transform: scale(1.12);
+	}
+	.social a[href]:is(:hover, :focus-within) {
+		transform: scale(1.4);
 	}
 }
 .rail .navigation {
@@ -865,7 +872,6 @@ table-saw :is(th, td) {
 	padding: 0;
 	margin-right: 6px;
 	font-size: 1.157894736842em; /* 22px /19 */
-	// font-size: 1.368421052632em; /* 26px /19 */
 	line-height: 110%;
 	text-decoration: none;
 
