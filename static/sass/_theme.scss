@@ -115,7 +115,7 @@ del .z-avatar {
 }
 .notes_link {
 	font-weight: 400;
-	vertical-align: bottom;
+	vertical-align: text-bottom;
 	font-size: .6875em;
 	background-color: #ddd;
 	margin: 0 0 0 .25em;
@@ -797,7 +797,7 @@ table-saw :is(th, td) {
 	font-size: 2.25em; /* 36px /16 */
 	vertical-align: bottom;
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
-	font-variation-settings: "wdth" 65, "TYTE" 0, "NOTC" 1;
+	font-variation-settings: "wdth" 100, "TYTE" -100, "NOTC" 1;
 	font-weight: 900;
 	line-height: 1;
 	color: #444;
@@ -820,8 +820,9 @@ table-saw :is(th, td) {
 		flex-direction: row-reverse;
 	}
 	.rail .hed-h1 {
-		font-size: 3.15em;
-		width: 3.15em;
+		font-size: 2.25em;
+		width: 10rem;
+		line-height: .9;
 		color: #737373;
 		transition: all 200ms;
 	}
@@ -830,9 +831,9 @@ table-saw :is(th, td) {
 		color: #444;
 	}
 	.rail .my-avatar {
-		--avatar-size: 4.375em; /* 70px /16 */
+		--avatar-size: 3.625em; /* 58px /16 */
 		position: absolute;
-		right: 3em;
+		left: 7em;
 		top: 0;
 		z-index: -1;
 		transition: all 200ms;
