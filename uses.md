@@ -260,6 +260,15 @@ tr:has(del) .z-avatar {
 			<td><code>2023–</code></td>
 			<td>{% indieAvatar "https://www.dell.com/" %}Dell 27″ S2722QC (16:9, 3840×2160)</td>
 		</tr>
+		<tr data-filter-category="hardware" data-filter-active="yes">
+			<td class="hide-sm"><strong>Hardware</strong></td>
+			<td>{% icon "fa:laptop" %} Notebook</td>
+			<td><code>2023–</code></td>
+			<td>{% indieAvatar "https://www.microsoft.com/" %}Surface Laptop Go 2 (12″ 2023), Test Lab Hardware</td>
+			<td class="hide-sm">{% icon "fa:briefcase" %}</td>
+			<td class="hide-sm"></td>
+			<td></td>
+		</tr>
 		<tr data-filter-category="consumer" data-filter-active="no">
 			<td class="hide-sm"><strong>Consumer</strong></td>
 			<td>{% icon "fa:music" %} Music</td>
