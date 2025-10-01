@@ -2,6 +2,7 @@
 title: "Nerd Show and Tell on Podcast Awesome"
 tags:
   - speaking
+  - eleventy
 metadata:
   speaking:
     type: podcast
