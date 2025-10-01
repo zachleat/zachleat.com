@@ -5,7 +5,7 @@ import { getImageColors } from "@11ty/image-color";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
-const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20250925" : "_localdev1";
+const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20251001" : "_localdev1";
 
 async function imageFactory(src, options = {}) {
 	options = Object.assign({},{
@@ -186,7 +186,7 @@ export default function(eleventyConfig) {
 
 	// Used to add eleventy:ignore to opengraph images that aren’t yet available for image optimization (would result in 404 not found opengraph images)
 	eleventyConfig.addFilter("isRecentPost", function(date) {
-		return Math.abs(Date.now() - date.getTime()) < 1000*60*60*24*2;
+		return (Date.now() - date.getTime()) < 1000*60*60*24*3; // within 3 days
 	});
 	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath, date}) {
 		// special title og images, only for _posts
