@@ -1265,9 +1265,6 @@ a[href].tag-inline:not(.tag-borderless),
 	font-family: system-ui, sans-serif;
 	font-weight: 600;
 }
-.tags-rail-links .z-icon {
-	margin-inline-end: .4em;
-}
 .tags-rail-links a[href] {
 	display: inline-flex;
 	align-items: center;
@@ -1630,6 +1627,9 @@ html:root {
 	margin: 0 .15em;
 	width: 1.3em;
 	height: 1.3em;
+}
+svg.z-icon {
+	margin-inline-end: .3em;
 }
 .fa-fire {
 	color: #f90;
