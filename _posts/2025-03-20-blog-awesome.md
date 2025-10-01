@@ -1,5 +1,5 @@
 ---
-title: "11ty Meetup: Blog Awesome from WordPress to Eleventy"
+title: "Blog Awesome from WordPress to Eleventy (at Eleventy Meetup)"
 tags:
   - eleventy
   - external
