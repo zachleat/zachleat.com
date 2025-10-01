@@ -15,13 +15,15 @@ eleventyImport:
 }
 </style>
 <div class="flex" style="--flex-gap: 1.25em;">
-	<a href="https://www.11ty.dev/" class="flexcol-1-4 eleventy-logo-c">
-		<img src="/web/img/11ty.png" alt="Eleventy Logo" class="eleventy-logo">
-	</a>
 	<div class="flexcol-3-4">
 		<p>Blog posts and tutorials for the <a href="https://www.11ty.dev/">Eleventy static site generator</a>. You can read more at the <a href="https://www.11ty.dev/news/">Eleventy News Blog</a>. This website is generated using Eleventy.</p>
-		<p class="primarylink"><a href="https://www.11ty.dev/docs/">Eleventy Documentation</a></p>
-		<p class="primarylink"><a href="https://github.com/11ty/eleventy/">GitHub</a> · <a href="https://twitter.com/eleven_ty">Twitter</a> · <a href="https://opencollective.com/11ty">Open Collective</a></p>
+		<ul class="list-inline fl fl-inline fl-nowrap fl-separator-h">
+			<li><a href="https://www.11ty.dev/docs/"><strong>{% icon "fab:eleventy" %}Documentation</strong></a></li>
+			<li><a href="https://github.com/11ty/eleventy/"><strong>{% icon "fab:github" %}GitHub</strong></a></li>
+			<li><a href="https://neighborhood.11ty.dev/@11ty"><strong>{% icon "fab:mastodon" %}Mastodon</strong></a></li>
+			<li><a href="https://bsky.app/profile/11ty.dev"><strong>{% icon "fab:bluesky" %}Bluesky</strong></a></li>
+			<li><a href="https://www.youtube.com/c/EleventyVideo"><strong>{% icon "fab:youtube" %}YouTube</strong></a></li>
+		</ul>
 	</div>
 </div>
 <ol class="posts">
