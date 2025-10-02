@@ -18,7 +18,6 @@
 					<toggle-button label="Web Fonts" @toggleclass="font-fallback"></toggle-button>
 				</div>
 				{%- endrenderTemplate %}
-
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[urlWithOrigin] %}
 				<a href="https://www.speedlify.dev/zachleat.com/#site-{{ speedlify[urlWithOrigin].hash }}" class="speedlify-link" aria-label="View the full results on speedlify.dev">
@@ -27,6 +26,14 @@
 					<speedlify-score :hash="_" score weight></speedlify-score>
 					{%- endrenderTemplate %}
 				</a>
+{%- endif %}
+{%- if JS_ENABLED %}
+				<is-land on:idle on:visible on:media="(min-width: 61.1875em)">
+					<template data-island="once">
+						<time-difference live class="tag tag-popular-rail tag-borderless"><em>Built <time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}"></time></em></time-difference>
+						<script type="module" src="/static/js/time-difference.js"></script>
+					</template>
+				</is-land>
 {%- endif %}
 			</div>
 		</form>

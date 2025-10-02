@@ -839,7 +839,7 @@ Haven’t hunted down specific dates for these yet:
 <table>
 	<thead>
 		<tr>
-			<th>Category</th>
+			<t class="hide-sm"h>Category</th>
 			<th>Subcategory</th>
 			<th>~ Date</th>
 			<th>Name</th>
@@ -847,44 +847,44 @@ Haven’t hunted down specific dates for these yet:
 	</thead>
 	<tbody>
 		<tr data-filter-active="no">
-			<td><strong>Software</strong></td>
+			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><code>~2009</code></td>
 			<td><del>Eclipse IDE</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 		<tr data-filter-active="no">
-			<td><strong>Software</strong></td>
+			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><code>~2009</code></td>
 			<td><del>Aptana Studio</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 		<tr data-filter-active="no">
-			<td><strong>Software</strong></td>
+			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><code>~2006</code></td>
 			<td><del>Notepad++</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 		<tr data-filter-active="no">
-			<td><strong>Software</strong></td>
+			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><code>~2000</code></td>
 			<td><del>Allaire Homesite</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 		<tr data-filter-active="no">
-			<td><strong>Software</strong></td>
+			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:code" %} Code Editor</td>
 			<td><code>~1997</code></td>
 			<td><del>{% indieAvatar "https://www.microsoft.com/" %}Notepad.exe</del> {% icon "fa:circle-up" %}</td>
 		</tr>
 {% comment %}
 		<tr data-filter-active="no">
-			<td><strong>Software</strong></td>
+			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fab:js" %} JavaScript</td>
 			<td><code>~2006</code></td>
 			<td>{% indieAvatar "https://www.yahoo.com/" %}Yahoo User Interface (YUI)</td>
 		</tr>
 		<tr data-filter-active="no">
-			<td><strong>Software</strong></td>
+			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fab:js" %} JavaScript</td>
 			<td><code>~2008–2015</code></td>
 			<td>{% indieAvatar "https://jquery.com/" %}jQuery</td>

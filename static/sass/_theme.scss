@@ -453,10 +453,10 @@ body {
 	text-decoration-color: #4caf50;
 }
 :link {
-	color: #467259;
+	color: #304f3e;
 }
 :visited {
-	color: #304f3e;
+	color: #4c713e;
 }
 .content-main :link,
 .content-main :visited {
@@ -502,7 +502,7 @@ blockquote strong {
 /* Headers */
 h1, h2, h3, .hed-h1, .hed-h2, .hed-h3 {
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
-	font-variation-settings: "wdth" 100, "TYTE" -35, "NOTC" 1;
+	font-variation-settings: "wdth" 60, "TYTE" -50, "NOTC" 0;
 	font-weight: 900;
 	margin-top: 1.4em;
 	line-height: 1.4;
@@ -518,10 +518,6 @@ h4, h5 {
 h1, h2, h3,
 .hed-h1, .hed-h2, .hed-h3 {
 	text-transform: uppercase;
-}
-h1, h2,
-.hed-h1, .hed-h2 {
-	font-variation-settings: "wdth" 60, "TYTE" -50, "NOTC" 0;
 }
 .cased {
 	text-transform: none;
@@ -572,7 +568,8 @@ h2,
 }
 h3,
 .hed-h3 {
-	font-size: 1.157894736842em; /* 22px /19 */
+	font-size: 1.368421052632em; /* 26px /19 */
+	font-variation-settings: "wdth" 65, "TYTE" 0, "NOTC" 0;
 }
 h3 {
 	margin-top: 2em;
@@ -779,6 +776,9 @@ table-saw :is(th, td) {
 
 
 /* Logo and Rail */
+.rail :link:not(:hover, :focus) {
+	--icon-color-override: #4c713e;
+}
 .rail .header {
 	display: flex;
 	gap: .35em;
@@ -796,11 +796,9 @@ table-saw :is(th, td) {
 	padding: 0;
 	font-size: 2.25em; /* 36px /16 */
 	vertical-align: bottom;
-	font-family: Hex Franklin Tight, system-ui, sans-serif;
-	font-variation-settings: "wdth" 100, "TYTE" -100, "NOTC" 1;
 	font-weight: 900;
 	line-height: 1;
-	color: #444;
+	color: #4c713e;
 	text-transform: uppercase;
 }
 .rail .my-avatar {
@@ -823,17 +821,12 @@ table-saw :is(th, td) {
 		font-size: 2.25em;
 		width: 10rem;
 		line-height: .9;
-		color: #737373;
 		transition: all 200ms;
 	}
-	.rail .hed-h1::first-line,
-	.rail .header:is(:hover, :focus-within) .hed-h1 {
-		color: #444;
-	}
 	.rail .my-avatar {
-		--avatar-size: 3.625em; /* 58px /16 */
+		--avatar-size: 4em; /* 64px /16 */
 		position: absolute;
-		left: 7em;
+		left: 8em;
 		top: 0;
 		z-index: -1;
 		transition: all 200ms;
@@ -844,6 +837,10 @@ table-saw :is(th, td) {
 	}
 	.navigation a[href] {
 		transition: all 200ms;
+	}
+	.tags-rail-links .z-icon {
+		width: 1.15em;
+		height: 1.15em;
 	}
 	.tags-rail-links a[href]:is(:hover, :focus-within) {
 		transform: scale(1.12);
@@ -917,7 +914,7 @@ table-saw :is(th, td) {
 .subhed-year {
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
 	font-variation-settings: "wdth" 65, "TYTE" 0, "NOTC" 0;
-	font-size: 4.736842105263em; /* 90px /19 */
+	font-size: 2.315789473684em; /* 44px /19 */
 }
 .subhed-count {
 	color: #555;
@@ -1276,7 +1273,7 @@ a[href].tag-inline:not(.tag-borderless),
 }
 .tags-rail-links a[href].active {
 	color: #f4f4f4;
-	background-color: #444;
+	background-color: #39542f;
 }
 @media (max-width: config.$oneColLayoutMaxWidth) {
 	.tags-rail-links {
@@ -1293,12 +1290,12 @@ a[href].tag-inline:not(.tag-borderless),
 @media (min-width: config.$twoColLayoutMinWidth) {
 	.tags-rail-links {
 		font-size: 1.25em; /* 20px /16 */
-		margin-block: 1em 1.5em;
+		margin-block: 1.5em;
 		margin-inline-start: -.4em;
 		font-weight: 400;
 	}
 	.tags-rail-links a[href].active {
-		font-weight: 800;
+		font-weight: 650;
 	}
 	.tags-rail-links a[href]:not(:has(.z-icon)) {
 		margin-left: 1.7em;
@@ -1535,7 +1532,7 @@ select[data-filter-key] {
 .spark {
 	display: flex;
 	gap: 1em;
-	align-items: baseline;
+	align-items: center;
 	text-decoration: none;
 	text-transform: none;
 	font-weight: 700;
@@ -1632,32 +1629,32 @@ svg.z-icon {
 	margin-inline-end: .3em;
 }
 .fa-fire {
-	color: #f90;
+	color: var(--icon-color-override, #f90);
 }
 .fa-comment {
-	color: #d0d0d0;
+	color: var(--icon-color-override, #d0d0d0);
 }
 .fa-sun {
-	color: rgb(225, 225, 0);
+	color: var(--icon-color-override, rgb(225, 225, 0));
 }
 .fa-font-awesome {
-	color: #538cd7;
+	color: var(--icon-color-override, #538cd7);
 }
 .fa-square-rss {
-	color: #e57516;
+	color: var(--icon-color-override, #e57516);
 }
 .fa-github {
-	color: #000;
+	color: var(--icon-color-override, #000);
 }
 .fa-mastodon {
-	color: #563dd0;
+	color: var(--icon-color-override, #563dd0);
 }
 .fa-bluesky {
-	color: #0085ff;
+	color: var(--icon-color-override, #0085ff);
 }
 .fa-linkedin {
-	color: #0073b2;
+	color: var(--icon-color-override, #0073b2);
 }
 .fa-youtube {
-	color: #f03;
+	color: var(--icon-color-override, #f03);
 }

@@ -6,18 +6,12 @@
 	align-items: center;
 	gap: .75em;
 }
-@media (max-width: 39.9375em) { /* 639px */
-	.social {
-		flex-wrap: wrap;
-	}
-}
 .social .z-icon {
 	margin: 0;
 }
 @media (min-width: config.$twoColLayoutMinWidth) {
 	.rail .social {
-		margin-top: 1em;
-		margin-bottom: 1em;
+		margin-block: 1em;
 	}
 }
 .social_icon {
@@ -59,12 +53,8 @@
 
 /* Small viewport navigation */
 @media (max-width: config.$oneColLayoutMaxWidth) {
-	.rail .navigation {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 1em;
-		margin: 1em auto 0;
+	.social, .tags-rail-links {
+		justify-content: center;
 	}
 	.rail .navigation .tags a[href] {
 		display: inline-flex;

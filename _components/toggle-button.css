@@ -94,7 +94,3 @@
 	display: flex;
 	flex-grow: 0;
 }
-.toggle-features-form .fl .speedlify-link {
-	flex-grow: 999;
-	flex-basis: 20em; /* 320px /16 */
-}

@@ -34,6 +34,19 @@ export default async function(eleventyConfig) {
 	const slugify = eleventyConfig.getFilter("slugify");
 
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
+	eleventyConfig.addGlobalData("currentDate", () => new Date());
+
+	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+		if (data.draft) {
+      data.title = `${data.title} (Draft)`;
+    }
+
+		// Drafts are *ignored* during a full build (included when --serve or --watch)
+		// if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+			if(data.draft) {
+			return false;
+		}
+	});
 
 	// More in .eleventyignore
 	if(!process.env.PRODUCTION_BUILD) {
@@ -270,8 +283,12 @@ export default async function(eleventyConfig) {
 		}
 	});
 
-	eleventyConfig.addFilter("readableDate", dateObj => {
-		return DateTime.fromJSDate(dateObj).toFormat("LLLL dd, yyyy");
+	eleventyConfig.addFilter("readableDate", (dateObj, formatOverride) => {
+		return DateTime.fromJSDate(dateObj).toFormat(formatOverride || "LLLL dd, yyyy");
+	});
+
+		eleventyConfig.addFilter("dateToISO", (dateObj) => {
+		return dateObj.toISOString()
 	});
 
 	eleventyConfig.addLiquidFilter("readableDateFromISO", (dateStr, formatStr = "dd LLL yyyy 'at' hh:mma") => {
