@@ -28,7 +28,7 @@
 				</a>
 {%- endif %}
 {%- if JS_ENABLED %}
-				<is-land on:idle on:visible on:media="(min-width: 61.1875em)">
+				<is-land on:idle on:visible>
 					<template data-island="once">
 						<time-difference live class="tag tag-popular-rail tag-borderless"><em>Built <time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}"></time></em></time-difference>
 						<script type="module" src="/static/js/time-difference.js"></script>
