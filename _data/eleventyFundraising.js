@@ -4,7 +4,7 @@ export default async function() {
 	try {
 		let json = await EleventyFetch("https://www.11ty.dev/api/fundraising-status.json", {
 			type: "json",
-			duration: process.env.ELEVENTY_RUN_MODE === "build" ? "0s" : "1h",
+			duration: "*",
 			directory: ".cache/eleventy-fetch/",
 			dryRun: false,
 		});

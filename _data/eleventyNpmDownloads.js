@@ -3,7 +3,7 @@ import EleventyFetch from "@11ty/eleventy-fetch";
 
 const NPM_PKG_NAME = "@11ty/eleventy";
 const START_YEAR = 2018;
-const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "7d" : "1d";
+const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "30d" : "1d";
 
 async function getDownloadsForYear(year) {
 	let isCurrentYear = (new Date).getFullYear() === year;

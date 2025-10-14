@@ -6,6 +6,7 @@ import { getImageColors } from "@11ty/image-color";
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
 const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20251001" : "_localdev2";
+const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "30d" : "1d";
 
 async function imageFactory(src, options = {}) {
 	options = Object.assign({},{
@@ -17,7 +18,7 @@ async function imageFactory(src, options = {}) {
 		outputDir: "./_site/img/built/",
 		sharpAvifOptions: {},
 		cacheOptions: {
-			duration: "14d",
+			duration: CACHE_DURATION,
 		},
 	}, options);
 

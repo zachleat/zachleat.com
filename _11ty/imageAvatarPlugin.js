@@ -7,7 +7,9 @@ function getTwitterAvatarImageOptions(username) {
 		outputDir: "./img/avatars/",
 		formats: ["avif", "jpeg"],
 		dryRun: true,
-		cacheDuration: "*",
+		cacheOptions: {
+			duration: "*",
+		},
 		filenameFormat: function(id, src, width, format) {
 			return `${username.toLowerCase()}.${format}`;
 		}
