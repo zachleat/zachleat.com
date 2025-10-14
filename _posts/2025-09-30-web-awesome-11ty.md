@@ -11,7 +11,7 @@ medialength: 35 min
 ---
 {% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
-More at [{% indieAvatar "https://www.podcastawesome.com/" %}`podcastawesome.com`](https://www.podcastawesome.com/)
+[{% indieAvatar "https://www.podcastawesome.com/" %}_How We Built Web Awesome with 11ty (and Why It’s So Fast)_ on `podcastawesome.com`](https://www.podcastawesome.com/2092855/episodes/17268471-how-we-built-web-awesome-with-11ty-and-why-it-s-so-fast)
 
 > Build once, run everywhere.
 > In this full-nerd, front-end-leaning episode of Podcast Awesome, Matt sits down with Zach Leatherman (creator of Eleventy) and Konnor Rogers (Web Awesome developer) to chat about how a static site generator just might be the key to building some of the most powerful, performant documentation on the web.
