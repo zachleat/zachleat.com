@@ -809,7 +809,7 @@ table-saw :is(th, td) {
 	background-color: config.$primaryColor;
 	color: transparent;
 	margin-bottom: -2px;
-	border-radius: 0.75em;
+	border-radius: 40%;
 }
 @media (min-width: config.$twoColLayoutMinWidth) {
 	.rail .header {
