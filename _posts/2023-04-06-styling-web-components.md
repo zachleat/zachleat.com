@@ -1,5 +1,6 @@
 ---
 title: 3 Methods for Scoped Styles in Web Components That Work Everywhere
+tags: web-components
 ---
 <style>
 div.livedemo {

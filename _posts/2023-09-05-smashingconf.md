@@ -3,6 +3,7 @@ title: "SmashingConf Freiburg 2023"
 external_url: https://smashingconf.com/freiburg-2023
 external_url_location: end
 permalink: /web/smashingconf/2023/
+tags: conference
 ---
 I was very fortunate to be invited to be the [Mystery Speaker at Smashing Conference](/web/smashingconf/2023/video/) in Freiburg this year! We really did trap hundreds of people in a room to teach them about web components 😈😈😈
 

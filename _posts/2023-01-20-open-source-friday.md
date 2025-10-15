@@ -1,10 +1,11 @@
 ---
 title: "GitHub’s Open Source Friday: WebC, The Web Components Framework"
-tags: ["eleventy", "speaking"]
+tags: ["eleventy", "speaking", "video"]
 metadata:
   speaking:
     type: livestream
   youtubeId: rD07m-uAGaE
+medialength: 49 min
 ---
 I was on GitHub’s Open Source Friday to chat a bit about WebC and Eleventy.
 

@@ -2,6 +2,7 @@
 title: An Organizer’s Retrospective on the 11ty Conference
 tags:
   - eleventy
+  - conference
 metadata:
   speaking:
     type: livestream

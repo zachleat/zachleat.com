@@ -1,5 +1,6 @@
 ---
 title: "The JavaScript Site Generator Review, 2023"
+tag_icon: "fab:square-js"
 toot: https://fediverse.zachleat.com/@zachleat/109920627317840768
 hasToc: true
 ---

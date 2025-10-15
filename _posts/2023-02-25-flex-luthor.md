@@ -1,6 +1,8 @@
 ---
 title: Flex Luthor, a Little CSS Flexbox Layout Helper
-tags: project
+tags:
+  - project
+tag_icon: "fab:css"
 ---
 Just going through the backlog of some old projects and found this [Filament Group](https://www.filamentgroup.com/) gem that went unpublished!
 

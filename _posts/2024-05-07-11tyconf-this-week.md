@@ -5,6 +5,7 @@ external_url_screenshotmode: opengraph
 tags:
   - external
   - eleventy
+  - conference
 showOnHomePage: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Improved error messaging for require(ESM) in Node.js
 tags: eleventy
+tag_icon: "fab:square-js"
 ---
 The [Eleventy](https://www.11ty.dev/) code-base is now written using ESM.
 

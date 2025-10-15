@@ -3,6 +3,7 @@ title: "The Eleventy v2.0 Release, a talk at the Eleventy Meetup"
 tags:
   - eleventy
   - speaking
+  - video
 external_url: https://11tymeetup.dev/events/ep-12-configs-and-v2/
 external_icon_url: false
 metadata:
