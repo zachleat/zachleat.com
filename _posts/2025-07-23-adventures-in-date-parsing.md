@@ -18,7 +18,7 @@ attrs:
     alt: Unsupported
   surprised:
     alt: Face looking surprised
-tag_icon: "fab:js"
+tag_icon: "fab:square-js"
 ---
 _**Never** write your own date parsing library._
 

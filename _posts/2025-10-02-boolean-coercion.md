@@ -1,7 +1,7 @@
 ---
 title: I want to intercept Boolean Coercion for Objects in JavaScript
 toot: https://fediverse.zachleat.com/@zachleat/115300801628689509
-tag_icon: "fab:js"
+tag_icon: "fab:square-js"
 ---
 MDN takes a strong stance against using `new` with `Boolean`:
 

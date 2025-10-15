@@ -1647,13 +1647,12 @@ svg.z-icon {
 .fa-css {
 	color: var(--icon-color-override, #673599);
 }
-.fa-square-js,
-.fa-js,
-.z-icon:has([href="#fab-fa-js"]),
-.z-icon:has([href="#fab-fa-square-js"]) {
+.fa-square-js {
 	color: var(--icon-color-override, #f9dd3f);
+}
+.z-icon:has([href="#fab-fa-square-js"]) {
 	background-color: #000;
-	box-shadow: 0 0 0 .5px #000;
+	border-radius: .3em;
 }
 .fa-square-rss {
 	color: var(--icon-color-override, #e57516);
