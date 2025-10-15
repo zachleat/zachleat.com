@@ -20,7 +20,7 @@ layout: layouts/pagealign.liquid
 
 <ul class="list-inline fl fl-inline fl-nowrap">
 	<li>This web site is maintained by <strong>Zach Leatherman</strong> <em>(he, him, they)</em>.</li>
-	<li>View his <a href="/resume/">full résumé</a> or about his <a href="/uses/">favorite tools</a>.</li>
+	<li>View his <a href="/resume/">full résumé</a> or learn about his <a href="/uses/">favorite tools</a>.</li>
 </ul>
 
 <ul class="list-inline fl fl-inline fl-nowrap">

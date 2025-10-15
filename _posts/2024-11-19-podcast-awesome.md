@@ -3,6 +3,8 @@ title: "Nerd Show and Tell on Podcast Awesome"
 tags:
   - speaking
   - eleventy
+  - audio
+  - font-awesome
 metadata:
   speaking:
     type: podcast

@@ -1,10 +1,13 @@
 ---
 title: "Eleventy and CloudCannon: New Best Friends"
-tags: eleventy
+tags:
+  - eleventy
+  - video
 metadata:
   youtubeId: nypsmn70ipI
 external_url: https://www.11ty.dev/blog/cloudcannon/
 external_url_location: end
+medialength: 2 min
 ---
 <script type="module" src="/static/js/offviewport.js"></script>
 <div>

@@ -4,11 +4,14 @@ tags:
   - eleventy
   - external
   - speaking
+  - video
+  - font-awesome
 metadata:
   speaking:
     type: livestream
   youtubeId: O89QIruTink
 event_date: March 20
+medialength: 27 min
 ---
 {% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 

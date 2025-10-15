@@ -512,7 +512,7 @@ export default async function(eleventyConfig) {
 				categories.push(tag);
 			}
 		}
-		return categories.join(",");
+		return categories.join(" ");
 	});
 
 	eleventyConfig.addCollection("writing", function(collection) {

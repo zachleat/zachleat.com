@@ -47,23 +47,27 @@
 	<span class="tags">
 		{%- capture absoluteUrl -%}{{ post.url | absoluteUrl }}{%- endcapture -%}
 
+		{%- if post.data.tag_icon %}{% icon post.data.tag_icon %}{% endif -%}
+		{%- if post.data.tags contains 'font-awesome' %}{% icon "fab:font-awesome" %}{% endif -%}
+		{%- if post.data.tags contains 'web-awesome' %}{% icon "fab:web-awesome" %}{% endif -%}
+		{% comment %}{%- if post.data.tags contains 'eleventy' %}{% icon "fab:eleventy" %}{% endif -%}{% endcomment %}
+		{%- if post.data.tags contains 'web-components' %}<span class="tag tag-emoji">🚾</span>{% endif -%}
+		{%- if post.data.tags contains 'conference' %}{% icon "fa:users-between-lines" %}{% endif -%}
 		{%- if post.data.tags contains 'conference' and post.data.event_date -%}
 			<span class="tag">Event</span>
 			<span class="tag tag-event">on {{ post.data.event_date }}</span>
 		{%- endif -%}
-		{%- if post.data.tags contains 'video' %}<span class="tag video">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Video</span>{% endif -%}
-		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% if post.data.medialength %}<span class="length">{{ post.data.medialength }}</span>{% endif %} Audio</span>{% endif -%}
+		{%- if post.data.tags contains 'video' %}<span class="tag video">{% icon "fa:video" %}{% if post.data.medialength %}<span class="length"> {{ post.data.medialength }}</span>{% endif %}</span>{% endif -%}
+		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% icon "fa:headphones" %}{% if post.data.medialength %}<span class="length"> {{ post.data.medialength }}</span>{% endif %}</span>{% endif -%}
 {%- if ignorePopularity != true %}
 		{%- assign postRank = analytics[post.url].rankPerDaysPosted -%}
-		{%- if postRank and postRank <= 20 %}<span class="tag" title="Popularity Ranking">{% if postRank %}{% icon "fas:fire" %}#{{ postRank }}{% endif %}</span>{% endif -%}
-		{%- assign postRankAllTime = analytics[post.url].rankTotal -%}
-		{%- if postRankAllTime and postRankAllTime <= 20 %}<span class="tag" title="Popularity Ranking (All time)">{% if postRankAllTime %}{% icon "fas:sun" %}#{{ postRankAllTime }}{% endif %}</span>{% endif -%}
+		{%- if postRank and postRank <= 20 %}<span class="tag" title="Popularity Ranking">{% if postRank %}{% icon "fas:fire-flame-curved" %}#{{ postRank }}{% endif %}</span>{% endif -%}
 {%- endif %}
 
 		{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
 		{%- assign activityCount = webmentionsCount -%}
 		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
-		{%- if activityCount > 0 %}<span class="tag" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">{% icon "fas:comment" %}{{ activityCount }}</span>{% endif -%}
+		{%- if activityCount > 0 %}<span class="tag" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">{% icon "fas:comments" %}{{ activityCount }}</span>{% endif -%}
 	</span>
 {% comment %}
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>

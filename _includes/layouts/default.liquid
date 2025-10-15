@@ -51,7 +51,7 @@ modules:
 
 					{%- if hasToc != true and hidePostsInSidebar != true %}
 						<div>
-							<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire" %}</a></div>
+							<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire-flame-curved" %}</a></div>
 
 							{% for post in collections.popularPostsRanked limit:4 %}
 							<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>

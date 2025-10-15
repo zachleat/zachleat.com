@@ -1,6 +1,8 @@
 ---
 title: 11ty is Joining Font Awesome
-tags: eleventy
+tags:
+  - eleventy
+  - font-awesome
 external_url: https://www.11ty.dev/blog/eleventy-font-awesome/
 external_url_screenshotmode: opengraph
 ---

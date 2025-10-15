@@ -5,11 +5,11 @@ enableWebmentions: true
 eleventyImport:
   collections: ["blog-post"]
 ---
-<filter-container oninit>
+<filter-container oninit delimiter=" ">
 	<div class="flex">
 		<div class="flex-grow">
 			<a href="/search/">Search</a>
-			· <a href="/web/best-of/">Popular Posts{% icon "fas:fire" %}</a>
+			· <a href="/web/best-of/">Popular Posts{% icon "fas:fire-flame-curved" %}</a>
 		</div>
 		<form class="filter-posts-form">
 			<span data-filter-results="post/posts" aria-live="polite">{{ collections.posts | size }} posts</span>&#160;
@@ -21,7 +21,7 @@ eleventyImport:
 					<option value="speaking">Only Speaking</option>
 					<option value="eleventy">Only Eleventy</option>
 					<option value="project">Only Projects</option>
-					<option value="web-components">Only Web Components</option>
+					<option value="web-components">Only 🚾 Web Components</option>
 					<option value="jamstack">Only Jamstack</option>
 					<option value="web-fonts">Only Web Fonts</option>
 				</select>

@@ -88,8 +88,8 @@ tmpl: page
 	{%- assign postRank = analytics[page.url].rankPerDaysPosted | default: 9999 %}
 	{%- assign postRankAllTime = analytics[page.url].rankTotal | default: 9999 %}
 	{%- if postRank <= 20 or postRankAllTime <= 20 %}
-		<em><a href="/web/best-of/">{% icon "fas:fire" %}#{{ postRank }}<span class="sr-only"> Popular (per day)</span></a></em>
-		<em><a href="/web/best-of/total-views/">{% icon "fas:sun" %}#{{ postRankAllTime }}<span class="sr-only"> Popular (total)</span></a></em>
+		<em><a href="/web/best-of/">{% icon "fas:fire-flame-curved" %}#{{ postRank }}<span class="sr-only"> Popular (per day)</span></a></em>
+		<em><a href="/web/best-of/total-views/">{% icon "fas:calculator" %}#{{ postRankAllTime }}<span class="sr-only"> Popular (total)</span></a></em>
 	{% endif %}
 	{%- if analytics[page.url].pageViews > 500 %}
 		<em>{% icon "fas:eye" %}{{ analytics[page.url].pageViews | renderNumber }} Views</em>

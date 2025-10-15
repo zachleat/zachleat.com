@@ -24,7 +24,7 @@ excludeFromSearch: true
 			<li><em><a href="/web/" class="posts-link posts-link-more">…see archives.</a></em></li>
 		</ol>
 
-		<h2>Popular{% icon "fas:fire" %}</h2>
+		<h2>Popular{% icon "fas:fire-flame-curved" %}</h2>
 		<ol class="posts">
 			{% for post in collections.popularPostsRanked limit:3 %}
 				{% include "post-list-entry.html", ignoreYear: "true" %}

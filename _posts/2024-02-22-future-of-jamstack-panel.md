@@ -3,6 +3,7 @@ title: "Panel Discussion: What's next for Jamstack?"
 tags:
   - jamstack
   - speaking
+  - video
 metadata:
   speaking:
     type: livestream

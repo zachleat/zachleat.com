@@ -4,6 +4,7 @@ tags:
   - eleventy
   - speaking
   - jsparty
+  - audio
 medialength: 75 min
 external_url: https://changelog.com/jsparty/325
 ---

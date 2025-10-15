@@ -4,6 +4,7 @@ titleHtml: "Glitch Jams Live 🍓🎏 Ep. 16: Eleventy'ing"
 tags:
   - eleventy
   - speaking
+  - audio
 metadata:
   speaking:
     type: livestream

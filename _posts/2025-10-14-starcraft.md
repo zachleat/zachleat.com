@@ -1,5 +1,6 @@
 ---
 title: StarCraft II is still great.
+tag_icon: "fab:battle-net"
 ---
 [StarCraft II](https://en.wikipedia.org/wiki/StarCraft_II:_Wings_of_Liberty) was first released in 2010 and it’s still amazing:
 

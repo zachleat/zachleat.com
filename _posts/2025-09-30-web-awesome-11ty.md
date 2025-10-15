@@ -3,6 +3,8 @@ title: "How We Built Web Awesome with 11ty (and Why It’s So Fast) on Podcast A
 tags:
   - speaking
   - eleventy
+  - video
+  - web-awesome
 metadata:
   speaking:
     type: podcast

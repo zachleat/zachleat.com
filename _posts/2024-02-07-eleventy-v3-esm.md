@@ -3,6 +3,7 @@ title: "Lessons learned moving Eleventy from CommonJS to ESM"
 tags:
   - eleventy
   - speaking
+  - video
 metadata:
   speaking:
     type: conference
