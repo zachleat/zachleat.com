@@ -3,6 +3,7 @@ title: "FITC Panel: Front-End Framework Trends with the creators of Qwik, Astro,
 tags:
   - eleventy
   - speaking
+  - video
 metadata:
   speaking:
     type: livestream

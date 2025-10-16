@@ -10,6 +10,7 @@ metadata:
     type: podcast
   youtubeId: 0SKA5vE7d88
 medialength: 35 min
+opengraphSkipFace: true
 ---
 {% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 

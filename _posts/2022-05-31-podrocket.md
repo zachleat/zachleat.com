@@ -3,6 +3,7 @@ title: "PodRocket podcast: Eleventy with Zach Leatherman"
 tags:
   - eleventy
   - speaking
+  - video
 medialength: 27 min
 external_url: https://podcasts.apple.com/us/podcast/eleventy-with-zach-leatherman/id1539945251?i=1000564676022
 ---

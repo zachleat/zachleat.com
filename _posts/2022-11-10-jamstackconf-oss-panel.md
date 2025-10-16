@@ -4,6 +4,7 @@ tags:
   - eleventy
   - speaking
   - jamstack
+  - video
 metadata:
   speaking:
     type: conference

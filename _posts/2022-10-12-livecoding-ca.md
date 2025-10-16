@@ -3,6 +3,7 @@ title: "Nick Taylor’s livecoding.ca: WebC is neat!"
 tags:
   - eleventy
   - speaking
+  - video
 metadata:
   speaking:
     type: livestream

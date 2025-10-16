@@ -3,6 +3,7 @@ title: "Coding Design Systems episode 11: Design Systems with 11ty"
 tags:
   - eleventy
   - speaking
+  - video
 medialength: 53 min
 metadata:
   youtubeId: 3DxHuRqXw48

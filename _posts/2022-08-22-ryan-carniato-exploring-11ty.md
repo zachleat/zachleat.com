@@ -3,6 +3,7 @@ title: "Ryan Carniato: Exploring 11ty with Zach Leatherman"
 tags:
   - eleventy
   - speaking
+  - video
 metadata:
   speaking:
     type: livestream
