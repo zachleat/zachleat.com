@@ -1210,6 +1210,12 @@ a[href]:is(:focus, :hover) .project_img {
 .tags .tag:has(svg [href="#fas-fa-fire-flame-curved"]) {
 	--shadow-color: rgba(255, 153, 0, .5);
 	background-color: #fff8ee;
+	color: #c97800;
+}
+.tags .tag:has(svg [href="#fas-fa-calculator"]) {
+	--shadow-color: rgba(249, 71, 192, .5);
+	background-color: #ffeeee;
+	color: #c32791;
 }
 .tag-inline:has(svg) svg,
 .tags .tag:has(svg) svg {

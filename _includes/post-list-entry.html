@@ -52,7 +52,12 @@
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% icon "fa:headphones" %}{% if post.data.medialength %}<span class="length"> {{ post.data.medialength }}</span>{% endif %}</span>{% endif -%}
 
 		{%- assign postRank = analytics[post.url].rankPerDaysPosted -%}
-		{%- if postRank and postRank <= 20 %}<span class="tag" title="Popularity Ranking">{% if postRank %}{% icon "fas:fire-flame-curved" %}#{{ postRank }}{% endif %}</span>{% endif -%}
+		{%- assign postRankAllTime = analytics[post.url].rankTotal -%}
+		{%- if postRank and postRank <= 20 -%}
+			<span class="tag" title="Popularity Ranking">{% icon "fas:fire-flame-curved" %}#{{ postRank }}</span>
+		{%- elsif postRankAllTime and postRankAllTime <= 20 %}
+			<span class="tag" title="Popularity Ranking (All Time)">{% icon "fas:calculator" %}#{{ postRankAllTime }}</span>
+		{%- endif -%}
 
 		{%- capture absoluteUrl -%}{{ post.url | absoluteUrl }}{%- endcapture -%}
 		{%- assign boostCount = webmentions | webmentionsForUrl: absoluteUrl, "mention-of,repost-of" | size -%}
@@ -80,7 +85,7 @@
 		</span>
 		{%- endif -%}
 
-		{%- if post.data.pinned %}<span title="Pinned">📌</span>{% endif %}
+		{%- if previewImages and post.data.pinned %}<span title="Pinned">📌</span>{% endif %}
 	</span>
 {% comment %}
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>
