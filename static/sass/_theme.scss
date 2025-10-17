@@ -882,24 +882,6 @@ table-saw :is(th, td) {
 		text-decoration: underline;
 	}
 }
-.posts-home.posts-withimg .posts-link-pinned {
-	position: relative;
-}
-.posts-home.posts-withimg .posts-link-pinned:after {
-	position: absolute;
-	right: 0;
-	top: 1em;
-	content: "📌";
-	text-transform: uppercase;
-	font-size: 1rem;
-	font-weight: 700;
-	border-radius: .25em;
-	padding: 0 .5em;
-	background-color: rgba(0,0,0,.5);
-	color: #fff;
-	border: 2px solid rgba(255,255,255,0.2);
-	pointer-events: none;
-}
 
 .posts .subhed {
 	padding: 0;
