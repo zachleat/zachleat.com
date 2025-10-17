@@ -1,5 +1,6 @@
 ---
 title: "A Historical Reference of React Criticism"
+external_icon_url: https://react.dev/
 ---
 There have been a number of criticisms levied at the React project over the years, some of them handled and some of them still wavering in the wind. In this post, I’ll summarize the ones that are most prominent in my memory as a way of maintaining a record (primarily for my own use but maybe you’ll find it useful too). If you have others, [please send them my way](https://fediverse.zachleat.com/@zachleat)!
 

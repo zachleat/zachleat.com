@@ -3,7 +3,6 @@ title: 'Selecthor: A Better way to Learn and Demo CSS Selectors'
 tags:
   - project
 tweet: https://twitter.com/zachleat/status/855413012760588292
-tag_icon: "fab:css"
 ---
 {% renderTemplate "webc" %}<div><youtube-lite-player @slug="CwZniQc0zg0" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 

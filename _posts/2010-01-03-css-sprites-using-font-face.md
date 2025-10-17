@@ -4,7 +4,6 @@ tags:
   - highlight
   - research
   - font-loading
-tag_icon: "fab:css"
 ---
 
 Almost everyone knows the Webdings font or its sibling Wingdings. Even if you don’t, chances are pretty good that it’s installed on your system.

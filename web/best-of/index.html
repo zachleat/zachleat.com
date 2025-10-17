@@ -11,6 +11,6 @@ hidePostsInSidebar: true
 	{% assign currentyear = "" %}
 	{% assign listItems = collections.popularPostsRanked %}
 	{% for post in collections.popularPostsRanked %}
-		{% include "post-list-entry.html", ignoreYear: "true", ignorePopularity: true, previewImages: true %}
+		{% include "post-list-entry.html", ignoreYear: "true", previewImages: true %}
 	{% endfor %}
 </ol>

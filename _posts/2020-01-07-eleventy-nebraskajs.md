@@ -4,7 +4,6 @@ tags:
   - external
   - speaking
   - eleventy
-  - scheduled
 metadata:
   schedule: true
   speaking:

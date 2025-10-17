@@ -11,7 +11,6 @@ metadata:
     country: USA
 #external_url: 'https://nebraskajs.com/2017/sticky/'
 medialength: 10 min
-tag_icon: "fab:css"
 ---
 {% renderTemplate "webc" %}<div><youtube-lite-player @slug="r-fGoST-ckI" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 

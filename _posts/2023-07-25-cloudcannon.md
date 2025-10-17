@@ -8,6 +8,7 @@ metadata:
 external_url: https://www.11ty.dev/blog/cloudcannon/
 external_url_location: end
 medialength: 2 min
+external_icon_url: "https://cloudcannon.com/"
 ---
 <script type="module" src="/static/js/offviewport.js"></script>
 <div>

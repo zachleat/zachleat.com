@@ -13,7 +13,6 @@
 {%- capture nullvoid %}{% increment currentyearpostcount %}{% endcapture %}
 <li
 	class="
-		{%- if post.data.tags contains 'scheduled' %}scheduled {% endif %}
 		{%- if post.data.deprecated %}deprecated {% endif %}
 		{%- if post.data.smalltitle %}smalltitle {% endif %}
 		{%- if post.data.tags contains 'upcoming' %}upcoming {% endif %}
@@ -27,16 +26,6 @@
 		{%- comment %}We can use alt="" here so we don’t duplicate the content with the post title{% endcomment %}
 		<img src="{% ogImageSource post %}" alt="" decoding="async" loading="lazy" class="project_img" eleventy:widths="650,375" sizes="(min-width: 64em) 50vw, 100vw"{% if post.date | isRecentPost %} eleventy:ignore{% endif %}>
 	{%- endif %}
-	{%- if post.data.external_icon_url != false %}
-		{%- if post.data.external_icon_url or post.data.external_url -%}
-			{%- assign iconUrl = post.data.external_url %}
-			{%- if post.data.external_icon_url %}
-				{%- assign iconUrl = post.data.external_icon_url %}
-			{%- endif %}
-			{%- indieAvatar iconUrl "z-avatar z-avatar-eq z-avatar-external" -%}
-		{%- endif %}
-	{%- endif %}
-	{%- if post.data.tags contains 'future-event' %}<em>Upcoming talk:</em> {% endif %}
 	{%- if view == 'project' -%}
 		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}
 	{%- else -%}
@@ -45,29 +34,51 @@
 	</a>
 
 	<span class="tags">
-		{%- capture absoluteUrl -%}{{ post.url | absoluteUrl }}{%- endcapture -%}
+		{%- if post.data.tags contains 'font-awesome' or post.data.tags contains 'web-awesome' %}
+			{%- if post.data.tags contains 'font-awesome' %}{% icon "fab:font-awesome" %}{% endif -%}
+			{%- if post.data.tags contains 'web-awesome' %}{% icon "fab:web-awesome" %}{% endif -%}
+		{% endif -%}
 
-		{%- if post.data.tag_icon %}{% icon post.data.tag_icon %}{% endif -%}
-		{%- if post.data.tags contains 'font-awesome' %}{% icon "fab:font-awesome" %}{% endif -%}
-		{%- if post.data.tags contains 'web-awesome' %}{% icon "fab:web-awesome" %}{% endif -%}
-		{% comment %}{%- if post.data.tags contains 'eleventy' %}{% icon "fab:eleventy" %}{% endif -%}{% endcomment %}
-		{%- if post.data.tags contains 'web-components' %}<span class="tag tag-emoji">🚾</span>{% endif -%}
 		{%- if post.data.tags contains 'conference' %}{% icon "fa:users-between-lines" %}{% endif -%}
-		{%- if post.data.tags contains 'conference' and post.data.event_date -%}
-			<span class="tag">Event</span>
-			<span class="tag tag-event">on {{ post.data.event_date }}</span>
-		{%- endif -%}
+
+		{%- assign iconUrl = post.data.external_icon_url | default: post.data.external_url -%}
+		{%- if post.data.tag_icon %}
+			{%- icon post.data.tag_icon %}
+		{%- elsif iconUrl and post.data.external_icon_url != false -%}
+			{%- indieAvatar iconUrl "z-avatar z-avatar-external" -%}
+		{%- endif %}
+
 		{%- if post.data.tags contains 'video' %}<span class="tag video">{% icon "fa:video" %}{% if post.data.medialength %}<span class="length"> {{ post.data.medialength }}</span>{% endif %}</span>{% endif -%}
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% icon "fa:headphones" %}{% if post.data.medialength %}<span class="length"> {{ post.data.medialength }}</span>{% endif %}</span>{% endif -%}
-{%- if ignorePopularity != true %}
+
 		{%- assign postRank = analytics[post.url].rankPerDaysPosted -%}
 		{%- if postRank and postRank <= 20 %}<span class="tag" title="Popularity Ranking">{% if postRank %}{% icon "fas:fire-flame-curved" %}#{{ postRank }}{% endif %}</span>{% endif -%}
-{%- endif %}
 
-		{%- assign webmentionsCount = webmentions | webmentionsForUrl: absoluteUrl | size -%}
-		{%- assign activityCount = webmentionsCount -%}
-		{%- if commentsCounts[post.url] %}{% assign activityCount = webmentionsCount | plus: commentsCounts[post.url] %}{% endif -%}
-		{%- if activityCount > 0 %}<span class="tag" title="{{ activityCount }} generic activity point{% if activityCount != 1 %}s{% endif %}">{% icon "fas:comments" %}{{ activityCount }}</span>{% endif -%}
+		{%- capture absoluteUrl -%}{{ post.url | absoluteUrl }}{%- endcapture -%}
+		{%- assign boostCount = webmentions | webmentionsForUrl: absoluteUrl, "mention-of,repost-of" | size -%}
+		{%- assign likeCount = webmentions | webmentionsForUrl: absoluteUrl, "like-of" | size -%}
+		{%- assign viewCount = analytics[post.url].pageViews -%}
+
+		{%- if boostCount > 0 or likeCount > 0 or viewCount > 1000 -%}
+		<span class="tag tag-social">
+			{%- if viewCount > 1000 %}
+				<span class="tag-social--view" title="{{ viewCount }} view{% if viewCount != 1 %}s{% endif %}">{% icon "fa:eye" %}{{ viewCount | renderNumber: "0a" }}</span>
+			{%- endif %}
+
+			{%- if boostCount > 0 or likeCount > 0 %}
+				<span class="tag-social--boost" title="{{ boostCount }} boost{% if boostCount != 1 %}s{% endif %}">{% icon "fa:retweet" %}{{ boostCount }}</span>
+				<span class="tag-social--like" title="{{ likeCount }} like{% if likeCount != 1 %}s{% endif %}">{% icon "far:heart" %}{{ likeCount }}</span>
+			{%- endif %}
+
+			{%- assign webmentionCommentCount = webmentions | webmentionsForUrl: absoluteUrl, "in-reply-to,bookmark-of" | size -%}
+			{%- assign replyCount = webmentionCommentCount -%}
+			{%- if commentsCounts[post.url] %}{% assign replyCount = webmentionCommentCount | plus: commentsCounts[post.url] %}{% endif -%}
+			{%- comment %}Only show if I’ve been ratiod 😅{% endcomment -%}
+			{%- if replyCount > boostCount -%}
+				<span class="tag-social--reply" title="{{ replyCount }} repl{% if replyCount != 1 %}ies{% else %}y{% endif %}">{% icon "fas:reply-all" %}{{ replyCount }}</span>
+			{%- endif -%}
+		</span>
+		{%- endif -%}
 	</span>
 {% comment %}
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>

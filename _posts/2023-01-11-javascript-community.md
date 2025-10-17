@@ -1,6 +1,5 @@
 ---
 title: JavaScript, Community
-tag_icon: "fab:square-js"
 ---
 I’ve been a full-time professional web developer for 17 years. In that time, [I’ve seen things](https://www.zachleat.com/twitter/923571836062982144/).
 

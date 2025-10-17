@@ -6,7 +6,6 @@ tags:
   - external
   - speaking
   - eleventy
-  - scheduled
 metadata:
   schedule: true
 external_url: 'https://11tymeetup.dev/events/hello-world/'

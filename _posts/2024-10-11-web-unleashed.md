@@ -4,7 +4,6 @@ tags:
   - external
   - conference
   - speaking
-  - scheduled
   - eleventy
 metadata:
   schedule: true

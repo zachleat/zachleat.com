@@ -226,8 +226,8 @@ export default async function(eleventyConfig) {
 		return count.size;
 	});
 
-	eleventyConfig.addLiquidFilter("renderNumber", function renderNumber(num) {
-		return numeral(parseInt(num, 10)).format("0,0");
+	eleventyConfig.addLiquidFilter("renderNumber", function renderNumber(num, format = "0,0") {
+		return numeral(parseInt(num, 10)).format(format);
 	});
 
 	eleventyConfig.addLiquidFilter("round", function(num, digits = 2) {
@@ -457,9 +457,7 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addCollection("feedPosts", function(collection) {
 		return getPosts(collection).reverse().filter(function(item) {
-			return !item.data.tags ||
-				!item.data.deprecated &&
-				item.data.tags.indexOf("future-event") === -1;
+			return !item.data.tags || !item.data.deprecated;
 		});
 	});
 

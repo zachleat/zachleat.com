@@ -4,6 +4,7 @@ tags:
   - eleventy
   - award
   - resume
+external_icon_url: "https://www.google.com/"
 ---
 
 _Warning: In this post I will be tooting a horn that is my horn. The horn is mine and I will be the one that is tooting it. I know that when there is a horn, the person tooting the horn should ideally not be the person that owns the horn. I would be much more comfortable tooting a horn that is someone else’s horn. But I have been put into this uncomfortable position by someone taking my horn and tooting it. Mostly I just want Eleventy to be useful and this convinces people to try it out. Sorry (not sorry)._

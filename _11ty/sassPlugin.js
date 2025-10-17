@@ -5,8 +5,10 @@ export default function(eleventyConfig) {
 	eleventyConfig.addTemplateFormats("scss");
 
 	eleventyConfig.addExtension("scss", {
+		compileOptions: {
+			cache: false,
+		},
 		outputFileExtension: "css",
-
 		compile: function (inputContent, inputPath) {
 			let parsed = path.parse(inputPath);
 

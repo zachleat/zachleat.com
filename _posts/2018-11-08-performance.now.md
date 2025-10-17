@@ -6,7 +6,6 @@ tags:
   - external
   - conference
   - speaking
-  - scheduled
 metadata:
   schedule: true
   speaking:

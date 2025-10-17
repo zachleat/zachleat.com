@@ -3,9 +3,10 @@ title: Eleventy Crash Course with Nick and Zach—NebraskaJS Omaha
 tags:
   - speaking
   - eleventy
+  - video
 metadata:
   youtubeId: DC5fP_8Q8uQ
-medialength: 5 min
+medialength: 63 min
 ---
 
 [Watch the talk on YouTube](https://www.youtube.com/watch?v=DC5fP_8Q8uQ) (1:03:42) (or embedded below)

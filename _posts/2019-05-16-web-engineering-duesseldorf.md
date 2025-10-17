@@ -6,7 +6,6 @@ tags:
   - external
   - speaking
   - font-loading
-  - scheduled
 metadata:
   schedule: true
   speaking:

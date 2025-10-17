@@ -1,16 +1,16 @@
 ---
-title: "How We Built Web Awesome with 11ty (and Why It’s So Fast) on Podcast Awesome"
+title: "How We Built Web Awesome with 11ty (and Why It’s So Fast)"
 tags:
   - speaking
   - eleventy
   - video
-  - web-awesome
 metadata:
   speaking:
     type: podcast
   youtubeId: 0SKA5vE7d88
 medialength: 35 min
 opengraphSkipFace: true
+external_url: https://www.podcastawesome.com/2092855/episodes/17268471-how-we-built-web-awesome-with-11ty-and-why-it-s-so-fast
 ---
 {% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 

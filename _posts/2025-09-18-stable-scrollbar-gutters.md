@@ -1,7 +1,6 @@
 ---
 title: A tiny bit-o-CSS for Stable Scrollbar Gutters
 toot: https://fediverse.zachleat.com/@zachleat/112615302809374708
-tag_icon: "fab:css"
 ---
 I have my operating system configured to use visible scrollbars, a feature prominently elevated in macOS’ System Settings high enough that it would seem to imply some level of common usage (even though it’s not a default).
 

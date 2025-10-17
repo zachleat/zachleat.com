@@ -5,7 +5,6 @@ tags:
   - external
   - speaking
   - video
-  - font-awesome
 metadata:
   speaking:
     type: livestream

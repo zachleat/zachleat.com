@@ -4,7 +4,6 @@ external_url: https://js-naked-day.org/
 external_url_screenshotmode: opengraph
 tags:
   - external
-tag_icon: "fab:square-js"
 ---
 Today my personal web site is being served _sans-JavaScript_ in honor of JavaScript Naked Day.
 

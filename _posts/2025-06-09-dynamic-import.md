@@ -7,7 +7,6 @@ seo:
 posterImage:
   showOnPage: true
   height: 22em
-tag_icon: "fab:square-js"
 ---
 You can use arbitrary [JavaScript in front matter in Eleventy project files](https://www.11ty.dev/docs/data-frontmatter/#java-script-front-matter) (via the  `js` type).
 

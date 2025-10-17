@@ -42,7 +42,7 @@ tmpl: page
 			{%- else %}
 			{%- unless ignoreExternalLinkInLayoutFile %}
 			<p>
-				{%- if metadata.speaking and not tags contains "future-event" %}
+				{%- if metadata.speaking %}
 				<em class="text-ellipsis">Originally: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
 				{%- else %}
 				<em>Originally posted at: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
@@ -92,7 +92,7 @@ tmpl: page
 		<em><a href="/web/best-of/total-views/">{% icon "fas:calculator" %}#{{ postRankAllTime }}<span class="sr-only"> Popular (total)</span></a></em>
 	{% endif %}
 	{%- if analytics[page.url].pageViews > 500 %}
-		<em>{% icon "fas:eye" %}{{ analytics[page.url].pageViews | renderNumber }} Views</em>
+		<em>{% icon "fa:eye" %}{{ analytics[page.url].pageViews | renderNumber }} Views</em>
 	{%- endif %}
 	</p>
 	{%- if posterImage.source %}

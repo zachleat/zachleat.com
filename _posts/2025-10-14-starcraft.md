@@ -1,6 +1,8 @@
 ---
 title: StarCraft II is still great.
 tag_icon: "fab:battle-net"
+# Not available
+# external_icon_url: https://starcraft2.blizzard.com/
 ---
 [StarCraft II](https://en.wikipedia.org/wiki/StarCraft_II:_Wings_of_Liberty) was first released in 2010 and it’s still amazing:
 
@@ -11,7 +13,7 @@ tag_icon: "fab:battle-net"
 
 I have some old work and personal computers sitting around and was able to install Battle.net and StarCraft II on 4 different machines (some Windows, some macOS) for a little family LAN party — it was *awesome*.
 
-Watching our 8 and 10 year old shout out cooperative instructions as we battled against the computer was special — a nod to the before-times: playing video games with friends in childhood basements.
+Watching our 8 and 10 year olds shout cooperative instructions as we battled against the computer was special — a nod to the before-times: playing video games with friends in childhood basements.
 
 A few caveats:
 

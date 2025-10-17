@@ -3,6 +3,7 @@ title: Six Million npm Downloads for Eleventy
 tags: eleventy
 external_url: 'https://www.11ty.dev/blog/six-million/'
 ignoreExternalLinkInLayoutFile: true
+tag_icon: "fab:npm"
 ---
 {% include "eleventy-millions.html" %}
 

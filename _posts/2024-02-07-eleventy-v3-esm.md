@@ -106,7 +106,6 @@ slides:
     108: The Parasite movie poster.
     109: The Parasite movie poster overlaid with Parasites vs. Para-apps.
     110: Thanks! (the end)
-tag_icon: "fab:square-js"
 ---
 This talk was given at [TheJam.dev 2024](/web/thejam/).
 

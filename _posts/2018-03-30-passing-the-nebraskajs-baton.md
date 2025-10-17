@@ -1,5 +1,6 @@
 ---
 title: Passing the Lead NebraskaJS Organizer Baton
+external_icon_url: "https://nebraskajs.com/"
 ---
 
 As [NebraskaJS](https://nebraskajs.com) continues into its ninth year (and sixth year under my tenure—starting in 2012), it is with a twinge of sadness that I must tell you that the time has come for me to step down as lead organizer of the group. I will still remain an organizer and participant! Practically speaking, perhaps the most visible change to the group here is that my ugly mug isn’t the one that shows up on [our meetup page](https://www.meetup.com/nebraskajs/).

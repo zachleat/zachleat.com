@@ -6,7 +6,6 @@ tags:
   - research
   - highlight
 tweet: https://twitter.com/zachleat/status/880392657847160832
-tag_icon: "fab:css"
 ---
 
 Are you tired of developers abusing the smooth traditionalism of Helvetica? Do you wish your web page was a little bit more fun? Do you also want to avoid discussing things with your peers? Well, do I have some code for you. Add this little block into your project and it will globally alias (rename) Helvetica to Comic Sans MS (and Chalkboard SE, [browser support](https://fontfamily.zachleat.dev/Comic_Sans_MS,Chalkboard_SE)). _(Yes, I know I recently wrote a blog post about [anti-aliasing](/web/font-smooth/)—that’s a different thing.)_

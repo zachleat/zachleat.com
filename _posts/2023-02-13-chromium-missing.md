@@ -1,5 +1,6 @@
 ---
 title: "'Could not find Chromium' with Puppeteer 19"
+external_icon_url: https://pptr.dev/
 ---
 Kept seeing this error on my Netlify builds of the [Speedlify project](https://www.speedlify.dev/) after upgrading to Puppeteer 19:
 

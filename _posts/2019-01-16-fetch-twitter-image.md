@@ -6,6 +6,7 @@ note-tags:
   - JavaScript
   - Command Line
   - Twitter
+tag_icon: "fab:twitter"
 ---
 The [11ty.dev web site](https://www.11ty.dev/) uses avatar images for its Testimonial and Sites Using Eleventy features. I wrote a [script to automatically download those avatar images](https://github.com/11ty/11ty.dev/blob/master/avatars.sh) based on usernames stored in data files in the 11ty.dev repository.
 

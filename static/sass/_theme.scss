@@ -855,12 +855,11 @@ table-saw :is(th, td) {
 
 /* Posts and Content */
 .posts {
-	list-style: none;
+	list-style: "";
 	margin: 0;
 	padding: 0;
 }
 .posts li {
-	position: relative;
 	padding-top: .25em;
 	padding-bottom: .25em;
 	margin-bottom: .125em;
@@ -872,8 +871,6 @@ table-saw :is(th, td) {
 	font-size: 1.157894736842em; /* 22px /19 */
 	line-height: 110%;
 	text-decoration: none;
-
-	@include mixins.unhyphenate;
 }
 .posts .posts-link-more {
 	text-decoration: underline;
@@ -885,11 +882,14 @@ table-saw :is(th, td) {
 		text-decoration: underline;
 	}
 }
+.posts-home.posts-withimg .posts-link-pinned {
+	position: relative;
+}
 .posts-home.posts-withimg .posts-link-pinned:after {
 	position: absolute;
-	right: 1em;
-	top: 2em;
-	content: "📌 Pinned";
+	right: 0;
+	top: 1em;
+	content: "📌";
 	text-transform: uppercase;
 	font-size: 1rem;
 	font-weight: 700;
@@ -953,19 +953,10 @@ table-saw :is(th, td) {
 .project_img {
 	transition: .3s cubic-bezier(0.19, 1, 0.22, 1);
 }
-a[href]:focus .project_img,
-a[href]:hover .project_img {
+a[href]:is(:focus, :hover) .project_img {
 	transform: scale(1.04);
 	border-color: #fff;
 	box-shadow: 0 0 0 6px rgba(0, 106, 35, 0.8), 0 6px 40px 4px rgba(0, 0, 0, .25);
-}
-@supports (box-shadow: none) {
-	a[href]:focus .project_img {
-		box-shadow: 0 0 0 6px rgba(0, 0, 0, .8);
-	}
-	.posts-withimg .posts-link:focus {
-		outline: none;
-	}
 }
 .posts .project_img,
 .posts .project_video {
@@ -992,9 +983,6 @@ a[href]:hover .project_img {
 .posts .date {
 	@include mixins.a11y-only;
 }
-.posts .scheduled {
-	@include mixins.webfontItalic;
-}
 .posts .deprecated,
 .posts .deprecated :link,
 .posts .deprecated :visited {
@@ -1003,9 +991,6 @@ a[href]:hover .project_img {
 .posts .deprecated,
 .posts .deprecated :link {
 	font-size: 1.25rem; /* 20px /16 */
-}
-.posts .deprecated .tags {
-	display: none;
 }
 
 .posts-withimg {
@@ -1016,6 +1001,47 @@ a[href]:hover .project_img {
 .posts-withimg > * {
 	flex-grow: 1;
 	flex-basis: 15em;
+}
+
+@media (min-width: 45em) {
+	/* Wide links, icons align right */
+	.posts:not(.posts-withimg) {
+		li:not(.filter-category--hide) {
+			display: flex;
+			justify-content: space-between;
+			padding-block: .35em;
+			gap: .5em;
+		}
+		li:not(.subhed) .tags {
+			flex-grow: 999;
+
+			&:empty {
+				display: inherit;
+			}
+			&:before {
+				content: "";
+				min-width: .75em;
+				flex-grow: 999;
+				border-bottom: 1px dotted #d0d0d0;
+			}
+			&:not(:empty):before {
+				margin-right: .5em;
+			}
+		}
+		.tags {
+			gap: .3em;
+			flex-wrap: nowrap;
+			white-space: nowrap;
+			justify-content: flex-end;
+		}
+		.posts-link {
+			line-height: 1.4;
+		}
+		.tags > :is(.z-icon, .z-avatar) {
+			margin: 0;
+			min-width: 1.3em;
+		}
+	}
 }
 
 .sub {
@@ -1159,14 +1185,17 @@ a[href]:hover .project_img {
 
 /* Tags */
 .tags {
-	font-family: system-ui, sans-serif;
-	font-weight: 600;
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	gap: .25em;
 	vertical-align: text-bottom;
+}
+.tags,
+.tag-inline {
+	font-family: system-ui, sans-serif;
+	font-weight: 800;
 }
 .tags:empty {
 	display: none;
@@ -1183,25 +1212,94 @@ a[href]:hover .project_img {
 	border-radius: var(--z-border-radius-2);
 	line-height: 1.25;
 }
+.tag-inline:has(svg),
 .tags .tag:has(svg) {
+	--shadow-color: rgba(0,0,0,.15);
 	display: inline-flex;
 	align-items: center;
 	background-color: #f4f4f4;
 	color: #504f4f;
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+	box-shadow: 0 0 0 1px var(--shadow-color);
 	line-height: 1;
 }
+.tags .tag:is(.video, .audio) {
+	--shadow-color: rgba(0,0,0,.4);
+}
+.tags .tag:has(svg [href="#fas-fa-fire-flame-curved"]) {
+	--shadow-color: rgba(255, 153, 0, .5);
+	background-color: #fff8ee;
+}
+.tag-inline:has(svg) svg,
 .tags .tag:has(svg) svg {
-	color: #666;
 	margin-inline-start: 0;
 }
 a[href].tag-inline:not(.tag-borderless),
 .tags a[href].tag:not(.tag-borderless) {
 	border: 1px solid rgba(0, 0, 0, .08);
 }
+
+/* Social proof pill */
+.tags .tag-social {
+	padding: 0;
+	font-size: 0.6875rem; /* 11px /16 */
+
+	&:empty {
+		display: none;
+	}
+
+	@media (max-width: 44.9375em) { /* 719px */
+		display: none !important;
+	}
+}
+.tags .tag-social:has(svg) {
+	background-color: transparent;
+	box-shadow: none;
+}
+.tags .tag-social > * {
+	display: inline-flex;
+	min-height: 2.272727272727em; /* 25px /11 */
+	justify-content: center;
+	align-items: center;
+	gap: 0;
+	padding: 4px 0.5em;
+	border: 1px solid;
+	border-radius: 0;
+}
+.tags .tag-social > :first-child {
+	border-top-left-radius: .5em;
+	border-bottom-left-radius: .5em;
+}
+.tags .tag-social > :last-child {
+	border-top-right-radius: .5em;
+	border-bottom-right-radius: .5em;
+}
+.tags .tag-social > :not(:first-child) {
+	border-inline-start: none;
+}
+.tags .tag-social > :not(:last-child) {
+	border-inline-end: none;
+}
+.tag-social--boost {
+	color: #018901;
+	background-color: #e4f7e4;
+}
+.tag-social--like {
+	color: #880808;
+	background-color: #ffeded;
+}
+.tag-social--view {
+	color: #4f5285;
+	background-color: #e4e4f1;
+}
+.tag-social--reply {
+	color: #8c890f;
+	background-color: #edf1e4;
+}
+/* End social proof pill */
+
 .tag-inline {
-	font-size: 12px;
-	margin-left: 0;
+	font-size: .75rem;
+	margin-inline: .5em;
 }
 .tags .tag:visited {
 	color: #666;
@@ -1671,4 +1769,7 @@ svg.z-icon {
 }
 .fa-youtube {
 	color: var(--icon-color-override, #f03);
+}
+.fa-npm {
+	color: var(--icon-color-override, #cb0000);
 }

@@ -123,6 +123,7 @@ posterImage:
   height: 24em
   name: Brian de Rivera Simon
   source: https://www.flickr.com/photos/fitc/54064427719/in/album-72177720321189329
+external_icon_url: https://fitc.ca/
 ---
 Here are the slides from my talk at Web Unleashed:
 

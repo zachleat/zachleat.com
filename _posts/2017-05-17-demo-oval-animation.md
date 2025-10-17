@@ -1,7 +1,6 @@
 ---
 title: 'Quick Demo: Animating on an Oval Path'
 tweet: https://twitter.com/zachleat/status/865212928571707392
-tag_icon: "fab:css"
 ---
 
 I was experimenting with animating a planet for the [new NEJSCONF web site](https://2017.nejsconf.com/) *(early bird tickets now available)* and stumbled upon this amazingly detailed [Codepen of our Solar System](https://codepen.io/juliangarnier/pen/idhuG). Fortunately, it did exactly what I wanted—so I set out to parse the CSS secrets (nay, Tricks) within. While the code didn’t make it in to the final site, I thought I’d publish a pared down version of the demo in case someone else might find the simplified CSS useful.

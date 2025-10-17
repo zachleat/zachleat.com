@@ -4,7 +4,6 @@ tags:
   - external
   - conference
   - speaking
-  - scheduled
   - jamstack
 metadata:
   schedule: true

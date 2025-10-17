@@ -1,6 +1,6 @@
 ---
 title: Bridgy for Webmentions with Brotli
-tags: []
+external_icon_url: https://brid.gy/
 ---
 **Summary**: Just a fair warning if you use the amazing [Bridgy](https://brid.gy) service to gather webmentions from social networking sites. It won’t actually work with your site if you’re using Brotli compression. Use gzip for your HTML requests instead of Brotli and it will work fine.
 

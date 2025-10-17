@@ -8,6 +8,7 @@ metadata:
   youtubeId: AsWt6BTjzyk
 medialength: 9 min
 opengraphSkipFace: true
+external_icon_url: "https://cloudcannon.com/"
 ---
 <script type="module" src="/static/js/offviewport.js"></script>
 <div>

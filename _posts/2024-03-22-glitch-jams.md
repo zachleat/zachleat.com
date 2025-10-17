@@ -10,6 +10,7 @@ metadata:
     type: livestream
   youtubeId: NiYSbOKZ_H4
 medialength: 75 min
+external_icon_url: https://glitch.com/
 ---
 I was honored to be the very first guest to Glitch Jams Live! Glitch has always been a huge supporter of Eleventy—with a very prominent button to create an Eleventy Starter project on their home page.
 

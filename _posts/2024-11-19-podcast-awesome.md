@@ -4,7 +4,6 @@ tags:
   - speaking
   - eleventy
   - audio
-  - font-awesome
 metadata:
   speaking:
     type: podcast
