@@ -986,7 +986,7 @@ a[href]:is(:focus, :hover) .project_img {
 }
 
 @media (min-width: 45em) {
-	/* Wide links, icons align right */
+	/* List of posts, icons align right */
 	.posts:not(.posts-withimg) {
 		li:not(.filter-category--hide) {
 			display: flex;
@@ -1031,6 +1031,7 @@ a[href]:is(:focus, :hover) .project_img {
 	font-size: 0.8421052631579em; /* 16px /19 */
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	gap: .5em 1.5em;
 	line-height: 1.5;
 	min-height: 2em; /* 32px /16 */
@@ -1185,11 +1186,11 @@ a[href]:is(:focus, :hover) .project_img {
 .tag-inline,
 .tags .tag {
 	display: inline-block;
-	font-size: .75rem;
+	font-size: 0.6315789473684em; /* 12px /19 */
 	height: auto;
 	font-style: normal;
 	color: #666;
-	padding: 4px .5em;
+	padding: .25em .5em;
 	text-decoration: none;
 	border-radius: var(--z-border-radius-2);
 	line-height: 1.25;
@@ -1201,8 +1202,8 @@ a[href]:is(:focus, :hover) .project_img {
 	align-items: center;
 	background-color: #f4f4f4;
 	color: #504f4f;
-	box-shadow: 0 0 0 1px var(--shadow-color);
-	line-height: 1;
+	border: 1px solid var(--shadow-color);
+	line-height: 1.75;
 }
 .tags .tag:is(.video, .audio) {
 	--shadow-color: rgba(0,0,0,.4);
@@ -1229,19 +1230,18 @@ a[href].tag-inline:not(.tag-borderless),
 /* Social proof pill */
 .tags .tag-social {
 	padding: 0;
-	font-size: 0.6875rem; /* 11px /16 */
 
 	&:empty {
 		display: none;
 	}
-
-	@media (max-width: 44.9375em) { /* 719px */
+}
+@media (max-width: 44.9375em) { /* 719px */
+	.posts .tags .tag-social {
 		display: none !important;
 	}
 }
 .tags .tag-social:has(svg) {
-	background-color: transparent;
-	box-shadow: none;
+	border-width: 0;
 }
 .tags .tag-social > * {
 	display: inline-flex;
@@ -1249,7 +1249,7 @@ a[href].tag-inline:not(.tag-borderless),
 	justify-content: center;
 	align-items: center;
 	gap: 0;
-	padding: 4px 0.5em;
+	padding: .25em 0.5em;
 	border: 1px solid;
 	border-radius: 0;
 }

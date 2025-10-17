@@ -51,39 +51,7 @@
 		{%- if post.data.tags contains 'video' %}<span class="tag video">{% icon "fa:video" %}{% if post.data.medialength %}<span class="length"> {{ post.data.medialength }}</span>{% endif %}</span>{% endif -%}
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% icon "fa:headphones" %}{% if post.data.medialength %}<span class="length"> {{ post.data.medialength }}</span>{% endif %}</span>{% endif -%}
 
-		{%- assign postRank = analytics[post.url].rankPerDaysPosted -%}
-		{%- assign postRankAllTime = analytics[post.url].rankTotal -%}
-		{%- if postRank and postRank <= 20 -%}
-			<span class="tag" title="Popularity Ranking">{% icon "fas:fire-flame-curved" %}#{{ postRank }}</span>
-		{%- elsif postRankAllTime and postRankAllTime <= 20 %}
-			<span class="tag" title="Popularity Ranking (All Time)">{% icon "fas:calculator" %}#{{ postRankAllTime }}</span>
-		{%- endif -%}
-
-		{%- capture absoluteUrl -%}{{ post.url | absoluteUrl }}{%- endcapture -%}
-		{%- assign boostCount = webmentions | webmentionsForUrl: absoluteUrl, "mention-of,repost-of" | size -%}
-		{%- assign likeCount = webmentions | webmentionsForUrl: absoluteUrl, "like-of" | size -%}
-		{%- assign viewCount = analytics[post.url].pageViews -%}
-
-		{%- if boostCount > 0 or likeCount > 0 or viewCount > 1000 -%}
-		<span class="tag tag-social">
-			{%- if viewCount > 1000 %}
-				<span class="tag-social--view" title="{{ viewCount }} view{% if viewCount != 1 %}s{% endif %}">{% icon "fa:eye" %}{{ viewCount | renderNumber: "0a" }}</span>
-			{%- endif %}
-
-			{%- if boostCount > 0 or likeCount > 0 %}
-				<span class="tag-social--boost" title="{{ boostCount }} boost{% if boostCount != 1 %}s{% endif %}">{% icon "fa:retweet" %}{{ boostCount }}</span>
-				<span class="tag-social--like" title="{{ likeCount }} like{% if likeCount != 1 %}s{% endif %}">{% icon "far:heart" %}{{ likeCount }}</span>
-			{%- endif %}
-
-			{%- assign webmentionCommentCount = webmentions | webmentionsForUrl: absoluteUrl, "in-reply-to,bookmark-of" | size -%}
-			{%- assign replyCount = webmentionCommentCount -%}
-			{%- if commentsCounts[post.url] %}{% assign replyCount = webmentionCommentCount | plus: commentsCounts[post.url] %}{% endif -%}
-			{%- comment %}Only show if I’ve been ratiod 😅{% endcomment -%}
-			{%- if replyCount > boostCount -%}
-				<span class="tag-social--reply" title="{{ replyCount }} repl{% if replyCount != 1 %}ies{% else %}y{% endif %}">{% icon "fas:reply-all" %}{{ replyCount }}</span>
-			{%- endif -%}
-		</span>
-		{%- endif -%}
+		{%- include "post-popularity-social-tags.html" -%}
 
 		{%- if previewImages and post.data.pinned %}<span title="Pinned">📌</span>{% endif %}
 	</span>
