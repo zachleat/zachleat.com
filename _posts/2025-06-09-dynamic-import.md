@@ -7,6 +7,7 @@ seo:
 posterImage:
   showOnPage: true
   height: 22em
+# Analytics are incomplete for this post (goatcounter wasn’t enabled for a few months)
 ---
 You can use arbitrary [JavaScript in front matter in Eleventy project files](https://www.11ty.dev/docs/data-frontmatter/#java-script-front-matter) (via the  `js` type).
 

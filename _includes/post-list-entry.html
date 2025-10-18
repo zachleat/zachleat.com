@@ -14,8 +14,6 @@
 <li
 	class="
 		{%- if post.data.deprecated %}deprecated {% endif %}
-		{%- if post.data.smalltitle %}smalltitle {% endif %}
-		{%- if post.data.tags contains 'upcoming' %}upcoming {% endif %}
 		{%- if post.data.tags contains 'nejsconf' %}nejsconf {% endif %}
 		{%- if hfeed %}h-entry{% endif %}"
 	{%- if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}{% comment %}
@@ -31,6 +29,7 @@
 	{%- else -%}
 		{%- if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif -%}
 	{%- endif -%}
+	{%- if post.data.deprecated %}<span class="tag-inline tag-borderless">{% icon "fa:skull-crossbones" %}</span>{% endif %}
 	</a>
 
 	<span class="tags">
@@ -38,8 +37,6 @@
 			{%- if post.data.tags contains 'font-awesome' %}{% icon "fab:font-awesome" %}{% endif -%}
 			{%- if post.data.tags contains 'web-awesome' %}{% icon "fab:web-awesome" %}{% endif -%}
 		{% endif -%}
-
-		{%- if post.data.tags contains 'conference' %}{% icon "fa:users-between-lines" %}{% endif -%}
 
 		{%- assign iconUrl = post.data.external_icon_url | default: post.data.external_url -%}
 		{%- if post.data.tag_icon %}
@@ -52,6 +49,10 @@
 		{%- if post.data.tags contains 'audio' %}<span class="tag audio">{% icon "fa:headphones" %}{% if post.data.medialength %}<span class="length"> {{ post.data.medialength }}</span>{% endif %}</span>{% endif -%}
 
 		{%- include "post-popularity-social-tags.html" -%}
+
+		{%- if post.data.external_url -%}
+			<span class="tag tag-borderless">{%- icon "fa:arrow-up-right-from-square" -%}</span>
+		{%- endif -%}
 
 		{%- if previewImages and post.data.pinned %}<span title="Pinned">📌</span>{% endif %}
 	</span>

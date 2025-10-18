@@ -12,6 +12,7 @@ posterImage:
   height: 22em
   name: Siora Photography
   source: https://unsplash.com/photos/selective-focus-photography-of-tape-measure-cixohzDpNIo
+# Analytics are incomplete for this post (goatcounter wasn’t enabled for a few months)
 ---
 `<line-numbers>` is a web component to add line numbers alongside `<pre>` or `<textarea>` elements.
 

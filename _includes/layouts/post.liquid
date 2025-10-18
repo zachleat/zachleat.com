@@ -24,6 +24,7 @@ tmpl: page
 {% endif %}
 			<span class="tags">
 				{%- assign post = page -%}
+				{%- assign alwaysShowStats = true -%}
 				{%- include "post-popularity-social-tags.html" -%}
 			</span>
 		</div>
@@ -41,20 +42,12 @@ tmpl: page
 {% endif %}
 {% if external_url and external_url_location != "end" %}
 		<article class="content-sibling">
-			{%- if tags contains 'upcoming' %}
-			<p><em>This is an upcoming event on {{ date | date: "%B %-d, %Y" }}, learn more at: <a href="{{ external_url }}">{{ external_url }}</a></em></p>
-			{%- else %}
 			{%- unless ignoreExternalLinkInLayoutFile %}
 			<p>
-				{%- if metadata.speaking %}
-				<em class="text-ellipsis">Originally: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
-				{%- else %}
-				<em>Originally posted at: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
-				{%- endif %}
+				<em class="text-ellipsis">Via: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
+				{%- originalPostEmbed external_url, external_url_skipicon, external_url_screenshotmode %}
 			</p>
-			<p>{%- originalPostEmbed external_url, external_url_skipicon, external_url_screenshotmode %}</p>
 			{%- endunless %}
-			{%- endif %}
 		</article>
 {% endif %}
 	</div>
@@ -68,7 +61,7 @@ tmpl: page
 		<article class="content-sibling">
 			<hr>
 			<p>
-				<em>Originally posted at:</em>
+				<em class="text-ellipsis">Via: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
 				{%- originalPostEmbed external_url %}
 			</p>
 		</article>

@@ -920,9 +920,6 @@ table-saw :is(th, td) {
 	color: #333;
 	@include mixins.webfontItalic;
 }
-.posts .smalltitle .posts-link {
-	font-size: 23px;
-}
 .project_img,
 .project_video {
 	width: 100%;
@@ -1101,8 +1098,7 @@ a[href]:is(:focus, :hover) .project_img {
 		white-space: nowrap;
 	}
 	.posts-count .posts-count-exempt:before,
-	.posts-count .subhed:before,
-	.posts-count .upcoming:before {
+	.posts-count .subhed:before {
 		content: "";
 	}
 }
@@ -1195,8 +1191,8 @@ a[href]:is(:focus, :hover) .project_img {
 	border-radius: var(--z-border-radius-2);
 	line-height: 1.25;
 }
-.tag-inline:has(svg),
-.tags .tag:has(svg) {
+.tag-inline:has(svg):not(.tag-borderless),
+.tags .tag:has(svg):not(.tag-borderless) {
 	--shadow-color: rgba(0,0,0,.15);
 	display: inline-flex;
 	align-items: center;
@@ -1221,6 +1217,9 @@ a[href]:is(:focus, :hover) .project_img {
 .tag-inline:has(svg) svg,
 .tags .tag:has(svg) svg {
 	margin-inline-start: 0;
+}
+.tags .tag-borderless:has(svg) svg {
+	margin-inline: 0;
 }
 a[href].tag-inline:not(.tag-borderless),
 .tags a[href].tag:not(.tag-borderless) {
