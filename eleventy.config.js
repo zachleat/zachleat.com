@@ -309,28 +309,43 @@ export default async function(eleventyConfig) {
 
 	//<img src="https://v1.sparkline.11ty.dev/400/100/1,4,10,3,2,40,5,6,20,40,5,1,10,100,5,90/red/" width="400" height="100">
 	eleventyConfig.addLiquidFilter("getYearlyPostCount", (posts, startYear = 2007) => {
-		let years = [];
+		let counts = [];
 		for(let j = startYear; j <= (new Date()).getFullYear(); j++) {
 			let year = j;
 			let count = posts.filter(function(post) {
 				return post.data.page.date.getFullYear() === parseInt(year, 10);
 			}).length;
-			years.push(count);
+			counts.push(count);
 		}
 		return years.join(",");
 	});
 
-	eleventyConfig.addLiquidFilter("getMonthlyPostCount", (posts, year) => {
-		let months = [];
+	eleventyConfig.addLiquidFilter("getMonthlyPostCountForYear", (posts, year) => {
+		let counts = [];
 		for(let month = 0; month < 12; month++) {
 			let count = posts.filter(function(post) {
 				let d = post.data.page.date;
 				return d.getFullYear() === parseInt(year, 10) && d.getMonth() === month;
 			}).length;
 
-			months.push(count);
+			counts.push(count);
 		}
-		return months.join(",");
+		return counts.join(",");
+	});
+
+	eleventyConfig.addLiquidFilter("getMonthlyPostCount", (posts, startYear = 2007) => {
+		let counts = [];
+		for(let year = startYear; year <= (new Date()).getFullYear(); year++) {
+			for(let month = 0; month < 12; month++) {
+				let count = posts.filter(function(post) {
+					let d = post.data.page.date;
+					return d.getFullYear() === parseInt(year, 10) && d.getMonth() === month;
+				}).length;
+
+				counts.push(count);
+			}
+		}
+		return counts.join(",");
 	});
 
 	eleventyConfig.addLiquidFilter("hostnameFromUrl", (url) => {
