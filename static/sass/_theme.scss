@@ -1207,7 +1207,7 @@ a[href]:is(:focus, :hover) .project_img {
 .tags .tag:has(svg [href="#fas-fa-fire-flame-curved"]) {
 	--shadow-color: rgba(255, 153, 0, .5);
 	background-color: #fff8ee;
-	color: #c97800;
+	color: #774700;
 }
 .tags .tag:has(svg [href="#fas-fa-calculator"]) {
 	--shadow-color: rgba(249, 71, 192, .5);
@@ -1714,7 +1714,7 @@ svg.z-icon {
 	margin-inline-end: .3em;
 }
 .fa-fire-flame-curved {
-	color: var(--icon-color-override, #f90);
+	color: var(--icon-color-override, #fb9700);
 }
 .fa-comment,
 .fa-comments {
