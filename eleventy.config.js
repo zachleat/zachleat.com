@@ -309,43 +309,53 @@ export default async function(eleventyConfig) {
 
 	//<img src="https://v1.sparkline.11ty.dev/400/100/1,4,10,3,2,40,5,6,20,40,5,1,10,100,5,90/red/" width="400" height="100">
 	eleventyConfig.addLiquidFilter("getYearlyPostCount", (posts, startYear = 2007) => {
-		let counts = [];
-		for(let j = startYear; j <= (new Date()).getFullYear(); j++) {
-			let year = j;
-			let count = posts.filter(function(post) {
-				return post.data.page.date.getFullYear() === parseInt(year, 10);
-			}).length;
-			counts.push(count);
+		let counts = {};
+		for(let year = startYear; year <= (new Date()).getFullYear(); year++) {
+			counts[year] = 0;
 		}
-		return years.join(",");
+		posts.forEach(function(post) {
+			counts[post.data.page.date.getFullYear()]++;
+		});
+		return Object.values(counts).join(",");
 	});
 
-	eleventyConfig.addLiquidFilter("getMonthlyPostCountForYear", (posts, year) => {
-		let counts = [];
-		for(let month = 0; month < 12; month++) {
-			let count = posts.filter(function(post) {
-				let d = post.data.page.date;
-				return d.getFullYear() === parseInt(year, 10) && d.getMonth() === month;
-			}).length;
+	function getDayOfYear(date) {
+		let startOfYear = new Date(date.getFullYear(), 0 , 1);
+		return Math.floor((date.getTime() - startOfYear.getTime()) / (1000*60*60*24));
+	}
 
-			counts.push(count);
+	function getWeekOfYear(date) {
+		return Math.floor(getDayOfYear(date) / 7);
+	}
+
+	eleventyConfig.addLiquidFilter("getWeeklyPostCountForYear", (posts, year) => {
+		let counts = {};
+		for(let week = 0; week < 52; week++) {
+			counts[week] = 0;
 		}
-		return counts.join(",");
+		posts.forEach(function(post) {
+			let d = post.data.page.date;
+			if(d.getFullYear() !== parseInt(year, 10)) {
+				return;
+			}
+			counts[getWeekOfYear(d)]++;
+		});
+
+		return Object.values(counts).join(",");
 	});
 
 	eleventyConfig.addLiquidFilter("getMonthlyPostCount", (posts, startYear = 2007) => {
-		let counts = [];
+		let counts = {};
 		for(let year = startYear; year <= (new Date()).getFullYear(); year++) {
 			for(let month = 0; month < 12; month++) {
-				let count = posts.filter(function(post) {
-					let d = post.data.page.date;
-					return d.getFullYear() === parseInt(year, 10) && d.getMonth() === month;
-				}).length;
-
-				counts.push(count);
+				counts[`${year}-${month}`] = 0;
 			}
 		}
-		return counts.join(",");
+		posts.forEach(function(post) {
+			let d = post.data.page.date;
+			counts[`${d.getFullYear()}-${d.getMonth()}`]++;
+		});
+		return Object.values(counts).join(",");
 	});
 
 	eleventyConfig.addLiquidFilter("hostnameFromUrl", (url) => {
