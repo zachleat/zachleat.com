@@ -120,14 +120,19 @@ export async function getFilteredImageColors(target) {
 		return [];
 	}
 
-	let colors = await getImageColors(target);
-	return colors.filter(c => {
-		// colors with good contrast with light text or extra good with dark text (white is boring)
-		return (c.contrast.light >= 4.5 || c.contrast.dark > 7) && c.colorjs.oklch.l < .95;
-	}).sort((a, b) => {
-		// lightest + chroma colors first
-		return (b.colorjs.oklch.l + b.colorjs.oklch.c) - (a.colorjs.oklch.l + a.colorjs.oklch.c);
-	});
+	try {
+		let colors = await getImageColors(target);
+		return colors.filter(c => {
+			// colors with good contrast with light text or extra good with dark text (white is boring)
+			return (c.contrast.light >= 4.5 || c.contrast.dark > 7) && c.colorjs.oklch.l < .95;
+		}).sort((a, b) => {
+			// lightest + chroma colors first
+			return (b.colorjs.oklch.l + b.colorjs.oklch.c) - (a.colorjs.oklch.l + a.colorjs.oklch.c);
+		});
+	} catch(e) {
+		console.warn(`Error fetching colors for ${target}`, e.message);
+		return [];
+	}
 }
 
 export default function(eleventyConfig) {
