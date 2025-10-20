@@ -1191,8 +1191,8 @@ a[href]:is(:focus, :hover) .project_img {
 	border-radius: var(--z-border-radius-2);
 	line-height: 1.25;
 }
-.tag-inline:has(svg):not(.tag-borderless),
-.tags .tag:has(svg):not(.tag-borderless) {
+.tag-inline:where(:has(svg):not(.tag-borderless)),
+.tags .tag:where(:has(svg):not(.tag-borderless)) {
 	--shadow-color: rgba(0,0,0,.15);
 	display: inline-flex;
 	align-items: center;
