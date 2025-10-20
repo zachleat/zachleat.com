@@ -23,11 +23,56 @@ import pluginSass from "./_11ty/sassPlugin.js";
 import pluginImageAvatar, { getIndieAvatarUrl } from "./_11ty/imageAvatarPlugin.js";
 import pluginWebmentions from "./_11ty/webmentionsPlugin.js";
 import pluginAnalytics from "./_11ty/analyticsPlugin.js";
+import { leftpad } from "./_11ty/util.js";
 
 const JS_ENABLED = true;
 
 function resolveModule(name) {
 	return fileURLToPath(import.meta.resolve(name));
+}
+
+function getDayOfYear(date) {
+	let startOfYear = new Date(date.getFullYear(), 0 , 1);
+	return Math.floor((date.getTime() - startOfYear.getTime()) / (1000*60*60*24));
+}
+
+function getWeekOfYear(date) {
+	return Math.floor(getDayOfYear(date) / 7);
+}
+
+function getPosts(collectionApi) {
+	return collectionApi.getFilteredByGlob("./_posts/**/*.{md,html}").reverse().filter(function(item) {
+		return !!item.data.permalink;
+	});
+}
+
+function hasTag(post, tag) {
+	return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
+}
+
+function hasCategory(post, category) {
+	return "categories" in post.data && post.data.categories && post.data.categories.indexOf(category) > -1;
+}
+
+function isWriting(item) {
+	if(!item.inputPath.match(/\/_posts\//)) {
+		return false;
+	}
+
+	if(hasTag(item, "writing")) {
+		return true;
+	}
+
+	if(hasTag(item, "speaking") || hasCategory(item, "presentations")) {
+		return false;
+	}
+
+	return true;
+}
+
+function isSpeaking(item) {
+	return "categories" in item.data &&
+		(item.data.categories || []).indexOf("presentations") > -1 || hasTag(item, "speaking");
 }
 
 export default async function(eleventyConfig) {
@@ -184,10 +229,6 @@ export default async function(eleventyConfig) {
 		return `https://web.archive.org/web/${targetYear || 2023}0000000000*/${url}`;
 	});
 
-	function leftpad(str, length = 3) {
-		let padding = Array.from({length}).map(t => "0").join("");
-		return (padding + str).substring((""+str).length);
-	}
 	eleventyConfig.addFilter("leftpad", leftpad);
 
 	eleventyConfig.addFilter("truncate", (str, len = 280) => { // tweet sized default
@@ -318,15 +359,6 @@ export default async function(eleventyConfig) {
 		return Object.values(counts).join(",");
 	});
 
-	function getDayOfYear(date) {
-		let startOfYear = new Date(date.getFullYear(), 0 , 1);
-		return Math.floor((date.getTime() - startOfYear.getTime()) / (1000*60*60*24));
-	}
-
-	function getWeekOfYear(date) {
-		return Math.floor(getDayOfYear(date) / 7);
-	}
-
 	eleventyConfig.addLiquidFilter("getWeeklyPostCountForYear", (posts, year) => {
 		let counts = {};
 		for(let week = 0; week < 52; week++) {
@@ -442,12 +474,6 @@ export default async function(eleventyConfig) {
 	});
 
 	/* COLLECTIONS */
-	function getPosts(collectionApi) {
-		return collectionApi.getFilteredByGlob("./_posts/**/*.{md,html}").reverse().filter(function(item) {
-			return !!item.data.permalink;
-		});
-	}
-
 	eleventyConfig.addCollection("posts", function(collection) {
 		return getPosts(collection);
 	});
@@ -484,32 +510,6 @@ export default async function(eleventyConfig) {
 			return !item.data.tags || !item.data.deprecated;
 		});
 	});
-
-	function hasTag(post, tag) {
-		return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
-	}
-	function hasCategory(post, category) {
-		return "categories" in post.data && post.data.categories && post.data.categories.indexOf(category) > -1;
-	}
-	function isWriting(item) {
-		if(!item.inputPath.match(/\/_posts\//)) {
-			return false;
-		}
-
-		if(hasTag(item, "writing")) {
-			return true;
-		}
-
-		if(hasTag(item, "speaking") || hasCategory(item, "presentations")) {
-			return false;
-		}
-
-		return true;
-	}
-	function isSpeaking(item) {
-		return "categories" in item.data &&
-			(item.data.categories || []).indexOf("presentations") > -1 || hasTag(item, "speaking");
-	}
 
 	eleventyConfig.addLiquidFilter("getFilterCategories", function(collectionItem) {
 		let categories = [];

@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { getImageColors } from "@11ty/image-color";
+import { leftpad } from "./util.js";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
@@ -201,7 +202,7 @@ export default function(eleventyConfig) {
 			let d = new Date();
 			let cacheBustOverride;
 			if(process.env.PRODUCTION_BUILD && isRecentPost(date)) {
-				cacheBustOverride = `_r${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+				cacheBustOverride = `_r${d.getFullYear()}${leftpad(d.getMonth(), 2)}${leftpad(d.getDate(), 2)}`;
 			}
 			return getScreenshotUrlFromPath(`/opengraph${url}`, undefined, cacheBustOverride);
 		}
