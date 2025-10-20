@@ -12,13 +12,13 @@ import { AssetCache } from "@11ty/eleventy-fetch";
 
 import { RenderPlugin, IdAttributePlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
-import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginWebc from "@11ty/eleventy-plugin-webc";
 import fontAwesomePlugin from "@11ty/font-awesome";
 
 import siteData from "./_data/site.json" with { type: "json" };
 import pluginImage, { opengraphImageHtml, screenshotImageHtmlFullUrl, getFilteredImageColors } from "./_11ty/imagePlugin.js";
 
+import pluginSyntaxHighlight from "./_11ty/syntaxHighlightPlugin.js";
 import pluginSass from "./_11ty/sassPlugin.js";
 import pluginImageAvatar, { getIndieAvatarUrl } from "./_11ty/imageAvatarPlugin.js";
 import pluginWebmentions from "./_11ty/webmentionsPlugin.js";
@@ -32,7 +32,6 @@ function resolveModule(name) {
 
 export default async function(eleventyConfig) {
 	const slugify = eleventyConfig.getFilter("slugify");
-
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 	eleventyConfig.addGlobalData("currentDate", () => new Date());
 
@@ -444,7 +443,7 @@ export default async function(eleventyConfig) {
 
 	/* COLLECTIONS */
 	function getPosts(collectionApi) {
-		return collectionApi.getFilteredByGlob("./_posts/**/*.md").reverse().filter(function(item) {
+		return collectionApi.getFilteredByGlob("./_posts/**/*.{md,html}").reverse().filter(function(item) {
 			return !!item.data.permalink;
 		});
 	}

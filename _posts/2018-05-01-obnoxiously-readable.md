@@ -106,13 +106,13 @@ _Update on 2018 May 25_: There is an incredible article written by <a href="http
 
 ### Twin Props
 
-{% highlight css %}
+```css
 #demo-1 {
     /* Minimum font-size */
     font-size: 20px;
     font-size: 6.25vw;
 }
-{% endhighlight %}
+```
 
 I’ve seen some developers suggest forgoing the minimum media query altogether with the above code. This is _probably_ fine but I don’t really like that an unbounded minimum font-size could quickly become unreadable at super small breakpoints. Get on that smart watch, y’all.
 
@@ -120,7 +120,7 @@ I’ve seen some developers suggest forgoing the minimum media query altogether 
 
 It does make me wonder how container queries (or similar) might work with Viewport Units. I’m starting to see now that the addition of a future Container Unit might be warranted to simplify the above code.
 
-{% highlight css %}
+```css
 #demo-2 {
     font-size: 20px;
 }
@@ -130,7 +130,7 @@ It does make me wonder how container queries (or similar) might work with Viewpo
         font-size: 6.25cw;
     }
 }
-{% endhighlight %}
+```
 
 This would alleviate the need for the second breakpoint altogether, as the font-size would be determined by the size of an arbitrary container, which already has an upper bound `max-width` on it.
 

@@ -32,14 +32,14 @@ I’ve hopefully streamlined the setup here enough that you can use this up for 
 1. Run your own Speedlify instance. You can learn more at [the GitHub repository](https://github.com/zachleat/speedlify/) or <a href="https://app.netlify.com/start/deploy?repository=https://github.com/zachleat/speedlify">Deploy to Netlify</a>
 	* Modify the files in Speedlify’s `_data/sites/*.js` folder with your own URLs!
 2. Consume the Speedlify API data files—they are generated automatically with your Speedlify instance.
-	* Use [Eleventy’s Cache Assets plugin](https://github.com/11ty/eleventy-cache-assets) {% highlight bash %}npm install @11ty/eleventy-cache-assets --save-dev{% endhighlight %}
+	* Use [Eleventy’s Cache Assets plugin](https://github.com/11ty/eleventy-cache-assets) {% highlight "bash" %}npm install @11ty/eleventy-cache-assets --save-dev{% endhighlight %}
 	* Copy and paste the small [`speedlify.js` Eleventy global data file](https://github.com/zachleat/zachleat.com/blob/e6c9cc7eb3e05ba06d34c909bbf36eb9dea84273/_data/speedlify.js) to your global data directory. This tells us which URLs are speed tested in Speedlify. Change the URL in `speedlify.js` to point to your `/api/urls.json` file. Mine is `https://www.speedlify.dev/api/urls.json`.
 3. Use the [`<speedlify-score>` Web Component](https://github.com/zachleat/speedlify-score/). (_These instructions were updated July 17, 2020_)
 	* `npm install speedlify-score`
 	* Add the `speedlify-score.js` JavaScript and the `speedlify-score.css` CSS to your page.
 	* Add the `<speedlify-score>` markup to your page where you want the score to show up. I’d recommend putting it in the footer of your page.
 	* Use the `speedlify.js` Eleventy global data file we added earlier to set the `hash` attribute. Have a look at [my `footer.html` to see how I did it using Liquid templates](https://github.com/zachleat/zachleat.com/blob/cb3ea00450be79d2b9233bac9fcbcf945ea72397/_includes/footer.html#L16-L21) (only lines 16 through 19).
-	* Also set the `speedlify-url` attribute to point to your Speedlify instance. Mine is {% highlight html %}speedlify-url="https://www.speedlify.dev"{% endhighlight %}
+	* Also set the `speedlify-url` attribute to point to your Speedlify instance. Mine is {% highlight "html" %}speedlify-url="https://www.speedlify.dev"{% endhighlight %}
 
 ## Go forth and speed test!
 

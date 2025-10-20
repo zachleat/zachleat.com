@@ -44,7 +44,7 @@ This was an important reminder to me that progressive enhancement is a continuum
 <script type="module" src="/static/squirminal.js"></script>
 <style>pre { margin: 0; }</style>
 <div><squirm-inal autoplay speed=".6" dimensions>
-{%- highlight js %}
+{% highlight "js" %}
 class MyComponent extends HTMLElement {
 	connectedCallback() {
 		// web component stuff
@@ -60,7 +60,7 @@ class MyComponent extends HTMLElement {
 if("customElements" in window) {
 	customElements.define("my-component", MyComponent);
 }
-{%- endhighlight %}
+{% endhighlight %}
 </squirm-inal></div>
 
 ### In the wild

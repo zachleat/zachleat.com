@@ -16,14 +16,14 @@ tags:
 <h3 name="9e45" id="9e45" class="graf graf--h3 graf-after--p">Let’s add a filter</h3>
 <p name="8509" id="8509" class="graf graf--p graf-after--h3">Let’s do something fancy. Let’s display the file size of each of the GIFs next to their link. To do this, we can make a filter. Filters are added inside of the config file, so let’s make one—an <code class="markup--code markup--p-code">.eleventy.js</code> file. It should look like this:</p>
 
-{% highlight js %}module.exports = (function(eleventyConfig) {
+{% highlight "js" %}module.exports = (function(eleventyConfig) {
 
 });{% endhighlight %}
 
 <p name="04fd" id="04fd" class="graf graf--p graf-after--pre">You don’t have to use <code class="markup--code markup--p-code">.eleventy.js</code> but every time you run <code class="markup--code markup--p-code">eleventy</code> you’ll have to pass in the config file name with <code class="markup--code markup--p-code">--config=myConfig.js</code>. So, it’s easier to use the default.</p>
 <p name="1550" id="1550" class="graf graf--p graf-after--p">Let’s add our filter with the <code class="markup--code markup--p-code">.addFilter</code> method. We’ll call it <code class="markup--code markup--p-code">filesize</code> and it will just return some dummy text.</p>
 
-{% highlight js %}module.exports = (function(eleventyConfig) {
+{% highlight "js" %}module.exports = (function(eleventyConfig) {
  eleventyConfig.addFilter("filesize", function(path) {
   return "0 KB";
  });
@@ -32,56 +32,58 @@ tags:
 <p name="379e" id="379e" class="graf graf--p graf-after--pre">Obviously this isn’t correct because we’re just returning <code class="markup--code markup--p-code">&quot;0 KB&quot;</code> every time. But let’s get it working first.</p>
 <p name="2ada" id="2ada" class="graf graf--p graf-after--p">Open up our <code class="markup--code markup--p-code">index.html</code> template and look for our list loop. Here’s what it looked like when we finished last time:</p>
 
-{% highlight text %}&lt;ul&gt;
+{% highlight "liquid" %}{% raw %}<ul>
 {% for filename in images %}
- &lt;li&gt;&lt;a href=&quot;img/{{ filename | url_encode }}&quot;&gt;{{ filename }}&lt;/a&gt;&lt;/li&gt;
+ <li><a href=&quot;img/{{ filename | url_encode }}&quot;>{{ filename }}</a></li>
 {% endfor %}
-&lt;/ul&gt;{% endhighlight %}
+</ul>{% endraw %}{% endhighlight %}
 
 <p name="0618" id="0618" class="graf graf--p graf-after--pre">Notice how we’re using a built-in filter <code class="markup--code markup--p-code">url_encode</code> provided by the Liquid templating engine. Yeah, we made our own though, so let’s add some stuff to call the filter we made, like this:</p>
 
-{% highlight text %}&lt;ul&gt;
+{% highlight "liquid" %}{% raw %}<ul>
 {% for filename in images %}
  {% capture path %}img/{{ filename }}{% endcapture %}
- &lt;li&gt;&lt;a href=&quot;img/{{ filename | url_encode }}&quot;&gt;{{ filename }}&lt;/a&gt; {{ path | filesize }}&lt;/li&gt;
+ <li><a href=&quot;img/{{ filename | url_encode }}&quot;>{{ filename }}</a> {{ path | filesize }}</li>
  {% endfor %}
-&lt;/ul&gt;{% endhighlight %}
+</ul>{% endraw %}{% endhighlight %}
 
 <p name="9563" id="9563" class="graf graf--p graf-after--pre">The magic part is <code class="markup--code markup--p-code">{% raw %}{{ path | filesize }}{% endraw %}</code>, of course. But also note that we’re using the <code class="markup--code markup--p-code">{% raw %}{% capture %}{% endraw %}</code> Liquid tag to create a new <code class="markup--code markup--p-code">path</code> variable in Liquid that gets passed into our filter.</p>
 <p name="44fc" id="44fc" class="graf graf--p graf-after--p">Now, run <code class="markup--code markup--p-code">eleventy</code> to generate the templates.</p>
 
-{% highlight text %}~/giffleball $ eleventy --formats=html,gif,jpg<br>Writing _site/index.html from ./index.html.<br>Wrote 1 file in 0.07 seconds{% endhighlight %}
+{% highlight "bash" %}~/giffleball $ eleventy --formats=html,gif,jpg
+Writing _site/index.html from ./index.html.
+Wrote 1 file in 0.07 seconds{% endhighlight %}
 
 <p name="d8ae" id="d8ae" class="graf graf--p graf-after--pre">This outputs the following markup to <code class="markup--code markup--p-code">_site/index.html</code> (we’re only showing the list output here and not the full HTML output for brevity):</p>
 
-{% highlight text %}&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;img/%3F%3F%3F.jpg&quot;&gt;???.jpg&lt;/a&gt; 0 KB&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;img/%E2%80%A6.jpg&quot;&gt;….jpg&lt;/a&gt; 0 KB&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;img/parrot.gif&quot;&gt;parrot.gif&lt;/a&gt; 0 KB&lt;/li&gt;
-&lt;/ul&gt;{% endhighlight %}
+{% highlight "html" %}<ul>
+  <li><a href="img/%3F%3F%3F.jpg">???.jpg</a> 0 KB</li>
+  <li><a href="img/%E2%80%A6.jpg">….jpg</a> 0 KB</li>
+  <li><a href="img/parrot.gif">parrot.gif</a> 0 KB</li>
+</ul>{% endhighlight %}
 
 <p name="fabc" id="fabc" class="graf graf--p graf-after--pre">Okay, that’s close—but why does it have extra whitespace? <em class="markup--em markup--p-em">(Take special care to note that this is a rhetorical question and if you keep reading I will provide you with the answer.)</em> When Liquid processes templates, it doesn’t remove line breaks and spacing around Liquid tags. Luckily, it does provide tools to control whitespace! Instead of<code class="markup--code markup--p-code">{{ "{%" }}</code>, use <code class="markup--code markup--p-code">{{ "{%-" }}</code> to remove the whitespace before the Liquid tag. And independently, instead of <code class="markup--code markup--p-code">{{ "%}" }}</code> you can also use <code class="markup--code markup--p-code">{{ "-%}" }}</code> at the end to remove whitespace after the Liquid tag. One or the other. Both. Personally, I think it looks the best with just <code class="markup--code markup--p-code">{{ "{%-" }}</code> at the beginning. A clean View Source is important to me, so let’s clean it up:</p>
 
-{% highlight text %}&lt;ul&gt;
+{% highlight "liquid" %}{% raw %}<ul>
  {%- for filename in images %}
  {%- capture path %}img/{{ filename }}{% endcapture %}
- &lt;li&gt;&lt;a href=&quot;img/{{ filename | url_encode }}&quot;&gt;{{ filename }}&lt;/a&gt; {{ path | filesize }}&lt;/li&gt;
+ <li><a href="img/{{ filename | url_encode }}">{{ filename }}</a> {{ path | filesize }}</li>
  {%- endfor %}
- &lt;/ul&gt;{% endhighlight %}
+ </ul>{% endraw %}{% endhighlight %}
 
 <p name="8a6d" id="8a6d" class="graf graf--p graf-after--pre">This outputs:</p>
 
-{% highlight text %}&lt;ul&gt;
- &lt;li&gt;&lt;a href=&quot;img/%3F%3F%3F.jpg&quot;&gt;???.jpg&lt;/a&gt; 0 KB&lt;/li&gt;
- &lt;li&gt;&lt;a href=&quot;img/%E2%80%A6.jpg&quot;&gt;….jpg&lt;/a&gt; 0 KB&lt;/li&gt;
- &lt;li&gt;&lt;a href=&quot;img/parrot.gif&quot;&gt;parrot.gif&lt;/a&gt; 0 KB&lt;/li&gt;
-&lt;/ul&gt;{% endhighlight %}
+{% highlight "html" %}<ul>
+ <li><a href="img/%3F%3F%3F.jpg">???.jpg</a> 0 KB</li>
+ <li><a href="img/%E2%80%A6.jpg">….jpg</a> 0 KB</li>
+ <li><a href="img/parrot.gif">parrot.gif</a> 0 KB</li>
+</ul>{% endhighlight %}
 
 <p name="13c9" id="13c9" class="graf graf--p graf-after--pre">Beautiful.</p>
 <h3 name="255e" id="255e" class="graf graf--h3 graf-after--p">Don’t celebrate yet, our filter doesn’t work</h3>
 <p name="3fb3" id="3fb3" class="graf graf--p graf-after--h3">Okay, let’s make our filter actually work instead of just returning <code class="markup--code markup--p-code">&quot;0 KB&quot;</code> all the time. Change our <code class="markup--code markup--p-code">.eleventy.js</code> file to this:</p>
 
-{% highlight js %}const fs = require("fs");
+{% highlight "js" %}const fs = require("fs");
 
 module.exports = (function(eleventyConfig) {
  eleventyConfig.addFilter("filesize", function(path) {
@@ -97,15 +99,19 @@ module.exports = (function(eleventyConfig) {
 <h3 name="02fd" id="02fd" class="graf graf--h3 graf-after--p">Go further with NPM</h3>
 <p name="a87d" id="a87d" class="graf graf--p graf-after--h3">One of the best benefits of Eleventy over Static Site Generators like Jekyll or Hugo is access to the NPM ecosystem. So many great modules. So if you’re brave enough to do some <code class="markup--code markup--p-code">npm</code> magic, run this to create a <code class="markup--code markup--p-code">package.json</code> for our project:</p>
 
-{% highlight text %}~/giffleball $ npm init -f{% endhighlight %}
+{% highlight "bash" %}~/giffleball $ npm init -f{% endhighlight %}
 
 <p name="c640" id="c640" class="graf graf--p graf-after--pre">Now we can start installing cool modules to our project, like <a href="https://www.npmjs.com/package/file-size" data-href="https://www.npmjs.com/package/file-size" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">file-size for better readable file sizes</a>.</p>
 
-{% highlight text %}~/giffleball $ npm install --save file-size<br>+ file-size@1.0.0<br>added 1 package in 1.491s{% endhighlight %}
+{% highlight "diff-bash" %}
+ ~/giffleball $ npm install --save file-size
++ file-size@1.0.0
+ added 1 package in 1.491s
+{% endhighlight %}
 
 <p name="d635" id="d635" class="graf graf--p graf-after--pre">Let’s use it in our <code class="markup--code markup--p-code">.eleventy.js</code> filter code:</p>
 
-{% highlight js %}const fs = require("fs");
+{% highlight "js" %}const fs = require("fs");
 const filesize = require("file-size");
 
 module.exports = (function(eleventyConfig) {
@@ -120,12 +126,12 @@ module.exports = (function(eleventyConfig) {
 
 <p name="9761" id="9761" class="graf graf--p graf-after--pre">Outputs:</p>
 
-{% highlight text %}
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;img/%3F%3F%3F.jpg&quot;&gt;???.jpg&lt;/a&gt; 44.52 KiB&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;img/%E2%80%A6.jpg&quot;&gt;&hellip;.jpg&lt;/a&gt; 55.39 KiB&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;img/parrot.gif&quot;&gt;parrot.gif&lt;/a&gt; 2.05 KiB&lt;/li&gt;
-&lt;/ul&gt;
+{% highlight "html" %}
+<ul>
+  <li><a href="img/%3F%3F%3F.jpg">???.jpg</a> 44.52 KiB</li>
+  <li><a href="img/%E2%80%A6.jpg">….jpg</a> 55.39 KiB</li>
+  <li><a href="img/parrot.gif">parrot.gif</a> 2.05 KiB</li>
+</ul>
 {% endhighlight %}
 
 <p name="9250" id="9250" class="graf graf--p graf-after--pre">Congratulations! You added a filter that tapped into the vast and wide NPM ecosystem.</p>
