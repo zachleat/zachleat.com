@@ -97,10 +97,6 @@ modules:
 
 	{%- if JS_ENABLED %}
 	<time-difference class="built-ago-sidebar" live><strong>Built <time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}">{{ currentDate | readableDate }}</time></strong></time-difference>
-	<is-land on:idle on:visible>
-		<template data-island="once">
-			<script type="module" src="/static/js/time-difference.js"></script>
-		</template>
-	</is-land>
+	<script type="module" src="/static/js/time-difference.js"></script>
 {%- endif %}
 </div>

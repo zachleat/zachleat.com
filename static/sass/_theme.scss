@@ -1775,6 +1775,34 @@ svg.z-icon {
 		display: block;
 	}
 }
-time-difference:not(:defined).built-ago-sidebar {
+time-difference:not(:defined) {
 	display: none;
+}
+footer time-difference:not(:defined) {
+	display: block;
+}
+
+/* Islands */
+// is-land[ready] {
+// 	display: contents;
+// }
+
+// Footer
+.toggle-features-form {
+	margin-block: .5em;
+}
+.toggle-features-form is-land {
+	display: flex;
+}
+.toggle-features-form button {
+	white-space: nowrap;
+}
+.toggle-features-form > .fl {
+	--lo-margin-h: 1em;
+	--lo-margin-v: .5em;
+	align-items: center;
+}
+.toggle-features-form > .fl > * {
+	display: flex;
+	flex-grow: 0;
 }

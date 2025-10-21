@@ -74,23 +74,3 @@
 .toggle[aria-pressed="true"] .toggle-control:after {
 	left: calc(1em + var(--toggle-padding)); /* 16px /16 */
 }
-
-/* Forms */
-.toggle-features-form {
-	margin-top: .5em;
-}
-.toggle-features-form is-land {
-	display: flex;
-}
-.toggle-features-form button {
-	white-space: nowrap;
-}
-.toggle-features-form > .fl {
-	--lo-margin-h: 1em;
-	--lo-margin-v: .5em;
-	align-items: center;
-}
-.toggle-features-form > .fl > * {
-	display: flex;
-	flex-grow: 0;
-}

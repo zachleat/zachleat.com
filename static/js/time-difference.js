@@ -6,6 +6,7 @@ class TimeDifference extends HTMLElement {
 		hours:    60 * 60,
 		days:     60 * 60 * 24,
 		weeks:    60 * 60 * 24 * 7,
+		months:    60 * 60 * 24 * (365/12),
 		years:    60 * 60 * 24 * 365,
 	};
 
