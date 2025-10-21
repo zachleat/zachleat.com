@@ -28,9 +28,9 @@
 				</a>
 {%- endif %}
 {%- if JS_ENABLED %}
+				<time-difference live class="tag tag-popular-rail tag-borderless"><em>Built <time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}">{{ currentDate | readableDate }}</time></em></time-difference>
 				<is-land on:idle on:visible>
 					<template data-island="once">
-						<time-difference live class="tag tag-popular-rail tag-borderless"><em>Built <time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}"></time></em></time-difference>
 						<script type="module" src="/static/js/time-difference.js"></script>
 					</template>
 				</is-land>

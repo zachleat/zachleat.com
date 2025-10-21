@@ -1760,3 +1760,21 @@ svg.z-icon {
 .fa-npm {
 	color: var(--icon-color-override, #cb0000);
 }
+
+/* Built … ago */
+.built-ago-sidebar {
+	display: none;
+	transform-origin: bottom left;
+	transform: rotate(90deg) translate(2em, 0);
+	white-space: nowrap;
+	font-size: 0.875em; /* 14px /16 */
+	color: #444;
+}
+@media (min-width: config.$twoColLayoutMinWidth) {
+	.built-ago-sidebar {
+		display: block;
+	}
+}
+time-difference:not(:defined).built-ago-sidebar {
+	display: none;
+}

@@ -54,7 +54,7 @@ modules:
 							<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire-flame-curved" %}</a></div>
 
 							{% for post in collections.popularPostsRanked limit:4 %}
-							<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }} <em>{{ post.date | timePosted }}</em></a>
+							<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }} <em>({{ post.date | readableDate: "yyyy" }})</em></a>
 							{% endfor %}
 						</div>
 					{%- endif %}
@@ -94,4 +94,13 @@ modules:
 {%- endif %}
 		</template>
 	</is-land>
+
+	{%- if JS_ENABLED %}
+	<time-difference class="built-ago-sidebar" live><strong>Built <time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}">{{ currentDate | readableDate }}</time></strong></time-difference>
+	<is-land on:idle on:visible>
+		<template data-island="once">
+			<script type="module" src="/static/js/time-difference.js"></script>
+		</template>
+	</is-land>
+{%- endif %}
 </div>
