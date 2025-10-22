@@ -16,12 +16,12 @@
 .callout-hed {
 	text-transform: uppercase;
 	margin-bottom: .5em;
-	@include mixins.webfontBold;
+	font-weight: 700;
 }
 .callout p {
 	margin: 0;
 	line-height: 160%;
-	@include mixins.webfontItalic;
+	font-style: italic;
 }
 .callout-alert,
 .callout-warning {

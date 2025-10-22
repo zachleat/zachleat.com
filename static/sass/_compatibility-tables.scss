@@ -4,7 +4,7 @@
 .better,
 .worse {
 	white-space: nowrap;
-	@include mixins.webfontBold;
+	font-weight: 700;
 }
 .worse {
 	color: #CB000F;

@@ -23,21 +23,6 @@
 @mixin webfontBold {
 	& {
 		font-family: Lato, Numero, config.$fallbackSystemFont;
-		font-style: normal;
-		font-weight: 700;
-	}
-}
-@mixin webfontItalic {
-	& {
-		font-family: Lato, Numero, config.$fallbackSystemFont;
-		font-style: italic;
-		font-weight: 400;
-	}
-}
-@mixin webfontBoldItalic {
-	& {
-		font-family: Lato, Numero, config.$fallbackSystemFont;
-		font-style: italic;
 		font-weight: 700;
 	}
 }

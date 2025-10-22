@@ -200,11 +200,7 @@ figcaption,
 	margin-top: .2em;
 	margin-bottom: 4em;
 	line-height: 150%;
-	@include mixins.webfontItalic;
-}
-figcaption strong,
-.caption strong {
-	@include mixins.webfontBoldItalic;
+	font-style: italic;
 }
 table + .caption {
 	margin-top: .5em;
@@ -251,13 +247,6 @@ h5,
 	.content-main {
 		padding-left: 0.75rem; /* 12px /16 */
 		padding-right: 0.75rem; /* 12px /16 */
-	}
-	.content-main pre,
-	.content-main line-numbers pre {
-		margin-left: -0.75rem; /* -12px /16 */
-		margin-right: -0.75rem; /* -12px /16 */
-		width: calc(100% + 1.5rem);
-		max-width: none;
 	}
 	.tmpl-list .content-main {
 		margin-left: auto;
@@ -438,11 +427,9 @@ h5,
 
 /* App specific */
 body {
-	font-family: config.$fallbackSystemFont;
 	line-height: 140%;
 	font-variant-ligatures: common-ligatures;
 	font-feature-settings: "liga", "clig";
-
 	@include mixins.webfont;
 }
 
@@ -484,21 +471,6 @@ html:not(.tmpl-list) .content-main code a[href] {
 	text-decoration: underline;
 }
 
-/* Emphasis */
-strong {
-	@include mixins.webfontBold;
-}
-em,
-blockquote {
-	@include mixins.webfontItalic;
-}
-strong em,
-strong blockquote,
-em strong,
-blockquote strong {
-	@include mixins.webfontBoldItalic;
-}
-
 /* Headers */
 h1, h2, h3, .hed-h1, .hed-h2, .hed-h3 {
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
@@ -509,11 +481,6 @@ h1, h2, h3, .hed-h1, .hed-h2, .hed-h3 {
 }
 h4, h5 {
 	margin-top: 1.4em;
-	@include mixins.webfontBold;
-
-	em {
-		@include mixins.webfontBoldItalic;
-	}
 }
 h1, h2, h3,
 .hed-h1, .hed-h2, .hed-h3 {
@@ -657,12 +624,7 @@ pre > code,
 a[href] > code {
 	background-color: transparent;
 }
-h1 code,
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code {
+:where(h1, h2, h3, h4, h5, h6) code {
 	text-transform: none;
 }
 a[href] > code {
@@ -670,10 +632,20 @@ a[href] > code {
 	padding-right: 0;
 	color: inherit;
 }
+:root {
+	--page-padding: .25rem;
+	--uln-padding-v: .75rem;
+	--uln-padding-h: 0 1.5rem;
+	--uln-color: #999;
+}
+@media (min-width: 25em) { /* 400px */
+	:root {
+		--page-padding: .75rem;
+	}
+}
 pre {
 	font-family: config.$monospaceFont;
-	padding: .75rem 0; /* padding added by syntax-line-highlight plugin */
-	margin: .5em -0.25rem; /* -4px /16 */
+	padding: var(--page-padding);
 	background: #272822;
 	color: #f8f8f2;
 	white-space: pre;
@@ -686,13 +658,10 @@ pre {
 
 	@include mixins.extraunhyphenate;
 }
-:root {
-	--uln-padding-v: .75rem;
-	--uln-padding-h: 0 1.5rem;
-	--uln-color: #999;
-}
-pre {
-	padding: .75rem;
+pre,
+line-numbers pre.uln-target {
+	margin: .5em calc(-1 * var(--page-padding));
+	min-width: calc(100% + 2 * var(--page-padding));
 }
 pre > code {
 	padding: 0;
@@ -744,9 +713,6 @@ table {
 tr {
 	margin: 0 !important;
 	border-bottom: 1px solid #ddd;
-}
-th {
-	@include mixins.webfontBold;
 }
 caption {
 	margin-top: 1.5em;
@@ -918,7 +884,7 @@ table-saw :is(th, td) {
 .posts .description {
 	margin-top: .210526316em; /* 4px /19 */
 	color: #333;
-	@include mixins.webfontItalic;
+	font-style: italic;
 }
 .project_img,
 .project_video {
@@ -983,6 +949,26 @@ a[href]:is(:focus, :hover) .project_img {
 }
 
 @media (min-width: 45em) {
+	// /* Post index */
+	// .posts[data-custom-count]:not(.posts-withimg):not(:has(.filter-category--hide)) {
+	// 	counter-reset: count var(--list-size, 0);
+
+	// 	li:not(.subhed) {
+	// 		counter-increment: count -1;
+
+	// 		&:after {
+	// 			content: "#" counter(count, decimal-leading-zero);
+	// 			font-size: 0.75rem;
+	// 			line-height: 1;
+	// 			align-self: center;
+	// 			margin-left: .5em;
+	// 			font-family: systegm-ui, sans-serif;
+	// 			font-weight: 600;
+	// 			font-style: normal;
+	// 		}
+	// 	}
+	// }
+
 	/* List of posts, icons align right */
 	.posts:not(.posts-withimg) {
 		li:not(.filter-category--hide) {
@@ -1053,7 +1039,7 @@ a[href]:is(:focus, :hover) .project_img {
 	line-height: 1.5;
 	margin-bottom: 2em;
 	max-width: 50em; /* 800px */
-	@include mixins.webfontItalic;
+	font-style: italic;
 }
 
 @media (min-width: 30em) {
@@ -1149,7 +1135,7 @@ a[href]:is(:focus, :hover) .project_img {
 	margin-bottom: 1em;
 	font-size: 1rem;
 	line-height: 130%;
-	@include mixins.webfontItalic;
+	font-style: italic;
 }
 .footer-badge {
 	vertical-align: middle;
@@ -1401,6 +1387,7 @@ a[href].tag-inline:not(.tag-borderless),
 			margin: 0;
 			margin-bottom: 1em;
 			color: #666;
+			font-weight: 700;
 			@include mixins.webfontBold;
 		}
 		.tags .tag.tag-popular-rail {
@@ -1475,7 +1462,7 @@ a[href].tag-inline:not(.tag-borderless),
 .primarylink {
 	display: block;
 	font-size: 1.157894736842em; /* 22px /19 */
-	@include mixins.webfontBold;
+	font-weight: 700;
 }
 .primarylink:before {
 	content: "➡ ";
@@ -1761,12 +1748,13 @@ svg.z-icon {
 	color: var(--icon-color-override, #cb0000);
 }
 
-/* Built … ago */
+// Built … ago
 .built-ago-sidebar {
 	display: none;
 	transform-origin: bottom left;
 	transform: rotate(90deg) translate(2em, 0);
 	white-space: nowrap;
+	font-family: system-ui, sans-serif;
 	font-size: 0.875em; /* 14px /16 */
 	color: #444;
 }
@@ -1775,17 +1763,9 @@ svg.z-icon {
 		display: block;
 	}
 }
-time-difference:not(:defined) {
-	display: none;
+:where(main, .hamburger) time-difference:not(:defined) {
+	visibility: hidden;
 }
-footer time-difference:not(:defined) {
-	display: block;
-}
-
-/* Islands */
-// is-land[ready] {
-// 	display: contents;
-// }
 
 // Footer
 .toggle-features-form {

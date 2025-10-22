@@ -72,7 +72,7 @@ import { pairedShortcode } from "@11ty/eleventy-plugin-syntaxhighlight";
 const TRIPLE_TICK = "```";
 const HIGHLIGHT_OPTIONS = {
 	lineSeparator: "\n",
-}
+};
 
 export default function(eleventyConfig) {
 	// Our highlight shortcode

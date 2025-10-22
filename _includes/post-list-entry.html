@@ -29,7 +29,7 @@
 	{%- else -%}
 		{%- if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif -%}
 	{%- endif -%}
-	{%- if post.data.deprecated %}<span class="tag-inline tag-borderless">{% icon "fa:skull-crossbones" %}</span>{% endif %}
+	{%- if post.data.deprecated %}<span class="tag-inline tag-borderless">{% icon "fa:skull-crossbones" %}</span>{% endif -%}
 	</a>
 
 	<span class="tags">

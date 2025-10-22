@@ -2,7 +2,7 @@
 
 /* Lists */
 dt {
-	@include mixins.webfontBold;
+	font-weight: 700;
 }
 dd {
 	font-size: 0.9473684210526em; /* 18px /19 */

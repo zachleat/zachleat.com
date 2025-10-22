@@ -39,9 +39,6 @@ details.static-comments-empty > summary::-webkit-details-marker {
 .static-comments-title.static-comments-title {
 	@include mixins.webfont;
 }
-.static-comments-title.static-comments-title em {
-	@include mixins.webfontItalic;
-}
 .static-comments-title-twitter {
 	font-size: 80%;
 	color: #666;
