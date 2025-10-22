@@ -42,7 +42,7 @@ modules:
 					<div class="tags tags-rail tags-rail-top5 hide-singlecol">
 						{%- if collections.pinnedPosts | size %}
 						<div>
-							<div class="top5">📌 Pinned</div>
+							<div class="top5 icon-override">PIN{% icon "fa:thumbtack" %}</div>
 							{%- for post in collections.pinnedPosts limit:1 %}
 								<a href="{{ post.url }}" class="tag tag-popular-rail tag-pinned-rail tag-borderless">{{ post.data.title }}</a>
 							{%- endfor %}

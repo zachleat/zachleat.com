@@ -661,7 +661,8 @@ pre {
 
 	@include mixins.extraunhyphenate;
 }
-pre:has(+ pre) {
+pre:has(+ pre),
+line-numbers:has(+ details) pre.uln-target {
 	margin-block-end: var(--page-padding);
 }
 pre,
@@ -748,7 +749,8 @@ table-saw :is(th, td) {
 
 
 /* Logo and Rail */
-.rail :link:not(:hover, :focus) {
+.rail :link:not(:hover, :focus),
+.rail .icon-override {
 	--icon-color-override: #4c713e;
 }
 .rail .header {
@@ -1732,6 +1734,10 @@ svg.z-icon {
 }
 .fa-npm {
 	color: var(--icon-color-override, #cb0000);
+}
+.fa-map-pin,
+.fa-thumbtack {
+	color: var(--icon-color-override, #b91717);
 }
 
 // Built … ago

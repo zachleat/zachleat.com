@@ -50,11 +50,11 @@
 
 		{%- include "post-popularity-social-tags.html" -%}
 
+		{%- if previewImages and post.data.pinned %}<span class="tag">{% icon "fa:thumbtack" %}Pin</span>{% endif -%}
+
 		{%- if post.data.external_url -%}
 			<span class="tag tag-borderless">{%- icon "fa:arrow-up-right-from-square" -%}</span>
 		{%- endif -%}
-
-		{%- if previewImages and post.data.pinned %}<span title="Pinned">📌</span>{% endif %}
 	</span>
 {% comment %}
 	<span class="date">{{ post.date | date: "%h %Y" }}</span>
