@@ -202,7 +202,7 @@ export default function(eleventyConfig) {
 			let d = new Date();
 			let cacheBustOverride;
 			if(process.env.PRODUCTION_BUILD && isRecentPost(date)) {
-				cacheBustOverride = `_r${d.getFullYear()}${leftpad(d.getMonth(), 2)}${leftpad(d.getDate(), 2)}`;
+				cacheBustOverride = `_p${d.getFullYear()}${leftpad(d.getMonth(), 2)}${leftpad(d.getDate(), 2)}`;
 			}
 			return getScreenshotUrlFromPath(`/opengraph${url}`, undefined, cacheBustOverride);
 		}
