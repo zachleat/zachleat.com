@@ -110,3 +110,5 @@ And here’s how you could use it in Nunjucks, Liquid, or Markdown (preprocessed
 {% endraw %}
 
 We’ll likely include this fix with the default `highlight` paired shortcode in a future version of the Eleventy Syntax Highlighting plugin. Follow along on [GitHub Issue #77](https://github.com/11ty/eleventy-plugin-syntaxhighlight/issues/77).
+
+_Update October 22, 2025: Just a small update to this approach to say that if you’re using an Eleventy Layout file that is Markdown, there is an additional [issue to watch on Eleventy core](https://github.com/11ty/eleventy/issues/3954)._
