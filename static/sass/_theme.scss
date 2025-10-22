@@ -1735,7 +1735,7 @@ svg.z-icon {
 }
 
 // Built … ago
-.built-ago-sidebar {
+.ago-sidebar {
 	display: none;
 	transform-origin: bottom left;
 	transform: rotate(90deg) translate(2em, 0);
@@ -1745,12 +1745,10 @@ svg.z-icon {
 	color: #444;
 }
 @media (min-width: config.$twoColLayoutMinWidth) {
-	.built-ago-sidebar {
-		display: block;
+	.ago-sidebar:has(time-difference:defined) {
+		display: flex;
+		gap: 1em;
 	}
-}
-:where(main, .hamburger) time-difference:not(:defined) {
-	visibility: hidden;
 }
 
 // Footer

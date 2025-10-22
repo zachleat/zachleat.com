@@ -27,9 +27,6 @@ tmpl: page
 				{%- assign alwaysShowStats = true -%}
 				{%- include "post-popularity-social-tags.html" -%}
 			</span>
-{%- if JS_ENABLED %}
-			<time-difference class="date"><em>Posted <time datetime="{{ page.date | dateToISO }}" title="{{ page.date | dateToISO }}">some time ago</time></em></time-difference>
-{%- endif %}
 		</div>
 {% if deprecated or calloutMessage %}
 		<article class="content-sibling">

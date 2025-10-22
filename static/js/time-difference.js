@@ -6,12 +6,12 @@ class TimeDifference extends HTMLElement {
 		hours:    60 * 60,
 		days:     60 * 60 * 24,
 		weeks:    60 * 60 * 24 * 7,
-		months:    60 * 60 * 24 * (365/12),
+		months:   60 * 60 * 24 * (365/12),
 		years:    60 * 60 * 24 * 365,
 	};
 
 	get time() {
-		return this.querySelector("time");
+		return this.querySelectorAll("time");
 	}
 
 	get units() {
@@ -82,14 +82,16 @@ class TimeDifference extends HTMLElement {
 	}
 
 	update() {
-		let dateStr = this.time.getAttribute("datetime");
-		if(!dateStr) {
-			// For Shadow DOM method, using a global <template>
-			dateStr = this.getAttribute("date");
-		}
+		this.time.forEach(timeEl => {
+			let dateStr = timeEl.getAttribute("datetime");
+			if(!dateStr) {
+				// For Shadow DOM method, using a global <template>
+				dateStr = this.getAttribute("date");
+			}
 
-		let locale = this.getAttribute("locale") || "en";
-		this.time.innerText = TimeDifference.getText(dateStr, this.units, locale);
+			let locale = this.getAttribute("locale") || "en";
+			timeEl.innerText = TimeDifference.getText(dateStr, this.units, locale);
+		})
 	}
 
 	connectedCallback() {
