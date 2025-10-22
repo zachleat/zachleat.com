@@ -646,21 +646,27 @@ a[href] > code {
 pre {
 	font-family: config.$monospaceFont;
 	padding: var(--page-padding);
+	margin: 0;
 	background: #272822;
 	color: #f8f8f2;
 	white-space: pre;
 	word-wrap: normal;
 	overflow-x: auto;
 	tab-size: 2;
+	scrollbar-color: #aaa transparent;
+
 	/* Disable ligatures */
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
 
 	@include mixins.extraunhyphenate;
 }
+pre:has(+ pre) {
+	margin-block-end: var(--page-padding);
+}
 pre,
 line-numbers pre.uln-target {
-	margin: .5em calc(-1 * var(--page-padding));
+	margin-inline: calc(-1 * var(--page-padding));
 	min-width: calc(100% + 2 * var(--page-padding));
 }
 pre > code {
@@ -949,26 +955,6 @@ a[href]:is(:focus, :hover) .project_img {
 }
 
 @media (min-width: 45em) {
-	// /* Post index */
-	// .posts[data-custom-count]:not(.posts-withimg):not(:has(.filter-category--hide)) {
-	// 	counter-reset: count var(--list-size, 0);
-
-	// 	li:not(.subhed) {
-	// 		counter-increment: count -1;
-
-	// 		&:after {
-	// 			content: "#" counter(count, decimal-leading-zero);
-	// 			font-size: 0.75rem;
-	// 			line-height: 1;
-	// 			align-self: center;
-	// 			margin-left: .5em;
-	// 			font-family: systegm-ui, sans-serif;
-	// 			font-weight: 600;
-	// 			font-style: normal;
-	// 		}
-	// 	}
-	// }
-
 	/* List of posts, icons align right */
 	.posts:not(.posts-withimg) {
 		li:not(.filter-category--hide) {
