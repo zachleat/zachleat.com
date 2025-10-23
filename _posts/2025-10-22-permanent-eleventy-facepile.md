@@ -13,7 +13,7 @@ Moving forward, the Gold and Silver tiers will still require _active_ contributi
 
 1. Individuals contributing no longer need to be _active_ and will be shown if cumulative contributions are greater than USD $55. This change means that one-time/non-recurring contributors will now be shown (if the amount meets stated minimums).
 	- Organization accounts will still need to have an _active_ contribution to be shown. _(Individual versus organization refers to the [type of Open Collective account](https://documentation.opencollective.com/getting-started/creating-an-organization) making the contribution)_
-2. If you have the default avatar (and no web site in your Open Collective profile), the minimum cumulative total is USD $200. Too many folks don’t have an avatar or web site 😅 (which makes the facepile look… well, not great): if you add an avatar or web site we’ll update with your changes! The build runs (at minimum) daily.
+2. If you have the default avatar (and no web site in your Open Collective profile) we will now show your entry in the facepile but the minimum cumulative total is USD $200 to use the default avatar. Too many folks don’t have an avatar or web site 😅 which makes the facepile look… well, not great. If you update your profile we will pick up your changes! The build runs (at minimum) daily.
 3. Notably, it’s unchanged that there are no minimums for _active_ recurring monthly/yearly contributions (for both individuals and organizations).
 
 I hope this relaxation gives proper _permanent_ credit to individuals that have contributed monetarily to the project, while filtering out the spam/bot accounts that have contributed a few dollars and subsequently immediately cancelled (hoping to be listed on the web site).
