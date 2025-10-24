@@ -2,8 +2,7 @@
   <div class="static-comments-hed">
     {%- include "webmention-avatar.liquid" %}
 
-    {%- assign twitterUsername =  webmention.author.url | twitterUsernameFromUrl %}
-    <h3 class="static-comments-title p-name cased">{% if twitterUsername %}<em>{{ twitterUsername }}</em>{% elsif webmention.author.name != "" %}{{ webmention.author.name | htmlEntities }}{% elsif webmention.url %}<em>{{ webmention.url | hostnameFromUrl }}</em>{% else %}Anonymous{% endif %}<!-- <a href="#webmention-{{ webmention['wm-id'] }}" class="static-comments-selflink exempt">🔗</a>--></h3>
+    <h3 class="static-comments-title p-name cased">{% if webmention.author.name != "" %}{{ webmention.author.name | htmlEntities }}{% elsif webmention.url %}<em>{{ webmention.url | hostnameFromUrl }}</em>{% else %}Anonymous{% endif %}<!-- <a href="#webmention-{{ webmention['wm-id'] }}" class="static-comments-selflink exempt">🔗</a>--></h3>
 
     {% if webmention.published %}
       <em class="static-comments-date">

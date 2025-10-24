@@ -342,12 +342,6 @@ export default async function(eleventyConfig) {
 		return DateTime.fromISO(dateStr).toFormat(formatStr);
 	});
 
-	eleventyConfig.addLiquidFilter("twitterUsernameFromUrl", (url) => {
-		if( url.indexOf("https://twitter.com/") > -1 ) {
-			return "@" + url.replace("https://twitter.com/", "");
-		}
-	});
-
 	eleventyConfig.addLiquidFilter("getPostCountForYear", (posts, year) => {
 		return posts.filter(function(post) {
 			return post.data.page.date.getFullYear() === parseInt(year, 10);
