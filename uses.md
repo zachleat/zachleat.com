@@ -839,7 +839,7 @@ Haven’t hunted down specific dates for these yet:
 <table>
 	<thead>
 		<tr>
-			<t class="hide-sm"h>Category</th>
+			<th class="hide-sm"h>Category</th>
 			<th>Subcategory</th>
 			<th>~ Date</th>
 			<th>Name</th>
