@@ -26,14 +26,21 @@ import pluginAnalytics from "./_11ty/analyticsPlugin.js";
 import { leftpad } from "./_11ty/util.js";
 
 const JS_ENABLED = true;
+const ONE_DAY = 24*60*60*1000;
 
 function resolveModule(name) {
 	return fileURLToPath(import.meta.resolve(name));
 }
 
+function getEndDateFromWeekNumber(year, weekNumber) {
+	let startOfYear = new Date(year, 0 , 1);
+	let timeDiffMs = (weekNumber + 1) * 7 * ONE_DAY;
+	return new Date(startOfYear.getTime() + timeDiffMs - 1);
+}
+
 function getDayOfYear(date) {
 	let startOfYear = new Date(date.getFullYear(), 0 , 1);
-	return Math.floor((date.getTime() - startOfYear.getTime()) / (1000*60*60*24));
+	return Math.floor((date.getTime() - startOfYear.getTime()) / ONE_DAY);
 }
 
 function getWeekOfYear(date) {
@@ -362,6 +369,9 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addLiquidFilter("getWeeklyPostCountForYear", (posts, year) => {
 		let counts = {};
 		for(let week = 0; week < 52; week++) {
+			if(getEndDateFromWeekNumber(year, week).getTime() > Date.now()) {
+				continue;
+			}
 			counts[week] = 0;
 		}
 		posts.forEach(function(post) {
@@ -369,7 +379,10 @@ export default async function(eleventyConfig) {
 			if(d.getFullYear() !== parseInt(year, 10)) {
 				return;
 			}
-			counts[getWeekOfYear(d)]++;
+			let weekNo = getWeekOfYear(d);
+			if(weekNo in counts) {
+				counts[weekNo]++;
+			}
 		});
 
 		return Object.values(counts).join(",");
@@ -379,6 +392,9 @@ export default async function(eleventyConfig) {
 		let counts = {};
 		for(let year = startYear; year <= (new Date()).getFullYear(); year++) {
 			for(let month = 0; month < 12; month++) {
+				if((new Date(year, month, 1)).getTime() > Date.now()) {
+					continue;
+				}
 				counts[`${year}-${month}`] = 0;
 			}
 		}
