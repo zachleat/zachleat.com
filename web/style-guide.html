@@ -145,20 +145,13 @@ hasToc: true
 
 <h2 id="web-fonts">Web Fonts</h2>
 
-<p>Using the Critical FOFT with preload Strategy with a Lazy-loaded <code>font-display: optional</code> Polyfilled Fallback, otherwise known as <a href="/web/the-compromise/"><em>The Compromise</em></a>. At stage 1 (initial), a Lato subset is rendered and all bold and italic text below are faux rendered using <code>font-synthesis</code>. At stage 2, all Lato weights and styles have finished loading and are no longer faux rendered.</p>
-
-<h3>Fallback Fonts (Stage 0, pre-preload, if preload not supported, or empty-cache visit on IE/Edge)</h3>
+<h3>Lato</h3>
+<p>Lato Roman (preloaded), Lato Bold, Lato Italic, and Lato Bold Italic</p>
+<div class="livedemo"><p>Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
+<p>Falls back to <code>system-ui, sans-serif</code></p>
 <div class="livedemo"><p class="font-fallback">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
 
-<h3>Web Fonts (Stage 1, Lato Roman Subset)</h3>
-<div class="livedemo"><p class="font-latosubset">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
-<p class="caption">Hard to tell what’s faux and what isn’t? Use the <a href="https://github.com/filamentgroup/faux-pas">Faux-Pas bookmarklet</a> and it’ll show you.</p>
-
-<h3>Web Fonts (Stage 2, Lato Roman, Bold, Italic, Bold-Italic)</h3>
-<div class="livedemo"><p>Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
-
-<h3>OpenType Features</h3>
-<h4>Ligatures</h4>
+<h4>OpenType Features: Ligatures</h4>
 <div class="livedemo top" data-demo-label="Ligatures">
 	<p style="font-size: 1.5em;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
 

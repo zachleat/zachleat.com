@@ -13,12 +13,6 @@
 .font-fallback *:after {
 	font-family: config.$fallbackSystemFont !important;
 }
-.font-latosubset,
-.font-latosubset *,
-.font-latosubset *:before,
-.font-latosubset *:after {
-	font-family: LatoSubset, config.$fallbackSystemFont !important;
-}
 .font-lato,
 .font-lato *,
 .font-lato *:before,
