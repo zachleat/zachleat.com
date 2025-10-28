@@ -45,7 +45,7 @@ Or via [`unpkg`](https://www.jsdelivr.com/):
 
 For this implementation we used `esbuild` to create a focused bundle for the single Web Awesome component (though this `esbuild` code would work for any JavaScript file).
 
-We went with this method for improved runtime performance and to reduce the number of third-party dependencies on the web site (with a nod to [André Jaenisch](https://jaenis.ch/!)). You can do the same with the following bit of [Eleventy configuration](https://www.11ty.dev/docs/config/) (e.g. in a `eleventy.config.js` file):
+We went with this method for improved runtime performance and to reduce the number of third-party dependencies on the web site (with a nod to [André Jaenisch](https://jaenis.ch/)). You can do the same with the following bit of [Eleventy configuration](https://www.11ty.dev/docs/config/) (e.g. in a `eleventy.config.js` file):
 
 ```js
 // eleventy.config.js
