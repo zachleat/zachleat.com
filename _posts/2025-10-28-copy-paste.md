@@ -23,7 +23,7 @@ This feature been a _long_ time coming and is our first use of [{% icon "fab:web
 - Progressive Enhancement behavior: this is a JavaScript-only feature and has no before/without JavaScript experience. You might call this a [JavaScript Web Component](/web/a-taxonomy-of-web-component-types/#javascript-web-components).
 - Performance-focused:
 	- This is using a [build-time component bundle](https://github.com/11ty/11ty-website/blob/afd92d6f44332323eda33a9380d5e3979074b497/eleventy.config.js#L479) (read more about Bundling below)
-	- The JavaScript code for the component only loads when an instance is visible (via [`<is-land>`](/docs/plugins/is-land/))
+	- The JavaScript code for the component only loads when an instance is visible (via [`<is-land>`](https://www.11ty.dev/docs/plugins/is-land/))
 
 ## Usage
 
