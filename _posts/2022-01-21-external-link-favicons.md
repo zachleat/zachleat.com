@@ -12,11 +12,10 @@ Add this CSS to see it in action:
 ```css
 a[href^="https://twitter.com"]:before {
   content: "";
-  display: inline-block;
+  display: inline-flex;
   vertical-align: text-bottom;
   width: 1em;
   height: 1em;
-  margin: 0 .2em;
   background-size: contain;
   background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.twitter.com%2F/");
 }
@@ -25,7 +24,6 @@ a[href^="https://twitter.com"]:before {
 ## Demo
 
 <ul>
-  <li><a href="https://twitter.com/">twitter.com</a></li>
   <li><a href="https://www.wikipedia.org/">wikipedia.org</a></li>
   <li><a href="https://www.google.com/">google.com</a></li>
   <li><a href="https://www.zachleat.com/">zachleat.com</a></li>
@@ -34,22 +32,19 @@ a[href^="https://twitter.com"]:before {
 </ul>
 
 <style>
-.content-grid a[href^="https://twitter.com"]:before,
 .content-grid a[href^="https://www.wikipedia.org"]:before,
 .content-grid a[href^="https://www.zachleat.com"]:before,
 .content-grid a[href^="https://www.netlify.com"]:before,
 .content-grid a[href^="https://www.11ty.dev"]:before,
 .content-grid a[href^="https://www.google.com"]:before {
   content: "";
-  display: inline-block;
+  display: inline-flex;
   vertical-align: text-bottom;
   width: 1em;
   height: 1em;
-  background-size: cover;
+	border-radius: .15em;
+  background-size: contain;
   margin: 0 .2em;
-}
-.content-grid a[href^="https://twitter.com"]:before {
-  background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.twitter.com%2F/");
 }
 .content-grid a[href^="https://www.wikipedia.org"]:before {
   background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.wikipedia.org%2F/");
