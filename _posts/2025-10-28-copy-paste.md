@@ -1,7 +1,7 @@
 ---
 title: Copy *and* Paste? …in this Economy?
 tags: eleventy
-tag_icon: "far:copy"
+tag_icon: "fab:web-awesome"
 modules:
   - https://unpkg.com/@awesome.me/webawesome@3.0.0/dist-cdn/components/copy-button/copy-button.js
 ---
