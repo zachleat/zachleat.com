@@ -83,4 +83,4 @@ export default async function(eleventyConfig) {
 
 ## Markdown Code Block Wrappers
 
-This task also served as the impetus for fixes related to [wrapper elements around code blocks in Markdown](/web/markdown-code-wrapper/), documented in the previous blog post on this very web site.
+This task also served as the impetus for fixes related to [wrapper elements around code blocks in Markdown](/web/markdown-code-wrapper/), documented in a previous blog post on this very web site.
