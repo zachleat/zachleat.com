@@ -6,7 +6,7 @@ import { leftpad } from "./util.js";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
-const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20251023" : "_localdev2";
+const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20251031" : "_localdev2";
 const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "30d" : "1d";
 
 async function imageFactory(src, options = {}) {
