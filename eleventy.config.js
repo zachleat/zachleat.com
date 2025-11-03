@@ -23,28 +23,12 @@ import pluginSass from "./_11ty/sassPlugin.js";
 import pluginImageAvatar, { getIndieAvatarUrl } from "./_11ty/imageAvatarPlugin.js";
 import pluginWebmentions from "./_11ty/webmentionsPlugin.js";
 import pluginAnalytics from "./_11ty/analyticsPlugin.js";
-import { leftpad } from "./_11ty/util.js";
+import { leftpad, getEndDateFromWeekNumber, getWeekOfYear } from "./_11ty/util.js";
 
 const JS_ENABLED = true;
-const ONE_DAY = 24*60*60*1000;
 
 function resolveModule(name) {
 	return fileURLToPath(import.meta.resolve(name));
-}
-
-function getEndDateFromWeekNumber(year, weekNumber) {
-	let startOfYear = new Date(year, 0 , 1);
-	let timeDiffMs = (weekNumber + 1) * 7 * ONE_DAY;
-	return new Date(startOfYear.getTime() + timeDiffMs - 1);
-}
-
-function getDayOfYear(date) {
-	let startOfYear = new Date(date.getFullYear(), 0 , 1);
-	return Math.floor((date.getTime() - startOfYear.getTime()) / ONE_DAY);
-}
-
-function getWeekOfYear(date) {
-	return Math.floor(getDayOfYear(date) / 7);
 }
 
 function getPosts(collectionApi) {
@@ -89,12 +73,15 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if (data.draft) {
+			if(data.draft === "ignore") {
+				return false;
+			}
       data.title = `${data.title} (Draft)`;
     }
 
 		// Drafts are *ignored* during a full build (included when --serve or --watch)
 		// if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
-			if(data.draft) {
+		if(data.draft) {
 			return false;
 		}
 	});

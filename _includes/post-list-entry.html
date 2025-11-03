@@ -22,7 +22,7 @@
 	<a href="{{ post.url }}" class="posts-link{% if hfeed %} p-name u-url{% endif %}">
 	{%- if previewImages %}
 		{%- comment %}We can use alt="" here so we don’t duplicate the content with the post title{% endcomment %}
-		<img src="{% ogImageSource post %}" alt="" decoding="async" loading="lazy" class="project_img" eleventy:widths="650,375" sizes="(min-width: 64em) 50vw, 100vw"{% if post.date | isRecentPost %} eleventy:ignore{% endif %}>
+		<img src="{% ogImageSource post %}" alt="" decoding="async" loading="lazy" class="project_img" eleventy:widths="650,375" sizes="(min-width: 64em) 50vw, 100vw"{% if post | shouldSkipOpenGraphImageOptimization %} eleventy:ignore{% endif %}>
 	{%- endif %}
 	{%- if view == 'project' -%}
 		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}

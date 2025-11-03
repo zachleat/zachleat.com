@@ -2,11 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { getImageColors } from "@11ty/image-color";
-import { leftpad } from "./util.js";
+import { getCreatedTimestamp } from "./git.js";
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
-const CACHEBUSTER = process.env.PRODUCTION_BUILD ? "_20251031" : "_localdev2";
+const ONE_DAY = 24*60*60*1000;
+const DEFAULT_CACHEBUSTER = "_20251031";
 const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "30d" : "1d";
 
 async function imageFactory(src, options = {}) {
@@ -59,7 +60,7 @@ function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 				size = "auto";
 			}
 
-			return `${fullUrl}${size}/${format}/${CACHEBUSTER}/`;
+			return `${fullUrl}${size}/${format}/`;
 		}
 	};
 
@@ -89,7 +90,7 @@ function getScreenshotUrlFromPath(path, options, cacheBustOverride) {
 	let u = new URL(getFullUrlFromPath(path));
 
 	// bust cache for the screenshot target URL, useful when the open graph images need a refresh
-	u.searchParams.set("cache", cacheBustOverride || CACHEBUSTER);
+	u.searchParams.set("cache", cacheBustOverride || DEFAULT_CACHEBUSTER);
 
 	return getScreenshotUrl(u.toString(), options);
 }
@@ -193,16 +194,36 @@ export default function(eleventyConfig) {
 
 	// Used to add eleventy:ignore to opengraph images that aren’t yet available for image optimization (would result in 404 not found opengraph images)
 	function isRecentPost(date) {
-		return (Date.now() - date.getTime()) < 1000*60*60*24*3; // within 3 days
+		return (Date.now() - date.getTime()) < ONE_DAY*14;
 	}
-	eleventyConfig.addFilter("isRecentPost", isRecentPost);
-	eleventyConfig.addLiquidShortcode("ogImageSource", function({url, inputPath, date}) {
+	eleventyConfig.addFilter("shouldSkipOpenGraphImageOptimization", async post => {
+		if(!isRecentPost(post.date)) {
+			// not recent (optimize)
+			return false;
+		}
+
+		if(Boolean(await getCreatedTimestamp(post.inputPath)) === false) {
+			// does not exist in git (do not optimize)
+			return true;
+		}
+
+		// exists in git (optimize)
+		return false;
+	});
+	eleventyConfig.addLiquidShortcode("ogImageSource", async function({url, inputPath, date}) {
+
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./_posts/")) {
-			let d = new Date();
 			let cacheBustOverride;
-			if(process.env.PRODUCTION_BUILD && isRecentPost(date)) {
-				cacheBustOverride = `_p${d.getFullYear()}${leftpad(d.getMonth(), 2)}${leftpad(d.getDate(), 2)}`;
+			if(isRecentPost(date)) {
+				let hasGitCreatedTimestamp = Boolean(await getCreatedTimestamp(inputPath));
+				if(!hasGitCreatedTimestamp) {
+					// if not checked into git
+					return "";
+				} else if(process.env.PRODUCTION_BUILD) {
+					// recent posts have a cache bust specific to the latest build time (race condition, atomic deploys no longer exist apparently)
+					cacheBustOverride = `_p${Date.now()}`;
+				}
 			}
 			return getScreenshotUrlFromPath(`/opengraph${url}`, undefined, cacheBustOverride);
 		}

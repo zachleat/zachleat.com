@@ -917,6 +917,25 @@ a[href]:is(:focus, :hover) .project_img {
 	max-width: none;
 	margin-bottom: 1em;
 }
+// Empty src
+.project_img[src=""] {
+	display: block;
+	padding: .5em;
+	aspect-ratio: 267/144;
+	text-indent: -9999px;
+	background: repeating-linear-gradient(
+    -60deg,
+    transparent,
+    transparent 10px,
+    config.$primaryColor 10px,
+    config.$primaryColor 20px
+  ),
+  linear-gradient(
+    to bottom,
+    config.$primaryColor,
+    #374b39,
+  );
+}
 .layout-list p + ol.posts {
 	margin-top: 3em;
 }
