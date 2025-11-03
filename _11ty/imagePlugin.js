@@ -197,18 +197,7 @@ export default function(eleventyConfig) {
 		return (Date.now() - date.getTime()) < ONE_DAY*14;
 	}
 	eleventyConfig.addFilter("shouldSkipOpenGraphImageOptimization", async post => {
-		if(!isRecentPost(post.date)) {
-			// not recent (optimize)
-			return false;
-		}
-
-		if(Boolean(await getCreatedTimestamp(post.inputPath)) === false) {
-			// does not exist in git (do not optimize)
-			return true;
-		}
-
-		// exists in git (optimize)
-		return false;
+		return isRecentPost(post.date);
 	});
 	eleventyConfig.addLiquidShortcode("ogImageSource", async function({url, inputPath, date}) {
 
