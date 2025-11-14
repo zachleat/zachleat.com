@@ -38,11 +38,11 @@ function getPosts(collectionApi) {
 }
 
 function hasTag(post, tag) {
-	return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
+	return post?.data?.tags?.includes(tag);
 }
 
 function hasCategory(post, category) {
-	return "categories" in post.data && post.data.categories && post.data.categories.indexOf(category) > -1;
+	return post?.data?.categories?.includes(category);
 }
 
 function isWriting(item) {

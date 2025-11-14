@@ -44,7 +44,7 @@ tmpl: page
 		<article class="content-sibling">
 			{%- unless ignoreExternalLinkInLayoutFile %}
 			<p>
-				<em class="text-ellipsis">Via: <a href="{{ external_url }}"><span>{{ external_url }}</span></a></em>
+				<em class="text-ellipsis">Via: <a href="{{ external_url }}">{%- icon "fa:arrow-up-right-from-square" -%}<span>{{ external_url }}</span></a></em>
 				{%- originalPostEmbed external_url, external_url_skipicon, external_url_screenshotmode %}
 			</p>
 			{%- endunless %}
