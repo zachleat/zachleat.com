@@ -1022,7 +1022,7 @@ a[href]:is(:focus, :hover) .project_img {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: .5em 1.5em;
+	gap: .5em 1.25em;
 	line-height: 1.5;
 	min-height: 2em; /* 32px /16 */
 }
@@ -1033,6 +1033,9 @@ a[href]:is(:focus, :hover) .project_img {
 	.sub + .sub {
 		margin-top: -5.5em; /* -88px /16 */
 	}
+}
+.sub :not(:defined) {
+	display: none;
 }
 .sub em:empty {
 	display: none;
@@ -1759,23 +1762,6 @@ svg.z-icon {
 	color: var(--icon-color-override, #b91717);
 }
 
-// Built … ago
-.ago-sidebar {
-	display: none;
-	transform-origin: bottom left;
-	transform: rotate(90deg) translate(2em, 0);
-	white-space: nowrap;
-	font-family: system-ui, sans-serif;
-	font-size: 0.875em; /* 14px /16 */
-	color: #444;
-}
-@media (min-width: config.$twoColLayoutMinWidth) {
-	.ago-sidebar:has(time-difference:defined) {
-		display: flex;
-		gap: 1em;
-	}
-}
-
 // Footer
 .toggle-features-form {
 	margin-block: .5em;
@@ -1794,4 +1780,9 @@ svg.z-icon {
 .toggle-features-form > .fl > * {
 	display: flex;
 	flex-grow: 0;
+}
+
+/* Time difference component */
+time-difference {
+	text-transform: capitalize;
 }

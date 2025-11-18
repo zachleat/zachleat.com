@@ -4,7 +4,8 @@ classes:
   html: page-gradient
   body: body-grid
 modules:
- - "/static/heading-anchors.js"
+  - "/static/heading-anchors.js"
+  - "/static/js/time-difference.js"
 ---
 <a href="#skiplink-content" id="skiplink-top" class="skiplink skiplink-fn" data-pagefind-ignore>Skip to Content</a>
 <div class="rail" data-pagefind-ignore>
@@ -94,15 +95,4 @@ modules:
 {%- endif %}
 		</template>
 	</is-land>
-
-	{%- if JS_ENABLED %}
-	<div class="ago-sidebar">
-	{%- if page.inputPath | isPost %}
-		<time-difference live><em>Post published <time datetime="{{ page.date | dateToISO }}" title="{{ page.date | dateToISO }}">{{ page.date | readableDate }}</time> and built <time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}">{{ currentDate | readableDate }}</time></em></time-difference>
-	{%- else %}
-		<time-difference live><em>Built <time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}">{{ currentDate | readableDate }}</time></em></time-difference>
-	{%- endif %}
-	</div>
-	<script type="module" src="/static/js/time-difference.js"></script>
-{%- endif %}
 </div>

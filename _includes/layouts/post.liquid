@@ -10,7 +10,6 @@ tmpl: page
 {% endif %}
 	<div class="content-grid-sibling">
 		<div class="sub p-description">
-			<em class="date">{{ page.date | readableDate }}</em>
 {% if tags contains 'video' %}
 			<em>Watch in {{ medialength | medialengthCleanup }}</em>
 {% endif %}
@@ -19,14 +18,15 @@ tmpl: page
 {%- elsif toot %}
 			<em><a href="{{ toot }}">On Mastodon</a></em>
 {%- endif %}
-{% if metadata.speaking.country %}
-			<span>{{ metadata.speaking.country | nameToFlag }} <em> {{ metadata.speaking.country }}</em></span>
-{% endif %}
 			<span class="tags">
 				{%- assign post = page -%}
 				{%- assign alwaysShowStats = true -%}
 				{%- include "post-popularity-social-tags.html" -%}
 			</span>
+{%- if JS_ENABLED %}
+			<time-difference live><em><time datetime="{{ page.date | dateToISO }}" title="{{ page.date | dateToISO }}"></time></em></time-difference>
+			<em>{{ page.date | readableDate }}</em>
+{%- endif %}
 		</div>
 {% if deprecated or calloutMessage %}
 		<article class="content-sibling">
@@ -81,6 +81,9 @@ tmpl: page
 			{% if tags contains "web-fonts" %}<a href="/web/?category=web-fonts">Web Fonts</a>{% endif %}
 			{% if tags contains "jamstack" %}<a href="/web/?category=jamstack">Jamstack</a>{% endif %}
 		</em>
+		{%- endif %}
+		{%- if metadata.speaking.country %}
+		<span>{{ metadata.speaking.country | nameToFlag }} <em>{{ metadata.speaking.country }}</em></span>
 		{%- endif %}
 	</p>
 	{%- if posterImage.source %}
