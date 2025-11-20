@@ -149,12 +149,14 @@ pre + .livedemo {
 	background-color: hsl(290deg, 47%, 38%);
 	color: #fff;
 	font-style: italic;
-	margin-top: 3em;
-	margin-bottom: 2em;
+	margin-block: 1em;
+}
+.livedemo-evil:not(:first-child) {
+	margin-block: 2em;
 }
 .livedemo-evil:before,
 .livedemo-evil:after {
-	content: "😈😈😈";
+	content: var(--evil-icon, "😈😈😈");
 	font-size: 1em;
 	text-shadow: 0px 0px 1em var(--box-shadow-color);
 	font-style: normal;

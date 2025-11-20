@@ -1623,6 +1623,7 @@ select[data-filter-key] {
 	gap: .5em;
 	margin-top: 2em;
 	align-items: center;
+	justify-content: space-between;
 }
 .spark-img.spark-img {
 	padding: 0;
@@ -1765,9 +1766,6 @@ svg.z-icon {
 // Footer
 .toggle-features-form {
 	margin-block: .5em;
-}
-.toggle-features-form is-land {
-	display: flex;
 }
 .toggle-features-form button {
 	white-space: nowrap;

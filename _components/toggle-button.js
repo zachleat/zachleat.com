@@ -14,18 +14,31 @@ function toggleClassname(enable, className) {
 }
 
 document.addEventListener("click", function(event) {
-	if("closest" in event.target) {
-		var toggle = event.target.closest(".toggle");
-		if(toggle) {
-			var wasPressed = toggle.getAttribute("aria-pressed") === 'true';
-			var isPressed = !wasPressed;
-			toggle.setAttribute("aria-pressed", String(isPressed));
+	if(!("closest" in event.target)) {
+		return;
+	}
 
-			if(toggle.classList.contains("toggle-css")) {
-				toggleCSS(isPressed);
-			} else {
-				toggleClassname(isPressed, toggle.getAttribute("data-toggle-class"));
-			}
-		}
+	let toggle = event.target.closest(".toggle");
+	if(!toggle) {
+		return;
+	}
+	let wasPressed = toggle.getAttribute("aria-pressed") === 'true';
+	let isPressed = !wasPressed;
+	toggle.setAttribute("aria-pressed", String(isPressed));
+
+	// for CSS
+	if(toggle.classList.contains("toggle-css")) {
+		toggleCSS(isPressed);
+	}
+
+	// for Web Fonts
+	let className = toggle.getAttribute("data-toggle-class");
+	if(className) {
+		toggleClassname(isPressed, className);
+	}
+
+	if(toggle.getAttribute("id", "ai-mode")) {
+		toggle.setAttribute("disabled", "");
+		import("/static/js/ai-mode.js");
 	}
 });

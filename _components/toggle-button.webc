@@ -1,11 +1,14 @@
-<is-land on:visible>
+<is-land on:visible class="toggle-island">
 	<style>
+	.toggle-island {
+		display: flex;
+	}
 	/* Hide without JS */
-	is-land:not(:defined) .toggle {
+	.toggle-island:not(:defined) .toggle {
 		display: none;
 	}
 	</style>
-	<button type="button" aria-pressed="true" class="toggle" :class="this.class ? this.class : ''" :data-toggle-class="toggleclass">
+	<button :id="this.id" type="button" :aria-pressed="this.value ?? 'true'" class="toggle" :class="this.class ? this.class : ''" :data-toggle-class="toggleclass">
 		<span class="toggle-control"></span>
 		<span class="toggle-text" @html="label"></span>
 	</button>
