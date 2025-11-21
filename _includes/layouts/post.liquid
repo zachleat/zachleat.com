@@ -28,7 +28,7 @@ tmpl: page
 			<em>{{ page.date | readableDate }}</em>
 			{%- if not external_url %}
 			{%- renderTemplate "webc" %}
-			<toggle-button label="AI Mode" id="ai-mode" value="false"></toggle-button>
+			<toggle-button label="Hallucinate" id="ai-mode" value="false"></toggle-button>
 			{%- endrenderTemplate %}
 			{%- endif %}
 {%- endif %}

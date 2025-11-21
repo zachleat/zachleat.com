@@ -10,7 +10,7 @@ Array.from(content.children).forEach(child => {
 
 let affirmation = document.createElement("div");
 affirmation.className = "livedemo livedemo-evil";
-affirmation.innerHTML = "<em>You’re absolutely right to enable this very good and trustworthy way of pretending a computer is personally writing this to you in real time! Rest easy in knowing that this animation is not a reflection of any use of “artificial intelligence” at all. The credibility and accuracy in this post has been personally vetted by its lowly human author (every manually typed word) and no intellectual property was stolen in its creation.</em>";
+affirmation.innerHTML = "<em>This animated hallucinatory chatbot output is only emulated. Rather than stealing intellectual property or consuming egregious amounts of public water, the credibility and accuracy in this post has been personally vetted by its lowly human author (every manually typed word).</em>";
 content.appendChild(affirmation);
 
 let index = 0;
