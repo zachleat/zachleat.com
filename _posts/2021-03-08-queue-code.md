@@ -12,7 +12,7 @@ I say this as someone who has spent over ten years doing technical public speaki
 
 So like any naïve programmer faced with a problem, I decided the best way to fix it was to automate it. In [This Web Site is a Tech Talk](/web/this-website-is-a-tech-talk/) I built an entire [slide deck project](https://github.com/zachleat/this-website-is-a-tech-talk) to create the _illusion_ of live coding without having to write any code live.
 
-My daughter used this to [great effect in a tweet](https://twitter.com/zachleat/status/1365786974813093896).
+My daughter used this to [great effect in a tweet](https://zachleat.com/twitter/1365786974813093896).
 
 ## Now You Try
 
