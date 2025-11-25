@@ -2,7 +2,7 @@
 title: How to Hallucinate using Web Components
 tags: web-components
 ---
-Say, you want the smooth convenience of consuming content that _feels_ like it’s generated in real time _without_ having to deal with the tradeoffs of Artificial Intelligence née Large Language Model.
+Say, you want the smooth convenience of consuming content that _feels_ like it’s generated in real time _without_ having to deal with the tradeoffs of a Large Language Model née Artificial Intelligence.
 
 Why not use animation? It’s the perfect metaphor for a Hollywood-esque veneer of complexity without substance, in no way similar to how an entire industry is currently being oversold and at no risk of imminent collapse.
 
