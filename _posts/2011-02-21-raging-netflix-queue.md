@@ -7,9 +7,9 @@ tags:
 
 The premise is simple. When attempting to find movies to watch in my local theater, I often stumble upon titles that I feel to be more rental quality than theater quality. So I wanted an easier way to add those movies to my Netflix queue. I created a Google Chrome extension to accomplish just that.
 
-[![][screenshot]][2]When Raging Netflix Queue recognizes the site you’re browsing to be a movie web site, it will show a small green Netflix icon in the address bar. Clicking that icon will add the title to your queue. If the title is available for Instant Viewing, it will go into your Instant Queue. If not available for Instant View, it will go into your DVD Queue. If the title is still in theaters and not yet available on DVD, it will go into the Saved portion of your DVD Queue, and Netflix will automatically add it to your DVD Queue when it becomes available.
+![](/web/wp-content/uploads/2011/02/Screen-shot-2011-02-21-at-10.15.44-AM.png)
 
- [screenshot]: /web/wp-content/uploads/2011/02/Screen-shot-2011-02-21-at-10.15.44-AM.png
+When Raging Netflix Queue recognizes the site you’re browsing to be a movie web site, it will show a small green Netflix icon in the address bar. Clicking that icon will add the title to your queue. If the title is available for Instant Viewing, it will go into your Instant Queue. If not available for Instant View, it will go into your DVD Queue. If the title is still in theaters and not yet available on DVD, it will go into the Saved portion of your DVD Queue, and Netflix will automatically add it to your DVD Queue when it becomes available.
 
 Raging Netflix Queue supports Rotten Tomatoes, IMDB, Google Movies, Apple Trailers, Movie Fone, movies.com, Yahoo Movies, and Fandango. Let me know if you have others you’d like to see added.
 
