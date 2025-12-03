@@ -59,6 +59,16 @@ modules:
 							{% endfor %}
 						</div>
 					{%- endif %}
+
+					{%- if JS_ENABLED and not external_url %}
+					{%- if page.inputPath | isPost %}
+						{%- renderTemplate "webc" %}
+						<div class="top5">
+							<toggle-button label="Hallucinate" id="ai-mode" value="false"></toggle-button>
+						</div>
+						{%- endrenderTemplate %}
+					{%- endif %}
+					{%- endif %}
 					</div>
 				</div>
 			</nav>

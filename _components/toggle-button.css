@@ -17,7 +17,9 @@
 	-webkit-appearance: none;
 	font-family: inherit;
 	font-size: inherit;
+	font-weight: inherit;
 	color: inherit;
+	text-transform: inherit;
 	padding: 0;
 	display: inline-flex;
 	align-items: center;
