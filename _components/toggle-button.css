@@ -3,6 +3,8 @@
 	--toggle-padding: 2px;
 	--toggle-color: hsl(0,75%,54%);
 	--toggle-color-secondary: hsl(0,75%,80%);
+	--toggle-color-x: hsl(0,75%,63%);
+	--toggle-color-x-bg: hsl(0,75%,54%);
 }
 .toggle[aria-pressed="true"] {
 	--toggle-color: hsl(156, 78%, 15%);
@@ -53,14 +55,14 @@
 	border: 2px solid var(--toggle-color);
 	background-color: var(--toggle-color-secondary);
 	transition: background-color .15s ease-in-out;
+	border-radius: 6.25em; /* 100px /16 */
 }
 .toggle[aria-label] .toggle-control {
 	margin-right: 0;
 }
 .toggle-control,
 .toggle-control:after {
-	height: 1em; /* 16px /16 */
-	border-radius: 6.25em; /* 100px /16 */
+	height: 1em;
 }
 .toggle-control:after {
 	transition: left .3s ease-in-out, background-color .15s ease-in-out;
@@ -68,10 +70,13 @@
 	content: "";
 	left: var(--toggle-padding);
 	width: 1em; /* 16px /16 */
-	background-color: var(--toggle-color);
+	border-radius: 100%;
+	background: linear-gradient(to bottom left, transparent 42%, var(--toggle-color-x) 42%, var(--toggle-color-x) 58%, transparent 58%),
+		linear-gradient(to bottom right, transparent 42%, var(--toggle-color-x) 42%, var(--toggle-color-x) 58%, transparent 58%), var(--toggle-color-x-bg);
 }
 .toggle[aria-pressed="true"] .toggle-control:after {
 	left: calc(1em + var(--toggle-padding)); /* 16px /16 */
+	background: var(--toggle-color);
 }
 .toggle[disabled] {
 	pointer-events: none;
