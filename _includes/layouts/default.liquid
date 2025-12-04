@@ -82,6 +82,14 @@ modules:
 
 {% getBundle "fontawesome" %}
 
+{% comment %} if you remove this, re-enable in 2023-12-15-snow-fall.md {% endcomment %}
+<is-land on:media="(prefers-reduced-motion: no-preference)">
+	<template data-island="once">
+		<script type="module" src="/static/snow-fall.js"></script>
+	</template>
+	<snow-fall></snow-fall>
+</is-land>
+
 <div class="hamburger">
 	<is-land on:idle on:visible on:media="(prefers-reduced-motion: no-preference) and (min-width: 61.1875em)">
 		<infinity-burger theme-fn></infinity-burger>
