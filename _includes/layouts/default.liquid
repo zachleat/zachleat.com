@@ -63,9 +63,11 @@ modules:
 					{%- if JS_ENABLED and not external_url %}
 					{%- if page.inputPath | isPost %}
 						{%- renderTemplate "webc" %}
-						<div class="top5">
-							<toggle-button label="Hallucinate" id="ai-mode" value="false"></toggle-button>
-						</div>
+						<is-land on:media="(prefers-reduced-motion: no-preference)" class="top5">
+							<template data-island>
+								<toggle-button label="Hallucinate" id="ai-mode" value="false"></toggle-button>
+							</template>
+						</is-land>
 						{%- endrenderTemplate %}
 					{%- endif %}
 					{%- endif %}
