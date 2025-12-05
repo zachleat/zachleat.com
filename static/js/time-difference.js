@@ -70,11 +70,15 @@ class TimeDifference extends HTMLElement {
 		}
 
 		units = units || this.getUnits(date1, date2);
-
 		let rtf = new Intl.RelativeTimeFormat(locale, { numeric: "auto" });
 		let divisor = TimeDifference.getDivisor(units);
 		let diff = (date1 - date2) / divisor;
+		let amountDiff = diff/Math.round(diff);
 
+		// super close to next whole unit, round up
+		if( amountDiff < 1 && amountDiff > .96 ) {
+			return rtf.format(Math.round(diff), units);
+		}
 		if(diff < 0) {
 			return rtf.format(Math.ceil(diff), units);
 		}
