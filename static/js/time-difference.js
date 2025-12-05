@@ -76,7 +76,7 @@ class TimeDifference extends HTMLElement {
 		let amountDiff = diff/Math.round(diff);
 
 		// super close to next whole unit, round up
-		if( amountDiff < 1 && amountDiff > .96 ) {
+		if( amountDiff < 1 && amountDiff > .8 ) {
 			return rtf.format(Math.round(diff), units);
 		}
 		if(diff < 0) {
