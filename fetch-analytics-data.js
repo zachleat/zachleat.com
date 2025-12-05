@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import fs from "fs";
 import glob from "fast-glob";
-import matter from "gray-matter";
+import matter from "@11ty/gray-matter";
 
 import { queryData as queryElizabeaconData } from "./_11ty/fetch-analytics/elizabeacon.js";
 import { fetchData as queryGoatcounterData } from "./_11ty/fetch-analytics/goatcounter.js";
