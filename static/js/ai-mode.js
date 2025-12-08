@@ -10,7 +10,7 @@ Array.from(content.children).forEach(child => {
 
 let affirmation = document.createElement("div");
 affirmation.className = "livedemo livedemo-evil";
-affirmation.innerHTML = "<em>This animated hallucinatory chatbot output is only emulated. Rather than stealing intellectual property or consuming egregious amounts of public water, the credibility and accuracy in this post has been personally vetted by its lowly human author (every manually typed word).</em>";
+affirmation.innerHTML = `<em>This animated hallucinatory chatbot output is <a href="/web/hallucinate/">only emulated</a>. Rather than stealing intellectual property or consuming egregious amounts of public water, the credibility and accuracy in this post has been personally vetted by its lowly human author (every manually typed word).</em>`;
 content.appendChild(affirmation);
 
 let index = 0;
