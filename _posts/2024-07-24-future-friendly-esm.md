@@ -56,17 +56,18 @@ try {
 
 This feature-tested approach allows a custom error message limited to folks using CommonJS and will automatically go away when used with Node’s new `--experimental-require-module` flag (or when Node opts into this behavior by default in a future version).
 
-Here’s the helpful error message this approach unlocked in Eleventy and should help folks making the upgrade:
+Here’s the helpful error message _(**updated 16 December 2025**)_ this approach unlocked in Eleventy and should help folks making the upgrade:
 
-> Eleventy cannot be loaded via `require("@11ty/eleventy")` in 3.0 and newer. Instead, you have a few options:
+> \`require("@11ty/eleventy")\` is incompatible with Eleventy v3 and this version of Node. You have a few options:
+
+> 1. (Easiest) Change the \`require\` to use a dynamic import inside of an asynchronous CommonJS configuration callback, for example:
 >
-> 1. (Easiest) Change the `require` to use a dynamic import inside of an asynchronous CommonJS configuration callback, for example:
->```js
->   module.exports = async function {
->     const {EleventyRenderPlugin} = await import("@11ty/eleventy");
->   }
->```
+>    module.exports = async function {
+>      const {RenderPlugin, I18nPlugin, HtmlBasePlugin} = await import("@11ty/eleventy");
+>    }
 >
-> 2. (Easier) Update the JavaScript syntax in your configuration file from CommonJS to ESM (change `require` to use `import` and rename the file to have an `.mjs` file extension).
-> 3. (More work) Change your project to use ESM-first by adding `"type": "module"` to your package.json. Any `.js` will need to be ported to use ESM syntax (or renamed to `.cjs`.)
-> 4. (Short term workaround) Use the --experimental-require-module flag to enable this behavior. Read more: https://nodejs.org/api/modules.html#loading-ecmascript-modules-using-require It is possible that the newest version of Node has this enabled by default—you can try upgrading your version of Node.js.
+> 2. (Easier) Update the JavaScript syntax in your configuration file from CommonJS to ESM (change \`require\` to use \`import\` and rename the file to have an \`.mjs\` file extension).
+>
+> 3. (More work) Change your project to use ESM-first by adding \`"type": "module"\` to your package.json. Any \`.js\` will need to be ported to use ESM syntax (or renamed to \`.cjs\`.)
+>
+> 4. Upgrade your Node version (at time of writing, v20.19 or newer) to enable this behavior. If you use a version of Node older than v20.19, try the --experimental-require-module command line flag in Node. Read more: https://nodejs.org/api/modules.html#loading-ecmascript-modules-using-require
