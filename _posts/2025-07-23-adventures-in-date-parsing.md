@@ -18,7 +18,6 @@ attrs:
     alt: Unsupported
   surprised:
     alt: Face looking surprised
-pinned: true
 ---
 _**Never** write your own date parsing library._
 

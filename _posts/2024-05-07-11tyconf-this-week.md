@@ -6,7 +6,6 @@ tags:
   - external
   - eleventy
   - conference
-showOnHomePage: true
 ---
 
 More on the 11ty Blog:
