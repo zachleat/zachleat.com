@@ -37,8 +37,12 @@ document.addEventListener("click", function(event) {
 		toggleClassname(isPressed, className);
 	}
 
-	if(toggle.getAttribute("id", "ai-mode")) {
-		toggle.setAttribute("disabled", "");
+	if(toggle.getAttribute("id").startsWith("ai-mode")) {
+		// In sidebar and embedded in the blog post
+		Array.from(document.querySelectorAll("[id^='ai-mode']")).forEach(el => {
+			el.setAttribute("aria-pressed", true);
+			el.setAttribute("disabled", "")
+		});
 		import("/static/js/ai-mode.js");
 	}
 });
