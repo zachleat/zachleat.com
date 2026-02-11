@@ -22,7 +22,9 @@
 	{%- endif -%}
 
 	{%- if alwaysShowStats or boostCount > 0 or likeCount > 0 -%}
+		{%- if alwaysShowStats or boostCount > 0 %}
 		<span class="tag-social--boost" title="{{ boostCount }} boost{% if boostCount != 1 %}s{% endif %}">{% icon "fa:retweet" %}{{ boostCount }}</span>
+		{%- endif %}
 		{%- if alwaysShowStats or not IS_EXTERNAL -%}
 		<span class="tag-social--like" title="{{ likeCount }} like{% if likeCount != 1 %}s{% endif %}">{% icon "far:heart" %}{{ likeCount }}</span>
 		{%- endif -%}
