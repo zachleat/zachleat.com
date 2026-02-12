@@ -7,8 +7,8 @@ tags:
 ---
 <style>
 .sm-img {
-    display: block;
-    max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 </style>
 
@@ -96,7 +96,7 @@ The nice thing here is that you customize what you want on the first stage and w
 **First Stage**
 
 - Kerning
-    - While this is one of the heftier parts of our font, it *does* affect text movement if it’s not available up front. You may choose to defer this to the second stage—that’s fine! Just be aware of how much your text moves when it lazy loads in.
+	- While this is one of the heftier parts of our font, it *does* affect text movement if it’s not available up front. You may choose to defer this to the second stage—that’s fine! Just be aware of how much your text moves when it lazy loads in.
 - Subset to Latin Character Set: 221 characters of the total 686 available to us. This seems to be a standard unicode range across many of Google’s Fonts—so this range was borrowed directly from the Google Fonts CSS 😎.
 
 Here’s the `pyftsubset` command (from [fonttools](https://github.com/fonttools/fonttools)) I used to generate first stage font files:
@@ -117,20 +117,22 @@ First stage file size results:
 **Second Stage**
 
 - Fancy OpenType features (Ligatures, Fractions, Subscript and Superscript, etc)
-    - OpenType features are some of the coolest web font tech and they largely go unused. Worse, if you’re loading Rubik from Google Fonts they prune most of them out! However, these features are clearly all Nice To Haves™ and as such we’ve deferred them to our second stage load.
+	- OpenType features are some of the coolest web font tech and they largely go unused. Worse, if you’re loading Rubik from Google Fonts they prune most of them out! However, these features are clearly all Nice To Haves™ and as such we’ve deferred them to our second stage load.
 - Hinting: extra instructions to fit individual glyphs to the available pixel grid
-    - This may be a contentious choice as Mac OS largely ignores hinting so it isn’t used.
-    - Some have argued that as screen resolutions get finer, hinting is increasingly unnecessary. You may even be tempted to hide this behind a [`resolution` media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/resolution)—but note that hinting (when used) is still important for small font sizes, which may or may not be relevant to your design.
-    - Option: you may want to remove this altogether. Add `--no-hinting --desubroutinize` to your `pyftsubset` command below to remove it.
+	- This may be a contentious choice as Mac OS largely ignores hinting so it isn’t used.
+	- Some have argued that as screen resolutions get finer, hinting is increasingly unnecessary. You may even be tempted to hide this behind a [`resolution` media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/resolution)—but note that hinting (when used) is still important for small font sizes, which may or may not be relevant to your design.
+	- Option: you may want to remove this altogether. Add `--no-hinting --desubroutinize` to your `pyftsubset` command below to remove it.
 - The remaining character set. Our first stage only loaded 221 characters, so let’s load the remaining 465 available in the Rubik typeface.
-    - Option: you may want to second stage with a smaller subset of characters if your content allows it. Customize with `--unicodes`. Have a look at a project I maintain called [GlyphHanger](https://github.com/zachleat/glyphhanger) that takes a URL as input and spits out the `unicode-range` of characters used on that URL (it does a lot of other things too).
+	- Option: you may want to second stage with a smaller subset of characters if your content allows it. Customize with `--unicodes`. Have a look at a project I maintain called [GlyphHanger](https://github.com/zachleat/glyphhanger) that takes a URL as input and spits out the `unicode-range` of characters used on that URL (it does a lot of other things too).
 
 `pyfsubset` command (from [fonttools](https://github.com/fonttools/fonttools)) to generate second stage font files:
 
-    pyftsubset "Rubik-Bold.ttf" --output-file="Rubik-Bold-hint-all.woff2" --flavor=woff2 --layout-features="*" --unicodes=U+0-10FFFF
+```bash
+pyftsubset "Rubik-Bold.ttf" --output-file="Rubik-Bold-hint-all.woff2" --flavor=woff2 --layout-features="*" --unicodes=U+0-10FFFF
 
-    # Run again using "Rubik-Regular.ttf"
-    # To generate woff files, use `--flavor=woff`
+# Run again using "Rubik-Regular.ttf"
+# To generate woff files, use `--flavor=woff`
+```
 
 Second stage file size results:
 
@@ -154,18 +156,18 @@ Preload will affect first render times, remove this if you would rather have FOU
 
 ```css
 @font-face {
-    font-family: Rubik;
-    src: url(Rubik-Bold-kern-latin.woff2) format("woff2"),
-       url(Rubik-Bold-kern-latin.woff) format("woff");
-    font-weight: 700;
-    font-display: swap;
+	font-family: Rubik;
+	src: url(Rubik-Bold-kern-latin.woff2) format("woff2"),
+			url(Rubik-Bold-kern-latin.woff) format("woff");
+	font-weight: 700;
+	font-display: swap;
 }
 @font-face {
-    font-family: Rubik;
-    src: url(Rubik-Regular--kern-latin.woff2) format("woff2"),
-       url(Rubik-Regular-kern-latin.woff) format("woff");
-    font-weight: 400;
-    font-display: swap;
+	font-family: Rubik;
+	src: url(Rubik-Regular--kern-latin.woff2) format("woff2"),
+			url(Rubik-Regular-kern-latin.woff) format("woff");
+	font-weight: 400;
+	font-display: swap;
 }
 ```
 
