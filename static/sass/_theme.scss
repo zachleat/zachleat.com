@@ -1767,6 +1767,23 @@ svg.z-icon {
 .fa-thumbtack {
 	color: var(--icon-color-override, #b91717);
 }
+main a[href]:has(> .z-icon [href="#fas-fa-user"]) {
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	font-size: .675em;
+	margin-inline: .25em;
+	padding-inline: .25em .25em;
+	background-color: #444;
+	color: #fff;
+	text-decoration-color: #fff;
+	border-radius: 0.75em;
+	border: .1875em solid #444;
+	text-decoration: none;
+}
+main a[href]:has(> .z-icon [href="#fas-fa-user"]) .z-icon {
+	font-size: .75em;
+}
 
 // Footer
 .toggle-features-form {
