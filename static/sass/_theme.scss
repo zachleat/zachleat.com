@@ -61,6 +61,10 @@ del .z-avatar {
 	gap: var(--flex-gap);
 	flex-wrap: wrap;
 }
+.flex-center {
+	align-items: center;
+	justify-content: center;
+}
 .flex-nowrap {
 	flex-wrap: nowrap;
 }
@@ -455,8 +459,6 @@ body {
 :visited:hover {
 	color: config.$linkActiveColor;
 }
-}
-main :any-link:is(:hover, :focus):not(.posts-link):has(.webmentions__face:only-child) {
 
 .about-description p {
 	margin-top: 0;
@@ -1731,12 +1733,14 @@ svg.z-icon {
 .fa-css {
 	color: var(--icon-color-override, #673599);
 }
-.fa-square-js {
+.fa-js {
 	color: var(--icon-color-override, #f9dd3f);
 }
-.z-icon:has([href="#fab-fa-square-js"]) {
+.z-icon:has([href="#fab-fa-js"]) {
 	background-color: #000;
-	border-radius: .3em;
+}
+.fa-html5 {
+	color: var(--icon-color-override, #da7044);
 }
 .fa-square-rss {
 	color: var(--icon-color-override, #e57516);
