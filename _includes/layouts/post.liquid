@@ -96,27 +96,27 @@ tmpl: page
 	{% assign nextPost = collections.activePosts | getNextCollectionItem: page %}
 
 	<dl class="nextprev">
-		<dt class="nextprev-prev">
-			{%- if previousPost %}
-			<span>&lt; Newer</span>
-			{%- endif %}
-		</dt>
-		<dd class="nextprev-prev">
-			{%- if previousPost %}
-			<a href="{{ previousPost.url }}">
-				<img src="{% ogImageSource previousPost %}"  alt="{{ previousPost.data.title }}" decoding="async" loading="lazy"class="project_img" eleventy:widths="650"{% if previousPost | shouldSkipOpenGraphImageOptimization %} eleventy:ignore{% endif %}>
-			</a>
-			{%- endif -%}
-		</dd>
 		<dt class="nextprev-next">
 			{%- if nextPost %}
-			<span>Older &gt;</span>
+			<span>&lt; Older</span>
 			{%- endif %}
 		</dt>
 		<dd class="nextprev-next">
 			{%- if nextPost %}
 			<a href="{{ nextPost.url }}">
 				<img src="{% ogImageSource nextPost %}"  alt="{{ nextPost.data.title }}" decoding="async" loading="lazy"class="project_img" eleventy:widths="650"{% if nextPost | shouldSkipOpenGraphImageOptimization %} eleventy:ignore{% endif %}>
+			</a>
+			{%- endif -%}
+		</dd>
+		<dt class="nextprev-prev">
+			{%- if previousPost %}
+			<span>Newer &gt;</span>
+			{%- endif %}
+		</dt>
+		<dd class="nextprev-prev">
+			{%- if previousPost %}
+			<a href="{{ previousPost.url }}">
+				<img src="{% ogImageSource previousPost %}"  alt="{{ previousPost.data.title }}" decoding="async" loading="lazy"class="project_img" eleventy:widths="650"{% if previousPost | shouldSkipOpenGraphImageOptimization %} eleventy:ignore{% endif %}>
 			</a>
 			{%- endif -%}
 		</dd>

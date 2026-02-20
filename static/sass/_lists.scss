@@ -90,18 +90,18 @@ dl.nextprev dt {
 	grid-row: 1;
 }
 dt.nextprev-prev {
-	grid-column: 1;
-	justify-self: flex-start;
-}
-dt.nextprev-next {
-	grid-column: 2;
 	justify-self: flex-end;
 }
-dd.nextprev-prev {
-	grid-column: 1;
+dt.nextprev-next {
+	justify-self: flex-start;
 }
-dd.nextprev-next {
+dt.nextprev-prev,
+dd.nextprev-prev {
 	grid-column: 2;
+}
+dt.nextprev-next,
+dd.nextprev-next {
+	grid-column: 1;
 }
 dl.nextprev dd:empty {
 	background-color: #eee;
