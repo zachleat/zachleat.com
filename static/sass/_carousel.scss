@@ -1,3 +1,5 @@
+@use "config";
+
 .carousel {
 	display: flex;
 	scroll-behavior: smooth;
@@ -50,11 +52,12 @@
 }
 [data-carousel-previous],
 [data-carousel-next] {
-	padding: .25em .5em;
+	padding: .5em 1em;
 	background-color: transparent;
 	border: none;
 	color: inherit;
 	font: inherit;
+	font-weight: 900;
 }
 [data-carousel-previous][disabled],
 [data-carousel-next][disabled] {
@@ -73,4 +76,18 @@
 /* This code is --serve only */
 [data-eleventy-runmode="serve"] carou-scroll img[alt*="Slide "] {
 	border: 1em solid red;
+}
+
+@media (min-width: 41.625em) and (max-width: config.$oneColLayoutMaxWidth) { /* 666px */
+	.content-grid > heading-anchors > div:has(carou-scroll) {
+		margin-left: calc((100vw - 110%) / -2);
+		margin-right: calc((100vw - 110%) / -2);
+	}
+}
+
+@media (min-width: 75em) { /* 1200px */
+	.content-grid > heading-anchors > div:has(carou-scroll) {
+		margin-left: calc(-5vw);
+		margin-right: calc(-5vw);
+	}
 }
