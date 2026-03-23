@@ -10,6 +10,8 @@ class TimeDifference extends HTMLElement {
 		years:    60 * 60 * 24 * 365,
 	};
 
+	static MINIMUM_ROUND_UP = 0.8;
+
 	get time() {
 		return this.querySelectorAll("time");
 	}
@@ -76,7 +78,7 @@ class TimeDifference extends HTMLElement {
 		let amountDiff = diff/Math.round(diff);
 
 		// super close to next whole unit, round up
-		if( amountDiff < 1 && amountDiff > .8 ) {
+		if( amountDiff < 1 && amountDiff > this.MINIMUM_ROUND_UP ) {
 			return rtf.format(Math.round(diff), units);
 		}
 		if(diff < 0) {
