@@ -103,7 +103,7 @@ function screenshotImageHtmlFullUrl(targetUrl) {
 		widths: ["auto"],
 		statsOnly: true,
 		urlFormat: function() {
-			return targetUrl;
+			return fullUrl;
 		}
 	};
 
