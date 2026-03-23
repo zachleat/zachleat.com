@@ -3,6 +3,8 @@ import path from "node:path";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { getImageColors } from "@11ty/image-color";
 import { getCreatedTimestamp } from "@11ty/eleventy/utils/git";
+import s from "sparkline-svg";
+const Sparkline = s.default;
 
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
@@ -219,6 +221,24 @@ export default function(eleventyConfig) {
 
 		// raw screenshot
 		return getScreenshotUrlFromPath(url);
+	});
+
+	eleventyConfig.addShortcode("sparklineDataUri", function sparkline(values, width, height, color) {
+		if(typeof values === "string") {
+			values = values.split(",");
+		}
+		let line = new Sparkline(values || []);
+		line.setViewBoxHeight(height);
+		line.setViewBoxWidth(width);
+
+		// TODO handle lines at edge getting cut off for larger stroke widths
+		line.setStrokeWidth(1);
+
+		if(color) {
+			line.setStroke(color || "#000000");
+		}
+
+		return line.dataUri; // `data:image/svg+xml,${encodeURIComponent(line.outerHTML)}`;
 	});
 };
 
