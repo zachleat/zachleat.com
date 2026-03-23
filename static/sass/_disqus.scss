@@ -1,6 +1,7 @@
 @use "mixins";
 
 .static-comments {
+	--webmention-comment-avatar-size: 2rem;
 	font-size: 80%;
 	max-width: 36em;
 }
@@ -45,8 +46,8 @@ details.static-comments-empty > summary::-webkit-details-marker {
 }
 .static-comments-img {
 	vertical-align: top;
-	width: 30px;
-	height: 30px;
+	width: var(--webmention-comment-avatar-size);
+	height: var(--webmention-comment-avatar-size);
 	margin-right: .5em;
 	border-radius: 50%;
 }
@@ -108,7 +109,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 		align-items: center;
 	}
 	.static-comments-msg {
-		padding-left: calc(30px + .5em);
+		padding-left: calc(var(--webmention-comment-avatar-size) + .5em);
 	}
 	.static-comments-date br {
 		display: none;
