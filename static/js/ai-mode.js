@@ -23,5 +23,7 @@ setInterval(() => {
 content.appendChild(squirm);
 
 setTimeout(() => {
-	squirm.play();
+	squirm.play({
+		chunkSize: 1,
+	});
 }, 1000);
