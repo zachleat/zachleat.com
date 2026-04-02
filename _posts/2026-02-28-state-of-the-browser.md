@@ -13,6 +13,7 @@ metadata:
     country: United Kingdom
 external_url: https://2026.stateofthebrowser.com/
 event_date: February 28
+showOnHomePage: false
 ---
 This is an event post. My individual talk page is here:
 
