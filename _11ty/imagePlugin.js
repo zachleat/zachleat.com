@@ -201,6 +201,9 @@ export default function(eleventyConfig) {
 		return isRecentPost(post.date);
 	});
 	eleventyConfig.addLiquidShortcode("ogImageSource", async function({url, inputPath, date}) {
+		if(url === "/" || url === "/web/") {
+			return "/og/opengraph-default.png"
+		}
 
 		// special title og images, only for _posts
 		if(inputPath.startsWith("./_posts/")) {
