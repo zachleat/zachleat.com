@@ -202,7 +202,7 @@ export default function(eleventyConfig) {
 	});
 	eleventyConfig.addLiquidShortcode("ogImageSource", async function({url, inputPath, date}) {
 		if(url === "/" || url === "/web/") {
-			return "/og/opengraph-default.png"
+			return getFullUrlFromPath("/og/opengraph-default.png");
 		}
 
 		// special title og images, only for _posts
