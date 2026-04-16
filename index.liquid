@@ -12,9 +12,9 @@ eleventyImport:
 
 <article>
 	<h2>Newest</h2>
-	<ol class="posts posts-withimg posts-home h-feed">
-		{% for post in collections.homepageNewestPosts limit:6 %}
-			{% include "post-list-entry.html", ignoreYear: "true", hfeed: true, previewImages: true %}
+	<ol class="posts h-feed">
+		{% for post in collections.homepageNewestPosts limit:8 %}
+			{% include "post-list-entry.html", ignoreYear: "true", hfeed: true %}
 		{% endfor %}
 		<li><em><a href="/web/" class="posts-link posts-link-more">…see full archives.</a></em></li>
 	</ol>

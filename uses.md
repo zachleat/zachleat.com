@@ -4,7 +4,7 @@ layout: layouts/pagealign.liquid
 ---
 ## Site Colophon
 
-- This site is built with [{% indieAvatar "https://www.11ty.dev/" %}Eleventy v{{ eleventy.version }}](https://www.11ty.dev/) using:
+- This site ({{ collections.all | size }} pages) is built with [{% indieAvatar "https://www.11ty.dev/" %}Eleventy v{{ eleventy.version }}](https://www.11ty.dev/) using:
 	- [{% indieAvatar "https://sass-lang.com/" %}Sass](https://sass-lang.com/)
 	- [{% indieAvatar "https://liquidjs.com/" %}Liquid](https://liquidjs.com/)
 	- [WebC](https://www.11ty.dev/docs/languages/webc/)
