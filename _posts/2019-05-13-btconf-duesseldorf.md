@@ -1,5 +1,5 @@
 ---
-title: beyond tellerrand—Düsseldorf
+title: "Speaking at: beyond tellerrand—Düsseldorf"
 categories:
   - presentations
 tags:
@@ -7,7 +7,7 @@ tags:
   - conference
   - speaking
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: conference
     country: Germany

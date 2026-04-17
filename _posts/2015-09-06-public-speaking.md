@@ -7,6 +7,7 @@ tags:
   - video
   - highlight
 metadata:
+  type: speaking_recap
   speaking:
     type: barcamp
     country: USA

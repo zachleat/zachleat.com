@@ -195,7 +195,7 @@ export default function(eleventyConfig) {
 
 	// Used to add eleventy:ignore to opengraph images that aren’t yet available for image optimization (would result in 404 not found opengraph images)
 	function isRecentPost(date) {
-		return (Date.now() - date.getTime()) < ONE_DAY*14;
+		return (Date.now() - date.getTime()) < ONE_DAY*60;
 	}
 	eleventyConfig.addFilter("shouldSkipOpenGraphImageOptimization", async post => {
 		return isRecentPost(post.date);

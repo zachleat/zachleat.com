@@ -1,5 +1,5 @@
 ---
-title: "SmashingConf Freiburg 2023"
+title: "Notes from SmashingConf Freiburg 2023"
 external_url: https://smashingconf.com/freiburg-2023
 external_url_location: end
 permalink: /web/smashingconf/2023/

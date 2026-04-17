@@ -15,7 +15,7 @@ posterImage:
   name: Yusuf Onuk
   source: https://unsplash.com/photos/silhouette-of-people-riding-horses-on-brown-field-during-daytime-fg_6XRPsnnc
 ---
-_This post was created from a talk. You can watch this in video form at [JSHeroes 2023](/web/jsheroes/)._
+<div class="callout"><p>Video versions of this talk are available at <a href="/web/smashingconf/2023/video/">SmashingConf Freiburg (2023)</a>, <a href="/web/jsheroes/">JSHeroes (2023)</a>, <a href="/web/jsnation/">JSNation (2023)</a>, and <a href="/web/stanford-webcamp/">Stanford WebCamp (2023)</a>.</p></div>
 
 The humble component. The building block of modern web development.
 

@@ -1,10 +1,10 @@
 ---
-title: Concatenate Conference
+title: "Speaking at: Concatenate Conference"
 tags:
   - conference
   - speaking
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: conference
     country: Nigeria

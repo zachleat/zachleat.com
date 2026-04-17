@@ -1,13 +1,13 @@
 ---
-title: 'Inaugural Eleventy Meetup: Hello World (a talk about Eleventy Serverless)'
+title: 'Speaking at: Inaugural Eleventy Meetup: Hello World (a talk about Eleventy Serverless)'
 eleventyComputed:
-  titleHtml: 'Inaugural {% twitterImageAvatar "EleventyMeetup", "z-avatar-eq" %}Eleventy Meetup: Hello World (a talk about Eleventy Serverless)'
+  titleHtml: 'Speaking at: Inaugural {% twitterImageAvatar "EleventyMeetup", "z-avatar-eq" %}Eleventy Meetup: Hello World (a talk about Eleventy Serverless)'
 tags:
   - external
   - speaking
   - eleventy
 metadata:
-  schedule: true
+  type: scheduled_event
 external_url: 'https://11tymeetup.dev/events/hello-world/'
 external_icon_url: false
 event_date: July 15

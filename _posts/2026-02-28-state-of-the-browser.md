@@ -1,5 +1,5 @@
 ---
-title: State of the Browser 2026
+title: "Speaking at: State of the Browser (2026)"
 categories:
   - presentations
 tags:
@@ -7,13 +7,12 @@ tags:
   - conference
   - speaking
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: conference
     country: United Kingdom
 external_url: https://2026.stateofthebrowser.com/
 event_date: February 28
-showOnHomePage: false
 ---
 This is an event post. My individual talk page is here:
 

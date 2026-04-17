@@ -3,6 +3,7 @@ title: Side Projects (at Awesome Camp)
 categories:
   - presentations
 metadata:
+  type: speaking_recap
   speaking:
     type: barcamp
     country: USA

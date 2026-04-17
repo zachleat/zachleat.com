@@ -4,6 +4,8 @@ tags:
   - conference
   - speaking
   - video
+metadata:
+  type: speaking_recap
 medialength: 31 min
 ---
 

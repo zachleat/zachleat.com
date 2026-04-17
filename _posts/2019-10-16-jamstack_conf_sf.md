@@ -1,12 +1,12 @@
 ---
-title: JAMstack Conf SF 2019
+title: "Speaking at: JAMstack Conf SF 2019"
 tags:
   - external
   - conference
   - speaking
   - jamstack
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: conference
     country: USA

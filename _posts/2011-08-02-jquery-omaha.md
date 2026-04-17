@@ -3,6 +3,7 @@ title: Progressive Enhancement (at jQuery Omaha)
 categories:
   - presentations
 metadata:
+  type: speaking_recap
   speaking:
     type: meetup
     country: USA

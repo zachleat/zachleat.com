@@ -3,6 +3,7 @@ title: A Nodecopter Informercial (at HOW Conf)
 categories:
   - presentations
 metadata:
+  type: speaking_recap
   speaking:
     type: conference
     country: USA

@@ -1,5 +1,5 @@
 ---
-title: SmashingConf London 2018
+title: "Speaking at: SmashingConf London (2018)"
 categories:
   - presentations
 tags:
@@ -7,7 +7,7 @@ tags:
   - conference
   - speaking
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: conference
     country: United Kingdom

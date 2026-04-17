@@ -7,6 +7,7 @@ tags:
 external_url: https://11tymeetup.dev/events/ep-8-state-of-the-possumverse-and-panel-on-transitioning-to-11ty/
 external_icon_url: false
 metadata:
+  type: speaking_recap
   speaking:
     type: meetup
   youtubeId: 40yPK3EKE60

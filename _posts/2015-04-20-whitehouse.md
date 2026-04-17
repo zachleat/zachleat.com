@@ -6,6 +6,7 @@ tags:
   - video
   - highlight
 metadata:
+  type: speaking_recap
   speaking:
     type: meetup
     country: USA

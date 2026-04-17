@@ -4,6 +4,8 @@ tags:
   - conference
   - speaking
   - eleventy
+metadata:
+  type: speaking_recap
 slides:
   dir: "/presentations/best-worst-eleventy/web-unleashed-"
   alt:

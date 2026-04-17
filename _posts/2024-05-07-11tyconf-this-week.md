@@ -6,6 +6,8 @@ tags:
   - external
   - eleventy
   - conference
+metadata:
+  type: scheduled_event
 ---
 
 More on the 11ty Blog:

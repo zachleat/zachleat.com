@@ -1,5 +1,5 @@
 ---
-title: Smashing Conference Austin 2020
+title: "Speaking at: Smashing Conference Austin (2020)"
 categories:
   - presentations
 tags:
@@ -7,7 +7,7 @@ tags:
   - conference
   - speaking
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: conference
     country: USA

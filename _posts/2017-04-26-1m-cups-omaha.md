@@ -5,6 +5,7 @@ categories:
 tags:
   - speaking
 metadata:
+  type: speaking_recap
   speaking:
     type: meetup
     country: USA

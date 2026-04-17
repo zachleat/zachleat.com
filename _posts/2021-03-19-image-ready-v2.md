@@ -5,6 +5,7 @@ tags:
   - eleventy
   - video
 metadata:
+  type: speaking_recap
   speaking:
     type: meetup
   youtubeId: RL_0Gkn4B_U

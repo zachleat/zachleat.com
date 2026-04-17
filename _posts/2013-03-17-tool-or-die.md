@@ -8,6 +8,7 @@ tags:
   - speaking
   - conference
 metadata:
+  type: speaking_recap
   speaking:
     type: conference
     country: USA

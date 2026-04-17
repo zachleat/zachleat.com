@@ -1,5 +1,5 @@
 ---
-title: Web Engineering Düsseldorf
+title: "Speaking at: Web Engineering Düsseldorf"
 categories:
   - presentations
 tags:
@@ -7,7 +7,7 @@ tags:
   - speaking
   - font-loading
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: meetup
     country: Germany

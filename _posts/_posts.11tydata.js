@@ -7,7 +7,6 @@ export default {
 		return `/web/${ page.fileSlug }/`
 	},
 	tags: ["blog-post"],
-	showOnHomePage: true,
 	eleventyComputed: {
 		seo: {
 			openGraphBackgroundImage: function(data) {

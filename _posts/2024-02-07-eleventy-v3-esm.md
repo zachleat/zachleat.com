@@ -5,6 +5,7 @@ tags:
   - speaking
   - video
 metadata:
+  type: speaking_recap
   speaking:
     type: conference
   youtubeId: LsN6TBx9Hxo

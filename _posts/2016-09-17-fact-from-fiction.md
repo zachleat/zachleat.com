@@ -4,6 +4,7 @@ tags:
   - conference
   - speaking
 metadata:
+  type: speaking_recap
   speaking:
     type: barcamp
     country: USA

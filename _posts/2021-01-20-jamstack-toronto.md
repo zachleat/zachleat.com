@@ -1,7 +1,7 @@
 ---
-title: Images at Jamstack Toronto
+title: "Speaking at: Jamstack Toronto"
 eleventyComputed:
-  titleHtml: 'Images at {% twitterImageAvatar "JAMstackTORONTO", "z-avatar-eq" %}Jamstack Toronto'
+  titleHtml: 'Speaking at: {% twitterImageAvatar "JAMstackTORONTO", "z-avatar-eq" %}Jamstack Toronto'
 categories:
   - presentations
 tags:
@@ -9,7 +9,7 @@ tags:
   - speaking
   - eleventy
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: meetup
     country: Canada

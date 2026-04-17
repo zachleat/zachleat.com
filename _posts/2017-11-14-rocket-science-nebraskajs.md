@@ -1,12 +1,12 @@
 ---
-title: NebraskaJS Omaha
+title: "Speaking at: NebraskaJS Omaha (Web Fonts are ▢▢▢ Rocket Science)"
 categories:
   - presentations
 tags:
   - external
   - speaking
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: meetup
     country: USA

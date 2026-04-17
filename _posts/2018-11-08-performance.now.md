@@ -1,5 +1,5 @@
 ---
-title: "performance.now(); the Web Performance Conference"
+title: "Speaking at: performance.now(); the Web Performance Conference"
 categories:
   - presentations
 tags:
@@ -7,7 +7,7 @@ tags:
   - conference
   - speaking
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: conference
     country: Netherlands

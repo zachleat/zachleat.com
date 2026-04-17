@@ -491,7 +491,6 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addCollection("homepageNewestPosts", function(collection) {
 		return getPosts(collection)
-			.filter(({data}) => data.showOnHomePage === true)
 			.sort((a, b) => {
 				if(a.data.pinned && b.data.pinned) {
 					return 0;

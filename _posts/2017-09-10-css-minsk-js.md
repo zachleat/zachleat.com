@@ -1,5 +1,5 @@
 ---
-title: CSS-Minsk-JS
+title: "Speaking at: CSS-Minsk-JS (2017)"
 categories:
   - presentations
 tags:
@@ -7,7 +7,7 @@ tags:
   - conference
   - speaking
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: conference
     country: Belarus

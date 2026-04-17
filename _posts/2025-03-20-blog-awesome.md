@@ -6,6 +6,7 @@ tags:
   - speaking
   - video
 metadata:
+  type: speaking_recap
   speaking:
     type: livestream
   youtubeId: O89QIruTink

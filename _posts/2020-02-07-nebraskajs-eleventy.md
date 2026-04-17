@@ -5,6 +5,7 @@ tags:
   - eleventy
   - video
 metadata:
+  type: speaking_recap
   youtubeId: DC5fP_8Q8uQ
 medialength: 63 min
 ---

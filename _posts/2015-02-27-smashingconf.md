@@ -12,6 +12,7 @@ tags:
   - conference
   - font-loading
 metadata:
+  type: speaking_recap
   speaking:
     type: conference
     country: Canada

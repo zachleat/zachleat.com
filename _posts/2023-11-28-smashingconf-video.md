@@ -1,11 +1,12 @@
 ---
-title: "SmashingConf 2023: The Good, The Bad, and The Web Components"
+title: "SmashingConf 2023 (The Good, The Bad, and The Web Components)"
 tags:
   - conference
   - speaking
   - web-components
   - video
 metadata:
+  type: speaking_recap
   speaking:
     type: conference
     country: Germany
@@ -14,6 +15,8 @@ medialength: 24 min
 external_icon_url: "https://smashingconf.com/"
 permalink: /web/smashingconf/2023/video/
 ---
+<div class="callout"><p>This talk is available as a <a href="/web/good-bad-web-components/">blog post: <strong>The Good, the Bad, and the Web Components</strong></a> (if you prefer to read, like me).</p></div>
+
 {% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 * [Full event playlist on YouTube](https://www.youtube.com/playlist?list=PLxQqv_fazRs1W7oGj3X_Pjwijv3TXll7r).

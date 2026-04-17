@@ -9,6 +9,8 @@ tags:
 external_url: 'https://www.filamentgroup.com/lab/rocket-science.html'
 external_url_location: end
 medialength: 47 min
+metadata:
+  type: speaking_recap
 ---
 Web fonts can be tricky—but are they rocket science? Web browsers have decided to make them invisible while they’re loading to avoid rendering system fonts to users. In order to properly manage the performance of our web fonts, we respectfully disagree with that decision. Roll up the sleeves on your lab coat, y’all.
 

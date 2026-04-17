@@ -6,6 +6,7 @@ tags:
   - speaking
   - font-loading
 metadata:
+  type: speaking_recap
   speaking:
     type: podcast
 event_date: June 13

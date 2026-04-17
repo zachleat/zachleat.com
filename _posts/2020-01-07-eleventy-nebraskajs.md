@@ -1,11 +1,11 @@
 ---
-title: Eleventy Crash Course with Nick and Zach—NebraskaJS Omaha
+title: "Speaking at: Eleventy Crash Course with Nick and Zach—NebraskaJS Omaha"
 tags:
   - external
   - speaking
   - eleventy
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: meetup
     country: USA

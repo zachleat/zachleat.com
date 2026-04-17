@@ -1,12 +1,12 @@
 ---
-title: NebraskaJS Omaha
+title: "Speaking at: NebraskaJS Omaha (The Scoville Scale of Web Font Loading Opinions)"
 categories:
   - presentations
 tags:
   - external
   - speaking
 metadata:
-  schedule: true
+  type: scheduled_event
   speaking:
     type: meetup
     country: USA

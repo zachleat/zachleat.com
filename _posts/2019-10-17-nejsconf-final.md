@@ -7,6 +7,7 @@ tags:
   - organizing
   - nejsconf
 metadata:
+  type: speaking_recap
   speaking:
     type: conference
     country: USA
