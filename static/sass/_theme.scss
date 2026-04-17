@@ -833,14 +833,12 @@ table-saw :is(th, td) {
 
 /* Posts and Content */
 .posts {
+	display: flex;
+	flex-direction: column;
 	list-style: "";
+	gap: 1.25em;
 	margin: 0;
 	padding: 0;
-}
-.posts li {
-	padding-top: .25em;
-	padding-bottom: .25em;
-	margin-bottom: .125em;
 }
 .posts .posts-link {
 	display: inline;
@@ -862,10 +860,8 @@ table-saw :is(th, td) {
 }
 
 .posts .subhed {
-	padding: 0;
 	line-height: 1;
 	margin-top: 3em;
-	padding: 1em 0;
 	text-transform: uppercase;
 	display: flex;
 	gap: 1em;
@@ -979,13 +975,12 @@ a[href]:is(:focus, :hover) .project_img {
 	flex-basis: 15em;
 }
 
-@media (min-width: 45em) {
+@media (min-width: config.$oneColLayoutDottedList) {
 	/* List of posts, icons align right */
 	.posts:not(.posts-withimg) {
 		li:not(.filter-category--hide) {
 			display: flex;
 			justify-content: space-between;
-			padding-block: .35em;
 			gap: .5em;
 		}
 		li:not(.subhed) .tags {
