@@ -527,7 +527,6 @@ export default async function(eleventyConfig) {
 			"eleventy",
 			"project",
 			"web-components",
-			"jamstack",
 		];
 		for(let tag of tags) {
 			if(hasTag(collectionItem, tag)) {

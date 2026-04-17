@@ -1177,13 +1177,12 @@ a[href]:is(:focus, :hover) .project_img {
 .tags .tag {
 	display: inline-block;
 	font-size: 0.6315789473684em; /* 12px /19 */
-	height: auto;
+	height: 1.5625rem; /* 25px /16 */
 	font-style: normal;
 	color: #666;
 	padding: .25em .5em;
 	text-decoration: none;
 	border-radius: var(--z-border-radius-2);
-	line-height: 1.25;
 }
 .tag-inline:where(:has(svg):not(.tag-borderless)),
 .tags .tag:where(:has(svg):not(.tag-borderless)) {
@@ -1193,7 +1192,6 @@ a[href]:is(:focus, :hover) .project_img {
 	background-color: #f4f4f4;
 	color: #504f4f;
 	border: 1px solid var(--shadow-color);
-	line-height: 1.75;
 }
 .tags .tag:is(.video, .audio) {
 	--shadow-color: rgba(0,0,0,.4);
@@ -1238,7 +1236,7 @@ a[href].tag-inline:not(.tag-borderless),
 }
 .tags .tag-social > * {
 	display: inline-flex;
-	min-height: 2.272727272727em; /* 25px /11 */
+	height: 1.5625rem; /* 25px /16 */
 	justify-content: center;
 	align-items: center;
 	gap: 0;
