@@ -10,6 +10,7 @@ medialength: 43 min
 metadata:
   type: speaking_recap
   youtubeId: nlbdRUIgyjo
+external_icon_url: https://www.11tymeetup.dev/
 ---
 In this talk I started to build [Rainglow](/web/rainglow/) and showcased another tool called [Uniclode](/web/uniclode/).
 

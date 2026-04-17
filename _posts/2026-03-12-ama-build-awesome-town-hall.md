@@ -7,6 +7,7 @@ tags:
 medialength: 44 min
 metadata:
   youtubeId: lA-wD89m6jM
+external_icon_url: https://www.11tymeetup.dev/
 ---
 Here I field any and all community questions about the Eleventy rebrand to Build Awesome.
 

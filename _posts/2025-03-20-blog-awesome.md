@@ -12,6 +12,7 @@ metadata:
   youtubeId: O89QIruTink
 event_date: March 20
 medialength: 27 min
+external_icon_url: https://www.11tymeetup.dev/
 ---
 {% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 

@@ -5,7 +5,6 @@ tags:
   - speaking
   - video
 external_url: https://11tymeetup.dev/events/ep-12-configs-and-v2/
-external_icon_url: false
 metadata:
   type: speaking_recap
   speaking:
