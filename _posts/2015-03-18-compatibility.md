@@ -73,9 +73,9 @@ A really great look into the different methods for hiding content from screen re
 
 * *Related: [A11Y Project: How to Hide Content](http://a11yproject.com/posts/how-to-hide-content/)*
 
-## [`<input type="file">` on Mobile](http://viljamis.com/blog/2012/file-upload-support-on-mobile/)
+## [`<input type="file">` on Mobile](http://arielsalminen.com/blog/2012/file-upload-support-on-mobile/)
 
-<span class="tag">HTML</span> *—[Viljami Salminen](http://viljamis.com/)*
+<span class="tag">HTML</span> *—[Ariel Salminen](http://arielsalminen.com/)*
 
 (Originally from 2012 but it looks like it’s still being updated)
 
