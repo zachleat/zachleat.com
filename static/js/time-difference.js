@@ -1,6 +1,9 @@
 class TimeDifference extends HTMLElement {
+	#interval;
+
 	// Order of these keys in important
 	static UNITS = {
+		milliseconds: .001,
 		seconds:  1,
 		minutes:  60,
 		hours:    60 * 60,
@@ -24,7 +27,12 @@ class TimeDifference extends HTMLElement {
 		return this.hasAttribute("live");
 	}
 
-	get interval() {
+	get mode() {
+		// countdown: stops at 0
+		return this.getAttribute("mode");
+	}
+
+	get intervalTimeout() {
 		// numeric override (seconds)
 		let attr = this.getAttribute("interval");
 		if(attr) {
@@ -58,7 +66,7 @@ class TimeDifference extends HTMLElement {
 		return (TimeDifference.UNITS[units] || 1) * 1000;
 	}
 
-	static getText(dateStr, units, locale) {
+	static getText(dateStr, units, locale, mode) {
 		let date1;
 		if(!isNaN(Date.parse(dateStr))) {
 			date1 = Date.parse(dateStr);
@@ -72,10 +80,20 @@ class TimeDifference extends HTMLElement {
 		}
 
 		units = units || this.getUnits(date1, date2);
-		let rtf = new Intl.RelativeTimeFormat(locale, { numeric: "auto" });
 		let divisor = TimeDifference.getDivisor(units);
 		let diff = (date1 - date2) / divisor;
 		let amountDiff = diff/Math.round(diff);
+		// stops at 0
+		if(mode === "countdown") {
+			diff = Math.max(Math.floor(diff), 0); // minimum 0
+		}
+		if(units === "milliseconds") {
+			// milliseconds are not supported by RelativeTimeFormat
+			let numFormat = new Intl.NumberFormat();
+			return `${diff > 0 ? "in " : ""}${numFormat.format(diff)} milliseconds`;
+		}
+
+		let rtf = new Intl.RelativeTimeFormat(locale, { numeric: "always" });
 
 		// super close to next whole unit, round up
 		if( amountDiff < 1 && amountDiff > this.MINIMUM_ROUND_UP ) {
@@ -84,27 +102,61 @@ class TimeDifference extends HTMLElement {
 		if(diff < 0) {
 			return rtf.format(Math.ceil(diff), units);
 		}
+		// remove "in"
+		// return rtf.formatToParts(Math.floor(diff), units).slice(1).map(entry => entry.value).join("");
 		return rtf.format(Math.floor(diff), units);
 	}
 
-	update() {
-		this.time.forEach(timeEl => {
-			let dateStr = timeEl.getAttribute("datetime");
-			if(!dateStr) {
-				// For Shadow DOM method, using a global <template>
-				dateStr = this.getAttribute("date");
-			}
-
-			let locale = this.getAttribute("locale") || "en";
-			timeEl.innerText = TimeDifference.getText(dateStr, this.units, locale);
-		})
+	isPaused() {
+		return this.paused || this.hasAttribute("paused");
 	}
 
-	connectedCallback() {
+	update() {
+		if(this.isPaused()) {
+			return;
+		}
+
+		requestAnimationFrame(() => {
+			this.time.forEach(timeEl => {
+				let dateStr = timeEl.getAttribute("datetime");
+				if(!dateStr) {
+					// For Shadow DOM method, using a global <template>
+					dateStr = this.getAttribute("date");
+				}
+
+				let locale = this.getAttribute("locale") || "en";
+				timeEl.innerText = TimeDifference.getText(dateStr, this.units, locale, this.mode);
+			})
+		});
+	}
+
+	async getInterval() {
+		let min = 40;
+
+		if("getBattery" in navigator) {
+			let battery = await navigator.getBattery();
+			if(battery.level <= .5) { // Bump the interval on lower-battery
+				min = 1000;
+			}
+		}
+
+		return Math.max(this.intervalTimeout, min);
+	}
+
+	async connectedCallback() {
 		this.update();
 
+		this.time.forEach(timeEl => {
+			timeEl.style["font-variant-numeric"] = "tabular-nums";
+		});
+
 		if(this.live) {
-			setInterval(this.update.bind(this), this.interval);
+			// Minimum 40 milliseconds
+			let interval = await this.getInterval();
+			if(this.#interval) {
+				clearInterval(this.#interval);
+			}
+			this.#interval = setInterval(this.update.bind(this), interval);
 		}
 	}
 }

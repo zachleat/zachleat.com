@@ -757,6 +757,12 @@ table-saw :is(th, td) {
 .rail .icon-override {
 	--icon-color-override: #4c713e;
 }
+.rail .icon-override svg {
+	height: 1.2em;
+	width: auto;
+	vertical-align: text-bottom;
+	margin-left: .25em;
+}
 .rail .header {
 	display: flex;
 	gap: .35em;

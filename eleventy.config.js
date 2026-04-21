@@ -321,7 +321,7 @@ export default async function(eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat(formatOverride || "LLLL dd, yyyy");
 	});
 
-		eleventyConfig.addFilter("dateToISO", (dateObj) => {
+	eleventyConfig.addFilter("dateToISO", (dateObj) => {
 		return dateObj.toISOString()
 	});
 
