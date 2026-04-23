@@ -6,6 +6,7 @@ classes:
 modules:
   - "/static/heading-anchors.js"
   - "/static/js/time-difference.js"
+ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-awesome-pro?ref=43ttgb
 ---
 <a href="#skiplink-content" id="skiplink-top" class="skiplink skiplink-fn" data-pagefind-ignore>Skip to Content</a>
 <div class="rail" data-pagefind-ignore>
@@ -52,7 +53,9 @@ modules:
 						{%- endif %}
 						<div>
 							<div class="top5 icon-override">Launching{% include "build-awesome.svg" %}</div>
-							<is-land import="/static/js/time-difference.js" on:idle on:media="(prefers-reduced-motion: no-preference)"><a href="https://www.kickstarter.com/projects/fontawesome/build-awesome-pro?ref=43ttgb" class="tag tag-popular-rail tag-pinned-rail tag-borderless"><time-difference live units="milliseconds" mode="countdown"><time datetime="2026-04-28T15:00:00Z">April 28</time></time-difference></a></is-land>
+{%- if JS_ENABLED %}
+							<is-land on:idle on:media="(prefers-reduced-motion: no-preference)"><a href="{{ ba_kickstarter_url }}" class="tag tag-popular-rail tag-pinned-rail tag-borderless"><time-difference live units="milliseconds" mode="countdown"><time datetime="2026-04-28T15:00:00Z">April 28</time></time-difference></a></is-land>
+{%- endif %}
 						</div>
 
 					{%- if hasToc != true and hidePostsInSidebar != true %}
