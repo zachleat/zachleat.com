@@ -43,6 +43,14 @@ layout: layouts/pagealign.liquid
 	{% comment %}<li><a href="https://twitter.com/eleven_ty/">{% indieAvatar "https://x.com/" %}Twitter <code>@eleven_ty</code></a></li>{% endcomment %}
 </ul>
 
+I enjoy trying to speedrun Apple News+ puzzles, here are a few of my best times:
+
+<ul class="list-inline">
+	<li><strong>{% icon "fab:apple" %}Apple News+ {% icon "fa:puzzle-piece" %}Puzzle Scoreboard</strong></li>
+	<li>Fastest Sudoku: <strong>1m 33s</strong> (April 21, 2026) <del><strong>1m 45s</strong> (September 4, 2025)</del></li>
+	<li>Fastest Crossword Mini: <strong>10s</strong> (September 12, 2025) <del><strong>12s</strong> (August 27, 2025)</del></li>
+</ul>
+
 ## Bio
 
 {% include "bio-text-medium.html" %}
@@ -60,13 +68,13 @@ Zach is a builder for the web at Font Awesome and the creator/maintainer of Elev
 #### HTML
 
 ``` html
-Zach is a builder for the web at <a href="https://fontawesome.com/">Font Awesome</a> and the creator/maintainer of <a href="https://www.11ty.dev">Eleventy (11ty)</a>, an award-winning open source site generator. At one point he became entirely <a href="https://www.zachleat.com/web/fonts/"><em>too fixated</em> on web fonts</a>. He has given <a href="https://www.zachleat.com/web/speaking/">{{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries</a> at events like Beyond Tellerrand, Smashing Conference, Jamstack Conf, CSSConf, and <a href="https://www.zachleat.com/web/whitehouse/">The White House</a>. Formerly part of <a href="https://cloudcannon.com/">CloudCannon</a>, <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.filamentgroup.com/">Filament Group</a>, <a href="http://nejsconf.com/">NEJS CONF</a>, and <a href="http://nebraskajs.com">NebraskaJS</a>.
+Zach is a builder for the web at <a href="https://fontawesome.com/">Font Awesome</a> and the creator/maintainer of <a href="https://www.11ty.dev">Eleventy (11ty)</a>, an award-winning open source site generator. At one point he became entirely <em>too fixated</em> on <a href="https://www.zachleat.com/web/fonts/">web fonts</a>. He has given <a href="https://www.zachleat.com/web/speaking/">{{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries</a> at events like Beyond Tellerrand, Smashing Conference, Jamstack Conf, CSSConf, and <a href="https://www.zachleat.com/web/whitehouse/">The White House</a>. Formerly part of <a href="https://cloudcannon.com/">CloudCannon</a>, <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.filamentgroup.com/">Filament Group</a>, <a href="http://nejsconf.com/">NEJS CONF</a>, and <a href="http://nebraskajs.com">NebraskaJS</a>.
 ```
 
 #### Markdown
 
 ``` markdown
-Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and the creator/maintainer of [Eleventy (11ty)](https://www.11ty.dev), an award-winning open source site generator. At one point he became entirely [_too fixated_ on web fonts](https://www.zachleat.com/web/fonts/). He has given [{{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries](https://www.zachleat.com/web/speaking/) at events like Beyond Tellerrand, Smashing Conference, Jamstack Conf, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/). Formerly part of [Netlify](https://www.netlify.com/), [Filament Group](https://www.filamentgroup.com/), [NEJS CONF](http://nejsconf.com/), and [NebraskaJS](http://nebraskajs.com).
+Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and the creator/maintainer of [Eleventy (11ty)](https://www.11ty.dev), an award-winning open source site generator. At one point he became entirely _too fixated_ [on web fonts](https://www.zachleat.com/web/fonts/). He has given [{{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries](https://www.zachleat.com/web/speaking/) at events like Beyond Tellerrand, Smashing Conference, Jamstack Conf, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/). Formerly part of [Netlify](https://www.netlify.com/), [Filament Group](https://www.filamentgroup.com/), [NEJS CONF](http://nejsconf.com/), and [NebraskaJS](http://nebraskajs.com).
 ```
 
 ## Photos

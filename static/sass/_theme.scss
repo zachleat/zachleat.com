@@ -459,9 +459,30 @@ body {
 :visited:hover {
 	color: config.$linkActiveColor;
 }
-
+.about-description {
+	margin-block: 3em;
+}
 .about-description p {
-	margin-top: 0;
+	margin: 0;
+}
+@media (min-width: config.$twoColLayoutMinWidth) {
+	.about-description {
+		// 9em is for opengraph image screenshot alignment on home page
+		margin-block: 7.36842em max(9em, 20vh); /* 140px /19 */
+	}
+	.about-description :any-link {
+		--highlight-color: rgba(0,0,0,.06);
+		background-color: var(--highlight-color);
+		text-decoration-color: inherit;
+		border-radius: 0.0625em; /* 1px /16 */
+		box-shadow: 0 0 0 2px var(--highlight-color);
+		padding: .125em;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+	}
+	.about-description p {
+		font-size: 1.368421052632em; /* 26px /19 */
+	}
 }
 html:not(.tmpl-list) .content-main .posts a:not(.social_icon),
 html:not(.tmpl-list) .content-main pre a[href],
