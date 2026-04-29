@@ -28,8 +28,13 @@ class TimeDifference extends HTMLElement {
 	}
 
 	get mode() {
-		// countdown: stops at 0
+		// "countdown": stops at 0
+		// "strip-prefix": removes the "in" from future dates
 		return this.getAttribute("mode");
+	}
+
+	get suffix() {
+		return this.getAttribute("suffix");
 	}
 
 	get intervalTimeout() {
@@ -66,7 +71,9 @@ class TimeDifference extends HTMLElement {
 		return (TimeDifference.UNITS[units] || 1) * 1000;
 	}
 
-	static getText(dateStr, units, locale, mode) {
+	static getText(dateStr, options = {}) {
+		let { units, locale, mode, suffix } = options;
+
 		let date1;
 		if(!isNaN(Date.parse(dateStr))) {
 			date1 = Date.parse(dateStr);
@@ -102,9 +109,13 @@ class TimeDifference extends HTMLElement {
 		if(diff < 0) {
 			return rtf.format(Math.ceil(diff), units);
 		}
-		// remove "in"
-		// return rtf.formatToParts(Math.floor(diff), units).slice(1).map(entry => entry.value).join("");
-		return rtf.format(Math.floor(diff), units);
+
+		let str = rtf.format(Math.floor(diff), units);
+		if(mode === "strip-prefix" && str?.toLowerCase().startsWith("in ")) {
+			str = str.slice(3);
+		}
+
+		return str + (suffix ? ` ${suffix}` : "");
 	}
 
 	isPaused() {
@@ -125,7 +136,12 @@ class TimeDifference extends HTMLElement {
 				}
 
 				let locale = this.getAttribute("locale") || "en";
-				timeEl.innerText = TimeDifference.getText(dateStr, this.units, locale, this.mode);
+				timeEl.innerText = TimeDifference.getText(dateStr, {
+					units: this.units,
+					locale,
+					mode: this.mode,
+					suffix: this.suffix
+				});
 			})
 		});
 	}
