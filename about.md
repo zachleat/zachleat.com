@@ -43,11 +43,10 @@ layout: layouts/pagealign.liquid
 	{% comment %}<li><a href="https://twitter.com/eleven_ty/">{% indieAvatar "https://x.com/" %}Twitter <code>@eleven_ty</code></a></li>{% endcomment %}
 </ul>
 
-I enjoy trying to speedrun Apple News+ puzzles, here are a few of my best times:
+I enjoy trying to speedrun {% icon "fab:apple" %}Apple News+ puzzles, here are some of my best times:
 
-<ul class="list-inline">
-	<li><strong>{% icon "fab:apple" %}Apple News+ {% icon "fa:puzzle-piece" %}Puzzle Scoreboard</strong></li>
-	<li>Fastest Sudoku: <strong>1m 33s</strong> (April 21, 2026) <del><strong>1m 45s</strong> (September 4, 2025)</del></li>
+<ul>
+	<li>Fastest Sudoku: <strong>1m 21s</strong> (May 6, 2026) <del><strong>1m 33s</strong> (April 21, 2026)</del></li>
 	<li>Fastest Crossword Mini: <strong>10s</strong> (September 12, 2025) <del><strong>12s</strong> (August 27, 2025)</del></li>
 </ul>
 
