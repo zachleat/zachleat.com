@@ -996,6 +996,7 @@ a[href]:is(:focus, :hover) .project_img {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1em;
+	flex-direction: row;
 }
 .posts-withimg > * {
 	flex-grow: 1;
