@@ -39,7 +39,7 @@
 /* Also I liked Josefin Sans */
 @font-face {
 	font-family: Numero; /* 'Old Standard TT' */
-  src: url(/static/fonts/old-standard/oldstandard-italic-subset.woff2) format("woff2");
+  src: url('/static/fonts/old-standard/oldstandard-italic-subset.woff2') format("woff2");
   font-style: italic;
   font-display: swap;
   unicode-range: U+2116;
@@ -47,7 +47,7 @@
 
 @font-face {
 	font-family: Numero; /* 'Old Standard TT' */
-  src: url(/static/fonts/old-standard/oldstandard-regular-subset.woff2) format("woff2");
+  src: url('/static/fonts/old-standard/oldstandard-regular-subset.woff2') format("woff2");
   font-display: swap;
   unicode-range: U+2116;
 }
