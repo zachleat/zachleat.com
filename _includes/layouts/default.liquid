@@ -55,7 +55,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 							<div class="top5 icon-override">Launching{% include "build-awesome.svg" %}</div>
 {%- if JS_ENABLED %}
 							{% comment %} <is-land on:idle on:media="(prefers-reduced-motion: no-preference)"><a href="{{ ba_kickstarter_url }}" class="tag tag-popular-rail tag-pinned-rail tag-borderless"><time-difference live units="milliseconds" mode="countdown"><time datetime="2026-04-28T15:00:00Z">April 28</time></time-difference></a></is-land> {% endcomment %}
-							<a href="{{ ba_kickstarter_url }}" class="tag tag-popular-rail tag-pinned-rail tag-borderless">Back Build Awesome Pro!</a>
+							<a href="{{ ba_kickstarter_url }}" class="tag tag-popular-rail tag-pinned-rail tag-borderless">Build Awesome ×{{ kickstarterStats.backers }} {% icon "fab:kickstarter" %} Backers<progress min="0" max="100000" value="{{ kickstarterStats.pledged }}"></progress></a>
 {%- endif %}
 						</div>
 

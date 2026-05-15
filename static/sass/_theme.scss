@@ -1212,6 +1212,16 @@ a[href]:is(:focus, :hover) .project_img {
 	text-decoration: none;
 	border-radius: var(--z-border-radius-2);
 }
+.tags .tag.tag-pinned-rail:has(progress) {
+	padding: .75em 1em;
+}
+.tag progress {
+	display: block;
+	width: 100%;
+	margin-block-start: .25em;
+	accent-color: currentColor;
+	font-size: 2em;
+}
 .tag-inline:where(:has(svg):not(.tag-borderless)),
 .tags .tag:where(:has(svg):not(.tag-borderless)) {
 	--shadow-color: rgba(0,0,0,.15);
