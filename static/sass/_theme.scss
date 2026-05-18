@@ -1216,12 +1216,27 @@ a[href]:is(:focus, :hover) .project_img {
 	padding: .75em 1em;
 }
 .tag progress {
+	--accent-color: rgb(245 37 233);
 	display: block;
 	width: 100%;
 	margin-block-start: .25em;
-	accent-color: currentColor;
 	font-size: 2em;
+	height: 1em;
+	border-radius: .125em;
+	overflow: hidden;
+	appearance: none;
+	accent-color: var(--accent-color);
 }
+.tag ::-webkit-progress-value {
+	background: var(--accent-color)
+}
+.tag ::-moz-progress-bar {
+	background: var(--accent-color)
+}
+.tag ::-webkit-progress-bar {
+	box-shadow: 0 .125em .3125em rgba(0, 0, 0, 0.25) inset;
+}
+
 .tag-inline:where(:has(svg):not(.tag-borderless)),
 .tags .tag:where(:has(svg):not(.tag-borderless)) {
 	--shadow-color: rgba(0,0,0,.15);
