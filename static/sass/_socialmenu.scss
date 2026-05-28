@@ -53,11 +53,7 @@
 
 /* Small viewport navigation */
 @media (max-width: config.$oneColLayoutMaxWidth) {
-	.social, .tags-rail-links {
+	.social {
 		justify-content: center;
-	}
-	.rail .navigation .tags a[href] {
-		display: inline-flex;
-		white-space: nowrap;
 	}
 }

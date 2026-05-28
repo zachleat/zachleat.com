@@ -343,7 +343,7 @@ h5,
 			margin-right: auto;
 		}
 	}
-	@media (min-width: config.$twoColLayoutMinWidth) and (min-height: 44em) { /* 980px */
+	@media (min-width: config.$twoColLayoutMinWidth) and (min-height: 58em) {
 		.rail-sticky {
 			position: sticky;
 			top: 1em;
@@ -1395,19 +1395,17 @@ a[href].tag-inline:not(.tag-borderless),
 .tags-rail-links a[href] {
 	display: inline-flex;
 	align-items: center;
-	padding: .4em;
+	padding: .4em .8em;
 	border-radius: .25em;
-}
-.tags-rail-links a[href]:has(svg) {
-	padding-inline-start: .25em;
 }
 .tags-rail-links a[href].active {
 	color: #f4f4f4;
-	background-color: #39542f;
+	background-color: config.$primaryColor;
 }
 @media (max-width: config.$oneColLayoutMaxWidth) {
 	.tags-rail-links {
 		display: flex;
+		justify-content: stretch;;
 		flex-wrap: wrap;
 		gap: .25em .5em;
 		text-transform: uppercase;
@@ -1415,6 +1413,22 @@ a[href].tag-inline:not(.tag-borderless),
 	.tags-rail-links .z-icon {
 		width: 1em;
 		height: 1em;
+	}
+	.tags-rail-links > * {
+		flex-grow: 1;
+		flex-basis: 30%;
+	}
+	.tags-rail-links a[href] {
+		display: flex;
+		justify-content: center;
+		border: 0.125em solid config.$lightBorderColor;
+	}
+	.tags-rail-links a[href].active {
+		border-color: transparent;
+	}
+	.rail .navigation .tags a[href] {
+		display: inline-flex;
+		white-space: nowrap;
 	}
 }
 @media (min-width: config.$twoColLayoutMinWidth) {
@@ -1429,6 +1443,9 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.tags-rail-links a[href]:not(:has(.z-icon)) {
 		margin-left: 1.7em;
+	}
+	.tags-rail-links a[href]:has(svg) {
+		padding-inline-start: .25em;
 	}
 }
 
