@@ -1864,6 +1864,7 @@ main a[href]:has(> .z-icon [href="#fas-fa-user"]) .z-icon {
 .toggle-features-form > .fl > * {
 	display: flex;
 	flex-grow: 0;
+	gap: .25em;
 }
 
 /* Time difference component */

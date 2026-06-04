@@ -70,6 +70,7 @@ export default async function(eleventyConfig) {
 	const slugify = eleventyConfig.getFilter("slugify");
 	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 	eleventyConfig.addGlobalData("currentDate", () => new Date());
+	eleventyConfig.addGlobalData("blogBirthday", () => new Date(2007, 1, 20));
 
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if (data.draft) {

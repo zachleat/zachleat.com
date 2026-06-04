@@ -1,7 +1,6 @@
 <footer class="content-grid-sibling">
 	<div class="footer">
-		Built with <a href="https://www.11ty.dev/">Eleventy v{{ eleventy.version }}</a>
-		· {{ totalAnalyticsPageViews | renderNumber }} Views
+		Built {% if JS_ENABLED %}<time-difference live class="tag tag-popular-rail tag-borderless"><em><time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}">{{ currentDate | readableDate }}</time></em></time-difference>{% endif %} with <a href="https://www.11ty.dev/">Eleventy v{{ eleventy.version }}</a>
 		· <a href="/web/license/">MIT license</a>
 		· <strong aria-hidden="true">🏳️‍⚧️</strong><span class="sr-only">Transgender Flag Emoji</span>
 		· <a href="/web/style-guide/">Style Guide</a>
@@ -11,6 +10,12 @@
 		<form class="toggle-features-form">
 			<div class="fl fl-inline fl-nowrap">
 				<a href="/uses/"><img src="/img/built-with-eleventy.gif" alt="Built with Eleventy, Red balloon floats away" loading="lazy" width="88" height="31" eleventy:ignore class="footer-badge"></a>
+				<span>
+					{{ totalAnalyticsPageViews | renderNumber }} Views
+					{% if JS_ENABLED %}
+						<time-difference units="years" mode="strip-suffix" prefix="in " class="tag tag-popular-rail tag-borderless"><em><time datetime="{{ blogBirthday | dateToISO }}" title="{{ blogBirthday | dateToISO }}">since {{ blogBirthday | readableDate: "yyyy" }}</time></em></time-difference>
+					{% endif %}
+				</span>
 				{%- renderTemplate "webc" %}
 				<div>
 					<toggle-button label="CSS" class="toggle-css"></toggle-button>
@@ -27,10 +32,6 @@
 					<speedlify-score :hash="_" score weight></speedlify-score>
 					{%- endrenderTemplate %}
 				</a>
-{%- endif %}
-{%- if JS_ENABLED %}
-				<time-difference live class="tag tag-popular-rail tag-borderless"><em>Built <time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}">{{ currentDate | readableDate }}</time></em></time-difference>
-				<!-- Built {{ currentDate | readableDate }} -->
 {%- endif %}
 			</div>
 		</form>
