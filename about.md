@@ -78,27 +78,37 @@ Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and th
 
 ## Photos
 
-### Deprecated but saved for Posterity
+### Current: 2025
+
+<img src="/img/avatar-2025-green.png" alt="Photo of Zach Leatherman’s Bearded Face" class="about-secondary-avatar">
+
+### Deprecated: 2017
+
+<figure>
+	<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" class="about-secondary-avatar">
+	<figcaption>Modified from below for avatar use.</figcaption>
+</figure>
 
 <figure>
 	<img src="/img/bio-2017.jpg" alt="Just a picture of my face." eleventy:widths="400,800,auto">
 	<figcaption>Picture taken by <a href="https://www.facebook.com/andrey.davydchyk">Andrey Davydchyk</a> at <a href="https://www.facebook.com/cssminskjs/">CSS Minsk JS</a>. <a href="/img/bio-2017.jpg">Download JPEG version</a>.</figcaption>
 </figure>
 
-<figure>
-	<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" class="about-secondary-avatar">
-	<figcaption>Modified from above for avatar use.</figcaption>
-</figure>
+### Deprecated: 2014
 
 <figure>
 	<img src="/img/avatar.png" alt="A very bearded picture of my face.">
 	<figcaption>Picture taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="/web/smashingconf/2014/">SmashingConf Whistler</a>. Download the <a href="/img/bio.jpg">original version</a>.</figcaption>
 </figure>
 
+### Deprecated: 2009
+
 <figure>
 	<img src="/img/avatar-old.png" alt="An avatar with zachleat vertical text aside.">
 	<figcaption>Deprecated.</figcaption>
 </figure>
+
+### Deprecated: 2007
 
 <figure>
 	<img src="./web/img/web367.png" alt="The very first logo for this blog: Web 3.0 6 Bladed Razors and 7 Minute Abs">

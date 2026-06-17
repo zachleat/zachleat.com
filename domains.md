@@ -54,8 +54,8 @@ layout: layouts/pagealign.liquid
 	- `indieweb-avatar.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/indieweb-avatar/)
 	- `opengraph.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/opengraph/)
 	- `screenshot.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/screenshots/)
-	- `sparkline.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/builtwith/)
-	- `builtwith.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/sparklines/)
+	- `sparkline.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/sparklines/)
+	- `builtwith.11ty.dev`: [Docs](https://www.11ty.dev/docs/services/builtwith/)
 1. `11ty.app` (2024–)
 	- `screenshot.11ty.app`
 1. [`eleventy.dev`](https://eleventy.dev/) (2020–): Redirect

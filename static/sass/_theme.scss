@@ -875,6 +875,10 @@ table-saw :is(th, td) {
 	line-height: 110%;
 	text-decoration: none;
 }
+.posts .posts-link-highlight {
+	font-weight: 900;
+	font-size: 1.263157894737em; /* 24px /19 */
+}
 .posts .posts-link-more {
 	text-decoration: underline;
 }
