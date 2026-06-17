@@ -36,7 +36,7 @@ eleventyImport:
 		{% assign currentyearpostcount = 0 %}
 		{% assign listItems = collections.posts %}
 		{% for post in collections.posts %}
-			{% include "post-list-entry.html", hfeed: true %}
+			{% include "post-list-entry.html", hfeed: true, isArchives: true %}
 		{% endfor %}
 	</ol>
 </filter-container>
