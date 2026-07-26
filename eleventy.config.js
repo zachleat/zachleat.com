@@ -472,6 +472,10 @@ export default async function(eleventyConfig) {
 	});
 
 	/* COLLECTIONS */
+	eleventyConfig.addFilter("endsWith", function(str, includesOtherStr) {
+		return str?.endsWith(includesOtherStr);
+	});
+
 	eleventyConfig.addFilter("isPost", function(inputPath) {
 		return inputPath.startsWith("./_posts/") && (inputPath.endsWith(".md") || inputPath.endsWith(".html"));
 	});
