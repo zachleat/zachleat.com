@@ -5,7 +5,7 @@ export const minimumStars = 200;
 
 let report = await Fetch("https://zachleat.github.io/is-this-still-being-maintained/report.json", {
 	type: "json",
-	duration: "5m",
+	duration: "30m",
 });
 
 export const packages = report.projects.sort((a, b) => {

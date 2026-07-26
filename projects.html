@@ -11,11 +11,14 @@ td.neglect {
 }
 </style>
 <p>This is a list of all of my open source projects sorted by a Neglect score (by popularity, issues, and recent stable publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
+
+<script type="module" src="/static/table-saw.js"></script>
+<table-saw text-align>
 <table>
   <thead>
     <tr>
       <th>Neglect</th>
-      <th>{% icon "fas:box-open" %}Package Name</th>
+      <th>{% icon "fas:box-open" %}Name</th>
       <th>Version</th>
       <th class="numeric">{% icon "fas:bug" %}Issues</th>
       <th class="numeric">{% icon "fas:code-merge" %}PRs</th>
@@ -23,23 +26,28 @@ td.neglect {
   </thead>
 	<tfoot>
 		<tr>
-			<td></td>
-			<td>
+			<th></th>
+			<th>
 				<strong>{{ packages | size }} projects total</strong><br>
 				<small>
 					{% icon "fas:star" %}{{ totals.stars | renderNumber }}
 					{% icon "fas:download" %}{{ totals.downloads | renderNumber }} (last month)
 				</small>
-			</td>
-			<td></td>
-			<td class="numeric">
-				<small>{% icon "fas:bug" %}</small>{{ totals.issues.open }}<br>
-				<small>{{ totals.issues.closed }} closed</small>
-			</td>
-			<td class="numeric">
-				<small>{% icon "fas:code-merge" %}</small>{{ totals.prs.open }}<br>
-				<small>{{ totals.prs.closed }} closed</small>
-			</td>
+			</th>
+			<th></th>
+			<th class="numeric">
+				<div>
+					{% icon "fas:bug" %}{{ totals.issues.open }} issues<br>
+					<small>{{ totals.issues.closed }} closed</small>
+				</div>
+			</th>
+			<th class="numeric">
+				<div>
+					{% icon "fas:code-merge" %}{{ totals.prs.open }} PRs<br>
+					<small>{{ totals.prs.closed }} closed</small>
+				</div>
+			</th>
+		</tr>
 	</tfoot>
   <tbody>
 {% for result in packages %}
@@ -89,3 +97,4 @@ td.neglect {
 {% endfor %}
   </tbody>
 </table>
+</table-saw>
