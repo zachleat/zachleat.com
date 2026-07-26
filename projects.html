@@ -10,7 +10,7 @@ td.neglect {
   background: hsl(var(--neglect-hue) 70% 90%);
 }
 </style>
-<p>This is a list of all of my open source projects sorted by a Neglect score (by popularity, issues, and recent stable publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
+<p>This is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
 
 <script type="module" src="/static/table-saw.js"></script>
 <table-saw text-align>
@@ -57,7 +57,13 @@ td.neglect {
 			</td>
 			<td>
 				{% if result.lastPublish %}
-					{% icon "fas:box-open" %}<code>{{ result.packageName }}</code><br>
+					{% icon "fas:box-open" %}<code>{{ result.packageName }}</code>
+					{% unless result.packageName | endsWith: result.nameWithOwner %}
+						{% unless result.nameWithOwner | endsWith: result.packageName %}
+							{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
+						{% endunless %}
+					{% endunless %}
+					<br>
 				{% else %}
 					{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code><br>
 				{% endif %}
