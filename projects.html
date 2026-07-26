@@ -4,7 +4,13 @@ export const title = "Is this still being maintained?";
 export const layout = "layouts/pagealign.liquid";
 // </script>
 ---
-<p>This is a list of all of my open source projects sorted by a Neglect score (by popularity, issues, and recent publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
+<style>
+td.neglect {
+  --neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
+  background: hsl(var(--neglect-hue) 70% 90%);
+}
+</style>
+<p>This is a list of all of my open source projects sorted by a Neglect score (by popularity, issues, and recent stable publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
 <table>
   <thead>
     <tr>
@@ -38,7 +44,7 @@ export const layout = "layouts/pagealign.liquid";
   <tbody>
 {% for result in packages %}
 		<tr>
-			<td class="numeric" style="background-color: hsl(0, {{ result.score }}%, 80%)">
+			<td class="neglect numeric" style="--neglect-score: {{ result.score }}">
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
 			</td>
 			<td>
@@ -61,7 +67,7 @@ export const layout = "layouts/pagealign.liquid";
 				</div>
 				{% if result.prerelease %}
 					<div class="m-2">
-						<small>{% icon "far:alarm-clock" %}</small><em>{{ result.lastPublishVersion }}</em><br>
+						<em>{{ result.lastPublishVersion }}</em><br>
 						{% if result.lastPublishVersion %}
 						<small>
 							<time-difference live><em><time datetime="{{ result.lastPublish }}" title="{{ result.lastPublish }}">{{ result.lastPublish | readableDateFromISO }}</time></em></time-difference>
