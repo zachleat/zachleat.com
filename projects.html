@@ -1,0 +1,85 @@
+---js
+// <script>
+export const title = "Is this still being maintained?";
+export const layout = "layouts/pagealign.liquid";
+// </script>
+---
+<p>This is a list of all of my open source projects published to {% icon "fab:npm" %}npm sorted by a Neglect score (by popularity, issues, and recent publish descending).</p>
+<table>
+  <thead>
+    <tr>
+      <th>Neglect</th>
+      <th>{% icon "fas:box-open" %}Package Name</th>
+      <th>Version</th>
+      <th class="numeric">{% icon "fas:bug" %}Issues</th>
+      <th class="numeric">{% icon "fas:code-merge" %}PRs</th>
+    </tr>
+  </thead>
+	<tfoot>
+		<tr>
+			<td></td>
+			<td>
+				<strong>{{ packages | size }} projects total</strong><br>
+				<small>
+					{% icon "fas:star" %}{{ totals.stars | renderNumber }}
+					{% icon "fas:download" %}{{ totals.downloads | renderNumber }} (last month)
+				</small>
+			</td>
+			<td></td>
+			<td class="numeric">
+				<small>{% icon "fas:bug" %}</small>{{ totals.issues.open }}<br>
+				<small>{{ totals.issues.closed }} closed</small>
+			</td>
+			<td class="numeric">
+				<small>{% icon "fas:code-merge" %}</small>{{ totals.prs.open }}<br>
+				<small>{{ totals.prs.closed }} closed</small>
+			</td>
+	</tfoot>
+  <tbody>
+{% for result in packages %}
+		<tr>
+			<td class="numeric" style="background-color: hsl(0, {{ result.score }}%, 80%)">
+				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
+			</td>
+			<td>
+				{% unless result.isTemplate %}{% icon "fas:box-open" %}{% endunless %}<code>{{ result.packageName }}</code><br>
+				<small style="margin-inline-start: 1.5625rem">
+					{% if result.url %}<a href="{{ result.url }}">{% icon "fas:code" %}GitHub{% if result.isTemplate %} Template{% endif %}</a>{% endif %}
+					{% if result.stars > minimumStars %}{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}{% endif %}
+					{% if result.lastStablePublishVersion %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}npm</a>{% endif %}
+					{% if result.downloads > minimumDownloads %}{% icon "fas:download" %}{{ result.downloads | renderNumber: "0a" }} ({{ result.downloadsPeriod | split: "-" | join: " " }}){% endif %}
+				</small>
+			</td>
+			<td>
+				<div class="m-2">
+					{{ result.lastStablePublishVersion }}<br>
+					{% if result.lastStablePublishVersion %}
+					<small>
+						<time-difference live><em><time datetime="{{ result.lastStablePublish }}" title="{{ result.lastStablePublish }}">{{ result.lastStablePublish | readableDateFromISO }}</time></em></time-difference>
+					</small>
+					{% endif %}
+				</div>
+				{% if result.prerelease %}
+					<div class="m-2">
+						<small>{% icon "far:alarm-clock" %}</small><em>{{ result.lastPublishVersion }}</em><br>
+						{% if result.lastPublishVersion %}
+						<small>
+							<time-difference live><em><time datetime="{{ result.lastPublish }}" title="{{ result.lastPublish }}">{{ result.lastPublish | readableDateFromISO }}</time></em></time-difference>
+						</small>
+						{% endif %}
+					</div>
+				{% endif %}
+			</td>
+			<td class="numeric">
+				<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
+				{% if result.closedIssues > 0 %}<br><small>{{ result.closedIssues | renderNumber: "0a" }} closed</small>{% endif %}
+			</td>
+			<td class="numeric">
+				<small>{% icon "fas:code-merge" %}</small>{{ result.openPRs }}
+			{% assign prsClosed = result.mergedPRs | plus: result.closedPRs %}
+			{% if prsClosed > 0 %}<br><small>{{ prsClosed | renderNumber: "0a" }} closed</small>{% endif %}
+			</td>
+		</tr>
+{% endfor %}
+  </tbody>
+</table>
