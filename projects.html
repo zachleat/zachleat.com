@@ -83,15 +83,16 @@ export const layout = "layouts/pagealign.liquid";
 			</td>
 			<td>
 				<div class="name">
-					{% assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
-					{% if result.lastPublish %}
-						{% icon "fas:box-open" %}<code>{{ result.packageName }}</code>
-						{% if npmGitHubMismatch %}
+					{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
+					{%- if result.lastPublish %}
+						{%- icon "fas:box-open" %}<code>{{ result.packageName }}</code>
+						{%- if npmGitHubMismatch %}
 							from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
-						{% endif %}
-					{% else %}
-						{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
-					{% endif %}
+						{%- endif %}
+					{%- else %}
+						{%- icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
+					{%- endif %}
+					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
 				<small class="metadata">
 					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
