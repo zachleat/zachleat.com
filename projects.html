@@ -82,12 +82,12 @@ export const layout = "layouts/pagealign.liquid";
 				<div class="name">
 					{% assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
 					{% if result.lastPublish %}
-						{% icon "fab:npm" %}<code>{{ result.packageName }}</code>
+						{% icon "fas:box-open" %}<code>{{ result.packageName }}</code>
 						{% if npmGitHubMismatch %}
 							from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
 						{% endif %}
 					{% else %}
-						{% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
+						{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
 					{% endif %}
 				</div>
 				<small class="metadata">
