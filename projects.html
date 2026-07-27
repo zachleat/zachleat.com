@@ -109,7 +109,7 @@ export const layout = "layouts/pagealign.liquid";
 			<td>
 				{% if result.lastStablePublishVersion %}
 				<div class="m-2">
-					{{ result.lastStablePublishVersion }}<br>
+					<div class="nowrap">{{ result.lastStablePublishVersion }}</div>
 					{% if result.lastStablePublishVersion %}
 					<small>
 						<time-difference live><em><time datetime="{{ result.lastStablePublish }}" title="{{ result.lastStablePublish }}">{{ result.lastStablePublish | readableDateFromISO }}</time></em></time-difference>
@@ -119,7 +119,7 @@ export const layout = "layouts/pagealign.liquid";
 				{% endif %}
 				{% if result.prerelease %}
 					<div class="m-2">
-						<em>{{ result.lastPublishVersion }}</em><br>
+						<div class="nowrap"><em>{{ result.lastPublishVersion }}</em></div>
 						{% if result.lastPublishVersion %}
 						<small>
 							<time-difference live><em><time datetime="{{ result.lastPublish }}" title="{{ result.lastPublish }}">{{ result.lastPublish | readableDateFromISO }}</time></em></time-difference>
