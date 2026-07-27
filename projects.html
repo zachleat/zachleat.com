@@ -6,6 +6,7 @@ export const layout = "layouts/pagealign.liquid";
 ---
 <style>
 #projects {
+	tfoot { background-color: #f2f2f2; }
 	tr {
 		--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
 	}
@@ -34,6 +35,15 @@ export const layout = "layouts/pagealign.liquid";
 }
 </style>
 <p>This is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
+
+<ul>
+	<li>{{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %} on {{ packages | size | renderNumber }} open source projects</li>
+	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last month)</em></li>
+	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
+	<li>{% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues closed</li>
+	<li>{% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}PRs closed</li>
+</ul>
+
 <p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO }}</time></time-difference>. {% endif %}Download counts shown are for the last month.</em></p>
 
 <script type="module" src="/static/table-saw.js"></script>
@@ -41,7 +51,7 @@ export const layout = "layouts/pagealign.liquid";
 <table id="projects">
   <thead>
     <tr>
-      <th>Neglect</th>
+      <th class="numeric">Neglect</th>
       <th>{% icon "fas:box-open" %}Name</th>
       <th>Age</th>
       <th>Version</th>
@@ -51,15 +61,15 @@ export const layout = "layouts/pagealign.liquid";
   </thead>
 	<tfoot>
 		<tr>
-			<th></th>
+			<th class="numeric">-</th>
 			<th>
-				<strong>{{ packages | size | renderNumber }} projects total</strong><br>
+				<strong>{{ packages | size | renderNumber }} Projects Total</strong><br>
 				<small>
 					{% icon "fas:star" %}{{ totals.stars | renderNumber }}
 					{% icon "fas:download" %}{{ totals.downloads | renderNumber }} (last month)
 				</small>
 			</th>
-			<th>{{ totals.publishes | renderNumber }} Version{% if totals.publishes != 1 %}s{% endif %}</th>
+			<th>{{ totals.publishes | renderNumber }} version{% if totals.publishes != 1 %}s{% endif %}</th>
 			<th></th>
 			<th class="numeric">
 				<div>
