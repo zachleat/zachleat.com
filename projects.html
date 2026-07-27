@@ -83,7 +83,7 @@ export const layout = "layouts/pagealign.liquid";
 					{% if result.lastPublish %}
 						{% icon "fas:box-open" %}<code>{{ result.packageName }}</code>
 						{% if npmAlsoShowRepoName | includes: result.packageName %}
-							from {% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
+							from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
 						{% endif %}
 					{% else %}
 						{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
