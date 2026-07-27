@@ -1419,12 +1419,14 @@ a[href].tag-inline:not(.tag-borderless),
 		height: 1em;
 	}
 	.tags-rail-links > * {
+		display: flex;
 		flex-grow: 1;
-		flex-basis: 30%;
+		flex-basis: 23%;
 	}
 	.tags-rail-links a[href] {
 		display: flex;
 		justify-content: center;
+		width: 100%;
 		border: 0.125em solid config.$lightBorderColor;
 	}
 	.tags-rail-links a[href].active {
