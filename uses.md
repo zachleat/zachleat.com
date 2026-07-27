@@ -150,7 +150,7 @@ tr:has(del) .z-avatar {
 			<td><code>2026–</code></td>
 			<td>{% indieAvatar "https://claude.ai/" %}Claude</td>
 			<td class="hide-sm">{% icon "fa:briefcase" %}</td>
-			<td class="hide-sm"></td>
+			<td class="hide-sm">{% icon "fa:money-bill-1" %}</td>
 			<td></td>
 		</tr>
 		<tr data-filter-category="hardware" data-filter-active="yes">
