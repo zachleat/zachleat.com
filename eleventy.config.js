@@ -451,7 +451,7 @@ export default async function(eleventyConfig) {
 
 		let imageHtml = "";
 		if(mode === "screenshot") {
-			imageHtml = screenshotImageHtmlFullUrl(url);
+			imageHtml = await screenshotImageHtmlFullUrl(url);
 		} else if(mode === "opengraph") {
 			imageHtml = opengraphImageHtml(url);
 		}

@@ -43,7 +43,7 @@ export function getOpenGraphImageUrl(url, format = "") {
 	return `https://v1.opengraph.11ty.dev/${encodeURIComponent(u.toString())}/${format ? `auto/${format}/` : ""}`;
 }
 
-function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
+async function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 	let fullUrl = getOpenGraphImageUrl(targetUrl);
 
 	let options = {
@@ -65,7 +65,11 @@ function opengraphImageHtmlWithClass(targetUrl, alt = "", cls = "") {
 		}
 	};
 
-	let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
+	let stats = await Image(fullUrl, {
+		...options,
+		imageMetadataOverride: { width: 1200, height: 630 }
+	});
+
 	return Image.generateHTML(stats, {
 		alt: alt ?? `OpenGraph image for ${targetUrl}`,
 		loading: "lazy",
@@ -96,7 +100,7 @@ function getScreenshotUrlFromPath(path, options, cacheBustOverride) {
 	return getScreenshotUrl(u.toString(), options);
 }
 
-function screenshotImageHtmlFullUrl(targetUrl) {
+async function screenshotImageHtmlFullUrl(targetUrl) {
 	let fullUrl = getScreenshotUrl(targetUrl);
 	let options = {
 		// format here is static
@@ -108,7 +112,11 @@ function screenshotImageHtmlFullUrl(targetUrl) {
 		}
 	};
 
-	let stats = Image.statsByDimensionsSync(fullUrl, 1200, 630, options);
+	let stats = await Image(fullUrl, {
+		...options,
+		imageMetadataOverride: { width: 1200, height: 630 }
+	});
+
 	return Image.generateHTML(stats, {
 		alt: `Screenshot image for ${targetUrl}`,
 		loading: "lazy",

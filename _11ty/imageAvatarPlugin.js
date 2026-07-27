@@ -19,7 +19,11 @@ function getTwitterAvatarImageOptions(username) {
 async function twitterImageAvatar(username, classes = "") {
 	// We know where the images will be
 	let fakeUrl = `https://twitter.com/${username}.jpg`;
-	let imgData = eleventyImage.statsByDimensionsSync(fakeUrl, 400, 400, getTwitterAvatarImageOptions(username));
+	let imgData = await eleventyImage(fakeUrl, {
+		...getTwitterAvatarImageOptions(username),
+		statsOnly: true,
+		imageMetadataOverride: { width: 400, height: 400 }
+	});
 	let markup = eleventyImage.generateHTML(imgData, {
 		alt: `${username}’s Avatar`,
 		class: "z-avatar" + (classes ? ` ${classes}` : ""),
