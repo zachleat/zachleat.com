@@ -5,20 +5,38 @@ export const layout = "layouts/pagealign.liquid";
 // </script>
 ---
 <style>
-td.neglect {
-  --neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
-  background: hsl(var(--neglect-hue) 70% 90%);
+#projects {
+	tr {
+		--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
+	}
+	td.neglect {
+		background: hsl(var(--neglect-hue) 70% 90%);
+	}
+	.metadata {
+		display: flex;
+		justify-content: flex-end;
+		margin-block-start: .125em;
+		gap: .25em;
+
+		@media (min-width: 56.25em) { /* 900px */
+			margin-inline-start: 2.125em;
+		}
+	}
+	.is-workspace {
+		opacity: .5;
+	}
 }
 </style>
 <p>This is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
 
 <script type="module" src="/static/table-saw.js"></script>
 <table-saw text-align ratio="1/4">
-<table>
+<table id="projects">
   <thead>
     <tr>
       <th>Neglect</th>
       <th>{% icon "fas:box-open" %}Name</th>
+      <th>Age</th>
       <th>Version</th>
       <th class="numeric">{% icon "fas:bug" %}Issues</th>
       <th class="numeric">{% icon "fas:code-merge" %}PRs</th>
@@ -28,52 +46,61 @@ td.neglect {
 		<tr>
 			<th></th>
 			<th>
-				<strong>{{ packages | size }} projects total</strong><br>
+				<strong>{{ packages | size | renderNumber }} projects total</strong><br>
 				<small>
 					{% icon "fas:star" %}{{ totals.stars | renderNumber }}
 					{% icon "fas:download" %}{{ totals.downloads | renderNumber }} (last month)
 				</small>
 			</th>
+			<th>{{ totals.publishes | renderNumber }} Version{% if totals.publishes != 1 %}s{% endif %}</th>
 			<th></th>
 			<th class="numeric">
 				<div>
-					{% icon "fas:bug" %}{{ totals.issues.open }} Issues<br>
-					<small>{{ totals.issues.closed }} closed</small>
+					{% icon "fas:bug" %}{{ totals.issues.open | renderNumber }} Issues<br>
+					<small>{{ totals.issues.closed | renderNumber }} closed</small>
 				</div>
 			</th>
 			<th class="numeric">
 				<div>
-					{% icon "fas:code-merge" %}{{ totals.prs.open }} PRs<br>
-					<small>{{ totals.prs.closed }} closed</small>
+					{% icon "fas:code-merge" %}{{ totals.prs.open | renderNumber }} PRs<br>
+					<small>{{ totals.prs.closed | renderNumber }} closed</small>
 				</div>
 			</th>
 		</tr>
 	</tfoot>
   <tbody>
 {% for result in packages %}
-		<tr>
-			<td class="neglect numeric" style="--neglect-score: {{ result.score }}">
+		<tr style="--neglect-score: {{ result.score }}">
+			<td class="neglect numeric">
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
 			</td>
 			<td>
 				{% if result.lastPublish %}
 					{% icon "fas:box-open" %}<code>{{ result.packageName }}</code>
-					{% unless result.packageName | endsWith: result.nameWithOwner %}
-						{% unless result.nameWithOwner | endsWith: result.packageName %}
-							{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
+					{% unless result.workspacePath %}
+						{% unless result.packageName | endsWith: result.nameWithOwner %}
+							{% unless result.nameWithOwner | endsWith: result.packageName %}
+								<br>{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
+							{% endunless %}
 						{% endunless %}
 					{% endunless %}
-					<br>
 				{% else %}
-					{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code><br>
+					{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
 				{% endif %}
-				<small style="margin-inline-start: 1.5625rem">
-					<time-difference live mode="strip-suffix" suffix=" old"><em><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO }}</time></em></time-difference>
-					{% if result.url %}<a href="{{ result.url }}">{% icon "fas:code" %}GitHub{% if result.isTemplate %} Template{% endif %}</a>{% endif %}
-					{% if result.stars > minimumStars %}{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}{% endif %}
+				<br>
+				<small class="metadata">
+					{% if result.url %}<a href="{{ result.url }}">{% icon "fas:code" %}GitHub{% if result.isTemplate %} <em>(Template)</em>{% elsif result.workspacePath %} <em>(Workspace)</em>{% endif %}</a>{% endif %}
 					{% if result.packageName and result.lastStablePublishVersion %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}npm</a>{% endif %}
-					{% if result.downloads > minimumDownloads %}{% icon "fas:download" %}{{ result.downloads | renderNumber: "0a" }} ({{ result.downloadsPeriod | split: "-" | join: " " }}){% endif %}
+					<span style="flex-grow: 999"></span>
+					{% if result.stars > minimumStars %}{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}{% endif %}
+					{% if result.downloads > minimumDownloads %}<span>{% icon "fas:download" %}{{ result.downloads | renderNumber: "0a" }} ({{ result.downloadsPeriod | split: "-" | join: " " }})</span>{% endif %}
 				</small>
+			</td>
+			<td>
+				{% if result.firstPublish %}
+				<time-difference live mode="strip-suffix" suffix=" old"><em><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO }}</time></em></time-difference><br>
+				{% endif %}
+				<small>{% if result.publishCount > 0 %}{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %}{% endif %}</small>
 			</td>
 			<td>
 				{% if result.lastStablePublishVersion %}
@@ -97,11 +124,11 @@ td.neglect {
 					</div>
 				{% endif %}
 			</td>
-			<td class="numeric">
+			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
 				{% if result.closedIssues > 0 %}<br><small>{{ result.closedIssues | renderNumber: "0a" }} closed</small>{% endif %}
 			</td>
-			<td class="numeric">
+			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:code-merge" %}</small>{{ result.openPRs }}
 			{% assign prsClosed = result.mergedPRs | plus: result.closedPRs %}
 			{% if prsClosed > 0 %}<br><small>{{ prsClosed | renderNumber: "0a" }} closed</small>{% endif %}
