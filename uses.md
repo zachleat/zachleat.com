@@ -144,6 +144,15 @@ tr:has(del) .z-avatar {
 			<td class="hide-sm"></td>
 			<td></td>
 		</tr>
+		<tr data-filter-category="software" data-filter-active="yes">
+			<td class="hide-sm"><strong>Software</strong></td>
+			<td>{% icon "fa:robot" %} LLM</td>
+			<td><code>2026–</code></td>
+			<td>{% indieAvatar "https://claude.ai/" %}Claude</td>
+			<td class="hide-sm">{% icon "fa:briefcase" %}</td>
+			<td class="hide-sm"></td>
+			<td></td>
+		</tr>
 		<tr data-filter-category="hardware" data-filter-active="yes">
 			<td class="hide-sm"><strong>Hardware</strong></td>
 			<td>{% icon "fa:building" %} Desk</td>
@@ -460,11 +469,11 @@ tr:has(del) .z-avatar {
 			<td class="hide-sm">{% icon "fa:money-bill-1" %}</td>
 			<td></td>
 		</tr>
-		<tr data-filter-category="software" data-filter-active="yes">
+		<tr data-filter-category="software" data-filter-active="no">
 			<td class="hide-sm"><strong>Software</strong></td>
 			<td>{% icon "fa:note-sticky" %} Notes</td>
-			<td><code>2018–</code></td>
-			<td>{% indieAvatar "https://www.notion.com/" %}Notion</td>
+			<td><code>2018–2025</code></td>
+			<td><del>{% indieAvatar "https://www.notion.com/" %}Notion</del></td>
 			<td class="hide-sm"></td>
 			<td class="hide-sm">{% icon "fa:money-bill-1" %}</td>
 			<td></td>
