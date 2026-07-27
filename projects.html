@@ -80,18 +80,21 @@ export const layout = "layouts/pagealign.liquid";
 			</td>
 			<td>
 				<div class="name">
+					{% assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
 					{% if result.lastPublish %}
-						{% icon "fas:box-open" %}<code>{{ result.packageName }}</code>
-						{% if npmAlsoShowRepoName | includes: result.packageName %}
+						{% icon "fab:npm" %}<code>{{ result.packageName }}</code>
+						{% if npmGitHubMismatch %}
 							from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
 						{% endif %}
 					{% else %}
-						{% icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
+						{% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
 					{% endif %}
 				</div>
 				<small class="metadata">
-					{% if result.url %}<span><a href="{{ result.url }}">{% icon "fas:code" %}GitHub{% if result.isTemplate %} <em>(Template)</em>{% endif %}</a>{% if result.workspacePath %}*{% endif %}</span>{% endif %}
-					{% if result.packageName and result.lastStablePublishVersion %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}npm</a>{% endif %}
+					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
+					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
+					{% if result.workspacePath %}<em>(Workspace)</em>{% endif %}
+					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}npm</a>{% endif %}
 					<span style="flex-grow: 999"></span>
 					{% if result.stars > minimumStars %}<span class="{% if result.workspacePath %} is-workspace{% endif %}">{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
 					{% if result.downloads > minimumDownloads %}<span>{% icon "fas:download" %}{{ result.downloads | renderNumber: "0a" }}</span>{% endif %}
