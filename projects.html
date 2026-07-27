@@ -9,6 +9,9 @@ export const layout = "layouts/pagealign.liquid";
 	tr {
 		--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
 	}
+	th {
+		white-space: nowrap;
+	}
 	td.neglect {
 		background: hsl(var(--neglect-hue) 70% 90%);
 	}
