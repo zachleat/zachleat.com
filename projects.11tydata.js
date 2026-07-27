@@ -42,4 +42,6 @@ export const totals = totalCounts;
 export const npmAlsoShowRepoName = [
 	"eleventy",
 	"@11ty/eleventy"
-]
+];
+
+export const generatedAt = report.generatedAt;
