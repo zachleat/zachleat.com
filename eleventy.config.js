@@ -471,15 +471,11 @@ export default async function(eleventyConfig) {
 <div><browser-window mode="${theme}"${skipIcon ? "" : " icon"} url="${url}" shadow flush style="${styles.join(";")}"><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
 	});
 
-	/* COLLECTIONS */
-	eleventyConfig.addFilter("endsWith", function(str, includesOtherStr) {
-		return str?.endsWith(includesOtherStr);
-	});
-
 	eleventyConfig.addFilter("isPost", function(inputPath) {
 		return inputPath.startsWith("./_posts/") && (inputPath.endsWith(".md") || inputPath.endsWith(".html"));
 	});
 
+	/* COLLECTIONS */
 	eleventyConfig.addCollection("posts", function(collection) {
 		return getPosts(collection);
 	});

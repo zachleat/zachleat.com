@@ -38,3 +38,8 @@ for(let pkg of report.projects) {
 }
 
 export const totals = totalCounts;
+
+export const npmAlsoShowRepoName = [
+	"eleventy",
+	"@11ty/eleventy"
+]
