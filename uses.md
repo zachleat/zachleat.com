@@ -135,6 +135,15 @@ tr:has(del) .z-avatar {
 		</tr>
 	</thead>
 	<tbody>
+		<tr data-filter-category="consumer" data-filter-active="yes">
+			<td class="hide-sm"><strong>Consumer</strong></td>
+			<td>{% icon "fa:phone" %} Mobile</td>
+			<td><code>2026–</code></td>
+			<td>{% indieAvatar "https://www.apple.com/" %}Apple iPhone 17 (2025)</td>
+			<td class="hide-sm"></td>
+			<td class="hide-sm"></td>
+			<td></td>
+		</tr>
 		<tr data-filter-category="hardware" data-filter-active="yes">
 			<td class="hide-sm"><strong>Hardware</strong></td>
 			<td>{% icon "fa:building" %} Desk</td>
@@ -361,11 +370,11 @@ tr:has(del) .z-avatar {
 			<td class="hide-sm"></td>
 			<td></td>
 		</tr>
-		<tr data-filter-category="consumer" data-filter-active="yes">
+		<tr data-filter-category="consumer" data-filter-active="no">
 			<td class="hide-sm"><strong>Consumer</strong></td>
 			<td>{% icon "fa:phone" %} Mobile</td>
-			<td><code>2020–</code></td>
-			<td>{% indieAvatar "https://www.apple.com/" %}iPhone 11 Pro (2019)</td>
+			<td><code>2020–2026</code></td>
+			<td><del>{% indieAvatar "https://www.apple.com/" %}Apple iPhone 11 Pro (2019)</del> {% icon "fa:circle-up" %}</td>
 			<td class="hide-sm"></td>
 			<td class="hide-sm"></td>
 			<td>{% icon "fa:heart" %}</td>
