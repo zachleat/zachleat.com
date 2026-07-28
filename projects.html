@@ -1,11 +1,23 @@
----js
-// <script>
-export const title = "Is this still being maintained?";
-export const layout = "layouts/pagealign.liquid";
-// </script>
+---
+title: Is this still being maintained?
+layout: layouts/pagealign.liquid
+minimumPublishCountForSparkline: 6
+minimumDownloads: 2500
+minimumStars: 200
+readableDateFormat: dd LLL yyyy
+npmAlsoShowRepoName:
+  - eleventy
 ---
 <style>
 #projects {
+	.spark-img {
+		display: block;
+		margin-block-start: .5em;
+		background-color: #f6f6f6;
+		border-radius: .25em;
+		padding: 0.375em 0;
+	}
+
 	width: 100%;
 
 	tfoot { background-color: #f2f2f2; }
@@ -25,6 +37,15 @@ export const layout = "layouts/pagealign.liquid";
 		}
 		@media (width >= 61.25em) {
 			max-width: 25vw;
+		}
+	}
+
+	@media (width >= 61.25em) {
+		.name {
+			display: block;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
 		}
 	}
 
@@ -52,18 +73,38 @@ export const layout = "layouts/pagealign.liquid";
 	color: green;
 	font-size: 0.875em;
 }
+.health {
+	display: flex;
+	gap: .5em;
+	align-items: center;
+	font-weight: 700;
+	font-size: 1.125em; /* 18px /16 */
+}
 </style>
+
 <p>This is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
 
 <ul>
 	<li>{{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %} on {{ packages | size | renderNumber }} open source projects</li>
+	<li>{{ totals.customElements }} Web Components 🚾</li>
 	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last year)</em></li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
 	<li>{% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues closed {% icon "far:circle-check" %}</li>
-	<li>{% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}PRs closed {% icon "far:circle-check" %}</li>
+	<li>{% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}pull requests (PRs) closed {% icon "far:circle-check" %}</li>
 </ul>
 
-<p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO }}</time></time-difference>. {% endif %}Download counts shown are for the last year.</em></p>
+<script type="module" src="/static/health-score.js"></script>
+
+<div class="fl fl-nowrap" style="gap: 1em 3em">
+	<div class="health">Current Health <health-score score="{{ healthRating | divided_by: 100 }}"></health-score></div>
+	<div class="spark">
+		<span>{{ sparklineAggregate.start | split: "-" | pop }}</span>
+		<div><img src="{% sparklineDataUri sparklineAggregate.counts, 600, 60, 'green', 2 %}" width="600" height="60" alt="Sparkline representing frequency of publishes across all packages" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
+		<span>{{ currentYear }}</span>
+	</div>
+</div>
+
+<p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>. {% endif %}Download counts shown are for the last year.</em></p>
 
 <script type="module" src="/static/table-saw.js"></script>
 <table-saw text-align ratio="1/4" breakpoint="(max-width: 48em)">
@@ -88,7 +129,9 @@ export const layout = "layouts/pagealign.liquid";
 					{% icon "fas:download" %}<span class="downloads">{{ totals.downloads | renderNumber }}</span> (last year)
 				</small>
 			</th>
-			<th><small>{{ totals.publishes | renderNumber }} version{% if totals.publishes != 1 %}s{% endif %}</small></th>
+			<th>
+				<small>{{ totals.publishes | renderNumber }} version{% if totals.publishes != 1 %}s{% endif %}</small>
+			</th>
 			<th></th>
 			<th class="numeric">
 				<div>
@@ -111,7 +154,7 @@ export const layout = "layouts/pagealign.liquid";
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
 			</td>
 			<td class="name-col">
-				<div class="name text-ellipsis">
+				<div class="name">
 					{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
 					{%- if result.lastPublish %}
 						{%- icon "fas:box-open" %}<code>{{ result.packageName }}</code>
@@ -135,12 +178,13 @@ export const layout = "layouts/pagealign.liquid";
 				</small>
 			</td>
 			<td>
-				{% if result.firstPublish %}
-					<time-difference live mode="strip-suffix"><em><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO }}</time></em></time-difference><br>
+				{%- if result.firstPublish -%}
+					<time-difference live mode="strip-suffix"><em><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO: readableDateFormat }}</time></em></time-difference><br>
+					{% if result.publishCount > minimumPublishCountForSparkline %}<img src="{% sparklineDataUri sparklinesByPackage[ result.packageName ].monthlyReleases.counts, 120, 20, '#aaa', 2 %}" width="120" height="20" alt="Frequency sparkline for publishes of {{ result.packageName }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>{% endif %}
 					{% if result.publishCount > 0 %}<small>{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %}</small>{% endif %}
-					{% else %}
-					<time-difference live mode="strip-suffix"><em><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO }}</time></em></time-difference><br>
-				{% endif %}
+				{%- else -%}
+					<time-difference live mode="strip-suffix"><em><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></em></time-difference><br>
+				{%- endif -%}
 			</td>
 			<td>
 				{% if result.lastStablePublishVersion %}
@@ -148,7 +192,7 @@ export const layout = "layouts/pagealign.liquid";
 					<div class="nowrap">{{ result.lastStablePublishVersion }}</div>
 					{% if result.lastStablePublishVersion %}
 					<small>
-						<time-difference live><em><time datetime="{{ result.lastStablePublish }}" title="{{ result.lastStablePublish }}">{{ result.lastStablePublish | readableDateFromISO }}</time></em></time-difference>
+						<time-difference live><em><time datetime="{{ result.lastStablePublish }}" title="{{ result.lastStablePublish }}">{{ result.lastStablePublish | readableDateFromISO: readableDateFormat }}</time></em></time-difference>
 					</small>
 					{% endif %}
 				</div>
@@ -158,7 +202,7 @@ export const layout = "layouts/pagealign.liquid";
 						<div class="nowrap"><em>{{ result.lastPublishVersion }}</em></div>
 						{% if result.lastPublishVersion %}
 						<small>
-							<time-difference live><em><time datetime="{{ result.lastPublish }}" title="{{ result.lastPublish }}">{{ result.lastPublish | readableDateFromISO }}</time></em></time-difference>
+							<time-difference live><em><time datetime="{{ result.lastPublish }}" title="{{ result.lastPublish }}">{{ result.lastPublish | readableDateFromISO: readableDateFormat }}</time></em></time-difference>
 						</small>
 						{% endif %}
 					</div>

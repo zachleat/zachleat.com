@@ -39,7 +39,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 					<a href="/web/" class="spark hide-singlecol">
 						<span>2007</span>
 						{%- capture sparklineHistoryValues %}{{ collections.posts | getMonthlyPostCount }}{% endcapture %}
-						<img src="{% sparklineDataUri sparklineHistoryValues, 120, 30, '#94b388' %}" width="120" height="30" alt="Sparkline representing frequency of posts written from 2007 to {{ currentYear }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+						<div><img src="{% sparklineDataUri sparklineHistoryValues, 120, 30, '#94b388' %}" width="120" height="30" alt="Sparkline representing frequency of posts written from 2007 to {{ currentYear }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
 						<span>{{ currentYear }}</span>
 					</a>
 

@@ -233,16 +233,17 @@ export default function(eleventyConfig) {
 		return getScreenshotUrlFromPath(url);
 	});
 
-	eleventyConfig.addShortcode("sparklineDataUri", function sparkline(values, width, height, color) {
+	eleventyConfig.addShortcode("sparklineDataUri", function sparkline(values, width, height, color, strokeWidth = 1) {
 		if(typeof values === "string") {
 			values = values.split(",");
 		}
+
 		let line = new Sparkline.default(values || []);
 		line.setViewBoxHeight(height);
 		line.setViewBoxWidth(width);
 
 		// TODO handle lines at edge getting cut off for larger stroke widths
-		line.setStrokeWidth(1);
+		line.setStrokeWidth(strokeWidth);
 
 		if(color) {
 			line.setStroke(color || "#000000");

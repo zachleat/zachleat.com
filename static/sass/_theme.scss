@@ -1694,17 +1694,25 @@ select[data-filter-key] {
 	text-decoration: none;
 	text-transform: none;
 	font-weight: 700;
+	white-space: nowrap;
+}
+.spark > :has(img[src]) {
+	flex-grow: 1;
+}
+.spark-img.spark-img {
+	padding: 0;
+	margin: 0;
+	image-rendering: pixelated;
+}
+.spark .spark-img {
+	width: 100%;
+	height: auto;
 }
 .rail .spark {
 	gap: .5em;
 	margin-top: 2em;
 	align-items: center;
 	justify-content: space-between;
-}
-.spark-img.spark-img {
-	padding: 0;
-	margin: 0;
-	image-rendering: pixelated;
 }
 
 

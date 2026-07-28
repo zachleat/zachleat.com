@@ -1,12 +1,25 @@
 import Fetch from "@11ty/eleventy-fetch";
 
-export const minimumDownloads = 2500;
-export const minimumStars = 200;
+const SERVICE_URL = "https://zachleat.github.io/is-this-still-being-maintained/";
 
-let report = await Fetch("https://zachleat.github.io/is-this-still-being-maintained/report.json", {
+let report = await Fetch(SERVICE_URL + "report.json", {
 	type: "json",
 	duration: "10m",
 });
+
+let sparklinesByPackageJson = await Fetch(SERVICE_URL + "report-sparklines.json", {
+	type: "json",
+	duration: "10m",
+});
+
+export const sparklinesByPackage = sparklinesByPackageJson.packages;
+
+let sparklineAggregateJson = await Fetch(SERVICE_URL + "report-sparkline-aggregate.json", {
+	type: "json",
+	duration: "10m",
+});
+
+export const sparklineAggregate = sparklineAggregateJson.monthlyReleases;
 
 export const packages = report.projects.sort((a, b) => {
 	return b.score - a.score;
@@ -17,12 +30,15 @@ let totalCounts = {
 	issues: { open: 0, closed: 0 },
 	stars: 0,
 	downloads: 0,
-	publishes: 0
+	publishes: 0,
+	customElements: 0,
 };
+
 let reposSeen = new Set();
 for(let pkg of report.projects) {
 	totalCounts.publishes += pkg.publishCount || 0;
 	totalCounts.downloads += pkg.downloads || 0;
+	totalCounts.customElements += pkg.isWebComponent ? 1 : 0;
 
 	// Workspace counts would duplicate if we didn’t check
 	if(reposSeen.has(pkg.url)) {
@@ -39,8 +55,5 @@ for(let pkg of report.projects) {
 
 export const totals = totalCounts;
 
-export const npmAlsoShowRepoName = [
-	"eleventy"
-];
-
 export const generatedAt = report.generatedAt;
+export const healthRating = report.healthRating;
