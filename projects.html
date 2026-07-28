@@ -6,6 +6,8 @@ export const layout = "layouts/pagealign.liquid";
 ---
 <style>
 #projects {
+	width: 100%;
+
 	tfoot { background-color: #f2f2f2; }
 	tr {
 		--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
@@ -13,12 +15,19 @@ export const layout = "layouts/pagealign.liquid";
 	th {
 		white-space: nowrap;
 	}
-	td.neglect {
+
+	.neglect-col {
 		background: hsl(var(--neglect-hue) 70% 90%);
 	}
-	.name {
-		text-wrap: balance;
+	.name-col {
+		@media (width > 48em) {
+			max-width: 45vw;
+		}
+		@media (width >= 61.25em) {
+			max-width: 25vw;
+		}
 	}
+
 	.metadata {
 		display: flex;
 		justify-content: flex-end;
@@ -45,19 +54,19 @@ export const layout = "layouts/pagealign.liquid";
 	<li>{{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %} on {{ packages | size | renderNumber }} open source projects</li>
 	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last year)</em></li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
-	<li>{% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues closed</li>
-	<li>{% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}PRs closed</li>
+	<li>{% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues closed {% icon "far:circle-check" %}</li>
+	<li>{% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}PRs closed {% icon "far:circle-check" %}</li>
 </ul>
 
 <p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO }}</time></time-difference>. {% endif %}Download counts shown are for the last year.</em></p>
 
 <script type="module" src="/static/table-saw.js"></script>
-<table-saw text-align ratio="1/4">
+<table-saw text-align ratio="1/4" breakpoint="(max-width: 48em)">
 <table id="projects">
   <thead>
     <tr>
       <th class="numeric">Neglect</th>
-      <th>{% icon "fas:box-open" %}Name</th>
+      <th class="name-col">{% icon "fas:box-open" %}Name</th>
       <th>Age</th>
       <th>Version</th>
       <th class="numeric">{% icon "fas:bug" %}Issues</th>
@@ -67,25 +76,25 @@ export const layout = "layouts/pagealign.liquid";
 	<tfoot>
 		<tr>
 			<th class="numeric"></th>
-			<th>
+			<th class="name-col">
 				<strong>{{ packages | size | renderNumber }} Projects Total</strong><br>
 				<small>
 					{% icon "fas:star" %}<span class="stars">{{ totals.stars | renderNumber }}</span>
 					{% icon "fas:download" %}<span class="downloads">{{ totals.downloads | renderNumber }}</span> (last year)
 				</small>
 			</th>
-			<th>{{ totals.publishes | renderNumber }} version{% if totals.publishes != 1 %}s{% endif %}</th>
+			<th><small>{{ totals.publishes | renderNumber }} version{% if totals.publishes != 1 %}s{% endif %}</small></th>
 			<th></th>
 			<th class="numeric">
 				<div>
-					{% icon "fas:bug" %}{{ totals.issues.open | renderNumber }} Issues<br>
-					<small>{{ totals.issues.closed | renderNumber }} closed</small>
+					{% icon "fas:bug" %}{{ totals.issues.open | renderNumber }}<br>
+					<small>{% icon "far:circle-check" %}{{ totals.issues.closed | renderNumber }}</small>
 				</div>
 			</th>
 			<th class="numeric">
 				<div>
-					{% icon "fas:code-merge" %}{{ totals.prs.open | renderNumber }} PRs<br>
-					<small>{{ totals.prs.closed | renderNumber }} closed</small>
+					{% icon "fas:code-merge" %}{{ totals.prs.open | renderNumber }}<br>
+					<small>{% icon "far:circle-check" %}{{ totals.prs.closed | renderNumber }}</small>
 				</div>
 			</th>
 		</tr>
@@ -93,11 +102,11 @@ export const layout = "layouts/pagealign.liquid";
   <tbody>
 {% for result in packages %}
 		<tr style="--neglect-score: {{ result.score }}">
-			<td class="neglect numeric">
+			<td class="neglect-col numeric">
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
 			</td>
-			<td>
-				<div class="name">
+			<td class="name-col">
+				<div class="name text-ellipsis">
 					{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
 					{%- if result.lastPublish %}
 						{%- icon "fas:box-open" %}<code>{{ result.packageName }}</code>
@@ -122,10 +131,10 @@ export const layout = "layouts/pagealign.liquid";
 			</td>
 			<td>
 				{% if result.firstPublish %}
-					<time-difference live mode="strip-suffix" suffix=" old"><em><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO }}</time></em></time-difference><br>
+					<time-difference live mode="strip-suffix"><em><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO }}</time></em></time-difference><br>
 					{% if result.publishCount > 0 %}<small>{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %}</small>{% endif %}
 					{% else %}
-					<time-difference live mode="strip-suffix" suffix=" old"><em><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO }}</time></em></time-difference><br>
+					<time-difference live mode="strip-suffix"><em><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO }}</time></em></time-difference><br>
 				{% endif %}
 			</td>
 			<td>
@@ -152,12 +161,12 @@ export const layout = "layouts/pagealign.liquid";
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
-				{% if result.closedIssues > 0 %}<br><small>{{ result.closedIssues | renderNumber: "0a" }} closed</small>{% endif %}
+				{% if result.closedIssues > 0 %}<br><small>{% icon "far:circle-check" %}{{ result.closedIssues | renderNumber: "0a" }}</small>{% endif %}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:code-merge" %}</small>{{ result.openPRs }}
 			{% assign prsClosed = result.mergedPRs | plus: result.closedPRs %}
-			{% if prsClosed > 0 %}<br><small>{{ prsClosed | renderNumber: "0a" }} closed</small>{% endif %}
+			{% if prsClosed > 0 %}<br><small>{% icon "far:circle-check" %}{{ prsClosed | renderNumber: "0a" }}</small>{% endif %}
 			</td>
 		</tr>
 {% endfor %}

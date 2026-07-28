@@ -365,6 +365,9 @@ h5,
 			grid-row-gap: 0;
 			padding-top: 1rem;
 		}
+		.body-grid > * {
+			min-inline-size: 0;
+		}
 
 		.content-main { grid-area: 1/1/4/2; }
 		.rail { grid-area: 1/2/4/3; }
