@@ -47,6 +47,11 @@ export const layout = "layouts/pagealign.liquid";
 		opacity: .4;
 	}
 }
+.z-icon:has([href="#far-fa-circle-check"]) {
+	margin-inline: .25em 0;
+	color: green;
+	font-size: 0.875em;
+}
 </style>
 <p>This is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
 
@@ -88,13 +93,13 @@ export const layout = "layouts/pagealign.liquid";
 			<th class="numeric">
 				<div>
 					{% icon "fas:bug" %}{{ totals.issues.open | renderNumber }}<br>
-					<small>{% icon "far:circle-check" %}{{ totals.issues.closed | renderNumber }}</small>
+					<small>{{ totals.issues.closed | renderNumber }}{% icon "far:circle-check" %}</small>
 				</div>
 			</th>
 			<th class="numeric">
 				<div>
 					{% icon "fas:code-merge" %}{{ totals.prs.open | renderNumber }}<br>
-					<small>{% icon "far:circle-check" %}{{ totals.prs.closed | renderNumber }}</small>
+					<small>{{ totals.prs.closed | renderNumber }}{% icon "far:circle-check" %}</small>
 				</div>
 			</th>
 		</tr>
@@ -161,12 +166,12 @@ export const layout = "layouts/pagealign.liquid";
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
-				{% if result.closedIssues > 0 %}<br><small>{% icon "far:circle-check" %}{{ result.closedIssues | renderNumber: "0a" }}</small>{% endif %}
+				{% if result.closedIssues > 0 %}<br><small>{{ result.closedIssues | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:code-merge" %}</small>{{ result.openPRs }}
 			{% assign prsClosed = result.mergedPRs | plus: result.closedPRs %}
-			{% if prsClosed > 0 %}<br><small>{% icon "far:circle-check" %}{{ prsClosed | renderNumber: "0a" }}</small>{% endif %}
+			{% if prsClosed > 0 %}<br><small>{{ prsClosed | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
 			</td>
 		</tr>
 {% endfor %}
