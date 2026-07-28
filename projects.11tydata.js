@@ -1,6 +1,6 @@
 import Fetch from "@11ty/eleventy-fetch";
 
-export const minimumDownloads = 1000;
+export const minimumDownloads = 2500;
 export const minimumStars = 200;
 
 let report = await Fetch("https://zachleat.github.io/is-this-still-being-maintained/report.json", {

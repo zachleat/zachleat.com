@@ -29,8 +29,13 @@ export const layout = "layouts/pagealign.liquid";
 			margin-inline-start: 2.125em;
 		}
 	}
+	.downloads,
+	.stars {
+		/* m => M */
+		text-transform: uppercase;
+	}
 	.is-workspace {
-		opacity: .5;
+		opacity: .4;
 	}
 }
 </style>
@@ -38,13 +43,13 @@ export const layout = "layouts/pagealign.liquid";
 
 <ul>
 	<li>{{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %} on {{ packages | size | renderNumber }} open source projects</li>
-	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last month)</em></li>
+	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last year)</em></li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
 	<li>{% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues closed</li>
 	<li>{% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}PRs closed</li>
 </ul>
 
-<p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO }}</time></time-difference>. {% endif %}Download counts shown are for the last month.</em></p>
+<p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO }}</time></time-difference>. {% endif %}Download counts shown are for the last year.</em></p>
 
 <script type="module" src="/static/table-saw.js"></script>
 <table-saw text-align ratio="1/4">
@@ -65,8 +70,8 @@ export const layout = "layouts/pagealign.liquid";
 			<th>
 				<strong>{{ packages | size | renderNumber }} Projects Total</strong><br>
 				<small>
-					{% icon "fas:star" %}{{ totals.stars | renderNumber }}
-					{% icon "fas:download" %}{{ totals.downloads | renderNumber }} (last month)
+					{% icon "fas:star" %}<span class="stars">{{ totals.stars | renderNumber }}</span>
+					{% icon "fas:download" %}<span class="downloads">{{ totals.downloads | renderNumber }}</span> (last year)
 				</small>
 			</th>
 			<th>{{ totals.publishes | renderNumber }} version{% if totals.publishes != 1 %}s{% endif %}</th>
@@ -111,8 +116,8 @@ export const layout = "layouts/pagealign.liquid";
 					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}npm</a>{% endif %}
 					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
 					<span style="flex-grow: 999"></span>
-					{% if result.stars > minimumStars %}<span class="{% if result.workspacePath %} is-workspace{% endif %}">{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
-					{% if result.downloads > minimumDownloads %}<span>{% icon "fas:download" %}{{ result.downloads | renderNumber: "0a" }}</span>{% endif %}
+					{% if result.stars > minimumStars %}<span class="stars{% if result.workspacePath %} is-workspace{% endif %}">{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
+					{% if result.downloads > minimumDownloads %}<span class="downloads">{% icon "fas:download" %}{{ result.downloads | renderNumber: "0a" }}</span>{% endif %}
 				</small>
 			</td>
 			<td>
@@ -157,3 +162,11 @@ export const layout = "layouts/pagealign.liquid";
   </tbody>
 </table>
 </table-saw>
+
+<p>Honorable archived mentions:</p>
+
+<ul>
+	<li><a href="https://github.com/zachleat/BigText"><code>zachleat/bigtext</code></a></li>
+	<li><a href="https://github.com/zachleat/iliveinomaha-banner"><code>zachleat/iliveinomaha-banner</code></a></li>
+	<li><a href="https://github.com/zachleat/fontfaceonload"><code>zachleat/fontfaceonload</code></a></li>
+</ul>
