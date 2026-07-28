@@ -122,9 +122,11 @@ export const layout = "layouts/pagealign.liquid";
 			</td>
 			<td>
 				{% if result.firstPublish %}
-				<time-difference live mode="strip-suffix" suffix=" old"><em><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO }}</time></em></time-difference><br>
+					<time-difference live mode="strip-suffix" suffix=" old"><em><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO }}</time></em></time-difference><br>
+					{% if result.publishCount > 0 %}<small>{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %}</small>{% endif %}
+					{% else %}
+					<time-difference live mode="strip-suffix" suffix=" old"><em><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO }}</time></em></time-difference><br>
 				{% endif %}
-				<small>{% if result.publishCount > 0 %}{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %}{% endif %}</small>
 			</td>
 			<td>
 				{% if result.lastStablePublishVersion %}
