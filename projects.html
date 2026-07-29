@@ -96,7 +96,7 @@ npmAlsoShowRepoName:
 <script type="module" src="/static/health-score.js"></script>
 
 <div class="fl fl-nowrap" style="gap: 1em 3em">
-	<div class="health">Current Health <health-score score="{{ healthRating | divided_by: 100 }}"></health-score></div>
+	<div class="health">Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}"></health-score></div>
 	<div class="spark">
 		<span>{{ sparklineAggregate.start | split: "-" | pop }}</span>
 		<div><img src="{% sparklineDataUri sparklineAggregate.counts, 600, 60, 'green', 2 %}" width="600" height="60" alt="Sparkline representing frequency of publishes across all packages" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
