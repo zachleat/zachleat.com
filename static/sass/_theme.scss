@@ -1399,13 +1399,14 @@ a[href].tag-inline:not(.tag-borderless),
 	font-family: system-ui, sans-serif;
 	font-weight: 600;
 }
-.tags-rail-links a[href] {
+.tags-rail-links :any-link {
 	display: inline-flex;
 	align-items: center;
-	padding: .4em .8em;
+	padding: .4em .5em .4em 0;
 	border-radius: .25em;
 }
-.tags-rail-links a[href].active {
+.tags-rail-links :any-link.active {
+	--icon-color-override: #f4f4f4;
 	color: #f4f4f4;
 	background-color: config.$primaryColor;
 }
@@ -1432,7 +1433,7 @@ a[href].tag-inline:not(.tag-borderless),
 		width: 100%;
 		border: 0.125em solid config.$lightBorderColor;
 	}
-	.tags-rail-links a[href].active {
+	.tags-rail-links :any-link.active {
 		border-color: transparent;
 	}
 	.rail .navigation .tags a[href] {
@@ -1447,13 +1448,17 @@ a[href].tag-inline:not(.tag-borderless),
 		margin-inline-start: -.4em;
 		font-weight: 400;
 	}
-	.tags-rail-links a[href].active {
-		font-weight: 650;
+	.tags-rail-links :any-link.active {
+		font-weight: 600;
 	}
-	.tags-rail-links a[href]:not(:has(.z-icon)) {
-		margin-left: 1.7em;
+	.tags-rail-links :any-link:not(:has(.z-icon)) {
+		margin-inline-start: 1.7em;
 	}
-	.tags-rail-links a[href]:has(svg) {
+	.tags-rail-links :any-link .z-icon ~ .z-icon {
+		margin-inline: .3125em 0;
+		font-size: 0.8125em;
+	}
+	.tags-rail-links :any-link:has(svg) {
 		padding-inline-start: .25em;
 	}
 }
@@ -1708,6 +1713,9 @@ select[data-filter-key] {
 	width: 100%;
 	height: auto;
 }
+.posts .spark-img {
+	width: 6em;
+}
 .rail .spark {
 	gap: .5em;
 	margin-top: 2em;
@@ -1817,6 +1825,9 @@ svg.z-icon {
 }
 .fa-font-awesome {
 	color: var(--icon-color-override, #538cd7);
+}
+.fa-build-awesome {
+	color: var(--icon-color-override, #00a776);
 }
 .fa-web-awesome {
 	color: var(--icon-color-override, #f36945);
