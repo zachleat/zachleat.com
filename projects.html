@@ -32,15 +32,15 @@ npmAlsoShowRepoName:
 		background: hsl(var(--neglect-hue) 70% 90%);
 	}
 	.name-col {
-		@media (width > 48em) {
-			max-width: 45vw;
+		@media (width > 40.625em) {
+			max-width: 35vw;
 		}
 		@media (width >= 61.25em) {
 			max-width: 25vw;
 		}
 	}
 
-	@media (width >= 61.25em) {
+	@media (width > 40.625em) {
 		.name {
 			display: block;
 			overflow: hidden;
@@ -107,7 +107,7 @@ npmAlsoShowRepoName:
 <p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>. {% endif %}Download counts shown are for the last year.</em></p>
 
 <script type="module" src="/static/table-saw.js"></script>
-<table-saw text-align ratio="1/4" breakpoint="(max-width: 48em)">
+<table-saw text-align ratio="1/4" breakpoint="(max-width: 40.625em)">
 <table id="projects">
   <thead>
     <tr>
