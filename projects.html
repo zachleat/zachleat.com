@@ -71,6 +71,12 @@ npmAlsoShowRepoName:
 	.is-workspace {
 		opacity: .4;
 	}
+
+	/* table-saw’s breakpoint styles set `display: block` on rows, so we need
+	   more specificity than filter-container’s generated `.filter-scope--hide` */
+	:is(tbody, tfoot) tr.filter-scope--hide {
+		display: none;
+	}
 }
 .z-icon:has([href="#far-fa-circle-check"]) {
 	margin-inline: .25em 0;
@@ -111,6 +117,17 @@ npmAlsoShowRepoName:
 <p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>. {% endif %}Download counts shown are for the last year.</em></p>
 
 <script type="module" src="/static/table-saw.js"></script>
+<filter-container oninit>
+<form class="filter-posts-form">
+	<span data-filter-results="project/projects" aria-live="polite">{{ packages | size }} projects</span>&#160;
+	<label>
+		<span class="sr-only">Filter</span>
+		<select data-filter-key="scope">
+			<option value="">Show all projects</option>
+			<option value="11ty">Only @11ty/ packages</option>
+		</select>
+	</label>
+</form>
 <table-saw text-align ratio="1/4" breakpoint="(max-width: 40.625em)">
 <table id="projects">
   <thead>
@@ -157,7 +174,8 @@ npmAlsoShowRepoName:
 	</tfoot>
   <tbody>
 {% for result in packages %}
-		<tr style="--neglect-score: {{ result.score }}">
+		{%- assign npmScope = result.packageName | default: "" | slice: 0, 6 %}
+		<tr data-filter-scope="{% if npmScope == '@11ty/' %}11ty{% else %}other{% endif %}" style="--neglect-score: {{ result.score }}">
 			<td class="neglect-col numeric">
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
 			</td>
@@ -237,6 +255,7 @@ npmAlsoShowRepoName:
   </tbody>
 </table>
 </table-saw>
+</filter-container>
 
 <p>Honorable archived mentions:</p>
 
