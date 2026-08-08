@@ -12,10 +12,14 @@ npmAlsoShowRepoName:
 #projects {
 	.spark-img {
 		display: block;
-		margin-block-start: .5em;
 		background-color: #f6f6f6;
 		border-radius: .25em;
 		padding: 0.375em 0;
+	}
+	.age {
+		background-color: #f7f7f7;
+		padding: .25em .3125em;
+		border-radius: .25em;
 	}
 
 	width: 100%;
@@ -113,9 +117,8 @@ npmAlsoShowRepoName:
     <tr>
       <th class="numeric">Neglect</th>
       <th class="name-col">{% icon "fas:box-open" %}Name</th>
-      <th>Age</th>
       <th>Version</th>
-      <th class="numeric">{% icon "fas:lock-open" %}Audit</th>
+      <th class="numeric">{% icon "fas:lock" %}Audit</th>
       <th class="numeric">{% icon "fas:bug" %}Issues</th>
       <th class="numeric">{% icon "fas:code-merge" %}PRs</th>
     </tr>
@@ -133,10 +136,9 @@ npmAlsoShowRepoName:
 			<th>
 				<small>{{ totals.publishes | renderNumber }} version{% if totals.publishes != 1 %}s{% endif %}</small>
 			</th>
-			<th></th>
 			<th class="numeric">
 				<div>
-					{% icon "fas:lock-open" %}{{ totals.audits | renderNumber }}<br>
+					{% icon "fas:lock" %}{{ totals.audits | renderNumber }}<br>
 				</div>
 			</th>
 			<th class="numeric">
@@ -184,15 +186,6 @@ npmAlsoShowRepoName:
 				</small>
 			</td>
 			<td>
-				{%- if result.firstPublish -%}
-					<time-difference live mode="strip-suffix"><em><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO: readableDateFormat }}</time></em></time-difference><br>
-					{% if result.publishCount > minimumPublishCountForSparkline %}<img src="{% sparklineDataUri sparklinesByPackage[ result.packageName ].monthlyReleases.counts, 120, 20, '#aaa', 2 %}" width="120" height="20" alt="Frequency sparkline for publishes of {{ result.packageName }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>{% endif %}
-					{% if result.publishCount > 0 %}<small>{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %}</small>{% endif %}
-				{%- else -%}
-					<time-difference live mode="strip-suffix"><em><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></em></time-difference><br>
-				{%- endif -%}
-			</td>
-			<td>
 				{% if result.lastStablePublishVersion %}
 				<div class="m-2">
 					<div class="nowrap">{{ result.lastStablePublishVersion }}</div>
@@ -213,9 +206,17 @@ npmAlsoShowRepoName:
 						{% endif %}
 					</div>
 				{% endif %}
+				{%- if result.firstPublish -%}
+					<div class="age">
+					{% if result.publishCount > minimumPublishCountForSparkline %}<img src="{% sparklineDataUri sparklinesByPackage[ result.packageName ].monthlyReleases.counts, 120, 20, '#aaa', 2 %}" width="120" height="20" alt="Frequency sparkline for publishes of {{ result.packageName }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>{% endif %}
+					{% if result.publishCount > 0 %}<small class="nowrap">{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %} in <time-difference live mode="strip-suffix"><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference></small>{% endif %}
+					</div>
+				{%- else -%}
+					<time-difference live mode="strip-suffix" prefix="for "><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
+				{%- endif -%}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
-				{% if result.openVulnerabilities > 0 %}{% icon "fas:lock-open" %}{{ result.openVulnerabilities }}{% endif %}
+				{% if result.openVulnerabilities > 0 %}{% icon "fas:lock" %}{{ result.openVulnerabilities }}{% endif %}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
