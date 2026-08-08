@@ -1425,7 +1425,7 @@ a[href].tag-inline:not(.tag-borderless),
 	.tags-rail-links > * {
 		display: flex;
 		flex-grow: 1;
-		flex-basis: 23%;
+		flex-basis: 12em;
 	}
 	.tags-rail-links a[href] {
 		display: flex;
