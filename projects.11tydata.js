@@ -32,6 +32,7 @@ let totalCounts = {
 	downloads: 0,
 	publishes: 0,
 	customElements: 0,
+	audits: 0,
 };
 
 let reposSeen = new Set();
@@ -39,6 +40,7 @@ for(let pkg of report.projects) {
 	totalCounts.publishes += pkg.publishCount || 0;
 	totalCounts.downloads += pkg.downloads || 0;
 	totalCounts.customElements += pkg.isWebComponent ? 1 : 0;
+	totalCounts.audits += pkg.openVulnerabilities || 0;
 
 	// Workspace counts would duplicate if we didn’t check
 	if(reposSeen.has(pkg.url)) {

@@ -115,6 +115,7 @@ npmAlsoShowRepoName:
       <th class="name-col">{% icon "fas:box-open" %}Name</th>
       <th>Age</th>
       <th>Version</th>
+      <th class="numeric">{% icon "fas:lock-open" %}Audit</th>
       <th class="numeric">{% icon "fas:bug" %}Issues</th>
       <th class="numeric">{% icon "fas:code-merge" %}PRs</th>
     </tr>
@@ -133,6 +134,11 @@ npmAlsoShowRepoName:
 				<small>{{ totals.publishes | renderNumber }} version{% if totals.publishes != 1 %}s{% endif %}</small>
 			</th>
 			<th></th>
+			<th class="numeric">
+				<div>
+					{% icon "fas:lock-open" %}{{ totals.audits | renderNumber }}<br>
+				</div>
+			</th>
 			<th class="numeric">
 				<div>
 					{% icon "fas:bug" %}{{ totals.issues.open | renderNumber }}<br>
@@ -207,6 +213,9 @@ npmAlsoShowRepoName:
 						{% endif %}
 					</div>
 				{% endif %}
+			</td>
+			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
+				{% if result.openVulnerabilities > 0 %}{% icon "fas:lock-open" %}{{ result.openVulnerabilities }}{% endif %}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
