@@ -77,6 +77,10 @@ npmAlsoShowRepoName:
 	:is(tbody, tfoot) tr.filter-scope--hide {
 		display: none;
 	}
+
+	&:has(.filter-scope--hide) tfoot {
+		display: none;
+	}
 }
 .z-icon:has([href="#far-fa-circle-check"]) {
 	margin-inline: .25em 0;
