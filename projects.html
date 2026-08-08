@@ -93,8 +93,8 @@ npmAlsoShowRepoName:
 	<li>{{ totals.customElements }} Web Components 🚾</li>
 	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last year)</em></li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
-	<li>{% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues closed {% icon "far:circle-check" %}</li>
-	<li>{% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}pull requests (PRs) closed {% icon "far:circle-check" %}</li>
+	<li>{% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues {% icon "far:circle-check" %} closed</li>
+	<li>{% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}pull requests (PRs) {% icon "far:circle-check" %} closed</li>
 </ul>
 
 <script type="module" src="/static/health-score.js"></script>
@@ -118,7 +118,7 @@ npmAlsoShowRepoName:
       <th class="numeric">Neglect</th>
       <th class="name-col">{% icon "fas:box-open" %}Name</th>
       <th>Version</th>
-      <th class="numeric">{% icon "fas:lock" %}Audit</th>
+      <th class="numeric">{% icon "fas:lock-open" %}Audit</th>
       <th class="numeric">{% icon "fas:bug" %}Issues</th>
       <th class="numeric">{% icon "fas:code-merge" %}PRs</th>
     </tr>
@@ -138,7 +138,7 @@ npmAlsoShowRepoName:
 			</th>
 			<th class="numeric">
 				<div>
-					{% icon "fas:lock" %}{{ totals.audits | renderNumber }}<br>
+					{% icon "fas:lock-open" %}{{ totals.audits | renderNumber }}<br>
 				</div>
 			</th>
 			<th class="numeric">
@@ -215,8 +215,13 @@ npmAlsoShowRepoName:
 					<time-difference live mode="strip-suffix" prefix="for "><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
 				{%- endif -%}
 			</td>
-			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
-				{% if result.openVulnerabilities > 0 %}{% icon "fas:lock" %}{{ result.openVulnerabilities }}{% endif %}
+			<td class="numeric">
+				{% if result.openVulnerabilities != null %}
+					{% if result.openVulnerabilities > 0 %}{% icon "fas:lock-open" %}{% endif -%}
+					{{ result.openVulnerabilities }}
+				{% else %}
+				-
+				{% endif %}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
