@@ -1402,7 +1402,7 @@ a[href].tag-inline:not(.tag-borderless),
 .tags-rail-links :any-link {
 	display: inline-flex;
 	align-items: center;
-	padding: .4em .5em .4em 0;
+	padding: .4em .5em .4em .4375em;
 	border-radius: .25em;
 }
 .tags-rail-links :any-link.active {
@@ -1413,7 +1413,7 @@ a[href].tag-inline:not(.tag-borderless),
 @media (max-width: config.$oneColLayoutMaxWidth) {
 	.tags-rail-links {
 		display: flex;
-		justify-content: stretch;;
+		justify-content: center;
 		flex-wrap: wrap;
 		gap: .25em .5em;
 		text-transform: uppercase;
@@ -1424,7 +1424,6 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.tags-rail-links > * {
 		display: flex;
-		flex-grow: 1;
 	}
 	.tags-rail-links a[href] {
 		display: flex;
@@ -1440,9 +1439,6 @@ a[href].tag-inline:not(.tag-borderless),
 		white-space: nowrap;
 	}
 }
-.tags-rail-links :any-link:has(svg) {
-	padding-inline-start: .25em;
-}
 .tags-rail-links :any-link .z-icon ~ .z-icon {
 	margin-inline: .5em 0;
 	font-size: 0.8125em;
@@ -1453,6 +1449,9 @@ a[href].tag-inline:not(.tag-borderless),
 		margin-block: 1.5em;
 		margin-inline-start: -.4em;
 		font-weight: 400;
+	}
+	.tags-rail-links :any-link:has(svg) {
+		padding-inline-start: .25em;
 	}
 	.tags-rail-links :any-link.active {
 		font-weight: 600;
