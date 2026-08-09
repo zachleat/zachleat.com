@@ -1425,7 +1425,6 @@ a[href].tag-inline:not(.tag-borderless),
 	.tags-rail-links > * {
 		display: flex;
 		flex-grow: 1;
-		flex-basis: 12em;
 	}
 	.tags-rail-links a[href] {
 		display: flex;
@@ -1441,6 +1440,13 @@ a[href].tag-inline:not(.tag-borderless),
 		white-space: nowrap;
 	}
 }
+.tags-rail-links :any-link:has(svg) {
+	padding-inline-start: .25em;
+}
+.tags-rail-links :any-link .z-icon ~ .z-icon {
+	margin-inline: .5em 0;
+	font-size: 0.8125em;
+}
 @media (min-width: config.$twoColLayoutMinWidth) {
 	.tags-rail-links {
 		font-size: 1.25em; /* 20px /16 */
@@ -1453,13 +1459,6 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.tags-rail-links :any-link:not(:has(.z-icon)) {
 		margin-inline-start: 1.7em;
-	}
-	.tags-rail-links :any-link .z-icon ~ .z-icon {
-		margin-inline: .3125em 0;
-		font-size: 0.8125em;
-	}
-	.tags-rail-links :any-link:has(svg) {
-		padding-inline-start: .25em;
 	}
 }
 
@@ -1846,6 +1845,9 @@ svg.z-icon {
 }
 .fa-square-rss {
 	color: var(--icon-color-override, #e57516);
+}
+.fa-magnifying-glass {
+	color: var(--icon-color-override);
 }
 .fa-github {
 	color: var(--icon-color-override, #000);
