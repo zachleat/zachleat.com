@@ -129,6 +129,7 @@ npmAlsoShowRepoName:
 		<select data-filter-key="scope">
 			<option value="">Show all projects</option>
 			<option value="11ty">Only @11ty/ packages</option>
+			<option value="wc">Only 🚾 Web Components</option>
 		</select>
 	</label>
 </form>
@@ -179,7 +180,8 @@ npmAlsoShowRepoName:
   <tbody>
 {% for result in packages %}
 		{%- assign npmScope = result.packageName | default: "" | slice: 0, 6 %}
-		<tr data-filter-scope="{% if npmScope == '@11ty/' %}11ty{% else %}other{% endif %}" style="--neglect-score: {{ result.score }}">
+		{%- capture filterScopes -%}{% if npmScope == "@11ty/" %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{%- endcapture %}
+		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}">
 			<td class="neglect-col numeric">
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
 			</td>
