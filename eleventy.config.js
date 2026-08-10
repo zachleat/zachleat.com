@@ -212,6 +212,10 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
 
 	/* FILTERS */
+	eleventyConfig.addFilter("startsWith", async (haystack, ...needles) => {
+		return needles.find(n => haystack.startsWith(n));
+	});
+
 	eleventyConfig.addFilter("tweetbackUrl", async (url) => {
 		const { transform } = await import("@tweetback/canonical");
 		return transform(url);

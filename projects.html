@@ -179,8 +179,8 @@ npmAlsoShowRepoName:
 	</tfoot>
   <tbody>
 {% for result in packages %}
-		{%- assign npmScope = result.packageName | default: "" | slice: 0, 6 %}
-		{%- capture filterScopes -%}{% if npmScope == "@11ty/" or npmScope == "@awesome.me/" %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{%- endcapture %}
+		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
+		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{%- endcapture %}
 		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}">
 			<td class="neglect-col numeric">
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
