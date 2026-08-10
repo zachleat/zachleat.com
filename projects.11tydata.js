@@ -43,6 +43,10 @@ for(let pkg of report.projects) {
 	totalCounts.customElements += pkg.isWebComponent ? 1 : 0;
 	totalCounts.audits += pkg.openVulnerabilities || 0;
 
+	if(pkg.publishCount > 0) {
+		totalCounts.packages++;
+	}
+
 	// Workspace counts would duplicate if we didn’t check
 	if(reposSeen.has(pkg.url)) {
 		continue;
@@ -55,10 +59,6 @@ for(let pkg of report.projects) {
 	totalCounts.issues.open += pkg.openIssues || 0;
 	totalCounts.issues.closed += pkg.closedIssues || 0;
 	totalCounts.stars += pkg.stars || 0;
-
-	if(pkg.publishCount > 0) {
-		totalCounts.packages++;
-	}
 }
 
 export const totals = totalCounts;
