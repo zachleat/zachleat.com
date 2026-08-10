@@ -9,6 +9,14 @@ npmAlsoShowRepoName:
   - eleventy
 ---
 <style>
+.spark--primary {
+	max-width: 20em;
+
+	.spark-img {
+		display: block;
+		min-width: 10em;
+	}
+}
 #projects {
 	.spark-img {
 		display: block;
@@ -99,19 +107,22 @@ npmAlsoShowRepoName:
 <p>This is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects must be published to {% icon "fab:npm" %}npm or marked as a template repository on {% icon "fab:github" %}GitHub.</p>
 
 <ul>
-	<li>{{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %} on {{ packages | size | renderNumber }} open source projects</li>
-	<li>{{ totals.customElements }} Web Components 🚾</li>
+	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects
+		<ul>
+			<li>{{ totals.packages }} {% icon "fab:npm" %}package{% if totals.packages != 1 %}s{% endif %} and {{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %}</li>
+			<li>{{ totals.customElements }} Web Components 🚾</li>
+		</ul>
+	</li>
 	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last year)</em></li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
-	<li>{% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues {% icon "far:circle-check" %} closed</li>
-	<li>{% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}pull requests (PRs) {% icon "far:circle-check" %} closed</li>
+	<li>{% icon "far:circle-check" %} Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues and {% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
 </ul>
 
 <script type="module" src="/static/health-score.js"></script>
 
 <div class="fl fl-nowrap" style="gap: 1em 3em">
 	<div class="health">Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}"></health-score></div>
-	<div class="spark">
+	<div class="spark spark--primary">
 		<span>{{ sparklineAggregate.start | split: "-" | pop }}</span>
 		<div><img src="{% sparklineDataUri sparklineAggregate.counts, 600, 60, 'green', 2 %}" width="600" height="60" alt="Sparkline representing frequency of publishes across all packages" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
 		<span>{{ currentYear }}</span>

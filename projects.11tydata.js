@@ -33,6 +33,7 @@ let totalCounts = {
 	publishes: 0,
 	customElements: 0,
 	audits: 0,
+	packages: 0,
 };
 
 let reposSeen = new Set();
@@ -53,6 +54,10 @@ for(let pkg of report.projects) {
 	totalCounts.issues.open += pkg.openIssues || 0;
 	totalCounts.issues.closed += pkg.closedIssues || 0;
 	totalCounts.stars += pkg.stars || 0;
+
+	if(pkg.publishCount > 0) {
+		totalCounts.packages++;
+	}
 }
 
 export const totals = totalCounts;
