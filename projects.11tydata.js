@@ -26,7 +26,7 @@ export const packages = report.projects.sort((a, b) => {
 });
 
 let totalCounts = {
-	prs: { open: 0, closed: 0 },
+	prs: { open: 0, closed: 0, merged: 0, },
 	issues: { open: 0, closed: 0 },
 	stars: 0,
 	downloads: 0,
@@ -50,6 +50,7 @@ for(let pkg of report.projects) {
 	reposSeen.add(pkg.url);
 
 	totalCounts.prs.open += pkg.openPRs || 0;
+	totalCounts.prs.merged += pkg.mergedPRs || 0;
 	totalCounts.prs.closed += (pkg.mergedPRs || 0) + (pkg.closedPRs || 0);
 	totalCounts.issues.open += pkg.openIssues || 0;
 	totalCounts.issues.closed += pkg.closedIssues || 0;

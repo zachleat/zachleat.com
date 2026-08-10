@@ -115,7 +115,8 @@ npmAlsoShowRepoName:
 	</li>
 	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last year)</em></li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
-	<li>{% icon "far:circle-check" %} Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues and {% icon "fas:code-merge" %}{{ totals.prs.closed | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
+	<li>{% icon "far:circle-check" %} Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues</li>
+	<li>{% icon "far:circle-check" %} Merged {% icon "fas:code-merge" %}{{ totals.prs.merged | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
 </ul>
 
 <script type="module" src="/static/health-score.js"></script>
@@ -265,8 +266,7 @@ npmAlsoShowRepoName:
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
 				<small>{% icon "fas:code-merge" %}</small>{{ result.openPRs }}
-			{% assign prsClosed = result.mergedPRs | plus: result.closedPRs %}
-			{% if prsClosed > 0 %}<br><small>{{ prsClosed | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
+			{% if result.mergedPRs > 0 %}<br><small>{{ result.mergedPRs | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
 			</td>
 		</tr>
 {% endfor %}
