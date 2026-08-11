@@ -1,23 +1,17 @@
 import Fetch from "@11ty/eleventy-fetch";
 
 const SERVICE_URL = "https://zachleat.github.io/is-this-still-being-maintained/";
-
-let report = await Fetch(SERVICE_URL + "report.json", {
+const FETCH_OPTIONS = {
 	type: "json",
-	duration: "10m",
-});
+	duration: process.env.ELEVENTY_RUN_MODE === "build" ? "2m" : "30m",
+};
 
-let sparklinesByPackageJson = await Fetch(SERVICE_URL + "report-sparklines.json", {
-	type: "json",
-	duration: "10m",
-});
+let report = await Fetch(SERVICE_URL + "report.json", FETCH_OPTIONS);
+let sparklinesByPackageJson = await Fetch(SERVICE_URL + "report-sparklines.json", FETCH_OPTIONS);
 
 export const sparklinesByPackage = sparklinesByPackageJson.packages;
 
-let sparklineAggregateJson = await Fetch(SERVICE_URL + "report-sparkline-aggregate.json", {
-	type: "json",
-	duration: "10m",
-});
+let sparklineAggregateJson = await Fetch(SERVICE_URL + "report-sparkline-aggregate.json", FETCH_OPTIONS);
 
 export const sparklineAggregate = sparklineAggregateJson.monthlyReleases;
 
