@@ -242,9 +242,6 @@ h5,
 	color: config.$textColor;
 	font-size: 1.1875em; /* 19px /16 */
 	line-height: 1.65;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
 }
 
 @media (min-width: 25em) { /* 400px */
