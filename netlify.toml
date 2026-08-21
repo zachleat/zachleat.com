@@ -1,6 +1,9 @@
 # [build]
 # command = "npm run production"
 
+[build.processing.html]
+  pretty_urls = false
+
 [[plugins]]
 package = "netlify-plugin-cache"
 
