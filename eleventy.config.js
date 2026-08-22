@@ -167,7 +167,7 @@ export default async function(eleventyConfig) {
 			"static/*.{css,js}": "static/",
 
 			// External modules
-			"node_modules/speedlify-score/speedlify-score.{css,js}": `static/`,
+			// "node_modules/speedlify-score/speedlify-score.{css,js}": `static/`,
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `static/`,
 			"node_modules/infinity-burger/infinity-burger.{css,js}": `static/`,
 			"node_modules/artificial-chart/artificial-chart.{css,js}": `static/`,

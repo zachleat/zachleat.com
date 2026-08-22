@@ -26,11 +26,8 @@
 				{%- endrenderTemplate %}
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[urlWithOrigin] %}
-				<script type="module" src="/static/speedlify-score.js"></script>
-				<a href="https://zachleat.github.io/speedlify2/group/zachleat/" class="speedlify-link" aria-label="View the full results on speedlify2">
-					{%- assign hash = speedlify[urlWithOrigin].hash %}
-					<speedlify-score hash="{{ hash }}" speedlify-url="https://zachleat.github.io/speedlify2/"></speedlify-score>
-				</a>
+				<script type="module" src="/static/js/speedlify-score.js"></script>
+				<speedlify-score speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify-score>
 {%- endif %}
 			</div>
 		</form>
