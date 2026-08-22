@@ -1,5 +1,5 @@
 /**
- * <speedlify-score> — Lighthouse scores for one URL, with a summary on hover.
+ * <speedlify2-score> — Lighthouse scores for one URL, with a summary on hover.
  *
  * Inspired by https://github.com/zachleat/speedlify-score, with one deliberate
  * difference: there is no `urls.json` index to download. The data file for a
@@ -7,12 +7,12 @@
  * generator uses, so a page needs exactly one request for exactly the data it
  * shows — and no index, no crypto, and no secure context to get it.
  *
- *   <script type="module" src="https://your-speedlify/js/speedlify-score.js"></script>
- *   <speedlify-score speedlify-url="https://your-speedlify/"></speedlify-score>
+ *   <script type="module" src="https://your-speedlify/js/speedlify2-score.js"></script>
+ *   <speedlify2-score speedlify-url="https://your-speedlify/"></speedlify2-score>
  *
  * With no `url`, it describes the page it is embedded on.
  *
- *   <speedlify-score speedlify-url="https://your-speedlify/" url="https://example.com/"></speedlify-score>
+ *   <speedlify2-score speedlify-url="https://your-speedlify/" url="https://example.com/"></speedlify2-score>
  *
  * Always renders the same four Lighthouse scores. Everything else about the
  * site is in the tooltip on hover or focus.
@@ -107,7 +107,7 @@ class SpeedlifyStore {
 const store = new SpeedlifyStore();
 
 class SpeedlifyScore extends HTMLElement {
-	static tagName = "speedlify-score";
+	static tagName = "speedlify2-score";
 
 	static register(tagName) {
 		if (!globalThis.customElements?.get(tagName || SpeedlifyScore.tagName)) {
@@ -118,10 +118,41 @@ class SpeedlifyScore extends HTMLElement {
 	static attrs = {
 		speedlifyUrl: "speedlify-url",
 		url: "url",
+		// "light" or "dark". Absent means follow the reader's system setting.
+		theme: "theme",
 	};
 
 	static css = `
+/*
+ * Colours come from custom properties so the same stylesheet can render on a
+ * light page or a dark one. Three states, in this order:
+ *
+ *   :host                              the dark palette, unconditionally
+ *   @media (prefers-color-scheme: light)  light, unless theme="dark" says otherwise
+ *   :host([theme="light"])             light, whatever the system says
+ *   :host([theme="dark"])              dark, whatever the system says
+ *
+ * The media query has to be guarded against an explicit theme="dark" or it
+ * would win over it; the explicit rules come last so they win over the query.
+ *
+ * This matters more than it looks. The numerals inside the rings are drawn in
+ * the band colour directly onto the *host page's* background — there is no card
+ * behind them — and the dark-page greens and ambers measure about 2:1 on white.
+ * A badge on a light page was close to unreadable before this.
+ */
 :host {
+	--ss-good: #0cce6b;
+	--ss-average: #ffa400;
+	--ss-poor: #ff4e42;
+	--ss-none: #888;
+	--ss-track: rgb(136 136 136 / .35);
+	--ss-tip-bg: #1c1c1c;
+	--ss-tip-text: #fff;
+	--ss-tip-link: #7cc0ff;
+	--ss-tip-shadow: rgb(0 0 0 / .35);
+	--ss-age-text: rgb(255 255 255 / .72);
+	--ss-age-bg: rgb(255 255 255 / .12);
+
 	display: inline-flex;
 	align-items: center;
 	gap: .3em;
@@ -131,6 +162,55 @@ class SpeedlifyScore extends HTMLElement {
 	line-height: 1;
 	vertical-align: middle;
 }
+
+/*
+ * The light values, shared by the media query and the explicit attribute. The
+ * band colours are the same ones the leaderboard uses in its light theme, so a
+ * score embedded elsewhere and the same score on the site are the same colour:
+ * 5.1:1 or better on white, where the dark set manages 2:1.
+ */
+@media (prefers-color-scheme: light) {
+	:host(:not([theme="dark"])) {
+		--ss-good: #0a7c42;
+		--ss-average: #9a6200;
+		--ss-poor: #c02026;
+		--ss-none: #6b6b6b;
+		--ss-track: rgb(0 0 0 / .18);
+		--ss-tip-bg: #ffffff;
+		--ss-tip-text: #14161a;
+		--ss-tip-link: #1a5fd0;
+		--ss-tip-shadow: rgb(0 0 0 / .18);
+		--ss-age-text: rgb(0 0 0 / .68);
+		--ss-age-bg: rgb(0 0 0 / .08);
+	}
+}
+:host([theme="light"]) {
+	--ss-good: #0a7c42;
+	--ss-average: #9a6200;
+	--ss-poor: #c02026;
+	--ss-none: #6b6b6b;
+	--ss-track: rgb(0 0 0 / .18);
+	--ss-tip-bg: #ffffff;
+	--ss-tip-text: #14161a;
+	--ss-tip-link: #1a5fd0;
+	--ss-tip-shadow: rgb(0 0 0 / .18);
+	--ss-age-text: rgb(0 0 0 / .68);
+	--ss-age-bg: rgb(0 0 0 / .08);
+}
+:host([theme="dark"]) {
+	--ss-good: #0cce6b;
+	--ss-average: #ffa400;
+	--ss-poor: #ff4e42;
+	--ss-none: #888;
+	--ss-track: rgb(136 136 136 / .35);
+	--ss-tip-bg: #1c1c1c;
+	--ss-tip-text: #fff;
+	--ss-tip-link: #7cc0ff;
+	--ss-tip-shadow: rgb(0 0 0 / .35);
+	--ss-age-text: rgb(255 255 255 / .72);
+	--ss-age-bg: rgb(255 255 255 / .12);
+}
+
 :host([hidden]) { display: none; }
 
 /*
@@ -147,7 +227,7 @@ class SpeedlifyScore extends HTMLElement {
 	width: 2.467em;
 	height: 2.467em;
 }
-.ring-track { stroke: rgb(136 136 136 / .35); }
+.ring-track { stroke: var(--ss-track); }
 .ring-arc { stroke: currentColor; }
 .ring-text {
 	font-family: inherit;
@@ -171,7 +251,7 @@ class SpeedlifyScore extends HTMLElement {
  * and the colour all withheld until they are known.
  */
 .skeleton {
-	color: #888;
+	color: var(--ss-none);
 	opacity: .45;
 	animation: speedlify-pulse 1.4s ease-in-out infinite;
 }
@@ -183,10 +263,10 @@ class SpeedlifyScore extends HTMLElement {
 	.skeleton { animation: none; }
 }
 
-.good    { color: #0cce6b; }
-.average { color: #ffa400; }
-.poor    { color: #ff4e42; }
-.none    { color: #888; }
+.good    { color: var(--ss-good); }
+.average { color: var(--ss-average); }
+.poor    { color: var(--ss-poor); }
+.none    { color: var(--ss-none); }
 
 /* The trigger is a button so it is reachable by keyboard, not just hover. */
 .trigger {
@@ -209,12 +289,12 @@ class SpeedlifyScore extends HTMLElement {
 	min-width: 15em;
 	padding: .6em .75em;
 	border-radius: 6px;
-	background: #1c1c1c;
-	color: #fff;
+	background: var(--ss-tip-bg);
+	color: var(--ss-tip-text);
 	font-size: .8rem;
 	line-height: 1.45;
 	text-align: left;
-	box-shadow: 0 4px 16px rgb(0 0 0 / .35);
+	box-shadow: 0 4px 16px var(--ss-tip-shadow);
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .12s ease;
@@ -233,9 +313,9 @@ class SpeedlifyScore extends HTMLElement {
 .tip .name { display: inline-block; font-weight: 700; word-break: break-all; }
 /*
  * The age reads as a pill, the same shape the leaderboard gives it, so a badge
- * and the page it links to label freshness the same way. Literal colours rather
- * than custom properties: this stylesheet ships to pages whose palette we know
- * nothing about, and the tooltip it sits in is dark either way.
+ * and the page it links to label freshness the same way. Translucent black or
+ * white rather than a fixed grey, so it sits on whichever tooltip surface the
+ * theme picked.
  */
 .age {
 	display: inline-block;
@@ -244,12 +324,12 @@ class SpeedlifyScore extends HTMLElement {
 	border-radius: 50px;
 	font-size: .85em;
 	font-variant-numeric: tabular-nums;
-	color: rgb(255 255 255 / .72);
-	background: rgb(255 255 255 / .12);
+	color: var(--ss-age-text);
+	background: var(--ss-age-bg);
 	white-space: nowrap;
 }
-.age.stale { color: #ffa400; background: rgb(255 164 0 / .16); }
-.tip a { color: #7cc0ff; }
+.age.stale { color: var(--ss-average); background: rgb(255 164 0 / .16); }
+.tip a { color: var(--ss-tip-link); }
 `;
 
 	/**
@@ -538,8 +618,9 @@ class SpeedlifyScore extends HTMLElement {
 	 * rather than as a row of differently-shaped badges.
 	 *
 	 * These six are the ones the leaderboard ranks by — the four categories,
-	 * then Core Web Vitals and axe as its tiebreakers, in that order. Total, rank, weight and
-	 * requests are all in the tooltip, which costs nothing until asked for.
+	 * then axe and Core Web Vitals, the two things Lighthouse's own four do not
+	 * cover. Total, rank, weight and requests are all in the tooltip, which
+	 * costs nothing until asked for.
 	 */
 	render(data) {
 		const parts = [
@@ -547,11 +628,11 @@ class SpeedlifyScore extends HTMLElement {
 			this.scoreHtml("Accessibility", data.lighthouse?.accessibility),
 			this.scoreHtml("Best Practices", data.lighthouse?.bestPractices),
 			this.scoreHtml("SEO", data.lighthouse?.seo),
-			// The two the ranking uses as tiebreakers, in the order it applies
-			// them, and the two things Lighthouse's own four do not cover:
-			// real-user Core Web Vitals, then a full axe run.
-			this.cwvHtml(data.cwv),
+			// The two things Lighthouse's own four do not cover: a full axe run,
+			// then real-user Core Web Vitals. Display order only — the ranking
+			// still breaks ties on Core Web Vitals before axe.
 			this.axeHtml(data.axe),
+			this.cwvHtml(data.cwv),
 		];
 
 		return [
