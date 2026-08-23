@@ -18,6 +18,9 @@ npmAlsoShowRepoName:
 	}
 }
 #projects {
+	.archived {
+		opacity: .7;
+	}
 	.spark-img {
 		display: block;
 		background-color: #f6f6f6;
@@ -193,7 +196,7 @@ npmAlsoShowRepoName:
 {% for result in packages %}
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
 		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{%- endcapture %}
-		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}">
+		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
 			<td class="neglect-col numeric">
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
 			</td>
@@ -201,16 +204,17 @@ npmAlsoShowRepoName:
 				<div class="name">
 					{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
 					{%- if result.lastPublish %}
-						{%- icon "fas:box-open" %}<code>{{ result.packageName }}</code>
+						{%- if result.isArchived %}{% icon "fa:skull-crossbones" %}{% else %}{%- icon "fas:box-open" %}{% endif %}<code>{{ result.packageName }}</code>
 						{%- if npmGitHubMismatch %}
 							from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
 						{%- endif %}
 					{%- else %}
-						{%- icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
+						{%- if result.isArchived %}{% icon "fa:skull-crossbones" %}{% else %}{%- icon "far:window-maximize" %}{% endif %}<code>{{ result.nameWithOwner }}</code>
 					{%- endif %}
 					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
 				<small class="metadata">
+					{%- if result.isArchived %}<strong>Archived</strong>{% endif %}
 					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
@@ -274,12 +278,3 @@ npmAlsoShowRepoName:
 </table>
 </table-saw>
 </filter-container>
-
-<p>Honorable archived mentions:</p>
-
-<ul>
-	<li><a href="https://github.com/zachleat/BigText"><code>zachleat/bigtext</code></a></li>
-	<li><a href="https://github.com/zachleat/iliveinomaha-banner"><code>zachleat/iliveinomaha-banner</code></a></li>
-	<li><a href="https://github.com/zachleat/fontfaceonload"><code>zachleat/fontfaceonload</code></a></li>
-	<li><a href="https://github.com/zachleat/postcss-foft-classes"><code>zachleat/postcss-foft-classes</code></a></li>
-</ul>

@@ -269,8 +269,13 @@ export default async function(eleventyConfig) {
 		return numeral(parseInt(num, 10)).format(format);
 	});
 
-	eleventyConfig.addLiquidFilter("round", function(num, digits = 2) {
-		return parseFloat(num).toFixed(digits);
+	// eleventyConfig.addLiquidFilter("round", function(num, digits = 2) {
+	// 	return parseFloat(num).toFixed(digits);
+	// });
+
+	eleventyConfig.addLiquidFilter("round", function(n, d = 0) {
+		const f = 10 ** d;
+		return Math.round((n + Number.EPSILON * Math.sign(n)) * f) / f;
 	});
 
 	eleventyConfig.addLiquidFilter("medialengthCleanup", str => {

@@ -76,8 +76,13 @@ class HealthScore extends HTMLElement {
 		return "circle circle-good";
 	}
 
+	round(n, d = 0) {
+		const f = 10 ** d;
+		return Math.round((n + Number.EPSILON * Math.sign(n)) * f) / f;
+	}
+
 	getScoreHtml(title, value = "") {
-		return `<span title="${title}" class="${this.getScoreClass(value)}">${value ? parseInt(value * 100, 10) : "…"}</span>`;
+		return `<span title="${title}" class="${this.getScoreClass(value)}">${value ? this.round(value * 100) : "…"}</span>`;
 	}
 
 	render() {
