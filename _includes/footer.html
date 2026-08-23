@@ -26,7 +26,7 @@
 				{%- endrenderTemplate %}
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[urlWithOrigin] %}
-				<script type="module" src="/static/js/speedlify2-score.js"></script>
+				<script type="module" src="https://www.speedlify.dev/js/speedlify2-score.js"></script>
 				<speedlify2-score speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify2-score>
 {%- endif %}
 			</div>
