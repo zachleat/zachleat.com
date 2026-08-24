@@ -81,6 +81,9 @@ npmAlsoShowRepoName:
 		text-overflow: ellipsis;
 	}
 }
+#archived td {
+ white-space: nowrap;
+}
 .z-icon:has([href="#far-fa-circle-check"]) {
 	margin-inline: .25em 0;
 	color: green;
@@ -123,7 +126,6 @@ npmAlsoShowRepoName:
 
 <p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>. {% endif %}Download counts shown are for the last year. Dependency counts shown are comprehensive counts of all dependencies used by the latest stable release of the package.</em></p>
 
-<script type="module" src="/static/table-saw.js"></script>
 <filter-container oninit>
 <form class="filter-posts-form">
 	<span data-filter-results="project/projects" aria-live="polite">{{ packages | size }} projects</span>&#160;
