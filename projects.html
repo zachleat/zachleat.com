@@ -19,7 +19,7 @@ npmAlsoShowRepoName:
 }
 #projects {
 	.archived {
-		opacity: .65;
+		opacity: .8;
 	}
 	.spark-img {
 		display: block;
@@ -195,17 +195,17 @@ npmAlsoShowRepoName:
 				<div class="name">
 					{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
 					{%- if result.lastPublish %}
-						{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}{% else %}{% icon "fas:box-open" %}{% endif %}<code>{{ result.packageName }}</code>
+						{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}{% else %}{% icon "fas:box-open" %}{% endif %}{% if result.isArchived %}<del>{% endif %}<code>{{ result.packageName }}</code>{% if result.isArchived %}</del>{% endif %}
 						{%- if npmGitHubMismatch %}
-							from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
+							from {% icon "fab:github" %}{% if result.isArchived %}<del>{% endif %}<code>{{ result.nameWithOwner }}</code>{% if result.isArchived %}</del>{% endif %}
 						{%- endif %}
 					{%- else %}
-						{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}{% else %}{% icon "far:window-maximize" %}{% endif %}<code>{{ result.nameWithOwner }}</code>
+						{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}{% else %}{% icon "far:window-maximize" %}{% endif %}{% if result.isArchived %}<del>{% endif %}<code>{{ result.nameWithOwner }}</code>{% if result.isArchived %}</del>{% endif %}
 					{%- endif %}
 					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
 				<small class="metadata">
-					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}{% if result.isArchived %}<del>{% endif %}GitHub{% if result.isArchived %}</del>{% endif %}</a>{% endif %}
+					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
 					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}{% if result.npmDeprecated %}<del>{% endif %}npm{% if result.npmDeprecated %}</del>{% endif %}</a>{% endif %}
