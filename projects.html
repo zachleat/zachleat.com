@@ -197,7 +197,7 @@ npmAlsoShowRepoName:
 							from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
 						{%- endif %}
 					{%- else %}
-						{%- icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
+						{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}{% else %}{% icon "far:window-maximize" %}{% endif %}<code>{{ result.nameWithOwner }}</code>
 					{%- endif %}
 					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
