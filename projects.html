@@ -18,6 +18,9 @@ npmAlsoShowRepoName:
 	}
 }
 #projects {
+	.archived {
+		opacity: .7;
+	}
 	.spark-img {
 		display: block;
 		background-color: #f6f6f6;
@@ -68,8 +71,6 @@ npmAlsoShowRepoName:
 	&:has(.filter-scope--hide) tfoot {
 		display: none;
 	}
-}
-#projects, #archived {
 	.name-col {
 		min-width: 16em;
 		max-width: 25vw;
@@ -80,9 +81,6 @@ npmAlsoShowRepoName:
 		white-space: nowrap;
 		text-overflow: ellipsis;
 	}
-}
-#archived td {
- white-space: nowrap;
 }
 .z-icon:has([href="#far-fa-circle-check"]) {
 	margin-inline: .25em 0;
@@ -101,9 +99,9 @@ npmAlsoShowRepoName:
 <p>This is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects are published to {% icon "fab:npm" %}npm, marked as a template repository on {% icon "fab:github" %}GitHub, or manually opted-in.</p>
 
 <ul>
-	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects
+	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects <em>({{ totals.githubArchived }} archived)</em>
 		<ul>
-			<li>{{ totals.packages }} {% icon "fab:npm" %}package{% if totals.packages != 1 %}s{% endif %} and {{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %}</li>
+			<li>{{ totals.packages }} {% icon "fab:npm" %}package{% if totals.packages != 1 %}s{% endif %} <em>({{ totals.npmDeprecated }} deprecated)</em> and {{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %}</li>
 			<li>{{ totals.customElements }} Web Components 🚾</li>
 		</ul>
 	</li>
@@ -184,10 +182,9 @@ npmAlsoShowRepoName:
 	</tfoot>
   <tbody>
 {% for result in packages %}
-		{%- if not result.isArchived %}
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
 		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{%- endcapture %}
-		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}">
+		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
 			<td class="neglect-col numeric">
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
 			</td>
@@ -195,7 +192,7 @@ npmAlsoShowRepoName:
 				<div class="name">
 					{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
 					{%- if result.lastPublish %}
-						{%- icon "fas:box-open" %}<code>{{ result.packageName }}</code>
+						{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}{% else %}{% icon "fas:box-open" %}{% endif %}<code>{{ result.packageName }}</code>
 						{%- if npmGitHubMismatch %}
 							from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
 						{%- endif %}
@@ -205,10 +202,10 @@ npmAlsoShowRepoName:
 					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
 				<small class="metadata">
-					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
+					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}{%- if result.isArchived %}Archived on {% endif %}GitHub</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
-					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}npm</a>{% endif %}
+					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}{%- if result.npmDeprecated %}Deprecated on {% endif %}npm</a>{% endif %}
 					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
 					<span style="flex-grow: 999"></span>
 					{% if result.stars > minimumStars %}<span class="stars{% if result.workspacePath %} is-workspace{% endif %}">{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
@@ -216,7 +213,7 @@ npmAlsoShowRepoName:
 				</small>
 			</td>
 			<td>
-				{% if result.lastStablePublishVersion %}
+				{% if result.lastStablePublishVersion and not result.isArchived %}
 				<div class="m-2">
 					<div class="nowrap">{{ result.lastStablePublishVersion }}</div>
 					{% if result.lastStablePublishVersion %}
@@ -238,7 +235,7 @@ npmAlsoShowRepoName:
 				{% endif %}
 				{%- if result.firstPublish -%}
 					<div class="age">
-					{% if result.publishCount > minimumPublishCountForSparkline %}<img src="{% sparklineDataUri sparklinesByPackage[ result.packageName ].monthlyReleases.counts, 120, 20, '#aaa', 2 %}" width="120" height="20" alt="Frequency sparkline for publishes of {{ result.packageName }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>{% endif %}
+					{% if result.publishCount > minimumPublishCountForSparkline and not result.isArchived %}<img src="{% sparklineDataUri sparklinesByPackage[ result.packageName ].monthlyReleases.counts, 120, 20, '#aaa', 2 %}" width="120" height="20" alt="Frequency sparkline for publishes of {{ result.packageName }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>{% endif %}
 					{% if result.publishCount > 0 %}<small class="nowrap">{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %} in <time-difference live mode="strip-suffix"><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference></small>{% endif %}
 					</div>
 				{%- else -%}
@@ -246,7 +243,7 @@ npmAlsoShowRepoName:
 				{%- endif -%}
 			</td>
 			<td class="numeric">
-				{% if result.openVulnerabilities != null %}
+				{% if result.openVulnerabilities != null and not result.isArchived %}
 					{% if result.openVulnerabilities > 0 %}{% icon "fas:lock-open" %}{% endif -%}
 					{{ result.openVulnerabilities }}<br>
 					<small>{{ result.transitiveDependencies }} dep{% if result.transitiveDependencies != 1 %}s{% endif %}</small>
@@ -255,61 +252,20 @@ npmAlsoShowRepoName:
 				{% endif %}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
-				<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
-				{% if result.closedIssues > 0 %}<br><small>{{ result.closedIssues | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
+				{%- if not result.isArchived %}
+					<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
+					{%- if result.closedIssues > 0 %}<br><small>{{ result.closedIssues | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
+				{%- endif %}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
-				<small>{% icon "fas:code-merge" %}</small>{{ result.openPRs }}
-			{% if result.mergedPRs > 0 %}<br><small>{{ result.mergedPRs | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
+				{%- if not result.isArchived %}
+					<small>{% icon "fas:code-merge" %}</small>{{ result.openPRs }}
+					{%- if result.mergedPRs > 0 %}<br><small>{{ result.mergedPRs | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
+				{%- endif %}
 			</td>
 		</tr>
-		{%- endif %}
 {% endfor %}
   </tbody>
 </table>
 </div>
 </filter-container>
-
-<h2>Archived Projects</h2>
-
-<div class="table-scroll">
-<table id="archived">
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>GitHub</th>
-			<th>npm</th>
-			<th>Link</th>
-		</tr>
-	</thead>
-	<tbody>
-{%- for result in packages %}
-	{%- if result.isArchived %}
-		<tr>
-			<td class="name-col">
-				<div class="name">
-				{%- if result.lastPublish %}
-				{% icon "fa:skull-crossbones" %}<code>{{ result.packageName }}</code>
-				{%- if npmGitHubMismatch %}
-				from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
-				{%- endif %}
-				{%- else %}
-				{% icon "fa:skull-crossbones" %}<code>{{ result.nameWithOwner }}</code>
-				{%- endif %}
-				</div>
-			</td>
-			<td>
-				{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
-			</td>
-			<td>
-				{%- if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{%- if result.npmDeprecated %}{% icon "fa:skull-crossbones" %}{% endif %}{% icon "fab:npm" %}npm</a>{% endif %}
-			</td>
-			<td>
-				{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
-			</td>
-		</tr>
-	{%- endif %}
-{%- endfor %}
-	</tbody>
-</table>
-</div>

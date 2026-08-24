@@ -20,6 +20,8 @@ export const packages = report.projects.sort((a, b) => {
 });
 
 let totalCounts = {
+	githubArchived: 0,
+	npmDeprecated: 0,
 	prs: { open: 0, closed: 0, merged: 0, },
 	issues: { open: 0, closed: 0 },
 	stars: 0,
@@ -32,6 +34,8 @@ let totalCounts = {
 
 let reposSeen = new Set();
 for(let pkg of report.projects) {
+	totalCounts.githubArchived += pkg.isArchived ? 1 : 0;
+	totalCounts.npmDeprecated += pkg.npmDeprecated ? 1 : 0;
 	totalCounts.publishes += pkg.publishCount || 0;
 	totalCounts.downloads += pkg.downloads || 0;
 	totalCounts.customElements += pkg.isWebComponent ? 1 : 0;
