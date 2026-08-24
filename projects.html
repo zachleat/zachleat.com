@@ -18,9 +18,6 @@ npmAlsoShowRepoName:
 	}
 }
 #projects {
-	.archived {
-		opacity: .7;
-	}
 	.spark-img {
 		display: block;
 		background-color: #f6f6f6;
@@ -46,22 +43,16 @@ npmAlsoShowRepoName:
 	.neglect-col {
 		background: hsl(var(--neglect-hue) 70% 90%);
 	}
-	.name-col {
-		@media (width > 40.625em) {
-			max-width: 35vw;
-		}
-		@media (width >= 61.25em) {
-			max-width: 25vw;
-		}
-	}
 
-	@media (width > 40.625em) {
-		.name {
-			display: block;
-			overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-		}
+
+	.name-col {
+		max-width: 25vw;
+	}
+	.name {
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 
 	.metadata {
@@ -148,7 +139,7 @@ npmAlsoShowRepoName:
 		</select>
 	</label>
 </form>
-<table-saw text-align ratio="1/4" breakpoint="(max-width: 40.625em)">
+<div class="table-scroll">
 <table id="projects">
   <thead>
     <tr>
@@ -194,9 +185,10 @@ npmAlsoShowRepoName:
 	</tfoot>
   <tbody>
 {% for result in packages %}
+		{%- if not result.isArchived %}
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
 		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{%- endcapture %}
-		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
+		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}">
 			<td class="neglect-col numeric">
 				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
 			</td>
@@ -204,17 +196,16 @@ npmAlsoShowRepoName:
 				<div class="name">
 					{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
 					{%- if result.lastPublish %}
-						{%- if result.isArchived %}{% icon "fa:skull-crossbones" %}{% else %}{%- icon "fas:box-open" %}{% endif %}<code>{{ result.packageName }}</code>
+						{%- icon "fas:box-open" %}<code>{{ result.packageName }}</code>
 						{%- if npmGitHubMismatch %}
 							from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
 						{%- endif %}
 					{%- else %}
-						{%- if result.isArchived %}{% icon "fa:skull-crossbones" %}{% else %}{%- icon "far:window-maximize" %}{% endif %}<code>{{ result.nameWithOwner }}</code>
+						{%- icon "far:window-maximize" %}<code>{{ result.nameWithOwner }}</code>
 					{%- endif %}
 					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
 				<small class="metadata">
-					{%- if result.isArchived %}<strong>Archived</strong>{% endif %}
 					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
@@ -273,8 +264,49 @@ npmAlsoShowRepoName:
 			{% if result.mergedPRs > 0 %}<br><small>{{ result.mergedPRs | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
 			</td>
 		</tr>
+		{%- endif %}
 {% endfor %}
   </tbody>
 </table>
-</table-saw>
+</div>
 </filter-container>
+
+<h2>Archived Projects</h2>
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>GitHub</th>
+			<th>npm</th>
+			<th>Link</th>
+		</tr>
+	</thead>
+	<tbody>
+{%- for result in packages %}
+	{%- if result.isArchived %}
+		<tr>
+			<td>
+				{%- if result.lastPublish %}
+				{% icon "fa:skull-crossbones" %}<code>{{ result.packageName }}</code>
+				{%- if npmGitHubMismatch %}
+				from {% icon "fab:github" %}<code>{{ result.nameWithOwner }}</code>
+				{%- endif %}
+				{%- else %}
+				{% icon "fa:skull-crossbones" %}<code>{{ result.nameWithOwner }}</code>
+				{%- endif %}
+			</td>
+			<td>
+				{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
+			</td>
+			<td>
+				{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}npm</a>{% endif %}
+			</td>
+			<td>
+				{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
+			</td>
+		</tr>
+	{%- endif %}
+{%- endfor %}
+	</tbody>
+</table>
