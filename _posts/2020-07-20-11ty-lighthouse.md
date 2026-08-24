@@ -21,7 +21,7 @@ Just looking back at the last four months, this certainly feels like the accumul
 
 First I manually compiled a list of starter project demo URLs to [Speedlify, a site I built for automated Lighthouse testing and reporting](/web/speedlify/). This was very straightforward based on the work I’ve already completed. You can see the daily updated results of that here:
 
-<div class="primarylink"><a href="https://www.speedlify.dev/eleventy-starters/">Speedlify for Eleventy Starter Projects</a></div>
+<div class="primarylink"><a href="https://www.speedlify.dev/group/11ty-starters/">Speedlify for Eleventy Starter Projects</a> (link updated for speedlify2)</div>
 
 ### Step 2: Fetch the Data
 

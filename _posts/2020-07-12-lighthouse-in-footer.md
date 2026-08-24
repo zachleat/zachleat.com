@@ -6,7 +6,7 @@ tags:
 ---
 [Speedlify](/web/speedlify/) started with a very simple goal: make it easy to continuously check a site’s performance. As my friend [Scott Jehl](https://scottjehl.com/) has said, “it can be easier to make a site fast than to keep it that way.” And as a performance advocate, I feel that it’s important to keep myself honest and to have some transparency behind the sites I build.
 
-<div class="primarylink"><a href="https://www.speedlify.dev/zachleat.com/">Speedlify for zachleat.com</a></div>
+<div class="primarylink"><a href="https://www.speedlify.dev/group/zachleat/">Speedlify for zachleat.com</a> (link updated to speedlify2)</div>
 
 In that vein, I decided to experiment with publishing Lighthouse scores of some of the pages on my personal web site onto the actual pages themselves. This does have a small performance cost associated with it, but eventually I hope to optimize it away when my personal site has a bit better Jamstack architecture behind it.
 
