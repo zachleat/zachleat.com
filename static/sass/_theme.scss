@@ -771,12 +771,20 @@ table-saw :is(th, td) {
 	}
 }
 .table-scroll {
-	width: calc(100% + 1.5rem);
-	overflow-x: scroll;
-	margin-inline: -.75rem;
+	position: relative;
+	width: calc(100% + .5rem);
+	overflow-x: auto;
+	margin-inline: -.25rem;
+}
+@media ( min-width: 25em ) { /* 400px */
+	.table-scroll {
+		width: calc(100% + 1.5rem);
+		margin-inline: -.75rem;
+	}
 }
 .table-scroll > table {
 	width: 100%;
+	border-collapse: collapse;
 }
 
 

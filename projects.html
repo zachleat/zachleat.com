@@ -44,26 +44,11 @@ npmAlsoShowRepoName:
 		background: hsl(var(--neglect-hue) 70% 90%);
 	}
 
-
-	.name-col {
-		max-width: 25vw;
-	}
-	.name {
-		display: block;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-	}
-
 	.metadata {
 		display: flex;
 		justify-content: flex-end;
-		margin-block-start: .125em;
+		margin-inline-start: 2.125em;
 		gap: .25em;
-
-		@media (min-width: 56.25em) { /* 900px */
-			margin-inline-start: 2.125em;
-		}
 	}
 	.downloads,
 	.stars {
@@ -82,6 +67,18 @@ npmAlsoShowRepoName:
 
 	&:has(.filter-scope--hide) tfoot {
 		display: none;
+	}
+}
+#projects, #archived {
+	.name-col {
+		min-width: 16em;
+		max-width: 25vw;
+	}
+	.name {
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 }
 .z-icon:has([href="#far-fa-circle-check"]) {
@@ -273,7 +270,8 @@ npmAlsoShowRepoName:
 
 <h2>Archived Projects</h2>
 
-<table>
+<div class="table-scroll">
+<table id="archived">
 	<thead>
 		<tr>
 			<th>Name</th>
@@ -286,7 +284,8 @@ npmAlsoShowRepoName:
 {%- for result in packages %}
 	{%- if result.isArchived %}
 		<tr>
-			<td>
+			<td class="name-col">
+				<div class="name">
 				{%- if result.lastPublish %}
 				{% icon "fa:skull-crossbones" %}<code>{{ result.packageName }}</code>
 				{%- if npmGitHubMismatch %}
@@ -295,6 +294,7 @@ npmAlsoShowRepoName:
 				{%- else %}
 				{% icon "fa:skull-crossbones" %}<code>{{ result.nameWithOwner }}</code>
 				{%- endif %}
+				</div>
 			</td>
 			<td>
 				{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
@@ -310,3 +310,4 @@ npmAlsoShowRepoName:
 {%- endfor %}
 	</tbody>
 </table>
+</div>
