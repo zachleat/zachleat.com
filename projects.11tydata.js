@@ -39,7 +39,10 @@ for(let pkg of report.projects) {
 	totalCounts.publishes += pkg.publishCount || 0;
 	totalCounts.downloads += pkg.downloads || 0;
 	totalCounts.customElements += pkg.isWebComponent ? 1 : 0;
-	totalCounts.audits += pkg.openVulnerabilities || 0;
+
+	if(!pkg.isArchived && !pkg.npmDeprecated) {
+		totalCounts.audits += pkg.openVulnerabilities || 0;
+	}
 
 	if(pkg.publishCount > 0) {
 		totalCounts.packages++;
@@ -51,12 +54,15 @@ for(let pkg of report.projects) {
 	}
 	reposSeen.add(pkg.url);
 
-	totalCounts.prs.open += pkg.openPRs || 0;
 	totalCounts.prs.merged += pkg.mergedPRs || 0;
 	totalCounts.prs.closed += (pkg.mergedPRs || 0) + (pkg.closedPRs || 0);
-	totalCounts.issues.open += pkg.openIssues || 0;
 	totalCounts.issues.closed += pkg.closedIssues || 0;
 	totalCounts.stars += pkg.stars || 0;
+
+	if(!pkg.isArchived && !pkg.npmDeprecated) {
+		totalCounts.prs.open += pkg.openPRs || 0;
+		totalCounts.issues.open += pkg.openIssues || 0;
+	}
 }
 
 export const totals = totalCounts;
