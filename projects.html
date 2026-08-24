@@ -240,7 +240,7 @@ npmAlsoShowRepoName:
 					{% if result.publishCount > minimumPublishCountForSparkline and not result.isArchived %}<img src="{% sparklineDataUri sparklinesByPackage[ result.packageName ].monthlyReleases.counts, 120, 20, '#aaa', 2 %}" width="120" height="20" alt="Frequency sparkline for publishes of {{ result.packageName }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>{% endif %}
 					{% if result.publishCount > 0 %}<small class="nowrap">{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %}{% if not result.isArchived %} in <time-difference live mode="strip-suffix"><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference>{% endif %}</small>{% endif %}
 					</div>
-				{%- else -%}
+				{%- elsif not result.isArchived -%}
 					<time-difference live mode="strip-suffix" prefix="for "><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
 				{%- endif -%}
 			</td>
