@@ -19,7 +19,7 @@ npmAlsoShowRepoName:
 }
 #projects {
 	.archived {
-		opacity: .7;
+		opacity: .65;
 	}
 	.spark-img {
 		display: block;
@@ -49,7 +49,7 @@ npmAlsoShowRepoName:
 
 	.metadata {
 		display: flex;
-		justify-content: flex-end;
+		flex-wrap: wrap;
 		margin-inline-start: 2.125em;
 		gap: .25em;
 	}
@@ -86,6 +86,9 @@ npmAlsoShowRepoName:
 	margin-inline: .25em 0;
 	color: green;
 	font-size: 0.875em;
+}
+.archived .z-icon:has([href="#far-fa-circle-check"]) {
+	color: #777;
 }
 .health {
 	display: flex;
@@ -202,10 +205,10 @@ npmAlsoShowRepoName:
 					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
 				<small class="metadata">
-					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}{%- if result.isArchived %}Archived on {% endif %}GitHub</a>{% endif %}
+					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}{% if result.isArchived %}<del>{% endif %}GitHub{% if result.isArchived %}</del>{% endif %}</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
-					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}{%- if result.npmDeprecated %}Deprecated on {% endif %}npm</a>{% endif %}
+					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}{% if result.npmDeprecated %}<del>{% endif %}npm{% if result.npmDeprecated %}</del>{% endif %}</a>{% endif %}
 					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
 					<span style="flex-grow: 999"></span>
 					{% if result.stars > minimumStars %}<span class="stars{% if result.workspacePath %} is-workspace{% endif %}">{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
@@ -254,16 +257,12 @@ npmAlsoShowRepoName:
 				{% endif %}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
-				{%- if not result.isArchived %}
-					<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}
-					{%- if result.closedIssues > 0 %}<br><small>{{ result.closedIssues | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
-				{%- endif %}
+				{%- if not result.isArchived %}<small>{% icon "fas:bug" %}</small>{{ result.openIssues }}<br>{%- endif %}
+				{%- if result.closedIssues > 0 %}<small>{{ result.closedIssues | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
 			</td>
 			<td class="numeric{% if result.workspacePath %} is-workspace{% endif %}">
-				{%- if not result.isArchived %}
-					<small>{% icon "fas:code-merge" %}</small>{{ result.openPRs }}
-					{%- if result.mergedPRs > 0 %}<br><small>{{ result.mergedPRs | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
-				{%- endif %}
+				{%- if not result.isArchived %}<small>{% icon "fas:code-merge" %}</small>{{ result.openPRs }}<br>{%- endif %}
+				{%- if result.mergedPRs > 0 %}<small>{{ result.mergedPRs | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
 			</td>
 		</tr>
 {% endfor %}
