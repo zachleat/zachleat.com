@@ -300,7 +300,7 @@ npmAlsoShowRepoName:
 				{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
 			</td>
 			<td>
-				{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}npm</a>{% endif %}
+				{%- if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{%- if result.npmDeprecated %}{% icon "fa:skull-crossbones" %}{% endif %}{% icon "fab:npm" %}npm</a>{% endif %}
 			</td>
 			<td>
 				{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
