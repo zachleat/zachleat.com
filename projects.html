@@ -9,14 +9,6 @@ npmAlsoShowRepoName:
   - eleventy
 ---
 <style>
-.spark--primary {
-	max-width: 20em;
-
-	.spark-img {
-		display: block;
-		min-width: 10em;
-	}
-}
 #projects {
 	.archived {
 		opacity: .8;
@@ -149,7 +141,10 @@ npmAlsoShowRepoName:
 }
 </style>
 
+<script type="module" src="/static/health-score.js"></script>
+
 <ul>
+	<li><span class="health">Overall Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round: 1 }}</health-score></span></li>
 	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects <em>({{ totals.githubArchived }} archived)</em>
 		<ul>
 			<li>{{ totals.packages }} {% icon "fab:npm" %}package{% if totals.packages != 1 %}s{% endif %} <em>({{ totals.npmDeprecated }} deprecated)</em> and {{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %}</li>
@@ -185,15 +180,10 @@ npmAlsoShowRepoName:
 <h2>All Projects</h2>
 <p>Below is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects are published to {% icon "fab:npm" %}npm, marked as a template repository on {% icon "fab:github" %}GitHub, or manually opted-in.</p>
 
-<script type="module" src="/static/health-score.js"></script>
-
-<div class="fl fl-nowrap" style="gap: 1em 3em">
-	<div class="health">Overall Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round: 1 }}</health-score></div>
-	<div class="spark spark--primary">
-		<span>{{ sparklineAggregate.start | split: "-" | pop }}</span>
-		<div><img src="{% sparklineDataUri sparklineAggregate.counts, 600, 60, 'green', 2 %}" width="600" height="60" alt="Sparkline representing frequency of publishes across all packages" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
-		<span>{{ currentYear }}</span>
-	</div>
+<div class="spark">
+	<span>{{ sparklineAggregate.start | split: "-" | pop }}</span>
+	<div><img src="{% sparklineDataUri sparklineAggregate.counts, 600, 60, 'green', 2 %}" width="600" height="60" alt="Sparkline representing frequency of publishes across all packages" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
+	<span>{{ currentYear }}</span>
 </div>
 
 <p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>. {% endif %}Download counts shown are for the last year. Dependency counts shown are comprehensive counts of all dependencies used by the latest stable release of the package.</em></p>
