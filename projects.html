@@ -127,6 +127,7 @@ npmAlsoShowRepoName:
 		color: #666;
 	}
 	.description {
+		--ellipsis-lines: 2;
 		flex-grow: 1;
 		margin: 0;
 		font-size: .9285714285714em; /* 13px /14 */
@@ -158,7 +159,7 @@ npmAlsoShowRepoName:
 	<li>
 		<a href="{{ project.url }}" class="name">{% icon "fas:book-bookmark" %}{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
 		{%- if project.description %}
-		<p class="description">{{ project.description | escape }}</p>
+		<p class="description text-ellipsis-multi">{{ project.description | escape }}</p>
 		{%- endif %}
 	</li>
 {%- endfor %}
