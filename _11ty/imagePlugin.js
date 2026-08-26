@@ -242,14 +242,22 @@ export default function(eleventyConfig) {
 		line.setViewBoxHeight(height);
 		line.setViewBoxWidth(width);
 
-		// TODO handle lines at edge getting cut off for larger stroke widths
 		line.setStrokeWidth(strokeWidth);
 
 		if(color) {
 			line.setStroke(color || "#000000");
 		}
 
-		return line.dataUri;
+		// The library plots points across the full viewBox, so strokes at the
+		// minimum/maximum values (or the first/last points) are clipped in half by
+		// the SVG edges. Inset the drawing by expanding the viewBox to fit the stroke.
+		let inset = strokeWidth / 2;
+		let svg = line.outerHTML
+			.replace(`viewBox="0 0 ${width} ${height}"`, `viewBox="${-inset} ${-inset} ${width + strokeWidth} ${height + strokeWidth}"`)
+			// round joins/caps keep miter spikes from poking outside of the inset
+			.replace(/<path\b/g, `$& stroke-linecap="round" stroke-linejoin="round"`);
+
+		return `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
 	});
 };
 
