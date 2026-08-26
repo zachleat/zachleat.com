@@ -61,18 +61,6 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 							{% endfor %}
 						</div>
 					{%- endif %}
-
-					{%- if JS_ENABLED and not external_url %}
-					{%- if page.inputPath | isPost %}
-						{%- renderTemplate "webc" %}
-						<is-land on:media="(prefers-reduced-motion: no-preference)" class="top5">
-							<template data-island>
-								<toggle-button label="Hallucinate" id="ai-mode" value="false"></toggle-button>
-							</template>
-						</is-land>
-						{%- endrenderTemplate %}
-					{%- endif %}
-					{%- endif %}
 					</div>
 				</div>
 			</nav>
