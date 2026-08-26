@@ -97,9 +97,43 @@ npmAlsoShowRepoName:
 	font-weight: 700;
 	font-size: 1.125em; /* 18px /16 */
 }
-</style>
+#pinned {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(18.75em, 1fr));
+	gap: .75em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 2.5em;
 
-<p>This is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects are published to {% icon "fab:npm" %}npm, marked as a template repository on {% icon "fab:github" %}GitHub, or manually opted-in.</p>
+	> li {
+		display: flex;
+		flex-direction: column;
+		gap: .5em;
+		padding: 1em;
+		border: 1px solid #d8d8d8;
+		border-radius: var(--z-border-radius-2);
+		font-size: .875em; /* 14px /16 */
+	}
+	> li:has(a:hover, a:focus-visible) {
+		border-color: #999;
+	}
+
+	.name {
+		font-weight: 700;
+		overflow-wrap: anywhere;
+	}
+	.owner {
+		font-weight: 400;
+		color: #666;
+	}
+	.description {
+		flex-grow: 1;
+		margin: 0;
+		font-size: .9285714285714em; /* 13px /14 */
+		overflow-wrap: anywhere;
+	}
+}
+</style>
 
 <ul>
 	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects <em>({{ totals.githubArchived }} archived)</em>
@@ -113,6 +147,26 @@ npmAlsoShowRepoName:
 	<li>{% icon "far:circle-check" %} Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues</li>
 	<li>{% icon "far:circle-check" %} Merged {% icon "fas:code-merge" %}{{ totals.prs.merged | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
 </ul>
+
+{% if pinnedProjects.size > 0 %}
+<hr>
+
+<p>Here are the currently {% icon "fa:thumbtack" %}pinned projects on <a href="https://github.com/zachleat/">my GitHub profile</a>:</p>
+
+<ul id="pinned">
+{%- for project in pinnedProjects %}
+	<li>
+		<a href="{{ project.url }}" class="name">{% icon "fas:book-bookmark" %}{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
+		{%- if project.descriptionHtml %}
+		<p class="description">{{ project.descriptionHtml }}</p>
+		{%- endif %}
+	</li>
+{%- endfor %}
+</ul>
+{% endif %}
+
+<h2>All Projects</h2>
+<p>Below is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects are published to {% icon "fab:npm" %}npm, marked as a template repository on {% icon "fab:github" %}GitHub, or manually opted-in.</p>
 
 <script type="module" src="/static/health-score.js"></script>
 
