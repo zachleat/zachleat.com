@@ -241,7 +241,6 @@ export default function(eleventyConfig) {
 		let line = new Sparkline.default(values || []);
 		line.setViewBoxHeight(height);
 		line.setViewBoxWidth(width);
-
 		line.setStrokeWidth(strokeWidth);
 
 		if(color) {

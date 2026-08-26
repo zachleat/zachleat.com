@@ -345,18 +345,6 @@ export default async function(eleventyConfig) {
 		}).length;
 	});
 
-	//<img src="https://v1.sparkline.11ty.dev/400/100/1,4,10,3,2,40,5,6,20,40,5,1,10,100,5,90/red/" width="400" height="100">
-	eleventyConfig.addLiquidFilter("getYearlyPostCount", (posts, startYear = 2007) => {
-		let counts = {};
-		for(let year = startYear; year <= (new Date()).getFullYear(); year++) {
-			counts[year] = 0;
-		}
-		posts.forEach(function(post) {
-			counts[post.data.page.date.getFullYear()]++;
-		});
-		return Object.values(counts).join(",");
-	});
-
 	eleventyConfig.addLiquidFilter("getWeeklyPostCountForYear", (posts, year) => {
 		let counts = {};
 		for(let week = 0; week < 52; week++) {
