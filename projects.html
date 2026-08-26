@@ -151,14 +151,14 @@ npmAlsoShowRepoName:
 {% if pinnedProjects.size > 0 %}
 <hr>
 
-<p>Here are the currently {% icon "fa:thumbtack" %}pinned projects on <a href="https://github.com/zachleat/">my GitHub profile</a>:</p>
+<p>Here are the currently {% icon "fa:thumbtack" %}pinned projects on GitHub for <a href="https://github.com/zachleat/"><code>zachleat</code></a> and <a href="https://github.com/11ty/"><code>11ty</code></a>:</p>
 
 <ul id="pinned">
 {%- for project in pinnedProjects %}
 	<li>
 		<a href="{{ project.url }}" class="name">{% icon "fas:book-bookmark" %}{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
-		{%- if project.descriptionHtml %}
-		<p class="description">{{ project.descriptionHtml }}</p>
+		{%- if project.description %}
+		<p class="description">{{ project.description | escape }}</p>
 		{%- endif %}
 	</li>
 {%- endfor %}
