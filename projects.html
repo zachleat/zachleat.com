@@ -260,7 +260,7 @@ npmAlsoShowRepoName:
 		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{%- endcapture %}
 		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
 			<td class="neglect-col numeric">
-				<strong>{{ result.score | round: 1 }}%</strong>
+				{%- if not result.isArchived %}<strong>{{ result.score | round: 1 }}%</strong>{% endif %}
 			</td>
 			<td class="name-col">
 				<div class="name">
