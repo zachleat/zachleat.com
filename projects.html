@@ -106,6 +106,7 @@ npmAlsoShowRepoName:
 	margin: 0 0 2.5em;
 
 	> li {
+		--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
 		display: flex;
 		flex-direction: column;
 		gap: .5em;
@@ -118,9 +119,21 @@ npmAlsoShowRepoName:
 		border-color: #999;
 	}
 
+	.title {
+		display: flex;
+		align-items: start;
+		gap: .5em;
+	}
 	.name {
+		flex-grow: 1;
 		font-weight: 700;
 		overflow-wrap: anywhere;
+	}
+	.neglect {
+		padding: .125em .3125em;
+		border-radius: var(--z-border-radius-1);
+		background: hsl(var(--neglect-hue) 70% 90%);
+		white-space: nowrap;
 	}
 	.owner {
 		font-weight: 400;
@@ -156,8 +169,11 @@ npmAlsoShowRepoName:
 
 <ul id="pinned">
 {%- for project in pinnedProjects %}
-	<li>
-		<a href="{{ project.url }}" class="name">{% icon "fas:book-bookmark" %}{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
+	<li style="--neglect-score: {{ project.score }}">
+		<div class="title">
+			<a href="{{ project.url }}" class="name">{% icon "fas:book-bookmark" %}{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
+			<strong class="neglect" title="Neglect score">{{ project.score | round: 1 }}%</strong>
+		</div>
 		{%- if project.description %}
 		<p class="description text-ellipsis-multi">{{ project.description | escape }}</p>
 		{%- endif %}
@@ -172,7 +188,7 @@ npmAlsoShowRepoName:
 <script type="module" src="/static/health-score.js"></script>
 
 <div class="fl fl-nowrap" style="gap: 1em 3em">
-	<div class="health">Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round: 1 }}</health-score></div>
+	<div class="health">Overall Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round: 1 }}</health-score></div>
 	<div class="spark spark--primary">
 		<span>{{ sparklineAggregate.start | split: "-" | pop }}</span>
 		<div><img src="{% sparklineDataUri sparklineAggregate.counts, 600, 60, 'green', 2 %}" width="600" height="60" alt="Sparkline representing frequency of publishes across all packages" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
@@ -244,7 +260,7 @@ npmAlsoShowRepoName:
 		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{%- endcapture %}
 		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
 			<td class="neglect-col numeric">
-				<strong>{{ result.score | divided_by: 100 | round: 3 }}</strong>
+				<strong>{{ result.score | round: 1 }}%</strong>
 			</td>
 			<td class="name-col">
 				<div class="name">

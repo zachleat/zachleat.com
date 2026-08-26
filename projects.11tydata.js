@@ -95,5 +95,6 @@ export const pinnedProjects = Array.from(pinnedByRepo.values())
 			name,
 			url: pkg.url,
 			description: pkg.description || "",
+			score: pkg.score,
 		};
 	});
