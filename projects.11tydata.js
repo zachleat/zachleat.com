@@ -70,6 +70,16 @@ export const totals = totalCounts;
 export const generatedAt = report.generatedAt;
 export const healthRating = report.healthRating;
 
+// npm packages show the repository’s GitHub OpenGraph image rather than a screenshot of their
+// homepage—as do repos homepaged on zachleat.com, where a screenshot is just a picture of this site.
+function isOwnSite(url) {
+	try {
+		return new URL(url).hostname.endsWith("zachleat.com");
+	} catch(e) {
+		return false;
+	}
+}
+
 // Repositories pinned on GitHub, via the upstream report’s `isPinned`
 // The report is per-package, so a repo with workspaces is listed more than once—prefer the entry
 // for the repository itself over any of its workspace packages.
@@ -96,5 +106,7 @@ export const pinnedProjects = Array.from(pinnedByRepo.values())
 			url: pkg.url,
 			description: pkg.description || "",
 			score: pkg.score,
+			homepageUrl: pkg.homepageUrl || "",
+			showRepoImage: pkg.published || isOwnSite(pkg.homepageUrl),
 		};
 	});

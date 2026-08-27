@@ -98,13 +98,17 @@ npmAlsoShowRepoName:
 	margin: 0 0 2.5em;
 
 	> li {
+		position: relative;
+		--card-padding: .75em;
 		--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
 		display: flex;
 		flex-direction: column;
 		gap: .5em;
-		padding: .75em;
+		padding: var(--card-padding);
 		border: 1px solid #d8d8d8;
 		border-radius: var(--z-border-radius-2);
+		/* clips the flush image to the card’s rounded corners */
+		overflow: hidden;
 		font-size: 0.8125em; /* 13px /16 */
 	}
 	> li:has(a:hover, a:focus-visible) {
@@ -124,10 +128,23 @@ npmAlsoShowRepoName:
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+	.demo {
+		margin: calc(-1 * var(--card-padding)) calc(-1 * var(--card-padding)) .5em;
+	}
+	.demo img {
+		display: block;
+		width: 100%;
+		height: 9em;
+		object-fit: cover;
+	}
 	.neglect {
+		position: absolute;
+		top: .25em;
+		right: .25em;
 		padding: .125em .3125em;
 		border-radius: var(--z-border-radius-1);
 		background: hsl(var(--neglect-hue) 70% 90%);
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
 		white-space: nowrap;
 	}
 	.owner {
@@ -138,7 +155,7 @@ npmAlsoShowRepoName:
 		--ellipsis-lines: 2;
 		flex-grow: 1;
 		margin: 0;
-		font-size: .9285714285714em; /* 13px /14 */
+		font-size: 0.8571428571429em; /* 12px /14 */
 		overflow-wrap: anywhere;
 	}
 }
@@ -146,7 +163,7 @@ npmAlsoShowRepoName:
 
 <script type="module" src="/static/health-score.js"></script>
 
-<h2>Overview</h2>
+<h2 class="sr-only">Overview</h2>
 
 <h3><span class="health">Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round }}</health-score></span></h3>
 
@@ -178,9 +195,14 @@ npmAlsoShowRepoName:
 <ul id="pinned">
 {%- for project in pinnedProjects %}
 	<li style="--neglect-score: {{ project.score }}">
+		<strong class="neglect" title="Neglect score">{{ project.score | round: 1 }}%</strong>
+		{%- if project.homepageUrl %}
+		{%- capture projectUrl %}{% if project.showRepoImage %}{{ project.url }}{% else %}{{ project.homepageUrl }}{% endif %}{% endcapture -%}
+		{%- capture repoImageAlt %}GitHub OpenGraph image for {{ project.owner }}/{{ project.name }}{% endcapture -%}
+		<a href="{{ projectUrl }}" class="demo">{% if project.showRepoImage %}<img src="https://v1.opengraph.11ty.dev/{{ project.url | url_encode }}/small/" eleventy:ignore alt="{{ repoImageAlt }}">{% else %}{% screenshotImageHtmlFullUrl project.homepageUrl %}{% endif %}</a>
+		{%- endif %}
 		<div class="title">
-			<a href="{{ project.url }}" class="name">{% icon "fa:thumbtack" %}{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
-			<strong class="neglect" title="Neglect score">{{ project.score | round: 1 }}%</strong>
+			<a href="{{ projectUrl }}" class="name">{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
 		</div>
 		{%- if project.description %}
 		<p class="description text-ellipsis-multi">{{ project.description | escape }}</p>

@@ -17,11 +17,12 @@ class HealthScore extends HTMLElement {
 	gap: 0.375em; /* 6px /16 */
 }
 .circle {
+	font-family: system-ui, sans-serif;
 	aspect-ratio: 1/1;
 	min-width: 2.5ch;
-	padding: 0.125em;
+	padding: 0.2142857142857em; /* 3px /14 */
 	line-height: 1;
-	font-size: 1.125em; /* 18px /16 */
+	font-size: 0.875em; /* 14px /16 */
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
