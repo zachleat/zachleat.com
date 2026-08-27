@@ -18,8 +18,8 @@ class HealthScore extends HTMLElement {
 }
 .circle {
 	aspect-ratio: 1/1;
-	min-width: 3ch;
-	padding: 0.25em;
+	min-width: 2.5ch;
+	padding: 0.125em;
 	line-height: 1;
 	font-size: 1.125em; /* 18px /16 */
 	display: inline-flex;

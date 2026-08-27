@@ -87,7 +87,7 @@ npmAlsoShowRepoName:
 	gap: .5em;
 	align-items: center;
 	font-weight: 700;
-	font-size: 1.125em; /* 18px /16 */
+	min-height: 2.25em; /* 36px /16 */
 }
 #pinned {
 	display: grid;
@@ -144,7 +144,7 @@ npmAlsoShowRepoName:
 <script type="module" src="/static/health-score.js"></script>
 
 <ul>
-	<li><span class="health">Overall Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round: 1 }}</health-score></span></li>
+	<li><span class="health">Overall Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round }}</health-score></span></li>
 	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects <em>({{ totals.githubArchived }} archived)</em>
 		<ul>
 			<li>{{ totals.packages }} {% icon "fab:npm" %}package{% if totals.packages != 1 %}s{% endif %} <em>({{ totals.npmDeprecated }} deprecated)</em> and {{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %}</li>
