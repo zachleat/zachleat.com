@@ -83,7 +83,7 @@ npmAlsoShowRepoName:
 	color: #777;
 }
 .health {
-	display: flex;
+	display: inline-flex;
 	gap: .5em;
 	align-items: center;
 	font-weight: 700;
@@ -91,7 +91,7 @@ npmAlsoShowRepoName:
 }
 #pinned {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(18.75em, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
 	gap: .75em;
 	list-style: none;
 	padding: 0;
@@ -102,10 +102,10 @@ npmAlsoShowRepoName:
 		display: flex;
 		flex-direction: column;
 		gap: .5em;
-		padding: 1em;
+		padding: .75em;
 		border: 1px solid #d8d8d8;
 		border-radius: var(--z-border-radius-2);
-		font-size: .875em; /* 14px /16 */
+		font-size: 0.8125em; /* 13px /16 */
 	}
 	> li:has(a:hover, a:focus-visible) {
 		border-color: #999;
@@ -120,6 +120,9 @@ npmAlsoShowRepoName:
 		flex-grow: 1;
 		font-weight: 700;
 		overflow-wrap: anywhere;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 	.neglect {
 		padding: .125em .3125em;
@@ -143,8 +146,11 @@ npmAlsoShowRepoName:
 
 <script type="module" src="/static/health-score.js"></script>
 
+<h2>Overview</h2>
+
+<h3><span class="health">Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round }}</health-score></span></h3>
+
 <ul>
-	<li><span class="health">Overall Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round }}</health-score></span></li>
 	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects <em>({{ totals.githubArchived }} archived)</em>
 		<ul>
 			<li>{{ totals.packages }} {% icon "fab:npm" %}package{% if totals.packages != 1 %}s{% endif %} <em>({{ totals.npmDeprecated }} deprecated)</em> and {{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %}</li>
@@ -157,16 +163,23 @@ npmAlsoShowRepoName:
 	<li>{% icon "far:circle-check" %} Merged {% icon "fas:code-merge" %}{{ totals.prs.merged | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
 </ul>
 
-{% if pinnedProjects.size > 0 %}
-<hr>
+<h3>{% icon "fab:npm" %}Releases</h3>
+<div class="spark">
+	<span>{{ sparklineAggregate.start | split: "-" | pop }}</span>
+	<div><img src="{% sparklineDataUri sparklineAggregate.counts, 600, 60, 'green', 2 %}" width="600" height="60" alt="Sparkline representing frequency of publishes across all packages" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
+	<span>{{ currentYear }}</span>
+</div>
 
+<h2>Projects</h2>
+{% if pinnedProjects.size > 0 %}
+<h3>Pinned</h3>
 <p>Here are the currently {% icon "fa:thumbtack" %}pinned projects on GitHub for <a href="https://github.com/zachleat/"><code>zachleat</code></a> and <a href="https://github.com/11ty/"><code>11ty</code></a>:</p>
 
 <ul id="pinned">
 {%- for project in pinnedProjects %}
 	<li style="--neglect-score: {{ project.score }}">
 		<div class="title">
-			<a href="{{ project.url }}" class="name">{% icon "fas:book-bookmark" %}{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
+			<a href="{{ project.url }}" class="name">{% icon "fa:thumbtack" %}{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
 			<strong class="neglect" title="Neglect score">{{ project.score | round: 1 }}%</strong>
 		</div>
 		{%- if project.description %}
@@ -177,14 +190,8 @@ npmAlsoShowRepoName:
 </ul>
 {% endif %}
 
-<h2>All Projects</h2>
-<p>Below is a list of all of my open source projects sorted by a Neglect score (taking into account popularity via stars and downloads, issues and PRs open, and recent stable publish descending). Eligible projects are published to {% icon "fab:npm" %}npm, marked as a template repository on {% icon "fab:github" %}GitHub, or manually opted-in.</p>
-
-<div class="spark">
-	<span>{{ sparklineAggregate.start | split: "-" | pop }}</span>
-	<div><img src="{% sparklineDataUri sparklineAggregate.counts, 600, 60, 'green', 2 %}" width="600" height="60" alt="Sparkline representing frequency of publishes across all packages" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
-	<span>{{ currentYear }}</span>
-</div>
+<h3>All Projects</h3>
+<p>Here are all of my open source projects sorted by a Neglect. Neglect takes into account popularity via stars and downloads, issues and pull requests open, and recent stable publish descending. Eligible projects are manually selected, published to {% icon "fab:npm" %}npm, or marked as a [template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository) on {% icon "fab:github" %}GitHub.</p>
 
 <p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>. {% endif %}Download counts shown are for the last year. Dependency counts shown are comprehensive counts of all dependencies used by the latest stable release of the package.</em></p>
 
