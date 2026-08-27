@@ -191,7 +191,7 @@ npmAlsoShowRepoName:
 {% endif %}
 
 <h3>All Projects</h3>
-<p>Here are all of my open source projects sorted by a Neglect. Neglect takes into account popularity via stars and downloads, issues and pull requests open, and recent stable publish descending. Eligible projects are manually selected, published to {% icon "fab:npm" %}npm, or marked as a [template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository) on {% icon "fab:github" %}GitHub.</p>
+<p>Here are all of my open source projects sorted by a Neglect. Neglect takes into account popularity via stars and downloads, issues and pull requests open, and recent stable publish descending. Eligible projects are manually selected, published to {% icon "fab:npm" %}npm, or marked as a <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository">template repository</a> on {% icon "fab:github" %}GitHub.</p>
 
 <p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>. {% endif %}Download counts shown are for the last year. Dependency counts shown are comprehensive counts of all dependencies used by the latest stable release of the package.</em></p>
 
