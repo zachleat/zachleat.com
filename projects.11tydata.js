@@ -16,6 +16,11 @@ let sparklineAggregateJson = await Fetch(SERVICE_URL + "report-sparkline-aggrega
 export const sparklineAggregate = sparklineAggregateJson.monthlyReleases;
 
 export const packages = report.projects.sort((a, b) => {
+	// Archived projects sort to the bottom, whatever their score
+	if(a.isArchived !== b.isArchived) {
+		return a.isArchived ? 1 : -1;
+	}
+
 	return b.score - a.score;
 });
 
@@ -96,7 +101,6 @@ for(let pkg of report.projects) {
 }
 
 export const pinnedProjects = Array.from(pinnedByRepo.values())
-	.sort((a, b) => b.stars - a.stars)
 	.map(pkg => {
 		let [owner, name] = pkg.nameWithOwner.split("/");
 
@@ -109,4 +113,5 @@ export const pinnedProjects = Array.from(pinnedByRepo.values())
 			homepageUrl: pkg.homepageUrl || "",
 			showRepoImage: pkg.published || isOwnSite(pkg.homepageUrl),
 		};
-	});
+	})
+	.sort((a, b) => a.owner.localeCompare(b.owner) || a.name.localeCompare(b.name));
