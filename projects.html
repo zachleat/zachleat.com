@@ -28,9 +28,6 @@ npmAlsoShowRepoName:
 	width: 100%;
 
 	tfoot { background-color: #f2f2f2; }
-	tr {
-		--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
-	}
 	th {
 		white-space: nowrap;
 	}
@@ -89,6 +86,12 @@ npmAlsoShowRepoName:
 	font-weight: 700;
 	min-height: 2.25em; /* 36px /16 */
 }
+/* Anything carrying a --neglect-score derives its color from it */
+#projects tr,
+#pinned > li,
+#neglect-buckets > li {
+	--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
+}
 /* Neglect score pill, shared by the projects table and the pinned cards */
 .neglect {
 	display: inline-block;
@@ -96,6 +99,128 @@ npmAlsoShowRepoName:
 	border-radius: var(--z-border-radius-1);
 	background: hsl(var(--neglect-hue) 70% 90%);
 	white-space: nowrap;
+}
+/* Shared bar chart: a column per bucket, with its count riding on top of the bar */
+.bar-chart {
+	--chart-height: 7em;
+	--label-height: 2.75em;
+	--label-font-size: .7857142857143em; /* 11px /14 */
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+	gap: .125em;
+	margin: 0 0 2em;
+	padding: 0;
+	list-style: none;
+	font-size: .875em; /* 14px /16 */
+
+	> li {
+		position: relative;
+		display: grid;
+		/* the label row is a definite height, since rotation doesn’t reserve any */
+		grid-template-rows: var(--chart-height) var(--label-height);
+		justify-items: center;
+		gap: .25em;
+	}
+	/* count and bar sit together at the bottom, so the count rides on top of the bar */
+	.bucket-value {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		align-items: center;
+		width: 100%;
+		height: var(--chart-height);
+	}
+	.bucket-label,
+	.bucket-count {
+		white-space: nowrap;
+		color: #666;
+	}
+	/* labels turn on their side, so columns don’t have to fit them lying down */
+	.bucket-label {
+		align-self: center;
+		transform: rotate(-90deg);
+		font-size: var(--label-font-size);
+	}
+	@media (max-width: 37.4375em) { /* 599px /16 */
+		--label-font-size: .6428571428571em; /* 9px /14 */
+	}
+	.bucket-count {
+		font-size: .6428571428571em; /* 9px /14 */
+		font-variant-numeric: tabular-nums;
+	}
+	.bucket-bar {
+		flex-shrink: 0;
+		width: 100%;
+		/* the reserve keeps the tallest bar’s count inside the chart */
+		height: calc(var(--bar-fraction) * (var(--chart-height) - 1.25em));
+		/* empty buckets still draw a hairline on the baseline */
+		min-height: .5px;
+		border-radius: var(--z-border-radius-1) var(--z-border-radius-1) 0 0;
+		background: var(--bar-color);
+	}
+}
+/* out-specifics `.content-main ul:not(.posts)`, which pads lists on narrow viewports */
+.content-main ul.bar-chart {
+	padding: 0;
+}
+#releases-by-year {
+	--bar-color: hsl(145 70% 75%);
+	width: 100%;
+}
+#neglect-buckets {
+	--label-shift: 3px;
+	width: calc(100% - 1ch);
+
+	> li {
+		--bar-color: hsl(var(--neglect-hue) 70% 75%);
+	}
+	/* a tick at every bucket edge, with the last column closing off the axis at 100% */
+	> li::before,
+	> li:last-child::after {
+		content: "";
+		position: absolute;
+		top: var(--chart-height);
+		margin-block-start: 2px;
+		margin-inline-start: -1.5px;
+		width: 1px;
+		height: .25em;
+		background: #ccc;
+	}
+	> li::before {
+		left: 0;
+	}
+	> li:last-child::after {
+		left: 100%;
+	}
+	/* the Neglect axis is continuous, so its labels straddle the column boundaries */
+	.bucket-label {
+		justify-self: start;
+		transform: translate(-50%, calc(-1 * var(--label-shift))) rotate(-90deg);
+	}
+	/* in flow like every other label, so it centers in the label row the same way */
+	.bucket-label--end {
+		justify-self: end;
+		transform: translate(50%, calc(-1 * var(--label-shift))) rotate(-90deg);
+	}
+	@media (max-width: 37.4375em) { /* 599px /16 */
+		/* too narrow for 20 columns—stop the axis at 50%, well above the highest score */
+		> li:nth-child(n+11) {
+			display: none;
+		}
+		.bucket-label--end {
+			display: none;
+		}
+		> li:nth-child(10)::after {
+			content: "50%";
+			align-self: center;
+			justify-self: end;
+			transform: translate(50%, calc(-1 * var(--label-shift))) rotate(-90deg);
+			white-space: nowrap;
+			color: #666;
+			font-size: var(--label-font-size);
+		}
+	}
 }
 #pinned {
 	display: grid;
@@ -108,7 +233,6 @@ npmAlsoShowRepoName:
 	> li {
 		position: relative;
 		--card-padding: .75em;
-		--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
 		display: flex;
 		flex-direction: column;
 		gap: .5em;
@@ -185,11 +309,32 @@ npmAlsoShowRepoName:
 </ul>
 
 <h3>{% icon "fab:npm" %}Releases</h3>
-<div class="spark">
-	<span>{{ sparklineAggregate.start | split: "-" | pop }}</span>
-	<div><img src="{% sparklineDataUri sparklineAggregate.counts, 600, 60, 'green', 2 %}" width="600" height="60" alt="Sparkline representing frequency of publishes across all packages" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></div>
-	<span>{{ currentYear }}</span>
-</div>
+<ul id="releases-by-year" class="bar-chart">
+{%- for entry in releasesByYear %}
+	<li style="--bar-fraction: {{ entry.fraction }}">
+		<span class="bucket-value">
+			<span class="bucket-count">{{ entry.count }}</span>
+			<span class="bucket-bar" title="{{ entry.count }} release{% if entry.count != 1 %}s{% endif %} in {{ entry.year }}"></span>
+		</span>
+		<span class="bucket-label">{{ entry.year }}</span>
+	</li>
+{%- endfor %}
+</ul>
+
+<h3>{% icon "fas:chart-simple" %}Projects Neglected</h3>
+
+<ul id="neglect-buckets" class="bar-chart">
+{%- for bucket in neglectDistribution %}
+	<li style="--neglect-score: {{ bucket.start }}; --bar-fraction: {{ bucket.fraction }}">
+		<span class="bucket-value">
+			<span class="bucket-count">{{ bucket.count }}</span>
+			<span class="bucket-bar" title="{{ bucket.count }} project{% if bucket.count != 1 %}s{% endif %} at {{ bucket.start }}–{{ bucket.end }}% Neglect"></span>
+		</span>
+		{%- if bucket.showLabel %}<span class="bucket-label">{{ bucket.start }}%</span>{% endif %}
+		{%- if forloop.last %}<span class="bucket-label bucket-label--end">{{ bucket.end }}%</span>{% endif %}
+	</li>
+{%- endfor %}
+</ul>
 
 <h2>Projects</h2>
 {% if pinnedProjects.size > 0 %}
@@ -228,7 +373,7 @@ npmAlsoShowRepoName:
 		<span class="sr-only">Filter</span>
 		<select data-filter-key="scope">
 			<option value="">Show all projects</option>
-			<option value="11ty">Only Build Awesome (11ty) packages</option>
+			<option value="11ty">Only @awesome.me @11ty</option>
 			<option value="wc">Only 🚾 Web Components</option>
 		</select>
 	</label>

@@ -75,6 +75,65 @@ export const totals = totalCounts;
 export const generatedAt = report.generatedAt;
 export const healthRating = report.healthRating;
 
+// npm releases per year, folded up from the same monthly aggregate that feeds the sparkline
+function getReleasesByYear({ start, counts }) {
+	let [startYear, startMonth] = start.split("-").map(Number);
+	let byYear = new Map();
+
+	for(let index = 0; index < counts.length; index++) {
+		let year = startYear + Math.floor((startMonth - 1 + index) / 12);
+		byYear.set(year, (byYear.get(year) || 0) + counts[index]);
+	}
+
+	let busiest = Math.max(...byYear.values());
+
+	return Array.from(byYear, ([year, count]) => {
+		return { year, count, fraction: count / busiest };
+	});
+}
+
+export const releasesByYear = getReleasesByYear(sparklineAggregate);
+
+// Distribution of Neglect scores across the projects that still show one (archived projects are
+// excluded—the table leaves their Neglect cell blank).
+const NEGLECT_BUCKET_SIZE = 5;
+const NEGLECT_LABEL_INTERVAL = 10;
+const NEGLECT_MAX = 100;
+
+function getNeglectDistribution(projects) {
+	let scored = projects.filter(pkg => !pkg.isArchived && typeof pkg.score === "number");
+	if(scored.length === 0) {
+		return [];
+	}
+
+	// The axis always spans the full 0–100% range, however the scores actually cluster
+	let buckets = Array.from({ length: NEGLECT_MAX / NEGLECT_BUCKET_SIZE }, (entry, index) => {
+		let start = index * NEGLECT_BUCKET_SIZE;
+
+		return {
+			start,
+			end: start + NEGLECT_BUCKET_SIZE,
+			// Bars step every bucket, but the axis is only labeled every NEGLECT_LABEL_INTERVAL
+			showLabel: start % NEGLECT_LABEL_INTERVAL === 0,
+			count: 0,
+		};
+	});
+
+	for(let pkg of scored) {
+		buckets[Math.min(Math.floor(pkg.score / NEGLECT_BUCKET_SIZE), buckets.length - 1)].count++;
+	}
+
+	// Bars are sized against the busiest bucket, as a unitless fraction so CSS can do math with it
+	let busiest = Math.max(...buckets.map(bucket => bucket.count));
+	for(let bucket of buckets) {
+		bucket.fraction = bucket.count / busiest;
+	}
+
+	return buckets;
+}
+
+export const neglectDistribution = getNeglectDistribution(report.projects);
+
 // npm packages show the repository’s GitHub OpenGraph image rather than a screenshot of their
 // homepage—as do repos homepaged on zachleat.com, where a screenshot is just a picture of this site.
 function isOwnSite(url) {
