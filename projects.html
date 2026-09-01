@@ -39,8 +39,35 @@ npmAlsoShowRepoName:
 	.metadata {
 		display: flex;
 		flex-wrap: wrap;
+		align-items: center;
 		margin-inline-start: 2.125em;
 		gap: .25em;
+	}
+	/* the entries are unequal heights (avatars run taller than the Font Awesome
+	   icons), so each one centers its own icon against its own text—`vertical-align`
+	   is inert on flex items, so it can’t do this job here */
+	.metadata > * {
+		display: flex;
+		align-items: center;
+	}
+	/* the favicon has its own whitespace, so it needs to run bigger than
+	   the 1.3em Font Awesome icons to read at the same size */
+	.metadata .z-avatar {
+		width: 1.6em;
+		height: 1.6em;
+		max-height: 1.6em;
+	}
+	/* the Socket favicon is a saturated purple that would outshout the
+	   vulnerability count it sits under, so it runs grayscale */
+	.audit-socket {
+		display: inline-flex;
+		align-items: center;
+	}
+	.audit-socket .z-avatar {
+		width: 1.1em;
+		height: 1.1em;
+		max-height: 1.1em;
+		filter: grayscale(1);
 	}
 	.downloads,
 	.stars {
@@ -473,6 +500,7 @@ npmAlsoShowRepoName:
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
 					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}{% if result.npmDeprecated %}<del>{% endif %}npm{% if result.npmDeprecated %}</del>{% endif %}</a>{% endif %}
+					{% if result.lastPublish and result.packageName and not result.npmDeprecated and not result.isArchived %}<a href="https://npmx.dev/package/{{ result.packageName }}">{% indieAvatar "https://npmx.dev/" "z-avatar" %}npmx</a>{% endif %}
 					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
 					<span style="flex-grow: 999"></span>
 					{% if result.stars > minimumStars %}<span class="stars{% if result.workspacePath %} is-workspace{% endif %}">{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
@@ -516,6 +544,7 @@ npmAlsoShowRepoName:
 					{% if result.openVulnerabilities > 0 %}{% icon "fas:lock-open" %}{% endif -%}
 					{{ result.openVulnerabilities }}<br>
 					<small>{{ result.transitiveDependencies }} dep{% if result.transitiveDependencies != 1 %}s{% endif %}</small>
+					{%- if result.lastPublish and result.packageName and not result.npmDeprecated %}<br><a href="https://socket.dev/npm/package/{{ result.packageName }}" class="audit-socket"><small>{% indieAvatar "https://socket.dev/" "z-avatar" %}Socket</small></a>{% endif %}
 				{% else %}
 				-
 				{% endif %}
