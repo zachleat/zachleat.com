@@ -96,9 +96,9 @@ export const releasesByYear = getReleasesByYear(sparklineAggregate);
 
 // Distribution of Neglect scores across the projects that still show one (archived projects are
 // excluded—the table leaves their Neglect cell blank).
-const NEGLECT_BUCKET_SIZE = 5;
-const NEGLECT_LABEL_INTERVAL = 10;
-const NEGLECT_MAX = 100;
+const NEGLECT_BUCKET_SIZE = 2.5;
+const NEGLECT_LABEL_INTERVAL = 5;
+const NEGLECT_MAX = 50;
 
 function getNeglectDistribution(projects) {
 	let scored = projects.filter(pkg => !pkg.isArchived && typeof pkg.score === "number");
@@ -106,21 +106,33 @@ function getNeglectDistribution(projects) {
 		return [];
 	}
 
+	// A perfect score isn’t a range, so it sits in its own bucket ahead of the continuous axis
+	let buckets = [{ start: 0, end: 0, isZero: true, showLabel: true, count: 0 }];
+
 	// The axis always spans the full 0–100% range, however the scores actually cluster
-	let buckets = Array.from({ length: NEGLECT_MAX / NEGLECT_BUCKET_SIZE }, (entry, index) => {
+	for(let index = 0; index < NEGLECT_MAX / NEGLECT_BUCKET_SIZE; index++) {
 		let start = index * NEGLECT_BUCKET_SIZE;
 
-		return {
+		buckets.push({
 			start,
 			end: start + NEGLECT_BUCKET_SIZE,
-			// Bars step every bucket, but the axis is only labeled every NEGLECT_LABEL_INTERVAL
+			isZero: false,
+			// Bars step every bucket, but the axis is only labeled every NEGLECT_LABEL_INTERVAL.
+			// 0% is labeled twice on purpose: once for the exact-zero bar, once where the
+			// continuous axis begins.
 			showLabel: start % NEGLECT_LABEL_INTERVAL === 0,
 			count: 0,
-		};
-	});
+		});
+	}
 
 	for(let pkg of scored) {
-		buckets[Math.min(Math.floor(pkg.score / NEGLECT_BUCKET_SIZE), buckets.length - 1)].count++;
+		if(pkg.score <= 0) {
+			buckets[0].count++;
+			continue;
+		}
+
+		let index = Math.min(Math.floor(pkg.score / NEGLECT_BUCKET_SIZE), buckets.length - 2);
+		buckets[index + 1].count++;
 	}
 
 	// Bars are sized against the busiest bucket, as a unitless fraction so CSS can do math with it

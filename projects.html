@@ -105,9 +105,9 @@ npmAlsoShowRepoName:
 	--chart-height: 7em;
 	--label-height: 2.75em;
 	--label-font-size: .7857142857143em; /* 11px /14 */
-	display: grid;
-	grid-auto-flow: column;
-	grid-auto-columns: 1fr;
+	/* flex, not grid: a margin between columns comes out of the shared free space, so every
+	   bar stays the same width even where extra separation is added */
+	display: flex;
 	gap: .125em;
 	margin: 0 0 2em;
 	padding: 0;
@@ -115,6 +115,7 @@ npmAlsoShowRepoName:
 	font-size: .875em; /* 14px /16 */
 
 	> li {
+		flex: 1 1 0;
 		position: relative;
 		display: grid;
 		/* the label row is a definite height, since rotation doesn’t reserve any */
@@ -170,6 +171,19 @@ npmAlsoShowRepoName:
 }
 #neglect-buckets {
 	--label-shift: 3px;
+
+	/* the exact-zero bar isn’t part of the continuous axis, so it stands off from it: no
+	   boundary tick of its own, and a label centered under the bar rather than on an edge */
+	> li:first-child {
+		margin-inline-end: .5em;
+	}
+	> li:first-child::before {
+		content: none;
+	}
+	> li:first-child .bucket-label {
+		justify-self: center;
+		transform: translate(0, calc(-1 * var(--label-shift))) rotate(-90deg);
+	}
 	width: calc(100% - 1ch);
 
 	> li {
@@ -204,15 +218,15 @@ npmAlsoShowRepoName:
 		transform: translate(50%, calc(-1 * var(--label-shift))) rotate(-90deg);
 	}
 	@media (max-width: 37.4375em) { /* 599px /16 */
-		/* too narrow for 20 columns—stop the axis at 50%, well above the highest score */
-		> li:nth-child(n+11) {
+		/* too narrow for 20 columns—stop the axis at 40%, just above the highest score */
+		> li:nth-child(n+18) {
 			display: none;
 		}
 		.bucket-label--end {
 			display: none;
 		}
-		> li:nth-child(10)::after {
-			content: "50%";
+		> li:nth-child(17)::after {
+			content: "40%";
 			align-self: center;
 			justify-self: end;
 			transform: translate(50%, calc(-1 * var(--label-shift))) rotate(-90deg);
@@ -328,7 +342,7 @@ npmAlsoShowRepoName:
 	<li style="--neglect-score: {{ bucket.start }}; --bar-fraction: {{ bucket.fraction }}">
 		<span class="bucket-value">
 			<span class="bucket-count">{{ bucket.count }}</span>
-			<span class="bucket-bar" title="{{ bucket.count }} project{% if bucket.count != 1 %}s{% endif %} at {{ bucket.start }}–{{ bucket.end }}% Neglect"></span>
+			<span class="bucket-bar" title="{{ bucket.count }} project{% if bucket.count != 1 %}s{% endif %} at {% if bucket.isZero %}exactly 0%{% else %}{% if bucket.start == 0 %}&gt;{% endif %}{{ bucket.start }}–{{ bucket.end }}%{% endif %} Neglect"></span>
 		</span>
 		{%- if bucket.showLabel %}<span class="bucket-label">{{ bucket.start }}%</span>{% endif %}
 		{%- if forloop.last %}<span class="bucket-label bucket-label--end">{{ bucket.end }}%</span>{% endif %}
