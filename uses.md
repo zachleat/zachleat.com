@@ -4,15 +4,12 @@ layout: layouts/pagealign.liquid
 ---
 ## Site Colophon
 
-- This site ({{ collections.all | size }} pages) is built with [{% indieAvatar "https://www.11ty.dev/" %}Eleventy v{{ eleventy.version }}](https://www.11ty.dev/) using:
-	- [{% indieAvatar "https://sass-lang.com/" %}Sass](https://sass-lang.com/)
-	- [{% indieAvatar "https://liquidjs.com/" %}Liquid](https://liquidjs.com/)
-	- [WebC](https://www.11ty.dev/docs/languages/webc/)
+- This site ({{ collections.all | size }} pages) is built with [{% icon "fab:build-awesome" %}Build Awesome v{{ buildawesome.version }}](https://www.11ty.dev/) using [{% indieAvatar "https://liquidjs.com/" %}Liquid](https://liquidjs.com/) and [WebC](https://www.11ty.dev/docs/languages/webc/)
 - Icons from [{% icon "fab:font-awesome" %}Font Awesome](https://fontawesome.com/)
-- Analytics from [GoatCounter](https://www.goatcounter.com/) (for [popular posts](/web/best-of/))
+- [GoatCounter](https://www.goatcounter.com/) Analytics (for [popular posts](/web/best-of/)) from [{% indieAvatar "https://www.arp242.net/" %}Martin Tournoij](https://www.arp242.net/)
 - Search from [Pagefind](https://pagefind.app/) from [Liam Bigelow](https://github.com/bglw)
-- [`lite-youtube-embed`](https://github.com/paulirish/lite-youtube-embed) from [Paul Irish](https://www.paulirish.com/)
-- [<img src="/img/built-with-eleventy.gif" alt="Built with Eleventy, Red balloon floats away" loading="lazy" width="88" height="31" eleventy:ignore class="footer-badge mi-2">Animated 88×31 Badge](https://chrisburnell.com/note/eleventy-animated-88x31/) from Chris Burnell
+- [`lite-youtube-embed`](https://github.com/paulirish/lite-youtube-embed) from [{% indieAvatar "https://www.paulirish.com/" %}Paul Irish](https://www.paulirish.com/)
+- [<img src="/img/built-with-eleventy.gif" alt="Built with Eleventy, Red balloon floats away" loading="lazy" width="88" height="31" eleventy:ignore class="footer-badge mi-2">Animated 88×31 Badge](https://chrisburnell.com/note/eleventy-animated-88x31/) from [{% indieAvatar "https://chrisburnell.com/" %}Chris Burnell](https://chrisburnell.com/)
 
 ### Site History
 
