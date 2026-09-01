@@ -1,0 +1,26 @@
+.fact-block {
+	--fact-color: #999;
+	border-left: 4px solid;
+	border-color: var(--fact-color);
+	padding: 0 0 0 1em;
+	margin-bottom: 1em;
+}
+.fact-block .fact-block-hed {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 1em;
+	color: var(--fact-color);
+}
+.fact-block.fact-true {
+	--fact-color: #00882d;
+}
+.fact-block.fact-false {
+	--fact-color: #cb000f;
+}
+.fact-block.fact-misleading {
+	--fact-color: #c5a402;
+}
+.fact-block.fact-pass {
+	--fact-color: #999;
+}

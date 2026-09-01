@@ -1,6 +1,3 @@
-@use "mixins";
-@use "config";
-
 /* Printed Pages */
 .printed-page {
 	border: 1px solid #999;
@@ -17,7 +14,7 @@
 	background-color: #000;
 }
 .printed-page blockquote {
-	font-family: config.$monospaceFont;
+	font-family: var(--z-font-monospace);
 	font-style: normal;
 	margin: 0;
 	padding: 0;
@@ -31,7 +28,14 @@
 	font-variant-ligatures: no-common-ligatures;
 	font-feature-settings: 'liga' 0, 'clig' 0;
 
-	@include mixins.extraunhyphenate;
+	word-wrap: break-word;
+	-ms-word-break: normal;
+	word-break: normal;
+
+	/* Disable hyphenation */
+	-webkit-hyphens: manual;
+	-moz-hyphens: manual;
+	hyphens: manual;
 }
 
 .printed-page blockquote p {

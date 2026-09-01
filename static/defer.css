@@ -1,17 +1,18 @@
-@use "../node_modules/@zachleat/flex-luthor/flex-luthor.css";
-@use "../node_modules/@zachleat/flex-luthor/flex-luthor-separators.css";
+@import "../node_modules/@zachleat/flex-luthor/flex-luthor.css";
+@import "../node_modules/@zachleat/flex-luthor/flex-luthor-separators.css";
 
-@use "sass/simple-blockquotes";
-@use "sass/pagination";
-@use "sass/action-warnings";
-@use "sass/thirdparty";
-@use "sass/prism-base16-monokai.dark";
-@use "sass/compatibility-tables";
-@use "sass/styleguide";
-@use "sass/printed-page";
-@use "sass/disqus";
-@use "sass/webmention";
-@use "sass/opengraph-card";
+@import "css/_variables.css";
+@import "css/_simple-blockquotes.css";
+@import "css/_pagination.css";
+@import "css/_action-warnings.css";
+@import "css/_thirdparty.css";
+@import "css/_prism-base16-monokai.dark.css";
+@import "css/_compatibility-tables.css";
+@import "css/_styleguide.css";
+@import "css/_printed-page.css";
+@import "css/_disqus.css";
+@import "css/_webmention.css";
+@import "css/_opengraph-card.css";
 
 /* originalPostEmbed shortcode */
 browser-window {

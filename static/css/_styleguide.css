@@ -1,43 +1,41 @@
-@use "config";
-
 .font-foit,
 .font-foit *,
 .font-foit *:before,
 .font-foit *:after {
-	font-family: config.$fallbackSystemFont !important;
+	font-family: var(--z-font-fallback) !important;
 	color: transparent !important;
 }
 .font-fallback,
 .font-fallback *,
 .font-fallback *:before,
 .font-fallback *:after {
-	font-family: config.$fallbackSystemFont !important;
+	font-family: var(--z-font-fallback) !important;
 }
 .font-lato,
 .font-lato *,
 .font-lato *:before,
 .font-lato *:after {
-	font-family: Lato, config.$fallbackSystemFont !important;
+	font-family: Lato, var(--z-font-fallback) !important;
 }
 .font-latobold,
 .font-latobold *,
 .font-latobold *:before,
 .font-latobold *:after {
-	font-family: Lato, config.$fallbackSystemFont !important;
+	font-family: Lato, var(--z-font-fallback) !important;
 	font-weight: 700;
 }
 .font-latoitalic,
 .font-latoitalic *,
 .font-latoitalic *:before,
 .font-latoitalic *:after {
-	font-family: Lato, config.$fallbackSystemFont !important;
+	font-family: Lato, var(--z-font-fallback) !important;
 	font-style: italic;
 }
 .font-latobolditalic,
 .font-latobolditalic *,
 .font-latobolditalic *:before,
 .font-latobolditalic *:after {
-	font-family: Lato, config.$fallbackSystemFont !important;
+	font-family: Lato, var(--z-font-fallback) !important;
 	font-style: italic;
 	font-weight: 700;
 }
