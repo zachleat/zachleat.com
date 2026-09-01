@@ -92,6 +92,10 @@ npmAlsoShowRepoName:
 #neglect-buckets > li {
 	--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
 }
+:root {
+	/* a perfect score gets its own green, distinct from the pale gradient */
+	--neglect-zero-color: hsl(145 45% 52%);
+}
 /* Neglect score pill, shared by the projects table and the pinned cards */
 .neglect {
 	display: inline-block;
@@ -99,6 +103,9 @@ npmAlsoShowRepoName:
 	border-radius: var(--z-border-radius-1);
 	background: hsl(var(--neglect-hue) 70% 90%);
 	white-space: nowrap;
+}
+.neglect--zero {
+	background: var(--neglect-zero-color);
 }
 /* Shared bar chart: a column per bucket, with its count riding on top of the bar */
 .bar-chart {
@@ -166,7 +173,7 @@ npmAlsoShowRepoName:
 	padding: 0;
 }
 #releases-by-year {
-	--bar-color: hsl(145 70% 75%);
+	--bar-color: rgba(255, 0, 0, 0.6);
 	width: 100%;
 }
 #neglect-buckets {
@@ -176,6 +183,7 @@ npmAlsoShowRepoName:
 	   boundary tick of its own, and a label centered under the bar rather than on an edge */
 	> li:first-child {
 		margin-inline-end: .5em;
+		--bar-color: var(--neglect-zero-color);
 	}
 	> li:first-child::before {
 		content: none;
@@ -358,7 +366,7 @@ npmAlsoShowRepoName:
 <ul id="pinned">
 {%- for project in pinnedProjects %}
 	<li style="--neglect-score: {{ project.score }}">
-		<strong class="neglect" title="Neglect score">{{ project.score | round: 1 }}%</strong>
+		<strong class="neglect{% if project.score == 0 %} neglect--zero{% endif %}" title="Neglect score">{{ project.score | round: 1 }}%</strong>
 		{%- if project.homepageUrl %}
 		{%- capture projectUrl %}{% if project.showRepoImage %}{{ project.url }}{% else %}{{ project.homepageUrl }}{% endif %}{% endcapture -%}
 		{%- capture repoImageAlt %}GitHub OpenGraph image for {{ project.owner }}/{{ project.name }}{% endcapture -%}
@@ -445,7 +453,7 @@ npmAlsoShowRepoName:
 		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
 			<td class="rank-col numeric">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
 			<td class="numeric">
-				{%- if not result.isArchived %}<strong class="neglect">{{ result.score | round: 1 }}%</strong>{% endif %}
+				{%- if not result.isArchived %}<strong class="neglect{% if result.score == 0 %} neglect--zero{% endif %}">{{ result.score | round: 1 }}%</strong>{% endif %}
 			</td>
 			<td class="name-col">
 				<div class="name">
