@@ -91,8 +91,11 @@ pre + .livedemo {
 	border-bottom-right-radius: 0;
 }
 .livedemo-sm {
-	font-size: 0.7826086956522em; /* 18px /23 */
+	font-size: 0.7142857142857em; /* 15px /21 */
 	line-height: 165%;
+	max-width: 26em;
+	margin-left: auto;
+	margin-right: auto;
 }
 .livedemo + .caption {
 	margin-top: -1rem;
@@ -170,12 +173,6 @@ pre + .livedemo {
 .livedemo-evil:after {
 	bottom: -.7em;
 	top: auto;
-}
-.livedemo-sm {
-	font-size: 0.7142857142857em; /* 15px /21 */
-	max-width: 26em;
-	margin-left: auto;
-	margin-right: auto;
 }
 .livedemo-evil .emoji {
 	font-style: normal;

@@ -11,6 +11,8 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+	background-color: #fff;
+	color: #222;
 
 	/* Force scrollbar */
 	overflow-y: scroll;
@@ -20,10 +22,6 @@ html {
 		overflow-y: auto;
 		scrollbar-gutter: stable;
 	}
-}
-html {
-	background-color: #fff;
-	color: #222;
 }
 body {
 	padding: 0;

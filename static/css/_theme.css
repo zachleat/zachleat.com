@@ -519,13 +519,12 @@ h1, h2, h3, .hed-h1, .hed-h2, .hed-h3 {
 	font-weight: 900;
 	margin-top: 1.4em;
 	line-height: 1.4;
+	text-transform: uppercase;
 }
 h4, h5 {
 	margin-top: 1.4em;
-}
-h1, h2, h3,
-.hed-h1, .hed-h2, .hed-h3 {
-	text-transform: uppercase;
+	font-size: 1em;
+	margin-bottom: .5em;
 }
 .cased {
 	text-transform: none;
@@ -585,11 +584,6 @@ h3 {
 h3 + p {
 	margin-top: 0;
 }
-h4,
-h5 {
-	font-size: 1em;
-	margin-bottom: .5em;
-}
 @media (min-width: 61.25em) { /* 980px */
 	h1, h2, .hed-h1, .hed-h2 {
 		padding: 0;
@@ -604,6 +598,13 @@ h5 {
 	font-weight: 900;
 	margin: 0 0 .5em;
 	text-wrap: balance;
+
+	/* Hyphenation */
+	-ms-word-break: normal;
+	word-break: normal;
+	-webkit-hyphens: manual;
+	-moz-hyphens: manual;
+	hyphens: manual;
 }
 .primary-title code {
 	font-family: inherit;
@@ -623,16 +624,6 @@ h5 {
 	}
 }
 
-/* Hyphenation */
-.primary-title {
-	-ms-word-break: normal;
-	word-break: normal;
-
-	/* Disable hyphenation */
-	-webkit-hyphens: manual;
-	-moz-hyphens: manual;
-	hyphens: manual;
-}
 @media (max-width: 61.1875em) { /* 979px */
 	.primary-title-smalltitle {
 		-ms-word-break: break-all;
@@ -968,14 +959,12 @@ table-saw :is(th, td) {
 }
 .posts .description {
 	padding-left: 24px;
-}
-.posts img {
-	display: block;
-}
-.posts .description {
 	margin-top: .210526316em; /* 4px /19 */
 	color: #333;
 	font-style: italic;
+}
+.posts img {
+	display: block;
 }
 .project_img,
 .project_video {
@@ -1803,7 +1792,6 @@ select[data-filter-key] {
 /* This is for wider application of a few use cases. It’s better to use the indieAvatar shortcode for one-off instances */
 a[href].favicon:before,
 .favicon-optin a[href^="https://web.archive.org/"]:not(.favicon-optout):before,
-/* .favicon-optin a[href^="https://www.npmjs.com"]:not(.favicon-optout):before, */
 .favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before {
 	content: "";
 	display: inline-block;
@@ -1819,11 +1807,6 @@ a[href].favicon:before,
 .favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fgithub.com%2F/");
 }
-/*
-.favicon-optin a[href^="https://www.npmjs.com"]:not(.favicon-optout):before {
-	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.npmjs.com%2F/");
-}
-*/
 .favicon-optin a[href^="https://fediverse.zachleat.com"]:not(.favicon-optout):after,
 .favicon-optin a[href^="https://neighborhood.11ty.dev"]:not(.favicon-optout):after {
 	content: "";
@@ -1833,9 +1816,6 @@ a[href].favicon:before,
 	height: .6em;
 	margin: 0 .15em;
 	background-size: contain;
-}
-.favicon-optin a[href^="https://fediverse.zachleat.com"]:not(.favicon-optout):after,
-.favicon-optin a[href^="https://neighborhood.11ty.dev"]:not(.favicon-optout):after {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Ffosstodon.org%2F/");
 }
 
