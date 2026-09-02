@@ -424,6 +424,7 @@ npmAlsoShowRepoName:
 			<option value="">Show all projects</option>
 			<option value="11ty">Only @awesome.me @11ty</option>
 			<option value="wc">Only 🚾 Web Components</option>
+			<option value="audits">Only Security Audits</option>
 		</select>
 	</label>
 </form>
@@ -476,7 +477,7 @@ npmAlsoShowRepoName:
   <tbody>
 {% for result in packages %}
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
-		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{%- endcapture %}
+		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{%- endcapture %}
 		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
 			<td class="rank-col numeric">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
 			<td class="numeric">
