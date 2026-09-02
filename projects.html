@@ -2,6 +2,7 @@
 title: Is this still being maintained??
 layout: layouts/pagealign.liquid
 minimumPublishCountForSparkline: 6
+minimumDownloadMonthsForSparkline: 3
 minimumDownloads: 2500
 minimumStars: 200
 readableDateFormat: dd LLL yyyy
@@ -18,6 +19,39 @@ npmAlsoShowRepoName:
 		background-color: #f6f6f6;
 		border-radius: .25em;
 		padding: 0.375em 0;
+	}
+	.popularity .spark {
+		display: flex;
+		flex-direction: row;
+		gap: .15em;
+		margin-block-start: .25em;
+		/* not `stretch`: an img is a flex item like any other, and stretching one that carries
+		   an aspect ratio from its width/height attributes scales it up. The labels each
+		   override this to sit at the end of the axis they mark. */
+		align-items: center;
+		/* shrink to the sparkline so the labels have its edges to align to, then ride over
+		   with the right-aligned numbers */
+		width: fit-content;
+		margin-inline-start: auto;
+	}
+	.popularity .spark-img {
+		flex: none;
+		max-width: 5em;
+		/* the labels butt up against the plotted high and low, so the shared vertical padding
+		   would push them off the values they mark */
+		padding-block: 0;
+	}
+	.spark-axis--min {
+		align-self: end;
+	}
+	.spark-axis--max {
+		align-self: start;
+	}
+	.spark-axis {
+		font-size: .6153846153846em; /* 8px /13 */
+		line-height: 1;
+		color: #999;
+		font-variant-numeric: tabular-nums;
 	}
 	.age {
 		background-color: #f7f7f7;
@@ -79,12 +113,6 @@ npmAlsoShowRepoName:
 		max-height: 1.1em;
 		filter: grayscale(1);
 	}
-	/* the thumbtack rides ahead of the GitHub link, quieter than it and small enough
-	   not to widen the metadata row */
-	.pinned {
-		color: #777;
-		font-size: .75em;
-	}
 	.downloads,
 	.stars {
 		/* m => M */
@@ -105,7 +133,9 @@ npmAlsoShowRepoName:
 	}
 	.name-col {
 		min-width: 16em;
-		max-width: 25vw;
+		/* 25vw tracks the viewport, but the container stops growing at .layout-list’s 45em—past
+		   ~1300px the name column outruns the table and pushes it into a horizontal scroll */
+		max-width: min(25vw, 17.5em);
 	}
 	.name {
 		display: block;
@@ -362,6 +392,7 @@ npmAlsoShowRepoName:
       <th class="numeric">#</th>
       <th class="numeric">Neglect</th>
       <th class="name-col">{% icon "fas:box-open" %}Name</th>
+      <th class="numeric">Popularity</th>
       <th>Versions</th>
       <th class="numeric">{% icon "fas:lock-open" %}Audit</th>
       <th class="numeric">{% icon "fas:bug" %}Issues</th>
@@ -373,11 +404,13 @@ npmAlsoShowRepoName:
 			<th class="numeric"></th>
 			<th class="numeric"></th>
 			<th class="name-col">
-				<strong>{{ packages | size | renderNumber }} Projects Total</strong><br>
-				<small>
-					{% icon "fas:star" %}<span class="stars">{{ totals.stars | renderNumber }}</span>
-					{% icon "fas:download" %}<span class="downloads">{{ totals.downloads | renderNumber }}</span> (last year)
-				</small>
+				<strong>{{ packages | size | renderNumber }} Projects Total</strong>
+			</th>
+			<th class="numeric">
+				<div>
+					<small title="Last year">{% icon "fas:download" %}<span class="downloads">{{ totals.downloads | renderNumber }}</span></small><br>
+					<small>{% icon "fas:star" %}<span class="stars">{{ totals.stars | renderNumber }}</span></small>
+				</div>
 			</th>
 			<th>
 				<small>{{ totals.publishes | renderNumber }} version{% if totals.publishes != 1 %}s{% endif %}</small>
@@ -413,29 +446,51 @@ npmAlsoShowRepoName:
 			<td class="name-col">
 				<div class="name">
 					{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
+					{%- comment %} one icon leads the name: archived outranks pinned, and pinned stands
+					in for the package/repo icon the row would otherwise carry {% endcomment -%}
+					{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}
+					{%- elsif result.isPinned %}<span class="pinned" title="Pinned on GitHub">{% icon "fa:thumbtack" %}<span class="sr-only">Pinned on GitHub</span></span>
+					{%- elsif result.lastPublish %}{% icon "fas:box-open" %}
+					{%- else %}{% icon "far:window-maximize" %}{% endif %}
 					{%- if result.lastPublish %}
-						{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}{% else %}{% icon "fas:box-open" %}{% endif %}{% if result.isArchived %}<del>{% endif %}<code>{{ result.packageName }}</code>{% if result.isArchived %}</del>{% endif %}
+						{%- if result.isArchived %}<del>{% endif %}<code>{{ result.packageName }}</code>{% if result.isArchived %}</del>{% endif %}
 						{%- if npmGitHubMismatch %}
 							from {% icon "fab:github" %}{% if result.isArchived %}<del>{% endif %}<code>{{ result.nameWithOwner }}</code>{% if result.isArchived %}</del>{% endif %}
 						{%- endif %}
 					{%- else %}
-						{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}{% else %}{% icon "far:window-maximize" %}{% endif %}{% if result.isArchived %}<del>{% endif %}<code>{{ result.nameWithOwner }}</code>{% if result.isArchived %}</del>{% endif %}
+						{%- if result.isArchived %}<del>{% endif %}<code>{{ result.nameWithOwner }}</code>{% if result.isArchived %}</del>{% endif %}
 					{%- endif %}
 					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
 				{%- if result.description %}<p class="description text-ellipsis-multi">{{ result.description | escape }}</p>{% endif %}
 				<small class="metadata">
-					{% if result.isPinned %}<span class="pinned" title="Pinned on GitHub">{% icon "fa:thumbtack" %}<span class="sr-only">Pinned on GitHub</span></span>{% endif %}
 					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
 					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}{% if result.npmDeprecated %}<del>{% endif %}npm{% if result.npmDeprecated %}</del>{% endif %}</a>{% endif %}
 					{% if result.lastPublish and result.packageName and not result.npmDeprecated and not result.isArchived %}<a href="https://npmx.dev/package/{{ result.packageName }}">{% indieAvatar "https://npmx.dev/" "z-avatar" %}npmx</a>{% endif %}
 					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
-					<span style="flex-grow: 999"></span>
-					{% if result.stars > minimumStars %}<span class="stars{% if result.workspacePath %} is-workspace{% endif %}">{% icon "fas:star" %}{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
-					{% if result.downloads > minimumDownloads %}<span class="downloads">{% icon "fas:download" %}{{ result.downloads | renderNumber: "0a" }}</span>{% endif %}
 				</small>
+			</td>
+			<td class="numeric popularity">
+				{%- comment %} stars are repo-level, so a workspace package’s row repeats its repo’s
+				count—dimmed the way the other borrowed counts are {% endcomment -%}
+				{%- if result.downloads > minimumDownloads %}<span class="downloads"><small>{% icon "fas:download" %}</small>{{ result.downloads | renderNumber: "0a" }}</span>{% endif %}
+				{%- comment %} a package npm only started reporting on a few months ago has too few
+				points to read as a trend, so it shows the count alone {% endcomment -%}
+				{%- assign downloadsByMonth = sparklinesByPackage[ result.packageName ].monthlyDownloads %}
+				{%- assign downloadsRange = downloadsRangeByPackage[ result.packageName ] %}
+				{%- if result.downloads > minimumDownloads and downloadsByMonth.counts.size > minimumDownloadMonthsForSparkline %}
+				{%- capture sparkAlt %}Monthly downloads sparkline for {{ result.packageName }}, ranging {{ downloadsRange.min | renderNumber: "0a" }} to {{ downloadsRange.max | renderNumber: "0a" }}{% endcapture -%}
+				{%- comment %} the alt text carries the same range, so the visible labels are decoration {% endcomment -%}
+				<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ downloadsRange.min | renderNumber: "0a" }}</span>
+					<img src="{% sparklineDataUri downloadsByMonth.counts, 64, 16, '#aaa', 2 %}" width="64" height="16" alt="{{ sparkAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+					<span class="spark-axis spark-axis--max" aria-hidden="true">{{ downloadsRange.max | renderNumber: "0a" }}</span></span>
+				{%- endif %}
+				{%- comment %} plenty of rows clear one threshold but not the other, so the break only
+				comes out when there are two lines to separate {% endcomment -%}
+				{%- if result.downloads > minimumDownloads and result.stars > minimumStars %}<br>{% endif %}
+				{%- if result.stars > minimumStars %}<span class="stars{% if result.workspacePath %} is-workspace{% endif %}"><small>{% icon "fas:star" %}</small>{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
 			</td>
 			<td>
 				{% if not result.isArchived %}
