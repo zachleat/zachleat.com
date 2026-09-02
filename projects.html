@@ -36,6 +36,16 @@ npmAlsoShowRepoName:
 		color: #777;
 	}
 
+	/* lines up with the metadata row below it, clear of the icon that leads the name */
+	.description {
+		--ellipsis-lines: 2;
+		margin-block: .25em;
+		margin-inline: 2.125em 0;
+		color: #666;
+		font-size: .8125em; /* 13px /16 */
+		font-weight: 400;
+		overflow-wrap: anywhere;
+	}
 	.metadata {
 		display: flex;
 		flex-wrap: wrap;
@@ -68,6 +78,12 @@ npmAlsoShowRepoName:
 		height: 1.1em;
 		max-height: 1.1em;
 		filter: grayscale(1);
+	}
+	/* the thumbtack rides ahead of the GitHub link, quieter than it and small enough
+	   not to widen the metadata row */
+	.pinned {
+		color: #777;
+		font-size: .75em;
 	}
 	.downloads,
 	.stars {
@@ -115,7 +131,6 @@ npmAlsoShowRepoName:
 }
 /* Anything carrying a --neglect-score derives its color from it */
 #projects tr,
-#pinned > li,
 #neglect-buckets > li {
 	--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
 }
@@ -123,7 +138,7 @@ npmAlsoShowRepoName:
 	/* a perfect score gets its own green, distinct from the pale gradient */
 	--neglect-zero-color: hsl(145 45% 52%);
 }
-/* Neglect score pill, shared by the projects table and the pinned cards */
+/* Neglect score pill */
 .neglect {
 	display: inline-block;
 	padding: .125em .3125em;
@@ -271,71 +286,6 @@ npmAlsoShowRepoName:
 		}
 	}
 }
-#pinned {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
-	gap: .75em;
-	list-style: none;
-	padding: 0;
-	margin: 0 0 2.5em;
-
-	> li {
-		position: relative;
-		--card-padding: .75em;
-		display: flex;
-		flex-direction: column;
-		gap: .5em;
-		padding: var(--card-padding);
-		border: 1px solid #d8d8d8;
-		border-radius: var(--z-border-radius-2);
-		/* clips the flush image to the card’s rounded corners */
-		overflow: hidden;
-		font-size: 0.8125em; /* 13px /16 */
-	}
-	> li:has(a:hover, a:focus-visible) {
-		border-color: #999;
-	}
-
-	.title {
-		display: flex;
-		align-items: start;
-		gap: .5em;
-	}
-	.name {
-		flex-grow: 1;
-		font-weight: 700;
-		overflow-wrap: anywhere;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-	.demo {
-		margin: calc(-1 * var(--card-padding)) calc(-1 * var(--card-padding)) .5em;
-	}
-	.demo img {
-		display: block;
-		width: 100%;
-		height: 9em;
-		object-fit: cover;
-	}
-	.neglect {
-		position: absolute;
-		top: .25em;
-		right: .25em;
-		box-shadow: 0 1px 2px rgba(0,0,0,.3);
-	}
-	.owner {
-		font-weight: 400;
-		color: #666;
-	}
-	.description {
-		--ellipsis-lines: 2;
-		flex-grow: 1;
-		margin: 0;
-		font-size: 0.8571428571429em; /* 12px /14 */
-		overflow-wrap: anywhere;
-	}
-}
 </style>
 
 <script type="module" src="/static/health-score.js"></script>
@@ -386,31 +336,7 @@ npmAlsoShowRepoName:
 </ul>
 
 <h2>Projects</h2>
-{% if pinnedProjects.size > 0 %}
-<h3>Pinned</h3>
-<p>Here are the currently {% icon "fa:thumbtack" %}pinned projects on GitHub for <a href="https://github.com/zachleat/"><code>zachleat</code></a> and <a href="https://github.com/11ty/"><code>11ty</code></a>:</p>
 
-<ul id="pinned">
-{%- for project in pinnedProjects %}
-	<li style="--neglect-score: {{ project.score }}">
-		<strong class="neglect{% if project.score == 0 %} neglect--zero{% endif %}" title="Neglect score">{{ project.score | round: 1 }}%</strong>
-		{%- if project.homepageUrl %}
-		{%- capture projectUrl %}{% if project.showRepoImage %}{{ project.url }}{% else %}{{ project.homepageUrl }}{% endif %}{% endcapture -%}
-		{%- capture repoImageAlt %}GitHub OpenGraph image for {{ project.owner }}/{{ project.name }}{% endcapture -%}
-		<a href="{{ projectUrl }}" class="demo">{% if project.showRepoImage %}<img src="https://v1.opengraph.11ty.dev/{{ project.url | url_encode }}/small/" eleventy:ignore alt="{{ repoImageAlt }}">{% else %}{% screenshotImageHtmlFullUrl project.homepageUrl %}{% endif %}</a>
-		{%- endif %}
-		<div class="title">
-			<a href="{{ projectUrl }}" class="name">{% if project.owner != "zachleat" %}<span class="owner">{{ project.owner }}/</span>{% endif %}{{ project.name }}</a>
-		</div>
-		{%- if project.description %}
-		<p class="description text-ellipsis-multi">{{ project.description | escape }}</p>
-		{%- endif %}
-	</li>
-{%- endfor %}
-</ul>
-{% endif %}
-
-<h3>All Projects</h3>
 <p>Here are all of my open source projects sorted by a Neglect. Neglect takes into account popularity via stars and downloads, issues and pull requests open, and recent stable publish descending. Eligible projects are manually selected, published to {% icon "fab:npm" %}npm, or marked as a <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository">template repository</a> on {% icon "fab:github" %}GitHub.</p>
 
 <p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>. {% endif %}Download counts shown are for the last year. Dependency counts shown are comprehensive counts of all dependencies used by the latest stable release of the package.</em></p>
@@ -422,7 +348,8 @@ npmAlsoShowRepoName:
 		<span class="sr-only">Filter</span>
 		<select data-filter-key="scope">
 			<option value="">Show all projects</option>
-			<option value="11ty">Only @awesome.me @11ty</option>
+			<option value="pinned">Only 📍 Pinned on GitHub</option>
+			<option value="11ty">Only Awesome and 11ty</option>
 			<option value="wc">Only 🚾 Web Components</option>
 			<option value="audits">Only Security Audits</option>
 		</select>
@@ -477,7 +404,7 @@ npmAlsoShowRepoName:
   <tbody>
 {% for result in packages %}
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
-		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{%- endcapture %}
+		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{%- endcapture %}
 		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
 			<td class="rank-col numeric">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
 			<td class="numeric">
@@ -496,7 +423,9 @@ npmAlsoShowRepoName:
 					{%- endif %}
 					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
+				{%- if result.description %}<p class="description text-ellipsis-multi">{{ result.description | escape }}</p>{% endif %}
 				<small class="metadata">
+					{% if result.isPinned %}<span class="pinned" title="Pinned on GitHub">{% icon "fa:thumbtack" %}<span class="sr-only">Pinned on GitHub</span></span>{% endif %}
 					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
