@@ -36,7 +36,11 @@ npmAlsoShowRepoName:
 	}
 	.popularity .spark-img {
 		flex: none;
-		max-width: 5em;
+		/* sparkline-svg emits width="100%" height="100%", so the image carries a ratio but no
+		   intrinsic size. Firefox then sizes it as a flex item against the 300x150 default
+		   object size, which blows out this container’s fit-content width—hence definite ones. */
+		width: 64px;
+		height: 16px;
 		/* the labels butt up against the plotted high and low, so the shared vertical padding
 		   would push them off the values they mark */
 		padding-block: 0;
