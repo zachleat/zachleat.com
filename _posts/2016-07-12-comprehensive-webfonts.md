@@ -76,20 +76,20 @@ Throw a naked @font-face block on your page and hope for the best. This is the d
 
 * **[Demo: Unceremonious `@font-face`](/web-fonts/demos/unceremonious-font-face.html)**
 
-#### Pros
+### Pros
 
 * Very simple: add a CSS `@font-face` block with WOFF and WOFF2 formats (maybe even an OpenType format too, if you want better Android &lt; 4.4 support—Compare [WOFF](http://caniuse.com/#feat=woff) with [TTF/OTF](http://caniuse.com/#feat=ttf) on Can I Use).
 * Very future friendly: this is the default web font behavior. You’re in the web font mainstream here. Adding additional font formats is as simple as including another URL in your `@font-face` comma separated `src` attribute.
 * Good rendering performance in Internet Explorer and Edge: no FOIT, no hidden or invisible text. I fully support this by-design decision made my Microsoft.
 * Does not require modification of the fonts (through subsetting or otherwise). Very license friendly.
 
-#### Cons
+### Cons
 
 * Bad rendering performance everywhere else: Maximum three second FOIT in most modern browsers, switches to FOUT if load takes longer. While requests may finish earlier, we know how unreliable the network can be—three seconds is a long time for invisible unreadable content.
 * Not very robust, yet: Some WebKits have no maximum FOIT timeout (although WebKit has very recently fixed this and I believe it will be included with Safari version 10), which means web font requests may be a single point of failure for your content (if the request hangs, content will never display).
 * No easy way to group requests or repaints together. Each web font will incur a separate repaint/reflow step and its own FOIT/FOUT timeouts. This can create undesirable situations like the [Mitt Romney Web Font Problem](/web/mitt-romney-webfont-problem/).
 
-#### Verdict: Do not use.
+### Verdict: Do not use.
 
 ## <span id="font-display">font-display</span>
 
@@ -98,7 +98,7 @@ Add a new `font-display: swap` descriptor to your `@font-face` block to opt-in t
 * **[Demo: `font-display`](/web-fonts/demos/font-display.html)**: note browser support for this is very limited.
 * Read more: [`font-display` Specification](https://tabatkins.github.io/specs/css-font-display/)
 
-#### Pros
+### Pros
 
 * Very Simple: Only a single CSS descriptor added to your `@font-face` block.
 * Good rendering performance: if this approach had ubiquitous browser support, this would give us FOUT without any JavaScript. A CSS-only approach would be ideal.
@@ -106,14 +106,14 @@ Add a new `font-display: swap` descriptor to your `@font-face` block to opt-in t
 * Very robust: a FOUT approach will show your fallback text in supported browsers even if the web font request hangs. Even better—your web fonts are not dependent on a JavaScript polyfill—which means if the JavaScript fails, users are still eligible for the web fonts.
 * Does not require modification of the fonts (through subsetting or otherwise). Very license friendly.
 
-#### Cons
+### Cons
 
 * Only available on Chrome (version 60+ on Desktop and Android, see [Chrome Platform Status](https://www.chromestatus.com/feature/4799947908055040)). In progress and behind a flag on [Firefox Platform Status](https://platform-status.mozilla.org/#css-font-display) but not yet documented at all on [Edge Platform Status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/). Until support is ubiquitous across A-grade browsers, developers will need to pair this with a JavaScript approach.
 * In fact, pairing this with a JavaScript approach doesn’t really buy you all that much on an empty-cache load, given that the JavaScript FOUT approaches documented on this page usually require modification of your CSS to avoid using any web fonts prior to font loading classes added by JavaScript. When the two approaches are paired together and the JavaScript fails you won’t get web fonts even though `font-display` is a CSS-only approach. It’ll help for repeat view optimizations though.
 * Limited flexibility: No way to group requests or repaints. This isn’t as bad as it sounds—if you FOUT everything you’ll avoid the Mitt Romney Web Font problem but grouping can be useful for other reasons—we’ll go into that later.
 * ~Hosting: No control of this property on any known web font host. It’s not included in the Google Fonts CSS, for example. This will probably change when browser support improves.~ *Update: in May 2019 Google Fonts added the ability to set a `font-display` property, related blog post [can be read here](/web/google-fonts-display/).*
 
-#### Verdict: Definitely add it to your `@font-face` blocks, but by itself it’s not sufficient.
+### Verdict: Definitely add it to your `@font-face` blocks, but by itself it’s not sufficient.
 
 ## <span id="preload">Preload</span>
 
@@ -139,7 +139,7 @@ Keep in mind: The pros and cons for this approach are heavily dependent on the f
 * Flexibility: no way to group repaints/reflows.
 * You probably wouldn’t be able to use this with a third party host. You’d need to know at markup render the URL of the web font you’re requesting. Google Fonts, for example, generates these in the CSS request you make to their CDN.
 
-#### Verdict: Not sufficient by itself.
+### Verdict: Not sufficient by itself.
 
 ## <span id="abstain">Don’t use Web Fonts</span>
 
@@ -147,16 +147,16 @@ I won’t go into this approach too much because, well, it isn’t technically a
 
 * **[Demo: Don’t use Web Fonts](/web-fonts/demos/dont.html)**: yeah, I included this. The title says comprehensive, remember?
 
-#### Pros
+### Pros
 
 * Not sure it could be simpler: just use `font-family` without `@font-face`.
 * Near instant rendering performance: No worries about FOUT or FOIT.
 
-#### Cons
+### Cons
 
 * Limited availability. Very few system fonts are available cross platform. Check [Font Familiy Reunion](https://fontfamily.zachleat.dev) to see if a system font has acceptable browser support for your needs.
 
-#### Verdict: Sure, I guess, but I wouldn’t be excited about it.
+### Verdict: Sure, I guess, but I wouldn’t be excited about it.
 
 ## <span id="inline-data-uri">Inline Data URI</span>
 
@@ -166,20 +166,20 @@ There are typically two kinds of inlining covered by this method: in a blocking 
 * Read more: [Web Font Anti-Pattern: Data URIs](/web/web-font-data-uris/) _(the first half)_
 
 
-#### Pros
+### Pros
 
 * Seemingly great rendering performance: this approach has _no FOUT or FOIT_. This is a big deal.
 * Flexibility: Don’t need to worry about grouping repaints/reflows—this approach has no FOUT or FOIT.
 * Robustness: inlining puts all your eggs into your initial server request basket.
 
-#### Cons
+### Cons
 
 * A catch with rendering performance: while this approach doesn’t FOUT, it can significantly delay initial render time. On the other hand it will render “finished.” But keep in mind that even a single WOFF2 web font is probably going to be around 10KB—15KB and inlining just one as a Data URI will likely take you over the HTTP/1 recommendation of only having 14KB or less in the critical rendering path.
 * Browser support: Doesn’t take advantage of the comma separated format list in `@font-face` blocks: this approach only embeds one format type. Usually in the wild this has meant WOFF, so using this method forces you to choose between ubiquity (WOFF) and much narrower user agent support but smaller file sizes (WOFF2).
 * Bad scalability: Requests don’t happen in parallel. They load serially.
 * Self hosting: Required, of course.
 
-#### Verdict: Only use this method if you really despise FOUT—I wouldn’t recommend it.
+### Verdict: Only use this method if you really despise FOUT—I wouldn’t recommend it.
 
 ## <span id="async-data-uri">Asynchronous Data URI Stylesheet</span>
 
@@ -188,14 +188,14 @@ Use a tool like [`loadCSS`](https://github.com/filamentgroup/loadCSS/) to fetch 
 * **[Demo: Asynchronous Data URI Stylesheet](/web-fonts/demos/async-data-uri.html)**
 * Read more: [How we use web fonts responsibly, or, avoiding a @font-face-palm on the Filament Group Lab](https://www.filamentgroup.com/lab/font-loading.html)
 
-#### Pros
+### Pros
 
 * Rendering performance: _Mostly eliminates FOIT_ (see note in the Cons)
 * Flexibility: Easy to group requests into a single repaint (put multiple Data URIs in one stylesheet).
 * Ease: Does not require any additional CSS changes to use. This is a big benefit. However, implementation isn’t all candy and roses.
 * Robust: If the asynchronous request fails, fallback text continues to be shown.
 
-#### Cons
+### Cons
 
 * Rendering performance: Has a very noticeable, but short FOIT while the stylesheet and Data URIs are being parsed. It’s quite distracting. I see this method often enough that I can recognize the approach without looking into the source code.
 * Flexibility and Scalability: Grouped requests and repaints are coupled together. If you group multiple Data URIs together (which will cause loading to occur in serial and not in parallel), they will repaint together. With this method, you can’t load in parallel and group your repaints.
@@ -203,7 +203,7 @@ Use a tool like [`loadCSS`](https://github.com/filamentgroup/loadCSS/) to fetch 
 * Browser support: You can bypass the maintenance of the loader step and hard-code to WOFF2 or WOFF but this will either incur larger than necessary or potentially throwaway requests (the same drawback we talked about for Inline Data URIs).
 * Self Hosting: Required.
 
-#### Verdict: It’s OK but we can do better.
+### Verdict: It’s OK but we can do better.
 
 ## <span id="fout-class">FOUT with a Class</span>
 
