@@ -23,7 +23,7 @@ worth showing on its own—so plenty of projects still leave an empty Popularity
 row mode) the name cell takes the space instead {% endcomment -%}
 {%- assign cdnHitsTotal = reportData.cdnHitsTotalByPackage[ project.packageName ] %}
 {%- assign hasPopularity = false %}
-{%- if project.downloads > minimumDownloads or project.stars > minimumStars or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
+{%- if project.downloads > minimumDownloads or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
 
 {%- capture neglectFragment %}
 {%- if not project.isArchived %}<strong class="neglect{% if project.score == 0 %} neglect--zero{% endif %}">{{ project.score | round: 1 }}%{% icon "fas:skull" %}</strong>{% endif %}
@@ -48,6 +48,9 @@ row mode) the name cell takes the space instead {% endcomment -%}
 	{%- else %}
 		{%- if project.isArchived %}<del>{% endif %}<span class="reponame">{{ project.nameWithOwner | split: "/" | shift }}</span>{% if project.isArchived %}</del>{% endif %}
 	{%- endif %}
+	{%- if project.isArchived and project.npmDeprecated %} <em>(Archived, Deprecated)</em>
+	{%- elsif project.isArchived %} <em>(Archived)</em>
+	{%- elsif project.npmDeprecated %} <em>(Deprecated)</em>{% endif %}
 </div>
 {%- if project.description %}<p class="description text-ellipsis-multi">{{ project.description | escape }}</p>{% endif %}
 {%- assign projectPost = collections.postsByProject[ project.nameWithOwner ] | default: collections.postsByProject[ project.packageName ] %}
@@ -65,7 +68,7 @@ projects are past writing about, so they don’t count as a gap {% endcomment -%
 	{%- if project.homepageUrl contains "/docs/" %}{% assign linkFallback = "Docs" %}
 	{%- elsif project.homepageUrl contains "github.io" %}{% assign linkFallback = "Demo" %}{% endif %}
 	{% if project.homepageUrl and not project.workspacePath %}<a href="{{ project.homepageUrl }}">{% icon "fa:link" %}{{ rootHostname | default: linkFallback }}</a>{% endif %}
-	{% if project.url %}<a href="{{ project.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
+	{% if project.url %}<a href="{{ project.url }}">{% icon "fab:github" %}GitHub</a>{% if project.stars > minimumStars %}<span class="stars{% if project.workspacePath %} is-workspace{% endif %}"><small>{% icon "fas:star" %}</small>{{ project.stars | renderNumber: "0a" }}</span>{% endif %}{% endif %}
 	{% if project.isTemplate %}<em>(Template)</em>{% endif %}
 	{% if project.lastPublish and project.packageName %}<a href="https://www.npmjs.com/package/{{ project.packageName }}">{% icon "fab:npm" %}{% if project.npmDeprecated %}<del>{% endif %}npm{% if project.npmDeprecated %}</del>{% endif %}</a>{% endif %}
 	{% if project.lastPublish and project.packageName and not project.npmDeprecated and not project.isArchived %}<a href="https://npmx.dev/package/{{ project.packageName }}">{% indieAvatar "https://npmx.dev/" "z-avatar" %}npmx</a>{% endif %}
@@ -98,7 +101,6 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 	<img src="{% sparklineDataUri cdnHitsByMonth.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="{{ cdnSparkAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
 	<span class="spark-axis spark-axis--max" aria-hidden="true">{{ cdnHitsRange.max | renderNumber: "0a" }}</span></span>
 {%- endif %}
-{%- if project.stars > minimumStars %}<span class="stars{% if project.workspacePath %} is-workspace{% endif %}"><small>{% icon "fas:star" %}</small>{{ project.stars | renderNumber: "0a" }}</span>{% endif %}
 {%- endcapture %}
 
 {%- capture versionsFragment %}

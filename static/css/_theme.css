@@ -503,6 +503,13 @@ body {
 		padding: .125em;
 		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
+
+		.z-icon,
+		.z-avatar {
+			width: 1.2em;
+			height: 1.2em;
+			margin-inline: 0 .25em;
+		}
 	}
 	.about-description p {
 		font-size: 1.368421052632em; /* 26px /19 */
@@ -647,7 +654,7 @@ code {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 100%;
-	background-color: #e9e9e9;
+	background-color: rgba(0, 0, 0, .08);
 	padding: .2em .2em .1em;
 	margin: 0 .25em 0 .1em;
 	color: #444;
@@ -1447,7 +1454,7 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.spark-img {
 		display: block;
-		background-color: #f6f6f6;
+		background-color: rgba(0, 0, 0, .04);
 		border-radius: .25em;
 		flex: none;
 	}
@@ -1588,7 +1595,7 @@ a[href].tag-inline:not(.tag-borderless),
 		display: inline-block;
 		padding: .0625em .375em;
 		border-radius: 1em;
-		background: #eee;
+		background: rgba(0, 0, 0, .06);
 		color: #777;
 		font-size: .6875rem; /* 11px /16 */
 		font-weight: 700;
@@ -1653,6 +1660,10 @@ a[href].tag-inline:not(.tag-borderless),
 	padding: 1em;
 	margin-block-end: 1em;
 	font-size: .75em; /* 12px /16 */
+
+	&.archived {
+		background-color: #fff8c6;
+	}
 }
 /* the pill links to this project's row in the full rankings; the icon rides outside it */
 .project-card-neglect-link {
@@ -1678,7 +1689,7 @@ a[href].tag-inline:not(.tag-borderless),
 .project-card-top {
 	display: flex;
 	align-items: center;
-	gap: .5em;
+	gap: .25em;
 	flex-wrap: wrap;
 }
 /* the name’s icon+title and the Neglect pill after it share the top line; the description/
@@ -1710,8 +1721,9 @@ a[href].tag-inline:not(.tag-borderless),
 .project-card-stats {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1em;
-	margin: 1em 0 0;
+	gap: 1.5em;
+	margin: 0;
+	margin-block-start: .5em;
 	font-size: .875em;
 }
 .project-card-stats .stat {
