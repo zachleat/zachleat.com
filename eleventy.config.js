@@ -451,7 +451,7 @@ export default async function(eleventyConfig) {
 		if(mode === "screenshot") {
 			imageHtml = await screenshotImageHtmlFullUrl(url);
 		} else if(mode === "opengraph") {
-			imageHtml = opengraphImageHtml(url);
+			imageHtml = await opengraphImageHtml(url);
 		}
 
 		let theme = "dark";
