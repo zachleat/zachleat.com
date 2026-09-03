@@ -1,0 +1,22 @@
+/* Global custom properties */
+:root {
+	/* Fonts */
+	--z-font-monospace: Consolas, Monaco, monospace;
+	--z-font-fallback: system-ui, sans-serif;
+	--z-font-webfont: Lato, Numero, var(--z-font-fallback);
+
+	/* Colors */
+	--z-color-border-light: rgb(210, 222, 210);
+	--z-color-primary: #3c603c;
+	--z-color-text: #525252;
+	--z-color-link-active: #4caf50;
+}
+
+/*
+	Breakpoints are written out at each `@media` because custom properties are
+	not allowed in media queries. Keep these in sync when changing a breakpoint:
+
+	45em      — 720px
+	61.1875em — 979px, one column layout maximum
+	61.25em   — 980px, two column layout minimum
+*/

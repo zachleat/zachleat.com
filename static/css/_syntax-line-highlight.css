@@ -31,18 +31,3 @@ pre[class*="language-diff-"] {
 	display: block;
 	min-width: min-content;
 }
-
-/*
- * Dark theme
- */
-
-// .highlight-line-active {
-//   background-color: #444;
-//   background-color: hsla(0, 0%, 27%, .8);
-// }
-// .highlight-line-add {
-//   background-color: #45844b;
-// }
-// .highlight-line-remove {
-//   background-color: #902f2f;
-// }

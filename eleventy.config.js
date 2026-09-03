@@ -19,7 +19,7 @@ import siteData from "./_data/site.json" with { type: "json" };
 import pluginImage, { opengraphImageHtml, screenshotImageHtmlFullUrl, getFilteredImageColors } from "./_11ty/imagePlugin.js";
 
 import pluginSyntaxHighlight from "./_11ty/syntaxHighlightPlugin.js";
-import pluginSass from "./_11ty/sassPlugin.js";
+import pluginCss from "./_11ty/cssPlugin.js";
 import pluginImageAvatar, { getIndieAvatarUrl } from "./_11ty/imageAvatarPlugin.js";
 import pluginWebmentions from "./_11ty/webmentionsPlugin.js";
 import pluginAnalytics from "./_11ty/analyticsPlugin.js";
@@ -107,7 +107,7 @@ export default async function(eleventyConfig) {
 	});
 
 	/* PLUGINS */
-	eleventyConfig.addPlugin(pluginSass);
+	eleventyConfig.addPlugin(pluginCss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight);
 	eleventyConfig.addPlugin(pluginImage);
 	eleventyConfig.addPlugin(pluginImageAvatar);
@@ -138,7 +138,7 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(pluginWebmentions);
 
-	// TODO the `{% renderFile "./static/initial.scss" %}` call to scss is *expensive* and isn’t cached (but only on a full build)
+	// TODO the `{% renderFile "./static/initial.css" %}` call is *expensive* and isn’t cached (but only on a full build)
 	eleventyConfig.addPlugin(RenderPlugin, {
 		accessGlobalData: true,
 	});
@@ -164,7 +164,8 @@ export default async function(eleventyConfig) {
 			// CSS/JS
 			"static/fonts": "static/fonts",
 			"static/js": "static/js",
-			"static/*.{css,js}": "static/",
+			// static/*.css is bundled by pluginCss, not copied
+			"static/*.js": "static/",
 
 			// External modules
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `static/`,

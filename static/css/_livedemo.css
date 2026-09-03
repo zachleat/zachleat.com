@@ -1,6 +1,3 @@
-@use "mixins";
-@use "config";
-
 /* Live test cases */
 .livedemo {
 	--box-shadow-color: #add8e6;
@@ -18,7 +15,7 @@
 		margin-left: -.75rem;
 		margin-right: -.75rem;
 	}
-	@media (min-width: config.$twoColLayoutMinWidth) {
+	@media (min-width: 61.25em) { /* 980px */
 		padding: .875rem .875rem 1rem .875rem;
 		margin-left: -.875rem;
 		margin-right: -.875rem;
@@ -31,7 +28,7 @@
 	width: calc( 100% + 1rem );
 	max-width: none;
 
-	@media (min-width: config.$twoColLayoutMinWidth) {
+	@media (min-width: 61.25em) { /* 980px */
 		margin-left: calc( -.875rem );
 		width: calc( 100% + 1.75rem );
 	}
@@ -50,7 +47,8 @@ pre + .livedemo {
 	text-transform: uppercase;
 	background: #fff;
 	color: #8ac7db;
-	@include mixins.webfont;
+	font-family: var(--z-font-webfont);
+	font-weight: 400;
 }
 .livedemo-mixed:after {
 	text-transform: none;
@@ -93,8 +91,11 @@ pre + .livedemo {
 	border-bottom-right-radius: 0;
 }
 .livedemo-sm {
-	font-size: 0.7826086956522em; /* 18px /23 */
+	font-size: 0.7142857142857em; /* 15px /21 */
 	line-height: 165%;
+	max-width: 26em;
+	margin-left: auto;
+	margin-right: auto;
 }
 .livedemo + .caption {
 	margin-top: -1rem;
@@ -172,12 +173,6 @@ pre + .livedemo {
 .livedemo-evil:after {
 	bottom: -.7em;
 	top: auto;
-}
-.livedemo-sm {
-	font-size: 0.7142857142857em; /* 15px /21 */
-	max-width: 26em;
-	margin-left: auto;
-	margin-right: auto;
 }
 .livedemo-evil .emoji {
 	font-style: normal;

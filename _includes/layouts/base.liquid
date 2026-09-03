@@ -46,7 +46,7 @@
 {% if eleventy.env.runMode == "serve" %}
 		<link rel="stylesheet" href="/static/initial.css">
 {% else %}
-		<style>{% renderFile "./static/initial.scss" %}</style>
+		<style>{% renderFile "./static/initial.css" %}</style>
 {% endif %}
 		<style>{% getBundle 'css' %}</style><!-- WebC -->
 
