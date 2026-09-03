@@ -1534,6 +1534,8 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.post-link {
 		display: block;
+		margin-block: .25em;
+		margin-inline-start: 2.125em;
 		font-size: .8125em; /* 13px /16, matches the <small> this replaced */
 	}
 	/* --serve only, so it stands apart from the real post links it sits among */
@@ -1690,6 +1692,12 @@ a[href].tag-inline:not(.tag-borderless),
 	align-items: center;
 	gap: .25em;
 	flex-wrap: wrap;
+}
+/* .post-link keeps its margin-block/margin-inline-start in the projects table (below); a
+   standalone card wants it flush instead */
+.project-card .post-link {
+	margin-block: 0;
+	margin-inline-start: 0;
 }
 /* the name’s icon+title and the Neglect pill after it share the top line; the description/
    post-link/metadata come from the same fragment as the name, so `order` moves them past the
