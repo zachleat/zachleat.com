@@ -1494,6 +1494,15 @@ a[href].tag-inline:not(.tag-borderless),
 		display: block;
 		margin-block-start: .25em;
 	}
+	/* the version number and its relative date read as one stacked unit: blocked, the <small>
+	   gets a line box at its own size instead of riding the parent’s taller strut, and the
+	   tighter line-height closes the leftover gap under the version */
+	.version {
+		line-height: 1.2;
+	}
+	.version > small {
+		display: block;
+	}
 	.spark-axis {
 		font-size: .6153846153846em; /* 8px /13 */
 		line-height: 1;

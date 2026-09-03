@@ -118,7 +118,7 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 {%- endif -%}
 {% if not project.isArchived %}
 	{% if project.lastStablePublishVersion %}
-	<div class="m-2">
+	<div class="m-2 version">
 		<div class="nowrap">{{ project.lastStablePublishVersion }}</div>
 		{% if project.lastStablePublishVersion %}
 		<small>
@@ -128,7 +128,7 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 	</div>
 	{% endif %}
 	{% if project.prerelease and cardAsRow %}
-		<div class="m-2">
+		<div class="m-2 version">
 			<div class="nowrap"><em>{{ project.lastPublishVersion }}</em></div>
 			{% if project.lastPublishVersion %}
 			<small>
