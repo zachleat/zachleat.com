@@ -1,5 +1,6 @@
 ---
 title: Never write your own Date Parsing Library
+githubProjectName: 11ty/parse-date-strings
 tags:
   - eleventy
   - project
