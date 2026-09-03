@@ -42,6 +42,14 @@ del .z-avatar {
 	.hide-sm {
 		display: none !important;
 	}
+	/* Visually hidden but still readable by assistive tech (e.g. icon-only nav links) */
+	.a11y-only-sm {
+		position: absolute;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px, 1px, 1px, 1px);
+	}
 }
 @media( max-width: 39.9375em) { /* 639px */
 	.hide-md {
@@ -1513,6 +1521,13 @@ a[href].tag-inline:not(.tag-borderless),
 		margin-block: .25em;
 		margin-inline-start: 2.125em;
 	}
+	/* --serve only, so it stands apart from the real post links it sits among */
+	.post-link--missing {
+		color: #b25000;
+		border-inline-start: .25em solid currentColor;
+		padding-inline-start: .375em;
+		margin-inline-start: 1.5em;
+	}
 	.metadata {
 		display: flex;
 		flex-wrap: wrap;
@@ -1815,6 +1830,13 @@ a[href].tag-inline:not(.tag-borderless),
 .tags-rail-links :any-link .z-icon ~ .z-icon {
 	margin-inline: .5em 0;
 	font-size: 0.8125em;
+}
+/* Label is visually hidden here, so the icon stands alone at full size */
+@media (max-width: 31.1875em) { /* 499px /16 */
+	.tags-rail-links :any-link .z-icon ~ .z-icon {
+		margin-inline: 0;
+		font-size: inherit;
+	}
 }
 @media (min-width: 61.25em) { /* 980px */
 	.tags-rail-links {
