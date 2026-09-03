@@ -406,6 +406,21 @@ export default async function(eleventyConfig) {
 		return absoluteUrl.replace("https://www.zachleat.com", "");
 	});
 
+	// A homepage that’s just a root URL (a project’s own domain) reads better as the domain
+	// itself than as the word "Link"—a docs page or demo path stays "Link", since the domain
+	// alone wouldn’t identify which project it belongs to.
+	eleventyConfig.addFilter("rootUrlHostname", (url) => {
+		try {
+			let parsed = new URL(url);
+			if(parsed.pathname !== "/" && parsed.pathname !== "") {
+				return "";
+			}
+			return parsed.hostname.replace(/^www\./, "");
+		} catch(e) {
+			return "";
+		}
+	});
+
 	eleventyConfig.addFilter("nameToFlag", (countryName = "") => {
 		let flag = {
 			"germany": "🇩🇪",
@@ -555,13 +570,16 @@ export default async function(eleventyConfig) {
 
 	// Posts opt into a project with `githubProjectName: <owner/repo>` in their front matter,
 	// keyed here so the projects table can look one up by either name it knows a project by.
+	// A post covering more than one project comma-separates them: `zachleat/foo, zachleat/bar`.
 	// Newest first, so a project written about more than once links its latest post.
 	eleventyConfig.addCollection("postsByProject", function(collection) {
 		let byProject = {};
 		for(let post of getPosts(collection)) {
-			let project = post.data.githubProjectName;
-			if(project && !byProject[project]) {
-				byProject[project] = post;
+			let projects = (post.data.githubProjectName || "").split(",").map(name => name.trim()).filter(Boolean);
+			for(let project of projects) {
+				if(!byProject[project]) {
+					byProject[project] = post;
+				}
 			}
 		}
 		return byProject;

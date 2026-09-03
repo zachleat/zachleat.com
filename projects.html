@@ -133,6 +133,10 @@ eleventyImport:
 		/* m => M */
 		text-transform: uppercase;
 	}
+	.downloads--millions {
+		font-weight: 700;
+		font-size: 1.15em;
+	}
 	.is-workspace {
 		opacity: .4;
 	}
@@ -505,7 +509,8 @@ eleventyImport:
 				{%- assign projectPost = collections.postsByProject[ result.nameWithOwner ] | default: collections.postsByProject[ result.packageName ] %}
 				{%- if projectPost %}<small class="post-link"><a href="{{ projectPost.url }}" class="text-ellipsis">{% icon "fa:book" %}<em>{{ projectPost.data.title }}</em></a></small>{% endif %}
 				<small class="metadata">
-					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
+					{%- assign rootHostname = result.homepageUrl | rootUrlHostname %}
+					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}{{ rootHostname | default: "Link" }}</a>{% endif %}
 					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
@@ -517,7 +522,7 @@ eleventyImport:
 			<td class="numeric popularity">
 				{%- comment %} stars are repo-level, so a workspace package’s row repeats its repo’s
 				count—dimmed the way the other borrowed counts are {% endcomment -%}
-				{%- if result.downloads > minimumDownloads %}<span class="downloads"><small>{% icon "fas:download" %}</small>{{ result.downloads | renderNumber: "0a" }}</span>{% endif %}
+				{%- if result.downloads > minimumDownloads %}<span class="downloads{% if result.downloads >= 1000000 %} downloads--millions{% endif %}"><small>{% icon "fas:download" %}</small>{{ result.downloads | renderNumber: "0a" }}</span>{% endif %}
 				{%- comment %} a package npm only started reporting on a few months ago has too few
 				points to read as a trend, so it shows the count alone {% endcomment -%}
 				{%- assign downloadsByMonth = sparklinesByPackage[ result.packageName ].monthlyDownloads %}
