@@ -2,6 +2,7 @@
 title: Extract Colors from an Image for CSS Themes
 tags:
   - project
+githubProjectName: 11ty/image-color
 ---
 Working through the migration of Blog Awesome from WordPress to Eleventy, I encountered an interesting problem: each blog post was seeded with a featured image at the top, though the image did not cover the entirety of the header.
 

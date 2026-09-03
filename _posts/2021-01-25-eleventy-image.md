@@ -3,6 +3,7 @@ title: Don’t Shut Down Your Business! Instead Use Eleventy Image
 tags:
   - project
   - eleventy
+githubProjectName: 11ty/image
 ---
 _This talk was first delivered for Jamstack Toronto._
 

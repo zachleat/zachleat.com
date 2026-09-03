@@ -4,6 +4,7 @@ tags:
   - eleventy
   - project
   - highlight
+githubProjectName: 11ty/buildawesome
 ---
 
 <p>
@@ -36,7 +37,7 @@ _Linda is a web developer that does client work (get that money, Linda). Linda m
 | Static Site Generator | staticgen.com Rating | Templating Engine |
 | --- | --- | --- |
 | Jekyll | #1 | Liquid |
-| Hugo | #2 | Go Templates | 
+| Hugo | #2 | Go Templates |
 | Hexo | #3 | EJS, Pug |
 | Gatsby | #4 | React.js |
 

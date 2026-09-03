@@ -11,7 +11,7 @@ Browsing the World Wide Web this weekend on a fancy HDPi screen, I noticed the i
  * [Demo](http://zachleat.github.io/w3c-banners/)
  * [Code on GitHub](https://github.com/zachleat/w3c-banners/)
 
-<img src="/web/img/posts/w3c-banners/comparison.png" alt="A comparison of the current and newly recreated banner" style="max-height: 397px; float: left;">
+<img src="/web/img/posts/w3c-banners/comparison.png" alt="A comparison of the current and newly recreated banner">
 
 For really no reason whatsoever, I’ve generated a random status banner on each visit to one of my blog posts that can be seen in the top left corner of the viewport (above a 42em width).
 

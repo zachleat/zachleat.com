@@ -1,5 +1,6 @@
 ---
 title: The Infinity Hamburger Menu, now in Web Component form
+githubProjectName: zachleat/infinity-burger
 tags:
   - project
   - web-components

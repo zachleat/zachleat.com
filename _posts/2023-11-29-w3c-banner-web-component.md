@@ -1,6 +1,7 @@
 ---
 title: W3C Banner Web Component
 titleHtml: '&lt;w3c-banner&gt; Web Component'
+githubProjectName: zachleat/w3c-banners
 tags:
   - project
   - web-components
