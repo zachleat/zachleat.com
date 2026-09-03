@@ -53,13 +53,24 @@ row mode) the name cell takes the space instead {% endcomment -%}
 	{%- elsif project.npmDeprecated %} <em>(Deprecated)</em>{% endif %}
 </div>
 {%- if project.description %}<p class="description text-ellipsis-multi">{{ project.description | escape }}</p>{% endif %}
-{%- assign projectPost = collections.postsByProject[ project.nameWithOwner ] | default: collections.postsByProject[ project.packageName ] %}
-{%- comment %} skip the self-link when this card is rendered on the very post it points to {% endcomment -%}
-{%- if projectPost and projectPost.url != page.url %}<small class="post-link"><a href="{{ projectPost.url }}" class="text-ellipsis">{% icon "fa:book" %}<em>{{ projectPost.data.title }}</em></a></small>
+{%- assign nameWithOwnerPosts = collections.postsByProject[ project.nameWithOwner ] %}
+{%- assign packageNamePosts = collections.postsByProject[ project.packageName ] %}
+{%- assign isProjectCardException = projectCardExceptions contains project.packageName or projectCardExceptions contains project.nameWithOwner %}
+{%- comment %} a project can be claimed by any number of posts—every post keyed by its repo
+(nameWithOwner) or its package name, each set newest first—so link all of them, deduped (the
+same post object can appear in both sets), skipping the self-link when a card is rendered on the
+very post it points to. Nothing links when the project is in `projectCardExceptions` {% endcomment -%}
+{%- assign projectPosts = nameWithOwnerPosts | concat: packageNamePosts | uniq %}
+{%- if projectPosts.size > 0 and not isProjectCardException %}
+{%- for projectPost in projectPosts %}
+{%- if projectPost.url != page.url %}<div class="post-link"><a href="{{ projectPost.url }}" class="text-ellipsis">{% icon "fa:book" %}<em>{{ projectPost.data.title }}</em></a></div>{% endif %}
+{%- endfor %}
 {%- comment %} --serve only: flags a project in the table that no post has claimed with
 `githubProjectName`, so the gap is visible while writing rather than only in the data. Archived
-projects are past writing about, so they don’t count as a gap {% endcomment -%}
-{%- elsif cardAsRow and eleventy.env.runMode == "serve" and not project.isArchived %}<small class="post-link post-link--missing" title="No post has githubProjectName: {{ project.nameWithOwner }}">{% icon "fa:book" %}<em>No blog post</em></small>{% endif %}
+projects are past writing about, so they don’t count as a gap. A `projectCardExceptions` entry
+still shows the warning (it really has no post of its own) but says so, since a matching post
+does exist—it's just been excluded on purpose {% endcomment -%}
+{%- elsif cardAsRow and eleventy.env.runMode == "serve" and not project.isArchived %}<div class="post-link post-link--missing" title="No post has githubProjectName: {{ project.nameWithOwner }}">{% icon "fa:book" %}<em>No blog post{% if isProjectCardException %} (exception){% endif %}</em></div>{% endif %}
 <small class="metadata">
 	{%- assign rootHostname = project.homepageUrl | rootUrlHostname %}
 	{%- comment %} a /docs/ path is a project’s documentation, and a path on a github.io

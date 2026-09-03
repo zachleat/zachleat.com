@@ -72,6 +72,12 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addGlobalData("currentDate", () => new Date());
 	eleventyConfig.addGlobalData("blogBirthday", () => new Date(2007, 1, 20));
 
+	// Packages/repos (matched against a project's `packageName` or `nameWithOwner`) excluded from
+	// project↔post cross-linking: no post-link on their /projects/ table row, and no card of
+	// their own on a post's project-cards section—even when they share a `githubProjectName`
+	// with a project the post is really about (e.g. a workspace package not written up yet).
+	eleventyConfig.addGlobalData("projectCardExceptions", () => ["@11ty/client"]);
+
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if (data.draft) {
 			if(data.draft === "ignore") {
@@ -171,6 +177,7 @@ export default async function(eleventyConfig) {
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `static/`,
 			"node_modules/infinity-burger/infinity-burger.{css,js}": `static/`,
 			"node_modules/artificial-chart/artificial-chart.{css,js}": `static/`,
+			[resolveModule("speedlify-score")]: `static/speedlify-score.js`,
 			[resolveModule("speedlify2-score")]: `static/speedlify2-score.js`,
 			[resolveModule("@zachleat/details-utils")]: `static/details-utils.js`,
 			[resolveModule("@zachleat/table-saw")]: `static/table-saw.js`,
@@ -571,15 +578,13 @@ export default async function(eleventyConfig) {
 	// Posts opt into a project with `githubProjectName: <owner/repo>` in their front matter,
 	// keyed here so the projects table can look one up by either name it knows a project by.
 	// A post covering more than one project comma-separates them: `zachleat/foo, zachleat/bar`.
-	// Newest first, so a project written about more than once links its latest post.
+	// A project written about more than once keeps every post, newest first.
 	eleventyConfig.addCollection("postsByProject", function(collection) {
 		let byProject = {};
 		for(let post of getPosts(collection)) {
 			let projects = (post.data.githubProjectName || "").split(",").map(name => name.trim()).filter(Boolean);
 			for(let project of projects) {
-				if(!byProject[project]) {
-					byProject[project] = post;
-				}
+				(byProject[project] ??= []).push(post);
 			}
 		}
 		return byProject;

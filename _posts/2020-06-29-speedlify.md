@@ -19,7 +19,7 @@ Here are some of the ways I’ve used Lighthouse to help test my sites:
 
 Instantaneous measurement is a good first step. But how do we ensure that the site maintains good performance and best practices when deploys are happening every day? How do we keep the web site fast? The second step is continuous measurement. This is where Speedlify comes in. It’s an [{% twitterImageAvatar "eleven_ty" %}Eleventy](https://www.11ty.dev/)-generated web site published as an open source repository to help automate continuous performance measurements.
 
-<div class="primarylink"><a href="https://www.speedlify.dev/group/ssg/">Speedlify Demo, for Static Site Generator web sites</a> (link updated for speedlify2)</div>
+<div class="primarylink"><a href="https://www.speedlify.dev/ssg/">Speedlify Demo, for Static Site Generator web sites</a></div>
 
 ## Source Code
 

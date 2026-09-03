@@ -39,8 +39,10 @@ tmpl: page
 {%- if projectMatches %}
 {%- comment %} a workspace repo publishes more than one package, each with its own card {% endcomment -%}
 			{%- for project in projectMatches %}
+			{%- unless projectCardExceptions contains project.packageName or projectCardExceptions contains project.nameWithOwner %}
 			{%- assign cardAsRow = false -%}
 			{%- include "project-card.html" -%}
+			{%- endunless %}
 			{%- endfor %}
 {%- endif %}
 {%- endfor %}

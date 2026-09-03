@@ -5,6 +5,7 @@ eleventyComputed:
 tags:
   - project
   - eleventy
+githubProjectName: zachleat/speedlify-score
 ---
 Wow—this entire thing has been a journey. The idea for the Eleventy Leaderboards was originally borne out of some lighthearted fun poking at the [AMP Carousel in Google Search results](/web/performance-dashboard/).
 
@@ -17,7 +18,7 @@ Follow [{% twitterImageAvatar "speedlify" %}speedlify](https://twitter.com/speed
 ## What’s New
 
 * It’s using [Speedlify](/web/speedlify/)! That means full historical Lighthouse results and full Axe scans (some Axe violations don’t show in Lighthouse).
-* You can add `<speedlify-score>` to your web site to show your latest Eleventy Leaderboard rank and score! Here’s a live example of the leaderboard entry for zachleat.com _(updated for `speedlify2`)_: <div class="livedemo livedemo-mixed" data-demo-label="Example for zachleat.com"><script type="module" src="/static/speedlify2-score.js"></script><speedlify2-score speedlify-url="https://www.speedlify.dev/" url="https://www.zachleat.com/"></speedlify2-score></div>The Eleventy Leaderboards also provide the `<speedlify-score>` markup you need to integrate the component on your site. Just copy and paste: <img src="/web/img/posts/11ty-leaderboard-source.png" alt="Example of how to copy speedlify-score markup on the Eleventy Leaderboards"> Add or remove the `score`, `weight`, `rank`, `rank-change`, and `requests` attributes to your needs.
+* You can add `<speedlify-score>` to your web site to show your latest Eleventy Leaderboard rank and score! Here’s a live example of the leaderboard entry for zachleat.com: <div class="livedemo livedemo-mixed" data-demo-label="Example for zachleat.com"><script type="module" src="/static/speedlify-score.js"></script><speedlify-score speedlify-url="https://www.speedlify.dev/" url="https://www.zachleat.com/"></speedlify-score></div>The Eleventy Leaderboards also provide the `<speedlify-score>` markup you need to integrate the component on your site. Just copy and paste: <img src="/web/img/posts/11ty-leaderboard-source.png" alt="Example of how to copy speedlify-score markup on the Eleventy Leaderboards"> <del>Add or remove the `score`, `weight`, `rank`, `rank-change`, and `requests` attributes to your needs</del>.
 * Eleventy Author pages now show screenshots *and* Speedlify scores from the Leaderboard. e.g. [the {% twitterImageAvatar "zachleat" %}zachleat Eleventy Author page](https://www.11ty.dev/authors/zachleat/). A quick shout out to [{% twitterImageAvatar "smthdotuk" %}Sam Smith](https://www.11ty.dev/authors/smthdotuk/), who at time of writing had perfect scores on every one of the six sites listed on their Eleventy Author page.
 * As a bonus feature to Speedlify, we now show a warning on the results when redirects are impacting site performance. If someone forgot a trailing slash on their URL or a `www.`, I’ll usually fix those manually but sometimes they are legitimate parts of the experience (e.g. a redirect from `/` to `/en/` for internationalization).
 

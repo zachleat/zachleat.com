@@ -1534,8 +1534,7 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.post-link {
 		display: block;
-		margin-block: .25em;
-		margin-inline-start: 2.125em;
+		font-size: .8125em; /* 13px /16, matches the <small> this replaced */
 	}
 	/* --serve only, so it stands apart from the real post links it sits among */
 	.post-link--missing {
