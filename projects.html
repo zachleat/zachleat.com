@@ -329,6 +329,7 @@ npmAlsoShowRepoName:
 <h3><span class="health">Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round }}</health-score></span></h3>
 
 <ul>
+	<li>Skip right to the <a href="?scope=pinned">GitHub Pinned Projects</a> or read some of the <a href="/web/?category=project">{% icon "fa:book" %}{{ collections.project | size }} project blog posts</a>.</li>
 	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects <em>({{ totals.githubArchived }} archived)</em>
 		<ul>
 			<li>{{ totals.packages }} {% icon "fab:npm" %}package{% if totals.packages != 1 %}s{% endif %} <em>({{ totals.npmDeprecated }} deprecated)</em> and {{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %}</li>
