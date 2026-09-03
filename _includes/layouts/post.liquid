@@ -28,7 +28,10 @@ tmpl: page
 {%- for githubProject in githubProjects %}
 {%- assign githubProject = githubProject | strip %}
 {%- assign githubProjectData = neglectByProject[githubProject] %}
-			<span><a href="https://github.com/{{ githubProject }}">{% icon "fab:github" %}<code>{{ githubProject }}</code></a>{% if githubProjectData and githubProjectData.isArchived != true %} <a href="/projects/" title="See the full Neglect rankings"><strong class="neglect neglect-score{% if githubProjectData.score == 0 %} neglect--zero{% endif %}" style="--neglect-score: {{ githubProjectData.score }}">{{ githubProjectData.score | round: 1 }}%</strong></a>{% endif %}</span>
+{%- assign githubOwner = githubProject | split: "/" | first %}
+{%- assign githubRepo = githubProject | split: "/" | last %}
+{%- assign githubProjectRowId = githubProject | replace: "/", "--" %}
+			<span class="sub-project"><a href="https://github.com/{{ githubProject }}">{% icon "fab:github" %}<span class="project-owner">{{ githubOwner }}</span><code>{{ githubRepo }}</code></a>{% if githubProjectData and githubProjectData.isArchived != true %} <a href="/projects/#project-{{ githubProjectRowId }}" title="See the full Neglect rankings"><strong class="neglect neglect-score{% if githubProjectData.score == 0 %} neglect--zero{% endif %}" style="--neglect-score: {{ githubProjectData.score }}">{{ githubProjectData.score | round: 1 }}%</strong></a>{% endif %}</span>
 {%- endfor %}
 {%- endif %}
 {%- if JS_ENABLED %}

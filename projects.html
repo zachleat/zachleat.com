@@ -207,6 +207,15 @@ eleventyImport:
 .archived .z-icon:has([href="#far-fa-circle-check"]) {
 	color: #777;
 }
+/* Flags the row a deep link (e.g. from a post’s Neglect pill) landed on, then fades out */
+#projects tr:target {
+	animation: target-fade 2.5s ease-out;
+}
+@keyframes target-fade {
+	from {
+		background-color: #fff3b0;
+	}
+}
 .health {
 	display: inline-flex;
 	gap: .5em;
@@ -484,7 +493,7 @@ eleventyImport:
 		{%- assign cdnHitsTotal = cdnHitsTotalByPackage[ result.packageName ] %}
 		{%- assign hasPopularity = false %}
 		{%- if result.downloads > minimumDownloads or result.stars > minimumStars or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
-		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}" class="neglect-score{% if result.isArchived %} archived{% endif %}">
+		<tr{% if result.rowId %} id="{{ result.rowId }}"{% endif %} data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}" class="neglect-score{% if result.isArchived %} archived{% endif %}">
 			<td class="rank-col numeric">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
 			<td class="numeric">
 				{%- if not result.isArchived %}<strong class="neglect{% if result.score == 0 %} neglect--zero{% endif %}">{{ result.score | round: 1 }}%</strong>{% endif %}

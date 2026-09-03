@@ -1409,11 +1409,35 @@ a[href].tag-inline:not(.tag-borderless),
 	border-radius: var(--z-border-radius-1);
 	background: hsl(var(--neglect-hue) 70% 90%);
 	white-space: nowrap;
+	color: inherit;
 }
 .neglect--zero {
 	background: var(--neglect-zero-color);
 }
+/* The pill is its own atomic box (display: inline-block), so a wrapping link’s hover color would
+   otherwise fight the pale pill background—underline it instead and leave the color alone. */
+a:has(.neglect):is(:hover, :focus, :active) {
+	color: inherit;
+}
+a:has(.neglect):is(:hover, :focus) .neglect {
+	text-decoration: underline;
+}
 /* End Neglect score pill */
+
+/* A post’s own project link + Neglect pill, in the .sub row */
+.sub-project {
+	font-size: .875em;
+}
+.sub-project .project-owner {
+	display: inline-block;
+	vertical-align: text-bottom;
+	color: #666;
+	font-size: .7em;
+	margin-inline-end: .35em;
+	padding: .125em .3125em;
+	border-radius: var(--z-border-radius-1);
+	background: #eee;
+}
 
 .tag-inline {
 	font-size: .75rem;
