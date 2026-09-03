@@ -1639,6 +1639,8 @@ a[href].tag-inline:not(.tag-borderless),
 .project-card {
 	border: 1px solid rgba(0, 0, 0, .1);
 	border-radius: var(--z-border-radius-2);
+	background-color: #f3f3f3;
+	box-shadow: 0 0 0 .125em rgba(0, 0, 0, .06);
 	padding: 1em;
 	margin-block-end: 1em;
 	font-size: .75em; /* 12px /16 */
