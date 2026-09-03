@@ -1,6 +1,6 @@
 ---
 title: Let&#8217;s get parseIntimate.
-project_name: parseIntimate
+displayProjectName: parseIntimate
 description: A Valentine’s Day website to spend a little quality time with JavaScript and it’s quirky parseInt function. Don’t be afraid to get parseIntimate.
 categories:
   - project

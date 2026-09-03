@@ -1,5 +1,6 @@
 ---
 title: How to import() a JavaScript String
+githubProjectName: zachleat/import-module-string
 tags: project
 seo:
   openGraphBackgroundImage: /og/sources/bigolship.jpg

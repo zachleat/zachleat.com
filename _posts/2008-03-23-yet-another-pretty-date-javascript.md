@@ -1,5 +1,6 @@
 ---
 title: Yet Another Pretty Date JavaScript
+githubProjectName: zachleat/Humane-Dates
 description: JavaScript to show the relative difference between a time and now.
 categories:
   - project

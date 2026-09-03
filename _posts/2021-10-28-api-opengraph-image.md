@@ -1,5 +1,6 @@
 ---
 title: Recycling Open Graph Images for display on my Web Site
+githubProjectName: 11ty/api-opengraph-image
 tags:
   - project
   - eleventy

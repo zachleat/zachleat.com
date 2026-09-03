@@ -1,5 +1,6 @@
 ---
 title: browser-window Web Component
+githubProjectName: zachleat/browser-window
 titleHtml: '&lt;browser-window&gt; Web Component'
 tags:
   - project

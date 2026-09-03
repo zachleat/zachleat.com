@@ -1,5 +1,6 @@
 ---
 title: The Eleventy API Explorer
+githubProjectName: 11ty/api-explorer
 tags:
   - project
   - eleventy

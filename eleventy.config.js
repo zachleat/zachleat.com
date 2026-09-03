@@ -553,6 +553,20 @@ export default async function(eleventyConfig) {
 		}
 	});
 
+	// Posts opt into a project with `githubProjectName: <owner/repo>` in their front matter,
+	// keyed here so the projects table can look one up by either name it knows a project by.
+	// Newest first, so a project written about more than once links its latest post.
+	eleventyConfig.addCollection("postsByProject", function(collection) {
+		let byProject = {};
+		for(let post of getPosts(collection)) {
+			let project = post.data.githubProjectName;
+			if(project && !byProject[project]) {
+				byProject[project] = post;
+			}
+		}
+		return byProject;
+	});
+
 	// font-loading category mapped to collection
 	eleventyConfig.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {

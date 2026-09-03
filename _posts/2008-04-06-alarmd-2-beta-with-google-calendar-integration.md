@@ -1,6 +1,6 @@
 ---
 title: 'ALARMd 2 Beta, with Google Calendar Integration'
-project_name: ALARMd 2
+displayProjectName: ALARMd 2
 description: 'An online alarm clock that wakes you up to YouTube, Pandora, MP3 or other multimedia source. Featuring integration with Google Calendar.'
 categories:
   - project

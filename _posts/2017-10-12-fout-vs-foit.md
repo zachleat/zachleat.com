@@ -1,5 +1,6 @@
 ---
 title: 'FOIT vs. FOUT, a Side by Side Comparison'
+githubProjectName: zachleat/foitfout
 categories:
   - font-loading
 tags:

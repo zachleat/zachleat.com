@@ -13,16 +13,21 @@ export const sparklinesByPackage = sparklinesByPackageJson.packages;
 
 // A sparkline is unitless, so each one needs the range it was drawn against to be readable.
 // Liquid has no numeric min/max, hence deriving it here.
-export const downloadsRangeByPackage = Object.fromEntries(
-	Object.entries(sparklinesByPackageJson.packages).map(([packageName, entry]) => {
-		let counts = entry.monthlyDownloads?.counts || [];
+function getRangesBySeries(seriesName) {
+	return Object.fromEntries(
+		Object.entries(sparklinesByPackageJson.packages).map(([packageName, entry]) => {
+			let counts = entry[seriesName]?.counts || [];
 
-		return [packageName, counts.length ? {
-			min: Math.min(...counts),
-			max: Math.max(...counts),
-		} : null];
-	})
-);
+			return [packageName, counts.length ? {
+				min: Math.min(...counts),
+				max: Math.max(...counts),
+			} : null];
+		})
+	);
+}
+
+export const downloadsRangeByPackage = getRangesBySeries("monthlyDownloads");
+export const releasesRangeByPackage = getRangesBySeries("monthlyReleases");
 
 let sparklineAggregateJson = await Fetch(SERVICE_URL + "report-sparkline-aggregate.json", FETCH_OPTIONS);
 

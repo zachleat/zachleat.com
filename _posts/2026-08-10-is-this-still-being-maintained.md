@@ -1,5 +1,6 @@
 ---
 title: Am I neglecting my open source projects?
+githubProjectName: zachleat/is-this-still-being-maintained
 tags: project
 ---
 I have _a lot_ of open source projects (of varying sizes and shapes).

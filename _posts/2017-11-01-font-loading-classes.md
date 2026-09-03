@@ -1,5 +1,6 @@
 ---
 title: Managing Font Loading CSS Was Painful—Not Anymore
+githubProjectName: zachleat/postcss-foft-classes
 categories:
   - font-loading
 tags:

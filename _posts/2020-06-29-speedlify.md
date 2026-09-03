@@ -1,5 +1,6 @@
 ---
 title: Use Speedlify to Continuously Measure Site Performance
+githubProjectName: zachleat/speedlify
 tags:
   - project
 eleventyComputed:

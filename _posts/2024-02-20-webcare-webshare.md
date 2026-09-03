@@ -1,5 +1,6 @@
 ---
 title: webcare-webshare Web Component
+githubProjectName: zachleat/webcare-webshare
 titleHtml: '&lt;webcare-webshare&gt; Web Component'
 tags:
   - project

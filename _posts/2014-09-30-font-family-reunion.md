@@ -1,5 +1,6 @@
 ---
 title: A Font Family Reunion
+githubProjectName: zachleat/font-family-reunion
 categories:
   - project
   - font-loading

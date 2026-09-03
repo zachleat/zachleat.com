@@ -1,5 +1,6 @@
 ---
 title: 'Selecthor: A Better way to Learn and Demo CSS Selectors'
+githubProjectName: zachleat/selecthor
 tags:
   - project
 tweet: https://twitter.com/zachleat/status/855413012760588292

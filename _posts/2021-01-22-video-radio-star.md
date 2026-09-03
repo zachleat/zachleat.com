@@ -1,5 +1,6 @@
 ---
 title: video-radio-star Web Component
+githubProjectName: zachleat/video-radio-star
 titleHtml: '&lt;video-radio-star&gt; Web Component'
 tags:
   - project

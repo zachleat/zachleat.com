@@ -1,5 +1,6 @@
 ---
 title: Flex Luthor, a Little CSS Flexbox Layout Helper
+githubProjectName: zachleat/flex-luthor
 tags:
   - project
 ---

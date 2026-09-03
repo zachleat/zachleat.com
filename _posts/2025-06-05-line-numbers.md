@@ -1,5 +1,6 @@
 ---
 title: line-numbers Web Component
+githubProjectName: zachleat/line-numbers
 titleHtml: '&lt;line-numbers&gt; Web Component'
 tags:
   - project

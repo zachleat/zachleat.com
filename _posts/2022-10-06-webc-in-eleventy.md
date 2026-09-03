@@ -1,5 +1,6 @@
 ---
 title: Adding Components to Eleventy with WebC
+githubProjectName: 11ty/webc
 tags:
   - project
   - web-components

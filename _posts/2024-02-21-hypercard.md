@@ -1,5 +1,6 @@
 ---
 title: hypercard Web Component
+githubProjectName: zachleat/hypercard
 titleHtml: '&lt;hyper-card&gt; Web Component'
 tags:
   - project

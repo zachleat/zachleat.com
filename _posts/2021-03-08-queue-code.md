@@ -1,5 +1,6 @@
 ---
 title: Queue Code—“Live” Code without Errors
+githubProjectName: zachleat/queue-code
 tags:
   - project
   - eleventy

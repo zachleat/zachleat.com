@@ -1,6 +1,6 @@
 ---
 title: Wake up to YouTube on my Internet Alarm Clock
-project_name: ALARMd
+displayProjectName: ALARMd
 description: First iteration of the alarm clock that plays YouTube videos or other multimedia sources. Updated to ALARMd 2.
 tags:
   - highlight

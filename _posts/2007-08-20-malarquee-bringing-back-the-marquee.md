@@ -1,6 +1,6 @@
 ---
 title: 'maLArquee, Bringing Back the Marquee'
-project_name: maLArquee
+displayProjectName: maLArquee
 description: A strange project creating a marquee.
 tags:
   - project

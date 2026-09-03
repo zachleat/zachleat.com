@@ -1,5 +1,6 @@
 ---
 title: Unicode Range Interchange
+githubProjectName: zachleat/unicode-range-interchange
 tags:
   - project
   - font-loading

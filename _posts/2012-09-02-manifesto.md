@@ -1,6 +1,7 @@
 ---
 title: A Front End Engineer&#8217;s Manifesto
 description: Guidelines I use when looking at the big picture as a Front End Web Developer.
+githubProjectName: zachleat/f2em.com
 categories:
   - project
 tags:

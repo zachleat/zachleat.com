@@ -1,5 +1,6 @@
 ---
 title: resize-asaurus Web Component
+githubProjectName: zachleat/resizeasaurus
 titleHtml: '&lt;resize-asaurus&gt; Web Component'
 tags:
   - project

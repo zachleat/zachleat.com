@@ -1,5 +1,6 @@
 ---
 title: W3C Status Banners
+githubProjectName: zachleat/w3c-banners
 tags:
   - project
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Use esm-import-transformer for “isomorphic-ish” ECMAScript Modules"
+githubProjectName: zachleat/esm-import-transformer
 tags: project
 ---
 This is a small Node utility that uses [Acorn](https://github.com/acornjs/acorn) to change the location of `import` specifier locations.

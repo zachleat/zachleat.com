@@ -1,6 +1,6 @@
 ---
 title: Scare Your Visitors with this JavaScript Gravatar Plugin
-project_name: jQuery.gravatar
+displayProjectName: jQuery.gravatar
 description: Retrieve a gravatar image dynamically from any e-mail address.
 categories:
   - project

@@ -1,5 +1,6 @@
 ---
 title: Every Fire Needs a Sparkline
+githubProjectName: 11ty/api-sparkline
 tags:
   - project
   - eleventy

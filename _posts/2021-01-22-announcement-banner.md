@@ -1,5 +1,6 @@
 ---
 title: "announcement-banner Web Component"
+githubProjectName: zachleat/announcement-banner
 titleHtml: "&lt;announcement-banner&gt; Web Component"
 tags:
   - project

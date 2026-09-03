@@ -1,5 +1,6 @@
 ---
 title: "filter-container Web Component"
+githubProjectName: zachleat/filter-container
 titleHtml: "&lt;filter-container&gt; Web Component"
 tags:
   - project

@@ -18,38 +18,38 @@ npmAlsoShowRepoName:
 		display: block;
 		background-color: #f6f6f6;
 		border-radius: .25em;
-		padding: 0.375em 0;
-	}
-	.popularity .spark {
-		display: flex;
-		flex-direction: row;
-		gap: .15em;
-		margin-block-start: .25em;
-		/* not `stretch`: an img is a flex item like any other, and stretching one that carries
-		   an aspect ratio from its width/height attributes scales it up. The labels each
-		   override this to sit at the end of the axis they mark. */
-		align-items: center;
-		/* shrink to the sparkline so the labels have its edges to align to, then ride over
-		   with the right-aligned numbers */
-		width: fit-content;
-		margin-inline-start: auto;
-	}
-	.popularity .spark-img {
 		flex: none;
 		/* sparkline-svg emits width="100%" height="100%", so the image carries a ratio but no
 		   intrinsic size. Firefox then sizes it as a flex item against the 300x150 default
 		   object size, which blows out this container’s fit-content width—hence definite ones. */
 		width: 64px;
 		height: 16px;
-		/* the labels butt up against the plotted high and low, so the shared vertical padding
-		   would push them off the values they mark */
-		padding-block: 0;
 	}
-	.spark-axis--min {
-		align-self: end;
+	.spark {
+		display: flex;
+		gap: .15em;
+		margin-block-start: .25em;
+		/* not `stretch`: an img is a flex item like any other, and stretching one that carries
+		   an aspect ratio from its width/height attributes scales it up. The labels each
+		   override this to sit at the end of the axis they mark. */
+		align-items: center;
+		/* shrink to the sparkline so the labels have its edges to align to */
+		width: fit-content;
 	}
-	.spark-axis--max {
-		align-self: start;
+	.popularity .spark {
+		/* the only right-aligned column of the two, so it rides over with its numbers */
+		margin-inline-start: auto;
+	}
+	/* the releases series runs to 146 monthly points against the downloads’ 12, so it gets
+	   the room its column has to spare */
+	.age .spark-img {
+		width: 104px;
+	}
+	/* block, because margin-block is inert on an inline span—the cell’s text-align keeps it
+	   over to the right either way */
+	.spark + .stars {
+		display: block;
+		margin-block-start: .25em;
 	}
 	.spark-axis {
 		font-size: .6153846153846em; /* 8px /13 */
@@ -57,10 +57,11 @@ npmAlsoShowRepoName:
 		color: #999;
 		font-variant-numeric: tabular-nums;
 	}
-	.age {
-		background-color: #f7f7f7;
-		padding: .25em .3125em;
-		border-radius: .25em;
+	.spark-axis--min {
+		align-self: end;
+	}
+	.spark-axis--max {
+		align-self: start;
 	}
 
 	width: 100%;
@@ -83,6 +84,11 @@ npmAlsoShowRepoName:
 		font-size: .8125em; /* 13px /16 */
 		font-weight: 400;
 		overflow-wrap: anywhere;
+	}
+	.post-link {
+		display: block;
+		margin-block: .25em;
+		margin-inline-start: 2.125em;
 	}
 	.metadata {
 		display: flex;
@@ -141,11 +147,27 @@ npmAlsoShowRepoName:
 		   ~1300px the name column outruns the table and pushes it into a horizontal scroll */
 		max-width: min(25vw, 17.5em);
 	}
+	/* the emoji stands in for a .z-icon here, so it takes the same box—centered in it, since
+	   an emoji’s own advance width is up to the platform */
+	.wc-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 1.3em;
+		height: 1.3em;
+		margin: 0 .15em;
+		margin-inline-end: .3em;
+		vertical-align: text-bottom;
+	}
 	.name {
 		display: block;
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
+
+		.reponame {
+			padding-inline: 0.1875em; /* 3px /16 */
+		}
 	}
 }
 .z-icon:has([href="#far-fa-circle-check"]) {
@@ -329,7 +351,7 @@ npmAlsoShowRepoName:
 <h3><span class="health">Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round }}</health-score></span></h3>
 
 <ul>
-	<li>Skip right to the <a href="?scope=pinned">GitHub Pinned Projects</a> or read some of the <a href="/web/?category=project">{% icon "fa:book" %}{{ collections.project | size }} project blog posts</a>.</li>
+	<li>Skip to my <a href="?scope=pinned#projects">GitHub Pinned Projects</a> or read some of the <a href="/web/?category=project">{% icon "fa:book" %}{{ collections.project | size }} project blog posts</a>.</li>
 	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects <em>({{ totals.githubArchived }} archived)</em>
 		<ul>
 			<li>{{ totals.packages }} {% icon "fab:npm" %}package{% if totals.packages != 1 %}s{% endif %} <em>({{ totals.npmDeprecated }} deprecated)</em> and {{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %}</li>
@@ -386,6 +408,8 @@ npmAlsoShowRepoName:
 			<option value="pinned">Only 📍 Pinned on GitHub</option>
 			<option value="11ty">Only Awesome and 11ty</option>
 			<option value="wc">Only 🚾 Web Components</option>
+			<option value="npm">Only 📦 npm Packages</option>
+			<option value="template">Only GitHub Template Repos</option>
 			<option value="audits">Only Security Audits</option>
 		</select>
 	</label>
@@ -442,19 +466,25 @@ npmAlsoShowRepoName:
   <tbody>
 {% for result in packages %}
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
-		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{%- endcapture %}
+		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{%- endcapture %}
+		{%- comment %} both counts have a floor to clear, so plenty of rows would leave an empty
+		Popularity cell—the name takes the space instead {% endcomment -%}
+		{%- assign hasPopularity = false %}
+		{%- if result.downloads > minimumDownloads or result.stars > minimumStars %}{% assign hasPopularity = true %}{% endif %}
 		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
 			<td class="rank-col numeric">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
 			<td class="numeric">
 				{%- if not result.isArchived %}<strong class="neglect{% if result.score == 0 %} neglect--zero{% endif %}">{{ result.score | round: 1 }}%</strong>{% endif %}
 			</td>
-			<td class="name-col">
+			<td class="name-col"{% unless hasPopularity %} colspan="2"{% endunless %}>
 				<div class="name">
 					{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: result.packageName %}
-					{%- comment %} one icon leads the name: archived outranks pinned, and pinned stands
-					in for the package/repo icon the row would otherwise carry {% endcomment -%}
+					{%- comment %} one icon leads the name, most specific first: archived outranks pinned,
+					which outranks Web Component, and each stands in for the package/repo icon the row
+					would otherwise carry {% endcomment -%}
 					{%- if result.isArchived %}{% icon "fas:skull-crossbones" %}
 					{%- elsif result.isPinned %}<span class="pinned" title="Pinned on GitHub">{% icon "fa:thumbtack" %}<span class="sr-only">Pinned on GitHub</span></span>
+					{%- elsif result.isWebComponent %}<span class="wc-icon" title="Web Component">🚾<span class="sr-only">Web Component</span></span>
 					{%- elsif result.lastPublish %}{% icon "fas:box-open" %}
 					{%- else %}{% icon "far:window-maximize" %}{% endif %}
 					{%- if result.lastPublish %}
@@ -463,20 +493,22 @@ npmAlsoShowRepoName:
 							from {% icon "fab:github" %}{% if result.isArchived %}<del>{% endif %}<code>{{ result.nameWithOwner }}</code>{% if result.isArchived %}</del>{% endif %}
 						{%- endif %}
 					{%- else %}
-						{%- if result.isArchived %}<del>{% endif %}<code>{{ result.nameWithOwner }}</code>{% if result.isArchived %}</del>{% endif %}
+						{%- if result.isArchived %}<del>{% endif %}<span class="reponame">{{ result.nameWithOwner | split: "/" | shift }}</span>{% if result.isArchived %}</del>{% endif %}
 					{%- endif %}
-					{%- if result.isWebComponent %}🚾<span class="sr-only">Web Component</span>{% endif %}
 				</div>
 				{%- if result.description %}<p class="description text-ellipsis-multi">{{ result.description | escape }}</p>{% endif %}
+				{%- assign projectPost = collections.postsByProject[ result.nameWithOwner ] | default: collections.postsByProject[ result.packageName ] %}
+				{%- if projectPost %}<small class="post-link"><a href="{{ projectPost.url }}" class="text-ellipsis">{% icon "fa:book" %}<em>{{ projectPost.data.title }}</em></a></small>{% endif %}
 				<small class="metadata">
+					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
 					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
 					{% if result.lastPublish and result.packageName %}<a href="https://www.npmjs.com/package/{{ result.packageName }}">{% icon "fab:npm" %}{% if result.npmDeprecated %}<del>{% endif %}npm{% if result.npmDeprecated %}</del>{% endif %}</a>{% endif %}
 					{% if result.lastPublish and result.packageName and not result.npmDeprecated and not result.isArchived %}<a href="https://npmx.dev/package/{{ result.packageName }}">{% indieAvatar "https://npmx.dev/" "z-avatar" %}npmx</a>{% endif %}
-					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}Link</a>{% endif %}
 				</small>
 			</td>
+			{%- if hasPopularity %}
 			<td class="numeric popularity">
 				{%- comment %} stars are repo-level, so a workspace package’s row repeats its repo’s
 				count—dimmed the way the other borrowed counts are {% endcomment -%}
@@ -489,15 +521,27 @@ npmAlsoShowRepoName:
 				{%- capture sparkAlt %}Monthly downloads sparkline for {{ result.packageName }}, ranging {{ downloadsRange.min | renderNumber: "0a" }} to {{ downloadsRange.max | renderNumber: "0a" }}{% endcapture -%}
 				{%- comment %} the alt text carries the same range, so the visible labels are decoration {% endcomment -%}
 				<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ downloadsRange.min | renderNumber: "0a" }}</span>
-					<img src="{% sparklineDataUri downloadsByMonth.counts, 64, 16, '#aaa', 2 %}" width="64" height="16" alt="{{ sparkAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+					<img src="{% sparklineDataUri downloadsByMonth.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="{{ sparkAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
 					<span class="spark-axis spark-axis--max" aria-hidden="true">{{ downloadsRange.max | renderNumber: "0a" }}</span></span>
 				{%- endif %}
-				{%- comment %} plenty of rows clear one threshold but not the other, so the break only
-				comes out when there are two lines to separate {% endcomment -%}
-				{%- if result.downloads > minimumDownloads and result.stars > minimumStars %}<br>{% endif %}
 				{%- if result.stars > minimumStars %}<span class="stars{% if result.workspacePath %} is-workspace{% endif %}"><small>{% icon "fas:star" %}</small>{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
 			</td>
+			{%- endif %}
 			<td>
+				{%- if result.firstPublish -%}
+					<div class="age">
+					{%- assign releasesRange = releasesRangeByPackage[ result.packageName ] %}
+					{%- if result.publishCount > minimumPublishCountForSparkline and not result.isArchived %}
+					{%- capture releasesAlt %}Monthly publishes sparkline for {{ result.packageName }}, ranging {{ releasesRange.min | renderNumber: "0a" }} to {{ releasesRange.max | renderNumber: "0a" }}{% endcapture -%}
+					<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ releasesRange.min | renderNumber: "0a" }}</span>
+						<img src="{% sparklineDataUri sparklinesByPackage[ result.packageName ].monthlyReleases.counts, 104, 16, '#aaa', 1 %}" width="104" height="16" alt="{{ releasesAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+						<span class="spark-axis spark-axis--max" aria-hidden="true">{{ releasesRange.max | renderNumber: "0a" }}</span></span>
+					{%- endif %}
+					{% if result.publishCount > 0 %}<small class="nowrap">{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %}{% if not result.isArchived %} in <time-difference live mode="strip-suffix"><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference>{% endif %}</small>{% endif %}
+					</div>
+				{%- elsif not result.isArchived -%}
+					<time-difference live mode="strip-suffix" prefix="for "><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
+				{%- endif -%}
 				{% if not result.isArchived %}
 					{% if result.lastStablePublishVersion %}
 					<div class="m-2">
@@ -520,14 +564,6 @@ npmAlsoShowRepoName:
 						</div>
 					{% endif %}
 				{% endif %}
-				{%- if result.firstPublish -%}
-					<div class="age">
-					{% if result.publishCount > minimumPublishCountForSparkline and not result.isArchived %}<img src="{% sparklineDataUri sparklinesByPackage[ result.packageName ].monthlyReleases.counts, 120, 20, '#aaa', 2 %}" width="120" height="20" alt="Frequency sparkline for publishes of {{ result.packageName }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>{% endif %}
-					{% if result.publishCount > 0 %}<small class="nowrap">{{ result.publishCount | renderNumber: "0a" }} version{% if result.publishCount != 1 %}s{% endif %}{% if not result.isArchived %} in <time-difference live mode="strip-suffix"><time datetime="{{ result.firstPublish }}" title="{{ result.firstPublish }}">{{ result.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference>{% endif %}</small>{% endif %}
-					</div>
-				{%- elsif not result.isArchived -%}
-					<time-difference live mode="strip-suffix" prefix="for "><time datetime="{{ result.repoCreatedAt }}" title="{{ result.repoCreatedAt }}">{{ result.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
-				{%- endif -%}
 			</td>
 			<td class="numeric">
 				{% if result.openVulnerabilities != null and not result.isArchived %}

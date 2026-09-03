@@ -1,5 +1,6 @@
 ---
 title: "seven-minute-tabs Web Component"
+githubProjectName: zachleat/seven-minute-tabs
 titleHtml: "&lt;seven-minute-tabs&gt; Web Component"
 tags:
   - project

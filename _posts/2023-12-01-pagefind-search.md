@@ -1,5 +1,6 @@
 ---
 title: pagefind-search Web Component
+githubProjectName: zachleat/pagefind-search
 titleHtml: '&lt;pagefind-search&gt; Web Component'
 tags:
   - project

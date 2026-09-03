@@ -28,7 +28,7 @@
 	{%- if post.data.metadata.schedule or post.data.metadata.type == 'scheduled_event' %}<span class="tag tag-borderless">{%- icon "far:calendar" -%}</span>{% endif %}
 
 	{%- if view == 'project' -%}
-		{% if post.data.project_name %}{{ post.data.project_name }}{% else %}{{ post.data.title }}{% endif %}
+		{% if post.data.displayProjectName %}{{ post.data.displayProjectName }}{% else %}{{ post.data.title }}{% endif %}
 	{%- else -%}
 		{%- if post.data.titleHtml %}{{ post.data.titleHtml }}{% else %}{{ post.data.title }}{% endif -%}
 	{%- endif -%}

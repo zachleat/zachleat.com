@@ -1,5 +1,6 @@
 ---
 title: carouscroll Web Component
+githubProjectName: zachleat/carouscroll
 titleHtml: '&lt;carou-scroll&gt; Web Component'
 tags:
   - project

@@ -1,5 +1,6 @@
 ---
 title: 'IndieWeb Avatar, yet another Eleventy Image Service API'
+githubProjectName: 11ty/api-indieweb-avatar
 tags:
   - project
   - eleventy

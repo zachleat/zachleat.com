@@ -1,5 +1,6 @@
 ---
 title: heading-anchors Web Component
+githubProjectName: zachleat/heading-anchors
 titleHtml: '&lt;heading-anchors&gt; Web Component'
 tags:
   - project

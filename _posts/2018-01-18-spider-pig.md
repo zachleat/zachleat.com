@@ -1,5 +1,6 @@
 ---
 title: spider-pig Searches for Nodes that match a CSS Selector
+githubProjectName: zachleat/spider-pig
 tags:
   - project
 ---

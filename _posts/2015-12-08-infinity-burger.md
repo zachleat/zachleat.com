@@ -1,5 +1,6 @@
 ---
 title: The Infinity Hamburger Menu
+githubProjectName: zachleat/infinity-burger
 categories:
   - project
 tags:

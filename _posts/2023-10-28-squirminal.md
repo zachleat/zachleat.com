@@ -1,5 +1,6 @@
 ---
 title: The Squirminal Web Component
+githubProjectName: zachleat/squirminal
 tags:
   - project
   - web-components
