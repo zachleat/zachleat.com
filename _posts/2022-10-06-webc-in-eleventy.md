@@ -1,6 +1,6 @@
 ---
 title: Adding Components to Eleventy with WebC
-githubProjectName: 11ty/webc
+githubProjectName: 11ty/webc,11ty/eleventy-plugin-webc
 tags:
   - project
   - web-components
