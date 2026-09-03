@@ -23,9 +23,19 @@ tmpl: page
 				{%- assign alwaysShowStats = true -%}
 				{%- include "post-popularity-social-tags.html" -%}
 			</span>
+{%- if githubProjectName %}
+{%- assign githubProjects = githubProjectName | split: "," %}
+{%- for githubProject in githubProjects %}
+{%- assign githubProject = githubProject | strip %}
+{%- assign githubProjectData = neglectByProject[githubProject] %}
+			<span><a href="https://github.com/{{ githubProject }}">{% icon "fab:github" %}<code>{{ githubProject }}</code></a>{% if githubProjectData and githubProjectData.isArchived != true %} <a href="/projects/" title="See the full Neglect rankings"><strong class="neglect neglect-score{% if githubProjectData.score == 0 %} neglect--zero{% endif %}" style="--neglect-score: {{ githubProjectData.score }}">{{ githubProjectData.score | round: 1 }}%</strong></a>{% endif %}</span>
+{%- endfor %}
+{%- endif %}
 {%- if JS_ENABLED %}
-			<time-difference live><em><time datetime="{{ page.date | dateToISO }}" title="{{ page.date | dateToISO }}"></time></em></time-difference>
-			<em>{{ page.date | readableDate }}</em>
+			<span class="sub-newline">
+				<em>{{ page.date | readableDate }}</em>
+				<time-difference live><em><time datetime="{{ page.date | dateToISO }}" title="{{ page.date | dateToISO }}"></time></em></time-difference>
+			</span>
 {%- endif %}
 		</div>
 {% if deprecated or calloutMessage %}

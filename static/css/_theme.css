@@ -1102,6 +1102,14 @@ a[href]:is(:focus, :hover) .project_img {
 	line-height: 1.5;
 	min-height: 2em; /* 32px /16 */
 }
+/* Forces whatever it wraps onto its own line within the wrapping .sub flexbox */
+.sub-newline {
+	flex-basis: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .5em 1.25em;
+}
 @media (min-width: 61.25em) { /* 980px */
 	.sub {
 		margin-bottom: 5em; /* 80px /16 */
@@ -1383,6 +1391,29 @@ a[href].tag-inline:not(.tag-borderless),
 	background-color: #edf1e4;
 }
 /* End social proof pill */
+
+/* Neglect score pill: shared by the projects table/chart and a post’s own project link.
+   Anything carrying a --neglect-score derives its color from it via the .neglect-score class. */
+.neglect-score {
+	--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
+}
+:root {
+	/* a perfect score gets its own green, distinct from the pale gradient */
+	--neglect-zero-color: hsl(145 45% 52%);
+}
+.neglect {
+	display: inline-block;
+	padding: .125em .3125em;
+	/* keeps a link’s underline from running into the pill’s background */
+	margin-inline-end: .25em;
+	border-radius: var(--z-border-radius-1);
+	background: hsl(var(--neglect-hue) 70% 90%);
+	white-space: nowrap;
+}
+.neglect--zero {
+	background: var(--neglect-zero-color);
+}
+/* End Neglect score pill */
 
 .tag-inline {
 	font-size: .75rem;

@@ -214,26 +214,6 @@ eleventyImport:
 	font-weight: 700;
 	min-height: 2.25em; /* 36px /16 */
 }
-/* Anything carrying a --neglect-score derives its color from it */
-#projects tr,
-#neglect-buckets > li {
-	--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
-}
-:root {
-	/* a perfect score gets its own green, distinct from the pale gradient */
-	--neglect-zero-color: hsl(145 45% 52%);
-}
-/* Neglect score pill */
-.neglect {
-	display: inline-block;
-	padding: .125em .3125em;
-	border-radius: var(--z-border-radius-1);
-	background: hsl(var(--neglect-hue) 70% 90%);
-	white-space: nowrap;
-}
-.neglect--zero {
-	background: var(--neglect-zero-color);
-}
 /* Shared bar chart: a column per bucket, with its count riding on top of the bar */
 .bar-chart {
 	--chart-height: 7em;
@@ -411,7 +391,7 @@ eleventyImport:
 
 <ul id="neglect-buckets" class="bar-chart">
 {%- for bucket in neglectDistribution %}
-	<li style="--neglect-score: {{ bucket.start }}; --bar-fraction: {{ bucket.fraction }}">
+	<li class="neglect-score" style="--neglect-score: {{ bucket.start }}; --bar-fraction: {{ bucket.fraction }}">
 		<span class="bucket-value">
 			<span class="bucket-count">{{ bucket.count }}</span>
 			<span class="bucket-bar" title="{{ bucket.count }} project{% if bucket.count != 1 %}s{% endif %} at {% if bucket.isZero %}exactly 0%{% else %}{% if bucket.start == 0 %}&gt;{% endif %}{{ bucket.start }}–{{ bucket.end }}%{% endif %} Neglect"></span>
@@ -504,7 +484,7 @@ eleventyImport:
 		{%- assign cdnHitsTotal = cdnHitsTotalByPackage[ result.packageName ] %}
 		{%- assign hasPopularity = false %}
 		{%- if result.downloads > minimumDownloads or result.stars > minimumStars or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
-		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
+		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}" class="neglect-score{% if result.isArchived %} archived{% endif %}">
 			<td class="rank-col numeric">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
 			<td class="numeric">
 				{%- if not result.isArchived %}<strong class="neglect{% if result.score == 0 %} neglect--zero{% endif %}">{{ result.score | round: 1 }}%</strong>{% endif %}
@@ -534,7 +514,12 @@ eleventyImport:
 				{%- if projectPost %}<small class="post-link"><a href="{{ projectPost.url }}" class="text-ellipsis">{% icon "fa:book" %}<em>{{ projectPost.data.title }}</em></a></small>{% endif %}
 				<small class="metadata">
 					{%- assign rootHostname = result.homepageUrl | rootUrlHostname %}
-					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}{{ rootHostname | default: "Link" }}</a>{% endif %}
+					{%- comment %} a /docs/ path is a project’s documentation, and a path on a github.io
+					domain is its demo page—both read better than the generic "Link" fallback {% endcomment -%}
+					{%- assign linkFallback = "Link" %}
+					{%- if result.homepageUrl contains "/docs/" %}{% assign linkFallback = "Docs" %}
+					{%- elsif result.homepageUrl contains "github.io" %}{% assign linkFallback = "Demo" %}{% endif %}
+					{% if result.homepageUrl and not result.workspacePath %}<a href="{{ result.homepageUrl }}">{% icon "fa:link" %}{{ rootHostname | default: linkFallback }}</a>{% endif %}
 					{% if result.url %}<a href="{{ result.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
 					{% if result.isTemplate %}<em>(Template)</em>{% endif %}
 					<!-- {% if result.workspacePath %}<em>(Workspace)</em>{% endif %} -->
