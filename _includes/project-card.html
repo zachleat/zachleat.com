@@ -113,9 +113,9 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 		<img src="{% sparklineDataUri reportData.sparklinesByPackage[ project.packageName ].monthlyReleases.counts, 104, 16, '#aaa', 1 %}" width="104" height="16" alt="{{ releasesAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
 		<span class="spark-axis spark-axis--max" aria-hidden="true">{{ releasesRange.max | renderNumber: "0a" }}</span></span>
 	{%- endif %}
-	{% if project.publishCount > 0 %}<small class="nowrap">{{ project.publishCount | renderNumber: "0a" }} version{% if project.publishCount != 1 %}s{% endif %}{% if not project.isArchived %} in <time-difference live mode="strip-suffix"><time datetime="{{ project.firstPublish }}" title="{{ project.firstPublish }}">{{ project.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference>{% endif %}</small>{% endif %}
+	{% if project.publishCount > 0 %}<small class="nowrap">{{ project.publishCount | renderNumber: "0a" }} version{% if project.publishCount != 1 %}s{% endif %} in <time-difference live mode="strip-suffix"><time datetime="{{ project.firstPublish }}" title="{{ project.firstPublish }}">{{ project.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference></small>{% endif %}
 	</div>
-{%- elsif not project.isArchived -%}
+{%- else -%}
 	<time-difference live mode="strip-suffix" prefix="for "><time datetime="{{ project.repoCreatedAt }}" title="{{ project.repoCreatedAt }}">{{ project.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
 {%- endif -%}
 {% if not project.isArchived %}
@@ -154,12 +154,12 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 {%- endcapture %}
 
 {%- capture issuesFragment %}
-{%- if not project.isArchived %}<small>{% icon "fas:bug" %}</small>{{ project.openIssues }}<br>{%- endif %}
+<small>{% icon "fas:bug" %}</small>{{ project.openIssues }}<br>
 {%- if project.closedIssues > 0 %}<small>{{ project.closedIssues | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
 {%- endcapture %}
 
 {%- capture prsFragment %}
-{%- if not project.isArchived %}<small>{% icon "fas:code-merge" %}</small>{{ project.openPRs }}<br>{%- endif %}
+<small>{% icon "fas:code-merge" %}</small>{{ project.openPRs }}<br>
 {%- if project.mergedPRs > 0 %}<small>{{ project.mergedPRs | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
 {%- endcapture %}
 
