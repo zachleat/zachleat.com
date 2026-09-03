@@ -2,8 +2,9 @@
 title: Is this still being maintained??
 layout: layouts/pagealign.liquid
 minimumPublishCountForSparkline: 6
-minimumDownloadMonthsForSparkline: 3
+minimumSparklineMonths: 3
 minimumDownloads: 2500
+minimumCdnHits: 1000
 minimumStars: 200
 readableDateFormat: dd LLL yyyy
 npmAlsoShowRepoName:
@@ -49,7 +50,12 @@ eleventyImport:
 	}
 	/* block, because margin-block is inert on an inline span—the cell’s text-align keeps it
 	   over to the right either way */
-	.spark + .stars {
+	.cdn-hits {
+		display: block;
+		margin-block-start: .25em;
+	}
+	.spark + .stars,
+	.cdn-hits + .stars {
 		display: block;
 		margin-block-start: .25em;
 	}
@@ -136,6 +142,20 @@ eleventyImport:
 	.downloads--millions {
 		font-weight: 700;
 		font-size: 1.15em;
+	}
+	/* names which count fed which number, since the two share the popularity cell but come
+	   from unrelated sources (npm’s own stats vs. jsDelivr’s CDN log) */
+	.source-pill {
+		display: inline-block;
+		padding: .0625em .375em;
+		border-radius: 1em;
+		background: #eee;
+		color: #777;
+		font-size: .6875rem; /* 11px /16 */
+		font-weight: 700;
+		text-transform: none;
+		vertical-align: middle;
+		margin-inline-end: .25em;
 	}
 	.is-workspace {
 		opacity: .4;
@@ -367,7 +387,8 @@ eleventyImport:
 			<li>{{ totals.customElements }} Web Components 🚾</li>
 		</ul>
 	</li>
-	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last year)</em></li>
+	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last 12 months)</em></li>
+	<li>{% icon "fas:download" %}{{ totals.cdnHits | renderNumber }} CDN downloads <em>(last 12 months on <a href="https://www.jsdelivr.com/">jsDelivr</a>)</em></li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
 	<li>{% icon "far:circle-check" %} Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues</li>
 	<li>{% icon "far:circle-check" %} Merged {% icon "fas:code-merge" %}{{ totals.prs.merged | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
@@ -446,7 +467,8 @@ eleventyImport:
 			</th>
 			<th class="numeric">
 				<div>
-					<small title="Last year">{% icon "fas:download" %}<span class="downloads">{{ totals.downloads | renderNumber }}</span></small><br>
+					<small title="Last year">{% icon "fas:download" %}<small class="source-pill">npm</small><span class="downloads">{{ totals.downloads | renderNumber }}</span></small><br>
+					<small title="Last year">{% icon "fas:download" %}<small class="source-pill">cdn</small><span class="downloads">{{ totals.cdnHits | renderNumber }}</span></small><br>
 					<small>{% icon "fas:star" %}<span class="stars">{{ totals.stars | renderNumber }}</span></small>
 				</div>
 			</th>
@@ -476,10 +498,12 @@ eleventyImport:
 {% for result in packages %}
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
 		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{%- endcapture %}
-		{%- comment %} both counts have a floor to clear, so plenty of rows would leave an empty
-		Popularity cell—the name takes the space instead {% endcomment -%}
+		{%- comment %} downloads and stars each have a floor to clear, but any recorded CDN activity
+		is worth showing on its own—so plenty of rows still leave an empty Popularity cell, and the
+		name takes the space instead {% endcomment -%}
+		{%- assign cdnHitsTotal = cdnHitsTotalByPackage[ result.packageName ] %}
 		{%- assign hasPopularity = false %}
-		{%- if result.downloads > minimumDownloads or result.stars > minimumStars %}{% assign hasPopularity = true %}{% endif %}
+		{%- if result.downloads > minimumDownloads or result.stars > minimumStars or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
 		<tr data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}"{% if result.isArchived %} class="archived"{% endif %}>
 			<td class="rank-col numeric">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
 			<td class="numeric">
@@ -522,17 +546,28 @@ eleventyImport:
 			<td class="numeric popularity">
 				{%- comment %} stars are repo-level, so a workspace package’s row repeats its repo’s
 				count—dimmed the way the other borrowed counts are {% endcomment -%}
-				{%- if result.downloads > minimumDownloads %}<span class="downloads{% if result.downloads >= 1000000 %} downloads--millions{% endif %}"><small>{% icon "fas:download" %}</small>{{ result.downloads | renderNumber: "0a" }}</span>{% endif %}
+				{%- if result.downloads > minimumDownloads %}<span class="downloads{% if result.downloads >= 1000000 %} downloads--millions{% endif %}"><small>{% icon "fas:download" %}</small><small class="source-pill">npm</small>{{ result.downloads | renderNumber: "0a" }}</span>{% endif %}
 				{%- comment %} a package npm only started reporting on a few months ago has too few
 				points to read as a trend, so it shows the count alone {% endcomment -%}
 				{%- assign downloadsByMonth = sparklinesByPackage[ result.packageName ].monthlyDownloads %}
 				{%- assign downloadsRange = downloadsRangeByPackage[ result.packageName ] %}
-				{%- if result.downloads > minimumDownloads and downloadsByMonth.counts.size > minimumDownloadMonthsForSparkline %}
+				{%- if result.downloads > minimumDownloads and downloadsByMonth.counts.size > minimumSparklineMonths %}
 				{%- capture sparkAlt %}Monthly downloads sparkline for {{ result.packageName }}, ranging {{ downloadsRange.min | renderNumber: "0a" }} to {{ downloadsRange.max | renderNumber: "0a" }}{% endcapture -%}
 				{%- comment %} the alt text carries the same range, so the visible labels are decoration {% endcomment -%}
 				<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ downloadsRange.min | renderNumber: "0a" }}</span>
 					<img src="{% sparklineDataUri downloadsByMonth.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="{{ sparkAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
 					<span class="spark-axis spark-axis--max" aria-hidden="true">{{ downloadsRange.max | renderNumber: "0a" }}</span></span>
+				{%- endif %}
+				{%- comment %} jsDelivr CDN hits: a `<script src>` load count, not an install—a
+				different signal npm downloads can’t see, gated at its own, much smaller scale {% endcomment -%}
+				{%- assign cdnHitsByMonth = sparklinesByPackage[ result.packageName ].monthlyCdnHits %}
+				{%- assign cdnHitsRange = cdnHitsRangeByPackage[ result.packageName ] %}
+				{%- if cdnHitsTotal > minimumCdnHits %}<span class="cdn-hits"><small>{% icon "fas:download" %}</small><small class="source-pill">cdn</small>{{ cdnHitsTotal | renderNumber: "0a" }}</span>{% endif %}
+				{%- if cdnHitsTotal > minimumCdnHits and cdnHitsByMonth.counts.size > minimumSparklineMonths %}
+				{%- capture cdnSparkAlt %}Monthly jsDelivr CDN hits sparkline for {{ result.packageName }}, ranging {{ cdnHitsRange.min | renderNumber: "0a" }} to {{ cdnHitsRange.max | renderNumber: "0a" }}{% endcapture -%}
+				<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ cdnHitsRange.min | renderNumber: "0a" }}</span>
+					<img src="{% sparklineDataUri cdnHitsByMonth.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="{{ cdnSparkAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+					<span class="spark-axis spark-axis--max" aria-hidden="true">{{ cdnHitsRange.max | renderNumber: "0a" }}</span></span>
 				{%- endif %}
 				{%- if result.stars > minimumStars %}<span class="stars{% if result.workspacePath %} is-workspace{% endif %}"><small>{% icon "fas:star" %}</small>{{ result.stars | renderNumber: "0a" }}</span>{% endif %}
 			</td>

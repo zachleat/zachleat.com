@@ -28,6 +28,17 @@ function getRangesBySeries(seriesName) {
 
 export const downloadsRangeByPackage = getRangesBySeries("monthlyDownloads");
 export const releasesRangeByPackage = getRangesBySeries("monthlyReleases");
+export const cdnHitsRangeByPackage = getRangesBySeries("monthlyCdnHits");
+
+// jsDelivr hits have no running total in report.json the way npm downloads do (`pkg.downloads`),
+// so the sparkline’s own window is summed here to get an equivalent number to show beside it.
+export const cdnHitsTotalByPackage = Object.fromEntries(
+	Object.entries(sparklinesByPackageJson.packages).map(([packageName, entry]) => {
+		let counts = entry.monthlyCdnHits?.counts || [];
+
+		return [packageName, counts.reduce((sum, count) => sum + count, 0)];
+	})
+);
 
 let sparklineAggregateJson = await Fetch(SERVICE_URL + "report-sparkline-aggregate.json", FETCH_OPTIONS);
 
@@ -49,6 +60,7 @@ let totalCounts = {
 	issues: { open: 0, closed: 0 },
 	stars: 0,
 	downloads: 0,
+	cdnHits: 0,
 	publishes: 0,
 	customElements: 0,
 	audits: 0,
@@ -61,6 +73,9 @@ for(let pkg of report.projects) {
 	totalCounts.npmDeprecated += pkg.npmDeprecated ? 1 : 0;
 	totalCounts.publishes += pkg.publishCount || 0;
 	totalCounts.downloads += pkg.downloads || 0;
+	// jsDelivr hits are keyed by package name in the sparklines data, same as downloads—so
+	// this sums the same way `downloads` does, one npm package at a time, workspaces included.
+	totalCounts.cdnHits += cdnHitsTotalByPackage[pkg.packageName] || 0;
 	totalCounts.customElements += pkg.isWebComponent ? 1 : 0;
 
 	if(!pkg.isArchived && !pkg.npmDeprecated) {
