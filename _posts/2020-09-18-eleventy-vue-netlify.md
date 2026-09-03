@@ -4,6 +4,7 @@ tags:
   - external
 external_url: 'https://www.netlify.com/blog/2020/09/18/eleventy-and-vue-a-match-made-to-power-netlify.com/'
 ignoreExternalLinkInLayoutFile: true
+githubProjectName: 11ty/eleventy-plugin-vue
 ---
 _Originally posted on [{{ external_url }}]({{ external_url }})_
 

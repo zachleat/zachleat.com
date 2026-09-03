@@ -1,0 +1,192 @@
+{%- comment %}
+Renders one project’s Neglect score, identity, and stats—shared by the projects table (each `<tr>`
+includes this for its non-rank `<td>`s) and any other page that wants the same info as a
+standalone card (a post’s own project, say).
+
+Expects, assigned by the caller before including:
+- `project`: a report.json project object (an entry from `packages`, or `neglectByProject[name]`)
+- `cardAsRow` (optional): true to emit `<td>`s for an existing `<tr>`; omit/false for a card
+
+Optional, falls back to the projects page’s own defaults when not set by the caller:
+`minimumDownloads`, `minimumCdnHits`, `minimumStars`, `minimumPublishCountForSparkline`,
+`minimumSparklineMonths`, `readableDateFormat`, `npmAlsoShowRepoName`
+{% endcomment -%}
+{%- assign minimumDownloads = minimumDownloads | default: 2500 %}
+{%- assign minimumCdnHits = minimumCdnHits | default: 1000 %}
+{%- assign minimumStars = minimumStars | default: 200 %}
+{%- assign minimumPublishCountForSparkline = minimumPublishCountForSparkline | default: 6 %}
+{%- assign minimumSparklineMonths = minimumSparklineMonths | default: 3 %}
+{%- assign readableDateFormat = readableDateFormat | default: "dd LLL yyyy" %}
+
+{%- comment %} downloads and stars each have a floor to clear, but any recorded CDN activity is
+worth showing on its own—so plenty of projects still leave an empty Popularity section, and (in
+row mode) the name cell takes the space instead {% endcomment -%}
+{%- assign cdnHitsTotal = reportData.cdnHitsTotalByPackage[ project.packageName ] %}
+{%- assign hasPopularity = false %}
+{%- if project.downloads > minimumDownloads or project.stars > minimumStars or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
+
+{%- capture neglectFragment %}
+{%- if not project.isArchived %}<strong class="neglect{% if project.score == 0 %} neglect--zero{% endif %}">{{ project.score | round: 1 }}%</strong>{% endif %}
+{%- endcapture %}
+
+{%- capture nameFragment %}
+<div class="name">
+	{%- assign npmGitHubMismatch = npmAlsoShowRepoName | includes: project.packageName %}
+	{%- comment %} one icon leads the name, most specific first: archived outranks pinned,
+	which outranks Web Component, and each stands in for the package/repo icon the row
+	would otherwise carry {% endcomment -%}
+	{%- if project.isArchived %}{% icon "fas:skull-crossbones" %}
+	{%- elsif project.isPinned %}<span class="pinned" title="Pinned on GitHub">{% icon "fa:thumbtack" %}<span class="sr-only">Pinned on GitHub</span></span>
+	{%- elsif project.isWebComponent %}<span class="wc-icon" title="Web Component">🚾<span class="sr-only">Web Component</span></span>
+	{%- elsif project.lastPublish %}{% icon "fas:box-open" %}
+	{%- else %}{% icon "far:window-maximize" %}{% endif %}
+	{%- if project.lastPublish %}
+		{%- if project.isArchived %}<del>{% endif %}<code>{{ project.packageName }}</code>{% if project.isArchived %}</del>{% endif %}
+		{%- if npmGitHubMismatch %}
+			from {% icon "fab:github" %}{% if project.isArchived %}<del>{% endif %}<code>{{ project.nameWithOwner }}</code>{% if project.isArchived %}</del>{% endif %}
+		{%- endif %}
+	{%- else %}
+		{%- if project.isArchived %}<del>{% endif %}<span class="reponame">{{ project.nameWithOwner | split: "/" | shift }}</span>{% if project.isArchived %}</del>{% endif %}
+	{%- endif %}
+</div>
+{%- if project.description %}<p class="description text-ellipsis-multi">{{ project.description | escape }}</p>{% endif %}
+{%- assign projectPost = collections.postsByProject[ project.nameWithOwner ] | default: collections.postsByProject[ project.packageName ] %}
+{%- comment %} skip the self-link when this card is rendered on the very post it points to {% endcomment -%}
+{%- if projectPost and projectPost.url != page.url %}<small class="post-link"><a href="{{ projectPost.url }}" class="text-ellipsis">{% icon "fa:book" %}<em>{{ projectPost.data.title }}</em></a></small>{% endif %}
+<small class="metadata">
+	{%- assign rootHostname = project.homepageUrl | rootUrlHostname %}
+	{%- comment %} a /docs/ path is a project’s documentation, and a path on a github.io
+	domain is its demo page—both read better than the generic "Link" fallback {% endcomment -%}
+	{%- assign linkFallback = "Link" %}
+	{%- if project.homepageUrl contains "/docs/" %}{% assign linkFallback = "Docs" %}
+	{%- elsif project.homepageUrl contains "github.io" %}{% assign linkFallback = "Demo" %}{% endif %}
+	{% if project.homepageUrl and not project.workspacePath %}<a href="{{ project.homepageUrl }}">{% icon "fa:link" %}{{ rootHostname | default: linkFallback }}</a>{% endif %}
+	{% if project.url %}<a href="{{ project.url }}">{% icon "fab:github" %}GitHub</a>{% endif %}
+	{% if project.isTemplate %}<em>(Template)</em>{% endif %}
+	{% if project.lastPublish and project.packageName %}<a href="https://www.npmjs.com/package/{{ project.packageName }}">{% icon "fab:npm" %}{% if project.npmDeprecated %}<del>{% endif %}npm{% if project.npmDeprecated %}</del>{% endif %}</a>{% endif %}
+	{% if project.lastPublish and project.packageName and not project.npmDeprecated and not project.isArchived %}<a href="https://npmx.dev/package/{{ project.packageName }}">{% indieAvatar "https://npmx.dev/" "z-avatar" %}npmx</a>{% endif %}
+</small>
+{%- endcapture %}
+
+{%- capture popularityFragment %}
+{%- comment %} stars are repo-level, so a workspace package’s row repeats its repo’s
+count—dimmed the way the other borrowed counts are {% endcomment -%}
+{%- if project.downloads > minimumDownloads %}<span class="downloads{% if project.downloads >= 1000000 %} downloads--millions{% endif %}"><small>{% icon "fas:download" %}</small><small class="source-pill">npm</small>{{ project.downloads | renderNumber: "0a" }}</span>{% endif %}
+{%- comment %} a package npm only started reporting on a few months ago has too few
+points to read as a trend, so it shows the count alone {% endcomment -%}
+{%- assign downloadsByMonth = reportData.sparklinesByPackage[ project.packageName ].monthlyDownloads %}
+{%- assign downloadsRange = reportData.downloadsRangeByPackage[ project.packageName ] %}
+{%- if project.downloads > minimumDownloads and downloadsByMonth.counts.size > minimumSparklineMonths %}
+{%- capture sparkAlt %}Monthly downloads sparkline for {{ project.packageName }}, ranging {{ downloadsRange.min | renderNumber: "0a" }} to {{ downloadsRange.max | renderNumber: "0a" }}{% endcapture -%}
+{%- comment %} the alt text carries the same range, so the visible labels are decoration {% endcomment -%}
+<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ downloadsRange.min | renderNumber: "0a" }}</span>
+	<img src="{% sparklineDataUri downloadsByMonth.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="{{ sparkAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+	<span class="spark-axis spark-axis--max" aria-hidden="true">{{ downloadsRange.max | renderNumber: "0a" }}</span></span>
+{%- endif %}
+{%- comment %} jsDelivr CDN hits: a `<script src>` load count, not an install—a
+different signal npm downloads can’t see, gated at its own, much smaller scale {% endcomment -%}
+{%- assign cdnHitsByMonth = reportData.sparklinesByPackage[ project.packageName ].monthlyCdnHits %}
+{%- assign cdnHitsRange = reportData.cdnHitsRangeByPackage[ project.packageName ] %}
+{%- if cdnHitsTotal > minimumCdnHits %}<span class="cdn-hits"><small>{% icon "fas:download" %}</small><small class="source-pill">cdn</small>{{ cdnHitsTotal | renderNumber: "0a" }}</span>{% endif %}
+{%- if cdnHitsTotal > minimumCdnHits and cdnHitsByMonth.counts.size > minimumSparklineMonths %}
+{%- capture cdnSparkAlt %}Monthly jsDelivr CDN hits sparkline for {{ project.packageName }}, ranging {{ cdnHitsRange.min | renderNumber: "0a" }} to {{ cdnHitsRange.max | renderNumber: "0a" }}{% endcapture -%}
+<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ cdnHitsRange.min | renderNumber: "0a" }}</span>
+	<img src="{% sparklineDataUri cdnHitsByMonth.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="{{ cdnSparkAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+	<span class="spark-axis spark-axis--max" aria-hidden="true">{{ cdnHitsRange.max | renderNumber: "0a" }}</span></span>
+{%- endif %}
+{%- if project.stars > minimumStars %}<span class="stars{% if project.workspacePath %} is-workspace{% endif %}"><small>{% icon "fas:star" %}</small>{{ project.stars | renderNumber: "0a" }}</span>{% endif %}
+{%- endcapture %}
+
+{%- capture versionsFragment %}
+{%- if project.firstPublish -%}
+	<div class="age">
+	{%- assign releasesRange = reportData.releasesRangeByPackage[ project.packageName ] %}
+	{%- if project.publishCount > minimumPublishCountForSparkline and not project.isArchived %}
+	{%- capture releasesAlt %}Monthly publishes sparkline for {{ project.packageName }}, ranging {{ releasesRange.min | renderNumber: "0a" }} to {{ releasesRange.max | renderNumber: "0a" }}{% endcapture -%}
+	<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ releasesRange.min | renderNumber: "0a" }}</span>
+		<img src="{% sparklineDataUri reportData.sparklinesByPackage[ project.packageName ].monthlyReleases.counts, 104, 16, '#aaa', 1 %}" width="104" height="16" alt="{{ releasesAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+		<span class="spark-axis spark-axis--max" aria-hidden="true">{{ releasesRange.max | renderNumber: "0a" }}</span></span>
+	{%- endif %}
+	{% if project.publishCount > 0 %}<small class="nowrap">{{ project.publishCount | renderNumber: "0a" }} version{% if project.publishCount != 1 %}s{% endif %}{% if not project.isArchived %} in <time-difference live mode="strip-suffix"><time datetime="{{ project.firstPublish }}" title="{{ project.firstPublish }}">{{ project.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference>{% endif %}</small>{% endif %}
+	</div>
+{%- elsif not project.isArchived -%}
+	<time-difference live mode="strip-suffix" prefix="for "><time datetime="{{ project.repoCreatedAt }}" title="{{ project.repoCreatedAt }}">{{ project.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
+{%- endif -%}
+{% if not project.isArchived %}
+	{% if project.lastStablePublishVersion %}
+	<div class="m-2">
+		<div class="nowrap">{{ project.lastStablePublishVersion }}</div>
+		{% if project.lastStablePublishVersion %}
+		<small>
+			<time-difference live><em><time datetime="{{ project.lastStablePublish }}" title="{{ project.lastStablePublish }}">{{ project.lastStablePublish | readableDateFromISO: readableDateFormat }}</time></em></time-difference>
+		</small>
+		{% endif %}
+	</div>
+	{% endif %}
+	{% if project.prerelease and cardAsRow %}
+		<div class="m-2">
+			<div class="nowrap"><em>{{ project.lastPublishVersion }}</em></div>
+			{% if project.lastPublishVersion %}
+			<small>
+				<time-difference live><em><time datetime="{{ project.lastPublish }}" title="{{ project.lastPublish }}">{{ project.lastPublish | readableDateFromISO: readableDateFormat }}</time></em></time-difference>
+			</small>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endif %}
+{%- endcapture %}
+
+{%- capture auditFragment %}
+{% if project.openVulnerabilities != null and not project.isArchived %}
+	{% if project.openVulnerabilities > 0 %}{% icon "fas:lock-open" %}{% endif -%}
+	{{ project.openVulnerabilities }}{% unless cardAsRow %} report{% if project.openVulnerabilities != 1 %}s{% endif %}{% endunless %}<br>
+	<small>{{ project.transitiveDependencies }} dep{% if project.transitiveDependencies != 1 %}s{% endif %}</small>
+	{%- if cardAsRow and project.lastPublish and project.packageName and not project.npmDeprecated %}<br><a href="https://socket.dev/npm/package/{{ project.packageName }}" class="audit-socket"><small>{% indieAvatar "https://socket.dev/" "z-avatar" %}Socket</small></a>{% endif %}
+{% else %}
+-
+{% endif %}
+{%- endcapture %}
+
+{%- capture issuesFragment %}
+{%- if not project.isArchived %}<small>{% icon "fas:bug" %}</small>{{ project.openIssues }}<br>{%- endif %}
+{%- if project.closedIssues > 0 %}<small>{{ project.closedIssues | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
+{%- endcapture %}
+
+{%- capture prsFragment %}
+{%- if not project.isArchived %}<small>{% icon "fas:code-merge" %}</small>{{ project.openPRs }}<br>{%- endif %}
+{%- if project.mergedPRs > 0 %}<small>{{ project.mergedPRs | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
+{%- endcapture %}
+
+{%- if cardAsRow %}
+<td class="numeric">{{ neglectFragment }}</td>
+<td class="name-col"{% unless hasPopularity %} colspan="2"{% endunless %}>{{ nameFragment }}</td>
+{%- if hasPopularity %}<td class="numeric popularity">{{ popularityFragment }}</td>{% endif %}
+<td>{{ versionsFragment }}</td>
+<td class="numeric">{{ auditFragment }}</td>
+<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}">{{ issuesFragment }}</td>
+<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}">{{ prsFragment }}</td>
+{%- else %}
+{%- capture projectRowKey %}{{ project.nameWithOwner }}|{{ project.packageName }}{% endcapture %}
+{%- assign projectRowId = reportData.rowIdByPackage[ projectRowKey ] %}
+<article class="project-card neglect-score{% if project.isArchived %} archived{% endif %}" style="--neglect-score: {{ project.score }}">
+	<div class="project-card-top">
+		{{ nameFragment }}
+		{%- comment %} the pill is the deep link to this project’s row in the full rankings {% endcomment -%}
+		{%- unless project.isArchived %}
+		<a href="/projects/#{{ projectRowId }}" class="project-card-neglect-link" title="See this project in the full rankings">{% icon "fa:diagram-project" %}{{ neglectFragment }}</a>
+		{%- endunless %}
+	</div>
+	<dl class="project-card-stats">
+		{%- if hasPopularity %}
+		<div class="stat"><dt>Popularity</dt><dd>{{ popularityFragment }}</dd></div>
+		{%- endif %}
+		{%- comment %} a repo that never shipped to npm has no versions to list, just an age {% endcomment -%}
+		<div class="stat"><dt>{% if project.lastPublish %}Versions{% else %}Age{% endif %}</dt><dd>{{ versionsFragment }}</dd></div>
+		{%- if project.lastPublish %}
+		<div class="stat"><dt>Audit</dt><dd>{{ auditFragment }}</dd></div>
+		{%- endif %}
+		<div class="stat"><dt>Issues</dt><dd>{{ issuesFragment }}</dd></div>
+		<div class="stat"><dt>PRs</dt><dd>{{ prsFragment }}</dd></div>
+	</dl>
+</article>
+{%- endif %}

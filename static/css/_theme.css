@@ -1102,6 +1102,9 @@ a[href]:is(:focus, :hover) .project_img {
 	line-height: 1.5;
 	min-height: 2em; /* 32px /16 */
 }
+.sub:has(+ * > .project-card) {
+	margin-block-end: 1em;
+}
 /* Forces whatever it wraps onto its own line within the wrapping .sub flexbox */
 .sub-newline {
 	flex-basis: 100%;
@@ -1112,10 +1115,10 @@ a[href]:is(:focus, :hover) .project_img {
 }
 @media (min-width: 61.25em) { /* 980px */
 	.sub {
-		margin-bottom: 5em; /* 80px /16 */
+		margin-block-end: 5em; /* 80px /16 */
 	}
 	.sub + .sub {
-		margin-top: -5.5em; /* -88px /16 */
+		margin-block-start: -5.5em; /* -88px /16 */
 	}
 }
 .sub :not(:defined) {
@@ -1392,7 +1395,8 @@ a[href].tag-inline:not(.tag-borderless),
 }
 /* End social proof pill */
 
-/* Neglect score pill: shared by the projects table/chart and a post’s own project link.
+/* Neglect score pill: shared by the projects table and the project-card.html include (the
+   projects table itself, and any other page that embeds one of its projects as a card).
    Anything carrying a --neglect-score derives its color from it via the .neglect-score class. */
 .neglect-score {
 	--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
@@ -1404,7 +1408,6 @@ a[href].tag-inline:not(.tag-borderless),
 .neglect {
 	display: inline-block;
 	padding: .125em .3125em;
-	/* keeps a link’s underline from running into the pill’s background */
 	margin-inline-end: .25em;
 	border-radius: var(--z-border-radius-1);
 	background: hsl(var(--neglect-hue) 70% 90%);
@@ -1414,30 +1417,284 @@ a[href].tag-inline:not(.tag-borderless),
 .neglect--zero {
 	background: var(--neglect-zero-color);
 }
-/* The pill is its own atomic box (display: inline-block), so a wrapping link’s hover color would
-   otherwise fight the pale pill background—underline it instead and leave the color alone. */
-a:has(.neglect):is(:hover, :focus, :active) {
-	color: inherit;
-}
-a:has(.neglect):is(:hover, :focus) .neglect {
-	text-decoration: underline;
-}
 /* End Neglect score pill */
 
-/* A post’s own project link + Neglect pill, in the .sub row */
-.sub-project {
+/* Project name/stats fragments, rendered by project-card.html: the projects table
+   (.projects-table) wraps each in a <td>, and a standalone card (.project-card) wraps them in a
+   labeled <dl>. Scoped to both rather than left bare, since .spark/.spark-img already name an
+   unrelated sparkline used elsewhere (post popularity, the rail)—see “Sparkline” above. */
+.projects-table,
+.project-card {
+	.archived {
+		opacity: .8;
+	}
+	.spark-img {
+		display: block;
+		background-color: #f6f6f6;
+		border-radius: .25em;
+		flex: none;
+	}
+	/* sparkline-svg emits width="100%" height="100%", so the image carries a ratio but no
+	   intrinsic size. Firefox then sizes it as a flex item against the 300x150 default object
+	   size, which blows out this container’s fit-content width—hence definite ones. Sized via
+	   `.spark .spark-img` (three classes once nested here) rather than a bare `.spark-img`
+	   (two): the generic `.spark .spark-img { width: 100%; height: auto }` rule under
+	   Sparkline—used for post popularity and the rail—ties a bare nesting on specificity and
+	   sits later in the file, so it would otherwise win and stretch these to their flex
+	   container’s full width. */
+	.spark .spark-img {
+		width: 64px;
+		height: 16px;
+	}
+	.spark {
+		display: flex;
+		gap: .15em;
+		margin-block-start: .25em;
+		/* not `stretch`: an img is a flex item like any other, and stretching one that carries
+		   an aspect ratio from its width/height attributes scales it up. The labels each
+		   override this to sit at the end of the axis they mark. */
+		align-items: center;
+		/* shrink to the sparkline so the labels have its edges to align to */
+		width: fit-content;
+	}
+	.popularity .spark {
+		/* the only right-aligned column of the two, so it rides over with its numbers */
+		margin-inline-start: auto;
+	}
+	/* the releases series runs to 146 monthly points against the downloads’ 12, so it gets
+	   the room its column has to spare */
+	.age .spark-img {
+		width: 104px;
+	}
+	/* block, because margin-block is inert on an inline span—the cell’s text-align keeps it
+	   over to the right either way */
+	.cdn-hits {
+		display: block;
+		margin-block-start: .25em;
+	}
+	.spark + .stars,
+	.cdn-hits + .stars {
+		display: block;
+		margin-block-start: .25em;
+	}
+	.spark-axis {
+		font-size: .6153846153846em; /* 8px /13 */
+		line-height: 1;
+		color: #999;
+		font-variant-numeric: tabular-nums;
+	}
+	.spark-axis--min {
+		align-self: end;
+	}
+	.spark-axis--max {
+		align-self: start;
+	}
+	/* lines up with the metadata row below it, clear of the icon that leads the name */
+	.description {
+		--ellipsis-lines: 2;
+		margin-block: .25em;
+		margin-inline: 2.125em 0;
+		color: #666;
+		font-size: .8125em; /* 13px /16 */
+		font-weight: 400;
+		overflow-wrap: anywhere;
+	}
+	.post-link {
+		display: block;
+		margin-block: .25em;
+		margin-inline-start: 2.125em;
+	}
+	.metadata {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-inline-start: 2.125em;
+		gap: .25em;
+	}
+	.description + * {
+		margin-block-start: .5em;
+	}
+	/* the entries are unequal heights (avatars run taller than the Font Awesome
+	   icons), so each one centers its own icon against its own text—`vertical-align`
+	   is inert on flex items, so it can’t do this job here */
+	.metadata > * {
+		display: flex;
+		align-items: center;
+	}
+	/* the favicon has its own whitespace, so it needs to run bigger than
+	   the 1.3em Font Awesome icons to read at the same size */
+	.metadata .z-avatar {
+		width: 1.6em;
+		height: 1.6em;
+		max-height: 1.6em;
+	}
+	/* the Socket favicon is a saturated purple that would outshout the
+	   vulnerability count it sits under, so it runs grayscale */
+	.audit-socket {
+		display: inline-flex;
+		align-items: center;
+	}
+	.audit-socket .z-avatar {
+		width: 1.1em;
+		height: 1.1em;
+		max-height: 1.1em;
+		filter: grayscale(1);
+	}
+	.downloads,
+	.stars {
+		/* m => M */
+		text-transform: uppercase;
+	}
+	.downloads--millions {
+		font-weight: 700;
+		font-size: 1.15em;
+	}
+	/* names which count fed which number, since the two share the popularity cell but come
+	   from unrelated sources (npm’s own stats vs. jsDelivr’s CDN log) */
+	.source-pill {
+		display: inline-block;
+		padding: .0625em .375em;
+		border-radius: 1em;
+		background: #eee;
+		color: #777;
+		font-size: .6875rem; /* 11px /16 */
+		font-weight: 700;
+		text-transform: none;
+		vertical-align: middle;
+		margin-inline-end: .25em;
+	}
+	.is-workspace {
+		opacity: .4;
+	}
+	/* the emoji stands in for a .z-icon here, so it takes the same box—centered in it, since
+	   an emoji’s own advance width is up to the platform */
+	.wc-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 1.3em;
+		height: 1.3em;
+		margin: 0 .15em;
+		margin-inline-end: .3em;
+		vertical-align: text-bottom;
+	}
+	.name {
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+
+		.reponame {
+			padding-inline: 0.1875em; /* 3px /16 */
+		}
+	}
+}
+.z-icon:has([href="#far-fa-circle-check"]) {
+	margin-inline: .25em 0;
+	color: green;
+	font-size: 0.875em;
+}
+.archived .z-icon:has([href="#far-fa-circle-check"]) {
+	color: #777;
+}
+
+/* A repo with workspace packages shows one card per package, side by side until they don’t fit */
+.project-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .5em;
+}
+.project-cards .project-card {
+	/* share the row when there’s space, wrap to full width when there isn’t */
+	flex: 1 1 20em;
+	min-width: 0;
+	margin-block-end: 0;
+}
+/* The standalone card itself (project-card.html, cardAsRow false)—the table gets the equivalent
+   layout for free from its own column widths, so this is card-only. */
+.project-card {
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: var(--z-border-radius-2);
+	padding: 1em;
+	margin-block-end: 1em;
+	font-size: .75em; /* 12px /16 */
+}
+/* the pill links to this project's row in the full rankings; the icon rides outside it */
+.project-card-neglect-link {
+	display: inline-flex;
+	align-items: center;
+	gap: .25em;
+	/* the name shrinks, never this */
+	flex: none;
+}
+.project-card-neglect-link .neglect {
+	/* the flex gap already separates the icon, so the pill's own trailing margin is redundant */
+	margin-inline-end: 0;
 	font-size: .875em;
 }
-.sub-project .project-owner {
-	display: inline-block;
-	vertical-align: text-bottom;
-	color: #666;
-	font-size: .7em;
-	margin-inline-end: .35em;
-	padding: .125em .3125em;
-	border-radius: var(--z-border-radius-1);
-	background: #eee;
+/* the pill is its own atomic box, so a link hover color would fight its pale background—
+   underline it instead and leave the color alone */
+.project-card-neglect-link:is(:hover, :focus, :active) {
+	color: inherit;
 }
+.project-card-neglect-link:is(:hover, :focus) .neglect {
+	text-decoration: underline;
+}
+.project-card-top {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+	flex-wrap: wrap;
+}
+/* the name’s icon+title and the Neglect pill after it share the top line; the description/
+   post-link/metadata come from the same fragment as the name, so `order` moves them past the
+   pill, each on its own full-width line */
+.project-card-top .description,
+.project-card-top .post-link,
+.project-card-top .metadata {
+	order: 1;
+	flex-basis: 100%;
+}
+/* `flex-basis: 0` keeps the name from ever pushing the pill onto its own line: it claims the
+   leftover width instead and truncates (the shared .name rule supplies the ellipsis) */
+.project-card-top .name {
+	flex: 1 1 0;
+	min-width: 0;
+}
+/* the table indents these to clear the name’s leading icon in a narrow cell—the card has no
+   such icon column to align with, so it sits flush. Block margin is zeroed too: .project-card-top
+   is already a wrapping flex row with its own gap, so that gap alone spaces .name/.description/
+   .metadata—no extra margin-block needed on top of it. Comes after the shared rule above so it
+   wins on source order alone: both sides of that rule's `.projects-table, .project-card` list are
+   plain classes now, so it no longer outranks a same-specificity override the way the old
+   `#projects` id selector did. */
+.project-card .description,
+.project-card .metadata {
+	margin: 0;
+}
+.project-card-stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	margin: 1em 0 0;
+	font-size: .875em;
+}
+.project-card-stats .stat {
+	display: flex;
+	flex-direction: column;
+	flex: none;
+}
+.project-card-stats dt {
+	font-size: .75em;
+	font-weight: 700;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+}
+.project-card-stats dd {
+	margin: .25em 0 0;
+}
+/* End project name/stats fragments */
 
 .tag-inline {
 	font-size: .75rem;

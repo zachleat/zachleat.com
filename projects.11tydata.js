@@ -53,19 +53,6 @@ export const packages = report.projects.sort((a, b) => {
 	return b.score - a.score;
 });
 
-// A workspace repo publishes more than one package, so more than one row shares a `nameWithOwner`—
-// only the first gets a `rowId`, so a deep link (e.g. from a post) has exactly one row to land on
-// and the table never emits a duplicate `id`.
-let reposWithRowId = new Set();
-for(let pkg of packages) {
-	if(!reposWithRowId.has(pkg.nameWithOwner)) {
-		pkg.rowId = `project-${pkg.nameWithOwner.replaceAll("/", "--")}`;
-		reposWithRowId.add(pkg.nameWithOwner);
-	} else {
-		pkg.rowId = null;
-	}
-}
-
 let totalCounts = {
 	githubArchived: 0,
 	npmDeprecated: 0,
