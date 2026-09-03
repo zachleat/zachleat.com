@@ -1417,6 +1417,15 @@ a[href].tag-inline:not(.tag-borderless),
 .neglect--zero {
 	background: var(--neglect-zero-color);
 }
+/* the skull trails the score inside the pill, so it runs smaller than a standalone icon and
+   drops the trailing margin that would otherwise pad the pill out on the right */
+.neglect svg.z-icon {
+	width: 1em;
+	height: 1em;
+	margin-inline: .2em 0;
+	vertical-align: -.0625em;
+	opacity: .75;
+}
 /* End Neglect score pill */
 
 /* Project name/stats fragments, rendered by project-card.html: the projects table
