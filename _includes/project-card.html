@@ -127,7 +127,7 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 	{% if project.publishCount > 0 %}<small class="nowrap">{{ project.publishCount | renderNumber: "0a" }} version{% if project.publishCount != 1 %}s{% endif %} in <time-difference live mode="strip-suffix"><time datetime="{{ project.firstPublish }}" title="{{ project.firstPublish }}">{{ project.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference></small>{% endif %}
 	</div>
 {%- else -%}
-	<time-difference live mode="strip-suffix" prefix="for "><time datetime="{{ project.repoCreatedAt }}" title="{{ project.repoCreatedAt }}">{{ project.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
+	<time-difference live mode="strip-suffix"><time datetime="{{ project.repoCreatedAt }}" title="{{ project.repoCreatedAt }}">{{ project.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
 {%- endif -%}
 {% if not project.isArchived %}
 	{% if project.lastStablePublishVersion %}
