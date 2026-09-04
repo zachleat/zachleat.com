@@ -1604,6 +1604,19 @@ a[href].tag-inline:not(.tag-borderless),
 		vertical-align: middle;
 		margin-inline-end: .25em;
 	}
+	/* unlike .source-pill (which just labels a number), this is meant to catch the eye—so it
+	   gets an accent color instead of the neutral gray chip */
+	.new-pill {
+		display: inline-block;
+		padding: .0625em .375em;
+		border-radius: 1em;
+		background: #2f8f4e;
+		color: #fff;
+		font-size: .6875rem; /* 11px /16 */
+		font-weight: 700;
+		vertical-align: text-bottom;
+		margin-inline-start: .375em;
+	}
 	.is-workspace {
 		opacity: .4;
 	}

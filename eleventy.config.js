@@ -428,6 +428,20 @@ export default async function(eleventyConfig) {
 		}
 	});
 
+	// One month, not 30 days, so a project created on the 3rd of last month keeps its badge
+	// through the 3rd of this one, however long that month runs.
+	eleventyConfig.addFilter("isWithinPastMonth", (dateStr) => {
+		let date = new Date(dateStr);
+		if(isNaN(date)) {
+			return false;
+		}
+
+		let monthAgo = new Date();
+		monthAgo.setMonth(monthAgo.getMonth() - 1);
+
+		return date > monthAgo;
+	});
+
 	eleventyConfig.addFilter("nameToFlag", (countryName = "") => {
 		let flag = {
 			"germany": "🇩🇪",

@@ -128,6 +128,7 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 	</div>
 {%- else -%}
 	<time-difference live mode="strip-suffix"><time datetime="{{ project.repoCreatedAt }}" title="{{ project.repoCreatedAt }}">{{ project.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
+	{%- if project.repoCreatedAt | isWithinPastMonth %}<span class="new-pill">New</span>{% endif %}
 {%- endif -%}
 {% if not project.isArchived %}
 	{% if project.lastStablePublishVersion %}
@@ -136,6 +137,7 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 		{% if project.lastStablePublishVersion %}
 		<small>
 			<time-difference live><em><time datetime="{{ project.lastStablePublish }}" title="{{ project.lastStablePublish }}">{{ project.lastStablePublish | readableDateFromISO: readableDateFormat }}</time></em></time-difference>
+			{%- if project.lastStablePublish | isWithinPastMonth %}<span class="new-pill">New</span>{% endif %}
 		</small>
 		{% endif %}
 	</div>
