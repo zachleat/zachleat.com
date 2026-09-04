@@ -1431,6 +1431,7 @@ a[href].tag-inline:not(.tag-borderless),
 }
 .neglect--zero {
 	background: var(--neglect-zero-color);
+	color: #fff;
 }
 /* the skull trails the score inside the pill, so it runs smaller than a standalone icon and
    drops the trailing margin that would otherwise pad the pill out on the right */

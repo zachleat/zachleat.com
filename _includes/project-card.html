@@ -26,7 +26,7 @@ row mode) the name cell takes the space instead {% endcomment -%}
 {%- if project.downloads > minimumDownloads or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
 
 {%- capture neglectFragment %}
-{%- if not project.isArchived %}<strong class="neglect{% if project.score == 0 %} neglect--zero{% endif %}">{{ project.score | round: 1 }}%{% icon "fas:skull" %}</strong>{% endif %}
+{%- if not project.isArchived %}<strong class="neglect{% if project.score == 0 %} neglect--zero{% endif %}">{{ project.score | round: 1 }}%{% if project.score == 0 %}{% icon "fas:seedling" %}{% else %}{% icon "fas:skull" %}{% endif %}</strong>{% endif %}
 {%- endcapture %}
 
 {%- capture nameFragment %}
