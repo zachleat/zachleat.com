@@ -70,20 +70,20 @@ layout: layouts/pagealign.liquid
 	- [`2018.nejsconf.com`](https://2018.nejsconf.com/)
 	- [`2019.nejsconf.com`](https://2019.nejsconf.com/)
 1. [`nebraskajs.com`](https://nebraskajs.com/) (2012–)
-1. [`f2em.com`](https://f2em.com/) (2012–): [Blog post](/web/manifesto/)
+1. [`f2em.com`](https://f2em.com/) (2012–): [Blog post](/web/manifesto/) _In progress move to [`f2em.zachleat.dev`](https://f2em.zachleat.dev)._
 1. [`alarmd.com`](https://alarmd.com/) (2007–): [Blog post](/web/wake-up-to-youtube-on-my-internet-alarm-clock/)
 1. ~~`votewithyourtweet.com`~~ (2022–2023): [Blog post](/web/vote-with-your-tweet/), [Archive](https://web.archive.org/web/20230203192146/https://votewithyourtweet.com/)
 1. ~~`myspacebook.info`~~ (2019–2020): for a [Talk](/web/own-your-content/), [Archive](https://web.archive.org/web/20191022171944/https://myspacebook.info/)
 1. ~~`donald-who.com`~~ (2017–2019): [Archive](https://web.archive.org/web/20181114201026/http://donald-who.com/)
-1. ~~`fontfamily.io`~~ (2014–2025): [Blog post](/web/font-family-reunion/). Moved to [`fontfamily.zachleat.dev`](https://fontfamily.zachleat.dev/)
+1. ~~`fontfamily.io`~~ (2014–2025): [Blog post](/web/font-family-reunion/). Moved to [`fontfamily.zachleat.dev`](https://fontfamily.zachleat.dev/).
 1. ~~`busyness.io`~~ (2013–2018): [Blog post](/web/busyness/), [Sample](/archive/busyness-sample/)
-1. ~~`parseintimate.com`~~ (2012–2014): [Blog post](/web/lets-get-parseintimate/). [Moved to `zachleat.com`](/archive/parseintimate/)
+1. ~~`parseintimate.com`~~ (2012–2014): [Blog post](/web/lets-get-parseintimate/). [Moved to `zachleat.com`](/archive/parseintimate/).
 1. ~~`tournology.com`~~ (2007–2015)
 1. ~~`pseudocoders.com`~~: [Archive](https://web.archive.org/web/20080318165754/http://pseudocoders.com/)
 1. ~~`tournamentology.com`~~: _Redirect_
 1. ~~`competr.com`~~: _Redirect_
 1. ~~`recyclenation.org`~~ (2006–2007): School project
-1. ~~`timemachinery.com`~~: Old movie Blog
+1. ~~`timemachinery.com`~~: An old movie blog
 1. ~~`blockbustlify.com`~~: _Redirect_
 1. ~~`omahabountyhunter.com`~~: Hackathon 😱
 1. ~~`callspinner.com`~~: Hackathon 😱

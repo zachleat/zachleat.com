@@ -259,6 +259,7 @@ eleventyImport:
 		<select data-filter-key="scope">
 			<option value="">Show all projects</option>
 			<option value="pinned">Only 📍 Pinned on GitHub</option>
+			<option value="new">Only New Releases</option>
 			<option value="audits">Only Security Audits</option>
 			<option value="wc">Only 🚾 Web Components</option>
 			<option value="npm">Only 📦 npm Packages</option>
@@ -320,7 +321,9 @@ eleventyImport:
   <tbody>
 {% for result in packages %}
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
-		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{%- endcapture %}
+		{%- assign hasNewRelease = result.lastStablePublish | isWithinPastMonth %}
+		{%- assign hasNewRepo = result.repoCreatedAt | isWithinPastMonth %}
+		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{% if hasNewRelease or hasNewRepo %}new,{% endif %}{%- endcapture %}
 		{%- capture rowKey %}{{ result.nameWithOwner }}|{{ result.packageName }}{% endcapture -%}
 		<tr id="{{ reportData.rowIdByPackage[ rowKey ] }}" data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}" class="neglect-score{% if result.isArchived %} archived{% endif %}">
 			<td class="rank-col numeric">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
