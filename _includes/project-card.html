@@ -70,7 +70,7 @@ very post it points to. Nothing links when the project is in `projectCardExcepti
 projects are past writing about, so they don’t count as a gap. A `projectCardExceptions` entry
 still shows the warning (it really has no post of its own) but says so, since a matching post
 does exist—it's just been excluded on purpose {% endcomment -%}
-{%- elsif cardAsRow and eleventy.env.runMode == "serve" and not project.isArchived %}<div class="post-link post-link--missing" title="No post has githubProjectName: {{ project.nameWithOwner }}">{% icon "fa:book" %}<em>No blog post{% if isProjectCardException %} (exception){% endif %}</em></div>{% endif %}
+{%- elsif cardAsRow and not project.isArchived %}<div class="post-link post-link--missing" title="No post has githubProjectName: {{ project.nameWithOwner }}">{% icon "fa:book" %}<em>No blog post{% if isProjectCardException %}*{% endif %}</em></div>{% endif %}
 <small class="metadata">
 	{%- assign rootHostname = project.homepageUrl | rootUrlHostname %}
 	{%- comment %} a /docs/ path is a project’s documentation, and a path on a github.io

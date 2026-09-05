@@ -1541,10 +1541,7 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	/* --serve only, so it stands apart from the real post links it sits among */
 	.post-link--missing {
-		color: #b25000;
-		border-inline-start: .25em solid currentColor;
-		padding-inline-start: .375em;
-		margin-inline-start: 1.5em;
+		opacity: .3;
 	}
 	.metadata {
 		display: flex;
