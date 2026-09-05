@@ -14,3 +14,6 @@ npx degit zachleat/ToolOrDie _site/presentations/toolordie
 
 rm -rf _site/web-fonts/demos
 npx degit zachleat/web-font-loading-recipes _site/web-fonts/demos
+
+# rm -rf _site/web-fonts/foitfout
+npx degit zachleat/foitfout _site/web-fonts/foitfout --force
