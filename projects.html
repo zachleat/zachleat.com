@@ -265,6 +265,7 @@ eleventyImport:
 			<option value="npm">Only 📦 npm Packages</option>
 			<option value="11ty">Only Awesome and 11ty</option>
 			<option value="template">Only GitHub Template Repos</option>
+			<option value="nopost">Only projects without a Blog Post</option>
 		</select>
 	</label>
 </form>
@@ -323,7 +324,13 @@ eleventyImport:
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
 		{%- assign hasNewRelease = result.lastStablePublish | isWithinPastMonth %}
 		{%- assign hasNewRepo = result.repoCreatedAt | isWithinPastMonth %}
-		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{% if hasNewRelease or hasNewRepo %}new,{% endif %}{%- endcapture %}
+		{%- assign nameWithOwnerPosts = collections.postsByProject[ result.nameWithOwner ] %}
+		{%- assign packageNamePosts = collections.postsByProject[ result.packageName ] %}
+		{%- assign isProjectCardException = projectCardExceptions contains result.packageName or projectCardExceptions contains result.nameWithOwner %}
+		{%- assign resultPosts = nameWithOwnerPosts | concat: packageNamePosts | uniq %}
+		{%- assign hasNoPost = false %}
+		{%- if resultPosts.size == 0 or isProjectCardException %}{% assign hasNoPost = true %}{% endif %}
+		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{% if hasNewRelease or hasNewRepo %}new,{% endif %}{% if hasNoPost and not result.isArchived %}nopost,{% endif %}{%- endcapture %}
 		{%- capture rowKey %}{{ result.nameWithOwner }}|{{ result.packageName }}{% endcapture -%}
 		<tr id="{{ reportData.rowIdByPackage[ rowKey ] }}" data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}" class="neglect-score{% if result.isArchived %} archived{% endif %}">
 			<td class="rank-col numeric">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
