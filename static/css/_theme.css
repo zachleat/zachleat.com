@@ -1572,6 +1572,9 @@ a[href].tag-inline:not(.tag-borderless),
 	.audit-socket {
 		display: inline-flex;
 		align-items: center;
+		/* a secondary link under the vulnerability count, so it sits below the `<small>` it's
+		   already wrapped in—the em-sized favicon below shrinks with it */
+		font-size: .8125em;
 	}
 	.audit-socket .z-avatar {
 		width: 1.1em;

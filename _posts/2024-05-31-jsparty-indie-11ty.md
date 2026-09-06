@@ -7,6 +7,8 @@ tags:
   - audio
 medialength: 75 min
 external_url: https://changelog.com/jsparty/325
+modules:
+  - "/static/js/fundraising-status.js"
 ---
 I was on the JS Party podcast to talk about the [push to make 11ty independent and sustainability in 2024](/web/independent-sustainable-11ty/)!
 

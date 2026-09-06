@@ -177,10 +177,14 @@ export default async function(eleventyConfig) {
 			"node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `static/`,
 			"node_modules/infinity-burger/infinity-burger.{css,js}": `static/`,
 			"node_modules/artificial-chart/artificial-chart.{css,js}": `static/`,
+			[resolveModule("@11ty/is-land")]: `static/is-land.js`,
 			[resolveModule("speedlify-score")]: `static/speedlify-score.js`,
 			[resolveModule("speedlify2-score")]: `static/speedlify2-score.js`,
 			[resolveModule("@zachleat/details-utils")]: `static/details-utils.js`,
 			[resolveModule("@zachleat/table-saw")]: `static/table-saw.js`,
+			[resolveModule("@zachleat/filter-container/filter-container.js")]: `static/filter-container.js`,
+			[resolveModule("@zachleat/fundraising-status/fundraising-status.js")]: `static/fundraising-status.js`,
+			[resolveModule("@aarongustafson/table-sortable/table-sortable.js")]: `static/table-sortable.js`,
 			[resolveModule("@zachleat/browser-window")]: `static/browser-window.js`,
 			[resolveModule("@zachleat/squirminal")]: `static/squirminal.js`,
 			[resolveModule("@zachleat/pagefind-search")]: `static/pagefind-search.js`,
@@ -280,6 +284,17 @@ export default async function(eleventyConfig) {
 	// eleventyConfig.addLiquidFilter("round", function(num, digits = 2) {
 	// 	return parseFloat(num).toFixed(digits);
 	// });
+
+	// Neglect pills read as a quick magnitude, not a measurement—two significant digits is all
+	// they need (22%, 11%, 0.5%). toPrecision does the rounding, Number drops the zeros it pads
+	// with, so 0.50 renders as 0.5 and 1.0e+2 as 100.
+	eleventyConfig.addLiquidFilter("significantDigits", function(n, digits = 2) {
+		let num = parseFloat(n);
+		if(!Number.isFinite(num)) {
+			return n;
+		}
+		return Number(num.toPrecision(digits));
+	});
 
 	eleventyConfig.addLiquidFilter("round", function(n, d = 0) {
 		const f = 10 ** d;

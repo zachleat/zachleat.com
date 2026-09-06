@@ -1,6 +1,8 @@
 ---
 title: I Never Blame My Tools
 layout: layouts/pagealign.liquid
+modules:
+  - "/static/filter-container.js"
 ---
 ## Site Colophon
 

@@ -4,6 +4,8 @@ layout: layouts/pagealign.liquid
 enableWebmentions: true
 eleventyImport:
   collections: ["blog-post"]
+modules:
+  - "/static/filter-container.js"
 ---
 <filter-container oninit delimiter=" ">
 	<div class="flex">
