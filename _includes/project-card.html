@@ -128,6 +128,14 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 {%- else -%}
 	<time-difference live mode="strip-suffix"><time datetime="{{ project.repoCreatedAt }}" title="{{ project.repoCreatedAt }}">{{ project.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
 	{%- if project.repoCreatedAt | isWithinPastMonth %}<span class="new-pill">New</span>{% endif %}
+	{%- comment %} a repo that never shipped to npm has no release date to show below its age, so
+	its last commit stands in—the same “newest activity” signal a published package’s latest
+	version gives {% endcomment -%}
+	{%- if project.pushedAt %}
+	<div class="m-2">
+		<small class="nowrap"><em>Updated <time-difference live><time datetime="{{ project.pushedAt }}" title="{{ project.pushedAt }}">{{ project.pushedAt | readableDateFromISO: readableDateFormat }}</time></time-difference></em></small>
+	</div>
+	{%- endif %}
 {%- endif -%}
 {% if not project.isArchived %}
 	{% if project.lastStablePublishVersion %}
@@ -185,8 +193,9 @@ the component's numeric detection kicks in—it only recognizes a whole number {
 {%- assign sortCdnHits = cdnHitsTotal | default: 0 %}
 {%- assign sortStars = project.stars | default: 0 %}
 {%- assign sortPopularity = sortDownloads | plus: sortCdnHits | plus: sortStars %}
-{%- comment %} newest release the cell names, or the repo's creation date when it never shipped {% endcomment -%}
-{%- assign sortVersions = project.lastStablePublish | default: project.lastPublish | default: project.repoCreatedAt %}
+{%- comment %} newest date the cell names: the latest release, or the last commit for a repo that
+never shipped, falling back to the repo's creation date when GitHub reports no push {% endcomment -%}
+{%- assign sortVersions = project.lastStablePublish | default: project.lastPublish | default: project.pushedAt | default: project.repoCreatedAt %}
 
 {%- if cardAsRow %}
 {%- comment %} the score is fractional, but table-sortable only detects a sort key as numeric
