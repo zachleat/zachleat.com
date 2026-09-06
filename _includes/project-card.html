@@ -189,7 +189,10 @@ the component's numeric detection kicks in—it only recognizes a whole number {
 {%- assign sortVersions = project.lastStablePublish | default: project.lastPublish | default: project.repoCreatedAt %}
 
 {%- if cardAsRow %}
-<td class="numeric">{{ neglectFragment }}</td>
+{%- comment %} the score is fractional, but table-sortable only detects a sort key as numeric
+when it's a whole number—so it's scaled by 100 here. Archived rows show no score but keep their
+real one to sort by {% endcomment -%}
+<td class="numeric" data-sort-value="{{ project.score | default: 0 | times: 100 | round }}">{{ neglectFragment }}</td>
 {%- comment %} the name cell used to span the Popularity column when a project had nothing to
 show there. It can't now: table-sortable picks a cell by index, so a colspan would shift every
 column after it out of alignment {% endcomment -%}
@@ -197,8 +200,8 @@ column after it out of alignment {% endcomment -%}
 <td class="numeric popularity" data-sort-value="{{ sortPopularity }}">{% if hasPopularity %}{{ popularityFragment }}{% endif %}</td>
 <td data-sort-value="{{ sortVersions }}">{{ versionsFragment }}</td>
 <td class="numeric">{{ auditFragment }}</td>
-<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}" data-sort-value="{{ project.openIssues | default: 0 }}">{{ issuesFragment }}</td>
-<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}" data-sort-value="{{ project.openPRs | default: 0 }}">{{ prsFragment }}</td>
+<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}">{{ issuesFragment }}</td>
+<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}">{{ prsFragment }}</td>
 {%- else %}
 {%- capture projectRowKey %}{{ project.nameWithOwner }}|{{ project.packageName }}{% endcapture %}
 {%- assign projectRowId = reportData.rowIdByPackage[ projectRowKey ] %}

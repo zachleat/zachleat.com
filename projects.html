@@ -24,10 +24,6 @@ modules:
 		white-space: nowrap;
 	}
 
-	.rank-col {
-		color: #777;
-	}
-
 	/* table-sortable replaces a `[data-sortable]` header’s contents with a <button>—which has to
 	   read as the header text it replaced, not as a control */
 	th button {
@@ -44,10 +40,22 @@ modules:
 	th button:hover {
 		text-decoration: underline;
 	}
-	/* the ↑/↓ the component appends via `content` on the sorted header */
-	th[aria-sort="none"] button::after {
-		content: "↕";
+	/* the component draws its own ↑/↓ through `content: var(--sort-indicator-*)`; blanking those
+	   leaves the cloned icons as the only indicator */
+	th button .sort-icon {
+		display: none;
+	}
+	th[aria-sort="none"] button .sort-icon--none,
+	th[aria-sort="ascending"] button .sort-icon--asc,
+	th[aria-sort="descending"] button .sort-icon--desc {
+		display: inline-flex;
+	}
+	th[aria-sort="none"] button .sort-icon {
 		opacity: .35;
+	}
+	.sort-icon .z-icon {
+		width: 1em;
+		height: 1em;
 	}
 	th[aria-sort]:not([aria-sort="none"]) {
 		background-color: #f2f2f2;
@@ -297,27 +305,28 @@ modules:
 		</select>
 	</label>
 </form>
+{%- comment %} the sort indicators, rendered here so the `icon` shortcode can register them in
+the page sprite—projects-table-sort.js clones this into every sortable header's button, and CSS
+below shows whichever one matches the column's `aria-sort` {% endcomment -%}
+<template id="table-sort-icons"><span class="sort-icon sort-icon--none">{% icon "fas:sort" %}</span><span class="sort-icon sort-icon--asc">{% icon "fas:sort-up" %}</span><span class="sort-icon sort-icon--desc">{% icon "fas:sort-down" %}</span></template>
 <div class="table-scroll">
-<table-sortable label-sortable="Sort by this column">
+<table-sortable label-sortable="Sort by this column" style="--sort-indicator-asc: ''; --sort-indicator-desc: ''">
 <table id="projects" class="projects-table">
-  {%- comment %} `data-sortable` opts a column in. Sorting on # restores the order the table ships
-  in, so it doubles as the way back out of any other sort—and since the rank is derived from
-  Neglect, that column would only repeat it. Audit has no meaningful order of its own {% endcomment %}
+  {%- comment %} `data-sortable` opts a column in; `data-sorted` marks the one the table already
+  ships ordered by, so its header starts marked instead of neutral {% endcomment %}
   <thead>
     <tr>
-      <th class="numeric" data-sortable>#<span class="sr-only"> Neglect rank</span></th>
-      <th class="numeric">Neglect</th>
+      <th class="numeric" data-sortable data-sorted="descending">Neglect</th>
       <th class="name-col" data-sortable>{% icon "fas:box-open" %}Name</th>
       <th class="numeric" data-sortable>Popularity</th>
       <th data-sortable>Versions</th>
       <th class="numeric">Audit</th>
-      <th class="numeric" data-sortable>Issues</th>
-      <th class="numeric" data-sortable>PRs</th>
+      <th class="numeric">Issues</th>
+      <th class="numeric">PRs</th>
     </tr>
   </thead>
 	<tfoot>
 		<tr>
-			<th class="numeric"></th>
 			<th class="numeric"></th>
 			<th class="name-col">
 				<strong>{{ packages | size | renderNumber }} Projects Total</strong>
@@ -363,9 +372,6 @@ modules:
 		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if not result.isArchived and not result.npmDeprecated %}active,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{% if hasNoPost and not result.isArchived %}nopost,{% endif %}{%- endcapture %}
 		{%- capture rowKey %}{{ result.nameWithOwner }}|{{ result.packageName }}{% endcapture -%}
 		<tr id="{{ reportData.rowIdByPackage[ rowKey ] }}" data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}" class="neglect-score{% if result.isArchived %} archived{% endif %}">
-			{%- comment %} archived rows show no rank but still need one to sort by—`forloop.index`
-			runs over every row in the shipped order, which already puts them last {% endcomment -%}
-			<td class="rank-col numeric" data-sort-value="{{ forloop.index }}">{%- if not result.isArchived %}{{ forloop.index }}{% endif %}</td>
 			{%- assign project = result -%}
 			{%- assign cardAsRow = true -%}
 			{%- include "project-card.html" -%}

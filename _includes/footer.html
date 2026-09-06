@@ -26,8 +26,9 @@
 				{%- endrenderTemplate %}
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[urlWithOrigin] %}
-				<script type="module" src="/static/speedlify2-score.js"></script>
-				<speedlify2-score theme="light" speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify2-score>
+				<is-land on:visible import="/static/speedlify2-score.js">
+					<speedlify2-score theme="light" speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify2-score>
+				</is-land>
 {%- endif %}
 			</div>
 		</form>
