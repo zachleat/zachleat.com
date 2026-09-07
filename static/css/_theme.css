@@ -1675,7 +1675,7 @@ a[href].tag-inline:not(.tag-borderless),
 .project-card {
 	border: 1px solid rgba(0, 0, 0, .1);
 	border-radius: var(--z-border-radius-2);
-	background-color: #f3f3f3;
+	background-color: #fafafa;
 	box-shadow: 0 0 0 .125em rgba(0, 0, 0, .06);
 	padding: 1em;
 	margin-block-end: 1em;
