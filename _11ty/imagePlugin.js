@@ -11,6 +11,22 @@ const ONE_DAY = 24*60*60*1000;
 const DEFAULT_CACHEBUSTER = "_20251031";
 const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "30d" : "1d";
 
+// Same geometry as sparkline-svg, but against a caller's ceiling instead of the series' own max.
+function getFixedDomainPath(values, domainMax, width, height) {
+	let round = number => Math.round(number * 100) / 100;
+	let getY = value => round(height - Math.min(Number(value) / domainMax, 1) * height);
+
+	// one point has no run to divide by, so hold it flat across the full width
+	if(values.length === 1) {
+		return `M 0,${getY(values[0])} L ${width},${getY(values[0])}`;
+	}
+
+	let lastIndex = values.length - 1;
+	let points = values.map((value, index) => `${round(index / lastIndex * width)},${getY(value)}`);
+
+	return `M ${points.join(" L ")}`;
+}
+
 async function imageFactory(src, options = {}) {
 	options = Object.assign({},{
 		widths: ["auto"],
@@ -233,7 +249,7 @@ export default function(eleventyConfig) {
 		return getScreenshotUrlFromPath(url);
 	});
 
-	eleventyConfig.addShortcode("sparklineDataUri", function sparkline(values, width, height, color, strokeWidth = 1) {
+	eleventyConfig.addShortcode("sparklineDataUri", function sparkline(values, width, height, color, strokeWidth = 1, domainMax) {
 		if(typeof values === "string") {
 			values = values.split(",");
 		}
@@ -255,6 +271,11 @@ export default function(eleventyConfig) {
 			.replace(`viewBox="0 0 ${width} ${height}"`, `viewBox="${-inset} ${-inset} ${width + strokeWidth} ${height + strokeWidth}"`)
 			// round joins/caps keep miter spikes from poking outside of the inset
 			.replace(/<path\b/g, `$& stroke-linecap="round" stroke-linejoin="round"`);
+
+		// a shared ceiling instead of each series' own max, so a column compares row to row
+		if(domainMax > 0 && values.length > 0) {
+			svg = svg.replace(/ d="[^"]*"/, ` d="${getFixedDomainPath(values, domainMax, width, height)}"`);
+		}
 
 		return `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
 	});

@@ -1418,7 +1418,7 @@ a[href].tag-inline:not(.tag-borderless),
 	--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
 }
 :root {
-	/* a perfect score gets its own green, distinct from the pale gradient */
+	/* the green a sub-1% score and the exact-zero bar share, distinct from the pale gradient */
 	--neglect-zero-color: hsl(145 45% 52%);
 }
 .neglect {
@@ -1430,7 +1430,7 @@ a[href].tag-inline:not(.tag-borderless),
 	white-space: nowrap;
 	color: inherit;
 }
-.neglect--zero {
+.neglect--seedling {
 	background: var(--neglect-zero-color);
 	color: #fff;
 }
@@ -1484,8 +1484,23 @@ a[href].tag-inline:not(.tag-borderless),
 		width: fit-content;
 	}
 	.popularity .spark {
-		/* the only right-aligned column of the two, so it rides over with its numbers */
+		/* a right-aligned column, so it rides over with its numbers */
 		margin-inline-start: auto;
+	}
+	/* the narrowest of the three, and its labels take no --min/--max modifier: on a shared
+	   ceiling the line rarely reaches the top, so an edge-pinned label would point at nothing */
+	.neglect-spark {
+		margin-inline-start: auto;
+		/* match the pill's trailing margin, so their right edges line up */
+		margin-inline-end: .25em;
+	}
+	.neglect-spark .spark-img {
+		width: 36px;
+		height: 12px;
+	}
+	/* ended where it started: still shown, but not at the weight of a row that moved */
+	.neglect-spark--unchanged {
+		opacity: .4;
 	}
 	/* the releases series runs to 146 monthly points against the downloads’ 12, so it gets
 	   the room its column has to spare */

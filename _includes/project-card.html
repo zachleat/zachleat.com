@@ -25,7 +25,23 @@ worth showing on its own—so plenty of projects still leave the Popularity sect
 {%- if project.downloads > minimumDownloads or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
 
 {%- capture neglectFragment %}
-{%- if not project.isArchived %}<strong class="neglect{% if project.score == 0 %} neglect--zero{% endif %}">{{ project.score | significantDigits: 2 }}%{% if project.score == 0 %}{% icon "fas:seedling" %}{% else %}{% icon "fas:skull" %}{% endif %}</strong>{% endif %}
+{%- comment %} a score under 1% is a rounding artifact away from perfect, so it keeps the seedling {% endcomment -%}
+{%- if not project.isArchived %}<strong class="neglect{% if project.score < 1 %} neglect--seedling{% endif %}">{{ project.score | significantDigits: 2 }}%{% if project.score < 1 %}{% icon "fas:seedling" %}{% else %}{% icon "fas:skull" %}{% endif %}</strong>
+{%- comment %} daily score history, on a shared ceiling so height compares row to row {% endcomment -%}
+{%- if cardAsRow and project.scoreHistory.size > 0 %}
+{%- comment %} first and last score, not low and high—the line is about direction {% endcomment -%}
+{%- assign neglectStartLabel = project.scoreHistory | first | round %}
+{%- assign neglectEndLabel = project.scoreHistory | last | round %}
+{%- assign neglectSparkClass = "" %}
+{%- comment %} no net change, so it recedes behind the rows that moved {% endcomment -%}
+{%- if neglectStartLabel == neglectEndLabel %}{% assign neglectSparkClass = " neglect-spark--unchanged" %}{% endif %}
+{%- comment %} the only place the scores are exact, the labels being rounded {% endcomment -%}
+{%- capture neglectSparkAlt %}Neglect score history sparkline for {{ project.packageName | default: project.nameWithOwner }}, starting at {{ project.scoreHistory | first | significantDigits: 2 }}% and ending at {{ project.scoreHistory | last | significantDigits: 2 }}% on a {{ reportData.neglectScoreMax }}% scale{% endcapture -%}
+<span class="spark neglect-spark{{ neglectSparkClass }}"><span class="spark-axis" aria-hidden="true">{{ neglectStartLabel }}</span>
+	<img src="{% sparklineDataUri project.scoreHistory, 36, 12, '#aaa', 1, reportData.neglectScoreMax %}" width="36" height="12" alt="{{ neglectSparkAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+	<span class="spark-axis" aria-hidden="true">{{ neglectEndLabel }}</span></span>
+{%- endif %}
+{%- endif %}
 {%- endcapture %}
 
 {%- capture nameFragment %}

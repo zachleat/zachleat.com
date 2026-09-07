@@ -40,6 +40,17 @@ function getCdnHitsTotals(packages) {
 	);
 }
 
+// The shared ceiling every Neglect sparkline is drawn against, rounded up so it rarely shifts.
+const NEGLECT_DOMAIN_STEP = 5;
+const NEGLECT_DOMAIN_MIN = 10;
+
+function getNeglectScoreMax(projects) {
+	let scores = projects.flatMap(pkg => pkg.scoreHistory || []);
+	let max = scores.length ? Math.max(...scores) : 0;
+
+	return Math.max(Math.ceil(max / NEGLECT_DOMAIN_STEP) * NEGLECT_DOMAIN_STEP, NEGLECT_DOMAIN_MIN);
+}
+
 // The report has one row per package, so a repo can hold several. Neither name identifies a row on
 // its own: a workspace repo repeats `nameWithOwner`, and two repos can even publish the same
 // `packageName` (11ty/api-opengraph-image and 11ty/api-indieweb-avatar both say
@@ -109,6 +120,7 @@ export default async function() {
 		return {
 			report,
 			...getRowsByPackage(report.projects),
+			neglectScoreMax: getNeglectScoreMax(report.projects),
 			sparklinesByPackage,
 			downloadsRangeByPackage: getRangesBySeries(sparklinesByPackage, "monthlyDownloads"),
 			releasesRangeByPackage: getRangesBySeries(sparklinesByPackage, "monthlyReleases"),
@@ -127,6 +139,7 @@ export default async function() {
 			report: { projects: [] },
 			rowIdByPackage: {},
 			rankByPackage: {},
+			neglectScoreMax: NEGLECT_DOMAIN_MIN,
 			sparklinesByPackage: {},
 			downloadsRangeByPackage: {},
 			releasesRangeByPackage: {},
