@@ -27,4 +27,4 @@ Currently my most neglected package is the [Eleventy Vue plugin](https://github.
 
 **All of my 77 other packages only have 11 total npm audit reports!** I’m feeling extremely proud of that, which feels related to the work I’ve been doing to [lock down publishing workflows](/web/npm-security/) and [reduce dependencies](https://www.11ty.dev/blog/dependency-watch/). Though that number may change over time, I now have an easy centralized place to check it. This report also makes it very obvious the relationship between dependency count and audit reports. [Keep reducing those dependencies, y’all!](https://e18e.dev/)
 
-The other result of monitoring this report is that I have archived a bunch of old projects that I don’t want to track, which has a nice clensing feeling to it.
+The other result of monitoring this report is that I have archived a bunch of old projects that I don’t want to track, which has a nice cleansing feeling to it.
