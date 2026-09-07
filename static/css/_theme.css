@@ -1424,7 +1424,9 @@ a[href].tag-inline:not(.tag-borderless),
 	border-radius: var(--z-border-radius-1);
 	background: hsl(var(--neglect-hue) 85% 70%);
 	white-space: nowrap;
-	color: #333;
+	/* the ramp's red end is the darkest background the pill takes, so the text is set against
+	   that worst case rather than the green end */
+	color: #2b2b2b;
 }
 .neglect svg.z-icon {
 	width: 1em;
@@ -1519,7 +1521,7 @@ a[href].tag-inline:not(.tag-borderless),
 	.spark-axis {
 		font-size: .6153846153846em; /* 8px /13 */
 		line-height: 1;
-		color: #999;
+		color: #6b6b6b;
 		font-variant-numeric: tabular-nums;
 	}
 	.spark-axis--min {
@@ -1603,7 +1605,7 @@ a[href].tag-inline:not(.tag-borderless),
 		padding: .0625em .375em;
 		border-radius: 1em;
 		background: rgba(0, 0, 0, .06);
-		color: #777;
+		color: #666;
 		font-size: .6875rem; /* 11px /16 */
 		font-weight: 700;
 		text-transform: none;
@@ -1616,7 +1618,7 @@ a[href].tag-inline:not(.tag-borderless),
 		display: inline-block;
 		padding: .0625em .375em;
 		border-radius: 1em;
-		background: #2f8f4e;
+		background: #2b8047;
 		color: #fff;
 		font-size: .6875rem; /* 11px /16 */
 		font-weight: 700;
@@ -1625,6 +1627,7 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.is-workspace {
 		opacity: .4;
+		color: #6b6b6b;
 	}
 	/* the emoji stands in for a .z-icon here, so it takes the same box—centered in it, since
 	   an emoji’s own advance width is up to the platform */
