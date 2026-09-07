@@ -1417,25 +1417,15 @@ a[href].tag-inline:not(.tag-borderless),
 .neglect-score {
 	--neglect-hue: calc(145 - (clamp(0, var(--neglect-score), 50) * 2.9));
 }
-:root {
-	/* the green a sub-1% score and the exact-zero bar share, distinct from the pale gradient */
-	--neglect-zero-color: hsl(145 45% 52%);
-}
 .neglect {
 	display: inline-block;
 	padding: .125em .3125em;
 	margin-inline-end: .25em;
 	border-radius: var(--z-border-radius-1);
-	background: hsl(var(--neglect-hue) 70% 90%);
+	background: hsl(var(--neglect-hue) 85% 70%);
 	white-space: nowrap;
-	color: inherit;
+	color: #333;
 }
-.neglect--seedling {
-	background: var(--neglect-zero-color);
-	color: #fff;
-}
-/* the skull trails the score inside the pill, so it runs smaller than a standalone icon and
-   drops the trailing margin that would otherwise pad the pill out on the right */
 .neglect svg.z-icon {
 	width: 1em;
 	height: 1em;
@@ -1443,7 +1433,6 @@ a[href].tag-inline:not(.tag-borderless),
 	vertical-align: -.0625em;
 	opacity: .75;
 }
-/* End Neglect score pill */
 
 /* Project name/stats fragments, rendered by project-card.html: the projects table
    (.projects-table) wraps each in a <td>, and a standalone card (.project-card) wraps them in a
