@@ -7,13 +7,17 @@ permalink: "static/opengraph.css"
 	box-sizing: border-box;
 }
 html {
-	overflow-y: hidden;
 	scrollbar-gutter: auto;
+	/* The builder UI sits below the card, so the page must scroll — but a
+	   scrollbar would eat pixels off the right edge of a 1200px screenshot. */
+	scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+	display: none;
 }
 html,
 body {
 	margin: 0;
-	height: 100%;
 }
 @font-face {
 	font-family: SFDisplayBlack;
@@ -22,10 +26,17 @@ body {
 
 :root {
 	--slide-border-width: 3px;
+	--og-w: 1200px;
+	--og-h: 630px;
 }
 
+/* The screenshot target: sized exactly and pinned to the top left of the page
+   so a 1200×630 viewport screenshot captures it edge to edge. */
 .slide {
-	min-height: 100%;
+	container-type: inline-size;
+	width: var(--og-w);
+	height: var(--og-h);
+	overflow: hidden;
 	outline: none;
 	border: var(--slide-border-width) solid transparent;
 }
@@ -241,7 +252,7 @@ body {
 	margin: 0;
 }
 .main-hed-long {
-	font-size: clamp(2.2em, 4.5vw, 3.5em)
+	font-size: clamp(2.2em, 4.5cqw, 3.5em)
 }
 .main-hed-sup {
 	line-height: 1.5;
@@ -267,6 +278,9 @@ body {
 	.main-box-nowrap {
 		white-space: nowrap;
 	}
+}
+.main-left[hidden] {
+	display: none;
 }
 .main-left {
 	position: absolute;
@@ -297,6 +311,10 @@ body {
 .main-right > * {
 	line-height: 1.5;
 }
+/* .main-box sets `display: inline`, which outranks the UA rule for [hidden] */
+.main-right [hidden] {
+	display: none;
+}
 
 .main-host {
 	margin-right: 1em;
@@ -313,4 +331,71 @@ body {
 }
 .slide-chromeless .window {
 	box-shadow: none;
+}
+/* Builder UI, deliberately below the card so it stays out of screenshots */
+.ui {
+	max-width: var(--og-w);
+	padding: 2rem 2.5rem 5rem;
+	font-family: -apple-system, system-ui, sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+	color: #222;
+}
+.ui h2 {
+	font-size: 1.125rem;
+	margin: 0 0 .25em;
+}
+.ui p {
+	margin: 0 0 1.5em;
+	color: #666;
+}
+.ui-fields {
+	display: grid;
+	gap: 1rem;
+}
+.ui label {
+	display: grid;
+	gap: .35em;
+	align-content: start;
+	font-weight: 600;
+}
+.ui select {
+	font: inherit;
+	font-weight: 400;
+	padding: .5em .65em;
+	border: 2px solid #ccc;
+	border-radius: .4em;
+	background-color: #fff;
+	color: inherit;
+	min-width: 0;
+}
+.ui-actions {
+	margin-block-start: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: .75rem;
+	align-items: center;
+}
+.ui-actions a,
+.ui-actions button {
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+	padding: .55em 1.2em;
+	border: 2px solid #203b1d;
+	border-radius: 100px;
+	background-color: #203b1d;
+	line-height: 1;
+	text-decoration: none;
+}
+.ui-actions a,
+.ui-actions a:visited,
+.ui-actions button {
+	color: #fff;
+}
+.ui code {
+	font-family: ui-monospace, Menlo, Consolas, monospace;
+	background-color: #eee;
+	padding: .15em .4em;
+	border-radius: .3em;
 }

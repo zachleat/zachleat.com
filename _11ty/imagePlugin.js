@@ -210,10 +210,11 @@ export default function(eleventyConfig) {
 
 	// Screenshots
 	eleventyConfig.addLiquidShortcode("screenshotImageHtmlFullUrl", screenshotImageHtmlFullUrl);
-	eleventyConfig.addLiquidShortcode("rawScreenshotImageFromFullUrl", function(fullUrl, options) {
+	// Universal, not Liquid-only: web/opengraph.njk calls these too.
+	eleventyConfig.addShortcode("rawScreenshotImageFromFullUrl", function(fullUrl, options) {
 		return getScreenshotUrl(fullUrl, options);
 	});
-	eleventyConfig.addLiquidShortcode("rawScreenshotImage", function(postUrl, options) {
+	eleventyConfig.addShortcode("rawScreenshotImage", function(postUrl, options) {
 		return getScreenshotUrlFromPath(postUrl, options);
 	});
 

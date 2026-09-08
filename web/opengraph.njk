@@ -1,0 +1,165 @@
+---
+layout: layouts/base.liquid
+permalink: "/opengraph/"
+stylesheetsDist:
+  - opengraph.css
+noindex: true
+excludeFromSearch: true
+eleventyExcludeFromCollections: true
+---
+{#
+Single source page for every Open Graph image, replacing the per-post pages in
+opengraph-images.liquid. Both ship side by side until ogImageSource is flipped
+over to this one.
+
+The card below is exactly 1200×630 at the top left, so a screenshot of that
+viewport captures it edge to edge; everything under it is builder UI and stays
+out of the shot.
+
+`?page=/web/some-post/` picks a post; that is the only knob. Every value on the
+card is baked in at build time, so the page can only ever render one of this
+site’s own posts — or, with no (or an unrecognized) `page`, the default card.
+
+More Ideas:
+* Git last updated
+* Put a TL;DR right there in the OG image (with alt text of course)
+#}
+<div class="slide slide-chromeless slide-preview slide-preview-vertical slide-preview-60-40" tabindex="0" autofocus>
+	<div class="frame">
+		<div class="window frame-resizer-main">
+			<main class="main main-bgimg" id="og-main">
+				<div class="main-top">
+					<h1 class="primary-title main-hed" id="og-hed"><span class="main-box" id="og-hed-text"></span></h1>
+				</div>
+				<p class="main-left" id="og-face">
+					<img src="/img/avatar-2025.png" width="336" height="288" alt="Zach standing in a powerstance, to appear powerful" decoding="async" class="main-avatar-img-big">
+				</p>
+				<p class="main-center"></p>
+				<p class="main-right">
+					<strong class="main-host main-box">zachleat.com</strong>
+					<span class="main-postnumber main-box main-box-nowrap" id="og-number"></span>
+					<strong class="main-box main-box-nowrap" id="og-date"></strong>
+				</p>
+			</main>
+		</div>
+	</div>
+</div>
+
+<div class="ui">
+	<h2>Open Graph image source</h2>
+	<p>Screenshot the top <code>1200×630</code> of this page. Everything below the card is builder UI and stays out of the shot.</p>
+	<div class="ui-fields">
+		<label>Post
+			<select id="field-page"></select>
+		</label>
+	</div>
+	<div class="ui-actions">
+		<button type="button" id="copy-link">Copy link to this image</button>
+		<a id="open-screenshot" href="" target="_blank" rel="noopener">Open screenshot URL</a>
+	</div>
+</div>
+
+{# Shown when ?page= is missing or names something that isn’t a post: the
+site’s name over a screenshot of the home page, with no date or №. #}
+{%- set ogHomeBackground %}{% rawScreenshotImage "/" %}{% endset -%}
+<script type="application/json" id="og-default">["","Zach Leatherman","",0,{{ ogHomeBackground | dump | safe }},0,""]</script>
+
+<script type="application/json" id="og-posts">[
+{%- set postCount = collections.posts.length -%}
+{%- for post in collections.posts -%}
+{%- set ogTitle %}{% if post.data.titleHtml %}{{ post.data.titleHtml | safe }}{% else %}{{ post.data.title | safe }}{% endif %}{% endset -%}
+{%- set ogBackground %}{% if post.data.external_url and post.data.external_url_screenshotmode == 'opengraph' %}https://v1.opengraph.11ty.dev/{{ post.data.external_url | urlencode }}/auto/jpeg/{% elif post.data.seo.openGraphBackgroundImage %}{{ post.data.seo.openGraphBackgroundImage }}{% elif post.data.overrideOgImageScreenshotBackground %}{% rawScreenshotImageFromFullUrl post.data.overrideOgImageScreenshotBackground %}{% elif post.data.external_url %}{% rawScreenshotImageFromFullUrl post.data.external_url %}{% else %}{% rawScreenshotImage post.url %}{% endif %}{% endset -%}
+{% if not loop.first %},{% endif %}[{{ post.url | dump | safe }},{{ ogTitle | dump | replace("</", "<\\/") | safe }},{{ post.date | readableDate | dump | safe }},{{ postCount - loop.index0 }},{{ ogBackground | dump | safe }},{% if post.data.opengraphSkipFace %}1{% else %}0{% endif %},{{ post.date | readableDate("yyyy") | dump | safe }}]
+{%- endfor -%}
+]</script>
+
+{# Classic, non-deferred script: the screenshot service must never catch this
+page mid-render. #}
+<script>
+(function() {
+	var ORIGIN = "https://www.zachleat.com";
+	var POSTS = JSON.parse(document.getElementById("og-posts").textContent);
+	var DEFAULT = JSON.parse(document.getElementById("og-default").textContent);
+
+	var main = document.getElementById("og-main");
+	var hed = document.getElementById("og-hed");
+	var hedText = document.getElementById("og-hed-text");
+	var face = document.getElementById("og-face");
+	var numberOut = document.getElementById("og-number");
+	var dateOut = document.getElementById("og-date");
+
+	var pageField = document.getElementById("field-page");
+	var openScreenshot = document.getElementById("open-screenshot");
+
+	function entryFor(url) {
+		for(var i = 0; i < POSTS.length; i++) {
+			if(POSTS[i][0] === url) {
+				return POSTS[i];
+			}
+		}
+	}
+
+	function stripTags(html) {
+		var el = document.createElement("div");
+		el.innerHTML = html;
+		return el.textContent;
+	}
+
+	pageField.append(new Option("Zach Leatherman (default)", DEFAULT[0]));
+
+	// Group the <select> by year, newest first (collections.posts order).
+	var group;
+	for(var i = 0; i < POSTS.length; i++) {
+		var entry = POSTS[i];
+		if(!group || group.label !== entry[6]) {
+			group = document.createElement("optgroup");
+			group.label = entry[6];
+			pageField.append(group);
+		}
+		group.append(new Option("№" + entry[3] + " — " + stripTags(entry[1]), entry[0]));
+	}
+
+	function render(updateUrl) {
+		var entry = entryFor(pageField.value) || DEFAULT;
+
+		hedText.innerHTML = entry[1];
+		// Measured against the source string, tags and all, to match what the
+		// paginated template does at build time.
+		hed.classList.toggle("main-hed-long", entry[1].length > 68);
+		// The default card carries neither, so both boxes go away.
+		dateOut.textContent = entry[2];
+		dateOut.hidden = !entry[2];
+		numberOut.textContent = "№" + entry[3];
+		numberOut.hidden = !entry[3];
+		main.style.setProperty("--og-bgimage", "url('" + entry[4].replace(/'/g, "%27") + "')");
+		face.hidden = Boolean(entry[5]);
+
+		// Only a post ends up in the URL; the default is the bare page.
+		var query = entry === DEFAULT ? "" : "?page=" + encodeURIComponent(entry[0]);
+		openScreenshot.href = "https://screenshot.11ty.app/" + encodeURIComponent(ORIGIN + "/opengraph/" + query) + "/opengraph/";
+
+		if(updateUrl !== false) {
+			history.replaceState(null, "", query || location.pathname);
+		}
+	}
+
+	// ?page= can only ever name one of the posts baked in above; anything else
+	// falls back to the default card.
+	var requested = new URLSearchParams(location.search).get("page");
+	pageField.value = (entryFor(requested) || DEFAULT)[0];
+
+	render(false);
+
+	pageField.addEventListener("change", function() {
+		render();
+	});
+
+	document.getElementById("copy-link").addEventListener("click", async function() {
+		await navigator.clipboard.writeText(location.href);
+		this.textContent = "Copied!";
+		setTimeout(() => {
+			this.textContent = "Copy link to this image";
+		}, 2000);
+	});
+})();
+</script>
