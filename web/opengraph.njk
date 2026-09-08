@@ -8,9 +8,8 @@ excludeFromSearch: true
 eleventyExcludeFromCollections: true
 ---
 {#
-Single source page for every Open Graph image, replacing the per-post pages in
-opengraph-images.liquid. Both ship side by side until ogImageSource is flipped
-over to this one.
+Single source page for every Open Graph image, replacing the per-post pages
+this template used to paginate out.
 
 The card below is exactly 1200×630 at the top left, so a screenshot of that
 viewport captures it edge to edge; everything under it is builder UI and stays
@@ -60,9 +59,10 @@ More Ideas:
 </div>
 
 {# Shown when ?page= is missing or names something that isn’t a post: the
-site’s name over a screenshot of the home page, with no date or №. #}
+site’s name broken over two lines, on a screenshot of the home page, with no
+date or №. #}
 {%- set ogHomeBackground %}{% rawScreenshotImage "/" %}{% endset -%}
-<script type="application/json" id="og-default">["","Zach Leatherman","",0,{{ ogHomeBackground | dump | safe }},0,""]</script>
+<script type="application/json" id="og-default">["","Zach<br>Leatherman","",0,{{ ogHomeBackground | dump | safe }},0,""]</script>
 
 <script type="application/json" id="og-posts">[
 {%- set postCount = collections.posts.length -%}

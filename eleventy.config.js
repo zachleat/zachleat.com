@@ -96,7 +96,6 @@ export default async function(eleventyConfig) {
 	// More in .eleventyignore
 	if(!process.env.PRODUCTION_BUILD) {
 		eleventyConfig.ignores.add("./follow/*");
-		eleventyConfig.ignores.add("./web/opengraph-images.liquid");
 	}
 
 	eleventyConfig.setUseGitIgnore(false);

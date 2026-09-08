@@ -8,7 +8,7 @@ import Sparkline from "sparkline-svg";
 const SIZES_INLINE = "(min-width: 75em) 44.5625em, (min-width: 61.25em) 40.6875em, (min-width: 41.25em) 36.8125em, 96vw";
 
 const ONE_DAY = 24*60*60*1000;
-const DEFAULT_CACHEBUSTER = "_20251031";
+const DEFAULT_CACHEBUSTER = "_20260908";
 const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "30d" : "1d";
 
 // Same geometry as sparkline-svg, but against a caller's ceiling instead of the series' own max.
@@ -243,7 +243,7 @@ export default function(eleventyConfig) {
 					cacheBustOverride = `_p${Date.now()}`;
 				}
 			}
-			return getScreenshotUrlFromPath(`/opengraph${url}`, undefined, cacheBustOverride);
+			return getScreenshotUrlFromPath(`/opengraph/?page=${encodeURIComponent(url)}`, undefined, cacheBustOverride);
 		}
 
 		// raw screenshot
