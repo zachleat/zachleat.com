@@ -7,11 +7,13 @@ Here’s the gist:
 
 > Open Graph images are those little pictures that show up when your site is shared on social media. […] Each individual blog post (on my website) has a dedicated Open Graph image page.
 
-These Open Graph pages had the URL shape `/web/:title/opengraph/`.
+These Open Graph pages had the URL shape `/web/:title/opengraph/` and there were 474 of them.
 
 This was great from a purist’s perspective (in that the Open Graph pages were built similarly to how I build other websites) but my perspective has changed a bit. I don’t think that server rendering a static page for each of the 474 blog posts is necessary! 🫣
 
 Now I use [**one `/opengraph/` page**](/opengraph/) that **client renders** _(the horror!)_ the appropriate metadata for the Open Graph image. Client rendering here is an appropriate tradeoff for build time because this page is still going through a Chromium-based screenshot service and the ultimate deliverable is a static image. This page isn’t intended to be consumed by human beings (unless they _really_ want to, I dunno, I’m not your dad).
+
+Note that the caching mechanism hasn’t changed: it still lives in the screenshot service and the images aren’t being regenerated in either method.
 
 I now use this approach on a few places and it’s made implementing Open Graph support on websites much easier to build and manage:
 
