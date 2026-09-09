@@ -528,6 +528,22 @@ export default async function(eleventyConfig) {
 		return getPosts(collection);
 	});
 
+	// Non-post pages that get a card on /opengraph/. The home page is left out on
+	// purpose: the default card already renders it.
+	eleventyConfig.addCollection("opengraphPages", function(collection) {
+		return collection.getAll()
+			.filter(function(item) {
+				return item.url &&
+					item.url !== "/" &&
+					item.data.title &&
+					!item.data.noindex &&
+					!item.data.excludeFromSearch &&
+					!item.inputPath.startsWith("./_posts/") &&
+					(item.outputPath || "").endsWith(".html");
+			})
+			.sort((a, b) => a.data.title.localeCompare(b.data.title));
+	});
+
 	eleventyConfig.addCollection("activePosts", function(collection) {
 		return getPosts(collection).filter(function(item) {
 			return !item.data.deprecated;

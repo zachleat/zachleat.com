@@ -219,35 +219,27 @@ export default function(eleventyConfig) {
 	});
 
 	// Used to add eleventy:ignore to opengraph images that aren’t yet available for image optimization (would result in 404 not found opengraph images)
-	function isRecentPost(date) {
+	function isRecentDate(date) {
 		return (Date.now() - date.getTime()) < ONE_DAY*60;
 	}
 	eleventyConfig.addFilter("shouldSkipOpenGraphImageOptimization", async post => {
-		return isRecentPost(post.date);
+		return isRecentDate(post.date);
 	});
 	eleventyConfig.addLiquidShortcode("ogImageSource", async function({url, inputPath, date}) {
-		if(url === "/" || url === "/web/") {
-			return getFullUrlFromPath("/og/opengraph-default.png");
-		}
+		let cacheBustOverride;
 
-		// special title og images, only for _posts
-		if(inputPath.startsWith("./_posts/")) {
-			let cacheBustOverride;
-			if(isRecentPost(date)) {
-				let hasGitCreatedTimestamp = Boolean(await getCreatedTimestamp(inputPath));
-				if(!hasGitCreatedTimestamp) {
-					// if not checked into git
-					return "";
-				} else if(process.env.PRODUCTION_BUILD) {
-					// recent posts have a cache bust specific to the latest build time (race condition, atomic deploys no longer exist apparently)
-					cacheBustOverride = `_p${Date.now()}`;
-				}
+		if(isRecentDate(date)) {
+			let hasGitCreatedTimestamp = Boolean(await getCreatedTimestamp(inputPath));
+			if(!hasGitCreatedTimestamp) {
+				// if not checked into git
+				return "";
+			} else if(process.env.PRODUCTION_BUILD) {
+				// recent posts have a cache bust specific to the latest build time (race condition, atomic deploys no longer exist apparently)
+				cacheBustOverride = `_p${Date.now()}`;
 			}
-			return getScreenshotUrlFromPath(`/opengraph/?page=${encodeURIComponent(url)}`, undefined, cacheBustOverride);
 		}
 
-		// raw screenshot
-		return getScreenshotUrlFromPath(url);
+		return getScreenshotUrlFromPath(`/opengraph/?page=${encodeURIComponent(url)}`, undefined, cacheBustOverride);
 	});
 
 	eleventyConfig.addShortcode("sparklineDataUri", function sparkline(values, width, height, color, strokeWidth = 1, domainMax) {

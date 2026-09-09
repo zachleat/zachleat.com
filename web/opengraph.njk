@@ -15,9 +15,10 @@ The card below is exactly 1200×630 at the top left, so a screenshot of that
 viewport captures it edge to edge; everything under it is builder UI and stays
 out of the shot.
 
-`?page=/web/some-post/` picks a post; that is the only knob. Every value on the
-card is baked in at build time, so the page can only ever render one of this
-site’s own posts — or, with no (or an unrecognized) `page`, the default card.
+`?page=/web/some-post/` picks a post or a page; that is the only knob. Every
+value on the card is baked in at build time, so this can only ever render one of
+this site’s own URLs — or, with no (or an unrecognized) `page`, the default card,
+which is also what the home page gets.
 
 More Ideas:
 * Git last updated
@@ -48,7 +49,7 @@ More Ideas:
 	<h2>Open Graph image source</h2>
 	<p>Screenshot the top <code>1200×630</code> of this page. Everything below the card is builder UI and stays out of the shot.</p>
 	<div class="ui-fields">
-		<label>Post
+		<label>Page
 			<select id="field-page"></select>
 		</label>
 	</div>
@@ -62,7 +63,16 @@ More Ideas:
 site’s name broken over two lines, on a screenshot of the home page, with no
 date or №. #}
 {%- set ogHomeBackground %}{% rawScreenshotImage "/" %}{% endset -%}
-<script type="application/json" id="og-default">["","Zach<br>Leatherman","",0,{{ ogHomeBackground | dump | safe }},0,""]</script>
+<script type="application/json" id="og-default">["","Zach Leat-<br>herman","",0,{{ ogHomeBackground | dump | safe }},0,""]</script>
+
+{# Non-post pages: title over a screenshot of the page itself, no date or №. #}
+<script type="application/json" id="og-pages">[
+{%- for item in collections.opengraphPages -%}
+{%- set ogTitle %}{% if item.data.titleHtml %}{{ item.data.titleHtml | safe }}{% else %}{{ item.data.title | safe }}{% endif %}{% endset -%}
+{%- set ogBackground %}{% rawScreenshotImage item.url %}{% endset -%}
+{% if not loop.first %},{% endif %}[{{ item.url | dump | safe }},{{ ogTitle | dump | replace("</", "<\\/") | safe }},"",0,{{ ogBackground | dump | safe }},0,"Pages"]
+{%- endfor -%}
+]</script>
 
 <script type="application/json" id="og-posts">[
 {%- set postCount = collections.posts.length -%}
@@ -78,8 +88,10 @@ page mid-render. #}
 <script>
 (function() {
 	var ORIGIN = "https://www.zachleat.com";
-	var POSTS = JSON.parse(document.getElementById("og-posts").textContent);
 	var DEFAULT = JSON.parse(document.getElementById("og-default").textContent);
+	// Pages first so their optgroup sits above the years.
+	var ENTRIES = JSON.parse(document.getElementById("og-pages").textContent)
+		.concat(JSON.parse(document.getElementById("og-posts").textContent));
 
 	var main = document.getElementById("og-main");
 	var hed = document.getElementById("og-hed");
@@ -92,9 +104,9 @@ page mid-render. #}
 	var openScreenshot = document.getElementById("open-screenshot");
 
 	function entryFor(url) {
-		for(var i = 0; i < POSTS.length; i++) {
-			if(POSTS[i][0] === url) {
-				return POSTS[i];
+		for(var i = 0; i < ENTRIES.length; i++) {
+			if(ENTRIES[i][0] === url) {
+				return ENTRIES[i];
 			}
 		}
 	}
@@ -107,16 +119,18 @@ page mid-render. #}
 
 	pageField.append(new Option("Zach Leatherman (default)", DEFAULT[0]));
 
-	// Group the <select> by year, newest first (collections.posts order).
+	// One optgroup for pages, then one per year, newest first.
 	var group;
-	for(var i = 0; i < POSTS.length; i++) {
-		var entry = POSTS[i];
+	for(var i = 0; i < ENTRIES.length; i++) {
+		var entry = ENTRIES[i];
 		if(!group || group.label !== entry[6]) {
 			group = document.createElement("optgroup");
 			group.label = entry[6];
 			pageField.append(group);
 		}
-		group.append(new Option("№" + entry[3] + " — " + stripTags(entry[1]), entry[0]));
+		// Two pages can share a title, so pages are labelled by URL as well.
+		var label = entry[3] ? "№" + entry[3] + " — " + stripTags(entry[1]) : stripTags(entry[1]) + " — " + entry[0];
+		group.append(new Option(label, entry[0]));
 	}
 
 	function render(updateUrl) {
@@ -143,8 +157,8 @@ page mid-render. #}
 		}
 	}
 
-	// ?page= can only ever name one of the posts baked in above; anything else
-	// falls back to the default card.
+	// ?page= can only ever name one of the URLs baked in above; anything else
+	// (including the home page) falls back to the default card.
 	var requested = new URLSearchParams(location.search).get("page");
 	pageField.value = (entryFor(requested) || DEFAULT)[0];
 
