@@ -28,16 +28,16 @@ Open Graph images are those little pictures that show up when your site is share
 
 And while it was nice to have some prettier things displaying on social media—I wanted to reuse the visuals on my own web site too. So, I built an image service that would find the Open Graph images for a web page.
 
-I’m now using it on [my home page](/):
+~~I’m now using it on [my home page](/):~~ _(Update: I changed the design)_
 
-<div class="livedemo">
+{% comment %}<div class="livedemo">
   <img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2F/large/_wait:2/"
     alt="Screenshot of https://www.zachleat.com/"
     width="1024"
     height="1024"
     decoding="async"
     loading="lazy">
-</div>
+</div>{% endcomment %}
 
 The image service:
 

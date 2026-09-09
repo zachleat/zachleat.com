@@ -1666,6 +1666,7 @@ a[href].tag-inline:not(.tag-borderless),
 	display: flex;
 	flex-wrap: wrap;
 	gap: .5em;
+	margin-block-end: 1em;
 }
 .project-cards .project-card {
 	/* share the row when there’s space, wrap to full width when there isn’t */
