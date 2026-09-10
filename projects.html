@@ -232,6 +232,27 @@ modules:
 		}
 	}
 }
+
+/* Both bar charts' colors were tuned against a white page background and read as neon
+   against a dark one—dialed back for dark mode. */
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+		#releases-by-year {
+			--bar-color: rgba(255, 99, 99, 0.45);
+		}
+		#neglect-buckets > li {
+			--bar-color: hsl(var(--neglect-hue) 55% 55%);
+		}
+	}
+}
+:root[data-theme="dark"] {
+	#releases-by-year {
+		--bar-color: rgba(255, 99, 99, 0.45);
+	}
+	#neglect-buckets > li {
+		--bar-color: hsl(var(--neglect-hue) 55% 55%);
+	}
+}
 </style>
 
 <script type="module" src="/static/health-score.js"></script>
