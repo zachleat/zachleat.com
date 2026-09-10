@@ -36,10 +36,24 @@
 .carouscroll > * {
 	display: block;
 	min-width: 100%;
-	aspect-ratio: 16/9;
+	margin: 0;
 }
 .carouscroll img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16/9;
 	vertical-align: middle;
+}
+/* Presenter notes, shown below the slide image */
+.carouscroll-notes {
+	height: 8em;
+	overflow-y: auto;
+	margin: 0;
+	padding: .5em .75em;
+	font-size: .8em;
+	line-height: 1.4;
+	color: var(--z-color-text);
+	border-top: 1px solid var(--z-color-border-light);
 }
 /* Buttons */
 .carouscroll-meta {

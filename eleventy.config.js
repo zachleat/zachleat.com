@@ -31,6 +31,18 @@ function resolveModule(name) {
 	return fileURLToPath(import.meta.resolve(name));
 }
 
+function escapeHtml(str) {
+	return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+// Expects already-escaped HTML (escapeHtml first, then linkify)
+function linkify(str) {
+	return str.replace(/https?:\/\/\S+/g, function(url) {
+		let [, core, trailing] = url.match(/^(.*?)([.,;:!?)\]}]*)$/);
+		return `<a href="${core}">${core}</a>${trailing}`;
+	});
+}
+
 function getPosts(collectionApi) {
 	return collectionApi.getFilteredByGlob("./_posts/**/*.{md,html}").reverse().filter(function(item) {
 		return !!item.data.permalink;
@@ -687,7 +699,7 @@ export default async function(eleventyConfig) {
 	});
 
 	// TODO this could be a webc component
-	eleventyConfig.addShortcode("slides", async function (prefix, indeces, alts, links) {
+	eleventyConfig.addShortcode("slides", async function (prefix, indeces, alts, links, notes) {
 		let [indexStart, indexEnd] = indeces.split("-");
 		indexStart = parseInt(indexStart, 10);
 		indexEnd = parseInt(indexEnd, 10) || indexStart; // "33" becomes "33-33"
@@ -707,6 +719,7 @@ export default async function(eleventyConfig) {
 		for(let j=indexStart, k=indexEnd; j <= k; j++) {
 			let slidePath = path.join(".", `${prefix}${leftpad(j, 3)}.jpeg`);
 			if(fs.existsSync(slidePath)) {
+				html.push(`<figure class="carouscroll-page">`);
 				if(links && links[j]) {
 					html.push(`<a href="${links[j]}">`)
 				}
@@ -717,6 +730,10 @@ export default async function(eleventyConfig) {
 				if(links && links[j]) {
 					html.push(`</a>`)
 				}
+				if(notes && notes[j]) {
+					html.push(`<figcaption class="carouscroll-notes">${linkify(escapeHtml(notes[j]))}</figcaption>`);
+				}
+				html.push(`</figure>`);
 			}
 		}
 
