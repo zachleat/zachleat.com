@@ -13,7 +13,7 @@ This was great from a purist’s perspective (in that the Open Graph pages were 
 
 Now I use [**one `/opengraph/` page**](/opengraph/) that **client renders** _(the horror!)_ the appropriate metadata for the Open Graph image. Client rendering here is an appropriate tradeoff for build time because this page is still going through a Chromium-based screenshot service and the ultimate deliverable is a static image. This page isn’t intended to be consumed by human beings (unless they _really_ want to, I dunno, I’m not your dad).
 
-Note that the caching mechanism hasn’t changed: it still lives in the screenshot service and the images aren’t being regenerated in either method.
+Note that the caching mechanism hasn’t changed: it still lives in the screenshot service and the _image_ content isn’t being regenerated from scratch (with my old static pages method or this new client rendered method).
 
 I now use this approach on a few places and it’s made implementing Open Graph support on websites much easier to build and manage:
 
