@@ -6,10 +6,108 @@
 	--z-font-webfont: Lato, Numero, var(--z-font-fallback);
 
 	/* Colors */
+	--z-color-bg: #fff;
+	--z-color-bg-alt: #eee;
+	--z-color-border: #ddd;
 	--z-color-border-light: rgb(210, 222, 210);
 	--z-color-primary: #3c603c;
 	--z-color-text: #525252;
-	--z-color-link-active: #4caf50;
+	--z-color-text-heading: #222;
+	--z-color-text-secondary: #666;
+	--z-color-link: #304f3e;
+	--z-color-link-visited: #4c713e;
+	--z-color-link-active: #2e7d32;
+	--z-color-code-bg: rgba(0, 0, 0, .08);
+	--z-color-code-text: #444;
+	--z-color-highlight-bg: #ffc;
+	--z-color-shadow: rgba(0, 0, 0, .15);
+	--z-color-shadow-strong: rgba(0, 0, 0, .4);
+
+	/* Badge pairs (fire/calculator tags, social proof pills, archived projects) */
+	--z-color-badge-fire-bg: #fff8ee;
+	--z-color-badge-fire-text: #774700;
+	--z-color-badge-calc-bg: #ffeeee;
+	--z-color-badge-calc-text: #c32791;
+	--z-color-badge-boost-bg: #e4f7e4;
+	--z-color-badge-boost-text: #006000;
+	--z-color-badge-like-bg: #ffeded;
+	--z-color-badge-like-text: #880808;
+	--z-color-badge-view-bg: #e4e4f1;
+	--z-color-badge-view-text: #434574;
+	--z-color-badge-reply-bg: #edf1e4;
+	--z-color-badge-reply-text: #535100;
+	--z-color-badge-archived-bg: #fffbe2;
+	--z-color-badge-archived-text: #000;
+
+	color-scheme: light dark;
+}
+
+/* Dark theme: follows the OS setting by default, or the footer's Theme toggle (which sets data-theme) */
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+		--z-color-bg: #1d1d1d;
+		--z-color-bg-alt: #24272a;
+		--z-color-border: #3a3d40;
+		--z-color-border-light: #3a4a3c;
+		--z-color-text: #c7c9cb;
+		--z-color-text-heading: #f2f2f2;
+		--z-color-text-secondary: #9a9ea1;
+		--z-color-link: #8fd08f;
+		--z-color-link-visited: #7bc27b;
+		--z-color-link-active: #6ee06e;
+		--z-color-code-bg: rgba(255, 255, 255, .12);
+		--z-color-code-text: #e4e4e4;
+		--z-color-highlight-bg: #4a4520;
+		--z-color-shadow: rgba(255, 255, 255, .18);
+		--z-color-shadow-strong: rgba(255, 255, 255, .4);
+
+		--z-color-badge-fire-bg: #4a3216;
+		--z-color-badge-fire-text: #ffb84d;
+		--z-color-badge-calc-bg: #4a1f35;
+		--z-color-badge-calc-text: #ff8fc7;
+		--z-color-badge-boost-bg: #1a3d1a;
+		--z-color-badge-boost-text: #6fdb6f;
+		--z-color-badge-like-bg: #3d1414;
+		--z-color-badge-like-text: #ff8f8f;
+		--z-color-badge-view-bg: #26263d;
+		--z-color-badge-view-text: #b3b3e6;
+		--z-color-badge-reply-bg: #33320f;
+		--z-color-badge-reply-text: #d4d16a;
+		--z-color-badge-archived-bg: #4a3a0f;
+		--z-color-badge-archived-text: #fff;
+	}
+}
+:root[data-theme="dark"] {
+	--z-color-bg: #1d1d1d;
+	--z-color-bg-alt: #24272a;
+	--z-color-border: #3a3d40;
+	--z-color-border-light: #3a4a3c;
+	--z-color-text: #c7c9cb;
+	--z-color-text-heading: #f2f2f2;
+	--z-color-text-secondary: #9a9ea1;
+	--z-color-link: #8fd08f;
+	--z-color-link-visited: #7bc27b;
+	--z-color-link-active: #6ee06e;
+	--z-color-code-bg: rgba(255, 255, 255, .12);
+	--z-color-code-text: #e4e4e4;
+	--z-color-highlight-bg: #4a4520;
+	--z-color-shadow: rgba(255, 255, 255, .18);
+	--z-color-shadow-strong: rgba(255, 255, 255, .4);
+
+	--z-color-badge-fire-bg: #4a3216;
+	--z-color-badge-fire-text: #ffb84d;
+	--z-color-badge-calc-bg: #4a1f35;
+	--z-color-badge-calc-text: #ff8fc7;
+	--z-color-badge-boost-bg: #1a3d1a;
+	--z-color-badge-boost-text: #6fdb6f;
+	--z-color-badge-like-bg: #3d1414;
+	--z-color-badge-like-text: #ff8f8f;
+	--z-color-badge-view-bg: #26263d;
+	--z-color-badge-view-text: #b3b3e6;
+	--z-color-badge-reply-bg: #33320f;
+	--z-color-badge-reply-text: #d4d16a;
+	--z-color-badge-archived-bg: #4a3a0f;
+	--z-color-badge-archived-text: #fff;
 }
 
 /*

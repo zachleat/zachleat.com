@@ -73,8 +73,7 @@
 	left: var(--toggle-padding);
 	width: 1em; /* 16px /16 */
 	border-radius: 100%;
-	background: linear-gradient(to bottom left, transparent 42%, var(--toggle-color-x) 42%, var(--toggle-color-x) 58%, transparent 58%),
-		linear-gradient(to bottom right, transparent 42%, var(--toggle-color-x) 42%, var(--toggle-color-x) 58%, transparent 58%), var(--toggle-color-x-bg);
+	background: var(--toggle-color-x-bg);
 }
 .toggle[aria-pressed="true"] .toggle-control:after {
 	left: calc(1em + var(--toggle-padding)); /* 16px /16 */
@@ -82,4 +81,52 @@
 }
 .toggle[disabled] {
 	pointer-events: none;
+}
+
+/* Theme toggle: flanking labels + a light/dark-tinted switch instead of the shared red/green */
+.theme-toggle {
+	align-items: center;
+	gap: .4em;
+	font-style: normal;
+}
+.theme-toggle-label {
+	color: #767676;
+	font-weight: 600;
+	cursor: pointer;
+	user-select: none;
+	transition: color .15s ease-in-out;
+}
+.theme-toggle:has(.toggle-theme[data-mode="dark"]) .theme-toggle-label {
+	color: #868a8c;
+}
+/* Tinted to match the switch's own accent, at a lightness tuned to pass contrast
+   against the page background each is shown on (amber on light, periwinkle on dark) */
+.theme-toggle-label.active {
+	color: #916a08;
+}
+.theme-toggle:has(.toggle-theme[data-mode="dark"]) .theme-toggle-label.active {
+	color: #98a3e1;
+}
+/* Light mode: warm amber (base values, below) */
+.toggle.toggle-theme {
+	--toggle-color: hsl(43, 74%, 42%);
+	--toggle-color-secondary: hsl(43, 74%, 78%);
+	--toggle-color-x: hsl(43, 90%, 65%);
+	--toggle-color-x-bg: hsl(43, 90%, 50%);
+}
+/* Dark mode: deep indigo */
+.toggle.toggle-theme[data-mode="dark"] {
+	--toggle-color: hsl(231, 40%, 32%);
+	--toggle-color-secondary: hsl(231, 25%, 65%);
+	--toggle-color-x: hsl(231, 55%, 78%);
+	--toggle-color-x-bg: hsl(231, 45%, 30%);
+}
+/* Knob position follows the active theme (dark=left, next to the "Dark" label; light=right), not
+   the auto/override state that aria-pressed otherwise drives it by */
+.toggle.toggle-theme .toggle-control:after {
+	left: var(--toggle-padding);
+	background: var(--toggle-color);
+}
+.toggle.toggle-theme[data-mode="light"] .toggle-control:after {
+	left: calc(1em + var(--toggle-padding));
 }

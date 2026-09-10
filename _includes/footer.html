@@ -25,11 +25,14 @@
 				<div>
 					<toggle-button label="Web Fonts" @toggleclass="font-fallback"></toggle-button>
 				</div>
+				<div>
+					<theme-toggle></theme-toggle>
+				</div>
 				{%- endrenderTemplate %}
 {%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 {%- if speedlify[urlWithOrigin] %}
 				<is-land on:visible import="/static/speedlify2-score.js">
-					<speedlify2-score theme="light" speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify2-score>
+					<speedlify2-score speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify2-score>
 				</is-land>
 {%- endif %}
 			</div>

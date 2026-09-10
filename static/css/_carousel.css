@@ -22,7 +22,7 @@
 }
 @media (min-width: 61.25em) { /* 980px */
 	.carousel {
-		border: 2px solid #ddd;
+		border: 2px solid var(--z-color-border);
 		border-radius: .5em .5em 0 0;
 	}
 }
@@ -77,7 +77,7 @@
 	opacity: .5;
 }
 :is([data-carousel-previous], [data-carousel-next]):is(:hover, :focus) {
-	background-color: rgba(0,0,0,.08);
+	background-color: var(--z-color-code-bg);
 }
 
 /* Single page */

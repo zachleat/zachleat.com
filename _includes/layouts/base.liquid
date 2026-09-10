@@ -4,6 +4,18 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="color-scheme" content="light dark">
+
+		<script>
+		(function() {
+			try {
+				var theme = localStorage.getItem("theme");
+				if(theme === "light" || theme === "dark") {
+					document.documentElement.setAttribute("data-theme", theme);
+				}
+			} catch(e) {}
+		})();
+		</script>
 
 		<title>{% if title %}{% if titleOverride %}{{ titleOverride }}{% else %}{{ title }}{% endif %}—zachleat.com{% else %}zachleat.com{% endif %}</title>
 

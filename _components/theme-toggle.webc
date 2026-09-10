@@ -1,0 +1,21 @@
+<is-land on:visible class="toggle-island theme-toggle">
+	<style>
+	.toggle-island {
+		display: flex;
+	}
+	/* Hide without JS */
+	.toggle-island:not(:defined) .toggle,
+	.toggle-island:not(:defined) .theme-toggle-label {
+		display: none;
+	}
+	</style>
+	<span class="theme-toggle-label" data-theme-side="dark">Dark</span>
+	<button type="button" aria-pressed="true" aria-label="Theme" class="toggle toggle-theme">
+		<span class="toggle-control"></span>
+	</button>
+	<span class="theme-toggle-label" data-theme-side="light">Light</span>
+	<template data-island="once" webc:raw>
+		<link rel="stylesheet" href="/static/toggle-button.css">
+		<script src="/static/toggle-button.js"></script>
+	</template>
+</is-land>

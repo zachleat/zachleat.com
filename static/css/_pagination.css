@@ -24,7 +24,7 @@
 .previous-post:focus,
 .next-post:hover,
 .next-post:focus {
-	background-color: #f6f6f6;
+	background-color: var(--z-color-bg-alt);
 }
 .previous-post {
 	text-align: left;
@@ -38,7 +38,7 @@
 }
 .previous-post:before,
 .next-post:after {
-	color: #aaa;
+	color: var(--z-color-text-secondary);
 	position: absolute;
 	top: 1.5em; /* 18px /12 */
 	text-transform: uppercase;

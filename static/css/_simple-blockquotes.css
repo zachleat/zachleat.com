@@ -1,8 +1,8 @@
 blockquote {
 	font-size: 1.086956521739em; /* 25px /23 */
-	color: #666;
+	color: var(--z-color-text-secondary);
 	margin: 1.5em 0;
 	padding: 0 1em;
 	max-width: 31.57894736842em;
-	border-left: 6px solid #ddd;
+	border-left: 6px solid var(--z-color-border);
 }

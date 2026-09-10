@@ -40,7 +40,7 @@
 }
 .social a:link,
 .social a:visited {
-	color: #444;
+	color: var(--z-color-code-text);
 }
 
 .icon-inline {

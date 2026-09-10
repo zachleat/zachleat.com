@@ -21,6 +21,6 @@ blockquote:before {
 		margin: 0 0 0 -.4em;
 		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
-		background-color: #eee;
+		background-color: var(--z-color-bg-alt);
 	}
 }

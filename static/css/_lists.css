@@ -40,7 +40,7 @@ dl.nextprev {
 	margin: 5em 0 0;
 	padding: 1em;
 	border-radius: .35em .35em 0 0;
-	background-color: #ccc;
+	background-color: var(--z-color-bg-alt);
 }
 @media (min-width: 31.25em) { /* 500px */
 	dl.nextprev {
@@ -76,7 +76,7 @@ dl.nextprev dd {
 	margin: 0;
 }
 dl.nextprev .project_img {
-	border: 1px solid #ccc;
+	border: 1px solid var(--z-color-border);
 	box-shadow: 0 2px 12px 0px rgba(0, 0, 0, 0.2);
 }
 dl.nextprev a[href]:not(:active, :focus) .project_img:not(:hover) {
@@ -102,7 +102,7 @@ dd.nextprev-next {
 	grid-column: 1;
 }
 dl.nextprev dd:empty {
-	background-color: #eee;
+	background-color: var(--z-color-bg-alt);
 	border-radius: .5em;
 	cursor: not-allowed;
 }
