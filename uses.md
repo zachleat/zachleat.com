@@ -98,6 +98,14 @@ tr:has(del) .z-icon {
 tr:has(del) .z-avatar {
 	opacity: .85;
 }
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) tr:has(del) {
+		background-color: #3a1f1f;
+	}
+}
+:root[data-theme="dark"] tr:has(del) {
+	background-color: #3a1f1f;
+}
 </style>
 <form class="filter-posts-form">
 	<label>
