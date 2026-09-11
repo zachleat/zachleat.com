@@ -2,6 +2,7 @@
 title: The Lighthouse Scores Will Continue Until Morale Improves
 tags:
   - project
+  - speedlify
 ---
 Continuing in the great web performance tradition of running Lighthouse on so many things that Lighthouse—in shared traits with quarantined pandemic life—begins to have no meaning and rampant nihilism washes over the developer ecosystem, I have added Lighthouse scores to the [Starter Projects list on the Eleventy documentation](https://www.11ty.dev/docs/starter/).
 

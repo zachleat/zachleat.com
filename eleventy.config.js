@@ -588,29 +588,43 @@ export default async function(eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addLiquidFilter("getFilterCategories", function(collectionItem) {
-		let categories = [];
+	function getFilterCategories(collectionItem, categories = new Set()) {
 		if(isSpeaking(collectionItem)) {
-			categories.push("speaking");
+			categories.add("speaking");
 		}
 		if(isWriting(collectionItem)) {
-			categories.push("writing");
+			categories.add("writing");
 		}
 		if(hasTag(collectionItem, "font-loading") || hasCategory(collectionItem, "font-loading")) {
-			categories.push("web-fonts");
+			categories.add("web-fonts");
 		}
 
 		let tags = [
 			"eleventy",
 			"project",
 			"web-components",
+			"speedlify",
 		];
 		for(let tag of tags) {
 			if(hasTag(collectionItem, tag)) {
-				categories.push(tag);
+				categories.add(tag);
 			}
 		}
-		return categories.join(" ");
+		return categories;
+	}
+
+	eleventyConfig.addLiquidFilter("getFilterCategories", function(collectionItem) {
+		return Array.from(getFilterCategories(collectionItem)).join(" ");
+	});
+
+	eleventyConfig.addLiquidFilter("getFilterCategoriesForYear", function(posts, year) {
+		let categories = new Set();
+		for(let post of posts) {
+			if(post.data.page.date.getFullYear() === parseInt(year, 10)) {
+				getFilterCategories(post, categories);
+			}
+		}
+		return Array.from(categories).join(" ");
 	});
 
 	eleventyConfig.addCollection("writing", function(collection) {

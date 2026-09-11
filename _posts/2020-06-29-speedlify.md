@@ -3,6 +3,7 @@ title: Use Speedlify to Continuously Measure Site Performance
 githubProjectName: zachleat/speedlify
 tags:
   - project
+  - speedlify
 eleventyComputed:
   titleHtml: 'Use {% twitterImageAvatar "speedlify", "z-avatar-eq" %}Speedlify to Continuously Measure Site Performance'
 ---

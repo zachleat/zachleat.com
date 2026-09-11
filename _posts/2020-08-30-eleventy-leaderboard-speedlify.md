@@ -5,6 +5,7 @@ eleventyComputed:
 tags:
   - project
   - eleventy
+  - speedlify
 githubProjectName: zachleat/speedlify-score
 ---
 Wow—this entire thing has been a journey. The idea for the Eleventy Leaderboards was originally borne out of some lighthearted fun poking at the [AMP Carousel in Google Search results](/web/performance-dashboard/).

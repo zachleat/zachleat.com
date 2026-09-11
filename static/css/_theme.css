@@ -12,7 +12,8 @@ del .z-avatar {
 
 /* Accessibility and Cut the Mustard */
 .sr-only,
-.a11y-only {
+.a11y-only,
+.posts .subhed.filter-category--hide {
 	position: absolute;
 	height: 1px;
 	width: 1px;
@@ -965,7 +966,8 @@ table-saw :is(th, td) {
 .subhed-count {
 	color: var(--z-color-text-secondary);
 }
-.posts .subhed:first-child {
+/* First visible year row (no visible siblings before it) */
+.posts .subhed:not(li:not(.filter-category--hide) ~ *) {
 	margin-top: 0;
 }
 .posts img,
@@ -1036,7 +1038,7 @@ a[href]:is(:focus, :hover) .project_img {
 	}
 }
 @media (min-width: 61.25em) { /* 980px */
-	.posts .subhed:first-child {
+	.posts .subhed:not(li:not(.filter-category--hide) ~ *) {
 		margin-top: 18px;
 	}
 }
