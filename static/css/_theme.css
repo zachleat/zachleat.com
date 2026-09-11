@@ -2280,7 +2280,8 @@ svg.z-icon {
 .fa-font-awesome {
 	color: var(--icon-color-override, #538cd7);
 }
-.fa-build-awesome {
+.fa-build-awesome,
+.fa-forward-fast {
 	color: var(--icon-color-override, #00a776);
 }
 .fa-web-awesome {
