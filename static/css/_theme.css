@@ -2207,6 +2207,7 @@ a[href].favicon:before,
 }
 .favicon-optin a[href^="https://github.com"]:not(.favicon-optout):before {
 	background-image: url("https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fgithub.com%2F/");
+	filter: var(--z-filter-icon-github);
 }
 .favicon-optin a[href^="https://fediverse.zachleat.com"]:not(.favicon-optout):after,
 .favicon-optin a[href^="https://neighborhood.11ty.dev"]:not(.favicon-optout):after {
