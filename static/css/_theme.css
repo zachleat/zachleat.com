@@ -2306,7 +2306,7 @@ svg.z-icon {
 	color: var(--icon-color-override);
 }
 .fa-github {
-	color: var(--icon-color-override, #000);
+	color: var(--icon-color-override, var(--z-color-icon-github));
 }
 .fa-mastodon {
 	color: var(--icon-color-override, #563dd0);

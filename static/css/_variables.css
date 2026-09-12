@@ -22,6 +22,7 @@
 	--z-color-highlight-bg: #ffc;
 	--z-color-shadow: rgba(0, 0, 0, .15);
 	--z-color-shadow-strong: rgba(0, 0, 0, .4);
+	--z-color-icon-github: #000;
 
 	/* Badge pairs (fire/calculator tags, social proof pills, archived projects) */
 	--z-color-badge-fire-bg: #fff8ee;
@@ -60,6 +61,7 @@
 		--z-color-highlight-bg: #4a4520;
 		--z-color-shadow: rgba(255, 255, 255, .18);
 		--z-color-shadow-strong: rgba(255, 255, 255, .4);
+		--z-color-icon-github: #f2f2f2;
 
 		--z-color-badge-fire-bg: #4a3216;
 		--z-color-badge-fire-text: #ffb84d;
@@ -93,6 +95,7 @@
 	--z-color-highlight-bg: #4a4520;
 	--z-color-shadow: rgba(255, 255, 255, .18);
 	--z-color-shadow-strong: rgba(255, 255, 255, .4);
+	--z-color-icon-github: #f2f2f2;
 
 	--z-color-badge-fire-bg: #4a3216;
 	--z-color-badge-fire-text: #ffb84d;
