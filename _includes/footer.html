@@ -1,6 +1,6 @@
 <footer class="content-grid-sibling">
 	<div class="footer">
-		Built {% if JS_ENABLED %}<time-difference live format="narrow" class="tag tag-popular-rail tag-borderless"><em><time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}">{{ currentDate | readableDate }}</time></em></time-difference>{% endif %} with <a href="https://www.11ty.dev/">Eleventy v{{ eleventy.version }}</a>
+		Built {% if JS_ENABLED %}<time-difference live format="narrow" class="tag tag-popular-rail tag-borderless"><em><time datetime="{{ currentDate | dateToISO }}" title="{{ currentDate | dateToISO }}">{{ currentDate | readableDate: "yyyy LLL d" }}</time></em></time-difference>{% endif %} with <a href="https://www.11ty.dev/">Eleventy v{{ eleventy.version }}</a>
 		· <a href="/web/license/">License</a>
 		· <strong aria-hidden="true">🏳️‍⚧️</strong><span class="sr-only">Transgender Flag Emoji</span>
 		· <a href="/web/style-guide/">Style Guide</a>
