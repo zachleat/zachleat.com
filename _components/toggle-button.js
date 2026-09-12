@@ -32,7 +32,7 @@ function currentThemeMode() {
 	return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
 }
 
-// Auto (pressed): follows the OS preference. Off: forces the opposite of the OS preference.
+// Auto follows the OS preference, otherwise force the opposite of the OS preference.
 function setAutoTheme(auto) {
 	if(auto) {
 		document.documentElement.removeAttribute("data-theme");
@@ -48,33 +48,25 @@ function setAutoTheme(auto) {
 	}
 }
 
-function syncThemeToggle(toggle) {
-	let auto = isAutoTheme();
+// The button is named for what it will do next, so it has no pressed state.
+function syncThemeButton(button) {
 	let mode = currentThemeMode();
-	let autoMode = prefersDark() ? "dark" : "light";
-	toggle.setAttribute("aria-pressed", String(auto));
-	toggle.setAttribute("data-mode", mode);
+	let nextMode = mode === "dark" ? "light" : "dark";
+	button.setAttribute("data-mode", mode);
+	button.querySelector(".theme-button-text").textContent = `Use ${nextMode} theme${isAutoTheme() ? "" : " (auto)"}`;
+}
 
-	let modeLabel = mode === "dark" ? "Dark" : "Light";
-	toggle.setAttribute("aria-label", modeLabel + " theme" + (auto ? ", following your system preference" : ""));
-
-	let wrap = toggle.closest(".theme-toggle");
-	if(wrap) {
-		wrap.querySelectorAll("[data-theme-side]").forEach(function(side) {
-			let side_mode = side.getAttribute("data-theme-side");
-			side.classList.toggle("active", side_mode === mode);
-			let base = side_mode === "dark" ? "Dark" : "Light";
-			// (auto) always marks the OS-preferred side, whether or not it's the one currently showing
-			side.textContent = base + (side_mode === autoMode ? " (auto)" : "");
-		});
+function announceTheme(button) {
+	let status = button.parentNode.querySelector(".theme-button-status");
+	if(status) {
+		status.textContent = `${currentThemeMode() === "dark" ? "Dark" : "Light"} theme on${isAutoTheme() ? ", matching your system" : ""}.`;
 	}
 }
 
-document.querySelectorAll(".toggle-theme").forEach(syncThemeToggle);
+document.querySelectorAll(".theme-button").forEach(syncThemeButton);
 
-// Re-render the theme toggle(s) whenever the OS preference itself changes, live
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function() {
-	document.querySelectorAll(".toggle-theme").forEach(syncThemeToggle);
+	document.querySelectorAll(".theme-button").forEach(syncThemeButton);
 });
 
 document.addEventListener("click", function(event) {
@@ -82,37 +74,36 @@ document.addEventListener("click", function(event) {
 		return;
 	}
 
-	// The theme toggle's flanking "Dark"/"Light" labels aren't the button itself,
-	// but a click anywhere in that wrapper should still act on it.
-	let toggle = event.target.closest(".toggle") || event.target.closest(".theme-toggle")?.querySelector(".toggle-theme");
+	let themeButton = event.target.closest(".theme-button");
+	if(themeButton) {
+		setAutoTheme(!isAutoTheme());
+		syncThemeButton(themeButton);
+		announceTheme(themeButton);
+		return;
+	}
+
+	let toggle = event.target.closest(".toggle");
 	if(!toggle) {
 		return;
 	}
-	let wasPressed = toggle.getAttribute("aria-pressed") === 'true';
-	let isPressed = !wasPressed;
-	toggle.setAttribute("aria-pressed", String(isPressed));
+	let isChecked = toggle.getAttribute("aria-checked") !== "true";
+	toggle.setAttribute("aria-checked", String(isChecked));
 
 	// for CSS
 	if(toggle.classList.contains("toggle-css")) {
-		toggleCSS(isPressed);
+		toggleCSS(isChecked);
 	}
 
 	// for Web Fonts
 	let className = toggle.getAttribute("data-toggle-class");
 	if(className) {
-		toggleClassname(isPressed, className);
-	}
-
-	// for Theme
-	if(toggle.classList.contains("toggle-theme")) {
-		setAutoTheme(isPressed);
-		syncThemeToggle(toggle);
+		toggleClassname(isChecked, className);
 	}
 
 	if(toggle.getAttribute("id")?.startsWith("ai-mode")) {
 		// In sidebar and embedded in the blog post
 		Array.from(document.querySelectorAll("[id^='ai-mode']")).forEach(el => {
-			el.setAttribute("aria-pressed", true);
+			el.setAttribute("aria-checked", true);
 			el.setAttribute("disabled", "")
 		});
 		import("/static/js/ai-mode.js");

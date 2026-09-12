@@ -8,7 +8,7 @@
 		display: none;
 	}
 	</style>
-	<button :id="this.id" type="button" :aria-pressed="this.value ?? 'true'" class="toggle" :class="this.class ? this.class : ''" :data-toggle-class="toggleclass">
+	<button :id="this.id" type="button" role="switch" :aria-checked="this.value ?? 'true'" class="toggle" :class="this.class ? this.class : ''" :data-toggle-class="toggleclass">
 		<span class="toggle-control"></span>
 		<span class="toggle-text" @html="label"></span>
 	</button>

@@ -6,7 +6,7 @@
 	--toggle-color-x: hsl(0,75%,63%);
 	--toggle-color-x-bg: hsl(0,75%,54%);
 }
-.toggle[aria-pressed="true"] {
+.toggle[aria-checked="true"] {
 	--toggle-color: hsl(156, 78%, 15%);
 	--toggle-color-secondary: hsl(156, 78%, 45%);
 }
@@ -59,9 +59,6 @@
 	transition: background-color .15s ease-in-out;
 	border-radius: 6.25em; /* 100px /16 */
 }
-.toggle[aria-label] .toggle-control {
-	margin-right: 0;
-}
 .toggle-control,
 .toggle-control:after {
 	height: 1em;
@@ -75,7 +72,7 @@
 	border-radius: 100%;
 	background: var(--toggle-color-x-bg);
 }
-.toggle[aria-pressed="true"] .toggle-control:after {
+.toggle[aria-checked="true"] .toggle-control:after {
 	left: calc(1em + var(--toggle-padding)); /* 16px /16 */
 	background: var(--toggle-color);
 }
@@ -83,50 +80,58 @@
 	pointer-events: none;
 }
 
-/* Theme toggle: flanking labels + a light/dark-tinted switch instead of the shared red/green */
-.theme-toggle {
+/* Theme button: a plain action button, not a switch */
+.theme-button {
+	/* Light page, switches to dark: deep indigo */
+	--theme-button-color: hsl(231, 40%, 32%);
+	--theme-button-border: hsl(231, 40%, 32%);
+	--theme-button-icon: hsl(231, 45%, 30%);
+	--theme-button-hover-bg: hsl(231 25% 65% / .15);
+
+	display: inline-flex;
 	align-items: center;
 	gap: .4em;
-	font-style: normal;
-}
-.theme-toggle-label {
-	color: #767676;
+	padding: .15em .6em;
+	border: 2px solid var(--theme-button-border);
+	border-radius: 6.25em;
+	background-color: transparent;
+	color: var(--theme-button-color);
+	font: inherit;
 	font-weight: 600;
+	font-style: normal;
 	cursor: pointer;
-	user-select: none;
-	transition: color .15s ease-in-out;
+	transition: color .15s ease-in-out, border-color .15s ease-in-out, background-color .15s ease-in-out;
 }
-.theme-toggle:has(.toggle-theme[data-mode="dark"]) .theme-toggle-label {
-	color: #868a8c;
+/* Dark page, switches to light: warm amber */
+.theme-button[data-mode="dark"] {
+	--theme-button-color: hsl(43, 90%, 65%);
+	--theme-button-border: hsl(43, 74%, 42%);
+	--theme-button-icon: hsl(43, 90%, 50%);
+	--theme-button-hover-bg: hsl(43 74% 42% / .2);
 }
-/* Tinted to match the switch's own accent, at a lightness tuned to pass contrast
-   against the page background each is shown on (amber on light, periwinkle on dark) */
-.theme-toggle-label.active {
-	color: #916a08;
+.theme-button:hover {
+	background-color: var(--theme-button-hover-bg);
 }
-.theme-toggle:has(.toggle-theme[data-mode="dark"]) .theme-toggle-label.active {
-	color: #98a3e1;
+.theme-button-icon {
+	color: var(--theme-button-icon);
 }
-/* Light mode: warm amber (base values, below) */
-.toggle.toggle-theme {
-	--toggle-color: hsl(43, 74%, 42%);
-	--toggle-color-secondary: hsl(43, 74%, 78%);
-	--toggle-color-x: hsl(43, 90%, 65%);
-	--toggle-color-x-bg: hsl(43, 90%, 50%);
+/* Stack every label in one cell so the button is always as wide as the longest */
+.theme-button-label {
+	display: inline-grid;
 }
-/* Dark mode: deep indigo */
-.toggle.toggle-theme[data-mode="dark"] {
-	--toggle-color: hsl(231, 40%, 32%);
-	--toggle-color-secondary: hsl(231, 25%, 65%);
-	--toggle-color-x: hsl(231, 55%, 78%);
-	--toggle-color-x-bg: hsl(231, 45%, 30%);
+.theme-button-label > * {
+	grid-area: 1 / 1;
 }
-/* Knob position follows the active theme (dark=left, next to the "Dark" label; light=right), not
-   the auto/override state that aria-pressed otherwise drives it by */
-.toggle.toggle-theme .toggle-control:after {
-	left: var(--toggle-padding);
-	background: var(--toggle-color);
+.theme-button-sizer {
+	visibility: hidden;
 }
-.toggle.toggle-theme[data-mode="light"] .toggle-control:after {
-	left: calc(1em + var(--toggle-padding));
+.theme-button:focus-visible {
+	outline: 3px solid #89deff;
+	outline-offset: 2px;
+}
+/* Icon previews the theme the button switches to */
+.theme-button:not([data-mode]) .theme-button-icon,
+.theme-button[data-mode="light"] .theme-button-icon-light,
+.theme-button[data-mode="dark"] .theme-button-icon-dark {
+	display: none;
 }

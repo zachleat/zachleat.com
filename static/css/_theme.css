@@ -1263,6 +1263,9 @@ a[href]:is(:focus, :hover) .project_img {
 	border-radius: .5em;
 	image-rendering: pixelated;
 }
+.footer-views-count {
+	text-transform: uppercase;
+}
 .footer strong {
 	font-style: normal;
 	font-size: 150%;
@@ -1932,6 +1935,9 @@ a[href].tag-inline:not(.tag-borderless),
 			font-family: var(--z-font-webfont);
 			font-weight: 700;
 		}
+		.tags .top5-speedlify .z-icon {
+			margin-inline-start: .4em;
+		}
 		.tags .tag.tag-popular-rail {
 			text-transform: none;
 			text-decoration: none;
@@ -2354,8 +2360,7 @@ main a[href]:has(> .z-icon [href="#fas-fa-user"]) .z-icon {
 	white-space: nowrap;
 }
 .toggle-features-form > .fl {
-	--lo-margin-h: 1em;
-	--lo-margin-v: .5em;
+	--fl-gap-h: .75em;
 	align-items: center;
 }
 .toggle-features-form > .fl > * {

@@ -1,19 +1,38 @@
-<is-land on:visible class="toggle-island theme-toggle">
+<is-land on:visible class="toggle-island">
 	<style>
 	.toggle-island {
 		display: flex;
 	}
 	/* Hide without JS */
-	.toggle-island:not(:defined) .toggle,
-	.toggle-island:not(:defined) .theme-toggle-label {
+	.toggle-island:not(:defined) .theme-button {
 		display: none;
 	}
+	.theme-system-dark {
+		display: none;
+	}
+	@media (prefers-color-scheme: dark) {
+		.theme-system-light {
+			display: none;
+		}
+		.theme-system-dark {
+			display: inline;
+		}
+	}
 	</style>
-	<span class="theme-toggle-label" data-theme-side="dark">Dark</span>
-	<button type="button" aria-pressed="true" aria-label="Theme" class="toggle toggle-theme">
-		<span class="toggle-control"></span>
+	<noscript>
+		<span class="theme-system-light">Using light theme (auto)</span>
+		<span class="theme-system-dark">Using dark theme (auto)</span>
+	</noscript>
+	<button type="button" class="theme-button">
+		<svg class="theme-button-icon theme-button-icon-light" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+		<svg class="theme-button-icon theme-button-icon-dark" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+		<span class="theme-button-label">
+			<span class="theme-button-text">Theme</span>
+			<span class="theme-button-sizer" aria-hidden="true">Use light theme (auto)</span>
+			<span class="theme-button-sizer" aria-hidden="true">Use dark theme (auto)</span>
+		</span>
 	</button>
-	<span class="theme-toggle-label" data-theme-side="light">Light</span>
+	<span class="sr-only theme-button-status" role="status"></span>
 	<template data-island="once" webc:raw>
 		<link rel="stylesheet" href="/static/toggle-button.css">
 		<script src="/static/toggle-button.js"></script>

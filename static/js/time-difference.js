@@ -33,6 +33,11 @@ class TimeDifference extends HTMLElement {
 		return this.getAttribute("mode");
 	}
 
+	get format() {
+		// "long" (default), "short", or "narrow"
+		return this.getAttribute("format");
+	}
+
 	get suffix() {
 		return this.getAttribute("suffix");
 	}
@@ -76,7 +81,7 @@ class TimeDifference extends HTMLElement {
 	}
 
 	static getText(dateStr, options = {}) {
-		let { units, locale, mode, suffix, prefix } = options;
+		let { units, locale, mode, suffix, prefix, format } = options;
 		let modes = (mode || "").split(",");
 
 		let date1;
@@ -103,9 +108,9 @@ class TimeDifference extends HTMLElement {
 		if(units === "milliseconds") {
 			// milliseconds are not supported by RelativeTimeFormat
 			let numFormat = new Intl.NumberFormat();
-			str = `${diff > 0 ? "in " : ""}${numFormat.format(diff)} milliseconds`;
+			str = `${diff > 0 ? "in " : ""}${numFormat.format(diff)}${format && format !== "long" ? "ms" : " milliseconds"}`;
 		} else {
-			let rtf = new Intl.RelativeTimeFormat(locale, { numeric: "always" });
+			let rtf = new Intl.RelativeTimeFormat(locale, { numeric: "always", style: format || "long" });
 			// super close to next whole unit, round up
 			if( amountDiff < 1 && amountDiff > this.MINIMUM_ROUND_UP ) {
 				str = rtf.format(Math.round(diff), units);
@@ -150,6 +155,7 @@ class TimeDifference extends HTMLElement {
 					mode: this.mode,
 					prefix: this.prefix,
 					suffix: this.suffix,
+					format: this.format,
 				});
 			})
 		});
