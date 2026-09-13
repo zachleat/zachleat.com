@@ -203,6 +203,7 @@ export default async function(eleventyConfig) {
 			[resolveModule("@zachleat/carouscroll")]: `static/carouscroll.js`,
 			[resolveModule("@zachleat/heading-anchors")]: `static/heading-anchors.js`,
 			[resolveModule("@zachleat/line-numbers")]: `static/line-numbers.js`,
+			[resolveModule("@zachleat/solar-eclipse-toggle")]: `static/solar-eclipse-toggle.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")

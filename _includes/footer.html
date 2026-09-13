@@ -11,22 +11,37 @@
 
 		<form class="toggle-features-form">
 			<div class="fl fl-inline fl-nowrap">
+				<is-land on:visible>
+					{%- capture themeLabels %}
+					<span class="se-label-dark">{% icon "far:moon" %}Use dark theme</span>
+					<span class="se-label-light">{% icon "far:sun" %}Use light theme</span>
+					<span class="se-label-unknown">{% icon "fas:circle-half-stroke" %}Theme</span>
+					{%- endcapture %}
+					<solar-eclipse-toggle>
+						<button type="button" class="se-button" disabled>
+							<span class="se-label">{{ themeLabels | replace: 'class="z-icon"', 'class="z-icon se-icon"' }}</span>
+							<span class="se-system">System</span>
+						</button>
+					</solar-eclipse-toggle>
+					<template data-island="once">
+						<script type="module" src="/static/solar-eclipse-toggle.js"></script>
+					</template>
+				</is-land>
 				<a href="/uses/"><img src="/img/built-with-eleventy.gif" alt="Built with Eleventy, Red balloon floats away" loading="lazy" width="88" height="31" eleventy:ignore class="footer-badge"></a>
 				<span>
 					<span class="footer-views-count">{{ totalAnalyticsPageViews | renderNumber: "0.00a" }}</span> views
 					<span class="tag tag-popular-rail tag-borderless"><em><time datetime="{{ blogBirthday | dateToISO }}" title="{{ blogBirthday | dateToISO }}">since {{ blogBirthday | readableDate: "yyyy" }}</time></em></span>
 				</span>
-				{%- renderTemplate "webc" %}
 				<div>
-					<toggle-button label="CSS" class="toggle-css"></toggle-button>
+					{%- renderTemplate "webc" %}
+					<div>
+						<toggle-button label="CSS" class="toggle-css"></toggle-button>
+					</div>
+					<div>
+						<toggle-button label="Web Fonts" @toggleclass="font-fallback"></toggle-button>
+					</div>
+					{%- endrenderTemplate %}
 				</div>
-				<div>
-					<toggle-button label="Web Fonts" @toggleclass="font-fallback"></toggle-button>
-				</div>
-				<div>
-					<theme-toggle></theme-toggle>
-				</div>
-				{%- endrenderTemplate %}
 			</div>
 		</form>
 	</div>

@@ -2370,6 +2370,11 @@ main a[href]:has(> .z-icon [href="#fas-fa-user"]) .z-icon {
 }
 
 /* Custom Elements */
+solar-eclipse-toggle .z-icon {
+	margin: 0;
+	width: 1em;
+	height: 1em;
+}
 aside time-difference {
 	text-transform: capitalize;
 }
