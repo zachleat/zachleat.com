@@ -12,14 +12,11 @@
 		<form class="toggle-features-form">
 			<div class="fl fl-inline fl-nowrap">
 				<is-land on:visible>
-					{%- capture themeLabels %}
-					<span class="se-label-dark">{% icon "far:moon" %}Use dark theme</span>
-					<span class="se-label-light">{% icon "far:sun" %}Use light theme</span>
-					<span class="se-label-unknown">{% icon "fas:circle-half-stroke" %}Theme</span>
-					{%- endcapture %}
 					<solar-eclipse-toggle>
-						<button type="button" class="se-button" disabled>
-							<span class="se-label">{{ themeLabels | replace: 'class="z-icon"', 'class="z-icon se-icon"' }}</span>
+						<button type="button" disabled>
+							<span class="se-label-dark">{% icon "far:moon" %}Use dark theme</span>
+							<span class="se-label-light">{% icon "far:sun" %}Use light theme</span>
+							<span class="se-label-unknown">{% icon "fas:circle-half-stroke" %}Theme</span>
 							<span class="se-system">Auto</span>
 						</button>
 					</solar-eclipse-toggle>
