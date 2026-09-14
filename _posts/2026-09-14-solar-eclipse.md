@@ -7,7 +7,7 @@ tags:
 ---
 In [Trying out a Two-state Dark Mode Toggle](/web/two-state-dark-mode-toggle/) I summarized the Two-state Dark and Light mode Toggle discussion as I experimented with a  toggle in my personal website footer.
 
-After launch, [Chris Wilcox left some good feedback to improve the accessibility of the component](https://fediverse.zachleat.com/@cwilcox808@c.im/117259821195055457).
+After launch, [Curtis Wilcox left some good feedback to improve the accessibility of the component](https://fediverse.zachleat.com/@cwilcox808@c.im/117259821195055457).
 
 I decided to fold this into a reusable component so that I can benefit from this work on future websites (and you can use it too, I guess!). It’s called `@zachleat/solar-eclipse-toggle` and you can find it [on GitHub](https://github.com/zachleat/solar-eclipse-toggle) or [on npm now](https://www.npmjs.com/package/@zachleat/solar-eclipse-toggle).
 
