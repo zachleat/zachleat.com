@@ -28,6 +28,10 @@
 	width: calc( 100% + 1rem );
 	max-width: none;
 
+	@media (min-width: 38.25em) { /* 612px */
+		margin-left: calc( -.75rem );
+		width: calc( 100% + 1.5rem );
+	}
 	@media (min-width: 61.25em) { /* 980px */
 		margin-left: calc( -.875rem );
 		width: calc( 100% + 1.75rem );

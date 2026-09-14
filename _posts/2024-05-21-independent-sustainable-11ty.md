@@ -1,12 +1,14 @@
 ---
 title: 'I Need Your Help to Make 11ty Fully Independent and Sustainable in 2024'
 tags: eleventy
-calloutMessage:
-  content: <strong>Updated September 11, 2024:</strong> As <a href="/web/eleventy-font-awesome/">11ty is now joining Font Awesome</a>, we’re winding down our sustainability fundraising campaign. I’ll post more detail about this soon and I sincerely appreciate everyone that donated!
-  class: callout-alert
 modules:
   - "/static/js/fundraising-status.js"
 ---
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
+<p><strong>Updated September 11, 2024:</strong> As <a href="/web/eleventy-font-awesome/">11ty is now joining Font Awesome</a>, we’re winding down our sustainability fundraising campaign. I’ll post more detail about this soon and I sincerely appreciate everyone that donated!</p>
+</div>
+
 The 11ty International Symposium on Making Web Sites Real Good [wrapped up two short weeks ago](/web/11ty-conf-retro/) and it was _(to say the least)_ incredible. The speakers, the talks, and most importantly — the community.
 
 Piggybacking from this amazing momentum, 11ty is making some bigger moves: we’re going all-in to create a fully independent and sustainable, grass-roots funded open source project in 2024.

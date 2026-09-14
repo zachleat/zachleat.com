@@ -1,31 +1,60 @@
-/* Call to Action and Deprecation Warning */
+/* Callouts: `.callout` plus an optional level class and leading icon */
 .callout {
-	font-size: 1.125em;
-	line-height: 140%;
-	padding: .5em;
-	margin-top: 1em;
-	border-radius: 5px;
-	box-shadow: 0 0 0 2px var(--callout-color, var(--z-color-text-heading));
+	--callout-hue: var(--z-color-text-secondary);
+	--callout-accent: color-mix(in oklab, var(--callout-hue) 60%, var(--z-color-text-heading));
+	position: relative;
+	margin-block: 1.5em;
+	padding: .875em 1em;
+	border-radius: .5em;
+	border-inline-start: .3125em solid var(--callout-hue);
+	background-color: color-mix(in oklab, var(--callout-hue) 12%, var(--z-color-bg));
+	line-height: 1.6;
 }
-.callout h3 {
-	display: inline;
-	margin-right: .6em;
+.callout-tip {
+	--callout-hue: #3f9142;
 }
+.callout-update {
+	--callout-hue: #2f7fc1;
+}
+.callout-warning {
+	--callout-hue: #e0a100;
+}
+.callout-alert {
+	--callout-hue: #d93636;
+}
+
+.callout:has(> .z-icon) {
+	padding-inline-start: 3em;
+}
+.callout > .z-icon {
+	position: absolute;
+	top: 1em;
+	left: .875em;
+	width: 1.25em;
+	height: 1.25em;
+	margin: 0;
+	color: var(--callout-accent);
+}
+.callout > :first-child:not(.z-icon),
+.callout > .z-icon + * {
+	margin-top: 0;
+}
+.callout > :last-child {
+	margin-bottom: 0;
+}
+.callout h3,
 .callout-hed {
-	text-transform: uppercase;
-	margin-bottom: .5em;
+	margin: 0 0 .25em;
+	font-size: .8125em;
 	font-weight: 700;
+	line-height: 1.6;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	color: var(--callout-accent);
 }
 .callout p {
 	margin: 0;
-	line-height: 160%;
-	font-style: italic;
 }
-.callout-alert,
-.callout-warning {
-	background-color: var(--z-color-highlight-bg);
-}
-.callout--sm {
-	font-size: 0.9375em; /* 15px /16 */
-	line-height: 1.6;
+.callout p + p {
+	margin-top: .75em;
 }

@@ -483,17 +483,95 @@ U.S. Chief Technology Officer and Assistant to the President
 	</div>
 </div>
 
-<h3>Callout</h3>
-<div class="livedemo">
+<h3 id="callout">Callout</h3>
+<p>Add a level class and a leading Font Awesome icon. The heading and icon are optional.</p>
+
+<div class="livedemo top square-bottom" data-demo-label="Note (default)">
 	<div class="callout">
+		{% icon "fa:circle-info" %}
+		<h3>Note</h3>
+		<p>As an aside, this search has made me tempted to ask: do we need to keep dual publishing packages?</p>
+	</div>
+{% highlight "html" %}{% raw %}
+<div class="callout">
+	{% icon "fa:circle-info" %}
+	<h3>Note</h3>
+	<p>…</p>
+</div>
+{% endraw %}{% endhighlight %}
+</div>
+
+<div class="livedemo top square-bottom" data-demo-label="Tip">
+	<div class="callout callout-tip">
+		{% icon "fa:lightbulb" %}
+		<h3>Tip</h3>
+		<p>This talk is available as a <a href="/web/good-bad-web-components/">blog post: <strong>The Good, the Bad, and the Web Components</strong></a> (if you prefer to read, like me).</p>
+	</div>
+{% highlight "html" %}{% raw %}
+<div class="callout callout-tip">
+	{% icon "fa:lightbulb" %}
+	<h3>Tip</h3>
+	<p>…</p>
+</div>
+{% endraw %}{% endhighlight %}
+</div>
+
+<div class="livedemo top square-bottom" data-demo-label="Update">
+	<div class="callout callout-update">
+		{% icon "fa:clock-rotate-left" %}
 		<h3>Update</h3>
 		<p>Note that this approach has another consideration to be considered that was not originally documented here.</p>
 	</div>
+{% highlight "html" %}{% raw %}
+<div class="callout callout-update">
+	{% icon "fa:clock-rotate-left" %}
+	<h3>Update</h3>
+	<p>…</p>
+</div>
+{% endraw %}{% endhighlight %}
+</div>
 
+<div class="livedemo top square-bottom" data-demo-label="Warning">
 	<div class="callout callout-warning">
+		{% icon "fa:triangle-exclamation" %}
 		<h3>Warning</h3>
 		<p>This article is old and may contain information that is outdated, irrelevant, or—dare I say it—no longer accurate. Read with care!</p>
 	</div>
+{% highlight "html" %}{% raw %}
+<div class="callout callout-warning">
+	{% icon "fa:triangle-exclamation" %}
+	<h3>Warning</h3>
+	<p>…</p>
+</div>
+{% endraw %}{% endhighlight %}
+</div>
+
+<div class="livedemo top square-bottom" data-demo-label="Alert">
+	<div class="callout callout-alert">
+		{% icon "fa:circle-exclamation" %}
+		<h3>Alert</h3>
+		<p>This will permanently delete your output directory.</p>
+		<p>Multiple paragraphs are spaced apart.</p>
+	</div>
+{% highlight "html" %}{% raw %}
+<div class="callout callout-alert">
+	{% icon "fa:circle-exclamation" %}
+	<h3>Alert</h3>
+	<p>…</p>
+	<p>…</p>
+</div>
+{% endraw %}{% endhighlight %}
+</div>
+
+<div class="livedemo top square-bottom" data-demo-label="No Icon or Heading">
+	<div class="callout callout-update">
+		<p>Video versions of this talk are available at <a href="/web/smashingconf/2023/video/">SmashingConf Freiburg (2023)</a> and <a href="/web/jsheroes/">JSHeroes (2023)</a>.</p>
+	</div>
+{% highlight "html" %}
+<div class="callout callout-update">
+	<p>…</p>
+</div>
+{% endhighlight %}
 </div>
 
 <h3>Relative Time Difference</h3>

@@ -74,7 +74,7 @@ There exists an even edgier edge case here. What happens when `resource.html` an
 
 More seriously, I think this case actually represents a larger URL _usability problem_ for the content. In this case, though pedantically and technically correct, `/resource` and `/resource/` confusingly resolve to different pieces of content. I think this should be avoided if at all possible and a **tooling error** is warranted. It could be argued that Netlify takes an opinionated stance here to attempt to resolve the ambiguity at a platform level.
 
-<div class="callout callout--11ty callout--sm">
+<div class="callout callout--11ty">
   {%- renderTemplate "liquid,md" -%}
   <div class="callout-hed">{% indieAvatar "https://www.11ty.dev/" %}Eleventy Specific Note</div>
 
