@@ -2,7 +2,7 @@
 title: "A Historical Reference of React Criticism"
 external_icon_url: https://react.dev/
 ---
-<div class="livedemo" data-demo-label="">
+<div class="card" data-demo-label="">
 	<p><strong>Update 3 December 2025</strong>: <a href="https://jsx.lol/"><code>jsx.lol</code></a> from <a href="https://dbushell.com/">David Bushell</a> seems to be carrying the torch forward here cataloging newer content!</p>
 </div>
 
@@ -20,7 +20,7 @@ To my knowledge this was the first data-backed criticism of the SPA/clientside r
 
 The React popularization of client-side rendering did not exist in a vacuum. It was happening _as_ developers struggled to make this model of client-side React work on an increasingly diverse and demanding world-wide mobile device landscape, especially as [Responsive Web Design won](https://www.zachleat.com/twitter/1262795599390420994) over m-dot architectures for most web work.
 
-<div class="livedemo" data-demo-label="Side Note">
+<div class="card" data-demo-label="Side Note">
 
 _I’m reminded of Mark Zuckerberg famously [admitting that Facebook bet _too much_ on HTML5 for mobile](https://www.youtube.com/watch?v=GBp_xCGIATk), although I haven’t seen a connection between that 2012 quote and React’s initial release in 2013._
 
@@ -40,7 +40,7 @@ It hasn’t improved with the new beta React Docs either:
 
 > [“If you’re learning React, we recommend Create React App. It is the most popular way to try out React and build a new single-page, client-side application”](https://beta.reactjs.org/learn/start-a-new-react-project)
 
-<div class="livedemo" data-demo-label="Side Note">
+<div class="card" data-demo-label="Side Note">
 
 _It **is** interesting that they have anointed Next.js as the official chosen full-featured framework moving forward in the Beta documentation. I’m sure it has nothing to do with [Next.js 13 being](https://twitter.com/RyanCarniato/status/1584973099740499968) the [“real React 18 release”](https://twitter.com/acdlite/status/1549853625673023488)._
 
@@ -56,7 +56,7 @@ _{{ "20 Apr 2015" | timePosted }} ago:_
 
 > Well, it turned out that React here at least worked (not on Android 2.3, only on webOS), but it delivers the worst performance compared with underscore, paperclip, or my DOM version.
 
-<div class="livedemo" data-demo-label="Updated">
+<div class="card" data-demo-label="Updated">
 
 _**Update February 7, 2023**: this entry was added._
 
@@ -76,7 +76,7 @@ _{{ "3 Jul 2015" | timePosted }} ago:_
 
 > I really enjoyed using React, but I wouldn't personally use it on an app I'm building; I just don't think it would be fast enough.
 
-<div class="livedemo" data-demo-label="Updated">
+<div class="card" data-demo-label="Updated">
 
 _**Update February 7, 2023**: this entry was added._
 
@@ -92,7 +92,7 @@ Prior to this change it declared:
 
 > “React abstracts away the DOM, giving a simpler programming model and better performance.”—`https://facebook.github.io./react/`
 
-<div class="livedemo" data-demo-label="Updated">
+<div class="card" data-demo-label="Updated">
 
 _**Update February 6, 2023**: this entry was added._
 
@@ -106,7 +106,7 @@ _{{ "16 Jul 2016" | timePosted }} ago:_
 
 > If you are using or considering using React in a project you might want to consult a lawyer. Because of the patent clause you are not allowed to do anything that constitutes as competing with Facebook. If you do take legal actions or in other ways challenge Facebook, your license to use React is immediately revoked. Your license is also revoked if you have any legal disputes if you have legal disputes with any other company using React.
 
-<div class="livedemo" data-demo-label="Updated">
+<div class="card" data-demo-label="Updated">
 
 _**Update February 7, 2023**: this entry was added._
 
@@ -144,7 +144,7 @@ Facebook [reversed the decision](https://engineering.fb.com/2017/09/22/web/relic
 The patent clause remained in place for many other open source projects at Facebook (and all prior versions of React).
 
 
-<div class="livedemo" data-demo-label="Updated">
+<div class="card" data-demo-label="Updated">
 
 _**Update February 7, 2023**: some addition timeline context was added._
 
@@ -172,7 +172,7 @@ which included a photo of a talk slide that read:
 
 > By getting rid of React and moving to plain JavaScript, we saw a 50% reduction in our Time to Interactive (TTI) metric.
 
-<div class="livedemo" data-demo-label="Updated">
+<div class="card" data-demo-label="Updated">
 
 _**Update March 16, 2023**: This section was added._
 
@@ -201,7 +201,7 @@ I remember this tweet pretty vividly, even now! What an exciting possibility—a
 
 The tweet was posted on September 13, 2021, a full year before [Next.js v13 shipped on October 25, 2022](https://nextjs.org/blog/next-13). Astute readers might note that Next.js v13 did not ship with øJS. The Next.js v13 bundle size was **44 kB larger** than v12—about **half of one React library larger**, in fact.
 
-<div class="livedemo" data-demo-label="Side Note">
+<div class="card" data-demo-label="Side Note">
 
 _As an aside, I’m curious how much of this had to do with miscommunicated expectations around React Server Components, given the criticisms [also levied by the Hydrogen team at Shopify](https://twitter.com/FredKSchott/status/1587095801917865984)._
 
@@ -219,7 +219,7 @@ Here are a few baseline bundle sizes:
 * Remix (v1.5.1) was [67.7 kB (compressed)](https://www.zachleat.com/twitter/1534588439580090368/) (as of 8 Jun 2022)
 * Next.js (v12) was [72.2 kB (compressed), 228 kB (uncompressed)](https://www.zachleat.com/twitter/1468419834501337088) (as of 7 Dec 2021)
 
-<div class="livedemo" data-demo-label="Updated">
+<div class="card" data-demo-label="Updated">
 
 _**Update February 7, 2023**: Added a bit of history on Single Page Applications._
 
@@ -286,7 +286,7 @@ Kent lists a host of problems with Vercel’s Next.js in [_Why I Won’t Use Nex
 * [The self-fulfilling prophecy of React—Josh Collinsworth](https://joshcollinsworth.com/blog/self-fulfilling-prophecy-of-react) _(July 27, 2022)_
 * [Will Serving Real HTML Content Make A Website Faster? Let’s Experiment!—Scott Jehl](https://blog.webpagetest.org/posts/will-html-content-make-site-faster/) _(September 21, 2022)_
 
-<div class="livedemo" data-demo-label="Updated">
+<div class="card" data-demo-label="Updated">
 
 _**Update February 7, 2023**: Added resources [from Timo Tijhof](https://fosstodon.org/@krinkle/109823277305506614) and [Thomas Michael Semmler](https://indieweb.social/@nachtfunke)!_
 
@@ -296,7 +296,7 @@ _**Update February 7, 2023**: Added resources [from Timo Tijhof](https://fosstod
 
 In this post I didn’t mention the [rise and fall of CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)—an approach [created by the React team](https://speakerdeck.com/vjeux/react-css-in-js) in November 2014 and further popularized in the React community before quietly [walking it back almost 7 years later](https://github.com/reactwg/react-18/discussions/110)).
 
-<div class="livedemo" data-demo-label="Updated">
+<div class="card" data-demo-label="Updated">
 
 _**Update February 6, 2023**: a thank you to Mayank who clarified some history on CSS-in-JS, and you can [read more on their blog post](https://blog.mayank.co/is-css-in-js-actually-bad#heading-closing-thoughts)._
 

@@ -25,7 +25,7 @@ Well image optimization can’t solve that problem but I am here to tell you abo
 
 First, `npm install @11ty/eleventy-img` into your project.
 
-<div class="livedemo" data-demo-label="Notes for Beginners">{% markdown %}
+<div class="card" data-demo-label="Notes for Beginners">{% markdown %}
 * If you don’t have `npm`, [download and install Node.js](https://nodejs.org/en/).
 * If you don’t have a project, run `npm init -y` in a new, empty directory.
 {% endmarkdown %}</div>

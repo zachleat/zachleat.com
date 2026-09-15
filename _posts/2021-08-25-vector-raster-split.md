@@ -18,7 +18,7 @@ Now I know that these sizes are the uncompressed file sizes (before GZIP/Brotli)
 
 ## Attempt 2: PNG
 
-<details class="livedemo livedemo-dark livedemo-flush">
+<details class="card card-dark card-flush">
   <summary><code>1.2 MB</code> Original Export from Figma as PNG</summary>
   <img src="/web/img/posts/vector-raster-split/full.png" alt="Full PNG version" loading="lazy" decoding="async" width="1786" height="1786">
 </details>
@@ -27,7 +27,7 @@ So y’all know me well enough that I won’t be putting a 1.2 MB hero image in 
 
 ### ImageOptim
 
-<details class="livedemo livedemo-dark livedemo-flush">
+<details class="card card-dark card-flush">
   <summary><code>831 KB</code> PNG optimized with ImageOptim</summary>
   <img src="/web/img/posts/vector-raster-split/full-imageoptim.png" alt="ImageOptim PNG version" loading="lazy" decoding="async" width="1786" height="1786">
 </details>
@@ -37,7 +37,7 @@ I was impressed with the ~400 KB savings here from a single drag-and-drop onto I
 
 ### [Squoosh](https://squoosh.app/)
 
-<details class="livedemo livedemo-dark livedemo-flush">
+<details class="card card-dark card-flush">
   <summary><code>376 KB</code> PNG optimized with Squoosh (Reduced palette to 256 colors)</summary>
   <img src="/web/img/posts/vector-raster-split/full-squoosh.png" alt="Squoosh PNG version" loading="lazy" decoding="async" width="1786" height="1786">
 </details>
@@ -46,7 +46,7 @@ Now we’re cooking with gas. That Reduced Palette option offered a huge savings
 
 ## Attempt 3: WebP
 
-<details class="livedemo livedemo-dark livedemo-flush">
+<details class="card card-dark card-flush">
   <summary><code>152 KB</code> WebP optimized with Squoosh (Lossless, Reduced palette to 256 colors, demo offers PNG fallback)</summary>
   <picture>
     <source type="image/webp" srcset="/web/img/posts/vector-raster-split/full-squoosh.webp 1786w">
@@ -65,7 +65,7 @@ Read Jake’s excellent blog post: [AVIF has landed](https://jakearchibald.com/2
 
 Squoosh settings: Lossless (off), Quality: 45, Subsample Chroma (off), Effort: 6
 
-<details class="livedemo livedemo-dark livedemo-flush" open>
+<details class="card card-dark card-flush" open>
   <summary><code>168 KB</code> AVIF optimized with Squoosh (Full palette, demo offers WebP and PNG fallback)</summary>
   <picture>
     <source type="image/avif" srcset="/web/img/posts/vector-raster-split/full-squoosh.avif 1786w">
@@ -80,10 +80,10 @@ Squoosh settings: Lossless (off), Quality: 45, Subsample Chroma (off), Effort: 6
 If we separate the stuff that vectors are good at (gradients, lines, etc.) and put that into an SVG and put the rest into the raster format, we can achieve even more savings! Now I did take a bit of the easy way out here—I didn’t put as much into the vector layer as I could have. And you may want to preserve more of the image in the foreground for things like “printing” (as if anyone still did that).
 
 <div style="display: flex; gap: 5vw">
-  <div class="livedemo livedemo-dark livedemo-flush" data-demo-label="">
+  <div class="card card-dark card-flush" data-demo-label="">
     <img src="/web/img/posts/vector-raster-split/subset-svgomg.svg" alt="2 Layers, SVG version optimized with SVGOMG" loading="lazy" decoding="async" width="1786" height="1786">
   </div>
-  <div class="livedemo livedemo-dark livedemo-flush" data-demo-label="">
+  <div class="card card-dark card-flush" data-demo-label="">
     <picture>
       <source type="image/avif" srcset="/web/img/posts/vector-raster-split/subset-squoosh.avif 1786w">
       <source type="image/webp" srcset="/web/img/posts/vector-raster-split/subset-squoosh.webp 1786w">
@@ -95,7 +95,7 @@ If we separate the stuff that vectors are good at (gradients, lines, etc.) and p
 
 Using the raster layer as the foreground image and the supplementary vector image as a CSS `background-image`, we can combine the two! You may even be able to dump the optimized raster back into the SVG as a Data URI embedded in an `<image>` if you want to get real fancy—I didn’t go down that road.
 
-<details class="livedemo livedemo-dark livedemo-flush" open>
+<details class="card card-dark card-flush" open>
   <summary><code>74 KB</code> + <code>4.2 KB</code> Optimized SVG plus AVIF/WebP/PNG</summary>
   <style>
     .demo-img-layering {

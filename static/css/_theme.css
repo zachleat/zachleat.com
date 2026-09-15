@@ -738,6 +738,9 @@ pre:has(+ pre),
 line-numbers:has(+ details) pre.uln-target {
 	margin-block-end: var(--page-padding);
 }
+line-numbers + line-numbers {
+	margin-block-start: 1em;
+}
 pre,
 line-numbers pre.uln-target {
 	margin-inline: calc(-1 * var(--page-padding));
@@ -758,7 +761,7 @@ pre > code {
 	pre {
 		border-radius: 0.5rem; /* 8px /16 */
 	}
-	.livedemo pre {
+	.card pre {
 		border-radius: 0;
 	}
 }

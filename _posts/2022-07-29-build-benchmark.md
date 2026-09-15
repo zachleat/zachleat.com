@@ -38,7 +38,7 @@ Blogging. The quintessential starter project for most—if not all—[site gener
 * [Gatsby’s tutorial](https://www.gatsbyjs.com/docs/tutorial/part-1/) guides folks to create their _“first Gatsby site: a blog site…”_
 * Remix’s home page has a prominent _Get Started_ call to action button that links to their [Blog Tutorial](https://remix.run/docs/en/v1/tutorials/blog).
 
-<div class="livedemo livedemo-evil livedemo-sm">
+<div class="card card-evil card-sm">
   Some of these adamantly SPA-first *web app* frameworks have really focused their documentation on content-based *web site* use cases—but let’s not read into that too much…
 </div>
 
@@ -278,7 +278,7 @@ I understand why Remix folks think this benchmark is unfair to Remix. I’ve hea
 
 From my perspective, the benchmark encountered a build performance-related bug in how Remix—a request-time architected tool—performs a build-time precompilation of Markdown routes. It doesn’t have to be any more than a build-performance related bug. Once the bug is fixed (or if the approach is deprecated), I’ll make updates to this post.
 
-<div class="livedemo" data-demo-label="Technical Detail">
+<div class="card" data-demo-label="Technical Detail">
 
 For completeness and a bit more technical detail, the Remix team has asked me to highlight that it is **not recommended to use MDX file-system based routing** for `.mdx` or `.md` files. **Specifically: do not put `.md` or `.mdx` files into your `app/routes/` folder.** Make sure you read/heed the warnings on the [Remix MDX plugin documentation](https://remix.run/docs/en/v1/guides/mdx).
 

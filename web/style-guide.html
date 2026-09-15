@@ -21,25 +21,25 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h2 id="demos">Demos</h2>
 
-<p class="livedemo">This is a live demo example with the demonstration label on the top.</p>
+<p class="card card--demo">This is a live demo example with the demonstration label on the top.</p>
 
-<p class="livedemo" data-demo-label="New Label Override">This is a live demo example with a label text override in the markup.</p>
-<p class="livedemo livedemo-mixed" data-demo-label="New Label Override, Mixed Case">This is a live demo example with a label text override in the markup.</p>
-<div class="livedemo" data-demo-label="Nested Parent">
+<p class="card" data-demo-label="New Label Override">This is a live demo example with a label text override in the markup.</p>
+<p class="card card-mixed" data-demo-label="New Label Override, Mixed Case">This is a live demo example with a label text override in the markup.</p>
+<div class="card" data-demo-label="Nested Parent">
 	<p>This is a live demo example with the demonstration label on the top.</p>
-	<div class="livedemo" data-demo-label="Nested Child">
+	<div class="card" data-demo-label="Nested Child">
 		<p>This is a live demo example with the demonstration label on the top.</p>
 	</div>
 </div>
 
 <h3>More snowflakes</h3>
-<div class="livedemo livedemo-evil">This is a an evil tip and you shouldn’t do it.</div>
+<div class="card card-evil">This is a an evil tip and you shouldn’t do it.</div>
 
 <h3>Dark mode</h3>
-<p class="livedemo livedemo-dark">Dark mode.</p>
+<p class="card card--demo card-dark">Dark mode.</p>
 
 <h4>Details and Summary (Flush)</h4>
-<details class="livedemo livedemo-dark livedemo-flush">
+<details class="card card-dark card-flush">
 	<summary><code>4.2 KB</code> Details and summary, expand this</summary>
 	<img src="/web/img/posts/vector-raster-split/subset-svgomg.svg" alt="Flush details content" loading="lazy" decoding="async" width="1786" height="1786">
 </details>
@@ -48,7 +48,7 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h3>Headers and Text</h3>
 
-<div class="livedemo">
+<div class="card card--demo">
 	<h1>Top Level Header</h1>
 	<p>If you’re looking for a better <a href="#">web font loading solution</a>, I’ve written a Comprehensive Guide to Font Loading Strategies which includes a bunch of different font loading approaches that range from the simple to advanced.</p>
 
@@ -68,15 +68,15 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h4>Primary Title</h4>
 
-<div class="livedemo" data-demo-label="Primary Title">
+<div class="card" data-demo-label="Primary Title">
 	<h1 class="primary-title">This is a Primary Title</h1>
 </div>
 
 <h3>Links</h3>
-<p>Use <code>text-decoration-skip-ink</code>, no fallback: <span class="livedemo"><a href="#">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
+<p>Use <code>text-decoration-skip-ink</code>, no fallback: <span class="card card--demo"><a href="#">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
 <p><em><strong>Update</strong>: renamed from <a href="https://www.chromestatus.com/feature/5631679087509504"><code>text-decoration-skip</code></a>.</em></p>
 
-<div class="livedemo" data-demo-label="Break a Link (no Hyphens)">
+<div class="card" data-demo-label="Break a Link (no Hyphens)">
 	<p style="width: 15em;">
 		<a href="https://zachleat.com/twitter/890242957386944516" class="break">https://zachleat.com/twitter/890242957386944516</a>
 	</p>
@@ -87,7 +87,7 @@ tocSelector: ".e-content heading-anchors > h2"
 {% endhighlight %}
 </div>
 
-<div class="livedemo" data-demo-label="Primary Link">
+<div class="card" data-demo-label="Primary Link">
 	<p class="primarylink"><a href="#">Read the Web Font Randsom Note</a></p>
 {% highlight "html" %}
 <p class="primarylink">
@@ -97,19 +97,19 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <h3>Hyphenation</h3>
-<div class="livedemo" style="width: 14em;">
+<div class="card card--demo" style="width: 14em;">
 	<p>supercalifragilisticexpialidocious</p>
 	<p>pneumonoultramicroscopicsilicovolcanoconiosis</p>
 </div>
 <h4>Browser-specific opinions on capitalized words:</h4>
-<div class="livedemo" style="width: 14em;">
+<div class="card card--demo" style="width: 14em;">
 	<p>Supercalifragilisticexpialidocious</p>
 	<p>Pneumonoultramicroscopicsilicovolcanoconiosis</p>
 	<p>Pneumono­ultra­microscopic­silico­volcano­coniosis (soft hyphens)</p>
 </div>
 
 <h3>Blockquotes</h3>
-<div class="livedemo">
+<div class="card card--demo">
 	<p>Normal paragraph text.</p>
 	<blockquote>Progressive enhancement is a touchy subject. It can be hard to discuss dispassionately because, like accessibility, it’s often framed as an issue of empathy and compassion.</blockquote>
 	<p>Normal paragraph text.</p>
@@ -117,7 +117,7 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h3>Text Highlighted Header</h3>
 <p>Works with any header level. Set any <code>background-color</code> and <code>color</code> on the element.</p>
-<div class="livedemo">
+<div class="card card--demo">
 	<h1 class="text-highlight" style="background-color: #333; color: #fff">This is a Top Level Header that wraps to multiple lines to show how the background color wraps too.</h1>
 </div>
 
@@ -125,25 +125,25 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h3>Lato</h3>
 <p>Lato Roman (preloaded), Lato Bold, Lato Italic, and Lato Bold Italic</p>
-<div class="livedemo"><p>Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
+<div class="card card--demo"><p>Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
 <p>Falls back to <code>system-ui, sans-serif</code></p>
-<div class="livedemo"><p class="font-fallback">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
+<div class="card card--demo"><p class="font-fallback">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
 
 <h4>OpenType Features: Ligatures</h4>
-<div class="livedemo" data-demo-label="Ligatures">
+<div class="card" data-demo-label="Ligatures">
 	<p style="font-size: 1.5em;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
 
-	<div class="livedemo" data-demo-label="Ligatures Disabled">
+	<div class="card" data-demo-label="Ligatures Disabled">
 		<p style="font-size: 1.5em; font-variant-ligatures: no-common-ligatures; font-feature-settings: 'liga' 0, 'clig' 0;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
 	</div>
 </div>
 
 <h2 id="code">Code</h2>
-<div class="livedemo">
+<div class="card card--demo">
 	<p>This is a simple <code>code element</code>. It’s usually alongside some other text.</p>
 </div>
 
-<div class="livedemo">
+<div class="card card--demo">
 	<pre>This is a simple pre element.</pre>
 
 	<pre><code>This is pre > code.</code></pre>
@@ -151,7 +151,7 @@ tocSelector: ".e-content heading-anchors > h2"
 	<pre><code>This is pre > code with a really long line length. It should wrap smartly without a scrollbar.</code></pre>
 </div>
 
-<div class="livedemo">
+<div class="card card--demo">
 {% highlight "css" %}
 .my-class {
 	this: is;
@@ -172,13 +172,13 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h2 id="icons">Icons</h2>
 
-<div class="livedemo">
+<div class="card card--demo">
 	{% include "social.html" %}
 </div>
 
 <h2 id="lists">Lists</h2>
 <h3>Ordered List</h3>
-<div class="livedemo">
+<div class="card card--demo">
 <ol>
 	<li>Ordered list item.</li>
 	<li>Ordered list item.</li>
@@ -188,7 +188,7 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <h3>Unordered List</h3>
-<div class="livedemo">
+<div class="card card--demo">
 <ul>
 	<li>Unordered list item.</li>
 	<li>Unordered list item.</li>
@@ -198,7 +198,7 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <h3>Description List</h3>
-<div class="livedemo">
+<div class="card card--demo">
 <dl>
 	<dt>Description Term</dt>
 	<dd>Description Definition</dd>
@@ -208,7 +208,7 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <h3>Inline List</h3>
-<div class="livedemo">
+<div class="card card--demo">
 <ul class="list-inline fl fl-inline fl-nowrap fl-separator-h">
 	<li><a href="#">Inline List Item</a></li>
 	<li><a href="#">Inline List Item</a></li>
@@ -218,7 +218,7 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <h3>Posts List</h3>
-<div class="livedemo">
+<div class="card card--demo">
 <ol class="posts">
 	<li class="subhed">Year</li>
 	<li><a href="#" class="posts-link">Blog post entry.</a></li>
@@ -228,7 +228,7 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <h4>with Standard Counter (Counts up)</h4>
-<div class="livedemo">
+<div class="card card--demo">
 <ol class="posts posts-count posts-count-forward">
 	<li class="subhed">Sub-header</li>
 	<li><a href="#" class="posts-link">Blog post entry.</a></li>
@@ -238,7 +238,7 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <h4>with Post Counter (Counts down)</h4>
-<div class="livedemo">
+<div class="card card--demo">
 <ol class="posts posts-count" style="counter-reset: start-from 4">
 	<li class="subhed">Year</li>
 	<li><a href="#" class="posts-link">Blog post entry.</a></li>
@@ -249,7 +249,7 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <!-- <h3>Definition List</h3>
-<div class="livedemo">
+<div class="card card--demo">
 <dl>
 	<dt>Definition term list item.</dt>
 	<dd>Definition description list item.</dd>
@@ -262,7 +262,7 @@ tocSelector: ".e-content heading-anchors > h2"
 <p class="caption">Not yet in use.</p>
  -->
 <h3>Addendum Notes</h3>
-<div class="livedemo">
+<div class="card card--demo">
 	<p>This is paragraph text with an addendum note attached<a href="#note-1" class="notes_link" id="link-note-1">1</a>.</p>
 
 	<h4>Appendix</h4>
@@ -273,7 +273,7 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h2 id="comments">Comments</h2>
 
-<div class="livedemo">
+<div class="card card--demo">
 	<div class="static-comments">
 		<div class="static-comments-reply" id="comment-UNIQUE_ID_A">
 			<div class="static-comments-hed">
@@ -288,7 +288,7 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h3>Nested Replies</h3>
 
-<div class="livedemo">
+<div class="card card--demo">
 	<div class="static-comments">
 		<div class="static-comments-reply" id="comment-UNIQUE_ID_B">
 			<div class="static-comments-hed">
@@ -312,7 +312,7 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h2 id="tables">Tables</h2>
 
-<div class="livedemo">
+<div class="card card--demo">
 	<table>
 		<caption>NebraskaJS Membership</caption>
 		<thead>
@@ -359,7 +359,7 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h3>Compatibility Tables</h3>
 
-<div class="livedemo">
+<div class="card card--demo">
 <table class="compatibility">
 <thead>
 <tr>
@@ -388,7 +388,7 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h2 id="media">Fluid Media</h2>
 <h3>Image</h3>
-<div class="livedemo">
+<div class="card card--demo">
 	<picture>
 		<source type="image/webp" srcset="/web/img/posts/webp/0-original.webp">
 		<img src="/web/img/posts/webp/0-original.png" alt="Devtools Screenshot showing 18MB download">
@@ -396,7 +396,7 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <h3>Video</h3>
-<div class="livedemo">
+<div class="card card--demo">
 	<video controls preload="metadata" loop src="/web/img/posts/font-smooth/antialiasing.mp4">
 		Sorry, your browser doesn't support embedded videos. Try <a href="/web/img/posts/font-smooth/antialiasing.mp4">downloading it</a> instead.
 	</video>
@@ -408,7 +408,7 @@ tocSelector: ".e-content heading-anchors > h2"
 {%- endrenderTemplate %}
 
 <h3>Figures with Captions</h3>
-<div class="livedemo">
+<div class="card card--demo">
 	<figure>
 		<img src="/web/img/posts/whmeetup/room.jpg" alt="">
 		<figcaption>Holy shit—I’m in the room.</figcaption>
@@ -416,7 +416,7 @@ tocSelector: ".e-content heading-anchors > h2"
 </div>
 
 <h4>Standalone Caption</h4>
-<div class="livedemo">
+<div class="card card--demo">
 	<span class="caption"><strong>Supported</strong> in Safari (Mobile and Desktop) and <strong>Not Supported</strong> in Chrome, Firefox (as of 54)</span>
 </div>
 
@@ -444,7 +444,7 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h3>Printed Page</h3>
 
-<div class="livedemo">
+<div class="card card--demo">
 <div class="printed-page">
 	<img src="/web/img/posts/whmeetup/seal.svg" onerror="this.src='/web/img/posts/whmeetup/seal.png'; this.onerror=null;" alt="The White House Official Seal">
 <blockquote>
@@ -459,7 +459,7 @@ U.S. Chief Technology Officer and Assistant to the President
 <h3 id="callout">Callout</h3>
 <p>Add a level class and a leading Font Awesome icon. The heading and icon are optional.</p>
 
-<div class="livedemo" data-demo-label="Note (default)">
+<div class="card" data-demo-label="Note (default)">
 	<div class="callout">
 		{% icon "fa:circle-info" %}
 		<h3>Note</h3>
@@ -474,7 +474,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo" data-demo-label="Tip">
+<div class="card" data-demo-label="Tip">
 	<div class="callout callout-tip">
 		{% icon "fa:lightbulb" %}
 		<h3>Tip</h3>
@@ -489,7 +489,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo" data-demo-label="Update">
+<div class="card" data-demo-label="Update">
 	<div class="callout callout-update">
 		{% icon "fa:clock-rotate-left" %}
 		<h3>Update</h3>
@@ -504,7 +504,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo" data-demo-label="Warning">
+<div class="card" data-demo-label="Warning">
 	<div class="callout callout-warning">
 		{% icon "fa:triangle-exclamation" %}
 		<h3>Warning</h3>
@@ -519,7 +519,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo" data-demo-label="Alert">
+<div class="card" data-demo-label="Alert">
 	<div class="callout callout-alert">
 		{% icon "fa:circle-exclamation" %}
 		<h3>Alert</h3>
@@ -536,7 +536,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo" data-demo-label="No Icon or Heading">
+<div class="card" data-demo-label="No Icon or Heading">
 	<div class="callout callout-update">
 		<p>Video versions of this talk are available at <a href="/web/smashingconf/2023/video/">SmashingConf Freiburg (2023)</a> and <a href="/web/jsheroes/">JSHeroes (2023)</a>.</p>
 	</div>
@@ -549,7 +549,7 @@ U.S. Chief Technology Officer and Assistant to the President
 
 <h3>Relative Time Difference</h3>
 
-<div class="livedemo">
+<div class="card card--demo">
 	<time-difference live>
 		<p><time datetime="2026-12-01T06:00:00.000Z"></time> — 1 December 2026</p>
 		<p><time datetime="2026-06-01T06:00:00.000Z"></time> — 1 June 2026</p>
@@ -571,7 +571,7 @@ U.S. Chief Technology Officer and Assistant to the President
 
 <!-- <h3>Full width Iframe</h3>
 <p>Includes an <code>iframe-cover</code> element to prevent interactivity with the iframe.</p>
-<div class="livedemo">
+<div class="card card--demo">
 	<div class="iframer fullwidth">
 		<div class="iframe-cover"></div>
 		<iframe class="iframe-big" src="https://www.zachleat.com/web/" scrolling="no"></iframe>

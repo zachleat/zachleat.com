@@ -7,7 +7,7 @@ _Updated on 17 November 2023 to simplify the CSS to use `:defined`_
 
 On the Netlify web site, we have a little banner that appears at the top to drive traffic to new and exciting things happening in Netlify-land.
 
-<div class="livedemo livedemo-mixed livedemo-auto" data-demo-label="Announcement Banner"><img src="/web/img/posts/layout-shift/banner.png" alt="A banner on top of netlify.com"></div>
+<div class="card" data-demo-label="Announcement Banner"><img src="/web/img/posts/layout-shift/banner.png" alt="A banner on top of netlify.com"></div>
 
 That banner has exactly two features:
 

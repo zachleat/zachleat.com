@@ -39,10 +39,10 @@ A few days back [{% twitterImageAvatar "CarolSaysThings" %}CarolSaysThings](http
 .demo-container > h3 + h4 {
   margin-top: 0;
 }
-.demo-container > .livedemo {
+.demo-container > .card {
   margin: .5em 0 0;
 }
-.demo-container > .livedemo:last-child {
+.demo-container > .card:last-child {
   margin-bottom: 0;
 }
 </style>
@@ -50,22 +50,22 @@ Now, my usual take was to pop some `width: 100%` CSS on that thing and call it a
 
 _Each case below uses a 200×200 image in both a `150px` container (to shrink) and a `300px` container (to grow)._
 
-<div class="livedemo demo-container" data-demo-label="">
+<div class="card demo-container" data-demo-label="">
   <h3>width: 100%</h3>
 
   <h4>Without [width][height]</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" eleventy:ignore>
   </div>
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" eleventy:ignore>
   </div>
 
   <h4>Using [width][height]</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" eleventy:ignore>
   </div>
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" eleventy:ignore>
   </div>
 </div>
@@ -76,71 +76,71 @@ Another way to think about this, the image width can range between `0` and `[wid
 
 _Editors note: the above section had a pretty glaring error and was corrected thanks to [@CarolSaysThings](https://twitter.com/CarolSaysThings/), [@HarryMoore2409](https://twitter.com/HarryMoore2409/), and [@nhoizey](https://twitter.com/nhoizey/)! Sorry about that, y’all._
 
-<div class="livedemo demo-container" data-demo-label="">
+<div class="card demo-container" data-demo-label="">
   <h3>max-width: 100%</h3>
 
   <h4>Without [width][height]</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" eleventy:ignore>
   </div>
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" eleventy:ignore>
   </div>
 
   <h4>Using [width][height]</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" eleventy:ignore>
   </div>
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" eleventy:ignore>
   </div>
 </div>
 
 Let’s use `srcset` to add another eligible image width (now 200px and 400px) and see what happens. Spoiler alert: no surprises here! 🎉
 
-<div class="livedemo demo-container" data-demo-label="">
+<div class="card demo-container" data-demo-label="">
   <h3>srcset and width: 100%</h3>
 
 
   <h4>Without [width][height]</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="150px" eleventy:ignore>
   </div>
 
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="300px" eleventy:ignore>
   </div>
 
   <h4>Using [width][height]</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="150px" eleventy:ignore>
   </div>
 
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
     <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-width" sizes="300px" eleventy:ignore>
   </div>
 </div>
 
 Keeping our two eligible image widths in play (200px and 400px) let’s swap to use `max-width: 100%`.
 
-<div class="livedemo demo-container" data-demo-label="">
+<div class="card demo-container" data-demo-label="">
   <h3>srcset and max-width: 100%</h3>
 
   <h4>Without [width][height]</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
   <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth"  sizes="150px" eleventy:ignore>
   </div>
 
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
   <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth"  sizes="300px" eleventy:ignore>
   </div>
 
   <h4 id="id-srcset-widthheight">Using [width][height]</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
   <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" sizes="150px" eleventy:ignore>
   </div>
 
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
   <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" width="200" height="200" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" sizes="300px" eleventy:ignore>
   </div>
 </div>
@@ -153,30 +153,30 @@ _September 9, 2021 Update: [This article has been amended to add one additional 
 
 That looks like this:
 
-<div class="livedemo demo-container" data-demo-label="" id="srcset-maxwidth-widthauto">
+<div class="card demo-container" data-demo-label="" id="srcset-maxwidth-widthauto">
   <h3>srcset and max-width: 100%</h3>
 
   <h4>Using [width][height] and width: auto ⚠️ incurs CLS costs</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
   <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth demo-img-widthauto" eleventy:ignore>
   </div>
 
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
   <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth demo-img-widthauto" eleventy:ignore>
   </div>
 </div>
 
 When [Eleventy Image](https://www.11ty.dev/docs/plugins/image/) generates markup for more than one size, the `<img>` element uses the lowest size/quality source. But this behavior has me thinking that when `srcset` is in play it should use the largest dimensions for the `[width]` and `[height]` attributes. I wonder what y’all think about that? Practically, it would look like this:
 
-<div class="livedemo demo-container" data-demo-label="">
+<div class="card demo-container" data-demo-label="">
   <h3>srcset and max-width: 100%</h3>
 
   <h4>Using [width="400"][height="400"]</h4>
-  <div class="livedemo" data-demo-label="Image > Container" style="width: 150px">
+  <div class="card" data-demo-label="Image > Container" style="width: 150px">
   <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" eleventy:ignore>
   </div>
 
-  <div class="livedemo" data-demo-label="Container > Image" style="width: 300px">
+  <div class="card" data-demo-label="Container > Image" style="width: 300px">
   <img src="./_ignored_yL0QoCVMHj-200.jpeg" srcset="./_ignored_yL0QoCVMHj-200.jpeg 200w, ./_ignored_yL0QoCVMHj-400.jpeg 400w" width="400" height="400" loading="lazy" decoding="async" alt="The sample Nebula Image from Unsplash on the Eleventy Image docs" class="demo-img-maxwidth" eleventy:ignore>
   </div>
 </div>

@@ -43,7 +43,7 @@ A pretty standard controlled waterfall experiment, network throttled to Fast 3G 
 
 <img src="/web/img/posts/font-display-reflow/render-1.png" alt="A screenshot of First render at 846ms" class="post-img">
 
-<div class="livedemo livedemo-mixed sizeme" data-demo-label="DEMO: 846ms Serif Fallback">
+<div class="card card-mixed sizeme" data-demo-label="DEMO: 846ms Serif Fallback">
     <p class="font-fallback"><span class="highlight-fallback">This is a paragraph.</span> <strong class="highlight-fallback">This is heavier text.</strong> <em class="highlight-fallback">This is emphasized text.</em> <strong class="highlight-fallback"><em>This is heavier and emphasized text.</em></strong></p>
 </div>
 
@@ -51,7 +51,7 @@ At 846ms into our page load the HTML has rendered and we have some real nice fal
 
 <img src="/web/img/posts/font-display-reflow/render-2.png" alt="A screenshot of render at 1.90s" class="post-img">
 
-<div class="livedemo livedemo-mixed sizeme" data-demo-label="DEMO: 1.9s Italic">
+<div class="card card-mixed sizeme" data-demo-label="DEMO: 1.9s Italic">
     <p class="font-fallback"><span class="highlight-fallback">This is a paragraph.</span> <strong class="highlight-fallback">This is heavier text.</strong> <em class="font-latoitalic highlight">This is emphasized text.</em> <strong class="highlight-fallback"><em>This is heavier and emphasized text.</em></strong></p>
 </div>
 
@@ -59,7 +59,7 @@ At 1.90s the italic web font has loaded and repainted.
 
 <img src="/web/img/posts/font-display-reflow/render-3.png" alt="A screenshot of render at 1.91s" class="post-img">
 
-<div class="livedemo livedemo-mixed sizeme" data-demo-label="DEMO: 1.91s Bold Italic">
+<div class="card card-mixed sizeme" data-demo-label="DEMO: 1.91s Bold Italic">
     <p class="font-fallback"><span class="highlight-fallback">This is a paragraph.</span> <strong class="highlight-fallback">This is heavier text.</strong> <em class="font-latoitalic">This is emphasized text.</em> <strong><em class="font-latobolditalic highlight">This is heavier and emphasized text.</em></strong></p>
 </div>
 
@@ -67,7 +67,7 @@ At 1.91s the bold italic variant has loaded and repainted.
 
 <img src="/web/img/posts/font-display-reflow/render-4.png" alt="A screenshot of render at 1.95s" class="post-img">
 
-<div class="livedemo livedemo-mixed sizeme" data-demo-label="DEMO: 1.95s Roman & Bold">
+<div class="card card-mixed sizeme" data-demo-label="DEMO: 1.95s Roman & Bold">
     <p class="font-lato"><span class="highlight">This is a paragraph. </span><strong class="font-latobold highlight">This is heavier text.</strong> <em class="font-latoitalic">This is emphasized text.</em> <strong><em class="font-latobolditalic">This is heavier and emphasized text.</em></strong></p>
 </div>
 

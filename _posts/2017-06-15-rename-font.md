@@ -26,7 +26,7 @@ If you follow me on Twitter, you may have seen this idea before in <a href="http
 }
 </style>
 
-<p class="livedemo" style="font-family: Helvetica">&lt;p style=&quot;font-family: Helvetica&quot;&gt;This is an end-around for any font family properties you have specified, no matter the block’s selector specificity. Think you can use <code>!important</code> to override? Think again.&lt;/p&gt;</p>
+<p class="card card--demo" style="font-family: Helvetica">&lt;p style=&quot;font-family: Helvetica&quot;&gt;This is an end-around for any font family properties you have specified, no matter the block’s selector specificity. Think you can use <code>!important</code> to override? Think again.&lt;/p&gt;</p>
 
 Let’s check [the specification](https://www.w3.org/TR/css-fonts-3/#font-family-desc):
 
@@ -123,7 +123,7 @@ _Update: I discovered later that the [System Font CSS](#system-font-css) project
 }
 </style>
 
-<span class="livedemo" style="font-family: San Francisco Apple System, fantasy;">San Francisco aliased from <code>local(-apple-system)</code></span> <span class="caption"><strong>Supported</strong> in Safari (Mobile and Desktop) and <strong>Not Supported</strong> in Chrome, Firefox (as of 54)</span>
+<span class="card card--demo" style="font-family: San Francisco Apple System, fantasy;">San Francisco aliased from <code>local(-apple-system)</code></span> <span class="caption"><strong>Supported</strong> in Safari (Mobile and Desktop) and <strong>Not Supported</strong> in Chrome, Firefox (as of 54)</span>
 
 ### BlinkMacSystemFont
 
@@ -141,7 +141,7 @@ _Update: I discovered later that the [System Font CSS](#system-font-css) project
 }
 </style>
 
-<span class="livedemo" style="font-family: San Francisco Blink, fantasy;">San Francisco aliased from <code>local(BlinkMacSystemFont)</code></span> <span class="caption"><strong>Not Supported</strong> in Chrome, Firefox (as of 54), Safari (as of 10.1)</span>
+<span class="card card--demo" style="font-family: San Francisco Blink, fantasy;">San Francisco aliased from <code>local(BlinkMacSystemFont)</code></span> <span class="caption"><strong>Not Supported</strong> in Chrome, Firefox (as of 54), Safari (as of 10.1)</span>
 
 ### PostScript Names
 
@@ -159,7 +159,7 @@ _Update: I discovered later that the [System Font CSS](#system-font-css) project
 }
 </style>
 
-<span class="livedemo" style="font-family: San Francisco PostScript Name, fantasy;">San Francisco aliased from <code>local(.SFNSText-Regular)</code></span> <span class="caption"><strong>Not Supported</strong> in Chrome, Firefox (as of 54), Safari (as of 10.1)</span>
+<span class="card card--demo" style="font-family: San Francisco PostScript Name, fantasy;">San Francisco aliased from <code>local(.SFNSText-Regular)</code></span> <span class="caption"><strong>Not Supported</strong> in Chrome, Firefox (as of 54), Safari (as of 10.1)</span>
 
 ``` css
 @font-face {
@@ -175,13 +175,13 @@ _Update: I discovered later that the [System Font CSS](#system-font-css) project
 }
 </style>
 
-<span class="livedemo" style="font-family: San Francisco PostScript Name Quoted, fantasy;">San Francisco aliased from <code>local('.SFNSText-Regular')</code></span> <span class="caption"><strong>Supported</strong> in Firefox, Safari (Desktop) and <strong>Not Supported</strong> in Chrome, Mobile Safari</span>
+<span class="card card--demo" style="font-family: San Francisco PostScript Name Quoted, fantasy;">San Francisco aliased from <code>local('.SFNSText-Regular')</code></span> <span class="caption"><strong>Supported</strong> in Firefox, Safari (Desktop) and <strong>Not Supported</strong> in Chrome, Mobile Safari</span>
 
 ### system-ui
 
 Standardization is taking place around [the `system-ui` value](https://drafts.csswg.org/css-fonts-4/#system-ui-def), hopefully coming soon to [Can I Use](https://github.com/Fyrd/caniuse/issues/2918). Even better—looks like Chrome has moved forward with this!
 
-<span class="livedemo" style="font-family: system-ui, fantasy;">Not aliased at all, just using <code>font-family: system-ui</code></span> <span class="caption"><strong>Supported</strong> in Chrome and <strong>Not Supported</strong> in Firefox (as of 54), Safari (as of 10.1)</span>
+<span class="card card--demo" style="font-family: system-ui, fantasy;">Not aliased at all, just using <code>font-family: system-ui</code></span> <span class="caption"><strong>Supported</strong> in Chrome and <strong>Not Supported</strong> in Firefox (as of 54), Safari (as of 10.1)</span>
 
 And Chrome’s implementation supports using it as an alias source too! Given that `BlinkMacSystemFont` did not work as an alias source, I was delighted to see that `system-ui` did.
 
@@ -199,7 +199,7 @@ And Chrome’s implementation supports using it as an alias source too! Given th
 }
 </style>
 
-<span class="livedemo" style="font-family: San Francisco System UI, fantasy;">San Francisco aliased from <code>local(system-ui)</code></span> <span class="caption"><strong>Supported</strong> in Chrome and <strong>Not Supported</strong> in Firefox (as of 54), Safari (as of 10.1)</span>
+<span class="card card--demo" style="font-family: San Francisco System UI, fantasy;">San Francisco aliased from <code>local(system-ui)</code></span> <span class="caption"><strong>Supported</strong> in Chrome and <strong>Not Supported</strong> in Firefox (as of 54), Safari (as of 10.1)</span>
 
 ### Final, Reduced Code
 
@@ -222,7 +222,7 @@ p {
 }
 </style>
 
-<p class="livedemo" style="font-family: My San Francisco Alias, fantasy;">This should work everywhere San Francisco is available.<!-- <span style="font-weight: 700">Here is some bold.</span> <span style="font-style: italic;">Here is some italic.</span> <span style="font-weight: 700; font-style: italic;">Here is some italic bold.</span> --></p>
+<p class="card card--demo" style="font-family: My San Francisco Alias, fantasy;">This should work everywhere San Francisco is available.<!-- <span style="font-weight: 700">Here is some bold.</span> <span style="font-style: italic;">Here is some italic.</span> <span style="font-weight: 700; font-style: italic;">Here is some italic bold.</span> --></p>
 
 ## Further Explorations
 

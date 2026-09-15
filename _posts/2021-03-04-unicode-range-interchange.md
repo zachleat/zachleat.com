@@ -22,7 +22,7 @@ _Behind the scenes, Unicode Range Interchange uses an awesome library from [{% t
 
 It looked like this:
 
-<div class="livedemo livedemo-nolabel livedemo-auto" data-demo-label=""><img src="/web/img/posts/unicode-range-interchange/preview.png" alt="A preview of the Unicode Range Interchange page, showing the instructions described in this post."></div>
+<div class="card card--demo card-dark card-flush"><img src="/web/img/posts/unicode-range-interchange/preview.png" alt="A preview of the Unicode Range Interchange page, showing the instructions described in this post."></div>
 
 <p class="primarylink">Try it out for yourself: <a href="https://www.zachleat.com/unicode-range-interchange/">Unicode Range Interchange</a></p>
 

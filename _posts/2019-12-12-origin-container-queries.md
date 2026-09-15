@@ -105,7 +105,7 @@ Here are the earliest mentions of Container Queries that the community was able 
 
 Andy Hume’s work, thus far, seems to be the original! If you have others that pre-date 2014 (even if they aren’t before Andy’s), please [reply to this tweet](https://twitter.com/zachleat/status/1204488622386417665).
 
-<p class="livedemo livedemo-sm" data-demo-label="Get out your wallet">Look at all this link rot! We’re so lucky that many of these entries were preserved by The Wayback Machine. You too can <a href="https://archive.org/donate/">donate to the Internet Archive</a> to support their obviously valuable mission.</p>
+<p class="card card-sm" data-demo-label="Get out your wallet">Look at all this link rot! We’re so lucky that many of these entries were preserved by The Wayback Machine. You too can <a href="https://archive.org/donate/">donate to the Internet Archive</a> to support their obviously valuable mission.</p>
 
 <h1><span class="text-highlight" style="background-color: #333; color: #fff">The Container Queries idea was planted {{ "14 Jul 2011 11:40:00 CDT" | timePosted }} ago</span></h1>
 

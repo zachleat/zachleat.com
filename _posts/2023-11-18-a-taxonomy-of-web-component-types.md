@@ -78,7 +78,7 @@ These components layer on interactivity and add behaviors in true progressive en
 </table>
 </table-saw></div>
 
-<p data-demo-label="Related" class="livedemo m-8">Obligatory nod to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:defined"><code>:defined</code></a>—an incredibly useful tool for styling HTML Web Components.</p>
+<p data-demo-label="Related" class="card m-8">Obligatory nod to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:defined"><code>:defined</code></a>—an incredibly useful tool for styling HTML Web Components.</p>
 
 The following components _augment/modify_ nested HTML. These components could be improved with a tighter coupling to server rendering (e.g. [WebC](https://www.11ty.dev/docs/languages/webc/)) but work great as-is in low-JavaScript environments.
 

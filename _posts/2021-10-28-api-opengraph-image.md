@@ -30,7 +30,7 @@ And while it was nice to have some prettier things displaying on social media—
 
 ~~I’m now using it on [my home page](/):~~ _(Update: I changed the design)_
 
-{% comment %}<div class="livedemo">
+{% comment %}<div class="card card--demo">
   <img src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2F/large/_wait:2/"
     alt="Screenshot of https://www.zachleat.com/"
     width="1024"
@@ -84,7 +84,7 @@ Here are a few examples, fetching Open Graph images from a bunch of sites around
 }
 </style>
 
-<div class="livedemo">
+<div class="card card--demo">
   <a href="https://www.zachleat.com/web/state-of-eleventy/">
     <picture>
       <source type="image/webp" srcset="https://v1.opengraph.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fweb%2Fstate-of-eleventy%2F/small/webp/ 375w" sizes="100vw">
@@ -96,7 +96,7 @@ Here are a few examples, fetching Open Graph images from a bunch of sites around
 
 The above Open Graph image is using a YouTube video cover image in the background.
 
-<div class="livedemo">
+<div class="card card--demo">
   <a href="https://www.netlify.com/blog/2021/10/25/faster-more-reliable-page-loads-with-update-to-on-demand-builders/">
     <picture>
       <source type="image/webp" srcset="https://v1.opengraph.11ty.dev/https%3A%2F%2Fwww.netlify.com%2Fblog%2F2021%2F10%2F25%2Ffaster-more-reliable-page-loads-with-update-to-on-demand-builders%2F/small/webp/ 375w" sizes="100vw">
@@ -106,7 +106,7 @@ The above Open Graph image is using a YouTube video cover image in the backgroun
   </a>
 </div>
 
-<div class="livedemo">
+<div class="card card--demo">
   <a href="https://css-tricks.com/">
     <picture>
       <source type="image/webp" srcset="https://v1.opengraph.11ty.dev/https%3A%2F%2Fcss-tricks.com%2F/small/webp/ 375w" sizes="100vw">
@@ -116,7 +116,7 @@ The above Open Graph image is using a YouTube video cover image in the backgroun
   </a>
 </div>
 
-<div class="livedemo">
+<div class="card card--demo">
   <a href="https://responsiblejs.dev/">
     <picture>
       <source type="image/webp" srcset="https://v1.opengraph.11ty.dev/https%3A%2F%2Fresponsiblejs.dev%2F/small/webp/ 375w" sizes="100vw">
@@ -126,7 +126,7 @@ The above Open Graph image is using a YouTube video cover image in the backgroun
   </a>
 </div>
 
-<div class="livedemo">
+<div class="card card--demo">
   <a href="https://million-devs.netlify.com/">
     <picture>
       <source type="image/webp" srcset="https://v1.opengraph.11ty.dev/https%3A%2F%2Fmillion-devs.netlify.com%2F/small/webp/ 375w" sizes="100vw">
@@ -136,7 +136,7 @@ The above Open Graph image is using a YouTube video cover image in the backgroun
   </a>
 </div>
 
-<div class="livedemo">
+<div class="card card--demo">
   <a href="https://jamstackconf.com/">
     <picture>
       <source type="image/webp" srcset="https://v1.opengraph.11ty.dev/https%3A%2F%2Fjamstackconf.com%2F/small/webp/ 375w" sizes="100vw">

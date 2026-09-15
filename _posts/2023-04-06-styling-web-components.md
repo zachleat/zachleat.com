@@ -3,7 +3,7 @@ title: 3 Methods for Scoped Styles in Web Components That Work Everywhere
 tags: web-components
 ---
 <style>
-div.livedemo {
+div.card {
 	font-family: fantasy;
 }
 </style>
@@ -52,7 +52,7 @@ This is the newest kid on the block. And with [Safari recently shipping support 
 	</template>
 </div>
 
-<div class="livedemo">
+<div class="card card--demo">
 Before.
 <sample-component>
 	Fallback content.
@@ -73,7 +73,7 @@ Note that the underline is restricted to the component and the component only as
 
 It’s also worth noting that Shadow DOM is not completely isolated from its host page—some styles are inherited! Chris Haynes elaborates in this 2019 post: [{% indieAvatar "https://lamplightdev.com/" %}Why is my Web Component inheriting styles?](https://lamplightdev.com/blog/2019/03/26/why-is-my-web-component-inheriting-styles/)
 
-<details class="livedemo">
+<details class="card">
 <summary>Expand to learn about <code>shadowroot</code> versus <code>shadowrootmode</code></summary>
 
 Astute observers may note that the Can I Use support table is for the `shadowroot` attribute, the non-streaming version of Declarative Shadow DOM:
@@ -143,7 +143,7 @@ if("customElements" in window) {
 </script>
 ```
 
-<details class="livedemo">
+<details class="card">
 <summary>Expand to see the Declarative Shadow DOM polyfill code.</summary>
 
 ```js
@@ -206,7 +206,7 @@ if("customElements" in window) {
 </script>
 ```
 
-<div class="livedemo">
+<div class="card card--demo">
 Before
 <sample-component-sd>Fallback content.</sample-component-sd>
 Inbetween
@@ -279,7 +279,7 @@ This is how the above template renders:
 <sample-component class="ws0ljrjcl">Server rendered HTML.</sample-component>
 ```
 
-<div class="livedemo">
+<div class="card card--demo">
 <style>.ws0ljrjcl{text-decoration:underline;text-decoration-color:blue}</style>
 Before
 <sample-component-html class="ws0ljrjcl">Server rendered HTML.</sample-component-html>

@@ -52,7 +52,7 @@ try {
 }
 ```
 
-<p class="livedemo livedemo-mixed" data-demo-label="Maybe don’t do any of this">Notably, the above is only necessary because I wanted a custom error message. If you’re fine with Node’s provided error message, <strong>don’t do any of this</strong>.</p>
+<p class="card card-mixed" data-demo-label="Maybe don’t do any of this">Notably, the above is only necessary because I wanted a custom error message. If you’re fine with Node’s provided error message, <strong>don’t do any of this</strong>.</p>
 
 This feature-tested approach allows a custom error message limited to folks using CommonJS and will automatically go away when used with Node’s new `--experimental-require-module` flag (or when Node opts into this behavior by default in a future version).
 

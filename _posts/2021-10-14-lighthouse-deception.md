@@ -23,7 +23,7 @@ Here’s the same result on my MacBook Air (M1, 2020) using Chrome 94:
 
 It’s incredible to me the variability effect that your hardware can have: from a 64 on Performance to a 94—that’s a thirty point swing!
 
-<div class="livedemo livedemo-evil">
+<div class="card card-evil">
   <strong>Don’t Do This™ Evil Tip:</strong> When running Lighthouse, only use the best, beefiest, latest and greatest, most expensive hardware and network connections.
 </div>
 
@@ -43,7 +43,7 @@ Network conditions can vary. Maybe your computer was doing a resource intensive 
   <div><img src="/web/img/posts/lighthouse/nextjs-mobile-variability-2.png" alt="nextjs.org Lighthouse Score for Mobile: 100 on Performance, 89 on Accessibility, 93 on Best Practices, 100 on SEO"></div>
 </div>
 
-<div class="livedemo livedemo-evil">
+<div class="card card-evil">
   <strong>Don’t Do This™ Evil Tip:</strong> When running Lighthouse, run it a bunch of times and pick the highest score.
 </div>
 
@@ -70,7 +70,7 @@ For example, here’s two Lighthouse scores of the same site taken back-to-back 
 
 _MacBook Air (M1, 2020) using Chrome 94._
 
-<div class="livedemo livedemo-evil">
+<div class="card card-evil">
   <strong>Don’t Do This™ Evil Tip:</strong> Always share your Desktop Score. Never reveal that it is a Desktop score—keep any discussion of the testing mode ambiguous.
 </div>
 
@@ -98,7 +98,7 @@ Let us consult this [classic blog post from Chris Zacharias: Page Weight Matters
 
 If you have great field data: you _may_ exist in the same realm as pre-optimized YouTube! The point being is that takes a holistic view of both field data and lab data to make good performance decisions!
 
-<div class="livedemo livedemo-evil">
+<div class="card card-evil">
   <strong>Don’t Do This™ Evil Tip:</strong> If you have a wealthy, first-world, limited San Francisco-heavy audience with good hardware, make sure you shout about your field data! Field data is the most important thing! Pay no attention to the mobile/throttled/average hardware Lab data hiding behind the curtain.
 </div>
 
