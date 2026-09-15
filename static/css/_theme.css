@@ -302,6 +302,15 @@ h5,
 		object-fit: cover;
 		object-position: 50% var(--poster-offset, 50%);
 	}
+	@media (min-width: 40.625em) { /* 650px */
+		.fullwidth-poster img {
+			/* Padding reveals a rainbow edge that echoes .page-gradient */
+			padding-block-end: 0.1875em;
+			background-image: linear-gradient(238deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff0080);
+			border-radius: 0.5rem;
+			box-shadow: 0 1.25em 2.5em -1.5em rgb(0 0 0 / .6);
+		}
+	}
 }
 @supports (display: grid) {
 	.tmpl-page .fullwidth-poster img,
@@ -543,8 +552,7 @@ body {
 }
 @media (min-width: 61.25em) { /* 980px */
 	.about-description {
-		/* 9em is for opengraph image screenshot alignment on home page */
-		margin-block: 7.36842em max(9em, 20vh); /* 140px /19 */
+		margin-block: var(--rail-header-size) 5em;
 	}
 	.about-description :any-link {
 		--highlight-color: rgba(0,0,0,.06);
@@ -682,12 +690,12 @@ h3 + p {
 }
 @media (min-width: 61.25em) { /* 980px */
 	.primary-title {
-		/* https://utopia.fyi/clamp/calculator/?a=960,1600,68%E2%80%94104 */
-		--fluid-type: clamp(4.25rem, 0.875rem + 5.625vw, 6.5rem); /* 68px–104px /23 */
+		/* https://utopia.fyi/clamp/calculator/?a=960,1600,56%E2%80%9488 */
+		--fluid-type: clamp(3.5rem, 0.5rem + 5vw, 5.5rem); /* 56px–88px */
 	}
 	.primary-title-smalltitle {
-		/* https://utopia.fyi/clamp/calculator/?a=960,1600,44%E2%80%9490 */
-		--fluid-type: clamp(2.75rem, -1.5625rem + 7.1875vw, 5.625rem); /* 44px—90px /23 */
+		/* https://utopia.fyi/clamp/calculator/?a=960,1600,40%E2%80%9472 */
+		--fluid-type: clamp(2.5rem, -0.5rem + 5vw, 4.5rem); /* 40px–72px */
 	}
 }
 
@@ -954,19 +962,17 @@ table-saw :is(th, td) {
 	.rail .header:not(:hover, :focus-within) .my-avatar {
 		opacity: .95;
 	}
-	.rail {
+	.body-grid {
 		/* Fixed so the sticky table of contents can sit below it; tune if the name wraps differently */
-		--rail-header-size: 9.5rem;
+		--rail-header-size: 8.5rem;
 	}
 	.rail-header {
 		position: sticky;
-		top: 0;
+		top: 1em;
 		z-index: 1;
 		block-size: var(--rail-header-size);
 		/* Inline offset matches .tags-rail-links so active links scroll fully underneath */
-		margin-block-start: -1rem;
 		margin-inline: -.5rem;
-		padding-block-start: 1rem;
 		padding-inline: .5rem;
 		background-image: linear-gradient(var(--z-color-bg) calc(100% - 1rem), transparent);
 	}
@@ -986,6 +992,10 @@ table-saw :is(th, td) {
 }
 .rail .navigation {
 	margin: 1em 0 0;
+
+	@media (min-width: 61.25em) { /* 980px */
+		margin-block-start: 0;
+	}
 }
 .rail-header .social {
 	margin-block: 1em 0;
@@ -1972,7 +1982,7 @@ a[href].tag-inline:not(.tag-borderless),
 @media (min-width: 61.25em) { /* 980px */
 	.tags-rail-links {
 		font-size: 1.25em; /* 20px /16 */
-		margin-block: 1.5em;
+		margin-block: 0 1.5em;
 		margin-inline-start: -.4em;
 		font-weight: 400;
 	}
@@ -2108,8 +2118,8 @@ a[href].tag-inline:not(.tag-borderless),
 
 	.rail-toc {
 		position: sticky;
-		top: calc(var(--rail-header-size) + 1rem);
-		max-height: calc(100vh - var(--rail-header-size) - 2rem);
+		top: calc(var(--rail-header-size) + 2rem);
+		max-height: calc(100vh - var(--rail-header-size) - 3rem);
 		overflow-y: auto;
 		margin-top: 2em;
 		font-family: var(--z-font-webfont);
