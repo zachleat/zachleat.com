@@ -1,7 +1,7 @@
 ---
 title: "The JavaScript Site Generator Review, 2023"
 toot: https://fediverse.zachleat.com/@zachleat/109920627317840768
-tocSelector: ".e-content :is(h2, h3, h4)"
+tocSelector: "main :is(h2, h3, h4)"
 ---
 It’s time again for every framework author’s favorite: The JavaScript Site Generator Review, February 2023 edition.
 

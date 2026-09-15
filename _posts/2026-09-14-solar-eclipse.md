@@ -18,3 +18,9 @@ I decided to fold this into a reusable component so that I can benefit from this
 My favorite parts about the component are that it shows an inert button pre-JS, incurs no CLS, is still functional when the (separate) CSS doesn’t load successfully (`[hidden]` for the win), and all strings are inserted from light DOM for good internationalization.
 
 Hope it’s useful to others!
+
+## Installation
+
+```
+npm install @zachleat/solar-eclipse-toggle
+```

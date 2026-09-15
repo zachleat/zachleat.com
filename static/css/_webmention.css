@@ -11,7 +11,7 @@
     margin-left: 8px;
     margin-bottom: 1em;
 }
-.webmentions__facepile > h3 {
+.webmentions__facepile > .hed-h3 {
     float: left;
     margin: 0 calc(var(--webmention-avatar-size) - 2.25rem) 0 -8px;
 }

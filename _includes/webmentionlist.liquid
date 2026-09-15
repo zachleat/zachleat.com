@@ -6,7 +6,7 @@
   {%- assign likesSize = likes | size -%}
   {% if repostsSize > 0 %}
   <div class="webmentions__facepile">
-    <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ repostsSize }} Repost{% if repostsSize != 1 %}s{% endif %}</h3>
+    <div class="hed-h3{% if repostsSize > 11 or likesSize > 11 %} webmentions__facepile__hedlg{% endif %}">{{ repostsSize }} Repost{% if repostsSize != 1 %}s{% endif %}</div>
     {%- for webmention in reposts -%}
       {%- if webmention.url != "" -%}
       <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
@@ -21,7 +21,7 @@
 
   {% if likesSize > 0 %}
   <div class="webmentions__facepile">
-    <h3{% if repostsSize > 11 or likesSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</h3>
+    <div class="hed-h3{% if repostsSize > 11 or likesSize > 11 %} webmentions__facepile__hedlg{% endif %}">{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</div>
     {%- for webmention in likes -%}
       {%- if webmention.url != "" -%}
       <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
@@ -39,7 +39,7 @@
 
   {% if bookmarksSize > 0 %}
   <div class="webmentions__facepile">
-    <h3{% if bookmarksSize > 11 %} class="webmentions__facepile__hedlg"{% endif %}>{{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}</h3>
+    <div class="hed-h3{% if bookmarksSize > 11 %} webmentions__facepile__hedlg{% endif %}">{{ bookmarksSize }} Bookmark{% if bookmarksSize != 1 %}s{% endif %}</div>
     {%- for webmention in bookmarks -%}
       {%- if webmention.url != "" -%}
       <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
