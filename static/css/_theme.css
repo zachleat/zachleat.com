@@ -2143,15 +2143,20 @@ a[href].tag-inline:not(.tag-borderless),
 		padding: 0;
 		margin: 0;
 	}
-	.rail-toc ol ol {
-		padding-inline-start: 1em;
-	}
-	.rail-toc li {
-		margin: .35em 0;
+	.rail-toc table-of-contents > ol {
+		border-inline-start: 2px solid var(--z-color-border-light);
 	}
 	.rail-toc a {
+		display: block;
+		margin-inline-start: -2px;
+		padding-block: .175em;
+		padding-inline-start: calc(.75em - 2px);
+		border-inline-start: 2px solid transparent;
 		text-decoration: none;
 		color: var(--z-color-text-secondary);
+	}
+	.rail-toc ol ol a {
+		padding-inline-start: calc(1.75em - 2px);
 	}
 	.rail-toc a:hover {
 		color: var(--z-color-link-active);
@@ -2159,7 +2164,11 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.rail-toc a.toc-in-view {
 		color: var(--z-color-link-visited);
-		font-weight: 600;
+		border-inline-start-color: currentColor;
+		text-decoration: underline;
+		text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+		text-decoration-thickness: 1px;
+		text-underline-offset: .2em;
 	}
 }
 
