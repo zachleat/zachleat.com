@@ -2,7 +2,7 @@
 .livedemo {
 	--box-shadow-color: #add8e6;
 	display: block;
-	padding: .5rem .5rem 1rem .5rem;
+	padding: 1.25rem .5rem 1rem .5rem;
 	border: none;
 	box-shadow: 0 0 0 var(--box-shadow-width, 2px) var(--box-shadow-color);
 	position: relative;
@@ -16,14 +16,14 @@
 		margin-right: -.75rem;
 	}
 	@media (min-width: 61.25em) { /* 980px */
-		padding: .875rem .875rem 1rem .875rem;
+		padding: 1.25rem .875rem 1rem .875rem;
 		margin-left: -.875rem;
 		margin-right: -.875rem;
 	}
 }
 
 /* Stay inside of the primarydemo boxes */
-.content-main .livedemo > pre {
+.content-main .livedemo > :is(pre, video) {
 	margin-left: calc( -.5rem );
 	width: calc( 100% + 1rem );
 	max-width: none;
@@ -40,11 +40,59 @@
 pre + .livedemo {
 	margin-top: 2rem;
 }
+
+/* Code blocks and videos sit flush with the top and bottom edges */
+.livedemo:has(> :is(pre, line-numbers, video):first-child) {
+	padding-top: 0;
+
+	/* Same label placement as dark mode */
+	&:after {
+		top: .5rem;
+		background-color: transparent;
+	}
+}
+.livedemo > pre:first-child,
+.livedemo > line-numbers:first-child pre {
+	padding-top: 1.75rem;
+}
+.livedemo > line-numbers:first-child {
+	--uln-padding-v: 1.75rem .75rem;
+}
+.livedemo > video {
+	display: block;
+}
+.livedemo:has(> :is(pre, line-numbers, video):last-child) {
+	padding-bottom: 0;
+}
+.livedemo > pre:has(+ pre) {
+	margin-block-end: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.livedemo > pre + pre {
+	border-top: var(--box-shadow-width, 2px) solid var(--box-shadow-color);
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.livedemo > :is(pre, line-numbers, video):first-child {
+	&,
+	& pre {
+		border-top-left-radius: inherit;
+		border-top-right-radius: inherit;
+	}
+}
+.livedemo > :is(pre, line-numbers, video):last-child {
+	&,
+	& pre {
+		border-bottom-left-radius: inherit;
+		border-bottom-right-radius: inherit;
+	}
+}
 .livedemo:after {
 	content: "Demonstration";
 	position: absolute;
 	right: .5rem;
-	bottom: -4px;
+	top: -4px;
 	font-size: .75rem;
 	padding: 0 .25rem;
 	line-height: 1;
@@ -61,38 +109,27 @@ pre + .livedemo {
 	right: auto;
 	left: .5rem;
 }
+/* Nested demos leave a .5rem gap to the parent edges (parent padding minus .5rem) */
 .livedemo .livedemo {
-	margin-right: -0.5rem;
-	margin-left: -0.5rem;
+	margin-inline: 0;
 	box-shadow: 0 0 0 2px #ddf0f6;
+
+	@media (min-width: 38.25em) { /* 612px */
+		margin-inline: -.25rem;
+	}
+	@media (min-width: 61.25em) { /* 980px */
+		margin-inline: -.375rem;
+	}
 }
 .livedemo .livedemo:last-child {
-	margin-bottom: -0.4375rem; /* -7px /16 */
+	margin-bottom: -.5rem;
 }
 .livedemo[data-demo-label]:after {
 	content: attr(data-demo-label);
 }
-.livedemo.top {
-	padding-top: 1rem;
-	padding-bottom: .75rem;
-}
-.livedemo.top:after {
-	bottom: auto;
-	top: -4px;
-}
 .livedemo p:first-child:last-child {
 	margin-top: 0;
 	margin-bottom: 0;
-}
-.livedemo.square-top {
-	padding-top: 0;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-}
-.livedemo.square-bottom {
-	padding-bottom: 0;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
 }
 .livedemo-sm {
 	font-size: 0.7142857142857em; /* 15px /21 */
@@ -116,7 +153,7 @@ pre + .livedemo {
 }
 .livedemo-auto:after {
 	font-size: 0.875rem; /* 14px /16 */
-	bottom: 0;
+	top: 0;
 }
 
 /* No labels */
@@ -134,14 +171,11 @@ pre + .livedemo {
 .livedemo-dark {
 	background-color: #121a39;
 	color: #fff;
+	padding-top: 1.75rem;
 }
 .livedemo-dark:after {
-	top: 8px;
-	left: 8px;
+	top: .5rem;
 	background-color: transparent;
-	bottom: auto;
-	right: auto;
-	font-size: 0.695652173913em; /* 16px /23 */
 }
 .livedemo-dark code {
 	background-color: inherit;

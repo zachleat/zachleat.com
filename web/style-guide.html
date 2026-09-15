@@ -21,33 +21,27 @@ tocSelector: ".e-content heading-anchors > h2"
 
 <h2 id="demos">Demos</h2>
 
-<p class="livedemo top">This is a live demo example with the demonstration label on the top.</p>
-<p class="livedemo">This is a live demo example with the demonstration label on the bottom.</p>
+<p class="livedemo">This is a live demo example with the demonstration label on the top.</p>
 
 <p class="livedemo" data-demo-label="New Label Override">This is a live demo example with a label text override in the markup.</p>
 <p class="livedemo livedemo-mixed" data-demo-label="New Label Override, Mixed Case">This is a live demo example with a label text override in the markup.</p>
-<div class="livedemo top" data-demo-label="Nested Parent">
-	<p>This is a live demo example with the demonstration label on the bottom.</p>
-	<div class="livedemo top" data-demo-label="Nested Child">
-		<p>This is a live demo example with the demonstration label on the bottom.</p>
+<div class="livedemo" data-demo-label="Nested Parent">
+	<p>This is a live demo example with the demonstration label on the top.</p>
+	<div class="livedemo" data-demo-label="Nested Child">
+		<p>This is a live demo example with the demonstration label on the top.</p>
 	</div>
 </div>
 
-<h3>Square Demos</h3>
-<div class="livedemo square-top" data-demo-label="Square Top"><pre><code>// Code</code></pre></div>
-<div class="livedemo top square-bottom" data-demo-label="Square Bottom"><pre><code>// Code</code></pre></div>
-<div class="livedemo square-top square-bottom" data-demo-label="Both Square">Test</div>
-<div class="livedemo top square-top square-bottom" data-demo-label="Both Square">Test</div>
-
 <h3>More snowflakes</h3>
 <div class="livedemo livedemo-evil">This is a an evil tip and you shouldn’t do it.</div>
-<p class="livedemo livedemo-flush">Flush no padding.</p>
 
 <h3>Dark mode</h3>
 <p class="livedemo livedemo-dark">Dark mode.</p>
+
+<h4>Details and Summary (Flush)</h4>
 <details class="livedemo livedemo-dark livedemo-flush">
-	<summary>Details, expand this</summary>
-	This is the details content.
+	<summary><code>4.2 KB</code> Details and summary, expand this</summary>
+	<img src="/web/img/posts/vector-raster-split/subset-svgomg.svg" alt="Flush details content" loading="lazy" decoding="async" width="1786" height="1786">
 </details>
 
 <h2 id="typography">Typography</h2>
@@ -82,7 +76,7 @@ tocSelector: ".e-content heading-anchors > h2"
 <p>Use <code>text-decoration-skip-ink</code>, no fallback: <span class="livedemo"><a href="#">This is a test with hangy things. It has a p and a g and a y and a j and a q.</a></span></p>
 <p><em><strong>Update</strong>: renamed from <a href="https://www.chromestatus.com/feature/5631679087509504"><code>text-decoration-skip</code></a>.</em></p>
 
-<div class="livedemo top square-bottom" data-demo-label="Break a Link (no Hyphens)">
+<div class="livedemo" data-demo-label="Break a Link (no Hyphens)">
 	<p style="width: 15em;">
 		<a href="https://zachleat.com/twitter/890242957386944516" class="break">https://zachleat.com/twitter/890242957386944516</a>
 	</p>
@@ -93,7 +87,7 @@ tocSelector: ".e-content heading-anchors > h2"
 {% endhighlight %}
 </div>
 
-<div class="livedemo top square-bottom" data-demo-label="Primary Link">
+<div class="livedemo" data-demo-label="Primary Link">
 	<p class="primarylink"><a href="#">Read the Web Font Randsom Note</a></p>
 {% highlight "html" %}
 <p class="primarylink">
@@ -136,10 +130,10 @@ tocSelector: ".e-content heading-anchors > h2"
 <div class="livedemo"><p class="font-fallback">Normal roman text &#@$%. <strong>Bold text.</strong> <em>Italic text.</em> <strong><em>Bold Italic Text.</em></strong> <em><strong>More Bold Italic Text.</strong></em></p></div>
 
 <h4>OpenType Features: Ligatures</h4>
-<div class="livedemo top" data-demo-label="Ligatures">
+<div class="livedemo" data-demo-label="Ligatures">
 	<p style="font-size: 1.5em;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
 
-	<div class="livedemo top" data-demo-label="Ligatures Disabled">
+	<div class="livedemo" data-demo-label="Ligatures Disabled">
 		<p style="font-size: 1.5em; font-variant-ligatures: no-common-ligatures; font-feature-settings: 'liga' 0, 'clig' 0;">ff ffl fl fb ffb fh ffh fj ffj fk ffk ft fft tf tt ttf ti tti</p>
 	</div>
 </div>
@@ -465,7 +459,7 @@ U.S. Chief Technology Officer and Assistant to the President
 <h3 id="callout">Callout</h3>
 <p>Add a level class and a leading Font Awesome icon. The heading and icon are optional.</p>
 
-<div class="livedemo top square-bottom" data-demo-label="Note (default)">
+<div class="livedemo" data-demo-label="Note (default)">
 	<div class="callout">
 		{% icon "fa:circle-info" %}
 		<h3>Note</h3>
@@ -480,7 +474,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo top square-bottom" data-demo-label="Tip">
+<div class="livedemo" data-demo-label="Tip">
 	<div class="callout callout-tip">
 		{% icon "fa:lightbulb" %}
 		<h3>Tip</h3>
@@ -495,7 +489,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo top square-bottom" data-demo-label="Update">
+<div class="livedemo" data-demo-label="Update">
 	<div class="callout callout-update">
 		{% icon "fa:clock-rotate-left" %}
 		<h3>Update</h3>
@@ -510,7 +504,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo top square-bottom" data-demo-label="Warning">
+<div class="livedemo" data-demo-label="Warning">
 	<div class="callout callout-warning">
 		{% icon "fa:triangle-exclamation" %}
 		<h3>Warning</h3>
@@ -525,7 +519,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo top square-bottom" data-demo-label="Alert">
+<div class="livedemo" data-demo-label="Alert">
 	<div class="callout callout-alert">
 		{% icon "fa:circle-exclamation" %}
 		<h3>Alert</h3>
@@ -542,7 +536,7 @@ U.S. Chief Technology Officer and Assistant to the President
 {% endraw %}{% endhighlight %}
 </div>
 
-<div class="livedemo top square-bottom" data-demo-label="No Icon or Heading">
+<div class="livedemo" data-demo-label="No Icon or Heading">
 	<div class="callout callout-update">
 		<p>Video versions of this talk are available at <a href="/web/smashingconf/2023/video/">SmashingConf Freiburg (2023)</a> and <a href="/web/jsheroes/">JSHeroes (2023)</a>.</p>
 	</div>

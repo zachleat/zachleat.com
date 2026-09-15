@@ -27,7 +27,7 @@ _(This layout specification reminds me of `sizes` from `srcset` with responsive 
 This is a pretty simple example—we have two boundaries: the breakpoint at which we’ll switch to using Viewport Units, and an upper bound when we hit the content `max-width` (at `589px`).
 
 
-<div class="livedemo top" data-demo-label="Using Bounded font-size: 6.25vw">
+<div class="livedemo" data-demo-label="Using Bounded font-size: 6.25vw">
     <style>
     #demo-1 {
         font-size: 20px;

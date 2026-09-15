@@ -21,7 +21,7 @@ _**Update May 15, 2019:** although the I/O preview used the `font-display` URL p
 
 _**Update May 22, 2019**: [Houssein Djirdeh](https://twitter.com/hdjirdeh/status/1130895027712995329) also noticed that `display=swap` is now used by default when you copy and paste code from the Google Fonts site. This is a really big deal for visible text. Full credit to the Google Fonts team for this._
 
-<p class="livedemo top" data-demo-label="Learn more">Want to learn more about <code>font-display</code>? Check out this <a href="https://font-display.glitch.me/"><code>font-display</code> Playground demo on Glitch</a> from Monica Dinculescu.</p>
+<p class="livedemo" data-demo-label="Learn more">Want to learn more about <code>font-display</code>? Check out this <a href="https://font-display.glitch.me/"><code>font-display</code> Playground demo on Glitch</a> from Monica Dinculescu.</p>
 
 This is big news—it means developers now have more control over Google Fonts web font loading behavior. We can enforce instant rendering of fallback text (when using `font-display: swap`) rather than relying on the browser default behavior of invisible text for up to 3 seconds while the web font request is in-flight.
 
