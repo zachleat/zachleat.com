@@ -7,7 +7,7 @@ tags:
 ---
 > …and another one.
 
-This little web component has two modes: progressively enhance a hierarchy of server rendered `<ol>` or `<ul>` elements (or conveniently client render them for you if they don’t exist) to highlight which are currently visible in the viewport.
+This little (zero CSS) web component has two modes: progressively enhance a hierarchy of server rendered `<ol>` or `<ul>` elements (or conveniently client render them for you if they don’t exist) to highlight which are currently visible in the viewport.
 
 I pulled this code out of the [`table-of-contents.webc`](https://github.com/11ty/tugboat/blob/main/_components/table-of-contents.webc) component from the [WebC Tugboat starter project](https://tugboat.11ty.dev/) for standalone use.
 
@@ -16,6 +16,8 @@ I pulled this code out of the [`table-of-contents.webc`](https://github.com/11ty
 - [`@zachleat/table-of-contents` on npm](https://www.npmjs.com/package/@zachleat/table-of-contents)
 
 You can configure a `selector` attribute to control the scope of the headings search. My site uses `main :is(h2, h3)` but the default is `main :is(h2, h3, h4, h5, h6)`.
+
+Again, all styles for this component are application styles. There is no component CSS on this one.
 
 ## Installation
 
