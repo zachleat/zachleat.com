@@ -61,5 +61,9 @@
 		margin-right: -.2em;
 		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
+		text-box: normal;
+	}
+	:has(> .text-highlight) {
+		text-box: normal;
 	}
 }
