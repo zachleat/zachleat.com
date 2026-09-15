@@ -2061,12 +2061,16 @@ a[href].tag-inline:not(.tag-borderless),
 
 /* Table of Contents in Rail */
 @media (min-width: 61.25em) { /* 980px */
+	.rail-toc {
+		visibility: hidden;
+	}
+	.rail-toc:has(ol > li:not(:only-child)) {
+		visibility: visible;
+	}
+
 	/* Only the table of contents is sticky when it has two or more entries */
 	.rail:has(table-of-contents :is(li ~ li, li li)) .rail-sticky {
 		position: static;
-	}
-	.rail-toc:has(table-of-contents > ol > li:only-child):not(:has(table-of-contents li li)) {
-		display: none;
 	}
 	.rail-toc {
 		position: sticky;
@@ -2077,9 +2081,6 @@ a[href].tag-inline:not(.tag-borderless),
 		font-family: var(--z-font-webfont);
 		font-size: 0.875em; /* 14px /16 */
 		line-height: 1.4;
-	}
-	.rail-toc table-of-contents:not(:defined) .top5 {
-		display: none;
 	}
 	.rail-toc .top5 {
 		text-transform: uppercase;
