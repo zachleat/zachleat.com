@@ -5,7 +5,6 @@ import { DateTime } from "luxon";
 import memoize from "memoize";
 import numeral from "numeral";
 import markdownIt from "markdown-it";
-import markdownItToc from "markdown-it-table-of-contents";
 import { encode } from "html-entities";
 import { YoutubeTranscript } from "youtube-transcript";
 import { AssetCache } from "@11ty/eleventy-fetch";
@@ -204,6 +203,7 @@ export default async function(eleventyConfig) {
 			[resolveModule("@zachleat/heading-anchors")]: `static/heading-anchors.js`,
 			[resolveModule("@zachleat/line-numbers")]: `static/line-numbers.js`,
 			[resolveModule("@zachleat/solar-eclipse-toggle")]: `static/solar-eclipse-toggle.js`,
+			[resolveModule("@zachleat/table-of-contents")]: `static/table-of-contents.js`,
 		})
 		.addPassthroughCopy("humans.txt")
 		.addPassthroughCopy("resume/index.css")
@@ -675,22 +675,6 @@ export default async function(eleventyConfig) {
 		}).reverse();
 	});
 
-	/* Markdown */
-	eleventyConfig.amendLibrary("md", (mdLib) => {
-		mdLib.use(markdownItToc, {
-			includeLevel: [2, 3, 4],
-			// slug filter removed in Eleventy v4
-			slugify: (str) => slugify(str),
-			format: (heading) => heading,
-			transformLink: function(link) {
-				if(typeof link === "string") {
-					// remove backticks from markdown code
-					return link.replace(/\%60/g, "");
-				}
-				return link;
-			}
-		})
-	});
 
 	let md = markdownIt({
 		html: true,

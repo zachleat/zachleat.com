@@ -5,6 +5,7 @@ categories:
 tags:
   - highlight
   - font-loading
+tocSelector: "main :is(h2)"
 ---
 
 _This guide is not intended for use with font icons, which have different loading priorities and use cases. Also, SVG is probably a better long term choice._
@@ -12,7 +13,7 @@ _This guide is not intended for use with font icons, which have different loadin
 **Updated July 27, 2017** with new information on `font-display`.
 **Updated August 14, 2017** with a link to a [glossary page](/web/webfont-glossary/).
 
-## Jump to:
+## Jump To
 
 * [Unceremonious @font-face](#font-face)
 * [`font-display`](#font-display)

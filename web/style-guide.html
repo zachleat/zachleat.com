@@ -1,25 +1,9 @@
 ---
 title: There are many Style Guides but this is Mine
 layout: layouts/page.liquid
-hasToc: true
+tocSidebar: true
+tocSelector: ".e-content heading-anchors > h2"
 ---
-<div class="toc">
-	<h2>Contents</h2>
-	<ul>
-		<li><a href="#colors">Colors</a></li>
-		<li><a href="#demos">Demos</a></li>
-		<li><a href="#typography">Typography</a></li>
-		<li><a href="#web-fonts">Web Fonts</a></li>
-		<li><a href="#code">Code</a></li>
-		<li><a href="#icons">Icons</a></li>
-		<li><a href="#lists">Lists</a></li>
-		<li><a href="#comments">Comments</a></li>
-		<li><a href="#tables">Tables</a></li>
-		<li><a href="#media">Fluid Media</a></li>
-		<li><a href="#other">Other components</a></li>
-	</ul>
-</div>
-
 <p><em>I wrote a <a href="/web/now-with-style-guide/">blog post about this Style Guide.</a></em></p>
 
 <h2 id="colors">Colors</h2>
@@ -461,13 +445,8 @@ hasToc: true
 	<health-score score="0"></health-score>
 </p>
 
-<h3>Fixed Table of Contents</h3>
-<p>We’re only showing the source code here because this component is already in use on this page and there can be only one (Highlander). Make sure you add <code>hasToc: true</code> to your front matter.</p>
-{% highlight "html" %}
-<div class="toc">
-	Table of Contents
-</div>
-{% endhighlight %}
+<h3>Table of Contents</h3>
+<p>Add <code>tocSidebar: true</code> to front matter (on by default for blog posts) to show a sticky table of contents in the sidebar. Use <code>tocSelector</code> to change which headings are included.</p>
 
 <h3>Printed Page</h3>
 

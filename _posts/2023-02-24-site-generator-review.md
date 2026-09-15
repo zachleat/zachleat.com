@@ -1,24 +1,8 @@
 ---
 title: "The JavaScript Site Generator Review, 2023"
 toot: https://fediverse.zachleat.com/@zachleat/109920627317840768
-hasToc: true
+tocSelector: ".e-content :is(h2, h3, h4)"
 ---
-<div class="toc">
-<is-land on:idle on:visible>
-	<template data-island>
-	<script src="/static/details-utils.js"></script>
-	</template>
-	<details-utils force-open="(min-width: 61.25em)" force-restore>
-		<details>
-		<summary class="hed-h3">Table of Contents</summary>
-
-[[toc]]
-
-		</details>
-	</details-utils>
-</is-land>
-</div>
-
 It’s time again for every framework author’s favorite: The JavaScript Site Generator Review, February 2023 edition.
 
 

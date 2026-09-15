@@ -10,7 +10,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 ---
 <a href="#skiplink-content" id="skiplink-top" class="skiplink skiplink-fn" data-pagefind-ignore>Skip to Content</a>
 <div class="rail" data-pagefind-ignore>
-	<div class="rail-sticky">
+	<div{% unless tocSidebar %} class="rail-sticky"{% endunless %}>
 		<header>
 			<a href="/" class="header">
 				<img src="/img/avatar-2025-green-cover.png" alt="Zach’s ugly mug (his face)" class="my-avatar" loading="eager" fetchpriority="high">
@@ -52,7 +52,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 						</div>
 					{%- endif %}
 
-					{%- if hasToc != true and hidePostsInSidebar != true %}
+					{%- if hidePostsInSidebar != true %}
 						<div>
 							<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire-flame-curved" %}</a></div>
 
@@ -76,6 +76,14 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 			</nav>
 		</aside>
 	</div>
+{%- if tocSidebar %}
+	<nav class="rail-toc hide-singlecol" aria-labelledby="rail-toc-title">
+		<table-of-contents selector="{{ tocSelector | default: '.e-content :is(h2, h3)' }}">
+			<div class="top5" id="rail-toc-title">Page Contents</div>
+		</table-of-contents>
+	</nav>
+	<script type="module" src="/static/table-of-contents.js"></script>
+{%- endif %}
 </div>
 <main class="content-main" data-role="main" id="skiplink-content">
 	{{ content }}

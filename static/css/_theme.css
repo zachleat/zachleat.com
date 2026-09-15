@@ -193,6 +193,11 @@ del .z-avatar {
 	overflow: hidden;
 	pointer-events: none;
 }
+.iframe--card {
+	border: 1px solid rgba(0, 0, 0, .05);
+	border-radius: .5em;
+	overflow: hidden;
+}
 .iframe-cover,
 .iframe-big {
 	position: absolute;
@@ -2024,8 +2029,47 @@ a[href].tag-inline:not(.tag-borderless),
 	white-space: nowrap;
 }
 
-.toc p:empty {
-	display: none;
+/* Table of Contents in Rail */
+@media (min-width: 61.25em) { /* 980px */
+	.rail-toc {
+		position: sticky;
+		top: 1em;
+		max-height: calc(100vh - 2em);
+		overflow-y: auto;
+		margin-top: 2em;
+		font-family: var(--z-font-webfont);
+		font-size: 0.875em; /* 14px /16 */
+		line-height: 1.4;
+	}
+	.rail-toc .top5 {
+		text-transform: uppercase;
+		margin: 0 0 1em;
+		color: var(--z-color-text-secondary);
+		font-weight: 700;
+	}
+	.rail-toc ol {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.rail-toc ol ol {
+		padding-inline-start: 1em;
+	}
+	.rail-toc li {
+		margin: .35em 0;
+	}
+	.rail-toc a {
+		text-decoration: none;
+		color: var(--z-color-text-secondary);
+	}
+	.rail-toc a:hover {
+		color: var(--z-color-link-active);
+		text-decoration: underline;
+	}
+	.rail-toc a.toc-in-view {
+		color: var(--z-color-link-visited);
+		font-weight: 600;
+	}
 }
 
 /* Table of Contents on Right */
