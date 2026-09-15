@@ -2144,7 +2144,7 @@ a[href].tag-inline:not(.tag-borderless),
 		margin: 0;
 	}
 	.rail-toc table-of-contents > ol {
-		border-inline-start: 2px solid var(--z-color-border-light);
+		border-inline-start: 2px solid color-mix(in srgb, var(--z-color-border-light) 50%, transparent);
 	}
 	.rail-toc a {
 		display: block;
