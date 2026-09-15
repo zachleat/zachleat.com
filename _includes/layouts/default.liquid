@@ -89,10 +89,12 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 </div>
 <main class="content-main" data-role="main" id="skiplink-content">
 	{{ content }}
-	{% include "footer.html" %}
 </main><!-- /.content -->
+{% include "footer.html" %}
 
-{% getBundle "fontawesome" %}
+<div>
+	{% getBundle "fontawesome" %}
+</div>
 
 {% comment %} if you remove this, re-enable in 2023-12-15-snow-fall.md {% endcomment %}
 {% comment %} <is-land on:media="(prefers-reduced-motion: no-preference)">
