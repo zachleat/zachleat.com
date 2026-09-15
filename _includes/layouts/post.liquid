@@ -2,9 +2,13 @@
 layout: layouts/default.liquid
 enableWebmentions: true
 tmpl: page
+classes:
+  html: page-gradient tmpl-post
 ---
 <article class="h-entry">
-	<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if titleHtml %}{{ titleHtml }}{% else %}{{ title }}{% endif %}</h1>
+	<div class="content-grid-sibling">
+		<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if titleHtml %}{{ titleHtml }}{% else %}{{ title }}{% endif %}</h1>
+	</div>
 {% if posterImage.showOnPage and seo.openGraphBackgroundImage %}
 	<div class="fullwidth fullwidth-poster m-4" style="{% if posterImage.height %}--poster-maxheight: {{ posterImage.height }};{% endif %}{% if posterImage.offset %}--poster-offset: {{ posterImage.offset }}{% endif %}"><img src="{{ seo.openGraphBackgroundImage }}" alt="{{ seo.openGraphAlt }}" sizes="100vw"></div>
 {% endif %}

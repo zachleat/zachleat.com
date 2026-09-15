@@ -354,11 +354,17 @@ h5,
 		.tmpl-page .content-grid {
 			display: grid;
 			padding: 0;
-			grid-template-columns: 1fr minmax(auto, 31em) 1fr;
+			grid-template-columns: 1fr minmax(0, 31em) 1fr;
 			grid-column-gap: 0;
 			max-width: 56.52173913043em; /* 1300px /23 */
 			margin-left: auto;
 			margin-right: auto;
+		}
+		.tmpl-post .content-grid-sibling {
+			max-width: var(--z-width-list);
+		}
+		.tmpl-post .content-grid {
+			grid-template-columns: 1fr minmax(0, var(--z-width-list)) 1fr;
 		}
 		.tmpl-page .content-grid > * {
 			grid-column-start: 2;
@@ -376,11 +382,8 @@ h5,
 			margin-left: auto;
 			margin-right: auto;
 		}
-	}
-	@media (min-width: 61.25em) and (min-height: 58em) { /* 980px */
-		.rail-sticky {
-			position: sticky;
-			top: 1em;
+		.tmpl-post .primary-title {
+			max-width: none;
 		}
 	}
 	@media (min-width: 61.25em) { /* 980px */
@@ -392,30 +395,46 @@ h5,
 		}
 
 		.body-grid {
-			--body-grid-gap: 1rem;
+			--body-grid-gap: 2rem;
 			--body-grid-sidebar: calc(14rem + 2.5rem + 2 * var(--body-grid-gap));
 			display: grid;
+			/* Equal outer gutters center the main column and rail together */
 			grid-template-areas:
-				"main rail hamburger"
-				"footer footer footer";
+				". main rail . hamburger"
+				"footer footer footer footer footer";
 			grid-template-rows: 1fr auto;
-			grid-template-columns: 1fr 14rem 2.5rem;
+			grid-template-columns: 1fr auto 14rem 1fr 2.5rem;
 			grid-column-gap: var(--body-grid-gap);
 			grid-row-gap: 0;
 			padding-top: 1rem;
 		}
 		.body-grid > * {
 			min-inline-size: 0;
+			/* Keeps unassigned children out of the empty gutter cells */
+			grid-column: 1 / -1;
 		}
 
-		.content-main { grid-area: main; }
+		/* Unresolved em values resolve against each element’s own font size */
+		.tmpl-page .body-grid {
+			--body-grid-main-max: calc(56.52173913043em + 1.5rem);
+		}
+		.tmpl-list .body-grid,
+		.tmpl-post .body-grid {
+			--body-grid-main-max: calc(var(--z-width-list) + 1.5rem);
+		}
+
+		.body-grid > .content-main {
+			grid-area: main;
+			max-width: var(--body-grid-main-max, none);
+		}
 		.content-footer {
 			--footer-align-width: 31em;
 			grid-area: footer;
 			padding-inline: 0;
 		}
-		.tmpl-list .content-footer {
-			--footer-align-width: 45em;
+		.tmpl-list .content-footer,
+		.tmpl-post .content-footer {
+			--footer-align-width: var(--z-width-list);
 		}
 		/* Left edge matches the centered article in the main column */
 		.content-footer > .footer {
@@ -663,8 +682,8 @@ h3 + p {
 }
 @media (min-width: 61.25em) { /* 980px */
 	.primary-title {
-		/* https://utopia.fyi/clamp/calculator/?a=960,1600,68%E2%80%94120 */
-		--fluid-type: clamp(4.25rem, -0.625rem + 8.125vw, 7.5rem); /* 68px–120px /23 */
+		/* https://utopia.fyi/clamp/calculator/?a=960,1600,68%E2%80%94104 */
+		--fluid-type: clamp(4.25rem, 0.875rem + 5.625vw, 6.5rem); /* 68px–104px /23 */
 	}
 	.primary-title-smalltitle {
 		/* https://utopia.fyi/clamp/calculator/?a=960,1600,44%E2%80%9490 */
@@ -935,6 +954,22 @@ table-saw :is(th, td) {
 	.rail .header:not(:hover, :focus-within) .my-avatar {
 		opacity: .95;
 	}
+	.rail {
+		/* Fixed so the sticky table of contents can sit below it; tune if the name wraps differently */
+		--rail-header-size: 9.5rem;
+	}
+	.rail-header {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		block-size: var(--rail-header-size);
+		/* Inline offset matches .tags-rail-links so active links scroll fully underneath */
+		margin-block-start: -1rem;
+		margin-inline: -.5rem;
+		padding-block-start: 1rem;
+		padding-inline: .5rem;
+		background-image: linear-gradient(var(--z-color-bg) calc(100% - 1rem), transparent);
+	}
 	.navigation a[href] {
 		transition: all 200ms;
 	}
@@ -951,6 +986,9 @@ table-saw :is(th, td) {
 }
 .rail .navigation {
 	margin: 1em 0 0;
+}
+.rail-header .social {
+	margin-block: 1em 0;
 }
 
 /* Posts and Content */
@@ -2068,14 +2106,10 @@ a[href].tag-inline:not(.tag-borderless),
 		visibility: visible;
 	}
 
-	/* Only the table of contents is sticky when it has two or more entries */
-	.rail:has(table-of-contents :is(li ~ li, li li)) .rail-sticky {
-		position: static;
-	}
 	.rail-toc {
 		position: sticky;
-		top: 1em;
-		max-height: calc(100vh - 2em);
+		top: calc(var(--rail-header-size) + 1rem);
+		max-height: calc(100vh - var(--rail-header-size) - 2rem);
 		overflow-y: auto;
 		margin-top: 2em;
 		font-family: var(--z-font-webfont);

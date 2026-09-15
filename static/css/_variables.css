@@ -5,6 +5,9 @@
 	--z-font-fallback: system-ui, sans-serif;
 	--z-font-webfont: Lato, Numero, var(--z-font-fallback);
 
+	/* Layout: 45em at the 19px list font size, in rem so larger post fonts don’t widen it */
+	--z-width-list: calc(45 * 1.1875rem);
+
 	/* Colors */
 	--z-color-bg: #fff;
 	--z-color-bg-alt: #eee;

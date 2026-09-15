@@ -7,11 +7,6 @@
 .social .z-icon {
 	margin: 0;
 }
-@media (min-width: 61.25em) { /* 980px */
-	.rail .social {
-		margin-block: 1em;
-	}
-}
 .social_icon {
 	display: inline-block;
 	font-family: sans-serif;
