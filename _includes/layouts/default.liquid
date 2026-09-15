@@ -78,11 +78,12 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 	</div>
 {%- if tocSidebar %}
 	<nav class="rail-toc hide-singlecol" aria-labelledby="rail-toc-title">
-		<table-of-contents selector="{{ tocSelector | default: '.e-content :is(h2, h3)' }}">
-			<div class="top5" id="rail-toc-title">On this Page</div>
-		</table-of-contents>
+		<is-land on:visible import="/static/table-of-contents.js">
+			<table-of-contents selector="{{ tocSelector | default: '.e-content :is(h2, h3)' }}">
+				<div class="top5" id="rail-toc-title">On this Page</div>
+			</table-of-contents>
+		</is-land>
 	</nav>
-	<script type="module" src="/static/table-of-contents.js"></script>
 {%- endif %}
 </div>
 <main class="content-main" data-role="main" id="skiplink-content">
