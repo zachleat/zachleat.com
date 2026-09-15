@@ -552,7 +552,7 @@ body {
 }
 @media (min-width: 61.25em) { /* 980px */
 	.about-description {
-		margin-block: var(--rail-header-size) 5em;
+		margin-block: calc(var(--rail-header-size) - var(--rail-header-offset)) 5em;
 	}
 	.about-description :any-link {
 		--highlight-color: rgba(0,0,0,.06);
@@ -600,6 +600,9 @@ h4, h5 {
 	margin-top: 1.4em;
 	font-size: 1em;
 	margin-bottom: .5em;
+}
+h1, h2, h3, h4, h5, h6, .hed-h1, .hed-h2, .hed-h3 {
+	text-box: trim-both cap alphabetic;
 }
 .cased {
 	text-transform: none;
@@ -964,15 +967,18 @@ table-saw :is(th, td) {
 	}
 	.body-grid {
 		/* Fixed so the sticky table of contents can sit below it; tune if the name wraps differently */
-		--rail-header-size: 8.5rem;
+		--rail-header-size: 9.5rem;
+		--rail-header-offset: 1rem;
 	}
 	.rail-header {
 		position: sticky;
-		top: 1em;
+		top: 0;
 		z-index: 1;
 		block-size: var(--rail-header-size);
 		/* Inline offset matches .tags-rail-links so active links scroll fully underneath */
+		margin-block-start: calc(-1 * var(--rail-header-offset));
 		margin-inline: -.5rem;
+		padding-block-start: var(--rail-header-offset);
 		padding-inline: .5rem;
 		background-image: linear-gradient(var(--z-color-bg) calc(100% - 1rem), transparent);
 	}
@@ -2118,8 +2124,8 @@ a[href].tag-inline:not(.tag-borderless),
 
 	.rail-toc {
 		position: sticky;
-		top: calc(var(--rail-header-size) + 2rem);
-		max-height: calc(100vh - var(--rail-header-size) - 3rem);
+		top: calc(var(--rail-header-size) + 1rem);
+		max-height: calc(100vh - var(--rail-header-size) - 2rem);
 		overflow-y: auto;
 		margin-top: 2em;
 		font-family: var(--z-font-webfont);
