@@ -2061,9 +2061,12 @@ a[href].tag-inline:not(.tag-borderless),
 
 /* Table of Contents in Rail */
 @media (min-width: 61.25em) { /* 980px */
-	/* Only the table of contents is sticky when it has entries */
-	.rail:has(table-of-contents:not([hidden])) .rail-sticky {
+	/* Only the table of contents is sticky when it has two or more entries */
+	.rail:has(table-of-contents :is(li ~ li, li li)) .rail-sticky {
 		position: static;
+	}
+	.rail-toc:has(table-of-contents > ol > li:only-child):not(:has(table-of-contents li li)) {
+		display: none;
 	}
 	.rail-toc {
 		position: sticky;
