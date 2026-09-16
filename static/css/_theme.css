@@ -566,8 +566,6 @@ body {
 
 		.z-icon,
 		.z-avatar {
-			width: 1.2em;
-			height: 1.2em;
 			margin-inline: 0 .25em;
 		}
 	}
@@ -987,7 +985,7 @@ table-saw :is(th, td) {
 	}
 	.tags-rail-links .z-icon {
 		width: 1.15em;
-		height: 1.15em;
+		height: auto;
 	}
 	.tags-rail-links a[href]:is(:hover, :focus-within) {
 		transform: scale(1.12);
@@ -1194,7 +1192,6 @@ a[href]:is(:focus, :hover) .project_img {
 		}
 		.tags > :is(.z-icon, .z-avatar) {
 			margin: 0;
-			min-width: 1.3em;
 		}
 	}
 }
@@ -1388,6 +1385,9 @@ a[href]:is(:focus, :hover) .project_img {
 .tags .tag.tag-pinned-rail:has(progress) {
 	padding: .75em 1em;
 }
+.tag .z-icon {
+	height: 1.25em;
+}
 .tag progress {
 	--accent-color: rgb(245 37 233);
 	display: block;
@@ -1520,8 +1520,6 @@ a[href].tag-inline:not(.tag-borderless),
 	color: #2b2b2b;
 }
 .neglect svg.z-icon {
-	width: 1em;
-	height: 1em;
 	margin-inline: .2em 0;
 	vertical-align: -.0625em;
 	opacity: .75;
@@ -1971,10 +1969,6 @@ a[href].tag-inline:not(.tag-borderless),
 		gap: .25em .5em;
 		text-transform: uppercase;
 	}
-	.tags-rail-links .z-icon {
-		width: 1em;
-		height: 1em;
-	}
 	.tags-rail-links > * {
 		display: flex;
 	}
@@ -2041,8 +2035,9 @@ a[href].tag-inline:not(.tag-borderless),
 			font-family: var(--z-font-webfont);
 			font-weight: 700;
 		}
-		.tags .top5-speedlify .z-icon {
-			margin-inline-start: .4em;
+		.tags .top5 .z-icon {
+			margin-inline-start: .35em;
+			font-size: 1.15em;
 		}
 		.tags .tag.tag-popular-rail {
 			display: block;
@@ -2432,11 +2427,15 @@ html:root {
 .z-icon {
 	vertical-align: text-bottom;
 	margin: 0 .15em;
-	width: 1.3em;
-	height: 1.3em;
+	width: auto;
+	height: 1em;
 }
 svg.z-icon {
 	margin-inline-end: .3em;
+}
+svg,
+symbol {
+	overflow: visible;
 }
 .fa-fire-flame-curved {
 	color: var(--icon-color-override, #fb9700);
@@ -2536,8 +2535,6 @@ main a[href]:has(> .z-icon [href="#fas-fa-user"]) .z-icon {
 /* Custom Elements */
 solar-eclipse-toggle .z-icon {
 	margin: 0;
-	width: 1em;
-	height: 1em;
 }
 aside time-difference {
 	text-transform: capitalize;
