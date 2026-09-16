@@ -125,7 +125,7 @@ classes:
 		<dd class="nextprev-next">
 			{%- if nextPost %}
 			<a href="{{ nextPost.url }}">
-				<img src="{% ogImageSource nextPost %}"  alt="{{ nextPost.data.title }}" decoding="async" loading="lazy"class="project_img" eleventy:widths="650"{% if nextPost | shouldSkipOpenGraphImageOptimization %} eleventy:ignore{% endif %}>
+				<img src="{% ogImageSource nextPost %}"  alt="{{ nextPost.data.title }}" decoding="async" loading="lazy"class="project_img"{% if nextPost | shouldSkipOpenGraphImageOptimization %} width="1200" height="630" eleventy:ignore{% else %} eleventy:widths="650"{% endif %}>
 			</a>
 			{%- endif -%}
 		</dd>
@@ -137,7 +137,7 @@ classes:
 		<dd class="nextprev-prev">
 			{%- if previousPost %}
 			<a href="{{ previousPost.url }}">
-				<img src="{% ogImageSource previousPost %}"  alt="{{ previousPost.data.title }}" decoding="async" loading="lazy"class="project_img" eleventy:widths="650"{% if previousPost | shouldSkipOpenGraphImageOptimization %} eleventy:ignore{% endif %}>
+				<img src="{% ogImageSource previousPost %}"  alt="{{ previousPost.data.title }}" decoding="async" loading="lazy"class="project_img"{% if previousPost | shouldSkipOpenGraphImageOptimization %} width="1200" height="630" eleventy:ignore{% else %} eleventy:widths="650"{% endif %}>
 			</a>
 			{%- endif -%}
 		</dd>

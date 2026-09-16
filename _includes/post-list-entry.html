@@ -23,7 +23,7 @@
 	<a href="{{ post.url }}" class="posts-link{%- if isArchives and analytics[post.url].rankTotal <= 20 or analytics[post.url].rankPerDaysPosted <= 20 %} posts-link-highlight{% endif %}{% if hfeed %} p-name u-url{% endif %}">
 	{%- if previewImages %}
 		{%- comment %}We can use alt="" here so we don’t duplicate the content with the post title{% endcomment %}
-		<img src="{% ogImageSource post %}" alt="" decoding="async" loading="lazy" class="project_img" eleventy:widths="650,375" sizes="(min-width: 64em) 50vw, 100vw"{% if post | shouldSkipOpenGraphImageOptimization %} eleventy:ignore{% endif %}>
+		<img src="{% ogImageSource post %}" alt="" decoding="async" loading="lazy" class="project_img" sizes="(min-width: 64em) 50vw, 100vw"{% if post | shouldSkipOpenGraphImageOptimization %} width="1200" height="630" eleventy:ignore{% else %} eleventy:widths="650,375"{% endif %}>
 	{%- endif %}
 	{%- if post.data.metadata.schedule or post.data.metadata.type == 'scheduled_event' %}<span class="tag tag-borderless">{%- icon "far:calendar" -%}</span>{% endif %}
 
