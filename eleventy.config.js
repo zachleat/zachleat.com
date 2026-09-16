@@ -199,6 +199,7 @@ export default async function(eleventyConfig) {
 			[resolveModule("@zachleat/squirminal")]: `static/squirminal.js`,
 			[resolveModule("@zachleat/pagefind-search")]: `static/pagefind-search.js`,
 			[resolveModule("@zachleat/snow-fall")]: `static/snow-fall.js`,
+			[resolveModule("@zachleat/icon-fall")]: `static/icon-fall.js`,
 			[resolveModule("@zachleat/carouscroll")]: `static/carouscroll.js`,
 			[resolveModule("@zachleat/heading-anchors")]: `static/heading-anchors.js`,
 			[resolveModule("@zachleat/line-numbers")]: `static/line-numbers.js`,
