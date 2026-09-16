@@ -518,19 +518,18 @@ export default async function(eleventyConfig) {
 			imageHtml = await opengraphImageHtml(url);
 		}
 
-		let theme = "dark";
 		let styles = [];
 		if(!skipIcon && !url.includes("youtube.com")) {
 			let avatarUrl = getIndieAvatarUrl(url);
 			let colors = await getFilteredImageColors(avatarUrl);
 			if(colors.length > 0) {
 				styles.push(`--bw-background: ${colors.at(0).background}`);
-				theme = colors.at(0).mode;
+				styles.push(`--bw-foreground: ${colors.at(0).mode === "dark" ? "#fff" : "#000"}`);
 			}
 		}
 
 		return `${JS_ENABLED ? `<script type="module" src="/static/browser-window.js"></script>` : ""}
-<div><browser-window mode="${theme}"${skipIcon ? "" : " icon"} url="${url}" shadow flush style="${styles.join(";")}"><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
+<div><browser-window mode="auto" class="bw-site-theme"${skipIcon ? "" : " icon"} url="${url}" shadow flush style="${styles.join(";")}"><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
 	});
 
 	eleventyConfig.addFilter("isPost", function(inputPath) {
@@ -710,7 +709,7 @@ export default async function(eleventyConfig) {
 		if(JS_ENABLED) {
 			html.push(`<script type="module" src="/static/browser-window.js"></script>`);
 		}
-		html.push(`<div><browser-window shadow flush><is-land on:idle on:visible>`);
+		html.push(`<div><browser-window mode="auto" class="bw-site-theme" shadow flush><is-land on:idle on:visible>`);
 		if(JS_ENABLED) {
 			html.push(`<template data-island><script type="module" src="/static/carouscroll.js"></script></template>`);
 		}

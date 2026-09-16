@@ -2546,3 +2546,9 @@ speedlify2-score {
 	font-style: normal;
 	font-size: 0.8125em; /* 13px /16 */
 }
+/* <browser-window> colors that follow the site theme toggle */
+.bw-site-theme {
+	--bw-background: var(--z-color-bg);
+	--bw-foreground: var(--z-color-text);
+	--bw-border: 1px solid var(--z-color-border);
+}

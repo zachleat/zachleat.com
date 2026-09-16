@@ -88,6 +88,12 @@
 		--z-color-badge-archived-text: #fff;
 	}
 }
+[data-theme="light"] {
+	color-scheme: light;
+}
+[data-theme="dark"] {
+	color-scheme: dark;
+}
 :root[data-theme="dark"] {
 	--z-color-bg: #1d1d1d;
 	--z-color-bg-alt: #24272a;
