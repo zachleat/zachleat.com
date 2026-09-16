@@ -1,5 +1,6 @@
 ---
 title: "Table of Contents Web Component"
+titleHtml: '&lt;table-of-contents&gt; Web Component'
 githubProjectName: zachleat/table-of-contents
 tags:
   - project

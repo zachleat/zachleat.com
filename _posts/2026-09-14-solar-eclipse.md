@@ -1,5 +1,6 @@
 ---
-title: "Solar Eclipse Toggle (a dark/light mode toggle Web Component)"
+title: "Solar Eclipse Toggle Web Component (two state dark/light mode toggle)"
+titleHtml: '&lt;solar-eclipse-toggle&gt; Web Component (two state dark/light mode toggle)'
 githubProjectName: zachleat/solar-eclipse-toggle
 tags:
   - project
