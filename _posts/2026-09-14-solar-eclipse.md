@@ -4,6 +4,15 @@ githubProjectName: zachleat/solar-eclipse-toggle
 tags:
   - project
   - web-components
+seo:
+  openGraphBackgroundImage: /og/sources/solar-eclipse.jpg
+  openGraphAlt: Total solar eclipse with the sun’s corona glowing around the moon
+posterImage:
+  showOnPage: true
+  height: 24em
+  offset: 62%
+  name: Mathew Schwartz
+  source: https://unsplash.com/photos/solar-eclipse-7YiZKj9A3DM
 ---
 In [Trying out a Two-state Dark Mode Toggle](/web/two-state-dark-mode-toggle/) I summarized the Two-state Dark and Light mode Toggle discussion as I experimented with a  toggle in my personal website footer.
 

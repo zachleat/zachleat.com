@@ -1,6 +1,6 @@
 /* Live test cases */
 .card {
-	--box-shadow-color: #add8e6;
+	--box-shadow-color: var(--z-color-demo-border);
 	display: block;
 	padding: 1.25rem .5rem 1rem .5rem;
 	border: none;
@@ -96,7 +96,7 @@ pre + .card {
 	padding: 0 .25rem;
 	line-height: 1;
 	text-transform: uppercase;
-	background: #fff;
+	background: var(--z-color-bg);
 	color: #8ac7db;
 	font-family: var(--z-font-webfont);
 	font-weight: 400;
@@ -111,7 +111,7 @@ pre + .card {
 /* Nested demos leave a .5rem gap to the parent edges (parent padding minus .5rem) */
 .card .card {
 	margin-inline: 0;
-	box-shadow: 0 0 0 2px #ddf0f6;
+	box-shadow: 0 0 0 2px var(--z-color-demo-border-nested);
 
 	@media (min-width: 38.25em) { /* 612px */
 		margin-inline: -.25rem;

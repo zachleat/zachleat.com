@@ -4,6 +4,15 @@ githubProjectName: zachleat/table-of-contents
 tags:
   - project
   - web-components
+seo:
+  openGraphBackgroundImage: /og/sources/table-of-contents.jpg
+  openGraphAlt: Ornate silver candelabras on a long dining table beneath a crystal chandelier
+posterImage:
+  showOnPage: true
+  height: 24em
+  offset: 45%
+  name: Julien DI MAJO
+  source: https://unsplash.com/photos/silver-candelabras-on-dining-table-aSxFEwUDJtI
 ---
 > …and another one.
 
