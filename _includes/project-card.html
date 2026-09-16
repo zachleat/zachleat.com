@@ -233,6 +233,7 @@ column after it out of alignment {% endcomment -%}
 <article class="project-card neglect-score{% if project.isArchived %} archived{% endif %}" style="--neglect-score: {{ project.score }}">
 	<div class="project-card-top">
 		{{ nameFragment }}
+		{%- if project.isWebComponent %}<a href="/web/?category=web-components" class="project-card-wc-link"><span>All</span>🚾</a>{% endif %}
 		{%- comment %} the pill is the deep link to this project’s row in the full rankings {% endcomment -%}
 		{%- unless project.isArchived %}
 		<a href="/projects/#{{ projectRowId }}" class="project-card-neglect-link" title="See this project in the full rankings">{% icon "fa:diagram-project" %}{{ neglectFragment }}</a>

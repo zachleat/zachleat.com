@@ -1789,6 +1789,26 @@ a[href].tag-inline:not(.tag-borderless),
 	/* the name shrinks, never this */
 	flex: none;
 }
+/* a flex gap instead of a space character, so the underline stays on the text */
+.project-card-wc-link {
+	flex: none;
+	display: inline-flex;
+	align-items: center;
+	gap: .25em;
+	padding: .125em .75em;
+	margin-inline-end: .25em;
+	border-radius: 1em;
+	background: rgba(0, 0, 0, .06);
+	font-size: .875em;
+	white-space: nowrap;
+	text-decoration: none;
+}
+.project-card-wc-link:is(:hover, :focus, :active) {
+	color: inherit;
+}
+.project-card-wc-link:is(:hover, :focus) span {
+	text-decoration: underline;
+}
 .project-card-neglect-link .neglect {
 	/* the flex gap already separates the icon, so the pill's own trailing margin is redundant */
 	margin-inline-end: 0;
