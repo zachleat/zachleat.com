@@ -65,6 +65,8 @@ let totalCounts = {
 	customElements: 0,
 	audits: 0,
 	packages: 0,
+	activeProjects: 0,
+	activePackages: 0,
 };
 
 let reposSeen = new Set();
@@ -79,11 +81,13 @@ for(let pkg of report.projects) {
 	totalCounts.customElements += pkg.isWebComponent ? 1 : 0;
 
 	if(!pkg.isArchived && !pkg.npmDeprecated) {
+		totalCounts.activeProjects++;
 		totalCounts.audits += pkg.openVulnerabilities || 0;
 	}
 
 	if(pkg.publishCount > 0) {
 		totalCounts.packages++;
+		totalCounts.activePackages += pkg.npmDeprecated ? 0 : 1;
 	}
 
 	// Workspace counts would duplicate if we didn’t check
