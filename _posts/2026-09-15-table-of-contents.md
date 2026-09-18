@@ -20,7 +20,9 @@ This little (zero CSS) web component has two modes: progressively enhance a hier
 
 I pulled this code out of the [`table-of-contents.webc`](https://github.com/11ty/tugboat/blob/main/_components/table-of-contents.webc) component from the [WebC Tugboat starter project](https://tugboat.11ty.dev/) for standalone use.
 
-- [**Demo**](https://zachleat.github.io/table-of-contents/demo.html) _(…and in the sidebar of this website)_
+- [**Demo**](https://zachleat.github.io/table-of-contents/demo.html)
+	- And a demo in the sidebar of this blog post on my website.
+	- And a server rendered demo on Blog Awesome, _e.g. [Font Awesome 7.3 Is Here!](https://blog.fontawesome.com/font-awesome-7-3-release/)_
 - [Source code](https://github.com/zachleat/table-of-contents)
 - [`@zachleat/table-of-contents` on npm](https://www.npmjs.com/package/@zachleat/table-of-contents)
 
