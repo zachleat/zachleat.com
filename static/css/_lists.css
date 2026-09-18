@@ -47,12 +47,6 @@ dl.nextprev {
 		gap: 0.5em 20%;
 	}
 }
-@media (min-width: 40.625em) {
-	dl.nextprev {
-		margin-left: -1rem;
-		margin-right: -1rem;
-	}
-}
 dl.nextprev dt {
 	display: flex;
 	align-items: center;
