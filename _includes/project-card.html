@@ -136,7 +136,7 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 	{%- if project.publishCount > minimumPublishCountForSparkline and not project.isArchived %}
 	{%- capture releasesAlt %}Monthly publishes sparkline for {{ project.packageName }}, ranging {{ releasesRange.min | renderNumber: "0a" }} to {{ releasesRange.max | renderNumber: "0a" }}{% endcapture -%}
 	<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ releasesRange.min | renderNumber: "0a" }}</span>
-		<img src="{% sparklineDataUri reportData.sparklinesByPackage[ project.packageName ].monthlyReleases.counts, 104, 16, '#aaa', 1 %}" width="104" height="16" alt="{{ releasesAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
+		<img src="{% sparklineDataUri reportData.sparklinesByPackage[ project.packageName ].monthlyReleases.counts, 104, 16, '#aaa', 1, releasesRange.max %}" width="104" height="16" alt="{{ releasesAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
 		<span class="spark-axis spark-axis--max" aria-hidden="true">{{ releasesRange.max | renderNumber: "0a" }}</span></span>
 	{%- endif %}
 	{% if project.publishCount > 0 %}<small class="nowrap">{{ project.publishCount | renderNumber: "0a" }} version{% if project.publishCount != 1 %}s{% endif %} in <time-difference live mode="strip-suffix"><time datetime="{{ project.firstPublish }}" title="{{ project.firstPublish }}">{{ project.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference></small>{% endif %}

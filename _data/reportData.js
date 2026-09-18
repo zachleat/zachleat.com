@@ -45,14 +45,16 @@ function padReleasesToCurrentMonth(packages) {
 }
 
 // A sparkline is unitless, so each one needs the range it was drawn against to be readable.
-// Liquid has no numeric min/max, hence deriving it here.
-function getRangesBySeries(packages, seriesName) {
+// Liquid has no numeric min/max, hence deriving it here. `floorAtZero` is for counts where a
+// month of nothing is the real baseline—a release series otherwise scales against its own
+// minimum, so a package that shipped 10 every month draws as an empty 10-to-10 line.
+function getRangesBySeries(packages, seriesName, floorAtZero = false) {
 	return Object.fromEntries(
 		Object.entries(packages).map(([packageName, entry]) => {
 			let counts = entry[seriesName]?.counts || [];
 
 			return [packageName, counts.length ? {
-				min: Math.min(...counts),
+				min: floorAtZero ? 0 : Math.min(...counts),
 				max: Math.max(...counts),
 			} : null];
 		})
@@ -154,7 +156,7 @@ export default async function() {
 			neglectScoreMax: getNeglectScoreMax(report.projects),
 			sparklinesByPackage,
 			downloadsRangeByPackage: getRangesBySeries(sparklinesByPackage, "monthlyDownloads"),
-			releasesRangeByPackage: getRangesBySeries(sparklinesByPackage, "monthlyReleases"),
+			releasesRangeByPackage: getRangesBySeries(sparklinesByPackage, "monthlyReleases", true),
 			cdnHitsRangeByPackage: getRangesBySeries(sparklinesByPackage, "monthlyCdnHits"),
 			cdnHitsTotalByPackage: getCdnHitsTotals(sparklinesByPackage),
 			sparklineAggregate: aggregateJson.monthlyReleases,
