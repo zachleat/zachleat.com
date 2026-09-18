@@ -13,6 +13,37 @@ function fetchJson(path) {
 	});
 }
 
+// A package's release series stops at its last publish, so a long-dormant package and an active one
+// both end flush against the right edge. Zero-filling to the current month lets the flat stretch
+// show. Downloads and CDN hits already run to the last complete month, so only releases need this.
+function padReleasesToCurrentMonth(packages) {
+	let now = new Date();
+	let endIndex = now.getUTCFullYear() * 12 + now.getUTCMonth();
+
+	return Object.fromEntries(
+		Object.entries(packages).map(([packageName, entry]) => {
+			let series = entry.monthlyReleases;
+			if(!series?.counts?.length) {
+				return [packageName, entry];
+			}
+
+			let [startYear, startMonth] = series.start.split("-").map(Number);
+			let missing = endIndex - (startYear * 12 + (startMonth - 1)) - (series.counts.length - 1);
+			if(missing <= 0) {
+				return [packageName, entry];
+			}
+
+			return [packageName, {
+				...entry,
+				monthlyReleases: {
+					...series,
+					counts: [...series.counts, ...Array(missing).fill(0)],
+				},
+			}];
+		})
+	);
+}
+
 // A sparkline is unitless, so each one needs the range it was drawn against to be readable.
 // Liquid has no numeric min/max, hence deriving it here.
 function getRangesBySeries(packages, seriesName) {
@@ -115,7 +146,7 @@ export default async function() {
 			fetchJson("report-sparkline-aggregate.json"),
 		]);
 
-		let sparklinesByPackage = sparklinesJson.packages;
+		let sparklinesByPackage = padReleasesToCurrentMonth(sparklinesJson.packages);
 
 		return {
 			report,
