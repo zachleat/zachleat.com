@@ -8,6 +8,9 @@
 	/* Layout: 45em at the 19px list font size, in rem so larger post fonts don’t widen it */
 	--z-width-list: calc(45 * 1.1875rem);
 
+	/* Horizontal page gutter, in em so it scales with each element’s own font size */
+	--z-page-gutter: .5em;
+
 	/* Colors */
 	--z-color-bg: #fff;
 	--z-color-bg-alt: #eee;
@@ -47,6 +50,12 @@
 	--z-color-badge-archived-text: #000;
 
 	color-scheme: light dark;
+}
+
+@media (min-width: 25em) { /* 400px */
+	:root {
+		--z-page-gutter: 1em;
+	}
 }
 
 /* Dark theme: follows the OS setting by default, or the footer's Theme toggle (which sets data-theme) */

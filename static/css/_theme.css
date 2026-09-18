@@ -268,7 +268,8 @@ h5,
 .content-main,
 .content-footer {
 	text-align: left;
-	padding: 0 .5em; /* 8px /16 */
+	padding-block: 0;
+	padding-inline: var(--z-page-gutter);
 	color: var(--z-color-text);
 	font-size: 1.1875em; /* 19px /16 */
 	line-height: 1.65;
@@ -281,11 +282,6 @@ h5,
 }
 
 @media (min-width: 25em) { /* 400px */
-	.content-main,
-	.content-footer {
-		padding-left: 1em;
-		padding-right: 1em;
-	}
 	.tmpl-list .content-main {
 		margin-left: auto;
 		margin-right: auto;
@@ -307,33 +303,28 @@ h5,
 			/* Padding reveals a rainbow edge that echoes .page-gradient */
 			padding-block-end: 0.1875em;
 			background-image: linear-gradient(238deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff0080);
-			border-radius: 0.5rem;
 			box-shadow: 0 1.25em 2.5em -1.5em rgb(0 0 0 / .6);
+		}
+	}
+	@media (min-width: 61.25em) { /* 980px, two column layout insets the poster */
+		.fullwidth-poster img {
+			border-radius: 0.5rem;
 		}
 	}
 }
 @supports (display: grid) {
 	.tmpl-page .fullwidth-poster img,
 	.tmpl-page .content-grid > .fullwidth img {
-		width: calc(100% + .5rem);
+		width: calc(100% + 2 * var(--z-page-gutter));
 		height: auto;
 		max-width: none;
-		margin-left: -0.25rem;
-		margin-right: -0.25rem;
-	}
-	@media (min-width: 25em) { /* 400px */
-		.tmpl-page .fullwidth-poster img,
-		.tmpl-page .content-grid > .fullwidth img {
-			width: calc(100% + 1.5rem);
-			margin-left: -0.75rem;
-			margin-right: -0.75rem;
-		}
+		margin-inline: calc(-1 * var(--z-page-gutter));
 	}
 	@media (min-width: 61.25em) { /* 980px */
 		.tmpl-page .fullwidth-poster img,
 		.tmpl-page .content-grid > .fullwidth img {
-			width: calc(100% + .75rem);
-			margin-right: 0;
+			width: calc(100% + var(--z-page-gutter));
+			margin-inline-end: 0;
 		}
 	}
 
@@ -426,7 +417,7 @@ h5,
 		/* Starts at the main column, ends at the page edge */
 		.content-footer > .footer {
 			grid-column: 2 / -1;
-			padding-inline: 0.75rem;
+			padding-inline: var(--z-page-gutter);
 		}
 		.rail { grid-area: rail; }
 		.hamburger { grid-area: hamburger; }
@@ -733,19 +724,13 @@ a[href] > code {
 	color: inherit;
 }
 :root {
-	--page-padding: .25rem;
 	--uln-padding-v: .75rem;
 	--uln-padding-h: 0 1.5rem;
 	--uln-color: var(--z-color-text-secondary);
 }
-@media (min-width: 25em) { /* 400px */
-	:root {
-		--page-padding: .75rem;
-	}
-}
 pre {
 	font-family: var(--z-font-monospace);
-	padding: var(--page-padding);
+	padding: var(--z-page-gutter);
 	margin: 0;
 	background: #272822;
 	color: #f8f8f2;
@@ -770,15 +755,15 @@ pre {
 }
 pre:has(+ pre),
 line-numbers:has(+ details) pre.uln-target {
-	margin-block-end: var(--page-padding);
+	margin-block-end: var(--z-page-gutter);
 }
 line-numbers + line-numbers {
 	margin-block-start: 1em;
 }
 pre,
 line-numbers pre.uln-target {
-	margin-inline: calc(-1 * var(--page-padding));
-	min-width: calc(100% + 2 * var(--page-padding));
+	margin-inline: calc(-1 * var(--z-page-gutter));
+	min-width: calc(100% + 2 * var(--z-page-gutter));
 }
 pre > code {
 	padding: 0;
@@ -786,7 +771,7 @@ pre > code {
 	background-color: #272822;
 	color: #f8f8f2;
 }
-@media (min-width: 40.625em) { /* 650px */
+@media (min-width: 48.75em) { /* 780px */
 	:where(.tmpl-page) pre {
 		border-radius: 0.5rem; /* 8px /16 */
 	}
@@ -857,16 +842,10 @@ table-saw :is(th, td) {
 }
 .table-scroll {
 	position: relative;
-	width: calc(100% + .5rem);
+	width: calc(100% + 2 * var(--z-page-gutter));
 	overflow-x: auto;
 	overflow-y: hidden;
-	margin-inline: -.25rem;
-}
-@media ( min-width: 25em ) { /* 400px */
-	.table-scroll {
-		width: calc(100% + 1.5rem);
-		margin-inline: -.75rem;
-	}
+	margin-inline: calc(-1 * var(--z-page-gutter));
 }
 .table-scroll > table {
 	width: 100%;
