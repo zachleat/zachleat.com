@@ -135,6 +135,11 @@ page mid-render. #}
 		group.append(new Option(label, entry[0]));
 	}
 
+	// An inline box returns one client rect per line it wraps onto.
+	function fitFace() {
+		face.classList.toggle("main-left-small", hedText.getClientRects().length >= 4);
+	}
+
 	function render(updateUrl) {
 		var entry = entryFor(pageField.value) || DEFAULT;
 
@@ -149,6 +154,7 @@ page mid-render. #}
 		numberOut.hidden = !entry[3];
 		main.style.setProperty("--og-bgimage", "url('" + entry[4].replace(/'/g, "%27") + "')");
 		face.hidden = Boolean(entry[5]);
+		fitFace();
 
 		// Only a post ends up in the URL; the default is the bare page.
 		var query = entry === DEFAULT ? "" : "?page=" + encodeURIComponent(entry[0]);
@@ -167,6 +173,9 @@ page mid-render. #}
 	pageField.value = (entryFor(requested) || DEFAULT)[0];
 
 	render(false);
+
+	// Wrapping can change once the web font loads.
+	document.fonts.ready.then(fitFace);
 
 	pageField.addEventListener("change", function() {
 		render();
