@@ -16,6 +16,24 @@ export default function(eleventyConfig) {
 		return content ? sanitizeHTML(content, allowedHTML) : "";
 	});
 
+	// Matches @user, @user.bsky.social, and @user@instance.social (but not emails)
+	const handlePattern = "[\\w-]+(?:\\.[\\w-]+)*(?:@[\\w-]+(?:\\.[\\w-]+)+)?";
+	const mentionRegex = new RegExp(`(^|[^\\w@/.])@(${handlePattern})`, "g");
+	const leadingMentionsRegex = new RegExp(`^\\s*((?:@${handlePattern}(?:\\s+|$))+)`);
+
+	const toPill = handle => `<span class="static-comments-mention">${handle}</span>`;
+
+	eleventyConfig.addFilter('webmentionMentionPills', (text = "") => {
+		let replyingTo = "";
+		text = text.replace(leadingMentionsRegex, (match, mentions) => {
+			let handles = mentions.trim().split(/\s+/).map(handle => toPill(handle.slice(1)));
+			replyingTo = `<span class="static-comments-replying-to">Replying to ${handles.join(" ")}</span>`;
+			return "";
+		});
+
+		return replyingTo + text.replace(mentionRegex, (match, prefix, handle) => `${prefix}${toPill(handle)}`);
+	});
+
 	eleventyConfig.addFilter('webmentionIsType', (webmention, type) => {
 		return type === webmention['wm-property'];
 	});

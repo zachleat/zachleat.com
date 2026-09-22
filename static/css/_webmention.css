@@ -23,7 +23,7 @@
     width: var(--webmention-avatar-size);
     height: var(--webmention-avatar-size);
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid var(--z-color-bg);
     line-height: 1;
     overflow: hidden;
     box-sizing: content-box;
@@ -33,7 +33,7 @@
     z-index: 1;
 }
 .webmentions__face {
-    background-color: rgba(0,0,0,.2);
+    background-color: var(--z-color-bg-alt);
 }
 /* Hide errors, note: this makes the number reported on the page inaccurate */
 .webmentions__facepile .error {
