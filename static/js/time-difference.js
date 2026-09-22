@@ -46,6 +46,11 @@ class TimeDifference extends HTMLElement {
 		return this.getAttribute("prefix");
 	}
 
+	get relativeTo() {
+		// compare against this date instead of now
+		return this.getAttribute("relative-to");
+	}
+
 	get intervalTimeout() {
 		// numeric override (seconds)
 		let attr = this.getAttribute("interval");
@@ -80,18 +85,20 @@ class TimeDifference extends HTMLElement {
 		return (TimeDifference.UNITS[units] || 1) * 1000;
 	}
 
+	static parseDate(dateStr) {
+		if(!isNaN(Date.parse(dateStr))) {
+			return Date.parse(dateStr);
+		}
+		// Timestamp
+		return new Date(parseInt(dateStr, 10));
+	}
+
 	static getText(dateStr, options = {}) {
-		let { units, locale, mode, suffix, prefix, format } = options;
+		let { units, locale, mode, suffix, prefix, format, relativeTo } = options;
 		let modes = (mode || "").split(",");
 
-		let date1;
-		if(!isNaN(Date.parse(dateStr))) {
-			date1 = Date.parse(dateStr);
-		} else {
-			// Timestamp
-			date1 = new Date(parseInt(dateStr, 10));
-		}
-		let date2 = Date.now();
+		let date1 = TimeDifference.parseDate(dateStr);
+		let date2 = relativeTo ? TimeDifference.parseDate(relativeTo) : Date.now();
 		if(!date1 || !date2) {
 			return;
 		}
@@ -156,6 +163,7 @@ class TimeDifference extends HTMLElement {
 					prefix: this.prefix,
 					suffix: this.suffix,
 					format: this.format,
+					relativeTo: this.relativeTo,
 				});
 			})
 		});

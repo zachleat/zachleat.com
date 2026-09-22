@@ -45,6 +45,12 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	font-size: 80%;
 	color: var(--z-color-text-secondary);
 }
+.static-comments-mention.static-comments-op {
+	flex-shrink: 0;
+	margin-inline-start: -.5em;
+	background-color: var(--z-color-text-tertiary);
+	color: var(--z-color-bg);
+}
 .static-comments-img {
 	vertical-align: top;
 	width: var(--webmention-comment-avatar-size);

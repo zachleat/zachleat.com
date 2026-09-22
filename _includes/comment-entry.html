@@ -2,7 +2,8 @@
 	<div class="static-comments-hed">
 		<img src="{{ comment.avatar | escape }}" class="static-comments-img" width="48" height="48" alt="Avatar for {{ comment.author | escape }}" loading="lazy" decoding="async" eleventy:ignore>
 		<div class="static-comments-title cased">{{ comment.author | escape }}</div>
-		<em class="static-comments-date"><a href="#comment-{{ comment.postId }}" title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">{% icon "fab:disqus" %}{{ comment.date | readableDateFromISO: "dd LLL yyyy" }}</a></em>
+		{% assign isOriginalPoster = comment | commentIsOriginalPoster %}{% if isOriginalPoster %}<span class="static-comments-mention static-comments-op">OP</span>{% endif %}
+		<em class="static-comments-date"><a href="#comment-{{ comment.postId }}" title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">{% icon "fab:disqus" %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" later"><time datetime="{{ comment.date }}" title="{{ comment.date | readableDateFromISO: "dd LLL yyyy" }}">{{ comment.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></a></em>
 	</div>
 	<div class="static-comments-msg{% if comment.message.length > 5000 %} static-comments-msg-long{% endif %}">{{ comment.message | sanitizeHTML }}</div>
 	<ol>

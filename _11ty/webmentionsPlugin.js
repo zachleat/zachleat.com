@@ -34,6 +34,21 @@ export default function(eleventyConfig) {
 		return replyingTo + text.replace(mentionRegex, (match, prefix, handle) => `${prefix}${toPill(handle)}`);
 	});
 
+	const authorUrls = [
+		"https://bsky.app/profile/zachleat.com",
+		"https://fediverse.zachleat.com/@zachleat",
+		"https://twitter.com/zachleat",
+	];
+	const authorDisqusNames = ["Zach Leatherman", "zachleat"];
+
+	eleventyConfig.addFilter('webmentionIsOriginalPoster', (webmention) => {
+		return authorUrls.includes(webmention?.author?.url);
+	});
+
+	eleventyConfig.addFilter('commentIsOriginalPoster', (comment) => {
+		return authorDisqusNames.includes(comment?.author);
+	});
+
 	eleventyConfig.addFilter('webmentionIsType', (webmention, type) => {
 		return type === webmention['wm-property'];
 	});
@@ -127,7 +142,7 @@ export default function(eleventyConfig) {
 			}).sort((a, b) => {
 				// Show oldest entries first
 				let adate = a.published || a['wm-received'];
-				let bdate = b.published || a['wm-received'];
+				let bdate = b.published || b['wm-received'];
 				if(bdate < adate) {
 					return 1;
 				} else if(bdate > adate) {
