@@ -84,7 +84,8 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	font-family: inherit;
 }
 
-.static-comments-webmentions .static-comments-reply {
+.static-comments-webmentions .static-comments-reply,
+.static-comments > .static-comments-reply {
 	border-bottom: 1px solid #eee;
 	padding-bottom: 1em;
 }
