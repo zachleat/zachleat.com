@@ -18,17 +18,17 @@ Millions of _Large-Language-Model_-generated words have been spilled on craftsma
 
 <iframe class="iframe--card" src="https://www.speedlify.dev/site/x-ai/filmstrip/" title="x.ai filmstrip" width="100%" height="360" style="border: 0" loading="lazy"></iframe>
 
-I’ve been in this game long enough to recognize self-congratulatory tooling improvements for what they are: automated simplicity (aka _can-kicking complexity_) from software companies claiming to be at the bleeding edge of technique and application.
+I’ve been in this game long enough to recognize tooling improvements from software companies at the bleeding edge of technique and application and it usually goes something like this: “If we make developers lives better, the software they produce will be better!”
 
 <iframe class="iframe--card" src="https://www.speedlify.dev/site/openai-com/filmstrip/" title="openai.com filmstrip" width="100%" height="360" style="border: 0" loading="lazy"></iframe>
 
-I’m always left wondering (suspecting the answer with hopeful optimism that my hunch is wrong this time): do these workflow improvements actually improve how people (technical or otherwise) _experience_ software? Certainly **we have more software**. But is it better?
+I’m always left wondering (suspecting the answer with hopeful optimism that my hunch is wrong this time): do these workflow improvements actually improve how people (technical or otherwise) _experience_ software? Certainly **we have more software**. But is it better? I don’t know.
 
 <iframe class="iframe--card" src="https://www.speedlify.dev/site/mistral-ai/filmstrip/" title="mistral.ai filmstrip" width="100%" height="360" style="border: 0" loading="lazy"></iframe>
 
-Front-end web developers have lived through about fifteen years of the _single-page-application_-era smokescreen, sold as though improvements to developer experience would cause the reanimated corpse of Ronald Reagan himself to ask you for commit access to ship trickle-down improvements to user experience.
+Front-end web developers have lived through a few cycles of this (seven or eight years of client rendering, fifteen years of the _single-page-application_-era smokescreen are a few that come to mind), sold as though improvements to developer experience would cause the reanimated corpse of Ronald Reagan himself to ask you for commit access to ship trickle-down improvements to user experience.
 
-Are we repeating the same playbook (on a more accelerated pace)? Certainly we’ve seen numerous recent anecdotal examples of software becoming _less_ reliable over time (GitHub is the most recent scapegoat I’ve seen, but on my read they seem to be a second-order victim more than anything).
+Is this cycle repeating the same playbook (on a more accelerated pace)? Certainly we’ve seen numerous recent anecdotal examples of software becoming _less_ reliable over time (GitHub is the most recent scapegoat I’ve seen, but on my read they seem to be a second-order victim more than anything).
 
 _(Seems like a great time to be in the Monitoring/Status Page business)._
 
