@@ -60,7 +60,8 @@
   <details id="comments">
     <summary><strong>{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}</strong></summary>
     <ol class="static-comments static-comments-webmentions favicon-optin">
-      {% for webmention in replies %}
+      {%- assign threads = replies | webmentionThreads -%}
+      {% for webmention in threads %}
         {% include "webmention" %}
       {% endfor %}
     </ol>

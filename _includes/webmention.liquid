@@ -30,4 +30,11 @@
   {% if showTarget %}
   <a href="{{ webmention['wm-target'] }}" class="tag-inline tag-cased">{{ webmention['wm-target'] | localUrl }}</a>
   {% endif %}
+  {% if webmention.replies.size > 0 %}
+  <ol>
+  {% for reply in webmention.replies %}
+    {% include "webmention", webmention: reply %}
+  {% endfor %}
+  </ol>
+  {% endif %}
 </li><!-- /static-comments-reply -->

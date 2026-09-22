@@ -41,12 +41,56 @@ export default function(eleventyConfig) {
 	];
 	const authorDisqusNames = ["Zach Leatherman", "zachleat"];
 
-	eleventyConfig.addFilter('webmentionIsOriginalPoster', (webmention) => {
-		return authorUrls.includes(webmention?.author?.url);
-	});
+	eleventyConfig.addFilter('webmentionIsOriginalPoster', webmention => isOriginalPoster(webmention));
 
 	eleventyConfig.addFilter('commentIsOriginalPoster', (comment) => {
 		return authorDisqusNames.includes(comment?.author);
+	});
+
+	const isOriginalPoster = webmention => authorUrls.includes(webmention?.author?.url);
+
+	const getLeadingMentions = (text = "") => {
+		let match = text.match(leadingMentionsRegex);
+		return match ? match[1].trim().split(/\s+/).map(handle => handle.slice(1).toLowerCase()) : [];
+	};
+
+	// e.g. bsky.app/profile/user.bsky.social, twitter.com/user, instance.social/@user
+	const getAuthorHandles = (webmention) => {
+		try {
+			let url = new URL(webmention?.author?.url);
+			let [first, second] = url.pathname.split("/").filter(Boolean);
+			if(url.hostname === "bsky.app" && first === "profile") {
+				return [second.toLowerCase()];
+			}
+			if(first?.startsWith("@")) {
+				let user = first.slice(1).toLowerCase();
+				return [user, `${user}@${url.hostname}`];
+			}
+			if(first) {
+				return [first.toLowerCase()];
+			}
+		} catch(e) {}
+		return [];
+	};
+
+	// Nests my own replies under the most recent earlier comment by the first person I mention
+	eleventyConfig.addFilter('webmentionThreads', (webmentions = []) => {
+		let nodes = webmentions.map(entry => ({ ...entry, replies: [] }));
+		let threads = [];
+		nodes.forEach((node, index) => {
+			let parent;
+			if(isOriginalPoster(node)) {
+				let mentions = getLeadingMentions(node.content?.text);
+				for(let mention of mentions) {
+					parent = nodes.slice(0, index).reverse().find(candidate => getAuthorHandles(candidate).includes(mention));
+					if(parent) {
+						break;
+					}
+				}
+			}
+			(parent ? parent.replies : threads).push(node);
+		});
+		return threads;
 	});
 
 	eleventyConfig.addFilter('webmentionIsType', (webmention, type) => {
