@@ -28,7 +28,9 @@ I’m always left wondering (suspecting the answer with hopeful optimism that my
 
 Front-end web developers have lived through about fifteen years of the _single-page-application_-era smokescreen, sold as though improvements to developer experience would cause the reanimated corpse of Ronald Reagan himself to ask you for commit access to ship trickle-down improvements to user experience.
 
-Are we repeating the same playbook (on a more accelerated pace)? Certainly we’ve seen numerous recent anecdotal examples of software becoming _less_ reliable over time (GitHub is the most recent scapegoat I’ve seen, but on my read they seem to be a second-order victim more than anything) _(seems like a great time to be in the Monitoring/Status Page business)._
+Are we repeating the same playbook (on a more accelerated pace)? Certainly we’ve seen numerous recent anecdotal examples of software becoming _less_ reliable over time (GitHub is the most recent scapegoat I’ve seen, but on my read they seem to be a second-order victim more than anything).
+
+_(Seems like a great time to be in the Monitoring/Status Page business)._
 
 <iframe class="iframe--card" src="https://www.speedlify.dev/site/www-perplexity-ai/filmstrip/" title="perplexity.ai filmstrip" width="100%" height="360" style="border: 0" loading="lazy"></iframe>
 
