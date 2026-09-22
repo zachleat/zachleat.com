@@ -20,6 +20,57 @@ export default function(eleventyConfig) {
 		return type === webmention['wm-property'];
 	});
 
+	const platformIcons = {
+		bluesky: "fab:bluesky",
+		mastodon: "fab:mastodon",
+		twitter: "fab:x-twitter",
+		github: "fab:github",
+		reddit: "fab:reddit",
+		hackernews: "fab:hacker-news",
+		flickr: "fab:flickr",
+		instagram: "fab:instagram",
+		facebook: "fab:facebook",
+	};
+
+	const platformHostnames = {
+		"bsky.app": "bluesky",
+		"twitter.com": "twitter",
+		"x.com": "twitter",
+		"github.com": "github",
+		"www.reddit.com": "reddit",
+		"reddit.com": "reddit",
+		"news.ycombinator.com": "hackernews",
+	};
+
+	eleventyConfig.addFilter('webmentionPlatformIcon', (webmention) => {
+		try {
+			let source = new URL(webmention['wm-source']);
+			if(source.hostname === "brid.gy") {
+				// e.g. https://brid.gy/comment/mastodon/…
+				let platform = source.pathname.split("/")[2];
+				if(platformIcons[platform]) {
+					return platformIcons[platform];
+				}
+			} else if(source.hostname === "ap.brid.gy") {
+				return platformIcons.mastodon;
+			}
+		} catch(e) {}
+
+		try {
+			let url = new URL(webmention.url);
+			let platform = platformHostnames[url.hostname];
+			if(platform) {
+				return platformIcons[platform];
+			}
+			// Mastodon-style profile paths
+			if(url.pathname.startsWith("/@")) {
+				return platformIcons.mastodon;
+			}
+		} catch(e) {}
+
+		return "fas:globe";
+	});
+
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
 		if( !allowedTypes ) {
 			// all types

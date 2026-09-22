@@ -13,7 +13,7 @@
 
 	/* Colors */
 	--z-color-bg: #fff;
-	--z-color-bg-alt: #eee;
+	--z-color-bg-alt: #f4f4f4;
 	--z-color-border: #ddd;
 	--z-color-border-light: rgb(210, 222, 210);
 	--z-color-demo-border: #add8e6;
@@ -22,6 +22,8 @@
 	--z-color-text: #525252;
 	--z-color-text-heading: #222;
 	--z-color-text-secondary: #666;
+	--z-color-text-tertiary: #767676;
+	--z-color-icon-muted: #949494;
 	--z-color-link: #304f3e;
 	--z-color-link-visited: #4c713e;
 	--z-color-link-active: #2e7d32;
@@ -70,6 +72,8 @@
 		--z-color-text: #c7c9cb;
 		--z-color-text-heading: #f2f2f2;
 		--z-color-text-secondary: #9a9ea1;
+		--z-color-text-tertiary: #8a8d90;
+		--z-color-icon-muted: #66696c;
 		--z-color-link: #8fd08f;
 		--z-color-link-visited: #7bc27b;
 		--z-color-link-active: #6ee06e;
@@ -113,6 +117,8 @@
 	--z-color-text: #c7c9cb;
 	--z-color-text-heading: #f2f2f2;
 	--z-color-text-secondary: #9a9ea1;
+	--z-color-text-tertiary: #8a8d90;
+	--z-color-icon-muted: #66696c;
 	--z-color-link: #8fd08f;
 	--z-color-link-visited: #7bc27b;
 	--z-color-link-active: #6ee06e;

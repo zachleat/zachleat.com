@@ -1,5 +1,5 @@
 .static-comments {
-	--webmention-comment-avatar-size: 2rem;
+	--webmention-comment-avatar-size: 1.5em;
 	font-size: 80%;
 	max-width: 36em;
 }
@@ -34,8 +34,6 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
-.static-comments-title.static-comments-title {
 	font-family: var(--z-font-webfont);
 	font-weight: 400;
 }
@@ -53,6 +51,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 .static-comments-msg {
 	clear: both;
 	line-height: 1.7;
+	color: var(--z-color-text-tertiary);
 	margin-top: .5em;
 	-ms-word-break: break-all;
 	word-break: break-all;
@@ -100,6 +99,14 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	font-size: 85%;
 	text-align: right;
 	line-height: 1.5;
+}
+.static-comments-date .z-icon {
+	width: 1.25em;
+	height: 1.25em;
+	vertical-align: text-bottom;
+}
+.static-comments-missing-emoji {
+	color: var(--z-color-icon-muted);
 }
 .static-comments-tag {
 	margin-left: 6px;
