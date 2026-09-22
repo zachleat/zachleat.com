@@ -20,6 +20,16 @@ eleventyImport:
 		<li><em><a href="/web/" class="posts-link posts-link-more">…see full archives.</a></em></li>
 	</ol>
 
+	{% assign recentActivity = webmentions | webmentionsRecentActivity: 10 %}
+	{%- if recentActivity.size > 0 %}
+	<h2>Recent Activity</h2>
+	<ol class="activity-feed list-flush favicon-optin">
+		{%- for activity in recentActivity %}
+			{% include "webmention-activity.liquid" %}
+		{%- endfor %}
+	</ol>
+	{%- endif %}
+
 	<h2>Popular{% icon "fas:fire-flame-curved" %}</h2>
 	<ol class="posts h-feed">
 		{% for post in collections.popularPostsRanked limit:8 %}

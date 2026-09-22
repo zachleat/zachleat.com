@@ -1,0 +1,37 @@
+{%- assign targetPath = activity.target | localUrl %}
+{%- assign targetPost = collections.all | find: "url", targetPath %}
+{%- capture targetLink %}<a href="{{ targetPath }}" class="activity-feed-target">{% if targetPost.data.title %}{{ targetPost.data.title }}{% else %}{{ targetPath }}{% endif %}</a>{% endcapture %}
+{%- capture missingEmoji %}<span class="static-comments-missing-emoji" title="Missing emoji" role="img" aria-label="Missing emoji">{% icon "fas:clipboard-question" %}</span>{% endcapture %}
+<li class="activity-feed-item">
+{%- if activity.type == "reactions" %}
+	<div class="activity-feed-faces">
+	{%- for webmention in activity.webmentions limit: 7 %}
+		{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "activity-feed-face" %}
+	{%- endfor %}
+	</div>
+	<div class="activity-feed-body">
+		<p class="activity-feed-summary">
+			{%- assign parts = "" | split: "," %}
+			{%- if activity.likes > 0 %}{% capture part %}{% icon "fas:heart" %}{{ activity.likes }} like{% if activity.likes != 1 %}s{% endif %}{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+			{%- if activity.reposts > 0 %}{% capture part %}{% icon "fas:retweet" %}{{ activity.reposts }} repost{% if activity.reposts != 1 %}s{% endif %}{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+			{%- if activity.bookmarks > 0 %}{% capture part %}{% icon "fas:bookmark" %}{{ activity.bookmarks }} bookmark{% if activity.bookmarks != 1 %}s{% endif %}{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+			{{ parts | join: ", " }} on {{ targetLink }}
+		</p>
+	</div>
+{%- else %}
+	{%- assign webmention = activity.webmention %}
+	<div class="activity-feed-faces">
+		{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "activity-feed-face" %}
+	</div>
+	<div class="activity-feed-body">
+		<p class="activity-feed-summary">
+			{%- assign platformIcon = webmention | webmentionPlatformIcon %}
+			{%- if webmention.url != "" %}<a href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer" class="activity-feed-author favicon-optout">{% endif -%}
+			{% icon platformIcon %}{% if webmention.author.name != "" %}{{ webmention.author.name | remove: ":11ty:" | strip | htmlEntities | replace: "????", missingEmoji }}{% elsif webmention.url %}{{ webmention.url | hostnameFromUrl }}{% else %}Anonymous{% endif %}
+			{%- if webmention.url != "" %}</a>{% endif %}
+			{% if activity.type == "reply" %}replied to{% else %}mentioned{% endif %} {{ targetLink }}
+		</p>
+		<time-difference class="activity-feed-date" live><time datetime="{{ activity.date }}" title="{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}">{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
+	</div>
+{%- endif %}
+</li>

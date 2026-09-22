@@ -148,6 +148,77 @@ export default function(eleventyConfig) {
 		return "fas:globe";
 	});
 
+	const isBlocked = entry => webmentionBlockList.some(blockedUrl => `${entry.url}`.includes(blockedUrl));
+
+	const reactionTypes = ["like-of", "repost-of", "bookmark-of"];
+	const reactionCountKeys = { "like-of": "likes", "repost-of": "reposts", "bookmark-of": "bookmarks" };
+	const REACTION_GROUP_WINDOW = 1000 * 60 * 60 * 24;
+	const getDateString = entry => entry.published || entry['wm-received'];
+	// Dates without an offset are UTC
+	const getDate = entry => {
+		let str = getDateString(entry) || "";
+		return new Date(/(Z|[+-]\d\d:?\d\d)$/.test(str) ? str : `${str}Z`).getTime() || 0;
+	};
+
+	// Newest sitewide activity (excluding my own), with nearby likes/reposts/bookmarks on the same post grouped together
+	eleventyConfig.addFilter('webmentionsRecentActivity', (webmentions, limit = 8) => {
+		let entries = Object.entries(webmentions?.mentions || {})
+			.flatMap(([target, list]) => list.map(webmention => ({ target, webmention, time: getDate(webmention) })))
+			.filter(({ target, webmention }) => getBaseUrl(webmention['wm-target']) === target && !isOriginalPoster(webmention) && !isBlocked(webmention))
+			.sort((a, b) => b.time - a.time);
+
+		let items = [];
+		let openGroups = {};
+		let knownUrls = new Set();
+		let knownAuthors = new Set();
+		for(let { target, webmention, time } of entries) {
+			if(webmention.url) {
+				if(knownUrls.has(webmention.url)) {
+					continue;
+				}
+				knownUrls.add(webmention.url);
+			}
+
+			// Each person shows up once
+			let author = webmention.author?.url || webmention.author?.name;
+			if(author) {
+				if(knownAuthors.has(author)) {
+					continue;
+				}
+				knownAuthors.add(author);
+			}
+
+			let type = webmention['wm-property'];
+			let group = openGroups[target];
+			if(group && group.time - time > REACTION_GROUP_WINDOW) {
+				group = openGroups[target] = undefined;
+			}
+
+			if(reactionTypes.includes(type) && group) {
+				group.webmentions.push(webmention);
+				group[reactionCountKeys[type]]++;
+				continue;
+			}
+
+			if(items.length >= limit) {
+				if(Object.values(openGroups).some(group => group && group.time - time <= REACTION_GROUP_WINDOW)) {
+					continue;
+				}
+				break;
+			}
+
+			let date = new Date(time).toISOString();
+			if(reactionTypes.includes(type)) {
+				group = openGroups[target] = { type: "reactions", target, date, time, webmentions: [webmention], likes: 0, reposts: 0, bookmarks: 0 };
+				group[reactionCountKeys[type]]++;
+				items.push(group);
+			} else {
+				items.push({ type: type === "in-reply-to" ? "reply" : "mention", target, date, webmention });
+			}
+		}
+		return items;
+	});
+
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
 		if( !allowedTypes ) {
 			// all types
