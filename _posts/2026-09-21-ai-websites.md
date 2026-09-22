@@ -18,7 +18,7 @@ Millions of _Large-Language-Model_-generated words have been spilled on craftsma
 
 <iframe class="iframe--card" src="https://www.speedlify.dev/site/x-ai/filmstrip/" title="x.ai filmstrip" width="100%" height="360" style="border: 0" loading="lazy"></iframe>
 
-I’ve been in this game long enough to recognize tooling improvements from software companies at the bleeding edge of technique and application and it usually goes something like this: “If we make developers lives better, the software they produce will be better!”
+I’ve been in this game long enough to recognize tooling improvements from software companies at the bleeding edge of technique and application and it usually goes something like this: “If we make it easier for developers to create software, they will have more bandwidth to produce higher quality software!”
 
 <iframe class="iframe--card" src="https://www.speedlify.dev/site/openai-com/filmstrip/" title="openai.com filmstrip" width="100%" height="360" style="border: 0" loading="lazy"></iframe>
 
