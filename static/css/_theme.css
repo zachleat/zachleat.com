@@ -583,7 +583,7 @@ h5,
 	gap: .75em;
 }
 a.syndication-card:is(:link, :visited) {
-	--ellipsis-lines: 3;
+	--ellipsis-lines: 2;
 	display: flex;
 	flex-direction: column;
 	gap: .35em;
@@ -604,6 +604,7 @@ a.syndication-card:is(:link, :visited):is(:hover, :focus-visible) {
 /* Long URLs in post text */
 .syndication-card-text {
 	overflow-wrap: anywhere;
+	font-style: italic;
 }
 .syndication-card-hed {
 	display: flex;
