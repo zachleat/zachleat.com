@@ -73,7 +73,7 @@ async function fetchWebmentions() {
 
 	// Keep the mention but not the content of unlisted Mastodon posts or Bluesky authors who hide from logged-out viewers
 	let privateAuthors = await getPrivateBlueskyAuthors(results);
-	results = results.map(entry => entry.visibility && entry.visibility !== "public" || privateAuthors.has(entry.author?.url) ? { ...entry, content: undefined, "content-hidden": true } : entry);
+	results = results.map(entry => entry.visibility && entry.visibility !== "public" || privateAuthors.has(entry.author?.url) ? { ...entry, content: undefined, images: undefined, "content-hidden": true } : entry);
 
 	if(process.env.ELEVENTY_RUN_MODE === "build") {
 		console.log( `[zachleat.com] Found ${results.length} total webmentions (${live.length} live).` );

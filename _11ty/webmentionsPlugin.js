@@ -30,8 +30,11 @@ export default function(eleventyConfig) {
 			if(isNested) {
 				return "";
 			}
-			let handles = mentions.trim().split(/\s+/).map(handle => toPill(handle.slice(1)));
-			replyingTo = `<span class="static-comments-replying-to">Replying to ${handles.join(" ")}</span>`;
+			// Top level replies to me are already implied
+			let handles = mentions.trim().split(/\s+/).map(handle => handle.slice(1)).filter(handle => !getOwnHandles().includes(handle.toLowerCase()));
+			if(handles.length) {
+				replyingTo = `<span class="static-comments-replying-to">Replying to ${handles.map(toPill).join(" ")}</span>`;
+			}
 			return "";
 		});
 
@@ -52,6 +55,10 @@ export default function(eleventyConfig) {
 	});
 
 	const isOriginalPoster = webmention => authorUrls.includes(webmention?.author?.url);
+
+	// e.g. zachleat, zachleat@fediverse.zachleat.com, zachleat.com
+	let ownHandles;
+	const getOwnHandles = () => ownHandles ??= authorUrls.flatMap(url => getAuthorHandles({ author: { url } }));
 
 	const getLeadingMentions = (text = "") => {
 		let match = text.match(leadingMentionsRegex);

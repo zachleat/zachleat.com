@@ -1,7 +1,6 @@
 .static-comments {
 	--webmention-comment-avatar-size: 1.75em;
 	font-size: 80%;
-	max-width: 40em;
 }
 details.static-comments-empty > summary {
 	list-style: none;
@@ -16,14 +15,25 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	list-style: none;
 }
 .static-comments-reply {
+	--static-comments-inset-inline: 0px;
+	--static-comments-inset-block: .75em;
+	position: relative;
 	margin: 0;
-	padding-block: .75em;
+	padding-block: var(--static-comments-inset-block);
 }
 .static-comments-reply .static-comments-reply {
-	margin-block-start: .75em;
-	padding-block: 0;
-	padding-inline-start: 1.25em;
-	border-inline-start: 3px solid var(--z-color-border-light);
+	--static-comments-inset-inline: var(--webmention-comment-avatar-size);
+	--static-comments-inset-block: 0px;
+	margin-block-start: 1em;
+	padding-inline-start: var(--static-comments-inset-inline);
+}
+/* Thread line runs from the parent avatar down alongside its replies */
+.static-comments-reply:has(> ol > .static-comments-reply)::before {
+	content: "";
+	position: absolute;
+	inset-inline-start: calc(var(--static-comments-inset-inline) + var(--webmention-comment-avatar-size) / 2 - .5px);
+	inset-block: calc(var(--static-comments-inset-block) + var(--webmention-comment-avatar-size) + .375em) var(--static-comments-inset-block);
+	border-inline-start: 1px solid var(--z-color-border-light);
 }
 .static-comments-hed {
 	display: flex;
@@ -57,6 +67,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	height: var(--webmention-comment-avatar-size);
 	flex-shrink: 0;
 	border-radius: 50%;
+	object-fit: cover;
 	background-color: var(--z-color-bg-alt);
 	box-shadow: 0 0 0 1px var(--z-color-border);
 }
@@ -98,8 +109,67 @@ details.static-comments-empty > summary::-webkit-details-marker {
 .static-comments-webmentions > .static-comments-reply,
 .static-comments > .static-comments-reply {
 	--static-comments-row-bg: var(--z-color-bg);
-	padding-inline: .75em;
-	background-color: var(--static-comments-row-bg);
+	--static-comments-inset-inline: 1em;
+	--static-comments-inset-block: 1em;
+	padding-inline: var(--static-comments-inset-inline);
+	border: 1px solid var(--z-color-border-light);
+	border-radius: .5em;
+}
+.static-comments-webmentions > .static-comments-reply + .static-comments-reply,
+.static-comments > .static-comments-reply + .static-comments-reply {
+	margin-block-start: .75em;
+}
+.static-comments-msg + .static-comments-other-media {
+	margin-block-start: .5em;
+}
+.static-comments-other-media {
+	color: var(--z-color-text-secondary);
+}
+.static-comments-photos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	margin-block-start: .5em;
+}
+.static-comments-photo {
+	position: relative;
+	display: block;
+	width: 8em;
+	aspect-ratio: 1;
+	overflow: hidden;
+	border-radius: .375em;
+	background-color: var(--z-color-bg-alt);
+	cursor: pointer;
+}
+.static-comments-photo:has(:focus-visible) {
+	outline: 2px solid var(--z-color-link);
+	outline-offset: 2px;
+}
+.static-comments-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: blur(1.5em);
+	transform: scale(1.25);
+	transition: filter .2s, transform .2s;
+}
+.static-comments-photo-reveal {
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	font-size: 85%;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 1px 3px rgba(0,0,0,.6);
+}
+/* Clicking toggles the blur */
+.static-comments-photo:has(:checked) img {
+	filter: none;
+	transform: none;
+}
+.static-comments-photo:has(:checked) .static-comments-photo-reveal {
+	display: none;
 }
 .static-comments-msg p:first-child {
 	margin-top: 0;
@@ -164,7 +234,8 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	.static-comments-hed {
 		align-items: center;
 	}
-	.static-comments-msg {
+	.static-comments-msg,
+	.static-comments-photos {
 		padding-inline-start: calc(var(--webmention-comment-avatar-size) + .75em);
 	}
 	.static-comments-date br {

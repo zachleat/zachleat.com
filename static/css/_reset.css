@@ -32,7 +32,7 @@ video {
 	max-width: 100%;
 	border: none;
 }
-img[width][height] {
+img:where([width][height]) {
 	height: auto;
 }
 hr {

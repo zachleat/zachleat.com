@@ -3,6 +3,7 @@
 	width: 1.3em;
 	height: 1.3em;
 	max-height: 1.3em;
+	object-fit: cover;
 	border-radius: 15%;
 	vertical-align: text-bottom;
 	margin: 0 .25em 0 0;

@@ -1763,7 +1763,14 @@
 			"wm-property": "in-reply-to",
 			"content": {
 				"text": "Hi @zachleat.com - I noticed these word breaks and wondered if hyphens: auto; reduce readability in certain contexts? No criticism, just curios if it's accessibly has been documented for it's use in paragraph text."
-			}
+			},
+			"images": [
+				{
+					"thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:i46llqdekf5kgugiizrar7jv/bafkreihuofxvu5egzo7u7fyynlyzroap2ejnhiyzym26swi666fk5s6joe",
+					"url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:i46llqdekf5kgugiizrar7jv/bafkreihuofxvu5egzo7u7fyynlyzroap2ejnhiyzym26swi666fk5s6joe",
+					"alt": "some text showing the word specifically and situation split with the - onto new lines"
+				}
+			]
 		},
 		{
 			"type": "entry",
@@ -3557,7 +3564,14 @@
 			"wm-property": "in-reply-to",
 			"content": {
 				"text": "in case you want more feedback 😅\nimo the separator makes it a bit ambiguous to what \"Auto\" is referring to, and i first read it like the toggle thinks the current selection is Auto, but it's for switching _to_ light/auto. maybe (auto) in quotes without separator would work better?"
-			}
+			},
+			"images": [
+				{
+					"thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hi2as635pg63iytfw53yvnjl/bafkreier6lqj6jlqf57j3anyys6sfsfq7vqryfw5s5d2qy5pf4qxe4yqve",
+					"url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hi2as635pg63iytfw53yvnjl/bafkreier6lqj6jlqf57j3anyys6sfsfq7vqryfw5s5d2qy5pf4qxe4yqve",
+					"alt": ""
+				}
+			]
 		},
 		{
 			"type": "entry",
@@ -5008,6 +5022,13 @@
 			"wm-source": "https://bsky.app/profile/peruvianidol.com/post/3mw4zwvpyw22z",
 			"wm-target": "https://www.zachleat.com/web/ai-websites/",
 			"wm-property": "in-reply-to",
+			"images": [
+				{
+					"thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rj7gcscy3x3vskk7y6f2nbx6/bafkreibemerap4opuxodmersexuocmenmzt3xplvs235daxo5ft6o6hwra",
+					"url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rj7gcscy3x3vskk7y6f2nbx6/bafkreibemerap4opuxodmersexuocmenmzt3xplvs235daxo5ft6o6hwra",
+					"alt": "Storefront of Al’s Beef. A big, red awning reads “AL’S #1 ITALIAN BEEF”"
+				}
+			],
 			"in-reply-to": "https://bsky.app/profile/alvaromontoro.com/post/3mw4wiqvf6k2k"
 		},
 		{
@@ -6709,6 +6730,13 @@
 			"content": {
 				"text": "@zachleat @AlesandroOrtiz It's a battle I wage in my mind all the time. It's not settled. Good slashes died out there maaaaaan!"
 			},
+			"images": [
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117134831474127879/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117134831474127879/original",
+					"alt": "GIF by Giphy QA"
+				}
+			],
 			"in-reply-to": "https://fediverse.zachleat.com/@zachleat/117134803750380842",
 			"visibility": "public"
 		},
@@ -6853,6 +6881,13 @@
 			"content": {
 				"text": "@zachleat @AlesandroOrtiz It's a battle I wage in my mind all the time. It's not settled. Good slashes died out there maaaaaan!"
 			},
+			"images": [
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117134831474127879/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117134831474127879/original",
+					"alt": "GIF by Giphy QA"
+				}
+			],
 			"visibility": "public"
 		},
 		{
@@ -6993,6 +7028,13 @@
 			"content": {
 				"text": "@zachleat @AlesandroOrtiz It's a battle I wage in my mind all the time. It's not settled. Good slashes died out there maaaaaan!"
 			},
+			"images": [
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117134831474127879/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117134831474127879/original",
+					"alt": "GIF by Giphy QA"
+				}
+			],
 			"visibility": "public"
 		},
 		{
@@ -7133,6 +7175,13 @@
 			"content": {
 				"text": "@zachleat @AlesandroOrtiz It's a battle I wage in my mind all the time. It's not settled. Good slashes died out there maaaaaan!"
 			},
+			"images": [
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117134831474127879/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117134831474127879/original",
+					"alt": "GIF by Giphy QA"
+				}
+			],
 			"visibility": "public"
 		},
 		{
@@ -7273,6 +7322,13 @@
 			"content": {
 				"text": "@zachleat @AlesandroOrtiz It's a battle I wage in my mind all the time. It's not settled. Good slashes died out there maaaaaan!"
 			},
+			"images": [
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117134831474127879/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117134831474127879/original",
+					"alt": "GIF by Giphy QA"
+				}
+			],
 			"visibility": "public"
 		},
 		{
@@ -8107,6 +8163,13 @@
 			"content": {
 				"text": "@zachleat Jokes on you, I can make whatever OG image I want with any text I want :P"
 			},
+			"images": [
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117241623108459143/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117241623108459143/original",
+					"alt": "I DUNNO, I’M NOT YOUR DAD"
+				}
+			],
 			"visibility": "public"
 		},
 		{
@@ -9573,6 +9636,18 @@
 			"content": {
 				"text": "@robb @zachleat \n\nGlorious!"
 			},
+			"images": [
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117281712548858779/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117281712548858779/original",
+					"alt": "Full screen window mode of Zen browser, with the EmojiStorm page open by Robb Knight where I've clicked the button to spawn in new falling emoji so much, there is random emoji as far as the eye can see."
+				},
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117281712654259869/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117281712654259869/original",
+					"alt": "Tab processes view in Zen Browser, showing the impact of me running so many spawned animated emoji on the EmojiStorm page by Robb Knight - 1GB memory usage and CPU up to 130%"
+				}
+			],
 			"in-reply-to": "https://social.lol/@robb/117281392360050491",
 			"visibility": "public"
 		},
@@ -9657,6 +9732,13 @@
 			"content": {
 				"text": "@zachleat “Sensitive content” hee hee hee"
 			},
+			"images": [
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117281408686955739/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117281408686955739/original",
+					"alt": "A screenshot of the replied-to toot, with the image embedded into the preview card heavily blurred and a “Sensitive content - Click to show” banner in the middle of it."
+				}
+			],
 			"visibility": "public"
 		},
 		{
@@ -9780,6 +9862,13 @@
 			"content": {
 				"text": "@zachleat pleased with how easy it was to sloppily erase parts of the letters in the title here."
 			},
+			"images": [
+				{
+					"thumb": "https://fediverse.zachleat.com/media_proxy/117282032265445147/small",
+					"url": "https://fediverse.zachleat.com/media_proxy/117282032265445147/original",
+					"alt": "\"Iconfall\" movie poster showing a gigantic Font Awesome icon crashing into the Earth while astronauts watch \n\n(actually a sloppy edit of the poster for Moonfall: https://en.wikipedia.org/wiki/Moonfall_(film))"
+				}
+			],
 			"visibility": "public"
 		},
 		{

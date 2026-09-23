@@ -37,7 +37,7 @@ function htmlToText(html = "") {
 }
 
 // Matches webmention.io’s jf2 shape so the templates keep working
-export function toEntry({ url, target, property, author, published, received, text, parent, visibility }) {
+export function toEntry({ url, target, property, author, published, received, text, images, otherMedia, parent, visibility }) {
 	let entry = {
 		type: "entry",
 		author: { type: "card", ...author },
@@ -51,6 +51,13 @@ export function toEntry({ url, target, property, author, published, received, te
 	};
 	if(text) {
 		entry.content = { text };
+	}
+	if(images?.length) {
+		entry.images = images;
+	}
+	// Media we can’t show, e.g. video or audio
+	if(otherMedia) {
+		entry["other-media"] = true;
 	}
 	if(parent) {
 		entry["in-reply-to"] = parent;
@@ -99,6 +106,12 @@ function getBlueskyLinks(post) {
 		...(post.record.facets || []).flatMap(facet => facet.features.map(feature => feature.uri)),
 	].filter(Boolean);
 }
+
+const getBlueskyImages = post => {
+	let embed = post.embed?.media || post.embed;
+	return (embed?.images || []).map(({ thumb, fullsize, alt }) => ({ thumb, url: fullsize, alt }));
+};
+const hasBlueskyOtherMedia = post => /^app\.bsky\.embed\.video/.test((post.embed?.media || post.embed)?.$type);
 
 async function getBlueskyPosts(since) {
 	let posts = [];
@@ -156,10 +169,10 @@ async function getBlueskyMentions(since) {
 				entries.push(toEntry({ url: `${postUrl}#reposted_by_${actor.did}`, target, property: "repost-of", author: blueskyAuthor(actor) }));
 			}
 			for(let quote of quotes) {
-				entries.push(toEntry({ url: blueskyPostUrl(quote), target, property: "mention-of", author: blueskyAuthor(quote.author), published: quote.record.createdAt, received: quote.indexedAt, text: quote.record.text }));
+				entries.push(toEntry({ url: blueskyPostUrl(quote), target, property: "mention-of", author: blueskyAuthor(quote.author), published: quote.record.createdAt, received: quote.indexedAt, text: quote.record.text, images: getBlueskyImages(quote), otherMedia: hasBlueskyOtherMedia(quote) }));
 			}
 			for(let { reply, parent } of replies) {
-				entries.push(toEntry({ url: blueskyPostUrl(reply), target, property: "in-reply-to", author: blueskyAuthor(reply.author), published: reply.record.createdAt, received: reply.indexedAt, text: reply.record.text, parent }));
+				entries.push(toEntry({ url: blueskyPostUrl(reply), target, property: "in-reply-to", author: blueskyAuthor(reply.author), published: reply.record.createdAt, received: reply.indexedAt, text: reply.record.text, images: getBlueskyImages(reply), otherMedia: hasBlueskyOtherMedia(reply), parent }));
 			}
 		}
 	}
@@ -185,6 +198,12 @@ const mastodonAuthor = account => ({
 });
 
 const getMastodonLinks = status => [status.card?.url, ...[...status.content.matchAll(/href="([^"]+)"/g)].map(match => decode(match[1]))];
+
+const isMastodonImage = media => media.type === "image" || media.type === "gifv";
+const getMastodonImages = status => (status.media_attachments || [])
+	.filter(isMastodonImage)
+	.map(media => ({ thumb: media.preview_url, url: media.url, alt: media.description || "" }));
+const hasMastodonOtherMedia = status => (status.media_attachments || []).some(media => !isMastodonImage(media));
 
 async function getMastodonPosts(since) {
 	let posts = [];
@@ -237,7 +256,7 @@ async function getMastodonMentions(since) {
 			}
 			let replyUrls = Object.fromEntries(replies.map(reply => [reply.id, reply.url]));
 			for(let reply of replies) {
-				entries.push(toEntry({ url: reply.url, target, property: "in-reply-to", author: mastodonAuthor(reply.account), published: reply.created_at, received: reply.created_at, text: htmlToText(reply.content), parent: replyUrls[reply.in_reply_to_id], visibility: reply.visibility }));
+				entries.push(toEntry({ url: reply.url, target, property: "in-reply-to", author: mastodonAuthor(reply.account), published: reply.created_at, received: reply.created_at, text: htmlToText(reply.content), images: getMastodonImages(reply), otherMedia: hasMastodonOtherMedia(reply), parent: replyUrls[reply.in_reply_to_id], visibility: reply.visibility }));
 			}
 		}
 	}

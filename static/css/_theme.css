@@ -626,8 +626,7 @@ a.syndication-card:is(:link, :visited):is(:hover, :focus-visible) {
 	align-items: center;
 	gap: .5em;
 }
-.syndication-card-avatar,
-.syndication-card-avatar[width][height] {
+.syndication-card-avatar {
 	width: 2.25em;
 	height: 2.25em;
 	border-radius: 50%;

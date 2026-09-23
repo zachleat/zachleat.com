@@ -25,8 +25,24 @@
     {%- if webmention.published %}{% elsif webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}
-    {{ webmention.content.text | escape | truncate | webmentionMentionPills: webmention.isNested | replace: "????", missingEmoji }}
+    {{ webmention.content.text | escape | truncate: 500 | webmentionMentionPills: webmention.isNested | replace: "????", missingEmoji }}
   </p></div>
+  {% endif %}
+
+  {% if webmention['other-media'] and webmention['content-hidden'] != true %}
+  <div class="static-comments-msg static-comments-other-media"><p><em>Includes media only visible on {{ webmention | webmentionPlatformName }}.</em></p></div>
+  {% endif %}
+
+  {% if webmention.images.size > 0 %}
+  <div class="static-comments-photos">
+    {%- for image in webmention.images %}
+    <label class="static-comments-photo">
+      <input type="checkbox" class="sr-only">
+      <img src="{{ image.thumb | escape }}" alt="{{ image.alt | escape }}" loading="lazy" decoding="async" eleventy:ignore>
+      <span class="static-comments-photo-reveal">Show image</span>
+    </label>
+    {%- endfor %}
+  </div>
   {% endif %}
 
   {% if showTarget %}
