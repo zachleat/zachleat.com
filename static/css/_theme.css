@@ -380,8 +380,8 @@ h5,
 		.body-grid {
 			--body-grid-gap: 2rem;
 			--body-grid-rail: 14rem;
-			/* Fixed so the rail sits in the same spot on every template */
-			--body-grid-main-max: 82.75rem;
+			/* Text width plus post padding (23px each side), shared so the rail sits in the same spot on every template */
+			--body-grid-main-max: calc(var(--z-width-list) + 2.875rem);
 			display: grid;
 			/* Equal outer gutters center the main column and rail together */
 			grid-template-areas:
