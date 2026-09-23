@@ -2,7 +2,7 @@ import Fetch from "@11ty/eleventy-fetch";
 import { getTargets, toEntry } from "./social.js";
 
 // Skips submissions nobody noticed
-const MIN_SCORE = 3;
+const MIN_SCORE = 1;
 
 // Every Lobsters submission of a site url, paginated by domain
 export default async function getLobstersMentions() {

@@ -267,15 +267,16 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter('webmentionPlatformName', getPlatformName);
 
-	// My own social posts that share a url (only the earliest per platform)
+	// My own social posts that share a url (only the earliest per platform) and story submissions
 	eleventyConfig.addFilter('webmentionSyndication', (webmentions, url, includeStories = true) => {
 		let seenPlatforms = new Set();
 		return (webmentions?.mentions?.[url] || [])
-			.filter(entry => entry['wm-property'] === "syndication" && (entry['story-points'] == null || includeStories && entry['story-comments'] > 0))
-			// Hacker News and Lobsters last
-			.sort((a, b) => (a['story-points'] != null) - (b['story-points'] != null) || getDate(a) - getDate(b))
+			.filter(entry => entry['wm-property'] === "syndication" && (entry['story-points'] == null || includeStories && (entry['story-comments'] > 0 || getPlatformName(entry) === "Hacker News")))
+			// Hacker News and Lobsters last, most popular submission first
+			.sort((a, b) => (a['story-points'] != null) - (b['story-points'] != null) || (b['story-points'] ?? 0) + (b['story-comments'] ?? 0) - (a['story-points'] ?? 0) - (a['story-comments'] ?? 0) || getDate(a) - getDate(b))
 			.filter(entry => {
-				if(!isOriginalPoster(entry)) {
+				// Only the most popular of duplicate Hacker News submissions
+				if(!isOriginalPoster(entry) && getPlatformName(entry) !== "Hacker News") {
 					return true;
 				}
 				let platform = getPlatformName(entry);

@@ -2,7 +2,7 @@ import Fetch from "@11ty/eleventy-fetch";
 import { getTargets, toEntry } from "./social.js";
 
 // Skips submissions nobody noticed
-const MIN_POINTS = 5;
+const MIN_POINTS = 1;
 
 // Every Hacker News submission of a site url, full history in one request
 export default async function getHackerNewsMentions() {
