@@ -96,7 +96,7 @@ classes:
 	{%- assign syndications = webmentions | webmentionSyndication: syndicationUrl, false %}
 	{%- if syndications.size > 0 %}
 	<div class="syndication">
-	<p class="syndication-hed"><em>{% icon "fas:comments" %}Comment on {{ syndications | webmentionPlatformNames }}</em></p>
+	<p class="syndication-hed"><em>{% icon "fas:comments" %}Comment on…</em></p>
 	<div class="syndication-cards">
 		{%- for post in syndications %}
 		{%- assign platformIcon = post | webmentionPlatformIcon %}

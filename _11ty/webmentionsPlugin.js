@@ -254,16 +254,6 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter('webmentionPlatformName', getPlatformName);
 
-	// e.g. "Bluesky, Mastodon, or Hacker News"
-	eleventyConfig.addFilter('webmentionPlatformNames', (webmentions = []) => {
-		let found = new Set(webmentions.map(getPlatformName));
-		let names = [...Object.values(platformNames), "the web"].filter(name => found.has(name));
-		if(names.length < 3) {
-			return names.join(" or ");
-		}
-		return `${names.slice(0, -1).join(", ")}, or ${names.at(-1)}`;
-	});
-
 	// My own social posts that share a url (only the earliest per platform)
 	eleventyConfig.addFilter('webmentionSyndication', (webmentions, url, includeHackerNews = true) => {
 		let seenPlatforms = new Set();
