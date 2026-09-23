@@ -101,9 +101,6 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	padding-inline: .75em;
 	background-color: var(--static-comments-row-bg);
 }
-.static-comments > .static-comments-reply:nth-child(even) {
-	--static-comments-row-bg: color-mix(in srgb, var(--z-color-bg-alt) 50%, var(--z-color-bg));
-}
 .static-comments-msg p:first-child {
 	margin-top: 0;
 }
