@@ -207,6 +207,10 @@ export default function(eleventyConfig) {
 			if(group && group.time - time > GROUP_WINDOW) {
 				group = openGroups[target] = undefined;
 			}
+			// Back-to-back rows for the same post are combined
+			if(!group && items.at(-1)?.target === target) {
+				group = openGroups[target] = items.at(-1);
+			}
 
 			if(group) {
 				group.webmentions.push(webmention);
