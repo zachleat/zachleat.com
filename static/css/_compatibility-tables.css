@@ -28,4 +28,8 @@ table .maybe {
 table .emulate {
 	background-color: #40A662;
 }
+table :is(.yes, .no, .maybe, .emulate) code {
+	color: inherit;
+	background-color: rgba(0,0,0,.2);
+}
 

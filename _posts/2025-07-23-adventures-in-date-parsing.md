@@ -80,7 +80,10 @@ I did the next sensible thing and looked at a few alternatives:
 
 The next in line to the throne was clearly `dayjs`, which is small on disk and in bundle size. Unfortunately I found it to be inaccurate: `dayjs` fails about 80 of the 228 tests in the test suite I’m using moving forward.
 
-<div class="callout"><p>As an aside, this search has made me tempted to ask: do we need to keep Dual publishing packages? I prefer ESM over CJS but maybe just pick one?</p></div>
+<div class="callout">
+{% icon "fa:circle-info" %}
+<p>As an aside, this search has made me tempted to ask: do we need to keep Dual publishing packages? I prefer ESM over CJS but maybe just pick one?</p>
+</div>
 
 ## Breaking Changes
 

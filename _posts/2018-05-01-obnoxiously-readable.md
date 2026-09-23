@@ -144,7 +144,8 @@ If your screen is wide enough (perhaps—say—a viewport size of 3440px), you c
 
 This is likely just the beginning of a long string of changes I’ll make to the super-wide layout for my blog.
 
-<div class="callout">
+<div class="callout callout-update">
+    {% icon "fa:clock-rotate-left" %}
     <h3>Update</h3>
     <p>One hefty drawback to this approach (using only <code>vw</code> units to scale text) noted by <a href="https://twitter.com/andrew__romanov/status/992482401053036544">Andrew Romanov</a> is that the text no longer zooms appropriately with page zoom! He proposes using <code>calc</code> with a combination of fixed and viewport units for at least some text zooming. Read the <a href="https://fvsch.com/code/css-locks/">The Math of CSS Locks</a> for more on that approach.</p>
 </div>
