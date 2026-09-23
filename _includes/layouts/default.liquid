@@ -94,7 +94,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 			<ul class="rail-syndication list-flush">
 			{%- for post in railSyndications %}
 				{%- assign platformIcon = post | webmentionPlatformIcon %}
-				<li><a href="{{ post.url }}" class="rail-syndication-card{% if platformIcon == "fab:hacker-news" %} rail-syndication-card--hn{% endif %}" target="_blank" rel="noopener noreferrer">{% icon platformIcon %}<strong>{{ post | webmentionPlatformName }}</strong>{% if post['story-points'] %}{% if post['story-comments'] > post['story-points'] %}<span>{{ post['story-comments'] }} comment{% if post['story-comments'] != 1 %}s{% endif %}</span>{% else %}<span>{{ post['story-points'] }} upvote{% if post['story-points'] != 1 %}s{% endif %}</span>{% endif %}{% else %}<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>{% endif %}</a></li>
+				<li><a href="{{ post.url }}" class="rail-syndication-card{% if platformIcon == "fab:hacker-news" %} rail-syndication-card--hn{% endif %}" target="_blank" rel="noopener noreferrer">{% icon platformIcon %}<strong>{{ post | webmentionPlatformName }}</strong>{% if post['story-points'] %}{% if post['story-comments'] > post['story-points'] %}<span>{{ post['story-comments'] }} comment{% if post['story-comments'] != 1 %}s{% endif %}</span>{% elsif post['story-points'] > 1 %}<span>{{ post['story-points'] }} upvotes</span>{% endif %}{% elsif post['social-replies'] != nil %}<span>{{ post['social-replies'] }} repl{% if post['social-replies'] == 1 %}y{% else %}ies{% endif %}</span>{% else %}<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>{% endif %}</a></li>
 			{%- endfor %}
 			</ul>
 		</div>

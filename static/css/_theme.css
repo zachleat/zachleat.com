@@ -629,7 +629,7 @@ a.syndication-card:is(:link, :visited):is(:hover, :focus-visible) {
 .syndication-card-author strong {
 	color: var(--z-color-text-heading);
 }
-.syndication-card-author time {
+.syndication-card-meta {
 	font-size: .9em;
 	color: var(--z-color-text-tertiary);
 }

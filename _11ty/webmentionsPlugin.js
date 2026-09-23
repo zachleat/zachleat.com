@@ -276,7 +276,16 @@ export default function(eleventyConfig) {
 	// My own social posts that share a url (only the earliest per platform) and story submissions
 	eleventyConfig.addFilter('webmentionSyndication', (webmentions, url, includeStories = true) => {
 		let seenPlatforms = new Set();
-		return (webmentions?.mentions?.[url] || [])
+		let entries = webmentions?.mentions?.[url] || [];
+		// All replies and mentions per platform
+		let replyCounts = {};
+		for(let entry of entries) {
+			if(entry['wm-property'] === "in-reply-to" || entry['wm-property'] === "mention-of") {
+				let platform = getPlatformName(entry);
+				replyCounts[platform] = (replyCounts[platform] || 0) + 1;
+			}
+		}
+		return entries
 			.filter(entry => entry['wm-property'] === "syndication" && (entry['story-points'] == null || includeStories && (entry['story-comments'] > 0 || getPlatformName(entry) === "Hacker News")))
 			// Hacker News and Lobsters last, most popular submission first
 			.sort((a, b) => (a['story-points'] != null) - (b['story-points'] != null) || (b['story-points'] ?? 0) + (b['story-comments'] ?? 0) - (a['story-points'] ?? 0) - (a['story-comments'] ?? 0) || getDate(a) - getDate(b))
@@ -291,7 +300,8 @@ export default function(eleventyConfig) {
 				}
 				seenPlatforms.add(platform);
 				return true;
-			});
+			})
+			.map(entry => ["Mastodon", "Bluesky"].includes(getPlatformName(entry)) ? { ...entry, 'social-replies': replyCounts[getPlatformName(entry)] || 0 } : entry);
 	});
 
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {

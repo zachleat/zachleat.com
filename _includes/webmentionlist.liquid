@@ -15,7 +15,7 @@
 				<img class="syndication-card-avatar" src="{{ post.author.photo | eleventyImageServiceAvatar }}" alt="" width="36" height="36" loading="lazy" decoding="async" eleventy:ignore>
 				<span class="syndication-card-author">
 					<strong>{{ post.author.name | htmlEntities }}</strong>
-					<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>
+					<span class="syndication-card-meta"><time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>{% if post['social-replies'] != nil %} · {{ post['social-replies'] }} repl{% if post['social-replies'] == 1 %}y{% else %}ies{% endif %}{% endif %}</span>
 				</span>
 				<span class="syndication-card-platform">{% icon platformIcon %}<span class="a11y-only">{{ post | webmentionPlatformName }}</span></span>
 			</span>

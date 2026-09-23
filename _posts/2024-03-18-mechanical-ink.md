@@ -9,7 +9,7 @@ metadata:
     type: podcast
   youtubeId: dIJbS6unSxg
 external_url: 'https://schalkneethling.substack.com/p/unpacking-the-challenges-and-opportunities'
-external_url_screenshotmode: opengraph
+external_url_screenshotmode: none
 medialength: 73 min
 ---
 > In this episode of the Mechanical Ink podcast, host Schalk Neethling sits down with Zach Leatherman, the creator of #11ty (among other open-source tools) in a conversation that spans the crucial aspects of web development.
