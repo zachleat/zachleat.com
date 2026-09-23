@@ -12,8 +12,7 @@ del .z-avatar {
 
 /* Accessibility and Cut the Mustard */
 .sr-only,
-.a11y-only,
-.posts .subhed.filter-category--hide {
+.a11y-only {
 	position: absolute;
 	height: 1px;
 	width: 1px;
@@ -1198,6 +1197,12 @@ table-saw :is(th, td) {
 	display: flex;
 	gap: 1em;
 	align-items: center;
+	position: sticky;
+	inset-block-start: 0;
+	z-index: 1;
+	padding-block: .5em 1rem;
+	margin-block-end: -.5rem;
+	background-image: linear-gradient(var(--z-color-bg) calc(100% - 1rem), transparent);
 }
 .subhed-year {
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
@@ -1207,8 +1212,8 @@ table-saw :is(th, td) {
 .subhed-count {
 	color: var(--z-color-text-secondary);
 }
-/* First visible year row (no visible siblings before it) */
-.posts .subhed:not(li:not(.filter-category--hide) ~ *) {
+/* First visible year (no visible siblings before it) */
+.posts-year:not(.posts-year:not(.filter-category--hide) ~ *) .subhed {
 	margin-top: 0;
 }
 .posts img,
@@ -1279,7 +1284,7 @@ a[href]:is(:focus, :hover) .project_img {
 	}
 }
 @media (min-width: 61.25em) { /* 980px */
-	.posts .subhed:not(li:not(.filter-category--hide) ~ *) {
+	.posts-year:not(.posts-year:not(.filter-category--hide) ~ *) .subhed {
 		margin-top: 18px;
 	}
 }
@@ -1314,7 +1319,7 @@ a[href]:is(:focus, :hover) .project_img {
 @media (min-width: 45em) { /* 720px */
 	/* List of posts, icons align right */
 	.posts:not(.posts-withimg) {
-		li:not(.filter-category--hide) {
+		li:not(.filter-category--hide, .posts-year) {
 			display: flex;
 			justify-content: space-between;
 			gap: .5em;
