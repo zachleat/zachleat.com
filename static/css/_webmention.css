@@ -57,24 +57,6 @@
     margin-bottom: 1em;
 }
 
-/* Webmention form */
-.form-webmention {
-    margin-bottom: 2rem;
-}
-.form-webmention label {
-    display: block;
-}
-.form-webmention input {
-    height: 2rem;
-}
-.form-webmention input[type="url"] {
-    width: calc(100% - 13em);
-    max-width: 30em;
-}
-.form-webmention [type="submit"] {
-    margin-left: .25em;
-    width: 12em;
-}
 /* Recent activity feed */
 .activity-feed {
 	max-width: 40em;

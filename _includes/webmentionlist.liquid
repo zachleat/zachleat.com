@@ -61,17 +61,4 @@
     </ol>
   </details>
   {% endif %}
-
-  <details>
-    <summary class="hed-h4"><strong>Shamelessly plug your related post</strong></summary>
-
-    <p>These are <a href="https://indieweb.org/Webmention">webmentions</a> via the <a href="https://indieweb.org/">IndieWeb</a> and <a href="https://webmention.io/">webmention.io</a>.</p>
-
-    <form action="https://webmention.io/www.zachleat.com/webmention" method="post" class="form-webmention">
-      <label for="form-webmention-source" class="sr-only">URL of your site:</label>
-      <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required>
-      <input type="hidden" name="target" value="https://www.zachleat.com{{ page.url }}">
-      <input type="submit" class="button" value="Send Webmention">
-    </form>
-  </details>
 </div>
