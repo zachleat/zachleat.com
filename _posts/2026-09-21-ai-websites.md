@@ -30,7 +30,7 @@ Front-end web developers have lived through a few cycles of this (seven or eight
 
 Is this cycle repeating the same playbook (on a more accelerated pace)? Certainly we’ve seen numerous recent anecdotal examples of software becoming _less_ reliable over time (GitHub is the most recent scapegoat I’ve seen, but on my read they seem to be a second-order victim more than anything).
 
-_(Seems like a great time to be in the Monitoring/Status Page business)._
+_(Seems like a great time to be in the Monitoring/Status Page business)_
 
 <iframe class="iframe--card" src="https://www.speedlify.dev/site/www-perplexity-ai/filmstrip/" title="perplexity.ai filmstrip" width="100%" height="360" style="border: 0" loading="lazy"></iframe>
 
