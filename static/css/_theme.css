@@ -338,10 +338,13 @@ h5,
 		margin-inline: calc(-1 * var(--z-page-gutter));
 	}
 	@media (min-width: 61.25em) { /* 980px */
-		.tmpl-page .fullwidth-poster img,
 		.tmpl-page .content-grid > .fullwidth img {
 			width: calc(100% + var(--z-page-gutter));
 			margin-inline-end: 0;
+		}
+		.tmpl-page .fullwidth-poster img {
+			width: 100%;
+			margin-inline: 0;
 		}
 	}
 
