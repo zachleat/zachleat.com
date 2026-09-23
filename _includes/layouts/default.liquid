@@ -78,10 +78,10 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 		<nav class="rail-nextprev-wrap" aria-label="More posts">
 			<ul class="rail-nextprev list-flush">
 			{%- if railOlderPost %}
-				<li><span class="rail-nextprev-label">{% icon "fas:arrow-left" %}Older</span><a href="{{ railOlderPost.url }}" class="rail-nextprev-card"><strong class="text-ellipsis-multi">{{ railOlderPost.data.title }}</strong></a></li>
+				<li><span class="rail-nextprev-label">{% icon "fas:arrow-left" %}Older</span><a href="{{ railOlderPost.url }}" class="rail-nextprev-card"><strong class="text-ellipsis-multi">{{ railOlderPost.data.title }}</strong><time datetime="{{ railOlderPost.date | dateToISO }}">{{ railOlderPost.date | readableDate: "dd LLL yyyy" }}</time></a></li>
 			{%- endif %}
 			{%- if railNewerPost %}
-				<li class="rail-nextprev-newer"><span class="rail-nextprev-label">Newer{% icon "fas:arrow-right" %}</span><a href="{{ railNewerPost.url }}" class="rail-nextprev-card"><strong class="text-ellipsis-multi">{{ railNewerPost.data.title }}</strong></a></li>
+				<li class="rail-nextprev-newer"><span class="rail-nextprev-label">Newer{% icon "fas:arrow-right" %}</span><a href="{{ railNewerPost.url }}" class="rail-nextprev-card"><strong class="text-ellipsis-multi">{{ railNewerPost.data.title }}</strong><time datetime="{{ railNewerPost.date | dateToISO }}">{{ railNewerPost.date | readableDate: "dd LLL yyyy" }}</time></a></li>
 			{%- else %}
 				<li class="rail-nextprev-newer" aria-hidden="true"><span class="rail-nextprev-label">Newer{% icon "fas:arrow-right" %}</span><span class="rail-nextprev-card rail-nextprev-card--skeleton"></span></li>
 			{%- endif %}

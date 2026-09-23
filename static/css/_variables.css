@@ -44,10 +44,10 @@
 	--z-color-badge-boost-text: #006000;
 	--z-color-badge-like-bg: #ffeded;
 	--z-color-badge-like-text: #880808;
-	--z-color-badge-view-bg: #e4e4f1;
-	--z-color-badge-view-text: #434574;
-	--z-color-badge-reply-bg: #edf1e4;
-	--z-color-badge-reply-text: #535100;
+	--z-color-badge-view-bg: #e0f2fe;
+	--z-color-badge-view-text: #075985;
+	--z-color-badge-reply-bg: #f1e8fb;
+	--z-color-badge-reply-text: #5b2a86;
 	--z-color-badge-archived-bg: #fffbe2;
 	--z-color-badge-archived-text: #000;
 
@@ -93,10 +93,10 @@
 		--z-color-badge-boost-text: #6fdb6f;
 		--z-color-badge-like-bg: #3d1414;
 		--z-color-badge-like-text: #ff8f8f;
-		--z-color-badge-view-bg: #26263d;
-		--z-color-badge-view-text: #b3b3e6;
-		--z-color-badge-reply-bg: #33320f;
-		--z-color-badge-reply-text: #d4d16a;
+		--z-color-badge-view-bg: #0c2f45;
+		--z-color-badge-view-text: #7cc8f2;
+		--z-color-badge-reply-bg: #2e1f45;
+		--z-color-badge-reply-text: #c9a6f5;
 		--z-color-badge-archived-bg: #4a3a0f;
 		--z-color-badge-archived-text: #fff;
 	}
@@ -138,10 +138,10 @@
 	--z-color-badge-boost-text: #6fdb6f;
 	--z-color-badge-like-bg: #3d1414;
 	--z-color-badge-like-text: #ff8f8f;
-	--z-color-badge-view-bg: #26263d;
-	--z-color-badge-view-text: #b3b3e6;
-	--z-color-badge-reply-bg: #33320f;
-	--z-color-badge-reply-text: #d4d16a;
+	--z-color-badge-view-bg: #0c2f45;
+	--z-color-badge-view-text: #7cc8f2;
+	--z-color-badge-reply-bg: #2e1f45;
+	--z-color-badge-reply-text: #c9a6f5;
 	--z-color-badge-archived-bg: #4a3a0f;
 	--z-color-badge-archived-text: #fff;
 }

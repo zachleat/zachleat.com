@@ -244,8 +244,22 @@ a:is(.rail-syndication-card, .rail-nextprev-card):is(:link, :visited):is(:hover,
 .rail-nextprev-newer .rail-nextprev-label {
 	align-self: flex-end;
 }
+a.rail-nextprev-card:is(:link, :visited) {
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-between;
+	gap: .25em;
+}
+.rail-nextprev-card time {
+	font-size: .85em;
+	color: var(--z-color-text-tertiary);
+}
+.rail-nextprev-newer .rail-nextprev-card :is(strong, time) {
+	text-align: end;
+}
 .rail-nextprev-card strong {
 	--ellipsis-lines: 3;
+	min-height: 3lh;
 	font-weight: 400;
 }
 /* Keep brand colors instead of the rail’s link color */
