@@ -5,7 +5,7 @@ import lodash from 'lodash';
 import Fetch from "@11ty/eleventy-fetch";
 
 import getBaseUrl from "../_includes/getBaseUrl.js";
-import getSocialMentions from "../_11ty/webmentions/social.js";
+import getSocialMentions, { getPrivateBlueskyAuthors } from "../_11ty/webmentions/social.js";
 import getHackerNewsMentions from "../_11ty/webmentions/hackernews.js";
 import archive from "../_11ty/webmentions/archive.json" with { type: "json" };
 
@@ -59,6 +59,10 @@ async function fetchWebmentions() {
 	// Live data wins over archived copies of the same like, repost, or reply
 	let liveKeys = new Set(live.map(entry => `${entry.url} ${entry["wm-target"]}`));
 	let results = [...archive.filter(entry => !liveKeys.has(`${entry.url} ${entry["wm-target"]}`)), ...live];
+
+	// Keep the mention but not the content of unlisted Mastodon posts or Bluesky authors who hide from logged-out viewers
+	let privateAuthors = await getPrivateBlueskyAuthors(results);
+	results = results.map(entry => entry.visibility && entry.visibility !== "public" || privateAuthors.has(entry.author?.url) ? { ...entry, content: undefined, "content-hidden": true } : entry);
 
 	if(process.env.ELEVENTY_RUN_MODE === "build") {
 		console.log( `[zachleat.com] Found ${results.length} total webmentions (${live.length} live).` );

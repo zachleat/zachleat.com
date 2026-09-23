@@ -18,6 +18,8 @@
   </div>
 
   {% if webmention['wm-property'] == "repost-of" or webmention['wm-property'] == "like-of" or webmention['wm-property'] == "bookmark-of" %}
+  {% elsif webmention['content-hidden'] %}
+  <div class="static-comments-msg"><p><em>This post is only visible on {{ webmention | webmentionPlatformName }}.</em></p></div>
   {% elsif webmention.content.text.length <= 5000 %}
   <div class="static-comments-msg p-content{% if webmention.content.text.length > 5000 %} static-comments-msg-long{% endif %}"><p>
     {%- if webmention.published %}{% elsif webmention.url != "" %}

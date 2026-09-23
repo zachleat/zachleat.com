@@ -36,7 +36,7 @@ function htmlToText(html = "") {
 }
 
 // Matches webmention.io’s jf2 shape so the templates keep working
-export function toEntry({ url, target, property, author, published, received, text, parent }) {
+export function toEntry({ url, target, property, author, published, received, text, parent, visibility }) {
 	let entry = {
 		type: "entry",
 		author: { type: "card", ...author },
@@ -53,6 +53,9 @@ export function toEntry({ url, target, property, author, published, received, te
 	}
 	if(parent) {
 		entry["in-reply-to"] = parent;
+	}
+	if(visibility) {
+		entry.visibility = visibility;
 	}
 	return entry;
 }
@@ -233,11 +236,44 @@ async function getMastodonMentions(since) {
 			}
 			let replyUrls = Object.fromEntries(replies.map(reply => [reply.id, reply.url]));
 			for(let reply of replies) {
-				entries.push(toEntry({ url: reply.url, target, property: "in-reply-to", author: mastodonAuthor(reply.account), published: reply.created_at, received: reply.created_at, text: htmlToText(reply.content), parent: replyUrls[reply.in_reply_to_id] }));
+				entries.push(toEntry({ url: reply.url, target, property: "in-reply-to", author: mastodonAuthor(reply.account), published: reply.created_at, received: reply.created_at, text: htmlToText(reply.content), parent: replyUrls[reply.in_reply_to_id], visibility: reply.visibility }));
 			}
 		}
 	}
 	return byPost;
+}
+
+/* Bluesky authors who hide from logged-out viewers */
+
+export async function getPrivateBlueskyAuthors(entries) {
+	let byHandle = {};
+	for(let entry of entries) {
+		let match = entry.content?.text && entry.author?.url?.match(/^https:\/\/bsky\.app\/profile\/([^/]+)$/);
+		if(match) {
+			byHandle[match[1]] = entry.author.url;
+		}
+	}
+
+	let handles = Object.keys(byHandle);
+	let privateUrls = new Set();
+	for(let i = 0; i < handles.length; i += 25) {
+		let url = new URL(`${BLUESKY_API}/app.bsky.actor.getProfiles`);
+		for(let handle of handles.slice(i, i + 25)) {
+			url.searchParams.append("actors", handle);
+		}
+		try {
+			let { profiles } = await Fetch(url.toString(), { type: "json", duration: OLD });
+			for(let profile of profiles) {
+				let authorUrl = byHandle[profile.handle] || byHandle[profile.did];
+				if(authorUrl && profile.labels?.some(label => label.val === "!no-unauthenticated")) {
+					privateUrls.add(authorUrl);
+				}
+			}
+		} catch(e) {
+			console.warn("[zachleat.com] Unable to fetch Bluesky profiles:", e.message);
+		}
+	}
+	return privateUrls;
 }
 
 /* Social posts older than the rolling window are kept in a source controlled store (written by local builds) */
@@ -272,6 +308,21 @@ export default async function getSocialMentions({ days, knownDates = {} }) {
 			}
 			updated[postUrl] = entries;
 		}
+	}
+
+	// Stored Mastodon replies from before visibility was recorded
+	for(let [postUrl, entries] of Object.entries(updated)) {
+		if(!postUrl.startsWith("https://fediverse.zachleat.com/") || !entries.some(entry => entry["wm-property"] === "in-reply-to" && !entry.visibility)) {
+			continue;
+		}
+		try {
+			let visibilities = Object.fromEntries((await getMastodonReplies(postUrl.split("/").pop(), OLD)).map(reply => [reply.url, reply.visibility]));
+			for(let entry of entries) {
+				if(entry["wm-property"] === "in-reply-to" && visibilities[entry.url]) {
+					entry.visibility = visibilities[entry.url];
+				}
+			}
+		} catch(e) {}
 	}
 
 	updated = Object.fromEntries(Object.entries(updated).sort(([a], [b]) => a.localeCompare(b)));
