@@ -460,14 +460,12 @@ h5,
 }
 
 @media (min-width: 61.25em) { /* 980px */
-	.tmpl-page .content-main,
-	.tmpl-page .content-footer {
+	.tmpl-page .content-main {
 		font-size: 1.3125em; /* 21px /16 */
 	}
 }
 @media (min-width: 75em) { /* 1200px */
-	.tmpl-page .content-main,
-	.tmpl-page .content-footer {
+	.tmpl-page .content-main {
 		font-size: 1.4375em; /* 23px /16 */
 	}
 }
