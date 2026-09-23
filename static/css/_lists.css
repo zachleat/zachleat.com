@@ -44,6 +44,12 @@ dl.nextprev {
 		gap: 0.5em 20%;
 	}
 }
+.appendix dl.nextprev {
+	padding: .5em;
+	border: 1px solid var(--z-color-border);
+	border-radius: .35em;
+	background-color: var(--z-color-bg-alt);
+}
 dl.nextprev dt {
 	display: flex;
 	align-items: center;

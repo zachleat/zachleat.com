@@ -58,7 +58,7 @@
 	{%- if appendix == "post" %}{% capture ogPreviewSource %}{% ogImageSource page %}{% endcapture %}{% endif %}
 	{%- if ogPreviewSource != blank %}
 		<div id="opengraph-preview" class="rail-opengraph share hide-singlecol">
-			<div class="top5"><a href="/opengraph/?page={{ page.url | url_encode }}">Open Graph</a></div>
+			<div class="top5"><a href="/opengraph/?page={{ page.url | url_encode }}">Open Graph for this Page</a></div>
 			<img class="share-img" src="{{ ogPreviewSource }}" decoding="async" loading="lazy" width="1200" height="630" alt="Open Graph image for {{ title }}" eleventy:ignore>
 		</div>
 	{%- endif %}
