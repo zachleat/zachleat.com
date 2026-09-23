@@ -231,6 +231,13 @@ export default function(eleventyConfig) {
 		return items;
 	});
 
+	// My own social posts that share a url
+	eleventyConfig.addFilter('webmentionSyndication', (webmentions, url) => {
+		return (webmentions?.mentions?.[url] || [])
+			.filter(entry => entry['wm-property'] === "syndication")
+			.sort((a, b) => getDate(a) - getDate(b));
+	});
+
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
 		if( !allowedTypes ) {
 			// all types

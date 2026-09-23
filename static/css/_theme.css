@@ -383,10 +383,10 @@ h5,
 			display: grid;
 			/* Equal outer gutters center the main column and rail together */
 			grid-template-areas:
-				". main rail . hamburger"
-				"footer footer footer footer footer";
+				". main rail hamburger"
+				"footer footer footer footer";
 			grid-template-rows: 1fr auto;
-			grid-template-columns: 1fr auto var(--body-grid-rail) 1fr 2.5rem;
+			grid-template-columns: 1fr auto var(--body-grid-rail) 1fr;
 			grid-column-gap: var(--body-grid-gap);
 			grid-row-gap: 0;
 			padding-top: 1rem;
@@ -421,9 +421,16 @@ h5,
 			padding-inline: var(--z-page-gutter);
 		}
 		.rail { grid-area: rail; }
-		.hamburger { grid-area: hamburger; }
+		.hamburger {
+			grid-area: hamburger;
+			justify-self: end;
+		}
+		/* Above the sticky .rail-header */
+		.hamburger infinity-burger {
+			z-index: 2;
+		}
 	}
-	@media (min-width: 90em) { /* 1440px */
+	@media (min-width: 80em) { /* 1280px */
 		.body-grid {
 			--body-grid-rail: 18rem;
 		}
@@ -487,6 +494,76 @@ h5,
 	display: flex;
 	flex-wrap: wrap;
 	gap: .5em 1em;
+}
+/* My social posts that share this post */
+.syndication {
+	margin-block: 1em;
+}
+.syndication-hed {
+	--icon-color-override: currentColor;
+	margin-block: 0 .5em;
+}
+.syndication-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .75em;
+}
+a.syndication-card:is(:link, :visited) {
+	--ellipsis-lines: 3;
+	display: flex;
+	flex-direction: column;
+	gap: .35em;
+	flex: 1 1 16em;
+	min-width: 0;
+	max-width: 24em;
+	padding: .6em .75em;
+	border: 1px solid var(--z-color-border);
+	border-radius: var(--z-border-radius-2);
+	background-color: var(--z-color-bg-alt);
+	color: var(--z-color-text);
+	font-size: .8em;
+	line-height: 1.4;
+	text-decoration: none;
+}
+a.syndication-card:is(:link, :visited):is(:hover, :focus-visible) {
+	border-color: var(--z-color-text-tertiary);
+	color: var(--z-color-text);
+}
+/* Long URLs in post text */
+.syndication-card-text {
+	overflow-wrap: anywhere;
+}
+.syndication-card-hed {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+}
+.syndication-card-avatar,
+.syndication-card-avatar[width][height] {
+	width: 2.25em;
+	height: 2.25em;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.syndication-card-author {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+.syndication-card-author strong {
+	color: var(--z-color-text-heading);
+}
+.syndication-card-author time {
+	font-size: .9em;
+	color: var(--z-color-text-tertiary);
+}
+.syndication-card-platform {
+	margin-inline-start: auto;
+	color: var(--z-color-icon-muted);
+}
+.syndication-card-platform .z-icon {
+	width: 1.25em;
+	height: auto;
 }
 
 /* App specific */

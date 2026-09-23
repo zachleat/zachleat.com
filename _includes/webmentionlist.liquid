@@ -8,13 +8,7 @@
   <div class="webmentions__facepile">
     <div class="hed-h3{% if repostsSize > 11 or likesSize > 11 %} webmentions__facepile__hedlg{% endif %}">{{ repostsSize }} Repost{% if repostsSize != 1 %}s{% endif %}</div>
     {%- for webmention in reposts -%}
-      {%- if webmention.url != "" -%}
-      <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-      {%- endif -%}
-      {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
-      {%- if webmention.url != "" -%}
-      </a>
-      {%- endif -%}
+      <span>{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}</span>
     {%- endfor -%}
   </div>
   {% endif %}
@@ -23,13 +17,7 @@
   <div class="webmentions__facepile">
     <div class="hed-h3{% if repostsSize > 11 or likesSize > 11 %} webmentions__facepile__hedlg{% endif %}">{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</div>
     {%- for webmention in likes -%}
-      {%- if webmention.url != "" -%}
-      <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-      {%- endif -%}
-      {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
-      {%- if webmention.url != "" -%}
-      </a>
-      {%- endif -%}
+      <span>{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}</span>
     {%- endfor -%}
   </div>
   {% endif %}

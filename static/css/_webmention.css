@@ -18,7 +18,7 @@
 .webmentions__facepile__hedlg {
     min-width: 180px;
 }
-.webmentions__facepile > a {
+.webmentions__facepile > :is(a, span) {
     margin-left: -12px;
     width: var(--webmention-avatar-size);
     height: var(--webmention-avatar-size);
@@ -102,8 +102,8 @@
 .activity-feed-item {
 	--activity-feed-bg: var(--z-color-bg);
 	display: flex;
-	align-items: center;
-	gap: .5em;
+	flex-direction: column;
+	gap: .125em;
 	padding-block: .25em;
 	padding-inline: .25em;
 	border-radius: var(--z-border-radius-1);
@@ -119,11 +119,8 @@
 .activity-feed-faces {
 	display: flex;
 	isolation: isolate;
-	flex-wrap: wrap;
 	flex-shrink: 0;
-	min-width: 1.1em;
-	/* Four overlapping avatars per line */
-	max-width: 3.35em;
+	margin-inline-start: auto;
 }
 .activity-feed-face,
 .activity-feed-face[width][height] {
@@ -137,7 +134,7 @@
 	box-shadow: 0 0 0 2px var(--activity-feed-bg);
 }
 .activity-feed-face + .activity-feed-face {
-	margin-inline-start: -.35em;
+	margin-inline-start: -.2em;
 }
 /* Earlier avatars stack on top */
 .activity-feed-face {
@@ -150,25 +147,35 @@
 .activity-feed-face:nth-child(5) { z-index: 3; }
 .activity-feed-face:nth-child(6) { z-index: 2; }
 .activity-feed-face:nth-child(7) { z-index: 1; }
-.activity-feed-face:nth-child(4n + 1) {
-	margin-inline-start: 0;
+/* Stands in for the avatars that don’t fit */
+.activity-feed-more {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--z-color-text-tertiary);
 }
-.activity-feed-face:nth-child(n + 5) {
-	margin-block-start: -.0625em;
+.activity-feed-more .z-icon {
+	width: .7em;
+	height: auto;
 }
-.activity-feed-body {
-	flex-grow: 1;
-	min-width: 0;
-	font-size: 90%;
-}
+.activity-feed-hed,
 .activity-feed-meta {
 	display: flex;
-	align-items: baseline;
 	column-gap: .5em;
 	min-width: 0;
 }
+.activity-feed-hed {
+	align-items: baseline;
+	font-size: 90%;
+}
+.activity-feed-meta {
+	align-items: center;
+}
 .activity-feed-summary {
+	/* Contains the absolutely positioned .a11y-only text so overflow clips it */
+	position: relative;
 	margin: 0;
+	font-size: 90%;
 	min-width: 0;
 	white-space: nowrap;
 	overflow: hidden;
@@ -189,7 +196,7 @@
 	color: var(--z-color-badge-reply-text);
 }
 .activity-feed-target {
-	display: block;
+	min-width: 0;
 	font-weight: 600;
 	white-space: nowrap;
 	overflow: hidden;

@@ -92,6 +92,32 @@ classes:
 
 <hr>
 <article class="content-grid-sibling">
+	{%- capture syndicationUrl %}{{ page.url | absoluteUrl }}{% endcapture %}
+	{%- assign syndications = webmentions | webmentionSyndication: syndicationUrl %}
+	{%- if syndications.size > 0 %}
+	{%- assign syndicationUrls = syndications | map: "url" | join: " " %}
+	<div class="syndication">
+	<p class="syndication-hed"><em>{% icon "fas:comments" %}Comment on {% if syndicationUrls contains "bsky.app" %}Bluesky{% if syndicationUrls contains "/@" %} or {% endif %}{% endif %}{% if syndicationUrls contains "/@" %}Mastodon{% endif %}</em></p>
+	<div class="syndication-cards">
+		{%- for post in syndications %}
+		{%- assign platformIcon = post | webmentionPlatformIcon %}
+		<a href="{{ post.url }}" class="syndication-card u-syndication" target="_blank" rel="noopener noreferrer">
+			<span class="syndication-card-hed">
+				<img class="syndication-card-avatar" src="{{ post.author.photo | eleventyImageServiceAvatar }}" alt="" width="36" height="36" loading="lazy" decoding="async" eleventy:ignore>
+				<span class="syndication-card-author">
+					<strong>{{ post.author.name | htmlEntities }}</strong>
+					<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>
+				</span>
+				<span class="syndication-card-platform">{% icon platformIcon %}<span class="a11y-only">{% if platformIcon contains "bluesky" %}Bluesky{% else %}Mastodon{% endif %}</span></span>
+			</span>
+			{%- if post.content.text %}
+			<span class="syndication-card-text text-ellipsis-multi">{{ post.content.text | escape }}</span>
+			{%- endif %}
+		</a>
+		{%- endfor %}
+	</div>
+	</div>
+	{%- endif %}
 	<p class="post-metadata">
 		{%- if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
 		<em>{% icon "fas:tag" %}Tags:

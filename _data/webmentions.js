@@ -4,62 +4,59 @@ import { DateTime } from "luxon";
 import lodash from 'lodash';
 import Fetch from "@11ty/eleventy-fetch";
 
-import siteData from "./site.json" with { type: "json" };
 import getBaseUrl from "../_includes/getBaseUrl.js";
+import getSocialMentions from "../_11ty/webmentions/social.js";
+import archive from "../_11ty/webmentions/archive.json" with { type: "json" };
 
-// Configuration Parameters
-const { domain } = siteData;
-const API_ORIGIN = 'https://webmention.io/api/mentions.jf2';
+// Social posts from the last N days are refetched on every build
+const LIVE_DAYS = 60;
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
 const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "2d" : "2h";
+const PER_PAGE = 1000;
 
-async function getWebmentionPage(pageNumber = 0) {
-	// https://github.com/aaronpk/webmention.io#api
-	// TODO move to use since_id instead of since date
-	let url = `${API_ORIGIN}?domain=${domain}&token=${TOKEN}&per-page=9999&page=${pageNumber}`;
-	// if (since) {
-	// 	url += `&since=${since}`;
-	// }
-
-	return Fetch(url, {
-		type: "json",
-		duration: CACHE_DURATION,
-	});
-}
-
-async function fetchWebmentions() {
-	if (!domain || domain === 'myurl.com') {
-		// If we dont have a domain name, abort
-		console.warn(
-			'[zachleat.com] unable to fetch webmentions: no domain specified in metadata.'
-		);
-		return [];
-	}
-	if (!TOKEN) {
-		// If we dont have a domain access token, abort
-		console.warn(
-			'[zachleat.com] unable to fetch webmentions: no access token specified in environment.'
-		);
+// Webmentions received after the archive
+async function fetchNewWebmentionIo() {
+	if(!TOKEN) {
+		console.warn('[zachleat.com] unable to fetch webmentions: no access token specified in environment.');
 		return [];
 	}
 
+	let sinceId = Math.max(...archive.map(entry => entry["wm-id"]));
 	let results = [];
-	let keepFetching = true;
-	let page = 0;
-	while(keepFetching) {
-		let feed = await getWebmentionPage(page);
-		let resultCount = feed?.children?.length || 0;
-		results.push(...feed?.children || []);
-
-		if(resultCount === 0 || resultCount < 9999) {
-			keepFetching = false;
+	for(let page = 0;; page++) {
+		let feed = await Fetch(`https://webmention.io/api/mentions.jf2?domain=www.zachleat.com&token=${TOKEN}&since_id=${sinceId}&per-page=${PER_PAGE}&page=${page}`, {
+			type: "json",
+			duration: CACHE_DURATION,
+		});
+		let children = feed?.children || [];
+		results.push(...children);
+		if(children.length < PER_PAGE) {
 			break;
 		}
-		page++;
 	}
 
+	return results;
+}
+
+const isBridgy = entry => entry["wm-source"]?.startsWith("https://brid.gy/");
+
+async function fetchWebmentions() {
+	let recent = await fetchNewWebmentionIo().catch(e => {
+		console.warn("[zachleat.com] Unable to fetch webmention.io:", e);
+		return [];
+	});
+
+	// Bridgy copies only supply dates for likes and reposts (the social APIs don’t have them)
+	let knownDates = Object.fromEntries([...archive, ...recent.filter(isBridgy)].map(entry => [entry.url, entry["wm-received"]]));
+	let live = await getSocialMentions({ days: LIVE_DAYS, knownDates });
+	live.push(...recent.filter(entry => !isBridgy(entry)));
+
+	// Live data wins over archived copies of the same like, repost, or reply
+	let liveKeys = new Set(live.map(entry => `${entry.url} ${entry["wm-target"]}`));
+	let results = [...archive.filter(entry => !liveKeys.has(`${entry.url} ${entry["wm-target"]}`)), ...live];
+
 	if(process.env.ELEVENTY_RUN_MODE === "build") {
-		console.log( `[zachleat.com] Found ${results.length} total webmentions.` );
+		console.log( `[zachleat.com] Found ${results.length} total webmentions (${live.length} live).` );
 	}
 
 	return results;
@@ -92,8 +89,9 @@ export default async function({ eleventy }) {
 
 	// IF YOU’RE WANTING TO FILTER A HOST OUT OF BEING LISTED IN WEBMENTIONS
 	// DO THIS IN .eleventy.js -> webmentionsForUrl filter
-	return {
+	// Frozen so Eleventy shares one object across pages instead of copying it (keeps filter caches warm)
+	return Object.freeze({
 		count: totalCount,
 		mentions,
-	};
+	});
 }

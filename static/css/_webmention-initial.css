@@ -1,6 +1,6 @@
 .webmentions {
 	--webmention-avatar-size: 3.5rem;
 }
-.webmentions__facepile > a {
+.webmentions__facepile > :is(a, span) {
 	width: var(--webmention-avatar-size);
 }
