@@ -217,11 +217,17 @@ a:is(.rail-syndication-card, .rail-nextprev-card):is(:link, :visited):is(:hover,
 	flex-direction: column;
 	gap: .25em;
 }
-.rail-nextprev li > a {
+.rail-nextprev li > :is(a, .rail-nextprev-card--skeleton) {
 	flex-grow: 1;
 	box-sizing: content-box;
 	min-height: 3lh;
 	line-height: 1.3;
+}
+.rail-nextprev-card--skeleton {
+	padding: .35em .6em;
+	border: 1px dashed var(--z-color-border);
+	border-radius: var(--z-border-radius-2);
+	font-size: .9em;
 }
 .rail-nextprev-label {
 	display: inline-flex;
