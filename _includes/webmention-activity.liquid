@@ -3,15 +3,9 @@
 {%- capture targetLink %}<a href="{{ targetPath }}" class="activity-feed-target">{% if targetPost.data.title %}{{ targetPost.data.title }}{% else %}{{ targetPath }}{% endif %}</a>{% endcapture %}
 <li class="activity-feed-item">
 	<div class="activity-feed-faces">
-	{%- assign faceLimit = 8 %}
-	{%- if activity.webmentions.size > 8 %}{% assign faceLimit = 7 %}{% endif %}
-	{%- for webmention in activity.webmentions limit: faceLimit %}
+	{%- for webmention in activity.webmentions limit: 8 %}
 		{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "activity-feed-face" %}
 	{%- endfor %}
-	{%- if activity.webmentions.size > 8 %}
-		{%- assign moreCount = activity.webmentions.size | minus: 7 %}
-		<span class="activity-feed-face activity-feed-face-more" title="{{ moreCount }} more">{% icon "fas:ellipsis" %}<span class="a11y-only">{{ moreCount }} more</span></span>
-	{%- endif %}
 	</div>
 	<div class="activity-feed-body">
 		{{ targetLink }}

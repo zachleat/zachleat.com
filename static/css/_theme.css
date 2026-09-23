@@ -379,13 +379,14 @@ h5,
 
 		.body-grid {
 			--body-grid-gap: 2rem;
+			--body-grid-rail: 14rem;
 			display: grid;
 			/* Equal outer gutters center the main column and rail together */
 			grid-template-areas:
 				". main rail . hamburger"
 				"footer footer footer footer footer";
 			grid-template-rows: 1fr auto;
-			grid-template-columns: 1fr auto 14rem 1fr 2.5rem;
+			grid-template-columns: 1fr auto var(--body-grid-rail) 1fr 2.5rem;
 			grid-column-gap: var(--body-grid-gap);
 			grid-row-gap: 0;
 			padding-top: 1rem;
@@ -421,6 +422,11 @@ h5,
 		}
 		.rail { grid-area: rail; }
 		.hamburger { grid-area: hamburger; }
+	}
+	@media (min-width: 90em) { /* 1440px */
+		.body-grid {
+			--body-grid-rail: 18rem;
+		}
 	}
 }
 

@@ -150,16 +150,6 @@
 .activity-feed-face:nth-child(5) { z-index: 3; }
 .activity-feed-face:nth-child(6) { z-index: 2; }
 .activity-feed-face:nth-child(7) { z-index: 1; }
-.activity-feed-face-more {
-	display: grid;
-	place-items: center;
-	background-color: var(--z-color-border-light);
-	color: var(--z-color-text-secondary);
-}
-.activity-feed-face-more .z-icon {
-	margin: 0;
-	font-size: .7em;
-}
 .activity-feed-face:nth-child(4n + 1) {
 	margin-inline-start: 0;
 }
