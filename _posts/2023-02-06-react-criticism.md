@@ -2,8 +2,9 @@
 title: "A Historical Reference of React Criticism"
 external_icon_url: https://react.dev/
 ---
-<div class="card" data-demo-label="">
-	<p><strong>Update 3 December 2025</strong>: <a href="https://jsx.lol/"><code>jsx.lol</code></a> from <a href="https://dbushell.com/">David Bushell</a> seems to be carrying the torch forward here cataloging newer content!</p>
+<div class="callout callout-update">
+	{% icon "fa:clock-rotate-left" %}
+	<p><strong>Update December 3, 2025</strong>: <a href="https://jsx.lol/"><code>jsx.lol</code></a> from <a href="https://dbushell.com/">David Bushell</a> seems to be carrying the torch forward here cataloging newer content!</p>
 </div>
 
 There have been a number of criticisms levied at the React project over the years, some of them handled and some of them still wavering in the wind. In this post, I’ll summarize the ones that are most prominent in my memory as a way of maintaining a record (primarily for my own use but maybe you’ll find it useful too). If you have others, [please send them my way](https://fediverse.zachleat.com/@zachleat)!
@@ -56,7 +57,8 @@ _{{ "20 Apr 2015" | timePosted }} ago:_
 
 > Well, it turned out that React here at least worked (not on Android 2.3, only on webOS), but it delivers the worst performance compared with underscore, paperclip, or my DOM version.
 
-<div class="card" data-demo-label="Updated">
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
 
 _**Update February 7, 2023**: this entry was added._
 
@@ -76,7 +78,8 @@ _{{ "3 Jul 2015" | timePosted }} ago:_
 
 > I really enjoyed using React, but I wouldn't personally use it on an app I'm building; I just don't think it would be fast enough.
 
-<div class="card" data-demo-label="Updated">
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
 
 _**Update February 7, 2023**: this entry was added._
 
@@ -92,7 +95,8 @@ Prior to this change it declared:
 
 > “React abstracts away the DOM, giving a simpler programming model and better performance.”—`https://facebook.github.io./react/`
 
-<div class="card" data-demo-label="Updated">
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
 
 _**Update February 6, 2023**: this entry was added._
 
@@ -106,7 +110,8 @@ _{{ "16 Jul 2016" | timePosted }} ago:_
 
 > If you are using or considering using React in a project you might want to consult a lawyer. Because of the patent clause you are not allowed to do anything that constitutes as competing with Facebook. If you do take legal actions or in other ways challenge Facebook, your license to use React is immediately revoked. Your license is also revoked if you have any legal disputes if you have legal disputes with any other company using React.
 
-<div class="card" data-demo-label="Updated">
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
 
 _**Update February 7, 2023**: this entry was added._
 
@@ -144,7 +149,8 @@ Facebook [reversed the decision](https://engineering.fb.com/2017/09/22/web/relic
 The patent clause remained in place for many other open source projects at Facebook (and all prior versions of React).
 
 
-<div class="card" data-demo-label="Updated">
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
 
 _**Update February 7, 2023**: some addition timeline context was added._
 
@@ -172,7 +178,8 @@ which included a photo of a talk slide that read:
 
 > By getting rid of React and moving to plain JavaScript, we saw a 50% reduction in our Time to Interactive (TTI) metric.
 
-<div class="card" data-demo-label="Updated">
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
 
 _**Update March 16, 2023**: This section was added._
 
@@ -215,11 +222,12 @@ We might also remember that these frameworks are recommended by the React team o
 
 Here are a few baseline bundle sizes:
 
-* Next.js (v13) was [90 kB (compressed), 272 kB (uncompressed)](https://www.zachleat.com/twitter/1584995586918731776/) (as of 25 Oct 2022)
-* Remix (v1.5.1) was [67.7 kB (compressed)](https://www.zachleat.com/twitter/1534588439580090368/) (as of 8 Jun 2022)
-* Next.js (v12) was [72.2 kB (compressed), 228 kB (uncompressed)](https://www.zachleat.com/twitter/1468419834501337088) (as of 7 Dec 2021)
+* Next.js (v13) was [90 kB (compressed), 272 kB (uncompressed)](https://www.zachleat.com/twitter/1584995586918731776/) (as of October 25, 2022)
+* Remix (v1.5.1) was [67.7 kB (compressed)](https://www.zachleat.com/twitter/1534588439580090368/) (as of June 8, 2022)
+* Next.js (v12) was [72.2 kB (compressed), 228 kB (uncompressed)](https://www.zachleat.com/twitter/1468419834501337088) (as of December 7, 2021)
 
-<div class="card" data-demo-label="Updated">
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
 
 _**Update February 7, 2023**: Added a bit of history on Single Page Applications._
 
@@ -286,7 +294,8 @@ Kent lists a host of problems with Vercel’s Next.js in [_Why I Won’t Use Nex
 * [The self-fulfilling prophecy of React—Josh Collinsworth](https://joshcollinsworth.com/blog/self-fulfilling-prophecy-of-react) _(July 27, 2022)_
 * [Will Serving Real HTML Content Make A Website Faster? Let’s Experiment!—Scott Jehl](https://blog.webpagetest.org/posts/will-html-content-make-site-faster/) _(September 21, 2022)_
 
-<div class="card" data-demo-label="Updated">
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
 
 _**Update February 7, 2023**: Added resources [from Timo Tijhof](https://fosstodon.org/@krinkle/109823277305506614) and [Thomas Michael Semmler](https://indieweb.social/@nachtfunke)!_
 
@@ -296,7 +305,8 @@ _**Update February 7, 2023**: Added resources [from Timo Tijhof](https://fosstod
 
 In this post I didn’t mention the [rise and fall of CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)—an approach [created by the React team](https://speakerdeck.com/vjeux/react-css-in-js) in November 2014 and further popularized in the React community before quietly [walking it back almost 7 years later](https://github.com/reactwg/react-18/discussions/110)).
 
-<div class="card" data-demo-label="Updated">
+<div class="callout callout-update">
+{% icon "fa:clock-rotate-left" %}
 
 _**Update February 6, 2023**: a thank you to Mayank who clarified some history on CSS-in-JS, and you can [read more on their blog post](https://blog.mayank.co/is-css-in-js-actually-bad#heading-closing-thoughts)._
 
