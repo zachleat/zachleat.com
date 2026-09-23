@@ -12,7 +12,7 @@ There have been a number of criticisms levied at the React project over the year
 
 _{{ "12 Dec 2014" | timePosted }} ago:_
 
-{% originalPostEmbed "https://www.filamentgroup.com/lab/mv-initial-load-times/" %}
+{% originalPostEmbed "https://www.filamentgroup.com/lab/mv-initial-load-times/", false, "opengraph" %}
 
 [Researching the Performance costs of JavaScript MVC Frameworks—John Bender](https://www.filamentgroup.com/lab/mv-initial-load-times/) _(December 12, 2014)_
 
@@ -154,7 +154,7 @@ _**Update February 7, 2023**: some addition timeline context was added._
 
 _{{ "24 Oct 2017" | timePosted }} ago:_
 
-{% originalPostEmbed "https://github.com/facebook/react/issues/11347" %}
+{% originalPostEmbed "https://github.com/react/react/issues/11347", false, "opengraph" %}
 
 Rob Dodson filed [RFC: Plan for custom element attributes/properties in React ~~17~~, ~~18~~, 19 #11347](https://github.com/facebook/react/issues/11347), noting compatibility issues between Web Components and React.
 
