@@ -266,6 +266,7 @@ h5,
 	border-bottom: 1px solid var(--z-color-border);
 }
 .content-main,
+.content-appendix,
 .content-footer {
 	text-align: left;
 	padding-block: 0;
@@ -274,11 +275,30 @@ h5,
 	font-size: 1.1875em; /* 19px /16 */
 	line-height: 1.65;
 }
+.content-appendix,
 .content-footer {
+	--z-color-bg-muted: color-mix(in srgb, var(--z-color-bg-alt) 40%, var(--z-color-bg));
 	margin-block-start: 3em;
 	padding-block: 3em;
 	border-block-start: 1px solid var(--z-color-border);
-	background-color: color-mix(in srgb, var(--z-color-bg-alt) 40%, var(--z-color-bg));
+	background-color: var(--z-color-bg-muted);
+}
+.content-appendix + .content-footer {
+	margin-block-start: 0;
+}
+/* Sidebar only */
+.content-appendix-bare {
+	--z-color-bg-muted: var(--z-color-bg);
+	background-color: transparent;
+	border-block-start: 0;
+}
+.content-appendix .webmentions__facepile > :is(a, span) {
+	border-color: var(--z-color-bg-muted);
+}
+/* Five rows of avatars (each has a 2px border) */
+.webmentions__facepile--rows {
+	max-height: calc(5 * (var(--webmention-avatar-size) + 4px));
+	overflow-y: clip;
 }
 
 @media (min-width: 25em) { /* 400px */
@@ -386,8 +406,9 @@ h5,
 			/* Equal outer gutters center the main column and rail together */
 			grid-template-areas:
 				". main rail hamburger"
+				"appendix appendix appendix appendix"
 				"footer footer footer footer";
-			grid-template-rows: 1fr auto;
+			grid-template-rows: 1fr auto auto;
 			grid-template-columns: 1fr minmax(0, var(--body-grid-main-max)) var(--body-grid-rail) 1fr;
 			grid-column-gap: var(--body-grid-gap);
 			grid-row-gap: 0;
@@ -402,16 +423,49 @@ h5,
 		.body-grid > .content-main {
 			grid-area: main;
 		}
+		.content-appendix,
 		.content-footer {
-			grid-area: footer;
 			padding-inline: 0;
 			display: grid;
 			grid-template-columns: subgrid;
 		}
-		/* Starts at the main column, ends at the page edge */
-		.content-footer > .footer {
-			grid-column: 2 / -1;
+		.content-appendix { grid-area: appendix; }
+		.content-footer { grid-area: footer; }
+		.content-appendix > .appendix {
+			grid-column: main;
 			padding-inline: var(--z-page-gutter);
+		}
+		/* Rail font size, not the post body size */
+		.content-appendix > .rail-activity {
+			grid-column: rail;
+			align-self: start;
+			position: sticky;
+			top: 1rem;
+			margin-block-start: 0;
+			font-size: 1rem;
+		}
+		.content-appendix .activity-feed-item {
+			--activity-feed-bg: var(--z-color-bg-muted);
+		}
+		.content-footer > .footer {
+			grid-column: main;
+			padding-inline: var(--z-page-gutter);
+		}
+		.content-footer > .footer-speedlify {
+			grid-column: rail;
+			font-size: 1rem;
+			font-family: var(--z-font-webfont);
+		}
+		.footer-speedlify .top5 {
+			margin: 0 0 1em;
+			font-size: 0.875em; /* 14px /16 */
+			font-weight: 700;
+			text-transform: uppercase;
+			color: var(--z-color-text-secondary);
+		}
+		.footer-speedlify .top5 .z-icon {
+			margin-inline-start: .35em;
+			font-size: 1.15em;
 		}
 		.rail { grid-area: rail; }
 		.hamburger {
@@ -424,9 +478,8 @@ h5,
 		}
 	}
 	@media (min-width: 75em) { /* 1200px */
-		/* Main column only, at the list page width */
+		/* At the list page width */
 		.content-footer > .footer {
-			grid-column: main;
 			justify-self: center;
 			width: 100%;
 			max-width: calc(var(--z-width-list) + 2 * var(--z-page-gutter));
@@ -460,12 +513,14 @@ h5,
 }
 
 @media (min-width: 61.25em) { /* 980px */
-	.tmpl-page .content-main {
+	.tmpl-page .content-main,
+	.tmpl-page .content-appendix {
 		font-size: 1.3125em; /* 21px /16 */
 	}
 }
 @media (min-width: 75em) { /* 1200px */
-	.tmpl-page .content-main {
+	.tmpl-page .content-main,
+	.tmpl-page .content-appendix {
 		font-size: 1.4375em; /* 23px /16 */
 	}
 }
@@ -587,7 +642,9 @@ body {
 	color: var(--z-color-link-visited);
 }
 .content-main :link,
-.content-main :visited {
+.content-main :visited,
+.content-appendix :link,
+.content-appendix :visited {
 	color: inherit;
 }
 :link:active,
@@ -708,6 +765,9 @@ h3,
 }
 h3 {
 	margin-top: 2em;
+}
+summary.hed-h3 {
+	margin-block: 0 1em;
 }
 h3 + p {
 	margin-top: 0;

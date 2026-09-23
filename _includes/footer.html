@@ -42,4 +42,13 @@
 			</div>
 		</form>
 	</div>
+	{%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
+	{%- if speedlify[urlWithOrigin] %}
+	<div class="footer-speedlify hide-singlecol">
+		<div class="top5"><a href="https://www.speedlify.dev/">Speedlify{% icon "fas:forward-fast" %}</a></div>
+		<is-land on:visible import="/static/speedlify2-score.js">
+			<speedlify2-score speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify2-score>
+		</is-land>
+	</div>
+	{%- endif %}
 </footer>

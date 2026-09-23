@@ -1,0 +1,34 @@
+<aside class="content-appendix{% unless appendix %} content-appendix-bare{% endunless %}" data-pagefind-ignore>
+{%- if appendix %}
+	<div class="appendix">
+	{%- if webmentionsSummary %}
+		{%- assign recentPeople = webmentions | webmentionsRecentPeople: 85 %}
+		{%- if recentPeople.size > 0 %}
+		<div class="webmentions content-grid-sibling">
+			<div class="webmentions__facepile webmentions__facepile--rows">
+				<div class="hed-h3 webmentions__facepile__hedlg">Recent Activity</div>
+				{%- for webmention in recentPeople %}
+				{%- if webmention.url %}<a href="{{ webmention.url }}">{% else %}<span>{% endif %}{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}{% if webmention.url %}</a>{% else %}</span>{% endif %}
+				{%- endfor %}
+			</div>
+		</div>
+		{%- endif %}
+	{%- endif %}
+	{%- if appendix == "post" %}
+		<div id="opengraph-preview" class="share content-grid-sibling">
+			<details>
+				<summary class="hed-h3">Open Graph</summary>
+				<p>This is what will show up when you share this post on Social Media:</p>
+				<img class="share-img" src="{% ogImageSource page %}" decoding="async" loading="lazy" width="1200" height="630" alt="{{ title }}" eleventy:ignore>
+				<p>How did you do this? <a href="/web/automatic-opengraph/">I automated my Open Graph images.</a> (<a href="/opengraph/?page={{ page.url | url_encode }}">Peer behind the curtain at the test page</a>)</p>
+			</details>
+		</div>
+	{%- endif %}
+	{%- unless disableComments %}
+		{%- capture absoluteUrl -%}{{ page.url | absoluteUrl }}{%- endcapture -%}
+		{% include "webmentionlist", absoluteUrl: absoluteUrl %}
+	{%- endunless %}
+	</div>
+{%- endif %}
+	{%- include "recent-activity.liquid" %}
+</aside>

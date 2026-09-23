@@ -1,0 +1,11 @@
+{%- assign recentActivity = webmentions | webmentionsRecentActivity: 4 %}
+{%- if recentActivity.size > 0 %}
+	<div class="rail-activity hide-singlecol">
+		<div class="top5">Recent Activity</div>
+		<ol class="activity-feed list-flush favicon-optin">
+		{%- for activity in recentActivity %}
+			{% include "webmention-activity.liquid" %}
+		{%- endfor %}
+		</ol>
+	</div>
+{%- endif %}

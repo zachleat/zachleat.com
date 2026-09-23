@@ -1,4 +1,26 @@
 <div class="webmentions content-grid-sibling" id="webmentions" data-pagefind-ignore>
+  {%- assign replies = webmentions | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
+  {% assign disqusCommentSize = 0 %}
+  {% if disqus %}{% assign disqusCommentSize = disqus.commentCount %}{% endif %}
+  {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}
+  {% if repliesSize > 0 %}
+  <details id="comments">
+    <summary class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}</summary>
+    <ol class="static-comments static-comments-webmentions favicon-optin">
+      {%- assign threads = replies | webmentionThreads -%}
+      {% for webmention in threads %}
+        {% include "webmention" %}
+      {% endfor %}
+    </ol>
+
+    <ol class="static-comments favicon-optin">
+    {% for comment in disqus.comments %}
+      {% include "comment-entry.html" %}
+    {% endfor %}
+    </ol>
+  </details>
+  {% endif %}
+
   {% comment %}Note thie combines both repost and mention, similar to how Twitter now combines retweet and quote tweet{% endcomment %}
   {%- assign reposts = webmentions | webmentionsForUrl: absoluteUrl, "repost-of,mention-of" -%}
   {%- assign repostsSize = reposts | size -%}
@@ -38,27 +60,5 @@
       {%- endif -%}
     {%- endfor -%}
   </div>
-  {% endif %}
-
-  {%- assign replies = webmentions | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
-  {% assign disqusCommentSize = 0 %}
-  {% if disqus %}{% assign disqusCommentSize = disqus.commentCount %}{% endif %}
-  {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}
-  {% if repliesSize > 0 %}
-  <details id="comments">
-    <summary><strong>{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}</strong></summary>
-    <ol class="static-comments static-comments-webmentions favicon-optin">
-      {%- assign threads = replies | webmentionThreads -%}
-      {% for webmention in threads %}
-        {% include "webmention" %}
-      {% endfor %}
-    </ol>
-
-    <ol class="static-comments favicon-optin">
-    {% for comment in disqus.comments %}
-      {% include "comment-entry.html" %}
-    {% endfor %}
-    </ol>
-  </details>
   {% endif %}
 </div>

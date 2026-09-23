@@ -7,6 +7,8 @@ modules:
   - "/static/heading-anchors.js"
   - "/static/js/time-difference.js"
 tocSidebar: true
+appendix: false
+enableWebmentions: true
 ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-awesome-pro?ref=43ttgb
 ---
 <a href="#skiplink-content" id="skiplink-top" class="skiplink skiplink-fn" data-pagefind-ignore>Skip to Content</a>
@@ -51,16 +53,6 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 					</div>
 				{%- endif %}
 
-				{%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
-				{%- if speedlify[urlWithOrigin] %}
-					<div>
-						<div class="top5 top5-speedlify"><a href="https://www.speedlify.dev/">Speedlify{% icon "fas:forward-fast" %}</a></div>
-						<is-land on:visible import="/static/speedlify2-score.js">
-							<speedlify2-score speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify2-score>
-						</is-land>
-					</div>
-				{%- endif %}
-
 				{%- if hidePostsInSidebar != true %}
 					<div>
 						<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire-flame-curved" %}</a></div>
@@ -74,17 +66,6 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 			</div>
 		</nav>
 	</aside>
-{%- assign recentActivity = webmentions | webmentionsRecentActivity: 3 %}
-{%- if recentActivity.size > 0 %}
-	<div class="rail-activity hide-singlecol">
-		<div class="top5">Recent Activity</div>
-		<ol class="activity-feed list-flush favicon-optin">
-		{%- for activity in recentActivity %}
-			{% include "webmention-activity.liquid" %}
-		{%- endfor %}
-		</ol>
-	</div>
-{%- endif %}
 {%- capture railSyndicationUrl %}{{ page.url | absoluteUrl }}{% endcapture %}
 {%- assign railSyndications = webmentions | webmentionSyndication: railSyndicationUrl %}
 {%- if railSyndications.size > 0 or tocSidebar %}
@@ -115,6 +96,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 <main class="content-main" data-role="main" id="skiplink-content">
 	{{ content }}
 </main><!-- /.content -->
+{% include "appendix.liquid" %}
 {% include "footer.html" %}
 
 <div>

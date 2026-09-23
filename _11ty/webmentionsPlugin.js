@@ -183,7 +183,7 @@ export default function(eleventyConfig) {
 	// Newest sitewide activity (excluding my own), with nearby webmentions on the same post grouped together
 	// Cached per webmentions object, this runs on every page
 	let recentActivityCache = new WeakMap();
-	eleventyConfig.addFilter('webmentionsRecentActivity', (webmentions, limit = 8) => {
+	const getRecentActivity = (webmentions, limit = 8) => {
 		if(!webmentions) {
 			return [];
 		}
@@ -255,6 +255,12 @@ export default function(eleventyConfig) {
 
 		recentActivityCache.set(webmentions, { ...recentActivityCache.get(webmentions), [limit]: items });
 		return items;
+	};
+	eleventyConfig.addFilter('webmentionsRecentActivity', getRecentActivity);
+
+	// Newest sitewide webmentions, one per person
+	eleventyConfig.addFilter('webmentionsRecentPeople', (webmentions, limit = 40) => {
+		return getRecentActivity(webmentions, limit).flatMap(group => group.webmentions).slice(0, limit);
 	});
 
 	const platformNames = {

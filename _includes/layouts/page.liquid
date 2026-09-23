@@ -1,7 +1,6 @@
 ---
 layout: layouts/default.liquid
 tmpl: page
-disableComments: true
 ---
 <article class="h-entry">
 	<h1 class="p-name primary-title{% if removeTitle %} sr-only{% endif %}{% if smalltitle %} primary-title-smalltitle{% endif %}{% if primaryTitleExemptWidth %} primary-title-exempt{% endif %}">{{ title }}</h1>
@@ -17,7 +16,3 @@ disableComments: true
 	{% include "about.html" %}
 </article>
 {% endif %}
-{% unless disableComments %}
-	{%- capture absoluteUrl -%}{{ page.url | absoluteUrl }}{%- endcapture -%}
-	{% include "webmentionlist", absoluteUrl: absoluteUrl %}
-{% endunless %}
