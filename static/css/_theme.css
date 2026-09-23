@@ -380,13 +380,15 @@ h5,
 		.body-grid {
 			--body-grid-gap: 2rem;
 			--body-grid-rail: 14rem;
+			/* Fixed so the rail sits in the same spot on every template */
+			--body-grid-main-max: 82.75rem;
 			display: grid;
 			/* Equal outer gutters center the main column and rail together */
 			grid-template-areas:
 				". main rail hamburger"
 				"footer footer footer footer";
 			grid-template-rows: 1fr auto;
-			grid-template-columns: 1fr auto var(--body-grid-rail) 1fr;
+			grid-template-columns: 1fr minmax(0, var(--body-grid-main-max)) var(--body-grid-rail) 1fr;
 			grid-column-gap: var(--body-grid-gap);
 			grid-row-gap: 0;
 			padding-top: 1rem;
@@ -397,17 +399,8 @@ h5,
 			grid-column: 1 / -1;
 		}
 
-		/* Unresolved em values resolve against each element’s own font size */
-		.tmpl-page .body-grid {
-			--body-grid-main-max: calc(56.52173913043em + 1.5rem);
-		}
-		.tmpl-list .body-grid {
-			--body-grid-main-max: calc(var(--z-width-list) + 1.5rem);
-		}
-
 		.body-grid > .content-main {
 			grid-area: main;
-			max-width: var(--body-grid-main-max, none);
 		}
 		.content-footer {
 			grid-area: footer;
@@ -428,6 +421,15 @@ h5,
 		/* Above the sticky .rail-header */
 		.hamburger infinity-burger {
 			z-index: 2;
+		}
+	}
+	@media (min-width: 75em) { /* 1200px */
+		/* Main column only, at the list page width */
+		.content-footer > .footer {
+			grid-column: main;
+			justify-self: center;
+			width: 100%;
+			max-width: calc(var(--z-width-list) + 2 * var(--z-page-gutter));
 		}
 	}
 	@media (min-width: 80em) { /* 1280px */
