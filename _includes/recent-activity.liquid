@@ -1,4 +1,4 @@
-{%- assign recentActivity = webmentions | webmentionsRecentActivity: 4 %}
+{%- assign recentActivity = webmentions | webmentionsRecentActivity: 4, trafficSpikes %}
 {%- if recentActivity.size > 0 %}
 	<div class="rail-activity hide-singlecol">
 		<div class="top5">Recent Activity</div>

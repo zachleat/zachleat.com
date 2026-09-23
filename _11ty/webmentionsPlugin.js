@@ -180,14 +180,15 @@ export default function(eleventyConfig) {
 		}
 	};
 
-	// Newest sitewide activity (excluding my own), with nearby webmentions on the same post grouped together
+	// Newest sitewide activity (excluding my own), with nearby webmentions and traffic spikes on the same post grouped together
 	// Cached per webmentions object, this runs on every page
 	let recentActivityCache = new WeakMap();
-	const getRecentActivity = (webmentions, limit = 8) => {
+	const getRecentActivity = (webmentions, limit = 8, trafficSpikes = []) => {
 		if(!webmentions) {
 			return [];
 		}
-		let cached = recentActivityCache.get(webmentions)?.[limit];
+		let cacheKey = `${limit}:${trafficSpikes.length}`;
+		let cached = recentActivityCache.get(webmentions)?.[cacheKey];
 		if(cached) {
 			return cached;
 		}
@@ -195,21 +196,22 @@ export default function(eleventyConfig) {
 		let entries = Object.entries(webmentions?.mentions || {})
 			.flatMap(([target, list]) => list.map(webmention => ({ target, webmention, time: getDate(webmention) })))
 			.filter(({ target, webmention }) => getBaseUrl(webmention['wm-target']) === target && !isOriginalPoster(webmention) && !isBlocked(webmention))
+			.concat(trafficSpikes)
 			.sort((a, b) => b.time - a.time);
 
 		let items = [];
 		let openGroups = {};
 		let knownUrls = new Set();
 		let knownAuthors = new Set();
-		for(let { target, webmention, time } of entries) {
-			let type = webmention['wm-property'];
+		for(let { target, webmention, time, views } of entries) {
+			let type = webmention?.['wm-property'];
 			// Hacker News and Lobsters submissions count their points and comments
-			let counts = webmention['story-points'] != null ? { likes: webmention['story-points'], replies: webmention['story-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
+			let counts = views ? { views } : webmention['story-points'] != null ? { likes: webmention['story-points'], replies: webmention['story-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
 			if(!counts) {
 				continue;
 			}
 
-			if(webmention.url) {
+			if(webmention?.url) {
 				if(knownUrls.has(webmention.url)) {
 					continue;
 				}
@@ -217,7 +219,7 @@ export default function(eleventyConfig) {
 			}
 
 			// Each person shows up once
-			let author = webmention.author?.url || webmention.author?.name;
+			let author = webmention?.author?.url || webmention?.author?.name;
 			if(author) {
 				if(knownAuthors.has(author)) {
 					continue;
@@ -235,7 +237,9 @@ export default function(eleventyConfig) {
 			}
 
 			if(group) {
-				group.webmentions.push(webmention);
+				if(webmention) {
+					group.webmentions.push(webmention);
+				}
 				addCounts(group, counts);
 				continue;
 			}
@@ -248,12 +252,12 @@ export default function(eleventyConfig) {
 			}
 
 			let date = new Date(time).toISOString();
-			group = openGroups[target] = { type: "group", target, date, time, webmentions: [webmention], likes: 0, reposts: 0, bookmarks: 0, replies: 0, mentions: 0 };
+			group = openGroups[target] = { type: "group", target, date, time, webmentions: webmention ? [webmention] : [], likes: 0, reposts: 0, bookmarks: 0, replies: 0, mentions: 0, views: 0 };
 			addCounts(group, counts);
 			items.push(group);
 		}
 
-		recentActivityCache.set(webmentions, { ...recentActivityCache.get(webmentions), [limit]: items });
+		recentActivityCache.set(webmentions, { ...recentActivityCache.get(webmentions), [cacheKey]: items });
 		return items;
 	};
 	eleventyConfig.addFilter('webmentionsRecentActivity', getRecentActivity);

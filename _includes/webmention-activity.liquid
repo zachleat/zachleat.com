@@ -4,7 +4,11 @@
 <li class="activity-feed-item">
 	<div class="activity-feed-hed">
 		{{ targetLink }}
+		{%- if activity.webmentions.size > 0 %}
 		<time-difference class="activity-feed-date" live format="narrow"><time datetime="{{ activity.date }}" title="{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}">{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
+		{%- else %}
+		<time class="activity-feed-date" datetime="{{ activity.date }}">{{ activity.date | readableDateFromISO: "dd LLL" }}</time>
+		{%- endif %}
 	</div>
 	<div class="activity-feed-meta">
 		<p class="activity-feed-summary tags">
@@ -12,6 +16,7 @@
 			{%- if activity.likes > 0 %}{% capture part %}<span class="tag-social--like">{% icon "far:heart" %}{{ activity.likes }}<span class="a11y-only"> {% if activity.likes != 1 %}likes{% else %}like{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
 			{%- if activity.reposts > 0 %}{% capture part %}<span class="tag-social--boost">{% icon "fa:retweet" %}{{ activity.reposts }}<span class="a11y-only"> {% if activity.reposts != 1 %}reposts{% else %}repost{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
 			{%- if activity.bookmarks > 0 %}{% capture part %}<span class="tag-social--reply">{% icon "fas:bookmark" %}{{ activity.bookmarks }}<span class="a11y-only"> {% if activity.bookmarks != 1 %}bookmarks{% else %}bookmark{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+			{%- if activity.views > 0 %}{% capture part %}<span class="tag-social--view">{% icon "fa:eye" %}{{ activity.views | renderNumber: "0a" }}<span class="a11y-only"> {% if activity.views != 1 %}views{% else %}view{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
 			{%- assign replyTotal = activity.replies | plus: activity.mentions %}
 			{%- if replyTotal > 0 %}{% capture part %}<span class="tag-social--reply">{% icon "fas:reply-all" %}{{ replyTotal }}<span class="a11y-only"> {% if replyTotal != 1 %}replies{% else %}reply{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
 			<span class="tag tag-social">{{ parts | join: "" }}</span>
