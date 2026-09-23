@@ -73,13 +73,14 @@ export default function(eleventyConfig) {
 		return [];
 	};
 
-	// Nests my own replies under the most recent earlier comment by the first person I mention
+	// Nests replies under their parent from the social APIs, otherwise my own replies go under the most recent earlier comment by the first person I mention
 	eleventyConfig.addFilter('webmentionThreads', (webmentions = []) => {
 		let nodes = webmentions.map(entry => ({ ...entry, replies: [] }));
+		let byUrl = new Map(nodes.map(node => [node.url, node]));
 		let threads = [];
 		nodes.forEach((node, index) => {
-			let parent;
-			if(isOriginalPoster(node)) {
+			let parent = byUrl.get(node["in-reply-to"]);
+			if(!parent && isOriginalPoster(node)) {
 				let mentions = getLeadingMentions(node.content?.text);
 				for(let mention of mentions) {
 					parent = nodes.slice(0, index).reverse().find(candidate => getAuthorHandles(candidate).includes(mention));

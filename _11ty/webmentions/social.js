@@ -9,7 +9,7 @@ const BLUESKY_ACTOR = "zachleat.com";
 const MASTODON_API = "https://fediverse.zachleat.com/api/v1";
 const MASTODON_ACCOUNT_ID = "109286461031266152";
 const SITE_HOSTNAMES = ["www.zachleat.com", "zachleat.com"];
-export const STORE_URL = new URL("./social.json", import.meta.url);
+const STORE_URL = new URL("./social.json", import.meta.url);
 
 const RECENT = process.env.ELEVENTY_RUN_MODE === "serve" ? "2d" : "2h";
 const OLD = "1w";
@@ -30,13 +30,13 @@ export function getTargets(urls = []) {
 	return [...targets];
 }
 
-export function htmlToText(html = "") {
+function htmlToText(html = "") {
 	html = html.replace(/<\/p>\s*<p>/g, "\n\n").replace(/<br\s*\/?>/g, "\n");
 	return decode(sanitizeHTML(html, { allowedTags: [], allowedAttributes: {} })).trim();
 }
 
 // Matches webmention.io’s jf2 shape so the templates keep working
-export function toEntry({ url, target, property, author, published, received, text }) {
+export function toEntry({ url, target, property, author, published, received, text, parent }) {
 	let entry = {
 		type: "entry",
 		author: { type: "card", ...author },
@@ -50,6 +50,9 @@ export function toEntry({ url, target, property, author, published, received, te
 	};
 	if(text) {
 		entry.content = { text };
+	}
+	if(parent) {
+		entry["in-reply-to"] = parent;
 	}
 	return entry;
 }
@@ -77,15 +80,15 @@ async function blueskyPaginate(method, params, key, duration) {
 	return results;
 }
 
-export const blueskyAuthor = actor => ({
+const blueskyAuthor = actor => ({
 	name: actor.displayName || actor.handle,
 	photo: actor.avatar || "",
 	url: `https://bsky.app/profile/${actor.handle}`,
 });
 
-export const blueskyPostUrl = post => `https://bsky.app/profile/${post.author.handle}/post/${post.uri.split("/").pop()}`;
+const blueskyPostUrl = post => `https://bsky.app/profile/${post.author.handle}/post/${post.uri.split("/").pop()}`;
 
-export function getBlueskyLinks(post) {
+function getBlueskyLinks(post) {
 	let embed = post.embed?.media || post.embed;
 	return [
 		embed?.external?.uri,
@@ -93,7 +96,7 @@ export function getBlueskyLinks(post) {
 	].filter(Boolean);
 }
 
-export async function getBlueskyPosts(since) {
+async function getBlueskyPosts(since) {
 	let posts = [];
 	let cursor;
 	do {
@@ -110,6 +113,13 @@ export async function getBlueskyPosts(since) {
 		cursor = json.cursor;
 	} while(cursor);
 	return posts;
+}
+
+// Parent is the url of the reply being replied to (unset for direct replies to the root post)
+async function getBlueskyReplies(uri, duration) {
+	let { thread } = await bluesky("app.bsky.feed.getPostThread", { uri, depth: 1000, parentHeight: 0 }, duration);
+	let flatten = (node, parent) => (node?.replies || []).filter(reply => reply.post).flatMap(reply => [{ reply: reply.post, parent }, ...flatten(reply, blueskyPostUrl(reply.post))]);
+	return flatten(thread);
 }
 
 async function getBlueskyMentions(since) {
@@ -129,12 +139,7 @@ async function getBlueskyMentions(since) {
 		let likes = post.likeCount ? await blueskyPaginate("app.bsky.feed.getLikes", params, "likes", duration) : [];
 		let reposts = post.repostCount ? await blueskyPaginate("app.bsky.feed.getRepostedBy", params, "repostedBy", duration) : [];
 		let quotes = post.quoteCount ? await blueskyPaginate("app.bsky.feed.getQuotes", params, "posts", duration) : [];
-		let replies = [];
-		if(post.replyCount) {
-			let { thread } = await bluesky("app.bsky.feed.getPostThread", { ...params, depth: 1000, parentHeight: 0 }, duration);
-			let flatten = node => (node?.replies || []).filter(reply => reply.post).flatMap(reply => [reply.post, ...flatten(reply)]);
-			replies = flatten(thread);
-		}
+		let replies = post.replyCount ? await getBlueskyReplies(post.uri, duration) : [];
 
 		for(let target of targets) {
 			if(!post.record.reply) {
@@ -146,10 +151,11 @@ async function getBlueskyMentions(since) {
 			for(let actor of reposts) {
 				entries.push(toEntry({ url: `${postUrl}#reposted_by_${actor.did}`, target, property: "repost-of", author: blueskyAuthor(actor) }));
 			}
-			for(let [property, list] of [["mention-of", quotes], ["in-reply-to", replies]]) {
-				for(let reply of list) {
-					entries.push(toEntry({ url: blueskyPostUrl(reply), target, property, author: blueskyAuthor(reply.author), published: reply.record.createdAt, received: reply.indexedAt, text: reply.record.text }));
-				}
+			for(let quote of quotes) {
+				entries.push(toEntry({ url: blueskyPostUrl(quote), target, property: "mention-of", author: blueskyAuthor(quote.author), published: quote.record.createdAt, received: quote.indexedAt, text: quote.record.text }));
+			}
+			for(let { reply, parent } of replies) {
+				entries.push(toEntry({ url: blueskyPostUrl(reply), target, property: "in-reply-to", author: blueskyAuthor(reply.author), published: reply.record.createdAt, received: reply.indexedAt, text: reply.record.text, parent }));
 			}
 		}
 	}
@@ -168,15 +174,15 @@ async function mastodonPaginate(url, duration) {
 	return results;
 }
 
-export const mastodonAuthor = account => ({
+const mastodonAuthor = account => ({
 	name: account.display_name || account.username,
 	photo: account.avatar || "",
 	url: account.url,
 });
 
-export const getMastodonLinks = status => [status.card?.url, ...[...status.content.matchAll(/href="([^"]+)"/g)].map(match => decode(match[1]))];
+const getMastodonLinks = status => [status.card?.url, ...[...status.content.matchAll(/href="([^"]+)"/g)].map(match => decode(match[1]))];
 
-export async function getMastodonPosts(since) {
+async function getMastodonPosts(since) {
 	let posts = [];
 	let maxId;
 	while(true) {
@@ -193,6 +199,10 @@ export async function getMastodonPosts(since) {
 		}
 		maxId = statuses.at(-1).id;
 	}
+}
+
+async function getMastodonReplies(id, duration) {
+	return (await Fetch(`${MASTODON_API}/statuses/${id}/context`, { type: "json", duration })).descendants;
 }
 
 async function getMastodonMentions(since) {
@@ -221,8 +231,9 @@ async function getMastodonMentions(since) {
 			for(let account of reposts) {
 				entries.push(toEntry({ url: `${status.url}#reblogged-by-${account.id}`, target, property: "repost-of", author: mastodonAuthor(account) }));
 			}
+			let replyUrls = Object.fromEntries(replies.map(reply => [reply.id, reply.url]));
 			for(let reply of replies) {
-				entries.push(toEntry({ url: reply.url, target, property: "in-reply-to", author: mastodonAuthor(reply.account), published: reply.created_at, received: reply.created_at, text: htmlToText(reply.content) }));
+				entries.push(toEntry({ url: reply.url, target, property: "in-reply-to", author: mastodonAuthor(reply.account), published: reply.created_at, received: reply.created_at, text: htmlToText(reply.content), parent: replyUrls[reply.in_reply_to_id] }));
 			}
 		}
 	}
