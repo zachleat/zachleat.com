@@ -184,6 +184,8 @@
 	font-size: .8125em;
 }
 .activity-feed-summary.tags .tag-social > * {
+	color: var(--z-color-text-secondary);
+	background-color: transparent;
 	height: auto;
 	padding: .15em .45em;
 }
