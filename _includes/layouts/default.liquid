@@ -74,7 +74,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 			</div>
 		</nav>
 	</aside>
-{%- assign recentActivity = webmentions | webmentionsRecentActivity: 4 %}
+{%- assign recentActivity = webmentions | webmentionsRecentActivity: 3 %}
 {%- if recentActivity.size > 0 %}
 	<div class="rail-activity hide-singlecol">
 		<div class="top5">Recent Activity</div>
@@ -83,27 +83,33 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 			{% include "webmention-activity.liquid" %}
 		{%- endfor %}
 		</ol>
-		{%- capture railSyndicationUrl %}{{ page.url | absoluteUrl }}{% endcapture %}
-		{%- assign railSyndications = webmentions | webmentionSyndication: railSyndicationUrl %}
-		{%- if railSyndications.size > 0 %}
-		<div class="top5 rail-syndication-hed">Comment on</div>
-		<ul class="rail-syndication list-flush">
-		{%- for post in railSyndications %}
-			{%- assign platformIcon = post | webmentionPlatformIcon %}
-			<li><a href="{{ post.url }}" class="rail-syndication-card" target="_blank" rel="noopener noreferrer">{% icon platformIcon %}<strong>{% if platformIcon contains "bluesky" %}Bluesky{% else %}Mastodon{% endif %}</strong><time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time></a></li>
-		{%- endfor %}
-		</ul>
-		{%- endif %}
 	</div>
 {%- endif %}
-{%- if tocSidebar %}
-	<nav class="rail-toc hide-singlecol" aria-labelledby="rail-toc-title">
-		<is-land on:visible import="/static/table-of-contents.js">
-			<table-of-contents selector="{{ tocSelector | default: 'main :is(h2, h3)' }}">
-				<div class="top5" id="rail-toc-title">On this Page</div>
-			</table-of-contents>
-		</is-land>
-	</nav>
+{%- capture railSyndicationUrl %}{{ page.url | absoluteUrl }}{% endcapture %}
+{%- assign railSyndications = webmentions | webmentionSyndication: railSyndicationUrl %}
+{%- if railSyndications.size > 0 or tocSidebar %}
+	<div class="rail-sticky hide-singlecol">
+	{%- if railSyndications.size > 0 %}
+		<div class="rail-syndication-wrap">
+			<div class="top5">Comment on</div>
+			<ul class="rail-syndication list-flush">
+			{%- for post in railSyndications %}
+				{%- assign platformIcon = post | webmentionPlatformIcon %}
+				<li><a href="{{ post.url }}" class="rail-syndication-card{% if post['hn-points'] %} rail-syndication-card--hn{% endif %}" target="_blank" rel="noopener noreferrer">{% icon platformIcon %}<strong>{{ post | webmentionPlatformName }}</strong>{% if post['hn-points'] %}<span>{{ post['hn-comments'] }} comment{% if post['hn-comments'] != 1 %}s{% endif %}</span>{% else %}<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>{% endif %}</a></li>
+			{%- endfor %}
+			</ul>
+		</div>
+	{%- endif %}
+	{%- if tocSidebar %}
+		<nav class="rail-toc" aria-labelledby="rail-toc-title">
+			<is-land on:visible import="/static/table-of-contents.js">
+				<table-of-contents selector="{{ tocSelector | default: 'main :is(h2, h3)' }}">
+					<div class="top5" id="rail-toc-title">On this Page</div>
+				</table-of-contents>
+			</is-land>
+		</nav>
+	{%- endif %}
+	</div>
 {%- endif %}
 </div>
 <main class="content-main" data-role="main" id="skiplink-content">

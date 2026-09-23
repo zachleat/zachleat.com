@@ -6,6 +6,7 @@ import Fetch from "@11ty/eleventy-fetch";
 
 import getBaseUrl from "../_includes/getBaseUrl.js";
 import getSocialMentions from "../_11ty/webmentions/social.js";
+import getHackerNewsMentions from "../_11ty/webmentions/hackernews.js";
 import archive from "../_11ty/webmentions/archive.json" with { type: "json" };
 
 // Social posts from the last N days are refetched on every build
@@ -50,6 +51,10 @@ async function fetchWebmentions() {
 	let knownDates = Object.fromEntries([...archive, ...recent.filter(isBridgy)].map(entry => [entry.url, entry["wm-received"]]));
 	let live = await getSocialMentions({ days: LIVE_DAYS, knownDates });
 	live.push(...recent.filter(entry => !isBridgy(entry)));
+	live.push(...await getHackerNewsMentions().catch(e => {
+		console.warn("[zachleat.com] Unable to fetch Hacker News:", e);
+		return [];
+	}));
 
 	// Live data wins over archived copies of the same like, repost, or reply
 	let liveKeys = new Set(live.map(entry => `${entry.url} ${entry["wm-target"]}`));

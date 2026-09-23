@@ -87,11 +87,15 @@
 		margin-block-start: 2em;
 		font-family: var(--z-font-webfont);
 	}
-	/* Leave the sticky spot to the table of contents */
-	.rail:has(.rail-toc ol > li:not(:only-child)) .rail-activity {
+	/* Leave the sticky spot to the table of contents and syndication links */
+	.rail:has(.rail-toc ol > li:not(:only-child), .rail-syndication) .rail-activity {
 		position: static;
 	}
-	.rail-activity .top5 {
+	.rail-syndication-wrap {
+		margin-block-start: 2em;
+		font-family: var(--z-font-webfont);
+	}
+	:is(.rail-activity, .rail-syndication-wrap) .top5 {
 		margin: 0 0 1em;
 		font-size: 0.875em; /* 14px /16 */
 		font-weight: 700;
@@ -199,9 +203,6 @@
 	color: var(--z-color-text-tertiary);
 }
 /* Pared down syndication cards in the rail */
-.rail-activity .rail-syndication-hed {
-	margin-block-start: 1.5em;
-}
 .rail-syndication {
 	display: flex;
 	flex-direction: column;
@@ -229,6 +230,25 @@ a.rail-syndication-card:is(:link, :visited):is(:hover, :focus-visible) {
 	height: auto;
 }
 .rail-syndication-card time {
+	margin-inline-start: auto;
+	font-size: .85em;
+	color: var(--z-color-text-tertiary);
+}
+/* Hacker News gets the <del> treatment */
+a.rail-syndication-card--hn:is(:link, :visited) {
+	opacity: .8;
+}
+.rail-syndication-card--hn strong {
+	text-decoration: line-through;
+	text-decoration-thickness: .25em;
+	text-decoration-color: rgba(255,0,0,.6);
+}
+.rail-syndication-card.rail-syndication-card--hn .z-icon {
+	--icon-color-override: rgba(255,0,0,.6);
+	color: var(--icon-color-override);
+	filter: grayscale(.2);
+}
+.rail-syndication-card--hn span {
 	margin-inline-start: auto;
 	font-size: .85em;
 	color: var(--z-color-text-tertiary);

@@ -9,7 +9,7 @@ const BLUESKY_ACTOR = "zachleat.com";
 const MASTODON_API = "https://fediverse.zachleat.com/api/v1";
 const MASTODON_ACCOUNT_ID = "109286461031266152";
 const SITE_HOSTNAMES = ["www.zachleat.com", "zachleat.com"];
-const STORE_URL = new URL("./social.json", import.meta.url);
+export const STORE_URL = new URL("./social.json", import.meta.url);
 
 const RECENT = process.env.ELEVENTY_RUN_MODE === "serve" ? "2d" : "2h";
 const OLD = "1w";
@@ -17,7 +17,7 @@ const RECENT_WINDOW = 1000 * 60 * 60 * 24 * 30;
 
 const getDuration = date => Date.now() - new Date(date).getTime() < RECENT_WINDOW ? RECENT : OLD;
 
-function getTargets(urls = []) {
+export function getTargets(urls = []) {
 	let targets = new Set();
 	for(let url of urls) {
 		try {
@@ -30,13 +30,13 @@ function getTargets(urls = []) {
 	return [...targets];
 }
 
-function htmlToText(html = "") {
+export function htmlToText(html = "") {
 	html = html.replace(/<\/p>\s*<p>/g, "\n\n").replace(/<br\s*\/?>/g, "\n");
 	return decode(sanitizeHTML(html, { allowedTags: [], allowedAttributes: {} })).trim();
 }
 
 // Matches webmention.io’s jf2 shape so the templates keep working
-function toEntry({ url, target, property, author, published, received, text }) {
+export function toEntry({ url, target, property, author, published, received, text }) {
 	let entry = {
 		type: "entry",
 		author: { type: "card", ...author },
@@ -77,15 +77,15 @@ async function blueskyPaginate(method, params, key, duration) {
 	return results;
 }
 
-const blueskyAuthor = actor => ({
+export const blueskyAuthor = actor => ({
 	name: actor.displayName || actor.handle,
 	photo: actor.avatar || "",
 	url: `https://bsky.app/profile/${actor.handle}`,
 });
 
-const blueskyPostUrl = post => `https://bsky.app/profile/${post.author.handle}/post/${post.uri.split("/").pop()}`;
+export const blueskyPostUrl = post => `https://bsky.app/profile/${post.author.handle}/post/${post.uri.split("/").pop()}`;
 
-function getBlueskyLinks(post) {
+export function getBlueskyLinks(post) {
 	let embed = post.embed?.media || post.embed;
 	return [
 		embed?.external?.uri,
@@ -93,7 +93,7 @@ function getBlueskyLinks(post) {
 	].filter(Boolean);
 }
 
-async function getBlueskyPosts(since) {
+export async function getBlueskyPosts(since) {
 	let posts = [];
 	let cursor;
 	do {
@@ -168,13 +168,15 @@ async function mastodonPaginate(url, duration) {
 	return results;
 }
 
-const mastodonAuthor = account => ({
+export const mastodonAuthor = account => ({
 	name: account.display_name || account.username,
 	photo: account.avatar || "",
 	url: account.url,
 });
 
-async function getMastodonPosts(since) {
+export const getMastodonLinks = status => [status.card?.url, ...[...status.content.matchAll(/href="([^"]+)"/g)].map(match => decode(match[1]))];
+
+export async function getMastodonPosts(since) {
 	let posts = [];
 	let maxId;
 	while(true) {
@@ -196,8 +198,7 @@ async function getMastodonPosts(since) {
 async function getMastodonMentions(since) {
 	let byPost = {};
 	for(let status of await getMastodonPosts(since)) {
-		let links = [status.card?.url, ...[...status.content.matchAll(/href="([^"]+)"/g)].map(match => decode(match[1]))];
-		let targets = getTargets(links);
+		let targets = getTargets(getMastodonLinks(status));
 		if(!targets.length) {
 			continue;
 		}

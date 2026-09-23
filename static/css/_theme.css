@@ -506,8 +506,9 @@ h5,
 	margin-block: 0 .5em;
 }
 .syndication-cards {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	/* Two columns, one when narrow (.375em is half the gap) */
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, max(11em, 50% - .375em)), 1fr));
 	gap: .75em;
 }
 a.syndication-card:is(:link, :visited) {
@@ -515,9 +516,7 @@ a.syndication-card:is(:link, :visited) {
 	display: flex;
 	flex-direction: column;
 	gap: .35em;
-	flex: 1 1 16em;
 	min-width: 0;
-	max-width: 24em;
 	padding: .6em .75em;
 	border: 1px solid var(--z-color-border);
 	border-radius: var(--z-border-radius-2);
@@ -2174,11 +2173,12 @@ a[href].tag-inline:not(.tag-borderless),
 		visibility: visible;
 	}
 
-	.rail-toc {
+	/* Syndication links and the table of contents stick together */
+	.rail-sticky {
 		position: sticky;
 		top: calc(var(--rail-header-size) + 1rem);
-		max-height: calc(100vh - var(--rail-header-size) - 2rem);
-		overflow-y: auto;
+	}
+	.rail-toc {
 		margin-top: 2em;
 		font-family: var(--z-font-webfont);
 		font-size: 0.875em; /* 14px /16 */

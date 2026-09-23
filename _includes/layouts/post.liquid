@@ -93,11 +93,10 @@ classes:
 <hr>
 <article class="content-grid-sibling">
 	{%- capture syndicationUrl %}{{ page.url | absoluteUrl }}{% endcapture %}
-	{%- assign syndications = webmentions | webmentionSyndication: syndicationUrl %}
+	{%- assign syndications = webmentions | webmentionSyndication: syndicationUrl, false %}
 	{%- if syndications.size > 0 %}
-	{%- assign syndicationUrls = syndications | map: "url" | join: " " %}
 	<div class="syndication">
-	<p class="syndication-hed"><em>{% icon "fas:comments" %}Comment on {% if syndicationUrls contains "bsky.app" %}Bluesky{% if syndicationUrls contains "/@" %} or {% endif %}{% endif %}{% if syndicationUrls contains "/@" %}Mastodon{% endif %}</em></p>
+	<p class="syndication-hed"><em>{% icon "fas:comments" %}Comment on {{ syndications | webmentionPlatformNames }}</em></p>
 	<div class="syndication-cards">
 		{%- for post in syndications %}
 		{%- assign platformIcon = post | webmentionPlatformIcon %}
@@ -108,7 +107,7 @@ classes:
 					<strong>{{ post.author.name | htmlEntities }}</strong>
 					<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>
 				</span>
-				<span class="syndication-card-platform">{% icon platformIcon %}<span class="a11y-only">{% if platformIcon contains "bluesky" %}Bluesky{% else %}Mastodon{% endif %}</span></span>
+				<span class="syndication-card-platform">{% icon platformIcon %}<span class="a11y-only">{{ post | webmentionPlatformName }}</span></span>
 			</span>
 			{%- if post.content.text %}
 			<span class="syndication-card-text text-ellipsis-multi">{{ post.content.text | escape }}</span>

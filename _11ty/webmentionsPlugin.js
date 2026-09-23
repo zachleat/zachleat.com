@@ -119,7 +119,9 @@ export default function(eleventyConfig) {
 		"news.ycombinator.com": "hackernews",
 	};
 
-	eleventyConfig.addFilter('webmentionPlatformIcon', (webmention) => {
+	eleventyConfig.addFilter('webmentionPlatformIcon', webmention => getPlatformIcon(webmention));
+
+	function getPlatformIcon(webmention) {
 		try {
 			let source = new URL(webmention['wm-source']);
 			if(source.hostname === "brid.gy") {
@@ -146,7 +148,7 @@ export default function(eleventyConfig) {
 		} catch(e) {}
 
 		return "fas:globe";
-	});
+	}
 
 	const isBlocked = entry => webmentionBlockList.some(blockedUrl => `${entry.url}`.includes(blockedUrl));
 
@@ -158,6 +160,12 @@ export default function(eleventyConfig) {
 	const getDate = entry => {
 		let str = getDateString(entry) || "";
 		return new Date(/(Z|[+-]\d\d:?\d\d)$/.test(str) ? str : `${str}Z`).getTime() || 0;
+	};
+
+	const addCounts = (group, counts) => {
+		for(let key in counts) {
+			group[key] += counts[key];
+		}
 	};
 
 	// Newest sitewide activity (excluding my own), with nearby webmentions on the same post grouped together
@@ -183,7 +191,9 @@ export default function(eleventyConfig) {
 		let knownAuthors = new Set();
 		for(let { target, webmention, time } of entries) {
 			let type = webmention['wm-property'];
-			if(!groupCountKeys[type]) {
+			// Hacker News submissions count their points and comments
+			let counts = webmention['hn-points'] != null ? { likes: webmention['hn-points'], replies: webmention['hn-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
+			if(!counts) {
 				continue;
 			}
 
@@ -214,7 +224,7 @@ export default function(eleventyConfig) {
 
 			if(group) {
 				group.webmentions.push(webmention);
-				group[groupCountKeys[type]]++;
+				addCounts(group, counts);
 				continue;
 			}
 
@@ -227,7 +237,7 @@ export default function(eleventyConfig) {
 
 			let date = new Date(time).toISOString();
 			group = openGroups[target] = { type: "group", target, date, time, webmentions: [webmention], likes: 0, reposts: 0, bookmarks: 0, replies: 0, mentions: 0 };
-			group[groupCountKeys[type]]++;
+			addCounts(group, counts);
 			items.push(group);
 		}
 
@@ -235,11 +245,43 @@ export default function(eleventyConfig) {
 		return items;
 	});
 
-	// My own social posts that share a url
-	eleventyConfig.addFilter('webmentionSyndication', (webmentions, url) => {
+	const platformNames = {
+		"fab:bluesky": "Bluesky",
+		"fab:mastodon": "Mastodon",
+		"fab:hacker-news": "Hacker News",
+	};
+	const getPlatformName = webmention => platformNames[getPlatformIcon(webmention)] || "the web";
+
+	eleventyConfig.addFilter('webmentionPlatformName', getPlatformName);
+
+	// e.g. "Bluesky, Mastodon, or Hacker News"
+	eleventyConfig.addFilter('webmentionPlatformNames', (webmentions = []) => {
+		let found = new Set(webmentions.map(getPlatformName));
+		let names = [...Object.values(platformNames), "the web"].filter(name => found.has(name));
+		if(names.length < 3) {
+			return names.join(" or ");
+		}
+		return `${names.slice(0, -1).join(", ")}, or ${names.at(-1)}`;
+	});
+
+	// My own social posts that share a url (only the earliest per platform)
+	eleventyConfig.addFilter('webmentionSyndication', (webmentions, url, includeHackerNews = true) => {
+		let seenPlatforms = new Set();
 		return (webmentions?.mentions?.[url] || [])
-			.filter(entry => entry['wm-property'] === "syndication")
-			.sort((a, b) => getDate(a) - getDate(b));
+			.filter(entry => entry['wm-property'] === "syndication" && (entry['hn-points'] == null || includeHackerNews && entry['hn-comments'] > 0))
+			// Hacker News last
+			.sort((a, b) => (a['hn-points'] != null) - (b['hn-points'] != null) || getDate(a) - getDate(b))
+			.filter(entry => {
+				if(!isOriginalPoster(entry)) {
+					return true;
+				}
+				let platform = getPlatformName(entry);
+				if(seenPlatforms.has(platform)) {
+					return false;
+				}
+				seenPlatforms.add(platform);
+				return true;
+			});
 	});
 
 	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
