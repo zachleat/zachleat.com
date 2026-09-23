@@ -1,37 +1,31 @@
 {%- assign targetPath = activity.target | localUrl %}
 {%- assign targetPost = collections.all | find: "url", targetPath %}
 {%- capture targetLink %}<a href="{{ targetPath }}" class="activity-feed-target">{% if targetPost.data.title %}{{ targetPost.data.title }}{% else %}{{ targetPath }}{% endif %}</a>{% endcapture %}
-{%- capture missingEmoji %}<span class="static-comments-missing-emoji" title="Missing emoji" role="img" aria-label="Missing emoji">{% icon "fas:clipboard-question" %}</span>{% endcapture %}
 <li class="activity-feed-item">
-{%- if activity.type == "reactions" %}
 	<div class="activity-feed-faces">
-	{%- for webmention in activity.webmentions limit: 7 %}
+	{%- assign faceLimit = 8 %}
+	{%- if activity.webmentions.size > 8 %}{% assign faceLimit = 7 %}{% endif %}
+	{%- for webmention in activity.webmentions limit: faceLimit %}
 		{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "activity-feed-face" %}
 	{%- endfor %}
+	{%- if activity.webmentions.size > 8 %}
+		{%- assign moreCount = activity.webmentions.size | minus: 7 %}
+		<span class="activity-feed-face activity-feed-face-more" title="{{ moreCount }} more">{% icon "fas:ellipsis" %}<span class="a11y-only">{{ moreCount }} more</span></span>
+	{%- endif %}
 	</div>
 	<div class="activity-feed-body">
-		<p class="activity-feed-summary">
-			{%- assign parts = "" | split: "," %}
-			{%- if activity.likes > 0 %}{% capture part %}{% icon "fas:heart" %}{{ activity.likes }} like{% if activity.likes != 1 %}s{% endif %}{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
-			{%- if activity.reposts > 0 %}{% capture part %}{% icon "fas:retweet" %}{{ activity.reposts }} repost{% if activity.reposts != 1 %}s{% endif %}{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
-			{%- if activity.bookmarks > 0 %}{% capture part %}{% icon "fas:bookmark" %}{{ activity.bookmarks }} bookmark{% if activity.bookmarks != 1 %}s{% endif %}{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
-			{{ parts | join: ", " }} on {{ targetLink }}
-		</p>
+		{{ targetLink }}
+		<div class="activity-feed-meta">
+			<p class="activity-feed-summary">
+				{%- assign parts = "" | split: "," %}
+				{%- if activity.likes > 0 %}{% capture part %}<span class="activity-feed-count--like">{% icon "fas:heart" %}{{ activity.likes }}<span class="a11y-only"> like{% if activity.likes != 1 %}s{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+				{%- if activity.reposts > 0 %}{% capture part %}<span class="activity-feed-count--boost">{% icon "fas:retweet" %}{{ activity.reposts }}<span class="a11y-only"> repost{% if activity.reposts != 1 %}s{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+				{%- if activity.bookmarks > 0 %}{% capture part %}<span class="activity-feed-count--reply">{% icon "fas:bookmark" %}{{ activity.bookmarks }}<span class="a11y-only"> bookmark{% if activity.bookmarks != 1 %}s{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+				{%- if activity.replies > 0 %}{% capture part %}<span class="activity-feed-count--reply">{% icon "fas:reply" %}{{ activity.replies }}<span class="a11y-only"> repl{% if activity.replies != 1 %}ies{% else %}y{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+				{%- if activity.mentions > 0 %}{% capture part %}<span class="activity-feed-count--boost">{% icon "fas:at" %}{{ activity.mentions }}<span class="a11y-only"> mention{% if activity.mentions != 1 %}s{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+				{{ parts | join: " " }}
+			</p>
+			<time-difference class="activity-feed-date" live format="narrow"><time datetime="{{ activity.date }}" title="{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}">{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
+		</div>
 	</div>
-{%- else %}
-	{%- assign webmention = activity.webmention %}
-	<div class="activity-feed-faces">
-		{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "activity-feed-face" %}
-	</div>
-	<div class="activity-feed-body">
-		<p class="activity-feed-summary">
-			{%- assign platformIcon = webmention | webmentionPlatformIcon %}
-			{%- if webmention.url != "" %}<a href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer" class="activity-feed-author favicon-optout">{% endif -%}
-			{% icon platformIcon %}{% if webmention.author.name != "" %}{{ webmention.author.name | remove: ":11ty:" | strip | htmlEntities | replace: "????", missingEmoji }}{% elsif webmention.url %}{{ webmention.url | hostnameFromUrl }}{% else %}Anonymous{% endif %}
-			{%- if webmention.url != "" %}</a>{% endif %}
-			{% if activity.type == "reply" %}replied to{% else %}mentioned{% endif %} {{ targetLink }}
-		</p>
-		<time-difference class="activity-feed-date" live><time datetime="{{ activity.date }}" title="{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}">{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
-	</div>
-{%- endif %}
 </li>

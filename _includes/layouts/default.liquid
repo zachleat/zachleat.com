@@ -51,16 +51,6 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 					</div>
 				{%- endif %}
 
-				{%- if hidePostsInSidebar != true %}
-					<div>
-						<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire-flame-curved" %}</a></div>
-
-						{% for post in collections.popularPostsRanked limit:4 %}
-						<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }}</a>
-						{% endfor %}
-					</div>
-				{%- endif %}
-
 				{%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
 				{%- if speedlify[urlWithOrigin] %}
 					<div>
@@ -70,10 +60,31 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 						</is-land>
 					</div>
 				{%- endif %}
+
+				{%- if hidePostsInSidebar != true %}
+					<div>
+						<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire-flame-curved" %}</a></div>
+
+						{% for post in collections.popularPostsRanked limit:4 %}
+						<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }}</a>
+						{% endfor %}
+					</div>
+				{%- endif %}
 				</div>
 			</div>
 		</nav>
 	</aside>
+{%- assign recentActivity = webmentions | webmentionsRecentActivity: 5 %}
+{%- if recentActivity.size > 0 %}
+	<div class="rail-activity hide-singlecol">
+		<div class="top5">Recent Activity</div>
+		<ol class="activity-feed list-flush favicon-optin">
+		{%- for activity in recentActivity %}
+			{% include "webmention-activity.liquid" %}
+		{%- endfor %}
+		</ol>
+	</div>
+{%- endif %}
 {%- if tocSidebar %}
 	<nav class="rail-toc hide-singlecol" aria-labelledby="rail-toc-title">
 		<is-land on:visible import="/static/table-of-contents.js">

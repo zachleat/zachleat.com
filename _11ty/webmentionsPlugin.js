@@ -150,9 +150,9 @@ export default function(eleventyConfig) {
 
 	const isBlocked = entry => webmentionBlockList.some(blockedUrl => `${entry.url}`.includes(blockedUrl));
 
-	const reactionTypes = ["like-of", "repost-of", "bookmark-of"];
-	const reactionCountKeys = { "like-of": "likes", "repost-of": "reposts", "bookmark-of": "bookmarks" };
-	const REACTION_GROUP_WINDOW = 1000 * 60 * 60 * 24;
+	// Nearby webmentions on the same post are grouped into one row
+	const groupCountKeys = { "like-of": "likes", "repost-of": "reposts", "bookmark-of": "bookmarks", "in-reply-to": "replies", "mention-of": "mentions" };
+	const GROUP_WINDOW = 1000 * 60 * 60 * 24;
 	const getDateString = entry => entry.published || entry['wm-received'];
 	// Dates without an offset are UTC
 	const getDate = entry => {
@@ -160,8 +160,18 @@ export default function(eleventyConfig) {
 		return new Date(/(Z|[+-]\d\d:?\d\d)$/.test(str) ? str : `${str}Z`).getTime() || 0;
 	};
 
-	// Newest sitewide activity (excluding my own), with nearby likes/reposts/bookmarks on the same post grouped together
+	// Newest sitewide activity (excluding my own), with nearby webmentions on the same post grouped together
+	// Cached per webmentions object, this runs on every page
+	let recentActivityCache = new WeakMap();
 	eleventyConfig.addFilter('webmentionsRecentActivity', (webmentions, limit = 8) => {
+		if(!webmentions) {
+			return [];
+		}
+		let cached = recentActivityCache.get(webmentions)?.[limit];
+		if(cached) {
+			return cached;
+		}
+
 		let entries = Object.entries(webmentions?.mentions || {})
 			.flatMap(([target, list]) => list.map(webmention => ({ target, webmention, time: getDate(webmention) })))
 			.filter(({ target, webmention }) => getBaseUrl(webmention['wm-target']) === target && !isOriginalPoster(webmention) && !isBlocked(webmention))
@@ -172,6 +182,11 @@ export default function(eleventyConfig) {
 		let knownUrls = new Set();
 		let knownAuthors = new Set();
 		for(let { target, webmention, time } of entries) {
+			let type = webmention['wm-property'];
+			if(!groupCountKeys[type]) {
+				continue;
+			}
+
 			if(webmention.url) {
 				if(knownUrls.has(webmention.url)) {
 					continue;
@@ -188,34 +203,31 @@ export default function(eleventyConfig) {
 				knownAuthors.add(author);
 			}
 
-			let type = webmention['wm-property'];
 			let group = openGroups[target];
-			if(group && group.time - time > REACTION_GROUP_WINDOW) {
+			if(group && group.time - time > GROUP_WINDOW) {
 				group = openGroups[target] = undefined;
 			}
 
-			if(reactionTypes.includes(type) && group) {
+			if(group) {
 				group.webmentions.push(webmention);
-				group[reactionCountKeys[type]]++;
+				group[groupCountKeys[type]]++;
 				continue;
 			}
 
 			if(items.length >= limit) {
-				if(Object.values(openGroups).some(group => group && group.time - time <= REACTION_GROUP_WINDOW)) {
+				if(Object.values(openGroups).some(group => group && group.time - time <= GROUP_WINDOW)) {
 					continue;
 				}
 				break;
 			}
 
 			let date = new Date(time).toISOString();
-			if(reactionTypes.includes(type)) {
-				group = openGroups[target] = { type: "reactions", target, date, time, webmentions: [webmention], likes: 0, reposts: 0, bookmarks: 0 };
-				group[reactionCountKeys[type]]++;
-				items.push(group);
-			} else {
-				items.push({ type: type === "in-reply-to" ? "reply" : "mention", target, date, webmention });
-			}
+			group = openGroups[target] = { type: "group", target, date, time, webmentions: [webmention], likes: 0, reposts: 0, bookmarks: 0, replies: 0, mentions: 0 };
+			group[groupCountKeys[type]]++;
+			items.push(group);
 		}
+
+		recentActivityCache.set(webmentions, { ...recentActivityCache.get(webmentions), [limit]: items });
 		return items;
 	});
 
