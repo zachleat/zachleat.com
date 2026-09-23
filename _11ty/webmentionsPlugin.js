@@ -23,9 +23,13 @@ export default function(eleventyConfig) {
 
 	const toPill = handle => `<span class="static-comments-mention">${handle}</span>`;
 
-	eleventyConfig.addFilter('webmentionMentionPills', (text = "") => {
+	// Nested replies drop the leading mentions, the thread already shows who they’re replying to
+	eleventyConfig.addFilter('webmentionMentionPills', (text = "", isNested = false) => {
 		let replyingTo = "";
 		text = text.replace(leadingMentionsRegex, (match, mentions) => {
+			if(isNested) {
+				return "";
+			}
 			let handles = mentions.trim().split(/\s+/).map(handle => toPill(handle.slice(1)));
 			replyingTo = `<span class="static-comments-replying-to">Replying to ${handles.join(" ")}</span>`;
 			return "";
@@ -89,7 +93,12 @@ export default function(eleventyConfig) {
 					}
 				}
 			}
-			(parent ? parent.replies : threads).push(node);
+			if(parent) {
+				node.isNested = true;
+				parent.replies.push(node);
+			} else {
+				threads.push(node);
+			}
 		});
 		return threads;
 	});
