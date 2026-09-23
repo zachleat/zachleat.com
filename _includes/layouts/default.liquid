@@ -83,7 +83,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 			{%- if railNewerPost %}
 				<li class="rail-nextprev-newer"><span class="rail-nextprev-label">Newer{% icon "fas:arrow-right" %}</span><a href="{{ railNewerPost.url }}" class="rail-nextprev-card"><strong class="text-ellipsis-multi">{{ railNewerPost.data.title }}</strong></a></li>
 			{%- else %}
-				<li class="rail-nextprev-newer" aria-hidden="true"><span class="rail-nextprev-label">Newest</span><span class="rail-nextprev-card rail-nextprev-card--skeleton"></span></li>
+				<li class="rail-nextprev-newer" aria-hidden="true"><span class="rail-nextprev-label">Newer{% icon "fas:arrow-right" %}</span><span class="rail-nextprev-card rail-nextprev-card--skeleton"></span></li>
 			{%- endif %}
 			</ul>
 		</nav>

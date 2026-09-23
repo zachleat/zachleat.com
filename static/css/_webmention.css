@@ -217,6 +217,9 @@ a:is(.rail-syndication-card, .rail-nextprev-card):is(:link, :visited):is(:hover,
 	flex-direction: column;
 	gap: .25em;
 }
+.rail-nextprev li:has(.rail-nextprev-card--skeleton) {
+	cursor: not-allowed;
+}
 .rail-nextprev li > :is(a, .rail-nextprev-card--skeleton) {
 	flex-grow: 1;
 	box-sizing: content-box;
