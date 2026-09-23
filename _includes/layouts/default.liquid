@@ -52,16 +52,6 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 						{%- endfor %}
 					</div>
 				{%- endif %}
-
-				{%- if hidePostsInSidebar != true %}
-					<div>
-						<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire-flame-curved" %}</a></div>
-
-						{% for post in collections.popularPostsRanked limit:4 %}
-						<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }}</a>
-						{% endfor %}
-					</div>
-				{%- endif %}
 				</div>
 			</div>
 		</nav>
@@ -71,11 +61,15 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 {%- if appendix == "post" %}
 	{%- assign railOlderPost = collections.activePosts | getNextCollectionItem: page %}
 	{%- assign railNewerPost = collections.activePosts | getPreviousCollectionItem: page %}
+	{%- assign railPostIndex = collections.posts | getCollectionItemIndex: page %}
 {%- endif %}
 {%- if railSyndications.size > 0 or tocSidebar or railOlderPost or railNewerPost %}
 	<div class="rail-sticky hide-singlecol">
 	{%- if railOlderPost or railNewerPost %}
 		<nav class="rail-nextprev-wrap" aria-label="More posts">
+			{%- if railPostIndex != nil %}
+			<div class="rail-nextprev-count">{{ collections.posts.size | minus: railPostIndex }} <span>/ {{ collections.posts.size }}</span></div>
+			{%- endif %}
 			<ul class="rail-nextprev list-flush">
 			{%- if railOlderPost %}
 				<li><span class="rail-nextprev-label">{% icon "fas:arrow-left" %}Older</span><a href="{{ railOlderPost.url }}" class="rail-nextprev-card"><strong class="text-ellipsis-multi">{{ railOlderPost.data.title }}</strong><time datetime="{{ railOlderPost.date | dateToISO }}">{{ railOlderPost.date | readableDate: "dd LLL yyyy" }}</time></a></li>

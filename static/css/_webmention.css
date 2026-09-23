@@ -85,6 +85,25 @@
 		color: var(--z-color-text-secondary);
 	}
 }
+.rail-activity-hed {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: .5em;
+}
+.rail-activity-count {
+	display: inline-flex;
+	align-items: center;
+	gap: .35em;
+	padding: 0 .6em;
+	border: 1px solid var(--z-color-border);
+	border-radius: 1em;
+	background-color: var(--z-color-bg-alt);
+	font-size: .85em;
+	font-weight: 400;
+	font-variant-numeric: tabular-nums;
+	color: var(--z-color-text-tertiary);
+}
 .activity-feed-item {
 	--activity-feed-bg: var(--z-color-bg);
 	display: flex;
@@ -204,6 +223,24 @@ a:is(.rail-syndication-card, .rail-nextprev-card):is(:link, :visited) {
 a:is(.rail-syndication-card, .rail-nextprev-card):is(:link, :visited):is(:hover, :focus-visible) {
 	border-color: var(--z-color-text-tertiary);
 }
+.rail-nextprev-wrap {
+	position: relative;
+}
+/* Centered between the Older and Newer labels */
+.rail-nextprev-count {
+	position: absolute;
+	inset-inline: 0;
+	top: 0;
+	text-align: center;
+	font-size: .6875em;
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+	color: var(--z-color-text-tertiary);
+	pointer-events: none;
+}
+.rail-nextprev-count span {
+	font-weight: 400;
+}
 .rail-nextprev {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -223,7 +260,6 @@ a:is(.rail-syndication-card, .rail-nextprev-card):is(:link, :visited):is(:hover,
 .rail-nextprev li > :is(a, .rail-nextprev-card--skeleton) {
 	flex-grow: 1;
 	box-sizing: content-box;
-	min-height: 3lh;
 	line-height: 1.3;
 }
 .rail-nextprev-card--skeleton {

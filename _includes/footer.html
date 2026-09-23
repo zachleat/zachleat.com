@@ -43,12 +43,23 @@
 		</form>
 	</div>
 	{%- capture urlWithOrigin %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
-	{%- if speedlify[urlWithOrigin] %}
-	<div class="footer-speedlify hide-singlecol">
-		<div class="top5"><a href="https://www.speedlify.dev/">Speedlify{% icon "fas:forward-fast" %}</a></div>
-		<is-land on:visible import="/static/speedlify2-score.js">
-			<speedlify2-score speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify2-score>
-		</is-land>
+	{%- assign ogPreviewSource = "" %}
+	{%- if appendix == "post" %}{% capture ogPreviewSource %}{% ogImageSource page %}{% endcapture %}{% endif %}
+	{%- if speedlify[urlWithOrigin] or ogPreviewSource != blank %}
+	<div class="footer-rail hide-singlecol">
+		{%- if speedlify[urlWithOrigin] %}
+		<div class="footer-speedlify">
+			<div class="top5"><a href="https://www.speedlify.dev/">Speedlify{% icon "fas:forward-fast" %}</a></div>
+			<is-land on:visible import="/static/speedlify2-score.js">
+				<speedlify2-score speedlify-url="https://www.speedlify.dev/" url="{{ urlWithOrigin }}"></speedlify2-score>
+			</is-land>
+		</div>
+		{%- endif %}
+		{%- if ogPreviewSource != blank %}
+		<div id="opengraph-preview" class="rail-opengraph share">
+			<a href="/opengraph/?page={{ page.url | url_encode }}"><img class="share-img" src="{{ ogPreviewSource }}" decoding="async" loading="lazy" width="1200" height="630" alt="Open Graph image for {{ title }}" eleventy:ignore></a>
+		</div>
+		{%- endif %}
 	</div>
 	{%- endif %}
 </footer>

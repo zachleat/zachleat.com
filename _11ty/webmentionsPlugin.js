@@ -262,6 +262,13 @@ export default function(eleventyConfig) {
 	};
 	eleventyConfig.addFilter('webmentionsRecentActivity', getRecentActivity);
 
+	// Every webmention tracked sitewide (excluding my own)
+	eleventyConfig.addFilter('webmentionsTotalCount', webmentions => {
+		return Object.entries(webmentions?.mentions || {})
+			.flatMap(([target, list]) => list.filter(webmention => getBaseUrl(webmention['wm-target']) === target && !isOriginalPoster(webmention) && !isBlocked(webmention)))
+			.length;
+	});
+
 	// Newest sitewide webmentions, one per person
 	eleventyConfig.addFilter('webmentionsRecentPeople', (webmentions, limit = 40) => {
 		return getRecentActivity(webmentions, limit).flatMap(group => group.webmentions).slice(0, limit);

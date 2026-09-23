@@ -55,11 +55,14 @@
 {%- endif %}
 	<div class="appendix-rail">
 	{%- include "recent-activity.liquid" %}
-	{%- if appendix == "post" %}{% capture ogPreviewSource %}{% ogImageSource page %}{% endcapture %}{% endif %}
-	{%- if ogPreviewSource != blank %}
-		<div id="opengraph-preview" class="rail-opengraph share hide-singlecol">
-			<div class="top5"><a href="/opengraph/?page={{ page.url | url_encode }}">Open Graph for this Page</a></div>
-			<img class="share-img" src="{{ ogPreviewSource }}" decoding="async" loading="lazy" width="1200" height="630" alt="Open Graph image for {{ title }}" eleventy:ignore>
+	{%- if hidePostsInSidebar != true %}
+		<div class="tags tags-rail tags-rail-top5 hide-singlecol">
+			<div>
+				<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire-flame-curved" %}</a></div>
+				{%- for post in collections.popularPostsRanked limit:4 %}
+				<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }}</a>
+				{%- endfor %}
+			</div>
 		</div>
 	{%- endif %}
 	</div>
