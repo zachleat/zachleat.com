@@ -109,24 +109,30 @@
 	border-radius: var(--z-border-radius-1);
 	background-color: var(--activity-feed-bg);
 }
-.activity-feed-item:nth-child(even) {
-	--activity-feed-bg: var(--z-color-bg-alt);
-}
 .activity-feed-item:first-child {
 	margin-block-start: 0;
 	padding-block-start: 0;
 }
+/* Avatars that don’t fit wrap onto a hidden second line, so only whole avatars show */
 .activity-feed-faces {
 	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	/* Pushes wrapped avatars fully out of view */
+	row-gap: 1em;
 	isolation: isolate;
-	flex-shrink: 0;
-	margin-inline-start: auto;
+	min-width: 0;
+	box-sizing: content-box;
+	height: 1.35em;
+	padding: 2px;
+	overflow: hidden;
 }
 .activity-feed-face,
 .activity-feed-face[width][height] {
 	flex-shrink: 0;
-	width: 1.1em;
-	height: 1.1em;
+	width: 1.35em;
+	height: 1.35em;
 	aspect-ratio: 1;
 	border-radius: 50%;
 	object-fit: cover;
@@ -147,17 +153,6 @@
 .activity-feed-face:nth-child(5) { z-index: 3; }
 .activity-feed-face:nth-child(6) { z-index: 2; }
 .activity-feed-face:nth-child(7) { z-index: 1; }
-/* Stands in for the avatars that don’t fit */
-.activity-feed-more {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--z-color-text-tertiary);
-}
-.activity-feed-more .z-icon {
-	width: .7em;
-	height: auto;
-}
 .activity-feed-hed,
 .activity-feed-meta {
 	display: flex;
@@ -172,28 +167,21 @@
 	align-items: center;
 }
 .activity-feed-summary {
-	/* Contains the absolutely positioned .a11y-only text so overflow clips it */
+	/* Contains the absolutely positioned .a11y-only text */
 	position: relative;
+	flex-shrink: 0;
 	margin: 0;
 	font-size: 90%;
-	min-width: 0;
 	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
-.activity-feed-summary .z-icon {
-	margin-inline-end: .25em;
-	vertical-align: -.125em;
-	color: var(--z-color-text-tertiary);
+/* Smaller tag-social pill to fit the rail */
+.activity-feed-summary.tags .tag-social {
+	height: auto;
+	font-size: .8125em;
 }
-.activity-feed-count--like .z-icon {
-	color: var(--z-color-badge-like-text);
-}
-.activity-feed-count--boost .z-icon {
-	color: var(--z-color-badge-boost-text);
-}
-.activity-feed-count--reply .z-icon {
-	color: var(--z-color-badge-reply-text);
+.activity-feed-summary.tags .tag-social > * {
+	height: auto;
+	padding: .15em .45em;
 }
 .activity-feed-target {
 	min-width: 0;
@@ -208,5 +196,40 @@
 	text-transform: none;
 	white-space: nowrap;
 	font-size: 85%;
+	color: var(--z-color-text-tertiary);
+}
+/* Pared down syndication cards in the rail */
+.rail-activity .rail-syndication-hed {
+	margin-block-start: 1.5em;
+}
+.rail-syndication {
+	display: flex;
+	flex-direction: column;
+	gap: .35em;
+}
+a.rail-syndication-card:is(:link, :visited) {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+	padding: .35em .6em;
+	border: 1px solid var(--z-color-border);
+	border-radius: var(--z-border-radius-2);
+	background-color: var(--z-color-bg-alt);
+	color: var(--z-color-text);
+	font-size: .9em;
+	text-decoration: none;
+}
+a.rail-syndication-card:is(:link, :visited):is(:hover, :focus-visible) {
+	border-color: var(--z-color-text-tertiary);
+}
+/* Keep brand colors instead of the rail’s link color */
+.rail-syndication-card .z-icon {
+	--icon-color-override: initial;
+	width: 1.1em;
+	height: auto;
+}
+.rail-syndication-card time {
+	margin-inline-start: auto;
+	font-size: .85em;
 	color: var(--z-color-text-tertiary);
 }

@@ -7,25 +7,19 @@
 		<time-difference class="activity-feed-date" live format="narrow"><time datetime="{{ activity.date }}" title="{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}">{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
 	</div>
 	<div class="activity-feed-meta">
-		<p class="activity-feed-summary">
+		<p class="activity-feed-summary tags">
 			{%- assign parts = "" | split: "," %}
-			{%- if activity.likes > 0 %}{% capture part %}<span class="activity-feed-count--like">{% icon "fas:heart" %}{{ activity.likes }}<span class="a11y-only"> like{% if activity.likes != 1 %}s{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
-			{%- if activity.reposts > 0 %}{% capture part %}<span class="activity-feed-count--boost">{% icon "fas:retweet" %}{{ activity.reposts }}<span class="a11y-only"> repost{% if activity.reposts != 1 %}s{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
-			{%- if activity.bookmarks > 0 %}{% capture part %}<span class="activity-feed-count--reply">{% icon "fas:bookmark" %}{{ activity.bookmarks }}<span class="a11y-only"> bookmark{% if activity.bookmarks != 1 %}s{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
-			{%- if activity.replies > 0 %}{% capture part %}<span class="activity-feed-count--reply">{% icon "fas:reply" %}{{ activity.replies }}<span class="a11y-only"> repl{% if activity.replies != 1 %}ies{% else %}y{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
-			{%- if activity.mentions > 0 %}{% capture part %}<span class="activity-feed-count--boost">{% icon "fas:at" %}{{ activity.mentions }}<span class="a11y-only"> mention{% if activity.mentions != 1 %}s{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
-			{{ parts | join: " " }}
+			{%- if activity.likes > 0 %}{% capture part %}<span class="tag-social--like">{% icon "far:heart" %}{{ activity.likes }}<span class="a11y-only"> {% if activity.likes != 1 %}likes{% else %}like{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+			{%- if activity.reposts > 0 %}{% capture part %}<span class="tag-social--boost">{% icon "fa:retweet" %}{{ activity.reposts }}<span class="a11y-only"> {% if activity.reposts != 1 %}reposts{% else %}repost{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+			{%- if activity.bookmarks > 0 %}{% capture part %}<span class="tag-social--reply">{% icon "fas:bookmark" %}{{ activity.bookmarks }}<span class="a11y-only"> {% if activity.bookmarks != 1 %}bookmarks{% else %}bookmark{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+			{%- assign replyTotal = activity.replies | plus: activity.mentions %}
+			{%- if replyTotal > 0 %}{% capture part %}<span class="tag-social--reply">{% icon "fas:reply-all" %}{{ replyTotal }}<span class="a11y-only"> {% if replyTotal != 1 %}replies{% else %}reply{% endif %}</span></span>{% endcapture %}{% assign parts = parts | push: part %}{% endif %}
+			<span class="tag tag-social">{{ parts | join: "" }}</span>
 		</p>
-		{%- assign faceCount = activity.webmentions | size %}
-		{%- assign faceLimit = 8 %}
-		{%- if faceCount > 8 %}{% assign faceLimit = 7 %}{% endif %}
 		<div class="activity-feed-faces">
-		{%- for webmention in activity.webmentions limit: faceLimit %}
+		{%- for webmention in activity.webmentions limit: 8 %}
 			{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "activity-feed-face" %}
 		{%- endfor %}
-		{%- if faceCount > 8 %}
-			<span class="activity-feed-face activity-feed-more">{% icon "fas:ellipsis" %}<span class="a11y-only">and {{ faceCount | minus: 7 }} more</span></span>
-		{%- endif %}
 		</div>
 	</div>
 </li>

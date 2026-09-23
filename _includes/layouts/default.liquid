@@ -74,7 +74,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 			</div>
 		</nav>
 	</aside>
-{%- assign recentActivity = webmentions | webmentionsRecentActivity: 5 %}
+{%- assign recentActivity = webmentions | webmentionsRecentActivity: 4 %}
 {%- if recentActivity.size > 0 %}
 	<div class="rail-activity hide-singlecol">
 		<div class="top5">Recent Activity</div>
@@ -83,6 +83,17 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 			{% include "webmention-activity.liquid" %}
 		{%- endfor %}
 		</ol>
+		{%- capture railSyndicationUrl %}{{ page.url | absoluteUrl }}{% endcapture %}
+		{%- assign railSyndications = webmentions | webmentionSyndication: railSyndicationUrl %}
+		{%- if railSyndications.size > 0 %}
+		<div class="top5 rail-syndication-hed">Comment on</div>
+		<ul class="rail-syndication list-flush">
+		{%- for post in railSyndications %}
+			{%- assign platformIcon = post | webmentionPlatformIcon %}
+			<li><a href="{{ post.url }}" class="rail-syndication-card" target="_blank" rel="noopener noreferrer">{% icon platformIcon %}<strong>{% if platformIcon contains "bluesky" %}Bluesky{% else %}Mastodon{% endif %}</strong><time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time></a></li>
+		{%- endfor %}
+		</ul>
+		{%- endif %}
 	</div>
 {%- endif %}
 {%- if tocSidebar %}
