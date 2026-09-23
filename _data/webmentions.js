@@ -5,8 +5,9 @@ import lodash from 'lodash';
 import Fetch from "@11ty/eleventy-fetch";
 
 import getBaseUrl from "../_includes/getBaseUrl.js";
-import getSocialMentions, { getPrivateBlueskyAuthors } from "../_11ty/webmentions/social.js";
+import getSocialMentions, { getPrivateBlueskyAuthors, getBlockedBlueskyAuthors } from "../_11ty/webmentions/social.js";
 import getHackerNewsMentions from "../_11ty/webmentions/hackernews.js";
+import getLobstersMentions from "../_11ty/webmentions/lobsters.js";
 import archive from "../_11ty/webmentions/archive.json" with { type: "json" };
 
 // Social posts from the last N days are refetched on every build
@@ -49,16 +50,26 @@ async function fetchWebmentions() {
 
 	// Bridgy copies only supply dates for likes and reposts (the social APIs don’t have them)
 	let knownDates = Object.fromEntries([...archive, ...recent.filter(isBridgy)].map(entry => [entry.url, entry["wm-received"]]));
-	let live = await getSocialMentions({ days: LIVE_DAYS, knownDates });
+	let blockedAuthors = await getBlockedBlueskyAuthors().catch(e => {
+		console.warn("[zachleat.com] Unable to fetch Bluesky blocks:", e);
+		return new Set();
+	});
+	let live = await getSocialMentions({ days: LIVE_DAYS, knownDates, blockedAuthors });
 	live.push(...recent.filter(entry => !isBridgy(entry)));
 	live.push(...await getHackerNewsMentions().catch(e => {
 		console.warn("[zachleat.com] Unable to fetch Hacker News:", e);
+		return [];
+	}));
+	live.push(...await getLobstersMentions().catch(e => {
+		console.warn("[zachleat.com] Unable to fetch Lobsters:", e);
 		return [];
 	}));
 
 	// Live data wins over archived copies of the same like, repost, or reply
 	let liveKeys = new Set(live.map(entry => `${entry.url} ${entry["wm-target"]}`));
 	let results = [...archive.filter(entry => !liveKeys.has(`${entry.url} ${entry["wm-target"]}`)), ...live];
+
+	results = results.filter(entry => !blockedAuthors.has(entry.author?.url?.toLowerCase()));
 
 	// Keep the mention but not the content of unlisted Mastodon posts or Bluesky authors who hide from logged-out viewers
 	let privateAuthors = await getPrivateBlueskyAuthors(results);

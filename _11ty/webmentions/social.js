@@ -6,6 +6,7 @@ import { decode } from "html-entities";
 
 const BLUESKY_API = "https://public.api.bsky.app/xrpc";
 const BLUESKY_ACTOR = "zachleat.com";
+const BLUESKY_DID = "did:plc:xpchjovbk6sxl3bv74z7cs54";
 const MASTODON_API = "https://fediverse.zachleat.com/api/v1";
 const MASTODON_ACCOUNT_ID = "109286461031266152";
 const SITE_HOSTNAMES = ["www.zachleat.com", "zachleat.com"];
@@ -276,6 +277,41 @@ export async function getPrivateBlueskyAuthors(entries) {
 	return privateUrls;
 }
 
+/* Bluesky accounts I’ve blocked (block records are public in my repo) */
+
+export async function getBlockedBlueskyAuthors() {
+	let { service } = await Fetch(`https://plc.directory/${BLUESKY_DID}`, { type: "json", duration: OLD });
+	let pds = service.find(entry => entry.id === "#atproto_pds").serviceEndpoint;
+
+	let dids = [];
+	let cursor;
+	do {
+		let url = new URL(`${pds}/xrpc/com.atproto.repo.listRecords`);
+		url.searchParams.set("repo", BLUESKY_DID);
+		url.searchParams.set("collection", "app.bsky.graph.block");
+		url.searchParams.set("limit", 100);
+		if(cursor) {
+			url.searchParams.set("cursor", cursor);
+		}
+		let json = await Fetch(url.toString(), { type: "json", duration: RECENT });
+		dids.push(...json.records.map(record => record.value.subject));
+		cursor = json.records.length ? json.cursor : undefined;
+	} while(cursor);
+
+	let authorUrls = new Set(dids.map(did => `https://bsky.app/profile/${did}`));
+	for(let i = 0; i < dids.length; i += 25) {
+		let url = new URL(`${BLUESKY_API}/app.bsky.actor.getProfiles`);
+		for(let did of dids.slice(i, i + 25)) {
+			url.searchParams.append("actors", did);
+		}
+		let { profiles } = await Fetch(url.toString(), { type: "json", duration: RECENT });
+		for(let profile of profiles) {
+			authorUrls.add(`https://bsky.app/profile/${profile.handle}`);
+		}
+	}
+	return authorUrls;
+}
+
 /* Social posts older than the rolling window are kept in a source controlled store (written by local builds) */
 
 function readStore() {
@@ -286,7 +322,7 @@ function readStore() {
 	}
 }
 
-export default async function getSocialMentions({ days, knownDates = {} }) {
+export default async function getSocialMentions({ days, knownDates = {}, blockedAuthors = new Set() }) {
 	let since = new Date(Date.now() - days * 1000 * 60 * 60 * 24);
 	let results = await Promise.allSettled([getBlueskyMentions(since), getMastodonMentions(since)]);
 
@@ -325,7 +361,10 @@ export default async function getSocialMentions({ days, knownDates = {} }) {
 		} catch(e) {}
 	}
 
-	updated = Object.fromEntries(Object.entries(updated).sort(([a], [b]) => a.localeCompare(b)));
+	// Blocked authors never reach the store
+	updated = Object.fromEntries(Object.entries(updated)
+		.map(([postUrl, entries]) => [postUrl, entries.filter(entry => !blockedAuthors.has(entry.author?.url?.toLowerCase()))])
+		.sort(([a], [b]) => a.localeCompare(b)));
 	let json = JSON.stringify(updated, null, "\t");
 	if(json !== JSON.stringify(store, null, "\t")) {
 		try {

@@ -114,6 +114,7 @@ export default function(eleventyConfig) {
 		github: "fab:github",
 		reddit: "fab:reddit",
 		hackernews: "fab:hacker-news",
+		lobsters: "fas:shrimp",
 		flickr: "fab:flickr",
 		instagram: "fab:instagram",
 		facebook: "fab:facebook",
@@ -127,6 +128,7 @@ export default function(eleventyConfig) {
 		"www.reddit.com": "reddit",
 		"reddit.com": "reddit",
 		"news.ycombinator.com": "hackernews",
+		"lobste.rs": "lobsters",
 	};
 
 	eleventyConfig.addFilter('webmentionPlatformIcon', webmention => getPlatformIcon(webmention));
@@ -201,8 +203,8 @@ export default function(eleventyConfig) {
 		let knownAuthors = new Set();
 		for(let { target, webmention, time } of entries) {
 			let type = webmention['wm-property'];
-			// Hacker News submissions count their points and comments
-			let counts = webmention['hn-points'] != null ? { likes: webmention['hn-points'], replies: webmention['hn-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
+			// Hacker News and Lobsters submissions count their points and comments
+			let counts = webmention['story-points'] != null ? { likes: webmention['story-points'], replies: webmention['story-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
 			if(!counts) {
 				continue;
 			}
@@ -259,18 +261,19 @@ export default function(eleventyConfig) {
 		"fab:bluesky": "Bluesky",
 		"fab:mastodon": "Mastodon",
 		"fab:hacker-news": "Hacker News",
+		"fas:shrimp": "Lobsters",
 	};
 	const getPlatformName = webmention => platformNames[getPlatformIcon(webmention)] || "the web";
 
 	eleventyConfig.addFilter('webmentionPlatformName', getPlatformName);
 
 	// My own social posts that share a url (only the earliest per platform)
-	eleventyConfig.addFilter('webmentionSyndication', (webmentions, url, includeHackerNews = true) => {
+	eleventyConfig.addFilter('webmentionSyndication', (webmentions, url, includeStories = true) => {
 		let seenPlatforms = new Set();
 		return (webmentions?.mentions?.[url] || [])
-			.filter(entry => entry['wm-property'] === "syndication" && (entry['hn-points'] == null || includeHackerNews && entry['hn-comments'] > 0))
-			// Hacker News last
-			.sort((a, b) => (a['hn-points'] != null) - (b['hn-points'] != null) || getDate(a) - getDate(b))
+			.filter(entry => entry['wm-property'] === "syndication" && (entry['story-points'] == null || includeStories && entry['story-comments'] > 0))
+			// Hacker News and Lobsters last
+			.sort((a, b) => (a['story-points'] != null) - (b['story-points'] != null) || getDate(a) - getDate(b))
 			.filter(entry => {
 				if(!isOriginalPoster(entry)) {
 					return true;

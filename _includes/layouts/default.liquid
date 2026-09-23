@@ -95,7 +95,7 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 			<ul class="rail-syndication list-flush">
 			{%- for post in railSyndications %}
 				{%- assign platformIcon = post | webmentionPlatformIcon %}
-				<li><a href="{{ post.url }}" class="rail-syndication-card{% if post['hn-points'] %} rail-syndication-card--hn{% endif %}" target="_blank" rel="noopener noreferrer">{% icon platformIcon %}<strong>{{ post | webmentionPlatformName }}</strong>{% if post['hn-points'] %}<span>{{ post['hn-comments'] }} comment{% if post['hn-comments'] != 1 %}s{% endif %}</span>{% else %}<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>{% endif %}</a></li>
+				<li><a href="{{ post.url }}" class="rail-syndication-card{% if platformIcon == "fab:hacker-news" %} rail-syndication-card--hn{% endif %}" target="_blank" rel="noopener noreferrer">{% icon platformIcon %}<strong>{{ post | webmentionPlatformName }}</strong>{% if post['story-points'] %}<span>{{ post['story-comments'] }} comment{% if post['story-comments'] != 1 %}s{% endif %}</span>{% else %}<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>{% endif %}</a></li>
 			{%- endfor %}
 			</ul>
 		</div>

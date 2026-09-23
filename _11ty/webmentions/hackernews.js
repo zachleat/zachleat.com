@@ -22,7 +22,7 @@ export default async function getHackerNewsMentions() {
 			received: hit.created_at,
 			text: hit.title,
 		}),
-		"hn-points": hit.points,
-		"hn-comments": hit.num_comments || 0,
+		"story-points": hit.points,
+		"story-comments": hit.num_comments || 0,
 	})));
 }

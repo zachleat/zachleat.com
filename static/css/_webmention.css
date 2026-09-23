@@ -232,7 +232,7 @@ a.rail-syndication-card--hn:is(:link, :visited) {
 	color: var(--icon-color-override);
 	filter: grayscale(.2);
 }
-.rail-syndication-card--hn span {
+.rail-syndication-card span {
 	margin-inline-start: auto;
 	font-size: .85em;
 	color: var(--z-color-text-tertiary);
