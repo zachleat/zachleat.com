@@ -8,8 +8,6 @@ seo:
   openGraphBackgroundImage: /og/sources/calendar.jpg
   openGraphAlt: Dresser top with mini calendar of September and potted plant
 posterImage:
-  showOnPage: true
-  height: 22em
   name: Blessing Ri
   source: https://unsplash.com/photos/white-braille-paper-on-brown-wooden-table-mBRtqyC_Iq0
 attrs:

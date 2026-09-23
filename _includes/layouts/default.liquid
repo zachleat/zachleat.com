@@ -68,11 +68,27 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 	</aside>
 {%- capture railSyndicationUrl %}{{ page.url | absoluteUrl }}{% endcapture %}
 {%- assign railSyndications = webmentions | webmentionSyndication: railSyndicationUrl %}
-{%- if railSyndications.size > 0 or tocSidebar %}
+{%- if appendix == "post" %}
+	{%- assign railOlderPost = collections.activePosts | getNextCollectionItem: page %}
+	{%- assign railNewerPost = collections.activePosts | getPreviousCollectionItem: page %}
+{%- endif %}
+{%- if railSyndications.size > 0 or tocSidebar or railOlderPost or railNewerPost %}
 	<div class="rail-sticky hide-singlecol">
+	{%- if railOlderPost or railNewerPost %}
+		<nav class="rail-nextprev-wrap" aria-label="More posts">
+			<ul class="rail-nextprev list-flush">
+			{%- if railOlderPost %}
+				<li><span class="rail-nextprev-label">{% icon "fas:arrow-left" %}Older</span><a href="{{ railOlderPost.url }}" class="rail-nextprev-card"><strong class="text-ellipsis-multi">{{ railOlderPost.data.title }}</strong></a></li>
+			{%- endif %}
+			{%- if railNewerPost %}
+				<li class="rail-nextprev-newer"><span class="rail-nextprev-label">Newer{% icon "fas:arrow-right" %}</span><a href="{{ railNewerPost.url }}" class="rail-nextprev-card"><strong class="text-ellipsis-multi">{{ railNewerPost.data.title }}</strong></a></li>
+			{%- endif %}
+			</ul>
+		</nav>
+	{%- endif %}
 	{%- if railSyndications.size > 0 %}
 		<div class="rail-syndication-wrap">
-			<div class="top5">Comment on…</div>
+			<div class="top5">Reply to…</div>
 			<ul class="rail-syndication list-flush">
 			{%- for post in railSyndications %}
 				{%- assign platformIcon = post | webmentionPlatformIcon %}

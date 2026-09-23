@@ -48,7 +48,7 @@ More Ideas:
 </div>
 
 <div class="ui">
-	<h2>Open Graph image source</h2>
+	<h1>Open Graph image source</h1>
 	<p>Screenshot the top <code>1200×630</code> of this page. Everything below the card is builder UI and stays out of the shot.</p>
 	<div class="ui-fields">
 		<label>Page
@@ -60,6 +60,15 @@ More Ideas:
 		<a id="open-screenshot" href="" target="_blank" rel="noopener">Open screenshot URL</a>
 		<a id="go-to-page" href="" target="_blank" rel="noopener">Go to page</a>
 	</div>
+	{%- set ogWritingUrls = ["/web/open-graph-easy-build/", "/web/speedy-screenshots/", "/web/api-opengraph-image/", "/web/automatic-opengraph/", "/web/screenshots/"] %}
+	<h2>How this works</h2>
+	<ul class="ui-posts">
+	{%- for post in collections["blog-post"] | reverse %}
+		{%- if post.url in ogWritingUrls %}
+		<li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+		{%- endif %}
+	{%- endfor %}
+	</ul>
 </div>
 
 {# Shown when ?page= is missing or names something that isn’t a post: the

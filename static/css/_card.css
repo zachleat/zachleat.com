@@ -56,7 +56,7 @@ pre + .card {
 	padding-top: 1.75rem;
 }
 .card > line-numbers:first-child {
-	--uln-padding-v: 1.75rem .75rem;
+	--uln-padding-v: 1.75rem var(--uln-code-gutter);
 }
 .card > video {
 	display: block;

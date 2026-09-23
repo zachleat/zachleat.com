@@ -1,6 +1,39 @@
 <aside class="content-appendix{% unless appendix %} content-appendix-bare{% endunless %}" data-pagefind-ignore>
 {%- if appendix %}
 	<div class="appendix">
+	{%- if appendix == "post" %}
+	<div class="content-grid-sibling">
+		{% assign previousPost = collections.activePosts | getPreviousCollectionItem: page %}
+		{% assign nextPost = collections.activePosts | getNextCollectionItem: page %}
+
+		<dl class="nextprev">
+			<dt class="nextprev-next">
+				{%- if nextPost %}
+				<span>&lt; Older</span>
+				{%- endif %}
+			</dt>
+			<dd class="nextprev-next">
+				{%- if nextPost %}
+				<a href="{{ nextPost.url }}">
+					<img src="{% ogImageSource nextPost %}"  alt="{{ nextPost.data.title }}" decoding="async" loading="lazy"class="project_img"{% if nextPost | shouldSkipOpenGraphImageOptimization %} width="1200" height="630" eleventy:ignore{% else %} eleventy:widths="650"{% endif %}>
+				</a>
+				{%- endif -%}
+			</dd>
+			<dt class="nextprev-prev">
+				{%- if previousPost %}
+				<span>Newer &gt;</span>
+				{%- endif %}
+			</dt>
+			<dd class="nextprev-prev">
+				{%- if previousPost %}
+				<a href="{{ previousPost.url }}">
+					<img src="{% ogImageSource previousPost %}"  alt="{{ previousPost.data.title }}" decoding="async" loading="lazy"class="project_img"{% if previousPost | shouldSkipOpenGraphImageOptimization %} width="1200" height="630" eleventy:ignore{% else %} eleventy:widths="650"{% endif %}>
+				</a>
+				{%- endif -%}
+			</dd>
+		</dl>
+	</div>
+	{%- endif %}
 	{%- if webmentionsSummary %}
 		{%- assign recentPeople = webmentions | webmentionsRecentPeople: 85 %}
 		{%- if recentPeople.size > 0 %}
@@ -14,21 +47,20 @@
 		</div>
 		{%- endif %}
 	{%- endif %}
-	{%- if appendix == "post" %}
-		<div id="opengraph-preview" class="share content-grid-sibling">
-			<details>
-				<summary class="hed-h3">Open Graph</summary>
-				<p>This is what will show up when you share this post on Social Media:</p>
-				<img class="share-img" src="{% ogImageSource page %}" decoding="async" loading="lazy" width="1200" height="630" alt="{{ title }}" eleventy:ignore>
-				<p>How did you do this? <a href="/web/automatic-opengraph/">I automated my Open Graph images.</a> (<a href="/opengraph/?page={{ page.url | url_encode }}">Peer behind the curtain at the test page</a>)</p>
-			</details>
-		</div>
-	{%- endif %}
 	{%- unless disableComments %}
 		{%- capture absoluteUrl -%}{{ page.url | absoluteUrl }}{%- endcapture -%}
 		{% include "webmentionlist", absoluteUrl: absoluteUrl %}
 	{%- endunless %}
 	</div>
 {%- endif %}
+	<div class="appendix-rail">
 	{%- include "recent-activity.liquid" %}
+	{%- if appendix == "post" %}{% capture ogPreviewSource %}{% ogImageSource page %}{% endcapture %}{% endif %}
+	{%- if ogPreviewSource != blank %}
+		<div id="opengraph-preview" class="rail-opengraph share hide-singlecol">
+			<div class="top5"><a href="/opengraph/?page={{ page.url | url_encode }}">Open Graph</a></div>
+			<img class="share-img" src="{{ ogPreviewSource }}" decoding="async" loading="lazy" width="1200" height="630" alt="Open Graph image for {{ title }}" eleventy:ignore>
+		</div>
+	{%- endif %}
+	</div>
 </aside>

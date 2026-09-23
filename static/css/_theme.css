@@ -320,9 +320,6 @@ h5,
 	}
 	@media (min-width: 40.625em) { /* 650px */
 		.fullwidth-poster img {
-			/* Padding reveals a rainbow edge that echoes .page-gradient */
-			padding-block-end: 0.1875em;
-			background-image: linear-gradient(238deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff0080);
 			box-shadow: 0 1.25em 2.5em -1.5em rgb(0 0 0 / .6);
 		}
 	}
@@ -436,13 +433,26 @@ h5,
 			padding-inline: var(--z-page-gutter);
 		}
 		/* Rail font size, not the post body size */
-		.content-appendix > .rail-activity {
+		.content-appendix > .appendix-rail {
 			grid-column: rail;
 			align-self: start;
 			position: sticky;
 			top: 1rem;
-			margin-block-start: 0;
 			font-size: 1rem;
+			font-family: var(--z-font-webfont);
+		}
+		.appendix-rail > .rail-activity {
+			position: static;
+		}
+		.appendix-rail > .rail-opengraph {
+			margin-block-start: 2em;
+		}
+		.appendix-rail > :first-child {
+			margin-block-start: 0;
+		}
+		.rail-opengraph .share-img {
+			width: 100%;
+			height: auto;
 		}
 		.content-appendix .activity-feed-item {
 			--activity-feed-bg: var(--z-color-bg-muted);
@@ -545,6 +555,18 @@ h5,
 }
 
 /* Metadata at bottom of blog posts */
+.post-card {
+	margin-block: 3em;
+	padding: 1em;
+	border: 1px solid var(--z-color-border);
+	border-radius: .35em;
+}
+.post-card > :first-child {
+	margin-block-start: 0;
+}
+.post-card > :last-child {
+	margin-block-end: 0;
+}
 .post-metadata {
 	display: flex;
 	flex-wrap: wrap;
@@ -552,11 +574,7 @@ h5,
 }
 /* My social posts that share this post */
 .syndication {
-	margin-block: 1em;
-}
-.syndication-hed {
-	--icon-color-override: currentColor;
-	margin-block: 0 .5em;
+	margin-block-end: 1.368421052632em; /* 1em of .hed-h3 */
 }
 .syndication-cards {
 	display: grid;
@@ -575,7 +593,7 @@ a.syndication-card:is(:link, :visited) {
 	border-radius: var(--z-border-radius-2);
 	background-color: var(--z-color-bg-alt);
 	color: var(--z-color-text);
-	font-size: .8em;
+	font-size: .7em;
 	line-height: 1.4;
 	text-decoration: none;
 }
@@ -766,7 +784,8 @@ h3,
 h3 {
 	margin-top: 2em;
 }
-summary.hed-h3 {
+summary.hed-h3,
+.syndication > .hed-h3 {
 	margin-block: 0 1em;
 }
 h3 + p {
@@ -866,9 +885,27 @@ a[href] > code {
 	color: inherit;
 }
 :root {
-	--uln-padding-v: .75rem;
-	--uln-padding-h: 0 1.5rem;
 	--uln-color: var(--z-color-text-secondary);
+}
+/* Registered so they compute at the code block’s size, not the smaller numbers */
+@property --uln-code-lh {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 0px;
+}
+@property --uln-code-gutter {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 0px;
+}
+line-numbers {
+	--uln-code-lh: 1lh;
+	--uln-code-gutter: var(--z-page-gutter);
+	--uln-lh: var(--uln-code-lh);
+	--uln-padding-v: var(--uln-code-gutter);
+	/* Code blocks bleed into the gutter, so clear it too */
+	--uln-padding-h: 0 calc(var(--uln-code-gutter) + .5rem);
+	--uln-font: .8em var(--z-font-monospace);
 }
 pre {
 	font-family: var(--z-font-monospace);
@@ -1419,6 +1456,10 @@ a[href]:is(:focus, :hover) .project_img {
 }
 .tmpl-page .about {
 	border-radius: 0 0 .35em .35em;
+}
+.tmpl-post .about {
+	margin: 3em 0;
+	border-radius: .35em;
 }
 .about a {
 	word-break: keep-all;

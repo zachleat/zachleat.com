@@ -73,11 +73,11 @@
 	.rail:has(.rail-toc ol > li:not(:only-child), .rail-syndication) .rail-activity {
 		position: static;
 	}
-	.rail-syndication-wrap {
+	:is(.rail-syndication-wrap, .rail-nextprev-wrap) {
 		margin-block-start: 2em;
 		font-family: var(--z-font-webfont);
 	}
-	:is(.rail-activity, .rail-syndication-wrap) .top5 {
+	:is(.rail-activity, .rail-syndication-wrap, .rail-opengraph) .top5 {
 		margin: 0 0 1em;
 		font-size: 0.875em; /* 14px /16 */
 		font-weight: 700;
@@ -91,9 +91,6 @@
 	flex-direction: column;
 	gap: .125em;
 	padding-block: .25em;
-	padding-inline: .25em;
-	border-radius: var(--z-border-radius-1);
-	background-color: var(--activity-feed-bg);
 }
 .activity-feed-item:first-child {
 	margin-block-start: 0;
@@ -187,12 +184,12 @@
 	color: var(--z-color-text-tertiary);
 }
 /* Pared down syndication cards in the rail */
-.rail-syndication {
+:is(.rail-syndication, .rail-nextprev) {
 	display: flex;
 	flex-direction: column;
 	gap: .35em;
 }
-a.rail-syndication-card:is(:link, :visited) {
+a:is(.rail-syndication-card, .rail-nextprev-card):is(:link, :visited) {
 	display: flex;
 	align-items: center;
 	gap: .5em;
@@ -204,8 +201,43 @@ a.rail-syndication-card:is(:link, :visited) {
 	font-size: .9em;
 	text-decoration: none;
 }
-a.rail-syndication-card:is(:link, :visited):is(:hover, :focus-visible) {
+a:is(.rail-syndication-card, .rail-nextprev-card):is(:link, :visited):is(:hover, :focus-visible) {
 	border-color: var(--z-color-text-tertiary);
+}
+.rail-nextprev {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: .5em;
+}
+.rail-nextprev-newer {
+	grid-column: 2;
+}
+.rail-nextprev li {
+	display: flex;
+	flex-direction: column;
+	gap: .25em;
+}
+.rail-nextprev li > a {
+	flex-grow: 1;
+	box-sizing: content-box;
+	min-height: 3lh;
+	line-height: 1.3;
+}
+.rail-nextprev-label {
+	display: inline-flex;
+	align-items: center;
+	gap: .35em;
+	font-size: .75em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--z-color-text-tertiary);
+}
+.rail-nextprev-newer .rail-nextprev-label {
+	align-self: flex-end;
+}
+.rail-nextprev-card strong {
+	--ellipsis-lines: 3;
+	font-weight: 400;
 }
 /* Keep brand colors instead of the rail’s link color */
 .rail-syndication-card .z-icon {

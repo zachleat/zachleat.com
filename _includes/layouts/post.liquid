@@ -90,34 +90,9 @@ classes:
 {% endif %}
 </article>
 
-<hr>
 <article class="content-grid-sibling">
-	{%- capture syndicationUrl %}{{ page.url | absoluteUrl }}{% endcapture %}
-	{%- assign syndications = webmentions | webmentionSyndication: syndicationUrl, false %}
-	{%- if syndications.size > 0 %}
-	<div class="syndication">
-	<p class="syndication-hed"><em>{% icon "fas:comments" %}Comment on…</em></p>
-	<div class="syndication-cards">
-		{%- for post in syndications %}
-		{%- assign platformIcon = post | webmentionPlatformIcon %}
-		<a href="{{ post.url }}" class="syndication-card u-syndication" target="_blank" rel="noopener noreferrer">
-			<span class="syndication-card-hed">
-				<img class="syndication-card-avatar" src="{{ post.author.photo | eleventyImageServiceAvatar }}" alt="" width="36" height="36" loading="lazy" decoding="async" eleventy:ignore>
-				<span class="syndication-card-author">
-					<strong>{{ post.author.name | htmlEntities }}</strong>
-					<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>
-				</span>
-				<span class="syndication-card-platform">{% icon platformIcon %}<span class="a11y-only">{{ post | webmentionPlatformName }}</span></span>
-			</span>
-			{%- if post.content.text %}
-			<span class="syndication-card-text text-ellipsis-multi">{{ post.content.text | escape }}</span>
-			{%- endif %}
-		</a>
-		{%- endfor %}
-	</div>
-	</div>
-	{%- endif %}
-	<p class="post-metadata">
+	{%- capture postCard %}
+	{%- capture postMetadata %}
 		{%- if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
 		<em>{% icon "fas:tag" %}Tags:
 			{% if tags contains "eleventy" %}<a href="/web/?category=eleventy">Eleventy</a>{% endif %}
@@ -131,42 +106,18 @@ classes:
 		{%- if metadata.speaking.country %}
 		<span>{{ metadata.speaking.country | nameToFlag }} <em>{{ metadata.speaking.country }}</em></span>
 		{%- endif %}
-	</p>
+	{%- endcapture %}
+	{%- if postMetadata != blank %}
+	<p class="post-metadata">{{ postMetadata }}</p>
+	{%- endif %}
 	{%- if posterImage.source %}
 	<p><a href="{{ posterImage.source }}"><em>{% indieAvatar "https://unsplash.com/" "z-avatar" %}Poster image{% if posterImage.name %} by {{ posterImage.name }}{% endif %}</em></a></p>
 	{%- endif %}
-</article>
-
-<article class="content-grid-sibling" data-pagefind-ignore>
-	{% assign previousPost = collections.activePosts | getPreviousCollectionItem: page %}
-	{% assign nextPost = collections.activePosts | getNextCollectionItem: page %}
-
-	<dl class="nextprev">
-		<dt class="nextprev-next">
-			{%- if nextPost %}
-			<span>&lt; Older</span>
-			{%- endif %}
-		</dt>
-		<dd class="nextprev-next">
-			{%- if nextPost %}
-			<a href="{{ nextPost.url }}">
-				<img src="{% ogImageSource nextPost %}"  alt="{{ nextPost.data.title }}" decoding="async" loading="lazy"class="project_img"{% if nextPost | shouldSkipOpenGraphImageOptimization %} width="1200" height="630" eleventy:ignore{% else %} eleventy:widths="650"{% endif %}>
-			</a>
-			{%- endif -%}
-		</dd>
-		<dt class="nextprev-prev">
-			{%- if previousPost %}
-			<span>Newer &gt;</span>
-			{%- endif %}
-		</dt>
-		<dd class="nextprev-prev">
-			{%- if previousPost %}
-			<a href="{{ previousPost.url }}">
-				<img src="{% ogImageSource previousPost %}"  alt="{{ previousPost.data.title }}" decoding="async" loading="lazy"class="project_img"{% if previousPost | shouldSkipOpenGraphImageOptimization %} width="1200" height="630" eleventy:ignore{% else %} eleventy:widths="650"{% endif %}>
-			</a>
-			{%- endif -%}
-		</dd>
-	</dl>
+	{%- endcapture %}
+	{%- if postCard != blank %}
+	<div class="post-card">{{ postCard }}
+	</div>
+	{%- endif %}
 </article>
 
 <article class="content-grid-sibling" data-pagefind-ignore>
