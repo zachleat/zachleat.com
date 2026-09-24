@@ -362,6 +362,42 @@ export default function(eleventyConfig) {
 		return count;
 	});
 
+	// People with the most likes, reposts, and replies sitewide in the last 30 days (excluding my own), mentions are mostly scraper blogs
+	const leaderboardTypes = ["like-of", "repost-of", "in-reply-to"];
+	// My project accounts
+	const leaderboardExcludedUrls = [
+		"https://bsky.app/profile/11ty.dev",
+		"https://neighborhood.11ty.dev/@11ty",
+	];
+	let topPeopleCache = new WeakMap();
+	const getRankedPeople = (webmentions) => {
+		let mentions = webmentions?.mentions || {};
+		if(!topPeopleCache.has(mentions)) {
+			let people = new Map();
+			let since = Date.now() - 1000 * 60 * 60 * 24 * 30;
+			for(let [target, list] of Object.entries(mentions)) {
+				for(let webmention of list) {
+					let key = webmention?.author?.url?.toLowerCase();
+					if(!key || leaderboardExcludedUrls.includes(key) || getDate(webmention) < since || !leaderboardTypes.includes(webmention['wm-property']) || getBaseUrl(webmention['wm-target']) !== target || isOriginalPoster(webmention) || isBlocked(webmention)) {
+						continue;
+					}
+					let person = people.get(key);
+					if(!person) {
+						people.set(key, person = { webmention, count: 0 });
+					}
+					person.count++;
+					// Newest avatar and name
+					if(getDate(webmention) > getDate(person.webmention)) {
+						person.webmention = webmention;
+					}
+				}
+			}
+			topPeopleCache.set(mentions, [...people.values()].sort((a, b) => b.count - a.count));
+		}
+		return topPeopleCache.get(mentions);
+	};
+	eleventyConfig.addFilter('webmentionsTopPeople', (webmentions, limit = 8) => getRankedPeople(webmentions).slice(0, limit));
+
 	// Newest sitewide webmentions, one per person
 	eleventyConfig.addFilter('webmentionsRecentPeople', (webmentions, limit = 40) => {
 		return getRecentActivity(webmentions, limit).flatMap(group => group.webmentions).slice(0, limit);

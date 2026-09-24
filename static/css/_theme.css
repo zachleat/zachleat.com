@@ -2305,8 +2305,10 @@ a[href].tag-inline:not(.tag-borderless),
 		font-family: var(--z-font-webfont);
 		line-height: 1.4;
 	}
-	.rail-toc .top5 {
+	/* Matches .tags .top5 */
+	:is(.rail-toc, .rail-syndication-wrap) .top5 {
 		text-transform: uppercase;
+		font-size: 0.875em; /* 14px /16 */
 		margin: 0 0 1em;
 		color: var(--z-color-text-secondary);
 		font-weight: 700;

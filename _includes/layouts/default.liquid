@@ -53,6 +53,10 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 						{%- endfor %}
 					</div>
 				{%- endif %}
+				{%- comment %}Posts show this in the appendix rail{% endcomment %}
+				{%- if hidePostsInSidebar != true and appendix != "post" %}
+					{%- include "rail-popular.liquid" %}
+				{%- endif %}
 				</div>
 			</div>
 		</nav>
@@ -105,6 +109,9 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 	{%- endif %}
 	</div>
 {%- endif %}
+	{%- if webmentionsSummary %}
+		{%- include "rail-top8.liquid" %}
+	{%- endif %}
 </div>
 <main class="content-main" data-role="main" id="skiplink-content">
 	{{ content }}

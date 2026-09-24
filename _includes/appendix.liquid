@@ -55,14 +55,9 @@
 {%- endif %}
 	<div class="appendix-rail">
 	{%- include "recent-activity.liquid" %}
-	{%- if hidePostsInSidebar != true %}
+	{%- if hidePostsInSidebar != true and appendix == "post" %}
 		<div class="tags tags-rail tags-rail-top5 hide-singlecol">
-			<div>
-				<div class="top5"><a href="/web/best-of/">Popular{% icon "fas:fire-flame-curved" %}</a></div>
-				{%- for post in collections.popularPostsRanked limit:4 %}
-				<a href="{{ post.url }}" class="tag tag-popular-rail tag-borderless">{{ post.data.title }}</a>
-				{%- endfor %}
-			</div>
+		{%- include "rail-popular.liquid" %}
 		</div>
 	{%- endif %}
 	</div>

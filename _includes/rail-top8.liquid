@@ -1,0 +1,11 @@
+{%- assign topPeople = webmentions | webmentionsTopPeople: 8 %}
+{%- if topPeople.size > 0 %}
+<div class="rail-top8 hide-singlecol">
+	<div class="top5">Myspace Top 8</div>
+	<ol class="webmentions-leaderboard-list list-flush">
+	{%- for person in topPeople %}
+		<li><a href="{{ person.webmention.author.url }}" class="webmentions-leaderboard-person favicon-optout" title="{{ person.webmention.author.name | remove: "????" | strip | escape }}" target="_blank" rel="noopener noreferrer">{% render "webmention-avatar.liquid", webmention: person.webmention, imageClass: "webmentions-leaderboard-face" %}</a></li>
+	{%- endfor %}
+	</ol>
+</div>
+{%- endif %}

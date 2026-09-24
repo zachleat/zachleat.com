@@ -4,3 +4,68 @@
 .webmentions__facepile > :is(a, span) {
 	width: var(--webmention-avatar-size);
 }
+
+/* Myspace Top 8 */
+.rail-top8 {
+	margin-block-start: 2em;
+	font-family: var(--z-font-webfont);
+}
+/* Bottom of the rail */
+@media (min-width: 61.25em) { /* 980px */
+	.rail:has(> .rail-top8) {
+		display: flex;
+		flex-direction: column;
+	}
+	.rail > .rail-top8 {
+		margin-block-start: auto;
+		padding-block-start: 2em;
+	}
+}
+.rail-top8 .top5 {
+	margin: 0 0 1em;
+	font-size: 0.875em; /* 14px /16 */
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--z-color-text-secondary);
+}
+.webmentions-leaderboard-list {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: .5em;
+	counter-reset: leaderboard;
+}
+.webmentions-leaderboard-list > li {
+	counter-increment: leaderboard;
+	min-width: 0;
+}
+.webmentions-leaderboard-person {
+	position: relative;
+	display: block;
+}
+.webmentions-leaderboard-person::after {
+	content: counter(leaderboard);
+	position: absolute;
+	inset-block-start: -.25em;
+	inset-inline-start: -.25em;
+	min-width: 1.5em;
+	border-radius: 1em;
+	border: 2px solid var(--z-color-bg-muted, var(--z-color-bg));
+	background-color: var(--z-color-text-heading);
+	color: var(--z-color-bg);
+	font-size: .6875em;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+}
+.webmentions-leaderboard-face.webmentions-leaderboard-face[width][height] {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	object-fit: cover;
+	background-color: var(--z-color-bg-alt);
+}
+.webmentions-leaderboard-person:hover .webmentions-leaderboard-face {
+	box-shadow: 0 0 0 2px var(--z-color-link);
+}

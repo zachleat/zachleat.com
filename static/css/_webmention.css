@@ -77,7 +77,7 @@
 		margin-block-start: 2em;
 		font-family: var(--z-font-webfont);
 	}
-	:is(.rail-activity, .rail-syndication-wrap, .rail-opengraph) .top5 {
+	:is(.rail-activity, .rail-opengraph) .top5 {
 		margin: 0 0 1em;
 		font-size: 0.875em; /* 14px /16 */
 		font-weight: 700;
