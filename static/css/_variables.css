@@ -29,6 +29,8 @@
 	--z-color-link-active: #2e7d32;
 	--z-color-link-underline: var(--z-color-link-active);
 	--z-color-code-bg: rgba(0, 0, 0, .08);
+	--z-color-nav-bg: rgba(0, 0, 0, .045);
+	--z-color-nav-bg-hover: rgba(0, 0, 0, .09);
 	--z-color-code-text: #444;
 	--z-color-highlight-bg: #ffc;
 	--z-color-shadow: rgba(0, 0, 0, .15);
@@ -80,6 +82,8 @@
 		--z-color-link-active: #6ee06e;
 		--z-color-link-underline: #4a8f4a;
 		--z-color-code-bg: rgba(255, 255, 255, .12);
+		--z-color-nav-bg: rgba(255, 255, 255, .07);
+		--z-color-nav-bg-hover: rgba(255, 255, 255, .12);
 		--z-color-code-text: #e4e4e4;
 		--z-color-highlight-bg: #4a4520;
 		--z-color-shadow: rgba(255, 255, 255, .18);
@@ -126,6 +130,8 @@
 	--z-color-link-active: #6ee06e;
 	--z-color-link-underline: #4a8f4a;
 	--z-color-code-bg: rgba(255, 255, 255, .12);
+	--z-color-nav-bg: rgba(255, 255, 255, .07);
+	--z-color-nav-bg-hover: rgba(255, 255, 255, .12);
 	--z-color-code-text: #e4e4e4;
 	--z-color-highlight-bg: #4a4520;
 	--z-color-shadow: rgba(255, 255, 255, .18);

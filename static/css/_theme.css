@@ -1141,11 +1141,29 @@ table-saw :is(th, td) {
 		width: 1.15em;
 		height: auto;
 	}
-	.tags-rail-links a[href]:is(:hover, :focus-within) {
-		transform: scale(1.12);
-	}
 	.social a[href]:is(:hover, :focus-within) {
 		transform: scale(1.4);
+	}
+}
+.tags-rail-links :any-link {
+	border: .125em solid transparent;
+	transition: background-color 200ms, border-color 200ms;
+}
+.tags-rail-links :any-link:is(:hover, :focus-within) {
+	border-color: var(--z-color-link-active);
+}
+.tags-rail-links :any-link:not(.active):is(:hover, :focus-within) {
+	background-color: var(--z-color-nav-bg-hover);
+}
+/* Sidebar links have no resting background so use the lighter shade */
+@media (min-width: 61.25em) { /* 980px */
+	.tags-rail-links:not(.tags-rail-links-horizontal) :any-link:not(.active):is(:hover, :focus-within) {
+		background-color: var(--z-color-nav-bg);
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	.social a[href]:is(:hover, :focus-within) {
+		transform: none;
 	}
 }
 .rail .navigation {
@@ -1504,6 +1522,24 @@ a[href]:is(:focus, :hover) .project_img {
 .footer {
 	line-height: 130%;
 	font-style: italic;
+}
+.footer-nav {
+	margin-block-end: 1.5em;
+	font-style: normal;
+}
+/* Inline items so text-wrap: balance evens out rows (no flex equivalent yet) */
+.tags-rail-links-horizontal {
+	text-wrap: balance;
+}
+.footer-nav .tags-rail-links-horizontal {
+	font-size: 1.0526em; /* 20px /19 */
+}
+.tags-rail-links-horizontal > li {
+	display: inline-flex;
+	margin: .125em;
+}
+.tags-rail-links-horizontal :any-link:not(.active) {
+	background-color: var(--z-color-nav-bg);
 }
 .footer-badge {
 	vertical-align: middle;
@@ -2130,20 +2166,15 @@ a[href].tag-inline:not(.tag-borderless),
 }
 @media (max-width: 61.1875em) { /* 979px */
 	.tags-rail-links {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: .25em .5em;
-		text-transform: uppercase;
+		text-align: center;
+		text-wrap: balance;
 	}
 	.tags-rail-links > * {
-		display: flex;
+		display: inline-flex;
+		margin: .125em;
 	}
-	.tags-rail-links > li {
-		border: 0.125em solid var(--z-color-border-light);
-	}
-	.tags-rail-links > li:has(.active) {
-		border-color: transparent;
+	.tags-rail-links :any-link:not(.active) {
+		background-color: var(--z-color-nav-bg);
 	}
 	.tags-rail-links a[href] {
 		display: flex;
