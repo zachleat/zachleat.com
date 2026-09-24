@@ -58,8 +58,13 @@ details.static-comments-empty > summary::-webkit-details-marker {
 .static-comments-thread > summary:hover {
 	color: var(--z-color-link);
 }
+/* Matches a top level comment thread */
 .static-comments-older > summary {
-	margin-block: 1em;
+	margin-block: .75em;
+	padding: 1em;
+	border: 1px solid var(--z-color-border-light);
+	border-radius: .5em;
+	background-color: var(--z-color-bg-alt);
 	font-size: 80%;
 	cursor: pointer;
 	color: var(--z-color-text-tertiary);
