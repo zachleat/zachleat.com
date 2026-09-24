@@ -2294,12 +2294,12 @@ a[href].tag-inline:not(.tag-borderless),
 
 /* Table of Contents in Rail */
 @media (min-width: 61.25em) { /* 980px */
-	.rail-toc table-of-contents:has(ol:empty) > * {
-		display: none;
-	}
-	.rail-toc table-of-contents:not(:has(ol:empty)) {
+	.rail-toc table-of-contents {
 		display: block;
 		margin-block-start: 2em;
+	}
+	.rail-toc table-of-contents:has(.top5:last-child, ol:empty) > * {
+		display: none;
 	}
 
 	/* Syndication links and the table of contents stick together */
