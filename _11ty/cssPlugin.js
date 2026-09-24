@@ -3,7 +3,7 @@ import path from "node:path";
 import { transform } from "lightningcss";
 
 // Minify only for production—local builds stay readable for debugging.
-const MINIFY = !!process.env.PRODUCTION_BUILD;
+const MINIFY = Boolean(process.env.PRODUCTION_BUILD);
 
 function minify(content, filePath) {
 	let { code } = transform({
