@@ -2286,11 +2286,8 @@ a[href].tag-inline:not(.tag-borderless),
 
 /* Table of Contents in Rail */
 @media (min-width: 61.25em) { /* 980px */
-	.rail-toc {
-		visibility: hidden;
-	}
-	.rail-toc:has(ol > li:not(:only-child)) {
-		visibility: visible;
+	.rail-toc table-of-contents:not(:has(ol > li:not(:only-child))) > * {
+		display: none;
 	}
 
 	/* Syndication links and the table of contents stick together */
