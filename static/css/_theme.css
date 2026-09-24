@@ -1206,6 +1206,12 @@ table-saw :is(th, td) {
 	background-image: linear-gradient(var(--z-color-bg) calc(100% - 1rem), transparent);
 }
 .subhed-year {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	line-height: inherit;
+	font-weight: inherit;
+	text-box: normal;
 	font-family: Hex Franklin Tight, system-ui, sans-serif;
 	font-variation-settings: "wdth" 65, "TYTE" 0, "NOTC" 0;
 	font-size: 2.315789473684em; /* 44px /19 */
