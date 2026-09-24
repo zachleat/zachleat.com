@@ -6,10 +6,8 @@ import getBaseUrl from "../_includes/getBaseUrl.js";
 export default function(eleventyConfig) {
 
 	const allowedHTML = {
-		allowedTags: ['b', 'i', 'em', 'strong', 'a'],
-		allowedAttributes: {
-			a: ['href']
-		}
+		allowedTags: ['b', 'i', 'em', 'strong'],
+		allowedAttributes: {}
 	};
 
 	eleventyConfig.addLiquidFilter('sanitizeHTML', content => {
@@ -107,7 +105,25 @@ export default function(eleventyConfig) {
 				threads.push(node);
 			}
 		});
-		return threads;
+		// Most recent threads first
+		return threads.sort((a, b) => getDate(b) - getDate(a));
+	});
+
+	const countReplies = (entry) => (entry?.replies || []).reduce((sum, reply) => sum + 1 + countReplies(reply), 0);
+	eleventyConfig.addFilter('threadReplyCount', countReplies);
+
+	// One reply per unique author, for summary avatars
+	const flattenReplies = (entry) => (entry?.replies || []).flatMap(reply => [reply, ...flattenReplies(reply)]);
+	eleventyConfig.addFilter('threadReplyAuthors', (entry) => {
+		let seen = new Set();
+		return flattenReplies(entry).filter(reply => {
+			let key = reply.author?.url || reply.author?.name || reply.author || reply.url;
+			if(seen.has(key)) {
+				return false;
+			}
+			seen.add(key);
+			return true;
+		});
 	});
 
 	eleventyConfig.addFilter('webmentionIsType', (webmention, type) => {

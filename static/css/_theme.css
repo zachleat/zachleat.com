@@ -2692,6 +2692,9 @@ solar-eclipse-toggle .z-icon {
 aside time-difference {
 	text-transform: capitalize;
 }
+.static-comments-date time-difference {
+	text-transform: none;
+}
 speedlify2-score {
 	font-style: normal;
 	font-size: 0.8125em; /* 13px /16 */

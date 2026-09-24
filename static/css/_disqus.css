@@ -28,7 +28,8 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	padding-inline-start: var(--static-comments-inset-inline);
 }
 /* Thread line runs from the parent avatar down alongside its replies */
-.static-comments-reply:has(> ol > .static-comments-reply)::before {
+.static-comments-reply:has(> ol > .static-comments-reply)::before,
+.static-comments-reply:has(> .static-comments-thread[open])::before {
 	content: "";
 	position: absolute;
 	inset-inline-start: calc(var(--static-comments-inset-inline) + var(--webmention-comment-avatar-size) / 2 - .5px);
@@ -40,6 +41,45 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	align-items: flex-start;
 	flex-wrap: nowrap;
 	gap: .75em;
+}
+.static-comments-thread > summary {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+	margin-block-start: .75em;
+	padding-inline-start: var(--webmention-comment-avatar-size);
+	cursor: pointer;
+	color: var(--z-color-text-tertiary);
+	list-style: none;
+}
+.static-comments-thread > summary::-webkit-details-marker {
+	display: none;
+}
+.static-comments-thread > summary:hover {
+	color: var(--z-color-link);
+}
+.static-comments-older > summary {
+	margin-block: 1em;
+	font-size: 80%;
+	cursor: pointer;
+	color: var(--z-color-text-tertiary);
+}
+.static-comments-older > summary:hover {
+	color: var(--z-color-link);
+}
+.static-comments-thread-faces {
+	display: flex;
+}
+.static-comments-thread-face {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	object-fit: cover;
+	background-color: var(--z-color-bg-alt);
+	box-shadow: 0 0 0 2px var(--static-comments-row-bg, var(--z-color-bg));
+}
+.static-comments-thread-face + .static-comments-thread-face {
+	margin-inline-start: -.375em;
 }
 .static-comments-title {
 	flex: 0 1 auto;
@@ -82,28 +122,23 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
+
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 6;
+	line-clamp: 6;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.static-comments-msg-clamped {
+	cursor: pointer;
+}
+.static-comments-msg-expanded {
+	display: block;
+	overflow: visible;
 }
 .static-comments-reply-salty > .static-comments-msg {
 	font-family: Comic Sans MS, Chalkboard SE, fantasy;
-}
-
-.static-comments-msg-long {
-	max-height: 18.75em; /* 300px /16 */
-	overflow: hidden;
-	position: relative;
-}
-.static-comments-msg-long:after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 6em;
-	background-image: linear-gradient(to bottom,transparent,var(--static-comments-row-bg, var(--z-color-bg)));
-}
-.static-comments-reply-salty > .static-comments-msg-long {
-	font-family: inherit;
 }
 
 .static-comments-webmentions > .static-comments-reply,

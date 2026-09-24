@@ -11,7 +11,7 @@
       <em class="static-comments-date">
         {%- assign platformIcon = webmention | webmentionPlatformIcon %}
         {%- if webmention.url != "" %}<a class="h-card u-url favicon-optout" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">{% endif -%}
-        {% icon platformIcon %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" later"><time class="dt-published" datetime="{{ webmention.published }}" title="{{ webmention.published | readableDateFromISO: "dd LLL yyyy" }}">{{ webmention.published | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
+        {% icon platformIcon %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" after posting"><time class="dt-published" datetime="{{ webmention.published }}" title="{{ webmention.published | readableDateFromISO }}">{{ webmention.published | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
         {%- if webmention.url != "" %}</a>{% endif -%}
       </em>
     {% endif %}
@@ -21,7 +21,7 @@
   {% elsif webmention['content-hidden'] %}
   <div class="static-comments-msg"><p><em>This post is only visible on {{ webmention | webmentionPlatformName }}.</em></p></div>
   {% elsif webmention.content.text.length <= 5000 %}
-  <div class="static-comments-msg p-content{% if webmention.content.text.length > 5000 %} static-comments-msg-long{% endif %}"><p>
+  <div class="static-comments-msg p-content"><p>
     {%- if webmention.published %}{% elsif webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}
@@ -49,10 +49,21 @@
   <a href="{{ webmention['wm-target'] }}" class="tag-inline tag-cased">{{ webmention['wm-target'] | localUrl }}</a>
   {% endif %}
   {% if webmention.replies.size > 0 %}
+  {%- capture replyList %}
   <ol>
   {% for reply in webmention.replies %}
     {% include "webmention", webmention: reply %}
   {% endfor %}
   </ol>
+  {%- endcapture %}
+  {%- assign replyCount = webmention | threadReplyCount %}
+  {% if webmention.isNested or replyCount == 1 %}
+  {{ replyList }}
+  {% else %}
+  <details class="static-comments-thread">
+    <summary><span class="static-comments-thread-faces">{% assign replyAuthors = webmention | threadReplyAuthors %}{% for reply in replyAuthors limit: 5 %}{% render "webmention-avatar.liquid", webmention: reply, imageClass: "static-comments-thread-face" %}{% endfor %}</span>Show {{ replyCount }} replies</summary>
+    {{ replyList }}
+  </details>
+  {% endif %}
   {% endif %}
 </li><!-- /static-comments-reply -->

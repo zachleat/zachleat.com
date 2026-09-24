@@ -31,22 +31,40 @@
   {% if repliesSize > 0 %}
   {%- assign threads = replies | webmentionThreads -%}
   {%- assign threadsSize = disqus.comments | size | plus: threads.size -%}
-  {%- assign commentsPerThread = 0 -%}
-  {%- if threadsSize > 1 %}{% assign commentsPerThread = repliesSize | times: 1.0 | divided_by: threadsSize | round %}{% endif -%}
-  <details id="comments">
-    <summary class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}{% if commentsPerThread > 1 %} in {{ threadsSize }} Threads{% endif %}</summary>
+  <div id="comments">
+    <div class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}{% if threadsSize > 1 %} in {{ threadsSize }} Threads{% endif %}</div>
+    {%- assign visibleThreads = 6 -%}
+    {%- assign disqusVisible = visibleThreads | minus: threads.size | at_least: 0 -%}
+    {%- assign olderThreadsSize = threadsSize | minus: visibleThreads -%}
     <ol class="static-comments static-comments-webmentions favicon-optin">
-      {% for webmention in threads %}
+      {% for webmention in threads limit: visibleThreads %}
         {% include "webmention" %}
       {% endfor %}
     </ol>
 
     <ol class="static-comments favicon-optin">
-    {% for comment in disqus.comments %}
+    {% for comment in disqus.comments limit: disqusVisible %}
       {% include "comment-entry.html" %}
     {% endfor %}
     </ol>
-  </details>
+
+    {% if olderThreadsSize > 0 %}
+    <details class="static-comments-older">
+      <summary>Show {{ olderThreadsSize }} older thread{% if olderThreadsSize != 1 %}s{% endif %}</summary>
+      <ol class="static-comments static-comments-webmentions favicon-optin">
+        {% for webmention in threads offset: visibleThreads %}
+          {% include "webmention" %}
+        {% endfor %}
+      </ol>
+
+      <ol class="static-comments favicon-optin">
+      {% for comment in disqus.comments offset: disqusVisible %}
+        {% include "comment-entry.html" %}
+      {% endfor %}
+      </ol>
+    </details>
+    {% endif %}
+  </div>
   {% endif %}
 
   {% comment %}Note thie combines both repost and mention, similar to how Twitter now combines retweet and quote tweet{% endcomment %}
