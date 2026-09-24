@@ -2388,6 +2388,16 @@ a[href].tag-inline:not(.tag-borderless),
 	@media (max-height: 43.75em) { /* 700px */
 		.rail-toc table-of-contents > ol {
 			font-size: .8125em;
+			columns: 2;
+			column-gap: 1em;
+			border-inline-start: 0;
+		}
+		/* Track border moves to items so each column gets one */
+		.rail-toc table-of-contents > ol > li {
+			border-inline-start: 2px solid color-mix(in srgb, var(--z-color-border-light) 50%, transparent);
+		}
+		.rail-toc table-of-contents a {
+			break-inside: avoid;
 		}
 	}
 }
