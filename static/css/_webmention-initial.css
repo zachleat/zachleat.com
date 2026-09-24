@@ -32,30 +32,12 @@
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: .5em;
-	counter-reset: leaderboard;
 }
 .webmentions-leaderboard-list > li {
-	counter-increment: leaderboard;
 	min-width: 0;
 }
 .webmentions-leaderboard-person {
-	position: relative;
 	display: block;
-}
-.webmentions-leaderboard-person::after {
-	content: counter(leaderboard);
-	position: absolute;
-	inset-block-start: -.25em;
-	inset-inline-start: -.25em;
-	min-width: 1.5em;
-	border-radius: 1em;
-	border: 2px solid var(--z-color-bg-muted, var(--z-color-bg));
-	background-color: var(--z-color-text-heading);
-	color: var(--z-color-bg);
-	font-size: .6875em;
-	font-weight: 700;
-	line-height: 1.5;
-	text-align: center;
 }
 .webmentions-leaderboard-face.webmentions-leaderboard-face[width][height] {
 	display: block;
