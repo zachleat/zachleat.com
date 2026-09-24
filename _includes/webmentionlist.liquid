@@ -32,7 +32,7 @@
   {%- assign threads = replies | webmentionThreads -%}
   {%- assign threadsSize = disqus.comments | size | plus: threads.size -%}
   <div id="comments">
-    <div class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}{% if threadsSize > 1 %} in {{ threadsSize }} Threads{% endif %}</div>
+    <div class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}{% if threadsSize > 1 and threadsSize < repliesSize %} in {{ threadsSize }} Threads{% endif %}</div>
     {%- assign visibleThreads = 4 -%}
     {%- assign maxThreadsShownAll = visibleThreads | times: 2 -%}
     {%- if threadsSize <= maxThreadsShownAll %}{% assign visibleThreads = threadsSize %}{% endif -%}

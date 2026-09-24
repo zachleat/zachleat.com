@@ -37,7 +37,7 @@ function htmlToText(html = "") {
 }
 
 // Matches webmention.io’s jf2 shape so the templates keep working
-export function toEntry({ url, target, property, author, published, received, text, images, otherMedia, parent, visibility }) {
+export function toEntry({ url, target, property, author, published, received, text, images, otherMedia, parent, visibility, mentions }) {
 	let entry = {
 		type: "entry",
 		author: { type: "card", ...author },
@@ -64,6 +64,10 @@ export function toEntry({ url, target, property, author, published, received, te
 	}
 	if(visibility) {
 		entry.visibility = visibility;
+	}
+	// Mentioned profiles, the text drops the server from Mastodon handles
+	if(mentions?.length) {
+		entry.mentions = mentions;
 	}
 	return entry;
 }
@@ -199,6 +203,8 @@ const mastodonAuthor = account => ({
 
 const getMastodonLinks = status => [status.card?.url, ...[...status.content.matchAll(/href="([^"]+)"/g)].map(match => decode(match[1]))];
 
+const getMastodonMentionUrls = status => (status.mentions || []).map(({ acct, url }) => ({ acct, url }));
+
 const isMastodonImage = media => media.type === "image" || media.type === "gifv";
 const getMastodonImages = status => (status.media_attachments || [])
 	.filter(isMastodonImage)
@@ -256,7 +262,7 @@ async function getMastodonMentions(since) {
 			}
 			let replyUrls = Object.fromEntries(replies.map(reply => [reply.id, reply.url]));
 			for(let reply of replies) {
-				entries.push(toEntry({ url: reply.url, target, property: "in-reply-to", author: mastodonAuthor(reply.account), published: reply.created_at, received: reply.created_at, text: htmlToText(reply.content), images: getMastodonImages(reply), otherMedia: hasMastodonOtherMedia(reply), parent: replyUrls[reply.in_reply_to_id], visibility: reply.visibility }));
+				entries.push(toEntry({ url: reply.url, target, property: "in-reply-to", author: mastodonAuthor(reply.account), published: reply.created_at, received: reply.created_at, text: htmlToText(reply.content), images: getMastodonImages(reply), otherMedia: hasMastodonOtherMedia(reply), parent: replyUrls[reply.in_reply_to_id], visibility: reply.visibility, mentions: getMastodonMentionUrls(reply) }));
 			}
 		}
 	}

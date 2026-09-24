@@ -19,10 +19,41 @@ export default function(eleventyConfig) {
 	const mentionRegex = new RegExp(`(^|[^\\w@/.])@(${handlePattern})`, "g");
 	const leadingMentionsRegex = new RegExp(`^\\s*((?:@${handlePattern}(?:\\s+|$))+)`);
 
-	const toPill = handle => `<span class="static-comments-mention">${handle}</span>`;
+	// Mastodon text drops the server from mentions, so use the mentioned profiles or someone commenting on the post
+	const getMentionUrl = (handle, webmention, commenters = []) => {
+		let lowercaseHandle = handle.toLowerCase();
+		let mention = webmention?.mentions?.find(({ acct }) => acct.toLowerCase() === lowercaseHandle)
+			|| webmention?.mentions?.find(({ acct }) => acct.split("@")[0].toLowerCase() === lowercaseHandle);
+		if(mention) {
+			return mention.url;
+		}
+		let commenter = commenters.find(entry => entry?.author?.url && getAuthorHandles(entry).includes(lowercaseHandle));
+		if(commenter) {
+			return commenter.author.url;
+		}
+		let [user, host] = handle.split("@");
+		switch(getPlatformIcon(webmention)) {
+			case platformIcons.bluesky:
+				return handle.includes(".") && !host ? `https://bsky.app/profile/${handle}` : undefined;
+			case platformIcons.mastodon:
+				return host ? `https://${host}/@${user}` : undefined;
+			case platformIcons.twitter:
+				return `https://twitter.com/${handle}`;
+			case platformIcons.github:
+				return `https://github.com/${handle}`;
+		}
+	};
+
+	const toPill = (handle, webmention, commenters, linkIcon = "") => {
+		let url = getMentionUrl(handle, webmention, commenters);
+		if(url) {
+			return `<a href="${url}" class="static-comments-mention static-comments-mention-link favicon-optout" target="_blank" rel="noopener noreferrer">${linkIcon}${handle}</a>`;
+		}
+		return `<span class="static-comments-mention">${handle}</span>`;
+	};
 
 	// Nested replies drop the leading mentions, the thread already shows who they’re replying to
-	eleventyConfig.addFilter('webmentionMentionPills', (text = "", isNested = false) => {
+	eleventyConfig.addFilter('webmentionMentionPills', (text = "", isNested = false, webmention, commenters, linkIcon) => {
 		let replyingTo = "";
 		text = text.replace(leadingMentionsRegex, (match, mentions) => {
 			if(isNested) {
@@ -31,12 +62,12 @@ export default function(eleventyConfig) {
 			// Top level replies to me are already implied
 			let handles = mentions.trim().split(/\s+/).map(handle => handle.slice(1)).filter(handle => !getOwnHandles().includes(handle.toLowerCase()));
 			if(handles.length) {
-				replyingTo = `<span class="static-comments-replying-to">Replying to ${handles.map(toPill).join(" ")}</span>`;
+				replyingTo = `<span class="static-comments-replying-to">Replying to ${handles.map(handle => toPill(handle, webmention, commenters, linkIcon)).join(" ")}</span>`;
 			}
 			return "";
 		});
 
-		return replyingTo + text.replace(mentionRegex, (match, prefix, handle) => `${prefix}${toPill(handle)}`);
+		return replyingTo + text.replace(mentionRegex, (match, prefix, handle) => `${prefix}${toPill(handle, webmention, commenters, linkIcon)}`);
 	});
 
 	const authorUrls = [

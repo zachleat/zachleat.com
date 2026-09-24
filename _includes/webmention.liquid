@@ -1,5 +1,6 @@
 <li class="static-comments-reply u-comment h-cite" id="webmention-{{ webmention['wm-id'] }}">
   {%- capture missingEmoji %}<span class="static-comments-missing-emoji" title="Missing emoji" role="img" aria-label="Missing emoji">{% icon "fas:clipboard-question" %}</span>{% endcapture %}
+  {%- capture mentionLinkIcon %}{% icon "fas:user" %}{% endcapture %}
   {%- assign isOriginalPoster = webmention | webmentionIsOriginalPoster %}
   <div class="static-comments-hed">
     {%- include "webmention-avatar.liquid" %}
@@ -29,7 +30,7 @@
     {%- if webmention.published %}{% elsif webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}
-    {{ webmention.content.text | escape | webmentionMentionPills: webmention.isNested | replace: "????", missingEmoji }}
+    {{ webmention.content.text | escape | webmentionMentionPills: webmention.isNested, webmention, replies, mentionLinkIcon | replace: "????", missingEmoji }}
   </p></div>
   {% endif %}
 

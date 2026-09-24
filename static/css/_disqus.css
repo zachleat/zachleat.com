@@ -265,6 +265,23 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	white-space: nowrap;
 	word-break: normal;
 }
+.static-comments-mention-link {
+	text-decoration: none;
+	color: var(--z-color-text);
+	background-color: color-mix(in srgb, currentColor 10%, transparent);
+	box-shadow: none;
+	padding-inline-start: .4375em;
+}
+.static-comments-mention-link:hover {
+	background-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+.static-comments-mention-link .z-icon {
+	width: .75em;
+	height: .75em;
+	margin-inline-end: .3125em;
+	vertical-align: -.0625em;
+	opacity: .6;
+}
 .static-comments-missing-emoji {
 	color: var(--z-color-icon-muted);
 }
