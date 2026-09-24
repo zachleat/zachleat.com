@@ -2286,7 +2286,7 @@ a[href].tag-inline:not(.tag-borderless),
 
 /* Table of Contents in Rail */
 @media (min-width: 61.25em) { /* 980px */
-	.rail-toc table-of-contents:not(:has(ol > li:not(:only-child))) > * {
+	.rail-toc table-of-contents:has(ol:empty) > * {
 		display: none;
 	}
 
@@ -2298,7 +2298,6 @@ a[href].tag-inline:not(.tag-borderless),
 	.rail-toc {
 		margin-top: 2em;
 		font-family: var(--z-font-webfont);
-		font-size: 0.875em; /* 14px /16 */
 		line-height: 1.4;
 	}
 	.rail-toc .top5 {
