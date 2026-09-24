@@ -60,6 +60,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 }
 /* Matches a top level comment thread */
 .static-comments-older > summary {
+	--static-comments-row-bg: var(--z-color-bg-alt);
 	margin-block: .75em;
 	padding: 1em;
 	border: 1px solid var(--z-color-border-light);
@@ -74,6 +75,10 @@ details.static-comments-empty > summary::-webkit-details-marker {
 }
 .static-comments-thread-faces {
 	display: flex;
+}
+.static-comments-older > summary .static-comments-thread-faces {
+	float: inline-end;
+	margin-inline-start: .5em;
 }
 .static-comments-thread-face {
 	width: 1.5em;

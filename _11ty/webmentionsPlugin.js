@@ -177,16 +177,25 @@ export default function(eleventyConfig) {
 
 	// One reply per unique author, for summary avatars
 	const flattenReplies = (entry) => (entry?.replies || []).flatMap(reply => [reply, ...flattenReplies(reply)]);
-	eleventyConfig.addFilter('threadReplyAuthors', (entry) => {
+	const uniqueAuthors = (entries) => {
 		let seen = new Set();
-		return flattenReplies(entry).filter(reply => {
-			let key = reply.author?.url || reply.author?.name || reply.author || reply.url;
+		return entries.filter(entry => {
+			let key = entry.author?.url || entry.author?.name || entry.author || entry.url;
 			if(seen.has(key)) {
 				return false;
 			}
 			seen.add(key);
 			return true;
 		});
+	};
+	eleventyConfig.addFilter('threadReplyAuthors', (entry) => uniqueAuthors(flattenReplies(entry)));
+
+	// Unique top level authors (webmentions then Disqus) of collapsed threads, excluding the original poster
+	eleventyConfig.addFilter('olderThreadAuthors', (threads, disqusComments, threadsOffset, disqusOffset) => {
+		return uniqueAuthors([
+			...(threads || []).slice(threadsOffset).filter(entry => !isOriginalPoster(entry)),
+			...(disqusComments || []).slice(disqusOffset).filter(comment => !authorDisqusNames.includes(comment?.author)),
+		]);
 	});
 
 	eleventyConfig.addFilter('webmentionIsType', (webmention, type) => {

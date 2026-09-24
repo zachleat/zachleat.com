@@ -52,7 +52,8 @@
 
     {% if olderThreadsSize > 0 %}
     <details class="static-comments-older">
-      <summary>Show {{ olderThreadsSize }} older thread{% if olderThreadsSize != 1 %}s{% endif %}</summary>
+      {%- assign olderThreadAuthors = threads | olderThreadAuthors: disqus.comments, visibleThreads, disqusVisible -%}
+      <summary>Show {{ olderThreadsSize }} older thread{% if olderThreadsSize != 1 %}s{% endif %}<span class="static-comments-thread-faces">{% for author in olderThreadAuthors limit: 10 %}{% if author.avatar %}<img src="{{ author.avatar | escape }}" class="static-comments-thread-face" width="48" height="48" alt="{{ author.author | escape }}" loading="lazy" decoding="async" eleventy:ignore>{% else %}{% render "webmention-avatar.liquid", webmention: author, imageClass: "static-comments-thread-face" %}{% endif %}{% endfor %}</span></summary>
       <ol class="static-comments static-comments-webmentions favicon-optin">
         {% for webmention in threads offset: visibleThreads %}
           {% include "webmention" %}
