@@ -1205,7 +1205,7 @@ table-saw :is(th, td) {
 	margin-block-end: -.5rem;
 	background-image: linear-gradient(var(--z-color-bg) calc(100% - 1rem), transparent);
 }
-.subhed-year {
+.subhed .subhed-year {
 	margin: 0;
 	padding: 0;
 	border: 0;

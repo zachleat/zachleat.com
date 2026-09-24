@@ -4,7 +4,7 @@
 {%- if currentyear != year and ignoreYear != "true" %}
 {%- unless year == blank %}</ol></li>{% endunless %}
 <li class="posts-year"{% if listItems %} data-filter-category="{{ listItems | getFilterCategoriesForYear: currentyear }}" data-filter-results-exclude{% endif %}><ol class="posts">
-<li class="subhed" id="{{ currentyear }}"><div class="spark">
+<li class="subhed"><div class="spark">
 		<h2 class="subhed-year">{{ currentyear }}</h2>
 		{% if listItems %} <span class="subhed-count" data-filter-category data-filter-results-exclude>×{{ listItems | getPostCountForYear: currentyear }}</span>{% endif %}
 		{%- capture postsPerYearValues %}{{ listItems | getWeeklyPostCountForYear: currentyear }}{% endcapture %}
