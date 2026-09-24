@@ -291,8 +291,8 @@ export default function(eleventyConfig) {
 		let knownAuthors = new Set();
 		for(let { target, webmention, time, views } of entries) {
 			let type = webmention?.['wm-property'];
-			// Hacker News and Lobsters submissions count their points and comments
-			let counts = views ? { views } : webmention['story-points'] != null ? { likes: webmention['story-points'], replies: webmention['story-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
+			// Hacker News and Lobsters submissions count as a repost plus their points and comments
+			let counts = views ? { views } : webmention['story-points'] != null ? { likes: webmention['story-points'], reposts: 1, replies: webmention['story-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
 			if(!counts) {
 				continue;
 			}
@@ -459,7 +459,9 @@ export default function(eleventyConfig) {
 		let knownUrls = {};
 		return webmentions.mentions[url]
 			.filter(entry => {
-				if(!allowedTypes.includes(entry['wm-property'])) {
+				// Hacker News and Lobsters submissions count as reposts
+				let type = entry['story-points'] != null ? "repost-of" : entry['wm-property'];
+				if(!allowedTypes.includes(type)) {
 					return false;
 				}
 
