@@ -22,11 +22,6 @@ classes:
 {%- elsif toot %}
 			<em><a href="{{ toot }}">On Mastodon</a></em>
 {%- endif %}
-			<span class="tags">
-				{%- assign post = page -%}
-				{%- assign alwaysShowStats = true -%}
-				{%- include "post-popularity-social-tags.html" -%}
-			</span>
 {%- if JS_ENABLED %}
 			<span class="sub-newline">
 				<em>{{ page.date | readableDate }}</em>
@@ -104,7 +99,7 @@ classes:
 		</em>
 		{%- endif %}
 		{%- if metadata.speaking.country %}
-		<span>{{ metadata.speaking.country | nameToFlag }} <em>{{ metadata.speaking.country }}</em></span>
+		<span><em>Event in</em> {{ metadata.speaking.country | nameToFlag }} <em>{{ metadata.speaking.country }}</em></span>
 		{%- endif %}
 	{%- endcapture %}
 	{%- if postMetadata != blank %}

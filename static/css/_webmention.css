@@ -73,8 +73,10 @@
 	.rail:has(.rail-toc ol > li:not(:only-child), .rail-syndication) .rail-activity {
 		position: static;
 	}
-	:is(.rail-syndication-wrap, .rail-nextprev-wrap) {
+	:is(.rail-syndication-wrap, .rail-stats-wrap, .rail-nextprev-wrap) {
 		margin-block-start: 2em;
+	}
+	:is(.rail-syndication-wrap, .rail-stats-wrap, .rail-nextprev-wrap) {
 		font-family: var(--z-font-webfont);
 	}
 	:is(.rail-activity, .rail-opengraph) .top5 {

@@ -1,0 +1,9 @@
+{%- assign postRank = analytics[post.url].rankPerDaysPosted -%}
+{%- assign postRankAllTime = analytics[post.url].rankTotal -%}
+{%- assign MAXIMUM_RANK = 20 -%}
+{%- if alwaysShowRank %}{% assign MAXIMUM_RANK = 999999 %}{% endif -%}
+{%- if postRank and postRank <= MAXIMUM_RANK -%}
+	<a href="/web/best-of/" class="tag" title="Popularity Ranking">{% icon "fas:fire-flame-curved" %}#{{ postRank }}</a>
+{%- elsif postRankAllTime and postRankAllTime <= MAXIMUM_RANK %}
+	<a href="/web/best-of/total-views/" class="tag" title="Popularity Ranking (All Time)">{% icon "fas:calculator" %}#{{ postRankAllTime }}</a>
+{%- endif -%}

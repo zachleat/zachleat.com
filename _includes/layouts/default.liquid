@@ -44,6 +44,27 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 					<span>{{ currentYear }}</span>
 				</a>
 
+				{%- if appendix == "post" or page.url == "/" or page.url == "/web/" %}
+					<div class="rail-stats-wrap hide-singlecol">
+						{%- assign post = page %}
+						<div class="rail-stats-hed">
+							<div class="top5">Page Activity</div>
+							<span class="tags rail-stats">{% assign alwaysShowRank = true %}{% include "post-popularity-tag.html" %}{% assign alwaysShowRank = false %}</span>
+						</div>
+						<div class="tags rail-stats">
+							{%- assign alwaysShowStats = true -%}
+							{%- assign skipPopularityTag = true -%}
+							{%- include "post-popularity-social-tags.html" -%}
+							{%- assign alwaysShowStats = false -%}
+							{%- assign skipPopularityTag = false -%}
+						</div>
+					</div>
+				{%- endif %}
+
+				{%- assign railShowTop5 = false %}
+				{%- if collections.pinnedPosts.size > 0 %}{% assign railShowTop5 = true %}{% endif %}
+				{%- if hidePostsInSidebar != true and appendix != "post" %}{% assign railShowTop5 = true %}{% endif %}
+				{%- if railShowTop5 %}
 				<div class="tags tags-rail tags-rail-top5 hide-singlecol">
 				{%- if collections.pinnedPosts | size %}
 					<div>
@@ -56,8 +77,9 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 				{%- comment %}Posts show this in the appendix rail{% endcomment %}
 				{%- if hidePostsInSidebar != true and appendix != "post" %}
 					{%- include "rail-popular.liquid" %}
-				{%- endif %}
+				{%- endif -%}
 				</div>
+				{%- endif -%}
 			</div>
 		</nav>
 	</aside>

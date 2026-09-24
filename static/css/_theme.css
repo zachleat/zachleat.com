@@ -1601,6 +1601,9 @@ a[href].tag-inline:not(.tag-borderless),
 .tags a[href].tag:not(.tag-borderless) {
 	border: 1px solid var(--z-color-border);
 }
+.tags a[href].tag:has(svg :is([href="#fas-fa-fire-flame-curved"], [href="#fas-fa-calculator"])) {
+	border-color: var(--shadow-color);
+}
 
 /* Social proof pill */
 .tags .tag-social {
@@ -2294,19 +2297,44 @@ a[href].tag-inline:not(.tag-borderless),
 	.rail-toc table-of-contents:has(ol:empty) > * {
 		display: none;
 	}
+	.rail-toc table-of-contents:not(:has(ol:empty)) {
+		display: block;
+		margin-block-start: 2em;
+	}
 
 	/* Syndication links and the table of contents stick together */
 	.rail-sticky {
 		position: sticky;
 		top: calc(var(--rail-header-size) + 1rem);
 	}
+	.rail-stats-hed {
+		display: flex;
+		align-items: center;
+		gap: .5em;
+		margin-block-end: .5em;
+		min-height: 1.6927em; /* popularity tag height: 13px × 25/12 */
+	}
+	.rail-stats-wrap .rail-stats-hed .top5 {
+		margin: 0;
+	}
+	.rail-stats .tag {
+		font-size: 0.8125em; /* 13px /16 */
+	}
+	.rail-stats :is(.tag:not(.tag-social), .tag-social > *) {
+		height: 2.0833em; /* 25px /12 */
+	}
+	.rail-stats .tag-social {
+		height: auto;
+	}
+	.rail .rail-stats :link:not(:hover, :focus) {
+		--icon-color-override: initial;
+	}
 	.rail-toc {
-		margin-top: 2em;
 		font-family: var(--z-font-webfont);
 		line-height: 1.4;
 	}
 	/* Matches .tags .top5 */
-	:is(.rail-toc, .rail-syndication-wrap) .top5 {
+	:is(.rail-toc, .rail-syndication-wrap, .rail-stats-wrap) .top5 {
 		text-transform: uppercase;
 		font-size: 0.875em; /* 14px /16 */
 		margin: 0 0 1em;
