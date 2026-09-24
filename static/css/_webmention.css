@@ -208,6 +208,10 @@
 	flex-direction: column;
 	gap: .35em;
 }
+/* Safari renders the empty ::marker on its own line above block-level children */
+.rail-syndication > li {
+	display: block;
+}
 a:is(.rail-syndication-card, .rail-nextprev-card):is(:link, :visited) {
 	display: flex;
 	align-items: center;
