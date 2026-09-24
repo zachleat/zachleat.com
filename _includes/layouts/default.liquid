@@ -65,6 +65,26 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 {%- endif %}
 {%- if railSyndications.size > 0 or tocSidebar or railOlderPost or railNewerPost %}
 	<div class="rail-sticky hide-singlecol">
+	{%- if tocSidebar %}
+		<nav class="rail-toc" aria-labelledby="rail-toc-title">
+			<is-land on:visible import="/static/table-of-contents.js">
+				<table-of-contents selector="{{ tocSelector | default: 'main :is(h2, h3)' }}">
+					<div class="top5" id="rail-toc-title">On this Page</div>
+				</table-of-contents>
+			</is-land>
+		</nav>
+	{%- endif %}
+	{%- if railSyndications.size > 0 %}
+		<div class="rail-syndication-wrap">
+			<div class="top5">Reply to…</div>
+			<ul class="rail-syndication list-flush">
+			{%- for post in railSyndications %}
+				{%- assign platformIcon = post | webmentionPlatformIcon -%}
+				<li><a href="{{ post.url }}" class="rail-syndication-card{% if platformIcon == "fab:hacker-news" %} rail-syndication-card--hn{% endif %}" target="_blank" rel="noopener noreferrer">{% icon platformIcon %}<strong>{{ post | webmentionPlatformName }}</strong>{% if post['story-points'] %}{% if post['story-comments'] > post['story-points'] %}<span>{{ post['story-comments'] }} comment{% if post['story-comments'] != 1 %}s{% endif %}</span>{% elsif post['story-points'] > 1 %}<span>{{ post['story-points'] }} upvotes</span>{% endif %}{% elsif post['social-replies'] != nil %}<span>{{ post['social-replies'] }} repl{% if post['social-replies'] == 1 %}y{% else %}ies{% endif %}</span>{% else %}<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>{% endif %}</a></li>
+			{%- endfor %}
+			</ul>
+		</div>
+	{%- endif %}
 	{%- if railOlderPost or railNewerPost %}
 		<nav class="rail-nextprev-wrap" aria-label="More posts">
 			{%- if railPostIndex != nil %}
@@ -80,26 +100,6 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 				<li class="rail-nextprev-newer" aria-hidden="true"><span class="rail-nextprev-label">Newer{% icon "fas:arrow-right" %}</span><span class="rail-nextprev-card rail-nextprev-card--skeleton"></span></li>
 			{%- endif %}
 			</ul>
-		</nav>
-	{%- endif %}
-	{%- if railSyndications.size > 0 %}
-		<div class="rail-syndication-wrap">
-			<div class="top5">Reply to…</div>
-			<ul class="rail-syndication list-flush">
-			{%- for post in railSyndications %}
-				{%- assign platformIcon = post | webmentionPlatformIcon -%}
-				<li><a href="{{ post.url }}" class="rail-syndication-card{% if platformIcon == "fab:hacker-news" %} rail-syndication-card--hn{% endif %}" target="_blank" rel="noopener noreferrer">{% icon platformIcon %}<strong>{{ post | webmentionPlatformName }}</strong>{% if post['story-points'] %}{% if post['story-comments'] > post['story-points'] %}<span>{{ post['story-comments'] }} comment{% if post['story-comments'] != 1 %}s{% endif %}</span>{% elsif post['story-points'] > 1 %}<span>{{ post['story-points'] }} upvotes</span>{% endif %}{% elsif post['social-replies'] != nil %}<span>{{ post['social-replies'] }} repl{% if post['social-replies'] == 1 %}y{% else %}ies{% endif %}</span>{% else %}<time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>{% endif %}</a></li>
-			{%- endfor %}
-			</ul>
-		</div>
-	{%- endif %}
-	{%- if tocSidebar %}
-		<nav class="rail-toc" aria-labelledby="rail-toc-title">
-			<is-land on:visible import="/static/table-of-contents.js">
-				<table-of-contents selector="{{ tocSelector | default: 'main :is(h2, h3)' }}">
-					<div class="top5" id="rail-toc-title">On this Page</div>
-				</table-of-contents>
-			</is-land>
 		</nav>
 	{%- endif %}
 	</div>

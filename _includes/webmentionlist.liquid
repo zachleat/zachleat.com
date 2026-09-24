@@ -29,10 +29,13 @@
 	{%- endif %}
 
   {% if repliesSize > 0 %}
+  {%- assign threads = replies | webmentionThreads -%}
+  {%- assign threadsSize = disqus.comments | size | plus: threads.size -%}
+  {%- assign commentsPerThread = 0 -%}
+  {%- if threadsSize > 1 %}{% assign commentsPerThread = repliesSize | times: 1.0 | divided_by: threadsSize | round %}{% endif -%}
   <details id="comments">
-    <summary class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}</summary>
+    <summary class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}{% if commentsPerThread > 1 %} in {{ threadsSize }} Threads{% endif %}</summary>
     <ol class="static-comments static-comments-webmentions favicon-optin">
-      {%- assign threads = replies | webmentionThreads -%}
       {% for webmention in threads %}
         {% include "webmention" %}
       {% endfor %}

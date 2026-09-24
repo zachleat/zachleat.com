@@ -289,6 +289,7 @@ a.rail-nextprev-card:is(:link, :visited) {
 	align-items: stretch;
 	justify-content: space-between;
 	gap: .25em;
+	background-color: transparent;
 }
 .rail-nextprev-card time {
 	font-size: .85em;
