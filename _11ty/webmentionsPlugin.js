@@ -270,10 +270,17 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter('webmentionsRecentActivity', getRecentActivity);
 
 	// Every webmention tracked sitewide (excluding my own)
+	let totalCountCache = new WeakMap();
 	eleventyConfig.addFilter('webmentionsTotalCount', webmentions => {
-		return Object.entries(webmentions?.mentions || {})
+		let mentions = webmentions?.mentions || {};
+		if(totalCountCache.has(mentions)) {
+			return totalCountCache.get(mentions);
+		}
+		let count = Object.entries(mentions)
 			.flatMap(([target, list]) => list.filter(webmention => getBaseUrl(webmention['wm-target']) === target && !isOriginalPoster(webmention) && !isBlocked(webmention)))
 			.length;
+		totalCountCache.set(mentions, count);
+		return count;
 	});
 
 	// Newest sitewide webmentions, one per person

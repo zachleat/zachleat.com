@@ -2,7 +2,7 @@ import 'dotenv/config';
 
 import { DateTime } from "luxon";
 import lodash from 'lodash';
-import Fetch from "@11ty/eleventy-fetch";
+import Fetch, { AssetCache } from "@11ty/eleventy-fetch";
 
 import getBaseUrl from "../_includes/getBaseUrl.js";
 import getSocialMentions, { getPrivateBlueskyAuthors, getBlockedBlueskyAuthors } from "../_11ty/webmentions/social.js";
@@ -82,7 +82,37 @@ async function fetchWebmentions() {
 	return results;
 }
 
-export default async function({ eleventy }) {
+// Stored on globalThis so re-imports during --serve rebuilds reuse it
+const SERVE_CACHE_KEY = Symbol.for("zachleat.com/webmentions");
+
+export default async function(data) {
+	if(process.env.PRODUCTION_BUILD) {
+		return getWebmentions(data);
+	}
+	if(process.env.ELEVENTY_RUN_MODE !== "serve") {
+		return getDiskCachedWebmentions(data);
+	}
+	if(!globalThis[SERVE_CACHE_KEY]) {
+		globalThis[SERVE_CACHE_KEY] = getDiskCachedWebmentions(data).catch(e => {
+			delete globalThis[SERVE_CACHE_KEY];
+			throw e;
+		});
+	}
+	return globalThis[SERVE_CACHE_KEY];
+}
+
+// Processed results are cached to disk outside of production builds
+async function getDiskCachedWebmentions(data) {
+	let asset = new AssetCache("zachleat_webmentions_processed");
+	if(asset.isCacheValid(CACHE_DURATION)) {
+		return Object.freeze(await asset.getCachedValue());
+	}
+	let webmentions = await getWebmentions(data);
+	await asset.save(webmentions, "json");
+	return webmentions;
+}
+
+async function getWebmentions({ eleventy }) {
 	let webmentionsResults = await fetchWebmentions();
 
 	let mentions = {};
