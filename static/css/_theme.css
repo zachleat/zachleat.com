@@ -2345,6 +2345,17 @@ a[href].tag-inline:not(.tag-borderless),
 		text-decoration-thickness: 1px;
 		text-underline-offset: .2em;
 	}
+	/* Shorter viewports fit more of the sticky table of contents, the heading keeps its size */
+	@media (max-height: 56.25em) { /* 900px */
+		.rail-toc table-of-contents > ol {
+			font-size: .875em;
+		}
+	}
+	@media (max-height: 43.75em) { /* 700px */
+		.rail-toc table-of-contents > ol {
+			font-size: .8125em;
+		}
+	}
 }
 
 /* Table of Contents on Right */
