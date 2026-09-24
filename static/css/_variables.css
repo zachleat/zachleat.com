@@ -27,6 +27,7 @@
 	--z-color-link: #304f3e;
 	--z-color-link-visited: #4c713e;
 	--z-color-link-active: #2e7d32;
+	--z-color-link-underline: var(--z-color-link-active);
 	--z-color-code-bg: rgba(0, 0, 0, .08);
 	--z-color-code-text: #444;
 	--z-color-highlight-bg: #ffc;
@@ -77,6 +78,7 @@
 		--z-color-link: #8fd08f;
 		--z-color-link-visited: #7bc27b;
 		--z-color-link-active: #6ee06e;
+		--z-color-link-underline: #4a8f4a;
 		--z-color-code-bg: rgba(255, 255, 255, .12);
 		--z-color-code-text: #e4e4e4;
 		--z-color-highlight-bg: #4a4520;
@@ -122,6 +124,7 @@
 	--z-color-link: #8fd08f;
 	--z-color-link-visited: #7bc27b;
 	--z-color-link-active: #6ee06e;
+	--z-color-link-underline: #4a8f4a;
 	--z-color-code-bg: rgba(255, 255, 255, .12);
 	--z-color-code-text: #e4e4e4;
 	--z-color-highlight-bg: #4a4520;

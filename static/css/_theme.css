@@ -453,7 +453,9 @@ h5,
 		.appendix-rail .tags .tag.tag-popular-rail {
 			font-size: .9em;
 			font-weight: 600;
+			color: inherit;
 			text-decoration: underline;
+			text-decoration-color: currentColor;
 			padding-block: .4em;
 		}
 		.appendix-rail > :first-child {
@@ -666,7 +668,7 @@ body {
 :link,
 :visited {
 	text-decoration: underline;
-	text-decoration-color: var(--z-color-link-active);
+	text-decoration-color: var(--z-color-link-underline);
 }
 :link {
 	color: var(--z-color-link);
@@ -2190,6 +2192,9 @@ a[href].tag-inline:not(.tag-borderless),
 			font-weight: 700;
 			font-family: var(--z-font-webfont);
 			font-weight: 700;
+		}
+		.top5 a {
+			text-decoration-color: currentColor;
 		}
 		.tags .top5 .z-icon {
 			margin-inline-start: .35em;

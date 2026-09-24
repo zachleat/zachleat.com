@@ -1,5 +1,5 @@
 <div class="webmentions content-grid-sibling" id="webmentions" data-pagefind-ignore>
-  {%- assign replies = webmentions | webmentionsForUrl: absoluteUrl, 'in-reply-to' -%}
+  {%- assign replies = webmentions | webmentionsForUrl: absoluteUrl, 'in-reply-to' | webmentionMergeCrossposts -%}
   {% assign disqusCommentSize = 0 %}
   {% if disqus %}{% assign disqusCommentSize = disqus.commentCount %}{% endif %}
   {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}

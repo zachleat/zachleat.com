@@ -220,8 +220,14 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	line-height: 1.5;
 	color: var(--z-color-text-tertiary);
 }
+.static-comments-date {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: .75em;
+}
 .static-comments-date a {
 	color: inherit;
+	text-decoration-color: currentColor;
 }
 .static-comments-date a:hover {
 	color: var(--z-color-link);

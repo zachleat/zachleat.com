@@ -3,7 +3,7 @@
 		<img src="{{ comment.avatar | escape }}" class="static-comments-img" width="48" height="48" alt="Avatar for {{ comment.author | escape }}" loading="lazy" decoding="async" eleventy:ignore>
 		<div class="static-comments-title cased">{{ comment.author | escape }}</div>
 		{% assign isOriginalPoster = comment | commentIsOriginalPoster %}{% if isOriginalPoster %}<span class="static-comments-mention static-comments-op">OP</span>{% endif %}
-		<em class="static-comments-date"><span title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">{% icon "fab:disqus" %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" after posting"><time datetime="{{ comment.date }}" title="{{ comment.date | readableDateFromISO }}">{{ comment.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></span></em>
+		<em class="static-comments-date"><span title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">{% icon "fab:disqus" %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" after post"><time datetime="{{ comment.date }}" title="{{ comment.date | readableDateFromISO }}">{{ comment.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></span></em>
 	</div>
 	<div class="static-comments-msg">{{ comment.message | sanitizeHTML }}</div>
 	{% if comment.replies.size > 0 %}

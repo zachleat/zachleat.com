@@ -189,6 +189,7 @@
 }
 .activity-feed-target {
 	min-width: 0;
+	text-decoration-color: currentColor;
 	font-weight: 600;
 	white-space: nowrap;
 	overflow: hidden;

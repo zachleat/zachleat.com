@@ -82,10 +82,42 @@ export default function(eleventyConfig) {
 		return [];
 	};
 
+	// My own identical posts on different platforms within an hour are shown once, other copies are kept in `crossposts`
+	const CROSSPOST_WINDOW = 1000 * 60 * 60;
+	const normalizeCrosspostText = (text = "") => text
+		.replace(/https?:\/\/\S+/g, "")
+		.replace(mentionRegex, "$1")
+		.replace(/\s+/g, " ")
+		.trim()
+		.toLowerCase();
+
+	eleventyConfig.addFilter('webmentionMergeCrossposts', (webmentions = []) => {
+		let urls = new Set(webmentions.map(entry => entry.url));
+		let merged = [];
+		for(let entry of webmentions) {
+			let text = normalizeCrosspostText(entry.content?.text);
+			// Replies within a platform thread stay separate
+			if(!isOriginalPoster(entry) || !text || urls.has(entry["in-reply-to"])) {
+				merged.push(entry);
+				continue;
+			}
+			let original = merged.find(candidate => isOriginalPoster(candidate)
+				&& Math.abs(getDate(candidate) - getDate(entry)) <= CROSSPOST_WINDOW
+				&& normalizeCrosspostText(candidate.content?.text) === text
+				&& ![candidate, ...(candidate.crossposts || [])].some(copy => getPlatformIcon(copy) === getPlatformIcon(entry)));
+			if(original) {
+				merged[merged.indexOf(original)] = { ...original, crossposts: [...(original.crossposts || []), entry] };
+			} else {
+				merged.push(entry);
+			}
+		}
+		return merged;
+	});
+
 	// Nests replies under their parent from the social APIs, otherwise my own replies go under the most recent earlier comment by the first person I mention
 	eleventyConfig.addFilter('webmentionThreads', (webmentions = []) => {
 		let nodes = webmentions.map(entry => ({ ...entry, replies: [] }));
-		let byUrl = new Map(nodes.map(node => [node.url, node]));
+		let byUrl = new Map(nodes.flatMap(node => [node, ...(node.crossposts || [])].map(copy => [copy.url, node])));
 		let threads = [];
 		nodes.forEach((node, index) => {
 			let parent = byUrl.get(node["in-reply-to"]);

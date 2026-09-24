@@ -11,8 +11,12 @@
       <em class="static-comments-date">
         {%- assign platformIcon = webmention | webmentionPlatformIcon %}
         {%- if webmention.url != "" %}<a class="h-card u-url favicon-optout" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">{% endif -%}
-        {% icon platformIcon %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" after posting"><time class="dt-published" datetime="{{ webmention.published }}" title="{{ webmention.published | readableDateFromISO }}">{{ webmention.published | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
+        {% icon platformIcon %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" after post"><time class="dt-published" datetime="{{ webmention.published }}" title="{{ webmention.published | readableDateFromISO }}">{{ webmention.published | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
         {%- if webmention.url != "" %}</a>{% endif -%}
+        {%- for crosspost in webmention.crossposts %}
+        {%- assign crosspostIcon = crosspost | webmentionPlatformIcon %}
+        <a class="favicon-optout" href="{{ crosspost.url }}" target="_blank" rel="noopener noreferrer">{% icon crosspostIcon %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" after post"><time datetime="{{ crosspost.published }}" title="{{ crosspost.published | readableDateFromISO }}">{{ crosspost.published | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></a>
+        {%- endfor %}
       </em>
     {% endif %}
   </div>
