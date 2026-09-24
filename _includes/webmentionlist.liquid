@@ -34,6 +34,7 @@
   <div id="comments">
     <div class="hed-h3">{{ repliesSize }} Comment{% if repliesSize != 1 and repliesSize != "1" %}s{% endif %}{% if threadsSize > 1 %} in {{ threadsSize }} Threads{% endif %}</div>
     {%- assign visibleThreads = 6 -%}
+    {%- if threadsSize < 12 %}{% assign visibleThreads = threadsSize %}{% endif -%}
     {%- assign disqusVisible = visibleThreads | minus: threads.size | at_least: 0 -%}
     {%- assign olderThreadsSize = threadsSize | minus: visibleThreads -%}
     <ol class="static-comments static-comments-webmentions favicon-optin">

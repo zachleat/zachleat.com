@@ -20,12 +20,12 @@
   {% if webmention['wm-property'] == "repost-of" or webmention['wm-property'] == "like-of" or webmention['wm-property'] == "bookmark-of" %}
   {% elsif webmention['content-hidden'] %}
   <div class="static-comments-msg"><p><em>This post is only visible on {{ webmention | webmentionPlatformName }}.</em></p></div>
-  {% elsif webmention.content.text.length <= 5000 %}
+  {% else %}
   <div class="static-comments-msg p-content"><p>
     {%- if webmention.published %}{% elsif webmention.url != "" %}
     <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">Show original post</a>
     {% endif -%}
-    {{ webmention.content.text | escape | truncate: 500 | webmentionMentionPills: webmention.isNested | replace: "????", missingEmoji }}
+    {{ webmention.content.text | escape | webmentionMentionPills: webmention.isNested | replace: "????", missingEmoji }}
   </p></div>
   {% endif %}
 

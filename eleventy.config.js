@@ -255,11 +255,6 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addFilter("leftpad", leftpad);
 
-	eleventyConfig.addFilter("truncate", (str, len = 280) => { // tweet sized default
-		let suffix = str.length > len ? `… <span class="tag-inline">Truncated</span>` : "";
-		return str.substr(0, len) + suffix;
-	});
-
 	eleventyConfig.addLiquidFilter("numberString", function(num) {
 		let strs = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 		if( num < strs.length ) {
