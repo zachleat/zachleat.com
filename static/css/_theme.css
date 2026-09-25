@@ -37,20 +37,10 @@ del .z-avatar {
 }
 
 /* Hide on small viewport */
-/* Use a max-width here so it inherits the original value at 500px */
-@media( max-width: 31.1875em) { /* 499px /16 */
+/* Use a max-width here so it inherits the original value at 560px */
+@media( max-width: 34.9375em) { /* 559px /16 */
 	.hide-sm {
 		display: none !important;
-	}
-}
-@media( max-width: 34.375em) { /* 550px /16 */
-	/* Visually hidden but still readable by assistive tech (e.g. icon-only nav links) */
-	.a11y-only-sm {
-		position: absolute;
-		height: 1px;
-		width: 1px;
-		overflow: hidden;
-		clip: rect(1px, 1px, 1px, 1px);
 	}
 }
 @media( max-width: 39.9375em) { /* 639px */
@@ -2286,24 +2276,16 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 }
 .tags-rail-links :any-link .z-icon ~ .z-icon {
-	margin-inline: .5em 0;
-	font-size: 0.8125em;
+	margin-inline: .3em 0;
+}
+.tags-rail-links :any-link:has(.z-icon ~ .z-icon) {
+	white-space: nowrap;
+	padding-inline: .3375em .4em;
 }
 /* Secondary items are hidden here, so the header nav splits 3 + 2 */
-@media (max-width: 31.1875em) { /* 499px /16 */
+@media (max-width: 34.9375em) { /* 559px /16 */
 	.tags-rail-links:not(.tags-rail-links-horizontal) > :nth-child(4) {
 		order: 2;
-	}
-}
-/* Label is visually hidden here, so the icon stands alone at full size */
-@media (max-width: 34.375em) { /* 550px /16 */
-	.tags-rail-links :any-link .z-icon ~ .z-icon {
-		margin-inline: 0;
-		font-size: inherit;
-	}
-	/* Zero-width text keeps a line box so icon-only links match the height of text links */
-	.tags-rail-links :any-link:has(.a11y-only-sm)::after {
-		content: "\200b";
 	}
 }
 @media (min-width: 61.25em) { /* 980px */
@@ -2315,6 +2297,9 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.tags-rail-links :any-link:has(svg) {
 		padding-inline-start: .25em;
+	}
+	.tags-rail-links :any-link:has(.z-icon ~ .z-icon) {
+		padding-inline-start: .15em;
 	}
 	.tags-rail-links :any-link.active {
 		font-weight: 600;
@@ -2805,7 +2790,6 @@ symbol {
 .fa-font-awesome {
 	color: var(--icon-color-override, #538cd7);
 }
-.fa-build-awesome,
 .fa-forward-fast {
 	color: var(--icon-color-override, #00a776);
 }
@@ -2820,6 +2804,23 @@ symbol {
 }
 .z-icon:has([href="#fab-fa-js"]) {
 	background-color: #000;
+}
+.fa-eleventy,
+.fa-build-awesome {
+	color: #fff;
+}
+.z-icon:is(:has([href="#fab-fa-eleventy"]), :has([href="#fab-fa-build-awesome"])) {
+	width: auto;
+	height: 1.3em;
+	padding: .2em .25em;
+	box-sizing: border-box;
+	border-radius: .2em;
+}
+.z-icon:has([href="#fab-fa-eleventy"]) {
+	background-color: #222;
+}
+.z-icon:has([href="#fab-fa-build-awesome"]) {
+	background-color: #00a776;
 }
 .fa-html5 {
 	color: var(--icon-color-override, #da7044);

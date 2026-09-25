@@ -49,6 +49,9 @@
 		{%- assign iconUrl = post.data.external_icon_url | default: post.data.external_url -%}
 		{%- if post.data.tag_icon %}
 			{%- icon post.data.tag_icon %}
+		{%- elsif iconUrl contains "//www.11ty.dev" and post.data.external_icon_url != false -%}
+			{%- assign postYmd = post.date | date: "%Y%m%d" | plus: 0 -%}
+			{%- if postYmd >= 20260306 %}{% icon "fab:build-awesome" %}{% else %}{% icon "fab:eleventy" %}{% endif -%}
 		{%- elsif iconUrl and post.data.external_icon_url != false -%}
 			{%- indieAvatar iconUrl "z-avatar z-avatar-external" -%}
 		{%- endif %}

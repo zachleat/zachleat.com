@@ -34,7 +34,7 @@ At time of writing, we had approximately `$2200` in monthly recurring contributi
 
 <a href="https://opencollective.com/11ty">
 	<fundraising-status min="0" max="6000" value="{{ eleventyFundraising.monthly.value }}" style="--fs-color: #e23c2f;">
-		<img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2F/" width="30" height="30" alt="11ty Logo" loading="lazy" decoding="async">
+		{% icon "fab:eleventy" %}
 	</fundraising-status>
 </a>
 

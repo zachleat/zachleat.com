@@ -256,7 +256,7 @@ In some respects it feels like the web platform chased the early clientside rend
 * If you want to go all-in on Web Components, have a look at these answers to the server-rendered web component question:
 	* [{% indieAvatar "https://lit.dev/" %}Lit](https://lit.dev/)
 	* [{% indieAvatar "https://enhance.dev/" %}Enhance](https://enhance.dev/)
-	* [{% indieAvatar "https://www.11ty.dev/" %}WebC](https://www.11ty.dev/docs/languages/webc/)
+	* [{% icon "fab:eleventy" %}WebC](https://www.11ty.dev/docs/languages/webc/)
 * Versions of React prior to 19 have a 67% [`custom-elements-everywhere.com`](https://custom-elements-everywhere.com/) compatibility test score. If you’re deep in React-world, upgrade to the React 19 or consider switching to [{% indieAvatar "https://preactjs.com/" %}Preact](https://preactjs.com/) to provide a more future-friendly and compatible experience.
 * Solid, Angular, Svelte, and Vue support web components as a compilation target too.
 

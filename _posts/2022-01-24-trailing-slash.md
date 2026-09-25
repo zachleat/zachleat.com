@@ -76,7 +76,7 @@ More seriously, I think this case actually represents a larger URL _usability pr
 
 <div class="callout callout--11ty">
   {%- renderTemplate "liquid,md" -%}
-  <div class="callout-hed">{% indieAvatar "https://www.11ty.dev/" %}Eleventy Specific Note</div>
+  <div class="callout-hed">{% icon "fab:eleventy" %}Eleventy Specific Note</div>
 
 Eleventy users can rest easy: because input files `resource.html` and `resource/index.html` both write to the output directory at `_site/resource/index.html` by default, we throw a `DuplicatePermalinkOutputError` error to mitigate this for you. (You can force the issue using `permalink` if you _really_ want)
 {%- endrenderTemplate -%}
