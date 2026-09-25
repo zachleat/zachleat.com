@@ -113,14 +113,35 @@ export default function(eleventyConfig) {
 		return [];
 	};
 
-	// My own identical posts on different platforms within an hour are shown once, other copies are kept in `crossposts`
+	// My own near-identical posts on different platforms within an hour are shown once, other copies are kept in `crossposts`
 	const CROSSPOST_WINDOW = 1000 * 60 * 60;
+	const CROSSPOST_MAX_WORD_EDITS = 0.15;
 	const normalizeCrosspostText = (text = "") => text
 		.replace(/https?:\/\/\S+/g, "")
 		.replace(mentionRegex, "$1")
 		.replace(/\s+/g, " ")
 		.trim()
 		.toLowerCase();
+
+	// Word level edit distance relative to the longer text
+	const isSimilarCrosspostText = (a, b) => {
+		if(a === b) {
+			return true;
+		}
+		let wordsA = a.split(" ");
+		let wordsB = b.split(" ");
+		let row = [...wordsB.keys(), wordsB.length];
+		for(let i = 0; i < wordsA.length; i++) {
+			let diagonal = row[0];
+			row[0] = i + 1;
+			for(let j = 0; j < wordsB.length; j++) {
+				let above = row[j + 1];
+				row[j + 1] = Math.min(above + 1, row[j] + 1, diagonal + (wordsA[i] === wordsB[j] ? 0 : 1));
+				diagonal = above;
+			}
+		}
+		return row.at(-1) / Math.max(wordsA.length, wordsB.length) <= CROSSPOST_MAX_WORD_EDITS;
+	};
 
 	eleventyConfig.addFilter('webmentionMergeCrossposts', (webmentions = []) => {
 		let urls = new Set(webmentions.map(entry => entry.url));
@@ -134,7 +155,7 @@ export default function(eleventyConfig) {
 			}
 			let original = merged.find(candidate => isOriginalPoster(candidate)
 				&& Math.abs(getDate(candidate) - getDate(entry)) <= CROSSPOST_WINDOW
-				&& normalizeCrosspostText(candidate.content?.text) === text
+				&& isSimilarCrosspostText(normalizeCrosspostText(candidate.content?.text), text)
 				&& ![candidate, ...(candidate.crossposts || [])].some(copy => getPlatformIcon(copy) === getPlatformIcon(entry)));
 			if(original) {
 				merged[merged.indexOf(original)] = { ...original, crossposts: [...(original.crossposts || []), entry] };
