@@ -9,10 +9,6 @@ tags:
   - highlight
   - research
   - font-loading
-metadata:
-  speaking:
-    type: conference
-    country: USA
 external_url: 'http://www.filamentgroup.com/lab/bulletproof_icon_fonts.html'
 ---
 
