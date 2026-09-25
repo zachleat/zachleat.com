@@ -75,8 +75,8 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 {%- capture railSyndicationUrl %}{{ page.url | absoluteUrl }}{% endcapture %}
 {%- assign railSyndications = webmentions | webmentionSyndication: railSyndicationUrl %}
 {%- if appendix == "post" %}
-	{%- assign railOlderPost = collections.activePosts | getNextCollectionItem: page %}
-	{%- assign railNewerPost = collections.activePosts | getPreviousCollectionItem: page %}
+	{%- assign railOlderPost = collections.posts | getNextCollectionItem: page %}
+	{%- assign railNewerPost = collections.posts | getPreviousCollectionItem: page %}
 	{%- assign railPostIndex = collections.posts | getCollectionItemIndex: page %}
 {%- endif %}
 {%- if railSyndications.size > 0 or tocSidebar or railOlderPost or railNewerPost %}

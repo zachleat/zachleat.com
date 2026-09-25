@@ -3,8 +3,8 @@
 	<div class="appendix">
 	{%- if appendix == "post" %}
 	<div class="content-grid-sibling">
-		{% assign previousPost = collections.activePosts | getPreviousCollectionItem: page %}
-		{% assign nextPost = collections.activePosts | getNextCollectionItem: page %}
+		{% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
+		{% assign nextPost = collections.posts | getNextCollectionItem: page %}
 
 		<dl class="nextprev">
 			<dt class="nextprev-next">

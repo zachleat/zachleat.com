@@ -3,6 +3,7 @@ title: "Speaking at: Concatenate Conference"
 tags:
   - conference
   - speaking
+deprecated: true
 metadata:
   type: scheduled_event
   speaking:

@@ -6,6 +6,7 @@ tags:
   - external
   - conference
   - speaking
+deprecated: true
 metadata:
   type: scheduled_event
   speaking:

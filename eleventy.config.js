@@ -568,12 +568,6 @@ export default async function(eleventyConfig) {
 			.sort((a, b) => a.data.title.localeCompare(b.data.title));
 	});
 
-	eleventyConfig.addCollection("activePosts", function(collection) {
-		return getPosts(collection).filter(function(item) {
-			return !item.data.deprecated;
-		});
-	});
-
 	eleventyConfig.addCollection("pinnedPosts", function(collection) {
 		return getPosts(collection).filter(({data}) => data.pinned === true)
 	});

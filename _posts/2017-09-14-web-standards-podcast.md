@@ -8,6 +8,7 @@ tags:
   - font-loading
   - speaking
   - audio
+deprecated: true
 metadata:
   speaking:
     type: podcast
