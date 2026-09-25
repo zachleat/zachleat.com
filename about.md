@@ -3,20 +3,44 @@ title: You’re Reading About Me
 layout: layouts/pagealign.liquid
 ---
 <style>
-.about-primary-avatar {
-	display: block;
-	max-width: 260px;
-	border-radius: 50%;
-	margin: 2em auto;
+.layout-list .about {
+	margin-block: 2em;
 }
-.about-secondary-avatar {
-	display: block;
-	max-width: 260px;
+/* Match the bio card text size on posts */
+@media (min-width: 61.25em) {
+	.layout-list .about {
+		font-size: calc(.875rem * 21 / 16);
+	}
+}
+@media (min-width: 75em) {
+	.layout-list .about {
+		font-size: calc(.875rem * 23 / 16);
+	}
+}
+.about-photos {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+	gap: 1em;
+}
+.about-photo {
+	display: flex;
+	flex-direction: column;
+	gap: .75em;
 	margin: 0;
+	padding: 1em;
+	background-color: var(--z-color-bg-alt);
+	border: 3px solid var(--z-color-tshirt);
+	border-radius: .35em;
+	font-size: .875em;
+}
+.about-photo img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	object-fit: contain;
 }
 </style>
-
-<img src="/img/avatar-2025-green.png" alt="Photo of Zach Leatherman’s Bearded Face" class="about-primary-avatar" loading="eager" fetchpriority="high">
 
 <ul class="list-inline fl fl-inline fl-nowrap">
 	<li>This web site is maintained by <strong>Zach Leatherman</strong> <em>(he, him, they)</em>.</li>
@@ -43,6 +67,8 @@ layout: layouts/pagealign.liquid
 	{% comment %}<li><a href="https://twitter.com/eleven_ty/">{% indieAvatar "https://x.com/" %}Twitter <code>@eleven_ty</code></a></li>{% endcomment %}
 </ul>
 
+{% include "about.html", hideLearnMore: true %}
+
 I enjoy trying to speedrun {% icon "fab:apple" %}Apple News+ puzzles, here are some of my best times:
 
 <ul>
@@ -50,27 +76,24 @@ I enjoy trying to speedrun {% icon "fab:apple" %}Apple News+ puzzles, here are s
 	<li>Fastest Crossword Mini: <strong>10s</strong> (September 12, 2025) <del><strong>12s</strong> (August 27, 2025)</del></li>
 </ul>
 
-## Bio
 
-{% include "bio-text-medium.html", showFormerly: true %}
-
-### Alternate Formats
+## Copy my Bio <span id="bio"></span>
 
 Here to fetch my bio? Let’s appeal to your base instinct to copy and paste:
 
-#### Plaintext
+### Plaintext
 
 ``` text
 Zach is a builder for the web at Font Awesome and the creator of Build Awesome (née Eleventy/11ty), an award-winning open source website generator. He measures website performance with speedlify (speedlify.dev) and at one point became too fixated on web fonts. He has given {{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries at events like Beyond Tellerrand, Smashing Conference, Jamstack Conf, CSSConf, and The White House. Formerly part of CloudCannon, Netlify, Filament Group, NEJS CONF, and NebraskaJS.
 ```
 
-#### HTML
+### HTML
 
 ``` html
 Zach is a builder for the web at <a href="https://fontawesome.com/">Font Awesome</a> and the creator of <a href="https://build.awesome.me/">Build Awesome</a> (née <a href="https://www.11ty.dev">Eleventy/11ty</a>), an award-winning open source website generator. He measures website performance with <a href="https://www.speedlify.dev/">speedlify</a> and at one point became <em>too fixated</em> on <a href="https://www.zachleat.com/web/fonts/">web fonts</a>. He has given <a href="https://www.zachleat.com/web/speaking/">{{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries</a> at events like Beyond Tellerrand, Smashing Conference, Jamstack Conf, CSSConf, and <a href="https://www.zachleat.com/web/whitehouse/">The White House</a>. Formerly part of <a href="https://cloudcannon.com/">CloudCannon</a>, <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.filamentgroup.com/">Filament Group</a>, <a href="http://nejsconf.com/">NEJS CONF</a>, and <a href="http://nebraskajs.com">NebraskaJS</a>.
 ```
 
-#### Markdown
+### Markdown
 
 ``` markdown
 Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and the creator of [Build Awesome](https://build.awesome.me/) (née [Eleventy/11ty](https://www.11ty.dev)), an award-winning open source website generator. He measures website performance with [speedlify](https://www.speedlify.dev/) and at one point became _too fixated_ [on web fonts](https://www.zachleat.com/web/fonts/). He has given [{{ collections.all | getSpeakingCount: "type" }} talks in {{ collections.all | getSpeakingUniqueCount: "country" | numberString }} different countries](https://www.zachleat.com/web/speaking/) at events like Beyond Tellerrand, Smashing Conference, Jamstack Conf, CSSConf, and [The White House](https://www.zachleat.com/web/whitehouse/). Formerly part of [Netlify](https://www.netlify.com/), [Filament Group](https://www.filamentgroup.com/), [NEJS CONF](http://nejsconf.com/), and [NebraskaJS](http://nebraskajs.com).
@@ -78,42 +101,32 @@ Zach is a builder for the web at [Font Awesome](https://fontawesome.com/) and th
 
 ## Photos
 
-### Current: 2025
-
-<img src="/img/avatar-2025-green.png" alt="Photo of Zach Leatherman’s Bearded Face" class="about-secondary-avatar">
-
-### Deprecated: 2017
-
-<figure>
-	<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s Bearded Face" class="about-secondary-avatar">
-	<figcaption>Modified from below for avatar use.</figcaption>
-</figure>
-
-<figure>
-	<img src="/img/bio-2017.jpg" alt="Just a picture of my face." eleventy:widths="400,800,auto">
-	<figcaption>Picture taken by <a href="https://www.facebook.com/andrey.davydchyk">Andrey Davydchyk</a> at <a href="https://www.facebook.com/cssminskjs/">CSS Minsk JS</a>. <a href="/img/bio-2017.jpg">Download JPEG version</a>.</figcaption>
-</figure>
-
-### Deprecated: 2014
-
-<figure>
-	<img src="/img/avatar.png" alt="A very bearded picture of my face.">
-	<figcaption>Picture taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="/web/smashingconf/2014/">SmashingConf Whistler</a>. Download the <a href="/img/bio.jpg">original version</a>.</figcaption>
-</figure>
-
-### Deprecated: 2009
-
-<figure>
-	<img src="/img/avatar-old.png" alt="An avatar with zachleat vertical text aside.">
-	<figcaption>Deprecated.</figcaption>
-</figure>
-
-### Deprecated: 2007
-
-<figure>
-	<img src="./web/img/web367.png" alt="The very first logo for this blog: Web 3.0 6 Bladed Razors and 7 Minute Abs">
-	<figcaption>This web site was started in 2007 and was originally titled <strong>Web 3.0, 6 Bladed Razors, and 7 Minute Abs</strong>.</figcaption>
-</figure>
+<div class="about-photos">
+	<figure class="about-photo">
+		<img src="/img/avatar-2025.png" alt="Photo of Zach Leatherman’s bearded face." loading="lazy">
+		<figcaption><strong>2025</strong> <em>(current)</em></figcaption>
+	</figure>
+	<figure class="about-photo">
+		<img src="/img/avatar-2017-big.png" alt="Photo of Zach Leatherman’s bearded face." loading="lazy">
+		<figcaption><strong>2017</strong> Cropped for avatar use.</figcaption>
+	</figure>
+	<figure class="about-photo">
+		<img src="/img/bio-2017.jpg" alt="Photo of Zach Leatherman’s face." eleventy:widths="400,800,auto" loading="lazy">
+		<figcaption><strong>2017</strong> Taken by <a href="https://www.facebook.com/andrey.davydchyk">Andrey Davydchyk</a> at <a href="https://www.facebook.com/cssminskjs/">CSS Minsk JS</a>. <a href="/img/bio-2017.jpg">Download JPEG</a>.</figcaption>
+	</figure>
+	<figure class="about-photo">
+		<img src="/img/avatar.png" alt="A very bearded photo of Zach Leatherman’s face." loading="lazy">
+		<figcaption><strong>2014</strong> Taken by <a href="https://twitter.com/marcthiele">Marc Thiele</a> at <a href="/web/smashingconf/2014/">SmashingConf Whistler</a>. <a href="/img/bio.jpg">Download original</a>.</figcaption>
+	</figure>
+	<figure class="about-photo">
+		<img src="/img/avatar-old.png" alt="An avatar with zachleat as vertical text beside it." loading="lazy">
+		<figcaption><strong>2009</strong></figcaption>
+	</figure>
+	<figure class="about-photo">
+		<img src="/web/img/web367.png" alt="The first logo for this blog: Web 3.0, 6 Bladed Razors, and 7 Minute Abs." loading="lazy">
+		<figcaption><strong>2007</strong> The original site title: <em>Web 3.0, 6 Bladed Razors, and 7 Minute Abs</em>.</figcaption>
+	</figure>
+</div>
 
 ## Site History
 

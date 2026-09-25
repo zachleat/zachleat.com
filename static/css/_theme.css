@@ -713,9 +713,6 @@ body {
 	--avatar-size: clamp(7em, 28cqi, 15em);
 	--avatar-offset: .5em;
 }
-.about-description .avatar-row-img {
-	background-image: radial-gradient(ellipse 50% 70% at 50% 100%, color-mix(in srgb, var(--z-color-tshirt) 25%, transparent), transparent);
-}
 #about-index .avatar-row-img {
 	margin-inline-end: 0;
 	margin-block-end: -.25em;
@@ -1513,9 +1510,10 @@ a[href]:is(:focus, :hover) .project_img {
 
 /* About Me Link Block */
 .about {
+	--about-bg: color-mix(in oklab, var(--z-color-primary) 12%, var(--z-color-bg));
 	margin: 0 0 5em;
 	padding: 1em 1em;
-	background-color: var(--z-color-bg-alt);
+	background-color: var(--about-bg);
 	border: 3px solid var(--z-color-tshirt);
 	border-radius: .35em;
 	font-size: 0.875em; /* 14px /16 */
@@ -1549,6 +1547,12 @@ a[href]:is(:focus, :hover) .project_img {
 }
 .about .avatar-row {
 	--avatar-offset: -.5em;
+}
+.about .avatar-row-img,
+.about-description .avatar-row-img {
+	--avatar-circle-color: color-mix(in oklab, var(--z-color-primary) 40%, var(--about-bg, var(--z-color-bg)));
+	--avatar-circle-radius: calc(var(--avatar-size) * .44);
+	background-image: radial-gradient(circle var(--avatar-circle-radius) at 47% 50%, var(--avatar-circle-color) 99%, transparent);
 }
 
 .follow-links {

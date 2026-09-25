@@ -1,7 +1,7 @@
 <div class="about avatar-host">
-	<p>{% include "bio-text-medium.html" %} <a href="/about/">Learn more<span class="a11y-only"> about Zach</span> &raquo;</a></p>
+	<p>{% include "bio-text-medium.html" %}{% unless hideLearnMore %} <a href="/about/">Learn more<span class="a11y-only"> about Zach</span> &raquo;</a>{% endunless %}</p>
 	<div class="avatar-row">
-		{% include "follow-links.html" %}
+		{%- include "follow-links.html" -%}
 		<img src="/img/avatar-2025.png" width="400" height="400" alt="" class="avatar-row-img" loading="lazy" decoding="async" eleventy:formats="avif,webp,png" eleventy:widths="400">
 	</div>
 </div>
