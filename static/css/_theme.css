@@ -42,6 +42,8 @@ del .z-avatar {
 	.hide-sm {
 		display: none !important;
 	}
+}
+@media( max-width: 34.375em) { /* 550px /16 */
 	/* Visually hidden but still readable by assistive tech (e.g. icon-only nav links) */
 	.a11y-only-sm {
 		position: absolute;
@@ -1533,10 +1535,18 @@ a[href]:is(:focus, :hover) .project_img {
 }
 .footer-nav .tags-rail-links-horizontal {
 	font-size: 1.0526em; /* 20px /19 */
+	text-align: start;
+}
+/* Match the header nav at single column */
+@media (max-width: 61.1875em) { /* 979px */
+	.footer-nav .tags-rail-links-horizontal {
+		font-size: .8421em; /* 16px /19 */
+	}
 }
 .tags-rail-links-horizontal > li {
 	display: inline-flex;
 	margin: .125em;
+	vertical-align: top;
 }
 .tags-rail-links-horizontal :any-link:not(.active) {
 	background-color: var(--z-color-nav-bg);
@@ -2165,16 +2175,29 @@ a[href].tag-inline:not(.tag-borderless),
 	background-color: var(--z-color-primary);
 }
 @media (max-width: 61.1875em) { /* 979px */
+	/* Flex can’t text-wrap: balance, so force an even two-row split and grow items to fill each row */
 	.tags-rail-links {
-		text-align: center;
-		text-wrap: balance;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	.tags-rail-links > * {
-		display: inline-flex;
+		display: flex;
+		flex-grow: 1;
 		margin: .125em;
+	}
+	.tags-rail-links::after {
+		content: "";
+		flex-basis: 100%;
+		order: 1;
+	}
+	.tags-rail-links > :nth-child(n+5) {
+		order: 2;
 	}
 	.tags-rail-links :any-link:not(.active) {
 		background-color: var(--z-color-nav-bg);
+	}
+	.tags-rail-links .nav-secondary :any-link:not(.active, :hover, :focus-within) {
+		background-color: var(--z-color-nav-bg-secondary);
 	}
 	.tags-rail-links a[href] {
 		display: flex;
@@ -2190,11 +2213,21 @@ a[href].tag-inline:not(.tag-borderless),
 	margin-inline: .5em 0;
 	font-size: 0.8125em;
 }
-/* Label is visually hidden here, so the icon stands alone at full size */
+/* Secondary items are hidden here, so the header nav splits 3 + 2 */
 @media (max-width: 31.1875em) { /* 499px /16 */
+	.tags-rail-links:not(.tags-rail-links-horizontal) > :nth-child(4) {
+		order: 2;
+	}
+}
+/* Label is visually hidden here, so the icon stands alone at full size */
+@media (max-width: 34.375em) { /* 550px /16 */
 	.tags-rail-links :any-link .z-icon ~ .z-icon {
 		margin-inline: 0;
 		font-size: inherit;
+	}
+	/* Zero-width text keeps a line box so icon-only links match the height of text links */
+	.tags-rail-links :any-link:has(.a11y-only-sm)::after {
+		content: "\200b";
 	}
 }
 @media (min-width: 61.25em) { /* 980px */

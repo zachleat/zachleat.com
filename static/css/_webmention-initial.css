@@ -19,6 +19,10 @@
 	.rail > .rail-top8 {
 		margin-block-start: auto;
 		padding-block-start: 2em;
+		/* Sits above the sticky table of contents, fading it out as it scrolls behind */
+		position: relative;
+		z-index: 1;
+		background-image: linear-gradient(to bottom, transparent, var(--z-color-bg) 2em);
 	}
 }
 .rail-top8 .top5 {

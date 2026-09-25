@@ -30,6 +30,7 @@
 	--z-color-link-underline: var(--z-color-link-active);
 	--z-color-code-bg: rgba(0, 0, 0, .08);
 	--z-color-nav-bg: rgba(0, 0, 0, .045);
+	--z-color-nav-bg-secondary: rgba(0, 0, 0, .07);
 	--z-color-nav-bg-hover: rgba(0, 0, 0, .09);
 	--z-color-code-text: #444;
 	--z-color-highlight-bg: #ffc;
@@ -83,6 +84,7 @@
 		--z-color-link-underline: #4a8f4a;
 		--z-color-code-bg: rgba(255, 255, 255, .12);
 		--z-color-nav-bg: rgba(255, 255, 255, .07);
+		--z-color-nav-bg-secondary: rgba(255, 255, 255, .1);
 		--z-color-nav-bg-hover: rgba(255, 255, 255, .12);
 		--z-color-code-text: #e4e4e4;
 		--z-color-highlight-bg: #4a4520;
@@ -131,6 +133,7 @@
 	--z-color-link-underline: #4a8f4a;
 	--z-color-code-bg: rgba(255, 255, 255, .12);
 	--z-color-nav-bg: rgba(255, 255, 255, .07);
+	--z-color-nav-bg-secondary: rgba(255, 255, 255, .1);
 	--z-color-nav-bg-hover: rgba(255, 255, 255, .12);
 	--z-color-code-text: #e4e4e4;
 	--z-color-highlight-bg: #4a4520;
