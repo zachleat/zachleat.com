@@ -8,6 +8,7 @@ tags:
   - eleventy
   - writing
 metadata:
+  type: speaking_recap
   speaking:
     type: meetup
 external_url: https://11tymeetup.dev/events/ep-11-webc-with-zach/

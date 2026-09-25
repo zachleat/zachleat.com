@@ -4,12 +4,14 @@ description: Guidelines I use when looking at the big picture as a Front End Web
 githubProjectName: zachleat/f2em.com
 categories:
   - project
+  - presentations
 tags:
   - highlight
   - project
   - speaking
   - conference
 metadata:
+  type: speaking_recap
   speaking:
     type: conference
     country: USA

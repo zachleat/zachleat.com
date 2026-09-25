@@ -10,7 +10,7 @@ tags:
   - video
 metadata:
   speaking:
-    type: meetup
+    type: livestream
   youtubeId: oUoFmurl71k
 medialength: 73 min
 ---
