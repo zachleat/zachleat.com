@@ -9,8 +9,12 @@ appendix: home
 eleventyImport:
   collections: ["blog-post"]
 ---
-<div id="about-index" class="about-description">
+<div id="about-index" class="about-description avatar-host">
 	<p>{% include "bio-text-medium.html" %} <a href="/about/">Read more<span class="a11y-only"> about Zach</span> &raquo;</a></p>
+	<div class="avatar-row">
+		{% include "follow-links.html" %}
+		<img src="/img/avatar-2025.png" width="400" height="400" alt="" class="avatar-row-img" loading="eager" fetchpriority="high" decoding="async" eleventy:formats="avif,webp,png" eleventy:widths="400">
+	</div>
 </div>
 
 <article>

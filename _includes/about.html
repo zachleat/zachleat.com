@@ -1,14 +1,7 @@
-<div class="about">
+<div class="about avatar-host">
 	<p>{% include "bio-text-medium.html" %} <a href="/about/">Learn more<span class="a11y-only"> about Zach</span> &raquo;</a></p>
-	<ul>
-		<li>
-			<a href="https://fediverse.zachleat.com/@zachleat">{% icon "fab:mastodon" %}<strong>Follow on Mastodon</strong></a>
-		</li>
-		<li>
-			<a href="https://bsky.app/profile/zachleat.com">{% icon "fab:bluesky" %}<strong>Follow on Bluesky</strong></a>
-		</li>
-		<li>
-			<a href="/web/feed/">{% icon "fas:square-rss" %}<strong>Subscribe</strong></a>
-		</li>
-	</ul>
+	<div class="avatar-row">
+		{% include "follow-links.html" %}
+		<img src="/img/avatar-2025.png" width="400" height="400" alt="" class="avatar-row-img" loading="lazy" decoding="async" eleventy:formats="avif,webp,png" eleventy:widths="400">
+	</div>
 </div>

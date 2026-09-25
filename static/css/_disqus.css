@@ -78,6 +78,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 }
 .static-comments-older > summary .static-comments-thread-faces {
 	float: inline-end;
+	margin-block: -.25em;
 	margin-inline-start: .5em;
 }
 .static-comments-thread-face {
@@ -90,6 +91,13 @@ details.static-comments-empty > summary::-webkit-details-marker {
 }
 .static-comments-thread-face + .static-comments-thread-face {
 	margin-inline-start: -.375em;
+}
+.static-comments-older > summary .static-comments-thread-face {
+	width: 2em;
+	height: 2em;
+}
+.static-comments-older > summary .static-comments-thread-face + .static-comments-thread-face {
+	margin-inline-start: -.5em;
 }
 .static-comments-title {
 	flex: 0 1 auto;
