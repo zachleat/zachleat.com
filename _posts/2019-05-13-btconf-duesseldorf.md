@@ -10,6 +10,7 @@ metadata:
   type: scheduled_event
   speaking:
     type: conference
+    recap: /web/scoville-scale/
     country: Germany
 external_url: 'https://beyondtellerrand.com/events/duesseldorf-2019'
 event_date: May 13–15

@@ -52,7 +52,7 @@ I enjoy trying to speedrun {% icon "fab:apple" %}Apple News+ puzzles, here are s
 
 ## Bio
 
-{% include "bio-text-medium.html" %}
+{% include "bio-text-medium.html", showFormerly: true %}
 
 ### Alternate Formats
 

@@ -1563,7 +1563,7 @@ a[href]:is(:focus, :hover) .project_img {
 	margin-block-start: .5em;
 }
 
-/* Follow links and avatar share a bottom-aligned row */
+/* Follow links are vertically centered beside the bottom-aligned avatar */
 .avatar-host {
 	container-type: inline-size;
 }
@@ -1575,6 +1575,7 @@ a[href]:is(:focus, :hover) .project_img {
 	gap: 1em;
 }
 .avatar-row .follow-links {
+	align-self: center;
 	margin-block: 1em;
 }
 .avatar-row > :last-child {

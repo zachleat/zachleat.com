@@ -6,6 +6,9 @@ tags:
   - video
 metadata:
   type: speaking_recap
+  speaking:
+    type: conference
+    country: USA
 medialength: 31 min
 ---
 

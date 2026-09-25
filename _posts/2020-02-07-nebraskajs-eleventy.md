@@ -6,6 +6,9 @@ tags:
   - video
 metadata:
   type: speaking_recap
+  speaking:
+    type: meetup
+    country: USA
   youtubeId: DC5fP_8Q8uQ
 medialength: 63 min
 ---

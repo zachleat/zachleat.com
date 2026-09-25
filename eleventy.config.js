@@ -267,7 +267,12 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addLiquidFilter("getSpeakingCount", function(allCollection, propName, propValueMatch) {
 		let count = 0;
 		for(let item of allCollection) {
-			if(item.data.metadata && item.data.metadata.speaking && item.data.metadata.speaking[propName] && (!propValueMatch || item.data.metadata.speaking[propName] === propValueMatch)) {
+			// Event posts with a separate recap post are counted once, via the recap
+			if(item.data.metadata?.speaking?.recap) {
+				continue;
+			}
+			let value = item.data.metadata?.speaking?.[propName];
+			if(value && (!propValueMatch || value === propValueMatch)) {
 				count++;
 			}
 		}
@@ -312,6 +317,13 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addLiquidFilter("medialengthCleanup", str => {
 		let split = str.split(" ");
 		return `${split[0]}<span aria-hidden="true">m</span><span class="sr-only"> minutes</span>`;
+	});
+
+	eleventyConfig.addLiquidFilter("slideCount", prefix => {
+		let slidePrefix = path.join(".", prefix);
+		let dir = prefix.endsWith("/") ? slidePrefix : path.dirname(slidePrefix);
+		let base = prefix.endsWith("/") ? "" : path.basename(slidePrefix);
+		return fs.readdirSync(dir).filter(name => name.startsWith(base) && name.endsWith(".jpeg")).length;
 	});
 
 	eleventyConfig.addLiquidFilter("encodeUriComponent", str => {
@@ -591,6 +603,9 @@ export default async function(eleventyConfig) {
 	function getFilterCategories(collectionItem, categories = new Set()) {
 		if(isSpeaking(collectionItem)) {
 			categories.add("speaking");
+		}
+		if(collectionItem.data.metadata?.speaking?.type) {
+			categories.add(`speaking-${collectionItem.data.metadata.speaking.type}`);
 		}
 		if(isWriting(collectionItem)) {
 			categories.add("writing");

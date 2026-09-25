@@ -9,6 +9,9 @@ tags:
 tweet: https://twitter.com/zachleat/status/1129035256764485632
 metadata:
   type: speaking_recap
+  speaking:
+    type: conference
+    country: Germany
 ---
 
 _Originally presented at Beyond Tellerrand in Düsseldorf, Germany 🇩🇪 in May, 2019._

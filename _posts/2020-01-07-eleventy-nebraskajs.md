@@ -8,6 +8,7 @@ metadata:
   type: scheduled_event
   speaking:
     type: meetup
+    recap: /web/nebraskajs-eleventy/
     country: USA
 external_url: 'https://www.meetup.com/nebraskajs/events/dxndfdybccbkb/'
 event_date: Jan 7

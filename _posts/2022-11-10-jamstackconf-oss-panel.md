@@ -4,15 +4,11 @@ tags:
   - eleventy
   - speaking
   - jamstack
-  - video
 metadata:
   speaking:
-    type: conference
-  youtubeId: 1Qz6ZKwsKFY
-medialength: 35 min
+    type: panel
 ---
-{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
-
+* <del><a href="https://www.youtube.com/watch?v=1Qz6ZKwsKFY">Watch the panel on YouTube</a></del> (removed upstream)
 * [Jamstack Conf Agenda](https://jamstack.org/conf/agenda/panel-oss-is-out-to-end-the-framework-wars/)
 
 > Ryan Carniato (SolidJS), Fred K. Schott (Astro), Zach Leatherman (11ty), Jessica Janiuk (Angular), Alexandre Chopin (Nuxt), Sara Vieira (Axo)

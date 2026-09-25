@@ -10,6 +10,7 @@ metadata:
   type: scheduled_event
   speaking:
     type: conference
+    recap: /web/this-website-is-a-tech-talk/
     country: USA
 permalink: /web/smashingconf/2020/
 external_url: 'https://smashingconf.com/austin-2020/'

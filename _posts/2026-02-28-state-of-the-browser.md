@@ -10,6 +10,7 @@ metadata:
   type: scheduled_event
   speaking:
     type: conference
+    recap: /web/its-10pm/
     country: United Kingdom
 external_url: https://2026.stateofthebrowser.com/
 event_date: February 28

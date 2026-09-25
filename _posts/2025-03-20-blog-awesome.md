@@ -8,7 +8,7 @@ tags:
 metadata:
   type: speaking_recap
   speaking:
-    type: livestream
+    type: meetup
   youtubeId: O89QIruTink
 event_date: March 20
 medialength: 27 min

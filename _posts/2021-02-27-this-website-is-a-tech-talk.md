@@ -8,6 +8,9 @@ seo:
   openGraphBackgroundImage: /og/sources/conference.jpg
 metadata:
   type: speaking_recap
+  speaking:
+    type: conference
+    country: USA
   youtubeId: znLxHkdtQzk
 ---
 Over the weekend I was finishing up some polish on the slides of my most recent conference talk when my daughter walked in to my office. We decided to record a short video of that interaction and put it up on Twitter.

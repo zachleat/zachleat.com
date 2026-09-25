@@ -10,6 +10,7 @@ metadata:
   type: scheduled_event
   speaking:
     type: conference
+    recap: /web/five-whys/
     country: Netherlands
 external_url: 'https://perfnow.nl/'
 event_date: November 8–9

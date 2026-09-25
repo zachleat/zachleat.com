@@ -10,6 +10,7 @@ metadata:
   type: scheduled_event
   speaking:
     type: conference
+    recap: /web/rocket-science/
     country: United Kingdom
 permalink: /web/smashingconf/2018/
 external_url: 'https://smashingconf.com/london-2018/'

@@ -17,6 +17,9 @@ classes:
 {% if tags contains 'video' %}
 			<em>Watch in {{ medialength | medialengthCleanup }}</em>
 {% endif %}
+{% if slides.dir %}
+			<em>{{ slides.dir | slideCount }} slides</em>
+{% endif %}
 {%- if tweet %}
 			<em><a href="{{ tweet | tweetbackUrl }}">On Twitter (archived)</em></a>
 {%- elsif toot %}
@@ -87,6 +90,10 @@ classes:
 
 <article class="content-grid-sibling">
 	{%- capture postCard %}
+	{%- if metadata.speaking.recap %}
+	{%- assign recapPost = collections.all | where: "url", metadata.speaking.recap | first %}
+	<p><a href="{{ metadata.speaking.recap }}"><em>{% icon "fa:bullhorn" %}Talk recap:</em> {% if recapPost %}{{ recapPost.data.title }}{% else %}{{ metadata.speaking.recap }}{% endif %}</a></p>
+	{%- endif %}
 	{%- capture postMetadata %}
 		{%- if tags contains "web-components" or tags contains "eleventy" or tags contains "web-fonts" or tags contains "project" or tags contains "speaking" %}
 		<em>{% icon "fas:tag" %}Tags:

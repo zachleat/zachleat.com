@@ -3,7 +3,10 @@ title: I Said or Will Say Words Out Loud
 layout: layouts/pagealign.liquid
 eleventyImport:
   collections: ["blog-post"]
+modules:
+  - "/static/filter-container.js"
 ---
+<filter-container oninit delimiter=" ">
 <ol class="posts">
 	<li style="font-size: clamp(1.5em, 4vw, 3.25em); align-items: center; justify-content: flex-start;">
 		<span role="img" aria-label="United States of America" title="United States of America">🇺🇸</span>
@@ -33,6 +36,22 @@ eleventyImport:
     and {{ lectureCount | numberString }} University guest lecture{% if lectureCount != 1 %}s{% endif %}.
 	</li>
 	<li><a href="/web/speaking/inquiries/" class="posts-link"><em>Do you want me to speak at your event? Read on→</em></a></li>
+	<li>
+		<form class="filter-posts-form">
+			<label>
+				<span class="sr-only">Filter</span>
+				<select data-filter-key="category">
+					<option value="">Show all</option>
+					<option value="speaking-conference">Only Conferences</option>
+					<option value="speaking-meetup">Only Meetups</option>
+					<option value="speaking-livestream">Only Livestreams</option>
+					<option value="speaking-barcamp">Only Barcamps</option>
+					<option value="speaking-podcast">Only Podcasts</option>
+				</select>
+			</label>&#160;
+			<span data-filter-results="entry/entries" aria-live="polite">{{ collections.presentations | size }} entries</span>
+		</form>
+	</li>
 	{% assign year = "" %}
 	{% assign currentyear = "" %}
 	{% assign listItems = collections.presentations %}
@@ -40,3 +59,4 @@ eleventyImport:
 		{% include "post-list-entry.html" %}
 	{% endfor %}
 </ol>
+</filter-container>

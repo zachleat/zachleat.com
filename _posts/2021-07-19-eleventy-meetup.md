@@ -9,6 +9,8 @@ tags:
 medialength: 43 min
 metadata:
   type: speaking_recap
+  speaking:
+    type: meetup
   youtubeId: nlbdRUIgyjo
 external_icon_url: https://www.11tymeetup.dev/
 ---

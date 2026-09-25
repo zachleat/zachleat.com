@@ -9,6 +9,7 @@ metadata:
   type: scheduled_event
   speaking:
     type: conference
+    recap: /web/best-and-worst-of-eleventy/
     country: Canada
 external_url: 'https://fitc.ca/presentation/the-best-and-worst-parts-of-eleventy-now-in-v3/'
 event_date: October 11

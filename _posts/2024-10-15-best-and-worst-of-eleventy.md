@@ -6,6 +6,9 @@ tags:
   - eleventy
 metadata:
   type: speaking_recap
+  speaking:
+    type: conference
+    country: Canada
 slides:
   dir: "/presentations/best-worst-eleventy/web-unleashed-"
   alt:

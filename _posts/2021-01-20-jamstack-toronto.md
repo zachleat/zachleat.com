@@ -12,6 +12,7 @@ metadata:
   type: scheduled_event
   speaking:
     type: meetup
+    recap: /web/image-ready-v2/
     country: Canada
 permalink: /web/jamstack-toronto/2021/
 external_url: 'https://www.meetup.com/JAMstack-Toronto/events/275601729/'
