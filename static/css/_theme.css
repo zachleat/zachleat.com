@@ -716,6 +716,10 @@ body {
 .about-description .avatar-row-img {
 	background-image: radial-gradient(ellipse 50% 70% at 50% 100%, color-mix(in srgb, var(--z-color-tshirt) 25%, transparent), transparent);
 }
+#about-index .avatar-row-img {
+	margin-inline-end: 0;
+	margin-block-end: -.25em;
+}
 .about-description :any-link {
 	--highlight-color: color-mix(in srgb, currentColor 8%, transparent);
 	background-color: var(--highlight-color);
