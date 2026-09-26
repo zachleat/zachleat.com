@@ -43,7 +43,7 @@ layout: layouts/pagealign.liquid
 </style>
 
 <ul class="list-inline fl fl-inline fl-nowrap">
-	<li>This web site is maintained by <strong>Zach Leatherman</strong> <em>(he, him, they)</em>.</li>
+	<li>This web site is maintained by <strong>Zach Leatherman <img src="/img/avatar-2025.png" alt="" class="z-avatar z-avatar-squircle" width="80" height="80" loading="lazy" decoding="async" eleventy:formats="avif,webp,png" eleventy:widths="80"></strong><em>(he, him, they)</em>.</li>
 	<li>View his <a href="/resume/">full résumé</a> or learn about his <a href="/uses/">favorite tools</a>.</li>
 </ul>
 
