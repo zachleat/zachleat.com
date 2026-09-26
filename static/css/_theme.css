@@ -1096,21 +1096,24 @@ table-saw :is(th, td) {
 	color: var(--z-color-link-visited);
 	text-transform: uppercase;
 }
-.rail .my-avatar {
+.rail picture:has(> .my-avatar) {
 	--avatar-size: 2.375em; /* 38px /16 */
+	display: block;
 	min-width: var(--avatar-size);
-	width: var(--avatar-size); /* 56px /16 */
-	height: var(--avatar-size); /* 56px /16 */
-	background-color: var(--z-color-primary);
-	color: transparent;
+	width: var(--avatar-size);
+	height: var(--avatar-size);
 	margin-bottom: -2px;
-	border-radius: 40%;
+}
+.rail .my-avatar {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: transparent;
 }
 @media (min-width: 61.25em) { /* 980px */
 	.rail .header {
 		position: relative;
 		gap: 0;
-		flex-direction: row-reverse;
 	}
 	.rail .hed-h1 {
 		font-size: 2.25em;
@@ -1118,7 +1121,7 @@ table-saw :is(th, td) {
 		line-height: .9;
 		transition: all 200ms;
 	}
-	.rail .my-avatar {
+	.rail picture:has(> .my-avatar) {
 		--avatar-size: 4em; /* 64px /16 */
 		position: absolute;
 		left: 8em;
@@ -1127,7 +1130,7 @@ table-saw :is(th, td) {
 		transition: all 200ms;
 		transform: rotate(3deg);
 	}
-	.rail .header:not(:hover, :focus-within) .my-avatar {
+	.rail .header:not(:hover, :focus-within) picture:has(> .my-avatar) {
 		opacity: .95;
 	}
 	.body-grid {
@@ -1538,7 +1541,40 @@ a[href]:is(:focus, :hover) .project_img {
 .about .avatar-row {
 	--avatar-offset: -.5em;
 }
-/* Squircle sits on the wrapping <picture> so the photo itself isn’t clipped */
+picture:has(> .z-avatar-squircle) {
+	--avatar-size: 1.6em;
+	display: inline-block;
+	vertical-align: text-bottom;
+	margin-block-start: -.15em;
+	margin-inline-end: .25em;
+}
+picture > .z-avatar-squircle {
+	display: block;
+	width: var(--avatar-size);
+	height: var(--avatar-size);
+	max-height: none;
+	margin: 0;
+	border-radius: 0;
+}
+/* Small avatars clip the photo to a rotated squircle; the photo is counter-rotated to stay upright */
+picture:has(> .z-avatar-squircle),
+.rail picture:has(> .my-avatar) {
+	overflow: clip;
+	background-color: color-mix(in oklab, var(--z-color-primary) 40%, var(--about-bg, var(--z-color-bg)));
+	border-radius: 50%;
+	corner-shape: squircle;
+	rotate: -8deg;
+	transition: background-color .4s cubic-bezier(0.37, 0, 0.63, 1);
+}
+picture > :is(.z-avatar-squircle, .my-avatar) {
+	rotate: 8deg;
+	scale: 1.06;
+}
+picture:has(> .z-avatar-squircle):hover,
+.rail .header:is(:hover, :focus-visible) picture:has(> .my-avatar) {
+	background-color: color-mix(in oklab, color-mix(in oklab, var(--z-color-primary) 40%, var(--about-bg, var(--z-color-bg))), #000 25%);
+}
+/* Large avatar squircle sits on the wrapping <picture> so the photo itself isn’t clipped */
 .about picture:has(> .avatar-row-img),
 .about-description picture:has(> .avatar-row-img) {
 	position: relative;
@@ -1557,6 +1593,11 @@ a[href]:is(:focus, :hover) .project_img {
 	border-radius: 50%;
 	corner-shape: squircle;
 	rotate: -8deg;
+	transition: background-color .4s cubic-bezier(0.37, 0, 0.63, 1);
+}
+.about picture:has(> .avatar-row-img):hover::before,
+.about-description picture:has(> .avatar-row-img):hover::before {
+	background-color: color-mix(in oklab, color-mix(in oklab, var(--z-color-primary) 40%, var(--about-bg, var(--z-color-bg))), #000 25%);
 }
 
 .follow-links {
