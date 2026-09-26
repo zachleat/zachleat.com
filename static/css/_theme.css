@@ -1556,6 +1556,7 @@ a[href]:is(:focus, :hover) .project_img {
 	background-color: color-mix(in oklab, var(--z-color-primary) 40%, var(--about-bg, var(--z-color-bg)));
 	border-radius: 50%;
 	corner-shape: squircle;
+	rotate: -8deg;
 }
 
 .follow-links {
