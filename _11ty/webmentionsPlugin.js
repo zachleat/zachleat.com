@@ -474,7 +474,7 @@ export default function(eleventyConfig) {
 			.map(entry => ["Mastodon", "Bluesky"].includes(getPlatformName(entry)) ? { ...entry, 'social-replies': replyCounts[getPlatformName(entry)] || 0 } : entry);
 	});
 
-	eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url, allowedTypes) => {
+	const webmentionsForUrl = (webmentions, url, allowedTypes) => {
 		if( !allowedTypes ) {
 			// all types
 			allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of', 'bookmark-of'];
@@ -522,5 +522,30 @@ export default function(eleventyConfig) {
 				}
 				return 0;
 			});
+	};
+
+	eleventyConfig.addFilter('webmentionsForUrl', webmentionsForUrl);
+
+	// Sitewide totals, cached per webmentions data object
+	let siteStatsCache = new WeakMap();
+	eleventyConfig.addFilter('webmentionsSiteStats', (webmentions, analytics = {}, commentsCounts = {}) => {
+		if(siteStatsCache.has(webmentions)) {
+			return siteStatsCache.get(webmentions);
+		}
+
+		let stats = {
+			views: Object.values(analytics).reduce((sum, entry) => sum + (entry.pageViews || 0), 0),
+			boosts: 0,
+			likes: 0,
+			replies: Object.values(commentsCounts).reduce((sum, count) => sum + count, 0),
+		};
+		for(let url of Object.keys(webmentions?.mentions || {})) {
+			stats.boosts += webmentionsForUrl(webmentions, url, "mention-of,repost-of").length;
+			stats.likes += webmentionsForUrl(webmentions, url, "like-of").length;
+			stats.replies += webmentionsForUrl(webmentions, url, "in-reply-to,bookmark-of").length;
+		}
+
+		siteStatsCache.set(webmentions, stats);
+		return stats;
 	});
 };

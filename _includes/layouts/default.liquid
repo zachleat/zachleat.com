@@ -33,22 +33,39 @@ ba_kickstarter_url: https://www.kickstarter.com/projects/fontawesome/build-aweso
 					<span>{{ currentYear }}</span>
 				</a>
 
-				{%- if appendix == "post" or page.url == "/" or page.url == "/web/" %}
-					<div class="rail-stats-wrap hide-singlecol">
-						{%- assign post = page %}
-						<div class="rail-stats-hed">
-							<div class="top5">Page Activity</div>
-							<span class="tags rail-stats">{% assign alwaysShowRank = true %}{% include "post-popularity-tag.html" %}{% assign alwaysShowRank = false %}</span>
-						</div>
-						<div class="tags rail-stats">
+				{%- assign railShowPageStats = false %}
+				{%- if appendix == "post" or page.url == "/" or page.url == "/web/" %}{% assign railShowPageStats = true %}{% endif %}
+				{%- assign siteStats = webmentions | webmentionsSiteStats: analytics, commentsCounts %}
+				<div class="rail-stats-wrap hide-singlecol">
+					{%- assign post = page %}
+					<div class="rail-stats-hed">
+						<div class="top5">Activity</div>
+						{%- if railShowPageStats %}
+						<span class="tags rail-stats">{% assign alwaysShowRank = true %}{% include "post-popularity-tag.html" %}{% assign alwaysShowRank = false %}</span>
+						{%- endif %}
+					</div>
+					<dl class="tags rail-stats rail-stats-rows">
+						<dt>Site</dt>
+						<dd>
+							<span class="tag tag-social">
+								<span class="tag-social--view" title="{{ siteStats.views }} views">{% icon "fa:eye" %}{{ siteStats.views | renderNumber: "0a" }}</span>
+								<span class="tag-social--boost" title="{{ siteStats.boosts }} boosts">{% icon "fa:retweet" %}{{ siteStats.boosts | renderNumber: "0a" }}</span>
+								<span class="tag-social--like" title="{{ siteStats.likes }} likes">{% icon "far:heart" %}{{ siteStats.likes | renderNumber: "0a" }}</span>
+								<span class="tag-social--reply" title="{{ siteStats.replies }} replies">{% icon "fas:reply-all" %}{{ siteStats.replies | renderNumber: "0a" }}</span>
+							</span>
+						</dd>
+						{%- if railShowPageStats %}
+						<dt>Page</dt>
+						<dd>
 							{%- assign alwaysShowStats = true -%}
 							{%- assign skipPopularityTag = true -%}
 							{%- include "post-popularity-social-tags.html" -%}
 							{%- assign alwaysShowStats = false -%}
 							{%- assign skipPopularityTag = false -%}
-						</div>
-					</div>
-				{%- endif %}
+						</dd>
+						{%- endif %}
+					</dl>
+				</div>
 
 				{%- assign railShowTop5 = false %}
 				{%- if collections.pinnedPosts.size > 0 %}{% assign railShowTop5 = true %}{% endif %}

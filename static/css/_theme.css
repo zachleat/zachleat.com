@@ -2511,6 +2511,33 @@ a[href].tag-inline:not(.tag-borderless),
 	.rail-stats .tag-social {
 		height: auto;
 	}
+	/* Page and site stats share columns so icons line up */
+	.rail-stats-rows {
+		display: grid;
+		grid-template-columns: repeat(5, auto);
+		justify-content: start;
+		align-items: center;
+		gap: .25em 0;
+		margin: 0;
+	}
+	.rail-stats-rows :is(dd, .tag-social) {
+		display: contents;
+	}
+	.rail-stats-rows dt {
+		grid-column: 1;
+		padding-inline-end: .5em;
+		font-size: 0.75em; /* 12px /16 */
+		font-weight: 700;
+		text-transform: uppercase;
+		color: var(--z-color-text-secondary);
+	}
+	.rail-stats-rows .tag-social {
+		font-size: 0.6875em; /* 11px /16 */
+	}
+	.rail-stats-rows .tag-social--view { grid-column: 2; }
+	.rail-stats-rows .tag-social--boost { grid-column: 3; }
+	.rail-stats-rows .tag-social--like { grid-column: 4; }
+	.rail-stats-rows .tag-social--reply { grid-column: 5; }
 	.rail .rail-stats :link:not(:hover, :focus) {
 		--icon-color-override: initial;
 	}
