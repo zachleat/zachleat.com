@@ -1538,11 +1538,24 @@ a[href]:is(:focus, :hover) .project_img {
 .about .avatar-row {
 	--avatar-offset: -.5em;
 }
-.about .avatar-row-img,
-.about-description .avatar-row-img {
-	--avatar-circle-color: color-mix(in oklab, var(--z-color-primary) 40%, var(--about-bg, var(--z-color-bg)));
-	--avatar-circle-radius: calc(var(--avatar-size) * .44);
-	background-image: radial-gradient(circle var(--avatar-circle-radius) at 47% 50%, var(--avatar-circle-color) 99%, transparent);
+/* Squircle sits on the wrapping <picture> so the photo itself isn’t clipped */
+.about picture:has(> .avatar-row-img),
+.about-description picture:has(> .avatar-row-img) {
+	position: relative;
+	isolation: isolate;
+}
+.about picture:has(> .avatar-row-img)::before,
+.about-description picture:has(> .avatar-row-img)::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	inset-block-start: calc(var(--avatar-size) * .06);
+	inset-inline-start: calc(var(--avatar-size) * .03);
+	width: calc(var(--avatar-size) * .88);
+	aspect-ratio: 1;
+	background-color: color-mix(in oklab, var(--z-color-primary) 40%, var(--about-bg, var(--z-color-bg)));
+	border-radius: 50%;
+	corner-shape: squircle;
 }
 
 .follow-links {
