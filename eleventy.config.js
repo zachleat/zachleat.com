@@ -98,8 +98,7 @@ export default async function(eleventyConfig) {
     }
 
 		// Drafts are *ignored* during a full build (included when --serve or --watch)
-		// if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
-		if(data.draft) {
+		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
 			return false;
 		}
 	});
