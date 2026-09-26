@@ -2282,10 +2282,50 @@ a[href].tag-inline:not(.tag-borderless),
 	white-space: nowrap;
 	padding-inline: .3375em .4em;
 }
-/* Secondary items are hidden here, so the header nav splits 3 + 2 */
+.tags-rail-links > .nav-more {
+	flex-grow: 0;
+	width: min-content;
+}
+.nav-more summary {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .4em .5em .4em .4375em;
+	border: .125em solid transparent;
+	border-radius: .25em;
+	background-color: var(--z-color-nav-bg);
+	cursor: pointer;
+	list-style: none;
+}
+.nav-more summary::-webkit-details-marker {
+	display: none;
+}
+.nav-more summary:is(:hover, :focus-visible) {
+	border-color: var(--z-color-link-active);
+}
+.nav-more details[open] summary {
+	background-color: var(--z-color-nav-bg-secondary);
+}
+@media (min-width: 35em) { /* 560px */
+	.nav-more {
+		display: none !important;
+	}
+}
+/* Secondary items collapse behind the More toggle, so both navs split 3 + 3 (+ 3) */
 @media (max-width: 34.9375em) { /* 559px /16 */
-	.tags-rail-links:not(.tags-rail-links-horizontal) > :nth-child(4) {
+	.tags-rail-links > :is(:nth-child(4), .nav-more) {
 		order: 2;
+	}
+	.tags-rail-links::before {
+		content: "";
+		flex-basis: 100%;
+		order: 3;
+	}
+	.tags-rail-links > .nav-secondary {
+		order: 4;
+	}
+	.tags-rail-links:not(:has(.nav-more details[open])) > .nav-secondary {
+		display: none;
 	}
 }
 @media (min-width: 61.25em) { /* 980px */
