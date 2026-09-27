@@ -77,9 +77,14 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	display: flex;
 }
 .static-comments-older > summary .static-comments-thread-faces {
-	float: inline-end;
-	margin-block: -.25em;
-	margin-inline-start: .5em;
+	margin-block-start: .5em;
+}
+@media (min-width: 32.5em) { /* 520px */
+	.static-comments-older > summary .static-comments-thread-faces {
+		float: inline-end;
+		margin-block: -.25em;
+		margin-inline-start: .5em;
+	}
 }
 .static-comments-thread-face {
 	width: 1.5em;
@@ -306,13 +311,13 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	margin-left: 2px;
 	margin-right: 8px;
 }
+.static-comments-msg,
+.static-comments-photos {
+	padding-inline-start: calc(var(--webmention-comment-avatar-size) + .75em);
+}
 @media (min-width: 28.125em) { /* 450px */
 	.static-comments-hed {
 		align-items: center;
-	}
-	.static-comments-msg,
-	.static-comments-photos {
-		padding-inline-start: calc(var(--webmention-comment-avatar-size) + .75em);
 	}
 	.static-comments-date br {
 		display: none;
