@@ -323,6 +323,7 @@ modules:
 			<option value="wc">Only 🚾 Web Components</option>
 			<option value="npm">Only 📦 npm Packages</option>
 			<option value="11ty">Only Awesome and 11ty</option>
+			<option value="not11ty">Not Awesome or 11ty</option>
 			<option value="template">Only GitHub Template Repos</option>
 			<option value="nopost">Only projects without a Blog Post</option>
 		</select>
@@ -392,7 +393,7 @@ below shows whichever one matches the column's `aria-sort` {% endcomment -%}
 		{%- assign resultPosts = nameWithOwnerPosts | concat: packageNamePosts | uniq %}
 		{%- assign hasNoPost = false %}
 		{%- if resultPosts.size == 0 or isProjectCardException %}{% assign hasNoPost = true %}{% endif %}
-		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if not result.isArchived and not result.npmDeprecated %}active,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{% if hasNoPost and not result.isArchived %}nopost,{% endif %}{%- endcapture %}
+		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% else %}not11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if not result.isArchived and not result.npmDeprecated %}active,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{% if hasNoPost and not result.isArchived %}nopost,{% endif %}{%- endcapture %}
 		{%- capture rowKey %}{{ result.nameWithOwner }}|{{ result.packageName }}{% endcapture -%}
 		<tr id="{{ reportData.rowIdByPackage[ rowKey ] }}" data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}" class="neglect-score{% if result.isArchived %} archived{% endif %}">
 			{%- assign project = result -%}
