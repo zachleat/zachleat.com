@@ -2,6 +2,7 @@
   {%- capture missingEmoji %}<span class="static-comments-missing-emoji" title="Missing emoji" role="img" aria-label="Missing emoji">{% icon "fas:clipboard-question" %}</span>{% endcapture %}
   {%- capture mentionLinkIcon %}{% icon "fas:user" %}{% endcapture %}
   {%- assign isOriginalPoster = webmention | webmentionIsOriginalPoster %}
+  {%- capture relativeTo %}{% if parentDate %}{{ parentDate }}{% else %}{{ page.date | dateToISO }}{% endif %}{% endcapture %}
   <div class="static-comments-hed">
     {%- include "webmention-avatar.liquid" %}
 
@@ -12,11 +13,11 @@
       <em class="static-comments-date">
         {%- assign platformIcon = webmention | webmentionPlatformIcon %}
         {%- if webmention.url != "" %}<a class="h-card u-url favicon-optout" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">{% endif -%}
-        {% icon platformIcon %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" after post"><time class="dt-published" datetime="{{ webmention.published }}" title="{{ webmention.published | readableDateFromISO }}">{{ webmention.published | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
+        {% icon platformIcon %}<time-difference relative-to="{{ relativeTo }}" mode="strip-prefix" prefix="+" format="narrow"><time class="dt-published" datetime="{{ webmention.published }}" title="{{ webmention.published | readableDateFromISO }}">{{ webmention.published | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
         {%- if webmention.url != "" %}</a>{% endif -%}
         {%- for crosspost in webmention.crossposts %}
         {%- assign crosspostIcon = crosspost | webmentionPlatformIcon %}
-        <a class="favicon-optout" href="{{ crosspost.url }}" target="_blank" rel="noopener noreferrer">{% icon crosspostIcon %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" after post"><time datetime="{{ crosspost.published }}" title="{{ crosspost.published | readableDateFromISO }}">{{ crosspost.published | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></a>
+        <a class="favicon-optout" href="{{ crosspost.url }}" target="_blank" rel="noopener noreferrer">{% icon crosspostIcon %}<time-difference relative-to="{{ relativeTo }}" mode="strip-prefix" prefix="+" format="narrow"><time datetime="{{ crosspost.published }}" title="{{ crosspost.published | readableDateFromISO }}">{{ crosspost.published | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></a>
         {%- endfor %}
       </em>
     {% endif %}
@@ -57,7 +58,7 @@
   {%- capture replyList %}
   <ol>
   {% for reply in webmention.replies %}
-    {% include "webmention", webmention: reply %}
+    {% include "webmention", webmention: reply, parentDate: webmention.published %}
   {% endfor %}
   </ol>
   {%- endcapture %}

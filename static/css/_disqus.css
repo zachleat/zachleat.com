@@ -248,6 +248,10 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	flex-wrap: wrap;
 	column-gap: .75em;
 }
+/* Merged crossposts wrap before the author name truncates */
+.static-comments-date:has(> a + a) {
+	flex-shrink: 1000;
+}
 .static-comments-date a {
 	color: inherit;
 	text-decoration-color: currentColor;

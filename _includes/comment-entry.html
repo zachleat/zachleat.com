@@ -1,16 +1,17 @@
 <li class="static-comments-reply" id="comment-{{ comment.postId }}">
+	{%- capture relativeTo %}{% if parentDate %}{{ parentDate }}{% else %}{{ page.date | dateToISO }}{% endif %}{% endcapture %}
 	<div class="static-comments-hed">
 		<img src="{{ comment.avatar | escape }}" class="static-comments-img" width="48" height="48" alt="Avatar for {{ comment.author | escape }}" loading="lazy" decoding="async" eleventy:ignore>
 		<div class="static-comments-title cased">{{ comment.author | escape }}</div>
 		{% assign isOriginalPoster = comment | commentIsOriginalPoster %}{% if isOriginalPoster %}<span class="static-comments-mention static-comments-op">OP</span>{% endif %}
-		<em class="static-comments-date"><span title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">{% icon "fab:disqus" %}<time-difference relative-to="{{ page.date | dateToISO }}" mode="strip-prefix" suffix=" after post"><time datetime="{{ comment.date }}" title="{{ comment.date | readableDateFromISO }}">{{ comment.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></span></em>
+		<em class="static-comments-date"><span title="Readonly Comment Archived from Disqus (Disqus has been removed from this site)">{% icon "fab:disqus" %}<time-difference relative-to="{{ relativeTo }}" mode="strip-prefix" prefix="+" format="narrow"><time datetime="{{ comment.date }}" title="{{ comment.date | readableDateFromISO }}">{{ comment.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></span></em>
 	</div>
 	<div class="static-comments-msg">{{ comment.message | sanitizeHTML }}</div>
 	{% if comment.replies.size > 0 %}
 	{%- capture replyList %}
 	<ol>
 	{% for reply in comment.replies %}
-		{% include "comment-entry.html", comment: reply, nested: true %}
+		{% include "comment-entry.html", comment: reply, nested: true, parentDate: comment.date %}
 	{% endfor %}
 	</ol>
 	{%- endcapture %}
