@@ -117,9 +117,7 @@ tr:has(del) .z-avatar {
 			<option value="consumer">Consumer only</option>
 		</select>
 	</label>
-	&#160;
-	(<span data-filter-results="entry/entries" aria-live="polite"></span>)
-	&#160;
+	<span>(<span data-filter-results="entry/entries" aria-live="polite"></span>)</span>
 	<label>
 		<span class="sr-only">Filter</span>
 		<select data-filter-key="active">

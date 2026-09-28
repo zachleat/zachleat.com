@@ -635,6 +635,16 @@ export default async function(eleventyConfig) {
 		return Array.from(categories).join(" ");
 	});
 
+	const isVideo = item => hasTag(item, "video") || !!item.data.metadata?.youtubeId;
+
+	eleventyConfig.addLiquidFilter("getMediaFilter", function(collectionItem) {
+		return isVideo(collectionItem) ? "video" : "";
+	});
+
+	eleventyConfig.addLiquidFilter("getMediaFilterForYear", function(posts, year) {
+		return posts.some(post => post.data.page.date.getFullYear() === parseInt(year, 10) && isVideo(post)) ? "video" : "";
+	});
+
 	eleventyConfig.addCollection("writing", function(collection) {
 		return collection.getSortedByDate().reverse().filter(item => {
 			return isWriting(item);

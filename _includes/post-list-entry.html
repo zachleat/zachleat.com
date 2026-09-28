@@ -3,12 +3,12 @@
 {%- capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
 {%- if currentyear != year and ignoreYear != "true" %}
 {%- unless year == blank %}</ol></li>{% endunless %}
-<li class="posts-year"{% if listItems %} data-filter-category="{{ listItems | getFilterCategoriesForYear: currentyear }}" data-filter-results-exclude{% endif %}><ol class="posts">
+<li class="posts-year"{% if listItems %} data-filter-category="{{ listItems | getFilterCategoriesForYear: currentyear }}"{% if filterMedia %} data-filter-media="{{ listItems | getMediaFilterForYear: currentyear }}"{% endif %} data-filter-results-exclude{% endif %}><ol class="posts">
 <li class="subhed"><div class="spark">
 		<h2 class="subhed-year">{{ currentyear }}</h2>
-		{% if listItems %} <span class="subhed-count" data-filter-category data-filter-results-exclude>×{{ listItems | getPostCountForYear: currentyear }}</span>{% endif %}
+		{% if listItems %} <span class="subhed-count" data-filter-category{% if filterMedia %} data-filter-media{% endif %} data-filter-results-exclude>×{{ listItems | getPostCountForYear: currentyear }}</span>{% endif %}
 		{%- capture postsPerYearValues %}{{ listItems | getWeeklyPostCountForYear: currentyear }}{% endcapture %}
-		<span data-filter-category data-filter-results-exclude><img src="{% sparklineDataUri postsPerYearValues, 80, 16, '#94b388' %}" width="80" height="16" alt="Sparkline representing frequency of posts written by month in {{ currentyear }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></span>
+		<span data-filter-category{% if filterMedia %} data-filter-media{% endif %} data-filter-results-exclude><img src="{% sparklineDataUri postsPerYearValues, 80, 16, '#94b388' %}" width="80" height="16" alt="Sparkline representing frequency of posts written by month in {{ currentyear }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore></span>
 	</div></li>
 	{%- capture year %}{{currentyear}}{% endcapture %}
 	{%- assign currentyearpostcount = 0 %}
@@ -20,7 +20,7 @@
 		{%- if post.data.tags contains 'nejsconf' %}nejsconf {% endif %}
 		{%- if hfeed %}h-entry{% endif %}"
 	{%- if post.data.deprecated %} title="Deprecated/Outdated Post"{% endif %}{% comment %}
-	{% endcomment %} data-filter-category="{{ post | getFilterCategories }}">
+	{% endcomment %} data-filter-category="{{ post | getFilterCategories }}"{% if filterMedia %} data-filter-media="{{ post | getMediaFilter }}"{% endif %}>
 
 	<a href="{{ post.url }}" class="posts-link{%- if isArchives and analytics[post.url].rankTotal <= 20 or analytics[post.url].rankPerDaysPosted <= 20 %} posts-link-highlight{% endif %}{% if hfeed %} p-name u-url{% endif %}">
 	{%- if previewImages %}

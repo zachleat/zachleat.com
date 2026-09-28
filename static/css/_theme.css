@@ -1264,7 +1264,7 @@ table-saw :is(th, td) {
 	color: var(--z-color-text-secondary);
 }
 /* First visible year (no visible siblings before it) */
-.posts-year:not(.posts-year:not(.filter-category--hide) ~ *) .subhed {
+.posts-year:not(.posts-year:not(.filter-category--hide, .filter-media--hide) ~ *) .subhed {
 	margin-top: 0;
 }
 .posts img,
@@ -1335,7 +1335,7 @@ a[href]:is(:focus, :hover) .project_img {
 	}
 }
 @media (min-width: 61.25em) { /* 980px */
-	.posts-year:not(.posts-year:not(.filter-category--hide) ~ *) .subhed {
+	.posts-year:not(.posts-year:not(.filter-category--hide, .filter-media--hide) ~ *) .subhed {
 		margin-top: 18px;
 	}
 }
@@ -1370,7 +1370,7 @@ a[href]:is(:focus, :hover) .project_img {
 @media (min-width: 45em) { /* 720px */
 	/* List of posts, icons align right */
 	.posts:not(.posts-withimg) {
-		li:not(.filter-category--hide, .posts-year) {
+		li:not(.filter-category--hide, .filter-media--hide, .posts-year) {
 			display: flex;
 			justify-content: space-between;
 			gap: .5em;
@@ -2772,14 +2772,75 @@ a[href].tag-inline:not(.tag-borderless),
 .filter-posts-form {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	column-gap: .5em;
 	margin-bottom: 1em;
+}
+.filter-posts-form > [data-filter-results] {
+	margin-inline: .5em;
+	font-variant-numeric: tabular-nums;
+}
+/* Count after the filters at small viewports */
+@media (max-width: 43.6875em) { /* 699px */
+	.filter-posts-form > [data-filter-results] {
+		order: 1;
+	}
+}
+.filter-posts-form-bordered {
+	padding: .5em;
+	border: 1px solid var(--z-color-border);
+	border-radius: 1.5em;
+}
+/* Full width inside a list row */
+.posts .filter-posts-form-bordered {
+	flex-grow: 1;
 }
 filter-container:not(:defined) .filter-posts-form {
 	opacity: .4;
 	pointer-events: none;
 }
 select[data-filter-key] {
-	font-size: inherit;
+	appearance: none;
+	font: inherit;
+	color: inherit;
+	padding: .125em 1.75em .125em .75em;
+	border: 1px solid var(--z-color-border);
+	border-radius: 2em;
+	/* chevron */
+	background:
+		linear-gradient(45deg, transparent 50%, currentColor 50%) right 1em center / .3125em .3125em no-repeat,
+		linear-gradient(-45deg, transparent 50%, currentColor 50%) right .6875em center / .3125em .3125em no-repeat,
+		var(--z-color-bg-alt);
+	cursor: pointer;
+}
+select[data-filter-key]:focus-visible {
+	outline: 2px solid var(--z-color-link-active);
+	outline-offset: 2px;
+}
+/* Checkbox filter as a toggleable pill */
+.filter-pill {
+	display: inline-flex;
+	align-items: center;
+	align-self: stretch;
+	gap: .25em;
+	padding: .125em .75em;
+	margin-inline: .5em;
+	border: 1px solid var(--z-color-border);
+	border-radius: 2em;
+	background-color: var(--z-color-bg-alt);
+	cursor: pointer;
+}
+.filter-pill input {
+	margin: 0;
+	accent-color: var(--z-color-primary);
+}
+.filter-pill:has(:checked) {
+	border-color: var(--z-color-primary);
+	background-color: var(--z-color-primary);
+	color: var(--z-color-bg);
+}
+.filter-pill:has(:checked) input {
+	accent-color: var(--z-color-bg);
 }
 
 /* Share image preview */

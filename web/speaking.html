@@ -37,7 +37,7 @@ modules:
 	</li>
 	<li><a href="/web/speaking/inquiries/" class="posts-link"><em>Do you want me to speak at your event? Read on→</em></a></li>
 	<li>
-		<form class="filter-posts-form">
+		<form class="filter-posts-form filter-posts-form-bordered">
 			<label>
 				<span class="sr-only">Filter</span>
 				<select data-filter-key="category">
@@ -48,13 +48,15 @@ modules:
 					<option value="speaking-barcamp">Only Barcamps</option>
 					<option value="speaking-podcast">Only Podcasts</option>
 				</select>
-			</label>&#160;
+			</label>
+			<label class="filter-pill"><input type="checkbox" data-filter-key="media" value="video">{% icon "fa:video" %}Videos</label>
 			<span data-filter-results="entry/entries" aria-live="polite">{{ collections.presentations | size }} entries</span>
 		</form>
 	</li>
 	{% assign year = "" %}
 	{% assign currentyear = "" %}
 	{% assign listItems = collections.presentations %}
+	{% assign filterMedia = true %}
 	{% for post in collections.presentations %}
 		{% include "post-list-entry.html" %}
 	{% endfor %}
