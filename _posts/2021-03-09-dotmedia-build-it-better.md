@@ -8,10 +8,10 @@ tags:
   - video
   - external
 medialength: 58 min
-external_url: 'https://www.youtube.com/watch?v=eRRkvI-w5Ik'
-ignoreExternalLinkInLayoutFile: true
+metadata:
+  youtubeId: eRRkvI-w5Ik
 opengraphSkipFace: true
 ---
-{% renderTemplate "webc" %}<div><youtube-lite-player @slug="eRRkvI-w5Ik" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
 
 * _via [Tweet](https://twitter.com/ThisDotMedia/status/1369342730359439363)._

@@ -5,7 +5,14 @@
 		<span class="syndication-card-platform">{% icon platformIcon %}</span>
 		<span class="syndication-card-author">
 			<strong>{% if platformIcon == "fab:hacker-news" %}<del>{{ platformName }}</del>{% else %}{{ platformName }}{% endif %}</strong>
-			{%- if post['story-points'] != nil %}
+			{%- if platformIcon == "fab:youtube" %}
+			{%- assign youtubeParts = "" | split: "," %}
+			{%- if post['story-points'] > 0 %}{% capture part %}{{ post['story-points'] }} like{% if post['story-points'] != 1 %}s{% endif %}{% endcapture %}{% assign youtubeParts = youtubeParts | push: part %}{% endif %}
+			{%- if post['social-replies'] > 0 %}{% capture part %}{{ post['social-replies'] }} comment{% if post['social-replies'] != 1 %}s{% endif %}{% endcapture %}{% assign youtubeParts = youtubeParts | push: part %}{% endif %}
+			{%- if youtubeParts.size > 0 %}
+			<span class="syndication-card-meta">{{ youtubeParts | join: ", " }}</span>
+			{%- endif %}
+			{%- elsif post['story-points'] != nil %}
 			<span class="syndication-card-meta">{{ post['story-points'] }} point{% if post['story-points'] != 1 %}s{% endif %}, {{ post['story-comments'] }} comment{% if post['story-comments'] != 1 %}s{% endif %}</span>
 			{%- elsif post['social-replies'] != nil %}
 			<span class="syndication-card-meta">{{ post['social-replies'] }} repl{% if post['social-replies'] == 1 %}y{% else %}ies{% endif %}</span>

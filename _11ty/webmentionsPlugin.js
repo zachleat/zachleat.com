@@ -189,8 +189,11 @@ export default function(eleventyConfig) {
 				threads.push(node);
 			}
 		});
+		// Removed comments last
+		let byRemoved = (a, b) => !!a['content-removed'] - !!b['content-removed'];
+		nodes.forEach(node => node.replies.sort(byRemoved));
 		// Most recent threads first
-		return threads.sort((a, b) => getDate(b) - getDate(a));
+		return threads.sort((a, b) => byRemoved(a, b) || getDate(b) - getDate(a));
 	});
 
 	const countReplies = (entry) => (entry?.replies || []).reduce((sum, reply) => sum + 1 + countReplies(reply), 0);
@@ -201,6 +204,9 @@ export default function(eleventyConfig) {
 	const uniqueAuthors = (entries) => {
 		let seen = new Set();
 		return entries.filter(entry => {
+			if(entry['content-removed']) {
+				return false;
+			}
 			let key = entry.author?.url || entry.author?.name || entry.author || entry.url;
 			if(seen.has(key)) {
 				return false;
@@ -234,6 +240,7 @@ export default function(eleventyConfig) {
 		flickr: "fab:flickr",
 		instagram: "fab:instagram",
 		facebook: "fab:facebook",
+		youtube: "fab:youtube",
 	};
 
 	const platformHostnames = {
@@ -245,6 +252,8 @@ export default function(eleventyConfig) {
 		"reddit.com": "reddit",
 		"news.ycombinator.com": "hackernews",
 		"lobste.rs": "lobsters",
+		"www.youtube.com": "youtube",
+		"youtube.com": "youtube",
 	};
 
 	eleventyConfig.addFilter('webmentionPlatformIcon', webmention => getPlatformIcon(webmention));
@@ -278,7 +287,10 @@ export default function(eleventyConfig) {
 		return "fas:globe";
 	}
 
-	const isBlocked = entry => webmentionBlockList.some(blockedUrl => `${entry.url}`.includes(blockedUrl));
+	const isYoutube = entry => entry['story-points'] != null && getPlatformIcon(entry) === platformIcons.youtube;
+
+	// Blocks by post or author url
+	const isBlocked = entry => webmentionBlockList.some(blockedUrl => `${entry.url}`.includes(blockedUrl) || `${entry.author?.url}`.includes(blockedUrl));
 
 	// Nearby webmentions on the same post are grouped into one row
 	const groupCountKeys = { "like-of": "likes", "repost-of": "reposts", "bookmark-of": "bookmarks", "in-reply-to": "replies", "mention-of": "mentions" };
@@ -321,8 +333,8 @@ export default function(eleventyConfig) {
 		let knownAuthors = new Set();
 		for(let { target, webmention, time, views } of entries) {
 			let type = webmention?.['wm-property'];
-			// Hacker News and Lobsters submissions count as a repost plus their points and comments
-			let counts = views ? { views } : webmention['story-points'] != null ? { likes: webmention['story-points'], reposts: 1, replies: webmention['story-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
+			// Hacker News and Lobsters submissions count as a repost plus their points and comments, YouTube videos as their likes
+			let counts = views ? { views } : isYoutube(webmention) ? { likes: webmention['story-points'] } : webmention['story-points'] != null ? { likes: webmention['story-points'], reposts: 1, replies: webmention['story-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
 			if(!counts) {
 				continue;
 			}
@@ -404,6 +416,7 @@ export default function(eleventyConfig) {
 		[platformIcons.flickr]: "Flickr",
 		[platformIcons.instagram]: "Instagram",
 		[platformIcons.facebook]: "Facebook",
+		[platformIcons.youtube]: "YouTube",
 		"fas:globe": "Web",
 	};
 	const getPlatformCounts = entries => {
@@ -482,6 +495,7 @@ export default function(eleventyConfig) {
 		"fab:mastodon": "Mastodon",
 		"fab:hacker-news": "Hacker News",
 		"fas:shrimp": "Lobsters",
+		"fab:youtube": "YouTube",
 	};
 	const getPlatformName = webmention => platformNames[getPlatformIcon(webmention)] || "the web";
 
@@ -494,13 +508,13 @@ export default function(eleventyConfig) {
 		// All replies and mentions per platform
 		let replyCounts = {};
 		for(let entry of entries) {
-			if(entry['wm-property'] === "in-reply-to" || entry['wm-property'] === "mention-of") {
+			if((entry['wm-property'] === "in-reply-to" || entry['wm-property'] === "mention-of") && !isBlocked(entry)) {
 				let platform = getPlatformName(entry);
 				replyCounts[platform] = (replyCounts[platform] || 0) + 1;
 			}
 		}
 		return entries
-			.filter(entry => entry['wm-property'] === "syndication" && (entry['story-points'] == null || includeStories && (entry['story-comments'] > 0 || getPlatformName(entry) === "Hacker News")))
+			.filter(entry => entry['wm-property'] === "syndication" && (entry['story-points'] == null || includeStories && (entry['story-comments'] > 0 || ["Hacker News", "YouTube"].includes(getPlatformName(entry)))))
 			// Hacker News and Lobsters last, most popular submission first
 			.sort((a, b) => (a['story-points'] != null) - (b['story-points'] != null) || (b['story-points'] ?? 0) + (b['story-comments'] ?? 0) - (a['story-points'] ?? 0) - (a['story-comments'] ?? 0) || getDate(a) - getDate(b))
 			.filter(entry => {
@@ -515,10 +529,11 @@ export default function(eleventyConfig) {
 				seenPlatforms.add(platform);
 				return true;
 			})
-			.map(entry => ["Mastodon", "Bluesky"].includes(getPlatformName(entry)) ? { ...entry, 'social-replies': replyCounts[getPlatformName(entry)] || 0 } : entry);
+			.map(entry => ["Mastodon", "Bluesky", "YouTube"].includes(getPlatformName(entry)) ? { ...entry, 'social-replies': replyCounts[getPlatformName(entry)] || 0 } : entry);
 	});
 
-	const webmentionsForUrl = (webmentions, url, allowedTypes) => {
+	// Blocked replies are kept as placeholders when `includeRemoved` is set
+	const webmentionsForUrl = (webmentions, url, allowedTypes, includeRemoved = false) => {
 		if( !allowedTypes ) {
 			// all types
 			allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of', 'bookmark-of'];
@@ -532,16 +547,15 @@ export default function(eleventyConfig) {
 
 		let knownUrls = {};
 		return webmentions.mentions[url]
+			.map(entry => includeRemoved && entry['wm-property'] === "in-reply-to" && isBlocked(entry) ? { type: "entry", url: entry.url, published: entry.published, "wm-received": entry["wm-received"], "wm-id": entry["wm-id"], "wm-target": entry["wm-target"], "wm-property": entry["wm-property"], "in-reply-to": entry["in-reply-to"], "content-removed": true } : entry)
 			.filter(entry => {
-				// Hacker News and Lobsters submissions count as reposts
-				let type = entry['story-points'] != null ? "repost-of" : entry['wm-property'];
+				// Hacker News and Lobsters submissions count as reposts, YouTube likes are counted separately
+				let type = entry['story-points'] != null && !isYoutube(entry) ? "repost-of" : entry['wm-property'];
 				if(!allowedTypes.includes(type)) {
 					return false;
 				}
 
-				if(webmentionBlockList.filter(blockedUrl => {
-					return `${entry.url}`.startsWith(blockedUrl) || entry.url.indexOf(blockedUrl) > -1
-				}).length > 0) {
+				if(!entry['content-removed'] && isBlocked(entry)) {
 					return false;
 				}
 				if(getBaseUrl(entry['wm-target']) !== url) {
@@ -570,6 +584,15 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter('webmentionsForUrl', webmentionsForUrl);
 
+	// Likes plus YouTube video likes
+	const likeCountForUrl = (webmentions, url) => {
+		let youtubeLikes = (webmentions?.mentions?.[url] || [])
+			.filter(entry => isYoutube(entry) && getBaseUrl(entry['wm-target']) === url)
+			.reduce((sum, entry) => sum + entry['story-points'], 0);
+		return webmentionsForUrl(webmentions, url, "like-of").length + youtubeLikes;
+	};
+	eleventyConfig.addFilter('webmentionsLikeCount', likeCountForUrl);
+
 	// Sitewide totals, cached per webmentions data object
 	let siteStatsCache = new WeakMap();
 	eleventyConfig.addFilter('webmentionsSiteStats', (webmentions, analytics = {}, commentsCounts = {}) => {
@@ -585,7 +608,7 @@ export default function(eleventyConfig) {
 		};
 		for(let url of Object.keys(webmentions?.mentions || {})) {
 			stats.boosts += webmentionsForUrl(webmentions, url, "mention-of,repost-of").length;
-			stats.likes += webmentionsForUrl(webmentions, url, "like-of").length;
+			stats.likes += likeCountForUrl(webmentions, url);
 			stats.replies += webmentionsForUrl(webmentions, url, "in-reply-to,bookmark-of").length;
 		}
 

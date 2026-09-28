@@ -1,4 +1,7 @@
 <li class="static-comments-reply u-comment h-cite" id="webmention-{{ webmention['wm-id'] }}">
+  {%- if webmention['content-removed'] %}
+  <div class="static-comments-msg"><p><em>Comment Removed</em></p></div>
+  {%- else %}
   {%- capture missingEmoji %}<span class="static-comments-missing-emoji" title="Missing emoji" role="img" aria-label="Missing emoji">{% icon "fas:clipboard-question" %}</span>{% endcapture %}
   {%- capture mentionLinkIcon %}{% icon "fas:user" %}{% endcapture %}
   {%- assign isOriginalPoster = webmention | webmentionIsOriginalPoster %}
@@ -50,6 +53,8 @@
     {%- endfor %}
   </div>
   {% endif %}
+
+  {%- endif %}
 
   {% if showTarget %}
   <a href="{{ webmention['wm-target'] }}" class="tag-inline tag-cased">{{ webmention['wm-target'] | localUrl }}</a>

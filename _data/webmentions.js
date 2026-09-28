@@ -8,6 +8,7 @@ import getBaseUrl from "../_includes/getBaseUrl.js";
 import getSocialMentions, { getPrivateBlueskyAuthors, getBlockedBlueskyAuthors } from "../_11ty/webmentions/social.js";
 import getHackerNewsMentions from "../_11ty/webmentions/hackernews.js";
 import getLobstersMentions from "../_11ty/webmentions/lobsters.js";
+import getYoutubeMentions from "../_11ty/webmentions/youtube.js";
 import archive from "../_11ty/webmentions/archive.json" with { type: "json" };
 
 // Social posts from the last N days are refetched on every build
@@ -62,6 +63,10 @@ async function fetchWebmentions() {
 	}));
 	live.push(...await getLobstersMentions().catch(e => {
 		console.warn("[zachleat.com] Unable to fetch Lobsters:", e);
+		return [];
+	}));
+	live.push(...await getYoutubeMentions().catch(e => {
+		console.warn("[zachleat.com] Unable to fetch YouTube:", e);
 		return [];
 	}));
 

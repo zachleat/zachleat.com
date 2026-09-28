@@ -59,6 +59,25 @@ classes:
 			</div>
 		</article>
 {% endif %}
+{% if metadata.speaking.recap %}
+		{%- assign recapPost = collections.all | where: "url", metadata.speaking.recap | first %}
+		<article class="content-sibling">
+			<div class="callout callout-update">
+				{% icon "fa:bullhorn" %}
+				<h3>Talk Recap</h3>
+				<p>Read the recap: <a href="{{ metadata.speaking.recap }}">{% if recapPost %}{{ recapPost.data.title }}{% else %}{{ metadata.speaking.recap }}{% endif %}</a></p>
+			</div>
+		</article>
+{% endif %}
+{% if metadata.youtubeId %}
+		<article class="content-sibling">
+			<div class="callout callout-update">
+				{% icon "fab:youtube" %}
+				<h3>Video</h3>
+				<p><a href="https://www.youtube.com/watch?v={{ metadata.youtubeId }}"><em>Watch on YouTube:</em> {{ title }}</a></p>
+			</div>
+		</article>
+{% endif %}
 {% if external_url and external_url_location != "end" %}
 		<article class="content-sibling">
 			{%- unless ignoreExternalLinkInLayoutFile %}
@@ -91,7 +110,6 @@ classes:
 <article class="content-grid-sibling">
 	{%- capture postCard %}
 	{%- if metadata.speaking.recap %}
-	{%- assign recapPost = collections.all | where: "url", metadata.speaking.recap | first %}
 	<p><a href="{{ metadata.speaking.recap }}"><em>{% icon "fa:bullhorn" %}Talk recap:</em> {% if recapPost %}{{ recapPost.data.title }}{% else %}{{ metadata.speaking.recap }}{% endif %}</a></p>
 	{%- endif %}
 	{%- capture postMetadata %}
