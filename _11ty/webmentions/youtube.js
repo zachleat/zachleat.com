@@ -7,7 +7,7 @@ const API_KEY = process.env.YOUTUBE_API_KEY;
 const POSTS_DIR = "./_posts/";
 
 // Post urls keyed by the `metadata.youtubeId` in their front matter
-function getYoutubePosts() {
+export function getYoutubePosts() {
 	let posts = {};
 	for(let filename of fs.readdirSync(POSTS_DIR)) {
 		if(!filename.endsWith(".md")) {
@@ -83,6 +83,17 @@ async function getComments(videoId, target) {
 	return entries;
 }
 
+// Snippet and statistics for each video id
+export async function getYoutubeVideos(ids) {
+	let videos = [];
+	// 50 ids per request is the API maximum
+	for(let i = 0; i < ids.length; i += 50) {
+		let { items = [] } = await youtube("videos", { part: "snippet,statistics", id: ids.slice(i, i + 50).join(",") });
+		videos.push(...items);
+	}
+	return videos;
+}
+
 // Likes on videos embedded in posts (counted like story submission points) and their comments
 export default async function getYoutubeMentions() {
 	if(!API_KEY) {
@@ -91,13 +102,7 @@ export default async function getYoutubeMentions() {
 	}
 
 	let posts = getYoutubePosts();
-	let ids = Object.keys(posts);
-	let videos = [];
-	// 50 ids per request is the API maximum
-	for(let i = 0; i < ids.length; i += 50) {
-		let { items = [] } = await youtube("videos", { part: "snippet,statistics", id: ids.slice(i, i + 50).join(",") });
-		videos.push(...items);
-	}
+	let videos = await getYoutubeVideos(Object.keys(posts));
 
 	let comments = [];
 	for(let video of videos.filter(video => Number(video.statistics?.commentCount) > 0)) {

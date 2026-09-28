@@ -21,7 +21,7 @@ is-land[ready] lite-youtube {
 <script type="module" src="/static/browser-window.js" webc:keep></script>
 <browser-window mode="dark" flush icon :url="getLinkUrl(slug, start)" shadow>
 	<is-land on:visible class="fluid-width-video-wrapper">
-		<lite-youtube :videoid="slug" :js-api="jsapi !== 'undefined' ? '' : false" :params="start ? `start=${start}` : false" :playlabel="`Play${label ? `: ${label}` : ''}`" :style="`background-image: var(--yt-poster-img-url);--yt-poster-img-url-lazy: url('${poster || getPosterImage(slug, posterSize)}');`"></lite-youtube>
+		<lite-youtube :videoid="slug" :js-api="jsapi !== 'undefined' ? '' : false" :params="start ? `start=${start}` : false" :playlabel="`Play${youtubeVideoTitle($data.webmentions, slug) || label ? `: ${youtubeVideoTitle($data.webmentions, slug) || label}` : ''}`" :style="`background-image: var(--yt-poster-img-url);--yt-poster-img-url-lazy: url('${poster || getPosterImage(slug, posterSize)}');`"></lite-youtube>
 		<template data-island="once" webc:raw>
 			<style>
 			lite-youtube {
@@ -38,4 +38,4 @@ is-land[ready] lite-youtube {
 		</template>
 	</is-land>
 </browser-window>
-<youtube-link :label="label" :href="getLinkUrl(slug, start)" webc:if="hideLink !== ''"></youtube-link>
+<youtube-link :label="youtubeVideoTitle($data.webmentions, slug) || label" :href="getLinkUrl(slug, start)" webc:if="hideLink !== ''"></youtube-link>

@@ -593,6 +593,22 @@ export default function(eleventyConfig) {
 	};
 	eleventyConfig.addFilter('webmentionsLikeCount', likeCountForUrl);
 
+	// YouTube video titles by video id, cached per webmentions data object
+	let youtubeTitlesCache = new WeakMap();
+	eleventyConfig.addFilter('youtubeVideoTitle', (webmentions, videoId) => {
+		let mentions = webmentions?.mentions || {};
+		if(!youtubeTitlesCache.has(mentions)) {
+			let titles = new Map();
+			for(let entry of Object.values(mentions).flat()) {
+				if(isYoutube(entry)) {
+					titles.set(new URL(entry.url).searchParams.get("v"), entry.content?.text);
+				}
+			}
+			youtubeTitlesCache.set(mentions, titles);
+		}
+		return youtubeTitlesCache.get(mentions).get(videoId);
+	});
+
 	// Sitewide totals, cached per webmentions data object
 	let siteStatsCache = new WeakMap();
 	eleventyConfig.addFilter('webmentionsSiteStats', (webmentions, analytics = {}, commentsCounts = {}) => {
@@ -602,6 +618,7 @@ export default function(eleventyConfig) {
 
 		let stats = {
 			views: Object.values(analytics).reduce((sum, entry) => sum + (entry.pageViews || 0), 0),
+			mediaViews: Object.values(analytics).reduce((sum, entry) => sum + (entry.mediaViews || 0), 0),
 			boosts: 0,
 			likes: 0,
 			replies: Object.values(commentsCounts).reduce((sum, count) => sum + count, 0),

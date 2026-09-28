@@ -5,14 +5,18 @@ import matter from "@11ty/gray-matter";
 
 import { queryData as queryElizabeaconData } from "./_11ty/fetch-analytics/elizabeacon.js";
 import { fetchData as queryGoatcounterData } from "./_11ty/fetch-analytics/goatcounter.js";
+import { fetchData as queryYoutubeData } from "./_11ty/fetch-analytics/youtube.js";
 
 import googleData from "./_11ty/fetch-analytics/google-analytics-export.json" with { type: "json" };
 
 const MINIMUM_PAGEVIEWS = 50;
 
+const getPopularity = entry => entry.pageViews + (entry.mediaViews || 0);
+
 async function fetchAnalyticsData() {
 	let elizabeaconData = await queryElizabeaconData();
 	let goatcounterData = await queryGoatcounterData();
+	let youtubeData = await queryYoutubeData();
 
 	let unordered = [];
 	let visited = {};
@@ -59,8 +63,26 @@ async function fetchAnalyticsData() {
 		}
 	}
 
+	// add urls with only video views
+	for(let url in youtubeData) {
+		if(!visited[url]) {
+			visited[url] = true;
+			unordered.push({
+				url,
+				pageViews: 0,
+			})
+		}
+	}
+
+	// Video views are kept separate but count towards popularity
+	for(let entry of unordered) {
+		if(youtubeData[entry.url]) {
+			entry.mediaViews = youtubeData[entry.url].count;
+		}
+	}
+
 	return unordered.sort((a, b) => {
-		return b.pageViews - a.pageViews;
+		return getPopularity(b) - getPopularity(a);
 	});
 };
 
@@ -161,7 +183,7 @@ function getPageViewsPerDayRanks(analyticsData) {
 		if(inputMap[entry.url]) {
 			entry.from = inputMap[entry.url];
 
-			let pageViewsPerDay = entry.pageViews / ((Date.now() - entry.from.time) / (1000*60*60*24));
+			let pageViewsPerDay = getPopularity(entry) / ((Date.now() - entry.from.time) / (1000*60*60*24));
 			entry.pageViewsPerDay = pageViewsPerDay;
 
 			entry.rankTotal = j;
@@ -182,7 +204,7 @@ function getPageViewsPerDayRanks(analyticsData) {
 
 	let finalResults = {};
 	for(let entry of analyticsData) {
-		if(entry.pageViews > MINIMUM_PAGEVIEWS) {
+		if(getPopularity(entry) > MINIMUM_PAGEVIEWS) {
 			finalResults[entry.url] = entry;
 		}
 	}

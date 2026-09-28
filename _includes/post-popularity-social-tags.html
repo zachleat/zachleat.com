@@ -5,14 +5,32 @@
 {%- capture absoluteUrl -%}{{ post.url | absoluteUrl }}{%- endcapture -%}
 {%- assign boostCount = webmentions | webmentionsForUrl: absoluteUrl, "mention-of,repost-of" | size -%}
 {%- assign likeCount = webmentions | webmentionsLikeCount: absoluteUrl -%}
-{%- assign viewCount = analytics[post.url].pageViews -%}
+{%- assign viewCount = analytics[post.url].pageViews | default: 0 -%}
+{%- assign mediaViewCount = analytics[post.url].mediaViews | default: 0 -%}
+{%- comment %}Lists show only the larger of page and video views{% endcomment -%}
+{%- assign showViews = alwaysShowStats -%}
+{%- assign showMediaViews = alwaysShowStats -%}
+{%- unless alwaysShowStats -%}
+	{%- if mediaViewCount > viewCount -%}
+		{%- if mediaViewCount > MINIMUM_VIEW_COUNT %}{% assign showMediaViews = true %}{% endif -%}
+	{%- elsif viewCount > MINIMUM_VIEW_COUNT -%}
+		{%- assign showViews = true -%}
+	{%- endif -%}
+{%- endunless -%}
 
-{%- if alwaysShowStats or boostCount > 0 or likeCount > 0 or viewCount > MINIMUM_VIEW_COUNT -%}
+{%- if alwaysShowStats or boostCount > 0 or likeCount > 0 or showViews or showMediaViews -%}
 <span class="tag tag-social">
-	{%- if alwaysShowStats or viewCount > MINIMUM_VIEW_COUNT -%}
+	{%- if showViews -%}
 		{%- if viewCount > 0 -%}
 		<span class="tag-social--view" title="{{ viewCount }} view{% if viewCount != 1 %}s{% endif %}">{% icon "fa:eye" %}{{ viewCount | renderNumber: "0a" }}</span>
 		{%- endif -%}
+	{%- endif -%}
+	{%- if mediaViewCount > 0 -%}
+		{%- if showMediaViews -%}
+		<span class="tag-social--media" title="{{ mediaViewCount }} video view{% if mediaViewCount != 1 %}s{% endif %}">{% icon "fa:circle-play" %}{{ mediaViewCount | renderNumber: "0a" }}</span>
+		{%- endif -%}
+	{%- elsif alwaysShowStats -%}
+		<span class="tag-social--media" aria-hidden="true"></span>
 	{%- endif -%}
 
 	{%- if alwaysShowStats or boostCount > 0 or likeCount > 0 -%}

@@ -70,11 +70,12 @@ classes:
 		</article>
 {% endif %}
 {% if metadata.youtubeId %}
+		{%- assign videoTitle = webmentions | youtubeVideoTitle: metadata.youtubeId | default: title %}
 		<article class="content-sibling">
 			<div class="callout callout-update">
 				{% icon "fab:youtube" %}
 				<h3>Video</h3>
-				<p><a href="https://www.youtube.com/watch?v={{ metadata.youtubeId }}"><em>Watch on YouTube:</em> {{ title }}</a></p>
+				<p><a href="https://www.youtube.com/watch?v={{ metadata.youtubeId }}"><em>Watch on YouTube:</em> {{ videoTitle | escape }}</a></p>
 			</div>
 		</article>
 {% endif %}
