@@ -97,6 +97,7 @@ Luckily we have a north star date format: [RFC 9557](https://developer.mozilla.o
 
 There are a few notable differences:
 
+<div class="table-scroll">
 <table>
 	<thead>
 		<tr class="nowrap">
@@ -278,6 +279,7 @@ There are a few notable differences:
 		</tr>
 	</tbody>
 </table>
+</div>
 
 <dl class="flex">
 	<dt>{% icon "fas:circle-xmark" %}</dt>

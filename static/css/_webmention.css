@@ -93,6 +93,38 @@
 	align-items: baseline;
 	gap: .5em;
 }
+.webmentions__channels {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .5em 1em;
+}
+.webmentions__channels:not(:last-child) {
+	margin-block-end: 1.5em;
+}
+.webmentions__channels > .hed-h3,
+.webmentions__channels > .rail-activity-platforms {
+	margin-block: 0;
+}
+.rail-activity-platforms {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .35em;
+	margin-block-end: 1em;
+	font-size: .8125em;
+	font-variant-numeric: tabular-nums;
+	color: var(--z-color-text-secondary);
+}
+/* Matches .rail-activity-count */
+.rail-activity-platforms > li {
+	display: inline-flex;
+	align-items: center;
+	gap: .35em;
+	padding: 0 .6em;
+	border: 1px solid var(--z-color-border);
+	border-radius: 1em;
+	background-color: var(--z-color-bg-alt);
+}
 .rail-activity-count {
 	display: inline-flex;
 	align-items: center;

@@ -44,6 +44,8 @@
 				{%- if webmention.url %}<a href="{{ webmention.url }}">{% else %}<span>{% endif %}{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}{% if webmention.url %}</a>{% else %}</span>{% endif %}
 				{%- endfor %}
 			</div>
+			{%- assign platformCounts = webmentions | webmentionsPlatformCounts %}
+			{% include "webmention-channels.liquid" %}
 		</div>
 		{%- endif %}
 	{%- endif %}

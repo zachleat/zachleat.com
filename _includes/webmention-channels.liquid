@@ -1,0 +1,10 @@
+{%- if platformCounts.size > 0 %}
+<div class="webmentions__channels">
+	<div class="hed-h3">By Channel</div>
+	<ul class="rail-activity-platforms list-flush">
+	{%- for platform in platformCounts %}
+		<li title="{{ platform.name }} Activity: {{ platform.count | renderNumber }}">{% icon platform.icon %}<span class="a11y-only">{{ platform.name }}</span>{% if platform.name == "Twitter" or platform.name == "Hacker News" %}<del>{{ platform.count | renderNumber: "0[.]0a" }}</del>{% else %}{{ platform.count | renderNumber: "0[.]0a" }}{% endif %}</li>
+	{%- endfor %}
+	</ul>
+</div>
+{%- endif %}

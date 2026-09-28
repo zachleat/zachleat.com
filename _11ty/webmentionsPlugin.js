@@ -392,6 +392,50 @@ export default function(eleventyConfig) {
 		return count;
 	});
 
+	// Webmention counts per platform (excluding my own), largest first, sitewide or for one url
+	const platformLabels = {
+		[platformIcons.bluesky]: "Bluesky",
+		[platformIcons.mastodon]: "Mastodon",
+		[platformIcons.twitter]: "Twitter",
+		[platformIcons.github]: "GitHub",
+		[platformIcons.reddit]: "Reddit",
+		[platformIcons.hackernews]: "Hacker News",
+		[platformIcons.lobsters]: "Lobsters",
+		[platformIcons.flickr]: "Flickr",
+		[platformIcons.instagram]: "Instagram",
+		[platformIcons.facebook]: "Facebook",
+		"fas:globe": "Web",
+	};
+	const getPlatformCounts = entries => {
+		let counts = new Map();
+		for(let [target, list] of entries) {
+			for(let webmention of list) {
+				if(getBaseUrl(webmention['wm-target']) !== target || isOriginalPoster(webmention) || isBlocked(webmention)) {
+					continue;
+				}
+				let icon = getPlatformIcon(webmention);
+				if(icon === platformIcons.reddit) {
+					continue;
+				}
+				// Story submissions count each upvote and comment
+				let count = webmention['story-points'] != null ? webmention['story-points'] + (webmention['story-comments'] || 0) : 1;
+				counts.set(icon, (counts.get(icon) || 0) + count);
+			}
+		}
+		return [...counts].map(([icon, count]) => ({ icon, name: platformLabels[icon] || "Web", count })).sort((a, b) => b.count - a.count);
+	};
+	let platformCountsCache = new WeakMap();
+	eleventyConfig.addFilter('webmentionsPlatformCounts', (webmentions, url) => {
+		let mentions = webmentions?.mentions || {};
+		if(url) {
+			return getPlatformCounts(mentions[url] ? [[url, mentions[url]]] : []);
+		}
+		if(!platformCountsCache.has(mentions)) {
+			platformCountsCache.set(mentions, getPlatformCounts(Object.entries(mentions)));
+		}
+		return platformCountsCache.get(mentions);
+	});
+
 	// People with the most likes, reposts, and replies sitewide in the last 30 days (excluding my own), mentions are mostly scraper blogs
 	const leaderboardTypes = ["like-of", "repost-of", "in-reply-to"];
 	// My project accounts

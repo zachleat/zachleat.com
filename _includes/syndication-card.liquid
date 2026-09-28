@@ -1,0 +1,22 @@
+{%- assign platformIcon = post | webmentionPlatformIcon %}
+{%- assign platformName = post | webmentionPlatformName %}
+<a href="{{ post.url }}" class="syndication-card{% if platformIcon == "fab:hacker-news" %} syndication-card--hn{% endif %} u-syndication" target="_blank" rel="noopener noreferrer">
+	<span class="syndication-card-hed">
+		<span class="syndication-card-platform">{% icon platformIcon %}</span>
+		<span class="syndication-card-author">
+			<strong>{% if platformIcon == "fab:hacker-news" %}<del>{{ platformName }}</del>{% else %}{{ platformName }}{% endif %}</strong>
+			{%- if post['story-points'] != nil %}
+			<span class="syndication-card-meta">{{ post['story-points'] }} point{% if post['story-points'] != 1 %}s{% endif %}, {{ post['story-comments'] }} comment{% if post['story-comments'] != 1 %}s{% endif %}</span>
+			{%- elsif post['social-replies'] != nil %}
+			<span class="syndication-card-meta">{{ post['social-replies'] }} repl{% if post['social-replies'] == 1 %}y{% else %}ies{% endif %}</span>
+			{%- endif %}
+		</span>
+	</span>
+	<span class="syndication-card-user">
+		Posted by
+		{%- if post.author.photo != "" %}
+		<img class="syndication-card-avatar" src="{{ post.author.photo | eleventyImageServiceAvatar }}" alt="" width="36" height="36" loading="lazy" decoding="async" eleventy:ignore>
+		{%- endif %}
+		{{ post.author.name | htmlEntities }}
+	</span>
+</a>

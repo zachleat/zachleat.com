@@ -3,30 +3,20 @@
   {% assign disqusCommentSize = 0 %}
   {% if disqus %}{% assign disqusCommentSize = disqus.commentCount %}{% endif %}
   {%- assign repliesSize = replies | size | plus: disqusCommentSize -%}
-	{%- assign syndications = webmentions | webmentionSyndication: absoluteUrl, false %}
+	{%- assign syndications = webmentions | webmentionSyndication: absoluteUrl %}
 	{%- if syndications.size > 0 %}
 	<div class="syndication">
-	<div class="hed-h3">Reply to…</div>
+	<div class="hed-h3">Reply on…</div>
 	<div class="syndication-cards">
 		{%- for post in syndications %}
-		{%- assign platformIcon = post | webmentionPlatformIcon %}
-		<a href="{{ post.url }}" class="syndication-card u-syndication" target="_blank" rel="noopener noreferrer">
-			<span class="syndication-card-hed">
-				<img class="syndication-card-avatar" src="{{ post.author.photo | eleventyImageServiceAvatar }}" alt="" width="36" height="36" loading="lazy" decoding="async" eleventy:ignore>
-				<span class="syndication-card-author">
-					<strong>{{ post.author.name | htmlEntities }}</strong>
-					<span class="syndication-card-meta"><time datetime="{{ post.published }}">{{ post.published | readableDateFromISO: "dd LLL yyyy" }}</time>{% if post['social-replies'] != nil %} · {{ post['social-replies'] }} repl{% if post['social-replies'] == 1 %}y{% else %}ies{% endif %}{% endif %}</span>
-				</span>
-				<span class="syndication-card-platform">{% icon platformIcon %}<span class="a11y-only">{{ post | webmentionPlatformName }}</span></span>
-			</span>
-			{%- if post.content.text %}
-			<span class="syndication-card-text text-ellipsis-multi">{{ post.content.text | escape }}</span>
-			{%- endif %}
-		</a>
+		{%- include "syndication-card.liquid" %}
 		{%- endfor %}
 	</div>
 	</div>
 	{%- endif %}
+
+  {%- assign platformCounts = webmentions | webmentionsPlatformCounts: absoluteUrl %}
+  {% include "webmention-channels.liquid" %}
 
   {% if repliesSize > 0 %}
   {%- assign threads = replies | webmentionThreads -%}
