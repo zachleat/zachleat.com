@@ -395,14 +395,14 @@ h5,
 			--body-grid-main-max: calc(var(--z-width-list) + 2.875rem);
 			display: grid;
 			/* Equal outer gutters center the main column and rail together */
+			/* Main sits flush left when the viewport is narrower than main plus rail */
 			grid-template-areas:
-				". main rail hamburger"
-				"appendix appendix appendix appendix"
-				"footer footer footer footer";
+				". main . rail hamburger"
+				"appendix appendix appendix appendix appendix"
+				"footer footer footer footer footer";
 			grid-template-rows: 1fr auto auto;
-			grid-template-columns: 1fr minmax(0, var(--body-grid-main-max)) var(--body-grid-rail) 1fr;
-			grid-column-gap: var(--body-grid-gap);
-			grid-row-gap: 0;
+			grid-template-columns: minmax(0, 1fr) minmax(0, var(--body-grid-main-max)) var(--body-grid-gap) var(--body-grid-rail) minmax(var(--body-grid-gap), 1fr);
+			gap: 0;
 			padding-top: 1rem;
 		}
 		.body-grid > * {
