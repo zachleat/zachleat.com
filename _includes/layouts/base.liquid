@@ -6,17 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="color-scheme" content="light dark">
 
-		<script>
-		(function() {
-			try {
-				var theme = localStorage.getItem("theme");
-				if(theme === "light" || theme === "dark") {
-					document.documentElement.setAttribute("data-theme", theme);
-				}
-			} catch(e) {}
-		})();
-		</script>
-
 		<title>{% if title %}{% if titleOverride %}{{ titleOverride }}{% else %}{{ title }}{% endif %}—zachleat.com{% else %}zachleat.com{% endif %}</title>
 
 		<link rel="preload" href="/static/fonts/lato/2.0/latolatin-regular-subset.woff2" as="font" type="font/woff2" crossorigin>
@@ -82,6 +71,16 @@
 {%- endfor %}
 
 {%- if JS_ENABLED %}
+		<script>
+		(function() {
+			try {
+				var theme = localStorage.getItem("theme");
+				if(theme === "light" || theme === "dark") {
+					document.documentElement.setAttribute("data-theme", theme);
+				}
+			} catch(e) {}
+		})();
+		</script>
 {%- if eleventy.env.runMode == "build" %}
 		<script data-goatcounter="https://zachleat.goatcounter.com/count" async src="//gc.zgo.at/count.v4.js" crossorigin="anonymous" integrity="sha384-nRw6qfbWyJha9LhsOtSb2YJDyZdKvvCFh0fJYlkquSFjUxp9FVNugbfy8q1jdxI+"></script>
 {%- endif %}

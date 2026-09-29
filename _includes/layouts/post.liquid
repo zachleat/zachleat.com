@@ -5,6 +5,7 @@ tmpl: page
 classes:
   html: page-gradient tmpl-post
 ---
+
 <article class="h-entry">
 	<div class="content-grid-sibling">
 		<h1 class="p-name primary-title{% if smalltitle %} primary-title-smalltitle{% endif %}">{% if titleHtml %}{{ titleHtml }}{% else %}{{ title }}{% endif %}</h1>
@@ -145,6 +146,7 @@ classes:
 	{% include "about.html" %}
 </article>
 
+{% if JS_ENABLED %}
 <script type="module" src="/static/line-numbers.js"></script>
 <script type="module">
 const LineNumbers = customElements.get("line-numbers");
@@ -156,3 +158,4 @@ Array.from(document.querySelectorAll("pre")).forEach(el => {
 	LineNumbers.upgrade(el)
 });
 </script>
+{% endif %}
