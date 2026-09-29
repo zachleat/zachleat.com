@@ -1,9 +1,13 @@
 {%- if platformCounts.size > 0 %}
 <div class="webmentions__channels">
-	<div class="hed-h3">By Channel</div>
-	<ul class="rail-activity-platforms list-flush">
+	<div class="hed-h3">{{ channelsHeading | default: "Activity By Channel" }}</div>
+	{%- assign channelCountKeys = "likes,reposts,replies" | split: "," %}
+	<ul class="activity-channels list-flush">
 	{%- for platform in platformCounts %}
-		<li title="{{ platform.name }} Activity: {{ platform.count | renderNumber }}">{% if platform.icon == "fa:circle-play" %}{% icon "fab:youtube" %}{% endif %}{% icon platform.icon %}<span class="a11y-only">{{ platform.name }}</span>{% if platform.name == "Twitter" or platform.name == "Hacker News" %}<del>{{ platform.count | renderNumber: "0[.]0a" }}</del>{% else %}{{ platform.count | renderNumber: "0[.]0a" }}{% endif %}</li>
+		<li{% if platform.retired %} class="activity-channels--retired"{% endif %}>{% icon platform.icon %}<span class="a11y-only">{{ platform.name }}</span>
+			{%- if platform.pageViews > 0 %}<span class="activity-channels__count" title="Page views: {{ platform.pageViews | renderNumber }}">{% icon "fa:eye" %}{{ platform.pageViews | renderNumber: "0[.]0a" }}<span class="a11y-only"> page views</span></span>{% endif %}
+			{%- if platform.views > 0 %}<span class="activity-channels__count" title="{{ platform.name }} views: {{ platform.views | renderNumber }}">{% icon "fa:circle-play" %}{{ platform.views | renderNumber: "0[.]0a" }}<span class="a11y-only"> views</span></span>{% endif %}
+			{%- for key in channelCountKeys %}{% assign channelCount = platform[key] %}{% if channelCount > 0 %}<span class="activity-channels__count" title="{{ platform.name }} {{ key }}: {{ channelCount | renderNumber }}">{% if key == "likes" %}{% icon "far:heart" %}{% elsif key == "reposts" %}{% icon "fa:retweet" %}{% else %}{% icon "fas:reply-all" %}{% endif %}{% if platform.retired %}<del>{% endif %}{{ channelCount | renderNumber: "0[.]0a" }}{% if platform.retired %}</del>{% endif %}<span class="a11y-only"> {{ key }}</span></span>{% endif %}{% endfor %}</li>
 	{%- endfor %}
 	</ul>
 </div>

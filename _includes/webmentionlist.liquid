@@ -15,7 +15,7 @@
 	</div>
 	{%- endif %}
 
-  {%- assign platformCounts = webmentions | webmentionsPlatformCounts: absoluteUrl %}
+  {%- assign platformCounts = webmentions | webmentionsPlatformCounts: absoluteUrl, analytics[page.url].pageViews %}
   {% include "webmention-channels.liquid" %}
 
   {% if repliesSize > 0 %}

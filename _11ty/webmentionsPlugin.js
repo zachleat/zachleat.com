@@ -405,7 +405,6 @@ export default function(eleventyConfig) {
 	});
 
 	// Webmention counts per platform (excluding my own), largest first, sitewide or for one url
-	const videoViewsIcon = "fa:circle-play";
 	const platformLabels = {
 		[platformIcons.bluesky]: "Bluesky",
 		[platformIcons.mastodon]: "Mastodon",
@@ -419,8 +418,11 @@ export default function(eleventyConfig) {
 		[platformIcons.facebook]: "Facebook",
 		[platformIcons.youtube]: "YouTube",
 		"fas:globe": "Web",
-		[videoViewsIcon]: "YouTube Views",
 	};
+	const retiredPlatforms = [platformIcons.twitter, platformIcons.hackernews];
+	// Largest total activity first, retired platforms last
+	const getActivityTotal = ({ likes, reposts, replies, views, pageViews = 0 }) => likes + reposts + replies + views + pageViews;
+	const sortPlatformCounts = counts => counts.sort((a, b) => a.retired - b.retired || getActivityTotal(b) - getActivityTotal(a));
 	const getPlatformCounts = entries => {
 		let counts = new Map();
 		for(let [target, list] of entries) {
@@ -432,26 +434,48 @@ export default function(eleventyConfig) {
 				if(icon === platformIcons.reddit) {
 					continue;
 				}
-				// Story submissions count each upvote and comment
-				let count = webmention['story-points'] != null ? webmention['story-points'] + (webmention['story-comments'] || 0) : 1;
-				counts.set(icon, (counts.get(icon) || 0) + count);
-				if(webmention['video-views'] > 0) {
-					counts.set(videoViewsIcon, (counts.get(videoViewsIcon) || 0) + webmention['video-views']);
+				if(!counts.has(icon)) {
+					counts.set(icon, { likes: 0, reposts: 0, replies: 0, views: 0 });
+				}
+				let platform = counts.get(icon);
+				platform.views += webmention['video-views'] || 0;
+				let type = webmention['wm-property'];
+				// Story submissions count as a repost plus their points and comments, YouTube videos as their likes and comments
+				if(webmention['story-points'] != null) {
+					platform.likes += webmention['story-points'];
+					platform.replies += webmention['story-comments'] || 0;
+					if(!isYoutube(webmention)) {
+						platform.reposts++;
+					}
+				} else if(type === "like-of") {
+					platform.likes++;
+				} else if(type === "repost-of" || type === "mention-of") {
+					platform.reposts++;
+				} else {
+					platform.replies++;
 				}
 			}
 		}
-		return [...counts].map(([icon, count]) => ({ icon, name: platformLabels[icon] || "Web", count })).sort((a, b) => b.count - a.count);
+		return sortPlatformCounts([...counts].map(([icon, platform]) => ({ icon, name: platformLabels[icon] || "Web", ...platform, retired: retiredPlatforms.includes(icon) })));
 	};
 	let platformCountsCache = new WeakMap();
-	eleventyConfig.addFilter('webmentionsPlatformCounts', (webmentions, url) => {
+	const addPageViews = (counts, pageViews) => {
+		if(!(pageViews > 0)) {
+			return counts;
+		}
+		let web = { icon: "fas:globe", name: "Web", likes: 0, reposts: 0, replies: 0, views: 0, retired: false, ...counts.find(({ icon }) => icon === "fas:globe"), pageViews };
+		return sortPlatformCounts([web, ...counts.filter(({ icon }) => icon !== "fas:globe")]);
+	};
+	eleventyConfig.addFilter('webmentionsPlatformCounts', (webmentions, url, pageViews) => {
 		let mentions = webmentions?.mentions || {};
-		if(url) {
-			return getPlatformCounts(mentions[url] ? [[url, mentions[url]]] : []);
+		// Liquid passes `nil` as an empty object
+		if(typeof url === "string" && url) {
+			return addPageViews(getPlatformCounts(mentions[url] ? [[url, mentions[url]]] : []), pageViews);
 		}
 		if(!platformCountsCache.has(mentions)) {
 			platformCountsCache.set(mentions, getPlatformCounts(Object.entries(mentions)));
 		}
-		return platformCountsCache.get(mentions);
+		return addPageViews(platformCountsCache.get(mentions), pageViews);
 	});
 
 	// People with the most likes, reposts, and replies sitewide in the last 30 days (excluding my own), mentions are mostly scraper blogs
