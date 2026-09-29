@@ -246,7 +246,7 @@ details.static-comments-empty > summary::-webkit-details-marker {
 .static-comments-date {
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: .75em;
+	gap: .35em;
 }
 /* Merged crossposts wrap before the author name truncates */
 .static-comments-date:has(> a + a) {
@@ -255,6 +255,22 @@ details.static-comments-empty > summary::-webkit-details-marker {
 .static-comments-date a {
 	color: inherit;
 	text-decoration-color: currentColor;
+}
+/* Matches .activity-channels pills */
+.static-comments-date > a {
+	display: inline-flex;
+	align-items: center;
+	gap: .3em;
+	padding-block: 0;
+	padding-inline: .3em .5em;
+	border: 1px solid var(--z-color-border);
+	border-radius: 1em;
+	font-size: .875em;
+	text-decoration: none;
+}
+.static-comments-date > a .z-icon {
+	width: 1em;
+	height: 1em;
 }
 .static-comments-date a:hover {
 	color: var(--z-color-link);

@@ -543,7 +543,7 @@ export default function(eleventyConfig) {
 			}
 		}
 		return entries
-			.filter(entry => entry['wm-property'] === "syndication" && (entry['story-points'] == null || includeStories && (entry['story-comments'] > 0 || ["Hacker News", "YouTube"].includes(getPlatformName(entry)))))
+			.filter(entry => entry['wm-property'] === "syndication" && (entry['story-points'] == null || includeStories))
 			// Hacker News and Lobsters last, most popular submission first
 			.sort((a, b) => (a['story-points'] != null) - (b['story-points'] != null) || (b['story-points'] ?? 0) + (b['story-comments'] ?? 0) - (a['story-points'] ?? 0) - (a['story-comments'] ?? 0) || getDate(a) - getDate(b))
 			.filter(entry => {
