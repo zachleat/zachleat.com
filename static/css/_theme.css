@@ -1357,14 +1357,20 @@ a[href]:is(:focus, :hover) .project_img {
 }
 
 .posts-withimg {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1em;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(15em, 100%), 1fr));
+	gap: 2.5em 1em;
 }
-.posts-withimg > * {
-	flex-grow: 1;
-	flex-basis: 15em;
+.posts-withimg > li {
+	display: grid;
+	align-content: start;
+	row-gap: .75em;
+}
+.posts-withimg .posts-link {
+	display: block;
+}
+.posts-withimg .project_img {
+	margin-bottom: .5em;
 }
 
 @media (min-width: 45em) { /* 720px */
