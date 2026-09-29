@@ -114,7 +114,7 @@ export default async function getYoutubeMentions() {
 	}
 
 	return videos
-		.filter(video => Number(video.statistics?.likeCount) > 0 || Number(video.statistics?.commentCount) > 0)
+		.filter(video => Number(video.statistics?.viewCount) > 0 || Number(video.statistics?.likeCount) > 0 || Number(video.statistics?.commentCount) > 0)
 		.map(video => ({
 			...toEntry({
 				url: `https://www.youtube.com/watch?v=${video.id}`,
@@ -128,6 +128,7 @@ export default async function getYoutubeMentions() {
 			"story-points": Number(video.statistics.likeCount) || 0,
 			// Comments are counted individually
 			"story-comments": 0,
+			"video-views": Number(video.statistics.viewCount) || 0,
 		}))
 		.concat(comments);
 }

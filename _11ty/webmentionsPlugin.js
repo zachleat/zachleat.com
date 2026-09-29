@@ -334,7 +334,7 @@ export default function(eleventyConfig) {
 		for(let { target, webmention, time, views } of entries) {
 			let type = webmention?.['wm-property'];
 			// Hacker News and Lobsters submissions count as a repost plus their points and comments, YouTube videos as their likes
-			let counts = views ? { views } : isYoutube(webmention) ? { likes: webmention['story-points'] } : webmention['story-points'] != null ? { likes: webmention['story-points'], reposts: 1, replies: webmention['story-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
+			let counts = views ? { views } : isYoutube(webmention) ? webmention['story-points'] > 0 && { likes: webmention['story-points'] } : webmention['story-points'] != null ? { likes: webmention['story-points'], reposts: 1, replies: webmention['story-comments'] } : groupCountKeys[type] && { [groupCountKeys[type]]: 1 };
 			if(!counts) {
 				continue;
 			}
@@ -405,6 +405,7 @@ export default function(eleventyConfig) {
 	});
 
 	// Webmention counts per platform (excluding my own), largest first, sitewide or for one url
+	const videoViewsIcon = "fa:circle-play";
 	const platformLabels = {
 		[platformIcons.bluesky]: "Bluesky",
 		[platformIcons.mastodon]: "Mastodon",
@@ -418,6 +419,7 @@ export default function(eleventyConfig) {
 		[platformIcons.facebook]: "Facebook",
 		[platformIcons.youtube]: "YouTube",
 		"fas:globe": "Web",
+		[videoViewsIcon]: "YouTube Views",
 	};
 	const getPlatformCounts = entries => {
 		let counts = new Map();
@@ -433,6 +435,9 @@ export default function(eleventyConfig) {
 				// Story submissions count each upvote and comment
 				let count = webmention['story-points'] != null ? webmention['story-points'] + (webmention['story-comments'] || 0) : 1;
 				counts.set(icon, (counts.get(icon) || 0) + count);
+				if(webmention['video-views'] > 0) {
+					counts.set(videoViewsIcon, (counts.get(videoViewsIcon) || 0) + webmention['video-views']);
+				}
 			}
 		}
 		return [...counts].map(([icon, count]) => ({ icon, name: platformLabels[icon] || "Web", count })).sort((a, b) => b.count - a.count);

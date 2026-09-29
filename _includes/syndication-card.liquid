@@ -7,6 +7,7 @@
 			<strong>{% if platformIcon == "fab:hacker-news" %}<del>{{ platformName }}</del>{% else %}{{ platformName }}{% endif %}</strong>
 			{%- if platformIcon == "fab:youtube" %}
 			{%- assign youtubeParts = "" | split: "," %}
+			{%- if post['video-views'] > 0 %}{% capture part %}{{ post['video-views'] | renderNumber: "0[.]0a" }} view{% if post['video-views'] != 1 %}s{% endif %}{% endcapture %}{% assign youtubeParts = youtubeParts | push: part %}{% endif %}
 			{%- if post['story-points'] > 0 %}{% capture part %}{{ post['story-points'] }} like{% if post['story-points'] != 1 %}s{% endif %}{% endcapture %}{% assign youtubeParts = youtubeParts | push: part %}{% endif %}
 			{%- if post['social-replies'] > 0 %}{% capture part %}{{ post['social-replies'] }} comment{% if post['social-replies'] != 1 %}s{% endif %}{% endcapture %}{% assign youtubeParts = youtubeParts | push: part %}{% endif %}
 			{%- if youtubeParts.size > 0 %}
