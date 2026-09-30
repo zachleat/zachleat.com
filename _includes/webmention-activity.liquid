@@ -5,7 +5,7 @@
 	<div class="activity-feed-hed">
 		{{ targetLink }}
 		{%- if activity.webmentions.size > 0 %}
-		<time-difference class="activity-feed-date" live format="narrow"><time datetime="{{ activity.date }}" title="{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}">{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
+		<time-difference class="activity-feed-date" live format="narrow" mode="strip-suffix"><time datetime="{{ activity.date }}" title="{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}">{{ activity.date | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
 		{%- else %}
 		<time class="activity-feed-date" datetime="{{ activity.date }}">{{ activity.date | readableDateFromISO: "dd LLL" }}</time>
 		{%- endif %}

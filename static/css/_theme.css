@@ -438,8 +438,18 @@ h5,
 			font-size: 1rem;
 			font-family: var(--z-font-webfont);
 		}
-		.appendix-rail > .rail-activity {
+		.content-appendix > .appendix-npm-publishes {
+			padding-inline-end: 0;
+			font-size: 1rem;
+			font-family: var(--z-font-webfont);
+		}
+		:is(.appendix-rail, .appendix-npm-publishes) > .rail-activity {
 			position: static;
+		}
+		.appendix-npm-publishes > .rail-activity {
+			max-width: calc(var(--body-grid-rail) + 3rem);
+			margin-block-start: 0;
+			margin-inline-start: auto;
 		}
 		/* Match .activity-feed-target */
 		.appendix-rail .tags .tag.tag-popular-rail {

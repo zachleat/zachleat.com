@@ -23,6 +23,7 @@ import pluginImageAvatar, { getIndieAvatarUrl } from "./_11ty/imageAvatarPlugin.
 import pluginWebmentions from "./_11ty/webmentionsPlugin.js";
 import pluginAnalytics from "./_11ty/analyticsPlugin.js";
 import { leftpad, getEndDateFromWeekNumber, getWeekOfYear } from "./_11ty/util.js";
+import { getRecentNpmPublishes } from "./_11ty/npmPublishes.js";
 
 const JS_ENABLED = true;
 
@@ -442,6 +443,8 @@ export default async function(eleventyConfig) {
 		}
 		return array.slice(0, n);
 	});
+
+	eleventyConfig.addFilter("recentNpmPublishes", memoize(getRecentNpmPublishes));
 
 	eleventyConfig.addFilter("localUrl", (absoluteUrl) => {
 		return absoluteUrl.replace("https://www.zachleat.com", "");

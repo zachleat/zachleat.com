@@ -55,9 +55,14 @@
 		{% include "webmentionlist", absoluteUrl: absoluteUrl %}
 	{%- endunless %}
 	</div>
+{%- else %}
+	<div class="appendix appendix-npm-publishes">
+	{%- include "rail-npm-publishes.liquid" %}
+	</div>
 {%- endif %}
 	<div class="appendix-rail">
 	{%- include "recent-activity.liquid" %}
+	{%- if page.url == "/" %}{% include "rail-npm-publishes.liquid" %}{% endif %}
 	{%- if hidePostsInSidebar != true and appendix == "post" %}
 		<div class="tags tags-rail tags-rail-top5 hide-singlecol">
 		{%- include "rail-popular.liquid" %}

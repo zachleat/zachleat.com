@@ -245,6 +245,10 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+.rail-npm-publishes-version {
+	font-weight: 400;
+	color: var(--z-color-text-secondary);
+}
 .activity-feed-date {
 	flex-shrink: 0;
 	margin-inline-start: auto;

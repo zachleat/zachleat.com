@@ -1,0 +1,16 @@
+{%- assign npmPublishes = neglectByProject | recentNpmPublishes: 5 %}
+{%- if npmPublishes.size > 0 %}
+	<div class="rail-activity rail-npm-publishes hide-singlecol">
+		<div class="top5">Recent npm Publishes</div>
+		<ol class="activity-feed list-flush">
+		{%- for project in npmPublishes %}
+			<li class="activity-feed-item">
+				<div class="activity-feed-hed">
+					<a href="{{ project.releaseUrl }}" class="activity-feed-target" title="{{ project.packageName }}@{{ project.lastPublishVersion }}">{{ project.packageName }}<span class="rail-npm-publishes-version">@{{ project.lastPublishVersion }}</span></a>
+					<time-difference class="activity-feed-date" live format="narrow" mode="strip-suffix"><time datetime="{{ project.lastPublish }}" title="{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}">{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference>
+				</div>
+			</li>
+		{%- endfor %}
+		</ol>
+	</div>
+{%- endif %}
