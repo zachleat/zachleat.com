@@ -444,7 +444,7 @@ export default async function(eleventyConfig) {
 		return array.slice(0, n);
 	});
 
-	eleventyConfig.addFilter("recentNpmPublishes", memoize(getRecentNpmPublishes));
+	eleventyConfig.addFilter("recentNpmPublishes", getRecentNpmPublishes);
 
 	eleventyConfig.addFilter("localUrl", (absoluteUrl) => {
 		return absoluteUrl.replace("https://www.zachleat.com", "");
