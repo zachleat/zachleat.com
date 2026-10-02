@@ -618,9 +618,6 @@ a.syndication-card:is(:link, :visited):is(:hover, :focus-visible) {
 	border-color: var(--z-color-text-tertiary);
 	color: var(--z-color-text);
 }
-a.syndication-card.syndication-card--hn:is(:link, :visited) {
-	opacity: .8;
-}
 .syndication-card-hed {
 	display: flex;
 	align-items: center;

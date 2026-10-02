@@ -124,9 +124,6 @@
 	border-radius: 1em;
 	background-color: var(--z-color-bg-alt);
 }
-.activity-channels > .activity-channels--retired {
-	opacity: .6;
-}
 .activity-channels__count {
 	display: inline-flex;
 	align-items: center;
@@ -370,9 +367,6 @@ a.rail-nextprev-card:is(:link, :visited) {
 	color: var(--z-color-text-tertiary);
 }
 /* Hacker News gets the <del> treatment */
-a.rail-syndication-card--hn:is(:link, :visited) {
-	opacity: .8;
-}
 .rail-syndication-card--hn strong {
 	text-decoration: line-through;
 	text-decoration-thickness: .25em;
