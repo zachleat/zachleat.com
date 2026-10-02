@@ -192,6 +192,12 @@ modules:
 		color: var(--z-color-text-secondary);
 	}
 }
+.recent-publishes-scope {
+	font-size: .8em;
+	margin-inline-end: .125em;
+	font-weight: 400;
+	color: var(--z-color-text-secondary);
+}
 .recent-publishes-version {
 	font-weight: 400;
 	color: var(--z-color-text-secondary);
@@ -320,12 +326,13 @@ modules:
 {%- endfor %}
 </ul>
 
-{%- assign npmPublishes = neglectByProject | recentNpmPublishes: 20 %}
+{%- assign npmPublishes = neglectByProject | recentNpmPublishes: 24 %}
 {%- if npmPublishes.size > 0 %}
 <h4>Recent Publishes</h4>
 <ol class="recent-publishes">
 {%- for project in npmPublishes %}
-	<li><a href="{{ project.releaseUrl }}">{{ project.packageName }}<span class="recent-publishes-version">@{{ project.lastPublishVersion }}</span></a> <time-difference live format="narrow" mode="strip-suffix"><time datetime="{{ project.lastPublish }}" title="{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}">{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></li>
+	{%- assign nameParts = project.packageName | split: "/" %}
+	<li><a href="{{ project.releaseUrl }}">{% if nameParts.size > 1 %}<span class="recent-publishes-scope">{{ nameParts[0] }}/</span>{{ nameParts[1] }}{% else %}{{ project.packageName }}{% endif %}<span class="recent-publishes-version">@{{ project.lastPublishVersion }}</span></a> <time-difference live format="narrow" mode="strip-suffix"><time datetime="{{ project.lastPublish }}" title="{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}">{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></li>
 {%- endfor %}
 </ol>
 {%- endif %}
