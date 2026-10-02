@@ -165,6 +165,37 @@ modules:
 	--bar-color: rgba(255, 0, 0, 0.6);
 	width: 100%;
 }
+.content-main ol.recent-publishes {
+	columns: 16em auto;
+	column-gap: 2em;
+	margin: 0 0 2em;
+	padding: 0;
+	list-style: none;
+	font-size: .75em; /* 12px /16 */
+
+	> li {
+		break-inside: avoid;
+		display: flex;
+		gap: .5em;
+		align-items: baseline;
+	}
+	a {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	time-difference {
+		flex-shrink: 0;
+		margin-inline-start: auto;
+		white-space: nowrap;
+		font-variant-numeric: tabular-nums;
+		color: var(--z-color-text-secondary);
+	}
+}
+.recent-publishes-version {
+	font-weight: 400;
+	color: var(--z-color-text-secondary);
+}
 #neglect-buckets {
 	--label-shift: 3px;
 
@@ -288,6 +319,16 @@ modules:
 	</li>
 {%- endfor %}
 </ul>
+
+{%- assign npmPublishes = neglectByProject | recentNpmPublishes: 20 %}
+{%- if npmPublishes.size > 0 %}
+<h4>Recent Publishes</h4>
+<ol class="recent-publishes">
+{%- for project in npmPublishes %}
+	<li><a href="{{ project.releaseUrl }}">{{ project.packageName }}<span class="recent-publishes-version">@{{ project.lastPublishVersion }}</span></a> <time-difference live format="narrow" mode="strip-suffix"><time datetime="{{ project.lastPublish }}" title="{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}">{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference></li>
+{%- endfor %}
+</ol>
+{%- endif %}
 
 <h3>{% icon "fas:skull" %}Projects and Neglect</h3>
 
