@@ -312,11 +312,11 @@ export default function(eleventyConfig) {
 	// Cached per webmentions object, this runs on every page
 	let recentActivityCache = new WeakMap();
 	const getRecentActivity = (webmentions, limit = 8, trafficSpikes = []) => {
-		if(!webmentions) {
+		if(!webmentions?.mentions) {
 			return [];
 		}
 		let cacheKey = `${limit}:${trafficSpikes.length}`;
-		let cached = recentActivityCache.get(webmentions)?.[cacheKey];
+		let cached = recentActivityCache.get(webmentions.mentions)?.[cacheKey];
 		if(cached) {
 			return cached;
 		}
@@ -385,7 +385,7 @@ export default function(eleventyConfig) {
 			items.push(group);
 		}
 
-		recentActivityCache.set(webmentions, { ...recentActivityCache.get(webmentions), [cacheKey]: items });
+		recentActivityCache.set(webmentions.mentions, { ...recentActivityCache.get(webmentions.mentions), [cacheKey]: items });
 		return items;
 	};
 	eleventyConfig.addFilter('webmentionsRecentActivity', getRecentActivity);
@@ -641,8 +641,11 @@ export default function(eleventyConfig) {
 	// Sitewide totals, cached per webmentions data object
 	let siteStatsCache = new WeakMap();
 	eleventyConfig.addFilter('webmentionsSiteStats', (webmentions, analytics = {}, commentsCounts = {}) => {
-		if(siteStatsCache.has(webmentions)) {
-			return siteStatsCache.get(webmentions);
+		if(!webmentions?.mentions) {
+			return { views: 0, mediaViews: 0, boosts: 0, likes: 0, replies: 0 };
+		}
+		if(siteStatsCache.has(webmentions.mentions)) {
+			return siteStatsCache.get(webmentions.mentions);
 		}
 
 		let stats = {
@@ -658,7 +661,7 @@ export default function(eleventyConfig) {
 			stats.replies += webmentionsForUrl(webmentions, url, "in-reply-to,bookmark-of").length;
 		}
 
-		siteStatsCache.set(webmentions, stats);
+		siteStatsCache.set(webmentions.mentions, stats);
 		return stats;
 	});
 };
