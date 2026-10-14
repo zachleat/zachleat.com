@@ -3,6 +3,12 @@ title: "All of my 300+ browser tabs are beautiful"
 githubProjectName: zachleat/list-all-tabs
 tags:
   - project
+seo:
+  openGraphBackgroundImage: /og/sources/firefox-list-all-tabs.jpg
+  openGraphAlt: Rows of wooden library card catalog drawers with brass label holders and handles
+posterImage:
+  name: Erol Ahmed
+  source: https://unsplash.com/photos/close-up-photography-of-brown-wooden-card-catalog-Y3KEBQlB1Zk
 ---
 I am a habitual tab hoarder so I created a Firefox addon to help me manage every one of my very special browser tabs.
 
