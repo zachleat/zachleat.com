@@ -544,8 +544,8 @@ export default function(eleventyConfig) {
 		}
 		return entries
 			.filter(entry => entry['wm-property'] === "syndication" && (entry['story-points'] == null || includeStories))
-			// Hacker News and Lobsters last, most popular submission first
-			.sort((a, b) => (a['story-points'] != null) - (b['story-points'] != null) || (b['story-points'] ?? 0) + (b['story-comments'] ?? 0) - (a['story-points'] ?? 0) - (a['story-comments'] ?? 0) || getDate(a) - getDate(b))
+			// Hacker News and Lobsters last, most popular submission first, my replies after my top-level posts
+			.sort((a, b) => (a['story-points'] != null) - (b['story-points'] != null) || (b['story-points'] ?? 0) + (b['story-comments'] ?? 0) - (a['story-points'] ?? 0) - (a['story-comments'] ?? 0) || Boolean(a['syndication-reply']) - Boolean(b['syndication-reply']) || getDate(a) - getDate(b))
 			.filter(entry => {
 				// Only the most popular of duplicate Hacker News submissions
 				if(!isOriginalPoster(entry) && getPlatformName(entry) !== "Hacker News") {

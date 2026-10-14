@@ -37,7 +37,7 @@ function htmlToText(html = "") {
 }
 
 // Matches webmention.io’s jf2 shape so the templates keep working
-export function toEntry({ url, target, property, author, published, received, text, images, otherMedia, parent, visibility, mentions }) {
+export function toEntry({ url, target, property, author, published, received, text, images, otherMedia, parent, visibility, mentions, isReply }) {
 	let entry = {
 		type: "entry",
 		author: { type: "card", ...author },
@@ -68,6 +68,10 @@ export function toEntry({ url, target, property, author, published, received, te
 	// Mentioned profiles, the text drops the server from Mastodon handles
 	if(mentions?.length) {
 		entry.mentions = mentions;
+	}
+	// My own reply in a thread, only used as a syndication card when the platform has no other
+	if(isReply) {
+		entry["syndication-reply"] = true;
 	}
 	return entry;
 }
@@ -163,9 +167,7 @@ async function getBlueskyMentions(since) {
 		let replies = post.replyCount ? await getBlueskyReplies(post.uri, duration) : [];
 
 		for(let target of targets) {
-			if(!post.record.reply) {
-				entries.push(toEntry({ url: postUrl, target, property: "syndication", author: blueskyAuthor(post.author), published: post.record.createdAt, received: post.record.createdAt, text: post.record.text }));
-			}
+			entries.push(toEntry({ url: postUrl, target, property: "syndication", author: blueskyAuthor(post.author), published: post.record.createdAt, received: post.record.createdAt, text: post.record.text, isReply: Boolean(post.record.reply) }));
 			for(let { actor, createdAt } of likes) {
 				entries.push(toEntry({ url: `${postUrl}#liked_by_${actor.did}`, target, property: "like-of", author: blueskyAuthor(actor), received: createdAt }));
 			}
@@ -251,9 +253,7 @@ async function getMastodonMentions(since) {
 		let replies = status.replies_count ? (await Fetch(`${statusApi}/context`, { type: "json", duration })).descendants : [];
 
 		for(let target of targets) {
-			if(!status.in_reply_to_id) {
-				entries.push(toEntry({ url: status.url, target, property: "syndication", author: mastodonAuthor(status.account), published: status.created_at, received: status.created_at, text: htmlToText(status.content) }));
-			}
+			entries.push(toEntry({ url: status.url, target, property: "syndication", author: mastodonAuthor(status.account), published: status.created_at, received: status.created_at, text: htmlToText(status.content), isReply: Boolean(status.in_reply_to_id) }));
 			for(let account of likes) {
 				entries.push(toEntry({ url: `${status.url}#favorited-by-${account.id}`, target, property: "like-of", author: mastodonAuthor(account) }));
 			}
