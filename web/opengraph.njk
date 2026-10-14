@@ -19,8 +19,7 @@ out of the shot.
 
 `?page=/web/some-post/` picks a post or a page; that is the only knob. Every
 value on the card is baked in at build time, so this can only ever render one of
-this site’s own URLs — or, with no (or an unrecognized) `page`, the default card,
-which is also what the home page gets.
+this site’s own URLs — or, with no (or an unrecognized) `page`, the default card.
 
 More Ideas:
 * Git last updated
@@ -179,7 +178,7 @@ page mid-render. #}
 	}
 
 	// ?page= can only ever name one of the URLs baked in above; anything else
-	// (including the home page) falls back to the default card.
+	// falls back to the default card.
 	var requested = new URLSearchParams(location.search).get("page");
 	pageField.value = (entryFor(requested) || DEFAULT)[0];
 
