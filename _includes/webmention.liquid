@@ -45,11 +45,14 @@
   {% if webmention.images.size > 0 %}
   <div class="static-comments-photos">
     {%- for image in webmention.images %}
-    <label class="static-comments-photo">
-      <input type="checkbox" class="sr-only">
-      <img src="{{ image.thumb | escape }}" alt="{{ image.alt | escape }}" loading="lazy" decoding="async" eleventy:ignore>
-      <span class="static-comments-photo-reveal">Show image</span>
-    </label>
+    <div class="static-comments-photo">
+      <label>
+        <input type="checkbox" class="sr-only">
+        <img src="{{ image.thumb | escape }}" alt="{{ image.alt | escape }}" loading="lazy" decoding="async" eleventy:ignore>
+        <span class="static-comments-photo-reveal">Show image</span>
+      </label>
+      <a href="{{ image.url | default: image.thumb | escape }}" class="static-comments-photo-link"><span class="sr-only">Open image</span></a>
+    </div>
     {%- endfor %}
   </div>
   {% endif %}

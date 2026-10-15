@@ -192,21 +192,24 @@ details.static-comments-empty > summary::-webkit-details-marker {
 .static-comments-photo {
 	position: relative;
 	display: block;
-	width: 8em;
-	aspect-ratio: 1;
+	height: 8em;
 	overflow: hidden;
 	border-radius: .375em;
 	background-color: var(--z-color-bg-alt);
-	cursor: pointer;
 }
 .static-comments-photo:has(:focus-visible) {
 	outline: 2px solid var(--z-color-link);
 	outline-offset: 2px;
 }
-.static-comments-photo img {
-	width: 100%;
+.static-comments-photo label {
+	display: block;
 	height: 100%;
-	object-fit: cover;
+	cursor: pointer;
+}
+.static-comments-photo img {
+	display: block;
+	width: auto;
+	height: 100%;
 	filter: blur(1.5em);
 	transform: scale(1.25);
 	transition: filter .2s, transform .2s;
@@ -221,13 +224,21 @@ details.static-comments-empty > summary::-webkit-details-marker {
 	color: #fff;
 	text-shadow: 0 1px 3px rgba(0,0,0,.6);
 }
-/* Clicking toggles the blur */
+.static-comments-photo-link {
+	display: none;
+	position: absolute;
+	inset: 0;
+}
+/* First click removes the blur, second click opens the image */
 .static-comments-photo:has(:checked) img {
 	filter: none;
 	transform: none;
 }
 .static-comments-photo:has(:checked) .static-comments-photo-reveal {
 	display: none;
+}
+.static-comments-photo:has(:checked) .static-comments-photo-link {
+	display: block;
 }
 .static-comments-msg p:first-child {
 	margin-top: 0;
