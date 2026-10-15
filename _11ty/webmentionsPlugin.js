@@ -85,6 +85,19 @@ export default function(eleventyConfig) {
 
 	const isOriginalPoster = webmention => authorUrls.includes(webmention?.author?.url);
 
+	// Expects escaped text, so stop at escaped quotes and brackets
+	const urlRegex = /https?:\/\/(?:(?!&(?:quot|#39|lt|gt);)\S)+/g;
+
+	eleventyConfig.addFilter('webmentionLinkifyOwnUrls', (text = "", webmention) => {
+		if(!isOriginalPoster(webmention)) {
+			return text;
+		}
+		return text.replace(urlRegex, match => {
+			let [, url, trailing] = match.match(/^(.*?)([.,!?:;)\]]*)$/);
+			return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>${trailing}`;
+		});
+	});
+
 	// e.g. zachleat, zachleat@fediverse.zachleat.com, zachleat.com
 	let ownHandles;
 	const getOwnHandles = () => ownHandles ??= authorUrls.flatMap(url => getAuthorHandles({ author: { url } }));
