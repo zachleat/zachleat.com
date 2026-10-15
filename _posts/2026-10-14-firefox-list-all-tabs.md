@@ -22,15 +22,16 @@ Sort tabs by oldest, unload them, find duplicates, and consolidate tabs to a sin
 ## Features
 
 - Go directly to a tab by clicking on it.
-- Shows Duplicate tabs open more than once.
-- Supports Multi-account containers for a tab (and the color of the container too)
-- Filter tabs by title, URL or container name.
+- Shows Duplicate tabs (any tab opened more than once)
+- A special section to show any tabs currently playing audio (video counts if not muted) (new in v1.5)
+- Supports Multi-account containers (and shows with the color of the container too)
+- Search/filter tabs by title, URL or container name.
 - Sort tabs by tab order, least recently used or most recently used.
-- You can unload tabs to free memory, either one at a time or with “Unload all” for all tabs or by host (YouTube tabs especially).
-- _Show unloaded_ and _Show pinned_ toggles.
-- _Consolidate_ moves all of a host’s tabs into a new window.
-- _Expand all_ and _Collapse all_ for the Top hosts list.
+- Full Undo and redo support (new in v1.5)
+- A new purgatory-style Saved section to close tabs you may want to restore later (new in v1.5)
+- Toggles to show/hide Unloaded and Pinned tabs.
+- _Merge_ consolidates all a group’s tabs into a new window.
 - Tabs you haven’t used for a week or more show a stale time difference (e.g. `2w` or `3mo`).
 - Light and dark modes.
-- Pinned tabs are listed last (and are not operable).
+- Pinned tabs are denoted and listed last (by design, pinned tabs are indestructible and cannot be operated on).
 - `about:blank` tabs are ignored.
