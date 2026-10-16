@@ -166,7 +166,7 @@ modules:
 	width: 100%;
 }
 .content-main ol.recent-publishes {
-	columns: 16em auto;
+	columns: 20em auto;
 	column-gap: 2em;
 	margin: 0 0 2em;
 	padding: 0;
@@ -317,6 +317,7 @@ modules:
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
 	<li>{% icon "far:circle-check" %} Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues</li>
 	<li>{% icon "far:circle-check" %} Merged {% icon "fas:code-merge" %}{{ totals.prs.merged | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
+	<li>{% icon "fas:lock-open" %}<a href="?scope=audits#projects">{{ totals.audits | renderNumber }} open security audit{% if totals.audits != 1 %}s{% endif %}</a> <em>(active projects)</em></li>
 </ul>
 
 <h3>{% icon "fab:npm" %}Releases</h3>
