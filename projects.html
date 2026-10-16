@@ -165,6 +165,14 @@ modules:
 	--bar-color: rgba(255, 0, 0, 0.6);
 	width: 100%;
 }
+.totals-spark {
+	display: inline-block;
+	width: 64px;
+	height: 16px;
+	vertical-align: middle;
+	background-color: rgba(0, 0, 0, .04);
+	border-radius: .25em;
+}
 .content-main ol.recent-publishes {
 	columns: 20em auto;
 	column-gap: 2em;
@@ -312,12 +320,33 @@ modules:
 			<li>{{ totals.customElements }} Web Components 🚾</li>
 		</ul>
 	</li>
-	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last 12 months)</em></li>
-	<li>{% icon "fas:download" %}{{ totals.cdnHits | renderNumber }} CDN downloads <em>(last 12 months on <a href="https://www.jsdelivr.com/">jsDelivr</a>)</em></li>
+	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last 12 months)</em>{% if downloadsAggregate.counts.size > minimumSparklineMonths %} <img src="{% sparklineDataUri downloadsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly npm downloads sparkline, ranging {{ downloadsAggregate.min | renderNumber: "0a" }} to {{ downloadsAggregate.max | renderNumber: "0a" }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
+	<li>{% icon "fas:download" %}{{ totals.cdnHits | renderNumber }} CDN downloads <em>(last 12 months on <a href="https://www.jsdelivr.com/">jsDelivr</a>)</em>{% if cdnHitsAggregate.counts.size > minimumSparklineMonths %} <img src="{% sparklineDataUri cdnHitsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly jsDelivr CDN hits sparkline, ranging {{ cdnHitsAggregate.min | renderNumber: "0a" }} to {{ cdnHitsAggregate.max | renderNumber: "0a" }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
 	<li>{% icon "far:circle-check" %} Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues</li>
 	<li>{% icon "far:circle-check" %} Merged {% icon "fas:code-merge" %}{{ totals.prs.merged | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
-	<li>{% icon "fas:lock-open" %}<a href="?scope=audits#projects">{{ totals.audits | renderNumber }} open security audit{% if totals.audits != 1 %}s{% endif %}</a> <em>(active projects)</em></li>
+</ul>
+
+<h3>{% icon "fa:diagram-project" %}Active Projects</h3>
+<ul>
+	<li>{% icon "fas:bug" %}{{ totals.issues.open | renderNumber }} open {% icon "fab:github" %}issue{% if totals.issues.open != 1 %}s{% endif %}{% if openIssuesAggregate.counts.size > 1 %} <img src="{% sparklineDataUri openIssuesAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open issues sparkline, ranging {{ openIssuesAggregate.min }} to {{ openIssuesAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
+	<li>{% icon "fas:code-merge" %}{{ totals.prs.open | renderNumber }} open {% icon "fab:github" %}pull request{% if totals.prs.open != 1 %}s{% endif %}{% if openPRsAggregate.counts.size > 1 %} <img src="{% sparklineDataUri openPRsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open pull requests sparkline, ranging {{ openPRsAggregate.min }} to {{ openPRsAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
+	<li>{% icon "fas:lock-open" %}<a href="?scope=audits#projects">{{ totals.audits | renderNumber }} open security audit{% if totals.audits != 1 %}s{% endif %}</a>{% if auditsAggregate.counts.size > 1 %} <img src="{% sparklineDataUri auditsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open security audits sparkline, ranging {{ auditsAggregate.min }} to {{ auditsAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
+</ul>
+
+<h3>{% icon "fas:skull" %}Neglect</h3>
+
+<ul id="neglect-buckets" class="bar-chart">
+{%- for bucket in neglectDistribution %}
+	<li class="neglect-score" style="--neglect-score: {{ bucket.start }}; --bar-fraction: {{ bucket.fraction }}">
+		<span class="bucket-value">
+			<span class="bucket-count">{{ bucket.count }}</span>
+			<span class="bucket-bar" title="{{ bucket.count }} project{% if bucket.count != 1 %}s{% endif %} at {% if bucket.isZero %}exactly 0%{% else %}{% if bucket.start == 0 %}&gt;{% endif %}{{ bucket.start }}–{{ bucket.end }}%{% endif %} Neglect"></span>
+		</span>
+		{%- if bucket.showLabel %}<span class="bucket-label">{{ bucket.start }}%</span>{% endif %}
+		{%- if forloop.last %}<span class="bucket-label bucket-label--end">{{ bucket.end }}%</span>{% endif %}
+	</li>
+{%- endfor %}
 </ul>
 
 <h3>{% icon "fab:npm" %}Releases</h3>
@@ -343,21 +372,6 @@ modules:
 {%- endfor %}
 </ol>
 {%- endif %}
-
-<h3>{% icon "fas:skull" %}Projects and Neglect</h3>
-
-<ul id="neglect-buckets" class="bar-chart">
-{%- for bucket in neglectDistribution %}
-	<li class="neglect-score" style="--neglect-score: {{ bucket.start }}; --bar-fraction: {{ bucket.fraction }}">
-		<span class="bucket-value">
-			<span class="bucket-count">{{ bucket.count }}</span>
-			<span class="bucket-bar" title="{{ bucket.count }} project{% if bucket.count != 1 %}s{% endif %} at {% if bucket.isZero %}exactly 0%{% else %}{% if bucket.start == 0 %}&gt;{% endif %}{{ bucket.start }}–{{ bucket.end }}%{% endif %} Neglect"></span>
-		</span>
-		{%- if bucket.showLabel %}<span class="bucket-label">{{ bucket.start }}%</span>{% endif %}
-		{%- if forloop.last %}<span class="bucket-label bucket-label--end">{{ bucket.end }}%</span>{% endif %}
-	</li>
-{%- endfor %}
-</ul>
 
 <h2>Projects</h2>
 

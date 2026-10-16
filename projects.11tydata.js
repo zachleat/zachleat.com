@@ -44,6 +44,22 @@ let sparklineAggregateJson = await Fetch(SERVICE_URL + "report-sparkline-aggrega
 
 export const sparklineAggregate = sparklineAggregateJson.monthlyReleases;
 
+function getAggregateSparkline(series) {
+	let counts = series?.counts || [];
+
+	return {
+		counts,
+		min: counts.length ? Math.min(...counts) : 0,
+		max: counts.length ? Math.max(...counts) : 0,
+	};
+}
+
+export const downloadsAggregate = getAggregateSparkline(sparklineAggregateJson.monthlyDownloads);
+export const cdnHitsAggregate = getAggregateSparkline(sparklineAggregateJson.monthlyCdnHits);
+export const auditsAggregate = getAggregateSparkline(sparklineAggregateJson.monthlyOpenVulnerabilities);
+export const openIssuesAggregate = getAggregateSparkline(sparklineAggregateJson.monthlyOpenIssues);
+export const openPRsAggregate = getAggregateSparkline(sparklineAggregateJson.monthlyOpenPRs);
+
 export const packages = report.projects.sort((a, b) => {
 	// Archived projects sort to the bottom, whatever their score
 	if(a.isArchived !== b.isArchived) {
