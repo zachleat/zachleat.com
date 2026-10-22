@@ -560,9 +560,9 @@ tr:has(del) .z-avatar {
 			<td>{% icon "fa:key" %} Passwords</td>
 			<td><code>2017–</code></td>
 			<td>{% indieAvatar "https://www.1password.com/" %}1Password</td>
-			<td class="hide-sm"></td>
+			<td class="hide-sm">{% icon "fa:briefcase" %}</td>
 			<td class="hide-sm">{% icon "fa:money-bill-1" %}</td>
-			<td>{% icon "fa:heart" %}</td>
+			<td></td>
 		</tr>
 		<tr data-filter-category="consumer" data-filter-active="no">
 			<td class="hide-sm"><strong>Consumer</strong></td>
