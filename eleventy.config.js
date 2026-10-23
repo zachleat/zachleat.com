@@ -217,13 +217,13 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy("_posts/**/_ignored_*.*", {
 			mode: "html-relative"
 		})
+		.addPassthroughCopy("keybase.txt")
+		.addPassthroughCopy("_redirects");
 
 	// Production only passthrough copy
 	if(process.env.PRODUCTION_BUILD) {
 		eleventyConfig
 			.addPassthroughCopy("presentations/")
-			.addPassthroughCopy("keybase.txt")
-			.addPassthroughCopy("_redirects")
 			.addPassthroughCopy("demos/")
 			.addPassthroughCopy("resume/resume.pdf")
 			.addPassthroughCopy("archive/")
