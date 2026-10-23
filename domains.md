@@ -1,6 +1,7 @@
 ---
 title: ICANN Stop Buying Domains Any Time I Want
 layout: layouts/pagealign.liquid
+appendix: page
 ---
 ## Domains and Subdomains
 

@@ -1,6 +1,7 @@
 ---
 title: I Never Blame My Tools
 layout: layouts/pagealign.liquid
+appendix: page
 modules:
   - "/static/filter-container.js"
 ---
