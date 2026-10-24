@@ -5,6 +5,8 @@ appendix: page
 ---
 ## Domains and Subdomains
 
+These are the domains that I have purchased and the subdomains I’ve added.
+
 <dl class="flex">
 	<div>
 		<dt>Active</dt>
@@ -97,3 +99,22 @@ appendix: page
 _(×2 entries have been redacted for personal reasons)_
 
 _Credit to [Jim Nielsen for the page title](https://bsky.app/profile/jim-nielsen.com/post/3ly6gk2fzjc2f)._
+
+## Domains I’ve Worked On
+
+<!-- the 11ty logo cloud should probably be here -->
+
+Here are a few other professional domains that I have worked on (professionally):
+
+- `uprr.com`
+- `filamentgroup.com`
+- `shop.lego.com`
+- `vineyardvines.com`
+- `css-tricks.com` (Font Loading, see [_Developing a Robust Font Loading Strategy for CSS-Tricks_](/web/css-tricks-web-fonts/))
+- `smashingmagazine.com` (Font Loading)
+- `netlify.com` (see [_Eleventy and Vue, a match made to power Netlify.com_](/web/eleventy-vue-netlify/))
+- [`jamstack.org`](https://jamstack.org/)
+- `jamstackconf.com`
+- `cloudcannon.com` (see [_`<table-saw>` Web Component_](/web/table-saw/))
+- [`blog.fontawesome.com`](https://blog.fontawesome.com/) (see [_Check the speedometer on the brand new Blog Awesome_](/web/blog-awesome-move/))
+- [`build.awesome.me`](https://build.awesome.me/)

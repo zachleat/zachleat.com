@@ -171,6 +171,10 @@ export default async function(eleventyConfig) {
 
 	/* COPY */
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+	// v4.0.0-alpha.11 or newer
+	if("setPassthroughCopyOptions" in eleventyConfig) {
+		eleventyConfig.setPassthroughCopyOptions({ dot: false });
+	}
 
 	eleventyConfig
 		.addPassthroughCopy({
