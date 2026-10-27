@@ -106,7 +106,7 @@
 			"author": {
 				"name": "Hidde de Vries (@hdv@front-end.social) is a web enthusiast and accessibility specialist from Rotterdam (The Netherlands). He currently works on web standards for the Dutch government and is a participant in the Open UI Community Group. Previously, he worked for W3C (WAI), Mozilla, the Dutch government and others as a freelancer. Hidde is also a public speaker, he has given 73 talks, most recently in Virtual. In his free time, he works on a coffee table book covering the video conferencing apps of our decade.\nBuy me a coffee Follow on Mastodon Follow on LinkedIn"
 			},
-			"date": "2016-04-21T05:00:00.000Z",
+			"date": "2016-04-21T00:00:00.000Z",
 			"content": "<p>If one phrase from Bram Stein’s excellent Fronteers Spring Conf talk stuck with me, it was ‘always have a font loading strategy’. The point he made was that if you use custom web fonts in CSS, you should not rely on browser default behaviour, as that will often mean users see white pages with invisible text in case of font loading failure.</p>\n<p>In his article ‘Web fonts for president’, Zach Leatherman compares font loading strategies (or, mostly, lack thereof) of the 2016 US election candidates. What a great idea! It’s <a href=\"http://www.zachleat.com/web/president-web-font\">a very interesting read</a>!</p>\n<p>Bram Stein <a href=\"http://www.bramstein.com/writing/web-font-loading-patterns.html\">describes how to use his Font Face Observer on his blog</a>.</p>\n<p>(I realise this blog currently lacks a font loading strategy, since I recently updated the typeface, I’m working on that)</p>",
 			"type": "mention",
 			"via": "webmention"

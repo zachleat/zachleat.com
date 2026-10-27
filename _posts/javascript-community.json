@@ -1,6 +1,202 @@
 {
 	"comments": [
 		{
+			"id": 1597934,
+			"parentId": 0,
+			"url": "https://masto.ai/@lukem/109676757635448351",
+			"author": {
+				"name": "Lukem",
+				"url": "https://masto.ai/@lukem",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/804acdb6f654b9a0410146d55f62ea8a0385def275bc5cf86d48b51319d22d81.jpg"
+			},
+			"date": "2023-01-12T14:41:49.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> no worries, I'll edit the link. Thanks for letting me know! :)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597955,
+			"parentId": 0,
+			"url": "https://kibitz.cloud/@selfagency/109676790588153382",
+			"author": {
+				"name": "daniel sieradski",
+				"url": "https://kibitz.cloud/@selfagency",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9de2e7ec3e0427f90f3053817f2a5276ac33c9f4ec2735ff09e399d563ef4a5f.jpg"
+			},
+			"date": "2023-01-12T14:50:12.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I feel like once upon a time we were focused on making web coding accessible to all and then we got increasingly complex JS frameworks that forced us into specializations and the emphasis on accessible coding switched to nocode drag-and-drop tools that abstracted away everything. <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span>'s Mavo is the only thing I can think of that tried to counteract this trend.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597956,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109676813535626355",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-01-12T14:56:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> Lea always does amazing work!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597957,
+			"parentId": 0,
+			"url": "https://notacult.social/@darth_mall/109676831318318928",
+			"author": {
+				"name": "Evan",
+				"url": "https://notacult.social/@darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
+			},
+			"date": "2023-01-12T15:00:34.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> 💯💯💯</p><p>The great divide always bothered me because — although it reflected a reality in the industry — I felt like it was telling me I couldn't continue as a web developer who knows HTML, CSS, and JS; I needed to pick a side.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597954,
+			"parentId": 0,
+			"url": "https://kibitz.cloud/@selfagency/109676855185120672",
+			"author": {
+				"name": "daniel sieradski",
+				"url": "https://kibitz.cloud/@selfagency",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9de2e7ec3e0427f90f3053817f2a5276ac33c9f4ec2735ff09e399d563ef4a5f.jpg"
+			},
+			"date": "2023-01-12T15:06:38.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> she does but my question is, why didn't what she created inspire similar efforts? i see energy in webassembly bringing compiled languages to the browser but no energy in advancing what we can do with html itself.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597961,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109676856701403499",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-01-12T15:07:01.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> Oh, interesting. An unfortunate byproduct of acknowledging the divide 😱</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597994,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109676863954738341",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-01-12T15:08:52.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> surely declarative shadow dom occupies the beginning of something there!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597995,
+			"parentId": 0,
+			"url": "https://hachyderm.io/@hi_mayank/109676886212755296",
+			"author": {
+				"name": "Mayank :verified:",
+				"url": "https://hachyderm.io/@hi_mayank",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e3a2d8c1795a2b30e0e56aca6eff2963ebb01c7bce1d4db277cf433f60d995d9.jpg"
+			},
+			"date": "2023-01-12T15:14:31.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> every time i use javascript, it makes me feel evil, especially if it's something that cannot be achieved without javascript</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597996,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109676891067692729",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-01-12T15:15:45.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@hi_mayank\" class=\"u-url\">@<span>hi_mayank</span></a></span> oh wow—why?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597997,
+			"parentId": 0,
+			"url": "https://indieweb.social/@McNeely/109676898793727703",
+			"author": {
+				"name": "McNeely",
+				"url": "https://indieweb.social/@McNeely",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/20f6c8041154875d78bf3cbc0d476f1328597bcf5a1796e2ea1da17cf29fb09c.png"
+			},
+			"date": "2023-01-12T15:17:43.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I feel like whenever you work on a project that is either a library or a part of the toolchain you cannot help but straddle that great divide. Its a different experience than working on a product team focused on \"LARGE-SITE.com\"</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597991,
+			"parentId": 0,
+			"url": "https://kibitz.cloud/@selfagency/109676900293388141",
+			"author": {
+				"name": "daniel sieradski",
+				"url": "https://kibitz.cloud/@selfagency",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9de2e7ec3e0427f90f3053817f2a5276ac33c9f4ec2735ff09e399d563ef4a5f.jpg"
+			},
+			"date": "2023-01-12T15:18:06.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> still very js heavy in implementation</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597992,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109676914371468043",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-01-12T15:21:41.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> ah, hmm—I don’t see that</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597990,
+			"parentId": 0,
+			"url": "https://hachyderm.io/@hi_mayank/109676917040886719",
+			"author": {
+				"name": "Mayank :verified:",
+				"url": "https://hachyderm.io/@hi_mayank",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e3a2d8c1795a2b30e0e56aca6eff2963ebb01c7bce1d4db277cf433f60d995d9.jpg"
+			},
+			"date": "2023-01-12T15:22:22.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> i guess \"evil\" is a bit of overstatement. i don't think js itself is bad. it's indispensable for accessibility</p><p>but this feeling is kind of a result of the divide. \"i used js, therefore i must be on that side\"</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597998,
+			"parentId": 0,
+			"url": "https://mastodon.social/@bastianallgeier/109676919130544752",
+			"author": {
+				"name": "Bastian Allgeier",
+				"url": "https://mastodon.social/@bastianallgeier",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a023a7b239d980e7cbfce2ad209a33d8c0867d985480033cf5d73f8210911238.jpg"
+			},
+			"date": "2023-01-12T15:22:54.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> amazing post 💚 I definitely live in that different world together with you. I fell in love with the web over 20 years ago and I'm still in love with it every day. It is so much more than that tiny bubble from the survey.<br />Your post is another great indicator why it always felt like our philosophies for <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> and <span class=\"h-card\"><a href=\"https://mastodon.social/@getkirby\" class=\"u-url\">@<span>getkirby</span></a></span> are very close.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
 			"id": 1598031,
 			"parentId": 0,
 			"url": "https://twitter.com/fakebaldur/status/1613557228476178435",
@@ -12,6 +208,174 @@
 			"date": "2023-01-12T15:23:16.000Z",
 			"content": "“JavaScript, Community—<a href=\"http://zachleat.com\">zachleat.com</a>” <a href=\"https://www.zachleat.com/web/javascript-community/\">zachleat.com/web/javascript…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1597999,
+			"parentId": 0,
+			"url": "https://front-end.social/@sarajw/109676920749578296",
+			"author": {
+				"name": "Sara Joy ✨",
+				"url": "https://front-end.social/@sarajw",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/310919176cdbb7aa00e5b77553f3f7f63c5d1cd25960dc0aef87c24727e2f5fd.jpg"
+			},
+			"date": "2023-01-12T15:23:18.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> omg. I'd not seen that <span class=\"h-card\"><a href=\"https://front-end.social/@chriscoyier\" class=\"u-url\">@<span>chriscoyier</span></a></span> Great Divide article until now.</p><p>Both your post, Zach, and that article, yes. Resonating hard.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1597993,
+			"parentId": 0,
+			"url": "https://notacult.social/@darth_mall/109676921355396609",
+			"author": {
+				"name": "Evan",
+				"url": "https://notacult.social/@darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
+			},
+			"date": "2023-01-12T15:23:27.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I'm not sure it's even a byproduct. There are quotes in the CSS Tricks article that explicitly say we should do away with the term \"frontend developer\" and divide the field up into the JS camp and the HTML/CSS camp.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598000,
+			"parentId": 0,
+			"url": "https://social.coop/@eb/109676936542278875",
+			"author": {
+				"name": "Evan Boehs",
+				"url": "https://social.coop/@eb",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/52b51e96d6c4a64ba649bbb396f6aee237e35db9feef5b5c38e08b8eb739714e.jpg"
+			},
+			"date": "2023-01-12T15:27:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I have not been impressed with the survey, but it's a perfect metaphor for the larger community. Rough and rushed.</p><p>I was among the first people to fill the survey out, and it was released with many egregious spelling errors (I tooted one)</p><p>And as you noted, they mis(represented|understood) many technologies (ie: What Remix actually helps with). Bad look.</p><p>Personally, I do full stack, and f/e is so much more messy. That's the culture.</p><p>Let's be friends.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598062,
+			"parentId": 0,
+			"url": "https://front-end.social/@leaverou/109677006153214533",
+			"author": {
+				"name": "Lea Verou",
+				"url": "https://front-end.social/@leaverou",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b1ebcd375ef5b76843d817e9675cac965d9742feb883ed026a6a9928edc39ed.png"
+			},
+			"date": "2023-01-12T15:45:01.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I’ve thought about it a lot in the past few years, and here's what I concluded:<br />- The people working on JS frameworks tend to be hardcore devs, so they want to create stuff for people like them, not beginners<br />- Something for beginners doesn't attract contributions, because its users cannot contribute back<br />- Beginners don't search for tools as much. Nobody will google \"HTML-based programming language\"</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598063,
+			"parentId": 0,
+			"url": "https://front-end.social/@leaverou/109677011184906943",
+			"author": {
+				"name": "Lea Verou",
+				"url": "https://front-end.social/@leaverou",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b1ebcd375ef5b76843d817e9675cac965d9742feb883ed026a6a9928edc39ed.png"
+			},
+			"date": "2023-01-12T15:46:18.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p>Also, implementing high level declarative, reactive syntax that can work with whatever HTML &amp; CSS you throw at it is HARD. A lot of Mavo's code is incredibly complex to handle all the edge cases, and still buggy (part of that has to do with the lack of resources in research).</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598044,
+			"parentId": 0,
+			"url": "https://indieweb.social/@charlesroper/109677021279051269",
+			"author": {
+				"name": "Charles Roper",
+				"url": "https://indieweb.social/@charlesroper",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2d20f40ff746a88d2bca91d17b5b41a5b88391a6189d1f7fcaab9d680bf83789.jpg"
+			},
+			"date": "2023-01-12T15:48:52.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@bastianallgeier\" class=\"u-url\">@<span>bastianallgeier</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@getkirby\" class=\"u-url\">@<span>getkirby</span></a></span> Absolutely agreed. I see Eleventy and Kirby as kindred spirits. I've just started using Kirby, but the similarities are striking. They are elegant tools for building websites. </p><p>The React et al ecosystem is, to my mind, not about web developmenent. It's more about app development which just happens to use the web as it's VM rather than, e.g., the JVM or a native platform. App developers and web developers. That to me is where the divide is.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598047,
+			"parentId": 0,
+			"url": "https://front-end.social/@mxbck/109677093095674543",
+			"author": {
+				"name": "Max Böck",
+				"url": "https://front-end.social/@mxbck",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9106ed0ced6012e33cc0c4dffa224225fdf1bd29d370bf3e91ad36959024d5e2.jpg"
+			},
+			"date": "2023-01-12T16:07:08.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I share the feelings in this post. I work with React a lot, and I'm somewhat experienced with Javascript - yet I would never identify as a \"JS Developer\". Not because of the language, but because of the general sentiment of \"DX over user needs\" I associate with the term. </p><p>I think the divide is real, but it doesn't have to be that black or white. JS is awesome, and there are ways to use it without bloat and over-engineering. We just had a decade of skewed perceptions. 🙃</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598045,
+			"parentId": 0,
+			"url": "https://kibitz.cloud/@selfagency/109677094013177769",
+			"author": {
+				"name": "daniel sieradski",
+				"url": "https://kibitz.cloud/@selfagency",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9de2e7ec3e0427f90f3053817f2a5276ac33c9f4ec2735ff09e399d563ef4a5f.jpg"
+			},
+			"date": "2023-01-12T16:07:22.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> that all makes sense. i guess i just figured there'd be more of an interest from educators, standards enthusiasts, and browser makers in making something like mavo part of a future HTML spec.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598181,
+			"parentId": 0,
+			"url": "https://front-end.social/@leaverou/109677124195064167",
+			"author": {
+				"name": "Lea Verou",
+				"url": "https://front-end.social/@leaverou",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b1ebcd375ef5b76843d817e9675cac965d9742feb883ed026a6a9928edc39ed.png"
+			},
+			"date": "2023-01-12T16:15:03.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> That was the vision behind that line of research. Having seen things from the standards side however, something like Mavo is too far out of course. If we ever get to something as high level as that, it will be through decades of lower level APIs building towards it gradually. Which is not a bad thing. Layered design can happen in both directions (high level first, then lower level, or the opposite).</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598171,
+			"parentId": 0,
+			"url": "https://dice.camp/@colinaut/109677298299443749",
+			"author": {
+				"name": "Colinaut",
+				"url": "https://dice.camp/@colinaut",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1046edb61398a347224f2183bf40ec44671f8167af8e4cbec5763e93e90e65a2.jpg"
+			},
+			"date": "2023-01-12T16:59:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I so resonate with this as someone who has been both a designer and developer since the olden table-layout days. I am proficient at JavaScript/react/svelte/etc. but definitely consider myself a web developer — and a web designer. Bosses in the past encouraged me to specialize but I never did. Being more of generalist means focusing on making a good site and using the right tool for the job.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598170,
+			"parentId": 0,
+			"url": "https://masto.kruythoff.net/@darius/109677308788807083",
+			"author": {
+				"name": "Darius",
+				"url": "https://masto.kruythoff.net/@darius",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/620b6b9aba4c30478370bc00dc720c600e7ba9d8239a05f6b091cdb587ed3fd1.jpg"
+			},
+			"date": "2023-01-12T17:01:59.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@chriscoyier\" class=\"u-url\">@<span>chriscoyier</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@sarajw\" class=\"u-url\">@<span>sarajw</span></a></span> </p><p>✨❤️ \"I want to be a web developer, not a JavaScript developer.\" ❤️✨</p><p>That's me. That's my frustration. That's my anger towards people calling themselves front-end, and avoiding CSS and proper HTML like the plague.</p><p>Thanks for writing this, Zach. Let's be friends.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1598227,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@jakecarpenter/109677448533079332",
+			"author": {
+				"name": "Jake Carpenter 🏳️‍🌈🏳️‍⚧️",
+				"url": "https://fosstodon.org/@jakecarpenter",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/092cdb82f05b64d9b4a38578928f6cd9a25c88713abb7735b4009eff3c5303f2.jpg"
+			},
+			"date": "2023-01-12T17:37:32.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@mxbck\" class=\"u-url\">@<span>mxbck</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p>I like to take it even further and stick to \"Engineer\" or \"Developer.\" Yes, the languages and frameworks are tools, but even the platform we currently specialize in is nothing more than a choice.</p><p>I'm confident that if there were a sudden paradigm shift, we would *all* feel comfortable evaluating when and how to make the change to a different language and target an entirely new platform and away from web, mobile, embedded, or whatever.</p>",
+			"type": "reply",
 			"via": "webmention"
 		},
 		{
@@ -29,370 +393,6 @@
 			"via": "webmention"
 		},
 		{
-			"id": 1597934,
-			"parentId": 0,
-			"url": "https://masto.ai/@lukem/109676757635448351",
-			"author": {
-				"name": "Lukem",
-				"url": "https://masto.ai/@lukem",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/804acdb6f654b9a0410146d55f62ea8a0385def275bc5cf86d48b51319d22d81.jpg"
-			},
-			"date": "2023-01-12T20:41:49.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> no worries, I'll edit the link. Thanks for letting me know! :)</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597955,
-			"parentId": 0,
-			"url": "https://kibitz.cloud/@selfagency/109676790588153382",
-			"author": {
-				"name": "daniel sieradski",
-				"url": "https://kibitz.cloud/@selfagency",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9de2e7ec3e0427f90f3053817f2a5276ac33c9f4ec2735ff09e399d563ef4a5f.jpg"
-			},
-			"date": "2023-01-12T20:50:12.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I feel like once upon a time we were focused on making web coding accessible to all and then we got increasingly complex JS frameworks that forced us into specializations and the emphasis on accessible coding switched to nocode drag-and-drop tools that abstracted away everything. <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span>'s Mavo is the only thing I can think of that tried to counteract this trend.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597956,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109676813535626355",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-01-12T20:56:02.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> Lea always does amazing work!</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597957,
-			"parentId": 0,
-			"url": "https://notacult.social/@darth_mall/109676831318318928",
-			"author": {
-				"name": "Evan",
-				"url": "https://notacult.social/@darth_mall",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
-			},
-			"date": "2023-01-12T21:00:34.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> 💯💯💯</p><p>The great divide always bothered me because — although it reflected a reality in the industry — I felt like it was telling me I couldn't continue as a web developer who knows HTML, CSS, and JS; I needed to pick a side.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597954,
-			"parentId": 0,
-			"url": "https://kibitz.cloud/@selfagency/109676855185120672",
-			"author": {
-				"name": "daniel sieradski",
-				"url": "https://kibitz.cloud/@selfagency",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9de2e7ec3e0427f90f3053817f2a5276ac33c9f4ec2735ff09e399d563ef4a5f.jpg"
-			},
-			"date": "2023-01-12T21:06:38.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> she does but my question is, why didn't what she created inspire similar efforts? i see energy in webassembly bringing compiled languages to the browser but no energy in advancing what we can do with html itself.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597961,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109676856701403499",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-01-12T21:07:01.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> Oh, interesting. An unfortunate byproduct of acknowledging the divide 😱</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597994,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109676863954738341",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-01-12T21:08:52.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> surely declarative shadow dom occupies the beginning of something there!</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597995,
-			"parentId": 0,
-			"url": "https://hachyderm.io/@hi_mayank/109676886212755296",
-			"author": {
-				"name": "Mayank :verified:",
-				"url": "https://hachyderm.io/@hi_mayank",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e3a2d8c1795a2b30e0e56aca6eff2963ebb01c7bce1d4db277cf433f60d995d9.jpg"
-			},
-			"date": "2023-01-12T21:14:31.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> every time i use javascript, it makes me feel evil, especially if it's something that cannot be achieved without javascript</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597996,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109676891067692729",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-01-12T21:15:45.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@hi_mayank\" class=\"u-url\">@<span>hi_mayank</span></a></span> oh wow—why?</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597997,
-			"parentId": 0,
-			"url": "https://indieweb.social/@McNeely/109676898793727703",
-			"author": {
-				"name": "McNeely",
-				"url": "https://indieweb.social/@McNeely",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/20f6c8041154875d78bf3cbc0d476f1328597bcf5a1796e2ea1da17cf29fb09c.png"
-			},
-			"date": "2023-01-12T21:17:43.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I feel like whenever you work on a project that is either a library or a part of the toolchain you cannot help but straddle that great divide. Its a different experience than working on a product team focused on \"LARGE-SITE.com\"</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597991,
-			"parentId": 0,
-			"url": "https://kibitz.cloud/@selfagency/109676900293388141",
-			"author": {
-				"name": "daniel sieradski",
-				"url": "https://kibitz.cloud/@selfagency",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9de2e7ec3e0427f90f3053817f2a5276ac33c9f4ec2735ff09e399d563ef4a5f.jpg"
-			},
-			"date": "2023-01-12T21:18:06.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> still very js heavy in implementation</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597992,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109676914371468043",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-01-12T21:21:41.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> ah, hmm—I don’t see that</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597990,
-			"parentId": 0,
-			"url": "https://hachyderm.io/@hi_mayank/109676917040886719",
-			"author": {
-				"name": "Mayank :verified:",
-				"url": "https://hachyderm.io/@hi_mayank",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e3a2d8c1795a2b30e0e56aca6eff2963ebb01c7bce1d4db277cf433f60d995d9.jpg"
-			},
-			"date": "2023-01-12T21:22:22.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> i guess \"evil\" is a bit of overstatement. i don't think js itself is bad. it's indispensable for accessibility</p><p>but this feeling is kind of a result of the divide. \"i used js, therefore i must be on that side\"</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597998,
-			"parentId": 0,
-			"url": "https://mastodon.social/@bastianallgeier/109676919130544752",
-			"author": {
-				"name": "Bastian Allgeier",
-				"url": "https://mastodon.social/@bastianallgeier",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a023a7b239d980e7cbfce2ad209a33d8c0867d985480033cf5d73f8210911238.jpg"
-			},
-			"date": "2023-01-12T21:22:54.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> amazing post 💚 I definitely live in that different world together with you. I fell in love with the web over 20 years ago and I'm still in love with it every day. It is so much more than that tiny bubble from the survey.<br />Your post is another great indicator why it always felt like our philosophies for <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> and <span class=\"h-card\"><a href=\"https://mastodon.social/@getkirby\" class=\"u-url\">@<span>getkirby</span></a></span> are very close.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597999,
-			"parentId": 0,
-			"url": "https://front-end.social/@sarajw/109676920749578296",
-			"author": {
-				"name": "Sara Joy ✨",
-				"url": "https://front-end.social/@sarajw",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/310919176cdbb7aa00e5b77553f3f7f63c5d1cd25960dc0aef87c24727e2f5fd.jpg"
-			},
-			"date": "2023-01-12T21:23:18.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> omg. I'd not seen that <span class=\"h-card\"><a href=\"https://front-end.social/@chriscoyier\" class=\"u-url\">@<span>chriscoyier</span></a></span> Great Divide article until now.</p><p>Both your post, Zach, and that article, yes. Resonating hard.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1597993,
-			"parentId": 0,
-			"url": "https://notacult.social/@darth_mall/109676921355396609",
-			"author": {
-				"name": "Evan",
-				"url": "https://notacult.social/@darth_mall",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
-			},
-			"date": "2023-01-12T21:23:27.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I'm not sure it's even a byproduct. There are quotes in the CSS Tricks article that explicitly say we should do away with the term \"frontend developer\" and divide the field up into the JS camp and the HTML/CSS camp.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598000,
-			"parentId": 0,
-			"url": "https://social.coop/@eb/109676936542278875",
-			"author": {
-				"name": "Evan Boehs",
-				"url": "https://social.coop/@eb",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/52b51e96d6c4a64ba649bbb396f6aee237e35db9feef5b5c38e08b8eb739714e.jpg"
-			},
-			"date": "2023-01-12T21:27:19.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I have not been impressed with the survey, but it's a perfect metaphor for the larger community. Rough and rushed.</p><p>I was among the first people to fill the survey out, and it was released with many egregious spelling errors (I tooted one)</p><p>And as you noted, they mis(represented|understood) many technologies (ie: What Remix actually helps with). Bad look.</p><p>Personally, I do full stack, and f/e is so much more messy. That's the culture.</p><p>Let's be friends.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598062,
-			"parentId": 0,
-			"url": "https://front-end.social/@leaverou/109677006153214533",
-			"author": {
-				"name": "Lea Verou",
-				"url": "https://front-end.social/@leaverou",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b1ebcd375ef5b76843d817e9675cac965d9742feb883ed026a6a9928edc39ed.png"
-			},
-			"date": "2023-01-12T21:45:01.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I’ve thought about it a lot in the past few years, and here's what I concluded:<br />- The people working on JS frameworks tend to be hardcore devs, so they want to create stuff for people like them, not beginners<br />- Something for beginners doesn't attract contributions, because its users cannot contribute back<br />- Beginners don't search for tools as much. Nobody will google \"HTML-based programming language\"</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598063,
-			"parentId": 0,
-			"url": "https://front-end.social/@leaverou/109677011184906943",
-			"author": {
-				"name": "Lea Verou",
-				"url": "https://front-end.social/@leaverou",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b1ebcd375ef5b76843d817e9675cac965d9742feb883ed026a6a9928edc39ed.png"
-			},
-			"date": "2023-01-12T21:46:18.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p>Also, implementing high level declarative, reactive syntax that can work with whatever HTML &amp; CSS you throw at it is HARD. A lot of Mavo's code is incredibly complex to handle all the edge cases, and still buggy (part of that has to do with the lack of resources in research).</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598044,
-			"parentId": 0,
-			"url": "https://indieweb.social/@charlesroper/109677021279051269",
-			"author": {
-				"name": "Charles Roper",
-				"url": "https://indieweb.social/@charlesroper",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2d20f40ff746a88d2bca91d17b5b41a5b88391a6189d1f7fcaab9d680bf83789.jpg"
-			},
-			"date": "2023-01-12T21:48:52.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@bastianallgeier\" class=\"u-url\">@<span>bastianallgeier</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@getkirby\" class=\"u-url\">@<span>getkirby</span></a></span> Absolutely agreed. I see Eleventy and Kirby as kindred spirits. I've just started using Kirby, but the similarities are striking. They are elegant tools for building websites. </p><p>The React et al ecosystem is, to my mind, not about web developmenent. It's more about app development which just happens to use the web as it's VM rather than, e.g., the JVM or a native platform. App developers and web developers. That to me is where the divide is.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598047,
-			"parentId": 0,
-			"url": "https://front-end.social/@mxbck/109677093095674543",
-			"author": {
-				"name": "Max Böck",
-				"url": "https://front-end.social/@mxbck",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9106ed0ced6012e33cc0c4dffa224225fdf1bd29d370bf3e91ad36959024d5e2.jpg"
-			},
-			"date": "2023-01-12T22:07:08.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I share the feelings in this post. I work with React a lot, and I'm somewhat experienced with Javascript - yet I would never identify as a \"JS Developer\". Not because of the language, but because of the general sentiment of \"DX over user needs\" I associate with the term. </p><p>I think the divide is real, but it doesn't have to be that black or white. JS is awesome, and there are ways to use it without bloat and over-engineering. We just had a decade of skewed perceptions. 🙃</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598045,
-			"parentId": 0,
-			"url": "https://kibitz.cloud/@selfagency/109677094013177769",
-			"author": {
-				"name": "daniel sieradski",
-				"url": "https://kibitz.cloud/@selfagency",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9de2e7ec3e0427f90f3053817f2a5276ac33c9f4ec2735ff09e399d563ef4a5f.jpg"
-			},
-			"date": "2023-01-12T22:07:22.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@leaverou\" class=\"u-url\">@<span>leaverou</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> that all makes sense. i guess i just figured there'd be more of an interest from educators, standards enthusiasts, and browser makers in making something like mavo part of a future HTML spec.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598181,
-			"parentId": 0,
-			"url": "https://front-end.social/@leaverou/109677124195064167",
-			"author": {
-				"name": "Lea Verou",
-				"url": "https://front-end.social/@leaverou",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b1ebcd375ef5b76843d817e9675cac965d9742feb883ed026a6a9928edc39ed.png"
-			},
-			"date": "2023-01-12T22:15:03.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://kibitz.cloud/@selfagency\" class=\"u-url\">@<span>selfagency</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> That was the vision behind that line of research. Having seen things from the standards side however, something like Mavo is too far out of course. If we ever get to something as high level as that, it will be through decades of lower level APIs building towards it gradually. Which is not a bad thing. Layered design can happen in both directions (high level first, then lower level, or the opposite).</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598171,
-			"parentId": 0,
-			"url": "https://dice.camp/@colinaut/109677298299443749",
-			"author": {
-				"name": "Colinaut",
-				"url": "https://dice.camp/@colinaut",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1046edb61398a347224f2183bf40ec44671f8167af8e4cbec5763e93e90e65a2.jpg"
-			},
-			"date": "2023-01-12T22:59:19.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I so resonate with this as someone who has been both a designer and developer since the olden table-layout days. I am proficient at JavaScript/react/svelte/etc. but definitely consider myself a web developer — and a web designer. Bosses in the past encouraged me to specialize but I never did. Being more of generalist means focusing on making a good site and using the right tool for the job.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598170,
-			"parentId": 0,
-			"url": "https://masto.kruythoff.net/@darius/109677308788807083",
-			"author": {
-				"name": "Darius",
-				"url": "https://masto.kruythoff.net/@darius",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/620b6b9aba4c30478370bc00dc720c600e7ba9d8239a05f6b091cdb587ed3fd1.jpg"
-			},
-			"date": "2023-01-12T23:01:59.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@chriscoyier\" class=\"u-url\">@<span>chriscoyier</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@sarajw\" class=\"u-url\">@<span>sarajw</span></a></span> </p><p>✨❤️ \"I want to be a web developer, not a JavaScript developer.\" ❤️✨</p><p>That's me. That's my frustration. That's my anger towards people calling themselves front-end, and avoiding CSS and proper HTML like the plague.</p><p>Thanks for writing this, Zach. Let's be friends.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1598227,
-			"parentId": 0,
-			"url": "https://fosstodon.org/@jakecarpenter/109677448533079332",
-			"author": {
-				"name": "Jake Carpenter 🏳️‍🌈🏳️‍⚧️",
-				"url": "https://fosstodon.org/@jakecarpenter",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/092cdb82f05b64d9b4a38578928f6cd9a25c88713abb7735b4009eff3c5303f2.jpg"
-			},
-			"date": "2023-01-12T23:37:32.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@mxbck\" class=\"u-url\">@<span>mxbck</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p>I like to take it even further and stick to \"Engineer\" or \"Developer.\" Yes, the languages and frameworks are tools, but even the platform we currently specialize in is nothing more than a choice.</p><p>I'm confident that if there were a sudden paradigm shift, we would *all* feel comfortable evaluating when and how to make the change to a different language and target an entirely new platform and away from web, mobile, embedded, or whatever.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
 			"id": 1598223,
 			"parentId": 0,
 			"url": "https://fediverse.zachleat.com/@zachleat/109677533965890146",
@@ -401,7 +401,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-12T23:59:15.000Z",
+			"date": "2023-01-12T17:59:15.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@hi_mayank\" class=\"u-url\">@<span>hi_mayank</span></a></span> ah! I think we differ subtly there—I like a good JavaScript, here and there. But if I don’t put everything *through* JS, it feels as though I’m an outsider</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -415,7 +415,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-13T00:00:09.000Z",
+			"date": "2023-01-12T18:00:09.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@bastianallgeier\" class=\"u-url\">@<span>bastianallgeier</span></a></span> This is really lovely to hear. I’m so glad we got to meet at <span class=\"h-card\"><a href=\"https://mastodon.social/@btconf\" class=\"u-url\">@<span>btconf</span></a></span> so many years ago! And I hope to repeat sometime soon! <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@getkirby\" class=\"u-url\">@<span>getkirby</span></a></span></p>",
 			"type": "reply",
 			"via": "webmention"
@@ -429,7 +429,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-13T00:01:41.000Z",
+			"date": "2023-01-12T18:01:41.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> ah, yeah—it does make me wonder if the original was more of a “represent the sides” rather than leaning into an opinion</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -443,7 +443,7 @@
 				"url": "https://hachyderm.io/@hi_mayank",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e3a2d8c1795a2b30e0e56aca6eff2963ebb01c7bce1d4db277cf433f60d995d9.jpg"
 			},
-			"date": "2023-01-13T00:02:15.000Z",
+			"date": "2023-01-12T18:02:15.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> there are so many things this industry does that make people feel like outsiders. the \"just use tailwind\" crowd comes to mind</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -457,7 +457,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-13T00:02:20.000Z",
+			"date": "2023-01-12T18:02:20.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://social.coop/@eb\" class=\"u-url\">@<span>eb</span></a></span> let’s be friends!</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -471,7 +471,7 @@
 				"url": "https://hachyderm.io/@hi_mayank",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e3a2d8c1795a2b30e0e56aca6eff2963ebb01c7bce1d4db277cf433f60d995d9.jpg"
 			},
-			"date": "2023-01-13T00:03:30.000Z",
+			"date": "2023-01-12T18:03:30.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> chris responded! <a href=\"https://chriscoyier.net/2023/01/12/the-great-divide-was-indeed-divisive/\"><span>https://</span><span>chriscoyier.net/2023/01/12/the</span><span>-great-divide-was-indeed-divisive/</span></a></p>\n<a href=\"https://chriscoyier.net/?p=8339\">The Great Divide Was Indeed Divisive - Chris Coyier</a>",
 			"type": "reply",
 			"via": "webmention"
@@ -485,7 +485,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-13T00:04:52.000Z",
+			"date": "2023-01-12T18:04:52.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://dice.camp/@colinaut\" class=\"u-url\">@<span>colinaut</span></a></span> yeah! I do think both are valuable, but knowing what resonates and excites you to work on is also super important</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -499,7 +499,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-13T00:05:24.000Z",
+			"date": "2023-01-12T18:05:24.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://masto.kruythoff.net/@darius\" class=\"u-url\">@<span>darius</span></a></span> Let’s be friends!! 🙌🏻</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -513,7 +513,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-13T00:08:34.000Z",
+			"date": "2023-01-12T18:08:34.000Z",
 			"content": "<p>Looks like <span class=\"h-card\"><a href=\"https://front-end.social/@chriscoyier\" class=\"u-url\">@<span>chriscoyier</span></a></span> responded in blog post form (blog post response to a blog post—I am so happy 🏆)</p><p><a href=\"https://chriscoyier.net/2023/01/12/the-great-divide-was-indeed-divisive/\"><span>https://</span><span>chriscoyier.net/2023/01/12/the</span><span>-great-divide-was-indeed-divisive/</span></a></p><p>(via <span class=\"h-card\"><a href=\"https://hachyderm.io/@hi_mayank\" class=\"u-url\">@<span>hi_mayank</span></a></span>)</p>\n<a href=\"https://chriscoyier.net/?p=8339\">The Great Divide Was Indeed Divisive - Chris Coyier</a>",
 			"type": "reply",
 			"via": "webmention"
@@ -527,7 +527,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-13T00:11:11.000Z",
+			"date": "2023-01-12T18:11:11.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@hi_mayank\" class=\"u-url\">@<span>hi_mayank</span></a></span> whew, yeah.</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -541,7 +541,7 @@
 				"url": "https://mastodon.social/@ksylor",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3e48d2257a622a43ed5bce7d47d04539402bee6394dd4f72186d573024dfd1df.jpg"
 			},
-			"date": "2023-01-13T00:14:00.000Z",
+			"date": "2023-01-12T18:14:00.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> literally everything you said, I say too. Also yay to 17 years as web developer! 🙌 2006 was a good year</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -555,7 +555,7 @@
 				"url": "https://webperf.social/@boostmarks",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2b304c0474068a35a83571e731d722d720e8a534c8e5883cb9374636faeea1d9.png"
 			},
-			"date": "2023-01-13T00:21:24.000Z",
+			"date": "2023-01-12T18:21:24.000Z",
 			"content": "<p>I totally agree. Fun fact: in France, we live in a semantic bubble. The first Front-End web developers historically originated from the printing industry and were called \"integrators\", because they integrated designs into HTML constraints. The first JS developers who waved SPAs and frameworks around called themselves Web Developers, so much so that if you want to work with someone who knows the web today, it's better to avoid a Web Developer. I present myself as a \"web professional\".</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -569,7 +569,7 @@
 				"url": "https://fediverse.jefflembeck.com/@jefflembeck",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/09cd65674c4a43ff56ca14f2eb5425bf73a04e6123bd8e82e75838210ebc6177.jpg"
 			},
-			"date": "2023-01-13T00:21:25.000Z",
+			"date": "2023-01-12T18:21:25.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> as somebody who has done work on both sides of this in about the most extreme ways — I strongly agree, man.</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -583,7 +583,7 @@
 				"url": "https://social.ericwbailey.website/@eric",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cb2bbd155b9f19a525ded16dbe1c69b898be4b8a0ce863cfcabd34e6bfa0ff88.jpg"
 			},
-			"date": "2023-01-13T00:21:44.000Z",
+			"date": "2023-01-12T18:21:44.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Imagine how good things would be if we put the mantle of dev celebrity on folks who performance, accessibility, and usability over tooling navelgazing and FOMO.</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -597,7 +597,7 @@
 				"url": "https://social.ayco.io/@ayo",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ef323ea284ff84c729473fe4a09ac9cc2730fbda0ea046a7bf6323ecfdf265ad.png"
 			},
-			"date": "2023-01-13T00:37:36.000Z",
+			"date": "2023-01-12T18:37:36.000Z",
 			"content": "<p>“With React on 3.2% of web sites and jQuery at 77.7% (as of January 2023), that’s a pretty small slice of a much larger community.” -<span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span></p>",
 			"type": "reply",
 			"via": "webmention"
@@ -611,7 +611,7 @@
 				"url": "https://mas.to/@nmoo",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a11dfaddf375eff22caf505481582225dcb2a5c57bb56d7ed7e08dd3f1d39de4.jpg"
 			},
-			"date": "2023-01-13T00:40:39.000Z",
+			"date": "2023-01-12T18:40:39.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@chriscoyier\" class=\"u-url\">@<span>chriscoyier</span></a></span> Really enjoyed both articles! The Great Divide is often top-of-mind for me. I don't think it \"pitted the sides against one another\" as much as put words to a phenomenon that was already happening but hard for many to articulate.</p><p>Side note: Any time I'm feeling some type of way about this industry, looking up the latest jQuery stats always make me chuckle and puts things back in perspective 😅</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -625,7 +625,7 @@
 				"url": "https://mastodon.social/@MathiasGmeiner",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9aa80588d8b03a81389bec5c5d5a15152575514316dfdd584c5d2b0e3af0217a.jpg"
 			},
-			"date": "2023-01-13T00:45:50.000Z",
+			"date": "2023-01-12T18:45:50.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@bastianallgeier\" class=\"u-url\">@<span>bastianallgeier</span></a></span>  <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@getkirby\" class=\"u-url\">@<span>getkirby</span></a></span> I hope we can still be friends, even though we use (at the moment) Next.js as the frontend framework for our Headless Kirby 😢</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -697,7 +697,7 @@
 				"url": "https://adactio.com/",
 				"avatarUrl": "https://avatars.webmention.io/adactio.com/24f33c5820046ebbcb429f78bb988fc1fa9f97d35247e0b72b3fb5ff888da633.jpg"
 			},
-			"date": "2023-01-18T01:02:01.000Z",
+			"date": "2023-01-17T19:02:01.000Z",
 			"content": "<p>I shared this link in Slack with my co-workers today:</p>\n\n<p><a href=\"https://andymatuschak.org/stillness/\">Cultivating depth and stillness in research</a> by Andy Matuschak.</p>\n\n<p>I wasn’t sure whether it belonged in the <code>#research</code> or the <code>#design</code> channel. While it’s ostensibly about research, I think it applies to design more broadly. Heck, it probably applies to most fields. I should have put it in the Slack channel I created called <code>#iiiiinteresting</code>.</p>\n\n<p>The article is all about that feeling of frustration when things aren’t progressing quickly, even when you know intellectually that not everything <em>should</em> always progress quickly.</p>\n\n<p>The article is filled with advice for battling this feeling, including this observation on curiosity:</p>\n\n<blockquote>\n  <p>Curiosity can also totally change my relationship to setbacks. Say I’ve run an experiment, collected the data, done the analysis, and now I’m writing an essay about what I’ve found. Except, halfway through, I notice that one column of the data really doesn’t support the conclusion I’d drawn. Oops. It’s tempting to treat this development as a frustrating impediment—something to be overcome expediently. Of course, that’s exactly the wrong approach, both emotionally and epistemically. Everything becomes much better when I react from curiosity instead: “Oh, wait, wow! Fascinating! What is happening here? What can this teach me? How might this change what I try next?”</p>\n</blockquote>\n\n<p>But what really resonated with me was this footnote attached to that paragraph:</p>\n\n<blockquote>\n  <p>I notice that I <em>really</em> struggle to generate curiosity about problems in programming. Maybe it’s because I’ve been doing it so long, but I think it’s because my problems are usually with ephemeral ideas, incidental to what I actually care about. When I’m fighting some godforsaken Javascript build system, I don’t feel even <em>slightly</em> curious to “really” understand those parochial machinations. I know they’re just going to be replaced by some new tool next year.</p>\n</blockquote>\n\n<p>I feel seen.</p>\n\n<p>I know I’m not alone. I know people who were driven out of front-end development because they felt the unspoken ultimatum was to either become a “full stack” developer or see yourself out.</p>\n\n<p>Remember Chris’s excellent post, <a href=\"https://css-tricks.com/the-great-divide/\">The Great Divide</a>? Zach referenced it recently. <a href=\"https://www.zachleat.com/web/javascript-community/\">He wrote</a>:</p>\n\n<blockquote>\n  <p>The question I keep asking though: is the divide borne from a healthy specialization of skills or a symptom of unnecessary tooling complexity?</p>\n</blockquote>\n\n<p>Mostly I feel sad about the talented people we’ve lost because they felt their front-of-the-front-end work wasn’t valued.</p>\n\n<p>But wait! Can I turn my frown upside down? Can I take Andy Matuschak’s advice and say, “Oh, wait, wow! Fascinating! What is happening here? What can this teach me?”</p>\n\n<p>Here’s one way of squinting at the situation…</p>\n\n<p>There’s an opportunity here. If many people—myself included—feel disheartened and ground down by the amount of time they need to spend dealing with toolchains and build systems, what kind of system would allow us to get on with making websites without having to deal with that stuff?</p>\n\n<p>I’m not proposing that we get rid of these complex toolchains, but I am wondering if there’s a way to make it someone else’s job.</p>\n\n<p>I guess this job is DevOps. In theory it’s a specialised field. In practice everyone adding anything to a codebase partakes in continual partial DevOps because they <em>must</em> understand the toolchains and build processes in order to change one line of HTML.</p>\n\n<p>I’m not saying “Don’t Make Me Think” when it comes to the tooling. I totally get that some working knowledge is probably required. But the ratio has gotten out of whack. You need a <em>lot</em> of working knowledge of the toolchains and build processes.</p>\n\n<p>In fact, that’s mostly what companies hire for these days. If you’re well versed in HTML, CSS, and vanilla JavaScript, but you’re not up to speed on pipelines and frameworks, you’re going to have a hard time.</p>\n\n<p>That doesn’t seem right. We should change it.</p>",
 			"type": "mention",
 			"via": "webmention"

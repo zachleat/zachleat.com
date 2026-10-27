@@ -127,6 +127,20 @@
 			"via": "webmention"
 		},
 		{
+			"id": 2042520,
+			"parentId": 0,
+			"url": "https://awfulwoman.com/bookmarks/2019/06/07/3hwer66g/",
+			"author": {
+				"name": "Charlie O'Hara",
+				"url": "https://awfulwoman.com/about/",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/176201386e499082b9e9d35655330db6e5035669230f185976510c53bba28b53.jpg"
+			},
+			"date": "2019-06-07T16:36:20.000Z",
+			"content": "<a class=\"h-cite u-bookmark-of\" href=\"https://www.zachleat.com/web/snarky/\"><img class=\"u-photo\" src=\"https://awfulwoman.com/bookmarks/2019/06/07/3hwer66g/card.webp\" alt=\"\" width=\"800\" height=\"420\" />\n  <span class=\"p-name\">Render snarky comments in Comic Sans</span>\n  <span class=\"p-publication\">Zach Leatherman</span>\n  <span class=\"p-summary\">A post by Zach Leatherman (zachleat)</span>\n</a>\n    \n    \n\n    \n\n    \n\n    \n\n    <p>LOVE. IT.</p>\n\n\n    \n    <p><a href=\"https://www.zachleat.com/web/snarky/\">Read Zach Leatherman on Zach Leatherman</a><span class=\"u-remove\"> and </span><a href=\"https://web.archive.org/web/https://www.zachleat.com/web/snarky/\">Archived copy</a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
 			"id": 623177,
 			"parentId": 0,
 			"url": "https://twitter.com/evoterra/status/1137037689868308480",
@@ -222,20 +236,6 @@
 			"date": "2019-06-07T20:59:41.000Z",
 			"content": "ZACH. 👏👏👏👏👏👏👏👏👏👏👏🎉",
 			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 2042520,
-			"parentId": 0,
-			"url": "https://awfulwoman.com/bookmarks/2019/06/07/3hwer66g/",
-			"author": {
-				"name": "Charlie O'Hara",
-				"url": "https://awfulwoman.com/about/",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/176201386e499082b9e9d35655330db6e5035669230f185976510c53bba28b53.jpg"
-			},
-			"date": "2019-06-07T21:36:20.000Z",
-			"content": "<a class=\"h-cite u-bookmark-of\" href=\"https://www.zachleat.com/web/snarky/\"><img class=\"u-photo\" src=\"https://awfulwoman.com/bookmarks/2019/06/07/3hwer66g/card.webp\" alt=\"\" width=\"800\" height=\"420\" />\n  <span class=\"p-name\">Render snarky comments in Comic Sans</span>\n  <span class=\"p-publication\">Zach Leatherman</span>\n  <span class=\"p-summary\">A post by Zach Leatherman (zachleat)</span>\n</a>\n    \n    \n\n    \n\n    \n\n    \n\n    <p>LOVE. IT.</p>\n\n\n    \n    <p><a href=\"https://www.zachleat.com/web/snarky/\">Read Zach Leatherman on Zach Leatherman</a><span class=\"u-remove\"> and </span><a href=\"https://web.archive.org/web/https://www.zachleat.com/web/snarky/\">Archived copy</a></p>",
-			"type": "mention",
 			"via": "webmention"
 		},
 		{
@@ -514,6 +514,16 @@
 			"via": "webmention"
 		},
 		{
+			"id": 632818,
+			"parentId": 0,
+			"url": "http://isokunoffice.club/2019/06/25/render-snarky-comments-in-comic-sans-zachleat-com/",
+			"author": {},
+			"date": "2019-06-25T00:00:00.000Z",
+			"content": "<p> <br /></p>\n\n<p>I had the pleasure of attending an <a href=\"https://indieweb.org/\">IndieWebCamp</a> before the amazing <a href=\"https://beyondtellerrand.com/\">Beyond Tellerrand</a> conference a few weeks back and I’m still <a href=\"https://twitter.com/zachleat/status/1127489938448977920\">buzzing</a> from the experience.</p>\n<p>I can’t really express how meaningful this experience was to me. An antithesis to the rat race of social media, IndieWebCamp was a roomful of kindred spirits that care about the web and their own websites and hosting their own content. It felt like the Google Reader days again, when everyone was blogging and writing on their own sites. I dunno if you can tell but I loved it. If you get the chance to attend one of these events, jump on it (I really want to run one in Omaha 👀).</p>\n<h2>Webmentions, Disqus, WordPress</h2>\n<p>At the event I got a working example of <a href=\"https://indieweb.org/Webmention\">webmentions</a> going on my personal web site. I already had <a href=\"http://www.zachleat.com/web/disqus-import/\">a static copy of my old Disqus comments that I’d exported</a> (which included copies of old WordPress comments that I’d imported into Disqus 😎).</p>\n<p>Webmentions are made possible for static web sites when you use <a href=\"https://webmention.io/\">webmention.io</a>, a service to log incoming entries. Another service, <a href=\"https://brid.gy/\">Bridgy</a>, crawls social networking sites for mentions of my site and sends those over to webmention.io automatically.</p>\n<p>If I’ve already lost you, luckily <a href=\"https://mxb.dev/blog/using-webmentions-on-static-sites/\">Max Böck wrote up a lovely tutorial on how to do this using Eleventy</a> (his site is amazing, too). Max also created an <a href=\"https://github.com/maxboeck/eleventy-webmentions\"><code>eleventy-webmentions</code> starter project</a> which has all the code for this. Hopefully we can get some form of this merged back into the upstream <code>eleventy-base-blog</code> too.</p>\n<p>You can see an example of how the webmentions look on my site at one of my recent blog posts: <a href=\"http://www.zachleat.com/web/google-fonts-display/#webmentions\">Google Fonts is Adding <code>font-display</code></a>.</p>\n<h2>Sentiment Analysis</h2>\n<p>Hosting my own content and comments allows me to be a bit more creative with it. So I decided to take this a step further and have <a href=\"https://twitter.com/zachleat/status/1132727088031653891\">a little fun</a> with negative comments.</p>\n<p>First, how do we find out if a comment is negative? Let’s try to use <a href=\"https://www.npmjs.com/package/natural\">Natural, a plugin on npm</a>. I added a Liquid filter to my <a href=\"https://www.11ty.io/docs/config/\">Eleventy configuration file</a> to analyze text and spit out a sentiment value. <code>0</code> is neutral, <code>&lt; 0</code> is negative, and <code>&gt; 0</code> is positive. Note that this natural language processing isn’t 100% (sometimes I’ll get a false positive) but this is just a fun demo on my site.</p>\n<pre><code><span><span>const</span> Natural <span>=</span> <span>require</span><span>(</span><span>'natural'</span><span>)</span><span>;</span></span><br /><span><span>const</span> analyze <span>=</span> <span>new</span> <span>Natural<span>.</span>SentimentAnalyzer</span><span>(</span><span>\"English\"</span><span>,</span> Natural<span>.</span>PorterStemmer<span>,</span> <span>\"afinn\"</span><span>)</span><span>;</span></span><br /><span><br /><span>module<span>.</span><span>exports</span> <span>=</span> <span>function</span><span>(</span><span>eleventyConfig</span><span>)</span> <span>{</span></span><br /><span>    eleventyConfig<span>.</span><span>addLiquidFilter</span><span>(</span><span>\"getSentimentValue\"</span><span>,</span> <span>function</span><span>(</span><span>content</span><span>)</span> <span>{</span></span><br /><span>        <span>if</span><span>(</span> content <span>)</span> <span>{</span></span><br /><span>            <span>const</span> tokenizer <span>=</span> <span>new</span> <span>Natural<span>.</span>WordTokenizer</span><span>(</span><span>)</span><span>;</span></span><br /><span>            <span>return</span> analyze<span>.</span><span>getSentiment</span><span>(</span>tokenizer<span>.</span><span>tokenize</span><span>(</span>content<span>)</span><span>)</span><span>;</span></span><br /><span>        <span>}</span></span><br /><span><br /><span>        <span>return</span> <span>0</span><span>;</span></span><br /><span>    <span>}</span><span>)</span><span>;</span></span><br /><span><span>}</span><span>;</span></span></span></span></code></pre>\n<p>And then in my Liquid template, I use this integer value to add a <code>static-comments-reply-salty</code> class:</p>\n<pre><code>{% assign sentiment = webmention.content.text | getSentimentValue %}\n&lt;li class=\"static-comments-reply{% if sentiment &lt; 0 %} static-comments-reply-salty{% endif %}\"&gt;\n    …\n</code></pre>\n<p>And then in my stylesheet, I use this class to opt-into a lovely stack of Comic Sans, Chalkboard, and of course a fantasy fallback for kicks:</p>\n<pre><code><span><span>.static-comments-reply-salty</span> <span>{</span></span><br /><span>    <span>font-family</span><span>:</span> Comic Sans MS<span>,</span> Chalkboard SE<span>,</span> fantasy<span>;</span></span><br /><span><span>}</span></span></code></pre>\n<p>As extra credit, I also used the <a href=\"https://www.npmjs.com/package/random-case\"><code>random-case</code> plugin</a> to <code>mODifY tHe TeXt</code> (at <a href=\"https://twitter.com/DavidDarnes/status/1132732852196511744\">David Darnes excellent recommendation</a>).</p>\n<h2>How does it look?</h2>\n<p>This was taken from a real comment on my site.</p>\n<h3>Before:</h3>\n<h3>After:</h3>\n<p>This isn’t intended to be a hot-take on Comic Sans. Instead it’s meant to change the tone of the negativity to make it sound like a clown is yelling at a kid’s birthday party.</p>\n\n<p><br /><br /><br /><br /><a href=\"https://www.zachleat.com/web/snarky/\">Source link </a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
 			"id": 635441,
 			"parentId": 0,
 			"url": "https://twitter.com/LubowskiBartek/status/1143320684128591872",
@@ -586,16 +596,6 @@
 			},
 			"date": "2019-06-25T03:55:35.000Z",
 			"content": "Render Snarky Comments in Comic Sans: Hilarious idea by Zach Leatherman. To test if a comment is \"snarky\" or not, there is an npm package up to the task. On this site, we generally just delete snarky comments, but I still run a WordPress plugin that… <a href=\"https://www.zachleat.com/web/snarky/?utm_source=dlvr.it&amp;utm_medium=twitter\">zachleat.com/web/snarky/?ut…</a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/snarky/\"></a>",
-			"type": "mention",
-			"via": "webmention"
-		},
-		{
-			"id": 632818,
-			"parentId": 0,
-			"url": "http://isokunoffice.club/2019/06/25/render-snarky-comments-in-comic-sans-zachleat-com/",
-			"author": {},
-			"date": "2019-06-25T05:00:00.000Z",
-			"content": "<p> <br /></p>\n\n<p>I had the pleasure of attending an <a href=\"https://indieweb.org/\">IndieWebCamp</a> before the amazing <a href=\"https://beyondtellerrand.com/\">Beyond Tellerrand</a> conference a few weeks back and I’m still <a href=\"https://twitter.com/zachleat/status/1127489938448977920\">buzzing</a> from the experience.</p>\n<p>I can’t really express how meaningful this experience was to me. An antithesis to the rat race of social media, IndieWebCamp was a roomful of kindred spirits that care about the web and their own websites and hosting their own content. It felt like the Google Reader days again, when everyone was blogging and writing on their own sites. I dunno if you can tell but I loved it. If you get the chance to attend one of these events, jump on it (I really want to run one in Omaha 👀).</p>\n<h2>Webmentions, Disqus, WordPress</h2>\n<p>At the event I got a working example of <a href=\"https://indieweb.org/Webmention\">webmentions</a> going on my personal web site. I already had <a href=\"http://www.zachleat.com/web/disqus-import/\">a static copy of my old Disqus comments that I’d exported</a> (which included copies of old WordPress comments that I’d imported into Disqus 😎).</p>\n<p>Webmentions are made possible for static web sites when you use <a href=\"https://webmention.io/\">webmention.io</a>, a service to log incoming entries. Another service, <a href=\"https://brid.gy/\">Bridgy</a>, crawls social networking sites for mentions of my site and sends those over to webmention.io automatically.</p>\n<p>If I’ve already lost you, luckily <a href=\"https://mxb.dev/blog/using-webmentions-on-static-sites/\">Max Böck wrote up a lovely tutorial on how to do this using Eleventy</a> (his site is amazing, too). Max also created an <a href=\"https://github.com/maxboeck/eleventy-webmentions\"><code>eleventy-webmentions</code> starter project</a> which has all the code for this. Hopefully we can get some form of this merged back into the upstream <code>eleventy-base-blog</code> too.</p>\n<p>You can see an example of how the webmentions look on my site at one of my recent blog posts: <a href=\"http://www.zachleat.com/web/google-fonts-display/#webmentions\">Google Fonts is Adding <code>font-display</code></a>.</p>\n<h2>Sentiment Analysis</h2>\n<p>Hosting my own content and comments allows me to be a bit more creative with it. So I decided to take this a step further and have <a href=\"https://twitter.com/zachleat/status/1132727088031653891\">a little fun</a> with negative comments.</p>\n<p>First, how do we find out if a comment is negative? Let’s try to use <a href=\"https://www.npmjs.com/package/natural\">Natural, a plugin on npm</a>. I added a Liquid filter to my <a href=\"https://www.11ty.io/docs/config/\">Eleventy configuration file</a> to analyze text and spit out a sentiment value. <code>0</code> is neutral, <code>&lt; 0</code> is negative, and <code>&gt; 0</code> is positive. Note that this natural language processing isn’t 100% (sometimes I’ll get a false positive) but this is just a fun demo on my site.</p>\n<pre><code><span><span>const</span> Natural <span>=</span> <span>require</span><span>(</span><span>'natural'</span><span>)</span><span>;</span></span><br /><span><span>const</span> analyze <span>=</span> <span>new</span> <span>Natural<span>.</span>SentimentAnalyzer</span><span>(</span><span>\"English\"</span><span>,</span> Natural<span>.</span>PorterStemmer<span>,</span> <span>\"afinn\"</span><span>)</span><span>;</span></span><br /><span><br /><span>module<span>.</span><span>exports</span> <span>=</span> <span>function</span><span>(</span><span>eleventyConfig</span><span>)</span> <span>{</span></span><br /><span>    eleventyConfig<span>.</span><span>addLiquidFilter</span><span>(</span><span>\"getSentimentValue\"</span><span>,</span> <span>function</span><span>(</span><span>content</span><span>)</span> <span>{</span></span><br /><span>        <span>if</span><span>(</span> content <span>)</span> <span>{</span></span><br /><span>            <span>const</span> tokenizer <span>=</span> <span>new</span> <span>Natural<span>.</span>WordTokenizer</span><span>(</span><span>)</span><span>;</span></span><br /><span>            <span>return</span> analyze<span>.</span><span>getSentiment</span><span>(</span>tokenizer<span>.</span><span>tokenize</span><span>(</span>content<span>)</span><span>)</span><span>;</span></span><br /><span>        <span>}</span></span><br /><span><br /><span>        <span>return</span> <span>0</span><span>;</span></span><br /><span>    <span>}</span><span>)</span><span>;</span></span><br /><span><span>}</span><span>;</span></span></span></span></code></pre>\n<p>And then in my Liquid template, I use this integer value to add a <code>static-comments-reply-salty</code> class:</p>\n<pre><code>{% assign sentiment = webmention.content.text | getSentimentValue %}\n&lt;li class=\"static-comments-reply{% if sentiment &lt; 0 %} static-comments-reply-salty{% endif %}\"&gt;\n    …\n</code></pre>\n<p>And then in my stylesheet, I use this class to opt-into a lovely stack of Comic Sans, Chalkboard, and of course a fantasy fallback for kicks:</p>\n<pre><code><span><span>.static-comments-reply-salty</span> <span>{</span></span><br /><span>    <span>font-family</span><span>:</span> Comic Sans MS<span>,</span> Chalkboard SE<span>,</span> fantasy<span>;</span></span><br /><span><span>}</span></span></code></pre>\n<p>As extra credit, I also used the <a href=\"https://www.npmjs.com/package/random-case\"><code>random-case</code> plugin</a> to <code>mODifY tHe TeXt</code> (at <a href=\"https://twitter.com/DavidDarnes/status/1132732852196511744\">David Darnes excellent recommendation</a>).</p>\n<h2>How does it look?</h2>\n<p>This was taken from a real comment on my site.</p>\n<h3>Before:</h3>\n<h3>After:</h3>\n<p>This isn’t intended to be a hot-take on Comic Sans. Instead it’s meant to change the tone of the negativity to make it sound like a clown is yelling at a kid’s birthday party.</p>\n\n<p><br /><br /><br /><br /><a href=\"https://www.zachleat.com/web/snarky/\">Source link </a></p>",
 			"type": "mention",
 			"via": "webmention"
 		},
@@ -2268,6 +2268,13 @@
 			"via": "webmention"
 		},
 		{
+			"id": 758840,
+			"url": "https://keithjgrant.com/likes/2020/02/78474/",
+			"date": "2020-02-20T21:47:00.000Z",
+			"author": {},
+			"via": "webmention"
+		},
+		{
 			"id": 758842,
 			"url": "https://twitter.com/zachleat/status/1230557372457930752#favorited-by-3001203233",
 			"date": "2020-02-20T22:00:51.000Z",
@@ -2386,13 +2393,6 @@
 				"url": "https://twitter.com/carolstran",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7abe9ca520ae85167ee8cb9140e4206b44abc9aa40ebe177093c34122d6bb879.jpg"
 			},
-			"via": "webmention"
-		},
-		{
-			"id": 758840,
-			"url": "https://keithjgrant.com/likes/2020/02/78474/",
-			"date": "2020-02-21T03:47:00.000Z",
-			"author": {},
 			"via": "webmention"
 		},
 		{
@@ -2677,7 +2677,7 @@
 		{
 			"id": 624053,
 			"url": "https://adactio.com/links/15307",
-			"date": "2019-06-10T13:14:29.000Z",
+			"date": "2019-06-10T08:14:29.000Z",
 			"author": {
 				"name": "Jeremy Keith",
 				"url": "https://adactio.com/",
