@@ -189,6 +189,10 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 {% endif %}
 {%- endcapture %}
 
+{%- comment %} archived and deprecated projects are left out of the open totals, so their counts are dimmed {% endcomment -%}
+{%- assign uncountedClass = "" %}
+{%- if project.isArchived or project.npmDeprecated %}{% assign uncountedClass = " is-uncounted" %}{% endif %}
+
 {%- capture issuesFragment %}
 <small>{% icon "fas:bug" %}</small>{{ project.openIssues }}<br>
 {%- if project.closedIssues > 0 %}<small>{{ project.closedIssues | renderNumber: "0a" }}{% icon "far:circle-check" %}</small>{% endif %}
@@ -225,8 +229,8 @@ column after it out of alignment {% endcomment -%}
 <td class="numeric popularity" data-sort-value="{{ sortPopularity }}">{% if hasPopularity %}{{ popularityFragment }}{% endif %}</td>
 <td data-sort-value="{{ sortVersions }}">{{ versionsFragment }}</td>
 <td class="numeric">{{ auditFragment }}</td>
-<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}">{{ issuesFragment }}</td>
-<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}">{{ prsFragment }}</td>
+<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}{{ uncountedClass }}">{{ issuesFragment }}</td>
+<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}{{ uncountedClass }}">{{ prsFragment }}</td>
 {%- else %}
 {%- capture projectRowKey %}{{ project.nameWithOwner }}|{{ project.packageName }}{% endcapture %}
 {%- assign projectRowId = reportData.rowIdByPackage[ projectRowKey ] %}
@@ -248,8 +252,8 @@ column after it out of alignment {% endcomment -%}
 		{%- if project.lastPublish %}
 		<div class="stat"><dt>Audit</dt><dd>{{ auditFragment }}</dd></div>
 		{%- endif %}
-		<div class="stat"><dt>Issues</dt><dd>{{ issuesFragment }}</dd></div>
-		<div class="stat"><dt>PRs</dt><dd>{{ prsFragment }}</dd></div>
+		<div class="stat"><dt>Issues</dt><dd class="{{ uncountedClass | strip }}">{{ issuesFragment }}</dd></div>
+		<div class="stat"><dt>PRs</dt><dd class="{{ uncountedClass | strip }}">{{ prsFragment }}</dd></div>
 	</dl>
 </article>
 {%- endif %}

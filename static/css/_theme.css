@@ -2072,7 +2072,8 @@ a[href].tag-inline:not(.tag-borderless),
 		vertical-align: text-bottom;
 		margin-inline-start: .375em;
 	}
-	.is-workspace {
+	.is-workspace,
+	.is-uncounted {
 		opacity: .4;
 		color: var(--z-color-text-secondary);
 	}
