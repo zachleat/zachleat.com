@@ -805,6 +805,7 @@ h1:first-child {
 h2,
 .hed-h2 {
 	font-size: 1.421052631579em; /* 27px /19 */
+	font-variation-settings: "wdth" 70, "TYTE" -50, "NOTC" 0;
 	padding: 0 .227272727em; /* 0 5px */
 }
 .content-main h2,
@@ -820,7 +821,7 @@ h2,
 @media (min-width: 30em) {
 	h2,
 	.hed-h2 {
-		font-size: 2.315789473684em; /* 44px /19 */
+		font-size: 1.684210526316em; /* 32px /19 */
 	}
 }
 h3,
