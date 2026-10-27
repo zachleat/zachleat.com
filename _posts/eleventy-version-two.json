@@ -9,7 +9,7 @@
 				"url": "https://chrisruppel.com",
 				"avatarUrl": "https://avatars.webmention.io/chrisruppel.com/f470217fd85716c59ab7e7ac872deb1ed342ece97b1166d304be38b4245b13cf.jpg"
 			},
-			"date": "2023-01-20T18:00:00.000Z",
+			"date": "2023-01-20T12:00:00.000Z",
 			"content": "<p>I say that as a dedicated fan of the project: This is my first post published after upgrading to the <a href=\"https://www.zachleat.com/web/eleventy-version-two/\">new beta</a>!</p>\n<p>It was almost a no-touch upgrade. My partial that outputs photo galleries needed some love to eliminate extra whitespace, but aside from that I am upgraded and ready to start migrating to WebC.</p>",
 			"type": "mention",
 			"via": "webmention"
@@ -23,7 +23,7 @@
 				"url": "https://mstdn.social/@mattwilcox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
 			},
-			"date": "2023-01-20T21:45:02.000Z",
+			"date": "2023-01-20T15:45:02.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> For those of us that very rarely use npm, and have been poking about on the canary, how does one `npm update` and get the beta, instead of the latest Canary?</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -37,7 +37,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-20T21:47:37.000Z",
+			"date": "2023-01-20T15:47:37.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@mattwilcox\" class=\"u-url\">@<span>mattwilcox</span></a></span> `npm install @11ty/eleventy@beta` in your project directory will do the trick! You can check in your package.json after or by running `npx @11ty/eleventy --version`</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -51,7 +51,7 @@
 				"url": "https://mstdn.social/@mattwilcox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
 			},
-			"date": "2023-01-20T21:56:02.000Z",
+			"date": "2023-01-20T15:56:02.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Thank you!</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -65,7 +65,7 @@
 				"url": "https://fosstodon.org/@drsensor",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6d1700659df23aa81f4796dda5217d6f0c30f8f50f5d2847799b791d9195b7ac.png"
 			},
-			"date": "2023-01-20T22:06:01.000Z",
+			"date": "2023-01-20T16:06:01.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Congrats 🎉<br />Is there a blog post about how 11ty start then grow gaining wide adoption?</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -79,7 +79,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-20T22:08:35.000Z",
+			"date": "2023-01-20T16:08:35.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.design/@DavidDarnes\" class=\"u-url\">@<span>DavidDarnes</span></a></span> Thank you Dave!!</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/eleventy-version-two/\"></a>",
 			"type": "reply",
 			"via": "webmention"
@@ -93,7 +93,7 @@
 				"url": "https://fosstodon.org/@drsensor",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6d1700659df23aa81f4796dda5217d6f0c30f8f50f5d2847799b791d9195b7ac.png"
 			},
-			"date": "2023-01-20T22:08:54.000Z",
+			"date": "2023-01-20T16:08:54.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I just notice the funky burger menu 😂</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -107,7 +107,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-20T22:13:42.000Z",
+			"date": "2023-01-20T16:13:42.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@drsensor\" class=\"u-url\">@<span>drsensor</span></a></span> *marks another line on my hamburger menu victim counter*</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -121,7 +121,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-01-20T22:14:19.000Z",
+			"date": "2023-01-20T16:14:19.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@drsensor\" class=\"u-url\">@<span>drsensor</span></a></span> probably just bits and pieces scattered on various posts <a href=\"https://www.zachleat.com/web/?category=eleventy\"><span>https://www.</span><span>zachleat.com/web/?category=ele</span><span>venty</span></a> but that would be a good post to write!</p>\n<a href=\"https://www.zachleat.com/web/\">Archives—zachleat.com</a>",
 			"type": "reply",
 			"via": "webmention"

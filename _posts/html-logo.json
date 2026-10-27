@@ -477,7 +477,18 @@
 		{
 			"id": 1977291,
 			"url": "https://rmendes.net/likes/2026/02/20/79b39/",
-			"date": "2026-02-20T14:53:02.000Z",
+			"date": "2026-02-20T08:53:02.000Z",
+			"author": {
+				"name": "Ricardo Mendes",
+				"url": "https://rmendes.net",
+				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1977293,
+			"url": "https://rmendes.net/likes/2026/02/20/b4b93/",
+			"date": "2026-02-20T09:31:38.000Z",
 			"author": {
 				"name": "Ricardo Mendes",
 				"url": "https://rmendes.net",
@@ -493,17 +504,6 @@
 				"name": "Simon Cox :SEO:",
 				"url": "https://seocommunity.social/@simoncox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
-			},
-			"via": "webmention"
-		},
-		{
-			"id": 1977293,
-			"url": "https://rmendes.net/likes/2026/02/20/b4b93/",
-			"date": "2026-02-20T15:31:38.000Z",
-			"author": {
-				"name": "Ricardo Mendes",
-				"url": "https://rmendes.net",
-				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
 			},
 			"via": "webmention"
 		},

@@ -1,6 +1,202 @@
 {
 	"comments": [
 		{
+			"id": 1560458,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350139024771005",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-15T22:18:25.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I still don't understand the use-case for wanting to delay hydration (as I stated in the proposal) 😀</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560459,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350154804346428",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-15T22:22:26.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I’m guessing you’re all-in on SSR?</p><p>I think some PE scenarios require heftier DOM changes—I’ve talked a bit about the tension between SSR and PE before—I think this assists nicely there</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560456,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350169042576188",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-15T22:26:03.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I like to think I'm a pragmatist so I'm not really all-in on anything.</p><p>But when I say I don't understand I really do mean I don't understand, not that I disagree with it. I don't understand what scenario exists that you would want a component to not hydrate until you do something else. That's what I asked in the proposal thread but never got a reply.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560457,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350181254757083",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-15T22:29:09.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I’m confused—isn’t that the point of islands? Arbitrary conditions on “hydrating” child content?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560475,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350208092917993",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-15T22:35:59.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ok, so you are using defer-hydration so that if you have a on:idle and on:visible on the same page, the visible one will continue to be delayed. </p><p>To me, I think of the directives as \"fastest wins\" and I don't necessarily want 2 of the same components to hydrate at different times.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560454,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350212630756793",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-15T22:37:08.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> It's more of wanting to delay the loading and JS execution. Once that's happened then you might as well hydrate *all* of the component instances. I haven't thought of a reason to not hydrate a component who's code is loaded.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560455,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350222321817499",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-15T22:39:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> ahh, I see. Yeah I’m not sure I agree with that (yet?)</p><p>The implementation I added for `&lt;is-land on:idle on:visible&gt;` is that it won’t remove `defer-hydration` attribute until both conditions are met—I’d absolutely want the island to be in full control over its children (even if another distinct island defines the same custom element)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560473,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350281062291536",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-15T22:54:32.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> From my perspective, a web component should only control its shadow dom and &lt;slot&gt;. If it is controlling what is inside of that slot there's a coupling problem. There are some rare exceptions.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560474,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350392379215422",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-15T23:22:51.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I guess I’m making the case that `&lt;is-land&gt;` as a web component is an exception to that rule!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560471,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350405568533088",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-15T23:26:12.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Yeah, for sure. I still don't see the use-case though 😆  What is the scenario where you want to hydrate &lt;my-component&gt; in one island but delay its hydration in a different island?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560472,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350421350183114",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-15T23:30:13.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I think one difference is you are thinking about it from the perspective of the author of &lt;is-land&gt; and I'm thinking about it from the perspective of the &lt;my-component&gt; author.</p><p>As a component author, conforming to the &lt;is-land&gt; wishes isn't enough of a reason. I need a real use-case.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560461,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350436642787489",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-15T23:34:06.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> As a nit, the article calls this a \"community-agreed-upon draft standard\", but it's not community agreed upon. It's an open proposal with some (but not a lot) of feedback. Not yet merged and agreed upon.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560453,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350460635727943",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-15T23:40:12.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> it’s ok! We can disagree! 👍🏻</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560469,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350487363362476",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-15T23:47:00.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Of course, but I'm not sure what we're disagreeing on. Is the reason to delay hydration just because that's what &lt;is-land&gt;'s API wants to happen? I'm genuinely just trying to understand.</p><p>I like to think about WCs in terms of \"what would native elements do\". Would a native element defer hydration based on a blanket attribute? I don't think so! They might delay it given a specific reason, but that reason is part of the element's API, not a global option.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
 			"id": 1560490,
 			"parentId": 0,
 			"url": "https://twitter.com/isAdrisal/status/1592665984237965315",
@@ -15,6 +211,20 @@
 			"via": "webmention"
 		},
 		{
+			"id": 1560470,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350498381166962",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-15T23:49:48.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I don’t think it’s much different than defer for script or loading for img!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
 			"id": 1560566,
 			"parentId": 0,
 			"url": "https://twitter.com/thomasreggi/status/1592723514658029568",
@@ -25,216 +235,6 @@
 			},
 			"date": "2022-11-16T03:37:31.000Z",
 			"content": "good job on the social image 🔥\n<a class=\"u-mention\" href=\"https://twitter.com/develwoutacause\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560458,
-			"parentId": 0,
-			"url": "https://c.im/@matthewp/109350139024771005",
-			"author": {
-				"name": "Matthew Phillips",
-				"url": "https://c.im/@matthewp",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
-			},
-			"date": "2022-11-16T04:18:25.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I still don't understand the use-case for wanting to delay hydration (as I stated in the proposal) 😀</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560459,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109350154804346428",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2022-11-16T04:22:26.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I’m guessing you’re all-in on SSR?</p><p>I think some PE scenarios require heftier DOM changes—I’ve talked a bit about the tension between SSR and PE before—I think this assists nicely there</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560456,
-			"parentId": 0,
-			"url": "https://c.im/@matthewp/109350169042576188",
-			"author": {
-				"name": "Matthew Phillips",
-				"url": "https://c.im/@matthewp",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
-			},
-			"date": "2022-11-16T04:26:03.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I like to think I'm a pragmatist so I'm not really all-in on anything.</p><p>But when I say I don't understand I really do mean I don't understand, not that I disagree with it. I don't understand what scenario exists that you would want a component to not hydrate until you do something else. That's what I asked in the proposal thread but never got a reply.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560457,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109350181254757083",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2022-11-16T04:29:09.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I’m confused—isn’t that the point of islands? Arbitrary conditions on “hydrating” child content?</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560475,
-			"parentId": 0,
-			"url": "https://c.im/@matthewp/109350208092917993",
-			"author": {
-				"name": "Matthew Phillips",
-				"url": "https://c.im/@matthewp",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
-			},
-			"date": "2022-11-16T04:35:59.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ok, so you are using defer-hydration so that if you have a on:idle and on:visible on the same page, the visible one will continue to be delayed. </p><p>To me, I think of the directives as \"fastest wins\" and I don't necessarily want 2 of the same components to hydrate at different times.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560454,
-			"parentId": 0,
-			"url": "https://c.im/@matthewp/109350212630756793",
-			"author": {
-				"name": "Matthew Phillips",
-				"url": "https://c.im/@matthewp",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
-			},
-			"date": "2022-11-16T04:37:08.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> It's more of wanting to delay the loading and JS execution. Once that's happened then you might as well hydrate *all* of the component instances. I haven't thought of a reason to not hydrate a component who's code is loaded.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560455,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109350222321817499",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2022-11-16T04:39:36.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> ahh, I see. Yeah I’m not sure I agree with that (yet?)</p><p>The implementation I added for `&lt;is-land on:idle on:visible&gt;` is that it won’t remove `defer-hydration` attribute until both conditions are met—I’d absolutely want the island to be in full control over its children (even if another distinct island defines the same custom element)</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560473,
-			"parentId": 0,
-			"url": "https://c.im/@matthewp/109350281062291536",
-			"author": {
-				"name": "Matthew Phillips",
-				"url": "https://c.im/@matthewp",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
-			},
-			"date": "2022-11-16T04:54:32.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> From my perspective, a web component should only control its shadow dom and &lt;slot&gt;. If it is controlling what is inside of that slot there's a coupling problem. There are some rare exceptions.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560474,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109350392379215422",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2022-11-16T05:22:51.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I guess I’m making the case that `&lt;is-land&gt;` as a web component is an exception to that rule!</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560471,
-			"parentId": 0,
-			"url": "https://c.im/@matthewp/109350405568533088",
-			"author": {
-				"name": "Matthew Phillips",
-				"url": "https://c.im/@matthewp",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
-			},
-			"date": "2022-11-16T05:26:12.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Yeah, for sure. I still don't see the use-case though 😆  What is the scenario where you want to hydrate &lt;my-component&gt; in one island but delay its hydration in a different island?</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560472,
-			"parentId": 0,
-			"url": "https://c.im/@matthewp/109350421350183114",
-			"author": {
-				"name": "Matthew Phillips",
-				"url": "https://c.im/@matthewp",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
-			},
-			"date": "2022-11-16T05:30:13.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I think one difference is you are thinking about it from the perspective of the author of &lt;is-land&gt; and I'm thinking about it from the perspective of the &lt;my-component&gt; author.</p><p>As a component author, conforming to the &lt;is-land&gt; wishes isn't enough of a reason. I need a real use-case.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560461,
-			"parentId": 0,
-			"url": "https://c.im/@matthewp/109350436642787489",
-			"author": {
-				"name": "Matthew Phillips",
-				"url": "https://c.im/@matthewp",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
-			},
-			"date": "2022-11-16T05:34:06.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> As a nit, the article calls this a \"community-agreed-upon draft standard\", but it's not community agreed upon. It's an open proposal with some (but not a lot) of feedback. Not yet merged and agreed upon.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560453,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109350460635727943",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2022-11-16T05:40:12.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> it’s ok! We can disagree! 👍🏻</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560469,
-			"parentId": 0,
-			"url": "https://c.im/@matthewp/109350487363362476",
-			"author": {
-				"name": "Matthew Phillips",
-				"url": "https://c.im/@matthewp",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
-			},
-			"date": "2022-11-16T05:47:00.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Of course, but I'm not sure what we're disagreeing on. Is the reason to delay hydration just because that's what &lt;is-land&gt;'s API wants to happen? I'm genuinely just trying to understand.</p><p>I like to think about WCs in terms of \"what would native elements do\". Would a native element defer hydration based on a blanket attribute? I don't think so! They might delay it given a specific reason, but that reason is part of the element's API, not a global option.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1560470,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109350498381166962",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2022-11-16T05:49:48.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I don’t think it’s much different than defer for script or loading for img!</p>",
 			"type": "reply",
 			"via": "webmention"
 		}

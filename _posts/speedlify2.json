@@ -15,6 +15,20 @@
 			"via": "webmention"
 		},
 		{
+			"id": 2026623,
+			"parentId": 0,
+			"url": "https://rmendes.net/replies/2026/08/28/bc0e0/",
+			"author": {
+				"name": "Ricardo Mendes",
+				"url": "https://rmendes.net",
+				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
+			},
+			"date": "2026-08-28T07:32:58.000Z",
+			"content": "<p>I like this, might have to rework my Eleventy theme to increase my score :)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
 			"id": 2026650,
 			"parentId": 0,
 			"url": "https://bsky.app/profile/moogento.bsky.social/post/3mu5d3qnnzu2k",
@@ -25,20 +39,6 @@
 			},
 			"date": "2026-08-28T12:05:06.000Z",
 			"content": "It&apos;s a useful safeguard because regressions often arrive with a template change or third-party tag, not a code deploy.",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 2026623,
-			"parentId": 0,
-			"url": "https://rmendes.net/replies/2026/08/28/bc0e0/",
-			"author": {
-				"name": "Ricardo Mendes",
-				"url": "https://rmendes.net",
-				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
-			},
-			"date": "2026-08-28T12:32:58.000Z",
-			"content": "<p>I like this, might have to rework my Eleventy theme to increase my score :)</p>",
 			"type": "reply",
 			"via": "webmention"
 		},
@@ -85,6 +85,20 @@
 			"via": "webmention"
 		},
 		{
+			"id": 2027987,
+			"parentId": 0,
+			"url": "https://rmendes.net/photos/2026/09/01/8815d/",
+			"author": {
+				"name": "Ricardo Mendes",
+				"url": "https://rmendes.net",
+				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
+			},
+			"date": "2026-09-01T17:34:38.000Z",
+			"content": "<p>I have been working on a <a href=\"https://rmendes.net/categories/eleventy/\" class=\"p-category\">#Eleventy</a> 4 theme for <a href=\"https://rmendes.net/categories/indiekit/\" class=\"p-category\">#Indiekit</a> and yes I was pleasingly surprised to see it work out of the box with the current “eleventy-preset” core indiekit package (its supposed to be Eleventy 3.x.x) My inspiration was onbviously Zach Leatherman own <a href=\"https://www.zachleat.com/web/speedlify2/\">Eleventy 4 theme</a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
 			"id": 2028023,
 			"parentId": 0,
 			"url": "https://bsky.app/profile/zachleat.com/post/3mui5mpi6vk2v",
@@ -96,20 +110,6 @@
 			"date": "2026-09-01T19:26:30.000Z",
 			"content": "now that’s a good looking web site! ????\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/speedlify2/\"></a>",
 			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 2027987,
-			"parentId": 0,
-			"url": "https://rmendes.net/photos/2026/09/01/8815d/",
-			"author": {
-				"name": "Ricardo Mendes",
-				"url": "https://rmendes.net",
-				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
-			},
-			"date": "2026-09-01T22:34:38.000Z",
-			"content": "<p>I have been working on a <a href=\"https://rmendes.net/categories/eleventy/\" class=\"p-category\">#Eleventy</a> 4 theme for <a href=\"https://rmendes.net/categories/indiekit/\" class=\"p-category\">#Indiekit</a> and yes I was pleasingly surprised to see it work out of the box with the current “eleventy-preset” core indiekit package (its supposed to be Eleventy 3.x.x) My inspiration was onbviously Zach Leatherman own <a href=\"https://www.zachleat.com/web/speedlify2/\">Eleventy 4 theme</a></p>",
-			"type": "mention",
 			"via": "webmention"
 		}
 	],

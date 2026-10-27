@@ -859,6 +859,20 @@
 			"via": "webmention"
 		},
 		{
+			"id": 1346313,
+			"parentId": 0,
+			"url": "https://diaspodon.fr/@mdr/107739937298345987",
+			"author": {
+				"name": "Cacahuète et nougat",
+				"url": "https://diaspodon.fr/@mdr",
+				"avatarUrl": "https://avatars.webmention.io/mamot.fr/19b769af0cead8c6e280103f17b6f6ae26de96de707b72f6bd685464cb5fbccf.jpg"
+			},
+			"date": "2022-02-04T13:22:56.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> mince, c'est tombé en marche. Il doit y avoir un bug 😄</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
 			"id": 1346358,
 			"parentId": 0,
 			"url": "https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/",
@@ -889,20 +903,6 @@
 			"date": "2022-02-04T14:35:58.000Z",
 			"content": "",
 			"type": "mention",
-			"via": "webmention"
-		},
-		{
-			"id": 1346313,
-			"parentId": 0,
-			"url": "https://diaspodon.fr/@mdr/107739937298345987",
-			"author": {
-				"name": "Cacahuète et nougat",
-				"url": "https://diaspodon.fr/@mdr",
-				"avatarUrl": "https://avatars.webmention.io/mamot.fr/19b769af0cead8c6e280103f17b6f6ae26de96de707b72f6bd685464cb5fbccf.jpg"
-			},
-			"date": "2022-02-04T19:22:56.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> mince, c'est tombé en marche. Il doit y avoir un bug 😄</p>",
-			"type": "reply",
 			"via": "webmention"
 		},
 		{
@@ -3513,7 +3513,7 @@
 		{
 			"id": 1338629,
 			"url": "https://nicolas-hoizey.com/links/2022/01/26/trailing-slashes-on-urls-contentious-or-settled/",
-			"date": "2022-01-26T06:00:00.000Z",
+			"date": "2022-01-26T00:00:00.000Z",
 			"author": {},
 			"via": "webmention"
 		}

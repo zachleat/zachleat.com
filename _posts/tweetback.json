@@ -1,6 +1,20 @@
 {
 	"comments": [
 		{
+			"id": 1571089,
+			"parentId": 0,
+			"url": "https://mamot.fr/@nhoizey/109427717931812928",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://mamot.fr/@nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5fa24c7dbcb46640e1137d65e156fbcb15bc2e3759135ed7481ae94ace2e80fb.jpg"
+			},
+			"date": "2022-11-29T15:07:45.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> hi! 😅</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
 			"id": 1571238,
 			"parentId": 0,
 			"url": "https://twitter.com/pablolarah/status/1597648420084162560",
@@ -29,20 +43,6 @@
 			"via": "webmention"
 		},
 		{
-			"id": 1571089,
-			"parentId": 0,
-			"url": "https://mamot.fr/@nhoizey/109427717931812928",
-			"author": {
-				"name": "Nicolas Hoizey",
-				"url": "https://mamot.fr/@nhoizey",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5fa24c7dbcb46640e1137d65e156fbcb15bc2e3759135ed7481ae94ace2e80fb.jpg"
-			},
-			"date": "2022-11-29T21:07:45.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> hi! 😅</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
 			"id": 1571710,
 			"parentId": 0,
 			"url": "https://fosstodon.org/@ru/109430963810625478",
@@ -51,7 +51,7 @@
 				"url": "https://fosstodon.org/@ru",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2a0fe199de8d72957f184493067247d1fcba2ffa38c54c8d40e8c16b014bb99d.jpg"
 			},
-			"date": "2022-11-30T10:53:13.000Z",
+			"date": "2022-11-30T04:53:13.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> okay but what if you like...you deleted them every 7 days for years.</p><p>can someone hack twitter please. i need my \"deleted\" tweets.</p><p><span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span></p>",
 			"type": "reply",
 			"via": "webmention"
@@ -65,7 +65,7 @@
 				"url": "https://sfba.social/@fonts",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/85c03db8c39dfbac00d4887e63b5466baa4e9fafd5e273fecd4b815bacba6839.png"
 			},
-			"date": "2022-11-30T13:24:17.000Z",
+			"date": "2022-11-30T07:24:17.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> Dumb question incoming! There’s no way to look through the whole archive by year or month at all is there?</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -79,7 +79,7 @@
 				"url": "https://tech.lgbt/@Marco",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/63fe234da51f526afb7486fd132f1b36579ef726cff38acedabbf4ac222b2556.jpg"
 			},
-			"date": "2022-11-30T14:01:28.000Z",
+			"date": "2022-11-30T08:01:28.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> I tried running this yesterday, and while it imported all tweets into the database, after I did some juggling with database/tweets.js, database/tweets-part1.js, and database/tweets-part2.js, the actual building of the site failed after the passthrough copy steps with the first template not being written due to the tweet object in src/tweet.js line 150 not being populated. I did put my username in _data/metadata.js. Is database/tweets.js still needed now?</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -121,7 +121,7 @@
 				"url": "https://medic.cafe/@mikka",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ca86b4f26a2f6abff309c1ba61062cc4b3b2b7939dd7a76b1f330824e13ff457.jpg"
 			},
-			"date": "2022-12-17T01:16:18.000Z",
+			"date": "2022-12-16T19:16:18.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span></p><p>When is the last time I told you, you're the GOAT? Seriously, man, you are. Do me a favor and relax over the holidays? The past year was a flurry of \"damn, 11ty is getting better and better,\" even heroes need rest.</p><p><span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span></p>",
 			"type": "reply",
 			"via": "webmention"
@@ -135,7 +135,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2022-12-17T01:20:59.000Z",
+			"date": "2022-12-16T19:20:59.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://medic.cafe/@mikka\" class=\"u-url\">@<span>mikka</span></a></span> hah! Appreciate it—happy to be doing what I love over here ❤️ but yes I do need a bit of time off too 🙌🏻</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -149,7 +149,7 @@
 				"url": "https://medic.cafe/@mikka",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ca86b4f26a2f6abff309c1ba61062cc4b3b2b7939dd7a76b1f330824e13ff457.jpg"
 			},
-			"date": "2022-12-17T14:17:07.000Z",
+			"date": "2022-12-17T08:17:07.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span></p><p>Done! <a href=\"https://mikka.md/tweet/\"><span>https://</span><span>mikka.md/tweet/</span><span></span></a> (I guess I'll take the \"starter project\" part seriously and turn it into something a little more Mikka-style whenever I don't feel like playing WoW or am traveling.)</p><p><span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span></p>\n<a href=\"https://mikka.md/tweet/\">medimikka’s Twitter Archive</a>",
 			"type": "reply",
 			"via": "webmention"
@@ -177,7 +177,7 @@
 				"url": "https://front-end.social/@rem",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ccabb9da7d88753b17f4ecfc3146a48a026aac08cf335108f7632683fbbe3bd8.jpg"
 			},
-			"date": "2022-12-30T22:50:03.000Z",
+			"date": "2022-12-30T16:50:03.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@samkap\" class=\"u-url\">@<span>samkap</span></a></span> cheers, I had a feeling it had a <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> shape to it 🙏</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/tweetback/\"></a>",
 			"type": "reply",
 			"via": "webmention"
@@ -219,7 +219,7 @@
 				"url": "https://www.ciccarello.me/",
 				"avatarUrl": "https://avatars.webmention.io/secure.gravatar.com/7fc3ff82ad41c85cfaa99d5dbda0857d55fc2c4fb4bdcfd23dc1fbe0125d7711.jpg"
 			},
-			"date": "2025-03-12T00:35:34.000Z",
+			"date": "2025-03-11T19:35:34.000Z",
 			"content": "<p>I used my own process (which I should probably document) but I’ve also heard good things about <a href=\"https://www.zachleat.com/web/tweetback/\">Tweetback</a> (<a href=\"https://github.com/tweetback/tweetback\">GitHub link</a>).</p>",
 			"type": "reply",
 			"via": "webmention"

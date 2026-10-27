@@ -9,7 +9,7 @@
 				"url": "https://mastodon.social/@sil",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/695200652a6c13aec45b134117c21f1a6fbb769eec8f9bef8d49066278c6d655.png"
 			},
-			"date": "2023-04-08T01:19:48.000Z",
+			"date": "2023-04-07T20:19:48.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I was thinking, what the hell is this webc thing? Browsers do this now? And then I realised what it is :) Maybe the pros and cons section should have “requires a build step” item and maybe a “requires 11ty” item? But that aside, this is neat and a really useful summary, thank you. I didn’t realise that the declarative shadow root stuff is pretty much usable now!</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -23,7 +23,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-04-08T01:27:35.000Z",
+			"date": "2023-04-07T20:27:35.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@sil\" class=\"u-url\">@<span>sil</span></a></span> Good feedback, thank you!</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -37,7 +37,7 @@
 				"url": "https://hachyderm.io/@hi_mayank",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e3a2d8c1795a2b30e0e56aca6eff2963ebb01c7bce1d4db277cf433f60d995d9.jpg"
 			},
-			"date": "2023-04-08T01:59:06.000Z",
+			"date": "2023-04-07T20:59:06.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> one thing i'm looking forward to in `@scope` is the concept of a \"lower boundary\" which prevents styles from leaking into children</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -51,7 +51,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-04-08T02:01:17.000Z",
+			"date": "2023-04-07T21:01:17.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@hi_mayank\" class=\"u-url\">@<span>hi_mayank</span></a></span> *yes* that will be excellent! cc <span class=\"h-card\"><a href=\"https://front-end.social/@mia\" class=\"u-url\">@<span>mia</span></a></span></p>",
 			"type": "reply",
 			"via": "webmention"
@@ -65,7 +65,7 @@
 				"url": "https://mastodon.social/@westbrook",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f845e34d9338fcdd255785cb099cce719f19f34f6625aec1749e30cade2e0b79.jpg"
 			},
-			"date": "2023-04-08T18:05:36.000Z",
+			"date": "2023-04-08T13:05:36.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I’d love to know more about the actual time difference to go from three starts to one in the performance section for DSD to CSSD. I get the star cost of requiring JS, but for such a trivial component, I’d say the difference would be negligible and for more complex components I’ve seen, with out numbers to share right now 😓, CSSD be as fast or faster than DSD. </p><p>As in all things, the “it depends” is strong with this one, I know.</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -79,7 +79,7 @@
 				"url": "https://mastodon.social/@westbrook",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f845e34d9338fcdd255785cb099cce719f19f34f6625aec1749e30cade2e0b79.jpg"
 			},
-			"date": "2023-04-08T18:08:16.000Z",
+			"date": "2023-04-08T13:08:16.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> It would also be cool to see if the duplication costs you‘ve listed are dev time or view time expenses. With a tool, like 11ty, you’re not quoted to duplicate that data yourself and with gzip/brotli the actual file size costs of that duplication seem to be mostly nullified?</p><p>I’m definitely pushing for shareable stylesheets in this area, the new @​sheets proposal should help here, but there may still one piece of API missing if you want those @​sheets to be in an inline &lt;style&gt; tag.</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -93,7 +93,7 @@
 				"url": "https://mastodon.social/@westbrook",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f845e34d9338fcdd255785cb099cce719f19f34f6625aec1749e30cade2e0b79.jpg"
 			},
-			"date": "2023-04-08T18:09:44.000Z",
+			"date": "2023-04-08T13:09:44.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@hi_mayank\" class=\"u-url\">@<span>hi_mayank</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> is this not what the next level of shadow DOM is for!?! 🤪</p>",
 			"type": "reply",
 			"via": "webmention"

@@ -473,6 +473,19 @@
 			"via": "webmention"
 		},
 		{
+			"id": 2041976,
+			"parentId": 0,
+			"url": "https://ellyloel.com/ai-make-the-website-good-zachleat-com/",
+			"author": {
+				"name": "Elly Loel",
+				"url": "https://ellyloel.com"
+			},
+			"date": "2026-10-07T00:00:00.000Z",
+			"content": "<blockquote><p>A post by Zach Leatherman (zachleat)</p>\n</blockquote><a href=\"https://www.zachleat.com/web/ai-websites/\" class=\"u-bookmark-of h-cite\">\n\t\t</a><h2><a href=\"https://www.zachleat.com/web/ai-websites/\" class=\"u-bookmark-of h-cite\">View link</a></h2><a href=\"https://www.zachleat.com/web/ai-websites/\" class=\"u-bookmark-of h-cite\">\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t<img alt=\"\" class=\"u-photo\" src=\"https://api.microlink.io?url=https://www.zachleat.com/web/ai-websites/&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url\" width=\"649\" height=\"406\" />\n\t\t\n\t</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
 			"id": 2038302,
 			"parentId": 0,
 			"url": "https://fediverse.zachleat.com/@zachleat/117397247655250714",
@@ -484,19 +497,6 @@
 			"date": "2026-10-07T02:23:58.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@rem\" class=\"u-url\">@<span>rem</span></a></span> hey thanks!! (you’re not as slow as AI company websites)</p>\n  <a class=\"u-mention\" href=\"https://www.zachleat.com/web/ai-websites/\"></a>",
 			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 2041976,
-			"parentId": 0,
-			"url": "https://ellyloel.com/ai-make-the-website-good-zachleat-com/",
-			"author": {
-				"name": "Elly Loel",
-				"url": "https://ellyloel.com"
-			},
-			"date": "2026-10-07T05:00:00.000Z",
-			"content": "<blockquote><p>A post by Zach Leatherman (zachleat)</p>\n</blockquote><a href=\"https://www.zachleat.com/web/ai-websites/\" class=\"u-bookmark-of h-cite\">\n\t\t</a><h2><a href=\"https://www.zachleat.com/web/ai-websites/\" class=\"u-bookmark-of h-cite\">View link</a></h2><a href=\"https://www.zachleat.com/web/ai-websites/\" class=\"u-bookmark-of h-cite\">\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t<img alt=\"\" class=\"u-photo\" src=\"https://api.microlink.io?url=https://www.zachleat.com/web/ai-websites/&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url\" width=\"649\" height=\"406\" />\n\t\t\n\t</a>",
-			"type": "mention",
 			"via": "webmention"
 		},
 		{
@@ -575,6 +575,17 @@
 				"name": "Kool Mo Di",
 				"url": "https://mas.to/@kmck",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/67cedb5d864fb06704c878241a35cf0e67e4a82197cd0799ccc76b955dbf2ce2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2034388,
+			"url": "https://feed.city/c/dan/likes/feed_entries/1583657",
+			"date": "2026-09-22T14:40:40.000Z",
+			"author": {
+				"name": "dan",
+				"url": "https://feed.city/c/dan",
+				"avatarUrl": "https://avatars.webmention.io/danielpietzsch.com/0d424d0e6dafcbee01bd6fab659d270346609890eee0af4e7aee6a707488efdc.jpg"
 			},
 			"via": "webmention"
 		},
@@ -1125,17 +1136,6 @@
 				"name": "Sev",
 				"url": "https://bsky.app/profile/severin-bruhat.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgncx32ae6322vtqpmp4fehx/bafkreicwo3zxkvadymzwe7lv3bdl6dp52dwllpht7oti6c767qeeg76j64"
-			},
-			"via": "webmention"
-		},
-		{
-			"id": 2034388,
-			"url": "https://feed.city/c/dan/likes/feed_entries/1583657",
-			"date": "2026-09-22T19:40:40.000Z",
-			"author": {
-				"name": "dan",
-				"url": "https://feed.city/c/dan",
-				"avatarUrl": "https://avatars.webmention.io/danielpietzsch.com/0d424d0e6dafcbee01bd6fab659d270346609890eee0af4e7aee6a707488efdc.jpg"
 			},
 			"via": "webmention"
 		},

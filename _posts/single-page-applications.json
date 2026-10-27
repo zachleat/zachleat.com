@@ -1,6 +1,76 @@
 {
 	"comments": [
 		{
+			"id": 1652262,
+			"parentId": 0,
+			"url": "https://notacult.social/@darth_mall/110096673669073340",
+			"author": {
+				"name": "Evan",
+				"url": "https://notacult.social/@darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
+			},
+			"date": "2023-03-27T18:32:00.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> stop being so reasonable.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652226,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/110096681921965559",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-03-27T18:34:05.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> never!! 😅</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652225,
+			"parentId": 0,
+			"url": "https://mas.to/@j9t/110097044435790068",
+			"author": {
+				"name": "Jens Oliver Meiert",
+				"url": "https://mas.to/@j9t",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a52f13085371c9f82b2af78bc603032b54283639c667d2c337a2da9c7182f2dc.jpg"
+			},
+			"date": "2023-03-27T20:06:17.000Z",
+			"content": "<p>“You can’t <a href=\"https://mas.to/tags/JavaScript\">#<span>JavaScript</span></a> your way out of an excess-JavaScript problem.” ❤️</p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/javascript\">javascript</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652227,
+			"parentId": 0,
+			"url": "https://mastodon.social/@dennisl/110097238946411405",
+			"author": {
+				"name": "DennisL",
+				"url": "https://mastodon.social/@dennisl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9cd2fe81d680d7d6d44043f08a639b7f1045fd0a9428b403f1f2d190e497241e.jpg"
+			},
+			"date": "2023-03-27T20:55:45.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Another good alternative is old-school AJAX/XMLHttpRequest – which, unfortunately isn’t popular anymore. <span class=\"h-card\"><a href=\"https://front-end.social/@matuzo\" class=\"u-url\">@<span>matuzo</span></a></span></p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652228,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/110097245413245286",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-03-27T20:57:24.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@dennisl\" class=\"u-url\">@<span>dennisl</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@matuzo\" class=\"u-url\">@<span>matuzo</span></a></span> still popular! But also kinda rebranded <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API\"><span>https://</span><span>developer.mozilla.org/en-US/do</span><span>cs/Web/API/Fetch_API</span></a></p>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API\">Fetch API - Web APIs | MDN</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
 			"id": 1652207,
 			"parentId": 0,
 			"url": "https://twitter.com/hn_frontpage/status/1640465485799075842",
@@ -136,34 +206,6 @@
 			"via": "webmention"
 		},
 		{
-			"id": 1652262,
-			"parentId": 0,
-			"url": "https://notacult.social/@darth_mall/110096673669073340",
-			"author": {
-				"name": "Evan",
-				"url": "https://notacult.social/@darth_mall",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
-			},
-			"date": "2023-03-27T23:32:00.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> stop being so reasonable.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652226,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/110096681921965559",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-03-27T23:34:05.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> never!! 😅</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
 			"id": 1652319,
 			"parentId": 0,
 			"url": "https://twitter.com/hackernewsj/status/1640511689891229700",
@@ -189,48 +231,6 @@
 			"date": "2023-03-28T00:32:33.000Z",
 			"content": "Defaulting on Single Page Applications <a href=\"https://www.zachleat.com/web/single-page-applications/\">zachleat.com/web/single-pag…</a> (<a href=\"https://news.ycombinator.com/item?id=35332314\">news.ycombinator.com/item?id=353323…</a>)",
 			"type": "mention",
-			"via": "webmention"
-		},
-		{
-			"id": 1652225,
-			"parentId": 0,
-			"url": "https://mas.to/@j9t/110097044435790068",
-			"author": {
-				"name": "Jens Oliver Meiert",
-				"url": "https://mas.to/@j9t",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a52f13085371c9f82b2af78bc603032b54283639c667d2c337a2da9c7182f2dc.jpg"
-			},
-			"date": "2023-03-28T01:06:17.000Z",
-			"content": "<p>“You can’t <a href=\"https://mas.to/tags/JavaScript\">#<span>JavaScript</span></a> your way out of an excess-JavaScript problem.” ❤️</p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/javascript\">javascript</a>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652227,
-			"parentId": 0,
-			"url": "https://mastodon.social/@dennisl/110097238946411405",
-			"author": {
-				"name": "DennisL",
-				"url": "https://mastodon.social/@dennisl",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9cd2fe81d680d7d6d44043f08a639b7f1045fd0a9428b403f1f2d190e497241e.jpg"
-			},
-			"date": "2023-03-28T01:55:45.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Another good alternative is old-school AJAX/XMLHttpRequest – which, unfortunately isn’t popular anymore. <span class=\"h-card\"><a href=\"https://front-end.social/@matuzo\" class=\"u-url\">@<span>matuzo</span></a></span></p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652228,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/110097245413245286",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-03-28T01:57:24.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@dennisl\" class=\"u-url\">@<span>dennisl</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@matuzo\" class=\"u-url\">@<span>matuzo</span></a></span> still popular! But also kinda rebranded <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API\"><span>https://</span><span>developer.mozilla.org/en-US/do</span><span>cs/Web/API/Fetch_API</span></a></p>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API\">Fetch API - Web APIs | MDN</a>",
-			"type": "reply",
 			"via": "webmention"
 		},
 		{
@@ -331,6 +331,286 @@
 			"via": "webmention"
 		},
 		{
+			"id": 1652916,
+			"parentId": 0,
+			"url": "https://mastodon.cc/@jgarber/110102613646238508",
+			"author": {
+				"name": "Jason Garber",
+				"url": "https://mastodon.cc/@jgarber",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bdb2897cbb035e7a806821d85c060a5d1cd6706b8c0a6c61b2816c0eb7d03dac.jpg"
+			},
+			"date": "2023-03-28T19:42:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p>💎 “I’m desperately envious of his beard.”</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652917,
+			"parentId": 0,
+			"url": "https://notacult.social/@darth_mall/110102622703749473",
+			"author": {
+				"name": "Evan",
+				"url": "https://notacult.social/@darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
+			},
+			"date": "2023-03-28T19:44:55.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <a href=\"https://macwright.com/2022/09/15/hacker-news.html\"><span>https://</span><span>macwright.com/2022/09/15/hacke</span><span>r-news.html</span></a></p>\n<a href=\"https://macwright.com/2022/09/15/hacker-news.html\">Hacker News</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652918,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/110102634928578308",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-03-28T19:48:01.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> ha! I also liked this one <a href=\"https://www.youtube.com/watch?v=ga_byUbqvCc\"><span>https://www.</span><span>youtube.com/watch?v=ga_byUbqvC</span><span>c</span></a></p>\n<a href=\"https://www.youtube.com/watch?v=ga_byUbqvCc\">Heydon Pickering: Please Disable JavaScript To View This Site</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652915,
+			"parentId": 0,
+			"url": "https://notacult.social/@darth_mall/110102642716665721",
+			"author": {
+				"name": "Evan",
+				"url": "https://notacult.social/@darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
+			},
+			"date": "2023-03-28T19:50:00.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I had an extension installed to disable JS just for his site 😁</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652919,
+			"parentId": 0,
+			"url": "https://mastodon.social/@passle/110102656997761195",
+			"author": {
+				"name": "passle",
+				"url": "https://mastodon.social/@passle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6450916db217edb5ef8a9cc9b9c30022e91a321e178e498340d1d7170ddc6dc2.jpg"
+			},
+			"date": "2023-03-28T19:53:38.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Lol at the react is only 5KB. Wait until they figure out the size of react-dom</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652920,
+			"parentId": 0,
+			"url": "https://front-end.social/@mxbck/110102659305172388",
+			"author": {
+				"name": "Max Böck",
+				"url": "https://front-end.social/@mxbck",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9106ed0ced6012e33cc0c4dffa224225fdf1bd29d370bf3e91ad36959024d5e2.jpg"
+			},
+			"date": "2023-03-28T19:54:13.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span>  API? Are they talking about view transitions? But that doesn't make any sen... Oh right  hackernews, my bad.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652922,
+			"parentId": 0,
+			"url": "https://mstdn.social/@scottjehl/110102682995244461",
+			"author": {
+				"name": "Scott Jehl",
+				"url": "https://mstdn.social/@scottjehl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/99f0ac90791584a2bd2ba3670e448e1970780e2b34d0bd67424987055b8484a2.jpg"
+			},
+			"date": "2023-03-28T20:00:15.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> exhausting</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652921,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/110102683362061626",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-03-28T20:00:20.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@mxbck\" class=\"u-url\">@<span>mxbck</span></a></span> The important context here is that SPA &lt;=&gt; website 🫠</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652923,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/110102687622726188",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-03-28T20:01:25.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@scottjehl\" class=\"u-url\">@<span>scottjehl</span></a></span> is my skin hardening or am I just more dead inside 🙃</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652914,
+			"parentId": 0,
+			"url": "https://front-end.social/@mxbck/110102707557263092",
+			"author": {
+				"name": "Max Böck",
+				"url": "https://front-end.social/@mxbck",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9106ed0ced6012e33cc0c4dffa224225fdf1bd29d370bf3e91ad36959024d5e2.jpg"
+			},
+			"date": "2023-03-28T20:06:29.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> yea right. I guess \"Google's propaganda runs deep\"</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652926,
+			"parentId": 0,
+			"url": "https://indieweb.social/@philhawksworth/110102709852094319",
+			"author": {
+				"name": "Phil Hawksworth",
+				"url": "https://indieweb.social/@philhawksworth",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1c0df49d4293d2885810cbdc4ff4a7677cad6552ce77e297570262f2ea70caba.jpg"
+			},
+			"date": "2023-03-28T20:07:04.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> DEEEEEEP sigh.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652990,
+			"parentId": 0,
+			"url": "https://notacult.social/@darth_mall/110102715278600546",
+			"author": {
+				"name": "Evan",
+				"url": "https://notacult.social/@darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
+			},
+			"date": "2023-03-28T20:08:27.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@mxbck\" class=\"u-url\">@<span>mxbck</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> wait, am I missing something?</p><p>I thought view transitions were a) currently only in Chrome and behind a flag, and b) not available across navigations yet.</p><p>Is that wrong?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652992,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/110102715771114686",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-03-28T20:08:35.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@philhawksworth\" class=\"u-url\">@<span>philhawksworth</span></a></span> to be fair not all of the comments were bad!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652991,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/110102731555298450",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-03-28T20:12:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@mxbck\" class=\"u-url\">@<span>mxbck</span></a></span> you’re trying to make sense of nonsense evan 😅</p><p>the way to make a website available to any browser is to use web standards 👀</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1653004,
+			"parentId": 0,
+			"url": "https://mstdn.social/@scottjehl/110102849446738279",
+			"author": {
+				"name": "Scott Jehl",
+				"url": "https://mstdn.social/@scottjehl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/99f0ac90791584a2bd2ba3670e448e1970780e2b34d0bd67424987055b8484a2.jpg"
+			},
+			"date": "2023-03-28T20:42:34.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Building simple things the complicated way feels smarter I think. It fools me sometimes too.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1653005,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/110102862392626472",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-03-28T20:45:52.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@scottjehl\" class=\"u-url\">@<span>scottjehl</span></a></span> Well said (and same!)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1653006,
+			"parentId": 0,
+			"url": "https://social.lol/@cory/110102922830646410",
+			"author": {
+				"name": "Cory Dransfeldt :prami:",
+				"url": "https://social.lol/@cory",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/74e1e000320afaeb722ec7129395df6860f07a6706413bc7c6ed627951faa6cf.png"
+			},
+			"date": "2023-03-28T21:01:14.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mstdn.social/@scottjehl\" class=\"u-url\">@<span>scottjehl</span></a></span> tempted to get this as a tattoo</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1652994,
+			"parentId": 0,
+			"url": "https://toot.cafe/@slightlyoff/110102940806231742",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://toot.cafe/@slightlyoff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
+			},
+			"date": "2023-03-28T21:05:48.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> the parallels between JS-community '23 and Flash community circa '07 are *intense*</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1653309,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/110103007944381274",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-03-28T21:22:53.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://toot.cafe/@slightlyoff\" class=\"u-url\">@<span>slightlyoff</span></a></span> you may enjoy this 2023 post from <span class=\"h-card\"><a href=\"https://mastodon.social/@davatron5000\" class=\"u-url\">@<span>davatron5000</span></a></span> (I know I did) <a href=\"https://daverupert.com/2023/02/the-case-for-flex-applications/\"><span>https://</span><span>daverupert.com/2023/02/the-cas</span><span>e-for-flex-applications/</span></a></p>\n<a href=\"https://daverupert.com/2023/02/the-case-for-flex-applications/\">The case for Flex applications</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1653314,
+			"parentId": 0,
+			"url": "https://notacult.social/@darth_mall/110103142789769353",
+			"author": {
+				"name": "Evan",
+				"url": "https://notacult.social/@darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
+			},
+			"date": "2023-03-28T21:57:10.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@scottjehl\" class=\"u-url\">@<span>scottjehl</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> relatable</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
 			"id": 1653167,
 			"parentId": 0,
 			"url": "https://twitter.com/icymihn/status/1640842494001704962",
@@ -345,286 +625,6 @@
 			"via": "webmention"
 		},
 		{
-			"id": 1652916,
-			"parentId": 0,
-			"url": "https://mastodon.cc/@jgarber/110102613646238508",
-			"author": {
-				"name": "Jason Garber",
-				"url": "https://mastodon.cc/@jgarber",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bdb2897cbb035e7a806821d85c060a5d1cd6706b8c0a6c61b2816c0eb7d03dac.jpg"
-			},
-			"date": "2023-03-29T00:42:36.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p>💎 “I’m desperately envious of his beard.”</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652917,
-			"parentId": 0,
-			"url": "https://notacult.social/@darth_mall/110102622703749473",
-			"author": {
-				"name": "Evan",
-				"url": "https://notacult.social/@darth_mall",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
-			},
-			"date": "2023-03-29T00:44:55.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <a href=\"https://macwright.com/2022/09/15/hacker-news.html\"><span>https://</span><span>macwright.com/2022/09/15/hacke</span><span>r-news.html</span></a></p>\n<a href=\"https://macwright.com/2022/09/15/hacker-news.html\">Hacker News</a>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652918,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/110102634928578308",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-03-29T00:48:01.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> ha! I also liked this one <a href=\"https://www.youtube.com/watch?v=ga_byUbqvCc\"><span>https://www.</span><span>youtube.com/watch?v=ga_byUbqvC</span><span>c</span></a></p>\n<a href=\"https://www.youtube.com/watch?v=ga_byUbqvCc\">Heydon Pickering: Please Disable JavaScript To View This Site</a>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652915,
-			"parentId": 0,
-			"url": "https://notacult.social/@darth_mall/110102642716665721",
-			"author": {
-				"name": "Evan",
-				"url": "https://notacult.social/@darth_mall",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
-			},
-			"date": "2023-03-29T00:50:00.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I had an extension installed to disable JS just for his site 😁</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652919,
-			"parentId": 0,
-			"url": "https://mastodon.social/@passle/110102656997761195",
-			"author": {
-				"name": "passle",
-				"url": "https://mastodon.social/@passle",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6450916db217edb5ef8a9cc9b9c30022e91a321e178e498340d1d7170ddc6dc2.jpg"
-			},
-			"date": "2023-03-29T00:53:38.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Lol at the react is only 5KB. Wait until they figure out the size of react-dom</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652920,
-			"parentId": 0,
-			"url": "https://front-end.social/@mxbck/110102659305172388",
-			"author": {
-				"name": "Max Böck",
-				"url": "https://front-end.social/@mxbck",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9106ed0ced6012e33cc0c4dffa224225fdf1bd29d370bf3e91ad36959024d5e2.jpg"
-			},
-			"date": "2023-03-29T00:54:13.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span>  API? Are they talking about view transitions? But that doesn't make any sen... Oh right  hackernews, my bad.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652922,
-			"parentId": 0,
-			"url": "https://mstdn.social/@scottjehl/110102682995244461",
-			"author": {
-				"name": "Scott Jehl",
-				"url": "https://mstdn.social/@scottjehl",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/99f0ac90791584a2bd2ba3670e448e1970780e2b34d0bd67424987055b8484a2.jpg"
-			},
-			"date": "2023-03-29T01:00:15.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> exhausting</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652921,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/110102683362061626",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-03-29T01:00:20.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@mxbck\" class=\"u-url\">@<span>mxbck</span></a></span> The important context here is that SPA &lt;=&gt; website 🫠</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652923,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/110102687622726188",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-03-29T01:01:25.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@scottjehl\" class=\"u-url\">@<span>scottjehl</span></a></span> is my skin hardening or am I just more dead inside 🙃</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652914,
-			"parentId": 0,
-			"url": "https://front-end.social/@mxbck/110102707557263092",
-			"author": {
-				"name": "Max Böck",
-				"url": "https://front-end.social/@mxbck",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9106ed0ced6012e33cc0c4dffa224225fdf1bd29d370bf3e91ad36959024d5e2.jpg"
-			},
-			"date": "2023-03-29T01:06:29.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> yea right. I guess \"Google's propaganda runs deep\"</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652926,
-			"parentId": 0,
-			"url": "https://indieweb.social/@philhawksworth/110102709852094319",
-			"author": {
-				"name": "Phil Hawksworth",
-				"url": "https://indieweb.social/@philhawksworth",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1c0df49d4293d2885810cbdc4ff4a7677cad6552ce77e297570262f2ea70caba.jpg"
-			},
-			"date": "2023-03-29T01:07:04.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> DEEEEEEP sigh.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652990,
-			"parentId": 0,
-			"url": "https://notacult.social/@darth_mall/110102715278600546",
-			"author": {
-				"name": "Evan",
-				"url": "https://notacult.social/@darth_mall",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
-			},
-			"date": "2023-03-29T01:08:27.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@mxbck\" class=\"u-url\">@<span>mxbck</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> wait, am I missing something?</p><p>I thought view transitions were a) currently only in Chrome and behind a flag, and b) not available across navigations yet.</p><p>Is that wrong?</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652992,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/110102715771114686",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-03-29T01:08:35.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@philhawksworth\" class=\"u-url\">@<span>philhawksworth</span></a></span> to be fair not all of the comments were bad!</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652991,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/110102731555298450",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-03-29T01:12:36.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://notacult.social/@darth_mall\" class=\"u-url\">@<span>darth_mall</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@mxbck\" class=\"u-url\">@<span>mxbck</span></a></span> you’re trying to make sense of nonsense evan 😅</p><p>the way to make a website available to any browser is to use web standards 👀</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1653004,
-			"parentId": 0,
-			"url": "https://mstdn.social/@scottjehl/110102849446738279",
-			"author": {
-				"name": "Scott Jehl",
-				"url": "https://mstdn.social/@scottjehl",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/99f0ac90791584a2bd2ba3670e448e1970780e2b34d0bd67424987055b8484a2.jpg"
-			},
-			"date": "2023-03-29T01:42:34.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Building simple things the complicated way feels smarter I think. It fools me sometimes too.</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1653005,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/110102862392626472",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-03-29T01:45:52.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@scottjehl\" class=\"u-url\">@<span>scottjehl</span></a></span> Well said (and same!)</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1653006,
-			"parentId": 0,
-			"url": "https://social.lol/@cory/110102922830646410",
-			"author": {
-				"name": "Cory Dransfeldt :prami:",
-				"url": "https://social.lol/@cory",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/74e1e000320afaeb722ec7129395df6860f07a6706413bc7c6ed627951faa6cf.png"
-			},
-			"date": "2023-03-29T02:01:14.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mstdn.social/@scottjehl\" class=\"u-url\">@<span>scottjehl</span></a></span> tempted to get this as a tattoo</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1652994,
-			"parentId": 0,
-			"url": "https://toot.cafe/@slightlyoff/110102940806231742",
-			"author": {
-				"name": "Alex Russell",
-				"url": "https://toot.cafe/@slightlyoff",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
-			},
-			"date": "2023-03-29T02:05:48.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> the parallels between JS-community '23 and Flash community circa '07 are *intense*</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1653309,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/110103007944381274",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-03-29T02:22:53.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://toot.cafe/@slightlyoff\" class=\"u-url\">@<span>slightlyoff</span></a></span> you may enjoy this 2023 post from <span class=\"h-card\"><a href=\"https://mastodon.social/@davatron5000\" class=\"u-url\">@<span>davatron5000</span></a></span> (I know I did) <a href=\"https://daverupert.com/2023/02/the-case-for-flex-applications/\"><span>https://</span><span>daverupert.com/2023/02/the-cas</span><span>e-for-flex-applications/</span></a></p>\n<a href=\"https://daverupert.com/2023/02/the-case-for-flex-applications/\">The case for Flex applications</a>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1653314,
-			"parentId": 0,
-			"url": "https://notacult.social/@darth_mall/110103142789769353",
-			"author": {
-				"name": "Evan",
-				"url": "https://notacult.social/@darth_mall",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
-			},
-			"date": "2023-03-29T02:57:10.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@scottjehl\" class=\"u-url\">@<span>scottjehl</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> relatable</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
 			"id": 1653310,
 			"parentId": 0,
 			"url": "https://mastodon.social/@paulhmason/110104516780681764",
@@ -633,7 +633,7 @@
 				"url": "https://mastodon.social/@paulhmason",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/86be902538356f8147153e1c2e0981dba447cd0fdf33f670b10edd9e0c2a9685.png"
 			},
-			"date": "2023-03-29T08:46:36.000Z",
+			"date": "2023-03-29T03:46:36.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I struggle to stay calm when people compare JavaScript file size with image file size. 😖</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -1793,7 +1793,7 @@
 		{
 			"id": 1652523,
 			"url": "https://adactio.com/links/20049",
-			"date": "2023-03-28T13:21:02.000Z",
+			"date": "2023-03-28T08:21:02.000Z",
 			"author": {
 				"name": "Jeremy Keith",
 				"url": "https://adactio.com/",

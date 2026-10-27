@@ -1,6 +1,104 @@
 {
 	"comments": [
 		{
+			"id": 1629791,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346943845015",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-02-24T19:24:06.000Z",
+			"content": "<p>(it has evolved to its final form: the blog post)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629788,
+			"parentId": 0,
+			"url": "https://mastodon.social/@matthiasott/109921373585782531",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://mastodon.social/@matthiasott",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/692a4ec0d17295cc8035cc276bdf0de1ec88a1103a7a37e586f5b65741bf2380.png"
+			},
+			"date": "2023-02-24T19:30:53.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> (good)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629789,
+			"parentId": 0,
+			"url": "https://toot.cafe/@slightlyoff/109921817406830292",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://toot.cafe/@slightlyoff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
+			},
+			"date": "2023-02-24T21:23:45.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> per other thread, would love to see gzip sizes for default JS, and also, is this a script I can run? If not, would you like for one to exist?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629790,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921852028356948",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-02-24T21:32:33.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://toot.cafe/@slightlyoff\" class=\"u-url\">@<span>slightlyoff</span></a></span> whew, yes—I would love to have this automated.</p><p>I don’t think it would be maintainable to do so, unfortunately, I’d expect a fair bit of churn in framework “Getting Started” happy paths?</p><p>Certainly not worth it for how often I do these (once or twice a year)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629826,
+			"parentId": 0,
+			"url": "https://toot.cafe/@slightlyoff/109921894829002470",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://toot.cafe/@slightlyoff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
+			},
+			"date": "2023-02-24T21:43:26.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> will noodle on it</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629793,
+			"parentId": 0,
+			"url": "https://mastodon.social/@tevo/109921945407561908",
+			"author": {
+				"name": "Steffen",
+				"url": "https://mastodon.social/@tevo",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9974f9a47aa7c3da0e0cca9c35020ca51cd73a2fcaea3b3f51f47807b616e964.png"
+			},
+			"date": "2023-02-24T21:56:18.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Hmmm I guess I have some objections regarding the client side JS part. I think those which ship client side bundles here shouldn’t be compared to those which don’t, just like that. They represent a different architectural style.</p><p>Some words about that … that it’s not apples vs oranges but maybe apples vs pears would be nice. Or about the valid conclusions despite the differences.</p><p>(At least for e.g. SvelteKit, one can just create a pure static html page per static-adapter.)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1630365,
+			"parentId": 0,
+			"url": "https://mastodon.social/@tevo/109921974278005280",
+			"author": {
+				"name": "Steffen",
+				"url": "https://mastodon.social/@tevo",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9974f9a47aa7c3da0e0cca9c35020ca51cd73a2fcaea3b3f51f47807b616e964.png"
+			},
+			"date": "2023-02-24T22:03:38.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Apart from that it’s nice to see those comparisons nevertheless! Thanks!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
 			"id": 1629829,
 			"parentId": 0,
 			"url": "https://www.imoneyhub.com/2023/02/24/the-javascript-site-generator-review-2023/",
@@ -11,6 +109,20 @@
 			"date": "2023-02-24T22:11:30.000Z",
 			"content": "<p>  submitted by   <a href=\"https://www.reddit.com/user/magenta_placenta\"> /u/magenta_placenta </a> <br /><span><a href=\"https://www.zachleat.com/web/site-generator-review/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/javascript/comments/11b395e/the_javascript_site_generator_review_2023/\">[comments]</a></span></p>\n<p><a href=\"https://www.reddit.com/r/javascript/comments/11b395e/the_javascript_site_generator_review_2023/\" style=\"font-style:italic;\">* This article was originally published here</a></p>\n\n\t\t\t\n\t\t\t\t<a href=\"https://www.imoneyhub.com/tag/javascript/\">javascript</a>",
 			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1630366,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109922065210668915",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-02-24T22:26:46.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@tevo\" class=\"u-url\">@<span>tevo</span></a></span> ah—just to be clear I don’t accept “sites versus apps” as a useful dichotomy when building things for the web—and further I would argue that this divide has done great damage!</p><p>I might also say it like this, a bit more cheekily: <a href=\"https://www.zachleat.com/twitter/1539332322549538816/\"><span>https://www.</span><span>zachleat.com/twitter/153933232</span><span>2549538816/</span></a></p>\n<a href=\"https://www.zachleat.com/twitter/1539332322549538816/\">zachleat’s Twitter Archive—№ 43,886</a>",
+			"type": "reply",
 			"via": "webmention"
 		},
 		{
@@ -28,118 +140,6 @@
 			"via": "webmention"
 		},
 		{
-			"id": 1629791,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109921346943845015",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-02-25T01:24:06.000Z",
-			"content": "<p>(it has evolved to its final form: the blog post)</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1629788,
-			"parentId": 0,
-			"url": "https://mastodon.social/@matthiasott/109921373585782531",
-			"author": {
-				"name": "Matthias Ott",
-				"url": "https://mastodon.social/@matthiasott",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/692a4ec0d17295cc8035cc276bdf0de1ec88a1103a7a37e586f5b65741bf2380.png"
-			},
-			"date": "2023-02-25T01:30:53.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> (good)</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1629789,
-			"parentId": 0,
-			"url": "https://toot.cafe/@slightlyoff/109921817406830292",
-			"author": {
-				"name": "Alex Russell",
-				"url": "https://toot.cafe/@slightlyoff",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
-			},
-			"date": "2023-02-25T03:23:45.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> per other thread, would love to see gzip sizes for default JS, and also, is this a script I can run? If not, would you like for one to exist?</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1629790,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109921852028356948",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-02-25T03:32:33.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://toot.cafe/@slightlyoff\" class=\"u-url\">@<span>slightlyoff</span></a></span> whew, yes—I would love to have this automated.</p><p>I don’t think it would be maintainable to do so, unfortunately, I’d expect a fair bit of churn in framework “Getting Started” happy paths?</p><p>Certainly not worth it for how often I do these (once or twice a year)</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1629826,
-			"parentId": 0,
-			"url": "https://toot.cafe/@slightlyoff/109921894829002470",
-			"author": {
-				"name": "Alex Russell",
-				"url": "https://toot.cafe/@slightlyoff",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
-			},
-			"date": "2023-02-25T03:43:26.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> will noodle on it</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1629793,
-			"parentId": 0,
-			"url": "https://mastodon.social/@tevo/109921945407561908",
-			"author": {
-				"name": "Steffen",
-				"url": "https://mastodon.social/@tevo",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9974f9a47aa7c3da0e0cca9c35020ca51cd73a2fcaea3b3f51f47807b616e964.png"
-			},
-			"date": "2023-02-25T03:56:18.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Hmmm I guess I have some objections regarding the client side JS part. I think those which ship client side bundles here shouldn’t be compared to those which don’t, just like that. They represent a different architectural style.</p><p>Some words about that … that it’s not apples vs oranges but maybe apples vs pears would be nice. Or about the valid conclusions despite the differences.</p><p>(At least for e.g. SvelteKit, one can just create a pure static html page per static-adapter.)</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1630365,
-			"parentId": 0,
-			"url": "https://mastodon.social/@tevo/109921974278005280",
-			"author": {
-				"name": "Steffen",
-				"url": "https://mastodon.social/@tevo",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9974f9a47aa7c3da0e0cca9c35020ca51cd73a2fcaea3b3f51f47807b616e964.png"
-			},
-			"date": "2023-02-25T04:03:38.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Apart from that it’s nice to see those comparisons nevertheless! Thanks!</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 1630366,
-			"parentId": 0,
-			"url": "https://fediverse.zachleat.com/@zachleat/109922065210668915",
-			"author": {
-				"name": "Zach Leatherman :11ty:",
-				"url": "https://fediverse.zachleat.com/@zachleat",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
-			},
-			"date": "2023-02-25T04:26:46.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@tevo\" class=\"u-url\">@<span>tevo</span></a></span> ah—just to be clear I don’t accept “sites versus apps” as a useful dichotomy when building things for the web—and further I would argue that this divide has done great damage!</p><p>I might also say it like this, a bit more cheekily: <a href=\"https://www.zachleat.com/twitter/1539332322549538816/\"><span>https://www.</span><span>zachleat.com/twitter/153933232</span><span>2549538816/</span></a></p>\n<a href=\"https://www.zachleat.com/twitter/1539332322549538816/\">zachleat’s Twitter Archive—№ 43,886</a>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
 			"id": 1629894,
 			"parentId": 0,
 			"url": "https://indieweb.social/@brianleroux/109922551996532020",
@@ -148,7 +148,7 @@
 				"url": "https://indieweb.social/@brianleroux",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg"
 			},
-			"date": "2023-02-25T06:30:34.000Z",
+			"date": "2023-02-25T00:30:34.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://bell.bz/@andy\" class=\"u-url\">@<span>andy</span></a></span> if remix counts why would enhance.dev not count ? Idk fwiw (cc <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> )</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/site-generator-review/\"></a>",
 			"type": "reply",
 			"via": "webmention"
@@ -162,7 +162,7 @@
 				"url": "https://mastodon.online/@walpolea",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c22a5a90f4ccece3e9f8786e80419d97cd9e80b1a1430a44e980e3f5e214440c.gif"
 			},
-			"date": "2023-02-25T06:48:31.000Z",
+			"date": "2023-02-25T00:48:31.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@brianleroux\" class=\"u-url\">@<span>brianleroux</span></a></span> <span class=\"h-card\"><a href=\"https://bell.bz/@andy\" class=\"u-url\">@<span>andy</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Too many level heads, not enough <a href=\"https://mastodon.online/tags/hotdrama\">#<span>hotdrama</span></a> twitter marketing 🌶️</p>\n<a class=\"p-category\" href=\"https://bell.bz/tags/hotdrama\">hotdrama</a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/site-generator-review/\"></a>",
 			"type": "reply",
 			"via": "webmention"
@@ -176,7 +176,7 @@
 				"url": "https://indieweb.social/@brianleroux",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg"
 			},
-			"date": "2023-02-25T06:49:33.000Z",
+			"date": "2023-02-25T00:49:33.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.online/@walpolea\" class=\"u-url\">@<span>walpolea</span></a></span> <span class=\"h-card\"><a href=\"https://bell.bz/@andy\" class=\"u-url\">@<span>andy</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> we all like html here now I think if I read the drama correct 💀</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/site-generator-review/\"></a>",
 			"type": "reply",
 			"via": "webmention"
@@ -204,7 +204,7 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2023-02-25T20:28:10.000Z",
+			"date": "2023-02-25T14:28:10.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@krinkle\" class=\"u-url\">@<span>krinkle</span></a></span> <span class=\"h-card\"><a href=\"https://toot.cafe/@slightlyoff\" class=\"u-url\">@<span>slightlyoff</span></a></span> I did this with my markdown benchmark last year since it was doing build performance. If folks are interested in another repo of starters I can open source it but I didn’t do it this time because I wasn’t running any build performance tests? Maybe that separation feels academic</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -218,7 +218,7 @@
 				"url": "https://fosstodon.org/@gotofritz",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7d968a6371f61274fff7b2df4c442206a7bba3d3998907d7333a32345237a56f.png"
 			},
-			"date": "2023-02-26T00:04:36.000Z",
+			"date": "2023-02-25T18:04:36.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> is \"node_modules WEIGHT\" really something worth measuring and worrying about?</p>",
 			"type": "reply",
 			"via": "webmention"
@@ -380,7 +380,7 @@
 			"author": {
 				"url": "https://dcdailystory.com/author/lornaleasure/"
 			},
-			"date": "2023-03-10T06:00:00.000Z",
+			"date": "2023-03-10T00:00:00.000Z",
 			"content": "<span><span></span> <span></span> <span></span></span><p> <br /></p>\n\n<p><a href=\"https://1.envato.market/c/78798/298927/4662?subId1=weekly-news\"><img src=\"https://speckyboy.com/wp-content/uploads/2019/08/envato-elements-weekly-news.png\" alt=\"Envato Elements\" width=\"300\" height=\"600\" /></a></p>\n<p><a href=\"https://stackdiary.com/build-tools-for-web-development/\">The Most Popular Build Tools for Front-end Developers in 2023</a> – Discover tools that will help you build, test, and deploy front-end code.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-01.jpg\" alt=\"Example from The Most Popular Build Tools for Front-end Developers in 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/css-javascript-snippets-custom-text-paths/\">8 CSS &amp; JavaScript Snippets for Custom Text Paths</a> – Examples of text path effects that mimic print design.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-02.jpg\" alt=\"Example from 8 CSS JavaScript Snippets for Custom Text Paths\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://tympanus.net/codrops/2023/03/01/double-image-hover-effects-with-clip-path-animations/\">Double Image Hover Effects with Clip-Path Animations</a> – Effects that reveal images in clever ways.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-03.jpg\" alt=\"Example from Double Image Hover Effects with Clip-Path Animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://scrollbar.app/\">Scrollbar.app</a> – This app makes it easy to create custom scroll bars.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-04.jpg\" alt=\"Example from Scrollbar.app\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/helping-clients-master-ecommerce/\">How to Help Your Clients Master eCommerce</a> – Teach clients to manage their eCommerce websites and guide them towards success.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-05.jpg\" alt=\"Example from How to Help Your Clients Master eCommerce\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/\">A Guide To Accessible Form Validation</a> – Items to consider when implementing form validation techniques.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-06.jpg\" alt=\"Example from A Guide To Accessible Form Validation\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.robinwieruch.de/react-libraries/\">React Libraries for 2023</a> – How to choose the right library for your React application.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-07.png\" alt=\"Example from React Libraries for 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.zachleat.com/web/site-generator-review/\">The JavaScript Site Generator Review, 2023</a> – A look at the top site generation tools on the market.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-08.png\" alt=\"Example from The JavaScript Site Generator Review, 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/free-lightroom-luts/\">25 Free Lightroom LUTs for Stunning Photo Effects</a> – Use these tools to transform your photos into stylish, eye-catching images.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-09.jpg\" alt=\"Example from 25 Free Lightroom LUTs for Stunning Photo Effects\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://joshcollinsworth.com/blog/great-transitions\">Tips for Better CSS Transitions &amp; Animations</a> – Learn to create animations that add a high-quality look to your designs.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-10.png\" alt=\"Example from Ten tips for better CSS transitions and animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.mondriangenerator.io/\">Mondrian Generator</a> – Use this tool to create unique works of art.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-11.png\" alt=\"Example from Mondrian Generator\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/grumpy-designer-ai-hype-machine/\">Why the Grumpy Designer Isn’t Sold on the AI Hype Machine</a> – AI has massive potential. But it’s not necessarily the Utopian dream some are selling.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-12.jpg\" alt=\"Example from Why the Grumpy Designer Isn’t Sold on the AI Hype Machine\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.btw.so/tools/chat-gpt-tailwind-css-components\">Generate Tailwind CSS Components Using ChatGPT</a> – This AI-powered tool will craft custom components for the popular CSS framework.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-13.png\" alt=\"Example from Generate Tailwind CSS components using ChatGPT\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://rauno.me/interfaces\">Web Interface Guidelines</a> – A non-exhaustive list of details that make a good web interface.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-14.png\" alt=\"Example from Web Interface Guidelines\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://openai.com/blog/introducing-chatgpt-and-whisper-apis\">Introducing ChatGPT &amp; Whisper APIs</a> – You can now integrate these popular AI tools into your own apps and products.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-15.jpg\" alt=\"Example from Introducing ChatGPT and Whisper APIs\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://nomad.blog/2023/03/01/wordpress-6-2-source-of-truth/\">WordPress 6.2 Source of Truth</a> – A comprehensive list of features and changes in the upcoming version.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-16.jpg\" alt=\"Example from WordPress 6.2 Source of Truth\" width=\"750\" height=\"500\" /></p>\n\n<p><br /><br /><a href=\"https://speckyboy.com/weekly-news-for-designers-685/\">Source link </a></p>\n\n\n\t<h3><span><em>Related</em></span></h3>",
 			"type": "mention",
 			"via": "webmention"
@@ -392,7 +392,7 @@
 			"author": {
 				"url": "https://laurelnewsstation.com/author/julianadavis/"
 			},
-			"date": "2023-03-10T06:00:00.000Z",
+			"date": "2023-03-10T00:00:00.000Z",
 			"content": "<span><span></span> <span></span> <span></span></span><p> <br /></p>\n\n<p><a href=\"https://1.envato.market/c/78798/298927/4662?subId1=weekly-news\"><img src=\"https://speckyboy.com/wp-content/uploads/2019/08/envato-elements-weekly-news.png\" alt=\"Envato Elements\" width=\"300\" height=\"600\" /></a></p>\n<p><a href=\"https://stackdiary.com/build-tools-for-web-development/\">The Most Popular Build Tools for Front-end Developers in 2023</a> – Discover tools that will help you build, test, and deploy front-end code.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-01.jpg\" alt=\"Example from The Most Popular Build Tools for Front-end Developers in 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/css-javascript-snippets-custom-text-paths/\">8 CSS &amp; JavaScript Snippets for Custom Text Paths</a> – Examples of text path effects that mimic print design.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-02.jpg\" alt=\"Example from 8 CSS JavaScript Snippets for Custom Text Paths\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://tympanus.net/codrops/2023/03/01/double-image-hover-effects-with-clip-path-animations/\">Double Image Hover Effects with Clip-Path Animations</a> – Effects that reveal images in clever ways.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-03.jpg\" alt=\"Example from Double Image Hover Effects with Clip-Path Animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://scrollbar.app/\">Scrollbar.app</a> – This app makes it easy to create custom scroll bars.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-04.jpg\" alt=\"Example from Scrollbar.app\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/helping-clients-master-ecommerce/\">How to Help Your Clients Master eCommerce</a> – Teach clients to manage their eCommerce websites and guide them towards success.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-05.jpg\" alt=\"Example from How to Help Your Clients Master eCommerce\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/\">A Guide To Accessible Form Validation</a> – Items to consider when implementing form validation techniques.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-06.jpg\" alt=\"Example from A Guide To Accessible Form Validation\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.robinwieruch.de/react-libraries/\">React Libraries for 2023</a> – How to choose the right library for your React application.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-07.png\" alt=\"Example from React Libraries for 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.zachleat.com/web/site-generator-review/\">The JavaScript Site Generator Review, 2023</a> – A look at the top site generation tools on the market.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-08.png\" alt=\"Example from The JavaScript Site Generator Review, 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/free-lightroom-luts/\">25 Free Lightroom LUTs for Stunning Photo Effects</a> – Use these tools to transform your photos into stylish, eye-catching images.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-09.jpg\" alt=\"Example from 25 Free Lightroom LUTs for Stunning Photo Effects\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://joshcollinsworth.com/blog/great-transitions\">Tips for Better CSS Transitions &amp; Animations</a> – Learn to create animations that add a high-quality look to your designs.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-10.png\" alt=\"Example from Ten tips for better CSS transitions and animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.mondriangenerator.io/\">Mondrian Generator</a> – Use this tool to create unique works of art.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-11.png\" alt=\"Example from Mondrian Generator\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/grumpy-designer-ai-hype-machine/\">Why the Grumpy Designer Isn’t Sold on the AI Hype Machine</a> – AI has massive potential. But it’s not necessarily the Utopian dream some are selling.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-12.jpg\" alt=\"Example from Why the Grumpy Designer Isn’t Sold on the AI Hype Machine\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.btw.so/tools/chat-gpt-tailwind-css-components\">Generate Tailwind CSS Components Using ChatGPT</a> – This AI-powered tool will craft custom components for the popular CSS framework.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-13.png\" alt=\"Example from Generate Tailwind CSS components using ChatGPT\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://rauno.me/interfaces\">Web Interface Guidelines</a> – A non-exhaustive list of details that make a good web interface.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-14.png\" alt=\"Example from Web Interface Guidelines\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://openai.com/blog/introducing-chatgpt-and-whisper-apis\">Introducing ChatGPT &amp; Whisper APIs</a> – You can now integrate these popular AI tools into your own apps and products.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-15.jpg\" alt=\"Example from Introducing ChatGPT and Whisper APIs\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://nomad.blog/2023/03/01/wordpress-6-2-source-of-truth/\">WordPress 6.2 Source of Truth</a> – A comprehensive list of features and changes in the upcoming version.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-16.jpg\" alt=\"Example from WordPress 6.2 Source of Truth\" width=\"750\" height=\"500\" /></p>\n\n<p><br /><br /><a href=\"https://speckyboy.com/weekly-news-for-designers-685/\">Source link </a></p>\n\n\n\t<h3><span><em>Related</em></span></h3>",
 			"type": "mention",
 			"via": "webmention"
@@ -404,7 +404,7 @@
 			"author": {
 				"url": "https://lootrunners.com/author/katiep/"
 			},
-			"date": "2023-03-10T06:00:00.000Z",
+			"date": "2023-03-10T00:00:00.000Z",
 			"content": "<span><span></span> <span></span> <span></span></span><p></p><p><a href=\"https://stackdiary.com/build-tools-for-web-development/\">The Most Popular Build Tools for Front-end Developers in 2023</a> – Uncover instruments that may enable you construct, check, and deploy front-end code.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-01.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from The Most Popular Build Tools for Front-end Developers in 2023\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/css-javascript-snippets-custom-text-paths/\">8 CSS &amp; JavaScript Snippets for Custom Text Paths</a> – Examples of textual content path results that mimic print design.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-02.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from 8 CSS JavaScript Snippets for Custom Text Paths\" width=\"750\" height=\"500\" /><p><a href=\"https://tympanus.net/codrops/2023/03/01/double-image-hover-effects-with-clip-path-animations/\">Double Image Hover Effects with Clip-Path Animations</a> – Results that reveal photos in intelligent methods.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-03.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from Double Image Hover Effects with Clip-Path Animations\" width=\"750\" height=\"500\" /><p><a href=\"https://scrollbar.app/\">Scrollbar.app</a> – This app makes it straightforward to create customized scroll bars.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-04.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from Scrollbar.app\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/helping-clients-master-ecommerce/\">How to Help Your Clients Master eCommerce</a> – Train purchasers to handle their eCommerce web sites and information them in the direction of success.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-05.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from How to Help Your Clients Master eCommerce\" width=\"750\" height=\"500\" /><p><a href=\"https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/\">A Guide To Accessible Form Validation</a> – Objects to contemplate when implementing type validation methods.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-06.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from A Guide To Accessible Form Validation\" width=\"750\" height=\"500\" /><p><a href=\"https://www.robinwieruch.de/react-libraries/\">React Libraries for 2023</a> – How to decide on the appropriate library to your React software.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-07.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from React Libraries for 2023\" width=\"750\" height=\"500\" /><p><a href=\"https://www.zachleat.com/web/site-generator-review/\">The JavaScript Site Generator Review, 2023</a> – A have a look at the highest website era instruments in the marketplace.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-08.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from The JavaScript Site Generator Review, 2023\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/free-lightroom-luts/\">25 Free Lightroom LUTs for Stunning Photo Effects</a> – Use these instruments to rework your images into fashionable, eye-catching photos.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-09.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from 25 Free Lightroom LUTs for Stunning Photo Effects\" width=\"750\" height=\"500\" /><p><a href=\"https://joshcollinsworth.com/blog/great-transitions\">Tips for Better CSS Transitions &amp; Animations</a> – Study to create animations that add a high-quality look to your designs.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-10.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from Ten tips for better CSS transitions and animations\" width=\"750\" height=\"500\" /><p><a href=\"https://www.mondriangenerator.io/\">Mondrian Generator</a> – Use this instrument to create distinctive artistic endeavors.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-11.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from Mondrian Generator\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/grumpy-designer-ai-hype-machine/\">Why the Grumpy Designer Isn’t Sold on the AI Hype Machine</a> – AI has large potential. But it surely’s not essentially the Utopian dream some are promoting.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-12.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from Why the Grumpy Designer Isn’t Sold on the AI Hype Machine\" width=\"750\" height=\"500\" /><p><a href=\"https://www.btw.so/tools/chat-gpt-tailwind-css-components\">Generate Tailwind CSS Components Using ChatGPT</a> – This AI-powered instrument will craft customized elements for the favored CSS framework.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-13.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from Generate Tailwind CSS components using ChatGPT\" width=\"750\" height=\"500\" /><p><a href=\"https://rauno.me/interfaces\">Web Interface Guidelines</a> – A non-exhaustive record of particulars that make a superb internet interface.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-14.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from Web Interface Guidelines\" width=\"750\" height=\"500\" /><p><a href=\"https://openai.com/blog/introducing-chatgpt-and-whisper-apis\">Introducing ChatGPT &amp; Whisper APIs</a> – Now you can combine these well-liked AI instruments into your personal apps and merchandise.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-15.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from Introducing ChatGPT and Whisper APIs\" width=\"750\" height=\"500\" /><p><a href=\"https://nomad.blog/2023/03/01/wordpress-6-2-source-of-truth/\">WordPress 6.2 Source of Truth</a> – A complete record of options and adjustments within the upcoming model.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-16.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from WordPress 6.2 Source of Truth\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/weekly-news-for-designers-685/\">Source link </a></p><h3><span><em>Related</em></span></h3>",
 			"type": "mention",
 			"via": "webmention"
