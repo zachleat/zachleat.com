@@ -1,4 +1,6 @@
 {%- capture fullUrl %}https://www.zachleat.com{{ page.url }}{% endcapture -%}
+{%- assign isPostPage = page.inputPath | isPost -%}
+{%- if description %}{% assign metaDescription = description %}{% elsif isPostPage %}{% assign metaDescription = page.rawInput | excerpt %}{% else %}{% assign metaDescription = site.description %}{% endif -%}
 <!doctype html>
 <html lang="en"{% if tmpl or templateclass or classes.html %} class="{% if tmpl %}tmpl-{{ tmpl }}{% endif %}{% if templateclass %} {{ templateclass }}{% endif %}{%- if classes.html %} {{ classes.html }}{% endif -%}"{% endif %}{% if eleventy.env.runMode == "serve" %} data-eleventy-runmode="{{ eleventy.env.runMode }}"{% endif %}>
 	<head>
@@ -12,7 +14,7 @@
 		<link rel="preload" href="/static/fonts/hex-franklin/HEX_Franklin_v0.3_Tyght_Variable-subset.woff2" as="font" type="font/woff2" crossorigin>
 
 		<meta name="author" content="Zach Leatherman">
-		<meta name="description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
+		<meta name="description" content="{{ metaDescription | escape }}">
 		<meta name="generator" content="{{ eleventy.generator }}">
 
 {%- if noindex %}
@@ -28,7 +30,7 @@
 		<meta property="og:title" content="{% if title %}{{ title }}—zachleat.com{% else %}zachleat.com{% endif %}">
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="Zach Leatherman">
-		<meta property="og:description" content="{% if description %}{{ description }}, {% endif %}{% if title %}A post by {% endif %}Zach Leatherman (zachleat)">
+		<meta property="og:description" content="{{ metaDescription | escape }}">
 		<meta property="og:image" content="{% ogImageSource page %}">
 		<meta property="og:url" content="https://www.zachleat.com{{ page.url }}">
 

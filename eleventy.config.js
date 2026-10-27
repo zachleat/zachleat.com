@@ -5,7 +5,7 @@ import { DateTime } from "luxon";
 import memoize from "memoize";
 import numeral from "numeral";
 import markdownIt from "markdown-it";
-import { encode } from "html-entities";
+import { encode, decode } from "html-entities";
 import { YoutubeTranscript } from "youtube-transcript";
 import { AssetCache } from "@11ty/eleventy-fetch";
 
@@ -704,6 +704,19 @@ export default async function(eleventyConfig) {
 		html: true,
 		breaks: true,
 		linkify: true,
+	});
+
+	// Plain text summary of a template’s raw input, used for meta descriptions.
+	eleventyConfig.addFilter("excerpt", function(rawInput = "", maxLength = 160) {
+		let html = md.render(rawInput.replace(/{%[\s\S]*?%}|{{[\s\S]*?}}/g, ""));
+		let text = decode(html.replace(/<(pre|script|style|table|figure)[\s\S]*?<\/\1>/gi, "").replace(/<[^>]+>/g, " "))
+			.replace(/\s+/g, " ")
+			.replace(/ ([.,;:!?)])/g, "$1")
+			.trim();
+		if(text.length <= maxLength) {
+			return text;
+		}
+		return text.slice(0, maxLength).replace(/[\s,.;:—–-]+\S*$/, "") + "…";
 	});
 
 	eleventyConfig.addPairedShortcode("markdown", function(content, inline = false) {
