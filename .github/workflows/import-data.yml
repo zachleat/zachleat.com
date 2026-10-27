@@ -1,5 +1,5 @@
 # Commits fresh analytics and webmentions data every hour.
-name: Import data
+name: Import Analytics/Webmention Data
 
 on:
   schedule:
