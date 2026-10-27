@@ -1,0 +1,110 @@
+{
+	"disqus": {
+		"path": "/web/placeholder/",
+		"commentCount": 10,
+		"comments": [
+			{
+				"postId": "887462089",
+				"parentPostId": null,
+				"date": "2012-02-06T14:22:01Z",
+				"author": "marcusklaas",
+				"avatar": "https://www.gravatar.com/avatar/34ff2ff879d6515d0f2d1c2311d88500?d=mm&s=60",
+				"message": "<p>Although I was originally looking for a yellow men's bathing suit, I still enjoyed this article. I agree especially with your view on polyfills.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462086",
+				"parentPostId": null,
+				"date": "2012-02-06T18:00:03Z",
+				"author": "Mathias Bynens",
+				"avatar": "https://www.gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?d=mm&s=60",
+				"message": "<blockquote>My personal preference is that the text remains until the user starts to type. Safari 5.1 and iOS 5 were the only browser implementations to agree with this as of time of writing.</blockquote><p></p><p>FWIW, Chrome 18 Canary does this too. I’m not sure when exactly this landed though; it may have already worked like this in Chrome 17 as well.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462087",
+				"parentPostId": null,
+				"date": "2012-02-06T18:03:07Z",
+				"author": "Mathias Bynens",
+				"avatar": "https://www.gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?d=mm&s=60",
+				"message": "<blockquote>polyfilling that behavior in old Internet Explorers will require additional lifting since dynamically changing the type attribute is not permitted.</blockquote><p></p><p>Old Firefox (3.6 and older IIRC) have the same problem.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462088",
+				"parentPostId": null,
+				"date": "2012-02-06T21:16:18Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>marcusklass: Disappointment tempered!</p><p>Per usual, you're right Mathias. The remove-on-value feature is implemented in Chrome 17-beta.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462092",
+				"parentPostId": null,
+				"date": "2012-02-24T12:20:13Z",
+				"author": "KMB",
+				"avatar": "https://www.gravatar.com/avatar/480d6ca1c6adae44074db47b3a8f1386?d=mm&s=60",
+				"message": "<p>In my experience it's very confusing to have the placeholder text visible after the input has focus. Not so experienced users will try to delete the text first before typing or even try to select it all with the mouse/keyboard (mostly mouse) in order to \"overwrite\" it. Therefore I'm in the \"focus and it's gone\"-department.</p><p>It can be argued, that the placeholder has already been read and understood by the user once he/she focus on the input-field and further presence of it leads only to confusion instead of support.</p><p>This might be a trap for auto-focusing those fields.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462094",
+				"parentPostId": null,
+				"date": "2012-03-06T13:03:16Z",
+				"author": "Paul Irish",
+				"avatar": "https://www.gravatar.com/avatar/6cfbd373bb1dd5f26c066c1fc7e68288?d=mm&s=60",
+				"message": "<p>Zach, you should file a ticket on the h5please repo about recommending polyfill for placeholder. I think it's a great discussion to have.</p><p>IMO, if you want the behavior of a placeholder that acts as a label.. you'll need a polyfill. Also a placeholder for telephone number like xxx-xxx-xxxx is probably useful, else you'll screw up the expected formatting. So yeah I think you most of the times need a polyfill for something as meaning-giving as placeholder.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462093",
+				"parentPostId": null,
+				"date": "2012-03-14T11:09:23Z",
+				"author": "Dirk Ginader",
+				"avatar": "https://www.gravatar.com/avatar/ac20c97a1a7c321444013be47f1fcee6?d=mm&s=60",
+				"message": "<p>I'd like to add one more item to your excellent list of Overlooked Polyfill Considerations:<br>--&gt; Screenreader accessibility of the placeholder text.</p><p>The way that most Polyfill implementations work is to have form elements that get filled with the placeholder text and emptied again on focus. This way the Placeholder text is never exposed to Screenreaders though (as the text is already gone when the field is read).<br>To work around that issue my <a href=\"https://github.com/ginader/HTML5-placeholder-polyfill\" rel=\"nofollow noopener\" title=\"https://github.com/ginader/HTML5-placeholder-polyfill\">Placeholder Polyfill</a>  writes the placeholder text into a separate part of the label and positions this over the form fields. By doing this Screenreader users now have a chance of reading the Placeholder text as well. <br>What do you think?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462091",
+				"parentPostId": null,
+				"date": "2012-03-14T18:39:04Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>@Paul: I'm not convinced that there are cases in which you'd want the placeholder to act as a label?  It's the same argument that's been made for placing mobile form field labels above the fields: the users want to be able to see the label once they've focused into the field (even if that field already has a value).  I would also say that formatting is better solved by input masks and client side validation.  But we can continue that discussion on the ticket: <a href=\"https://github.com/h5bp/html5please/issues/158\" rel=\"nofollow noopener\" title=\"https://github.com/h5bp/html5please/issues/158\">https://github.com/h5bp/htm...</a></p><p>@Dirk: Is the accessibility behavior improved with the remove-on-typing behavior?  Of course, my current position is that I probably won't use a polyfill in new projects moving forward unless there is an overwhelming IE audience.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462090",
+				"parentPostId": null,
+				"date": "2012-03-14T18:56:59Z",
+				"author": "Dirk Ginader",
+				"avatar": "https://www.gravatar.com/avatar/ac20c97a1a7c321444013be47f1fcee6?d=mm&s=60",
+				"message": "<p>@Zack: technically the accessibility of the fake placeholder is better as the content will be exposed to but on the other side it's a very unexpected behavior to:<br>- enter a field<br>- reading the prefilled value of the field<br>- probably trying to clear the fields value<br>- having the text suddenly disappear without knowing why</p><p>With the native Placeholder this is not an issue. With the polyfilled version it is.</p>",
+				"replies": []
+			},
+			{
+				"postId": "1824846574",
+				"parentPostId": null,
+				"date": "2015-01-30T02:21:07Z",
+				"author": "JMH",
+				"avatar": "https://www.gravatar.com/avatar/14fa1ace108a1a24963d84715b88dec2?d=mm&s=60",
+				"message": "<p>I agree that it is best to have the placeholder disappear as soon as the field is focused.  Otherwise, my natural reaction is to first select/delete it.  My solution to this was to add focus and blur functions to replace the 'placeholder' with nothing, then restore it.  Only downside is that you have to keep track of or otherwise know the placeholder text string so you can restore it.</p>",
+				"replies": []
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 717999,
+			"parentId": 0,
+			"url": "https://tarfandooni.ir/internet/web-design/placeholder/",
+			"author": {},
+			"date": "2019-10-28T11:44:30.000Z",
+			"content": "<h1 style=\"text-align:center;\">مرجع CSS فارسی</h1>\n<h2 style=\"text-align:center;\">PSEUDO-CLASS</h2>\n<h3 style=\"text-align:center;\">placeholder::</h3>\n\n\t\t\t \n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n<h4>placeholder::</h4>\n<p>placeholder:: شبه عنصریست که برای استایل دهی به مقدار پیش نمایش داخل یک فیلد متنی فرم استفاده می شود. این مقدار های پیش نمایش برای راهنمایی کاربر در نحوه ی پر کردن فرم کاربرد دارد.</p>\n\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<p>به عنوان مثال ، یک فیلد تارخ در فرم می تواند مقدار پیش نمایش ” ماه/سال ” داشته باشد. یا یک فیلدی که ایمیل کاربر را دریافت میکند میتواند placeholder یا مقدار پیش نمایش “john@doe.com” داشته باشد.</p>\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<p>در اکثر مرورگرها placeholder ها به رنگ خاکستری روشن هستند. برای استایل دهی به مقدار پیش نمایش یا placeholder یک فیلد فرم میتوان از placeholder:: استفاده کرد.</p>\n\t\t\t \n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n<h5>نکات دیگر</h5>\n<p>از تمام خصوصیاتی که برای <a href=\"https://tarfandooni.ir/%D8%AA%D8%B1%D9%81%D9%86%D8%AF%D9%87%D8%A7%DB%8C-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D8%B3%D8%A7%DB%8C%D8%AA/%D9%85%D8%B1%D8%AC%D8%B9-%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-css/first-line/\">first-line::</a> قابل استفاده است ، میتوان برای placeholder:: نیز استفاده کرد.</p>\n\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<p>بعضی از مرورگرها رفتار متفاوتی در مورد <a href=\"https://tarfandooni.ir/glossary/%D8%B4%D8%A8%D9%87-%D8%B9%D9%86%D8%B5%D8%B1/\">شبه عنصر</a> placeholder:: دارند. بعنوان مثال، برای فراخوانی از webkit-input-placeholder-:: یا ms-input-placeholder-: و moz-placeholder-: استفاده می کنند.</p>\n\t\t\t \n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n<h5>مثال</h5>\n<p><a href=\"https://tarfandooni.ir/glossary/%D8%AA%DA%A9%D9%87-%DA%A9%D8%AF/\">تکه کد</a> زیر ، رنگ و فونت placeholder را تغییر می دهد.</p>\n\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<pre><span>::placeholder</span> {\n    <span>color</span>: <span>#96eb7f</span>;\n    <span>font-family</span>: Lato, sans-serif;\n}\n                </pre>\n\t\t\t \n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<p>دموی زیر مثال هایی از کاربرد placeholder:: در CSS می باشد.</p>\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n<p>\nSee the Pen <a href=\"https://tarfandooni.ir/internet/web-design/placeholder/%E2%80%99https://codepen.io/alishooti/pen/oOLdEX/%E2%80%99\">:placeholder</a> by alishooti (<a href=\"https://tarfandooni.ir/internet/web-design/placeholder/%E2%80%99https://codepen.io/alishooti%E2%80%99\">@alishooti</a>) on <a href=\"https://tarfandooni.ir/internet/web-design/placeholder/%E2%80%99https://codepen.io%E2%80%99\">CodePen</a>.0</p>\n\n\t\t\t \n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n<h4>بیشتر بخوانید</h4>\n<ul><li><a href=\"https://www.w3.org/TR/css-pseudo-4/#placeholder-pseudo\">سطح 4 شبه عناصر در CSS</a></li>\n<li><a href=\"https://davidwalsh.name/html5-placeholder-css\">استایل دهی به placeholder</a></li>\n<li><a href=\"https://www.zachleat.com/web/placeholder/\">درباره ی placeholder ها در فرم</a></li>\n</ul><p></p>\n\n\t\t\t \n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<p>استفاده از این متون آموزشی و کپی برداری از آن ها بلامانع می باشد. توجه شود که ذکر منبع به شدت روحیه دهنده است 😉 .</p>\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t<p>همچنین منتظر دیدگاه های شما هستیم.</p>\n\t\t\t \n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n<h4>Tags</h4>\n\n<a href=\"https://tarfandooni.ir/tag/css/\" style=\"font-size:10px;\">CSS</a><a href=\"https://tarfandooni.ir/tag/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-css/\" style=\"font-size:10px;\">آموزش CSS</a><a href=\"https://tarfandooni.ir/tag/%D8%AA%D8%B1%D9%81%D9%86%D8%AF%D9%87%D8%A7%DB%8C-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D8%B3%D8%A7%DB%8C%D8%AA/\" style=\"font-size:10px;\">ترفندهای طراحی سایت</a><a href=\"https://tarfandooni.ir/tag/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%86%D8%AA%D8%B2%D8%A7%D8%B9%DB%8C-%D8%AF%D8%B1-css/\" style=\"font-size:10px;\">عناصر انتزاعی در CSS</a><a href=\"https://tarfandooni.ir/tag/%D9%85%D8%B1%D8%AC%D8%B9-%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-css/\" style=\"font-size:10px;\">مرجع فارسی CSS</a>\n\n \n\t\t\t \n\t\t\t\t\t\t\t\t<span>\n\t\t\t\t\t<a href=\"https://tarfandooni.ir/uncategorized/first-line/\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span>← </span><span>::first-line</span>\n\t\t\t\t\t</a>\n\t\t\t\t</span>\n\t\t\t\t\t\t\t<span>\n\t\t\t\t\t<a href=\"https://tarfandooni.ir/internet/web-design/selection/\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span>::selection</span><span> →</span>\n\t\t\t\t\t</a>\n\t\t\t\t</span>\n\t\t\t\n\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t \t\t\n\n\t\n\n\t\n\t\t\t\n\t\t\n\t\tFavorite <i></i>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

@@ -1,0 +1,807 @@
+{
+	"comments": [
+		{
+			"id": 1560490,
+			"parentId": 0,
+			"url": "https://twitter.com/isAdrisal/status/1592665984237965315",
+			"author": {
+				"name": "Adriano",
+				"url": "https://twitter.com/isAdrisal",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d78ed1c831fb420060a10873af15a30fa5fbdd97be565492c8b4de90727a8d1b.jpg"
+			},
+			"date": "2022-11-15T23:48:55.000Z",
+			"content": "This sounds good but also somewhat similar to the data-src image lazy-loading tricks of old. Would it make sense for there to be a browser-provided heuristic instead, like we have now for loading=lazy on images?\n<a class=\"u-mention\" href=\"https://twitter.com/develwoutacause\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560566,
+			"parentId": 0,
+			"url": "https://twitter.com/thomasreggi/status/1592723514658029568",
+			"author": {
+				"name": "thomas 🌻",
+				"url": "https://twitter.com/thomasreggi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ce4990a0d3d722e2f8f7ef8a2a43060d20c702dbf7d0c98e8a037e7408ee146b.jpg"
+			},
+			"date": "2022-11-16T03:37:31.000Z",
+			"content": "good job on the social image 🔥\n<a class=\"u-mention\" href=\"https://twitter.com/develwoutacause\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560458,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350139024771005",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-16T04:18:25.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I still don't understand the use-case for wanting to delay hydration (as I stated in the proposal) 😀</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560459,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350154804346428",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-16T04:22:26.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I’m guessing you’re all-in on SSR?</p><p>I think some PE scenarios require heftier DOM changes—I’ve talked a bit about the tension between SSR and PE before—I think this assists nicely there</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560456,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350169042576188",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-16T04:26:03.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I like to think I'm a pragmatist so I'm not really all-in on anything.</p><p>But when I say I don't understand I really do mean I don't understand, not that I disagree with it. I don't understand what scenario exists that you would want a component to not hydrate until you do something else. That's what I asked in the proposal thread but never got a reply.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560457,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350181254757083",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-16T04:29:09.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I’m confused—isn’t that the point of islands? Arbitrary conditions on “hydrating” child content?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560475,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350208092917993",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-16T04:35:59.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ok, so you are using defer-hydration so that if you have a on:idle and on:visible on the same page, the visible one will continue to be delayed. </p><p>To me, I think of the directives as \"fastest wins\" and I don't necessarily want 2 of the same components to hydrate at different times.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560454,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350212630756793",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-16T04:37:08.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> It's more of wanting to delay the loading and JS execution. Once that's happened then you might as well hydrate *all* of the component instances. I haven't thought of a reason to not hydrate a component who's code is loaded.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560455,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350222321817499",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-16T04:39:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> ahh, I see. Yeah I’m not sure I agree with that (yet?)</p><p>The implementation I added for `&lt;is-land on:idle on:visible&gt;` is that it won’t remove `defer-hydration` attribute until both conditions are met—I’d absolutely want the island to be in full control over its children (even if another distinct island defines the same custom element)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560473,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350281062291536",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-16T04:54:32.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> From my perspective, a web component should only control its shadow dom and &lt;slot&gt;. If it is controlling what is inside of that slot there's a coupling problem. There are some rare exceptions.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560474,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350392379215422",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-16T05:22:51.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I guess I’m making the case that `&lt;is-land&gt;` as a web component is an exception to that rule!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560471,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350405568533088",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-16T05:26:12.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Yeah, for sure. I still don't see the use-case though 😆  What is the scenario where you want to hydrate &lt;my-component&gt; in one island but delay its hydration in a different island?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560472,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350421350183114",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-16T05:30:13.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I think one difference is you are thinking about it from the perspective of the author of &lt;is-land&gt; and I'm thinking about it from the perspective of the &lt;my-component&gt; author.</p><p>As a component author, conforming to the &lt;is-land&gt; wishes isn't enough of a reason. I need a real use-case.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560461,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350436642787489",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-16T05:34:06.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> As a nit, the article calls this a \"community-agreed-upon draft standard\", but it's not community agreed upon. It's an open proposal with some (but not a lot) of feedback. Not yet merged and agreed upon.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560453,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350460635727943",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-16T05:40:12.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> it’s ok! We can disagree! 👍🏻</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560469,
+			"parentId": 0,
+			"url": "https://c.im/@matthewp/109350487363362476",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://c.im/@matthewp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
+			},
+			"date": "2022-11-16T05:47:00.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Of course, but I'm not sure what we're disagreeing on. Is the reason to delay hydration just because that's what &lt;is-land&gt;'s API wants to happen? I'm genuinely just trying to understand.</p><p>I like to think about WCs in terms of \"what would native elements do\". Would a native element defer hydration based on a blanket attribute? I don't think so! They might delay it given a specific reason, but that reason is part of the element's API, not a global option.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1560470,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350498381166962",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2022-11-16T05:49:48.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://c.im/@matthewp\" class=\"u-url\">@<span>matthewp</span></a></span> I don’t think it’s much different than defer for script or loading for img!</p>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1560399,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109325867586024180",
+			"date": "2022-11-15T22:11:17.000Z",
+			"author": {
+				"name": "Eleventy (11ty) 🎈",
+				"url": "https://fosstodon.org/@eleventy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1176b0620be1ff0bcbd71e67fa0600b11b8b1b7b88411d50c735880893da41af.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560400,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109292552988169598",
+			"date": "2022-11-15T22:11:17.000Z",
+			"author": {
+				"name": "Jared White",
+				"url": "https://indieweb.social/@jaredwhite",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/48ceb2b89ca6f40586b16dfee49892e8917496af1919a297a961d8031a72bc52.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560417,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-14518523",
+			"date": "2022-11-15T22:52:36.000Z",
+			"author": {
+				"name": "James Grant",
+				"url": "https://twitter.com/JamesDoesDev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2a81964a5bc6143d5d507915dd123c1945c7ea3a00260267c8bc7e330f1fb59b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560418,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-1728160536",
+			"date": "2022-11-15T22:52:37.000Z",
+			"author": {
+				"name": "David Vite",
+				"url": "https://twitter.com/_davideast",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2f7f9e7f15f5f03c32904a8f22596edd7bf796dfe87fe0b821dd56e171f1583d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560419,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-33843",
+			"date": "2022-11-15T22:52:37.000Z",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://twitter.com/MattWilcox",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6e693cb8aec317cb2bb8cf71f200208f293140172ac8c55dc6474900b1ee639d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560420,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-79130645",
+			"date": "2022-11-15T22:52:38.000Z",
+			"author": {
+				"name": "Yvain Liechti",
+				"url": "https://twitter.com/ryuran78",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/435b28d6c561faa8ea38ab4a8da6fe3f30bb7ec9d737a75ae1bef9c0201f2e0d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560421,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-1143086799994179584",
+			"date": "2022-11-15T22:52:38.000Z",
+			"author": {
+				"name": "Paul Polanski",
+				"url": "https://twitter.com/Polanski_Paule",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/25e288d048343010f4675fccc5e8759e542141ccb88fea2ff813e336eeb439c9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560422,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-949639269433380864",
+			"date": "2022-11-15T22:52:38.000Z",
+			"author": {
+				"name": "Eleventy 🎈",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560423,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-24203304",
+			"date": "2022-11-15T22:52:40.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560460,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109306992204816508",
+			"date": "2022-11-15T23:59:39.000Z",
+			"author": {
+				"name": "Jan Sundman",
+				"url": "https://mastodon.social/@jansundman",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/80700a48cc16c8bb8852228d24fc994e55558139e0fab4e9018ca657b8080c2e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560462,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109325709395589126",
+			"date": "2022-11-15T23:59:41.000Z",
+			"author": {
+				"name": "mp :marx:",
+				"url": "https://sociale.network/@mp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/521869a19e746ec9c0194e1642850f6682776ba072ac852e77851da0084bd319.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560463,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109349736122642226",
+			"date": "2022-11-15T23:59:41.000Z",
+			"author": {
+				"name": "larryhudson@indieweb.social",
+				"url": "https://indieweb.social/@larryhudson",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560464,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109304002638110328",
+			"date": "2022-11-15T23:59:43.000Z",
+			"author": {
+				"name": "Ghishadow :verified:",
+				"url": "https://hachyderm.io/@ghishadow",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e3a5b1a1fbec78ff688c405eac475b19cd8d2269c93ecd28f3c9989050d7f6cd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560465,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109293454870726204",
+			"date": "2022-11-15T23:59:44.000Z",
+			"author": {
+				"name": "Brian Rinaldi",
+				"url": "https://mastodon.xyz/@remotesynth",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f0768b0b4663be265badb650b050b45e4a95ab6163a0069ebcc4325aea537d71.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560466,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109349526557262238",
+			"date": "2022-11-15T23:59:45.000Z",
+			"author": {
+				"name": "Heinz Wittenbrink",
+				"url": "https://graz.social/@heinz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/774cde61efdc7a0b5d13bec1356db82064612b0d873ede0d90985a4b4579e1f0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560487,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-2846071437",
+			"date": "2022-11-16T00:46:41.000Z",
+			"author": {
+				"name": "Bruce Anderson - @bahrus@mastodon.social",
+				"url": "https://twitter.com/bahrusnikoffin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/306542d98d94a1c9008170120d236738d9214a0637aa0b939e8125d6f17de24c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560488,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-229237555",
+			"date": "2022-11-16T00:46:41.000Z",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://twitter.com/slightlylate",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4bbc603b5d24d29f406e79bb8c6d798006aa12861bfe2842ace1773eb438ba78.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560491,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-24967487",
+			"date": "2022-11-16T00:47:12.000Z",
+			"author": {
+				"name": "Wesley Luyten",
+				"url": "https://twitter.com/luwes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/48a1e83740f0343ce379a98786f05989e1ec1a12c826ad7dadf1638d1bf38a0e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560492,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-1160384332634021888",
+			"date": "2022-11-16T00:47:14.000Z",
+			"author": {
+				"name": "Basix",
+				"url": "https://twitter.com/Basix1120",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a07bb06dae4dd98cf22a26100a673851b8000d78a16e9bf8bbb7cfa36ff8c080.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560502,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109332518937677894",
+			"date": "2022-11-16T01:49:09.000Z",
+			"author": {
+				"name": "Doug Parker",
+				"url": "https://techhub.social/@develwithoutacause",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560520,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-1566940194",
+			"date": "2022-11-16T02:31:35.000Z",
+			"author": {
+				"name": "Huy",
+				"url": "https://twitter.com/_huygn",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0348798f38543859ba28705891e5044abf4c54ec2fff185d5cb0593eb3873ef2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560521,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-1956181",
+			"date": "2022-11-16T02:31:43.000Z",
+			"author": {
+				"name": "Colinaut 🐀",
+				"url": "https://twitter.com/colinaut",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b0cb2ac92703b3159d856b37f310e18143a2fddfd5642e521ba4219012341b59.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560522,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-24342828",
+			"date": "2022-11-16T02:31:44.000Z",
+			"author": {
+				"name": "dan leatherman 🐀",
+				"url": "https://twitter.com/danleatherman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/179673fc1989070f70755feab4f39f310a2648d7158377d0c2b49ded9ed61628.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560523,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-21155214",
+			"date": "2022-11-16T02:31:44.000Z",
+			"author": {
+				"name": "David Leininger",
+				"url": "https://twitter.com/davidleininger",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae87ebd47981b480f2b6ad211b9a8ef6bfd79e9594535e70973765280ccb3198.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560524,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-18833379",
+			"date": "2022-11-16T02:31:45.000Z",
+			"author": {
+				"name": "Daniel Göransson",
+				"url": "https://twitter.com/DanielGoransson",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/364b40ab2aacdeeaeb5a759ce52d4f68f530e4ebad6a35ff8dbcf36c20fb8870.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560526,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-1189618278848532480",
+			"date": "2022-11-16T02:32:04.000Z",
+			"author": {
+				"name": "Doug Parker",
+				"url": "https://twitter.com/develwoutacause",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4bacd17a26571529236f35096031257096ec5d62deb7672db878d0389a475273.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560527,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-1500681541495795712",
+			"date": "2022-11-16T02:32:05.000Z",
+			"author": {
+				"name": "Ted Martin",
+				"url": "https://twitter.com/TedMart51618893",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/62bce5a57e5b8637cb69feaa6b1cf4024ccbfeba55d81cf6116d968077cdd61c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560565,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-5948982",
+			"date": "2022-11-16T04:30:15.000Z",
+			"author": {
+				"name": "thomas 🌻",
+				"url": "https://twitter.com/thomasreggi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ce4990a0d3d722e2f8f7ef8a2a43060d20c702dbf7d0c98e8a037e7408ee146b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560579,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109303663757277011",
+			"date": "2022-11-16T05:31:12.000Z",
+			"author": {
+				"name": "huygn@mastodon.social",
+				"url": "https://mastodon.social/@huygn",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560621,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-336477569",
+			"date": "2022-11-16T06:28:25.000Z",
+			"author": {
+				"name": "Philip",
+				"url": "https://twitter.com/philipschm1tt",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6f1d9c4149f8410fe9d4ecc6b2096e4522dc4b787972dc655a726cc763be086b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560628,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109332613034304625",
+			"date": "2022-11-16T07:14:57.000Z",
+			"author": {
+				"name": "Rhian van Esch",
+				"url": "https://front-end.social/@rhian",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1f56a2b17b04672167580b29eccae566e43d7f65cb2c1b0e0a0fbcee81287a94.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560658,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-18692032",
+			"date": "2022-11-16T08:22:31.000Z",
+			"author": {
+				"name": "Robin Pellegrims",
+				"url": "https://twitter.com/RobinPel",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5c763e01ee5040ce4d8a566a447b64295a704b91a8c395d8ecc5c094e0a68f96.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560672,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#favorited-by-109331987535019824",
+			"date": "2022-11-16T09:09:02.000Z",
+			"author": {
+				"name": "theshark@fosstodon.org",
+				"url": "https://fosstodon.org/@theshark",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560754,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-2848197444",
+			"date": "2022-11-16T13:10:26.000Z",
+			"author": {
+				"name": "Siwat Kaolueng",
+				"url": "https://twitter.com/perjerz34",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/db3711894c18780a2dd006bf85b5e9b1795fce4402d3e60ff5176eaf1b7b1b9b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560852,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-4874949729",
+			"date": "2022-11-16T18:16:59.000Z",
+			"author": {
+				"name": "Passle",
+				"url": "https://twitter.com/passle_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/90781eef1472e4b03f8b22010ee66132dfeef703fe76bf80d6a3b9dcd87e59ec.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560944,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-1211610832267702272",
+			"date": "2022-11-16T21:49:51.000Z",
+			"author": {
+				"name": "Edgar Rodríguez",
+				"url": "https://twitter.com/codingedgar",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/789ff855fc0f65fe31ad7be9139792ed9c35f24cf6038999037a77029d2088ce.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560979,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-2203960004",
+			"date": "2022-11-16T23:15:53.000Z",
+			"author": {
+				"name": "June March Skootsky (100% 🏴‍☠️, 🌴🌴🌴)",
+				"url": "https://twitter.com/Joshua_Skootsky",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/12ad8700f2ce1fe5580c9dddbd2f3c18076dab9f6f261bcfd3c937e75b31390a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1561051,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-34945729",
+			"date": "2022-11-17T03:28:07.000Z",
+			"author": {
+				"name": "Shawn Holmes",
+				"url": "https://twitter.com/Hanzo55",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7f85050db93bce642e5c7fa5555181a877195eb4c46564037eb494f28e2d0b58.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1561200,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-1196105824302751745",
+			"date": "2022-11-17T11:55:59.000Z",
+			"author": {
+				"name": "Tobias Fedder",
+				"url": "https://twitter.com/fedder_tobias",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1561253,
+			"url": "https://twitter.com/zachleat/status/1592642094388346880#favorited-by-3165967183",
+			"date": "2022-11-17T14:31:15.000Z",
+			"author": {
+				"name": "Eduardo Uribe",
+				"url": "https://twitter.com/Eduardo__Uribe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0a291ea9afff0430dd801bceaf71eb5db28fa001c93d57745696a20cfbc17b94.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1560401,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#reblogged-by-109325867586024180",
+			"date": "2022-11-15T22:11:19.000Z",
+			"author": {
+				"name": "Eleventy (11ty) 🎈",
+				"url": "https://fosstodon.org/@eleventy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1176b0620be1ff0bcbd71e67fa0600b11b8b1b7b88411d50c735880893da41af.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560426,
+			"url": "https://twitter.com/eleven_ty/status/1592642236621426688",
+			"date": "2022-11-15T22:14:33.000Z",
+			"author": {
+				"name": "Eleventy 🎈",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560424,
+			"url": "https://twitter.com/biilmann/status/1592642937598652417",
+			"date": "2022-11-15T22:17:20.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560425,
+			"url": "https://twitter.com/ryuran78/status/1592646737667452928",
+			"date": "2022-11-15T22:32:26.000Z",
+			"author": {
+				"name": "Yvain Liechti",
+				"url": "https://twitter.com/ryuran78",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/435b28d6c561faa8ea38ab4a8da6fe3f30bb7ec9d737a75ae1bef9c0201f2e0d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560489,
+			"url": "https://twitter.com/slightlylate/status/1592663377612263424",
+			"date": "2022-11-15T23:38:34.000Z",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://twitter.com/slightlylate",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4bbc603b5d24d29f406e79bb8c6d798006aa12861bfe2842ace1773eb438ba78.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560467,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#reblogged-by-109298416732830030",
+			"date": "2022-11-15T23:59:46.000Z",
+			"author": {
+				"name": "bahrusnikoffin",
+				"url": "https://mastodon.social/@bahrus",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560468,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#reblogged-by-109306582042187685",
+			"date": "2022-11-15T23:59:46.000Z",
+			"author": {
+				"name": "Cory Dransfeldt",
+				"url": "https://hachyderm.io/@cdme",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d3c6672b7d5dff18dde5f7309a556325974c290bc135fd5b627929b9ab90ea36.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560525,
+			"url": "https://twitter.com/develwoutacause/status/1592694377352417280",
+			"date": "2022-11-16T01:41:45.000Z",
+			"author": {
+				"name": "Doug Parker",
+				"url": "https://twitter.com/develwoutacause",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4bacd17a26571529236f35096031257096ec5d62deb7672db878d0389a475273.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560501,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#reblogged-by-109332518937677894",
+			"date": "2022-11-16T01:49:09.000Z",
+			"author": {
+				"name": "Doug Parker",
+				"url": "https://techhub.social/@develwithoutacause",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560673,
+			"url": "https://fediverse.zachleat.com/@zachleat/109350096015123188#reblogged-by-109292541793105707",
+			"date": "2022-11-16T09:09:03.000Z",
+			"author": {
+				"name": "schneyra",
+				"url": "https://mastodon.social/@schneyra",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/68268c720db1cf2af32705b8229d81021bb1e1588442f4859aeb27aa073f4839.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1560755,
+			"url": "https://twitter.com/perjerz34/status/1592855281566113793",
+			"date": "2022-11-16T12:21:07.000Z",
+			"author": {
+				"name": "Siwat Kaolueng",
+				"url": "https://twitter.com/perjerz34",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/db3711894c18780a2dd006bf85b5e9b1795fce4402d3e60ff5176eaf1b7b1b9b.png"
+			},
+			"via": "webmention"
+		}
+	]
+}

@@ -1,0 +1,279 @@
+{
+	"comments": [
+		{
+			"id": 1159684,
+			"parentId": 0,
+			"url": "https://websitedesign-usa.com/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-11T14:33:10.000Z",
+			"content": "<p> Like Jamstack, Netlify is creating</p>\n<p>this term. If your response is: terrific, a brand-new thing I require to learn about and discover, understand that while Dispersed Persistent Making (DPR) does include some brand-new things, this is in fact a push towards simplification and leverages concepts as old as the web is, much like Jamstack.</p>\n<p><span></span></p>\n<p>It’s most likely valuable to hear it right from Matt Biilmann, CEO of Netlify:</p>\n<p>\n\n</p>\n<p> Because brief video, he makes the point that Respond began extremely easy and fixed a great deal of clear issues with JavaScript architecture and, as time goes on and it attempts to resolve more use-cases, it’s getting a lot more complex and threats losing the appeal it as soon as had in its simpleness. Jamstack, too, faces this issue. The initial simpleness of it was incredibly attractive, however as it grows to accommodate more use-cases, things get made complex. Among those problems are websites with many-thousands of pages. Websites like that can have actually sluggish develop times. It’s good to see structures deal with that (Google “Incremental Constructs Your Favorite Structure “), however heck, if you alter one link in a website footer, you’re re-building the entire website based upon that a person modification. </p>\n<p>Rather of constructing many-thousands of pages throughout a develop, state you simply … didn’t. Up until that page is asked for as soon as, anyhow. That’s DPR. </p>\n<p><a href=\"https://www.zachleat.com/web/eleventy-cloud-authors-pages/\">Here’s Zach Leatherman</a> doing that. He discovers an area on his website that creates some 400 pages on each construct and informs Eleventy that rather of constructing it throughout the regular develop procedure, delay it to the cloud (actually a lambda will construct the page and run when required).</p>\n<p>\n\n</p>\n<p> Delaying those 400 pages conserves 7 seconds in the construct. State your website is more remarkable, like 16,000 pages. Scratch pad mathematics states you are conserving 4 minutes there. It’s not simply time either, although that’s a big deal. I consider all the electrical energy and long-lasting storage you conserve developing in this manner.</p>\n<p>Here’s <a href=\"https://www.netlify.com/blog/2021/04/29/keeping-it-simple-at-react-summit/\">the Netlify article</a>: </p>\n<blockquote>\n<p>Much like creating the term “Jamstack” didn’t indicate developing a totally brand-new architecture from scratch, calling this idea of “Dispersed Persistent Making” does not imply we’re producing a brand name brand-new solution.The term”DPR”</p>\n<p>is brand-new to us, however in a great deal of methods, we’re taking motivation from services that have actually operated in the past. We’re just remodeling them to fit with modern-day Jamstack finest practices.</p>\n</blockquote>\n<p>I like that it’s not like this totally brand-new thing. I make certain Netlify’s execution of it is no joke, however for us, it’s extremely simple to think of:</p>\n<ul><li>Some pages are pre-built as normal</li>\n<li>Some pages are not constructed (postponed)</li>\n<li>When the non-built pages are asked for the very first time, <em>then</em> they are developed and cached so they do not require to be constructed once again.</li>\n</ul><p>That’s it, truly. </p>\n<p>It advises me of how old WordPress caching plugins utilized to work. When a page was asked for the very first time it would run the PHP and MySQL questions and all that, then conserve the outcome as an <code>. html</code> file to the disk to serve subsequent demands. Not brand-new, however still effective. </p>\n<p>The technique to a DPR architecture on Netlify is utilizing their (beta) On-Demand Builders, so <a href=\"https://www.netlify.com/blog/2021/04/14/faster-builds-for-large-sites-on-netlify-with-on-demand-builders-now-in-early-access/\">here’s the article </a>that describes whatever and will get you to the docs and such.</p>\n\n\t\n\t\n\n\n<a title=\"Share on WhatsApp\"><i></i></a><a href=\"https://www.facebook.com/sharer.php?u=https://websitedesign-usa.com/distributed-persistent-rendering-dpr/\" title=\"Share on Facebook\"><i></i></a><a href=\"https://twitter.com/share?url=https://websitedesign-usa.com/distributed-persistent-rendering-dpr/\" title=\"Share on Twitter\"><i></i></a><a href=\"mailto:enteryour@addresshere.com?subject=Dispersed%20Relentless%20Making%20%28DPR%29&amp;body=Check%20this%20out:%20https://websitedesign-usa.com/distributed-persistent-rendering-dpr/\" title=\"Email to a Friend\"><i></i></a><a href=\"https://pinterest.com/pin/create/button/?url=https://websitedesign-usa.com/distributed-persistent-rendering-dpr/&amp;media=https://websitedesign-usa.com/wp-content/uploads/2021/05/dispersed-relentless-making-dpr-700x368.jpg&amp;description=Dispersed%20Relentless%20Making%20%28DPR%29\" title=\"Pin on Pinterest\"><i></i></a><a href=\"https://www.linkedin.com/shareArticle?mini=true&amp;url=https://websitedesign-usa.com/distributed-persistent-rendering-dpr/&amp;title=Dispersed%20Relentless%20Making%20%28DPR%29\" title=\"Share on LinkedIn\"><i></i></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1151800,
+			"parentId": 0,
+			"url": "https://www.67nj.org/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-11T15:00:49.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1151811,
+			"parentId": 0,
+			"url": "https://watchfvsslive.co/distributed-persistent-rendering-dpr-230846.html",
+			"author": {
+				"name": "admin",
+				"url": "https://watchfvsslive.co/author/admin"
+			},
+			"date": "2021-05-11T15:16:16.000Z",
+			"content": "<p>Like Jamstack, Netlify is coining this term.</p>\n<p>If your reaction is: <em>great, a new thing I need to know about and learn</em>, know that while Distributed Persistent Rendering (DPR) does involve some new things, this is actually a push toward simplification and leverages ideas as old as the web is, just like Jamstack.</p>\n<p><span></span></p>\n<p>It’s probably helpful to hear it right from Matt Biilmann, CEO of Netlify:</p>\n\n\n\n<p>In that short video, he makes the point that React started out very simple and solved a lot of clear problems with JavaScript architecture and, as time goes on and it tries to solve more use-cases, it’s getting a lot more complicated and risks losing the appeal it once had in its simplicity. </p>\n<p>Jamstack, too, faces this problem. The original simplicity of it was extremely appealing, but as it grows to accommodate more use-cases, things get complicated.</p>\n<p>One of those complications are sites with many-thousands of pages. Sites like that can have really slow build times. It’s nice to see frameworks tackle that (Google “Incremental Builds {Your Favorite Framework}”), but heck, if you change one link in a site footer, you’re re-building the whole site based on that one change. </p>\n<p>So instead of building many-thousands of pages during a build, say you just… didn’t. Until that page is requested once, anyway. That’s DPR. </p>\n<p><a href=\"https://www.zachleat.com/web/eleventy-cloud-authors-pages/\">Here’s Zach Leatherman</a> doing that. He finds a spot on his site that generates some 400 pages on each build and tells Eleventy that instead of building it during the normal build process, defer it to the cloud (literally a lambda will run and build the page when needed).</p>\n\n\n\n<p>Deferring those 400 pages saves seven seconds in the build. Say your site is more dramatic, like 16,000 pages. Scratch pad math says you are saving four minutes there. It’s not just time either, although that’s a biggie. I think of all the electricity and long-term storage you save building this way.</p>\n<p>Here’s <a href=\"https://www.netlify.com/blog/2021/04/29/keeping-it-simple-at-react-summit/\">the Netlify blog post</a>: </p>\n<blockquote>\n<p>Just like coining the term “Jamstack” didn’t mean inventing an entirely new architecture from scratch, naming this concept of “Distributed Persistent Rendering” doesn’t mean we’re creating a brand new solution.</p>\n<p>The term “DPR” is new to us, but in a lot of ways, we’re taking inspiration from solutions that have worked in the past. We’re simply reworking them to fit with modern Jamstack best practices.</p>\n</blockquote>\n<p>I like that it’s not like this entirely new thing. I’m sure Netlify’s implementation of it is no joke, but for us, it’s very easy to think about:</p>\n<ul><li>Some pages are pre-built as usual</li>\n<li>Some pages are not built (deferred)</li>\n<li>When the non-built pages are requested for the first time, <em>then</em> they are built and cached so they don’t need to be built again.</li>\n</ul><p>That’s it, really. </p>\n<p>It reminds me of how old WordPress caching plugins used to work. When a page was requested for the first time it would run the PHP and MySQL queries and all that, then save the result as an <code>.html</code> file to the disk to serve subsequent requests. Not new, but still efficient. </p>\n<p>The trick to a DPR architecture on Netlify is using their (beta) On-Demand Builders, so <a href=\"https://www.netlify.com/blog/2021/04/14/faster-builds-for-large-sites-on-netlify-with-on-demand-builders-now-in-early-access/\">here’s the blog post </a>that explains everything and will get you to the docs and such.bui</p>\n<p>The post <a href=\"https://css-tricks.com/distributed-persistent-rendering-dpr/\">Distributed Persistent Rendering (DPR)</a> appeared first on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>.</p>\n<p>You can support CSS-Tricks by being an <a href=\"https://css-tricks.com/product/mvp-supporter/\">MVP Supporter</a>.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1151827,
+			"parentId": 0,
+			"url": "https://pikopong.com/distributed-persistent-rendering-dpr-css-tricks/",
+			"author": {},
+			"date": "2021-05-11T15:37:25.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1151850,
+			"parentId": 0,
+			"url": "https://thedigitalgossip.com/articles/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-11T15:40:56.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1151859,
+			"parentId": 0,
+			"url": "https://mediastream.wpdesigns.live/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-11T15:48:40.000Z",
+			"content": "<img src=\"https://css-tricks.com/wp-json/social-image-generator/v1/image/340106\" alt=\"340106\" />\n<p>Like Jamstack, Netlify is coining this term.</p>\n<p>If your reaction is: <em>great, a new thing I need to know about and learn</em>, know that while Distributed Persistent Rendering (DPR) does involve some new things, this is actually a push toward simplification and leverages ideas as old as the web is, just like Jamstack.</p>\n<p><span></span></p>\n<p>It’s probably helpful to hear it right from Matt Biilmann, CEO of Netlify:</p>\n<p>\n[embedded content]\n</p>\n<p>In that short video, he makes the point that React started out very simple and solved a lot of clear problems with JavaScript architecture and, as time goes on and it tries to solve more use-cases, it’s getting a lot more complicated and risks losing the appeal it once had in its simplicity. </p>\n<p>Jamstack, too, faces this problem. The original simplicity of it was extremely appealing, but as it grows to accommodate more use-cases, things get complicated.</p>\n<p>One of those complications are sites with many-thousands of pages. Sites like that can have really slow build times. It’s nice to see frameworks tackle that (Google “Incremental Builds {Your Favorite Framework}”), but heck, if you change one link in a site footer, you’re re-building the whole site based on that one change. </p>\n<p>So instead of building many-thousands of pages during a build, say you just… didn’t. Until that page is requested once, anyway. That’s DPR. </p>\n<p><a href=\"https://www.zachleat.com/web/eleventy-cloud-authors-pages/\">Here’s Zach Leatherman</a> doing that. He finds a spot on his site that generates some 400 pages on each build and tells Eleventy that instead of building it during the normal build process, defer it to the cloud (literally a lambda will run and build the page when needed).</p>\n<p>\n[embedded content]\n</p>\n<p>Deferring those 400 pages saves seven seconds in the build. Say your site is more dramatic, like 16,000 pages. Scratch pad math says you are saving four minutes there. It’s not just time either, although that’s a biggie. I think of all the electricity and long-term storage you save building this way.</p>\n<p>Here’s <a href=\"https://www.netlify.com/blog/2021/04/29/keeping-it-simple-at-react-summit/\">the Netlify blog post</a>: </p>\n<blockquote>\n<p>Just like coining the term “Jamstack” didn’t mean inventing an entirely new architecture from scratch, naming this concept of “Distributed Persistent Rendering” doesn’t mean we’re creating a brand new solution.</p>\n<p>The term “DPR” is new to us, but in a lot of ways, we’re taking inspiration from solutions that have worked in the past. We’re simply reworking them to fit with modern Jamstack best practices.</p>\n</blockquote>\n<p>I like that it’s not like this entirely new thing. I’m sure Netlify’s implementation of it is no joke, but for us, it’s very easy to think about:</p>\n<ul><li>Some pages are pre-built as usual</li>\n<li>Some pages are not built (deferred)</li>\n<li>When the non-built pages are requested for the first time, <em>then</em> they are built and cached so they don’t need to be built again.</li>\n</ul><p>That’s it, really. </p>\n<p>It reminds me of how old WordPress caching plugins used to work. When a page was requested for the first time it would run the PHP and MySQL queries and all that, then save the result as an <code>.html</code> file to the disk to serve subsequent requests. Not new, but still efficient. </p>\n<p>The trick to a DPR architecture on Netlify is using their (beta) On-Demand Builders, so <a href=\"https://www.netlify.com/blog/2021/04/14/faster-builds-for-large-sites-on-netlify-with-on-demand-builders-now-in-early-access/\">here’s the blog post </a>that explains everything and will get you to the docs and such.bui</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1151925,
+			"parentId": 0,
+			"url": "https://portfolio.digitalskeleton.com.ng/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-11T16:28:00.000Z",
+			"content": "<p>Like Jamstack, Netlify is coining this term.</p>\n<p>If your reaction is: <em>great, a new thing I need to know about and learn</em>, know that while Distributed Persistent Rendering (DPR) does involve some new things, this is actually a push toward simplification and leverages ideas as old as the web is, just like Jamstack.</p>\n<p> <span></span> </p>\n<p>It’s probably helpful to hear it right from Matt Biilmann, CEO of Netlify:</p>\n\n\n\n<p>In that short video, he makes the point that React started out very simple and solved a lot of clear problems with JavaScript architecture and, as time goes on and it tries to solve more use-cases, it’s getting a lot more complicated and risks losing the appeal it once had in its simplicity. </p>\n<p>Jamstack, too, faces this problem. The original simplicity of it was extremely appealing, but as it grows to accommodate more use-cases, things get complicated.</p>\n<p>One of those complications are sites with many-thousands of pages. Sites like that can have really slow build times. It’s nice to see frameworks tackle that (Google “Incremental Builds {Your Favorite Framework}”), but heck, if you change one link in a site footer, you’re re-building the whole site based on that one change. </p>\n<p>So instead of building many-thousands of pages during a build, say you just… didn’t. Until that page is requested once, anyway. That’s DPR. </p>\n<p><a href=\"https://www.zachleat.com/web/eleventy-cloud-authors-pages/\">Here’s Zach Leatherman</a> doing that. He finds a spot on his site that generates some 400 pages on each build and tells Eleventy that instead of building it during the normal build process, defer it to the cloud (literally a lambda will run and build the page when needed).</p>\n\n\n\n<p>Deferring those 400 pages saves seven seconds in the build. Say your site is more dramatic, like 16,000 pages. Scratch pad math says you are saving four minutes there. It’s not just time either, although that’s a biggie. I think of all the electricity and long-term storage you save building this way.</p>\n<p>Here’s <a href=\"https://www.netlify.com/blog/2021/04/29/keeping-it-simple-at-react-summit/\">the Netlify blog post</a>: </p>\n<blockquote>\n<p>Just like coining the term “Jamstack” didn’t mean inventing an entirely new architecture from scratch, naming this concept of “Distributed Persistent Rendering” doesn’t mean we’re creating a brand new solution.</p>\n<p>The term “DPR” is new to us, but in a lot of ways, we’re taking inspiration from solutions that have worked in the past. We’re simply reworking them to fit with modern Jamstack best practices.</p>\n</blockquote>\n<p>I like that it’s not like this entirely new thing. I’m sure Netlify’s implementation of it is no joke, but for us, it’s very easy to think about:</p>\n<ul><li>Some pages are pre-built as usual</li>\n<li>Some pages are not built (deferred)</li>\n<li>When the non-built pages are requested for the first time, <em>then</em> they are built and cached so they don’t need to be built again.</li>\n</ul><p>That’s it, really. </p>\n<p>It reminds me of how old WordPress caching plugins used to work. When a page was requested for the first time it would run the PHP and MySQL queries and all that, then save the result as an <code>.html</code> file to the disk to serve subsequent requests. Not new, but still efficient. </p>\n<p>The trick to a DPR architecture on Netlify is using their (beta) On-Demand Builders, so <a href=\"https://www.netlify.com/blog/2021/04/14/faster-builds-for-large-sites-on-netlify-with-on-demand-builders-now-in-early-access/\">here’s the blog post </a>that explains everything and will get you to the docs and such.bui</p>\n<p>The post <a href=\"https://css-tricks.com/distributed-persistent-rendering-dpr/\">Distributed Persistent Rendering (DPR)</a> appeared first on <a href=\"https://css-tricks.com\">CSS-Tricks</a>.</p>\n<p>You can support CSS-Tricks by being an <a href=\"https://css-tricks.com/product/mvp-supporter/\">MVP Supporter</a>.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1151927,
+			"parentId": 0,
+			"url": "https://dztechno.com/distributed-persistent-rendering-dpr-css-tricks-dztechno/",
+			"author": {},
+			"date": "2021-05-11T16:28:42.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1151950,
+			"parentId": 0,
+			"url": "https://marketingsolution.com.au/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-11T16:45:12.000Z",
+			"content": "<h1>Distributed Persistent Rendering (DPR)</h1>\n<ul><li>May 12, 2021</li>\n<li><a href=\"https://marketingsolution.com.au/category/web-development/\">Web Development</a></li>\n</ul>\n\n\n\n\n\n\nNo Comments\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Like Jamstack, Netlify is coining this time period.</p>\n<p>In case your response is: <em>nice, a brand new factor I must find out about and study</em>, know that whereas Distributed Persistent Rendering (DPR) does contain some new issues, that is really a push towards simplification and leverages concepts as previous as the net is, similar to Jamstack.</p>\n<p><span></span></p>\n<p>It’s most likely useful to listen to it proper from Matt Biilmann, CEO of Netlify:</p>\n\n<p>In that brief video, he makes the purpose that React began out quite simple and solved loads of clear issues with JavaScript structure and, as time goes on and it tries to unravel extra use-cases, it’s getting much more difficult and dangers dropping the attraction it as soon as had in its simplicity.</p>\n<p>Jamstack, too, faces this downside. The unique simplicity of it was extraordinarily interesting, however because it grows to accommodate extra use-cases, issues get difficult.</p>\n<p>A kind of issues are websites with many-thousands of pages. Websites like that may have actually sluggish construct instances. It’s good to see frameworks sort out that (Google “Incremental Builds {Your Favourite Framework}”), however heck, should you change one hyperlink in a website footer, you’re re-building the entire website based mostly on that one change.</p>\n<p>So as a substitute of constructing many-thousands of pages throughout a construct, say you simply… didn’t. Till that web page is requested as soon as, anyway. That’s DPR.</p>\n<p><a href=\"https://www.zachleat.com/web/eleventy-cloud-authors-pages/\">Right here’s Zach Leatherman</a> doing that. He finds a spot on his website that generates some 400 pages on every construct and tells Eleventy that as a substitute of constructing it through the regular construct course of, defer it to the cloud (actually a lambda will run and construct the web page when wanted).</p>\n\n<p>Deferring these 400 pages saves seven seconds within the construct. Say your website is extra dramatic, like 16,000 pages. Scratch pad math says you’re saving 4 minutes there. It’s not simply time both, though that’s a biggie. I consider all of the electrical energy and long-term storage you save constructing this manner.</p>\n<p>Right here’s <a href=\"https://www.netlify.com/blog/2021/04/29/keeping-it-simple-at-react-summit/\">the Netlify weblog publish</a>:</p>\n<p>Similar to coining the time period “Jamstack” didn’t imply inventing a wholly new structure from scratch, naming this idea of “Distributed Persistent Rendering” doesn’t imply we’re making a model new answer.</p>\n<p>The time period “DPR” is new to us, however in loads of methods, we’re taking inspiration from options which have labored up to now. We’re merely transforming them to suit with trendy Jamstack finest practices.</p>\n<p>I like that it’s not like this solely new factor. I’m positive Netlify’s implementation of it’s no joke, however for us, it’s very simple to consider:</p>\n<p>Some pages are pre-built as usualSome pages should not constructed (deferred)When the non-built pages are requested for the primary time, <em>then</em> they’re constructed and cached so that they don’t must be constructed once more.</p>\n<p>That’s it, actually.</p>\n<p>It jogs my memory of how previous WordPress caching plugins used to work. When a web page was requested for the primary time it might run the PHP and MySQL queries and all that, then save the outcome as an .html file to the disk to serve subsequent requests. Not new, however nonetheless environment friendly.</p>\n<p>The trick to a DPR structure on Netlify is utilizing their (beta) On-Demand Builders, so <a href=\"https://www.netlify.com/blog/2021/04/14/faster-builds-for-large-sites-on-netlify-with-on-demand-builders-now-in-early-access/\">right here’s the weblog publish </a>that explains all the pieces and can get you to the docs and such.bui</p>\n<p>The publish <a href=\"https://css-tricks.com/distributed-persistent-rendering-dpr/\">Distributed Persistent Rendering (DPR)</a> appeared first on <a href=\"https://css-tricks.com/\">CSS-Methods</a>.</p>\n<p>You possibly can help CSS-Methods by being an <a href=\"https://css-tricks.com/product/mvp-supporter/\">MVP Supporter</a>.</p>\n\n\n\n\n\n\n<ul><li> <a href=\"https://marketingsolution.com.au/author/\"></a>\n</li></ul>\n<p></p>\n\n\n\n\n\n\n\n\n<h2>About us and this blog</h2>\n<p>We are a digital marketing company with a focus on helping our customers achieve great results across several key areas.</p>\n\n <a href=\"https://marketingsolution.com.au/about/\"> <span></span> <span>Learn more about us</span> </a>\n\n\n\n\n\n\n <span></span>\n\n\n<h4>Request a free quote</h4>\n<p>We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings even when it comes to highly competitive keywords.</p>\n <a href=\"https://marketingsolution.com.au/contact-us/\"> <span></span> <span> Contact now </span> </a>\n\n\n\n\n\n\n\n<h2>Subscribe to our newsletter!</h2>\n  Notice: JavaScript is required for this content.\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n<h2>More from our blog</h2> <span><a href=\"https://marketingsolution.com.au/distributed-persistent-rendering-dpr/#\">See all posts</a></span>\n\n\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/distributed-persistent-rendering-dpr/\">Distributed Persistent Rendering (DPR)</a></h2>\n Like Jamstack, Netlify is coining this time period. In case your response…\n <a href=\"https://marketingsolution.com.au/distributed-persistent-rendering-dpr/\"> <span></span> Continue reading </a>\n\n\n\n <a href=\"https://marketingsolution.com.au/subsequent-gen-css-container/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/05/chrome-canary-conatiner-query-flag-wDJT4R-400x330.png\" alt=\"\" title=\"Next Gen CSS: @container\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/subsequent-gen-css-container/\">Subsequent Gen CSS: @container</a></h2>\n Chrome is experimenting with @container, a property inside the CSS Working Group…\n <a href=\"https://marketingsolution.com.au/subsequent-gen-css-container/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/a-primer-on-css-container-queries/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/05/smashing-articles-original-Qq44mu-400x330.png\" alt=\"\" title=\"A Primer On CSS Container Queries\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/a-primer-on-css-container-queries/\">A Primer On CSS Container Queries</a></h2>\n At current, container queries can be utilized in Chrome Canary by visiting…\n <a href=\"https://marketingsolution.com.au/a-primer-on-css-container-queries/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/the-convention-platform-we-use-for-our-on-line-occasions-hopin/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/05/hopin-6KmycM-400x330.png\" alt=\"\" title=\"The Conference Platform We Use For Our Online Events: Hopin\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/the-convention-platform-we-use-for-our-on-line-occasions-hopin/\">The Convention Platform We Use For Our On-line Occasions: Hopin</a></h2>\n When the Smashing staff first heard of COVID-19, we didn’t know what…\n <a href=\"https://marketingsolution.com.au/the-convention-platform-we-use-for-our-on-line-occasions-hopin/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/how-one-can-embed-fb-standing-posts-in-wordpress/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/05/how-to-embed-facebook-status-in-wordpress-yQ5bPj-400x330.png\" alt=\"\" title=\"How to Embed Facebook Status Posts in WordPress\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/how-one-can-embed-fb-standing-posts-in-wordpress/\">How one can Embed Fb Standing Posts in WordPress</a></h2>\n Are you searching for a solution to show your Fb standing in…\n <a href=\"https://marketingsolution.com.au/how-one-can-embed-fb-standing-posts-in-wordpress/\"> <span></span> Continue reading </a>\n\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/migrating-from-parcel-to-snowpack/\">Migrating from Parcel to Snowpack</a></h2>\n I discover construct tooling endlessly fascinating, particularly proper now as we’re in…\n <a href=\"https://marketingsolution.com.au/migrating-from-parcel-to-snowpack/\"> <span></span> Continue reading </a>\n\n\n\n <a href=\"https://marketingsolution.com.au/topframe/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/05/topframe-TWbyVs-400x330.gif\" alt=\"\" title=\"Topframe\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/topframe/\">Topframe</a></h2>\n That is extraordinarily enjoyable. Jeff Lindsay has created Topframe, and writes: Anyone…\n <a href=\"https://marketingsolution.com.au/topframe/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/variable-side-ratio-card-with-conic-gradients-assembly-alongside-the-diagonal/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/05/var_cards-ts2oB0-400x330.png\" alt=\"\" title=\"Variable Aspect Ratio Card With Conic Gradients Meeting Along the Diagonal\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/variable-side-ratio-card-with-conic-gradients-assembly-alongside-the-diagonal/\">Variable Side Ratio Card With Conic Gradients Assembly Alongside the Diagonal</a></h2>\n I lately got here throughout an fascinating drawback. I needed to implement…\n <a href=\"https://marketingsolution.com.au/variable-side-ratio-card-with-conic-gradients-assembly-alongside-the-diagonal/\"> <span></span> Continue reading </a>\n\n\n\n\n\n\n\n\n\n\n\n\n <a href=\"https://marketingsolution.com.au/distributed-persistent-rendering-dpr/\"> <span></span> <span>Prev. Post</span> </a>\n\n <a href=\"https://marketingsolution.com.au\"> <span></span> <span>All Posts</span> </a>\n\n <a href=\"https://marketingsolution.com.au/subsequent-gen-css-container/\"> <span></span> <span>Next Post</span> </a>\n\n\n<ul><li><span title=\"Total:\"><span>Total: </span><span>0</span></span></li>\n<li> <a href=\"https://www.facebook.com/sharer/sharer.php?u=https://marketingsolution.com.au/distributed-persistent-rendering-dpr/&amp;t=Distributed+Persistent+Rendering+%28DPR%29\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/distributed-persistent-rendering-dpr/#\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://plus.google.com/share?url=https://marketingsolution.com.au/distributed-persistent-rendering-dpr/\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/distributed-persistent-rendering-dpr/#\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=EasySocialShareButtons&amp;title=Distributed+Persistent+Rendering+%28DPR%29&amp;url=https://marketingsolution.com.au/distributed-persistent-rendering-dpr/\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n</ul>\n\n\n\n\n\n\nNo Comments\n\n\n\n\n\n\n\n<h3><span>Recent Posts</span></h3>\n<ul><li> <a href=\"https://marketingsolution.com.au/distributed-persistent-rendering-dpr/\">Distributed Persistent Rendering (DPR)</a> <span>May 12, 2021</span>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/subsequent-gen-css-container/\">Subsequent Gen CSS: @container</a> <span>May 12, 2021</span>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/a-primer-on-css-container-queries/\">A Primer On CSS Container Queries</a> <span>May 12, 2021</span>\n</li>\n</ul>\n\n<h3><span>All Website Tags</span></h3>\n\n<a href=\"https://marketingsolution.com.au/tag/absolute/\" style=\"font-size:8pt;\">absolute</a> <a href=\"https://marketingsolution.com.au/tag/all/\" style=\"font-size:8pt;\">all</a> <a href=\"https://marketingsolution.com.au/tag/anchor/\" style=\"font-size:8pt;\">anchor</a> <a href=\"https://marketingsolution.com.au/tag/any/\" style=\"font-size:8pt;\">any</a> <a href=\"https://marketingsolution.com.au/tag/back-links/\" style=\"font-size:8pt;\">back-links</a> <a href=\"https://marketingsolution.com.au/tag/branding/\" style=\"font-size:8pt;\">branding</a> <a href=\"https://marketingsolution.com.au/tag/can/\" style=\"font-size:8pt;\">can</a> <a href=\"https://marketingsolution.com.au/tag/company/\" style=\"font-size:8pt;\">company</a> <a href=\"https://marketingsolution.com.au/tag/discounts/\" style=\"font-size:8pt;\">discounts</a> <a href=\"https://marketingsolution.com.au/tag/engine/\" style=\"font-size:22pt;\">engine</a> <a href=\"https://marketingsolution.com.au/tag/google/\" style=\"font-size:8pt;\">google</a> <a href=\"https://marketingsolution.com.au/tag/hurt/\" style=\"font-size:8pt;\">hurt</a> <a href=\"https://marketingsolution.com.au/tag/images/\" style=\"font-size:8pt;\">images</a> <a href=\"https://marketingsolution.com.au/tag/importance/\" style=\"font-size:8pt;\">importance</a> <a href=\"https://marketingsolution.com.au/tag/in/\" style=\"font-size:8pt;\">in</a> <a href=\"https://marketingsolution.com.au/tag/inbound/\" style=\"font-size:8pt;\">inbound</a> <a href=\"https://marketingsolution.com.au/tag/incorporation/\" style=\"font-size:8pt;\">incorporation</a> <a href=\"https://marketingsolution.com.au/tag/linking/\" style=\"font-size:8pt;\">linking</a> <a href=\"https://marketingsolution.com.au/tag/links/\" style=\"font-size:22pt;\">links</a> <a href=\"https://marketingsolution.com.au/tag/my/\" style=\"font-size:8pt;\">my</a> <a href=\"https://marketingsolution.com.au/tag/of/\" style=\"font-size:8pt;\">of</a> <a href=\"https://marketingsolution.com.au/tag/optimization/\" style=\"font-size:8pt;\">optimization</a> <a href=\"https://marketingsolution.com.au/tag/ranking/\" style=\"font-size:8pt;\">ranking</a> <a href=\"https://marketingsolution.com.au/tag/reciprocal/\" style=\"font-size:8pt;\">reciprocal</a> <a href=\"https://marketingsolution.com.au/tag/relative/\" style=\"font-size:8pt;\">relative</a> <a href=\"https://marketingsolution.com.au/tag/search/\" style=\"font-size:22pt;\">search</a> <a href=\"https://marketingsolution.com.au/tag/search-engine-submission/\" style=\"font-size:8pt;\">search engine submission</a> <a href=\"https://marketingsolution.com.au/tag/seo/\" style=\"font-size:8pt;\">seo</a> <a href=\"https://marketingsolution.com.au/tag/strategic/\" style=\"font-size:8pt;\">strategic</a> <a href=\"https://marketingsolution.com.au/tag/submission/\" style=\"font-size:8pt;\">submission</a> <a href=\"https://marketingsolution.com.au/tag/text/\" style=\"font-size:8pt;\">text</a> <a href=\"https://marketingsolution.com.au/tag/the/\" style=\"font-size:8pt;\">the</a> <a href=\"https://marketingsolution.com.au/tag/vs/\" style=\"font-size:8pt;\">vs</a>\n\n\n\n\n\n\n\n<h3>Leave a Comment <a href=\"https://marketingsolution.com.au/distributed-persistent-rendering-dpr/#respond\">cancel</a>\n</h3>\n\n\n\n\n\n<p>Save my name, email, and website in this browser for the next time I comment.</p>\n\n<p></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1152130,
+			"parentId": 0,
+			"url": "https://wpguynews.com/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-11T19:52:35.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1152514,
+			"parentId": 0,
+			"url": "https://wawas-kingdom.com/2021/05/11/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-12T02:15:13.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1153216,
+			"parentId": 0,
+			"url": "https://websitedevelopment.top/2021/05/12/distributed-persistent-rendering-dpr-css-tricks/",
+			"author": {},
+			"date": "2021-05-12T10:55:06.000Z",
+			"content": "<p></p>\n\n<p>Like Jamstack, Netlify is the one that covers this term.</p>\n<p>If your reaction is: <em>well, something new I need to know and find out</em>, know that although the Distribution of Continuous Delivery (DPR) has included some new things, it is actually a push towards simplification and use of ideas that are old on the web, such as Jamstack.</p>\n<p><span></span></p>\n<p>It might help to hear this directly from Matt Biilmann, CEO of Netlify:</p>\n<p>\n\n</p>\n<p>In that short video, he makes the point that React started out very simple and solved many obvious JavaScript architecture problems and, as time went on and it tried to solve many use cases, much more complicated and risk losing the appeal it once had with simplicity. </p>\n<p>Jamstack, too, faces this problem. Its original simplicity was more appealing, but as it grew to accommodate the more sophisticated devices used, things became complicated.</p>\n<p>One of the complications is sites with thousands of pages. Sites like that have slow build times. It’s nice to see frameworks that point to that (Google “Incremental Builds {Your Favorite Framework}”), but heck, if you change a link in a footer on the site, you’re building the entire site in harmony with one block. -o. </p>\n<p>So instead of giving away thousands of pages during a build, say you… don’t. Until the page is requested once, anyway. Mao na The DPR. </p>\n<p><a href=\"https://www.zachleat.com/web/eleventy-cloud-authors-pages/\">Here is Zach Leatherman</a> to do that. He found an area on his site that generated about 400 pages per build and told onseventy that instead of building it during the usual construction process, it would be extended to the cloud (literally a lambda would run and build the page if necessary).</p>\n<p>\n\n</p>\n<p>Stopping at 400 pages saves seven seconds of build. Say your site is more dramatic, like 16,000 pages. The math on the scratch pad says you keep it there for four minutes. It’s not just time either, even if that’s a big one. I think of all the power and long -term storage you save on building this way.</p>\n<p>it <a href=\"https://www.netlify.com/blog/2021/04/29/keeping-it-simple-at-react-summit/\">the Netlify blog post</a>: </p>\n<blockquote>\n<p>Just as having the term “Jamstack” doesn’t mean inventing a new architecture from scratch, naming this concept of “Distributed Continuous Delivery” doesn’t mean we’re creating a new solution.</p>\n<p>The term “DPR” is new to us, but in many ways, we draw inspiration from solutions that have worked in the past. We simply modified them to fit modern Jamstack’s best techniques.</p>\n</blockquote>\n<p>I wish it wasn’t like something completely new. I’m sure Netlify’s implementation of this isn’t a joke, but for us, it’s very easy to think about:</p>\n<ul><li>Some pages are pre -constructed as usual</li>\n<li>Some pages were not created (removed)</li>\n<li>If unstructured pages are requested for the first time, <em>and</em> they are built and cached so they don’t have to be rebuilt.</li>\n</ul><p>That’s exactly it. </p>\n<p>It reminded me of what old WordPress caching plugins were used in the past. If a page is requested for the first time it will run PHP and MySQL queries and all, save the result as a <code>.html</code> disk file to deliver subsequent requests. Not new, but still effective. </p>\n<p>The deception of a DPR architecture on Netlify uses their (beta) On-Demand Builders, so <a href=\"https://www.netlify.com/blog/2021/04/14/faster-builds-for-large-sites-on-netlify-with-on-demand-builders-now-in-early-access/\">said the blog post </a>which explains everything and takes you to the documents etc.bui</p>\n\n\n\n\n<h2>Continue Reading</h2>\n<a href=\"https://websitedevelopment.top/2021/05/12/javascript-remove-asterisk-hasclass-remove-class-jquery-error/\"><span>Previous:</span> javascript – remove asterisk …. hasClass &amp; remove Class JQuery Error</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1154307,
+			"parentId": 0,
+			"url": "https://pixallus.com/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-13T01:09:18.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1154851,
+			"parentId": 0,
+			"url": "https://htmltreehouse.com/distributed-persistent-rendering-dpr-css-tricks/",
+			"author": {},
+			"date": "2021-05-13T12:54:35.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1158538,
+			"parentId": 0,
+			"url": "https://css-tricks.com/distributed-persistent-rendering-dpr/",
+			"author": {},
+			"date": "2021-05-15T17:42:23.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1159975,
+			"parentId": 0,
+			"url": "http://thesoftpedia.com/distributed-persistent-rendering-dpr-css-tricks/",
+			"author": {},
+			"date": "2021-05-16T18:06:40.000Z",
+			"content": "<p></p>\n\n<p>Like Jamstack, Netlify is coining this term.</p>\n<p>If your reaction is: <em>great, a new thing I need to know about and learn</em>, know that while Distributed Persistent Rendering (DPR) does involve some new things, this is actually a push toward simplification and leverages ideas as old as the web is, just like Jamstack.</p>\n<p><span></span></p>\n<p>It’s probably helpful to hear it right from Matt Biilmann, CEO of Netlify:</p>\n<p>\n\n</p>\n<p>In that short video, he makes the point that React started out very simple and solved a lot of clear problems with JavaScript architecture and, as time goes on and it tries to solve more use-cases, it’s getting a lot more complicated and risks losing the appeal it once had in its simplicity. </p>\n<p>Jamstack, too, faces this problem. The original simplicity of it was extremely appealing, but as it grows to accommodate more use-cases, things get complicated.</p>\n<p>One of those complications are sites with many-thousands of pages. Sites like that can have really slow build times. It’s nice to see frameworks tackle that (Google “Incremental Builds Your Favorite Framework”), but heck, if you change one link in a site footer, you’re re-building the whole site based on that one change. </p>\n<p>So instead of building many-thousands of pages during a build, say you just… didn’t. Until that page is requested once, anyway. That’s DPR. </p>\n<p><a href=\"https://www.zachleat.com/web/eleventy-cloud-authors-pages/\">Here’s Zach Leatherman</a> doing that. He finds a spot on his site that generates some 400 pages on each build and tells Eleventy that instead of building it during the normal build process, defer it to the cloud (literally a lambda will run and build the page when needed).</p>\n<p>\n\n</p>\n<p>Deferring those 400 pages saves seven seconds in the build. Say your site is more dramatic, like 16,000 pages. Scratch pad math says you are saving four minutes there. It’s not just time either, although that’s a biggie. I think of all the electricity and long-term storage you save building this way.</p>\n<p>Here’s <a href=\"https://www.netlify.com/blog/2021/04/29/keeping-it-simple-at-react-summit/\">the Netlify blog post</a>: </p>\n<blockquote>\n<p>Just like coining the term “Jamstack” didn’t mean inventing an entirely new architecture from scratch, naming this concept of “Distributed Persistent Rendering” doesn’t mean we’re creating a brand new solution.</p>\n<p>The term “DPR” is new to us, but in a lot of ways, we’re taking inspiration from solutions that have worked in the past. We’re simply reworking them to fit with modern Jamstack best practices.</p>\n</blockquote>\n<p>I like that it’s not like this entirely new thing. I’m sure Netlify’s implementation of it is no joke, but for us, it’s very easy to think about:</p>\n<ul><li>Some pages are pre-built as usual</li>\n<li>Some pages are not built (deferred)</li>\n<li>When the non-built pages are requested for the first time, <em>then</em> they are built and cached so they don’t need to be built again.</li>\n</ul><p>That’s it, really. </p>\n<p>It reminds me of how old WordPress caching plugins used to work. When a page was requested for the first time it would run the PHP and MySQL queries and all that, then save the result as an <code>.html</code> file to the disk to serve subsequent requests. Not new, but still efficient. </p>\n<p>The trick to a DPR architecture on Netlify is using their (beta) On-Demand Builders, so <a href=\"https://www.netlify.com/blog/2021/04/14/faster-builds-for-large-sites-on-netlify-with-on-demand-builders-now-in-early-access/\">here’s the blog post </a>that explains everything and will get you to the docs and such.</p>\n\n\n\t\t\t\t<span></span>\n\t\t\t\t<span>Post Views: </span>\n\t\t\t\t<span>1</span>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1160085,
+			"parentId": 0,
+			"url": "https://technologynews.biz/distributed-persistent-rendering-dpr-css-tricks/",
+			"author": {},
+			"date": "2021-05-16T21:48:40.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1160152,
+			"parentId": 0,
+			"url": "https://tipsxd.com/distributed-persistent-rendering-dpr-css-tricks/",
+			"author": {},
+			"date": "2021-05-17T00:12:37.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1168015,
+			"parentId": 0,
+			"url": "https://www.petergoes.nl/replies/2021-05-21-09-10/",
+			"author": {
+				"name": "Peter Goes",
+				"url": "https://www.petergoes.nl",
+				"avatarUrl": "https://avatars.webmention.io/www.gravatar.com/2c9c3554f50c23bb019b525b775c45a5d5d60980111993dd403d7274a3dc7318.jpg"
+			},
+			"date": "2021-05-21T14:09:24.000Z",
+			"content": "<p>Awesome! Can't wait to try this out. Will Eleventy Cloud come bundled in 1.0?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1227839,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/eleventy-serverless-formerly-eleventy-cloud-thus-far/",
+			"author": {},
+			"date": "2021-07-23T00:43:01.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1234340,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-793371007281197056",
+			"date": "2021-07-31T11:53:50.000Z",
+			"author": {
+				"name": "Eugene Chulkov",
+				"url": "https://twitter.com/dev99problems",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b7775d82fa76d393892face873a16706611c9baf4d00fddbf7ed99f2143509b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234387,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-24203304",
+			"date": "2021-07-31T14:50:22.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234389,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-289095641",
+			"date": "2021-07-31T14:50:46.000Z",
+			"author": {
+				"name": "TRST_Blog",
+				"url": "https://twitter.com/trst_blog",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8c872b78457b09bb978c4fd62406b1225e0736e1c6a1c13419921a86abd9d683.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234475,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-24659084",
+			"date": "2021-07-31T23:34:06.000Z",
+			"author": {
+				"name": "Dave Pedu",
+				"url": "https://twitter.com/dpedu",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eb10c6e0e6d426b27ed0d02efc7c4087e8224071e83fab2153c36cdaa46f4603.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234479,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-23724008",
+			"date": "2021-07-31T23:34:34.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234482,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-1226126702",
+			"date": "2021-07-31T23:34:36.000Z",
+			"author": {
+				"name": "Mathias Rechtzigel",
+				"url": "https://twitter.com/MathiasaurusRex",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/69cec7766d780bb9a46107a9fe1c0a69691418b60a4ae7ed2d0a88d472ce3795.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

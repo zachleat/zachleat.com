@@ -1,0 +1,16 @@
+---
+title: The State of Eleventy (2020) in Two Minutes
+date: 2020-10-06
+tags:
+  - eleventy
+  - video
+  - speaking
+metadata:
+  youtubeId: ix5mPa6D7ZA
+medialength: 2 min
+---
+Originally recorded for [Jamstack Conf Virtual October](https://jamstackconf.com/virtual/), this is a two minute update on what’s new in Eleventy:
+
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
+
+Also posted [on Twitter](https://twitter.com/zachleat/status/1316784869540851713).

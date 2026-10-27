@@ -1,0 +1,396 @@
+{
+	"comments": [
+		{
+			"id": 747540,
+			"parentId": 0,
+			"url": "https://twitter.com/philhawksworth/status/1220351473223192577",
+			"author": {
+				"name": "Phil Hawksworth",
+				"url": "https://twitter.com/philhawksworth",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fd1185da1ed09664bc011181408cfd1571fc310d9fccaa93ee40f50c93cedd54.jpg"
+			},
+			"date": "2020-01-23T14:23:58.000Z",
+			"content": "No big deal. https://t.co/4sU2VTosap\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/netlify/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 748693,
+			"parentId": 0,
+			"url": "https://twitter.com/pinboard_pop/status/1221115532855910405",
+			"author": {
+				"name": "Pinboard Popular",
+				"url": "https://twitter.com/pinboard_pop",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/de70cc4973e180a14044184f3ab73c006fca55cd9ae79dfa8c4dae696e6915d8.jpg"
+			},
+			"date": "2020-01-25T17:00:04.000Z",
+			"content": "Now Deploying to Netlify—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/netlify/\">zachleat.com/web/netlify/</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 752240,
+			"parentId": 0,
+			"url": "https://www.webmastersgallery.com/2020/02/04/possibly-the-easiest-way-to-run-an-ssg/",
+			"author": {},
+			"date": "2020-02-04T17:15:57.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 752261,
+			"parentId": 0,
+			"url": "https://rssfeeds.cloudsite.builders/2020/02/04/possibly-the-easiest-way-to-run-an-ssg/",
+			"author": {},
+			"date": "2020-02-04T17:29:39.000Z",
+			"content": "<h2 class=\"p-name\">Possibly The Easiest Way to Run an SSG</h2> \n                            \n<p>“Static Site Generator,” that is. We’ll get to that in a second. </p>\n<p><a href=\"https://www.netlify.com/\">Netlify</a> is a sponsor of this site (thank you very much), and I see Zach Leatherman has <a href=\"https://www.zachleat.com/web/netlify/\">gone to work</a> over there now. Very cool. Zach is the creator of <a href=\"https://www.11ty.dev/\">Eleventy</a>, an SSG for Node. One thing of the many notable things about Eleventy is that you <em>don’t even have to install it</em> if you don’t want to. Lemme set the stage.</p>\n<p><span></span></p>\n<p>Say you have a three-page website, and one of the reasons you want to reach for an SSG is because you want to repeat the navigation on all three pages. An “HTML include,” one of the oldest needs in web development, is in there! <a href=\"https://css-tricks.com/the-simplest-ways-to-handle-html-includes/\">We’ve covered many ways to do it</a> in the past. So we have…</p>\n<pre><code>/my_project\n- index.html\n- about.html\n- contact.html</code></pre>\n<p>And each of those HTML files needs this repeated chunk of navigation.</p>\n<pre><code>&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en\"&gt;\n  &lt;head&gt;\n    &lt;title&gt;Southside Laundromat&lt;/title&gt;\n  &lt;/head&gt;\n  &lt;body&gt;\n    {{ INCLUDE NAVIGATION HERE }}\n\n    Unique content to this page.\n\n  &lt;/body&gt;\n&lt;/html&gt;</code></pre>\n<p>Well why don’t we chuck that block of navigation into a file, so…</p>\n<pre><code>/my_project\n- /_includes\n  - nav.html\n- index.html\n- about.html\n- contact.html</code></pre>\n<p>Which is something like…</p>\n<pre><code>&lt;nav&gt;\n  &lt;a href=\"/\"&gt;Home&lt;/a&gt;\n  &lt;a href=\"/about/\"&gt;About&lt;/a&gt;\n  &lt;a href=\"/contact/\"&gt;Contact&lt;/a&gt;\n&lt;/nav&gt;</code></pre>\n<p>So how do we actually do the include? This is where Eleventy comes in. Eleventy supports a bunch of templating languages, but the default one is <a href=\"https://shopify.github.io/liquid/\">Liquid</a>. Liquid supports file includes! Like this…</p>\n<pre><code>{% include ./nav.html %}</code></pre>\n<p>So that’s the line I put in each of the three HTML files. How do I process it then? Isn’t this the moment where I have to <em>install</em> Eleventy to get that all going? Nope, I can run a single command on the command line to make this happen (assuming I have npm installed):</p>\n<pre><code>npx @11ty/eleventy</code></pre>\n<p>Here’s a 30-second video showing it work:</p>\n<p>There is no <code>package.json</code>. There is no <code>npm install</code>. In a sense, this is a zero-dependency way to processes a static site, which I think is very cool. Eleventy process it all into a <code>_site</code> folder by default. </p>\n<p>Say I want to deploy this static site… over on the Netlify side, I can tell it that what I want deployed is that <code>_site</code> folder. I don’t need to commit it either (and you shouldn’t), so I can put that in a <code>.gitignore</code> file. Netlify can build it with the same exact command.</p>\n<p>I could chuck those settings into a file if that is easier to manage than the site itself. Here’s what would go into a <code>netlify.yml</code> file:</p>\n<pre><code>build:\n  command: \"npx @11ty/eleventy\"\n  publish: _site</code></pre>\n<p>As I was working on this baby demo, I ended up wanting a smidge of configuration for Eleventy in that I wanted my CSS files to come over to the processesed site, so…</p>\n<pre><code>module.exports = function(eleventyConfig) {\n  eleventyConfig.addPassthroughCopy(\"./styles\");\n};</code></pre>\n<p>That’s all.</p>\n<p>The post <a href=\"https://css-tricks.com/possibly-the-easiest-way-to-run-an-ssg/\">Possibly The Easiest Way to Run an SSG</a> appeared first on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>.</p>\n\n\n<h3>Share this:</h3>\n<ul><li><a href=\"https://rssfeeds.cloudsite.builders/2020/02/04/possibly-the-easiest-way-to-run-an-ssg/?share=facebook\" title=\"Click to share on Facebook\"><span>Facebook</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2020/02/04/possibly-the-easiest-way-to-run-an-ssg/?share=linkedin\" title=\"Click to share on LinkedIn\"><span>LinkedIn</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2020/02/04/possibly-the-easiest-way-to-run-an-ssg/?share=reddit\" title=\"Click to share on Reddit\"><span>Reddit</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2020/02/04/possibly-the-easiest-way-to-run-an-ssg/?share=twitter\" title=\"Click to share on Twitter\"><span>Twitter</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2020/02/04/possibly-the-easiest-way-to-run-an-ssg/?share=tumblr\" title=\"Click to share on Tumblr\"><span>Tumblr</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2020/02/04/possibly-the-easiest-way-to-run-an-ssg/?share=pinterest\" title=\"Click to share on Pinterest\"><span>Pinterest</span></a></li>\n<li>\n</li></ul>\n\n\n\t<h3><em>Related</em></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 752324,
+			"parentId": 0,
+			"url": "https://www.makemoneyupdaters.tk/possibly-the-easiest-way-to-run-an-ssg/",
+			"author": {},
+			"date": "2020-02-04T20:09:59.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 752447,
+			"parentId": 0,
+			"url": "http://codingnova.com/index.php/2020/02/05/possibly-the-easiest-way-to-run-an-ssg/",
+			"author": {
+				"name": "codingnova",
+				"url": "http://codingnova.com/index.php/author/robertteah/"
+			},
+			"date": "2020-02-05T03:16:29.000Z",
+			"content": "<p> <br /></p>\n<p>“Static Site Generator,” that is. We’ll get to that in a second. </p>\n<p><a href=\"https://www.netlify.com/\">Netlify</a> is a sponsor of this site (thank you very much), and I see Zach Leatherman has <a href=\"https://www.zachleat.com/web/netlify/\">gone to work</a> over there now. Very cool. Zach is the creator of <a href=\"https://www.11ty.dev/\">Eleventy</a>, an SSG for Node. One thing of the many notable things about Eleventy is that you <em>don’t even have to install it</em> if you don’t want to. Lemme set the stage.</p>\n<p><span></span></p>\n<p>Say you have a three-page website, and one of the reasons you want to reach for an SSG is because you want to repeat the navigation on all three pages. An “HTML include,” one of the oldest needs in web development, is in there! <a href=\"https://css-tricks.com/the-simplest-ways-to-handle-html-includes/\">We’ve covered many ways to do it</a> in the past. So we have…</p>\n<pre><code>/my_project\n- index.html\n- about.html\n- contact.html</code></pre>\n<p>And each of those HTML files needs this repeated chunk of navigation.</p>\n<pre><code>&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en\"&gt;\n  &lt;head&gt;\n    &lt;title&gt;Southside Laundromat&lt;/title&gt;\n  &lt;/head&gt;\n  &lt;body&gt;\n    {{ INCLUDE NAVIGATION HERE }}\n\n    Unique content to this page.\n\n  &lt;/body&gt;\n&lt;/html&gt;</code></pre>\n<p>Well why don’t we chuck that block of navigation into a file, so…</p>\n<pre><code>/my_project\n- /_includes\n  - nav.html\n- index.html\n- about.html\n- contact.html</code></pre>\n<p>Which is something like…</p>\n<pre><code>&lt;nav&gt;\n  &lt;a href=\"/\"&gt;Home&lt;/a&gt;\n  &lt;a href=\"http://css-tricks.com/about/\"&gt;About&lt;/a&gt;\n  &lt;a href=\"http://css-tricks.com/contact/\"&gt;Contact&lt;/a&gt;\n&lt;/nav&gt;</code></pre>\n<p>So how do we actually do the include? This is where Eleventy comes in. Eleventy supports a bunch of templating languages, but the default one is <a href=\"https://shopify.github.io/liquid/\">Liquid</a>. Liquid supports file includes! Like this…</p>\n<pre><code>{% include ./nav.html %}</code></pre>\n<p>So that’s the line I put in each of the three HTML files. How do I process it then? Isn’t this the moment where I have to <em>install</em> Eleventy to get that all going? Nope, I can run a single command on the command line to make this happen (assuming I have npm installed):</p>\n<pre><code>npx @11ty/eleventy</code></pre>\n<p>Here’s a 30-second video showing it work:</p>\n<p>There is no <code>package.json</code>. There is no <code>npm install</code>. In a sense, this is a zero-dependency way to processes a static site, which I think is very cool. Eleventy processes it all into a <code>_site</code> folder by default. </p>\n<p>Say I want to deploy this static site… over on the Netlify side, I can tell it that what I want deployed is that <code>_site</code> folder. I don’t need to commit it either (and you shouldn’t), so I can put that in a <code>.gitignore</code> file. Netlify can build it with the same exact command.</p>\n<img src=\"https://i1.wp.com/css-tricks.com/wp-content/uploads/2020/02/netlify-settings.png?fit=1024%2C1003&amp;ssl=1\" alt=\"\" /><p>I could chuck those settings into a file if that is easier to manage than the site itself. Here’s what would go into a <code>netlify.yml</code> file:</p>\n<pre><code>build:\n  command: \"npx @11ty/eleventy\"\n  publish: _site</code></pre>\n<p>As I was working on this baby demo, I ended up wanting a smidge of configuration for Eleventy in that I wanted my CSS files to come over to the processed site, so…</p>\n<pre><code>module.exports = function(eleventyConfig) {\n  eleventyConfig.addPassthroughCopy(\"./styles\");\n};</code></pre>\n<p>That’s all.</p>\n<p>The post <a href=\"https://css-tricks.com/possibly-the-easiest-way-to-run-an-ssg/\">Possibly The Easiest Way to Run an SSG</a> appeared first on <a href=\"https://css-tricks.com\">CSS-Tricks</a>.</p>\n<p><br /><br /><a href=\"https://css-tricks.com/possibly-the-easiest-way-to-run-an-ssg/\">Source link </a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 752911,
+			"parentId": 0,
+			"url": "https://www.zachleat.com",
+			"author": {},
+			"date": "2020-02-06T16:29:34.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1895010,
+			"parentId": 0,
+			"url": "https://www.zachleat.com/web/symbiotic-open-source/",
+			"author": {},
+			"date": "2025-03-18T03:07:12.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 747472,
+			"url": "https://chrisburnell.com/like/1579789256",
+			"date": "2020-01-23T14:20:56.000Z",
+			"author": {
+				"name": "Chris Burnell",
+				"url": "https://chrisburnell.com/",
+				"avatarUrl": "https://avatars.webmention.io/chrisburnell.com/9bb0fc2fd268ccda4741ea7c0190e3e0b5b2c8cee6a52c05b0606a209759e3aa.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747496,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-297389665",
+			"date": "2020-01-23T14:44:53.000Z",
+			"author": {
+				"name": "Yeison Daza 🍉",
+				"url": "https://twitter.com/yeion7",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b94614d824252dd323ef9df4099dcfc0b8ebc374626683059c121201ffab7c61.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747497,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-17911526",
+			"date": "2020-01-23T14:45:05.000Z",
+			"author": {
+				"name": "brent",
+				"url": "https://twitter.com/notbrent",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9e3c88f86736805e5522e64d338f663f36943150228788825fadcf35b380202f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747498,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-14132172",
+			"date": "2020-01-23T14:45:13.000Z",
+			"author": {
+				"name": "live, laugh, lon",
+				"url": "https://twitter.com/lawnsea",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/430547262ad6ba58353ebb800b51a916c06f20b88f59efdb6f561a6012bb5960.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747499,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-15058433",
+			"date": "2020-01-23T14:45:43.000Z",
+			"author": {
+				"name": "snekse",
+				"url": "https://twitter.com/snekse",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7582824ac3f866fa4db2721ce9c38424428fcf3bc80b5b9dd3f92a0cfee6100f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747500,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-960181368",
+			"date": "2020-01-23T14:45:51.000Z",
+			"author": {
+				"name": "Constant",
+				"url": "https://twitter.com/ShareandDance",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/70c6f514188c691287126455bf5a925bbcc0ed609e4cf13d65046948e419dc25.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747501,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-883704899707564034",
+			"date": "2020-01-23T14:45:58.000Z",
+			"author": {
+				"name": "Mittelgrau",
+				"url": "https://twitter.com/mittelgrau_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/15f51049180d321b0c4d493dcf1adae887550b0fcea1fce5f702d4855248404f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747504,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-9436992",
+			"date": "2020-01-23T14:46:18.000Z",
+			"author": {
+				"name": "Abraham Williams",
+				"url": "https://twitter.com/abraham",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9336c2099b1fe6cb362c2b2aaaba0a014b58e0ee0fed6bfd1026c6763ad81396.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747505,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-15981152",
+			"date": "2020-01-23T14:46:34.000Z",
+			"author": {
+				"name": "Jon 🇪🇺 🌹",
+				"url": "https://twitter.com/SCRWD",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b4f9e999d049afc35ecceb237a2ddd0330049be667118285989a1b9f5f7b0991.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747507,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-20692536",
+			"date": "2020-01-23T14:46:43.000Z",
+			"author": {
+				"name": "Nick",
+				"url": "https://twitter.com/NickColley",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/80af43a8eb9b35fe86853240614759a87fc3b3978a10dc25c409d9e590f52655.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747508,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-1659620569",
+			"date": "2020-01-23T14:46:54.000Z",
+			"author": {
+				"name": "Sid Vishnoi",
+				"url": "https://twitter.com/sid_vishnoi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0368a5ab231ffcf390fc1107e3b4e0c84498303876d54beeabbae54470c0172c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747509,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-107281171",
+			"date": "2020-01-23T14:47:02.000Z",
+			"author": {
+				"name": "Stephanie 📍 Nottingham #NAConf",
+				"url": "https://twitter.com/seaotta",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d06d4a06279b2af52db7d8a5dc7dc76afe9348043e4467f9b23b9dc7bc2217aa.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747510,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-1027928855103897600",
+			"date": "2020-01-23T14:47:10.000Z",
+			"author": {
+				"name": "gnome",
+				"url": "https://twitter.com/thevoidbutcozy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2957d61d755ee6a32a8fa1da74fb9740f32c64c6d9490f460bbd24962f6b98c7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747511,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-220215758",
+			"date": "2020-01-23T14:47:15.000Z",
+			"author": {
+				"name": "Rebecca Stavick 🤘🏼",
+				"url": "https://twitter.com/RebeccaStavick",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b7ead5f2bfc9ee7499e4d35ea0e62d8344b923a2c18664e511e30076be7ac8a8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747512,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-971733132151083008",
+			"date": "2020-01-23T14:47:18.000Z",
+			"author": {
+				"name": "Kyle Hall",
+				"url": "https://twitter.com/khalligans47",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ffbe4eef89f35f786b0868c2b845ff5eba14f4df8ed4177f19f76c06d7f3a5de.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747513,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-241647963",
+			"date": "2020-01-23T14:47:25.000Z",
+			"author": {
+				"name": "James Sral",
+				"url": "https://twitter.com/bcwarlock18",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b64f7be73c94291421554efd6f4e0f6e6a9a543883450b3308593ae8e76ffc09.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747514,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-7581192",
+			"date": "2020-01-23T14:47:57.000Z",
+			"author": {
+				"name": "Juan @ #naconf Nottingham",
+				"url": "https://twitter.com/juanfernandes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6f87f8397b1ce0e327624229127a7be4b7bd19ef83e8d1072275b56c8ad0bf3f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747515,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-38503816",
+			"date": "2020-01-23T14:48:26.000Z",
+			"author": {
+				"name": "Sarah Pengelly",
+				"url": "https://twitter.com/sarahpengelly",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1c81c81fdd45138030003239d954e9bf0202c4715d452bdcfb1759f257222277.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747516,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-88095009",
+			"date": "2020-01-23T14:48:39.000Z",
+			"author": {
+				"name": "Arran France",
+				"url": "https://twitter.com/arranf",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9f17845f009252432d28d70eec6d579c9991cf5668df8268c0bb6ed17dc27c07.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747517,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-2937709709",
+			"date": "2020-01-23T14:48:57.000Z",
+			"author": {
+				"name": "Kyle 🤙",
+				"url": "https://twitter.com/DesignByKyle",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cfee1f69645932b699de89d8ce2b01acd3b8d6d4cf1bf7bba1045eb419309241.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747518,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-14695412",
+			"date": "2020-01-23T14:49:05.000Z",
+			"author": {
+				"name": "Stephen Bau",
+				"url": "https://twitter.com/bauhouse",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/503eca0cc2bc464a2cf24a0947403245e4de9b4cb5e114420493ec258c61729f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747519,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-64833",
+			"date": "2020-01-23T14:49:16.000Z",
+			"author": {
+				"name": "Russell Heimlich",
+				"url": "https://twitter.com/kingkool68",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/84ec6f7b8b0f356e6b346ce9ba9967af022f1bec8f81bfa81f3e8461d0805e83.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747520,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-30416123",
+			"date": "2020-01-23T14:49:23.000Z",
+			"author": {
+				"name": "Alex MacArthur",
+				"url": "https://twitter.com/amacarthur",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bcaa0320dce7e7b9421e0daa9d95b784a68a62dd3a5832d01d86e30276935ce6.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747521,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-119318112",
+			"date": "2020-01-23T14:49:53.000Z",
+			"author": {
+				"name": "Yoav Weiss",
+				"url": "https://twitter.com/yoavweiss",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/57bf5de6b685745884231bddf3a1a01f103f5882af8166fb66f8f03616296afd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747522,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-13817002",
+			"date": "2020-01-23T14:50:13.000Z",
+			"author": {
+				"name": "Nathan Gathright",
+				"url": "https://twitter.com/NathanG",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2da65eb0f9ebb18713c1a6be98ed5440fa882f15637034aa1fd9198947b4dee9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 747523,
+			"url": "https://twitter.com/zachleat/status/1220346463059939328#favorited-by-8009222",
+			"date": "2020-01-23T14:50:22.000Z",
+			"author": {
+				"name": "Ihab Khattab",
+				"url": "https://twitter.com/HO_BA",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/57027e65ce7b4e75e593f914a4320f2bbd02fc9d6ec40cc590a3c25f09cd8995.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 747524,
+			"url": "https://twitter.com/malchata/status/1220348530159685633",
+			"date": "2020-01-23T14:12:17.000Z",
+			"author": {
+				"name": "Jeremy Wagner",
+				"url": "https://twitter.com/malchata",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c96f786de48633e7c3026a15fd639c2511b8250d3335a9c6c6186e99c8f110e2.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

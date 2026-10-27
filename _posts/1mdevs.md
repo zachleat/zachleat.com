@@ -1,0 +1,28 @@
+---
+title: Netlify’s Merry Band of 1 Million Developers
+date: 2020-08-05
+external_icon_url: "https://netlify.com/"
+---
+The launches at Netlify since I started 5 months ago have been fast and frequent. Here are a few of the major milestones I’ve been involved with during that time:
+
+1. A brand new [netlify.com](https://www.netlify.com/), with a new design and a new tech stack built on Eleventy and Vue. I built the tech stack for this project specifically and also worked on the new unified markup responsive Masthead and Footer and a bunch of new pages!
+1. An Eleventy wiki site for Netlify’s internal employee handbook, using Netlify CMS
+1. [Speedlify](https://www.speedlify.dev/), a side project originally built to measure performance and accessibility on our new Netlify sites.
+1. Additions to the Jamstack Conf site to support [Jamstack Conf Virtual](https://jamstackconf.com/virtual/)
+
+## 1 Million Developers
+
+Our latest project launched just this week was a microsite to celebrate Netlify reaching [1 Million Developers](https://million-devs.netlify.com/). You can click through to look at Netlify’s major milestones and find your Netlify account number to see when you registered.
+
+[{% twitterImageAvatar "sarah_edo" %}Sarah Drasner](https://twitter.com/sarah_edo) already wrote an amazing blog post on CSS Tricks about [the architecture of the front end](https://css-tricks.com/the-making-of-netlifys-million-devs-svg-animation-site/).
+
+I also wrote up a quick note earlier this week about [bulk generating OG images](/web/bulk-og/) that came out of this project.
+
+A few more things I learned:
+
+* I worked on the backend for this site. When you click the log in to Netlify button, it uses OAuth to log in with your Netlify account. This was very easy to set up and anyone can make an application that authenticates with Netlify! I worked from this full demo example with excellent documentation and source code is available on [Netlify Labs: OAuth Example](https://github.com/netlify-labs/oauth-example) created by [{% twitterImageAvatar "davidwells" %}David Wells](https://twitter.com/davidwells).
+* The backend source code is private but it’s almost entirely the same as David’s example, but without the React parts. Having the backend code in a separate repo was useful as [Sarah open sourced the front end repo later on](https://github.com/netlify/million-devs). One more thing I wanted to mention about the backend was the scalability of Netlify functions. Really, I was impressed at what you could do in those things. The Netlify function reads a giant million-record JSON file every time someone logs in 😅 to find user numbers. Look—I know, y’all. It feels very wrong but it works flawlessly and is much lower friction than using a database.
+* This site and our netlify.com site are both using Vue components, so we were able to use the same hero Vue component in a homepage takeover! And the animations work too! We also use per-route JS bundles the GSAP library and the animation code were only added to one page, leaving the rest of our routes scripts unencumbered. <img src="/web/img/posts/1mdevs/site.png" alt="1M Devs screenshot"> <img src="/web/img/posts/1mdevs/homepage.png" alt="netlify screenshot">
+* This was my first experience with [Vuex](https://vuex.vuejs.org/), which didn’t get a ton of use here but I could definitely see the benefit! In related news, my colleague [{% twitterImageAvatar "shortdiv" %}Divya Tagtachian](https://twitter.com/shortdiv) just released a Frontend Masters course: [Vuex for Intermediate Vue.js Developers](https://frontendmasters.com/courses/vuex/?utm_source=twitterl&utm_medium=course-announce&utm_campaign=vuex), check it out!
+
+I hope y’all enjoyed the site! It was super fun to work on and I huge thank you to everyone at Netlify that made it possible: the entire marketing team including [{% twitterImageAvatar "huguestennier" %}Hugues Tennier](https://twitter.com/huguestennier) and Alejandro Alvarez (the artist behind the incredible illustrations!), Sarah Drasner for a huge portion of the dev work including the awesome and meticulous animation work, [{% twitterImageAvatar "seldo" %}Laurie Voss](https://twitter.com/seldo) and [{% twitterImageAvatar "futuregerald" %}Gerald O](https://twitter.com/futuregerald/) for invaluable consulting.

@@ -1,0 +1,1234 @@
+{
+	"comments": [
+		{
+			"id": 1238359,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/fire-svg-animations-smil-when-the-svg-is-visible/",
+			"author": {},
+			"date": "2021-08-05T13:23:26.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1238501,
+			"parentId": 0,
+			"url": "https://twitter.com/cport1/status/1423278169642225671",
+			"author": {
+				"name": "Chris Portscheller",
+				"url": "https://twitter.com/cport1",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4bec917c5ab06bba821554d83635db83126d0d31eb384dc15f92ec8ae7a28cd8.jpg"
+			},
+			"date": "2021-08-05T13:42:13.000Z",
+			"content": "SMIL is a thing again?\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238503,
+			"parentId": 0,
+			"url": "https://twitter.com/cport1/status/1423278554863841280",
+			"author": {
+				"name": "Chris Portscheller",
+				"url": "https://twitter.com/cport1",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4bec917c5ab06bba821554d83635db83126d0d31eb384dc15f92ec8ae7a28cd8.jpg"
+			},
+			"date": "2021-08-05T13:43:45.000Z",
+			"content": "I guess with IE becoming chromium it's relevant again.. which is awesome &lt;3 \n\nI remember asking this on stackoverflow years ago...\n\n<a href=\"https://stackoverflow.com/questions/31926432/why-is-svg-smil-animation-not-supported-by-internet-explorer\">stackoverflow.com/questions/3192…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238502,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1423278942077792256",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-05T13:45:17.000Z",
+			"content": "oh yeah it never left—look at this beautiful green\n<a class=\"u-mention\" href=\"https://twitter.com/cport1\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238519,
+			"parentId": 0,
+			"url": "https://twitter.com/cport1/status/1423279519306326017",
+			"author": {
+				"name": "Chris Portscheller",
+				"url": "https://twitter.com/cport1",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4bec917c5ab06bba821554d83635db83126d0d31eb384dc15f92ec8ae7a28cd8.jpg"
+			},
+			"date": "2021-08-05T13:47:35.000Z",
+			"content": "I really loved SMIL back in the day, but dropped it for a few projects because of this limitation in some enterprise projects. Definitely opens the doors for some new considerations.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238499,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1423280290382946304",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-05T13:50:39.000Z",
+			"content": "Honestly I only recently experimented with it but it’s working great!\n<a class=\"u-mention\" href=\"https://twitter.com/cport1\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238626,
+			"parentId": 0,
+			"url": "https://twitter.com/Bliepjes/status/1423304764146790402",
+			"author": {
+				"name": "Guus Hoeve",
+				"url": "https://twitter.com/Bliepjes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be2cef40ad5163e3d0661e7f12c1ccf3faef4ba06cc0307f8a4a14ab0f874239.png"
+			},
+			"date": "2021-08-05T15:27:54.000Z",
+			"content": "Forgive me for asking the obvious maybe, but what's the support for SMIL as I read it in Drasner's book SVG animations, but don't see anyone using it or in any animation tooling as export. I love SVG, no doubt, but I do want it to last.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238627,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1423305264854454275",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-05T15:29:53.000Z",
+			"content": "strange that the Edge switch to Chromium may have saved it? <a href=\"https://caniuse.com/svg-smil\">caniuse.com/svg-smil</a> Note the warning on <a href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL\">developer.mozilla.org/en-US/docs/Web…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/Bliepjes\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238625,
+			"parentId": 0,
+			"url": "https://twitter.com/ladyofcode/status/1423307378158567436",
+			"author": {
+				"name": "Tabs",
+				"url": "https://twitter.com/ladyofcode",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/814ea462b637adab5506ed2aec821ea316c8b4c60b1e47e237719cd916580ac8.jpg"
+			},
+			"date": "2021-08-05T15:38:17.000Z",
+			"content": "I didn't bother with it much expecting it to disappear, but I guess now is a good time to dive right in?\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238623,
+			"parentId": 0,
+			"url": "https://twitter.com/Bliepjes/status/1423307782133059585",
+			"author": {
+				"name": "Guus Hoeve",
+				"url": "https://twitter.com/Bliepjes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be2cef40ad5163e3d0661e7f12c1ccf3faef4ba06cc0307f8a4a14ab0f874239.png"
+			},
+			"date": "2021-08-05T15:39:53.000Z",
+			"content": "In my perception they are the same to SVG's animation attributes. If it's just a difference in name, it's already native I guess? Something we just don't think about anymore? Because otherwise, what is driving SVG animations natively? 😅\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238622,
+			"parentId": 0,
+			"url": "https://twitter.com/Bliepjes/status/1423308581709959174",
+			"author": {
+				"name": "Guus Hoeve",
+				"url": "https://twitter.com/Bliepjes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be2cef40ad5163e3d0661e7f12c1ccf3faef4ba06cc0307f8a4a14ab0f874239.png"
+			},
+			"date": "2021-08-05T15:43:04.000Z",
+			"content": "One thing off the topic of SMIL, is that in SVG it's really sad you can't influence the scale of a displacementmap in the arguments like:\n\n&lt;feDisplacementMap&gt; ... scale=\"var(--scale)\"\n\n... so you can animate it in CSS. They need hardcoded values. That would change the game of SVG\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238624,
+			"parentId": 0,
+			"url": "https://twitter.com/TheGreenGreek/status/1423309713119272964",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"date": "2021-08-05T15:47:34.000Z",
+			"content": "\"save it in my blog brain\" is one of the top reasons I write blog posts 😆 \n\nI'm always referencing my own posts to remember how to do something\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238880,
+			"parentId": 0,
+			"url": "https://twitter.com/jkup/status/1423368975686189061",
+			"author": {
+				"name": "Jon Kuperman",
+				"url": "https://twitter.com/jkup",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a52326c0080bba610767505756be327891f63722c0ceb6515de5840097c65cb9.jpg"
+			},
+			"date": "2021-08-05T19:43:03.000Z",
+			"content": "I love your open graph images so much\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238881,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1423371094917095424",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-05T19:51:28.000Z",
+			"content": "why thank you Jhon I wrote a blog post recently on this very topic\n<a class=\"u-mention\" href=\"https://twitter.com/jkup\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238878,
+			"parentId": 0,
+			"url": "https://twitter.com/jkup/status/1423371179780419587",
+			"author": {
+				"name": "Jon Kuperman",
+				"url": "https://twitter.com/jkup",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a52326c0080bba610767505756be327891f63722c0ceb6515de5840097c65cb9.jpg"
+			},
+			"date": "2021-08-05T19:51:48.000Z",
+			"content": "I READ IT!!\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1238879,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1423371388979646467",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-05T19:52:38.000Z",
+			"content": "well that was your first mistake\n<a class=\"u-mention\" href=\"https://twitter.com/jkup\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1241341,
+			"parentId": 0,
+			"url": "https://mailsgun.ru/%d0%b4%d0%b0%d0%b9%d0%b4%d0%b6%d0%b5%d1%81%d1%82-%d1%81%d0%b2%d0%b5%d0%b6%d0%b8%d1%85-%d0%bc%d0%b0%d1%82%d0%b5%d1%80%d0%b8%d0%b0%d0%bb%d0%be%d0%b2-%d0%b8%d0%b7-%d0%bc%d0%b8%d1%80%d0%b0-%d1%84%d1%80-73/",
+			"author": {},
+			"date": "2021-08-09T04:48:50.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264784,
+			"parentId": 0,
+			"url": "https://twitter.com/feedpushr/status/1435308285306056711",
+			"author": {
+				"name": "Feedpushr feeds.",
+				"url": "https://twitter.com/feedpushr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/072cb67b68317f86bf1bb6e94ecf8fb4de60ce88df253a526467f3c3a0e1b2cb.jpg"
+			},
+			"date": "2021-09-07T18:25:36.000Z",
+			"content": "Fire SVG animations (SMIL) when the SVG is visible\n<a href=\"https://www.zachleat.com/web/svg-animate/\">zachleat.com/web/svg-animat…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264732,
+			"parentId": 0,
+			"url": "https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/",
+			"author": {},
+			"date": "2021-09-07T18:30:10.000Z",
+			"content": "<h1>Fire SVG animations (SMIL) when the SVG is visible</h1>\n<ul><li>September 8, 2021</li>\n<li><a href=\"https://marketingsolution.com.au/category/web-development/\">Web Development</a></li>\n</ul>\n\n\n\n\n\n\nNo Comments\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>When requirements read “when visible” your brain should go straight to IntersectionObserver. That’s exactly what <a href=\"https://www.zachleat.com/web/svg-animate/\">Zach is doing</a> here to kick off an animation when it scrolls into view.</p>\n<p>Except this animation is an SVG <a href=\"https://css-tricks.com/guide-svg-animations-smil/\">SMIL</a> animation: an &lt;animate&gt; situation. SMIL animations have some kinda cool things they can do, like begin when another animation ends, which is something CSS doesn’t help with that much. Turns out SMIL has a JavaScript API as well, so it’s possible to kick off the animation on demand that way, while also respecting prefers-reduced-motion.</p>\n<p><span></span></p>\n<p>Also check this out:</p>\n<p>.querySelectorAll(`:scope [begin=”indefinite”]`);</p>\n<p>That <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll#javascript\">:scope thing</a> is new to me.</p>\n<p><a href=\"https://www.zachleat.com/web/svg-animate/\" title=\"Direct link to featured article\">Direct Link to Article</a> — <a href=\"https://css-tricks.com/fire-svg-animations-smil-when-the-svg-is-visible/\">Permalink</a></p>\n<p>The post <a href=\"https://css-tricks.com/fire-svg-animations-smil-when-the-svg-is-visible/\">Fire SVG animations (SMIL) when the SVG is visible</a> appeared first on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href=\"https://css-tricks.com/product/mvp-supporter/\">MVP Supporter</a>.</p>\n\n\n\n\n\n\n<ul><li> <a href=\"https://marketingsolution.com.au/author/\"></a>\n</li></ul>\n<p></p>\n\n\n\n\n\n\n\n\n<h2>About Marketing Solution Australia</h2>\n<p>We are a digital marketing company with a focus on helping our customers achieve great results across several key areas.</p>\n\n <a href=\"https://marketingsolution.com.au/about-our-company/\"> <span></span> <span>Learn more about us</span> </a>\n\n\n\n\n\n\n \n\n\n\n\n\n <span></span>\n\n\n<h4>Request a free quote</h4>\n<p>We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings even when it comes to highly competitive keywords.</p>\n <a href=\"https://marketingsolution.com.au/request-a-free-seo-analysis/\"> <span></span> <span> Contact now </span> </a>\n\n\n\n\n\n\n\n<h2>Subscribe to our newsletter!</h2>\n  Notice: JavaScript is required for this content.\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n<h2>More from our blog</h2> <span><a href=\"https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/#\">See all posts</a></span>\n\n\n\n\n\n <a href=\"https://marketingsolution.com.au/building-your-own-subscription-newsletter/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/CleanShot-2021-09-07-at-07.42.36@2x-ApM50i-400x330.png\" alt=\"Fire SVG animations (SMIL) when the SVG is visible\" title=\"Building Your Own Subscription Newsletter\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/building-your-own-subscription-newsletter/\">Building Your Own Subscription Newsletter</a></h2>\n (This is a sponsored post.) I did a sponsored video the other…\n <a href=\"https://marketingsolution.com.au/building-your-own-subscription-newsletter/\"> <span></span> Continue reading </a>\n\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/\">Fire SVG animations (SMIL) when the SVG is visible</a></h2>\n When requirements read “when visible” your brain should go straight to IntersectionObserver.…\n <a href=\"https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/\"> <span></span> Continue reading </a>\n\n\n\n <a href=\"https://marketingsolution.com.au/firefoxs-bolder-default-is-a-downside-for-variable-fonts/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/mdn-found-a-problem-card-Xl7duI-400x330.png\" alt=\"Fire SVG animations (SMIL) when the SVG is visible\" title=\"Firefox’s `bolder` Default is a Problem for Variable Fonts\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/firefoxs-bolder-default-is-a-downside-for-variable-fonts/\">Firefox’s `bolder` Default is a Downside for Variable Fonts</a></h2>\n Variable fonts make it straightforward to create a massive set of font…\n <a href=\"https://marketingsolution.com.au/firefoxs-bolder-default-is-a-downside-for-variable-fonts/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/whats-new-with-devtools-cross-browser-version/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/devtools-cross-browser-edition-7mFJhN-400x330.jpeg\" alt=\"Fire SVG animations (SMIL) when the SVG is visible\" title=\"What’s New With DevTools: Cross-Browser Edition\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/whats-new-with-devtools-cross-browser-version/\">What’s New With DevTools: Cross-Browser Version</a></h2>\n Browser developer instruments maintain evolving, with new and improved options added on…\n <a href=\"https://marketingsolution.com.au/whats-new-with-devtools-cross-browser-version/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/find-out-how-to-see-who-is-following-my-wordpress-web-site-4-fast-simple-methods/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/see-who-is-following-your-WordPress-site-og-P2Ek5k-400x330.png\" alt=\"Fire SVG animations (SMIL) when the SVG is visible\" title=\"How to See Who Is Following My WordPress Site (4 Quick &amp; Easy Ways)\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/find-out-how-to-see-who-is-following-my-wordpress-web-site-4-fast-simple-methods/\">Find out how to See Who Is Following My WordPress Web site (4 Fast &amp; Simple Methods)</a></h2>\n Do you need to see who's following your WordPress web site? Seeing…\n <a href=\"https://marketingsolution.com.au/find-out-how-to-see-who-is-following-my-wordpress-web-site-4-fast-simple-methods/\"> <span></span> Continue reading </a>\n\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/early-days-for-css-scoping/\">Early Days for CSS Scoping</a></h2>\n There may be a working draft spec for CSS scoping now, a…\n <a href=\"https://marketingsolution.com.au/early-days-for-css-scoping/\"> <span></span> Continue reading </a>\n\n\n\n <a href=\"https://marketingsolution.com.au/http-3-sensible-deployment-choices-half-3/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/http3-practical-deployment-options-part3-FVCv2F-400x330.jpeg\" alt=\"Fire SVG animations (SMIL) when the SVG is visible\" title=\"HTTP/3: Practical Deployment Options (Part 3)\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/http-3-sensible-deployment-choices-half-3/\">HTTP/3: Sensible Deployment Choices (Half 3)</a></h2>\n Hiya, and welcome to the ultimate installment of this three-part sequence on…\n <a href=\"https://marketingsolution.com.au/http-3-sensible-deployment-choices-half-3/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/make-a-excessive-changing-gross-sales-funnel-in-wordpress/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/sales-funnel-wp-og-3LvkXp-400x330.png\" alt=\"Fire SVG animations (SMIL) when the SVG is visible\" title=\"How to Make a High Converting Sales Funnel in WordPress\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/make-a-excessive-changing-gross-sales-funnel-in-wordpress/\">Make a Excessive Changing Gross sales Funnel in WordPress</a></h2>\n Do you wish to make a excessive changing gross sales funnel in…\n <a href=\"https://marketingsolution.com.au/make-a-excessive-changing-gross-sales-funnel-in-wordpress/\"> <span></span> Continue reading </a>\n\n\n\n\n\n\n\n\n\n\n\n\n <a href=\"https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/\"> <span></span> <span>Prev. Post</span> </a>\n\n <a href=\"https://marketingsolution.com.au\"> <span></span> <span>All Posts</span> </a>\n\n <a href=\"https://marketingsolution.com.au/firefoxs-bolder-default-is-a-downside-for-variable-fonts/\"> <span></span> <span>Next Post</span> </a>\n\n\n<ul><li><span title=\"Total:\"><span>Total: </span><span>0</span></span></li>\n<li> <a href=\"https://www.facebook.com/sharer/sharer.php?u=https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/&amp;t=Fire+SVG+animations+%28SMIL%29+when+the+SVG+is+visible\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/#\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://plus.google.com/share?url=https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/#\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=EasySocialShareButtons&amp;title=Fire+SVG+animations+%28SMIL%29+when+the+SVG+is+visible&amp;url=https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n</ul>\n\n\n\n\n\n\nNo Comments\n\n\n\n\n\n\n\n<h3><span>Recent Posts</span></h3>\n<ul><li> <a href=\"https://marketingsolution.com.au/building-your-own-subscription-newsletter/\">Building Your Own Subscription Newsletter</a> <span>September 8, 2021</span>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/\">Fire SVG animations (SMIL) when the SVG is visible</a> <span>September 8, 2021</span>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/firefoxs-bolder-default-is-a-downside-for-variable-fonts/\">Firefox’s `bolder` Default is a Downside for Variable Fonts</a> <span>September 8, 2021</span>\n</li>\n</ul>\n\n<h3><span>All Website Tags</span></h3>\n\n<a href=\"https://marketingsolution.com.au/tag/absolute/\" style=\"font-size:8pt;\">absolute</a> <a href=\"https://marketingsolution.com.au/tag/all/\" style=\"font-size:8pt;\">all</a> <a href=\"https://marketingsolution.com.au/tag/anchor/\" style=\"font-size:8pt;\">anchor</a> <a href=\"https://marketingsolution.com.au/tag/any/\" style=\"font-size:8pt;\">any</a> <a href=\"https://marketingsolution.com.au/tag/back-links/\" style=\"font-size:8pt;\">back-links</a> <a href=\"https://marketingsolution.com.au/tag/branding/\" style=\"font-size:8pt;\">branding</a> <a href=\"https://marketingsolution.com.au/tag/can/\" style=\"font-size:8pt;\">can</a> <a href=\"https://marketingsolution.com.au/tag/company/\" style=\"font-size:8pt;\">company</a> <a href=\"https://marketingsolution.com.au/tag/discounts/\" style=\"font-size:8pt;\">discounts</a> <a href=\"https://marketingsolution.com.au/tag/engine/\" style=\"font-size:22pt;\">engine</a> <a href=\"https://marketingsolution.com.au/tag/google/\" style=\"font-size:8pt;\">google</a> <a href=\"https://marketingsolution.com.au/tag/hurt/\" style=\"font-size:8pt;\">hurt</a> <a href=\"https://marketingsolution.com.au/tag/images/\" style=\"font-size:8pt;\">images</a> <a href=\"https://marketingsolution.com.au/tag/importance/\" style=\"font-size:8pt;\">importance</a> <a href=\"https://marketingsolution.com.au/tag/in/\" style=\"font-size:8pt;\">in</a> <a href=\"https://marketingsolution.com.au/tag/inbound/\" style=\"font-size:8pt;\">inbound</a> <a href=\"https://marketingsolution.com.au/tag/incorporation/\" style=\"font-size:8pt;\">incorporation</a> <a href=\"https://marketingsolution.com.au/tag/linking/\" style=\"font-size:8pt;\">linking</a> <a href=\"https://marketingsolution.com.au/tag/links/\" style=\"font-size:22pt;\">links</a> <a href=\"https://marketingsolution.com.au/tag/my/\" style=\"font-size:8pt;\">my</a> <a href=\"https://marketingsolution.com.au/tag/of/\" style=\"font-size:8pt;\">of</a> <a href=\"https://marketingsolution.com.au/tag/optimization/\" style=\"font-size:8pt;\">optimization</a> <a href=\"https://marketingsolution.com.au/tag/ranking/\" style=\"font-size:8pt;\">ranking</a> <a href=\"https://marketingsolution.com.au/tag/reciprocal/\" style=\"font-size:8pt;\">reciprocal</a> <a href=\"https://marketingsolution.com.au/tag/relative/\" style=\"font-size:8pt;\">relative</a> <a href=\"https://marketingsolution.com.au/tag/search/\" style=\"font-size:22pt;\">search</a> <a href=\"https://marketingsolution.com.au/tag/search-engine-submission/\" style=\"font-size:8pt;\">search engine submission</a> <a href=\"https://marketingsolution.com.au/tag/seo/\" style=\"font-size:8pt;\">seo</a> <a href=\"https://marketingsolution.com.au/tag/strategic/\" style=\"font-size:8pt;\">strategic</a> <a href=\"https://marketingsolution.com.au/tag/submission/\" style=\"font-size:8pt;\">submission</a> <a href=\"https://marketingsolution.com.au/tag/text/\" style=\"font-size:8pt;\">text</a> <a href=\"https://marketingsolution.com.au/tag/the/\" style=\"font-size:8pt;\">the</a> <a href=\"https://marketingsolution.com.au/tag/vs/\" style=\"font-size:8pt;\">vs</a>\n\n\n\n\n\n\n\n<h3>Leave a Comment <a href=\"https://marketingsolution.com.au/fire-svg-animations-smil-when-the-svg-is-visible/#respond\">cancel</a>\n</h3>\n\n\n\n\n\n<p>Save my name, email, and website in this browser for the next time I comment.</p>\n\n<p></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264733,
+			"parentId": 0,
+			"url": "https://techsumo.net/2021/09/07/turn-on-svg-animations-smil-when-svg-is-displayed-zachleat-com/",
+			"author": {},
+			"date": "2021-09-07T18:30:16.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264741,
+			"parentId": 0,
+			"url": "https://www.pixellyft.com/2021/09/07/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "https://www.pixellyft.com/author/admin/"
+			},
+			"date": "2021-09-07T18:35:18.000Z",
+			"content": "<p> <br /></p>\n\n<p>Had a use case come in where the design had an SVG animation that ran one interation and only one. It looked like this (some content has been removed):</p>\n<p>If you’re on a device with a small vertical viewport size, you may not have noticed the above animation. Unfortunately the animations start (and complete!) whether or not the SVG is visible!</p>\n<p>I wanted to wire the animations up to IntersectionObserver to make sure they only started animating when visible. Here’s how I did it:</p>\n<h2>Modify the SVG <a href=\"https://www.pixellyft.com/2021/09/07/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/#modify-the-svg\">#</a>\n</h2>\n<p>I found all of the instances of <code>&lt;animate&gt;</code> or <code>&lt;animateTransform&gt;</code> and wired up the <code>begin</code> attributes to properly cascade the order of the animation internally. I want all of them to start when my bezier curve starts animating, so I added an <code>id</code> to that animation (there was an issue with dashes in that <code>id</code>, so beware using dashes):</p>\n<pre><code><span><span><span>&lt;</span>animate</span><br /><span>id</span><span><span>=</span><span>\"</span>mysvgline<span>\"</span></span><br /><span>  <span>attributeType</span><span><span>=</span><span>\"</span>xml<span>\"</span></span></span><br /><span>  <span>attributeName</span><span><span>=</span><span>\"</span>stroke-dashoffset<span>\"</span></span></span><br /><span>  <span>from</span><span><span>=</span><span>\"</span>500<span>\"</span></span></span><br /><span>  <span>to</span><span><span>=</span><span>\"</span>0<span>\"</span></span></span><br /><span>  <span>dur</span><span><span>=</span><span>\"</span>.8s<span>\"</span></span></span><br /><span>  <span>begin</span><span><span>=</span><span>\"</span>0s<span>\"</span></span></span><br /><span>/&gt;</span></span></code></pre>\n<p><em>Learn how to animate a line/curve: <a href=\"https://css-tricks.com/svg-line-animation-works/\"><img alt=\"css’s Avatar\" src=\"https://www.zachleat.com/img/avatars/css.jpeg\" width=\"72\" height=\"72\" />CSS Tricks: How SVG Line Animation Works</a></em></p>\n<p>Take note of the <code>begin</code> attribute above, that will be important later.</p>\n<p>Now I want to find the other animations in my SVG that I want to start at the same time and change their <code>begin</code> attribute to use the <code>id</code> from above with a <code>.begin</code> suffix. This starts this animation when the referenced animation starts. It looks like this:</p>\n<pre><code><span><span><span>&lt;</span>animateMotion</span><br /><span>begin</span><span><span>=</span><span>\"</span>mysvgline.begin<span>\"</span></span><br /><span>  <span>dur</span><span><span>=</span><span>\"</span>.8s<span>\"</span></span></span><br /><span>  <span>repeatCount</span><span><span>=</span><span>\"</span>1<span>\"</span></span></span><br /><span>  <span>fill</span><span><span>=</span><span>\"</span>freeze<span>\"</span></span></span><br /><span>  <span>path</span><span><span>=</span><span>\"</span>M35.5 20C216.281 20 352.411 182 512.5 182<span>\"</span></span></span><br /><span>/&gt;</span></span></code></pre>\n<p>Alternatively, you can use <code>.end</code> to start this animation when the referenced animation ends.</p>\n<p><em>(Side note: <code>repeatCount=\"1\"</code> and <code>fill=\"freeze\"</code> are best buddies. <code>fill=\"freeze\"</code> means that your animation won’t rewind to the first frame at the end)</em></p>\n<p>Next go back to the original animation and change the <code>begin</code> attribute to <code>indefinite</code> (Read more at <a href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin#animate_animatecolor_animatemotion_animatetransform_set\">MDN: <code>begin</code> – SVG</a>). This tells the SVG not to start it until I use JavaScript to trigger it using <code>.beginElement()</code>.</p>\n<pre><code><span><span><span>&lt;</span>animate</span><br /><span>  <span>id</span><span><span>=</span><span>\"</span>mysvgline<span>\"</span></span></span><br /><span>  <span>attributeType</span><span><span>=</span><span>\"</span>xml<span>\"</span></span></span><br /><span>  <span>attributeName</span><span><span>=</span><span>\"</span>stroke-dashoffset<span>\"</span></span></span><br /><span>  <span>from</span><span><span>=</span><span>\"</span>500<span>\"</span></span></span><br /><span>  <span>to</span><span><span>=</span><span>\"</span>0<span>\"</span></span></span><br /><span>  <span>dur</span><span><span>=</span><span>\"</span>.8s<span>\"</span></span></span><br /><span>begin</span><span><span>=</span><span>\"</span>indefinite<span>\"</span></span><br /><span>/&gt;</span></span></code></pre>\n<p><em>(Another side note: just thinking aloud here as I write this—I wonder if I can use <code>&lt;noscript&gt;</code> inside of SVG as a no-JS fallback)</em></p>\n<h2>Add the IntersectionObserver <a href=\"https://www.pixellyft.com/2021/09/07/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/#add-the-intersectionobserver\">#</a>\n</h2>\n<p>It might look like this:</p>\n<pre><code><span>if</span> <span>(</span><span>'IntersectionObserver'</span> <span>in</span> window<span>)</span>  <span>{</span><br /><span>let</span> elements <span>=</span> document<span>.</span><span>querySelectorAll</span><span>(</span><span>\"svg\"</span><span>)</span><span>;</span></code></pre><p><code><span>let</span> observer <span>=</span> <span>new</span> <span>IntersectionObserver</span><span>(</span><span>entries</span> <span>=&gt;</span> <span>{</span><br /><span>let</span> mediaQuery <span>=</span> window<span>.</span><span>matchMedia</span><span>(</span><span>'(prefers-reduced-motion: no-preference)'</span><span>)</span><span>;</span><br /><span>if</span><span>(</span><span>!</span>mediaQuery<span>.</span>matches<span>)</span> <span>{</span><br /><span>return</span><span>;</span><br /><span>}</span></code></p><code>\n</code><p><code><span>for</span><span>(</span><span>let</span> entry <span>of</span> entries<span>)</span> <span>{</span><br /><span>if</span><span>(</span><span>!</span>entry<span>.</span>isIntersecting<span>)</span> <span>{</span><br /><span>continue</span><span>;</span><br /><span>}</span></code></p><code>\n</code><p><code><br /><span>let</span> beginElements <span>=</span> entry<span>.</span>target<span>.</span><span>querySelectorAll</span><span>(</span><span><span>`</span><span>:scope [begin=\"indefinite\"]</span><span>`</span></span><span>)</span><span>;</span><br /><span>for</span><span>(</span><span>let</span> beginEl <span>of</span> beginElements<span>)</span> <span>{</span><br />beginEl<span>.</span><span>beginElement</span><span>(</span><span>)</span><span>;</span></code></p><code>\n</code><p><code><br />observer<span>.</span><span>unobserve</span><span>(</span>entry<span>.</span>target<span>)</span><span>;</span><br /><span>}</span><br /><span>}</span><br /><span>}</span><span>,</span><br /><span>{</span><br />threshold<span>:</span> <span>.5</span> <br /><span>}</span><span>)</span><span>;</span></code></p><code>\n</code><p><code><span>for</span><span>(</span><span>let</span> elem <span>of</span> elements<span>)</span> <span>{</span><br />observer<span>.</span><span>observe</span><span>(</span>elem<span>)</span><span>;</span><br /><span>}</span><br /><span>}</span></code></p><code></code>\n<h2>Try it yourself <a href=\"https://www.pixellyft.com/2021/09/07/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/#try-it-yourself\">#</a>\n</h2>\n<h2>More Links <a href=\"https://www.pixellyft.com/2021/09/07/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/#more-links\">#</a>\n</h2>\n\n<p><br /><br /><a href=\"https://www.zachleat.com/web/svg-animate/\">Source link </a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264745,
+			"parentId": 0,
+			"url": "https://websitedevelopment.top/2021/09/07/fire-svg-smil-animations-when-viewing-svg-zachleat-com/",
+			"author": {},
+			"date": "2021-09-07T18:44:23.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264751,
+			"parentId": 0,
+			"url": "https://neoweb4u.com/web-site-developer-i-advertising-and-marketing-i-social-media-advertising-and-marketing-i-content-material-creators-i-branding-creators-i-administration-i-system-solutionfire-svg-animations-smil-whe/",
+			"author": {},
+			"date": "2021-09-07T19:05:35.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264782,
+			"parentId": 0,
+			"url": "https://twitter.com/VisionSnap/status/1435318736974659585",
+			"author": {
+				"name": "VisionSnap",
+				"url": "https://twitter.com/VisionSnap",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2e359360b0ac258a102a70083f59e5ed6aa2125e15b64128047fba5b400e27c8.jpg"
+			},
+			"date": "2021-09-07T19:07:08.000Z",
+			"content": "Fire SVG animations (SMIL) when the SVG is visible CSS Tricks <a href=\"https://www.zachleat.com/web/svg-animate/\">zachleat.com/web/svg-animat…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264754,
+			"parentId": 0,
+			"url": "https://style-tricks.com/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {},
+			"date": "2021-09-07T19:12:58.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264756,
+			"parentId": 0,
+			"url": "https://gigatechnews.com/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {},
+			"date": "2021-09-07T19:28:47.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264758,
+			"parentId": 0,
+			"url": "https://hnikoloski.com/fire-svg-animations-smil-when-the-svg-is-visible/",
+			"author": {},
+			"date": "2021-09-07T19:32:05.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264759,
+			"parentId": 0,
+			"url": "https://pikopong.com/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {},
+			"date": "2021-09-07T19:37:10.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264781,
+			"parentId": 0,
+			"url": "https://twitter.com/PawanSomanchi/status/1435328206781906946",
+			"author": {
+				"name": "Pawan",
+				"url": "https://twitter.com/PawanSomanchi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2ea53bda88dd34e9602710dc16c4ed9cb38095f9ffad99960d63bcb795359b38.jpg"
+			},
+			"date": "2021-09-07T19:44:46.000Z",
+			"content": "Fire SVG animations (SMIL) when the SVG is visible—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://twitter.com/search?q=%23WebDesign\">#WebDesign</a> via <a href=\"http://twinybots.ch\">twinybots.ch</a> <a href=\"https://www.zachleat.com/web/svg-animate/\">zachleat.com/web/svg-animat…</a>\n<a class=\"u-mention\" href=\"http://twinybots.ch/\"></a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://twinybots.ch/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264779,
+			"parentId": 0,
+			"url": "https://twitter.com/Janice87587731/status/1435328243893219332",
+			"author": {
+				"name": "justJANICE1968",
+				"url": "https://twitter.com/Janice87587731",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/395e55f5d8c1ff169b2b299fd27ed560302319611d9511fa6a4376763875d820.jpg"
+			},
+			"date": "2021-09-07T19:44:55.000Z",
+			"content": "Fire SVG animations (SMIL) when the SVG is visible—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://twitter.com/search?q=%23WebDesign\">#WebDesign</a> via <a href=\"http://twinybots.ch\">twinybots.ch</a> <a href=\"https://www.zachleat.com/web/svg-animate/\">zachleat.com/web/svg-animat…</a>\n<a class=\"u-mention\" href=\"http://twinybots.ch/\"></a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://twinybots.ch/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264761,
+			"parentId": 0,
+			"url": "https://codinghindi.in/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {},
+			"date": "2021-09-07T19:57:08.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264762,
+			"parentId": 0,
+			"url": "https://graphicdon.com/2021/09/07/fire-svg-animations-smil-when-the-svg-is-visible-zachleat/",
+			"author": {},
+			"date": "2021-09-07T20:02:45.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264768,
+			"parentId": 0,
+			"url": "https://blogs.thebitx.com/index.php/2021/09/07/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {},
+			"date": "2021-09-07T20:19:16.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264773,
+			"parentId": 0,
+			"url": "https://www.codeificant.com/fire-svg-animations-smil-when-the-svg-is-visible/",
+			"author": {},
+			"date": "2021-09-07T20:20:53.000Z",
+			"content": "<ul><li>\n\t\t\t\t\t<a href=\"http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.codeificant.com%2Ffire-svg-animations-smil-when-the-svg-is-visible%2F&amp;t=Fire%20SVG%20animations%20%28SMIL%29%20when%20the%20SVG%20is%20visible\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Facebook</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a href=\"http://twitter.com/share?text=Fire%20SVG%20animations%20%28SMIL%29%20when%20the%20SVG%20is%20visible&amp;url=https%3A%2F%2Fwww.codeificant.com%2Ffire-svg-animations-smil-when-the-svg-is-visible%2F&amp;via=Codeificant\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Twitter</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a href=\"http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.codeificant.com%2Ffire-svg-animations-smil-when-the-svg-is-visible%2F&amp;title=Fire%20SVG%20animations%20%28SMIL%29%20when%20the%20SVG%20is%20visible\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>LinkedIn</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a href=\"https://www.codeificant.com/fire-svg-animations-smil-when-the-svg-is-visible/#\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Pinterest</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\n\t\t\t\t\t\t<span><i></i></span>\n\t\t\t\t\t\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n<i></i> <span></span><span>Shares</span>\n</li>\n\t\t\t\t\t</ul>\n\n<p>Had a use case come in where the design had an SVG animation that ran one interation and only one. It looked like this (some content has been removed):</p>\n<p>If you’re on a device with a small vertical viewport size, you may not have noticed the above animation. Unfortunately the animations start (and complete!) whether or not the SVG is visible!</p>\n<p>I wanted to wire the animations up to IntersectionObserver to make sure they only started animating when visible. Here’s how I did it:</p>\n<h2>Modify the SVG <a href=\"https://www.zachleat.com/web/svg-animate/#modify-the-svg\">#</a>\n</h2>\n<p>I found all of the instances of <code>&lt;animate&gt;</code> or <code>&lt;animateTransform&gt;</code> and wired up the <code>begin</code> attributes to properly cascade the order of the animation internally. I want all of them to start when my bezier curve starts animating, so I added an <code>id</code> to that animation (there was an issue with dashes in that <code>id</code>, so beware using dashes):</p>\n<p>\t\t<a href=\"https://flatlogic.com/blog/top-40-javascript-meme-for-developers/\"><img src=\"https://www.codeificant.com/wp-content/uploads/2021/07/javascript_memes.png\" style=\"margin:4rem auto;\" alt=\"javascript_memes.png\" /></a>\n\t</p>\n<pre><code><span><span><span>&lt;</span>animate</span><br /><span>id</span><span><span>=</span><span>\"</span>mysvgline<span>\"</span></span><br /><span> <span>attributeType</span><span><span>=</span><span>\"</span>xml<span>\"</span></span></span><br /><span> <span>attributeName</span><span><span>=</span><span>\"</span>stroke-dashoffset<span>\"</span></span></span><br /><span> <span>from</span><span><span>=</span><span>\"</span>500<span>\"</span></span></span><br /><span> <span>to</span><span><span>=</span><span>\"</span>0<span>\"</span></span></span><br /><span> <span>dur</span><span><span>=</span><span>\"</span>.8s<span>\"</span></span></span><br /><span> <span>begin</span><span><span>=</span><span>\"</span>0s<span>\"</span></span></span><br /><span>/&gt;</span></span></code></pre>\n<p><em>Learn how to animate a line/curve: <a href=\"https://css-tricks.com/svg-line-animation-works/\"><img alt=\"css’s Avatar\" src=\"https://www.zachleat.com/img/avatars/css.jpeg\" width=\"72\" height=\"72\" />CSS Tricks: How SVG Line Animation Works</a></em></p>\n<p>Take note of the <code>begin</code> attribute above, that will be important later.</p>\n<p>Now I want to find the other animations in my SVG that I want to start at the same time and change their <code>begin</code> attribute to use the <code>id</code> from above with a <code>.begin</code> suffix. This starts this animation when the referenced animation starts. It looks like this:</p>\n<pre><code><span><span><span>&lt;</span>animateMotion</span><br /><span>begin</span><span><span>=</span><span>\"</span>mysvgline.begin<span>\"</span></span><br /><span> <span>dur</span><span><span>=</span><span>\"</span>.8s<span>\"</span></span></span><br /><span> <span>repeatCount</span><span><span>=</span><span>\"</span>1<span>\"</span></span></span><br /><span> <span>fill</span><span><span>=</span><span>\"</span>freeze<span>\"</span></span></span><br /><span> <span>path</span><span><span>=</span><span>\"</span>M35.5 20C216.281 20 352.411 182 512.5 182<span>\"</span></span></span><br /><span>/&gt;</span></span></code></pre>\n<p>Alternatively, you can use <code>.end</code> to start this animation when the referenced animation ends.</p>\n<p><em>(Side note: <code>repeatCount=\"1\"</code> and <code>fill=\"freeze\"</code> are best buddies. <code>fill=\"freeze\"</code> means that your animation won’t rewind to the first frame at the end)</em></p>\n<p>Next go back to the original animation and change the <code>begin</code> attribute to <code>indefinite</code> (Read more at <a href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin#animate_animatecolor_animatemotion_animatetransform_set\">MDN: <code>begin</code> – SVG</a>). This tells the SVG not to start it until I use JavaScript to trigger it using <code>.beginElement()</code>.</p>\n<pre><code><span><span><span>&lt;</span>animate</span><br /><span> <span>id</span><span><span>=</span><span>\"</span>mysvgline<span>\"</span></span></span><br /><span> <span>attributeType</span><span><span>=</span><span>\"</span>xml<span>\"</span></span></span><br /><span> <span>attributeName</span><span><span>=</span><span>\"</span>stroke-dashoffset<span>\"</span></span></span><br /><span> <span>from</span><span><span>=</span><span>\"</span>500<span>\"</span></span></span><br /><span> <span>to</span><span><span>=</span><span>\"</span>0<span>\"</span></span></span><br /><span> <span>dur</span><span><span>=</span><span>\"</span>.8s<span>\"</span></span></span><br /><span>begin</span><span><span>=</span><span>\"</span>indefinite<span>\"</span></span><br /><span>/&gt;</span></span></code></pre>\n<p><em>(Another side note: just thinking aloud here as I write this—I wonder if I can use <code>&lt;noscript&gt;</code> inside of SVG as a no-JS fallback)</em></p>\n<h2>Add the IntersectionObserver <a href=\"https://www.zachleat.com/web/svg-animate/#add-the-intersectionobserver\">#</a>\n</h2>\n<p>It might look like this:</p>\n<pre><code><span>if</span> <span>(</span><span>'IntersectionObserver'</span> <span>in</span> window<span>)</span> <span>{</span><br /><span>let</span> elements <span>=</span> document<span>.</span><span>querySelectorAll</span><span>(</span><span>\"svg\"</span><span>)</span><span>;</span></code></pre><p><code><span>let</span> observer <span>=</span> <span>new</span> <span>IntersectionObserver</span><span>(</span><span>entries</span> <span>=&gt;</span> <span>{</span><br /><span>let</span> mediaQuery <span>=</span> window<span>.</span><span>matchMedia</span><span>(</span><span>'(prefers-reduced-motion: no-preference)'</span><span>)</span><span>;</span><br /><span>if</span><span>(</span><span>!</span>mediaQuery<span>.</span>matches<span>)</span> <span>{</span><br /><span>return</span><span>;</span><br /><span>}</span></code></p><code>\n</code><p><code><span>for</span><span>(</span><span>let</span> entry <span>of</span> entries<span>)</span> <span>{</span><br /><span>if</span><span>(</span><span>!</span>entry<span>.</span>isIntersecting<span>)</span> <span>{</span><br /><span>continue</span><span>;</span><br /><span>}</span></code></p><code>\n</code><p><code><br /><span>let</span> beginElements <span>=</span> entry<span>.</span>target<span>.</span><span>querySelectorAll</span><span>(</span><span><span>`</span><span>:scope [begin=\"indefinite\"]</span><span>`</span></span><span>)</span><span>;</span><br /><span>for</span><span>(</span><span>let</span> beginEl <span>of</span> beginElements<span>)</span> <span>{</span><br />beginEl<span>.</span><span>beginElement</span><span>(</span><span>)</span><span>;</span></code></p><code>\n</code><p><code><br />observer<span>.</span><span>unobserve</span><span>(</span>entry<span>.</span>target<span>)</span><span>;</span><br /><span>}</span><br /><span>}</span><br /><span>}</span><span>,</span><br /><span>{</span><br />threshold<span>:</span> <span>.5</span> <br /><span>}</span><span>)</span><span>;</span></code></p><code>\n</code><p><code><span>for</span><span>(</span><span>let</span> elem <span>of</span> elements<span>)</span> <span>{</span><br />observer<span>.</span><span>observe</span><span>(</span>elem<span>)</span><span>;</span><br /><span>}</span><br /><span>}</span></code></p><code></code>\n<h2>Try it yourself <a href=\"https://www.zachleat.com/web/svg-animate/#try-it-yourself\">#</a>\n</h2>\n<h2>More Links <a href=\"https://www.zachleat.com/web/svg-animate/#more-links\">#</a>\n</h2>\n<p><a href=\"https://www.zachleat.com/web/svg-animate/\">Source</a></p>\n<a href=\"https://flatlogic.com/blog/vue-vs-react-what-is-easier-what-is-trending-detailed-guide-with-all-2021/\"><img src=\"https://www.codeificant.com/wp-content/uploads/2021/07/vue_vs_reactjs.png\" alt=\"vue_vs_reactjs.png\" /></a>                Tags: <a href=\"https://www.codeificant.com/tag/css/\">css</a>, <a href=\"https://www.codeificant.com/tag/css-tricks/\">css tricks</a>, <a href=\"https://www.codeificant.com/tag/frontend/\">frontend</a>, <a href=\"https://www.codeificant.com/tag/intersectionobserver/\">IntersectionObserver</a>, <a href=\"https://www.codeificant.com/tag/link/\">Link</a>, <a href=\"https://www.codeificant.com/tag/smil/\">SMIL</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264776,
+			"parentId": 0,
+			"url": "https://twitter.com/SuzannePamelaW1/status/1435338843851534338",
+			"author": {
+				"name": "Suzanne Pamela Webb",
+				"url": "https://twitter.com/SuzannePamelaW1",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/daaedccbb27a9552b288ffbb05693f3ed93f9b3c180ee66816f9aaaef62828c7.jpg"
+			},
+			"date": "2021-09-07T20:27:02.000Z",
+			"content": "Fire SVG animations (SMIL) when the SVG is visible—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://twitter.com/search?q=%23WebDesign\">#WebDesign</a> via <a href=\"http://twinybots.ch\">twinybots.ch</a> <a href=\"https://www.zachleat.com/web/svg-animate/\">zachleat.com/web/svg-animat…</a>\n<a class=\"u-mention\" href=\"http://twinybots.ch/\"></a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://twinybots.ch/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264786,
+			"parentId": 0,
+			"url": "https://wpnewshub.com/fire-svg-animations-smil-when-the-svg-is-visible/",
+			"author": {},
+			"date": "2021-09-07T20:42:34.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264798,
+			"parentId": 0,
+			"url": "https://wpguynews.com/fire-svg-animations-smil-when-the-svg-is-visible/",
+			"author": {},
+			"date": "2021-09-07T21:03:46.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264833,
+			"parentId": 0,
+			"url": "https://twitter.com/sense_comment/status/1435351651364347906",
+			"author": {
+				"name": "COMMENTSENSE",
+				"url": "https://twitter.com/sense_comment",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/14384222ef5b23454cd8830137ba25fa7bffdbac0783c98b76567caa2b7af87c.jpg"
+			},
+			"date": "2021-09-07T21:17:55.000Z",
+			"content": "Fire SVG animations (SMIL) when the SVG is visible—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/svg-animate/\">zachleat.com/web/svg-animat…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265046,
+			"parentId": 0,
+			"url": "https://wpdesigns.live/fire-svg-animations-smil-when-the-svg-is-visible/",
+			"author": {},
+			"date": "2021-09-08T04:18:47.000Z",
+			"content": "<p>Had a use case come in where the design had an SVG animation that ran one interation and only one. It looked like this (some content has been removed):</p>\n<p>If you’re on a device with a small vertical viewport size, you may not have noticed the above animation. Unfortunately the animations start (and complete!) whether or not the SVG is visible!</p>\n<p>I wanted to wire the animations up to IntersectionObserver to make sure they only started animating when visible. Here’s how I did it:</p>\n<h2>Modify the SVG <a href=\"https://www.zachleat.com/web/svg-animate/#modify-the-svg\">#</a>\n</h2>\n<p>I found all of the instances of <code>&lt;animate&gt;</code> or <code>&lt;animateTransform&gt;</code> and wired up the <code>begin</code> attributes to properly cascade the order of the animation internally. I want all of them to start when my bezier curve starts animating, so I added an <code>id</code> to that animation (there was an issue with dashes in that <code>id</code>, so beware using dashes):</p>\n<pre><code><span><span><span>&lt;</span>animate</span><br /><span>id</span><span><span>=</span><span>\"</span>mysvgline<span>\"</span></span><br /><span> <span>attributeType</span><span><span>=</span><span>\"</span>xml<span>\"</span></span></span><br /><span> <span>attributeName</span><span><span>=</span><span>\"</span>stroke-dashoffset<span>\"</span></span></span><br /><span> <span>from</span><span><span>=</span><span>\"</span>500<span>\"</span></span></span><br /><span> <span>to</span><span><span>=</span><span>\"</span>0<span>\"</span></span></span><br /><span> <span>dur</span><span><span>=</span><span>\"</span>.8s<span>\"</span></span></span><br /><span> <span>begin</span><span><span>=</span><span>\"</span>0s<span>\"</span></span></span><br /><span>/&gt;</span></span></code></pre>\n<p><em>Learn how to animate a line/curve: <a href=\"https://css-tricks.com/svg-line-animation-works/\">CSS Tricks: How SVG Line Animation Works</a></em></p>\n<p>Take note of the <code>begin</code> attribute above, that will be important later.</p>\n<p>Now I want to find the other animations in my SVG that I want to start at the same time and change their <code>begin</code> attribute to use the <code>id</code> from above with a <code>.begin</code> suffix. This starts this animation when the referenced animation starts. It looks like this:</p>\n<pre><code><span><span><span>&lt;</span>animateMotion</span><br /><span>begin</span><span><span>=</span><span>\"</span>mysvgline.begin<span>\"</span></span><br /><span> <span>dur</span><span><span>=</span><span>\"</span>.8s<span>\"</span></span></span><br /><span> <span>repeatCount</span><span><span>=</span><span>\"</span>1<span>\"</span></span></span><br /><span> <span>fill</span><span><span>=</span><span>\"</span>freeze<span>\"</span></span></span><br /><span> <span>path</span><span><span>=</span><span>\"</span>M35.5 20C216.281 20 352.411 182 512.5 182<span>\"</span></span></span><br /><span>/&gt;</span></span></code></pre>\n<p>Alternatively, you can use <code>.end</code> to start this animation when the referenced animation ends.</p>\n<p><em>(Side note: <code>repeatCount=\"1\"</code> and <code>fill=\"freeze\"</code> are best buddies. <code>fill=\"freeze\"</code> means that your animation won’t rewind to the first frame at the end)</em></p>\n<p>Next go back to the original animation and change the <code>begin</code> attribute to <code>indefinite</code> (Read more at <a href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/begin#animate_animatecolor_animatemotion_animatetransform_set\">MDN: <code>begin</code> – SVG</a>). This tells the SVG not to start it until I use JavaScript to trigger it using <code>.beginElement()</code>.</p>\n<pre><code><span><span><span>&lt;</span>animate</span><br /><span> <span>id</span><span><span>=</span><span>\"</span>mysvgline<span>\"</span></span></span><br /><span> <span>attributeType</span><span><span>=</span><span>\"</span>xml<span>\"</span></span></span><br /><span> <span>attributeName</span><span><span>=</span><span>\"</span>stroke-dashoffset<span>\"</span></span></span><br /><span> <span>from</span><span><span>=</span><span>\"</span>500<span>\"</span></span></span><br /><span> <span>to</span><span><span>=</span><span>\"</span>0<span>\"</span></span></span><br /><span> <span>dur</span><span><span>=</span><span>\"</span>.8s<span>\"</span></span></span><br /><span>begin</span><span><span>=</span><span>\"</span>indefinite<span>\"</span></span><br /><span>/&gt;</span></span></code></pre>\n<p><em>(Another side note: just thinking aloud here as I write this—I wonder if I can use <code>&lt;noscript&gt;</code> inside of SVG as a no-JS fallback)</em></p>\n<h2>Add the IntersectionObserver <a href=\"https://www.zachleat.com/web/svg-animate/#add-the-intersectionobserver\">#</a>\n</h2>\n<p>It might look like this:</p>\n<pre><code><span>if</span> <span>(</span><span>'IntersectionObserver'</span> <span>in</span> window<span>)</span> <span>{</span><br /><span>let</span> elements <span>=</span> document<span>.</span><span>querySelectorAll</span><span>(</span><span>\"svg\"</span><span>)</span><span>;</span></code></pre><p><code><span>let</span> observer <span>=</span> <span>new</span> <span>IntersectionObserver</span><span>(</span><span>entries</span> <span>=&gt;</span> <span>{</span><br /><span>let</span> mediaQuery <span>=</span> window<span>.</span><span>matchMedia</span><span>(</span><span>'(prefers-reduced-motion: no-preference)'</span><span>)</span><span>;</span><br /><span>if</span><span>(</span><span>!</span>mediaQuery<span>.</span>matches<span>)</span> <span>{</span><br /><span>return</span><span>;</span><br /><span>}</span></code></p><code>\n</code><p><code><span>for</span><span>(</span><span>let</span> entry <span>of</span> entries<span>)</span> <span>{</span><br /><span>if</span><span>(</span><span>!</span>entry<span>.</span>isIntersecting<span>)</span> <span>{</span><br /><span>continue</span><span>;</span><br /><span>}</span></code></p><code>\n</code><p><code><br /><span>let</span> beginElements <span>=</span> entry<span>.</span>target<span>.</span><span>querySelectorAll</span><span>(</span><span><span>`</span><span>:scope [begin=\"indefinite\"]</span><span>`</span></span><span>)</span><span>;</span><br /><span>for</span><span>(</span><span>let</span> beginEl <span>of</span> beginElements<span>)</span> <span>{</span><br />beginEl<span>.</span><span>beginElement</span><span>(</span><span>)</span><span>;</span></code></p><code>\n</code><p><code><br />observer<span>.</span><span>unobserve</span><span>(</span>entry<span>.</span>target<span>)</span><span>;</span><br /><span>}</span><br /><span>}</span><br /><span>}</span><span>,</span><br /><span>{</span><br />threshold<span>:</span> <span>.5</span> <br /><span>}</span><span>)</span><span>;</span></code></p><code>\n</code><p><code><span>for</span><span>(</span><span>let</span> elem <span>of</span> elements<span>)</span> <span>{</span><br />observer<span>.</span><span>observe</span><span>(</span>elem<span>)</span><span>;</span><br /><span>}</span><br /><span>}</span></code></p><code></code>\n<h2>Try it yourself <a href=\"https://www.zachleat.com/web/svg-animate/#try-it-yourself\">#</a>\n</h2>\n<h2>More Links <a href=\"https://www.zachleat.com/web/svg-animate/#more-links\">#</a>\n</h2>\n                \n                    <h3></h3>\n                                        \n        \n\n            \n                <a href=\"https://wpdesigns.live/author/admin/\"></a>\n            \n            \n                <h4>\n                    <a href=\"https://wpdesigns.live/author/admin/\">admin</a>\n                </h4>\n\n                \n                \n                                    \n                \n                    <p>\n                        <a href=\"https://wpdesigns.live/author/admin/\">See author's posts</a>\n                    </p>\n                \n                                    <ul><li>\n                                    <a href=\"https://wpdesigns.live\"></a>\n                                </li>\n                                                                                                                                                                                        </ul>\n        \n\n                                            \n                                            \n                                    \n                        \n\t<h2>Continue Reading</h2>\n\t\t\n<a href=\"https://wpdesigns.live/building-your-own-subscription-newsletter/\"><span>Previous:</span> Building Your Own Subscription Newsletter</a>\n<a href=\"https://wpdesigns.live/can-we-have-custom-media-queries-please/\"><span>Next:</span> Can we have custom media queries, please?</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265071,
+			"parentId": 0,
+			"url": "https://www.67nj.org/fire-svg-animations-smil-when-the-svg-is-visible/",
+			"author": {},
+			"date": "2021-09-08T05:01:01.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265080,
+			"parentId": 0,
+			"url": "https://dailytechpage.com/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {},
+			"date": "2021-09-08T05:51:05.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265184,
+			"parentId": 0,
+			"url": "https://techupd.com/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {},
+			"date": "2021-09-08T10:35:38.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265194,
+			"parentId": 0,
+			"url": "https://technologynews.biz/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {},
+			"date": "2021-09-08T11:46:59.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265246,
+			"parentId": 0,
+			"url": "https://tipsxd.com/fire-svg-animations-smil-when-the-svg-is-visible-zachleat-com/",
+			"author": {},
+			"date": "2021-09-08T13:50:14.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1267065,
+			"parentId": 0,
+			"url": "https://twitter.com/Nucleolo_/status/1436373910212288515",
+			"author": {
+				"name": "Nucléolo",
+				"url": "https://twitter.com/Nucleolo_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0ae741d1972db1f610b5e206ab76b57edec28ef51c197822ce031ccbeef8dbd2.jpg"
+			},
+			"date": "2021-09-10T17:00:01.000Z",
+			"content": "Fire SVG animations (smil) when the SVG is visible <a href=\"https://www.zachleat.com/web/svg-animate/\">zachleat.com/web/svg-animat…</a>\n\n<a href=\"https://twitter.com/search?q=%23css\">#css</a> <a href=\"https://twitter.com/search?q=%23html\">#html</a> <a href=\"https://twitter.com/search?q=%23js\">#js</a> <a href=\"https://twitter.com/search?q=%23webdesign\">#webdesign</a> <a href=\"https://twitter.com/search?q=%23appdesign\">#appdesign</a> <a href=\"https://twitter.com/search?q=%23productdesign\">#productdesign</a> <a href=\"https://twitter.com/search?q=%23programming\">#programming</a> <a href=\"https://twitter.com/search?q=%23code\">#code</a> <a href=\"https://twitter.com/search?q=%23coder\">#coder</a> <a href=\"https://twitter.com/search?q=%23coding\">#coding</a> <a href=\"https://twitter.com/search?q=%23digital\">#digital</a>  <a href=\"https://twitter.com/search?q=%23animation\">#animation</a> <a href=\"https://twitter.com/search?q=%23ixd\">#ixd</a> <a href=\"https://twitter.com/search?q=%23web\">#web</a> <a href=\"https://twitter.com/search?q=%23svg\">#svg</a> <a href=\"https://twitter.com/search?q=%23vector\">#vector</a> <a href=\"https://twitter.com/search?q=%23FrontEndDevelopment\">#FrontEndDevelopment</a> <a href=\"https://twitter.com/search?q=%23Webdesigner\">#Webdesigner</a> <a href=\"https://twitter.com/search?q=%23webdevelopment\">#webdevelopment</a> <a href=\"https://twitter.com/search?q=%23webdeveloper\">#webdeveloper</a> <a href=\"https://twitter.com/search?q=%23website\">#website</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1323318,
+			"parentId": 0,
+			"url": "https://twitter.com/BryanWilhite/status/1475875649726259206",
+			"author": {
+				"name": "Bryan D. Wilhite",
+				"url": "https://twitter.com/BryanWilhite",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a66fee0303ede366b865307c88df137aa225477a2a0899d0649e150adfa24496.jpg"
+			},
+			"date": "2021-12-28T17:05:49.000Z",
+			"content": "Fire SVG animations (SMIL) when the SVG is visible—<a href=\"http://zachleat.com\">zachleat.com</a>\n\nA post by Zach Leatherman (zachleat)\n\n<a href=\"https://www.zachleat.com/web/svg-animate/\">zachleat.com/web/svg-animat…</a>\n\n<a href=\"https://twitter.com/search?q=%23rxa\">#rxa</a> 👁⚙🌩\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1238504,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-21212832",
+			"date": "2021-08-05T14:56:35.000Z",
+			"author": {
+				"name": "Anthony Sapp",
+				"url": "https://twitter.com/thesapper",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9fd5acc64246e22bd1be1241117aebe0e8b92d4d5735bfc8e83de973fcb4bfae.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238505,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-16472219",
+			"date": "2021-08-05T14:56:36.000Z",
+			"author": {
+				"name": "Chris Portscheller",
+				"url": "https://twitter.com/cport1",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4bec917c5ab06bba821554d83635db83126d0d31eb384dc15f92ec8ae7a28cd8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238506,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-9594362",
+			"date": "2021-08-05T14:56:37.000Z",
+			"author": {
+				"name": "Andy Davies",
+				"url": "https://twitter.com/AndyDavies",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a90e45d17c9a935a015f99d326dc9af4063a54eeabcea9348c5775bb27468963.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238507,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1290010705597534213",
+			"date": "2021-08-05T14:56:38.000Z",
+			"author": {
+				"name": "John Kemp-Cruz",
+				"url": "https://twitter.com/jkc_codes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/22d3c106a288041e84dc34157e5df101962fef5016bba8eca991dff99f06f44b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238508,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-75338702",
+			"date": "2021-08-05T14:56:40.000Z",
+			"author": {
+				"name": "rong-sen",
+				"url": "https://twitter.com/igarshmyb",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bd662d7c93031c6644dc523f510fce426b540274c09cfd2899c14c4d719d6803.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238509,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1319912101",
+			"date": "2021-08-05T14:56:41.000Z",
+			"author": {
+				"name": "🔴 André Jaenisch 🔴",
+				"url": "https://twitter.com/AndreJaenisch",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b519dd9e62a24b5c82d1a05db9052147d67f11d4be6206f1a0c7009916d865b5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238510,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-873307864567132160",
+			"date": "2021-08-05T14:56:42.000Z",
+			"author": {
+				"name": "Aɴᴅʀᴇᴡ Sᴏʟᴀɴᴛᴏ",
+				"url": "https://twitter.com/andrewsolanto",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a6aea89cd64c9e73893808ba316801b0473a20184c457387d488f4fcb7dd9216.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238511,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-13096242",
+			"date": "2021-08-05T14:56:43.000Z",
+			"author": {
+				"name": "Simon St.Laurent",
+				"url": "https://twitter.com/simonstl",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6173e0e7597312c8235a3f5bb8bb02667cb56d24fd2c2d06347e74b5ada28415.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238512,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-207825034",
+			"date": "2021-08-05T14:56:44.000Z",
+			"author": {
+				"name": "garlic salt enjoyer",
+				"url": "https://twitter.com/chuckletmilk",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6e967381e1313591ffccc00bacdb08f804f0f540f8a1eaa26bc3e90ac921d57d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238513,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-14436158",
+			"date": "2021-08-05T14:56:46.000Z",
+			"author": {
+				"name": "keith h.",
+				"url": "https://twitter.com/sillywampa",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/60ecbd37d8d6bf911b39e5473586d1c4c949b2e5faa268cc312024467be418cb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238514,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-79198092",
+			"date": "2021-08-05T14:56:47.000Z",
+			"author": {
+				"name": "大島遼｜Ryo Oshima",
+				"url": "https://twitter.com/oshimaryo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8a4cfef77a0d0f0955c9d533d518086e4cb8ec28bd910427a4d4e04e649fa26b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238515,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-18935000",
+			"date": "2021-08-05T14:56:48.000Z",
+			"author": {
+				"name": "Ben Delarre",
+				"url": "https://twitter.com/BenDelarre",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0be131d3c95d9ecf47897d94eb7df90f09ef0350eaaebe70b0ead47f7c18c12e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238516,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-18331731",
+			"date": "2021-08-05T14:56:50.000Z",
+			"author": {
+				"name": "Pelle Wessman",
+				"url": "https://twitter.com/voxpelli",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/500a4883279015b8c0bf56f607034761ddc0c366c0275632662441f25af5351c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238628,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-814392919",
+			"date": "2021-08-05T17:07:04.000Z",
+			"author": {
+				"name": "Nic Colgrove",
+				"url": "https://twitter.com/CloudedNic",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/04016d933354fbe3e8dc4495a61e2a56fdece8b9794d980a54a3ed24bfc9c5d2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238629,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-2982029017",
+			"date": "2021-08-05T17:07:05.000Z",
+			"author": {
+				"name": "CyberCode Twins👾🪐👾",
+				"url": "https://twitter.com/cybercodetwins",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/197b607bd10c45a4fce74076613d13e50d3e822b59ab3c5ff043cb0e983bd301.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238630,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-3563601",
+			"date": "2021-08-05T17:07:06.000Z",
+			"author": {
+				"name": "Dennis Frank",
+				"url": "https://twitter.com/freshmango",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fd250cba7285e616a349f74d143ecd898f689f81407de58339c505c59444ed59.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238631,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-711243",
+			"date": "2021-08-05T17:07:08.000Z",
+			"author": {
+				"name": "Michael Schultz",
+				"url": "https://twitter.com/michaelschultz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/55d6aabb44037a72844facfdad091ef6eed2fb67403c8f577f9b8ecc8a763faf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238632,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-19028022",
+			"date": "2021-08-05T17:07:08.000Z",
+			"author": {
+				"name": "Thomas Allmer",
+				"url": "https://twitter.com/daKmoR",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c0ff56c31ab3591207fdddb8264e6a23f28dcb633a65bcb0757d7774d2b4d64b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238633,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1728160536",
+			"date": "2021-08-05T17:07:10.000Z",
+			"author": {
+				"name": "David East",
+				"url": "https://twitter.com/_davideast",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f675b744c99f75c49c4b2be5dc9ff74402aa60df29228ba8b91e8fd89cb6256a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238634,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-143219346",
+			"date": "2021-08-05T17:07:11.000Z",
+			"author": {
+				"name": "Jeremy Wynn",
+				"url": "https://twitter.com/MerelyJeremy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2880064af62217f89cbfda1d3fc68fdf18e3f07f6cfe9c2c507fb4cb34f3652c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238635,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1223075493840179202",
+			"date": "2021-08-05T17:07:12.000Z",
+			"author": {
+				"name": "Anik",
+				"url": "https://twitter.com/s02n1ck",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/88ac1dc704f3e3563e6b11738a47367ab0a4e39bf9468028a1cfeb52e24b2ab0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238636,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-4689073459",
+			"date": "2021-08-05T17:07:13.000Z",
+			"author": {
+				"name": "Hyeseong Kim",
+				"url": "https://twitter.com/KrComet",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d3592a7743e061d3b9f954c4303a53000835a81e6bf278276409f64b720f688f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238637,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-23724008",
+			"date": "2021-08-05T17:07:14.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238638,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-17926140",
+			"date": "2021-08-05T17:07:16.000Z",
+			"author": {
+				"name": "Anna Yeaman",
+				"url": "https://twitter.com/stylecampaign",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4632532adc29a7428caf63c4f14916a22b32b13247d1861df7e8930ae7c5094e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238639,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-6308712",
+			"date": "2021-08-05T17:07:19.000Z",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://twitter.com/nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c21eff209ada91f6fe7e85dade06b7cd289b2c253324148110fe5c4ae2cb8021.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238640,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-33046163",
+			"date": "2021-08-05T17:07:20.000Z",
+			"author": {
+				"name": "tzi",
+				"url": "https://twitter.com/iamtzi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/771c10bdccf2f1097190137165e552207370fc500b4e8edf30f141ef858cede1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238641,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-12497",
+			"date": "2021-08-05T17:07:21.000Z",
+			"author": {
+				"name": "Simon Willison",
+				"url": "https://twitter.com/simonw",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c46b92c52ddffb51ac597cb3e7dbac595c881b3a3f30d5e4dbdafc471f28c936.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238642,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-15668072",
+			"date": "2021-08-05T17:07:21.000Z",
+			"author": {
+				"name": "Jason Lengstorf",
+				"url": "https://twitter.com/jlengstorf",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b50eb11cef8a411839db591ddd9106e5bf43c9117d27e06f605b91fda428fd72.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238643,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-114824192",
+			"date": "2021-08-05T17:07:22.000Z",
+			"author": {
+				"name": "Paula Dieterman",
+				"url": "https://twitter.com/pauladieterman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bc2b08a91a18b706469121e8cc6ec1c7a5c94d984dc38e87369e2bf0fd6a5837.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238644,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-978941110218317824",
+			"date": "2021-08-05T17:07:23.000Z",
+			"author": {
+				"name": "Chen Zhixiang",
+				"url": "https://twitter.com/ctengctsh",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238645,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-58448784",
+			"date": "2021-08-05T17:07:23.000Z",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://twitter.com/m_ott",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a34d0a855d4336e07245950e108a3d322445dabff46cfb01e805208ca3d8abcc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238646,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1117234662030675968",
+			"date": "2021-08-05T17:07:24.000Z",
+			"author": {
+				"name": "Sam Tancharoensuksavai",
+				"url": "https://twitter.com/samtan_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4df2e789937d59bfa54f9f0b9bbdfdf1f6d468b0c02a485dfe58ae49316725bd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238647,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-21994073",
+			"date": "2021-08-05T17:07:25.000Z",
+			"author": {
+				"name": "Tabs",
+				"url": "https://twitter.com/ladyofcode",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/814ea462b637adab5506ed2aec821ea316c8b4c60b1e47e237719cd916580ac8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238648,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-200841622",
+			"date": "2021-08-05T17:07:25.000Z",
+			"author": {
+				"name": "Leoaee",
+				"url": "https://twitter.com/leoaee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4ce4efd302883f4227995bf24c9cdca1dcf34cf85a5e4e07144af978dae53dd9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238649,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-266790419",
+			"date": "2021-08-05T17:07:26.000Z",
+			"author": {
+				"name": "Torsten Knabe",
+				"url": "https://twitter.com/torkna",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/94406757a0230bbe1efacda962c53c38d5fea27f19adbaaf622f08256100a5f1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238650,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-126480687",
+			"date": "2021-08-05T17:07:26.000Z",
+			"author": {
+				"name": "Rob",
+				"url": "https://twitter.com/cancel_that",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8cb4cef44bf444770888e615ea209ad05740a1acf4af65291911d2ded7cea671.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238651,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-24203304",
+			"date": "2021-08-05T17:07:27.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238882,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-758056",
+			"date": "2021-08-05T20:26:39.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://twitter.com/ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5a02571e30b5ee7d4cf5bdebf69e9ab5d536adfc20d7a5a11016dcb3988d12e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238883,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-125500675",
+			"date": "2021-08-05T20:26:41.000Z",
+			"author": {
+				"name": "кг|sтоf вегиаегт",
+				"url": "https://twitter.com/ssstofff",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bdb8b1c27ee74a5bcc493dca1fbff4796fa1d4c905496035bd3a91b1c904926a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238884,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1469451499",
+			"date": "2021-08-05T20:26:42.000Z",
+			"author": {
+				"name": "Nikita Voloboev",
+				"url": "https://twitter.com/nikitavoloboev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/49c4de5d9c1cf5a57dd74c2d54e29eaf33680745d6684801e8c2af0f4fe9ef1b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238885,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-153359450",
+			"date": "2021-08-05T20:26:43.000Z",
+			"author": {
+				"name": "Johan Terpstra",
+				"url": "https://twitter.com/FCCoachJohan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1b446070c09ab1d6121eb32d07fe233c8172fd0cae10b6d45dde93905ecbfd2a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238886,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-3285511",
+			"date": "2021-08-05T20:26:44.000Z",
+			"author": {
+				"name": "keith kurson",
+				"url": "https://twitter.com/keithkurson",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bc5d270520d7754215cdc9935c530a91ec0269e146604da428ba2d2e54121722.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238887,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-3073346737",
+			"date": "2021-08-05T20:26:45.000Z",
+			"author": {
+				"name": "Mathieu Huot",
+				"url": "https://twitter.com/huot_mathieu",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/82f53a270c460d65a56dd82596b67b578a8e4e1ea4b5350517e3b478c262f7bc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238888,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1347053115468439552",
+			"date": "2021-08-05T20:26:47.000Z",
+			"author": {
+				"name": "uptonking",
+				"url": "https://twitter.com/uptonking2",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238889,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-541571008",
+			"date": "2021-08-05T20:26:48.000Z",
+			"author": {
+				"name": "Georg Andrae",
+				"url": "https://twitter.com/georgandrae",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5b5ae85e1fb60df02c07bebd9719490ad8e2ee294cbb0d39e24a5291d8cfabf0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1239037,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-368132930",
+			"date": "2021-08-05T23:39:05.000Z",
+			"author": {
+				"name": "José Manuel Díaz",
+				"url": "https://twitter.com/jmarellanes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a5ccfaf45edcde9883f53d37c651b91827f8bb038ff715288bffd0e300de54d7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1239131,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-466387534",
+			"date": "2021-08-06T01:50:50.000Z",
+			"author": {
+				"name": "Mukmin Abd Samad",
+				"url": "https://twitter.com/Mukmin_L4",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cd552f1773669d5ac485e8f1dd7055b95e2348163a5cc7927cdbf34996326e28.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1239132,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-149192964",
+			"date": "2021-08-06T01:50:51.000Z",
+			"author": {
+				"name": "ハチ huang",
+				"url": "https://twitter.com/slavesugi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/08b0e5fe4a17836e34c86e322fd0716a28368133a5da5efa5dab6be4b0a18507.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1239164,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-312068416",
+			"date": "2021-08-06T03:26:07.000Z",
+			"author": {
+				"name": "Jim Wolf",
+				"url": "https://twitter.com/spicymockduck",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/aa6ea310f064fd49bb59f37906255ef26667194171e85dedac7c48d345c188a8.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1239165,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1701096750",
+			"date": "2021-08-06T03:26:07.000Z",
+			"author": {
+				"name": "Ravin Sharma",
+				"url": "https://twitter.com/ravinsharma7",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f793a4e2b1a92d892cc8d4e4dd22e8eb16d7f829b3192f71ddbfc728d7c67ad5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1239214,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1355136739",
+			"date": "2021-08-06T04:34:19.000Z",
+			"author": {
+				"name": "Paul Melero",
+				"url": "https://twitter.com/paul_melero",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cf742803e4ca77b4f1eea820a9f18a3940b43e6a999059beaeed8186a9857b0d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1239281,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-1216415099310825472",
+			"date": "2021-08-06T06:26:50.000Z",
+			"author": {
+				"name": "Alexei Accio",
+				"url": "https://twitter.com/alexeiaccio",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/39afc98ff5e08a6ca1bdacca485e1b57d5b5e5e3d3f67902db634130eb07bf65.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1239359,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-401458598",
+			"date": "2021-08-06T08:52:19.000Z",
+			"author": {
+				"name": "Jacob Leech",
+				"url": "https://twitter.com/jacobleonleech",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/596d2e86149160ffb13361e9b7ba032989d3fe9f86e608a8f95e8e5025f38cea.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1239599,
+			"url": "https://twitter.com/zachleat/status/1423273206341902339#favorited-by-17946248",
+			"date": "2021-08-06T10:21:03.000Z",
+			"author": {
+				"name": "Michael Zumstein",
+				"url": "https://twitter.com/4aficiona2",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/da0b35646f0304621280e00f47b32f96aebffc67b743a93bf29f7c4a6faeb639.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1238658,
+			"url": "https://twitter.com/AndreJaenisch/status/1423273908409622540",
+			"date": "2021-08-05T13:25:17.000Z",
+			"author": {
+				"name": "🔴 André Jaenisch 🔴",
+				"url": "https://twitter.com/AndreJaenisch",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b519dd9e62a24b5c82d1a05db9052147d67f11d4be6206f1a0c7009916d865b5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238657,
+			"url": "https://twitter.com/_davideast/status/1423277604514136078",
+			"date": "2021-08-05T13:39:58.000Z",
+			"author": {
+				"name": "David East",
+				"url": "https://twitter.com/_davideast",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f675b744c99f75c49c4b2be5dc9ff74402aa60df29228ba8b91e8fd89cb6256a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238656,
+			"url": "https://twitter.com/jkc_codes/status/1423296776728051722",
+			"date": "2021-08-05T14:56:09.000Z",
+			"author": {
+				"name": "John Kemp-Cruz",
+				"url": "https://twitter.com/jkc_codes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/22d3c106a288041e84dc34157e5df101962fef5016bba8eca991dff99f06f44b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238655,
+			"url": "https://twitter.com/nhoizey/status/1423299000330072073",
+			"date": "2021-08-05T15:04:59.000Z",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://twitter.com/nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c21eff209ada91f6fe7e85dade06b7cd289b2c253324148110fe5c4ae2cb8021.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238654,
+			"url": "https://twitter.com/iamtzi/status/1423302651110903814",
+			"date": "2021-08-05T15:19:30.000Z",
+			"author": {
+				"name": "tzi",
+				"url": "https://twitter.com/iamtzi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/771c10bdccf2f1097190137165e552207370fc500b4e8edf30f141ef858cede1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238653,
+			"url": "https://twitter.com/cybercodetwins/status/1423309464858365955",
+			"date": "2021-08-05T15:46:34.000Z",
+			"author": {
+				"name": "CyberCode Twins👾🪐👾",
+				"url": "https://twitter.com/cybercodetwins",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/197b607bd10c45a4fce74076613d13e50d3e822b59ab3c5ff043cb0e983bd301.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1238652,
+			"url": "https://twitter.com/daKmoR/status/1423326936475045901",
+			"date": "2021-08-05T16:56:00.000Z",
+			"author": {
+				"name": "Thomas Allmer",
+				"url": "https://twitter.com/daKmoR",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c0ff56c31ab3591207fdddb8264e6a23f28dcb633a65bcb0757d7774d2b4d64b.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

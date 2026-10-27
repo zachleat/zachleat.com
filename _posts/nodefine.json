@@ -1,0 +1,1554 @@
+{
+	"comments": [
+		{
+			"id": 1885142,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/jakelazaroff.com/post/3li5nrqkt5k2b",
+			"author": {
+				"name": "Jake Lazaroff",
+				"url": "https://bsky.app/profile/jakelazaroff.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/13682ea7b6b961ce82281202879ac485e06a0de295249ff3cf2df10960ccb246.jpg"
+			},
+			"date": "2025-02-14T16:47:50.000Z",
+			"content": "i arrived at a very similar place (and <a href=\"https://bsky.app/profile/did:plc:hewhabm3uw73cbz27uwuydcg\">@knowler.dev</a> before me, linked in the post)",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885144,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5nuv56hc2q",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-02-14T16:49:36.000Z",
+			"content": "Amazing! How strongly do you feel about opt-in versus opt-out?",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885193,
+			"parentId": 0,
+			"url": "https://mastodon.social/@noleli/114003266915843518",
+			"author": {
+				"name": "Noah Liebman",
+				"url": "https://mastodon.social/@noleli",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/376eaffd57dfe1e7e31d7569386db8a545d2f5533207014b25361ce54ec5b62d.jpg"
+			},
+			"date": "2025-02-14T16:50:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://sunny.garden/@knowler\" class=\"u-url\">@<span>knowler</span></a></span> did the same in reverse! <a href=\"https://knowler.dev/blog/to-define-custom-elements-or-not-when-distributing-them\"><span>https://</span><span>knowler.dev/blog/to-define-cus</span><span>tom-elements-or-not-when-distributing-them</span></a></p>\n<a href=\"https://knowler.dev/blog/to-define-custom-elements-or-not-when-distributing-them\">To define custom elements or not when distributing them – Nathan Knowler</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885135,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5nwvlhmk2q",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-02-14T16:50:43.000Z",
+			"content": "oh, dang you allow the tag name to be passed in the query param — interesting",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885194,
+			"parentId": 0,
+			"url": "https://toot.community/@wavebeem/114003269677470077",
+			"author": {
+				"name": "sage ????",
+				"url": "https://toot.community/@wavebeem",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b62521fa57a7b4ff2ca9da9b586e0a76f5aeb8f0f51cf72d53b26567bd36fc49.jpg"
+			},
+			"date": "2025-02-14T16:50:44.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> seems sensible to me. i had the thought in the past of using ?tag=another-name, but exposing everything directly is more flexible</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885143,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/tonyward.dev/post/3li5nxjonnk2m",
+			"author": {
+				"name": "Tony Ward",
+				"url": "https://bsky.app/profile/tonyward.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8c910390bb81588390d4e5b73a58211150b968e9e32339520809d0cc1a6d90f0.jpg"
+			},
+			"date": "2025-02-14T16:51:04.000Z",
+			"content": "Oh I dig this!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885132,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/jakelazaroff.com/post/3li5nznpmqc2b",
+			"author": {
+				"name": "Jake Lazaroff",
+				"url": "https://bsky.app/profile/jakelazaroff.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/13682ea7b6b961ce82281202879ac485e06a0de295249ff3cf2df10960ccb246.jpg"
+			},
+			"date": "2025-02-14T16:52:16.000Z",
+			"content": "i like opt-in! and i think i actually prefer ?nodefine to ?define=false",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885133,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/knowler.dev/post/3li5o3ftflc2w",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://bsky.app/profile/knowler.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/134e6e36edf98cac01c904ba71a5b198618c44614c89c5b17734f593c7619047.jpg"
+			},
+			"date": "2025-02-14T16:53:15.000Z",
+			"content": "I tend to follow the principle of no side effects of stuff like this.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885134,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/knowler.dev/post/3li5o52van22w",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://bsky.app/profile/knowler.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/134e6e36edf98cac01c904ba71a5b198618c44614c89c5b17734f593c7619047.jpg"
+			},
+			"date": "2025-02-14T16:54:10.000Z",
+			"content": "s/of stuff/for stuff",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885145,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5o73v4cc2q",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-02-14T16:55:18.000Z",
+			"content": "thanks Tony!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885146,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/knowler.dev/post/3li5o754h3k2w",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://bsky.app/profile/knowler.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/134e6e36edf98cac01c904ba71a5b198618c44614c89c5b17734f593c7619047.jpg"
+			},
+			"date": "2025-02-14T16:55:20.000Z",
+			"content": "“Avoiding bundlers at all costs” crew unite!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885136,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5oaixjjk2q",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-02-14T16:56:06.000Z",
+			"content": "That’s a good argument!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885137,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/jakelazaroff.com/post/3li5ob36pn22b",
+			"author": {
+				"name": "Jake Lazaroff",
+				"url": "https://bsky.app/profile/jakelazaroff.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/13682ea7b6b961ce82281202879ac485e06a0de295249ff3cf2df10960ccb246.jpg"
+			},
+			"date": "2025-02-14T16:56:25.000Z",
+			"content": "wait i meant opt-out lol",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885148,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5ocvdaqk2q",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-02-14T16:57:26.000Z",
+			"content": "<a href=\"https://bsky.app/profile/did:plc:vrrdgcidwpvn4omvn7uuufoo\">@jakelazaroff.com</a> has some lovely ideas documented here that overlap: <a href=\"https://til.jakelazaroff.com/html/define-a-custom-element/\">til.jakelazaroff.com/html/define-...</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885138,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/jakelazaroff.com/post/3li5oe2g66s2b",
+			"author": {
+				"name": "Jake Lazaroff",
+				"url": "https://bsky.app/profile/jakelazaroff.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/13682ea7b6b961ce82281202879ac485e06a0de295249ff3cf2df10960ccb246.jpg"
+			},
+			"date": "2025-02-14T16:58:05.000Z",
+			"content": "yeah i think i feel more strongly about the principle of least surprise than about whether to define by default or not<br>\n<br>\nlike, i personally prefer define by default, but if there were a community expectation of opt-in definition via a query string param i’d choose that pattern over my own preference",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885149,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/joeldrake.bsky.social/post/3li5ou545as2l",
+			"author": {
+				"name": "Joel Drake",
+				"url": "https://bsky.app/profile/joeldrake.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/aeac122dd2a26488a98b1e6f3057df4a5c045056ddc8e14483a63fb7168876c2.jpg"
+			},
+			"date": "2025-02-14T17:07:04.000Z",
+			"content": "I read it as Node Fine. ????<br>\n<br>\nHow about camel casing it?<br>\n<br>\n?noDefine",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885147,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5t77hwyc22",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-02-14T18:24:51.000Z",
+			"content": "I personally don’t like relying on case sensitivity in query param keys (acknowledging that they are case sensitive) ????",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885197,
+			"parentId": 0,
+			"url": "https://techhub.social/@develwithoutacause/114003659933876183",
+			"author": {
+				"name": "Doug Parker ????️",
+				"url": "https://techhub.social/@develwithoutacause",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
+			},
+			"date": "2025-02-14T18:29:59.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> FYI the static `define` pattern you describe is a proposed community protocol.</p><p><a href=\"https://github.com/webcomponents-cg/community-protocols/blob/main/proposals/on-demand-definitions.md\"><span>https://</span><span>github.com/webcomponents-cg/co</span><span>mmunity-protocols/blob/main/proposals/on-demand-definitions.md</span></a></p><p>My hope is that tools and frameworks can use this knowledge to auto-generate the `.define()` call when using a custom element such that you don't need to worry about something like `?nodefine`.</p>\n<a href=\"https://github.com/webcomponents-cg/community-protocols/blob/main/proposals/on-demand-definitions.md\">community-protocols/proposals/on-demand-definitions.md at main · webcomponents-cg/community-protocols</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885200,
+			"parentId": 0,
+			"url": "https://techhub.social/@develwithoutacause/114003665496177591",
+			"author": {
+				"name": "Doug Parker ????️",
+				"url": "https://techhub.social/@develwithoutacause",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
+			},
+			"date": "2025-02-14T18:31:24.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I'm curious, how does this pattern work with bundlers?</p><p>I guess you can still `import { Nimble } from './nimble.js?nodefine';` and presumably `import.meta` will be set correctly. Will bundlers tree-shake the `customElements.define` call? Will they tree-shake the class definition entirely if the imported symbol is not used?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885202,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@kytta/114003821361850295",
+			"author": {
+				"name": "Nikita",
+				"url": "https://fosstodon.org/@kytta",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9aa7b59eb0c560a6dbcb71e603fe1f70c96275d7e4e7bc49af881ecb0874dfa5.png"
+			},
+			"date": "2025-02-14T19:11:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I discovered this approach for me, when I was trying to replicate petite-vue's `init`, but in ESM</p><p><a href=\"https://github.com/vuejs/petite-vue?tab=readme-ov-file#usage\"><span>https://</span><span>github.com/vuejs/petite-vue?ta</span><span>b=readme-ov-file#usage</span></a></p>\n<a href=\"https://github.com/vuejs/petite-vue?tab=readme-ov-file#usage\">GitHub - vuejs/petite-vue: 6kb subset of Vue optimized for progressive enhancement</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885204,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003851457092837",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-02-14T19:18:41.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@kytta\" class=\"u-url\">@<span>kytta</span></a></span> I think that is loading a completely different file (with `export` included) but yeah the query param thing is nice!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885201,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003883813060811",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-02-14T19:26:55.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://techhub.social/@develwithoutacause\" class=\"u-url\">@<span>develwithoutacause</span></a></span> some good discussion on the bundler question documented here from <span class=\"h-card\"><a href=\"https://mastodon.social/@jakelazaroff\" class=\"u-url\">@<span>jakelazaroff</span></a></span> which I somehow missed: <a href=\"https://til.jakelazaroff.com/html/define-a-custom-element/\"><span>https://</span><span>til.jakelazaroff.com/html/defi</span><span>ne-a-custom-element/</span></a></p>\n<a href=\"https://til.jakelazaroff.com/html/define-a-custom-element/\">[html] Define a custom element | Today I Learned</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885196,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003891432022542",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-02-14T19:28:51.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.ml/@bano\" class=\"u-url\">@<span>bano</span></a></span> yeah! this post agrees with you: <a href=\"https://til.jakelazaroff.com/html/define-a-custom-element/\"><span>https://</span><span>til.jakelazaroff.com/html/defi</span><span>ne-a-custom-element/</span></a></p>\n<a href=\"https://til.jakelazaroff.com/html/define-a-custom-element/\">[html] Define a custom element | Today I Learned</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885195,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003893631117216",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-02-14T19:29:25.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://toot.community/@wavebeem\" class=\"u-url\">@<span>wavebeem</span></a></span> yeah I’m seeing that in a few places too!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885198,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003898650176964",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-02-14T19:30:41.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://techhub.social/@develwithoutacause\" class=\"u-url\">@<span>develwithoutacause</span></a></span> ooh this is lovely — thank you! I’ll link it up from my post</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885199,
+			"parentId": 0,
+			"url": "https://indieweb.social/@McNeely/114003956894049423",
+			"author": {
+				"name": "McNeely",
+				"url": "https://indieweb.social/@McNeely",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/20f6c8041154875d78bf3cbc0d476f1328597bcf5a1796e2ea1da17cf29fb09c.png"
+			},
+			"date": "2025-02-14T19:45:30.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://techhub.social/@develwithoutacause\" class=\"u-url\">@<span>develwithoutacause</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> wow this is an awesome proposal! Here's hoping it really gets traction ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885191,
+			"parentId": 0,
+			"url": "https://techhub.social/@develwithoutacause/114003979052535710",
+			"author": {
+				"name": "Doug Parker ????️",
+				"url": "https://techhub.social/@develwithoutacause",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
+			},
+			"date": "2025-02-14T19:51:08.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@jakelazaroff\" class=\"u-url\">@<span>jakelazaroff</span></a></span> Ooh duplicating the module between `?define` and not seems pretty rough, though it seems like that's an issue even outside a bundler?</p><p>Limiting all consumers to either `?define` or not seems pretty constraining at scale.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885188,
+			"parentId": 0,
+			"url": "https://toot.community/@wavebeem/114004059513552270",
+			"author": {
+				"name": "sage ????",
+				"url": "https://toot.community/@wavebeem",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b62521fa57a7b4ff2ca9da9b586e0a76f5aeb8f0f51cf72d53b26567bd36fc49.jpg"
+			},
+			"date": "2025-02-14T20:11:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> i've been a little unsure how this works out in practice though... like what's the use case for defining it with a new name? i guess if you just don't like the name that could be useful, and as long as it's not part of a larger system of components with dependencies on each other...</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885141,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/robmeyer.net/post/3li63rgcmoc2s",
+			"author": {
+				"name": "Rob Meyer",
+				"url": "https://bsky.app/profile/robmeyer.net",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8cca6c73bbcb6996fcf8a6661ccc53c495d199070e19855acb946aaddc429acc.jpg"
+			},
+			"date": "2025-02-14T20:58:12.000Z",
+			"content": "(4) \"immediate\" in the sense that the script tag would be added, but timing may be influenced by any of the \n\n\n\n\n\n  <a class=\"u-in-reply-to\"></a>\n  <a class=\"u-in-reply-to\" href=\"https://bsky.app/profile/did:plc:x6gox2spfccened4qbaj4b5b/post/3li63rgckps2s\"></a>\n  <a class=\"u-in-reply-to\" href=\"https://www.zachleat.com/web/nodefine/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1885139,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/robmeyer.net/post/3li63rg7ca22s",
+			"author": {
+				"name": "Rob Meyer",
+				"url": "https://bsky.app/profile/robmeyer.net",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8cca6c73bbcb6996fcf8a6661ccc53c495d199070e19855acb946aaddc429acc.jpg"
+			},
+			"date": "2025-02-14T20:58:12.000Z",
+			"content": "I *feel* like it should be opt-in to avoid unwanted surprises, but assuming the query string arguments work well with all major bundlers, it&apos;s easy enough to opt-out that defaulting to define isn&apos;t a major hang-up for me.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885140,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/robmeyer.net/post/3li63rgckps2s",
+			"author": {
+				"name": "Rob Meyer",
+				"url": "https://bsky.app/profile/robmeyer.net",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8cca6c73bbcb6996fcf8a6661ccc53c495d199070e19855acb946aaddc429acc.jpg"
+			},
+			"date": "2025-02-14T20:58:12.000Z",
+			"content": "I&apos;ve been craving standardization one layer up (when should the script be fetched) -- I see several useful settings: (1) deferring script loading until the (not yet defined) custom element nears the viewport, (2) defer until used in DOM, (3) defer until idle, (4)...",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885192,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/114004299304101337",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-02-14T21:12:35.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://techhub.social/@develwithoutacause\" class=\"u-url\">@<span>develwithoutacause</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@jakelazaroff\" class=\"u-url\">@<span>jakelazaroff</span></a></span> well if you’re wanting both mechanisms you probably wouldn’t do import \"./nimble.js\" with import \"./nimble.js?define\", you’d do import \"./nimble.js\" with `Nimble.define()`—right?</p><p>(which to me seems like yet another vote for opt-in rather than opt-out)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885190,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/114004307896121308",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-02-14T21:14:46.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://toot.community/@wavebeem\" class=\"u-url\">@<span>wavebeem</span></a></span> for sure — it’s just a preference for small projects. I can see the argument that you might not want renames for larger projects</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885189,
+			"parentId": 0,
+			"url": "https://techhub.social/@develwithoutacause/114004332895354049",
+			"author": {
+				"name": "Doug Parker ????️",
+				"url": "https://techhub.social/@develwithoutacause",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
+			},
+			"date": "2025-02-14T21:21:07.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@jakelazaroff\" class=\"u-url\">@<span>jakelazaroff</span></a></span> Sure, you can not use the feature, but you need to *know* you can't use it in that situation.</p><p>Any given file can import `?define` but it needs to be confident that no *other* file imports without `?define`, which seems hard to enforce.</p><p>I guess you could codify this pattern into your bundler or something and rewrite the import / throw an error, but it's still complexity which needs to be managed.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885255,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/114004357434166162",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-02-14T21:27:22.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://techhub.social/@develwithoutacause\" class=\"u-url\">@<span>develwithoutacause</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@jakelazaroff\" class=\"u-url\">@<span>jakelazaroff</span></a></span> you lost me at bundler *runs away*</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885241,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/konnorrogers.com/post/3li6nbcybgk2v",
+			"author": {
+				"name": "Konnor Rogers",
+				"url": "https://bsky.app/profile/konnorrogers.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ff103616ea77febd8f1f8a7605ea3df1dda2bc7c10eb92e803e921d4ed3074cc.jpg"
+			},
+			"date": "2025-02-15T02:11:19.000Z",
+			"content": "&quot;And all of the bundlers cried out in agony&quot;",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885240,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li6nikewnk2n",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-02-15T02:15:22.000Z",
+			"content": "I don’t know her!!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885249,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/jschof.dev/post/3li6q7qfwtk2l",
+			"author": {
+				"name": "❄️ Jim Schofield ☃️",
+				"url": "https://bsky.app/profile/jschof.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/88c8b487f8a483c891a4464b5496a2c824e00ecb4acfa67c042ca0f172ab0273.jpg"
+			},
+			"date": "2025-02-15T03:04:07.000Z",
+			"content": "Super nifty.  Is there a reason you assigned to the window?",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885250,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/knowler.dev/post/3li6qfcupxc24",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://bsky.app/profile/knowler.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/134e6e36edf98cac01c904ba71a5b198618c44614c89c5b17734f593c7619047.jpg"
+			},
+			"date": "2025-02-15T03:07:14.000Z",
+			"content": "It mirrors the availability of constructors for built-in elements, which is useful for `instanceof` checks (e.g. `event.target instanceof HTMLFormElement`).",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885252,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/knowler.dev/post/3li6qsbqg7s24",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://bsky.app/profile/knowler.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/134e6e36edf98cac01c904ba71a5b198618c44614c89c5b17734f593c7619047.jpg"
+			},
+			"date": "2025-02-15T03:14:29.000Z",
+			"content": "I was going back and forth about whether I would drop this from my own static `define()` method recently, because you can get the constructor with `customElements.get()`, but ultimately I decided to keep it because for me `define()` is meant to set it up like a built-in.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885256,
+			"parentId": 0,
+			"url": "https://techhub.social/@develwithoutacause/114005956703075774",
+			"author": {
+				"name": "Doug Parker ????️",
+				"url": "https://techhub.social/@develwithoutacause",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
+			},
+			"date": "2025-02-15T04:14:05.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> This came across my feed again and I randomly read it as `node fine?`</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885297,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/engelman.nl/post/3li7kahk3xs2e",
+			"author": {
+				"name": "Danny Engelman ????????️????️",
+				"url": "https://bsky.app/profile/engelman.nl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c54e323347ac94ced22aa1e48fbf52f4dd9420dec88ca101405d364c01999c0e.jpg"
+			},
+			"date": "2025-02-15T10:49:49.000Z",
+			"content": "&gt; opt-out of define\n&gt; want different tag name\n&gt; run script before definition\n\nWhy create a behemoth of a Web Component \nthat caters for IFs that will never happen?\n\nit is OOP\n\n????????????????????????????????????????????????????????.????????????????????????(\"????????-????????????????????????????????????\", \n ???????????????????? ???????????????????????????? ????????????????????????????????????????????????????????.????????????(\"????????????????-????????????????????????????????????\"){ ... })\n\n<a href=\"https://dev.to/dannyengelman/more-wordle-mordle-extending-josh-his-web-components-4li\">dev.to/dannyengelma...</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885298,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/stefanmatei.com/post/3li7kapwpoc2i",
+			"author": {
+				"name": "Stefan Matei",
+				"url": "https://bsky.app/profile/stefanmatei.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f8d9cbabd859f2e4ac55d082866b30f262aaf5a5a66c9a3b2414d99c01f09673.jpg"
+			},
+			"date": "2025-02-15T10:49:57.000Z",
+			"content": "Love this! And it looks like it would make 3rd party components more immediately compatible with my little definer.js script if I changed it to add `.js?nodefine&amp;define=false` (so it works with both your and <a href=\"https://bsky.app/profile/did:plc:vrrdgcidwpvn4omvn7uuufoo\">@jakelazaroff.com</a>’s patterns) instead of just adding the .js extension",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885299,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/engelman.nl/post/3li7kweaz6c2e",
+			"author": {
+				"name": "Danny Engelman ????????️????️",
+				"url": "https://bsky.app/profile/engelman.nl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c54e323347ac94ced22aa1e48fbf52f4dd9420dec88ca101405d364c01999c0e.jpg"
+			},
+			"date": "2025-02-15T11:02:03.000Z",
+			"content": "I extended Josh Wardle his Wordle (written with Web Components)\n\n<a href=\"https://dev.to/dannyengelman/more-wordle-mordle-extending-josh-his-web-components-4li\">dev.to/dannyengelma...</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885313,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/stuffbreaker.bsky.social/post/3li7ptqwprc2b",
+			"author": {
+				"name": "Burton Smith",
+				"url": "https://bsky.app/profile/stuffbreaker.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/49b8a57511f1084d5dc8e08c27975aa6052e8431abd2707fb2a2963750381499.jpg"
+			},
+			"date": "2025-02-15T12:30:04.000Z",
+			"content": "That way you can import the module as-is from the definer from one module or you can import the class from another module if you want to customize the tag or extend the class.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885312,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/stuffbreaker.bsky.social/post/3li7ptqm3wc2b",
+			"author": {
+				"name": "Burton Smith",
+				"url": "https://bsky.app/profile/stuffbreaker.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/49b8a57511f1084d5dc8e08c27975aa6052e8431abd2707fb2a2963750381499.jpg"
+			},
+			"date": "2025-02-15T12:30:04.000Z",
+			"content": "I like the idea of self-contained definers, especially if you have custom logic for defining components.<br>\n<br>\nBecause of the side-effect that comes with defining components in the same module as where the logic is, I&apos;ve been a big proponent of splitting them into separate modules.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885324,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/coryrylan.com/post/3li7vtho7k22f",
+			"author": {
+				"name": "Cory Rylan",
+				"url": "https://bsky.app/profile/coryrylan.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/1314500d476afb330e53ef6f3fa41741f28d2e99dd54575a9975abe1d71d6ea6.jpg"
+			},
+			"date": "2025-02-15T14:17:18.000Z",
+			"content": "The way I've handled this is by making a secondary/separate import that auto defines the custom element.\n\n<a href=\"https://github.com/coryrylan/reusable-ui-component-api-guide?tab=readme-ov-file#side-effects\">github.com/coryrylan/re...</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1885335,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/voxpelli.com/post/3lia3yj5j4c2x",
+			"author": {
+				"name": "Pelle Wessman",
+				"url": "https://bsky.app/profile/voxpelli.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/942f4d4c45c9d12ce4b38eb8f2efbb0c99cb4d578718bc496f266adec8d280f7.jpg"
+			},
+			"date": "2025-02-15T16:07:29.000Z",
+			"content": "Such a lovely blast from the past!<br>\n<br>\nIt hadn’t crossed my mind that the ”import.meta.url” could be a replacement for the old way of finding the data by checking the DOM for script tags (and when synchronously loading a script, grabbing the last available element in the DOM or whatever it was)",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1885150,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:6lmdngott3y3vbef4khrpgq5",
+			"date": "2025-02-14T21:22:27.000Z",
+			"author": {
+				"name": "Franklin Thien",
+				"url": "https://bsky.app/profile/thienfrank.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c1689f82061dfdb8f0487fb610dc487e7d42b8f412725dffb439fe8148702aca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885151,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:r7tcvme4xkh6o6pmosqcsv4j",
+			"date": "2025-02-14T21:22:27.000Z",
+			"author": {
+				"name": "Ray Gesualdo",
+				"url": "https://bsky.app/profile/raygesualdo.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d0a5dcb00f435a936932650bac54e8ba67d2f140bacdff6b2a65f95ade211017.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885152,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:sdt6u6ybm3ck5vueftpvnxms",
+			"date": "2025-02-14T21:22:28.000Z",
+			"author": {
+				"name": "André Ruffert",
+				"url": "https://bsky.app/profile/andreruffert.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4c49bf4966f5f5da80ada6a204758432cfc7330a4e93541f39a89b9cc8232849.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885153,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:rqk3dhfznqkwd74drhbtqqe3",
+			"date": "2025-02-14T21:22:29.000Z",
+			"author": {
+				"name": "Gucci Burr",
+				"url": "https://bsky.app/profile/gucciburr.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e12b948f3cd80babed62b72c8dab6f84345c143b6a0bda988f334cb8e8842fbf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885154,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:u6ivjqobutytb3mljtqk5ffk",
+			"date": "2025-02-14T21:22:31.000Z",
+			"author": {
+				"name": "Brielle",
+				"url": "https://bsky.app/profile/backintimediaries.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/fbc8eaf00152b7e265dc9fbf2667242f54c916db65bcf91c91abca6e2c27227d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885155,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:hczye7aqd63pvlyr45v5gkfq",
+			"date": "2025-02-14T21:22:31.000Z",
+			"author": {
+				"name": "Frederick H. Daniels",
+				"url": "https://bsky.app/profile/hestilow.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4502d3f058e66e571e606958141255118ea0f8aa0f4ce516f49314b52b72cbd5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885156,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:r5meuc5mc7md45v5shkjxriu",
+			"date": "2025-02-14T21:22:32.000Z",
+			"author": {
+				"name": "Jouni Männistö",
+				"url": "https://bsky.app/profile/j0nem.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7cb831a6fb0906bfcd9da5fd1bb25d108185a2b9ed9042baf988efebb9016d6d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885157,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:sju65k2ejw6olwiyqkiqpoxo",
+			"date": "2025-02-14T21:22:35.000Z",
+			"author": {
+				"name": "IKEA Jesus",
+				"url": "https://bsky.app/profile/ikeajesus.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/414c64bd4cdfb17ee63a78a5c4d486a4fe5b31fe0084bf44dc89359b43a2acec.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885158,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:qyczxktw4ynu6bajt53yizji",
+			"date": "2025-02-14T21:22:35.000Z",
+			"author": {
+				"name": "Hancock",
+				"url": "https://bsky.app/profile/1stamericanhoodlum.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/634c142069af489ec9a03e7f69af5ae4b773127a9304c83e940c9c72c53c1432.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885159,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:2cpnrefqsfucl4lvo3h2yzfh",
+			"date": "2025-02-14T21:22:37.000Z",
+			"author": {
+				"name": "Michael Warren",
+				"url": "https://bsky.app/profile/mrdisagree.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3a01370fe82edaa17c6bfe5d1b0d4a6653cc41a4b10e33d6e828e41c05e6a3ca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885160,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:tlev6ao2rmv6zr26tpb6a675",
+			"date": "2025-02-14T21:22:37.000Z",
+			"author": {
+				"name": "Sedmirnel",
+				"url": "https://bsky.app/profile/sedmirnel.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/dac978addb4c407c1510db652eb1a4d4a5b52b24116b7bc9976016aa9f450110.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885161,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:dnyy7nyg7x2jmrt4obimsjwk",
+			"date": "2025-02-14T21:22:38.000Z",
+			"author": {
+				"name": "Liang Wenfeng",
+				"url": "https://bsky.app/profile/0xsojalsec.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8dfb22969854f571b37aa3bb9331a99a0501ef70448ca994dc9f57cb201b4202.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885162,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:a2krv54pfwbdrmgxptm4i4eh",
+			"date": "2025-02-14T21:22:38.000Z",
+			"author": {
+				"url": "https://bsky.app/profile/richardjamesd.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/88cad0dbe64be3f729c0d4037250ed575ee37fb7554698a4b199a429aeee6bcb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885163,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:5tbqq2wzf6mpymf3fokt7nkn",
+			"date": "2025-02-14T21:22:39.000Z",
+			"author": {
+				"name": "Matt Clough",
+				"url": "https://bsky.app/profile/clough.cool",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/853833d3ada43b59e04a3c9ad60a4a4ce3008fae2ba96426464f6dafe35aefbd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885164,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:6n4fcmz4h6wapztlp2svs4gw",
+			"date": "2025-02-14T21:22:40.000Z",
+			"author": {
+				"name": "Linda",
+				"url": "https://bsky.app/profile/lindaamooore92.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/74d853abc377478aa2b89f7b6fadaf891e2ca4b7fff8e9ca767a1e9a2bd42a6e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885165,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:xvpf3ghf4e4rrz6cjzrabxp6",
+			"date": "2025-02-14T21:22:41.000Z",
+			"author": {
+				"name": "mr_frisby_draws",
+				"url": "https://bsky.app/profile/mr-frisby-draws.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ca993ab24668197e1801e56c4f546b687e940475361f7492c1c96184fdd3a7c6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885166,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:amriawyqe3dxq5pz5vecde6t",
+			"date": "2025-02-14T21:22:42.000Z",
+			"author": {
+				"name": "Joe",
+				"url": "https://bsky.app/profile/joeshouse.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/51fb90f3d717c56a1bf6048ed19bb88ffd9e9d37010b4bee29fd9168b67369f6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885167,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:rkrpgtya3som7cheibgq6kyz",
+			"date": "2025-02-14T21:22:43.000Z",
+			"author": {
+				"name": "Dorothy ???????? ???? DMs",
+				"url": "https://bsky.app/profile/kanokiegal.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8e444aa966a70f79bc712b84a158e30d66ebf626a5e92341c7176f8fae1918e1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885168,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:nawmxteuy26lgccqixx7jhni",
+			"date": "2025-02-14T21:22:45.000Z",
+			"author": {
+				"name": "Lia Rei Love",
+				"url": "https://bsky.app/profile/sdfghjgfd.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6f19a7e034535a31ddc2193f6ad717010193635d6eccd14b9ea8b74e5e214192.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885169,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:du2fkuuod4mv6t2d4qpqn55z",
+			"date": "2025-02-14T21:22:46.000Z",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://bsky.app/profile/ryanmulligan.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/a654bfdf26a4a6b61fab692447373238f0fff7b363f8c60103da98eb1fde90c8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885170,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:upwmyun6ugdzitbeqgwxq77u",
+			"date": "2025-02-14T21:22:47.000Z",
+			"author": {
+				"name": "James love",
+				"url": "https://bsky.app/profile/aasdfghj.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/55f27a11a5268ca990f237180c59ce4899e3d8572e4c06bddc965d1b50b3f234.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885171,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:hut6aguffcsxljufne6l74ck",
+			"date": "2025-02-14T21:22:48.000Z",
+			"author": {
+				"name": "Olivier Forget",
+				"url": "https://bsky.app/profile/olivierforget.net",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ae38f0565332259645c4f972d5887249d9b93492305fa62a94834aefd1d6e68a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885172,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:jjiarlrfhhksqlut6uhvp4ty",
+			"date": "2025-02-14T21:22:48.000Z",
+			"author": {
+				"url": "https://bsky.app/profile/sis2.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f0457d2a1e5373383dfba26f5dfc447596794ce679c9d44e3a249a990062aa87.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885173,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:2gkh62xvzokhlf6li4ol3b3d",
+			"date": "2025-02-14T21:22:49.000Z",
+			"author": {
+				"name": "patak",
+				"url": "https://bsky.app/profile/patak.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b0f53ea16a419ba5f6700194ae6db3758943dfd90b24cd59b8ad4fb74f503563.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885174,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:cxmlqkdxkfm6rdlvv723i4rd",
+			"date": "2025-02-14T21:22:50.000Z",
+			"author": {
+				"name": "Mahir",
+				"url": "https://bsky.app/profile/choudhryishtiaq.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/a234af8332e7fcbcd109302f4c6f54d543a9f9169a9b61327f664b3227dda75a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885175,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:kgrbnhf2bdyk2nbwf44xcxpc",
+			"date": "2025-02-14T21:22:51.000Z",
+			"author": {
+				"url": "https://bsky.app/profile/sergio1984.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f40d7d953064549033957a8cb8d09170fbc17acfc2ad0dd740bcf4ea0662c50e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885176,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:jed5ql6g2tkli7nhnvuya3sh",
+			"date": "2025-02-14T21:22:53.000Z",
+			"author": {
+				"name": "Chris Johnson",
+				"url": "https://bsky.app/profile/defaced.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/326e9fcc7c11ba38c9c801d8b02482a51e800bb69290aaee360c831c37107c66.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885177,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:ej4vbhrcmi6em257zszwnxd7",
+			"date": "2025-02-14T21:22:54.000Z",
+			"author": {
+				"name": "Tony Ward",
+				"url": "https://bsky.app/profile/tonyward.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8c910390bb81588390d4e5b73a58211150b968e9e32339520809d0cc1a6d90f0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885178,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:hewhabm3uw73cbz27uwuydcg",
+			"date": "2025-02-14T21:22:57.000Z",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://bsky.app/profile/knowler.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/134e6e36edf98cac01c904ba71a5b198618c44614c89c5b17734f593c7619047.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885179,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:vrrdgcidwpvn4omvn7uuufoo",
+			"date": "2025-02-14T21:22:57.000Z",
+			"author": {
+				"name": "Jake Lazaroff",
+				"url": "https://bsky.app/profile/jakelazaroff.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/13682ea7b6b961ce82281202879ac485e06a0de295249ff3cf2df10960ccb246.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885180,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:pmrgh46r2srgmh4khu52oozn",
+			"date": "2025-02-14T21:22:58.000Z",
+			"author": {
+				"name": "Sage ????",
+				"url": "https://bsky.app/profile/wavebeem.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/577367768051fa5e9bc54f5dc2ecf05003168b7f75edb7bfd511c65954a78226.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885203,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109308582818421295",
+			"date": "2025-02-14T21:23:28.000Z",
+			"author": {
+				"name": "Nikita",
+				"url": "https://fosstodon.org/@kytta",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9aa7b59eb0c560a6dbcb71e603fe1f70c96275d7e4e7bc49af881ecb0874dfa5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885205,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109772464573948684",
+			"date": "2025-02-14T21:23:29.000Z",
+			"author": {
+				"name": "John Kemp-Cruz",
+				"url": "https://mastodonapp.uk/@jkc_codes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1c84bd413f929610f6856f2de05343baf90c8162dd89890da88b3160a1eeb380.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885206,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109287954905181617",
+			"date": "2025-02-14T21:23:30.000Z",
+			"author": {
+				"name": "Dave ???? :cursor_pointer:",
+				"url": "https://mastodon.design/@DavidDarnes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/54c31064cbea0c571492352447c7f29a6460d81d990c20f2ab620efadfe40649.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885207,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109295176902307654",
+			"date": "2025-02-14T21:23:31.000Z",
+			"author": {
+				"name": "Ashur Cabrera",
+				"url": "https://front-end.social/@ashur",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/47f9e3cea1d21932327b192e59a0faf2fb69a491bb0f1df89b0ed69800960171.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885208,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-110651355105380677",
+			"date": "2025-02-14T21:23:31.000Z",
+			"author": {
+				"name": "Tyler Sticka",
+				"url": "https://social.lol/@tylersticka",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a3e8f10c9190a71c8b5813cb592445962f91252468058abbac98ecff88025553.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885209,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-110439751581978143",
+			"date": "2025-02-14T21:23:32.000Z",
+			"author": {
+				"name": "Andrew",
+				"url": "https://mathstodon.xyz/@andrewt",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/294caa91339763a666b32b226be6067558217c292ab14a7e8a58072810f35372.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885210,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109712605727192440",
+			"date": "2025-02-14T21:23:32.000Z",
+			"author": {
+				"name": "Blake Watson :prami:",
+				"url": "https://social.lol/@bw",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b95a5565f3a42bcaa34ea1b52642040076bc34c31fbf672fb7e2cf110e5a61dd.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885211,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109303662461101548",
+			"date": "2025-02-14T21:23:33.000Z",
+			"author": {
+				"name": "JW",
+				"url": "https://mastodon.social/@whiteja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/acb57e921accdd23cc8255b12bd9cec8312397d771f4e2a71a2be8f9592011bc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885212,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109908879777720777",
+			"date": "2025-02-14T21:23:34.000Z",
+			"author": {
+				"name": "Thomas Cannon",
+				"url": "https://mastodon.social/@tcannonfodder",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c69879b7ff071596dc372d9d40b3ffae03395991b2d3db3ca492e168c6d0c1c8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885213,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109609745190235880",
+			"date": "2025-02-14T21:23:34.000Z",
+			"author": {
+				"name": "Alex Guyot",
+				"url": "https://mastodon.macstories.net/@alex",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/858a847573f091af674a7e3e28630ce24cb752240392131a076f1e28d69550c3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885214,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-113280173217216773",
+			"date": "2025-02-14T21:23:36.000Z",
+			"author": {
+				"name": "sage ????",
+				"url": "https://toot.community/@wavebeem",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b62521fa57a7b4ff2ca9da9b586e0a76f5aeb8f0f51cf72d53b26567bd36fc49.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885227,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:skq3fdqgroe2lhr5q6hqy6ah",
+			"date": "2025-02-14T23:12:09.000Z",
+			"author": {
+				"name": "E. Erdem",
+				"url": "https://bsky.app/profile/erdeme.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c4058b50b1a178b2610acb37c436e22bdb61760638a7adbadf762e71db498788.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885242,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:md2dv62to5ehmmdrdgbccxml",
+			"date": "2025-02-15T02:28:16.000Z",
+			"author": {
+				"name": "Doug Gibson",
+				"url": "https://bsky.app/profile/dgibson.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/de82d878d61b048623178605a199ce2b88cf9ac3aecde0865c9bdf0394e218b6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885243,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:k3z5ye43anj4fm5n5rcxgdft",
+			"date": "2025-02-15T02:28:16.000Z",
+			"author": {
+				"name": "Josh Crain",
+				"url": "https://bsky.app/profile/joshcrain.io",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/043f718cc559c2d2b2dcc91ea98ccdb3958fb320f8048b591e82e95f4634bb06.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885244,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:qkk4yywvh3b3qfdr4uhq3ub4",
+			"date": "2025-02-15T02:28:17.000Z",
+			"author": {
+				"name": "Cory LaViska",
+				"url": "https://bsky.app/profile/cory.laviska.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/eb768a1eb67354c60ba2a4de8cc15fada75010599084a7ff01c55b7441246393.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885247,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:goitlwhfua4rd3ijmfaej57a",
+			"date": "2025-02-15T02:53:06.000Z",
+			"author": {
+				"url": "https://bsky.app/profile/c252.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/5cb638411aa377ff01bc6df35ea0ec6db057d3d2b196435ce6a25b03e9ad541a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885248,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109346857288123117",
+			"date": "2025-02-15T03:08:49.000Z",
+			"author": {
+				"name": "???? Attila Gonda",
+				"url": "https://mastodon.social/@pcdevil",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9130297201fcbbd9fd519caafd5b8709aa610bfacae9ccbbbadfdabaf14ec84b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885251,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:zjbq26wybii5ojoypkso2mso",
+			"date": "2025-02-15T03:25:57.000Z",
+			"author": {
+				"name": "JauntyWunderKind",
+				"url": "https://bsky.app/profile/jauntywk.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/9a957eb6bce9389ddb0b06a1cdd6a01a4f5062fea4498e9f5605f4d1659b2935.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885253,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:nturfjwjp6d76cbnblvhjovo",
+			"date": "2025-02-15T03:25:58.000Z",
+			"author": {
+				"name": "❄️ Jim Schofield ☃️",
+				"url": "https://bsky.app/profile/jschof.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/88c8b487f8a483c891a4464b5496a2c824e00ecb4acfa67c042ca0f172ab0273.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885259,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:dqwsvaqgd7ebqty44drn4ett",
+			"date": "2025-02-15T05:02:26.000Z",
+			"author": {
+				"name": "Anthony Frehner",
+				"url": "https://bsky.app/profile/frehnera.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7595bb2c22ecc16bf3c8cd6a6525bd4abebf7ee4c05af593023c3d7d007c65f1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885262,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:wjwmsluh6xo3iaiqvrxvzw2p",
+			"date": "2025-02-15T05:37:12.000Z",
+			"author": {
+				"name": "Steven Beshensky",
+				"url": "https://bsky.app/profile/sbesh.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8e279930bde064579f2dbbf8fba04b1a916f8bbb36b87736daabd592e36e92e7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885265,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:knt7gjkjrzatwfdphdr4ggf6",
+			"date": "2025-02-15T06:33:37.000Z",
+			"author": {
+				"name": "Jhett Tolentino",
+				"url": "https://bsky.app/profile/jhetttolentino.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f9239607d8a316e5682b4012024e55dde5c1c2d271fa1cbbaced1e6fc2d04e03.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885269,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:iaik6tf6xfo7jiirg4c3mrab",
+			"date": "2025-02-15T07:34:52.000Z",
+			"author": {
+				"url": "https://bsky.app/profile/dickx.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e7f7496241abe2a187419aff2ba68efe846f88e54c0df30fe6506207c2b8a7d5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885300,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:lcklqgmea5ohappzaroqikb2",
+			"date": "2025-02-15T11:02:40.000Z",
+			"author": {
+				"name": "Kia",
+				"url": "https://bsky.app/profile/kiakatoz.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/64a99c63a6db6153630fdf355555e3a745d06634f45d9a5bd7d9f7b9a50e8285.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885301,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:komsc4cibngambanqjhpwweu",
+			"date": "2025-02-15T11:02:40.000Z",
+			"author": {
+				"name": "Stefan Matei",
+				"url": "https://bsky.app/profile/stefanmatei.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f8d9cbabd859f2e4ac55d082866b30f262aaf5a5a66c9a3b2414d99c01f09673.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885302,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:aajyeey3ze5u4gozzykny3bv",
+			"date": "2025-02-15T11:02:41.000Z",
+			"author": {
+				"name": "aws404",
+				"url": "https://bsky.app/profile/aws404.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7cb831a6fb0906bfcd9da5fd1bb25d108185a2b9ed9042baf988efebb9016d6d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885305,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:6ckq3d76vaeudlkwejnoh5xs",
+			"date": "2025-02-15T11:32:50.000Z",
+			"author": {
+				"name": "Ed",
+				"url": "https://bsky.app/profile/edsplace.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/df6f18b5b142d368838779434d371da2b8f263961b2ed8748f9b9ac95ab52447.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885306,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:u73l4duchk4y6hp72kmvlf24",
+			"date": "2025-02-15T11:32:50.000Z",
+			"author": {
+				"name": "Dan",
+				"url": "https://bsky.app/profile/daneiljohnson.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/80ce226dced1828e5952d235d38a9913fa43c8d4c31aa2c657702fa9ce6954f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885314,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:pefubtxqc5svtvsds725qgx3",
+			"date": "2025-02-15T12:30:27.000Z",
+			"author": {
+				"name": "Burton Smith",
+				"url": "https://bsky.app/profile/stuffbreaker.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/49b8a57511f1084d5dc8e08c27975aa6052e8431abd2707fb2a2963750381499.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885330,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:24la36c5vk45r2sc4xscsikr",
+			"date": "2025-02-15T16:07:10.000Z",
+			"author": {
+				"name": "Pelle Wessman",
+				"url": "https://bsky.app/profile/voxpelli.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/942f4d4c45c9d12ce4b38eb8f2efbb0c99cb4d578718bc496f266adec8d280f7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885344,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:77rmx7ynqf3v4hl5uteeeqqb",
+			"date": "2025-02-15T18:02:20.000Z",
+			"author": {
+				"name": "Jordan Running",
+				"url": "https://bsky.app/profile/swirlee.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/47ef8d5c82d6069a23b726fa24654f603fb8ba750395227189e9e8b824811049.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885351,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:nda3cp34tvjvshalqzdzitz4",
+			"date": "2025-02-15T20:38:57.000Z",
+			"author": {
+				"name": "Fred Bux",
+				"url": "https://bsky.app/profile/fredbux.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/2fb596c43aea0ecd5cc29feb4f6f2ac3a1db9052438a80faf243c9b517c088c0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885367,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:gcc7zhohhmpzg7bjsutppiwo",
+			"date": "2025-02-15T23:51:55.000Z",
+			"author": {
+				"name": "Kristóf Poduszló",
+				"url": "https://bsky.app/profile/kripod.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b15f4152778c9c6d589f1260aa25bed6633f2b6c2f13522af3278c290d55bb4b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885466,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-112009616148484448",
+			"date": "2025-02-16T12:03:31.000Z",
+			"author": {
+				"name": "Frank // Mottokrosh",
+				"url": "https://social.mottokrosh.com/@mottokrosh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/65e8e333b2c853c15f1db16680518c142ff15807d8a0f6e7b451b23a6851ee82.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885475,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#liked_by_did:plc:7qasrek3vlgyvgubfmhsmo2z",
+			"date": "2025-02-16T14:52:00.000Z",
+			"author": {
+				"url": "https://bsky.app/profile/dehuszar.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/69fcdea6f4d563f124ea4c8153e3bb76c18c83db3693c61f5a8420be333b5040.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885511,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#favorited-by-109289744030118387",
+			"date": "2025-02-16T21:03:01.000Z",
+			"author": {
+				"name": "Fynn Ellie Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1916000,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lquwxwhx7s24#liked_by_did:plc:bwhatk5vvpniemudvqvct6np",
+			"date": "2025-06-05T20:51:38.000Z",
+			"author": {
+				"name": "Jens Grochtdreis",
+				"url": "https://bsky.app/profile/jensgro.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c058c694dc0e150913a6235099818244a6ef67771296fe6088b0ddac814752ad.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1916001,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lquwxwhx7s24#liked_by_did:plc:krtm6dltju5ikaqwvca24sa5",
+			"date": "2025-06-05T20:51:38.000Z",
+			"author": {
+				"name": "Pat Byrne",
+				"url": "https://bsky.app/profile/patrick.byrne.team",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7772486c42618ca2f0c48aed8c4b222c873b8afddd5b711629b04f65c7609f27.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1916016,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lquwxwhx7s24#liked_by_did:plc:komsc4cibngambanqjhpwweu",
+			"date": "2025-06-06T01:04:05.000Z",
+			"author": {
+				"name": "Stefan Matei",
+				"url": "https://bsky.app/profile/stefanmatei.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/eab119a06a6a9605394348ee0eb3104d56b76c7bb528b1028aa1a6f7f0ff17fd.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1885181,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#reposted_by_did:plc:vrrdgcidwpvn4omvn7uuufoo",
+			"date": "2025-02-14T21:22:58.000Z",
+			"author": {
+				"name": "Jake Lazaroff",
+				"url": "https://bsky.app/profile/jakelazaroff.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/13682ea7b6b961ce82281202879ac485e06a0de295249ff3cf2df10960ccb246.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885182,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#reposted_by_did:plc:upwmyun6ugdzitbeqgwxq77u",
+			"date": "2025-02-14T21:22:59.000Z",
+			"author": {
+				"name": "James love",
+				"url": "https://bsky.app/profile/aasdfghj.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/55f27a11a5268ca990f237180c59ce4899e3d8572e4c06bddc965d1b50b3f234.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885184,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#reposted_by_did:plc:ej4vbhrcmi6em257zszwnxd7",
+			"date": "2025-02-14T21:23:00.000Z",
+			"author": {
+				"name": "Tony Ward",
+				"url": "https://bsky.app/profile/tonyward.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8c910390bb81588390d4e5b73a58211150b968e9e32339520809d0cc1a6d90f0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885183,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#reposted_by_did:plc:nawmxteuy26lgccqixx7jhni",
+			"date": "2025-02-14T21:23:00.000Z",
+			"author": {
+				"name": "Lia Rei Love",
+				"url": "https://bsky.app/profile/sdfghjgfd.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6f19a7e034535a31ddc2193f6ad717010193635d6eccd14b9ea8b74e5e214192.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885185,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#reposted_by_did:plc:du2fkuuod4mv6t2d4qpqn55z",
+			"date": "2025-02-14T21:23:01.000Z",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://bsky.app/profile/ryanmulligan.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/a654bfdf26a4a6b61fab692447373238f0fff7b363f8c60103da98eb1fde90c8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885186,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#reposted_by_did:plc:dnyy7nyg7x2jmrt4obimsjwk",
+			"date": "2025-02-14T21:23:02.000Z",
+			"author": {
+				"name": "Liang Wenfeng",
+				"url": "https://bsky.app/profile/0xsojalsec.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8dfb22969854f571b37aa3bb9331a99a0501ef70448ca994dc9f57cb201b4202.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885187,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#reposted_by_did:plc:2cpnrefqsfucl4lvo3h2yzfh",
+			"date": "2025-02-14T21:23:04.000Z",
+			"author": {
+				"name": "Michael Warren",
+				"url": "https://bsky.app/profile/mrdisagree.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3a01370fe82edaa17c6bfe5d1b0d4a6653cc41a4b10e33d6e828e41c05e6a3ca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885215,
+			"url": "https://fediverse.zachleat.com/@zachleat/114003226664984642#reblogged-by-110651355105380677",
+			"date": "2025-02-14T21:23:36.000Z",
+			"author": {
+				"name": "Tyler Sticka",
+				"url": "https://social.lol/@tylersticka",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a3e8f10c9190a71c8b5813cb592445962f91252468058abbac98ecff88025553.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885245,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#reposted_by_did:plc:qkk4yywvh3b3qfdr4uhq3ub4",
+			"date": "2025-02-15T02:28:18.000Z",
+			"author": {
+				"name": "Cory LaViska",
+				"url": "https://bsky.app/profile/cory.laviska.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/eb768a1eb67354c60ba2a4de8cc15fada75010599084a7ff01c55b7441246393.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1885303,
+			"url": "https://bsky.app/profile/zachleat.com/post/3li5neguf6k2g#reposted_by_did:plc:komsc4cibngambanqjhpwweu",
+			"date": "2025-02-15T11:02:41.000Z",
+			"author": {
+				"name": "Stefan Matei",
+				"url": "https://bsky.app/profile/stefanmatei.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f8d9cbabd859f2e4ac55d082866b30f262aaf5a5a66c9a3b2414d99c01f09673.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

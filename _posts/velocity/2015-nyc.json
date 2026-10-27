@@ -1,0 +1,46 @@
+{
+	"disqus": {
+		"path": "/web/velocity/2015-nyc/",
+		"commentCount": 1,
+		"comments": [
+			{
+				"postId": "2439223404",
+				"parentPostId": null,
+				"date": "2016-01-04T17:51:44Z",
+				"author": "Dan Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/247b37d2bdb9c0c15d05a7eeefa5ac55?d=mm&s=60",
+				"message": "<p>Hey, nice necklace!!</p>",
+				"replies": []
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 683285,
+			"parentId": 0,
+			"url": "http://anna.borsaendeks.com/in-case-you-missed-it-2015-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "http://anna.borsaendeks.com/author/admin/"
+			},
+			"date": "2019-09-03T15:06:56.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 796571,
+			"parentId": 0,
+			"url": "https://ecomnews.today/ebays-font-loading-strategy/",
+			"author": {
+				"name": "ECNT",
+				"url": "https://ecomnews.today/author/soarecom19/",
+				"avatarUrl": "https://avatars.webmention.io/secure.gravatar.com/23f4ff2f05371070ab62f387920314b068263b7c6f141462a44d2ff9729aafa8.jpg"
+			},
+			"date": "2020-05-15T07:54:27.000Z",
+			"content": "<p>The usage of custom fonts in web pages have steadily increased in recent years. As of this writing, <a href=\"http://httparchive.org/trends.php#perFonts\">68% of sites</a> in the HTTP Archive use at least one custom font. At eBay, we have been discussing custom web fonts for typography for quite some time, but never really pursued it. The main reason was due to uncertainty in end user experiences from a performance standpoint. But this changed recently.</p>\n<p>Our design team made a strong case for a custom font to complement our new branding and, after multiple reviews, we all agreed it makes sense. Now it was on the engineering team to come up with an optimized implementation that not only uses the new custom font, but also tackles the performance overhead. This post gives a quick overview of the strategy we use at eBay to load custom web fonts.</p>\n<h3>Meet “Market Sans”</h3>\n<p>Our new custom font is rightly named “Market Sans” to denote affiliation with an online marketplace. As observed in the below image, it adds a subtle difference to typography, but in its entirety makes the whole page elegant and creates a unique eBay branded experience. Check out our <a href=\"https://www.ebay.com/\">desktop homepage</a>, where “Market Sans” has been deployed.</p>\n<p>It is well known and <a href=\"https://www.zachleat.com/web/velocity/2015-nyc/\">documented</a> that custom web fonts come with a cost, and that is performance. They often delay rendering of text (critical to any web page) until the font is downloaded. A recent <a href=\"https://developer.akamai.com/blog/2017/07/25/performance-usage-implications-custom-fonts/\">post</a> from Akamai gives an excellent overview of the problems associated with custom fonts. To summarize there are two major issues, and it varies among browsers:</p>\n<p>As expected, the design and product teams were not happy with the compromise. Yes, custom fonts create a unique branded experience, but not at the cost of delaying the same experience. Additionally, from an e-commerce perspective, custom fonts are a good enhancement and not an absolute necessity. System fonts can still provide a compelling typography. So it was up to the engineering team to come up with an efficient font loading strategy with minimal tradeoffs.</p>\n<p>Our strategy was pretty simple — avoid FOUT and FOIT: Use the custom font if it is already available (meaning downloaded and cached), else use default system fonts.</p>\n<p>Fortunately, there is a <a href=\"https://tabatkins.github.io/specs/css-font-display/\">CSS Font-Rendering proposal</a> that adds a new @font-face descriptor named <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display\">font-display</a>. Using font-display, developers can specify how a font is displayed, based on whether and when it’s downloaded and ready to use. There are many values for font-display (checkout this quick <a href=\"https://www.youtube.com/watch?v=-lPTshDcr7o\">video</a> to understand them), and the one that maps to our strategy would be ‘font-display: optional’.</p>\n<p>Unfortunately, the <a href=\"http://caniuse.com/#search=font-display\">adoption</a> of font-display among browsers is not widespread, as it is relatively new. So for now, until the adoption becomes mainstream, we came up with a solution that leverages the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage\">localStorage</a>, <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet\">FontFaceSet</a> APIs and the <a href=\"https://github.com/bramstein/fontfaceobserver\">Font Face Observer</a> utility (as a backup if the FontFaceSet API is not present).</p>\n<p>The below illustration gives an overview of how it works:</p>\n<p>To summarize,</p>\n<p>We have open sourced this module as <a href=\"https://github.com/eBay/ebay-font\">ebay-font</a>. It is a small utility that works along with other eBay open source modules <a href=\"https://ebay.github.io/skin/\">Skin</a>, <a href=\"http://markojs.com/\">Marko</a>, and <a href=\"https://github.com/lasso-js/lasso\">Lasso</a>, as well as in standalone mode. We hope others can benefit from it.</p>\n<p>There are a couple of tradeoffs with this strategy:</p>\n<p>As a team we agreed that these tradeoffs are acceptable, considering the unpredictable behavior that comes with default font loading.</p>\n<p>Custom web fonts do add value to the overall user experience, but it should not be at the cost of delaying the critical content. Each organization should have a font loading strategy based on their application needs. The new built-in CSS property ‘font-display’ makes it very easy to choose one. We should start using it right away, even if the support is minimal and even if there is already an in-house implementation.</p>\n<p>Huge thanks to my colleague <a href=\"https://twitter.com/rajaramu\">Raja Ramu</a> for partnering on this effort and help in open sourcing the module <a href=\"https://github.com/eBay/ebay-font\">ebay-font</a>.</p>\n\n<p>This content was originally published <a href=\"https://tech.ebayinc.com/engineering/ebays-font-loading-strategy/\">here</a>.</p>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

@@ -1,0 +1,1227 @@
+{
+	"comments": [
+		{
+			"id": 1234012,
+			"parentId": 0,
+			"url": "https://twitter.com/TheGreenGreek/status/1421162767562776588",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"date": "2021-07-30T17:36:22.000Z",
+			"content": "Very cool! \n\nTypo: Words great with &lt;img loading=\"lazy\"&gt;\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1234013,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1421163160430600196",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-07-30T17:37:56.000Z",
+			"content": "Ack, thank you! deploying\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/TheGreenGreek\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1234015,
+			"parentId": 0,
+			"url": "https://twitter.com/TheGreenGreek/status/1421163230047637505",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"date": "2021-07-30T17:38:12.000Z",
+			"content": "This is really cool. Another option could be to generate 1 image then use a cloudinary proxy to provide different sizes and formats\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1234017,
+			"parentId": 0,
+			"url": "https://twitter.com/TheGreenGreek/status/1421163738825101317",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"date": "2021-07-30T17:40:13.000Z",
+			"content": "Like a fancier version of this <a href=\"https://timkadlec.com/remembers/2020-11-17-netlify-proxy-requests/\">timkadlec.com/remembers/2020…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1234018,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1421164312538800128",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-07-30T17:42:30.000Z",
+			"content": "Ooh, yeah, that’s a good idea 🙌🏻\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/TheGreenGreek\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1234019,
+			"parentId": 0,
+			"url": "https://twitter.com/TheGreenGreek/status/1421169023304220680",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"date": "2021-07-30T18:01:13.000Z",
+			"content": "I'd probably turn it into an api that only accepts requests from a specific domain so you don't go over your limits lol. It looks like a fun thing to try to code. I'd play with it but have too many things I'm fiddling with right now! 😅\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1234011,
+			"parentId": 0,
+			"url": "https://twitter.com/DavidWells/status/1421169627199991810",
+			"author": {
+				"name": "David Wells",
+				"url": "https://twitter.com/DavidWells",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/251806314f7b0ece10f719e1dbc3507271fcb2306f7ded4a9c17c7a95a09f21c.jpg"
+			},
+			"date": "2021-07-30T18:03:37.000Z",
+			"content": "That’s pretty nifty!\n\nWhere is the builder handler wrapper saving the images to?\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1234010,
+			"parentId": 0,
+			"url": "https://twitter.com/davatron5000/status/1421170273961775105",
+			"author": {
+				"name": "Dave Rupert",
+				"url": "https://twitter.com/davatron5000",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/12bf29c49f4519399f5b7022c1ff1b156aa6e597a75f31dfd0d5a884ed35b341.jpg"
+			},
+			"date": "2021-07-30T18:06:12.000Z",
+			"content": "❤️ it! How do you invalidate or update the screenshot when changes happen?\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1234016,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1421171377390903304",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-07-30T18:10:35.000Z",
+			"content": "&gt; automatically cached on Netlify’s Edge CDN\n\nvia <a href=\"https://docs.netlify.com/configure-builds/on-demand-builders/\">docs.netlify.com/configure-buil…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/DavidWells\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1234327,
+			"parentId": 0,
+			"url": "https://sayed.cyou/web-dev/javascript/building-an-automated-screenshot-service-on-netlify-in-140-lines-of-code-javascript-dev-feed/",
+			"author": {
+				"name": "Abu Sayed",
+				"url": "https://sayed.cyou/author/admin/"
+			},
+			"date": "2021-07-31T11:41:08.000Z",
+			"content": "<p></p>\n<h3>Building An Automated Screenshot Service On Netlify In ~140 Lines Of Code</h3>\n<p></p>\n<br /><br />\n<br />\n<p>This blog post is adapted from: <a href=\"https://www.zachleat.com/web/screenshots/\">https://www.zachleat.com/web/screenshots/</a></p>\n<p>The idea is pretty simple: a service that will accept a URL as input and return a static screenshot image of that URL to embed and use on other web sites. The <a href=\"https://github.com/11ty/api-screenshot/blob/d7fd9c74389e14601a3a3a3a45805a1e59d9de51/functions/screenshot.js\">code is pretty simple too, about 140 lines</a>.</p>\n<p>Having a service for these images is important as the Eleventy docs use a lot of visuals from Built With Eleventy sites around the web—it wouldn’t be feasible to generate these manually.</p>\n<p>The end result looks something like this (<a href=\"https://www.11ty.dev/docs/\">11ty.dev/docs</a> is shown):</p>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--O1RV4ws5--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1627726826737/zbgX2MaQ_.png\"></a></p>\n<p>And the URL for the above image is <code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/small/9:16/bigger/</code></p>\n<p>You can see this <a href=\"https://www.11ty.dev/#built-with-eleventy\">live</a> in <a href=\"https://www.11ty.dev/docs/starter/\">production</a> now in a <a href=\"https://www.11ty.dev/docs/tutorials/\">few</a> different <a href=\"https://www.11ty.dev/authors/smthdotuk/\">places</a> on the Eleventy docs.</p>\n<h2>\n  <a href=\"https://dev.to/uiuxarghya/#decisions-decisions\"><br /></a><br />\n  DECISIONS, DECISIONS<br /></h2>\n<p>I think there were a few architecture decisions that went into this service that are worth documenting, so here goes:</p>\n<ol><li>\n<p>This is now a separate repo and project from the main 11ty.dev site. This is important as it decouples our On-demand Builder cache for this service away from the main web site, which deploys with a much higher frequency.</p>\n</li>\n<li>\n<p>This is best used with lower priority images, things that live further down the page (dare I say, below the imaginary fold). Works great with <code>&lt;img loading=\"lazy\"&gt;</code>. ⚠️ ABSOLUTELY not for use with HERO IMAGES or on something that might be eligible for your LCP!!! (<em>I warned you with three exclamation marks.</em>)<br />-Best paired with preconnect: <code>&lt;link href=\"https://v1.screenshot.11ty.dev\" rel=\"preconnect\" crossorigin&gt;</code>.</p>\n</li>\n<li>\n<p>Sizing options are limited to improve cache hits. Currently we only offer 11 different image combinations for each URL. This will likely increase over time as we add additional options, like sizes or aspect ratios or maybe even a no-JavaScript mode. We want cache hits to make these things fast and reduce the request count to external web sites.</p>\n</li>\n<li>\n<p>I added an Open Graph size (you know, for those cards that show up on social media posts). I’m currently playing around with this as a way to do super-lazy custom Open Graph images for every page. Each page can have an Open Graph image that’s a screenshot of itself!</p>\n</li>\n<li>\n<p>One negative of generating these in a serverless function is that image formats are a bit harder to manage. This means that only JPEG is supported for now. Especially with the <a href=\"https://www.npmjs.com/package/chrome-aws-lambda\">version of Puppeteer that barely fits in a serverless bundle</a>, I’m still trying to figure out how to bundle it with <code>sharp</code> and <code>eleventy-img</code> too.</p>\n</li>\n<li>\n<p>The entire thing is versioned using <a href=\"https://docs.netlify.com/domains-https/custom-domains/multiple-domains/#branch-subdomains\">Netlify Branch subdomains</a>: e.g. <code>https://v1.screenshot.11ty.dev</code>. If I want to change the API later I’ll bump it to <code>v2</code> and just leave the old branch as-is. Of particular note is that <a href=\"https://screenshot.11ty.dev\">https://screenshot.11ty.dev</a> (without the version) redirects via an HTTP 301 to <code>v1</code> and will do so permanently. Don’t rely on this redirect (for performance reasons).</p>\n</li>\n<li>\n<p>Update (July 30, 2021): The other issue I noticed with using Puppeteer in a Lambda is that emoji are not available to the rendered content. So if a site is using Emoji they do not render. It looks like <a href=\"https://jurgen.si/posts/lambda-headless-chrome-emojis/\">Matic Jurglič may have a workaround to solve this</a>.</p>\n</li>\n</ol><h2>\n  <a href=\"https://dev.to/uiuxarghya/#what-happens-if-a-site-is-super-slow-or-is-currently-down\"><br /></a><br />\n  WHAT HAPPENS IF A SITE IS SUPER SLOW OR IS CURRENTLY DOWN?<br /></h2>\n<p>Netlify Functions have a 10 second execution limit. If the site doesn’t render in 10 seconds, we show a fallback image by default. Currently this is a low-contrast 11ty logo using the same image size as the requested screenshot (via SVG <code>width</code> and <code>height</code> attributes).</p>\n<p>We don’t use a HTTP 500 status code on errors. In Firefox, the fallback image didn’t render when an error code was used. Because we aren’t using a HTTP 500 status code, the On-demand Builder will cache the fallback image for this request. This is good to prevent a bunch of re-requests to slow sites that don’t make the cutoff (or have a different error) but also means if a request had an outlier response time then the fallback image will continue to be used until the On-demand Builder cache is invalidated with a new build.</p>\n<p>We include the real error message in a custom <code>x-error-message</code> HTTP Header, if you want more insight into why a screenshot failed.</p>\n<h2>\n  <a href=\"https://dev.to/uiuxarghya/#can-i-use-your-instance-for-my-site\"><br /></a><br />\n  CAN I USE YOUR INSTANCE FOR MY SITE?<br /></h2>\n<p>Um… I’m not sure yet. For now I’d recommend just self hosting it. You can click this button to do it:</p>\n<p><a href=\"https://app.netlify.com/start/deploy?repository=https://github.com/11ty/api-screenshot\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--Gq_bfuxi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://www.netlify.com/img/deploy/button.svg\" alt=\"Deploy to Netlify\" /></a></p>\n\n<p>The <a href=\"https://github.com/11ty/api-screenshot/\">full source code is available on GitHub</a>.</p>\n<h2>\n  <a href=\"https://dev.to/uiuxarghya/#demos\"><br /></a><br />\n  DEMOS<br /></h2>\n<h3>\n  <a href=\"https://dev.to/uiuxarghya/#small-375px-viewport-width\"><br /></a><br />\n  SMALL (375PX VIEWPORT WIDTH)<br /></h3>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--D1z4-xrv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1627727425912/GKUg2cAfq.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--D1z4-xrv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1627727425912/GKUg2cAfq.png\" alt=\"Screenshot of 11ty.dev\" /></a></p>\n\n<p><code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/small/9:16/larger/</code></p>\n<h3>\n  <a href=\"https://dev.to/uiuxarghya/#medium-650px-viewport-width\"><br /></a><br />\n  MEDIUM (650PX VIEWPORT WIDTH)<br /></h3>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--PMRXIIrF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1627727491442/4PjrDbC51.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--PMRXIIrF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1627727491442/4PjrDbC51.png\" alt=\"Screenshot of 11ty.dev\" /></a></p>\n\n<p><code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/medium/9:16/larger/</code></p>\n<h3>\n  <a href=\"https://dev.to/uiuxarghya/#large-1024px-viewport-width\"><br /></a><br />\n  LARGE (1024PX VIEWPORT WIDTH)<br /></h3>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--aN1bL-W_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1627727571195/2VuGV_GRH.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--aN1bL-W_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1627727571195/2VuGV_GRH.png\" alt=\"Screenshot of 11ty.dev\" /></a></p>\n\n<br /><code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/large/1:1/larger/</code>\n<h3>\n  <a href=\"https://dev.to/uiuxarghya/#open-graph-1200%C3%97630\"><br /></a><br />\n  OPEN GRAPH (1200×630)<br /></h3>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--Coxvzwjv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1627727577959/PZI5fvsTP.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--Coxvzwjv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn.hashnode.com/res/hashnode/image/upload/v1627727577959/PZI5fvsTP.png\" alt=\"Screenshot of 11ty.dev\" /></a></p>\n\n<p><code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/opengraph/</code></p>\n\n<p></p>\n\n\n<br /><br />\n<a href=\"https://Sayed.CYou\">Abu Sayed</a> is the <strong>Best Web, Game, XR and Blockchain Developer in Bangladesh</strong>. Don't forget to Checkout his Latest <a href=\"https://sayed.cyou/portfolio/\">Projects</a>.<br /><br />\n<p>Checkout more <a href=\"https://Sayed.CYou/bolg/\">Articles</a> on <strong>Sayed.CYou</strong></p>\n<p></p>\n\n<p> </p>#Building #Automated #Screenshot #Service #Netlify #Lines #Code\n\n\n\t<h3><em>Related</em></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1234339,
+			"parentId": 0,
+			"url": "https://twitter.com/M157q_News_RSS/status/1421436858832080900",
+			"author": {
+				"name": "M157q News RSS",
+				"url": "https://twitter.com/M157q_News_RSS",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0f28c2ab2e7fa4ee47668e43d2e61fdb993fa046f8dcf6e89426c6d51d4ef4b1.jpg"
+			},
+			"date": "2021-07-31T11:45:30.000Z",
+			"content": "Building An Automated Screenshot Service On Netlify In ~140 Lines Of Code\n<a href=\"https://dev.to/uiuxarghya/building-an-automated-screenshot-service-on-netlify-in-140-lines-of-code-3ik1\">dev.to/uiuxarghya/bui…</a>\nThis blog post is adapted from: <a href=\"https://www.zachleat.com/web/screenshots/\">zachleat.com/web/screenshot…</a> The idea is pretty simple: a service that will accept a URL as input and return a s\n<a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--O1RV4ws5--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https%3A//cdn.hashnode.com/res/hashnode/image/upload/v1627726826737/zbgX2MaQ_.png\">res.cloudinary.com/practicaldev/i…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1234473,
+			"parentId": 0,
+			"url": "https://twitter.com/cjean/status/1421601885925031937",
+			"author": {
+				"name": "Christophe Jean",
+				"url": "https://twitter.com/cjean",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4e2a531926239ecff0d4cd35b5ebb606b7c3025cce330ac6b659305f4770c439.jpg"
+			},
+			"date": "2021-07-31T22:41:16.000Z",
+			"content": "<a href=\"https://www.zachleat.com/web/screenshots/\">zachleat.com/web/screenshot…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1236223,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts/",
+			"author": {},
+			"date": "2021-08-03T13:13:25.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1237709,
+			"parentId": 0,
+			"url": "https://twitter.com/FrontendDaily/status/1422993493656473600",
+			"author": {
+				"name": "Frontend Daily 🚀",
+				"url": "https://twitter.com/FrontendDaily",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/04a27cee1ca1fb33ce217596782beb0ee613f89ca43be3b35d6a97a1437e1cd6.jpg"
+			},
+			"date": "2021-08-04T18:51:01.000Z",
+			"content": "Building an Automated Screenshot Service on Netlify in ~140 Lines of Code: <a href=\"https://www.zachleat.com/web/screenshots/\">zachleat.com/web/screenshot…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1242800,
+			"parentId": 0,
+			"url": "https://twitter.com/CodigoFalado/status/1424877801409286148",
+			"author": {
+				"name": "Fernando - Código Falado",
+				"url": "https://twitter.com/CodigoFalado",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d649691af1fb7159dc00ba2b648f1f3c7e5451f9a09c4a2237159b986ef9d826.jpg"
+			},
+			"date": "2021-08-09T23:38:35.000Z",
+			"content": "Fazendo um serviço automatizado de screenshots com 140 linhas de código (em inglês) - <a href=\"https://www.zachleat.com/web/screenshots/\">zachleat.com/web/screenshot…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261088,
+			"parentId": 0,
+			"url": "https://www.pixellyft.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "https://www.pixellyft.com/author/admin/"
+			},
+			"date": "2021-09-02T14:41:46.000Z",
+			"content": "<p> <br /></p>\n\n<p><a href=\"https://ogp.me/\">Open Graph</a> images. Those little images that show up when your site is shared on social media. The ones for my site were… bad. My default was to use one, huge, boring branded image for everything—which provided no extra value and just cluttered up y’alls feeds (sorry!). I wanted to make them better and here’s what I did.</p>\n<h2>The Lazy Method <a href=\"https://www.pixellyft.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/#the-lazy-method\">#</a>\n</h2>\n<p>While building a <a href=\"https://www.zachleat.com/web/screenshots/\">screenshot cloud service</a> for 11ty.dev, it became obvious that I should add an Open Graph size to use screenshots as Open Graph images. You can see this in use on the Eleventy docs pages:</p>\n<ul><li>Navigate to <a href=\"https://www.11ty.dev/docs/\"><code>https://www.11ty.dev/docs/</code></a>\n</li>\n<li>With the screenshot service in place, it’s just one line for a custom Open Graph image: <code>&lt;meta property=\"og:image\" content=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/opengraph/\"&gt;</code>\n</li>\n<li>The social card image looks like this: <img src=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/opengraph/\" alt=\"Open Graph images for 11ty.dev/docs/\" /></li>\n</ul><p>For the amount of work this took to setup, it was totally worth it (one <code>&lt;meta&gt;</code>!). But I wanted to take it to the next level for my personal blog (with a long term goal of maybe convincing my colleagues to use something like this on <a href=\"http://netlify.com\">netlify.com</a> 😅).</p>\n<h2>The Underwhelming Method <a href=\"https://www.pixellyft.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/#the-underwhelming-method\">#</a>\n</h2>\n<p>In the past, I did experiment a bit with using the <a href=\"https://www.zachleat.com/web/eleventy-image/#svg-flies-first-class\">SVG to raster image feature of Eleventy Image</a> (via <a href=\"https://github.com/lovell/sharp\"><code>sharp</code></a>) but it wasn’t quite what I wanted. It had the benefit of being much faster than HTML-based methods (usually based on <a href=\"https://developers.google.com/web/tools/puppeteer/\">Puppeteer</a>) but I ended up having to slog through a bunch of hand-written SVG to get it to look how I wanted to look. I’ll admit, I’m not as productive at hand-authoring SVG as I’d like.</p>\n<h2>The Fancy Method <a href=\"https://www.pixellyft.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/#the-fancy-method\">#</a>\n</h2>\n<p>With those experiences under my belt, I decided to custom design a page on my site (<a href=\"https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/web/_posts/opengraph-posts.liquid#L12\">source code</a>) that would iterate over each blog post and could serve as the target for my screenshot service. This provided a couple of benefits:</p>\n<ul><li>I can use all of the existing HTML/CSS/JS/Fonts already in use on my site. That means fake browser chrome, custom Twitter avatars, Lighthouse scores, popularity ranks, among others!</li>\n<li>I don’t have to run Puppeteer locally. I try to avoid this when possible—it is awesome but it slows down the build (a lot).</li>\n</ul><p>Each individual blog post has a dedicated Open Graph image page, for example <a href=\"https://www.zachleat.com/opengraph/web/automatic-opengraph/\"><code>/opengraph/web/automatic-opengraph/</code></a> (<em>Fair warning: this page is not using responsive web design principles. It is specifically created for the 1200×630 aspect ratio</em>).</p>\n<p>If I want a custom background image for a single post’s open graph image, I add front matter with the image url:</p>\n<pre><code><span>---</span><br /><span>seo</span><span>:</span><br /><span>openGraphBackgroundImage</span><span>:</span> /og/sources/graphpaper.jpg<br /><span>---</span></code></pre>\n<p>Next, in my base Eleventy layout file (<a href=\"https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/_includes/layouts/base.liquid#L21\">source code</a>) I point the Open Graph page for each specific blog post towards the screenshot service to capture the image:</p>\n<pre><code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fautomatic-opengraph%2F/opengraph/_20210830_b/\n</code></pre>\n<p>It looks like this:</p>\n<p><img src=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fautomatic-opengraph%2F/opengraph/_20210830_b/\" width=\"1200\" height=\"630\" alt=\"_20210830_b\" /></p>\n<p>I wanted the image to have the post title, my avatar, the published date, and the URL of the page.</p>\n<p>For bonus metadata, here’s one with a Lighthouse score attached (<a href=\"https://www.speedlify.dev/zachleat.com/\">updated regularly via Speedlify</a>), a webmentions count, and even the page weight (e.g. 226 KiB, also driven by Speedlify):</p>\n<p><img src=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/\" width=\"1200\" height=\"630\" alt=\"opengraph\" /></p>\n<h2>Bonus Features <a href=\"https://www.pixellyft.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/#bonus-features\">#</a>\n</h2>\n<h3>DevTools Device Emulation <a href=\"https://www.pixellyft.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/#devtools-device-emulation\">#</a>\n</h3>\n<p>Inside of Chrome Devtools, I added a custom Emulated Device specifically for Open Graph image formats to test the layouts.</p>\n<p><img src=\"https://www.zachleat.com/web/img/posts/automatic-opengraph/devtools1.jpg\" alt=\"Drop down select of Chrome Devtools Emulated Devices\" width=\"364\" height=\"431\" /></p>\n<h3>Social Card Preview <a href=\"https://www.pixellyft.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/#social-card-preview\">#</a>\n</h3>\n<p>I added a little <code>&lt;details&gt;</code> on the bottom of each blog post so that I could test the <a href=\"https://www.pixellyft.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/#opengraph-preview\">social card image preview</a>. I’ll probably pivot this to a link-based sharing widget at some point or combine into my existing <a href=\"http://www.zachleat.com/web/style-guide/#retweet-to-share\">Retweet to Share component</a>.</p>\n<h3>On-demand Builder Cache Busting <a href=\"https://www.pixellyft.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/#on-demand-builder-cache-busting\">#</a>\n</h3>\n<p>The <a href=\"https://www.zachleat.com/web/screenshots/\">Eleventy Screenshot service</a> is an independent project that uses On-demand Builders to cache screenshot image content to Netlify’s CDN. That cache is pretty sticky. The easiest way to invalidate the cache is to trigger a Screenshot service build on Netlify, but that would reset the cache for <em>all</em> screenshots saved by the service, which is too heavy. It has been a common request for a more granular Netlify API to reset pieces of the cache but during the development of this project I realized that we can handle this manually on the app side using our old friend, <a href=\"https://github.com/11ty/api-screenshot/#advanced-manual-cache-busting\">the Cache Buster URL</a>.</p>\n<p>If the old URL looked like this <code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/</code>, I can add an arbitrary cache busting key to the end of it (prefixed by an underscore to identify it anywhere in the URL).</p>\n<p>If I generated that key with today’s date (e.g. <code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/_20210803/</code>), it would generate new images every day without the screenshot service needing to invalidate the entire cache. (Some <a href=\"https://twitter.com/zachleat/status/1422177661313552384\">related discussion about this on Twitter</a>)</p>\n\n<p><br /><br /><br /><br /><a href=\"https://www.zachleat.com/web/automatic-opengraph/\">Source link </a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261091,
+			"parentId": 0,
+			"url": "https://techsumo.net/2021/09/02/if-i-work-really-hard-with-my-open-graph-images-people-will-share-my-blog-post-zachleat-com/",
+			"author": {},
+			"date": "2021-09-02T14:50:17.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261110,
+			"parentId": 0,
+			"url": "https://graphicdon.com/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-s/",
+			"author": {},
+			"date": "2021-09-02T15:22:04.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261118,
+			"parentId": 0,
+			"url": "https://www.webhostpolice.com/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {},
+			"date": "2021-09-02T15:29:26.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261124,
+			"parentId": 0,
+			"url": "https://neoweb4u.com/web-site-developer-i-advertising-and-marketing-i-social-media-advertising-and-marketing-i-content-material-creators-i-branding-creators-i-administration-i-system-solutionif-i-work-actually-exhausting/",
+			"author": {},
+			"date": "2021-09-02T15:41:05.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261127,
+			"parentId": 0,
+			"url": "https://pikopong.com/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {},
+			"date": "2021-09-02T15:51:00.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261173,
+			"parentId": 0,
+			"url": "https://www.zachleat.com/web/automatic-opengraph/",
+			"author": {},
+			"date": "2021-09-02T17:37:49.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261184,
+			"parentId": 0,
+			"url": "https://gigatechnews.com/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {},
+			"date": "2021-09-02T17:52:02.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261189,
+			"parentId": 0,
+			"url": "https://blogs.thebitx.com/index.php/2021/09/02/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {},
+			"date": "2021-09-02T17:55:07.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261225,
+			"parentId": 0,
+			"url": "https://www.codeificant.com/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts/",
+			"author": {},
+			"date": "2021-09-02T19:38:01.000Z",
+			"content": "<ul><li>\n\t\t\t\t\t<a href=\"http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.codeificant.com%2Fif-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts%2F&amp;t=If%20I%20work%20really%20hard%20on%20my%20Open%20Graph%20images%2C%20people%20will%20share%20my%20blog%20posts.\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Facebook</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a href=\"http://twitter.com/share?text=If%20I%20work%20really%20hard%20on%20my%20Open%20Graph%20images%2C%20people%20will%20share%20my%20blog%20posts.&amp;url=https%3A%2F%2Fwww.codeificant.com%2Fif-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts%2F&amp;via=Codeificant\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Twitter</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a href=\"http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.codeificant.com%2Fif-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts%2F&amp;title=If%20I%20work%20really%20hard%20on%20my%20Open%20Graph%20images%2C%20people%20will%20share%20my%20blog%20posts.\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>LinkedIn</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a href=\"https://www.codeificant.com/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts/#\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Pinterest</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\n\t\t\t\t\t\t<span><i></i></span>\n\t\t\t\t\t\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n<i></i> <span></span><span>Shares</span>\n</li>\n\t\t\t\t\t</ul>\n\n<p><a href=\"https://ogp.me/\">Open Graph</a> images. Those little images that show up when your site is shared on social media. The ones for my site were… bad. My default was to use one, huge, boring branded image for everything—which provided no extra value and just cluttered up y’alls feeds (sorry!). I wanted to make them better and here’s what I did.</p>\n<h2>The Lazy Method <a href=\"https://www.zachleat.com/web/automatic-opengraph/#the-lazy-method\">#</a>\n</h2>\n<p>While building a <a href=\"https://www.zachleat.com/web/screenshots/\">screenshot cloud service</a> for 11ty.dev, it became obvious that I should add an Open Graph size to use screenshots as Open Graph images. You can see this in use on the Eleventy docs pages:</p>\n<ul><li>Navigate to <a href=\"https://www.11ty.dev/docs/\"><code>https://www.11ty.dev/docs/</code></a>\n</li>\n<li>With the screenshot service in place, it’s just one line for a custom Open Graph image: <code>&lt;meta property=\"og:image\" content=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/opengraph/\"&gt;</code>\n</li>\n<li>The social card image looks like this: <img src=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/opengraph/\" alt=\"Open Graph images for 11ty.dev/docs/\" /></li>\n</ul><p>For the amount of work this took to setup, it was totally worth it (one <code>&lt;meta&gt;</code>!). But I wanted to take it to the next level for my personal blog (with a long term goal of maybe convincing my colleagues to use something like this on <a href=\"http://netlify.com\">netlify.com</a> 😅).</p>\n<h2>The Underwhelming Method <a href=\"https://www.zachleat.com/web/automatic-opengraph/#the-underwhelming-method\">#</a>\n</h2>\n<p>In the past, I did experiment a bit with using the <a href=\"https://www.zachleat.com/web/eleventy-image/#svg-flies-first-class\">SVG to raster image feature of Eleventy Image</a> (via <a href=\"https://github.com/lovell/sharp\"><code>sharp</code></a>) but it wasn’t quite what I wanted. It had the benefit of being much faster than HTML-based methods (usually based on <a href=\"https://developers.google.com/web/tools/puppeteer/\">Puppeteer</a>) but I ended up having to slog through a bunch of hand-written SVG to get it to look how I wanted to look. I’ll admit, I’m not as productive at hand-authoring SVG as I’d like.</p>\n<h2>The Fancy Method <a href=\"https://www.zachleat.com/web/automatic-opengraph/#the-fancy-method\">#</a>\n</h2>\n<p>With those experiences under my belt, I decided to custom design a page on my site (<a href=\"https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/web/_posts/opengraph-posts.liquid#L12\">source code</a>) that would iterate over each blog post and could serve as the target for my screenshot service. This provided a couple of benefits:</p>\n<ul><li>I can use all of the existing HTML/CSS/JS/Fonts already in use on my site. That means fake browser chrome, custom Twitter avatars, Lighthouse scores, popularity ranks, among others!</li>\n<li>I don’t have to run Puppeteer locally. I try to avoid this when possible—it is awesome but it slows down the build (a lot).</li>\n</ul><p>Each individual blog post has a dedicated Open Graph image page, for example <a href=\"https://www.zachleat.com/opengraph/web/automatic-opengraph/\"><code>/opengraph/web/automatic-opengraph/</code></a> (<em>Fair warning: this page is not using responsive web design principles. It is specifically created for the 1200×630 aspect ratio</em>).</p>\n<p>\t\t<a href=\"https://flatlogic.com/blog/top-40-javascript-meme-for-developers/\"><img src=\"https://www.codeificant.com/wp-content/uploads/2021/07/javascript_memes.png\" style=\"margin:4rem auto;\" alt=\"javascript_memes.png\" /></a></p>\n<p>If I want a custom background image for a single post’s open graph image, I add front matter with the image url:</p>\n<pre><code><span>---</span>\n<span>seo</span><span>:</span>\n<span>openGraphBackgroundImage</span><span>:</span> /og/sources/graphpaper.jpg\n<span>---</span></code></pre>\n<p>Next, in my base Eleventy layout file (<a href=\"https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/_includes/layouts/base.liquid#L21\">source code</a>) I point the Open Graph page for each specific blog post towards the screenshot service to capture the image:</p>\n<pre><code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fautomatic-opengraph%2F/opengraph/_20210830_b/\n</code></pre>\n<p>It looks like this:</p>\n<p><img src=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fautomatic-opengraph%2F/opengraph/_20210830_b/\" width=\"1200\" height=\"630\" alt=\"_20210830_b\" /></p>\n<p>I wanted the image to have the post title, my avatar, the published date, and the URL of the page.</p>\n<p>For bonus metadata, here’s one with a Lighthouse score attached (<a href=\"https://www.speedlify.dev/zachleat.com/\">updated regularly via Speedlify</a>), a webmentions count, and even the page weight (e.g. 226 KiB, also driven by Speedlify):</p>\n<p><img src=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/\" width=\"1200\" height=\"630\" alt=\"opengraph\" /></p>\n<h2>Bonus Features <a href=\"https://www.zachleat.com/web/automatic-opengraph/#bonus-features\">#</a>\n</h2>\n<h3>DevTools Device Emulation <a href=\"https://www.zachleat.com/web/automatic-opengraph/#devtools-device-emulation\">#</a>\n</h3>\n<p>Inside of Chrome Devtools, I added a custom Emulated Device specifically for Open Graph image formats to test the layouts.</p>\n<p><img src=\"https://www.zachleat.com/web/img/posts/automatic-opengraph/devtools1.jpg\" alt=\"Drop down select of Chrome Devtools Emulated Devices\" width=\"364\" height=\"431\" /></p>\n<h3>Social Card Preview <a href=\"https://www.zachleat.com/web/automatic-opengraph/#social-card-preview\">#</a>\n</h3>\n<p>I added a little <code>&lt;details&gt;</code> on the bottom of each blog post so that I could test the <a href=\"https://www.zachleat.com/web/automatic-opengraph/#opengraph-preview\">social card image preview</a>. I’ll probably pivot this to a link-based sharing widget at some point or combine into my existing <a href=\"https://www.zachleat.com/web/style-guide/#retweet-to-share\">Retweet to Share component</a>.</p>\n<h3>On-demand Builder Cache Busting <a href=\"https://www.zachleat.com/web/automatic-opengraph/#on-demand-builder-cache-busting\">#</a>\n</h3>\n<p>The <a href=\"https://www.zachleat.com/web/screenshots/\">Eleventy Screenshot service</a> is an independent project that uses On-demand Builders to cache screenshot image content to Netlify’s CDN. That cache is pretty sticky. The easiest way to invalidate the cache is to trigger a Screenshot service build on Netlify, but that would reset the cache for <em>all</em> screenshots saved by the service, which is too heavy. It has been a common request for a more granular Netlify API to reset pieces of the cache but during the development of this project I realized that we can handle this manually on the app side using our old friend, <a href=\"https://github.com/11ty/api-screenshot/#advanced-manual-cache-busting\">the Cache Buster URL</a>.</p>\n<p>If the old URL looked like this <code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/</code>, I can add an arbitrary cache busting key to the end of it (prefixed by an underscore to identify it anywhere in the URL).</p>\n<p>If I generated that key with today’s date (e.g. <code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/_20210803/</code>), it would generate new images every day without the screenshot service needing to invalidate the entire cache. (Some <a href=\"https://twitter.com/zachleat/status/1422177661313552384\">related discussion about this on Twitter</a>)</p>\n<p><a href=\"https://www.zachleat.com/web/automatic-opengraph/\">Source</a></p>\n<a href=\"https://flatlogic.com/blog/vue-vs-react-what-is-easier-what-is-trending-detailed-guide-with-all-2021/\"><img src=\"https://www.codeificant.com/wp-content/uploads/2021/07/vue_vs_reactjs.png\" alt=\"vue_vs_reactjs.png\" /></a>                Tags: <a href=\"https://www.codeificant.com/tag/add-open-graph-images-wordpress/\">add open graph images wordpress</a>, <a href=\"https://www.codeificant.com/tag/best-practice-for-open-graph-images/\">best practice for open graph images</a>, <a href=\"https://www.codeificant.com/tag/can-i-use-gif-for-open-graph-images/\">can i use gif for open graph images</a>, <a href=\"https://www.codeificant.com/tag/convert-open-graph-images-to-https/\">convert open graph images to https</a>, <a href=\"https://www.codeificant.com/tag/css/\">css</a>, <a href=\"https://www.codeificant.com/tag/css-tricks/\">css tricks</a>, <a href=\"https://www.codeificant.com/tag/drupal-open-graph-images-dont-show-up/\">drupal open graph images don't show up</a>, <a href=\"https://www.codeificant.com/tag/edited-open-graph-images-not-changing/\">edited open graph images not changing</a>, <a href=\"https://www.codeificant.com/tag/facebook-open-graph-standard-images/\">facebook / open graph standard images</a>, <a href=\"https://www.codeificant.com/tag/facebook-open-graph-tags-multiple-images/\">facebook open graph tags multiple images</a>, <a href=\"https://www.codeificant.com/tag/frontend/\">frontend</a>, <a href=\"https://www.codeificant.com/tag/link/\">Link</a>, <a href=\"https://www.codeificant.com/tag/open-graph/\">open graph</a>, <a href=\"https://www.codeificant.com/tag/open-graph-images/\">open graph images</a>, <a href=\"https://www.codeificant.com/tag/open-graph-images-size/\">open graph images size</a>, <a href=\"https://www.codeificant.com/tag/open-graph-multiple-images/\">open graph multiple images</a>, <a href=\"https://www.codeificant.com/tag/open-graph-multiple-images-linkedin/\">open graph multiple images linkedin</a>, <a href=\"https://www.codeificant.com/tag/open-graph-protocol-fb-images/\">open graph protocol fb images</a>, <a href=\"https://www.codeificant.com/tag/open-graph-protocol-images/\">open graph protocol images</a>, <a href=\"https://www.codeificant.com/tag/open-graph-tags-images/\">open graph tags images</a>, <a href=\"https://www.codeificant.com/tag/passing-multiple-images-to-facebook-via-open-graph/\">passing multiple images to facebook via open graph</a>, <a href=\"https://www.codeificant.com/tag/plotting-images-on-graph-open-cv/\">plotting images on graph open cv</a>, <a href=\"https://www.codeificant.com/tag/set-up-open-graph-for-images-facebook-all-in-one-seo/\">set up open graph for images facebook all in one seo</a>, <a href=\"https://www.codeificant.com/tag/social-media-images/\">social media images</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261279,
+			"parentId": 0,
+			"url": "https://dailytechpage.com/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {},
+			"date": "2021-09-02T21:00:18.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261308,
+			"parentId": 0,
+			"url": "https://techupd.com/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {},
+			"date": "2021-09-02T22:15:42.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261324,
+			"parentId": 0,
+			"url": "https://wpguynews.com/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts/",
+			"author": {},
+			"date": "2021-09-02T22:44:45.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261341,
+			"parentId": 0,
+			"url": "https://technologynews.biz/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {},
+			"date": "2021-09-02T23:06:52.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261498,
+			"parentId": 0,
+			"url": "https://wpdesigns.live/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts/",
+			"author": {},
+			"date": "2021-09-03T03:03:14.000Z",
+			"content": "<p><a href=\"https://ogp.me/\">Open Graph</a> images. Those little images that show up when your site is shared on social media. The ones for my site were… bad. My default was to use one, huge, boring branded image for everything—which provided no extra value and just cluttered up y’alls feeds (sorry!). I wanted to make them better and here’s what I did.</p>\n<h2>The Lazy Method <a href=\"https://www.zachleat.com/web/automatic-opengraph/#the-lazy-method\">#</a>\n</h2>\n<p>While building a <a href=\"https://www.zachleat.com/web/screenshots/\">screenshot cloud service</a> for 11ty.dev, it became obvious that I should add an Open Graph size to use screenshots as Open Graph images. You can see this in use on the Eleventy docs pages:</p>\n<ul><li>Navigate to <a href=\"https://www.11ty.dev/docs/\"><code>https://www.11ty.dev/docs/</code></a>\n</li>\n<li>With the screenshot service in place, it’s just one line for a custom Open Graph image: <code>&lt;meta property=\"og:image\" content=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.11ty.dev%2Fdocs%2F/opengraph/\"&gt;</code>\n</li>\n<li>The social card image looks like this: </li>\n</ul><p>For the amount of work this took to setup, it was totally worth it (one <code>&lt;meta&gt;</code>!). But I wanted to take it to the next level for my personal blog (with a long term goal of maybe convincing my colleagues to use something like this on <a href=\"http://netlify.com\">netlify.com</a> 😅).</p>\n<h2>The Underwhelming Method <a href=\"https://www.zachleat.com/web/automatic-opengraph/#the-underwhelming-method\">#</a>\n</h2>\n<p>In the past, I did experiment a bit with using the <a href=\"https://www.zachleat.com/web/eleventy-image/#svg-flies-first-class\">SVG to raster image feature of Eleventy Image</a> (via <a href=\"https://github.com/lovell/sharp\"><code>sharp</code></a>) but it wasn’t quite what I wanted. It had the benefit of being much faster than HTML-based methods (usually based on <a href=\"https://developers.google.com/web/tools/puppeteer/\">Puppeteer</a>) but I ended up having to slog through a bunch of hand-written SVG to get it to look how I wanted to look. I’ll admit, I’m not as productive at hand-authoring SVG as I’d like.</p>\n<h2>The Fancy Method <a href=\"https://www.zachleat.com/web/automatic-opengraph/#the-fancy-method\">#</a>\n</h2>\n<p>With those experiences under my belt, I decided to custom design a page on my site (<a href=\"https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/web/_posts/opengraph-posts.liquid#L12\">source code</a>) that would iterate over each blog post and could serve as the target for my screenshot service. This provided a couple of benefits:</p>\n<ul><li>I can use all of the existing HTML/CSS/JS/Fonts already in use on my site. That means fake browser chrome, custom Twitter avatars, Lighthouse scores, popularity ranks, among others!</li>\n<li>I don’t have to run Puppeteer locally. I try to avoid this when possible—it is awesome but it slows down the build (a lot).</li>\n</ul><p>Each individual blog post has a dedicated Open Graph image page, for example <a href=\"https://www.zachleat.com/opengraph/web/automatic-opengraph/\"><code>/opengraph/web/automatic-opengraph/</code></a> (<em>Fair warning: this page is not using responsive web design principles. It is specifically created for the 1200×630 aspect ratio</em>).</p>\n<p>If I want a custom background image for a single post’s open graph image, I add front matter with the image url:</p>\n<pre><code><span>---</span><br /><span>seo</span><span>:</span><br /><span>openGraphBackgroundImage</span><span>:</span> /og/sources/graphpaper.jpg<br /><span>---</span></code></pre>\n<p>Next, in my base Eleventy layout file (<a href=\"https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/_includes/layouts/base.liquid#L21\">source code</a>) I point the Open Graph page for each specific blog post towards the screenshot service to capture the image:</p>\n<pre><code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fautomatic-opengraph%2F/opengraph/_20210830_b/\n</code></pre>\n<p>It looks like this:</p>\n<p></p>\n<p>I wanted the image to have the post title, my avatar, the published date, and the URL of the page.</p>\n<p>For bonus metadata, here’s one with a Lighthouse score attached (<a href=\"https://www.speedlify.dev/zachleat.com/\">updated regularly via Speedlify</a>), a webmentions count, and even the page weight (e.g. 226 KiB, also driven by Speedlify):</p>\n<p></p>\n<h2>Bonus Features <a href=\"https://www.zachleat.com/web/automatic-opengraph/#bonus-features\">#</a>\n</h2>\n<h3>DevTools Device Emulation <a href=\"https://www.zachleat.com/web/automatic-opengraph/#devtools-device-emulation\">#</a>\n</h3>\n<p>Inside of Chrome Devtools, I added a custom Emulated Device specifically for Open Graph image formats to test the layouts.</p>\n<p></p>\n<h3>Social Card Preview <a href=\"https://www.zachleat.com/web/automatic-opengraph/#social-card-preview\">#</a>\n</h3>\n<p>I added a little <code>&lt;details&gt;</code> on the bottom of each blog post so that I could test the <a href=\"https://www.zachleat.com/web/automatic-opengraph/#opengraph-preview\">social card image preview</a>. I’ll probably pivot this to a link-based sharing widget at some point or combine into my existing <a href=\"https://www.zachleat.com/web/style-guide/#retweet-to-share\">Retweet to Share component</a>.</p>\n<h3>On-demand Builder Cache Busting <a href=\"https://www.zachleat.com/web/automatic-opengraph/#on-demand-builder-cache-busting\">#</a>\n</h3>\n<p>The <a href=\"https://www.zachleat.com/web/screenshots/\">Eleventy Screenshot service</a> is an independent project that uses On-demand Builders to cache screenshot image content to Netlify’s CDN. That cache is pretty sticky. The easiest way to invalidate the cache is to trigger a Screenshot service build on Netlify, but that would reset the cache for <em>all</em> screenshots saved by the service, which is too heavy. It has been a common request for a more granular Netlify API to reset pieces of the cache but during the development of this project I realized that we can handle this manually on the app side using our old friend, <a href=\"https://github.com/11ty/api-screenshot/#advanced-manual-cache-busting\">the Cache Buster URL</a>.</p>\n<p>If the old URL looked like this <code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/</code>, I can add an arbitrary cache busting key to the end of it (prefixed by an underscore to identify it anywhere in the URL).</p>\n<p>If I generated that key with today’s date (e.g. <code>https://v1.screenshot.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fopengraph%2Fweb%2Fcomprehensive-webfonts%2F/opengraph/_20210803/</code>), it would generate new images every day without the screenshot service needing to invalidate the entire cache. (Some <a href=\"https://twitter.com/zachleat/status/1422177661313552384\">related discussion about this on Twitter</a>)</p>\n                \n                    <h3></h3>\n                                        \n        \n\n            \n                <a href=\"https://wpdesigns.live/author/admin/\"></a>\n            \n            \n                <h4>\n                    <a href=\"https://wpdesigns.live/author/admin/\">admin</a>\n                </h4>\n\n                \n                \n                                    \n                \n                    <p>\n                        <a href=\"https://wpdesigns.live/author/admin/\">See author's posts</a>\n                    </p>\n                \n                                    <ul><li>\n                                    <a href=\"https://wpdesigns.live\"></a>\n                                </li>\n                                                                                                                                                                                        </ul>\n        \n\n                                            \n                                            \n                                    \n                        \n\t<h2>Continue Reading</h2>\n\t\t\n<a href=\"https://wpdesigns.live/what-i-wish-i-knew-about-css-when-starting-out-as-a-front-ender/\"><span>Previous:</span> What I Wish I Knew About CSS When Starting Out As A Front-Ender</a>\n<a href=\"https://wpdesigns.live/i-completely-ignored-the-front-end-development-scene-for-6-months-it-was-fine/\"><span>Next:</span> I completely ignored the front-end development scene for 6 months. It was fine.</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261800,
+			"parentId": 0,
+			"url": "https://tipsxd.com/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {},
+			"date": "2021-09-03T12:33:16.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1263027,
+			"parentId": 0,
+			"url": "http://studioxrio.org/en/web-design/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts-zachleat-com/",
+			"author": {},
+			"date": "2021-09-05T17:13:12.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1268485,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/every-fire-needs-a-sparkline/",
+			"author": {},
+			"date": "2021-09-13T16:24:35.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1273081,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/indieweb-avatar-yet-another-eleventy-image-service-api/",
+			"author": {},
+			"date": "2021-09-21T00:23:14.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1284663,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/the-state-of-eleventy-2021-in-two-minutes/",
+			"author": {},
+			"date": "2021-10-08T18:01:31.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1297282,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/recycling-open-graph-images-for-display-on-my-web-site/",
+			"author": {},
+			"date": "2021-10-29T05:24:03.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1306059,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/the-eleventy-api-explorer/",
+			"author": {},
+			"date": "2021-11-17T05:24:23.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1372369,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/speedy-screenshots-or-how-i-improved-the-robustness-of-the-screenshot-service/",
+			"author": {},
+			"date": "2022-03-31T09:44:34.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1234020,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-213014442",
+			"date": "2021-07-30T18:11:22.000Z",
+			"author": {
+				"name": "Filipi",
+				"url": "https://twitter.com/filipiz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ea96837ca89f7a8b605116e9db0d388ffe4d276da1e26b6b273ea087045a9187.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234021,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-14839862",
+			"date": "2021-07-30T18:11:23.000Z",
+			"author": {
+				"name": "Dave Rupert",
+				"url": "https://twitter.com/davatron5000",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/12bf29c49f4519399f5b7022c1ff1b156aa6e597a75f31dfd0d5a884ed35b341.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234022,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-2578514993",
+			"date": "2021-07-30T18:11:24.000Z",
+			"author": {
+				"name": "Max",
+				"url": "https://twitter.com/mxkwl",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/102f7e7576f9f3ddd3ef140a83738eef1281f9234a7d456e032839c7f4dfd152.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234023,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-523567633",
+			"date": "2021-07-30T18:11:25.000Z",
+			"author": {
+				"name": "Ashiatey",
+				"url": "https://twitter.com/Arl_Kobe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9fc8950b9dd4fedaff4e7b875efccd738dfde98fc268b0816d3c35226e2fcbd4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234024,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-937227324994588672",
+			"date": "2021-07-30T18:11:26.000Z",
+			"author": {
+				"name": "Andrew Mason",
+				"url": "https://twitter.com/andrewmcodes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b1e3f2f01491c0162166f338d1a7f4fb2fd806e95923886dbfbf1259b8f9ce79.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234025,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-4826339681",
+			"date": "2021-07-30T18:11:28.000Z",
+			"author": {
+				"name": "🧚🏽‍♀️ 𝔭𝔞𝔯𝔢𝔢𝔫𝔞 🧚🏽‍♀️",
+				"url": "https://twitter.com/pareenasumbli",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3955465ea4d1dbb409361b6fd7582e74f18d9cf4ee4c96b61c4ec58c18ff359b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234026,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-18636799",
+			"date": "2021-07-30T18:11:29.000Z",
+			"author": {
+				"name": "Stephanie Eckles",
+				"url": "https://twitter.com/5t3ph",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae7aebb65ddcb23a79323ff61cd61bae74c1845d99b7f9380f9dd3852c2e4245.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234027,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-14166962",
+			"date": "2021-07-30T18:11:30.000Z",
+			"author": {
+				"name": "Steve Lee",
+				"url": "https://twitter.com/SteveALee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/35c161d4ce7a0ced766bba85382640e8ca0220cf94da8ad3521bc5ae1364b3b1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234028,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-146290109",
+			"date": "2021-07-30T18:11:31.000Z",
+			"author": {
+				"name": "christina 🥚",
+				"url": "https://twitter.com/_christinadan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e5eb12e6b86cf45506d6edb90aa5fd804545e0f904272b49aec050e2d4a54ad4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234029,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-7379602",
+			"date": "2021-07-30T18:11:32.000Z",
+			"author": {
+				"name": "Matt Ström",
+				"url": "https://twitter.com/ilikescience",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7de5f0bd69f5f82dfdab393b9c1e50a73c3c9e84dee1dc365de78f54cf300d5b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234030,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-839552853266038784",
+			"date": "2021-07-30T18:11:33.000Z",
+			"author": {
+				"name": "Chris McMahon",
+				"url": "https://twitter.com/ChristyDigital",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/760e2b6b1ff83b8dbeca46f574018a2c2ef54e9c23f4ffe790616792428b4d15.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234031,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-151817563",
+			"date": "2021-07-30T18:11:33.000Z",
+			"author": {
+				"name": "Nikhil Mehta",
+				"url": "https://twitter.com/technikhil314",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f934177048548144f0c2a27f8f780ea6121659180cfb23816546eecd8a888616.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234032,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-23724008",
+			"date": "2021-07-30T18:11:35.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234033,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-276744107",
+			"date": "2021-07-30T18:11:36.000Z",
+			"author": {
+				"name": "David O'Halloran",
+				"url": "https://twitter.com/daveohalloran",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5259b5637d1d2320ad7dfab5bfc53510b2dd0f6de97b2714bccae34936a418b0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234034,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-568372184",
+			"date": "2021-07-30T18:11:37.000Z",
+			"author": {
+				"name": "George Griffiths",
+				"url": "https://twitter.com/griffadev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b47f1b9c7237160355b205c432e9871a81dcf83f2f3839830b9248c0a1d6439d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234035,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-949639269433380864",
+			"date": "2021-07-30T18:11:38.000Z",
+			"author": {
+				"name": "Eleventy",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/64ed7c5b6f8f7dc61e11ff6a926eeb6a94e686473efdb5a7c697a4a87f4e411a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234036,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-7655012",
+			"date": "2021-07-30T18:11:39.000Z",
+			"author": {
+				"name": "Phil Hawksworth",
+				"url": "https://twitter.com/philhawksworth",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fd1185da1ed09664bc011181408cfd1571fc310d9fccaa93ee40f50c93cedd54.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234037,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-17791881",
+			"date": "2021-07-30T18:11:40.000Z",
+			"author": {
+				"name": "Patrick Haug",
+				"url": "https://twitter.com/patrickhaug",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5e80846b9c2832c2826a4d006df82dfba9f8f75ea832611b044dbb8d0c404183.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234038,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-369098288",
+			"date": "2021-07-30T18:11:41.000Z",
+			"author": {
+				"name": "Nate van der Vis",
+				"url": "https://twitter.com/next_door_nate",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/938ca22e461cdcb21a624ab9edd0339228857caacdc1f324e47c0d0a9de10854.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234077,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-885535994677796865",
+			"date": "2021-07-30T20:00:40.000Z",
+			"author": {
+				"name": "🌸🌕⭐🌕🌸",
+				"url": "https://twitter.com/this_frankie",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d68dbae0f85b9501b9dafa2d2364edbeecb09bdb53ae5234d6909a6dfb8c17aa.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234078,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-1501751",
+			"date": "2021-07-30T20:00:40.000Z",
+			"author": {
+				"name": "olivM",
+				"url": "https://twitter.com/olivM",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f9ed5825464d9ab886fefe5748dba5de743c843ae16d030fb632400d4514623e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234079,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-727355433401344000",
+			"date": "2021-07-30T20:00:47.000Z",
+			"author": {
+				"name": "Mohammed Zeeshan",
+				"url": "https://twitter.com/zeshhaan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/71c38f4b0626e72ad821d701218c13ad8c7a1c1b4997688187348902880ba1c2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234080,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-750580051322736641",
+			"date": "2021-07-30T20:00:48.000Z",
+			"author": {
+				"name": "Aravind Reddy V (vi/vim)",
+				"url": "https://twitter.com/4ravind",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/664e84eef2606bf74d47c84de0479f0058ed6c8dda6d8d34c102fd875dfe564a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234081,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-14477161",
+			"date": "2021-07-30T20:00:49.000Z",
+			"author": {
+				"name": "Trent Walton",
+				"url": "https://twitter.com/TrentWalton",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0cb4d35228c5d11c644ce92da971947191b56a7c658a9124bb5faf86595adab7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234082,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-58448784",
+			"date": "2021-07-30T20:00:50.000Z",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://twitter.com/m_ott",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a34d0a855d4336e07245950e108a3d322445dabff46cfb01e805208ca3d8abcc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234083,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-7015572",
+			"date": "2021-07-30T20:00:50.000Z",
+			"author": {
+				"name": "Jens Grochtdreis",
+				"url": "https://twitter.com/Flocke",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/76c59a44803d2fe0e2760190e87623c4e62786dae9dc1637cc0ab25b98fde15b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234084,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-24203304",
+			"date": "2021-07-30T20:00:51.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234085,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-6773532",
+			"date": "2021-07-30T20:00:52.000Z",
+			"author": {
+				"name": "Brian Rinaldi",
+				"url": "https://twitter.com/remotesynth",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/efc0f01ad8139eeadfb194c9be54dec1b02269aafe8185d92d7bf91983ad396f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234087,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-1318492524",
+			"date": "2021-07-30T20:01:09.000Z",
+			"author": {
+				"name": " ",
+				"url": "https://twitter.com/noname_pain",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d1abe15da5e63f2284b812e2937f348765fd9e859d5bc97fa1d27ea29aca2c75.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234088,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-2391572880",
+			"date": "2021-07-30T20:01:13.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://twitter.com/BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b7a80f06bd0444925bf3506019ab0f10869ae49d4b8c35ea126612f1875ceef2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234119,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-2260815740",
+			"date": "2021-07-30T21:21:14.000Z",
+			"author": {
+				"name": "Jake",
+				"url": "https://twitter.com/JakeDChampion",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/55452fdbb1b010495f28472fab8127f5c5d5ed7aa4f83162020af3774bb163a8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234120,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-795417266",
+			"date": "2021-07-30T21:21:17.000Z",
+			"author": {
+				"name": "Alex Page",
+				"url": "https://twitter.com/alexpage_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e83a476ec36c9b7c2a43d2913bed91ff9cb0a6706f934aff901c2cf723c689a6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234140,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-425853322",
+			"date": "2021-07-30T22:51:03.000Z",
+			"author": {
+				"name": "John Meyerhofer",
+				"url": "https://twitter.com/JRMeyerhofer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8bae22b585a9fca41e9280f6f6cb440ed8f5ae3add3ee0181bcdc773c14ebdfd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234141,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-15616872",
+			"date": "2021-07-30T22:51:03.000Z",
+			"author": {
+				"name": "Winston Fassett",
+				"url": "https://twitter.com/WinstonF",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/357ff0194bad4097cc190fe64725e855e103b334876c1850f8a2f3c23ce8d6ed.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234165,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-16056058",
+			"date": "2021-07-30T23:52:37.000Z",
+			"author": {
+				"name": "Naomi See 🤖👩🏻‍🎤❤️🤦‍♀️🤷🏻‍♀️",
+				"url": "https://twitter.com/colorful_n0mi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4e9b9719f37c6ad5a90763df0b2fc9051ceb39ec505b6a27b6b1a1299d17cbe8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234186,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-14412405",
+			"date": "2021-07-31T01:28:44.000Z",
+			"author": {
+				"name": "Mike Aparicio",
+				"url": "https://twitter.com/peruvianidol",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/634afa59eff185624485098b7a75d834d835b02b24c8b58db7770f3416d4baf9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234226,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-14983574",
+			"date": "2021-07-31T03:19:00.000Z",
+			"author": {
+				"name": "Nick Sollecito",
+				"url": "https://twitter.com/oticellos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7affe294ab24ea99819c0d6f647fb54ac0a19cb6f3444396b49584bed25c3892.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234227,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-289095641",
+			"date": "2021-07-31T03:19:29.000Z",
+			"author": {
+				"name": "TRST_Blog",
+				"url": "https://twitter.com/trst_blog",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8c872b78457b09bb978c4fd62406b1225e0736e1c6a1c13419921a86abd9d683.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234248,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-180637265",
+			"date": "2021-07-31T05:00:17.000Z",
+			"author": {
+				"name": "Will Mendes",
+				"url": "https://twitter.com/willmendesneto",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/58e50f91660e85c5b5d03f20606e297d0031c9734f67672bbfb5094fdc8da2c7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234341,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-793371007281197056",
+			"date": "2021-07-31T11:53:51.000Z",
+			"author": {
+				"name": "Eugene Chulkov",
+				"url": "https://twitter.com/dev99problems",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b7775d82fa76d393892face873a16706611c9baf4d00fddbf7ed99f2143509b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234384,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-487592858",
+			"date": "2021-07-31T14:50:21.000Z",
+			"author": {
+				"name": "Carles Muiños",
+				"url": "https://twitter.com/zuzudev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c2eaf8cc4be9e3ccd1b887e86329af39b2ec759f1af380a5ad07d8d9e9c2d833.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234386,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-24203304",
+			"date": "2021-07-31T14:50:22.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234390,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-289095641",
+			"date": "2021-07-31T14:50:46.000Z",
+			"author": {
+				"name": "TRST_Blog",
+				"url": "https://twitter.com/trst_blog",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8c872b78457b09bb978c4fd62406b1225e0736e1c6a1c13419921a86abd9d683.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234451,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-991151",
+			"date": "2021-07-31T21:16:58.000Z",
+			"author": {
+				"name": "˗ˏˋ abhinav.co ˊˎ˗",
+				"url": "https://twitter.com/abhinav",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ede1a5508766619ad56d22d48e6e164c2a9546ef2afcaf02857668a4fc02b454.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234452,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-1070103054723280896",
+			"date": "2021-07-31T21:17:00.000Z",
+			"author": {
+				"name": "Yannis Spyrou",
+				"url": "https://twitter.com/SpyrouYannis",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dacdb43a4e18a5c9da830886acba2b7e6100230a4871142497c460fd10a9077e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234463,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-400819857",
+			"date": "2021-07-31T22:19:24.000Z",
+			"author": {
+				"name": "𝕕𝔾𝕣𝕒𝕞𝕞𝕒𝕥𝕚𝕜𝕠",
+				"url": "https://twitter.com/dgrammatiko",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/12964fe42dab5ef794a7ca342ce69bac91d73f35cf46ba0221995f79c0ee4298.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234476,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-24659084",
+			"date": "2021-07-31T23:34:07.000Z",
+			"author": {
+				"name": "Dave Pedu",
+				"url": "https://twitter.com/dpedu",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eb10c6e0e6d426b27ed0d02efc7c4087e8224071e83fab2153c36cdaa46f4603.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234477,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-1259622945955016705",
+			"date": "2021-07-31T23:34:08.000Z",
+			"author": {
+				"name": "Tanner Dolby",
+				"url": "https://twitter.com/tannerdolby",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b9b6080c2486ab209b39facadec189a081288baa997cdb77bda07ddd9dafa21.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234480,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-23724008",
+			"date": "2021-07-31T23:34:34.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234483,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-1226126702",
+			"date": "2021-07-31T23:34:36.000Z",
+			"author": {
+				"name": "Mathias Rechtzigel",
+				"url": "https://twitter.com/MathiasaurusRex",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/69cec7766d780bb9a46107a9fe1c0a69691418b60a4ae7ed2d0a88d472ce3795.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234676,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-17482294",
+			"date": "2021-08-01T08:55:00.000Z",
+			"author": {
+				"name": "elvendrim",
+				"url": "https://twitter.com/elvendrim",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f867d01bfe6ce4474c83b1758ec02cb69ff621b019164e72a3a385852bd12cc8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235272,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-1093221313622224896",
+			"date": "2021-08-02T09:45:24.000Z",
+			"author": {
+				"name": "𝒟𝑜𝑔𝓊𝓀𝒶𝓃",
+				"url": "https://twitter.com/dgknca",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e50329b728894d2957e201362a23b82e181f149cabab878123cdd135e74aa749.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235471,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-15604422",
+			"date": "2021-08-02T14:01:25.000Z",
+			"author": {
+				"name": "Ken Doman",
+				"url": "https://twitter.com/raykendo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0fea4c60a53ef32c6bcc46c5097c02d0635860a4c8e930b232ceb7a6acf485ef.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235472,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-758056",
+			"date": "2021-08-02T14:01:25.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://twitter.com/ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5a02571e30b5ee7d4cf5bdebf69e9ab5d536adfc20d7a5a11016dcb3988d12e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235473,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-1370243257922244616",
+			"date": "2021-08-02T14:01:26.000Z",
+			"author": {
+				"name": "argel",
+				"url": "https://twitter.com/argelomnes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/14f93c77258ba48001c3ed297a7eeabf0e8c22917ced7a9d401013c2573d4779.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235474,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-259814870",
+			"date": "2021-08-02T14:01:28.000Z",
+			"author": {
+				"name": "Gaël Poupard",
+				"url": "https://twitter.com/ffoodd_fr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bebb7c8bbc4d5d316c64a4e8278e4fb1a662dd836590aa669864c8f7d7ca013d.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235475,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-14436158",
+			"date": "2021-08-02T14:01:29.000Z",
+			"author": {
+				"name": "keith h.",
+				"url": "https://twitter.com/sillywampa",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/60ecbd37d8d6bf911b39e5473586d1c4c949b2e5faa268cc312024467be418cb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235476,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-2692942718",
+			"date": "2021-08-02T14:01:31.000Z",
+			"author": {
+				"name": "Iain Bean",
+				"url": "https://twitter.com/iainmbean",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/91c0c86e3ab9ff5c4c12d8ce23730b8644a6d894a959c05c5b479088de6a0e50.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235477,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-899998815067013120",
+			"date": "2021-08-02T14:01:32.000Z",
+			"author": {
+				"name": "Paul J Stales 🧑🏻‍💻",
+				"url": "https://twitter.com/pauljstales",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/90f9a81c2183013c68a5de575773bb8070eddfe13bacf1c9318fa2f773973482.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235478,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-64769411",
+			"date": "2021-08-02T14:01:34.000Z",
+			"author": {
+				"name": "Adam Greenough",
+				"url": "https://twitter.com/adam_greenough",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/91ef6edf58647043e1fed146909f3a8f5fa0acfd5ce098e872bd4b27bcb01ff0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235479,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-126965067",
+			"date": "2021-08-02T14:01:34.000Z",
+			"author": {
+				"name": "Tristan Remy",
+				"url": "https://twitter.com/tristanremy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f8b37c02e0a0b914dda9c2d8df1ec0c5a798354ddbc9c5baa53fffe4f05c7b58.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235480,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-16702747",
+			"date": "2021-08-02T14:01:35.000Z",
+			"author": {
+				"name": "ViniciusDallacqua 🌐",
+				"url": "https://twitter.com/WebTwitr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/23429ba9f61f1e85881e8ad321a0e84d972f5405c1b1ad704edfb42762ea9bfd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235481,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-1378661114775531521",
+			"date": "2021-08-02T14:01:36.000Z",
+			"author": {
+				"name": "James Bateson",
+				"url": "https://twitter.com/_jamesbateson",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/99345c90e0365a80fefe4a057344917bf98192b6952b0fb379c7ccf13d5fc416.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235482,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-59302671",
+			"date": "2021-08-02T14:01:37.000Z",
+			"author": {
+				"name": "Zacabk Seuberling",
+				"url": "https://twitter.com/zackseuberling",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e44ee3bd0992608c21e38294a0d55852f13641e1160b9c52cb7d7c0b92b85017.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235483,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-3115345708",
+			"date": "2021-08-02T14:01:38.000Z",
+			"author": {
+				"name": "Prince Wilson",
+				"url": "https://twitter.com/maxcell",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7e1a4ad8b16261fa5ecc44f9113b819b0082691362b06a5a1ce41fa0791ebc1d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1235484,
+			"url": "https://twitter.com/zachleat/status/1421161712280129540#favorited-by-18118070",
+			"date": "2021-08-02T14:01:38.000Z",
+			"author": {
+				"name": "Tomek Sułkowski",
+				"url": "https://twitter.com/sulco",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f965cee3680d0ec546095bab45ce9aa7c234683ba91fb058c2ca552a08182c99.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1234039,
+			"url": "https://twitter.com/eleven_ty/status/1421163659267612675",
+			"date": "2021-07-30T17:39:54.000Z",
+			"author": {
+				"name": "Eleventy",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/64ed7c5b6f8f7dc61e11ff6a926eeb6a94e686473efdb5a7c697a4a87f4e411a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234086,
+			"url": "https://twitter.com/itsIliad/status/1421180725823483905",
+			"date": "2021-07-30T18:47:43.000Z",
+			"author": {
+				"name": "Eliad Moosavi",
+				"url": "https://twitter.com/itsIliad",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/27db74ba3eee95d0df8eea96de5af4c953c946421e11b87d148b38c7e9308d22.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234249,
+			"url": "https://twitter.com/willmendesneto/status/1421317206273662978",
+			"date": "2021-07-31T03:50:03.000Z",
+			"author": {
+				"name": "Will Mendes",
+				"url": "https://twitter.com/willmendesneto",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/58e50f91660e85c5b5d03f20606e297d0031c9734f67672bbfb5094fdc8da2c7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234453,
+			"url": "https://twitter.com/biilmann/status/1421567823554367489",
+			"date": "2021-07-31T20:25:55.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1234454,
+			"url": "https://twitter.com/iain_freestone/status/1421574474781057024",
+			"date": "2021-07-31T20:52:21.000Z",
+			"author": {
+				"name": "Iain Freestone",
+				"url": "https://twitter.com/iain_freestone",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/62a9859bd68ee80102f223a642883a0ead69dea5eb392ce0b64afa564b37f309.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

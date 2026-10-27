@@ -1,0 +1,142 @@
+{
+	"disqus": {
+		"path": "/web/namespacing-outside-of-the-yahoo-namespace/",
+		"commentCount": 8,
+		"comments": [
+			{
+				"postId": "887461677",
+				"parentPostId": null,
+				"date": "2007-09-10T04:15:03Z",
+				"author": "Nicholas C. Zakas",
+				"avatar": "https://www.gravatar.com/avatar/ea077fdc95c2959ca28b052853b4175e?d=mm&s=60",
+				"message": "<p>I'm glad you're enjoying using YUITest. I think your point about namespacing is well-taken, but the YAHOO.namespace() function is non-destructive. If you were already using YAHOO.tool, then YAHOO.namespace() won't overwrite the existing one so all of your functionality will be safe.</p><p>By the way, where's your contact information? I'd like to have an offline conversation sometime. Stop by my site and drop me a line when you have a second.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461679",
+				"parentPostId": null,
+				"date": "2008-08-08T17:02:52Z",
+				"author": "Tom Te",
+				"avatar": "https://www.gravatar.com/avatar/d5a708e925cf26437c874f4bbc5262bb?d=mm&s=60",
+				"message": "<p>Are you sure your jQuery namespace function works? I get the following error in Firefox3, Safari etc.:</p><p>Error: invalid flag after regular expression<br>Source File: http://localhost/~matias/canalwebtv2008/client/js/base.js<br>Line: 7, Column: 16<br>Source Code:<br>    for (i=0; i&lt;a .length; i=i+1) {</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461678",
+				"parentPostId": null,
+				"date": "2008-08-08T17:05:03Z",
+				"author": "Tom Te",
+				"avatar": "https://www.gravatar.com/avatar/d5a708e925cf26437c874f4bbc5262bb?d=mm&s=60",
+				"message": "<p>Hmm... the error got escaped;</p><p>Source Code:<br>    for (i=0; i&lt;/a&gt;&lt;/a&gt;&lt;a .length; i=i+1) {</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461680",
+				"parentPostId": null,
+				"date": "2008-08-08T17:07:31Z",
+				"author": "Tom Te",
+				"avatar": "https://www.gravatar.com/avatar/d5a708e925cf26437c874f4bbc5262bb?d=mm&s=60",
+				"message": "<p>The fix was (of course) to change it to (for (i=0;i&lt;a.length;i=i+1)). Seems your blog changes your code examples av bit. :(</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461684",
+				"parentPostId": null,
+				"date": "2008-08-09T04:02:04Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Hey Tom, <br>Sorry about the code formatter, I don't know quite what it was up to.  I think its working now.<br>Thanks for the tip,<br>Zach</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461686",
+				"parentPostId": null,
+				"date": "2009-09-26T18:02:07Z",
+				"author": "Levan",
+				"avatar": "https://www.gravatar.com/avatar/c4dc2b1ac38167054fcf50e6a1f6088d?d=mm&s=60",
+				"message": "<p>IMHO, I see little value having seperate namespace generator, usually when you create namespace you dont just call it just  \"tools\" and put it directly under YAHOO, but something unique that will not encounter duplicate, for example</p><p>YAHOO.namespace( '<a href=\"http://zachleat.tools\" rel=\"nofollow noopener\" title=\"zachleat.tools\">zachleat.tools</a>' ); chances of YUI adding that exact namespace in the future is  very unlikely.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461685",
+				"parentPostId": null,
+				"date": "2009-10-01T04:42:20Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Yeah, 2007 Zach would have argued with you, but 2009 Zach agrees that he wouldn't put a separate namespace generator into any of his production projects.  The extra code weight outweighs the benefit.</p><p>Thanks for reading!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461687",
+				"parentPostId": null,
+				"date": "2010-11-24T18:03:38Z",
+				"author": "Vijay",
+				"avatar": "https://www.gravatar.com/avatar/9f92d399b334a7aa6b782eed4174ea23?d=mm&s=60",
+				"message": "<p>Very nice explanation. May be we can also add a check like:</p><p>for (i=0; i&lt;a.length; i=i+1) {<br>      if(typeof(a[i]) != \"string\") continue;<br>     .........<br>}</p><p>so that the loop is skipped if the argument is not of type \"string\"</p>",
+				"replies": []
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 751821,
+			"parentId": 0,
+			"url": "https://inneka.com/programming/jquery/is-it-possible-to-create-a-namespace-in-jquery/",
+			"author": {},
+			"date": "2020-02-03T21:13:13.000Z",
+			"content": "Loading... \n         \n        \n        \n<h2>Is it possible to create a namespace in jQuery?</h2>\n<pre>\nYUI has a nice way of creating a namespace for your methods etc. in javascript.\nDoes jQuery have anything similiar?\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p><a href=\"https://stackoverflow.com/users/35935/lpfavreau\">lpfavreau</a> offers the solution to <em>extend</em> the jQuery object with your own methods (so that their functionality applies on the actual jQuery object context). </p>\n<p>If you’re looking to just namespace your code you can use the dollar symbol like this:</p>\n<pre><code>$.myNamespace = { .. };\n</code></pre>\n<p>or the “jQuery”:</p>\n<pre><code>jQuery.myNamespace = { .. };\n</code></pre>\n<p>Be careful with the namespace you choose as this can overwrite existing jQuery methods (I’d suggest to first search in the jQuery code so that you don’t).</p>\n<p>You can follow this link: <a href=\"http://www.zachleat.com/web/2007/08/28/namespacing-outside-of-the-yahoo-namespace/\">http://www.zachleat.com/web/2007/08/28/namespacing-outside-of-the-yahoo-namespace/</a></p>\n<p>See how easy it is to create your own function to replicate what YUI does:</p>\n<pre><code>// include jQuery first.\njQuery.namespace = function() {\n    var a=arguments, o=null, i, j, d;\n    for (i=0; i&lt;a.length; i=i+1) {\n        d=a[i].split(\".\");\n        o=window;\n        for (j=0; j&lt;d.length; j=j+1) {\n            o[d[j]]=o[d[j]] || {};\n            o=o[d[j]];\n        }\n    }\n    return o;\n};\n\n// definition\njQuery.namespace( 'jQuery.debug' );\njQuery.debug.test1 = function()\n{\n    alert( 'test1 function' );\n};\njQuery.debug.test2 = function()\n{\n    alert( 'test2 function' );\n};\n// usage\njQuery.debug.test1();\njQuery.debug.test2();\n</code></pre>\n\n<h3>Answer 2:</h3>\n\n<p>This is how I create namespaces for my plugins:</p>\n<pre><code>(function ($) {\n    // do not overwrite the namespace, if it already exists\n    $.MyNamespace = $.MyNamespace || {};\n    $.MyNamespace.MyPlugin = function () {/*here's the logic*/}\n})($);\n</code></pre>\n<p>And then:</p>\n<pre><code>$.MyNamespace.MyPlugin ();\n</code></pre>\n\n<h3>Answer 3:</h3>\n\n<p>jQuery has a bunch of plugins that extend the base functionality. There is <a href=\"http://plugins.jquery.com/project/jQueryNameSpace\">this plugin</a> for easy namespaces.</p>\n\n<h3>Answer 4:</h3>\n\n<p>The <em>namespace</em> plugin is <strong>COMPLETELY UNNECESSARY!</strong><br />\nThe oldest trick in the world, the use of arguments.callee, Function.prototype and then calling a new Function instance, allows you to create nested namespaces with $.fn.extend!</p>\n<p>Here is a plain and simple example:</p>\n<pre><code>    ;(function($){\n    var options= {\n        root: function(){ //you don't have to call it 'root', of course :)\n            //identify the function from within itself with arguments.callee\n            var fn= arguments.callee;\n\n            //'this' at this level is the jquery object list matching your given selector\n            //we equate fn.prototype to this \n            //thus when we call a new instance of root, we are returned 'this'\n            fn.prototype= this;\n\n            fn.value= function(){\n                //Note: \"new this\" will work in the below line of code as well,\n                //because in the current context, 'this' is fn;\n                //I use fn to make the code more intuitive to understand;\n                var context= new fn; \n\n                console.log(context, fn.prototype); //test\n                return context.html(); //test\n            }\n\n            return this;\n        }\n    }\n\n    //you can obviously append additional nested properties in this manner as well\n    options.root.position= function(){\n        var context= new this; //in this context, fn is undefined, so we leverage 'this'\n\n        console.log(context, this.prototype); //test\n        return context.offset(); //test\n    }\n\n    //don't forget to extend in the end :)\n    $.fn.extend(options);\n\n})(jQuery);\n\n;$(function(){\n    var div= $('div#div')\n        .root();\n\n    console.log(div.root.value());\n    console.log(div.root.position());\n});\n</code></pre>\n\n<h3>Answer 5:</h3>\n\n<p>If you want to use jQuery in this manner:</p>\n<pre><code>$(\"*\").namespace.do();\n</code></pre>\n<p>then currently there’re no plugins doing that. (I can’t find neither John Resig’s jquery.space plugin which apparently stopped working in jQuery 1.4, nor Gilberto Saraiva plugin that apparently didn’t work as expected). I would gladly take a look at John’s function to see why it stopped working, and what can be done to make it work and quite frankly, it would be the best approach of creating uncluttered namespaces.</p>\n<p>As per <a href=\"http://malnotna.wordpress.com/2009/01/12/jquery-namespace-support/\">http://malnotna.wordpress.com/2009/01/12/jquery-namespace-support/</a> another approach is to do namespacing as (using jQuery.Modularize by Ariel Flesler):</p>\n\n\n\n\n\n\n\n<pre><code>$(\"*\").namespace().do()\n</code></pre>\n<p>but such syntax isn’t “pretty”. We’re also passing results from one function to another.</p>\n<p>My approach to creating namespaces is not putting namespaces in the end, but at the beginning of $, so our $(‘*’).namespace syntax becomes:</p>\n<pre><code>$.namespace(\"*\").do()\n</code></pre>\n<p>Weirdly, I don’t know why such approach isn’t mentioned, as it easily allows you to create unclattered namespaces without overwriting already existing functions (by using $.sub()). Also, making it work doesn’t require anything. So:</p>\n<pre><code>(function($){\n    $.namespace = $.sub();\n    $.fn.test = function(){ return 1 };              \n    $.namespace.fn.test = function() { return 2};\n})(jQuery);\n\nconsole.log($('*').test(), $.namespace('*').test());\n</code></pre>\n<p>And you’re ready to go.</p>\n\n<h3>Answer 6:</h3>\n\n<p>Depending on what you’re trying to do, jQuery’s plugin architecture may be what you’re looking for:</p>\n<pre><code>$.fn.myPlugin = function() {\n  return $(this).each(function() {\n    // do stuff\n  });\n};\n</code></pre>\n<p>or …</p>\n<pre><code>$.fn.myPlugin = function() {\n  var myNamespace = {\n    // your stuff\n  };\n};\n</code></pre>\n<p>really it depends on what you’re trying to do.</p>\n<p><a href=\"http://docs.jquery.com/Plugins/Authoring\">http://docs.jquery.com/Plugins/Authoring</a></p>\n\n<h3>Answer 7:</h3>\n\n<p>check out this blog: <a href=\"http://javascriptweblog.wordpress.com/2010/12/07/namespacing-in-javascript/\">http://javascriptweblog.wordpress.com/2010/12/07/namespacing-in-javascript/</a></p>\n<p>the self-invoking dynamic namespacing is what i’ve used before:</p>\n<pre><code>var myApp = {};\n(function(context) {\n    var id = 0;\n\n    context.next = function() {\n        return id++;\n    };\n\n    context.reset = function() {\n        id = 0;\n    } \n})(myApp); \n\nwindow.console &amp;&amp; console.log(\n    myApp.next(),\n    myApp.next(),\n    myApp.reset(),\n    myApp.next()\n); //0, 1, undefined, 0\n</code></pre>\n\n<h3>Answer 8:</h3>\n\n<p>All credit to @Diego Fluery, I just took his slide deck and made a runnable code prototype, but it might save you a few minutes if you go this route:</p>\n<pre><code>&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;script type=\"application/javascript\" src=\"http://code.jquery.com/jquery-1.7.2.min.js\"&gt;&lt;/script&gt;\n&lt;script type=\"application/javascript\"&gt;\n\n    $(document).ready(function() {\n        (function () {\n            $.fn.AppRedirect = function() {\n                this.sendRequest = parts.sendRequest;\n                this.doRedirect = parts.doRedirect;\n\n                return this;\n            }\n\n            var parts = {\n\n                doRedirect: function() {\n                    console.log('doRedirect');\n                },\n\n                sendRequest: function() {\n                    console.log('sendRequest');\n                }\n\n            };\n        })();\n\n        $(\"body\").AppRedirect().sendRequest();\n        $(\"body\").AppRedirect().doRedirect();\n    });     \n\n&lt;/script&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n</code></pre>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 935928,
+			"parentId": 0,
+			"url": "http://jquery.askforanswer.com/shifoukeyizaijqueryzhongchuangjianmingchengkongjian.html",
+			"author": {},
+			"date": "2020-12-04T16:53:23.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1295981,
+			"parentId": 0,
+			"url": "https://microeducate.tech/is-it-possible-to-create-a-namespace-in-jquery/",
+			"author": {},
+			"date": "2021-10-26T06:26:43.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1353314,
+			"parentId": 0,
+			"url": "https://codeinfopark.com/questions/jquery-is-it-possible-to-create-a-namespace-in-jquery/",
+			"author": {},
+			"date": "2022-02-19T00:35:32.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1573843,
+			"parentId": 0,
+			"url": "https://w3toppers.com/is-it-possible-to-create-a-namespace-in-jquery/",
+			"author": {},
+			"date": "2022-12-03T01:58:23.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1695687,
+			"parentId": 0,
+			"url": "https://rowcoding.com/is-it-possible-to-create-a-namespace-in-jquery/",
+			"author": {},
+			"date": "2023-07-16T13:58:17.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"comments": [
+		{
+			"id": 2031555,
+			"parentId": 0,
+			"url": "https://c.im/@cwilcox808/117259821179740856",
+			"author": {
+				"name": "Curtis Wilcox",
+				"url": "https://c.im/@cwilcox808",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0420c3d68553f90b79bc3a720f1602dddc548654d07adad891d1cd66432ae2ce.jpg"
+			},
+			"date": "2026-09-12T19:54:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <br />Regarding your two-state dark mode toggle, controls, as represented in the accessibility tree, should either change their state or change their name, not both. </p><p>In general, changing stated is preferred because screen readers don't reliably announce changes to programmatic names of elements while they're focused. In this case, having it be announced as \"selected\" when it's following the system preference, doesn't really convey what's going on. I would remove the `aria-pressed` from the button and keep changing the name. To make up for screen readers that fail to announce name changes, I'd probably add an aria-live somewhere to announce it.</p><p><a href=\"https://www.zachleat.com/web/two-state-dark-mode-toggle/\"><span>https://www.</span><span>zachleat.com/web/two-state-dar</span><span>k-mode-toggle/</span></a></p><p><a href=\"https://c.im/tags/a11y\">#<span>a11y</span></a> <a href=\"https://c.im/tags/webDev\">#<span>webDev</span></a></p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/a11y\">a11y</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/webdev\">webdev</a>\n<a class=\"u-mention\" href=\"https://c.im/tags/a11y\"></a>\n<a class=\"u-mention\" href=\"https://c.im/tags/webDev\"></a>\n<a href=\"https://www.zachleat.com/web/two-state-dark-mode-toggle/\">Trying out a Two-state Dark Mode Toggle—zachleat.com</a>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

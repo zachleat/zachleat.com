@@ -1,0 +1,759 @@
+{
+	"comments": [
+		{
+			"id": 835830,
+			"parentId": 0,
+			"url": "https://twitter.com/hankchizljaw/status/1290659510676328452",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://twitter.com/hankchizljaw",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3721c8a93a4b54a55b8a481ca630bfc29cd2f7d6fd3b23a277ce9b64bbdde7b6.jpg"
+			},
+			"date": "2020-08-04T14:43:01.000Z",
+			"content": "Handy!\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 835866,
+			"parentId": 0,
+			"url": "https://twitter.com/joelgoodman/status/1290663798647459846",
+			"author": {
+				"name": "Joel G Goodman",
+				"url": "https://twitter.com/joelgoodman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/68c91bc83be470db58750a4bfd4f8dc99508c6c130fd0afae25d5ddd1bb07d36.jpg"
+			},
+			"date": "2020-08-04T15:00:03.000Z",
+			"content": "Very fun.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/bulk-og/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 835931,
+			"parentId": 0,
+			"url": "https://twitter.com/daveharrisonnet/status/1290724522195406849",
+			"author": {
+				"name": "Dave Harrison",
+				"url": "https://twitter.com/daveharrisonnet",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/412e4fea51a6736625d64addd3751fb4667572dc546ae2d64ded3e7d2b256462.jpg"
+			},
+			"date": "2020-08-04T19:01:21.000Z",
+			"content": "I can see this getting a turn!💕\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/bulk-og/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1236232,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/if-i-work-really-hard-on-my-open-graph-images-people-will-share-my-blog-posts/",
+			"author": {},
+			"date": "2021-08-03T13:13:59.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1238074,
+			"parentId": 0,
+			"url": "https://51posts.com/2021/08/04/22/03/05/2794/",
+			"author": {
+				"name": "51posts",
+				"url": "https://51posts.com/author/51posts/"
+			},
+			"date": "2021-08-04T22:03:05.000Z",
+			"content": "<p><a href=\"https://ogp.me/\">Open Graph</a> images. Those little images that show up when your site is shared on social media. The ones for my site were… bad. My default was to use one, huge, boring branded image for everything—which provided no extra value and just cluttered up y’alls feeds (sorry!). I wanted to make them better and here’s what I did.</p>\n<h2>The Lazy Method <a href=\"https://www.zachleat.com/web/automatic-opengraph/#the-lazy-method\">#</a>\n</h2>\n<p>While building a <a href=\"https://www.zachleat.com/web/screenshots/\">screenshot cloud service</a> for 11ty.dev, it became obvious that I should add an Open Graph size to use screenshots as Open Graph images. You can see this in use on the Eleventy docs pages:</p>\n<ul><li>Navigate to <a href=\"https://www.11ty.dev/docs/\"><code>https://www.11ty.dev/docs/</code></a>\n</li>\n<li>With the screenshot service in place, it’s just one line for a custom Open Graph image: <code>&lt;meta property=\"og:image\" content=\"https://rssimg.svc.ltd/1423162207394336768-SVJVnYFZTB3E3wdngZBCqC\"&gt;</code>\n</li>\n<li>The social card image looks like this: <img src=\"https://rssimg.svc.ltd/1423162207394336768-SVJVnYFZTB3E3wdngZBCqC\" alt=\"Open Graph images for 11ty.dev/docs/\" /></li>\n</ul><p>For the amount of work this took to setup, it was totally worth it (one <code>&lt;meta&gt;</code>!). But I wanted to take it to the next level for my personal blog (with a long term goal of maybe convincing my colleagues to use something like this on <a href=\"https://netlify.com/\">netlify.com</a> 😅).</p>\n<h2>The Underwhelming Method <a href=\"https://www.zachleat.com/web/automatic-opengraph/#the-underwhelming-method\">#</a>\n</h2>\n<p>In the past, I did experiment a bit with using the <a href=\"https://www.zachleat.com/web/eleventy-image/#svg-flies-first-class\">SVG to raster image feature of Eleventy Image</a> (via <a href=\"https://github.com/lovell/sharp\"><code>sharp</code></a>) but it wasn’t quite what I wanted. It had the benefit of being much faster than HTML-based methods (usually based on <a href=\"https://developers.google.com/web/tools/puppeteer/\">Puppeteer</a>) but I ended up having to slog through a bunch of hand-written SVG to get it to look how I wanted to look. I’ll admit, I’m not as productive at hand-authoring SVG as I’d like.</p>\n<h2>The Fancy Method <a href=\"https://www.zachleat.com/web/automatic-opengraph/#the-fancy-method\">#</a>\n</h2>\n<p>With those experiences under my belt, I decided to custom design a page on my site (<a href=\"https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/web/_posts/opengraph-posts.liquid#L12\">source code</a>) that would iterate over each blog post and could serve as the target for my screenshot service. This provided a couple of benefits:</p>\n<ul><li>I can use all of the existing HTML/CSS/JS/Fonts already in use on my site. That means fake browser chrome, custom Twitter avatars, Lighthouse scores, popularity ranks, among others!</li>\n<li>I don’t have to run Puppeteer locally. I try to avoid this when possible—it is awesome but it slows down the build (a lot).</li>\n</ul><p>Each individual blog post has a dedicated Open Graph image page, for example <a href=\"https://www.zachleat.com/opengraph/web/automatic-opengraph/\"><code>/opengraph/web/automatic-opengraph/</code></a> (<em>Fair warning: this page is not using responsive web design principles. It is specifically created for the 1200×630 aspect ratio</em>).</p>\n<p>If I want a custom background image for a single post’s open graph image, I add front matter with the image url:</p>\n<pre><code><span>---</span><br /><span>seo</span><span>:</span><br /><span>openGraphBackgroundImage</span><span>:</span> /og/sources/graphpaper.jpg<br /><span>---</span></code></pre>\n<p>Next, in my base Eleventy layout file (<a href=\"https://github.com/zachleat/zachleat.com/blob/1b396e18bbe5e8a7b050497b501b85256cc78620/_includes/layouts/base.liquid#L21\">source code</a>) I point the Open Graph page for each specific blog post towards the screenshot service to capture the image:</p>\n<pre><code>https://rssimg.svc.ltd/1423162208652627968-sLeELNoxxWRUtQeHWxSLJK\n</code></pre>\n<p>It looks like this:</p>\n<p><img src=\"https://rssimg.svc.ltd/1423162208652627968-sLeELNoxxWRUtQeHWxSLJK\" width=\"1200\" height=\"630\" alt=\"1423162208652627968-sLeELNoxxWRUtQeHWxSLJK\" /></p>\n<p>I wanted the image to have the post title, my avatar, the published date, and the URL of the page.</p>\n<p>For bonus metadata, here’s one with a Lighthouse score attached (<a href=\"https://www.speedlify.dev/zachleat.com/\">updated regularly via Speedlify</a>), a webmentions count, and even the page weight (e.g. 226 KiB, also driven by Speedlify):</p>\n<p><img src=\"https://rssimg.svc.ltd/1423162210149994496-d3GRTZXjvzmZts7eyaMmZL\" width=\"1200\" height=\"630\" alt=\"1423162210149994496-d3GRTZXjvzmZts7eyaMmZL\" /></p>\n<h2>Bonus Features <a href=\"https://www.zachleat.com/web/automatic-opengraph/#bonus-features\">#</a>\n</h2>\n<h3>DevTools Device Emulation <a href=\"https://www.zachleat.com/web/automatic-opengraph/#devtools-device-emulation\">#</a>\n</h3>\n<p>Inside of Chrome Devtools, I added a custom Emulated Device specifically for Open Graph image formats to test the layouts.</p>\n<p><img src=\"https://rssimg.svc.ltd/1423162211483783168-RwyfbSPGGgBxjxTvHVCK5n\" alt=\"Drop down select of Chrome Devtools Emulated Devices\" width=\"364\" height=\"431\" /></p>\n<h3>Social Card Preview <a href=\"https://www.zachleat.com/web/automatic-opengraph/#social-card-preview\">#</a>\n</h3>\n<p>I added a little <code>&lt;details&gt;</code> on the bottom of each blog post so that I could test the <a href=\"https://www.zachleat.com/web/automatic-opengraph/#opengraph-preview\">social card image preview</a>. I’ll probably pivot this to a link-based sharing widget at some point or combine into my existing <a href=\"https://www.zachleat.com/web/style-guide/#retweet-to-share\">Retweet to Share component</a>.</p>\n<h3>On-demand Builder Cache Busting <a href=\"https://www.zachleat.com/web/automatic-opengraph/#on-demand-builder-cache-busting\">#</a>\n</h3>\n<p>The <a href=\"https://www.zachleat.com/web/screenshots/\">Eleventy Screenshot service</a> is an independent project that uses On-demand Builders to cache screenshot image content to Netlify’s CDN. That cache is pretty sticky. The easiest way to invalidate the cache is to trigger a Screenshot service build on Netlify, but that would reset the cache for <em>all</em> screenshots saved by the service, which is too heavy. It has been a common request for a more granular Netlify API to reset pieces of the cache but during the development of this project I realized that we can handle this manually on the app side using our old friend, <a href=\"https://github.com/11ty/api-screenshot/#advanced-manual-cache-busting\">the Cache Buster URL</a>.</p>\n<p>If the old URL looked like this <code>https://rssimg.svc.ltd/1423162210149994496-d3GRTZXjvzmZts7eyaMmZL</code>, I can add an arbitrary cache busting key to the end of it (prefixed by an underscore to identify it anywhere in the URL).</p>\n<p>If I generated that key with today’s date (e.g. <code>https://rssimg.svc.ltd/1423162210149994496-d3GRTZXjvzmZts7eyaMmZL_20210803/</code>), it would generate new images every day without the screenshot service needing to invalidate the entire cache. (Some <a href=\"https://twitter.com/zachleat/status/1422177661313552384\">related discussion about this on Twitter</a>)</p>\n<h2>Related <a href=\"https://www.zachleat.com/web/automatic-opengraph/#related\">#</a>\n</h2>\n<ul><li>Blog post: <a href=\"https://www.zachleat.com/web/bulk-og/\">Bulk Generating OG Images</a>\n</li>\n<li>\n<a href=\"https://github.blog/2021-06-22-framework-building-open-graph-images/\">github.blog: A framework for building Open Graph images</a>: has a really good trick to improve the performance of Puppeteer, which I may use some day 😅</li>\n</ul>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1268257,
+			"parentId": 0,
+			"url": "https://sayed.cyou/web-dev/html/replace-imagemagick-with-html-css-html-dev-feed/",
+			"author": {
+				"name": "Abu Sayed",
+				"url": "https://sayed.cyou/author/admin/"
+			},
+			"date": "2021-09-13T08:33:01.000Z",
+			"content": "<p></p>\n<h3>Replace ImageMagick with HTML &amp; CSS</h3>\n<p></p>\n<br /><br />\n<br />\n<p>I read an article by Zach Leatherman about <a href=\"https://www.zachleat.com/web/bulk-og/\">bulk og images generation</a>. He explains how he used ImageMagick to generate a bunch of Open Graph images.</p>\n<p>More precisely, he wrote a simple bash script with two calls to ImageMagick. The script converts this:</p>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--gJtfCX9B--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/edaingnsfl8dn81ri3xv.png\"></a></p>\n<p>To this:</p>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--6wavZraq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rumnn4pa6sj0z5u7u54n.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--6wavZraq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rumnn4pa6sj0z5u7u54n.png\" alt=\"Open Graph Image embedding the rocket\" /></a></p>\n\n<p>Even if ImageMagick is convenient, I think it’s not the best tool for this particular task. Let’s see why, and what to do about it.</p>\n<h2>\n  <a href=\"https://dev.to/philippe/#why-not-imagemagick\"><br /></a><br />\n  Why not ImageMagick?<br /></h2>\n<p>ImageMagick is an awesome tool. I used it a lot for <a href=\"https://realfavicongenerator.net/\">RealFavicon</a> and bulk jobs. However, I see a few issues here.</p>\n<h3>\n  <a href=\"https://dev.to/philippe/#not-just-a-cli-tool-a-new-language\"><br /></a><br />\n  Not just a CLI tool: a new language<br /></h3>\n<p>Usually, we use ImageMagick from the command line. Command line? You might think <code>cd</code>, <code>ls</code> or <code>echo</code>. But ImageMagick is not of that kind. It’s more like <code>sed</code> or <code>awk</code>: as complex as it is powerful.</p>\n<p>Look at Zach’s code:</p>\n\n<pre><code><span># resize image</span>\nconvert <span>\"</span><span>$i</span><span>\"</span> <span>-resize</span> x530 <span>-background</span> <span>$bgColor</span> <span></span>\n  <span>-gravity</span> center <span>-extent</span> 1200x630 <span>\"tmp/</span><span>${</span><span>i</span><span>##*/</span><span>}</span><span>\"</span>\n<span># add watermark</span>\ncomposite <span>-gravity</span> SouthEast <span>-geometry</span> +20+20 <span></span>\n  <span>\"tmp/watermark.png\"</span> <span>\"tmp/</span><span>${</span><span>i</span><span>##*/</span><span>}</span><span>\"</span> <span>\"</span><span>${</span><span>outputDir</span><span>}${</span><span>i</span><span>##*/</span><span>}</span><span>\"</span>\n</code></pre>\n\n\n    Enter fullscreen mode<p>    Exit fullscreen mode</p>\n\n\n\n<p><code>convert</code>, <code>-resize</code>, <code>-gravity</code>, <code>-extent</code>… This is new vocabulary we have to learn.</p>\n<p>ImageMagick has a great documentation, with a lot of examples we can start from. Yet, be ready to go on an adventure.</p>\n<p>Don’t get me wrong: I’m sure Zach is fluent with ImageMagick and was able to write this script in a few minutes. However, I can’t do this. I know ImageMagick just enough to use its doc effectively. In other words, I’m good at finding the right examples and copying them wisely. 😅</p>\n<h3>\n  <a href=\"https://dev.to/philippe/#inconvenient-trial-and-error\"><br /></a><br />\n  Inconvenient trial and error<br /></h3>\n<p>When creating something visual with code, we can’t expect to achieve the perfect design on the first try, whatever the technology. “Text should be a bit larger”, “We won’t need that much padding”, and so on. So we need a convenient feedback loop.</p>\n<p>ImageMagick is not ideal here.</p>\n<p>Zach’s script iterates over a lot of images. That’s the point. But during the tuning phase, this is counterproductive. Basically, we need to hack in a way or another:</p>\n<ul><li>Replace <code>*.png</code> with <code>rocket.png</code> to select only one image.</li>\n<li>Prepare the ImageMagick command lines from a terminal and copy/paste them to the script when we’re ready.</li>\n<li>…</li>\n</ul><h3>\n  <a href=\"https://dev.to/philippe/#imagemagick-doesnt-scale-well\"><br /></a><br />\n  ImageMagick doesn’t scale well<br /></h3>\n<p>This one it a bit out of scope here because we create rather simple images. But in general, ImageMagick is not convenient for complex compositions.</p>\n<p>Either we need to produce several intermediate images, heading for the final image at each step. Zach creates one in his demo. Or we write a single super command which does everything. I’m sure Zach’s commands could be merged.</p>\n<p>In both cases, it’s hard to write and maintain.</p>\n<h2>\n  <a href=\"https://dev.to/philippe/#the-html-way\"><br /></a><br />\n  The HTML way<br /></h2>\n<p>In this section, we are going to address these issues.</p>\n<p>First, we use HTML and CSS. The reason is obvious: we already know them. No more ImageMagick multiverse.</p>\n<p>We also use the <a href=\"https://www.npmjs.com/package/itdk\">Resoc image templating system</a>. It will help us build a template, with reload-as-you-type feature for instant feedback loop.</p>\n<p>Can’t wait? You can check the <a href=\"https://github.com/Resocio/demo-project-1-million-devs-og\">demo repo</a>.</p>\n<h3>\n  <a href=\"https://dev.to/philippe/#create-the-template\"><br /></a><br />\n  Create the template<br /></h3>\n<p>Let’s go:</p>\n\n<pre><code><span>mkdir </span>1-million-devs\n<span>cd </span>1-million-devs\nnpx itdk init resoc-template\n</code></pre>\n\n\n    Enter fullscreen mode<p>    Exit fullscreen mode</p>\n\n\n\n<p>The last command creates a sample image template in <code>resoc-template</code> and opens it in the browser:</p>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--xuj6ydNT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xfk9v16qv495v41rtvtu.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--xuj6ydNT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xfk9v16qv495v41rtvtu.png\" alt=\"Default template\" /></a></p>\n\n<p>On the right panel, we see what the template expects as parameters. Our template will mimic Zach’s script:</p>\n<ul><li>Path to the main image</li>\n<li>Path to the watermark image</li>\n<li>Background color</li>\n</ul><p>Let’s edit <code>1-million-devs/resoc-template/resoc.manifest.json</code>. We can adapt the existing content to define our own manifest:</p>\n\n<pre><code><span>{</span><span>\n  </span><span>\"partials\"</span><span>:</span><span> </span><span>{</span><span>\n    </span><span>\"content\"</span><span>:</span><span> </span><span>\"./content.html.mustache\"</span><span>,</span><span>\n    </span><span>\"styles\"</span><span>:</span><span> </span><span>\"./styles.css.mustache\"</span><span>\n  </span><span>},</span><span>\n  </span><span>\"parameters\"</span><span>:</span><span> </span><span>[</span><span>\n    </span><span>{</span><span>\n      </span><span>\"label\"</span><span>:</span><span> </span><span>\"Main image\"</span><span>,</span><span>\n      </span><span>\"name\"</span><span>:</span><span> </span><span>\"mainImage\"</span><span>,</span><span>\n      </span><span>\"type\"</span><span>:</span><span> </span><span>\"imageUrl\"</span><span>,</span><span>\n      </span><span>\"demoValue\"</span><span>:</span><span> </span><span>\"rocket.png\"</span><span>\n    </span><span>},</span><span>\n    </span><span>{</span><span>\n      </span><span>\"name\"</span><span>:</span><span> </span><span>\"logo\"</span><span>,</span><span>\n      </span><span>\"type\"</span><span>:</span><span> </span><span>\"imageUrl\"</span><span>,</span><span>\n      </span><span>\"demoValue\"</span><span>:</span><span> </span><span>\"netlify-logo.png\"</span><span>\n    </span><span>},</span><span>\n    </span><span>{</span><span>\n      </span><span>\"name\"</span><span>:</span><span> </span><span>\"backgroundColor\"</span><span>,</span><span>\n      </span><span>\"type\"</span><span>:</span><span> </span><span>\"color\"</span><span>,</span><span>\n      </span><span>\"demoValue\"</span><span>:</span><span> </span><span>\"#00dc9e\"</span><span>\n    </span><span>}</span><span>\n  </span><span>]</span><span>\n</span><span>}</span><span>\n</span></code></pre>\n\n\n    Enter fullscreen mode<p>    Exit fullscreen mode</p>\n\n\n\n<p>Back to the browser, we can see that these new parameters were taken into account:</p>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--ifEeXbp_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdcidttzimnlunluzxj8.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--ifEeXbp_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sdcidttzimnlunluzxj8.png\" alt=\"Template parameters\" /></a></p>\n\n<p>To get a working preview of the template, we needs a demo image and a logo. Save <a href=\"https://dev-to-uploads.s3.amazonaws.com/uploads/articles/z2dyebn4xr4q54f2zcwf.png\">the rocket</a> to <code>1-million-devs/resoc-template/rocket.png</code> and <a href=\"https://dev-to-uploads.s3.amazonaws.com/uploads/articles/o2oenh7gm2d98yr2y6oh.png\">Netlify logo</a> to <code>1-million-devs/resoc-template/netlify-logo.png</code>.</p>\n<p>The previews of the left panel are quite broken at this point. It’s time to create our own template.</p>\n<p>Edit <code>1-million-devs/resoc-template/content.html.mustache</code>:</p>\n\n<pre><code><span>&lt;div</span> <span>class=</span><span>\"wrapper\"</span><span>&gt;</span>\n  <span>&lt;img</span> <span>id=</span><span>\"main-image\"</span> <span>src=</span><span>\"{{ mainImage }}\"</span> <span>/&gt;</span>\n  <span>&lt;img</span> <span>id=</span><span>\"logo\"</span> <span>src=</span><span>\"{{ logo }}\"</span> <span>/&gt;</span>\n<span>&lt;/div&gt;</span>\n</code></pre>\n\n\n    Enter fullscreen mode<p>    Exit fullscreen mode</p>\n\n\n\n<p>The content is straightforward, expect for the strange <code>{{ mainImage }}</code> and <code>{{ logo }}</code>. This is Mustache, the templating system Resoc uses to inject the final values.</p>\n<p>Now for the CSS, fill <code>1-million-devs/resoc-template/styles.css.mustache</code> with:</p>\n\n<pre><code><span>.wrapper</span> <span>{</span>\n  <span>background-color</span><span>:</span> <span>{{</span> <span>backgroundColor</span> <span>}</span><span>}</span><span>;</span>\n  <span>display</span><span>:</span> <span>flex</span><span>;</span>\n  <span>justify-content</span><span>:</span> <span>center</span><span>;</span>\n  <span>align-items</span><span>:</span> <span>center</span><span>;</span>\n  <span>position</span><span>:</span> <span>relative</span><span>;</span>\n<span>}</span>\n\n<span>#main-image</span> <span>{</span>\n  <span>max-height</span><span>:</span> <span>84vh</span><span>;</span>\n  <span>max-width</span><span>:</span> <span>84vh</span><span>;</span>\n<span>}</span>\n\n<span>#logo</span> <span>{</span>\n  <span>position</span><span>:</span> <span>absolute</span><span>;</span>\n  <span>right</span><span>:</span> <span>4vh</span><span>;</span>\n  <span>bottom</span><span>:</span> <span>4vh</span><span>;</span>\n  <span>height</span><span>:</span> <span>10vh</span><span>;</span>\n<span>}</span>\n</code></pre>\n\n\n    Enter fullscreen mode<p>    Exit fullscreen mode</p>\n\n\n\n<p>Nothing fancy. Just a matter of centering the main image and put the logo to the bottom left. Background color is set by a parameter, via <code>{{ backgroundColor }}</code>. We use the <code>vh</code> unit to speak relatively to the view port height. As we plan to generate only 1200×630 images, we could have just used pixels.</p>\n<p>Take a look at the preview in your browser:</p>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--rCleCRmv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/f6xortwjpwaorjq29jti.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--rCleCRmv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/f6xortwjpwaorjq29jti.png\" alt=\"Final template\" /></a></p>\n\n<p>Cool! You could think this was made with ImageMagick 😆</p>\n<h3>\n  <a href=\"https://dev.to/philippe/#use-the-template\"><br /></a><br />\n  Use the template<br /></h3>\n<p>We are now going to build the command line that will create the images. We don’t need to start from scratch, though, because the template viewer already provides one below the previews:</p>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--VquWZTYI--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/go9zlktogj729vqnqnmp.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--VquWZTYI--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/go9zlktogj729vqnqnmp.png\" alt=\"Image creation sample command line\" /></a></p>\n\n<p>Let’s shamelessly steal Zach’s bash script, replace the two ImageMagick invocations with Resoc’s, and name this new script <code>create-og-images.sh</code>:</p>\n\n<pre><code><span>#!/bin/sh</span>\n\n<span>echo</span> <span>\"Uses Resoc\"</span>\n\n<span>images</span><span>=</span><span>\"input/*.png\"</span>\n<span>watermark</span><span>=</span><span>\"resoc-template/netlify-logo.png\"</span>\n<span>outputDir</span><span>=</span><span>\"output/\"</span>\n<span>bgColor</span><span>=</span><span>\"#00dc9e\"</span>\n\n<span>mkdir</span> <span>-p</span> <span>$outputDir</span>\n\n<span>for </span>i <span>in</span> <span>$images</span>\n<span>do\n  </span>create-img resoc-template/resoc.manifest.json <span></span>\n    <span>-o</span> <span>\"</span><span>${</span><span>outputDir</span><span>}${</span><span>i</span><span>##*/</span><span>}</span><span>\"</span> <span></span>\n    <span>--params</span> <span></span>\n      <span>mainImage</span><span>=</span><span>\"</span><span>$i</span><span>\"</span> <span></span>\n      <span>logo</span><span>=</span><span>\"</span><span>$watermark</span><span>\"</span> <span></span>\n      <span>backgroundColor</span><span>=</span><span>\"</span><span>$bgColor</span><span>\"</span> <span></span>\n    <span>-w</span> 1200 <span>-h</span> 630\n<span>done</span>\n</code></pre>\n\n\n    Enter fullscreen mode<p>    Exit fullscreen mode</p>\n\n\n\n<p>We need to drop <a href=\"https://github.com/Resocio/demo-project-1-million-devs-og/tree/main/input\">a few samples images</a> in a new <code>input</code> directory.</p>\n<p><code>create-img</code> could be called with <code>npx</code>, but this is way too slow. Install it once for all and go create!</p>\n\n<pre><code>npm <span>install</span> <span>-g</span> create-img\n./create-og-images.sh\n</code></pre>\n\n\n    Enter fullscreen mode<p>    Exit fullscreen mode</p>\n\n\n\n<p>A few seconds later, the script turned this:</p>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--hsJY749w--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kzg3t6wjshnn4wvyqoat.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--hsJY749w--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kzg3t6wjshnn4wvyqoat.png\" alt=\"Script input pictures\" /></a></p>\n\n<p>To this:</p>\n<p><a href=\"https://res.cloudinary.com/practicaldev/image/fetch/s--KfAjnL1q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0cpwjftmkt2c4u9amkla.png\"><img src=\"https://res.cloudinary.com/practicaldev/image/fetch/s--KfAjnL1q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0cpwjftmkt2c4u9amkla.png\" alt=\"Script output pictures\" /></a></p>\n\n<h2>\n  <a href=\"https://dev.to/philippe/#conclusion\"><br /></a><br />\n  Conclusion<br /></h2>\n<p>ImageMagick is an amazing tool. It can perform effects which are beyond HTML and CSS capabilities. Regarding composition, the balance is reversed. Web technologies are more suitable and better known.</p>\n<p>Yet, HTML is somehow not available from the command line. Puppeteer has been here for a while, but it is too raw to be used in this context.</p>\n<p>I’m creating the <a href=\"https://www.npmjs.com/package/itdk\">Resoc image template dev kit</a> to fill this gap. HTML and CSS are incredibly powerful and we know them so well. Just like JS entered the desktop world via Electron, HTML should join the command line universe.</p>\n<p>And there are plenty of other usages for image templates, like <a href=\"https://dev.to/philippe/static-automated-social-images-with-nextjs-2leo\">static social image generation for NextJS</a>.</p>\n\n<p></p>\n\n\n<br /><br />\n<a href=\"https://Sayed.CYou\">Abu Sayed</a> is the <strong>Best Web, Game, XR and Blockchain Developer in Bangladesh</strong>. Don't forget to Checkout his Latest <a href=\"https://sayed.cyou/portfolio/\">Projects</a>.<br /><br />\n<p>Checkout more <a href=\"https://Sayed.CYou/bolg/\">Articles</a> on <strong>Sayed.CYou</strong></p>\n<p></p>\n\n<p> </p>#Replace #ImageMagick #HTML #CSS\n\n\n\t<h3><em>Related</em></h3>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 835829,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-4180991",
+			"date": "2020-08-04T16:07:33.000Z",
+			"author": {
+				"name": "Joel G Goodman",
+				"url": "https://twitter.com/joelgoodman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/68c91bc83be470db58750a4bfd4f8dc99508c6c130fd0afae25d5ddd1bb07d36.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835831,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-324104461",
+			"date": "2020-08-04T16:07:34.000Z",
+			"author": {
+				"name": "Jacob D. Castro♟",
+				"url": "https://twitter.com/jacobdcastro",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1931676f398f2c50e6f427efa98fec4c9143fcf79ac8d06c6cd3a31960c84166.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835832,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-1108727304539250688",
+			"date": "2020-08-04T16:07:34.000Z",
+			"author": {
+				"name": "Pusha B 🐝",
+				"url": "https://twitter.com/securibee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7e4c279e313556c630d59f886104e8d7a285e5a9bf3a13c1c60e786c2872f4f5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835833,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-208754919",
+			"date": "2020-08-04T16:07:35.000Z",
+			"author": {
+				"name": "Marcus Relacion",
+				"url": "https://twitter.com/marcusrelacion",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cfddfddcd21a74d376aa648a775103520e316a76ef2113819876f19d952c5bce.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835834,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-103821832",
+			"date": "2020-08-04T16:07:36.000Z",
+			"author": {
+				"name": "Marco Hengstenberg",
+				"url": "https://twitter.com/nice2meatu",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8265f779fb05c07556fd6d94639bb4a133c09f8d74b84e2dce30654bfce90a69.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835835,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-98734097",
+			"date": "2020-08-04T16:07:37.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://twitter.com/hankchizljaw",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3721c8a93a4b54a55b8a481ca630bfc29cd2f7d6fd3b23a277ce9b64bbdde7b6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835836,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-832326739",
+			"date": "2020-08-04T16:07:37.000Z",
+			"author": {
+				"name": "Lisa Davis",
+				"url": "https://twitter.com/oobbles",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/93eb8026eed780d4af0c6b568bb8fd3f08eb404ff9b8e88219262c40ed686c22.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835837,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-30333908",
+			"date": "2020-08-04T16:07:38.000Z",
+			"author": {
+				"name": "Devin Clark",
+				"url": "https://twitter.com/iDevinClark",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/495821c98f00de17dc92297c06711f3c2e1bf62a5f50f1ac59bca6eaab5bb6a0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835838,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-1641234967",
+			"date": "2020-08-04T16:07:39.000Z",
+			"author": {
+				"name": "Niyaz Poyilan",
+				"url": "https://twitter.com/niyazpoyilan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ce7214a39756124aa1c3941cd574d9aa492d87de56d6af120ab1557e34707251.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835840,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-18264020",
+			"date": "2020-08-04T16:07:43.000Z",
+			"author": {
+				"name": "Julien Bidoret",
+				"url": "https://twitter.com/julienbidoret",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7d439510bbd4b2aa4d7f6260566b5191e852a206a37954bfd35d8eb85f873070.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835839,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-570331224",
+			"date": "2020-08-04T16:07:43.000Z",
+			"author": {
+				"name": "AWebFactory",
+				"url": "https://twitter.com/a_web_factory",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/32285e6f118e3d982c461056aef205d8f7cc786c9c8806d0a382707561eb819c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835841,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-1143602144781713408",
+			"date": "2020-08-04T16:07:45.000Z",
+			"author": {
+				"name": "demystifying.dev",
+				"url": "https://twitter.com/DemystifyingDev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/62e0764b8f3e723566fce456796b059edd7b6b094a435ba374645b0c6fe71d07.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835842,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-26617701",
+			"date": "2020-08-04T16:07:46.000Z",
+			"author": {
+				"name": "Sébastien Lavoie",
+				"url": "https://twitter.com/sebastienLavoie",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2197161cabc74d9a1ee475b535a83f4fc74b6e6b9e34fcab4957f64dbf8d6cc7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835843,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-17875565",
+			"date": "2020-08-04T16:07:47.000Z",
+			"author": {
+				"name": "it-spirit - Black Lives Matter",
+				"url": "https://twitter.com/it_spirit",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/766d6b4a699e229c2a83282f01e9272585a24691aaf0bac4c4c39265967322e7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835844,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-17082377",
+			"date": "2020-08-04T16:07:47.000Z",
+			"author": {
+				"name": "victorkane",
+				"url": "https://twitter.com/victorkane",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fda286c701b297cab90f07f7ded203ac289c3b1be195151c53825b211aee30e9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835845,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-3938744473",
+			"date": "2020-08-04T16:07:48.000Z",
+			"author": {
+				"name": "Braden East 💡",
+				"url": "https://twitter.com/bradenthehair",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c97a61487a7321cd7f08ea4b7e7735115829bfa280edf616a25dbe735f898a1c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835846,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-14412405",
+			"date": "2020-08-04T16:07:49.000Z",
+			"author": {
+				"name": "Mike Aparicio",
+				"url": "https://twitter.com/peruvianidol",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/23e4ef0f364d338fb303b5ed8e93cac83ce5b4c3fb782b85abdd6ad769d53d99.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835847,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-1179734732298432513",
+			"date": "2020-08-04T16:07:49.000Z",
+			"author": {
+				"name": "f-elix",
+				"url": "https://twitter.com/f_elix90",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d72b8f801f61bdd174c5239692c639588eb8b404d822c74b2d5bf40762fb7781.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835848,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-14122334",
+			"date": "2020-08-04T16:07:50.000Z",
+			"author": {
+				"name": "Lincoln Mongillo",
+				"url": "https://twitter.com/mastorna",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/780f4150ca7ced402e893c5bd1fccb652d3b8dab969c126a3c23a199eddf1bb8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835849,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-4557942444",
+			"date": "2020-08-04T16:07:51.000Z",
+			"author": {
+				"name": "Andrew Ek",
+				"url": "https://twitter.com/ektastrophe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4e890b6367209096fe50e1c7fc422afa5378795440da35ad2ca5c0f30d9955ca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835850,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-24342828",
+			"date": "2020-08-04T16:07:51.000Z",
+			"author": {
+				"name": "dan leatherman",
+				"url": "https://twitter.com/danleatherman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/218e8eb495f09a8495a21210ba0e2dae2cfc99f75828c22d4c66d168ad2e8797.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835851,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-785611",
+			"date": "2020-08-04T16:07:52.000Z",
+			"author": {
+				"name": "Ashur Cabrera 😷",
+				"url": "https://twitter.com/ashur",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ea3faca15d8e1205b3e30ac302c8fdc3549d8b1b4db6a42a2d2c232b7c2b5ad8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835852,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-1149416783675371521",
+			"date": "2020-08-04T16:07:53.000Z",
+			"author": {
+				"name": "0x1312babe",
+				"url": "https://twitter.com/0x1312BABE",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fd5bd6b28d4767068029d23e76db4fd9e1e5263fb315190774bd4a387f40a0f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835853,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-117036191",
+			"date": "2020-08-04T16:07:54.000Z",
+			"author": {
+				"name": "Kÿle Macqüarrie",
+				"url": "https://twitter.com/k_macquarrie",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1c04b3ea129a4b5c894ec55b5cec3a78f7ba0bdcae921d5357a07fe6045bd66f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835854,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-59969976",
+			"date": "2020-08-04T16:07:54.000Z",
+			"author": {
+				"name": "Eric Bailey",
+				"url": "https://twitter.com/ericwbailey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5d3fca900492b8a1e75a04003c2ef9cfe5776f5996987858f13012a22a7cdfd9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835855,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-981996647906533378",
+			"date": "2020-08-04T16:07:55.000Z",
+			"author": {
+				"name": "Ricardo Blanch PM",
+				"url": "https://twitter.com/product_blinch",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f5b2714c2f963a9e935a45a4d1acc6520944949d16f1c7b8ca6859b1092693b8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835856,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-266790419",
+			"date": "2020-08-04T16:07:56.000Z",
+			"author": {
+				"name": "Torsten Knabe",
+				"url": "https://twitter.com/torkna",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/94406757a0230bbe1efacda962c53c38d5fea27f19adbaaf622f08256100a5f1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835857,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-1211913922829139969",
+			"date": "2020-08-04T16:07:57.000Z",
+			"author": {
+				"name": "Sebastien Coupe",
+				"url": "https://twitter.com/SebastienCoupe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ba7fb45bd2f0f5b87fc66ef2282e6c9dd1e0b8465ecc5591cad702aa631b6aee.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835858,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-16969568",
+			"date": "2020-08-04T16:07:57.000Z",
+			"author": {
+				"name": "mason conkright",
+				"url": "https://twitter.com/themason",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2adf36d05c33b2b0775bc045ca0f098f47d54f5657ffa8ec276f6ca1de0dcbdf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835884,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-23742780",
+			"date": "2020-08-04T16:53:50.000Z",
+			"author": {
+				"name": "Michael Gehrmann",
+				"url": "https://twitter.com/mge_de",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9de7ce35efc145a14199d759ca59e2d8c77f3494093109c174f6d5152a6e989b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835885,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-15777123",
+			"date": "2020-08-04T16:53:50.000Z",
+			"author": {
+				"name": "Dan Denney",
+				"url": "https://twitter.com/dandenney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e94c1c1bc814573e42809e37bb6f6ed93bcdbe1d2e8c358d255889f2218db08e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835886,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-240607542",
+			"date": "2020-08-04T16:53:51.000Z",
+			"author": {
+				"name": "✨Joël",
+				"url": "https://twitter.com/Jolg42",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20857ca5d7595ca1f585f441f6cfac5655f733bbf6b08fa915ef70818e1c24c3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835887,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-58448784",
+			"date": "2020-08-04T16:53:51.000Z",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://twitter.com/m_ott",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6cadd5c7ea8ba3e1336671afc46cd6c449a247920c453bbf3c495905cc811752.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835888,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-14436816",
+			"date": "2020-08-04T16:53:52.000Z",
+			"author": {
+				"name": "Bryan Robinson",
+				"url": "https://twitter.com/brob",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2e33ede5896250f43345fefa1f925f1adc13a10d52fbfb26e0e8e5e26816665c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835889,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-2963554943",
+			"date": "2020-08-04T16:53:55.000Z",
+			"author": {
+				"name": "Stephen Brown-Bourne",
+				"url": "https://twitter.com/SBrownBourne",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dda8806cab106cc874b48a5dbe4e4607672f854c644f82034e9730a2ea5b8dd6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835891,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-40922269",
+			"date": "2020-08-04T16:54:14.000Z",
+			"author": {
+				"name": "Brett Jankord",
+				"url": "https://twitter.com/bjankord",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0e2d6d002103bd09aa861e88508be3b135dc0a3b9e6e4bc2d3ee05987653f428.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835892,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-1259622945955016705",
+			"date": "2020-08-04T16:54:15.000Z",
+			"author": {
+				"name": "Tanner Dolby",
+				"url": "https://twitter.com/tannerdolby",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b9b6080c2486ab209b39facadec189a081288baa997cdb77bda07ddd9dafa21.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835907,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-1320668180",
+			"date": "2020-08-04T17:45:55.000Z",
+			"author": {
+				"name": "Biteworks Art",
+				"url": "https://twitter.com/biteworks_art",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/732d93a26e8978554bb8ebd8963369637d01b22a841256a5235fd3ef685897d2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835908,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-287583214",
+			"date": "2020-08-04T17:45:56.000Z",
+			"author": {
+				"name": "Frank Adebiaye",
+				"url": "https://twitter.com/fadebiaye",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f60c217266f970f63f95273f4dced4452902caf0ace9aa7241160a547f80befc.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835921,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-305228181",
+			"date": "2020-08-04T18:39:20.000Z",
+			"author": {
+				"name": "Corey Megown",
+				"url": "https://twitter.com/cmegown",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fc7185a88c6f5b701224c2947a86a1fb5dc789cb137f05520b02cbcc33750b72.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835922,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-2260815740",
+			"date": "2020-08-04T18:39:20.000Z",
+			"author": {
+				"name": "Jake",
+				"url": "https://twitter.com/JakeDChampion",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/55452fdbb1b010495f28472fab8127f5c5d5ed7aa4f83162020af3774bb163a8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835923,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-5399562",
+			"date": "2020-08-04T18:39:22.000Z",
+			"author": {
+				"name": "Peter Antonius",
+				"url": "https://twitter.com/Okkido",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b9f3c9100136e57d6639a597f3f0a96aefc4fc39390f79608240b502adcc3066.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835943,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-6579652",
+			"date": "2020-08-04T20:32:34.000Z",
+			"author": {
+				"name": "Wayne Elgin",
+				"url": "https://twitter.com/esjay",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/edb96f1f9995aefa7b6407b8f28798a17a5ab90a370d2e40da0084574f12e830.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835944,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-10044152",
+			"date": "2020-08-04T20:32:37.000Z",
+			"author": {
+				"name": "Tom Hermans🤘",
+				"url": "https://twitter.com/tomhermans",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/795f03301969b7eb3f47673dca199228325e3a925defe302d9653b3f3283823f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835962,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-2509306208",
+			"date": "2020-08-04T21:22:28.000Z",
+			"author": {
+				"name": "henry▘",
+				"url": "https://twitter.com/xdesro",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ab80d9f873839b450b85f790452c7451f12ae81a83aa896b09e1f34f625bbb05.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835963,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-425853322",
+			"date": "2020-08-04T21:22:28.000Z",
+			"author": {
+				"name": "John Meyerhofer",
+				"url": "https://twitter.com/JRMeyerhofer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4e91f7dfaa8a65f626f48f2ed141d7793c884c1c408f450aaf877bafe1d85e41.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835964,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-25048064",
+			"date": "2020-08-04T21:22:29.000Z",
+			"author": {
+				"name": "Shirish",
+				"url": "https://twitter.com/_shirish",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b86f436236ef5017a7f150c53190bc62162e3ea6bd1887ec99f3f73f6703c08b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 836016,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-33046163",
+			"date": "2020-08-04T23:43:35.000Z",
+			"author": {
+				"name": "@thomas@social.tzi.fr",
+				"url": "https://twitter.com/iamtzi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/771c10bdccf2f1097190137165e552207370fc500b4e8edf30f141ef858cede1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 836087,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-122052466",
+			"date": "2020-08-05T05:54:15.000Z",
+			"author": {
+				"name": "Matt O'Leary",
+				"url": "https://twitter.com/mattosurf",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/367b6a51f432a08970616b8a630f59edca3f251a0f4b66eef16813e44ab8b038.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 836225,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-5008851",
+			"date": "2020-08-05T18:36:28.000Z",
+			"author": {
+				"name": "Daniel Ehniss",
+				"url": "https://twitter.com/depone",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a06f2de154cc3d426c2989437b76fe610e6fd7020b22ab0a5477275f9d6315ac.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 836283,
+			"url": "https://twitter.com/zachleat/status/1290658085065957379#favorited-by-2391572880",
+			"date": "2020-08-05T20:38:22.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://twitter.com/BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b7a80f06bd0444925bf3506019ab0f10869ae49d4b8c35ea126612f1875ceef2.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 835865,
+			"url": "https://twitter.com/malchata/status/1290658259599269891",
+			"date": "2020-08-04T14:38:03.000Z",
+			"author": {
+				"name": "Jeremy Wagner",
+				"url": "https://twitter.com/malchata",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a815fc58320ea85c3100e2f6f3b0236773caa8b8e39447a93e5694dc110bdd8c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835864,
+			"url": "https://twitter.com/DemystifyingDev/status/1290658616270364679",
+			"date": "2020-08-04T14:39:28.000Z",
+			"author": {
+				"name": "demystifying.dev",
+				"url": "https://twitter.com/DemystifyingDev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/62e0764b8f3e723566fce456796b059edd7b6b094a435ba374645b0c6fe71d07.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835862,
+			"url": "https://twitter.com/a_web_factory/status/1290658649778659329",
+			"date": "2020-08-04T14:39:36.000Z",
+			"author": {
+				"name": "AWebFactory",
+				"url": "https://twitter.com/a_web_factory",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/32285e6f118e3d982c461056aef205d8f7cc786c9c8806d0a382707561eb819c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835863,
+			"url": "https://twitter.com/victorkane/status/1290658680141238273",
+			"date": "2020-08-04T14:39:43.000Z",
+			"author": {
+				"name": "victorkane",
+				"url": "https://twitter.com/victorkane",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fda286c701b297cab90f07f7ded203ac289c3b1be195151c53825b211aee30e9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835861,
+			"url": "https://twitter.com/hankchizljaw/status/1290659490656915456",
+			"date": "2020-08-04T14:42:56.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://twitter.com/hankchizljaw",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3721c8a93a4b54a55b8a481ca630bfc29cd2f7d6fd3b23a277ce9b64bbdde7b6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835860,
+			"url": "https://twitter.com/philhawksworth/status/1290660572447625218",
+			"date": "2020-08-04T14:47:14.000Z",
+			"author": {
+				"name": "Phil Hawksworth",
+				"url": "https://twitter.com/philhawksworth",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fd1185da1ed09664bc011181408cfd1571fc310d9fccaa93ee40f50c93cedd54.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835859,
+			"url": "https://twitter.com/torkna/status/1290669538644721664",
+			"date": "2020-08-04T15:22:52.000Z",
+			"author": {
+				"name": "Torsten Knabe",
+				"url": "https://twitter.com/torkna",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/94406757a0230bbe1efacda962c53c38d5fea27f19adbaaf622f08256100a5f1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835890,
+			"url": "https://twitter.com/dandenney/status/1290685850129436675",
+			"date": "2020-08-04T16:27:41.000Z",
+			"author": {
+				"name": "Dan Denney",
+				"url": "https://twitter.com/dandenney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e94c1c1bc814573e42809e37bb6f6ed93bcdbe1d2e8c358d255889f2218db08e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 835965,
+			"url": "https://twitter.com/_shirish/status/1290754234489532416",
+			"date": "2020-08-04T20:59:25.000Z",
+			"author": {
+				"name": "Shirish",
+				"url": "https://twitter.com/_shirish",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b86f436236ef5017a7f150c53190bc62162e3ea6bd1887ec99f3f73f6703c08b.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"bookmarks": [
+		{
+			"id": 838652,
+			"url": "https://barryfrost.com/2020/08/bulk-generating-open-graph-images",
+			"date": "2020-08-11T20:25:45.000Z",
+			"author": {
+				"name": "Barry Frost",
+				"url": "https://barryfrost.com/",
+				"avatarUrl": "https://avatars.webmention.io/barryfrost.com/e6549dc4225bbdfd168d57f9dd27c5bff1c9f061628e5a95e152244421219b92.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

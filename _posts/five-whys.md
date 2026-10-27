@@ -1,0 +1,48 @@
+---
+title: The Five Whys of Web Font Loading Performance
+date: 2018-11-14
+categories:
+  - presentations
+tags:
+  - conference
+  - speaking
+  - font-loading
+  - video
+medialength: 46 min
+metadata:
+  type: speaking_recap
+  speaking:
+    type: conference
+    country: Netherlands
+---
+
+_Originally presented at [Performance.now(), The Web Performance Conference](https://perfnow.nl/) on November 8th, 2018 in Amsterdam, Netherlands 🇳🇱._
+
+This was a completely revamped version of my Web Font Loading talk with a brand new theme and new examples. I took the audience through a case study improving the web font loading of the default theme you get when you create a new blog on wordpress.com. It originally loaded five different font files from Google Fonts.
+
+The presentation iterated through a variety of different font loading tools and showed how they affected the performance of the site using real data and results from [webpagetest.org](https://www.webpagetest.org/).
+
+* Demos on [Netlify at `performance-sometime.netlify.com`](https://performance-sometime.netlify.com/).
+* Source code on [GitHub at `zachleat/performance-sometime`](https://github.com/zachleat/performance-sometime).
+
+Some of the tests and approaches demoed here are _not yet documented_ on [A Comprehensive Guide to Font Loading Strategies](https://www.zachleat.com/web/comprehensive-webfonts/) nor are they available on [`web-font-loading-recipes`](https://github.com/zachleat/web-font-loading-recipes) (but soon).
+
+## Video
+
+{% renderTemplate "webc" %}<div><youtube-lite-player @slug="FbguhX3n3Uc" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
+
+_The [video is hosted on YouTube](https://www.youtube.com/watch?v=FbguhX3n3Uc)._
+
+## Slides
+
+<div><div class="fluid-width-video-wrapper"><iframe src="https://noti.st/zachleat/KNaZEg/embed" frameborder="0" allowfullscreen></iframe></div></div>
+
+_The [slides are hosted on Notist](https://noti.st/zachleat/KNaZEg)._
+
+## Coverage
+
+* [Up to speed with web performance](https://hiddedevries.nl/en/blog/2018-11-10-up-to-speed-with-web-performance) by [Hidde de Vries](https://twitter.com/hdv)
+* [Notes from performance.now()](https://medium.com/zoover-engineering/notes-from-performance-now-709817be3636) by [Dario Gieselaar](https://twitter.com/GieselaarD)
+* [performance.now()—stuff I learned](https://koen.kivits.com/2018/11/20/performance-now/) by [Koen Kivits](https://twitter.com/koenkivits)
+* [Photos of me at @perfnowconf](https://twitter.com/perfnowconf/status/1060525490518274048)
+* [All conference photos](https://perfnow.nl/photos)

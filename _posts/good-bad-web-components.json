@@ -1,0 +1,925 @@
+{
+	"comments": [
+		{
+			"id": 1776073,
+			"parentId": 0,
+			"url": "https://www.alvinashcraft.com/2024/02/02/dew-drop-february-2-2024-4120/",
+			"author": {
+				"name": "Alvin A.",
+				"url": "https://www.alvinashcraft.com/author/admin/"
+			},
+			"date": "2024-02-02T12:03:48.000Z",
+			"content": "<h3><a></a>Top Links</h3>\n<ul><li><a href=\"https://code.visualstudio.com/updates/v1_86\">Visual Studio Code January 2024</a> (Visual Studio Code Team)</li>\n<li><a href=\"https://vlqh-zgph.campaign-view.com/ua/SharedView?od=3z5b1449310f71294fafc3d35955582e56a7fc9cec01fb440bc3cc8ba398aa18db&amp;cno=11a2b0b20bdba61&amp;cd=1e7349b9851d225c\">TechBash 2024 Sponsor Prospectus Is Now Available</a> (TechBash Team)</li>\n<li><a href=\"https://www.syncfusion.com/blogs/post/load-maui-scheduler-sqlite-crud.aspx?utm_source=alvinashcraft&amp;utm_medium=email&amp;utm_campaign=alvinashcraft_blog_edmfeb24\">Easily Load Appointments in .NET MAUI Scheduler with SQLite and Perform CRUD</a> (Jeyasri Murugan)</li>\n<li><a href=\"https://blogs.windows.com/windowsdeveloper/2024/02/01/introducing-neural-processor-unit-npu-support-in-directml-developer-preview/\">Introducing Neural Processor Unit (NPU) support in DirectML (developer preview)</a> (Chad Pralle)</li>\n<li><a href=\"http://www.youtube.com/watch?v=feb6pnyrC3M\">What’s winget.pro? | Open at Microsoft</a> (Frank Boucher &amp; Michael Herrmann)</li>\n<li><a href=\"https://dev.to/davidortinau/net-maui-dos-and-donts-19g3\">.NET MAUI Tips – Some Dos and Don’ts</a> (David Ortinau)</li>\n</ul><p></p>\n<h3><a></a>Web &amp; Cloud Development</h3>\n<ul><li><a href=\"https://techcommunity.microsoft.com/t5/apps-on-azure-blog/observability-on-azure-container-apps/ba-p/4046929\">Observability on Azure Container Apps</a> (Abdullah Abu Hassan)</li>\n<li><a href=\"https://www.telerik.com/blogs/simplify-javascript-development-lodash\">Simplify JavaScript Development with Lodash</a> (Hassan Djirdeh)</li>\n<li><a href=\"https://www.pulumi.com/blog/pulumi-release-notes-99/\">Pulumi Release Notes: Pulumi ESC, Deployments GA, Pulumi AI Improvements, AWS S3 Express One Zone Support, and more!</a> (Justin Van Patten)</li>\n<li><a href=\"https://www.devleader.ca/2024/02/01/ultimate-starter-guide-to-middleware-in-asp-net-core-everything-you-need-to-know/\">Ultimate Starter Guide to Middleware in ASP.NET Core: Everything You Need to Know</a> (Nick Cosentino)</li>\n<li><a href=\"https://ardalis.com/http-file-not-sending-auth-header/\">Solved! Visual Studio .http File Not Sending Authorization Header</a> (Steve Smith)</li>\n<li><a href=\"https://www.zachleat.com/web/good-bad-web-components/\">The Good, The Bad, The Web Components</a> (Zach Leatherman)</li>\n<li><a href=\"https://astro.build/blog/astro-430/\">Astro 4.3</a> (Erika, Emanuele Stoppa, Matthew Phillips, Nate Moore &amp; Bjorn Lu)</li>\n<li><a href=\"https://www.freecodecamp.org/news/how-to-make-your-web-sites-accessible/\">How to Make Your Web Sites Accessible</a> (Beau Carnes)</li>\n<li><a href=\"https://blogs.windows.com/msedgedev/2024/02/01/microsoft-edge-and-interop-2024/\">Microsoft Edge and Interop 2024</a> (Patrick Brosset &amp; Dan Clark)</li>\n<li><a href=\"https://blog.postman.com/how-to-use-graphql-subscriptions/\">How to use GraphQL subscriptions</a> (Pooja Mistry)</li>\n</ul><p></p>\n<h3><a></a>WinUI, .NET MAUI &amp; XAML</h3>\n<ul><li><a href=\"https://www.preemptive.com/moving-from-xamarin-forms-to-net-maui-heres-how/\">Moving From Xamarin.Forms to .NET MAUI? Here’s How</a> (PreEmptive Team)</li>\n</ul><p></p>\n<h3><a></a>Visual Studio &amp; .NET</h3>\n<ul><li><a href=\"https://visualstudiomagazine.com/articles/2024/02/01/matrix-inverse-ml-tutorial.aspx\">Matrix Inverse from Scratch Using SVD Decomposition with C#</a> (James McCaffrey)</li>\n<li><a href=\"https://code-maze.com/csharp-different-ways-to-get-the-first-record-in-each-group-with-linq/\">Different Ways to Get the First Record in Each Group With LINQ</a> (Ivan Matec)</li>\n<li><a href=\"https://devblogs.microsoft.com/cppblog/msvc-toolset-minor-version-number-14-40-in-vs-2022-v17-10/\">MSVC Toolset Minor Version Number 14.40 in VS 2022 v17.10</a> (Daniel Griffing)</li>\n<li><a href=\"https://dotneteers.net/optimizing-your-net-application-with-profile-guided-optimization-pgo-and-jit-settings/\">Optimizing Your .NET Application with Profile-Guided Optimization (PGO) and JIT Settings</a> (Peter Smulovics)</li>\n<li><a href=\"https://devblogs.microsoft.com/oldnewthing/20240201-00/?p=109346\">Using virtual memory placeholders to allocate contiguous address space for multiple purposes</a> (Raymond Chen)</li>\n<li><a href=\"https://blog.jetbrains.com/toolbox-app/2024/02/introducing-toolbox-app-2-2/\">Introducing Toolbox App 2.2</a> (Ivan Kuzmin)</li>\n</ul><p></p>\n<h3><a></a>Design, Methodology, AI &amp; Testing</h3>\n<ul><li><a href=\"https://www.advancedinstaller.com/psf-fixupx-feature.html\">PSF Fixups feature – MSIX Packaging Tool</a> (Horatiu Vladasel)</li>\n<li><a href=\"https://www.webdesignerdepot.com/ai-prompts/\">The Art of Engineering AI Prompts</a> (Michael Washington)</li>\n<li><a href=\"https://www.red-gate.com/simple-talk/devops/testing/why-test-driven-development-part-2/\">Why Test-Driven Development? (Part 2)</a> (Alex Bunardzic)</li>\n<li><a href=\"https://www.theverge.com/2024/2/1/24058647/apple-ceo-tim-cook-teases-generative-ai-iphone\">Tim Cook confirms Apple’s generative AI features are coming ‘later this year’</a> (Chris Welch)</li>\n<li><a href=\"https://blog.logrocket.com/product-management/smoke-testing/\">A guide to smoke testing</a> (David Pereira)</li>\n<li><a href=\"https://www.theverge.com/2024/2/1/24057438/bard-gemini-imagen-google-ai-image-generation\">Bard generates photos now, finally</a> (Emilia David)</li>\n<li><a href=\"https://www.kunal-chowdhury.com/2024/02/generative-ai-for-content-creation.html\">Generative AI for Content Creation</a> (Kunal Chowdhury)</li>\n<li><a href=\"https://www.mrlacey.com/2024/02/thats-not-what-code-reviews-are-for.html\">That’s not what code reviews are for!</a> (Matt Lacey)</li>\n<li><a href=\"https://medium.com/@russ_laraway/executive-privilege-the-illness-283daefe1bb2?source=rss-535bfeaad7e9------2\">Executive Privilege, the Illness.</a> (Russ Laraway)</li>\n<li><a href=\"https://www.oneusefulthing.org/p/what-can-be-done-in-59-seconds-an\">What Can be Done in 59 Seconds: An Opportunity (and a Crisis)</a> (Ethan Mollick)</li>\n</ul><p></p>\n<h3><a></a>Screencasts &amp; Videos</h3>\n<ul><li><a href=\"http://www.youtube.com/watch?v=DW-S-_9wZCM\">Save money with Arc SQL Server licensing – what you need to know | Data Exposed</a> (Anna Hoffman)</li>\n<li><a href=\"http://www.youtube.com/watch?v=rjvIGYlRUww\">IoT Coffee Talk: Episode 194 – When Old Tech Becomes New (Because it works)</a> (IoT Coffee Talk Crew)</li>\n<li><a href=\"http://www.youtube.com/watch?v=Dnh1kEjKZXw\">How to run Azure Virtual Desktop on-premises</a> <em>and</em> <a href=\"http://www.youtube.com/watch?v=FLcX9-uXlKY\">Microsoft Intune Suite – beyond endpoint management in 2024</a> (Microsoft Mechanics)</li>\n<li><a href=\"http://www.youtube.com/watch?v=OmUuR4GiwIE\">Introduction to APIs with .NET [Pt 1] | Back-end Web Development with .NET for Beginners</a> (Safia Abdalla)</li>\n<li><a href=\"https://www.gatesnotes.com/Unconfuse-Me-podcast-with-guest-Hannah-Ritchie\">Hannah Ritchie will make you optimistic about climate change</a> (Bill Gates)</li>\n<li><a href=\"http://www.youtube.com/watch?v=tnUyT3fPdIU\">Working with Required Properties &amp; Fields when Reading JSON | On .NET</a> (James Montemagno &amp; Matt Soucoup)</li>\n<li><a href=\"http://www.youtube.com/watch?v=afkQSZIqFTU\">Can I develop an AI application with Semantic Kernel that can call remote AI plugins? | One Dev Question</a> (Mollie Munoz)</li>\n</ul><p></p>\n<h3><a></a>Podcasts</h3>\n<ul><li><a href=\"https://www.hanselminutes.com/930/the-power-of-open-telemetry-with-dr-sally-wahba\">The Hanselminutes Podcast – The Power of Open Telemetry  Dr. Sally Wahba</a> (Scott Hanselman)</li>\n<li><a href=\"https://scrummastertoolbox.libsyn.com/fostering-team-collaboration-in-scrum-the-essence-of-agile-leadership-for-scrum-masters-kulsoom-pervez\">Scrum Master Toolbox Podcast – Fostering Team Collaboration in Scrum, The Essence of Agile Leadership For Scrum Masters | Kulsoom Pervez</a> (Vasco Duarte)</li>\n<li><a href=\"https://changelog.com/jsparty/310\">JS Party Podcast – Angular Signals</a> (Pavel Kozlowski, Alex Rickabaugh, Kevin Ball &amp; Amal Hussein)</li>\n<li><a href=\"https://peopleandprojectspodcast.libsyn.com/ppp-404-how-project-managers-can-move-fast-and-fix-things-with-anne-morriss\">PPP 404 | How Project Managers Can Move Fast and FIX Things, with Anne Morriss</a> (Andy Kaufman)</li>\n<li><a href=\"https://www.microsoft.com/en-us/research/blog/whats-your-story-ivan-tashev/\">What’s Your Story: Ivan Tashev</a> (Alyssa Hughes)</li>\n<li><a href=\"https://uxpodcast.com/320-digital-ownership-david-dylan-thomas/\">UX Podcast #320 – Digital Ownership with David Dylan Thomas</a> (James Royal-Lawson &amp; Per Axbom)</li>\n<li><a href=\"https://www.webrush.io/episodes/episode-266-why-you-should-get-cs-degree\">Web Rush Episode 266: Why You Should Get CS Degree</a> (John Papa, Ward Bell, Craig Shoemaker &amp; Dan Wahlin)</li>\n<li><a href=\"https://pivotal-with-hayete-gallot.cohostpodcasting.com/episodes/beeodiversity-uses-ai-and-mother-nature-to-protect-the-environment\">Pivotal with Hayete Gallot – BeeOdiversity uses AI and Mother Nature to protect the environment</a> (Heyete Gallot)</li>\n</ul><p></p>\n<h3><a></a>Community &amp; Events</h3>\n<ul><li><a href=\"https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/top-10-reasons-to-attend-the-microsoft-365-community-conference/ba-p/4043874\">Top 10 reasons to attend the Microsoft 365 Community Conference</a> (Adam Harmetz)</li>\n<li><a href=\"https://www.microsoft.com/en-us/security/blog/2024/02/01/connect-with-microsoft-at-these-cybersecurity-events-in-2024/\">Connect with Microsoft at these cybersecurity events in 2024</a> (Benjamin Lim)</li>\n</ul><p></p>\n<h3><a></a>Database</h3>\n<ul><li><a href=\"https://www.bennadel.com/blog/4590-conditionally-updating-columns-when-using-on-duplicate-key-update-in-mysql.htm\">Conditionally Updating Columns When Using ON DUPLICATE KEY UPDATE In MySQL</a> (Ben Nadel)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/azure-sql-blog/invoking-rest-apis-with-sqlclr-and-newtonsoft-s-json-net/ba-p/4037384\">Invoking REST APIs with SQLCLR and Newtonsoft’s Json.NET</a> (Mihailo Joksimovic)</li>\n</ul><p></p>\n<h3><a></a>SharePoint, M365 &amp; MS Teams</h3>\n<ul><li><a href=\"https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/sharepoint-roadmap-pitstop-january-2024/ba-p/4045075\">SharePoint Roadmap Pitstop: January 2024</a> (Mark Kashman)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/microsoft-365-blog/announcing-edit-support-for-vsd-files-in-visio-for-the-web/ba-p/4045405\">Announcing edit support for .vsd files in Visio for the web</a> (Akshay Shahare)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/how-microsoft-365-delivers-trustworthy-ai/ba-p/4045596\">How Microsoft 365 Delivers Trustworthy AI</a> (Tanner Briggs)</li>\n<li><a href=\"https://devblogs.microsoft.com/microsoft365dev/general-availability-of-viva-connections-extensibility-with-bots/\">General availability of Viva Connections extensibility with Bots</a> (Vesa Juvonen)</li>\n<li><a href=\"https://valerasnarbutas.github.io/posts/tip-of-the-day-change-quicklink-navigation-orientation/\">Tip of the day: Change quicklink navigation orientation using PnP PowerShell and M365 CLI</a> (Valeras Narbutas)</li>\n</ul><p></p>\n<h3><a></a>Miscellaneous</h3>\n<ul><li><a href=\"https://blogs.windows.com/windows-insider/2024/02/01/announcing-windows-11-insider-preview-build-22635-3139-beta-channel/\">Announcing Windows 11 Insider Preview Build 22635.3139 (Beta Channel)</a> (Brandon LeBlanc)</li>\n</ul><p></p>\n<h3><a></a>More Link Collections</h3>\n<ul><li><a href=\"https://blog.cwa.me.uk/2024/02/02/the-morning-brew-3873/\">The Morning Brew #3873</a> (Chris Alcock)</li>\n<li><a href=\"https://aarontgrogg.com/blog/2024/02/01/todays-readings-391/\">Today’s Readings</a> (Aaron T. Grogg)</li>\n<li><a href=\"https://seroter.com/2024/02/01/daily-reading-list-february-1-2024-252/\">Daily Reading List – February 1, 2024 (#252)</a> (Richard Seroter)</li>\n</ul><p></p>\n<h3><a></a>The Geek Shelf</h3>\n<p><a href=\"https://www.amazon.com/dp/183763713X/?tag=amavin-20\"><img align=\"left\" style=\"margin:0px 4px 0px 0px;border:0px;float:left;background-image:none;\" src=\"https://m.media-amazon.com/images/I/41oafNuSw1L._SS135_.jpg\" border=\"0\" alt=\"41oafNuSw1L._SS135_.jpg\" /></a> <a href=\"https://www.amazon.com/dp/183763713X/?tag=amavin-20\">Apps and Services with .NET 8: Build practical projects with Blazor, .NET MAUI, gRPC, GraphQL, and other enterprise technologies</a> (Mark J. Price)<em> – Referral Link</em></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1776114,
+			"parentId": 0,
+			"url": "https://mastodon.social/@khalidabuhakmeh/111862274681613182",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/720e72bbde8606751a57ba8eac69b0db319ac174571c9c5322ea0bc05c5c7e19.png"
+			},
+			"date": "2024-02-02T14:07:33.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> The “h-i” slide cracks me up. ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776115,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862276793859949",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-02-02T14:08:05.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> we do what we must ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776130,
+			"parentId": 0,
+			"url": "https://mastodon.social/@khalidabuhakmeh/111862308143449242",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/720e72bbde8606751a57ba8eac69b0db319ac174571c9c5322ea0bc05c5c7e19.png"
+			},
+			"date": "2024-02-02T14:16:04.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Great post. I’d like to see the aspirational idea you have come to fruition. </p><p>The biggest issue with web component approaches, even the good ones like WebC, is that they still require a build step. This limits them to folks who are comfortable with JS build chains.</p><p>I want to spread the love to Django, ASP.NET, Laravel, Rails, and all future web frameworks.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776129,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862313197798899",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-02-02T14:17:21.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> 100% agree—and I’m hopeful we’ll get there!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776131,
+			"parentId": 0,
+			"url": "https://mastodon.online/@macdonst/111862343408176427",
+			"author": {
+				"name": "Simon MacDonald",
+				"url": "https://mastodon.online/@macdonst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/27aa701b0695944d4243704b267bd92a72519acda749f75738797d44b3ec4f7e.png"
+			},
+			"date": "2024-02-02T14:25:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> the aspirational ideal is literally how Enhance works. You define your template in a function and then it is expanded into light DOM custom elements by the SSR piece.</p><p>We’d love to bring Enhance SSR to other languages so if you are interested in submitting PR’s we’d be happy to work on that with you.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776132,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862346363299651",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-02-02T14:25:47.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.online/@macdonst\" class=\"u-url\">@<span>macdonst</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> ah to be clear I mean that I want the aspirational idea to be a first-party platform feature.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776133,
+			"parentId": 0,
+			"url": "https://mstdn.social/@mattwilcox/111862370994465702",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"date": "2024-02-02T14:32:03.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> Won't lie... it's what keeps me from investigating them any further than \"the theory\". I don't want node/npm on a live server. I have and trust PHP/Composer. Mostly because those are already my dependencies, and I don't want new ones with new exposure surfaces. <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span></p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776135,
+			"parentId": 0,
+			"url": "https://mastodon.social/@nrk9819/111862383450700187",
+			"author": {
+				"name": "nrk 9819",
+				"url": "https://mastodon.social/@nrk9819",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"date": "2024-02-02T14:35:13.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Great write up as always. I've been following your blog and <span class=\"h-card\"><a href=\"https://jakelazaroff.com/ap/blog\" class=\"u-url\">@<span>blog</span></a></span> for a while for web components related articles.</p><p>Also Vercel.js was funny (how we reached from Facebook.js to this point lmao ????????????)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776134,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862389288744579",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-02-02T14:36:42.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@mattwilcox\" class=\"u-url\">@<span>mattwilcox</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> sure, but the repetition issue can be “poorly” hacked together via other mechanisms in your server-rendered stack: <a href=\"https://www.zachleat.com/web/webc-in-eleventy/#a-history-of-component-like-things\"><span>https://www.</span><span>zachleat.com/web/webc-in-eleve</span><span>nty/#a-history-of-component-like-things</span></a> (PHP include comes to mind)</p><p>But, yeah. It’s interesting that non-JS server environments are almost their own slower pace layer in web development. (Ref to <span class=\"h-card\"><a href=\"https://fed.brid.gy/r/https://adactio.com/\" class=\"u-url\">@<span>adactio.com</span></a></span>’s <a href=\"https://adactio.com/journal/19104\"><span>https://</span><span>adactio.com/journal/19104</span><span></span></a>)</p>\n<a href=\"https://www.zachleat.com/web/webc-in-eleventy/\">Adding Components to Eleventy with WebC—zachleat.com</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776136,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862398003922520",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-02-02T14:38:55.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@nrk9819\" class=\"u-url\">@<span>nrk9819</span></a></span> thank you! ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776128,
+			"parentId": 0,
+			"url": "https://mastodon.online/@macdonst/111862403643677254",
+			"author": {
+				"name": "Simon MacDonald",
+				"url": "https://mastodon.online/@macdonst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/27aa701b0695944d4243704b267bd92a72519acda749f75738797d44b3ec4f7e.png"
+			},
+			"date": "2024-02-02T14:40:21.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> Same! I think we need to rally around declarative custom elements since it is too late to change the web component apis.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776188,
+			"parentId": 0,
+			"url": "https://mastodon.social/@khalidabuhakmeh/111862419945554238",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/720e72bbde8606751a57ba8eac69b0db319ac174571c9c5322ea0bc05c5c7e19.png"
+			},
+			"date": "2024-02-02T14:44:29.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.online/@macdonst\" class=\"u-url\">@<span>macdonst</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I work with <a href=\"https://mastodon.social/tags/dotnet\">#<span>dotnet</span></a> and I don't expect MS to give folks a build-step that would allow you to process HTML before the final artifacts are built any time soon :(</p><p>There is a way to possibly do it, but I think it wouldn't be ideal.</p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/dotnet\">dotnet</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776189,
+			"parentId": 0,
+			"url": "https://mastodon.online/@macdonst/111862435380189236",
+			"author": {
+				"name": "Simon MacDonald",
+				"url": "https://mastodon.online/@macdonst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/27aa701b0695944d4243704b267bd92a72519acda749f75738797d44b3ec4f7e.png"
+			},
+			"date": "2024-02-02T14:48:25.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> Is there no render step on the server you can tap into?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776190,
+			"parentId": 0,
+			"url": "https://social.worgames.com/@tomwor/111862530475509638",
+			"author": {
+				"name": "tomwor",
+				"url": "https://social.worgames.com/@tomwor",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/11542bb7464632550ebec32e4138e4aee590a00004fb1cc3d3365a57b384281d.png"
+			},
+			"date": "2024-02-02T15:12:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Vercel.js - love it. ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776191,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@hasanhaja/111862608776283971",
+			"author": {
+				"name": "Hasan Ali",
+				"url": "https://fosstodon.org/@hasanhaja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/53b551a370dc4bdd73533caca93a84206a320110ee47cdf95b1face4a05a5ced.png"
+			},
+			"date": "2024-02-02T15:32:31.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Loved the talk when I first saw it and I’m really glad there’s a written version of it ????????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776192,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862613530534598",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-02-02T15:33:43.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@hasanhaja\" class=\"u-url\">@<span>hasanhaja</span></a></span> it only took me 7 or 8 months to get it on the web site ???? (thank you!)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1831974,
+			"parentId": 0,
+			"url": "https://front-end.social/@mayank/112535977888685360",
+			"author": {
+				"name": "Mayank",
+				"url": "https://front-end.social/@mayank",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/23d26bb54e59d131bc1b271cbd85976de8066354860b5f7aa11d3ae9433cee06.jpg"
+			},
+			"date": "2024-05-31T13:39:08.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> yea totally. declarative custom elements will need way more functionality, but we can start small</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1849520,
+			"parentId": 0,
+			"url": "https://social.vivaldi.net/@rawrmonstar/113210644497507474",
+			"author": {
+				"name": "Tegan",
+				"url": "https://social.vivaldi.net/@rawrmonstar",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/35e612d95183a00be075334391e0ea02e99146825b8b45a22f9124c43d3aedaa.jpg"
+			},
+			"date": "2024-09-27T17:15:44.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I guess i don’t see much of a difference between server side rendering a solid component with what webc does. They both are build steps, It’s also hard for me to see what webc gets out of rendering to a web component instead of just rendering the underlying dom.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1849522,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/113211010359358173",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-09-27T18:48:46.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://social.vivaldi.net/@rawrmonstar\" class=\"u-url\">@<span>rawrmonstar</span></a></span> I think I see what you’re saying. Fwiw, WebC components aren’t required to be Web Components—they can generate HTML without custom elements too. Moreso, WebC can generate a standalone custom element with 0 library JavaScript overhead.</p>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1776116,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109376002033840591",
+			"date": "2024-02-02T14:08:33.000Z",
+			"author": {
+				"name": "Jeff",
+				"url": "https://hachyderm.io/@jeffinmotion",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0dac888b4be71a99339cc0f561af2161a28b7e8756aff159452d08e86e41c5d7.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776137,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109348236348898875",
+			"date": "2024-02-02T14:42:38.000Z",
+			"author": {
+				"name": "Charlie Park",
+				"url": "https://xoxo.zone/@charliepark",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7671c8d34883091e046568cc9c0ccb0f2a83560d3234e92ccad7e64f42c23851.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776138,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-111783049648378256",
+			"date": "2024-02-02T14:42:39.000Z",
+			"author": {
+				"name": "nrk 9819",
+				"url": "https://mastodon.social/@nrk9819",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776139,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109293637138050619",
+			"date": "2024-02-02T14:42:41.000Z",
+			"author": {
+				"name": "meduz'",
+				"url": "https://m.nintendojo.fr/@meduz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c414b3e78be828a3ca1d05cd22c79f8465c9cc19b81e96fae76ede2b6b8d3b61.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776140,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-110002174274940959",
+			"date": "2024-02-02T14:42:44.000Z",
+			"author": {
+				"name": "Jay Contonio",
+				"url": "https://pdx.social/@jcontonio",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ca0aaaa6570b7d794f261284dae9f4ece9d4632b2396610a29c443c0afa5d812.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776141,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109310002203135908",
+			"date": "2024-02-02T14:42:45.000Z",
+			"author": {
+				"name": "Dan Jacob",
+				"url": "https://masto.ai/@danjac",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0c2cba37b096d7046a5e964ccbcd8e392547a4200b79e6b0201acf725e8a22bf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776142,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-110345656269110489",
+			"date": "2024-02-02T14:42:47.000Z",
+			"author": {
+				"name": "Nick Tune ????????",
+				"url": "https://hachyderm.io/@nick_tune",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8710dc39ec73325afe625c25356c5887cd4ebad7c7f26cb76a23663d4077b9e9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776143,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109779197194734817",
+			"date": "2024-02-02T14:42:47.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://mastodon.social/@JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776144,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109722243220307495",
+			"date": "2024-02-02T14:42:49.000Z",
+			"author": {
+				"name": "Peter",
+				"url": "https://social.lol/@peterbinks",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c42edcafe37d3e4a8e344f590ce931a4aa1153a44eefea9a99f8aad5c7c64195.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776145,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109303534990228726",
+			"date": "2024-02-02T14:42:49.000Z",
+			"author": {
+				"name": "Piper Haywood",
+				"url": "https://vis.social/@piper",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/49a1a36974fdd3f9ea6b4f70abd5d9d5ff9b91d1fce46400494cd97fec6e4549.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776146,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-111608497084821601",
+			"date": "2024-02-02T14:42:51.000Z",
+			"author": {
+				"name": "Eric McCormick",
+				"url": "https://hachyderm.io/@edm00se",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a19102137f1a9e9f57a21303f4941c7ae09249ffb6722a303f3955a08ef5fbb1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776147,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109389177753075413",
+			"date": "2024-02-02T14:42:51.000Z",
+			"author": {
+				"name": "Heather Buchel",
+				"url": "https://hachyderm.io/@hbuchel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d5e012d63700bb82046a3a800c5fdba573e37d0089487707ee246351b053c88a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776148,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109752710321900010",
+			"date": "2024-02-02T14:42:53.000Z",
+			"author": {
+				"name": "Jack Wellborn",
+				"url": "https://mastodon.social/@jackwellborn",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4a1b4264bf19db926efffaad720b6b710169300ea59e4c6b56f8e516ce7c1419.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776149,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109293803163677177",
+			"date": "2024-02-02T14:42:54.000Z",
+			"author": {
+				"name": "Aram Zucker-Scharff",
+				"url": "https://indieweb.social/@Chronotope",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8ddf6cfdad3666f80a3098af2b8ce839c544f58dd3232b2e3ca96b50828b4e26.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776177,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109295176902307654",
+			"date": "2024-02-02T15:15:06.000Z",
+			"author": {
+				"name": "Ashur Cabrera",
+				"url": "https://front-end.social/@ashur",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/47f9e3cea1d21932327b192e59a0faf2fb69a491bb0f1df89b0ed69800960171.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776178,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109360965822137712",
+			"date": "2024-02-02T15:15:07.000Z",
+			"author": {
+				"name": "stffndk",
+				"url": "https://mastodon.social/@stffndk",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e7372ec3d6db42b83d342eb61e04a5b4958330c31ba1d132b8aba038f133b2f8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776179,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109338594738192751",
+			"date": "2024-02-02T15:15:08.000Z",
+			"author": {
+				"name": "James Scholes",
+				"url": "https://dragonscave.space/@jscholes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7542030e9354b280271c6439f57b612ae8a937acb549bebb6b0f24326df7eb0f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776180,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-111596153290407379",
+			"date": "2024-02-02T15:15:10.000Z",
+			"author": {
+				"name": "Bruno B. de Souza",
+				"url": "https://mozilla.social/@knuxbbs",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776193,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109322028040622495",
+			"date": "2024-02-02T15:36:01.000Z",
+			"author": {
+				"name": "cthos ????",
+				"url": "https://mastodon.cthos.dev/@cthos",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/16d45e0bfdca263f58a19f9e2cce4aa69fdac43001dd4eac276a4f3bfd635024.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776194,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109313345749203632",
+			"date": "2024-02-02T15:36:01.000Z",
+			"author": {
+				"name": "Baldur Bjarnason",
+				"url": "https://toot.cafe/@baldur",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cc8554ba583793b416ccbb17bc1d574b8c60c5e53c11aabef6c9a8f806a5d4e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776195,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109698107255349105",
+			"date": "2024-02-02T15:36:03.000Z",
+			"author": {
+				"name": "Hasan Ali",
+				"url": "https://fosstodon.org/@hasanhaja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/53b551a370dc4bdd73533caca93a84206a320110ee47cdf95b1face4a05a5ced.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776196,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109303181435692045",
+			"date": "2024-02-02T15:36:05.000Z",
+			"author": {
+				"name": "Adam Stoddard",
+				"url": "https://mastodon.social/@aaadaaam",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4de951e5ff3c0f66b1e465b0c25a3e386ba491daa412e4e78428e6a1f3866863.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776207,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-111145142301817092",
+			"date": "2024-02-02T16:09:27.000Z",
+			"author": {
+				"name": "Derek",
+				"url": "https://mastodon.social/@AbsolutelyDerek",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776208,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-110873152954957611",
+			"date": "2024-02-02T16:09:27.000Z",
+			"author": {
+				"name": "Nathan",
+				"url": "https://lounge.town/@nathanu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d35a08e55cdac10c3eec3674f3b7acaf1e7cbb1faa3c70b3e000e8798879944f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776209,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109292553200066437",
+			"date": "2024-02-02T16:09:29.000Z",
+			"author": {
+				"name": "tbeseda",
+				"url": "https://indieweb.social/@tbeseda",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/feecc78cf7fcc132ad3df322eac5e008d32fa9ee2bd3a34792613feeb101452d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776217,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109653863510937068",
+			"date": "2024-02-02T16:44:30.000Z",
+			"author": {
+				"name": "*",
+				"url": "https://post.lurk.org/@computersandblues",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8b5fcebb8babd1a0b9eb76387008ca669897469f91b3ab227b2f3562356123d8.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776218,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-111862795965237020",
+			"date": "2024-02-02T16:44:31.000Z",
+			"author": {
+				"name": "Jon Maskrey",
+				"url": "https://mastodon.social/@jonmaskrey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/475c250ea985bdffb37b4abfa1c11d7571a9ab27da0e9cc742f1cd373f720689.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776231,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109292524634474961",
+			"date": "2024-02-02T17:53:28.000Z",
+			"author": {
+				"name": "Alistair Shepherd",
+				"url": "https://mastodon.scot/@accudio",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8f911a0013ec407e4ff84660dea4c1ffa449d75ffc8316eb71736c148e27d15b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776232,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109561357529945170",
+			"date": "2024-02-02T17:53:28.000Z",
+			"author": {
+				"name": "Serhiy Barhamon",
+				"url": "https://mas.to/@barhamon",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/90446e6e96e89ae5678b4e8da177c89eb29c3280efdd13b65b795c93f97b565b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776235,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-111686891635792460",
+			"date": "2024-02-02T18:24:15.000Z",
+			"author": {
+				"name": "Holger Hellinger",
+				"url": "https://hellinger.wtf/@holger",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f5a7a1c27f4fdc3f49f4790d4c6f374b71ef69eace4ecb514d7f83a08daec6c4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776236,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109287954905181617",
+			"date": "2024-02-02T18:24:24.000Z",
+			"author": {
+				"name": "Dave ???? :cursor_pointer:",
+				"url": "https://mastodon.design/@DavidDarnes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/54c31064cbea0c571492352447c7f29a6460d81d990c20f2ab620efadfe40649.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776237,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109527744416567841",
+			"date": "2024-02-02T18:24:26.000Z",
+			"author": {
+				"name": "Pär Björklund",
+				"url": "https://hachyderm.io/@Paxxi",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/185888228c02edc294569f7a39a278991f55d8b75f5b2cfa136a9261f22068d5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776238,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#favorited-by-109326652289622379",
+			"date": "2024-02-02T18:24:27.000Z",
+			"author": {
+				"name": "michel",
+				"url": "https://pouet.chapril.org/@ms_michel",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776253,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862980380618195#favorited-by-109296176354255607",
+			"date": "2024-02-02T18:54:06.000Z",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/720e72bbde8606751a57ba8eac69b0db319ac174571c9c5322ea0bc05c5c7e19.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1831973,
+			"url": "https://fediverse.zachleat.com/@zachleat/112535963879519762#favorited-by-112462864608665271",
+			"date": "2024-05-31T13:38:44.000Z",
+			"author": {
+				"name": "Mayank",
+				"url": "https://front-end.social/@mayank",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/23d26bb54e59d131bc1b271cbd85976de8066354860b5f7aa11d3ae9433cee06.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1849524,
+			"url": "https://fediverse.zachleat.com/@zachleat/113210587462270413#favorited-by-110107164987417242",
+			"date": "2024-09-27T19:45:26.000Z",
+			"author": {
+				"name": "Luke",
+				"url": "https://toot.wales/@Lukew",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7d720f01e04a308abb672dbf44d44195c0f892d1b8e1b701c891f92f3883f42.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1849526,
+			"url": "https://fediverse.zachleat.com/@zachleat/113210587462270413#favorited-by-109792465522084579",
+			"date": "2024-09-27T19:45:27.000Z",
+			"author": {
+				"name": "Tegan",
+				"url": "https://social.vivaldi.net/@rawrmonstar",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/35e612d95183a00be075334391e0ea02e99146825b8b45a22f9124c43d3aedaa.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1776117,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109296176354255607",
+			"date": "2024-02-02T14:08:33.000Z",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/720e72bbde8606751a57ba8eac69b0db319ac174571c9c5322ea0bc05c5c7e19.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776150,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109880524666896717",
+			"date": "2024-02-02T14:42:55.000Z",
+			"author": {
+				"name": "Garrow Bregenza :lattentacle:",
+				"url": "https://mastodon.social/@garrowbregenza",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0b0eec5dad367442a57499462b52e08d5df163dca902d380280f3edc4087e25a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776151,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-111783049648378256",
+			"date": "2024-02-02T14:42:56.000Z",
+			"author": {
+				"name": "nrk 9819",
+				"url": "https://mastodon.social/@nrk9819",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776152,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109523920613332703",
+			"date": "2024-02-02T14:42:58.000Z",
+			"author": {
+				"name": "Repeter wants an Ukr victory",
+				"url": "https://techhub.social/@psvensson",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9c07084369708cb6cd7ceb131f9d18a469bcf698e609582663cc86d7ca07a5da.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776153,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109310002203135908",
+			"date": "2024-02-02T14:42:58.000Z",
+			"author": {
+				"name": "Dan Jacob",
+				"url": "https://masto.ai/@danjac",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0c2cba37b096d7046a5e964ccbcd8e392547a4200b79e6b0201acf725e8a22bf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776154,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-110345656269110489",
+			"date": "2024-02-02T14:43:00.000Z",
+			"author": {
+				"name": "Nick Tune ????????",
+				"url": "https://hachyderm.io/@nick_tune",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8710dc39ec73325afe625c25356c5887cd4ebad7c7f26cb76a23663d4077b9e9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776155,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109779197194734817",
+			"date": "2024-02-02T14:43:01.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://mastodon.social/@JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776156,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109407207285953686",
+			"date": "2024-02-02T14:43:02.000Z",
+			"author": {
+				"name": "Kevin C. Tofel",
+				"url": "https://hachyderm.io/@kevinctofel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/357a487cf20d647d3e2e487c244773c8bb97dab30faf400e9c7ca8d609c41a74.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776157,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109361033339461107",
+			"date": "2024-02-02T14:43:03.000Z",
+			"author": {
+				"name": "Ryan Townsend",
+				"url": "https://webperf.social/@ryantownsend",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d4a23c1b3efe9ee5fd0b66f4814fedbdc05266687eaf1b907cac6fe9bcf7518f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776158,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109293803163677177",
+			"date": "2024-02-02T14:43:04.000Z",
+			"author": {
+				"name": "Aram Zucker-Scharff",
+				"url": "https://indieweb.social/@Chronotope",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8ddf6cfdad3666f80a3098af2b8ce839c544f58dd3232b2e3ca96b50828b4e26.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776181,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109296199665384546",
+			"date": "2024-02-02T15:15:10.000Z",
+			"author": {
+				"name": "Richard MacManus",
+				"url": "https://mastodon.social/@ricmac",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ab221a8d7145151faa4499cc3a190863728697ec4fe3094965bfd451cd78cdcd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776197,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109383215820991530",
+			"date": "2024-02-02T15:36:05.000Z",
+			"author": {
+				"name": "Bob Monsour",
+				"url": "https://indieweb.social/@bobmonsour",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b29612c57f91493bea28f611bfba470ca27d73af355df4040d9dc121940e1c07.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776198,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109698107255349105",
+			"date": "2024-02-02T15:36:07.000Z",
+			"author": {
+				"name": "Hasan Ali",
+				"url": "https://fosstodon.org/@hasanhaja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/53b551a370dc4bdd73533caca93a84206a320110ee47cdf95b1face4a05a5ced.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776210,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-111145142301817092",
+			"date": "2024-02-02T16:09:30.000Z",
+			"author": {
+				"name": "Derek",
+				"url": "https://mastodon.social/@AbsolutelyDerek",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776230,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109332518937677894",
+			"date": "2024-02-02T17:19:10.000Z",
+			"author": {
+				"name": "Doug Parker ????️",
+				"url": "https://techhub.social/@develwithoutacause",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776233,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109286956268376133",
+			"date": "2024-02-02T17:53:30.000Z",
+			"author": {
+				"name": "Jason Garber",
+				"url": "https://mastodon.cc/@jgarber",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bdb2897cbb035e7a806821d85c060a5d1cd6706b8c0a6c61b2816c0eb7d03dac.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776239,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109606268895857560",
+			"date": "2024-02-02T18:24:28.000Z",
+			"author": {
+				"name": "Cory :prami_pride_demi:",
+				"url": "https://social.lol/@cory",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f160da467f9547a3cce30e77f4adcdb163b293ad0dc3d7706ac9f3efe9fba2a7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776240,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-111686891635792460",
+			"date": "2024-02-02T18:24:30.000Z",
+			"author": {
+				"name": "Holger Hellinger",
+				"url": "https://hellinger.wtf/@holger",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f5a7a1c27f4fdc3f49f4790d4c6f374b71ef69eace4ecb514d7f83a08daec6c4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776241,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109527744416567841",
+			"date": "2024-02-02T18:24:31.000Z",
+			"author": {
+				"name": "Pär Björklund",
+				"url": "https://hachyderm.io/@Paxxi",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/185888228c02edc294569f7a39a278991f55d8b75f5b2cfa136a9261f22068d5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776242,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109287954905181617",
+			"date": "2024-02-02T18:24:32.000Z",
+			"author": {
+				"name": "Dave ???? :cursor_pointer:",
+				"url": "https://mastodon.design/@DavidDarnes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/54c31064cbea0c571492352447c7f29a6460d81d990c20f2ab620efadfe40649.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776243,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862260851641286#reblogged-by-109326652289622379",
+			"date": "2024-02-02T18:24:33.000Z",
+			"author": {
+				"name": "michel",
+				"url": "https://pouet.chapril.org/@ms_michel",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		}
+	]
+}

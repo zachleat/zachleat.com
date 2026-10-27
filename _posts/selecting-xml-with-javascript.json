@@ -1,0 +1,96 @@
+{
+	"disqus": {
+		"path": "/web/selecting-xml-with-javascript/",
+		"commentCount": 8,
+		"comments": [
+			{
+				"postId": "887461834",
+				"parentPostId": null,
+				"date": "2008-08-12T02:43:58Z",
+				"author": "Peter",
+				"avatar": "https://www.gravatar.com/avatar/3f6b0aeeb32bb4beeb40f44f02b74428?d=mm&s=60",
+				"message": "<p>I recently volunteered myself to make a little web mashup for someone.  I'm not really a web developer.  I just finally reached the point of testing it on Other Browsers, blissfully unaware of this particular little feature...</p><p>The comment about being cold and naked in a snowstorm was much appreciated ;-)</p><p>As was the technical stuff, of course.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461838",
+				"parentPostId": null,
+				"date": "2008-08-12T03:07:41Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>My pleasure.  It's nice to see someone take the time to say thanks :)</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461835",
+				"parentPostId": null,
+				"date": "2008-11-04T03:34:30Z",
+				"author": "Mamta",
+				"avatar": "https://www.gravatar.com/avatar/9db6afe925447f7ba9ff20baf68caf02?d=mm&s=60",
+				"message": "<p>This was really helpful. saved my day. Thanks a lot!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461839",
+				"parentPostId": null,
+				"date": "2010-08-31T06:09:01Z",
+				"author": "teddy",
+				"avatar": "https://www.gravatar.com/avatar/6778762d4d48589818596643b6c1c40a?d=mm&s=60",
+				"message": "<p>Shameful plug for Sarissa!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461841",
+				"parentPostId": null,
+				"date": "2010-08-31T07:44:43Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>If you'd like me to do a post on how Sarissa handles this internally, let me know.  If we don't use tools, we're just animals.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461837",
+				"parentPostId": null,
+				"date": "2011-06-24T14:00:12Z",
+				"author": "alex",
+				"avatar": "https://www.gravatar.com/avatar/e9d76f7bdfa9c564d3f18d04432751e0?d=mm&s=60",
+				"message": "<p>out of curiosity, what software do you use to edit your xml files? I am tried a few free products and have trialled liquid xml (<a href=\"http://www.liquid-technologies.com/xml-editor.aspx)\" rel=\"nofollow noopener\" title=\"http://www.liquid-technologies.com/xml-editor.aspx)\">http://www.liquid-technolog...</a> also, do you have a preference?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461840",
+				"parentPostId": null,
+				"date": "2011-06-24T16:57:48Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>To be honest, I do so little raw XML editing anymore that I'd probably just use Notepad++ (or Sublime Text 2). Can't remember the last time I edited an XML file though, not counting XHTML of course.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461842",
+				"parentPostId": null,
+				"date": "2011-08-12T08:50:24Z",
+				"author": "Seth Brame",
+				"avatar": "https://www.gravatar.com/avatar/07efba2f8e98d5cd61165802fe2ec648?d=mm&s=60",
+				"message": "<p>I'm still learning from you, but I'm making my way to the top as well. I certainly love reading all that is posted on your site.Keep the stories coming. I liked it!</p>",
+				"replies": []
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 700693,
+			"parentId": 0,
+			"url": "https://inneka.com/programming/xml/xml-parser-for-javascript-closed/",
+			"author": {
+				"name": "Johnny Vekic",
+				"url": "https://inneka.com/author/johnny/",
+				"avatarUrl": "https://avatars.webmention.io/secure.gravatar.com/6c60d8b4de1926133be7783c3fa6bb434f933238a1164e8e1bd754fa1bd5c5d4.jpg"
+			},
+			"date": "2019-09-28T17:24:57.000Z",
+			"content": "<h2>XML parser for JavaScript [closed]</h2>\n<pre>\nI am looking for a good JavaScript library for parsing XML data. It should be much easier to use than the built-in XML DOM parsers bundled with the browsers.\nI got spoiled a bit working with JSON and am looking forward to something on similar lines for XML.\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>I use <a href=\"http://jquery.com/\">jQuery</a> for this.  Here is a good example:</p>\n<p>(EDIT: Note – the following blog seems to have gone away.)</p>\n<p><a href=\"http://blog.reindel.com/2007/09/24/jquery-and-xml-revisited/\">http://blog.reindel.com/2007/09/24/jquery-and-xml-revisited/</a></p>\n<p>There are also lots and lots of good examples in the <a href=\"http://jquery.com/\">jQuery</a> documentation:</p>\n<p><a href=\"http://www.webmonkey.com/tutorial/Easy_XML_Consumption_using_jQuery?oldid=20032\">http://www.webmonkey.com/tutorial/Easy_XML_Consumption_using_jQuery?oldid=20032</a></p>\n<p>EDIT: Due to the blog for my primary example going away, I wanted to add another example that shows the basics and helps with namespace issues:</p>\n<p><a href=\"http://www.zachleat.com/web/selecting-xml-with-javascript/\">http://www.zachleat.com/web/selecting-xml-with-javascript/</a></p>\n\n<h3>Answer 2:</h3>\n\n<p><strong>Disclaimer:</strong> I am the author if the open-source <a href=\"https://github.com/highsource/jsonix\">Jsonix</a> library which <em>may</em> be suitable for the task.</p>\n<p>A couple of years ago I was also looking for a good XML&lt;-&gt;JSON parsing/serialization library for JavaScript. I needed to process XML documents conforming to rather complex XML Schemas. In Java, I routinely use <a href=\"https://jaxb.java.net/\">JAXB</a> for the task so I was looking for something similar:</p>\n<blockquote>\n<p><a href=\"https://stackoverflow.com/questions/3819192/is-there-a-javascript-api-for-xml-binding-analog-to-jaxb-for-java\">Is there a JavaScript API for XML binding – analog to JAXB for Java?</a></p>\n</blockquote>\n<p>I failed to find such a tool back then.</p>\n<a href=\"https://inneka.com/programming/xml/getting-started-with-xsd-validation-with-net/\">\n<span>Related:</span>  <span>Getting started with XSD validation with .NET</span>\n</a>\n<p>So I wrote <a href=\"https://github.com/highsource/jsonix\"><strong>Jsonix</strong></a> which I consider to be a JAXB analog for JavaScript.</p>\n<p>You may find <a href=\"https://github.com/highsource/jsonix\">Jsonix</a> suitable, if you’re interested in the following features:</p>\n<ul><li>XML&lt;-&gt;JSON conversion is based on a <strong>declaraive mapping</strong> between XML and JSON structures</li>\n<li>This <strong>mapping</strong> can be <strong>generated from an XML Schema</strong> or written manually</li>\n<li>\n<strong>Bidirectional</strong> – supports parsing as well as serialization (or unmarshalling/marshalling in other terms).</li>\n<li>Support <strong>elements</strong>, <strong>attributes</strong> and also considers <strong>namespaces</strong> defined in the XML document.</li>\n<li>Strictly typed.</li>\n<li>Strictly structured.</li>\n<li>Support almost all of the <strong>XML Schema built-in types</strong> (including special types like <code>QName</code>).</li>\n<li>Works in <strong>browsers</strong> as well as <strong>Node.js</strong>, also compatible to <a href=\"http://requirejs.org/\"><strong>RequireJS</strong></a>/<a href=\"https://github.com/amdjs/amdjs-api/wiki/AMD\"><strong>AMD</strong></a> (also to <a href=\"https://github.com/jrburke/amdefine\"><code>amdefine</code></a> in Node.js)</li>\n<li>Has <a href=\"http://confluence.highsource.org/display/JSNX/User+Guide\">extensive documentation</a>.</li>\n</ul><p>However, Jsonix <em>may be an overkill</em>, if your XML is rather simple, does not have an XML Schema or if you’re not interested in strict typing or structures. Check your requirements.</p>\n<p><strong>Example</strong></p>\n<p>Try it <a href=\"http://jsfiddle.net/lexi/LP3DC/\">in JSFiddle</a>.</p>\n<p>You can take a <a href=\"http://www.w3.org/TR/xmlschema-0/#po.xsd\">purchase order schema</a> and generate a mapping for it using the following command:</p>\n\n\n\n\n\n<pre><code>java -jar node_modules/jsonix/lib/jsonix-schema-compiler-full.jar\n  -d mappings -p PO purchaseorder.xsd\n</code></pre>\n<p>You’ll get a <code>PO.js</code> file which describes mappings between XML and JavaScript structures. Here’s a snippet from this mapping file to give you an impression:</p>\n<pre><code>var PO = {\n    name: 'PO',\n    typeInfos: [{\n        localName: 'PurchaseOrderType',\n        propertyInfos: [{\n            name: 'shipTo',\n            typeInfo: 'PO.USAddress'\n        }, {\n            name: 'billTo',\n            typeInfo: 'PO.USAddress'\n        }, {\n            name: 'comment'\n        }, {\n            name: 'orderDate',\n            typeInfo: 'Calendar',\n            type: 'attribute'\n        }, ...]\n    }, {\n        localName: 'USAddress',\n        propertyInfos: [ ... ]\n    }, ...],\n    elementInfos: [{\n        elementName: 'purchaseOrder',\n        typeInfo: 'PO.PurchaseOrderType'\n    }, ... ]\n};\n</code></pre>\n<p>Having this mapping file you can parse the <a href=\"https://github.com/highsource/jsonix/blob/master/fiddles/po/demo.response.xml\">XML</a>:</p>\n<pre><code>// First we construct a Jsonix context - a factory for unmarshaller (parser)\n// and marshaller (serializer)\nvar context = new Jsonix.Context([PO]);\n\n// Then we create a unmarshaller\nvar unmarshaller = context.createUnmarshaller();\n\n// Unmarshal an object from the XML retrieved from the URL\nunmarshaller.unmarshalURL('po.xml',\n    // This callback function will be provided\n    // with the result of the unmarshalling\n    function (unmarshalled) {\n        // Alice Smith\n        console.log(unmarshalled.value.shipTo.name);\n        // Baby Monitor\n        console.log(unmarshalled.value.items.item[1].productName);\n    });\n</code></pre>\n<p>Or serialize your JavaScript object as XML:</p>\n<pre><code>// Create a marshaller\nvar marshaller = context.createMarshaller();\n\n// Marshal a JavaScript Object as XML (DOM Document)\nvar doc = marshaller.marshalDocument({\n    name: {\n        localPart: \"purchaseOrder\"\n    },\n    value: {\n        orderDate: { year: 1999, month: 10, day: 20 },\n        shipTo: {\n            country: \"US\",\n            name: \"Alice Smith\",\n            street: \"123 Maple Street\",\n            city: \"Mill Valley\",\n            state: \"CA\",\n            zip: 90952\n        },\n        billTo: { /* ... */ },\n        comment: 'Hurry, my lawn is going wild!',\n        items: { /* ... */ }\n    }\n});\n</code></pre>\n<p>You can try it <a href=\"http://jsfiddle.net/lexi/LP3DC/\">in JSFiddle</a> to see how it works in practice.</p>\n<a href=\"https://inneka.com/programming/xml/best-xml-parser-for-java-closed-2/\">\n<span>Related:</span>  <span>Best XML parser for Java [closed]</span>\n</a>\n<p><strong>Additional disclaimer:</strong> this answer is high-voted because of the <a href=\"https://meta.stackoverflow.com/questions/276942/correcting-my-own-spam-answer-is-it-fine-now\">following discussion</a> on meta. <em>So please be aware of the “meta-effect”.</em> High votes here do not necessarily mean that Jsonix is good, applicable or recommended by the community. Do not be mislead by the high votes.</p>\n\n<h3>Answer 3:</h3>\n\n<p>If your XML is in a simple format you may look at <a href=\"http://jquery.com\">jQuery</a> and the <a href=\"http://plugins.jquery.com/project/xml2json\">XML to JSON plugin</a> or the <a href=\"http://plugins.jquery.com/project/xmlObjectifier\">xmlObjectifier</a>.</p>\n<p>For a straight parser you may want to look at <a href=\"http://xmljs.sourceforge.net/\">XML for &lt;SCRIPT&gt;</a>.</p>\n\n<h3>Answer 4:</h3>\n\n<p>Have you tried <a href=\"http://xmljs.sourceforge.net/\">XML for SCRIPT</a>. I have to admit, that I have never used it personally, but I have heard/read a few good things about it.</p>\n<p>Give it a try and maybe share your experience here?</p>\n\n\n<h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://bookziz.com/\">Ebook Reviews</a></li>\n<li><a href=\"https://pes4fun.com/\">PES Matches, Skills &amp; News</a></li>\n</ul>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

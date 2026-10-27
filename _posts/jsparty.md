@@ -1,0 +1,28 @@
+---
+title: "Spicy fonts and static sites \U0001F336️—JS Party #79"
+date: 2019-06-10
+categories:
+  - font-loading
+  - presentations
+tags:
+  - external
+  - font-loading
+  - eleventy
+  - speaking
+  - audio
+  - jsparty
+metadata:
+  speaking:
+    type: podcast
+external_url: 'https://changelog.com/jsparty/79'
+medialength: 67 min
+---
+
+Listen to the Interview (1:06:38) <span class="tag audio">Audio</span> on:
+
+* [changelog.com](https://changelog.com/jsparty/79)
+
+## Even More JSParty
+
+{% assign relatedTag = "jsparty" %}
+{% include "relatedposts.html" %}

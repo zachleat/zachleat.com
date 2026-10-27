@@ -1,0 +1,39 @@
+---
+title: An Official* Logo for HTML
+date: 2026-02-19
+seo:
+  openGraphBackgroundImage: /og/sources/paintbrushes.jpg
+  openGraphAlt: Stacked paintbrushes of various bright colors drying.
+posterImage:
+  showOnPage: true
+  height: 14em
+  name: RhondaK
+  source: https://unsplash.com/photos/assorted-color-paintbrushes-_Yc7OtfFn-0
+---
+\*_Not official._
+
+I was working on my slide deck for the [upcoming State of the Browser conference](https://2026.stateofthebrowser.com/) and ran into what I would classify as a recurring issue: HTML needs a logo. There isn’t a broadly accepted official logo for (version-independent) HTML. There _is_ a logo for HTML 5, but that versioned marketing term has long fallen out of regular use (and was introduced 18 years ago).
+
+This is a community solved problem in both the CSS and JavaScript spaces!
+
+- CSS: {% icon "fab:css" %}, [relevant discussion on `CSS-Next`](https://github.com/CSS-Next/css-next/issues/105).
+- JS: {% icon "fab:js" %}, [relevant discussion on `voodootikigod/logo.js`](https://github.com/voodootikigod/logo.js).
+- HTML 5: {% icon "fab:html5" %}, [more info on w3.org](https://www.w3.org/html/logo/).
+
+I wish the classic orange badge hadn’t included a version number, but alas.
+
+Anyway, I very quickly [threw my hat into the ring](https://fediverse.zachleat.com/@zachleat/116093900452223373
+) and immediately recognized a [much better option from Sam Stephenson](https://indieweb.social/@sstephenson/116098428280403793) [{% icon "fas:user" %}`sls.name`](https://sls.name/) that I’ll be considering canon moving forward (and hopefully this blog post puts some weight behind it for others too).
+
+Here’s what it looks like rendered in your web browser:
+
+<div class="flex flex-center"><a href="https://indieweb.social/@sstephenson/116098428280403793" style="all:initial;cursor:pointer;font-size:2rem;width:4em;height:4em;color:blue;text-decoration:underline;display:flex;align-items:center;justify-content:center;background:#ccc;border:.5em outset #aaa;font-weight:900;">HTML</a></div>
+
+I love the nod to the classic unvisited link color and the heavy outset border that doubles as angle brackets with the right head tilt.
+
+If you’re interested in the source code, the HTML-only (copy-paste friendly) source code is included below [_(and also on Codepen)_](https://codepen.io/zachleat/pen/azZggqZ):
+
+```html
+<a href="https://indieweb.social/@sstephenson/116098428280403793" style="all:initial;cursor:pointer;font-size:2rem;width:4em;height:4em;color:blue;text-decoration:underline;display:flex;align-items:center;justify-content:center;background:#ccc;border:.5em outset #aaa;font-weight:900;">HTML</a>
+```
+

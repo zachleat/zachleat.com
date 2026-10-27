@@ -1,0 +1,198 @@
+{
+	"disqus": {
+		"path": "/web/font-smooth/",
+		"commentCount": 7,
+		"comments": [
+			{
+				"postId": "3362094804",
+				"parentPostId": null,
+				"date": "2017-06-15T03:05:05Z",
+				"author": "Šime Vidas",
+				"avatar": "https://www.gravatar.com/avatar/a9db2cbc6d4e589aec2d25f67771b85e?d=mm&s=60",
+				"message": "<p>Looking at that media query, I wonder what percentage of Macs have DPR &lt; 2 nowadays.</p>",
+				"replies": [
+					{
+						"postId": "3366291300",
+						"parentPostId": "3362094804",
+						"date": "2017-06-17T04:45:14Z",
+						"author": "Markus Stange",
+						"avatar": "https://www.gravatar.com/avatar/573334b6a2998387f669909419f276f4?d=mm&s=60",
+						"message": "<p>Among Firefox users, that number is around 80%: <a href=\"https://people-mozilla.org/~danderson/moz-gfx-telemetry/www/#view=mac\" rel=\"nofollow noopener\" title=\"https://people-mozilla.org/~danderson/moz-gfx-telemetry/www/#view=mac\">https://people-mozilla.org/...</a></p>",
+						"replies": [
+							{
+								"postId": "3397861543",
+								"parentPostId": "3366291300",
+								"date": "2017-07-03T16:59:17Z",
+								"author": "Šime Vidas",
+								"avatar": "https://www.gravatar.com/avatar/a9db2cbc6d4e589aec2d25f67771b85e?d=mm&s=60",
+								"message": "<p>Thanks for the info. I assumed it was way lower.</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "3365648033",
+				"parentPostId": null,
+				"date": "2017-06-16T19:13:33Z",
+				"author": "Keyamoon",
+				"avatar": "https://www.gravatar.com/avatar/de7203b7fbd535e86264492170e4c7d5?d=mm&s=60",
+				"message": "<p>Subpixel antialiasing adds unexpected extra pixels. It makes the font look bolder than it's supposed to. I've written about this in more detail here: <a href=\"https://icomoon.io/#post/455\" rel=\"nofollow noopener\" title=\"https://icomoon.io/#post/455\">https://icomoon.io/#post/455</a></p>",
+				"replies": [
+					{
+						"postId": "3401302846",
+						"parentPostId": "3365648033",
+						"date": "2017-07-05T14:41:58Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Do take note that the conclusion states “only use font-smooth overrides sparingly and as a last resort” at the end!</p>",
+						"replies": [
+							{
+								"postId": "3401575913",
+								"parentPostId": "3401302846",
+								"date": "2017-07-05T17:29:21Z",
+								"author": "Henry Bley-Vroman",
+								"avatar": "https://www.gravatar.com/avatar/35bf1a675228d3dcb33e81c94818bdb7?d=mm&s=60",
+								"message": "<p>Since the default is subpixel antialiasing, that conclusion is \"add unexpected pixels, except as a last resort.\" Is that the intention?</p>",
+								"replies": [
+									{
+										"postId": "3404577520",
+										"parentPostId": "3401575913",
+										"date": "2017-07-07T14:09:35Z",
+										"author": "zachleat",
+										"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+										"message": "<p>Well, there are a couple of hoops you gotta jump through to reach that quote. Chiefly that subpixel adds “unexpected” pixels, which I don’t agree with. I think some of the context you’re probably missing here is that Keyamoon is likely seeing this conversation through the lens of icon fonts, which have a whole host of different considerations and assumptions that go along with them.</p>",
+										"replies": []
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 683198,
+			"parentId": 0,
+			"url": "http://anna.borsaendeks.com/font-aliasing-or-how-to-rename-a-font-in-css-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "http://anna.borsaendeks.com/author/admin/"
+			},
+			"date": "2019-09-03T14:15:15.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 750867,
+			"parentId": 0,
+			"url": "https://inneka.com/programming/css/thicker-text-after-applying-mix-blend-mode-difference/",
+			"author": {},
+			"date": "2020-02-01T10:19:45.000Z",
+			"content": "Loading... \n         \n        \n        \n<h2>Thicker text after applying mix-blend-mode: difference</h2>\n<pre>\nWhat I want to do, is to create interface that will change color, depending on the color of the background, to make text always readable. So far everything works fine. I've recorded my browser to show a working example:\n\nFrom my research, I've discovered that the best method to achieve this, was to use mix-blend-mode: difference;. The only problem is that for some unknown reasons text is getting bold.\nOriginally I wanted to provide demo but mix-blend-mode is not working in the code snippet. I am not really sure why, I've seen other people using it in demos but for me, it is highlighted with red color.\nAnyway, here is a picture (parts of a screenshot from a browser):\n\nAs you can see, after applying mix-blend-mode: difference; text is clearly thicker. Maybe it is not that big of a deal but when I apply this to smaller texts it looks really bad.\nI know it is stupid but when I was trying to recreate the same effect in photoshop, everything was fine, which means that reversing colors with difference blending mode works correctly.\nMy question is: Can a man get the same result without inscriptions getting thicker (?) or maybe it is meant to work like that and there is nothing I can do?\nI do not want to change the font style to light to force different look.\nEDIT: Ok, so here is a quick example - I do not know why but this time it worked. Last time mix-blend-mode: difference; didn't work at all in demo, that's why I used images to describe my problem. \nAnyway, text on the left and right side is without mix-blend-mode: difference;, to be able to see the difference. What's strange is that white version without mix-blend-mode: difference; seems to look alright - I just discovered it by adding version on a black bg.\n\n\n* {\n  margin: 0;\n  padding: 0;\n}\n.white {\n  background-color: #fff;\n  width: 50%;\n  position: absolute;\n  left: 0;\n  height: 100%;\n}\n.black {\n  background-color: #000;\n  width: 50%;\n  position: absolute;\n  right: 0;\n  height: 100%;\n}\n.normalb {\n  position: absolute;\n  top: 50%;\n  left: 5%;\n  color: #000;\n  font-family: 'Roboto', sans-serif;\n  font-weight: normal;\n  font-size: 42px;\n  transform: translateY(-50%);\n  z-index: 10;\n}\n.normalw {\n  position: absolute;\n  top: 50%;\n  right: 5%;\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n  font-weight: normal;\n  font-size: 42px;\n  transform: translateY(-50%);\n  z-index: 10;\n}\n.difference {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n  color: #fff;\n  font-family: 'Roboto', sans-serif;\n  font-weight: normal;\n  font-size: 42px;\n  mix-blend-mode: difference;\n  z-index: 10;\n}\n\n\nexample\nexample\nexample\n\n\n\nHere is a quick comparison on a screenshot to get a closer look:\n\nHmmm... It looks like after applying mix-blend-mode: difference; to a white text, it is being rendered like white on black but on a white background, which is weird because font remains the same, so by reversing the colors it should look like normal black on white version but it doesn't. I am confused.\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>I have observed that often when applying effect properties or transforms to text: you end up with inconsistent weights appearing across browser and Chrome notoriously appearing “chubby”.</p>\n\n\n\n\n\n\n\n<p>I’ve been able to resolve this issue by applying the following properties to the affected elements.</p>\n<p><code>div{<br />\n    -webkit-font-smoothing: antialiased;<br />\n    -moz-osx-font-smoothing: grayscale;<br />\n}</code></p>\n\n<h3>Answer 2:</h3>\n\n<p>I think this issue it’s not related to the blending mode, but to the way fonts are rendered on the screen.</p>\n<p>When the computer or the browser render them, they “paint” the letters’ edges in a certain way to improve their legibility. They render them differently on white or on black, because the specific needs to facilitate this legibility are different. Anti-aliasing also affects because it also plays with the letterforms edges.</p>\n<p>That’s why they look different even without using the blending effect.</p>\n<p>Unfortunately I had no idea of it and my whole design was based on this 😉</p>\n<p>More info in here: <a href=\"https://www.zachleat.com/web/font-smooth/\">https://www.zachleat.com/web/font-smooth/</a></p>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1159285,
+			"parentId": 0,
+			"url": "https://site-builder.wiki/posts/37410",
+			"author": {},
+			"date": "2021-05-16T02:52:17.000Z",
+			"content": "<h3>font-smoothing</h3>\n<p>WebKit 系のブラウザでフォントにグレイスケールアンチエイリアスを施す。CSS 非標準の機能。(macOS のみ対応／Windows では効果がない)</p>\n<pre>-webkit-font-smoothing: antialiased;</pre>\n<p><strong>参考：</strong></p>\n<p style=\"padding-left:30px;\"><a href=\"https://qiita.com/htomine/items/3086f30ca09adea2f8e0\">font-smoothing で OS X でのフォントのレンダリング方法を調整する – Qiita</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://dainamo.jp/font-smoothing/\">CSS でフォントをきれいでなめらかに見せる方法 | dainamo</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://metrograph.jp/css-font-smoothing/\">フォントのアンチエイリアス設定 | metrograph.jp</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://www.yoheim.net/blog.php?q=20140305\">フォントのアンチエイリアスを変更する | YoheiM .NET</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://blog.universe-web.jp/4689/\">フォントをなめらかに見せる CSS プロパティ font-smoothing が便利！| ゆにメモ</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://qiita.com/hata-mu/items/98df93516cbd3f1cc418\">font-smoothing で文字の野暮ったさとサヨナラして、font-smoothing の謎とコンニチハした – Qiita</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://watablogtravel.com/font-smoothing/\">-webkit-font-smoothing: antialiased; は使わないでおく | Watablog</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://www.zachleat.com/web/font-smooth/\">Laissez-faire Font Smoothing and Anti-aliasing | zachleat.com</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/\">Please Stop “Fixing” Font Smoothing | Usability Post</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth\">font-smooth | MDN</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://caniuse.com/font-smooth\">font-smooth | Can I use Support Table</a></p>\n<p style=\"padding-left:30px;\"><a href=\"https://stackoverflow.com/questions/11487427/is-there-any-font-smoothing-in-google-chrome\">Is there any “font smoothing” in Google Chrome? – Stack Overflow</a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1737297,
+			"parentId": 0,
+			"url": "https://tannerhodges.com/blog/why-is-my-text-blurry/",
+			"author": {},
+			"date": "2023-11-11T16:22:32.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1874097,
+			"parentId": 0,
+			"url": "https://www.zachleat.com/web/font-smooth",
+			"author": {},
+			"date": "2025-01-10T09:27:54.000Z",
+			"content": "<p><em>Recently, Twitter made a global anti-aliasing CSS change to their website. Before writing this post, I didn’t know very much about anti-aliasing—so I decided to learn everything I could about it to better understand the reasoning behind a decision like that. Here’s what I learned.</em></p>\n<p>Controlling anti-aliasing modes in CSS is easy. A little too easy <a href=\"https://en.wikipedia.org/wiki/Tin_foil_hat\"><img src=\"https://www.zachleat.com/web/img/posts/font-smooth/tinfoilhat.png\" alt=\"Tin foil hat\" /></a>. There are two non-standardized, implemented vendor-prefixed properties to control anti-aliasing on text: <code>-webkit-font-smoothing</code> and <code>-moz-osx-font-smoothing</code>. The full browser support matrix is available under <a href=\"http://caniuse.com/#feat=font-smooth\"><code>font-smooth</code>on Can I Use</a>. But before we dive in, let’s level set on what the values for these properties are:</p>\n<ul><li>Disabled:\n<ul><li><code>-webkit-font-smoothing: none</code></li>\n<li>In my tests, Firefox had no mechanism to disable font smoothing ????</li>\n</ul></li>\n<li>Grayscale anti-aliasing (also known as Full pixel or Traditional anti-aliasing)\n<ul><li><code>-webkit-font-smoothing: antialiased;</code></li>\n<li><code>-moz-osx-font-smoothing: grayscale;</code></li>\n</ul></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Subpixel_rendering\">Subpixel anti-aliasing</a>\n<ul><li><code>-webkit-font-smoothing: subpixel-antialiased</code></li>\n</ul></li>\n<li>Let the browser decide (Uses subpixel anti-aliasing when available; this is the default)\n<ul><li><code>-webkit-font-smoothing: auto</code></li>\n<li><code>-moz-osx-font-smoothing: auto</code></li>\n</ul></li>\n</ul><h3>Try it out on this page</h3>\n\n\t\n\t\tAnti-aliasing:\n\t\t<code>None</code>\n\t\t<code>Grayscale</code>\n\t\t<code>Auto</code>\n\t\t<code>Subpixel</code>\n\t\n<h2>What’s the difference between these modes?</h2>\n<p>To get a closer look, I strapped a cheap 25x macro lens to my smartphone and took some pictures. They’re pretty distorted around the edges because of the lens, but they’re good enough to see what’s going on.</p>\n\n  Sorry, your browser doesn't support embedded videos. Try <a href=\"https://www.zachleat.com/web/img/posts/font-smooth/antialiasing.mp4\">downloading it</a> instead.\n<p>When you zoom in on the image, you can see the individual pixels—each with their own red, green, and blue lights! Fascinating!</p>\n<p>Compare the three different modes below. <em>These photos were taken of 24px text using the Times typeface displayed on an LG UM95 Ultra Widescreen monitor (109dpi, a low DPI makes it easier to see).</em></p>\n\n\t<img src=\"https://www.zachleat.com/web/img/posts/font-smooth/disabled.jpg\" alt=\"\" />Anti-aliasing is disabled.<img src=\"https://www.zachleat.com/web/img/posts/font-smooth/grayscale.jpg\" alt=\"\" />Grayscale or full pixel anti-aliasing.<img src=\"https://www.zachleat.com/web/img/posts/font-smooth/subpixel.jpg\" alt=\"\" />Subpixel anti-aliasing.\n\n\t<img src=\"https://www.zachleat.com/web/img/posts/font-smooth/disabled-zoom-annotated.jpg\" alt=\"\" />Anti-aliasing is disabled. Note that the pixel is either on or off. Not partially illuminated.<img src=\"https://www.zachleat.com/web/img/posts/font-smooth/grayscale-zoom-annotated.jpg\" alt=\"\" />Grayscale or full pixel anti-aliasing. Note that the highlighted pixel is partially illuminated (with each red, green, and blue light illuminated the same amount).<img src=\"https://www.zachleat.com/web/img/posts/font-smooth/subpixel-zoom-annotated.jpg\" alt=\"\" />Subpixel anti-aliasing. Note that in the highlighted pixel, the red and green lights are illuminated but the blue is not.\n<p>Remember that hexadecimal color values have 2 hex digits for red, 2 digits for green, and 2 digits for blue? Note that when those values are all the same (<code>#eeeeee</code>, <code>#222222</code>, or <code>#666666</code>), the color is a shade of gray. The same principle applies for the pixels in grayscale anti-aliasing. When each red, green, and blue light are illuminated the same, the pixel appears to be gray.</p>\n<p>Subpixel anti-aliasing uses a similar technique, but with the full RGB color pallette. Making a pixel red means that only the left third of the pixel will be illuminated, which gives us additional rendering precision.</p>\n<p>While subpixel anti-aliasing is considered to be state of the art, hardware advancements are rendering <code>(͡° ͜ʖ ͡°)</code> it unnecessary. On HDPi or retina screens, subpixel anti-aliasing is increasingly unnecessary to render an accurate portrayal of a glyph. The more pixels you have to work with, the more effective grayscale anti-aliasing is. That’s why it’s unlikely that iOS will ever support subpixel anti-aliasing, saving them the work of supporting the <code>font-smooth</code> property.</p>\n<img src=\"https://www.zachleat.com/web/img/posts/font-smooth/apple-iphone-6-grayscale.jpg\" alt=\"\" />Apple’s iPhone 6 (326dpi), showing horizontal stripe pixel geometry, <span style=\"background-color:#f00;color:#fff;padding:0 0.25em;\">Red</span><span style=\"background-color:#0f0;color:#fff;padding:0 0.25em;\">Green</span><span style=\"background-color:#00f;color:#fff;padding:0 0.25em;\">Blue</span>, and grayscale anti-aliasing. Note that this display also <a href=\"http://www.anandtech.com/show/8509/understanding-dual-domain-pixels-in-the-iphone-6-and-iphone-6-plus\">uses “Dual Domain” pixels, which are skewed at alternating angles</a>.<p>But not all screens share the same horizontal stripe <a href=\"https://en.wikipedia.org/wiki/Pixel_geometry#cite_note-1\">pixel geometry</a>. Here’s a Google Pixel smartphone, using a diamond subpixel shape called <a href=\"https://en.wikipedia.org/wiki/PenTile_matrix_family\">PenTile</a> (trademarked by Samsung). As the picture shows, PenTile clearly does support subpixel anti-aliasing, but does <em>not</em> support controlling it with the <code>-webkit-font-smoothing</code> property. A diamond configuration is likely to handle subpixel rendering in different orientations better than a horizontal stripe could.</p>\n<img src=\"https://www.zachleat.com/web/img/posts/font-smooth/google-pixel-subpixel.jpg\" alt=\"\" />Google’s Pixel (441dpi), showing <a href=\"https://en.wikipedia.org/wiki/PenTile_matrix_family\">PenTile pixel geometry</a> (a diamond shape) with subpixel anti-aliasing.<h2>So, Twitter made a change</h2>\n<p>Recently <a href=\"https://twitter.com/\">twitter.com</a> switched their website to force grayscale anti-aliasing on HiDPI screens:</p>\n<pre><code><span><span>@media</span> screen <span>and</span> <span>(</span><span>-webkit-min-device-pixel-ratio</span><span>:</span> 2<span>)</span><span>,</span> screen <span>and</span> <span>(</span><span>min-resolution</span><span>:</span> 2dppx<span>)</span></span> <span>{</span>\n\t<span>body</span> <span>{</span>\n\t\t<span>-moz-osx-font-smoothing</span><span>:</span> grayscale<span>;</span>\n\t\t<span>-webkit-font-smoothing</span><span>:</span> antialiased<span>;</span>\n\t<span>}</span>\n<span>}</span></code></pre>\n<p>Asthetically as we’ve seen, using grayscale anti-aliasing makes things appear lighter and thinner. It’s usually employed to lighten text or icons that are placed on dark backgrounds, almost as a shortcut to avoid loading an additional (but perhaps more appropriate) Light or Hairline web font. It is unusual to apply this change to a site globally but from a technical perspective it is consistent with iOS’ preference for grayscale anti-aliasing. Perhaps it would clash with Android’s embrace of subpixel anti-aliasing if <code>-webkit-font-smoothing</code> were supported there.</p>\n<p>To see more big players in the <code>font-smooth</code> game, <a href=\"https://developer.microsoft.com/en-us/microsoft-edge/platform/usage/css/-webkit-font-smoothing/\">check out the Microsoft Edge CSS Usage list</a>. <em>Related: <a href=\"https://twitter.com/zachleat/status/872073432883712000\">yahoo.com does some weird stuff.</a></em></p>\n<h2>Conclusion</h2>\n<p>Taking a “smoke ’em if you got ’em” approach to subpixel anti-aliasing feels warranted here. It seems silly to opt-out of a technically superior subpixel approach if it’s supported on the user’s platform and browser.</p>\n<p>Platforms that support subpixel rendering may or may not support <code>font-smooth</code> to control it—Android is a prime example of this. After reading issues on web browser bug trackers, it almost seems like the browsers that did implement this now regret doing so. But independent of <code>font-smooth</code> support, subpixel anti-aliasing is not going away any time soon—even if iOS holds out forever.</p>\n<p>The safe bet here is to defer to browser and platform defaults and only use <code>font-smooth</code> overrides sparingly and as a last resort.</p>\n<h2>Sources</h2>\n<ul><li><a href=\"http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/\">Please Stop “Fixing” Font Smoothing</a> (2012) from <a href=\"https://twitter.com/usabilitypost\">Dmitry Fadeyev</a></li>\n<li><a href=\"https://www.html5rocks.com/en/tutorials/internals/antialiasing-101/\">Anti-aliasing 101</a> (2013) from <a href=\"https://twitter.com/aerotwist\">Paul Lewis (@aerotwist)</a>. It appears that some of the layering criteria may be outdated here. The first three sections are great though.</li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth\">MDN <code>font-smooth</code></a></li>\n<li><a href=\"http://szafranek.net/blog/2009/02/22/font-smoothing-explained/\">Font Smoothing Explained</a> (2009) from <a href=\"https://twitter.com/szafranek\">Krzysztof Szafranek</a></li>\n<li><a href=\"https://bjango.com/articles/subpixeltext/\">Sub-pixel text rendering</a> (2012) by <a href=\"https://twitter.com/bjango\">Bjango</a></li>\n<li><a href=\"http://alienryderflex.com/sub_pixel/\">Understanding Sub-Pixel (LCD Screen) Anti-Aliased Font Rendering</a> (2007) from Darel Rex Finley</li>\n<li><a href=\"https://daringfireball.net/2007/12/anti_aliasing_on_the_iphone\">Anti-Aliasing on the iPhone</a> (2007) from John Gruber</li>\n</ul><h2>Updates</h2>\n<p>Sub-pixel anti-aliasing reportedly removed in macOS Mojave: </p><blockquote><p lang=\"en\" dir=\"ltr\" xml:lang=\"en\">Subpixel antialiasing for text is gone in macOS Mojave.</p>—John Siracusa (@siracusa) <a href=\"https://twitter.com/siracusa/status/1004143205078597633?ref_src=twsrc%5Etfw\">June 5, 2018</a></blockquote><p></p>\n<blockquote><p>Subpixel AA was removed from the OS, but browsers still do it by default. See <a href=\"https://www.joshwcomeau.com/css/custom-css-reset/#digit-font-smoothing\">https://www.joshwcomeau.com/css/custom-css-reset/#digit-font-smoothing</a></p>—@simevidas <a href=\"https://twitter.com/simevidas/status/1514712146105540608\">April 14, 2022</a></blockquote>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1892184,
+			"parentId": 0,
+			"url": "https://www.zachleat.com/web/blogging/",
+			"author": {},
+			"date": "2025-03-12T00:16:50.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1330558,
+			"url": "https://twitter.com/zachleat/status/1481387717099659264#favorited-by-259814870",
+			"date": "2022-01-13T00:31:51.000Z",
+			"author": {
+				"name": "Gaël Poupard",
+				"url": "https://twitter.com/ffoodd_fr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bebb7c8bbc4d5d316c64a4e8278e4fb1a662dd836590aa669864c8f7d7ca013d.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1330559,
+			"url": "https://twitter.com/zachleat/status/1481387717099659264#favorited-by-237918766",
+			"date": "2022-01-13T00:31:51.000Z",
+			"author": {
+				"name": "Scott Jehl",
+				"url": "https://twitter.com/scottjehl",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cd47f576b11355f73682eb72fdbeaefbae757b7bd56be728b67fb4f15e86d9bb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1330560,
+			"url": "https://twitter.com/zachleat/status/1481387717099659264#favorited-by-61662363",
+			"date": "2022-01-13T00:31:52.000Z",
+			"author": {
+				"name": "Josh Deltener",
+				"url": "https://twitter.com/JoshDeltener",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/96bec9189745147d42289b85f8c78eafb82c84e865dd9cbc6f2db724d598c2da.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1330561,
+			"url": "https://twitter.com/zachleat/status/1481387717099659264#favorited-by-23724008",
+			"date": "2022-01-13T00:32:20.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1330664,
+			"url": "https://twitter.com/zachleat/status/1481387717099659264#favorited-by-18310765",
+			"date": "2022-01-13T07:50:10.000Z",
+			"author": {
+				"name": "Lucy Barker",
+				"url": "https://twitter.com/geniemouses",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ce1b9ca6bf6d4ee595b281c44838603668f828e456fc85a22f8106c0ffe647ea.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

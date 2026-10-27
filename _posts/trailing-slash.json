@@ -1,0 +1,3521 @@
+{
+	"comments": [
+		{
+			"id": 1337887,
+			"parentId": 0,
+			"url": "https://twitter.com/ChrisFerdinandi/status/1486008386105843712",
+			"author": {
+				"name": "Chris Ferdinandi ⚓️",
+				"url": "https://twitter.com/ChrisFerdinandi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c08ae1c4d75a3dae935062d5b6c914feff7cfbdafdb527c237ab3af3caa59ebc.jpg"
+			},
+			"date": "2022-01-25T16:09:42.000Z",
+			"content": "This an absolutely amazing piece of web research. Zach is an incredible web citizen!\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/trailing-slash/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1337820,
+			"parentId": 0,
+			"url": "https://twitter.com/sil/status/1486010146304274435",
+			"author": {
+				"name": "Stuart Langridge",
+				"url": "https://twitter.com/sil",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f89362bfde1ae1eb0bb607979ded9180c486b9beb5c195ff5a50bc842eb4707f.png"
+			},
+			"date": "2022-01-25T16:16:42.000Z",
+			"content": "A small mitigating factor; it is in my opinion easier to set or use a new default page for a directory (if you want your pages to be PHP, say) by writing /resource/index.php than it is to make /resource resolve to /resource.php. (Doesn't apply as much to SSG, of course!)\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337830,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486010445311926273",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T16:17:53.000Z",
+			"content": "This post would not have been possible without this excellent research from <a href=\"https://twitter.com/sebastienlorber\">@sebastienlorber</a> <a href=\"https://github.com/slorber/trailing-slash-guide\">github.com/slorber/traili…</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337826,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486010750514745345",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T16:19:06.000Z",
+			"content": "Completely agree!\n<a class=\"u-mention\" href=\"https://twitter.com/sil\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337819,
+			"parentId": 0,
+			"url": "https://twitter.com/colbyfayock/status/1486012003995029508",
+			"author": {
+				"name": "Colby Fayock",
+				"url": "https://twitter.com/colbyfayock",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c495fa4ba0c756b4a071a5c6f6033cfd81a74020ea3a243f6fa064922a8a70ed.jpg"
+			},
+			"date": "2022-01-25T16:24:05.000Z",
+			"content": "oooo i love the little favicon next to the link for Salma😍\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337828,
+			"parentId": 0,
+			"url": "https://twitter.com/colbyfayock/status/1486012044881104897",
+			"author": {
+				"name": "Colby Fayock",
+				"url": "https://twitter.com/colbyfayock",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c495fa4ba0c756b4a071a5c6f6033cfd81a74020ea3a243f6fa064922a8a70ed.jpg"
+			},
+			"date": "2022-01-25T16:24:14.000Z",
+			"content": "like adding the icon like that generally\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337818,
+			"parentId": 0,
+			"url": "https://twitter.com/bepsays/status/1486012465934893059",
+			"author": {
+				"name": "Bjørn Erik Pedersen",
+				"url": "https://twitter.com/bepsays",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bab595fa9377f9b098e3fe5899a6e5c8562769744d21a0aabe89b97f781ebbe6.jpg"
+			},
+			"date": "2022-01-25T16:25:55.000Z",
+			"content": "There should be trailing WINDOWS style slashes ... :-)\n<a class=\"u-mention\" href=\"https://twitter.com/biilmann\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337817,
+			"parentId": 0,
+			"url": "https://twitter.com/colinaut/status/1486012852817195008",
+			"author": {
+				"name": "Colin Fahrion",
+				"url": "https://twitter.com/colinaut",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b0cb2ac92703b3159d856b37f310e18143a2fddfd5642e521ba4219012341b59.jpg"
+			},
+			"date": "2022-01-25T16:27:27.000Z",
+			"content": "Whoa that is a more complicated topic than I expected and I’ve been in this web game for a long time. Thanks for the detailed article!\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337813,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486013349305458691",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T16:29:25.000Z",
+			"content": "Thanks! That’s using an Eleventy API Service <a href=\"https://www.zachleat.com/web/indieweb-avatar/\">zachleat.com/web/indieweb-a…</a>\n\nmore at <a href=\"https://www.11ty.dev/docs/api-services/\">11ty.dev/docs/api-servi…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/colbyfayock\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337825,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486013537499729928",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T16:30:10.000Z",
+			"content": "😅😅😅\n<a class=\"u-mention\" href=\"https://twitter.com/bepsays\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/biilmann\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337831,
+			"parentId": 0,
+			"url": "https://twitter.com/sebastienlorber/status/1486013831457525760",
+			"author": {
+				"name": "Sebastien Lorber 🇫🇷 🦖 ⚛️ 📨",
+				"url": "https://twitter.com/sebastienlorber",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3b499e8c2fa4ce82182ea4941e15fc28b66bac2749965be75a8cb07e7599aa0f.jpg"
+			},
+			"date": "2022-01-25T16:31:20.000Z",
+			"content": "thanks for presenting nicely me research😄\n\nhappy to see people find this useful\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337823,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486014074269937670",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T16:32:18.000Z",
+			"content": "Deeper deep dives as a service! You’re very welcome!\n<a class=\"u-mention\" href=\"https://twitter.com/colinaut\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337884,
+			"parentId": 0,
+			"url": "https://twitter.com/whitep4nth3r/status/1486014409755566082",
+			"author": {
+				"name": "⚡️ Salma | whitep4nth3r",
+				"url": "https://twitter.com/whitep4nth3r",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ebf00062b4530a91ecbe3dceb0028273bf3d128045fc270da681c8fe569149ec.jpg"
+			},
+			"date": "2022-01-25T16:33:38.000Z",
+			"content": "Levelling up my internet game being tagged in a post from <a href=\"https://twitter.com/zachleat\">@zachleat</a> 👀\n\nBut also, seriously, read this post because the rabbit hole goes deep.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/trailing-slash/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1337824,
+			"parentId": 0,
+			"url": "https://twitter.com/macbraughton/status/1486015194186801160",
+			"author": {
+				"name": "Donnie",
+				"url": "https://twitter.com/macbraughton",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1d23eb5e5ff8ee7dc8d2bee402c0b45c9088f11f1e8cf57578b335e88b16b226.jpg"
+			},
+			"date": "2022-01-25T16:36:45.000Z",
+			"content": "",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337816,
+			"parentId": 0,
+			"url": "https://twitter.com/chrismunns/status/1486016764001411073",
+			"author": {
+				"name": "Chris Munns",
+				"url": "https://twitter.com/chrismunns",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/164f87a11c158601b67020ac366d547eeb5846f9bb45d6a11e22e9b66c1af807.jpg"
+			},
+			"date": "2022-01-25T16:43:00.000Z",
+			"content": "this was fascinating. thanks for sharing!\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337886,
+			"parentId": 0,
+			"url": "https://twitter.com/chrismunns/status/1486016863968509952",
+			"author": {
+				"name": "Chris Munns",
+				"url": "https://twitter.com/chrismunns",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/164f87a11c158601b67020ac366d547eeb5846f9bb45d6a11e22e9b66c1af807.jpg"
+			},
+			"date": "2022-01-25T16:43:23.000Z",
+			"content": "A really interesting look into something i've not really thought too heavily about before.. trailing slashes..\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/trailing-slash/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1337822,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486017253950861319",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T16:44:56.000Z",
+			"content": "You’re very welcome Chris!\n<a class=\"u-mention\" href=\"https://twitter.com/chrismunns\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337885,
+			"parentId": 0,
+			"url": "https://twitter.com/myfonj/status/1486018412056875010",
+			"author": {
+				"name": "myf",
+				"url": "https://twitter.com/myfonj",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a17441aac01e8f800b97a015d917baca66ef770107f78dcfe71925b513af1840.gif"
+			},
+			"date": "2022-01-25T16:49:32.000Z",
+			"content": "Super Nice research!\n\nON/OFF topic: I get that \"[We] need redirects\" (as put in the article) but I guess not as many redirects? (Since, as put in the article, they are \"performance no-no\".) \n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/trailing-slash/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1337814,
+			"parentId": 0,
+			"url": "https://twitter.com/graysonhicks/status/1486020897769148417",
+			"author": {
+				"name": "Grayson Hicks",
+				"url": "https://twitter.com/graysonhicks",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dbfc83dcd32a625005a2e1ce56df6c3e21814920898ddc790af4766b00364004.jpg"
+			},
+			"date": "2022-01-25T16:59:25.000Z",
+			"content": "Interesting discussion on Gatsby adding integrated trailing slash behavior: <a href=\"https://github.com/gatsbyjs/gatsby/discussions/34205\">github.com/gatsbyjs/gatsb…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337821,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486022329230675981",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T17:05:06.000Z",
+			"content": "Practically speaking, will that option swap from resource/index.html to resource.html?\n<a class=\"u-mention\" href=\"https://twitter.com/graysonhicks\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337827,
+			"parentId": 0,
+			"url": "https://twitter.com/sebastienlorber/status/1486024936431001609",
+			"author": {
+				"name": "Sebastien Lorber 🇫🇷 🦖 ⚛️ 📨",
+				"url": "https://twitter.com/sebastienlorber",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3b499e8c2fa4ce82182ea4941e15fc28b66bac2749965be75a8cb07e7599aa0f.jpg"
+			},
+			"date": "2022-01-25T17:15:28.000Z",
+			"content": "no, that's what I warned them about 😆\n\n<a href=\"https://github.com/gatsbyjs/gatsby/discussions/34205#discussioncomment-1954098\">github.com/gatsbyjs/gatsb…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/graysonhicks\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337829,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486026482963124228",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T17:21:37.000Z",
+			"content": "Nicely done, thank you! 🙌🏻\n<a class=\"u-mention\" href=\"https://twitter.com/graysonhicks\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/sebastienlorber\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337992,
+			"parentId": 0,
+			"url": "https://twitter.com/ngriffin_uk/status/1486028791076069382",
+			"author": {
+				"name": "Nicholas Griffin",
+				"url": "https://twitter.com/ngriffin_uk",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e261e806df5f3cf8a5b3717514682cd76aa69c83d2eb1edd5f4e9dd29d52daac.jpg"
+			},
+			"date": "2022-01-25T17:30:47.000Z",
+			"content": "I think it’s good for UX personally. Doesn’t really make a difference app wise if you build for it.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337995,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486037043159384067",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T18:03:34.000Z",
+			"content": "did… did you read the blog post 😅\n<a class=\"u-mention\" href=\"https://twitter.com/ngriffin_uk\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338000,
+			"parentId": 0,
+			"url": "https://twitter.com/ngriffin_uk/status/1486037968943038464",
+			"author": {
+				"name": "Nicholas Griffin",
+				"url": "https://twitter.com/ngriffin_uk",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e261e806df5f3cf8a5b3717514682cd76aa69c83d2eb1edd5f4e9dd29d52daac.jpg"
+			},
+			"date": "2022-01-25T18:07:15.000Z",
+			"content": "Oh in terms of deployment sure, if you use a third party.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338006,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486038464227332101",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T18:09:13.000Z",
+			"content": "I specifically go over a few different perspectives in the blog post, not limited to deployment 👀\n<a class=\"u-mention\" href=\"https://twitter.com/ngriffin_uk\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338007,
+			"parentId": 0,
+			"url": "https://twitter.com/ngriffin_uk/status/1486040477644247042",
+			"author": {
+				"name": "Nicholas Griffin",
+				"url": "https://twitter.com/ngriffin_uk",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e261e806df5f3cf8a5b3717514682cd76aa69c83d2eb1edd5f4e9dd29d52daac.jpg"
+			},
+			"date": "2022-01-25T18:17:13.000Z",
+			"content": "Yeah I read it :). Was just saying that you can build around a lot of those issues. Redirect performance being one you sort of can’t, although I wouldn’t expect numbers to be high there.\n\nGoogle does this automatically per spec for root as well, so it just keeps it uniform.\n\nIMO.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337991,
+			"parentId": 0,
+			"url": "https://twitter.com/ckirknielsen/status/1486044389436755973",
+			"author": {
+				"name": "Christopher Kirk-Nielsen",
+				"url": "https://twitter.com/ckirknielsen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4009d2d0f336a4a0c0dce899b3dd356e02eb34081195aa9c3e6767eada0d8365.jpg"
+			},
+			"date": "2022-01-25T18:32:46.000Z",
+			"content": "Love theses kinds of posts, thank you, Zach!\n\nSo I have a weird situation: In Chrome, disable JS &amp; load <a href=\"https://chriskirknielsen.com/fonts/ottselesque\">chriskirknielsen.com/fonts/ottseles…</a> (no slash). It fails to load the relative assets, stays unslashed. Firefox adds the slash. Am I missing something? (11ty on Netlify, Asset Optim=off)\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337999,
+			"parentId": 0,
+			"url": "https://twitter.com/ckirknielsen/status/1486044798112960515",
+			"author": {
+				"name": "Christopher Kirk-Nielsen",
+				"url": "https://twitter.com/ckirknielsen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4009d2d0f336a4a0c0dce899b3dd356e02eb34081195aa9c3e6767eada0d8365.jpg"
+			},
+			"date": "2022-01-25T18:34:23.000Z",
+			"content": "(not expecting you to troubleshoot for me, and I don't want to take up your time — I have a JS redirect in place so it's fine, it'll work!)\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337996,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486045371604344832",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T18:36:40.000Z",
+			"content": "on super quick glance I’m guessing it’s this script on your page?\n<a class=\"u-mention\" href=\"https://twitter.com/ckirknielsen\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337998,
+			"parentId": 0,
+			"url": "https://twitter.com/ckirknielsen/status/1486045751067254787",
+			"author": {
+				"name": "Christopher Kirk-Nielsen",
+				"url": "https://twitter.com/ckirknielsen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4009d2d0f336a4a0c0dce899b3dd356e02eb34081195aa9c3e6767eada0d8365.jpg"
+			},
+			"date": "2022-01-25T18:38:11.000Z",
+			"content": "Right, that's my \"fix\" after noticing the slashless URL didn't find the font/image files. It's a gross fix, but it works. 😅\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338002,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486046248624963585",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T18:40:09.000Z",
+			"content": "ah right on. I’ll look at this warning on <a href=\"https://twitter.com/slorber\">@slorber</a>’s guide <a href=\"https://github.com/slorber/trailing-slash-guide/blob/main/docs/Hosting-Providers.md#netlify\">github.com/slorber/traili…</a> about Post Processing—sounds like you have Pretty Urls disabled?\n<a class=\"u-mention\" href=\"https://twitter.com/ckirknielsen\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338005,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486046356259188741",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T18:40:35.000Z",
+			"content": "*I’d\n<a class=\"u-mention\" href=\"https://twitter.com/ckirknielsen\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/slorber\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337990,
+			"parentId": 0,
+			"url": "https://twitter.com/LiamBigelow/status/1486050386926784512",
+			"author": {
+				"name": "Liam Bigelow",
+				"url": "https://twitter.com/LiamBigelow",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cef447d5cf7d50c981ffd6f4c085ecb567f143d8f778f9d8c19bd188bd834cb0.jpg"
+			},
+			"date": "2022-01-25T18:56:36.000Z",
+			"content": "Another line in the table would be helpful: non-platform hosting. What happens when hosted as a static directory behind nginx/caddy/apache \n\n(Helpful in that it bolsters my trailing slash bias 👀)\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338009,
+			"parentId": 0,
+			"url": "https://twitter.com/ckirknielsen/status/1486059701058027526",
+			"author": {
+				"name": "Christopher Kirk-Nielsen",
+				"url": "https://twitter.com/ckirknielsen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4009d2d0f336a4a0c0dce899b3dd356e02eb34081195aa9c3e6767eada0d8365.jpg"
+			},
+			"date": "2022-01-25T19:33:37.000Z",
+			"content": "So I have tested:\n1. Disable Asset Opt (D.O) checked: no slash (according to the guide, Pretty URLs (P.U) is still enabled).\n2. D.O unchecked, P.U unchecked: no slash, broken CDN assets\n3. D.O unchecked, P.U checked: slash, broken CDN assets\nI must be doing something wrong 😅\n<a class=\"u-mention\" href=\"https://twitter.com/slorber\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337989,
+			"parentId": 0,
+			"url": "https://twitter.com/jkc_codes/status/1486060882178232324",
+			"author": {
+				"name": "John Kemp-Cruz",
+				"url": "https://twitter.com/jkc_codes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/22d3c106a288041e84dc34157e5df101962fef5016bba8eca991dff99f06f44b.png"
+			},
+			"date": "2022-01-25T19:38:18.000Z",
+			"content": "but what about the assault on our eyes when it comes to fragments? /page/<a href=\"https://twitter.com/search?q=%23fragment\">#fragment</a> 🤮\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338008,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486061480046960644",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T19:40:41.000Z",
+			"content": "You want case 3, right? Canonical = slash?\n\nThere might be another variable happening here to break your assets (with the slash)\n<a class=\"u-mention\" href=\"https://twitter.com/ckirknielsen\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/slorber\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337994,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486061881974525952",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T19:42:17.000Z",
+			"content": "/page/#:~:text=I%20can%E2%80%99t%20hear%20you\n<a class=\"u-mention\" href=\"https://twitter.com/jkc_codes\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337988,
+			"parentId": 0,
+			"url": "https://twitter.com/marcfilleul/status/1486062484687659011",
+			"author": {
+				"name": "Marc Filleul 🇫🇷",
+				"url": "https://twitter.com/marcfilleul",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae06c94b4ead8794682e34e7d1777db19de610bbdd0c18144a5ca0e21cf00eac.jpg"
+			},
+			"date": "2022-01-25T19:44:40.000Z",
+			"content": "I saw you forked Sebastien's when starting my working day 12 hours ago and immediately checked my websites. My Netlify hosted ones were fine but I had to add cleanUrls and trailingSlash options to my Vercel hosted ones. I was also thinking a blog post would be great and tadaaa 😊\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338001,
+			"parentId": 0,
+			"url": "https://twitter.com/marcfilleul/status/1486063572308402177",
+			"author": {
+				"name": "Marc Filleul 🇫🇷",
+				"url": "https://twitter.com/marcfilleul",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae06c94b4ead8794682e34e7d1777db19de610bbdd0c18144a5ca0e21cf00eac.jpg"
+			},
+			"date": "2022-01-25T19:49:00.000Z",
+			"content": "And for the record, I voted with trailing slash in the poll and was sad to be wrong (regarding the most voted answer). But the repo and you post made my day 😅\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337993,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1486063769465896963",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-01-25T19:49:47.000Z",
+			"content": "Haha—oh no folks are watching my git history—*looks around*\n\nHaha *looks around* 😬😅\n<a class=\"u-mention\" href=\"https://twitter.com/marcfilleul\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1337997,
+			"parentId": 0,
+			"url": "https://twitter.com/marcfilleul/status/1486065845013041157",
+			"author": {
+				"name": "Marc Filleul 🇫🇷",
+				"url": "https://twitter.com/marcfilleul",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae06c94b4ead8794682e34e7d1777db19de610bbdd0c18144a5ca0e21cf00eac.jpg"
+			},
+			"date": "2022-01-25T19:58:01.000Z",
+			"content": "It was pure random as you were the first in my Github activity feed 😉. But it was perfect as I've been hooked by your poll.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338221,
+			"parentId": 0,
+			"url": "https://twitter.com/josephscott/status/1486115034908426240",
+			"author": {
+				"name": "Joseph Scott",
+				"url": "https://twitter.com/josephscott",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3bae92534a4eed2abc3934429c32a2262f277a99958214f83febba16a0de4060.jpg"
+			},
+			"date": "2022-01-25T23:13:29.000Z",
+			"content": "The age old question of the web\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/trailing-slash/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1338223,
+			"parentId": 0,
+			"url": "https://twitter.com/AntBogarin/status/1486126412218212353",
+			"author": {
+				"name": "ant",
+				"url": "https://twitter.com/AntBogarin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/36f318994b48d5471e3c08e712d7ec02b69a06c985cfd22f7a5a3aae733ecfb3.png"
+			},
+			"date": "2022-01-25T23:58:42.000Z",
+			"content": "<a href=\"https://www.seroundtable.com/google-trailing-slashes-url-24943.html\">seroundtable.com/google-trailin…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/tunetheweb\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338222,
+			"parentId": 0,
+			"url": "https://twitter.com/networkaaron/status/1486127000888750082",
+			"author": {
+				"name": "Aaron K.",
+				"url": "https://twitter.com/networkaaron",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fe002ad2f753a65877347567baf229a0f5d44f3b4a9a2fae0d2c6af572beb27a.jpg"
+			},
+			"date": "2022-01-26T00:01:02.000Z",
+			"content": "Tip: When a 301 is not an option, on the client-side, have the URL in the address bar reflect the one in the canonical tag to help users share the preferred URL. \n\n“You cannot use a redirect rule to add or remove a trailing slash.” - <a href=\"https://docs.netlify.com/routing/redirects/redirect-options/#trailing-slash\">docs.netlify.com/routing/redire…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1338366,
+			"parentId": 0,
+			"url": "https://twitter.com/danburzo/status/1486244579636559872",
+			"author": {
+				"name": "Dan Burzo",
+				"url": "https://twitter.com/danburzo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a277ea2b8aaf6e3d85212f09554b5f919dc554285ff47b4adbbbb78952dbd123.jpg"
+			},
+			"date": "2022-01-26T07:48:15.000Z",
+			"content": "With this article, <a href=\"https://twitter.com/zachleat\">@zachleat</a> nudged me to start adding trailing slashes to my blog's internal links and get rid of all the HTTP 301 redirects in my server-side analytics. \n\n<a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1338495,
+			"parentId": 0,
+			"url": "https://twitter.com/deckarts/status/1486271640434458637",
+			"author": {
+				"name": "/𝔡𝔢𝔱/𝔩𝔢𝔣𝔣 ᛑᛂᛐᛛᛂᚡ",
+				"url": "https://twitter.com/deckarts",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/62032d08c4bb3958acd3b1aa8576c645e5625c5666874fd6c02c374045aebf29.jpg"
+			},
+			"date": "2022-01-26T09:35:47.000Z",
+			"content": "How new js platforms handle the good old Apache DirectoryIndex config conundrum, a deep dive\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/trailing-slash/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1338509,
+			"parentId": 0,
+			"url": "https://www.alvinashcraft.com/2022/01/26/dew-drop-january-26-2022-3607/",
+			"author": {
+				"name": "Alvin A.",
+				"url": "https://www.alvinashcraft.com/author/admin/"
+			},
+			"date": "2022-01-26T12:06:18.000Z",
+			"content": "<h3>\n<a></a>Top Links</h3>\n<ul><li>\n<a href=\"https://nicksnettravels.builttoroam.com/uno-application-azure-devops-pipeline-templates/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=uno-application-azure-devops-pipeline-templates\">Build and Deploy an Uno Application for iOS, Android, UWP and WASM from Azure DevOps and Pipeline Templates</a> (Nick Randolph)</li>\n<li>\n<a href=\"https://devblogs.microsoft.com/ifdef-windows/announcing-net-community-toolkit-v8-0-0-preview-1/?WT.mc_id=DOP-MVP-4025064\">Announcing .NET Community Toolkit v8.0.0 Preview 1</a> (Sergio Pedri)</li>\n<li>\n<a href=\"https://azure.microsoft.com/en-us/blog/7-reasons-to-attend-azure-open-source-day/?WT.mc_id=DOP-MVP-4025064\">7 reasons to attend Azure Open Source Day</a> (David Dennis)</li>\n<li>\n<a href=\"https://blog.dapr.io/posts/2022/01/25/dapr-v1.6-is-now-available/\">Dapr v1.6 is now available</a> (Dapr Team)</li>\n<li>\n<a href=\"https://devblogs.microsoft.com/visualstudio/visual-studio-2022-for-mac-preview-5/?WT.mc_id=DOP-MVP-4025064\">Visual Studio 2022 for Mac Preview 5</a> (Jordan Matthiesen)</li>\n</ul><p></p>\n<h3>\n<a></a>Web &amp; Cloud Development</h3>\n<ul><li>\n<a href=\"https://ardalis.com/web-api-dto-considerations/\">Web API DTO Considerations</a> (Steve Smith)</li>\n<li>\n<a href=\"https://khalidabuhakmeh.com/dotnet-watch-launchsetting-for-aspnet-core\">.NET Watch Launch Setting Profile For ASP.NET Core</a> (Khalid Abuhakmeh)</li>\n<li>\n<a href=\"https://dev.to/aspittel/a-complete-guide-to-the-amplify-react-authentication-components-11p1\">A Complete Guide to the Amplify React Authentication Components</a> (Ali Spittel)</li>\n<li>\n<a href=\"https://www.docker.com/blog/how-docker-desktop-networking-works-under-the-hood/\">How Docker Desktop Networking Works Under the Hood</a> (David Scott)</li>\n<li>\n<a href=\"https://azure.microsoft.com/blog/rightsize-to-maximize-your-cloud-investment-with-microsoft-azure/?WT.mc_id=DOP-MVP-4025064\">Rightsize to maximize your cloud investment with Microsoft Azure</a> (Diana Gao)</li>\n<li>\n<a href=\"https://erikej.github.io/efcore/aspnet/2022/01/25/efcore-admin-crud.html\">Add an admin CRUD web page to your ASP.NET Core web app in 5 minutes using EF Core Power Tools and CoreAdmin</a> (Erik Ejlskov Jensen)</li>\n<li>\n<a href=\"https://techcommunity.microsoft.com/t5/azure-lab-services/azure-lab-services-architecture-guide/ba-p/3071543?WT.mc_id=DOP-MVP-4025064\">Azure Lab Services Architecture Guide</a> (Nicole Haugen)</li>\n<li>\n<a href=\"https://swimburger.net/blog/dotnet/how-to-get-aspdotnet-core-server-urls\">How to get ASP.NET Core server URLs</a> (Niels Swimberghe)</li>\n<li>\n<a href=\"https://www.zachleat.com/web/trailing-slash/\">Trailing Slashes on URLs: Contentious or Settled?</a> (Zach Leatherman)</li>\n<li>\n<a href=\"https://backstage.io/blog/2022/01/25/backstage-homepage-templates.html\">Say Hi to Backstage homepage templates!</a> (Kat Zhou)</li>\n<li>\n<a href=\"https://2ality.com/2022/01/symbol-factory.html\">Setting up symbol-valued constants via proxies</a> (Axel Rauschmayer)</li>\n<li>\n<a href=\"https://thenewstack.io/modern-identity-onboarding-essentials/\">Modern Identity Onboarding Essentials</a> (Gary Archer)</li>\n<li>\n<a href=\"https://blog.postman.com/top-database-apis/\">Top Database APIs for Your Developer Toolkit</a> (Sean Keegan)</li>\n<li>\n<a href=\"https://auth0.com/blog/application-session-management-best-practices/\">Application Session Management</a> (Sumana Malkapuram)</li>\n<li>\n<a href=\"https://techcommunity.microsoft.com/t5/microsoft-learn-blog/the-2-minute-recap-everything-new-with-security-compliance-and/ba-p/2923076?WT.mc_id=DOP-MVP-4025064\">The 2-Minute Recap: Everything new with Security, Compliance, and Identity on Microsoft Learn</a> (Temante Leary)</li>\n<li>\n<a href=\"https://www.infoq.com/news/2022/01/microsoft-releases-yarp/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global\">Microsoft Releases YARP – Yet Another Reverse Proxy</a> (Thiago Destro)</li>\n<li>\n<a href=\"https://docs.microsoft.com/en-us/graph/change-notifications-delivery?WT.mc_id=DOP-MVP-4025064\">Microsoft Graph – Get change notifications delivered in different ways</a> (Microsoft Docs)</li>\n</ul><p></p>\n<h3>\n<a></a>WinUI, .NET MAUI &amp; XAML</h3>\n<ul><li>\n<a href=\"https://www.telerik.com/blogs/draw-save-signatures-telerik-signaturepad-xamarin\">Draw and Save Signatures Using Telerik SignaturePad for Xamarin</a> (Dobrinka Yordanova)</li>\n<li>\n<a href=\"https://askxammy.com/replicating-boarding-pass-ui-in-xamarin-forms/\">Replicating Boarding Pass UI in Xamarin Forms</a> (Leomaris Reyes)</li>\n<li>\n<a href=\"https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/case-study-2?WT.mc_id=DOP-MVP-4025064\">A Windows App SDK migration of the UWP Photo Editor sample app (C++/WinRT)</a> (Steven White)</li>\n<li>\n<a href=\"https://platform.uno/blog/how-uno-platform-ports-features-from-winui-on-day-0/\">How Uno Platform Ports Features from WinUI on Day 0</a> (Uno Platform Team)</li>\n<li>\n<a href=\"https://prototypemakers.medium.com/simple-onboarding-or-walkthrough-pages-in-xamarin-ios-android-d56b1d4fb634?source=rss-f82e8a07929a------2\">Simple Onboarding or Walkthrough Pages in Xamarin iOS &amp; Android</a> (The First Prototype)</li>\n</ul><p></p>\n<h3>\n<a></a>Visual Studio &amp; .NET</h3>\n<ul><li>\n<a href=\"https://dailydotnettips.com/did-you-know-you-can-now-autosave-files-in-visual-studio-2022/\">Did you know – You can now AutoSave Files in Visual Studio 2022?</a> (Abhijit Jana)</li>\n<li>\n<a href=\"https://code-maze.com/difference-between-int-parse-and-convert-toint32-in-c/\">Difference Between int.Parse() and Convert.ToInt32() in C#</a> (Code Maze)</li>\n<li>\n<a href=\"https://dev.to/cloudx/c-sugar-improvements-60-to-100-1ge9\">C# Sugar &amp; Improvements [6.0 to 10.0]</a> (Patricio Filice)</li>\n<li>\n<a href=\"https://devblogs.microsoft.com/dotnet/net-framework-january-2022-cumulative-update-preview/?WT.mc_id=DOP-MVP-4025064\">.NET Framework January 2022 Cumulative Update Preview</a> (Tara Overfield)</li>\n<li>\n<a href=\"http://nietras.com/2022/01/24/bendingdotnet-improved-common-flat-build-output/\">Bending .NET – Improved Common Flat Build Output</a> (Nietras)</li>\n<li>\n<a href=\"https://xamgirl.com/using-guard-clauses-in-net/\">Using Guard Clauses in .NET</a> (Charlin Agramonte)</li>\n<li>\n<a href=\"https://blog.ndepend.com/learn-a-trick-to-better-use-multi-threading-in-net/\">How to collect return values from Parallel.ForEach?</a> (Patrick Smacchia)</li>\n<li>\n<a href=\"https://weblog.west-wind.com/posts/2022/Jan/25/Fixing-Windows-Control-Focus-on-Toolbar-and-Menu-Controls\">Fixing Windows Control Focus on Toolbar and Menu Controls</a> (Rick Strahl)</li>\n</ul><p></p>\n<h3>\n<a></a>Design, Methodology &amp; Testing</h3>\n<ul><li>\n<a href=\"https://www.jamesshore.com/v2/books/aoad2/book_club/team_room\">Agile Book Club: Team Room</a> (James Shore)</li>\n<li>\n<a href=\"https://www.red-gate.com/blog/database-devops/why-devops-needs-a-change-from-a-me-to-a-we-mindset\">Why DevOps needs a change from a ‘me’ to a ‘we’ mindset</a> (Chris Yates)</li>\n<li>\n<a href=\"https://about.gitlab.com/blog/2022/01/25/how-to-build-out-your-devops-team/\">How to build out your DevOps team</a> (Johanna Ambrosio)</li>\n<li>\n<a href=\"https://www.pluralsight.com/blog/it-ops/technical-debt-poses-cybersecurity-risk\">Technical debt poses a cybersecurity risk</a> (Terumi Laskowsky)</li>\n<li>\n<a href=\"https://jonhilton.net/refactoring/\">Build, refactor, repeat</a> (Jon Hilton)</li>\n<li>\n<a href=\"https://georgestocker.com/2022/01/25/no-one-cares-that-youre-right/\">No one cares that you’re right</a> (George Stocker)</li>\n<li>\n<a href=\"https://blog.trello.com/is-it-time-to-leave\">Experiencing Job Dissatisfaction: How To Decide If It’s Time To Quit</a> (Genevieve Michaels)</li>\n<li>\n<a href=\"https://www.jrothman.com/mpd/2022/01/encourage-management-collaboration-to-integrate-leading-and-serving-others/\">Encourage Management Collaboration to Integrate Leading and Serving Others</a> (Johanna Rothman)</li>\n<li>\n<a href=\"https://www.kunal-chowdhury.com/2022/01/git-2-35.html\">Git 2.35 released with a few interesting features</a> (Kunal Chowdhury)</li>\n<li>\n<a href=\"https://netflixtechblog.com/netflix-a-culture-of-learning-394bc7d0f94c?source=rss----2615bd06b42e---4\">Netflix: A Culture of Learning</a> (Martin Tingley, Wenjing Zheng, Simon Ejdemyr, Stephanie Lane, Colin McFarland, Mihir Tendulkar &amp; Travis Brooks)</li>\n<li>\n<a href=\"https://www.infoq.com/articles/hybrid-remote-2022/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global\">Hybrid &amp; Remote Work in 2022 and Beyond</a> (Shane Hastie)</li>\n</ul><p></p>\n<h3>\n<a></a>Mobile, IoT &amp; Game Development</h3>\n<ul><li>\n<a href=\"http://android-developers.googleblog.com/2022/01/android-studio-bumblebee-202111-stable.html\">Android Studio Bumblebee (2021.1.1) Stable</a> (Adarsh Fernando)</li>\n<li>\n<a href=\"https://www.syncfusion.com/blogs/post/simple-steps-to-create-an-investment-sip-calculator-in-flutter.aspx\">Simple Steps to Create an Investment (SIP) Calculator in Flutter</a> (Meikanda Nayanar I)</li>\n<li>\n<a href=\"https://makezine.com/2022/01/25/adafruits-qt-py-esp32-pico-is-a-tiny-doom-playing-handheld/\">Adafruit’s QT Py ESP32 Pico is A Tiny Doom Playing Handheld</a> (Caleb Kraft)</li>\n</ul><p></p>\n<h3>\n<a></a>Podcasts, Screencasts &amp; Videos</h3>\n<ul><li>\n<a href=\"https://www.microsoftcloudshow.com/podcast/Episodes/443-microsofts-blockbuster-blizzard-acquisition-updates-azure-kubernetes-service/\">Microsoft Cloud Show Episode 443 | Microsoft’s Blockbuster Blizzard Acquisition &amp; Updates to Azure Kubernetes Service</a> (Andrew Connell &amp; Chris Johnson)</li>\n<li>\n<a href=\"https://runasradio.com/Shows/Show/812\">RunAs Radio – SQL Q&amp;A from SQL Server &amp; Azure SQL Conference Fall 2021</a> (Bradley Ball, Tim Chapman, Buck Woody, Pedro Lopes, Richard Campbell, Bob Ward &amp; Anna Hoffman)</li>\n<li>\n<a href=\"https://www.youtube.com/watch?v=ugem4UbAtC0\">.NET MAUI Preview 12 – Constructor &amp; Dependency Injection Everywhere!</a> (James Montemagno)</li>\n<li>\n<a href=\"https://javascriptjabber.com/virtual-dom-and-the-react-way-part-deux-jsj-518\">Virtual DOM and the React Way, Part Deux – JavaScript Jabber 518</a> (Aimee Knight, AJ O’Neal, Dan Shappir &amp; Steve Edwards)</li>\n<li>\n<a href=\"https://scrummastertoolbox.libsyn.com/helping-a-scrum-team-get-unstuck-and-stop-complaining-priyanka-gorai\">Scrum Master Toolbox Podcast – Helping a Scrum team get unstuck, and stop complaining | Priyanka Gorai</a> (Vasco Duarte)</li>\n<li>\n<a href=\"http://www.youtube.com/watch?v=PWDSJ71dSzo\">What does it take to upgrade to .NET 6?</a> (Jeffrey T. Fritz)</li>\n<li>\n<a href=\"http://www.youtube.com/watch?v=uDCxkQvcqdQ\">FreeCodeSession – Episode 336</a> (Jason Bock)</li>\n</ul><p></p>\n<h3>\n<a></a>Community &amp; Events</h3>\n<ul><li>\n<a href=\"https://blogs.microsoft.com/blog/2022/01/25/announcing-microsoft-buildfor2030-hackathon-winners-accelerating-innovation-and-collective-impact/\">Announcing Microsoft #BuildFor2030 Hackathon winners: accelerating innovation and collective impact</a> (Rodney Clark)</li>\n</ul><p></p>\n<h3>\n<a></a>Database</h3>\n<ul><li>\n<a href=\"https://www.sqlservercentral.com/blogs/how-sql-server-executes-a-query\">How SQL Server executes a Query</a> (Klaus Aschenbrenner)</li>\n<li>\n<a href=\"https://www.mssqltips.com/sqlservertip/7128/azure-cosmos-db-nosql-database/\">Introduction to Azure Cosmos DB a NoSQL Database for Documents and JSON</a> (Rajendra Gupta)</li>\n<li>\n<a href=\"https://www.brentozar.com/archive/2022/01/when-should-you-use-desc-in-indexes/\">When Should You Use DESC in Indexes?</a> (Brent Ozar)</li>\n</ul><p></p>\n<h3>\n<a></a>SharePoint &amp; MS Teams</h3>\n<ul><li>\n<a href=\"https://techcommunity.microsoft.com/t5/microsoft-365-pnp-blog/welcome-new-employee-in-teams-using-adaptive-card/ba-p/3067069?WT.mc_id=DOP-MVP-4025064\">Welcome new employee in Teams using Adaptive card.</a> (Shrushti Shah)</li>\n<li>\n<a href=\"https://techcommunity.microsoft.com/t5/microsoft-365-pnp-blog/how-to-use-graph-toolkit-in-teams-app-inside-teams-tab/ba-p/3070964?WT.mc_id=DOP-MVP-4025064\">How to use Graph Toolkit in Teams App inside Teams Tab</a> (Siddharth Vaghasia)</li>\n</ul><p></p>\n<h3>\n<a></a>Miscellaneous</h3>\n<ul><li>\n<a href=\"http://www.i-programmer.info/news/90-tools/15168-notepad-fixes-memory-leak.html\">Notepad++ Fixes Memory Leak</a> (Alex Denham)</li>\n<li>\n<a href=\"https://blog.twitter.com/en_us/topics/company/2021/transparency-19\">An Update to the Twitter Transparency Center</a> (Twitter)</li>\n<li>\n<a href=\"https://blog.jetbrains.com/education/2022/01/25/educational-ides-and-edutools-looking-back-at-2021/\">Educational IDEs and EduTools: Looking Back at 2021</a> (Anastasia Khramushina)</li>\n<li>\n<a href=\"https://www.zdnet.com/article/microsoft-cloud-revenues-power-microsofts-51-7-billion-second-fy22-quarter/#ftag=RSSbaffb68\">Microsoft cloud revenues power Microsoft’s $51.7 billion second FY’22 quarter</a> (Mary Jo Foley)</li>\n<li>\n<a href=\"https://medium.com/young-coder/5-reasons-i-dont-love-python-as-a-beginner-language-be7741b11c1c?source=rss----d3d5cbdde463---4\">5 Reasons I Don’t Love Python as a Beginner Language</a> (Matthew MacDonald)</li>\n<li>\n<a href=\"https://devblogs.microsoft.com/oldnewthing/20220125-00/?p=106194\">I deleted a file from Explorer, but it came back when I refreshed, and I get Access Denied if I try to delete it again</a> (Raymond Chen)</li>\n<li>\n<a href=\"https://mymetaverseday.com/2022/01/25/metaverse-whiteboard/\">Microsoft Whiteboard is already part of the Metaverse</a> (Vesa Nopanen)</li>\n</ul><p></p>\n<h3>\n<a></a>More Link Collections</h3>\n<ul><li>\n<a href=\"https://blog.cwa.me.uk/2022/01/26/the-morning-brew-3397/\">The Morning Brew #3397</a> (Chris Alcock)</li>\n<li>\n<a href=\"https://michael-wolfenden.github.io/2022/01/26/january-26th-2022/\">The Wolf Report – January 26th, 2022</a> (Michael Wolfenden)</li>\n</ul><p></p>\n<h3>\n<a></a>The Geek Shelf</h3>\n<p><a href=\"https://www.amazon.com/dp/0749490470/?tag=amavin-20\"><img align=\"left\" style=\"border:0px;float:left;background-image:none;\" src=\"https://m.media-amazon.com/images/I/41XPjFzz0LL._SS135_.jpg\" border=\"0\" alt=\"41XPjFzz0LL._SS135_.jpg\" /></a> <a href=\"https://www.amazon.com/dp/0749490470/?tag=amavin-20\">Brand Storytelling: Put Customers at the Heart of Your Brand Story</a> (Miri Rodriguez)<em> – Referral Link</em></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1338517,
+			"parentId": 0,
+			"url": "https://h4host.com/index.php/2022/01/26/trailing-slashes-on-urls-contentious-or-settled/top-web-development-news/admin/",
+			"author": {
+				"name": "admin",
+				"url": "https://h4host.com/index.php/author/admin/"
+			},
+			"date": "2022-01-26T13:05:03.000Z",
+			"content": "<a href=\"https://www.reddit.com/r/webdev/comments/sczp97/trailing_slashes_on_urls_contentious_or_settled/\"> <img src=\"https://external-preview.redd.it/7hvOG_fQWa120QVM-Fp3HKxqjK4S-uY3y27KyE-fUd0.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f91d1070bdffdb7528ea9e658c1d7aca3fd488d3\" alt=\"Trailing Slashes on URLs: Contentious or Settled?\" title=\"Trailing Slashes on URLs: Contentious or Settled?\" /></a> \n   submitted by   <a href=\"https://www.reddit.com/user/stefanjudis\"> /u/stefanjudis </a> <br /><span><a href=\"https://www.zachleat.com/web/trailing-slash/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/webdev/comments/sczp97/trailing_slashes_on_urls_contentious_or_settled/\">[comments]</a></span> \n\n<p></p>\n\n\t\t\t\t<a href=\"https://external-preview.redd.it/7hvOG_fQWa120QVM-Fp3HKxqjK4S-uY3y27KyE-fUd0.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f91d1070bdffdb7528ea9e658c1d7aca3fd488d3\"><img width=\"150\" height=\"150\" src=\"https://external-preview.redd.it/7hvOG_fQWa120QVM-Fp3HKxqjK4S-uY3y27KyE-fUd0.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f91d1070bdffdb7528ea9e658c1d7aca3fd488d3\" alt=\"Trailing Slashes on URLs: Contentious or Settled?\" /></a>\n\t\t\t\n<br /><a href=\"https://www.reddit.com/r/webdev/comments/sczp97/trailing_slashes_on_urls_contentious_or_settled/\"> Go to Source of this post </a> <br />\nAuthor Of this post: /u/stefanjudis<br />\nTitle Of post: Trailing Slashes on URLs: Contentious or Settled?<br />\nAuthor Link: {authorlink}",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1338709,
+			"parentId": 0,
+			"url": "https://twitter.com/ashur/status/1486353278480916485",
+			"author": {
+				"name": "Ashur Cabrera",
+				"url": "https://twitter.com/ashur",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ea3faca15d8e1205b3e30ac302c8fdc3549d8b1b4db6a42a2d2c232b7c2b5ad8.jpg"
+			},
+			"date": "2022-01-26T15:00:11.000Z",
+			"content": "from one apologist to another, I really appreciated this post\n \n\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1339018,
+			"parentId": 0,
+			"url": "https://twitter.com/janik6n/status/1486415990745411590",
+			"author": {
+				"name": "Jani Karhunen",
+				"url": "https://twitter.com/janik6n",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/07574c0f9a70c8dc01c890c2d169268e7e88022f329c8503f7266f772ca99645.jpg"
+			},
+			"date": "2022-01-26T19:09:23.000Z",
+			"content": "Trailing Slashes on URLs: Contentious or Settled? <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1339179,
+			"parentId": 0,
+			"url": "https://twitter.com/FrontendDaily/status/1486455661579878406",
+			"author": {
+				"name": "Frontend Daily 🚀",
+				"url": "https://twitter.com/FrontendDaily",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/04a27cee1ca1fb33ce217596782beb0ee613f89ca43be3b35d6a97a1437e1cd6.jpg"
+			},
+			"date": "2022-01-26T21:47:01.000Z",
+			"content": "Trailing Slashes on URLs: Contentious or Settled? <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1339272,
+			"parentId": 0,
+			"url": "https://twitter.com/hn_frontpage/status/1486487812786561032",
+			"author": {
+				"name": "HN Front Page",
+				"url": "https://twitter.com/hn_frontpage",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f62929d0a92700ab725c84e5ab3bef64ae5cfc1d462934d3eb81ae6559c63412.png"
+			},
+			"date": "2022-01-26T23:54:46.000Z",
+			"content": "Trailing slashes on URLs: Contentious or settled?\nL: <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>\nC: <a href=\"https://news.ycombinator.com/item?id=30079487\">news.ycombinator.com/item?id=300794…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1339273,
+			"parentId": 0,
+			"url": "https://twitter.com/HNTweets/status/1486489139507781639",
+			"author": {
+				"name": "Hacker News",
+				"url": "https://twitter.com/HNTweets",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bd356e0cf7174aed2286323e5c0af0fbd2ba52cddb77eadd4520eb5f7f4a27b8.png"
+			},
+			"date": "2022-01-27T00:00:03.000Z",
+			"content": "Trailing slashes on URLs: Contentious or settled: <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a> Comments: <a href=\"https://news.ycombinator.com/item?id=30079487\">news.ycombinator.com/item?id=300794…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1339322,
+			"parentId": 0,
+			"url": "https://twitter.com/winsontang/status/1486490659544387584",
+			"author": {
+				"name": "Winson Tang",
+				"url": "https://twitter.com/winsontang",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a4b4ceb1e1566f3e65d866ac64d8d7c1d615f927ebd0c31a7395b8fe5d2be852.jpg"
+			},
+			"date": "2022-01-27T00:06:05.000Z",
+			"content": "Trailing slashes on URLs: Contentious or settled? <a href=\"https://www.zachleat.com/web/trailing-slash/?utm_source=dlvr.it&amp;utm_medium=twitter\">zachleat.com/web/trailing-s…</a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/trailing-slash/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1339442,
+			"parentId": 0,
+			"url": "https://twitter.com/fvilers/status/1486588189229953024",
+			"author": {
+				"name": "Fabian Vilers",
+				"url": "https://twitter.com/fvilers",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/960510c32b3c3f3d679288894ab106f0614d018fea19b9806bdf6135a8cc80bd.jpg"
+			},
+			"date": "2022-01-27T06:33:38.000Z",
+			"content": "Trailing slashes on URLs: Contentious or settled?\n\n<a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1339669,
+			"parentId": 0,
+			"url": "https://twitter.com/pinboard_pop/status/1486670352096894985",
+			"author": {
+				"name": "Pinboard Popular",
+				"url": "https://twitter.com/pinboard_pop",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/de70cc4973e180a14044184f3ab73c006fca55cd9ae79dfa8c4dae696e6915d8.jpg"
+			},
+			"date": "2022-01-27T12:00:07.000Z",
+			"content": "Trailing Slashes on URLs: Contentious or Settled?—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1339900,
+			"parentId": 0,
+			"url": "https://twitter.com/s0rthak/status/1486721839690702859",
+			"author": {
+				"name": "Sarthak",
+				"url": "https://twitter.com/s0rthak",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5dae83a96202572de727e375634c2c0a7b5bba0ad068fe9a6d78a4acf702dd77.jpg"
+			},
+			"date": "2022-01-27T15:24:43.000Z",
+			"content": "If all static hosting services in 2022 could agree on a common set of guidelines, it'll be great :)\n\n<a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1341547,
+			"parentId": 0,
+			"url": "https://twitter.com/angsuman/status/1487254977190195200",
+			"author": {
+				"name": "Angsuman Chakraborty",
+				"url": "https://twitter.com/angsuman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/354f4339148814def339bde8e9d3996579aa6b6c6414bac6ac053b2a48bb5aed.jpg"
+			},
+			"date": "2022-01-29T02:43:13.000Z",
+			"content": "Trailing slashes on URLs: Contentious or settled? <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1343789,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/back-to-the-facepile-featherweight-edition/",
+			"author": {},
+			"date": "2022-02-02T01:18:37.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1343791,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-02T01:18:56.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1344007,
+			"parentId": 0,
+			"url": "https://twitter.com/glomenar/status/1488766299442405381",
+			"author": {
+				"name": "Rob Roy",
+				"url": "https://twitter.com/glomenar",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/75ad9034f78eefb81a78cae1c0985757a05398641e7685c69a63a4636446a51a.jpg"
+			},
+			"date": "2022-02-02T06:48:40.000Z",
+			"content": "Trailing Slashes on URLs: Contentious or Settled?—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1346358,
+			"parentId": 0,
+			"url": "https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/",
+			"author": {
+				"name": "RSSFeeds Cloud",
+				"url": "https://rssfeeds.cloudsite.builders/author/rssfeeds/"
+			},
+			"date": "2022-02-04T14:00:00.000Z",
+			"content": "<p>Welcome to ISSUE #111 of The Overflow! This newsletter is by developers, for developers, written and curated by the Stack Overflow team and <a href=\"https://itr-links.stackoverflow.email/u/click?_t=3603a3d8f3104ca5bd7015a5845f7fb7&amp;_m=EoL62DB0PIGuXz8jH5uBuQ84lXlHlps2&amp;_e=_QiVw4xkxL6Kq_I-OU4afBnKfI77FjoIfX88HTVRZxPuTd2bnAMrrH9rcbsb0dWeVEF1qnpHf4xYVNc9DjG8B3SxoCwGD7YNwE1j5XUlAoVN5IWubZGRkJQZDmmaOZBv48jI4i91xWdFCil-LQ1NSRFjmqF5DoNWqj0-C-Jd-e6BG04-YOMtUtGjjvW4FlO4SiDdPs_9w2phRLlieyDSowbBJXd8neaip9JCBAeEhORiLVYGsioAE1W0vQlkjGKF\">Cassidy Williams</a>. This week: why securing your code repos is a shared responsibility, finding the flow state, and the discovery of nuclear energy.</p>\n    \n        <b>Contents</b>                    <span>\n                <a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/#\">hide</a>\n            </span>\n            \n\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/#From_the_blog\">\n                    <span>1</span>\n                <span>From the blog</span>\n    </a>\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/#Interesting_questions\">\n                    <span>2</span>\n                <span>Interesting questions</span>\n    </a>\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/#Links_from_around_the_web\">\n                    <span>3</span>\n                <span>Links from around the web</span>\n    </a>\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/#Share_this\">\n                    <span>3.1</span>\n                <span>Share this:</span>\n    </a>\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/#Related\">\n                    <span>3.2</span>\n                <span>Related</span>\n    </a>\n    \n\n\n\n\n\n<h2><span>From the blog</span></h2>\n<p><a href=\"https://stackoverflow.blog/2022/01/24/securing-the-data-in-your-online-code-repository-is-a-shared-responsibility/\"><strong>Securing the data in your online code repository is a shared responsibility</strong></a> <em>stackoverflow.blog</em><br />What would you do if your code repositories suddenly stopped working?</p>\n<p><a href=\"https://stackoverflow.blog/2022/01/26/keeping-technologists-in-the-flow-state/\"><strong>Keeping technologists in the flow state</strong></a> <em>stackoverflow.blog</em><br />Stack Overflow CEO Prashanth Chandrasekar reflects on 2021.</p>\n<p><a href=\"https://stackoverflow.blog/2022/01/25/attention-distraction-focus-flow-state-programming/\"><strong>How to defend your attention and find a flow state</strong></a> <em>stackoverflow.blog</em><br />Modern apps have been engineered to capture your attention. We explore how to break free and find more focus for your own programming.</p>\n<p><a href=\"https://stackoverflow.blog/2021/12/08/vision-ai-hardware-for-software-developers/\"><strong>Vision AI hardware for software developers</strong></a> <em>promotion</em><br />The latest ready-to-go vision AI solutions make incorporating intelligent computer vision possible for makers of every kind. Read this blog to learn more.</p>\n<h2><span>Interesting questions</span></h2>\n<p><a href=\"https://physics.stackexchange.com/questions/690259/why-can-atoms-only-gain-or-lose-electrons-and-not-protons\"><strong>Why can atoms only gain or lose electrons and not protons?</strong></a> <em>physics.stackexchange.com</em><br />Congratulations! You have just discovered nuclear energy!</p>\n<p><a href=\"https://codegolf.stackexchange.com/questions/241694/squishy-vectors\"><strong>Squishy vectors</strong></a> <em>codegolf.stackexchange.com</em><br />Solve a number puzzle in the smallest possible code.</p>\n<p><a href=\"https://askubuntu.com/questions/1388897/i-accidentally-deleted-usr-bin-test-and-now-i-cant-update-upgrade-and-install\"><strong>I accidentally deleted /usr/bin/test and now I can’t update, upgrade, or install packages</strong></a> <em>askubuntu.com</em><br />“Please help me.”</p>\n<p><a href=\"https://academia.stackexchange.com/questions/181596/job-prospects-after-math-phd-in-cryptography\"><strong>Job prospects after math PhD in cryptography</strong></a> <em>academia.stackexchange.com</em><br />Is getting a PhD like flying a fighter jet? Not so much.</p>\n<h2><span>Links from around the web</span></h2>\n<p><a href=\"https://www.gatsbyjs.com/blog/performance-optimization-for-three-js-web-animations/\"><strong>Performance optimization for three.js web animations</strong></a> <em>www.gatsbyjs.com</em><br />This is a great primer on working with animation libraries without impacting your site’s performance.</p>\n<p><a href=\"https://css-tricks.com/why-dont-developers-take-accessibility-seriously/\"><strong>Why don’t developers take accessibility seriously?</strong></a> <em>css-tricks.com</em><br />Accessibility is an evergreen topic and incredibly different depending on the type of developer you are. Here’s an overview of those varying perspectives.</p>\n<p><a href=\"https://www.zachleat.com/web/trailing-slash/\"><strong>Trailing slashes on URLs: contentious or settled?</strong></a> <em>www.zachleat.com</em><br />Who knew a single character could be so controversial? Here’s a great look at how a trailing slash can affect performance, SEO, assets, and moooore.</p>\n<p><a href=\"https://www.twilio.com/blog/build-wordle-like-sms-game-serverless\"><strong>Build a Wordle-like SMS game with Twilio Serverless</strong></a> <em>www.twilio.com</em><br />If you’re as into Wordle as we are, you might enjoy this tutorial on how to build your own SMS-based version.</p>\n<p>Onboard, organize, and bring your team up to speed in a jiffy. <a href=\"https://itr-links.stackoverflow.email/u/click?_t=3603a3d8f3104ca5bd7015a5845f7fb7&amp;_m=J2j24lxDQTEuwPd5Cqu5ugxEP4Nup0Hd&amp;_e=tvjhMrv7atYcgrppTk1g939n0TOMqK8VK0FIJna3k3KJASzVGae_sX5sf3KPi1hf2i5bxdA9xhH1f-iiMOO7ZFhn7xzAMFIbYnBhpTVT4YaVxNFzFGdAHiiEmx7YErIIVxBKkYUg6iknFjIhWONGTkIJn8IqBwnVV0l3yY7ScIAISOmXKMdnUAqYDRZbTBMJIkKY_QpH6yZNU_eh54wXqDW8Wpo2teMbvQF4Xm7qqXJd83J9ZY2IcjPlLJTDAm59hcKcidFcXov0SI1SA2sdJyQvN3-FBHLcc6AOGJQuveBkeTVp2-deuu3Ntnjx81ZzrM2rO56BYZb0_0JMMxOo0T1dQmOSzvTyeYRljnArFYMAOnBwZPb7gsBCwG0r13Z9YZh9Whu6zwJWSvKiJLX8Eg%3D%3D\">Try Stack Overflow for Teams</a>.</p>\n<p>The post <a href=\"https://stackoverflow.blog/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/\">The Overflow #111: Why securing code repos is a shared responsibility</a> appeared first on <a href=\"https://stackoverflow.blog/\">Stack Overflow Blog</a>.</p>\n\n\n<h3><span>Share this:</span></h3>\n\n<ul><li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=twitter\" title=\"Click to share on Twitter\"><span>Twitter</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=facebook\" title=\"Click to share on Facebook\"><span>Facebook</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=linkedin\" title=\"Click to share on LinkedIn\"><span>LinkedIn</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=reddit\" title=\"Click to share on Reddit\"><span>Reddit</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=tumblr\" title=\"Click to share on Tumblr\"><span>Tumblr</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=pinterest\" title=\"Click to share on Pinterest\"><span>Pinterest</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/#\"><span>More</span></a></li>\n<li>\n</li></ul><ul><li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/#print\" title=\"Click to print\"><span>Print</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=pocket\" title=\"Click to share on Pocket\"><span>Pocket</span></a></li>\n<li>\n</li><li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=telegram\" title=\"Click to share on Telegram\"><span>Telegram</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=jetpack-whatsapp\" title=\"Click to share on WhatsApp\"><span>WhatsApp</span></a></li>\n<li>\n</li><li><a href=\"https://rssfeeds.cloudsite.builders/2022/02/04/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/?share=skype\" title=\"Click to share on Skype\"><span>Skype</span></a></li>\n<li>\n</li></ul>\n\n\n\n\t<h3><span><em>Related</em></span></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1346305,
+			"parentId": 0,
+			"url": "https://codinghero.live/the-overflow-111-why-securing-code-repos-is-a-shared-responsibility/",
+			"author": {},
+			"date": "2022-02-04T14:18:50.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1346314,
+			"parentId": 0,
+			"url": "https://hapidzfadli.id/2022/02/04/spillover-111-mengapa-melindungi-repositori-kode-merupakan-tanggung-jawab-bersama/",
+			"author": {},
+			"date": "2022-02-04T14:35:58.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1346313,
+			"parentId": 0,
+			"url": "https://diaspodon.fr/@mdr/107739937298345987",
+			"author": {
+				"name": "Cacahuète et nougat",
+				"url": "https://diaspodon.fr/@mdr",
+				"avatarUrl": "https://avatars.webmention.io/mamot.fr/19b769af0cead8c6e280103f17b6f6ae26de96de707b72f6bd685464cb5fbccf.jpg"
+			},
+			"date": "2022-02-04T19:22:56.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> mince, c'est tombé en marche. Il doit y avoir un bug 😄</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1346454,
+			"parentId": 0,
+			"url": "https://sheriengineering.com/the-overflow-111-why-securing-code-repos-is-a-shared-duty/",
+			"author": {},
+			"date": "2022-02-04T20:02:35.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1346708,
+			"parentId": 0,
+			"url": "https://twitter.com/neomatrixcode/status/1489765827188563969",
+			"author": {
+				"name": "Josué Acevedo",
+				"url": "https://twitter.com/neomatrixcode",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f70f9359b82fb0b02859beb5a4e2d83a7fda3fe4218266e9946b2ee70ac51fe0.jpg"
+			},
+			"date": "2022-02-05T01:00:26.000Z",
+			"content": "Trailing Slashes on URLs: Contentious or Settled?—<a href=\"http://zachleat.com\">zachleat.com</a>  <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1347698,
+			"parentId": 0,
+			"url": "https://twitter.com/jackysee/status/1490542184029949958",
+			"author": {
+				"name": "Jacky",
+				"url": "https://twitter.com/jackysee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/17f9f0308b22132de78d065aa0332849727c8a21e4e36bf8ff680a91652d0b2f.jpg"
+			},
+			"date": "2022-02-07T04:25:24.000Z",
+			"content": "Trailing Slashes on URLs: Contentious or Settled?—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1352209,
+			"parentId": 0,
+			"url": "https://twitter.com/Sh0bhit/status/1493704541333766148",
+			"author": {
+				"name": "Shobhit Sharma",
+				"url": "https://twitter.com/Sh0bhit",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e8bfb878e12a8f63c97e6f18d21de6f785e4ea8af4c2814c4fdfce0b2a79c3bc.jpg"
+			},
+			"date": "2022-02-15T21:51:28.000Z",
+			"content": "<a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355889,
+			"parentId": 0,
+			"url": "https://underskore.in/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-25T21:40:16.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355891,
+			"parentId": 0,
+			"url": "http://i-capitals.com/program/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-25T21:47:41.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355892,
+			"parentId": 0,
+			"url": "https://codytechs.com/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-25T21:52:38.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355893,
+			"parentId": 0,
+			"url": "http://e-capitals.com/program/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-25T21:57:15.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355894,
+			"parentId": 0,
+			"url": "http://icapital.news/program/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-25T22:02:52.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355903,
+			"parentId": 0,
+			"url": "https://livingogroup.com/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-25T22:18:28.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355904,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/trailing-slashes-on-urls-contentious-or-settled-2/",
+			"author": {},
+			"date": "2022-02-25T22:20:44.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355905,
+			"parentId": 0,
+			"url": "https://dztechno.com/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-25T22:21:02.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355906,
+			"parentId": 0,
+			"url": "http://www.webmastersgallery.com/2022/02/25/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-25T22:26:14.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355907,
+			"parentId": 0,
+			"url": "https://marketingsolution.com.au/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-25T22:30:11.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355908,
+			"parentId": 0,
+			"url": "https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-25T22:31:29.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355917,
+			"parentId": 0,
+			"url": "https://tavarro.com/magazine/trailing-slashes-on-urls-contentious-or-settledchris-coyier/",
+			"author": {
+				"url": "https://tavarro.com/magazine/author/",
+				"avatarUrl": "https://avatars.webmention.io/secure.gravatar.com/b8b88206409c4fce32c580415c722d3596a59a0532a1a292f9f9d0504f902ed6.jpg"
+			},
+			"date": "2022-02-25T22:36:26.000Z",
+			"content": "<p>A fun deep dive from Zach. Do you have an opinion on which you should use?</p>\n<p>1) https://website.com/foo/<br />\n2) https://websites.com/foo</p>\n<p>The first option has a “trailing slash.” The second does not.</p>\n<p>I’ve always preferred this thinking: you use a trailing slash if that page has child pages (as in, it is something of a directory page, even if has unique content of its own). If it’s the end-of-the-line (of <em>content</em>), no trailing slash.</p>\n<p><span></span></p>\n<p>I say that, but this very site doesn’t practice it. Blog posts on this site are like css-tricks.com/blog-post/ <em>with</em> a trailing slash and if you leave off the trailing slash, WordPress will redirect to include it. That’s part of the reason Zach is interested here. Redirects come with a performance penalty, so it’s ideal to have it happen as infrequently possible.</p>\n<p>Performance is one thing, but SEO is another one. If you render the same content, both with and without a trailing slash, that’s theoretically a duplicate content penalty and a no-no. (Although that seems weird to me, I would think Google would smart enough not to be terribly concerned by this.)</p>\n<p>Where resources resolve to seems like the biggest deal to me. Here’s Zach:</p>\n<p>If you’re using relative resource URLs, the assets may be missing on Vercel, Render, and Azure Static Web Apps (depending on which duplicated endpoint you’ve visited).</p>\n<p>&lt;img src=”image.avif”&gt; on /resource/ resolves to /resource/image.avif</p>\n<p>&lt;img src=”image.avif”&gt; on /resource resolves to /image.avif</p>\n<p>That’s a non-trivial difference and, to me, a reason the redirect is worth it. Can’t be having a page with broken resources for something this silly.</p>\n<p>What complicates this is that the site-building framework might have opinions about this <strong>and</strong> a hosting provider might have opinions about this. As Zach notes, there are some disagreements among hosts, so it’s something to watch for.</p>\n<p>Me, I’d go with the grain as much as I possibly could. As long as redirects are in place and I don’t have to override any config, I’m cool.</p>\n<p><a href=\"https://www.zachleat.com/web/trailing-slash/\">To Shared Link</a> — <a href=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/\">Permalink on CSS-Tricks</a></p>\n<p><a href=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/\">Trailing Slashes on URLs: Contentious or Settled?</a> originally published on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>. You should <a href=\"https://css-tricks.com/newsletters/\">get the newsletter</a>.</p>\n\n\t<h3><em>Related</em></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355918,
+			"parentId": 0,
+			"url": "http://ecapital.news/program/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-25T22:38:21.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355920,
+			"parentId": 0,
+			"url": "http://usae.site/program/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-25T22:43:43.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355935,
+			"parentId": 0,
+			"url": "https://tgrafix.co.za/web-development/trailing-slashes-on-urls-contentious-or-settled",
+			"author": {},
+			"date": "2022-02-25T23:35:53.000Z",
+			"content": "<p>A fun deep dive from Zach. Do you have an opinion on which you should use?</p><p>1) https://website.com/foo/<br />\n2) https://websites.com/foo</p><p>The first option has a “trailing slash.” The second does not.</p><p>I’ve always preferred this thinking: you use a trailing slash if that page has child pages (as in, it is something of a directory page, even if has unique content of its own). If it’s the end-of-the-line (of <em>content</em>), no trailing slash.</p><p><span></span></p><p>I say that, but this very site doesn’t practice it. Blog posts on this site are like css-tricks.com/blog-post/ <em>with</em> a trailing slash and if you leave off the trailing slash, WordPress will redirect to include it. That’s part of the reason Zach is interested here. Redirects come with a performance penalty, so it’s ideal to have it happen as infrequently possible.</p><p>Performance is one thing, but SEO is another one. If you render the same content, both with and without a trailing slash, that’s theoretically a duplicate content penalty and a no-no. (Although that seems weird to me, I would think Google would smart enough not to be terribly concerned by this.)</p><p>Where resources resolve to seems like the biggest deal to me. Here’s Zach:</p><p>If you’re using relative resource URLs, the assets may be missing on Vercel, Render, and Azure Static Web Apps (depending on which duplicated endpoint you’ve visited).</p><p>&lt;img src=”image.avif”&gt; on /resource/ resolves to /resource/image.avif</p><p>&lt;img src=”image.avif”&gt; on /resource resolves to /image.avif</p><p>That’s a non-trivial difference and, to me, a reason the redirect is worth it. Can’t be having a page with broken resources for something this silly.</p><p>What complicates this is that the site-building framework might have opinions about this <strong>and</strong> a hosting provider might have opinions about this. As Zach notes, there are some disagreements among hosts, so it’s something to watch for.</p><p>Me, I’d go with the grain as much as I possibly could. As long as redirects are in place and I don’t have to override any config, I’m cool.</p><p><a href=\"https://www.zachleat.com/web/trailing-slash/\">To Shared Link</a> — <a href=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/\">Permalink on CSS-Tricks</a></p><p><a href=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/\">Trailing Slashes on URLs: Contentious or Settled?</a> originally published on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>. You should <a href=\"https://css-tricks.com/newsletters/\">get the newsletter</a>.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355937,
+			"parentId": 0,
+			"url": "https://opta.live/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-25T23:58:42.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355940,
+			"parentId": 0,
+			"url": "https://hnikoloski.com/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-26T00:12:57.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355941,
+			"parentId": 0,
+			"url": "https://brinynews.com/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-26T00:14:23.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355964,
+			"parentId": 0,
+			"url": "https://wpdesigns.live/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-26T01:10:03.000Z",
+			"content": "<p>A fun deep dive from Zach. Do you have an opinion on which you should use?</p>\n<pre><code>1) https://website.com/foo/\n2) https://websites.com/foo</code></pre>\n<p>The first option has a “trailing slash.” The second does not.</p>\n<p>I’ve always preferred this thinking: you use a trailing slash if that page has child pages (as in, it is something of a directory page, even if has unique content of its own). If it’s the end-of-the-line (of <em>content</em>), no trailing slash.</p>\n<p><span></span></p>\n<p>I say that, but this very site doesn’t practice it. Blog posts on this site are like <code>css-tricks.com/blog-post/</code> <em>with</em> a trailing slash and if you leave off the trailing slash, WordPress will redirect to include it. That’s part of the reason Zach is interested here. Redirects come with a performance penalty, so it’s ideal to have it happen as infrequently possible.</p>\n<p>Performance is one thing, but SEO is another one. If you render the same content, both with and without a trailing slash, that’s theoretically a duplicate content penalty and a no-no. (Although that seems weird to me, I would think Google would smart enough not to be terribly concerned by this.)</p>\n<p>Where resources resolve to seems like the biggest deal to me. Here’s Zach:</p>\n<blockquote>\n<p>If you’re using relative resource URLs, the assets may be missing on Vercel, Render, and Azure Static Web Apps (depending on which duplicated endpoint you’ve visited).</p>\n<p><code>&lt;img src=\"image.avif\"&gt;</code> on <code>/resource/</code> resolves to <code>/resource/image.avif</code></p>\n<p><code>&lt;img src=\"image.avif\"&gt;</code> on <code>/resource</code> resolves to <code>/image.avif</code></p>\n</blockquote>\n<p>That’s a non-trivial difference and, to me, a reason the redirect is worth it. Can’t be having a page with broken resources for something this silly.</p>\n<p>What complicates this is that the site-building framework might have opinions about this <strong>and</strong> a hosting provider might have opinions about this. As Zach notes, there are some disagreements among hosts, so it’s something to watch for.</p>\n<p>Me, I’d go with the grain as much as I possibly could. As long as redirects are in place and I don’t have to override any config, I’m cool.</p>\n<p>\n<a href=\"https://www.zachleat.com/web/trailing-slash/\"><br />\nDirect Link →<br /></a></p>\n                \n                    <h3></h3>\n                                        \n        \n\n            \n                <a href=\"https://wpdesigns.live/author/admin/\"></a>\n            \n            \n                <h4>\n                    <a href=\"https://wpdesigns.live/author/admin/\">admin</a>\n                </h4>\n\n                \n                \n                                    \n                \n                    <p>\n                        <a href=\"https://wpdesigns.live/author/admin/\">See author's posts</a>\n                    </p>\n                \n                                    <ul><li>\n                                    <a href=\"https://wpdesigns.live\"></a>\n                                </li>\n                                                                                                                                                                                        </ul>\n        \n\n                                            \n                                            \n                                    \n                        \n\t<h2>Continue Reading</h2>\n\t\t<a href=\"https://wpdesigns.live/when-to-avoid-the-text-decoration-shorthand-property/\"><span>Previous:</span> When to Avoid the text-decoration Shorthand Property</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355975,
+			"parentId": 0,
+			"url": "https://datechguru.com/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-26T03:26:28.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355986,
+			"parentId": 0,
+			"url": "https://reportwire.org/2022/02/25/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-26T04:52:33.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1355988,
+			"parentId": 0,
+			"url": "https://www.67nj.org/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-26T06:00:57.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1356077,
+			"parentId": 0,
+			"url": "https://wpguynews.com/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-26T12:57:28.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1356171,
+			"parentId": 0,
+			"url": "https://twitter.com/kleinfreund/status/1497617609054957572",
+			"author": {
+				"name": "Philipp",
+				"url": "https://twitter.com/kleinfreund",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/51d0a8f7dbd98abd62b771a3916136ee0def48243c567d2ed6d55090ef81b111.jpg"
+			},
+			"date": "2022-02-26T17:00:37.000Z",
+			"content": "<a href=\"https://twitter.com/zachleat\">@zachleat</a> Regarding your recent article on trailing slashes on URLs (<a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>), there’s one more case that might be interesting to consider (totally not based on having checked your and my website): trailing slash root resource/TLD?\n\n<a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1356169,
+			"parentId": 0,
+			"url": "https://www.nolisa.xyz/trailing-slashes-on-urls-contentious-or-settled-css-tips/",
+			"author": {},
+			"date": "2022-02-26T19:30:29.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1356178,
+			"parentId": 0,
+			"url": "https://brotherstore.online/development/web-development/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-02-26T20:57:02.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1356199,
+			"parentId": 0,
+			"url": "https://www.codeificant.com/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-26T21:28:17.000Z",
+			"content": "<ul><li>\n\t\t\t\t\t<a href=\"http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.codeificant.com%2Ftrailing-slashes-on-urls-contentious-or-settled%2F&amp;t=Trailing%20Slashes%20on%20URLs%3A%20Contentious%20or%20Settled%3F\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Facebook</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a href=\"http://twitter.com/share?text=Trailing%20Slashes%20on%20URLs%3A%20Contentious%20or%20Settled%3F&amp;url=https%3A%2F%2Fwww.codeificant.com%2Ftrailing-slashes-on-urls-contentious-or-settled%2F&amp;via=Codeificant\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Twitter</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a href=\"http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.codeificant.com%2Ftrailing-slashes-on-urls-contentious-or-settled%2F&amp;title=Trailing%20Slashes%20on%20URLs%3A%20Contentious%20or%20Settled%3F\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>LinkedIn</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t<a href=\"https://www.codeificant.com/trailing-slashes-on-urls-contentious-or-settled/#\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>Pinterest</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\n\t\t\t\t\t\t<span><i></i></span>\n\t\t\t\t\t\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n<i></i> <span></span><span>Shares</span>\n</li>\n\t\t\t\t\t</ul>\n\n<img src=\"https://css-tricks.com/wp-json/social-image-generator/v1/image/364070\" alt=\"364070\" />\n<p>A fun deep dive from Zach. Do you have an opinion on which you should use?</p>\n<pre><code>1) https://website.com/foo/\n2) https://websites.com/foo</code></pre>\n<p>The first option has a “trailing slash.” The second does not.</p>\n<p>I’ve always preferred this thinking: you use a trailing slash if that page has child pages (as in, it is something of a directory page, even if has unique content of its own). If it’s the end-of-the-line (of <em>content</em>), no trailing slash.</p>\n<p>\t\t<a href=\"https://flatlogic.com/blog/top-40-javascript-meme-for-developers/\"><img src=\"https://www.codeificant.com/wp-content/uploads/2021/07/javascript_memes.png\" style=\"margin:4rem auto;\" alt=\"javascript_memes.png\" /></a>\n\t</p>\n<p><span></span></p>\n<p>I say that, but this very site doesn’t practice it. Blog posts on this site are like <code>css-tricks.com/blog-post/</code> <em>with</em> a trailing slash and if you leave off the trailing slash, WordPress will redirect to include it. That’s part of the reason Zach is interested here. Redirects come with a performance penalty, so it’s ideal to have it happen as infrequently possible.</p>\n<p>Performance is one thing, but SEO is another one. If you render the same content, both with and without a trailing slash, that’s theoretically a duplicate content penalty and a no-no. (Although that seems weird to me, I would think Google would smart enough not to be terribly concerned by this.)</p>\n<p>Where resources resolve to seems like the biggest deal to me. Here’s Zach:</p>\n<blockquote>\n<p>If you’re using relative resource URLs, the assets may be missing on Vercel, Render, and Azure Static Web Apps (depending on which duplicated endpoint you’ve visited).</p>\n<p><code>&lt;img src=\"image.avif\"&gt;</code> on <code>/resource/</code> resolves to <code>/resource/image.avif</code></p>\n<p><code>&lt;img src=\"image.avif\"&gt;</code> on <code>/resource</code> resolves to <code>/image.avif</code></p>\n</blockquote>\n<p>That’s a non-trivial difference and, to me, a reason the redirect is worth it. Can’t be having a page with broken resources for something this silly.</p>\n<p>What complicates this is that the site-building framework might have opinions about this <strong>and</strong> a hosting provider might have opinions about this. As Zach notes, there are some disagreements among hosts, so it’s something to watch for.</p>\n<p>Me, I’d go with the grain as much as I possibly could. As long as redirects are in place and I don’t have to override any config, I’m cool.</p>\n<p>\n<a href=\"https://www.zachleat.com/web/trailing-slash/\"><br />\nDirect Link →<br /></a>\n</p>\n<p><a href=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/\">Source</a></p>\n<a href=\"https://flatlogic.com/blog/vue-vs-react-what-is-easier-what-is-trending-detailed-guide-with-all-2021/\"><img src=\"https://www.codeificant.com/wp-content/uploads/2021/07/vue_vs_reactjs.png\" alt=\"vue_vs_reactjs.png\" /></a>                Tags: <a href=\"https://www.codeificant.com/tag/css/\">css</a>, <a href=\"https://www.codeificant.com/tag/css-tricks/\">css tricks</a>, <a href=\"https://www.codeificant.com/tag/frontend/\">frontend</a>, <a href=\"https://www.codeificant.com/tag/link/\">Link</a>, <a href=\"https://www.codeificant.com/tag/url/\">URL</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1356610,
+			"parentId": 0,
+			"url": "https://zephyrnet.com/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-02-28T00:06:09.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1356753,
+			"parentId": 0,
+			"url": "https://apoirier.dectim.ca/wp/tp1/trailing-slashes-on-urls-contentious-or-settled%ef%bf%bc/",
+			"author": {},
+			"date": "2022-02-28T13:55:01.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1356825,
+			"parentId": 0,
+			"url": "https://aayugcreation.com/how-to-create-a-colourful-stacked-text-effect/",
+			"author": {},
+			"date": "2022-02-28T19:05:15.000Z",
+			"content": "<p>A fun deep dive from Zach. Do you have an opinion on which you should use?</p>\n<pre><code>1) https://website.com/foo/\n2) https://websites.com/foo</code></pre>\n<p>The first option has a “trailing slash.” The second does not.</p>\n<p>I’ve always preferred this thinking: you use a trailing slash if that page has child pages (as in, it is something of a directory page, even if has unique content of its own). If it’s the end-of-the-line (of <em>content</em>), no trailing slash.</p>\n<p><span></span></p>\n<p>I say that, but this very site doesn’t practice it. Blog posts on this site are like <code>css-tricks.com/blog-post/</code> <em>with</em> a trailing slash and if you leave off the trailing slash, WordPress will redirect to include it. That’s part of the reason Zach is interested here. Redirects come with a performance penalty, so it’s ideal to have it happen as infrequently possible.</p>\n<p>Performance is one thing, but SEO is another one. If you render the same content, both with and without a trailing slash, that’s theoretically a duplicate content penalty and a no-no. (Although that seems weird to me, I would think Google would smart enough not to be terribly concerned by this.)</p>\n<p>Where resources resolve to seems like the biggest deal to me. Here’s Zach:</p>\n<blockquote>\n<p>If you’re using relative resource URLs, the assets may be missing on Vercel, Render, and Azure Static Web Apps (depending on which duplicated endpoint you’ve visited).</p>\n<p><code>&lt;img src=\"image.avif\"&gt;</code> on <code>/resource/</code> resolves to <code>/resource/image.avif</code></p>\n<p><code>&lt;img src=\"image.avif\"&gt;</code> on <code>/resource</code> resolves to <code>/image.avif</code></p>\n</blockquote>\n<p>That’s a non-trivial difference and, to me, a reason the redirect is worth it. Can’t be having a page with broken resources for something this silly.</p>\n<p>What complicates this is that the site-building framework might have opinions about this <strong>and</strong> a hosting provider might have opinions about this. As Zach notes, there are some disagreements among hosts, so it’s something to watch for.</p>\n<p>Me, I’d go with the grain as much as I possibly could. As long as redirects are in place and I don’t have to override any config, I’m cool.</p>\n<p><a href=\"https://www.zachleat.com/web/trailing-slash/\">To Shared Link</a> — <a href=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/\">Permalink on CSS-Tricks</a></p>\n<p><a href=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/\">Trailing Slashes on URLs: Contentious or Settled?</a> originally published on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>. You should <a href=\"https://css-tricks.com/newsletters/\">get the newsletter</a>.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1359309,
+			"parentId": 0,
+			"url": "https://twitter.com/kimizuy/status/1500505068130693120",
+			"author": {
+				"name": "kimizuy",
+				"url": "https://twitter.com/kimizuy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f785500b4a7d811e7e49b7b8804ecb99bd2c3031a047bbb007da249ce02ae905.jpg"
+			},
+			"date": "2022-03-06T16:14:20.000Z",
+			"content": "最も重要な点は「一貫性」。ありならあり、なしならなしでどこにでも適用すべき、と。Next.jsみたいなフレームワークは違反に対して上手くやってくれてそう（実感）\n<a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1360329,
+			"parentId": 0,
+			"url": "https://tutorials.blog.crabberspost.com/2022/03/08/trailing-slashes-on-urls-contentious-or-settled-css-tips/",
+			"author": {},
+			"date": "2022-03-08T04:51:08.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1360576,
+			"parentId": 0,
+			"url": "https://twitter.com/jrsinclair/status/1501241334245380100",
+			"author": {
+				"name": "James Sinclair",
+				"url": "https://twitter.com/jrsinclair",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b4f940a51dd1a90e1b5e1a1febb960cc93a1f42a86742ddfc62dbf4c154364f0.jpg"
+			},
+			"date": "2022-03-08T17:00:00.000Z",
+			"content": "“Trailing slashes on URLs: Contentious or settled?”\nby <a href=\"https://twitter.com/zachleat\">@zachleat</a> \n<a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1361501,
+			"parentId": 0,
+			"url": "https://twitter.com/adPeGu/status/1501841532843921410",
+			"author": {
+				"name": "adpegu 🏄",
+				"url": "https://twitter.com/adPeGu",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9bb69570afdcd6b1e423c1c220c18792366061f886c848f6751bab22060a93f.png"
+			},
+			"date": "2022-03-10T08:44:58.000Z",
+			"content": "I never thought that trailing slashes on urls could affect that much 🤯\n<a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1364135,
+			"parentId": 0,
+			"url": "https://hapidzfadli.id/2022/03/16/trailing-slash-pada-url-berdebat-atau-sudah-selesai-css-trik/",
+			"author": {},
+			"date": "2022-03-16T14:43:24.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1366850,
+			"parentId": 0,
+			"url": "https://gadgetofficials.com/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-03-21T11:44:53.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1368778,
+			"parentId": 0,
+			"url": "https://www.gictafrica.com/2022/02/26/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-03-25T02:48:33.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1371132,
+			"parentId": 0,
+			"url": "https://shila.praker.in/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-03-29T03:33:50.000Z",
+			"content": "<p> <br /></p>\n\n<p>A fun deep dive from Zach. Do you have an opinion on which you should use?</p>\n<pre><code>1) https://website.com/foo/\n2) https://websites.com/foo</code></pre>\n<p>The first option has a “trailing slash.” The second does not.</p>\n<p>I’ve always preferred this thinking: you use a trailing slash if that page has child pages (as in, it is something of a directory page, even if has unique content of its own). If it’s the end-of-the-line (of <em>content</em>), no trailing slash.</p>\n<p><span></span></p>\n<p>I say that, but this very site doesn’t practice it. Blog posts on this site are like <code>css-tricks.com/blog-post/</code> <em>with</em> a trailing slash and if you leave off the trailing slash, WordPress will redirect to include it. That’s part of the reason Zach is interested here. Redirects come with a performance penalty, so it’s ideal to have it happen as infrequently possible.</p>\n<p>Performance is one thing, but SEO is another one. If you render the same content, both with and without a trailing slash, that’s theoretically a duplicate content penalty and a no-no. (Although that seems weird to me, I would think Google would smart enough not to be terribly concerned by this.)</p>\n<p>Where resources resolve to seems like the biggest deal to me. Here’s Zach:</p>\n<blockquote>\n<p>If you’re using relative resource URLs, the assets may be missing on Vercel, Render, and Azure Static Web Apps (depending on which duplicated endpoint you’ve visited).</p>\n<p><code>&lt;img src=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/image.avif\"&gt;</code> on <code>/resource/</code> resolves to <code>/resource/image.avif</code></p>\n<p><code>&lt;img src=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/image.avif\"&gt;</code> on <code>/resource</code> resolves to <code>/image.avif</code></p>\n</blockquote>\n<p>That’s a non-trivial difference and, to me, a reason the redirect is worth it. Can’t be having a page with broken resources for something this silly.</p>\n<p>What complicates this is that the site-building framework might have opinions about this <strong>and</strong> a hosting provider might have opinions about this. As Zach notes, there are some disagreements among hosts, so it’s something to watch for.</p>\n<p>Me, I’d go with the grain as much as I possibly could. As long as redirects are in place and I don’t have to override any config, I’m cool.</p>\n<p>\n              <a href=\"https://www.zachleat.com/web/trailing-slash/\"><br />\n                Direct Link →<br /></a>\n            </p>\n\n<p><br /><br /><a href=\"https://css-tricks.com/trailing-slashes-on-urls-contentious-or-settled/\">Source link </a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1374768,
+			"parentId": 0,
+			"url": "https://m-softtech.in/index.php/2022/04/04/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-04-04T02:48:08.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1375128,
+			"parentId": 0,
+			"url": "https://vcodepedia.com/trailing-slashes-on-urls-contentious-or-settled-css-tricks/",
+			"author": {},
+			"date": "2022-04-04T18:52:23.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1375568,
+			"parentId": 0,
+			"url": "https://onlineeverday.ro/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-04-05T15:55:55.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1398560,
+			"parentId": 0,
+			"url": "https://melanie-richards.com/blog/learning-log-2202/",
+			"author": {},
+			"date": "2022-05-14T20:46:02.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1417746,
+			"parentId": 0,
+			"url": "https://twitter.com/_yuheiy/status/1537316076627042305",
+			"author": {
+				"name": "全部入りHTML太郎",
+				"url": "https://twitter.com/_yuheiy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9009d11367285f927565da448cdba6f8210bf5fa35e33b34085276df3a822e6c.jpg"
+			},
+			"date": "2022-06-16T06:08:09.000Z",
+			"content": "Trailing Slashes on URLs: Contentious or Settled?—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1488227,
+			"parentId": 0,
+			"url": "https://www.reddit.com/r/hackernews/comments/sdu43l/trailing_slashes_on_urls_contentious_or_settled/",
+			"author": {},
+			"date": "2022-08-26T16:47:02.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1488984,
+			"parentId": 0,
+			"url": "https://www.reddit.com/r/webdev/comments/sczp97/trailing_slashes_on_urls_contentious_or_settled/",
+			"author": {},
+			"date": "2022-08-26T17:26:40.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1515892,
+			"parentId": 0,
+			"url": "https://www.codersjungle.com/2022/02/25/trailing-slashes-on-urls-contentious-or-settled/",
+			"author": {},
+			"date": "2022-09-10T07:55:42.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1545986,
+			"parentId": 0,
+			"url": "http://msprogrammer.serviciipeweb.ro/2022/10/28/friday-links-496/",
+			"author": {},
+			"date": "2022-10-28T06:15:30.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1548445,
+			"parentId": 0,
+			"url": "https://twitter.com/danleatherman/status/1587277019049590784",
+			"author": {
+				"name": "dan leatherman",
+				"url": "https://twitter.com/danleatherman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/179673fc1989070f70755feab4f39f310a2648d7158377d0c2b49ded9ed61628.jpg"
+			},
+			"date": "2022-11-01T02:55:06.000Z",
+			"content": "You might like this post by <a href=\"https://twitter.com/zachleat\">@zachleat</a> as well: <a href=\"https://www.zachleat.com/web/trailing-slash/\">zachleat.com/web/trailing-s…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/simonw\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1565724,
+			"parentId": 0,
+			"url": "https://higby.io/colophon/",
+			"author": {},
+			"date": "2022-11-21T15:50:55.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 2025100,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134026344766791",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T14:43:20.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I haven't noticed any changes recently. Quick testing shows non-trailing-slash paths redirect to trailing-slash path on a couple of my Netlify sites.</p><p>Haven't deployed in a few days, but not sure if that would change behavior.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025225,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/deanleigh.bsky.social/post/3mtlysmxvfk2k",
+			"author": {
+				"name": "Dean Leigh",
+				"url": "https://bsky.app/profile/deanleigh.bsky.social",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:i46llqdekf5kgugiizrar7jv/bafkreian47ugj4hcrvneefheqkpj57jckvcitvsixlwruu7br5sfvtgbeu"
+			},
+			"date": "2026-08-21T14:45:48.000Z",
+			"content": "Hi <a href=\"https://bsky.app/profile/did:plc:xpchjovbk6sxl3bv74z7cs54\">@zachleat.com</a> - I noticed these word breaks and wondered if hyphens: auto; reduce readability in certain contexts? No criticism, just curios if it's accessibly has been documented for it's use in paragraph text.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025226,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3mtlzkzmch22r",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm"
+			},
+			"date": "2026-08-21T14:59:26.000Z",
+			"content": "Oh, huh, after git blaming that it’s about 9 years old (we may never know what user was responsible for it though *ahem*)<br>\n<br>\nAgree though that it feels aggressive! Gonna revert it",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025224,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/deanleigh.bsky.social/post/3mtm4lj4eyc2k",
+			"author": {
+				"name": "Dean Leigh",
+				"url": "https://bsky.app/profile/deanleigh.bsky.social",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:i46llqdekf5kgugiizrar7jv/bafkreian47ugj4hcrvneefheqkpj57jckvcitvsixlwruu7br5sfvtgbeu"
+			},
+			"date": "2026-08-21T15:53:24.000Z",
+			"content": "Hehe I have thought about it for headings in the past but modern CSS and fluid typography seems to address most cases now.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025198,
+			"parentId": 0,
+			"url": "https://mastodon.social/@khalidabuhakmeh/117134830304465707",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9a5940a2d5a3c7975a14c1feb2a3840b089d9543b3e56e3d29217f5e6aaf4fd4.png"
+			},
+			"date": "2026-08-21T18:07:47.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://infosec.exchange/@AlesandroOrtiz\" class=\"u-url\">@<span>AlesandroOrtiz</span></a></span> It's a battle I wage in my mind all the time. It's not settled. Good slashes died out there maaaaaan!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025197,
+			"parentId": 0,
+			"url": "https://mastodon.social/@khalidabuhakmeh/117134830304465707",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9a5940a2d5a3c7975a14c1feb2a3840b089d9543b3e56e3d29217f5e6aaf4fd4.png"
+			},
+			"date": "2026-08-21T18:07:47.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://infosec.exchange/@AlesandroOrtiz\" class=\"u-url\">@<span>AlesandroOrtiz</span></a></span> It's a battle I wage in my mind all the time. It's not settled. Good slashes died out there maaaaaan!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025196,
+			"parentId": 0,
+			"url": "https://mastodon.social/@khalidabuhakmeh/117134830304465707",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9a5940a2d5a3c7975a14c1feb2a3840b089d9543b3e56e3d29217f5e6aaf4fd4.png"
+			},
+			"date": "2026-08-21T18:07:47.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://infosec.exchange/@AlesandroOrtiz\" class=\"u-url\">@<span>AlesandroOrtiz</span></a></span> It's a battle I wage in my mind all the time. It's not settled. Good slashes died out there maaaaaan!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025193,
+			"parentId": 0,
+			"url": "https://mastodon.social/@khalidabuhakmeh/117134830304465707",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9a5940a2d5a3c7975a14c1feb2a3840b089d9543b3e56e3d29217f5e6aaf4fd4.png"
+			},
+			"date": "2026-08-21T18:07:47.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://infosec.exchange/@AlesandroOrtiz\" class=\"u-url\">@<span>AlesandroOrtiz</span></a></span> It's a battle I wage in my mind all the time. It's not settled. Good slashes died out there maaaaaan!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025210,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134882401377617",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:21:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Hm, I am seeing the issue on my personal site: <a href=\"https://alesandroortiz.com/articles\"><span>https://</span><span>alesandroortiz.com/articles</span><span></span></a> should redirect to /articles/ but doesn't. I'm pretty sure it did before.</p><p>But on a couple other sites that I tried earlier, it does redirect with a 301. Will check what might be different between them.</p>\n<a href=\"https://alesandroortiz.com/articles\">All articles · Alesandro Ortiz</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025209,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134882401377617",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:21:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Hm, I am seeing the issue on my personal site: <a href=\"https://alesandroortiz.com/articles\"><span>https://</span><span>alesandroortiz.com/articles</span><span></span></a> should redirect to /articles/ but doesn't. I'm pretty sure it did before.</p><p>But on a couple other sites that I tried earlier, it does redirect with a 301. Will check what might be different between them.</p>\n<a href=\"https://alesandroortiz.com/articles\">All articles · Alesandro Ortiz</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025205,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134882401377617",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:21:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Hm, I am seeing the issue on my personal site: <a href=\"https://alesandroortiz.com/articles\"><span>https://</span><span>alesandroortiz.com/articles</span><span></span></a> should redirect to /articles/ but doesn't. I'm pretty sure it did before.</p><p>But on a couple other sites that I tried earlier, it does redirect with a 301. Will check what might be different between them.</p>\n<a href=\"https://alesandroortiz.com/articles\">All articles · Alesandro Ortiz</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025208,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134882401377617",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:21:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Hm, I am seeing the issue on my personal site: <a href=\"https://alesandroortiz.com/articles\"><span>https://</span><span>alesandroortiz.com/articles</span><span></span></a> should redirect to /articles/ but doesn't. I'm pretty sure it did before.</p><p>But on a couple other sites that I tried earlier, it does redirect with a 301. Will check what might be different between them.</p>\n<a href=\"https://alesandroortiz.com/articles\">All articles · Alesandro Ortiz</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025218,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134895340341439",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:24:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ok, the difference is pretty URLs is enabled on the ones that _do_ redirect, and disabled on the ones that _don't_ redirect.</p><p>Seems like the same you are seeing.</p><p>They all use 11ty with `/dir/index.html` output (so /articles/ on my personal site is /articles/index.html)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025217,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134895340341439",
+			"author": {
+				"name": "Alesandro Ortiz 🇵🇷🏳️‍🌈",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:24:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ok, the difference is pretty URLs is enabled on the ones that _do_ redirect, and disabled on the ones that _don't_ redirect.</p><p>Seems like the same you are seeing.</p><p>They all use 11ty with `/dir/index.html` output (so /articles/ on my personal site is /articles/index.html)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025212,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134895340341439",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:24:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ok, the difference is pretty URLs is enabled on the ones that _do_ redirect, and disabled on the ones that _don't_ redirect.</p><p>Seems like the same you are seeing.</p><p>They all use 11ty with `/dir/index.html` output (so /articles/ on my personal site is /articles/index.html)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025214,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134895340341439",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:24:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ok, the difference is pretty URLs is enabled on the ones that _do_ redirect, and disabled on the ones that _don't_ redirect.</p><p>Seems like the same you are seeing.</p><p>They all use 11ty with `/dir/index.html` output (so /articles/ on my personal site is /articles/index.html)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025219,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/117134927422766590",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2026-08-21T18:32:29.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://infosec.exchange/@AlesandroOrtiz\" class=\"u-url\">@<span>AlesandroOrtiz</span></a></span> might need to cheekily ping the friendly <span class=\"h-card\"><a href=\"https://infra.social/@eduardoboucas\" class=\"u-url\">@<span>eduardoboucas</span></a></span> on this one?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025216,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/117134927422766590",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2026-08-21T18:32:29.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://infosec.exchange/@AlesandroOrtiz\" class=\"u-url\">@<span>AlesandroOrtiz</span></a></span> might need to cheekily ping the friendly <span class=\"h-card\"><a href=\"https://infra.social/@eduardoboucas\" class=\"u-url\">@<span>eduardoboucas</span></a></span> on this one?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025213,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/117134927422766590",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2026-08-21T18:32:29.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://infosec.exchange/@AlesandroOrtiz\" class=\"u-url\">@<span>AlesandroOrtiz</span></a></span> might need to cheekily ping the friendly <span class=\"h-card\"><a href=\"https://infra.social/@eduardoboucas\" class=\"u-url\">@<span>eduardoboucas</span></a></span> on this one?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025215,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/117134927422766590",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2026-08-21T18:32:29.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://infosec.exchange/@AlesandroOrtiz\" class=\"u-url\">@<span>AlesandroOrtiz</span></a></span> might need to cheekily ping the friendly <span class=\"h-card\"><a href=\"https://infra.social/@eduardoboucas\" class=\"u-url\">@<span>eduardoboucas</span></a></span> on this one?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025211,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134953019127998",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:38:59.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I'll have you reach out to Netlify folks since it's not broken on my prod sites where it would be a breaking change. And I'm on free plan so I can't ping support directly either.</p><p>Would be great to have it fixed on my personal site, but not critical there. I'll just hopefully not run into this in the future until it's fixed. :/</p><p>I wonder how long it's been like this.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025206,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134953019127998",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:38:59.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I'll have you reach out to Netlify folks since it's not broken on my prod sites where it would be a breaking change. And I'm on free plan so I can't ping support directly either.</p><p>Would be great to have it fixed on my personal site, but not critical there. I'll just hopefully not run into this in the future until it's fixed. :/</p><p>I wonder how long it's been like this.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025204,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134953019127998",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:38:59.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I'll have you reach out to Netlify folks since it's not broken on my prod sites where it would be a breaking change. And I'm on free plan so I can't ping support directly either.</p><p>Would be great to have it fixed on my personal site, but not critical there. I'll just hopefully not run into this in the future until it's fixed. :/</p><p>I wonder how long it's been like this.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2025207,
+			"parentId": 0,
+			"url": "https://infosec.exchange/@AlesandroOrtiz/117134953019127998",
+			"author": {
+				"name": "Alesandro Ortiz 🇵🇷🏳️‍🌈",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"date": "2026-08-21T18:38:59.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I'll have you reach out to Netlify folks since it's not broken on my prod sites where it would be a breaking change. And I'm on free plan so I can't ping support directly either.</p><p>Would be great to have it fixed on my personal site, but not critical there. I'll just hopefully not run into this in the future until it's fixed. :/</p><p>I wonder how long it's been like this.</p>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1337833,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-5871762",
+			"date": "2022-01-25T17:30:41.000Z",
+			"author": {
+				"name": "Will Boyd",
+				"url": "https://twitter.com/lonekorean",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7620c32815d8ffb8742b9b37ee3a0b33783a661c7f7a0548c048d72123a56e21.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337834,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-758056",
+			"date": "2022-01-25T17:30:42.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://twitter.com/ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5a02571e30b5ee7d4cf5bdebf69e9ab5d536adfc20d7a5a11016dcb3988d12e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337835,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-65193",
+			"date": "2022-01-25T17:30:42.000Z",
+			"author": {
+				"name": "Nathan Smith",
+				"url": "https://twitter.com/nathansmith",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1e21fc3a0f89ce4b469cc84eaca53bdb0c21f994718703ef8c1665a1476d874c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337836,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-48064052",
+			"date": "2022-01-25T17:30:43.000Z",
+			"author": {
+				"name": "Stephen Cunliffe",
+				"url": "https://twitter.com/scunliffe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c744a554af5872749fb6434a79b0d904eb2779a8c638f04a1ae918747df5d136.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337837,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-14163697",
+			"date": "2022-01-25T17:30:44.000Z",
+			"author": {
+				"name": "Wade Wegner",
+				"url": "https://twitter.com/WadeWegner",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/912fdff5f9e4de0958ea407c5324c88963fbd70bd759f876706d31f7423d6726.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337838,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-186990439",
+			"date": "2022-01-25T17:30:44.000Z",
+			"author": {
+				"name": "James Ross",
+				"url": "https://twitter.com/CherryJimbo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/abd37c3ff842bbfa7a2efa4c4fb857979c56517507e3eba5c25f2932d3f2acb0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337839,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1256286210072498176",
+			"date": "2022-01-25T17:30:45.000Z",
+			"author": {
+				"name": "S#",
+				"url": "https://twitter.com/gthri_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae19e57ae0d41b96972196d5054983863b7db3de132cb9d6e5ff03af95fcd8a8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337840,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-259814870",
+			"date": "2022-01-25T17:30:47.000Z",
+			"author": {
+				"name": "Gaël Poupard",
+				"url": "https://twitter.com/ffoodd_fr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bebb7c8bbc4d5d316c64a4e8278e4fb1a662dd836590aa669864c8f7d7ca013d.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337841,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-27965538",
+			"date": "2022-01-25T17:30:47.000Z",
+			"author": {
+				"name": "Lynn Fisher",
+				"url": "https://twitter.com/lynnandtonic",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4a25c965c76ad09f102fae61c644d7d888fda1eff4f90a86c3e47ad5af8d0df3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337842,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-34032457",
+			"date": "2022-01-25T17:30:48.000Z",
+			"author": {
+				"name": "Zac Skalko",
+				"url": "https://twitter.com/zapplebee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/05ca5446348e529635e0ff3240eba427b373fd6ac1f51f7623384d2df0c6d054.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337843,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1345745537581150210",
+			"date": "2022-01-25T17:30:49.000Z",
+			"author": {
+				"name": "Krzysztof Jeziorny",
+				"url": "https://twitter.com/jeziorny_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/94da9aed00f868e93bfc9ee3c1a52d0ccdd5ce75701bfa9b970d1cf4d82b5383.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337844,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1185030708999442432",
+			"date": "2022-01-25T17:30:50.000Z",
+			"author": {
+				"name": "Matt Rossman 🍌",
+				"url": "https://twitter.com/the_ross_man",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/02e0ec0617b1f35d6d3103088c5691d988310d89de4c8690ee054e5e476880d8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337845,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1045546789665820672",
+			"date": "2022-01-25T17:30:51.000Z",
+			"author": {
+				"name": "Vipul 🌻",
+				"url": "https://twitter.com/vipulbhj",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9d097cc6042cbfb471d6102ccd183049111deb49d5d6475fd2ac49c5b4b3ec9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337846,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1346923123397029888",
+			"date": "2022-01-25T17:30:52.000Z",
+			"author": {
+				"name": "Will 🛸",
+				"url": "https://twitter.com/will_martian",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d670f3cf20f7ac0bd346960d3561ed58618b93e0ccc6ee924ec50a8ca473e164.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337847,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-16544408",
+			"date": "2022-01-25T17:30:53.000Z",
+			"author": {
+				"name": "Matt Hobbs v2.0 💉💉💉",
+				"url": "https://twitter.com/TheRealNooshu",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/55eb63576c5660414beb3ba5d7d3c443c820e41e813b39d68af1f8920112a2ea.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337848,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-934173056175665152",
+			"date": "2022-01-25T17:30:54.000Z",
+			"author": {
+				"name": "Lee Fisher",
+				"url": "https://twitter.com/LeeFisherJr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/06513f05cef2d7ea30e22eda8c975111a832c2ef4a7510465017c83f323af45b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337849,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-16364966",
+			"date": "2022-01-25T17:30:55.000Z",
+			"author": {
+				"name": "Chris Munns",
+				"url": "https://twitter.com/chrismunns",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/164f87a11c158601b67020ac366d547eeb5846f9bb45d6a11e22e9b66c1af807.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337850,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-14465889",
+			"date": "2022-01-25T17:30:57.000Z",
+			"author": {
+				"name": "jalbertbowdenii",
+				"url": "https://twitter.com/jalbertbowdenii",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2dc7ad4a4e8070155c4d6093e4f3ea6f511d804b524276445f697afc55da0211.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337851,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-32265427",
+			"date": "2022-01-25T17:30:57.000Z",
+			"author": {
+				"name": "Adam Luptak",
+				"url": "https://twitter.com/_luptak",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6a2f860ccdf6062983c89db0ca0f8d615845780e96778cdffd207b0e9ad88324.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337852,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1058841635516116992",
+			"date": "2022-01-25T17:30:58.000Z",
+			"author": {
+				"name": "Joshua Yoes",
+				"url": "https://twitter.com/JoshuaYoes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/aa29c81a250d8158996a750a422f076c7887b9cd79dadfc790aca03ccd2caa9b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337853,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-2509306208",
+			"date": "2022-01-25T17:30:59.000Z",
+			"author": {
+				"name": "henry ✷",
+				"url": "https://twitter.com/xdesro",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/161510da5b48cb302542edce4335de14173c31c38c777a0448340c5ffbd63d96.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337854,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-64427943",
+			"date": "2022-01-25T17:31:00.000Z",
+			"author": {
+				"name": "Bart van de Biezen",
+				"url": "https://twitter.com/bartvandebiezen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8c119440274040cd87bcbcab469eff57d2d229c744fa54cc878f0dc53fcd3951.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337855,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-14449910",
+			"date": "2022-01-25T17:31:01.000Z",
+			"author": {
+				"name": "Marc Littlemore 👋🏻",
+				"url": "https://twitter.com/MarcLittlemore",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1572a561e47b94adb123725926d4770103280e6448720c82b60fa82a2e63e096.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337856,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-457700940",
+			"date": "2022-01-25T17:31:02.000Z",
+			"author": {
+				"name": "Towhid",
+				"url": "https://twitter.com/towhid_asif",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/92a3d231607428e562217a1cd52418a9c0f87140ed5bc5b863ee8bbb6f3cf9f9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337857,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-42951446",
+			"date": "2022-01-25T17:31:03.000Z",
+			"author": {
+				"name": "Mark Goho",
+				"url": "https://twitter.com/markgoho",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/69ba2cd8112f0f03e4cf4c8d3feaf19bc3542b2066f418c316ab2a9145ef5936.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337858,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-101783971",
+			"date": "2022-01-25T17:31:04.000Z",
+			"author": {
+				"name": "Justin Time, Stanley.",
+				"url": "https://twitter.com/justintstanley",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae79b98c8acede1d2b8f726c8588cb61425ff3603e26ed78fdba5431666afb71.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337859,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-786375418685165568",
+			"date": "2022-01-25T17:31:05.000Z",
+			"author": {
+				"name": "Theo - t3.gg",
+				"url": "https://twitter.com/t3dotgg",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0508fe1bee128df9e68438b561235cb7d9fe9549cfc2a1e41808f693d7fb5e2b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337860,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-298012875",
+			"date": "2022-01-25T17:31:06.000Z",
+			"author": {
+				"name": "Jiabin",
+				"url": "https://twitter.com/dgeibi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cf1cb1fde46281d60d6229ab4b5c3a9472b405366f33c8b7348f4596ba658268.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337861,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-87791829",
+			"date": "2022-01-25T17:31:07.000Z",
+			"author": {
+				"name": "François Best 🛠️",
+				"url": "https://twitter.com/fortysevenfx",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a98f59184f52974177b7619a6ad19f3b0c7877ac7123337d5452a11679cfc7bb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337862,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-34937396",
+			"date": "2022-01-25T17:31:08.000Z",
+			"author": {
+				"name": "Donnie",
+				"url": "https://twitter.com/macbraughton",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1d23eb5e5ff8ee7dc8d2bee402c0b45c9088f11f1e8cf57578b335e88b16b226.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337863,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-430341693",
+			"date": "2022-01-25T17:31:09.000Z",
+			"author": {
+				"name": "Travis Waith-Mair - Bedrock Layout Genius",
+				"url": "https://twitter.com/travisWaithMair",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e20af1b2a62b1393ab44e7987d948dddaa7c3d4d4a484076c4eefdf23d52e87f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337864,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1956181",
+			"date": "2022-01-25T17:31:10.000Z",
+			"author": {
+				"name": "Colin Fahrion",
+				"url": "https://twitter.com/colinaut",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b0cb2ac92703b3159d856b37f310e18143a2fddfd5642e521ba4219012341b59.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337865,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-914218014983245824",
+			"date": "2022-01-25T17:31:11.000Z",
+			"author": {
+				"name": "Brooke Chalmers 🏳️‍⚧️",
+				"url": "https://twitter.com/breqdev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/997f76b1cdb05ff90f41e0db48afb9645374a7cf41d8440500cae1d0aa290889.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337866,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-316209864",
+			"date": "2022-01-25T17:31:12.000Z",
+			"author": {
+				"name": "Grayson Hicks",
+				"url": "https://twitter.com/graysonhicks",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dbfc83dcd32a625005a2e1ce56df6c3e21814920898ddc790af4766b00364004.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337867,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-2455186164",
+			"date": "2022-01-25T17:31:13.000Z",
+			"author": {
+				"name": "Adrian Bece (アドリアン・ベツエ)",
+				"url": "https://twitter.com/AdrianBeceDev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e8e8b2ae2bfcf718c89eeec4003a8bbd5084331cf6753d47cd6f8f44d6ccc307.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337868,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-33493",
+			"date": "2022-01-25T17:31:14.000Z",
+			"author": {
+				"name": "Peter Çoopèr",
+				"url": "https://twitter.com/peterc",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/17f6e089df25fe238e67eefc0e843f624fc9decf61ff5af8ff9bb3e57777d708.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337869,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-145992913",
+			"date": "2022-01-25T17:31:15.000Z",
+			"author": {
+				"name": "Matt Tunney ☕️",
+				"url": "https://twitter.com/mattftunney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eb4d2d64508817e1aa6a779a9e0ca03fe51a987270cecb40d16804768fe4191e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337870,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-44180156",
+			"date": "2022-01-25T17:31:16.000Z",
+			"author": {
+				"name": "Charles Bauer",
+				"url": "https://twitter.com/chrlsbr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/559adceb6c1c46349f68ef7543b67e3b6fb0f495dc9bcf1275a7871257362c10.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337871,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-136768828",
+			"date": "2022-01-25T17:31:17.000Z",
+			"author": {
+				"name": "Mark Buskbjerg",
+				"url": "https://twitter.com/MarkBuskbjerg",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/23056b400d577a30adb7a7dbea361e76b346c89afbc83a1527eae082d1f4668c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337872,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-279614981",
+			"date": "2022-01-25T17:31:18.000Z",
+			"author": {
+				"name": "Maxime Richard",
+				"url": "https://twitter.com/rmaximedev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/55bf8a583ea1817b000e3fc9555ebaa5e480ff3efd34e61be0cd1a91f62cddef.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337873,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-793830",
+			"date": "2022-01-25T17:31:19.000Z",
+			"author": {
+				"name": "Chris Coyier",
+				"url": "https://twitter.com/chriscoyier",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fe17827fe542a95c9bfbe5d1bcd9a1dd2890b5efc270bf77b5776b244bb0e0f9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337874,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-385021351",
+			"date": "2022-01-25T17:31:20.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://twitter.com/MVSde",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7a9a5c1cb7cc62dcda0827053eb3179802b605ed71bf70a1f6a6ad2760e413d6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337875,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-24203304",
+			"date": "2022-01-25T17:31:21.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338010,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-3305745134",
+			"date": "2022-01-25T20:16:57.000Z",
+			"author": {
+				"name": "Kristofer Koishigawa",
+				"url": "https://twitter.com/kriskoishigawa",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6a2d3aebbf491b64f37e0b26662c9bbb508df6f6ed2fd4330ef2ee118e4b685a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338011,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1290010705597534213",
+			"date": "2022-01-25T20:16:58.000Z",
+			"author": {
+				"name": "John Kemp-Cruz",
+				"url": "https://twitter.com/jkc_codes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/22d3c106a288041e84dc34157e5df101962fef5016bba8eca991dff99f06f44b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338012,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-826589963747749891",
+			"date": "2022-01-25T20:16:58.000Z",
+			"author": {
+				"name": "Sid",
+				"url": "https://twitter.com/chatsidhartha",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3abf2412e2f8a7cbd0358b8401c88be6c9e957cfa7bde7fedb9e4bb5d270148a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338013,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-705280833171509248",
+			"date": "2022-01-25T20:16:59.000Z",
+			"author": {
+				"name": "Scott Mathson",
+				"url": "https://twitter.com/scottmathson",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0bfb38c2538e26a61ddcaea672a3cb515e0110ffd220e20ceb6ff70c1dc5f415.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338014,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-797904323908878339",
+			"date": "2022-01-25T20:16:59.000Z",
+			"author": {
+				"name": "Lara",
+				"url": "https://twitter.com/laraisdev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/51a2ec45ba6576fa19d60807d3c0613f6f5667e3ef403693a504a96deea2a73e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338015,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-752927705549643776",
+			"date": "2022-01-25T20:16:59.000Z",
+			"author": {
+				"name": "Kudo Monstro",
+				"url": "https://twitter.com/KudoMonstro",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338016,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-124482828",
+			"date": "2022-01-25T20:17:00.000Z",
+			"author": {
+				"name": "Sven",
+				"url": "https://twitter.com/hofmannsven",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/699875b0233cc378ce582d4b8488f084892ff33825b42ad2b92b5858e014823f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338017,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-350790747",
+			"date": "2022-01-25T20:17:01.000Z",
+			"author": {
+				"name": "Jody Donetti",
+				"url": "https://twitter.com/jodydonetti",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8816c441f151bac11013a28ac6ea5ad55d717bbe9b9d85d68b736bc6cb0f9468.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338018,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1116159065820995584",
+			"date": "2022-01-25T20:17:02.000Z",
+			"author": {
+				"name": "Farai Gandiya",
+				"url": "https://twitter.com/faraixyz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/80ee1aec799b09e51c8f31b83bd36185c95a89e18061aae1b215ed1bc820bb11.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338019,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1462497836428263426",
+			"date": "2022-01-25T20:17:03.000Z",
+			"author": {
+				"name": "Sudeep Biswas",
+				"url": "https://twitter.com/w3bdev1",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/00636c3524d9dd50a5335e837785eb8141a29f8dee2339d0c54070caa50bee48.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338020,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-908461644665069568",
+			"date": "2022-01-25T20:17:03.000Z",
+			"author": {
+				"name": "Zhenghao He",
+				"url": "https://twitter.com/he_zhenghao",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ed3083423e9138f394cd6c8acf04458fbf18d391a6baa59c89e733f6dd648b2a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338021,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-587760619",
+			"date": "2022-01-25T20:17:05.000Z",
+			"author": {
+				"name": "Patron saint of baby carrots",
+				"url": "https://twitter.com/Obliterati",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8b3ede2b23c75ae584dc176b3adb3bc34efc64478e43e8e03ea6d435ba325a21.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338022,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-169963906",
+			"date": "2022-01-25T20:17:06.000Z",
+			"author": {
+				"name": "Ryan Cormack",
+				"url": "https://twitter.com/ryancormack",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f37a13cfec4d40eccf6013d3f4b9ad63eef87f3622093918ea4c6d4e0518f639.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338023,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-16126725",
+			"date": "2022-01-25T20:17:17.000Z",
+			"author": {
+				"name": "David Hund ✌",
+				"url": "https://twitter.com/valuedstandards",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b2ff50d397839f0a3be0129c025dda89601ea6edcd18e9c477fc3c181938e647.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338024,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-423471075",
+			"date": "2022-01-25T20:17:17.000Z",
+			"author": {
+				"name": "Arpit",
+				"url": "https://twitter.com/ArpitCodes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c2657e3aa183e1b397ffcf5477ad8be765f5606d335c034205ea081b616be3ba.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338025,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-18766794",
+			"date": "2022-01-25T20:17:18.000Z",
+			"author": {
+				"name": "Joe Gaffey",
+				"url": "https://twitter.com/joegaffey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c8dc8d2927be7e64b8c8fb142e1ff7079958f570543a3cb30b60a446e51bb394.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338026,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-23411725",
+			"date": "2022-01-25T20:17:19.000Z",
+			"author": {
+				"name": "Jens Geiling",
+				"url": "https://twitter.com/geniestreiche",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338027,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-725623430700212225",
+			"date": "2022-01-25T20:17:20.000Z",
+			"author": {
+				"name": "Devessier",
+				"url": "https://twitter.com/BDevessier",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c63bf8cbb115f62aed868628138df043d9c74858db09b197fb1ff1d2704560a1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338029,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1322876099760656384",
+			"date": "2022-01-25T20:17:21.000Z",
+			"author": {
+				"name": "bebsico",
+				"url": "https://twitter.com/bebsi_co",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ff2a579fbeb1f89452c08679a0611f67cde10e3c1e96a764c24bdfde1ba798e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338128,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-385870129",
+			"date": "2022-01-25T22:46:12.000Z",
+			"author": {
+				"name": "Marc Filleul 🇫🇷",
+				"url": "https://twitter.com/marcfilleul",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae06c94b4ead8794682e34e7d1777db19de610bbdd0c18144a5ca0e21cf00eac.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338129,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-9910452",
+			"date": "2022-01-25T22:46:12.000Z",
+			"author": {
+				"name": "Matt Kane",
+				"url": "https://twitter.com/ascorbic",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f9056881bc290659551ae27432c3a1b6e4f7017a8f0c8e2ee1c7f794bf03d945.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338130,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1021776130624446464",
+			"date": "2022-01-25T22:46:13.000Z",
+			"author": {
+				"name": "Jess Peck 🐍🤖",
+				"url": "https://twitter.com/jessthebp",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/516a24190d2ac9b8a740097e1b7d77419f8e41b49fc5d3de61f31137a11d8ddd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338131,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-771633222509748225",
+			"date": "2022-01-25T22:46:13.000Z",
+			"author": {
+				"name": "Benjamin Gries",
+				"url": "https://twitter.com/_gries",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c680c68abaedb86df8d8aeccb3ca797b59c5d3a5fd3886a9815d9e5129045dca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338132,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-392656709",
+			"date": "2022-01-25T22:46:14.000Z",
+			"author": {
+				"name": "Alistair Shepherd",
+				"url": "https://twitter.com/Accudio",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6337c0c5ec973c34998c85df0079169a72e67034f33122963012b7dc55e3bb99.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338133,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-109231890",
+			"date": "2022-01-25T22:46:14.000Z",
+			"author": {
+				"name": "James Loh",
+				"url": "https://twitter.com/itsjloh",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9f2ec2e9d3eb214c2f680bcad10356bbd2a3f31eb086c9c8d86762d180dc5424.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338134,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-2556029868",
+			"date": "2022-01-25T22:46:15.000Z",
+			"author": {
+				"name": "Dez Beberniss",
+				"url": "https://twitter.com/dezbeberniss",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1e1e00c9ff5a71d6401e23af11b81d4f68e854e3e6450f9247dbdf9a8b5c4343.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338135,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-17791881",
+			"date": "2022-01-25T22:46:17.000Z",
+			"author": {
+				"name": "Patrick Haug",
+				"url": "https://twitter.com/patrickhaug",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5e80846b9c2832c2826a4d006df82dfba9f8f75ea832611b044dbb8d0c404183.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338207,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-20261175",
+			"date": "2022-01-26T01:06:39.000Z",
+			"author": {
+				"name": "Matthew Chwat",
+				"url": "https://twitter.com/MCFlashdance",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4825c33cca6d35f2d19ac16e5f855f7bc9d9133b1217c6b680d9a5e805770ec3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338208,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-100088482",
+			"date": "2022-01-26T01:06:39.000Z",
+			"author": {
+				"name": "Thread",
+				"url": "https://twitter.com/threadelric",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ac819c5ebf0205c3ba86eb85bc043bbcc65607901e20da2f407b601a29eebfeb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338209,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-56992811",
+			"date": "2022-01-26T01:06:49.000Z",
+			"author": {
+				"name": "Axel Rauschmayer",
+				"url": "https://twitter.com/rauschma",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8ea961778910d5b31b0666e9b7ede5b9b460cd3c3f2dde278d1f4d7c0a024e29.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338210,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-14847848",
+			"date": "2022-01-26T01:06:50.000Z",
+			"author": {
+				"name": "tommy george",
+				"url": "https://twitter.com/tommygeorge",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7eccfe9cbe974b4615e03218f2b6ab1b28f15eca6b7516cbd838d99794ae6f3c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338211,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-335402299",
+			"date": "2022-01-26T01:06:50.000Z",
+			"author": {
+				"name": "Daeron Stormblessed",
+				"url": "https://twitter.com/RPAmoura",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ed37b59d0bb5c067ac01a4e253b4acffa3699185eaea7aed8c29488e18e2c911.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338212,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-143219346",
+			"date": "2022-01-26T01:06:51.000Z",
+			"author": {
+				"name": "Jeremy Wynn",
+				"url": "https://twitter.com/MerelyJeremy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2880064af62217f89cbfda1d3fc68fdf18e3f07f6cfe9c2c507fb4cb34f3652c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338213,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-53388766",
+			"date": "2022-01-26T01:06:52.000Z",
+			"author": {
+				"name": "dominik kundel 🐼 💉💉 💉",
+				"url": "https://twitter.com/DKundel",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/55e3a4f4dc616b118fecf90d10c2df807c496429d94ce535ae21aaa7c9f5a437.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338214,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1438885972343672833",
+			"date": "2022-01-26T01:06:53.000Z",
+			"author": {
+				"name": "Oren Elbaum",
+				"url": "https://twitter.com/OrenElbaum",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/abc8eb4008dacddd0c108d330177ecedee0dd1a30ee482d497818edf74e63b74.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338215,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-433729178",
+			"date": "2022-01-26T01:06:54.000Z",
+			"author": {
+				"name": "Lewis Cowper 💉💉💉",
+				"url": "https://twitter.com/LewisCowper",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/87cc3cc5cdbb528a9c64e1a62b309c3751093a83e51d53323af8bc85a468d848.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338216,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-372321316",
+			"date": "2022-01-26T01:06:55.000Z",
+			"author": {
+				"name": "Adrian Thomas",
+				"url": "https://twitter.com/adriathomas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ad47cfd74254903a24b6823f52aa22a16b59e317668441d88450692f79d619ca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338217,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-3374717733",
+			"date": "2022-01-26T01:06:56.000Z",
+			"author": {
+				"name": "Barry Pollard",
+				"url": "https://twitter.com/tunetheweb",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fcbe96adacdd609913d19adbe899bab65bd08bcae8c6aec5267a715a007ec96e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338218,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1239562822419431425",
+			"date": "2022-01-26T01:06:56.000Z",
+			"author": {
+				"name": "Jeremie Chauvel",
+				"url": "https://twitter.com/ChauvelJeremie",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/62d5c719a4b138f5f827eb8771e38d3e47ea5cbf6fb19b73db42c85a26a98569.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338219,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-3158131",
+			"date": "2022-01-26T01:06:58.000Z",
+			"author": {
+				"name": "Lucid00",
+				"url": "https://twitter.com/Lucid00",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bd744c93cecead69e8d15b9fb917d6a83e70bd8a6e126528434521514fce2b1e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338253,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-432888518",
+			"date": "2022-01-26T03:12:41.000Z",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://twitter.com/hexagoncircle",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/83ecdd1f7b2d6a7a90e86802aa1ae6c2e0d2819b83db984892f9c0be96584092.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338254,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-31777194",
+			"date": "2022-01-26T03:12:41.000Z",
+			"author": {
+				"name": "Eric ☕️ 🐟 💻",
+				"url": "https://twitter.com/rasliche",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c4c6b9bd54016647d76110958e1b268006e22d50141ee06e5c0c4c34650022b1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338255,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1142073858196795393",
+			"date": "2022-01-26T03:12:43.000Z",
+			"author": {
+				"name": "Eric Howey",
+				"url": "https://twitter.com/erchwy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e6dd8950de10729120d529d075bf1c026e176c33e670f1656f90475d419054f0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338256,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-75195695",
+			"date": "2022-01-26T03:12:44.000Z",
+			"author": {
+				"name": "Felipe Barbosa",
+				"url": "https://twitter.com/felipecb_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c020f909d18a51ed13c6ad08b61faa94e493693f7ccda20a32e3a4a28f756c36.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338261,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-15724646",
+			"date": "2022-01-26T03:13:10.000Z",
+			"author": {
+				"name": "razh",
+				"url": "https://twitter.com/razh",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4f70cccda0baacbfacf87eab1691672c8fb30246b455da90ffde74bad411db8b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338276,
+			"url": "https://martymcgui.re/2022/01/25/234144/",
+			"date": "2022-01-26T04:41:44.000Z",
+			"author": {
+				"name": "Marty McGuire",
+				"url": "https://martymcgui.re/",
+				"avatarUrl": "https://avatars.webmention.io/martymcgui.re/f750b9918a92f3dc86d15d8fefad4a06c20a829ae950e18dfc2c8b9a4b26b422.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338286,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1104603877",
+			"date": "2022-01-26T05:01:47.000Z",
+			"author": {
+				"name": "Nachiket",
+				"url": "https://twitter.com/shinigaminachi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bbdf442312ca5c496473bb59965975350576cb4def9ddd2680d0890f34536c1f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338333,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-150675774",
+			"date": "2022-01-26T06:54:24.000Z",
+			"author": {
+				"name": "Björn Rixman",
+				"url": "https://twitter.com/bjornrixman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b31be8d44dc326cb30ff749fcd1b7d2c6d8d7c18fdf69012cf049ee525db98d0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338334,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-15315687",
+			"date": "2022-01-26T06:54:25.000Z",
+			"author": {
+				"name": "Anders Ringqvist",
+				"url": "https://twitter.com/anddoutoi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/139b0d7134353640e7d766a5cd7732b1ccf3a7dca8bf7a61fcc2d06636b4b09e.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338336,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-2603088948",
+			"date": "2022-01-26T06:54:54.000Z",
+			"author": {
+				"name": "Nothing Personal, but #dirumahaja",
+				"url": "https://twitter.com/muktazamhasbi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f9922d6ce769426160a95499ba42ce93300eaf635637b144023e186849b80edd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338337,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1513029458",
+			"date": "2022-01-26T06:54:54.000Z",
+			"author": {
+				"name": "Paolo Barbolini",
+				"url": "https://twitter.com/Paolo565",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1304c6eab4b9e4cc861173b094814dc248d1a8c05e1fa93366ee0cc5fc5616ce.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338367,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-369339102",
+			"date": "2022-01-26T08:11:04.000Z",
+			"author": {
+				"name": "Hyst",
+				"url": "https://twitter.com/DrZorglub",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e3d018dac9a583c3d29f44cc37ba636d149229db23a433702c9f681684ac9322.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338414,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-7990912",
+			"date": "2022-01-26T09:34:12.000Z",
+			"author": {
+				"name": "/𝔡𝔢𝔱/𝔩𝔢𝔣𝔣 ᛑᛂᛐᛛᛂᚡ",
+				"url": "https://twitter.com/deckarts",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/62032d08c4bb3958acd3b1aa8576c645e5625c5666874fd6c02c374045aebf29.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338415,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-47673399",
+			"date": "2022-01-26T09:34:12.000Z",
+			"author": {
+				"name": "Kai",
+				"url": "https://twitter.com/schweinepriestr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/19ed441ac552a3ebe3b899261250e94971f6063e72ede4768189fa780d007580.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338416,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-20220530",
+			"date": "2022-01-26T09:34:13.000Z",
+			"author": {
+				"name": "Oscar Pagani",
+				"url": "https://twitter.com/opagani",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b6fa447736ecd8aa979ed88b726a9b7642b9429e4c02d1a31273e697e757d1f2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338417,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-34583",
+			"date": "2022-01-26T09:34:14.000Z",
+			"author": {
+				"name": "Simon Plenderleith",
+				"url": "https://twitter.com/simonplend",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/81e3d5432eb04c5eacff1d5961366994fd513aca4fb227a1f875aaa35e264003.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338491,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-7111892",
+			"date": "2022-01-26T11:13:56.000Z",
+			"author": {
+				"name": "Vladimir Simović",
+				"url": "https://twitter.com/vlad_perun",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a0e8f483e5bf083f5edfe9acd0a41bdd0aa2c7d5d363b2ddfc1e4dd044402de0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338492,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-14430636",
+			"date": "2022-01-26T11:13:57.000Z",
+			"author": {
+				"name": "milocasagrande",
+				"url": "https://twitter.com/milocasagrande",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/568a472d4e357461dfc4f1ce3edb601972e8a0a026a813f50870ce8abf92cdb6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338493,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-8015702",
+			"date": "2022-01-26T11:13:57.000Z",
+			"author": {
+				"name": "Daniel Herzog",
+				"url": "https://twitter.com/danfooo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bc71766f7fad30450c461e7e85faba6a8e432b91224c7aa0c28cb1044b9865a9.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338522,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-882581851",
+			"date": "2022-01-26T13:14:47.000Z",
+			"author": {
+				"name": "Gustavo sem O",
+				"url": "https://twitter.com/gustavo_sem_o",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0662fff2741f8f6a4dec6acfcbaea500c5ad0dc44d5a645f965235edd59612b1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338526,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-2799584330",
+			"date": "2022-01-26T13:15:16.000Z",
+			"author": {
+				"name": "Farhad AzarbarzinNiaz",
+				"url": "https://twitter.com/farhad_niaz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cab6e1447b539bc1d7eaf6e260288f220792168c7be20e38ee6504517cde999d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338527,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1728160536",
+			"date": "2022-01-26T13:15:17.000Z",
+			"author": {
+				"name": "David East",
+				"url": "https://twitter.com/_davideast",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2f7f9e7f15f5f03c32904a8f22596edd7bf796dfe87fe0b821dd56e171f1583d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338702,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-28094584",
+			"date": "2022-01-26T15:54:59.000Z",
+			"author": {
+				"name": "Shawn Searcy",
+				"url": "https://twitter.com/shawnsearcy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a73d1d65ff9478af3b58b142748e8ed0ed03cddca02348d6db57cfdcd5bde564.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338703,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-2391572880",
+			"date": "2022-01-26T15:55:00.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://twitter.com/BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b7a80f06bd0444925bf3506019ab0f10869ae49d4b8c35ea126612f1875ceef2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338704,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-20779224",
+			"date": "2022-01-26T15:55:01.000Z",
+			"author": {
+				"name": "Nikrooz 👨🏻‍💻",
+				"url": "https://twitter.com/nikrooz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7d60f0c939c3ef86b9636248e641da3e18f26346fb645d1303c80c9df2ad3cab.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338705,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-1070334311998636032",
+			"date": "2022-01-26T15:55:01.000Z",
+			"author": {
+				"name": "Tomasz Czajęcki",
+				"url": "https://twitter.com/tchayen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8d2721a8ebdbd1e922ba5d807d3a01e71efd03ea193e8b90221558cd58e1c804.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338706,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-708516246",
+			"date": "2022-01-26T15:55:02.000Z",
+			"author": {
+				"name": "rezzedup ",
+				"url": "https://twitter.com/RezzedUp",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8263ee009e03b1b03015348b0bb38dfe870a3b9091ee98124f9d2a1111f2181e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338707,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-3245290260",
+			"date": "2022-01-26T15:55:02.000Z",
+			"author": {
+				"name": "Andrew Chou",
+				"url": "https://twitter.com/_andrewchou",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/676550a40342a3ff45737dd9e441faa80c44f7dd6166b5c67128a5a9e6b17585.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338710,
+			"url": "https://twitter.com/zachleat/status/1486001432142745613#favorited-by-745663811672145920",
+			"date": "2022-01-26T15:55:29.000Z",
+			"author": {
+				"name": "Jose Ma-boy",
+				"url": "https://twitter.com/jaboytes7",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c66de2fbe7dded61531472670b5c124b2f5907a878bab427469cbefc600ff341.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1866778,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lczynklny22s#liked_by_did:plc:tki7vwlanxbwrz2er67eaeqa",
+			"date": "2024-12-11T14:57:36.000Z",
+			"author": {
+				"name": "SimonCox",
+				"url": "https://bsky.app/profile/simoncox.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c40396a299647974e85ac2f0a96b06350ec405e35475ac319de1b7604ad8d8ea.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1866785,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lczynklny22s#liked_by_did:plc:c2h6rslhnfcr566dzyzyzcvx",
+			"date": "2024-12-11T16:07:10.000Z",
+			"author": {
+				"name": "Bjorn Lu",
+				"url": "https://bsky.app/profile/bluwy.me",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/fc12500287ede38a57c0804dae9cf05fc8f96edab31d5d431b27a3f3500d129e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1866787,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lczynklny22s#liked_by_did:plc:hwqljqjp5juwxrbb7oypawlq",
+			"date": "2024-12-11T17:41:02.000Z",
+			"author": {
+				"name": "jack_the_dev",
+				"url": "https://bsky.app/profile/jack-the-dev.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/036f5e22070f8951f81128b2f9fc7d51518c936a68cc2bc380abfb3fd479ee80.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1866891,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lczynklny22s#liked_by_did:plc:3zxgigfubnv4f47ftmqdsbal",
+			"date": "2024-12-11T22:17:04.000Z",
+			"author": {
+				"name": "fry69",
+				"url": "https://bsky.app/profile/fry69.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8abaed93ca83e2d8fd9cd44c97acd8117cd747f80d58ca225fcac01cccd43996.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025101,
+			"url": "https://fediverse.zachleat.com/@zachleat/117133947125762480#favorited-by-109295149453262611",
+			"date": "2026-08-21T14:47:01.000Z",
+			"author": {
+				"name": "Alesandro Ortiz ????????????️‍????",
+				"url": "https://infosec.exchange/@AlesandroOrtiz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025112,
+			"url": "https://fediverse.zachleat.com/@zachleat/117133947125762480#favorited-by-109564442856442058",
+			"date": "2026-08-21T16:16:52.000Z",
+			"author": {
+				"name": "LorenAmelang",
+				"url": "https://social.vivaldi.net/@LorenAmelang",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9ad5c67e9298e6ae76e9d207ca1bdf4417a8633da0f57dca2117522255304978.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025199,
+			"url": "https://fediverse.zachleat.com/@zachleat/117134803750380842#favorited-by-109296176354255607",
+			"date": "2026-08-21T18:38:13.000Z",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9a5940a2d5a3c7975a14c1feb2a3840b089d9543b3e56e3d29217f5e6aaf4fd4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025200,
+			"url": "https://fediverse.zachleat.com/@zachleat/117134803750380842#favorited-by-109296176354255607",
+			"date": "2026-08-21T18:38:13.000Z",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9a5940a2d5a3c7975a14c1feb2a3840b089d9543b3e56e3d29217f5e6aaf4fd4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025201,
+			"url": "https://fediverse.zachleat.com/@zachleat/117134803750380842#favorited-by-109296176354255607",
+			"date": "2026-08-21T18:38:14.000Z",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9a5940a2d5a3c7975a14c1feb2a3840b089d9543b3e56e3d29217f5e6aaf4fd4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025202,
+			"url": "https://fediverse.zachleat.com/@zachleat/117134803750380842#favorited-by-109296176354255607",
+			"date": "2026-08-21T18:38:14.000Z",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9a5940a2d5a3c7975a14c1feb2a3840b089d9543b3e56e3d29217f5e6aaf4fd4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025227,
+			"url": "https://bsky.app/profile/zachleat.com/post/3mtlxkrnaxs2v#liked_by_did:plc:7le3gpdvacl6bx2zfg62k2vc",
+			"date": "2026-08-21T19:51:37.000Z",
+			"author": {
+				"name": "Charity Gamble",
+				"url": "https://bsky.app/profile/cgambledev.bsky.social",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:7le3gpdvacl6bx2zfg62k2vc/bafkreihrntoyrfsruy7u7b5ro6zmv5tk7mfyofjl4hys4ad3g4ozpxopbe"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025228,
+			"url": "https://bsky.app/profile/zachleat.com/post/3mtlxkrnaxs2v#liked_by_did:plc:s2uopacmr3yw7nzfvdllq3g3",
+			"date": "2026-08-21T19:51:38.000Z",
+			"author": {
+				"name": "PDFops",
+				"url": "https://bsky.app/profile/pdfops.dev",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:s2uopacmr3yw7nzfvdllq3g3/bafkreiaxo7lgq43mmjddkjmhwmids3za2h5kylchyls4zpp3efzkfwasc4"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025229,
+			"url": "https://bsky.app/profile/zachleat.com/post/3mtlxkrnaxs2v#liked_by_did:plc:kgrbnhf2bdyk2nbwf44xcxpc",
+			"date": "2026-08-21T19:51:39.000Z",
+			"author": {
+				"name": "Sergio",
+				"url": "https://bsky.app/profile/sergio1984.bsky.social",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:kgrbnhf2bdyk2nbwf44xcxpc/bafkreibermu5o6cwinqkwavjne2lh7w2gunbzcugsefvfyd2mnranrf23m"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025230,
+			"url": "https://bsky.app/profile/zachleat.com/post/3mtlxkrnaxs2v#liked_by_did:plc:xmeey64pzulplo73fclonyo2",
+			"date": "2026-08-21T19:51:39.000Z",
+			"author": {
+				"name": "AgentMeter",
+				"url": "https://bsky.app/profile/agentmeter.bsky.social",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:xmeey64pzulplo73fclonyo2/bafkreidxunoqbsjdz2iyvpsbeux67drfdt64eimfqaqilkkexs6h2aztzi"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025231,
+			"url": "https://bsky.app/profile/zachleat.com/post/3mtlxkrnaxs2v#liked_by_did:plc:24cg7hkluqerc6r7ilhtz2au",
+			"date": "2026-08-21T19:51:40.000Z",
+			"author": {
+				"name": "Germany",
+				"url": "https://bsky.app/profile/obliterati.bsky.social",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:24cg7hkluqerc6r7ilhtz2au/bafkreiemohtzoxotkjys7nnra23fwplzlfgc56pl5jr7be7wnk3tjm4com"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2025338,
+			"url": "https://fediverse.zachleat.com/@zachleat/117133947125762480#favorited-by-116238169641821480",
+			"date": "2026-08-22T04:22:59.000Z",
+			"author": {
+				"name": "mzungu",
+				"url": "https://aus.social/@mzungu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0c304e51e079a69dab52aa8edea048c46b1e605cee1a7a0b61006877950c2c29.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1337883,
+			"url": "https://twitter.com/biilmann/status/1486011997716025345",
+			"date": "2022-01-25T16:24:03.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337882,
+			"url": "https://twitter.com/sebastienlorber/status/1486013914521513988",
+			"date": "2022-01-25T16:31:40.000Z",
+			"author": {
+				"name": "Sebastien Lorber 🇫🇷 🦖 ⚛️ 📨",
+				"url": "https://twitter.com/sebastienlorber",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3b499e8c2fa4ce82182ea4941e15fc28b66bac2749965be75a8cb07e7599aa0f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337881,
+			"url": "https://twitter.com/jalbertbowdenii/status/1486016013095391235",
+			"date": "2022-01-25T16:40:01.000Z",
+			"author": {
+				"name": "jalbertbowdenii",
+				"url": "https://twitter.com/jalbertbowdenii",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2dc7ad4a4e8070155c4d6093e4f3ea6f511d804b524276445f697afc55da0211.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337880,
+			"url": "https://twitter.com/MVSde/status/1486020417588453380",
+			"date": "2022-01-25T16:57:31.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://twitter.com/MVSde",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7a9a5c1cb7cc62dcda0827053eb3179802b605ed71bf70a1f6a6ad2760e413d6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337879,
+			"url": "https://twitter.com/TimSeverien/status/1486023782452150274",
+			"date": "2022-01-25T17:10:53.000Z",
+			"author": {
+				"name": "Tim Severien",
+				"url": "https://twitter.com/TimSeverien",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/192e1881f949037788ed273999e354dbbb9498b0d0a80932d1ef147783c8da78.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337878,
+			"url": "https://twitter.com/chrlsbr/status/1486026376096403457",
+			"date": "2022-01-25T17:21:11.000Z",
+			"author": {
+				"name": "Charles Bauer",
+				"url": "https://twitter.com/chrlsbr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/559adceb6c1c46349f68ef7543b67e3b6fb0f495dc9bcf1275a7871257362c10.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1337877,
+			"url": "https://twitter.com/Basix1120/status/1486026673950969856",
+			"date": "2022-01-25T17:22:22.000Z",
+			"author": {
+				"name": "Basix",
+				"url": "https://twitter.com/Basix1120",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a07bb06dae4dd98cf22a26100a673851b8000d78a16e9bf8bbb7cfa36ff8c080.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338030,
+			"url": "https://twitter.com/EatChangmyeong/status/1486031940260364288",
+			"date": "2022-01-25T17:43:18.000Z",
+			"author": {
+				"name": "잇창명 EatChangmyeong💕",
+				"url": "https://twitter.com/EatChangmyeong",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/556f2e99daff1e1e0cbd60f5a5cf7a3c6226bac8eee4b59f1dd2a27bf6383b90.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338033,
+			"url": "https://twitter.com/w3bdev1/status/1486035079176482817",
+			"date": "2022-01-25T17:55:46.000Z",
+			"author": {
+				"name": "Sudeep Biswas",
+				"url": "https://twitter.com/w3bdev1",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/00636c3524d9dd50a5335e837785eb8141a29f8dee2339d0c54070caa50bee48.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338028,
+			"url": "https://twitter.com/jkc_codes/status/1486059107748659200",
+			"date": "2022-01-25T19:31:15.000Z",
+			"author": {
+				"name": "John Kemp-Cruz",
+				"url": "https://twitter.com/jkc_codes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/22d3c106a288041e84dc34157e5df101962fef5016bba8eca991dff99f06f44b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338138,
+			"url": "https://twitter.com/Accudio/status/1486081889354010630",
+			"date": "2022-01-25T21:01:47.000Z",
+			"author": {
+				"name": "Alistair Shepherd",
+				"url": "https://twitter.com/Accudio",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6337c0c5ec973c34998c85df0079169a72e67034f33122963012b7dc55e3bb99.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338137,
+			"url": "https://twitter.com/BenDMyers/status/1486084158753587203",
+			"date": "2022-01-25T21:10:48.000Z",
+			"author": {
+				"name": "Ben Myers 🦖",
+				"url": "https://twitter.com/BenDMyers",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9ef2617986e3893a96223bd4d498ea4e48bd665a525b729e218a51cd35927ccc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338136,
+			"url": "https://twitter.com/oliverkohl/status/1486087230200365063",
+			"date": "2022-01-25T21:23:00.000Z",
+			"author": {
+				"name": "Oliver Kohl",
+				"url": "https://twitter.com/oliverkohl",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8a9827cde9fed272febf765c558215e810bded7848ab284a8191bcdd4b9b4316.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338220,
+			"url": "https://twitter.com/tunetheweb/status/1486111153424109574",
+			"date": "2022-01-25T22:58:04.000Z",
+			"author": {
+				"name": "Barry Pollard",
+				"url": "https://twitter.com/tunetheweb",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fcbe96adacdd609913d19adbe899bab65bd08bcae8c6aec5267a715a007ec96e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338259,
+			"url": "https://twitter.com/erchwy/status/1486151254816399363",
+			"date": "2022-01-26T01:37:25.000Z",
+			"author": {
+				"name": "Eric Howey",
+				"url": "https://twitter.com/erchwy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e6dd8950de10729120d529d075bf1c026e176c33e670f1656f90475d419054f0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338258,
+			"url": "https://twitter.com/felipecb_/status/1486169116213977088",
+			"date": "2022-01-26T02:48:23.000Z",
+			"author": {
+				"name": "Felipe Barbosa",
+				"url": "https://twitter.com/felipecb_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c020f909d18a51ed13c6ad08b61faa94e493693f7ccda20a32e3a4a28f756c36.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338257,
+			"url": "https://twitter.com/madnan_rafiq/status/1486169124434849794",
+			"date": "2022-01-26T02:48:25.000Z",
+			"author": {
+				"name": "adnan",
+				"url": "https://twitter.com/madnan_rafiq",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ff48330f0e5fc14405b272b8021aeb04f488571509c4cec0ed4a08db86815be4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338335,
+			"url": "https://twitter.com/anddoutoi/status/1486224266999828480",
+			"date": "2022-01-26T06:27:32.000Z",
+			"author": {
+				"name": "Anders Ringqvist",
+				"url": "https://twitter.com/anddoutoi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/139b0d7134353640e7d766a5cd7732b1ccf3a7dca8bf7a61fcc2d06636b4b09e.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338365,
+			"url": "https://twitter.com/Sh0bhit/status/1486235874618658819",
+			"date": "2022-01-26T07:13:40.000Z",
+			"author": {
+				"name": "Shobhit Sharma",
+				"url": "https://twitter.com/Sh0bhit",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e8bfb878e12a8f63c97e6f18d21de6f785e4ea8af4c2814c4fdfce0b2a79c3bc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338364,
+			"url": "https://twitter.com/DrZorglub/status/1486244936718733313",
+			"date": "2022-01-26T07:49:40.000Z",
+			"author": {
+				"name": "Hyst",
+				"url": "https://twitter.com/DrZorglub",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e3d018dac9a583c3d29f44cc37ba636d149229db23a433702c9f681684ac9322.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338363,
+			"url": "https://twitter.com/tomayac/status/1486246477399797761",
+			"date": "2022-01-26T07:55:47.000Z",
+			"author": {
+				"name": "Thomas Steiner",
+				"url": "https://twitter.com/tomayac",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/05796e7c6ce8b47a935fae4489812faf9813783f9c99b9b9dbb54d2de4bb9770.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338419,
+			"url": "https://twitter.com/simonplend/status/1486253146305437699",
+			"date": "2022-01-26T08:22:17.000Z",
+			"author": {
+				"name": "Simon Plenderleith",
+				"url": "https://twitter.com/simonplend",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/81e3d5432eb04c5eacff1d5961366994fd513aca4fb227a1f875aaa35e264003.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338418,
+			"url": "https://twitter.com/daveharrisonnet/status/1486270619226411011",
+			"date": "2022-01-26T09:31:43.000Z",
+			"author": {
+				"name": "Dave Harrison",
+				"url": "https://twitter.com/daveharrisonnet",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/412e4fea51a6736625d64addd3751fb4667572dc546ae2d64ded3e7d2b256462.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338494,
+			"url": "https://twitter.com/vlad_perun/status/1486281575620923394",
+			"date": "2022-01-26T10:15:16.000Z",
+			"author": {
+				"name": "Vladimir Simović",
+				"url": "https://twitter.com/vlad_perun",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a0e8f483e5bf083f5edfe9acd0a41bdd0aa2c7d5d363b2ddfc1e4dd044402de0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338524,
+			"url": "https://twitter.com/KevinJPowell/status/1486312828411781125",
+			"date": "2022-01-26T12:19:27.000Z",
+			"author": {
+				"name": "Kevin Powell",
+				"url": "https://twitter.com/KevinJPowell",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/69a46fcfba1dead4eca2e39db91782362dfac72bee3f11e0766f7130659b29ed.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1338523,
+			"url": "https://twitter.com/farhad_niaz/status/1486313163326902275",
+			"date": "2022-01-26T12:20:47.000Z",
+			"author": {
+				"name": "Farhad AzarbarzinNiaz",
+				"url": "https://twitter.com/farhad_niaz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cab6e1447b539bc1d7eaf6e260288f220792168c7be20e38ee6504517cde999d.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"bookmarks": [
+		{
+			"id": 1338629,
+			"url": "https://nicolas-hoizey.com/links/2022/01/26/trailing-slashes-on-urls-contentious-or-settled/",
+			"date": "2022-01-26T06:00:00.000Z",
+			"author": {},
+			"via": "webmention"
+		}
+	]
+}

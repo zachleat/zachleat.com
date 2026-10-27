@@ -1,0 +1,244 @@
+{
+	"disqus": {
+		"path": "/web/w3c-status-banners/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "1559820504",
+				"parentPostId": null,
+				"date": "2014-08-26T12:44:00Z",
+				"author": "Shepazu",
+				"avatar": "https://www.gravatar.com/avatar/00c433bdfe3b32e4792544204fe98129?d=mm&s=60",
+				"message": "<p>Thanks, Zach! I've forward this to our Communications team (who's in charge of that sort of thing), with the suggestion that they consider adopting them.</p>",
+				"replies": [
+					{
+						"postId": "1560084586",
+						"parentPostId": "1559820504",
+						"date": "2014-08-26T15:35:37Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Excellent!</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 1746473,
+			"parentId": 0,
+			"url": "https://mstdn.io/@toby3d/111494506480932827",
+			"author": {
+				"name": "Maxim Lebedev",
+				"url": "https://mstdn.io/@toby3d",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/26442170286308646eada70935be82bab3794c3664fffc3d1c4311fb246cd4f0.png"
+			},
+			"date": "2023-11-29T15:19:16.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> That's all great, but it seems a bit redundant to use API of WebComponents for something simple that can be implemented on bare HTML + CSS. Besides, components don't work with JavaScript turned off, which is bad for HTML + CSS-only components.</p>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/w3c-banners/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1746474,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494519003604126",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-11-29T15:22:27.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.io/@toby3d\" class=\"u-url\">@<span>toby3d</span></a></span> Yep—you’re right. This is a JS component! I do include an example in the README that can show fallback text if you want that.</p><p>I did write a whole blog post on this exact topic recently: <a href=\"https://www.zachleat.com/web/a-taxonomy-of-web-component-types/\"><span>https://www.</span><span>zachleat.com/web/a-taxonomy-of</span><span>-web-component-types/</span></a></p>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/w3c-banners/\"></a>\n<a href=\"https://www.zachleat.com/web/a-taxonomy-of-web-component-types/\">An Attempted Taxonomy of Web Components—zachleat.com</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1746490,
+			"parentId": 0,
+			"url": "https://mastodon.social/@Kilian/111494610102452268",
+			"author": {
+				"name": "Kilian Valkhof",
+				"url": "https://mastodon.social/@Kilian",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3dffe68bae4bc78978c7a3f8253165ad5ed5c6a60f07fb508babe72b2d7afc7d.jpg"
+			},
+			"date": "2023-11-29T15:45:37.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I'm not saying I'm disappointed but I clicked the link expecting one of those \"xhtml 1.0\" style badges..</p>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/w3c-banners/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1746491,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494637533242293",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-11-29T15:52:35.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@Kilian\" class=\"u-url\">@<span>Kilian</span></a></span> ???????????????????????????????????????? someone should make this</p><p>88×31 ????</p>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/w3c-banners/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1746489,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494645624210624",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-11-29T15:54:39.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@Kilian\" class=\"u-url\">@<span>Kilian</span></a></span> oh my god don’t click this link <a href=\"https://cyber.dabamos.de/88x31/\"><span>https://</span><span>cyber.dabamos.de/88x31/</span><span></span></a> the bandwidth costs ????</p>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/w3c-banners/\"></a>\n<a href=\"https://cyber.dabamos.de/88x31/\">The 88x31 GIF Collection | Part 1</a>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1746475,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109289744030118387",
+			"date": "2023-11-29T15:42:35.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746476,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109293801852346398",
+			"date": "2023-11-29T15:42:37.000Z",
+			"author": {
+				"name": "James Nash",
+				"url": "https://mstdn.social/@cirrus",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2a8c63ac522302ce6da7a0efae0fd62c5463c1f05187c92f7d461ed9993d0c3f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746477,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109527046949352618",
+			"date": "2023-11-29T15:42:37.000Z",
+			"author": {
+				"name": "jailandrade",
+				"url": "https://mastodon.social/@jailandrade",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3c8730eba41e2b9fef7a16ae65fe5917290a8042e285885f8fa28d8d33a6ab06.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746478,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109292781915117780",
+			"date": "2023-11-29T15:42:39.000Z",
+			"author": {
+				"name": "Dave Rupert",
+				"url": "https://mastodon.social/@davatron5000",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746479,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-110656903967994170",
+			"date": "2023-11-29T15:42:41.000Z",
+			"author": {
+				"name": "katherine",
+				"url": "https://sunny.garden/@kayserifserif",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/59a482e7bd79bae82cbf5ce33b96eed9d0300703811d55b0b5e551e45871a86d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746480,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109313345749203632",
+			"date": "2023-11-29T15:42:42.000Z",
+			"author": {
+				"name": "Baldur Bjarnason",
+				"url": "https://toot.cafe/@baldur",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cc8554ba583793b416ccbb17bc1d574b8c60c5e53c11aabef6c9a8f806a5d4e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746481,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-110022783512090797",
+			"date": "2023-11-29T15:42:43.000Z",
+			"author": {
+				"name": "AZ Guy ????",
+				"url": "https://betagravity.com/@az",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746492,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109332795600984701",
+			"date": "2023-11-29T16:07:24.000Z",
+			"author": {
+				"name": "Scott Kellum :typetura:",
+				"url": "https://typetura.social/@scott",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0e93c50403f0ce01b6805405c11239d9d662e71228cf1eac88378a7ad515f474.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746494,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109306992618099193",
+			"date": "2023-11-29T16:07:26.000Z",
+			"author": {
+				"name": "Mottokrosh@mastodon.social",
+				"url": "https://mastodon.social/@Mottokrosh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/df318c1927553ff8b984222d96236a23e67335186f214ab8a2d8ab76d6368136.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746578,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109745269398908568",
+			"date": "2023-11-29T16:33:15.000Z",
+			"author": {
+				"name": "Seth A. Roby",
+				"url": "https://mastodon.social/@TALlama",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/584354955db5e646f450b8ca55ca6c8d0729459b8c15f81ff9d514ab28b63262.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746579,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109286922977455165",
+			"date": "2023-11-29T16:33:15.000Z",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://sunny.garden/@knowler",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/50ce56f39c91e30823b4e4f318af74b4e46c9debc27b9eb5cd70c94af36b7c88.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746666,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109446932953258362",
+			"date": "2023-11-29T21:12:08.000Z",
+			"author": {
+				"name": "Elly Loel ✨????",
+				"url": "https://front-end.social/@elly",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2906f05fbc1fff47b76e9bd51804d1618a81be8f3062fc8c5a2e0f18d02f8559.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1746703,
+			"url": "https://fediverse.zachleat.com/@zachleat/111494480214069700#favorited-by-109537084885684120",
+			"date": "2023-11-29T22:50:48.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://mastodon.social/@ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ff766823e2cadf38917792ab7370f2ebede63bfc6896743983d35ea18c4f815c.png"
+			},
+			"via": "webmention"
+		}
+	]
+}

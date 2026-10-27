@@ -1,0 +1,2667 @@
+{
+	"comments": [
+		{
+			"id": 1255822,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/vector-raster-why-not-both/",
+			"author": {},
+			"date": "2021-08-26T17:13:50.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1255825,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/vector-raster-why-not-both-2/",
+			"author": {},
+			"date": "2021-08-26T17:14:06.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1256014,
+			"parentId": 0,
+			"url": "https://twitter.com/Fyrd/status/1430948068971536392",
+			"author": {
+				"name": "Alexis Deveria",
+				"url": "https://twitter.com/Fyrd",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/88fe32ab7f64369b52075919f09f4cec88d1bde826cb313a4719fbc717e256e1.jpg"
+			},
+			"date": "2021-08-26T17:39:40.000Z",
+			"content": "Very cool! Love the vector + raster solution.\n\nIf you were bored, one further optimization would be to hand-craft the SVG to use a &lt;pattern&gt; for that grid instead of that big path...or possibly have a repeating background in CSS. 🤔\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256013,
+			"parentId": 0,
+			"url": "https://twitter.com/punkyio/status/1430954131548684289",
+			"author": {
+				"name": "Punky! Laboratorio Digital",
+				"url": "https://twitter.com/punkyio",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/81dd702d33b1054f70c6f4c6e0b136cf96912053975e7337093c6fd6f0b050ab.png"
+			},
+			"date": "2021-08-26T18:03:45.000Z",
+			"content": "Great solution! Thanks for sharing 🙌\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256018,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1430954319495446528",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-26T18:04:30.000Z",
+			"content": "Bored?? Never 😅\n\nAlthough I will say that because the SVG is about 4 KB gzipped it might not quite fit the back-of-the-napkin cost/benefit math I would want 🥸\n<a class=\"u-mention\" href=\"https://twitter.com/Fyrd\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256017,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1430954630192709635",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-26T18:05:44.000Z",
+			"content": "You’re welcome!\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/punkyio\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256047,
+			"parentId": 0,
+			"url": "https://twitter.com/punkyio/status/1430956382799470596",
+			"author": {
+				"name": "Punky! Laboratorio Digital",
+				"url": "https://twitter.com/punkyio",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/81dd702d33b1054f70c6f4c6e0b136cf96912053975e7337093c6fd6f0b050ab.png"
+			},
+			"date": "2021-08-26T18:12:42.000Z",
+			"content": "Image optimization: a masterclass. ⚡️\n\n<a href=\"https://twitter.com/search?q=%23svg\">#svg</a> <a href=\"https://twitter.com/search?q=%23png\">#png</a> <a href=\"https://twitter.com/search?q=%23imageoptimization\">#imageoptimization</a>\n\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/vector-raster-split/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1256012,
+			"parentId": 0,
+			"url": "https://twitter.com/davatron5000/status/1430957011294883844",
+			"author": {
+				"name": "Dave Rupert",
+				"url": "https://twitter.com/davatron5000",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/12bf29c49f4519399f5b7022c1ff1b156aa6e597a75f31dfd0d5a884ed35b341.jpg"
+			},
+			"date": "2021-08-26T18:15:12.000Z",
+			"content": "Here to say excellent use of &lt;details&gt;\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256011,
+			"parentId": 0,
+			"url": "https://twitter.com/PixelAmbacht/status/1430958147557003265",
+			"author": {
+				"name": "Roel Nieskens",
+				"url": "https://twitter.com/PixelAmbacht",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/93ef4151b9060ab234a88fd1819fdb066b9f45b910c7692357b1ba0df6878c58.jpg"
+			},
+			"date": "2021-08-26T18:19:42.000Z",
+			"content": "Sweet, yo! Would you be able to do the same layering but inside the SVG image instead of layered backgrounds of a DIV? It can do bitmap and vector after all. Or am I missing something? (DISCLAIMER: \"am I missing something\" is my middle name)\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256016,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1430958257301041157",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-26T18:20:09.000Z",
+			"content": "&lt;details&gt; is the real MVP\n<a class=\"u-mention\" href=\"https://twitter.com/davatron5000\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256015,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1430958623014932487",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-26T18:21:36.000Z",
+			"content": "Yeah—I think so! I did mention that in the middle somewhere\n<a class=\"u-mention\" href=\"https://twitter.com/PixelAmbacht\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256020,
+			"parentId": 0,
+			"url": "https://twitter.com/Fyrd/status/1430959352781758464",
+			"author": {
+				"name": "Alexis Deveria",
+				"url": "https://twitter.com/Fyrd",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/88fe32ab7f64369b52075919f09f4cec88d1bde826cb313a4719fbc717e256e1.jpg"
+			},
+			"date": "2021-08-26T18:24:30.000Z",
+			"content": "Haha, yeah absolutely agree.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256019,
+			"parentId": 0,
+			"url": "https://twitter.com/PixelAmbacht/status/1430962243685031942",
+			"author": {
+				"name": "Roel Nieskens",
+				"url": "https://twitter.com/PixelAmbacht",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/93ef4151b9060ab234a88fd1819fdb066b9f45b910c7692357b1ba0df6878c58.jpg"
+			},
+			"date": "2021-08-26T18:35:59.000Z",
+			"content": "Ah see, it's there!! Apologies for the noise.\n\nSincerely,\nRoel \"                             \" Nieskens\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256184,
+			"parentId": 0,
+			"url": "https://twitter.com/raufsamestone/status/1431008265618534408",
+			"author": {
+				"name": "Berkay🥤",
+				"url": "https://twitter.com/raufsamestone",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9beef653b6692065d483a072e82d7f87a6518892e4fe5250d593dced562b3022.jpg"
+			},
+			"date": "2021-08-26T21:38:52.000Z",
+			"content": "I think you can update/re-index OG image for previous Tweet with Card Validator. \n\n<a href=\"https://cards-dev.twitter.com/validator\">cards-dev.twitter.com/validator</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256185,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1431010949461336073",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-26T21:49:31.000Z",
+			"content": "yeah, I think Twitter lets you opt-out of a preview on a tweet if it pops one up and you delete it—which I normally like! But this time I did the wrong thing\n<a class=\"u-mention\" href=\"https://twitter.com/raufsamestone\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256193,
+			"parentId": 0,
+			"url": "https://twitter.com/AdamStddrd/status/1431016871671697411",
+			"author": {
+				"name": "Adam Stoddard",
+				"url": "https://twitter.com/AdamStddrd",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6ed0bc10bdc6792fb93bb23c61c1950edb47308f8bc8c55be53125917c52c1d9.jpg"
+			},
+			"date": "2021-08-26T22:13:03.000Z",
+			"content": "yes yes yes\n\nalong similar lines, love to use filter drop shadows instead of baking them into semi-transparent images so you can get nice soft shadows *and* those sweet gainz (reductionz?) from reducing the palette\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256195,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1431017799917481985",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-26T22:16:45.000Z",
+			"content": "ooooh yes—this is good 🏆\n<a class=\"u-mention\" href=\"https://twitter.com/AdamStddrd\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256192,
+			"parentId": 0,
+			"url": "https://twitter.com/HenriHelvetica/status/1431029038324277254",
+			"author": {
+				"name": "Henri Helvetica v2.2 👩🏾‍🚀 🇭🇹",
+				"url": "https://twitter.com/HenriHelvetica",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bfcbb68b923bd0d0337b3a4bf628669f8bdb0432a82fc2591263f2a3eb16de40.jpg"
+			},
+			"date": "2021-08-26T23:01:24.000Z",
+			"content": "nice. PNG-8s are awesome. w/o naming names, I can hear them screaming that was too much work, and send that to a service, but w/o source files, this won’t be done. Added, some will say that 8 bit webp isn’t sharp enough. It was made for this though. 👏🏾\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256197,
+			"parentId": 0,
+			"url": "https://twitter.com/HenriHelvetica/status/1431029802908233730",
+			"author": {
+				"name": "Henri Helvetica v2.2 👩🏾‍🚀 🇭🇹",
+				"url": "https://twitter.com/HenriHelvetica",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bfcbb68b923bd0d0337b3a4bf628669f8bdb0432a82fc2591263f2a3eb16de40.jpg"
+			},
+			"date": "2021-08-26T23:04:26.000Z",
+			"content": "what do you call this? Vitmap? Rastor?\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256194,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1431030253649121287",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-26T23:06:14.000Z",
+			"content": "For me the weak point is that blue oval in the SVG, I don’t think it’s raster but it ain’t looking good on iOS when I zoom in. Worth another look, that part might need to go into the raster version. Approach is still sound tho\n<a class=\"u-mention\" href=\"https://twitter.com/HenriHelvetica\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256198,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1431030410444693508",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-08-26T23:06:51.000Z",
+			"content": "SV-BMP\n<a class=\"u-mention\" href=\"https://twitter.com/HenriHelvetica\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256196,
+			"parentId": 0,
+			"url": "https://twitter.com/HenriHelvetica/status/1431031864387584007",
+			"author": {
+				"name": "Henri Helvetica v2.2 👩🏾‍🚀 🇭🇹",
+				"url": "https://twitter.com/HenriHelvetica",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bfcbb68b923bd0d0337b3a4bf628669f8bdb0432a82fc2591263f2a3eb16de40.jpg"
+			},
+			"date": "2021-08-26T23:12:38.000Z",
+			"content": "for sure the approach is wild. Ppl might not realize that putting a face on a plain background sends the file size in the clouds, and possibly forces a new format choice\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256479,
+			"parentId": 0,
+			"url": "https://twitter.com/jaffathecake/status/1431145499160109056",
+			"author": {
+				"name": "Jake Archibald",
+				"url": "https://twitter.com/jaffathecake",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7653b6becc6c69689712673d84734c954fae00a3ea1a1fcab6036af437ca9fed.jpg"
+			},
+			"date": "2021-08-27T06:44:11.000Z",
+			"content": "Nice! The raster layer would be around 50-55kb as an AVIF. It isn't a huge saving, but it means you wouldn't need to drop to 256 colours.\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/tomayac\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256568,
+			"parentId": 0,
+			"url": "https://twitter.com/shadeed9/status/1431145887804403713",
+			"author": {
+				"name": "Ahmad Shadeed",
+				"url": "https://twitter.com/shadeed9",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/83696430c67024db965cf1cd4fa8c112c95c56f70e4e7145eedbe72a5a3aed4b.jpg"
+			},
+			"date": "2021-08-27T06:45:43.000Z",
+			"content": "I enjoy reading articles like this one 😍\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/vector-raster-split/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1256478,
+			"parentId": 0,
+			"url": "https://twitter.com/NeuesAltes/status/1431150455053160448",
+			"author": {
+				"name": "Mark Tomlinson",
+				"url": "https://twitter.com/NeuesAltes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fe4a542f777d641bab93ee6ba451aa56eb05561bb1db1b27b11fda30d31066a9.jpg"
+			},
+			"date": "2021-08-27T07:03:52.000Z",
+			"content": "So, so satisfying. Thanks a lot for sharing\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256634,
+			"parentId": 0,
+			"url": "https://twitter.com/greystate/status/1431195452205150215",
+			"author": {
+				"name": "Chriztian Steinmeier",
+				"url": "https://twitter.com/greystate",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c0bd4f327f4c088381f3443c9470fbad38c0e550c7f24d0da31a1132bb07d38e.jpg"
+			},
+			"date": "2021-08-27T10:02:40.000Z",
+			"content": "Nice - and layering offers the neat possibility of adding a subtle parallax effect... 🤔\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jamstackconf\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1256632,
+			"parentId": 0,
+			"url": "https://twitter.com/jackysee/status/1431198573803225090",
+			"author": {
+				"name": "Jacky",
+				"url": "https://twitter.com/jackysee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/17f9f0308b22132de78d065aa0332849727c8a21e4e36bf8ff680a91652d0b2f.jpg"
+			},
+			"date": "2021-08-27T10:15:05.000Z",
+			"content": "Vector? Raster? Why Not Both!—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1256630,
+			"parentId": 0,
+			"url": "https://twitter.com/nucliweb/status/1431217363266031620",
+			"author": {
+				"name": "Joan León 🏞⚡️",
+				"url": "https://twitter.com/nucliweb",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/04780f81733a5e8ef1ee56b08735100d2fa94aede95db1523ad0d4ce50221bb7.jpg"
+			},
+			"date": "2021-08-27T11:29:44.000Z",
+			"content": "Vector? Raster? Why Not Both!\n<a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a> by <a href=\"https://twitter.com/zachleat\">@zachleat</a> \n\n<a href=\"https://twitter.com/search?q=%23WebPerf\">#WebPerf</a> <a href=\"https://twitter.com/search?q=%23Image\">#Image</a> <a href=\"https://twitter.com/search?q=%23ImagePerf\">#ImagePerf</a> <a href=\"https://twitter.com/search?q=%23ImageCrafters\">#ImageCrafters</a> <a href=\"https://twitter.com/search?q=%23PerfCrafters\">#PerfCrafters</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1256748,
+			"parentId": 0,
+			"url": "https://www.bram.us/2021/08/27/vector-raster-why-not-both/",
+			"author": {
+				"name": "Bramus!",
+				"url": "https://www.bram.us/author/bramus/"
+			},
+			"date": "2021-08-27T14:44:49.000Z",
+			"content": "<p><img src=\"https://www.bram.us/wordpress/wp-content/plugins/native-lazyload/assets/images/placeholder.svg\" alt=\"\" width=\"560\" height=\"410\" /></p><img src=\"https://www.bram.us/wordpress/wp-content/uploads/2021/08/preview.png\" alt=\"\" width=\"560\" height=\"410\" />\n<p>Starting off with a 10.06MB SVG, <a href=\"https://twitter.com/zachleat\">Zach Leatherman</a> tried several routes to reduce the weight of the hero image on the right side of the home page on JamStackConf.com.</p>\n<p>Eventually he settled on an approach where he layered a transparent WebP image on top of an SVG. Both layers were optimized individually, leaving only 78KB combined in the end.</p>\n<p><a href=\"https://www.zachleat.com/web/vector-raster-split/\">Vector? Raster? Why Not Both! →</a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1256865,
+			"parentId": 0,
+			"url": "https://twitter.com/webstandards_ru/status/1431270347681247236",
+			"author": {
+				"name": "Веб-стандарты",
+				"url": "https://twitter.com/webstandards_ru",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ff2f2f01750c33798a4e7aa97ed3ac505d2cec68daa231baa5ec7da51f070310.jpg"
+			},
+			"date": "2021-08-27T15:00:17.000Z",
+			"content": "Вектор? Растр? Оба? Зак Лезерман подбирает наиболее экономный по трафику способ вставки большой картинки на страницу.\n\n<a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1256846,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/vector-raster-why-not-both-3/",
+			"author": {},
+			"date": "2021-08-27T15:02:34.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1257045,
+			"parentId": 0,
+			"url": "https://twitter.com/dandenney/status/1431340400225177613",
+			"author": {
+				"name": "Dan Denney",
+				"url": "https://twitter.com/dandenney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/95eb8bd8980560b150ae6881693825cbd8c53ed42feede9ded67dbc42b279e2f.png"
+			},
+			"date": "2021-08-27T19:38:39.000Z",
+			"content": "Vector? Raster? Why Not Both!—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1257516,
+			"parentId": 0,
+			"url": "https://twitter.com/frontender_ua/status/1431582096464699397",
+			"author": {
+				"name": "Fresh Frontend Links",
+				"url": "https://twitter.com/frontender_ua",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c5048a0ddd46ec12573f95b7ce1fcb65fb8518b24d6bc010e8c8ab72596fc96d.png"
+			},
+			"date": "2021-08-28T11:39:03.000Z",
+			"content": "Vector? Raster? Why Not Both! <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1258053,
+			"parentId": 0,
+			"url": "https://twitter.com/jyzg/status/1432032251542450182",
+			"author": {
+				"name": "Jyrki Alakuijala",
+				"url": "https://twitter.com/jyzg",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/42f0026c03d8d99c846e9a949885b5831efdc80a862a8992fc7e95489b82f482.jpg"
+			},
+			"date": "2021-08-29T17:27:49.000Z",
+			"content": "<a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>\n\nWebP palettized 152 KB\nAVIF palettized 168 KB ?!\n\nWe need JPEG XL for making progress here :-]",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1258173,
+			"parentId": 0,
+			"url": "https://mailsgun.ru/%d0%b4%d0%b0%d0%b9%d0%b4%d0%b6%d0%b5%d1%81%d1%82-%d1%81%d0%b2%d0%b5%d0%b6%d0%b8%d1%85-%d0%bc%d0%b0%d1%82%d0%b5%d1%80%d0%b8%d0%b0%d0%bb%d0%be%d0%b2-%d0%b8%d0%b7-%d0%bc%d0%b8%d1%80%d0%b0-%d1%84%d1%80-75/",
+			"author": {},
+			"date": "2021-08-30T00:48:48.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1259088,
+			"parentId": 0,
+			"url": "https://twitter.com/dailydevlinks/status/1432596323635695617",
+			"author": {
+				"name": "dailydevlinks.",
+				"url": "https://twitter.com/dailydevlinks",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/520761d627ebc8dac3e344323011fe0cf765981dcfd9b5ac60dbd1ecb40f26a8.jpg"
+			},
+			"date": "2021-08-31T06:49:14.000Z",
+			"content": "📝 Vector? Raster? Why not both!\n\n🔗 <a href=\"https://www.zachleat.com/web/vector-raster-split/?utm_source=dailydevlinks.com&amp;utm_medium=link_post_dailydevlinks.com&amp;utm_campaign=link_post_dailydevlinks.com&amp;ref=dailydevlinks.com\">zachleat.com/web/vector-ras…</a>\n\n<a href=\"https://twitter.com/search?q=%23html\">#html</a> <a href=\"https://twitter.com/search?q=%23css\">#css</a> <a href=\"https://twitter.com/search?q=%23javascript\">#javascript</a> <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a>\n\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/vector-raster-split/?ref=dailydevlinks.com\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1259055,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/vector-raster-why-not-both-4/",
+			"author": {},
+			"date": "2021-08-31T06:52:35.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1259087,
+			"parentId": 0,
+			"url": "https://twitter.com/Hyriel_Mecrith/status/1432607556581593091",
+			"author": {
+				"name": "Thiery Michel",
+				"url": "https://twitter.com/Hyriel_Mecrith",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5bbea73c54ebac976a1bc38691ba73225db65b6080557ef6c68b626cec0b368f.jpg"
+			},
+			"date": "2021-08-31T07:33:52.000Z",
+			"content": "<a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1259733,
+			"parentId": 0,
+			"url": "http://studioxrio.org/en/web-design/vector-raster-why-not-both/",
+			"author": {},
+			"date": "2021-08-31T17:50:49.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1260894,
+			"parentId": 0,
+			"url": "https://twitter.com/tempertemper/status/1433314620874366978",
+			"author": {
+				"name": "Martin Underhill",
+				"url": "https://twitter.com/tempertemper",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bd43575acf24a37626c889106cba2b8fc4f08f306b0bc58f724621ae36e826d9.jpg"
+			},
+			"date": "2021-09-02T06:23:29.000Z",
+			"content": "I’ve encountered this vector + raster, two images approach to a single illustration a few times over the years <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261039,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/collective-677/",
+			"author": {},
+			"date": "2021-09-02T12:55:04.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261045,
+			"parentId": 0,
+			"url": "https://coduza.com/blog/collective-677/",
+			"author": {},
+			"date": "2021-09-02T13:35:51.000Z",
+			"content": "<p> <a href=\"https://infraredmindbody.com/\"></a></p>\n<h2><a href=\"https://infraredmindbody.com/\">Inspirational Website of the Week: Infrared</a></h2>\n<p>Soft animations and a perfect color scheme make this website’s design glow. Our pick this week.</p>\n<p><a href=\"https://infraredmindbody.com/\">Get inspired</a>\n</p>\n\n\n<p>        <a href=\"https://srv.buysellads.com/ads/long/x/TFX3VQS3TTTTTTFPCAEN4TTTTTTT73JTK6TTTTTTE4R45YVTTTTTTBP3KWANCIPP5HP6YYIWKVAIEMZ7PHPCBESEG33T\"></a></p>\nThis content is <a href=\"http://synd.co/29LDbvj\">sponsored</a> via <a href=\"http://synd.co/\">Syndicate Ads</a>\n\n<h2><a href=\"https://srv.buysellads.com/ads/long/x/TFX3VQS3TTTTTTFPCAEN4TTTTTTT73JTK6TTTTTTE4R45YVTTTTTTBP3KWANCIPP5HP6YYIWKVAIEMZ7PHPCBESEG33T\">Master new skills</a></h2>\n<p>Do you love building things? Then this event is for you! Join the community for an enjoyable night of coding.</p>\n<p>        <a href=\"https://srv.buysellads.com/ads/long/x/TFX3VQS3TTTTTTFPCAEN4TTTTTTT73JTK6TTTTTTE4R45YVTTTTTTBP3KWANCIPP5HP6YYIWKVAIEMZ7PHPCBESEG33T\">Find out more</a>\n</p>\n\n\n<p> <a href=\"https://web.dev/gpu/\"></a></p>\n<h2><a href=\"https://web.dev/gpu/\">Access modern GPU features with WebGPU</a></h2>\n<p>Learn about WebGPU and how it enables high-performance 3D graphics and data-parallel computation on the web.</p>\n<p><a href=\"https://web.dev/gpu/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://www.smashingmagazine.com/2021/09/deep-dive-wonderful-world-svg-displacement-filtering/\"></a></p>\n<h2><a href=\"https://www.smashingmagazine.com/2021/09/deep-dive-wonderful-world-svg-displacement-filtering/\">A Deep Dive Into The Wonderful World Of SVG Displacement Filtering</a></h2>\n<p>In this article, Dirk Weber explains the SVG `feDisplacementMap` filter primitive with a good number of examples to demonstrate the concept of animated displacement maps.</p>\n<p><a href=\"https://www.smashingmagazine.com/2021/09/deep-dive-wonderful-world-svg-displacement-filtering/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/\"></a></p>\n<h2><a href=\"https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/\">Why are hyperlinks blue?</a></h2>\n<p>Take a deep dive into the history of interfaces and link designs over the years and learn about the origin of the blue link we know today.</p>\n<p><a href=\"https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://www.joshwcomeau.com/animation/keyframe-animations/\"></a></p>\n<h2><a href=\"https://www.joshwcomeau.com/animation/keyframe-animations/\">An Interactive Guide to CSS Keyframe Animations with @keyframes</a></h2>\n<p>In this tutorial you’ll learn how CSS keyframes work from the ground up, and see how you can use them to build high-quality animations. By Josh W Comeau.</p>\n<p><a href=\"https://www.joshwcomeau.com/animation/keyframe-animations/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://georgefrancis.dev/writing/crafting-organic-patterns-with-voronoi-tessellations/\"></a></p>\n<h2><a href=\"https://georgefrancis.dev/writing/crafting-organic-patterns-with-voronoi-tessellations/\">Crafting Organic Patterns With Voronoi Tessellations</a></h2>\n<p>Learn to create beautiful, versatile, and organic generative patterns inspired by the natural world. By George Francis.</p>\n<p><a href=\"https://georgefrancis.dev/writing/crafting-organic-patterns-with-voronoi-tessellations/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://www.youtube.com/watch?v=aVwxzDHniEw\"></a></p>\n<h2><a href=\"https://www.youtube.com/watch?v=aVwxzDHniEw\">The Beauty of Bézier Curves</a></h2>\n<p>A wonderful video on how Bézier curves work. By Freya Holmér.</p>\n<p><a href=\"https://www.youtube.com/watch?v=aVwxzDHniEw\">Watch it</a>\n</p>\n\n\n<p> <a href=\"https://markodenic.com/tools/buttons-generator/\"></a></p>\n<h2><a href=\"https://markodenic.com/tools/buttons-generator/\">Buttons Generator</a></h2>\n<p>100+ buttons you can copy with just a click and paste into your project. By Marko Denic.</p>\n<p><a href=\"https://markodenic.com/tools/buttons-generator/\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://ishadeed.com/article/stepper-component-html-css/\"></a></p>\n<h2><a href=\"https://ishadeed.com/article/stepper-component-html-css/\">Building A Stepper Component</a></h2>\n<p>Ahmad Shadeed shows how to build a horizontal and vertical stepper component with CSS flexbox.</p>\n<p><a href=\"https://ishadeed.com/article/stepper-component-html-css/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://grotesque.basement.studio/\"></a></p>\n<h2><a href=\"https://grotesque.basement.studio/\">Basement grotesque</a></h2>\n<p>Basement grotesque is the first font by basement.studio and they did a wonderful website to present it!</p>\n<p><a href=\"https://grotesque.basement.studio/\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://couleur.io/\"></a></p>\n<h2><a href=\"https://couleur.io/\">couleur.io</a></h2>\n<p>A simple color tool to help you find good color palettes for your web projects. This tools spits out modern CSS you can use right away in your projects.</p>\n<p><a href=\"https://couleur.io/\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://css-tricks.com/exploring-the-css-paint-api-blob-animation/\"></a></p>\n<h2><a href=\"https://css-tricks.com/exploring-the-css-paint-api-blob-animation/\">Exploring the CSS Paint API: Blob Animation</a></h2>\n<p>Temani Afif shows how to pull off a blob animation using CSS with the CSS Paint API.</p>\n<p><a href=\"https://css-tricks.com/exploring-the-css-paint-api-blob-animation/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://www.zachleat.com/web/vector-raster-split/\"></a></p>\n<h2><a href=\"https://www.zachleat.com/web/vector-raster-split/\">Vector? Raster? Why Not Both!</a></h2>\n<p>Zach Leatherman ran into an interesting problem and shared what he learned from it.</p>\n<p><a href=\"https://www.zachleat.com/web/vector-raster-split/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://www.raymondcamden.com/2021/08/30/using-pdfs-with-the-jamstack-building-a-document-viewer\"></a></p>\n<h2><a href=\"https://www.raymondcamden.com/2021/08/30/using-pdfs-with-the-jamstack-building-a-document-viewer\">Using PDFs with the Jamstack – Building a Document Viewer</a></h2>\n<p>Using Adobe PDF Services to build a document viewer for your Jamstack site</p>\n<p><a href=\"https://www.raymondcamden.com/2021/08/30/using-pdfs-with-the-jamstack-building-a-document-viewer\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://dmitripavlutin.com/promise-any/\"></a></p>\n<h2><a href=\"https://dmitripavlutin.com/promise-any/\">How to Use Promise.any()</a></h2>\n<p>Learn how to use the Promise.any() to get the first fulfilled promise from an array of promises.</p>\n<p><a href=\"https://dmitripavlutin.com/promise-any/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://github.com/marceloprates/prettymaps\"></a></p>\n<h2><a href=\"https://github.com/marceloprates/prettymaps\">Prettymaps</a></h2>\n<p>A small set of Python functions to draw pretty maps from OpenStreetMap data.</p>\n<p><a href=\"https://github.com/marceloprates/prettymaps\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://blog.scottlogic.com/2021/08/31/a-primer-on-the-openai-api-1.html\"></a></p>\n<h2><a href=\"https://blog.scottlogic.com/2021/08/31/a-primer-on-the-openai-api-1.html\">A primer on the OpenAI API – Part 1</a></h2>\n<p>The first part in a series on learning how to use the OpenAI API. By Chris Price.</p>\n<p><a href=\"https://blog.scottlogic.com/2021/08/31/a-primer-on-the-openai-api-1.html\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://codepen.io/pjkarlik/pen/LYLPvbP\"></a></p>\n<h2><a href=\"https://codepen.io/pjkarlik/pen/LYLPvbP\">Infinity Zoom / Log Spherical Mapping</a></h2>\n<p>Super cool demo: taking 3D space and folding it into a sphere, using WebGL/Fragment Shader.</p>\n<p><a href=\"https://codepen.io/pjkarlik/pen/LYLPvbP\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://tympanus.net/codrops/2021/08/31/surface-sampling-in-three-js/\"></a></p>\nFrom Our Blog\n<h2><a href=\"https://tympanus.net/codrops/2021/08/31/surface-sampling-in-three-js/\">Surface Sampling in Three.js</a></h2>\n<p>Learn how to use the MeshSurfaceSampler in Three.js to create some very interesting effects.</p>\n<p><a href=\"https://tympanus.net/codrops/2021/08/31/surface-sampling-in-three-js/\">Read it</a>\n</p>\n\n<p>The post <a href=\"https://tympanus.net/codrops/collective/collective-677/\">Collective #677</a> appeared first on <a href=\"https://tympanus.net/codrops\">Codrops</a>.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261323,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/links-on-performance-iv/",
+			"author": {},
+			"date": "2021-09-02T22:43:13.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261353,
+			"parentId": 0,
+			"url": "https://marketingsolution.com.au/links-on-performance-iv/",
+			"author": {},
+			"date": "2021-09-02T23:30:26.000Z",
+			"content": "<h1>Links on Performance IV</h1>\n<ul><li>September 3, 2021</li>\n<li><a href=\"https://marketingsolution.com.au/category/web-development/\">Web Development</a></li>\n</ul>\n\n\n\n\n\n\nNo Comments\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p><a href=\"https://www.elliotclyde.nz/blog/http-caching-is-a-superpower/\"><strong>HTTP Caching is a Superpower</strong></a> — Hugh Haworth covers how the Cache-Control header is an awfully potent ingredient in web performance. I mis-read the title at first and was waiting to read about <em>HTML</em> caching. Hugh covers it a bit (like how you’d need to be careful doing so on something like a forum, where the content on pages changes rapidly), but I find it something that’s generally under-talked-about. As in, generally, people just don’t cache HTML at all, because it changes the most and it’s risky being the parent of most other cache. I only do it now because Cloudflare <a href=\"https://blog.cloudflare.com/automatic-platform-optimizations-starting-with-wordpress/\">handles it</a>. <a href=\"https://nolanlawson.com/2021/08/01/why-its-okay-for-web-components-to-use-frameworks/\"><strong>Why it’s okay for web components to use frameworks</strong></a> — I admit it rubs me the wrong way to think of web components as needing a framework at all, let alone being OK with a hogepodge of random frameworks. But Nolan Lawson digs into the nuance here. A couple of kilobytes that might be lazy loaded/code-split out is not that big of a deal, especially since the frameworks might be optimized for runtime performance. <a href=\"https://www.npmjs.com/package/web-vitals-element\"><strong>web-vitals-element</strong></a> — An npm packages from Stefan Judis that boots up a &lt;web-vitals&gt; web component showing your CLS, FID, LCP, and BVD (<a href=\"https://codepen.io/stefanjudis/pen/wvGzvWx\">demo</a>). Sorta weird it <a href=\"https://cdn.skypack.dev/web-vitals-element\">won’t build on Skypack</a>.<a href=\"https://www.youtube.com/watch?v=Lh9q3h2khlc\"><strong>Top 10 performance pitfalls</strong></a> — I probably wouldn’t have guessed <em>any</em> of the things Jake and Surma cover in this top 10 list. My guess is that the <a href=\"https://css-tricks.com/the-low-hanging-fruit-of-web-performance/\">low hanging fruit of performance</a> either becomes a bunch of non-issues through technological improvements, or it is generally handled by site owners and hosts and, thus, a new set of problems become the top offenders. <strong><a href=\"https://sia.codes/posts/render-blocking-resources/\">How to Eliminate Render-Blocking Resources: a Deep Dive</a></strong> — Sia Karamalegos: Render-blocking resources are files that ‘press pause’ on the critical rendering path. They interrupt one or more of the steps. You should be super aware of anything that is render-blocking and only render-block on purpose (like critical CSS) rather than letting it happen by accident.<a href=\"https://papyrus.dev/@PapyrusBlog/how-we-reduced-next.js-page-size-by-3.5x-and-achieved-a-98-lighthouse-score?\"><strong>How we reduced Next.js page size by 3.5x and achieved a 98 Lighthouse score</strong></a> — Colin Armstrong covers how dynamically loading assets, reducing the size of assets, and using responsive images goes along way. Fortunately, the tooling to diagnose performance problems and the tools for solving them are largely build into Next.js. The bit about PurgeCSS and Tailwind seems extra pertinant here. I think if you aren’t using PurgeCSS to remove unused Tailwind selectors (or the JIT compiler to only create the selectors you need), you’re basically doing Tailwind wrong. Shipping 350KB of CSS instead of the 10KB you need is not OK.<strong><a href=\"https://nolanlawson.com/2021/08/08/improving-responsiveness-in-text-inputs/\">Improving responsiveness in text inputs</a></strong> — Nolan Lawson covers how to prevent blocking the input event with “expensive” main thread work, using requestIdleCallback to batch UI updates.<strong><a href=\"https://www.zachleat.com/web/vector-raster-split/\">Vector? Raster? Why Not Both!</a></strong> — Zach gets the best possible file size by splitting a graphic into two parts: An SVG (vector) for the things SVG does well, and a super-optimized raster graphic (ideally AVIF) for the things it does well, then plopping them on top of one another.</p>\n<h3>More links!</h3>\n\n<p> <strong></strong></p>\n<p> Article<br /></p>\n<p> on</p>\n<p> Aug 30, 2021</p>\n<h3> <a href=\"https://css-tricks.com/links-on-performance-i/\"><br /> Links on Performance I </a><br /></h3>\n <a href=\"https://css-tricks.com/tag/performance/\">performance</a>\n\n <a href=\"https://css-tricks.com/author/chriscoyier/\"><br /></a><p> <a href=\"https://css-tricks.com/author/chriscoyier/\"><br /> Chris Coyier </a></p>\n\n<p> <strong></strong></p>\n<p> Article<br /></p>\n<p> on</p>\n<p> Aug 30, 2021</p>\n<h3> <a href=\"https://css-tricks.com/links-on-performance-ii/\"><br /> Links on Performance II </a><br /></h3>\n <a href=\"https://css-tricks.com/tag/performance/\">performance</a>\n\n <a href=\"https://css-tricks.com/author/chriscoyier/\"><br /></a><p> <a href=\"https://css-tricks.com/author/chriscoyier/\"><br /> Chris Coyier </a></p>\n\n<p> <strong></strong></p>\n<p> Article<br /></p>\n<p> on</p>\n<p> Aug 30, 2021</p>\n<h3> <a href=\"https://css-tricks.com/links-on-performance-iii/\"><br /> Links on Performance III </a><br /></h3>\n <a href=\"https://css-tricks.com/tag/performance/\">performance</a>\n\n <a href=\"https://css-tricks.com/author/chriscoyier/\"><br /></a><p> <a href=\"https://css-tricks.com/author/chriscoyier/\"><br /> Chris Coyier </a></p>\n\n\n<p>The post <a href=\"https://css-tricks.com/links-on-performance-iv/\">Links on Performance IV</a> appeared first on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href=\"https://css-tricks.com/product/mvp-supporter/\">MVP Supporter</a>.</p>\n\n\n\n\n\n\n<ul><li> <a href=\"https://marketingsolution.com.au/author/\"></a>\n</li></ul>\n<p></p>\n\n\n\n\n\n\n\n\n<h2>About Marketing Solution Australia</h2>\n<p>We are a digital marketing company with a focus on helping our customers achieve great results across several key areas.</p>\n\n <a href=\"https://marketingsolution.com.au/about-our-company/\"> <span></span> <span>Learn more about us</span> </a>\n\n\n\n\n\n\n \n\n\n\n\n\n <span></span>\n\n\n<h4>Request a free quote</h4>\n<p>We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings even when it comes to highly competitive keywords.</p>\n <a href=\"https://marketingsolution.com.au/request-a-free-seo-analysis/\"> <span></span> <span> Contact now </span> </a>\n\n\n\n\n\n\n\n<h2>Subscribe to our newsletter!</h2>\n  Notice: JavaScript is required for this content.\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n<h2>More from our blog</h2> <span><a href=\"https://marketingsolution.com.au/links-on-performance-iv/#\">See all posts</a></span>\n\n\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/i-completely-ignored-the-front-end-development-scene-for-6-months-it-was-fine/\">I completely ignored the front-end development scene for 6 months. It was fine.</a></h2>\n Have you ever fretted that front-end web development moves so fast that…\n <a href=\"https://marketingsolution.com.au/i-completely-ignored-the-front-end-development-scene-for-6-months-it-was-fine/\"> <span></span> Continue reading </a>\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/links-on-performance-iv/\">Links on Performance IV</a></h2>\n HTTP Caching is a Superpower — Hugh Haworth covers how the Cache-Control…\n <a href=\"https://marketingsolution.com.au/links-on-performance-iv/\"> <span></span> Continue reading </a>\n\n\n\n <a href=\"https://marketingsolution.com.au/how-you-can-velocity-up-internet-hosting-with-static-server-cache/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/001-logos-servers-modules-1050x938-luTWl4-400x330.png\" alt=\"Links on Performance IV\" title=\"How to Speed Up Hosting with Static Server Cache\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/how-you-can-velocity-up-internet-hosting-with-static-server-cache/\">How you can Velocity Up Internet hosting with Static Server Cache</a></h2>\n What the H double T P? If website loading slowdowns have you…\n <a href=\"https://marketingsolution.com.au/how-you-can-velocity-up-internet-hosting-with-static-server-cache/\"> <span></span> Continue reading </a>\n\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/accessing-your-knowledge-with-netlify-capabilities-and-react/\">Accessing Your Knowledge With Netlify Capabilities and React</a></h2>\n (It is a sponsored publish.) Static website turbines are fashionable for his…\n <a href=\"https://marketingsolution.com.au/accessing-your-knowledge-with-netlify-capabilities-and-react/\"> <span></span> Continue reading </a>\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/if-i-work-actually-exhausting-on-my-open-graph-photos-folks-will-share-my-weblog-posts/\">If I work actually exhausting on my Open Graph photos, folks will share my weblog posts.</a></h2>\n Zach did that factor the place every of his weblog posts has…\n <a href=\"https://marketingsolution.com.au/if-i-work-actually-exhausting-on-my-open-graph-photos-folks-will-share-my-weblog-posts/\"> <span></span> Continue reading </a>\n\n\n\n <a href=\"https://marketingsolution.com.au/interactive-studying-instruments-for-entrance-finish-builders/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/interactive-learning-tools-front-end-developers-MzIy38-400x330.jpeg\" alt=\"Links on Performance IV\" title=\"Interactive Learning Tools For Front-End Developers\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/interactive-studying-instruments-for-entrance-finish-builders/\">Interactive Studying Instruments For Entrance-Finish Builders</a></h2>\n As a result of this trade strikes so rapidly, studying new expertise…\n <a href=\"https://marketingsolution.com.au/interactive-studying-instruments-for-entrance-finish-builders/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/final-information-to-utilizing-mailchimp-and-wordpress-2021/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/using-mailchimp-wordpress-og-1-eEq3d5-400x330.png\" alt=\"Links on Performance IV\" title=\"Ultimate Guide to Using Mailchimp and WordPress (2021)\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/final-information-to-utilizing-mailchimp-and-wordpress-2021/\">Final Information to Utilizing Mailchimp and WordPress (2021)</a></h2>\n Are you in search of a information to utilizing Mailchimp with WordPress?…\n <a href=\"https://marketingsolution.com.au/final-information-to-utilizing-mailchimp-and-wordpress-2021/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/the-way-to-velocity-up-internet-hosting-with-static-server-cache/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/001-logos-servers-modules-1050x938-CVS3jr-400x330.png\" alt=\"Links on Performance IV\" title=\"How to Speed Up Hosting with Static Server Cache\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/the-way-to-velocity-up-internet-hosting-with-static-server-cache/\">The way to Velocity Up Internet hosting with Static Server Cache</a></h2>\n What the H double T P? If web site loading slowdowns have…\n <a href=\"https://marketingsolution.com.au/the-way-to-velocity-up-internet-hosting-with-static-server-cache/\"> <span></span> Continue reading </a>\n\n\n\n\n\n\n\n\n\n\n\n\n <a href=\"https://marketingsolution.com.au/links-on-performance-iv/\"> <span></span> <span>Prev. Post</span> </a>\n\n <a href=\"https://marketingsolution.com.au\"> <span></span> <span>All Posts</span> </a>\n\n <a href=\"https://marketingsolution.com.au/how-you-can-velocity-up-internet-hosting-with-static-server-cache/\"> <span></span> <span>Next Post</span> </a>\n\n\n<ul><li><span title=\"Total:\"><span>Total: </span><span>0</span></span></li>\n<li> <a href=\"https://www.facebook.com/sharer/sharer.php?u=https://marketingsolution.com.au/links-on-performance-iv/&amp;t=Links+on+Performance+IV\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/links-on-performance-iv/#\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://plus.google.com/share?url=https://marketingsolution.com.au/links-on-performance-iv/\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/links-on-performance-iv/#\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=EasySocialShareButtons&amp;title=Links+on+Performance+IV&amp;url=https://marketingsolution.com.au/links-on-performance-iv/\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n</ul>\n\n\n\n\n\n\nNo Comments\n\n\n\n\n\n\n\n<h3><span>Recent Posts</span></h3>\n<ul><li> <a href=\"https://marketingsolution.com.au/i-completely-ignored-the-front-end-development-scene-for-6-months-it-was-fine/\">I completely ignored the front-end development scene for 6 months. It was fine.</a> <span>September 3, 2021</span>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/links-on-performance-iv/\">Links on Performance IV</a> <span>September 3, 2021</span>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/how-you-can-velocity-up-internet-hosting-with-static-server-cache/\">How you can Velocity Up Internet hosting with Static Server Cache</a> <span>September 3, 2021</span>\n</li>\n</ul>\n\n<h3><span>All Website Tags</span></h3>\n\n<a href=\"https://marketingsolution.com.au/tag/absolute/\" style=\"font-size:8pt;\">absolute</a> <a href=\"https://marketingsolution.com.au/tag/all/\" style=\"font-size:8pt;\">all</a> <a href=\"https://marketingsolution.com.au/tag/anchor/\" style=\"font-size:8pt;\">anchor</a> <a href=\"https://marketingsolution.com.au/tag/any/\" style=\"font-size:8pt;\">any</a> <a href=\"https://marketingsolution.com.au/tag/back-links/\" style=\"font-size:8pt;\">back-links</a> <a href=\"https://marketingsolution.com.au/tag/branding/\" style=\"font-size:8pt;\">branding</a> <a href=\"https://marketingsolution.com.au/tag/can/\" style=\"font-size:8pt;\">can</a> <a href=\"https://marketingsolution.com.au/tag/company/\" style=\"font-size:8pt;\">company</a> <a href=\"https://marketingsolution.com.au/tag/discounts/\" style=\"font-size:8pt;\">discounts</a> <a href=\"https://marketingsolution.com.au/tag/engine/\" style=\"font-size:22pt;\">engine</a> <a href=\"https://marketingsolution.com.au/tag/google/\" style=\"font-size:8pt;\">google</a> <a href=\"https://marketingsolution.com.au/tag/hurt/\" style=\"font-size:8pt;\">hurt</a> <a href=\"https://marketingsolution.com.au/tag/images/\" style=\"font-size:8pt;\">images</a> <a href=\"https://marketingsolution.com.au/tag/importance/\" style=\"font-size:8pt;\">importance</a> <a href=\"https://marketingsolution.com.au/tag/in/\" style=\"font-size:8pt;\">in</a> <a href=\"https://marketingsolution.com.au/tag/inbound/\" style=\"font-size:8pt;\">inbound</a> <a href=\"https://marketingsolution.com.au/tag/incorporation/\" style=\"font-size:8pt;\">incorporation</a> <a href=\"https://marketingsolution.com.au/tag/linking/\" style=\"font-size:8pt;\">linking</a> <a href=\"https://marketingsolution.com.au/tag/links/\" style=\"font-size:22pt;\">links</a> <a href=\"https://marketingsolution.com.au/tag/my/\" style=\"font-size:8pt;\">my</a> <a href=\"https://marketingsolution.com.au/tag/of/\" style=\"font-size:8pt;\">of</a> <a href=\"https://marketingsolution.com.au/tag/optimization/\" style=\"font-size:8pt;\">optimization</a> <a href=\"https://marketingsolution.com.au/tag/ranking/\" style=\"font-size:8pt;\">ranking</a> <a href=\"https://marketingsolution.com.au/tag/reciprocal/\" style=\"font-size:8pt;\">reciprocal</a> <a href=\"https://marketingsolution.com.au/tag/relative/\" style=\"font-size:8pt;\">relative</a> <a href=\"https://marketingsolution.com.au/tag/search/\" style=\"font-size:22pt;\">search</a> <a href=\"https://marketingsolution.com.au/tag/search-engine-submission/\" style=\"font-size:8pt;\">search engine submission</a> <a href=\"https://marketingsolution.com.au/tag/seo/\" style=\"font-size:8pt;\">seo</a> <a href=\"https://marketingsolution.com.au/tag/strategic/\" style=\"font-size:8pt;\">strategic</a> <a href=\"https://marketingsolution.com.au/tag/submission/\" style=\"font-size:8pt;\">submission</a> <a href=\"https://marketingsolution.com.au/tag/text/\" style=\"font-size:8pt;\">text</a> <a href=\"https://marketingsolution.com.au/tag/the/\" style=\"font-size:8pt;\">the</a> <a href=\"https://marketingsolution.com.au/tag/vs/\" style=\"font-size:8pt;\">vs</a>\n\n\n\n\n\n\n\n<h3>Leave a Comment <a href=\"https://marketingsolution.com.au/links-on-performance-iv/#respond\">cancel</a>\n</h3>\n\n\n\n\n\n<p>Save my name, email, and website in this browser for the next time I comment.</p>\n\n<p></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261404,
+			"parentId": 0,
+			"url": "https://tympanus.net/codrops/collective/collective-677/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+tympanus+%28Codrops%29",
+			"author": {},
+			"date": "2021-09-03T00:16:06.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261433,
+			"parentId": 0,
+			"url": "https://pixallus.com/links-on-performance-iv/",
+			"author": {},
+			"date": "2021-09-03T01:11:58.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261440,
+			"parentId": 0,
+			"url": "https://hnikoloski.com/links-on-performance-iv/",
+			"author": {},
+			"date": "2021-09-03T01:34:43.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1261584,
+			"parentId": 0,
+			"url": "https://www.67nj.org/links-on-performance-iv/",
+			"author": {},
+			"date": "2021-09-03T05:00:41.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1262780,
+			"parentId": 0,
+			"url": "https://wpguynews.com/links-on-performance-iv/",
+			"author": {},
+			"date": "2021-09-05T00:47:51.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1263068,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/weekly-digest-35-2021/",
+			"author": {},
+			"date": "2021-09-05T22:23:35.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1263547,
+			"parentId": 0,
+			"url": "https://twitter.com/fridayfrontend/status/1434924471757033473",
+			"author": {
+				"name": "Friday Front-End",
+				"url": "https://twitter.com/fridayfrontend",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/855b6918a24f0b54d1366b6d3ed735bcf41580e64169aeb29872229b6e37b1d1.jpg"
+			},
+			"date": "2021-09-06T17:00:28.000Z",
+			"content": "Vector? Raster? Why Not Both! by <a href=\"https://twitter.com/zachleat\">@zachleat</a> <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1264783,
+			"parentId": 0,
+			"url": "https://twitter.com/pablolarah/status/1435308755110047752",
+			"author": {
+				"name": "Pablo Lara H",
+				"url": "https://twitter.com/pablolarah",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cc15795c7c784037cf207b5de90478ba12da21a45b1742e100d824bbb6efbaa8.png"
+			},
+			"date": "2021-09-07T18:27:28.000Z",
+			"content": "Vector? Raster? Why Not Both! by Zach Leatherman\n<a href=\"https://twitter.com/zachleat\">@zachleat</a>\n\n<a href=\"https://twitter.com/search?q=%23vector\">#vector</a> <a href=\"https://twitter.com/search?q=%23raster\">#raster</a> <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a>  <a href=\"https://twitter.com/search?q=%23image\">#image</a> <a href=\"https://twitter.com/search?q=%23imageoptimization\">#imageoptimization</a> <a href=\"https://twitter.com/search?q=%23webperf\">#webperf</a> \n\n<a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265135,
+			"parentId": 0,
+			"url": "https://twitter.com/frontendfront/status/1435503175222579200",
+			"author": {
+				"name": "Front-End Front",
+				"url": "https://twitter.com/frontendfront",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ebcdc52ad3935f268ed868113d323590fc49b297a8dee99f861013e7b6d44543.png"
+			},
+			"date": "2021-09-08T07:20:01.000Z",
+			"content": "Vector? Raster? Why Not Both! <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265172,
+			"parentId": 0,
+			"url": "https://twitter.com/fatihhayri/status/1435512735337533440",
+			"author": {
+				"name": "Fatih Hayrioğlu",
+				"url": "https://twitter.com/fatihhayri",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/166b7d0568c42ab788f9402df85f2de8a48f42ae63af7cff290fbe60aa243bcb.jpg"
+			},
+			"date": "2021-09-08T07:58:01.000Z",
+			"content": "Bu kadar resim formatı olması kafa karıştırsa da sonuçta iyi birşey.\n\nVector? Raster? Why Not Both!—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/vector-raster-split\">zachleat.com/web/vector-ras…</a>\n\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/vector-raster-split/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265239,
+			"parentId": 0,
+			"url": "https://twitter.com/FrontendDaily/status/1435574642341724163",
+			"author": {
+				"name": "Frontend Daily 🚀",
+				"url": "https://twitter.com/FrontendDaily",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/04a27cee1ca1fb33ce217596782beb0ee613f89ca43be3b35d6a97a1437e1cd6.jpg"
+			},
+			"date": "2021-09-08T12:04:01.000Z",
+			"content": "Vector? Raster? Why Not Both!: <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1265379,
+			"parentId": 0,
+			"url": "https://twitter.com/sn0ff_/status/1435684524613062665",
+			"author": {
+				"name": "manu",
+				"url": "https://twitter.com/sn0ff_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5ce586660024f46e7e816cc872446bbba0f1a8d37d641f48d7264773de4ffd5b.jpg"
+			},
+			"date": "2021-09-08T19:20:39.000Z",
+			"content": "Awesome approach by <a href=\"https://twitter.com/zachleat\">@zachleat</a>  to minimise images for the web! Just separate parts of images that are nicely handled by vectors in SVGs and place the other stuff as an optimised rastered image on it.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/vector-raster-split/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1269073,
+			"parentId": 0,
+			"url": "https://marketingsolution.com.au/jamstack-conf-2021/",
+			"author": {},
+			"date": "2021-09-14T15:30:37.000Z",
+			"content": "<h1>Jamstack Conf 2021</h1>\n<ul><li>September 15, 2021</li>\n<li><a href=\"https://marketingsolution.com.au/category/web-development/\">Web Development</a></li>\n</ul>\n\n\n\n\n\n\nNo Comments\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>(This is a <a href=\"https://css-tricks.com/advertising\">sponsored post</a>.)</p>\n<p><strong>What?</strong> <a href=\"https://jamstackconf.com/#/\">Jamstack Conf!</a> It’s the best! Learn what’s happening and what’s next for this hot ecosystem.</p>\n<p><strong>When?</strong> October 6–7, 2021</p>\n<p><strong>Where?</strong> Virtual / online.</p>\n<p><strong>How much?</strong> It’s free! There are workshops as well though, at $100 a seat.</p>\n<p><strong>Who?</strong> You! Oh you mean speakers? Netlify’s CEO Matt Biilmann gives the opening talk and I’d expect some zingers in there (I’ve been surprised at stuff in this talk three years in a row now). Oh look, <a href=\"https://twitter.com/bholmesdev\">Ben Holmes</a> is there — remember <a href=\"https://css-tricks.com/slinkity/\">me mentioning</a> <a href=\"https://slinkity.dev/\">Slinkity</a> the other day? And <a href=\"https://twitter.com/fimion\">Alex Riviere</a> — remember his <a href=\"https://css-trickz.com/\">CSS-Trickz</a> that I <a href=\"https://css-trickzz.netlify.app/\">riffed off</a> with Astro, which Netlify is now <a href=\"https://twitter.com/Netlify/status/1437433399220768771\">supporting</a>. Those are just some names I recognize. I’m equally excited about hearing from people I don’t know (yet!) and their interesting topics.</p>\n<p><strong>Why?</strong> Because conferences focused around important of-the-time technologies are the best. And because you can make a <a href=\"https://jamstackconf.com/badge/make/\">cool badge</a>.</p>\n<p>Thanks for the support Netlify!</p>\n<p>Ooooo looks like that <a href=\"https://www.zachleat.com/web/vector-raster-split/\">interesting image situation</a> Zach was blogging about the other day is the header for this very conference.</p>\n<p><a href=\"https://jamstackconf.com/\" title=\"Direct link to featured article\">Direct Link to Article</a> — <a href=\"https://css-tricks.com/jamstack-conf-2021/\">Permalink</a></p>\n<p>The post <a href=\"https://css-tricks.com/jamstack-conf-2021/\">Jamstack Conf 2021</a> appeared first on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href=\"https://css-tricks.com/product/mvp-supporter/\">MVP Supporter</a>.</p>\n\n\n\n\n\n\n<ul><li> <a href=\"https://marketingsolution.com.au/author/\"></a>\n</li></ul>\n<p></p>\n\n\n\n\n\n\n\n\n<h2>About Marketing Solution Australia</h2>\n<p>We are a digital marketing company with a focus on helping our customers achieve great results across several key areas.</p>\n\n <a href=\"https://marketingsolution.com.au/about-our-company/\"> <span></span> <span>Learn more about us</span> </a>\n\n\n\n\n\n\n \n\n\n\n\n\n <span></span>\n\n\n<h4>Request a free quote</h4>\n<p>We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings even when it comes to highly competitive keywords.</p>\n <a href=\"https://marketingsolution.com.au/request-a-free-seo-analysis/\"> <span></span> <span> Contact now </span> </a>\n\n\n\n\n\n\n\n<h2>Subscribe to our newsletter!</h2>\n  Notice: JavaScript is required for this content.\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n<h2>More from our blog</h2> <span><a href=\"https://marketingsolution.com.au/jamstack-conf-2021/#\">See all posts</a></span>\n\n\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/jamstack-conf-2021/\">Jamstack Conf 2021</a></h2>\n (This is a sponsored post.) What? Jamstack Conf! It’s the best! Learn…\n <a href=\"https://marketingsolution.com.au/jamstack-conf-2021/\"> <span></span> Continue reading </a>\n\n\n\n<h2><a href=\"https://marketingsolution.com.au/building-a-form-in-php-using-domdocument/\">Building a Form in PHP Using DOMDocument</a></h2>\n Templating makes the web go round. The synthesis of data and structure…\n <a href=\"https://marketingsolution.com.au/building-a-form-in-php-using-domdocument/\"> <span></span> Continue reading </a>\n\n\n\n <a href=\"https://marketingsolution.com.au/the-energy-of-pen-and-paper-sketching/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/power-pen-paper-sketching-4H3igY-400x330.jpeg\" alt=\"Jamstack Conf 2021\" title=\"The Power Of Pen And Paper Sketching\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/the-energy-of-pen-and-paper-sketching/\">The Energy Of Pen And Paper Sketching</a></h2>\n Have to design one thing? It may be tempting to start out…\n <a href=\"https://marketingsolution.com.au/the-energy-of-pen-and-paper-sketching/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/easy-methods-to-rank-new-wordpress-content-material-quicker-in-6-straightforward-steps/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/rank-new-content-og-dD9vAF-400x330.png\" alt=\"Jamstack Conf 2021\" title=\"How to Rank New WordPress Content Faster (In 6 Easy Steps)\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/easy-methods-to-rank-new-wordpress-content-material-quicker-in-6-straightforward-steps/\">Easy methods to Rank New WordPress Content material Quicker (In 6 Straightforward Steps)</a></h2>\n Do you need to rank new WordPress content material quicker? Typically search…\n <a href=\"https://marketingsolution.com.au/easy-methods-to-rank-new-wordpress-content-material-quicker-in-6-straightforward-steps/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/simply-join-new-relic-for-free-with-wpmu-dev-hosted-wordpress-websites/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/New-relic-overview-mXXYHt-400x330.png\" alt=\"Jamstack Conf 2021\" title=\"Easily Connect New Relic (for Free!) with WPMU DEV Hosted WordPress Sites\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/simply-join-new-relic-for-free-with-wpmu-dev-hosted-wordpress-websites/\">Simply Join New Relic (for Free!) with WPMU DEV Hosted WordPress Websites</a></h2>\n Use New Relic with WPMU DEV internet hosting to determine and rapidly…\n <a href=\"https://marketingsolution.com.au/simply-join-new-relic-for-free-with-wpmu-dev-hosted-wordpress-websites/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/how-to-manually-migrate-wordpress-websites-rapidly-with-no-internet-hosting-downtime/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/shipper-pro-wp-migration-plugin-Plru0r-400x330.png\" alt=\"Jamstack Conf 2021\" title=\"How To Manually Migrate WordPress Sites Quickly With No Hosting Downtime\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/how-to-manually-migrate-wordpress-websites-rapidly-with-no-internet-hosting-downtime/\">How To Manually Migrate WordPress Websites Rapidly With No Internet hosting Downtime</a></h2>\n Migrating a reside web site from one server to a different is…\n <a href=\"https://marketingsolution.com.au/how-to-manually-migrate-wordpress-websites-rapidly-with-no-internet-hosting-downtime/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/simply-join-new-relic-for-free-with-wpmu-dev-hosted-wordpress-websites-2/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/New-relic-overview-pKOv1w-400x330.png\" alt=\"Jamstack Conf 2021\" title=\"Easily Connect New Relic (for Free!) with WPMU DEV Hosted WordPress Sites\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/simply-join-new-relic-for-free-with-wpmu-dev-hosted-wordpress-websites-2/\">Simply Join New Relic (for Free!) with WPMU DEV Hosted WordPress Websites</a></h2>\n Use New Relic with WPMU DEV internet hosting to establish and rapidly…\n <a href=\"https://marketingsolution.com.au/simply-join-new-relic-for-free-with-wpmu-dev-hosted-wordpress-websites-2/\"> <span></span> Continue reading </a>\n\n\n\n\n <a href=\"https://marketingsolution.com.au/grainy-gradients/\"><img src=\"https://marketingsolution.com.au/wp-content/uploads/2021/09/d310e584818869.5d68b0aa18fdf-edited-rUfnJU-400x330.png\" alt=\"Jamstack Conf 2021\" title=\"Grainy Gradients\" /></a>\n\n\n<h2><a href=\"https://marketingsolution.com.au/grainy-gradients/\">Grainy Gradients</a></h2>\n Flick thru Dribbble or Behance, and also you’ll discover designers utilizing a…\n <a href=\"https://marketingsolution.com.au/grainy-gradients/\"> <span></span> Continue reading </a>\n\n\n\n\n\n\n\n\n\n\n\n\n <a href=\"https://marketingsolution.com.au/jamstack-conf-2021/\"> <span></span> <span>Prev. Post</span> </a>\n\n <a href=\"https://marketingsolution.com.au\"> <span></span> <span>All Posts</span> </a>\n\n <a href=\"https://marketingsolution.com.au/the-energy-of-pen-and-paper-sketching/\"> <span></span> <span>Next Post</span> </a>\n\n\n<ul><li><span title=\"Total:\"><span>Total: </span><span>0</span></span></li>\n<li> <a href=\"https://www.facebook.com/sharer/sharer.php?u=https://marketingsolution.com.au/jamstack-conf-2021/&amp;t=Jamstack+Conf+2021\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/jamstack-conf-2021/#\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://plus.google.com/share?url=https://marketingsolution.com.au/jamstack-conf-2021/\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/jamstack-conf-2021/#\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n<li> <a href=\"https://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=EasySocialShareButtons&amp;title=Jamstack+Conf+2021&amp;url=https://marketingsolution.com.au/jamstack-conf-2021/\" title=\"\"><span></span><span><span>0</span></span></a>\n</li>\n</ul>\n\n\n\n\n\n\nNo Comments\n\n\n\n\n\n\n\n<h3><span>Recent Posts</span></h3>\n<ul><li> <a href=\"https://marketingsolution.com.au/jamstack-conf-2021/\">Jamstack Conf 2021</a> <span>September 15, 2021</span>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/building-a-form-in-php-using-domdocument/\">Building a Form in PHP Using DOMDocument</a> <span>September 15, 2021</span>\n</li>\n<li> <a href=\"https://marketingsolution.com.au/the-energy-of-pen-and-paper-sketching/\">The Energy Of Pen And Paper Sketching</a> <span>September 14, 2021</span>\n</li>\n</ul>\n\n<h3><span>All Website Tags</span></h3>\n\n<a href=\"https://marketingsolution.com.au/tag/absolute/\" style=\"font-size:8pt;\">absolute</a> <a href=\"https://marketingsolution.com.au/tag/all/\" style=\"font-size:8pt;\">all</a> <a href=\"https://marketingsolution.com.au/tag/anchor/\" style=\"font-size:8pt;\">anchor</a> <a href=\"https://marketingsolution.com.au/tag/any/\" style=\"font-size:8pt;\">any</a> <a href=\"https://marketingsolution.com.au/tag/back-links/\" style=\"font-size:8pt;\">back-links</a> <a href=\"https://marketingsolution.com.au/tag/branding/\" style=\"font-size:8pt;\">branding</a> <a href=\"https://marketingsolution.com.au/tag/can/\" style=\"font-size:8pt;\">can</a> <a href=\"https://marketingsolution.com.au/tag/company/\" style=\"font-size:8pt;\">company</a> <a href=\"https://marketingsolution.com.au/tag/discounts/\" style=\"font-size:8pt;\">discounts</a> <a href=\"https://marketingsolution.com.au/tag/engine/\" style=\"font-size:22pt;\">engine</a> <a href=\"https://marketingsolution.com.au/tag/google/\" style=\"font-size:8pt;\">google</a> <a href=\"https://marketingsolution.com.au/tag/hurt/\" style=\"font-size:8pt;\">hurt</a> <a href=\"https://marketingsolution.com.au/tag/images/\" style=\"font-size:8pt;\">images</a> <a href=\"https://marketingsolution.com.au/tag/importance/\" style=\"font-size:8pt;\">importance</a> <a href=\"https://marketingsolution.com.au/tag/in/\" style=\"font-size:8pt;\">in</a> <a href=\"https://marketingsolution.com.au/tag/inbound/\" style=\"font-size:8pt;\">inbound</a> <a href=\"https://marketingsolution.com.au/tag/incorporation/\" style=\"font-size:8pt;\">incorporation</a> <a href=\"https://marketingsolution.com.au/tag/linking/\" style=\"font-size:8pt;\">linking</a> <a href=\"https://marketingsolution.com.au/tag/links/\" style=\"font-size:22pt;\">links</a> <a href=\"https://marketingsolution.com.au/tag/my/\" style=\"font-size:8pt;\">my</a> <a href=\"https://marketingsolution.com.au/tag/of/\" style=\"font-size:8pt;\">of</a> <a href=\"https://marketingsolution.com.au/tag/optimization/\" style=\"font-size:8pt;\">optimization</a> <a href=\"https://marketingsolution.com.au/tag/ranking/\" style=\"font-size:8pt;\">ranking</a> <a href=\"https://marketingsolution.com.au/tag/reciprocal/\" style=\"font-size:8pt;\">reciprocal</a> <a href=\"https://marketingsolution.com.au/tag/relative/\" style=\"font-size:8pt;\">relative</a> <a href=\"https://marketingsolution.com.au/tag/search/\" style=\"font-size:22pt;\">search</a> <a href=\"https://marketingsolution.com.au/tag/search-engine-submission/\" style=\"font-size:8pt;\">search engine submission</a> <a href=\"https://marketingsolution.com.au/tag/seo/\" style=\"font-size:8pt;\">seo</a> <a href=\"https://marketingsolution.com.au/tag/strategic/\" style=\"font-size:8pt;\">strategic</a> <a href=\"https://marketingsolution.com.au/tag/submission/\" style=\"font-size:8pt;\">submission</a> <a href=\"https://marketingsolution.com.au/tag/text/\" style=\"font-size:8pt;\">text</a> <a href=\"https://marketingsolution.com.au/tag/the/\" style=\"font-size:8pt;\">the</a> <a href=\"https://marketingsolution.com.au/tag/vs/\" style=\"font-size:8pt;\">vs</a>\n\n\n\n\n\n\n\n<h3>Leave a Comment <a href=\"https://marketingsolution.com.au/jamstack-conf-2021/#respond\">cancel</a>\n</h3>\n\n\n\n\n\n<p>Save my name, email, and website in this browser for the next time I comment.</p>\n\n<p></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1269141,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/jamstack-conf-2021/",
+			"author": {},
+			"date": "2021-09-14T16:24:27.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1269431,
+			"parentId": 0,
+			"url": "https://www.67nj.org/jamstack-conf-2021/",
+			"author": {},
+			"date": "2021-09-15T05:00:44.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1269952,
+			"parentId": 0,
+			"url": "https://twitter.com/wpexpert3/status/1438356013359538180",
+			"author": {
+				"name": "WP Expert | WordPress,Web Design & Marketing",
+				"url": "https://twitter.com/wpexpert3",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4bb6f3a137a5e77f66aa38ec21ae9e210d262ba5c87990b1e30a68cd0b5453ad.jpg"
+			},
+			"date": "2021-09-16T04:16:11.000Z",
+			"content": "Insights into chosing between vector or raster images.\n\n<a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1270964,
+			"parentId": 0,
+			"url": "https://twitter.com/fstackbulletin/status/1438818771410554885",
+			"author": {
+				"name": "FullStack Bulletin",
+				"url": "https://twitter.com/fstackbulletin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3704dca248c3d9c00a5f50b5e009639cb4224d1d2e29be0e81ed4cd7c98619af.jpg"
+			},
+			"date": "2021-09-17T10:55:01.000Z",
+			"content": "Vector? Raster? Why Not Both <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1271082,
+			"parentId": 0,
+			"url": "https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/",
+			"author": {
+				"name": "RSSFeeds Cloud",
+				"url": "https://rssfeeds.cloudsite.builders/author/rssfeeds/",
+				"avatarUrl": "https://avatars.webmention.io/secure.gravatar.com/5083805dd8731631861a70d8f13c98f413e7644f108706a84cc90c3ce4c3d06c.png"
+			},
+			"date": "2021-09-17T14:00:00.000Z",
+			"content": "<p>Welcome to ISSUE #91 of The Overflow! This newsletter is by developers, for developers, written and curated by the Stack Overflow team and <a href=\"https://itr-links.stackoverflow.email/u/click?_t=3603a3d8f3104ca5bd7015a5845f7fb7&amp;_m=EoL62DB0PIGuXz8jH5uBuQ84lXlHlps2&amp;_e=_QiVw4xkxL6Kq_I-OU4afBnKfI77FjoIfX88HTVRZxPuTd2bnAMrrH9rcbsb0dWeVEF1qnpHf4xYVNc9DjG8B3SxoCwGD7YNwE1j5XUlAoVN5IWubZGRkJQZDmmaOZBv48jI4i91xWdFCil-LQ1NSRFjmqF5DoNWqj0-C-Jd-e6BG04-YOMtUtGjjvW4FlO4SiDdPs_9w2phRLlieyDSowbBJXd8neaip9JCBAeEhORiLVYGsioAE1W0vQlkjGKF\">Cassidy Williams</a> at <a href=\"https://itr-links.stackoverflow.email/u/click?_t=3603a3d8f3104ca5bd7015a5845f7fb7&amp;_m=EoL62DB0PIGuXz8jH5uBuQ84lXlHlps2&amp;_e=_QiVw4xkxL6Kq_I-OU4afOZOM0oCqsuuy0jKIrvb1QwkHWIZOMWNPCK6iuSTMOLeVDuTWeKOcbbyBczybLGtoNQkE84uGWTIEgGhFcxEULL45YJLR4857Ii-0ehWwRpRtjVPtwUxxOtY9-B2oCRv3dmx-KEES0t57P4_TNE4xFT-W5TGiXBreKWRyHfSL-Ozr796X8rmwbKE4P01pm8iSRIwfptm3apXxzvS_usQlDNLQGeGDgkjk55n1OBtvYt6oHij-wFSi5PdDR16hvrYr7E3MKhupgD-zGOVEWxRdxJ-RcBKrj9bAExDUmk948bZeThbs8xuJpwrwNDQkq5QPw%3D%3D\">Netlify</a>. This week: scaling front-end design with a system, helping fighter jets score hits with radar, and ignoring the front-end development scene without missing a beat.</p>\n    \n        <b>Contents</b>                    <span>\n                <a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/#\">hide</a>\n            </span>\n            \n\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/#From_the_blog\">\n                    <span>1</span>\n                <span>From the blog</span>\n    </a>\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/#Interesting_questions\">\n                    <span>2</span>\n                <span>Interesting questions</span>\n    </a>\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/#Links_from_around_the_web\">\n                    <span>3</span>\n                <span>Links from around the web</span>\n    </a>\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/#Share_this\">\n                    <span>3.1</span>\n                <span>Share this:</span>\n    </a>\n    \n    <a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/#Related\">\n                    <span>3.2</span>\n                <span>Related</span>\n    </a>\n    \n\n\n\n\n\n<h2><span>From the blog</span></h2>\n<p><a href=\"https://stackoverflow.blog/2021/09/06/scaling-front-end-design-with-a-design-system/\"><strong>Scaling front end design with a design system</strong></a> <em>stackoverflow.blog</em><br />Building the same UI components over and over? There is a better way.</p>\n<p><a href=\"https://stackoverflow.blog/2021/09/08/observability-is-key-to-the-future-of-software-and-your-devops-career/\"><strong>Observability is key to the future of software (and your DevOps career)</strong></a> <em>stackoverflow.blog</em><br />Observability platforms enable you to easily figure out what’s happening with every request and to identify the cause of issues fast. It’s a valuable skill to have, even if it’s not your full time career.</p>\n<p><a href=\"https://stackoverflow.blog/2021/09/08/podcast-373-authorization-is-complex-oso-is-a-library-designed-to-help-you-structure-it/\"><strong>Podcast 373: Authorization is complex. Oso is a library designed to help you structure it.</strong></a> <em>stackoverflow.blog</em><br />What if it was as easy to add authorization logic to your app as it was to add user authentication?</p>\n<p><a href=\"https://pages.awscloud.com/AWSMP-H2-DEV-low-code-accelerate-development.html?trk=el_a134p000007CODyAAO&amp;trkCampaign=AWSMP_web_dev_mult_low-code-accelerate-development&amp;sc_channel=el&amp;sc_campaign=el_Stack-Overflow_newsletter_Namer&amp;sc_outcome=Marketplace&amp;sc_geo=NAMER&amp;sc_country=US\"><strong>How to use low-code to accelerate application development </strong></a> <em>promotion</em><br />Join experts from DevOps Institute and AWS in this webinar to explore low-code development, best-fit use cases, practical tools for developers and how to achieve your application delivery goals with AWS. </p>\n<h2><span>Interesting questions</span></h2>\n<p><a href=\"https://stackoverflow.com/questions/27415586/using-linq-to-generate-prime-numbers\"><strong>Using LINQ to generate prime numbers</strong></a> <em>stackoverflow.com</em><br />Want to ace your next technical interview? Thanks to Shujaat Hussain for the heads up!</p>\n<p><a href=\"https://aviation.stackexchange.com/questions/89092/how-is-radar-used-to-help-aiming-a-gun-on-fighter-jets\"><strong>How is radar used to help aiming a gun on fighter jets?</strong></a> <em>aviation.stackexchange.com</em><br />Radar can get you a whole bunch of information that your eyeballs just can’t.</p>\n<p><a href=\"https://superuser.com/questions/1675104/why-are-optical-disc-drives-slower-than-hard-disk-drives\"><strong>Why are optical disc drives slower than hard disk drives?</strong></a> <em>superuser.com</em><br />It’s probably because you keep putting your fingers on the DVD. </p>\n<p><a href=\"https://networkengineering.stackexchange.com/questions/76142/why-can-pppoe-connect-to-a-gateway-which-is-not-in-the-same-subnet\"><strong>Why can PPPoE connect to a gateway which is not in the same subnet?</strong></a> <em>networkengineering.stackexchange.com</em><br />The clue to the answer is in the name of the protocol: PPP over Ethernet.</p>\n<h2><span>Links from around the web</span></h2>\n<p><a href=\"https://www.zachleat.com/web/vector-raster-split/\"><strong>Vector? Raster? Why not both!</strong></a> <em>www.zachleat.com</em><br />Sometimes it’s hard to decide if you want to use a vector, like an SVG, or a raster, like a PNG… what if you didn’t have to choose just one?</p>\n<p><a href=\"https://dmitripavlutin.com/react-context-and-usecontext/\"><strong>A Guide to React Context and useContext() Hook</strong></a> <em>dmitripavlutin.com</em><br />When you’re building React apps, folks often think that you have to use the Context API to share state. It’s optional, and this guide dives into both good and bad use cases.</p>\n<p><a href=\"https://rachsmith.com/i-completely-ignored-the-front-end-development-scene-for-6-months-it-was-fine/\"><strong>I completely ignored the front end development scene for six months. It was fine</strong></a> <em>rachsmith.com</em><br />In tech, we think we have to stay on top of everything, or we’ll become irrelevant. That is not the case! Rach Smith makes some great points here if you ever are worried about keeping up.</p>\n<p><a href=\"https://thenewstack.io/facebooks-golang-object-relational-mapper-moves-to-the-linux-foundation/\"><strong>Facebook’s Golang object relational mapper moves to the Linux Foundation</strong></a> <em>thenewstack.io</em><br />If you love something, let it Go. Facebook’s Go entity framework Ent has moved to the Linux Foundation! </p>\n<p>Onboard, organize, and bring your team up to speed in a jiffy. <a href=\"https://itr-links.stackoverflow.email/u/click?_t=3603a3d8f3104ca5bd7015a5845f7fb7&amp;_m=J2j24lxDQTEuwPd5Cqu5ugxEP4Nup0Hd&amp;_e=tvjhMrv7atYcgrppTk1g939n0TOMqK8VK0FIJna3k3KJASzVGae_sX5sf3KPi1hf2i5bxdA9xhH1f-iiMOO7ZFhn7xzAMFIbYnBhpTVT4YaVxNFzFGdAHiiEmx7YErIIVxBKkYUg6iknFjIhWONGTkIJn8IqBwnVV0l3yY7ScIAISOmXKMdnUAqYDRZbTBMJIkKY_QpH6yZNU_eh54wXqDW8Wpo2teMbvQF4Xm7qqXJd83J9ZY2IcjPlLJTDAm59hcKcidFcXov0SI1SA2sdJyQvN3-FBHLcc6AOGJQuveBkeTVp2-deuu3Ntnjx81ZzrM2rO56BYZb0_0JMMxOo0T1dQmOSzvTyeYRljnArFYMAOnBwZPb7gsBCwG0r13Z9YZh9Whu6zwJWSvKiJLX8Eg%3D%3D\">Try Stack Overflow for Teams</a>.</p>\n<p>The post <a href=\"https://stackoverflow.blog/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/\">The Overflow #91: Observability is the future (of your DevOps career)</a> appeared first on <a href=\"https://stackoverflow.blog/\">Stack Overflow Blog</a>.</p>\n\n\n<h3><span>Share this:</span></h3>\n\n<ul><li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=twitter\" title=\"Click to share on Twitter\"><span>Twitter</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=facebook\" title=\"Click to share on Facebook\"><span>Facebook</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=linkedin\" title=\"Click to share on LinkedIn\"><span>LinkedIn</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=reddit\" title=\"Click to share on Reddit\"><span>Reddit</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=tumblr\" title=\"Click to share on Tumblr\"><span>Tumblr</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=pinterest\" title=\"Click to share on Pinterest\"><span>Pinterest</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/#\"><span>More</span></a></li>\n<li>\n</li></ul><ul><li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/#print\" title=\"Click to print\"><span>Print</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=pocket\" title=\"Click to share on Pocket\"><span>Pocket</span></a></li>\n<li>\n</li><li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=telegram\" title=\"Click to share on Telegram\"><span>Telegram</span></a></li>\n<li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=jetpack-whatsapp\" title=\"Click to share on WhatsApp\"><span>WhatsApp</span></a></li>\n<li>\n</li><li><a href=\"https://rssfeeds.cloudsite.builders/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/?share=skype\" title=\"Click to share on Skype\"><span>Skype</span></a></li>\n<li>\n</li></ul>\n\n\n\n\t<h3><span><em>Related</em></span></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1271061,
+			"parentId": 0,
+			"url": "https://coduza.com/blog/the-overflow-91-observability-is-the-future-of-your-devops-career/",
+			"author": {},
+			"date": "2021-09-17T14:47:07.000Z",
+			"content": "<p>Welcome to ISSUE #91 of The Overflow! This newsletter is by developers, for developers, written and curated by the Stack Overflow team and <a href=\"https://itr-links.stackoverflow.email/u/click?_t=3603a3d8f3104ca5bd7015a5845f7fb7&amp;_m=EoL62DB0PIGuXz8jH5uBuQ84lXlHlps2&amp;_e=_QiVw4xkxL6Kq_I-OU4afBnKfI77FjoIfX88HTVRZxPuTd2bnAMrrH9rcbsb0dWeVEF1qnpHf4xYVNc9DjG8B3SxoCwGD7YNwE1j5XUlAoVN5IWubZGRkJQZDmmaOZBv48jI4i91xWdFCil-LQ1NSRFjmqF5DoNWqj0-C-Jd-e6BG04-YOMtUtGjjvW4FlO4SiDdPs_9w2phRLlieyDSowbBJXd8neaip9JCBAeEhORiLVYGsioAE1W0vQlkjGKF\">Cassidy Williams</a> at <a href=\"https://itr-links.stackoverflow.email/u/click?_t=3603a3d8f3104ca5bd7015a5845f7fb7&amp;_m=EoL62DB0PIGuXz8jH5uBuQ84lXlHlps2&amp;_e=_QiVw4xkxL6Kq_I-OU4afOZOM0oCqsuuy0jKIrvb1QwkHWIZOMWNPCK6iuSTMOLeVDuTWeKOcbbyBczybLGtoNQkE84uGWTIEgGhFcxEULL45YJLR4857Ii-0ehWwRpRtjVPtwUxxOtY9-B2oCRv3dmx-KEES0t57P4_TNE4xFT-W5TGiXBreKWRyHfSL-Ozr796X8rmwbKE4P01pm8iSRIwfptm3apXxzvS_usQlDNLQGeGDgkjk55n1OBtvYt6oHij-wFSi5PdDR16hvrYr7E3MKhupgD-zGOVEWxRdxJ-RcBKrj9bAExDUmk948bZeThbs8xuJpwrwNDQkq5QPw%3D%3D\">Netlify</a>. This week: scaling front-end design with a system, helping fighter jets score hits with radar, and ignoring the front-end development scene without missing a beat.</p>\n<h2>From the blog</h2>\n<p><a href=\"https://stackoverflow.blog/2021/09/06/scaling-front-end-design-with-a-design-system/\"><strong>Scaling front end design with a design system</strong></a> <em>stackoverflow.blog</em><br />Building the same UI components over and over? There is a better way.</p>\n<p><a href=\"https://stackoverflow.blog/2021/09/08/observability-is-key-to-the-future-of-software-and-your-devops-career/\"><strong>Observability is key to the future of software (and your DevOps career)</strong></a> <em>stackoverflow.blog</em><br />Observability platforms enable you to easily figure out what’s happening with every request and to identify the cause of issues fast. It’s a valuable skill to have, even if it’s not your full time career.</p>\n<p><a href=\"https://stackoverflow.blog/2021/09/08/podcast-373-authorization-is-complex-oso-is-a-library-designed-to-help-you-structure-it/\"><strong>Podcast 373: Authorization is complex. Oso is a library designed to help you structure it.</strong></a> <em>stackoverflow.blog</em><br />What if it was as easy to add authorization logic to your app as it was to add user authentication?</p>\n<p><a href=\"https://pages.awscloud.com/AWSMP-H2-DEV-low-code-accelerate-development.html?trk=el_a134p000007CODyAAO&amp;trkCampaign=AWSMP_web_dev_mult_low-code-accelerate-development&amp;sc_channel=el&amp;sc_campaign=el_Stack-Overflow_newsletter_Namer&amp;sc_outcome=Marketplace&amp;sc_geo=NAMER&amp;sc_country=US\"><strong>How to use low-code to accelerate application development </strong></a> <em>promotion</em><br />Join experts from DevOps Institute and AWS in this webinar to explore low-code development, best-fit use cases, practical tools for developers and how to achieve your application delivery goals with AWS. </p>\n<h2>Interesting questions</h2>\n<p><a href=\"https://stackoverflow.com/questions/27415586/using-linq-to-generate-prime-numbers\"><strong>Using LINQ to generate prime numbers</strong></a> <em>stackoverflow.com</em><br />Want to ace your next technical interview? Thanks to Shujaat Hussain for the heads up!</p>\n<p><a href=\"https://aviation.stackexchange.com/questions/89092/how-is-radar-used-to-help-aiming-a-gun-on-fighter-jets\"><strong>How is radar used to help aiming a gun on fighter jets?</strong></a> <em>aviation.stackexchange.com</em><br />Radar can get you a whole bunch of information that your eyeballs just can’t.</p>\n<p><a href=\"https://superuser.com/questions/1675104/why-are-optical-disc-drives-slower-than-hard-disk-drives\"><strong>Why are optical disc drives slower than hard disk drives?</strong></a> <em>superuser.com</em><br />It’s probably because you keep putting your fingers on the DVD. </p>\n<p><a href=\"https://networkengineering.stackexchange.com/questions/76142/why-can-pppoe-connect-to-a-gateway-which-is-not-in-the-same-subnet\"><strong>Why can PPPoE connect to a gateway which is not in the same subnet?</strong></a> <em>networkengineering.stackexchange.com</em><br />The clue to the answer is in the name of the protocol: PPP over Ethernet.</p>\n<h2>Links from around the web</h2>\n<p><a href=\"https://www.zachleat.com/web/vector-raster-split/\"><strong>Vector? Raster? Why not both!</strong></a> <em>www.zachleat.com</em><br />Sometimes it’s hard to decide if you want to use a vector, like an SVG, or a raster, like a PNG… what if you didn’t have to choose just one?</p>\n<p><a href=\"https://dmitripavlutin.com/react-context-and-usecontext/\"><strong>A Guide to React Context and useContext() Hook</strong></a> <em>dmitripavlutin.com</em><br />When you’re building React apps, folks often think that you have to use the Context API to share state. It’s optional, and this guide dives into both good and bad use cases.</p>\n<p><a href=\"https://rachsmith.com/i-completely-ignored-the-front-end-development-scene-for-6-months-it-was-fine/\"><strong>I completely ignored the front end development scene for six months. It was fine</strong></a> <em>rachsmith.com</em><br />In tech, we think we have to stay on top of everything, or we’ll become irrelevant. That is not the case! Rach Smith makes some great points here if you ever are worried about keeping up.</p>\n<p><a href=\"https://thenewstack.io/facebooks-golang-object-relational-mapper-moves-to-the-linux-foundation/\"><strong>Facebook’s Golang object relational mapper moves to the Linux Foundation</strong></a> <em>thenewstack.io</em><br />If you love something, let it Go. Facebook’s Go entity framework Ent has moved to the Linux Foundation! </p>\n<p>Onboard, organize, and bring your team up to speed in a jiffy. <a href=\"https://itr-links.stackoverflow.email/u/click?_t=3603a3d8f3104ca5bd7015a5845f7fb7&amp;_m=J2j24lxDQTEuwPd5Cqu5ugxEP4Nup0Hd&amp;_e=tvjhMrv7atYcgrppTk1g939n0TOMqK8VK0FIJna3k3KJASzVGae_sX5sf3KPi1hf2i5bxdA9xhH1f-iiMOO7ZFhn7xzAMFIbYnBhpTVT4YaVxNFzFGdAHiiEmx7YErIIVxBKkYUg6iknFjIhWONGTkIJn8IqBwnVV0l3yY7ScIAISOmXKMdnUAqYDRZbTBMJIkKY_QpH6yZNU_eh54wXqDW8Wpo2teMbvQF4Xm7qqXJd83J9ZY2IcjPlLJTDAm59hcKcidFcXov0SI1SA2sdJyQvN3-FBHLcc6AOGJQuveBkeTVp2-deuu3Ntnjx81ZzrM2rO56BYZb0_0JMMxOo0T1dQmOSzvTyeYRljnArFYMAOnBwZPb7gsBCwG0r13Z9YZh9Whu6zwJWSvKiJLX8Eg%3D%3D\">Try Stack Overflow for Teams</a>.</p>\n<p>The post <a href=\"https://stackoverflow.blog/2021/09/17/the-overflow-91-observability-is-the-future-of-your-devops-career/\">The Overflow #91: Observability is the future (of your DevOps career)</a> appeared first on <a href=\"https://stackoverflow.blog/\">Stack Overflow Blog</a>.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1271425,
+			"parentId": 0,
+			"url": "https://twitter.com/anjacks0n/status/1439171382882017288",
+			"author": {
+				"name": "Andy Jackson 🌍",
+				"url": "https://twitter.com/anjacks0n",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cfe793e42119fe8979dae49a9157592243d7de3cffa6388f9423c5eb54193b38.jpg"
+			},
+			"date": "2021-09-18T10:16:10.000Z",
+			"content": "I liked this file format story - sometimes two formats are better than one. <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1271923,
+			"parentId": 0,
+			"url": "https://twitter.com/neomatrixcode/status/1439412422352244740",
+			"author": {
+				"name": "Josué Acevedo",
+				"url": "https://twitter.com/neomatrixcode",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f70f9359b82fb0b02859beb5a4e2d83a7fda3fe4218266e9946b2ee70ac51fe0.jpg"
+			},
+			"date": "2021-09-19T02:13:59.000Z",
+			"content": "Vector? Raster? Why Not Both!—<a href=\"http://zachleat.com\">zachleat.com</a>  <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1272697,
+			"parentId": 0,
+			"url": "https://twitter.com/B891_/status/1439911740200955905",
+			"author": {
+				"name": "B891_",
+				"url": "https://twitter.com/B891_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a5f6272e44761f67c179d0f103a3194df287e14699522e1d0378b49c08317cc1.jpg"
+			},
+			"date": "2021-09-20T11:18:05.000Z",
+			"content": "the art of image optimization <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1272696,
+			"parentId": 0,
+			"url": "https://twitter.com/tnkrd/status/1439911792411561984",
+			"author": {
+				"name": "tankred",
+				"url": "https://twitter.com/tnkrd",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4820c1c5c37a261c8db19d822ce88907f13af89351bdef259705d7f72f9c6ada.jpg"
+			},
+			"date": "2021-09-20T11:18:18.000Z",
+			"content": "the art of image optimization <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1273677,
+			"parentId": 0,
+			"url": "https://graphics-unleashed.com/2021/09/digital-design-digest-for-september-21-2021/",
+			"author": {},
+			"date": "2021-09-21T15:01:35.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1274385,
+			"parentId": 0,
+			"url": "https://programmer.chimpymail.com/jamstack-conf-2021/",
+			"author": {},
+			"date": "2021-09-22T15:44:11.000Z",
+			"content": "<p>(This is a <a href=\"https://css-tricks.com/advertising\">sponsored post</a>.)</p>\n<p><strong>What?</strong> <a href=\"https://jamstackconf.com/#/\">Jamstack Conf!</a> It’s the best! Learn what’s happening and what’s next for this hot ecosystem.</p>\n<p><strong>When?</strong> October 6–7, 2021</p>\n<p><strong>Where?</strong> Virtual / online.</p>\n<p><strong>How much?</strong> It’s free! There are workshops as well though, at $100 a seat.</p>\n<p><strong>Who?</strong> You! Oh you mean speakers? Netlify’s CEO Matt Biilmann gives the opening talk and I’d expect some zingers in there (I’ve been surprised at stuff in this talk three years in a row now). Oh look, <a href=\"https://twitter.com/bholmesdev\">Ben Holmes</a> is there — remember <a href=\"https://css-tricks.com/slinkity/\">me mentioning</a> <a href=\"https://slinkity.dev/\">Slinkity</a> the other day? And <a href=\"https://twitter.com/fimion\">Alex Riviere</a> — remember his <a href=\"https://css-trickz.com/\">CSS-Trickz</a> that I <a href=\"https://css-trickzz.netlify.app/\">riffed off</a> with Astro, which Netlify is now <a href=\"https://twitter.com/Netlify/status/1437433399220768771\">supporting</a>. Those are just some names I recognize. I’m equally excited about hearing from people I don’t know (yet!) and their interesting topics.</p>\n<p><strong>Why?</strong> Because conferences focused around important of-the-time technologies are the best. And because you can make a <a href=\"https://jamstackconf.com/badge/make/\">cool badge</a>.</p>\n<p>Thanks for the support Netlify!</p>\n<p>Ooooo looks like that <a href=\"https://www.zachleat.com/web/vector-raster-split/\">interesting image situation</a> Zach was blogging about the other day is the header for this very conference. </p>\n<p><a href=\"https://jamstackconf.com/\" title=\"Direct link to featured article\">Direct Link to Article</a> — <a href=\"https://css-tricks.com/jamstack-conf-2021/\">Permalink</a></p>\n<p>The post <a href=\"https://css-tricks.com/jamstack-conf-2021/\">Jamstack Conf 2021</a> appeared first on <a href=\"https://css-tricks.com/\">CSS-Tricks</a>. You can support CSS-Tricks by being an <a href=\"https://css-tricks.com/product/mvp-supporter/\">MVP Supporter</a>.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1274683,
+			"parentId": 0,
+			"url": "https://programmer.chimpymail.com/collective-677/",
+			"author": {},
+			"date": "2021-09-23T02:00:03.000Z",
+			"content": "<p> <a href=\"https://infraredmindbody.com/\"></a></p>\n\n\n<p></p>\n<span><a><i></i></a></span>\n\n<ul><li><a href=\"https://programmer.chimpymail.com/collective-677/#Inspirational_Website_of_the_Week_Infrared\" title=\"Inspirational Website of the Week: Infrared\">Inspirational Website of the Week: Infrared</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Master_new_skills\" title=\"Master new skills\">Master new skills</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Access_modern_GPU_features_with_WebGPU\" title=\"Access modern GPU features with WebGPU\">Access modern GPU features with WebGPU</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#A_Deep_Dive_Into_The_Wonderful_World_Of_SVG_Displacement_Filtering\" title=\"A Deep Dive Into The Wonderful World Of SVG Displacement Filtering\">A Deep Dive Into The Wonderful World Of SVG Displacement Filtering</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Why_are_hyperlinks_blue\" title=\"Why are hyperlinks blue?\">Why are hyperlinks blue?</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#An_Interactive_Guide_to_CSS_Keyframe_Animations_with_keyframes\" title=\"An Interactive Guide to CSS Keyframe Animations with @keyframes\">An Interactive Guide to CSS Keyframe Animations with @keyframes</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Crafting_Organic_Patterns_With_Voronoi_Tessellations\" title=\"Crafting Organic Patterns With Voronoi Tessellations\">Crafting Organic Patterns With Voronoi Tessellations</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#The_Beauty_of_Bezier_Curves\" title=\"The Beauty of Bézier Curves\">The Beauty of Bézier Curves</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Buttons_Generator\" title=\"Buttons Generator\">Buttons Generator</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Building_A_Stepper_Component\" title=\"Building A Stepper Component\">Building A Stepper Component</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Basement_grotesque\" title=\"Basement grotesque\">Basement grotesque</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#couleurio\" title=\"couleur.io\">couleur.io</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Exploring_the_CSS_Paint_API_Blob_Animation\" title=\"Exploring the CSS Paint API: Blob Animation\">Exploring the CSS Paint API: Blob Animation</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Vector_Raster_Why_Not_Both\" title=\"Vector? Raster? Why Not Both!\">Vector? Raster? Why Not Both!</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Using_PDFs_with_the_Jamstack_-_Building_a_Document_Viewer\" title=\"Using PDFs with the Jamstack – Building a Document Viewer\">Using PDFs with the Jamstack – Building a Document Viewer</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#How_to_Use_Promiseany\" title=\"How to Use Promise.any()\">How to Use Promise.any()</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Prettymaps\" title=\"Prettymaps\">Prettymaps</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#A_primer_on_the_OpenAI_API_-_Part_1\" title=\"A primer on the OpenAI API – Part 1\">A primer on the OpenAI API – Part 1</a></li>\n<li><a href=\"https://programmer.chimpymail.com/collective-677/#Infinity_Zoom_Log_Spherical_Mapping\" title=\"Infinity Zoom / Log Spherical Mapping\">Infinity Zoom / Log Spherical Mapping</a></li>\n<li>\n<a href=\"https://programmer.chimpymail.com/collective-677/#Surface_Sampling_in_Threejs\" title=\"Surface Sampling in Three.js\">Surface Sampling in Three.js</a><ul><li><a href=\"https://programmer.chimpymail.com/collective-677/#Attachments\" title=\"Attachments\">Attachments</a></li></ul></li>\n</ul>\n<h2>\n<span></span><a href=\"https://infraredmindbody.com/\">Inspirational Website of the Week: Infrared</a><span></span>\n</h2>\n<p>Soft animations and a perfect color scheme make this website’s design glow. Our pick this week.</p>\n<p><a href=\"https://infraredmindbody.com/\">Get inspired</a>\n</p>\n\n\n<p>        <a href=\"https://srv.buysellads.com/ads/long/x/TFX3VQS3TTTTTTFPCAEN4TTTTTTT73JTK6TTTTTTE4R45YVTTTTTTBP3KWANCIPP5HP6YYIWKVAIEMZ7PHPCBESEG33T\"></a></p>\nThis content is <a href=\"http://synd.co/29LDbvj\">sponsored</a> via <a href=\"http://synd.co/\">Syndicate Ads</a>\n\n<h2>\n<span></span><a href=\"https://srv.buysellads.com/ads/long/x/TFX3VQS3TTTTTTFPCAEN4TTTTTTT73JTK6TTTTTTE4R45YVTTTTTTBP3KWANCIPP5HP6YYIWKVAIEMZ7PHPCBESEG33T\">Master new skills</a><span></span>\n</h2>\n<p>Do you love building things? Then this event is for you! Join the community for an enjoyable night of coding.</p>\n<p>        <a href=\"https://srv.buysellads.com/ads/long/x/TFX3VQS3TTTTTTFPCAEN4TTTTTTT73JTK6TTTTTTE4R45YVTTTTTTBP3KWANCIPP5HP6YYIWKVAIEMZ7PHPCBESEG33T\">Find out more</a>\n</p>\n\n\n<p> <a href=\"https://web.dev/gpu/\"></a></p>\n<h2>\n<span></span><a href=\"https://web.dev/gpu/\">Access modern GPU features with WebGPU</a><span></span>\n</h2>\n<p>Learn about WebGPU and how it enables high-performance 3D graphics and data-parallel computation on the web.</p>\n<p><a href=\"https://web.dev/gpu/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://www.smashingmagazine.com/2021/09/deep-dive-wonderful-world-svg-displacement-filtering/\"></a></p>\n<h2>\n<span></span><a href=\"https://www.smashingmagazine.com/2021/09/deep-dive-wonderful-world-svg-displacement-filtering/\">A Deep Dive Into The Wonderful World Of SVG Displacement Filtering</a><span></span>\n</h2>\n<p>In this article, Dirk Weber explains the SVG `feDisplacementMap` filter primitive with a good number of examples to demonstrate the concept of animated displacement maps.</p>\n<p><a href=\"https://www.smashingmagazine.com/2021/09/deep-dive-wonderful-world-svg-displacement-filtering/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/\"></a></p>\n<h2>\n<span></span><a href=\"https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/\">Why are hyperlinks blue?</a><span></span>\n</h2>\n<p>Take a deep dive into the history of interfaces and link designs over the years and learn about the origin of the blue link we know today.</p>\n<p><a href=\"https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://www.joshwcomeau.com/animation/keyframe-animations/\"></a></p>\n<h2>\n<span></span><a href=\"https://www.joshwcomeau.com/animation/keyframe-animations/\">An Interactive Guide to CSS Keyframe Animations with @keyframes</a><span></span>\n</h2>\n<p>In this tutorial you’ll learn how CSS keyframes work from the ground up, and see how you can use them to build high-quality animations. By Josh W Comeau.</p>\n<p><a href=\"https://www.joshwcomeau.com/animation/keyframe-animations/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://georgefrancis.dev/writing/crafting-organic-patterns-with-voronoi-tessellations/\"></a></p>\n<h2>\n<span></span><a href=\"https://georgefrancis.dev/writing/crafting-organic-patterns-with-voronoi-tessellations/\">Crafting Organic Patterns With Voronoi Tessellations</a><span></span>\n</h2>\n<p>Learn to create beautiful, versatile, and organic generative patterns inspired by the natural world. By George Francis.</p>\n<p><a href=\"https://georgefrancis.dev/writing/crafting-organic-patterns-with-voronoi-tessellations/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://www.youtube.com/watch?v=aVwxzDHniEw\"></a></p>\n<h2>\n<span></span><a href=\"https://www.youtube.com/watch?v=aVwxzDHniEw\">The Beauty of Bézier Curves</a><span></span>\n</h2>\n<p>A wonderful video on how Bézier curves work. By Freya Holmér.</p>\n<p><a href=\"https://www.youtube.com/watch?v=aVwxzDHniEw\">Watch it</a>\n</p>\n\n\n<p> <a href=\"https://markodenic.com/tools/buttons-generator/\"></a></p>\n<h2>\n<span></span><a href=\"https://markodenic.com/tools/buttons-generator/\">Buttons Generator</a><span></span>\n</h2>\n<p>100+ buttons you can copy with just a click and paste into your project. By Marko Denic.</p>\n<p><a href=\"https://markodenic.com/tools/buttons-generator/\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://ishadeed.com/article/stepper-component-html-css/\"></a></p>\n<h2>\n<span></span><a href=\"https://ishadeed.com/article/stepper-component-html-css/\">Building A Stepper Component</a><span></span>\n</h2>\n<p>Ahmad Shadeed shows how to build a horizontal and vertical stepper component with CSS flexbox.</p>\n<p><a href=\"https://ishadeed.com/article/stepper-component-html-css/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://grotesque.basement.studio/\"></a></p>\n<h2>\n<span></span><a href=\"https://grotesque.basement.studio/\">Basement grotesque</a><span></span>\n</h2>\n<p>Basement grotesque is the first font by basement.studio and they did a wonderful website to present it!</p>\n<p><a href=\"https://grotesque.basement.studio/\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://couleur.io/\"></a></p>\n<h2>\n<span></span><a href=\"https://couleur.io/\">couleur.io</a><span></span>\n</h2>\n<p>A simple color tool to help you find good color palettes for your web projects. This tools spits out modern CSS you can use right away in your projects.</p>\n<p><a href=\"https://couleur.io/\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://css-tricks.com/exploring-the-css-paint-api-blob-animation/\"></a></p>\n<h2>\n<span></span><a href=\"https://css-tricks.com/exploring-the-css-paint-api-blob-animation/\">Exploring the CSS Paint API: Blob Animation</a><span></span>\n</h2>\n<p>Temani Afif shows how to pull off a blob animation using CSS with the CSS Paint API.</p>\n<p><a href=\"https://css-tricks.com/exploring-the-css-paint-api-blob-animation/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://www.zachleat.com/web/vector-raster-split/\"></a></p>\n<h2>\n<span></span><a href=\"https://www.zachleat.com/web/vector-raster-split/\">Vector? Raster? Why Not Both!</a><span></span>\n</h2>\n<p>Zach Leatherman ran into an interesting problem and shared what he learned from it.</p>\n<p><a href=\"https://www.zachleat.com/web/vector-raster-split/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://www.raymondcamden.com/2021/08/30/using-pdfs-with-the-jamstack-building-a-document-viewer\"></a></p>\n<h2>\n<span></span><a href=\"https://www.raymondcamden.com/2021/08/30/using-pdfs-with-the-jamstack-building-a-document-viewer\">Using PDFs with the Jamstack – Building a Document Viewer</a><span></span>\n</h2>\n<p>Using Adobe PDF Services to build a document viewer for your Jamstack site</p>\n<p><a href=\"https://www.raymondcamden.com/2021/08/30/using-pdfs-with-the-jamstack-building-a-document-viewer\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://dmitripavlutin.com/promise-any/\"></a></p>\n<h2>\n<span></span><a href=\"https://dmitripavlutin.com/promise-any/\">How to Use Promise.any()</a><span></span>\n</h2>\n<p>Learn how to use the Promise.any() to get the first fulfilled promise from an array of promises.</p>\n<p><a href=\"https://dmitripavlutin.com/promise-any/\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://github.com/marceloprates/prettymaps\"></a></p>\n<h2>\n<span></span><a href=\"https://github.com/marceloprates/prettymaps\">Prettymaps</a><span></span>\n</h2>\n<p>A small set of Python functions to draw pretty maps from OpenStreetMap data.</p>\n<p><a href=\"https://github.com/marceloprates/prettymaps\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://blog.scottlogic.com/2021/08/31/a-primer-on-the-openai-api-1.html\"></a></p>\n<h2>\n<span></span><a href=\"https://blog.scottlogic.com/2021/08/31/a-primer-on-the-openai-api-1.html\">A primer on the OpenAI API – Part 1</a><span></span>\n</h2>\n<p>The first part in a series on learning how to use the OpenAI API. By Chris Price.</p>\n<p><a href=\"https://blog.scottlogic.com/2021/08/31/a-primer-on-the-openai-api-1.html\">Read it</a>\n</p>\n\n\n<p> <a href=\"https://codepen.io/pjkarlik/pen/LYLPvbP\"></a></p>\n<h2>\n<span></span><a href=\"https://codepen.io/pjkarlik/pen/LYLPvbP\">Infinity Zoom / Log Spherical Mapping</a><span></span>\n</h2>\n<p>Super cool demo: taking 3D space and folding it into a sphere, using WebGL/Fragment Shader.</p>\n<p><a href=\"https://codepen.io/pjkarlik/pen/LYLPvbP\">Check it out</a>\n</p>\n\n\n<p> <a href=\"https://tympanus.net/codrops/2021/08/31/surface-sampling-in-three-js/\"></a></p>\nFrom Our Blog\n<h2>\n<span></span><a href=\"https://tympanus.net/codrops/2021/08/31/surface-sampling-in-three-js/\">Surface Sampling in Three.js</a><span></span>\n</h2>\n<p>Learn how to use the MeshSurfaceSampler in Three.js to create some very interesting effects.</p>\n<p><a href=\"https://tympanus.net/codrops/2021/08/31/surface-sampling-in-three-js/\">Read it</a>\n</p>\n\n<p>The post <a href=\"https://tympanus.net/codrops/collective/collective-677/\">Collective #677</a> appeared first on <a href=\"https://tympanus.net/codrops\">Codrops</a>.</p>\n        \n            <h3>\n<span></span>Attachments<span></span>\n</h3>\n        <ul><li>\n<a href=\"https://programmer.chimpymail.com/collective-677/?download=5417\">C677 WOTW 2 Gxfbvz</a> (24 kB)\n</li></ul>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1276372,
+			"parentId": 0,
+			"url": "https://mailsgun.ru/%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4-%d0%b2%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%80%d0%b0%d1%81%d1%82%d1%80-%d0%b0-%d0%bc%d0%be%d0%b6%d0%b5%d1%82-%d0%b8-%d1%82%d0%be-%d0%b8-%d0%b4/",
+			"author": {},
+			"date": "2021-09-26T17:49:11.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1276676,
+			"parentId": 0,
+			"url": "https://twitter.com/VisyuSolution/status/1442362620107919370",
+			"author": {
+				"name": "Visyu Solution",
+				"url": "https://twitter.com/VisyuSolution",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d61da8ed27d046f7acb34cdf29bb91c3f8d95913d71df8bb840e2a64d9aaec1f.jpg"
+			},
+			"date": "2021-09-27T05:37:01.000Z",
+			"content": "Vector? Raster? Why Not Both!—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1278013,
+			"parentId": 0,
+			"url": "https://news.priviw.com/technology/the-overflow-91-observability-is-the-future-of-your-devops-career/",
+			"author": {},
+			"date": "2021-09-29T06:55:20.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1299278,
+			"parentId": 0,
+			"url": "https://breakingpoint.ro/stiri-52/",
+			"author": {},
+			"date": "2021-11-03T08:57:57.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1328622,
+			"parentId": 0,
+			"url": "https://www.sweetsaw.xyz/jamstack-conf-2021/",
+			"author": {},
+			"date": "2022-01-09T03:17:13.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1380096,
+			"parentId": 0,
+			"url": "https://twitter.com/nucliweb/status/1514251057764909060",
+			"author": {
+				"name": "Joan León 🏞⚡️",
+				"url": "https://twitter.com/nucliweb",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/84fa278b7d4c7621464e1bab376e18eb7db87cbc028453fd1639a3da4a1f5ac8.jpg"
+			},
+			"date": "2022-04-13T14:36:00.000Z",
+			"content": "Vector? Raster? Why Not Both!\n\n<a href=\"https://www.zachleat.com/web/vector-raster-split/\">zachleat.com/web/vector-ras…</a> by <a href=\"https://twitter.com/zachleat\">@zachleat</a> \n\n<a href=\"https://twitter.com/search?q=%23WebPerformance\">#WebPerformance</a> <a href=\"https://twitter.com/search?q=%23ImagePerf\">#ImagePerf</a> <a href=\"https://twitter.com/search?q=%23Image\">#Image</a> <a href=\"https://twitter.com/search?q=%23Performance\">#Performance</a> <a href=\"https://twitter.com/search?q=%23WPO\">#WPO</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1455468,
+			"parentId": 0,
+			"url": "https://guruitsource.com/last-week-s-digest-of-fresh-content-from-the-world-12/",
+			"author": {},
+			"date": "2022-08-10T18:58:32.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1494299,
+			"parentId": 0,
+			"url": "https://www.reddit.com/r/web_design/comments/ph09e2/vector_raster_why_not_both/",
+			"author": {},
+			"date": "2022-08-27T02:59:52.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1526475,
+			"parentId": 0,
+			"url": "https://www.itry.top/devops/issue-180/",
+			"author": {
+				"name": "itryadmin",
+				"url": "https://www.itry.top/author/itryadmin/"
+			},
+			"date": "2022-09-26T07:36:06.000Z",
+			"content": "<h1>科技爱好者周刊（第 180 期）：你想住在中国哪里？</h1>\n<p>这里记录每周值得分享的科技内容，周五发布。</p>\n<p>本杂志开源（GitHub: <a href=\"https://github.com/ruanyf/weekly\">ruanyf/weekly</a>），欢迎提交 issue，投稿或推荐科技内容。</p>\n<p>周刊讨论区的帖子<a href=\"https://github.com/ruanyf/weekly/issues/1980\">《谁在招人？》</a>，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。</p>\n<h2>封面图</h2>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021101801.jpg\" alt=\"\" /></p>\n<p>香港摄影师<a href=\"https://www.arthing.org/archives/2018/01/post206226.html\">李海涛</a>拍摄的广州岑村玄武山公园。（<a href=\"https://new.qq.com/omn/20210329/20210329A01NAN00.html\">via</a>）</p>\n<h2>本周话题：你想住在中国哪里？</h2>\n<p>很多人不喜欢一线城市“北上广深”，觉得生活压力大，房价奇高，空间局促嘈杂，想要离开。</p>\n<p>但是离开以后，去哪里呢？哪个城市能够提供令人满意的生活方式，以及良好的社会经济状况？</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021102001.jpg\" alt=\"\" /></p>\n<p>我最近读到时事评论家宁南山的<a href=\"https://zhuanlan.zhihu.com/p/415990961\">一篇文章</a>，觉得很有启发，跟大家分享一下。</p>\n<p>他说，考虑未来的居住城市时，应该对中国的三个宏观趋势有所认知。</p>\n<p>首先，<strong>中国各地的基础设施，都是差不多的。</strong> 我们是统一的国家，各省的高铁、高速公路、电力网、无线通信、宽带网等等，基本都是一样的，同样的标准、同样的材料、同样的施工、同样的管理，不会有某个省的基础设施特别好、另一个省特别差这种情况。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021100606.jpg\" alt=\"\" /></p>\n<p>其次，各省的发展速度最终会逐渐趋同。沿海省份的增速会降下来，内地省份会赶上来，不会有某个省一直高速发展，另一个省一直低速发展这种情况。长远来看，各省的社会经济和发展状况，最终都会达到一个基本的现代化水平，不会有某个省显著落后于全国平均水平。</p>\n<p>再次， <strong>各省的真正差异来自于产业。</strong> 比如，广东的电子业、上海的金融业、北京的政治中心、西部的能源产业等等，都是有地域性的，这个很难改变。产业的兴盛决定了收入的差异，这才是地域差异未来的主要来源。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021100607.jpg\" alt=\"\" /></p>\n<p>基于上面三点看法，可以预测，如果中国人均 GDP 继续增长，到了2035年比现在增长一倍，那么中国各地的生活条件都会达到一个相当不错的水平。</p>\n<p>目前，全国的人均 GDP 大概是1万美元，一线城市是2万多美元。到了2035年，如果全国人均 GDP 能够达到2万美元，一线城市达到五万美元，这就意味着，一线城市普通人的生活水平相当于现在发达国家大城市的水平，而各省的主要城市能够达到目前北京上海的水平。</p>\n<p>当然，实现这个目标的难度是很大的。只有每年增长速度不低于4.7%，连续15年，那么 GDP 可以翻一倍。但是，中国的人口已经停止增长了，人力成本也不低了，以后再想高速增长，必须依靠知识创新，而中国民众的科技知识水平并不乐观。</p>\n<p>假使我们能够实现这个目标，<strong>那么到了2035年，不管生活在哪个省，都能享受现代化的、有质量、比较舒适的生活。</strong> </p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021100608.jpg\" alt=\"\" /></p>\n<p>居住城市的选择，那时就成了一个生活方式的选择。就像宁南山文章里说的：</p>\n<blockquote>\n<ul><li>如果希望赚取高收入，愿意忍受大城市的高竞争、高压力、狭小嘈杂，那么选择一线大城市；</li>\n<li>如果希望竞争小一些、生活轻松一点，可以选择沿海省份和中西部的中心城市；</li>\n<li>如果希望享受宁静悠闲的生活，可以选择丽江、大理这样的小城市；</li>\n<li>如果希望享受北美澳洲式地广人稀的生活，可以选择东北地区和西北地区。</li>\n</ul></blockquote>\n<p>一个人可以自主决定居住在哪个城市，以什么方式生活，并且不必放弃现代化的生活条件。我觉得，这才是理想的生活，是值得憧憬的奋斗目标。</p>\n<p>对于程序员来说，年轻时在大城市打拼，有了积累之后，移居到其它地方，追求自己想要的生活，以后大概会成为一种潮流吧。</p>\n<h2>前端源码大练兵</h2>\n<p>很多同学通过自学或者培训班，学会了前端开发，能够独立写页面了，有些还求职成功了。接下来，就面临着进阶难题：<strong>怎么才能在短期内，让代码水平更上一层楼？</strong></p>\n<p>我觉得，最简单可行的进阶方法，就是阅读其他项目的源码。 </p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021102102.jpg\" alt=\"\" /></p>\n<p>阅读源码有很多好处。有一些是明摆着的，比如，看了别人的源码才恍然大悟，原来可以这样解决问题。再比如，很多软件的高级用法，文档往往写得让人摸不着头脑，只有看源码才能搞懂。</p>\n<p>另外一些好处，则是摆在暗处的。比如，通过学习别人的代码，可以培养自己“造轮子”的能力。再比如，阅读热门项目的源码，也许有机会提交 PR，一旦被合并，就成了项目的 contributor（贡献者）。这些将来都会成为你的个人资历。</p>\n<p>阅读源码对求职也有实际的帮助。大厂的面试除了应用类的问题，往往也会问一些代码原理，考察你对程序的理解和个人思考。这时读过源码就会有很大的优势，至少有话可说，能够讲一些自己的想法，而不是简单地复述文档。</p>\n<p>但是说实话，很多源码太复杂、太抽象，写得很绕，有多层调用，找不到入口在哪里。自己理解起来很困难，旁边又没有人答疑解惑，很容易放弃。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021102104.jpg\" alt=\"\" /></p>\n<p>本周正好有一个源码讲解的课程 <strong>《前端练功房-源码大练兵》训练营</strong>，就是为了解决这些进阶痛点而设计的，介绍给大家。</p>\n<p>它通过连续三天的直播，由三位老师分别解读 Mini-Vue、React 和 Webpack 的源码，每个晚上讲解一个主题。除了源码，还会覆盖算法、工程化等重要技术点。</p>\n<blockquote>\n<ul><li>第一天 - Vue 3：核心原理以及 vdom</li>\n<li>第二天 - React：最小堆算法与任务调度</li>\n<li>第三天 - 前端工程化核心知识，以及手写一个 Webpack 的简单实现</li>\n</ul></blockquote>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021102105.jpg\" alt=\"\" /></p>\n<p>上课时间是10月26日到28日（下周二到周四），每天晚上的八点。该课程由开课吧制作，他们是国内最大的技术培训机构之一，课程制作和操作方面比较正规，可以放心。</p>\n<p>课程推广期间，周刊读者有优惠，仅需 <strong>0.99 元</strong> 的福利价即可报名。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021102103.jpg\" alt=\"\" /></p>\n<p>微信扫描上方二维码，或者点击<a href=\"https://wx.kaikeba.com/xiaoke/market/landing-page/v2/21GdBgUib26ebdnj6ID?kol_ad_code=mLiSwqgmCFRnDqSzoiN\">这里</a>，了解课程详情。报名后，别忘了添加助教老师的微信。三天听课期间，每天还可以获赠其他的前端学习资料。</p>\n<h2>科技动态</h2>\n<p>1、<a href=\"https://china.huanqiu.com/article/44o1EsgCOHk\">采血机器人</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091802.jpg\" alt=\"\" /></p>\n<p>验血是医院的常规检查，一般都是由护士进行采血。上海中山医院最近开始使用全自动的采血机器人，由机器采血。</p>\n<p>该机器可自动完成装载采血管、采血针、绑扎压脉带、识别静脉血管、喷消毒液、精准穿刺、采血量控制、血液标本混匀等一系列动作。而且，它还可以辨识血管，很少发生扎不准的情况。</p>\n<p>2、<a href=\"https://techxplore.com/news/2021-08-lg-6g-transmission-meters.html\">6G 的传输距离</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082202.jpg\" alt=\"\" /></p>\n<p>LG 公司宣布，他们创下了无线通信 6G 标准的传输距离纪录：100米。研究人员利用放大器和天线增益，将信号从一座高楼的顶部发送到另一座高楼，两者相距100米，此前的纪录只有15米。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082203.jpg\" alt=\"\" /><br /><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082204.jpg\" alt=\"\" /></p>\n<p>目前的 5G 通信，城区的传输距离只有几百米。6G 的频率比 5G 更高，传输距离更短，一旦 6G 开始商用，城区的基站密度恐怕难以想象。</p>\n<p>3、<a href=\"https://news.umich.edu/study-evolution-now-accepted-by-majority-of-americans/\">多少美国人相信进化论</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082103.jpg\" alt=\"\" /></p>\n<p>密歇根大学的一项调查显示，目前相信进化论的美国人终于超过了一半。2019年，54%的美国成年人相信，人类是从动物进化而来的，比1985年的40%有大幅成长。这个比例在34个西方国家里面，几乎是最低的，只高于土耳其的27%。</p>\n<p>大家都说美国是一个自由派的国家，但美国也是一个非常保守的国家，宗教观念有很大的市场。</p>\n<p>4、<a href=\"https://www.aboveavalon.com/notes/2021/8/23/apples-big-bet-on-memoji\">苹果的 Memoji 战略</a></p>\n<p>Memoji（me + emoji）是苹果公司基于表情符号开发的一种头像生成技术，用来生成用户的 3D 卡通头像，诞生于2018年。种种迹象都表明，苹果有意大量使用该技术，用于虚拟空间的场景。</p>\n<p>2021年6月的 WWDC 大会的邀请函，使用的就是 Memoji。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082408.jpg\" alt=\"\" /></p>\n<p>大会当天，库克走进会场，场下坐的都是听众的 Memoji 头像。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082406.jpg\" alt=\"\" /></p>\n<p>库克致欢迎辞的时候，背景也是 Memoji。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082407.jpg\" alt=\"\" /></p>\n<p>此外，苹果的管理层介绍，头像也都换成了 Memoji。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082409.jpg\" alt=\"\" /></p>\n<p>下一步，苹果很可能会推出一个虚拟空间产品，将用户导入数字世界，到时候用户在那里的分身就是 Memoji。</p>\n<p>5、<a href=\"https://news.mit.edu/2021/countering-climate-change-cool-pavements-0822\">凉爽的路面</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082410.jpg\" alt=\"\" /></p>\n<p>城市的道路是一个巨大的热源，吸收太阳热量然后辐射出来，对周围环境进行加热，使得城市变得更热。麻省理工学院的研究人员因此提出了“凉爽路面”的概念，这种路面会大量反射太阳光，吸收更少的热量。</p>\n<p>“凉爽路面”的主要措施有两点，一是使用混凝土代替沥青，后者太容易吸热；二是浅色的路面有更好的反射率，所以混凝土之中应该多加入白色的骨料。</p>\n<p>6、<a href=\"https://www.learnergo.com/lifestyle-ergo/2020/7/5/ultra-wide-monitors-a-pain-in-the-neck\">超宽显示器的问题</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021080709.jpg\" alt=\"\" /></p>\n<p>现在的显示器越来越宽，甚至有宽度超过一米的带鱼屏，即使是普通的22-24英寸显示器，程序员也往往会把两个并排使用。专家认为，这样会增加头颈损伤和疼痛的概率。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021080710.jpg\" alt=\"\" /></p>\n<p>使用超宽显示器时，长期扭头看着左侧的屏幕，对颈椎非常不利。专家建议，32寸的显示器可能是最佳选择，如果必须使用超宽屏显示器，则最好增加屏幕与眼睛之间的距离，并且将活动窗口放置于屏幕的中间，避免长时间向一侧扭头。</p>\n<h2>文章</h2>\n<p>1、<a href=\"https://chaijiaxun.com/pcb-metro-map-build-log/\">地铁地图电路板</a>（英文）</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021092002.jpg\" alt=\"\" /><br /><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021092003.jpg\" alt=\"\" /></p>\n<p>一个新加坡网友讲述，自己怎么把新加坡地铁线路图做成一块电路板，还设法让每个节点发光亮起来。</p>\n<p>2、<a href=\"https://paulstamatiou.com/how-i-made-50k-in-3-days-with-nfts/\">我如何使用 NFT 在三天内赚了5万美元</a>（英文）</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091918.jpg\" alt=\"\" /></p>\n<p>作者谈了自己对 NFT 的理解，以及怎么入门，然后他用软件生成了一组数字画（上图），以 NFT 的形式卖了5万美元。对这个主题感兴趣的同学，推荐阅读。</p>\n<p>3、<a href=\"https://www.bleepingcomputer.com/news/security/free-revil-ransomware-master-decrypter-released-for-past-victims/\">勒索软件是什么样子</a>（英文）</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091804.jpg\" alt=\"\" /></p>\n<p>这篇文章提供了勒索软件 REvil 中毒的样子，以及拿到解密器以后，解开中毒文件的演示，可以用来了解这种软件如何勒索钱财。</p>\n<p>4、<a href=\"https://kitze.io/posts/github-stars-wont-pay-your-rent\">GitHub Star 不会支付你的账单</a>（英文）</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091609.jpg\" alt=\"\" /></p>\n<p>作者是开源项目 Sizzy 的创始人，讲述了如何将一个开源项目，变成商业软件，用来支持软件开发的故事。</p>\n<p>5、<a href=\"https://www.freeingenergy.com/understanding-the-basics-of-electricity-by-thinking-of-it-as-water/\">通过水流理解电的基本知识</a>（英文）</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091702.jpg\" alt=\"\" /></p>\n<p>课本经常把电流比喻成水流，来讲解电的基本知识。这篇文章也是采用这种方法解释电，写得很有新意。</p>\n<p>6、<a href=\"https://www.businessinsider.com/google-fired-burnout-depression-grigory-yakushev-2021-9\">被谷歌解雇是一种怎样的体验</a>（英文）</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091703.jpg\" alt=\"\" /></p>\n<p>作者讲述了自己五年前被谷歌解雇的往事，解雇理由是无法承担开发工作，整个过程有详细描述，可以一窥大厂怎么解雇人。作者说，他很庆幸自己被解雇，因为他后来去了医院，被诊断为忧郁症，幸亏得到了及时治疗，现在状况不错，也找到了新工作。</p>\n<p>7、<a href=\"https://www.zachleat.com/web/vector-raster-split/\">如何压缩设计素材</a>（英文）</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091704.jpg\" alt=\"\" /></p>\n<p>作者从 Figma 导出设计素材，试了不同的格式，从最初的 10MB 变成了最后的 78KB。</p>\n<p>8、<a href=\"https://medium.com/chmcore/a-short-history-of-objective-c-aff9d2bde8dd\">Objective-C 简史</a>（英文）</p>\n<p>本文介绍 Objective-C 怎么从一种科学家的语言，变成了苹果公司的官方开发语言。</p>\n<h2>工具</h2>\n<p>1、<a href=\"https://huggingface.co/spaces/eugenesiow/super-image\">super-image</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091606.jpg\" alt=\"\" /></p>\n<p>一个网页程序，可以将图片放大而不模糊，也能让模糊的照片变得更清晰一些。</p>\n<p>2、<a href=\"https://github.com/Jxck/html2json\">html2json</a></p>\n<p>一个 JS 库，可以将 HTML 代码与 JSON 代码互相转换。</p>\n<p>3、<a href=\"https://my-room-in-3d.vercel.app/\">My Room in 3D</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091207.jpg\" alt=\"\" /></p>\n<p>使用 Three.js 制作的网页 3D 家居模型，非常炫酷。</p>\n<p>4、<a href=\"https://video2webp.mattj.io/\">Video2WebP</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091405.jpg\" alt=\"\" /></p>\n<p>一个网页服务，可以将短视频转成 WebP 动画图片，用来替代 GIF 动画。</p>\n<p>5、<a href=\"https://www.home-assistant.io/\">Home Assistant</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091608.jpg\" alt=\"\" /></p>\n<p>一个开源的家庭智能家电的管理面板，可以架设在个人服务器或树莓派，目前支持1000多种智能家电，包括苹果、小米等品牌。</p>\n<p>6、<a href=\"https://github.com/jlongster/absurd-sql\">absurd-sql</a></p>\n<p>一个很酷的 JS 库，将浏览器的 indexedDB 作为网页数据储存的后端，在它之上加了一层 SQLite。也就是说，用户会跟一个全功能的 SQLite 实现互动，但是数据存储在 indexedDB 里面。</p>\n<p>7、<a href=\"https://sailfishos.org/\">Sailfish OS</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021082801.jpg\" alt=\"\" /></p>\n<p>一个手机操作系统，源头是诺基亚的 MeeGo 系统，目前已经发展到了第四代。它基于 Linux，但可以安装安卓的 App，看上去很精美，缺点是目前只支持 Sony 的几款手机。</p>\n<p>8、<a href=\"https://github.com/GoogleChromeLabs/jsvu\">jsvu</a></p>\n<p>jsvu 是一个 JS 引擎的调用器，用来调用各种 JS 引擎（比如 V8、QuickJS、Chakra 等等），或者同一个引擎的各种版本。它的主要用途是测试代码在不同引擎下的表现。</p>\n<p>9、<a href=\"https://github.com/khang-nd/7.css\">7.css</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021083001.jpg\" alt=\"\" /></p>\n<p>一个 CSS 框架，用来复现 Windows 7 的 UI。</p>\n<p>10、<a href=\"https://github.com/ameizi/vagrant-kubernetes-cluster\">vagrant-kubernetes-cluster</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021101602.jpg\" alt=\"\" /></p>\n<p>一键安装 Kubernetes 集群的脚本，符合国情，包含 MetricsServer 、Kuboard 、Kubernetes Dashboard 等组件。（<a href=\"https://github.com/ameizi/vagrant-kubernetes-cluster\">@ameizi</a> 投稿）</p>\n<h2>资源</h2>\n<p>1、<a href=\"https://conf.juejin.cn/xdc2021?utm_source=s22gzh018\">稀土开发者大会</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202110/bg2021102002.jpg\" alt=\"\" /></p>\n<p>一个技术活动消息。国内知名的“稀土掘金技术社区”，下周主办“稀土开发者大会”，现在可以免费报名，收看所有演讲的直播。时间是下周三和周四（10月27日和28日）两天。</p>\n<p>他们这次请了很多大厂的技术主管，演讲内容基本涵盖了当前的技术热点：大前端、低代码、音视频、数据库、微服务、云原生、人工智能……链接是直播安排。我听掘金的同学说，他们准备了很多丰厚奖品，报名后有很大的机会中奖。</p>\n<p>2、<a href=\"https://codeincomplete.com/articles/javascript-game-foundations/\">Javascript 游戏基础教程</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091607.jpg\" alt=\"\" /></p>\n<p>这个英文教程一共10节课，教你使用 JavaScript 开发一个网页游戏。</p>\n<p>3、<a href=\"https://getsimnum.caict.ac.cn/\">“一证通查”电话卡服务</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091503.jpg\" alt=\"\" /></p>\n<p>工信部推出的官方服务，查看个人名下登记了多少张电话卡。</p>\n<p>4、<a href=\"https://www.baeldung.com/category/weekly-review/\">Java 周刊</a></p>\n<p>国外开发者编写的 Java 周刊，提供各种关于 Java 技术进展的链接。（<a href=\"https://github.com/ruanyf/weekly/issues/2000\">@Xuguozong</a> 投稿）</p>\n<p>5、<a href=\"https://open-meteo.com/en/docs\">Open Meteo</a></p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202109/bg2021091403.jpg\" alt=\"\" /></p>\n<p>免费的天气 API 服务，可以获取全球任意地点的天气数据，以 JSON 格式返回。</p>\n<h2>图片</h2>\n<p>1、<a href=\"https://twitter.com/JudgeDrokk/status/1424038060501700610\">世界最厚的书</a></p>\n<p>一本名叫《ZX Spectrum 游戏全书》的书，可能是世界上最厚的书。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021080901.jpg\" alt=\"\" /><br /><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021080902.jpg\" alt=\"\" /></p>\n<p>ZX Spectrum 是1980年代的一种9位家用电脑，这本书收录了该平台上面的所有游戏。</p>\n<p>2、<a href=\"https://mikedashhistory.com/2021/05/19/the-twopenny-hangover/\">挂在绳子上睡觉</a></p>\n<p>有一种传说，19世纪的英国，有一种专门给穷人准备的廉价宿舍。这种宿舍没有床，只拉了几根绳子，穷人把整个身子挂在绳子上睡觉。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021080911.jpg\" alt=\"\" /><br /><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021080912.jpg\" alt=\"\" /></p>\n<p>后来的一些小说和电影，纷纷使用了这种说法，补充了细节，还原了画面。但是，由于始终找不到可靠的证据，历史学家倾向于认为，这种宿舍只是当年那些作家的夸大和虚构。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021080913.jpg\" alt=\"\" /><br /><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021080914.jpg\" alt=\"\" /></p>\n<h2>文摘</h2>\n<p>1、<a href=\"https://startuppitch.substack.com/p/nail-your-startup-pitch-use-pixars\">Pixar 故事公式</a></p>\n<p>公司创始人的主要工作是什么？</p>\n<p>他的主要工作很可能是讲故事。向员工讲故事，向投资人讲故事，向媒体讲故事，向用户讲故事。这样可以团结团队、获得投资和报道，完成用户营销。</p>\n<p>每个人都喜欢听到一个好故事，你的故事越吸引人，就越容易成功。</p>\n<p>可是，大多数人都不具备讲故事的能力，所以我们应该向那些善于讲故事的人学习。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021081506.jpg\" alt=\"\" /></p>\n<p>Pixar 是全世界著名的动画公司，制作了很多脍炙人口的动画电影。</p>\n<p>它具有非凡的讲故事能力，每部电影都让人们津津乐道。它的编剧透露，这些故事都是按照一个公式展开的。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021081505.jpg\" alt=\"\" /></p>\n<p>每个故事都依次分成六个部分。</p>\n<p>（1）很久以前：描述一下世界以前的样子。</p>\n<p>（2）每天的生活：大家怎么过日子。</p>\n<p>（3）直到有一天：一个突发事件引发了巨变。</p>\n<p>（4）由于这件事：主人公遭受到了磨难。</p>\n<p>（5）由于这件事：主人公下定决心，展开新的冒险，找到出路。</p>\n<p>（6）最终：问题解决了，主人公过上了美好生活。</p>\n<p>大家可以回想一下，Pixar 的每部电影是不是符合这个公式。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202108/bg2021081507.jpg\" alt=\"\" /></p>\n<p>下面，就让我们按照这个公式，讲好自己公司的故事。</p>\n<p>（1）很久以前：世界有一个难题。</p>\n<p>（2）每天的生活：现有的各种解决方法都很糟糕，用户很痛苦。</p>\n<p>（3）直到有一天：我们想出了新的方法。</p>\n<p>（4）由于这件事：我们的方法比以前的方法都好。</p>\n<p>（5）由于这件事：我们将会吸引大量的客户。</p>\n<p>（6）最终：我们将会赢得了市场，取得成功。</p>\n<p>有了自己的故事以后，你还必须不停迭代，补充新内容，争取每一讲都比上一次效果更好。</p>\n<h2>言论</h2>\n<p>1、</p>\n<p>跨平台 UI 技术（比如 Electron）的优势，不是界面和体验的统一，而是能让不同平台版本的开发进展和功能保持一致。</p>\n<p>App 越大，不同平台之间保持版本一致，并在指定时间同时发布，就会越来越难。</p>\n<p>-- <a href=\"https://allenpike.com/2021/gravity-of-cross-platform-apps\">《跨平台技术的吸引力》</a>，1Password 团队最近宣布，新版本的 Mac 客户端将不再是原生 App，而是改用 Electron 开发。</p>\n<p>2、</p>\n<p>我出生时，美国即将迎来建国200周年纪念日（1976年）。对我来说，美国的建国完全像是发生在古代的事情。</p>\n<p>现在，我已经要将近50岁了，200周年只是我年龄的4倍而已，我甚至不觉得自己老了。就在这样一点时间里面，我们从最基本的电动机发展到了今天所有的惊人技术，从长期来看，人类的技术进步速度实在太惊人。</p>\n<p>-- <a href=\"https://news.ycombinator.com/item?id=28420701\">Hacker News 读者</a>，评论2021年是法拉第发明电动机200周年</p>\n<p>3、</p>\n<p>苹果公司今年会推出 iOS 15，支持的最老机型是 iPhone 6s 和 iPhone 6s Plus。这使得苹果公司成为全世界唯一一家提供七年系统更新的手机厂商。这很了不起，安卓手机厂商只有寥寥几家，能做到三年的操作系统升级和四年的安全更新。</p>\n<p>-- <a href=\"https://www.xda-developers.com/germany-smartphone-makers-7-years-software-updates/\">《德国希望立法要求手机厂商提供七年系统更新》</a></p>\n<p>4、</p>\n<p>每秒是不相等的。早上精力充沛的一个小时工作，相当于晚上疲倦时三个小时的工作。</p>\n<p>-- David Perell</p>\n<p>5、</p>\n<p>月球对人类的意义，远远超出大多数人的想象。因为有了月球，夜空照亮了，地球的倾斜度得到缓和，才有了一个更稳定、更宜居的气候。月球也导致潮汐产生，这有助于将热量从赤道穿过海洋转移到两极。</p>\n<p>--<a href=\"https://www.salon.com/2021/09/05/scientists-say-a-telescope-on-the-moon-could-advance-physics-and-theyre-hoping-to-build-one/\">《科学家计划在月球上新建望远镜》</a></p>\n<h2>历史上的本周</h2>\n<p>2020年（第 129 期）：<a href=\"https://www.ruanyifeng.com/blog/2020/10/weekly-issue-129.html\">创业的凸函数和凹函数</a></p>\n<p>2019年（第 77 期）：<a href=\"https://www.ruanyifeng.com/blog/2019/10/weekly-issue-77.html\">韩剧《阿尔布拉罕宫的回忆》</a></p>\n<p>2018年（第 26 期）：<a href=\"https://www.ruanyifeng.com/blog/2018/10/weekly-issue-26.html\">DHH 的新书《工作何必疯狂》</a></p>\n<h2>订阅</h2>\n<p>这个周刊每周五发布，同步更新在<a href=\"http://www.ruanyifeng.com/blog\">阮一峰的网络日志</a>和<a href=\"http://weixin.sogou.com/weixin?query=%E9%98%AE%E4%B8%80%E5%B3%B0%E7%9A%84%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97\">微信公众号</a>。</p>\n<p>微信搜索“阮一峰的网络日志”或者扫描二维码，即可订阅。</p>\n<p><img src=\"https://cdn.beekka.com/blogimg/asset/202103/bg2021030402.jpg\" alt=\"\" /></p>\n<p>（完）</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1757200,
+			"parentId": 0,
+			"url": "https://yinhe.co/p/d9fbef51265c4f1044d8345235306212/",
+			"author": {},
+			"date": "2023-12-22T06:58:11.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1256021,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1469451499",
+			"date": "2021-08-26T20:36:44.000Z",
+			"author": {
+				"name": "Nikita Voloboev",
+				"url": "https://twitter.com/nikitavoloboev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/49c4de5d9c1cf5a57dd74c2d54e29eaf33680745d6684801e8c2af0f4fe9ef1b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256022,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-934173056175665152",
+			"date": "2021-08-26T20:36:45.000Z",
+			"author": {
+				"name": "Lee Fisher",
+				"url": "https://twitter.com/LeeFisherJr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/06513f05cef2d7ea30e22eda8c975111a832c2ef4a7510465017c83f323af45b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256023,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1298185587220983809",
+			"date": "2021-08-26T20:36:45.000Z",
+			"author": {
+				"name": "Punky! Laboratorio Digital",
+				"url": "https://twitter.com/punkyio",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/81dd702d33b1054f70c6f4c6e0b136cf96912053975e7337093c6fd6f0b050ab.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256024,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-28761366",
+			"date": "2021-08-26T20:36:46.000Z",
+			"author": {
+				"name": "Lars Knudsen in 🇩🇰",
+				"url": "https://twitter.com/denladeside",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/585b32e06fcbf7f0704cce6480837faecc04b7b8de17514a6978fe930a510d34.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256025,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-19793281",
+			"date": "2021-08-26T20:36:46.000Z",
+			"author": {
+				"name": "Robin Rendle",
+				"url": "https://twitter.com/robinrendle",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ed6369c786391576b4ed9fa6f65d1f6f325f9ba2d7d2eb8af564bb10c954829b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256026,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-18636799",
+			"date": "2021-08-26T20:36:47.000Z",
+			"author": {
+				"name": "Stephanie Eckles",
+				"url": "https://twitter.com/5t3ph",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae7aebb65ddcb23a79323ff61cd61bae74c1845d99b7f9380f9dd3852c2e4245.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256027,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-840677333556219905",
+			"date": "2021-08-26T20:36:47.000Z",
+			"author": {
+				"name": "Owen Buckley 💡",
+				"url": "https://twitter.com/thegreenhouseio",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/28f8d5cd64e2ec7122a2a513d19d198d655a4935208036ceba19a6dc0d065f2c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256028,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-12161542",
+			"date": "2021-08-26T20:36:49.000Z",
+			"author": {
+				"name": "Chris Price 🏳️‍🌈",
+				"url": "https://twitter.com/studiochris",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/313deb7ec1c3f46fef12260d842a551b7f8764c05c14547aadc49ecc50d8bf1c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256029,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-54415438",
+			"date": "2021-08-26T20:36:49.000Z",
+			"author": {
+				"name": "Jaqueline Bica⚡",
+				"url": "https://twitter.com/jaquelice",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cefd45ea9a1322b7c60f2c4472a1536f69ecca0fcb48622b5c2f04658fe05cad.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256030,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-8933602",
+			"date": "2021-08-26T20:36:50.000Z",
+			"author": {
+				"name": "Alexis Deveria",
+				"url": "https://twitter.com/Fyrd",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/88fe32ab7f64369b52075919f09f4cec88d1bde826cb313a4719fbc717e256e1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256031,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-14387286",
+			"date": "2021-08-26T20:36:51.000Z",
+			"author": {
+				"name": "Botón",
+				"url": "https://twitter.com/boton",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1b5ba422ca9b5f5a73993ac7fd996da34fcbaccf84f4a1b59bd240d5f01ca796.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256032,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1956181",
+			"date": "2021-08-26T20:36:52.000Z",
+			"author": {
+				"name": "Colin Fahrion",
+				"url": "https://twitter.com/colinaut",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b0cb2ac92703b3159d856b37f310e18143a2fddfd5642e521ba4219012341b59.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256033,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1245635030874877958",
+			"date": "2021-08-26T20:36:53.000Z",
+			"author": {
+				"name": "Santi Cros",
+				"url": "https://twitter.com/santi_cros",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/26ed32e491d7c8af9fca0ba78853671fee1f94dc85d8ccf4df3d404c84566c7b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256034,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-785611",
+			"date": "2021-08-26T20:36:54.000Z",
+			"author": {
+				"name": "ashur.cab/rera",
+				"url": "https://twitter.com/ashur",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ea3faca15d8e1205b3e30ac302c8fdc3549d8b1b4db6a42a2d2c232b7c2b5ad8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256035,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1291380204594761735",
+			"date": "2021-08-26T20:36:55.000Z",
+			"author": {
+				"name": "József Polgár",
+				"url": "https://twitter.com/PolgrJzsef3",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d3e402cf31dbb828e2cc84ff36de481c676c58e35bcab271b4bf66270c28cfbd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256036,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-70000550",
+			"date": "2021-08-26T20:36:56.000Z",
+			"author": {
+				"name": "Guus Hoeve",
+				"url": "https://twitter.com/Bliepjes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be2cef40ad5163e3d0661e7f12c1ccf3faef4ba06cc0307f8a4a14ab0f874239.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256037,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-37289216",
+			"date": "2021-08-26T20:36:57.000Z",
+			"author": {
+				"name": "amberley",
+				"url": "https://twitter.com/amber1ey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/68b4bd7664eaea8baab8e663428a55cb9eec3735b15853cebf1da5ff321340a1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256038,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-400819857",
+			"date": "2021-08-26T20:36:58.000Z",
+			"author": {
+				"name": "𝕕𝔾𝕣𝕒𝕞𝕞𝕒𝕥𝕚𝕜𝕠",
+				"url": "https://twitter.com/dgrammatiko",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/12964fe42dab5ef794a7ca342ce69bac91d73f35cf46ba0221995f79c0ee4298.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256039,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-999646857348419584",
+			"date": "2021-08-26T20:36:59.000Z",
+			"author": {
+				"name": "Joe Lamyman",
+				"url": "https://twitter.com/JoeLamyman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e2d1c0c61e1988dd9ec19c8b526bb29b818e5d9e2cfbd40454bdd100178a92bc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256040,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-288892765",
+			"date": "2021-08-26T20:37:00.000Z",
+			"author": {
+				"name": "bkardell",
+				"url": "https://twitter.com/briankardell",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3f354ef071e29b979dd215c0c3e87dbfcc63dc4ef03b075556c37e6b03d176d0.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256186,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-133675428",
+			"date": "2021-08-26T23:24:04.000Z",
+			"author": {
+				"name": "As soon as I spot one 👾",
+				"url": "https://twitter.com/landopage",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/37f0d5b901976dd144a6d1324c54e036c07c3a3bda31bd6bc0e3833692a303af.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256187,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-790941188421410816",
+			"date": "2021-08-26T23:24:06.000Z",
+			"author": {
+				"name": "Callie",
+				"url": "https://twitter.com/calinoracation",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/161651b737c9ba4a390dbd32652d115ef6c7f61d8f4592d1189bddcfc1ce088c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256188,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-18935000",
+			"date": "2021-08-26T23:24:07.000Z",
+			"author": {
+				"name": "Ben Delarre",
+				"url": "https://twitter.com/BenDelarre",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0be131d3c95d9ecf47897d94eb7df90f09ef0350eaaebe70b0ead47f7c18c12e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256189,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-19358808",
+			"date": "2021-08-26T23:24:11.000Z",
+			"author": {
+				"name": "Bernard Nijenhuis",
+				"url": "https://twitter.com/bnijenhuis",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e1a995bad80b59251f9157c04ebf693517e0881f3a27be91bd8f789e5790802f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256190,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-1158125264976699399",
+			"date": "2021-08-26T23:24:11.000Z",
+			"author": {
+				"name": "dodiameer 🧡",
+				"url": "https://twitter.com/RandomDodi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/05714e4b21c2054d4610228213ce5798478d2545d62cb57c4c216577b3762ee7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256199,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-796896",
+			"date": "2021-08-26T23:24:19.000Z",
+			"author": {
+				"name": "Tyler Sticka, ☁️4",
+				"url": "https://twitter.com/tylersticka",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/915d377bb03954caa19f06718b00fc0a4a1ce903e9f5b39016747d3fb609dd27.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256200,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-259814870",
+			"date": "2021-08-26T23:24:19.000Z",
+			"author": {
+				"name": "Gaël Poupard",
+				"url": "https://twitter.com/ffoodd_fr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bebb7c8bbc4d5d316c64a4e8278e4fb1a662dd836590aa669864c8f7d7ca013d.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256201,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-202608598",
+			"date": "2021-08-26T23:24:20.000Z",
+			"author": {
+				"name": "Søren Birkemeyer 🦊",
+				"url": "https://twitter.com/polarbirke",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6b537c4b3e9ea0fec8dfba3e6db51dba114185304480c2665c0abc54e4af3812.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256202,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-804324103",
+			"date": "2021-08-26T23:24:20.000Z",
+			"author": {
+				"name": "ced 404",
+				"url": "https://twitter.com/ced404",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/71b6669d5267ee44c87f49781ee19a26b798b6cdde3c125a399b46ab4ac29b35.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256203,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1223050713674027008",
+			"date": "2021-08-26T23:24:21.000Z",
+			"author": {
+				"name": "Aodhan Hamilton",
+				"url": "https://twitter.com/suiteasdesign",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9e1f299ed86052ee1b53b072c07b7ce9fcbc9b8c1762e315e9f50f746cdfb913.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256204,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-528720846",
+			"date": "2021-08-26T23:24:21.000Z",
+			"author": {
+				"name": "Eric Portis",
+				"url": "https://twitter.com/etportis",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/558b4c45b7bd5a1107c170e4bb77e2f8cd7f59bf7eda42756b5a7b93c24753a2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256205,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1158125264976699399",
+			"date": "2021-08-26T23:24:22.000Z",
+			"author": {
+				"name": "dodiameer 🧡",
+				"url": "https://twitter.com/RandomDodi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/05714e4b21c2054d4610228213ce5798478d2545d62cb57c4c216577b3762ee7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256206,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-5008851",
+			"date": "2021-08-26T23:24:23.000Z",
+			"author": {
+				"name": "Daniel Ehniss",
+				"url": "https://twitter.com/depone",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1e35226036a279e6c4a36a44589fb71077a32ea6de5ca697f814fbbe55661ec2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256260,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-35556214",
+			"date": "2021-08-27T00:59:11.000Z",
+			"author": {
+				"name": "flaki",
+				"url": "https://twitter.com/slsoftworks",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6d620c0b3546a7daf3fdb8252282cdb9d79a4e05e2e053e802c64101d0ba7b8e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256263,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-4216361",
+			"date": "2021-08-27T00:59:32.000Z",
+			"author": {
+				"name": "Dion Almaer",
+				"url": "https://twitter.com/dalmaer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6938745ea40b5dcc4f92e1d5b2236c045df30b79347526fc55ba367e4cb01da0.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256264,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-32423646",
+			"date": "2021-08-27T00:59:33.000Z",
+			"author": {
+				"name": "Alfredo Lopez",
+				"url": "https://twitter.com/lfredolo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af202bbec15536412cd7011c0155cb4fb84cc17d9034cfefea40243c99feb26f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256265,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-331207312",
+			"date": "2021-08-27T00:59:34.000Z",
+			"author": {
+				"name": "Kyle Mitofsky #BLM",
+				"url": "https://twitter.com/KyleMitBTV",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/797b730743e3815f89ec08c6ca436701aa5f74ef7370e91c4419b80b918fef64.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256272,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-9910452",
+			"date": "2021-08-27T00:59:51.000Z",
+			"author": {
+				"name": "Matt Kane",
+				"url": "https://twitter.com/ascorbic",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f9056881bc290659551ae27432c3a1b6e4f7017a8f0c8e2ee1c7f794bf03d945.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256300,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-3222382606",
+			"date": "2021-08-27T02:27:03.000Z",
+			"author": {
+				"name": "Rafael Calvo 🔰",
+				"url": "https://twitter.com/rafacalvodev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/38d349520864e218283eb45416f675940d3f172c5ff91d245d8d99cd961e74f0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256301,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-28253",
+			"date": "2021-08-27T02:27:03.000Z",
+			"author": {
+				"name": "Scott McCracken",
+				"url": "https://twitter.com/scottmccracken",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ffaa73258035ebdbac210d12bb53973d0d96c9b259bdab13ac7485f4d2298ac8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256302,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-121542889",
+			"date": "2021-08-27T02:27:04.000Z",
+			"author": {
+				"name": "ChrisArchitect",
+				"url": "https://twitter.com/chrisarchitect",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e0b9699351556772b9daa1e70ebfee0923dc021ce7e5bbaca6d4f649de74a9bf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256450,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1363850582",
+			"date": "2021-08-27T06:07:57.000Z",
+			"author": {
+				"name": "Timon Forrer",
+				"url": "https://twitter.com/timon_forrer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6e39281bccd74db4415cf1ccbcbc43d641d0511e08f44ba67f1093851a537b9d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256477,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-385021351",
+			"date": "2021-08-27T07:40:37.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://twitter.com/MVSde",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7a9a5c1cb7cc62dcda0827053eb3179802b605ed71bf70a1f6a6ad2760e413d6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256480,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-47673399",
+			"date": "2021-08-27T07:40:46.000Z",
+			"author": {
+				"name": "Kai",
+				"url": "https://twitter.com/schweinepriestr",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/19ed441ac552a3ebe3b899261250e94971f6063e72ede4768189fa780d007580.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256481,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-862738522788290561",
+			"date": "2021-08-27T07:40:48.000Z",
+			"author": {
+				"name": "4rontender",
+				"url": "https://twitter.com/4rontender",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1e03122752444bf154dc3e2aaea1680f55dbf3500b2f71040eb23b323959f59a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256482,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-17215067",
+			"date": "2021-08-27T07:40:49.000Z",
+			"author": {
+				"name": "Hélio Correia",
+				"url": "https://twitter.com/heliocorreia",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/14bf75cff3a2821b65f3b5f81184c65160f0d39351eb82af8a7eb170a0f3b5fc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256483,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-170265794",
+			"date": "2021-08-27T07:40:50.000Z",
+			"author": {
+				"name": "Ahmad Shadeed",
+				"url": "https://twitter.com/shadeed9",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/83696430c67024db965cf1cd4fa8c112c95c56f70e4e7145eedbe72a5a3aed4b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256484,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-14168924",
+			"date": "2021-08-27T07:40:50.000Z",
+			"author": {
+				"name": "Sven Wolfermann",
+				"url": "https://twitter.com/maddesigns",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e3088286184d1bfe3eed1fed03ceaff9ba98d2f569a70ea788a8cf488ba820b1.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256485,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-83852898",
+			"date": "2021-08-27T07:40:51.000Z",
+			"author": {
+				"name": "Sami Keijonen",
+				"url": "https://twitter.com/samikeijonen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/563596f12242cf865eb4f8e914701e8f0caf82935d92809ac5c342cfadf247fe.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256486,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-765748",
+			"date": "2021-08-27T07:40:51.000Z",
+			"author": {
+				"name": "Milo Vermeulen",
+				"url": "https://twitter.com/milo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/44d6c4e4e337a35936a4624a1ecd5f791ab518dea9a8a04d67e4b708edd70245.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256487,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1297446457474088961",
+			"date": "2021-08-27T07:40:52.000Z",
+			"author": {
+				"name": "Mark Tomlinson",
+				"url": "https://twitter.com/NeuesAltes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fe4a542f777d641bab93ee6ba451aa56eb05561bb1db1b27b11fda30d31066a9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256488,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1093221313622224896",
+			"date": "2021-08-27T07:40:52.000Z",
+			"author": {
+				"name": "𝒟𝑜𝑔𝓊𝓀𝒶𝓃",
+				"url": "https://twitter.com/dgknca",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e50329b728894d2957e201362a23b82e181f149cabab878123cdd135e74aa749.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256489,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-119903601",
+			"date": "2021-08-27T07:40:53.000Z",
+			"author": {
+				"name": "Jamund Ferguson",
+				"url": "https://twitter.com/xjamundx",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eaa9bed8c22fa1b5a695d21f48b54918920c66bbc2d3c0d81791b0bd3b242630.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256490,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-45212375",
+			"date": "2021-08-27T07:40:53.000Z",
+			"author": {
+				"name": "Jacob 'KurtXTRM' Groß",
+				"url": "https://twitter.com/kurtextrem",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5b874def7c1a53fe95a4136f9136132edb5aa992f692893be7eb945a19a989b7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256491,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-7655012",
+			"date": "2021-08-27T07:40:54.000Z",
+			"author": {
+				"name": "Phil Hawksworth",
+				"url": "https://twitter.com/philhawksworth",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fd1185da1ed09664bc011181408cfd1571fc310d9fccaa93ee40f50c93cedd54.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256492,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-2923391727",
+			"date": "2021-08-27T07:40:55.000Z",
+			"author": {
+				"name": "Paul Ayo",
+				"url": "https://twitter.com/ayopaulofficial",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/615139b36f8cdf793fd33c2dbea7dd935aff995f013dbe847e44f897ec21d08d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256493,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-2622952715",
+			"date": "2021-08-27T07:40:56.000Z",
+			"author": {
+				"name": "Bradley Taylor",
+				"url": "https://twitter.com/_bradleyT",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ea018a1e4d2343bc11a185afe5e98144d7cd967d05785955b4799000e56193e1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256494,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-279614981",
+			"date": "2021-08-27T07:40:57.000Z",
+			"author": {
+				"name": "Maxime Richard",
+				"url": "https://twitter.com/rmaximedev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/55bf8a583ea1817b000e3fc9555ebaa5e480ff3efd34e61be0cd1a91f62cddef.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256495,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-385021351",
+			"date": "2021-08-27T07:40:57.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://twitter.com/MVSde",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7a9a5c1cb7cc62dcda0827053eb3179802b605ed71bf70a1f6a6ad2760e413d6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256501,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-35556214",
+			"date": "2021-08-27T07:41:11.000Z",
+			"author": {
+				"name": "flaki",
+				"url": "https://twitter.com/slsoftworks",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6d620c0b3546a7daf3fdb8252282cdb9d79a4e05e2e053e802c64101d0ba7b8e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256517,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-198862838",
+			"date": "2021-08-27T08:38:06.000Z",
+			"author": {
+				"name": "dovyden",
+				"url": "https://twitter.com/dovyden",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ba32a82391d103008723e9b1378656aab079fca2b939402063ffd460870c2099.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256518,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-305599765",
+			"date": "2021-08-27T08:38:07.000Z",
+			"author": {
+				"name": "Leo Bernard",
+				"url": "https://twitter.com/leolabs_org",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7ace583eea0ac46ebd0680b060ed778cdf1026768b892ddf7d6753e7e5149ed3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256519,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1347053115468439552",
+			"date": "2021-08-27T08:38:08.000Z",
+			"author": {
+				"name": "uptonking",
+				"url": "https://twitter.com/uptonking2",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256521,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-320135175",
+			"date": "2021-08-27T08:38:09.000Z",
+			"author": {
+				"name": "Peppo",
+				"url": "https://twitter.com/the_real_peppo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/db26b3e979d456533acfd86beb13bdedac59ae2eef93842c0adfb4d165b64a38.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256523,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-17509369",
+			"date": "2021-08-27T08:38:33.000Z",
+			"author": {
+				"name": "dies das 🦂 content",
+				"url": "https://twitter.com/zeb600",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a536848ecac0426794000843f988085620e32892a906cd338be33df75f4493d7.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256554,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-80786291",
+			"date": "2021-08-27T09:58:27.000Z",
+			"author": {
+				"name": "nemzes 🇪🇺",
+				"url": "https://twitter.com/nelsonmenezes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/966f199d98063cbdf19ede405cd16f1e282d054d462220cdda4e4c400df52637.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256555,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1382498130399203328",
+			"date": "2021-08-27T09:58:32.000Z",
+			"author": {
+				"name": "NiiAyi Ankrah",
+				"url": "https://twitter.com/phelgmatiq",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e29483cb8379b56f842cf148c878cdbae97022d8b03d531d82d215de4a9701b1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256556,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-4067941",
+			"date": "2021-08-27T09:58:32.000Z",
+			"author": {
+				"name": "Hazim Sami / حازم سامي",
+				"url": "https://twitter.com/hazim",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ef818910734d68f5b32b716594a1b083ea8321420fd9f8ced505db308faf514e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256557,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-2238819358",
+			"date": "2021-08-27T09:58:33.000Z",
+			"author": {
+				"name": "Adrian",
+				"url": "https://twitter.com/codebruder",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/59bebe784b2146ec1b1d88bccf942609fc7b75927044b971a86219be2f755894.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256558,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-61738543",
+			"date": "2021-08-27T09:58:35.000Z",
+			"author": {
+				"name": "Robert McCreary",
+				"url": "https://twitter.com/RobMcCreary",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b40e332bfe7c529f46218006bd10e91ec3dbb27faa5bad82a4218a3064ebeb30.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256559,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-582628160",
+			"date": "2021-08-27T09:58:35.000Z",
+			"author": {
+				"name": "Dan Shappir 💉💉💉",
+				"url": "https://twitter.com/DanShappir",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/da6b09a03daec03100bc32068d143772d41bf970f6e39ff7589576a2e1a236bc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256560,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-58448784",
+			"date": "2021-08-27T09:58:36.000Z",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://twitter.com/m_ott",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a34d0a855d4336e07245950e108a3d322445dabff46cfb01e805208ca3d8abcc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256561,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-104460949",
+			"date": "2021-08-27T09:58:37.000Z",
+			"author": {
+				"name": "Bob Massarczyk",
+				"url": "https://twitter.com/b2m9",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ee0a956878275290980f9b2ee0d81e153f541da43f5c8733f6f3cf3c58bdeabe.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256562,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-271283710",
+			"date": "2021-08-27T09:58:38.000Z",
+			"author": {
+				"name": "Johannes Schröder",
+				"url": "https://twitter.com/Scribblerockerz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4e63dbfb5224e352aff43ae85eea36123b6295e57dbd67a9e22a92dfd3361de1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256563,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-58454838",
+			"date": "2021-08-27T09:58:38.000Z",
+			"author": {
+				"name": "François REMY",
+				"url": "https://twitter.com/FremyCompany",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/691726b4517c5578f1bf515e6a3911b67e583978e555d8cdd7fb3fc61e9b3f1d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256564,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-50683",
+			"date": "2021-08-27T09:58:39.000Z",
+			"author": {
+				"name": "丁一",
+				"url": "https://twitter.com/dingyi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2de51c9348affbbaf68efe6292b1f4c2f79d80869e66483c8b16ebb41ca11ad3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256633,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-18044548",
+			"date": "2021-08-27T12:27:18.000Z",
+			"author": {
+				"name": "Andrea Pernici",
+				"url": "https://twitter.com/andreapernici",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eadb17bbf9b0f1cdb6506d8937bc2960cf6f7ed3027a0d9ff0a11949b08feafe.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256635,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-48064052",
+			"date": "2021-08-27T12:27:21.000Z",
+			"author": {
+				"name": "Stephen Cunliffe",
+				"url": "https://twitter.com/scunliffe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c744a554af5872749fb6434a79b0d904eb2779a8c638f04a1ae918747df5d136.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256636,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-193334704",
+			"date": "2021-08-27T12:27:22.000Z",
+			"author": {
+				"name": "MyCool King",
+				"url": "https://twitter.com/iPullRank",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/df6dacdc6acebfc5adc8103d12eecb3c90febdbd1342982cc0317d958fc078bf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256637,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1229124818467000324",
+			"date": "2021-08-27T12:27:23.000Z",
+			"author": {
+				"name": "Corentin",
+				"url": "https://twitter.com/cogk_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8b9c88af660abc397a756e9d04e9c23f94ca1cca6a7449917ed0a329d1b787d6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256638,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-14265456",
+			"date": "2021-08-27T12:27:23.000Z",
+			"author": {
+				"name": "Sérgio Jardim",
+				"url": "https://twitter.com/sjardim",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/beec3187ff586ff6613c6858cf459d0d44e8d2ef2a6750cd3ab93c843c8f2641.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256639,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-49285959",
+			"date": "2021-08-27T12:27:24.000Z",
+			"author": {
+				"name": "Maëlig",
+				"url": "https://twitter.com/MaelB",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/091adec978f638e7d037201fa920b51c0320e69f1873d02c1c1ec4b22b8a724e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256640,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1201841822475010050",
+			"date": "2021-08-27T12:27:25.000Z",
+			"author": {
+				"name": "Shireen Taj",
+				"url": "https://twitter.com/Shireen_dev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a68913f13ca583786bb00500dc40b894153d882db8bff9c1a855c9009be58549.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256641,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-93887498",
+			"date": "2021-08-27T12:27:25.000Z",
+			"author": {
+				"name": "Jeremy Jay",
+				"url": "https://twitter.com/thepbnjay",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7c355df9e0e50f22e6420a3c680e424a7354605074ad3edd252cfa5f09311e52.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256642,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-2233584636",
+			"date": "2021-08-27T12:27:26.000Z",
+			"author": {
+				"name": "Nicolas Giethlen",
+				"url": "https://twitter.com/nicolasgiethlen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/47e08dc3841b919ad275101796ad580b24f060aa50f5b78984e285db918b7d5e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256643,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-2174674039",
+			"date": "2021-08-27T12:27:27.000Z",
+			"author": {
+				"name": "Sebi",
+				"url": "https://twitter.com/Sebiworld",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ce5a2ac45d3afe9a2e99dc8ff01c4d2a11eac89c9b4a4d5b5a23645950ff98a6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256644,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-2712659901",
+			"date": "2021-08-27T12:27:28.000Z",
+			"author": {
+				"name": "Gregor Albrecht",
+				"url": "https://twitter.com/gregoralbrecht",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5e5e7bf734dee353affadb98bda7bf6c5e5e07fbeb7b122a206ac227a3be8b79.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256645,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-73415651",
+			"date": "2021-08-27T12:27:28.000Z",
+			"author": {
+				"name": "SteinErik Skotkjerra",
+				"url": "https://twitter.com/Skotkjerra",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5100b80acdcdbc17143bcdba099ddb5314befa4c57bff2f7e9018911ceab3975.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256646,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1074377079049748480",
+			"date": "2021-08-27T12:27:29.000Z",
+			"author": {
+				"name": "🤍",
+				"url": "https://twitter.com/durianjimin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/442b3df829b85746cfd402b917a1e33936bc991f66717f5cf9fbfae74a383877.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256647,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-118047908",
+			"date": "2021-08-27T12:27:31.000Z",
+			"author": {
+				"name": "M Haidar Hanif 🧊",
+				"url": "https://twitter.com/mhaidarhanif",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1a6280a4ac36116177772cce11b40b960939a8fc7b10c5828a8ee9ccf0cacbdb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256648,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-965085421100154881",
+			"date": "2021-08-27T12:27:31.000Z",
+			"author": {
+				"name": "Danuel, the Cruella",
+				"url": "https://twitter.com/_danuel_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bcf54b977568c8bc23bb272f830681bef055bb71ef4f814bc690ae7e799536a0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256866,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-55836498",
+			"date": "2021-08-27T15:50:39.000Z",
+			"author": {
+				"name": "Golmote",
+				"url": "https://twitter.com/Golmote",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c5f691ef32e840fc554f966a6e1f5fd89233b1dd8c79095dce62c68c22a265e9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256867,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-37127777",
+			"date": "2021-08-27T15:50:41.000Z",
+			"author": {
+				"name": "Sue Pooh",
+				"url": "https://twitter.com/suethepooh",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b24744611a51186dcef9d354a8310f95985847877b38048d6ed8d6c1117fc201.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256868,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-14563904",
+			"date": "2021-08-27T15:50:42.000Z",
+			"author": {
+				"name": "Dave Methvin",
+				"url": "https://twitter.com/davemethvin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/124961262b18a9f11bd45d3bd8904b2d4e62b59c9eb243a4116f28d6e1a52436.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256869,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1321384860301361157",
+			"date": "2021-08-27T15:50:43.000Z",
+			"author": {
+				"name": "Subaru Tempest 🐉",
+				"url": "https://twitter.com/sevenreup4ill",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a9b2ca082e8ff04d73623401ad57e7fb0a434439f0c36814f8691b7c1455e56f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256870,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-18369547",
+			"date": "2021-08-27T15:50:44.000Z",
+			"author": {
+				"name": "Kevin MacKenzie",
+				"url": "https://twitter.com/KevinMackenzie",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/10169451550a193e2acca2aaef5fd20e5c774eb4d0f5566403088350e8f0e1b2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256871,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-3245290260",
+			"date": "2021-08-27T15:50:45.000Z",
+			"author": {
+				"name": "Andrew Chou",
+				"url": "https://twitter.com/_andrewchou",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/676550a40342a3ff45737dd9e441faa80c44f7dd6166b5c67128a5a9e6b17585.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256872,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-18660784",
+			"date": "2021-08-27T15:50:45.000Z",
+			"author": {
+				"name": "Phil Keys",
+				"url": "https://twitter.com/Philly_Keys",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/01d6c7dce854db95f6d398b466bc54ee9dbc2839cc26cbf0961bce68ddbaf187.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256873,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-200841622",
+			"date": "2021-08-27T15:50:46.000Z",
+			"author": {
+				"name": "Leoaee",
+				"url": "https://twitter.com/leoaee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4ce4efd302883f4227995bf24c9cdca1dcf34cf85a5e4e07144af978dae53dd9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256874,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-14412405",
+			"date": "2021-08-27T15:50:46.000Z",
+			"author": {
+				"name": "Mike Aparicio",
+				"url": "https://twitter.com/peruvianidol",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/634afa59eff185624485098b7a75d834d835b02b24c8b58db7770f3416d4baf9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256875,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-718993",
+			"date": "2021-08-27T15:50:47.000Z",
+			"author": {
+				"name": "Mahdi",
+				"url": "https://twitter.com/mahdi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/059505a31bf541cd17484ad7544a6027846473b110b699ccd2fd41feaa70c27e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256876,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1343966168",
+			"date": "2021-08-27T15:50:47.000Z",
+			"author": {
+				"name": "Misbah ansori",
+				"url": "https://twitter.com/MisbahAnsori24",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9b30029d734189d56f40b360eca63f3400f2391307c15d38b3401fbfc0b61e7f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256973,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-368470735",
+			"date": "2021-08-27T19:11:50.000Z",
+			"author": {
+				"name": "Goerp",
+				"url": "https://twitter.com/Goerp",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6abf9f4d9ba63beeb81d902516b7830bb22883bbd3ce09f131df8bc0379f2e99.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256974,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-116343052",
+			"date": "2021-08-27T19:11:50.000Z",
+			"author": {
+				"name": "ᴊᴏɴᴀs sᴄʜᴍɪᴅᴛ",
+				"url": "https://twitter.com/_jschmidt",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5ebb924e355d89f119c5380ededcd305cdaf64a2c45152bec7756e1c039b983d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256975,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-133298197",
+			"date": "2021-08-27T19:11:52.000Z",
+			"author": {
+				"name": "Subramanya Chakravarthy",
+				"url": "https://twitter.com/chakrihacker",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7bd497ca6d19cfe07fef8808ffb62db38985bcd0c65cd645a077bee1d9e492d7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256976,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-432888518",
+			"date": "2021-08-27T19:11:53.000Z",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://twitter.com/hexagoncircle",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/83ecdd1f7b2d6a7a90e86802aa1ae6c2e0d2819b83db984892f9c0be96584092.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256977,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-14447248",
+			"date": "2021-08-27T19:11:54.000Z",
+			"author": {
+				"name": "Matthew Phillips",
+				"url": "https://twitter.com/matthewcp",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6d7638a1ee6e9af1c05c7b08256217d6ed989ffba71b68653b786f17d06adb76.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256978,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-2541327971",
+			"date": "2021-08-27T19:11:55.000Z",
+			"author": {
+				"name": "Paul Shryock (he/him)",
+				"url": "https://twitter.com/Paul_Shryock",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/935bf4b398d49a01b4421e13d64d678c71c96046fc527afaf9e2de7b23582a3f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256979,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1543230128",
+			"date": "2021-08-27T19:11:55.000Z",
+			"author": {
+				"name": "Stephen Lindberg",
+				"url": "https://twitter.com/fiestefan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/773347bbfc6d6649bd5c5fa670e9a57699f38537ba0a905757b3b670c6b14fda.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256982,
+			"url": "https://twitter.com/zachleat/status/1431001949680377867#favorited-by-1387998469",
+			"date": "2021-08-27T19:12:16.000Z",
+			"author": {
+				"name": "kev e",
+				"url": "https://twitter.com/keve1981",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256983,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-289095641",
+			"date": "2021-08-27T19:12:19.000Z",
+			"author": {
+				"name": "TRST_Blog",
+				"url": "https://twitter.com/trst_blog",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8c872b78457b09bb978c4fd62406b1225e0736e1c6a1c13419921a86abd9d683.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257378,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-14837751",
+			"date": "2021-08-28T05:34:29.000Z",
+			"author": {
+				"name": "Shaw",
+				"url": "https://twitter.com/shshaw",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/feb9ddf14a75920ccb2bf138bdc0d16622117371b4afc59d03d3d6804947b1b8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257379,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-13486682",
+			"date": "2021-08-28T05:34:29.000Z",
+			"author": {
+				"name": "Pierre Far",
+				"url": "https://twitter.com/pierrefar",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5019e1a5265c96e672ff51467930894c872dfac3aa5cc254b0bbb8a435b40117.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257380,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-39890524",
+			"date": "2021-08-28T05:34:30.000Z",
+			"author": {
+				"name": "Kiran Sonley",
+				"url": "https://twitter.com/ksonnad",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0e7e8a5891486829d13c5ed1fe3780209f0d460084e11f3806eac49ca94bfe6d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257381,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1046076458",
+			"date": "2021-08-28T05:34:31.000Z",
+			"author": {
+				"name": "pudymody",
+				"url": "https://twitter.com/pudymody",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/33a08a9b25fc21eb71f6544e36002c506130a363cedb63eea57593fb5fda618a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257382,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-36324447",
+			"date": "2021-08-28T05:34:31.000Z",
+			"author": {
+				"name": "Brian Milne",
+				"url": "https://twitter.com/BrianDMilne",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/838e9248b675037b510b5ba6e0020933fd47cf5350ae6793a291767f77ccef6a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257383,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1908563642",
+			"date": "2021-08-28T05:34:32.000Z",
+			"author": {
+				"name": "Michele Invernizzi",
+				"url": "https://twitter.com/mitch_inve",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/56323b746a115cbd26d60a6c9dedb7498482e641bd28699fe0d20c842cdbded7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257384,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-118470578",
+			"date": "2021-08-28T05:34:33.000Z",
+			"author": {
+				"name": "Markus Cadonau",
+				"url": "https://twitter.com/mcadonau",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0127a56f81aa3d388c188291148fb4c8541066a7674aa428fb60ee70919af00f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257385,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-152335296",
+			"date": "2021-08-28T05:34:55.000Z",
+			"author": {
+				"name": "Roberto Modica",
+				"url": "https://twitter.com/RobModica",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a10a1fb0eb7a381f836c8917662e20ee7ebd6fd39cb88c057a5a51627ffc626a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257386,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-1216415099310825472",
+			"date": "2021-08-28T05:34:57.000Z",
+			"author": {
+				"name": "Alexei Accio",
+				"url": "https://twitter.com/alexeiaccio",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/39afc98ff5e08a6ca1bdacca485e1b57d5b5e5e3d3f67902db634130eb07bf65.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257400,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-139566230",
+			"date": "2021-08-28T06:01:19.000Z",
+			"author": {
+				"name": "Eric Guo 过纯中",
+				"url": "https://twitter.com/ecguo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be49a8d893b545596da58535a40d9771f32542b9149ca788ee7c9b9f234c5499.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257401,
+			"url": "https://twitter.com/zachleat/status/1430944481965182976#favorited-by-3187968551",
+			"date": "2021-08-28T06:01:19.000Z",
+			"author": {
+				"name": "Ahmad Saleem",
+				"url": "https://twitter.com/I_am_AhmadS",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5edf02bd7e0517cbd212287c6e06c109b4072f05d44f970ae39834ffdd64f72e.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1256046,
+			"url": "https://twitter.com/jamstackconf/status/1430946652265713671",
+			"date": "2021-08-26T17:34:02.000Z",
+			"author": {
+				"name": "Jamstack",
+				"url": "https://twitter.com/jamstackconf",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/695b3992ba0ccfda532dd8fe5424918750fd24b2c9c6abfcbd61dac8f2ed7563.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256045,
+			"url": "https://twitter.com/schneyra/status/1430946886085718019",
+			"date": "2021-08-26T17:34:58.000Z",
+			"author": {
+				"name": "Martin Schneider",
+				"url": "https://twitter.com/schneyra",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2a37b673158bdf28d67f2a4f369389dd254b9f8dd5fcd55ba661507e2764cb82.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256044,
+			"url": "https://twitter.com/amber1ey/status/1430947556754919435",
+			"date": "2021-08-26T17:37:37.000Z",
+			"author": {
+				"name": "amberley",
+				"url": "https://twitter.com/amber1ey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/68b4bd7664eaea8baab8e663428a55cb9eec3735b15853cebf1da5ff321340a1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256043,
+			"url": "https://twitter.com/boton/status/1430948345359519753",
+			"date": "2021-08-26T17:40:45.000Z",
+			"author": {
+				"name": "Botón",
+				"url": "https://twitter.com/boton",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1b5ba422ca9b5f5a73993ac7fd996da34fcbaccf84f4a1b59bd240d5f01ca796.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256042,
+			"url": "https://twitter.com/JPKCom/status/1430950603451211791",
+			"date": "2021-08-26T17:49:44.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://twitter.com/JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1f3a227c1b8d3b81ac4e277d0fc4f37f1b4c9b392b5b49382c645f61690c5404.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256041,
+			"url": "https://twitter.com/actualgabe/status/1430962819189678080",
+			"date": "2021-08-26T18:38:16.000Z",
+			"author": {
+				"name": "Gabriel Luethje",
+				"url": "https://twitter.com/actualgabe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3fb6ed6a870596db1d858023db054d5693f2eece47b0007180f3b556f4b3b1e6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256209,
+			"url": "https://twitter.com/etportis/status/1431026559591190532",
+			"date": "2021-08-26T22:51:33.000Z",
+			"author": {
+				"name": "Eric Portis",
+				"url": "https://twitter.com/etportis",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/558b4c45b7bd5a1107c170e4bb77e2f8cd7f59bf7eda42756b5a7b93c24753a2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256208,
+			"url": "https://twitter.com/tylersticka/status/1431026875619364864",
+			"date": "2021-08-26T22:52:48.000Z",
+			"author": {
+				"name": "Tyler Sticka, ☁️4",
+				"url": "https://twitter.com/tylersticka",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/915d377bb03954caa19f06718b00fc0a4a1ce903e9f5b39016747d3fb609dd27.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256207,
+			"url": "https://twitter.com/HenriHelvetica/status/1431029907606355975",
+			"date": "2021-08-26T23:04:51.000Z",
+			"author": {
+				"name": "Henri Helvetica v2.2 👩🏾‍🚀 🇭🇹",
+				"url": "https://twitter.com/HenriHelvetica",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bfcbb68b923bd0d0337b3a4bf628669f8bdb0432a82fc2591263f2a3eb16de40.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256500,
+			"url": "https://twitter.com/tomayac/status/1431138131349282817",
+			"date": "2021-08-27T06:14:54.000Z",
+			"author": {
+				"name": "Thomas Steiner",
+				"url": "https://twitter.com/tomayac",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/05796e7c6ce8b47a935fae4489812faf9813783f9c99b9b9dbb54d2de4bb9770.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256499,
+			"url": "https://twitter.com/MVSde/status/1431140973971660802",
+			"date": "2021-08-27T06:26:12.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://twitter.com/MVSde",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7a9a5c1cb7cc62dcda0827053eb3179802b605ed71bf70a1f6a6ad2760e413d6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256498,
+			"url": "https://twitter.com/samikeijonen/status/1431146754947305474",
+			"date": "2021-08-27T06:49:10.000Z",
+			"author": {
+				"name": "Sami Keijonen",
+				"url": "https://twitter.com/samikeijonen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/563596f12242cf865eb4f8e914701e8f0caf82935d92809ac5c342cfadf247fe.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256497,
+			"url": "https://twitter.com/4rontender/status/1431147746526957572",
+			"date": "2021-08-27T06:53:06.000Z",
+			"author": {
+				"name": "4rontender",
+				"url": "https://twitter.com/4rontender",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1e03122752444bf154dc3e2aaea1680f55dbf3500b2f71040eb23b323959f59a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256496,
+			"url": "https://twitter.com/ayopaulofficial/status/1431148555322920963",
+			"date": "2021-08-27T06:56:19.000Z",
+			"author": {
+				"name": "Paul Ayo",
+				"url": "https://twitter.com/ayopaulofficial",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/615139b36f8cdf793fd33c2dbea7dd935aff995f013dbe847e44f897ec21d08d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256522,
+			"url": "https://twitter.com/yoavweiss/status/1431172894890074113",
+			"date": "2021-08-27T08:33:02.000Z",
+			"author": {
+				"name": "Yoav Weiss",
+				"url": "https://twitter.com/yoavweiss",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/57bf5de6b685745884231bddf3a1a01f103f5882af8166fb66f8f03616296afd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256567,
+			"url": "https://twitter.com/FremyCompany/status/1431180994447564800",
+			"date": "2021-08-27T09:05:13.000Z",
+			"author": {
+				"name": "François REMY",
+				"url": "https://twitter.com/FremyCompany",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/691726b4517c5578f1bf515e6a3911b67e583978e555d8cdd7fb3fc61e9b3f1d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256566,
+			"url": "https://twitter.com/SaraSoueidan/status/1431193736386686979",
+			"date": "2021-08-27T09:55:51.000Z",
+			"author": {
+				"name": "Sara Soueidan",
+				"url": "https://twitter.com/SaraSoueidan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/55e842329c5a7a14f410fa0fa53401b684916dbc93138e81b5f087295350bb0c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256565,
+			"url": "https://twitter.com/Basix1120/status/1431193769391493122",
+			"date": "2021-08-27T09:55:59.000Z",
+			"author": {
+				"name": "Basix ",
+				"url": "https://twitter.com/Basix1120",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a07bb06dae4dd98cf22a26100a673851b8000d78a16e9bf8bbb7cfa36ff8c080.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256649,
+			"url": "https://twitter.com/jonoalderson/status/1431208367121485824",
+			"date": "2021-08-27T10:53:59.000Z",
+			"author": {
+				"name": "Jono Alderson",
+				"url": "https://twitter.com/jonoalderson",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d16c44901fda79db411c074a015c74a6f6c966f8babf1da83a94284da3deabdc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256881,
+			"url": "https://twitter.com/peruvianidol/status/1431233616453963777",
+			"date": "2021-08-27T12:34:19.000Z",
+			"author": {
+				"name": "Mike Aparicio",
+				"url": "https://twitter.com/peruvianidol",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/634afa59eff185624485098b7a75d834d835b02b24c8b58db7770f3416d4baf9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256880,
+			"url": "https://twitter.com/danrodneytweets/status/1431246573346902017",
+			"date": "2021-08-27T13:25:49.000Z",
+			"author": {
+				"name": "Dan Rodney",
+				"url": "https://twitter.com/danrodneytweets",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1ad125f94e63a8907ccf7d001f6ae031f3d841875ccd80dd31a7c5e286a21c3d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256879,
+			"url": "https://twitter.com/nobledesktop/status/1431246631169634307",
+			"date": "2021-08-27T13:26:02.000Z",
+			"author": {
+				"name": "Noble Desktop",
+				"url": "https://twitter.com/nobledesktop",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/28c173979042f28c17938e71b515ecd7648fb53b1211636aebc4105ba38f8b5a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256877,
+			"url": "https://twitter.com/pau4o/status/1431265670398943235",
+			"date": "2021-08-27T14:41:42.000Z",
+			"author": {
+				"name": "Kamen Naydenov",
+				"url": "https://twitter.com/pau4o",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/98243aeb5cf9225148d2ba1c006064b84b32568f99f97eeff013bd77c963249a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256878,
+			"url": "https://twitter.com/tabatkins/status/1431270145377259524",
+			"date": "2021-08-27T14:59:29.000Z",
+			"author": {
+				"name": "Minimalist Wall Clocks",
+				"url": "https://twitter.com/tabatkins",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dadae40cd9bdff893c4851f2e4bbd4c4001966230a32f86b34f9d46c0caad76d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256981,
+			"url": "https://twitter.com/hexagoncircle/status/1431314333624119306",
+			"date": "2021-08-27T17:55:04.000Z",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://twitter.com/hexagoncircle",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/83ecdd1f7b2d6a7a90e86802aa1ae6c2e0d2819b83db984892f9c0be96584092.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1256980,
+			"url": "https://twitter.com/Duncanma/status/1431319140023750663",
+			"date": "2021-08-27T18:14:10.000Z",
+			"author": {
+				"name": "Duncan Mackenzie",
+				"url": "https://twitter.com/Duncanma",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f1ab6fd52fe7834c3e3d435a63ab560300810274ee8d2647fa23197285cdaa29.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257044,
+			"url": "https://twitter.com/ecguo/status/1431348162770321408",
+			"date": "2021-08-27T20:09:29.000Z",
+			"author": {
+				"name": "Eric Guo 过纯中",
+				"url": "https://twitter.com/ecguo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be49a8d893b545596da58535a40d9771f32542b9149ca788ee7c9b9f234c5499.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257082,
+			"url": "https://twitter.com/ollicle/status/1431377490358931459",
+			"date": "2021-08-27T22:06:02.000Z",
+			"author": {
+				"name": "Ollie Boermans",
+				"url": "https://twitter.com/ollicle",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d1a7bb0c0c787e54829e685a83bcfcebacefca7d914826e5d0077aacc1272eff.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1257084,
+			"url": "https://twitter.com/shshaw/status/1431404567636361221",
+			"date": "2021-08-27T23:53:37.000Z",
+			"author": {
+				"name": "Shaw",
+				"url": "https://twitter.com/shshaw",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/feb9ddf14a75920ccb2bf138bdc0d16622117371b4afc59d03d3d6804947b1b8.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

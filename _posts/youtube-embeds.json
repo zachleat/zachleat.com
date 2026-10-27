@@ -1,0 +1,1047 @@
+{
+	"comments": [
+		{
+			"id": 1752527,
+			"parentId": 0,
+			"url": "https://writing.exchange/@ernie/111568076406328754",
+			"author": {
+				"name": "Ernie Smith",
+				"url": "https://writing.exchange/@ernie",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d912fb59f930c22b3fae8f1d74f7fe0886f94bfe7cf2d68db4255edc71277790.jpg"
+			},
+			"date": "2023-12-12T15:09:03.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> This is what always makes me laugh about how aggressive Google has been with core web vitals—it’s literally their external code that is slowing everything down. When I added a script that replaced YouTube embeds with images, that helped my CWVs a lot.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752528,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568088565799097",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-12T15:12:09.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://writing.exchange/@ernie\" class=\"u-url\">@<span>ernie</span></a></span> Yeah: Google is basically hundreds of different companies—most of Google’s performance advice can be viewed as though it is aimed directly at other teams at Google. I think in many cases the web performance resources were prepared with that in mind.</p><p>Notably, the solution I recommend is a web component written by a Google employee ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752555,
+			"parentId": 0,
+			"url": "https://indieweb.social/@Chronotope/111568169528695135",
+			"author": {
+				"name": "Aram Zucker-Scharff",
+				"url": "https://indieweb.social/@Chronotope",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8ddf6cfdad3666f80a3098af2b8ce839c544f58dd3232b2e3ca96b50828b4e26.jpg"
+			},
+			"date": "2023-12-12T15:32:44.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I've been playing with the YouTube API and embeds lately as well, but I find it frustrating that if I want to use the API inside and postMessages I *have* to use the whole YT API package. Did you find any way around that?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752556,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568203972670327",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-12T15:41:30.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@Chronotope\" class=\"u-url\">@<span>Chronotope</span></a></span> unfortunately no!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752649,
+			"parentId": 0,
+			"url": "https://mastodon.me.uk/@slowe/111568741499857879",
+			"author": {
+				"name": "Stuart :progress_pride:",
+				"url": "https://mastodon.me.uk/@slowe",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a2cc7cd29a05d5d2e4a3c3b5580858543d88a5e8d7da36e1ecf52165ae6e7ce1.jpg"
+			},
+			"date": "2023-12-12T17:58:12.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> As well as saving 1.1MB, I think you also avoid Google tracking your visitors before they've had a chance to decide if they want to click play or not.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752650,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@hexagoncircle/111568843781155800",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://fosstodon.org/@hexagoncircle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2b9e19461695dcc3d5426dbe58bc7f0337c9c2a838e5387c8c66677298ba3241.jpg"
+			},
+			"date": "2023-12-12T18:24:13.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> May as well call it a \"California king embed\" at that size, amirite?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752675,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568891781017856",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-12T18:36:25.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@hexagoncircle\" class=\"u-url\">@<span>hexagoncircle</span></a></span> hahahahaha</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752676,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@bzdev/111568989609990843",
+			"author": {
+				"name": "Bill Zaumen",
+				"url": "https://fosstodon.org/@bzdev",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"date": "2023-12-12T19:01:18.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> The idea that one 'youtube embed weighs 1.2 MB' reminds me of something I heard years ago. A government project required developing software going into an airplane. \"What does it weight?\" \"Huh?\" \"Everything in an airplane has to specify a weight.\" So, they listed the weight of a floppy disk. This caused a major complaint: \"You are way out of line on the price per pound ratio.\"  Finally they explained it as \"tooling costs.\"</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752677,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568994653689992",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-12T19:02:35.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@bzdev\" class=\"u-url\">@<span>bzdev</span></a></span> ???? can a therapist somewhere please quantify psychological weight</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752674,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@hexagoncircle/111569047261906907",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://fosstodon.org/@hexagoncircle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2b9e19461695dcc3d5426dbe58bc7f0337c9c2a838e5387c8c66677298ba3241.jpg"
+			},
+			"date": "2023-12-12T19:15:58.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ah, thank you! My site would be nothing without the top shelf excellence that comes with using <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1752696,
+			"parentId": 0,
+			"url": "https://mastodon.xyz/@wills/111569233308989082",
+			"author": {
+				"name": "Skora, Will",
+				"url": "https://mastodon.xyz/@wills",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e52e9719d2ac887e06036d803f0cb38a01995c3d31bba32ce4bc0124e0a7b8f7.png"
+			},
+			"date": "2023-12-12T20:03:16.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> a single embed of google maps with 1 Marker is 978kb (i implemented paul Irish's library for YouTube a few weeks ago) but haven't found a similar tactic for googlemaps just yet (i checked out competitor mapbox-gl, &amp; its 2.5mb) <a href=\"https://mastodon.xyz/tags/webperf\">#<span>webperf</span></a></p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/webperf\">webperf</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1755806,
+			"parentId": 0,
+			"url": "https://jeffbridgforth.com/weeknotes-december-19-2023/",
+			"author": {},
+			"date": "2023-12-19T15:01:29.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1783199,
+			"parentId": 0,
+			"url": "https://jamesg.blog/2024/02/19/personal-website-ideas/",
+			"author": {},
+			"date": "2024-02-19T06:00:00.000Z",
+			"content": "<p>One of my favourite things to do in my free time is to tinker with this website. Indeed, this website is the culmination of years of tinkering. I have added features like coffee shop maps that I can share with friends, a way for me to share my bio in two languages, a sitemap.xml file to help search engines find pages on my website, and more.</p>\n<p>When I have free time, I often find myself asking: what can I do with my website today? I suspect many other people passionate about their websites will ask this question, too. This post is an answer to that question for its readers.</p>\n<p>Below, I list many things you can do on your personal website. This post is not meant to be a checklist so much as a source for inspiration. Perhaps one of the ideas below will take you down a deligthful rabbit hole that leads you to new learnings. Perhaps an idea will bring you joy. Perhaps some ideas aren't right for your site, but that still get you thinking.</p>\n<p>These ideas are inspired by what I have done and things I have seen on the personal web. For more ideas, refer to the <a href=\"https://32bit.cafe/websiteideas/\">32 Bit Cafe's personal website ideas list</a>.</p>\n<p>Without further ado, a list of 100 things you can do on your personal website.</p>\n<ol><li>If you don't have one already, set up a website! You can use any website making tool you want. WordPress, micro.blog, omg.lol are three of many tools that you can use without code or extensive setup. You can even make your own site with code, if you want.</li>\n<li>Write a blog post about:</li>\n<li>Something that interests you.</li>\n<li>Something that brought you joy recently.</li>\n<li>A thing you learned over the last week.</li>\n<li>Your thoughts on a book you finished reading.</li>\n<li>Your strategy on playing a game you like.</li>\n<li>Or whatever else you would like to write about.</li>\n<li>Share a recipe you made recently.</li>\n<li>Publish a photo you took recently.</li>\n<li>Make a <a href=\"https://indieweb.org/blogroll\">blogroll</a> that links to personal websites you like.</li>\n<li>Make a robots.txt file that limits how search engines and AI crawlers can ingest your site.</li>\n<li>Create a shrine about something that makes you happy (a band, a television show, or anything else).</li>\n<li>Make an image map that lets someone click on parts of an image to learn more. Perhaps you could make an image map of your desk where someone can click on each object to learn more about it.</li>\n<li>Share a list of your favourite books.</li>\n<li>Make a movie recommendations page.</li>\n<li>Add a dark mode that readers can enable.</li>\n<li>Register a domain name and use it with your website.</li>\n<li>Add an easter egg.</li>\n<li>Make a <a href=\"https://indieweb.org/guestbook\">guestbook</a> where people can leave notes saying they liked your website.</li>\n<li>Add a background image to your website or a page on your website.</li>\n<li>Create a scavenger hunt where people need to hunt through pages to find clues.</li>\n<li>Leave comments in your HTML so people can understand how different templates on your site work. For example, you could annotate your <code>head</code> tag so people looking at the code know what different meta tags do. Remember, someone may be <code>view-source</code>ing your website who has never made a website before!</li>\n<li>Share a list of web pages (articles, websites, blog posts, photos, games, etc.) you have enjoyed recently.</li>\n<li>Add alt text to images that don't have them.</li>\n<li>Use WAVE to find potential accessibility issues on different pages on your website.</li>\n<li>Use PageSpeed Insights to check the speed of your website. Try to make pages load faster if they currently load slow.</li>\n<li>If you publish academic works on your website, add a section that shows how people should cite your work.</li>\n<li>Make an antilibrary where you list the books you own but have not or do not plan to read.</li>\n<li>Make a word game.</li>\n<li>Write about something you added to your website (#sitedocumentation!).</li>\n<li>Write a list of words you learned recently.</li>\n<li>Add an RSS feed so people can subscribe to your blog.</li>\n<li>Create an \"on this day\" feature that links to blog posts you published on a given day in the past.</li>\n<li>Add a skip link to make it easier for screen reader users to navigate your website.</li>\n<li>Create an archive page that lists all of the posts on your website.</li>\n<li>Create a mascot for your website.</li>\n<li>Add an 88x31 button to your website.</li>\n<li><a href=\"https://hekate2.github.io/buttonmaker/\">Make an 88x31 button</a> for your website.</li>\n<li>Join a <a href=\"https://indieweb.org/webring\">webring</a>.</li>\n<li>Translate a page on your website in another language you know or are learning.</li>\n<li>Add a <a href=\"https://petermolnar.net/article/how-to-make-a-print-css/\">print stylesheet</a>.</li>\n<li>Make sure all the links work on your website.</li>\n<li>Start a blog carnival where you challenge friends to write about a specific topic each month. Pass on the task of choosing a topic to a new person every month.</li>\n<li>Add <a href=\"https://microformats.org/wiki/rel-me\">rel=me links</a> to your other profiles on the web. Mastodon shows your website as verified with a green checkmark if your site has a rel=me link to your Mastodon profile.</li>\n<li>Make an <a href=\"https://rubenerd.com/omake/\">Omake</a>.</li>\n<li>If you want to present your work professionally on your website, add a resume page, written in HTML.</li>\n<li>Style code snippets in posts on your blog with a syntax highlighter (i.e. Prism.js).</li>\n<li>Review your <code>head</code> tag contents to review scripts and tags you no longer need.</li>\n<li>Make a search feature for your website.</li>\n<li>Create a <a href=\"https://nownownow.com\">now page</a>.</li>\n<li>Add a <a href=\"https://indieweb.org/sparkline\">sparkline</a> that shows your post frequency.</li>\n<li>Experiment with different fonts.</li>\n<li>Make sure your heading sizes are not too close together.</li>\n<li>Add an <a href=\"https://en.wikipedia.org/wiki/Asterism_(typography)\">asterism</a> or <a href=\"https://en.wikipedia.org/wiki/Fleuron_(typography)\">fleuron</a> to the end of your blog posts.</li>\n<li>Use the <a href=\"https://www.zachleat.com/web/youtube-embeds/\">lite-youtube</a> web component to improve page loading speeds when you have embedded a YouTube video on the page.</li>\n<li>Try a new colour scheme on your website.</li>\n<li>Create a style page that shows how every HTML element you use to write content appears. Use this as a reference as you tweak content styles.</li>\n<li>Write a quiz to share with your friends.</li>\n<li>Add <a href=\"https://indieweb.org/Webmention\">Webmention</a> support to your personal website so you can receive notifications when people whose sites support Webmention (like this one!) link to or write a post in response to a blog post on your website.</li>\n<li>Make a <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Web_components\">web component</a> for one of the parts on your website so that others can use that component on their website.</li>\n<li>Add an effect that changes an image when you hover over it.</li>\n<li>Add an audio recording of you saying your name or nickname so people know how to pronounce it. <a href=\"https://jamesg.blog/assets/pronunciation.m4a\">Here's my name pronunciation recording</a>.</li>\n<li>Add a <a href=\"https://indieweb.org/holiday_theme\">holiday theme</a> for a day of significance for you.</li>\n<li>Draw a picture and share it on your website.</li>\n<li>Add an interactive <a href=\"https://aaronparecki.com/\">pixel grid</a> that people can click on your home page.</li>\n<li>Add a \"<a href=\"https://notbyai.fyi/\">not by AI</a>\" button if your content is all written by you.</li>\n<li>Share a list of your favourite podcasts.</li>\n<li>Make a new website for something you are passionate about. Baking? Poetry? Words? Funny charts? Whatever you like!</li>\n<li>Make a favicon for your website.</li>\n<li>Write a blog post about the history of your personal website.</li>\n<li>Make a page that has an audio recording playing in the background (birds chirping? background noise of people chatting?).</li>\n<li>Make a moodboard.</li>\n<li>Use the <code>details</code> and <code>summary</code> HTML elements on a page on your website.</li>\n<li>Change the default colour that is used to highlight text on your website.</li>\n<li>Help someone else set up a website.</li>\n<li>Write a document that describes how your website works, for yourself (so you don't forget!). This is useful if you have made a site with code.</li>\n<li>Write a review of a piece of art you like. Describe how it makes you feel or what it makes you think about.</li>\n<li>Write a blog post with a friend about a shared interest.</li>\n<li>Update an old blog post you wrote that you know needs updated.</li>\n<li>Add <a href=\"https://gwern.net/sidenote\">sidenotes</a> to a blog post.</li>\n<li>Make a table of contents for a long article you have written.</li>\n<li>Add an icon next to external links using CSS so people know a link will take them to another site.</li>\n<li>Add <a href=\"https://indieweb.org/hovercard\">hovercards</a>.</li>\n</ol><p><em>Wait... James. That's only ~83 ideas, including the ideas for blog posts? You promised 100 ideas!</em></p>\n<p>That's right. I did promise 100 ideas. But, to get there, I am going to need your help. The ideas above represent what I have seen on the personal web, but I am keen to hear ideas from more people. That's why I am extending an invitation: help me finish this list. Write down a few ideas of things that someone could do on their website. Publish those ideas on your blog. Share them with your friends.</p>\n<p>The beauty of the web is that we can, together, share ideas. We can, together, work on new projects. Indeed, we can chart paths that define people's experiences on the web. We need more people to weave the indie web -- the people who experiment with the web platform and create new things that interest them.</p>\n<p>I hope the list above inspired you to either:</p>\n<ol><li>Do something with your site, or;</li>\n<li>Write your own list of ideas.</li>\n</ol><p>Indeed, there are endless possibilities on the web. It's up to you to explore and to help weave the web.</p>\n<h2>Ideas from readers</h2>\n<p>Since publishing this post, many wonderful readers have shared suggestions! Here are some that were published on readers' personal websites:</p>\n<ul><li><a href=\"https://artlung.com/blog/2024/02/19/ten-more/\">10 more things you can do on your personal website</a> by artlung.com</li>\n<li><a href=\"https://shellsharks.com/notes/2023/08/15/website-component-checklist\">Website Component Checklist</a> by shellsharks.com (written last year, way before I published this piece, but still super relevant!)</li>\n<li>Three ideas from <a href=\"https://evgenykuznetsov.org/en/reactions/2024/re-050122951/\">evgenykuznetsov.org</a></li>\n</ul><p>Need more ideas? I wrote a follow-up to this post: <a href=\"https://jamesg.blog/2024/03/10/100-more-personal-website-ideas/\">100 (more) things you can do with your personal website</a>.</p>\n<p><a href=\"https://news.indieweb.org/en\" class=\"u-syndication\">Also posted on IndieNews</a>.</p>\n<p>This post was also discussed on <a href=\"https://lobste.rs/s/5xfopz/things_you_can_do_on_your_personal_website\">Lobste.rs</a></p>\n\t\t\t\n\t\t\t\t<p>Tagged in <a href=\"https://jamesg.blog/tag/indieweb/\">IndieWeb</a>.</p>\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t<p style=\"text-align:center;font-weight:600;\">Most related Taylor Swift lyric</p><p>Having adventures on your own You meet some woman on the internet and take her home</p>\n\t\t\n\t\t\n\t\t<p><a href=\"https://notbyai.fyi/\"><img src=\"https://jamesg.blog/assets/ai.png\" alt=\"Written by human, not by AI\" /></a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1804248,
+			"parentId": 0,
+			"url": "https://techburstmag.com/sysadm/what-you-can-do-on-your-personal-website/",
+			"author": {},
+			"date": "2024-04-10T09:11:08.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1838752,
+			"parentId": 0,
+			"url": "https://blog.gslin.org/archives/2024/07/12/11878/lite-youtube-embed/",
+			"author": {
+				"name": "Gea-Suan Lin",
+				"url": "https://blog.gslin.org/archives/author/gslin/",
+				"avatarUrl": "https://avatars.webmention.io/secure.gravatar.com/bf2c798afb5e1bea50207f5b65b3a4151cabb14d266fbca3767f8f8482195694.jpg"
+			},
+			"date": "2024-07-12T03:44:40.000Z",
+			"content": "<p>繼續清 tab，在「<a href=\"https://news.ycombinator.com/item?id=40897205\">YouTube embeds are heavy and it’s fixable (frontendmasters.com)</a>」這邊看到的是提出改善 <a href=\"https://www.youtube.com/\">YouTube</a> 的外嵌功能 (embed)，因為 loading 太肥了。原文在「<a href=\"https://frontendmasters.com/blog/youtube-embeds-are-bananas-heavy-and-its-fixable/\">YouTube Embeds are Bananas Heavy and it’s Fixable</a>」，裡面提到一個只有 YouTube 的 embed (iframe) 頁面就抓了 1.3MB 的資料：</p>\n<blockquote><p>On a page with literally nothing at all on it other than a YouTube Embed, we’re looking at:</p>\n<p>32 requests<br />\n1.3 MB of data transfer<br />\n2.76s to load the page on my current WiFi connection</p></blockquote>\n<p>而「<a href=\"https://www.zachleat.com/web/youtube-embeds/\">One YouTube Embed weighs almost 1.2 MB</a>」這邊更提到了這邊的 resource 會線性疊加不會共用的：</p>\n<blockquote><p>The weight also grows linearly with every embed—resources are not shared: two embeds weigh 2.4 MB; three embeds weigh 3.6 MB (you get the idea).</p></blockquote>\n<p>測了一下 <a href=\"https://home.gslin.org/tmp/ytembed.html\">https://home.gslin.org/tmp/ytembed.html</a> 這個，是 1.2MB transferred：</p>\n<img src=\"https://i.gslin.com/s/1720754926-a32b50d2.png\" alt=\"\" /><p>如果放兩個一樣的影片，也就是 <a href=\"https://home.gslin.org/tmp/ytembed2.html\">https://home.gslin.org/tmp/ytembed2.html</a> 的話，變成 2.4MB transferred：</p>\n<img src=\"https://i.gslin.com/s/1720755028-e9f81f9d.png\" alt=\"\" /><p>所以不共用的部分的確超大，懷疑 <code>iframe</code> 之間不共用資源是不是跟 cache partition 的實作有關：「<a href=\"https://blog.gslin.org/archives/2019/10/18/9252/google-chrome-%E8%A6%81%E8%97%89%E7%94%B1%E6%8B%86%E9%96%8B-http-cache-%E6%8F%90%E6%98%87%E9%9A%B1%E7%A7%81/\">Google Chrome 要藉由拆開 HTTP Cache 提昇隱私</a>」。</p>\n<p>Anyway，所以作者提案用 <a href=\"https://github.com/paulirish/lite-youtube-embed\">lite-youtube-embed</a> 這個套件改善：</p>\n<blockquote><p>Provide videos with a supercharged focus on visual performance. This custom element renders just like the real thing but approximately 224× faster.</p></blockquote>\n<p>不過這種事情你想得到，Google 也一定想得到，全篇只講 lite-youtube-embed 的好處一定哪邊有問題。</p>\n<p>所以翻一下 <a href=\"https://news.ycombinator.com/\">Hacker News</a> 上，在 <a href=\"https://news.ycombinator.com/item?id=40897582\">id=40897582</a> 這邊就有人提到缺點了，很明顯 lite-youtube-embed 的載入速度比較慢：</p>\n<blockquote><p>The author says they don't believe that a lighter version has been shown to reduce engagement.</p>\n<p>I, on the other hand, fully believe that.</p>\n<p>The recommended lite-youtube-embed project page has a demo of both lite and regular players [0], and the lite version takes noticeably longer to start playing the video.</p>\n<p>Every additional millisecond of load time will reduce engagement, and here the difference is more on the order of hundreds of milliseconds or more.</p>\n<p>[0] <a href=\"https://paulirish.github.io/lite-youtube-embed/\">https://paulirish.github.io/lite-youtube-embed/</a></p></blockquote>\n<p>yeah，這樣就合理了。</p>\n<p>即使 embed 吃超多資源，但因為 YouTube 是影音網站，主要的流量還是影音的部分，利用這個方法增加載入速度，在成本結構上面可以接受，而且還可以拿到更多瀏覽資料？</p>\n<p>但對於網站端以及使用者端就不是什麼愉快的事情，所以網站端要不要用這個套件就是看各自的取捨了。</p>\n\n\n\t<h3><em>Related</em></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1838751,
+			"parentId": 0,
+			"url": "https://blog.gslin.org/archives/2024/07/12/11878/11878/",
+			"author": {
+				"name": "Gea-Suan Lin",
+				"url": "https://blog.gslin.org/archives/author/gslin/",
+				"avatarUrl": "https://avatars.webmention.io/secure.gravatar.com/bf2c798afb5e1bea50207f5b65b3a4151cabb14d266fbca3767f8f8482195694.jpg"
+			},
+			"date": "2024-07-12T03:44:40.000Z",
+			"content": "<p>繼續清 tab，在「<a href=\"https://news.ycombinator.com/item?id=40897205\">YouTube embeds are heavy and it’s fixable (frontendmasters.com)</a>」這邊看到的是提出改善 <a href=\"https://www.youtube.com/\">YouTube</a> 的外嵌功能 (embed)，因為 loading 太肥了。原文在「<a href=\"https://frontendmasters.com/blog/youtube-embeds-are-bananas-heavy-and-its-fixable/\">YouTube Embeds are Bananas Heavy and it’s Fixable</a>」，裡面提到一個只有 YouTube 的 embed (iframe) 頁面就抓了 1.3MB 的資料：</p>\n<blockquote><p>On a page with literally nothing at all on it other than a YouTube Embed, we’re looking at:</p>\n<p>32 requests<br />\n1.3 MB of data transfer<br />\n2.76s to load the page on my current WiFi connection</p></blockquote>\n<p>而「<a href=\"https://www.zachleat.com/web/youtube-embeds/\">One YouTube Embed weighs almost 1.2 MB</a>」這邊更提到了這邊的 resource 會線性疊加不會共用的：</p>\n<blockquote><p>The weight also grows linearly with every embed—resources are not shared: two embeds weigh 2.4 MB; three embeds weigh 3.6 MB (you get the idea).</p></blockquote>\n<p>測了一下 <a href=\"https://home.gslin.org/tmp/ytembed.html\">https://home.gslin.org/tmp/ytembed.html</a> 這個，是 1.2MB transferred：</p>\n<img src=\"https://i.gslin.com/s/1720754926-a32b50d2.png\" alt=\"\" /><p>如果放兩個一樣的影片，也就是 <a href=\"https://home.gslin.org/tmp/ytembed2.html\">https://home.gslin.org/tmp/ytembed2.html</a> 的話，變成 2.4MB transferred：</p>\n<img src=\"https://i.gslin.com/s/1720755028-e9f81f9d.png\" alt=\"\" /><p>所以不共用的部分的確超大，懷疑 <code>iframe</code> 之間不共用資源是不是跟 cache partition 的實作有關：「<a href=\"https://blog.gslin.org/archives/2019/10/18/9252/google-chrome-%E8%A6%81%E8%97%89%E7%94%B1%E6%8B%86%E9%96%8B-http-cache-%E6%8F%90%E6%98%87%E9%9A%B1%E7%A7%81/\">Google Chrome 要藉由拆開 HTTP Cache 提昇隱私</a>」。</p>\n<p>Anyway，所以作者提案用 <a href=\"https://github.com/paulirish/lite-youtube-embed\">lite-youtube-embed</a> 這個套件改善：</p>\n<blockquote><p>Provide videos with a supercharged focus on visual performance. This custom element renders just like the real thing but approximately 224× faster.</p></blockquote>\n<p>不過這種事情你想得到，Google 也一定想得到，全篇只講 lite-youtube-embed 的好處一定哪邊有問題。</p>\n<p>所以翻一下 Hacker News 上，在 <a href=\"https://news.ycombinator.com/item?id=40897582\">id=40897582</a> 這邊就有人提到缺點了，很明顯 lite-youtube-embed 的載入速度比較慢：</p>\n<blockquote><p>The author says they don't believe that a lighter version has been shown to reduce engagement.</p>\n<p>I, on the other hand, fully believe that.</p>\n<p>The recommended lite-youtube-embed project page has a demo of both lite and regular players [0], and the lite version takes noticeably longer to start playing the video.</p>\n<p>Every additional millisecond of load time will reduce engagement, and here the difference is more on the order of hundreds of milliseconds or more.</p>\n<p>[0] <a href=\"https://paulirish.github.io/lite-youtube-embed/\">https://paulirish.github.io/lite-youtube-embed/</a></p></blockquote>\n<p>yeah，這樣就合理了。</p>\n<p>即使 embed 吃超多資源，但因為 YouTube 是影音網站，主要的流量還是影音的部分，利用這個方法增加載入速度，在成本結構上面可以接受，而且還可以拿到更多瀏覽資料？</p>\n<p>但對於網站端以及使用者端就不是什麼愉快的事情，所以網站端要不要用這個套件就是看各自的取捨了。</p>\n\n\n\t<h3><em>Related</em></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1998761,
+			"parentId": 0,
+			"url": "https://www.ricardochavezt.com/100-things-i-did-or-will-do-on-my-personal-website",
+			"author": {
+				"name": "Ricardo Chávez",
+				"url": "https://www.ricardochavezt.com/"
+			},
+			"date": "2026-05-27T19:17:13.000Z",
+			"content": "<p>Inspired by <a href=\"https://jamesg.blog/2024/02/19/personal-website-ideas\">100 things you can do on your personal website</a>, I’ve created this list that doubles as a to-do list for this website and a sort of less technical <a href=\"https://keepachangelog.com/\">changelog</a>.</p>\n\n<p>Done:</p>\n<ul><li>Register a domain name and use it with your website.\n    <ul><li>well that’s why you see <code>ricardochavezt.com</code> up there in your address bar ⬆️ instead of something else ;)</li>\n    </ul></li>\n  <li>Share a list of web pages (articles, websites, blog posts, photos, games, etc.) you have enjoyed recently.\n    <ul><li>\n<a href=\"https://www.ricardochavezt.com/open_tabs\">Open Tabs</a>, by far the most active section of this website</li>\n    </ul></li>\n  <li>Create an archive page that lists all of the posts on your website.\n    <ul><li>I think <a href=\"https://www.ricardochavezt.com/garden\">The Garden</a> covers that one</li>\n    </ul></li>\n  <li>If you want to present your work professionally on your website, add a resume page, written in HTML.\n    <ul><li>could use more work to look more like a resume, but <a href=\"https://www.ricardochavezt.com/professional-experience\">Professional experience</a> covers that</li>\n    </ul></li>\n  <li>Create a <a href=\"https://nownownow.com/\">now page</a>.\n    <ul><li>that’s exactly what <a href=\"https://www.ricardochavezt.com/now\">/now</a> is about</li>\n    </ul></li>\n  <li>Add an icon next to external links using CSS so people know a link will take them to another site.\n    <ul><li>comes for free with the template ;)</li>\n    </ul></li>\n  <li>Write a blog post about the history of your personal website.\n    <ul><li>I think between <a href=\"https://www.ricardochavezt.com/about\">the About page</a> and <a href=\"https://www.ricardochavezt.com/about-this-garden\">About this garden</a> we have this covered</li>\n    </ul></li>\n  <li>Add <a href=\"https://indieweb.org/hovercard\">hovercards</a>.\n    <ul><li>comes for free with the template for the notes on the Garden, might implement something else for external links</li>\n    </ul></li>\n  <li>Add <a href=\"https://indieweb.org/Webmention\">Webmention</a> support to your personal website so you can receive notifications when people whose sites support Webmention (like this one!) link to or write a post in response to a blog post on your website.\n    <ul><li>10/05/26: done! my Webmention sending is just me doing HTTP POSTs with <a href=\"https://httpie.io/\">httpie</a> ????, but I should also be able to receive them now thanks to <a href=\"https://webmention.io/\">webmention.io</a>. (Still working on showing them on the pages tho)</li>\n    </ul></li>\n</ul><p>To do next:</p>\n\n<ul><li>Add an RSS feed so people can subscribe to your blog.</li>\n  <li>Add <a href=\"https://microformats.org/wiki/rel-me\">rel=me links</a> to your other profiles on the web. Mastodon shows your website as verified with a green checkmark if your site has a rel=me link to your Mastodon profile.</li>\n  <li>Make a robots.txt file that limits how search engines and AI crawlers can ingest your site.</li>\n  <li>Make a <a href=\"https://indieweb.org/blogroll\">blogroll</a> that links to personal websites you like.</li>\n  <li>Share a list of your favourite books.</li>\n  <li>Make a <a href=\"https://indieweb.org/guestbook\">guestbook</a> where people can leave notes saying they liked your website.</li>\n  <li>Leave comments in your HTML so people can understand how different templates on your site work.</li>\n  <li>Add alt text to images that don’t have them.</li>\n  <li>Use WAVE to find potential accessibility issues on different pages on your website.</li>\n  <li>Use PageSpeed Insights to check the speed of your website. Try to make pages load faster if they currently load slow.</li>\n  <li>Create an “on this day” feature that links to blog posts you published on a given day in the past.</li>\n  <li>Add a skip link to make it easier for screen reader users to navigate your website.</li>\n  <li>Make a search feature for your website.</li>\n  <li>Add an <a href=\"https://en.wikipedia.org/wiki/Asterism_(typography)\">asterism</a> or <a href=\"https://en.wikipedia.org/wiki/Fleuron_(typography)\">fleuron</a> to the end of your blog posts.</li>\n  <li>Use the <a href=\"https://www.zachleat.com/web/youtube-embeds/\">lite-youtube</a> web component to improve page loading speeds when you have embedded a YouTube video on the page.</li>\n  <li>Try a new colour scheme on your website.</li>\n  <li>Draw a picture and share it on your website.</li>\n  <li>Add a “<a href=\"https://notbyai.fyi/\">not by AI</a>” button if your content is all written by you.</li>\n  <li>Share a list of your favourite podcasts.</li>\n  <li>Change the default colour that is used to highlight text on your website.</li>\n  <li>Write a document that describes how your website works, for yourself (so you don’t forget!). This is useful if you have made a site with code.</li>\n  <li>Add <a href=\"https://gwern.net/sidenote\">sidenotes</a> to a blog post.</li>\n</ul><p>Someday / Maybe:</p>\n<ul><li>Style code snippets in posts on your blog with a syntax highlighter (i.e. Prism.js).</li>\n  <li>Add a background image to your website or a page on your website.</li>\n  <li>Create a shrine about something that makes you happy (a band, a television show, or anything else).</li>\n  <li>Add an easter egg.</li>\n  <li>Write a review of a piece of art you like. Describe how it makes you feel or what it makes you think about.</li>\n  <li>Make a new website for something you are passionate about. Baking? Poetry? Words? Funny charts? Whatever you like!</li>\n  <li>Make a favicon for your website.</li>\n  <li>Experiment with different fonts.</li>\n  <li>Make a page that has an audio recording playing in the background.</li>\n  <li>Use the <code>details</code> and <code>summary</code> HTML elements on a page on your website.</li>\n  <li>Make a table of contents for a long article you have written.</li>\n  <li>Create a mascot for your website.</li>\n  <li>Add an 88x31 button to your website.</li>\n  <li>Join a <a href=\"https://indieweb.org/webring\">webring</a>.</li>\n  <li>Add a <a href=\"https://petermolnar.net/article/how-to-make-a-print-css/\">print stylesheet</a>.</li>\n  <li>Create a scavenger hunt where people need to hunt through pages to find clues.</li>\n  <li>Write a quiz to share with your friends.</li>\n  <li>Add an effect that changes an image when you hover over it.</li>\n  <li>Add a <a href=\"https://indieweb.org/holiday_theme\">holiday theme</a> for a day of significance for you.</li>\n  <li>Make an antilibrary where you list the books you own but have not or do not plan to read.</li>\n  <li>Make a word game.</li>\n</ul>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1752529,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109352089904161580",
+			"date": "2023-12-12T15:29:11.000Z",
+			"author": {
+				"name": "Leon Brocard",
+				"url": "https://fosstodon.org/@orangeacme",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/07254ac7bc624f37d435b7b462e6bbf9c59f62a11a3c2ff219994f5c176e4072.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752530,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-111568119651059660",
+			"date": "2023-12-12T15:29:12.000Z",
+			"author": {
+				"name": "Rich Trott",
+				"url": "https://indieweb.social/@Trott",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/58637f462831e803d9af5faf29e02210d5127be355011efc840321f04cd55dfd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752531,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109308699444837890",
+			"date": "2023-12-12T15:29:14.000Z",
+			"author": {
+				"name": "Nelson Chu Pavlosky",
+				"url": "https://jawns.club/@skyfaller",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a3ffad7cc177e3225b7503e13dff7ec03abbaf8c05131bfb6c8f32d570d8cad2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752532,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109577315304188658",
+			"date": "2023-12-12T15:29:15.000Z",
+			"author": {
+				"name": "Stu",
+				"url": "https://hachyderm.io/@tehstu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8ea47a48d9ada159f4888f2381e7c1c50fa9bac0109acb2779838165407a3065.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752533,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109292527270971438",
+			"date": "2023-12-12T15:29:16.000Z",
+			"author": {
+				"name": "jalciné needs a job but also",
+				"url": "https://todon.eu/@jalcine",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/da6710b0e4b15840d7e92ea3ff06e6d4beba339fb2cd46ed7be050b8404a3218.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752534,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-111025989952257112",
+			"date": "2023-12-12T15:29:17.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://fosstodon.org/@BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c9909743546dc068862d3bd12944c567ef3dcd2ae59a758e4d6c1fc5bf5bf23f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752557,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109303181435692045",
+			"date": "2023-12-12T16:04:28.000Z",
+			"author": {
+				"name": "Adam Stoddard",
+				"url": "https://mastodon.social/@aaadaaam",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4de951e5ff3c0f66b1e465b0c25a3e386ba491daa412e4e78428e6a1f3866863.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752558,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109693612706666753",
+			"date": "2023-12-12T16:04:28.000Z",
+			"author": {
+				"name": "Ondrej Sevcik",
+				"url": "https://hachyderm.io/@ondrejsevcik",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c9cb185bd38f0dce1bd9e0ea28ebeae2464b6ca3fd0e40f91d55be7e30d1f5f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752559,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-111568271403550116",
+			"date": "2023-12-12T16:04:34.000Z",
+			"author": {
+				"name": "Kurisu(masu)",
+				"url": "https://famichiki.jp/@kurisu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7a63ace0bbf75a179173544ee69e2b805128d3bde520bbf525b718d90c985a5d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752560,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109550134691330455",
+			"date": "2023-12-12T16:04:35.000Z",
+			"author": {
+				"name": "Drew Blake",
+				"url": "https://techhub.social/@drewble",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/37d13e74906dec5eac0b47754f82ce2e6a9adc46225db0d543c3e90b586e8715.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752561,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109292781915117780",
+			"date": "2023-12-12T16:04:38.000Z",
+			"author": {
+				"name": "Dave Rupert",
+				"url": "https://mastodon.social/@davatron5000",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752562,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109289744030118387",
+			"date": "2023-12-12T16:04:39.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752563,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109342716921240219",
+			"date": "2023-12-12T16:04:40.000Z",
+			"author": {
+				"name": "Thomas Broyer",
+				"url": "https://piaille.fr/@tbroyer",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e0e13a975c6d980b8b1f3e3a1e163e2739a637adbc4a2e03f155938cfcbd693d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752564,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-111568211639275118",
+			"date": "2023-12-12T16:04:41.000Z",
+			"author": {
+				"name": "hello•proximo•• :ivory_boost:",
+				"url": "https://mastodon.social/@helloproximo",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c2282b95271c73ef00f92998007dc33507aeba0f6fda6fbebcb5dcc00e72dc58.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752565,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109362621098840194",
+			"date": "2023-12-12T16:04:42.000Z",
+			"author": {
+				"name": "logoninternet",
+				"url": "https://mastodon.social/@logoninternet",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7ec6e7795f0453041145db09fe146425658f01175821dc2dc7d61fe6aabf5bdd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752566,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109295087214311131",
+			"date": "2023-12-12T16:04:44.000Z",
+			"author": {
+				"name": "Noah Liebman",
+				"url": "https://mastodon.social/@noleli",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/376eaffd57dfe1e7e31d7569386db8a545d2f5533207014b25361ce54ec5b62d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752567,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109436075109730270",
+			"date": "2023-12-12T16:04:44.000Z",
+			"author": {
+				"name": "Tim van der Lippe",
+				"url": "https://fosstodon.org/@tvanderlippe",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c98c65da024494c25263a88f3ec11a4c954d9d1a2baea7849a0046ed833ce55f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752568,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109293803163677177",
+			"date": "2023-12-12T16:04:46.000Z",
+			"author": {
+				"name": "Aram Zucker-Scharff",
+				"url": "https://indieweb.social/@Chronotope",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8ddf6cfdad3666f80a3098af2b8ce839c544f58dd3232b2e3ca96b50828b4e26.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752569,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-111568155149416178",
+			"date": "2023-12-12T16:04:47.000Z",
+			"author": {
+				"name": "xra",
+				"url": "https://c.im/@xra",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752586,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109541055894270058",
+			"date": "2023-12-12T16:30:14.000Z",
+			"author": {
+				"name": "Jedidiah",
+				"url": "https://hachyderm.io/@jedidiah",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/80254887d228ba8c2a7b59062b75678d2c9895d1ddaf48e30c5fbb1baff97e42.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752587,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109716638353983268",
+			"date": "2023-12-12T16:30:15.000Z",
+			"author": {
+				"name": "miwebguy",
+				"url": "https://mastodon.social/@miwebguy",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752606,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109920919552965471",
+			"date": "2023-12-12T17:02:35.000Z",
+			"author": {
+				"name": "Jacob Burch-Hill",
+				"url": "https://social.burch-hill.com/@jacob",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5a9e1c5cd90969327bf9d88d08d2b63c3ef753abb838de6c0882f751e00edd67.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752607,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109960775403450397",
+			"date": "2023-12-12T17:02:35.000Z",
+			"author": {
+				"name": "Matt Stein",
+				"url": "https://t00t.cloud/@mattrambles",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b11d282e276a07fa120581347185e7b834f281adc4052be01023582dcf186d91.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752608,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-110655019194460289",
+			"date": "2023-12-12T17:02:37.000Z",
+			"author": {
+				"name": "Andreu Casablanca ????",
+				"url": "https://hachyderm.io/@castarco",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/da771230f686a2e5cceca3ea05bbeacaf7fa58b05460b6356ea58f20a01cc4b4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752609,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109377795704761679",
+			"date": "2023-12-12T17:02:39.000Z",
+			"author": {
+				"name": "Paul Hendrick",
+				"url": "https://hachyderm.io/@earthbound",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/99cd7300ec9a1a9c6d26541f1032312b71dce41ca42d67d03e87baf51021cb7a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752623,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109303669594286400",
+			"date": "2023-12-12T17:27:09.000Z",
+			"author": {
+				"name": "Troy Kitch",
+				"url": "https://indieweb.social/@troy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/401146d20f57401bd1a60401f9cb69387fb91634fa0240ec48f3cf66f144c202.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752624,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-111557531335732797",
+			"date": "2023-12-12T17:27:09.000Z",
+			"author": {
+				"name": "Noah Kennedy",
+				"url": "https://mastodon.despise.computer/@noah",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c85a6431cbcbcb2a3cdc37f4eea8cb7b4052cd2a98efa0f82c06c87a4953dd25.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752625,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109479289606157423",
+			"date": "2023-12-12T17:27:12.000Z",
+			"author": {
+				"name": "Jan Miksovsky",
+				"url": "https://fosstodon.org/@JanMiksovsky",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752635,
+			"url": "https://jamesg.coffee/2023/one-youtube-embed-weighs-almost-12-mbzachleatcom",
+			"date": "2023-12-12T17:43:59.000Z",
+			"author": {
+				"name": "James' Coffee Blog",
+				"url": "https://jamesg.coffee/profile/capjamesg",
+				"avatarUrl": "https://avatars.webmention.io/jamesg.coffee/44a4b81d3ad1303a2acd54e82a33c5333b80a611e540f4971bcb5fd93096c352.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752637,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109315155674374328",
+			"date": "2023-12-12T17:52:52.000Z",
+			"author": {
+				"name": "Samir Saeedi :firedoge:",
+				"url": "https://mastodon.social/@thesdev",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752651,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109301143150367968",
+			"date": "2023-12-12T18:28:59.000Z",
+			"author": {
+				"name": "Tobias Wolf",
+				"url": "https://mastodon.social/@tobias",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ad3f212b09611fc0f2e3a643758dedf809d03b453d8a97b9b89fd4e980a2dab8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752652,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-110439751581978143",
+			"date": "2023-12-12T18:29:00.000Z",
+			"author": {
+				"name": "Andrew",
+				"url": "https://mathstodon.xyz/@andrewt",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3db0a0c990541430d82b1ad8ad2e62bfc44edf1a5f8bed9282ec45593cbdb2ec.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752653,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109295228773677762",
+			"date": "2023-12-12T18:29:03.000Z",
+			"author": {
+				"name": "roycifer",
+				"url": "https://mastodon.social/@roycifer",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/686c4590de24bd82ba978e5a2d140c4682d0aaa011150ef5adb0b7870e1ebd7d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752654,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109528045417241006",
+			"date": "2023-12-12T18:29:03.000Z",
+			"author": {
+				"name": "gryzzly",
+				"url": "https://mastodon.social/@gryzzly",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ff052a530cfecca5d621f11d77a67dccaaa3d487d89002a7d70f4280a513ae7e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752668,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-111144881605012378",
+			"date": "2023-12-12T19:01:46.000Z",
+			"author": {
+				"name": "Laryn Kragt Bakker",
+				"url": "https://mastodon.social/@laryn",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752669,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109681767769431765",
+			"date": "2023-12-12T19:01:46.000Z",
+			"author": {
+				"name": "Bjarne Oldrup ☑",
+				"url": "https://mastodon.green/@oldrup",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1d6561a780e29861913887143559342a6faa467e46d9f536a22786c9d2bbaea.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752678,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109343618110508508",
+			"date": "2023-12-12T19:37:39.000Z",
+			"author": {
+				"name": "Marc-Antoine Ruel",
+				"url": "https://pourparler.ca/@maruel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e5f0e503517ecaf1a1fbe6f52204a7e2662281015dd41c4b0640a31f3811cdbd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752697,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-110652633704283132",
+			"date": "2023-12-12T20:06:28.000Z",
+			"author": {
+				"name": "Miguel",
+				"url": "https://indieweb.social/@miguel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/51595a97b5801e19b4de24327e3db1623cd76905bb716fff4ea8184bde937a37.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752698,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-110891550590972879",
+			"date": "2023-12-12T20:06:33.000Z",
+			"author": {
+				"name": "petes_bread_eqn_xls",
+				"url": "https://mastodo.neoliber.al/@petes_bread_eqn_xls",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/db6ea14d02f32e604d7719a9bad89b9bc1d76a695f44f66422dbcc7cfdd7207c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752708,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109439954069427539",
+			"date": "2023-12-12T20:38:02.000Z",
+			"author": {
+				"name": "The Spicy Web",
+				"url": "https://social.spicyweb.dev/@vanilla",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/00e9899dc95a4df207d1bac960bcd505fbc1a2a18f3eb8a8aa4980595ec33202.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752709,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-111569294591570680",
+			"date": "2023-12-12T20:38:03.000Z",
+			"author": {
+				"name": "Luke Chapman",
+				"url": "https://mastodon.social/@lukechap",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/99acf5a53c094b3b0b9ad7647db3719a6021d980dcc88846ef4fd29ffc5fec34.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752728,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109810826053615887",
+			"date": "2023-12-12T21:09:40.000Z",
+			"author": {
+				"name": "Francis Rubio :verified:",
+				"url": "https://masto.ai/@teacherbuknoy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/314b380ec1b99138f78aa6f4417a90bb034d5361860d656a94bfd0dc2fd85a00.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752759,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-110271759034960771",
+			"date": "2023-12-12T22:09:34.000Z",
+			"author": {
+				"name": "JB",
+				"url": "https://kolektiva.social/@manicExpressive",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbaf898cc08889fb428ade78002e20def5ca76fef00199839a2c386108d187d0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752836,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#favorited-by-109369644486255118",
+			"date": "2023-12-12T23:33:23.000Z",
+			"author": {
+				"name": "max frühschütz – нет войне",
+				"url": "https://mastodon.social/@mfru",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4f50ea9b6574dd05ff2ce4ef5502e034ba130e20006dd34713377280db7bea5b.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1752535,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109456661268237006",
+			"date": "2023-12-12T15:29:18.000Z",
+			"author": {
+				"name": "Henri Sivonen",
+				"url": "https://mastodon.social/@hsivonen",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/780465bcc71147b4194da142bb581e762245dcfbcb276b9fc298ac6f514c4459.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752536,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109292527270971438",
+			"date": "2023-12-12T15:29:19.000Z",
+			"author": {
+				"name": "jalciné needs a job but also",
+				"url": "https://todon.eu/@jalcine",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/da6710b0e4b15840d7e92ea3ff06e6d4beba339fb2cd46ed7be050b8404a3218.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752537,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109292557125861804",
+			"date": "2023-12-12T15:29:21.000Z",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://toot.cafe/@slightlyoff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752538,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109292789947647037",
+			"date": "2023-12-12T15:29:21.000Z",
+			"author": {
+				"name": "westbrook",
+				"url": "https://mastodon.social/@westbrook",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f845e34d9338fcdd255785cb099cce719f19f34f6625aec1749e30cade2e0b79.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752539,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109303656530857114",
+			"date": "2023-12-12T15:29:23.000Z",
+			"author": {
+				"name": "Raymond Camden",
+				"url": "https://mastodon.social/@raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1ddb97091dd0bdc5385c4527b26663b5f999facfe47249e02270a3f48303fbf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752540,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-111025989952257112",
+			"date": "2023-12-12T15:29:24.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://fosstodon.org/@BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c9909743546dc068862d3bd12944c567ef3dcd2ae59a758e4d6c1fc5bf5bf23f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752541,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109293884804115460",
+			"date": "2023-12-12T15:29:25.000Z",
+			"author": {
+				"name": "Ernie Smith",
+				"url": "https://writing.exchange/@ernie",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d912fb59f930c22b3fae8f1d74f7fe0886f94bfe7cf2d68db4255edc71277790.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752570,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-111257322569309811",
+			"date": "2023-12-12T16:04:49.000Z",
+			"author": {
+				"name": "Danny van Kooten",
+				"url": "https://toot.re/@dvk",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0e0030decbd43599ceba33e18492b34db95158d4cf52d3afb39d49c771ed16c2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752571,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109358856435298537",
+			"date": "2023-12-12T16:04:50.000Z",
+			"author": {
+				"name": "Jean-Pierre Vincent",
+				"url": "https://mamot.fr/@jpvincent",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752572,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109289744030118387",
+			"date": "2023-12-12T16:04:50.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752573,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109779197194734817",
+			"date": "2023-12-12T16:04:51.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://mastodon.social/@JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752574,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109436075109730270",
+			"date": "2023-12-12T16:04:53.000Z",
+			"author": {
+				"name": "Tim van der Lippe",
+				"url": "https://fosstodon.org/@tvanderlippe",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c98c65da024494c25263a88f3ec11a4c954d9d1a2baea7849a0046ed833ce55f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752576,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109740646075567001",
+			"date": "2023-12-12T16:04:54.000Z",
+			"author": {
+				"name": "Apple Annie :prami:",
+				"url": "https://social.lol/@anniegreens",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/489bdd3b4c09425455f96e3e0bff2f6090dc37be48318700d48e474908247477.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752575,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109293803163677177",
+			"date": "2023-12-12T16:04:54.000Z",
+			"author": {
+				"name": "Aram Zucker-Scharff",
+				"url": "https://indieweb.social/@Chronotope",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8ddf6cfdad3666f80a3098af2b8ce839c544f58dd3232b2e3ca96b50828b4e26.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752588,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109321354785613429",
+			"date": "2023-12-12T16:30:16.000Z",
+			"author": {
+				"name": "David O'Brien",
+				"url": "https://mastodon.social/@iamdavidobrien",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e2557a6476cb99d6771a46942521f4e560636bb9eb4e0b7f2225eac9e54cf829.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752589,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109369512134112844",
+			"date": "2023-12-12T16:30:17.000Z",
+			"author": {
+				"name": "Gerry McGovern",
+				"url": "https://mastodon.green/@gerrymcgovern",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a2aa4badc16b96db59dd4ab3073267c1656e3b2ee750309f8b3f8b0eb2167842.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752590,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109368370719408596",
+			"date": "2023-12-12T16:30:18.000Z",
+			"author": {
+				"name": "Henri Helvetica",
+				"url": "https://webperf.social/@henrihelvetica",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6a3934d60b4c667c270f59c4bf76870fb22b44a56c10201a85c2f104621775ce.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752610,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109960775403450397",
+			"date": "2023-12-12T17:02:40.000Z",
+			"author": {
+				"name": "Matt Stein",
+				"url": "https://t00t.cloud/@mattrambles",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b11d282e276a07fa120581347185e7b834f281adc4052be01023582dcf186d91.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752626,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109303669594286400",
+			"date": "2023-12-12T17:27:12.000Z",
+			"author": {
+				"name": "Troy Kitch",
+				"url": "https://indieweb.social/@troy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/401146d20f57401bd1a60401f9cb69387fb91634fa0240ec48f3cf66f144c202.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752655,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109348282587430600",
+			"date": "2023-12-12T18:29:05.000Z",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://fosstodon.org/@hexagoncircle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2b9e19461695dcc3d5426dbe58bc7f0337c9c2a838e5387c8c66677298ba3241.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752670,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-111568952800884528",
+			"date": "2023-12-12T19:01:51.000Z",
+			"author": {
+				"name": "Innostus",
+				"url": "https://ieji.de/@innostus",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7209f6220f4e5e125a0c8fe9549ee467bfb8bfb6707f330e55f1355c23e29d0b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752671,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-111568952156083848",
+			"date": "2023-12-12T19:01:52.000Z",
+			"author": {
+				"name": "Arnold Boer",
+				"url": "https://ieji.de/@arnoldboer",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/04f9a5d87af2e0d962f59a08e8e8bc8b729360af22cd648fa31e1f2485188184.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752699,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109332518937677894",
+			"date": "2023-12-12T20:06:35.000Z",
+			"author": {
+				"name": "Doug Parker ????️",
+				"url": "https://techhub.social/@develwithoutacause",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752710,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109439954069427539",
+			"date": "2023-12-12T20:38:05.000Z",
+			"author": {
+				"name": "The Spicy Web",
+				"url": "https://social.spicyweb.dev/@vanilla",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/00e9899dc95a4df207d1bac960bcd505fbc1a2a18f3eb8a8aa4980595ec33202.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752711,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109372147452523613",
+			"date": "2023-12-12T20:38:06.000Z",
+			"author": {
+				"name": "Eystein",
+				"url": "https://front-end.social/@eys",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cc21da322ae88746a46ab29f95857602f6cc5f6173092875ecfa2d66944bf755.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752729,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109303662461101548",
+			"date": "2023-12-12T21:09:41.000Z",
+			"author": {
+				"name": "JW",
+				"url": "https://mastodon.social/@whiteja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/acb57e921accdd23cc8255b12bd9cec8312397d771f4e2a71a2be8f9592011bc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752730,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109529454469511051",
+			"date": "2023-12-12T21:09:42.000Z",
+			"author": {
+				"name": "Tom Arild Jakobsen",
+				"url": "https://hachyderm.io/@tajakobsen",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/750ba558b2ebdbd08f7322b24b42621e658a4dbb9e9c23d656017b725fb80f12.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752837,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109522290438853979",
+			"date": "2023-12-12T23:33:25.000Z",
+			"author": {
+				"name": "Andrea De Pirro",
+				"url": "https://mastodon.social/@akira28",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/52b0dc5d727ea30864c0124d27a9821af0175d6e5094f2a806770b325f9f13b2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752838,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109369644486255118",
+			"date": "2023-12-12T23:33:26.000Z",
+			"author": {
+				"name": "max frühschütz – нет войне",
+				"url": "https://mastodon.social/@mfru",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4f50ea9b6574dd05ff2ce4ef5502e034ba130e20006dd34713377280db7bea5b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1752848,
+			"url": "https://fediverse.zachleat.com/@zachleat/111568065171217496#reblogged-by-109294528129843255",
+			"date": "2023-12-13T00:31:15.000Z",
+			"author": {
+				"name": "Matt Hogg :mastodon:",
+				"url": "https://mstdn.ca/@mrmatthogg",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2d11738b4d9729c675771fe9e8907281d9858a59f6fab676476286f6c14bb3bf.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

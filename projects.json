@@ -1,0 +1,70 @@
+{
+	"comments": [
+		{
+			"id": 2043538,
+			"parentId": 0,
+			"url": "https://mastodon.social/@davatron5000/117491056519516088",
+			"author": {
+				"name": "Dave Rupert",
+				"url": "https://mastodon.social/@davatron5000",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg"
+			},
+			"date": "2026-10-23T16:00:48.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> This screen is going to make a grown man cry. 😭 I love it tho. The repo-health/neglect-o-meter is inspiring me to make one myself.</p><p>Visualizing the \"debt\" across repos is so necessary, but often overlooked in open source where one person maintains many things many people depend on.</p><p>But your releases are super consistent over time, so good job, Zach!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2043539,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/117491135373297262",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2026-10-23T16:20:51.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@davatron5000\" class=\"u-url\">@<span>davatron5000</span></a></span> <a href=\"https://github.com/zachleat/is-this-still-being-maintained\"><span>https://</span><span>github.com/zachleat/is-this-st</span><span>ill-being-maintained</span></a> has a `npm run reset` script if you want to steal the report piece (but why would you! BYO software is the new normal)</p><p>(but thank you!)</p>\n  <a href=\"https://github.com/zachleat/is-this-still-being-maintained\">GitHub - zachleat/is-this-still-being-maintained: A personal report of open source projects to prioritize maintenance</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2043540,
+			"parentId": 0,
+			"url": "https://mastodon.social/@khalidabuhakmeh/117491138852686792",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a2932f9ca025c9aeea164cfa6ae2a9f647215cbbc207e274a27c1025b939fcc2.png"
+			},
+			"date": "2026-10-23T16:21:44.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@davatron5000\" class=\"u-url\">@<span>davatron5000</span></a></span> When can I stop scrolling?! GADDAM!</p>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 2043541,
+			"url": "https://fediverse.zachleat.com/@zachleat/117491016721814503#favorited-by-109960775403450397",
+			"date": "2026-10-23T16:25:21.000Z",
+			"author": {
+				"name": "Matt Stein",
+				"url": "https://t00t.cloud/@mattrambles",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a2157bda748bd6093221e53c64454935cae5a78c07210b4f7e502b5ce4e36915.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 2043855,
+			"url": "https://fediverse.zachleat.com/@zachleat/117491016721814503#favorited-by-109301140234960297",
+			"date": "2026-10-24T18:02:59.000Z",
+			"author": {
+				"name": "Nick F",
+				"url": "https://mastodon.social/@nickautomatic",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/45d8b03318cd4a217b2dc50d69bf0bed2e93825242dbe401472de8a396f668b8.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

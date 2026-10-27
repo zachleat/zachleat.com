@@ -1,0 +1,658 @@
+{
+	"comments": [
+		{
+			"id": 1750521,
+			"parentId": 0,
+			"url": "https://mastodon.social/@siggiarni/111545473487195566",
+			"author": {
+				"name": "siggiarni",
+				"url": "https://mastodon.social/@siggiarni",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7d5769b7eee26693c04b5b43809eb8e1cf96d61c4f9f9bc7cf0b28aa75955795.jpg"
+			},
+			"date": "2023-12-08T15:20:50.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ís-land? ????????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1750520,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545482381463595",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-08T15:23:06.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@siggiarni\" class=\"u-url\">@<span>siggiarni</span></a></span> ????????????????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1750522,
+			"parentId": 0,
+			"url": "https://social.vivaldi.net/@rawrmonstar/111545505042575621",
+			"author": {
+				"name": "Tegan",
+				"url": "https://social.vivaldi.net/@rawrmonstar",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/35e612d95183a00be075334391e0ea02e99146825b8b45a22f9124c43d3aedaa.jpg"
+			},
+			"date": "2023-12-08T15:28:52.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Side note: Whenever I see the preview share card thing for your articles I am tricked! Tricked I say! into thinking it’s going to be a youtube video because I see your little head poking out of the corner and that’s just how youtube videos thumbnails all are</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1750581,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545553937849061",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-08T15:41:18.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://social.vivaldi.net/@rawrmonstar\" class=\"u-url\">@<span>rawrmonstar</span></a></span> I have a few youtube videos on this at the bottom of the post ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1750582,
+			"parentId": 0,
+			"url": "https://front-end.social/@rem/111545973283613467",
+			"author": {
+				"name": "rem",
+				"url": "https://front-end.social/@rem",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ccabb9da7d88753b17f4ecfc3146a48a026aac08cf335108f7632683fbbe3bd8.jpg"
+			},
+			"date": "2023-12-08T17:27:57.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> question, that I don't think quit think warrants a github issue/qusetion: why use the `on:x` attribute pattern over something like `data-on-condition`? Just curious.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1750840,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111546104713950351",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-08T18:01:22.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@rem\" class=\"u-url\">@<span>rem</span></a></span> I don’t believe `data-` is required for custom elements so just a style preference</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1750841,
+			"parentId": 0,
+			"url": "https://mastodon.online/@mkhoury/111547294548393241",
+			"author": {
+				"name": "Marc Khoury",
+				"url": "https://mastodon.online/@mkhoury",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/042f21143da4b969fd20a5b227a9093f3863594c11ba90f48613f13450f7cb38.png"
+			},
+			"date": "2023-12-08T23:03:58.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Can I untap it during my untap phase?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1755745,
+			"parentId": 0,
+			"url": "https://atocs.net/tutorials/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-19T12:39:42.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1755755,
+			"parentId": 0,
+			"url": "https://siliconhype.com/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-19T12:56:26.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1755780,
+			"parentId": 0,
+			"url": "https://www.pixellyft.com/2023/12/19/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-19T13:41:42.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1755825,
+			"parentId": 0,
+			"url": "https://mycheapwebhosting.com/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-19T15:33:13.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1756186,
+			"parentId": 0,
+			"url": "https://techtoguide.com/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-19T23:22:48.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1756249,
+			"parentId": 0,
+			"url": "https://swissvolcano.com/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-20T00:57:40.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1756267,
+			"parentId": 0,
+			"url": "https://evolucioncreativa.website/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-20T01:22:57.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1756311,
+			"parentId": 0,
+			"url": "https://jobnestle.com/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-20T03:16:28.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1756352,
+			"parentId": 0,
+			"url": "https://abuspeaks.com/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-20T05:41:00.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1756463,
+			"parentId": 0,
+			"url": "https://apkhore.com/2023/12/20/collective-800-%f0%9f%a5%b3/",
+			"author": {
+				"name": "admin",
+				"url": "https://apkhore.com/author/admin/"
+			},
+			"date": "2023-12-20T12:04:08.000Z",
+			"content": "<p> <br /></p>\n\n<a href=\"https://codrops.com\"><img width=\"126\" style=\"border:0;width:126px;height:auto;\" alt=\"Codrops logo\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/66c53629-bfb9-7a17-0785-49331fcdc0dd.png\" /></a>\n<a href=\"https://tympanus.net/codrops/collective/\"><img width=\"660\" style=\"border:0;width:660px;height:auto;\" alt=\"Collective 790\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/2fee05a9-aa6d-42cc-5fbb-8f27030c01e3.jpg\" /></a>\n\n<p></p><h2>Welcome to Collective #800 ????</h2>\n\n\n\n\n<p>Lately, we’re celebrating a enormous milestone: 800 editions of the Collective! That is 800 compilations of the best frontend information and inspiration since 2012!</p>\n<p>Again when our inaugural version hit the virtual cabinets, the CSS3 Multi Column Module was once the debate of the city, and builders could not were happier to have extra structure choices! If truth be told, one in every of our early options was once <a href=\"http://www.inserthtml.com/2012/01/css3-multi-column-layout-implementation-change-website-design/\">CSS3: The Multi Column Structure and The way it Will Trade Internet Design</a>.</p>\n<p>Any other unforgettable blast from the previous is the item <a href=\"https://acko.net/blog/making-love-to-webkit/\">Making Like to WebKit</a> through Steven Wittens, who, at the moment, driven the boundaries together with his groundbreaking web page using CSS 3-D transforms, WebGL, and 3.js!</p>\n<p>We’re immensely thankful to have reached this crucial milestone, and, after all, none of it might were imaginable with out our fantastic readership! </p>\n<p>A large <strong>thanks </strong>from the ???? for sharing this fantastic adventure with us!</p>\n<p><strong>To the following 800! ????</strong></p>\n\n\n\n\n<p>Whether or not you might be into no-code, low-code, or complete coding, that is your hub for the newest dev information, professional pointers, and insightful tutorials. Led through the dynamic duo, Artwork and Adrian, Merge is the easiest position to hook up with an international community of builders. Keep forward within the ever-evolving international of internet building.</p>\n<p><a href=\"https://mergewebdev.com/?utm_source=blog&amp;utm_medium=newsletter&amp;utm_campaign=Codrops&amp;utm_content=2\">Sign up for the Neighborhood</a> ????</p>\n\n\n\n<img height=\"0\" width=\"0\" src=\"https://namecheap.pxf.io/i/1284512/1130470/5618\" border=\"0\" alt=\"5618\" />\n\n\n\n\n\n\n\n\n\n\n\n\n<p>The epic code Introduction Calendar is again!  Input the programming problem with small puzzles for more than a few talent ranges.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3><strong>???? </strong><a href=\"https://designsystems.surf/\"><strong>Design Programs Database</strong></a></h3>\n\n\n\n\n<p>Design Programs Surf is a database of best-in-class Design Programs, arranged and taken care of through elements and directories.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://www.letsbuildui.dev/articles/working-with-sound-in-react/\">Running with Sound in React</a></h3>\n\n\n\n\n<p>On this sensible educational, Ryan Finni displays easy methods to make stronger UI interactions with easy sounds in React.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>⛰ <a href=\"https://www.zachleat.com/web/is-land/\">&lt;is-land&gt; Internet Element</a></h3>\n\n\n\n\n<p>Zach Leatherman is writing a couple of internet part referred to as &lt;is-land&gt; that allows Islands Structure on any web page, serving as a build-independent decoupled choice for turbo-charged lazy loading of elements and assets in line with more than a few prerequisites like visibility, idleness, interactions, media queries, and person personal tastes.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Daniel Immke discusses his try to create SVG illustrations with a loud, textured shadow impact the use of the common SVG specification, exploring tactics involving gradients, mask, and filters.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://twitter.com/RitikaAgrawal08/status/1733480854272254022\">Button Wave Animation</a></h3>\n\n\n\n\n<p>A thread through Ritika Agrawal on easy methods to pull off a groovy button wave animation in 5 steps.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://razrfalcon.github.io/notes-on-svg-parsing/\">Notes on SVG Parsing</a></h3>\n\n\n\n\n<p>This e book in development through Yevhenii Reizner supplies very fascinating insights into the demanding situations of parsing and rendering SVG (Scalable Vector Graphics), highlighting the complexity of this XML-based vector document layout regardless of its user-friendly look.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://kizu.dev/shrinkwrap-problem/\">The Shrinkwrap Downside: Conceivable Long term Answers</a></h3>\n\n\n\n\n<p>This text through Roman Komarov addresses the longstanding CSS factor of mechanically wrapping content material and the related downside of calculating container width, proposing an answer the use of anchor positioning for inline parts.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Bramus displays easy methods to create an unique accordion the use of more than one `&lt;main points&gt;` parts with the similar identify characteristic, permitting just one segment to be open at a time, and offers a JavaScript polyfill for browsers that don’t improve the vital occasions.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://blakewatson.com/journal/omg-lol-an-oasis-on-the-internet/\">omg.lol: An Oasis at the Web</a></h3>\n\n\n\n\n<p>Blake Watson discusses his transition from the use of Twitter to becoming a member of Mastodon and highlights the options and neighborhood of the omg.lol platform.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>????‍???? <a href=\"https://svg-tutorial.com/\">SVG Instructional Introduction Calendar</a></h3>\n\n\n\n\n<p>Every day of this beautiful Introduction Calendar you’ll discover ways to code SVG pictures step-by-step. Through Hunor Márton Borbély.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>A super review of the numerous updates in CSS in 2023, overlaying options like trigonometric purposes, complicated nth-* variety, scope, nesting, subgrid, typography improvements together with initial-letter and text-wrap homes and extra!</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Find a exceptional web page revel in! Discover the sector of Wim Wenders’ film and delve into the untold 353 days of Hirayama, the principle persona. This unique “scrolling e book” is best to be had at the web page.</p>\n\n\n\n\n\n\n\n\n\n\n\n<a href=\"https://www.christopherireland.net/\"><img width=\"659\" style=\"border:0;width:659.9999999999999px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/bea16dd1-649a-498b-8939-9534523e1ecb.jpeg\" /></a>\n\n\n<p><em>On this segment, Manoela examines small design and animation main points and takes a peek below the hood to look how they’re completed.</em></p>\n\n\n\n\n<p>On <a href=\"https://www.christopherireland.net/\">Christopher Eire’s web page</a>, when soaring over the menu pieces, there’s a in point of fact delicate background impact: one thing fairly blurry. If you click on at the hyperlink, you’ll see that it’s in truth the primary symbol of the respective gallery the hyperlink results in. After inspection, we will be able to see that a picture placeholder will get inserted dynamically in a background part at the web page. The background part has a backdrop-filter:</p>\n\n\n<img width=\"660\" style=\"width:660px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/f34348eb-3947-8b29-1170-0c07e8cf208f.jpeg\" />\n\n\n<p>Really nice approach to preview what’s coming in a chic manner!</p>\n\n\n\n<p></p><h4>???? Publication Advice</h4>\n\n\n\n\n\n\n\n\n\n\n\n<a href=\"https://cssw.io/collective\"><img width=\"141\" style=\"border:0;width:141px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/3fde3a5f-41ca-17a8-0e93-27ded18bdc6e.png\" /></a>\n\n\n\n\n<p>Sign up for greater than 37,000 <strong>CSS Weekly</strong> subscribers and be all the time up-to-the-minute with the newest tactics, gear, ideas, methodologies—the entirety associated with CSS and front-end building. <a href=\"https://cssw.io/collective\">Subscribe now</a></p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p><em>Were given a excellent e-newsletter? Percentage it with us, and we’re going to function it!</em></p>\n\n\n\n<p></p><h4>Video Vault</h4>\n\n\n\n<p></p><h4>Demo Nook</h4>\n\n\n\n\n\n\n\n\n\n\n\n<a href=\"https://gkjohnson.github.io/batched-material-properties-demo/\"><img width=\"660\" style=\"border:0;width:660px;height:auto;\" alt=\"Skateboard configurator\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/521d3954-3f48-d73e-3613-114c84092576.jpeg\" /></a>\n\n\n<h3><a href=\"https://gkjohnson.github.io/batched-material-properties-demo/\">Batched Subject matter Houses</a></h3>\n\n\n\n\n<p>Take a look at this demo through Garrett Johnson! It demonstrates how subject material homes will also be condensed into a knowledge texture. This permits for hundreds of items, every with their very own distinctive subject material homes, to be rendered in one draw name the use of 3.js’s BatchedMesh.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n<p></p><h4>From our weblog</h4>\n\n\n\n\n\n\n\n\n\n\n\n<a href=\"https://tympanus.net/codrops/2023/12/08/frontend-rewind-2023-day-08/\"><img width=\"660\" style=\"border:0;width:660px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/d1f480e1-6bda-f53d-ef09-07f56eed533d.jpg\" /></a>\n\n\n\n\n\n\n\n\n\n\n<p></p><h3>Do you know that…</h3>\n\n\n\n\n<p>…the primary webcam was once created on the College of Cambridge to watch the standing of a espresso pot? In 1991, a gaggle of laptop scientists arrange a digital camera within the Trojan Room, pointed on the espresso pot within the wreck room. They created a machine that allowed them to test the espresso pot’s standing and steer clear of needless journeys to an empty pot. </p>\n\n\n\n\n<p style=\"line-height:1.5;\">And that’s all! Thanks for studying the Collective! You probably have one thing you desire to us to function within the subsequent version, merely respond to this e-mail!</p>\n\n\n\n\n<p>Codrops is proudly backed through <a href=\"https://www.keycdn.com/\"><strong>KeyCDN</strong></a><strong>, the top efficiency content material supply community that has been constructed for the long run.</strong></p>\n\n\n\n<p><br /><br /></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1757989,
+			"parentId": 0,
+			"url": "https://blog.goodlaptops.com/programming/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-24T11:26:13.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1758635,
+			"parentId": 0,
+			"url": "https://moneymanages.com/collective-800-%f0%9f%a5%b3/",
+			"author": {},
+			"date": "2023-12-26T15:01:13.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1750523,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-110116458980198472",
+			"date": "2023-12-08T15:37:52.000Z",
+			"author": {
+				"name": "feedle",
+				"url": "https://mastodon.social/@feedle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c8b70613d8a80369c7dd532216774c9938a070dacf5d0b38d320899712e4df06.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750524,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109325867586024180",
+			"date": "2023-12-08T15:37:54.000Z",
+			"author": {
+				"name": "Eleventy ???? v2.0.1",
+				"url": "https://fosstodon.org/@eleventy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0f6c0e1d5a979a0eaa7d09b97e46a3200b3671f07777b7a36e0fd9b01ad9ba47.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750525,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109292789947647037",
+			"date": "2023-12-08T15:37:55.000Z",
+			"author": {
+				"name": "westbrook",
+				"url": "https://mastodon.social/@westbrook",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f845e34d9338fcdd255785cb099cce719f19f34f6625aec1749e30cade2e0b79.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750535,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-110975388942399084",
+			"date": "2023-12-08T16:12:52.000Z",
+			"author": {
+				"name": "marcuse",
+				"url": "https://mstdn.social/@marcuse",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750546,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109292552988169598",
+			"date": "2023-12-08T16:44:28.000Z",
+			"author": {
+				"name": "Jared White",
+				"url": "https://indieweb.social/@jaredwhite",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/48ceb2b89ca6f40586b16dfee49892e8917496af1919a297a961d8031a72bc52.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750583,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109632901127859210",
+			"date": "2023-12-08T17:54:20.000Z",
+			"author": {
+				"name": "Kevin Cole",
+				"url": "https://mastodon.online/@kcole",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6cb1256aa31eafd4ce33cd65b309d256914408aa9ab5f40d883800057a0f82ea.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750616,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-111076863177984363",
+			"date": "2023-12-08T18:25:22.000Z",
+			"author": {
+				"name": "OUO",
+				"url": "https://twiukraine.com/@ook",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cfe50b4e401ede19021064bd9175391ff1add7669e6d69e64e2fa82a9db30337.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750640,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109301140234960297",
+			"date": "2023-12-08T19:25:47.000Z",
+			"author": {
+				"name": "Nick F",
+				"url": "https://mastodon.social/@nickautomatic",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/45d8b03318cd4a217b2dc50d69bf0bed2e93825242dbe401472de8a396f668b8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750842,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-110652633704283132",
+			"date": "2023-12-08T23:33:22.000Z",
+			"author": {
+				"name": "Miguel",
+				"url": "https://indieweb.social/@miguel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/51595a97b5801e19b4de24327e3db1623cd76905bb716fff4ea8184bde937a37.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750843,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109456449592494865",
+			"date": "2023-12-08T23:33:23.000Z",
+			"author": {
+				"name": "kaiserkiwi :kiwibird:",
+				"url": "https://corteximplant.com/@kaiserkiwi",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fb6062587327b9b2b72de4b6ae4da69511187ddda187a629ca8d188cb2f3f84a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750844,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-111419478642566399",
+			"date": "2023-12-08T23:33:24.000Z",
+			"author": {
+				"name": "Vic Nash",
+				"url": "https://fosstodon.org/@vicnash",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/98b42dd7c6a5531c6c7c32589aad90fd3b9a1a9d97cfd4efcc1728c2e19f6173.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751081,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-111519140892275069",
+			"date": "2023-12-09T13:04:37.000Z",
+			"author": {
+				"name": "Hurdal",
+				"url": "https://mastodon.social/@hurdal",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751431,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-110646246617451407",
+			"date": "2023-12-09T21:25:35.000Z",
+			"author": {
+				"name": "The Aimless Nomad",
+				"url": "https://mycrowd.ca/users/theaimlessnomad",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751432,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109606268895857560",
+			"date": "2023-12-09T21:25:36.000Z",
+			"author": {
+				"name": "Cory Dransfeldt :prami:",
+				"url": "https://social.lol/@cory",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f160da467f9547a3cce30e77f4adcdb163b293ad0dc3d7706ac9f3efe9fba2a7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751433,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-111338410523721383",
+			"date": "2023-12-09T21:25:36.000Z",
+			"author": {
+				"name": "Edouard Duplessis",
+				"url": "https://hachyderm.io/@eduplessis",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1619fdb36dc194ef6068a4c6dbeffef46f453392175b48164c97670b1b261b9c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751463,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109300294307910840",
+			"date": "2023-12-09T21:53:11.000Z",
+			"author": {
+				"name": "Monty",
+				"url": "https://vis.social/@nycbeardo",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/99ad1dfc6d9ae153df6a682d2737b71899607293dc332b8965f837fd2e575625.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751464,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-110730097361393708",
+			"date": "2023-12-09T21:53:12.000Z",
+			"author": {
+				"name": "Marc Littlemore",
+				"url": "https://indieweb.social/@marclittlemore",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/37d343e3802d29b140890f0ffbd0598cf1ff0a242aab0d8368e42ae2c0f804c5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751559,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109287949593182322",
+			"date": "2023-12-10T00:13:27.000Z",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751560,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109452399409838177",
+			"date": "2023-12-10T00:13:33.000Z",
+			"author": {
+				"name": "motionsuggests",
+				"url": "https://indieweb.social/@motionsuggests",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/082a72cfc2f564399835029ef4ea4f7dedc021cf9959177b056f89816a09cb3d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751573,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109383385787229882",
+			"date": "2023-12-10T00:48:00.000Z",
+			"author": {
+				"name": "Jari Pennanen",
+				"url": "https://twit.social/@Ciantic",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0cb0639f5e4a429167de402a743c5c09b959ad87614b413c174722d65a933fa2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751746,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#favorited-by-109408209067924387",
+			"date": "2023-12-10T13:40:04.000Z",
+			"author": {
+				"name": "Sasha",
+				"url": "https://hachyderm.io/@ferrata",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/92723649d22ea370e956c2e89ef6bdd5b24168449f057004588456749e8106bd.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1750526,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-110002174274940959",
+			"date": "2023-12-08T15:38:00.000Z",
+			"author": {
+				"name": "Jay Contonio",
+				"url": "https://pdx.social/@jcontonio",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ca0aaaa6570b7d794f261284dae9f4ece9d4632b2396610a29c443c0afa5d812.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750527,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109522534829452084",
+			"date": "2023-12-08T15:38:00.000Z",
+			"author": {
+				"name": "~/j4v1",
+				"url": "https://mastodon.social/@javierlopezdeancos",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/45a2103a49dead3d8caf07559c32239504fd895a05c32249b388c5f49f5d3c4c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750528,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109292789947647037",
+			"date": "2023-12-08T15:38:03.000Z",
+			"author": {
+				"name": "westbrook",
+				"url": "https://mastodon.social/@westbrook",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f845e34d9338fcdd255785cb099cce719f19f34f6625aec1749e30cade2e0b79.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750529,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109325867586024180",
+			"date": "2023-12-08T15:38:03.000Z",
+			"author": {
+				"name": "Eleventy ???? v2.0.1",
+				"url": "https://fosstodon.org/@eleventy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0f6c0e1d5a979a0eaa7d09b97e46a3200b3671f07777b7a36e0fd9b01ad9ba47.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750536,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109293489441151130",
+			"date": "2023-12-08T16:12:52.000Z",
+			"author": {
+				"name": "Nicöd·e",
+				"url": "https://diaspodon.fr/@nicod",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/de752c108cde85090d9db88020161a43c242743edc996b3d7190fe356b67395d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750537,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109785147695106112",
+			"date": "2023-12-08T16:12:52.000Z",
+			"author": {
+				"name": "Bertrand Delacretaz",
+				"url": "https://fosstodon.org/@bdelacretaz",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750538,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109348282587430600",
+			"date": "2023-12-08T16:12:53.000Z",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://fosstodon.org/@hexagoncircle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2b9e19461695dcc3d5426dbe58bc7f0337c9c2a838e5387c8c66677298ba3241.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1750547,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109881479700111516",
+			"date": "2023-12-08T16:44:29.000Z",
+			"author": {
+				"name": "Åke Järvklo",
+				"url": "https://mastodon.nu/@jarvklo",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751413,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109286461031266152",
+			"date": "2023-12-09T20:50:02.000Z",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751434,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-110646246617451407",
+			"date": "2023-12-09T21:25:39.000Z",
+			"author": {
+				"name": "The Aimless Nomad",
+				"url": "https://mycrowd.ca/users/theaimlessnomad",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751435,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109301667267707340",
+			"date": "2023-12-09T21:25:40.000Z",
+			"author": {
+				"name": "Lene Saile",
+				"url": "https://front-end.social/@lene",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b11bce21a15d560ac99e575696be482d744f10237abefd30f3e7f6b0861f476.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751436,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-111338410523721383",
+			"date": "2023-12-09T21:25:42.000Z",
+			"author": {
+				"name": "Edouard Duplessis",
+				"url": "https://hachyderm.io/@eduplessis",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1619fdb36dc194ef6068a4c6dbeffef46f453392175b48164c97670b1b261b9c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751561,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109287949593182322",
+			"date": "2023-12-10T00:13:33.000Z",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751574,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109310690360767949",
+			"date": "2023-12-10T00:48:01.000Z",
+			"author": {
+				"name": "John Allsopp",
+				"url": "https://indieweb.social/@johnallsopp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bdc0bd173b5f8ed0bf26f188e811b235eccbdbaf0408d12a490356d1322b5b4e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751693,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-110009127354399006",
+			"date": "2023-12-10T09:50:59.000Z",
+			"author": {
+				"name": "Janek Vackar",
+				"url": "https://techhub.social/@jackie4u",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/77f95f722290c875b28054de6f0739f693ba4128db92dede523511fe25cab3d8.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751694,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109346912000979328",
+			"date": "2023-12-10T09:51:02.000Z",
+			"author": {
+				"name": "Chris Lienert",
+				"url": "https://mastodon.social/@cliener",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/52557cb0c8d7e139bcdc8e99cee03b24128268f7d5909e8bef60ba442bcfa23d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751730,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109362070061028822",
+			"date": "2023-12-10T13:06:16.000Z",
+			"author": {
+				"name": "Jeff Sikes",
+				"url": "https://mastodon.social/@box464",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/213830b33a816471f06c43df1fdbdd66ddc9a69f7a409e41c68e07d3c502eb9b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1751747,
+			"url": "https://fediverse.zachleat.com/@zachleat/111545465465746825#reblogged-by-109408209067924387",
+			"date": "2023-12-10T13:40:08.000Z",
+			"author": {
+				"name": "Sasha",
+				"url": "https://hachyderm.io/@ferrata",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/92723649d22ea370e956c2e89ef6bdd5b24168449f057004588456749e8106bd.png"
+			},
+			"via": "webmention"
+		}
+	]
+}

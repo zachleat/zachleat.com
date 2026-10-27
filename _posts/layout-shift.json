@@ -1,0 +1,1912 @@
+{
+	"comments": [
+		{
+			"id": 926781,
+			"parentId": 0,
+			"url": "https://twitter.com/philw_/status/1332355495315836931",
+			"author": {
+				"name": "Phil Wolstenholme",
+				"url": "https://twitter.com/philw_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7319fa9e2e2a3825bfc27bbe885cbebc5d5230bef94d8b2782c48e95cedb5dd3.jpg"
+			},
+			"date": "2020-11-27T16:07:58.000Z",
+			"content": "Thanks for writing this up, I've just changed my approach on a project I'm working on now as a result of seeing the way you're using JS (but in the `head`) to control visibility 👍\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926881,
+			"parentId": 0,
+			"url": "https://twitter.com/brianleroux/status/1332356454326550529",
+			"author": {
+				"name": "Brian LeRoux",
+				"url": "https://twitter.com/brianleroux",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/600e0b8fff3f81c9a602af6b8eff204841257381baf1b4a0f5b3f3f5ac8766c9.jpg"
+			},
+			"date": "2020-11-27T16:11:47.000Z",
+			"content": "Web components are excellent for progressive enhancement. Love to see it.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/layout-shift/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 926871,
+			"parentId": 0,
+			"url": "https://twitter.com/brianleroux/status/1332356454326550529",
+			"author": {
+				"name": "Brian LeRoux",
+				"url": "https://twitter.com/brianleroux",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/600e0b8fff3f81c9a602af6b8eff204841257381baf1b4a0f5b3f3f5ac8766c9.jpg"
+			},
+			"date": "2020-11-27T16:11:47.000Z",
+			"content": "Web components are excellent for progressive enhancement. Love to see it.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/layout-shift/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 926880,
+			"parentId": 0,
+			"url": "https://twitter.com/jthoms1/status/1332357440508194817",
+			"author": {
+				"name": "Josh Thomas",
+				"url": "https://twitter.com/jthoms1",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/92acbb718dc50614cb8bbe79d9d914a98e325a08290203c0548ce5af667f2419.png"
+			},
+			"date": "2020-11-27T16:15:42.000Z",
+			"content": "Awesome! Now use web components for your design systems. 🙌\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/layout-shift/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 926879,
+			"parentId": 0,
+			"url": "https://twitter.com/undefinedbuddy/status/1332362039545769986",
+			"author": {
+				"name": "Saddam M. 🇸🇴",
+				"url": "https://twitter.com/undefinedbuddy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a23c4a74cdf8815937d2ce7c34c5e4f6623ad52862856a776f0bc18727499ea6.jpg"
+			},
+			"date": "2020-11-27T16:33:58.000Z",
+			"content": "Amazing work!\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/layout-shift/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 926784,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1332362040162344962",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2020-11-27T16:33:59.000Z",
+			"content": "Awesome! 👍🏻\n<a class=\"u-mention\" href=\"https://twitter.com/philw_\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926780,
+			"parentId": 0,
+			"url": "https://twitter.com/jouni_kantola/status/1332368713018990592",
+			"author": {
+				"name": "Jouni Kantola",
+				"url": "https://twitter.com/jouni_kantola",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae76b95cbf0e5f1336efe568d8a8043c01cf09582dfaf3e1cefd5f2a0e3d359a.jpg"
+			},
+			"date": "2020-11-27T17:00:30.000Z",
+			"content": "Would there have been any performance upside or downside by running the class toggle script in the web component instead to not have blocking code in head?\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926783,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1332369635480641537",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2020-11-27T17:04:09.000Z",
+			"content": "Yeah, that’s too late. The second filmstrip in the post showed similar behavior\n<a class=\"u-mention\" href=\"https://twitter.com/jouni_kantola\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926790,
+			"parentId": 0,
+			"url": "https://twitter.com/jouni_kantola/status/1332370757754740742",
+			"author": {
+				"name": "Jouni Kantola",
+				"url": "https://twitter.com/jouni_kantola",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae76b95cbf0e5f1336efe568d8a8043c01cf09582dfaf3e1cefd5f2a0e3d359a.jpg"
+			},
+			"date": "2020-11-27T17:08:37.000Z",
+			"content": "All right! Thanks for the writeup. \n\nBy that, I gather head is the way to go for light/dark mode toggles as well.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926779,
+			"parentId": 0,
+			"url": "https://twitter.com/LukasGrebe/status/1332371898571886592",
+			"author": {
+				"name": "Lukas Grebe",
+				"url": "https://twitter.com/LukasGrebe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5cd3178d7028d077434ed9b7248fc2a74c1bfbf50c4afa29b3034b7d66eea80d.jpg"
+			},
+			"date": "2020-11-27T17:13:09.000Z",
+			"content": "I don’t necessarily understand banners. I’ve navigated to a specific content for some reason. Why distract and point my attention at some other very specific content, instead of maybe pointing out this content AFTER the content I originally came for?\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926788,
+			"parentId": 0,
+			"url": "https://twitter.com/LukasGrebe/status/1332372269868474371",
+			"author": {
+				"name": "Lukas Grebe",
+				"url": "https://twitter.com/LukasGrebe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5cd3178d7028d077434ed9b7248fc2a74c1bfbf50c4afa29b3034b7d66eea80d.jpg"
+			},
+			"date": "2020-11-27T17:14:38.000Z",
+			"content": "a fun anecdote: I heard you like banners so we put a banner on the landing page of the banner so you can click the banner to see another banner!\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926794,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1332373840496713728",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2020-11-27T17:20:52.000Z",
+			"content": "Yeah I’d wager that too 👍🏻\n<a class=\"u-mention\" href=\"https://twitter.com/jouni_kantola\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926787,
+			"parentId": 0,
+			"url": "https://twitter.com/LukasGrebe/status/1332375934910017537",
+			"author": {
+				"name": "Lukas Grebe",
+				"url": "https://twitter.com/LukasGrebe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5cd3178d7028d077434ed9b7248fc2a74c1bfbf50c4afa29b3034b7d66eea80d.jpg"
+			},
+			"date": "2020-11-27T17:29:11.000Z",
+			"content": "Look: German has a name for it <a href=\"https://de.m.wikipedia.org/wiki/St%C3%B6rer_(Werbung)\">de.m.wikipedia.org/wiki/Störer_(W…</a>\n\nStill. I wonder if the very first impression shouldn’t be a Störer but something else.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926782,
+			"parentId": 0,
+			"url": "https://twitter.com/polarbirke/status/1332376313521430531",
+			"author": {
+				"name": "Søren Birkemeyer 🦊",
+				"url": "https://twitter.com/polarbirke",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/133cd78b2af08329f6c72ee69e26d4ad826b84648fd0ac060c3b0af91e7b51b3.jpg"
+			},
+			"date": "2020-11-27T17:30:42.000Z",
+			"content": "Because marketing.\n<a class=\"u-mention\" href=\"https://twitter.com/LukasGrebe\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926785,
+			"parentId": 0,
+			"url": "https://twitter.com/LukasGrebe/status/1332376920634351617",
+			"author": {
+				"name": "Lukas Grebe",
+				"url": "https://twitter.com/LukasGrebe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5cd3178d7028d077434ed9b7248fc2a74c1bfbf50c4afa29b3034b7d66eea80d.jpg"
+			},
+			"date": "2020-11-27T17:33:06.000Z",
+			"content": "Absolutely and this is only a tangent to the technical discussion. (Which w/o Marketing wouldn’t be needed)\n\nIm saying a general banner for everyone on every page (even the landing page of the banner) might not be the best way to go.\n<a class=\"u-mention\" href=\"https://twitter.com/polarbirke\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926786,
+			"parentId": 0,
+			"url": "https://twitter.com/LukasGrebe/status/1332377269319462921",
+			"author": {
+				"name": "Lukas Grebe",
+				"url": "https://twitter.com/LukasGrebe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5cd3178d7028d077434ed9b7248fc2a74c1bfbf50c4afa29b3034b7d66eea80d.jpg"
+			},
+			"date": "2020-11-27T17:34:30.000Z",
+			"content": "FTA:“The common use case was to visit the site without the opt-in preference to hide the banner. We must make the banner visible by default“ - I’m saying this premise might not be complete\n<a class=\"u-mention\" href=\"https://twitter.com/polarbirke\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926789,
+			"parentId": 0,
+			"url": "https://twitter.com/LukasGrebe/status/1332378476578545665",
+			"author": {
+				"name": "Lukas Grebe",
+				"url": "https://twitter.com/LukasGrebe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5cd3178d7028d077434ed9b7248fc2a74c1bfbf50c4afa29b3034b7d66eea80d.jpg"
+			},
+			"date": "2020-11-27T17:39:17.000Z",
+			"content": "I ❤️ netlify and marketing IS marketing 🤷‍♂️\n\nSo let’s just leave it at „yay for less content shifting and a faster web“ 🥰\n<a class=\"u-mention\" href=\"https://twitter.com/polarbirke\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926791,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1332379844366266373",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2020-11-27T17:44:43.000Z",
+			"content": "❤️ I think it’s a fair point! Just for the technical discussion about hiding the banner on the target page, I’m also thinking about the benefit of navigation stability on navigation between pages.\n<a class=\"u-mention\" href=\"https://twitter.com/LukasGrebe\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/polarbirke\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926792,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1332380205571305472",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2020-11-27T17:46:10.000Z",
+			"content": "The other complaint I currently have about our banner is that the small viewport nav close button isn’t in the same place as the open hamburger icon when the banner is open 😱\n<a class=\"u-mention\" href=\"https://twitter.com/LukasGrebe\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/polarbirke\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926878,
+			"parentId": 0,
+			"url": "https://twitter.com/justmarkup/status/1332389236247506944",
+			"author": {
+				"name": "Michael Scharnagl",
+				"url": "https://twitter.com/justmarkup",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0a236d69d7269a332c3cec198e0fce62d5d6c9749c60db7513c65f2511dbca5c.jpg"
+			},
+			"date": "2020-11-27T18:22:03.000Z",
+			"content": "An advanced HTML feature known only to a select few Old Guard developers: the hyperlink.\n\n😂\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/layout-shift/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 926877,
+			"parentId": 0,
+			"url": "https://twitter.com/TimvdLippe/status/1332418809576173569",
+			"author": {
+				"name": "Tim van der Lippe",
+				"url": "https://twitter.com/TimvdLippe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/234fc37e1bcfa80c77bb2e6e7a13f54efa01610d23f8ed37fa7b3fbffcbde9a5.jpg"
+			},
+			"date": "2020-11-27T20:19:34.000Z",
+			"content": "\"Astute readers will notice that the above is a web component but let’s just keep that between us.\"\n\nChoose a tool that helps you do the job. Glad to see web components being useful to increase the user experience and reduce user frustration with no jumping elements.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/layout-shift/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 926778,
+			"parentId": 0,
+			"url": "https://twitter.com/boldakov/status/1332421323151302656",
+			"author": {
+				"name": "Alexander Boldakov",
+				"url": "https://twitter.com/boldakov",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c1e2c821fc92a7f65e04d516eeb184f74e39d917f144bed1d49b24a9bacf7cbe.jpg"
+			},
+			"date": "2020-11-27T20:29:33.000Z",
+			"content": "Ruthlessly Eliminating Layout Shift on <a href=\"http://netlify.com\">netlify.com</a>—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/layout-shift/\">zachleat.com/web/layout-shi…</a>\n<a class=\"u-mention\" href=\"http://netlify.com/\"></a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.netlify.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 926946,
+			"parentId": 0,
+			"url": "https://twitter.com/simevidas/status/1332479814566109188",
+			"author": {
+				"name": "Šime Vidas",
+				"url": "https://twitter.com/simevidas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/09bb4880190585b5e89c617e2b0fc0af42f2bd0b1eefa64fa76f35eb307555a6.jpeg"
+			},
+			"date": "2020-11-28T00:21:58.000Z",
+			"content": "This sounds like a use-case for progressive rendering.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926997,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1332487466088095744",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2020-11-28T00:52:22.000Z",
+			"content": "Is this separate from the normal progressive rendering behavior of HTML\n<a class=\"u-mention\" href=\"https://twitter.com/simevidas\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 926996,
+			"parentId": 0,
+			"url": "https://twitter.com/simevidas/status/1332489460517376002",
+			"author": {
+				"name": "Šime Vidas",
+				"url": "https://twitter.com/simevidas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/09bb4880190585b5e89c617e2b0fc0af42f2bd0b1eefa64fa76f35eb307555a6.jpeg"
+			},
+			"date": "2020-11-28T01:00:18.000Z",
+			"content": "Basically, splitting the page into parts and loading, executing, and rendering each part separately in sequential order.\n\n&lt;!-- header --&gt;\n&lt;link rel=\"stylesheet\" href=\"header.css\"&gt;\n&lt;script src=\"header.js\"&gt;\n&lt;header&gt; … &lt;/header&gt;\n\n&lt;!-- menu --&gt;\netc.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 927232,
+			"parentId": 0,
+			"url": "https://twitter.com/stoyanstefanov/status/1332549970663149569",
+			"author": {
+				"name": "Stoyan Stefanov",
+				"url": "https://twitter.com/stoyanstefanov",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d8249d52598b8983906983b95d7b5dff55ca7023a05d2c9ce1db1f6f090c8a99.jpg"
+			},
+			"date": "2020-11-28T05:00:45.000Z",
+			"content": "hm, and your feed broke <a href=\"http://perfplanet.com\">perfplanet.com</a> Looking... :)\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 927234,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1332551579417915395",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2020-11-28T05:07:08.000Z",
+			"content": "😅 sorry!\n<a class=\"u-mention\" href=\"https://twitter.com/stoyanstefanov\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 927233,
+			"parentId": 0,
+			"url": "https://twitter.com/stoyanstefanov/status/1332553954492780546",
+			"author": {
+				"name": "Stoyan Stefanov",
+				"url": "https://twitter.com/stoyanstefanov",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d8249d52598b8983906983b95d7b5dff55ca7023a05d2c9ce1db1f6f090c8a99.jpg"
+			},
+			"date": "2020-11-28T05:16:35.000Z",
+			"content": "haha, I think I got it! My 500 char substring cut off the ⚠️ emoji so json_encode couldn't handle it <a href=\"https://github.com/stoyan/perfplanet/commit/b3dabe550ba80d506c622a6f478254e552ca3424\">github.com/stoyan/perfpla…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 927262,
+			"parentId": 0,
+			"url": "https://twitter.com/perfplanet/status/1332554457872142337",
+			"author": {
+				"name": "Planet Performance",
+				"url": "https://twitter.com/perfplanet",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8bdf6e6b3b5691e0efcc3e9de8a357662153893d60fcedcd8f603fb00b9d2e2b.jpg"
+			},
+			"date": "2020-11-28T05:18:35.000Z",
+			"content": "\"Ruthlessly Eliminating Layout Shift on <a href=\"http://netlify.com\">netlify.com</a>\" by <a href=\"https://twitter.com/zachleat\">@zachleat</a> <a href=\"https://www.zachleat.com/web/layout-shift/\">zachleat.com/web/layout-shi…</a>\n<a class=\"u-mention\" href=\"http://netlify.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.netlify.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 927693,
+			"parentId": 0,
+			"url": "https://twitter.com/WPOtips/status/1332654293267177475",
+			"author": {
+				"name": "WebPerf / WPO Tips",
+				"url": "https://twitter.com/WPOtips",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/aea410eee6d4c7c48d530fa5e8690b4cc88e2c783945e37e4070c19dff47f526.jpg"
+			},
+			"date": "2020-11-28T11:55:17.000Z",
+			"content": "📑 Interesting blog post by <a href=\"https://twitter.com/zachleat\">@zachleat</a>:\n\nRuthlessly Eliminating Layout Shift on netlify​.com: \n\n<a href=\"https://www.zachleat.com/web/layout-shift/\">zachleat.com/web/layout-shi…</a>\n\n<a href=\"https://twitter.com/search?q=%23webperf\">#webperf</a> <a href=\"https://twitter.com/search?q=%23css\">#css</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 928647,
+			"parentId": 0,
+			"url": "https://twitter.com/jeremenichelli/status/1332993637249142784",
+			"author": {
+				"name": "Jeremias Menichelli",
+				"url": "https://twitter.com/jeremenichelli",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7775bf4cd99be17604b97c4ea4d9c5b47be199b49e491e8227da9684535ec86e.jpg"
+			},
+			"date": "2020-11-29T10:23:43.000Z",
+			"content": "Reading this good piece by <a href=\"https://twitter.com/zachleat\">@zachleat</a> got me thinking two things, first how important inling critical stuff still is. Second, if a resource doesn't prevent Layout Shift, there's a high chance it could be deferred or lazy loaded <a href=\"https://www.zachleat.com/web/layout-shift/\">zachleat.com/web/layout-shi…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 928864,
+			"parentId": 0,
+			"url": "https://twitter.com/stefanboeckname/status/1333058703373766657",
+			"author": {
+				"name": "Stefan Böck",
+				"url": "https://twitter.com/stefanboeckname",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/479521c06490fdd2b7067ec9cc27f62bd32513517221d887c92d757b876bdf37.jpg"
+			},
+			"date": "2020-11-29T14:42:16.000Z",
+			"content": "<a href=\"https://www.zachleat.com/web/layout-shift/\">zachleat.com/web/layout-shi…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 930569,
+			"parentId": 0,
+			"url": "https://twitter.com/cthos/status/1333431117962117120",
+			"author": {
+				"name": "cthos",
+				"url": "https://twitter.com/cthos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c256b2ceab4d5f9031d7f6ba6b1313ce9380db5a0a0c9b8012b61ae3e51bea6a.jpg"
+			},
+			"date": "2020-11-30T15:22:07.000Z",
+			"content": "We should be sharing the good word of webcomponents. Allllll the good words.... O_O\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 930657,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1333432961253969922",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2020-11-30T15:29:26.000Z",
+			"content": "Can I curse too or are the bad words off limits\n<a class=\"u-mention\" href=\"https://twitter.com/cthos\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 930656,
+			"parentId": 0,
+			"url": "https://twitter.com/cthos/status/1333434488773218305",
+			"author": {
+				"name": "cthos",
+				"url": "https://twitter.com/cthos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c256b2ceab4d5f9031d7f6ba6b1313ce9380db5a0a0c9b8012b61ae3e51bea6a.jpg"
+			},
+			"date": "2020-11-30T15:35:30.000Z",
+			"content": "I do so regularly, so yes.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 930884,
+			"parentId": 0,
+			"url": "https://twitter.com/Netlify/status/1333473391010045959",
+			"author": {
+				"name": "Netlify",
+				"url": "https://twitter.com/Netlify",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3cafa4de8725ea82307eac6b6325b0db86b1381213084473d37a809995d400d1.jpg"
+			},
+			"date": "2020-11-30T18:10:05.000Z",
+			"content": "\"Ruthlessly eliminating layout shift on <a href=\"http://netlify.com\">netlify.com</a>\"\n— Meticulous detail and valuable lessons from <a href=\"https://twitter.com/zachleat\">@zachleat</a>\n\n<a href=\"https://www.zachleat.com/web/layout-shift/\">zachleat.com/web/layout-shi…</a>\n\n<a class=\"u-mention\" href=\"http://netlify.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.netlify.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 932203,
+			"parentId": 0,
+			"url": "https://twitter.com/J3nsT/status/1333891359527329799",
+			"author": {
+				"name": "Jens Tangermann",
+				"url": "https://twitter.com/J3nsT",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/414f325c67fe601d431243c729b9fd21777c8b777331985170845cb89a804b33.jpg"
+			},
+			"date": "2020-12-01T21:50:57.000Z",
+			"content": "Ruthlessly Eliminating Layout Shift on <a href=\"http://netlify.com\">netlify.com</a>—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/layout-shift/\">zachleat.com/web/layout-shi…</a>\n<a class=\"u-mention\" href=\"http://netlify.com/\"></a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.netlify.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 934792,
+			"parentId": 0,
+			"url": "https://habr.com/ru/post/531036/",
+			"author": {},
+			"date": "2020-12-04T00:58:37.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 937676,
+			"parentId": 0,
+			"url": "https://www.zachleat.com/",
+			"author": {},
+			"date": "2020-12-06T01:55:40.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1245065,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/bypassing-cookie-consent-banners-in-lighthouse-and-webpagetest/",
+			"author": {},
+			"date": "2021-08-12T09:14:03.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1648110,
+			"parentId": 0,
+			"url": "https://twitter.com/duncanadam/status/1639327232433717253",
+			"author": {
+				"name": "Adam Duncan",
+				"url": "https://twitter.com/duncanadam",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/616041b7c3213afbfccdf1a9dfb0da182935fd1dda3f14ecd6c3cf98bceb2a5d.png"
+			},
+			"date": "2023-03-24T18:04:04.000Z",
+			"content": "<a href=\"https://twitter.com/zachleat\">@zachleat</a> did a write-up on how they tackled it at Netlify a little while back: <a href=\"https://www.zachleat.com/web/layout-shift/\">zachleat.com/web/layout-shi…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/OliverJAsh\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 926793,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-40922269",
+			"date": "2020-11-27T22:05:41.000Z",
+			"author": {
+				"name": "Brett Jankord",
+				"url": "https://twitter.com/bjankord",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0e2d6d002103bd09aa861e88508be3b135dc0a3b9e6e4bc2d3ee05987653f428.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926795,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-289095641",
+			"date": "2020-11-27T22:05:42.000Z",
+			"author": {
+				"name": "TRST_Blog",
+				"url": "https://twitter.com/trst_blog",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8c872b78457b09bb978c4fd62406b1225e0736e1c6a1c13419921a86abd9d683.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926796,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-758056",
+			"date": "2020-11-27T22:05:43.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://twitter.com/ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/463b4ed15c2e16baf216e94e7f203bf54853cfce0410fe64417bd33935c0d79e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926797,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-4180991",
+			"date": "2020-11-27T22:05:43.000Z",
+			"author": {
+				"name": "Joel G Goodman",
+				"url": "https://twitter.com/joelgoodman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/68c91bc83be470db58750a4bfd4f8dc99508c6c130fd0afae25d5ddd1bb07d36.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926798,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-22803248",
+			"date": "2020-11-27T22:05:44.000Z",
+			"author": {
+				"name": "Mike Smedley",
+				"url": "https://twitter.com/smdly",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/04366bc31082827b8f00c5e786970e6d58a728ac66cae9e74a13d4adb210d2bb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926799,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-425853322",
+			"date": "2020-11-27T22:05:44.000Z",
+			"author": {
+				"name": "John Meyerhofer",
+				"url": "https://twitter.com/JRMeyerhofer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8bae22b585a9fca41e9280f6f6cb440ed8f5ae3add3ee0181bcdc773c14ebdfd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926800,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-4904574574",
+			"date": "2020-11-27T22:05:45.000Z",
+			"author": {
+				"name": "Kristóf Poduszló 🦄",
+				"url": "https://twitter.com/kripod97",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/21c01fec5c01e481e108f40f80b8a524f0f394848b4effa5795a629d07189302.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926801,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-65193",
+			"date": "2020-11-27T22:05:46.000Z",
+			"author": {
+				"name": "Nathan Smith",
+				"url": "https://twitter.com/nathansmith",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1e21fc3a0f89ce4b469cc84eaca53bdb0c21f994718703ef8c1665a1476d874c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926802,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-324643061",
+			"date": "2020-11-27T22:05:47.000Z",
+			"author": {
+				"name": "Derek",
+				"url": "https://twitter.com/monkeysort",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/acf5e93d3c862981718c4d350b8e253c8db42bdd4805b33f7be5aa8074be8022.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926803,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-4829889784",
+			"date": "2020-11-27T22:05:47.000Z",
+			"author": {
+				"name": "Gabriel Calin Lazar",
+				"url": "https://twitter.com/gabrielclazar",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2b4db592196d8f1ccb1235d07ac0f9c9531c2cd8e2d970bbc630c0636a0c8100.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926804,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-535717214",
+			"date": "2020-11-27T22:05:48.000Z",
+			"author": {
+				"name": "Yildirim Karal 💻+💡+❤️=🚀",
+				"url": "https://twitter.com/chieftecho",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eb1bfcc3477e08fb561bb73f20a872c977297ae608cd4c2cd334dd39f0a170f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926805,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-9594362",
+			"date": "2020-11-27T22:05:48.000Z",
+			"author": {
+				"name": "Andy Davies",
+				"url": "https://twitter.com/AndyDavies",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a90e45d17c9a935a015f99d326dc9af4063a54eeabcea9348c5775bb27468963.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926806,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-17633960",
+			"date": "2020-11-27T22:05:50.000Z",
+			"author": {
+				"name": "Nicholas C. Zakas",
+				"url": "https://twitter.com/slicknet",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be1df3d4825d665a0b7ab76a9efff93e7913ed9e1ec55646b308fa9ed4e876a1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926807,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1050624749301198848",
+			"date": "2020-11-27T22:05:50.000Z",
+			"author": {
+				"name": "Matt Wing 🦃",
+				"url": "https://twitter.com/wingmattdev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/54f85dc64e20975430b58a345a062442c5e22884cc7414c079f56f4f4b42053f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926808,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-98734097",
+			"date": "2020-11-27T22:05:51.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://twitter.com/piccalilli_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0bba9494ed9c9af6c7159db93d81fb6226fd21730be7aeb21049df90098e320b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926809,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-217381167",
+			"date": "2020-11-27T22:05:51.000Z",
+			"author": {
+				"name": "Chirag Jain",
+				"url": "https://twitter.com/cjTheDev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/59470ce4cec3becd8321bcb3566a699531e2d8fa9bdcd9c5b30bc11c55cd2b1c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926810,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-14314572",
+			"date": "2020-11-27T22:05:52.000Z",
+			"author": {
+				"name": "Jack Franklin",
+				"url": "https://twitter.com/Jack_Franklin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d7da0a8ee3493dfecf0bcb1c84583a11f1d67c139efb1dbe3add69f35a38c965.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926811,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-994668511564783619",
+			"date": "2020-11-27T22:05:56.000Z",
+			"author": {
+				"name": "Ben",
+				"url": "https://twitter.com/kaleidawave",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3e85d8fbfcafab2da0b4c152f0caacee1dfa06139a42cfa00e6f6eceaf5032a4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926812,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-358083488",
+			"date": "2020-11-27T22:05:57.000Z",
+			"author": {
+				"name": "Rob Sterlini",
+				"url": "https://twitter.com/robsterlini",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/090fc7478f54ddbb5a37171cd0729b912d8bdd1f30be00dd2787ac92be8166bd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926813,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-15269782",
+			"date": "2020-11-27T22:05:57.000Z",
+			"author": {
+				"name": "Riccardo Erra",
+				"url": "https://twitter.com/riccardoerra",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/111041f442326f015aac6c40ca13cb110a2a21410d52b528063976b1ab80206d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926814,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-865437020",
+			"date": "2020-11-27T22:05:58.000Z",
+			"author": {
+				"name": "Duncan 🌲 Taproot ⇛ BIP 8",
+				"url": "https://twitter.com/dunxen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/495714556320576f779266ba704daea43557eb5785922811537b699cc9e64110.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926815,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1469451499",
+			"date": "2020-11-27T22:05:58.000Z",
+			"author": {
+				"name": "Nikita Voloboev",
+				"url": "https://twitter.com/nikitavoloboev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ac97654cbe652eb087ad40620665364ea947033d8e4832bf0d7132d7b284c183.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926816,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-185105764",
+			"date": "2020-11-27T22:05:59.000Z",
+			"author": {
+				"name": "Samuel Hauser",
+				"url": "https://twitter.com/samuelhauser",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5fcca54cd0c0d209b1c23848f3e48664e7d3401770a6f3685d1c1ccb15830504.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926817,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-14142690",
+			"date": "2020-11-27T22:06:00.000Z",
+			"author": {
+				"name": "Todd Morey",
+				"url": "https://twitter.com/toddmorey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/652ee2094c4d5abda00e567f0d9678a52e904952e60a9b61319b13d587094505.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926818,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-4994921",
+			"date": "2020-11-27T22:06:01.000Z",
+			"author": {
+				"name": "Andy Weisner",
+				"url": "https://twitter.com/retinafunk",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1bc3e9cebd9f2e7e8784f0cd97099297644d954639d9804ee26442ae64997257.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926819,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-490929294",
+			"date": "2020-11-27T22:06:01.000Z",
+			"author": {
+				"name": "Matt Mulder",
+				"url": "https://twitter.com/mxmul",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4a9e001a55f4650aa26e2a45fbf4dcadeb15a6f0a63acc21e3f0dfd8d11df8a6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926820,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-19793281",
+			"date": "2020-11-27T22:06:02.000Z",
+			"author": {
+				"name": "Robin Rendle",
+				"url": "https://twitter.com/robinrendle",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/31a98b1f2be15076f5731ff590354494b67d4820bb41c2ab88e1a34e30c7a342.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926821,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1141527407771283456",
+			"date": "2020-11-27T22:06:02.000Z",
+			"author": {
+				"name": "berli",
+				"url": "https://twitter.com/gesserdikit",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/da8c30fe595ec681357ca6d858b5f6d44327f8d8b649d47ff77d5da375b512f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926822,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-7581192",
+			"date": "2020-11-27T22:06:04.000Z",
+			"author": {
+				"name": "Juan Fernandes",
+				"url": "https://twitter.com/juanfernandes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6f87f8397b1ce0e327624229127a7be4b7bd19ef83e8d1072275b56c8ad0bf3f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926823,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-6202072",
+			"date": "2020-11-27T22:06:04.000Z",
+			"author": {
+				"name": "Daniel Schildt",
+				"url": "https://twitter.com/autiomaa",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bc6db2bc1e72a3e0936beb253f4cd1ca5fb84e7c82876a0345d6adce8549e29d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926824,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-102513397",
+			"date": "2020-11-27T22:06:05.000Z",
+			"author": {
+				"name": "Justin Fagnani",
+				"url": "https://twitter.com/justinfagnani",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c6a1b52aaaa894c9496119c0f27c00557c05bc3a23a6901db2919b478860ad6b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926825,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-14810761",
+			"date": "2020-11-27T22:06:05.000Z",
+			"author": {
+				"name": "Kenneth Auchenberg 💭",
+				"url": "https://twitter.com/auchenberg",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/56f2732778cd00de622c386c2d2ade1e8b8d692db9bfc50788777754fc359e24.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926826,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-31777194",
+			"date": "2020-11-27T22:06:06.000Z",
+			"author": {
+				"name": "Eric ☕️ 🐟 💻",
+				"url": "https://twitter.com/rasliche",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c4c6b9bd54016647d76110958e1b268006e22d50141ee06e5c0c4c34650022b1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926827,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-4216361",
+			"date": "2020-11-27T22:06:07.000Z",
+			"author": {
+				"name": "Dion Almaer",
+				"url": "https://twitter.com/dalmaer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6938745ea40b5dcc4f92e1d5b2236c045df30b79347526fc55ba367e4cb01da0.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926828,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-7379602",
+			"date": "2020-11-27T22:06:08.000Z",
+			"author": {
+				"name": "Matt Ström",
+				"url": "https://twitter.com/ilikescience",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7de5f0bd69f5f82dfdab393b9c1e50a73c3c9e84dee1dc365de78f54cf300d5b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926829,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1321674140214988801",
+			"date": "2020-11-27T22:06:09.000Z",
+			"author": {
+				"name": "Chris Jackson",
+				"url": "https://twitter.com/c_jackson_js",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/aebbcce4b67e97dfab7272fdcabeb8e1150eaad38ca0300854ca405b806fa838.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926830,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-16197232",
+			"date": "2020-11-27T22:06:10.000Z",
+			"author": {
+				"name": "Heather Buchel",
+				"url": "https://twitter.com/hbuchel",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c5e4d8ee7b3aea78bf30d970fd8e899de905d74fe43e1dc81f321fc1cff69884.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926831,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-872657736407711744",
+			"date": "2020-11-27T22:06:11.000Z",
+			"author": {
+				"name": "Jacky Hu",
+				"url": "https://twitter.com/ChiahauHu",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3318264e9de79462fcdfb74e5fed4debb58fdf210b5a1ae213b221d94b91ee67.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926832,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-3889003397",
+			"date": "2020-11-27T22:06:12.000Z",
+			"author": {
+				"name": "Florian Geierstanger",
+				"url": "https://twitter.com/kino_auge",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5083857e636bca37238b16dd1dd454732cecf1e8e8a22820b6f32af1c3aa8481.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926833,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-3165967183",
+			"date": "2020-11-27T22:06:13.000Z",
+			"author": {
+				"name": "Eduardo Uribe",
+				"url": "https://twitter.com/Eduardo__Uribe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0a291ea9afff0430dd801bceaf71eb5db28fa001c93d57745696a20cfbc17b94.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926834,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-11855482",
+			"date": "2020-11-27T22:06:14.000Z",
+			"author": {
+				"name": "Brad Frost",
+				"url": "https://twitter.com/brad_frost",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b52ce85f5ca5f6b9d004f5133a633072e1aceea9df35926d31c5af4151d4feff.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926835,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-29916088",
+			"date": "2020-11-27T22:06:15.000Z",
+			"author": {
+				"name": "David Zeledon",
+				"url": "https://twitter.com/DavidZeledon85",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5a63e499fc27575df1f72b6e96c7b03d9ce11dfc97c25c8b98c4258c8abe7027.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926836,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-17018537",
+			"date": "2020-11-27T22:06:16.000Z",
+			"author": {
+				"name": "tanangular",
+				"url": "https://twitter.com/cooldezign",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/42698a06ab0d12a4dff21cfcc1ec5a391bd1da943569942cea29fa5740478061.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926837,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-2364309430",
+			"date": "2020-11-27T22:06:17.000Z",
+			"author": {
+				"name": "emmett naughton",
+				"url": "https://twitter.com/KingDogDad",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1a5d375edc511dd6a013d775dfaf2c79337344a354739d6dd010630faaa2bfac.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926838,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-785611",
+			"date": "2020-11-27T22:06:18.000Z",
+			"author": {
+				"name": "Ashur Cabrera",
+				"url": "https://twitter.com/ashur",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ea3faca15d8e1205b3e30ac302c8fdc3549d8b1b4db6a42a2d2c232b7c2b5ad8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926839,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-2234981740",
+			"date": "2020-11-27T22:06:19.000Z",
+			"author": {
+				"name": "Marcus 🥦 🚴‍♀️",
+				"url": "https://twitter.com/mraerino",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/15572b8af61e8a502c52478025835190c8c288643d30b9c6198edefb0f62e236.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926840,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-217786875",
+			"date": "2020-11-27T22:06:20.000Z",
+			"author": {
+				"name": "Jelmer de Maat",
+				"url": "https://twitter.com/jelmerdemaat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/788f48844eea29d11f800ba48f974cc10e5cdac3195cc07d5af334a6fdcb1e03.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926841,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-15965108",
+			"date": "2020-11-27T22:06:21.000Z",
+			"author": {
+				"name": "Josh Thomas",
+				"url": "https://twitter.com/jthoms1",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/92acbb718dc50614cb8bbe79d9d914a98e325a08290203c0548ce5af667f2419.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926842,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-561999406",
+			"date": "2020-11-27T22:06:22.000Z",
+			"author": {
+				"name": "Arjun Sajeev",
+				"url": "https://twitter.com/arjunsjv",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d224ad6e6ce7f8779652eebf37797e8e1431990cdf5f4c6c39adf00f44c0bbe1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926843,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-38276082",
+			"date": "2020-11-27T22:06:23.000Z",
+			"author": {
+				"name": "Phil Wolstenholme",
+				"url": "https://twitter.com/philw_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7319fa9e2e2a3825bfc27bbe885cbebc5d5230bef94d8b2782c48e95cedb5dd3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926844,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-58448784",
+			"date": "2020-11-27T22:06:24.000Z",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://twitter.com/m_ott",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6cadd5c7ea8ba3e1336671afc46cd6c449a247920c453bbf3c495905cc811752.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926845,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-778019",
+			"date": "2020-11-27T22:06:25.000Z",
+			"author": {
+				"name": "Brett Evans",
+				"url": "https://twitter.com/brettevans",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be6a601aacedb6f2d003841c3eb66a845221da7c2a48c01eee4bb09370180fcc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926846,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-18657020",
+			"date": "2020-11-27T22:06:26.000Z",
+			"author": {
+				"name": "Jared White",
+				"url": "https://twitter.com/jaredcwhite",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/48e06d3378c3c9228498f6ec2a0eab9d7db8e8f58bf45a4e03f7bc3dfd948e6b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926847,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-4094721",
+			"date": "2020-11-27T22:06:27.000Z",
+			"author": {
+				"name": "Dana Byerly",
+				"url": "https://twitter.com/superterrific",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae11da462767995f7225b0a4162a2f6e767ab8f6d21dc9435b22a76aa40568fc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926848,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-406342353",
+			"date": "2020-11-27T22:06:28.000Z",
+			"author": {
+				"name": "Ajay Poshak",
+				"url": "https://twitter.com/poshakajay",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/30469562e1f04d38ec5754b1fa3046af9f6f93e7b42d2a52db212e47108ea159.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926849,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-60386583",
+			"date": "2020-11-27T22:06:29.000Z",
+			"author": {
+				"name": "andrew levine",
+				"url": "https://twitter.com/drewml",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b148a6c9e63bcaa1e54c27c7fa822018411939ca537a1ce88a7abadb555e7d04.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926850,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1098433052",
+			"date": "2020-11-27T22:06:32.000Z",
+			"author": {
+				"name": "Tim van der Lippe",
+				"url": "https://twitter.com/TimvdLippe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/234fc37e1bcfa80c77bb2e6e7a13f54efa01610d23f8ed37fa7b3fbffcbde9a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926851,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-810267515737833472",
+			"date": "2020-11-27T22:06:33.000Z",
+			"author": {
+				"name": "Saddam M. 🇸🇴",
+				"url": "https://twitter.com/undefinedbuddy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a23c4a74cdf8815937d2ce7c34c5e4f6623ad52862856a776f0bc18727499ea6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926852,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-279614981",
+			"date": "2020-11-27T22:06:33.000Z",
+			"author": {
+				"name": "Maxime Richard",
+				"url": "https://twitter.com/rmaximedev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/55bf8a583ea1817b000e3fc9555ebaa5e480ff3efd34e61be0cd1a91f62cddef.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926853,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1276359467035176960",
+			"date": "2020-11-27T22:06:35.000Z",
+			"author": {
+				"name": "John Liu",
+				"url": "https://twitter.com/theStoicLlama",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/13c93ada2726c3cc46bbbdd6849634bef3f7240e5d116038e19f31cdf911da06.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926854,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-24203304",
+			"date": "2020-11-27T22:06:36.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926857,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-15047520",
+			"date": "2020-11-27T22:06:40.000Z",
+			"author": {
+				"name": "🌳 Emanuel Kluge 🐿",
+				"url": "https://twitter.com/Herschel_R",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d7e7f90b9fae12d71d36d010270818dd4bef276e4d4df00e033ca63b000554f1.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926865,
+			"url": "https://twitter.com/zachleat/status/1332041287399321605#favorited-by-98734097",
+			"date": "2020-11-27T22:06:46.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://twitter.com/piccalilli_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0bba9494ed9c9af6c7159db93d81fb6226fd21730be7aeb21049df90098e320b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926866,
+			"url": "https://twitter.com/zachleat/status/1332041287399321605#favorited-by-167834639",
+			"date": "2020-11-27T22:06:46.000Z",
+			"author": {
+				"name": "Monica",
+				"url": "https://twitter.com/notwaldorf",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b6e69b5a95cc7b0ebee0822a1b260b8dc1f73f9a61073825d5cb55794776aa4c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926867,
+			"url": "https://twitter.com/zachleat/status/1332041287399321605#favorited-by-3122402048",
+			"date": "2020-11-27T22:06:47.000Z",
+			"author": {
+				"name": "Amelia Bellamy-Royds",
+				"url": "https://twitter.com/AmeliasBrain",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/343e5a6711634bf5e2ca1dccaf453134eabb4d6f86f73eabe1b96634fc315494.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926868,
+			"url": "https://twitter.com/zachleat/status/1332041287399321605#favorited-by-971733132151083008",
+			"date": "2020-11-27T22:06:48.000Z",
+			"author": {
+				"name": "Kyle Hall",
+				"url": "https://twitter.com/khalligans47",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ffbe4eef89f35f786b0868c2b845ff5eba14f4df8ed4177f19f76c06d7f3a5de.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926869,
+			"url": "https://twitter.com/zachleat/status/1332041287399321605#favorited-by-3292340874",
+			"date": "2020-11-27T22:06:49.000Z",
+			"author": {
+				"name": "Rhian van Esch",
+				"url": "https://twitter.com/rhianvanesch",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b7df7ef76bffd2b18841d4c9b5e53edf16a2f1e38b5d05833df12c686848a87.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926870,
+			"url": "https://twitter.com/zachleat/status/1332041287399321605#favorited-by-16019109",
+			"date": "2020-11-27T22:06:50.000Z",
+			"author": {
+				"name": "Adam Di Mario",
+				"url": "https://twitter.com/heltir",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/450ddd1f67425608378842ef1538901248b9b42d4b0122f1a9a9d824b662fd1e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926874,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-2391572880",
+			"date": "2020-11-27T22:19:33.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://twitter.com/BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b7a80f06bd0444925bf3506019ab0f10869ae49d4b8c35ea126612f1875ceef2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926875,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-703433",
+			"date": "2020-11-27T22:19:34.000Z",
+			"author": {
+				"name": "Rico 🙇🏻‍♂️",
+				"url": "https://twitter.com/ricomadiko",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b4ec1db5ab880ca24c6f10a63e01e5658bb332c74d42960d0e12aba92743099.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926893,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-3287075058",
+			"date": "2020-11-27T23:25:04.000Z",
+			"author": {
+				"name": "Annamalai",
+				"url": "https://twitter.com/asvny_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f17d982f375791a543adb63798d5e9d54b621473158f93d28c73867403fab1ed.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926894,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-14048110",
+			"date": "2020-11-27T23:25:04.000Z",
+			"author": {
+				"name": "Kristof Neirynck",
+				"url": "https://twitter.com/Crydust",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f1ad96bef7f2bca31c7c5747b5967ca55e08de7fa11e1f8965ba5ebadf4f68cb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926945,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1259622945955016705",
+			"date": "2020-11-28T00:24:13.000Z",
+			"author": {
+				"name": "Tanner Dolby",
+				"url": "https://twitter.com/tannerdolby",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b9b6080c2486ab209b39facadec189a081288baa997cdb77bda07ddd9dafa21.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926947,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-17775069",
+			"date": "2020-11-28T00:24:14.000Z",
+			"author": {
+				"name": "bertrandkeller",
+				"url": "https://twitter.com/bertrandkeller",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5705e235fe729ec62273131d966952f09e3ab0bbf8b470a3846fb0280a3d40fa.gif"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926948,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-361893973",
+			"date": "2020-11-28T00:24:15.000Z",
+			"author": {
+				"name": "Alan Dávalos",
+				"url": "https://twitter.com/AlanGDavalos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2910f4c16afea6b54d4b2967d74c16ba7075f211230a939fd809f8c646cebc19.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926998,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-146569131",
+			"date": "2020-11-28T01:15:15.000Z",
+			"author": {
+				"name": "aaron hans",
+				"url": "https://twitter.com/nopatternaaron",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/41a9217e31214dedee28ad124b38199b63e1aae50cca12f3cd82352d4c216b0f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927060,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-3187968551",
+			"date": "2020-11-28T01:54:29.000Z",
+			"author": {
+				"name": "Ahmad Saleem",
+				"url": "https://twitter.com/I_am_AhmadS",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5edf02bd7e0517cbd212287c6e06c109b4072f05d44f970ae39834ffdd64f72e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927061,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-2354966594",
+			"date": "2020-11-28T01:54:30.000Z",
+			"author": {
+				"name": "Shingo Yamazaki",
+				"url": "https://twitter.com/zaki___yama",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/217e957275b3f59d5eae41501dcc96c805c78bd85952288f9f17cc810aa663cd.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927140,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-15616605",
+			"date": "2020-11-28T03:10:50.000Z",
+			"author": {
+				"name": "Peter Demaria",
+				"url": "https://twitter.com/etaproducto",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e56566df073acf1da6529506adb1804ec12bc4c213efa439514c88c3a883b2de.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927182,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-223389332",
+			"date": "2020-11-28T03:47:45.000Z",
+			"author": {
+				"name": "tyler",
+				"url": "https://twitter.com/tyler_brostrom",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5e66cff363c4e4e64675e643162d655d608ecabf93ba50344d2dc6f29fd6aee1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927215,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-2956503282",
+			"date": "2020-11-28T04:36:55.000Z",
+			"author": {
+				"name": "vínαч puppαl",
+				"url": "https://twitter.com/VinayPuppal",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1b6c1d83f0861619909ca7a0020619d926789e837c90aeec9f7488b086b587d4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927235,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-23232640",
+			"date": "2020-11-28T05:17:38.000Z",
+			"author": {
+				"name": "Katie Sylor-Miller",
+				"url": "https://twitter.com/ksylor",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b01ca640f52ce9f140a8a431b2bb64effa092834274324b7865f8f07ede9c9bf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927259,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-826644092",
+			"date": "2020-11-28T05:57:12.000Z",
+			"author": {
+				"name": "Trung Nguyen",
+				"url": "https://twitter.com/nttrung91",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/941714e987aeef691a44c3d58dcaac10ac5fa6a99660c0653af434faed68975a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927260,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-39890524",
+			"date": "2020-11-28T05:57:21.000Z",
+			"author": {
+				"name": "Kiran Sonley",
+				"url": "https://twitter.com/ksonnad",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0e7e8a5891486829d13c5ed1fe3780209f0d460084e11f3806eac49ca94bfe6d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927261,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-14140936",
+			"date": "2020-11-28T05:57:22.000Z",
+			"author": {
+				"name": "Lasha Krikheli",
+				"url": "https://twitter.com/LashaKrikheli",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4ca1f8afd78bf9304069f9dad595ec2f8a64277213fc711b560bfc7f0faf42c1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927287,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-2150118962",
+			"date": "2020-11-28T06:34:17.000Z",
+			"author": {
+				"name": "ParkerBond usePrivilege(stopRacism)",
+				"url": "https://twitter.com/BondParkerBond",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/83a9be6dddbe8ffd566960a02fad73f568afd7267e73fe1ad93ec51fbcc91053.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927430,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-3425288902",
+			"date": "2020-11-28T08:19:49.000Z",
+			"author": {
+				"name": "henning",
+				"url": "https://twitter.com/hactar_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/217c1bf20af36dd54090bdbe271fc6f5da431bacd957b3209fbb831322593297.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927439,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1129390773722583043",
+			"date": "2020-11-28T09:03:53.000Z",
+			"author": {
+				"name": "Ramona",
+				"url": "https://twitter.com/DvlprXCII",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b4aea1b18e386604eed72aaa8abc9759338077dbb5ce4521075af5ef885ac9f9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927440,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1228919081664794634",
+			"date": "2020-11-28T09:03:53.000Z",
+			"author": {
+				"name": "Ryan Cao",
+				"url": "https://twitter.com/RyanCaoDev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f6dba64af85a80ca3264c71db524153f0d9c16a6b53cc755a388c73e999dacc3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927533,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-2846071437",
+			"date": "2020-11-28T10:23:26.000Z",
+			"author": {
+				"name": "Bruce Anderson",
+				"url": "https://twitter.com/bahrusnikoffin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c7df29905d1479d88e0c8ddd6080548701b8ec3b83d644824c1dcf5fcdf95a97.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927736,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-14118826",
+			"date": "2020-11-28T13:29:23.000Z",
+			"author": {
+				"name": "Masataka Yakura",
+				"url": "https://twitter.com/myakura",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/faf551dcf1eba6886df792e88c2132fc5cf58e1e3e3172398e2b96fb2569ca7b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927737,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-37782868",
+			"date": "2020-11-28T13:29:23.000Z",
+			"author": {
+				"name": "Reto Ryter 🏠🧟‍♂️",
+				"url": "https://twitter.com/rryter",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/037ebe6569f0327c4f3884a1c8065c2ab3099a117300a92dcb14ceef31e7d18c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927857,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-788387185707868161",
+			"date": "2020-11-28T15:54:53.000Z",
+			"author": {
+				"name": "Lars den Bakker",
+				"url": "https://twitter.com/LarsdenBakker18",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/aa17f20a446041eba7273fcf69e32a8c2e3128b442ce5c3eb21bf9d151cbaf0a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927858,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-26787101",
+			"date": "2020-11-28T15:54:54.000Z",
+			"author": {
+				"name": "Thomas A. Powell",
+				"url": "https://twitter.com/thomasapowell",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/78395885671aa72121bcdcb748996f40ee3d197454b6a4aa16aa7465457bd68d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927859,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-15004179",
+			"date": "2020-11-28T15:55:22.000Z",
+			"author": {
+				"name": "Paul Grenier",
+				"url": "https://twitter.com/AutoSponge",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/30ffead3d749f13ca083f3649b63cf4862ebcfe9f434a6e43af7c13562802f92.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927917,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1295232791018438656",
+			"date": "2020-11-28T17:32:47.000Z",
+			"author": {
+				"name": "Frank Noirot",
+				"url": "https://twitter.com/frank_noirot",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/013e728f45c243ab79cc17e89b2e1798577428d0b5b160aa5ffde32613024fff.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927952,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-4541311",
+			"date": "2020-11-28T19:54:44.000Z",
+			"author": {
+				"name": "Rob Blake",
+				"url": "https://twitter.com/treb0r",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae5e4479ed4a5fa4711357839cc34fcdfa96b7632f9fb45bd4fbe9baa8e96d87.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927960,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-896698515040215040",
+			"date": "2020-11-28T20:30:12.000Z",
+			"author": {
+				"name": "Ryan Stanley",
+				"url": "https://twitter.com/ryanstan1ey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ee29b7f5f42718c013ded1fa064a1970ce239eabde15da3557b78a50fcf46c26.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927972,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-2330873299",
+			"date": "2020-11-28T21:13:29.000Z",
+			"author": {
+				"name": "Ville",
+				"url": "https://twitter.com/vpietarinen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1dc71a0948d8636b2a6e522b93b29245f74fbece700b493e090635b8b61c5347.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 929177,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-100714033",
+			"date": "2020-11-29T18:58:05.000Z",
+			"author": {
+				"name": "Samar Panda",
+				"url": "https://twitter.com/samarpanda",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8ef7498825f39c937bdbd5a928c95bbdd48a536e0434f5f967db7480af73836d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 929518,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-1032234286634741760",
+			"date": "2020-11-30T01:11:35.000Z",
+			"author": {
+				"name": "Vladislav Shkodin",
+				"url": "https://twitter.com/shcoding",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9f3833b188ce42bb2b87b9ea27f40f525e1052424c8063c71212812a4ef306ee.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 930570,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-17509369",
+			"date": "2020-11-30T15:28:08.000Z",
+			"author": {
+				"name": "dies das 🦂 content",
+				"url": "https://twitter.com/zeb600",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/19dafde8285c212e9cf3fe88e2d5940c85b3d811544c5e2d1c544d1aa664218d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 930571,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-590143431",
+			"date": "2020-11-30T15:28:18.000Z",
+			"author": {
+				"name": "Jay Hoffmann",
+				"url": "https://twitter.com/jay_hoffmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c38eb95b4305bfbdceb7cbbca733aa0c27069654e18fdac820699e1ee1170430.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 930572,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-831898993",
+			"date": "2020-11-30T15:28:19.000Z",
+			"author": {
+				"name": "Cassey Lottman",
+				"url": "https://twitter.com/CasseyLottman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/149f46d98bdc72638392ffe8047c32d11e5197f20caf6893d3e49323ffd62272.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 930573,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-16910874",
+			"date": "2020-11-30T15:28:20.000Z",
+			"author": {
+				"name": "Westbrook",
+				"url": "https://twitter.com/WestbrookJ",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1607b524ddb6653f31c5e31abee7894878f0398ed3013bc9b73d501b30a492a2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 930655,
+			"url": "https://twitter.com/zachleat/status/1332353805451751430#favorited-by-22061559",
+			"date": "2020-11-30T16:24:44.000Z",
+			"author": {
+				"name": "Eduardo Bouças",
+				"url": "https://twitter.com/eduardoboucas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5d8817bb46f39faac55692b1c8dfde0d4697c3ce37ffbb0c865bae5def75dc2a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1408240,
+			"url": "https://twitter.com/zachleat/status/1532071372754919424#favorited-by-277168946",
+			"date": "2022-06-02T00:32:55.000Z",
+			"author": {
+				"name": "Patrick Hulce",
+				"url": "https://twitter.com/patrickhulce",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ff0c9823152d77cde78042b2e2a931c72846224a653e1cb48500db0c3590432d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1408453,
+			"url": "https://twitter.com/zachleat/status/1532071372754919424#favorited-by-331207312",
+			"date": "2022-06-02T12:10:40.000Z",
+			"author": {
+				"name": "Kyle Mitofsky #BLM",
+				"url": "https://twitter.com/KyleMitBTV",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/797b730743e3815f89ec08c6ca436701aa5f74ef7370e91c4419b80b918fef64.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 926864,
+			"url": "https://twitter.com/piccalilli_/status/1332354369174577152",
+			"date": "2020-11-27T16:03:30.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://twitter.com/piccalilli_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0bba9494ed9c9af6c7159db93d81fb6226fd21730be7aeb21049df90098e320b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926863,
+			"url": "https://twitter.com/Comandeer2/status/1332354719235371008",
+			"date": "2020-11-27T16:04:53.000Z",
+			"author": {
+				"name": "Comandeer",
+				"url": "https://twitter.com/Comandeer2",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3be1deb7961ebc6664ad5c5ea870666f6ca139cfb6583f38c4a285ec432a9bc5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926862,
+			"url": "https://twitter.com/biilmann/status/1332356573432147968",
+			"date": "2020-11-27T16:12:15.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926861,
+			"url": "https://twitter.com/malchata/status/1332356985036169217",
+			"date": "2020-11-27T16:13:53.000Z",
+			"author": {
+				"name": "Jeremy Wagner",
+				"url": "https://twitter.com/malchata",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/34961d97ae35dff6fbadf7f62ad8f55c35e48ea0be52bbd8c4c964f90a709977.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926860,
+			"url": "https://twitter.com/dunxen/status/1332382305734766597",
+			"date": "2020-11-27T17:54:30.000Z",
+			"author": {
+				"name": "Duncan 🌲 Taproot ⇛ BIP 8",
+				"url": "https://twitter.com/dunxen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/495714556320576f779266ba704daea43557eb5785922811537b699cc9e64110.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926859,
+			"url": "https://twitter.com/dalmaer/status/1332417462483107842",
+			"date": "2020-11-27T20:14:12.000Z",
+			"author": {
+				"name": "Dion Almaer",
+				"url": "https://twitter.com/dalmaer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6938745ea40b5dcc4f92e1d5b2236c045df30b79347526fc55ba367e4cb01da0.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926858,
+			"url": "https://twitter.com/justinfagnani/status/1332426307888500736",
+			"date": "2020-11-27T20:49:21.000Z",
+			"author": {
+				"name": "Justin Fagnani",
+				"url": "https://twitter.com/justinfagnani",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c6a1b52aaaa894c9496119c0f27c00557c05bc3a23a6901db2919b478860ad6b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926855,
+			"url": "https://twitter.com/retinafunk/status/1332431877500760065",
+			"date": "2020-11-27T21:11:29.000Z",
+			"author": {
+				"name": "Andy Weisner",
+				"url": "https://twitter.com/retinafunk",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1bc3e9cebd9f2e7e8784f0cd97099297644d954639d9804ee26442ae64997257.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926856,
+			"url": "https://twitter.com/samikeijonen/status/1332444816672747527",
+			"date": "2020-11-27T22:02:54.000Z",
+			"author": {
+				"name": "Sami Keijonen",
+				"url": "https://twitter.com/samikeijonen",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/563596f12242cf865eb4f8e914701e8f0caf82935d92809ac5c342cfadf247fe.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926876,
+			"url": "https://twitter.com/BryceWrayTX/status/1332445351681417216",
+			"date": "2020-11-27T22:05:02.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://twitter.com/BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b7a80f06bd0444925bf3506019ab0f10869ae49d4b8c35ea126612f1875ceef2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 926949,
+			"url": "https://twitter.com/AlanGDavalos/status/1332479508893425664",
+			"date": "2020-11-28T00:20:45.000Z",
+			"author": {
+				"name": "Alan Dávalos",
+				"url": "https://twitter.com/AlanGDavalos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2910f4c16afea6b54d4b2967d74c16ba7075f211230a939fd809f8c646cebc19.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 927634,
+			"url": "https://twitter.com/bahrusnikoffin/status/1332649928431198209",
+			"date": "2020-11-28T11:37:57.000Z",
+			"author": {
+				"name": "Bruce Anderson",
+				"url": "https://twitter.com/bahrusnikoffin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c7df29905d1479d88e0c8ddd6080548701b8ec3b83d644824c1dcf5fcdf95a97.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 928483,
+			"url": "https://twitter.com/NorthJaw/status/1332931861069262850",
+			"date": "2020-11-29T06:18:15.000Z",
+			"author": {
+				"name": "Naveen",
+				"url": "https://twitter.com/NorthJaw",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/38eb676ba9b7d4454bf5a759269b6bab7767f2b878614d4867564bec3edcf8a8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 930574,
+			"url": "https://twitter.com/WestbrookJ/status/1333431571639128064",
+			"date": "2020-11-30T15:23:55.000Z",
+			"author": {
+				"name": "Westbrook",
+				"url": "https://twitter.com/WestbrookJ",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1607b524ddb6653f31c5e31abee7894878f0398ed3013bc9b73d501b30a492a2.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

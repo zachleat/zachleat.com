@@ -4,7 +4,7 @@ export default {
 	author: "Zach Leatherman",
 	layout: "layouts/post.liquid",
 	permalink: function({page}) {
-		return `/web/${ page.fileSlug }/`
+		return `/web${ page.filePathStem.replace(/^\/_posts/, "") }/`
 	},
 	tags: ["blog-post"],
 	eleventyComputed: {

@@ -1,0 +1,22 @@
+---
+title: "Speaking at: beyond tellerrand—Düsseldorf"
+date: 2019-05-13
+categories:
+  - presentations
+tags:
+  - external
+  - conference
+  - speaking
+metadata:
+  type: scheduled_event
+  speaking:
+    type: conference
+    recap: /web/scoville-scale/
+    country: Germany
+external_url: 'https://beyondtellerrand.com/events/duesseldorf-2019'
+event_date: May 13–15
+---
+This is an event post. The talk content is available here:
+
+{% originalPostEmbed "https://www.zachleat.com/web/scoville-scale/" %}
+

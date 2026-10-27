@@ -1,0 +1,573 @@
+{
+	"comments": [
+		{
+			"id": 1742234,
+			"parentId": 0,
+			"url": "https://toot.cafe/@bkardell/111448881200347881",
+			"author": {
+				"name": "bkardell",
+				"url": "https://toot.cafe/@bkardell",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fd43ce6960d19c9dabe31d4098255af1d53660e076160440600dcf455587d345.jpg"
+			},
+			"date": "2023-11-21T13:56:09.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> &gt; The CSS is only necessary for the JS enhanced experience.</p><p>I am having trouble parsing this... Can you clarify?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1742235,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111448900376150748",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-11-21T14:01:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://toot.cafe/@bkardell\" class=\"u-url\">@<span>bkardell</span></a></span> As an example, for &lt;squirm-inal&gt; the CSS is related to the JavaScript-enhanced animation behavior: <a href=\"https://github.com/zachleat/squirminal/blob/8a0c5567c81f3082118d07f28c7228c51ec4db24/squirminal.js#L24-L49\"><span>https://</span><span>github.com/zachleat/squirminal</span><span>/blob/8a0c5567c81f3082118d07f28c7228c51ec4db24/squirminal.js#L24-L49</span></a> (cursor blinking, etc)</p><p>The fallback is the default slot HTML which doesn’t need any CSS from the component.</p>\n<a href=\"https://github.com/zachleat/squirminal/blob/8a0c5567c81f3082118d07f28c7228c51ec4db24/squirminal.js\">squirminal/squirminal.js at 8a0c5567c81f3082118d07f28c7228c51ec4db24 · zachleat/squirminal</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1742607,
+			"parentId": 0,
+			"url": "https://zerobytes.monster/post/3760696",
+			"author": {},
+			"date": "2023-11-21T19:02:41.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1742614,
+			"parentId": 0,
+			"url": "https://derp.foo/post/421917",
+			"author": {},
+			"date": "2023-11-21T19:20:12.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1746548,
+			"parentId": 0,
+			"url": "https://cloudfour.com/thinks/html-web-components-are-having-a-moment/",
+			"author": {},
+			"date": "2023-11-29T16:31:18.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747107,
+			"parentId": 0,
+			"url": "https://mastermindtechpro.com/collective-794/",
+			"author": {},
+			"date": "2023-11-30T17:54:58.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747237,
+			"parentId": 0,
+			"url": "https://atocs.net/tutorials/collective-794/",
+			"author": {},
+			"date": "2023-11-30T23:13:03.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747488,
+			"parentId": 0,
+			"url": "https://mycheapwebhosting.com/collective-794/",
+			"author": {},
+			"date": "2023-12-01T14:56:54.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747550,
+			"parentId": 0,
+			"url": "https://digitalwebgeek.com/collective-794/",
+			"author": {},
+			"date": "2023-12-01T17:53:43.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747604,
+			"parentId": 0,
+			"url": "https://a.supportcontact.online/2023/12/01/collective-794/",
+			"author": {
+				"name": "AdminGPT",
+				"url": "https://a.supportcontact.online/author/a_y2z1od/"
+			},
+			"date": "2023-12-01T20:28:01.000Z",
+			"content": "<p> <br /></p>\n\n<a href=\"https://codrops.com\"><img width=\"126\" style=\"border:0;width:126px;height:auto;\" alt=\"Codrops logo\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/66c53629-bfb9-7a17-0785-49331fcdc0dd.png\" /></a>\n<a href=\"https://tympanus.net/codrops/collective/\"><img width=\"660\" style=\"border:0;width:660px;height:auto;\" alt=\"Collective 790\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/c373ffd8-3fdf-350e-d17c-515790333211.jpeg\" /></a>\n\n<p></p><h2>Welcome to Collective #794</h2>\n\n\n\n\n<p>AI-powered tools are really taking off right now. The speed of development is quite insane. Kind of feels like a revolution, doesn’t it? </p>\n<p>But, let’s be real, it’s removing/changing jobs, and it’s happening super fast. Some say becoming a Machine Learning Engineer is the move. Someone’s gotta take care of the AI, right? Or, maybe not?</p>\n<p>Here’s the scoop: AI might take over the world, but it might never quite get CSS. Who really does? ????</p>\n\n\n\n\n<p><strong>Anyway, let’s learn, no matter what!</strong></p>\n\n\n\n\n<p>Automate your builds and deployment so you can focus on your code. Build and host static site generators &amp; single page applications with Deploy Now.</p>\n<p><a href=\"https://srv.buysellads.com/ads/long/x/THXPVMDHTTTTTTFAA3QNPTTTTTTP5Y4RKWTTTTTTTTHHV7VTTTTTT2PE22AWCSBLP7EUCAZMKHPWPIINV2SCVLB757RT\">Find out more</a> ????</p>\n\n\n\n<img height=\"0\" width=\"0\" src=\"https://namecheap.pxf.io/i/1284512/1130470/5618\" border=\"0\" alt=\"5618\" />\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Now you can sketch up your UI and convert it into code. Well, kind of. Is this the beginning of the end? Check out <a href=\"https://twitter.com/multikev/status/1724908185361011108\">some more examples</a> that went viral.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>An app that converts a screenshot to HTML/Tailwind CSS. It uses GPT-4 Vision to generate the code, and DALL-E 3 to generate similar looking images. By Abi Raja.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>????️‍♀️ <a href=\"https://www.eff.org/deeplinks/2023/11/debunking-myth-anonymous-data\">Debunking the Myth of “Anonymous” Data</a></h3>\n\n\n\n\n<p>This article discusses the pervasive digital recording and storage of personal information, the challenges of anonymizing data, and the risks of location surveillance, emphasizing the need for user privacy protection and informed consent in data collection practices.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://github.com/cbh123/narrator\">David Attenborough narrates your life.</a></h3>\n\n\n\n\n<p>Charlie Holtz has utilized GPT-4-vision and a python script from ElevenLabs to produce an impressive narration of himself in the style of a nature documentary, as if voiced by David Attenborough. </p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://vercel.com/blog/how-to-scale-a-large-codebase\">How to scale a large codebase</a></h3>\n\n\n\n\n<p>Lee Robinson from Vercel outlines tips for scaling large software projects, covering monorepos, feature flags, incremental builds, skew protection, and adopting new technology. He recommends using tools like Turborepo and Vercel to streamline workflows.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://trstringer.com/oss-compensation-broken/\">The Lack of Compensation in Open Source Software is Unsustainable</a></h3>\n\n\n\n\n<p>Thomas Stringer discusses the challenges of open source software maintenance, including lack of compensation for contributors. He proposes a model tying compensation to contributions and usage, and suggests companies contribute money and developer time to support the ecosystem.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>With this you can extend built-in Three.js materials to support infinite, non-repeating, seamless texture tiling. By Casey Primozic.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>This article By Ahmad Shadeed explores the implementation of native CSS nesting in major browsers, detailing its benefits for front-end developers, providing examples, and addressing potential bugs while emphasizing its potential to enhance CSS writing.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>????‍???? <a href=\"https://www.zachleat.com/web/a-taxonomy-of-web-component-types/\">An Attempted Taxonomy of Web Components</a></h3>\n\n\n\n\n<p>Zack Leatherman discusses his changing views on creating web components. He describes different open-source HTML components, their sizes, CSS, and JavaScript details, and reflects on what he’s learned. He also discusses the nuances of Shadow DOM and the complexities of the web component landscape.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://simonwillison.net/2023/Nov/15/gpts/\">Exploring GPTs: ChatGPT in a trench coat?</a></h3>\n\n\n\n\n<p>Last week’s OpenAI DevDay introduced GPTs, allowing ChatGPT Plus users to create custom chatbots with unique configurations. Simon Willison summarizes the interesting bits.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>The Chrome for Developers team showcases what the web can do in this interactive card experience.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n<p></p><h4>Behind the Pixel ????</h4>\n\n\n<a href=\"https://edesigninteractive.com/cpg-marketing-services/\"><img width=\"660\" style=\"border:0;width:660px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/35de57b0-776a-38fa-2c34-a39956ea01d6.gif\" /></a>\n\n\n<p><em>In this section, Manoela examines small design and animation details and takes a peek under the hood to see how they are accomplished.</em></p>\n\n\n\n\n<p>I really love curved text animations. This one is a really cute one and it’s quite simple to achieve. eDesign Interactive has this nice animation on their marketing page and you can see the curved text being hidden on scroll. How did they do it? </p>\n<p>When we inspect, we can see that there is a <em>textPath</em> which is curved along the path that follows:</p>\n\n\n<img width=\"564\" style=\"width:564px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/c01bf9c1-8b16-6460-89d0-f8d162180434.png\" />\n\n\n<p>The path has a 15px stroke <em>in the background color</em>. By animating the stroke-dashoffset, the line animation covers the curved text. It’s a clever technique!</p>\n\n\n\n<p></p><h4>Video Vault</h4>\n\n\n\n\n\n\n\n\n\n\n\n<a href=\"https://dribbble.com/shots/23039572-Landing-Page\"><img width=\"660\" style=\"border:0;width:660px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/c0c5c637-f0ad-f44b-fb05-c0096ff86ce4.gif\" /></a>\n\n\n<h3><a href=\"https://dribbble.com/shots/23039572-Landing-Page\">Animation Spotlight: Landing Page</a></h3>\n\n\n\n\n<p>Desire Creative Agency’s Dribbble shot displays a super nice design and interaction details, complete with a variety of unique hover effects. The landing page offers a refreshing look and showcases thoughtful micro-animations. The layout was designed by Sonya Baikova and the motion by Marina Shevlyakova.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n<p></p><h3>Demo Corner</h3>\n\n\n\n<p></p><h3>❓Did you know that…</h3>\n\n\n\n\n<p>…in the early days of the World Wide Web, the concept of web browsers was not as standardized as it is today. Before the dominance of the browsers we know today, there were several lesser-known ones. One such early browser was “ViolaWWW,” created by Pei-Yuan Wei in 1992. ViolaWWW was notable for being the first to support scripting and stylesheets. It eventually faded into obscurity as other browsers gained popularity, but its influence on the development of web browsers is a part of internet history that is not as widely recognized.</p>\n\n\n\n\n<p style=\"line-height:1.5;\">And that’s all! Thank you for reading the Collective! If you have something you would like us to feature in the next edition, simply reply to this email!</p>\n\n\n\n\n<p>Codrops is proudly sponsored by <a href=\"https://www.keycdn.com/\"><strong>KeyCDN</strong></a><strong>, the high performance content delivery network that has been built for the future.</strong></p>\n\n\n\n<p><br /><br /><br /><br /><a href=\"https://tympanus.net/codrops/collective/collective-794-2/\">Source link </a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747690,
+			"parentId": 0,
+			"url": "https://washingtonread.com/collective-794/",
+			"author": {},
+			"date": "2023-12-02T00:43:41.000Z",
+			"content": "<p><br /><br /><br /><br /></p>\n\n<a href=\"https://codrops.com\"></a>\n<img width=\"660\" style=\"border:0;width:660px;height:auto;\" alt=\"Collective 790\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/c373ffd8-3fdf-350e-d17c-515790333211.jpeg\" />\n\n<p></p><h2>Welcome to Collective #794</h2>\n\n\n\n\n<p>AI-powered tools are really taking off right now. The speed of development is quite insane. Kind of feels like a revolution, doesn’t it? </p>\n<p>But, let’s be real, it’s removing/changing jobs, and it’s happening super fast. Some say becoming a Machine Learning Engineer is the move. Someone’s gotta take care of the AI, right? Or, maybe not?</p>\n<p>Here’s the scoop: AI might take over the world, but it might never quite get CSS. Who really does? ????</p>\n\n\n\n\n<p><strong>Anyway, let’s learn, no matter what!</strong></p>\n\n\n\n\n<p>Automate your builds and deployment so you can focus on your code. Build and host static site generators &amp; single page applications with Deploy Now.</p>\n<p><a href=\"https://srv.buysellads.com/ads/long/x/THXPVMDHTTTTTTFAA3QNPTTTTTTP5Y4RKWTTTTTTTTHHV7VTTTTTT2PE22AWCSBLP7EUCAZMKHPWPIINV2SCVLB757RT\">Find out more</a> ????</p>\n\n\n\n<img height=\"0\" width=\"0\" src=\"https://namecheap.pxf.io/i/1284512/1130470/5618\" border=\"0\" alt=\"5618\" />\n\n\n\n\n\n\n\n\n\n\n\n\n<p>Now you can sketch up your UI and convert it into code. Well, kind of. Is this the beginning of the end? Check out <a href=\"https://twitter.com/multikev/status/1724908185361011108\">some more examples</a> that went viral.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>An app that converts a screenshot to HTML/Tailwind CSS. It uses GPT-4 Vision to generate the code, and DALL-E 3 to generate similar looking images. By Abi Raja.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>????️‍♀️ <a href=\"https://www.eff.org/deeplinks/2023/11/debunking-myth-anonymous-data\">Debunking the Myth of “Anonymous” Data</a></h3>\n\n\n\n\n<p>This article discusses the pervasive digital recording and storage of personal information, the challenges of anonymizing data, and the risks of location surveillance, emphasizing the need for user privacy protection and informed consent in data collection practices.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://github.com/cbh123/narrator\">David Attenborough narrates your life.</a></h3>\n\n\n\n\n<p>Charlie Holtz has utilized GPT-4-vision and a python script from ElevenLabs to produce an impressive narration of himself in the style of a nature documentary, as if voiced by David Attenborough. </p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://vercel.com/blog/how-to-scale-a-large-codebase\">How to scale a large codebase</a></h3>\n\n\n\n\n<p>Lee Robinson from Vercel outlines tips for scaling large software projects, covering monorepos, feature flags, incremental builds, skew protection, and adopting new technology. He recommends using tools like Turborepo and Vercel to streamline workflows.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://trstringer.com/oss-compensation-broken/\">The Lack of Compensation in Open Source Software is Unsustainable</a></h3>\n\n\n\n\n<p>Thomas Stringer discusses the challenges of open source software maintenance, including lack of compensation for contributors. He proposes a model tying compensation to contributions and usage, and suggests companies contribute money and developer time to support the ecosystem.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>With this you can extend built-in Three.js materials to support infinite, non-repeating, seamless texture tiling. By Casey Primozic.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>This article By Ahmad Shadeed explores the implementation of native CSS nesting in major browsers, detailing its benefits for front-end developers, providing examples, and addressing potential bugs while emphasizing its potential to enhance CSS writing.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>????‍???? <a href=\"https://www.zachleat.com/web/a-taxonomy-of-web-component-types/\">An Attempted Taxonomy of Web Components</a></h3>\n\n\n\n\n<p>Zack Leatherman discusses his changing views on creating web components. He describes different open-source HTML components, their sizes, CSS, and JavaScript details, and reflects on what he’s learned. He also discusses the nuances of Shadow DOM and the complexities of the web component landscape.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<h3>???? <a href=\"https://simonwillison.net/2023/Nov/15/gpts/\">Exploring GPTs: ChatGPT in a trench coat?</a></h3>\n\n\n\n\n<p>Last week’s OpenAI DevDay introduced GPTs, allowing ChatGPT Plus users to create custom chatbots with unique configurations. Simon Willison summarizes the interesting bits.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<p>The Chrome for Developers team showcases what the web can do in this interactive card experience.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n<p></p><h4>Behind the Pixel ????</h4>\n\n\n<a href=\"https://edesigninteractive.com/cpg-marketing-services/\"><img width=\"660\" style=\"border:0;width:660px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/35de57b0-776a-38fa-2c34-a39956ea01d6.gif\" /></a>\n\n\n<p><em>In this section, Manoela examines small design and animation details and takes a peek under the hood to see how they are accomplished.</em></p>\n\n\n\n\n<p>I really love curved text animations. This one is a really cute one and it’s quite simple to achieve. eDesign Interactive has this nice animation on their marketing page and you can see the curved text being hidden on scroll. How did they do it? </p>\n<p>When we inspect, we can see that there is a <em>textPath</em> which is curved along the path that follows:</p>\n\n\n<img width=\"564\" style=\"width:564px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/c01bf9c1-8b16-6460-89d0-f8d162180434.png\" />\n\n\n<p>The path has a 15px stroke <em>in the background color</em>. By animating the stroke-dashoffset, the line animation covers the curved text. It’s a clever technique!</p>\n\n\n\n<p></p><h4>Video Vault</h4>\n\n\n\n\n\n\n\n\n\n\n\n<a href=\"https://dribbble.com/shots/23039572-Landing-Page\"><img width=\"660\" style=\"border:0;width:660px;height:auto;\" alt=\"\" src=\"https://mcusercontent.com/10ffec652b0f54fe5d8682ac0/images/c0c5c637-f0ad-f44b-fb05-c0096ff86ce4.gif\" /></a>\n\n\n<h3><a href=\"https://dribbble.com/shots/23039572-Landing-Page\">Animation Spotlight: Landing Page</a></h3>\n\n\n\n\n<p>Desire Creative Agency’s Dribbble shot displays a super nice design and interaction details, complete with a variety of unique hover effects. The landing page offers a refreshing look and showcases thoughtful micro-animations. The layout was designed by Sonya Baikova and the motion by Marina Shevlyakova.</p>\n\n\n\n\n\n\n\n\n\n\n\n\n<p></p><h3>Demo Corner</h3>\n\n\n\n<p></p><h3>❓Did you know that…</h3>\n\n\n\n\n<p>…in the early days of the World Wide Web, the concept of web browsers was not as standardized as it is today. Before the dominance of the browsers we know today, there were several lesser-known ones. One such early browser was “ViolaWWW,” created by Pei-Yuan Wei in 1992. ViolaWWW was notable for being the first to support scripting and stylesheets. It eventually faded into obscurity as other browsers gained popularity, but its influence on the development of web browsers is a part of internet history that is not as widely recognized.</p>\n\n\n\n\n<p style=\"line-height:1.5;\">And that’s all! Thank you for reading the Collective! If you have something you would like us to feature in the next edition, simply reply to this email!</p>\n\n\n\n\n<p>Codrops is proudly sponsored by <a href=\"https://www.keycdn.com/\"><strong>KeyCDN</strong></a><strong>, the high performance content delivery network that has been built for the future.</strong></p>\n\n\n\n<p><br /><br /><br /><br /><br /><br /><a href=\"https://tympanus.net/codrops/collective/collective-794-2/\">Source link </a></p>\n                            \n                                    \n                                    \n\t<h2>Continue Reading</h2>\n\t\t<a href=\"https://washingtonread.com/how-to-use-the-file-system-in-node-js-sitepoint/\"><span>Previous</span> <span>Previous post:</span> <span></span></a><h4><a href=\"https://washingtonread.com/how-to-use-the-file-system-in-node-js-sitepoint/\"><span>How to use the File System in Node.js — SitePoint</span></a></h4><a href=\"https://washingtonread.com/how-to-use-the-file-system-in-node-js-sitepoint/\"><span><img width=\"150\" height=\"150\" src=\"https://washingtonread.com/wp-content/uploads/2023/11/How-to-use-the-File-System-in-Nodejs-%E2%80%94-SitePoint-150x150.jpg\" alt=\"\" /></span></a><a href=\"https://washingtonread.com/aligning-teams-for-effective-user-onboarding-success-sitepoint/\"><span>Next</span> <span>Next post:</span> <span></span></a><h4><a href=\"https://washingtonread.com/aligning-teams-for-effective-user-onboarding-success-sitepoint/\"><span>Aligning Teams for Effective User Onboarding Success — SitePoint</span></a></h4><a href=\"https://washingtonread.com/aligning-teams-for-effective-user-onboarding-success-sitepoint/\"><span><img width=\"150\" height=\"150\" src=\"https://washingtonread.com/wp-content/uploads/2023/12/Aligning-Teams-for-Effective-User-Onboarding-Success-%E2%80%94-SitePoint-150x150.jpg\" alt=\"\" /></span></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747716,
+			"parentId": 0,
+			"url": "https://evolucioncreativa.website/collective-794/",
+			"author": {},
+			"date": "2023-12-02T02:40:20.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747808,
+			"parentId": 0,
+			"url": "https://swissvolcano.com/collective-794/",
+			"author": {},
+			"date": "2023-12-02T06:58:23.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747819,
+			"parentId": 0,
+			"url": "https://siliconhype.com/collective-794/",
+			"author": {},
+			"date": "2023-12-02T08:05:53.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1747823,
+			"parentId": 0,
+			"url": "https://moneymanages.com/collective-794/",
+			"author": {},
+			"date": "2023-12-02T08:24:22.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1748045,
+			"parentId": 0,
+			"url": "https://techtoguide.com/collective-794/",
+			"author": {},
+			"date": "2023-12-02T22:36:19.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1748313,
+			"parentId": 0,
+			"url": "https://abuspeaks.com/collective-794/",
+			"author": {},
+			"date": "2023-12-03T22:38:50.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1756772,
+			"parentId": 0,
+			"url": "https://rssfeeds.cloudsite.builders/2023/12/20/chris-corner-very-simple-web-components/",
+			"author": {
+				"name": "RSSFeeds Cloud",
+				"url": "https://rssfeeds.cloudsite.builders/author/rssfeeds/"
+			},
+			"date": "2023-12-20T16:21:57.000Z",
+			"content": "<p>Let’s do a Web Components issue this week. We gotta do it. As <a href=\"https://cloudfour.com/is/scott/\">Scott Vandehey</a> says: <a href=\"https://cloudfour.com/thinks/html-web-components-are-having-a-moment/\">HTML Web Components Are Having a Moment.</a> Scott links to a pretty healthy stew of other people’s writing where they have their own ah-ha moments where they can picture the usefulness of native Web Components in their own work. </p>\n<p>I can feel it, as this has been creeping up on me as well. Here’s a line of thinking that might get you there:</p>\n<ul><li>You have a bit of HTML</li>\n<li>You want to apply some functionality to it</li>\n<li>So wrap it in a Web Component</li>\n</ul><p>Honestly I think you can compare it to jQuery style thinking. “Find something; do something” — except you’ve already found it, you just need to do it. </p>\n<p>Now, before I seem to be reductionist, Web Components can get a lot more complicated. You can opt-in to the Shadow DOM approach, which unlocks slots and more complex templating, as well as true encapsulation and such. But you don’t <em>have</em> to do that, you can level up to that as needed. The very <em>basic</em> use-case (and wow isn’t the web good at this?!) is useful, powerful, needs limited boilerplate, and no libraries or build steps. </p>\n<p>This example is, uhh, <a href=\"https://codepen.io/chriscoyier/pen/GRzOZXq\">pretty simple</a>, but it’s an example of how my mind has flipped a bit. I wanted to make a box you could resize, that’s exactly 9:16 aspect ratio, and it would tell you the pixel dimensions. I need a little bit of HTML, a little bit of CSS, and a little bit of JavaScript. I don’t <em>need</em> to do that as a Web Component, but doing so is barely any more work, and helps more tightly couple the HTML and JavaScript in a way that really helps communicate intention. </p>\n<a href=\"https://codepen.io/chriscoyier/pen/GRzOZXq?editors=1010\"><img width=\"1024\" height=\"677\" src=\"https://rssfeeds.cloudsite.builders/wp-content/uploads/2023/12/Screenshot-2023-12-12-at-1.53.15E280AFPM-1024x677-1.png\" alt=\"Screenshot 2023 12 12 at 1.53.15E280AFPM 1024x677 1\" title=\"Chris’ Corner: Very Simple Web Components 1\" /></a><p>I don’t have any grand plans, but I could now easily make this re-usable across, well, anywhere, by making the JavaScript importable and documenting the intended HTML to use. I should probably bundle the CSS too, but that’s a story for another day.</p>\n<p>Let’s keep this whole “Web Components can be pretty darn simple” train rolling a little bit. In fact, I think it was Jim Nielsen who kicked the first domino on Web Components lately getting people thinking about them differently in <a href=\"https://blog.jim-nielsen.com/2023/web-components-icon-galleries/\">Using Web Components on My Icon Galleries Websites</a>.</p>\n<p>Imagine a grid of icons. Jim wanted on-page controls, in the form of a <code></code> to control their size. By using a web component, he can insert that input only when the JavaScript executes, which is ideal. Then all the event listening on that range slider is also all bundled into that web component. All the while, the HTML guts of the web component, which is what will render if JavaScript doesn’t, is still a perfectly serviceable grid of icons. </p>\n<blockquote>\n<p>This is a nice approach (over stringing together a bunch of functions in JS file) because it feels more encapsulated. All related logic and DOM manipulations are “under one roof”. Plus it works as a progressive enhancement: if the JS fails to load (or the user has it disabled) they can still navigate through different pages with lists of icons (and the <code></code> component just works like a <code></code></p>\n). And if JS works, the <code></code> component acts like a <code>\n with interactive super powers layered in.\n\n</code><p><code>Dave Rupert’s <a href=\"https://github.com/davatron5000/fit-vids\">Web Component version of FitVids</a> is even more straightforward. You probably have videos on your sites that are <code></code>s of stuff like YouTube and Vimeo. Just wrap ’em in <code></code> and call it a day. </code></p><code>\n</code><pre><code><code>\n\n</code></code></pre><code>\n</code><p><code>If the JavaScript doesn’t load, all good, video is still there. </code></p><code>\n</code><p><code>More, if somehow, say via a <code>fetch</code> request or the like, more videos get injected onto the page, there is no need to re-call any JavaScript to make these work. The way <code>connectedCallback</code> works they’ll just <em>do their thing</em> automatically when they arrive in the DOM.</code></p><code>\n</code><p><code>I’ll say I’m a fan of the <a href=\"https://frontendmasters.com/blog/light-dom-only/\">“Light DOM Only” approach to Web Components</a>. But there are some relatively big things you give up when you don’t use the Shadow DOM. Namely: slots. Slots is a pretty sweet mechanism for taking the “guts” HTML of a Web Component and <em>slotting</em> it properly into a likely-more-complicated bit of template HTML. This means that your fallback HTML can be simpler and possibly more appropriate. </code></p><code>\n</code><p><code>Cory LaViska <a href=\"https://www.abeautifulsite.net/posts/dynamic-slots/\">explains it well</a>, here’s some <em>usage:</em></code></p><code>\n</code><pre><code><code>\n  Click me\n  \n</code></code></pre><code>\n</code><p><code>Which gets smushed with:</code></p><code>\n</code><pre><code><code></code></code></pre><code>\n</code><p><code>You can imagine how the <code></code> there makes it into the <code></code> with a matching <code>name</code>. And then rest of the content goes into the <em>default slot.</em></code></p><code>\n</code><p><code>Cory’s article is actually about extending this concept and building out HTML with as many slots as you need, as powered by attributes. <a href=\"https://www.abeautifulsite.net/posts/dynamic-slots/\">It’s clever go read it.</a></code></p><code>\n</code><p><code>Speaking of parameters, that’s an approach that some web components take. Rather than any <em>guts</em> HTML at all, you say what you want of the component via attributes on the element. That’s a rather JavaScript-framework-y way of doing things. <a href=\"https://www.npmjs.com/package/lite-youtube-embed\">An example of this is <code></code></a> which you use entirely with attributes:</code></p><code>\n</code><pre><code><code></code></code></pre><code>\n</code><p><code>That doesn’t prescribe light or shadow DOM, but it does mean that no-JavaScript means nothing rendered at all. </code></p><code>\n</code><p><code>Unless you’ve figured out some kind of server-side rendering, which is another whole bag of peanuts. </code></p><code>\n</code><p><code>So we’ve covered lots of options already so far:</code></p><code>\n</code><code>All HTML needed provided in guts / Some HTML provided (likely fallback or designed for slots) / No HTML provided\nLight DOM / Shadow DOM\nElegant Fallback / Some Fallback / No Fallback\nAttribute-Heavy / Attribute-Light / No Attributes\n</code><p><code>And there are more</code></p><code>\n</code><code>Use Framework / No Framework\nLazy Load / Eager Load\nClient-Side Render / Server-Side Render (via Build Step)\nStyles via external stylesheet / Styles baked into JavaScript / No Styles\n</code><p><code>The list could go on. </code></p><code>\n</code><p><code>Zach Leatherman attempted to simplify the taxonomy down to <a href=\"https://www.zachleat.com/web/a-taxonomy-of-web-component-types/\">HTML Web Components and JavaScript Web Components</a>. I think that’s smart to try to smash down the complexity here, but also think that’s maybe too far. Someone could probably make a decision tree that paints a middle ground taxonomy. </code></p><code>\n\n</code></blockquote>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1756575,
+			"parentId": 0,
+			"url": "https://soatdev.com/chris-corner-very-simple-web-components/",
+			"author": {},
+			"date": "2023-12-20T17:04:17.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1756624,
+			"parentId": 0,
+			"url": "https://apkhore.com/2023/12/20/chris-nook-very-easy-internet-parts/",
+			"author": {
+				"name": "admin",
+				"url": "https://apkhore.com/author/admin/"
+			},
+			"date": "2023-12-20T21:24:21.000Z",
+			"content": "<p> <br /></p>\n<p>Let’s do a Internet Parts factor this week. We gotta do it. As <a href=\"https://cloudfour.com/is/scott/\">Scott Vandehey</a> says: <a href=\"https://cloudfour.com/thinks/html-web-components-are-having-a-moment/\">HTML Internet Parts Are Having a Second.</a> Scott hyperlinks to a horny wholesome stew of people’s writing the place they have got their very own ah-ha moments the place they are able to image the usefulness of local Internet Parts in their very own paintings. </p>\n<p>I will be able to really feel it, as this has been creeping up on me as smartly. Right here’s a line of pondering that would possibly get you there:</p>\n<ul><li>You’ve just a little of HTML</li>\n<li>You need to use some capability to it</li>\n<li>So wrap it in a Internet Part</li>\n</ul><p>In truth I feel you’ll evaluate it to jQuery taste pondering. “To find one thing; do one thing” — with the exception of you’ve already discovered it, you simply wish to do it. </p>\n<p>Now, ahead of I appear to be reductionist, Internet Parts can get much more confusing. You’ll opt-in to the Shadow DOM manner, which unlocks slots and extra advanced templating, in addition to true encapsulation and such. However you don’t <em>have</em> to do this, you’ll degree as much as that as wanted. The very <em>fundamental</em> use-case (and wow isn’t the internet excellent at this?!) comes in handy, tough, wishes restricted boilerplate, and no libraries or construct steps. </p>\n<p>This situation is, uhh, <a href=\"https://codepen.io/chriscoyier/pen/GRzOZXq\">beautiful easy</a>, but it surely’s an instance of the way my thoughts has flipped just a little. I sought after to make a field you need to resize, that’s precisely 9:16 side ratio, and it might inform you the pixel dimensions. I would like just a little little bit of HTML, just a little little bit of CSS, and just a little little bit of JavaScript. I don’t <em>want</em> to do this as a Internet Part, however doing so is simply any longer paintings, and is helping extra tightly couple the HTML and JavaScript in some way that actually is helping keep in touch aim. </p>\n<a href=\"https://codepen.io/chriscoyier/pen/GRzOZXq?editors=1010\"><img width=\"1024\" height=\"677\" src=\"https://blog.codepen.io/wp-content/uploads/2023/12/Screenshot-2023-12-12-at-1.53.15%E2%80%AFPM-1024x677.png\" alt=\"\" /></a><p>I don’t have any grand plans, however I may now simply make this re-usable throughout, smartly, anyplace, through making the JavaScript importable and documenting the supposed HTML to make use of. I will have to most probably package the CSS too, however that’s a tale for any other day.</p>\n<p>Let’s stay this complete “Internet Parts can also be beautiful darn easy” teach rolling just a little bit. In reality, I feel it used to be Jim Nielsen who kicked the primary domino on Internet Parts in recent times getting folks fascinated by them otherwise in <a href=\"https://blog.jim-nielsen.com/2023/web-components-icon-galleries/\">The use of Internet Parts on My Icon Galleries Internet sites</a>.</p>\n<p>Consider a grid of icons. Jim sought after on-page controls, within the type of a <code>&lt;enter sort=\"vary\"&gt;</code> to keep an eye on their dimension. Via the usage of a internet element, he can insert that enter best when the JavaScript executes, which is perfect. Then all of the tournament listening on that vary slider may be all bundled into that internet element. All of the whilst, the HTML guts of the internet element, which is what’s going to render if JavaScript doesn’t, continues to be a wonderfully serviceable grid of icons. </p>\n<blockquote>\n<p>This can be a great manner (over stringing in combination a number of purposes in JS document) as it feels extra encapsulated. All similar good judgment and DOM manipulations are “beneath one roof”. Plus it really works as a modern enhancement: if the JS fails to load (or the person has it disabled) they are able to nonetheless navigate via other pages with lists of icons (and the <code>&lt;icon-list&gt;</code> element simply works like a <code>&lt;div&gt;</code>). And if JS works, the <code>&lt;icon-list&gt;</code> element acts like a <code>&lt;div&gt;</code> with interactive tremendous powers layered in.</p>\n</blockquote>\n<p>Dave Rupert’s <a href=\"https://github.com/davatron5000/fit-vids\">Internet Part model of FitVids</a> is much more easy. In case you have movies in your websites which can be <code>&lt;iframe&gt;</code>s of stuff like YouTube and Vimeo. Simply wrap ’em in <code>&lt;fit-vids&gt;</code> and make contact with it an afternoon. </p>\n<pre><code>&lt;!-- import customized part --&gt;\n&lt;script sort=\"module\" src=\"fit-vids.js\"&gt;&lt;/script&gt;\n\n&lt;!-- wrap embeds in fit-vids customized part --&gt;\n&lt;fit-vids&gt;\n  &lt;iframe src=\"http://youtube.com?v=123\"&gt;&lt;/iframe&gt;\n&lt;/fit-vids&gt;</code></pre>\n<p>If the JavaScript doesn’t load, all excellent, video continues to be there. </p>\n<p>Extra, if come what may, say by means of a <code>fetch</code> request or the like, extra movies get injected onto the web page, there’s no wish to re-call any JavaScript to make those paintings. The best way <code>connectedCallback</code> works they’ll simply <em>do their factor</em> mechanically once they arrive within the DOM.</p>\n<p>I’ll say I’m keen on the <a href=\"https://frontendmasters.com/blog/light-dom-only/\">“Mild DOM Best” solution to Internet Parts</a>. However there are some rather large stuff you surrender whilst you don’t use the Shadow DOM. Specifically: slots. Slots is a horny candy mechanism for taking the “guts” HTML of a Internet Part and <em>slotting</em> it correctly right into a likely-more-complicated little bit of template HTML. Which means your fallback HTML can also be more practical and in all probability extra suitable. </p>\n<p>Cory LaViska <a href=\"https://www.abeautifulsite.net/posts/dynamic-slots/\">explains it smartly</a>, right here’s some <em>utilization:</em></p>\n<pre><code>&lt;my-button&gt;\n  Click on me\n  &lt;img slot=\"icon\" src=\"...\" alt=\"...\"&gt;\n&lt;/my-button&gt;</code></pre>\n<p>Which will get smushed with:</p>\n<pre><code>&lt;template&gt;\n  #shadow-root\n    &lt;button sort=\"button\"&gt;\n      &lt;span magnificence=\"icon\"&gt;\n        &lt;slot title=\"icon\"&gt;&lt;/slot&gt;\n      &lt;/span&gt;\n\n      &lt;span magnificence=\"label\"&gt;\n        &lt;slot&gt;&lt;/slot&gt;\n      &lt;/span&gt;\n    &lt;/button&gt;\n&lt;/template&gt;</code></pre>\n<p>You’ll consider how the <code>&lt;img&gt;</code> there makes it into the <code>&lt;slot&gt;</code> with an identical <code>title</code>. After which remainder of the content material is going into the <em>default slot.</em></p>\n<p>Cory’s article is in fact about extending this idea and construction out HTML with as many slots as you want, as powered through attributes. <a href=\"https://www.abeautifulsite.net/posts/dynamic-slots/\">It’s artful cross learn it.</a></p>\n<p>Talking of parameters, that’s an manner that some internet parts take. Slightly than any <em>guts</em> HTML in any respect, you assert what you need of the element by means of attributes at the part. That’s a moderately JavaScript-framework-y means of doing issues. <a href=\"https://www.npmjs.com/package/lite-youtube-embed\">An instance of that is <code>&lt;lite-youtube&gt;</code></a> which you utilize completely with attributes:</p>\n<pre><code>&lt;lite-youtube \n  videoid=\"ogfYd705cRs\" \n  playlabel=\"Play: Keynote (Google I/O '18)\"&gt;&lt;/lite-youtube&gt;</code></pre>\n<p>That doesn’t prescribe gentle or shadow DOM, but it surely does imply that no-JavaScript method not anything rendered in any respect. </p>\n<p>Until you’ve discovered some more or less server-side rendering, which is any other complete bag of peanuts. </p>\n<p>So we’ve coated numerous choices already thus far:</p>\n<ol><li>All HTML wanted supplied in guts / Some HTML supplied (doubtless fallback or designed for slots) / No HTML supplied</li>\n<li>Mild DOM / Shadow DOM</li>\n<li>Sublime Fallback / Some Fallback / No Fallback</li>\n<li>Characteristic-Heavy / Characteristic-Mild / No Attributes</li>\n</ol><p>And there are extra</p>\n<ol start=\"5\"><li>Use Framework / No Framework</li>\n<li>Lazy Load / Keen Load</li>\n<li>Consumer-Facet Render / Server-Facet Render (by means of Construct Step)</li>\n<li>Kinds by means of exterior stylesheet / Kinds baked into JavaScript / No Kinds</li>\n</ol><p>The listing may cross on. </p>\n<p>Zach Leatherman tried to simplify the taxonomy all the way down to <a href=\"https://www.zachleat.com/web/a-taxonomy-of-web-component-types/\">HTML Internet Parts and JavaScript Internet Parts</a>. I feel that’s sensible to take a look at to break down the complexity right here, but additionally assume that’s perhaps too a ways. Somebody may most probably come to a decision tree that paints a center flooring taxonomy. </p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1758626,
+			"parentId": 0,
+			"url": "https://exoticdigitalaccess.co.ke/chris-corner-very-simple-web-components/",
+			"author": {},
+			"date": "2023-12-26T14:06:42.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1761106,
+			"parentId": 0,
+			"url": "https://dinezh.com/chris-corner-very-simple-web-components/",
+			"author": {},
+			"date": "2023-12-31T21:39:13.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1773218,
+			"parentId": 0,
+			"url": "https://naildrivin5.com/blog/2024/01/24/web-components-in-earnest.html",
+			"author": {},
+			"date": "2024-01-27T06:30:59.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1774741,
+			"parentId": 0,
+			"url": "https://jakelazaroff.com/words/the-web-component-success-story/",
+			"author": {},
+			"date": "2024-01-30T12:55:47.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1779746,
+			"parentId": 0,
+			"url": "https://som2nypost.com/?p=31338",
+			"author": {},
+			"date": "2024-02-11T15:35:15.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1781236,
+			"parentId": 0,
+			"url": "https://scottjehl.com/posts/composition/",
+			"author": {},
+			"date": "2024-02-15T07:41:01.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1741683,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-110345656269110489",
+			"date": "2023-11-20T15:42:05.000Z",
+			"author": {
+				"name": "Nick Tune ????????",
+				"url": "https://hachyderm.io/@nick_tune",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8710dc39ec73325afe625c25356c5887cd4ebad7c7f26cb76a23663d4077b9e9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741684,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109740646075567001",
+			"date": "2023-11-20T15:42:05.000Z",
+			"author": {
+				"name": "Apple Annie :prami:",
+				"url": "https://social.lol/@anniegreens",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/489bdd3b4c09425455f96e3e0bff2f6090dc37be48318700d48e474908247477.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741685,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109310002203135908",
+			"date": "2023-11-20T15:42:08.000Z",
+			"author": {
+				"name": "Dan Jacob",
+				"url": "https://masto.ai/@danjac",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0c2cba37b096d7046a5e964ccbcd8e392547a4200b79e6b0201acf725e8a22bf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741686,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109292527270971438",
+			"date": "2023-11-20T15:42:08.000Z",
+			"author": {
+				"name": "jalciné's job hunting but also",
+				"url": "https://todon.eu/@jalcine",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/26db4c3cce93d4ffaeda0286b51dc4d5532963f0836541b031567c33cff06d1d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741693,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109874328450045181",
+			"date": "2023-11-20T16:17:18.000Z",
+			"author": {
+				"name": "Andy Davies",
+				"url": "https://hachyderm.io/@andydavies",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741694,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-111436755568426818",
+			"date": "2023-11-20T16:17:20.000Z",
+			"author": {
+				"name": "Evil Jim O’Donnell",
+				"url": "https://mastodon.social/@eatyourgreens",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9dce1bd288c9de59add02b83c4e6eddd2a4221629dee0224792c6dbd1bed8cb0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741695,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109354246570539845",
+			"date": "2023-11-20T16:17:23.000Z",
+			"author": {
+				"name": "Robin Rendle",
+				"url": "https://sfba.social/@fonts",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5c2c9249e4ef43b6577724b5b6b27002abde6910e151d24266848597914a09a4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741706,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109384698646087680",
+			"date": "2023-11-20T16:49:33.000Z",
+			"author": {
+				"name": "Swift",
+				"url": "https://merveilles.town/@swift",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c276f5310125993a068881d842e34ec94ca101a237a02b1ca14042c91cf957b3.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741707,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109293803416527033",
+			"date": "2023-11-20T16:49:34.000Z",
+			"author": {
+				"name": "Jakub Iwanowski :bash:",
+				"url": "https://fosstodon.org/@dzajew",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/05f8eacfa6bcdb0aa1201024c14ceca66589b63d1aca917edce791309d88743a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741708,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109306982482304555",
+			"date": "2023-11-20T16:49:36.000Z",
+			"author": {
+				"name": "Paul Mason",
+				"url": "https://mastodon.social/@paulhmason",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/86be902538356f8147153e1c2e0981dba447cd0fdf33f670b10edd9e0c2a9685.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741784,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109352939518629968",
+			"date": "2023-11-20T17:51:21.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/262987ea3a44345cb221531f5d20fc5b39871a78db811fc5ac990a130fde5c7a.gif"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741905,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109306986631433874",
+			"date": "2023-11-20T20:59:12.000Z",
+			"author": {
+				"name": "Fabrice Gangler",
+				"url": "https://mastodon.social/@dzc34",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ebc04aadf11a47d140faaba8f7b4d810a9a3337270ef97a1b4886c6e16ece6a8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741932,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109322202847234717",
+			"date": "2023-11-20T22:20:35.000Z",
+			"author": {
+				"name": "Joe Gaffey",
+				"url": "https://mastodon.social/@joegaffey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7da57e900fa8f69ececb9ec3106cb541a15b1025b16434c14646b5df00229f7b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1742099,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109376002033840591",
+			"date": "2023-11-21T10:03:04.000Z",
+			"author": {
+				"name": "Jeff",
+				"url": "https://hachyderm.io/@jeffinmotion",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0dac888b4be71a99339cc0f561af2161a28b7e8756aff159452d08e86e41c5d7.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1742236,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#favorited-by-109502071166779293",
+			"date": "2023-11-21T14:01:56.000Z",
+			"author": {
+				"name": "Sheldon Chang ????????",
+				"url": "https://sfba.social/@sysop408",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5974acf423b2a1093352f98036a3045414351e2226b310a35ceecde4e96e7860.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747582,
+			"url": "https://fediverse.zachleat.com/@zachleat/111506784504971078#favorited-by-109295351856409569",
+			"date": "2023-12-01T19:51:12.000Z",
+			"author": {
+				"name": "Ryuno-Ki",
+				"url": "https://layer8.space/@RyunoKi",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/26dacb234de95e11102acdc9db28142662f350d6cfc7b1fc671b2e07affe2173.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1741687,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#reblogged-by-109295087214311131",
+			"date": "2023-11-20T15:42:11.000Z",
+			"author": {
+				"name": "Noah Liebman",
+				"url": "https://mastodon.social/@noleli",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/376eaffd57dfe1e7e31d7569386db8a545d2f5533207014b25361ce54ec5b62d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741688,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#reblogged-by-110345656269110489",
+			"date": "2023-11-20T15:42:12.000Z",
+			"author": {
+				"name": "Nick Tune ????????",
+				"url": "https://hachyderm.io/@nick_tune",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8710dc39ec73325afe625c25356c5887cd4ebad7c7f26cb76a23663d4077b9e9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741689,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#reblogged-by-109740646075567001",
+			"date": "2023-11-20T15:42:13.000Z",
+			"author": {
+				"name": "Apple Annie :prami:",
+				"url": "https://social.lol/@anniegreens",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/489bdd3b4c09425455f96e3e0bff2f6090dc37be48318700d48e474908247477.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741696,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#reblogged-by-111436755568426818",
+			"date": "2023-11-20T16:17:24.000Z",
+			"author": {
+				"name": "Evil Jim O’Donnell",
+				"url": "https://mastodon.social/@eatyourgreens",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9dce1bd288c9de59add02b83c4e6eddd2a4221629dee0224792c6dbd1bed8cb0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741753,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#reblogged-by-109439954069427539",
+			"date": "2023-11-20T17:25:20.000Z",
+			"author": {
+				"name": "The Spicy Web",
+				"url": "https://social.spicyweb.dev/@vanilla",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/00e9899dc95a4df207d1bac960bcd505fbc1a2a18f3eb8a8aa4980595ec33202.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1741906,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#reblogged-by-109306986631433874",
+			"date": "2023-11-20T20:59:13.000Z",
+			"author": {
+				"name": "Fabrice Gangler",
+				"url": "https://mastodon.social/@dzc34",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ebc04aadf11a47d140faaba8f7b4d810a9a3337270ef97a1b4886c6e16ece6a8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1742237,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#reblogged-by-110656903967994170",
+			"date": "2023-11-21T14:01:56.000Z",
+			"author": {
+				"name": "katherine",
+				"url": "https://sunny.garden/@kayserifserif",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/59a482e7bd79bae82cbf5ce33b96eed9d0300703811d55b0b5e551e45871a86d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1742238,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#reblogged-by-111444562975135674",
+			"date": "2023-11-21T14:01:58.000Z",
+			"author": {
+				"name": "Marcelle Rusu",
+				"url": "https://merveilles.town/@marcellerusu",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1742239,
+			"url": "https://fediverse.zachleat.com/@zachleat/111443477528254274#reblogged-by-109286461031266152",
+			"date": "2023-11-21T14:02:05.000Z",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"bookmarks": [
+		{
+			"id": 1740748,
+			"url": "https://adactio.com/links/20645",
+			"date": "2023-11-19T17:04:16.000Z",
+			"author": {
+				"name": "Jeremy Keith",
+				"url": "https://adactio.com/",
+				"avatarUrl": "https://avatars.webmention.io/adactio.com/24f33c5820046ebbcb429f78bb988fc1fa9f97d35247e0b72b3fb5ff888da633.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

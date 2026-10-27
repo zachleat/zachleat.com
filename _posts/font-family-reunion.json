@@ -1,0 +1,257 @@
+{
+	"disqus": {
+		"path": "/web/font-family-reunion/",
+		"commentCount": 11,
+		"comments": [
+			{
+				"postId": "1612768738",
+				"parentPostId": null,
+				"date": "2014-09-30T14:54:52Z",
+				"author": "Adrian Simmons",
+				"avatar": "https://www.gravatar.com/avatar/01ed0be0c95aee530286f876746087c3?d=mm&s=60",
+				"message": "<p>This makes me miss <a href=\"http://codestyle.org\" rel=\"nofollow noopener\" title=\"codestyle.org\">codestyle.org</a> with the font survey and font stack builder all the more, still wondering what happened to it, but you can at least get an idea how it was from the wayback machine:<br><a href=\"http://web.archive.org/web/20130115091852/http://www.codestyle.org/\" rel=\"nofollow noopener\" title=\"http://web.archive.org/web/20130115091852/http://www.codestyle.org/\">http://web.archive.org/web/...</a></p>",
+				"replies": [
+					{
+						"postId": "1612940618",
+						"parentPostId": "1612768738",
+						"date": "2014-09-30T16:44:44Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Very cool! According to <a href=\"http://fontfamily.io\" rel=\"nofollow noopener\" title=\"fontfamily.io\">fontfamily.io</a> some of the stacks on <a href=\"http://web.archive.org/web/20130116024541/http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml\" rel=\"nofollow noopener\" title=\"http://web.archive.org/web/20130116024541/http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml\">http://web.archive.org/web/...</a> are very redundant!</p><p>For example, `Cambria, Hoefler Text, Utopia, Liberation Serif, Nimbus Roman No9 L, Times, Times New Roman` should just be <a href=\"http://fontfamily.io/Cambria,Hoefler_Text,serif\" rel=\"nofollow noopener\" title=\"http://fontfamily.io/Cambria,Hoefler_Text,serif\">http://fontfamily.io/Cambri...</a></p>",
+						"replies": [
+							{
+								"postId": "1614408265",
+								"parentPostId": "1612940618",
+								"date": "2014-10-01T10:15:07Z",
+								"author": "Adrian Simmons",
+								"avatar": "https://www.gravatar.com/avatar/01ed0be0c95aee530286f876746087c3?d=mm&s=60",
+								"message": "<p>Redundant? It'll be getting out of date now given the <a href=\"http://codestyle.org\" rel=\"nofollow noopener\" title=\"codestyle.org\">codestyle.org</a> site disappeared from the net in 2013 :)</p><p>The data on installed fonts was also user submitted and thus probably reflected web industry peoples installed fonts more than general public. But at least it was something that allowed an educated guess.</p><p>That said I believe you're shortening that particular stack largely because <a href=\"http://fontfamily.io\" rel=\"nofollow noopener\" title=\"fontfamily.io\">fontfamily.io</a> doesn't include any Linux distributions – Utopia, Liberation and Nimbus Roman families all being associated with Linux desktops in one way or another. Or at least they were a couple of years ago...</p><p>I should say: thanks for building <a href=\"http://fontfamily.io\" rel=\"nofollow noopener\" title=\"fontfamily.io\">fontfamily.io</a>, will definitely be bookmarking it.</p>",
+								"replies": [
+									{
+										"postId": "1614946748",
+										"parentPostId": "1614408265",
+										"date": "2014-10-01T15:20:43Z",
+										"author": "zachleat",
+										"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+										"message": "<p>Thanks for the feedback!</p><p>Good point about Linux. I am in the middle of adding support for Ubuntu 14. Any other distros you think are important?</p><p>Filed here: <a href=\"https://github.com/zachleat/font-family-reunion/issues/12\" rel=\"nofollow noopener\" title=\"https://github.com/zachleat/font-family-reunion/issues/12\">https://github.com/zachleat...</a></p>",
+										"replies": []
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "1615238265",
+				"parentPostId": null,
+				"date": "2014-10-01T18:28:35Z",
+				"author": "Gluten",
+				"avatar": "https://www.gravatar.com/avatar/f4066623969c8f46dbb92b8baebc2641?d=mm&s=60",
+				"message": "<p>I’ve never understood why `Arial, \"Helvetica Neue\", Helvetica, sans-serif;`. It doesn’t make any sense to me: if you really want the available everywhere Arial over any Helvetica variant why specify them at all?</p>",
+				"replies": [
+					{
+						"postId": "1615886464",
+						"parentPostId": "1615238265",
+						"date": "2014-10-02T02:34:48Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Yep, you’re absolutely right. `Arial, Helvetica Neue, Helvetica, sans-serif` should be simplified to `Arial, sans-serif`</p>",
+						"replies": []
+					},
+					{
+						"postId": "1623034821",
+						"parentPostId": "1615238265",
+						"date": "2014-10-07T08:39:07Z",
+						"author": "Adrian Simmons",
+						"avatar": "https://www.gravatar.com/avatar/01ed0be0c95aee530286f876746087c3?d=mm&s=60",
+						"message": "<p>There's often a certain amount of history behind things like this. In this case I suspect it was Arial for windows, Helvetica Neue for osx, Helvetica for classic Mac OS – Arial wasn't always available everywhere. But I suspect the original order would have been \"Helvetica Neue\", Helvetica, Arial, sans-serif; and what you're seeing is a corruption of that to favour Arial.</p><p>And yes its pointless these days. People will often end up forgetting the why and just do things because \"we've always done it this way\" – it's good to question everything ;)</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "1842762959",
+				"parentPostId": null,
+				"date": "2015-02-09T00:03:05Z",
+				"author": "Stephen Nixon",
+				"avatar": "https://www.gravatar.com/avatar/55df4e3bd5e460ae04578850c608cdb4?d=mm&s=60",
+				"message": "<p>I recently made some test pages to see whether an overly-long font stack would have a negative impact on page loading speed. I expected that because the machine has to check each font name in the list until it finds one that is available, it would add extra time. However, the results I got were pretty inconclusive. This may have been because I was testing on a pretty new MacBook Pro (crazy fast), or because I didn't know the exact piece of the timeline to look for. However, the font stack was the only variable that changed in an otherwise very simple page, so the lack of a noticeable delay was surprising.</p><p>@zachleat Do you know if a bloated font stack (such as your Arial, etc example) has any real negative impact, aside from the few extra characters in the CSS?</p>",
+				"replies": [
+					{
+						"postId": "1844327528",
+						"parentPostId": "1842762959",
+						"date": "2015-02-09T20:26:39Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>I’m not sure, but I’m also not sure this is a performance problem you’d see in the real world? How many families did you test? It’s rare to see a stack go into the double digits for number of families.</p><p>In my work I’ve never had to go more than 3 or 4 deep.</p>",
+						"replies": [
+							{
+								"postId": "1844369316",
+								"parentPostId": "1844327528",
+								"date": "2015-02-09T20:48:16Z",
+								"author": "Stephen Nixon",
+								"avatar": "https://www.gravatar.com/avatar/55df4e3bd5e460ae04578850c608cdb4?d=mm&s=60",
+								"message": "<p>I was concerned about a font stack that had 9 fonts in it, so I tested a font stack with 13 fonts vs one with 4. The stack with 4 fonts declared actually does the same thing as the one with 9 fonts, and your tool helped prove that. So, thanks!</p>",
+								"replies": [
+									{
+										"postId": "1844412510",
+										"parentPostId": "1844369316",
+										"date": "2015-02-09T21:10:41Z",
+										"author": "zachleat",
+										"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+										"message": "<p>You’re very welcome!</p>",
+										"replies": []
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 958587,
+			"parentId": 0,
+			"url": "https://twitter.com/pablolarah/status/1341386698723368962",
+			"author": {
+				"name": "Pablo Lara H",
+				"url": "https://twitter.com/pablolarah",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cc15795c7c784037cf207b5de90478ba12da21a45b1742e100d824bbb6efbaa8.png"
+			},
+			"date": "2020-12-22T14:14:45.000Z",
+			"content": "Font Family Reunion\nCompatibility tables for default local fonts by Zach Leatherman\n<a href=\"https://twitter.com/zachleat\">@zachleat</a>    \n\n<a href=\"https://twitter.com/search?q=%23fonts\">#fonts</a> <a href=\"https://twitter.com/search?q=%23localfontscompatibility\">#localfontscompatibility</a> <a href=\"https://twitter.com/search?q=%23localfonts\">#localfonts</a> <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a>  \nMore at :  <a href=\"https://www.zachleat.com/web/font-family-reunion/\">zachleat.com/web/font-famil…</a>  \n\n<a href=\"http://fontfamily.io/\">fontfamily.io</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1936071,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/erikkroes.bsky.social/post/3lxx2sig6ds2z",
+			"author": {
+				"name": "Erik Kroes ????",
+				"url": "https://bsky.app/profile/erikkroes.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ac667c1a94dcbf3ca42841134820e810bfc43a77a6d62caad7c8de4ca5d666c3.jpg"
+			},
+			"date": "2025-09-03T16:35:22.000Z",
+			"content": "too soon\n<a class=\"u-mention\" href=\"https://fontfamily.zachleat.dev/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1936070,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lxx34efuks2q",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-09-03T16:40:53.000Z",
+			"content": "time to lay down .io for sleepy time\n<a class=\"u-mention\" href=\"https://fontfamily.zachleat.dev/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1936072,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lxx7b23azc26",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-09-03T17:55:05.000Z",
+			"content": "haha I dunno about that ????\n<a class=\"u-mention\" href=\"https://fontfamily.zachleat.dev/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1936306,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/jim-nielsen.com/post/3lxzbugqwuc23",
+			"author": {
+				"name": "Jim Nielsen",
+				"url": "https://bsky.app/profile/jim-nielsen.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/97d0dc544897ce93839d47e5f3d2ef2d9ca6383a1cf4b55ad81eefd6dca1d8f2.jpg"
+			},
+			"date": "2025-09-04T13:47:03.000Z",
+			"content": "My parents always told me “should’ve been a subdomain”\n<a class=\"u-mention\" href=\"https://fontfamily.zachleat.dev/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1936305,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lxzc4lqvkk24",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-09-04T13:51:37.000Z",
+			"content": "This is sage, money-saving advice.\n<a class=\"u-mention\" href=\"https://fontfamily.zachleat.dev/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1936012,
+			"url": "https://fediverse.zachleat.com/@zachleat/115141152719307424#favorited-by-109296176354255607",
+			"date": "2025-09-03T16:13:45.000Z",
+			"author": {
+				"name": "Khalid K-1000 ????",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9ae6c7193bbe5c9e9bfabd95d7461588ca47f98c161543d322d9e636f86fd23b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1936110,
+			"url": "https://fediverse.zachleat.com/@zachleat/115141152719307424#favorited-by-109991051044602132",
+			"date": "2025-09-03T22:41:01.000Z",
+			"author": {
+				"name": "d3v1an7",
+				"url": "https://infosec.exchange/@d3v1an7",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fb7a9c5c9b08e92ce912b2bd596ddced9a86f164602bf35a97d13da2b1709b95.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1936209,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lxwz5pesbc2w#liked_by_did:plc:kgrbnhf2bdyk2nbwf44xcxpc",
+			"date": "2025-09-04T02:36:45.000Z",
+			"author": {
+				"name": "Sergio",
+				"url": "https://bsky.app/profile/sergio1984.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f40d7d953064549033957a8cb8d09170fbc17acfc2ad0dd740bcf4ea0662c50e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1936304,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lxwz5pesbc2w#liked_by_did:plc:ln6p42mckoylrkcd3ds6b7vv",
+			"date": "2025-09-04T14:03:09.000Z",
+			"author": {
+				"name": "Jim Nielsen",
+				"url": "https://bsky.app/profile/jim-nielsen.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/97d0dc544897ce93839d47e5f3d2ef2d9ca6383a1cf4b55ad81eefd6dca1d8f2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1936309,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lxwz5pesbc2w#liked_by_did:plc:bu7v45rgnwlim5dgvxuryhyg",
+			"date": "2025-09-04T14:29:48.000Z",
+			"author": {
+				"name": "Adrian A. Lorenzana",
+				"url": "https://bsky.app/profile/adrianlorenzana.ca",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f42894299e7424c83561fa882b8787d0c15cdd2da4ce7ceb9eac10f9862abead.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

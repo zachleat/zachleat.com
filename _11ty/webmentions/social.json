@@ -6881,8 +6881,8 @@
 			"type": "entry",
 			"author": {
 				"type": "card",
-				"name": "Dan from the MUniverse",
-				"photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:by37yibrnecwxwjpfrmyrfhx/bafkreihdlme56tlawy5dpvzo4mvnzass4nbjviqx4tzth7hneudxfjho7a",
+				"name": "Danny Wildflower",
+				"photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:by37yibrnecwxwjpfrmyrfhx/bafkreie25zycv2gc5a2bhby3vw3i4fg6ymqd2f3oqiqrwstuks7tp3p7wm",
 				"url": "https://bsky.app/profile/dan.mu.social"
 			},
 			"url": "https://bsky.app/profile/dan.mu.social/post/3mxugwqd5pk2c",
@@ -15622,7 +15622,7 @@
 			"author": {
 				"type": "card",
 				"name": "alcinnz",
-				"photo": "https://fediverse.zachleat.com/avatars/original/missing.png",
+				"photo": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/417/590/286/305/365/original/5aec31f73a8f0546.png",
 				"url": "https://floss.social/@alcinnz"
 			},
 			"url": "https://fediverse.zachleat.com/@zachleat/117440204407948414#reblogged-by-109417590286305365",
@@ -15871,8 +15871,8 @@
 			},
 			"images": [
 				{
-					"thumb": "https://cdn.masto.host/fediversezachleatcom/cache/media_attachments/files/117/441/154/981/219/926/small/1296c0d8f582b05f.png",
-					"url": "https://cdn.masto.host/fediversezachleatcom/cache/media_attachments/files/117/441/154/981/219/926/original/1296c0d8f582b05f.png",
+					"thumb": "https://cdn.masto.host/fediversezachleatcom/cache/media_attachments/files/117/441/154/981/219/926/small/81edbadf82efde15.png",
+					"url": "https://cdn.masto.host/fediversezachleatcom/cache/media_attachments/files/117/441/154/981/219/926/original/81edbadf82efde15.png",
 					"alt": "Film poster for the movie “300”"
 				}
 			],
@@ -15909,8 +15909,8 @@
 			},
 			"images": [
 				{
-					"thumb": "https://cdn.masto.host/fediversezachleatcom/cache/media_attachments/files/117/441/230/092/492/316/small/bad86b7ae6d80c72.png",
-					"url": "https://cdn.masto.host/fediversezachleatcom/cache/media_attachments/files/117/441/230/092/492/316/original/bad86b7ae6d80c72.mp4",
+					"thumb": "https://cdn.masto.host/fediversezachleatcom/cache/media_attachments/files/117/441/230/092/492/316/small/294f7667cce627a9.png",
+					"url": "https://cdn.masto.host/fediversezachleatcom/cache/media_attachments/files/117/441/230/092/492/316/original/294f7667cce627a9.mp4",
 					"alt": "Business man saying “those are rookie numbers, got to get those numbers up”"
 				}
 			],
@@ -16163,66 +16163,6 @@
 			"type": "entry",
 			"author": {
 				"type": "card",
-				"name": "Rian",
-				"photo": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/288/875/544/375/458/original/5a6cb4abf70d7c42.jpg",
-				"url": "https://mastodon.social/@rianmurnen"
-			},
-			"url": "https://mastodon.social/@rianmurnen/117440740278044936",
-			"published": "2026-10-14T18:44:43.000Z",
-			"wm-received": "2026-10-14T18:44:43.000Z",
-			"wm-id": "99d9b996929b",
-			"wm-source": "https://mastodon.social/@rianmurnen/117440740278044936",
-			"wm-target": "https://www.zachleat.com/web/firefox-list-all-tabs/",
-			"wm-property": "in-reply-to",
-			"content": {
-				"text": "@zachleat  Now we know what drove the price of RAM up. SOMEone is using it all"
-			},
-			"visibility": "public",
-			"mentions": [
-				{
-					"acct": "zachleat",
-					"url": "https://fediverse.zachleat.com/@zachleat"
-				}
-			]
-		},
-		{
-			"type": "entry",
-			"author": {
-				"type": "card",
-				"name": "Zach Leatherman",
-				"photo": "https://cdn.masto.host/fediversezachleatcom/accounts/avatars/109/286/461/031/266/152/original/dc489c3746a44e00.png",
-				"url": "https://fediverse.zachleat.com/@zachleat"
-			},
-			"url": "https://fediverse.zachleat.com/@zachleat/117440765937502239",
-			"published": "2026-10-14T18:51:14.781Z",
-			"wm-received": "2026-10-14T18:51:14.781Z",
-			"wm-id": "1c86fdf63435",
-			"wm-source": "https://fediverse.zachleat.com/@zachleat/117440765937502239",
-			"wm-target": "https://www.zachleat.com/web/firefox-list-all-tabs/",
-			"wm-property": "in-reply-to",
-			"content": {
-				"text": "@rianmurnen I have no idea what you mean"
-			},
-			"images": [
-				{
-					"thumb": "https://cdn.masto.host/fediversezachleatcom/media_attachments/files/117/440/763/655/251/548/small/a2bfdc53894369b3.png",
-					"url": "https://cdn.masto.host/fediversezachleatcom/media_attachments/files/117/440/763/655/251/548/original/a2bfdc53894369b3.png",
-					"alt": "Process Manager screenshot: Firefox (7824) Memory 4GB CPU 27%"
-				}
-			],
-			"in-reply-to": "https://mastodon.social/@rianmurnen/117440740278044936",
-			"visibility": "public",
-			"mentions": [
-				{
-					"acct": "rianmurnen@mastodon.social",
-					"url": "https://mastodon.social/@rianmurnen"
-				}
-			]
-		},
-		{
-			"type": "entry",
-			"author": {
-				"type": "card",
 				"name": "Matthias Ott",
 				"photo": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/291/233/828/237/636/original/edbf5b5a1043a195.png",
 				"url": "https://mastodon.social/@matthiasott"
@@ -16296,60 +16236,6 @@
 				{
 					"acct": "JessFairbairn@aoir.social",
 					"url": "https://aoir.social/@JessFairbairn"
-				}
-			]
-		},
-		{
-			"type": "entry",
-			"author": {
-				"type": "card",
-				"name": "Rian",
-				"photo": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/288/875/544/375/458/original/5a6cb4abf70d7c42.jpg",
-				"url": "https://mastodon.social/@rianmurnen"
-			},
-			"url": "https://mastodon.social/@rianmurnen/117446364053048152",
-			"published": "2026-10-15T18:34:55.000Z",
-			"wm-received": "2026-10-15T18:34:55.000Z",
-			"wm-id": "d39843b9fafb",
-			"wm-source": "https://mastodon.social/@rianmurnen/117446364053048152",
-			"wm-target": "https://www.zachleat.com/web/firefox-list-all-tabs/",
-			"wm-property": "in-reply-to",
-			"content": {
-				"text": "@zachleat How days until this becomes a full browser fork… Tabium, Tabzilla"
-			},
-			"in-reply-to": "https://fediverse.zachleat.com/@zachleat/117445334181955620",
-			"visibility": "public",
-			"mentions": [
-				{
-					"acct": "zachleat",
-					"url": "https://fediverse.zachleat.com/@zachleat"
-				}
-			]
-		},
-		{
-			"type": "entry",
-			"author": {
-				"type": "card",
-				"name": "Zach Leatherman",
-				"photo": "https://cdn.masto.host/fediversezachleatcom/accounts/avatars/109/286/461/031/266/152/original/dc489c3746a44e00.png",
-				"url": "https://fediverse.zachleat.com/@zachleat"
-			},
-			"url": "https://fediverse.zachleat.com/@zachleat/117446737415395013",
-			"published": "2026-10-15T20:09:52.303Z",
-			"wm-received": "2026-10-15T20:09:52.303Z",
-			"wm-id": "887976751ac8",
-			"wm-source": "https://fediverse.zachleat.com/@zachleat/117446737415395013",
-			"wm-target": "https://www.zachleat.com/web/firefox-list-all-tabs/",
-			"wm-property": "in-reply-to",
-			"content": {
-				"text": "@rianmurnen brb forming The Iowa Browser Company LLC"
-			},
-			"in-reply-to": "https://mastodon.social/@rianmurnen/117446364053048152",
-			"visibility": "public",
-			"mentions": [
-				{
-					"acct": "rianmurnen@mastodon.social",
-					"url": "https://mastodon.social/@rianmurnen"
 				}
 			]
 		},
@@ -16481,6 +16367,22 @@
 				"text": "@davatron5000 I… built a thing to shame myself into doing better with those https://www.zachleat.com/projects/\n\n*runs away screaming*"
 			},
 			"syndication-reply": true
+		},
+		{
+			"type": "entry",
+			"author": {
+				"type": "card",
+				"name": "Nick F",
+				"photo": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/301/140/234/960/297/original/13d02156f4bbe1a3.jpg",
+				"url": "https://mastodon.social/@nickautomatic"
+			},
+			"url": "https://fediverse.zachleat.com/@zachleat/117491016721814503#favorited-by-109301140234960297",
+			"published": null,
+			"wm-received": "2026-10-24T18:02:59Z",
+			"wm-id": "0a51e316b197",
+			"wm-source": "https://fediverse.zachleat.com/@zachleat/117491016721814503#favorited-by-109301140234960297",
+			"wm-target": "https://www.zachleat.com/projects/",
+			"wm-property": "like-of"
 		},
 		{
 			"type": "entry",

@@ -1,0 +1,224 @@
+{
+	"disqus": {
+		"path": "/web/cross-domain-xhr-with-firefox/",
+		"commentCount": 18,
+		"comments": [
+			{
+				"postId": "887461698",
+				"parentPostId": null,
+				"date": "2007-10-30T14:03:53Z",
+				"author": "alberto",
+				"avatar": "https://www.gravatar.com/avatar/73d7c6e24b8b321a0bb1d9f2a4fcdf9a?d=mm&s=60",
+				"message": "<p>this method works as well but when I need to read the response xml i get this exception:</p><p>uncaught exception: Permission denied to get property XMLDocument.firstChild</p><p>any solution?? <br>i don't want to use ie6/7 again for this purpose...</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461697",
+				"parentPostId": null,
+				"date": "2007-10-31T02:56:54Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>If you read the solution carefully you will see that you can add that exact property to your prefs.js like so:</p><p>user_pref(\"capability.policy.default.XMLDocument.firstChild\", \"allAccess\");</p><p>Anytime you get a \"Permission denied\" exception, this solution should work</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461695",
+				"parentPostId": null,
+				"date": "2008-01-26T18:16:15Z",
+				"author": "Shaun",
+				"avatar": "https://www.gravatar.com/avatar/f62f16dec3d43ccf421d64b85d6add7a?d=mm&s=60",
+				"message": "<p>Rather than set these preferences on the default profile, set them on a custom one that's only available for your development site:<br><code><br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.sites\", \"http://YOURDEVHOSTHERE\");<br>user_pref(\"capability.policy.policynames\", \"XMLHttpRequestToAnySite\");<br></code></p><p>Here's the final list I ended up using, which includes a few new ones than the OP:</p><p><code><br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.CDATASection.nodeValue\", \"allAccess\");<br><br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Element.attributes\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Element.childNodes\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Element.firstChild\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Element.getAttribute\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Element.getElementsByTagName\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Element.nodeType\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Element.nodeName\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Element.tagName\", \"allAccess\");<br><br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.HTMLCollection.length\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.HTMLCollection.item\", \"allAccess\");<br><br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.ProcessingInstruction.nodeType\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.ProcessingInstruction.nodeName\", \"allAccess\");<br><br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Text.nodeType\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Text.nodeName\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Text.data\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.Text.nodeValue\", \"allAccess\");<br><br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLDocument.documentElement\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLDocument.getElementsByTagName\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLDocument.nodeType\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLDocument.nodeName\", \"allAccess\");<br><br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLHttpRequest.channel\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLHttpRequest.responseText\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLHttpRequest.responseXML\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLHttpRequest.send\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLHttpRequest.setRequestHeader\", \"allAccess\");<br>user_pref(\"capability.policy.XMLHttpRequestToAnySite.XMLHttpRequest.open\", \"allAccess\");<br></code></p>",
+				"replies": []
+			},
+			{
+				"postId": "887461696",
+				"parentPostId": null,
+				"date": "2008-02-07T05:27:46Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Great comment Shaun!  That will definitely tighten the security up.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461694",
+				"parentPostId": null,
+				"date": "2008-02-11T03:30:19Z",
+				"author": "Christian Fecteau",
+				"avatar": "https://www.gravatar.com/avatar/09f3b9721317de2bfe4a1d34a4694a60?d=mm&s=60",
+				"message": "<p>Shaun or Zach, how would I do the same for UniversalXPConnect? I'm trying to make myself a Firefox favelet that would search this French dictionnary automatically with my clipboard text:<br><a href=\"http://atilf.atilf.fr/dendien/scripts/tlfiv4/showps.exe?p=combi.htm\" rel=\"nofollow noopener\" title=\"http://atilf.atilf.fr/dendien/scripts/tlfiv4/showps.exe?p=combi.htm\">http://atilf.atilf.fr/dendi...</a></p><p>I'm so close but I'm still getting this error:<br><code>uncaught exception: Un script de « http://atilf.atilf.fr » s'est vu refuser des privilèges UniversalXPConnect.</code></p><p>I've tried these with no luck in user.js:<br><code>user_pref(\"capability.principal.codebase.p0.granted\", \"UniversalXPConnect\");<br>user_pref(\"capability.principal.codebase.p0.id\", \"http://atilf.atilf.fr\");<br>user_pref(\"capability.principal.codebase.p0.subjectName\", \"\");<br><br>user_pref(\"capability.principal.codebase.p1.granted\", \"UniversalXPConnect\");<br>user_pref(\"capability.principal.codebase.p1.id\", \"http://dell\");<br>user_pref(\"capability.principal.codebase.p1.subjectName\", \"\");<br><br>user_pref(\"capability.policy.policynames\", \"allowclipboard\");<br>user_pref(\"capability.policy.allowclipboard.sites\", \"file:// http://dell http://atilf.atilf.fr\");<br>user_pref(\"capability.policy.allowclipboard.Clipboard.cutcopy\", \"allAccess\");<br>user_pref(\"capability.policy.allowclipboard.Clipboard.paste\", \"allAccess\");<br><br>/*<br>user_pref(\"capability.policy.allowclipboard.UniversalXPConnect.QueryInterface\", \"allAccess\");<br>user_pref(\"capability.policy.allowclipboard.UniversalXPConnect.createInstance\", \"allAccess\");<br>user_pref(\"capability.policy.allowclipboard.UniversalXPConnect.equals\", \"allAccess\");<br>user_pref(\"capability.policy.allowclipboard.UniversalXPConnect.getService\", \"allAccess\");<br>user_pref(\"capability.policy.allowclipboard.UniversalXPConnect.initialize\", \"allAccess\");<br>*/<br></code></p><p>and my favelet:<br><code>function getClipboardText() {<br><br>if (window.clipboardData) // IE<br>return (window.clipboardData.getData('Text'));<br><br>if (!window.netscape) // promt for text if not Mozilla<br>return prompt();<br><br>// ask permission to Mozilla<br>netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');<br><br>// go on with XUL code<br>varclip = Components<br>.classes['@mozilla.org/widget/clipboard;1']<br>.createInstance(Components.interfaces.nsIClipboard),<br>trans = Components<br>.classes['@mozilla.org/widget/transferable;1']<br>.createInstance(Components.interfaces.nsITransferable),<br>str = {},<br>len = {};<br><br>trans.addDataFlavor('text/unicode');<br>clip.getData(trans, clip.kGlobalClipboard);<br>trans.getTransferData('text/unicode', str, len);<br><br>str =Components.interfaces.nsISupportsWString<br>? str.value.QueryInterface(Components.interfaces.nsISupportsWString)<br>: str.value.QueryInterface(Components.interfaces.nsISupportsString);<br><br>return(str.data.substring(0, len.value / 2));<br>}<br><br>var clip = getClipboardText();<br><br>console.log(clip);<br><br>//document.form1.elements.mot.value = clip;<br><br>//verif1();</code></p><p>Thanks for the XHR code. I've added it to my FF dev profile. Now I can code cross-domain ajax.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461699",
+				"parentPostId": null,
+				"date": "2008-02-16T08:54:28Z",
+				"author": "Christian Fecteau",
+				"avatar": "https://www.gravatar.com/avatar/09f3b9721317de2bfe4a1d34a4694a60?d=mm&s=60",
+				"message": "<p>Problem solved. A Firefox search engine xml file has been made for this dictionnary (and more):<br><a href=\"http://www.cnrtl.fr/portail/#footerright\" rel=\"nofollow noopener\" title=\"http://www.cnrtl.fr/portail/#footerright\">http://www.cnrtl.fr/portail...</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "887461701",
+				"parentPostId": null,
+				"date": "2008-05-10T03:58:20Z",
+				"author": "Jeremy",
+				"avatar": "https://www.gravatar.com/avatar/eb5af668862f1872f22f0ae6ce3c49fa?d=mm&s=60",
+				"message": "<p>If you want to ensure that what you are developing works for other users who will not want to do this to their firefox use this:</p><p>try{<br>// IE understands this<br>    var xml = $(response.responseXML)<br>    var codes = xml.documentElement.getElementsByTagName(\"code\")<br>}catch(e){<br>//firefox understands this<br>    try{<br>        var xml = (new DOMParser()).parseFromString( response.responseXML, \"text/xml\");<br>        var codes = xml.documentElement.getElementsByTagName(\"code\")<br>    }catch(ee){       <br>    }<br>}</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461714",
+				"parentPostId": null,
+				"date": "2008-05-10T08:25:00Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Dude, what?</p><p>To me that says:<br>I can parse an XML document.<br>OR if I can't, try a new way.</p><p>That doesn't have anything to do with XHR, other than supplying using it to supply an XML document.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461702",
+				"parentPostId": null,
+				"date": "2008-05-10T23:10:07Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Also, please keep in mind that this is NOT a production solution.  It's a development solution for individual development machines.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461706",
+				"parentPostId": null,
+				"date": "2008-06-18T19:37:01Z",
+				"author": "Arian Hojat",
+				"avatar": "https://www.gravatar.com/avatar/b3eda51e3917e0f3ab79523df0d64151?d=mm&s=60",
+				"message": "<p>Heard this was a viable production solution:<br>use php to pull the xml, and feed it into the javascript.</p><p><a href=\"http://www.phpfour.com/blog/2008/03/06/cross-domain-ajax-using-php/\" rel=\"nofollow noopener\" title=\"http://www.phpfour.com/blog/2008/03/06/cross-domain-ajax-using-php/\">http://www.phpfour.com/blog...</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "887461708",
+				"parentPostId": null,
+				"date": "2008-06-19T03:24:27Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Sure, this method is a client-side only solution.  It's fairly trivial (and common) to use a server side language to act as a proxy for your ajax calls.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461704",
+				"parentPostId": null,
+				"date": "2008-07-09T22:46:07Z",
+				"author": "mark",
+				"avatar": "https://www.gravatar.com/avatar/24a330f178a7bd66f3f4f35465710865?d=mm&s=60",
+				"message": "<p>hi board!</p><p>y have this error, <br>Permiso para obtener la propiedad Element.childNodes denegado</p><p>in english<br>Permission denied to get property Element.childNodes</p><p>and i create prefs.js file, and i have this error yet... i am using V 3.0</p><p>tks for u help.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461709",
+				"parentPostId": null,
+				"date": "2008-08-12T16:31:42Z",
+				"author": "Sean",
+				"avatar": "https://www.gravatar.com/avatar/9eecef432fc4e4af478fc338d72c7b6b?d=mm&s=60",
+				"message": "<p>I've read that the above technique will not work under Firefox 3. My tests seem to confirm this. And, there's this thread:</p><p><a href=\"http://groups.google.com/group/mozilla.dev.apps.firefox/browse_thread/thread/0b3db90e1b452f33/d4fd6124df529739\" rel=\"nofollow noopener\" title=\"http://groups.google.com/group/mozilla.dev.apps.firefox/browse_thread/thread/0b3db90e1b452f33/d4fd6124df529739\">http://groups.google.com/gr...</a></p><p>So, is it game over?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461713",
+				"parentPostId": null,
+				"date": "2008-08-12T17:19:10Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Never say die.</p><p><a href=\"http://developer.mozilla.org/en/docs/Cross-Site_XMLHttpRequest\" rel=\"nofollow noopener\" title=\"http://developer.mozilla.org/en/docs/Cross-Site_XMLHttpRequest\">http://developer.mozilla.or...</a></p><p>Looks like you could make a plugin that enables this for the web :)  Have at it!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461718",
+				"parentPostId": null,
+				"date": "2009-02-12T18:30:52Z",
+				"author": "venkat",
+				"avatar": "https://www.gravatar.com/avatar/a3d9d9357490ea1478e518bcd6db6457?d=mm&s=60",
+				"message": "<p>Hi,</p><p>Many thanks to you. But my firefox doent get updated with the new user prefs. im running 3.0.6. Any clues.</p>",
+				"replies": [
+					{
+						"postId": "887477624",
+						"parentPostId": "887461718",
+						"date": "2009-02-12T22:16:26Z",
+						"author": "Zach Leatherman",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>If you're having trouble modifying your prefs, you probably still have Firefox open.  You must close Firefox when editing prefs.js.  Also, the above code was tested only with Firefox 2, as stated below the headline.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "887461719",
+				"parentPostId": null,
+				"date": "2009-05-09T20:40:27Z",
+				"author": "Animal",
+				"avatar": "https://www.gravatar.com/avatar/6379e057a776c4653533ab27d2a09476?d=mm&s=60",
+				"message": "<p>Sorry, but NONE of this works.</p>",
+				"replies": [
+					{
+						"postId": "887461725",
+						"parentPostId": "887461719",
+						"date": "2009-05-10T19:58:14Z",
+						"author": "Zach Leatherman",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Again, please keep in mind that this post should be considered deprecated, as it does not apply to the current version of Firefox.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 1545158,
+			"parentId": 0,
+			"url": "https://jpstack.one/%e3%82%af%e3%83%ad%e3%82%b9%e3%83%89%e3%83%a1%e3%82%a4%e3%83%b3-ajax-%e3%83%aa%e3%82%af%e3%82%a8%e3%82%b9%e3%83%88%e3%82%92%e6%9c%89%e5%8a%b9%e3%81%ab%e3%81%99%e3%82%8b-firefox-%e3%81%ae%e8%a8%ad/",
+			"author": {},
+			"date": "2009-03-20T19:04:27.000Z",
+			"content": "<p>クロスドメイン XMLHttpRequest を<em>一時的に</em>許可する必要があります。 Firefoxのセキュリティ設定を変更するのが最善の方法のようです。しかし、私は <a href=\"http://blog.dirolf.com/2007/06/enabling-cross-domain-ajax-in-firefox.html\">これ</a> で試しましたと <a href=\"http://www.zachleat.com/web/2007/08/30/cross-domain-xhr-with-firefox/\">これ</a> が機能しませんでした.以前にこれを構成できた人はいますか?ありがとう。</p>\n\n\n<p>アプリの開発およびテスト中にクロスドメインの問題で時間を無駄にしたくない場合は、アドオン <a href=\"https://addons.mozilla.org/en-US/firefox%20%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82%20/addon/forcecors/\">FF の強制 CORS</a>。</p>\n<p>更新: このアドオンはもう存在しないようです。しかし、別のオプションがあります – この <a href=\"https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi\">Chrome 拡張機能</a></p>\n\n\n<p>最新のブラウザでは、次のアプローチを試すことができます:</p>\n<p><a href=\"https://developer.mozilla.org/en/HTTP_access_control\">https://developer.mozilla.org/en/HTTP_access_control</a></p>\n<p>要するに、以下を <code>SERVER</code> 応答ヘッダーに追加する必要があります (以下は <em>from</em> <code>foo.example</code> からのアクセスを許可します):</p>\n<pre><code>Access-Control-Allow-Origin: http://foo.example<br />\nアクセス制御許可メソッド: POST、GET、OPTIONS<br />\nAccess-Control-Allow-Headers: X-PINGOTHER<br />\nAccess-Control-Max-Age: 1728000\n</code></pre><p><code><code>X-PINGOTHER</code> は JavaScript によって挿入されるカスタム ヘッダーであり、サイトごとに異なることに注意してください。</code></p><code>\n</code><p><code>Ajax でサーバーにアクセスするサイトが必要な場合は、代わりに <code>*</code> を使用してください。</code></p><code>\n</code><p><code>編集:</code></p><code>\n</code><p><code><strong>2009</strong> までに最初に質問に答えたとき、実際に同じ問題に遭遇し、サーバー側の構成を使用して回避しました。</code></p><code>\n</code><p><code>それまでに FF や Chrome にはプラグインはありませんでした。</code></p><code>\n</code><p><code>ただし、ブラウザ側のプラグインを使用する代替手段があります。<code>tsds</code> の回答を確認してください。</code></p><code>\n</code>\n\n\n<p>jQuery の <a href=\"http://docs.jquery.com/Ajax/jQuery.ajax#options\">ajax</a> リクエストを試してみましたか?バージョン 1.3 以降、jQuery は特定のタイプのクロス ドメイン Ajax リクエストをサポートしています。</p>\n<p>上記の参考文献からの引用:</p>\n<p>注: すべてのリモート (同じ上ではありません)<br />\n  ドメイン) リクエストを指定する必要があります<br />\n  「script」または「jsonp」が<br />\n  dataType (スクリプトをロードするため)<br />\n  DOM スクリプト タグを使用します)。 Ajax オプション<br />\n  XMLHttpRequest オブジェクトを必要とする<br />\n  これらの要求には使用できません。<br />\n  完全関数と成功関数は次のとおりです。<br />\n  完了時に呼び出されますが、呼び出されません<br />\n  XHR オブジェクトを受け取ります。 beforeSend<br />\n  そして dataFilter 関数はそうではありません\n  </p>\n<p>jQuery 1.2 以降、JSON をロードできます<br />\n  別のドメインにあるデータ<br />\n  JSONP コールバックを指定します。<br />\n  「myurl?callback=?」のように行います。<br />\n  jQuery は ? を自動的に置き換えます。<br />\n  呼び出す正しいメソッド名で、<br />\n  指定したコールバックを呼び出します。または、<br />\n  dataType を「jsonp」に設定した場合<br />\n  コールバックが自動的に追加されます<br />\n  あなたのAjaxリクエストに。</p>\n\n\n<p>クロスドメイン XMLHttpRequest を「一時的に」無効にする方法はありません。一時的に無効にできれば、永久に無効にできます。これは、現代の AJAX プログラミングではかなり一般的な問題であり、ほとんどの場合、クロスドメイン スクリプティングと呼ばれる手法を使用して解決されます。 </p>\n<p>ここでの考え方は、クロスドメイン スクリプトを呼び出すと、JavaScript (JSON) の結果が返され、それが最後に関数に渡されるというものです。 </p>\n<p>JavaScript コードの観点からどのように見えるかを示すサンプル コードを次に示します。</p>\n<pre><code> function request_some_data() {<br />\n    var s = \"http://my.document.url.com/my_data?p1=v1&amp;p2=v2&amp;callback=myfunc\";\n</code></pre><p><code>      試す {<br />\n        試す{<br />\n          document.write(\"\");<br />\n        }<br />\n        キャッチ（e）{<br />\n          var x = document.createElement(\"スクリプト\");<br />\n          x.src = s;<br />\n          document.getElementsByTagName(\"head\")[0].appendChild(x);<br />\n        }<br />\n      }<br />\n      キャッチ (e) {<br />\n        アラート (e.メッセージ);<br />\n      }<br />\n   }</code></p><code>\n</code><p><code>次に、コードでデータを受信する関数を定義し、サーバーでコールバック ケースを「処理」します。クライアント側の JavaScript は次のとおりです。</code></p><code>\n</code><pre><code><code>function myfunc(data) {<br />\n  アラート (データ);<br />\n}\n</code></code></pre><p><code><code>サーバー側では、ここで PHP の例を示しますが、これは Java やサーバー側のテクノロジが何であれ、同じように簡単に実行できます。</code></code></p><code><code>\n</code></code><p><code><code>サーバー側で生成しているものは、クライアント側で実行される JavaScript になることに注意してください。</code></code></p><code><code>\n</code></code>\n\n\n<p>「UniversalBrowswerRead」も試してみましたが、うまくいきませんでした。 「allow」ヘッダーを追加できるかもしれませんが、実際にはまだ試していません。かなり新しいです。</p>\n<p>詳細については、<a href=\"http://websecurity.ro/blog/2008/04/10/cross-domain-requests-will-be-back/\">こちらをご覧ください。 </a></p>\n\n\n<p><code>file://</code> からこれに直面しています。ローカル HTML ファイル (テストベッド) から 2 つのサーバーにクエリを送信したいと考えています。</p>\n<p>この特定のケースは安全上の問題ではありませんが、これが可能なのは Safari だけです。</p>\n<p><a href=\"http://www.simple-talk.com/dotnet/asp.net/calling-cross-domain-web-services-in-ajax/\">最高の議論</a>私はこの問題について見つけました.</p>\n\n\n<p>mod_proxy のようなものを使用するのはどうですか?次に、リクエストが同じサーバーに送信されているようにブラウザに見えますが、実際には別のサーバーに転送されています。</p>\n\n\n<p>Fiddler をプロキシとして使用しました。 <a href=\"http://www.fiddler2.com/fiddler2/\">Fiddler</a> は、localhost 呼び出しを外部サーバーにリダイレクトします。</p>\n<p>手動プロキシ (127.0.0.1 ポート 8888) を使用するように Firefox を構成しました。 Fiddler は呼び出しをキャプチャし、URL フィルターを使用して別のサーバーにリダイレクトします。</p>\n\n\n<p>クロスドメインを許可するには:</p>\n\n<code>about:config</code> を入力\n注意する\n検索バーに <code>security.fileuri.strict_origin_policy</code> と入力します\n偽に変更\n\n<p>タブを閉じることができます。通常、この構成でクロス ドメイン リクエストを作成できるようになりました。</p>\n<p>詳細については、<a href=\"http://kb.mozillazine.org/Security.fileuri.strict_origin_policy\">こちら</a>を参照してください。</p>\n\n\n<p>Firefox 用の私のアドオンを確認できます。 Firefox の最新バージョンではドメインをまたぐことができます: <a href=\"https://addons.mozilla.org/en-US/firefox/addon/cross-domain-cors/\">https: //addons.mozilla.org/en-US/firefox/addon/cross-domain-cors/</a> </p>\n\n\n<p>Firefox の設定を手動で編集する方法がありますが、頻繁に行う必要がある場合は不便です。</p>\n<p>代わりに、ワンクリックでそれを行うアドオンをインストールできます。</p>\n<p>私は <code>どこでも CORS</code> を使用しています。これは私にとって非常に効果的です。</p>\n<p><a href=\"https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/\">インストーラーへのリンク</a>はこちらp&gt;\n    </p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 631146,
+			"parentId": 0,
+			"url": "https://911-code.com/firefox-impostazione-per-abilitare-il-cross-domain-richiesta-ajax.html",
+			"author": {},
+			"date": "2019-06-22T14:47:03.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1296421,
+			"parentId": 0,
+			"url": "https://microeducate.tech/firefox-setting-to-enable-cross-domain-ajax-request/",
+			"author": {},
+			"date": "2021-10-27T03:20:02.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1347127,
+			"parentId": 0,
+			"url": "https://codeinfopark.com/questions/firefox-setting-to-enable-cross-domain-ajax-request/",
+			"author": {},
+			"date": "2022-02-06T02:00:45.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1543129,
+			"parentId": 0,
+			"url": "https://123stack.one/blog/2009/03/20/firefox-%e8%a8%ad%e7%bd%ae%e5%95%9f%e7%94%a8%e8%b7%a8%e5%9f%9f-ajax-%e8%ab%8b%e6%b1%82/",
+			"author": {},
+			"date": "2022-10-21T20:55:11.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

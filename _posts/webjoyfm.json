@@ -1,0 +1,39 @@
+{
+	"likes": [
+		{
+			"id": 1559406,
+			"url": "https://fediverse.zachleat.com/@zachleat/109343009265562645#favorited-by-109311119016774180",
+			"date": "2022-11-14T16:47:43.000Z",
+			"author": {
+				"name": "kat🇺🇦",
+				"url": "https://toot.site/@kat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/734d3c369fc5f480b6654d65dec10fe84e5e0123c93ca9892cf7aafa93ff087d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1559503,
+			"url": "https://fediverse.zachleat.com/@zachleat/109343009265562645#favorited-by-109327233937207539",
+			"date": "2022-11-14T18:03:42.000Z",
+			"author": {
+				"name": "fanyak@fosstodon.org",
+				"url": "https://fosstodon.org/@fanyak",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/a971b399b2b2c66daa292ea79888a77f2f15a8d33c7f9cf611428be3f8283405.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1559502,
+			"url": "https://fediverse.zachleat.com/@zachleat/109343009265562645#reblogged-by-109327233937207539",
+			"date": "2022-11-14T18:03:41.000Z",
+			"author": {
+				"name": "fanyak@fosstodon.org",
+				"url": "https://fosstodon.org/@fanyak",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/a971b399b2b2c66daa292ea79888a77f2f15a8d33c7f9cf611428be3f8283405.png"
+			},
+			"via": "webmention"
+		}
+	]
+}

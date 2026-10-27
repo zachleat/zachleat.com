@@ -1,0 +1,488 @@
+{
+	"comments": [
+		{
+			"id": 1603141,
+			"parentId": 0,
+			"url": "https://chrisruppel.com",
+			"author": {
+				"name": "Chris Ruppel",
+				"url": "https://chrisruppel.com",
+				"avatarUrl": "https://avatars.webmention.io/chrisruppel.com/f470217fd85716c59ab7e7ac872deb1ed342ece97b1166d304be38b4245b13cf.jpg"
+			},
+			"date": "2023-01-20T18:00:00.000Z",
+			"content": "<p>I say that as a dedicated fan of the project: This is my first post published after upgrading to the <a href=\"https://www.zachleat.com/web/eleventy-version-two/\">new beta</a>!</p>\n<p>It was almost a no-touch upgrade. My partial that outputs photo galleries needed some love to eliminate extra whitespace, but aside from that I am upgraded and ready to start migrating to WebC.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1603162,
+			"parentId": 0,
+			"url": "https://mstdn.social/@mattwilcox/109722304690515839",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"date": "2023-01-20T21:45:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> For those of us that very rarely use npm, and have been poking about on the canary, how does one `npm update` and get the beta, instead of the latest Canary?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1603164,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722314837930321",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-01-20T21:47:37.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@mattwilcox\" class=\"u-url\">@<span>mattwilcox</span></a></span> `npm install @11ty/eleventy@beta` in your project directory will do the trick! You can check in your package.json after or by running `npx @11ty/eleventy --version`</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1603161,
+			"parentId": 0,
+			"url": "https://mstdn.social/@mattwilcox/109722347922654182",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"date": "2023-01-20T21:56:02.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Thank you!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1603163,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@drsensor/109722387170042028",
+			"author": {
+				"name": "ヾ(＾-＾)ノ :t_blink:",
+				"url": "https://fosstodon.org/@drsensor",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6d1700659df23aa81f4796dda5217d6f0c30f8f50f5d2847799b791d9195b7ac.png"
+			},
+			"date": "2023-01-20T22:06:01.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Congrats 🎉<br />Is there a blog post about how 11ty start then grow gaining wide adoption?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1603136,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722397287034356",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-01-20T22:08:35.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.design/@DavidDarnes\" class=\"u-url\">@<span>DavidDarnes</span></a></span> Thank you Dave!!</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/eleventy-version-two/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1603166,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@drsensor/109722398491746345",
+			"author": {
+				"name": "ヾ(＾-＾)ノ :t_blink:",
+				"url": "https://fosstodon.org/@drsensor",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6d1700659df23aa81f4796dda5217d6f0c30f8f50f5d2847799b791d9195b7ac.png"
+			},
+			"date": "2023-01-20T22:08:54.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I just notice the funky burger menu 😂</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1603168,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722417419718198",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-01-20T22:13:42.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@drsensor\" class=\"u-url\">@<span>drsensor</span></a></span> *marks another line on my hamburger menu victim counter*</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1603165,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722419829517589",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-01-20T22:14:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@drsensor\" class=\"u-url\">@<span>drsensor</span></a></span> probably just bits and pieces scattered on various posts <a href=\"https://www.zachleat.com/web/?category=eleventy\"><span>https://www.</span><span>zachleat.com/web/?category=ele</span><span>venty</span></a> but that would be a good post to write!</p>\n<a href=\"https://www.zachleat.com/web/\">Archives—zachleat.com</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1604506,
+			"parentId": 0,
+			"url": "https://www.alvinashcraft.com/2023/01/23/dew-drop-january-23-2023-3863/",
+			"author": {
+				"name": "Alvin A.",
+				"url": "https://www.alvinashcraft.com/author/admin/"
+			},
+			"date": "2023-01-23T12:19:16.000Z",
+			"content": "<h3><a></a>Top Links</h3>\n<ul><li><a href=\"https://github.blog/2023-01-20-bringing-github-actions-to-github-mobile/\">Bringing GitHub Actions to GitHub Mobile</a> (Maximilian Sachs)</li>\n<li><a href=\"http://sites.libsyn.com/445863/on-technical-debt\">Until the Ice Cream Truck Podcast – On Technical Debt</a> (Howard Dierking &amp; Glenn Block)</li>\n<li><a href=\"https://devblogs.microsoft.com/powershell/powershell-extension-for-visual-studio-code-january-2023-update/\">PowerShell Extension for Visual Studio Code January 2023 Update</a> (Sydney Smith)</li>\n<li><a href=\"https://jeffreyfritz.com/2023/01/how-i-built-the-first-pdf-report-for-kliptok-using-ironpdf/\">How I built the first PDF report for KlipTok using IronPDF</a> (Jeff Fritz)</li>\n<li><a href=\"https://github.blog/2023-01-20-unpacking-the-value-of-open-source-and-code-collaboration/\">Unpacking the value of open source and code collaboration</a> (Mike Linksvayer)</li>\n</ul><p></p>\n<h3><a></a>Web &amp; Cloud Development</h3>\n<ul><li><a href=\"http://www.i-programmer.info/programming/jquery/16028-just-jquery-the-core-ui-function-queues.html\">Just jQuery The Core UI – Function Queues</a> (Ian Elliot)</li>\n<li><a href=\"https://www.textcontrol.com/blog/2023/01/20/documentviewer-enabling-external-pdf-renderer-pdfjs/\">Feature Announcement: Enabling External PDF Renderer PDF.js in TX Text Control DocumentViewer</a> (Bjoern Meyer)</li>\n<li><a href=\"https://damienbod.com/2023/01/23/basic-authentication-in-asp-net-core/\">Basic Authentication in ASP.NET Core</a> (Damien Bowden)</li>\n<li><a href=\"https://www.telerik.com/blogs/client-side-filtering-kendo-ui-angular-data-grid\">Client-Side Filtering with the Kendo UI for Angular Data Grid</a> (Peter Vogel)</li>\n<li><a href=\"https://thenewstack.io/docker-swarm-a-user-friendly-alternative-to-kubernetes/\">Docker Swarm, a User-Friendly Alternative to Kubernetes</a> (Shaun O’Meara)</li>\n<li><a href=\"https://tympanus.net/codrops/2023/01/20/rotating-twisted-3d-typography-with-three-js-and-shaders/\">Rotating Twisted 3D Typography with Three.js and Shaders</a> (Yuriy Artyukh)</li>\n<li><a href=\"https://www.zachleat.com/web/eleventy-version-two/\">The Magical Eleventy v2.0.0-beta.1 Release</a> (Zach Leatherman)</li>\n<li><a href=\"http://apievangelist.com/2023/01/21/draw-an-owl-api-edition-part-one/\">How to Draw an Owl, the API Edition – Part One</a> (Kin Lane)</li>\n<li><a href=\"https://logcorner.com/building-micro-services-through-event-driven-architecture-part21-monitoring-and-observability/\">Building micro services through Event Driven Architecture part21 : Monitoring and Observability</a> (Gora Leye)</li>\n<li><a href=\"https://blog.postman.com/most-popular-apis-in-the-public-api-network/\">Most Popular APIs in the Public API Network</a> (Khushboo Goel)</li>\n<li><a href=\"https://www.developer.com/languages/golang-data-conversion/\">Data Conversion in Go</a> (Manoj Debnath)</li>\n<li><a href=\"https://blog.jetbrains.com/go/2023/01/20/the-goland-2023-1-early-access-program-is-open/\">The GoLand 2023.1 Early Access Program Is Open!</a> (Sergey Kozlovskiy)</li>\n</ul><p></p>\n<h3><a></a>WinUI, .NET MAUI &amp; XAML</h3>\n<ul><li><a href=\"https://www.grapecity.com/blogs/embed-wpf-user-controls-in-winforms-application\">Embed WPF User Controls in WinForms Applications</a> (Nitin Sharma)</li>\n<li><a href=\"https://www.syncfusion.com/blogs/post/introducing-the-new-net-maui-pdf-viewer.aspx?utm_source=alvinashcraft&amp;utm_medium=email&amp;utm_campaign=alvinashcraft_blog_edmjan23\">Introducing the New .NET MAUI PDF Viewer</a> (Mohana Priya Raja)</li>\n</ul><p></p>\n<h3><a></a>Visual Studio &amp; .NET</h3>\n<ul><li><a href=\"https://www.thecodepainter.co.uk/blog/20230120/savingchristmas02\">Saving Christmas with Functional C# – Part Two – Indefinite Loops</a> (Simon Painter)</li>\n<li><a href=\"https://code-maze.com/csharp-randomize-list/\">How to Randomize a List in C#</a> <em>and</em> <a href=\"https://code-maze.com/csharp-required-members/\">Required Members in C#</a> (Code Maze)</li>\n<li><a href=\"https://intodot.net/using-ihttpclientfactory-in-csharp/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=using-ihttpclientfactory-in-csharp\">Using IHttpClientFactory in C# to avoid Port Exhaustion</a> (Henrique Dalcin Dalmas)</li>\n<li><a href=\"http://metadataconsulting.blogspot.com/2023/01/CSharp-dotNET-How-to-remove-ASCII-Control-Characters-fast-and-reduce-to-ASCII-set.html\">C# .NET – How to remove ASCII Control Characters fast and reduce to ASCII set</a> <em>and</em> <a href=\"http://metadataconsulting.blogspot.com/2023/01/c-all-valid-string-escape-sequences.html\">C# All valid string escape sequences</a> (Mark Pahulje)</li>\n<li><a href=\"https://steven-giesel.com/blogPost/61c2f923-c100-449b-b67c-563970a7b214\">Deep nesting – Why and how to avoid</a> (Steven Giesel)</li>\n<li><a href=\"https://code-maze.com/data-generation-bogus-dotnet/\">Realistic Data Generation in .NET With Bogus</a> (Marko Hrnčić)</li>\n<li><a href=\"https://devblogs.microsoft.com/oldnewthing/20230120-00/?p=107732\">How can I call a method on a derived class from a base class, say, to get a strong reference to the containing object?</a> (Raymond Chen)</li>\n</ul><p></p>\n<h3><a></a>Design, Methodology &amp; Testing</h3>\n<ul><li><a href=\"https://devblogs.microsoft.com/premier-developer/azure-devops-pipelines-tasks-jobs-stages-and-more/\">Azure DevOps Pipelines: Tasks, Jobs, Stages and more!</a> (John Folberth)</li>\n<li><a href=\"https://blog.ploeh.dk/2023/01/23/agilean/\">Agilean</a> (Mark Seemann)</li>\n<li><a href=\"https://www.sketch.com/blog/an-in-depth-look-at-prototyping-in-sketch/\">An in-depth look at Prototyping in Sketch</a> (Sketch Team)</li>\n<li><a href=\"https://event-driven.io/en/projections_and_read_models_in_event_driven_architecture/\">Guide to Projections and Read Models in Event-Driven Architecture</a> (Oskar Dudycz)</li>\n<li><a href=\"https://pmichaels.net/service-repository-pattern/\">The Service / Repository Pattern</a> (Paul Michaels)</li>\n<li><a href=\"https://www.softwaremeadows.com/posts/getting_started_with_software_(and_business_and_life)_skills_2023\">Getting Started With Software (and Business and Life) Skills – 2023</a> (Charles Flatt)</li>\n<li><a href=\"https://devopsjournal.io/blog/2023/01/22/Making-the-case-for-secret-scanning\">Making the case for GitHub’s Secret scanning</a> (Rob Bos)</li>\n<li><a href=\"https://devblogs.microsoft.com/devops/new-boards-hub-sprint-216-update/\">New Boards Hub, Sprint 216 update</a> (Dan Hellem)</li>\n<li><a href=\"https://www.continuousimprover.com/2023/01/legacy-codebases.html\">What it takes to make legacy code bases rock solid</a> (Dennis Doomen)</li>\n<li><a href=\"https://www.infoq.com/news/2023/01/github-copilot-business/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global\">GitHub Releases Copilot for Business Amid Ongoing Legal Controversy</a> (Matt Campbell)</li>\n<li><a href=\"https://www.sadukie.com/2023/01/20/responsible-ai-in-microsoft-designer/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=responsible-ai-in-microsoft-designer\">Responsible AI in Microsoft Designer</a> (Sarah Dutkiewicz)</li>\n<li><a href=\"https://www.infoq.com/news/2023/01/git-remote-code-vulnerabilities/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global\">Git 2.39.1 Fixes Two Critical Remote Code Execution Vulnerabilities</a> (Sergio De Simone)</li>\n<li><a href=\"https://georgestocker.com/2023/01/22/can-we-kill-the-word-project-please/\">Can we kill the word ‘project’ please?</a> (George Stocker)</li>\n<li><a href=\"https://www.advancedinstaller.com/prevent-smartscreen-from-appearing.html\">How to avoid the “Windows Defender SmartScreen prevented an unrecognized app from starting” warning</a> (Alex Marin)</li>\n</ul><p></p>\n<h3><a></a>Mobile, IoT &amp; Game Development</h3>\n<ul><li><a href=\"https://www.c-sharpcorner.com/article/learn-flutter-in-15-days-day-one/\">Learn Flutter In 15 Days – Day One</a> (Abhishek Singhal)</li>\n<li><a href=\"https://blog.logrocket.com/react-native-visioncamera-demo-alternatives/\">Using React Native VisionCamera: Demo and alternatives</a> (Gapur Kassym)</li>\n<li><a href=\"https://blog.unity.com/technology/realistic-smoke-with-6-way-lighting-in-vfx-graph\">Realistic smoke lighting with 6-way lighting in VFX Graph</a> (Mathieu Muller, Marie Guffroy, Orson Favrel, Julien Fryer, Gabriel de la Cruz &amp; Ludovic Theobald)</li>\n</ul><p></p>\n<h3><a></a>Screencasts &amp; Videos</h3>\n<ul><li><a href=\"http://www.youtube.com/watch?v=VavFU2vLnT0\">Testing Blazor Applications with Playwright | .NET Conf 2022</a> (Debbie O’Brien &amp; Max Schmidt)</li>\n<li><a href=\"http://www.youtube.com/watch?v=aXCAOLjvIB4\">Flutter 100 Launch  | More Announcements </a> (Codepur)</li>\n<li><a href=\"http://www.youtube.com/watch?v=lYNDkd2laOo\">FreeCodeSession – Episode 432</a> (Jason Bock)</li>\n<li><a href=\"http://www.youtube.com/watch?v=EAex89mBX3o\">.NET Architects Panel | .NET Conf 2022</a> (Damian Edwards, David Fowler &amp; Mikayla Hutchinson)</li>\n</ul><p></p>\n<h3><a></a>Podcasts</h3>\n<ul><li><a href=\"https://www.onmsft.com/onpodcast/onpodcast-ep-99-massive-layoffs-insider-program-rebranding-new-windows-11-builds-and-more/\">OnPodcast Ep.99: Massive layoffs, Insider program rebranding, new Windows 11 builds, and more</a> (Podcast OnMSFT Team)</li>\n<li><a href=\"http://www.mergeconflict.fm/342\">Merge Conflict 342: Democratizing AI… and GPT-3</a> (James Montemagno &amp; Frank Kreuger)</li>\n<li><a href=\"https://www.infoq.com/podcasts/stem-empowering-women/\">InfoQ Podcast: Empowering Women in STEM &amp; Building Inclusive Teams through Cooking</a> (Kimberly Fox)</li>\n<li><a href=\"https://scrummastertoolbox.libsyn.com/a-simple-question-that-helps-scrum-masters-evaluate-their-impact-on-agile-teams-gert-brits-0\">Scrum Master Toolbox Podcast – Involving the Agile team in Product Owner decisions, the why and how! | Gert Brits</a> (Vasco Duarte)</li>\n<li><a href=\"https://theamphour.com/616-open-source-tapeout-with-matthew-venn/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=616-open-source-tapeout-with-matthew-venn\">The Amp Hour #616 – Open Source Tapeout with Matthew Venn</a> (Dave Jones &amp; Chris Gammell)</li>\n<li><a href=\"https://stackoverflow.blog/2023/01/20/how-to-build-a-universal-computation-machine-with-tetris-ep-529/\">The Stack Overflow Podcast Episode 529 – How to build a universal computation machine with Tetris</a> (Eira May)</li>\n<li><a href=\"https://www.codingblocks.net/podcast/designing-data-intensive-applications-transactions/\">Coding Blocks Podcast – Designing Data-Intensive Applications – Transactions</a> (Allen Underwood, Michael Outlaw &amp; Joe Zack)</li>\n<li><a href=\"https://soundcloud.com/awsdevelopers/episode-068-rds-optimized-writes-with-prasad-pandit\">AWS Developers Podcast Episode 068 – RDS Optimized Writes with Prasad Pandit</a> (David Isbitski)</li>\n<li><a href=\"https://changelog.com/jsparty/259\">JS Party Podcast – How do you define joy?</a> (Jerod Santo, Nick Nisi, Kevin Ball &amp; Christopher Hiller)</li>\n<li><a href=\"https://changelog.com/podcast/523\">The Changelog – Just Postgres</a> (Craig Kerstiens, Adam Stacoviak &amp; Jerod Santo)</li>\n<li><a href=\"https://peopleandprojectspodcast.libsyn.com/ppp-374-building-a-strong-personal-brand-without-being-a-self-promoting-jerk\">PPP 374 | Building a Strong Personal Brand Without Being a Self-Promoting Jerk</a> (Andy Kaufman)</li>\n<li><a href=\"https://www.ageekleader.com/agl-295-remote-development-with-alex-svinov/\">AGL 295: Remote Development with Alex Svinov</a> (John Rouda)</li>\n</ul><p></p>\n<h3><a></a>Community &amp; Events</h3>\n<ul><li><a href=\"https://slashdot.org/story/23/01/21/0239202/microsoft-kills-off-altspacevr-amid-major-layoffs?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed\">Microsoft Kills Off AltspaceVR Amid Major Layoffs</a> (BeauHD)</li>\n<li><a href=\"https://www.onmsft.com/news/microsoft-news-recap-10000-job-cuts-over-next-3-months-250k-xbox-series-xs-sold-in-japan-last-year-and-more/\">Microsoft news recap: 10,000 job cuts over next 3 months, 250K Xbox Series X|S sold in Japan last year, and more</a> (Jack Wilkinson)</li>\n<li><a href=\"https://www.theverge.com/2023/1/20/23563706/google-layoffs-12000-jobs-cut-sundar-pichai\">Google cuts 12,000 jobs in latest round of big tech layoffs</a> (James Vincent)</li>\n<li><a href=\"https://news.slashdot.org/story/23/01/21/2222234/linux-foundations-new-open-metaverse-foundation-launches?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed\">Linux Foundation’s New ‘Open Metaverse Foundation’ Launches</a> (EditorDavid)</li>\n<li><a href=\"https://www.cncf.io/blog/2023/01/20/cloud-native-ambassadors-2-0/\">Cloud Native Ambassadors 2.0</a> (Cloud Native Computing Foundation Team)</li>\n<li><a href=\"https://www.theverge.com/2023/1/22/23564460/twitter-third-party-apps-history-contributions\">The third-party apps Twitter just killed made the site what it is today</a> (Mitchell Clark)</li>\n<li><a href=\"https://www.sadukie.com/2023/01/20/codemash-2023-recap/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=codemash-2023-recap\">CodeMash 2023 Recap</a> (Sarah Dutkiewicz)</li>\n<li><a href=\"http://healthcaresecprivacy.blogspot.com/2023/01/hacking-fhir-for-benefit-of-fhir.html\">Hacking #FHIR for the benefit of the FHIR community</a> (John Moehrke)</li>\n</ul><p></p>\n<h3><a></a>Database</h3>\n<ul><li><a href=\"https://www.mssqltips.com/sqlservertip/7539/sql-server-filtered-index-multi-table-sql-join/\">Evaluating SQL Server Filtered Indexes in a Multi Table SQL Join</a> (Jared Westover)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/azure-database-for-mysql-blog/improving-your-wordpress-workload-performance-on-azure-database/ba-p/1418717\">Improving your WordPress workload performance on Azure Database for MySQL</a> (Mollee Jain)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/azure-maps-blog/storing-and-querying-your-geospatial-data-in-azure/ba-p/3720857\">Storing and querying your geospatial data in Azure</a> (Clemens Schotte)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/sql-server-blog/released-general-availability-of-microsoft-data-sqlclient-5-1/ba-p/3721306\">Released: General Availability of Microsoft.Data.SqlClient 5.1</a> (David Engel)</li>\n</ul><p></p>\n<h3><a></a>PowerShell</h3>\n<ul><li><a href=\"https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/tag/3.9.1\">PowerShell App Deployment Toolkit 3.9.1 Released</a> (Sean Lillis)</li>\n</ul><p></p>\n<h3><a></a>Miscellaneous</h3>\n<ul><li><a href=\"https://apple.slashdot.org/story/23/01/20/027200/pioneering-apple-lisa-goes-open-source-thanks-to-computer-history-museum?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed\">Pioneering Apple Lisa Goes ‘Open Source’ Thanks To Computer History Museum</a> <em>and</em> <a href=\"https://tech.slashdot.org/story/23/01/21/0254244/tiktok-confirms-that-its-own-employees-can-decide-what-goes-viral?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed\">TikTok Confirms That Its Own Employees Can Decide What Goes Viral</a> (BeauHD)</li>\n<li><a href=\"https://slashdot.org/story/23/01/22/0344234/openai-ceo-sam-altman-on-gpt-4-hype-people-are-begging-to-be-disappointed-and-they-will-be?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed\">OpenAI CEO Sam Altman on GPT-4 Hype: ‘People are Begging to be Disappointed and They Will Be’</a> (EditorDavid)</li>\n<li><a href=\"https://www.theverge.com/2023/1/20/23563851/google-search-ai-chatbot-demo-chatgpt\">Google is freaking out about ChatGPT</a> (James Vincent)</li>\n<li><a href=\"https://www.zdnet.com/article/c-programming-language-and-safety-heres-where-it-goes-next/#ftag=RSSbaffb68\">C++ programming language and safety: Here’s where it goes next</a> (Liam Tung)</li>\n<li><a href=\"https://www.poppastring.com/blog/smithsonian-open-access\">Smithsonian Open Access</a> (Mark Downie)</li>\n<li><a href=\"https://blog.getpaint.net/2023/01/21/paint-net-5-0-1-is-now-available/\">paint.net 5.0.1 is now available</a> (Rick Brewster)</li>\n<li><a href=\"https://www.theverge.com/2023/1/20/23563696/microsoft-windows-11-audio-eartrumpet-feature-sherlock\">Microsoft has copied the best Windows audio app</a> (Tom Warren)</li>\n</ul><p></p>\n<h3><a></a>More Link Collections</h3>\n<ul><li><a href=\"https://blog.cwa.me.uk/2023/01/23/the-morning-brew-3629/\">The Morning Brew # 3629</a> (Chris Alcock)</li>\n<li><a href=\"https://sergeytihon.com/2023/01/21/f-weekly-3-2023-f-exchange-chatgpt-as-a-service/\">F# Weekly #3, 2023 – F# eXchange, ChatGPT as a service</a> (Sergey Tihon)</li>\n<li><a href=\"https://code-maze.com/code-maze-weekly-157/\">Code Maze Weekly #157</a> (Vladimir Pecanac)</li>\n<li><a href=\"https://seroter.com/2023/01/20/daily-wrap-up-january-20-2023-013/\">Daily Wrap Up – January 20, 2023 (#013)</a> (Richard Seroter)</li>\n<li><a href=\"https://build5nines.com/build5nines-weekly-january-22-2023/\">Build5Nines Weekly – January 22, 2023</a> (Chris Pietschmann)</li>\n<li><a href=\"https://csharpdigest.net/digests/1491\">C# Digest Issue #438 – January 23, 2023</a> (Jakub Chodounsky)</li>\n<li><a href=\"https://stackoverflow.blog/2023/01/20/the-overflow-161-git-isnt-the-only-game-in-town/\">The Overflow #161: Git isn’t the only game in town</a> (Ryan Donovan &amp; Cassidy Williams)</li>\n</ul><p></p>\n<h3><a></a>The Geek Shelf</h3>\n<p><a href=\"https://www.amazon.com/dp/1801813434/?tag=amavin-20\"><img align=\"left\" style=\"margin:0px 4px 0px 0px;border:0px;float:left;background-image:none;\" src=\"https://m.media-amazon.com/images/I/41zOtgdWp1L._SS135_.jpg\" border=\"0\" alt=\"41zOtgdWp1L._SS135_.jpg\" /></a> <a href=\"https://www.amazon.com/dp/1801813434/?tag=amavin-20\">Apps and Services with .NET 7: Build practical projects with Blazor, .NET MAUI, gRPC, GraphQL, and other enterprise technologies</a> (Mark J. Price)<em> – Referral Link</em></p>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1603167,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109630334951706142",
+			"date": "2023-01-20T17:29:58.000Z",
+			"author": {
+				"name": "DoomyTheFroomy",
+				"url": "https://toot.berlin/@DoomyTheFroomy",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603169,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109287954905181617",
+			"date": "2023-01-20T17:30:01.000Z",
+			"author": {
+				"name": "Dave 🧱",
+				"url": "https://mastodon.design/@DavidDarnes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/54c31064cbea0c571492352447c7f29a6460d81d990c20f2ab620efadfe40649.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603170,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109292532015873530",
+			"date": "2023-01-20T17:30:01.000Z",
+			"author": {
+				"name": "Timo Tijhof",
+				"url": "https://fosstodon.org/@krinkle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603171,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109334219060690986",
+			"date": "2023-01-20T17:30:01.000Z",
+			"author": {
+				"name": "Chadams",
+				"url": "https://indieweb.social/@thecityinspeech",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603172,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109365871123336966",
+			"date": "2023-01-20T17:30:02.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://bell.bz/@andy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cea017ea6e66e1ee7d2f97f7278d83b1aa6a13ccb195c71c06a3e7b04d9bdfa0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603173,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109319647448483984",
+			"date": "2023-01-20T17:30:03.000Z",
+			"author": {
+				"name": "Francis Rubio :verified_pride:",
+				"url": "https://mstdn.party/@teacherbuknoy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6327c3345a986818b8909b11b295e7529d5d16d288e0b032312c3790ee519457.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603174,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109370485604200743",
+			"date": "2023-01-20T17:30:04.000Z",
+			"author": {
+				"name": "Michelle Barker",
+				"url": "https://front-end.social/@michelle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7430075ff637e892dcde4c2b240222eff41209111509d14b8f3fffc26ac3909c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603175,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109377246389179350",
+			"date": "2023-01-20T17:30:06.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://mastodon.social/@biilmann",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/28dfe91d06e8c64af94ee59a834a94d7784a31b7ad5a63640827adfd7bf1e3d0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603176,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109389837269445425",
+			"date": "2023-01-20T17:30:06.000Z",
+			"author": {
+				"name": "𝙴𝙸𝙽𝚂𝟽𝟾",
+				"url": "https://social.bau-ha.us/@eins78",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b66b560ab610a4581ca2e0f4baacee43551ba84849f1594132147badc49df490.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603177,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109417309544662469",
+			"date": "2023-01-20T17:30:07.000Z",
+			"author": {
+				"name": "live, laugh, loni",
+				"url": "https://mastodon.social/@lawnsea",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4f63705544fcb5a098c4ebfdb64dc7aab47cf7f077989481f8d710bdfa71eddc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603178,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109303655278383068",
+			"date": "2023-01-20T17:30:08.000Z",
+			"author": {
+				"name": "Tyler Sticka",
+				"url": "https://mastodon.social/@tylersticka",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ecfc5765a49387efd278a21fc94a9266e787e0e8a755ea8f58ee9778d9361b3c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603179,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109309258761047158",
+			"date": "2023-01-20T17:30:08.000Z",
+			"author": {
+				"name": "ヾ(＾-＾)ノ :t_blink:",
+				"url": "https://fosstodon.org/@drsensor",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6d1700659df23aa81f4796dda5217d6f0c30f8f50f5d2847799b791d9195b7ac.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603180,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109293454870726204",
+			"date": "2023-01-20T17:30:08.000Z",
+			"author": {
+				"name": "Brian Rinaldi",
+				"url": "https://mastodon.xyz/@remotesynth",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f0768b0b4663be265badb650b050b45e4a95ab6163a0069ebcc4325aea537d71.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603181,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109325867586024180",
+			"date": "2023-01-20T17:30:10.000Z",
+			"author": {
+				"name": "Eleventy 🎈 v2.0.0-beta.1",
+				"url": "https://fosstodon.org/@eleventy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/db710ba6be404365f7ac25c7f50cf809b2520e16c5eaddc63b2f2daffa1ca441.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603199,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109299964334169404",
+			"date": "2023-01-20T17:57:02.000Z",
+			"author": {
+				"name": "phae",
+				"url": "https://toot.cafe/@phae",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b132869c744ebf3091d975d038f3fe787a3000a658b9a01d06b14e36d9fa4c08.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603223,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109348640050620509",
+			"date": "2023-01-20T18:50:40.000Z",
+			"author": {
+				"name": "Frankie Roberto",
+				"url": "https://mastodon.me.uk/@frankieroberto",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/738a4cef05a952a084a18b4d2c6e84035cf3aaf3eee24ddf3211d2327fd2ac9b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603239,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109308516008983109",
+			"date": "2023-01-20T19:18:43.000Z",
+			"author": {
+				"name": "jchlu",
+				"url": "https://indieweb.social/@jchlu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b6e1179ffd120abaabbc4d510ad6ef0ce15774cbd7e68170abe82784e66f4869.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603354,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109313382885005329",
+			"date": "2023-01-21T02:09:45.000Z",
+			"author": {
+				"name": "Masataka Yakura",
+				"url": "https://toot.cafe/@myakura",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/26d7e93998553a572224e435be1d9adf2c2b0ed7d268925d55afd6f1d99b87b0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603862,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#favorited-by-109604341569373475",
+			"date": "2023-01-21T14:58:24.000Z",
+			"author": {
+				"name": "Emmanuel",
+				"url": "https://mastodon.scot/@EmmanuelDemey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/418ccb04b6b707b1328f2224829179977f168efa09b98edee4113e54a07cabb1.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1603182,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109292532015873530",
+			"date": "2023-01-20T17:30:11.000Z",
+			"author": {
+				"name": "Timo Tijhof",
+				"url": "https://fosstodon.org/@krinkle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603183,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109722451435988341",
+			"date": "2023-01-20T17:30:12.000Z",
+			"author": {
+				"name": "Teruhiro Komaki",
+				"url": "https://mastodon.social/@komaki",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e8051a915ff0a6168186b2dc0aa3fa20c0b68d9f2bd7968192e58d116d4bcbb9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603184,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109334219060690986",
+			"date": "2023-01-20T17:30:12.000Z",
+			"author": {
+				"name": "Chadams",
+				"url": "https://indieweb.social/@thecityinspeech",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603185,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109377246389179350",
+			"date": "2023-01-20T17:30:13.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://mastodon.social/@biilmann",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/28dfe91d06e8c64af94ee59a834a94d7784a31b7ad5a63640827adfd7bf1e3d0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603186,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109365871123336966",
+			"date": "2023-01-20T17:30:14.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://bell.bz/@andy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cea017ea6e66e1ee7d2f97f7278d83b1aa6a13ccb195c71c06a3e7b04d9bdfa0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603187,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109558332252508360",
+			"date": "2023-01-20T17:30:17.000Z",
+			"author": {
+				"name": "Kat M. Moss",
+				"url": "https://indieweb.social/@cambridgeport90",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603188,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109296176354255607",
+			"date": "2023-01-20T17:30:19.000Z",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9d191e9dfa9c23d3abdbfad7c259611817409c14773a87a6049def16ddcb1a3e.gif"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603189,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109325867586024180",
+			"date": "2023-01-20T17:30:19.000Z",
+			"author": {
+				"name": "Eleventy 🎈 v2.0.0-beta.1",
+				"url": "https://fosstodon.org/@eleventy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/db710ba6be404365f7ac25c7f50cf809b2520e16c5eaddc63b2f2daffa1ca441.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603190,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109306999800423549",
+			"date": "2023-01-20T17:30:21.000Z",
+			"author": {
+				"name": "Yoav Weiss",
+				"url": "https://mastodon.social/@Yoav",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a6c709daffe609994591554f173fff1149d372bfef53e88bc17ad1e1934dee09.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603191,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109417309544662469",
+			"date": "2023-01-20T17:30:21.000Z",
+			"author": {
+				"name": "live, laugh, loni",
+				"url": "https://mastodon.social/@lawnsea",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4f63705544fcb5a098c4ebfdb64dc7aab47cf7f077989481f8d710bdfa71eddc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603200,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109383466906758429",
+			"date": "2023-01-20T17:57:02.000Z",
+			"author": {
+				"name": "Saneef H. Ansari",
+				"url": "https://front-end.social/@saneef",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/599eb9df9d64dadea2d33745f76d1910b2caa6b1cf84e6ebf38197af2dfeeb34.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1603863,
+			"url": "https://fediverse.zachleat.com/@zachleat/109722240747870981#reblogged-by-109604341569373475",
+			"date": "2023-01-21T14:58:25.000Z",
+			"author": {
+				"name": "Emmanuel",
+				"url": "https://mastodon.scot/@EmmanuelDemey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/418ccb04b6b707b1328f2224829179977f168efa09b98edee4113e54a07cabb1.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

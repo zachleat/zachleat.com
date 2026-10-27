@@ -1,0 +1,27 @@
+---
+title: 'Eleventy Serverless, a talk video from The Eleventy Meetup'
+date: 2021-07-19
+eleventyComputed:
+  titleHtml: 'Eleventy Serverless, a talk video from {% twitterImageAvatar "EleventyMeetup", "z-avatar-eq" %}The Eleventy Meetup'
+tags:
+  - speaking
+  - eleventy
+  - video
+medialength: 43 min
+metadata:
+  type: speaking_recap
+  speaking:
+    type: meetup
+  youtubeId: nlbdRUIgyjo
+external_icon_url: https://www.11tymeetup.dev/
+---
+In this talk I started to build [Rainglow](/web/rainglow/) and showcased another tool called [Uniclode](/web/uniclode/).
+
+[Watch on YouTube](https://www.youtube.com/watch?v=nlbdRUIgyjo) or below:
+
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
+
+## Related:
+
+* [Eleventy Meetup: Hello World!](https://11tymeetup.dev/events/hello-world/)
+* The other talk video from the inaugural Eleventy Meetup: [Templating: Eleventy's Superpower with {% twitterImageAvatar "peruvianidol" %}Mike Aparicio](https://www.youtube.com/watch?v=rZyNBd1WgVM)

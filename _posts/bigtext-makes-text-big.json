@@ -1,0 +1,1073 @@
+{
+	"disqus": {
+		"path": "/web/bigtext-makes-text-big/",
+		"commentCount": 70,
+		"comments": [
+			{
+				"postId": "887462013",
+				"parentPostId": null,
+				"date": "2011-01-12T20:27:31Z",
+				"author": "Cody Peterson",
+				"avatar": "https://www.gravatar.com/avatar/29fe6095fd1b84adee24d19d0b45c0c1?d=mm&s=60",
+				"message": "<p>Great job Zach!  I will think be using this in the future for sure!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462006",
+				"parentPostId": null,
+				"date": "2011-01-12T22:30:55Z",
+				"author": "Schepp",
+				"avatar": "https://www.gravatar.com/avatar/7096dcb1690ef7418c4e94518f2fed31?d=mm&s=60",
+				"message": "<p>Really really nice! Well done!</p><p>If you seek more crosss-browser precision in line-width adjustment you could revert to CSS-2D-Transforms (and Matrix-Filter or zoom-Property for IE &lt; 8). I played around with it, searching for a way to force text-antialiasing on Windows-Systems with disabled cleartype, by setting the font-size huge and then scaling back down with a geometric transform. Helas, AA did not work that well in that damn Firefox... But the technique should be well suited for you. Shouldn&amp;#039t it?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462011",
+				"parentPostId": null,
+				"date": "2011-01-12T23:57:13Z",
+				"author": "Matt",
+				"avatar": "https://www.gravatar.com/avatar/4013db9b86f43e8e2e12f49b8078a7cf?d=mm&s=60",
+				"message": "<p>love it, great work!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462012",
+				"parentPostId": null,
+				"date": "2011-01-13T00:17:22Z",
+				"author": "Peter Michaels Allen",
+				"avatar": "https://www.gravatar.com/avatar/4d7d77056b99eda2e038ad577cb0b05e?d=mm&s=60",
+				"message": "<p>LOVE IT! Brilliant work.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462008",
+				"parentPostId": null,
+				"date": "2011-01-13T02:42:11Z",
+				"author": "Dan L",
+				"avatar": "https://www.gravatar.com/avatar/247b37d2bdb9c0c15d05a7eeefa5ac55?d=mm&s=60",
+				"message": "<p>Now anyone can make their own Mazda commercial in a web-browser!  Kudos!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461990",
+				"parentPostId": null,
+				"date": "2011-01-13T03:03:02Z",
+				"author": "SlowX",
+				"avatar": "https://www.gravatar.com/avatar/a67d14f06f2334b8e8297de387ed1fd6?d=mm&s=60",
+				"message": "<p>Holy cow, this is AWESOME!<br>Not sure how/when I'll use it on a site, but it looks cool, and the demo is fantastic. Might even be the main attraction for me...</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461991",
+				"parentPostId": null,
+				"date": "2011-01-13T03:59:20Z",
+				"author": "Anthony M",
+				"avatar": "https://www.gravatar.com/avatar/a320eb64be5df73970feb5e84537b3fb?d=mm&s=60",
+				"message": "<p>Very, VERY cool. Thanks for your contribution dude.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461993",
+				"parentPostId": null,
+				"date": "2011-01-13T04:37:00Z",
+				"author": "Rupesh Tiwari",
+				"avatar": "https://www.gravatar.com/avatar/b021988489dde1760db2f49e8956e3fe?d=mm&s=60",
+				"message": "<p>Good work...brilliant <br>I liked mostly the 3D part. Saw the video, it seemed to me that it is done using some media tool such a perfection this has.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461994",
+				"parentPostId": null,
+				"date": "2011-01-13T06:52:35Z",
+				"author": "josh",
+				"avatar": "https://www.gravatar.com/avatar/67bb974ff17e3125e528e0bac2f9fc59?d=mm&s=60",
+				"message": "<p>You're implementation is really beautiful. I like the way you've organized the code, and there's a lot to learn from it. jquery, jquery ui, modernizer, throttle...and BigText is written in mostly JSON style which I really like (not to mention put at the end of the page rather than in an onload handler, another small nicety that I really appreciate).</p><p>Being a middling JavaScript programmer myself, I really appreciate high quality work that compounds the use of so many handy libraries that I might not have known about, let alone how to use, all in one place. thanks a bunch.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461995",
+				"parentPostId": null,
+				"date": "2011-01-13T09:56:52Z",
+				"author": "josh",
+				"avatar": "https://www.gravatar.com/avatar/67bb974ff17e3125e528e0bac2f9fc59?d=mm&s=60",
+				"message": "<p>Reading your source I was struck with the fact that jQuery really, really needs a \"toggleAttr()\" method. :)</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461997",
+				"parentPostId": null,
+				"date": "2011-01-13T10:34:29Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>I'm not a huge fan of the toggle methods, as they are more prone to error when the user triggers them way too many times back-to-back, it's easy to get into the wrong state.  I prefer to stick with the good ol' manual add and remove, and try to avoid toggle Class if I can.</p><p>Ignore that one style attribute in my HTML, don't know how that snuck in there :)</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461996",
+				"parentPostId": null,
+				"date": "2011-01-13T10:38:12Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>@Schepp<br>Good suggestion! I will keep that in mind when I have the motivation to hack on this some more.</p><p>There was also a great suggestion on Twitter to add support for Pull Quotes:<br><a href=\"http://twitter.com/#!/matthewlein/status/25242027268505600\" rel=\"nofollow noopener\" title=\"http://twitter.com/#!/matthewlein/status/25242027268505600\">http://twitter.com/#!/matth...</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "887461998",
+				"parentPostId": null,
+				"date": "2011-01-13T20:35:48Z",
+				"author": "Chris Papadopoulos",
+				"avatar": "https://www.gravatar.com/avatar/cad5128f4e49674e4fcfb978496eb43c?d=mm&s=60",
+				"message": "<p>Great idea for a plugin. I've been meaning to sit down and write this type of plugin for a while now because I love that whole aligned big-text effect.</p><p>Calculating the size of text to fit its container is something that I think should have been possible with CSS from day 1. For example, just speculating on a possible syntax. but you should be able to set font-size to auto or calculate or something and the font-size should be automatically calculated until that text is the width of the containing element. That would be very useful for a lot of cool layouts.</p><p>Great job.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461999",
+				"parentPostId": null,
+				"date": "2011-01-13T21:17:52Z",
+				"author": "Johnboy",
+				"avatar": "https://www.gravatar.com/avatar/70df989c6da6db9d535af3e0cfbde5b0?d=mm&s=60",
+				"message": "<p>When I try to apply this via a class selector to do multiple elements it makes the font size the same for all the elements regardless of the amount of text. It seems to set them all to the size which makes the longest text fit rather than treating them independently.</p><p>Is there a way around this as I wish to use this on 3 or 4 elements on the same page.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462001",
+				"parentPostId": null,
+				"date": "2011-01-14T04:17:54Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>@Johnboy<br>Thanks for the heads up. I'll add a test for this and update the code on Github. You can \"watch\" the project there.</p><p><strong>UPDATE</strong>: I've updated the script on Github and added a test to check for this. It should work fine now.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462000",
+				"parentPostId": null,
+				"date": "2011-01-14T04:31:26Z",
+				"author": "Marina",
+				"avatar": "https://www.gravatar.com/avatar/89af21c70784bd81a1f639cb3e58ad27?d=mm&s=60",
+				"message": "<p>This is very informative. Thanks for posting the article.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462002",
+				"parentPostId": null,
+				"date": "2011-01-14T04:35:19Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>@Chris<br>Yeah, I'd love to have something like this native in CSS.  I don't think you want to overload the \"auto\" value, though.  Would love to see fit to width, fit to height, or fit to whichever comes first.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462009",
+				"parentPostId": null,
+				"date": "2011-01-14T22:28:13Z",
+				"author": "Jon Glick",
+				"avatar": "https://www.gravatar.com/avatar/0405dcc726b5809eb90c07987f08ddae?d=mm&s=60",
+				"message": "<p>Way cool.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462014",
+				"parentPostId": null,
+				"date": "2011-01-17T20:05:17Z",
+				"author": "Dan Rubin",
+				"avatar": "https://www.gravatar.com/avatar/f217a2d66167f1ff938b86ba7bbcc48d?d=mm&s=60",
+				"message": "<p>Excellent work, Zach! Any chance we can get a configuration option to specify which element (or class, even) the script will affect?</p><p>This would allow us to, for instance, specify an HTML5 <code>header</code> as the containing element, and have the <code>h1</code>, <code>h2</code>, <code>h3</code>, etc. (rather than <code>div</code>) within all resized to the same width.</p><p>This would be extra-fantastic :)</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462017",
+				"parentPostId": null,
+				"date": "2011-01-17T20:14:10Z",
+				"author": "Dan Rubin",
+				"avatar": "https://www.gravatar.com/avatar/f217a2d66167f1ff938b86ba7bbcc48d?d=mm&s=60",
+				"message": "<p>Upon review, my previous comment wasn't as clear as it should have been.</p><p>The goal is to configure the script to resize something other than <code>div</code> — in the example I provided, that would be multiple elements (<code>h1</code>, etc.).</p><p>Specifying multiple target elements probably isn't ideal (or even a good idea) so perhaps just being able to specify a <i>single</i> element to use rather than <code>div</code> would be better, e.g. <code>span</code>, <code>li</code>, <code>p</code>, etc.</p><p>For situations like my earlier example with the multiple heading levels, specifying a class name rather than an element could work, e.g. <code>.big</code> rather than <code>div</code>.</p><p>A third option could be to configure the script to resize any children (but <i>only</i> children) of the container element, which would also work for my original example (the equivalent of using the child selector in CSS).</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462018",
+				"parentPostId": null,
+				"date": "2011-01-17T23:54:39Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>There is a global configuration option (<code>BigText.DEFAULT_CHILD_SELECTOR</code>) that defaults to <code>&gt; div</code>.</p><p>There are some tag specific defaults also (<code>BigText.childSelectors</code>).  For example, if you run <code>$('ol, ul').bigtext();</code> it will look for <code>&lt;li&gt;</code> children.</p><p>If you want to specify in a single call, the first argument to <code>$.fn.bigtext</code> is an options object.<br></p><pre>$('#bigtext').bigtext({<br>    childSelector: '&gt; h1' // must be a block element.<br>});<br></pre><p></p><p>I like your idea around simplifying the API for a single element without children, I'll look at adding it.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462020",
+				"parentPostId": null,
+				"date": "2011-01-19T11:20:54Z",
+				"author": "Adam Koch",
+				"avatar": "https://www.gravatar.com/avatar/5221b0f88545d5203772d461e45cfe7c?d=mm&s=60",
+				"message": "<p>Anyone else having issues with the text being resized first and then the LeagueGothic font is loaded? Then the text doesn't fill the width.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462007",
+				"parentPostId": null,
+				"date": "2011-01-20T06:53:13Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>In the demo, I circumvented that problem by using Google's Font Loader, which exposes a load event.</p><p>You can use an existing CSS loader (<a href=\"http://plugins.jquery.com/files/jquery.xLazyLoader.js.txt)\" rel=\"nofollow noopener\" title=\"http://plugins.jquery.com/files/jquery.xLazyLoader.js.txt)\">http://plugins.jquery.com/f...</a>, just make sure it doesn't fall prey to: <a href=\"https://www.zachleat.com/web/2010/07/29/load-css-dynamically/\" rel=\"nofollow noopener\" title=\"https://www.zachleat.com/web/2010/07/29/load-css-dynamically/\">http://www.zachleat.com/web...</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "887462022",
+				"parentPostId": null,
+				"date": "2011-01-27T19:14:45Z",
+				"author": "Andy",
+				"avatar": "https://www.gravatar.com/avatar/b587c25f3215432cb8bde4c166e1d632?d=mm&s=60",
+				"message": "<p>good stuff!</p><p>any idea if that affects seo, if I split up a keyword in let's say 3 different div tags like that?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462023",
+				"parentPostId": null,
+				"date": "2011-01-27T20:46:48Z",
+				"author": "zeeshan",
+				"avatar": "https://www.gravatar.com/avatar/381e986cd1a5d0952117f0169690f226?d=mm&s=60",
+				"message": "<p>Cool Stuff</p><p>Is it possible to fit the multi liner text in given box with certain width and height?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462016",
+				"parentPostId": null,
+				"date": "2011-01-31T09:48:36Z",
+				"author": "Dan L",
+				"avatar": "https://www.gravatar.com/avatar/247b37d2bdb9c0c15d05a7eeefa5ac55?d=mm&s=60",
+				"message": "<p>I've noticed some issues with serif and slab-serif fonts causing the text in each div to be on two separate lines. Have you encountered this issue at all?  I'm trying to use it with google font api and 1140px responsive grid.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462015",
+				"parentPostId": null,
+				"date": "2011-02-11T01:24:47Z",
+				"author": "brian",
+				"avatar": "https://www.gravatar.com/avatar/7f1bf59fde760e3bbcbd5a37816073b7?d=mm&s=60",
+				"message": "<p>Hi, love this plugin. But I'm trying to get this to work on a horizontal list where the li elements are \"display:inline\". Essentially I want a nav element whose links take up the entire horizontal space.</p><p>I have it working in Chrome, FF &amp; Safari..but of course in IE8 the BigText doesn't seem to want to work and I can't figure it out...</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462021",
+				"parentPostId": null,
+				"date": "2011-02-11T15:53:57Z",
+				"author": "brian",
+				"avatar": "https://www.gravatar.com/avatar/7f1bf59fde760e3bbcbd5a37816073b7?d=mm&s=60",
+				"message": "<p>Ah, I zeroed in on the problem. It wasn't the ul or li elements exactly, but I was using :after on the li elements to insert a separator and Big Text didn't like that for some reason. Is this a bug or just something one has to deal with?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462010",
+				"parentPostId": null,
+				"date": "2011-02-13T21:45:36Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Hey brian,<br>I'm actually surprised to hear that you got it working with <code>display: inline</code> elements at all.  One of the minimum requirements for BigText is a block element.  It needs some kind of width to work against.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462019",
+				"parentPostId": null,
+				"date": "2011-02-13T21:48:19Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Hey Dan,<br>Make sure you're using the Google Font API load event, otherwise BigText will go against the non-font-face dimensions, and will be incorrect when the font successfully loads.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462004",
+				"parentPostId": null,
+				"date": "2011-02-22T00:02:43Z",
+				"author": "Carl",
+				"avatar": "https://www.gravatar.com/avatar/d05ae3cfe123672746a9aadc6b80c613?d=mm&s=60",
+				"message": "<p>brian,<br>I was searching these comments looking for exactly what you describe. Can you enlighten as to how you accomplished it?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462026",
+				"parentPostId": null,
+				"date": "2011-09-21T15:00:24Z",
+				"author": "Aaron @ iamcreative.",
+				"avatar": "https://www.gravatar.com/avatar/a44992fde332e1f3123def44055c4b9d?d=mm&s=60",
+				"message": "<p>Great,</p><p>thanks for sharing this one, I have only just discovered the greatness of jquery and text effects!<br>Better late than never i suppose.<br>Cheers, Aaron.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462027",
+				"parentPostId": null,
+				"date": "2011-09-27T23:44:49Z",
+				"author": "brian",
+				"avatar": "https://www.gravatar.com/avatar/3fa2db44027124403b3cab05db8a72ee?d=mm&s=60",
+				"message": "<p>hi zach,</p><p>thanks for the great plugin.  ever thought about adding an option to animate a piece of text to its new size?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462028",
+				"parentPostId": null,
+				"date": "2011-11-18T09:02:37Z",
+				"author": "Andrew",
+				"avatar": "https://www.gravatar.com/avatar/c8e0b3bfbc76525b1e6ea6add50246e3?d=mm&s=60",
+				"message": "<p>I love the plugin. I am, however, having quite some trouble applying the text resize to multiple elements on a page. For instance, I'd love to have it work in 3 areas of the page, the header, and in two parts of the footer. I'm using all default settings with the #bigtext id on all elements, but the footer elements do not work. The header works beautifully.</p><p>The footer is split in 2, floated left and right: one has more text than the other but neither will resize whatsoever. I have tried changing \"bigtext\" to a class and even running the script as two different calls (one for #bigtext and a second for #bigtext2, for instance), but still, no dice.</p><p>It's weird. Please help</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462030",
+				"parentPostId": null,
+				"date": "2011-11-18T09:05:14Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Can you add an issue on the GitHub repo?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462024",
+				"parentPostId": null,
+				"date": "2012-02-20T01:46:51Z",
+				"author": "Zane",
+				"avatar": "https://www.gravatar.com/avatar/74503e893d30776c349f99bfccd08739?d=mm&s=60",
+				"message": "<p>This is awesome... Do you have any recommendation for repeating elements?<br><code><br><br>  Text 1<br><br><br><br>  Long Text 2<br><br></code></p><p>Long Text 2 and Text 1 are the same size.... But should be different sizes.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462033",
+				"parentPostId": null,
+				"date": "2012-03-29T00:43:58Z",
+				"author": "Manus Sweeney",
+				"avatar": "https://www.gravatar.com/avatar/dd03d260b59d60513975ca73ce14a061?d=mm&s=60",
+				"message": "<p>Can't get this to work at all. Even the examples from github won't work when tested locally. Quite a newbie so if you have any suggestions I'd be grateful. great plugin</p><p>Thanks.</p>",
+				"replies": [
+					{
+						"postId": "1562439788",
+						"parentPostId": "887462033",
+						"date": "2014-08-27T23:03:51Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Please file an issue on GitHub, I don’t do any support through blog comments! Thanks!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "887462032",
+				"parentPostId": null,
+				"date": "2012-03-29T02:31:43Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>If you have questions/suggestions, it's best to open an issue on GitHub!</p><p><a href=\"https://github.com/zachleat/bigtext/issues?sort=created&amp;direction=desc&amp;state=open\" rel=\"nofollow noopener\" title=\"https://github.com/zachleat/bigtext/issues?sort=created&amp;direction=desc&amp;state=open\">https://github.com/zachleat...</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "887462034",
+				"parentPostId": null,
+				"date": "2012-06-16T22:03:11Z",
+				"author": "Shrihari Pandula",
+				"avatar": "https://www.gravatar.com/avatar/b7d16d83bd51c1fa0d342c4c1214d745?d=mm&s=60",
+				"message": "<p>This is really great! I am totally impressed! Great work, Zach!!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462037",
+				"parentPostId": null,
+				"date": "2012-09-06T12:21:26Z",
+				"author": "J Akerman",
+				"avatar": "https://www.gravatar.com/avatar/5344754df7a8eceaecace64ee428d90c?d=mm&s=60",
+				"message": "<p>Zach,</p><p>I have had a play with your demos and had a go at implementing it myself. I think the plugin is amazing and it is exactly what I need. However, I'm having a problem. I'm not sure if its just something I'm doing or if it is an problem with the plugin.</p><p>I am trying to use it more than once on the page to gain this type of effect.</p><p>a   c    t    u    a     l<br>distance      time<br>1 3 . 4 4         5  7<br> K      M           min</p><p>However, whenever I try to call .bigtext() on another element after having called it previously it does some very strange things as can be seen <a href=\"http://jsfiddle.net/WzN6d/1570/\" rel=\"nofollow noopener\" title=\"http://jsfiddle.net/WzN6d/1570/\">here</a>.</p><p>Hope you can get back to me soon,</p><p>Jan</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462036",
+				"parentPostId": null,
+				"date": "2012-09-07T06:50:31Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Hey Jan,<br>The bigtext version you're hotlinking is outdated.</p><p>Try <a href=\"https://raw.github.com/zachleat/BigText/master/bigtext.js\" rel=\"nofollow noopener\" title=\"https://raw.github.com/zachleat/BigText/master/bigtext.js\">https://raw.github.com/zach...</a> instead.<br>Thanks,<br>Zach</p>",
+				"replies": [
+					{
+						"postId": "954572053",
+						"parentPostId": "887462036",
+						"date": "2013-07-07T17:18:40Z",
+						"author": "Matt",
+						"avatar": "https://www.gravatar.com/avatar/2a5156a23c4063c9b03e324eb9c7fb36?d=mm&s=60",
+						"message": "<p>The last version you linked to doesn't work for me. I get the following Javascript errors in Firebug: NotSupportedError: Operation is not supported (bigtext.js, line 36) and TypeError: $(...).bigtext is not a function. Tried using Firefox and Safari on Mac OS X.</p>",
+						"replies": [
+							{
+								"postId": "973792180",
+								"parentPostId": "954572053",
+								"date": "2013-07-23T19:53:32Z",
+								"author": "zachleat",
+								"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+								"message": "<p>Put together a JSBin and I’ll have a look!</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "887462040",
+				"parentPostId": null,
+				"date": "2012-12-10T01:03:17Z",
+				"author": "Sara Domini",
+				"avatar": "https://www.gravatar.com/avatar/87bb72a4afdd0d1fb6c74d117915a9cb?d=mm&s=60",
+				"message": "<p>Ok, I am dizzy now!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887462039",
+				"parentPostId": null,
+				"date": "2013-01-23T17:08:30Z",
+				"author": "lion",
+				"avatar": "https://www.gravatar.com/avatar/fd25658bacdd6a76553c1c7b7d4990fd?d=mm&s=60",
+				"message": "<p>it doesn't work if cut or paste text using mouse! i think its really to add. hope it could improve your lib!</p>",
+				"replies": []
+			},
+			{
+				"postId": "1035159256",
+				"parentPostId": null,
+				"date": "2013-09-09T07:31:17Z",
+				"author": "pawan",
+				"avatar": "https://www.gravatar.com/avatar/ef79bcb2af60459b6f618585b5de648f?d=mm&s=60",
+				"message": "<p>this script working perfect on a page</p><p>but not working on a page more then 1 time</p><p>is it possible that this script work for more then 1 on a page</p>",
+				"replies": []
+			},
+			{
+				"postId": "1056604165",
+				"parentPostId": null,
+				"date": "2013-09-24T01:41:16Z",
+				"author": "Yoochan Seo",
+				"avatar": "https://www.gravatar.com/avatar/98cee193ab6bce4934efae04ea1d7725?d=mm&s=60",
+				"message": "<p>I like this BIGTEXT. I will try out..</p>",
+				"replies": []
+			},
+			{
+				"postId": "1087361137",
+				"parentPostId": null,
+				"date": "2013-10-18T17:52:24Z",
+				"author": "Koder",
+				"avatar": "https://www.gravatar.com/avatar/20d8c95edc13928fd56a25aae54c2910?d=mm&s=60",
+				"message": "<p>Looks fantastic. Can you point me to a simple 1 page HTML page that demonstrates text filling a container.I tried creating one: downloaded bigtext.js, included it, included jquery, etc - no go. I am an old dog familiar with HTML, CSS but not so current anymore</p>",
+				"replies": []
+			},
+			{
+				"postId": "1133321098",
+				"parentPostId": null,
+				"date": "2013-11-21T19:44:31Z",
+				"author": "Nick",
+				"avatar": "https://www.gravatar.com/avatar/72166327bb3cf7040dd1d7e51af84478?d=mm&s=60",
+				"message": "<p>Thanks so much for this nice plugin Zach 'LETTERMAN', that one was too easy.</p>",
+				"replies": []
+			},
+			{
+				"postId": "1157642108",
+				"parentPostId": null,
+				"date": "2013-12-10T19:36:48Z",
+				"author": "Jack Rugile",
+				"avatar": "https://www.gravatar.com/avatar/e4596eb1a7a3fb966b7294a67040c116?d=mm&s=60",
+				"message": "<p>Thank you for this, saving me so much time. Works great!</p>",
+				"replies": []
+			},
+			{
+				"postId": "1171396828",
+				"parentPostId": null,
+				"date": "2013-12-20T12:23:12Z",
+				"author": "shadowfax007",
+				"avatar": "https://www.gravatar.com/avatar/96e1ffd724b0505757b5aaadd1a87222?d=mm&s=60",
+				"message": "<p>First off, thanks Zach for taking the time to create this great script and offering it to the community!<br>I'm still looking but if someone could point me in the right direction or answer this question, I would appreciate it!</p><p>I need to be able to get the font size for the  printed text after running through bigtext.  Is there a way to do this - I'm a javascript neophyte and don't know if there is a way to grab the properties of the text after big text runs (I'm mostly concerned in the final size of font produced).  I have the text coming from a text field into a specifically sized div so depending on what is typed, the font size can change considerably :-)</p><p>Thanks for any help!</p>",
+				"replies": [
+					{
+						"postId": "1177878615",
+						"parentPostId": "1171396828",
+						"date": "2013-12-27T03:44:35Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Can you file a GitHub issue for this? Mostly it sounds like you need an event to fire when BigText finishes.</p>",
+						"replies": [
+							{
+								"postId": "1177927410",
+								"parentPostId": "1177878615",
+								"date": "2013-12-27T04:42:03Z",
+								"author": "zachleat",
+								"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+								"message": "<p>Actually, I just merged a PR that added a `bigtext:complete` event that you should be able to bind to. See <a href=\"https://github.com/zachleat/BigText/pull/42/files\" rel=\"nofollow noopener\" title=\"https://github.com/zachleat/BigText/pull/42/files\">https://github.com/zachleat...</a> Thanks!</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "1248242363",
+				"parentPostId": null,
+				"date": "2014-02-17T17:42:45Z",
+				"author": "bkhoo",
+				"avatar": "https://www.gravatar.com/avatar/2e8fda483e5d7c11d500ae7afceceaba?d=mm&s=60",
+				"message": "<p>I can't seem to get this working either. Anyone have any ideas why? Here is my code. Please help. Thanks.</p><p>&lt;head&gt;</p><p>&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/&gt;</p><p>&lt;title&gt;header test&lt;/title&gt;</p><p>&lt;script src=\"<a href=\"http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\" rel=\"nofollow noopener\" title=\"http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\">http://ajax.googleapis.com/...</a>\"&gt;&lt;/script&gt;</p><p>&lt;script src=\"js/bigtext.js\"&gt;&lt;/script&gt;</p><p>&lt;/script&gt;</p><p>&lt;style&gt;</p><p>body,html{</p><p>width:100%;</p><p>height:100%;</p><p>}</p><p>#bigtext{</p><p>width:50%;</p><p>background-color:green;</p><p>font-size:100pt;</p><p>font-family: Helvetica, Arial;</p><p>}</p><p>&lt;/style&gt;</p><p>&lt;script&gt;</p><p>$(document).ready(function(){</p><p>$('#bigtext').bigText();</p><p>});</p><p>&lt;/script&gt;</p><p>&lt;/head&gt;</p><p>&lt;body&gt;</p><p>&lt;div id=\"bigtext\"&gt;</p><p>    <span>BIGTEXT</span></p><p>    <span>Makes Text Big</span></p><p>&lt;/div&gt;</p><p>&lt;/body&gt;</p><p>&lt;/html&gt;</p>",
+				"replies": []
+			},
+			{
+				"postId": "1264862594",
+				"parentPostId": null,
+				"date": "2014-02-28T20:04:38Z",
+				"author": "Bojan Nisevic",
+				"avatar": "https://www.gravatar.com/avatar/e98df111ad14a6148585bc6153df3549?d=mm&s=60",
+				"message": "<p>Is there something like this for SVG?</p>",
+				"replies": []
+			},
+			{
+				"postId": "1309688280",
+				"parentPostId": null,
+				"date": "2014-03-29T16:21:07Z",
+				"author": "Oscar clar",
+				"avatar": "https://www.gravatar.com/avatar/a126944e2608f9792da50b2e8a248f5f?d=mm&s=60",
+				"message": "<p>Great Script for the community<br>THANKS! THANKS!<br>Good Luck Zach</p>",
+				"replies": []
+			},
+			{
+				"postId": "1389010976",
+				"parentPostId": null,
+				"date": "2014-05-16T16:27:47Z",
+				"author": "Daniel",
+				"avatar": "https://www.gravatar.com/avatar/07b5ff3ac4366f44df6220dabc3c7f2f?d=mm&s=60",
+				"message": "<p>Hey I did a similar plugin myself (also called it bigtext, I was not aware of yours.) It is a little different though, mine fits the text both in width and in height. I also don't incrementally change font sizes, I do some math to calculate the right font size so it should be far faster than your approach, but I only support linebreaks added manually (<br> tags).</p><p>Mine also supports (optionally) fitting to both width and height of the element and supports rotating text, but no 3d effects (the 3d effects shouldn't be that hard, I might implement them in my plugin as well).</p><p>You can check it out: <a href=\"https://github.com/DanielHoffmann/jquery-bigtext\" rel=\"nofollow noopener\" title=\"https://github.com/DanielHoffmann/jquery-bigtext\">https://github.com/DanielHo...</a></p><p>Examples: <a href=\"https://rawgit.com/DanielHoffmann/jquery-bigtext/master/examples/examples.html\" rel=\"nofollow noopener\" title=\"https://rawgit.com/DanielHoffmann/jquery-bigtext/master/examples/examples.html\">https://rawgit.com/DanielHo...</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "1435617915",
+				"parentPostId": null,
+				"date": "2014-06-14T19:52:04Z",
+				"author": "mony",
+				"avatar": "https://www.gravatar.com/avatar/42c1915dbc4a4829df14489c48d403e9?d=mm&s=60",
+				"message": "<p><a href=\"https://storify.com/monyhussein\" rel=\"nofollow noopener\" title=\"https://storify.com/monyhussein\">هنا</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "1440024546",
+				"parentPostId": null,
+				"date": "2014-06-17T21:40:16Z",
+				"author": "Tim",
+				"avatar": "https://www.gravatar.com/avatar/4174140090014b3a5014f92bac111611?d=mm&s=60",
+				"message": "<p>I have a need for this, but I can't figure out how to install this.  I have downloaded the \"<a href=\"http://BigText-master.zip\" rel=\"nofollow noopener\" title=\"BigText-master.zip\">BigText-master.zip</a>\" file and extracted it onto my webserver.  When I go to the \"/demo\" html files, I'm not seeing any resizing happening.  What else do I need to do to get this up an running?  Sorry if I'm missing this on your site and github.</p>",
+				"replies": []
+			},
+			{
+				"postId": "1561833516",
+				"parentPostId": null,
+				"date": "2014-08-27T16:29:49Z",
+				"author": "thecda",
+				"avatar": "https://www.gravatar.com/avatar/02a4e9fd21524106ca901fd1b7fbeaf8?d=mm&s=60",
+				"message": "<p>Trying to get this to work on the bootstrap carousel (like this one <a href=\"http://getbootstrap.com/examples/carousel/\" rel=\"nofollow noopener\" title=\"http://getbootstrap.com/examples/carousel/\">http://getbootstrap.com/exa...</a> ) first slide is obviously fine but the next ones won't implement it, any idea of how I could get it to work? Great script by the way!</p>",
+				"replies": [
+					{
+						"postId": "1562440686",
+						"parentPostId": "1561833516",
+						"date": "2014-08-27T23:04:39Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Keep in mind that BigText needs to be visible to size correctly. See <a href=\"https://github.com/zachleat/BigText/issues/58\" rel=\"nofollow noopener\" title=\"https://github.com/zachleat/BigText/issues/58\">https://github.com/zachleat...</a></p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "1637117342",
+				"parentPostId": null,
+				"date": "2014-10-15T14:22:26Z",
+				"author": "Daric ",
+				"avatar": "https://www.gravatar.com/avatar/edb13bcfc9dbb7f1e850e0cbefe7517c?d=mm&s=60",
+				"message": "<p>Great Plug In - Worked fine until Safari 7.1 - now it expands the height of the divs in some weird way -</p>",
+				"replies": [
+					{
+						"postId": "1637711979",
+						"parentPostId": "1637117342",
+						"date": "2014-10-15T18:59:38Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Please file an issue on GitHub, I don’t do any support through blog comments! Thanks!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "1656401252",
+				"parentPostId": null,
+				"date": "2014-10-27T20:37:40Z",
+				"author": "jaabaa",
+				"avatar": "https://www.gravatar.com/avatar/6a53f027ef3dbd0fe7666991be02c540?d=mm&s=60",
+				"message": "<p>Hello Zach! Wasn't it possible to 1/ clone the text, 2/ measure the width with getBoundingClientRect()    (example: width=624px), 3/ hide the cloned text,  4/ Modify  the fontSize such that it fits in the desired width (example : desired width = 300px) =&gt;  ie font-size = font-size * 300/624   (rounded to the integer below)</p>",
+				"replies": []
+			},
+			{
+				"postId": "1800808328",
+				"parentPostId": null,
+				"date": "2015-01-19T08:17:22Z",
+				"author": "elshadianka",
+				"avatar": "https://www.gravatar.com/avatar/56af1ceed63bdd78d3ae7c5b7fd481d4?d=mm&s=60",
+				"message": "<p>Thank <br>You <br>For Any <br>Other <br>Fantastic <br>Post. <br>Where <br>Else May <br>Just <br>Anybody <br>Get That Type</p><p><a href=\"http://tumuseo.com/\" rel=\"nofollow noopener\" title=\"http://tumuseo.com/\">TUMUSEO</a><br>  Of <br>Info <br>In Such An <br>Ideal <br>Method <br>Of Writing? I <br>Have <br>A Presentation Next <br>Week, And I'm <br>At <br>The <br>Look <br>For <br>Such Information.</p>",
+				"replies": []
+			},
+			{
+				"postId": "1869396396",
+				"parentPostId": null,
+				"date": "2015-02-22T18:03:31Z",
+				"author": "Jeez Louise",
+				"avatar": "https://www.gravatar.com/avatar/38e4a1731159a21bbce9890693c81380?d=mm&s=60",
+				"message": "<p>Hey man, you need to fix this or take it down.  Don't you see how many people are complaining that it doesn't work?</p>",
+				"replies": [
+					{
+						"postId": "1879956774",
+						"parentPostId": "1869396396",
+						"date": "2015-02-28T06:05:03Z",
+						"author": "zachleat",
+						"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+						"message": "<p>Dear Jeez,<br>The test suite is passing fine, as are all the demos. If you’re having a problem getting it to work, please let me know (file an issue on GitHub) and I’ll try to help! Otherwise, this FUD comment helps no one :-/</p>",
+						"replies": [
+							{
+								"postId": "1948741082",
+								"parentPostId": "1879956774",
+								"date": "2015-04-06T10:53:10Z",
+								"author": "Jeez Louise",
+								"avatar": "https://www.gravatar.com/avatar/e8ae024df806a91fc17f675f278a58b9?d=mm&s=60",
+								"message": "<p>FUD - wow.  I just looked up what that is an acronym for.  FUD stands for \"Fear, Uncertainty, and Doubt.\"  You know your marketing double speak!  Rad!  So, basically, you are saying that your BigText plugin not working for me is a figment of my imagination and that my reporting to you of the actual situation that I encountered is simply some ploy to spread fear, uncertainty, and doubt amongst readers of this little web page of yours.  Look, if I were you, I would concentrate more on building things that actually work than worrying about people attacking your online credibility.  Giving talks at CSS and Javascript conferences is really not going to make you much money in the long run anyways.  So, you don't have to worry so much about your so called credibility.</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "1935435598",
+				"parentPostId": null,
+				"date": "2015-03-30T04:14:20Z",
+				"author": "Rory Troy",
+				"avatar": "https://www.gravatar.com/avatar/87fc18969319f4266062f81d6b813790?d=mm&s=60",
+				"message": "<p>No, this this does not work as advertised.  I already spent 2 days of my life trying to install BigText as the responsive text solution for my client's website only to find out that it is buggy and does not resize everything like you say it can.  Thanks for the waste of my time, bro!</p>",
+				"replies": []
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 1545432,
+			"parentId": 0,
+			"url": "https://jpstack.one/%e3%82%a6%e3%82%a3%e3%83%b3%e3%83%89%e3%82%a6%e3%81%ae%e3%82%b5%e3%82%a4%e3%82%ba%e5%a4%89%e6%9b%b4%e6%99%82%e3%81%ab%e3%83%86%e3%82%ad%e3%82%b9%e3%83%88%e3%81%ae%e3%82%b5%e3%82%a4%e3%82%ba-%e3%83%95/",
+			"author": {},
+			"date": "2010-06-07T13:34:34.000Z",
+			"content": "<p>ウィンドウ サイズを変更すると要素のサイズが変更されるページを作成しようとしましたが、(無駄に) 失敗しました。画像のcssで問題なく動作していますが、テキストで同じことを達成できないようで、CSSでも可能かどうかわかりません。そして、これを実現する jquery スクリプトが見つからないようです。</p>\n<p>ユーザーがウィンドウのサイズを変更するとき、基本的には、ユーザーがページのズームを呼び出さなくても、ページが動的かつ滑らかにスケーリングされるようにしたいと考えています。これは、CSS を介して私の img div ではうまく機能しますが、同じサイズのままのテキストでは機能しません。</p>\n<p>アイデアはありますか?</p>\n\n\n<p>これは自分でやらなければなりませんでした。私がしたことは、本文の基本テキスト サイズと、他のすべてのサイズのパーセンテージを設定することでした。次に、単純な jQuery スクリプトを使用して、ウィンドウのサイズ変更の基本サイズを変更しました。他のサイズも同様に更新されます。 </p>\n<p>次のようなものを使用しました:</p>\n<pre><code>$(function() {<br />\n    $(window).bind('resize', function()<br />\n    {<br />\n        resizeMe();<br />\n        }).trigger('サイズ変更');<br />\n    });\n</code></pre><p><code>そして resizeMe 関数では、これがありました:</code></p><code>\n</code><pre><code><code>//本文のフォントサイズが正しい標準の高さ<br />\nvar preferredHeight = 768;<br />\n// ページの基本フォント サイズ<br />\nvar fontsize = 18;\n</code></code></pre><p><code><code>var displayHeight = $(window).height();<br />\nvar パーセンテージ = displayHeight / preferredHeight;<br />\nvar newFontSize = Math.floor(フォントサイズ * パーセンテージ) - 1;<br />\n$(\"body\").css(\"font-size\", newFontSize);</code></code></p><code><code></code></code>\n\n\n<p><a href=\"http://fittextjs.com/\">FitText</a> などの jQuery プラグインを試してください。親要素の幅に合わせてテキストのサイズを自動的に調整します。</p>\n<p>同じ目標を持つ別の jQuery プラグインは <a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\">BigText</a> (<a href=\"http://www.zachleat.com/bigtext/demo/\">デモ</a>).</p>\n\n\n<p>これは、<a href=\"http://www.w3.org/TR/css3-mediaqueries/\">CSS3 メディア クエリ</a>を使用して、異なる基本フォント サイズを指定することで実現できます。ブラウザのサイズによって異なります。これについては、<a href=\"http://www.alistapart.com/articles/responsive-web-design/\">A List Apart</a></p>\n<p> に良い記事があります。</p>\n<p>IE サポートについては、<a href=\"http://www.google.com/search?q=ie+css+expression\">CSS 式</a></p>\n<p>これには、たとえば <code>body</code> タグでは固定のベース フォント サイズを使用し、その他の場所ではパーセンテージまたは <code>em</code> ベースのサイズを使用する必要があります。</p>\n\n\n<p>Lizzan の回答に基づいて、<em>幅と高さの両方の平方根</em>を使用して比例したサイズを取得するバージョンを次に示します。</p>\n<pre><code>// ドキュメントの読み込みが完了したとき<br />\n$(document).ready(function() {\n</code></pre><p><code>    var resizeText = 関数 () {<br />\n        // 本文のフォント サイズが正しい標準の高さ<br />\n        var preferredFontSize = 180; // %<br />\n        var preferredSize = 1024 * 768;</code></p><code>\n</code><p><code>        var currentSize = $(window).width() * $(window).height();<br />\n        var scalePercentage = Math.sqrt(currentSize) / Math.sqrt(preferredSize);<br />\n        var newFontSize = preferredFontSize * scalePercentage;<br />\n        $(\"body\").css(\"font-size\", newFontSize + '%');<br />\n    };</code></p><code>\n</code><p><code>    $(window).bind('resize', function() {<br />\n        resizeText();<br />\n    }).trigger('サイズ変更');</code></p><code>\n</code><p><code>});</code></p><code>\n</code><p><code>デモ: <a href=\"http://jsfiddle.net/tomsoderlund/26Gad/embedded/result/\">http://jsfiddle.net/tomsoderlund/26Gad/embedded/result/</a></code></p><code>\n</code>\n\n\n<p><a href=\"http://practicaltypography.com/end-credits.html#bio\">http://practicaltypography.com/end-credits.html のトリックを使用しています#bio</a> M. Butterick:</p>\n<pre><code><br /><br />\n        @media all {html {font-size: 24px;}}@media all and (max-width:2200px){html {font-size: 27px;}}@media all and (max-width:1800px){html { font-size: 26px;}}@media all and (max-width:1400px){html {font-size: 25px;}}@media all and (max-width:1000px){html {font-size: 24px; }}@media all and (max-width:960px){html {font-size: 23px;}}@media all and (max-width:920px){html {font-size: 22px;}}@media all and (max-width:880px){html {font-size: 21px;}}@media all and (max-width:840px){html {font-size: 20px;}}@media all and (max-width:800px) ){html {font-size: 19px;}}@media all and (max-width:760px){html {font-size: 18px;}}@media all and (max-width:720px){html {font-サイズ: 17px;}}@media all and (max-width:680px){html {font-size: 16px;}}@media all and (max-width:640px){html {font-size: 15px;}} @media all and (max-width:600px){html {font-size: 14px;}}@media all and (max-width:560px){html {font-size: 13px;}}@media all and (max -width:520px){html {font-size: 12px;}}<br /><br />\n            体 {<br />\n        最大幅:1000px;<br />\n        最小幅:520px;<br />\n        行の高さ:1.33em;<br />\n        マージン:1em;<br />\n        背景色:#f7f7f7;<br />\n        font-family:Source Sans Pro;<br />\n        色:#361800;<br />\n        }</code></pre>\n\n\n<p>roryf は正しい方向に進んでいます!</p>\n<p>メディア クエリがその答え (の 1 つ) です。</p>\n<p>ここでの秘訣は、body から始まるすべてのフォント サイズに % を使用することです。このように、フォント サイズは継承され、本文で変更すると、どこでも変更されます。</p>\n<p>次のようにしてみてください: </p>\n<pre><code>body { font-size: 100% }<br />\nh1 {フォントサイズ: 200% }\n</code></pre><p><code>@media all and (max-width:600px) {<br />\n    本文 {font-size: 70%}<br />\n}</code></p><code>\n</code><p><code>ウェブサイトの幅が 600 ピクセルよりも小さくなると、フォント サイズはどこでも以前の 70% になり、% が使用されます (この例では h1 も使用されます)。</code></p><code>\n</code>\n\n\n<p>リザンの答えは完璧です! -1 はそのままにしておきます。私がそれを取り除いたとき、子猫はいたるところで死にかけていました.</p>\n<p>fontsize 変数の代わりに、ページの標準的なフォントサイズに設定してください。私は16歳でした。</p>\n\n\n<p>サイズ変更可能なテキストをよりシンプルにすることができます。このソリューションは私にとってはうまくいきます。<br /><a href=\"http://jsfiddle.net/VooDi/dka48dx8/\">http://jsfiddle.net/VooDi/dka48dx8/</a></p>\n<p>body set font-size の場合、現在のウィンドウの内側の幅に相当します。</p>\n<p>jsfiddle 560 px;</p>\n<pre><code>body {<br />\n    フォントサイズ: 560px;<br />\n}\n</code></pre><p><code>js:</code></p><code>\n</code><pre><code><code>onresize=onload=function() {<br />\n    document.body.style.fontSize=window.innerWidth+\"px\"<br />\n}\n</code></code></pre><p><code><code>必要な要素のフォント サイズをパーセントで設定</code></code></p><code><code>\n</code></code><pre><code><code><code>\n</code></code></code></pre><h1 style=\"font-size:5%;\"><code><code><code>このテキストのサイズを変更してください!!!!</code></code></code></h1><code><code><code>\n</code></code></code><p><code><code><code>以上です。これが誰かの役に立てば幸いです。</code></code></code></p><code><code><code>\n</code></code></code>\n\n\n<p>こちらをご覧ください: <a href=\"https://jsfiddle.net/bheng/dp5jh7nu/\">https://jsfiddle.net/bheng/dp5jh7nu/</a></p>\n<pre><code>$(\"h1\").css(\"font-size\", $(window).width()/5);<br />\n$(window).resize(関数() {<br />\n    $(\"h1\").css(\"font-size\", $(window).width()/5);<br />\n});</code></pre>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 978520,
+			"parentId": 0,
+			"url": "https://bashooka.com/coding/120-best-jquery-tutorials/",
+			"author": {
+				"name": "Henri"
+			},
+			"date": "2019-08-12T04:04:44.000Z",
+			"content": "<p>Web design is no different from any other piece of design, in that every element has been considered. <a href=\"https://bashooka.com/tag/typography/\">Typography</a> is no exception. Here are <a href=\"https://bashooka.com/tag/jquery-2/\">jQuery</a> plugins which gives you an ultimate control on your web <a href=\"https://bashooka.com/cms/typography-wordpress-themes/\">typography</a>. <span></span></p>\n\n\n\n  \n    <h4>\n<strong>Unlimited Downloads :</strong> 600,000+ Typefaces, Fonts &amp; Design Assets <span>Ad</span>\n</h4>\n  \n\n\n\n  \n\n\n   <a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com%2Fbw-modelica-font-family-96W3JH\"> \n    \n      \n      \n        </a><h6><a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com%2Fbw-modelica-font-family-96W3JH\">Bw Modelica</a></h6><a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com%2Fbw-modelica-font-family-96W3JH\">\n          <span>Sans-Serif</span>\n        <img src=\"https://cl.ly/233R2d0p2o0t/icon_download.svg\" alt=\"\" />\n    \n  </a>\n\n\n\n\n\n    <a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com%2Famithen-brush-font-F8T4SL\">\n      \n        \n        \n          </a><h6><a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com%2Famithen-brush-font-F8T4SL\">Amithen</a></h6><a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com%2Famithen-brush-font-F8T4SL\">\n          <span>Script And Handwritten</span>\n          <img src=\"https://cl.ly/233R2d0p2o0t/icon_download.svg\" alt=\"\" />\n      \n    </a>\n\n\n\n\n\n <a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com%2Fbuffalo-4FFW2V\">\n      \n        \n        \n          </a><h6><a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com%2Fbuffalo-4FFW2V\">Buffalo</a></h6><a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com%2Fbuffalo-4FFW2V\">\n          <span>Script And Handwritten</span>\n          <img src=\"https://cl.ly/233R2d0p2o0t/icon_download.svg\" alt=\"\" />\n      \n    </a>\n\n\n\n <a href=\"https://1.envato.market/c/97450/298927/4662?u=https://elements.envato.com/advio-friendly-font-9HS26D\">\n      \n        \n        \n          </a><h6><a href=\"https://1.envato.market/c/97450/298927/4662?u=https://elements.envato.com/advio-friendly-font-9HS26D\">Advio</a></h6><a href=\"https://1.envato.market/c/97450/298927/4662?u=https://elements.envato.com/advio-friendly-font-9HS26D\">\n          <span>Decorative</span>\n          <img src=\"https://cl.ly/233R2d0p2o0t/icon_download.svg\" alt=\"\" />\n      \n    </a>\n\n\n\n <a href=\"https://1.envato.market/c/97450/298927/4662?u=https://elements.envato.com/osgard-pro-font-PDVEBR\">\n      \n        \n        \n          </a><h6><a href=\"https://1.envato.market/c/97450/298927/4662?u=https://elements.envato.com/osgard-pro-font-PDVEBR\">Osgard Pro</a></h6><a href=\"https://1.envato.market/c/97450/298927/4662?u=https://elements.envato.com/osgard-pro-font-PDVEBR\">\n          <span>Serif</span>\n          <img src=\"https://cl.ly/233R2d0p2o0t/icon_download.svg\" alt=\"\" />\n      \n    </a>\n\n\n\n <a href=\"https://1.envato.market/c/97450/298927/4662?u=https://elements.envato.com/stephen-gillion-signature-script-TNM3W8\">\n      \n        \n        \n          </a><h6><a href=\"https://1.envato.market/c/97450/298927/4662?u=https://elements.envato.com/stephen-gillion-signature-script-TNM3W8\">Stephen &amp; Gillion</a></h6><a href=\"https://1.envato.market/c/97450/298927/4662?u=https://elements.envato.com/stephen-gillion-signature-script-TNM3W8\">\n          <span>Signature Script</span>\n          <img src=\"https://cl.ly/233R2d0p2o0t/icon_download.svg\" alt=\"\" />\n      \n    </a>\n\n\n  \n\n\n\n\n\n\n<a href=\"https://1.envato.market/c/97450/298927/4662?subId1=htmltopad&amp;subId2=Typography&amp;u=https%3A%2F%2Felements.envato.com\">Download Now</a>\n\n\n<h1>FlowType.JS</h1>\n<p>Ideally, the most legible typography contains between 45 and 75 characters per line. This is difficult to accomplish for all screen widths with only CSS media-queries. FlowType.JS eases this difficulty by changing the font-size—and subsequently the line-height—based on a specific element’s width. This allows for a perfect character count per line at any screen width.</p>\n<p><a href=\"http://simplefocus.com/flowtype/\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/flowtype.jpg\" alt=\"flowtype\" width=\"690\" height=\"450\" /></a></p>\n<h1>BalanceText</h1>\n<p>A jQuery plugin for implementing balancing of wrapping text in a web page.</p>\n<p><a href=\"https://github.com/adobe-webplatform/balance-text\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/Balance.jpg\" alt=\"Balance\" width=\"690\" height=\"536\" /></a></p>\n<h1>Succinct</h1>\n<p>Succinct shortens your text to a specified size, and then adds an ellipsis to the end.</p>\n<p><a href=\"http://micjamking.github.io/succinct/\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/Succinct.jpg\" alt=\"Succinct\" width=\"690\" height=\"442\" /></a></p>\n<h1>Responsive Measures</h1>\n<p>A jQuery plugin for generating a responsive ideal measure.</p>\n<p><a href=\"http://jbrewer.github.com/Responsive-Measure/\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/jquery-typography-1.jpg\" alt=\"jquery-typography-1\" title=\"jquery-typography-1\" width=\"690\" height=\"210\" /></a></p>\n<h1>Lettering.JS</h1>\n<p>Web type is exploding all over the web but CSS currently doesn’t offer complete down-to-the-letter control. So here is jQuery plugin to give you that control.</p>\n<p><a href=\"http://letteringjs.com/\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/letteringjs-2.jpg\" alt=\"letteringjs-2\" title=\"letteringjs-2\" width=\"690\" height=\"242\" /></a></p>\n<h1>The BigText jQuery plugin</h1>\n<p>At its simplest, the BigText jQuery plugin takes a single element and sizes the text inside of its child divs to fit the width of the parent element. Gives the text that lovely vertical alignment.</p>\n<p><a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\">Link</a></p>\n<h1>slabText</h1>\n<p>a jQuery plugin for producing big, bold &amp; responsive headlines</p>\n<p><a href=\"https://github.com/freqdec/slabText\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/slab-4.jpg\" alt=\"slab-4\" title=\"slab-4\" width=\"690\" height=\"279\" /></a></p>\n<h1>FitText</h1>\n<p>FitText makes font-sizes flexible. Use this plugin on your fluid or responsive layout to achieve scalable headlines that fill the width of a parent element.</p>\n<p><a href=\"http://fittextjs.com/\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/fittext-5.jpg\" alt=\"fittext-5\" title=\"fittext-5\" width=\"690\" height=\"233\" /></a></p>\n<h1>Arctext.js</h1>\n<p>While CSS3 allows us to rotate letters, it is quite complicated to arrange each letter along a curved path. Arctext.js is a jQuery plugin that let’s you do exactly that. Based on Lettering.js, it calculates the right rotation of each letter and distributes the letters equally across the imaginary arc of the given radius.</p>\n<p><a href=\"http://tympanus.net/codrops/2012/01/24/arctext-js-curving-text-with-css3-and-jquery/\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/arctext-6.jpg\" alt=\"arctext-6\" title=\"arctext-6\" width=\"690\" height=\"544\" /></a></p>\n<h1>TypeButter</h1>\n<p>TypeButter allows you to set optical kerning for any font on your website. If you’re longing for beautifully laid out text that today’s browsers just don’t provide, this is the plugin for you! </p>\n<p><a href=\"https://github.com/hudsonfoo/typebutter\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/typebutter-7.jpg\" alt=\"typebutter-7\" title=\"typebutter-7\" width=\"690\" height=\"244\" /></a></p>\n<h1>Bacon</h1>\n<p>Bacon is a jQuery plugin that allows you to wrap text around a bezier curve or a line.</p>\n<p><a href=\"http://baconforme.com/\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/bacon-8.jpg\" alt=\"bacon-8\" title=\"bacon-8\" width=\"690\" height=\"489\" /></a></p>\n<h1>Shuffle Letters Effect</h1>\n<p>A jQuery plugin that will shuffle the text content of any DOM element.</p>\n<p><a href=\"http://tutorialzine.com/2011/09/shuffle-letters-effect-jquery/\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/shuffle-9.jpg\" alt=\"shuffle-9\" title=\"shuffle-9\" width=\"690\" height=\"340\" /></a></p>\n<h1>kern.js</h1>\n<p>A super-simple bookmarklet for designers that finally puts you back in control of your website’s typography.</p>\n<p><a href=\"http://www.kernjs.com/\"><img src=\"https://bashooka.com/wp-content/uploads/2012/09/kernjs-10.jpg\" alt=\"kernjs-10\" title=\"kernjs-10\" width=\"690\" height=\"251\" /></a></p>\n       \n\t\t\n\n\t\t\n\t\t\n<h1>Related Posts :</h1>\n<ul><li><a href=\"https://bashooka.com/coding/css-in-react-javascript-libraries/\" title=\"Permanent Link to: 20 Helpful CSS in React JavaScript Libraries\" class=\"u-url\">\n            20 Helpful CSS in React JavaScript Libraries</a></li>\n                    <li><a href=\"https://bashooka.com/coding/javascript-libraries-for-touch-enabled-mobile-sliders/\" title=\"Permanent Link to: 12 Javascript Libraries For Touch-Enabled Mobile Sliders\" class=\"u-url\">\n            12 Javascript Libraries For Touch-Enabled Mobile Sliders</a></li>\n                    <li><a href=\"https://bashooka.com/coding/10-fresh-useful-jquery-plugins-2012/\" title=\"Permanent Link to: 10 Fresh Useful jQuery Plugins 2012\" class=\"u-url\">\n            10 Fresh Useful jQuery Plugins 2012</a></li>\n                    <li><a href=\"https://bashooka.com/coding/css-form-templates/\" title=\"Permanent Link to: 15 Stylish CSS Form Templates\" class=\"u-url\">\n            15 Stylish CSS Form Templates</a></li>\n                    <li><a href=\"https://bashooka.com/coding/cool-jquery-plugins-june-2016/\" title=\"Permanent Link to: 10 Cool jQuery Plugins June 2016\" class=\"u-url\">\n            10 Cool jQuery Plugins June 2016</a></li>\n                    <li><a href=\"https://bashooka.com/coding/css-image-galleries/\" title=\"Permanent Link to: 10 Cool CSS Image Galleries\" class=\"u-url\">\n            10 Cool CSS Image Galleries</a></li>\n                    <li><a href=\"https://bashooka.com/coding/jquery-plugins-for-animating-background/\" title=\"Permanent Link to: 9 jQuery Plugins For Animating Background\" class=\"u-url\">\n            9 jQuery Plugins For Animating Background</a></li>\n                    <li><a href=\"https://bashooka.com/coding/120-best-jquery-tutorials/\" title=\"Permanent Link to: 120+ Best jQuery Tutorials\" class=\"u-url\">\n            120+ Best jQuery Tutorials</a></li>\n        </ul>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 671493,
+			"parentId": 0,
+			"url": "http://www.3ydai.cn/archives/71296",
+			"author": {},
+			"date": "2019-08-20T03:32:08.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 675522,
+			"parentId": 0,
+			"url": "http://www.3ydai.cn/archives/106316",
+			"author": {},
+			"date": "2019-08-25T02:43:17.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 680509,
+			"parentId": 0,
+			"url": "https://twitter.com/missninateaches/status/1167534050904608769",
+			"author": {
+				"name": "Nina Chantanapumma",
+				"url": "https://twitter.com/missninateaches",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0166b9465170f09406312bcd3db820ca1a644cb68eca44ad3d25ea022cf23c3f.jpg"
+			},
+			"date": "2019-08-30T20:26:24.000Z",
+			"content": "Ha! Some of my students were eight years old when you created it! It's the first result when I Google 'big text' and it does what I need it to do, so it's my go-to now. Thanks for sharing your work!\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 680545,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1167535556668080128",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/17b0730965b5e7cdfabfca0c64d8f2d94cf4905b191b19bfcf59fa68f51d2d74.jpg"
+			},
+			"date": "2019-08-30T20:32:23.000Z",
+			"content": "Awesome, this made my day—thank you for sharing\n<a class=\"u-mention\" href=\"https://twitter.com/missninateaches\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 683079,
+			"parentId": 0,
+			"url": "http://anna.borsaendeks.com/the-co-opetition-of-team-web-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "http://anna.borsaendeks.com/author/admin/"
+			},
+			"date": "2019-09-03T12:29:38.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 683123,
+			"parentId": 0,
+			"url": "http://anna.borsaendeks.com/obnoxiously-readable-responsive-text-with-viewport-units-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "http://anna.borsaendeks.com/author/admin/"
+			},
+			"date": "2019-09-03T13:15:20.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 683312,
+			"parentId": 0,
+			"url": "http://anna.borsaendeks.com/a-hypocrites-guide-to-public-speaking-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "http://anna.borsaendeks.com/author/admin/"
+			},
+			"date": "2019-09-03T15:20:50.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 750958,
+			"parentId": 0,
+			"url": "https://inneka.com/programming/css/auto-resize-text-font-size-when-resizing-window-2/",
+			"author": {},
+			"date": "2020-02-01T15:22:07.000Z",
+			"content": "Loading... \n         \n        \n        \n<h2>auto resize text (font size) when resizing window?</h2>\n<pre>\nI have been trying(in vain) to build a page whose elements would resize as I changed the window size. I have it working in css for images no problem, but I can't seem to accomplish the same for text, and I am not sure it is even possible in CSS. And I can't seem to find a jquery script that accomplishes this.\nWhen a user resizes the window, I essentially want the page to scale dynamically and fluidly, without the user having to invoke page zoom. This works fine on my img divs via css, but not for the text, which stays the same size.\nAny ideas?\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>I’ve had to do this myself. What I did was that I set a base text size for the body, and percentages for all other sizes. I then used a simple jQuery script to change the base size on window resize. The other sizes then update as well. </p>\n<p>I used something like this:</p>\n<pre><code>$(function() {\n    $(window).bind('resize', function()\n    {\n        resizeMe();\n        }).trigger('resize');\n    });\n</code></pre>\n<p>and in the resizeMe-function, I had this:</p>\n<pre><code>//Standard height, for which the body font size is correct\nvar preferredHeight = 768;\n//Base font size for the page\nvar fontsize = 18;\n\nvar displayHeight = $(window).height();\nvar percentage = displayHeight / preferredHeight;\nvar newFontSize = Math.floor(fontsize * percentage) - 1;\n$(\"body\").css(\"font-size\", newFontSize);\n</code></pre>\n\n<h3>Answer 2:</h3>\n\n<p>Try a jQuery plugin like <a href=\"http://fittextjs.com/\">FitText</a>. It automatically sizes text to fit the width of the parent element.</p>\n<p>Another jQuery plugin with the same goal is <a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\">BigText</a> (<a href=\"http://www.zachleat.com/bigtext/demo/\">demo</a>).</p>\n\n<h3>Answer 3:</h3>\n\n<p>You can do this with <a href=\"http://www.w3.org/TR/css3-mediaqueries/\">CSS3 media queries</a>, specifying different base font-sizes depending on browser size. There is a good article for this on <a href=\"http://www.alistapart.com/articles/responsive-web-design/\">A List Apart</a></p>\n<p>For IE support you might be able to hack it using <a href=\"http://www.google.com/search?q=ie+css+expression\">CSS expressions</a></p>\n<p>This requires you to use a fixed base font-size, for instance on the <code>body</code> tag, and percentage or <code>em</code> based sizes elsewhere.</p>\n\n<h3>Answer 4:</h3>\n\n<p>Building on Lizzan’s answer, here is a version using the <em>square root of both width and height</em> to get a proportional sizing:</p>\n<pre><code>// When document has finished loading\n$(document).ready(function() {\n\n    var resizeText = function () {\n        // Standard height, for which the body font size is correct\n        var preferredFontSize = 180; // %\n        var preferredSize = 1024 * 768;\n\n        var currentSize = $(window).width() * $(window).height();\n        var scalePercentage = Math.sqrt(currentSize) / Math.sqrt(preferredSize);\n        var newFontSize = preferredFontSize * scalePercentage;\n        $(\"body\").css(\"font-size\", newFontSize + '%');\n    };\n\n    $(window).bind('resize', function() {\n        resizeText();\n    }).trigger('resize');\n\n});\n</code></pre>\n<p>Demo: <a href=\"http://jsfiddle.net/tomsoderlund/26Gad/embedded/result/\">http://jsfiddle.net/tomsoderlund/26Gad/embedded/result/</a></p>\n\n<h3>Answer 5:</h3>\n\n<p>I’m using the trick from <a href=\"http://practicaltypography.com/end-credits.html#bio\">http://practicaltypography.com/end-credits.html#bio</a> M. Butterick:</p>\n\n\n\n\n\n\n\n<pre><code>    &lt;style type=\"text/css\"&gt;\n&lt;!--adattamento font-size a browser width--&gt;\n        @media all {html {font-size: 24px;}}@media all and (max-width:2200px){html {font-size: 27px;}}@media all and (max-width:1800px){html {font-size: 26px;}}@media all and (max-width:1400px){html {font-size: 25px;}}@media all and (max-width:1000px){html {font-size: 24px;}}@media all and (max-width:960px){html {font-size: 23px;}}@media all and (max-width:920px){html {font-size: 22px;}}@media all and (max-width:880px){html {font-size: 21px;}}@media all and (max-width:840px){html {font-size: 20px;}}@media all and (max-width:800px){html {font-size: 19px;}}@media all and (max-width:760px){html {font-size: 18px;}}@media all and (max-width:720px){html {font-size: 17px;}}@media all and (max-width:680px){html {font-size: 16px;}}@media all and (max-width:640px){html {font-size: 15px;}}@media all and (max-width:600px){html {font-size: 14px;}}@media all and (max-width:560px){html {font-size: 13px;}}@media all and (max-width:520px){html {font-size: 12px;}}\n&lt;!--body-format--&gt;\n            body {\n        max-width:1000px;\n        min-width:520px;\n        line-height:1.33em;\n        margin:1em;\n        background-color:#f7f7f7;\n        font-family:Source Sans Pro;\n        color:#361800;\n        }\n    &lt;/style&gt;\n</code></pre>\n\n<h3>Answer 6:</h3>\n\n<p>roryf is on the right track!</p>\n<p>Media Queries is (one of) the answer(s).</p>\n<p>The trick here is to use % for font sizes everywhere starting from body. This way the font size get’s inherited and when you change it in body, it get’s changed everywhere.</p>\n<p>Try something like: </p>\n<pre><code>body { font-size: 100% }\nh1 {font-size: 200% }\n\n@media all and (max-width:600px) {\n    body {font-size: 70%}\n}\n</code></pre>\n<p>When the website width gets smaller then 600px, then the font size will turn to 70% of what it was everywhere, where % is used (also h1 in this example.)</p>\n\n<h3>Answer 7:</h3>\n\n<p>Lizzans answer is perfect! Leave the -1 where it is! Kittens were dying all over the place when I removed it.</p>\n<p>Instead of the fontsize variable, just set it to the standard fontsize for your page. Mine was 16.</p>\n\n<h3>Answer 8:</h3>\n\n<p>You can make resizible text more simple. This solution works for me.<br /><a href=\"http://jsfiddle.net/VooDi/dka48dx8/\">http://jsfiddle.net/VooDi/dka48dx8/</a></p>\n<p>For body set font-size, that equivalent to your current window inner width;</p>\n<p>for jsfiddle 560 px;</p>\n<pre><code>body {\n    font-size: 560px; \n}\n</code></pre>\n<p>js:</p>\n<pre><code>onresize=onload=function() {\n    document.body.style.fontSize=window.innerWidth+\"px\"\n}\n</code></pre>\n<p>and for needed element set font size in percent</p>\n<pre><code>&lt;h1 style=\"font-size:5%\"&gt;Resize this text!!!!&lt;/h1&gt;\n</code></pre>\n<p>Thats all. Hope this helps someone.</p>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 750986,
+			"parentId": 0,
+			"url": "https://inneka.com/programming/css/resize-font-size-according-to-div-size/",
+			"author": {},
+			"date": "2020-02-01T17:23:41.000Z",
+			"content": "Loading... \n         \n        \n        \n<h2>resize font-size according to div size</h2>\n<pre>\nI've made this jsfiddle\nthe html:\n\n\n\n\n\n    \n        </pre><h2> header</h2>\n        <p>not a lot of text here but still overflowing</p>\n    \n\n\n\n\n\n\nwith css:\nhtml, body {\n height: 100%;\n width: 100%;    \n}\n#launchmain {\n width: 55%;\n display: inline-block;\n position: relative;\n    top:10%;\n    left:25%;\n}\n#launchmain:after {\n    padding-top: 79.26%; \n    display: block;\n    content: '';\n    margin-top: 10px;\n}\n#box1\n{\n    border: 1px solid #000000;\n\n    position: absolute;\n    width:25.37%; \n    height:21.88%            \n}\n#box2\n{\n    border: 1px solid #000000;\n    width: 48.48%;\n    height:21.88%;\n    position: absolute;\n    left:25.64%\n}\n#box3\n{\n    border: 1px solid #000000;\n    width:25.37%; \n    height:21.88%;\n    position: absolute;\n    left:74.39%;\n}\n#box4\n{\n    border: 1px solid #000000;\n    width:33.235%; \n    height:53.84%;\n    position: absolute;\n    top:22.07%;\n}\n#maininvite\n{\n    border: 1px solid #000000;\n    width:33.53%; \n    height:53.84%;\n    position: absolute;\n    top:22.07%;\n    left: 33.235%;\n}\n#box6\n{\n    border: 1px solid #000000;\n    width:33.235%; \n    height:53.84%;\n    position: absolute;\n    top:22.07%;\n    left: 66.765%;\n}\n#box7\n{\n    border: 1px solid #000000;\n   width:25.37%; \n    height:21.88% ;\n    position: absolute;\n    top:76.2%;\n\n}\n#box8\n{\n    border: 1px solid #000000;\n  width: 48.48%;\n    height:21.88%;\n    position: absolute;\n   left:25.64%;\n    top:76.2%;\n}\n#box9\n{\n    border: 1px solid #000000;\n    width:25.37%; \n    height:21.88% ;\n    position: absolute;\n    top:76.2%;\n    left:74.39%;\n}\n#maininvite h2{\n\n    font-size: 180%;\n}\n\np{\n    position: relative;\n    font-size: 80%;\n}\n​\n\nIt is made of 9 boxes, with the middle on has text it in.\nI've made it so the boxes so they will resize with the screen resize so it will remain in the same place all the time.\nThe text, however, doesn't resize - even when I use percentage.\n\nHow do I resize the text so it will always be the same ratio from the entire page?\nIs this a proper solution to handle multiple resolutions? or should I have many @media checks in the css and have many layouts for each media types?\n\n\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>In regards to your code, see @Coulton. You’ll need to use JavaScript.</p>\n<p>Checkout either <a href=\"http://fittextjs.com/\">FitText</a> (it does work in IE, they just ballsed their site somehow) or <a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\">BigText</a>.</p>\n<p>FitText will allow you to scale some text in relation to the container it is in, while BigText is more about resizing different sections of text to be the same width within the container.</p>\n<p>BigText will set your string to exactly the width of the container, whereas FitText is less pixel perfect. It starts by setting the font-size at 1/10th of the container element’s width. It doesn’t work very well with all fonts by default, but it has a setting which allows you to decrease or increase the ‘power’ of the re-size. It also allows you to set a min and max font-size. It will take a bit of fiddling to get working the first time, but does work great.</p>\n<p><a href=\"http://marabeas.io\">http://marabeas.io</a> &lt;- playing with it currently here. As far as I understand, BigText wouldn’t work in my context at all.</p>\n<p>For those of you using Angularjs, here’s an <a href=\"http://patrickmarabeas.github.io/ng-FitText.js/\">Angular version</a> of FitText I’ve made.</p>\n<p>Here’s a LESS mixin you can use to make @humanityANDpeace’s solution a little more pretty:</p>\n<pre><code>@mqIterations: 19;\n.fontResize(@i) when (@i &gt; 0) {\n    @media all and (min-width: 100px * @i) { body { font-size:0.2em * @i; } }\n    .fontResize((@i - 1));\n}\n.fontResize(@mqIterations);\n</code></pre>\n<p>And an SCSS version thanks to @NIXin!</p>\n<pre><code>$mqIterations: 19;\n@mixin fontResize($iterations) { \n    $i: 1; \n    @while $i &lt;= $iterations { \n        @media all and (min-width: 100px * $i) { body { font-size:0.2em * $i; } } \n        $i: $i + 1; \n    }\n} \n@include fontResize($mqIterations);\n</code></pre>\n\n<h3>Answer 2:</h3>\n\n<p>My answer does not require Javascript and only relies on CSS3 (available in most modern browsers). I personally like it very much if design is not relying on Javascript too much.</p>\n<p>My answer is a <strong>“pure CSS3 , no Javascript required”</strong>-solution:</p>\n<p>The solution as can be seen here (<a href=\"http://jsfiddle.net/uNF3Z/16/\">http://jsfiddle.net/uNF3Z/16/</a>) uses the following additions to the CSS styles (which make use of the <code>@media</code> query of CSS3 which)</p>\n\n\n\n\n\n\n\n<pre><code>@media all and (min-width: 50px)   {  body  { font-size:0.1em;  } }\n@media all and (min-width: 100px)  {  body  { font-size:0.2em;  } }\n@media all and (min-width: 200px)  {  body  { font-size:0.4em;  } }\n@media all and (min-width: 300px)  {  body  { font-size:0.6em;  } }\n@media all and (min-width: 400px)  {  body  { font-size:0.8em;  } }\n@media all and (min-width: 500px)  {  body  { font-size:1.0em;  } }\n@media all and (min-width: 600px)  {  body  { font-size:1.2em;  } }\n@media all and (min-width: 700px)  {  body  { font-size:1.4em;  } }\n@media all and (min-width: 800px)  {  body  { font-size:1.6em;  } }\n@media all and (min-width: 900px)  {  body  { font-size:1.8em;  } }\n@media all and (min-width: 1000px) {  body  { font-size:2.0em;  } }\n@media all and (min-width: 1100px) {  body  { font-size:2.2em;  } }\n@media all and (min-width: 1200px) {  body  { font-size:2.4em;  } }\n@media all and (min-width: 1300px) {  body  { font-size:2.6em;  } }\n@media all and (min-width: 1400px) {  body  { font-size:2.8em;  } }\n@media all and (min-width: 1500px) {  body  { font-size:3.0em;  } }\n@media all and (min-width: 1500px) {  body  { font-size:3.2em;  } }\n@media all and (min-width: 1600px) {  body  { font-size:3.4em;  } }\n@media all and (min-width: 1700px) {  body  { font-size:3.6em;  } }\n</code></pre>\n<p>What this in effect causes is that the font-size is adjusted to the available screen width. This adjustment is done in steps of 100px (which is finegrained enough for most purposes) and covers a maximum screen width of 1700px which I reckon to be amply (2013) and can by adding further lines be further improved.</p>\n<p>A side benefit is that the adjustment of the font-size is occuring at each resize. This dynamic adjustment (because for instance the browser windows is resized) might not yet be covered by the Javascript based solution.</p>\n\n<h3>Answer 3:</h3>\n\n<p>I was looking for the same funcionality and found this answer. However, I wanted to give you guys a quick update. It’s CSS3’s vmin unit.</p>\n<pre><code>p, li\n{\n  font-size: 1.2vmin;\n}\n</code></pre>\n<p>vmin means ‘whichever is smaller between the 1% of the ViewPort’s height and the 1% of the ViewPort’s width’. </p>\n<p><a href=\"http://www.sitepoint.com/new-css3-relative-font-size/\">More info on SitePoint</a></p>\n\n<h3>Answer 4:</h3>\n\n<p>The answer that i am presenting is very simple, instead of using “px”,”em” or “%”, i’ll use “vw”.<br />\nIn short it might look like this:-<br />\n   h1 {font-size: 5.9vw;}<br />\nwhen used for heading purposes.</p>\n<p>See this:<a href=\"http://css-tricks.com/examples/ViewportTypography/\">Demo</a></p>\n<p>For more details:<a href=\"http://css-tricks.com/viewport-sized-typography/\">Main tutorial</a></p>\n\n<h3>Answer 5:</h3>\n\n<p>Here’s a SCSS version of @Patrick’s mixin.</p>\n<pre><code>$mqIterations: 19;\n@mixin fontResize($iterations)\n{\n  $i: 1;\n  @while $i &lt;= $iterations\n  {\n    @media all and (min-width: 100px * $i) {\n      body { font-size:0.2em * $i; }\n    }\n    $i: $i + 1;\n  }\n}\n@include fontResize($mqIterations);\n</code></pre>\n\n<h3>Answer 6:</h3>\n\n<p>I have had a go to made my own answer to this, in a way I think is easier, please look here:</p>\n<p><a href=\"https://stackoverflow.com/questions/32035079/text-resize-on-browser-resize-my-simple-answer/32035080#32035080\">https://stackoverflow.com/questions/32035079/text-resize-on-browser-resize-my-simple-answer/32035080#32035080</a></p>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 750993,
+			"parentId": 0,
+			"url": "https://inneka.com/programming/css/can-i-set-font-size-relative-to-page-size-2/",
+			"author": {},
+			"date": "2020-02-01T17:53:39.000Z",
+			"content": "Loading... \n         \n        \n        \n<h2>Can I set font-size relative to page size?</h2>\n<pre>\nIs there a way to make font-size relative to the size of the page? Applying percentage as unit refers to the standard font size (like 90% of 12px, not 90% of the page!). This is different from the behaviour of most of the other tags.\nAny way to make the page 'scale up and down' also with fonts? Should I rely on em?\nThanks\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>No you cannot set the size of the font in a percentage relative to the size of the page.</p>\n<p>Sizing in <code>em</code> is based on the size relative to how the font would normally render in 16 point.</p>\n<p>If you’d like your page to scale up and down and keep some sort of scale to itself, the boxes and the font, then setting it out in <code>em</code> would be fine.</p>\n<p>That method will allow for the scaling of fonts and boxes of the page to grow at a relative size to one another and hopefully not have things falling out of bounds and borders.</p>\n\n<h3>Answer 2:</h3>\n\n<p>See the new vh and vw CSS units.  Browser support isn’t great yet.</p>\n<p><a href=\"http://snook.ca/archives/html_and_css/vm-vh-units\">http://snook.ca/archives/html_and_css/vm-vh-units</a></p>\n<p>It landed in WebKit recently:<br /><a href=\"https://bugs.webkit.org/show_bug.cgi?id=27160\">https://bugs.webkit.org/show_bug.cgi?id=27160</a></p>\n<p>In browsers that support it, <code>1 vh</code> is 1% (1/100) of the viewport height, and <code>1 vw</code> is 1% (1/100) of the viewport width.  There are also <code>vmin</code> and <code>vmax</code> units, which represent the smaller of the two and the larger of the two, respectively.</p>\n\n<h3>Answer 3:</h3>\n\n<p>Try a jQuery plugin like <a href=\"http://fittextjs.com/\">FitText</a>. It automatically sizes text to fit the width of the parent element.</p>\n<p>Another jQuery plugin with the same goal is <a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\">BigText</a> (<a href=\"http://www.zachleat.com/bigtext/demo/\">demo</a>).</p>\n\n<h3>Answer 4:</h3>\n\n<p>Heres a little script I made for exacly that (use it as a fallback when vw isnt supported)<br /><a href=\"https://gist.github.com/2475269\">https://gist.github.com/2475269</a></p>\n\n<h3>Answer 5:</h3>\n\n<p>Another non-ideal answer is to use a series of css breakpoints like so:</p>\n<pre><code>h1 { font-size: 22px; color: orange; }\n@media only screen and (max-width: 900px) {\n  h1 { font-size: 20px; color: blue; }\n}\n@media only screen and (max-width: 800px) {\n  h1 { font-size: 18px; color: green; }\n}\n@media only screen and (max-width: 700px) {\n  h1 { font-size: 12px; color: red; }\n}\n</code></pre>\n<p><a href=\"http://jsfiddle.net/8RKhp/\">http://jsfiddle.net/8RKhp/</a></p>\n\n<h3>Answer 6:</h3>\n\n<p>In my view, the range of apparent pixel densities seen by the viewer of a webpage is now massive, from an HTC One held at 12 inches from the face, where there are 5600 pixels/radians to perhaps a 50 inch plasma screen running at 480p, which is about 950 pixels/radians at 4 feet.</p>\n<p>Or put it another way a 20px font is nearly 6x bigger in your field of view on that plasma screen than the latest handset.</p>\n<p>The solution I cooked up was to set the body font size in absolute pixels as a multiple of the <code>window.screenWidth</code> but constrain it to a minimum an maximum number of units, then use em’s for all font sizes after that. The em’s+proper use of headings should mean accessibility is fine.</p>\n<p>I add this function to the page (or it’s JS) to set the size:</p>\n<pre><code>function setFontSize() {\n    pagesized = window.innerWidth / 30; // Proportionate font size to page\n    pagesized = Math.max(pagesized, 14); // Set size to be no less than 14 px\n    pagesized = Math.min(pagesized, 30); // &amp; No greater than 30 px\n    document.body.style.fontSize = pagesized; // Set body default font size\n}\n</code></pre>\n<p>To make this work the following is added to the body tag:</p>\n<pre><code>&lt;body onresize=\"setFontSize()\" onload=\"setFontSize()\"&gt;\n</code></pre>\n<p>You then just use your CSS (or inline formatting) all based on % or em units and things should scale nicely within those bounds.</p>\n<p>Or, in JQuery, you can do:</p>\n<pre><code>$(window).resize(function() {\n    pagesized = $(window).innerWidth() / 30; // Proportionate font size to page\n    pagesized = Math.max(pagesized, 14); // Set size to be no less than 14 px\n    pagesized = Math.min(pagesized, 30); // &amp; No greater than 30 px\n    $('body').css('font-size', pagesized); // Set body default font size\n});\n</code></pre>\n\n<h3>Answer 7:</h3>\n\n<p>At least for Firefox, <code>1em</code> can be used to set the font size related to the font size of the parent. So if you set font-size of body to a value that is in ratio to the size of the page. All fonts under body that use ’em’ as unit will be in relation to the page.</p>\n<p>To do that, you must set the size of the body in relation to the page like <code>height: 100%</code> or width if you want to relate the size to the width.</p>\n<p>Then, you will have to constantly synchronize the body height with the font size. This can be done with ‘onResize’.</p>\n<p>See more detail in the following <a href=\"http://blog.nawaman.net/2010/01/cssjavascript-technique-for-setting-font-size-based-on-the-page-size/#respond\">link</a>.</p>\n\n\n\n\n\n\n\n\n<h3>Answer 8:</h3>\n\n<p>I recommend you use <a href=\"http://developer.yahoo.com/yui/reset/\">YUI reset</a> to unify the font rendering across different browsers. Then check <a href=\"http://developer.yahoo.com/yui/examples/fonts/fonts-size.html\">YUI Font Size</a>. After this you can rely on your fonts to display correctly.</p>\n\n<h3>Answer 9:</h3>\n\n<p>You can solve it like this:</p>\n<pre><code>jQuery(document).ready(function ($) {\n\n// Dynamisches Skalieren von Schriften\nfontSize = function(){\n//ww = $(window).innerWidth();\nww = $('.mainhead').innerWidth(); // Width of the Motherelement\none = ww/100; // 1%\nmultiplcator = one*31; \n$('.mainhead').css({'font-size': multiplcator+'px'});\n}\nfontSize();\n\n\n\n$(window).resize(function() {\nfontSize();\n});\n\n});\n</code></pre>\n<p>When you now set your Fontsize via css it wokes on all browsers like charm</p>\n<pre><code>.mainhead{\nwidth:48%;\nfont: normal 2em Times, Verdana, sans-serif;\n\n}\n</code></pre>\n\n<h3>Answer 10:</h3>\n\n<p>I know it’s already been answered, but i need to share this for future <code>comers</code>, because it took me some precious minutes to figure this out.</p>\n<p>So as mr @random said: <code>em</code> as a unit,  will do the trick.</p>\n<blockquote>\n<p>If you’d like your page to scale up and down and keep some sort of scale to itself, the boxes and the font, then setting it out in em would be fine.</p>\n</blockquote>\n<p>That method will allow for the scaling of fonts and boxes of the page to grow at a relative size to one another and hopefully not have things falling out of bounds and borders.</p>\n<p>Initialise your <code>body</code> with <code>1em</code> as <code>font-size</code> that means <code>100%</code></p>\n<pre><code>body {\n      font-size: 1em; \n}\n</code></pre>\n<p>Then set your element’s <code>font-size</code> as a percentage of it’s parent’s</p>\n<pre><code>.your_element {\n font-size:0.4em /* for example 40% if its parent font-size */\n}\n</code></pre>\n<p>Now the <code>magic</code> of <code>@media</code> queries</p>\n<pre><code>@media all and (max-width: 767px) {\n  body {\n    font-size: 0.4em !important;\n  }\n}\n\n@media all and (min-width: 768px) and (max-width: 1023px) {\n  body {\n    font-size: 0.6em !important;\n  }\n}\n\n@media all and (min-width: 1024px) and (max-width: 1199px) {\n  body {\n    font-size: 0.8em !important;\n  }\n}\n\n@media all and (min-width: 1200px) and (max-width: 1599px) {\n  body {\n    font-size: 1em !important;\n  }\n}\n\n@media all and (min-width: 1600px) and (max-width: 1999px) {\n  body {\n    font-size: 1.2em !important;\n  }\n}\n\n@media all and (min-width: 2000px) and (max-width: 2999px) {\n  body {\n    font-size: 1.6em !important;\n  }\n}\n\n@media all and (min-width: 3000px) and (max-width: 3999px) {\n  body {\n    font-size: 1.8em !important;\n  }\n}\n\n@media all and (min-width: 4000px) {\n  body {\n    font-size: 2em !important;\n  }\n}\n</code></pre>\n<p>And Bingo, have a nice day.</p>\n\n<h3>Answer 11:</h3>\n\n<p>When you say “relative to the size of the page”, what exactly do you mean with “size of the page”? </p>\n<p>The browser window? Then your fonts would change size when the user resizes the window – definitely not what anyone would expect, and pretty bad for usability. People don’t resize windows to see a larger or smaller representation of the whole site, they enlarge them to see a larger <em>section</em> of the site, and make windows smaller to see a specific small section and have space for other windows next to the browser.</p>\n<p>If you mean the size of the screen, that’s even worse since it would mean huge fonts on a 30″ screen. But people don’t buy 30″ screens so they can see huge fonts, they buy them to see multiple windows side by side.</p>\n<p>All in all, using em or something similay is the only sensible way to make a scaleable website, since it will scale relative to the default size, which is/should be relative to what the user can comfortably read.</p>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 751355,
+			"parentId": 0,
+			"url": "https://inneka.com/programming/html/can-i-set-font-size-relative-to-page-size/",
+			"author": {},
+			"date": "2020-02-02T21:12:02.000Z",
+			"content": "Loading... \n         \n        \n        \n<h2>Can I set font-size relative to page size?</h2>\n<pre>\nIs there a way to make font-size relative to the size of the page? Applying percentage as unit refers to the standard font size (like 90% of 12px, not 90% of the page!). This is different from the behaviour of most of the other tags.\nAny way to make the page 'scale up and down' also with fonts? Should I rely on em?\nThanks\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>No you cannot set the size of the font in a percentage relative to the size of the page.</p>\n<p>Sizing in <code>em</code> is based on the size relative to how the font would normally render in 16 point.</p>\n<p>If you’d like your page to scale up and down and keep some sort of scale to itself, the boxes and the font, then setting it out in <code>em</code> would be fine.</p>\n<p>That method will allow for the scaling of fonts and boxes of the page to grow at a relative size to one another and hopefully not have things falling out of bounds and borders.</p>\n\n<h3>Answer 2:</h3>\n\n<p>See the new vh and vw CSS units.  Browser support isn’t great yet.</p>\n<p><a href=\"http://snook.ca/archives/html_and_css/vm-vh-units\">http://snook.ca/archives/html_and_css/vm-vh-units</a></p>\n<p>It landed in WebKit recently:<br /><a href=\"https://bugs.webkit.org/show_bug.cgi?id=27160\">https://bugs.webkit.org/show_bug.cgi?id=27160</a></p>\n<p>In browsers that support it, <code>1 vh</code> is 1% (1/100) of the viewport height, and <code>1 vw</code> is 1% (1/100) of the viewport width.  There are also <code>vmin</code> and <code>vmax</code> units, which represent the smaller of the two and the larger of the two, respectively.</p>\n\n<h3>Answer 3:</h3>\n\n<p>Try a jQuery plugin like <a href=\"http://fittextjs.com/\">FitText</a>. It automatically sizes text to fit the width of the parent element.</p>\n<p>Another jQuery plugin with the same goal is <a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\">BigText</a> (<a href=\"http://www.zachleat.com/bigtext/demo/\">demo</a>).</p>\n\n<h3>Answer 4:</h3>\n\n<p>Heres a little script I made for exacly that (use it as a fallback when vw isnt supported)<br /><a href=\"https://gist.github.com/2475269\">https://gist.github.com/2475269</a></p>\n\n<h3>Answer 5:</h3>\n\n<p>Another non-ideal answer is to use a series of css breakpoints like so:</p>\n<pre><code>h1 { font-size: 22px; color: orange; }\n@media only screen and (max-width: 900px) {\n  h1 { font-size: 20px; color: blue; }\n}\n@media only screen and (max-width: 800px) {\n  h1 { font-size: 18px; color: green; }\n}\n@media only screen and (max-width: 700px) {\n  h1 { font-size: 12px; color: red; }\n}\n</code></pre>\n<p><a href=\"http://jsfiddle.net/8RKhp/\">http://jsfiddle.net/8RKhp/</a></p>\n\n<h3>Answer 6:</h3>\n\n<p>In my view, the range of apparent pixel densities seen by the viewer of a webpage is now massive, from an HTC One held at 12 inches from the face, where there are 5600 pixels/radians to perhaps a 50 inch plasma screen running at 480p, which is about 950 pixels/radians at 4 feet.</p>\n<p>Or put it another way a 20px font is nearly 6x bigger in your field of view on that plasma screen than the latest handset.</p>\n<p>The solution I cooked up was to set the body font size in absolute pixels as a multiple of the <code>window.screenWidth</code> but constrain it to a minimum an maximum number of units, then use em’s for all font sizes after that. The em’s+proper use of headings should mean accessibility is fine.</p>\n<p>I add this function to the page (or it’s JS) to set the size:</p>\n<pre><code>function setFontSize() {\n    pagesized = window.innerWidth / 30; // Proportionate font size to page\n    pagesized = Math.max(pagesized, 14); // Set size to be no less than 14 px\n    pagesized = Math.min(pagesized, 30); // &amp; No greater than 30 px\n    document.body.style.fontSize = pagesized; // Set body default font size\n}\n</code></pre>\n<p>To make this work the following is added to the body tag:</p>\n<pre><code>&lt;body onresize=\"setFontSize()\" onload=\"setFontSize()\"&gt;\n</code></pre>\n<p>You then just use your CSS (or inline formatting) all based on % or em units and things should scale nicely within those bounds.</p>\n<p>Or, in JQuery, you can do:</p>\n<pre><code>$(window).resize(function() {\n    pagesized = $(window).innerWidth() / 30; // Proportionate font size to page\n    pagesized = Math.max(pagesized, 14); // Set size to be no less than 14 px\n    pagesized = Math.min(pagesized, 30); // &amp; No greater than 30 px\n    $('body').css('font-size', pagesized); // Set body default font size\n});\n</code></pre>\n\n<h3>Answer 7:</h3>\n\n<p>At least for Firefox, <code>1em</code> can be used to set the font size related to the font size of the parent. So if you set font-size of body to a value that is in ratio to the size of the page. All fonts under body that use ’em’ as unit will be in relation to the page.</p>\n<p>To do that, you must set the size of the body in relation to the page like <code>height: 100%</code> or width if you want to relate the size to the width.</p>\n<p>Then, you will have to constantly synchronize the body height with the font size. This can be done with ‘onResize’.</p>\n<p>See more detail in the following <a href=\"http://blog.nawaman.net/2010/01/cssjavascript-technique-for-setting-font-size-based-on-the-page-size/#respond\">link</a>.</p>\n\n\n\n\n\n\n\n\n<h3>Answer 8:</h3>\n\n<p>I recommend you use <a href=\"http://developer.yahoo.com/yui/reset/\">YUI reset</a> to unify the font rendering across different browsers. Then check <a href=\"http://developer.yahoo.com/yui/examples/fonts/fonts-size.html\">YUI Font Size</a>. After this you can rely on your fonts to display correctly.</p>\n\n<h3>Answer 9:</h3>\n\n<p>You can solve it like this:</p>\n<pre><code>jQuery(document).ready(function ($) {\n\n// Dynamisches Skalieren von Schriften\nfontSize = function(){\n//ww = $(window).innerWidth();\nww = $('.mainhead').innerWidth(); // Width of the Motherelement\none = ww/100; // 1%\nmultiplcator = one*31; \n$('.mainhead').css({'font-size': multiplcator+'px'});\n}\nfontSize();\n\n\n\n$(window).resize(function() {\nfontSize();\n});\n\n});\n</code></pre>\n<p>When you now set your Fontsize via css it wokes on all browsers like charm</p>\n<pre><code>.mainhead{\nwidth:48%;\nfont: normal 2em Times, Verdana, sans-serif;\n\n}\n</code></pre>\n\n<h3>Answer 10:</h3>\n\n<p>I know it’s already been answered, but i need to share this for future <code>comers</code>, because it took me some precious minutes to figure this out.</p>\n<p>So as mr @random said: <code>em</code> as a unit,  will do the trick.</p>\n<blockquote>\n<p>If you’d like your page to scale up and down and keep some sort of scale to itself, the boxes and the font, then setting it out in em would be fine.</p>\n</blockquote>\n<p>That method will allow for the scaling of fonts and boxes of the page to grow at a relative size to one another and hopefully not have things falling out of bounds and borders.</p>\n<p>Initialise your <code>body</code> with <code>1em</code> as <code>font-size</code> that means <code>100%</code></p>\n<pre><code>body {\n      font-size: 1em; \n}\n</code></pre>\n<p>Then set your element’s <code>font-size</code> as a percentage of it’s parent’s</p>\n<pre><code>.your_element {\n font-size:0.4em /* for example 40% if its parent font-size */\n}\n</code></pre>\n<p>Now the <code>magic</code> of <code>@media</code> queries</p>\n<pre><code>@media all and (max-width: 767px) {\n  body {\n    font-size: 0.4em !important;\n  }\n}\n\n@media all and (min-width: 768px) and (max-width: 1023px) {\n  body {\n    font-size: 0.6em !important;\n  }\n}\n\n@media all and (min-width: 1024px) and (max-width: 1199px) {\n  body {\n    font-size: 0.8em !important;\n  }\n}\n\n@media all and (min-width: 1200px) and (max-width: 1599px) {\n  body {\n    font-size: 1em !important;\n  }\n}\n\n@media all and (min-width: 1600px) and (max-width: 1999px) {\n  body {\n    font-size: 1.2em !important;\n  }\n}\n\n@media all and (min-width: 2000px) and (max-width: 2999px) {\n  body {\n    font-size: 1.6em !important;\n  }\n}\n\n@media all and (min-width: 3000px) and (max-width: 3999px) {\n  body {\n    font-size: 1.8em !important;\n  }\n}\n\n@media all and (min-width: 4000px) {\n  body {\n    font-size: 2em !important;\n  }\n}\n</code></pre>\n<p>And Bingo, have a nice day.</p>\n\n<h3>Answer 11:</h3>\n\n<p>When you say “relative to the size of the page”, what exactly do you mean with “size of the page”? </p>\n<p>The browser window? Then your fonts would change size when the user resizes the window – definitely not what anyone would expect, and pretty bad for usability. People don’t resize windows to see a larger or smaller representation of the whole site, they enlarge them to see a larger <em>section</em> of the site, and make windows smaller to see a specific small section and have space for other windows next to the browser.</p>\n<p>If you mean the size of the screen, that’s even worse since it would mean huge fonts on a 30″ screen. But people don’t buy 30″ screens so they can see huge fonts, they buy them to see multiple windows side by side.</p>\n<p>All in all, using em or something similay is the only sensible way to make a scaleable website, since it will scale relative to the default size, which is/should be relative to what the user can comfortably read.</p>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 751574,
+			"parentId": 0,
+			"url": "https://inneka.com/programming/jquery/auto-resize-text-font-size-when-resizing-window/",
+			"author": {},
+			"date": "2020-02-03T09:22:45.000Z",
+			"content": "Loading... \n         \n        \n        \n<h2>auto resize text (font size) when resizing window?</h2>\n<pre>\nI have been trying(in vain) to build a page whose elements would resize as I changed the window size. I have it working in css for images no problem, but I can't seem to accomplish the same for text, and I am not sure it is even possible in CSS. And I can't seem to find a jquery script that accomplishes this.\nWhen a user resizes the window, I essentially want the page to scale dynamically and fluidly, without the user having to invoke page zoom. This works fine on my img divs via css, but not for the text, which stays the same size.\nAny ideas?\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>I’ve had to do this myself. What I did was that I set a base text size for the body, and percentages for all other sizes. I then used a simple jQuery script to change the base size on window resize. The other sizes then update as well. </p>\n<p>I used something like this:</p>\n<pre><code>$(function() {\n    $(window).bind('resize', function()\n    {\n        resizeMe();\n        }).trigger('resize');\n    });\n</code></pre>\n<p>and in the resizeMe-function, I had this:</p>\n<pre><code>//Standard height, for which the body font size is correct\nvar preferredHeight = 768;\n//Base font size for the page\nvar fontsize = 18;\n\nvar displayHeight = $(window).height();\nvar percentage = displayHeight / preferredHeight;\nvar newFontSize = Math.floor(fontsize * percentage) - 1;\n$(\"body\").css(\"font-size\", newFontSize);\n</code></pre>\n\n<h3>Answer 2:</h3>\n\n<p>Try a jQuery plugin like <a href=\"http://fittextjs.com/\">FitText</a>. It automatically sizes text to fit the width of the parent element.</p>\n<p>Another jQuery plugin with the same goal is <a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\">BigText</a> (<a href=\"http://www.zachleat.com/bigtext/demo/\">demo</a>).</p>\n\n<h3>Answer 3:</h3>\n\n<p>You can do this with <a href=\"http://www.w3.org/TR/css3-mediaqueries/\">CSS3 media queries</a>, specifying different base font-sizes depending on browser size. There is a good article for this on <a href=\"http://www.alistapart.com/articles/responsive-web-design/\">A List Apart</a></p>\n<p>For IE support you might be able to hack it using <a href=\"http://www.google.com/search?q=ie+css+expression\">CSS expressions</a></p>\n<p>This requires you to use a fixed base font-size, for instance on the <code>body</code> tag, and percentage or <code>em</code> based sizes elsewhere.</p>\n\n<h3>Answer 4:</h3>\n\n<p>Building on Lizzan’s answer, here is a version using the <em>square root of both width and height</em> to get a proportional sizing:</p>\n<pre><code>// When document has finished loading\n$(document).ready(function() {\n\n    var resizeText = function () {\n        // Standard height, for which the body font size is correct\n        var preferredFontSize = 180; // %\n        var preferredSize = 1024 * 768;\n\n        var currentSize = $(window).width() * $(window).height();\n        var scalePercentage = Math.sqrt(currentSize) / Math.sqrt(preferredSize);\n        var newFontSize = preferredFontSize * scalePercentage;\n        $(\"body\").css(\"font-size\", newFontSize + '%');\n    };\n\n    $(window).bind('resize', function() {\n        resizeText();\n    }).trigger('resize');\n\n});\n</code></pre>\n<p>Demo: <a href=\"http://jsfiddle.net/tomsoderlund/26Gad/embedded/result/\">http://jsfiddle.net/tomsoderlund/26Gad/embedded/result/</a></p>\n\n<h3>Answer 5:</h3>\n\n<p>I’m using the trick from <a href=\"http://practicaltypography.com/end-credits.html#bio\">http://practicaltypography.com/end-credits.html#bio</a> M. Butterick:</p>\n\n\n\n\n\n\n\n<pre><code>    &lt;style type=\"text/css\"&gt;\n&lt;!--adattamento font-size a browser width--&gt;\n        @media all {html {font-size: 24px;}}@media all and (max-width:2200px){html {font-size: 27px;}}@media all and (max-width:1800px){html {font-size: 26px;}}@media all and (max-width:1400px){html {font-size: 25px;}}@media all and (max-width:1000px){html {font-size: 24px;}}@media all and (max-width:960px){html {font-size: 23px;}}@media all and (max-width:920px){html {font-size: 22px;}}@media all and (max-width:880px){html {font-size: 21px;}}@media all and (max-width:840px){html {font-size: 20px;}}@media all and (max-width:800px){html {font-size: 19px;}}@media all and (max-width:760px){html {font-size: 18px;}}@media all and (max-width:720px){html {font-size: 17px;}}@media all and (max-width:680px){html {font-size: 16px;}}@media all and (max-width:640px){html {font-size: 15px;}}@media all and (max-width:600px){html {font-size: 14px;}}@media all and (max-width:560px){html {font-size: 13px;}}@media all and (max-width:520px){html {font-size: 12px;}}\n&lt;!--body-format--&gt;\n            body {\n        max-width:1000px;\n        min-width:520px;\n        line-height:1.33em;\n        margin:1em;\n        background-color:#f7f7f7;\n        font-family:Source Sans Pro;\n        color:#361800;\n        }\n    &lt;/style&gt;\n</code></pre>\n\n<h3>Answer 6:</h3>\n\n<p>roryf is on the right track!</p>\n<p>Media Queries is (one of) the answer(s).</p>\n<p>The trick here is to use % for font sizes everywhere starting from body. This way the font size get’s inherited and when you change it in body, it get’s changed everywhere.</p>\n<p>Try something like: </p>\n<pre><code>body { font-size: 100% }\nh1 {font-size: 200% }\n\n@media all and (max-width:600px) {\n    body {font-size: 70%}\n}\n</code></pre>\n<p>When the website width gets smaller then 600px, then the font size will turn to 70% of what it was everywhere, where % is used (also h1 in this example.)</p>\n\n<h3>Answer 7:</h3>\n\n<p>Lizzans answer is perfect! Leave the -1 where it is! Kittens were dying all over the place when I removed it.</p>\n<p>Instead of the fontsize variable, just set it to the standard fontsize for your page. Mine was 16.</p>\n\n<h3>Answer 8:</h3>\n\n<p>You can make resizible text more simple. This solution works for me.<br /><a href=\"http://jsfiddle.net/VooDi/dka48dx8/\">http://jsfiddle.net/VooDi/dka48dx8/</a></p>\n<p>For body set font-size, that equivalent to your current window inner width;</p>\n<p>for jsfiddle 560 px;</p>\n<pre><code>body {\n    font-size: 560px; \n}\n</code></pre>\n<p>js:</p>\n<pre><code>onresize=onload=function() {\n    document.body.style.fontSize=window.innerWidth+\"px\"\n}\n</code></pre>\n<p>and for needed element set font size in percent</p>\n<pre><code>&lt;h1 style=\"font-size:5%\"&gt;Resize this text!!!!&lt;/h1&gt;\n</code></pre>\n<p>Thats all. Hope this helps someone.</p>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 870877,
+			"parentId": 0,
+			"url": "https://tomweb.sk/typography-7-tips-for-headlines/",
+			"author": {},
+			"date": "2020-10-10T09:20:17.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 873168,
+			"parentId": 0,
+			"url": "https://www.doublemesh.com/free-jquery-plugins-for-better-web-typography/",
+			"author": {},
+			"date": "2020-10-12T14:18:43.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 961126,
+			"parentId": 0,
+			"url": "https://qa.code-404.net/%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%b5%e3%82%a4%e3%82%ba%e3%81%ab%e5%90%88%e3%82%8f%e3%81%9b%e3%81%a6%e3%83%95%e3%82%a9%e3%83%b3%e3%83%88%e3%82%b5%e3%82%a4%e3%82%ba%e3%82%92%e8%a8%ad%e5%ae%9a%e3%81%a7/",
+			"author": {
+				"name": "プログラミングQA.com"
+			},
+			"date": "2020-12-24T00:12:54.000Z",
+			"content": "<h5>ページサイズに合わせてフォントサイズを設定できますか？</h5>\n<p>ページのサイズに対して `+ font-size`を作成する方法はありますか？ 単位としてパーセンテージを適用することは、標準フォントサイズを参照します（12pxの90％、ページの90％ではありません）。 これは他のほとんどのタグの動作とは異なります。</p>\n<p>フォントでもページを拡大縮小する方法はありますか。 `+ em +`に依存すべきですか？</p>\n<p>ありがとう</p>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689\"><i></i></a>　<i></i> 22　<i></i> 3</p>\n\n\n<p><b></b></p>\n\n<i></i> ベストアンサー\n<p></p>\n<p>新しいvhおよびvw CSSユニットを見てください。 ブラウザのサポートはまだ素晴らしいものではありません。</p>\n<a href=\"http://snook.ca/archives/html_and_css/vm-vh-units\" title=\"Sizing with CSS3's vw and vh units\">\n<span></span>\n<img src=\"https://qa.code-404.net/wp-content/uploads/cocoon-resources/blog-card-cache/8ba0eb1be845e2dc53783481da2419f6.gif\" alt=\"\" width=\"160\" height=\"90\" />\nSizing with CSS3's vw and vh units\nCSS3 introduces a few new units. (Oh wait, I've said that before.) So, you've heard about px, pt, em, and the fancy new rem. Let's look at a couple more: vw and...\n\n\n<img src=\"https://www.google.com/s2/favicons?domain=snook.ca\" alt=\"\" width=\"16\" height=\"16\" />\nsnook.ca\n\n</a>\n<p>それは最近WebKitに上陸しました：https://bugs.webkit.org/show_bug.cgi?id=27160</p>\n<p>それをサポートするブラウザでは、「+ 1 vh 」はビューポートの高さの1％（1/100）であり、「 1 vw 」はビューポートの幅の1％（1/100）です。 また、「 vmin 」および「 vmax +」ユニットがあり、それぞれ2つの小さい方と大きい方を表します。</p>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/9918439\">Source</a></p>\n\n\n<p><i></i> 32</p>\n<p>いいえ、フォントのサイズをページのサイズに対する割合で設定することはできません。</p>\n<p>「+ em +」でのサイズ変更は、フォントが通常16ポイントでレンダリングされる方法に相対的なサイズに基づいています。</p>\n<p>ページを拡大縮小して、それ自体、ボックスおよびフォントに何らかのスケールを維持したい場合は、「+ em +」で設定するのが適切です。</p>\n<p>この方法では、ページのフォントやボックスの大きさを相対的に大きくしたり、境界から外れたものがないようにすることができます。</p>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/1181741\">Source</a></p>\n\n\n<p><i></i> 17</p>\n\n\n<pre>http://fittextjs.com/[FitText]のようなjQueryプラグインを試してください。 それは自動的に親要素の幅に合うようにテキストのサイズを変更します。</pre>\n<p>同じ目標を持つ別のjQueryプラグインは <a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\">BigText</a>（http://www.zachleat.com/bigtext/demo/[demo]） 。</p>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/7155012\">Source</a></p>\n\n\n<p><i></i> 8</p>\n<p>私がそのために作ったちょっとしたスクリプトがここにあります（vwがサポートされていないときのフォールバックとしてそれを使ってください）https://gist.github.com/2475269</p>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/10295988\">Source</a></p>\n\n\n<p><i></i> 4</p>\n\n\n<p>別の理想的でない答えは、こんな感じで一連のcssブレークポイントを使うことです：</p>\n<pre>h1 {フォントサイズ：22ピクセル。オレンジ色; @メディアのみの画面と（最大幅：900ピクセル）{h1 {フォントサイズ：20ピクセル;青色; @mediaのみの画面と（最大幅：800ピクセル）{h1 {フォントサイズ：18ピクセル;色：グリーン。 @mediaのみの画面と（最大幅：700ピクセル）{h1 {フォントサイズ：12ピクセル;}赤色; }}</pre>\n<a href=\"http://jsfiddle.net/8RKhp/\" title=\"Edit fiddle - JSFiddle - Code Playground\">\n<span></span>\n<img src=\"https://s0.wordpress.com/mshots/v1/http%3A%2F%2Fjsfiddle.net%2F8RKhp%2F?w=160&amp;h=90\" alt=\"\" width=\"160\" height=\"90\" />\nEdit fiddle - JSFiddle - Code Playground\nTest your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.\n\n\n<img src=\"https://www.google.com/s2/favicons?domain=jsfiddle.net\" alt=\"\" width=\"16\" height=\"16\" />\njsfiddle.net\n\n</a>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/19239179\">Source</a></p>\n\n\n<p><i></i> 4</p>\n<p>私の考えでは、Webページの閲覧者から見た見かけのピクセル密度の範囲は、顔から12インチに保持されたHTC Oneから、5600ピクセル/ラジアン、おそらく480pで動作する50インチのプラズマスクリーンまで、今では膨大です。これは4フィートで約950ピクセル/ラジアンです。</p>\n<p>別の言い方をすれば、20pxフォントは最新の携帯電話よりもプラズマスクリーン上の視野の6倍近く大きいということです。</p>\n<p>私が作成した解決策は、ボディフォントサイズを絶対ピクセルで「+ window.screenWidth +」の倍数として設定し、最小ユニットの最大数に制限し、その後すべてのフォントサイズにemを使用することでした。 emの見出しの適切な使用は、アクセシビリティが問題ないことを意味するはずです。</p>\n<p>サイズを設定するために、この関数をページ（またはJS）に追加します。</p>\n<pre>function setFontSize() {\n    pagesized = window.innerWidth / 30; // Proportionate font size to page\n    pagesized = Math.max(pagesized, 14); // Set size to be no less than 14 px\n    pagesized = Math.min(pagesized, 30); // &amp; No greater than 30 px\n    document.body.style.fontSize = pagesized; // Set body default font size\n}</pre>\n<p>これを機能させるために、bodyタグに以下が追加されます。</p>\n<pre></pre>\n<p>それから、あなたはCSS（またはインラインフォーマット）をすべて％またはemの単位に基づいて使うだけで、物事はそれらの範囲内でうまく拡大するはずです。</p>\n<p>あるいは、JQueryでは、次のことができます。</p>\n<pre>$(window).resize(function() {\n    pagesized = $(window).innerWidth() / 30; // Proportionate font size to page\n    pagesized = Math.max(pagesized, 14); // Set size to be no less than 14 px\n    pagesized = Math.min(pagesized, 30); // &amp; No greater than 30 px\n    $('body').css('font-size', pagesized); // Set body default font size\n});</pre>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/16141928\">Source</a></p>\n\n\n<p><i></i> 3</p>\n\n\n<p>少なくともFirefoxの場合、「+ 1em +」を使用して、親のフォントサイズに関連するフォントサイズを設定できます。 つまり、bodyのfont-sizeをページのサイズに比例した値に設定すれば。 単位として「em」を使用する本文下のすべてのフォントは、ページに関連します。</p>\n<p>そのためには、ページに関連して本文のサイズを「+ height：100％+」または幅に関連付ける場合は幅を設定する必要があります。</p>\n<p>その後、体の高さとフォントサイズを常に同期させる必要があります。 これは ‘onResize’で行うことができます。</p>\n<p>詳細については、次のURLをご覧ください。</p>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/2069700\">Source</a></p>\n\n\n<p><i></i> 2</p>\n<p>異なるブラウザ間でフォントの表示を統一するには、 <a href=\"https://developer.yahoo.com/yui/reset/\">YUI reset</a>を使用することをお勧めします。 それから <a href=\"https://developer.yahoo.com/yui/examples/fonts/fonts-size.html\">YUIフォントサイズ</a>をチェックしてください。 この後、あなたは正しく表示するためにあなたのフォントに頼ることができます。</p>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/1181713\">Source</a></p>\n\n\n<p><i></i> 0</p>\n\n\n<p>あなたはこのようにそれを解決することができます：</p>\n<pre>jQuery（document）.ready（関数（$）{\n\n// Dynamisches Skalieren von Schriften\nfontSize = function（）{\n//ww = $(window).innerWidth();\nww = $（ '。mainhead'）。innerWidth（）; // Motherelementの幅one = ww / 100; // 1％乗数= one * 31; $（ '。mainhead'）。css（{'font-size'：乗数 'px'}）; } フォントサイズ（）;\n\n\n$（ウィンドウ）.resize（function（）{fontSize（）;}）;\n\n;））;</pre>\n<p>あなたが今cssによってあなたのFontsizeを設定するとき、それは魅力のようにすべてのブラウザで目覚めます</p>\n<pre>.mainhead{\n幅：48％。フォント：通常2秒タイムズ、ヴェルダナ、サンセリフ。\n\n}</pre>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/17044576\">Source</a></p>\n\n\n<p><i></i> 0</p>\n<p>すでに回答されていることは知っていますが、将来の「カマーズ」のためにこれを共有する必要があります。</p>\n<p>@random氏が言ったように、「+ em +」をユニットとして、トリックを行います。</p>\n<p><em><em>_</em><em><br /> ページを拡大縮小して、それ自体、ボックス、およびフォントに何らかのスケールを維持したい場合は、emで設定するのが適切です。<br /></em><em></em>_</em></p>\n<p>この方法では、ページのフォントやボックスの大きさを相対的に大きくしたり、境界から外れたものがないようにすることができます。</p>\n<p>`+ em `で ` body `を ` font-size `として初期化します。これは ` 100％+`を意味します</p>\n<pre>body {\n      font-size: 1em;\n}</pre>\n<p>次に、要素の `+ font-size +`を親の割合として設定します</p>\n<pre>.your_element {\n font-size:0.4em /* for example 40% if its parent font-size */\n}</pre>\n<p>これで、 <code>+ @ media +`クエリの `+ magic +</code></p>\n<pre>@media all and (max-width: 767px) {\n  body {\n    font-size: 0.4em !important;\n  }\n}\n\n@media all and (min-width: 768px) and (max-width: 1023px) {\n  body {\n    font-size: 0.6em !important;\n  }\n}\n\n@media all and (min-width: 1024px) and (max-width: 1199px) {\n  body {\n    font-size: 0.8em !important;\n  }\n}\n\n@media all and (min-width: 1200px) and (max-width: 1599px) {\n  body {\n    font-size: 1em !important;\n  }\n}\n\n@media all and (min-width: 1600px) and (max-width: 1999px) {\n  body {\n    font-size: 1.2em !important;\n  }\n}\n\n@media all and (min-width: 2000px) and (max-width: 2999px) {\n  body {\n    font-size: 1.6em !important;\n  }\n}\n\n@media all and (min-width: 3000px) and (max-width: 3999px) {\n  body {\n    font-size: 1.8em !important;\n  }\n}\n\n@media all and (min-width: 4000px) {\n  body {\n    font-size: 2em !important;\n  }\n}</pre>\n<p>そしてビンゴ、良い一日を。</p>\n\n<p><a href=\"https://stackoverflow.com/questions/1181689/46376016\">Source</a></p>\n\n\n<p><i></i> 0</p>\n\n\n\nシェアする\n\n<a href=\"https://twitter.com/intent/tweet?text=%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F&amp;url=https%3A%2F%2Fqa.code-404.net%2F%25e3%2583%259a%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2581%25ab%25e5%2590%2588%25e3%2582%258f%25e3%2581%259b%25e3%2581%25a6%25e3%2583%2595%25e3%2582%25a9%25e3%2583%25b3%25e3%2583%2588%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2582%2592%25e8%25a8%25ad%25e5%25ae%259a%25e3%2581%25a7%2F\"><span></span><span>Twitter</span><span></span></a><a href=\"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqa.code-404.net%2F%25e3%2583%259a%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2581%25ab%25e5%2590%2588%25e3%2582%258f%25e3%2581%259b%25e3%2581%25a6%25e3%2583%2595%25e3%2582%25a9%25e3%2583%25b3%25e3%2583%2588%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2582%2592%25e8%25a8%25ad%25e5%25ae%259a%25e3%2581%25a7%2F&amp;t=%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F\"><span></span><span>Facebook</span><span></span></a><a href=\"https://b.hatena.ne.jp/entry/s/qa.code-404.net/%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%A7/\" title=\"ページサイズに合わせてフォントサイズを設定できますか？\"><span></span><span>はてブ</span><span></span></a><a href=\"https://getpocket.com/edit?url=https://qa.code-404.net/%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%A7/\"><span></span><span>Pocket</span><span></span></a><a href=\"https://timeline.line.me/social-plugin/share?url=https%3A%2F%2Fqa.code-404.net%2F%25e3%2583%259a%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2581%25ab%25e5%2590%2588%25e3%2582%258f%25e3%2581%259b%25e3%2581%25a6%25e3%2583%2595%25e3%2582%25a9%25e3%2583%25b3%25e3%2583%2588%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2582%2592%25e8%25a8%25ad%25e5%25ae%259a%25e3%2581%25a7%2F\"><span></span><span>LINE</span><span></span></a><a href=\"https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fqa.code-404.net%2F%25e3%2583%259a%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2581%25ab%25e5%2590%2588%25e3%2582%258f%25e3%2581%259b%25e3%2581%25a6%25e3%2583%2595%25e3%2582%25a9%25e3%2583%25b3%25e3%2583%2588%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2582%2592%25e8%25a8%25ad%25e5%25ae%259a%25e3%2581%25a7%2F\"><span></span><span>Pinterest</span><span></span></a><a href=\"https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fqa.code-404.net%2F%25e3%2583%259a%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2581%25ab%25e5%2590%2588%25e3%2582%258f%25e3%2581%259b%25e3%2581%25a6%25e3%2583%2595%25e3%2582%25a9%25e3%2583%25b3%25e3%2583%2588%25e3%2582%25b5%25e3%2582%25a4%25e3%2582%25ba%25e3%2582%2592%25e8%25a8%25ad%25e5%25ae%259a%25e3%2581%25a7%2F\"><span></span><span>LinkedIn</span><span></span></a><a href=\"https://qa.code-404.net/%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AB%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%A7/\"><span></span><span>コピー</span><span></span></a>\n\n\n\nadminをフォローする\n\n<a href=\"https://feedly.com/i/discover/sources/search/feed/https%3A%2F%2Fqa.code-404.net\" title=\"feedlyで更新情報を購読\"><span></span><span></span></a><a href=\"https://qa.code-404.net/feed/\" title=\"RSSで更新情報をフォロー\"><span></span></a>\n\n\n\n<span></span> <a href=\"https://qa.code-404.net\"><span class=\"p-author h-card\"><span class=\"p-name\">プログラミングQA.com</span></span></a>\n\n\n\n<img src=\"https://qa.code-404.net/wp-content/themes/cocoon-master/images/no-amp-logo.png\" width=\"206\" height=\"60\" alt=\"\" />\nプログラミングQA.com",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1294976,
+			"parentId": 0,
+			"url": "https://photolens.tech/automatically-decrease-font-size-for-long-words/",
+			"author": {},
+			"date": "2021-10-22T08:01:32.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1324078,
+			"parentId": 0,
+			"url": "https://codebug.zone/disminuya-automaticamente-el-tamano-de-fuente-para-palabras-largas/",
+			"author": {},
+			"date": "2021-12-31T02:05:38.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1330596,
+			"parentId": 0,
+			"url": "https://xn--diseopaginaswebya-ixb.es/titulares-tipograficos-perfectamente-receptivos-con-css-y-javascript/",
+			"author": {},
+			"date": "2022-01-13T02:47:55.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1443865,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1552357549751558144",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-07-27T18:17:35.000Z",
+			"content": "nothing like a super relevant post from 2011 😅 <a href=\"https://www.zachleat.com/web/bigtext-makes-text-big/\">zachleat.com/web/bigtext-ma…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/type__error\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1443866,
+			"parentId": 0,
+			"url": "https://twitter.com/raymondcamden/status/1552358046592110593",
+			"author": {
+				"name": "Raymond Camden",
+				"url": "https://twitter.com/raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/144ca13ad853cdf18b01b797ea6d6fa1fa8bcb520fa14f725ac7e43cf384074e.jpg"
+			},
+			"date": "2022-07-27T18:19:34.000Z",
+			"content": "it's not really on topic but im curious - would this be doable via simple CSS now?\n<a class=\"u-mention\" href=\"https://twitter.com/type__error\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1443867,
+			"parentId": 0,
+			"url": "https://twitter.com/davidrhoden/status/1552360022176370689",
+			"author": {
+				"name": "David Rhoden",
+				"url": "https://twitter.com/davidrhoden",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8bf05d3963252f33fe4ccae5ce406f9914540a62dd6e60f291264b15a9a1fcd6.png"
+			},
+			"date": "2022-07-27T18:27:25.000Z",
+			"content": "Well, I'll be.... I never made the connection you did this. I've been using BigText for years to make \"flyers\" for my friend's band.\n<a href=\"https://lukespurrallen.com/index.php?p=pastshows\">lukespurrallen.com/index.php?p=pa…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/type__error\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/bigtext-makes-text-big/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1443868,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1552361828516249602",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-07-27T18:34:36.000Z",
+			"content": "oh wow—those look incredible! 🏆\n<a class=\"u-mention\" href=\"https://twitter.com/davidrhoden\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/type__error\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1543453,
+			"parentId": 0,
+			"url": "https://123stack.one/blog/2010/06/07/%e8%aa%bf%e6%95%b4%e7%aa%97%e5%8f%a3%e5%a4%a7%e5%b0%8f%e6%99%82%e8%87%aa%e5%8b%95%e8%aa%bf%e6%95%b4%e6%96%87%e6%9c%ac%e5%a4%a7%e5%b0%8f%ef%bc%88%e5%ad%97%e9%ab%94%e5%a4%a7%e5%b0%8f%ef%bc%89%ef%bc%9f/",
+			"author": {},
+			"date": "2022-10-22T14:41:38.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1545042,
+			"parentId": 0,
+			"url": "https://fallosweb.com/cambiar-el-tamano-de-la-fuente-segun-el-tamano-div-duplicado/",
+			"author": {},
+			"date": "2022-10-26T10:45:20.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1628685,
+			"parentId": 0,
+			"url": "https://64byte.net/2013/07/responsive-text-size-using-ems/",
+			"author": {},
+			"date": "2023-02-23T12:14:09.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1661849,
+			"parentId": 0,
+			"url": "https://web3mantra.com/2017/07/24/jquery-typography-plugins/",
+			"author": {},
+			"date": "2023-04-14T11:04:16.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1700566,
+			"parentId": 0,
+			"url": "https://voxlore.com/11-most-useful-jquery-plugins-to-enhance-typography/",
+			"author": {},
+			"date": "2023-08-02T16:23:20.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1716156,
+			"parentId": 0,
+			"url": "https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/",
+			"author": {},
+			"date": "2023-09-14T12:24:20.000Z",
+			"content": "<p></p>\n\t\n\t\n\n\n\n\n\n<p></p>\n\t\n\n\t\n\t\n\n\n<p></p>\n\t\n\t\n\n\n\n\n\n\n<p>Nota: El siguiente artículo le ayudará: 11 complementos de JQuery que pueden mejorar su tipografía\n</p>\n<p>    Hay varios complementos de tipografía jQuery maravillosos que brindan a los diseñadores web más control sobre la tipografía web de sus sitios web.  Con la ayuda de un diseñador experto, puede aprovechar el poder de jQuery en las páginas web para lograr un alto nivel de elegancia y sofisticación tipográfica.  A continuación se muestra una lista de los mejores complementos de jQuery que sirven para una variedad de propósitos relacionados con la tipografía web, desde ayudar a implementar @font-face hasta proporcionar una mejor usabilidad y funcionalidad para el usuario de fuentes de su sitio web.\n</p>\n<h3><span></span>1. <a href=\"http://letteringjs.com/\">Letras.js</a><span></span></h3>\n<p> <a href=\"http://letteringjs.com/\"></a> <a href=\"http://letteringjs.com/#gallery\">Ver demostración</a> Lettering.js es un complemento jQuery diseñado para permitir una “tipografía web radical”, brindando a los diseñadores la capacidad de establecer tipografías dinámicas y llamativas que serían prohibitivamente difíciles o imposibles con otros métodos.  El objetivo de Lettering.js es brindarle control total sobre el tipo de página web, hasta la manipulación de letras individuales. </p>\n<h3><span></span>2.  <a href=\"https://fortes.com/2007/jmetronome-using-jquery-to-keep-typographic-rhythm/\">jMetrónomo</a><span></span></h3>\n\n\n\n\n<p></p>\n\t\n\n\t\n\t\n\t\n\n\n<p></p>\n\t\n\n\n\n\n<p></p>\n\t\n\t\n\n\n\n\n\n\n\n\n\n\n<p></p>\n\t\n\n\n\n\n<p></p>\n\t\n\n\t\n\t\n\t\n\n\n<p></p>\n\t\n\t\n\n\n\n\n\n\n\n\n\n<p>        Ver demostración Un concepto popular en tipografía que ayuda con el espaciado y la disposición de fuentes hermosas y fáciles de leer se llama <a href=\"http://24ways.org/2006/compose-to-a-vertical-rhythm\">ritmo tipográfico</a>.  Esta es la idea, muy extendida en el mundo de la tipografía, de que la relación entre texto y espacio en un documento crea un ritmo visual que afecta el tono estético general y la legibilidad del documento. </p>\n<p> Cuando las páginas web tienen texto continuo intercalado con imágenes, tablas, citas y otros elementos, puede resultar difícil mantener el ritmo vertical sin sacrificar la edición y la flexibilidad del contenido.</p>\n\n\n\n\n<p></p>\n\t\n\t\n\n\n\n\n<p></p>\n\t\n\t\n\t\n\n\n\n\n\n<p>  El complemento jMetronome para jQuery facilita mantener el ritmo tipográfico de una página web incluso cuando se agregan elementos no textuales.\n</p>\n<h3><span></span>3. <a href=\"http://fittextjs.com/\">Ajustar texto</a><span></span></h3>\n<p> <a href=\"http://fittextjs.com/\"></a>    FitText le ayuda con la composición tipográfica, especialmente al crear diseños web adaptables.  El complemento escala automáticamente los elementos de texto según el tamaño de visualización del navegador.  Un escenario de ejemplo sería si desea que sus títulos se reduzcan cuando se ven en dispositivos móviles para reducir la cantidad de espacio en la pantalla que ocupan.\n</p>\n<h3><span></span>4. Efecto de fuente<span></span></h3>\n<p>        Ver demostración FontEffect es un complemento de jQuery que brinda a los diseñadores la capacidad de aplicar efectos de texto como contornos, sombras, degradados y reflejos a elementos de texto HTML normales.  Esto significa que FontEffect aplica los efectos deseados sin necesidad de imágenes.  Aunque estos efectos de texto se pueden lograr usando CSS3, FontEffect podría ser útil si prefiere o necesita usar JavaScript.</p>\n<h3><span></span>5. Enfoque jQuery<span></span></h3>\n\n\n\n\n<p></p>\n\t\n\n\n\n\n\n<p></p>\n\t\n\t\n\t\n\n\n\n\n<p>        Ver demostración Este complemento jQuery brinda a los diseñadores web la capacidad de cambiar objetos de texto dependiendo de la proximidad del cursor del mouse del usuario.  Por ejemplo, un diseñador puede utilizar Approach para configurar un elemento de texto para que se vuelva más pequeño y brillante a medida que el cursor se acerca a él, y para que se expanda y se oscurezca a medida que se aleja. </p>\n<p> Este es un excelente complemento para diseñadores que desean brindar a los usuarios una experiencia interactiva cuando visitan el sitio web.</p>\n<h3><span></span>6. jqIsoTexto<span></span></h3>\n<p>  <a href=\"http://workshop.rs/projects/jqisotext/\">Ver demostración</a> El complemento jqIsoText jQuery es un complemento simple que hace una cosa: crea un efecto abultado donde los caracteres del elemento de texto de destino se hacen más grandes a medida que te acercas al centro, y luego se hacen más pequeños a medida que llegas al último carácter.  Imita una apariencia isométrica/reflectante lo mejor que puede. </p>\n\n\n\n\n<p></p>\n\t\n\t\n\t\n\n\n\n<p></p>\n\t\n\n\n\n\n\n\n<p> Es un complemento interesante, divertido y de un solo propósito que puede resultar útil para llamar la atención sobre contenido textual importante utilizando principios de diseño especiales.</p>\n<h3><span></span>7. Aeropuerto<span></span></h3>\n<p>        El complemento Airport jQuery es un complemento de animación de texto que imita los antiguos paneles de información/horarios parpadeantes que solía ver en aeropuertos, estaciones de tren, paradas de autobús, etc.  Este complemento le ofrece la oportunidad de diseñar y animar creativamente los textos que haya creado y desee llamar la atención.\n</p>\n<h3><span></span>8vo. <a href=\"https://github.com/nakajima/jquery-glow\">Resplandor jQuery</a><span></span></h3>\n<p> <a href=\"https://github.com/nakajima/jquery-glow\"></a> <a href=\"https://github.com/nakajima/jquery-glow\">Ver demostración</a> Como sugiere el nombre, este sencillo complemento de jQuery te brinda la posibilidad de hacer que tu texto brille cuando pasas el cursor sobre él.  Aunque se puede lograr un efecto similar con CSS3 (consulte algunos experimentos y demostraciones interesantes de CSS3 para obtener ideas), aparte del hecho de que muchos usuarios todavía no usan navegadores web compatibles con CSS3, puede lograr el efecto de brillo usando JavaScript basado en eso. , vincula eventos fuera de hover, trigger, focus, etc. que CSS no puede escuchar.\n</p>\n<h3><span></span>9. Complemento jQuery sIFR<span></span></h3>\n\n\n\n\n<p></p>\n\t\n\n\n\n\n<p></p>\n\t\n\t\n\t\n\n\n\n\n<p>        El complemento jQuery sIFR permite una fácil implementación de sIFR (Reemplazo escalable de Flash Inman).  sIFR es un método antiguo de renderizar texto que utiliza fuentes no seguras para la web.  Utiliza Flash.\n</p>\n<p>    Aunque @font-face es ahora el método popular para crear textos web con fuentes personalizadas, puede haber limitaciones que le lleven a elegir sIFR.  (Sin embargo, sIFR tiene sus propios inconvenientes que también pueden disuadirle). </p>\n<h3><span></span>10.  <a href=\"http://angstrey.com/index.php/projects/jquery-text-resizer-plugin/\">Complemento jQuery Text Resizer</a><span></span></h3>\n<p> <a href=\"http://angstrey.com/index.php/projects/jquery-text-resizer-plugin/\"></a> <a href=\"http://angstrey.com/index.php/projects/jquery-text-resizer-plugin/#demos\">Ver demostración</a> El complemento jQuery Text Resizer brinda a sus usuarios cierto grado de control sobre los tamaños de fuente.  El complemento agrega tres comandos de usuario a una página web de forma predeterminada (aumentar el tamaño de fuente, disminuir el tamaño de fuente y restablecer el tamaño de fuente normal). </p>\n\n\n\n\n<p></p>\n\t\n\t\n\t\n\n\n\n<p></p>\n\t\n\n\n\n\n\n<p> Aunque los navegadores web más populares ofrecen la función de cambiar el tamaño del texto, muchos usuarios de Internet desconocen la existencia de estas funciones y agradecerían una forma de cambiar el tamaño del texto en la página.</p>\n<p>  El complemento funciona con jQuery. <a href=\"https://www.jqueryscript.net/tags.php?/cookie/\">Complemento de cookies</a> para que la configuración del usuario pueda guardarse la próxima vez que visite (por supuesto, sólo si las cookies están activadas).  Otro complemento similar que deberías probar es Font Resizer.\n</p>\n<h3><span></span>11. <a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\">Texto grande</a><span></span></h3>\n<p> <a href=\"http://www.zachleat.com/web/bigtext-makes-text-big/\"></a> <a href=\"http://www.zachleat.com/bigtext/demo/\">Ver demostración</a> El complemento BigText jQuery es simple: ajusta automáticamente su texto para que quepa dentro de su elemento principal.  Esto da como resultado, entre otras cosas, una alineación justificada perfecta (aunque la alineación justificada normalmente se logra cambiando el espaciado de los caracteres y las palabras, no el tamaño de la fuente).  Lo mejor de este complemento es que funciona en áreas de texto dinámicas y editables, por lo que el tamaño de fuente cambia a medida que el usuario escribe.\n</p>\n<h3><span></span>Diploma<span></span></h3>\n\n\n\n\n<p></p>\n\t\n\n\n\n\n<p></p>\n\t\n\t\n\t\n\n\n\n\n<p>    Cabe señalar que la mejor práctica ampliamente aceptada en diseño web es utilizar CSS cuando sea posible para manejar la capa visual/de presentación (por ejemplo, tipografía web).  Sin embargo, CSS tiene limitaciones que JavaScript puede resolver.  La gran cantidad de complementos para jQuery es asombrosa y los elementos de esta lista son solo algunos de los complementos más interesantes y potentes disponibles.\n</p>\n<p>    El desarrollo de nuevos complementos de jQuery continúa avanzando rápidamente.  Desde manipular el estilo de letras individuales hasta facilitar el diseño web responsivo, si hay una herramienta tipográfica que se te ocurra, probablemente haya un complemento jQuery que pueda hacerlo realidad.  Entonces, si conoce un buen complemento de jQuery que pueda mejorar la tipografía web, compártalo en los comentarios a continuación.\n</p>\n<h3><span></span>Contenido relacionado<span></span></h3>\n  \n\n<p>Tabla de contenidos</p>\n<span><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#\"><span><span>Toggle</span><span></span></span></a></span>\n<ul><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#1_Letrasjs\" title=\"1. Letras.js\">1. Letras.js</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#2_jMetronomo\" title=\"2.  jMetrónomo\">2.  jMetrónomo</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#3_Ajustar_texto\" title=\"3. Ajustar texto\">3. Ajustar texto</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#4_Efecto_de_fuente\" title=\"4. Efecto de fuente\">4. Efecto de fuente</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#5_Enfoque_jQuery\" title=\"5. Enfoque jQuery\">5. Enfoque jQuery</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#6_jqIsoTexto\" title=\"6. jqIsoTexto\">6. jqIsoTexto</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#7_Aeropuerto\" title=\"7. Aeropuerto\">7. Aeropuerto</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#8vo_Resplandor_jQuery\" title=\"8vo. Resplandor jQuery\">8vo. Resplandor jQuery</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#9_Complemento_jQuery_sIFR\" title=\"9. Complemento jQuery sIFR\">9. Complemento jQuery sIFR</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#10_Complemento_jQuery_Text_Resizer\" title=\"10.  Complemento jQuery Text Resizer\">10.  Complemento jQuery Text Resizer</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#11_Texto_grande\" title=\"11. Texto grande\">11. Texto grande</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#Diploma\" title=\"Diploma\">Diploma</a></li><li><a href=\"https://secinfinity.net/es/11-complementos-de-jquery-que-pueden-mejorar-tu-tipografia/#Contenido_relacionado\" title=\"Contenido relacionado\">Contenido relacionado</a></li></ul>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1749892,
+			"parentId": 0,
+			"url": "https://editor.sitepoint.com/10-jquert-text-transformation-plugins/",
+			"author": {},
+			"date": "2023-12-06T20:00:24.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1767403,
+			"parentId": 0,
+			"url": "https://editor.us-west-2b.sitepoint-staging.sitepoint.com/10-jquert-text-transformation-plugins/",
+			"author": {},
+			"date": "2024-01-15T10:15:16.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1775954,
+			"parentId": 0,
+			"url": "https://editor.sitepoint.com/10-jquert-text-transformation-plugins/",
+			"author": {},
+			"date": "2024-02-02T01:46:15.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 680511,
+			"url": "https://twitter.com/zachleat/status/1167533355438657536#favorited-by-2708066006",
+			"date": "2019-08-30T20:27:19.000Z",
+			"author": {
+				"name": "Nina Chantanapumma",
+				"url": "https://twitter.com/missninateaches",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0166b9465170f09406312bcd3db820ca1a644cb68eca44ad3d25ea022cf23c3f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1443869,
+			"url": "https://twitter.com/zachleat/status/1552357549751558144#favorited-by-17637157",
+			"date": "2022-07-27T18:51:12.000Z",
+			"author": {
+				"name": "David Rhoden",
+				"url": "https://twitter.com/davidrhoden",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8bf05d3963252f33fe4ccae5ce406f9914540a62dd6e60f291264b15a9a1fcd6.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1901095,
+			"url": "https://bsky.app/profile/zachleat.com/post/3llrhrtvhj22n#liked_by_did:plc:jnj7wcwuvspxdsipmecmx7rs",
+			"date": "2025-04-01T18:33:54.000Z",
+			"author": {
+				"name": "Adam Argyle",
+				"url": "https://bsky.app/profile/nerdy.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/5dd082ca8cf06400e4425437391d80f07bbd510a9e2c81022a4a17d82893fd30.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1901099,
+			"url": "https://bsky.app/profile/zachleat.com/post/3llrhrtvhj22n#liked_by_did:plc:a64baelxsmvy6aonnbfhbirv",
+			"date": "2025-04-01T19:02:20.000Z",
+			"author": {
+				"name": "Tobias Fedder",
+				"url": "https://bsky.app/profile/tfedder.de",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/353f7583c7865e934c77899369bd5facd7f23f2cc28ce926ca9456675e50cd46.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1901136,
+			"url": "https://bsky.app/profile/zachleat.com/post/3llrhrtvhj22n#liked_by_did:plc:elkbkqfdg42s6kbipfm4qu6p",
+			"date": "2025-04-01T22:19:38.000Z",
+			"author": {
+				"name": "Miguel Calderon",
+				"url": "https://bsky.app/profile/miguel-calderon.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c6f52988ba40b3d16c80634e7fd0a474c02dee2ee064c86d0632b58345bf9625.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

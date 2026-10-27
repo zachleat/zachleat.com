@@ -1,0 +1,1426 @@
+{
+	"comments": [
+		{
+			"id": 1534524,
+			"parentId": 0,
+			"url": "https://twitter.com/raymondcamden/status/1578455993599623173",
+			"author": {
+				"name": "Spooky Raymond Camden 👻",
+				"url": "https://twitter.com/raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/144ca13ad853cdf18b01b797ea6d6fa1fa8bcb520fa14f725ac7e43cf384074e.jpg"
+			},
+			"date": "2022-10-07T18:43:29.000Z",
+			"content": "Am I right in seeing that if I want to use a WC in a Liquid/MD/etc file, I have to wrap with the render plugin? That's the only part that seems kinda annoying - a lot of extra typing. I can use a .webc file as the top doc, but I want the power of Liquid too :)\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534525,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1578457168457891841",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-10-07T18:48:09.000Z",
+			"content": "A few options:\n1. You can use Liquid inside of WebC <a href=\"https://www.11ty.dev/docs/languages/webc/#webctype11ty\">11ty.dev/docs/languages…</a>\n2. You can use postprocess using the transform <a href=\"https://www.11ty.dev/docs/languages/webc/#post-process-html-output-as-webc\">11ty.dev/docs/languages…</a>\n3. You can rename the tags in the render plugin (view full options): <a href=\"https://www.11ty.dev/docs/plugins/render/#installation\">11ty.dev/docs/plugins/r…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/raymondcamden\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534526,
+			"parentId": 0,
+			"url": "https://twitter.com/raymondcamden/status/1578457687628697637",
+			"author": {
+				"name": "Spooky Raymond Camden 👻",
+				"url": "https://twitter.com/raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/144ca13ad853cdf18b01b797ea6d6fa1fa8bcb520fa14f725ac7e43cf384074e.jpg"
+			},
+			"date": "2022-10-07T18:50:13.000Z",
+			"content": "Kinda makes sense. It feels a bit weird that I may make a .webc file just so *that* file can use N other .webc files that really my components, where the first is just... the page.\n\nDoes that make sense? Do I just need to get over it?\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534527,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1578458286587723777",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-10-07T18:52:36.000Z",
+			"content": "Not sure I follow, no 😅 To use a Liquid include you need to use Liquid. To use a Nunjucks macro you need to use Nunjucks. Same for WebC?\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/raymondcamden\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534528,
+			"parentId": 0,
+			"url": "https://twitter.com/raymondcamden/status/1578458588695220230",
+			"author": {
+				"name": "Spooky Raymond Camden 👻",
+				"url": "https://twitter.com/raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/144ca13ad853cdf18b01b797ea6d6fa1fa8bcb520fa14f725ac7e43cf384074e.jpg"
+			},
+			"date": "2022-10-07T18:53:48.000Z",
+			"content": "Yeah I get that - but it's like, I have page /foo. It isn't a web component. But it's going to use some. So I need to make /foo.webc. Meh, it will feel natural once I try once or twice (got an idea for a simple demo).\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534529,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1578459612541779969",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-10-07T18:57:52.000Z",
+			"content": "Just to be super clear, it isn’t a hard requirement. I converted <a href=\"http://zachleat.com\">zachleat.com</a> to use WebC using the transform method so that I could just keep all of my existing liquid templates and sprinkle WebC components in there <a href=\"https://www.11ty.dev/docs/languages/webc/#post-process-html-output-as-webc\">11ty.dev/docs/languages…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/raymondcamden\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534553,
+			"parentId": 0,
+			"url": "https://twitter.com/philhawksworth/status/1578459644946960384",
+			"author": {
+				"name": "Phil Hawksworth",
+				"url": "https://twitter.com/philhawksworth",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fd1185da1ed09664bc011181408cfd1571fc310d9fccaa93ee40f50c93cedd54.jpg"
+			},
+			"date": "2022-10-07T18:58:00.000Z",
+			"content": "Yes yes yes\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/webc-in-eleventy/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1534586,
+			"parentId": 0,
+			"url": "https://twitter.com/Dominus_Kelvin/status/1578466209837723648",
+			"author": {
+				"name": "KOO",
+				"url": "https://twitter.com/Dominus_Kelvin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fe343e2bedf326ff0cfc4aa5fd21adaa938441e0318fb6d7722b4436abd57a72.png"
+			},
+			"date": "2022-10-07T19:24:05.000Z",
+			"content": "Awesome. Hey Zach I’d love to have you on a TKYT session to learn <a href=\"https://twitter.com/eleven_ty\">@eleven_ty</a> \n\nHere is a previous session. Let me know what you think\n\n<a href=\"https://youtu.be/j9rn2180mNI\">youtu.be/j9rn2180mNI</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534587,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1578473939134976001",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-10-07T19:54:48.000Z",
+			"content": "Let’s do itttttt how do I schedule\n<a class=\"u-mention\" href=\"https://twitter.com/Dominus_Kelvin\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534589,
+			"parentId": 0,
+			"url": "https://twitter.com/Dominus_Kelvin/status/1578474435006562307",
+			"author": {
+				"name": "KOO",
+				"url": "https://twitter.com/Dominus_Kelvin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fe343e2bedf326ff0cfc4aa5fd21adaa938441e0318fb6d7722b4436abd57a72.png"
+			},
+			"date": "2022-10-07T19:56:46.000Z",
+			"content": "Yay. I’ll DM you a link to a casual call 📞\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534588,
+			"parentId": 0,
+			"url": "https://twitter.com/Dominus_Kelvin/status/1578474573976125440",
+			"author": {
+				"name": "KOO",
+				"url": "https://twitter.com/Dominus_Kelvin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fe343e2bedf326ff0cfc4aa5fd21adaa938441e0318fb6d7722b4436abd57a72.png"
+			},
+			"date": "2022-10-07T19:57:19.000Z",
+			"content": "DM sent\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534893,
+			"parentId": 0,
+			"url": "https://twitter.com/treb0r/status/1578649401211645952",
+			"author": {
+				"name": "Rob Blake ∞",
+				"url": "https://twitter.com/treb0r",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8c057cf5113d004d18796251e22f7d06052d7ffe3707ed3ae0ac1c936be1928c.jpg"
+			},
+			"date": "2022-10-08T07:32:01.000Z",
+			"content": "Interesting\n\n<a href=\"https://www.zachleat.com/web/webc-in-eleventy/\">zachleat.com/web/webc-in-el…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1534901,
+			"parentId": 0,
+			"url": "https://twitter.com/SteveALee/status/1578655783448821761",
+			"author": {
+				"name": "Steve Lee",
+				"url": "https://twitter.com/SteveALee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fc1d196ef960751ab803a79c3b3b01d0fb4ecc898e76d6159d5b80ca163154a2.jpg"
+			},
+			"date": "2022-10-08T07:57:23.000Z",
+			"content": "The backstory is useful, I find. Helps understand the reason for design decisions. Ditto listing what was left out of scope.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/webc-in-eleventy/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1534900,
+			"parentId": 0,
+			"url": "https://twitter.com/SteveALee/status/1578657012589547520",
+			"author": {
+				"name": "Steve Lee",
+				"url": "https://twitter.com/SteveALee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fc1d196ef960751ab803a79c3b3b01d0fb4ecc898e76d6159d5b80ca163154a2.jpg"
+			},
+			"date": "2022-10-08T08:02:16.000Z",
+			"content": "In the \"shoulders of giants\" depth :) AKA declare your influences. <a href=\"https://twitter.com/zachleat\">@zachleat</a> is always open in the best possible ways.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/webc-in-eleventy/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1535072,
+			"parentId": 0,
+			"url": "https://twitter.com/SteveALee/status/1578662697234681856",
+			"author": {
+				"name": "Steve Lee",
+				"url": "https://twitter.com/SteveALee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fc1d196ef960751ab803a79c3b3b01d0fb4ecc898e76d6159d5b80ca163154a2.jpg"
+			},
+			"date": "2022-10-08T08:24:51.000Z",
+			"content": "One thing I like with <a href=\"https://twitter.com/search?q=%23WebC\">#WebC</a> is even fully lightDOM rendered components can have a parent HTML element of the component  name. That adds a little semantics for developers with almost zero user cost (almost as page source size is incresed)\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/webc-in-eleventy/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1534904,
+			"parentId": 0,
+			"url": "https://twitter.com/SteveALee/status/1578662697234681856",
+			"author": {
+				"name": "Steve Lee",
+				"url": "https://twitter.com/SteveALee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fc1d196ef960751ab803a79c3b3b01d0fb4ecc898e76d6159d5b80ca163154a2.jpg"
+			},
+			"date": "2022-10-08T08:24:51.000Z",
+			"content": "One thing I like with <a href=\"https://twitter.com/search?q=%23WebC\">#WebC</a> is even fully lightDOM rendered components can have a parent HTML element of the component  name. That adds a little semantics for developers with almost zero user cost (almost as page source size is incresed)\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/webc-in-eleventy/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1534921,
+			"parentId": 0,
+			"url": "https://twitter.com/_yuheiy/status/1578687646561206272",
+			"author": {
+				"name": "全部入りHTML太郎",
+				"url": "https://twitter.com/_yuheiy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8653ae577f72ffb0bfd95c1911dc135117b092f2c7ebc1284322e6fcb4834c2d.jpg"
+			},
+			"date": "2022-10-08T10:04:00.000Z",
+			"content": "Adding Components to Eleventy with WebC—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/webc-in-eleventy/\">zachleat.com/web/webc-in-el…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1534941,
+			"parentId": 0,
+			"url": "https://twitter.com/fakebaldur/status/1578691471041089536",
+			"author": {
+				"name": "Baldur Bjarnason",
+				"url": "https://twitter.com/fakebaldur",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8b4860c1e17e03b0e225e1d12c623f991c801297243686b3eeffff32dd038c7b.jpg"
+			},
+			"date": "2022-10-08T10:19:12.000Z",
+			"content": "“Adding Components to Eleventy with WebC—<a href=\"http://zachleat.com\">zachleat.com</a>”\n\nInteresting. Not sure if I would use it but, like everything Zach does, it does look interesting. <a href=\"https://www.zachleat.com/web/webc-in-eleventy/\">zachleat.com/web/webc-in-el…</a>\n\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1535073,
+			"parentId": 0,
+			"url": "https://twitter.com/chrisshank23/status/1578803425877192705",
+			"author": {
+				"name": "𝕮",
+				"url": "https://twitter.com/chrisshank23",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1c062fa9dc06781febd4d5ef59e2209b128cb4daa82ff926a158310e02b79ddc.jpg"
+			},
+			"date": "2022-10-08T17:44:04.000Z",
+			"content": "```\n&lt;a href=\"…\" is=“twitter-share”&gt;Tweet this&lt;/a&gt;\n``` \nAs a side note, here is another way to progressively enhance with a custom element! Since the custom element extends the anchor element it’s arguable a cleaner way to implement this.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1535081,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1578812129872080896",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-10-08T18:18:39.000Z",
+			"content": "Yeah, I don’t predict that one will survive the trial by standards fire that is Safari.\n<a class=\"u-mention\" href=\"https://twitter.com/chrisshank23\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1535438,
+			"parentId": 0,
+			"url": "https://twitter.com/frontenddogma/status/1579359559516200960",
+			"author": {
+				"name": "Frontend Dogma",
+				"url": "https://twitter.com/frontenddogma",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7fef0c3e728e532d829ec49a8f7129557bd31cf0d3585fad94ecb61c3e79fa8d.jpg"
+			},
+			"date": "2022-10-10T06:33:56.000Z",
+			"content": "Adding Components to Eleventy with WebC, by <a href=\"https://twitter.com/zachleat\">@zachleat</a>:\n\n<a href=\"https://www.zachleat.com/web/webc-in-eleventy/\">zachleat.com/web/webc-in-el…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1535450,
+			"parentId": 0,
+			"url": "https://vkdcode.in/hyperlinks-for-you/",
+			"author": {},
+			"date": "2022-10-10T07:36:02.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1535505,
+			"parentId": 0,
+			"url": "https://www.alvinashcraft.com/2022/10/10/dew-drop-october-10-2022-3782/",
+			"author": {
+				"name": "Alvin A.",
+				"url": "https://www.alvinashcraft.com/author/admin/"
+			},
+			"date": "2022-10-10T11:15:00.000Z",
+			"content": "<h3>\n<a></a>Top Links</h3>\n<ul><li>\n<a href=\"https://crosscuttingconcerns.com/The-Sixth-Annual-C-Advent\">The Sixth Annual C# Advent</a> (Matthew Groves)</li>\n<li>\n<a href=\"http://www.youtube.com/watch?v=w6dmGyVkNKk\">What was “Make Raymond Chen Wear Normal Clothes” day? | One Dev Question</a> (Windows Developer)</li>\n<li>\n<a href=\"https://github.com/matthiasjost/dotnet-content-creators\">My Favourite .NET Content Creators</a> (Matthias Jost)</li>\n<li>\n<a href=\"http://www.youtube.com/watch?v=a-4O31lM1Nw\">The Download: Hacktoberfest, JS13K Winners, a Pimped Out BBC Micro and more</a> (Christina Warren)</li>\n<li>\n<a href=\"https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging.aspx?utm_source=alvinashcraft&amp;utm_medium=email&amp;utm_campaign=alvinashcraft_blog_edmoct22\">11 Console Methods in JavaScript for Effective Debugging</a> (Ravindu Shehan Perera)</li>\n<li>\n<a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/this-is-windows-at-microsoft-ignite-2022/ba-p/3648118\">This is Windows at Microsoft Ignite 2022</a> (Harjit Dhaliwal)</li>\n</ul><h3>\n<a></a>Web &amp; Cloud Development</h3>\n<ul><li>\n<a href=\"https://techcommunity.microsoft.com/t5/apps-on-azure-blog/extending-next-js-support-in-azure-static-web-apps/ba-p/3627975\">Extending Next.js support in Azure Static Web Apps</a> (Aaron Powell)</li>\n<li>\n<a href=\"https://www.textcontrol.com/blog/2022/10/07/ds-server-3-0-released/\">DS Server 3.0 Released</a> <em>and</em> <a href=\"https://www.textcontrol.com/blog/2022/10/08/ds-server-30-deploying-ds-server-without-iis-using-docker/\">DS Server 3.0: Deploying DS Server without IIS using Docker</a> (Bjoern Meyer)</li>\n<li>\n<a href=\"https://damienbod.com/2022/10/10/force-phishing-resistant-authentication-in-an-asp-net-core-application-using-azure-ad/\">Force phishing resistant authentication in an ASP.NET Core application using Azure AD</a> (Damien Bowden)</li>\n<li>\n<a href=\"https://endjin.com/blog/2022/10/bye-bye-azure-functions-hello-azure-container-apps-part-3-build-deployment-and-our-first-big-problem.html\">Bye bye Azure Functions, Hello Azure Container Apps: Build and deployment pipelines, and our first big problem</a> (Jonathan George)</li>\n<li>\n<a href=\"https://coderethinked.com/how-to-create-a-custom-feature-filter-in-asp-net-core/\">How to create a custom feature filter in ASP.NET Core</a> (Karthik Chintala)</li>\n<li>\n<a href=\"https://www.learmoreseekmore.com/2022/10/reactjs-v18-apollo-graphql-library-json-graphql-server-crud-example.html\">ReactJS (v18) | Apollo GraphQL Library | JSON GraphQL Server| CRUD Example</a> (Naveen Bommidi)</li>\n<li>\n<a href=\"https://www.telerik.com/blogs/create-any-dropdownlist-combobox-you-need-kendo-ui-angular\">Create Any DropdownList or ComboBox You Need With Kendo UI for Angular</a> (Peter Vogel)</li>\n<li>\n<a href=\"https://www.developer.com/languages/javascript/javascript-variables/\">JavaScript Variables</a> (Robert Gravelle)</li>\n<li>\n<a href=\"https://code-maze.com/aspnetcore-performance-testing-with-k6/\">Performance Testing of ASP.NET Core APIs With k6</a> (Ryan Miranda)</li>\n<li>\n<a href=\"https://www.zachleat.com/web/webc-in-eleventy/\">Adding Components to Eleventy with WebC</a> (Zach Leatherman)</li>\n<li>\n<a href=\"https://eslint.org/blog/2022/10/eslint-v8.25.0-released/\">ESLint v8.25.0 released</a> (Milos Djermanovic)</li>\n<li>\n<a href=\"https://steven-giesel.com/blogPost/f90d8190-7fd9-452a-b16f-7c2c973b07aa\">How does the key exchange in HTTPS work?</a> (Steven Giesel)</li>\n<li>\n<a href=\"https://www.scottbrady91.com/oauth/client-authentication\">OAuth client authentication – more than just client secrets</a> (Scott Brady)</li>\n</ul><h3>\n<a></a>WinUI, .NET MAUI &amp; XAML</h3>\n<ul><li>\n<a href=\"http://www.i-programmer.info/news/89-net/15780-maui-framework-and-community-toolkit-released.html\">MAUI Framework And Community Toolkit Released</a> (Kay Ewbank)</li>\n<li>\n<a href=\"https://www.infoq.com/news/2022/10/maui-community-toolkit-13/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global\">.NET MAUI Community Kit 1.3 Released</a> (Edin Kapić)</li>\n</ul><h3>\n<a></a>Visual Studio &amp; .NET</h3>\n<ul><li>\n<a href=\"https://maciejz.dev/entity-framework-core-extension-tips-tricks-design-time-services/\">Entity Framework Core Extension tips &amp; tricks – Design Time Services</a> (Maciej Zwierzchlewski)</li>\n<li>\n<a href=\"https://www.twilio.com/blog/get-notified-of-new-magazine-issues-using-web-scraping-and-sms-with-csharp-dotnet\">Get notified of new magazine issues using web scraping and SMS with C# .NET</a> (Volkan Paksoy)</li>\n<li>\n<a href=\"https://blog.jetbrains.com/dotnet/2022/10/07/rider-2022-3-eap-2/\">Rider 2022.3 EAP 2: New UI, Improved Unit Testing, Better Dynamic Program Analysis and More.</a> (Sasha Ivanova)</li>\n<li>\n<a href=\"https://devblogs.microsoft.com/oldnewthing/20221007-00/?p=107261\">How can I perform a CopyFile, but also flush the file buffers before the destination handle is closed?</a> (Raymond Chen)</li>\n<li>\n<a href=\"https://devblogs.microsoft.com/dotnet/bing-ads-campaign-platform-journey-to-dotnet-6/\">Bing Ads Campaign Platform – Journey to .NET 6</a> (Mike Treit)</li>\n</ul><h3>\n<a></a>Design, Methodology &amp; Testing</h3>\n<ul><li>\n<a href=\"https://thenewstack.io/platform-as-a-product-true-devops/\">Platform as a Product: True DevOps?</a> (Luca Galante)</li>\n<li>\n<a href=\"https://www.sketch.com/blog/2022/10/07/color-combination-guide/\">The ultimate color combination guide</a> (Sketch Team)</li>\n<li>\n<a href=\"https://event-driven.io/en/testing_event_sourcing/\">Testing business logic in Event Sourcing, and beyond!</a> (Oskar Dudycz)</li>\n<li>\n<a href=\"https://devopsjournal.io/blog/2022/10/08/Enabling-GitHub-Actions-on-Enterprise-Server\">Enabling GitHub Actions on Enterprise Server: Common gotcha’s</a> (Rob Bos)</li>\n<li>\n<a href=\"https://www.danclarke.com/config-files-in-git\">Source-controlling Config files in Git (dotfiles?)</a> (Dan Clarke)</li>\n<li>\n<a href=\"https://elijahmanor.com/blog/better-git-diff\">Get a Better Git Diff</a> (Elijah Manor)</li>\n<li>\n<a href=\"http://blog.travis-ci.com/22-10-7-complexcommands\">Complex Build Commands</a> (Montana Mendy)</li>\n<li>\n<a href=\"https://devblogs.microsoft.com/devops/new-boards-hub-sprint-211-update/\">New Boards Hub, Sprint 211 Update</a> (Dan Hellem)</li>\n</ul><h3>\n<a></a>Mobile, IoT &amp; Game Development</h3>\n<ul><li>\n<a href=\"http://android-developers.googleblog.com/2022/10/the-new-google-pixel-watch-is-here.html\">The new Google Pixel Watch is here – start building for Wear OS!</a> (Android Developers Team)</li>\n<li>\n<a href=\"https://makezine.com/article/maker-news/arduino-previews-new-diy-kit-at-maker-faire-rome/\">Arduino Previews New DIY Kit at Maker Faire Rome</a> (Caleb Kraft)</li>\n</ul><h3>\n<a></a>Screencasts &amp; Videos</h3>\n<ul><li>\n<a href=\"http://www.youtube.com/watch?v=mQyzt4CV_Jw\">Talking to the man who runs NDC Conferences – Jakob Bradford and Adam Cogan at NDC Melbourne 2022</a> (SSW TV)</li>\n<li>\n<a href=\"http://www.youtube.com/watch?v=EDADrteGBnY\">How to setup the Nightscout Diabetes Management Open Source Server on Azure RELIABLY FOR FREE</a> (Scott Hanselman)</li>\n<li>\n<a href=\"http://www.youtube.com/watch?v=7Zn2SeqcUTY\">Coding After Work – Building “Next Tech Event” using Blazor and RavenDB Part 11</a> (Jimmy Engstrom &amp; Jessica Engstrom)</li>\n<li>\n<a href=\"https://davidgiard.com/simeon-kakpovi-and-greg-schloemer-on-a-cybersecurity-game\">Technology &amp; Friends – Simeon Kakpovi and Greg Schloemer on a Cybersecurity game</a> (David Giard)</li>\n<li>\n<a href=\"http://www.youtube.com/watch?v=h5Qd9rWQHBo\">FreeCodeSession – Episode 402</a> (Jason Bock)</li>\n</ul><h3>\n<a></a>Podcasts</h3>\n<ul><li>\n<a href=\"https://www.infoq.com/podcasts/software-vr-environments/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global\">InfoQ Podcast: VR Environments for Collaborative Software Development</a> (Jonathan Schneider)</li>\n<li>\n<a href=\"https://topenddevs.com/podcasts/adventures-in-devops/episodes/serverless-platforms-and-wasm-with-connor-hicks-devops-134\">Serverless Platforms and WASM with Connor Hicks – Adventures in DevOps 134</a> (Jonathan Hall &amp; Will Button)</li>\n<li>\n<a href=\"https://topenddevs.com/podcasts/adventures-in-angular/episodes/using-the-localstorage-object-in-angular-with-dany-paredes-aia-358\">Using the LocalStorage Object in Angular with Dany Paredes – Adventures in Angular 358</a> (Charles Max Wood)</li>\n<li>\n<a href=\"https://www.codingblocks.net/podcast/git-from-the-bottom-up-reset-stash-and-reflog/\">Coding Blocks Podcast – Git from the Bottom Up – Reset, Stash, and Reflog</a> (Allen Underwood, Michael Outlaw &amp; Joe Zack)</li>\n<li>\n<a href=\"https://changelog.com/podcast/509\">The Changelog – A new batch of web frameworks emerge!</a> (Luca Casonato, Misko Hevery, Fred K. Schott, Jerod Santo, Feross Aboukhadijeh, Kevin Ball &amp; Amal Hussein)</li>\n<li>\n<a href=\"https://theamphour.com/604-robo-fry-guy/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=604-robo-fry-guy\">The Amp Hour #604 – Robo Fry Guy</a> (Dave Jones &amp; Chris Gammell)</li>\n<li>\n<a href=\"http://www.uibreakfast.com/podcast\">UI Breakfast – Episode 249: Slow Design with Pree Kolari</a> (Jane Portman)</li>\n</ul><h3>\n<a></a>Community &amp; Events</h3>\n<ul><li>\n<a href=\"https://blog.jetbrains.com/webstorm/2022/10/javascript-day-2022/\">Join Us for JetBrains JavaScript Day 2022</a> (Aleksandra Aganezova)</li>\n<li>\n<a href=\"https://devblogs.microsoft.com/microsoft365dev/join-us-at-microsoft-teams-app-camp-on-october-20-2022/\">Join us at Microsoft Teams App Camp on October 20, 2022</a> (Bob German)</li>\n<li>\n<a href=\"https://mazeez.dev/posts/working-remotely-from-iraq\">Working remotely from Iraq as a Software Developer</a> (Muhammad Azeez)</li>\n<li>\n<a href=\"https://dotnettips.wordpress.com/2022/10/10/rockin-the-code-world-special-guest-stephen-toub/\">Rockin’ the Code World: Special Guest Stephen Toub</a> (David McCarter)</li>\n<li>\n<a href=\"https://techcommunity.microsoft.com/t5/surface-it-pro-blog/join-surface-at-microsoft-ignite/ba-p/3646660\">Join Surface at Microsoft Ignite</a> (Harshitha Murthy)</li>\n<li>\n<a href=\"https://www.theverge.com/23393039/microsoft-surface-event-pro-9-studio-laptop-rumors-leaks\">What to expect from the Microsoft Surface launch event</a> (Jess Weatherbed)</li>\n<li>\n<a href=\"https://www.theverge.com/23386652/microsoft-surface-fall-event-news-rumors-products-announcements\">Microsoft’s fall event 2022: all the news from the online Surface event</a> (Jon Porter)</li>\n<li>\n<a href=\"https://stackoverflow.blog/2022/10/09/how-to-earn-a-million-reputation-on-stack-overflow-be-of-service-to-others/\">How to earn a million reputation on Stack Overflow: be of service to others</a> (Ryan Donovan)</li>\n<li>\n<a href=\"https://techcommunity.microsoft.com/t5/student-developer-blog/meet-a-recent-microsoft-learn-student-ambassador-graduate/ba-p/3642291\">Meet a recent Microsoft Learn Student Ambassador graduate: Bhavesh Suneja</a> (MS Student Developer Team)</li>\n</ul><h3>\n<a></a>Database</h3>\n<ul><li>\n<a href=\"https://www.red-gate.com/simple-talk/databases/mysql/introducing-the-mysql-insert-statement/\">Introducing the MySQL INSERT statement</a> (Robert Sheldon)</li>\n<li>\n<a href=\"https://www.couchbase.com/blog/conceptual-physical-logical-data-models/\">What is Data Modeling? Conceptual, Physical, Logical</a> (Matthew Groves)</li>\n</ul><h3>\n<a></a>SharePoint, M365 &amp; MS Teams</h3>\n<ul><li>\n<a href=\"https://spgeeks.devoworx.com/sync-files-from-microsoft-teams-with-onedrive/\">How to Sync files from Microsoft Teams with OneDrive on your PC?</a> (Mohamed El-Qassas)</li>\n</ul><h3>\n<a></a>PowerShell</h3>\n<ul><li>\n<a href=\"https://www.itprotoday.com/powershell/how-copy-files-powershell\">How To Copy Files With PowerShell</a> (Brien Posey)</li>\n<li>\n<a href=\"https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/internet-of-powershell/ba-p/3648207\">Internet of PowerShell</a> (Felipe Binotto)</li>\n</ul><h3>\n<a></a>Miscellaneous</h3>\n<ul><li>\n<a href=\"https://techcommunity.microsoft.com/t5/azure-developer-community-blog/new-book-meg-the-mechanical-engineer-she-is-m-e/ba-p/3647842\">NEW BOOK: Meg the Mechanical Engineer – She is M.E.</a> (Ed Price)</li>\n<li>\n<a href=\"https://developers.slashdot.org/story/22/10/07/2351222/rust-programming-language-announces-new-team-to-evolve-official-coding-style?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed\">Rust Programming Language Announces New Team to Evolve Official Coding Style</a> (EditorDavid)</li>\n</ul><h3>\n<a></a>More Link Collections</h3>\n<ul><li>\n<a href=\"https://blog.cwa.me.uk/2022/10/10/the-morning-brew-3560/\">The Morning Brew #3560</a> (Chris Alcock)</li>\n<li>\n<a href=\"https://csharpdigest.net/digests/436\">C# Digest Issue #436</a> (Jakub Chodounsky)</li>\n<li>\n<a href=\"https://stackoverflow.blog/2022/10/07/the-overflow-146-weekday-vs-weekend/\">The Overflow #146: Weekday vs Weekend</a> (Ryan Donovan &amp; Cassidy Williams)</li>\n<li>\n<a href=\"https://sergeytihon.com/2022/10/08/f-weekly-40-2022-telplin-feliz-jsx-and-fable-packages/\">F# Weekly #40, 2022 – Telplin, Feliz.JSX and Fable.Packages</a> (Sergey Tihon)</li>\n</ul><h3>\n<a></a>The Geek Shelf</h3>\n<p><a href=\"https://www.amazon.com/dp/1800208669/?tag=alvinashcraft-20\"><img align=\"left\" style=\"margin:0px 5px 0px 0px;border:0px;float:left;background-image:none;\" src=\"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41Z9lMC71WL._SS135_.jpg\" border=\"0\" alt=\"41Z9lMC71WL._SS135_.jpg\" /></a> <a href=\"https://www.amazon.com/dp/1800208669/?tag=alvinashcraft-20\">Learn WinUI 3: Leverage the power of WinUI, the future of native Windows application development</a> (Alvin Ashcraft)<em> – Referral Link</em></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1539100,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1581068947386171392",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-10-14T23:46:26.000Z",
+			"content": "I think the most acute pain I’ve felt directly from this, I documented a bit here: <a href=\"https://www.zachleat.com/web/webc-in-eleventy/#maintenance-woes\">zachleat.com/web/webc-in-el…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/TedMart51618893\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1539991,
+			"parentId": 0,
+			"url": "https://vkdcode.in/first-expertise-constructing-with-eleventys-webc-plugin/",
+			"author": {},
+			"date": "2022-10-16T23:47:28.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1540307,
+			"parentId": 0,
+			"url": "https://twitter.com/eleven_ty/status/1582031000926052352",
+			"author": {
+				"name": "Eleventy 🎈 v2.0.0-canary.16",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg"
+			},
+			"date": "2022-10-17T15:29:17.000Z",
+			"content": "why the 🙄\n\nsounds fine to me though I would note <a href=\"https://www.zachleat.com/web/webc-in-eleventy/#maintenance-woes\">zachleat.com/web/webc-in-el…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/gasatrya\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1540638,
+			"parentId": 0,
+			"url": "https://thedevnews.com/first-expertise-constructing-with-eleventys-webc-plugin/",
+			"author": {},
+			"date": "2022-10-18T03:12:07.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1576159,
+			"parentId": 0,
+			"url": "https://ntdln.com/2022/12/06/weeknotes-11-28-12-04/",
+			"author": {},
+			"date": "2022-12-06T23:24:37.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1776173,
+			"parentId": 0,
+			"url": "https://mstdn.social/@mattwilcox/111862450384768839",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"date": "2024-02-02T14:52:14.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I actually find that slower pace a feature not a bug, is the thing. I *trust* PHP much more than I do Node. I *trust* Composer more than I do npm.</p><p>Is that rational? No and yes. I'm sure there are shoddy packages and all the same vectors for bad actors in Composer packages as for npm... but one has the reuptation of dodgy packages littered with dependencies, and actively abused ones, and the other doesn't.</p><p><span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> <span class=\"h-card\"><a href=\"https://fed.brid.gy/r/https://adactio.com/\" class=\"u-url\">@<span>adactio.com</span></a></span></p>\n<a class=\"u-mention\" href=\"https://adactio.com/\"></a>\n<a class=\"u-mention\" href=\"https://adactio.com/journal/19104\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776174,
+			"parentId": 0,
+			"url": "https://mstdn.social/@mattwilcox/111862459379401841",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"date": "2024-02-02T14:54:31.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> (Which is why I'm happy playing with 11ty locally, but do not use node on live servers) <span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> <span class=\"h-card\"><a href=\"https://fed.brid.gy/r/https://adactio.com/\" class=\"u-url\">@<span>adactio.com</span></a></span></p>\n<a class=\"u-mention\" href=\"https://adactio.com/\"></a>\n<a class=\"u-mention\" href=\"https://adactio.com/journal/19104\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1776184,
+			"parentId": 0,
+			"url": "https://mastodon.social/@khalidabuhakmeh/111862468107205781",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/720e72bbde8606751a57ba8eac69b0db319ac174571c9c5322ea0bc05c5c7e19.png"
+			},
+			"date": "2024-02-02T14:56:44.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mstdn.social/@mattwilcox\" class=\"u-url\">@<span>mattwilcox</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> ???? Yeah, I wouldn't dream of it. Any viable use of a Web Component framework or SSR with an SSR stack (Laravel and ASP.NET Core) would have to be a build step.</p>\n<a class=\"u-mention\" href=\"https://adactio.com/\"></a>\n<a class=\"u-mention\" href=\"https://adactio.com/journal/19104\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1534530,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-40922269",
+			"date": "2022-10-07T19:10:35.000Z",
+			"author": {
+				"name": "Brett Jankord ",
+				"url": "https://twitter.com/bjankord",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0459a5e91b5faee47225b63ef74aa36bd756bd3aaaa93d938a90faafcd52a058.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534531,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1185030708999442432",
+			"date": "2022-10-07T19:10:36.000Z",
+			"author": {
+				"name": "Matt Rossman 🍌",
+				"url": "https://twitter.com/the_ross_man",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/02e0ec0617b1f35d6d3103088c5691d988310d89de4c8690ee054e5e476880d8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534533,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-760199",
+			"date": "2022-10-07T19:10:37.000Z",
+			"author": {
+				"name": "mortendk 🤘",
+				"url": "https://twitter.com/mortendk",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6eac13e939869ba7c8e3622563f6d548460269e848f277fd8b0991f814eeea62.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534534,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-632879284",
+			"date": "2022-10-07T19:10:38.000Z",
+			"author": {
+				"name": "Oleksandr Shut 🇺🇦",
+				"url": "https://twitter.com/overstrides",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/97e854814f7b25e873c5d703cb5698cb878f9df168afead9b68e21ed75e0ea18.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534535,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1021776130624446464",
+			"date": "2022-10-07T19:10:39.000Z",
+			"author": {
+				"name": "Jess \"robot apocalypse\" Peck 🐍🤖",
+				"url": "https://twitter.com/jessthebp",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b3ff33bcc5ecffdadad917a74c6aff591dbb41683050be558f73ed11ba81905e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534536,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-23724008",
+			"date": "2022-10-07T19:10:40.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534537,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-21155214",
+			"date": "2022-10-07T19:10:40.000Z",
+			"author": {
+				"name": "David Leininger",
+				"url": "https://twitter.com/davidleininger",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae87ebd47981b480f2b6ad211b9a8ef6bfd79e9594535e70973765280ccb3198.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534538,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1451916731157450760",
+			"date": "2022-10-07T19:10:41.000Z",
+			"author": {
+				"name": "Thien Bui",
+				"url": "https://twitter.com/dartrode",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d3825d6c475a127ff5780fdabfbbc4b69717c3c94a2055b26d8bc5f08a14cce4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534539,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-114543786",
+			"date": "2022-10-07T19:10:42.000Z",
+			"author": {
+				"name": "MWDelaney",
+				"url": "https://twitter.com/MichaelWDelaney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b624a88b5663f8391c898e28bb7d9ed9a60dbed6b78846ebec6fc85d00c9a49.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534540,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-949639269433380864",
+			"date": "2022-10-07T19:10:42.000Z",
+			"author": {
+				"name": "Eleventy 🎈 v2.0.0-canary.16",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534541,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-789281",
+			"date": "2022-10-07T19:10:44.000Z",
+			"author": {
+				"name": "Juha Liikala",
+				"url": "https://twitter.com/juhaliikala",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/43f63e2da3a5340126fcf98d666bdf1c500dd706ed0fdf323154eb8c4b4402f1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534542,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-7655012",
+			"date": "2022-10-07T19:10:44.000Z",
+			"author": {
+				"name": "Phil Hawksworth",
+				"url": "https://twitter.com/philhawksworth",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fd1185da1ed09664bc011181408cfd1571fc310d9fccaa93ee40f50c93cedd54.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534543,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-15819802",
+			"date": "2022-10-07T19:10:45.000Z",
+			"author": {
+				"name": "Joan León 🏞⚡️",
+				"url": "https://twitter.com/nucliweb",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/84fa278b7d4c7621464e1bab376e18eb7db87cbc028453fd1639a3da4a1f5ac8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534544,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-58448784",
+			"date": "2022-10-07T19:10:45.000Z",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://twitter.com/m_ott",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a34d0a855d4336e07245950e108a3d322445dabff46cfb01e805208ca3d8abcc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534545,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-423471075",
+			"date": "2022-10-07T19:10:46.000Z",
+			"author": {
+				"name": "Arpit",
+				"url": "https://twitter.com/ArpitCodes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c2657e3aa183e1b397ffcf5477ad8be765f5606d335c034205ea081b616be3ba.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534546,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1081265358",
+			"date": "2022-10-07T19:10:46.000Z",
+			"author": {
+				"name": "Mike Skowronek",
+				"url": "https://twitter.com/coderitual",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/46ecdd4ddab739c7530862ea37b01df5975defa394394d503d2472bb344be6ac.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534590,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-2406677852",
+			"date": "2022-10-07T20:08:56.000Z",
+			"author": {
+				"name": "Vadim Makeev 💙💛",
+				"url": "https://twitter.com/pepelsbey_dev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9568f6a298f584521db27c4d7115af1011f3965c51ad2c54258d5e4eb07b2560.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534591,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1259622945955016705",
+			"date": "2022-10-07T20:08:57.000Z",
+			"author": {
+				"name": "Tanner Dolby",
+				"url": "https://twitter.com/tannerdolby",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ef864e0e4634eba979272b9a3ea480536b5ce71402ee55651a7f69a5950b5f2f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534592,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1290010705597534213",
+			"date": "2022-10-07T20:08:57.000Z",
+			"author": {
+				"name": "John Kemp-Cruz",
+				"url": "https://twitter.com/jkc_codes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/22d3c106a288041e84dc34157e5df101962fef5016bba8eca991dff99f06f44b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534593,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-106641915",
+			"date": "2022-10-07T20:08:58.000Z",
+			"author": {
+				"name": "🔪 Carnage Electron 🔪",
+				"url": "https://twitter.com/carmalou",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/11c064afe935600e638940e4312d68eaab18e3d0e016c8399e7c526c90a86a04.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534594,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-3071838921",
+			"date": "2022-10-07T20:08:59.000Z",
+			"author": {
+				"name": "Andrea Leardini",
+				"url": "https://twitter.com/andrealeard",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d3029cab2dcb1cf10a974b16b75475d68787b12fc0abaac5e596ddd966bcfdc3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534595,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-2619637516",
+			"date": "2022-10-07T20:09:00.000Z",
+			"author": {
+				"name": "KOO",
+				"url": "https://twitter.com/Dominus_Kelvin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fe343e2bedf326ff0cfc4aa5fd21adaa938441e0318fb6d7722b4436abd57a72.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534596,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-337383156",
+			"date": "2022-10-07T20:09:00.000Z",
+			"author": {
+				"name": "Thomas Michael Semmler",
+				"url": "https://twitter.com/nachtfunke",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/23e0ae82c7e56be2a6e67e2d0c81f8ea078eb86c0209b4e3dfdcd2a4db8c43f2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534597,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1306753199072780288",
+			"date": "2022-10-07T20:09:01.000Z",
+			"author": {
+				"name": "Clark Gunn",
+				"url": "https://twitter.com/clark_gunn",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/befeb772b29a64ba8a83a40d8a1ca0c66a5af2eb6d0ce580105a90d22a95fa03.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534598,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-95301414",
+			"date": "2022-10-07T20:09:02.000Z",
+			"author": {
+				"name": "Hugo Nogueira",
+				"url": "https://twitter.com/Marabyte_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/89e138bc68eb71f508b4b75ffcf82f456f5f4dc7ff150e02dff00ea552a563da.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534599,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-237918766",
+			"date": "2022-10-07T20:09:03.000Z",
+			"author": {
+				"name": "Scott Jehl",
+				"url": "https://twitter.com/scottjehl",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/34bbf5a6a67598a71f8e35334454f74e31fe3620c769cb0aa9c707103eba1739.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534600,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-146569131",
+			"date": "2022-10-07T20:09:03.000Z",
+			"author": {
+				"name": "aaron hans",
+				"url": "https://twitter.com/nopatternaaron",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/41a9217e31214dedee28ad124b38199b63e1aae50cca12f3cd82352d4c216b0f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534601,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-24203304",
+			"date": "2022-10-07T20:09:04.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534636,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-886958568427077632",
+			"date": "2022-10-07T21:17:26.000Z",
+			"author": {
+				"name": "Geoff Rich",
+				"url": "https://twitter.com/geoffrich_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/feb13616945c43bbab25e1f26abbbeee37b25633e12e44bab76108f6cb0a39e4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534637,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-14983574",
+			"date": "2022-10-07T21:17:27.000Z",
+			"author": {
+				"name": "Nick Sollecito",
+				"url": "https://twitter.com/oticellos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7affe294ab24ea99819c0d6f647fb54ac0a19cb6f3444396b49584bed25c3892.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534638,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-18636799",
+			"date": "2022-10-07T21:17:31.000Z",
+			"author": {
+				"name": "Stephanie Eckles",
+				"url": "https://twitter.com/5t3ph",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae7aebb65ddcb23a79323ff61cd61bae74c1845d99b7f9380f9dd3852c2e4245.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534639,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-42859664",
+			"date": "2022-10-07T21:17:32.000Z",
+			"author": {
+				"name": "Jeroen Zwartepoorte",
+				"url": "https://twitter.com/jpzwarte",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b4af010199cdf6ca5e651cd8a47bc8068ebf99b306e9674b0f1eb420c26ab9b8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534640,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-3165967183",
+			"date": "2022-10-07T21:17:32.000Z",
+			"author": {
+				"name": "Eduardo Uribe",
+				"url": "https://twitter.com/Eduardo__Uribe",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0a291ea9afff0430dd801bceaf71eb5db28fa001c93d57745696a20cfbc17b94.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534641,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-392656709",
+			"date": "2022-10-07T21:17:33.000Z",
+			"author": {
+				"name": "Alistair Shepherd",
+				"url": "https://twitter.com/Accudio",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/08121dd3cbeeb5b979d8e2e3ac27decf7988a96964d4596342cf172146375d5d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534642,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1956181",
+			"date": "2022-10-07T21:17:34.000Z",
+			"author": {
+				"name": "Colin Fahrion",
+				"url": "https://twitter.com/colinaut",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b0cb2ac92703b3159d856b37f310e18143a2fddfd5642e521ba4219012341b59.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534643,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-730340824505065473",
+			"date": "2022-10-07T21:17:35.000Z",
+			"author": {
+				"name": "Robin Cussol",
+				"url": "https://twitter.com/RobinCsl",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7feab958baede56784a403a7c325276e25aed08c1ae941caca450f181f495b64.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534693,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-14276282",
+			"date": "2022-10-07T22:23:32.000Z",
+			"author": {
+				"name": "Martin Berglund",
+				"url": "https://twitter.com/macbruker",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c5cebdd3dff388c0ae51fb36b1607bbbe22a191a1ef03cb60fd33461cd386091.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534694,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-14412405",
+			"date": "2022-10-07T22:23:33.000Z",
+			"author": {
+				"name": "Mike Aparicio",
+				"url": "https://twitter.com/peruvianidol",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/634afa59eff185624485098b7a75d834d835b02b24c8b58db7770f3416d4baf9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534695,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-4876041868",
+			"date": "2022-10-07T22:23:37.000Z",
+			"author": {
+				"name": "Rudolfs Daugulis",
+				"url": "https://twitter.com/Ro0dolf_D",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534748,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1475654146493616132",
+			"date": "2022-10-07T23:19:54.000Z",
+			"author": {
+				"name": "olets",
+				"url": "https://twitter.com/oletsdev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b649b9e391d9bc711196d0e792db013ca85cdc4bcc542cc583b4b76531f59a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534772,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-17593305",
+			"date": "2022-10-08T00:00:21.000Z",
+			"author": {
+				"name": "Ben Baker",
+				"url": "https://twitter.com/nebrekab",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/261212a8f43061c43cee713826241f0bd09c05787b142b339df456b01867d9ca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534773,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-14140351",
+			"date": "2022-10-08T00:00:23.000Z",
+			"author": {
+				"name": "Chris Burnell",
+				"url": "https://twitter.com/iamchrisburnell",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2e8a0d7a0798febfc78c94ce429fa9b48e3ea4c7b39b4a8557918c9306da64fd.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534774,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-22556677",
+			"date": "2022-10-08T00:00:28.000Z",
+			"author": {
+				"name": "Liam Fiddler",
+				"url": "https://twitter.com/liamfiddler",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/aa1ab6a2959974f0fa959e11d9bee132334eda6a235f34e359314d1f96a8436e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534793,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1228919081664794634",
+			"date": "2022-10-08T00:47:31.000Z",
+			"author": {
+				"name": "Ryan Cao",
+				"url": "https://twitter.com/RyanCaoDev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/82b4b4d68ee58a6228c8ceb89bfbbcf63942b6fb27575cc4170232709c0fd27a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534794,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-20188162",
+			"date": "2022-10-08T00:48:00.000Z",
+			"author": {
+				"name": "Richard Herbert",
+				"url": "https://twitter.com/richardherbert",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a3186fd5047001dfe74f862995600f45af30909f72e4a10637802be76ebba62e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534800,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-16395844",
+			"date": "2022-10-08T01:36:42.000Z",
+			"author": {
+				"name": "Jesse Heady",
+				"url": "https://twitter.com/jheady",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/95a5d97326ad8e8144936f9c533872f94f08576e4075ee586bfb7f9e291be20f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534836,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1914761252",
+			"date": "2022-10-08T03:33:14.000Z",
+			"author": {
+				"name": "Friedhold Matz",
+				"url": "https://twitter.com/FriedholdMatz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/40727ea9c6d4ebd9aeecd70e972914dd8d013ce73849dfcea949319e7ef30cbc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534841,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-15576835",
+			"date": "2022-10-08T04:01:53.000Z",
+			"author": {
+				"name": "Shawn Beatty",
+				"url": "https://twitter.com/sbeatty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bc9eb0f98982b14d7bed01300bde3676543e43afee5f55683dd087ef6afac229.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534857,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-2356777921",
+			"date": "2022-10-08T05:05:27.000Z",
+			"author": {
+				"name": "VirtualOverride🇵🇭",
+				"url": "https://twitter.com/VirtualOverride",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e463503b7f8098dd29581c31d2d588f5fc257a83b15e5e322da9185c09de0911.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534882,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-14912462",
+			"date": "2022-10-08T06:55:03.000Z",
+			"author": {
+				"name": "Tristan",
+				"url": "https://twitter.com/twaiiiin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f98343c4e8bb89cfd43dc43c97b92efb7183c3e4a63feb79bc4420b2017db1a9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534883,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1152056062347866112",
+			"date": "2022-10-08T06:55:03.000Z",
+			"author": {
+				"name": "Murtuzaali Surti",
+				"url": "https://twitter.com/murtuza_surti",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/63c94dc66c2b95b3a6a5e16583680d827006dfd000faf2cacead4d6ce4bd3684.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534897,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-14166962",
+			"date": "2022-10-08T08:12:35.000Z",
+			"author": {
+				"name": "Steve Lee",
+				"url": "https://twitter.com/SteveALee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fc1d196ef960751ab803a79c3b3b01d0fb4ecc898e76d6159d5b80ca163154a2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534898,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1076425548283420672",
+			"date": "2022-10-08T08:12:35.000Z",
+			"author": {
+				"name": "PerfReviews ⚡️",
+				"url": "https://twitter.com/PerfReviews_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5413715e62cb9bb26a7d60f56d3c28b215fdfd1463222ffc352f50c61fd95b78.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534899,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1568598636908670981",
+			"date": "2022-10-08T08:12:36.000Z",
+			"author": {
+				"name": "Zacarie Carr",
+				"url": "https://twitter.com/zc_carr",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534905,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-28185534",
+			"date": "2022-10-08T08:59:43.000Z",
+			"author": {
+				"name": "Gareth Ford Williams",
+				"url": "https://twitter.com/GarethFW",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a1d33acfc0cad217b12b68b3147e1350c3a583c42a8b22b774d2faf73a2c6b96.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534922,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-2884920656",
+			"date": "2022-10-08T10:14:07.000Z",
+			"author": {
+				"name": "全部入りHTML太郎",
+				"url": "https://twitter.com/_yuheiy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8653ae577f72ffb0bfd95c1911dc135117b092f2c7ebc1284322e6fcb4834c2d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534949,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-3256261052",
+			"date": "2022-10-08T11:33:34.000Z",
+			"author": {
+				"name": "SPELLiott 🧙👻🎃",
+				"url": "https://twitter.com/techytacos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/02318a5c4427d5288c6938a61ce17d20930b29402794670cc735eb612a3b0b72.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534958,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-56588049",
+			"date": "2022-10-08T12:09:59.000Z",
+			"author": {
+				"name": "Jim Tittsler",
+				"url": "https://twitter.com/jtittsler",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8d885dd6fcaa73dbe4a4abd5a2a88bc0aea70a70dd4f67f46f37195c51f8eab2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534959,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-2391572880",
+			"date": "2022-10-08T12:10:02.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://twitter.com/BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b7a80f06bd0444925bf3506019ab0f10869ae49d4b8c35ea126612f1875ceef2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535017,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-21313907",
+			"date": "2022-10-08T14:05:27.000Z",
+			"author": {
+				"name": "Tommie Manhammar Forssander",
+				"url": "https://twitter.com/tforssander",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c44d6621951fd21f92ef0b08cb44cbe069851210d801e9330fab619c65aeebf1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535048,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1394703799793639430",
+			"date": "2022-10-08T16:22:06.000Z",
+			"author": {
+				"name": "WebPerformance Report",
+				"url": "https://twitter.com/WebPerfReport",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9a8f27721439d332f2b986c2dfb44d8e72759057bda805f4935800efb85b13cd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535050,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-4874949729",
+			"date": "2022-10-08T16:22:29.000Z",
+			"author": {
+				"name": "Passle",
+				"url": "https://twitter.com/passle_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/90781eef1472e4b03f8b22010ee66132dfeef703fe76bf80d6a3b9dcd87e59ec.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535071,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-13408762",
+			"date": "2022-10-08T17:50:29.000Z",
+			"author": {
+				"name": "Dr. Non-Linear",
+				"url": "https://twitter.com/tswaterman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f24e991f4331e79407c7d3ca4e13ca8ca31ddcd2212f418100b71c148bafcd91.jpeg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535082,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-93242165",
+			"date": "2022-10-08T18:39:27.000Z",
+			"author": {
+				"name": "Marc Radziwill",
+				"url": "https://twitter.com/marc_radziwill",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/378aa790fe71feea5c3c555b4598410c8bac7f4fa056d69424f77c3bb56dc548.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535083,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-7379602",
+			"date": "2022-10-08T18:39:28.000Z",
+			"author": {
+				"name": "Matt Ström",
+				"url": "https://twitter.com/ilikescience",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7de5f0bd69f5f82dfdab393b9c1e50a73c3c9e84dee1dc365de78f54cf300d5b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535084,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1179734732298432513",
+			"date": "2022-10-08T18:39:32.000Z",
+			"author": {
+				"name": "f-elix",
+				"url": "https://twitter.com/f_elix90",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d72b8f801f61bdd174c5239692c639588eb8b404d822c74b2d5bf40762fb7781.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535135,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-35778426",
+			"date": "2022-10-08T22:48:32.000Z",
+			"author": {
+				"name": "Michal Mocny",
+				"url": "https://twitter.com/mmocny",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/36befa6961e57149bedefad6392ce6f0ead1164444b1c70a20cac9662d3fe546.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535187,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-19505688",
+			"date": "2022-10-09T06:03:52.000Z",
+			"author": {
+				"name": "Matt Stow ✨🦄",
+				"url": "https://twitter.com/stowball",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9dc6fa7851b806247f602c9509cebfd910a5e67120747ee40fbae8a8dc7af833.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535299,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-3889003397",
+			"date": "2022-10-09T18:04:56.000Z",
+			"author": {
+				"name": "Florian Geierstanger",
+				"url": "https://twitter.com/kino_auge",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5083857e636bca37238b16dd1dd454732cecf1e8e8a22820b6f32af1c3aa8481.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535454,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-2789398602",
+			"date": "2022-10-10T07:56:55.000Z",
+			"author": {
+				"name": "JP Santos",
+				"url": "https://twitter.com/jpsantos777",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c41fabae56637e177f073730f88c0f1458402999a316384c28db2adb7149bf1b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1536100,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-14337099",
+			"date": "2022-10-11T14:16:24.000Z",
+			"author": {
+				"name": "Tobias Ahlin",
+				"url": "https://twitter.com/tobiasahlin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/17afb6a1a49be66eb6d4ae437df409839d6a396477e08657b2ffc166f1f668e5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1536101,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1516348252307787778",
+			"date": "2022-10-11T14:16:27.000Z",
+			"author": {
+				"name": "Marco Micale",
+				"url": "https://twitter.com/MarcoMicale",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eb31fc367c3ed28d6208a1207103166e2a15c594f1c593a8e52e9cda9ed95d68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1536102,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-1546865239550984192",
+			"date": "2022-10-11T14:16:28.000Z",
+			"author": {
+				"name": "benjamin",
+				"url": "https://twitter.com/geetsww",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/013a223257695ff2f3fb16d5811eb9fcb701defbf3480795d8bd77e1c14fc742.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1536103,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-425007360",
+			"date": "2022-10-11T14:16:29.000Z",
+			"author": {
+				"name": "Marco useCauseAndEffect()",
+				"url": "https://twitter.com/mluccone",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4a982f9cf0444421d384bf4c7223d3df654b0b0d942f948bea7c84cecf11deb6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1536104,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-434457570",
+			"date": "2022-10-11T14:16:29.000Z",
+			"author": {
+				"name": "Ana Rodrigues",
+				"url": "https://twitter.com/ohhelloana",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fc885e5ff4cb71287c4384f7b208bb425af1a7a3139bbd8baf8f11923e168aa2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1536105,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-763092",
+			"date": "2022-10-11T14:16:44.000Z",
+			"author": {
+				"name": "Evan (he/him)",
+				"url": "https://twitter.com/darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dad326bbf6d338d658ebc9bf51c3edc1f735284d2022b14fbbb78d597082eeb6.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1536143,
+			"url": "https://twitter.com/zachleat/status/1578451850067464192#favorited-by-305228181",
+			"date": "2022-10-11T15:05:01.000Z",
+			"author": {
+				"name": "Corey Megown",
+				"url": "https://twitter.com/cmegown",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fc7185a88c6f5b701224c2947a86a1fb5dc789cb137f05520b02cbcc33750b72.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1539119,
+			"url": "https://twitter.com/zachleat/status/1581068947386171392#favorited-by-1500681541495795712",
+			"date": "2022-10-15T01:10:16.000Z",
+			"author": {
+				"name": "Ted Martin",
+				"url": "https://twitter.com/TedMart51618893",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/62bce5a57e5b8637cb69feaa6b1cf4024ccbfeba55d81cf6116d968077cdd61c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776176,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862389288744579#favorited-by-109296176354255607",
+			"date": "2024-02-02T15:15:03.000Z",
+			"author": {
+				"name": "Khalid ⚡",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/720e72bbde8606751a57ba8eac69b0db319ac174571c9c5322ea0bc05c5c7e19.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1776205,
+			"url": "https://fediverse.zachleat.com/@zachleat/111862389288744579#favorited-by-109698107255349105",
+			"date": "2024-02-02T16:09:24.000Z",
+			"author": {
+				"name": "Hasan Ali",
+				"url": "https://fosstodon.org/@hasanhaja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/53b551a370dc4bdd73533caca93a84206a320110ee47cdf95b1face4a05a5ced.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1534552,
+			"url": "https://twitter.com/eleven_ty/status/1578452240519471104",
+			"date": "2022-10-07T18:28:35.000Z",
+			"author": {
+				"name": "Eleventy 🎈 v2.0.0-canary.16",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534551,
+			"url": "https://twitter.com/raymondcamden/status/1578452444719317011",
+			"date": "2022-10-07T18:29:23.000Z",
+			"author": {
+				"name": "Spooky Raymond Camden 👻",
+				"url": "https://twitter.com/raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/144ca13ad853cdf18b01b797ea6d6fa1fa8bcb520fa14f725ac7e43cf384074e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534550,
+			"url": "https://twitter.com/TheGreenGreek/status/1578452461655797760",
+			"date": "2022-10-07T18:29:27.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534549,
+			"url": "https://twitter.com/davidleininger/status/1578454425806381057",
+			"date": "2022-10-07T18:37:16.000Z",
+			"author": {
+				"name": "David Leininger",
+				"url": "https://twitter.com/davidleininger",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae87ebd47981b480f2b6ad211b9a8ef6bfd79e9594535e70973765280ccb3198.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534548,
+			"url": "https://twitter.com/guaca/status/1578460694776684544",
+			"date": "2022-10-07T19:02:10.000Z",
+			"author": {
+				"name": "Estela Franco (she/her)",
+				"url": "https://twitter.com/guaca",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ed1c0573dd9682f7e532bdec7f32a77c5d958cb4983094cc3a99e9f0a7ba97f9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534547,
+			"url": "https://twitter.com/nucliweb/status/1578461985167273984",
+			"date": "2022-10-07T19:07:18.000Z",
+			"author": {
+				"name": "Joan León 🏞⚡️",
+				"url": "https://twitter.com/nucliweb",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/84fa278b7d4c7621464e1bab376e18eb7db87cbc028453fd1639a3da4a1f5ac8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534602,
+			"url": "https://twitter.com/biilmann/status/1578468779666726912",
+			"date": "2022-10-07T19:34:18.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534644,
+			"url": "https://twitter.com/John_Tax/status/1578484754189815808",
+			"date": "2022-10-07T20:37:46.000Z",
+			"author": {
+				"name": "Julien",
+				"url": "https://twitter.com/John_Tax",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e54ebb963574218686435b60d2da8855ef82db51b772ea626709538707307806.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534923,
+			"url": "https://twitter.com/_yuheiy/status/1578687620187447299",
+			"date": "2022-10-08T10:03:53.000Z",
+			"author": {
+				"name": "全部入りHTML太郎",
+				"url": "https://twitter.com/_yuheiy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8653ae577f72ffb0bfd95c1911dc135117b092f2c7ebc1284322e6fcb4834c2d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534960,
+			"url": "https://twitter.com/BryceWrayTX/status/1578718068540600320",
+			"date": "2022-10-08T12:04:53.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://twitter.com/BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b7a80f06bd0444925bf3506019ab0f10869ae49d4b8c35ea126612f1875ceef2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1535049,
+			"url": "https://twitter.com/WebPerfReport/status/1578773221620723712",
+			"date": "2022-10-08T15:44:02.000Z",
+			"author": {
+				"name": "WebPerformance Report",
+				"url": "https://twitter.com/WebPerfReport",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9a8f27721439d332f2b986c2dfb44d8e72759057bda805f4935800efb85b13cd.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

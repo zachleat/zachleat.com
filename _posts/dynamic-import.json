@@ -1,0 +1,289 @@
+{
+	"comments": [
+		{
+			"id": 1917607,
+			"parentId": 0,
+			"url": "https://social.lol/@db/114657643335050810",
+			"author": {
+				"name": "David Bushell ????",
+				"url": "https://social.lol/@db",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d107ed5b3aff7209af18490060668f06cdb6e057a2aa5bf089eba26e51df435f.png"
+			},
+			"date": "2025-06-10T06:26:34.000Z",
+			"content": "<p>reading: How to import() a JavaScript String by <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p><a href=\"https://www.zachleat.com/web/dynamic-import/\"><span>https://www.</span><span>zachleat.com/web/dynamic-impor</span><span>t/</span></a></p><p>— something else I saw recently, it's possible to do `function F(){ /* real code */ }.toString()` and create a blob from real code ???? </p><p><a href=\"https://github.com/TecharoHQ/anubis/blob/v1.19.1/web/js/proof-of-work.mjs#L10\"><span>https://</span><span>github.com/TecharoHQ/anubis/bl</span><span>ob/v1.19.1/web/js/proof-of-work.mjs#L10</span></a></p>\n<a href=\"https://www.zachleat.com/web/dynamic-import/\">How to import() a JavaScript String—zachleat.com</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1917747,
+			"parentId": 0,
+			"url": "https://mas.to/@frontenddogma/114660628519399747",
+			"author": {
+				"name": "Frontend Dogma",
+				"url": "https://mas.to/@frontenddogma",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1f1d7de7d42cc059b8a9b2dab7b94bc6b97a7b60b6181d615c57978c4a177f4f.png"
+			},
+			"date": "2025-06-10T19:05:44.000Z",
+			"content": "<p>How to “import()” a JavaScript String, by <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span>:</p><p><a href=\"https://www.zachleat.com/web/dynamic-import/\"><span>https://www.</span><span>zachleat.com/web/dynamic-impor</span><span>t/</span></a></p><p><a href=\"https://mas.to/tags/howtos\">#<span>howtos</span></a> <a href=\"https://mas.to/tags/javascript\">#<span>javascript</span></a> <a href=\"https://mas.to/tags/strings\">#<span>strings</span></a></p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/howtos\">howtos</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/javascript\">javascript</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/strings\">strings</a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/howtos\"></a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/javascript\"></a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/strings\"></a>\n<a href=\"https://www.zachleat.com/web/dynamic-import/\">How to import() a JavaScript String—zachleat.com</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1917815,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/craig.patik.com/post/3lrbxmoljac2k",
+			"author": {
+				"name": "Craig Patik",
+				"url": "https://bsky.app/profile/craig.patik.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7041ee8e9218791c2730e7bb7e78bb5b212b476948e980e8c4d6e8db75a44eb5.jpg"
+			},
+			"date": "2025-06-10T22:41:21.000Z",
+			"content": "Is this safer than eval() ?",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1917901,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lrbz3cccvs2z",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-06-10T23:07:26.000Z",
+			"content": "if by safer you mean as a security mechanism, no!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1917902,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/nicr.dev/post/3lrcwtq7zds2q",
+			"author": {
+				"name": "Nicolò Ribaudo",
+				"url": "https://bsky.app/profile/nicr.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6010db8a871e202cb3d7e69760fa778e3f0ff955e385599b75c0d0f0ce825aeb.jpg"
+			},
+			"date": "2025-06-11T08:00:04.000Z",
+			"content": "Why did you choose to inline dependency imports as data URLs, rather than replacing relative specifiers with absolute specifiers?",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1918223,
+			"parentId": 0,
+			"url": "https://frontenddogma.com/",
+			"author": {},
+			"date": "2025-06-13T06:53:18.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1934186,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/115106794336602971",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-08-28T14:11:34.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> just a small feature support wrinkle in Vitest, happy to see it ironed out!</p>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1917658,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lrb47fdy322h#liked_by_did:plc:drvl4knyo5koqwgjkuufkmk2",
+			"date": "2025-06-10T14:49:45.000Z",
+			"author": {
+				"name": "Chris Burnell",
+				"url": "https://bsky.app/profile/chrisburnell.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/1033c1c8e2e10d2456782853196367a75b15eb5b380632f290cc3200ecd73257.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917659,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lrb47fdy322h#liked_by_did:plc:agfmq3ftvzc6ohutuue6xadl",
+			"date": "2025-06-10T14:49:45.000Z",
+			"author": {
+				"name": "feedle",
+				"url": "https://bsky.app/profile/feedle.world",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d95e40a3d14df931814887e0f82a1d91e1c518f703d2a620e953dff9b004f52e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917660,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lrb47fdy322h#liked_by_did:plc:w2i5rf2ufip5uawt2gqxpwci",
+			"date": "2025-06-10T14:49:46.000Z",
+			"author": {
+				"name": "Titus ????????",
+				"url": "https://bsky.app/profile/wooorm.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/0475bf7b30d322336e090c59d8768169be41938bf2a216e9f15f12bde20d2eef.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917662,
+			"url": "https://fediverse.zachleat.com/@zachleat/114659435758327495#favorited-by-109303577371226380",
+			"date": "2025-06-10T15:01:18.000Z",
+			"author": {
+				"name": "Chris Burnell",
+				"url": "https://fediverse.repc.co/@chrisburnell",
+				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/303/577/371/226/380/original/271b7fd7c4c6c24b.webp"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917663,
+			"url": "https://fediverse.zachleat.com/@zachleat/114659435758327495#favorited-by-109289744030118387",
+			"date": "2025-06-10T15:01:19.000Z",
+			"author": {
+				"name": "Fynn Ellie Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917673,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lrb47fdy322h#liked_by_did:plc:554zgjahdelvrbspjpeofd2o",
+			"date": "2025-06-10T15:24:20.000Z",
+			"author": {
+				"name": "Eric Portis",
+				"url": "https://bsky.app/profile/ericportis.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/758d205cdc7f51c27bd9036083e21d4db570bc2d4452d39fe7968b6808b3c7e0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917687,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lrb47fdy322h#liked_by_did:plc:gv7offdtydaj2ck2aqmu47dp",
+			"date": "2025-06-10T15:58:29.000Z",
+			"author": {
+				"name": "JT",
+				"url": "https://bsky.app/profile/greenjimmy.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/67aa31fc9561bc52cfee67af4fc19496a1f720353e9e5f299e2fdbc30fed6213.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917688,
+			"url": "https://fediverse.zachleat.com/@zachleat/114659435758327495#favorited-by-109527046949352618",
+			"date": "2025-06-10T16:04:03.000Z",
+			"author": {
+				"name": "jailandrade",
+				"url": "https://mastodon.social/@jailandrade",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/73ff7010cdf2eb13647edaf8f1e9e18ffa208a926ec190b7b792fdbe0aca7e66.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917721,
+			"url": "https://fediverse.zachleat.com/@zachleat/114659435758327495#favorited-by-112871509378760849",
+			"date": "2025-06-10T17:16:21.000Z",
+			"author": {
+				"name": "Alistair",
+				"url": "https://front-end.social/@accudio",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8f911a0013ec407e4ff84660dea4c1ffa449d75ffc8316eb71736c148e27d15b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917724,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lrb47fdy322h#liked_by_did:plc:kgrbnhf2bdyk2nbwf44xcxpc",
+			"date": "2025-06-10T17:28:06.000Z",
+			"author": {
+				"name": "Sergio",
+				"url": "https://bsky.app/profile/sergio1984.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f40d7d953064549033957a8cb8d09170fbc17acfc2ad0dd740bcf4ea0662c50e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917725,
+			"url": "https://fediverse.zachleat.com/@zachleat/114659435758327495#favorited-by-109923263705956162",
+			"date": "2025-06-10T17:39:40.000Z",
+			"author": {
+				"name": "Caleb",
+				"url": "https://mastodon.online/@0x33",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3542b5cb1f7db7db806f1d18e5d1deccecbacf0839b59bdae5ab7ce93d483cc6.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1934185,
+			"url": "https://fediverse.zachleat.com/@zachleat/115106765013972555#favorited-by-109296176354255607",
+			"date": "2025-08-28T14:35:05.000Z",
+			"author": {
+				"name": "Khalid K-1000 🤖",
+				"url": "https://mastodon.social/@khalidabuhakmeh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9ae6c7193bbe5c9e9bfabd95d7461588ca47f98c161543d322d9e636f86fd23b.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1917651,
+			"url": "https://fediverse.zachleat.com/@zachleat/114659435758327495#reblogged-by-109779197194734817",
+			"date": "2025-06-10T14:27:44.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://mastodon.social/@JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917661,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lrb47fdy322h#reposted_by_did:plc:drvl4knyo5koqwgjkuufkmk2",
+			"date": "2025-06-10T14:49:48.000Z",
+			"author": {
+				"name": "Chris Burnell",
+				"url": "https://bsky.app/profile/chrisburnell.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/1033c1c8e2e10d2456782853196367a75b15eb5b380632f290cc3200ecd73257.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917664,
+			"url": "https://fediverse.zachleat.com/@zachleat/114659435758327495#reblogged-by-109289744030118387",
+			"date": "2025-06-10T15:01:23.000Z",
+			"author": {
+				"name": "Fynn Ellie Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917665,
+			"url": "https://fediverse.zachleat.com/@zachleat/114659435758327495#reblogged-by-109303577371226380",
+			"date": "2025-06-10T15:01:54.000Z",
+			"author": {
+				"name": "Chris Burnell",
+				"url": "https://fediverse.repc.co/@chrisburnell",
+				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/303/577/371/226/380/original/271b7fd7c4c6c24b.webp"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1917674,
+			"url": "https://fediverse.zachleat.com/@zachleat/114659435758327495#reblogged-by-109383215820991530",
+			"date": "2025-06-10T15:27:13.000Z",
+			"author": {
+				"name": "Bob Monsour",
+				"url": "https://indieweb.social/@bobmonsour",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b29612c57f91493bea28f611bfba470ca27d73af355df4040d9dc121940e1c07.png"
+			},
+			"via": "webmention"
+		}
+	]
+}

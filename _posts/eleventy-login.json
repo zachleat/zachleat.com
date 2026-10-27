@@ -1,0 +1,611 @@
+{
+	"comments": [
+		{
+			"id": 1302960,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/how-to-add-authentication-to-your-eleventy-site/",
+			"author": {},
+			"date": "2021-11-09T19:25:33.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1303379,
+			"parentId": 0,
+			"url": "https://twitter.com/brob/status/1458494729038057480",
+			"author": {
+				"name": "Bryan Robinson",
+				"url": "https://twitter.com/brob",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2e33ede5896250f43345fefa1f925f1adc13a10d52fbfb26e0e8e5e26816665c.jpg"
+			},
+			"date": "2021-11-10T18:00:15.000Z",
+			"content": "Ooooh serverless routes for that... that makes so much sense!\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1303380,
+			"parentId": 0,
+			"url": "https://twitter.com/DavidDarnes/status/1458495036941873161",
+			"author": {
+				"name": "Dave ♦️",
+				"url": "https://twitter.com/DavidDarnes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d5bccfce0da3ccaaf57c7627e3734679f0d778f5ae093b461145388ab5f00ccb.jpg"
+			},
+			"date": "2021-11-10T18:01:28.000Z",
+			"content": "Paging <a href=\"https://twitter.com/SaraSoueidan\">@SaraSoueidan</a> 👀\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1303381,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1458499019697803276",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-11-10T18:17:18.000Z",
+			"content": "Yay!\n<a class=\"u-mention\" href=\"https://twitter.com/Netlify\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brob\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1304421,
+			"parentId": 0,
+			"url": "https://twitter.com/seancdavis29/status/1459225228698136579",
+			"author": {
+				"name": "Sean C Davis",
+				"url": "https://twitter.com/seancdavis29",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a2dc5cc3fd592362912bf2db1d4f55fa66943c642660b3ac9601b454287ddc3b.jpg"
+			},
+			"date": "2021-11-12T18:23:00.000Z",
+			"content": "Authentication on <a href=\"https://twitter.com/eleven_ty\">@eleven_ty</a> from <a href=\"https://twitter.com/zachleat\">@zachleat</a>.\n\nThis is great! 11ty is great because it's built for the simplest use cases out of the box.\n\nBut that can give it the appearance of being limited. Examples like this really showcase just how powerful it can be.\n\n<a href=\"https://www.zachleat.com/web/eleventy-login/\">zachleat.com/web/eleventy-l…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1305826,
+			"parentId": 0,
+			"url": "https://twitter.com/hdv/status/1460558620307988485",
+			"author": {
+				"name": "Hidde",
+				"url": "https://twitter.com/hdv",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/aec18d4e6514f5b156c5e7ef838f9bd1f81e3bfc4ac847a88be97a480eef77be.jpg"
+			},
+			"date": "2021-11-16T10:41:25.000Z",
+			"content": "Nice, in this video <a href=\"https://twitter.com/zachleat\">@zachleat</a> shows how the OAuth dance can be performed with our favourite programming language, HTML, and some Netlify function magic (no client-side JavaScript 🕺) <a href=\"https://www.zachleat.com/web/eleventy-login/\">zachleat.com/web/eleventy-l…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1306439,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1461089155824369686",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-11-17T21:49:35.000Z",
+			"content": "Thanks for sharing!\n<a class=\"u-mention\" href=\"https://hiddedevries.nl/en/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/hdv\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/eleventy-login/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1307260,
+			"parentId": 0,
+			"url": "https://twitter.com/m_andrasch/status/1461628921858961412",
+			"author": {
+				"name": "Matthias Andrasch ♻️",
+				"url": "https://twitter.com/m_andrasch",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b98486e351b926d4dd5ff8a42ab4cdddf197e3f872b46c580522f0ba1fd5e63c.jpg"
+			},
+			"date": "2021-11-19T09:34:25.000Z",
+			"content": "Funny thing about <a href=\"https://twitter.com/search?q=%23Serverless\">#Serverless</a> is,that it actually only runs on server, therefore you can handle secret actions there (and not in your client side JS,which is great for securing against Cross-Site-Scripting/XSS as far as I understand). Nice example 🥰👇1/  \n<a href=\"https://www.zachleat.com/web/eleventy-login/\">zachleat.com/web/eleventy-l…</a>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1303246,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-2365831",
+			"date": "2021-11-10T14:58:45.000Z",
+			"author": {
+				"name": "illtron",
+				"url": "https://twitter.com/freshyill",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/33259e96cc7f30f5dfe221d50d7efe7da1f497e4b966a2a918daafbcd2dd3d2c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303247,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-1760991",
+			"date": "2021-11-10T14:58:46.000Z",
+			"author": {
+				"name": "Ofer Shaal",
+				"url": "https://twitter.com/shaal",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b4e96c132f4401174c009607f5551ec855104e1e3c34c6329d4498a53649ab39.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303248,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-994668511564783619",
+			"date": "2021-11-10T14:58:46.000Z",
+			"author": {
+				"name": "Ben",
+				"url": "https://twitter.com/kaleidawave",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/91703162cd8e5095c598929d638f77e695539bccda4ddfe6fb84a62dcd337c1e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303249,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-987221230074949632",
+			"date": "2021-11-10T14:58:47.000Z",
+			"author": {
+				"name": "AppSeed",
+				"url": "https://twitter.com/webappseed",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/84890864328c2228934616fac4a6a52ae108ad4df462df848cd9e7499dbd9f7e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303250,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-14112756",
+			"date": "2021-11-10T14:58:47.000Z",
+			"author": {
+				"name": "Mark Boulton",
+				"url": "https://twitter.com/markboulton",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0ad1ad5dbe7588e219881df9b72a07321066fa3470e5dc3d262046dff29a6031.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303298,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-6462722",
+			"date": "2021-11-10T17:08:01.000Z",
+			"author": {
+				"name": "Dan Klammer",
+				"url": "https://twitter.com/danklammer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dd91ab6d47c90a63050a4d9c8440e18ecd5e4619abc08a199d0e6fcf14a591c7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303299,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-339676523",
+			"date": "2021-11-10T17:08:02.000Z",
+			"author": {
+				"name": "Charlie G",
+				"url": "https://twitter.com/CharlieGroll",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4dce2d18d5149fb5c3e18ca048273a2ef8424c63c0049e450f744a6c2e037045.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303300,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-1259622945955016705",
+			"date": "2021-11-10T17:08:04.000Z",
+			"author": {
+				"name": "Tanner Dolby",
+				"url": "https://twitter.com/tannerdolby",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b9b6080c2486ab209b39facadec189a081288baa997cdb77bda07ddd9dafa21.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303301,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-18293604",
+			"date": "2021-11-10T17:08:08.000Z",
+			"author": {
+				"name": "ross",
+				"url": "https://twitter.com/RDallaire",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3caa5f540925eb0dce6b433d55334284e8296d64269a7bc0a28a0fe72d751c3b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303302,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-2978375704",
+			"date": "2021-11-10T17:08:08.000Z",
+			"author": {
+				"name": "Peter Wiegand",
+				"url": "https://twitter.com/peterwgnd",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/23aaa8ee4d44d8a56524f26af1612b422695c46621cd5db36382e07ce82e98ee.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303303,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-18935000",
+			"date": "2021-11-10T17:08:09.000Z",
+			"author": {
+				"name": "Ben Delarre",
+				"url": "https://twitter.com/BenDelarre",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0be131d3c95d9ecf47897d94eb7df90f09ef0350eaaebe70b0ead47f7c18c12e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303304,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-18636799",
+			"date": "2021-11-10T17:08:11.000Z",
+			"author": {
+				"name": "Stephanie Eckles",
+				"url": "https://twitter.com/5t3ph",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae7aebb65ddcb23a79323ff61cd61bae74c1845d99b7f9380f9dd3852c2e4245.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303305,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-31777194",
+			"date": "2021-11-10T17:08:12.000Z",
+			"author": {
+				"name": "Eric ☕️ 🐟 💻 🍍",
+				"url": "https://twitter.com/rasliche",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c4c6b9bd54016647d76110958e1b268006e22d50141ee06e5c0c4c34650022b1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303306,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-15285441",
+			"date": "2021-11-10T17:08:12.000Z",
+			"author": {
+				"name": "Ara Abcarians",
+				"url": "https://twitter.com/ItsMeAra",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f32266f999cefdde60291ad78d1153edb628d131df1910df54a7a0c577e8f3ee.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303307,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-23724008",
+			"date": "2021-11-10T17:08:13.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303308,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-35431161",
+			"date": "2021-11-10T17:08:15.000Z",
+			"author": {
+				"name": "Gerrit Halfmann",
+				"url": "https://twitter.com/halfmage",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/00946deb19cde7d076c0b873f175094f960874ddc7b453965e34bd622cae32fe.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303309,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-725305465979162624",
+			"date": "2021-11-10T17:08:16.000Z",
+			"author": {
+				"name": "💻 Christian Sharaf ⚙️",
+				"url": "https://twitter.com/SharafChris",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/29dff44e7372debf6ae54f844263f386cdc0202ba764ef98b7e927af44df8ddb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303310,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-25040904",
+			"date": "2021-11-10T17:08:17.000Z",
+			"author": {
+				"name": "Marcus Tallberg",
+				"url": "https://twitter.com/marcustallberg",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9e4ef168bb02cf034f8d2e9ce46d13c56679f1c3d4e1af407ae3b508ddf809a7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303311,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-647403",
+			"date": "2021-11-10T17:08:17.000Z",
+			"author": {
+				"name": "Cody Peterson #BLM",
+				"url": "https://twitter.com/codypeterson",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/43c01bc35f5e67894b8ec8fad40fe6e927c7a55365f97fe33f0e166a83037c64.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303312,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-1325417571223527424",
+			"date": "2021-11-10T17:08:18.000Z",
+			"author": {
+				"name": "Aleksandr Hovhannisyan",
+				"url": "https://twitter.com/hovhaDovah",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a57ef2a18b0456507f96c7391f6f5c067084b20adca201c076619412ff6dff27.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303313,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-778019",
+			"date": "2021-11-10T17:08:18.000Z",
+			"author": {
+				"name": "Brett Evans",
+				"url": "https://twitter.com/brettevans",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be6a601aacedb6f2d003841c3eb66a845221da7c2a48c01eee4bb09370180fcc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303314,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-701884099",
+			"date": "2021-11-10T17:08:19.000Z",
+			"author": {
+				"name": "jlca",
+				"url": "https://twitter.com/wootsbot",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c4a04ae82237bbfca6c5bf406bafab9e4411397b099b62b75c31d4df50b9db8f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303315,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-23411725",
+			"date": "2021-11-10T17:08:20.000Z",
+			"author": {
+				"name": "Jens Geiling",
+				"url": "https://twitter.com/geniestreiche",
+				"avatarUrl": "https://avatars.webmention.io/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303316,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-108169539",
+			"date": "2021-11-10T17:08:20.000Z",
+			"author": {
+				"name": "Ángel Guerra",
+				"url": "https://twitter.com/AngelLGuerra",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1f0cc6091fc61c2ee83c6dbccb9a3fa78824ff348c258f1888d452ea5ea467a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303317,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-3878783475",
+			"date": "2021-11-10T17:08:21.000Z",
+			"author": {
+				"name": "Coco Marz",
+				"url": "https://twitter.com/marz_coco",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f50478b6a0c6668ac090bfa7e68eb3c5b37b18a6ef4dc5cae2368093b643abbd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303318,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-24203304",
+			"date": "2021-11-10T17:08:21.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303382,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-758056",
+			"date": "2021-11-10T19:28:18.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://twitter.com/ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5a02571e30b5ee7d4cf5bdebf69e9ab5d536adfc20d7a5a11016dcb3988d12e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303383,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-877881574548701188",
+			"date": "2021-11-10T19:28:18.000Z",
+			"author": {
+				"name": "Kong Yang/Koob Moov Yaaj",
+				"url": "https://twitter.com/Ykmong",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ca6f59ba141acf9f02259adf6ae28eb06d15514ce5a688a4f8688bcc2584db4f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303384,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-3292340874",
+			"date": "2021-11-10T19:28:20.000Z",
+			"author": {
+				"name": "Rhian van Esch",
+				"url": "https://twitter.com/rhianvanesch",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b7df7ef76bffd2b18841d4c9b5e53edf16a2f1e38b5d05833df12c686848a87.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303385,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-1014292639",
+			"date": "2021-11-10T19:28:20.000Z",
+			"author": {
+				"name": "CloudCannon",
+				"url": "https://twitter.com/CloudCannon",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/324d725d8d667ecec69e102465fae3d359b205c69d83e408f856f50dff736c11.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303393,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-425853322",
+			"date": "2021-11-10T21:22:32.000Z",
+			"author": {
+				"name": "John Meyerhofer",
+				"url": "https://twitter.com/JRMeyerhofer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8bae22b585a9fca41e9280f6f6cb440ed8f5ae3add3ee0181bcdc773c14ebdfd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303394,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-114543786",
+			"date": "2021-11-10T21:22:32.000Z",
+			"author": {
+				"name": "MWDelaney",
+				"url": "https://twitter.com/MichaelWDelaney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b624a88b5663f8391c898e28bb7d9ed9a60dbed6b78846ebec6fc85d00c9a49.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303448,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-145992913",
+			"date": "2021-11-11T00:12:54.000Z",
+			"author": {
+				"name": "Matt Tunney ☕️",
+				"url": "https://twitter.com/mattftunney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eb4d2d64508817e1aa6a779a9e0ca03fe51a987270cecb40d16804768fe4191e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303449,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-83778333",
+			"date": "2021-11-11T00:12:57.000Z",
+			"author": {
+				"name": "Magnus",
+				"url": "https://twitter.com/m_gn_s",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ed274e596dcf6d200046606d7b1d9e4f6decbb2d7b5f7a3c1a5689b2e5cbe288.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303478,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-14142690",
+			"date": "2021-11-11T01:40:46.000Z",
+			"author": {
+				"name": "Todd Morey",
+				"url": "https://twitter.com/toddmorey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f1b648a04bf0df3070c7f65302c15dd3e6dc9a8e12f5b9c77298275a4235a3c8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303516,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-14983574",
+			"date": "2021-11-11T03:09:12.000Z",
+			"author": {
+				"name": "Nick Sollecito",
+				"url": "https://twitter.com/oticellos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7affe294ab24ea99819c0d6f647fb54ac0a19cb6f3444396b49584bed25c3892.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303586,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-14877480",
+			"date": "2021-11-11T09:18:42.000Z",
+			"author": {
+				"name": "Jake Ginnivan",
+				"url": "https://twitter.com/JakeGinnivan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/64fe940c53886aac6f7d20b4bd572f5ae421676afe67375fd2c3b944e3328159.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303607,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-2603088948",
+			"date": "2021-11-11T11:12:06.000Z",
+			"author": {
+				"name": "Nothing Personal, but #dirumahaja",
+				"url": "https://twitter.com/muktazamhasbi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f9922d6ce769426160a95499ba42ce93300eaf635637b144023e186849b80edd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303608,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-727355433401344000",
+			"date": "2021-11-11T11:12:06.000Z",
+			"author": {
+				"name": "Zeeshan",
+				"url": "https://twitter.com/zeshhaan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3d25dc60a530e98c5e4432c2252d97d2ede186e09173c446a11c6af55f52480d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303609,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-23583938",
+			"date": "2021-11-11T11:12:08.000Z",
+			"author": {
+				"name": "Sean C Davis",
+				"url": "https://twitter.com/seancdavis29",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a2dc5cc3fd592362912bf2db1d4f55fa66943c642660b3ac9601b454287ddc3b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303610,
+			"url": "https://twitter.com/zachleat/status/1458446459322437635#favorited-by-1101800215491854337",
+			"date": "2021-11-11T11:12:35.000Z",
+			"author": {
+				"name": "Tiger Abrodi ⚡ 🦊 💪",
+				"url": "https://twitter.com/TAbrodi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/23101a31a2f80c91b00935855265e9fcbb8bad3bf4b378262fc05248e13ef6f7.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1303320,
+			"url": "https://twitter.com/biilmann/status/1458460753229455361",
+			"date": "2021-11-10T15:45:15.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303319,
+			"url": "https://twitter.com/eleven_ty/status/1458462654058610689",
+			"date": "2021-11-10T15:52:48.000Z",
+			"author": {
+				"name": "Eleventy (1.0.0-beta.4)",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a109f3cd7c6eebf377053cc6cea1dd78cf113f76beacb7f2c7217da43bab9d04.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303395,
+			"url": "https://twitter.com/MichaelWDelaney/status/1458523389266628620",
+			"date": "2021-11-10T19:54:08.000Z",
+			"author": {
+				"name": "MWDelaney",
+				"url": "https://twitter.com/MichaelWDelaney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b624a88b5663f8391c898e28bb7d9ed9a60dbed6b78846ebec6fc85d00c9a49.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1303553,
+			"url": "https://twitter.com/JAMstackTORONTO/status/1458665910626140165",
+			"date": "2021-11-11T05:20:28.000Z",
+			"author": {
+				"name": "JamstackTORONTO aka Jamstack U.N. 🇺🇳",
+				"url": "https://twitter.com/JAMstackTORONTO",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/227d09419fe877da1d598fab1b4bf9cb76c76ae17ed548ffc94be9c15fefcc7b.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

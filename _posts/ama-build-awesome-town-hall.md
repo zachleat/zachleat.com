@@ -1,0 +1,24 @@
+---
+title: AMA about Build Awesome, an Open Town Hall at the 11ty Meetup
+date: 2026-03-12
+tags:
+  - speaking
+  - eleventy
+  - video
+medialength: 44 min
+metadata:
+  speaking:
+    type: meetup
+  youtubeId: lA-wD89m6jM
+external_icon_url: https://www.11tymeetup.dev/
+---
+Here I field any and all community questions about the Eleventy rebrand to Build Awesome.
+
+[Watch on YouTube](https://www.youtube.com/watch?v={{ metadata.youtubeId }}) or below:
+
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
+
+## Related:
+
+* [Eleventy is now Build Awesome (11ty Blog)](https://www.11ty.dev/blog/build-awesome/)
+* [Event page on 11tymeetup.dev](https://11tymeetup.dev/events/ep-30-rapid-prototyping-helpers/)

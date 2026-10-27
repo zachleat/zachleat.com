@@ -1,0 +1,63 @@
+---
+title: Dear Paul
+date: 2022-06-19
+---
+Dear Paul,
+
+Doth my RSS reader deceive me?
+
+<div class="card" data-demo-label="A Lying RSS Feed Reader">
+<style>
+#feedreader a[href],
+#feedreader a[href]:visited {
+  color: purple;
+  text-decoration-color: purple;
+  font-weight: bold;
+}
+#feedreader #dearzach {
+  color: blue;
+  text-decoration-color: blue;
+}
+</style>
+<table id="feedreader">
+  <thead class="sr-only">
+    <tr>
+      <th class="numeric">Date</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="numeric">18 <abbr title="June">Jun</abbr> 2022</td>
+      <td><a href="https://aerotwist.com/blog/dear-zach/" id="dearzach">{% indieAvatar "https://aerotwist.com/" %}Dear Zach</a></td>
+    </tr>
+    <tr>
+      <td class="numeric">9 <abbr title="December">Dec</abbr> 2016</td>
+      <td><a href="https://aerotwist.com/blog/when-everything-is-important-nothing-is/">{% indieAvatar "https://aerotwist.com/" %}🌟 When everything's important, nothing is! 🌟</a></td>
+    </tr>
+    <tr>
+      <td class="numeric">30 <abbr title="August">Aug</abbr> 2016</td>
+      <td><a href="https://aerotwist.com/blog/slicing-svg-9-ways/">{% indieAvatar "https://aerotwist.com/" %}Slicing SVG 9 Ways</a></td>
+    </tr>
+    <tr>
+      <td class="numeric">…</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+As I’ve been away from Twitter and have only encountered this link via my RSS application, I’ve taken it upon myself to contact [{% indieAvatar "https://feedbin.com" %}Feedbin](https://feedbin.com/) support to correct what must be an error in their typically inerrant feed reading application experience.
+
+I have not yet clicked through to your web blog out of concern for my own cybersecurity. I suspect that I am being targeted for an elaborate phishing attack. No one will be jacking my clicks, I can assure you of that.
+
+If not a nation-state level cyber-attack: might this be yet another instance of a [Richard Revolution video](https://www.youtube.com/watch?v=dQw4w9WgXcQ) trolling?
+
+Or perhaps you’ve simply let your domain name renewal lapse. Has the technology behind domain parking pages advanced to a never before seen level of individualized personalization? Is this a marketing ploy by GoDaddy on this the most sacred of company holidays: GoFather’s Day?
+
+Please contact me through the usual second-factor back-channels to ensure that everything is—as [GitHub status tweets casually and confidently repeat](https://twitter.com/githubstatus/status/1537677946030260226)—operating normally.
+
+Until then I’m afraid the link will remain unapologetically and skeptically `:not(:visited)`.
+
+Kind domain shards,
+Zach

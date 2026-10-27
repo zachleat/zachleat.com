@@ -1,0 +1,239 @@
+{
+	"comments": [
+		{
+			"id": 1783426,
+			"parentId": 0,
+			"url": "https://a11y.info/@ben/111964876584273860",
+			"author": {
+				"name": "Ben Myers ????",
+				"url": "https://a11y.info/@ben",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7827bcde3b54d2e02579e6a6d4182b877fc8ef8ca47132464b20882c6536ec10.jpg"
+			},
+			"date": "2024-02-20T17:00:34.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Gotta say, I love that you've set this up so users can supply all of their own strings. It makes this very <a href=\"https://a11y.info/tags/i18n\">#<span>i18n</span></a> friendly!</p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/i18n\">i18n</a>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/webcare-webshare/demo.html\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1783427,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964916427680444",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-02-20T17:10:42.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://a11y.info/@ben\" class=\"u-url\">@<span>ben</span></a></span> Thanks Ben!</p>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/webcare-webshare/demo.html\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1783737,
+			"parentId": 0,
+			"url": "https://www.alvinashcraft.com/2024/02/21/dew-drop-february-21-2024-4133/",
+			"author": {
+				"name": "Alvin A.",
+				"url": "https://www.alvinashcraft.com/author/admin/"
+			},
+			"date": "2024-02-21T12:13:18.000Z",
+			"content": "<h3><a></a>Top Links</h3>\n<ul><li><a href=\"https://devblogs.microsoft.com/visualstudio/visualstudio-extensibility-17-9/\">VisualStudio.Extensibility: Install extensions without restarting Visual Studio!</a> (Maia Kelner)</li>\n<li><a href=\"https://www.telerik.com/blogs/blazor-enhanced-navigation-fully-explained\">Blazor’s Enhanced Navigation Fully Explained</a> (Ed Charbeneau)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/microsoft-learn-blog/microsoft-learn-for-organizations-jump-start-team-technical/ba-p/3262753\">Microsoft Learn for Organizations: Jump-start team technical training</a> (Natalie Duryea)</li>\n<li><a href=\"https://electronjs.org/blog/electron-29-0\">Electron 29.0.0</a> (Keeley Hammond)</li>\n<li><a href=\"http://www.youtube.com/watch?v=dDdqk8um994\">Easily Assess On-Premise .NET Apps for Azure Migration | On .NET</a> (Olia Gavrysh)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/educator-developer-blog/join-microsoft-s-ai-communities-empower-your-ai-learning-journey/ba-p/4062590\">Join Microsoft’s AI Communities: Empower Your AI Learning Journey</a> (Lee Stott)</li>\n</ul><p></p>\n<h3><a></a>Web &amp; Cloud Development</h3>\n<ul><li><a href=\"https://stackify.com/getting-started-with-azure-serverless/\">Getting Started With Azure Serverless</a> (Verah Ombuiis)</li>\n<li><a href=\"https://dev.to/brojenuel/look-who-is-back-jquery-400-is-coming-to-town-4jd3\">Look Who is Back: jQuery 4.0.0 is Coming to Town</a> (Jenuel Oras Ganawed)</li>\n<li><a href=\"https://www.devleader.ca/2024/02/20/testcontainers-in-asp-net-core-a-simplified-beginners-guide/\">Testcontainers in ASP.NET Core – A Simplified Beginner’s Guide</a> (Nick Cosentino)</li>\n<li><a href=\"https://weblog.west-wind.com/posts/2024/Feb/20/Reading-Raw-ASPNET-RequestBody-Multiple-Times\">Reading Raw ASP.NET Request.Body Multiple Times</a> (Rick Strahl)</li>\n<li><a href=\"https://whitep4nth3r.com/blog/ramblings-about-javascript-scope-weird-errors-frameworks/\">Ramblings about JavaScript scope, weird errors and frameworks</a> (Salma Alam-Naylor)</li>\n<li><a href=\"https://www.zachleat.com/web/webcare-webshare/\">webcare-webshare Web Component</a> (Zach Leatherman)</li>\n<li><a href=\"https://azure.microsoft.com/en-us/updates/public-preview-configascode-customizations-in-microsoft-dev-box/\">Public preview: Configuration-as-code customizations in Microsoft Dev Box</a> (Azure Team)</li>\n<li><a href=\"http://www.i-programmer.info/news/80-java/16987-dart-adds-webassembly-support.html\">Dart Adds WebAssembly Support</a> (Kay Ewbank)</li>\n<li><a href=\"https://textslashplain.com/2024/02/20/cloaking-detonation-and-client-side-phishing-detection/\">Cloaking, Detonation, and Client-side Phishing Detection</a> (Eric Lawrence)</li>\n<li><a href=\"https://blog.postman.com/what-is-api-mocking/\">What is API mocking?</a> (Allen Helton)</li>\n</ul><p></p>\n<h3><a></a>WinUI, .NET MAUI &amp; XAML</h3>\n<ul><li><a href=\"https://www.syncfusion.com/blogs/post/wpf-bar-chart-us-students.aspx?utm_source=alvinashcraft&amp;utm_medium=email&amp;utm_campaign=alvinashcraft_blog_edmfeb24\">Chart of the Week: Creating a WPF Bar Chart to Visualize the Homelands of America’s International Students</a> (Saiyathalifathimabee Moidhinabdhulkathar)</li>\n</ul><p></p>\n<h3><a></a>Visual Studio &amp; .NET</h3>\n<ul><li><a href=\"https://khalidabuhakmeh.com/how-to-map-sql-results-to-any-object-using-entity-framework-core-8\">How to Map SQL Results To Any Object Using Entity Framework Core 8</a> (Khalid Abuhakmeh)</li>\n<li><a href=\"https://code-maze.com/csharp-get-the-number-of-lines-in-a-text-file/\">How to Get the Number of Lines in a Text File in C#</a> (Karthikeyan N S)</li>\n<li><a href=\"https://hackernoon.com/a-detailed-guide-to-string-concatenation-in-net?source=rss\">A Detailed Guide to String Concatenation in .NET</a> (Aleksei)</li>\n</ul><p></p>\n<h3><a></a>Design, Methodology, AI &amp; Testing</h3>\n<ul><li><a href=\"https://www.everydayunittesting.com/2024/02/fragile-tests-vs-flaky-tests.html\">Fragile Tests vs Flaky Tests</a> (Gil Zilberfeld)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-in-msix-february-2024/ba-p/4059428\">What’s new in MSIX: February 2024</a> (Sushant Bansal)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/on-your-data-is-now-generally-available-in-azure-openai-service/ba-p/4059514\">On Your Data is now Generally Available in Azure OpenAI Service</a> (Pavan Li &amp; Andy Beatman)</li>\n<li><a href=\"https://jasonhaley.com/2024/02/19/azure-search-openai-javascript/\">Demo Review: Azure Search OpenAI Javascript/Typescript</a> (Jason Haley)</li>\n<li><a href=\"https://blog.logrocket.com/ux-design/10-figma-accessibility-plugins/\">10 Figma accessibility plugins that make up for the lack of inbuilt options</a> (Chinwe Uzegbu)</li>\n<li><a href=\"https://smashingmagazine.com/2024/02/designing-for-colorblindness/\">A Practical Guide To Designing For Colorblind People</a> (Vitaly Friedman)</li>\n<li><a href=\"https://jdmeier.com/walking-meetings-vs-whiteboard-meetings/\">Walking Meetings vs. Whiteboard Meetings</a> <em>and</em> <a href=\"https://jdmeier.com/how-to-use-the-fieldstone-method/\">How To Use the Fieldstone Method to Build Your Second Brain</a> (JD Meier)</li>\n<li><a href=\"https://pub.towardsai.net/inside-openai-sora-five-key-technical-details-we-learned-about-the-amazing-video-generation-model-98e510f9b744?source=rss-46674a2c9422------2\">Inside OpenAI Sora: Five Key Technical Details We Learned About the Amazing Video Generation Model</a> (Jesus Rodriguez)</li>\n<li><a href=\"https://www.geekwire.com/2024/microsoft-to-invest-2-1b-in-spain-to-expand-ai-and-cloud-infrastructure/\">Microsoft to invest $2.1B in Spain to expand AI and cloud infrastructure</a> (Kurt Schlosser)</li>\n<li><a href=\"https://thenewstack.io/unraveling-the-costs-of-bad-code-in-software-development/\">Unraveling the Costs of Bad Code in Software Development</a> (Liz Ryan)</li>\n<li><a href=\"https://tech.slashdot.org/story/24/02/20/1441252/adobe-acrobat-adds-generative-ai-to-easily-chat-with-documents?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed\">Adobe Acrobat Adds Generative AI To ‘Easily Chat With Documents’</a> (msmash)</li>\n<li><a href=\"https://devblogs.microsoft.com/oldnewthing/20240220-00/?p=109428\">Microspeak: Closing out, duping out</a> (Raymond Chen)</li>\n<li><a href=\"https://thenewstack.io/figma-caters-to-developers-with-dev-mode-and-ai-integrations/\">Figma Caters to Developers with Dev Mode and AI Integrations</a> (Richard MacManus)</li>\n<li><a href=\"https://seankilleen.com/2024/02/how-to-set-up-netlify-deploys-for-docfx-using-github-actions/\">How to Set up Netlify Deploys for Docfx using GitHub Actions</a> (Sean Killeen)</li>\n<li><a href=\"https://idratherbewriting.com/blog/task-decomposition-prompt-engineering-series\">Prompt engineering: Task decomposition and complex tree diagrams</a> (Tom Johnson)</li>\n</ul><p></p>\n<h3><a></a>Mobile, IoT &amp; Game Development</h3>\n<ul><li><a href=\"https://firebase.blog/posts/2024/02/app-check-comes-to-google-idp-ios\">App Check comes to Google Identity for iOS!</a> (Victor Fan &amp; Charlotte Liang)</li>\n<li><a href=\"https://swift.org/blog/mlx-swift/\">On-device ML research with MLX and Swift</a> (Swift Team)</li>\n<li><a href=\"https://ionic.io/blog/catching-up-with-the-latest-features-in-angular\">Catching Up With The Latest Features In Angular</a> (Mike Hartington)</li>\n<li><a href=\"https://www.imaginativeuniversal.com/blog/2024/02/20/video-capture-experiences-in-apple-vision-pro/\">Video capture tips for the Apple Vision Pro</a> (James Ashley)</li>\n</ul><p></p>\n<h3><a></a>Screencasts &amp; Videos</h3>\n<ul><li><a href=\"http://www.youtube.com/watch?v=HTUemhV9W-M\">Advanced scenario with FluentUI-Blazor | Open at Microsoft</a> (Pablo Lopes &amp; Denis Voituron)</li>\n<li><a href=\"http://www.youtube.com/watch?v=sHDox4Fx6G0\">What is ASP.NET Core? | Web Development with .NET for Beginners</a> (Safia Abdalla &amp; Daniel Roth)</li>\n<li><a href=\"http://www.youtube.com/watch?v=JOJRzVqTmBY\">Generate PDF Files in Your .NET MAUI App or ANY .NET Application!</a> (Gerald Versluis)</li>\n<li><a href=\"http://www.youtube.com/watch?v=nDojpekD8yo\">FreeCodeSession – Episode 521</a> (Jason Bock)</li>\n<li><a href=\"http://www.youtube.com/watch?v=YEplterQDw4\">Coffee and Open Source Conversation – Stephanie Stimac</a> (Isaac Levin)</li>\n<li><a href=\"http://www.youtube.com/watch?v=G38z1iaqPlM\">Advent of Code 2023 Day 22: Sand Slabs ✅✅</a> (Martin Zikmund)</li>\n<li><a href=\"http://www.youtube.com/watch?v=RkV0aJdrkBg\">Mr. Maeda’s Cozy AI Kitchen – Inclusive Healthcare with AI, with Wendy Johansson</a> (John Maeda)</li>\n</ul><p></p>\n<h3><a></a>Podcasts</h3>\n<ul><li><a href=\"https://scrummastertoolbox.libsyn.com/disjoint-silos-the-illusion-of-teamwork-and-how-it-affects-agile-coaches-work-johannes-andersen\">Scrum Master Toolbox Podcast – Disjoint Silos, The Illusion of Teamwork and How it Affects Agile Coaches’ Work | Johannes Andersen</a> (Vasco Duarte)</li>\n<li><a href=\"http://sites.libsyn.com/419861/api-machinery-chaos-and-washing-machines-with-lucas-kldstrm\">Kubernetes Podcast from Google – API Machinery, Chaos and Dishwashers, with Lucas Käldström</a> (Abdel Sghiouar &amp; Kaslin Fields)</li>\n<li><a href=\"https://runasradio.com/Shows/Show/920\">RunAs Radio – Windows Server vNext with Jeff Woolsey</a> (Richard Campbell)</li>\n<li><a href=\"https://share.transistor.fm/s/d11fef52\">The 20 Mile March | Multithreaded Income Episode 30 with Brian Gorman</a> (Kevin Griffin)</li>\n<li><a href=\"https://pythonbytes.fm/episodes/show/372/uv-an-impressive-pip-alternative\">Python Bytes Podcast #372 – uv – an impressive pip alternative</a> (Michael Kennedy)</li>\n<li><a href=\"https://theamphour.com/659-altium-acquired/\">The Amp Hour #659 – Altium…Acquired!</a> (Dave Jones &amp; Chris Gammell)</li>\n</ul><p></p>\n<h3><a></a>Community &amp; Events</h3>\n<ul><li><a href=\"https://christianheilmann.com/2024/02/21/how-does-a-changed-market-affect-developer-relations/\">How does a changed market affect Developer Relations?</a> (Chris Heilmann)</li>\n<li><a href=\"https://dotnettips.wordpress.com/2024/02/20/rockin-the-code-world-season-4-panel-show-the-important-of-attending-in-person-conferences/\">Rockin’ the Code World Season 4 Panel Show: The Importance of Attending In-Person Conferences</a> (David McCarter)</li>\n<li><a href=\"https://news.xbox.com/en-us/2024/02/20/happy-10th-anniversary-xbox-insider-program/\">Happy 10th Anniversary: Xbox Insider Program</a> (Ian)</li>\n</ul><p></p>\n<h3><a></a>Database</h3>\n<ul><li><a href=\"https://www.mssqltips.com/sqlservertip/7921/ssrs-2022-install-setup-and-configuration/\">SSRS 2022 Install, Setup and Configuration</a> (Joe Gavin)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/azure-data-explorer-blog/update-records-in-a-kusto-database-public-preview/ba-p/4059695\">Update records in a Kusto Database (Public Preview)</a> (Vincent-Philippe Lauzon)</li>\n<li><a href=\"https://erikdarling.com/indexing-sql-server-queries-for-performance-fixing-windowing-functions/\">Indexing SQL Server Queries For Performance: Fixing Windowing Functions</a> (Erik Darling)</li>\n<li><a href=\"https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-design-patterns-part-7-materialized-views/\">Azure Cosmos DB design patterns – Part 7: Materialized View</a> (Jay Gordon)</li>\n</ul><p></p>\n<h3><a></a>SharePoint, M365 &amp; MS Teams</h3>\n<ul><li><a href=\"http://www.sharepointnutsandbolts.com/2024/02/Microsoft-365-Copilot-plugins.html\">Getting started with plugin development for Copilot for Microsoft 365</a> (Chris O’Brien)</li>\n</ul><p></p>\n<h3><a></a>More Link Collections</h3>\n<ul><li><a href=\"https://blog.cwa.me.uk/2024/02/21/the-morning-brew-3886/\">The Morning Brew #3886</a> (Chris Alcock)</li>\n<li><a href=\"https://seroter.com/2024/02/20/daily-reading-list-february-20th-2024-262/\">Daily Reading List – February 20th, 2024 (#262)</a> (Richard Seroter)</li>\n</ul><p></p>\n<h3><a></a>The Geek Shelf</h3>\n<p><a href=\"https://www.amazon.com/dp/1805120069/?tag=amavin-20\"><img align=\"left\" style=\"margin:0px 4px 0px 0px;border:0px;float:left;background-image:none;\" src=\"https://m.media-amazon.com/images/I/51iZfOsb2yL._SS135_.jpg\" border=\"0\" alt=\"51iZfOsb2yL._SS135_.jpg\" /></a> <a href=\"https://www.amazon.com/dp/1805120069/?tag=amavin-20\">Learn WinUI 3: Leverage WinUI and the Windows App SDK to create modern Windows applications with C# and XAML</a> (Alvin Ashcraft)<em> – Referral Link</em></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1908269,
+			"parentId": 0,
+			"url": "https://aus.social/@alansuspect/114423843466938439",
+			"author": {
+				"name": "Alan",
+				"url": "https://aus.social/@alansuspect",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7eb948923c37a822e8df01ca6f5e455c5383713d09f4b03b03d9f02fa46fb40f.png"
+			},
+			"date": "2025-04-29T23:28:11.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I was looking at your webshare web component: <a href=\"https://www.zachleat.com/web/webcare-webshare/\"><span>https://www.</span><span>zachleat.com/web/webcare-websh</span><span>are/</span></a> and it's awesome!</p><p>The thing it raised for me (and I guess the web share API in general) is how differently we use our devices. </p><p>On mobile this component is great because I can easily share through my apps, but on desktop (macos for me) I get a weird list of default apps I don't use (Mail, Notes, Freeform..?) and no way to share to something social media-ish. Also there's no share integration with a browser at all, which on desktop is where I do most of my interaction.</p><p>This is just a comment though, I have no idea if this is a fixable thing, or even needs fixing and is working correctly ????????‍♂️</p>\n<a href=\"https://www.zachleat.com/web/webcare-webshare/\">webcare-webshare Web Component—zachleat.com</a>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1783428,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#favorited-by-109292553200066437",
+			"date": "2024-02-20T17:14:52.000Z",
+			"author": {
+				"name": "tbeseda",
+				"url": "https://indieweb.social/@tbeseda",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/feecc78cf7fcc132ad3df322eac5e008d32fa9ee2bd3a34792613feeb101452d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783429,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#favorited-by-109288802718835617",
+			"date": "2024-02-20T17:14:52.000Z",
+			"author": {
+				"name": "Miriam (still)",
+				"url": "https://front-end.social/@mia",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/39d6fb6fadc18d71bcf4603b694c04d82c14da6b96ece6d9f8961a8f2348af81.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783430,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#favorited-by-109360271212518925",
+			"date": "2024-02-20T17:14:53.000Z",
+			"author": {
+				"name": "tomhazledine",
+				"url": "https://mastodon.social/@tomhazledine",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/67a03a8a8cbb481aadab9b3d0cb4dc6d8de0a51ed35f5b7540f4e0b9b2b81708.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783433,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#favorited-by-109293803416527033",
+			"date": "2024-02-20T17:14:55.000Z",
+			"author": {
+				"name": "Jakub Iwanowski :bash:",
+				"url": "https://fosstodon.org/@dzajew",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/05f8eacfa6bcdb0aa1201024c14ceca66589b63d1aca917edce791309d88743a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783438,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#favorited-by-110867034920487482",
+			"date": "2024-02-20T17:42:07.000Z",
+			"author": {
+				"name": "Stefan Zweifel",
+				"url": "https://phpc.social/@stefanzweifel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/31452d5082c01add27b8bf9872fe6bb39a5b25b14d7c044f43ca77ff2aeaea95.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783439,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#favorited-by-111964958152529830",
+			"date": "2024-02-20T17:42:08.000Z",
+			"author": {
+				"name": "picman",
+				"url": "https://framapiaf.org/@picman",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b94fae67d645d6dc0d5b324805ba8b2aebf9cda8f1f4d78f48265f93ee4a053c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783449,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#favorited-by-109320018037915841",
+			"date": "2024-02-20T18:12:06.000Z",
+			"author": {
+				"name": "Morbi",
+				"url": "https://chaos.social/@morbi",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9fb120162beb50b2b5663163b2a4bcd12666a1821382a07cba083f789fb29d5d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783494,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#favorited-by-109445722662523846",
+			"date": "2024-02-20T19:38:01.000Z",
+			"author": {
+				"name": "Justin",
+				"url": "https://mastodon.social/@justinoms",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783498,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#favorited-by-109293783346890324",
+			"date": "2024-02-20T20:08:20.000Z",
+			"author": {
+				"name": "Emil van Galen",
+				"url": "https://fosstodon.org/@EmilVanGalen",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/da3858338f8673e3212e0879bd8aa481492a08234f65dc09be201be637498d6f.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1783410,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#reblogged-by-111964827981636752",
+			"date": "2024-02-20T16:49:48.000Z",
+			"author": {
+				"name": "bds",
+				"url": "https://mstdn.ca/@bds",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf2b130bb70abba848a2188fdd6f27c89b575b351c699bb4a5efdfa12b8ab5d4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783411,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#reblogged-by-109779197194734817",
+			"date": "2024-02-20T16:49:49.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://mastodon.social/@JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783412,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#reblogged-by-109293884804115460",
+			"date": "2024-02-20T16:50:09.000Z",
+			"author": {
+				"name": "Ernie Smith",
+				"url": "https://writing.exchange/@ernie",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d912fb59f930c22b3fae8f1d74f7fe0886f94bfe7cf2d68db4255edc71277790.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783431,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#reblogged-by-109643965226702704",
+			"date": "2024-02-20T17:14:54.000Z",
+			"author": {
+				"name": "Tixie Salander ????",
+				"url": "https://mastodon.guerilla.studio/@tixie",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4a2cd3981642421dcabd48867f40270a1a5cf9dd5e92fd6bbc25ddd90a0f2e28.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783432,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#reblogged-by-109293803416527033",
+			"date": "2024-02-20T17:14:55.000Z",
+			"author": {
+				"name": "Jakub Iwanowski :bash:",
+				"url": "https://fosstodon.org/@dzajew",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/05f8eacfa6bcdb0aa1201024c14ceca66589b63d1aca917edce791309d88743a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783440,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#reblogged-by-109303656530857114",
+			"date": "2024-02-20T17:42:09.000Z",
+			"author": {
+				"name": "Raymond Camden",
+				"url": "https://mastodon.social/@raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1ddb97091dd0bdc5385c4527b26663b5f999facfe47249e02270a3f48303fbf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783450,
+			"url": "https://fediverse.zachleat.com/@zachleat/111964672124297646#reblogged-by-109411524121140761",
+			"date": "2024-02-20T18:12:08.000Z",
+			"author": {
+				"name": "Brian David",
+				"url": "https://hachyderm.io/@bcdavid",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/31da64126e0b182e6517bc4eacbe31786084cf5b8378919bbbdeacba48db7986.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

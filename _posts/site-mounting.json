@@ -1,0 +1,53 @@
+{
+	"comments": [
+		{
+			"id": 1811607,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/112316704816351980",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/static.mamot.fr/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-04-22T20:15:06.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> howdy howdy! This demo has all three: <a href=\"https://rare-pineapple.cloudvent.net/\"><span>https://</span><span>rare-pineapple.cloudvent.net/</span><span></span></a></p><p>Source code: <a href=\"https://github.com/zachleat-cc/demo-cloudcannon-microblog/\"><span>https://</span><span>github.com/zachleat-cc/demo-cl</span><span>oudcannon-microblog/</span></a></p><p>And this is the magic of site mounting in Eleventy: <a href=\"https://github.com/zachleat-cc/demo-cloudcannon-microblog/blob/38c0094d42f9bdf328b6119e554347daafd169d9/eleventy.config.js#L88-L94\"><span>https://</span><span>github.com/zachleat-cc/demo-cl</span><span>oudcannon-microblog/blob/38c0094d42f9bdf328b6119e554347daafd169d9/eleventy.config.js#L88-L94</span></a></p><p>Is that what you were after?</p>\n<a class=\"u-mention\" href=\"https://cloudcannon.com/templates/venture/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/site-mounting/\"></a>\n<a href=\"https://rare-pineapple.cloudvent.net/\">Microblog</a>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1736661,
+			"url": "https://fediverse.zachleat.com/@zachleat/111381807496119359#favorited-by-110635286175767117",
+			"date": "2023-11-09T22:35:24.000Z",
+			"author": {
+				"name": "Neblib",
+				"url": "https://mastodo.neoliber.al/@Neblib",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e45c6788454f4e0535151464ccea33792328310ba337c171058df606edaa0c22.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1736662,
+			"url": "https://fediverse.zachleat.com/@zachleat/111381807496119359#favorited-by-109288230453300889",
+			"date": "2023-11-09T22:35:24.000Z",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://mamot.fr/@nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/46db122dbb31fe47f9d54cd6b37edc875807209a0c1f9d0a8da12a397743b88d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1736970,
+			"url": "https://fediverse.zachleat.com/@zachleat/111381807496119359#favorited-by-110973938709857411",
+			"date": "2023-11-10T14:57:03.000Z",
+			"author": {
+				"name": "Dee-Yell (Dave)",
+				"url": "https://pkm.social/@dropcase",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/057b044aed34a4e7f606c5d9009d8d4b06e70018c93c85628012a69e47257bba.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"comments": [
+		{
+			"id": 1351849,
+			"parentId": 0,
+			"url": "https://nicolas-hoizey.com/billets/2022/02/14/",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://nicolas-hoizey.com/"
+			},
+			"date": "2022-02-14T20:58:03.000Z",
+			"content": "<p>Une photo prise un 14 février :</p>\n        <img src=\"https://res.cloudinary.com/nho/image/fetch/q_auto,f_auto,w_auto:100:300,c_limit/https://nicolas-hoizey.photo/photos/winter-is-coming/winter-is-coming.jpg\" alt=\"Winter is coming…\" width=\"1200\" height=\"1200\" /><a href=\"https://nicolas-hoizey.photo/galleries/nature/landscapes/winter-is-coming/\">Winter is coming…</a>\n    \n    \n      \n<p>Karl indique que <a href=\"https://nicolas-hoizey.com/notes/2022/02/07/1/\">mettre à jour les données de compatibilité sur MDN</a> est <a href=\"https://www.la-grange.net/2022/02/08/choux\">simple</a>. <a href=\"https://twitter.com/dioxmat/status/1490692043131310081\">Mathieu m'avait donné le même lien</a>. C'est sûr, quand on sait que c'est dans le dépôt <a href=\"https://github.com/mdn/browser-compat-data/\"><code>browser-compat-data</code></a>, ça aide.</p>\n<p>En fait, c'est expliqué dans la <a href=\"https://developer.mozilla.org/en-US/docs/MDN/Structures/Compatibility_tables\">page \"Compatibility tables and the browser compatibility data repository (BCD)\"</a>, que l'on peut trouver dans la <a href=\"https://developer.mozilla.org/en-US/docs/MDN/Contribute#other_task_types\">section \"Other task types\" de la page \"Contributing to MDN\"</a>, qui est liée depuis <a href=\"https://github.com/mdn/content/blob/main/README.md\">le README que je pointais</a> en disant ne pas y trouver l'info. On n'a pas tous les jours un Karl sous la main pour nous aider à sortir du labyrinthe… 😅</p>\n<p>Peut-être un lien à ajouter directement sous chaque tableau de compatibilité ?</p>\n<p>Dinoblogueurs, comptez-vous ! <a href=\"https://nicolas-hoizey.com/articles/2008/06/11/les-dinosaures-du-web-francophone-sont-gateux-et-je-me-fais-virtuellement-vieux/\">✋</a></p>\n<p><a href=\"https://nota-bene.org/Les-dinosaures\">Stéphane commence malheureusement à renoncer</a> devant les aberrations que nous voyons tous les jours sur le Web. Je le comprends et je m'en désole, il fait partie de mes phares en termes de défense d'un meilleur Web, ouvert, accessible. Pour ceux qui ne savent pas, il fait partie des créateurs de <a href=\"https://www.paris-web.fr/\">Paris Web</a>, ça dit beaucoup. ❤️</p>\n<p>De mon côté, j'ai encore la flamme, j'espère que ça durera.</p>\n<p>Je suis particulièrement ravi de voir l'ampleur que prend <a href=\"https://11ty.dev/\">Eleventy</a>, le générateur de sites statique <a href=\"https://nicolas-hoizey.com/about/the-website.html\">utilisé ici</a>, qui a <a href=\"https://www.11ty.dev/docs/\">d'excellents objectifs</a> :</p>\n<blockquote>\n<p>Eleventy is not a JavaScript framework—that means zero boilerplate client-side JavaScript. We’re thinking long term and opting out of the framework rat race. The tool chain, code conventions, and modules you use in your front end stack are decoupled from this tool. Work from a solid foundation of pre-rendered templates that suit your project’s progressive enhancement baseline requirements.</p>\n</blockquote>\n<p>Eleventy est un projet initié et porté depuis quelques années par un <a href=\"https://www.zachleat.com/\">Zach Leatherman</a> avec des valeurs en or, et qui depuis aujourd'hui peut <a href=\"https://www.zachleat.com/web/eleventy-oss/\">travailler à temps plein sur le projet</a>, sponsorisé par son employeur Netlify.</p>\n<p>Un tel projet est une brique importante pour défendre ce Web ouvert que nous appelons de nos vœux. Ce n'est pas le seul, loin de là, heureusement. Et les plus bruyants (et fatiguants) ne sont généralement pas les plus nombreux, heureusement.</p>\n<p>🤞</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1352131,
+			"parentId": 0,
+			"url": "https://twitter.com/juanfernandes/status/1493652772696301576",
+			"author": {
+				"name": "Juan Fernandes (he/him)",
+				"url": "https://twitter.com/juanfernandes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/aa0e676bad27240124256504483063c166bc8935f20225fb3b3363ff2ae041c7.jpg"
+			},
+			"date": "2022-02-15T18:25:46.000Z",
+			"content": "Just read: \"Full Time Open Source Development for Eleventy, sponsored by Netlify—<a href=\"http://zachleat.com\">zachleat.com</a>\" <a href=\"https://www.zachleat.com/web/eleventy-oss/\">zachleat.com/web/eleventy-o…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1894613,
+			"parentId": 0,
+			"url": "https://www.zachleat.com/web/symbiotic-open-source/",
+			"author": {},
+			"date": "2025-03-18T03:03:41.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

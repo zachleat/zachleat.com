@@ -1,0 +1,146 @@
+{
+	"disqus": {
+		"path": "/web/performance-caveat-with-jquery-selectors-and-live-events/",
+		"commentCount": 14,
+		"comments": [
+			{
+				"postId": "887461889",
+				"parentPostId": null,
+				"date": "2009-05-08T17:33:17Z",
+				"author": "James",
+				"avatar": "https://www.gravatar.com/avatar/0277dde1b6440039c4225b60d52e8ff5?d=mm&s=60",
+				"message": "<p>Very interesting. I never even thought of the overhead caused by the initial selection. A good point and definitely something that needs improving in the jQuery core!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461890",
+				"parentPostId": null,
+				"date": "2009-05-11T03:40:56Z",
+				"author": "redsquare",
+				"avatar": "https://www.gravatar.com/avatar/ea332df71e20fd65f2ad4630e46dfa97?d=mm&s=60",
+				"message": "<p>I agree with your comments. If performance is critical I would advocate the use of the more traditional delegation method where you delegate an event to a closer contextual element than the document e.g container div or table etc and using the following format<br><code><br>if ( $(ev.target).is('a') ) <br></code>.<br>IIRC on a small test I did it uses 50% less method calls  performs 25% quicker than the live method. I think you can safely scale out these numbers on a large complicated dom.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461894",
+				"parentPostId": null,
+				"date": "2009-05-11T03:47:41Z",
+				"author": "Diego Perini",
+				"avatar": "https://www.gravatar.com/avatar/b309690898537b0298d8d86c8a439d0e?d=mm&s=60",
+				"message": "<p>Sure, removing the first selection can improve things during initialization, also I am not sure the way you are doing it is safe for all the tricks of jQuery internals.</p><p>Strictly speaking about the performances, you just scratched the surface of the problem and your cure is not enough (for performances, I repeat).</p><p>A \"match(element, selector)\" method is best suited than a \"select(selector, from)\" method for a fast event delegation. j</p><p>jQuery does not currently implement such a method, it does that by using a standard \"select()\" then look in the result set and see if the searched element is in there (slow/slow).</p><p>The event target should be passed to the \"match(element, selector)\" method. Only that element should be matched against the \"selector\", not all the elements in the document as it currently happens in most implementations.</p><p>With event delegation these selection operations have to be repeated continuously for most events while users interact with the pages. You can easily see the selection method itself is the real bottleneck here.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461888",
+				"parentPostId": null,
+				"date": "2009-05-23T19:05:19Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Great comments guys!</p><p>@redsquare</p><p>From my perspective, I want the code simplicity of being able to not perform a selector at all to improve both onload performance, and alleviate having to add event handlers later when I add new content using ajax.  The live method (in it's current form) addresses only the latter, not the former.</p><p>If I used <code>if($(event.target))</code>, then I'd still have to perform SOME sort of selector to bind the callback to an element, instead of just using the document object.</p><p>Maybe I'm being super picky here, but in my tests, the performance difference is large enough to be picky about.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461887",
+				"parentPostId": null,
+				"date": "2009-05-23T19:08:50Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>@Diego</p><p>In my stuff, there isn't too huge of a performance bottleneck on the callback execution.  I'm a bigger stickler for onload performance. :)</p><p>I would agree that the \"hack\" presented above maybe isn't the most forward thinking approach.  Perhaps a hybrid approach with what redsquare presented is in order.</p><p><code><br>$(document).bind('click', function(event)<br>{<br>    if($(event.target).is(...)) {<br>        ...<br>    }<br>});<br></code></p>",
+				"replies": []
+			},
+			{
+				"postId": "887461895",
+				"parentPostId": null,
+				"date": "2009-11-09T16:46:10Z",
+				"author": "Jakob",
+				"avatar": "https://www.gravatar.com/avatar/91d222cde37762df7484e8de81c41b1a?d=mm&s=60",
+				"message": "<p>This feels like a  hack</p><p>$.live = function(selector, type, fn)<br>{<br>    var r = $([]);<br>    r.selector = selector;<br>    if(type &amp;&amp; fn) {<br>        <a href=\"http://r.live\" rel=\"nofollow noopener\" title=\"r.live\">r.live</a>(type, fn);<br>    }<br>    return r;<br>};</p><p>allthough it works and it improved performence on my page by reducing the number of calls with 60%.<br>But is this a preferable way of doing event delegation with jquery?</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461897",
+				"parentPostId": null,
+				"date": "2009-11-09T21:58:53Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Depends on what event you're trying to delegate.  I would look at the above comments, it seems like for the normal events supported by live, you can just as easily attach your own event handler to the document node and do it the least abstracted way.  Which in this case, probably would be preferable.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461896",
+				"parentPostId": null,
+				"date": "2009-11-10T05:07:05Z",
+				"author": "Dave Cardwell",
+				"avatar": "https://www.gravatar.com/avatar/4bf3fb2f03c2d3e00007deef20aeac68?d=mm&s=60",
+				"message": "<p>After looking at how the .live() method is implemented in the jQuery source, I had been doing the following:</p><p></p><pre><code>$.extend({ handle: function(type, selector, fn) {<br>    return $.fn.live.apply({ selector:selector }, [type, fn]);<br>});</code></pre><p></p><p>This is called as <code>$.handle('click', 'blockquote', function(event) { … });</code> (read as <em>handle</em> the <em>click</em> event for any <em>blockquote</em>).</p><p>I came across your solution when I went to file a feature request (see <a href=\"http://dev.jquery.com/ticket/5425\" rel=\"nofollow noopener\" title=\"http://dev.jquery.com/ticket/5425\">existing ticket</a>) and now I’m not sure which I prefer :P</p><p>Hopefully an officially supported method will materialise in jQuery 1.4.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461901",
+				"parentPostId": null,
+				"date": "2010-06-23T15:26:47Z",
+				"author": "Sam Blowes",
+				"avatar": "https://www.gravatar.com/avatar/e570f4ac41a8a5e732fc279cb4ff08b1?d=mm&s=60",
+				"message": "<p>Forgive me if I'm missing something obvious here...<br>Isn't the delegate function the right function for this job?<br> <code> <br>$('body').delegate(''span.myTooltip'', 'mouseover', function(event) {<br>    // activate tooltip<br>}); </code></p>",
+				"replies": []
+			},
+			{
+				"postId": "887461902",
+				"parentPostId": null,
+				"date": "2010-06-23T15:27:43Z",
+				"author": "Sam Blowes",
+				"avatar": "https://www.gravatar.com/avatar/e570f4ac41a8a5e732fc279cb4ff08b1?d=mm&s=60",
+				"message": "<p>My syntax was slightly wrong but you get the idea.</p><p>Thanks..</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461903",
+				"parentPostId": null,
+				"date": "2010-06-24T04:04:17Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Hey Sam,<br>Not really, $('body') will still execute the selector query.  We want to delay that as long as possible.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461900",
+				"parentPostId": null,
+				"date": "2010-07-07T06:25:22Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>Actually, if you use $(document) or $(document.body), delegate should work very similar to the workaround included above.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461904",
+				"parentPostId": null,
+				"date": "2010-11-10T23:45:36Z",
+				"author": "William Colvin",
+				"avatar": "https://www.gravatar.com/avatar/57a10e2ad04ff88743475bc54129c83e?d=mm&s=60",
+				"message": "<p>Nice blog, thank you! I really love it!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461906",
+				"parentPostId": null,
+				"date": "2011-06-03T10:50:33Z",
+				"author": "Sujatha",
+				"avatar": "https://www.gravatar.com/avatar/de5e702187077ff855d3ff29c3f8efa9?d=mm&s=60",
+				"message": "<p>Hi, <br>I am using jQuery 1.5 dhtmlxtabbar for tab component.   When I use the tab component for very big application, have performance issues.  Take more time to load the tab and their content, during this time tab header only displayed on that page, after long time tab is loaded. Component method has been called in javascript onload event.  Anybody help me to solve this issue.</p>",
+				"replies": []
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 1664988,
+			"parentId": 0,
+			"url": "https://nmimsassignmentsguru.com/2023/04/super-helpful-ideas-to-enhance-top-10-online-poker-sites/",
+			"author": {},
+			"date": "2023-04-21T05:12:15.000Z",
+			"content": "<p>This free poker on the web article is all about a hand we watched in a Sit-and-Go competition we played in. One of many players was duped down, but again so was we despite the fact that I becamen’t inside hand.</p>\n<p></p>\n<p>There are many and varied reasons people play , one of the most common reasons had previously been because they could not find a casino game locally and didn’t understand anyone who played poker. Now the sole reason to try out online is basically because you choose to, not because you have to.</p>\n<p><img src=\"https://i0.wp.com/cdn.slidesharecdn.com/ss_thumbnails/bigbonusesplayonlinepokerforrealmoneynow-141125032529-conversion-gate01-thumbnail-4.jpg?w=350\" align=\"right\" alt=\"bigbonusesplayonlinepokerforrealmoneynow-141125032529-conversion-gate01-thumbnail-4.jpg?w=350\" /></p>\n<p>The free on-line learn poker online rule may be the key that produces a big change between breaking even and going for a loss. At the very least this is the case in terms of beginners. If you’re muddled up in a streak of misfortune, the internet poker bonus codes can at the minimum allow you to break also. After which once you’ve sufficient experience under your belt, you could make big money by making use of your bonus codes.</p>\n<p>Choose a card space and a table that suit the method that you <a href=\"https://www.Zachleat.com/web/performance-caveat-with-jquery-selectors-and-live-events/\">perform</a>. During the lower limitations that is easier in theory, but by OBSERVING <a href=\"http://boost-engine.ru/mir/home.php?mod=space&amp;uid=5568991&amp;do=profile\">best Us poker Sites 2022</a> online bonus what’s happening, you will get a ‘feel’ for the table after a few hands and for little or no expense, dependent on whether you posted and had the blinds or not. If it does not match you, get right up and find another dining table. It will be far cheaper over time than wanting to force the dining table you are on. Understand when to cut and run so when to remain.</p>\n<p>Your only foundation is their betting habits -do they raise effortlessly or do they make sure they will have a very good hand before they decide? Newbies may want to start with free versions of this game in order to maybe not lose money whenever exercising still.</p>\n<p>Your teachers, moms and dads and even you your self may believe that you are hyperactive. This might or might not be the way it is, but the majority of of practices that have been put on working together with the hyperactive student can work available. Do not be offended by the implications, being a Kinesthetic Learner just isn’t a handicap. To the contrary, a great many very intelligent and success individuals including very effective music artists and athletes are Kinesthetic Learners. The methods to learning that i will be suggesting here will simply help you get knowledge into the most expedient way.</p>\n<p>As the play progresses you’ll notice players making and joining. Pay additional attention right here while the fish you were milking has kept and a super taut aggressive player is now within their spot. This may affect the skin regarding the entire table while making it unprofitable to continue.</p>\n<h3>Share this:</h3><ul><li><a href=\"https://nmimsassignmentsguru.com/2023/04/super-helpful-ideas-to-enhance-top-10-online-poker-sites/?share=twitter\" title=\"Click to share on Twitter\"><span>Twitter</span></a></li><li><a href=\"https://nmimsassignmentsguru.com/2023/04/super-helpful-ideas-to-enhance-top-10-online-poker-sites/?share=facebook\" title=\"Click to share on Facebook\"><span>Facebook</span></a></li><li></li></ul>\n\n\t<h3><em>Related</em></h3>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

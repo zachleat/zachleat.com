@@ -1,0 +1,601 @@
+{
+	"comments": [
+		{
+			"id": 1827807,
+			"parentId": 0,
+			"url": "https://hamatti.org/posts/recap-of-international-symposium-on-making-web-sites-real-good/",
+			"author": {
+				"name": "Juha-Matti Santala"
+			},
+			"date": "2024-05-15T05:00:00.000Z",
+			"content": "<p>\n  This site and a good dozen others that I’ve built and maintain, are built with\n  <a href=\"https://11ty.dev/\">Eleventy</a> (aka 11ty).\n  It’s not only a really good static-site generator but also a center piece of a\n  wonderful community of web developers, bloggers, indiewebbers and other people\n  who like to make web sites real good.\n</p>\n\n<p>\n  Last week, the first\n  <a href=\"https://conf.11ty.dev/\">11ty International Symposium on Making Web Sites Real Good</a>\n  took place and while I usually struggle to maintain focus and interest on\n  online conferences, this one kept me glued to the screen (and the lovely\n  Youtube chat with many friends from the web) so much that I even waited for\n  the breaks to visit the bathroom.\n</p>\n\n<p>\n  Many of us in the chat discussed there how nice it was to be in an online\n  conference where such a large part of the (active) audience were friends from\n  social media, blogosphere, Eleventy discord and 11ty Meetups. That truly makes\n  a difference between a mediocre online experience and a fantastic one.\n</p>\n\n<p>\n  Massive thanks to David, Mike, Olivia and Zach for organizing such a wonderful\n  conference, Diane and White Coat Captioning for the captions, all the speakers\n  for amazing talks and to all the fellow participants in the chat for great\n  discussions and good vibes. And\n  <a href=\"https://www.11ty.dev/blog/mascot-david/\">Elle</a>\n  for hanging in there with your balloon.\n</p>\n\n<h2>The talks</h2>\n<h3>The Future of 11ty by Zach Leatherman</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=2156\">Video (at 35:56)</a>\n</p>\n\n<p>\n  <a href=\"https://www.zachleat.com/\">Zach</a> is the\n  creator and maintainer of Eleventy and he’s done a wonderful job at building a\n  tool that really matches my desires for a tool to make websites with. Eleventy\n  is a tool where you can\n  <a href=\"https://hamatti.org/posts/index-md-is-valid-eleventy-project/\">start with just an index.md file</a>\n  and build on top of that to build large projects, choosing the tools and\n  approaches that work best for you.\n</p>\n\n<p>\n  In his opening keynote, The Future of 11ty, Zach talked a bit about the past\n  and the philosophy of Eleventy and then shifted the focus on the new stuff\n  that’s coming to the tool. In version 3, we’ll get to benefit from ESM\n  support, cool improvements to image processing and optimizing and improved\n  performance.\n</p>\n<h3>Hints &amp; Suggestions (First, Do No Harm) by Miriam Suzanne</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=4190\">Video (at 1:09:50)</a>\n</p>\n\n<p>\n  The history of styling websites is fascinating.\n  <a href=\"https://www.miriamsuzanne.com/\">Miriam</a>\n  took us on a great journey to the beginnings of how CSS came to be and the\n  philosophies and policies that guided the early years. Putting content and\n  user first and author’s desires second has been a hugely impacting guideline.\n  (As a sidenote, Andy Bell’s talk\n  <a href=\"https://www.youtube.com/watch?v=JqnMI1AXl6w\">Be the Browser's Mentor, not its Micromanager</a>\n  is a wonderful talk on how you can adjust your way of writing CSS.)\n</p>\n\n<p>\n  Miriam’s talk was so captivating, well done and full of incredible content\n  that I’d say it’s a must-watch to everyone who ever builds things on the web.\n</p>\n<h3>11ty and Large-Project Tooling by Paul Everitt</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=5640\">Video (at 1:34:00)</a>\n</p>\n\n<p>\n  <a href=\"https://fosstodon.org/@pauleveritt\">Paul</a>’s talk on how they’ve built the documentation at JetBrains with Eleventy was\n  very inspirational in its practicality. As a technical writer hopefully one\n  day in charge of a larger documentation project, I loved every bit of it.\n</p>\n\n<p>\n  They use Typescript, server-side rendered TSX as templating language and\n  Vitest with 11ty to build the JetBrains Guide site.\n</p>\n\n<p>\n  His approach to building a Eleventy site with very test-driven approach sounds\n  interesting for a larger project.\n</p>\n\n<p>\n  One of the really cool things in his tooling was using schema for the front\n  matter in Markdown files, providing him the autocomplete of both the keys and\n  the values.\n</p>\n<h3>\n  Digital Frontiers, IndieWeb Cowboys, and A Place Online To Call Your Own by\n  Henry Desroches\n</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=8542\">Video (at 2:22:22)</a>\n</p>\n\n<p>\n  What’s your approach to publishing things on the web? Do you have your own\n  website where you primarily post and then syndicate to other services like\n  social media platforms? Or are you at the mercy of other services to publish\n  and keep your writing available?\n</p>\n\n<p>\n  <a href=\"https://henry.codes/\">Henry</a> provided a\n  fast-paced, super entertaining talk about\n  <a href=\"https://indieweb.org/POSSE\">P.O.S.S.E</a>\n  (Publish on your Own Site, Syndicate Elsewhere) strategy which as the name\n  implies, focuses around having your pieces on your own site first and then\n  using those to share and participate in discussion elsewhere.\n</p>\n\n<p>\n  He walked us through topics like identity, authentication, webmentions,\n  publishing, syndication and shit-posting.\n</p>\n<h3>You're Probably Doing Web Performance Wrong by Sia Karamalegos</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=9580\">Video (at 2:39:40)</a>\n</p>\n\n<p>\n  How do you learn if your site is performing well and what you can do if it\n  doesn’t? <a href=\"https://sia.codes/\">Sia</a>’s\n  wonderful talk about web performance talked about a few topics in the area.\n  She talked about the difference between real user metrics (RUM) that are\n  aggregates from the actual people visiting your site and “laboratory testing”\n  like running Lighthouse and other similar tools.\n</p>\n\n<p>\n  She also talked about time to first byte (TTFB), first contentful paint (FCP)\n  and last contentful paint (LCP) and how to measure and debug them.\n</p>\n<h3>Building a Town That Doesn't Exist by Dan Sinker</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=10830\">Video (at 3:00:30)</a>\n</p>\n\n<p>\n  When you participate in a tech conference, you don’t often expect to be drawn\n  into a story as compelling and well crafted as\n  <a href=\"https://dansinker.com/\">Dan</a>’s story\n  about\n  <a href=\"https://questionmarkohio.com/\">Question Mark, Ohio</a>. It’s a story of a non-existing city and its mysteries, told through dozens\n  of individual websites that all tell a part of the story and build a world in\n  a way that’s not often seen in the web at this scale.\n</p>\n\n<p>\n  I was glued to the screen listening to Dan explain not only the story and how\n  it was crafted but the technical side of building all those websites and\n  crafting the content: some by hand and some by large language models (LLMs).\n</p>\n<h3>\n  11ty Sites for People Who Don't Think they are Web Developers by Adrianna Tan\n</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=12900\">Video (at 3:35:00)</a>\n</p>\n\n<p>\n  <a href=\"https://popagandhi.com/\">Adrianna</a> talked\n  about how and why using Eleventy brought back her joy for building sites. She\n  talks about how Eleventy is a good choice for people who are not (or don’t\n  think of themselves as) web developers and what we as a community can do to\n  help those people learn things.\n</p>\n<h3>Don't Fear the Cascade by Mayank</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=13851\">Video (at 3:50:50)</a>\n</p>\n\n<p>\n  <a href=\"https://www.mayank.co/\">Mayank</a>’s CSS\n  talk focusing on the cascade and how the language has evolved lately to\n  provide more tooling to manage the cascade. He also talked about the Shadow\n  DOM for which he has written\n  <a href=\"https://www.mayank.co/blog/declarative-shadow-dom-guide\">a very nice guide</a>.\n</p>\n\n<p>\n  To understand cascade, one needs to learn two main things: the cascade order\n  and the specificity of selectors. Mayank provided a lot of great insights into\n  how to increase or decrease the specificity with some tricks.\n</p>\n\n<p>\n  One of the things that was new to me was\n  <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/@layer\">@layer</a>\n  which I have someone managed to miss completely and need to pick up and start\n  learning now.\n</p>\n<h3>\n  Managing content management (with no vendor lock-in): Git CMS and static API\n  generation, together at last! by Liam Bigelow and David Large\n</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=15410\">Video (at 4:16:50)</a><b> </b>\n</p>\n\n<p>\n  Liam and David from CloudCannon did a double act to talk about CloudCannon’s\n  CMS tooling. They demoed a workflow of managing 5 different sites, all part of\n  a larger corporate umbrella.\n</p>\n<h3>Come to the light side: HTML Web Components by Chris Ferdinandi</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=17435\">Video (at 4:50:35)</a>\n</p>\n\n<p>\n  <a href=\"https://gomakethings.com/\">Chris</a>\n  introduced us into a way of building Web Components (WC) “along the grain of\n  the web”. Rather than building react-style components with WC, he talked about\n  a different way of approaching them and shared a few tips and tricks for\n  building them.\n</p>\n\n<p>\n  HTML Web Components, as Chris calls them, start with HTML first and adds\n  progressive enhancements on top. Progressive enhancement is great because even\n  when the Javascript fails to load, the user still has a good experience rather\n  than an empty screen.\n</p>\n\n<p>\n  He also provided a nice small tutorial of Web Components inside all the other\n  great insights.\n</p>\n<h3>Chinese Type Systems by Ivan Zhao</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=18956\">Video (at 5:15:55)</a>\n</p>\n\n<p>\n  <a href=\"https://ivanzhao.me/\">Ivan</a> gave us a\n  nice and easy-to-follow introduction to Chinese letters and type and expanded\n  that into a discussion about typesetting with Chinese fonts in the web. As\n  someone who’s only ever known (other than a few courses of Japanese when I was\n  younger) languages that use mainly latin alphabet, it’s always interesting to\n  learn about different writing systems and what they require from design and\n  technical perspective.\n</p>\n<h3>Light mode versus Dark mode by Sara Joy</h3>\n<p>\n  <a href=\"https://youtu.be/iLxJ6PtuF9M?t=19915\">Video (at 5:31:55)</a>\n</p>\n\n<p>\n  The last but not least, the amazing\n  <a href=\"https://sarajoy.dev/\">Sara</a> talked about\n  light and dark modes on websites. She talked about the benefits and downsides\n  of both modes and why it’s a great idea to provide the option for the user to\n  decide.\n</p>\n\n<p>\n  Her talk’s technical side focused on the\n  <code>prefers-color-scheme</code> preference and how\n  to build your CSS in a way that provides the website in the right mode based\n  on user’s choice.\n</p>\n\n<p>\n  During her talk, I picked up a few ideas and added basic dark mode support\n  with barely any custom CSS and no Javascript into another site of mine that I\n  built just before the conference.\n</p>\n\n<p>\n  Even if you’ve tinkered with dark/light modes before, there’s likely something\n  new you’ll learn from this talk.\n</p>\n\n<h2>11ty Bundle</h2>\n\n<p>\n  Not directly related with the conference but if you want to stay up to date on\n  what’s happening in Eleventy and its community,\n  <a href=\"https://11tybundle.dev/\">Bob’s 11ty Bundle</a>\n  is a fantastic resource. He gathers together announcements, tooling, blog\n  posts and other resources that are helpful for anyone interested in using\n  Eleventy to build web sites real good.\n</p>\n\n<h2>\n  Other people’s thoughts on the event\n</h2>\n\n<p>I’m not the only one who’s written about the event during the past week.</p>\n\n<p>\n  Zach wrote\n  <a href=\"https://www.zachleat.com/web/11ty-conf-retro/\">An Organizer’s Retrospective on the 11ty Conference</a>\n  sharing insights into the event from behind the scenes.\n</p>\n\n<p>\n  Brian wrote\n  <a href=\"https://www.brianbaldock.com/blog/opossum-symposium/\">Opossum Symposium</a>. His finishing remarks really resonate with me:\n</p>\n\n<blockquote>\n  It left me inspired to continue my journey of creation and delve deeper into\n  the fundamentals, guided by the spirit of curiosity and collaboration.\n</blockquote>\n\n<p>\n  Tobias wrote\n  <a href=\"https://tfedder.de/blog/impressions-11ty-conference/\">My impressions on The 11ty International Symposium on Making Web Sites Real\n    Good</a>\n  in which he did a great job recapping few of his favorite talks.\n</p>\n\n<p>\n  Alex wrote\n  <a href=\"https://alextheward.com/posts/11ty-conference-thoughts/\">11ty Conference Thoughts</a>.\n</p>\n\n<p>\n  Ryan shared the list of talks with short descriptions at\n  <a href=\"https://ryantrimble.com/blog/weekly-roundup-3/\">Weekly Roundup #3 — Possum Edition</a>.\n</p>\n\n<p></p>\n\n<p>\n  If you’ve published your thoughts about the conference (or do in the future),\n  let me know and I’d be happy to add them to the list!\n</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1827958,
+			"parentId": 0,
+			"url": "https://mastodon.social/@scrwd/112445855367797474",
+			"author": {
+				"name": "Jon",
+				"url": "https://mastodon.social/@scrwd",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2cc7bdd2b3f1c8e5972702d0f5f50893277fdd3467749a546c445c66af90c779.png"
+			},
+			"date": "2024-05-15T15:39:48.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> well done Zach</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1828037,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445954546327774",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-05-15T16:05:01.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@scrwd\" class=\"u-url\">@<span>scrwd</span></a></span> ???? thanks Jon!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1828038,
+			"parentId": 0,
+			"url": "https://front-end.social/@chriskirknielsen/112446312304858618",
+			"author": {
+				"name": "Christopher Kirk-Nielsen",
+				"url": "https://front-end.social/@chriskirknielsen",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8f55a42f11a1fc29e6d494c4639293c79b11f2b9887a82668f8f5d14d27844d7.jpg"
+			},
+			"date": "2024-05-15T17:36:00.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I appreciate the breakdown and transparency for this! Also the event seemed to have gone without a hitch (besides a couple folks forgetting to unmute ????), so on the technical side, this ran super smoothly, very nice to see!</p><p>PS: \"I’d definitely like to hire someone to design the t-shirt!\" ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1828053,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/112446512115568210",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-05-15T18:26:49.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@chriskirknielsen\" class=\"u-url\">@<span>chriskirknielsen</span></a></span> thank you!!</p><p>**makes a secret note for next year**</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1828055,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/112446533085156899",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-05-15T18:32:09.000Z",
+			"content": "<p>ran across some old brainstorming notes for the name of the conference and laughed at one of the ideas:</p><p>This conference could have been an email</p><p><a href=\"https://fediverse.zachleat.com/tags/11tyConf\">#<span>11tyConf</span></a></p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/11tyconf\">11tyconf</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1828052,
+			"parentId": 0,
+			"url": "https://front-end.social/@chriskirknielsen/112446540164508688",
+			"author": {
+				"name": "Christopher Kirk-Nielsen",
+				"url": "https://front-end.social/@chriskirknielsen",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8f55a42f11a1fc29e6d494c4639293c79b11f2b9887a82668f8f5d14d27844d7.jpg"
+			},
+			"date": "2024-05-15T18:33:57.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span></p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1874283,
+			"parentId": 0,
+			"url": "https://www.11ty.dev/blog/review-2024/",
+			"author": {},
+			"date": "2025-01-10T18:45:51.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1905498,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/bell.bz/post/3lmzuqqirxs2n",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://bsky.app/profile/bell.bz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4bd3d77ac167711da4d93cf920feccde4b3ee1052fbe7c133f88dd6af7b915c4.jpg"
+			},
+			"date": "2025-04-17T19:47:52.000Z",
+			"content": "Ok this is looking promising for sure. Thank you",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1827957,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109405170555238514",
+			"date": "2024-05-15T15:44:12.000Z",
+			"author": {
+				"name": "Mura ????????",
+				"url": "https://fandom.ink/@gekidasa",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4c0d69e561c6f5b685ca33a1f352fcf8bfac5c1dc88df7af3ebf83b57f658424.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827959,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109320695943832786",
+			"date": "2024-05-15T15:44:14.000Z",
+			"author": {
+				"name": "Colinaut",
+				"url": "https://dice.camp/@colinaut",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1046edb61398a347224f2183bf40ec44671f8167af8e4cbec5763e93e90e65a2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827960,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109933540955881814",
+			"date": "2024-05-15T15:44:16.000Z",
+			"author": {
+				"name": "Chris",
+				"url": "https://m.webtoo.ls/@swithinbank",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/54b10e5e19854635728431367b3e48491e503ecd8e0555fe478b58157498a569.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827961,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109315721479762331",
+			"date": "2024-05-15T15:44:17.000Z",
+			"author": {
+				"name": "Fernando Mateus",
+				"url": "https://mastodon.social/@fernandomateus",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8b9e6c3330eec2f350eebb5e974202b7395f077f2ad86223e37fabfddf15cf61.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827962,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109291974363243860",
+			"date": "2024-05-15T15:44:18.000Z",
+			"author": {
+				"name": "Lynn Fisher",
+				"url": "https://front-end.social/@lynnandtonic",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ce3bb756160a12fcdc1a1b9713f9099b3380fd54c9f458b1f47eae24ffbd9161.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827963,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109292958546196576",
+			"date": "2024-05-15T15:44:20.000Z",
+			"author": {
+				"name": "Juhis",
+				"url": "https://mastodon.world/@hamatti",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4681b01a570ac17b6a3f8ec557578ff027e45fe9d79e5af6b39145bcece82dda.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827964,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-110581502234761185",
+			"date": "2024-05-15T15:44:21.000Z",
+			"author": {
+				"name": "Benoît Launay",
+				"url": "https://mamot.fr/@Nephou",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c020f0d4a911c94de5c86225b783dd5a8cbfb8f59d0064ec16dce52a231ecb7a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827965,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109384698646087680",
+			"date": "2024-05-15T15:44:22.000Z",
+			"author": {
+				"name": "Swift",
+				"url": "https://merveilles.town/@swift",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827967,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109325867586024180",
+			"date": "2024-05-15T15:44:26.000Z",
+			"author": {
+				"name": "Eleventy ???? v3.0.0-alpha.10",
+				"url": "https://fosstodon.org/@eleventy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8e11fc7c24ecef298727405f9dd171e91253a662cb92307f75997fdc4d2ba139.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827968,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-111025989952257112",
+			"date": "2024-05-15T15:44:27.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://fosstodon.org/@BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c9909743546dc068862d3bd12944c567ef3dcd2ae59a758e4d6c1fc5bf5bf23f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827977,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-111655625104249997",
+			"date": "2024-05-15T15:44:40.000Z",
+			"author": {
+				"name": "cultured nyc ????????",
+				"url": "https://mastodon.social/@culturednyc",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4022cacc807da20a2cd0eee11d509da13bc310afe1bfcb575fe5f125086cc4b3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827978,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109295800888003612",
+			"date": "2024-05-15T15:44:42.000Z",
+			"author": {
+				"name": "Jon",
+				"url": "https://mastodon.social/@scrwd",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2cc7bdd2b3f1c8e5972702d0f5f50893277fdd3467749a546c445c66af90c779.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827989,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-110271759034960771",
+			"date": "2024-05-15T16:09:46.000Z",
+			"author": {
+				"name": "JB",
+				"url": "https://kolektiva.social/@manicExpressive",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbaf898cc08889fb428ade78002e20def5ca76fef00199839a2c386108d187d0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828013,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109740646075567001",
+			"date": "2024-05-15T17:11:26.000Z",
+			"author": {
+				"name": "Apple Annie :prami:",
+				"url": "https://social.lol/@anniegreens",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/489bdd3b4c09425455f96e3e0bff2f6090dc37be48318700d48e474908247477.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828025,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-112011424167261417",
+			"date": "2024-05-15T17:35:45.000Z",
+			"author": {
+				"name": "Christopher Kirk-Nielsen",
+				"url": "https://front-end.social/@chriskirknielsen",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8f55a42f11a1fc29e6d494c4639293c79b11f2b9887a82668f8f5d14d27844d7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828039,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109304428669626974",
+			"date": "2024-05-15T18:10:28.000Z",
+			"author": {
+				"name": "Eric Portis",
+				"url": "https://front-end.social/@eeeps",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/93963037db43514e4f4d937285433e20439416a6675504cad50a40dcf7443ae4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828040,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109293803416527033",
+			"date": "2024-05-15T18:10:28.000Z",
+			"author": {
+				"name": "Jakub Iwanowski :bash:",
+				"url": "https://fosstodon.org/@dzajew",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/05f8eacfa6bcdb0aa1201024c14ceca66589b63d1aca917edce791309d88743a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828041,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109297809026408317",
+			"date": "2024-05-15T18:10:31.000Z",
+			"author": {
+				"name": "Sara Joy :happy_pepper:",
+				"url": "https://front-end.social/@sarajw",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a06118ca119ec1183309db1aa65689d6bd69349b68713fd0c3f49cc5de8ca683.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828054,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109393960849815731",
+			"date": "2024-05-15T18:45:11.000Z",
+			"author": {
+				"name": "elle mundy",
+				"url": "https://mastodon.world/@exchgr",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e44f43453da025c0fa33251ef15177aa3339d3baa2344434b48fc01027170a8d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828056,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-110656903967994170",
+			"date": "2024-05-15T18:45:14.000Z",
+			"author": {
+				"name": "katherine",
+				"url": "https://sunny.garden/@kayserifserif",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/59a482e7bd79bae82cbf5ce33b96eed9d0300703811d55b0b5e551e45871a86d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828057,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-112261887566320107",
+			"date": "2024-05-15T18:45:14.000Z",
+			"author": {
+				"name": "Jason :prami:",
+				"url": "https://social.lol/@jasonm",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/56e2f78132196df9816fcc2e0b9355d7f6927742e7e7108e9d3ca3e65197471c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828076,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109352939518629968",
+			"date": "2024-05-15T19:20:10.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828084,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-110635286175767117",
+			"date": "2024-05-15T19:53:30.000Z",
+			"author": {
+				"name": "Neblib",
+				"url": "https://mastodo.neoliber.al/@Neblib",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/017a5292a4edd2ad09a53d9678237c8c92506f069451710c607b3fd0d2f76cac.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828085,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109537084885684120",
+			"date": "2024-05-15T19:53:59.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://mastodon.social/@ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ff766823e2cadf38917792ab7370f2ebede63bfc6896743983d35ea18c4f815c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828226,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#favorited-by-109293775704871775",
+			"date": "2024-05-16T05:26:29.000Z",
+			"author": {
+				"name": "SaptakS",
+				"url": "https://toots.dgplug.org/@saptaks",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7325a9608c7322bd83522091585bc68edffbf1d8ce3ba0772e5cabf1dc2ac53c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1905499,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lmzszr35ms2y#liked_by_did:plc:lsj6xps6dijl4odgxebprr37",
+			"date": "2025-04-17T22:14:19.000Z",
+			"author": {
+				"name": "Jonathan Neal",
+				"url": "https://bsky.app/profile/jonathanneal.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/25671451d12482335bff6898e33f785b8173c6a24ba0c45663ad6cc0e5c7f147.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1905500,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lmzszr35ms2y#liked_by_did:plc:s7ztyjsqdftp2ma7sedalgdf",
+			"date": "2025-04-17T22:14:20.000Z",
+			"author": {
+				"name": "Gavin Weeks",
+				"url": "https://bsky.app/profile/flikq.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6eb60a7ac44c91b4fe3118ac0598e9c698fc605a9552aaff1b3e2660350ed5d8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1905501,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lmzszr35ms2y#liked_by_did:plc:pzgvqg4ihnaihkrpmxqz5pu6",
+			"date": "2025-04-17T22:14:20.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://bsky.app/profile/bell.bz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4bd3d77ac167711da4d93cf920feccde4b3ee1052fbe7c133f88dd6af7b915c4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1905502,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lmzszr35ms2y#liked_by_did:plc:facxiab77ivmioywfb4fo2di",
+			"date": "2025-04-17T22:14:22.000Z",
+			"author": {
+				"name": "Charis",
+				"url": "https://bsky.app/profile/charismagic.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/77b0ec4ae1cb1d8a7ff1795bf9b55b606621306056295892a76dea1e9df18efb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1905537,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lmzszr35ms2y#liked_by_did:plc:qwfrxx4xe4sxjjx3hdkohkqn",
+			"date": "2025-04-18T03:04:33.000Z",
+			"author": {
+				"name": "Marko Bajlovic",
+				"url": "https://bsky.app/profile/marko.tech",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/091f7506cfd380e2c53f20bed4547eb7a9bbdcfe1206b9c6eda96d7b0e438c38.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1827966,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109293980719402514",
+			"date": "2024-05-15T15:44:23.000Z",
+			"author": {
+				"name": "mason",
+				"url": "https://mastodon.social/@themason",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1cae1376cd094112bea111387ad320f22debf74360d7bd3d844a1849cfd2ec78.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827969,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109287949593182322",
+			"date": "2024-05-15T15:44:27.000Z",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827970,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109388222983660434",
+			"date": "2024-05-15T15:44:28.000Z",
+			"author": {
+				"name": "Martyn Hoyer",
+				"url": "https://indieweb.social/@martynhoyer",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8a60333058f71c61377e59043c5ac20bbaca42b244ab29a5a3afdae9070dcd52.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827971,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109750573121596922",
+			"date": "2024-05-15T15:44:29.000Z",
+			"author": {
+				"name": "???? Glitch",
+				"url": "https://mastodon.social/@glitchdotcom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/13e5176811c0492a8df779ce967d68d18340c1c2abc8ad7a6303da29563eed3b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827972,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109405170555238514",
+			"date": "2024-05-15T15:44:31.000Z",
+			"author": {
+				"name": "Mura ????????",
+				"url": "https://fandom.ink/@gekidasa",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4c0d69e561c6f5b685ca33a1f352fcf8bfac5c1dc88df7af3ebf83b57f658424.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827973,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109301667267707340",
+			"date": "2024-05-15T15:44:32.000Z",
+			"author": {
+				"name": "Lene Saile",
+				"url": "https://front-end.social/@lene",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b11bce21a15d560ac99e575696be482d744f10237abefd30f3e7f6b0861f476.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827974,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-111025989952257112",
+			"date": "2024-05-15T15:44:33.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://fosstodon.org/@BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c9909743546dc068862d3bd12944c567ef3dcd2ae59a758e4d6c1fc5bf5bf23f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827975,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109383215820991530",
+			"date": "2024-05-15T15:44:35.000Z",
+			"author": {
+				"name": "Bob Monsour",
+				"url": "https://indieweb.social/@bobmonsour",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b29612c57f91493bea28f611bfba470ca27d73af355df4040d9dc121940e1c07.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1827976,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109325867586024180",
+			"date": "2024-05-15T15:44:35.000Z",
+			"author": {
+				"name": "Eleventy ???? v3.0.0-alpha.10",
+				"url": "https://fosstodon.org/@eleventy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8e11fc7c24ecef298727405f9dd171e91253a662cb92307f75997fdc4d2ba139.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828014,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109740646075567001",
+			"date": "2024-05-15T17:11:28.000Z",
+			"author": {
+				"name": "Apple Annie :prami:",
+				"url": "https://social.lol/@anniegreens",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/489bdd3b4c09425455f96e3e0bff2f6090dc37be48318700d48e474908247477.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828042,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109293803416527033",
+			"date": "2024-05-15T18:10:31.000Z",
+			"author": {
+				"name": "Jakub Iwanowski :bash:",
+				"url": "https://fosstodon.org/@dzajew",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/05f8eacfa6bcdb0aa1201024c14ceca66589b63d1aca917edce791309d88743a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828043,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109297809026408317",
+			"date": "2024-05-15T18:10:33.000Z",
+			"author": {
+				"name": "Sara Joy :happy_pepper:",
+				"url": "https://front-end.social/@sarajw",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a06118ca119ec1183309db1aa65689d6bd69349b68713fd0c3f49cc5de8ca683.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1828075,
+			"url": "https://fediverse.zachleat.com/@zachleat/112445376587353169#reblogged-by-109352939518629968",
+			"date": "2024-05-15T19:20:09.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+---
+title: "Get your 11ty Conference 2024 Merch Bundle (Limited Edition)"
+date: 2024-03-20
+external_url: https://merch.11ty.dev/products/11ty-merch-bundle-2024-limited-edition
+external_url_screenshotmode: none
+tags:
+  - external
+  - eleventy
+opengraphSkipFace: true
+---
+The 11ty International Symposium on Making Web Sites Real Good (Conference) is approaching fast on May 9, 2024 and 947 folks have already signed up for the event!
+
+To pair with the event, for the first time ever we’re offering a [**merch bundle for purchase**](https://merch.11ty.dev/products/11ty-merch-bundle-2024-limited-edition). It’s conference swag, but only for people that want it! *(Free shipping and a holographic sticker for Open Collective supporters)*
+
+**This store will close April 5 to fulfill orders for the conference.** The last day to order this bundle is April 5.
+
+* Head over to [`merch.11ty.dev`](https://merch.11ty.dev/products/11ty-merch-bundle-2024-limited-edition)

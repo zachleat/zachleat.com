@@ -1,0 +1,310 @@
+{
+	"comments": [
+		{
+			"id": 1268486,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/every-fire-needs-a-sparkline/",
+			"author": {},
+			"date": "2021-09-13T16:24:44.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1270411,
+			"parentId": 0,
+			"url": "https://www.bram.us/2021/09/16/cloud-function-to-generate-svg-sparklines/",
+			"author": {
+				"name": "Bramus!",
+				"url": "https://www.bram.us/author/bramus/"
+			},
+			"date": "2021-09-16T19:17:51.000Z",
+			"content": "<p><a href=\"https://www.bram.us/wordpress/wp-content/uploads/2021/09/sparkline.png\"><img src=\"https://www.bram.us/wordpress/wp-content/plugins/native-lazyload/assets/images/placeholder.svg\" alt=\"\" width=\"560\" height=\"233\" /></a></p><img src=\"https://www.bram.us/wordpress/wp-content/uploads/2021/09/sparkline.png\" alt=\"\" width=\"560\" height=\"233\" />\n<p><a href=\"https://twitter.com/zachleat\">Zach Leat</a> recently created a cloud function that dynamically generates sparklines. Under the hood sits the <a href=\"https://www.npmjs.com/package/sparkline-svg\">the <code>sparkline-svg</code> package</a> to generate the SVG. The datapoints themselves can be passed in via the URL.</p>\n<blockquote>\n<p>Image URLs have the formats:</p>\n<ul><li><code>/[height]x[width]/[values]/</code></li>\n<li><code>/[height]x[width]/[values]/[color]/</code></li>\n</ul></blockquote>\n<p>The code is meant to be deployed as a <a href=\"https://www.bram.us/2019/12/28/a-netlify-serverless-function-in-one-tweet/\">Netlify Serverless Function</a>.</p>\n<p><a href=\"https://www.zachleat.com/web/sparklines/\">Every Fire needs a Sparkline →</a><br /><a href=\"https://github.com/11ty/api-sparkline\">Sparkline API (GitHub) →</a></p>\n\n<p>💡 This reminded me of Spark SVG <a href=\"https://www.bram.us/2013/01/18/spark-svg/\">which I covered back in 2013</a>.</p>\n<pre><code>&lt;embed src=\"https://sparksvg.me/line.svg?0,4,7,10,8,12,9,7,3,0\" type=\"image/svg+xml\"&gt;</code></pre>\n<p>It’s an SVG file with a snippet of JS contained inside it, a technique <a href=\"https://kryogenix.org/days/2012/12/30/simple-svg-sparklines/\">originally developed</a> by <a href=\"https://twitter.com/sil\">Stuart Langridge</a>. On load it will draw the sparkline, using the values as passed in the via the querystring.</p>\n<p>Upside with this approach is that you can host this SVG file on your own servers, without needing a cloud function. Downside however is that you need to include the SVGs via <code>&lt;embed&gt;</code> — <em>to allow script execution</em> — and require JS on the client to show them properly.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1270432,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/cloud-function-to-generate-svg-sparklines/",
+			"author": {},
+			"date": "2021-09-16T20:23:58.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1273082,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/indieweb-avatar-yet-another-eleventy-image-service-api/",
+			"author": {},
+			"date": "2021-09-21T00:23:17.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1284665,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/the-state-of-eleventy-2021-in-two-minutes/",
+			"author": {},
+			"date": "2021-10-08T18:01:35.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1297283,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/recycling-open-graph-images-for-display-on-my-web-site/",
+			"author": {},
+			"date": "2021-10-29T05:24:05.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1306060,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/the-eleventy-api-explorer/",
+			"author": {},
+			"date": "2021-11-17T05:24:24.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1268457,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-308421759",
+			"date": "2021-09-13T15:54:37.000Z",
+			"author": {
+				"name": "David Boyne 🚀",
+				"url": "https://twitter.com/boyney123",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c309ec8c12be32ac486df25c31a7ef6d28526b8bd26ebe4b490bc410e116b18e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268458,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-658353",
+			"date": "2021-09-13T15:54:38.000Z",
+			"author": {
+				"name": "Wiley Wiggins",
+				"url": "https://twitter.com/wileywiggins",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0df314459ad09f9f984b69e4508f26736785a36a27f1a2e05056385d9b143ecd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268459,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-18331731",
+			"date": "2021-09-13T15:54:39.000Z",
+			"author": {
+				"name": "Pelle Wessman",
+				"url": "https://twitter.com/voxpelli",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/500a4883279015b8c0bf56f607034761ddc0c366c0275632662441f25af5351c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268460,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-9372812",
+			"date": "2021-09-13T15:54:39.000Z",
+			"author": {
+				"name": "Jens Oliver Meiert",
+				"url": "https://twitter.com/j9t",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b070695934ae46de2897880cefe17ec683231502ce2980bc7f91e0f1af102c4e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268461,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-14112756",
+			"date": "2021-09-13T15:54:43.000Z",
+			"author": {
+				"name": "Mark Boulton",
+				"url": "https://twitter.com/markboulton",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f61302fab955516e0594bda5215cd7afd9628d440a271bc4d22aeabfdae7a336.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268462,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-919368416473047040",
+			"date": "2021-09-13T15:54:43.000Z",
+			"author": {
+				"name": "Luke (he/him) Stressed af 💉💉",
+				"url": "https://twitter.com/lukeocodes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7395cb2d7eaa09514160d9e394c09d57fac7e88d125739c47cf52595dd8bdc1d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268463,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-1058841635516116992",
+			"date": "2021-09-13T15:54:44.000Z",
+			"author": {
+				"name": "Joshua Yoes",
+				"url": "https://twitter.com/JoshuaYoes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/aa29c81a250d8158996a750a422f076c7887b9cd79dadfc790aca03ccd2caa9b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268464,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-2571501973",
+			"date": "2021-09-13T15:54:44.000Z",
+			"author": {
+				"name": "Netlify",
+				"url": "https://twitter.com/Netlify",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6f41d4e072e83a0e5f58aa9f6763ee519151c3cd55730986f93287a7d90e4a0a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268465,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-114543786",
+			"date": "2021-09-13T15:54:45.000Z",
+			"author": {
+				"name": "MWDelaney",
+				"url": "https://twitter.com/MichaelWDelaney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b624a88b5663f8391c898e28bb7d9ed9a60dbed6b78846ebec6fc85d00c9a49.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268466,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-255634108",
+			"date": "2021-09-13T15:54:47.000Z",
+			"author": {
+				"name": "Jon Kuperman",
+				"url": "https://twitter.com/jkup",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a52326c0080bba610767505756be327891f63722c0ceb6515de5840097c65cb9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268467,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-37289216",
+			"date": "2021-09-13T15:54:48.000Z",
+			"author": {
+				"name": "amberley",
+				"url": "https://twitter.com/amber1ey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/68b4bd7664eaea8baab8e663428a55cb9eec3735b15853cebf1da5ff321340a1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268468,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-17775069",
+			"date": "2021-09-13T15:54:48.000Z",
+			"author": {
+				"name": "bertrandkeller",
+				"url": "https://twitter.com/bertrandkeller",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5705e235fe729ec62273131d966952f09e3ab0bbf8b470a3846fb0280a3d40fa.gif"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268469,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-434457570",
+			"date": "2021-09-13T15:54:49.000Z",
+			"author": {
+				"name": "Ana Rodrigues",
+				"url": "https://twitter.com/ohhelloana",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fc885e5ff4cb71287c4384f7b208bb425af1a7a3139bbd8baf8f11923e168aa2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268536,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-758056",
+			"date": "2021-09-13T18:30:01.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://twitter.com/ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5a02571e30b5ee7d4cf5bdebf69e9ab5d536adfc20d7a5a11016dcb3988d12e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268537,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-848354226816372736",
+			"date": "2021-09-13T18:30:01.000Z",
+			"author": {
+				"name": "Héctor Aguilar",
+				"url": "https://twitter.com/BitByte_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c9e94ac82a2468577ac52c213c7795c7e93f587fb3578413653da9a2a1e4b7a6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268538,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-14166962",
+			"date": "2021-09-13T18:30:04.000Z",
+			"author": {
+				"name": "Steve Lee",
+				"url": "https://twitter.com/SteveALee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4c7b07ff194ba5e475b08551c09058686580054cdef3127c6f97080ad2327d37.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268539,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-1317924614",
+			"date": "2021-09-13T18:30:05.000Z",
+			"author": {
+				"name": "Arpit Batra",
+				"url": "https://twitter.com/arpitbatra123",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f6b5765096d9b48f076cbd5bf0e12cc7ef8c8bdd43955f2104dadfe7b7570f29.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268540,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-712404483041587201",
+			"date": "2021-09-13T18:30:06.000Z",
+			"author": {
+				"name": "Adebiyi Adedotun",
+				"url": "https://twitter.com/adebiyial",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b8747176c2dcec18063128d88cb55f8b116f9cb85374f4c49a2202cf4c185d6c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268541,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-30982985",
+			"date": "2021-09-13T18:30:07.000Z",
+			"author": {
+				"name": "Charles Stover",
+				"url": "https://twitter.com/CharlesStover",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2e32f319e5e5a119d016ecc592a36195744305113686856fec30097b5da97aec.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1268677,
+			"url": "https://twitter.com/zachleat/status/1437431959660244999#favorited-by-31777194",
+			"date": "2021-09-14T02:01:54.000Z",
+			"author": {
+				"name": "Eric ☕️ 🐟 💻",
+				"url": "https://twitter.com/rasliche",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c4c6b9bd54016647d76110958e1b268006e22d50141ee06e5c0c4c34650022b1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1283136,
+			"url": "https://chrisburnell.com/like/1633527777/",
+			"date": "2021-10-06T13:42:57.000Z",
+			"author": {
+				"name": "Chris Burnell",
+				"url": "https://chrisburnell.com/",
+				"avatarUrl": "https://avatars.webmention.io/chrisburnell.com/9bcc7bdac326d71220ba8d22c05b6999628d59014a620079a06c41c076253d87.png"
+			},
+			"via": "webmention"
+		}
+	]
+}

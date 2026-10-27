@@ -1,0 +1,366 @@
+{
+	"comments": [
+		{
+			"id": 1747506,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@hawkticehurst/111505821902416592",
+			"author": {
+				"name": "Hawk Ticehurst",
+				"url": "https://fosstodon.org/@hawkticehurst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbdf15e8d3662f6bd1aeb13b67e53d334745df10adb1e9977674e7b3fb728b83.jpg"
+			},
+			"date": "2023-12-01T15:16:55.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Woah TIL about Pagefind ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1747518,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505839545250260",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-01T15:21:24.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@hawkticehurst\" class=\"u-url\">@<span>hawkticehurst</span></a></span> yeah!! It’s awesome! I forgot to plug maybe the most impressive use of pagefind that I have: <a href=\"https://www.zachleat.com/twitter/\"><span>https://www.</span><span>zachleat.com/twitter/</span><span></span></a></p><p>static search of 46,000 pages ????</p>\n<a href=\"https://www.zachleat.com/twitter/\">zachleat’s Twitter Archive</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1747517,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@hawkticehurst/111505913406842179",
+			"author": {
+				"name": "Hawk Ticehurst",
+				"url": "https://fosstodon.org/@hawkticehurst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbdf15e8d3662f6bd1aeb13b67e53d334745df10adb1e9977674e7b3fb728b83.jpg"
+			},
+			"date": "2023-12-01T15:40:11.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Wildddddd. This is so cool! Like, *of course*.. why *wouldn’t* you index your statically built files to create a low bandwidth search engine for your websites??</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1747586,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505936462269925",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-01T15:46:03.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@hawkticehurst\" class=\"u-url\">@<span>hawkticehurst</span></a></span> (as always I’m gonna cc the brainchild of pagefind <span class=\"h-card\"><a href=\"https://fosstodon.org/@bglw\" class=\"u-url\">@<span>bglw</span></a></span>)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1747588,
+			"parentId": 0,
+			"url": "https://mamot.fr/@nhoizey/111506794177104428",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://mamot.fr/@nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/46db122dbb31fe47f9d54cd6b37edc875807209a0c1f9d0a8da12a397743b88d.jpg"
+			},
+			"date": "2023-12-01T19:24:11.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> “I currently use Pagefind on this very web site and on 11ty.dev.” -&gt; also in your Tweetback! ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1747590,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111506799443880910",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-01T19:25:31.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> haha yes, I forgot to include that one ???? </p><p><a href=\"https://fediverse.zachleat.com/@zachleat/111505839545250260\"><span>https://</span><span>fediverse.zachleat.com/@zachle</span><span>at/111505839545250260</span></a></p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1747579,
+			"parentId": 0,
+			"url": "https://chringel.dev/notes/2023/12/01/1935/",
+			"author": {
+				"name": "Christian Engel",
+				"avatarUrl": "https://chringel.dev/img/vqjxFKbWTk-48.webp"
+			},
+			"date": "2023-12-01T19:35:32.000Z",
+			"content": "<p>A web component wrapper for Pagefind, the fully static search engine. I definitely have to try this one out! ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1764118,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111711134193878928",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/files.mastodon.online/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-01-06T21:30:32.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.online/@mstrkapowski\" class=\"u-url\">@<span>mstrkapowski</span></a></span> great!</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/pagefind-search/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1764413,
+			"parentId": 0,
+			"url": "https://chrismcleod.dev/blog/adding-site-search-eleventy-pagefind-web-component/",
+			"author": {
+				"name": "Chris McLeod",
+				"url": "https://chrismcleod.dev/"
+			},
+			"date": "2024-01-07T21:27:00.000Z",
+			"content": "<p>I recently added some new ways to dig through the <a href=\"https://chrismcleod.dev/blog/\">archives of this site</a>, and chief among them was search. Search is something I’ve wanted to add for ages, and thankfully it was pretty straightforward, thanks to <a href=\"https://pagefind.app/\">Pagefind</a> and the <a href=\"https://www.zachleat.com/web/pagefind-search/\">&lt;pagefind-search&gt; web component by Zach Leatherman</a>.</p>\n<h2><a href=\"https://chrismcleod.dev/blog/adding-site-search-eleventy-pagefind-web-component/#installation\">Installation</a></h2>\n<p>Installing the component starts with adding it to our <code>package.json</code> as a regular dependency (<em>not</em> a DevDependency as you might be used to for Eleventy):</p>\n<pre><code><span>npm</span> <span>install</span> <span>--save</span> @zachleat/pagefind-search</code></pre>\n<p>With the package added, we need to add a reference to it into a JavaScript file referenced in our site/page HTML. The specifics of how you do this will vary depending on your setup/bundling process. For me, as I am using <a href=\"https://eleventy-excellent.netlify.app/\">Eleventy Excellent</a> for the basis of my site, the easiest way for me to do do this was to add an import to the top of <code>assets/scripts/app.js</code>:</p>\n<pre><code><span>import</span> <span>'@zachleat/pagefind-search'</span><span>;</span>\n<span>/* ... rest of existing file contents ... */</span></code></pre>\n<p>With that out of the way, we can add the component to which ever page or template you want to use it in. For me, this was my <a href=\"https://github.com/mcleodchris/next.chrismcleod.dev/blob/develop/src/_layouts/archive.njk\">archive Nunjucks file</a>, with the additions looking like so:</p>\n<pre><code><span><span><span>&lt;</span>h2</span><span>&gt;</span></span>Search<span><span><span>&lt;/</span>h2</span><span>&gt;</span></span>\n<span><span><span>&lt;</span>pagefind-search</span> <span>pagefind-autofocus</span><span>&gt;</span></span>\n  <span><span><span>&lt;</span>form</span> <span>action</span><span><span>=</span><span>\"</span>https://duckduckgo.com/<span>\"</span></span> <span>method</span><span><span>=</span><span>\"</span>get<span>\"</span></span> <span><span>style</span><span><span>=</span><span>\"</span><span><span>min-height</span><span>:</span> 3.2em<span>;</span></span><span>\"</span></span></span><span>&gt;</span></span><span>&lt;!-- min-height to reduce CLS --&gt;</span>\n\t<span><span><span>&lt;</span>label</span><span>&gt;</span></span>\n\t  Search for:\n\t  <span><span><span>&lt;</span>input</span> <span>type</span><span><span>=</span><span>\"</span>search<span>\"</span></span> <span>name</span><span><span>=</span><span>\"</span>q<span>\"</span></span> <span>autocomplete</span><span><span>=</span><span>\"</span>off<span>\"</span></span> <span>autofocus</span><span>&gt;</span></span>\n\t<span><span><span>&lt;/</span>label</span><span>&gt;</span></span>\n\t<span>&lt;!-- Put your searchable domain here --&gt;</span>\n\t<span><span><span>&lt;</span>input</span> <span>type</span><span><span>=</span><span>\"</span>hidden<span>\"</span></span> <span>name</span><span><span>=</span><span>\"</span>sites<span>\"</span></span> <span>value</span><span><span>=</span><span>\"</span>chrismcleod.dev<span>\"</span></span><span>&gt;</span></span>\n\t<span><span><span>&lt;</span>button</span> <span>type</span><span><span>=</span><span>\"</span>submit<span>\"</span></span> <span>class</span><span><span>=</span><span>\"</span>button<span>\"</span></span><span>&gt;</span></span>Search<span><span><span>&lt;/</span>button</span><span>&gt;</span></span>\n  <span><span><span>&lt;/</span>form</span><span>&gt;</span></span>\n<span><span><span>&lt;/</span>pagefind-search</span><span>&gt;</span></span></code></pre>\n<p>This is more-or-less a copy of Zach’s <a href=\"https://www.zachleat.com/web/pagefind-search/#usage\">example usage</a>. The only difference is I’ve added the <code>pagefind-autofocus</code> attribute and changed the fallback content to reference my domain. There are <a href=\"https://github.com/zachleat/pagefind-search/#extend-pagefind-options\">other attributes</a> you can play with to customise the component further.</p>\n<p>With these steps done, we’re nearly ready, but the search will not work until we generate the Pagefind bundle and index our site.</p>\n<h2><a href=\"https://chrismcleod.dev/blog/adding-site-search-eleventy-pagefind-web-component/#indexing-our-site\">Indexing our site</a></h2>\n<p>Run your regular build command for your site, to generate the static files to be indexed. Indexing requires running another command:</p>\n<pre><code>npx <span>-y</span> pagefind <span>--site</span> dist</code></pre>\n<p>The <code>--site</code> option should point to the output directory of your build process. For me, that’s the <code>dist</code> directory. Pagefind will go off and do it’s thing, then report back what it’s indexed. The end of the output will look something like this:</p>\n<pre><code><span>[</span>Building search indexes<span>]</span>\nTotal: \n  Indexed <span>1</span> language\n  Indexed <span>520</span> pages\n  Indexed <span>10092</span> words\n  Indexed <span>0</span> filters\n  Indexed <span>0</span> sorts\n\nFinished <span>in</span> <span>4.393</span> seconds</code></pre>\n<p>Everything should be generated now, you can go ahead and serve your site locally to try it out!</p>\n<p>If you want to customise the Pagefind index, you should refer to <a href=\"https://pagefind.app/docs/indexing/\">the documentation</a>. Personally, I’ve added a couple of <a href=\"https://pagefind.app/docs/indexing/#removing-individual-elements-from-the-index\">attributes</a> to my templates to indicate what should or shouldn’t be indexed.</p>\n<p>This is all great so far, but we should automate things so the index is generated on every build - especially if we use any sort of automated process to build and deploy our site. To do this, you’ll need to modify whatever command you use to build your site. For me, I modified the scripts section of my <code>package.json</code> to this (I’ve omitted irrelevant lines, for clarity):</p>\n<pre><code><span>\"scripts\"</span><span>:</span> <span>{</span>\n    <span>\"clean\"</span><span>:</span> <span>\"rimraf dist\"</span><span>,</span>\n    <span>\"build\"</span><span>:</span> <span>\"ELEVENTY_PRODUCTION=true run-s clean build:*\"</span><span>,</span>\n    <span>\"build:11ty\"</span><span>:</span> <span>\"eleventy\"</span><span>,</span>\n    <span>\"build:index\"</span><span>:</span> <span>\"npx -y pagefind --site dist\"</span><span>,</span>\n  <span>}</span><span>,</span></code></pre>\n<p>The <code>build</code> entry is the one used by Netlify when it generates and deploys my site from any updates checked into GitHub. The important bit that changed here, from what it was before, is the addition of <code>build:index</code>. This adds the step to the build process which indexes the site.</p>\n<h2><a href=\"https://chrismcleod.dev/blog/adding-site-search-eleventy-pagefind-web-component/#customising-the-display-optional\">Customising the display (Optional)</a></h2>\n<p>Pagefind comes with its’ own UI CSS, which the &lt;pagefind-search&gt; component loads when initialising. The defaults are perfectly acceptable - they work well, and look good. They did unfortunately stick out a bit as “wrong” when I initially added the component, so I wanted to make some adjustments.</p>\n<p>It took me a while to figure out how to get the results to display in a way that was more like the rest of my site - namely the typography and element spacing. It’s far from perfect, and I want to do some more work on this, but the following should help you customise things a bit to your liking.</p>\n<p>The main issue you’ll face is the Pagefind stylesheet will probably load after your main site stylesheets - so if you, say, <a href=\"https://pagefind.app/docs/ui-usage/#customising-the-styles\">follow the documentation and override the styling using CSS variables</a>, the default stylesheet will override this. Thankfully, we can use the cascade and specificity to make our overrides take effect.</p>\n<p>As mentioned, I use Eleventy Excellent, which uses some build tools to bundle up multiple CSS files into one. To keep things organised I added a new <code>search.css</code> file in the <code>src/assets/css/blocks</code> directory (<a href=\"https://github.com/mcleodchris/next.chrismcleod.dev/blob/develop/src/assets/css/blocks/search.css\">link</a>).  Your site will probably differ in the specifics - you should add any CSS in the same way you normally would.</p>\n<pre><code><span>/* src/assets/css/blocks/search.css */</span>\n<span>.pagefind-ui</span><span>{</span>\n    <span>margin-block-start</span><span>:</span> <span>var</span><span>(</span>--flow-space<span>,</span>1em<span>)</span><span>;</span>\n    <span>--pagefind-ui-scale</span><span>:</span> 1.2<span>;</span>\n    <span>--pagefind-ui-primary</span><span>:</span> <span>var</span><span>(</span>--color-fg<span>)</span><span>;</span>\n    <span>--pagefind-ui-text</span><span>:</span> <span>var</span><span>(</span>--color-fg<span>)</span><span>;</span>\n    <span>--pagefind-ui-background</span><span>:</span> <span>var</span><span>(</span>--color-bg<span>)</span><span>;</span>\n    <span>--pagefind-ui-border</span><span>:</span> <span>var</span><span>(</span>--color-fg<span>)</span><span>;</span>\n    <span>--pagefind-ui-tag</span><span>:</span> <span>var</span><span>(</span>--color-primary<span>)</span><span>;</span>\n    <span>--pagefind-ui-border-width</span><span>:</span> 2px<span>;</span>\n    <span>--pagefind-ui-border-radius</span><span>:</span> <span>var</span><span>(</span>--border-radius<span>)</span><span>;</span>\n    <span>--pagefind-ui-image-border-radius</span><span>:</span> <span>var</span><span>(</span>--border-radius<span>)</span><span>;</span>\n    <span>--pagefind-ui-image-box-ratio</span><span>:</span> 3 / 2<span>;</span>\n    <span>--pagefind-ui-font</span><span>:</span> <span>var</span><span>(</span>--font-base<span>)</span><span>;</span>\n<span>}</span>\n<span>.pagefind-ui__result</span> <span>{</span>\n    <span>--pagefind-ui-border</span><span>:</span> #eeeeee<span>;</span>\n  <span>}</span>\n<span>.pagefind-ui__button</span> <span>{</span>\n    <span>--pagefind-ui-primary</span><span>:</span> <span>var</span><span>(</span>--color-fg<span>)</span><span>;</span>\n    <span>--pagefind-ui-background</span><span>:</span> <span>var</span><span>(</span>--color-bg<span>)</span><span>;</span>\n    <span>margin-block-start</span><span>:</span> <span>var</span><span>(</span>--space-s-m<span>)</span><span>;</span>\n<span>}</span>\n<span>.pagefind-ui__button:hover</span> <span>{</span>\n    <span>--pagefind-ui-primary</span><span>:</span> <span>var</span><span>(</span>--color-bg<span>)</span><span>;</span>\n    <span>--pagefind-ui-background</span><span>:</span> <span>var</span><span>(</span>--color-fg<span>)</span><span>;</span>\n<span>}</span>\n\n<span>.pagefind-ui__search-input:focus-visible</span> <span>{</span>\n  <span>outline</span><span>:</span> 2px solid <span>var</span><span>(</span>--color-primary<span>)</span><span>;</span>\n<span>}</span></code></pre>\n<p>The important bit to begin with is the <code>.pagefind-ui</code> rule declaration. This is where we define the new generic values for the PageFind variables, and define any properties which aren’t already set. If you want to override properties which <em>are</em> set (and aren’t influenced by the variables), you’ll need to get more into the weeds I’m afraid - which is outside the scope of this post. Maybe later, once I’ve revisited this topic.</p>\n<p>The reason this works is that the default PageFind variables are set on the <code>:root</code> pseudo-element, which is less specific than <code>.pagefind-ui</code>. In my case I set the values to variables set by Eleventy Excellent’s own stylesheet, which lets the colours follow my implementation of Dark Mode.</p>\n<p>From here, it’s a case of finding the class for the right elements you want to modify, and overriding the variables or adding new properties. For me, this was adjusting the border between results, and making the “load more results” button more like the other buttons on my site. One thing to remember: any variables you don’t override will use the defaults - so if you’re happy with everything but the font, for example, you can set the value of <code>--pagefind-ui-font</code> in <code>.pagefind-ui</code>, and leave it at that.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1913846,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/did:plc:3tkrsjzdao4vqjrxwzynbfnu/post/3lq6wkdw5xk2w",
+			"author": {
+				"name": "caleb",
+				"url": "https://bsky.app/profile/calebjasik.jasik.xyz",
+				"avatarUrl": "https://avatars.webmention.io/puffball.us-east.host.bsky.network/996ad4c1c0670ddde633c3d28fe1eff7248fb3e2c088f95d30cc57b5fc40d9d6.jpg"
+			},
+			"date": "2025-05-28T00:18:59.000Z",
+			"content": "Appreciate <a href=\"https://www.npmjs.com/package/astro-pagefind\">www.npmjs.com/package/astr...</a> + <a href=\"https://www.zachleat.com/web/pagefind-search/\">www.zachleat.com/web/pagefind...</a> for making adding search to my static <a href=\"https://bsky.app/search?q=%23astrojs\">#astrojs</a> blog simple 'n easy &lt;3\n\n<a href=\"https://bsky.app/profile/zachleat.com\">@zachleat.com</a> always seems to have a useful compact web component whenever I come across some usecase.",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1747507,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109297701221541673",
+			"date": "2023-12-01T15:46:41.000Z",
+			"author": {
+				"name": "dasplan",
+				"url": "https://front-end.social/@dasplan",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/eed35e263ba586c1221eb2847cf2be799a79bfcfeb4268bf217117afb30adee7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747508,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-111025989952257112",
+			"date": "2023-12-01T15:47:04.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://fosstodon.org/@BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c9909743546dc068862d3bd12944c567ef3dcd2ae59a758e4d6c1fc5bf5bf23f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747509,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109301898091525884",
+			"date": "2023-12-01T15:47:23.000Z",
+			"author": {
+				"name": "Roma Komarov",
+				"url": "https://front-end.social/@kizu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c6cd4cbb5498166524de22dbb8a19bdfe0214deb80ffa1ad1255eed8895e11a7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747510,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109301152600207219",
+			"date": "2023-12-01T15:47:25.000Z",
+			"author": {
+				"name": "Rich Holman",
+				"url": "https://mastodon.social/@dogwonder",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/67f13aa0fa59d8153bb9c8b3c905f1d8f8f8912bb738ad75f5f39ba32471b20b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747519,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109303181435692045",
+			"date": "2023-12-01T15:48:37.000Z",
+			"author": {
+				"name": "Adam Stoddard",
+				"url": "https://mastodon.social/@aaadaaam",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4de951e5ff3c0f66b1e465b0c25a3e386ba491daa412e4e78428e6a1f3866863.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747520,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109382229410239377",
+			"date": "2023-12-01T15:48:52.000Z",
+			"author": {
+				"name": "Hawk Ticehurst",
+				"url": "https://fosstodon.org/@hawkticehurst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbdf15e8d3662f6bd1aeb13b67e53d334745df10adb1e9977674e7b3fb728b83.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747521,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109313345749203632",
+			"date": "2023-12-01T15:48:53.000Z",
+			"author": {
+				"name": "Baldur Bjarnason",
+				"url": "https://toot.cafe/@baldur",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cc8554ba583793b416ccbb17bc1d574b8c60c5e53c11aabef6c9a8f806a5d4e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747527,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109288802718835617",
+			"date": "2023-12-01T16:19:22.000Z",
+			"author": {
+				"name": "Miriam (still)",
+				"url": "https://front-end.social/@mia",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/39d6fb6fadc18d71bcf4603b694c04d82c14da6b96ece6d9f8961a8f2348af81.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747528,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109543043991647702",
+			"date": "2023-12-01T16:19:24.000Z",
+			"author": {
+				"name": "Jay",
+				"url": "https://mastodon.social/@jaygooby",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c22ba5d10212a240e94824c38cfd889977d74e81d0197c97ce15c46fde5caced.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747534,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109524352513111090",
+			"date": "2023-12-01T16:48:30.000Z",
+			"author": {
+				"name": "wesruv",
+				"url": "https://tech.lgbt/@wesruv",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/30c489152de3038498f2220c81bb63315beecbeab47dfe56df0720747c87d6cc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747535,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-110017460209559248",
+			"date": "2023-12-01T16:48:35.000Z",
+			"author": {
+				"name": "Josh “Yoshi” Vickerson",
+				"url": "https://vickerson.me/@josh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/52deb648a2752cdcd52f03d34a4b7e40fdaf863e91c4f658a01664657f133de9.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747581,
+			"url": "https://jamesg.coffee/2023/pagefind-search-web-componentzachleatcom",
+			"date": "2023-12-01T19:50:53.000Z",
+			"author": {
+				"name": "James' Coffee Blog",
+				"url": "https://jamesg.coffee/profile/capjamesg",
+				"avatarUrl": "https://avatars.webmention.io/jamesg.coffee/44a4b81d3ad1303a2acd54e82a33c5333b80a611e540f4971bcb5fd93096c352.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747591,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#favorited-by-109288230453300889",
+			"date": "2023-12-01T19:51:47.000Z",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://mamot.fr/@nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/46db122dbb31fe47f9d54cd6b37edc875807209a0c1f9d0a8da12a397743b88d.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1747511,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#reblogged-by-109297701221541673",
+			"date": "2023-12-01T15:47:48.000Z",
+			"author": {
+				"name": "dasplan",
+				"url": "https://front-end.social/@dasplan",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/eed35e263ba586c1221eb2847cf2be799a79bfcfeb4268bf217117afb30adee7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747512,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#reblogged-by-111025989952257112",
+			"date": "2023-12-01T15:47:50.000Z",
+			"author": {
+				"name": "Bryce Wray",
+				"url": "https://fosstodon.org/@BryceWrayTX",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c9909743546dc068862d3bd12944c567ef3dcd2ae59a758e4d6c1fc5bf5bf23f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747513,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#reblogged-by-109382229410239377",
+			"date": "2023-12-01T15:48:06.000Z",
+			"author": {
+				"name": "Hawk Ticehurst",
+				"url": "https://fosstodon.org/@hawkticehurst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbdf15e8d3662f6bd1aeb13b67e53d334745df10adb1e9977674e7b3fb728b83.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747514,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#reblogged-by-109313345749203632",
+			"date": "2023-12-01T15:48:08.000Z",
+			"author": {
+				"name": "Baldur Bjarnason",
+				"url": "https://toot.cafe/@baldur",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cc8554ba583793b416ccbb17bc1d574b8c60c5e53c11aabef6c9a8f806a5d4e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747529,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#reblogged-by-109543043991647702",
+			"date": "2023-12-01T16:19:24.000Z",
+			"author": {
+				"name": "Jay",
+				"url": "https://mastodon.social/@jaygooby",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c22ba5d10212a240e94824c38cfd889977d74e81d0197c97ce15c46fde5caced.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747589,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#reblogged-by-109288230453300889",
+			"date": "2023-12-01T19:51:45.000Z",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://mamot.fr/@nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/46db122dbb31fe47f9d54cd6b37edc875807209a0c1f9d0a8da12a397743b88d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1747602,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505780763010366#reblogged-by-109343937842242416",
+			"date": "2023-12-01T20:26:24.000Z",
+			"author": {
+				"name": "Liam Bigelow",
+				"url": "https://fosstodon.org/@bglw",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7dbb38f31e4e40f1e664cb4dc0377bb3f0a2f60e0798bcf445c0835d09c9bb0e.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

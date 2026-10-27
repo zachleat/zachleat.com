@@ -1,0 +1,306 @@
+{
+	"comments": [
+		{
+			"id": 916276,
+			"parentId": 0,
+			"url": "https://adactio.com/journal/14329",
+			"author": {
+				"name": "Jeremy Keith",
+				"url": "https://adactio.com/",
+				"avatarUrl": "https://avatars.webmention.io/adactio.com/24f33c5820046ebbcb429f78bb988fc1fa9f97d35247e0b72b3fb5ff888da633.jpg"
+			},
+			"date": "2018-09-11T23:15:54.000Z",
+			"content": "<p><a href=\"https://clearleft.com/team/danielle-huntrods\">Danielle</a> and I have been doing some front-end consultancy for a local client recently.</p>\n\n<p>We’ve both been enjoying it a lot—it’s exhausting but rewarding work. So if you’d like us to come in and spend a few days with your company’s dev team, please <a href=\"https://clearleft.com/contact\">get in touch</a>.</p>\n\n<p>I’ve certainly enjoyed the opportunity to watch Danielle in action, leading a workshop on refactoring React components in a pattern library. She’s incredibly knowledgable in that area.</p>\n\n<p>I’m clueless when it comes to React, but I really enjoy getting down to the nitty-gritty of browser features—HTML, CSS, and JavaScript APIs. Our skillsets complement one another nicely.</p>\n\n<p>This recent work was what prompted my thoughts around the principles of <a href=\"https://adactio.com/journal/14327\">robustness and least power</a>. We spent a day evaluating a continuum of related front-end concerns: semantics, accessibility, performance, and SEO.</p>\n\n<p>When it came to performance, a lot of the work was around figuring out the most suitable metric to prioritise:</p>\n\n<ul><li>time to first byte,</li>\n<li>time to first render,</li>\n<li>time to first meaningful paint, or</li>\n<li>time to first meaningful interaction.</li>\n</ul><p>And that doesn’t even cover the more easily-measurable numbers like:</p>\n\n<ul><li>overall file size,</li>\n<li>number of requests, or</li>\n<li>pagespeed insights score.</li>\n</ul><p>One outcome was to realise that there’s a tendency (in performance, accessibility, or SEO) to focus on what’s easily measureable, not because it’s necessarily what matters, but precisely <em>because</em> it is easy to measure.</p>\n\n<p>Then we got down to some nuts’n’bolts technology decisions. I took a step back and looked at the state of performance across the web. I thought it would be fun to rank the most troublesome technologies in order of tricksiness. I came up with a top four list.</p>\n\n<p>Here we go, counting down from four to the number one spot…</p>\n\n<h3>4. Web fonts</h3>\n\n<p>Coming in at number four, it’s web fonts. Sometimes it’s the combined weight of multiple font files that’s the problem, but more often that not, it’s the <em>perceived</em> performance that suffers (mostly because of when the web fonts appear).</p>\n\n<p>Fortunately there’s a straightforward question to ask in this situation: WWZD—<a href=\"https://www.zachleat.com/web/font-checklist/\">What Would Zach Do?</a></p>\n\n<h3>3. Images</h3>\n\n<p>At the number three spot, it’s images. There are more of them and they just seem to be getting bigger all the time. And yet, we have more tools at our disposal than ever—better <a href=\"https://amberwilson.co.uk/blog/jpg-png-svg/\">file formats</a>, and <a href=\"https://caniuse.com/#feat=srcset\">excellent browser support for responsive images</a>. Heck, we’re even getting the ability to <a href=\"https://css-tricks.com/a-native-lazy-load-for-the-web-platform/\">lazy load images in HTML</a> now.</p>\n\n<p>So, as with web fonts, it feels like the impact of images on performance can be handled, as long as you give them some time and attention.</p>\n\n<h3>2. Our JavaScript</h3>\n\n<p>Just missing out on making the top spot is the JavaScript that we send down the pipe to our long-suffering users. There’s nothing wrong with the code itself—I’m sure it’s very good. There’s just too damn much of it. And that’s a real performance bottleneck, <a href=\"https://www.youtube.com/watch?v=VpixmppRbZU\">especially on mobile</a>.</p>\n\n<p>So stop sending so much JavaScript—a solution as simple as <a href=\"https://www.youtube.com/watch?v=tNfGyIW7aHM\">Monty Python’s instructions for playing the flute</a>.</p>\n\n<h3>1. Other people’s JavaScript</h3>\n\n<p>At number one with a bullet, it’s all the crap that someone else tells us to put on our websites. Analytics. Ads. Trackers. Beacons. “It’s just one little script”, they say. And then that one little script calls in another, and another, and another.</p>\n\n<p>It’s so disheartening when you’ve devoted your time and energy into your web font loading strategy, and optimising your images, and unbundling your JavaScript …only to have someone else’s JavaScript just shit all over your nice performance budget.</p>\n\n<p>Here’s the really annoying thing: when I go to performance conferences, or participate in performance discussions, you know who’s nowhere to be found? The people making those third-party scripts.</p>\n\n<p>The narrative around front-end performance is that it’s up to us developers to take responsibility for how our websites perform. But by far the biggest performance impact comes from third-party scripts.</p>\n\n<p>There is a solution to this, but it’s not a technical one. We could refuse to add overweight (and in many cases, unethical) third-party scripts to the sites we build.</p>\n\n<p>I have many, many issues with Google’s AMP project, but <a href=\"https://adactio.com/journal/9646\">I completely acknowledge that it solves a political problem</a>:</p>\n\n<blockquote>\n  <p>No external JavaScript is allowed in an AMP HTML document. This covers third-party libraries, advertising and tracking scripts. This is A-okay with me.</p>\n  \n  <p>The reasons given for this ban are related to performance and I agree with them completely. Big bloated JavaScript libraries are one of the biggest performance killers on the web.</p>\n</blockquote>\n\n<p>But how can we take that lesson from AMP and apply it to all our web pages? If we simply refuse to be the one to add those third-party scripts, we get fired, and somebody else comes in who is willing to poison web pages with third-party scripts. There’s nothing to stop companies doing that.</p>\n\n<p>Unless…</p>\n\n<p>Suppose we were to all make a pact that we would stand in solidarity with any of our fellow developers in that sort of situation. A sort of joining-together. A <a href=\"https://en.wikipedia.org/wiki/Trade_union\">union</a>, if you will.</p>\n\n<blockquote>\n  <p>There is power in a factory, power in the land, power in the hands of the  worker, but it all amounts to nothing if together we don’t stand.</p>\n  \n  <p><a href=\"https://www.youtube.com/watch?v=DwbzxemJZIc\">There is power in a union</a>.</p>\n</blockquote>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 628035,
+			"parentId": 0,
+			"url": "https://www.inarvis.com/blog/css-guia-definitiva/",
+			"author": {},
+			"date": "2019-06-18T14:25:46.000Z",
+			"content": "<img src=\"https://www.inarvis.com/wp-content/uploads/2019/06/guia-css.svg\" alt=\"guia-css.svg\" /><p>En esta guía de CSS os enseñaremos las <strong>propiedades más útiles</strong> que deberías empezar a usar ahora mismo. A continuación explicaremos cada propiedad <strong>con un ejemplo básico</strong> para que lo puedas comprender de forma visual. Empezamos!</p>\nTabla de contenidos\n<ul><li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#0--pseudoelementos-\"><strong>Pseudoelementos</strong></a><ul><li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#1--before-ampamp--after-\"><strong>::before &amp;&amp;  ::after</strong></a></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#0--selection-\"><strong>::selection</strong></a></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#1--placeholder-\"><strong>::placeholder</strong></a></li>\n</ul></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#4--pseudoclases-\"><strong>Pseudoclases</strong></a><ul><li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#9--first-child-ampamp-last-child-\"><strong>Selección de elementos hijo</strong></a></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#7--ejemplo-de-checkbox-\"><strong>Control de estado</strong></a></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#8--campos-de-texto-\"><strong>Validación de campos de texto</strong></a></li>\n</ul></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#8--variables-de-css-\"><strong>Variables de CSS</strong></a><ul><li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#9--como-cambiar-entre-tema-oscuro-y-claro-\"><strong>Como cambiar entre tema oscuro y claro</strong></a></li></ul></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#10--css-grid-\"><strong>CSS Grid</strong></a><ul><li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#11--c%C3%B3mo-definir-la-plantilla-grid-\"><strong>Cómo definir la plantilla grid</strong></a></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#13--ejemplo-de-galer%C3%ADa-\"><strong>Ejemplo de galería</strong></a></li>\n</ul></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#11--flexbox-\"><strong>Flexbox</strong></a></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#12--animaciones-\"><strong>Animaciones</strong></a><ul><li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#13--keyframes-\"><strong>Keyframes</strong></a><ul><li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#14--c%C3%B3mo-funcionan-los-keyframes-\"><strong>Cómo funcionan los keyframes</strong></a></li></ul></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#14--transitions-\"><strong>Transiciones</strong></a></li>\n</ul></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#13--otras-propiedades-interesantes-\"><strong>Otras propiedades interesantes</strong></a><ul><li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#14--como-optimizar-la-precarga-de-fuentes-\"><strong>Como optimizar la precarga de fuentes</strong></a></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#15--selectores-de-atributos-\"><strong>Selectores de atributos</strong></a></li>\n<li><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#17--clip-path-\"><strong>Clip path</strong></a></li>\n</ul></li>\n</ul>\n<h2><strong>Pseudoelementos</strong></h2><p>Los pseudoelementos son una palabra clave que se añade a los selectores para realizar cambios concretos en el documento. Estos pseudoelementos, a diferencia de las pseudoclases (:), se identifican con dos puntos dobles (::).</p><h3><strong>::before &amp;&amp;  ::after</strong></h3><p>Ambas propiedades <strong>nos permiten añadir contenido</strong> dentro de un elemento antes (::before) o después (::after) de cualquier otro contenido HTML. Para que cualquiera de estos pseudoelementos haga efecto, es obligatorio añadir la propiedad <code>content</code>. Un ejemplo sencillo podría ser el siguiente.</p><p>texto</p><pre>&lt;p&gt;texto&lt;/p&gt;</pre><pre>p::before {\n  content: 'Hola ';\n  background-color: red;\n  color: white;\n}\np::after {\n  content: ' Mundo';\n  font-weight: bold;\n}</pre><p>Otro ejemplo práctico sería editar el estilo en testimonios o citas de autores o documentos. Para editar el estilo y forma de las comillas en las citas, se puede utilizar la propiedad <strong>quotes</strong>.</p><blockquote>\n<p> If you are spending a lot of your time learning while you code — \n while someone is paying you — then you are doing it right.</p> Jen Simmons\n</blockquote><pre>&lt;blockquote&gt;\n  &lt;p&gt;\n    If you are spending a lot of your time learning while you code — \n    while someone is paying you — then you are doing it right.\n  &lt;/p&gt;\n  &lt;cite&gt;Jen Simmons&lt;/cite&gt;\n&lt;/blockquote&gt;</pre><pre>blockquote {\n  text-align: center;\n}\n\nblockquote::before {\n  margin: 0 auto 40px;\n}\nblockquote::after {\n  margin: 40px auto 0;\n}\n\nblockquote::before, blockquote::after { \n  content: \" \";\n  width: 60px;\n  height: 3px;\n  background-color: #c9c9c9;\n  display: block;\n}\n\nblockquote cite {\n  padding-top: 20px;\n  display: block;\n  color: #676767;\n}</pre><p>Por último, también podemos añadir animaciones a estos elementos decorativos, así, podemos crear por ejemplo un Tooltip.</p><p> <a href=\"https://www.inarvis.com/blog/flexbox-y-el-diseno-responsive-unidireccional/\">Este texto desvela un secreto</a></p><pre>&lt;a href=\"https://www.inarvis.com/blog/flexbox-y-el-diseno-responsive-unidireccional/\" data-tooltip=\"Flexbox y Grid NO son mutuamente excluyentes\"&gt;Este texto desvela un secreto&lt;/a&gt;</pre><pre>a[data-tooltip] {\n  position: relative;\n}\n\na[data-tooltip]::after {\n  content: attr(data-tooltip);\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  background-color: #212121;\n  padding: 10px 20px;\n  color: white;\n  border-radius: 8px;\n  white-space: nowrap;\n  transform: scale(0);\n  transition: all ease-in 200ms;\n  \n}\n\na[data-tooltip]:hover::after {\n  transform: scale(1);\n  bottom: 100%;\n}</pre><h3><strong>::selection</strong></h3><p>Esta propiedad modifica el estilo del texto cuando lo seleccionamos con el ratón. Se puede utilizar en selectores o en todo el documento. Las únicas propiedades que funcionan en <strong>::selection</strong> son: <em><code>color</code>, <code>background-color</code> y <code>text-shadow</code></em></p><pre>&lt;p class=\"selection-text\"&gt;Selecciona para ver cambios en el texto&lt;/p&gt;\n&lt;p class=\"selection-bg\"&gt;Selecciona para ver cambios en el fondo y texto&lt;/p&gt;\n&lt;p class=\"selection-shadow\"&gt;Selecciona para ver cambios en el sombreado&lt;/p&gt;</pre><p>Selecciona para ver cambios en el texto</p><p>Selecciona para ver cambios en el fondo y texto</p><p>Selecciona para ver cambios en el sombreado</p><pre>  .selection-text::-moz-selection {\n    color: purple;\n  }\n  .selection-text::selection {\n    color: purple;\n  }\n  \n  .selection-bg::-moz-selection {\n    background-color: red;\n    color: white;\n  }\n  .selection-bg::selection {\n    background-color: red;\n    color: white;\n  }\n  \n  .selection-shadow::-moz-selection {\n    background-color: red;\n    color: white;\n  }\n  .selection-shadow::selection {\n    text-shadow: 1px 1px #212121;\n  }\n  /* Si lo declaramos globalmente */\n  ::selection {\n    color: white;\n    background: #212121;\n  }</pre><h3><strong>::placeholder</strong></h3><p>Modifica las propiedades del placeholder dentro de un campo de texto. Si solo queremos aplicar estos estilos cuando el placeholder es visible, usaríamos <strong>::placeholder-shown</strong>.</p> <pre>&lt;input type=\"text\" placeholder=\"Nombre\"&gt;</pre><pre>::-webkit-input-placeholder { /* Edge */\n  color: purple;\n  font-weight: bold;\n  letter-spacing: 2px;\n}\n\n:-ms-input-placeholder { /* Internet Explorer 10-11 */\n  color: purple;\n  font-weight: bold;\n  letter-spacing: 2px;\n}\n\n::placeholder {\n  color: purple;\n  font-weight: bold;\n  letter-spacing: 2px;\n}</pre><h2><strong>Pseudoclases</strong></h2><p>Al igual que con los pseudoelementos, las pseudoclases se aplican a los selectores y <strong>especifican una condición especial</strong> del elemento, como por ejemplo, al producirse un evento del ratón (hover), cambios en el historial del navegador (:visited) o según el contenido (:checked).</p><p>Hay una pseudoclase llamada <strong>:root</strong> que representa el elemento raíz del documento, idéntico al selector html. La única diferencia que existe es que <strong>:root tiene más especificidad</strong>. Se suele utilizar para declarar <strong>variables de CSS</strong>.</p><h3><strong>Selección de elementos hijo</strong></h3>\n<a>\n<span><span></span></span><span><strong>:first-child</strong> representa el primer hijo del contenedor padre.</span>\n</a><a>\n<span><span></span></span><span><strong>:last-child</strong> representa el último hijo del contenedor padre.</span>\n</a>\n\n<p>Primer hijo</p>\n<p>Segundo hijo</p>\n<p>Último hijo</p>\n<pre>&lt;div class=\"example-fc\"&gt;\n  &lt;p&gt;Primer hijo&lt;/p&gt;\n  &lt;p&gt;Segundo hijo&lt;/p&gt;\n  &lt;p&gt;Último hijo&lt;/p&gt;\n&lt;/div&gt;</pre><pre>.example-fc p:first-child {\n  border-left: 3px solid black;\n  padding-left: 10px;\n}\n.example-fc p:last-child {\n  font-weight: bold;\n  text-transform: uppercase;\n}</pre>\n<a>\n<span><span></span></span><span><strong>:nth-child(n) </strong>representa el n-ésismo hijo de un elemento padre<strong>.</strong> En general, se suele usar para marcar de distintos colores las filas de las tablas. Podemos agregar como valor (n) un número (1, 4), una ecuación (2n, 4n + 1) o alternar entre pares e impares (even, odd).</span>\n</a><a>\n<span><span></span></span><span><strong>:nth-of-type(n) </strong>representa el n-ésimo hijo que sea del mismo tipo de selector dentro de un contenedor padre.</span>\n</a><a>\n<span><span></span></span><span><strong>:empty</strong> representa cualquier elemento que no tenga hijos. Se considera como hijo cualquier nodo o texto (espacios incluidos). Puede ser útil si queremos ocultar elementos vacíos que ocupan espacio en blanco.</span>\n</a><a>\n<span><span></span></span><span><strong>:not(x) </strong>representa elementos que no coinciden con el selector (etiquetas, clases, ids…) añadido en la condición.</span>\n</a>\n<p>Con un ejemplo parecido al anterior podremos identificar las diferencias entre estas propiedades.</p><pre>&lt;div class=\"example-nth\"&gt;\n  &lt;span&gt;Primer hijo&lt;/span&gt;\n  &lt;p&gt;&lt;b&gt;Segundo hijo&lt;/b&gt; / Primero hijo Párrafo&lt;/p&gt;\n  &lt;p&gt;Tercer hijo / &lt;b&gt;Segundo hijo Párrafo&lt;/b&gt;&lt;/p&gt;\n  &lt;p&gt;&lt;/p&gt;\n&lt;/div&gt;</pre> <span>Primer hijo</span><p><b>Segundo hijo</b> / Primero hijo Párrafo</p>\n<p>Tercer hijo / <b>Segundo hijo Párrafo</b></p>\n<p></p>\n<pre>.example-nth :not(p):not(b) {\n  font-size: 24px;\n  color: purple;\n}\n\n.example-nth :nth-child(2) {\n  border-left: 3px solid blue;\n  padding-left: 10px;\n}\n\n.example-nth p:nth-of-type(2) {\n  border-left: 3px solid red;\n  padding-left: 10px;\n}\n\n.example-nth :empty::before {\n  content: 'Selector P vacio';\n  font-weight: bold;\n}</pre><p>A continuación veremos el uso que se le pueden dar a muchas de las pseudoclases orientadas a <strong>elementos de formulario</strong>, como por ejemplo, campos de texto y tipos de checkbox.</p><h3><strong>Control de estado</strong></h3><p>En este caso usamos las pseudoclases <strong>:not</strong> y <strong>:checked</strong> para comprobar el estado del checkbox, y así, tenemos opción a modificar ambos aspectos.</p>Haga click<pre>&lt;!-- Nos aseguramos de tener el atributo 'for' del 'label' con el mismo valor que el 'id' del checkbox. --&gt;\n&lt;input id=\"checkbox-input\" type=\"checkbox\"&gt;\n&lt;label class=\"checkbox-label\" for=\"checkbox-input\"&gt;Haga click&lt;/label&gt;</pre><pre>/* Podemos usar los siguientes alias si lo queremos aplicar globalmente a todos los checkbox.\n   #checkbox-input como [type=\"checkbox\"]\n   .checkbox-label como label\n*/\n/* Primero ocultamos el input */\n#checkbox-input {\n  display: none;\n}\n\n/* Estilos del texto, entre el :before y el :after */\n#checkbox-input:not(:checked) + .checkbox-label,\n#checkbox-input:checked + .checkbox-label {\n  position: relative;\n  padding-left: 2em;\n  cursor: pointer;\n}\n\n/* Damos estilo de caja a la etiqueta label usando :before */\n#checkbox-input:not(:checked) + .checkbox-label::before,\n#checkbox-input:checked + .checkbox-label::before {\n  content: '';\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 1.5em;\n  height: 1.5em;\n  border: 2px solid #ccc;\n  background: #fff;\n  border-radius: 4px;\n  cursor: pointer;\n}\n\n#checkbox-input:not(:checked) + .checkbox-label:hover::before {\n  border-color: #0b76ef;\n}\n\n/* Después cambiamos el fondo cuando el checkbox está activo. */\n#checkbox-input:checked + .checkbox-label::before {\n  background-color: #0b76ef;\n  border-color: #0b76ef;\n}\n\n/* Finalmente cambios el estilo del tick */\n#checkbox-input:checked + .checkbox-label::after {\n  content: '\\2713';\n  position: absolute;\n  top: 0.1em;\n  left: .08em;\n  font-size: 1.6em;\n  color: white;\n  line-height: 0.8;\n}</pre><h3><strong>Validación de campos de texto</strong></h3><p>Ahora veremos varias propiedades que nos pueden ayudar a <strong>validar y mejorar la experiencia de usuario en nuestros formularios.</strong> Sabiendo como funcionan y se complementan estos elementos, el límite lo pone nuestra imaginación.</p><p style=\"background-color:#dedede;\">Ojo, en este ejemplo se ha utilizado la propiedad <code>outline: none</code>. No se debería eliminar esta propiedad ya que es necesaria para una buena accesibilidad. Si se decide suprimir esta opción, <strong>es muy recomendable ofrecer estilos alternativos que mantengan o mejoren la experiencia de usuario</strong>.</p>\n Campo deshabilitado \n Rango entre 1 y 10\n\n Campo obligatorio\n\n<pre>&lt;div class=\"form-inputs-example\"&gt;\n  &lt;div class=\"input-group-example\"&gt;\n    &lt;label for=\"input-1\"&gt;Campo deshabilitado&lt;/label&gt;\n    &lt;input id=\"input-1\" type=\"text\" class=\"input-1\" placeholder=\"Nombre\" disabled&gt;\n  &lt;/div&gt;\n  \n  &lt;div class=\"input-group-example\"&gt;\n    &lt;label for=\"input-2\"&gt;Rango entre 1 y 10&lt;/label&gt;\n    &lt;input id=\"input-2\" type=\"number\" class=\"input-2\" min=\"1\" max=\"10\"&gt;\n  &lt;/div&gt;\n  \n  &lt;div class=\"input-group-example\"&gt;\n    &lt;!-- Atento al cambio del orden de los selectores --&gt;\n    &lt;input id=\"input-3\" type=\"text\" class=\"input-3\" placeholder=\"Campo obligatorio\" required&gt;\n    &lt;label for=\"input-3\"&gt;Campo obligatorio&lt;/label&gt;\n  &lt;/div&gt;\n&lt;/div&gt;</pre><pre>.form-inputs-example {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 20px 0;\n}\n\n.input-group-example {\n  display: flex;\n  flex-direction: column;\n  width: 400px;\n  padding: 15px 20px;\n}\n\ninput {\n  padding: 7px;\n  order: 1; /* Gracias a flexbox podemos cambiar el de la etiqueta y el input. */\n}\n\n/* Aplicados a los campos deshabilitados */\ninput:disabled:hover {\n  background-color: #ddd;\n}\n\n/* Aplicados a los campos opcionales */\ninput:optional {\n  color: green;\n  font-size: 1.1em;\n}\n\n/* Aplicados a los campos obligatorios */\ninput:required {\n  border-color: red;\n}\n\n/* Podemos usarlo de esta forma porque hemos cambiado el orden de los inputs gracias a flexbox. (lineas 9 y 17) */\ninput:required + label::after {\n  content: ' *';\n  color: red;\n  font-weight: bold;\n}\n\n.input-1, .input-2 {\n  border-radius: 5px;\n  border: 2px solid #ccc;\n}\n\n.input-2 {\n  outline: none;\n}\n.input-2:in-range {\n  background-color: #CCFFCC;\n  border: 2px solid green;\n}\n.input-2:out-of-range {\n  background-color: #FFCCCC;\n  border: 2px solid red;\n}\n.input-2:in-range + label::after {\n  content: '. Es válido.';\n}\n.input-2:out-of-range + label::after {\n  content: '. Fuera de rango!';\n}\n\n.input-3 {\n  background: transparent;\n  box-shadow: none;\n  border-width: 0px 0px 4px 0px;\n}\n/* Cambiamos el color del borde cuando seleccionamos el input y ocultamos el outline */\n.input-3:focus {\n  outline: none;\n  border-color: #0b76ef;\n}</pre><h2><strong>Variables de CSS</strong></h2><p>Las variables CSS contienen valores específicos para volver a ser utilizados a lo largo del documento. Estas variables se declaran con la siguiente notación <strong>–color-primario: #212121;</strong>. Y para acceder a estas, se utiliza la función <strong>var()</strong>, como por ejemplo, <strong>color: var(–color-primario);</strong>.</p><p>Esta propiedad nos puede servir de gran ayuda en el caso de tener páginas muy complejas y grandes. Podríamos <strong>almacenar la paleta de colores</strong> en variables y usarlas según las necesitemos.</p><p>Ahora veremos varios ejemplos valiosos que demuestran el poder de las variables de CSS.</p><h3><strong>Como cambiar entre tema oscuro y claro</strong></h3><p>Vamos a crear una pequeña carta y un botón para alternar entre 2 temas (oscuro y claro) usando variables de CSS.</p>\n\n<h2>Tema oscuro / claro</h2>\n \n\n\n<p>En este ejemplo vemos como podemos cambiar los colores de toda una página mediante variables de CSS. Simplemente cambiamos el <b>atributo global data</b> dinámicamente con un botón que escucha los eventos mediante Javascript. Después podemos acceder a este <b>atributo data</b> a través de CSS así <b>:root[data-theme=’dark’]</b> y con esto conseguimos sobrescribir todos los colores que tengamos asignados.</p>\n <pre>/* Aqui almacenamos la paleta de colores para el tema claro */\n:root {\n  --background: #EEEEEE;\n  --color-title: #404248;\n  --color-text: #3D3E4C;\n  --color-text-bold: #212121;\n}\n\n/* Aqui almacenamos la paleta de colores para el tema oscuro */\n:root[data-theme='dark'] {\n  --background: #212121;\n  --color-title: #29B6F6;\n  --color-text: #AFAFAF;\n  --color-text-bold: #FFFFFF;\n}\n\n.panel {\n  background-color: var(--background);\n  padding: 3em;\n  border-radius: 15px;\n}\n.panel h2 {\n  color: var(--color-title);\n  font-weight: 600;\n  margin: 0;\n}\n.panel p {\n  color: var(--color-text);\n  line-height: 1.8em;\n  margin-top: 2em;\n}\n.panel b {\n  color: var(--color-text-bold);\n}\n\n.panel-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.switch-container {\n  display: flex;\n}\n\n.panel-body {\n  width: 80%;\n}\n\n#switch[type=checkbox] {\n  height: 0;\n  width: 0;\n  visibility: hidden;\n}\n\n.switch-label {\n  cursor: pointer;\n  width: 55px;\n  height: 26px;\n  background: grey;\n  float: right;\n  border-radius: 100px;\n  position: relative;\n}\n\n.switch-label::after {\n  content: '';\n  position: absolute;\n  top: 3px;\n  left: 3px;\n  width: 20px;\n  height: 20px;\n  background: #fff;\n  border-radius: 90px;\n  transition: 0.3s;\n}\n\n#switch:checked + .switch-label {\n  background: var(--color-title);\n}\n\n#switch:checked + .switch-label::after {\n  left: calc(100% - 5px);\n  transform: translateX(-100%);\n}\n\n.switch-label:active::after {\n  width: 45px;\n}\n\nhtml.transition,\nhtml.transition *,\nhtml.transition *::before,\nhtml.transition *::after {\n  transition: all 600ms !important;\n  transition-delay: 0 !important;\n}</pre><pre>&lt;div class=\"panel\"&gt;\n  &lt;div class=\"panel-header\"&gt;\n    &lt;h2&gt;Tema oscuro / claro&lt;/h2&gt;\n    &lt;div class=\"switch-container\"&gt;\n      &lt;input id=\"switch\" type=\"checkbox\" name=\"theme\" /&gt;               \n      &lt;label class=\"switch-label\" for=\"switch\"&gt;&lt;/label&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"panel-body\"&gt;\n    &lt;p&gt;En este ejemplo vemos como podemos cambiar los colores de toda una página mediante variables de CSS. Simplemente cambiamos el &lt;b&gt;atributo global data&lt;/b&gt; dinámicamente con un botón que escucha los eventos mediante Javascript. Después podemos acceder a este &lt;b&gt;atributo data&lt;/b&gt; a través de CSS así &lt;b&gt;:root[data-theme='dark']&lt;/b&gt; y con esto conseguimos sobrescribir todos los colores que tengamos asignados.\n    &lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;</pre><pre>var checkbox = document.querySelector('input[name=theme]');\n\n// Registramos el evento 'change' del botón\ncheckbox.addEventListener('change', function() {\n  transition()\n  if (this.checked) \n    document.documentElement.setAttribute('data-theme', 'dark')\n  else \n    document.documentElement.setAttribute('data-theme', 'light')\n})\n\n// Esta función añadirá la clase 'transition' en la raiz (html) para después eliminarla a los 600ms\nlet transition = () =&gt; {\n  document.documentElement.classList.add('transition');\n  window.setTimeout(() =&gt; {\n    document.documentElement.classList.remove('transition')\n  }, 600)\n}</pre><h2><strong>CSS Grid</strong></h2><p>Grid es la herramienta de css más potente que existe para crear cualquier tipo de <strong>diseño responsive y sin límites</strong>. Grid, al contrario que Flexbox, trabaja en un <strong>sistema de 2 dimensiones</strong>.</p><p>Esto no quiere decir Flexbox y Grid sean <strong>mutuamente excluyentes</strong>, al contrario, es muy recomendable plantear tus diseños con ambas herramientas.</p><p>El objetivo es <strong>estructurar los componentes</strong> de tu página con las herramientas que te ofrece Grid. Es decir, como quieres que se muestre y qué tamaño deben tener según el dispositivo.</p><p>Finalmente, organizar el espacio dentro de estos componentes debería ser tarea de <em>Flexbox</em>.</p><h3><strong>Cómo definir la plantilla grid</strong></h3><p>En este ejemplo veremos cómo podemos estructurar nuestra plantilla y que se adapte a todos los dispositivos.</p>\n <span>Header</span>\n\nSidebar\nBody\nFooter\n<p>Primero fijamos las áreas del contenedor y las dimensiones que va a tener. Para eso utilizamos la propiedad <strong>grid-template-areas</strong>. Dentro precisamos que elementos irán en cada fila y columna.</p><pre>&lt;div class=\"grid-wrapper\"&gt;\n  &lt;div class=\"grid-header\"&gt;\n    &lt;span&gt;Header&lt;/span&gt;\n  &lt;/div&gt;\n  &lt;div class=\"grid-sidebar\"&gt;Sidebar&lt;/div&gt;\n  &lt;div class=\"grid-body\"&gt;Body&lt;/div&gt;\n  &lt;div class=\"grid-footer\"&gt;Footer&lt;/div&gt;\n&lt;/div&gt;</pre><pre>.grid-wrapper {\n  display: grid;\n  grid-template-areas: \"header body sidebar\"\n                       \"header footer footer\";\n  grid-gap: 15px; /* 15px de espaciado entre contenedores */\n  grid-template-rows: 250px 200px; /* Las dimensiones de cada fila */\n  grid-template-columns: 150px 2fr 1fr; /* Las dimensiones de cada columna */\n}</pre><p>Para que el código de arriba funcione, necesitamos darle un nombre de área a cada contenedor. Por lo tanto, usaremos la propiedad <strong>grid-area</strong> en cada uno de estos elementos.</p><pre>.grid-header {\n  grid-area: header; /* Nombre de área del grid-header */\n  background-color: #ae52d4;\n}\n.grid-header span {\n  transform: rotate(-90deg);\n}\n.grid-body {\n  grid-area: body;\n  background-color: #43a047;\n}\n.grid-sidebar {\n  grid-area: sidebar;\n  background-color: #ff9421;\n}\n.grid-footer {\n  grid-area: footer;\n  background-color: #3d3e4b;\n}</pre><p>En este punto tenemos la estructura creada y hemos dado nombre a los contenedores. Lo último que nos falta es añadir <strong>puntos de ruptura</strong> para organizar la distribución de todos los contenedores.</p><pre>@media (max-width: 1300px) {\n  .grid-wrapper {\n    grid-template-areas: \"header header\"\n                         \"body sidebar\"\n                         \"footer footer\";\n    grid-template-rows: 1fr 200px 1fr;\n    grid-template-columns: 3fr 350px;\n  }\n  .grid-header span {\n    transform: rotate(0deg);\n  }\n}\n\n@media (max-width: 700px) {\n  .grid-wrapper {\n    grid-template-areas: \"header\"\n                         \"body\"\n                         \"sidebar\"\n                         \"footer\";\n    grid-template-rows: repeat(4, 1fr); /* Usamos la función repeat() para asignar el tamaño de 1fr a cada una de las 4 filas. */\n    grid-template-columns: 1fr;\n  }\n}</pre><p>Una vez hecho esto, ya tenemos un <strong>diseño 100% responsive</strong> totalmente personalizado y sin tocar una sola línea de HTML.</p><h3><strong>Ejemplo de galería</strong></h3><p>Gracias a CSS Grid poder crear una galería de imágenes <strong>en tiempo récord</strong>. Nos basta con 2 líneas de código para preparar nuestra galería complemente responsive. Disminuye el tamaño del navegador para apreciar los cambios.</p>\n\n\n\n\n\n\n<pre>&lt;div class=\"grid-gallery\"&gt;\n  &lt;div&gt;&lt;/div&gt;\n  &lt;div&gt;&lt;/div&gt;\n  &lt;div&gt;&lt;/div&gt;\n  &lt;div&gt;&lt;/div&gt;\n  &lt;div&gt;&lt;/div&gt;\n  &lt;div&gt;&lt;/div&gt;\n&lt;/div&gt;</pre><pre>.grid-gallery {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  grid-gap: 15px;\n}\n.grid-gallery div {\n  background-color: #ff9421;\n  height: 150px;\n}</pre><p>El truco se encuentra en la siguiente línea:</p><p><code>grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));</code></p><p>Básicamente estamos diciendo lo siguiente:</p>\n<a>\n<span><span></span></span><span><strong>repeat()</strong>. Que se generen tantas columnas como elementos hijo.</span>\n</a><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#\">\n<span><span></span></span><span><strong>auto-fit</strong>. Rellena todo el espacio posible de la fila. Si pusiéramos <strong>auto-fill</strong>, estaríamos rellenando tantos elementos como puedan caber en la fila, sin expandir tanto el ancho de los objetos.</span>\n</a><a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#\">\n<span><span></span></span><span><strong>minmax()</strong>. Define un rango de tamaño mayor o igual que min<br /> y menor o igual que max. En líneas generales estamos obligando a que ocupe como mínimo 150px. <strong>La unidad 1fr</strong> representa una fracción del espacio disponible en el contenedor de la rejilla.</span>\n</a>\n<h2><strong>Flexbox</strong></h2><p>Tenemos en nuestro blog <a href=\"https://www.inarvis.com/blog/flexbox-y-el-diseno-responsive-unidireccional/\">un artículo</a> que te explica todo lo que necesitas saber sobre flexbox.</p><h2><strong>Animaciones</strong></h2>KEYFRAMES<h3><strong>Keyframes</strong></h3><p>Una manera para darle vida a nuestra página es mediante el uso de las animaciones. En este apartado, hablaremos de los <strong>keyframes</strong>. Lo primero de todo, os dejo el código de la animación de arriba.</p><pre>&lt;div id=\"animation\" class=\"center\"&gt;\n  &lt;div class=\"blend-text\"&gt;KEYFRAMES&lt;/div&gt;\n&lt;/div&gt;</pre><pre>@keyframes background {\n  from { background-color: #FC354C; }\n  to { background-color: #0ABFBC; }\n}\n\n#animation {\n  animation: 1.5s background infinite alternate;\n  \n  width: 100%;\n  height: 350px;\n  font-size: 3em;\n}\n\n.blend-text {\n  background-color: black;\n  border: 4px solid black;\n  color: white;\n  border-radius: 5px;\n  font-weight: bold;\n  padding: 30px;\n  mix-blend-mode: multiply; /* Esta propiedad describe cómo el contenido de un elemento debe mezclarse con el resto */\n  transition: all .5s ease; /* Si definimos la transicion aquí y no en el :hover, obligamos a que la animación sea de entrada y salida. */\n}\n\n.blend-text:hover {\n  background-color: transparent;\n  color: black;\n  cursor: pointer;\n}\n\n.center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}</pre><h4><strong>Cómo funcionan los keyframes</strong></h4><p>Hay 2 maneras de declarar una animación mediante keyframes. Lo primero de todo hace falta que le demos un nombre a la animación, justo después de la palabra clave <strong>@keyframes</strong>.</p><pre>@keyframes nombre {}</pre><p>Ahora debemos definir cómo va a ser la animación. La primera opción y más avanzada es utilizar breakpoints que determinamos mediante porcentajes.</p><pre>&lt;div class=\"example-container center\"&gt;\n  &lt;div id=\"kf-animation\"&gt;&lt;/div&gt;\n&lt;/div&gt;</pre><pre>#kf-animation {\n  width: 200px;\n  height: 80px;\n  background-color: #ff9421;\n  border-radius: 5px;\n}\n\n#kf-animation:hover {\n  cursor: pointer;\n  animation: .5s button-animation infinite linear;\n}\n\n#kf-animation:hover::after {\n  content: 'Aaahh';\n  font-size: 1.2em;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n  \n@keyframes button-animation {\n  0% {\n    transform: translateX(-5px) rotate(5deg);\n  }\n  10% {\n    transform: translateX(5px) rotate(-7deg);\n  }\n  20% {\n    transform: translateX(-5px) rotate(2deg);\n  }\n  30% {\n    transform: translateX(5px) rotate(3deg);\n  }\n  40% {\n    transform: translateX(-5px) rotate(-5deg);\n  }\n  50% {\n    transform: translateX(5px) rotate(3deg);\n  }\n  60% {\n    transform: translateX(-5px) rotate(-4deg);\n  }\n  70% {\n    transform: translateX(5px) rotate(3deg);\n  }\n  80% {\n    transform: translateX(-5px) rotate(-2deg);\n  }\n  90% {\n    transform: translateX(5px) rotate(-1deg);\n  }\n  100% {\n    transform: translateX(-5px) rotate(3deg);\n  }\n}</pre><p>La segunda es utilizar la claves <strong>from y to</strong>. Con esto se entiende que la animación se ejecutará progresivamente desde el inicio (0%) hasta el final (100%).</p><pre>@keyframes button-animation {\n  from {\n    top: 0px;\n  }\n  to {\n    top: 200px;\n  }</pre><h3><strong>Transiciones</strong></h3><p>Bajo mi punto de vista, <strong>las transiciones son la manera más sencilla de animar los componentes de una página web.</strong> Una transición se ejecuta cuando <strong>cambia el valor</strong> de una o más propiedades en un periodo de tiempo.</p><pre>.selector {\n  transition: &lt;propiedad&gt; &lt;duración&gt; &lt;curva bézier&gt; &lt;delay&gt;\n}</pre><p>Con esas 4 propiedades podemos definir la transición del selector. Podemos <strong>provocar estas animaciones</strong> con algunas <strong>pseudoclases</strong>, como por ejemplo, :hover, :focus, :active y más.</p><pre>.selector {\n  background-color: #3d3e4b;\n  transition: background-color 0.5s ease-out;\n}\n\n.selector:hover {\n  background-color: #ff9421;\n}</pre><p>Por último, debemos saber el tipo de curva de velocidad que vamos a aplicar en la animación. Tenemos a nuestra disposición muchísimas variaciones prefijadas que nos pueden servir.</p>\n<a>\n<span><span></span></span><span><strong>linear. </strong>Mantiene la misma velocidad de inicio a fin.<strong> </strong></span>\n</a><a>\n<span><span></span></span><span><strong>ease.</strong> Inicio y fin lentos, transición rápida.</span>\n</a><a>\n<span><span></span></span><span><strong>ease-in.</strong> Inicio lento y después mantiene la velocidad.</span>\n</a><a>\n<span><span></span></span><span><strong>ease-out.</strong> Inicio y fin lento.</span>\n</a>\n<p>Además de las versiones que ya existen, es posible personalizar tu propia curva de bézier. En el <a href=\"https://cubic-bezier.com/#.17,.67,.83,.67\">siguiente enlace</a> te dejo como puedes crear la tuya propia.</p>\n <span>INARVIS</span> info@inarvis.com\n\n <img src=\"https://www.inarvis.com/wp-content/uploads/2019/06/logo-inarvis-monta%C3%B1a.svg\" alt=\"logo-inarvis-montaña.svg\" />\n\n<pre>&lt;div class=\"example-container center\"&gt;\n  &lt;div class=\"flip-card\"&gt;\n    &lt;div class=\"flip-card-inner\"&gt;\n      &lt;div class=\"flip-card-front center\"&gt;\n        &lt;span&gt;INARVIS&lt;/span&gt;\n        &lt;small&gt;info@inarvis.com&lt;/small&gt;\n      &lt;/div&gt;\n      &lt;div class=\"flip-card-back center\"&gt;\n        &lt;img src=\"https://www.inarvis.com/wp-content/uploads/2019/06/logo-inarvis-montaña.svg\" width=\"150px\"&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;</pre><pre>.example-container {\n  width: 100%;\n}\n\n.flip-card {\n  width: 275px;\n  height: 275px;\n  perspective: 1000px; /* Así podemos apreciar el giro de la carta. Aplica la perspectiva en el plano Z. */\n}\n\n.flip-card-inner {\n  width: 100%;\n  height: 100%;\n  transition: all 0.5s ease-in;\n  transform-style: preserve-3d; /* Importante para que los hijos mantengan la posición 3D. */\n  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\n}\n\n.flip-card:hover .flip-card-inner {\n  transform: rotateY(180deg);\n  cursor: pointer;\n}\n\n.flip-card-front, .flip-card-back {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  backface-visibility: hidden;\n}\n\n.flip-card-front {\n  background-color: #3d3e4b;\n  color: #ff9421;\n  display: flex;\n  flex-direction: column;\n}\n\n.flip-card-front span{\n  font-size: 2.5em;\n  font-weight: bold;\n  font-family: 'Poppins';\n}\n\n.flip-card-back {\n  background-color: #3d3e4b;\n  color: white;\n  transform: rotateY(180deg);\n}</pre><h2><strong>Otras propiedades interesantes</strong></h2><p>Existen otras propiedades de CSS que no son tan conocidas y que son de gran utilidad.</p><h3><strong>Como optimizar la precarga de fuentes</strong></h3><p>Te habrás dado cuenta que en muchas páginas el <strong>texto tarda mucho tiempo en cargar</strong> del todo, y eso <em>no es bueno</em> para el usuario. Si tardamos demasiado en mostrar contenido, corremos el riesgo de que el usuario salga de nuestra página.</p><p>Gracias a <a href=\"https://www.zachleat.com/web/font-checklist/\">esta guía</a> hemos podido <strong>reducir considerablemente</strong> el tiempo de muestra y carga de las fuentes. En resumen, podemos reducir los tiempos de carga siguiendo los pasos de esta lista:</p>\n<a>\n<span><span></span></span><span><strong>Debemos priorizar la descarga</strong> de fuentes cuanto antes. Esto lo podemos conseguir con el atributo <strong>rel=’preload’</strong>.</span>\n</a><a>\n<span><span></span></span><span>Debemos usar la declaración <strong>@font-face</strong> para definir nuestras fuentes y reducir los tiempos de renderizado de las fuentes.</span>\n</a><a>\n<span><span></span></span><span><strong>Debemos mostrar el texto</strong> lo antes posible sin importar que nuestra fuente este cargada. Queremos evitar a toda costa que el <strong>texto sea invisible</strong>. Entonces, usando La propiedad <strong>font-display: swap</strong> <em><strong>dentro del font-face</strong></em> cumplimos con este requisito.</span>\n</a><a>\n<span><span></span></span><span><strong>Debemos usar un formato</strong> que permita una <strong>alta compresión</strong> para reducir los tiempos de carga. En este caso, la extensión <strong>WOFF2</strong> es ideal.</span>\n</a>\n<p>Con todo esto, el resultado final nos quedaría algo parecido a lo siguiente.</p><pre>&lt;link rel=\"preload\" as=\"font\" href=\"(ruta-fichero).woff2\" type=\"font/woff2\" crossorigin /&gt;</pre><pre>@font-face {\n  font-family: 'Poppins';\n  font-display: swap; /* El navegador utiliza la fuente por defecto hasta que la fuente se descargue por completo */\n  font-style: 'normal';\n  font-weight: bold;\n  src: url(&lt;ruta-fichero&gt;.woff2);\n}</pre><h3><strong>Selectores de atributos</strong></h3><p>Estos selectores se utilizan junto a una <em>expresión regular</em> para filtrar elementos muy concretos.</p>\n<a>\n<span><span></span></span><span><strong>[</strong><em><strong>atributo</strong></em><strong>=</strong><em><strong>valor</strong></em><strong>]</strong> selecciona los elementos cuyo atributo coincida con el valor.</span>\n</a><a>\n<span><span></span></span><span><strong>[</strong><em><strong>atributo</strong></em><strong>~=</strong><em><strong>valor</strong></em><strong>]</strong> selecciona los elementos cuyo atributo al menos contenga el valor dentro de una lista de palabras separadas por espacios.</span>\n</a><a>\n<span><span></span></span><span><strong>[</strong><em><strong>atributo</strong></em><strong>|=</strong><em><strong>valor</strong></em><strong>]</strong> selecciona los elementos cuyo atributo tenga exactamente el valor o empiece por seguido de un guion.</span>\n</a><a>\n<span><span></span></span><span><strong>[</strong><em><strong>atributo</strong></em><strong>^=</strong><em><strong>valor</strong></em><strong>]</strong> selecciona aquellos elementos <strong>empiezan</strong> con el valor del atributo.</span>\n</a><a>\n<span><span></span></span><span><strong>[</strong><em><strong>atributo</strong></em><strong>$=</strong><em><strong>valor</strong></em><strong>]</strong> selecciona aquellos elementos <strong>terminan</strong> con el valor del atributo.</span>\n</a><a>\n<span><span></span></span><span><strong>[</strong><em><strong>atributo</strong></em><strong>*=</strong><em><strong>valor</strong></em><strong>]</strong> selecciona aquellos elementos <strong>contienen</strong> con el valor del atributo.</span>\n</a>\n<pre>&lt;ul&gt;\n  &lt;li&gt;\n    &lt;a target=\"_blank\"&gt;\n      Todo sobre el enlace nofollow\n    &lt;/a&gt;\n  &lt;/li&gt;\n  &lt;li class=\"second-item\"&gt;\n    Descubre como hacer animaciones con css\n  &lt;/li&gt;\n&lt;/ul&gt;</pre><pre>[target=\"_blank\"]::after {\n  content: '\\2197';\n  font-weight: bold;\n}\n\n[class|=\"second\"] {\n  list-style-type: upper-roman;\n}</pre><ul style=\"margin:0 0 20px 40px;\"><li> <a href=\"https://www.inarvis.com/blog/rel-nofollow-noopener-y-noreferrer-diferencias-y-utilidades/\">Todo sobre el enlace nofollow </a>\n</li>\n<li> <a href=\"https://www.inarvis.com/blog/css-guia-definitiva/#12--animaciones-\"> Descubre como hacer animaciones con css </a>\n</li>\n</ul><h3><strong>Clip path</strong></h3><p>Esta propiedad permite ocultar partes de una imagen creando formas complejas. Habitualmente se utiliza en imágenes o contenedores.</p>\n\n\n\n<pre>&lt;div class=\"clip-examples\"&gt;\n  &lt;div class=\"clip-example-1\"&gt;&lt;/div&gt;\n  &lt;div class=\"clip-example-2\"&gt;&lt;/div&gt;\n  &lt;div class=\"clip-example-3\"&gt;&lt;/div&gt;\n&lt;/div&gt;\n</pre><pre>.clip-examples {\n  display: flex;\n  justify-content: space-around;\n}\n\n.clip-examples div {\n  width: 4em;\n  height: 4em;\n}\n\n.clip-example-1 {\n  background-color: red;\n  -webkit-clip-path: circle(50.0% at 50% 50%);\n  clip-path: circle(50.0% at 50% 50%);\n}\n\n.clip-example-2 {\n  background-color: green;\n  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);\n  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);\n}\n\n.clip-example-3 {\n  background-color: #29B6F6;\n  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);\n  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);\n}</pre><p>Si quieres saber más sobre esta propiedad, visita <a href=\"https://bennettfeely.com/clippy/\">este enlace</a>.</p> <span>Si te ha gustado, compártelo en las redes sociales!</span> <span>Twitter</span>  <span>LinkedIn</span>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 683109,
+			"parentId": 0,
+			"url": "http://anna.borsaendeks.com/the-problem-with-font-display-and-reflow-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "http://anna.borsaendeks.com/author/admin/"
+			},
+			"date": "2019-09-03T13:03:53.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 810750,
+			"parentId": 0,
+			"url": "https://twitter.com/ReyTheDev/status/1272551866409324547",
+			"author": {
+				"name": "Rey van den Berg",
+				"url": "https://twitter.com/ReyTheDev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2b4ea460ac5992579505bba8ff82849bbd819ecb66d607d0d80ce51af7591ad3.jpg"
+			},
+			"date": "2020-06-15T15:29:42.000Z",
+			"content": "Are you a <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a>?💻\nThen you probably use web fonts!\nNow... are you optimizing your font load strategy for better <a href=\"https://twitter.com/search?q=%23performance\">#performance</a>?🚀\n\nUse this <a href=\"https://twitter.com/search?q=%23checklist\">#checklist</a> by the font master, <a href=\"https://twitter.com/zachleat\">@zachleat</a>, to make sure you're headed in the right direction✅\n\n<a href=\"https://twitter.com/search?q=%23css\">#css</a> <a href=\"https://twitter.com/search?q=%23webperf\">#webperf</a>\n<a href=\"https://www.zachleat.com/web/font-checklist/\">zachleat.com/web/font-check…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 868123,
+			"parentId": 0,
+			"url": "https://twitter.com/zellwk/status/1313856949138591751",
+			"author": {
+				"name": "Zell Liew 🤗",
+				"url": "https://twitter.com/zellwk",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af0bfebb0518606cc9a404a4a58d106ead4103ebfbe717e644438690dd497611.jpg"
+			},
+			"date": "2020-10-07T15:01:21.000Z",
+			"content": "Let me do what I do best here: Make scary things approachable and friendly :) \n\n@zachleat Ok with viewing a preview (when I'm done) before I release the post to the public?\n<a class=\"u-mention\" href=\"https://twitter.com/swyx\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 868124,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1313857249870254085",
+			"author": {
+				"name": "Zach Leatherman (away)",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2020-10-07T15:02:33.000Z",
+			"content": "(sounds good!)\n<a class=\"u-mention\" href=\"https://twitter.com/swyx\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zellwk\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 958965,
+			"parentId": 0,
+			"url": "https://speckyboy.com/100-css-libraries-frameworks-tools/",
+			"author": {},
+			"date": "2020-12-22T18:20:12.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1006043,
+			"parentId": 0,
+			"url": "https://twitter.com/leeerob/status/1354478954569203716",
+			"author": {
+				"name": "Lee Robinson",
+				"url": "https://twitter.com/leeerob",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8f677bd826244795cdc1754c9a5938087c6523d24836f78c9f773ce54b5d8242.jpg"
+			},
+			"date": "2021-01-27T17:18:42.000Z",
+			"content": "Thank you for your posts on web fonts 🙏 They really helped me learn and understand all the tradeoffs.\n<a class=\"u-mention\" href=\"https://twitter.com/jodydonetti\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/lachlanjc\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1006112,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1354487092525588489",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-01-27T17:51:02.000Z",
+			"content": "Yay! I’m really glad to see someone picking up the torch there 🏆\n<a class=\"u-mention\" href=\"https://twitter.com/jodydonetti\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/lachlanjc\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/leeerob\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1122780,
+			"parentId": 0,
+			"url": "https://twitter.com/448jp/status/1382866330404130818",
+			"author": {
+				"name": "沖 良矢｜世路庵",
+				"url": "https://twitter.com/448jp",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5afd3d768cc3da9e47a3ab67c9c3ac63f0f4bd621fe817d03ab1446a086a37fc.jpg"
+			},
+			"date": "2021-04-16T01:20:00.000Z",
+			"content": "Webフォントを使うときのチェックリスト。\n\n1. プリロードする\n2. 常にテキストを読み取れるようにする\n3. フォントのファイルサイズを小さくする\n4. ページ読み込み後の再描画を最適化する\n\n<a href=\"https://www.zachleat.com/web/font-checklist/\">zachleat.com/web/font-check…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1143864,
+			"parentId": 0,
+			"url": "https://kryptonsolid.com/novedades-para-disenadores-octubre-de-2018/",
+			"author": {},
+			"date": "2021-05-04T08:06:48.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1161881,
+			"parentId": 0,
+			"url": "https://flmarket.ru/5-shagov-k-bystrym-veb-shriftam-blog-kompanii-timeweb-habr/",
+			"author": {},
+			"date": "2021-05-18T09:51:44.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1534449,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1578398604322013184",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-10-07T14:55:27.000Z",
+			"content": "this is the best advice I can give you: <a href=\"https://www.zachleat.com/web/font-checklist/\">zachleat.com/web/font-check…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/lyeuhm\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534425,
+			"parentId": 0,
+			"url": "https://twitter.com/lyeuhm/status/1578399096716623877",
+			"author": {
+				"name": "laim 🎃",
+				"url": "https://twitter.com/lyeuhm",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/49e9e5eda9b8d60772dd7af7a2eecf7e29f152f485c162b7b5c65a6f25898a6e.jpg"
+			},
+			"date": "2022-10-07T14:57:24.000Z",
+			"content": "I've done none of these so, great starting point. 🤣 Thanks Zach &lt;3\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1534450,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1578399433351483395",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-10-07T14:58:44.000Z",
+			"content": "haha\n<a class=\"u-mention\" href=\"https://twitter.com/lyeuhm\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1578924,
+			"parentId": 0,
+			"url": "https://speckyboy.com/weekly-news-for-designers-454/",
+			"author": {},
+			"date": "2022-12-11T11:03:20.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1588403,
+			"parentId": 0,
+			"url": "https://guidetraffic.net/nha-phat-trien-front-end-phai-quan-ly-trai-nghiem-tai",
+			"author": {},
+			"date": "2022-12-29T00:16:42.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1644339,
+			"parentId": 0,
+			"url": "https://www.seleqt.net/design/100-css-libraries-frameworks-tools/",
+			"author": {},
+			"date": "2023-03-19T23:02:05.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 868125,
+			"url": "https://twitter.com/zachleat/status/1313837732649734145#favorited-by-249045231",
+			"date": "2020-10-07T15:46:51.000Z",
+			"author": {
+				"name": "Zell Liew 🤗",
+				"url": "https://twitter.com/zellwk",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af0bfebb0518606cc9a404a4a58d106ead4103ebfbe717e644438690dd497611.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 869382,
+			"url": "https://twitter.com/zachleat/status/1313837732649734145#favorited-by-49285959",
+			"date": "2020-10-08T17:58:25.000Z",
+			"author": {
+				"name": "Maëlig",
+				"url": "https://twitter.com/MaelB",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e4f97ea67d5e0ae5a44ee2b7d3f4830529f80eb47f8105871d6e0d8531ef8fc0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1005997,
+			"url": "https://twitter.com/zachleat/status/1354456775676850177#favorited-by-350790747",
+			"date": "2021-01-27T16:29:18.000Z",
+			"author": {
+				"name": "Jody Donetti",
+				"url": "https://twitter.com/jodydonetti",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8816c441f151bac11013a28ac6ea5ad55d717bbe9b9d85d68b736bc6cb0f9468.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1005998,
+			"url": "https://twitter.com/zachleat/status/1354456775676850177#favorited-by-2464774904",
+			"date": "2021-01-27T16:29:18.000Z",
+			"author": {
+				"name": "Lachlan Campbell",
+				"url": "https://twitter.com/lachlanjc",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e58532149cf2eff5d8e780a8f7fb3281ebe1d85a0ffc27aed15dc24f3f3c37e1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1005999,
+			"url": "https://twitter.com/zachleat/status/1354456775676850177#favorited-by-98734097",
+			"date": "2021-01-27T16:29:24.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://twitter.com/piccalilli_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a9e864b2d0a4c0357059dd6ade845d8bafc5919ab6b9c07b81b0c5fdb6ced87c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1006042,
+			"url": "https://twitter.com/zachleat/status/1354456775676850177#favorited-by-81712767",
+			"date": "2021-01-27T17:47:00.000Z",
+			"author": {
+				"name": "Lee Robinson",
+				"url": "https://twitter.com/leeerob",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8f677bd826244795cdc1754c9a5938087c6523d24836f78c9f773ce54b5d8242.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1534426,
+			"url": "https://twitter.com/zachleat/status/1578398604322013184#favorited-by-80359087",
+			"date": "2022-10-07T14:57:51.000Z",
+			"author": {
+				"name": "laim 🎃",
+				"url": "https://twitter.com/lyeuhm",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/49e9e5eda9b8d60772dd7af7a2eecf7e29f152f485c162b7b5c65a6f25898a6e.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

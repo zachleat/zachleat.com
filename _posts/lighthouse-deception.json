@@ -1,0 +1,2218 @@
+{
+	"comments": [
+		{
+			"id": 1290030,
+			"parentId": 0,
+			"url": "https://lzomedia.com/blog/the-art-of-deception-lighthouse-score-edition/",
+			"author": {},
+			"date": "2021-10-15T03:23:33.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1290241,
+			"parentId": 0,
+			"url": "https://twitter.com/MVSde/status/1448891562151272470",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://twitter.com/MVSde",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7a9a5c1cb7cc62dcda0827053eb3179802b605ed71bf70a1f6a6ad2760e413d6.jpg"
+			},
+			"date": "2021-10-15T06:00:42.000Z",
+			"content": "Lighthouse is a fantastic tool but it can be gamed or produce unrealistic data, be it intentionally or by mistake. <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1290675,
+			"parentId": 0,
+			"url": "https://twitter.com/joelgoodman/status/1449009637043445764",
+			"author": {
+				"name": "Joel G Goodman",
+				"url": "https://twitter.com/joelgoodman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/88d1a674f7ce2b99ac566179f4738b5c53bb8fae2e727520914de71625fa3100.jpg"
+			},
+			"date": "2021-10-15T13:49:53.000Z",
+			"content": "Great level-setting for how we should talk about performance testing results.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/lighthouse-deception/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1290674,
+			"parentId": 0,
+			"url": "https://twitter.com/jimniels/status/1449009959778222083",
+			"author": {
+				"name": "Jim Nielsen",
+				"url": "https://twitter.com/jimniels",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/44728920f07defc757fb7b8277972def0e464c56e1a2434bac650dc2e92334e7.jpg"
+			},
+			"date": "2021-10-15T13:51:10.000Z",
+			"content": "This is great. Zach’s 4 “evil tips” feel more like a documentation of 4 “industry standard practices”. \n\nPosting lighthouse scores on Twitter is the lifestyle influencing of Instagram: a dreamy facade depicting a reality from which it is, ironically, entirely divorced.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/lighthouse-deception/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1290673,
+			"parentId": 0,
+			"url": "https://twitter.com/jimniels/status/1449009959778222083",
+			"author": {
+				"name": "Jim Nielsen",
+				"url": "https://twitter.com/jimniels",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/44728920f07defc757fb7b8277972def0e464c56e1a2434bac650dc2e92334e7.jpg"
+			},
+			"date": "2021-10-15T13:51:10.000Z",
+			"content": "This is great. Zach’s 4 “evil tips” feel more like a documentation of 4 “industry standard practices”. \n\nPosting lighthouse scores on Twitter is the lifestyle influencing of Instagram: a dreamy facade depicting a reality from which it is, ironically, entirely divorced.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/lighthouse-deception/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1290698,
+			"parentId": 0,
+			"url": "https://twitter.com/santi_cros/status/1449015456703057922",
+			"author": {
+				"name": "Santi Cros",
+				"url": "https://twitter.com/santi_cros",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/26ed32e491d7c8af9fca0ba78853671fee1f94dc85d8ccf4df3d404c84566c7b.jpg"
+			},
+			"date": "2021-10-15T14:13:00.000Z",
+			"content": "Great article Zach. One thing I do is to check the Lighthouse score on <a href=\"http://web.dev/measure\">web.dev/measure</a> so my computer doesn't affect the results :)\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1290700,
+			"parentId": 0,
+			"url": "https://twitter.com/santi_cros/status/1449015962905239555",
+			"author": {
+				"name": "Santi Cros",
+				"url": "https://twitter.com/santi_cros",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/26ed32e491d7c8af9fca0ba78853671fee1f94dc85d8ccf4df3d404c84566c7b.jpg"
+			},
+			"date": "2021-10-15T14:15:01.000Z",
+			"content": "And still there's some variation even if you run it repeatedly:s\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1290699,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1449016222545293312",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-10-15T14:16:03.000Z",
+			"content": "Yeah! Great point. I should add a note about that and <a href=\"https://developers.google.com/speed/pagespeed/insights/\">developers.google.com/speed/pagespee…</a> as a way to avoid hardware variability (though these don’t solve the other variability issues, in my experience).\n<a class=\"u-mention\" href=\"https://twitter.com/santi_cros\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1290701,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1449016389604413446",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-10-15T14:16:43.000Z",
+			"content": "jinx! 🏆\n<a class=\"u-mention\" href=\"https://twitter.com/santi_cros\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1290697,
+			"parentId": 0,
+			"url": "https://twitter.com/bjankord/status/1449018902554587142",
+			"author": {
+				"name": "Brett Jankord",
+				"url": "https://twitter.com/bjankord",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0459a5e91b5faee47225b63ef74aa36bd756bd3aaaa93d938a90faafcd52a058.jpg"
+			},
+			"date": "2021-10-15T14:26:42.000Z",
+			"content": "I’ve been a fan of using <a href=\"http://web.dev/measure\">web.dev/measure</a> to collect metrics and averaging out scores over multiple runs. It allows us to reduce some variability around network speeds and hardware as we offload it to Google. They throttle it down to fast 3g speeds and 4x slowdown on CPU.\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1290712,
+			"parentId": 0,
+			"url": "https://twitter.com/JonathanDHolden/status/1449022665491157027",
+			"author": {
+				"name": "Jonathan Holden",
+				"url": "https://twitter.com/JonathanDHolden",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b37c677eef1aa9d3f6cb86686f11bffcf8d9e1d0ba0a74c4c3adc7a5468db43e.jpg"
+			},
+			"date": "2021-10-15T14:41:39.000Z",
+			"content": "Interesting about speed... But how do you account for the different a11y scores in the first 2 images?\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1290734,
+			"parentId": 0,
+			"url": "https://twitter.com/briankardell/status/1449027691433320448",
+			"author": {
+				"name": "bkardell",
+				"url": "https://twitter.com/briankardell",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3f354ef071e29b979dd215c0c3e87dbfcc63dc4ef03b075556c37e6b03d176d0.jpeg"
+			},
+			"date": "2021-10-15T15:01:37.000Z",
+			"content": "Yeah, it would be great to ack that in the document somehow - I was suprised it wasn't mentioned because they do seem to vary. I would guess the answer is \"one has more DOM loaded at the time of measure\" or \"the screen size has diff responsive elements hidden/shown\"\n<a class=\"u-mention\" href=\"https://twitter.com/JonathanDHolden\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1290733,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1449031237197344772",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2021-10-15T15:15:43.000Z",
+			"content": "Good question! I didn’t update anything on the old MacBook before running the test—so the versions of Chrome are different. Worth re-running on a newer version of Chrome with the old hardware to test though\n<a class=\"u-mention\" href=\"https://twitter.com/JonathanDHolden\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1290757,
+			"parentId": 0,
+			"url": "https://twitter.com/codepo8/status/1449040931357958148",
+			"author": {
+				"name": "Chris Heilmann",
+				"url": "https://twitter.com/codepo8",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0eb944c23ebf6172e3bdf2b6d210afb30c0d19a90752469c31a2e470d4d5d577.jpg"
+			},
+			"date": "2021-10-15T15:54:14.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1290794,
+			"parentId": 0,
+			"url": "https://twitter.com/__alexander_/status/1449046653399355396",
+			"author": {
+				"name": "Alexander",
+				"url": "https://twitter.com/__alexander_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/63f6a45317342673ab3ac0b3000f0dd9d936ad38b0acd6c845a66cf8967c0f18.png"
+			},
+			"date": "2021-10-15T16:16:58.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition: <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a> <a href=\"https://twitter.com/search?q=%23webperf\">#webperf</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1290954,
+			"parentId": 0,
+			"url": "https://twitter.com/pablolarah/status/1449113557107449867",
+			"author": {
+				"name": "Pablo Lara H",
+				"url": "https://twitter.com/pablolarah",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9a8b209d6d0e2dd068ad8e9cd247a0b247b0b42d0ae6aa497b84900e35019931.jpg"
+			},
+			"date": "2021-10-15T20:42:49.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition by Zach Leatherman <a href=\"https://twitter.com/zachleat\">@zachleat</a>  \nFour evil tips you might be unintentionally using when communicating about lighthouse scores.\n<a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a> <a href=\"https://twitter.com/search?q=%23webperf\">#webperf</a>  <a href=\"https://twitter.com/search?q=%23Lighthouse\">#Lighthouse</a> \n\n<a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1290962,
+			"parentId": 0,
+			"url": "https://twitter.com/frontender_ua/status/1449133067885502470",
+			"author": {
+				"name": "Fresh Frontend Links",
+				"url": "https://twitter.com/frontender_ua",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c5048a0ddd46ec12573f95b7ce1fcb65fb8518b24d6bc010e8c8ab72596fc96d.png"
+			},
+			"date": "2021-10-15T22:00:21.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1291009,
+			"parentId": 0,
+			"url": "https://twitter.com/apopoutsis/status/1449150782452994050",
+			"author": {
+				"name": "Alex Popoutsis",
+				"url": "https://twitter.com/apopoutsis",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d589c4569a81781a91d5e379a3e6e2797eabaf0d8cd2e74e6fb6dbe0a319618f.jpg"
+			},
+			"date": "2021-10-15T23:10:45.000Z",
+			"content": "Good reminders here:\n\nLighthouse is not perfect.\nIt's not the end all be all.\nDon't overstate it's importance, and definitely don't game your score.\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/lighthouse-deception/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1291092,
+			"parentId": 0,
+			"url": "https://twitter.com/jackyef__/status/1449184838389362690",
+			"author": {
+				"name": "Jacky Efendi",
+				"url": "https://twitter.com/jackyef__",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dd5cd8b29e59a582c6774846d5b7a3b3438f0f71183b114a74f100eef2faae49.jpg"
+			},
+			"date": "2021-10-16T01:26:04.000Z",
+			"content": "Alternative title:\n\n4 tips to achieve your lighthouse-related OKRs\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/lighthouse-deception/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1292707,
+			"parentId": 0,
+			"url": "https://twitter.com/fridayfrontend/status/1450144925429948425",
+			"author": {
+				"name": "Friday Front-End",
+				"url": "https://twitter.com/fridayfrontend",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/855b6918a24f0b54d1366b6d3ed735bcf41580e64169aeb29872229b6e37b1d1.jpg"
+			},
+			"date": "2021-10-18T17:01:07.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition, by <a href=\"https://twitter.com/zachleat\">@zachleat</a> <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1293850,
+			"parentId": 0,
+			"url": "https://reportwire.org/2021/10/20/the-art-of-deception-lighthouse-score-edition-zachleat-com/",
+			"author": {},
+			"date": "2021-10-20T07:57:14.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1293983,
+			"parentId": 0,
+			"url": "https://twitter.com/webstandards_ru/status/1450793968158101512",
+			"author": {
+				"name": "Веб-стандарты",
+				"url": "https://twitter.com/webstandards_ru",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ff2f2f01750c33798a4e7aa97ed3ac505d2cec68daa231baa5ec7da51f070310.jpg"
+			},
+			"date": "2021-10-20T12:00:11.000Z",
+			"content": "Искусство обмана. Зак Лезерман делится вредными советами, как получить высокий рейтинг в Lighthouse, когда на самом деле производительность сайта страдает.\n\n<a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1294146,
+			"parentId": 0,
+			"url": "https://twitter.com/matcasner/status/1450869990022860805",
+			"author": {
+				"name": "Mat Casner : Designer : Freelancer : Coach",
+				"url": "https://twitter.com/matcasner",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20d9c8c2e063ed66b2fc754361da0548e39fd9d62a48802977ab422b572a7fa1.jpg"
+			},
+			"date": "2021-10-20T17:02:16.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition freelanceonfire <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1294148,
+			"parentId": 0,
+			"url": "https://twitter.com/kundukundu/status/1450871945419964426",
+			"author": {
+				"name": "Chiyana Simões ",
+				"url": "https://twitter.com/kundukundu",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0badf7fee26ed2ba8d97bb8cb8bf77fcfb1250de08bf876c7cc357b5413da7cc.jpg"
+			},
+			"date": "2021-10-20T17:10:02.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/lighthouse-deception/?ref=sidebar\">zachleat.com/web/lighthouse…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1294145,
+			"parentId": 0,
+			"url": "https://twitter.com/malimirkeccita/status/1450874205457854469",
+			"author": {
+				"name": "Silvestar Bistrović 🤘",
+				"url": "https://twitter.com/malimirkeccita",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a44270e952dbe30505311f69939eba3aff4fd2455230d8ef89fcb87ee3fa73df.jpg"
+			},
+			"date": "2021-10-20T17:19:01.000Z",
+			"content": "👉 The art of deception, Lighthouse score edition\n\n💬 Zach Leatherman explains the possibilities to manipulate the Lighthouse score and how to avoid common mistakes.\n\n<a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a> via <a href=\"https://twitter.com/zachleat\">@zachleat</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1294144,
+			"parentId": 0,
+			"url": "https://twitter.com/elixirgraphics/status/1450891389114388484",
+			"author": {
+				"name": "Adam Shiver",
+				"url": "https://twitter.com/elixirgraphics",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c7f8ecef25b4ff8390e47ee90a6d6c9bae7365e1824cf06f6464e432988147ea.jpg"
+			},
+			"date": "2021-10-20T18:27:18.000Z",
+			"content": "THE ART OF DECEPTION, LIGHTHOUSE SCORE EDITION: <a href=\"https://www.zachleat.com/web/lighthouse-deception/?ref=sidebar\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1294327,
+			"parentId": 0,
+			"url": "http://studioxrio.org/en/web-design/the-art-of-deception-lighthouse-score-edition-zachleat-com/",
+			"author": {},
+			"date": "2021-10-21T03:36:08.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1294472,
+			"parentId": 0,
+			"url": "https://twitter.com/IrinaTheNerd/status/1451123548735553536",
+			"author": {
+				"name": "Irina the Nerd 🐻",
+				"url": "https://twitter.com/IrinaTheNerd",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a5dabb8db4ad4e8a375261bc6bb1a957d84bedf0a84058ba3c140baf9e1a0ef7.jpg"
+			},
+			"date": "2021-10-21T09:49:49.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a> via <a href=\"https://twitter.com/frontendfront\">@frontendfront</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1294499,
+			"parentId": 0,
+			"url": "https://twitter.com/CookieDuster_N/status/1451134282706165762",
+			"author": {
+				"name": "Nebojsa (Cookie Duster)",
+				"url": "https://twitter.com/CookieDuster_N",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/27cac96bdb0493a81fc534b38214407ac7f4fd0ea247f9c9aba1775c0e72a8cd.jpg"
+			},
+			"date": "2021-10-21T10:32:28.000Z",
+			"content": "You can game your Lighthouse score with simple tricks but don't do it. \n<a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>\nawesome take from <a href=\"https://twitter.com/zachleat\">@zachleat</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1295021,
+			"parentId": 0,
+			"url": "https://twitter.com/james_evers/status/1451499711060381696",
+			"author": {
+				"name": "James Evers-Swindell",
+				"url": "https://twitter.com/james_evers",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/585a939c1126bef90eeec1a43d1d66eb435b8f5567fa1dc34b53f0be3718084f.jpg"
+			},
+			"date": "2021-10-22T10:44:33.000Z",
+			"content": "I'm a bit late to the party on this one, but <a href=\"https://twitter.com/zachleat\">@zachleat</a> article The Art of Deception, Lighthouse Score Edition raises some interesting points about the transparency and accuracy of Lighthouse performance tests when presented to us with limited context.\n\n<a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1295294,
+			"parentId": 0,
+			"url": "https://twitter.com/hn_frontpage/status/1451757459706716162",
+			"author": {
+				"name": "HN Front Page",
+				"url": "https://twitter.com/hn_frontpage",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f62929d0a92700ab725c84e5ab3bef64ae5cfc1d462934d3eb81ae6559c63412.png"
+			},
+			"date": "2021-10-23T03:48:45.000Z",
+			"content": "The Art of Deception, Lighthouse score edition\nL: <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>\nC: <a href=\"https://news.ycombinator.com/item?id=28933346\">news.ycombinator.com/item?id=289333…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1295157,
+			"parentId": 0,
+			"url": "https://twitter.com/winsontang/status/1451758924093292550",
+			"author": {
+				"name": "Winson Tang",
+				"url": "https://twitter.com/winsontang",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a4b4ceb1e1566f3e65d866ac64d8d7c1d615f927ebd0c31a7395b8fe5d2be852.jpg"
+			},
+			"date": "2021-10-23T03:54:34.000Z",
+			"content": "The Art of Deception, Lighthouse score edition <a href=\"https://www.zachleat.com/web/lighthouse-deception/?utm_source=dlvr.it&amp;utm_medium=twitter\">zachleat.com/web/lighthouse…</a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/lighthouse-deception/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1295156,
+			"parentId": 0,
+			"url": "https://twitter.com/HNTweets/status/1451760301741940738",
+			"author": {
+				"name": "Hacker News",
+				"url": "https://twitter.com/HNTweets",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bd356e0cf7174aed2286323e5c0af0fbd2ba52cddb77eadd4520eb5f7f4a27b8.png"
+			},
+			"date": "2021-10-23T04:00:02.000Z",
+			"content": "The Art of Deception, Lighthouse score edition: <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a> Comments: <a href=\"https://news.ycombinator.com/item?id=28933346\">news.ycombinator.com/item?id=289333…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1295369,
+			"parentId": 0,
+			"url": "https://twitter.com/angsuman/status/1451995936763236357",
+			"author": {
+				"name": "Angsuman Chakraborty",
+				"url": "https://twitter.com/angsuman",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/494c7f1285a22807d72209ceeda7cb1ff8a4c9840751c5ca69597a784f71255d.jpg"
+			},
+			"date": "2021-10-23T19:36:22.000Z",
+			"content": "The Art of Deception, Lighthouse score edition <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1295940,
+			"parentId": 0,
+			"url": "https://twitter.com/FrontendDaily/status/1452797881858023427",
+			"author": {
+				"name": "Frontend Daily 🚀",
+				"url": "https://twitter.com/FrontendDaily",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/04a27cee1ca1fb33ce217596782beb0ee613f89ca43be3b35d6a97a1437e1cd6.jpg"
+			},
+			"date": "2021-10-26T00:43:01.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition: <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1296805,
+			"parentId": 0,
+			"url": "https://twitter.com/frontendfront/status/1453421244704075776",
+			"author": {
+				"name": "Front-End Front",
+				"url": "https://twitter.com/frontendfront",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ebcdc52ad3935f268ed868113d323590fc49b297a8dee99f861013e7b6d44543.png"
+			},
+			"date": "2021-10-27T18:00:02.000Z",
+			"content": "The Art of Deception, Lighthouse Score Edition <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1297293,
+			"parentId": 0,
+			"url": "https://twitter.com/devGregory/status/1453915245194452994",
+			"author": {
+				"name": "Gregory Hammond",
+				"url": "https://twitter.com/devGregory",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a250f7d075f6a7aaa064d41188e1ef73e161469eefe04ebbe0f0b8148db450b9.jpg"
+			},
+			"date": "2021-10-29T02:43:01.000Z",
+			"content": "Lighthouse scores. Many people who work on websites value them, and the higher the better.\nBut those scores are subjective based on things that don't have to do with your website, as <a href=\"https://twitter.com/zachleat\">@zachleat</a> explains in a blog post on his site at <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>\nvia/ <a href=\"https://twitter.com/perfemail\">@perfemail</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1299277,
+			"parentId": 0,
+			"url": "https://twitter.com/iwbjp/status/1455819000949051392",
+			"author": {
+				"name": "iwbjp",
+				"url": "https://twitter.com/iwbjp",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ced8223c7ce447683062cce4ca86aa7ac7ed76600efb356729cf9d1c945dc7ac.png"
+			},
+			"date": "2021-11-03T08:47:52.000Z",
+			"content": "M1のMacBookだと性能が高いのでLighthouseで計測したスコアが他のパソコンより良くなるのではないかと考えたことはあるが、やはりそうなるのか。💻 <a href=\"https://twitter.com/search?q=%23Lighthouse\">#Lighthouse</a> \n<a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1299471,
+			"parentId": 0,
+			"url": "https://twitter.com/siennawebdesign/status/1455972000300666885",
+			"author": {
+				"name": "Sienna Web Designs",
+				"url": "https://twitter.com/siennawebdesign",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/70e50bb13229bc21228080d746930425c0c0935dfa823dbb0a511092be0ca0b8.jpg"
+			},
+			"date": "2021-11-03T18:55:50.000Z",
+			"content": "The Art of Deception, <a href=\"https://twitter.com/search?q=%23Lighthouse\">#Lighthouse</a> Score Edition\n<a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1455366,
+			"parentId": 0,
+			"url": "https://twitter.com/eleven_ty/status/1557380947569426435",
+			"author": {
+				"name": "Eleventy 🎈 2.0.0-canary.14",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg"
+			},
+			"date": "2022-08-10T14:58:47.000Z",
+			"content": "I just mean that statistical variability might be the only thing swapping you between 99 and 100 on performance in lighthouse.\n\nA bit more detail here: <a href=\"https://www.zachleat.com/web/lighthouse-deception/#normal-statistical-variability\">zachleat.com/web/lighthouse…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/polarbirke\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1493990,
+			"parentId": 0,
+			"url": "https://www.reddit.com/r/Frontend/comments/qamzf6/the_art_of_deception_lighthouse_score_edition/",
+			"author": {},
+			"date": "2022-08-26T23:05:46.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1493991,
+			"parentId": 0,
+			"url": "https://www.reddit.com/r/webdev/comments/qamzjk/the_art_of_deception_lighthouse_score_edition/",
+			"author": {},
+			"date": "2022-08-26T23:05:48.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1548742,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1587467325422411778",
+			"author": {
+				"name": "Zach Leatherman (Away)",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d9711a9ad30ae05a761e4a728883bcbdd852cbf7d41437925b0afc47a8589795.jpg"
+			},
+			"date": "2022-11-01T15:31:18.000Z",
+			"content": "per some of the other discussions in this thread you may be interested in this blog post <a href=\"https://www.zachleat.com/web/lighthouse-deception/\">zachleat.com/web/lighthouse…</a>\n\nok byeeeeeee\n<a class=\"u-mention\" href=\"https://twitter.com/hi__mayank\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1548738,
+			"parentId": 0,
+			"url": "https://twitter.com/hi__mayank/status/1587468016438091776",
+			"author": {
+				"name": "Mayank",
+				"url": "https://twitter.com/hi__mayank",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3b21cb81cc0e74a6d9f4c240e610493125a065d57a100559bfa7c3439b7ba3f2.jpg"
+			},
+			"date": "2022-11-01T15:34:03.000Z",
+			"content": "you have a blogpost for everything!\n\nam i misremembering or did you also have one comparing the per-component bundle cost of various frameworks?\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1548739,
+			"parentId": 0,
+			"url": "https://twitter.com/eleven_ty/status/1587471532544200706",
+			"author": {
+				"name": "Eleventy 🎃🎈 v2.0.0-canary.16",
+				"url": "https://twitter.com/eleven_ty",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg"
+			},
+			"date": "2022-11-01T15:48:01.000Z",
+			"content": "I think this thread would likely be helpful to you!  \n<a class=\"u-mention\" href=\"https://twitter.com/hi__mayank\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1548740,
+			"parentId": 0,
+			"url": "https://twitter.com/hi__mayank/status/1587471887516540929",
+			"author": {
+				"name": "Mayank",
+				"url": "https://twitter.com/hi__mayank",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3b21cb81cc0e74a6d9f4c240e610493125a065d57a100559bfa7c3439b7ba3f2.jpg"
+			},
+			"date": "2022-11-01T15:49:26.000Z",
+			"content": "yes, this is it! 🏆 thank you\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1693461,
+			"parentId": 0,
+			"url": "https://softwaredevblog.tech/2023/07/is-lighthouse-a-deceptive-efficiency-device/",
+			"author": {},
+			"date": "2023-07-07T10:08:43.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1693476,
+			"parentId": 0,
+			"url": "https://softwaredevblog.tech/2023/07/is-lighthouse-a-deceptive-efficiency-device-2/",
+			"author": {},
+			"date": "2023-07-07T11:10:01.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1858595,
+			"parentId": 0,
+			"url": "https://social.dzajew.xyz/@dzajew/statuses/01JCGHSM370GRG78D2BA8KANR9",
+			"author": {
+				"name": "Jakub Iwanowski",
+				"url": "https://social.dzajew.xyz/@dzajew",
+				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/113/087/045/490/338/722/original/2d6aae2ac3c40543.webp"
+			},
+			"date": "2024-11-12T16:02:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span><br />Say what <img alt=\"neocat_surprised_pika_256\" src=\"https://cdn.masto.host/fediversezachleatcom/cache/custom_emojis/images/000/025/648/original/0f7e239ecfff5392.png\" /></p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1858596,
+			"parentId": 0,
+			"url": "https://sunny.garden/@paulhebert/113471162636758313",
+			"author": {
+				"name": "Paul Hebert",
+				"url": "https://sunny.garden/@paulhebert",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cfa9a730f403c6d6bd01bfbce352517fc19e6aac4e3416c77622fabdc6aa3e4b.jpg"
+			},
+			"date": "2024-11-12T17:28:55.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> thanks for writing this Zach!</p><p>On a project a while ago we ran into a lot of headaches trying to compare Lighthouse scores over time to track performance changes. </p><p>Even the difference between running mobile lighthouse tests on a new M1 Macbook and an older Intel-powered Macbook was huge. We ended up having to change our strategy and rely more on tools like webpagetest.org.</p><p>I wish there was more info out there about how device variability impacts these scores!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1859032,
+			"parentId": 0,
+			"url": "https://mastodon.online/@stvfrnzl/113474527490721748",
+			"author": {
+				"name": "Steve Frenzel",
+				"url": "https://mastodon.online/@stvfrnzl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d62b0416ba7a82eb39b43fe89785897b2634a9bd706dfe5349d95f93b3f539ed.jpg"
+			},
+			"date": "2024-11-13T07:44:38.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> loving the evil tips ????????????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1909853,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/tunetheweb.com/post/3lolovqfb2t24",
+			"author": {
+				"name": "Barry Pollard",
+				"url": "https://bsky.app/profile/tunetheweb.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/39e4c7d9b74dac3df01f5fc54d5feaf7f1713c91569f59346464a26f1e8929ff.jpg"
+			},
+			"date": "2025-05-07T15:16:24.000Z",
+			"content": "Many people in web perf community actively rally against the Lighthouse score for these reasons (and others).<br>\n<br>\nI think that&apos;s a little unfair and LH score has it&apos;s use.<br>\n<br>\nBut I always prefer know how users and not a bot experiences a site because it captures so much more.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1909852,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/tunetheweb.com/post/3lolovqfb2s24",
+			"author": {
+				"name": "Barry Pollard",
+				"url": "https://bsky.app/profile/tunetheweb.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/39e4c7d9b74dac3df01f5fc54d5feaf7f1713c91569f59346464a26f1e8929ff.jpg"
+			},
+			"date": "2025-05-07T15:16:24.000Z",
+			"content": "And lab has many issues too—often it&apos;s just a cold load with no interaction. And often only the home page is tested.<br>\n<br>\nNo benefit is given for good caching which is important for subsequent page visits (which should be encouraged).<br>\n<br>\nOn flip side it&apos;s often tricked by rerunning and getting a cache hit",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1909851,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/tunetheweb.com/post/3lolovq5zmk24",
+			"author": {
+				"name": "Barry Pollard",
+				"url": "https://bsky.app/profile/tunetheweb.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/39e4c7d9b74dac3df01f5fc54d5feaf7f1713c91569f59346464a26f1e8929ff.jpg"
+			},
+			"date": "2025-05-07T15:16:24.000Z",
+			"content": "Arguably lab is more comparable if wanting to do that on a pure like for like comparison. But is it right to do that? A plain text page will beat a complex web app in such a perf score but to what end?",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1909854,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lolozw7r422o",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-05-07T15:18:45.000Z",
+			"content": "yeah, that’s frustrating because those sound like fixable problems in LH specifically (to me, an outsider)<br>\n<br>\nbasically we need a new metric that combines lab and field data in this ted talk I will…",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1909850,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lolp3kbzg22o",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-05-07T15:19:39.000Z",
+			"content": "fwiw, in speedlify we use tiebreakers for page weight: <a href=\"https://www.zachleat.com/web/eleventy-leaderboard-speedlify/#the-algorithm-and-tiebreaker-changes\">www.zachleat.com/web/eleventy...</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1909841,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/tunetheweb.com/post/3lolq6gllb324",
+			"author": {
+				"name": "Barry Pollard",
+				"url": "https://bsky.app/profile/tunetheweb.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/39e4c7d9b74dac3df01f5fc54d5feaf7f1713c91569f59346464a26f1e8929ff.jpg"
+			},
+			"date": "2025-05-07T15:39:10.000Z",
+			"content": "It&apos;s impossible for a tool to ever fully simulate a site&apos;s actual usage cause users are weird (and wonderful!) and use a site in oh so many ways, and from so many different conditions (device, network, how many other tabs are open, extensions...etc.)",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2030449,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3muzpbonc7s2d",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm"
+			},
+			"date": "2026-09-08T18:57:43.000Z",
+			"content": "to answer your question, I would say I know some tricks I use to improve web performance as a site scales up in size and complexity — but drawing the line between changes to make a site faster or to game a system to make a score better is an ethics question, at its core",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2030448,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3muzpfvlvjs2d",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm"
+			},
+			"date": "2026-09-08T19:00:05.000Z",
+			"content": "I do absolutely believe that metrics and scores help, if not only for launch but more importantly how the site performs over a longer period of time when dev resources are more scarce for maintenance",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2030446,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3muzpipeal22d",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm"
+			},
+			"date": "2026-09-08T19:01:39.000Z",
+			"content": "I might also point to some personal experiments I’ve been running on speedlify more recently: <a href=\"https://www.speedlify.dev/charts/\">www.speedlify.dev/charts/</a>\n\nspecifically the Lab versus Field LCP chart there",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 2030447,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3muzqu7jkp22w",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm"
+			},
+			"date": "2026-09-08T19:25:59.000Z",
+			"content": "awesome! let me know if you have any more questions, happy to help",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1290663,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-758056",
+			"date": "2021-10-15T14:12:55.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://twitter.com/ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5a02571e30b5ee7d4cf5bdebf69e9ab5d536adfc20d7a5a11016dcb3988d12e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290664,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-10136182",
+			"date": "2021-10-15T14:12:55.000Z",
+			"author": {
+				"name": "Thord D. Hedengren⚡️",
+				"url": "https://twitter.com/tdh",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/95a5e84a76690d3eb19a6c0c8b10b9909efaba05d1f0a6f4ad61d0340a056b5d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290665,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-141811791",
+			"date": "2021-10-15T14:12:57.000Z",
+			"author": {
+				"name": "Jim Nielsen",
+				"url": "https://twitter.com/jimniels",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/44728920f07defc757fb7b8277972def0e464c56e1a2434bac650dc2e92334e7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290666,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-16548548",
+			"date": "2021-10-15T14:12:57.000Z",
+			"author": {
+				"name": "Brantley Harris 🪐",
+				"url": "https://twitter.com/deadwisdom",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/08976084b310cd5b1a41983c7305412f2212de41e0302a065b655dcc61645b5c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290667,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-516438525",
+			"date": "2021-10-15T14:12:58.000Z",
+			"author": {
+				"name": "Max Böck",
+				"url": "https://twitter.com/mxbck",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/18a4e83da23e07a465feab2cd21362105938e9ac05ff774c757bec8f39bf6141.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290668,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-20667366",
+			"date": "2021-10-15T14:12:58.000Z",
+			"author": {
+				"name": "Tim Chase",
+				"url": "https://twitter.com/gumnos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/32f64a1cb8eafcd7e120ce3db07a64e8e9f1f5c0f77fa7859ba4132b84098582.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290669,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-4094721",
+			"date": "2021-10-15T14:12:59.000Z",
+			"author": {
+				"name": "Dana BOOerly 💀",
+				"url": "https://twitter.com/superterrific",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae11da462767995f7225b0a4162a2f6e767ab8f6d21dc9435b22a76aa40568fc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290670,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-58110431",
+			"date": "2021-10-15T14:13:00.000Z",
+			"author": {
+				"name": "Alex (He/Him)",
+				"url": "https://twitter.com/laughnan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ee0bba94f9d67c809dbfcec448dea8da3f00c1eae28682a7996277efd70e69ce.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290671,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-3115345708",
+			"date": "2021-10-15T14:13:00.000Z",
+			"author": {
+				"name": "Prince Wilson",
+				"url": "https://twitter.com/maxcell",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7e1a4ad8b16261fa5ecc44f9113b819b0082691362b06a5a1ce41fa0791ebc1d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290702,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-40922269",
+			"date": "2021-10-15T14:52:01.000Z",
+			"author": {
+				"name": "Brett Jankord",
+				"url": "https://twitter.com/bjankord",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0459a5e91b5faee47225b63ef74aa36bd756bd3aaaa93d938a90faafcd52a058.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290703,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-3305745134",
+			"date": "2021-10-15T14:52:02.000Z",
+			"author": {
+				"name": "Kristofer Koishigawa",
+				"url": "https://twitter.com/kriskoishigawa",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6a2d3aebbf491b64f37e0b26662c9bbb508df6f6ed2fd4330ef2ee118e4b685a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290704,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-18293604",
+			"date": "2021-10-15T14:52:03.000Z",
+			"author": {
+				"name": "ross",
+				"url": "https://twitter.com/RDallaire",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3caa5f540925eb0dce6b433d55334284e8296d64269a7bc0a28a0fe72d751c3b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290705,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-2353817430",
+			"date": "2021-10-15T14:52:04.000Z",
+			"author": {
+				"name": "Osmel",
+				"url": "https://twitter.com/osmel_mora",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/15d57dd0821eb4d3399f061638843f14e0aa19b00de7b7391c9d80c37e8bba63.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290706,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-20070025",
+			"date": "2021-10-15T14:52:05.000Z",
+			"author": {
+				"name": "Michael Scharnagl",
+				"url": "https://twitter.com/justmarkup",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0a236d69d7269a332c3cec198e0fce62d5d6c9749c60db7513c65f2511dbca5c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290707,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-997591481501257728",
+			"date": "2021-10-15T14:52:05.000Z",
+			"author": {
+				"name": "Tim Giles",
+				"url": "https://twitter.com/timothyceegee",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fb1dfd141ad8d9d7a11570201a41bb11404823a60729ac6f46631cdd9d775e38.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290708,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1245635030874877958",
+			"date": "2021-10-15T14:52:06.000Z",
+			"author": {
+				"name": "Santi Cros",
+				"url": "https://twitter.com/santi_cros",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/26ed32e491d7c8af9fca0ba78853671fee1f94dc85d8ccf4df3d404c84566c7b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290709,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1117234662030675968",
+			"date": "2021-10-15T14:52:06.000Z",
+			"author": {
+				"name": "Sam Tancharoensuksavai",
+				"url": "https://twitter.com/samtan_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4df2e789937d59bfa54f9f0b9bbdfdf1f6d468b0c02a485dfe58ae49316725bd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290710,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-385021351",
+			"date": "2021-10-15T14:52:07.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://twitter.com/MVSde",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7a9a5c1cb7cc62dcda0827053eb3179802b605ed71bf70a1f6a6ad2760e413d6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290732,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-205651658",
+			"date": "2021-10-15T15:21:24.000Z",
+			"author": {
+				"name": "Holger Bartel",
+				"url": "https://twitter.com/foobartel",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/592535dc857345dd207fd60638dac39139891257ffe2400f476a70ca705647be.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290735,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-237918766",
+			"date": "2021-10-15T15:21:55.000Z",
+			"author": {
+				"name": "Scott Jehl",
+				"url": "https://twitter.com/scottjehl",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cb7c3c5bc5170670c91a3fcdb6dd0f975846f69172bce7eda10d28a994b90030.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290758,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-202608598",
+			"date": "2021-10-15T16:00:21.000Z",
+			"author": {
+				"name": "Søren Birkemeyer 🦊",
+				"url": "https://twitter.com/polarbirke",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6b537c4b3e9ea0fec8dfba3e6db51dba114185304480c2665c0abc54e4af3812.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290759,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-3015323363",
+			"date": "2021-10-15T16:00:21.000Z",
+			"author": {
+				"name": "Chris Hannaby",
+				"url": "https://twitter.com/ChrisHannaby",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/343dd0011930fec9ce73326ba2388a372cb1338f599ac64ba1eccf0c6457e94f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290760,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-35997477",
+			"date": "2021-10-15T16:00:23.000Z",
+			"author": {
+				"name": "phil, who actually grew a pumpkin this year 🎃",
+				"url": "https://twitter.com/phillipkent",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/035ff000f6fa8fdd7bb5b34e63cd69ff6063b6b4c72dfa8dae0445a050215646.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290761,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-292958173",
+			"date": "2021-10-15T16:00:39.000Z",
+			"author": {
+				"name": "Heather",
+				"url": "https://twitter.com/_hmig",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/99f7fb8e8829c6bff24a26ff2553101d30e501b20603fcc4ca18d8073d77413f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290795,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-114543786",
+			"date": "2021-10-15T16:36:32.000Z",
+			"author": {
+				"name": "MWDelaney",
+				"url": "https://twitter.com/MichaelWDelaney",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b624a88b5663f8391c898e28bb7d9ed9a60dbed6b78846ebec6fc85d00c9a49.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290796,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-400819857",
+			"date": "2021-10-15T16:36:33.000Z",
+			"author": {
+				"name": "𝕕𝔾𝕣𝕒𝕞𝕞𝕒𝕥𝕚𝕜𝕠",
+				"url": "https://twitter.com/dgrammatiko",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/12964fe42dab5ef794a7ca342ce69bac91d73f35cf46ba0221995f79c0ee4298.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290834,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-771633222509748225",
+			"date": "2021-10-15T17:50:00.000Z",
+			"author": {
+				"name": "Benjamin Gries",
+				"url": "https://twitter.com/_gries",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c680c68abaedb86df8d8aeccb3ca797b59c5d3a5fd3886a9815d9e5129045dca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290867,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-432888518",
+			"date": "2021-10-15T19:08:02.000Z",
+			"author": {
+				"name": "Ryan Mulligan",
+				"url": "https://twitter.com/hexagoncircle",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/83ecdd1f7b2d6a7a90e86802aa1ae6c2e0d2819b83db984892f9c0be96584092.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290868,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-17775069",
+			"date": "2021-10-15T19:08:02.000Z",
+			"author": {
+				"name": "bertrandkeller",
+				"url": "https://twitter.com/bertrandkeller",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5705e235fe729ec62273131d966952f09e3ab0bbf8b470a3846fb0280a3d40fa.gif"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290871,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1252876780655882241",
+			"date": "2021-10-15T19:08:31.000Z",
+			"author": {
+				"name": "captain.dynamite",
+				"url": "https://twitter.com/superm4rco",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7673fdf541efc4d6be35a522940d5ecdd54c5b5b6c26fb09520a17c8326c25de.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290872,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1290010705597534213",
+			"date": "2021-10-15T19:08:31.000Z",
+			"author": {
+				"name": "John Kemp-Cruz",
+				"url": "https://twitter.com/jkc_codes",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/22d3c106a288041e84dc34157e5df101962fef5016bba8eca991dff99f06f44b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290908,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-21283188",
+			"date": "2021-10-15T20:21:43.000Z",
+			"author": {
+				"name": "Skullinsworth",
+				"url": "https://twitter.com/jjcollinsworth",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ac9ff8e55d247f936db6efb4d20eec721b6ed51dc2dab6e6a903700b8926dbaf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290955,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-185105764",
+			"date": "2021-10-15T22:07:08.000Z",
+			"author": {
+				"name": "Samuel Hauser",
+				"url": "https://twitter.com/samuelhauser",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5fcca54cd0c0d209b1c23848f3e48664e7d3401770a6f3685d1c1ccb15830504.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290956,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1286289662085156870",
+			"date": "2021-10-15T22:07:10.000Z",
+			"author": {
+				"name": "Bogdan Cerovac",
+				"url": "https://twitter.com/CerovacBogdan",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/db8d07c056dbd41ee29386be7ebf5c646e3418a5b9177dd0af4a811fcf632eaf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290957,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-161394188",
+			"date": "2021-10-15T22:07:10.000Z",
+			"author": {
+				"name": "Luca Degasperi",
+				"url": "https://twitter.com/lucadegasperi",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ff9058a77f695e35b76005a319daae6090379664a1f5039e32828d83a61b8677.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290958,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-167077629",
+			"date": "2021-10-15T22:07:13.000Z",
+			"author": {
+				"name": "Ryan Brooks",
+				"url": "https://twitter.com/spikeheap",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b1a77be7e3cee03e1fd613efe9f4da0d7c1ac0d2a16cee4b7f5368d82f5bce72.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290959,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1423479921955983365",
+			"date": "2021-10-15T22:07:13.000Z",
+			"author": {
+				"name": "Diana Le",
+				"url": "https://twitter.com/dianale_dev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8763c38b2362aa1b6b501bdaac249eaef062234b10de7c2115a0d5aae98193cf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291007,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-632879284",
+			"date": "2021-10-16T00:39:34.000Z",
+			"author": {
+				"name": "Oleksandr Shut",
+				"url": "https://twitter.com/overstrides",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f8ba26e5c774a3525e14243162ddf71fd80c0a8c2f1a14f20fbb27f1f3ec2103.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291008,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-16832123",
+			"date": "2021-10-16T00:39:35.000Z",
+			"author": {
+				"name": "Joseph Curtis",
+				"url": "https://twitter.com/JCurt",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/078c89b0344776f2061c013c735607bbb2189a5379b5b837e55e08c2d6e6134e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291010,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-111967818",
+			"date": "2021-10-16T00:39:38.000Z",
+			"author": {
+				"name": "Alex Popoutsis",
+				"url": "https://twitter.com/apopoutsis",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d589c4569a81781a91d5e379a3e6e2797eabaf0d8cd2e74e6fb6dbe0a319618f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291085,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-587439290",
+			"date": "2021-10-16T04:08:52.000Z",
+			"author": {
+				"name": "Manda Putra ⠕",
+				"url": "https://twitter.com/_mandaputtra",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/427cee2b9391428e884ab003f6d5d1c1f6b44aadfa22aa552c0900f25995ff3c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291086,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-21755292",
+			"date": "2021-10-16T04:08:52.000Z",
+			"author": {
+				"name": "Brad Frost",
+				"url": "https://twitter.com/brad__frost",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/218457ed58e0d84b91ae55b6b58b236bda1689ae1476a14a8e57364096ae05e7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291087,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-95301414",
+			"date": "2021-10-16T04:08:54.000Z",
+			"author": {
+				"name": "Hugo Nogueira",
+				"url": "https://twitter.com/Marabyte_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/89e138bc68eb71f508b4b75ffcf82f456f5f4dc7ff150e02dff00ea552a563da.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291088,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-859951040598167552",
+			"date": "2021-10-16T04:08:54.000Z",
+			"author": {
+				"name": "tigersway.net",
+				"url": "https://twitter.com/tigerswaynet",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7db43a978abf880481d3d9b22ff7421d771e552e604dac90caea2e797a58706f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291089,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1139724030",
+			"date": "2021-10-16T04:08:55.000Z",
+			"author": {
+				"name": "Raphaël Améaume",
+				"url": "https://twitter.com/raphaelameaume",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/854f3fdf0f69d3683acddd3e887c6d062e738f67bef01feba94eb7c2ee078413.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291091,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1711618165",
+			"date": "2021-10-16T04:08:59.000Z",
+			"author": {
+				"name": "Jacky Efendi",
+				"url": "https://twitter.com/jackyef__",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dd5cd8b29e59a582c6774846d5b7a3b3438f0f71183b114a74f100eef2faae49.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291208,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-2244167299",
+			"date": "2021-10-16T07:32:30.000Z",
+			"author": {
+				"name": "George Liu",
+				"url": "https://twitter.com/centminmod",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b5280cff25c0a4f4bc35698c0165c789eb8a253d5d6faec4d0af05ca8db9621.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291209,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-549318909",
+			"date": "2021-10-16T07:32:30.000Z",
+			"author": {
+				"name": "sozonome",
+				"url": "https://twitter.com/sozonome",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3e87fc0cfaef50ab842c6fff230034f7a848639f2db59f4c6c65e2618531ed54.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291210,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-3940262793",
+			"date": "2021-10-16T07:32:31.000Z",
+			"author": {
+				"name": "Optimizing Matters",
+				"url": "https://twitter.com/optimatters",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2c76f7561c3607a7320ca72cabe28d594667e463165ca03a75fbaf7116771df9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291211,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-969169406",
+			"date": "2021-10-16T07:32:32.000Z",
+			"author": {
+				"name": "Adam Ahmed",
+				"url": "https://twitter.com/typesthings",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/54beaf68121309cb1b0e5d81c620efa8d1af9812850f3ad67d3da34c444bba37.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291212,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-931908516",
+			"date": "2021-10-16T07:32:33.000Z",
+			"author": {
+				"name": "Tim Vereecke",
+				"url": "https://twitter.com/TimVereecke",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cc1ebf6995936f04911f7161226d746c052768931e920f6971fcf1c27352a361.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291213,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-277168946",
+			"date": "2021-10-16T07:32:33.000Z",
+			"author": {
+				"name": "Patrick Hulce",
+				"url": "https://twitter.com/patrickhulce",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ff0c9823152d77cde78042b2e2a931c72846224a653e1cb48500db0c3590432d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291336,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-314489571",
+			"date": "2021-10-16T12:38:44.000Z",
+			"author": {
+				"name": "Nicolas Forgeot",
+				"url": "https://twitter.com/NicolasForgeot",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b999955f52241004f90d62f664c758cab62af32d6d34f5f2374be375bbbd91cb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291425,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-2950582285",
+			"date": "2021-10-16T17:45:59.000Z",
+			"author": {
+				"name": "Sid",
+				"url": "https://twitter.com/dietcode_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/586e4517da16e270ed410f5915375198c940dc9c5380760ed271e9b83bf7a36d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291969,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-2498308886",
+			"date": "2021-10-17T21:56:23.000Z",
+			"author": {
+				"name": "Michael Gooding",
+				"url": "https://twitter.com/Michael_G_81",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a6f2036a0d7dce9d627a772b0e5325bc20eb755bff416c9e4b8c4807b22a8214.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292248,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-748205026036879361",
+			"date": "2021-10-18T07:37:56.000Z",
+			"author": {
+				"name": "Niklas Ståhle",
+				"url": "https://twitter.com/n_stahle",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2088011565d1b28629b17a76c8aa4129f2c11b890ad99ed0e54d4dcfc7446884.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292490,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-324396064",
+			"date": "2021-10-18T12:59:05.000Z",
+			"author": {
+				"name": "One Kaitou of the Dead 🐍",
+				"url": "https://twitter.com/kaitou_al",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be429c0fd8c8293ed3466f2cdd2ffeebb3f354e10bae74751c81143d26d79e46.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292607,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-9594362",
+			"date": "2021-10-18T16:16:50.000Z",
+			"author": {
+				"name": "Andy Davies",
+				"url": "https://twitter.com/AndyDavies",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a90e45d17c9a935a015f99d326dc9af4063a54eeabcea9348c5775bb27468963.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292608,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-16997785",
+			"date": "2021-10-18T16:16:50.000Z",
+			"author": {
+				"name": "Arnaud Tanielian",
+				"url": "https://twitter.com/Danetag",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5263dab4c84e8087e963094c1c8724875c5ea6c9836be0aad215b7ee2c93fe47.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292609,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-18322758",
+			"date": "2021-10-18T16:16:53.000Z",
+			"author": {
+				"name": "Hector Piñero",
+				"url": "https://twitter.com/hpineroo",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c055c85b90d8d29f2f446249a80b7933ff633dd202d07585122f1d705f5a53b1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292610,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-15311012",
+			"date": "2021-10-18T16:16:54.000Z",
+			"author": {
+				"name": "Matthew Roach",
+				"url": "https://twitter.com/faxtion",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cc3cb9f8c8d866c8167ee6978bbb145e0c646fa0b0638058215c9722803b2e83.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292611,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-464808539",
+			"date": "2021-10-18T16:16:56.000Z",
+			"author": {
+				"name": "Javier Diaz ☀️",
+				"url": "https://twitter.com/coderdiaz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/30a9cec515eaec1632ca04839372fb60f1a09dd47f939dd23c47923058cae3a4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292612,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-14218243",
+			"date": "2021-10-18T16:16:57.000Z",
+			"author": {
+				"name": "Mike Bifulco 😷💉 (get vaxx'd)",
+				"url": "https://twitter.com/irreverentmike",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/123af98cbda23c45cb649f17a726ca46e3347bae4b401f853f96ef3173229278.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292613,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-14494227",
+			"date": "2021-10-18T16:16:57.000Z",
+			"author": {
+				"name": "Matt Secoske",
+				"url": "https://twitter.com/secos",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5c196117d920f567835942f545bbe9eb7839371e4450faebffc35038344b86c0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292614,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1735601",
+			"date": "2021-10-18T16:16:59.000Z",
+			"author": {
+				"name": "Matthew Payne",
+				"url": "https://twitter.com/HelloPayne",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/db40f40f582131619a166cfa91039a78bb9f4c1b93754fff7ac33bbb036ba199.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292615,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-7015572",
+			"date": "2021-10-18T16:17:00.000Z",
+			"author": {
+				"name": "Jens Grochtdreis",
+				"url": "https://twitter.com/Flocke",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/76c59a44803d2fe0e2760190e87623c4e62786dae9dc1637cc0ab25b98fde15b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292705,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-41993749",
+			"date": "2021-10-18T18:26:07.000Z",
+			"author": {
+				"name": "Piotr Nalepa",
+				"url": "https://twitter.com/sunpietro",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4ac3f923d62393d2cc6ee0f25304a362615232f10a454d62586b75228dd137ca.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292706,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-2556029868",
+			"date": "2021-10-18T18:26:08.000Z",
+			"author": {
+				"name": "night of the living dez",
+				"url": "https://twitter.com/dezbeberniss",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1e1e00c9ff5a71d6401e23af11b81d4f68e854e3e6450f9247dbdf9a8b5c4343.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292732,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-1234336428",
+			"date": "2021-10-18T19:58:11.000Z",
+			"author": {
+				"name": "Valentino Gagliardi 🇮🇹",
+				"url": "https://twitter.com/gagliardi_vale",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4ccb66efbeec69d6c86ba4a1086069701523e993e8462c4c3266c35cc90768bd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292827,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-382612826",
+			"date": "2021-10-19T00:20:54.000Z",
+			"author": {
+				"name": "William Wijaya",
+				"url": "https://twitter.com/wijhuang",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eb2f28a99df64af4d637bcf85b616a36f4846774781f58aa95ed8cf937822689.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1293263,
+			"url": "https://twitter.com/zachleat/status/1449005850098642952#favorited-by-338917394",
+			"date": "2021-10-19T13:12:09.000Z",
+			"author": {
+				"name": "Fasterize",
+				"url": "https://twitter.com/Fasterize",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/74b93b913ce9b9f532495218df7e40092d2bead50cda8c4d8ca35a2b6438881f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1548741,
+			"url": "https://twitter.com/zachleat/status/1587467325422411778#favorited-by-1451352320231550976",
+			"date": "2022-11-01T16:25:54.000Z",
+			"author": {
+				"name": "Mayank",
+				"url": "https://twitter.com/hi__mayank",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3b21cb81cc0e74a6d9f4c240e610493125a065d57a100559bfa7c3439b7ba3f2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1549073,
+			"url": "https://twitter.com/zachleat/status/1587467325422411778#favorited-by-802811514491015168",
+			"date": "2022-11-02T03:10:02.000Z",
+			"author": {
+				"name": "yash",
+				"url": "https://twitter.com/yashguptaz",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/d3397ac1a395db3827ba3603309a40bb7c66fb376c901e66d8fc564228a717a3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858597,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109434507865732549",
+			"date": "2024-11-12T18:38:54.000Z",
+			"author": {
+				"name": "Edo :unverified:",
+				"url": "https://mastodon.uno/@edo78",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6993dca67f512b6264b0d7b705794db7e6a03dd470bcd21e350299d55676600b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858598,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-111665764417673170",
+			"date": "2024-11-12T18:38:54.000Z",
+			"author": {
+				"name": "iroma",
+				"url": "https://mastodon.online/@iroma",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858599,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109393960849815731",
+			"date": "2024-11-12T18:38:55.000Z",
+			"author": {
+				"name": "elle mundy",
+				"url": "https://mastodon.world/@exchgr",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e44f43453da025c0fa33251ef15177aa3339d3baa2344434b48fc01027170a8d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858600,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109372144890871126",
+			"date": "2024-11-12T18:38:56.000Z",
+			"author": {
+				"name": "Paul Hebert",
+				"url": "https://sunny.garden/@paulhebert",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cfa9a730f403c6d6bd01bfbce352517fc19e6aac4e3416c77622fabdc6aa3e4b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858601,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109352939518629968",
+			"date": "2024-11-12T18:38:57.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858602,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-110665449134742777",
+			"date": "2024-11-12T18:38:58.000Z",
+			"author": {
+				"name": "Aleš Roubíček",
+				"url": "https://indieweb.social/@alesroubicek",
+				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/110/665/449/134/742/777/original/bb4c57c25ebaf52c.webp"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858603,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109322028040622495",
+			"date": "2024-11-12T18:38:58.000Z",
+			"author": {
+				"name": "cthos ????",
+				"url": "https://mastodon.cthos.dev/@cthos",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/16d45e0bfdca263f58a19f9e2cce4aa69fdac43001dd4eac276a4f3bfd635024.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858604,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109451444536584188",
+			"date": "2024-11-12T18:38:59.000Z",
+			"author": {
+				"name": "Nathan Bottomley",
+				"url": "https://aus.social/@nathanbottomley",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a8d418f832f6cf3e061a7c4890edd1fe705a3e33db14fe1f22e6dbbb6af37b6c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858605,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109306982482304555",
+			"date": "2024-11-12T18:39:00.000Z",
+			"author": {
+				"name": "Paul Mason",
+				"url": "https://mastodon.social/@paulhmason",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/86be902538356f8147153e1c2e0981dba447cd0fdf33f670b10edd9e0c2a9685.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858606,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109289744030118387",
+			"date": "2024-11-12T18:39:00.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858607,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-112917041538851043",
+			"date": "2024-11-12T18:39:01.000Z",
+			"author": {
+				"name": "Diego López :kirby:",
+				"url": "https://mastodon.social/@diegologs",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/85363397d54d4d4e9d0fe83ecf9b2b826a1de48f46e7569473cea32ed9237639.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858608,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109829533556740279",
+			"date": "2024-11-12T18:39:02.000Z",
+			"author": {
+				"name": "jake lazaroff",
+				"url": "https://mastodon.social/@jakelazaroff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2c56f925175709c5c423239fb9a87ff8129179cad75b2380d47b226b5f814270.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858609,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-110635286175767117",
+			"date": "2024-11-12T18:39:03.000Z",
+			"author": {
+				"name": "Neblib ????????",
+				"url": "https://mastodo.neoliber.al/@Neblib",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/017a5292a4edd2ad09a53d9678237c8c92506f069451710c607b3fd0d2f76cac.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858610,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109308699444837890",
+			"date": "2024-11-12T18:39:04.000Z",
+			"author": {
+				"name": "Nelson Chu Pavlosky",
+				"url": "https://jawns.club/@skyfaller",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/45776646d2a1df9c46739119072eb536e85dbc314de7a2e940f5a7af584e035b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858655,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109384376795918522",
+			"date": "2024-11-12T20:50:12.000Z",
+			"author": {
+				"name": "Tim Riley",
+				"url": "https://ruby.social/@timriley",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c8f6edce61707af2cb6b746efc85e1f70db4006e083689a46a818447ff107eb1.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858664,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109933540955881814",
+			"date": "2024-11-12T21:21:07.000Z",
+			"author": {
+				"name": "Chris",
+				"url": "https://m.webtoo.ls/@swithinbank",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/54b10e5e19854635728431367b3e48491e503ecd8e0555fe478b58157498a569.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858665,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-113233603896074234",
+			"date": "2024-11-12T21:21:07.000Z",
+			"author": {
+				"name": "Damien Solimando",
+				"url": "https://mastodon.social/@dsolimando",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858820,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109303662461101548",
+			"date": "2024-11-12T23:12:20.000Z",
+			"author": {
+				"name": "JW",
+				"url": "https://mastodon.social/@whiteja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/acb57e921accdd23cc8255b12bd9cec8312397d771f4e2a71a2be8f9592011bc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858830,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-112791058416091852",
+			"date": "2024-11-12T23:44:43.000Z",
+			"author": {
+				"name": "Vale",
+				"url": "https://fedi.vale.rocks/users/vale",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/69a2aaea0349ea0f705cffb91d862fc97b88198dd48e7dd866501628c2968702.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858854,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109991051044602132",
+			"date": "2024-11-13T00:42:31.000Z",
+			"author": {
+				"name": "d3v1an7",
+				"url": "https://infosec.exchange/@d3v1an7",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fb7a9c5c9b08e92ce912b2bd596ddced9a86f164602bf35a97d13da2b1709b95.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858863,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-110651355105380677",
+			"date": "2024-11-13T01:38:59.000Z",
+			"author": {
+				"name": "Tyler Sticka",
+				"url": "https://social.lol/@tylersticka",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a3e8f10c9190a71c8b5813cb592445962f91252468058abbac98ecff88025553.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858866,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109334045038172616",
+			"date": "2024-11-13T02:11:23.000Z",
+			"author": {
+				"name": "Nic",
+				"url": "https://indieweb.social/@NicMakesStuff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9b228afcfd3977a8954a6bfd397835859dcbd00b2e0b3d0e8745239049891a48.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858878,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109501416512230048",
+			"date": "2024-11-13T02:44:54.000Z",
+			"author": {
+				"name": "Lyons",
+				"url": "https://mastodon.social/@lyonsinbeta",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858936,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109522097424320523",
+			"date": "2024-11-13T04:48:48.000Z",
+			"author": {
+				"name": "skernjak@mastodon.gamedev.place",
+				"url": "https://mastodon.gamedev.place/@skernjak",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1859033,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109301142474609017",
+			"date": "2024-11-13T08:12:51.000Z",
+			"author": {
+				"name": "devolute",
+				"url": "https://mastodon.social/@devolute",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4b6bdd82fa77503406f7a1f1e013a74b61b3ee464c33a143c25efdf5059a465.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1859034,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109510974973019589",
+			"date": "2024-11-13T08:12:53.000Z",
+			"author": {
+				"name": "Steve Frenzel",
+				"url": "https://mastodon.online/@stvfrnzl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d62b0416ba7a82eb39b43fe89785897b2634a9bd706dfe5349d95f93b3f539ed.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1859142,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#favorited-by-109360328645496930",
+			"date": "2024-11-13T11:38:54.000Z",
+			"author": {
+				"name": "Amy",
+				"url": "https://mstdn.social/@code_and_pixels",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3cd615f24dee209eca45c6af0effb1fef8d32b24e72e58516840ae9777ff613a.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1290672,
+			"url": "https://twitter.com/codef0rmer/status/1449012675682439177",
+			"date": "2021-10-15T14:01:57.000Z",
+			"author": {
+				"name": "Amit Gharat",
+				"url": "https://twitter.com/codef0rmer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/82ea5fd129c981548c4dc22296d7df658bdc5549fcd0a59fa909269c3eaf0905.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290711,
+			"url": "https://twitter.com/yoavweiss/status/1449016360042909698",
+			"date": "2021-10-15T14:16:36.000Z",
+			"author": {
+				"name": "Yoav Weiss",
+				"url": "https://twitter.com/yoavweiss",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/57bf5de6b685745884231bddf3a1a01f103f5882af8166fb66f8f03616296afd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290835,
+			"url": "https://twitter.com/_gries/status/1449062962568830977",
+			"date": "2021-10-15T17:21:47.000Z",
+			"author": {
+				"name": "Benjamin Gries",
+				"url": "https://twitter.com/_gries",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c680c68abaedb86df8d8aeccb3ca797b59c5d3a5fd3886a9815d9e5129045dca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290870,
+			"url": "https://twitter.com/superm4rco/status/1449082043263033352",
+			"date": "2021-10-15T18:37:36.000Z",
+			"author": {
+				"name": "captain.dynamite",
+				"url": "https://twitter.com/superm4rco",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7673fdf541efc4d6be35a522940d5ecdd54c5b5b6c26fb09520a17c8326c25de.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290869,
+			"url": "https://twitter.com/xo4n/status/1449083210365870087",
+			"date": "2021-10-15T18:42:14.000Z",
+			"author": {
+				"name": "Xoan /ʃαn/ 🐟",
+				"url": "https://twitter.com/xo4n",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7946338b4146a1547d9da6defcd1923809d4b134aab4d2f89a266afece411775.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290961,
+			"url": "https://twitter.com/dianale_dev/status/1449116032937902082",
+			"date": "2021-10-15T20:52:40.000Z",
+			"author": {
+				"name": "Diana Le",
+				"url": "https://twitter.com/dianale_dev",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8763c38b2362aa1b6b501bdaac249eaef062234b10de7c2115a0d5aae98193cf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1290960,
+			"url": "https://twitter.com/marcfilleul/status/1449131169895915524",
+			"date": "2021-10-15T21:52:49.000Z",
+			"author": {
+				"name": "Marc Filleul 🇫🇷",
+				"url": "https://twitter.com/marcfilleul",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ae06c94b4ead8794682e34e7d1777db19de610bbdd0c18144a5ca0e21cf00eac.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291090,
+			"url": "https://twitter.com/brad__frost/status/1449181716325748739",
+			"date": "2021-10-16T01:13:40.000Z",
+			"author": {
+				"name": "Brad Frost",
+				"url": "https://twitter.com/brad__frost",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/218457ed58e0d84b91ae55b6b58b236bda1689ae1476a14a8e57364096ae05e7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291214,
+			"url": "https://twitter.com/TimVereecke/status/1449249079133982720",
+			"date": "2021-10-16T05:41:20.000Z",
+			"author": {
+				"name": "Tim Vereecke",
+				"url": "https://twitter.com/TimVereecke",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cc1ebf6995936f04911f7161226d746c052768931e920f6971fcf1c27352a361.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1291337,
+			"url": "https://twitter.com/webdirections/status/1449338261046923275",
+			"date": "2021-10-16T11:35:43.000Z",
+			"author": {
+				"name": "Web Directions",
+				"url": "https://twitter.com/webdirections",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/74cef744055cd984020c4486e478b229378d7b6f33dbd635fe29abca4e8ed24b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1292489,
+			"url": "https://twitter.com/kaitou_al/status/1450065944030728193",
+			"date": "2021-10-18T11:47:16.000Z",
+			"author": {
+				"name": "One Kaitou of the Dead 🐍",
+				"url": "https://twitter.com/kaitou_al",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/be429c0fd8c8293ed3466f2cdd2ffeebb3f354e10bae74751c81143d26d79e46.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858611,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-109372144890871126",
+			"date": "2024-11-12T18:39:04.000Z",
+			"author": {
+				"name": "Paul Hebert",
+				"url": "https://sunny.garden/@paulhebert",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cfa9a730f403c6d6bd01bfbce352517fc19e6aac4e3416c77622fabdc6aa3e4b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858612,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-112871509378760849",
+			"date": "2024-11-12T18:39:05.000Z",
+			"author": {
+				"name": "Alistair",
+				"url": "https://front-end.social/@accudio",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8f911a0013ec407e4ff84660dea4c1ffa449d75ffc8316eb71736c148e27d15b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858613,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-110665449134742777",
+			"date": "2024-11-12T18:39:06.000Z",
+			"author": {
+				"name": "Aleš Roubíček",
+				"url": "https://indieweb.social/@alesroubicek",
+				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/110/665/449/134/742/777/original/bb4c57c25ebaf52c.webp"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858614,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-109292788447580797",
+			"date": "2024-11-12T18:39:07.000Z",
+			"author": {
+				"name": "Stefan Baumgartner",
+				"url": "https://mastodon.social/@deadparrot",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e946b0a0ef666944481f16e1fe7a44772d47ebe06bd74e1c03688a9cbe09ebed.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858615,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-109287949593182322",
+			"date": "2024-11-12T18:39:07.000Z",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858616,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-110635286175767117",
+			"date": "2024-11-12T18:39:07.000Z",
+			"author": {
+				"name": "Neblib ????????",
+				"url": "https://mastodo.neoliber.al/@Neblib",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/017a5292a4edd2ad09a53d9678237c8c92506f069451710c607b3fd0d2f76cac.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858649,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-111257322569309811",
+			"date": "2024-11-12T20:21:55.000Z",
+			"author": {
+				"name": "Danny van Kooten",
+				"url": "https://toot.re/@dvk",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4f122a9fcb3da6b52cd3fc6d6934199d8bf683e42cf629333a302a6e6c202ee0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858779,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-109363534965522576",
+			"date": "2024-11-12T22:45:50.000Z",
+			"author": {
+				"name": "Martin B",
+				"url": "https://mastodon.nu/@macbruker",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cd39ebca652af505a500ab6135e9121c2b2fa084ddd7305b0d62de21bdffeb36.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858821,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-109303662461101548",
+			"date": "2024-11-12T23:12:24.000Z",
+			"author": {
+				"name": "JW",
+				"url": "https://mastodon.social/@whiteja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/acb57e921accdd23cc8255b12bd9cec8312397d771f4e2a71a2be8f9592011bc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858864,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-110651355105380677",
+			"date": "2024-11-13T01:39:03.000Z",
+			"author": {
+				"name": "Tyler Sticka",
+				"url": "https://social.lol/@tylersticka",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a3e8f10c9190a71c8b5813cb592445962f91252468058abbac98ecff88025553.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858867,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-112252639032483704",
+			"date": "2024-11-13T02:11:23.000Z",
+			"author": {
+				"name": "Helen Chong :v_lesbian: :v_enby:",
+				"url": "https://tech.lgbt/@helenclx",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a02d0130d0e46a0f0f3f0980775306f615fff9c967725930188b7a9ad19a7e21.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858941,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-109301156832741552",
+			"date": "2024-11-13T05:13:58.000Z",
+			"author": {
+				"name": "Maurizio Lupo",
+				"url": "https://fosstodon.org/@sithmel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/61e416bd68965a9d0281908c9c76330374ba9a79359064f1cf5d1cf2a48eb68f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1858947,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-110834096215248516",
+			"date": "2024-11-13T05:47:04.000Z",
+			"author": {
+				"name": "Fogrew :verified: ????????",
+				"url": "https://c.im/@fogrew",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/39d56fe6851b478e15e0167ce6cac9c3767fcf8a5bb4b0fb59a48f237667d60b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1859035,
+			"url": "https://fediverse.zachleat.com/@zachleat/113470779633581356#reblogged-by-109510974973019589",
+			"date": "2024-11-13T08:12:55.000Z",
+			"author": {
+				"name": "Steve Frenzel",
+				"url": "https://mastodon.online/@stvfrnzl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d62b0416ba7a82eb39b43fe89785897b2634a9bd706dfe5349d95f93b3f539ed.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"bookmarks": [
+		{
+			"id": 1290928,
+			"url": "https://nicolas-hoizey.com/links/2021/10/15/the-art-of-deception-lighthouse-score-edition/",
+			"date": "2021-10-15T05:00:00.000Z",
+			"author": {},
+			"via": "webmention"
+		}
+	]
+}

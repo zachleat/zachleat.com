@@ -1,0 +1,208 @@
+{
+	"comments": [
+		{
+			"id": 1945348,
+			"parentId": 0,
+			"url": "https://mas.to/@frontenddogma/115322980040210112",
+			"author": {
+				"name": "Frontend Dogma",
+				"url": "https://mas.to/@frontenddogma",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1f1d7de7d42cc059b8a9b2dab7b94bc6b97a7b60b6181d615c57978c4a177f4f.png"
+			},
+			"date": "2025-10-05T18:30:26.000Z",
+			"content": "<p>I Want to Intercept Boolean Coercion for Objects in JavaScript, by <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span>:</p><p><a href=\"https://www.zachleat.com/web/boolean-coercion/\"><span>https://www.</span><span>zachleat.com/web/boolean-coerc</span><span>ion/</span></a></p><p><a href=\"https://mas.to/tags/javascript\">#<span>javascript</span></a> <a href=\"https://mas.to/tags/objects\">#<span>objects</span></a> <a href=\"https://mas.to/tags/types\">#<span>types</span></a></p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/javascript\">javascript</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/objects\">objects</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/types\">types</a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/javascript\"></a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/objects\"></a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/types\"></a>\n<a href=\"https://www.zachleat.com/web/boolean-coercion/\">I want to intercept Boolean Coercion for Objects in JavaScript—zachleat.com</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1945727,
+			"parentId": 0,
+			"url": "https://mastodon.online/@ecmascript_news/115330462692014999",
+			"author": {
+				"name": "ECMAScript News",
+				"url": "https://mastodon.online/@ecmascript_news",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c85e417e09415440a5a609685f4b223553df7253ba5f7c9f5cfe3ff34b43763d.png"
+			},
+			"date": "2025-10-07T02:13:22.000Z",
+			"content": "<p>I want to intercept boolean coercion for objects in JavaScript<br /><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span><br /><a href=\"https://www.zachleat.com/web/boolean-coercion/\"><span>https://www.</span><span>zachleat.com/web/boolean-coerc</span><span>ion/</span></a></p><p><a href=\"https://mastodon.online/tags/ECMAScript\">#<span>ECMAScript</span></a> <a href=\"https://mastodon.online/tags/JavaScript\">#<span>JavaScript</span></a></p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/ecmascript\">ecmascript</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/javascript\">javascript</a>\n<a class=\"u-mention\" href=\"https://mastodon.online/tags/ECMAScript\"></a>\n<a class=\"u-mention\" href=\"https://mastodon.online/tags/JavaScript\"></a>\n<a href=\"https://www.zachleat.com/web/boolean-coercion/\">I want to intercept Boolean Coercion for Objects in JavaScript—zachleat.com</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1947273,
+			"parentId": 0,
+			"url": "https://hachyderm.io/@decadecity/115372899322696503",
+			"author": {
+				"name": "Orde Saunders ????",
+				"url": "https://hachyderm.io/@decadecity",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7196522827a794251c4dd9e942ff706af0500ad8780a2f98690ffdaa7e42bd5c.png"
+			},
+			"date": "2025-10-14T14:05:34.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://chaos.social/@judy2k\" class=\"u-url\">@<span>judy2k</span></a></span> This from <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> reminded me of your `-ish` Python adventures.  Although, [spoiler alert] JS isn't as compliant as Python...</p><p><a href=\"https://www.zachleat.com/web/boolean-coercion/\"><span>https://www.</span><span>zachleat.com/web/boolean-coerc</span><span>ion/</span></a></p>\n<a href=\"https://www.zachleat.com/web/boolean-coercion/\">I want to intercept Boolean Coercion for Objects in JavaScript—zachleat.com</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1947271,
+			"parentId": 0,
+			"url": "https://mastodon.social/@webreflection/115372921906661653",
+			"author": {
+				"name": "Andrea Giammarchi",
+				"url": "https://mastodon.social/@webreflection",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/830850dbb8df67df233003e8f9862bbe1f977b2b38915b3a70d058d0fd0d37f6.jpg"
+			},
+			"date": "2025-10-14T14:11:18.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span></p><p>eqeq there ...</p><p>if (new MyBoolean(false) == false)<br />  console.log('????');</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1947272,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/115372926014379504",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-10-14T14:12:21.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@webreflection\" class=\"u-url\">@<span>webreflection</span></a></span> worth a mention in the post, for sure. I don’t have control over all of the contexts in which the code will be used though ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1947312,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/peruvianidol.com/post/3m364ai6jh22m",
+			"author": {
+				"name": "Mike Aparicio",
+				"url": "https://bsky.app/profile/peruvianidol.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/26be4fa5cbffd57fe091ee63e984f81188499a28121a7a648e01cc978ab96d60.jpg"
+			},
+			"date": "2025-10-14T16:05:18.000Z",
+			"content": "I mean, who doesn&apos;t?",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1947313,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m364xx7das2i",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-10-14T16:18:26.000Z",
+			"content": "almost everyone that has read this blog post ????",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1947350,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/115374177252675510",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-10-14T19:30:33.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@webreflection\" class=\"u-url\">@<span>webreflection</span></a></span> maybe a little hard to explain on text but given an arbitrary deeply nested object, I want to add metadata to each property that stores an arbitrary string for that property. the approach I’m using is to convert (for boolean types) primitive booleans to object booleans to add that data and retain the same behavior</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1947351,
+			"parentId": 0,
+			"url": "https://mastodon.social/@vrugtehagel/115374568541104031",
+			"author": {
+				"name": "vrugtehagel",
+				"url": "https://mastodon.social/@vrugtehagel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e6050d72eeee436de617b443c8cb08a5efd190d4c2cbfa610eaead9cb69cccef.png"
+			},
+			"date": "2025-10-14T21:10:04.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> it's not possible - see <a href=\"https://mastodon.social/@vrugtehagel/115308994476955114\"><span>https://</span><span>mastodon.social/@vrugtehagel/1</span><span>15308994476955114</span></a></p><p>If you want to have metadata for properties, you're probably best off wrapping them with a proxy and using a mechanism (like a prefix or named symbols) to look up the metadata without those properties being included in `Object.keys()` and whatnot.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1947799,
+			"parentId": 0,
+			"url": "https://frontenddogma.com/",
+			"author": {},
+			"date": "2025-10-17T09:19:11.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1947314,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m35v7eh5dc2m#liked_by_did:plc:g5dhqer5l7f2hrmmxnjqicds",
+			"date": "2025-10-14T18:33:35.000Z",
+			"author": {
+				"name": "Brett Evans",
+				"url": "https://bsky.app/profile/brettevans.me",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/36a7e9325511c2465a8f9a2654cbe10a7e9024e6d80827bd0b0391b4c35687bc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1947315,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m35v7eh5dc2m#liked_by_did:plc:c2elcig7pt6yeihcq3odnrcm",
+			"date": "2025-10-14T18:33:35.000Z",
+			"author": {
+				"name": "Alex Riviere",
+				"url": "https://bsky.app/profile/dangitalex.wtf",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f4ad7e04855350396f4ce820b8a0ef596e1da67a46ca14826253ff8f56755700.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1947316,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m35v7eh5dc2m#liked_by_did:plc:rj7gcscy3x3vskk7y6f2nbx6",
+			"date": "2025-10-14T18:33:36.000Z",
+			"author": {
+				"name": "Mike Aparicio",
+				"url": "https://bsky.app/profile/peruvianidol.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/26be4fa5cbffd57fe091ee63e984f81188499a28121a7a648e01cc978ab96d60.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1947362,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m35v7eh5dc2m#liked_by_did:plc:ot3fyiqkbetianbjahiowrxf",
+			"date": "2025-10-14T22:35:39.000Z",
+			"author": {
+				"name": "CodeMonument",
+				"url": "https://bsky.app/profile/codemonument.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d37de597ad471fe9db683d2211ff725a975be67e0af9e43215b76e8354cdec9b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1947373,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m35v7eh5dc2m#liked_by_did:plc:kgrbnhf2bdyk2nbwf44xcxpc",
+			"date": "2025-10-15T00:30:13.000Z",
+			"author": {
+				"name": "Sergio",
+				"url": "https://bsky.app/profile/sergio1984.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f40d7d953064549033957a8cb8d09170fbc17acfc2ad0dd740bcf4ea0662c50e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1947428,
+			"url": "https://fediverse.zachleat.com/@zachleat/115372875459513748#favorited-by-109728508243188621",
+			"date": "2025-10-15T05:33:33.000Z",
+			"author": {
+				"name": "Jan Lehnardt :couchdb:",
+				"url": "https://narrativ.es/@janl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d1630de1028ec04a96edcda4ee4b4be17305c7a4869045167c37e2124cbc7960.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

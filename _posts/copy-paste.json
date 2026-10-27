@@ -1,0 +1,317 @@
+{
+	"comments": [
+		{
+			"id": 1950699,
+			"parentId": 0,
+			"url": "https://indieweb.social/@jgarber/115457643604087409",
+			"author": {
+				"name": "Jason Garber",
+				"url": "https://indieweb.social/@jgarber",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/59defe9d9a0c6b44555ea98ddb1b9185342605af54e481102c0496fc0dd8140a.jpg"
+			},
+			"date": "2025-10-29T13:17:09.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> we have copy and paste at home zach</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1950705,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/engelman.nl/post/3m4dkf4rbnc2v",
+			"author": {
+				"name": "Danny Engelman ????????️????️",
+				"url": "https://bsky.app/profile/engelman.nl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c54e323347ac94ced22aa1e48fbf52f4dd9420dec88ca101405d364c01999c0e.jpg"
+			},
+			"date": "2025-10-29T13:26:57.000Z",
+			"content": "Why?",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1950706,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4dljdbtvs2a",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-10-29T13:47:11.000Z",
+			"content": "I think <a href=\"https://webawesome.com/docs/components/copy-button/#dependencies\">webawesome.com/docs/compone...</a> and <a href=\"https://webawesome.com/docs/#the-difference-between-dist-and-dist-cdn\">webawesome.com/docs/#the-di...</a> are probably the relevant parts of the docs for that question (but on the 11ty implementation we bundle to a single file, as noted in the blog post)",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1950937,
+			"parentId": 0,
+			"url": "https://mstdn.social/@scottjehl/115463830334101521",
+			"author": {
+				"name": "Scott Jehl",
+				"url": "https://mstdn.social/@scottjehl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/11a7482b10dafe56809db4c39a89431dee6d55225dd4ac6bec19886f8fa40b94.png"
+			},
+			"date": "2025-10-30T15:30:31.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@mia\" class=\"u-url\">@<span>mia</span></a></span> and exceptions to this make sense too. <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span>'s post highlights a good example of an empty custom element use-case. I think anyway. But I wouldn't want to use them for core functionality <a href=\"https://www.zachleat.com/web/copy-paste/\"><span>https://www.</span><span>zachleat.com/web/copy-paste/</span><span></span></a></p>\n<a href=\"https://www.zachleat.com/web/copy-paste/\">Copy *and* Paste? …in this Economy?—zachleat.com</a>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1950693,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:krtm6dltju5ikaqwvca24sa5",
+			"date": "2025-10-29T13:27:08.000Z",
+			"author": {
+				"name": "Pat Byrne",
+				"url": "https://bsky.app/profile/patrick.byrne.team",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7772486c42618ca2f0c48aed8c4b222c873b8afddd5b711629b04f65c7609f27.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950694,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:5wkykzvmn52yptc5i7sasvo5",
+			"date": "2025-10-29T13:27:08.000Z",
+			"author": {
+				"name": "chimmy",
+				"url": "https://bsky.app/profile/chimmy64.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/5523a2ad6a732a635d0c35741893fe2145ab5c9e790ac73bc89fb541b2fe50f0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950695,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:i3khfmz4tvrcu7fwrdoqr4u2",
+			"date": "2025-10-29T13:27:10.000Z",
+			"author": {
+				"name": "Eleventy v4.0.0-alpha.4",
+				"url": "https://bsky.app/profile/11ty.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/62e33949ad5d148d6a2b54c4ba7e91bf5f658d85dfc8ec1526d9cd248ee127ed.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950696,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:iagspo44enzkxp5y53cyfezm",
+			"date": "2025-10-29T13:27:11.000Z",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://bsky.app/profile/infrequently.org",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/bed66e73b4f93be525911881604d7e0c8285d16a7e48e97d09794c4f0277c85a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950700,
+			"url": "https://fediverse.zachleat.com/@zachleat/115457570880872013#favorited-by-114399919162494462",
+			"date": "2025-10-29T13:29:41.000Z",
+			"author": {
+				"name": "Eleventy ???? v4.0.0-alpha.4",
+				"url": "https://neighborhood.11ty.dev/@11ty",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f8926295a41501a369363a13f44b7716af4895680d5ffaf3cf9603749f8f1352.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950707,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:63xcs2inhq2p5q5nbvpqqksq",
+			"date": "2025-10-29T13:53:40.000Z",
+			"author": {
+				"name": "Brian G",
+				"url": "https://bsky.app/profile/brian-g1.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/dd7b780cda815f0ef565c7c8ed15537fbb18764541354bb0f7da8e4c472422a1.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950708,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:pzgvqg4ihnaihkrpmxqz5pu6",
+			"date": "2025-10-29T13:53:41.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://bsky.app/profile/bell.bz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4bd3d77ac167711da4d93cf920feccde4b3ee1052fbe7c133f88dd6af7b915c4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950713,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:6lptwflerdm2ods3vvgmmmbz",
+			"date": "2025-10-29T14:23:19.000Z",
+			"author": {
+				"name": "Timo Koola",
+				"url": "https://bsky.app/profile/timokoola.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ac6d20fcc8a40157bdaf5ac333b34be310c870351b19500d3f6f9cfd4ef2545b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950714,
+			"url": "https://fediverse.zachleat.com/@zachleat/115457570880872013#favorited-by-109301667267707340",
+			"date": "2025-10-29T14:30:22.000Z",
+			"author": {
+				"name": "Lene Saile",
+				"url": "https://front-end.social/@lene",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b11bce21a15d560ac99e575696be482d744f10237abefd30f3e7f6b0861f476.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950717,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:dfffydq7eqa5yof4cfeh23vh",
+			"date": "2025-10-29T14:55:30.000Z",
+			"author": {
+				"name": "Lindsay Wardell",
+				"url": "https://bsky.app/profile/lindsaykwardell.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b6ba2a2cf1634c4ebf788bf8461a0855e3dfcf7b49cc25f9baa1bfe60cecc165.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950731,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:gevyqibw5p2xsonkbsbjm5vy",
+			"date": "2025-10-29T15:23:01.000Z",
+			"author": {
+				"name": "Todd",
+				"url": "https://bsky.app/profile/toddl.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/04502a9b9d21e035cef43c92d1ce28adceae30c8c6c4353b153dbb5529aef555.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950732,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:36r6afmc6wnkrfb74iu4wpst",
+			"date": "2025-10-29T15:23:01.000Z",
+			"author": {
+				"name": "Katie Sylor-Miller",
+				"url": "https://bsky.app/profile/ksylor.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/82db58ec4af7b37763e72c4509eaaa0f0449b1931f68b318a3be72953d0155f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950750,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:yoroinvjkhyhs42euk3svijr",
+			"date": "2025-10-29T16:54:33.000Z",
+			"author": {
+				"name": "armornick ????️‍????????️‍⚧️",
+				"url": "https://bsky.app/profile/armornick.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b82fc609b80464cad1574ac4b21dd0e2a5c86ca4cfb4c720061fdf2ce6e3f414.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950767,
+			"url": "https://fediverse.zachleat.com/@zachleat/115457570880872013#favorited-by-109296199665384546",
+			"date": "2025-10-29T18:09:28.000Z",
+			"author": {
+				"name": "Richard MacManus",
+				"url": "https://mastodon.social/@ricmac",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2329542ce19be2b7b9320a18f02c5762c3f14efd47e6c22ccfa3179f4df22e17.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950768,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:kgrbnhf2bdyk2nbwf44xcxpc",
+			"date": "2025-10-29T18:29:11.000Z",
+			"author": {
+				"name": "Sergio",
+				"url": "https://bsky.app/profile/sergio1984.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f40d7d953064549033957a8cb8d09170fbc17acfc2ad0dd740bcf4ea0662c50e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950782,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:elkbkqfdg42s6kbipfm4qu6p",
+			"date": "2025-10-29T20:45:50.000Z",
+			"author": {
+				"name": "Miguel Calderon",
+				"url": "https://bsky.app/profile/miguel-calderon.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c6f52988ba40b3d16c80634e7fd0a474c02dee2ee064c86d0632b58345bf9625.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950844,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:qxgbal6edxwlb7ooyxtlujyv",
+			"date": "2025-10-30T07:59:27.000Z",
+			"author": {
+				"name": "Pim de Wit",
+				"url": "https://bsky.app/profile/pim.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b98b2e47f90dc154aa07fafe336d05230ec6863e272dfb9c6fe6f16ea17f08ba.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950942,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#liked_by_did:plc:atbk3lds7cf6ovotf26d75xy",
+			"date": "2025-10-30T16:59:28.000Z",
+			"author": {
+				"name": "They Rule",
+				"url": "https://bsky.app/profile/theyrule.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c78538e439e47d174fc5030884f7d084bb3fd55f184668eddb32cd8e3e4cbf9e.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1950697,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#reposted_by_did:plc:iagspo44enzkxp5y53cyfezm",
+			"date": "2025-10-29T13:27:11.000Z",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://bsky.app/profile/infrequently.org",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/bed66e73b4f93be525911881604d7e0c8285d16a7e48e97d09794c4f0277c85a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950698,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#reposted_by_did:plc:i3khfmz4tvrcu7fwrdoqr4u2",
+			"date": "2025-10-29T13:27:13.000Z",
+			"author": {
+				"name": "Eleventy v4.0.0-alpha.4",
+				"url": "https://bsky.app/profile/11ty.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/62e33949ad5d148d6a2b54c4ba7e91bf5f658d85dfc8ec1526d9cd248ee127ed.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950701,
+			"url": "https://fediverse.zachleat.com/@zachleat/115457570880872013#reblogged-by-109474688305133038",
+			"date": "2025-10-29T13:29:43.000Z",
+			"author": {
+				"name": "Mike Hostetler",
+				"url": "https://appdot.net/@mikehoss",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4453b896ba93b5fc535fce259ac23331b14843cd82f5011836d0ae81a47505c9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950702,
+			"url": "https://fediverse.zachleat.com/@zachleat/115457570880872013#reblogged-by-114399919162494462",
+			"date": "2025-10-29T13:29:44.000Z",
+			"author": {
+				"name": "Eleventy ???? v4.0.0-alpha.4",
+				"url": "https://neighborhood.11ty.dev/@11ty",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f8926295a41501a369363a13f44b7716af4895680d5ffaf3cf9603749f8f1352.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1950709,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m4discie322x#reposted_by_did:plc:pzgvqg4ihnaihkrpmxqz5pu6",
+			"date": "2025-10-29T13:54:18.000Z",
+			"author": {
+				"name": "Andy Bell",
+				"url": "https://bsky.app/profile/bell.bz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4bd3d77ac167711da4d93cf920feccde4b3ee1052fbe7c133f88dd6af7b915c4.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

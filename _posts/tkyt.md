@@ -1,0 +1,21 @@
+---
+title: "Kelvin Omereshone’s TKYT: Eleventy and WebC"
+date: 2022-10-13
+tags:
+  - eleventy
+  - speaking
+  - video
+metadata:
+  speaking:
+    type: livestream
+  youtubeId: ayOouJv6WYg
+medialength: 73 min
+---
+{% renderTemplate "webc" %}<div><youtube-lite-player :@slug="$data.metadata.youtubeId" :@label="$data.title"></youtube-lite-player></div>{%- endrenderTemplate %}
+
+* Subscribe to [Kelvin Omereshone on YouTube](https://www.youtube.com/c/KelvinOmereshoneOfficial)!
+* Related tweet from [@Dominus_Kelvin](https://twitter.com/Dominus_Kelvin/status/1580626938183372803).
+
+> Eleventy is a static site generator created by Zach Leatherman who came to this TKYT session to give me a beginner's crash course on building static sites with Eleventy.
+
+For folks more experienced with Eleventy, skip to the WebC portion that begins at almost exactly 1:00:00!

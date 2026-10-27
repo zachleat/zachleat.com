@@ -1,0 +1,119 @@
+{
+	"disqus": {
+		"path": "/web/foft/",
+		"commentCount": 1,
+		"comments": [
+			{
+				"postId": "3433188939",
+				"parentPostId": null,
+				"date": "2017-07-24T17:59:06Z",
+				"author": "Bettina",
+				"avatar": "https://www.gravatar.com/avatar/506ba6b30bde38f1d4063f462816866c?d=mm&s=60",
+				"message": "<p>Great!</p>",
+				"replies": []
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 2044277,
+			"parentId": 0,
+			"url": "https://awfulwoman.com/bookmarks/2015/01/26/abjmcvqg/",
+			"author": {
+				"name": "Charlie O'Hara",
+				"url": "https://awfulwoman.com/about/",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/176201386e499082b9e9d35655330db6e5035669230f185976510c53bba28b53.jpg"
+			},
+			"date": "2015-01-26T13:07:43.000Z",
+			"content": "<a class=\"h-cite u-bookmark-of\" href=\"http://www.zachleat.com/web/foft/\"><img class=\"u-photo\" src=\"https://awfulwoman.com/bookmarks/2015/01/26/abjmcvqg/card.webp\" alt=\"\" width=\"800\" height=\"420\" />\n  <span class=\"p-name\">Flash of Faux Text—still more on Font Loading—zachleat.com</span>\n  <span class=\"p-publication\">Zach Leatherman</span>\n  <span class=\"p-summary\">A post by Zach Leatherman (zachleat)</span>\n</a>\n    \n    \n\n    \n\n    \n\n    \n\n    \n\n    \n    <p><a href=\"http://www.zachleat.com/web/foft/\">Read Zach Leatherman on Zach Leatherman</a><span class=\"u-remove\"> and </span><a href=\"https://web.archive.org/web/http://www.zachleat.com/web/foft/\">Archived copy</a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 632744,
+			"parentId": 0,
+			"url": "https://www.aaron-gustafson.com/notebook/links/flash-of-faux-text/",
+			"author": {
+				"name": "Aaron Gustafson",
+				"url": "https://www.aaron-gustafson.com/about"
+			},
+			"date": "2015-01-27T13:56:47.000Z",
+			"content": "<p>In his continuing exploration of font loading optimization, Zach Leatherman proposes loading a Roman (i.e. normal weight, non-italic) font first and letting the browser synthesize (i.e. fake) the bold, italic, etc. variants to reduce the load time and reflow of the document and let users start reading as soon as possible. Then he lazy loads the additional font weights and styles so the browser can swap out the synthesized glyphs for the actual ones.</p>\n\n<p>Super clever stuff Zach!</p>\n\n        <p>\n          <a href=\"http://www.zachleat.com/web/foft/\">Read on Zach Leatherman’s Blog</a>\n        </p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 682576,
+			"parentId": 0,
+			"url": "https://matomosci.wordpress.com/2019/09/02/osadzane-fonty-jak-wyswietlany-jest-tekst-przed-pobraniem-fontu-fout-foit-i-foft/",
+			"author": {},
+			"date": "2019-09-02T15:13:28.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 683194,
+			"parentId": 0,
+			"url": "http://anna.borsaendeks.com/the-web-font-loading-glossary-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "http://anna.borsaendeks.com/author/admin/"
+			},
+			"date": "2019-09-03T14:11:15.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 683272,
+			"parentId": 0,
+			"url": "http://anna.borsaendeks.com/trying-out-a-new-font-stack-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "http://anna.borsaendeks.com/author/admin/"
+			},
+			"date": "2019-09-03T14:55:16.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 683287,
+			"parentId": 0,
+			"url": "http://anna.borsaendeks.com/in-case-you-missed-it-2015-zachleat-com/",
+			"author": {
+				"name": "admin",
+				"url": "http://anna.borsaendeks.com/author/admin/"
+			},
+			"date": "2019-09-03T15:07:07.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 820877,
+			"parentId": 0,
+			"url": "https://twitter.com/YoBigRube/status/1280262798854021123",
+			"author": {
+				"name": "Reuben",
+				"url": "https://twitter.com/YoBigRube",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6630734b637d1859d94757df06b5589a24c8abdfb879f1237dd909b2eadb7645.jpg"
+			},
+			"date": "2020-07-06T22:10:12.000Z",
+			"content": "CSS / HTML Web Fonts\n\nFlash of Faux Text: <a href=\"https://www.zachleat.com/web/foft/\">zachleat.com/web/foft/</a>\n\nLoad Progressively: <a href=\"https://www.filamentgroup.com/lab/font-events.html\">filamentgroup.com/lab/font-event…</a>\n\nFilament Group Load CSS: <a href=\"https://github.com/filamentgroup/loadCSS\">github.com/filamentgroup/…</a>\n\nFOIT: <a href=\"https://www.filamentgroup.com/lab/font-loading.html\">filamentgroup.com/lab/font-loadi…</a>\n\nFont Load Events: <a href=\"https://dev.opera.com/articles/better-font-face/\">dev.opera.com/articles/bette…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1456337,
+			"parentId": 0,
+			"url": "https://guruitsource.com/using-web-fonts-the-best-way-for-2015/",
+			"author": {},
+			"date": "2022-08-11T19:28:42.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

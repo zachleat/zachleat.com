@@ -1,0 +1,148 @@
+{
+	"disqus": {
+		"path": "/web/array-sort/",
+		"commentCount": 13,
+		"comments": [
+			{
+				"postId": "887461959",
+				"parentPostId": null,
+				"date": "2010-02-25T08:29:30Z",
+				"author": "ishtar",
+				"avatar": "https://www.gravatar.com/avatar/af44f7eea59397f5144cb65c1b7f3d63?d=mm&s=60",
+				"message": "<p>Nice write-up. I wonder if your suggestion can be incorporated into the compiled code Google Closure compiler outputs. I noticed that the same solution (of not reassigning the argument variables) fixes the issue in IE for the problem that led me to post that ticket.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461962",
+				"parentPostId": null,
+				"date": "2010-02-25T10:23:35Z",
+				"author": "Zach Leatherman",
+				"avatar": "https://www.gravatar.com/avatar/e1899004c71c7043343196103e210be3?d=mm&s=60",
+				"message": "<p>I don't see why they wouldn't incorporate it, since it is introducing bugs in all versions of Internet Explorer.  We'll see how your report pans out.  I've submitted a bug before to the Closure Compiler team and it was fixed right away.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461960",
+				"parentPostId": null,
+				"date": "2010-04-24T22:07:42Z",
+				"author": "Pritesh Patel",
+				"avatar": "https://www.gravatar.com/avatar/264272785404bf476ff6c7a2c98d9a3a?d=mm&s=60",
+				"message": "<p>Thanks for this. I got my sort function working in IE8 because of this. Otherwise, it was only working in Firefox and Google Chrome.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461963",
+				"parentPostId": null,
+				"date": "2010-09-05T20:46:59Z",
+				"author": "Valentin Iliescu",
+				"avatar": "https://www.gravatar.com/avatar/c4d7ba69ca83dc47f102fd0fbcc4e474?d=mm&s=60",
+				"message": "<p><a href=\"http://ie.microsoft.com/testdrive/\" rel=\"nofollow noopener\" title=\"http://ie.microsoft.com/testdrive/\">IE 9 Preview</a> seems to be fine, ran the test several times with no failures.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461966",
+				"parentPostId": null,
+				"date": "2011-01-04T08:48:13Z",
+				"author": "JKL",
+				"avatar": "https://www.gravatar.com/avatar/59694664e640b5c236f1038ff4a9137a?d=mm&s=60",
+				"message": "<p>Excellent post.  In my case this bug caused the first parameter to become undefined.  Inspecting it in the script debugger gave a \"Variable uses an Automation type not supported in JScript\" error.  The typeof operator returned \"unkown.\"</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461965",
+				"parentPostId": null,
+				"date": "2011-01-04T08:52:39Z",
+				"author": "JKL",
+				"avatar": "https://www.gravatar.com/avatar/59694664e640b5c236f1038ff4a9137a?d=mm&s=60",
+				"message": "<p>For the benefit of Google, that last sentence should have been:</p><p>The typeof operator returned “unknown.”</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461967",
+				"parentPostId": null,
+				"date": "2011-02-22T07:31:43Z",
+				"author": "Mario Zito",
+				"avatar": "https://www.gravatar.com/avatar/d4152be4e3da496ea58b7a5715760b3d?d=mm&s=60",
+				"message": "<p>GREAT POST<br>It just has happened me after having worked ok in my scripts for some time and was quite confussed about the cause. This saved me MANY hours of debugging in IE.<br>THANKS !</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461968",
+				"parentPostId": null,
+				"date": "2011-03-03T06:33:35Z",
+				"author": "mort",
+				"avatar": "https://www.gravatar.com/avatar/5735d7274a04625a5f528a85c8ee6682?d=mm&s=60",
+				"message": "<p>Thank you. Thank you. Thank you!</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461964",
+				"parentPostId": null,
+				"date": "2011-06-16T05:33:28Z",
+				"author": "Aldonio",
+				"avatar": "https://www.gravatar.com/avatar/35fa187668df676bd196d0796d1c3d48?d=mm&s=60",
+				"message": "<p>Really thanks for your article, that issue of IE was driving me crazy.</p><p>What I did to fix it before reading your article was to put the same code in a try/catch statepent but I wasn't happy with that solution :P</p><p><a href=\"http://pastebin.com/wCKbuuDV\" rel=\"nofollow noopener\" title=\"http://pastebin.com/wCKbuuDV\">http://pastebin.com/wCKbuuDV</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "887461970",
+				"parentPostId": null,
+				"date": "2011-11-10T20:24:42Z",
+				"author": "Marcus",
+				"avatar": "https://www.gravatar.com/avatar/56394196312b31bccd03f296a479af02?d=mm&s=60",
+				"message": "<p>Thanks for this. I bumped to the similar problem. I thought surely sort-functions the same in all browser, but should've known better.</p><p>In my case the switching<br>return (a.label &gt; b.label);<br>to <br>return (a.label &gt; b.label ? 1 : -1);<br>made IE work.</p>",
+				"replies": [
+					{
+						"postId": "1331600396",
+						"parentPostId": "887461970",
+						"date": "2014-04-11T10:19:39Z",
+						"author": "deepa",
+						"avatar": "https://www.gravatar.com/avatar/eaa2cae2cecdbc81aba5102839d84e34?d=mm&s=60",
+						"message": "<p>this helped! thank you!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "887461969",
+				"parentPostId": null,
+				"date": "2012-01-09T22:42:07Z",
+				"author": "Al",
+				"avatar": "https://www.gravatar.com/avatar/49831fda03b36f672d429ac0c0003213?d=mm&s=60",
+				"message": "<p>Thanks so much for posting this.  I was banging my head against the wall before I came across this.</p>",
+				"replies": []
+			},
+			{
+				"postId": "887461971",
+				"parentPostId": null,
+				"date": "2012-12-17T08:40:55Z",
+				"author": "YuC",
+				"avatar": "https://www.gravatar.com/avatar/5c227e952cf768c49cee40076b896808?d=mm&s=60",
+				"message": "<p>Hi Zach, i am having the same issue on IE and can't be reproduced, i will try your solution and test if it's OK, and do more test on this, thanks</p>",
+				"replies": []
+			}
+		]
+	},
+	"comments": [
+		{
+			"id": 750992,
+			"parentId": 0,
+			"url": "https://inneka.com/programming/css/websites-that-archive-cross-browser-cross-platform-css-js-bugs/",
+			"author": {},
+			"date": "2020-02-01T17:47:14.000Z",
+			"content": "Loading... \n         \n        \n        \n<h2>Websites that archive cross-browser, cross-platform css/js bugs?</h2>\n<pre>\nI'm about to develop my own browser inconsistency/bug compendium site but I'm wondering if I really need to - can we get a wiki of sites that do this already? I'm aware of a lot of them but I hope I'm not missing out on some major ones.\nI wanted mine to be more intuitive and social-like for most people, powered by tags and screenshots and test-case pages.\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p><strong>Non-Mobile:</strong></p>\n<ul><li>\n<p><a href=\"http://www.brunildo.org/test/\">http://www.brunildo.org/test/</a></p>\n</li>\n<li>\n<p><a href=\"http://www.gtalbot.org/BrowserBugsSection/\">http://www.gtalbot.org/BrowserBugsSection/</a></p>\n</li>\n<li>\n<p><a href=\"http://www.quirksmode.org/\">http://www.quirksmode.org/</a></p>\n</li>\n<li>\n<p><a href=\"http://www.quirksmode.org/bugreports/\">http://www.quirksmode.org/bugreports/</a></p>\n</li>\n<li>\n<p><a href=\"http://www.positioniseverything.net/\">http://www.positioniseverything.net/</a></p>\n</li>\n<li>\n<p><a href=\"http://reference.sitepoint.com/css\">http://reference.sitepoint.com/css</a></p>\n</li>\n<li>\n<p><a href=\"http://www.richinstyle.com/bugs/\">http://www.richinstyle.com/bugs/</a></p>\n</li>\n<li>\n<p><a href=\"http://haslayout.net/\">http://haslayout.net/</a></p>\n</li>\n<li>\n<p><a href=\"http://css-discuss.incutio.com/wiki/Main_Page\">http://css-discuss.incutio.com/wiki/Main_Page</a></p>\n</li>\n<li>\n<p><a href=\"https://web.archive.org/web/20100323052222/http://channel9.msdn.com/wiki/wiki/InternetExplorerSupportForCSS/\">https://web.archive.org/web/20100323052222/http://channel9.msdn.com/wiki/wiki/InternetExplorerSupportForCSS/</a></p>\n</li>\n<li>\n<p><a href=\"https://web.archive.org/web/20100125012019/http://channel9.msdn.com/wiki/wiki/InternetExplorerBugs\">https://web.archive.org/web/20100125012019/http://channel9.msdn.com/wiki/wiki/InternetExplorerBugs</a></p>\n</li>\n<li>\n<p><a href=\"http://css-class.com/test/bugs/ie/ie-bugs.htm\">http://css-class.com/test/bugs/ie/ie-bugs.htm</a></p>\n</li>\n<li>\n<p><a href=\"http://perfectionkills.com/category/cft/\">http://perfectionkills.com/category/cft/</a> (and <a href=\"http://kangax.github.com/cft/\">http://kangax.github.com/cft/</a>)</p>\n</li>\n<li>\n<p><a href=\"http://api.jquery.com/jQuery.support/\">http://api.jquery.com/jQuery.support/</a></p>\n</li>\n<li>\n<p><a href=\"http://www.css-lab.com/\">http://www.css-lab.com/</a></p>\n</li>\n<li>\n<p><a href=\"http://www.iecss.com/\">http://www.iecss.com/</a> ( Jonathan Neal’s roundup of default IE styles )</p>\n</li>\n<li>\n<p><a href=\"http://marc.baffl.co.uk/bugs.php\">http://marc.baffl.co.uk/bugs.php</a></p>\n</li>\n<li>\n<p><a href=\"http://dev.moonhenge.net/bugs/\">http://dev.moonhenge.net/bugs/</a></p>\n</li>\n<li>\n<p><a href=\"http://webbugtrack.blogspot.com/search/label/IE7\">http://webbugtrack.blogspot.com/search/label/IE7</a></p>\n</li>\n<li>\n<p><a href=\"http://www.enhanceie.com/ie/bugs.asp\">http://www.enhanceie.com/ie/bugs.asp</a></p>\n</li>\n<li>\n<p><a href=\"http://dean.edwards.name/ie7/compatibility/\">http://dean.edwards.name/ie7/compatibility/</a></p>\n</li>\n<li>\n<p><a href=\"https://web.archive.org/web/20101219060238/http://the-dees.webs.com/iepp1\">https://web.archive.org/web/20101219060238/http://the-dees.webs.com/iepp1</a></p>\n</li>\n<li>\n<p><a href=\"http://edskes.net/ie8overflowandexpandingboxbugs.htm\">http://edskes.net/ie8overflowandexpandingboxbugs.htm</a></p>\n</li>\n<li>\n<p><a href=\"http://simon.html5.org/test/ie8rc1-bugs/\">http://simon.html5.org/test/ie8rc1-bugs/</a></p>\n</li>\n<li>\n<p><a href=\"http://magicm.awardspace.com/ie/\">http://magicm.awardspace.com/ie/</a></p>\n</li>\n<li>\n<p><a href=\"http://www.howtocreate.co.uk/ie8.html\">http://www.howtocreate.co.uk/ie8.html</a></p>\n</li>\n<li>\n<p><a href=\"http://www.designdetector.com/2006/08/ie7-old-bugs-for-new.php\">http://www.designdetector.com/2006/08/ie7-old-bugs-for-new.php</a></p>\n\n\n\n\n\n\n\n</li>\n<li>\n<p><a href=\"https://web.archive.org/web/20130531191603/http://jhop.me/ie8-bugs\">https://web.archive.org/web/20130531191603/http://jhop.me/ie8-bugs</a></p>\n</li>\n<li>\n<p><a href=\"https://web.archive.org/web/20100218123106/http://test.rowanw.com/reports\">https://web.archive.org/web/20100218123106/http://test.rowanw.com/reports</a></p>\n</li>\n</ul><p><strong>Mobile:</strong></p>\n<ul><li><a href=\"http://www.quirksmode.org/mobile/\">http://www.quirksmode.org/mobile/</a></li>\n</ul>\n<h3>Answer 2:</h3>\n\n<p>Not been updated in a while but was good till last year: <a href=\"http://www.webdevout.net/\">http://www.webdevout.net/</a></p>\n\n<h3>Answer 3:</h3>\n\n<p>Here’s one that covers browser inconsistencies on File Inputs, w/ a nice color coded table and everything. </p>\n<p><a href=\"http://gordon-myers.com/?p=170\">http://gordon-myers.com/?p=170</a></p>\n\n<h3>Answer 4:</h3>\n\n<p>Here are some about my <a href=\"http://ihateinternetexplorer.com/\">favorite browser</a> (apart from those already mentioned):</p>\n<ul><li><a href=\"http://net.tutsplus.com/tutorials/html-css-techniques/9-most-common-ie-bugs-and-how-to-fix-them/\">9 Most Common IE Bugs and How to Fix Them</a></li>\n<li><a href=\"http://devlunch.smart.fm/2009/07/29/six-things-your-mom-never-told-you-about-debugging-javascript/\">Six Things Your Mom Never Told You About Debugging Javascript</a></li>\n<li><a href=\"http://msdn.microsoft.com/en-us/library/cc351024%28VS.85%29.aspx\">CSS Compatibility and Internet Explorer</a></li>\n<li><a href=\"http://www.zachleat.com/web/2010/02/24/array-sort/\">Internet Explorer Array.sort Unreliable</a></li>\n<li><a href=\"http://blogs.msdn.com/b/ie/archive/2009/03/12/site-compatibility-and-ie8.aspx\">Site Compatibility and IE8</a></li>\n<li><a href=\"http://channel9.msdn.com/Wiki/InternetExplorerProgrammingBugs/\">Internet Explorer Programming Bugs</a></li>\n</ul>\n<h3>Answer 5:</h3>\n\n<p><a href=\"http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/\">http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/</a></p>\n\n\n\n\n\n\n\n\n\n<h3>Our Awesome Free Tools</h3>\n<ul><li><a href=\"https://loitools.com/ip/\">Check your IP Address precisely</a></li>\n<li><a href=\"https://loitools.com/json-formatter/\">Online JSON Formatter with Syntax Highlight</a></li>\n<li><a href=\"https://loitools.com/css-minifier/\">Online CSS Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/js-minifier/\">Online Javascript Minifier Compressor</a></li>\n<li><a href=\"https://loitools.com/md5/\">Online MD5 Hash Generator</a></li>\n<li><a href=\"https://loitools.com/sha/\">Online SHA-1, SHA-256, SHA-512 Generator</a></li>\n<li><a href=\"https://loitools.com/base64/\">Online Base64 Encoder/Decoder</a></li>\n<li><a href=\"https://loitools.com/crc32/\">Online CRC-32 Calculator</a></li>\n<li><a href=\"https://loitools.com/3des/\">Online Triple DES Encryptor/Decryptor</a></li>\n<li><a href=\"https://loitools.com/clock/\">Best World Clocks</a></li>\n</ul><h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://loitools.com/\">All the Free, Online Tools you need</a></li>\n</ul>\n\n \n     Loading...",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 753078,
+			"parentId": 0,
+			"url": "https://oraerr.com/lib/javascript-sorting-array-of-mixed-strings-and-null-values/",
+			"author": {},
+			"date": "2020-02-07T01:03:53.000Z",
+			"content": "Loading... \n         \n        \n        \n<h2>javascript sorting array of mixed strings and null values</h2>\n<pre>\nWhen soritng an array made of a mix of strings, null values and zeros, i get the result not properly as exptected, null values seem to get sorted as if they were 'null' strings.\nI did this (tested on FireFox):\nvar arr1 = arr2 = [null, \"b\", \"c\", \"d\", null, \"e\", 0, \"g\", null, 0, \"h\", \"i\", \"l\", \"m\", \"n\", \"o\", \"p\", \"ne\", \"nur\", \"nimbus\"];\n\ndocument.write(\"SORTED ARRAY:<br />\");\narr1.sort();\narr1.forEach(function(val){document.write(val + \"; \")});\n\nAnd the result is:\nSORTED ARRAY:\n0; 0; b; c; d; e; g; h; i; l; m; n; ne; nimbus; null; null; null; nur; o; p; \nDo you have an idea of how to make the null value be considered like empty string during the sorting of the array, so that they appear 1st in the sorted arry along with the zeros.\nThanks!\n</pre>\n<h2>Solutions/Answers:</h2>\n<p></p><h3>Answer 1:</h3>\n\n<p>This will do what you want by converting everything to strings (in particular converting null to an empty string) and allowing JavaScript’s built-in string comparison do the work:</p>\n<pre><code>arr2.sort( function(a, b) \n{\n    /* \n       We avoid reuse of arguments variables in a sort\n       comparison function because of a bug in IE &lt;= 8.\n       See http://www.zachleat.com/web/array-sort/\n    */\n    var va = (a === null) ? \"\" : \"\" + a,\n        vb = (b === null) ? \"\" : \"\" + b;\n\n    return va &gt; vb ? 1 : ( va === vb ? 0 : -1 );\n} );\n</code></pre>\n\n<h3>Answer 2:</h3>\n\n<pre><code>[null, \"b\", \"c\", \"d\", null, \"e\", 0, \"g\", null, 0, \"h\", \"i\", \"l\", \"m\", \"n\", \"o\", \"p\", \"ne\", \"nur\", \"nimbus\"].sort(function (a,b) { \n   return a === null ? -1 : b === null ? 1 : a.toString().localeCompare(b);\n});\n</code></pre>\n\n<h3>Answer 3:</h3>\n\n<p>I came across this thread looking for a similar quick-and-dirty answer, but it didn’t touch on what I actually needed. “How to treat nulls”, float them to the top or bottom, etc. This is what I came up with:</p>\n<pre><code>    var list = [0, -1, 1, -1, 0, null, 1];\n\nvar sorter = function(direction){\n\n    // returns a sort function which treats `null` as a special case, either 'always higher' (1)\n    // or 'always lower' (-1)\n\n    direction = direction || 1;\n    var up = direction &gt; 0;\n\n    return function(a, b){\n\n        var r = -1,\n            aa = a == null ? undefined : a,\n            bb = b == null ? undefined : b,\n            careabout = up ? aa : bb\n        ;\n\n        if(aa == bb){\n            r = 0;\n        }else if(aa &gt; bb || careabout == undefined){\n            r = 1\n        }\n        return r;\n\n    }\n\n}\n\nvar higher = [].concat(list.sort(sorter(1)));    \nvar lower = [].concat(list.sort(sorter(-1)));\n\nconsole.log(lower[0] === null, lower);\nconsole.log(higher[higher.length - 1] === null, higher);\n\n// then, something that sorts something in a direction can use that direction to\n// determine where the nulls end up. `list` above ranged from negative-one to one, \n// with mixed zero and null values in between. If we want to view that list \n// from highest value to descending, we'd want the nulls to be treated as \n// 'always lower' so they appear at the end of the list.\n// If we wanted to view the list from lowest value to highest value we'd want the\n// nulls to be treated as `higher-than-anything` so they would appear at the bottom\n// list.\n\nvar sortThisArray = function(arr, direction){\n    var s = sorter(direction);\n    return arr.sort(function(a,b){\n       return direction * s(a,b) \n    });\n}\n\nconsole.log(sortThisArray(list, 1));\nconsole.log(sortThisArray(list, -1));\n</code></pre>\n\n<h3>Answer 4:</h3>\n\n<p>I’m unable to comment on answers yet, but I wanted to share my issue in case anyone else uses Tims solution.</p>\n<p>Tims solution worked great. HOWEVER … it would intermittently throw a ‘Number Expected’ error. Completely randomly.</p>\n<p>This link explains the problem and a workaround that solved the issue for me…</p>\n<p><a href=\"http://www.zachleat.com/web/array-sort/\">http://www.zachleat.com/web/array-sort/</a></p>\n<p>Hope this saves someone the time I wasted debugging/googling!</p>\n\n<h3>Answer 5:</h3>\n\n<p>I can’t add a comment yet to @robert’s comment, but here’s an expansion on @robert’s to add support for boolean:</p>\n<pre><code>[null, \"b\", \"c\", \"d\", null, \"e\", 0, undefined, \"g\", null, 0, \"h\", \"i\", true, \"l\", \"m\", undefined, \"n\", \"o\", \"p\", false, \"ne\", \"nur\", \"nimbus\"].sort(function (a,b) { \n    if (a === b) { return 0; }\n    if (a === null) {\n        return -1;\n    } else if (b === null) {\n        return 1;\n    } else if (typeof a === 'string') {\n        return a.localeCompare(b);\n    } else if (typeof a === 'number' || typeof a === 'boolean') {\n        if (a &lt; b) return -1;\n        if (a &gt; b) return 1;\n    }\n    return 0;\n});\n</code></pre>\n<p>also, per JS specification, undefineds always get booted to the end of the array…</p>\n\n<h3>Answer 6:</h3>\n\n<p>Use a custom ordering function that handles null values this way.</p>\n<pre><code>arr1.sort(function(a, b) {\n    if (a===null) a='';\n    if (b===null) b='';\n\n    if (''+a &lt; ''+b) return -1;\n    if (''+a &gt; ''+b) return  1;\n\n    return 0;\n});\n</code></pre>\n\n<h3>Answer 7:</h3>\n\n<p>My proposal to ascending sorting of an array with mixed values (numbers, strings, nulls, undefined values).</p>\n<pre><code>const arr = [null, 'b46', '+', 'Яромир Ягр', '76region', 2, 9999999, 'Эркер', '', 0, 3, 33, 765, '366', '77rus', 'ааэ', null, null, '200', undefined, 'ААА', '1', '40', 88, 'cat', undefined, 'apple', 4, '55555', 777, 12, 6, 0, '55', 8, null, undefined, '  Жу', 'жа', 'bbbb', '    Xz', '  Z', 'aa', undefined];\n\nconst sortAsc = (arr) =&gt; {\n  const undefinedAndNulls = arr.filter(val =&gt; val === null || val === undefined);\n  const numbers = arr.filter(val =&gt; !isNaN(val) &amp;&amp; val !== null);\n  const sortedNumbers = numbers.sort((a, b) =&gt; a - b);\n  const rest = arr.filter(val =&gt; val &amp;&amp; isNaN(val));\n  const sortedRest = rest.sort((a, b) =&gt; {\n    const val1 = a || '';\n    const val2 = b || '';\n    const valueA = val1.toString().trimLeft();\n    const valueB = val2.toString().trimLeft();\n    return valueA.localeCompare(valueB);\n  });\n  return [...undefinedAndNulls, ...sortedNumbers, ...sortedRest];\n};\n</code></pre>\n<p>result:</p>\n\n\n\n\n\n\n\n<pre><code>[null, null, null, undefined, undefined, null, undefined, undefined, '', 0, 0, '1', 2, 3, 4, 6, 8, 12, 33, '40', '55', 88, '200', '366', 765, 777, '55555', 9999999, '+', '76region', '77rus', 'aa', 'apple', 'b46', 'bbbb', 'cat', '    Xz', '  Z', 'ААА', 'ааэ', 'жа', '  Жу', 'Эркер', 'Яромир Ягр'];\n</code></pre>\n\n<h3>Answer 8:</h3>\n\n<p>Since I keep having different use cases for where to sort things like nulls and undefined, I created the following function to create a comparator using a set of options. Adding it here in case it’s useful for others.</p>\n<p>Note that this function doesn’t currently handle <code>NaN</code> and other situations like mixed types, but these could easily be added as options.</p>\n<p>Usage examples:</p>\n<pre><code>array.sort(createComparator({\n   property: 'path.to.property',\n   direction: 'desc',\n   sortNulls: 'top',\n   caseSensitive: true,\n});\n\narray.sort(createComparator({\n   accessor: value =&gt; value.date.valueOf(),\n   direction: 'desc',\n   sortNulls: 'top',\n   caseSensitive: true,\n});\n</code></pre>\n<p>And the code is:</p>\n<pre><code>import get from 'lodash/get';\n\n/**\n * Creates a comparator function for sorting given a set of options.\n *\n * @param {String}   options.property       \n *                   The path to the property to sort by\n *                   \n * @param {Function} options.accessor       \n *                   The function used to calculate the property to sort by. Takes the \n *                   item being sorted and returns the value to use for the sorting \n *                   comparison\n *                   \n * @param {String}   options.direction      \n *                   The direction of sort: `asc` or `desc`. Defaults to `asc`\n *                   \n * @param {String}   options.sortNulls      \n *                   Where null values should be sorted: `top` or `bottom`. Defaults \n *                   to `top`\n *                   \n * @param {String}   options.sortUndefineds \n *                   Where undefined values should be sorted: `top` or `bottom`. \n *                   Defaults to the value of `sortNulls`\n *                   \n * @param {boolean}  options.caseSensitive  \n *                   Whether to compare strings with the case of letters affecting \n *                   the sort. Defaults to `false`\n *\n * @return {Function} A comparator function that can be used with `Array.sort` to \n *                    sort an array\n */\nfunction createComparator({\n  property,\n  accessor,\n  direction = 'asc',\n  sortNulls = 'top',\n  sortUndefineds,\n  caseSensitive = false,\n}) {\n  const topNulls = sortNulls === 'top';\n\n  // Convert binary parameters to boolean to avoid doing it for each comparison\n  return advancedComparator.bind(null, {\n    accessor: property ? value =&gt; get(value, property) : accessor,\n    desc: direction === 'desc' ? -1 : 1,\n    topNulls,\n    topUndefineds: sortUndefineds != null ? sortUndefineds === 'top' : topNulls,\n    caseSensitive,\n  });\n}\n\nfunction advancedComparator(options, a, b) {\n  const { accessor, desc, topNulls, topUndefineds, caseSensitive } = options;\n\n  a = accessor ? accessor(a) : a;\n  b = accessor ? accessor(b) : b;\n\n  if (a === null) {\n    return b === null ? 0 : (topNulls ? -1 : 1);\n  } else if (b === null) {\n    return (topNulls ? 1 : -1);\n  }\n\n  if (typeof a === 'undefined') {\n    return typeof b === 'undefined' ? 0 : (topUndefineds ? -1 : 1);\n  } else if (typeof b === 'undefined') {\n    return (topUndefineds ? 1 : -1);\n  }\n\n  if (!caseSensitive) {\n    a = typeof a === 'string' ? a.toLowerCase() : a;\n    b = typeof b === 'string' ? b.toLowerCase() : b;\n  }\n\n  if (typeof a === 'string' &amp;&amp; typeof b === 'string') {\n    return a.localeCompare(b);\n  }\n\n  if (a &gt; b) { return 1 * desc; }\n  if (a &lt; b) { return -1 * desc; }\n\n  return 0;\n}\n</code></pre>\n\n<h3>Answer 9:</h3>\n\n<p>we can do it simplest way</p>\n<pre><code>sort: (a, b) =&gt; {\n        a = a.name || '';\n        b = b.name || '';\n        return a.localeCompare(b);\n    }\n</code></pre>\n\n<h3>Answer 10:</h3>\n\n<p>You can pass the sort a sortfunction</p>\n<pre><code>array.sort(sortfunction)\n</code></pre>\n<p>where sortfunction does the comparison you need (regular sorting with null values being greater than others)</p>\n\n<h3>Answer 11:</h3>\n\n<p>The browser is doing null.toString();  since null is an Object, this is pretty much Object.toString()…  which would return “null”  </p>\n<p>Pass in a parameter to sort, as your comparison function  [if the function returns something greater than 0, b is sorted lower than a]</p>\n<p>function would basically be:  </p>\n<pre><code>comparisonFunc = function(a, b)\n{\n if((a === null) &amp;&amp; (b === null)) return 0; //they're both null and equal\n else if((a === null) &amp;&amp; (b != null)) return -1; //move a downwards\n else if((a != null) &amp;&amp; (b === null)) return 1; //move b downwards\n else{\n  //Lexicographical sorting goes here\n }\n}\nset.sort(comparisonFunc);\n</code></pre>\n\n\n\n\n\n\n\n\n\n<h2>References</h2>\n<ul><li><a href=\"https://oraerr.com/\">Database Administration Tutorials</a></li>\n<li><a href=\"https://inneka.com/\">Programming Tutorials &amp; IT News</a></li>\n<li><a href=\"https://config9.com/\">Linux &amp; DevOps World</a></li>\n<li><a href=\"https://tuatphukien.com/\">Entertainment &amp; General News</a></li>\n<li><a href=\"https://pes4fun.com/\">Games &amp; eSport</a></li>\n</ul>\n\n \n     Loading...",
+			"type": "mention",
+			"via": "webmention"
+		}
+	]
+}

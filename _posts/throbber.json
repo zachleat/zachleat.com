@@ -1,0 +1,294 @@
+{
+	"comments": [
+		{
+			"id": 1782992,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958963609978748",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-02-19T15:56:49.000Z",
+			"content": "<p>This is the first of a few new web components I made for the <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> conference registration web site—more to come!</p>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/throbber/demo.html\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1782991,
+			"parentId": 0,
+			"url": "https://mastodon.beer/@tom_streeter/111959024027499829",
+			"author": {
+				"name": "Tom Streeter",
+				"url": "https://mastodon.beer/@tom_streeter",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4c7d16e6916377bf1e44c611a41b94d7cc438f2b72fe764ee7c29c3202c0444b.png"
+			},
+			"date": "2024-02-19T16:12:11.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I have no legitimate use for this, yet there’s a 12-year-old inside me that desperately wants to use it in a project.</p>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/throbber/demo.html\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1782995,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111959079161903012",
+			"author": {
+				"name": "Zach Leatherman :verify:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-02-19T16:26:12.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.beer/@tom_streeter\" class=\"u-url\">@<span>tom_streeter</span></a></span> if there were ever a time for illegitimate web component usage…</p>\n<a class=\"u-mention\" href=\"https://zachleat.github.io/throbber/demo.html\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1783286,
+			"parentId": 0,
+			"url": "https://www.alvinashcraft.com/2024/02/20/dew-drop-february-20-2024-4132/",
+			"author": {
+				"name": "Alvin A.",
+				"url": "https://www.alvinashcraft.com/author/admin/"
+			},
+			"date": "2024-02-20T11:46:27.000Z",
+			"content": "<h3><a></a>Top Links</h3>\n<ul><li><a href=\"http://feed.azuredevops.show/kent-beck-tidy-first-episode-285\">Kent Beck: Tidy First – Azure DevOps Podcast Episode 285</a> (Jeffrey Palermo)</li>\n<li><a href=\"https://www.telerik.com/blogs/exploring-4-behaviors-net-maui-community-toolkit\">Beyond the Basics: Exploring 4 Behaviors from the .NET MAUI Community Toolkit</a> (Leomaris Reyes)</li>\n<li><a href=\"https://blog.jetbrains.com/dotnet/2024/02/19/jetbrains-rider-and-the-net-aspire-plugin/\">JetBrains Rider and the .NET Aspire Plugin</a> (Khalid Abuhakmeh)</li>\n<li><a href=\"https://github.com/dotnet/wpf/blob/main/roadmap.md\">WPF Roadmap Updated</a> (Pankaj Chaurasia)</li>\n<li><a href=\"https://devblogs.microsoft.com/dotnet/developing-optimized-github-actions-with-net-and-native-aot/\">Developing Optimized GitHub Actions with .NET and Native AOT</a> (David Pine)</li>\n</ul><p></p>\n<h3><a></a>Web &amp; Cloud Development</h3>\n<ul><li><a href=\"https://techwatching.dev/posts/azure-sdk-di\">Using dependency injection with Azure .NET SDK</a> (Alexandre Nedelec)</li>\n<li><a href=\"https://andrewlock.net/using-named-pipes-with-aspnetcore-and-httpclient/\">Using named pipes with ASP.NET Core and HttpClient</a> (Andrew Lock)</li>\n<li><a href=\"https://geoffgraham.me/css-meditation-4-select-style-adjust-select-style-adjust-select-sty/\">CSS Meditation #4: Select, style, adjust. Select, style, adjust. Select, sty…</a> (Geoff Graham)</li>\n<li><a href=\"https://dotneteers.net/scaling-applications-in-azure-basic-strategies/\">Scaling Applications in Azure: Basic Strategies</a> (Peter Smulovics)</li>\n<li><a href=\"https://www.zachleat.com/web/throbber/\">throbber Web Component</a> (Zach Leatherman)</li>\n<li><a href=\"https://auth0.com/blog/get-started-with-auth0-terraform-provider/\">Get Started with the Auth0 Terraform Provider</a> (Deepu K. Sasidharan)</li>\n</ul><p></p>\n<h3><a></a>WinUI, .NET MAUI &amp; XAML</h3>\n<ul><li><a href=\"https://egvijayanand.in/2024/02/19/dotnet-maui-nightly-builds/\">.NET MAUI – Nightly Builds</a> (Vijay Anand E G)</li>\n</ul><p></p>\n<h3><a></a>Visual Studio &amp; .NET</h3>\n<ul><li><a href=\"https://code-maze.com/csharp-parallel-foreachasync-and-task-run-with-when-all/\">Parallel.ForEachAsync() and Task.Run() With When.All in C#</a> (Aneta Muslic)</li>\n<li><a href=\"https://hackernoon.com/avoiding-memory-leaks-with-weak-events-in-c?source=rss\">Avoiding Memory Leaks with Weak Events in C#</a> <em>and</em> <a href=\"https://hackernoon.com/how-to-use-google-sheets-in-c?source=rss\">How To Use Google Sheets in C#</a> (Nick Cosentino)</li>\n<li><a href=\"https://steven-giesel.com/blogPost/9994b00c-8bc2-4794-ae74-80e6ee4cd5e5\">Avoid multiple boolean parameters</a> (Steven Giesel)</li>\n<li><a href=\"https://devblogs.microsoft.com/oldnewthing/20240219-00/?p=109424\">Why can’t I trigger a manual blue screen crash by injecting the magic key sequence?</a> (Raymond Chen)</li>\n</ul><p></p>\n<h3><a></a>Design, Methodology, AI &amp; Testing</h3>\n<ul><li><a href=\"https://aistorybuilders.com/ViewBlogPost/3002\">Upgrading AIStoryBuilders</a> (Michael Washington)</li>\n</ul><p></p>\n<h3><a></a>Mobile, IoT &amp; Game Development</h3>\n<ul><li><a href=\"https://medium.com/flutter/how-flutter-facilitates-collaboration-between-designers-and-developers-at-l-r-05ec82c9f45e?source=rss----4da7dfd21a33---4\">How Flutter facilitates collaboration between designers and developers at L+R</a> (Ivan Leider)</li>\n</ul><p></p>\n<h3><a></a>Screencasts &amp; Videos</h3>\n<ul><li><a href=\"http://www.youtube.com/watch?v=3NFBD3DRbuQ\">Talks Tech #57 – Maureen Josephine – Flutter, Mobile, and Job Relocation From Kenya to Germany</a> (Women Who Code)</li>\n</ul><p></p>\n<h3><a></a>Podcasts</h3>\n<ul><li><a href=\"https://revisionpath.com/katrina-lenzly\">Revision Path – Katrina Lenzly</a> (Maurice Cherry)</li>\n<li><a href=\"https://scrummastertoolbox.libsyn.com/collaboration-over-isolated-performance-lessons-learned-as-a-scrum-product-owner-johannes-andersen\">Scrum Master Toolbox Podcast – Collaboration Over Isolated Performance, Lessons Learned as a Scrum Product Owner | Johannes Andersen</a> (Vasco Duarte)</li>\n<li><a href=\"https://powershell.org/2024/02/the-powershell-podcast-reaching-the-summit-grahams-onramp-journey/\">The PowerShell Podcast – Reaching the Summit: Graham’s OnRamp Journey</a> (James Petty)</li>\n<li><a href=\"https://syntax.fm/732\">Syntax Podcast Episode 732: Stop going to Spam: DMARC, SPF and DKIM Explained</a> (Wes Bos &amp; Scott Tolinski)</li>\n<li><a href=\"https://cloudsecuritypodcast.libsyn.com/ep160-dont-cloud-your-judgement-security-and-cloud-migration-again\">Google Cloud Security Podcast Episode 160 – Don’t Cloud Your Judgement: Security and Cloud Migration, Again!</a> (Anton A. Chuvakin)</li>\n<li><a href=\"https://changelog.com/news/82\">The Changelog News Podcast – Quantum computing gets a reality check</a> (Jerod Santo)</li>\n<li><a href=\"https://blog.scottlogic.com/2024/02/19/beyond-the-hype-can-technology-sustainability-really-make-a-difference.html\">Beyond the Hype: Can technology sustainability really make a difference?</a> (Colin Eberhardt)</li>\n<li><a href=\"https://oasisofcourage.com/156-why-some-engineers-should-definitely-start-a-consulting-business-with-jay-aigner/\">The Happy Engineer Podcast #156: Why Some Engineers Should Definitely Start a Consulting Business with Jay Aigner</a> (Max Ahumada)</li>\n</ul><p></p>\n<h3><a></a>Community &amp; Events</h3>\n<ul><li><a href=\"https://www.visitphilly.com/features/liberty-bell-awards/\">The Inaugural Visit Philadelphia Liberty Bell Awards</a> (Visit Philly)</li>\n</ul><p></p>\n<h3><a></a>PowerShell</h3>\n<ul><li><a href=\"https://www.itprotoday.com/powershell/powershell-parameter-validation-ensuring-valid-input-functions\">PowerShell Parameter Validation: Ensuring Valid Input for Functions</a> (Brien Posey)</li>\n</ul><p></p>\n<h3><a></a>Miscellaneous</h3>\n<ul><li><a href=\"https://blog.ploeh.dk/2024/02/19/extracting-data-from-a-small-csv-file-with-haskell/\">Extracting data from a small CSV file with Haskell</a> (Mark Seemann)</li>\n</ul><p></p>\n<h3><a></a>More Link Collections</h3>\n<ul><li><a href=\"https://blog.cwa.me.uk/2024/02/20/the-morning-brew-3885/\">The Morning Brew #3885</a> (Chris Alcock)</li>\n<li><a href=\"https://samestuffdifferentday.net/2024/02/19/Interesting-links-of-the-week-2024-8/\">Interesting links of the week 2024-8</a> (Michael Eaton)</li>\n</ul><p></p>\n<h3><a></a>The Geek Shelf</h3>\n<p><a href=\"https://www.amazon.com/dp/1835089984/?tag=amavin-20\"><img align=\"left\" style=\"margin:0px 4px 0px 0px;border:0px;float:left;background-image:none;\" src=\"https://m.media-amazon.com/images/I/51WbrSz58FL._SS135_.jpg\" border=\"0\" alt=\"51WbrSz58FL._SS135_.jpg\" /></a> <a href=\"https://www.amazon.com/dp/1835089984/?tag=amavin-20\">Refactoring with C#: Safely improve .NET applications and pay down technical debt with Visual Studio, .NET 8, and C# 12</a> (Matt Eland)<em> – Referral Link</em></p>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1782993,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109288357120282113",
+			"date": "2024-02-19T18:17:26.000Z",
+			"author": {
+				"name": "Chris Coleman",
+				"url": "https://mastodon.social/@Chris",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a73d82dc2dc9b1f25d7abac0fdd67e348d03fda78b7e6eb52edc60428d77c7f4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1782994,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-110651355105380677",
+			"date": "2024-02-19T18:17:28.000Z",
+			"author": {
+				"name": "Tyler Sticka",
+				"url": "https://social.lol/@tylersticka",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a3e8f10c9190a71c8b5813cb592445962f91252468058abbac98ecff88025553.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1782996,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109295176902307654",
+			"date": "2024-02-19T18:17:30.000Z",
+			"author": {
+				"name": "Ashur Cabrera",
+				"url": "https://front-end.social/@ashur",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/47f9e3cea1d21932327b192e59a0faf2fb69a491bb0f1df89b0ed69800960171.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1782997,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109303577371226380",
+			"date": "2024-02-19T18:17:30.000Z",
+			"author": {
+				"name": "Chris Burnell",
+				"url": "https://fediverse.repc.co/@chrisburnell",
+				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/303/577/371/226/380/original/271b7fd7c4c6c24b.webp"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783001,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109960775403450397",
+			"date": "2024-02-19T18:17:39.000Z",
+			"author": {
+				"name": "Matt Stein",
+				"url": "https://t00t.cloud/@mattrambles",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d08ea9d90dad7d7e3fcebf30fc5b46551a31bd97815f37103fa4a5d321aaee47.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783002,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109352939518629968",
+			"date": "2024-02-19T18:17:41.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783003,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109304428669626974",
+			"date": "2024-02-19T18:17:43.000Z",
+			"author": {
+				"name": "Eric Portis",
+				"url": "https://front-end.social/@eeeps",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/93963037db43514e4f4d937285433e20439416a6675504cad50a40dcf7443ae4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783004,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109631095637279355",
+			"date": "2024-02-19T18:17:45.000Z",
+			"author": {
+				"name": "Ariel Salminen",
+				"url": "https://social.design.systems/@ariel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/619092e8c5ef16baf9a444ae583b4b7568cb1771c1277adc8d60b3bad2b794ce.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783005,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109825200767030080",
+			"date": "2024-02-19T18:17:46.000Z",
+			"author": {
+				"name": "Stez",
+				"url": "https://mastodon.design/@stez",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ac9214a80762d6178300bbb1ca5410f2660ddaa1f255caca3333a54a6ba5eb90.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783006,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109698107255349105",
+			"date": "2024-02-19T18:17:47.000Z",
+			"author": {
+				"name": "Hasan Ali",
+				"url": "https://fosstodon.org/@hasanhaja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/53b551a370dc4bdd73533caca93a84206a320110ee47cdf95b1face4a05a5ced.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783007,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109289744030118387",
+			"date": "2024-02-19T18:17:52.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783118,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-111069938002733104",
+			"date": "2024-02-19T23:47:58.000Z",
+			"author": {
+				"name": "Scott Martin",
+				"url": "https://front-end.social/@scott",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/eab6a3e99c8fd7866af430c83793a236e6061deb976e6ee0704b8ca72ca34ead.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783119,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109299255717578777",
+			"date": "2024-02-19T23:47:58.000Z",
+			"author": {
+				"name": "Mike-麥-Mai-v1.618 ????",
+				"url": "https://mastodon.social/@mikemai2awesome",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a5e2b8ddd585509131b536d2ddb033aec2aa5192ee3352132623a737a82bbbff.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783120,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109933540955881814",
+			"date": "2024-02-19T23:48:00.000Z",
+			"author": {
+				"name": "Chris",
+				"url": "https://m.webtoo.ls/@swithinbank",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/54b10e5e19854635728431367b3e48491e503ecd8e0555fe478b58157498a569.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783122,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-109537084885684120",
+			"date": "2024-02-19T23:48:27.000Z",
+			"author": {
+				"name": "Eric Wallace",
+				"url": "https://mastodon.social/@ecrosstexas",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ff766823e2cadf38917792ab7370f2ebede63bfc6896743983d35ea18c4f815c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783257,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#favorited-by-110951225658828743",
+			"date": "2024-02-20T10:32:33.000Z",
+			"author": {
+				"name": "Conor C. Peterson :kirby_fly:",
+				"url": "https://social.linux.pizza/@wemic",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a8ea2a68cbd0a073cc07fb6dc0d74cc18131589a670de56a72f7f5980fbff3e6.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1782998,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#reblogged-by-109303577371226380",
+			"date": "2024-02-19T18:17:33.000Z",
+			"author": {
+				"name": "Chris Burnell",
+				"url": "https://fediverse.repc.co/@chrisburnell",
+				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/303/577/371/226/380/original/271b7fd7c4c6c24b.webp"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1782999,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#reblogged-by-109289744030118387",
+			"date": "2024-02-19T18:17:33.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783000,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#reblogged-by-109698107255349105",
+			"date": "2024-02-19T18:17:34.000Z",
+			"author": {
+				"name": "Hasan Ali",
+				"url": "https://fosstodon.org/@hasanhaja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/53b551a370dc4bdd73533caca93a84206a320110ee47cdf95b1face4a05a5ced.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783121,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#reblogged-by-109299255717578777",
+			"date": "2024-02-19T23:48:00.000Z",
+			"author": {
+				"name": "Mike-麥-Mai-v1.618 ????",
+				"url": "https://mastodon.social/@mikemai2awesome",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a5e2b8ddd585509131b536d2ddb033aec2aa5192ee3352132623a737a82bbbff.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1783258,
+			"url": "https://fediverse.zachleat.com/@zachleat/111958863321786657#reblogged-by-110951225658828743",
+			"date": "2024-02-20T10:32:33.000Z",
+			"author": {
+				"name": "Conor C. Peterson :kirby_fly:",
+				"url": "https://social.linux.pizza/@wemic",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a8ea2a68cbd0a073cc07fb6dc0d74cc18131589a670de56a72f7f5980fbff3e6.png"
+			},
+			"via": "webmention"
+		}
+	]
+}

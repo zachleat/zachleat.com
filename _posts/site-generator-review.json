@@ -1,0 +1,1503 @@
+{
+	"comments": [
+		{
+			"id": 1629829,
+			"parentId": 0,
+			"url": "https://www.imoneyhub.com/2023/02/24/the-javascript-site-generator-review-2023/",
+			"author": {
+				"name": "admin",
+				"url": "https://www.imoneyhub.com/author/admin/"
+			},
+			"date": "2023-02-24T22:11:30.000Z",
+			"content": "<p>  submitted by   <a href=\"https://www.reddit.com/user/magenta_placenta\"> /u/magenta_placenta </a> <br /><span><a href=\"https://www.zachleat.com/web/site-generator-review/\">[link]</a></span>   <span><a href=\"https://www.reddit.com/r/javascript/comments/11b395e/the_javascript_site_generator_review_2023/\">[comments]</a></span></p>\n<p><a href=\"https://www.reddit.com/r/javascript/comments/11b395e/the_javascript_site_generator_review_2023/\" style=\"font-style:italic;\">* This article was originally published here</a></p>\n\n\t\t\t\n\t\t\t\t<a href=\"https://www.imoneyhub.com/tag/javascript/\">javascript</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1629868,
+			"parentId": 0,
+			"url": "https://twitter.com/hyunbinseo97/status/1629264548481097728",
+			"author": {
+				"name": "현빈 | Hyunbin",
+				"url": "https://twitter.com/hyunbinseo97",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/085e4acc16f6e41022c2baa01ec0964fac3339ce742d5a4b8ecf446dc737acef.jpg"
+			},
+			"date": "2023-02-24T23:38:33.000Z",
+			"content": "11ty 제작자의 정적 웹사이트 제작 도구 비교 리뷰. 아무리 봐도 너무 지엽적인데. 딱 다음 요소들만 다룬다. 패키지 설치 시간과 용량도 중요하긴 한데…\n\nnpm install times\nclient JavaScript baseline\nnode_modules weight\nnpm auditing\ntelemetry\n\n<a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1629791,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346943845015",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-02-25T01:24:06.000Z",
+			"content": "<p>(it has evolved to its final form: the blog post)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629788,
+			"parentId": 0,
+			"url": "https://mastodon.social/@matthiasott/109921373585782531",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://mastodon.social/@matthiasott",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/692a4ec0d17295cc8035cc276bdf0de1ec88a1103a7a37e586f5b65741bf2380.png"
+			},
+			"date": "2023-02-25T01:30:53.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> (good)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629789,
+			"parentId": 0,
+			"url": "https://toot.cafe/@slightlyoff/109921817406830292",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://toot.cafe/@slightlyoff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
+			},
+			"date": "2023-02-25T03:23:45.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> per other thread, would love to see gzip sizes for default JS, and also, is this a script I can run? If not, would you like for one to exist?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629790,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921852028356948",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-02-25T03:32:33.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://toot.cafe/@slightlyoff\" class=\"u-url\">@<span>slightlyoff</span></a></span> whew, yes—I would love to have this automated.</p><p>I don’t think it would be maintainable to do so, unfortunately, I’d expect a fair bit of churn in framework “Getting Started” happy paths?</p><p>Certainly not worth it for how often I do these (once or twice a year)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629826,
+			"parentId": 0,
+			"url": "https://toot.cafe/@slightlyoff/109921894829002470",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://toot.cafe/@slightlyoff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
+			},
+			"date": "2023-02-25T03:43:26.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> will noodle on it</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629793,
+			"parentId": 0,
+			"url": "https://mastodon.social/@tevo/109921945407561908",
+			"author": {
+				"name": "Steffen",
+				"url": "https://mastodon.social/@tevo",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9974f9a47aa7c3da0e0cca9c35020ca51cd73a2fcaea3b3f51f47807b616e964.png"
+			},
+			"date": "2023-02-25T03:56:18.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Hmmm I guess I have some objections regarding the client side JS part. I think those which ship client side bundles here shouldn’t be compared to those which don’t, just like that. They represent a different architectural style.</p><p>Some words about that … that it’s not apples vs oranges but maybe apples vs pears would be nice. Or about the valid conclusions despite the differences.</p><p>(At least for e.g. SvelteKit, one can just create a pure static html page per static-adapter.)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1630365,
+			"parentId": 0,
+			"url": "https://mastodon.social/@tevo/109921974278005280",
+			"author": {
+				"name": "Steffen",
+				"url": "https://mastodon.social/@tevo",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9974f9a47aa7c3da0e0cca9c35020ca51cd73a2fcaea3b3f51f47807b616e964.png"
+			},
+			"date": "2023-02-25T04:03:38.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Apart from that it’s nice to see those comparisons nevertheless! Thanks!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1630366,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109922065210668915",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-02-25T04:26:46.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@tevo\" class=\"u-url\">@<span>tevo</span></a></span> ah—just to be clear I don’t accept “sites versus apps” as a useful dichotomy when building things for the web—and further I would argue that this divide has done great damage!</p><p>I might also say it like this, a bit more cheekily: <a href=\"https://www.zachleat.com/twitter/1539332322549538816/\"><span>https://www.</span><span>zachleat.com/twitter/153933232</span><span>2549538816/</span></a></p>\n<a href=\"https://www.zachleat.com/twitter/1539332322549538816/\">zachleat’s Twitter Archive—№ 43,886</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629894,
+			"parentId": 0,
+			"url": "https://indieweb.social/@brianleroux/109922551996532020",
+			"author": {
+				"name": "Brian LeRoux 💚",
+				"url": "https://indieweb.social/@brianleroux",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg"
+			},
+			"date": "2023-02-25T06:30:34.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://bell.bz/@andy\" class=\"u-url\">@<span>andy</span></a></span> if remix counts why would enhance.dev not count ? Idk fwiw (cc <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> )</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/site-generator-review/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629892,
+			"parentId": 0,
+			"url": "https://mastodon.online/@walpolea/109922622612673413",
+			"author": {
+				"name": "Andrew Walpole",
+				"url": "https://mastodon.online/@walpolea",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c22a5a90f4ccece3e9f8786e80419d97cd9e80b1a1430a44e980e3f5e214440c.gif"
+			},
+			"date": "2023-02-25T06:48:31.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@brianleroux\" class=\"u-url\">@<span>brianleroux</span></a></span> <span class=\"h-card\"><a href=\"https://bell.bz/@andy\" class=\"u-url\">@<span>andy</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Too many level heads, not enough <a href=\"https://mastodon.online/tags/hotdrama\">#<span>hotdrama</span></a> twitter marketing 🌶️</p>\n<a class=\"p-category\" href=\"https://bell.bz/tags/hotdrama\">hotdrama</a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/site-generator-review/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1629893,
+			"parentId": 0,
+			"url": "https://indieweb.social/@brianleroux/109922626634714609",
+			"author": {
+				"name": "Brian LeRoux 💚",
+				"url": "https://indieweb.social/@brianleroux",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg"
+			},
+			"date": "2023-02-25T06:49:33.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.online/@walpolea\" class=\"u-url\">@<span>walpolea</span></a></span> <span class=\"h-card\"><a href=\"https://bell.bz/@andy\" class=\"u-url\">@<span>andy</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> we all like html here now I think if I read the drama correct 💀</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/site-generator-review/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1630113,
+			"parentId": 0,
+			"url": "https://twitter.com/frontenddogma/status/1629432712070152195",
+			"author": {
+				"name": "Frontend Dogma",
+				"url": "https://twitter.com/frontenddogma",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7fef0c3e728e532d829ec49a8f7129557bd31cf0d3585fad94ecb61c3e79fa8d.jpg"
+			},
+			"date": "2023-02-25T10:46:46.000Z",
+			"content": "The JavaScript Site Generator Review, 2023, by @zachleat@zachleat.com:\n\n<a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1630364,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/109925845567664365",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-02-25T20:28:10.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@krinkle\" class=\"u-url\">@<span>krinkle</span></a></span> <span class=\"h-card\"><a href=\"https://toot.cafe/@slightlyoff\" class=\"u-url\">@<span>slightlyoff</span></a></span> I did this with my markdown benchmark last year since it was doing build performance. If folks are interested in another repo of starters I can open source it but I didn’t do it this time because I wasn’t running any build performance tests? Maybe that separation feels academic</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1630367,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@gotofritz/109926696616840269",
+			"author": {
+				"name": "gotofritz",
+				"url": "https://fosstodon.org/@gotofritz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7d968a6371f61274fff7b2df4c442206a7bba3d3998907d7333a32345237a56f.png"
+			},
+			"date": "2023-02-26T00:04:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> is \"node_modules WEIGHT\" really something worth measuring and worrying about?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1631127,
+			"parentId": 0,
+			"url": "https://twitter.com/fstackbulletin/status/1630128139228643329",
+			"author": {
+				"name": "FullStack Bulletin",
+				"url": "https://twitter.com/fstackbulletin",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/3704dca248c3d9c00a5f50b5e009639cb4224d1d2e29be0e81ed4cd7c98619af.jpg"
+			},
+			"date": "2023-02-27T08:50:09.000Z",
+			"content": "The JavaScript Site Generator Review, 2023— <a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1631484,
+			"parentId": 0,
+			"url": "https://sharewaredepo.com/index.php/2023/02/27/the-javascript-site-generator-review-2023-2/top-web-development-news/admin/",
+			"author": {},
+			"date": "2023-02-27T22:10:39.000Z",
+			"content": "<p>It’s time again for every framework author’s favorite: The JavaScript Site Generator Review, February 2023 edition.</p>\n\n<p><br /><a href=\"https://www.zachleat.com/web/site-generator-review/\"> Go to Source of this post </a> <br />\nAuthor Of this post: @zachleat<br />\nTitle Of post: The JavaScript Site Generator Review, 2023<br />\nAuthor Link: {authorlink}</p>\n                    \n                            \n                \n\t<h2>Continue Reading</h2>\n\t\t<a href=\"https://sharewaredepo.com/index.php/2023/02/27/scribble-diffusion-3/top-web-development-news/admin/\"><span>Previous</span> Scribble Diffusion</a><a href=\"https://sharewaredepo.com/index.php/2023/02/27/the-javascript-site-generator-review-2023-3/top-web-development-news/admin/\"><span>Next</span> The JavaScript Site Generator Review, 2023</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1631492,
+			"parentId": 0,
+			"url": "https://twitter.com/hackdesign/status/1630334486792511488",
+			"author": {
+				"name": "Hack Design",
+				"url": "https://twitter.com/hackdesign",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cbe5a0d2b260108bcbe8634d9c3018aafe6f8a0b8c64b49b600c75ca26778147.png"
+			},
+			"date": "2023-02-27T22:30:06.000Z",
+			"content": "The JavaScript Site Generator Review, 2023 <a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1631501,
+			"parentId": 0,
+			"url": "https://twitter.com/1Marc/status/1630340414883475457",
+			"author": {
+				"name": "Marc Grabanski",
+				"url": "https://twitter.com/1Marc",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/52b06867b0f68e8a67b1d1426eff71e74b3c1b5cb8845bdb8580ae86c4f53bac.jpg"
+			},
+			"date": "2023-02-27T22:53:39.000Z",
+			"content": "JavaScript site generator review, 2023 <a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1633682,
+			"parentId": 0,
+			"url": "https://twitter.com/spawnrider/status/1631714291194707973",
+			"author": {
+				"name": "Yohann Ciurlik 🤖",
+				"url": "https://twitter.com/spawnrider",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/273d92473129bca842a6a28fedec311d3391bb6431fd45209c3044d2d6855d83.jpg"
+			},
+			"date": "2023-03-03T17:52:57.000Z",
+			"content": "The 2023 Javascript site generator review - <a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a> <a href=\"https://twitter.com/search?q=%23javascript\">#javascript</a> <a href=\"https://twitter.com/search?q=%23site\">#site</a> <a href=\"https://twitter.com/search?q=%23astro\">#astro</a> <a href=\"https://twitter.com/search?q=%23remix\">#remix</a> <a href=\"https://twitter.com/search?q=%23genetator\">#genetator</a> <a href=\"https://twitter.com/search?q=%23static\">#static</a> <a href=\"https://twitter.com/search?q=%23dev\">#dev</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1634085,
+			"parentId": 0,
+			"url": "https://twitter.com/tttttt_621_s/status/1631877511956013057",
+			"author": {
+				"name": "Takahiro SHINODA",
+				"url": "https://twitter.com/tttttt_621_s",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/fde36da7b4bc22a3971a290df4ada0599751f0586e500a950c3d39ddbdb6ef95.jpg"
+			},
+			"date": "2023-03-04T04:41:32.000Z",
+			"content": "レビューだ👀\n\n<a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1634544,
+			"parentId": 0,
+			"url": "https://twitter.com/urbanisierung/status/1632132690676727810",
+			"author": {
+				"name": "Adam",
+				"url": "https://twitter.com/urbanisierung",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6b227cee5e3b7348b73bfb9690c5963529c74248db71d02c640a73d20f6020c1.jpg"
+			},
+			"date": "2023-03-04T21:35:31.000Z",
+			"content": "<a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1634721,
+			"parentId": 0,
+			"url": "https://twitter.com/gokul_i/status/1632391162391834624",
+			"author": {
+				"name": "Gokul",
+				"url": "https://twitter.com/gokul_i",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/463b321076a99575653085a1b344ce8fa3c39c150a76a2c907f6198e0ead9303.jpg"
+			},
+			"date": "2023-03-05T14:42:36.000Z",
+			"content": "🤓 Good read: Javascript site generator review in 2023\n<a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1635871,
+			"parentId": 0,
+			"url": "https://twitter.com/tatertoten/status/1633135888073912320",
+			"author": {
+				"name": "Charles Schmidt",
+				"url": "https://twitter.com/tatertoten",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/43eaea0249d5431d1c896d16db7c2336aad112b4098b4c6764cd86837509e7d4.jpg"
+			},
+			"date": "2023-03-07T16:01:52.000Z",
+			"content": "<a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1636248,
+			"parentId": 0,
+			"url": "https://twitter.com/speckyboy/status/1633285156609093634",
+			"author": {
+				"name": "Speckyboy",
+				"url": "https://twitter.com/speckyboy",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/5bececba205aef54b2993312ad13c9d70f4ff0191e68647885427a4ebdfd6533.jpg"
+			},
+			"date": "2023-03-08T01:55:00.000Z",
+			"content": "The JavaScript Site Generator Review, 2023 <a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1636465,
+			"parentId": 0,
+			"url": "https://twitter.com/cvekaso/status/1633426254454980609",
+			"author": {
+				"name": "Sasa",
+				"url": "https://twitter.com/cvekaso",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/52cabf4aa7c00a8824d8d8c7d996216adcc1ea4e710ea395e2f326a9dd0de06b.jpg"
+			},
+			"date": "2023-03-08T11:15:41.000Z",
+			"content": "lol, this made me recheck who wrote the article <a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a> 😅\n<a class=\"u-mention\" href=\"https://twitter.com/ManuEomm\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/loige\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1638804,
+			"parentId": 0,
+			"url": "https://dcdailystory.com/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {
+				"url": "https://dcdailystory.com/author/lornaleasure/"
+			},
+			"date": "2023-03-10T06:00:00.000Z",
+			"content": "<span><span></span> <span></span> <span></span></span><p> <br /></p>\n\n<p><a href=\"https://1.envato.market/c/78798/298927/4662?subId1=weekly-news\"><img src=\"https://speckyboy.com/wp-content/uploads/2019/08/envato-elements-weekly-news.png\" alt=\"Envato Elements\" width=\"300\" height=\"600\" /></a></p>\n<p><a href=\"https://stackdiary.com/build-tools-for-web-development/\">The Most Popular Build Tools for Front-end Developers in 2023</a> – Discover tools that will help you build, test, and deploy front-end code.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-01.jpg\" alt=\"Example from The Most Popular Build Tools for Front-end Developers in 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/css-javascript-snippets-custom-text-paths/\">8 CSS &amp; JavaScript Snippets for Custom Text Paths</a> – Examples of text path effects that mimic print design.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-02.jpg\" alt=\"Example from 8 CSS JavaScript Snippets for Custom Text Paths\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://tympanus.net/codrops/2023/03/01/double-image-hover-effects-with-clip-path-animations/\">Double Image Hover Effects with Clip-Path Animations</a> – Effects that reveal images in clever ways.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-03.jpg\" alt=\"Example from Double Image Hover Effects with Clip-Path Animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://scrollbar.app/\">Scrollbar.app</a> – This app makes it easy to create custom scroll bars.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-04.jpg\" alt=\"Example from Scrollbar.app\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/helping-clients-master-ecommerce/\">How to Help Your Clients Master eCommerce</a> – Teach clients to manage their eCommerce websites and guide them towards success.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-05.jpg\" alt=\"Example from How to Help Your Clients Master eCommerce\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/\">A Guide To Accessible Form Validation</a> – Items to consider when implementing form validation techniques.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-06.jpg\" alt=\"Example from A Guide To Accessible Form Validation\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.robinwieruch.de/react-libraries/\">React Libraries for 2023</a> – How to choose the right library for your React application.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-07.png\" alt=\"Example from React Libraries for 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.zachleat.com/web/site-generator-review/\">The JavaScript Site Generator Review, 2023</a> – A look at the top site generation tools on the market.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-08.png\" alt=\"Example from The JavaScript Site Generator Review, 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/free-lightroom-luts/\">25 Free Lightroom LUTs for Stunning Photo Effects</a> – Use these tools to transform your photos into stylish, eye-catching images.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-09.jpg\" alt=\"Example from 25 Free Lightroom LUTs for Stunning Photo Effects\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://joshcollinsworth.com/blog/great-transitions\">Tips for Better CSS Transitions &amp; Animations</a> – Learn to create animations that add a high-quality look to your designs.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-10.png\" alt=\"Example from Ten tips for better CSS transitions and animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.mondriangenerator.io/\">Mondrian Generator</a> – Use this tool to create unique works of art.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-11.png\" alt=\"Example from Mondrian Generator\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/grumpy-designer-ai-hype-machine/\">Why the Grumpy Designer Isn’t Sold on the AI Hype Machine</a> – AI has massive potential. But it’s not necessarily the Utopian dream some are selling.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-12.jpg\" alt=\"Example from Why the Grumpy Designer Isn’t Sold on the AI Hype Machine\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.btw.so/tools/chat-gpt-tailwind-css-components\">Generate Tailwind CSS Components Using ChatGPT</a> – This AI-powered tool will craft custom components for the popular CSS framework.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-13.png\" alt=\"Example from Generate Tailwind CSS components using ChatGPT\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://rauno.me/interfaces\">Web Interface Guidelines</a> – A non-exhaustive list of details that make a good web interface.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-14.png\" alt=\"Example from Web Interface Guidelines\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://openai.com/blog/introducing-chatgpt-and-whisper-apis\">Introducing ChatGPT &amp; Whisper APIs</a> – You can now integrate these popular AI tools into your own apps and products.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-15.jpg\" alt=\"Example from Introducing ChatGPT and Whisper APIs\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://nomad.blog/2023/03/01/wordpress-6-2-source-of-truth/\">WordPress 6.2 Source of Truth</a> – A comprehensive list of features and changes in the upcoming version.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-16.jpg\" alt=\"Example from WordPress 6.2 Source of Truth\" width=\"750\" height=\"500\" /></p>\n\n<p><br /><br /><a href=\"https://speckyboy.com/weekly-news-for-designers-685/\">Source link </a></p>\n\n\n\t<h3><span><em>Related</em></span></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638793,
+			"parentId": 0,
+			"url": "https://laurelnewsstation.com/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {
+				"url": "https://laurelnewsstation.com/author/julianadavis/"
+			},
+			"date": "2023-03-10T06:00:00.000Z",
+			"content": "<span><span></span> <span></span> <span></span></span><p> <br /></p>\n\n<p><a href=\"https://1.envato.market/c/78798/298927/4662?subId1=weekly-news\"><img src=\"https://speckyboy.com/wp-content/uploads/2019/08/envato-elements-weekly-news.png\" alt=\"Envato Elements\" width=\"300\" height=\"600\" /></a></p>\n<p><a href=\"https://stackdiary.com/build-tools-for-web-development/\">The Most Popular Build Tools for Front-end Developers in 2023</a> – Discover tools that will help you build, test, and deploy front-end code.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-01.jpg\" alt=\"Example from The Most Popular Build Tools for Front-end Developers in 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/css-javascript-snippets-custom-text-paths/\">8 CSS &amp; JavaScript Snippets for Custom Text Paths</a> – Examples of text path effects that mimic print design.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-02.jpg\" alt=\"Example from 8 CSS JavaScript Snippets for Custom Text Paths\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://tympanus.net/codrops/2023/03/01/double-image-hover-effects-with-clip-path-animations/\">Double Image Hover Effects with Clip-Path Animations</a> – Effects that reveal images in clever ways.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-03.jpg\" alt=\"Example from Double Image Hover Effects with Clip-Path Animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://scrollbar.app/\">Scrollbar.app</a> – This app makes it easy to create custom scroll bars.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-04.jpg\" alt=\"Example from Scrollbar.app\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/helping-clients-master-ecommerce/\">How to Help Your Clients Master eCommerce</a> – Teach clients to manage their eCommerce websites and guide them towards success.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-05.jpg\" alt=\"Example from How to Help Your Clients Master eCommerce\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/\">A Guide To Accessible Form Validation</a> – Items to consider when implementing form validation techniques.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-06.jpg\" alt=\"Example from A Guide To Accessible Form Validation\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.robinwieruch.de/react-libraries/\">React Libraries for 2023</a> – How to choose the right library for your React application.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-07.png\" alt=\"Example from React Libraries for 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.zachleat.com/web/site-generator-review/\">The JavaScript Site Generator Review, 2023</a> – A look at the top site generation tools on the market.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-08.png\" alt=\"Example from The JavaScript Site Generator Review, 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/free-lightroom-luts/\">25 Free Lightroom LUTs for Stunning Photo Effects</a> – Use these tools to transform your photos into stylish, eye-catching images.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-09.jpg\" alt=\"Example from 25 Free Lightroom LUTs for Stunning Photo Effects\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://joshcollinsworth.com/blog/great-transitions\">Tips for Better CSS Transitions &amp; Animations</a> – Learn to create animations that add a high-quality look to your designs.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-10.png\" alt=\"Example from Ten tips for better CSS transitions and animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.mondriangenerator.io/\">Mondrian Generator</a> – Use this tool to create unique works of art.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-11.png\" alt=\"Example from Mondrian Generator\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/grumpy-designer-ai-hype-machine/\">Why the Grumpy Designer Isn’t Sold on the AI Hype Machine</a> – AI has massive potential. But it’s not necessarily the Utopian dream some are selling.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-12.jpg\" alt=\"Example from Why the Grumpy Designer Isn’t Sold on the AI Hype Machine\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.btw.so/tools/chat-gpt-tailwind-css-components\">Generate Tailwind CSS Components Using ChatGPT</a> – This AI-powered tool will craft custom components for the popular CSS framework.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-13.png\" alt=\"Example from Generate Tailwind CSS components using ChatGPT\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://rauno.me/interfaces\">Web Interface Guidelines</a> – A non-exhaustive list of details that make a good web interface.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-14.png\" alt=\"Example from Web Interface Guidelines\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://openai.com/blog/introducing-chatgpt-and-whisper-apis\">Introducing ChatGPT &amp; Whisper APIs</a> – You can now integrate these popular AI tools into your own apps and products.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-15.jpg\" alt=\"Example from Introducing ChatGPT and Whisper APIs\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://nomad.blog/2023/03/01/wordpress-6-2-source-of-truth/\">WordPress 6.2 Source of Truth</a> – A comprehensive list of features and changes in the upcoming version.<br /><img src=\"https://speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-16.jpg\" alt=\"Example from WordPress 6.2 Source of Truth\" width=\"750\" height=\"500\" /></p>\n\n<p><br /><br /><a href=\"https://speckyboy.com/weekly-news-for-designers-685/\">Source link </a></p>\n\n\n\t<h3><span><em>Related</em></span></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638103,
+			"parentId": 0,
+			"url": "https://lootrunners.com/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {
+				"url": "https://lootrunners.com/author/katiep/"
+			},
+			"date": "2023-03-10T06:00:00.000Z",
+			"content": "<span><span></span> <span></span> <span></span></span><p></p><p><a href=\"https://stackdiary.com/build-tools-for-web-development/\">The Most Popular Build Tools for Front-end Developers in 2023</a> – Uncover instruments that may enable you construct, check, and deploy front-end code.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-01.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from The Most Popular Build Tools for Front-end Developers in 2023\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/css-javascript-snippets-custom-text-paths/\">8 CSS &amp; JavaScript Snippets for Custom Text Paths</a> – Examples of textual content path results that mimic print design.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-02.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from 8 CSS JavaScript Snippets for Custom Text Paths\" width=\"750\" height=\"500\" /><p><a href=\"https://tympanus.net/codrops/2023/03/01/double-image-hover-effects-with-clip-path-animations/\">Double Image Hover Effects with Clip-Path Animations</a> – Results that reveal photos in intelligent methods.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-03.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from Double Image Hover Effects with Clip-Path Animations\" width=\"750\" height=\"500\" /><p><a href=\"https://scrollbar.app/\">Scrollbar.app</a> – This app makes it straightforward to create customized scroll bars.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-04.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from Scrollbar.app\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/helping-clients-master-ecommerce/\">How to Help Your Clients Master eCommerce</a> – Train purchasers to handle their eCommerce web sites and information them in the direction of success.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-05.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from How to Help Your Clients Master eCommerce\" width=\"750\" height=\"500\" /><p><a href=\"https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/\">A Guide To Accessible Form Validation</a> – Objects to contemplate when implementing type validation methods.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-06.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from A Guide To Accessible Form Validation\" width=\"750\" height=\"500\" /><p><a href=\"https://www.robinwieruch.de/react-libraries/\">React Libraries for 2023</a> – How to decide on the appropriate library to your React software.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-07.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from React Libraries for 2023\" width=\"750\" height=\"500\" /><p><a href=\"https://www.zachleat.com/web/site-generator-review/\">The JavaScript Site Generator Review, 2023</a> – A have a look at the highest website era instruments in the marketplace.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-08.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from The JavaScript Site Generator Review, 2023\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/free-lightroom-luts/\">25 Free Lightroom LUTs for Stunning Photo Effects</a> – Use these instruments to rework your images into fashionable, eye-catching photos.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-09.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from 25 Free Lightroom LUTs for Stunning Photo Effects\" width=\"750\" height=\"500\" /><p><a href=\"https://joshcollinsworth.com/blog/great-transitions\">Tips for Better CSS Transitions &amp; Animations</a> – Study to create animations that add a high-quality look to your designs.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-10.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from Ten tips for better CSS transitions and animations\" width=\"750\" height=\"500\" /><p><a href=\"https://www.mondriangenerator.io/\">Mondrian Generator</a> – Use this instrument to create distinctive artistic endeavors.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-11.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from Mondrian Generator\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/grumpy-designer-ai-hype-machine/\">Why the Grumpy Designer Isn’t Sold on the AI Hype Machine</a> – AI has large potential. But it surely’s not essentially the Utopian dream some are promoting.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-12.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from Why the Grumpy Designer Isn’t Sold on the AI Hype Machine\" width=\"750\" height=\"500\" /><p><a href=\"https://www.btw.so/tools/chat-gpt-tailwind-css-components\">Generate Tailwind CSS Components Using ChatGPT</a> – This AI-powered instrument will craft customized elements for the favored CSS framework.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-13.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from Generate Tailwind CSS components using ChatGPT\" width=\"750\" height=\"500\" /><p><a href=\"https://rauno.me/interfaces\">Web Interface Guidelines</a> – A non-exhaustive record of particulars that make a superb internet interface.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-14.png?resize=750%2C500&amp;ssl=1\" alt=\"Example from Web Interface Guidelines\" width=\"750\" height=\"500\" /><p><a href=\"https://openai.com/blog/introducing-chatgpt-and-whisper-apis\">Introducing ChatGPT &amp; Whisper APIs</a> – Now you can combine these well-liked AI instruments into your personal apps and merchandise.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-15.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from Introducing ChatGPT and Whisper APIs\" width=\"750\" height=\"500\" /><p><a href=\"https://nomad.blog/2023/03/01/wordpress-6-2-source-of-truth/\">WordPress 6.2 Source of Truth</a> – A complete record of options and adjustments within the upcoming model.<br /></p><img src=\"https://i0.wp.com/speckyboy.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-16.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Example from WordPress 6.2 Source of Truth\" width=\"750\" height=\"500\" /><p><a href=\"https://speckyboy.com/weekly-news-for-designers-685/\">Source link </a></p><h3><span><em>Related</em></span></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1637826,
+			"parentId": 0,
+			"url": "https://speckyboy.com/weekly-news-for-designers-685/",
+			"author": {},
+			"date": "2023-03-10T11:33:58.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1637842,
+			"parentId": 0,
+			"url": "https://brisk-web-services.com/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-10T11:59:38.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1637917,
+			"parentId": 0,
+			"url": "https://desainae.com/berita-mingguan-untuk-desainer-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-10T13:48:08.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638074,
+			"parentId": 0,
+			"url": "https://www.askorhelp.com/2023/03/10/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-10T16:38:07.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638200,
+			"parentId": 0,
+			"url": "https://gripp-d.nl/wekelijks-televisiejournaal-voordat-ontwerpers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-10T19:47:03.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638228,
+			"parentId": 0,
+			"url": "https://twitter.com/1ilhas/status/1634295518955204608",
+			"author": {
+				"name": "William Oliveira",
+				"url": "https://twitter.com/1ilhas",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/237f288c0d731fede07bc275a989bb44484c9fba7185fcab694fc37c1257223d.jpg"
+			},
+			"date": "2023-03-10T20:49:50.000Z",
+			"content": "The JavaScript Site Generator Review, 2023—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638238,
+			"parentId": 0,
+			"url": "https://us.fourdotsdesign.com/weekly-information-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-10T22:03:37.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638289,
+			"parentId": 0,
+			"url": "https://moregogiga.com/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-11T00:00:57.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638298,
+			"parentId": 0,
+			"url": "https://theprogrammernewshubb.com/2023/03/11/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-11T00:05:01.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638509,
+			"parentId": 0,
+			"url": "https://assuagetech.net/2023/03/11/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-11T03:06:14.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638724,
+			"parentId": 0,
+			"url": "https://twitter.com/frontenddogma/status/1634475900552069121",
+			"author": {
+				"name": "Frontend Dogma",
+				"url": "https://twitter.com/frontenddogma",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f86fa5ee44022d672f562b1d0cd54c13925fdec45ee000806485facc952b1d79.jpg"
+			},
+			"date": "2023-03-11T08:46:36.000Z",
+			"content": "The JavaScript Site Generator Review, 2023, by @zachleat@zachleat.com:\n\n<a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638734,
+			"parentId": 0,
+			"url": "https://mikesmediahouse.co.za/2023/03/10/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-11T09:19:34.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1638999,
+			"parentId": 0,
+			"url": "https://technsavi.com/2023/03/11/weekly-information-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-11T16:13:08.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1639054,
+			"parentId": 0,
+			"url": "https://alvarogpalacio.com/%e2%9c%85noticias-semanales-para-disenadores-numero-685",
+			"author": {
+				"name": "Alvaro",
+				"url": "https://alvarogpalacio.com/author/alvaro"
+			},
+			"date": "2023-03-11T18:17:14.000Z",
+			"content": "<p> <br /></p>\n\n<p><a href=\"https://1.envato.market/c/78798/298927/4662?subId1=weekly-news\"></a></p>\n<p><a href=\"https://stackdiary.com/build-tools-for-web-development/\">Las herramientas de creación más populares para desarrolladores front-end en 2023</a> – Descubre herramientas que te ayudarán a construir, probar y desplegar código front-end.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de Las herramientas de compilación más populares para desarrolladores front-end en 2023\" width=\"750\" height=\"500\" /></p>\n<p>8 fragmentos de CSS y JavaScript para rutas de texto personalizadas – Ejemplos de efectos de ruta de texto que imitan el diseño de impresión.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558553_921_Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de 8 fragmentos de CSS y JavaScript para rutas de texto personalizadas\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://tympanus.net/codrops/2023/03/01/double-image-hover-effects-with-clip-path-animations/\">Efectos Hover de Doble Imagen con Animaciones Clip-Path</a> – Efectos que revelan imágenes de forma ingeniosa.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558553_819_Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de Efectos Hover de Doble Imagen con Animaciones Clip-Path\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://scrollbar.app/\">Scrollbar.app</a> – Esta aplicación facilita la creación de barras de desplazamiento personalizadas.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558553_739_Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de Scrollbar.app\" width=\"750\" height=\"500\" /></p>\n<p>Cómo ayudar a tus clientes a dominar el comercio electrónico – Enseña a tus clientes a gestionar sus sitios web de comercio electrónico y guíales hacia el éxito.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558553_178_Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de Cómo ayudar a tus clientes a dominar el comercio electrónico\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/\">Guía para la validación de formularios accesibles</a> – Elementos a tener en cuenta al aplicar técnicas de validación de formularios.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558553_416_Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de Una guía para la validación de formularios accesibles\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.robinwieruch.de/react-libraries/\">Bibliotecas React para 2023</a> – Cómo elegir la biblioteca adecuada para tu aplicación React.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/Noticias-Semanales-para-Disenadores-Numero-685.png?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de Bibliotecas React para 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.zachleat.com/web/site-generator-review/\">Revisión del Generador de Sitios JavaScript, 2023</a> – Un vistazo a las mejores herramientas de generación de sitios del mercado.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558553_203_Noticias-Semanales-para-Disenadores-Numero-685.png?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de The JavaScript Site Generator Review, 2023\" width=\"750\" height=\"500\" /></p>\n<p>25 LUTs gratuitos de Lightroom para conseguir efectos fotográficos asombrosos – Utiliza estas herramientas para transformar tus fotos en imágenes elegantes y llamativas.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558553_235_Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de 25 LUTs gratuitas de Lightroom para conseguir efectos fotográficos impactantes\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://joshcollinsworth.com/blog/great-transitions\">Consejos para mejorar las transiciones y animaciones CSS</a> – Aprende a crear animaciones que aporten un aspecto de alta calidad a tus diseños.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558554_870_Noticias-Semanales-para-Disenadores-Numero-685.png?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de Diez consejos para mejorar las transiciones y animaciones CSS\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.mondriangenerator.io/\">Generador Mondrian</a> – Utiliza esta herramienta para crear obras de arte únicas.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558554_297_Noticias-Semanales-para-Disenadores-Numero-685.png?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo del Generador Mondrian\" width=\"750\" height=\"500\" /></p>\n<p>Por qué al diseñador gruñón no le convence la máquina del bombo de la IA – La IA tiene un enorme potencial. Pero no es necesariamente el sueño utópico que algunos venden.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558554_549_Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de Por qué al diseñador gruñón no le convence la máquina del bombo publicitario de la IA\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.btw.so/tools/chat-gpt-tailwind-css-components\">Generar componentes CSS de Tailwind con ChatGPT</a> – Esta herramienta potenciada por IA creará componentes personalizados para el popular framework CSS.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558554_776_Noticias-Semanales-para-Disenadores-Numero-685.png?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de Generar componentes CSS Tailwind utilizando ChatGPT\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://rauno.me/interfaces\">Directrices de la interfaz web</a> – Una lista no exhaustiva de detalles que conforman una buena interfaz web.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558554_178_Noticias-Semanales-para-Disenadores-Numero-685.png?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de las Directrices para la Interfaz Web\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://openai.com/blog/introducing-chatgpt-and-whisper-apis\">Presentación de las API ChatGPT &amp; Whisper</a> – Ahora puedes integrar estas populares herramientas de IA en tus propias aplicaciones y productos.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558554_262_Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de introducción de las API ChatGPT y Whisper\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://nomad.blog/2023/03/01/wordpress-6-2-source-of-truth/\">WordPress 6.2 Fuente de la verdad</a> – Una lista completa de funciones y cambios de la próxima versión.<br /><img src=\"https://i0.wp.com/alvarogpalacio.com/wp-content/uploads/2023/03/1678558554_183_Noticias-Semanales-para-Disenadores-Numero-685.jpg?resize=750%2C500&amp;ssl=1\" alt=\"Ejemplo de WordPress 6.2 Fuente de la Verdad\" width=\"750\" height=\"500\" /></p>\n\n\n\n\n\t<h3><em>Relacionado</em></h3>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1639174,
+			"parentId": 0,
+			"url": "https://www.worldnewstrends.net/2023/03/11/weekly-information-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-11T23:45:44.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1639367,
+			"parentId": 0,
+			"url": "https://twitter.com/ABatickaya/status/1634874375290912769",
+			"author": {
+				"name": "Workafrolic (±∞)",
+				"url": "https://twitter.com/ABatickaya",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/416722ffbd71600613f458093aba7c49a64d97dda1a280fbe95624406e729deb.jpg"
+			},
+			"date": "2023-03-12T11:10:00.000Z",
+			"content": "Выбирать фреймворки при прочих равных можно душой, но мне больше нравится опираться на цифры.\n<a href=\"https://twitter.com/zachleat\">@zachleat</a> провёл расследование и посмотрел на разные фреймворки внимательно. Например, посчитал вес node_modules.\n\n<a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1639446,
+			"parentId": 0,
+			"url": "https://twitter.com/frontenddogma/status/1634960327547801601",
+			"author": {
+				"name": "Frontend Dogma",
+				"url": "https://twitter.com/frontenddogma",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f86fa5ee44022d672f562b1d0cd54c13925fdec45ee000806485facc952b1d79.jpg"
+			},
+			"date": "2023-03-12T16:51:32.000Z",
+			"content": "The JavaScript Site Generator Review, 2023, by @zachleat@zachleat.com:\n\n<a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1643808,
+			"parentId": 0,
+			"url": "https://dcreationsllc.com/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-18T10:15:45.000Z",
+			"content": "<p><a href=\"https://1.envato.market/c/78798/298927/4662?subId1=weekly-news\"><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/envato-elements-weekly-news.png\" alt=\"Envato Elements\" width=\"300\" height=\"600\" /></a></p>\n<p><a href=\"https://stackdiary.com/build-tools-for-web-development/\">The Most Popular Build Tools for Front-end Developers in 2023</a> – Discover tools that will help you build, test, and deploy front-end code.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-01.jpg\" alt=\"Example from The Most Popular Build Tools for Front-end Developers in 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/css-javascript-snippets-custom-text-paths/\">8 CSS &amp; JavaScript Snippets for Custom Text Paths</a> – Examples of text path effects that mimic print design.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-02.jpg\" alt=\"Example from 8 CSS JavaScript Snippets for Custom Text Paths\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://tympanus.net/codrops/2023/03/01/double-image-hover-effects-with-clip-path-animations/\">Double Image Hover Effects with Clip-Path Animations</a> – Effects that reveal images in clever ways.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-03.jpg\" alt=\"Example from Double Image Hover Effects with Clip-Path Animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://scrollbar.app/\">Scrollbar.app</a> – This app makes it easy to create custom scroll bars.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-04.jpg\" alt=\"Example from Scrollbar.app\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/helping-clients-master-ecommerce/\">How to Help Your Clients Master eCommerce</a> – Teach clients to manage their eCommerce websites and guide them towards success.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-05.jpg\" alt=\"Example from How to Help Your Clients Master eCommerce\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/\">A Guide To Accessible Form Validation</a> – Items to consider when implementing form validation techniques.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-06.jpg\" alt=\"Example from A Guide To Accessible Form Validation\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.robinwieruch.de/react-libraries/\">React Libraries for 2023</a> – How to choose the right library for your React application.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-07.png\" alt=\"Example from React Libraries for 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.zachleat.com/web/site-generator-review/\">The JavaScript Site Generator Review, 2023</a> – A look at the top site generation tools on the market.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-08.png\" alt=\"Example from The JavaScript Site Generator Review, 2023\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/free-lightroom-luts/\">25 Free Lightroom LUTs for Stunning Photo Effects</a> – Use these tools to transform your photos into stylish, eye-catching images.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-09.jpg\" alt=\"Example from 25 Free Lightroom LUTs for Stunning Photo Effects\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://joshcollinsworth.com/blog/great-transitions\">Tips for Better CSS Transitions &amp; Animations</a> – Learn to create animations that add a high-quality look to your designs.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-10.png\" alt=\"Example from Ten tips for better CSS transitions and animations\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.mondriangenerator.io/\">Mondrian Generator</a> – Use this tool to create unique works of art.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-11.png\" alt=\"Example from Mondrian Generator\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://speckyboy.com/grumpy-designer-ai-hype-machine/\">Why the Grumpy Designer Isn’t Sold on the AI Hype Machine</a> – AI has massive potential. But it’s not necessarily the Utopian dream some are selling.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-12.jpg\" alt=\"Example from Why the Grumpy Designer Isn’t Sold on the AI Hype Machine\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://www.btw.so/tools/chat-gpt-tailwind-css-components\">Generate Tailwind CSS Components Using ChatGPT</a> – This AI-powered tool will craft custom components for the popular CSS framework.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-13.png\" alt=\"Example from Generate Tailwind CSS components using ChatGPT\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://rauno.me/interfaces\">Web Interface Guidelines</a> – A non-exhaustive list of details that make a good web interface.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-14.png\" alt=\"Example from Web Interface Guidelines\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://openai.com/blog/introducing-chatgpt-and-whisper-apis\">Introducing ChatGPT &amp; Whisper APIs</a> – You can now integrate these popular AI tools into your own apps and products.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-15.jpg\" alt=\"Example from Introducing ChatGPT and Whisper APIs\" width=\"750\" height=\"500\" /></p>\n<p><a href=\"https://nomad.blog/2023/03/01/wordpress-6-2-source-of-truth/\">WordPress 6.2 Source of Truth</a> – A comprehensive list of features and changes in the upcoming version.<br /><img src=\"https://dcreationsllc.com/wp-content/uploads/2023/03/weekly-news-for-designers-march-12-16.jpg\" alt=\"Example from WordPress 6.2 Source of Truth\" width=\"750\" height=\"500\" /></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1644572,
+			"parentId": 0,
+			"url": "https://zampoint.com/weekly-news-for-designers-%e2%84%96-685/",
+			"author": {},
+			"date": "2023-03-20T05:50:24.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1648109,
+			"parentId": 0,
+			"url": "https://twitter.com/joulsounet/status/1639264805054758916",
+			"author": {
+				"name": "Joulse",
+				"url": "https://twitter.com/joulsounet",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/45a91573bde91a1c2bf2fe098a503bdcde3f6c85b2c3b7c8d7a55fae54c4b74a.jpg"
+			},
+			"date": "2023-03-24T13:56:00.000Z",
+			"content": "The JavaScript Site Generator Review <a href=\"https://www.zachleat.com/web/site-generator-review/\">zachleat.com/web/site-gener…</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1652218,
+			"parentId": 0,
+			"url": "https://www.recentic.net/defaulting-on-single-page-applications/",
+			"author": {},
+			"date": "2023-03-27T22:24:08.000Z",
+			"content": "<p>If you’re trying to build a single page application (SPA), you should probably use a tool designed primarily for the job. Site generators focused on performance, shipping low to zero-client-JavaScript (e.g. the one I work on, <a href=\"https://www.11ty.dev/\">Eleventy</a>) typically use full page navigations. SPA advocates have rebranded this architecture as a Multi-Page Application (MPA) but fundamentally this is how the web has always operated.</p>\n<p>Classic multi-page architecture has a few benefits:</p>\n<ul><li><strong>Better empty-cache performance</strong>: your site can render faster.\n<ul><li>As web browsers become more privacy-focused and users spread their browsing across multiple web-capable devices, empty-caches visits are increasingly common.</li>\n<li>Faster sites make more money. Read <a href=\"https://wpostats.com/\">WPO Stats</a>.</li>\n<li>Search engines use <a href=\"https://developers.google.com/search/blog/2020/11/timing-for-page-experience\">site performance as a search ranking signal</a>, which makes good performance crucial.</li>\n</ul></li>\n<li><strong>Inclusive and robust by default</strong>: You are in full control the minimum requirements necessary to visit your site. You needn’t put any undue burden on the capabilities of the web browser of your visitors. You needn’t place your site behind a “Best Viewed In” browser-compatibility warning. If they can view HTML, they can view your site.</li>\n<li><strong>Energy-efficiency</strong>: Lighter pages result in safer long sessions that are more energy efficient and won’t drain your visitors’ laptop or mobile device batteries.</li>\n<li><strong>Privacy-focused</strong>: working without client-JavaScript allows visitors full control over their viewing experience. This allows you to create sites that work best in the harsh real world environment of browser extensions, content and ad-blockers; even working with those rare folks that browse with JavaScript disabled.</li>\n<li><strong>Searchable by default</strong>: A simpler architecture for server rendered content makes it straightforward for search engines to find you.</li>\n<li><strong>Better defaults</strong> for accessibility-focused page navigations, preserving scroll position, forward/back button support, etc.</li>\n</ul><p>Single Page Application frameworks in the last few years have pivoted away from client-side rendering to server-rendering and we welcome this improvement. However, the large starting size of client JavaScript bundles customary to SPA persist: Remix (228 kB), Next.js (248 kB), Gatsby (210 kB), and Nuxt (191 kB) <a href=\"https://www.zachleat.com/web/site-generator-review/#client-javascript-baseline\">source</a>. Notably, these large bundle sizes are only the minimum for a Hello World project and will only grow as your project grows (and as the frameworks grow over time, too).</p>\n<p>You can’t JavaScript your way out of an excess-JavaScript problem. <strong>These large JavaScript bundles are costly to site performance.</strong></p>\n<p>Single Page Application advocates argue these large, costly bundles enable performance gains for future navigations, seamless media playback during transition, and fancy transition animations. While we can debate (and even agree on some of) those points (recognizing also that they will fade into irrelevance as the web platform progresses), take a moment to consider <strong>whether or not this trade-off should be made for you as a default</strong>.</p>\n<p>The <strong>data supports the case that Single Page Applications are a bad default for the web</strong> too. An analysis of Core Web Vitals across 9.3 million web sites in February 2023 <a href=\"https://lookerstudio.google.com/u/0/reporting/55bc8fad-44c2-4280-aa0b-5f3f0cd3d2be/page/M6ZPC?s=lD9m_MQgyGU\">shows that only 26% of sites built using the most popular Single Page Application framework (Next.js) have good Core Web Vitals</a>, far lower than the web at large (40%).</p>\n<h2>Alternatives <a href=\"https://www.zachleat.com/web/single-page-applications/#alternatives\">#</a></h2>\n<p>Learn more about alternative approaches that can provide some of the same SPA benefits without the drawbacks:</p>\n<ul><li>Use the <a href=\"https://developer.chrome.com/docs/web-platform/view-transitions/\">View Transitions API</a> to do smooth cross-page animations on navigation.</li>\n<li><a href=\"https://github.com/pepelsbey/pepelsbey.dev/commit/accf0da\">Example code using the View Transitions API in an Eleventy project</a> from Vadim Makeev.</li>\n<li><a href=\"https://addyosmani.com/blog/prefetching/\">Predictive Prefetching can speed up navigations</a>.</li>\n<li><a href=\"https://getquick.link/\">quicklink</a> is a small JavaScript library to implement prefetching.</li>\n</ul><h2>Trade-offs <a href=\"https://www.zachleat.com/web/single-page-applications/#trade-offs\">#</a></h2>\n<ul><li><a href=\"https://www.matuzo.at/blog/2023/single-page-applications-criticism/\">Why I'm not the biggest fan of Single Page Applications</a> by Manuel Matuzović.</li>\n<li><a href=\"https://scribe.rip/@jason.godesky/when-javascript-fails-52eef47e90db\">When JavaScript Fails</a> by Jason Godesky.</li>\n<li><a href=\"https://jakearchibald.com/2017/netflix-and-react/\">Netflix functions without client-side React, and it’s a good thing</a> by Jake Archibald.</li>\n<li><a href=\"https://twitter.com/jaffathecake/status/1433317536754458628\">SPA navigation may be slower than MPA navigation</a>, a tweet from Jake Archibald.</li>\n<li><a href=\"https://www.zachleat.com/twitter/1169998370041208832/\">Which has a better FMP? 8.5 MB of HTML or one SPA-rendered Tweet</a></li>\n</ul>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1652293,
+			"parentId": 0,
+			"url": "https://show-hn.com/2023/03/27/defaulting-on-single-page-applications/",
+			"author": {
+				"name": "Julian Assange™📢",
+				"url": "https://show-hn.com/author/julianassange/"
+			},
+			"date": "2023-03-27T23:30:35.000Z",
+			"content": "<p>Whenever you happen to’re making an are trying to value a single web page software (SPA), it’s doubtless you’ll presumably presumably well presumably tranquil seemingly use a instrument designed essentially for the job. Plight generators angry by efficiency, shipping low to zero-consumer-JavaScript (e.g. the one I work on, <a href=\"https://www.11ty.dev/\">Eleventy</a>) in total use paunchy web page navigations. SPA advocates comprise rebranded this architecture as a Multi-Page Software (MPA) but basically that is how the score has always operated.</p><p>Traditional multi-web page architecture has a couple of advantages:</p><ul><li><strong>Better empty-cache efficiency</strong>: your place of abode can render sooner.<ul><li>As web browsers change into more privacy-focused and users spread their making an are trying all over plenty of web-noteworthy devices, empty-caches visits are increasingly celebrated.</li><li>Sooner sites create extra money. Learn <a href=\"https://wpostats.com/\">WPO Stats</a>.</li><li>Search engines and yahoo use <a href=\"https://developers.google.com/search/blog/2020/11/timing-for-page-experience\">place of abode efficiency as a search ranking signal</a>, which makes correct efficiency a truly a lot.</li></ul></li><li><strong>Inclusive and sturdy by default</strong>: You are in paunchy support an eye on the minimum necessities a truly a lot to hotfoot to your place of abode. You needn’t build any undue burden on the capabilities of the score browser of your guests. You needn’t blueprint your place of abode within the support of a “Greatest Viewed In” browser-compatibility warning. If they will perceive HTML, they will perceive your place of abode.</li><li><strong>Vitality-efficiency</strong>: Lighter pages lead to safer long sessions which can be more vitality efficient and gained’t drain your guests’ laptop or mobile plot batteries.</li><li><strong>Privacy-focused</strong>: working without consumer-JavaScript permits guests paunchy support an eye on over their viewing skills. For that reason you can compose sites that work finest within the merciless right world ambiance of browser extensions, train and ad-blockers; even working with these uncommon other folk that browse with JavaScript disabled.</li><li><strong>Searchable by default</strong>: A closer architecture for server rendered train makes it straightforward for search engines to search out you.</li><li><strong>Better defaults</strong> for accessibility-focused web page navigations, maintaining scroll blueprint, forward/support button make stronger, and loads others.</li></ul><p>Single Page Software frameworks within the previous couple of years comprise pivoted far off from consumer-side rendering to server-rendering and we welcome this enhance. Nonetheless, the large starting up size of consumer JavaScript bundles historical to SPA persist: Remix (228 kB), Next.js (248 kB), Gatsby (210 kB), and Nuxt (191 kB) <a href=\"http://www.zachleat.com/web/site-generator-review/#client-javascript-baseline\">source</a>. Particularly, these huge bundle sizes are easiest the minimum for a Hello World mission and will easiest develop as your mission grows (and because the frameworks develop over time, too).</p><p>You might presumably presumably well presumably’t JavaScript your blueprint out of an extra-JavaScript dispute. <strong>These huge JavaScript bundles are costly to build of abode efficiency.</strong></p><p>Single Page Software advocates argue these huge, costly bundles enable efficiency gains for future navigations, seamless media playback all over transition, and like transition animations. Whereas we are able to debate (and even agree on a couple of of) these capabilities (recognizing additionally that they’ll fade into irrelevance as the score platform progresses), possess a second to remember <strong>whether or now no longer this exchange-off must be made for you as a default</strong>.</p><p>The <strong>data helps the case that Single Page Applications are a detestable default for the score</strong> too. An diagnosis of Core Net Vitals all over 9.3 million web sites in February 2023 <a href=\"https://lookerstudio.google.com/u/0/reporting/55bc8fad-44c2-4280-aa0b-5f3f0cd3d2be/page/M6ZPC?s=lD9m_MQgyGU\">exhibits that easiest 26% of websites constructed the usage of basically the most traditional Single Page Software framework (Next.js) comprise correct Core Net Vitals</a>, far lower than the score at huge (40%).</p><h2>Choices <a href=\"http://www.zachleat.com/#alternatives\">#</a></h2><p>Learn more about substitute approaches that can provide a couple of of the identical SPA advantages without the drawbacks:</p><ul><li>Use the <a href=\"https://developer.chrome.com/docs/web-platform/view-transitions/\">Survey Transitions API</a> to gain out tender inferior-web page animations on navigation.</li><li><a href=\"https://github.com/pepelsbey/pepelsbey.dev/commit/accf0da\">Instance code the usage of the Survey Transitions API in an Eleventy mission</a> from Vadim Makeev.</li><li><a href=\"https://addyosmani.com/blog/prefetching/\">Predictive Prefetching can fade up navigations</a>.</li><li><a href=\"https://getquick.link/\">quicklink</a> is a little JavaScript library to place into effect prefetching.</li></ul><h2>Replace-offs <a href=\"http://www.zachleat.com/#trade-offs\">#</a></h2><ul><li><a href=\"https://www.matuzo.at/blog/2023/single-page-applications-criticism/\">Why I’m now no longer the finest fan of Single Page Applications</a> by Manuel Matuzović.</li><li><a href=\"https://scribe.rip/@jason.godesky/when-javascript-fails-52eef47e90db\">When JavaScript Fails</a> by Jason Godesky.</li><li><a href=\"https://jakearchibald.com/2017/netflix-and-react/\">Netflix functions without consumer-side React, and it’s an right thing</a> by Jake Archibald.</li><li><a href=\"https://twitter.com/jaffathecake/status/1433317536754458628\">SPA navigation is at possibility of be slower than MPA navigation</a>, a tweet from Jake Archibald.</li><li><a href=\"https://www.zachleat.com/twitter/1169998370041208832/\">Which has a greater FMP? 8.5 MB of HTML or one SPA-rendered Tweet</a></li></ul>Next<a href=\"http://www.zachleat.com/web/eleventy-meetup-eleventy-v2/\">The Eleventy v2.0 Release, a talk at the Eleventy Meetup</a><h4>Shamelessly lunge your connected post:</h4><ul><li>These are <a href=\"https://indieweb.org/Webmention\">webmentions</a> by the <a href=\"https://indieweb.org/\">IndieWeb</a> and <a href=\"https://webmention.io/\">webmention.io</a>.</li></ul><p><a href=\"https://www.zachleat.com/web/single-page-applications/\">Read More</a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1652377,
+			"parentId": 0,
+			"url": "https://hackersnews.co.uk/defaulting-on-single-page-applications-spa-zachleat-com-hackers-news/",
+			"author": {
+				"name": "Gremlin",
+				"url": "https://hackersnews.co.uk/author/wp-hackersnewscouk/"
+			},
+			"date": "2023-03-28T02:20:07.000Z",
+			"content": "<p> \n</p>\n\n<p>If you’re trying to build a single page application (SPA), you should probably use a tool designed primarily for the job. Site generators focused on performance, shipping low to zero-client-JavaScript (e.g. the one I work on, <a href=\"https://www.11ty.dev/\">Eleventy</a>) typically use full page navigations. SPA advocates have rebranded this architecture as a Multi-Page Application (MPA) but fundamentally this is how the web has always operated.</p>\n<p>Classic multi-page architecture has a few benefits:</p>\n<ul><li><strong>Better empty-cache performance</strong>: your site can render faster.\n<ul><li>As web browsers become more privacy-focused and users spread their browsing across multiple web-capable devices, empty-caches visits are increasingly common.</li>\n<li>Faster sites make more money. Read <a href=\"https://wpostats.com/\">WPO Stats</a>.</li>\n<li>Search engines use <a href=\"https://developers.google.com/search/blog/2020/11/timing-for-page-experience\">site performance as a search ranking signal</a>, which makes good performance crucial.</li>\n</ul></li>\n<li><strong>Inclusive and robust by default</strong>: You are in full control the minimum requirements necessary to visit your site. You needn’t put any undue burden on the capabilities of the web browser of your visitors. You needn’t place your site behind a “Best Viewed In” browser-compatibility warning. If they can view HTML, they can view your site.</li>\n<li><strong>Energy-efficiency</strong>: Lighter pages result in safer long sessions that are more energy efficient and won’t drain your visitors’ laptop or mobile device batteries.</li>\n<li><strong>Privacy-focused</strong>: working without client-JavaScript allows visitors full control over their viewing experience. This allows you to create sites that work best in the harsh real world environment of browser extensions, content and ad-blockers; even working with those rare folks that browse with JavaScript disabled.</li>\n<li><strong>Searchable by default</strong>: A simpler architecture for server rendered content makes it straightforward for search engines to find you.</li>\n<li><strong>Better defaults</strong> for accessibility-focused page navigations, preserving scroll position, forward/back button support, etc.</li>\n</ul><p>Single Page Application frameworks in the last few years have pivoted away from client-side rendering to server-rendering and we welcome this improvement. However, the large starting size of client JavaScript bundles customary to SPA persist: Remix (228 kB), Next.js (248 kB), Gatsby (210 kB), and Nuxt (191 kB) <a href=\"http://www.zachleat.com/web/site-generator-review/#client-javascript-baseline\">source</a>. Notably, these large bundle sizes are only the minimum for a Hello World project and will only grow as your project grows (and as the frameworks grow over time, too).</p>\n<p>You can’t JavaScript your way out of an excess-JavaScript problem. <strong>These large JavaScript bundles are costly to site performance.</strong></p>\n<p>Single Page Application advocates argue these large, costly bundles enable performance gains for future navigations, seamless media playback during transition, and fancy transition animations. While we can debate (and even agree on some of) those points (recognizing also that they will fade into irrelevance as the web platform progresses), take a moment to consider <strong>whether or not this trade-off should be made for you as a default</strong>.</p>\n<p>The <strong>data supports the case that Single Page Applications are a bad default for the web</strong> too. An analysis of Core Web Vitals across 9.3 million web sites in February 2023 <a href=\"https://lookerstudio.google.com/u/0/reporting/55bc8fad-44c2-4280-aa0b-5f3f0cd3d2be/page/M6ZPC?s=lD9m_MQgyGU\">shows that only 26% of sites built using the most popular Single Page Application framework (Next.js) have good Core Web Vitals</a>, far lower than the web at large (40%).</p>\n<h2>Alternatives <a href=\"https://hackersnews.co.uk/defaulting-on-single-page-applications-spa-zachleat-com-hackers-news/#alternatives\">#</a></h2>\n<p>Learn more about alternative approaches that can provide some of the same SPA benefits without the drawbacks:</p>\n<h2>Trade-offs <a href=\"https://hackersnews.co.uk/defaulting-on-single-page-applications-spa-zachleat-com-hackers-news/#trade-offs\">#</a></h2>\n\n\n<a href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Fhackersnews.co.uk%2Fdefaulting-on-single-page-applications-spa-zachleat-com-hackers-news%2F&amp;text=Defaulting+on+Single+Page+Applications+%28SPA%29%E2%80%94zachleat.com.+Hackers+News&amp;media=https%3A%2F%2Fhackersnews.co.uk%2Fwp-content%2Fuploads%2F2023%2F03%2Fz202303_6.svg%2Bxml\"><i></i> Tweet</a><a href=\"https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhackersnews.co.uk%2Fdefaulting-on-single-page-applications-spa-zachleat-com-hackers-news%2F&amp;picture=https%3A%2F%2Fhackersnews.co.uk%2Fwp-content%2Fuploads%2F2023%2F03%2Fz202303_6.svg%2Bxml\"><i></i> Share</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1678588,
+			"parentId": 0,
+			"url": "https://leedonss.com/2023/05/24/the-unexplained-mystery-into-solar-power-jamaica-uncovered/",
+			"author": {},
+			"date": "2023-05-24T08:52:16.000Z",
+			"content": "",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1940042,
+			"parentId": 0,
+			"url": "https://indieweb.social/@fershad/115211838819983406",
+			"author": {
+				"name": "fershad",
+				"url": "https://indieweb.social/@fershad",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fb7d862289aa6b77dc5343c6de36be6973c6600dc2392099144f804d0cff8f66.jpg"
+			},
+			"date": "2025-09-16T03:25:46.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@mokorana\" class=\"u-url\">@<span>mokorana</span></a></span> the resources Alex point to are a good start. What you're suggesting in your example is more a \"take\" rather than something that would be spelt out in guidelines. There's nothing out there that I'm aware of which looks at the specifics of framework components, but a place to start might be looking at the client-side JS bundle that frameworks ship with by default. <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> published something on this a couple of years ago <a href=\"https://www.zachleat.com/web/site-generator-review/#client-javascript-baseline\"><span>https://www.</span><span>zachleat.com/web/site-generato</span><span>r-review/#client-javascript-baseline</span></a></p>\n<a href=\"https://www.zachleat.com/web/site-generator-review/#client-javascript-baseline\">The JavaScript Site Generator Review, 2023—zachleat.com</a>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1629792,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109779197194734817",
+			"date": "2023-02-24T22:02:15.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://mastodon.social/@JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629794,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109524616709396499",
+			"date": "2023-02-24T22:02:18.000Z",
+			"author": {
+				"name": "jamiedixon",
+				"url": "https://mastodonapp.uk/@jamiedixon",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/66485d40c4b7248fd99f3750fd0e775c0fa73f11df1361f296190a6566d22c5b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629795,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109665196398192897",
+			"date": "2023-02-24T22:02:18.000Z",
+			"author": {
+				"name": "Jeffrey Lembeck",
+				"url": "https://fediverse.jefflembeck.com/@jefflembeck",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/09cd65674c4a43ff56ca14f2eb5425bf73a04e6123bd8e82e75838210ebc6177.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629796,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109376903868639705",
+			"date": "2023-02-24T22:02:20.000Z",
+			"author": {
+				"name": "Simon St.Laurent",
+				"url": "https://mastodon.social/@simonstl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/77259943f6dda800130ad97ec6c4f45dab3a25bce08f286bdf43823f10dbb3cc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629797,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109921854444578897",
+			"date": "2023-02-24T22:02:20.000Z",
+			"author": {
+				"name": "dyadron :pensive_party_blob:",
+				"url": "https://mas.to/@dron",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8afc0b7d4a663e536ce3a0072df8bc3e78e9f4dd791e840c1d3de13c6c5e2162.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629798,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109366409216845278",
+			"date": "2023-02-24T22:02:22.000Z",
+			"author": {
+				"name": "au",
+				"url": "https://chaos.social/@au",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f50dbeb25e9065509733d92c4a01298d49d9a2b8acef80b9561babbe7b2bdd02.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629799,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109790308833419326",
+			"date": "2023-02-24T22:02:22.000Z",
+			"author": {
+				"name": "Jason Brown",
+				"url": "https://mastodon.social/@zota",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/31fdf0fb59174db1ab3938592282a59e864924f18b2dd4746bf80fd818eabff6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629800,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109292557125861804",
+			"date": "2023-02-24T22:02:25.000Z",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://toot.cafe/@slightlyoff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629801,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109713248285354076",
+			"date": "2023-02-24T22:02:26.000Z",
+			"author": {
+				"name": "Kyle Johnston",
+				"url": "https://mastodon.online/@kylejohnston",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/16fb05b0106bde29f9d36745258ebffd607a33848f68b2226a1c2955567b2146.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629802,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109446932953258362",
+			"date": "2023-02-24T22:02:28.000Z",
+			"author": {
+				"name": "Elly Loel ✨🌱",
+				"url": "https://front-end.social/@elly",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2906f05fbc1fff47b76e9bd51804d1618a81be8f3062fc8c5a2e0f18d02f8559.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629803,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109921435724258758",
+			"date": "2023-02-24T22:02:29.000Z",
+			"author": {
+				"name": "IVX :verified:",
+				"url": "https://c.im/@olk",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2dcdbae242fa359538be9a31dc07c4b34149313601f183edb70d3da772e559b7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629804,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109303499993073139",
+			"date": "2023-02-24T22:02:32.000Z",
+			"author": {
+				"name": "Egor Kloos",
+				"url": "https://mastodon.social/@dutchcelt",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/63acf3f0a7c6730a3f321b83fc99f12511c9e123b3f9170a6e25b2de31aa587b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629805,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109315918734297141",
+			"date": "2023-02-24T22:02:32.000Z",
+			"author": {
+				"name": "Johan",
+				"url": "https://indieweb.social/@johanbove",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/51ac389f1f0ed5c05464a7923e288ff425ee270e4c65ffbdc6b504238da49bfb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629806,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109289744030118387",
+			"date": "2023-02-24T22:02:35.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629807,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109291233828237636",
+			"date": "2023-02-24T22:02:36.000Z",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://mastodon.social/@matthiasott",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/692a4ec0d17295cc8035cc276bdf0de1ec88a1103a7a37e586f5b65741bf2380.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629808,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109451444536584188",
+			"date": "2023-02-24T22:02:39.000Z",
+			"author": {
+				"name": "Nathan Bottomley",
+				"url": "https://aus.social/@nathanbottomley",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a8d418f832f6cf3e061a7c4890edd1fe705a3e33db14fe1f22e6dbbb6af37b6c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629809,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109293776424705752",
+			"date": "2023-02-24T22:02:39.000Z",
+			"author": {
+				"name": "Evan",
+				"url": "https://notacult.social/@darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629842,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109910134046449754",
+			"date": "2023-02-24T22:35:58.000Z",
+			"author": {
+				"name": "eswat42",
+				"url": "https://mstdn.social/@eswat42",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0310c4da56d7161591d730c0279647bd50439f2785b9e7b105e463e1458000c7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629872,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109537365782161568",
+			"date": "2023-02-25T00:06:15.000Z",
+			"author": {
+				"name": "Natik Gadzhi",
+				"url": "https://hachyderm.io/@natik",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/38910503ce216e57c6b16e491f867e921ee10b73577a28c768581a3099f5a32f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629896,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109374293888244250",
+			"date": "2023-02-25T01:10:14.000Z",
+			"author": {
+				"name": "Djwebdroid",
+				"url": "https://fosstodon.org/@Djwebdroid",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2df23d5b7e9dc3728f2d31cd9106ae2dcb71dea155fa43df5314f210549d3ae8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629921,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109320623471246556",
+			"date": "2023-02-25T02:46:37.000Z",
+			"author": {
+				"name": "Daniel Saunders",
+				"url": "https://mstdn.social/@dsaunders",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4b43632eb5feee5c9cd4e2cf7ac1680d565688489a6a09ea0417011831788205.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629945,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109287562642274365",
+			"date": "2023-02-25T03:40:17.000Z",
+			"author": {
+				"name": "kinghat",
+				"url": "https://mstdn.io/@Kinghat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/82cb36a56e568042ae2c737d198cbe2f8821284f6ea3207281e8649c7c208878.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630146,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109528045417241006",
+			"date": "2023-02-25T12:34:50.000Z",
+			"author": {
+				"name": "🇺🇦 gryzzly",
+				"url": "https://mastodon.social/@gryzzly",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ff052a530cfecca5d621f11d77a67dccaaa3d487d89002a7d70f4280a513ae7e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630351,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109926578667325547",
+			"date": "2023-02-25T17:50:19.000Z",
+			"author": {
+				"name": "Gino 🎧",
+				"url": "https://mastodon.social/@gino",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/02f95b58649ce9b427e44c4da17c9ba3b34e237ceceb2c16bc5eb22bfe88665c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630368,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109349261215844301",
+			"date": "2023-02-25T18:15:21.000Z",
+			"author": {
+				"name": "WebPerformance Report",
+				"url": "https://webperf.social/@webperfreport",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ef9cfa150774e863f3487f0613e5aa4c2414ca6561509ce62de15bc768f4659b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630369,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109290648221851677",
+			"date": "2023-02-25T18:15:22.000Z",
+			"author": {
+				"name": "Schalk Neethling 🇺🇦",
+				"url": "https://social.themyceliumnetwork.community/@schalkneethling",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c9947ea495310fbe7fdcbe7c4fdfd9b6b2b70fdb2ecd9f47e734e221a47d274a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630486,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#favorited-by-109812677722129535",
+			"date": "2023-02-25T23:10:52.000Z",
+			"author": {
+				"name": "James",
+				"url": "https://social.coop/@jamesarosen",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/59674845c172ab22a5662155c98044a5f56c06769f7f86642b8ab0290095c44a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631821,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#favorited-by-109551122609345151",
+			"date": "2023-02-28T14:54:00.000Z",
+			"author": {
+				"name": "Ayo",
+				"url": "https://social.ayco.io/@ayo",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/dd57b4f29920a42b832eea9a4e1565bd64e4da2651f6b32346e8917f01c31af4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631824,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#favorited-by-109292691647909270",
+			"date": "2023-02-28T14:54:28.000Z",
+			"author": {
+				"name": "Andrew Chou",
+				"url": "https://toot.cafe/@andrew_chou",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2ae7e49fd2085273cd732bb8633f721f8c54c68920a5378aea497be57a1e406c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631836,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#favorited-by-109347220694684508",
+			"date": "2023-02-28T15:25:19.000Z",
+			"author": {
+				"name": "Robert Katzki",
+				"url": "https://norden.social/@roka",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8aeeb458eb0bcdea762fa68e3731b3198c1796a3a9b006816f6f4439bf1a26a2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631850,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#favorited-by-109405275939534012",
+			"date": "2023-02-28T15:50:03.000Z",
+			"author": {
+				"name": "Stefan Dillinger",
+				"url": "https://sueden.social/@johndillinger15",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8a85fde5d8abe12898f5cf05fe974e2235c6478573f4cc79976d88f2ccdfeec3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631860,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#favorited-by-109319966447959936",
+			"date": "2023-02-28T16:19:03.000Z",
+			"author": {
+				"name": "Florian Geierstanger",
+				"url": "https://mastodon.social/@kinoauge",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f1c020229c0be53788bfc9693d82f8f2da4362a9e3bcda0ce66402875bb61760.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631888,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#favorited-by-109314742127192185",
+			"date": "2023-02-28T16:52:48.000Z",
+			"author": {
+				"name": "Mykal Machon",
+				"url": "https://indieweb.social/@mykalmachon",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fabd1fb352d2a87a38cafd4e29847a5156a5595a1389dcd0569c7ef50f8c1412.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631918,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#favorited-by-109524352513111090",
+			"date": "2023-02-28T18:27:09.000Z",
+			"author": {
+				"name": "wesruv",
+				"url": "https://tech.lgbt/@wesruv",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/30c489152de3038498f2220c81bb63315beecbeab47dfe56df0720747c87d6cc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631961,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#favorited-by-109910134046449754",
+			"date": "2023-02-28T20:54:20.000Z",
+			"author": {
+				"name": "eswat42",
+				"url": "https://mstdn.social/@eswat42",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0310c4da56d7161591d730c0279647bd50439f2785b9e7b105e463e1458000c7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1755212,
+			"url": "https://fediverse.zachleat.com/@zachleat/111599233455589542#favorited-by-109292527270971438",
+			"date": "2023-12-18T04:21:59.000Z",
+			"author": {
+				"name": "jalciné needs a job but also",
+				"url": "https://todon.eu/@jalcine",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/da6710b0e4b15840d7e92ea3ff06e6d4beba339fb2cd46ed7be050b8404a3218.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1755213,
+			"url": "https://fediverse.zachleat.com/@zachleat/111599233455589542#favorited-by-109293783579428613",
+			"date": "2023-12-18T04:22:01.000Z",
+			"author": {
+				"name": "Olivier Forget",
+				"url": "https://social.tchncs.de/@teleclimber",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/05ae110c350df913372fef5e4cdbb63e41e451bd9052fe1c2d9a17cb2d92e20a.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1755220,
+			"url": "https://fediverse.zachleat.com/@zachleat/111599233455589542#favorited-by-110118955928962297",
+			"date": "2023-12-18T04:48:14.000Z",
+			"author": {
+				"name": "Boris Mann",
+				"url": "https://cosocial.ca/@boris",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2c1bfda270c087b1e4f55f1db99c194482fa28187885c450f46530c9da956440.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1755263,
+			"url": "https://fediverse.zachleat.com/@zachleat/111599233455589542#favorited-by-110705391623828531",
+			"date": "2023-12-18T08:55:38.000Z",
+			"author": {
+				"name": "Thom",
+				"url": "https://mastodon.nl/@lavaswimmer",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/22f96c864aaa740656ba426ddcf8cb4d087e75268c3443c16fb404db545423cd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1756354,
+			"url": "https://fediverse.zachleat.com/@zachleat/111609452605550232#favorited-by-110271970238452433",
+			"date": "2023-12-20T05:49:31.000Z",
+			"author": {
+				"name": "Lars ????️‍????",
+				"url": "https://mas.to/@lgk",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/64eee384b73769b90f3b1813ed9cc4ae2e9768f72e0e92dc4e19790b939b1918.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1846601,
+			"url": "https://fediverse.zachleat.com/@zachleat/113108919432063758#favorited-by-109292557125861804",
+			"date": "2024-09-09T21:29:06.000Z",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://toot.cafe/@slightlyoff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1629810,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109779197194734817",
+			"date": "2023-02-24T22:02:41.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://mastodon.social/@JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629811,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109524616709396499",
+			"date": "2023-02-24T22:02:44.000Z",
+			"author": {
+				"name": "jamiedixon",
+				"url": "https://mastodonapp.uk/@jamiedixon",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/66485d40c4b7248fd99f3750fd0e775c0fa73f11df1361f296190a6566d22c5b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629812,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109376903868639705",
+			"date": "2023-02-24T22:02:44.000Z",
+			"author": {
+				"name": "Simon St.Laurent",
+				"url": "https://mastodon.social/@simonstl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/77259943f6dda800130ad97ec6c4f45dab3a25bce08f286bdf43823f10dbb3cc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629813,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109292557125861804",
+			"date": "2023-02-24T22:02:45.000Z",
+			"author": {
+				"name": "Alex Russell",
+				"url": "https://toot.cafe/@slightlyoff",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629814,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109297619543364439",
+			"date": "2023-02-24T22:02:46.000Z",
+			"author": {
+				"name": "Brett Nelson",
+				"url": "https://dreamin.online/@brettmn",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7480a874e4c3407e915ac6931a9120b4a21cfb916fbd37522776818b613e344e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629815,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109833159864315319",
+			"date": "2023-02-24T22:02:47.000Z",
+			"author": {
+				"name": "Bastian Beuttel",
+				"url": "https://hachyderm.io/@basbebe",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629817,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109446932953258362",
+			"date": "2023-02-24T22:03:01.000Z",
+			"author": {
+				"name": "Elly Loel ✨🌱",
+				"url": "https://front-end.social/@elly",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2906f05fbc1fff47b76e9bd51804d1618a81be8f3062fc8c5a2e0f18d02f8559.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629818,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109287949593182322",
+			"date": "2023-02-24T22:03:02.000Z",
+			"author": {
+				"name": "Matt Wilcox",
+				"url": "https://mstdn.social/@mattwilcox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629819,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109291233828237636",
+			"date": "2023-02-24T22:03:03.000Z",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://mastodon.social/@matthiasott",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/692a4ec0d17295cc8035cc276bdf0de1ec88a1103a7a37e586f5b65741bf2380.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629820,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109289744030118387",
+			"date": "2023-02-24T22:03:04.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629821,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109296225968517429",
+			"date": "2023-02-24T22:03:04.000Z",
+			"author": {
+				"name": "Bastian Allgeier",
+				"url": "https://mastodon.social/@bastianallgeier",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a023a7b239d980e7cbfce2ad209a33d8c0867d985480033cf5d73f8210911238.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629824,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109293776424705752",
+			"date": "2023-02-24T22:03:07.000Z",
+			"author": {
+				"name": "Evan",
+				"url": "https://notacult.social/@darth_mall",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7611818d0960dc9048a633cedafeb397be6fc3859cfcb1d8efe9d8ac0f97e73f.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629825,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109325867586024180",
+			"date": "2023-02-24T22:03:07.000Z",
+			"author": {
+				"name": "Eleventy 🎈 v2.0.0",
+				"url": "https://fosstodon.org/@eleventy",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/db710ba6be404365f7ac25c7f50cf809b2520e16c5eaddc63b2f2daffa1ca441.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629910,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109294560456102011",
+			"date": "2023-02-25T02:05:20.000Z",
+			"author": {
+				"name": "Tanner Hodges",
+				"url": "https://mastodon.online/@tannerhodges",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/934cc3e8ba0f5e8bce1c99e8354988eb6604e083a397a67b27559d13e61bec45.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629922,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109292532015873530",
+			"date": "2023-02-25T02:46:38.000Z",
+			"author": {
+				"name": "Timo Tijhof",
+				"url": "https://fosstodon.org/@krinkle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1629977,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109299271938040991",
+			"date": "2023-02-25T05:30:01.000Z",
+			"author": {
+				"name": "Ara",
+				"url": "https://mastodon.social/@itsmeara",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7aa01daafdbef000cb088d88534ad28647f92052dcd48a28d638423ab0c40a84.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630047,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109920644158446875",
+			"date": "2023-02-25T08:34:55.000Z",
+			"author": {
+				"name": "nopefish :blobcatcomfcool:",
+				"url": "https://lor.sh/@nopefish",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7c97579cdd787e823f750d62c545a5f0d0721bb3739f60e4b5778855a9ec9f41.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630370,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109349261215844301",
+			"date": "2023-02-25T18:15:22.000Z",
+			"author": {
+				"name": "WebPerformance Report",
+				"url": "https://webperf.social/@webperfreport",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ef9cfa150774e863f3487f0613e5aa4c2414ca6561509ce62de15bc768f4659b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630371,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109522534829452084",
+			"date": "2023-02-25T18:15:23.000Z",
+			"author": {
+				"name": "~/j4v1",
+				"url": "https://mastodon.social/@javierlopezdeancos",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/45a2103a49dead3d8caf07559c32239504fd895a05c32249b388c5f49f5d3c4c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630372,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109290648221851677",
+			"date": "2023-02-25T18:15:24.000Z",
+			"author": {
+				"name": "Schalk Neethling 🇺🇦",
+				"url": "https://social.themyceliumnetwork.community/@schalkneethling",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c9947ea495310fbe7fdcbe7c4fdfd9b6b2b70fdb2ecd9f47e734e221a47d274a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630373,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109286461031266152",
+			"date": "2023-02-25T18:15:26.000Z",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630398,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109841392103271573",
+			"date": "2023-02-25T19:18:13.000Z",
+			"author": {
+				"name": "Basix@hachyderm.io",
+				"url": "https://hachyderm.io/@Basix",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4cc3b7ed3bb7910bde113e1cfc10114b041aa88bfdec5ef6ce759b8574c3c4cb.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630583,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109363534965522576",
+			"date": "2023-02-26T06:37:25.000Z",
+			"author": {
+				"name": "Martin B",
+				"url": "https://mastodon.nu/@macbruker",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cd39ebca652af505a500ab6135e9121c2b2fa084ddd7305b0d62de21bdffeb36.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1630703,
+			"url": "https://fediverse.zachleat.com/@zachleat/109921346256931088#reblogged-by-109343895764155412",
+			"date": "2023-02-26T17:22:14.000Z",
+			"author": {
+				"name": "Matt",
+				"url": "https://fosstodon.org/@mattdecamp",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631820,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#reblogged-by-109512534440572397",
+			"date": "2023-02-28T14:54:00.000Z",
+			"author": {
+				"name": "dan",
+				"url": "https://notacult.social/@dan",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/28a5cf95b5c33c7c4fb5af5eda5a78d0f2c67fb66ca17ab43818469a5523ed61.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631837,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#reblogged-by-109294553613163555",
+			"date": "2023-02-28T15:25:19.000Z",
+			"author": {
+				"name": "Simon MacDonald",
+				"url": "https://mastodon.online/@macdonst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/27aa701b0695944d4243704b267bd92a72519acda749f75738797d44b3ec4f7e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631840,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#reblogged-by-109345290852020423",
+			"date": "2023-02-28T15:25:22.000Z",
+			"author": {
+				"name": "enhance",
+				"url": "https://fosstodon.org/@enhance_dev",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631851,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#reblogged-by-109405275939534012",
+			"date": "2023-02-28T15:50:04.000Z",
+			"author": {
+				"name": "Stefan Dillinger",
+				"url": "https://sueden.social/@johndillinger15",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8a85fde5d8abe12898f5cf05fe974e2235c6478573f4cc79976d88f2ccdfeec3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631890,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#reblogged-by-109314742127192185",
+			"date": "2023-02-28T16:52:50.000Z",
+			"author": {
+				"name": "Mykal Machon",
+				"url": "https://indieweb.social/@mykalmachon",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fabd1fb352d2a87a38cafd4e29847a5156a5595a1389dcd0569c7ef50f8c1412.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1631995,
+			"url": "https://fediverse.zachleat.com/@zachleat/109942889765889768#reblogged-by-109413803942318824",
+			"date": "2023-02-28T21:58:08.000Z",
+			"author": {
+				"name": "Shane Afsar",
+				"url": "https://mastodon.online/@shaneafsar",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/008b156e3854c880b4ece6a4a153507fb8e7152f8a1f3794639c1ef98142aacf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1755214,
+			"url": "https://fediverse.zachleat.com/@zachleat/111599233455589542#reblogged-by-109417590286305365",
+			"date": "2023-12-18T04:22:01.000Z",
+			"author": {
+				"name": "Adrian Cochrane",
+				"url": "https://floss.social/@alcinnz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/27c7d569b86b946a313a9bcff38bb8affbede2b4c1231f894a34cbb99755f240.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1755215,
+			"url": "https://fediverse.zachleat.com/@zachleat/111599233455589542#reblogged-by-109293783579428613",
+			"date": "2023-12-18T04:22:03.000Z",
+			"author": {
+				"name": "Olivier Forget",
+				"url": "https://social.tchncs.de/@teleclimber",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/05ae110c350df913372fef5e4cdbb63e41e451bd9052fe1c2d9a17cb2d92e20a.png"
+			},
+			"via": "webmention"
+		}
+	]
+}

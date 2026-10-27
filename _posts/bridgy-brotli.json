@@ -1,0 +1,57 @@
+{
+	"comments": [
+		{
+			"id": 636675,
+			"parentId": 0,
+			"url": "https://www.webrocker.de/2019/06/30/brid-gy-brotly/",
+			"author": {
+				"name": "Webrocker",
+				"avatarUrl": "https://avatars.webmention.io/www.webrocker.de/c631c1f7647d40f51aeb42b0d0477e399ad8f501954a7f7d07cbdecca178539e.png"
+			},
+			"date": "2019-06-30T09:12:34.000Z",
+			"content": "<p>‪Good catch. Thank you @zachleat for‬ the write up</p>\n<blockquote cite=\"https://www.zachleat.com/web/bridgy-brotli/\">Just a fair warning if you use the amazing Bridgy service to gather webmentions from social networking sites. It won’t actually work with your site if you’re using Brotli compression. Use gzip for your HTML requests instead of Brotli and it will work fine.<a href=\"https://www.zachleat.com/web/bridgy-brotli/\">zachleat.com</a></blockquote>\n<p><a class=\"u-in-reply-to\" href=\"https://www.zachleat.com/web/bridgy-brotli/\"></a><br /><a class=\"u-in-reply-to\" href=\"https://twitter.com/zachleat/status/1145034044394135552?s=21\"></a></p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 638279,
+			"parentId": 0,
+			"url": "https://twitter.com/adactioLinks/status/1146092235164913664",
+			"author": {
+				"name": "Adactio Links",
+				"url": "https://twitter.com/adactioLinks",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8e0a805eae6791b05c23541931a123a5446393bb9929fcdd274f7e5c33d7792f.jpeg"
+			},
+			"date": "2019-07-02T16:24:16.000Z",
+			"content": "Bridgy for Webmentions with Brotli—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/bridgy-brotli/\">zachleat.com/web/bridgy-bro…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "mention",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 636798,
+			"url": "https://twitter.com/zachleat/status/1145042479135297536#favorited-by-15269782",
+			"date": "2019-06-30T13:42:36.000Z",
+			"author": {
+				"name": "Riccardo Erra",
+				"url": "https://twitter.com/riccardoerra",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/76b9e43e96ad558b76a5e01d4134b6c60f6345d8513c9e7d252a631be1b28961.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"bookmarks": [
+		{
+			"id": 638275,
+			"url": "https://adactio.com/links/15455",
+			"date": "2019-07-02T21:21:57.000Z",
+			"author": {
+				"name": "Jeremy Keith",
+				"url": "https://adactio.com/",
+				"avatarUrl": "https://avatars.webmention.io/adactio.com/24f33c5820046ebbcb429f78bb988fc1fa9f97d35247e0b72b3fb5ff888da633.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}

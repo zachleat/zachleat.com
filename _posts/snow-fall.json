@@ -1,0 +1,3671 @@
+{
+	"comments": [
+		{
+			"id": 1754002,
+			"parentId": 0,
+			"url": "https://sunny.garden/@knowler/111584912265152508",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://sunny.garden/@knowler",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/50ce56f39c91e30823b4e4f318af74b4e46c9debc27b9eb5cd70c94af36b7c88.jpg"
+			},
+			"date": "2023-12-15T14:30:38.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Can you make a &lt;snow-shovel&gt; component next?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754001,
+			"parentId": 0,
+			"url": "https://mastodon.social/@raymondcamden/111584963305743600",
+			"author": {
+				"name": "Raymond Camden",
+				"url": "https://mastodon.social/@raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1ddb97091dd0bdc5385c4527b26663b5f999facfe47249e02270a3f48303fbf.jpg"
+			},
+			"date": "2023-12-15T14:43:37.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> small plea - maybe also host the JS? i hate to npm install anything on a simple web project that doesn't need node_modules, know what i mean?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754004,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584970289624166",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T14:45:24.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@raymondcamden\" class=\"u-url\">@<span>raymondcamden</span></a></span> do you mean like start my own web components CDN? ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754052,
+			"parentId": 0,
+			"url": "https://mastodon.social/@raymondcamden/111584980159171479",
+			"author": {
+				"name": "Raymond Camden",
+				"url": "https://mastodon.social/@raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1ddb97091dd0bdc5385c4527b26663b5f999facfe47249e02270a3f48303fbf.jpg"
+			},
+			"date": "2023-12-15T14:47:54.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> heh, that's overkill probably. just in general it feels like we should avoid needing to use npm to install simple stuff. wouldnt you agree?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754053,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584989188040130",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T14:50:12.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@raymondcamden\" class=\"u-url\">@<span>raymondcamden</span></a></span> ah yeah, for sure! I’m just confused as to the question—it doesn’t have any dependencies, so it doesn’t “require” `npm` at all.</p><p>Probably reusing this copy would have been better: <a href=\"https://github.com/zachleat/table-saw#installation\"><span>https://</span><span>github.com/zachleat/table-saw#</span><span>installation</span></a></p>\n<a href=\"https://github.com/zachleat/table-saw\">GitHub - zachleat/table-saw: A small web component for responsive &lt;table&gt; elements.</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754054,
+			"parentId": 0,
+			"url": "https://seocommunity.social/@simoncox/111585026277995958",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"date": "2023-12-15T14:59:38.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <br />Thank you Zach! Had to make a small css change on the background so you can see the snowflakes but now <a href=\"http://www.simoncox.com\"><span>http://www.</span><span>simoncox.com</span><span></span></a> is decorated for Christmas!</p>\n<a href=\"https://www.simoncox.com\">Simon Cox Technical SEO and Bread baker</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754055,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585037080036443",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T15:02:23.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://seocommunity.social/@simoncox\" class=\"u-url\">@<span>simoncox</span></a></span> ah do you mean to your web site’s background or to &lt;snow-fall&gt;? Looks great!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754056,
+			"parentId": 0,
+			"url": "https://sunny.garden/@kayserifserif/111585049957263503",
+			"author": {
+				"name": "katherine",
+				"url": "https://sunny.garden/@kayserifserif",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/59a482e7bd79bae82cbf5ce33b96eed9d0300703811d55b0b5e551e45871a86d.jpg"
+			},
+			"date": "2023-12-15T15:05:39.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://indieweb.social/@nonnullish\" class=\"u-url\">@<span>nonnullish</span></a></span> seasonal decorations!!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754050,
+			"parentId": 0,
+			"url": "https://seocommunity.social/@simoncox/111585065042231859",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"date": "2023-12-15T15:09:30.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> To the page background - though i notice on your site you have a white background so you can only see the snow where there is a darker images or component - subtle!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754051,
+			"parentId": 0,
+			"url": "https://mastodon.social/@raymondcamden/111585072238468226",
+			"author": {
+				"name": "Raymond Camden",
+				"url": "https://mastodon.social/@raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1ddb97091dd0bdc5385c4527b26663b5f999facfe47249e02270a3f48303fbf.jpg"
+			},
+			"date": "2023-12-15T15:11:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> i was overthinking it honestly - you link to the source on top - id just download from there if i wanted to skip npm. sorry :&gt;</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754118,
+			"parentId": 0,
+			"url": "https://mastodon.social/@westbrook/111585170636218059",
+			"author": {
+				"name": "westbrook",
+				"url": "https://mastodon.social/@westbrook",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f845e34d9338fcdd255785cb099cce719f19f34f6625aec1749e30cade2e0b79.jpg"
+			},
+			"date": "2023-12-15T15:36:21.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Why doesn't your website follow my dark mode user preferences so I can see even more of this snow!?!?</p><p>Also, feature request ????, can you add a `pile` attribute that causes the snow to pile up from the bottom of the element to which it applies? Sort of a timer after which a user should return to eating cookie and sipping hot chocolate by the fire... ☕ ???? ???? ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754117,
+			"parentId": 0,
+			"url": "https://sunny.garden/@knowler/111585218083101762",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://sunny.garden/@knowler",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/50ce56f39c91e30823b4e4f318af74b4e46c9debc27b9eb5cd70c94af36b7c88.jpg"
+			},
+			"date": "2023-12-15T15:48:25.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@raymondcamden\" class=\"u-url\">@<span>raymondcamden</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Little tip: you can use esm.sh for code on GitHub. Versioning is ultimately commit based, but you can use tags too. I usually include the `?raw` param so it doesn’t do any of its bundling. Example:</p><p><a href=\"https://esm.sh/gh/zachleat/snow-fall/snow-fall.js?raw\"><span>https://</span><span>esm.sh/gh/zachleat/snow-fall/s</span><span>now-fall.js?raw</span></a></p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754156,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585247287067134",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T15:55:50.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@westbrook\" class=\"u-url\">@<span>westbrook</span></a></span> PRs welcome ???????????? (not for dark mode ????)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754154,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585252655984951",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T15:57:12.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://sunny.garden/@knowler\" class=\"u-url\">@<span>knowler</span></a></span> .remove() ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754155,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585254944990444",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T15:57:47.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@raymondcamden\" class=\"u-url\">@<span>raymondcamden</span></a></span> ah no worries! I think it’s fine to call it out—I just got lazy on the README ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754152,
+			"parentId": 0,
+			"url": "https://mastodon.social/@westbrook/111585258493526888",
+			"author": {
+				"name": "westbrook",
+				"url": "https://mastodon.social/@westbrook",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f845e34d9338fcdd255785cb099cce719f19f34f6625aec1749e30cade2e0b79.jpg"
+			},
+			"date": "2023-12-15T15:58:41.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> The user agent is always right? ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754157,
+			"parentId": 0,
+			"url": "https://indieweb.social/@miguel/111585261543854078",
+			"author": {
+				"name": "Miguel",
+				"url": "https://indieweb.social/@miguel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/51595a97b5801e19b4de24327e3db1623cd76905bb716fff4ea8184bde937a37.jpg"
+			},
+			"date": "2023-12-15T15:59:28.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> neat! just in time for the holidays</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754153,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585289916786925",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T16:06:41.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@westbrook\" class=\"u-url\">@<span>westbrook</span></a></span> for sure and I may add one at some point but only when I want to ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754158,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585292685842194",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T16:07:23.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@miguel\" class=\"u-url\">@<span>miguel</span></a></span> thanks!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754149,
+			"parentId": 0,
+			"url": "https://mastodon.social/@raymondcamden/111585300697504968",
+			"author": {
+				"name": "Raymond Camden",
+				"url": "https://mastodon.social/@raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1ddb97091dd0bdc5385c4527b26663b5f999facfe47249e02270a3f48303fbf.jpg"
+			},
+			"date": "2023-12-15T16:09:25.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> ... a developer... being lazy..... UNHEARD OF!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754150,
+			"parentId": 0,
+			"url": "https://mastodon.social/@noleli/111585355074595451",
+			"author": {
+				"name": "Noah Liebman",
+				"url": "https://mastodon.social/@noleli",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/376eaffd57dfe1e7e31d7569386db8a545d2f5533207014b25361ce54ec5b62d.jpg"
+			},
+			"date": "2023-12-15T16:23:15.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://sunny.garden/@knowler\" class=\"u-url\">@<span>knowler</span></a></span> long live Mowing Man</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754151,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585358642478125",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T16:24:09.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@noleli\" class=\"u-url\">@<span>noleli</span></a></span> <span class=\"h-card\"><a href=\"https://sunny.garden/@knowler\" class=\"u-url\">@<span>knowler</span></a></span> wait what is this?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754165,
+			"parentId": 0,
+			"url": "https://mastodon.social/@noleli/111585433773107231",
+			"author": {
+				"name": "Noah Liebman",
+				"url": "https://mastodon.social/@noleli",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/376eaffd57dfe1e7e31d7569386db8a545d2f5533207014b25361ce54ec5b62d.jpg"
+			},
+			"date": "2023-12-15T16:43:16.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://sunny.garden/@knowler\" class=\"u-url\">@<span>knowler</span></a></span> a classic Mac screensaver from the ’90s, from the same set as the venerable flying toasters! I grew up on this stuff ???? <a href=\"https://en.wikipedia.org/wiki/After_Dark_(software)\"><span>https://</span><span>en.wikipedia.org/wiki/After_Da</span><span>rk_(software)</span></a></p>\n<a href=\"https://en.wikipedia.org/wiki/After_Dark_(software)\">After Dark (software) - Wikipedia</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754166,
+			"parentId": 0,
+			"url": "https://social.lol/@bw/111585442416616867",
+			"author": {
+				"name": "Blake Watson :prami:",
+				"url": "https://social.lol/@bw",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c48043e302da23636fb8609ed11531a075c537624370ed330c5a0363dbf532c5.png"
+			},
+			"date": "2023-12-15T16:45:28.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> ayyyy <a href=\"https://bw.omg.lol/\"><span>https://</span><span>bw.omg.lol/</span><span></span></a></p>\n<a href=\"https://bw.omg.lol/\">@bw</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754167,
+			"parentId": 0,
+			"url": "https://piaille.fr/@tbroyer/111585454702562025",
+			"author": {
+				"name": "Thomas Broyer",
+				"url": "https://piaille.fr/@tbroyer",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e0e13a975c6d980b8b1f3e3a1e163e2739a637adbc4a2e03f155938cfcbd693d.png"
+			},
+			"date": "2023-12-15T16:48:35.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Fwiw, thanks for using the shadow DOM here, perfect use case for it ????</p><p>(been wanting to try and make a PR to do the same for <span class=\"h-card\"><a href=\"https://front-end.social/@stefan\" class=\"u-url\">@<span>stefan</span></a></span>'s sparkly-text <a href=\"https://www.stefanjudis.com/blog/a-web-component-to-make-your-text-sparkle/\"><span>https://www.</span><span>stefanjudis.com/blog/a-web-com</span><span>ponent-to-make-your-text-sparkle/</span></a>, haven't taken the time yet)</p>\n<a href=\"https://www.stefanjudis.com/blog/a-web-component-to-make-your-text-sparkle/\">A web component to make your text sparkle</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754186,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585521181011343",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T17:05:30.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://social.lol/@bw\" class=\"u-url\">@<span>bw</span></a></span> awesome!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754185,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585523610549848",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T17:06:07.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@noleli\" class=\"u-url\">@<span>noleli</span></a></span> <span class=\"h-card\"><a href=\"https://sunny.garden/@knowler\" class=\"u-url\">@<span>knowler</span></a></span> web sites need screensavers ????</p><p>wait I think I remember one of these, was it <span class=\"h-card\"><a href=\"https://front-end.social/@stefan\" class=\"u-url\">@<span>stefan</span></a></span>?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754187,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585526728061305",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T17:06:54.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://piaille.fr/@tbroyer\" class=\"u-url\">@<span>tbroyer</span></a></span> <span class=\"h-card\"><a href=\"https://front-end.social/@stefan\" class=\"u-url\">@<span>stefan</span></a></span> yeah! Shadow DOM is a good tool to have in the toolbox ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754183,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585553929463930",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T17:13:49.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://social.lol/@robb\" class=\"u-url\">@<span>robb</span></a></span> awesome—that’s not your web site is it?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754188,
+			"parentId": 0,
+			"url": "https://indieweb.social/@tbeseda/111585601324509060",
+			"author": {
+				"name": "tbeseda",
+				"url": "https://indieweb.social/@tbeseda",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/feecc78cf7fcc132ad3df322eac5e008d32fa9ee2bd3a34792613feeb101452d.jpg"
+			},
+			"date": "2023-12-15T17:25:53.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Hey nice!<br />Looks great on my dark mode and even in light mode when there's an image or code block???? like <a href=\"https://tbeseda.com/blog/super-helpful-server-timing-http-response-headers\"><span>https://</span><span>tbeseda.com/blog/super-helpful</span><span>-server-timing-http-response-headers</span></a> </p><p>I combined it with `const isWinter = [10, 11, 0, 1].includes(new Date().getMonth())` - bc I will probably forget I added it and don't want it snowing in July!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754189,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585615574588693",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T17:29:30.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@tbeseda\" class=\"u-url\">@<span>tbeseda</span></a></span> awesome!</p><p>do I need to add an &lt;is-land&gt; loading condition for local date/time?? ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754217,
+			"parentId": 0,
+			"url": "https://social.lol/@robb/111585651130366403",
+			"author": {
+				"name": "Robb Knight",
+				"url": "https://social.lol/@robb",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d2b5943b2e687ef31399f8241bd07d88b1140716a89c5e026038eaf8ec5341b7.jpg"
+			},
+			"date": "2023-12-15T17:38:33.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> it’s not, no</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754219,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585693508198620",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T17:49:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@jhofker\" class=\"u-url\">@<span>jhofker</span></a></span> yay!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754215,
+			"parentId": 0,
+			"url": "https://indieweb.social/@tbeseda/111585713113057567",
+			"author": {
+				"name": "tbeseda",
+				"url": "https://indieweb.social/@tbeseda",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/feecc78cf7fcc132ad3df322eac5e008d32fa9ee2bd3a34792613feeb101452d.jpg"
+			},
+			"date": "2023-12-15T17:54:18.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Not a bad idea! Things get real weird between server/user/developer time though…</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754216,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585718993998797",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T17:55:48.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@tbeseda\" class=\"u-url\">@<span>tbeseda</span></a></span> on:daytime on:nighttime on:winter ????</p><p>(&lt;is-land&gt; is client only)</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754218,
+			"parentId": 0,
+			"url": "https://mastodon.social/@ardouglass/111585720852167043",
+			"author": {
+				"name": "Andrew Douglass",
+				"url": "https://mastodon.social/@ardouglass",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3809c8206793d2451f9f19dddfd45ec4663701035ca6613d223e0a1ef75d088a.png"
+			},
+			"date": "2023-12-15T17:56:16.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> is it really website snow if it doesn’t make my computer’s fans scream in pain?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754220,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111585725208582950",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-15T17:57:23.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@ardouglass\" class=\"u-url\">@<span>ardouglass</span></a></span> *sweats from behind a fanless M1 macbook*</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754856,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/111592968301056136",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2023-12-17T00:39:24.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.design/@DavidDarnes\" class=\"u-url\">@<span>DavidDarnes</span></a></span> my javascript skills are unmatched—react could never</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/snow-fall/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754857,
+			"parentId": 0,
+			"url": "https://mastodon.social/@ollicle/111593118491190452",
+			"author": {
+				"name": "Ollie Boermans",
+				"url": "https://mastodon.social/@ollicle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5d35ee73c0d3f5114ab5319d45c37cb979c9ab5f4e5fb98f918a40b0a09d6745.png"
+			},
+			"date": "2023-12-17T01:17:35.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.design/@DavidDarnes\" class=\"u-url\">@<span>DavidDarnes</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> ✨Magic!</p><p>Good thing everyone in my RSS feed reader are good people that will only use this power for the pursuit of goodly goodness.</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/snow-fall/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1754875,
+			"parentId": 0,
+			"url": "https://hachyderm.io/@fantinel/111593379905766322",
+			"author": {
+				"name": "Matheus Fantinel",
+				"url": "https://hachyderm.io/@fantinel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.fosstodon.org/785fd5dae54846dc8df0921c0db74e8cc51dc82d3e0cd6cbc5f38cea632dc548.png"
+			},
+			"date": "2023-12-17T02:24:04.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@hexagoncircle\" class=\"u-url\">@<span>hexagoncircle</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I’m definitely gonna add this to mine I June when it’s winter here!</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/snow-fall/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1755225,
+			"parentId": 0,
+			"url": "https://front-end.social/@elly/111599856853876849",
+			"author": {
+				"name": "Elly Loel ✨????",
+				"url": "https://front-end.social/@elly",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2906f05fbc1fff47b76e9bd51804d1618a81be8f3062fc8c5a2e0f18d02f8559.png"
+			},
+			"date": "2023-12-18T05:51:15.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.design/@DavidDarnes\" class=\"u-url\">@<span>DavidDarnes</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> whaaatttt ???? that’s so cool! but also doesn’t seems to be working for me ????</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/snow-fall/\"></a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1755318,
+			"parentId": 0,
+			"url": "https://www.alvinashcraft.com/2023/12/18/dew-drop-december-18-2023-4091/",
+			"author": {
+				"name": "Alvin A.",
+				"url": "https://www.alvinashcraft.com/author/admin/"
+			},
+			"date": "2023-12-18T12:09:49.000Z",
+			"content": "<h3><a></a>Top Links</h3>\n<ul><li><a href=\"https://devblogs.microsoft.com/visualstudio/unlocking-the-secrets-of-managed-memory-dive-into-event-handler-leak-insights/\">Unlocking the Secrets of Managed Memory: Dive into Event Handler Leak Insights!</a> (Massimo Giusti)</li>\n<li><a href=\"https://michaelscodingspot.com/slow-development-in-big-companies/\">Development slowness in big and legacy applications [and how to hurry it up]</a> (Michael Shpilt)</li>\n<li><a href=\"https://www.claudiobernasconi.ch/2023/12/15/dotnet-user-interface-frameworks-selection/\">What User Interface Framework Should You Choose for .NET Desktop Applications?</a> (Claudio Bernasconi)</li>\n<li><a href=\"http://www.mergeconflict.fm/389\">Merge Conflict 389: Wasm, WASI, and Beyond!</a> (James Montemagno &amp; Frank Kreuger)</li>\n<li><a href=\"https://github.com/CameronVetter/Dalle3-CSharp-Advent-Day-17\">GPT-4 using DALL-E 3 to generate images in C#</a> (Cameron Vetter)</li>\n</ul><p></p>\n<h3><a></a>Web &amp; Cloud Development</h3>\n<ul><li><a href=\"https://www.telerik.com/blogs/angular-way-forward-kendo-ui-guide-versions-13-14-15\">Angular Way Forward: Kendo UI Guide for Smooth Sailing Through Versions 13, 14 and 15</a> <em>and</em> <a href=\"https://www.telerik.com/blogs/embracing-progress-navigating-vue-2-3-transition\">Embracing Progress: Navigating the Vue 2 to Vue 3 Transition</a> (Antoniya Boynovska)</li>\n<li><a href=\"https://bartwullems.blogspot.com/2023/12/azure-static-web-appdeploying-to.html\">Azure Static Web App–Deploying to multiple environments</a> <em>and</em> <a href=\"https://bartwullems.blogspot.com/2023/12/azure-static-web-apps-vs-code-extension.html\">Azure Static Web Apps – VS Code extension</a> (Bart Wullems)</li>\n<li><a href=\"https://code-maze.com/how-to-publish-a-blazor-webassembly-application-on-iis/\">Publishing Blazor WebAssembly App to IIS</a> (Gergo Vandor)</li>\n<li><a href=\"https://www.freecodecamp.org/news/javascript-async-await/\">How to Use Async/Await in JavaScript – Explained with Code Examples</a> (Nathan Sebhastian)</li>\n<li><a href=\"https://blog.sentry.io/fallbacks-for-http-404-images-in-html-and-javascript/\">Fallbacks for HTTP 404 images in HTML and JavaScript</a> (Salma Alam-Naylor)</li>\n<li><a href=\"https://eslint.org/blog/2023/12/eslint-v8.56.0-released/\">ESLint v8.56.0 released</a> (Milos Djermanovic)</li>\n<li><a href=\"https://www.zachleat.com/web/snow-fall/\">snow-fall Web Component</a> (Zach Leatherman)</li>\n<li><a href=\"https://jamiemaguire.net/index.php/2023/12/16/elastic-search-cheat-sheet/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=elastic-search-cheat-sheet\">Elastic Search Cheat Sheet</a> (Jamie Maguire)</li>\n<li><a href=\"https://thenewstack.io/meet-openbao-an-open-source-fork-of-hashicorp-vagrant/\">Meet OpenBao, an Open Source Fork of HashiCorp Vagrant</a> (Joab Jackson)</li>\n<li><a href=\"https://www.pulumi.com/blog/pricing-calculator-blog/\">Introducing the Pulumi Cloud Team Edition Cost Calculator</a> (Meagan Cojocar)</li>\n</ul><p></p>\n<h3><a></a>Visual Studio &amp; .NET</h3>\n<ul><li><a href=\"https://visualstudiomagazine.com/articles/2023/12/15/vs-debugging-requests.aspx\">Visual Studio Devs Ask Santa for Debugging Gifts</a> (David Ramel)</li>\n<li><a href=\"https://www.textcontrol.com/blog/2023/12/16/merging-templates-with-mailmerge-with-different-merge-field-settings/\">Merging Templates with MailMerge with Different Merge Field Settings in C#</a> (Bjoern Meyer)</li>\n<li><a href=\"http://metadataconsulting.blogspot.com/2023/12/How-to-prevent-Visual-Studio-Code-from-opening-multiple-instances.html\">How to prevent VS Code from opening multiple instances</a> (Mark Pahulje)</li>\n<li><a href=\"https://www.devleader.ca/2023/12/17/what-is-the-factory-software-pattern-in-c-what-you-need-to-know/\">What is the Factory Software Pattern in C# – What You Need to Know</a> (Nick Cosentino)</li>\n<li><a href=\"https://samestuffdifferentday.net/2023/12/18/space/\">People in Space! (2023 .NET Advent)</a> (Michael Eaton)</li>\n<li><a href=\"https://blog.markoliver.website/Querying-Console-Output-In-Your-Tests\">Querying Console Output In Your Tests</a> (Mark Oliver)</li>\n<li><a href=\"https://trailheadtechnology.com/scanning-uploaded-files-for-malware-in-c/\">Scanning Uploaded Files for Malware in C#</a> (Vladan Petrovic)</li>\n<li><a href=\"https://ijrussell.github.io/posts/csharp-discriminated-union/\">Discriminated Unions in C#</a> (Ian Russell)</li>\n<li><a href=\"https://www.thecodepainter.co.uk/blog/20231216/scanandindexof\">Functional Programming with C#</a> (Simon Painter)</li>\n<li><a href=\"https://devblogs.microsoft.com/cppblog/whats-new-in-the-vcpkg-2023-12-12-release/\">What’s New in the vcpkg 2023.12.12 Release</a> (Augustin Popa)</li>\n<li><a href=\"https://arinco.com.au/blog/unveiling-net-8-part-1new-features-and-capabilities/\">Unveiling .NET 8 – Part 1: New Features and Capabilities</a> (Dominic Codespoti)</li>\n<li><a href=\"https://code-maze.com/dotnet-using-the-cli-to-build-and-run-net-applications/\">Using the CLI to Build and Run .NET Applications</a> (Dusko Mirkovic)</li>\n<li><a href=\"https://www.milanjovanovic.tech/blog/5-serilog-best-practices-for-better-structured-logging\">5 Serilog Best Practices For Better Structured Logging</a> (Milan Jovanović)</li>\n<li><a href=\"https://devblogs.microsoft.com/oldnewthing/20231215-00/?p=109155\">How do I specify an optional string parameter to a Windows Runtime method?</a> (Raymond Chen)</li>\n</ul><p></p>\n<h3><a></a>Design, Methodology, AI &amp; Testing</h3>\n<ul><li><a href=\"https://azure.microsoft.com/en-us/blog/azure-openai-service-powers-the-microsoft-copilot-ecosystem/\">Azure OpenAI Service powers the Microsoft Copilot ecosystem</a> (Brianna McGovern)</li>\n<li><a href=\"https://damienbod.com/2023/12/18/signing-git-commits-on-windows-and-using-with-github/\">Signing git commits on Windows and using with Github</a> (Damien Bowden)</li>\n<li><a href=\"https://devblogs.microsoft.com/premier-developer/how-to-enhance-your-chatbot-so-it-can-retrieve-data-from-multiple-data-sources-orchestrate-its-own-plan-with-c-semantic-kernel-planner-azure-openai-part-3-demo-app/\">How to enhance your chatbot so it can retrieve data from multiple data sources &amp; orchestrate its own plan with C# Semantic Kernel, planner &amp; Azure OpenAI – Part 3 (Demo App)</a> <em>and</em> <a href=\"https://devblogs.microsoft.com/premier-developer/how-to-enhance-your-chatbot-so-it-can-retrieve-data-from-multiple-data-sources-orchestrate-its-own-plan-with-c-semantic-kernel-planner-azure-openai-part-4-local-development-deployme/\">Part 4 (Local Development &amp; Deployment Details)</a> (Jordan Bean)</li>\n<li><a href=\"https://www.cncf.io/blog/2023/12/15/best-practices-for-securing-kubernetes-deployments/\">Best practices for securing Kubernetes deployments</a> (Sunny Bhambhani)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/designing-cloud-architecture-creating-professional-azure/ba-p/3996707\">Designing Cloud Architecture: Creating Professional Azure Diagrams with PowerPoint</a> (Werner Rall)</li>\n<li><a href=\"https://deecoding.net/post-6/\">Exploring xUnit!</a> (Deepti Velusamy)</li>\n<li><a href=\"https://event-driven.io/en/the_end_is_near_for_crud_data/\">Hitchhiker’s Guide To Moving From Relational Data To Events</a> (Oskar Dudycz)</li>\n<li><a href=\"https://dailydotnettips.com/how-generative-ai-is-revolutionizing-software-development-learn-using-mind-map/\">How Generative AI is Revolutionizing Software Development ? – Learn using Mind Map</a> (Abhijit Jana)</li>\n<li><a href=\"https://blog.jetbrains.com/teamcity/2023/12/teamcity-2023-11-1-is-here/\">TeamCity 2023.11.1 Is Here</a> (Dmitrii Korovin)</li>\n<li><a href=\"https://www.freecodecamp.org/news/variables-in-figma-handbook/\">How to Use Variables in Figma – A Handbook for Beginners</a> (Ijelekhai Faith Olohijere)</li>\n<li><a href=\"https://jdmeier.com/strategic-thinking-is-the-most-valuable-leadership-skill/\">Strategic Thinking is the Most Valuable Leadership Skill Today</a> (JD Meier)</li>\n<li><a href=\"http://blog.kindel.com/2023/12/17/dont-sell-ideas-debate-them/\">Don’t Sell Ideas – Debate Them</a> (Charlie Kindel)</li>\n</ul><p></p>\n<h3><a></a>Screencasts &amp; Videos</h3>\n<ul><li><a href=\"http://www.youtube.com/watch?v=j9mZXuZgq_0\">The 12 Days of Copilot – Day 10 Microsoft 365 Copilot in Microsoft Teams Meetings –HLS Show Me How</a> (Microsoft Healthcare &amp; Life Blog Videos)</li>\n<li><a href=\"http://www.youtube.com/watch?v=nRqDB6wH9LA\">Advent of Code 2023 Day 10: Pipe Maze in C# ✅✅</a> <em>and</em> <a href=\"http://www.youtube.com/watch?v=rYoN-uJq4fc\">Advent of Code 2023 Day 11: Cosmic Expansion in C# ✅✅</a> <em>and</em> <a href=\"http://www.youtube.com/watch?v=tOg269RdK88\">Advent of Code 2023 Day 12: Hot Springs in C# ✅✅</a> <em>and</em> <a href=\"http://www.youtube.com/watch?v=YDBWWniq7sE\">Advent of Code 2023 Day 13: Point of Incidence in C# ✅✅</a> (Martin Zikmund)</li>\n<li><a href=\"https://www.linkedin.com/posts/bradsmi_theprompt-ai-activity-7141473455878586369-4_51/\">The Prompt with Trevor Noah Episode 3 – How Can AI Help Radiologists Better Detect Breast Cancer?</a> (Brad Smith)</li>\n<li><a href=\"http://www.youtube.com/watch?v=JYhCteAuDuI\">FreeCodeSession – Episode 505</a> (Jason Bock)</li>\n</ul><p></p>\n<h3><a></a>Podcasts</h3>\n<ul><li><a href=\"https://www.directionsonmicrosoft.com/podcast/microsoft-ea-negotiation-podcast-series-negotiation-levers/\">Directions on Microsoft – Microsoft EA Negotiation Podcast: Levers</a> (Mary-Jo Foley)</li>\n<li><a href=\"https://www.freecodecamp.org/news/podcast-kylie-ying-mit-cern/\">freeCodeCamp Podcast: Kylie Ying on MIT, CERN, Figure Skating, and Poker AI</a> (Quincy Larson)</li>\n<li><a href=\"https://scrummastertoolbox.libsyn.com/beyond-requirements-rethinking-agile-product-ownership-robert-briese\">Scrum Master Toolbox Podcast – Beyond Requirements, Rethinking Agile Product Ownership | Robert Briese</a> (Vasco Duarte)</li>\n<li><a href=\"https://www.dotnetmauipodcast.com/121\">.NET MAUI Podcast Episode 121: M365 Admin App: A Customer .NET MAUI Migration Story</a> (James Montemagno, Matt Soucoup &amp; David Ortinau)</li>\n<li><a href=\"https://soundcloud.com/awsdevelopers/episode-105-aws-identify-with-kevin-shanley-and-victor-moreno\">AWS Developers Podcast Episode 105 – AWS Identity with Kevin Shanley and Victor Moreno</a> (David Isbitski)</li>\n<li><a href=\"https://topenddevs.com/podcasts/adventures-in-angular/episodes/migrating-to-new-angular-features-aia-398\">Migrating to New Angular Features – Adventures in Angular 398</a> (Charles Max Wood, Armen Vardanyan &amp; Lucas Paganini)</li>\n<li><a href=\"https://syntax.fm/show/705/is-running-random-code-from-npm-safe-with-feross-aboukhadijeh\">Syntax Podcast Episode 705: Is Running Random Code From npm Safe? With Feross Aboukhadijeh</a> (Wes Bos &amp; Scott Tolinski)</li>\n<li><a href=\"https://www.codingblocks.net/podcast/gartner-top-strategic-technology-trends-2024/\">Coding Blocks Podcast – Gartner Top Strategic Technology Trends 2024</a> (Allen Underwood, Michael Outlaw &amp; Joe Zack)</li>\n<li><a href=\"https://changelog.com/friends/25\">Changelog &amp; Friends Podcast – #define: game theory, dude</a> (Amal Hussein, Lars Wikman, Taylor Troesh, Emma Bostian, Jerod Santo &amp; Adam Stacoviak)</li>\n<li><a href=\"https://www.ageekleader.com/agl-343-tech-talks-with-oscar-santolalla/\">AGL 343: Tech Talks with Oscar Santolalla</a> (John Rouda)</li>\n<li><a href=\"https://oasisofcourage.com/146-practical-optimism-leads-to-a-careers-with-ken-schmitt/\">The Happy Engineer Podcast #146: Practical Optimism Leads to A+ Careers with Ken Schmitt | CEO at TurningPoint Executive Search | Author</a> (Max Ahumada)</li>\n<li><a href=\"https://reactnativeradio.com/episodes/rnr-283-from-side-hustle-to-top-charts-with-simon-reggiani\">React Native Radio 283 – From Side Hustle to Top Charts with Simon Reggiani</a> (Simon Reggiani, Robin Heinze, Jamon Holmgren)</li>\n</ul><p></p>\n<h3><a></a>Community &amp; Events</h3>\n<ul><li><a href=\"https://tech.slashdot.org/story/23/12/16/0647224/threads-plans-to-interoperate-with-other-platforms-in-the-fediverse?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed\">Threads Plans to Interoperate With Other Platforms in the Fediverse</a> (EditorDavid)</li>\n<li><a href=\"https://www.theverge.com/2023/12/15/24003435/adam-mosseri-threads-fediverse-plans\">Adam Mosseri spells out Threads’ plans for the fediverse</a> (Jay Peters)</li>\n<li><a href=\"http://www.i-programmer.info/news/99-professional/16832-net-conf-2023-was-a-blast.html\">.NET Conf 2023 Was A Blast!</a> (Nikos Vaggalis)</li>\n<li><a href=\"https://www.theverge.com/2023/12/15/24003478/philips-hue-signify-restructuring-cut-218-million-annually\">Philips Hue reorganizes, plans job cuts to save $218 million annually</a> (Jennifer Pattison Tuohy)</li>\n<li><a href=\"https://www.geekwire.com/2023/sam-altmans-venture-fund-invests-3m-in-startup-using-humans-and-ai-to-keep-people-on-task/\">Sam Altman’s venture fund invests $3M in startup using humans and AI to keep people on task</a> (Kurt Schlosser)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/microsoft-mvp-communities-blog/mvp-s-favorite-content-bizapps-microsoft-entra-blogs/ba-p/4005503\">MVP’s Favorite Content: BizApps, Microsoft Entra, Blogs</a> (Rie Moriguchi)</li>\n</ul><p></p>\n<h3><a></a>Database</h3>\n<ul><li><a href=\"https://www.mssqltips.com/sqlservertip/7861/compare-azure-analysis-services-vs-sql-server-analysis-services/\">Comparing Azure Analysis Services with On-Premises SQL Server Analysis Services</a> (Amira Bedhiafi)</li>\n<li><a href=\"https://ayende.com/blog/200321-A/ravendb-backups-are-now-faster-smaller?Key=37896812-01f2-4e47-b843-793236cb4cfd\">RavenDB Backups are now Faster &amp; Smaller</a> (Oren Eini)</li>\n<li><a href=\"https://techcommunity.microsoft.com/t5/azure-database-for-mysql-blog/azure-database-for-mysql-november-2023-updates-and-latest/ba-p/4009900\">Azure Database for MySQL – November 2023 updates and latest feature roadmap</a> (Shreya Aithal)</li>\n<li><a href=\"https://azure.microsoft.com/en-us/blog/key-customer-benefits-of-the-microsoft-and-mongodb-expanded-partnership/\">Key customer benefits of the Microsoft and MongoDB expanded partnership</a> (Jordan Davis)</li>\n</ul><p></p>\n<h3><a></a>Miscellaneous</h3>\n<ul><li><a href=\"https://developers.slashdot.org/story/23/12/18/0634241/creator-of-json-unveils-new-programming-language-misty?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed\">Creator of JSON Unveils New Programming Language ‘Misty’</a> (EditorDavid)</li>\n<li><a href=\"https://www.theverge.com/c/23991049/lego-ideas-polaroid-onestep-behind-the-scenes-price\">How Lego builds a new Lego set</a> (Sean Hollister)</li>\n</ul><p></p>\n<h3><a></a>More Link Collections</h3>\n<ul><li><a href=\"https://blog.cwa.me.uk/2023/12/18/the-morning-brew-3847/\">The Morning Brew #3847</a> (Chris Alcock)</li>\n<li><a href=\"https://sergeytihon.com/2023/12/16/f-weekly-50-2023-seasons-greetings-from-amplified-f/\">F# Weekly #50, 2023 – Season’s Greetings from Amplified F#</a> (Sergey Tihon)</li>\n<li><a href=\"https://tympanus.net/codrops/collective/collective-799/\">Collective #799</a> (Manoela Ilic)</li>\n<li><a href=\"https://seroter.com/2023/12/15/daily-reading-list-december-15-2023-225/\">Daily Reading List – December 15, 2023 (#225)</a> (Richard Seroter)</li>\n</ul><p></p>\n<h3><a></a>The Geek Shelf</h3>\n<p><a href=\"https://www.amazon.com/dp/1805120069/?tag=amavin-20\"><img width=\"189\" height=\"202\" align=\"left\" style=\"margin:0px 4px 0px 0px;border:0px;float:left;background-image:none;\" src=\"https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41EyACcIdNL._SX342_SY445_.jpg\" border=\"0\" alt=\"41EyACcIdNL._SX342_SY445_.jpg\" /></a> <a href=\"https://www.amazon.com/dp/1805120069/?tag=amavin-20\">Learn WinUI 3, 2nd Edition</a> (Alvin Ashcraft) <em>– Referral Link</em></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1765641,
+			"parentId": 0,
+			"url": "https://davidroessli.com/logs/2023/12/let-it-snow/",
+			"author": {
+				"name": "David Roessli",
+				"url": "https://david.roess.li"
+			},
+			"date": "2023-12-22T06:00:00.000Z",
+			"content": "<p><a href=\"https://fediverse.zachleat.com/@zachleat/111584889034829552\" title=\"Zach Leatherman's post on Mastodon\">Zach posted</a> a cool little seasonal web component the other day: <a href=\"https://www.zachleat.com/web/snow-fall/\" title=\"#snow-fall web component\">&lt;snow-fall&gt;</a>.</p>\n<p>I added a snowflake toggle in the tagline to make it more interesting:</p>\n\n<img width=\"1200\" height=\"772\" src=\"https://davidroessli.com/perch/resources/blog/let-it-snow.webp\" alt=\"Screenshot of my website's header with the snowflake toggle in red\" />Red snowflake toggle\n<p>Now, it’s scheduled to snow every year from December 15th to January 15th. ????</p>\n<p>Happy holidays everyone.</p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1864122,
+			"parentId": 0,
+			"url": "https://indieweb.social/@bobmonsour/113583963569843352",
+			"author": {
+				"name": "Bob Monsour",
+				"url": "https://indieweb.social/@bobmonsour",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b29612c57f91493bea28f611bfba470ca27d73af355df4040d9dc121940e1c07.png"
+			},
+			"date": "2024-12-02T15:35:40.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> It's all wired up. All I gotta do is put snow: true in my front matter and I'm good to go. Just waiting for snow here in the Bay Area.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864123,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/113584046183036555",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-12-02T15:56:41.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@bobmonsour\" class=\"u-url\">@<span>bobmonsour</span></a></span> ha! how long will you have to wait for that?</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864120,
+			"parentId": 0,
+			"url": "https://indieweb.social/@bobmonsour/113584053746906677",
+			"author": {
+				"name": "Bob Monsour",
+				"url": "https://indieweb.social/@bobmonsour",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b29612c57f91493bea28f611bfba470ca27d73af355df4040d9dc121940e1c07.png"
+			},
+			"date": "2024-12-02T15:58:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> not sure…fire is more likely</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864121,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/113584070060440667",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-12-02T16:02:45.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@bobmonsour\" class=\"u-url\">@<span>bobmonsour</span></a></span> ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864153,
+			"parentId": 0,
+			"url": "https://krautpress.de/2024/snow-fall-neuschnee-in-wordpress/",
+			"author": {
+				"name": "Simon Kraft",
+				"url": "https://krautpress.de/author/simon/",
+				"avatarUrl": "https://avatars.webmention.io/krautpress.de/a1d9553507e94e35920ed9bad28c040378fc8064240e2df30727f52726142e0c.jpg"
+			},
+			"date": "2024-12-02T16:22:58.000Z",
+			"content": "<p>Ganz ehrlich? Ich bin eigentlich kein besonderer Fan von Schneefallanimationen auf Websites. Aber trotzdem hat es ein sehr weihnachtliches Plugin, das genau das tut, spontan auf unsere Adventskalender-Liste geschafft.</p>\n\n\n\n<p>Dieses Plugin von <a href=\"https://felix-arntz.me\">Felix Arntz</a> hört auf den Namen <em>Snow Fall</em> und ist so neu, dass es noch nicht im offiziellen Plugin-Verzeichnis auf WordPress.org aufgenommen ist. Aus dem zugehörigen GitHub-Repo kann man aber schon eine funktionierende Version herunterladen.</p>\n\n\n\n<span></span>\n\n\n\n<p>Anders als nahezu alle Alternativen, die mir in den letzten Jahren für Schnee auf Websites untergekommen sind, ist Snow Fall kein fürchterlicher Performance-Killer. Es respektiert die Browser-Einstellungen von Benutzer*innen mit Blick auf Animationen. Wer aus Gründen der Barrierefreiheit also auf animierte Elemente verzichten möchte, muss den Schnee niemals fallen sehen.</p>\n\n\n\n<p>Das ganze basiert auf <a href=\"https://www.zachleat.com/web/snow-fall\">einer JavaScript-Komponente von Zach Leatherman</a>. Dessen Code wurde von Felix <em>einfach</em> für WordPress in ein Plugin gepackt. Das Plugin an sich benötigt keine weitere Konfiguration. Einmal aktiviert fällt der Schnee im Frontend automatisch.</p>\n\n\n\n<h2>Fazit</h2>\n\n\n\n<p>Eine nette kleine Spielerei für alle, die sich auch im Web etwas winterlich einrichten möchten. Sobald das Plugin auf WordPress.org landet, reichen wir hier einen entsprechenden Link nach.</p>\n\n\n\n<p><a href=\"https://github.com/felixarntz/snow-fall?tab=readme-ov-file\">Plugin-Readme auf GitHub</a></p>\n\n\n\n<p>Direkt zum <a href=\"https://github.com/felixarntz/snow-fall/releases/download/1.0.0-RC/snow-fall.zip\">Download von GitHub</a></p>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1864159,
+			"parentId": 0,
+			"url": "https://urbanists.social/@cassey/113584484349809534",
+			"author": {
+				"name": "Cassey Lottman",
+				"url": "https://urbanists.social/@cassey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bb76d061fb429fb82c1d0e99721957cdb951615d224d3ef4c9fe2148e4b373f2.jpg"
+			},
+			"date": "2024-12-02T17:48:07.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> a coworker made the one for our internal HR site rain pumpkins &amp; ghosts in various sizes for Halloween, that was pretty fun. </p><p>Then later it was amended to darken the whole screen and show a vampire emoji if the tab was open for too long without mouse movement :D</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864158,
+			"parentId": 0,
+			"url": "https://follow.coryd.dev/@cory/113584499209121888",
+			"author": {
+				"name": "Cory Dransfeldt :demi:",
+				"url": "https://follow.coryd.dev/@cory",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/03f15fab48dd6fec77ff61c0dff431ec3568639187c6e6c66850555eb7045bf2.png"
+			},
+			"date": "2024-12-02T17:51:54.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://indieweb.social/@bobmonsour\" class=\"u-url\">@<span>bobmonsour</span></a></span> The last time it snowed here we only had black and white photos</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864160,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/113584504215949561",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-12-02T17:53:10.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://urbanists.social/@cassey\" class=\"u-url\">@<span>cassey</span></a></span> oooh inactivity escalation to screen saver ????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864217,
+			"parentId": 0,
+			"url": "https://seocommunity.social/@simoncox/113585885968128403",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"date": "2024-12-02T23:44:34.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <br />It's not snowing here and is unlikely to this December - i have turned on the snow on my site anyway!</p><p><a href=\"https://seocommunity.social/tags/WebComponent\">#<span>WebComponent</span></a></p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/webcomponent\">webcomponent</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864216,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/did:plc:tki7vwlanxbwrz2er67eaeqa/post/3lcedb2c2pq2q",
+			"author": {
+				"name": "SimonCox",
+				"url": "https://bsky.app/profile/simoncox.com",
+				"avatarUrl": "https://avatars.webmention.io/shiitake.us-east.host.bsky.network/0102d1af6f98d4976de108be0a6ba036f40edab1fe43321ae28559335524dc23.jpg"
+			},
+			"date": "2024-12-02T23:57:01.000Z",
+			"content": "Not snowing here,  but is is on my website! \n\n<a href=\"https://www.simoncox.com\">www.simoncox.com</a>\n\nThanks to <a href=\"https://bsky.app/profile/zachleat.com\">@zachleat.com</a> 's Web Component:  <a href=\"https://www.zachleat.com/web/snow-fall/\">www.zachleat.com/web/snow-fall/</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1864406,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/mark.ie/post/3lcfymlavhk2z",
+			"author": {
+				"name": "Mark Conroy",
+				"url": "https://bsky.app/profile/mark.ie",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f51e9ac5047c8df01a863490ebfd5924a1e7a05a7cbc8676b1edb6c0792c319e.jpg"
+			},
+			"date": "2024-12-03T15:51:56.000Z",
+			"content": "Oh man, this is so cool.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864407,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyqykkt22q",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e780e544e36c79c93927ff9b0120f8453eea27ccefddf83f0954fd5daecfb101.jpg"
+			},
+			"date": "2024-12-03T15:54:24.000Z",
+			"content": "web components are cool ????",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864404,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/mark.ie/post/3lcfyt6ak722z",
+			"author": {
+				"name": "Mark Conroy",
+				"url": "https://bsky.app/profile/mark.ie",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f51e9ac5047c8df01a863490ebfd5924a1e7a05a7cbc8676b1edb6c0792c319e.jpg"
+			},
+			"date": "2024-12-03T15:55:38.000Z",
+			"content": "I know, I built a proof of concept design system with them over only two days last Christmas.\n\n<a href=\"https://web-components-design-system.mark.ie/\">web-components-design-system.mark.ie</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864405,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyvp6nyc2q",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e780e544e36c79c93927ff9b0120f8453eea27ccefddf83f0954fd5daecfb101.jpg"
+			},
+			"date": "2024-12-03T15:57:02.000Z",
+			"content": "hell yeah, love that you’re using subdomains too",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864402,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/mark.ie/post/3lcfyxw52dc2z",
+			"author": {
+				"name": "Mark Conroy",
+				"url": "https://bsky.app/profile/mark.ie",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f51e9ac5047c8df01a863490ebfd5924a1e7a05a7cbc8676b1edb6c0792c319e.jpg"
+			},
+			"date": "2024-12-03T15:58:17.000Z",
+			"content": "I bought too many domains over the years that never saw the light of day. Now I&apos;m a subdomain-first dev.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864403,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyzzcz5s2z",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e780e544e36c79c93927ff9b0120f8453eea27ccefddf83f0954fd5daecfb101.jpg"
+			},
+			"date": "2024-12-03T15:59:27.000Z",
+			"content": "_yes_—much easier to maintain long-term too",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864408,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/dgrammatiko.bsky.social/post/3lcfzmcjxu222",
+			"author": {
+				"name": "dgrammatiko",
+				"url": "https://bsky.app/profile/dgrammatiko.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f618869b578daaa5b6a9002397205f5c3a252673c1a2c79472edb0fcdab3f950.jpg"
+			},
+			"date": "2024-12-03T16:09:41.000Z",
+			"content": "Let it snow ❄️",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864409,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcg67ccpw22q",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e780e544e36c79c93927ff9b0120f8453eea27ccefddf83f0954fd5daecfb101.jpg"
+			},
+			"date": "2024-12-03T17:31:53.000Z",
+			"content": "don’t tell anyone that this is a web component—I heard they weren’t the future",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864396,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/mrdisagree.bsky.social/post/3lcg6bgyizc2o",
+			"author": {
+				"name": "Michael Warren",
+				"url": "https://bsky.app/profile/mrdisagree.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3a01370fe82edaa17c6bfe5d1b0d4a6653cc41a4b10e33d6e828e41c05e6a3ca.jpg"
+			},
+			"date": "2024-12-03T17:33:05.000Z",
+			"content": "shhhhh gotta keep those biggest mistakes on the web a secret!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864397,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcg6husxmk2t",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e780e544e36c79c93927ff9b0120f8453eea27ccefddf83f0954fd5daecfb101.jpg"
+			},
+			"date": "2024-12-03T17:36:41.000Z",
+			"content": "nobody’s gonna know<br>\n<br>\n…how would they know?<br>\n<br>\n…how would they know?",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864398,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/jakelazaroff.com/post/3lcg6islf5s2p",
+			"author": {
+				"name": "Jake Lazaroff",
+				"url": "https://bsky.app/profile/jakelazaroff.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/13682ea7b6b961ce82281202879ac485e06a0de295249ff3cf2df10960ccb246.jpg"
+			},
+			"date": "2024-12-03T17:37:12.000Z",
+			"content": "that’s okay, snowfall might not be in our future either ????",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864399,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/duffeh.bsky.social/post/3lcg6occ6ts27",
+			"author": {
+				"name": "Duffeh",
+				"url": "https://bsky.app/profile/duffeh.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/5a18546f24b54967d956db6e901071d84fa06f3a66b500b7e40b565eb396eeaf.jpg"
+			},
+			"date": "2024-12-03T17:40:16.000Z",
+			"content": "",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864400,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcg6vl25sk25",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e780e544e36c79c93927ff9b0120f8453eea27ccefddf83f0954fd5daecfb101.jpg"
+			},
+			"date": "2024-12-03T17:44:21.000Z",
+			"content": "we’ll always have the metaverse",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864410,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/heltweg.org/post/3lcg6x33adc2b",
+			"author": {
+				"name": "philip",
+				"url": "https://bsky.app/profile/heltweg.org",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7f6d68944b7a63740c522d8e2d0dcbb189035fc0ef694c085e0dd33cded51d95.jpg"
+			},
+			"date": "2024-12-03T17:45:11.000Z",
+			"content": "Haha that is great, web components rock :). Is there a better way than StencilJS nowadays? I used to use that to build some components for my master thesis back in the day.",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864411,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/elaina.bsky.social/post/3lcg75cycf22a",
+			"author": {
+				"name": "Elaina",
+				"url": "https://bsky.app/profile/elaina.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c154fa243ab2759a02e1288157e2111e342ad86d83adcc3f80338559daa772e2.jpg"
+			},
+			"date": "2024-12-03T17:48:40.000Z",
+			"content": "My first thought was that this was some reproduction of the NYT feature. But this is much cozier :)",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864401,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/g12n.de/post/3lcg7fqy5xs2k",
+			"author": {
+				"name": "Michael G",
+				"url": "https://bsky.app/profile/g12n.de",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3ecc26b8b1f4c45cb5027776c0722a8d332717f9492c9f87c0c8aaaa62984ac.jpg"
+			},
+			"date": "2024-12-03T17:53:24.000Z",
+			"content": "",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864412,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcg7rxbj5k2d",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e780e544e36c79c93927ff9b0120f8453eea27ccefddf83f0954fd5daecfb101.jpg"
+			},
+			"date": "2024-12-03T18:00:13.000Z",
+			"content": "I promised myself I wouldn’t ever use “raw dog” earnestly",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864393,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/heltweg.org/post/3lcgag4z7gk2t",
+			"author": {
+				"name": "philip",
+				"url": "https://bsky.app/profile/heltweg.org",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7f6d68944b7a63740c522d8e2d0dcbb189035fc0ef694c085e0dd33cded51d95.jpg"
+			},
+			"date": "2024-12-03T18:11:30.000Z",
+			"content": "I hear I&apos;m too English-as-a-second-language to understand that, does that mean you create them without a tool/framework?",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864394,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/heltweg.org/post/3lcgagsyff22t",
+			"author": {
+				"name": "philip",
+				"url": "https://bsky.app/profile/heltweg.org",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7f6d68944b7a63740c522d8e2d0dcbb189035fc0ef694c085e0dd33cded51d95.jpg"
+			},
+			"date": "2024-12-03T18:11:53.000Z",
+			"content": "Speaking of: I fear*",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864395,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcgalidnvs2y",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e780e544e36c79c93927ff9b0120f8453eea27ccefddf83f0954fd5daecfb101.jpg"
+			},
+			"date": "2024-12-03T18:14:30.000Z",
+			"content": "(my apologies!)\n\nthis is my preference for independent one-off components—if I were doing a full-blown app I’d probably use something like <a href=\"https://bsky.app/profile/did:plc:y3d2xrkz26jcdbg4odxazvsh\">@lit.dev</a>!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864392,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/heltweg.org/post/3lcgbsyolhc2t",
+			"author": {
+				"name": "philip",
+				"url": "https://bsky.app/profile/heltweg.org",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7f6d68944b7a63740c522d8e2d0dcbb189035fc0ef694c085e0dd33cded51d95.jpg"
+			},
+			"date": "2024-12-03T18:36:35.000Z",
+			"content": "Ah cool, thank you! I&apos;m going to have to explore this, the whole PWA/Web component stuff is balsam on my frontend framework churned soul ????",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864413,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/loilo.de/post/3lcgkej7t2s2o",
+			"author": {
+				"name": "Florian Reuschel",
+				"url": "https://bsky.app/profile/loilo.de",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3abfdfc5ec704ee2e70ac301fe33ce624604705ae9a8265d5eb3c3cb888dadca.jpg"
+			},
+			"date": "2024-12-03T21:09:33.000Z",
+			"content": "Bavarian Christmas fair approves.\n<a href=\"https://weihnachtsmarkt-chiemsee.de/\">weihnachtsmarkt-chiemsee.de</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1864414,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcgkrlceds2x",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e780e544e36c79c93927ff9b0120f8453eea27ccefddf83f0954fd5daecfb101.jpg"
+			},
+			"date": "2024-12-03T21:16:51.000Z",
+			"content": "looks great!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1868481,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/did:plc:ylaqtlpvwrqkz5fi77jwnjnh/post/3ldotnu4ort2w",
+			"author": {
+				"name": "jcrabapple",
+				"url": "https://bsky.app/profile/jcrabapple.lol",
+				"avatarUrl": "https://avatars.webmention.io/blewit.us-west.host.bsky.network/8de7b0f8a2704a60eebba0552e17a5a101821a4264be3f3ba841e5f52555c10a.jpg"
+			},
+			"date": "2024-12-19T21:42:17.000Z",
+			"content": "???? New Bookmark ????\nsnow-fall Web Component—zachleat.com\n<a href=\"https://www.zachleat.com/web/snow-fall/\">https://www.zachleat.com/web/snow-fall/</a>\n<a href=\"https://bsky.app/search?q=%23bookmarks\">#bookmarks</a>",
+			"type": "mention",
+			"via": "webmention"
+		},
+		{
+			"id": 1957414,
+			"parentId": 0,
+			"url": "https://social.lol/@robb/115667296630652197",
+			"author": {
+				"name": "Robb Knight",
+				"url": "https://social.lol/@robb",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6d83cb174ff1855ee536a19fbcbf151ea83cf7e1fbfa5bdd3ce0da61b9b3ec7c.jpg"
+			},
+			"date": "2025-12-05T13:54:40.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I just remembered I made this last year <a href=\"https://emojistorm.rknight.me\"><span>https://</span><span>emojistorm.rknight.me</span><span></span></a></p>\n<a href=\"https://emojistorm.rknight.me/\">EmojiStorm</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957434,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667374015231626",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-12-05T14:14:21.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://social.lol/@robb\" class=\"u-url\">@<span>robb</span></a></span> hell yeah you did</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957433,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667381088136190",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-12-05T14:16:09.000Z",
+			"content": "<p>if you look in the footer of <a href=\"https://blog.fontawesome.com/\"><span>https://</span><span>blog.fontawesome.com/</span><span></span></a> and tap on the Font Awesome flag you’ll see a variant of this component made to work with Font Awesome icons (and reusing the colors from the header image of the blog post too: <a href=\"https://blog.fontawesome.com/blog-awesome-to-11ty/#colors\"><span>https://</span><span>blog.fontawesome.com/blog-awes</span><span>ome-to-11ty/#colors</span></a>) ????</p>\n<a href=\"https://blog.fontawesome.com/\">Blog Awesome</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957427,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7aogofje22i",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-12-05T14:16:59.000Z",
+			"content": "if you look in the footer of <a href=\"https://blog.fontawesome.com/\">blog.fontawesome.com</a> and tap on the Font Awesome flag you’ll see a variant of this component made to work with Font Awesome icons ????\n\n(and reusing the colors from the header image of the blog post too: <a href=\"https://blog.fontawesome.com/blog-awesome-to-11ty/#colors\">blog.fontawesome.com/blog-awesome...</a>)",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957452,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@webaware/115667445643353220",
+			"author": {
+				"name": "Ross McKay",
+				"url": "https://fosstodon.org/@webaware",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/41733c0f680ba1915fc7882a2b90eb76746c9304d7280bf16f00e0e2e9644700.jpg"
+			},
+			"date": "2025-12-05T14:32:34.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> it was 38°C today and tomorrow is forecast for 39°C with more fires. Are you sure that's not ash? Tis the season.</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957451,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667453662749337",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-12-05T14:34:36.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@webaware\" class=\"u-url\">@<span>webaware</span></a></span> let’s not read too much into the fact that I accidentally implied that everyone in the southern hemisphere might not be my friend</p><p>*runs away screaming*</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957453,
+			"parentId": 0,
+			"url": "https://mastodon.social/@nice2meatu/115667504545595484",
+			"author": {
+				"name": "Marco Hengstenberg",
+				"url": "https://mastodon.social/@nice2meatu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/66391547a000fc2dc3bfd23dfe0768a66c4b1bb05a9757cf09a2412fd98e30e8.jpg"
+			},
+			"date": "2025-12-05T14:47:33.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I recently added an SVG Rudolph with shiny blinky red nose to a website. If you clicked the nose hearts would emit from it in all directions.</p><p>My PM:\"How long did it take you to build that? It wasn't part of the plan to do this. Why is it even there?\"</p><p>The Client:\"Oh mah gaaahd! It's so cuuuute! This is lovely! People will play with this for ages! Thank you very much!\"</p><p>My PM:\"Yeah, we encourage our devs to play around.\"</p><p>????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957455,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667514925840025",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
+			},
+			"date": "2025-12-05T14:50:11.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@nice2meatu\" class=\"u-url\">@<span>nice2meatu</span></a></span> hahahahahaha ????????????????</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957449,
+			"parentId": 0,
+			"url": "https://mastodon.social/@nice2meatu/115667518985563819",
+			"author": {
+				"name": "Marco Hengstenberg",
+				"url": "https://mastodon.social/@nice2meatu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/66391547a000fc2dc3bfd23dfe0768a66c4b1bb05a9757cf09a2412fd98e30e8.jpg"
+			},
+			"date": "2025-12-05T14:51:13.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> altogether now \"It's the moooost wonderful tiiiiime of the yeeeaaaaar\"!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957450,
+			"parentId": 0,
+			"url": "https://stefanbohacek.online/@stefan/115667529565549733",
+			"author": {
+				"name": "Stefan Bohacek",
+				"url": "https://stefanbohacek.online/@stefan",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f45e2e80d7970e1fd501b1fd1532f30e0aa815a4dae7526ef5ef467dd937a3ca.jpg"
+			},
+			"date": "2025-12-05T14:53:55.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Nice!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957616,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/benfictional.bsky.social/post/3m7b4pilmp22x",
+			"author": {
+				"name": "Benjamin Andrew",
+				"url": "https://bsky.app/profile/benfictional.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b8de735a2f995018f002cc731d25f97bae78241536bb38ea3ce630d422eef716.jpg"
+			},
+			"date": "2025-12-05T18:32:28.000Z",
+			"content": "Ha, this just reminded me to turn on my toolbar lights. <a href=\"https://festivitas.app/\">festivitas.app</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957617,
+			"parentId": 0,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7b4tjp5ok2j",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://bsky.app/profile/zachleat.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b3eb2c3c1566218a1527eac7f6b9398b50c4c299594467477d6b335b94fdcba1.jpg"
+			},
+			"date": "2025-12-05T18:34:43.000Z",
+			"content": "Lovely!",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957644,
+			"parentId": 0,
+			"url": "https://social.unapologetic.io/@alex/115668635239639717",
+			"author": {
+				"name": "Alex Guyot",
+				"url": "https://social.unapologetic.io/@alex",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/850cc1eb31256ccc650725cb52ff5fa0304a1b16c1381f1ebf536fde452e5d2b.jpg"
+			},
+			"date": "2025-12-05T19:35:06.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Excellent, thank you ???? ❄️ <a href=\"https://unapologetic.io\"><span>https://</span><span>unapologetic.io</span><span></span></a></p>\n<a href=\"https://unapologetic.io/\">Unapologetic</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1957646,
+			"parentId": 0,
+			"url": "https://mas.to/@iamdtms/115668652074192424",
+			"author": {
+				"name": "iamdtms",
+				"url": "https://mas.to/@iamdtms",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e7a0884d1190dc19d635c5bf00ba578913deb32961f83a8b5fc07f6cdf67e49e.jpg"
+			},
+			"date": "2025-12-05T19:39:23.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ready. Light/dark theme implementation is as easy as it can be. Predefining two HTML nodes or update one node selector. Finally writing some CSS lines:  --snow-fall-color for color value or variable.</p><p>Perfect, big thank you!</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1958461,
+			"parentId": 0,
+			"url": "https://social.mottokrosh.com/@mottokrosh/115688798059886908",
+			"author": {
+				"name": "Frank // Mottokrosh",
+				"url": "https://social.mottokrosh.com/@mottokrosh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/65e8e333b2c853c15f1db16680518c142ff15807d8a0f6e7b451b23a6851ee82.jpg"
+			},
+			"date": "2025-12-09T09:02:46.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I looked more closely, and can indeed see the snow on the body text occasionally. I guess since it's not so dense it simply isn't visible so much, whereas on larger dark areas it stands out more. Next time I'll examine more closely before yelling questions. :D</p>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1961744,
+			"parentId": 0,
+			"url": "https://mastodon.social/@jon_nunan/115777023111279352",
+			"author": {
+				"name": "Jon",
+				"url": "https://mastodon.social/@jon_nunan",
+				"avatarUrl": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"date": "2025-12-24T22:59:33.000Z",
+			"content": "<p>Used a couple of other web components too snow-fall web component from <a href=\"https://www.zachleat.com/web/snow-fall/\"><span>https://www.</span><span>zachleat.com/web/snow-fall/</span><span></span></a> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span><br />color-input web component from <a href=\"https://github.com/argyleink/css-color-component?tab=readme-ov-file\"><span>https://</span><span>github.com/argyleink/css-color</span><span>-component?tab=readme-ov-file</span></a> <span class=\"h-card\"><a href=\"https://front-end.social/@argyleink\" class=\"u-url\">@<span>argyleink</span></a></span></p>\n<a href=\"https://www.zachleat.com/web/snow-fall/\">snow-fall Web Component—zachleat.com</a>",
+			"type": "reply",
+			"via": "webmention"
+		},
+		{
+			"id": 1961742,
+			"parentId": 0,
+			"url": "https://mastodon.social/@jon_nunan/115777023111279352",
+			"author": {
+				"name": "Jon",
+				"url": "https://mastodon.social/@jon_nunan",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"date": "2025-12-24T22:59:33.000Z",
+			"content": "<p>Used a couple of other web components too snow-fall web component from <a href=\"https://www.zachleat.com/web/snow-fall/\"><span>https://www.</span><span>zachleat.com/web/snow-fall/</span><span></span></a> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span><br />color-input web component from <a href=\"https://github.com/argyleink/css-color-component?tab=readme-ov-file\"><span>https://</span><span>github.com/argyleink/css-color</span><span>-component?tab=readme-ov-file</span></a> <span class=\"h-card\"><a href=\"https://front-end.social/@argyleink\" class=\"u-url\">@<span>argyleink</span></a></span></p>\n<a href=\"https://www.zachleat.com/web/snow-fall/\">snow-fall Web Component—zachleat.com</a>",
+			"type": "reply",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 1754003,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109525552394186098",
+			"date": "2023-12-15T14:46:56.000Z",
+			"author": {
+				"name": "Toby",
+				"url": "https://masto.ai/@tosbourn",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e61e64fb3b82c0474209194397e75bf76b1d18191a2d7d0a454c599717b6d266.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754005,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109301667267707340",
+			"date": "2023-12-15T14:46:59.000Z",
+			"author": {
+				"name": "Lene Saile",
+				"url": "https://front-end.social/@lene",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b11bce21a15d560ac99e575696be482d744f10237abefd30f3e7f6b0861f476.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754006,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109352939518629968",
+			"date": "2023-12-15T14:46:59.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754007,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109292548737077544",
+			"date": "2023-12-15T14:47:02.000Z",
+			"author": {
+				"name": "Nick Taylor",
+				"url": "https://toot.cafe/@nickytonline",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/747f14e657578cdd6ebbf6e1df872cc8407eff3777a389f5723c6fc251fc50b9.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754008,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-111013091578134801",
+			"date": "2023-12-15T14:47:02.000Z",
+			"author": {
+				"name": "Nilesh Prajapati",
+				"url": "https://mastodon.design/@nilesh",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7da98a64bd8525e80e663cd93bd88741a9d5f2ec453d6e1bf0bb4e61fc4479b2.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754009,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109287719939766165",
+			"date": "2023-12-15T14:47:05.000Z",
+			"author": {
+				"name": "Scott Jehl",
+				"url": "https://mstdn.social/@scottjehl",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e4899a402717c98e67af1bc3245c1ef338ee60b5d8434b264a7760a0710b75fc.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754010,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109292691647909270",
+			"date": "2023-12-15T14:47:06.000Z",
+			"author": {
+				"name": "Andrew Chou",
+				"url": "https://toot.cafe/@andrew_chou",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2ae7e49fd2085273cd732bb8633f721f8c54c68920a5378aea497be57a1e406c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754011,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109286922977455165",
+			"date": "2023-12-15T14:47:08.000Z",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://sunny.garden/@knowler",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/50ce56f39c91e30823b4e4f318af74b4e46c9debc27b9eb5cd70c94af36b7c88.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754057,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-110955259108893058",
+			"date": "2023-12-15T15:18:38.000Z",
+			"author": {
+				"name": "Pavel Zinoviev ????",
+				"url": "https://mastodon.social/@pavelzinoviev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/138775faad76fd0656d4ae280244c508b59dbd4a574ad6a1bcf36c4bf2eff09c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754058,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-111529522436232887",
+			"date": "2023-12-15T15:18:39.000Z",
+			"author": {
+				"name": "Esger",
+				"url": "https://mastodon.social/@Esger",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/866233ee5e516dfadd5450138007fb57c5f0ad49384f36fd531a1aff66b52d0d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754059,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109395010643324801",
+			"date": "2023-12-15T15:18:39.000Z",
+			"author": {
+				"name": "Brantley Harris",
+				"url": "https://fosstodon.org/@deadwisdom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/32743710c40dc2820e1eeff1df902006fbd9e4e5d629e0729462c56a62268d07.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754060,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109308749970941517",
+			"date": "2023-12-15T15:18:41.000Z",
+			"author": {
+				"name": "Patrick Grey",
+				"url": "https://glasgow.social/@patrick",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/36a846e24c2e0a6456e9d88fad6705c212924bc2acdc2e89f3ca76c40dc40106.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754061,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109294555739927762",
+			"date": "2023-12-15T15:18:42.000Z",
+			"author": {
+				"name": "Chris M.",
+				"url": "https://mastodon.online/@mstrkapowski",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/80dca0d1403873a443f3622848b70288d552079ab6a66d657de3567e6a67a3ed.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754062,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109306995308676811",
+			"date": "2023-12-15T15:18:43.000Z",
+			"author": {
+				"name": "Patrick Fulton",
+				"url": "https://mastodon.social/@patrickfulton",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4af1feb9de27c707761bd280a18bdf0eeaf9e497bdaf84fbae03c6886b339b99.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754119,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109290964087880566",
+			"date": "2023-12-15T15:49:50.000Z",
+			"author": {
+				"name": "jfroehlich",
+				"url": "https://mastodon.social/@jfroehlich",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b321d8321d850cd6cad3aa097331c85c77d28798752d09eceaca496d515b1910.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754120,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109444240302980632",
+			"date": "2023-12-15T15:49:52.000Z",
+			"author": {
+				"name": "Jon Park",
+				"url": "https://howdee.social/@jonspark",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/668d931a7845602667c014e1b6fcecc8b38515dc0ae7fe464cdac27864ec4e83.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754121,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109295087214311131",
+			"date": "2023-12-15T15:49:52.000Z",
+			"author": {
+				"name": "Noah Liebman",
+				"url": "https://mastodon.social/@noleli",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/376eaffd57dfe1e7e31d7569386db8a545d2f5533207014b25361ce54ec5b62d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754122,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109292789947647037",
+			"date": "2023-12-15T15:49:54.000Z",
+			"author": {
+				"name": "westbrook",
+				"url": "https://mastodon.social/@westbrook",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f845e34d9338fcdd255785cb099cce719f19f34f6625aec1749e30cade2e0b79.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754123,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109302730115833976",
+			"date": "2023-12-15T15:49:56.000Z",
+			"author": {
+				"name": "Andrico (semi-hardcore)",
+				"url": "https://front-end.social/@andrico",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72ce4ecee419bcfb22b2faf42bc1d69576608ccd68d88cabb742454cb96c7bbb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754124,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-110471071573638266",
+			"date": "2023-12-15T15:49:57.000Z",
+			"author": {
+				"name": "Katie Sylor-Miller",
+				"url": "https://front-end.social/@ksylor",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/793cf417ab5f2a111e9c6d177f236ceb25acc4b1d2051c46f59316c45d3b72ae.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754125,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109359781646560519",
+			"date": "2023-12-15T15:49:58.000Z",
+			"author": {
+				"name": "dan :html_energy:",
+				"url": "https://mastodon.design/@danleatherman",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a45772727867943f07a6ec9e163b4e8c69c89f3e45bc0f1faf737cbd6d589e2b.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754126,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-111145142301817092",
+			"date": "2023-12-15T15:49:59.000Z",
+			"author": {
+				"name": "Derek",
+				"url": "https://mastodon.social/@AbsolutelyDerek",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754159,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-110515075625692558",
+			"date": "2023-12-15T16:26:09.000Z",
+			"author": {
+				"name": "Kyle Larkin",
+				"url": "https://mastodon.social/@kylelarkin",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754160,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109698107255349105",
+			"date": "2023-12-15T16:26:11.000Z",
+			"author": {
+				"name": "Hasan Ali",
+				"url": "https://fosstodon.org/@hasanhaja",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/53b551a370dc4bdd73533caca93a84206a320110ee47cdf95b1face4a05a5ced.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754168,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109292552988169598",
+			"date": "2023-12-15T16:51:48.000Z",
+			"author": {
+				"name": "Jared White",
+				"url": "https://indieweb.social/@jaredwhite",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/48ceb2b89ca6f40586b16dfee49892e8917496af1919a297a961d8031a72bc52.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754190,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-110271759034960771",
+			"date": "2023-12-15T17:31:10.000Z",
+			"author": {
+				"name": "JB",
+				"url": "https://kolektiva.social/@manicExpressive",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbaf898cc08889fb428ade78002e20def5ca76fef00199839a2c386108d187d0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754191,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-110998065362635364",
+			"date": "2023-12-15T17:31:11.000Z",
+			"author": {
+				"name": "Thomas Maria Helzle",
+				"url": "https://mastodon.art/@thomashelzle",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/de265176a8823d74cb71ffb85bb7216207a23dc8a448f6867a874b20017f921d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754192,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109289744030118387",
+			"date": "2023-12-15T17:31:13.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754193,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109975265260468034",
+			"date": "2023-12-15T17:31:16.000Z",
+			"author": {
+				"name": "sam :pizza_pineapple:",
+				"url": "https://mastodon.social/@samedwards",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/20ee4faeca90d5c6a214ab0ca3868251ae84e87a5872d95c59f28bcae6c611c6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754226,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109384698646087680",
+			"date": "2023-12-15T18:38:15.000Z",
+			"author": {
+				"name": "Swift",
+				"url": "https://merveilles.town/@swift",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c276f5310125993a068881d842e34ec94ca101a237a02b1ca14042c91cf957b3.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754227,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109977563622747065",
+			"date": "2023-12-15T18:38:20.000Z",
+			"author": {
+				"name": "Chip",
+				"url": "https://awesome.garden/@bytex64",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c5eca1f84a719a6ab050a335b68de110f4fdf413e90b64f3e236b737f5e92293.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754228,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#favorited-by-109291233828237636",
+			"date": "2023-12-15T18:38:23.000Z",
+			"author": {
+				"name": "Matthias Ott",
+				"url": "https://mastodon.social/@matthiasott",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/692a4ec0d17295cc8035cc276bdf0de1ec88a1103a7a37e586f5b65741bf2380.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864124,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109289744030118387",
+			"date": "2024-12-02T16:34:44.000Z",
+			"author": {
+				"name": "Fynn Ellie Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864125,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109375599871667174",
+			"date": "2024-12-02T16:34:45.000Z",
+			"author": {
+				"name": "diekus",
+				"url": "https://toot.cafe/@diekus",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6b7437b253abde7ff86c75956fd0db1039c644caeffece8821f91008f3f99d87.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864126,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109292552988169598",
+			"date": "2024-12-02T16:34:46.000Z",
+			"author": {
+				"name": "Jared White ✊ RESIST ????????‍♂️",
+				"url": "https://indieweb.social/@jaredwhite",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/48ceb2b89ca6f40586b16dfee49892e8917496af1919a297a961d8031a72bc52.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864127,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109322028040622495",
+			"date": "2024-12-02T16:34:51.000Z",
+			"author": {
+				"name": "cthos ????",
+				"url": "https://mastodon.cthos.dev/@cthos",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/16d45e0bfdca263f58a19f9e2cce4aa69fdac43001dd4eac276a4f3bfd635024.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864128,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109574959431894335",
+			"date": "2024-12-02T16:34:52.000Z",
+			"author": {
+				"name": "Connor Bär",
+				"url": "https://mastodon.social/@connorbaer",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/735eb18cce93938ac77b58fbca6bb9941316c1e75d2e4435a6444fc5f70aa554.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864129,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-113170258313924951",
+			"date": "2024-12-02T16:34:54.000Z",
+			"author": {
+				"name": "jfdelrio",
+				"url": "https://mastodon.social/@jfdelrio",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864130,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109374599696822526",
+			"date": "2024-12-02T16:34:57.000Z",
+			"author": {
+				"name": "Chris​‌​‬ Hayes‌​​​",
+				"url": "https://fosstodon.org/@chris_hayes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f66d891451ea1364fbe794f9702b1be99bdb785080bac0ad33e6724da8746494.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864131,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-113209845787461700",
+			"date": "2024-12-02T16:34:59.000Z",
+			"author": {
+				"name": "Rafa Romero Dios",
+				"url": "https://mastodon.social/@rafaFERIAH",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/64373db8df3f82fe41d07ffd800197e3099240f47023b5902cda26ffc2b29887.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864132,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109325872233554985",
+			"date": "2024-12-02T16:35:06.000Z",
+			"author": {
+				"name": "peej",
+				"url": "https://weirder.earth/@secretpeej",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/56f718334509bf133fc3b1e2215a334de6274a61b4a6feae50735b4cb5537dd7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864133,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-110872808150046700",
+			"date": "2024-12-02T16:35:06.000Z",
+			"author": {
+				"name": "Joe Glombek",
+				"url": "https://umbracocommunity.social/@joe",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6e3ce898a11c2a5d402bf71cbcc645377bbb0d0a7f67b1fdd5cd216464e59734.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864134,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-110471071573638266",
+			"date": "2024-12-02T16:35:08.000Z",
+			"author": {
+				"name": "Katie Sylor-Miller",
+				"url": "https://front-end.social/@ksylor",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/793cf417ab5f2a111e9c6d177f236ceb25acc4b1d2051c46f59316c45d3b72ae.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864135,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-110439751581978143",
+			"date": "2024-12-02T16:35:11.000Z",
+			"author": {
+				"name": "Andrew",
+				"url": "https://mathstodon.xyz/@andrewt",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3db0a0c990541430d82b1ad8ad2e62bfc44edf1a5f8bed9282ec45593cbdb2ec.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864136,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-110951225658828743",
+			"date": "2024-12-02T16:35:13.000Z",
+			"author": {
+				"name": "Conor C. Peterson :kirby_fly:",
+				"url": "https://social.linux.pizza/@wemic",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a8ea2a68cbd0a073cc07fb6dc0d74cc18131589a670de56a72f7f5980fbff3e6.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864137,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-112101566584514770",
+			"date": "2024-12-02T16:35:15.000Z",
+			"author": {
+				"name": "Lukas Nagel",
+				"url": "https://mastodon.online/@lna_dev",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864138,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109408209067924387",
+			"date": "2024-12-02T16:35:15.000Z",
+			"author": {
+				"name": "Sasha",
+				"url": "https://hachyderm.io/@ferrata",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/92723649d22ea370e956c2e89ef6bdd5b24168449f057004588456749e8106bd.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864154,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-112031511147350446",
+			"date": "2024-12-02T17:10:00.000Z",
+			"author": {
+				"name": "Dave Letorey",
+				"url": "https://front-end.social/@dletorey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/06f3b09779427b145943b7d38a3b208b343d26747696edaf0b240e9618487129.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864155,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109352939518629968",
+			"date": "2024-12-02T17:10:01.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864156,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-110770188087049882",
+			"date": "2024-12-02T17:10:06.000Z",
+			"author": {
+				"name": "majjo",
+				"url": "https://mastodon.social/@majjo",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864161,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-111087790880860235",
+			"date": "2024-12-02T17:59:08.000Z",
+			"author": {
+				"name": "CJ",
+				"url": "https://alpha.polymaths.social/@roguefoam",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/24901b99be0aa7e4965f67f0db0c2e47a9924b6888a37e1f874a36b73936abae.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864164,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109287968476874371",
+			"date": "2024-12-02T18:24:26.000Z",
+			"author": {
+				"name": "Joachim",
+				"url": "https://boitam.eu/@joachim",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/842f5e1a0a289c21714fab2e9ab6cf014e0e7431e688e115d12d3fdb91ee4e2c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864165,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109767366109990677",
+			"date": "2024-12-02T18:24:26.000Z",
+			"author": {
+				"name": "Will Browar ????????‍????",
+				"url": "https://hachyderm.io/@wbrowar",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864166,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109423630612459746",
+			"date": "2024-12-02T18:24:29.000Z",
+			"author": {
+				"name": "Michael Geers",
+				"url": "https://mastodon.social/@naltatis",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4c68f1d84fddbd551020fae391134aab5afa0de46dbf8021327e4e646c4e56ac.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864210,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109313335992154517",
+			"date": "2024-12-02T22:36:25.000Z",
+			"author": {
+				"name": "Colin",
+				"url": "https://toot.cafe/@colin_howells",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8fa4dde4bffe3ecc8917e7e4c90ca2fba8d155badba5d8df9dd42c6324a151a0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864242,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-112542831564537815",
+			"date": "2024-12-03T07:22:33.000Z",
+			"author": {
+				"name": "Thomas Moyse",
+				"url": "https://piaille.fr/@t8g",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864260,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#favorited-by-109315721479762331",
+			"date": "2024-12-03T09:59:04.000Z",
+			"author": {
+				"name": "Fernando Mateus",
+				"url": "https://mastodon.social/@fernandomateus",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8b9e6c3330eec2f350eebb5e974202b7395f077f2ad86223e37fabfddf15cf61.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864415,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:umilvv4ajsdwhrgtimbkpejt",
+			"date": "2024-12-03T22:39:11.000Z",
+			"author": {
+				"name": "Dariusz Więckiewicz",
+				"url": "https://bsky.app/profile/dariusz.wieckiewicz.org",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/caef1908297bbb1050f55d07f2abb3d20e9022b8f8fc5a15f6bef459c31f06a0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864416,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:y4hdja4qbgq26kgmgb43bu7v",
+			"date": "2024-12-03T22:39:11.000Z",
+			"author": {
+				"name": "Yonatan Kra",
+				"url": "https://bsky.app/profile/yonatankra.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/236ced8212809f3bc141099ec227bc5610d3cec0b14eeb18cf0d90a9488f7785.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864417,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:hckf6y3fu7wyzxzxn7ehwqqp",
+			"date": "2024-12-03T22:39:13.000Z",
+			"author": {
+				"name": "Eric Cirone",
+				"url": "https://bsky.app/profile/ericcirone.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/050a57ac7536cb8adb6bd4804333dd9fad402cae40522c550070555c45cf0d0d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864418,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:yhhguukhdfkixcwznhl27tkd",
+			"date": "2024-12-03T22:39:15.000Z",
+			"author": {
+				"name": "Dylan Schadeck",
+				"url": "https://bsky.app/profile/dschadeck.bsky.social"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864419,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:2jwys3khk3vezo4s7dodvrno",
+			"date": "2024-12-03T22:39:15.000Z",
+			"author": {
+				"name": "Marcus Lindblom",
+				"url": "https://bsky.app/profile/marcuslindblom.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/55aa13e5e6278dbf2f75ade272f39dac86f76bbdc6097440a6e8720bc362b610.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864420,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:pqapiih36qdnnweatbps2pv4",
+			"date": "2024-12-03T22:39:20.000Z",
+			"author": {
+				"name": "CloudCannon",
+				"url": "https://bsky.app/profile/cloudcannon.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ad4e8aba130b09980847a589f513bececb20d84e82e4324ae4e2371a59191ae2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864421,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:azk7nfvgbpwiskakjpubm4c5",
+			"date": "2024-12-03T22:39:21.000Z",
+			"author": {
+				"name": "Todd Morey",
+				"url": "https://bsky.app/profile/toddmorey.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c73233c045c421f013301792c085c8f1693e4fa4af2b2c33f0eaba7dae8ab091.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864422,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:cfzewyyzcr75z4t3vhew6o7g",
+			"date": "2024-12-03T22:39:22.000Z",
+			"author": {
+				"name": "Shaw",
+				"url": "https://bsky.app/profile/itsshaw.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/1a44f85e9f14ff8cba20b787e8c25548b0cc162e3d20d1b7e105ba2c0e2fb09a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864423,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:vf7tv7uq23avbpzkjswlv273",
+			"date": "2024-12-03T22:39:22.000Z",
+			"author": {
+				"name": "Rik Schennink",
+				"url": "https://bsky.app/profile/rikschennink.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/0cc02b733f5f6b7921d4493c61972a40ffd720f4fc4ee9be74a095d0c43630a9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864424,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:nturfjwjp6d76cbnblvhjovo",
+			"date": "2024-12-03T22:39:24.000Z",
+			"author": {
+				"name": "???? Jim Schofield ????",
+				"url": "https://bsky.app/profile/jschof.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/88c8b487f8a483c891a4464b5496a2c824e00ecb4acfa67c042ca0f172ab0273.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864425,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:vdfmtzklfpq4rpg6tunj5tog",
+			"date": "2024-12-03T22:39:25.000Z",
+			"author": {
+				"name": "Milan Raj",
+				"url": "https://bsky.app/profile/rajsite.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6985b6e9917d8cf71645e66f373eed33133a63c7d9eaea9c9658fa1d772f58b0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864426,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:633y2eiibd2rdqfqxt5qpmqw",
+			"date": "2024-12-03T22:39:26.000Z",
+			"author": {
+				"name": "Noah Jacobus",
+				"url": "https://bsky.app/profile/jabron.us",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/a8f5e25f7d8a6b21535d03601eaa0118f05a8d7a6c217a77ab86295d9fb4f871.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864427,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:qkk4yywvh3b3qfdr4uhq3ub4",
+			"date": "2024-12-03T22:39:27.000Z",
+			"author": {
+				"name": "Cory LaViska",
+				"url": "https://bsky.app/profile/cory.laviska.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/eb768a1eb67354c60ba2a4de8cc15fada75010599084a7ff01c55b7441246393.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864428,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:g5ulczw3b42cymerb7b6px3b",
+			"date": "2024-12-03T22:39:31.000Z",
+			"author": {
+				"name": "Kevin Kipp",
+				"url": "https://bsky.app/profile/kevinkipp.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/386c52a9fbd7131ae96d7c9390e97f3097f5658ca339a6c95218ab40925e3d5a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864429,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:ftaawglbrfvgv4fcbbddxmxo",
+			"date": "2024-12-03T22:39:31.000Z",
+			"author": {
+				"name": "Will Troup",
+				"url": "https://bsky.app/profile/willtroup.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4e2acab8d20fb360af3e6d83a10fe02cbed7836bcb1b612527280211cea44e54.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864430,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:zjbq26wybii5ojoypkso2mso",
+			"date": "2024-12-03T22:39:32.000Z",
+			"author": {
+				"name": "JauntyWunderKind",
+				"url": "https://bsky.app/profile/jauntywk.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/9a957eb6bce9389ddb0b06a1cdd6a01a4f5062fea4498e9f5605f4d1659b2935.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864431,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:ttoyg6wb2iamebtm4svedlvk",
+			"date": "2024-12-03T22:39:32.000Z",
+			"author": {
+				"name": "Pär Björklund",
+				"url": "https://bsky.app/profile/paxxi.delusional.nu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/baca29498a82864c329eaebb40aaa822eb6fe9278a4e20ad2fe790a4bf0deb9f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864432,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:2mo5pfs5v4h5bzwm2vesaoem",
+			"date": "2024-12-03T22:39:33.000Z",
+			"author": {
+				"name": "Antoine Caron",
+				"url": "https://bsky.app/profile/slashgear.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/9c5969c5e0be72809d24bee681e8cd4930703126111a776f12e0177369caead7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864433,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:vug3vkycxfjbkiwsyyrak4gh",
+			"date": "2024-12-03T22:39:33.000Z",
+			"author": {
+				"name": "Nick Taylor",
+				"url": "https://bsky.app/profile/nickyt.online",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3048ef7accfbcca4d0b9dd7640a27377327defa209781029194847532a1b960f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864434,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:sysykwrpbn36enscm7xgoiwj",
+			"date": "2024-12-03T22:39:34.000Z",
+			"author": {
+				"name": "Parker Davis",
+				"url": "https://bsky.app/profile/parkerdavis.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/31f29ca763fdcca236891b19211e846bad333e7c549c8ac1ac487c08b330ec27.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864435,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:2myz365byro3obxmwpjd3loi",
+			"date": "2024-12-03T22:39:35.000Z",
+			"author": {
+				"name": "montylounge",
+				"url": "https://bsky.app/profile/montylounge.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c1cca7ed7290db24143035439b8f53c51aa50e8a23b5f4f76eef72fd5e317dec.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864436,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:udys2vx3idcktonqctysbma3",
+			"date": "2024-12-03T22:39:35.000Z",
+			"author": {
+				"name": "Hubert Sablonnière",
+				"url": "https://bsky.app/profile/hsablonniere.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c4535de108270d1cd080b7ef0d6122ccaeb944312d8b3940dc8b45bf0a4eabe4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864437,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:4o6o6re5hrzy4v5acedmufj4",
+			"date": "2024-12-03T22:39:37.000Z",
+			"author": {
+				"name": "Cthos",
+				"url": "https://bsky.app/profile/cthos.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/38b53178357ef970e69bae59f4a808d043ec1291755d2ba2c5c55c9979e55054.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864438,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:hvsyvsc3kpfa6x45d7wpmg52",
+			"date": "2024-12-03T22:39:37.000Z",
+			"author": {
+				"name": "Elaina",
+				"url": "https://bsky.app/profile/elaina.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c154fa243ab2759a02e1288157e2111e342ad86d83adcc3f80338559daa772e2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864439,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:xrovbizwwhb3gkece6xbb76w",
+			"date": "2024-12-03T22:39:38.000Z",
+			"author": {
+				"name": "Carlos Parada",
+				"url": "https://bsky.app/profile/cparadatech.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/311a6ca3b99977d29e316a94c2334d0b83b3c7d1499e1ec62d964f241e503e41.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864440,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:spulgjrl7sactd23bgqv6jen",
+			"date": "2024-12-03T22:39:38.000Z",
+			"author": {
+				"name": "Duffeh",
+				"url": "https://bsky.app/profile/duffeh.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/5a18546f24b54967d956db6e901071d84fa06f3a66b500b7e40b565eb396eeaf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864441,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:bigekmftzgjkdp5auitu2yhs",
+			"date": "2024-12-03T22:39:39.000Z",
+			"author": {
+				"name": "Daniel Fosco",
+				"url": "https://bsky.app/profile/danielfos.co",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/05310144c3141ab0de22cdb148e3a35be23c18b03f8fcb119fc098f8c3ea3056.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864442,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:zivbusxwcsom5o6mf7kljzms",
+			"date": "2024-12-03T22:39:40.000Z",
+			"author": {
+				"name": "Josh W. Comeau",
+				"url": "https://bsky.app/profile/joshwcomeau.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8fab0acc592489d79d97471ffaede6dd79861dc646db9a08b44aaab83434988d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864443,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:y77cka573mend37xx5ajmfjv",
+			"date": "2024-12-03T22:39:40.000Z",
+			"author": {
+				"name": "Elijah Manor",
+				"url": "https://bsky.app/profile/elijahmanor.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/761b55a8c4618475cc696985766698de5126e1708b3e038d6f75f774adaadc22.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864444,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:2cpnrefqsfucl4lvo3h2yzfh",
+			"date": "2024-12-03T22:39:41.000Z",
+			"author": {
+				"name": "Michael Warren",
+				"url": "https://bsky.app/profile/mrdisagree.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3a01370fe82edaa17c6bfe5d1b0d4a6653cc41a4b10e33d6e828e41c05e6a3ca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864445,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:r5meuc5mc7md45v5shkjxriu",
+			"date": "2024-12-03T22:39:41.000Z",
+			"author": {
+				"name": "Jouni Männistö",
+				"url": "https://bsky.app/profile/j0nem.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7cb831a6fb0906bfcd9da5fd1bb25d108185a2b9ed9042baf988efebb9016d6d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864446,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:vb75o6yjgbvvo7h52uy6qd2g",
+			"date": "2024-12-03T22:39:43.000Z",
+			"author": {
+				"name": "R Ilham Sastronegoro",
+				"url": "https://bsky.app/profile/sngr.xyz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ca853ddd96d576e0d847317bb1d362f7223b3b44066e6385faca8573e57dbf16.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864448,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:4ug4zefdc7ll77reridekvob",
+			"date": "2024-12-03T22:39:45.000Z",
+			"author": {
+				"name": "Geoff Rich",
+				"url": "https://bsky.app/profile/geoffrich.net",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7d62822e454db53e4e892f0a286d989975e902b7c1d942910b2fb15402a10d3c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864447,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:ijzx6kuie53dduugow5k4dzb",
+			"date": "2024-12-03T22:39:45.000Z",
+			"author": {
+				"name": "Jingle Lizzie ????",
+				"url": "https://bsky.app/profile/binarydigit.tech",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/0c04fce469d7e8e9262f40ffb403a3b81f63664491ddcae39087484f26b85ce3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864449,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:3fivj26j5z7636uuxcsqh453",
+			"date": "2024-12-03T22:39:46.000Z",
+			"author": {
+				"name": "Поміркований бандера ????????",
+				"url": "https://bsky.app/profile/esq-untitle.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/a7b30d3802830e4941e143a84e980afa127cf7aa572d0106960ee462c4fa0007.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864450,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:7n2l5ays7rawgavn7kmukqlw",
+			"date": "2024-12-03T22:39:46.000Z",
+			"author": {
+				"name": "reaper",
+				"url": "https://bsky.app/profile/reaper.is",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/379ae6d3b67b7b0f95d770cbcffd090ce244493ec44412143fb1e176acdb0cc3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864451,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:hqkackmzr4vzaby25xfs4psx",
+			"date": "2024-12-03T22:39:48.000Z",
+			"author": {
+				"name": "Jeff Chew",
+				"url": "https://bsky.app/profile/jeffchew.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/99eafb6d40b8c6ae453863d8168dfaf44bb28147bdaf96bd4996dcd81fa0b260.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864452,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:jm3bwl5hjjaohbs7ckcbbroy",
+			"date": "2024-12-03T22:39:48.000Z",
+			"author": {
+				"name": "dgrammatiko",
+				"url": "https://bsky.app/profile/dgrammatiko.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f618869b578daaa5b6a9002397205f5c3a252673c1a2c79472edb0fcdab3f950.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864453,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:bu7v45rgnwlim5dgvxuryhyg",
+			"date": "2024-12-03T22:39:51.000Z",
+			"author": {
+				"name": "Adrian Lorenzana",
+				"url": "https://bsky.app/profile/lorenzana.engineer",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f42894299e7424c83561fa882b8787d0c15cdd2da4ce7ceb9eac10f9862abead.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864454,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:eukovfnuwqbnc5fkew3qebcm",
+			"date": "2024-12-03T22:39:52.000Z",
+			"author": {
+				"name": "Kitt Hod",
+				"url": "https://bsky.app/profile/ki.tt",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/5c2dd578118a942efe16d1f108adb37bc30f5e756a15f09ae6ce16585a74daf3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864455,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:rdxsp5dqwv5ev2vghfqswpo7",
+			"date": "2024-12-03T22:39:52.000Z",
+			"author": {
+				"url": "https://bsky.app/profile/superchrisnelson.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/2af4fc34d2a1cd5bf785e661457b5d3ebd02b5f6487ad209e7f75ea99de61303.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864456,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:y3t3pfr7st6p5xmkk4qq6p3h",
+			"date": "2024-12-03T22:39:53.000Z",
+			"author": {
+				"name": "Thad Humphries",
+				"url": "https://bsky.app/profile/johnthad.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d43785be79aeb81bd87f6d20fd5c273de26ac29def4da8f94bd097a2d529f2ad.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864457,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:263tkyxg6lyowhbzq6k5iw7t",
+			"date": "2024-12-03T22:39:54.000Z",
+			"author": {
+				"name": "Kai Cataldo",
+				"url": "https://bsky.app/profile/kaicataldo.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/08ae17eb036ebc9002cf67e121d61589bc0ee9c086d7e9fcefd9202021110bc2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864458,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:cfu247sgkvm4yuk6f4fatown",
+			"date": "2024-12-03T22:39:55.000Z",
+			"author": {
+				"name": "ken7253",
+				"url": "https://bsky.app/profile/ken7253.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6760742c1f618c8faa1c16dc440d3a311a67b6c46adde5893cd8ebe1b058815f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864459,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:w2oidkblkptbquceahhcxf6o",
+			"date": "2024-12-03T22:39:56.000Z",
+			"author": {
+				"name": "Dom Magnifico",
+				"url": "https://bsky.app/profile/doom.codes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/2c46c1c61168e74242c4d39ab6f03c6cda1e0a0b1952610bee986328bccf2dea.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864460,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:j3wzxrs2cjxygftwplwoqeby",
+			"date": "2024-12-03T22:39:57.000Z",
+			"author": {
+				"name": "Anthony Miller",
+				"url": "https://bsky.app/profile/alphawaffle.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/fd5e88833f298d97ad3bc2ffd2c4deaa3ab5443d3064fa7ceb4704aea5fa68d3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864461,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:zwe56muzzzshlvmfbu5dhzpu",
+			"date": "2024-12-03T22:39:58.000Z",
+			"author": {
+				"url": "https://bsky.app/profile/ezggg.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e2b4e40dff32469088fe8b585362120b70ebfe80ca943aa661a6b5f5fdecbe55.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864462,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:clyusqwakixt6ddvq5guqkrk",
+			"date": "2024-12-03T22:39:59.000Z",
+			"author": {
+				"name": "Ondřej Konečný",
+				"url": "https://bsky.app/profile/ondrejkonecny.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/64d047fdacb68b331b86638a000ba5a168349ff5c490c49278c4d3e42037d0d4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864463,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:bxuncred3t7neoojsbsbljio",
+			"date": "2024-12-03T22:40:00.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://bsky.app/profile/sia.codes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4b584664f9fe8a7dd3c89aa90d420ffd0e1b38a580744101db89a2c7c742062c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864464,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:3rr66t753ubid4tth7rltsre",
+			"date": "2024-12-03T22:40:10.000Z",
+			"author": {
+				"name": "Pier",
+				"url": "https://bsky.app/profile/pierbover.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/de121931eef4d18c266ace05dbae0abede49c6bbf5f757d44ed90192fbaf776c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864482,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:faup467sqq37hm35sznl6obt",
+			"date": "2024-12-03T23:14:38.000Z",
+			"author": {
+				"name": "Andy Broomfield",
+				"url": "https://bsky.app/profile/andybroomfield.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/1acb8cf88f56b9635838b81cc9b08810b2a7f1bce1d901c342898f8003871e84.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864586,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:yexcapfkucnqipkpedpx2lyi",
+			"date": "2024-12-04T01:53:33.000Z",
+			"author": {
+				"name": "Jesse Sutherland",
+				"url": "https://bsky.app/profile/youngelpaso.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ed7b6bd546dc781d7d54795cc39e1b291d589a6ff3c984479e3cdd988420f883.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864796,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:hjmb3thzvyhvbsq5g45o67oh",
+			"date": "2024-12-04T08:17:26.000Z",
+			"author": {
+				"name": "Marius Vatasoiu",
+				"url": "https://bsky.app/profile/mariusvatasoiu.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/666489bef56b297d32e1b219622e76023431a0baca3fee1fc5285a41550bb7fb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864826,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:uweuq7izoq43e6yrbkbnytgz",
+			"date": "2024-12-04T10:24:55.000Z",
+			"author": {
+				"name": "EINS78",
+				"url": "https://bsky.app/profile/eins78.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/306434e8c4859c0ae3f8648b99348e383548dc36ec70fa524f1b257a711473f2.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864832,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:arc2fdisqfdowq675dkndl6d",
+			"date": "2024-12-04T10:59:01.000Z",
+			"author": {
+				"name": "Luke Murphy (they/them)",
+				"url": "https://bsky.app/profile/lurkmoophy.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/80fac0ad16d52e99f432b068e80d13f0cf4cf4e5ed6a170d6632a13fd40b8df8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864837,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:h5qspo6f6tfusakrssme6ver",
+			"date": "2024-12-04T11:33:48.000Z",
+			"author": {
+				"name": "Mitch",
+				"url": "https://bsky.app/profile/mitchrl.bsky.social"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864841,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:iu3u7hdwhcwwesftlwyi5ldb",
+			"date": "2024-12-04T12:04:38.000Z",
+			"author": {
+				"name": "Phil Wolstenholme",
+				"url": "https://bsky.app/profile/wolstenhol.me",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f13ade639fd865fe8e7a4d7001207f79c38e65ab5bb48b5d6d2c558ebc6a1b59.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864842,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:ddus2n2tpczz7s6gzvwdfs2x",
+			"date": "2024-12-04T12:04:38.000Z",
+			"author": {
+				"name": "№ise ❒ show",
+				"url": "https://bsky.app/profile/noise.show",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/82eedeb0c61485fdc7884f0721a64b9900b8075e002b3a0ea8dee0c420eea8bd.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864856,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:3xdmf2lkqyql7haroquajjvu",
+			"date": "2024-12-04T13:06:47.000Z",
+			"author": {
+				"name": "Brett Peary",
+				"url": "https://bsky.app/profile/brettpeary.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4f44ce3e71c3a24ab10eeb36d0e691f730de9e691e2e32ee90e3cb28656c2192.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864857,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:kpv3gemwnzekr5pfhqtyuolz",
+			"date": "2024-12-04T13:06:47.000Z",
+			"author": {
+				"name": "Jack Sawyer",
+				"url": "https://bsky.app/profile/jacksawyer.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/2464e848a14e4c0e85cc079a76708a06baad538725d2e179b80b05474c0dced7.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864869,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#liked_by_did:plc:g5bdo6rjq4uc44xs7m6lgkxh",
+			"date": "2024-12-04T14:27:53.000Z",
+			"author": {
+				"name": "kenneth ng",
+				"url": "https://bsky.app/profile/kenif.xyz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/fcc56602f6bb25e9858d5161610c30481b111978dc1eb6c98140bf06f4e6629e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957386,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:wsvbkey2oifwfbsjbwigre7x",
+			"date": "2025-12-05T13:59:21.000Z",
+			"author": {
+				"name": "Nilesh Prajapati",
+				"url": "https://bsky.app/profile/nileshprajapati.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4f6fd2cdc4e6a535f7ec25d990e84a25c5dd36b2be5268380a9b29fbc48f2c6d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957387,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:aw5m5n4fdsgfldtaibyvgrp2",
+			"date": "2025-12-05T13:59:24.000Z",
+			"author": {
+				"name": "Robb Owen",
+				"url": "https://bsky.app/profile/robbowen.digital",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b09d734cf7449ae6f31f532cab49e30c5b2c27600076b6ebc73c87f01e274e95.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957388,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:y32y7b2sc2altqlzkvzarxe5",
+			"date": "2025-12-05T13:59:36.000Z",
+			"author": {
+				"name": "StephC",
+				"url": "https://bsky.app/profile/scomea.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b0fb04c8883d22a9d7d155d5ad5f7b9716393857f8d9524b2d9c2d485fe982f5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957389,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:xqpbe7jqwg37deyhcvddafxa",
+			"date": "2025-12-05T13:59:39.000Z",
+			"author": {
+				"name": "Greg",
+				"url": "https://bsky.app/profile/elgreg.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/5f04674beaba1f9fd9ad03d7319792570f63a102a66a7fb22398771d2c6ef86e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957415,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109781525395864081",
+			"date": "2025-12-05T14:05:02.000Z",
+			"author": {
+				"name": "kirch",
+				"url": "https://tilde.zone/@kirch",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2000cf2365d16d84f72f1418ea375eebf2dc8bff30686236fe2ca6555fd32159.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957416,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109574541133074076",
+			"date": "2025-12-05T14:05:09.000Z",
+			"author": {
+				"name": "Erik (????????????‍????????)",
+				"url": "https://mastodon.gamedev.place/@Erikmitk",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1ef1edba366630b772e571b63019b9f365a3a7f2fc064cb20e9f49d070cb6221.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957417,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109286922977455165",
+			"date": "2025-12-05T14:05:31.000Z",
+			"author": {
+				"name": "Nathan Knowler",
+				"url": "https://sunny.garden/@knowler",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5806f320f65ccb28a50b86f24493aa3bb3e3bfcc569978065b1ca89b60b04794.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957423,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109289744030118387",
+			"date": "2025-12-05T14:06:08.000Z",
+			"author": {
+				"name": "Fynn Ellie Be",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5e438b36934704e62273198404a86d08d46b7e3ea18b54b5b470985ed84c08d6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957426,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:qdu4g4n4eniupf5jf5yfsxo3",
+			"date": "2025-12-05T14:29:34.000Z",
+			"author": {
+				"name": "Erika",
+				"url": "https://bsky.app/profile/erika.florist",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d53a58130142f4c811cb56ec3780234d82b454791d921019c7d3a7599bdc4882.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957428,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:wwv7b2hkcaghqlyy4mew2tzs",
+			"date": "2025-12-05T14:29:37.000Z",
+			"author": {
+				"name": "Thomas Broyer",
+				"url": "https://bsky.app/profile/tbroyer.ltgt.net",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/1daaabac5a81d5a882fc59bb4ec3fc3bd7dd0b7fe8cb69698faea04fd0907e32.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957429,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:7zzxpaevtisl3sbsw4famqd3",
+			"date": "2025-12-05T14:29:37.000Z",
+			"author": {
+				"name": "Alexander Draper",
+				"url": "https://bsky.app/profile/alexanderdraper.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/219a1855fb024d4c36505f8160f1752b96e0aeef5db6123d185604c9095870bf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957430,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:45lja5p42xvc7vutgxlsbsbi",
+			"date": "2025-12-05T14:29:39.000Z",
+			"author": {
+				"name": "Benjamin Andrew",
+				"url": "https://bsky.app/profile/benfictional.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b8de735a2f995018f002cc731d25f97bae78241536bb38ea3ce630d422eef716.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957431,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:yksnhpsdsjmd67o2f54okub6",
+			"date": "2025-12-05T14:29:39.000Z",
+			"author": {
+				"name": "Jürgen Šuvalov",
+				"url": "https://bsky.app/profile/jyrkki.eu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/908744d3b4a3f1a8593c99d70b379d05120e01d9bfaf78105095bccd9085a807.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957435,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109825170295400220",
+			"date": "2025-12-05T14:32:44.000Z",
+			"author": {
+				"name": "iamdtms",
+				"url": "https://mas.to/@iamdtms",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e7a0884d1190dc19d635c5bf00ba578913deb32961f83a8b5fc07f6cdf67e49e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957436,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109306995308676811",
+			"date": "2025-12-05T14:33:01.000Z",
+			"author": {
+				"name": "Patrick Fulton",
+				"url": "https://mastodon.social/@patrickfulton",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4af1feb9de27c707761bd280a18bdf0eeaf9e497bdaf84fbae03c6886b339b99.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957454,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109293789163339771",
+			"date": "2025-12-05T15:01:31.000Z",
+			"author": {
+				"name": "moonglum",
+				"url": "https://social.yakshed.org/@moonglum",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/038b0b838b2f82941a2a7974a044c20bd2011c3d4aa6fb58b7aab20da3a8d5a5.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957456,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-114403460403331041",
+			"date": "2025-12-05T15:01:42.000Z",
+			"author": {
+				"name": "Tom",
+				"url": "https://hachyderm.io/@ttntm",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/50714edcf117c71ffb1d5f697fc554002075ea81f4fa20539a086c65b6b9bc33.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957457,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109306987720589980",
+			"date": "2025-12-05T15:01:43.000Z",
+			"author": {
+				"name": "Marco Hengstenberg",
+				"url": "https://mastodon.social/@nice2meatu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/66391547a000fc2dc3bfd23dfe0768a66c4b1bb05a9757cf09a2412fd98e30e8.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957476,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:3k7dfznzs5phrcafflalkaou",
+			"date": "2025-12-05T15:04:54.000Z",
+			"author": {
+				"name": "David M. Schulman ????",
+				"url": "https://bsky.app/profile/schul.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8d8baa9f5a960c9ff309f5e49922e1af2279668e109b0bf5ee77aefe7f1f4f7a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957477,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:2etkw6owoiwyaouagbgvyvk7",
+			"date": "2025-12-05T15:04:54.000Z",
+			"author": {
+				"name": "luci",
+				"url": "https://bsky.app/profile/scorpi4n.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/42a92fcf9860ec6744104a7a32256f9a4f9b5267e763c77594b50aeb16cd0164.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957486,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:dmgoddsemnyljdrp4jgt4dam",
+			"date": "2025-12-05T15:30:09.000Z",
+			"author": {
+				"name": "Michael",
+				"url": "https://bsky.app/profile/mwdelaney.me",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6f5653677d4c9fb8ff563dee437d868fce8816ed0fa72beef82e93a63b4472e9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957488,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109306997715620667",
+			"date": "2025-12-05T15:33:48.000Z",
+			"author": {
+				"name": "Dana",
+				"url": "https://mastodon.social/@superterrific",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6ef6f9a09ff5c373506808cce5db01eb1f93ed86398bd42c3cc8ee24f5a6358e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957489,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109999396184694771",
+			"date": "2025-12-05T15:33:48.000Z",
+			"author": {
+				"name": "Mindi Rogers Green",
+				"url": "https://hachyderm.io/@chaoticdebris",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/40adb9760fc2fb560910d4f4e8fda4f66241de517e13abee6018374cc6fc4c07.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957555,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:xn5wn5qscvzrxkjelrotdi7h",
+			"date": "2025-12-05T16:38:31.000Z",
+			"author": {
+				"url": "https://bsky.app/profile/rn90210.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/98c5bc5e129c5a1ee6f0045026b04a506bf635aa6125b910b5481353e6d43235.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957566,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-112129986276026350",
+			"date": "2025-12-05T17:07:19.000Z",
+			"author": {
+				"name": "Illya Busigin",
+				"url": "https://mas.to/@illyabusigin",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf7d1f8a47fbbfcbe49a9bde0ea681e79b6390062b546125d5d77a207e473164.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957584,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:jm3bwl5hjjaohbs7ckcbbroy",
+			"date": "2025-12-05T17:45:24.000Z",
+			"author": {
+				"name": "dgrammatiko",
+				"url": "https://bsky.app/profile/dgrammatiko.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d10f358c9fd08a8cc7d857e9caffcc20fd8a454707a47897bb30be2bdb728056.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957603,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:4ug4zefdc7ll77reridekvob",
+			"date": "2025-12-05T18:17:38.000Z",
+			"author": {
+				"name": "Geoff Rich",
+				"url": "https://bsky.app/profile/geoffrich.net",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7d62822e454db53e4e892f0a286d989975e902b7c1d942910b2fb15402a10d3c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957618,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:kgrbnhf2bdyk2nbwf44xcxpc",
+			"date": "2025-12-05T18:50:34.000Z",
+			"author": {
+				"name": "Sergio",
+				"url": "https://bsky.app/profile/sergio1984.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f40d7d953064549033957a8cb8d09170fbc17acfc2ad0dd740bcf4ea0662c50e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957694,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:ot3fyiqkbetianbjahiowrxf",
+			"date": "2025-12-05T22:49:27.000Z",
+			"author": {
+				"name": "CodeMonument",
+				"url": "https://bsky.app/profile/codemonument.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d37de597ad471fe9db683d2211ff725a975be67e0af9e43215b76e8354cdec9b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957707,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:6mf3ewamoesq5rufc6b2syyo",
+			"date": "2025-12-05T23:59:30.000Z",
+			"author": {
+				"name": "Marc Littlemore",
+				"url": "https://bsky.app/profile/marclittlemore.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b08ff85053e1010dde5e1c8dedefd71877621d6bc4d892a7df264ba922225bdc.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957813,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109352939518629968",
+			"date": "2025-12-06T09:04:36.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957863,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:5t7y7xrrnpivu5xlhixzdv6h",
+			"date": "2025-12-06T14:15:02.000Z",
+			"author": {
+				"name": "Marco",
+				"url": "https://bsky.app/profile/mmmarco.xyz",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d267e8ebb2fac8a48d1cd7e98ec6a98bf157ea28cf674299324e372f30b583ff.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957890,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#favorited-by-109451444536584188",
+			"date": "2025-12-06T16:40:40.000Z",
+			"author": {
+				"name": "Nathan Bottomley",
+				"url": "https://aus.social/@nathanbottomley",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a8d418f832f6cf3e061a7c4890edd1fe705a3e33db14fe1f22e6dbbb6af37b6c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957921,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#liked_by_did:plc:ydqzin7kctnatbefaxcp6f7s",
+			"date": "2025-12-06T19:32:09.000Z",
+			"author": {
+				"name": "Go4Know",
+				"url": "https://bsky.app/profile/go4know.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/91f9c32145f050f22e78dd8067775fa5d041b1bd2de4dae6d27288011950341e.jpg"
+			},
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 1754012,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109303656530857114",
+			"date": "2023-12-15T14:47:10.000Z",
+			"author": {
+				"name": "Raymond Camden",
+				"url": "https://mastodon.social/@raymondcamden",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1ddb97091dd0bdc5385c4527b26663b5f999facfe47249e02270a3f48303fbf.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754013,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109779197194734817",
+			"date": "2023-12-15T14:47:11.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://mastodon.social/@JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754014,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109301667267707340",
+			"date": "2023-12-15T14:47:13.000Z",
+			"author": {
+				"name": "Lene Saile",
+				"url": "https://front-end.social/@lene",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b11bce21a15d560ac99e575696be482d744f10237abefd30f3e7f6b0861f476.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754015,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109292548737077544",
+			"date": "2023-12-15T14:47:15.000Z",
+			"author": {
+				"name": "Nick Taylor",
+				"url": "https://toot.cafe/@nickytonline",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/747f14e657578cdd6ebbf6e1df872cc8407eff3777a389f5723c6fc251fc50b9.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754016,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109308405152889389",
+			"date": "2023-12-15T14:47:15.000Z",
+			"author": {
+				"name": "Patrick Brosset",
+				"url": "https://mas.to/@patrickbrosset",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fc6b8320bf2de163576b6371596691320062d3ea1627b270a42ffa6cdb1d1d88.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754063,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-110955259108893058",
+			"date": "2023-12-15T15:18:45.000Z",
+			"author": {
+				"name": "Pavel Zinoviev ????",
+				"url": "https://mastodon.social/@pavelzinoviev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/138775faad76fd0656d4ae280244c508b59dbd4a574ad6a1bcf36c4bf2eff09c.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754064,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109319960616148533",
+			"date": "2023-12-15T15:18:47.000Z",
+			"author": {
+				"name": "Jordan",
+				"url": "https://hachyderm.io/@jhofker",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/21ab70086a80b2f3ac8cc1c45f693d1a9c5047a7f42af75a79ccf4d0a8a92a0d.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754065,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-110656903967994170",
+			"date": "2023-12-15T15:18:49.000Z",
+			"author": {
+				"name": "katherine",
+				"url": "https://sunny.garden/@kayserifserif",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/59a482e7bd79bae82cbf5ce33b96eed9d0300703811d55b0b5e551e45871a86d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754066,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109293766963493177",
+			"date": "2023-12-15T15:18:51.000Z",
+			"author": {
+				"name": "ffoodd",
+				"url": "https://mamot.fr/@ffoodd",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c15f91ef30bc2f801dccd92ded5e81d8a15f6035dd2368b6ad28fb1c921d8c5f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754127,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109508455304882362",
+			"date": "2023-12-15T15:50:00.000Z",
+			"author": {
+				"name": "Josh",
+				"url": "https://hachyderm.io/@jzapp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f11b1d33c58a5dd83c5c397067aea751b8e853315f38e3b9802ae0fd321ba343.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754128,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-111353674953159816",
+			"date": "2023-12-15T15:50:02.000Z",
+			"author": {
+				"name": "sarna",
+				"url": "https://types.pl/@sarna",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754129,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-110026251800234596",
+			"date": "2023-12-15T15:50:05.000Z",
+			"author": {
+				"name": "Dahie",
+				"url": "https://chaos.social/@dahie",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754161,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-110652633704283132",
+			"date": "2023-12-15T16:26:13.000Z",
+			"author": {
+				"name": "Miguel",
+				"url": "https://indieweb.social/@miguel",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/51595a97b5801e19b4de24327e3db1623cd76905bb716fff4ea8184bde937a37.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754194,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109289744030118387",
+			"date": "2023-12-15T17:31:16.000Z",
+			"author": {
+				"name": "Fynn Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754221,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109323563682093096",
+			"date": "2023-12-15T18:05:23.000Z",
+			"author": {
+				"name": "cirox",
+				"url": "https://mastodon.social/@crsp",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bf0ac42fb67c6d5b09a3aa251b17726ad88cd1451e6b8cd987c20c8387176fe6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754229,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109318671740537687",
+			"date": "2023-12-15T18:38:24.000Z",
+			"author": {
+				"name": "Dee (orb mode) :heart_nb:",
+				"url": "https://fedi.underscore.world/users/Dee",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754230,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109977563622747065",
+			"date": "2023-12-15T18:38:26.000Z",
+			"author": {
+				"name": "Chip",
+				"url": "https://awesome.garden/@bytex64",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c5eca1f84a719a6ab050a335b68de110f4fdf413e90b64f3e236b737f5e92293.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1754231,
+			"url": "https://fediverse.zachleat.com/@zachleat/111584889034829552#reblogged-by-109292572564060554",
+			"date": "2023-12-15T18:38:27.000Z",
+			"author": {
+				"name": "Mx Autumn :blobcatpumpkin:",
+				"url": "https://notacult.social/@carbontwelve",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d7a3b1dce715f163e733f12409483f98bb5e13aa55410851081281f2063eb0a4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864139,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-110526450175827141",
+			"date": "2024-12-02T16:35:20.000Z",
+			"author": {
+				"name": ":wordpress: Jack",
+				"url": "https://mstdn.social/@jackmcconnell",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0415eef4f73c680b8bc1991eb473c1b16ad9fb52991f23e8366db8f4973e1a5c.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864140,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-113023987395447212",
+			"date": "2024-12-02T16:35:20.000Z",
+			"author": {
+				"name": "[Undead] Ted Flynn ????‍♂️",
+				"url": "https://beige.party/@tflynn",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/095bd91ad6fd8c678854e48c15371190e40f2cbeb4f9219075afb5bec345a38e.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864141,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109301667267707340",
+			"date": "2024-12-02T16:35:25.000Z",
+			"author": {
+				"name": "Lene Saile",
+				"url": "https://front-end.social/@lene",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b11bce21a15d560ac99e575696be482d744f10237abefd30f3e7f6b0861f476.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864142,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-113164248724751351",
+			"date": "2024-12-02T16:35:27.000Z",
+			"author": {
+				"name": "Helen Chong :prami_pride:",
+				"url": "https://social.lol/@helenchong",
+				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/113/164/248/724/751/351/original/c2c3bbca0729feae.webp"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864143,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109375599871667174",
+			"date": "2024-12-02T16:35:31.000Z",
+			"author": {
+				"name": "diekus",
+				"url": "https://toot.cafe/@diekus",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6b7437b253abde7ff86c75956fd0db1039c644caeffece8821f91008f3f99d87.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864144,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-113572998090033570",
+			"date": "2024-12-02T16:35:31.000Z",
+			"author": {
+				"name": "That HTML Blog & The Spicy Web",
+				"url": "https://intuitivefuture.com/@vanillaweb",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e46df1b2a7513a13a861d85bde623e37d2d9e029d1067e0505685fab9cda0ec4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864145,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-110872808150046700",
+			"date": "2024-12-02T16:35:35.000Z",
+			"author": {
+				"name": "Joe Glombek",
+				"url": "https://umbracocommunity.social/@joe",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6e3ce898a11c2a5d402bf71cbcc645377bbb0d0a7f67b1fdd5cd216464e59734.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864146,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109374599696822526",
+			"date": "2024-12-02T16:35:35.000Z",
+			"author": {
+				"name": "Chris​‌​‬ Hayes‌​​​",
+				"url": "https://fosstodon.org/@chris_hayes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f66d891451ea1364fbe794f9702b1be99bdb785080bac0ad33e6724da8746494.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864147,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-111012130774500788",
+			"date": "2024-12-02T16:35:43.000Z",
+			"author": {
+				"name": "Ramón Corominas",
+				"url": "https://mstdn.social/@tinitun",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/90f68dbe8894d1556f861debba5aebb014e2f80232bc5d6ac0bfe55965e56020.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864148,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109289744030118387",
+			"date": "2024-12-02T16:35:43.000Z",
+			"author": {
+				"name": "Fynn Ellie Becker",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864149,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109288028383987770",
+			"date": "2024-12-02T16:35:50.000Z",
+			"author": {
+				"name": "Vadim Makeev",
+				"url": "https://mastodon.social/@pepelsbey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/97af8b31e253fcb460cfe2c717222d86bf07d04366f03d42a2e3035742295fbb.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864150,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109529425052907052",
+			"date": "2024-12-02T16:35:51.000Z",
+			"author": {
+				"name": "Dylan </closingtags.com>",
+				"url": "https://mastodon.social/@closingtags",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8149e5a454c4a5d372c5667bb614f86264ba2d2b5bc9e1150308a022903045df.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864157,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-111205912790981038",
+			"date": "2024-12-02T17:10:08.000Z",
+			"author": {
+				"name": "sad spiders LLC",
+				"url": "https://mstdn.social/@sadspiders",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/58375e498cff124299be0041730365839c0c395dd0aa542d73041554e460d2ca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864162,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109288230453300889",
+			"date": "2024-12-02T17:59:10.000Z",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://mamot.fr/@nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/68e6f1617572bd4c2158727e6c1693ec1d0ab76e3f29f51d93c5895ee2c8e6b0.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864163,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109360354210126632",
+			"date": "2024-12-02T17:59:10.000Z",
+			"author": {
+				"name": "biodiverse wetlands",
+				"url": "https://queer.party/@Marsh",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864167,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109767366109990677",
+			"date": "2024-12-02T18:24:29.000Z",
+			"author": {
+				"name": "Will Browar ????????‍????",
+				"url": "https://hachyderm.io/@wbrowar",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864168,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-110362309042933687",
+			"date": "2024-12-02T18:24:31.000Z",
+			"author": {
+				"name": "david",
+				"url": "https://piaille.fr/@davidou",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d1594229bc87d51baf1646461cf3e5ef55557f1acefe1b01245a14a7c1b0cc03.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864296,
+			"url": "https://fediverse.zachleat.com/@zachleat/113583772548898471#reblogged-by-109526010276364503",
+			"date": "2024-12-03T15:01:11.000Z",
+			"author": {
+				"name": "Benjamim",
+				"url": "https://social.lol/@benjamim",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864465,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:w2oidkblkptbquceahhcxf6o",
+			"date": "2024-12-03T22:40:11.000Z",
+			"author": {
+				"name": "Dom Magnifico",
+				"url": "https://bsky.app/profile/doom.codes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/2c46c1c61168e74242c4d39ab6f03c6cda1e0a0b1952610bee986328bccf2dea.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864466,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:vug3vkycxfjbkiwsyyrak4gh",
+			"date": "2024-12-03T22:40:12.000Z",
+			"author": {
+				"name": "Nick Taylor",
+				"url": "https://bsky.app/profile/nickyt.online",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3048ef7accfbcca4d0b9dd7640a27377327defa209781029194847532a1b960f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864467,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:udys2vx3idcktonqctysbma3",
+			"date": "2024-12-03T22:40:12.000Z",
+			"author": {
+				"name": "Hubert Sablonnière",
+				"url": "https://bsky.app/profile/hsablonniere.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/c4535de108270d1cd080b7ef0d6122ccaeb944312d8b3940dc8b45bf0a4eabe4.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864468,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:ttoyg6wb2iamebtm4svedlvk",
+			"date": "2024-12-03T22:40:12.000Z",
+			"author": {
+				"name": "Pär Björklund",
+				"url": "https://bsky.app/profile/paxxi.delusional.nu",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/baca29498a82864c329eaebb40aaa822eb6fe9278a4e20ad2fe790a4bf0deb9f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864469,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:jtct564b2e4a2lwyjstwt7o4",
+			"date": "2024-12-03T22:40:13.000Z",
+			"author": {
+				"name": "Estela Franco",
+				"url": "https://bsky.app/profile/guaca.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/baf0839a169571eb82d3ab805dcdc81ef0e0fb0f8d05cfb1ee8b40af6f9acc5b.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864470,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:ijzx6kuie53dduugow5k4dzb",
+			"date": "2024-12-03T22:40:13.000Z",
+			"author": {
+				"name": "Jingle Lizzie ????",
+				"url": "https://bsky.app/profile/binarydigit.tech",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/0c04fce469d7e8e9262f40ffb403a3b81f63664491ddcae39087484f26b85ce3.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864471,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:httl4meeb5mx5767hike2t4q",
+			"date": "2024-12-03T22:40:14.000Z",
+			"author": {
+				"name": "Brian Kardell",
+				"url": "https://bsky.app/profile/bkardell.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/a0c63f0076ce9e08169f45b364585fead91bf14d0b9ed88e14fdb0c1a25d9139.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864472,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:g5ulczw3b42cymerb7b6px3b",
+			"date": "2024-12-03T22:40:14.000Z",
+			"author": {
+				"name": "Kevin Kipp",
+				"url": "https://bsky.app/profile/kevinkipp.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/386c52a9fbd7131ae96d7c9390e97f3097f5658ca339a6c95218ab40925e3d5a.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864473,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:4o6o6re5hrzy4v5acedmufj4",
+			"date": "2024-12-03T22:40:15.000Z",
+			"author": {
+				"name": "Cthos",
+				"url": "https://bsky.app/profile/cthos.dev",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/38b53178357ef970e69bae59f4a808d043ec1291755d2ba2c5c55c9979e55054.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864474,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:2cpnrefqsfucl4lvo3h2yzfh",
+			"date": "2024-12-03T22:40:15.000Z",
+			"author": {
+				"name": "Michael Warren",
+				"url": "https://bsky.app/profile/mrdisagree.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3a01370fe82edaa17c6bfe5d1b0d4a6653cc41a4b10e33d6e828e41c05e6a3ca.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864797,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:hjmb3thzvyhvbsq5g45o67oh",
+			"date": "2024-12-04T08:17:31.000Z",
+			"author": {
+				"name": "Marius Vatasoiu",
+				"url": "https://bsky.app/profile/mariusvatasoiu.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/666489bef56b297d32e1b219622e76023431a0baca3fee1fc5285a41550bb7fb.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1864858,
+			"url": "https://bsky.app/profile/zachleat.com/post/3lcfyk76g5c2f#reposted_by_did:plc:3xdmf2lkqyql7haroquajjvu",
+			"date": "2024-12-04T13:06:52.000Z",
+			"author": {
+				"name": "Brett Peary",
+				"url": "https://bsky.app/profile/brettpeary.bsky.social",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4f44ce3e71c3a24ab10eeb36d0e691f730de9e691e2e32ee90e3cb28656c2192.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957390,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#reposted_by_did:plc:wsvbkey2oifwfbsjbwigre7x",
+			"date": "2025-12-05T13:59:46.000Z",
+			"author": {
+				"name": "Nilesh Prajapati",
+				"url": "https://bsky.app/profile/nileshprajapati.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4f6fd2cdc4e6a535f7ec25d990e84a25c5dd36b2be5268380a9b29fbc48f2c6d.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957418,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-109383215820991530",
+			"date": "2025-12-05T14:05:35.000Z",
+			"author": {
+				"name": "Bob Monsour",
+				"url": "https://indieweb.social/@bobmonsour",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b29612c57f91493bea28f611bfba470ca27d73af355df4040d9dc121940e1c07.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957419,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-109574541133074076",
+			"date": "2025-12-05T14:05:47.000Z",
+			"author": {
+				"name": "Erik (????????????‍????????)",
+				"url": "https://mastodon.gamedev.place/@Erikmitk",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1ef1edba366630b772e571b63019b9f365a3a7f2fc064cb20e9f49d070cb6221.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957420,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-109781525395864081",
+			"date": "2025-12-05T14:05:50.000Z",
+			"author": {
+				"name": "kirch",
+				"url": "https://tilde.zone/@kirch",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2000cf2365d16d84f72f1418ea375eebf2dc8bff30686236fe2ca6555fd32159.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957421,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-109289744030118387",
+			"date": "2025-12-05T14:05:54.000Z",
+			"author": {
+				"name": "Fynn Ellie Be",
+				"url": "https://mastodon.social/@mvsde",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5e438b36934704e62273198404a86d08d46b7e3ea18b54b5b470985ed84c08d6.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957422,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-109779197194734817",
+			"date": "2025-12-05T14:05:59.000Z",
+			"author": {
+				"name": "Jean Pierre Kolb",
+				"url": "https://mastodon.social/@JPKCom",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957432,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#reposted_by_did:plc:nnn7hle65gspngcmwf4jar7w",
+			"date": "2025-12-05T14:29:40.000Z",
+			"author": {
+				"name": "Bob Monsour",
+				"url": "https://bsky.app/profile/bobmonsour.com",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/e13cab5a1a00674f720aa33f1b42e47b38a7fa9c3487cc304200d72686f58a24.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957437,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-109510536309799114",
+			"date": "2025-12-05T14:33:01.000Z",
+			"author": {
+				"name": "Jason",
+				"url": "https://mas.to/@nux",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1a8aede686fae85811061eefe08802fcd5924c7f8bd060013bd2559a8a6e275f.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957438,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-109825170295400220",
+			"date": "2025-12-05T14:33:06.000Z",
+			"author": {
+				"name": "iamdtms",
+				"url": "https://mas.to/@iamdtms",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e7a0884d1190dc19d635c5bf00ba578913deb32961f83a8b5fc07f6cdf67e49e.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957439,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-112446057518244111",
+			"date": "2025-12-05T14:33:07.000Z",
+			"author": {
+				"name": "Jelle",
+				"url": "https://mensmaaktmooi.nl/@jelle",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957458,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-111301524584414888",
+			"date": "2025-12-05T15:01:58.000Z",
+			"author": {
+				"name": "fromjason.xyz ❤️ ????",
+				"url": "https://mastodon.social/@fromjason",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9e9806ae254509d6fbdd51899cd373223a4c8bd51ab4a45cc04170864b8aec00.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957485,
+			"url": "https://bsky.app/profile/zachleat.com/post/3m7amsosrbx27#reposted_by_did:plc:dmgoddsemnyljdrp4jgt4dam",
+			"date": "2025-12-05T15:30:09.000Z",
+			"author": {
+				"name": "Michael",
+				"url": "https://bsky.app/profile/mwdelaney.me",
+				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6f5653677d4c9fb8ff563dee437d868fce8816ed0fa72beef82e93a63b4472e9.jpg"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957567,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-109362070061028822",
+			"date": "2025-12-05T17:07:20.000Z",
+			"author": {
+				"name": "Box464",
+				"url": "https://mastodon.social/@box464",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/572298bc4ad63b25e41aff56effa44d525f6803c2fc7c504e65d873124281743.png"
+			},
+			"via": "webmention"
+		},
+		{
+			"id": 1957667,
+			"url": "https://fediverse.zachleat.com/@zachleat/115667270836180910#reblogged-by-110655682866815739",
+			"date": "2025-12-05T21:34:13.000Z",
+			"author": {
+				"name": "biou",
+				"url": "https://mas.to/@biou",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/47bd56307e7ba05ad2c0bf069a7b9788468afc7cd967d96ef130f1d5c6d52cf9.jpg"
+			},
+			"via": "webmention"
+		}
+	]
+}
