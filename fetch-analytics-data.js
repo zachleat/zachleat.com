@@ -95,28 +95,18 @@ function getInputMap(globs) {
 			inputPath,
 		};
 
-		let matcher = inputPath.match(/(\d{4}\-\d{2}\-\d{2})\-([^\/]+)/);
-		if(matcher && matcher.length) {
-			let [, date, filename] = matcher;
-			let slugSplit = filename.split(".");
-			if(slugSplit.length > 1) {
-				slugSplit.pop();
-			}
-			let slug = slugSplit.join(".");
-			result.url = `/web/${slug}/`;
+		// File paths mirror urls: ./_posts/slug.md is /web/slug/
+		result.url = `/web${inputPath.replace(/^\.\/_posts/, "").replace(/\.[^.\/]+$/, "")}/`;
+
+		let { data } = matter(fs.readFileSync(inputPath, 'utf8'));
+		if(data.date) {
+			let date = (data.date instanceof Date ? data.date.toISOString() : String(data.date)).slice(0, 10);
 
 			// old /YYYY/MM/DD/ urls
-			alternates[`/web/${date.split("-").join("/")}/${slug}/`] = result.url;
+			alternates[`/web/${date.split("-").join("/")}${result.url.slice("/web".length)}`] = result.url;
 
 			result.date = date;
 			result.time = (new Date(date)).getTime();
-		}
-
-		// if permalink set in front matter, use that.
-		let content = fs.readFileSync(inputPath, 'utf8');
-		let frontmatter = matter( content );
-		if(frontmatter.data.permalink) {
-			result.url = frontmatter.data.permalink;
 		}
 
 		results[result.url] = result;
@@ -184,7 +174,7 @@ function getPageViewsPerDayRanks(analyticsData) {
 			entry.from = inputMap[entry.url];
 
 			let pageViewsPerDay = getPopularity(entry) / ((Date.now() - entry.from.time) / (1000*60*60*24));
-			entry.pageViewsPerDay = pageViewsPerDay;
+			entry.pageViewsPerDay = Math.round(pageViewsPerDay * 100) / 100;
 
 			entry.rankTotal = j;
 			j++;

@@ -9,16 +9,15 @@ const POSTS_DIR = "./_posts/";
 // Post urls keyed by the `metadata.youtubeId` in their front matter
 export function getYoutubePosts() {
 	let posts = {};
-	for(let filename of fs.readdirSync(POSTS_DIR)) {
+	for(let filename of fs.readdirSync(POSTS_DIR, { recursive: true })) {
 		if(!filename.endsWith(".md")) {
 			continue;
 		}
 		let frontMatter = fs.readFileSync(path.join(POSTS_DIR, filename), "utf8").split(/^---$/m)[1] || "";
 		let youtubeId = frontMatter.match(/^\s+youtubeId:\s*['"]?([\w-]+)/m)?.[1];
 		if(youtubeId) {
-			let fileSlug = path.parse(filename).name.replace(/^\d{4}-\d{2}-\d{2}-/, "");
-			let permalink = frontMatter.match(/^permalink:\s*['"]?([^'"\s]+)/m)?.[1] || `/web/${fileSlug}/`;
-			posts[youtubeId] = `https://www.zachleat.com${permalink}`;
+			// File paths mirror urls: slug.md is /web/slug/
+			posts[youtubeId] = `https://www.zachleat.com/web/${filename.replace(/\.md$/, "")}/`;
 		}
 	}
 	return posts;

@@ -43,6 +43,7 @@
 		"@11ty/font-awesome": "^2.0.0",
 		"@11ty/gray-matter": "^3.0.0",
 		"@11ty/image-color": "^2.0.0",
+		"@11ty/import": "^3.0.0-beta.8",
 		"@tweetback/canonical": "^2.0.49",
 		"degit": "^3.10.0",
 		"dotenv": "^17.4.2",
@@ -69,6 +70,7 @@
 		"start-search": "npm run build && npm run create-search-index && npm run start",
 		"projects": "./fetch-projects.sh",
 		"analytics": "node fetch-analytics-data.js",
+		"webmentions": "node _11ty/webmentions/import.js",
 		"production": "npm run projects && npm run analytics && npm run build-production && npm run create-search-index",
 		"nocache-production": "npm run projects && npm run build-production && npm run create-search-index",
 		"build-production": "PRODUCTION_BUILD=true npx @11ty/eleventy"
