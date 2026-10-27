@@ -217,7 +217,7 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy("web/wp-content")
 		.addPassthroughCopy("og/*.{jpeg,png}")
 		.addPassthroughCopy("og/sources/")
-		// For images that should _not_ be optimized via Eleventy Image (see 2021-01-30-fluid-images post)
+		// For images that should _not_ be optimized via Eleventy Image (see fluid-images post)
 		.addPassthroughCopy("_posts/**/_ignored_*.*", {
 			mode: "html-relative"
 		})
