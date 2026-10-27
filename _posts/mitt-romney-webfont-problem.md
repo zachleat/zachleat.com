@@ -18,7 +18,7 @@ tweet: https://twitter.com/zachleat/status/605364712663093248
 	<figcaption><a href="https://www.flickr.com/photos/davelawrence8/6791949310">Mitt Romney at Caster Concepts by Dave Lawrence, on Flickr</a></figcaption>
 </figure>
 
-If you’ve read [the](https://dev.opera.com/articles/better-font-face/) [neverending](http://www.zachleat.com/web/foft/) [series](http://www.filamentgroup.com/lab/font-loading.html) of blog posts I’ve written about how fonts load on the web, you’re probably already become very familiar with the The Flash of Invisible Text (FOIT), or how the browser hides the text while the web font is loading.
+If you’ve read [the](/web/devopera-font-face/) [neverending](http://www.zachleat.com/web/foft/) [series](http://www.filamentgroup.com/lab/font-loading.html) of blog posts I’ve written about how fonts load on the web, you’re probably already become very familiar with the The Flash of Invisible Text (FOIT), or how the browser hides the text while the web font is loading.
 
 I wanted to highlight a particular variant of FOIT, which I’ll forever refer to as the Mitt Romney Web Font Problem. This specific problem occurs when you use multiple weights and styles of the same typeface together.
 
@@ -41,7 +41,7 @@ Why did this happen? As you may already be aware, each web font incurs its own s
 
 ## What can web developers do?
 
-1. You can use the font loading solution I’ve been prescribing and documented [over at Dev.Opera](https://dev.opera.com/articles/better-font-face/). This is by far the easiest method and will eliminate FOIT by switching to unstyled fallback text while the font is loading.
+1. You can use the font loading solution I’ve been prescribing and documented [over at Dev.Opera](/web/devopera-font-face/). This is by far the easiest method and will eliminate FOIT by switching to unstyled fallback text while the font is loading.
 1. If you aren’t comfortable with eliminating FOIT, you can also group your font loads into a single repaint, shown in the Appendix 1 code sample below.
 1. You can also use the previously documented [Flash of Faux Text](/web/foft/) approach, utilizing font-synthesis to show browser generated bold and italic fallbacks while the real web fonts load.
 

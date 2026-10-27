@@ -18,7 +18,7 @@ By now you’re no doubt tired of hearing my endless blathering about the perils
 
 ## Minimizing Reflow
 
-One technique to solve this problem uses the CSS Font Loading API to add classes signifying that our fonts have successfully loaded. We can then use those classes in our CSS selectors to kill the FOIT altogether. Usually this involves a class (and a repaint/reflow) for each individual font that loads. You can read more about this technique at [Dev.Opera](https://dev.opera.com/articles/better-font-face/).
+One technique to solve this problem uses the CSS Font Loading API to add classes signifying that our fonts have successfully loaded. We can then use those classes in our CSS selectors to kill the FOIT altogether. Usually this involves a class (and a repaint/reflow) for each individual font that loads. You can read more about this technique at [Dev.Opera](/web/devopera-font-face/).
 
 Another technique to solve this problem involves embedding fonts as Data URIs inside of a single CSS file that we load asynchronously. This method groups our fonts into one large request that only triggers a single combined repaint/reflow for your font bundle. You can read more about this technique in the [Filament Group Lab](http://www.filamentgroup.com/lab/font-loading.html).
 
