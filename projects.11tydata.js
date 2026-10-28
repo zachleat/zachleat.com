@@ -44,6 +44,15 @@ let sparklineAggregateJson = await Fetch(SERVICE_URL + "report-sparkline-aggrega
 
 export const sparklineAggregate = sparklineAggregateJson.monthlyReleases;
 
+function formatMonth(ym) {
+	if(!ym) {
+		return "";
+	}
+
+	let [year, month] = ym.split("-").map(Number);
+	return new Date(Date.UTC(year, month - 1)).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
+}
+
 // Open counts carry the lowest/highest ever seen, which a monthly series loses when a month’s snapshot is overwritten.
 function getAggregateSparkline(series) {
 	let counts = series?.counts || [];
@@ -52,6 +61,8 @@ function getAggregateSparkline(series) {
 		counts,
 		min: series?.low ?? (counts.length ? Math.min(...counts) : 0),
 		max: series?.high ?? (counts.length ? Math.max(...counts) : 0),
+		minMonth: formatMonth(series?.lowMonth),
+		maxMonth: formatMonth(series?.highMonth),
 	};
 }
 
