@@ -1,4 +1,4 @@
-# Commits fresh analytics and webmentions data every hour.
+# Commits fresh webmentions data every hour and analytics data once a day.
 name: Import Analytics/Webmention Data
 
 on:
@@ -17,12 +17,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          filter: blob:none
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
+      # Analytics refresh at most once per UTC day, using the last commit to analytics.json as the cache timestamp.
+      - id: analytics-cache
+        run: |
+          if [ "$(git log -1 --format=%cd --date=format-local:%F -- _data/analytics.json)" = "$(date -u +%F)" ]; then
+            echo "fresh=true" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          TZ: UTC
+      # Fetch errors fail this step (and leave analytics.json untouched) instead of committing partial data.
       - run: npm run import:analytics
+        if: steps.analytics-cache.outputs.fresh != 'true'
+        continue-on-error: true
         env:
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
