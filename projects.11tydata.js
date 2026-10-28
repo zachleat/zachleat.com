@@ -138,6 +138,17 @@ for(let pkg of report.projects) {
 	}
 }
 
+// Archived repos without a project (e.g. folded into a monorepo) keep their stars and closed issues.
+for(let repo of report.archivedRepos || []) {
+	if(reposSeen.has(repo.url)) {
+		continue;
+	}
+	reposSeen.add(repo.url);
+
+	totalCounts.issues.closed += repo.closedIssues || 0;
+	totalCounts.stars += repo.stars || 0;
+}
+
 export const totals = totalCounts;
 
 export const generatedAt = report.generatedAt;
