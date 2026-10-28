@@ -44,13 +44,28 @@ let sparklineAggregateJson = await Fetch(SERVICE_URL + "report-sparkline-aggrega
 
 export const sparklineAggregate = sparklineAggregateJson.monthlyReleases;
 
+// Ties go to the most recent month, so a long flat run reports when it last held.
+function getMonthOf(series, value) {
+	let index = series.counts.lastIndexOf(value);
+	if(index < 0 || !series.start) {
+		return "";
+	}
+
+	let [year, month] = series.start.split("-").map(Number);
+	return new Date(Date.UTC(year, month - 1 + index)).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
+}
+
 function getAggregateSparkline(series) {
 	let counts = series?.counts || [];
+	let min = counts.length ? Math.min(...counts) : 0;
+	let max = counts.length ? Math.max(...counts) : 0;
 
 	return {
 		counts,
-		min: counts.length ? Math.min(...counts) : 0,
-		max: counts.length ? Math.max(...counts) : 0,
+		min,
+		max,
+		minMonth: counts.length ? getMonthOf(series, min) : "",
+		maxMonth: counts.length ? getMonthOf(series, max) : "",
 	};
 }
 

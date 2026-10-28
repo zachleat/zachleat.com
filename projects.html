@@ -166,6 +166,20 @@ modules:
 	--bar-color: rgba(255, 0, 0, 0.6);
 	width: 100%;
 }
+.active-totals {
+	min-width: 0;
+}
+.active-totals :is(th, td) {
+	font-size: .875em;
+	vertical-align: top;
+}
+.active-totals small {
+	opacity: .7;
+}
+.active-totals tbody th {
+	text-align: start;
+	font-weight: inherit;
+}
 .totals-spark {
 	display: inline-block;
 	width: 64px;
@@ -329,11 +343,40 @@ modules:
 </ul>
 
 <h3>{% icon "fa:diagram-project" %}Active Projects</h3>
-<ul>
-	<li>{% icon "fas:bug" %}{{ totals.issues.open | renderNumber }} open {% icon "fab:github" %}issue{% if totals.issues.open != 1 %}s{% endif %}{% if openIssuesAggregate.counts.size > 1 %} <img src="{% sparklineDataUri openIssuesAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open issues sparkline, ranging {{ openIssuesAggregate.min }} to {{ openIssuesAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
-	<li>{% icon "fas:code-merge" %}{{ totals.prs.open | renderNumber }} open {% icon "fab:github" %}pull request{% if totals.prs.open != 1 %}s{% endif %}{% if openPRsAggregate.counts.size > 1 %} <img src="{% sparklineDataUri openPRsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open pull requests sparkline, ranging {{ openPRsAggregate.min }} to {{ openPRsAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
-	<li>{% icon "fas:lock-open" %}<a href="?scope=audits#projects">{{ totals.audits | renderNumber }} open security audit{% if totals.audits != 1 %}s{% endif %}</a>{% if auditsAggregate.counts.size > 1 %} <img src="{% sparklineDataUri auditsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open security audits sparkline, ranging {{ auditsAggregate.min }} to {{ auditsAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
-</ul>
+<table class="active-totals">
+	<thead>
+		<tr>
+			<th></th>
+			<th class="numeric">Open</th>
+			<th class="numeric">Low</th>
+			<th class="numeric">High</th>
+			<th>Monthly</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">{% icon "fas:bug" %}{% icon "fab:github" %}Issues</th>
+			<td class="numeric">{{ totals.issues.open | renderNumber }}</td>
+			<td class="numeric">{% if openIssuesAggregate.counts.size > 1 %}{{ openIssuesAggregate.min | renderNumber }}{% if openIssuesAggregate.minMonth %}<br><small>{{ openIssuesAggregate.minMonth }}</small>{% endif %}{% endif %}</td>
+			<td class="numeric">{% if openIssuesAggregate.counts.size > 1 %}{{ openIssuesAggregate.max | renderNumber }}{% if openIssuesAggregate.maxMonth %}<br><small>{{ openIssuesAggregate.maxMonth }}</small>{% endif %}{% endif %}</td>
+			<td>{% if openIssuesAggregate.counts.size > 1 %}<img src="{% sparklineDataUri openIssuesAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open issues sparkline, ranging {{ openIssuesAggregate.min }} to {{ openIssuesAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</td>
+		</tr>
+		<tr>
+			<th scope="row">{% icon "fas:code-merge" %}{% icon "fab:github" %}Pull requests</th>
+			<td class="numeric">{{ totals.prs.open | renderNumber }}</td>
+			<td class="numeric">{% if openPRsAggregate.counts.size > 1 %}{{ openPRsAggregate.min | renderNumber }}{% if openPRsAggregate.minMonth %}<br><small>{{ openPRsAggregate.minMonth }}</small>{% endif %}{% endif %}</td>
+			<td class="numeric">{% if openPRsAggregate.counts.size > 1 %}{{ openPRsAggregate.max | renderNumber }}{% if openPRsAggregate.maxMonth %}<br><small>{{ openPRsAggregate.maxMonth }}</small>{% endif %}{% endif %}</td>
+			<td>{% if openPRsAggregate.counts.size > 1 %}<img src="{% sparklineDataUri openPRsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open pull requests sparkline, ranging {{ openPRsAggregate.min }} to {{ openPRsAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</td>
+		</tr>
+		<tr>
+			<th scope="row">{% icon "fas:lock-open" %}<a href="?scope=audits#projects">Security audits</a></th>
+			<td class="numeric">{{ totals.audits | renderNumber }}</td>
+			<td class="numeric">{% if auditsAggregate.counts.size > 1 %}{{ auditsAggregate.min | renderNumber }}{% if auditsAggregate.minMonth %}<br><small>{{ auditsAggregate.minMonth }}</small>{% endif %}{% endif %}</td>
+			<td class="numeric">{% if auditsAggregate.counts.size > 1 %}{{ auditsAggregate.max | renderNumber }}{% if auditsAggregate.maxMonth %}<br><small>{{ auditsAggregate.maxMonth }}</small>{% endif %}{% endif %}</td>
+			<td>{% if auditsAggregate.counts.size > 1 %}<img src="{% sparklineDataUri auditsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open security audits sparkline, ranging {{ auditsAggregate.min }} to {{ auditsAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</td>
+		</tr>
+	</tbody>
+</table>
 
 <h3>{% icon "fas:skull" %}Neglect</h3>
 
