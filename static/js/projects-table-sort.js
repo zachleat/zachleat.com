@@ -2,7 +2,7 @@ import { TableSortableElement } from "/static/table-sortable.js";
 
 // table-sortable makes every `thead th` sortable and rebuilds each one as
 // `th.textContent = ""` + a button holding the trimmed text. On the projects table that would
-// (a) offer a sort on columns that have no meaningful order of their own (Audit, Issues, PRs)
+// (a) offer a sort on columns that have no meaningful order of their own (Issues, PRs)
 // and (b) throw away the `{% icon %}` SVGs in the headers, since textContent doesn't see them.
 // So `_setupAccessibility` is replaced here: only `[data-sortable]` headers get a button, the
 // header's existing nodes move into it intact, and `[data-sorted]` starts already marked.
@@ -48,7 +48,7 @@ class ProjectsTableSortable extends TableSortableElement {
 		}
 
 		// every sort resets `aria-sort` across all of `thead th`, which would advertise the
-		// three columns that have no button as sortable. Clear them again each time.
+		// two columns that have no button as sortable. Clear them again each time.
 		this.addEventListener("table-sortable:sort", () => {
 			for (let th of this._table.querySelectorAll("thead th:not([data-sortable])")) {
 				th.removeAttribute("aria-sort");

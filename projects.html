@@ -326,10 +326,10 @@ modules:
 <h2 class="sr-only">Overview</h2>
 
 <h3><span class="health">Open Source Health <health-score score="{{ healthRating | divided_by: 100 }}">{{ healthRating | round }}</health-score></span></h3>
+<p>{% if generatedAt %}<em>Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>.</em> {% endif %}Skip to <a href="?scope=pinned#projects">GitHub Pinned Projects</a> or read the <a href="/web/?category=project">{% icon "fa:book" %}{{ collections.project | size }} project blog posts</a>.</p>
 
 <ul>
-	<li>Skip to <a href="?scope=pinned#projects">GitHub Pinned Projects</a> or read the <a href="/web/?category=project">{% icon "fa:book" %}{{ collections.project | size }} project blog posts</a>.</li>
-	<li>{% icon "fa:diagram-project" %} {{ packages | size | renderNumber }} total open source projects <em>({{ totals.activeProjects }} active)</em>
+	<li>{% icon "fa:diagram-project" %}{{ packages | size | renderNumber }} total open source projects <em>({{ totals.activeProjects }} active)</em>
 		<ul>
 			<li>{{ totals.packages }} {% icon "fab:npm" %}package{% if totals.packages != 1 %}s{% endif %} <em>({{ totals.activePackages }} active)</em> and {{ totals.publishes | renderNumber }} published {% icon "fab:npm" %}version{% if totals.publishes != 1 %}s{% endif %}</li>
 			<li>{{ totals.customElements }} Web Components 🚾</li>
@@ -421,7 +421,7 @@ modules:
 
 <p>Here are all of my open source projects sorted by a Neglect. Neglect takes into account popularity via stars and downloads, issues and pull requests open, and recent stable publish descending. Eligible projects are manually selected, published to {% icon "fab:npm" %}npm, or marked as a <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository">template repository</a> on {% icon "fab:github" %}GitHub.</p>
 
-<p><em>{% if generatedAt %}Last updated <time-difference live><time datetime="{{ generatedAt }}" title="{{ generatedAt }}">{{ generatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>. {% endif %}Download counts shown are for the past 12 months. Dependency counts shown are comprehensive counts of all dependencies used by the latest stable release of the package.</em></p>
+<p><em>Download counts shown are for the past 12 months. Dependency counts shown are comprehensive counts of all dependencies used by the latest stable release of the package.</em></p>
 
 <filter-container oninit>
 <form class="filter-posts-form">
@@ -457,7 +457,7 @@ below shows whichever one matches the column's `aria-sort` {% endcomment -%}
       <th class="name-col" data-sortable>{% icon "fas:box-open" %}Name</th>
       <th class="numeric" data-sortable>Popularity</th>
       <th data-sortable>Versions</th>
-      <th class="numeric">Audit</th>
+      <th class="numeric" data-sortable>Audit</th>
       <th class="numeric">Issues</th>
       <th class="numeric">PRs</th>
     </tr>
