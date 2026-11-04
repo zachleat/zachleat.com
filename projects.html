@@ -338,8 +338,8 @@ modules:
 	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last 12 months)</em>{% if downloadsAggregate.counts.size > minimumSparklineMonths %} <img src="{% sparklineDataUri downloadsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly npm downloads sparkline, ranging {{ downloadsAggregate.min | renderNumber: "0a" }} to {{ downloadsAggregate.max | renderNumber: "0a" }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
 	<li>{% icon "fas:download" %}{{ totals.cdnHits | renderNumber }} CDN downloads <em>(last 12 months on <a href="https://www.jsdelivr.com/">jsDelivr</a>)</em>{% if cdnHitsAggregate.counts.size > minimumSparklineMonths %} <img src="{% sparklineDataUri cdnHitsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly jsDelivr CDN hits sparkline, ranging {{ cdnHitsAggregate.min | renderNumber: "0a" }} to {{ cdnHitsAggregate.max | renderNumber: "0a" }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
-	<li>{% icon "far:circle-check" %} Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues</li>
-	<li>{% icon "far:circle-check" %} Merged {% icon "fas:code-merge" %}{{ totals.prs.merged | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
+	<li>{% icon "far:circle-check" %}Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues</li>
+	<li>{% icon "far:circle-check" %}Merged {% icon "fas:code-merge" %}{{ totals.prs.merged | renderNumber }} {% icon "fab:github" %}pull requests (PRs)</li>
 </ul>
 
 <h3>{% icon "fa:diagram-project" %}Active Projects</h3>
