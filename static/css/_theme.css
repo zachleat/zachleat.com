@@ -2102,9 +2102,13 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 }
 .z-icon:has([href="#far-fa-circle-check"]) {
-	margin-inline: .25em 0;
+	margin-inline-start: .25em;
 	color: green;
 	font-size: 0.875em;
+}
+/* trailing a count, the check has no text after it to space from */
+.z-icon:has([href="#far-fa-circle-check"]):last-child {
+	margin-inline-end: 0;
 }
 .archived .z-icon:has([href="#far-fa-circle-check"]) {
 	color: #777;
