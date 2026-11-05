@@ -2,8 +2,7 @@ import { TableSortableElement } from "/static/table-sortable.js";
 
 // table-sortable makes every `thead th` sortable and rebuilds each one as
 // `th.textContent = ""` + a button holding the trimmed text. On the projects table that would
-// (a) offer a sort on columns that have no meaningful order of their own (Issues, PRs)
-// and (b) throw away the `{% icon %}` SVGs in the headers, since textContent doesn't see them.
+// (a) offer a sort on columns with no meaningful order of their own and (b) throw away the `{% icon %}` SVGs in the headers, since textContent doesn't see them.
 // So `_setupAccessibility` is replaced here: only `[data-sortable]` headers get a button, the
 // header's existing nodes move into it intact, and `[data-sorted]` starts already marked.
 //

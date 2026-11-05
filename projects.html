@@ -67,7 +67,7 @@ modules:
 
 	/* table-saw’s breakpoint styles set `display: block` on rows, so we need
 	   more specificity than filter-container’s generated `.filter-scope--hide` */
-	:is(tbody, tfoot) tr.filter-scope--hide {
+	:is(tbody, tfoot) tr:is(.filter-scope--hide, .filter-archived--hide) {
 		display: none;
 	}
 
@@ -369,7 +369,7 @@ modules:
 			<td>{% if openPRsAggregate.counts.size > 1 %}<img src="{% sparklineDataUri openPRsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly open pull requests sparkline, ranging {{ openPRsAggregate.min }} to {{ openPRsAggregate.max }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</td>
 		</tr>
 		<tr>
-			<th scope="row">{% icon "fas:lock-open" %}<a href="?scope=audits#projects">Security audits</a></th>
+			<th scope="row">{% icon "fas:lock-open" %}Security audits</th>
 			<td class="numeric">{{ totals.audits | renderNumber }}</td>
 			<td class="numeric">{% if auditsAggregate.counts.size > 1 %}{{ auditsAggregate.min | renderNumber }}{% if auditsAggregate.minMonth %}<br><small>{{ auditsAggregate.minMonth }}</small>{% endif %}{% endif %}</td>
 			<td class="numeric">{% if auditsAggregate.counts.size > 1 %}{{ auditsAggregate.max | renderNumber }}{% if auditsAggregate.maxMonth %}<br><small>{{ auditsAggregate.maxMonth }}</small>{% endif %}{% endif %}</td>
@@ -425,14 +425,12 @@ modules:
 
 <filter-container oninit>
 <form class="filter-posts-form">
-	<span data-filter-results="project/projects" aria-live="polite">{{ packages | size }} projects</span>
+	<span data-filter-results="project/projects" aria-live="polite">{{ packages | size | minus: totals.githubArchived }} projects</span>
 	<label>
 		<span class="sr-only">Filter</span>
 		<select data-filter-key="scope">
 			<option value="">Show all projects</option>
-			<option value="active">Only Active Projects</option>
 			<option value="pinned">Only 📍 Pinned on GitHub</option>
-			<option value="audits">Only Security Audits</option>
 			<option value="wc">Only 🚾 Web Components</option>
 			<option value="npm">Only 📦 npm Packages</option>
 			<option value="11ty">Only Awesome and 11ty</option>
@@ -441,7 +439,40 @@ modules:
 			<option value="nopost">Only projects without a Blog Post</option>
 		</select>
 	</label>
+	<label><input type="checkbox" id="show-archived"> Show archived (<span id="archived-count">{{ totals.githubArchived }}</span>)</label>
 </form>
+{%- comment %} filter-container treats an unchecked box as "no filter," so archived rows ship hidden
+and this toggles them; its result count already skips any `filter-*--hide` row {% endcomment %}
+<script type="module">
+let checkbox = document.getElementById("show-archived");
+checkbox.checked = new URLSearchParams(location.search).has("archived");
+async function apply() {
+	for(let row of document.querySelectorAll("#projects tbody tr.archived")) {
+		row.classList.toggle("filter-archived--hide", !checkbox.checked);
+	}
+	let url = new URL(location);
+	if(checkbox.checked) {
+		url.searchParams.set("archived", "");
+	} else {
+		url.searchParams.delete("archived");
+	}
+	history.replaceState({}, "", url);
+	await customElements.whenDefined("filter-container");
+	checkbox.closest("filter-container").renderResultCount(true);
+}
+function renderArchivedCount() {
+	document.getElementById("archived-count").textContent = document.querySelectorAll("#projects tbody tr.archived:not(.filter-scope--hide)").length;
+}
+checkbox.addEventListener("change", apply);
+// listens on document so it runs after filter-container's own handler has applied the scope
+document.addEventListener("input", renderArchivedCount);
+if(checkbox.checked) {
+	apply();
+}
+// filter-container applies a scope from the URL in a timeout once it's defined
+await customElements.whenDefined("filter-container");
+setTimeout(renderArchivedCount);
+</script>
 {%- comment %} the sort indicators, rendered here so the `icon` shortcode can register them in
 the page sprite—projects-table-sort.js clones this into every sortable header's button, and CSS
 below shows whichever one matches the column's `aria-sort` {% endcomment -%}
@@ -458,8 +489,8 @@ below shows whichever one matches the column's `aria-sort` {% endcomment -%}
       <th class="numeric" data-sortable>Popularity</th>
       <th data-sortable>Versions</th>
       <th class="numeric" data-sortable>Audit</th>
-      <th class="numeric">Issues</th>
-      <th class="numeric">PRs</th>
+      <th class="numeric" data-sortable>Issues</th>
+      <th class="numeric" data-sortable>PRs</th>
     </tr>
   </thead>
 	<tfoot>
@@ -500,15 +531,16 @@ below shows whichever one matches the column's `aria-sort` {% endcomment -%}
   <tbody>
 {% for result in packages %}
 		{%- assign baNpmScope = result.packageName | default: "" | startsWith: "@11ty/", "@awesome.me" %}
+		{%- assign baRepoScope = result.nameWithOwner | default: "" | startsWith: "11ty/" %}
 		{%- assign nameWithOwnerPosts = collections.postsByProject[ result.nameWithOwner ] %}
 		{%- assign packageNamePosts = collections.postsByProject[ result.packageName ] %}
 		{%- assign isProjectCardException = projectCardExceptions contains result.packageName or projectCardExceptions contains result.nameWithOwner %}
 		{%- assign resultPosts = nameWithOwnerPosts | concat: packageNamePosts | uniq %}
 		{%- assign hasNoPost = false %}
 		{%- if resultPosts.size == 0 or isProjectCardException %}{% assign hasNoPost = true %}{% endif %}
-		{%- capture filterScopes -%}{% if baNpmScope %}11ty,{% else %}not11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if not result.isArchived and not result.npmDeprecated %}active,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{% if hasNoPost and not result.isArchived %}nopost,{% endif %}{%- endcapture %}
+		{%- capture filterScopes -%}{% if baNpmScope or baRepoScope %}11ty,{% else %}not11ty,{% endif %}{% if result.isWebComponent %}wc,{% endif %}{% if result.isPinned %}pinned,{% endif %}{% if result.publishCount > 0 %}npm,{% endif %}{% if result.isTemplate %}template,{% endif %}{% if not result.isArchived and not result.npmDeprecated %}active,{% endif %}{% if result.openVulnerabilities > 0 and not result.isArchived %}audits,{% endif %}{% if hasNoPost and not result.isArchived %}nopost,{% endif %}{%- endcapture %}
 		{%- capture rowKey %}{{ result.nameWithOwner }}|{{ result.packageName }}{% endcapture -%}
-		<tr id="{{ reportData.rowIdByPackage[ rowKey ] }}" data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}" class="neglect-score{% if result.isArchived %} archived{% endif %}">
+		<tr id="{{ reportData.rowIdByPackage[ rowKey ] }}" data-filter-scope="{{ filterScopes }}" style="--neglect-score: {{ result.score }}" class="neglect-score{% if result.isArchived %} archived filter-archived--hide{% endif %}">
 			{%- assign project = result -%}
 			{%- assign cardAsRow = true -%}
 			{%- include "project-card.html" -%}

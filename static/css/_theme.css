@@ -2092,9 +2092,9 @@ a[href].tag-inline:not(.tag-borderless),
 	}
 	.name {
 		display: block;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
+		/* hanging indent so wrapped lines clear the leading icon, matching the description below */
+		padding-inline-start: 1.7em;
+		text-indent: -1.7em;
 
 		.reponame {
 			padding-inline: 0.1875em; /* 3px /16 */
@@ -2206,7 +2206,7 @@ a[href].tag-inline:not(.tag-borderless),
 	flex-basis: 100%;
 }
 /* `flex-basis: 0` keeps the name from ever pushing the pill onto its own line: it claims the
-   leftover width instead and truncates (the shared .name rule supplies the ellipsis) */
+   leftover width instead and wraps */
 .project-card-top .name {
 	flex: 1 1 0;
 	min-width: 0;

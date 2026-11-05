@@ -50,6 +50,7 @@ worth showing on its own—so plenty of projects still leave the Popularity sect
 	{%- comment %} one icon leads the name, most specific first: archived outranks pinned,
 	which outranks Web Component, and each stands in for the package/repo icon the row
 	would otherwise carry {% endcomment -%}
+	{%- assign successor = projectSuccessors[ project.packageName ] | default: projectSuccessors[ project.nameWithOwner ] %}
 	{%- if project.isArchived %}{% icon "fas:skull-crossbones" %}
 	{%- elsif project.isPinned %}<span class="pinned" title="Pinned on GitHub">{% icon "fa:thumbtack" %}<span class="sr-only">Pinned on GitHub</span></span>
 	{%- elsif project.isWebComponent %}<span class="wc-icon" title="Web Component">🚾<span class="sr-only">Web Component</span></span>
@@ -66,6 +67,7 @@ worth showing on its own—so plenty of projects still leave the Popularity sect
 	{%- if project.isArchived and project.npmDeprecated %} <em>(Archived, Deprecated)</em>
 	{%- elsif project.isArchived %} <em>(Archived)</em>
 	{%- elsif project.npmDeprecated %} <em>(Deprecated)</em>{% endif %}
+	{%- if successor %} {% icon "fas:right-long" %}<code>{{ successor }}</code>{% endif %}
 </div>
 {%- if project.description %}<p class="description text-ellipsis-multi">{{ project.description | escape }}</p>{% endif %}
 {%- assign nameWithOwnerPosts = collections.postsByProject[ project.nameWithOwner ] %}
@@ -216,6 +218,11 @@ the component's numeric detection kicks in—it only recognizes a whole number {
 {%- comment %} newest date the cell names: the latest release, or the last commit for a repo that
 never shipped, falling back to the repo's creation date when GitHub reports no push {% endcomment -%}
 {%- assign sortVersions = project.lastStablePublish | default: project.lastPublish | default: project.pushedAt | default: project.repoCreatedAt %}
+{%- comment %} open reports first, then dependency count as the tiebreaker; rows showing a dash sort below zero {% endcomment -%}
+{%- if project.openVulnerabilities != null and not project.isArchived %}{% assign sortAudit = project.openVulnerabilities | times: 1000000 | plus: project.transitiveDependencies %}{% else %}{% assign sortAudit = -1 %}{% endif %}
+{%- comment %} open count first, then closed or merged count as the tiebreaker {% endcomment -%}
+{%- assign sortIssues = project.closedIssues | default: 0 %}{% assign sortIssues = project.openIssues | default: 0 | times: 1000000 | plus: sortIssues %}
+{%- assign sortPRs = project.mergedPRs | default: 0 %}{% assign sortPRs = project.openPRs | default: 0 | times: 1000000 | plus: sortPRs %}
 
 {%- if cardAsRow %}
 {%- comment %} the score is fractional, but table-sortable only detects a sort key as numeric
@@ -228,9 +235,9 @@ column after it out of alignment {% endcomment -%}
 <td class="name-col" data-sort-value="{{ sortName | downcase }}">{{ nameFragment }}</td>
 <td class="numeric popularity" data-sort-value="{{ sortPopularity }}">{% if hasPopularity %}{{ popularityFragment }}{% endif %}</td>
 <td data-sort-value="{{ sortVersions }}">{{ versionsFragment }}</td>
-<td class="numeric">{{ auditFragment }}</td>
-<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}{{ uncountedClass }}">{{ issuesFragment }}</td>
-<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}{{ uncountedClass }}">{{ prsFragment }}</td>
+<td class="numeric" data-sort-value="{{ sortAudit }}">{{ auditFragment }}</td>
+<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}{{ uncountedClass }}" data-sort-value="{{ sortIssues }}">{{ issuesFragment }}</td>
+<td class="numeric{% if project.workspacePath %} is-workspace{% endif %}{{ uncountedClass }}" data-sort-value="{{ sortPRs }}">{{ prsFragment }}</td>
 {%- else %}
 {%- capture projectRowKey %}{{ project.nameWithOwner }}|{{ project.packageName }}{% endcapture %}
 {%- assign projectRowId = reportData.rowIdByPackage[ projectRowKey ] %}
