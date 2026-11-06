@@ -2089,6 +2089,8 @@ a[href].tag-inline:not(.tag-borderless),
 		margin: 0 .15em;
 		margin-inline-end: .3em;
 		vertical-align: text-bottom;
+		/* otherwise the emoji inherits .name’s negative hanging indent and shifts out of its box */
+		text-indent: 0;
 	}
 	.name {
 		display: block;

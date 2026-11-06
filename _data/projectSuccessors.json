@@ -1,5 +1,7 @@
 {
 	"11ty/eleventy-dependency-tree-esm": "@11ty/dependency-tree",
 	"11ty/eleventy-plugin-img": "@11ty/eleventy-img",
-	"@11ty/eleventy-assets": "@11ty/eleventy-plugin-bundle"
+	"@11ty/eleventy-assets": "@11ty/eleventy-plugin-bundle",
+	"zachleat/speedlify": "zachleat/speedlify2",
+	"speedlify-score": "speedlify2-score"
 }
