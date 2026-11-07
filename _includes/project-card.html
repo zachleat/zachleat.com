@@ -22,7 +22,7 @@ Optional, falls back to the projects page’s own defaults when not set by the c
 worth showing on its own—so plenty of projects still leave the Popularity section empty {% endcomment -%}
 {%- assign cdnHitsTotal = reportData.cdnHitsTotalByPackage[ project.packageName ] %}
 {%- assign hasPopularity = false %}
-{%- if project.downloads > minimumDownloads or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
+{%- if project.downloadsAllTime > minimumDownloads or cdnHitsTotal > minimumCdnHits %}{% assign hasPopularity = true %}{% endif %}
 
 {%- capture neglectFragment %}
 {%- comment %} a score under 1% is a rounding artifact away from perfect, so it keeps the seedling {% endcomment -%}
@@ -106,12 +106,12 @@ does exist—it's just been excluded on purpose {% endcomment -%}
 {%- capture popularityFragment %}
 {%- comment %} stars are repo-level, so a workspace package’s row repeats its repo’s
 count—dimmed the way the other borrowed counts are {% endcomment -%}
-{%- if project.downloads > minimumDownloads %}<span class="downloads{% if project.downloads >= 1000000 %} downloads--millions{% endif %}"><small>{% icon "fas:download" %}</small><small class="source-pill">npm</small>{{ project.downloads | renderNumber: "0a" }}</span>{% endif %}
+{%- if project.downloadsAllTime > minimumDownloads %}<span class="downloads{% if project.downloadsAllTime >= 1000000 %} downloads--millions{% endif %}"><small>{% icon "fas:download" %}</small><small class="source-pill">npm</small>{{ project.downloadsAllTime | renderNumber: "0a" }}</span>{% endif %}
 {%- comment %} a package npm only started reporting on a few months ago has too few
 points to read as a trend, so it shows the count alone {% endcomment -%}
 {%- assign downloadsByMonth = reportData.sparklinesByPackage[ project.packageName ].monthlyDownloads %}
 {%- assign downloadsRange = reportData.downloadsRangeByPackage[ project.packageName ] %}
-{%- if project.downloads > minimumDownloads and downloadsByMonth.counts.size > minimumSparklineMonths %}
+{%- if project.downloadsAllTime > minimumDownloads and downloadsByMonth.counts.size > minimumSparklineMonths %}
 {%- capture sparkAlt %}Monthly downloads sparkline for {{ project.packageName }}, ranging {{ downloadsRange.min | renderNumber: "0a" }} to {{ downloadsRange.max | renderNumber: "0a" }}{% endcapture -%}
 {%- comment %} the alt text carries the same range, so the visible labels are decoration {% endcomment -%}
 <span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ downloadsRange.min | renderNumber: "0a" }}</span>
@@ -122,7 +122,7 @@ points to read as a trend, so it shows the count alone {% endcomment -%}
 different signal npm downloads can’t see, gated at its own, much smaller scale {% endcomment -%}
 {%- assign cdnHitsByMonth = reportData.sparklinesByPackage[ project.packageName ].monthlyCdnHits %}
 {%- assign cdnHitsRange = reportData.cdnHitsRangeByPackage[ project.packageName ] %}
-{%- if cdnHitsTotal > minimumCdnHits %}<span class="cdn-hits"><small>{% icon "fas:download" %}</small><small class="source-pill">cdn</small>{{ cdnHitsTotal | renderNumber: "0a" }}</span>{% endif %}
+{%- if cdnHitsTotal > minimumCdnHits %}<span class="cdn-hits"><small>{% icon "fas:download" %}</small><small class="source-pill">cdn (12mo)</small>{{ cdnHitsTotal | renderNumber: "0a" }}</span>{% endif %}
 {%- if cdnHitsTotal > minimumCdnHits and cdnHitsByMonth.counts.size > minimumSparklineMonths %}
 {%- capture cdnSparkAlt %}Monthly jsDelivr CDN hits sparkline for {{ project.packageName }}, ranging {{ cdnHitsRange.min | renderNumber: "0a" }} to {{ cdnHitsRange.max | renderNumber: "0a" }}{% endcapture -%}
 <span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ cdnHitsRange.min | renderNumber: "0a" }}</span>
@@ -211,7 +211,7 @@ sort usefully on their visible text. Values are integers (or ISO dates, which so
 the component's numeric detection kicks in—it only recognizes a whole number {% endcomment -%}
 {%- if project.lastPublish %}{% assign sortName = project.packageName %}{% else %}{% assign sortName = project.nameWithOwner | split: "/" | shift %}{% endif %}
 {%- comment %} one Popularity number out of the three the cell shows separately {% endcomment -%}
-{%- assign sortDownloads = project.downloads | default: 0 %}
+{%- assign sortDownloads = project.downloadsAllTime | default: 0 %}
 {%- assign sortCdnHits = cdnHitsTotal | default: 0 %}
 {%- assign sortStars = project.stars | default: 0 %}
 {%- assign sortPopularity = sortDownloads | plus: sortCdnHits | plus: sortStars %}

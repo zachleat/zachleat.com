@@ -335,7 +335,7 @@ modules:
 			<li>{{ totals.customElements }} Web Components 🚾</li>
 		</ul>
 	</li>
-	<li>{% icon "fas:download" %}{{ totals.downloads | renderNumber }} {% icon "fab:npm" %}downloads <em>(last 12 months)</em>{% if downloadsAggregate.counts.size > minimumSparklineMonths %} <img src="{% sparklineDataUri downloadsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly npm downloads sparkline, ranging {{ downloadsAggregate.min | renderNumber: "0a" }} to {{ downloadsAggregate.max | renderNumber: "0a" }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
+	<li>{% icon "fas:download" %}{{ totals.downloadsLastYear | renderNumber }} {% icon "fab:npm" %}downloads <em>(last 12 months)</em>, {{ totals.downloads | renderNumber }} <em>(all time)</em>{% if downloadsAggregate.counts.size > minimumSparklineMonths %} <img src="{% sparklineDataUri downloadsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly npm downloads sparkline, ranging {{ downloadsAggregate.min | renderNumber: "0a" }} to {{ downloadsAggregate.max | renderNumber: "0a" }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
 	<li>{% icon "fas:download" %}{{ totals.cdnHits | renderNumber }} CDN downloads <em>(last 12 months on <a href="https://www.jsdelivr.com/">jsDelivr</a>)</em>{% if cdnHitsAggregate.counts.size > minimumSparklineMonths %} <img src="{% sparklineDataUri cdnHitsAggregate.counts, 64, 16, '#aaa', 1 %}" width="64" height="16" alt="Monthly jsDelivr CDN hits sparkline, ranging {{ cdnHitsAggregate.min | renderNumber: "0a" }} to {{ cdnHitsAggregate.max | renderNumber: "0a" }}" decoding="async" class="totals-spark" eleventy:ignore>{% endif %}</li>
 	<li>{% icon "fas:star" %}{{ totals.stars | renderNumber }} {% icon "fab:github" %}stars</li>
 	<li>{% icon "far:circle-check" %}Closed {% icon "fas:bug" %}{{ totals.issues.closed | renderNumber }} {% icon "fab:github" %}issues</li>
@@ -421,7 +421,7 @@ modules:
 
 <p>Here are all of my open source projects sorted by a Neglect. Neglect takes into account popularity via stars and downloads, issues and pull requests open, and recent stable publish descending. Eligible projects are manually selected, published to {% icon "fab:npm" %}npm, or marked as a <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository">template repository</a> on {% icon "fab:github" %}GitHub.</p>
 
-<p><em>Download counts shown are for the past 12 months. Dependency counts shown are comprehensive counts of all dependencies used by the latest stable release of the package.</em></p>
+<p><em>npm download counts shown are all time; CDN download counts are for the past 12 months. Dependency counts shown are comprehensive counts of all dependencies used by the latest stable release of the package.</em></p>
 
 <filter-container oninit>
 <form class="filter-posts-form">
@@ -501,7 +501,7 @@ below shows whichever one matches the column's `aria-sort` {% endcomment -%}
 			</th>
 			<th class="numeric">
 				<div>
-					<small title="Last year">{% icon "fas:download" %}<small class="source-pill">npm</small><span class="downloads">{{ totals.downloads | renderNumber }}</span></small><br>
+					<small title="All time">{% icon "fas:download" %}<small class="source-pill">npm</small><span class="downloads">{{ totals.downloads | renderNumber }}</span></small><br>
 					<small title="Last year">{% icon "fas:download" %}<small class="source-pill">cdn</small><span class="downloads">{{ totals.cdnHits | renderNumber }}</span></small><br>
 					<small>{% icon "fas:star" %}<span class="stars">{{ totals.stars | renderNumber }}</span></small>
 				</div>

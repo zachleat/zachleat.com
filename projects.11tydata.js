@@ -88,6 +88,7 @@ let totalCounts = {
 	issues: { open: 0, closed: 0 },
 	stars: 0,
 	downloads: 0,
+	downloadsLastYear: 0,
 	cdnHits: 0,
 	publishes: 0,
 	customElements: 0,
@@ -102,7 +103,8 @@ for(let pkg of report.projects) {
 	totalCounts.githubArchived += pkg.isArchived ? 1 : 0;
 	totalCounts.npmDeprecated += pkg.npmDeprecated ? 1 : 0;
 	totalCounts.publishes += pkg.publishCount || 0;
-	totalCounts.downloads += pkg.downloads || 0;
+	totalCounts.downloads += pkg.downloadsAllTime || 0;
+	totalCounts.downloadsLastYear += pkg.downloads || 0;
 	// jsDelivr hits are keyed by package name in the sparklines data, same as downloads—so
 	// this sums the same way `downloads` does, one npm package at a time, workspaces included.
 	totalCounts.cdnHits += cdnHitsTotalByPackage[pkg.packageName] || 0;
