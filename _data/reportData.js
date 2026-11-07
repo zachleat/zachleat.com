@@ -78,7 +78,7 @@ const NEGLECT_DOMAIN_STEP = 5;
 const NEGLECT_DOMAIN_MIN = 10;
 
 function getNeglectScoreMax(projects) {
-	let scores = projects.flatMap(pkg => pkg.scoreHistory || []);
+	let scores = projects.flatMap(pkg => pkg.scoreHistoryWeekly || pkg.scoreHistory || []);
 	let max = scores.length ? Math.max(...scores) : 0;
 
 	return Math.max(Math.ceil(max / NEGLECT_DOMAIN_STEP) * NEGLECT_DOMAIN_STEP, NEGLECT_DOMAIN_MIN);
