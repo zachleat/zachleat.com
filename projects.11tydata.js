@@ -27,7 +27,6 @@ function getRangesBySeries(seriesName) {
 }
 
 export const downloadsRangeByPackage = getRangesBySeries("monthlyDownloads");
-export const releasesRangeByPackage = getRangesBySeries("monthlyReleases");
 export const cdnHitsRangeByPackage = getRangesBySeries("monthlyCdnHits");
 
 // jsDelivr hits have no running total in report.json the way npm downloads do (`pkg.downloads`),

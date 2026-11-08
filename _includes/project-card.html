@@ -8,13 +8,12 @@ Expects, assigned by the caller before including:
 - `cardAsRow` (optional): true to emit `<td>`s for an existing `<tr>`; omit/false for a card
 
 Optional, falls back to the projects page’s own defaults when not set by the caller:
-`minimumDownloads`, `minimumCdnHits`, `minimumStars`, `minimumPublishCountForSparkline`,
-`minimumSparklineMonths`, `readableDateFormat`, `npmAlsoShowRepoName`
+`minimumDownloads`, `minimumCdnHits`, `minimumStars`, `minimumSparklineMonths`,
+`readableDateFormat`, `npmAlsoShowRepoName`
 {% endcomment -%}
 {%- assign minimumDownloads = minimumDownloads | default: 2500 %}
 {%- assign minimumCdnHits = minimumCdnHits | default: 1000 %}
 {%- assign minimumStars = minimumStars | default: 200 %}
-{%- assign minimumPublishCountForSparkline = minimumPublishCountForSparkline | default: 6 %}
 {%- assign minimumSparklineMonths = minimumSparklineMonths | default: 3 %}
 {%- assign readableDateFormat = readableDateFormat | default: "dd LLL yyyy" %}
 
@@ -135,14 +134,7 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 {%- capture versionsFragment %}
 {%- if project.firstPublish -%}
 	<div class="age">
-	{%- assign releasesRange = reportData.releasesRangeByPackage[ project.packageName ] %}
-	{%- if project.publishCount > minimumPublishCountForSparkline and not project.isArchived %}
-	{%- capture releasesAlt %}Monthly publishes sparkline for {{ project.packageName }}, ranging {{ releasesRange.min | renderNumber: "0a" }} to {{ releasesRange.max | renderNumber: "0a" }}{% endcapture -%}
-	<span class="spark"><span class="spark-axis spark-axis--min" aria-hidden="true">{{ releasesRange.min | renderNumber: "0a" }}</span>
-		<img src="{% sparklineDataUri reportData.sparklinesByPackage[ project.packageName ].monthlyReleases.counts, 104, 16, '#aaa', 1, releasesRange.max %}" width="104" height="16" alt="{{ releasesAlt }}" loading="lazy" decoding="async" class="spark-img" eleventy:ignore>
-		<span class="spark-axis spark-axis--max" aria-hidden="true">{{ releasesRange.max | renderNumber: "0a" }}</span></span>
-	{%- endif %}
-	{% if project.publishCount > 0 %}<small class="nowrap">{{ project.publishCount | renderNumber: "0a" }} version{% if project.publishCount != 1 %}s{% endif %} in <time-difference live mode="strip-suffix"><time datetime="{{ project.firstPublish }}" title="{{ project.firstPublish }}">{{ project.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference></small>{% endif %}
+	{%- if project.publishCount > 0 %}<small class="nowrap">{{ project.publishCount | renderNumber: "0a" }} version{% if project.publishCount != 1 %}s{% endif %} in <time-difference live mode="strip-suffix"><time datetime="{{ project.firstPublish }}" title="{{ project.firstPublish }}">{{ project.firstPublish | readableDateFromISO: readableDateFormat }}</time></time-difference></small>{% endif %}
 	</div>
 {%- else -%}
 	<time-difference live mode="strip-suffix"><time datetime="{{ project.repoCreatedAt }}" title="{{ project.repoCreatedAt }}">{{ project.repoCreatedAt | readableDateFromISO: readableDateFormat }}</time></time-difference>
@@ -170,7 +162,7 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 	{% endif %}
 	{% if project.prerelease and cardAsRow %}
 		<div class="m-2 version">
-			<div class="nowrap"><em>{{ project.lastPublishVersion }}</em></div>
+			<div class="nowrap version-prerelease"><em>{{ project.lastPublishVersion }}</em></div>
 			{% if project.lastPublishVersion %}
 			<small>
 				<time-difference live><em><time datetime="{{ project.lastPublish }}" title="{{ project.lastPublish }}">{{ project.lastPublish | readableDateFromISO: readableDateFormat }}</time></em></time-difference>

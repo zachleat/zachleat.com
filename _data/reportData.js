@@ -13,48 +13,15 @@ function fetchJson(path) {
 	});
 }
 
-// A package's release series stops at its last publish, so a long-dormant package and an active one
-// both end flush against the right edge. Zero-filling to the current month lets the flat stretch
-// show. Downloads and CDN hits already run to the last complete month, so only releases need this.
-function padReleasesToCurrentMonth(packages) {
-	let now = new Date();
-	let endIndex = now.getUTCFullYear() * 12 + now.getUTCMonth();
-
-	return Object.fromEntries(
-		Object.entries(packages).map(([packageName, entry]) => {
-			let series = entry.monthlyReleases;
-			if(!series?.counts?.length) {
-				return [packageName, entry];
-			}
-
-			let [startYear, startMonth] = series.start.split("-").map(Number);
-			let missing = endIndex - (startYear * 12 + (startMonth - 1)) - (series.counts.length - 1);
-			if(missing <= 0) {
-				return [packageName, entry];
-			}
-
-			return [packageName, {
-				...entry,
-				monthlyReleases: {
-					...series,
-					counts: [...series.counts, ...Array(missing).fill(0)],
-				},
-			}];
-		})
-	);
-}
-
 // A sparkline is unitless, so each one needs the range it was drawn against to be readable.
-// Liquid has no numeric min/max, hence deriving it here. `floorAtZero` is for counts where a
-// month of nothing is the real baseline—a release series otherwise scales against its own
-// minimum, so a package that shipped 10 every month draws as an empty 10-to-10 line.
-function getRangesBySeries(packages, seriesName, floorAtZero = false) {
+// Liquid has no numeric min/max, hence deriving it here.
+function getRangesBySeries(packages, seriesName) {
 	return Object.fromEntries(
 		Object.entries(packages).map(([packageName, entry]) => {
 			let counts = entry[seriesName]?.counts || [];
 
 			return [packageName, counts.length ? {
-				min: floorAtZero ? 0 : Math.min(...counts),
+				min: Math.min(...counts),
 				max: Math.max(...counts),
 			} : null];
 		})
@@ -148,17 +115,14 @@ export default async function() {
 			fetchJson("report-sparkline-aggregate.json"),
 		]);
 
-		let sparklinesByPackage = padReleasesToCurrentMonth(sparklinesJson.packages);
-
 		return {
 			report,
 			...getRowsByPackage(report.projects),
 			neglectScoreMax: getNeglectScoreMax(report.projects),
-			sparklinesByPackage,
-			downloadsRangeByPackage: getRangesBySeries(sparklinesByPackage, "monthlyDownloads"),
-			releasesRangeByPackage: getRangesBySeries(sparklinesByPackage, "monthlyReleases", true),
-			cdnHitsRangeByPackage: getRangesBySeries(sparklinesByPackage, "monthlyCdnHits"),
-			cdnHitsTotalByPackage: getCdnHitsTotals(sparklinesByPackage),
+			sparklinesByPackage: sparklinesJson.packages,
+			downloadsRangeByPackage: getRangesBySeries(sparklinesJson.packages, "monthlyDownloads"),
+			cdnHitsRangeByPackage: getRangesBySeries(sparklinesJson.packages, "monthlyCdnHits"),
+			cdnHitsTotalByPackage: getCdnHitsTotals(sparklinesJson.packages),
 			sparklineAggregate: aggregateJson.monthlyReleases,
 		};
 	} catch(e) {
@@ -175,7 +139,6 @@ export default async function() {
 			neglectScoreMax: NEGLECT_DOMAIN_MIN,
 			sparklinesByPackage: {},
 			downloadsRangeByPackage: {},
-			releasesRangeByPackage: {},
 			cdnHitsRangeByPackage: {},
 			cdnHitsTotalByPackage: {},
 			sparklineAggregate: { start: "2018-01", counts: [] },

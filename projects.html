@@ -2,7 +2,6 @@
 title: Is this still being maintained??
 layout: layouts/pagealign.liquid
 appendix: page
-minimumPublishCountForSparkline: 6
 minimumSparklineMonths: 3
 minimumDownloads: 2500
 minimumCdnHits: 1000
@@ -207,7 +206,8 @@ modules:
 		margin-inline-end: 0;
 		font-size: .8333333333333em; /* 10px /12 */
 	}
-	a {
+	.recent-publishes-name {
+		min-width: 0;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
@@ -230,6 +230,14 @@ modules:
 .recent-publishes-version {
 	font-weight: 400;
 	color: var(--z-color-text-secondary);
+}
+.recent-publishes-version-separator {
+	margin-inline-end: .25em;
+}
+/* a pre-release is a different kind of ship than a stable one, worth telling apart at a glance */
+.version-prerelease {
+	--prerelease-color: hsl(45 85% 38%);
+	color: var(--prerelease-color);
 }
 #neglect-buckets {
 	--label-shift: 3px;
@@ -309,6 +317,9 @@ modules:
 		#neglect-buckets > li {
 			--bar-color: hsl(var(--neglect-hue) 55% 55%);
 		}
+		.version-prerelease {
+			--prerelease-color: hsl(50 90% 72%);
+		}
 	}
 }
 :root[data-theme="dark"] {
@@ -317,6 +328,9 @@ modules:
 	}
 	#neglect-buckets > li {
 		--bar-color: hsl(var(--neglect-hue) 55% 55%);
+	}
+	.version-prerelease {
+		--prerelease-color: hsl(50 90% 72%);
 	}
 }
 </style>
@@ -407,13 +421,13 @@ modules:
 {%- endfor %}
 </ul>
 
-{%- assign npmPublishes = neglectByProject | recentNpmPublishes: 24, true %}
+{%- assign npmPublishes = neglectByProject | recentNpmPublishes: 12, true %}
 {%- if npmPublishes.size > 0 %}
 <h4>Recent Publishes</h4>
 <ol class="recent-publishes">
 {%- for project in npmPublishes %}
 	{%- assign nameParts = project.packageName | split: "/" %}
-	<li class="neglect-score" style="--neglect-score: {{ project.score }}"><a href="{{ project.releaseUrl }}">{% if nameParts.size > 1 %}<span class="recent-publishes-scope">{{ nameParts[0] }}/</span>{{ nameParts[1] }}{% else %}{{ project.packageName }}{% endif %}<span class="recent-publishes-version">@{{ project.lastPublishVersion }}</span></a> <time-difference live format="narrow" mode="strip-suffix"><time datetime="{{ project.lastPublish }}" title="{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}">{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference><strong class="neglect{% if project.score < 1 %} neglect--seedling{% endif %}">{{ project.score | round }}%{% if project.score < 1 %}{% icon "fas:seedling" %}{% else %}{% icon "fas:skull" %}{% endif %}</strong></li>
+	<li class="neglect-score" style="--neglect-score: {{ project.score }}"><span class="recent-publishes-name"><a href="{{ project.releaseUrl }}">{% if nameParts.size > 1 %}<span class="recent-publishes-scope">{{ nameParts[0] }}/</span>{{ nameParts[1] }}{% else %}{{ project.packageName }}{% endif %}</a><span class="recent-publishes-version">{% for publish in project.publishes %}{% unless forloop.first %}<span class="recent-publishes-version-separator">,</span>{% endunless %}<a href="{{ publish.releaseUrl }}"{% if publish.version contains "-" %} class="version-prerelease"{% endif %}>{% if forloop.first %}@{% endif %}{{ publish.version }}</a>{% endfor %}</span></span> <time-difference live format="narrow" mode="strip-suffix"><time datetime="{{ project.lastPublish }}" title="{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}">{{ project.lastPublish | readableDateFromISO: "dd LLL yyyy" }}</time></time-difference><strong class="neglect{% if project.score < 1 %} neglect--seedling{% endif %}">{{ project.score | round }}%{% if project.score < 1 %}{% icon "fas:seedling" %}{% else %}{% icon "fas:skull" %}{% endif %}</strong></li>
 {%- endfor %}
 </ol>
 {%- endif %}
