@@ -1,62 +1,94 @@
 import 'dotenv/config';
 
+import fs from "node:fs";
 import { DateTime } from "luxon";
 import lodash from 'lodash';
-import Fetch, { AssetCache } from "@11ty/eleventy-fetch";
+import { AssetCache } from "@11ty/eleventy-fetch";
 
 import getBaseUrl from "../_includes/getBaseUrl.js";
-import getSocialMentions, { getPrivateBlueskyAuthors, getBlockedBlueskyAuthors } from "../_11ty/webmentions/social.js";
+import getSocialMentions, { getPrivateBlueskyAuthors, getBlockedBlueskyAuthors, htmlToText } from "../_11ty/webmentions/social.js";
 import getHackerNewsMentions from "../_11ty/webmentions/hackernews.js";
 import getLobstersMentions from "../_11ty/webmentions/lobsters.js";
 import getYoutubeMentions from "../_11ty/webmentions/youtube.js";
-import archive from "../_11ty/webmentions/archive.json" with { type: "json" };
 
 // Social posts from the last N days are refetched on every build
 const LIVE_DAYS = 60;
-const TOKEN = process.env.WEBMENTION_IO_TOKEN;
 const CACHE_DURATION = process.env.ELEVENTY_RUN_MODE === "serve" ? "2d" : "2h";
-const PER_PAGE = 1000;
+// Mentions of urls without a template, from _11ty/webmentions/import.js
+const LEFTOVERS_FILE = "_11ty/webmentions/leftovers.json";
+const IGNORED_DIRECTORIES = ["node_modules", "_site", ".cache", ".git", "_data", "_11ty"];
+const PROPERTIES = { likes: "like-of", reposts: "repost-of", bookmarks: "bookmark-of" };
+const COMMENT_PROPERTIES = { reply: "in-reply-to", mention: "mention-of" };
 
-// Webmentions received after the archive
-async function fetchNewWebmentionIo() {
-	if(!TOKEN) {
-		console.warn('[zachleat.com] unable to fetch webmentions: no access token specified in environment.');
-		return [];
+// Imported items back to webmention.io’s jf2 shape so the templates keep working
+function toEntry(item, key) {
+	let property = key === "comments" ? COMMENT_PROPERTIES[item.type] : PROPERTIES[key];
+	if(!property || !item.target) {
+		return;
 	}
-
-	let sinceId = Math.max(...archive.map(entry => entry["wm-id"]));
-	let results = [];
-	for(let page = 0;; page++) {
-		let feed = await Fetch(`https://webmention.io/api/mentions.jf2?domain=www.zachleat.com&token=${TOKEN}&since_id=${sinceId}&per-page=${PER_PAGE}&page=${page}`, {
-			type: "json",
-			duration: CACHE_DURATION,
-		});
-		let children = feed?.children || [];
-		results.push(...children);
-		if(children.length < PER_PAGE) {
-			break;
-		}
+	let { avatarUrl, ...author } = item.author || {};
+	let entry = {
+		type: "entry",
+		author: { type: "card", ...author, photo: avatarUrl || "" },
+		url: item.url,
+		published: item.date,
+		"wm-received": item.date,
+		"wm-id": item.id,
+		"wm-source": item.source,
+		"wm-target": item.target,
+		"wm-property": property,
+	};
+	if(item.private) {
+		entry["content-hidden"] = true;
+	} else if(item.content) {
+		entry.content = { text: htmlToText(item.content) };
 	}
-
-	return results;
+	return entry;
 }
 
-const isBridgy = entry => entry["wm-source"]?.startsWith("https://brid.gy/");
+// webmention.io data files written next to templates by _11ty/webmentions/import.js
+function getImportedWebmentions() {
+	let entries = [];
+	let missingTargets = 0;
+	let files = fs.globSync("**/*.json", { exclude: path => IGNORED_DIRECTORIES.includes(path) || path.endsWith("package.json") || path.endsWith("package-lock.json") });
+	if(fs.existsSync(LEFTOVERS_FILE)) {
+		files.push(LEFTOVERS_FILE);
+	}
+	for(let file of files) {
+		let data = JSON.parse(fs.readFileSync(file, "utf8"));
+		for(let key of ["comments", ...Object.keys(PROPERTIES)]) {
+			if(!Array.isArray(data?.[key])) {
+				continue;
+			}
+			for(let item of data[key]) {
+				if(item.via !== "webmention") {
+					continue;
+				}
+				let entry = toEntry(item, key);
+				if(entry) {
+					entries.push(entry);
+				} else if(!item.target) {
+					missingTargets++;
+				}
+			}
+		}
+	}
+	if(missingTargets) {
+		console.warn(`[zachleat.com] Skipped ${missingTargets} imported webmentions without a target (rerun the import with @11ty/import that keeps \`target\`).`);
+	}
+	return entries;
+}
 
 async function fetchWebmentions() {
-	let recent = await fetchNewWebmentionIo().catch(e => {
-		console.warn("[zachleat.com] Unable to fetch webmention.io:", e);
-		return [];
-	});
+	let imported = getImportedWebmentions();
 
 	// Bridgy copies only supply dates for likes and reposts (the social APIs don’t have them)
-	let knownDates = Object.fromEntries([...archive, ...recent.filter(isBridgy)].map(entry => [entry.url, entry["wm-received"]]));
+	let knownDates = Object.fromEntries(imported.map(entry => [entry.url, entry["wm-received"]]));
 	let blockedAuthors = await getBlockedBlueskyAuthors().catch(e => {
 		console.warn("[zachleat.com] Unable to fetch Bluesky blocks:", e);
 		return new Set();
 	});
 	let live = await getSocialMentions({ days: LIVE_DAYS, knownDates, blockedAuthors });
-	live.push(...recent.filter(entry => !isBridgy(entry)));
 	live.push(...await getHackerNewsMentions().catch(e => {
 		console.warn("[zachleat.com] Unable to fetch Hacker News:", e);
 		return [];
@@ -70,9 +102,9 @@ async function fetchWebmentions() {
 		return [];
 	}));
 
-	// Live data wins over archived copies of the same like, repost, or reply
+	// Live data wins over imported copies of the same like, repost, or reply
 	let liveKeys = new Set(live.map(entry => `${entry.url} ${entry["wm-target"]}`));
-	let results = [...archive.filter(entry => !liveKeys.has(`${entry.url} ${entry["wm-target"]}`)), ...live];
+	let results = [...imported.filter(entry => !liveKeys.has(`${entry.url} ${entry["wm-target"]}`)), ...live];
 
 	results = results.filter(entry => !blockedAuthors.has(entry.author?.url?.toLowerCase()));
 

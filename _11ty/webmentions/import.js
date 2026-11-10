@@ -74,7 +74,8 @@ importer.addSource("webmentions", {
 	// Data file paths swap the extension for .json
 	filepathFormat: (url, fallbackPath) => {
 		let template = getTemplate(fallbackPath);
-		return template ? template.replace(/\.11ty\.js$/, ".js") : false;
+		// Urls without a template share one leftovers file
+		return template ? template.replace(/\.11ty\.js$/, ".js") : "_11ty/webmentions/leftovers.json";
 	},
 });
 

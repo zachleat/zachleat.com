@@ -31,8 +31,8 @@ export function getTargets(urls = []) {
 	return [...targets];
 }
 
-function htmlToText(html = "") {
-	html = html.replace(/<\/p>\s*<p>/g, "\n\n").replace(/<br\s*\/?>/g, "\n");
+export function htmlToText(html = "") {
+	html = html.replace(/<\/p>\s*<p>/g, "\n\n").replace(/<br\s*\/?>\n?/g, "\n");
 	return decode(sanitizeHTML(html, { allowedTags: [], allowedAttributes: {} })).trim();
 }
 
