@@ -24,9 +24,11 @@
 				"url": "https://awfulwoman.com/about/",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/176201386e499082b9e9d35655330db6e5035669230f185976510c53bba28b53.jpg"
 			},
-			"date": "2016-02-03T19:39:04.000Z",
+			"date": "2016-02-04T01:39:04.000Z",
 			"content": "<a class=\"h-cite u-bookmark-of\" href=\"http://www.zachleat.com/web/critical-webfonts/\"><img class=\"u-photo\" src=\"https://awfulwoman.com/bookmarks/2016/02/03/bq8qj328/card.webp\" alt=\"\" width=\"800\" height=\"420\" />\n  <span class=\"p-name\">Critical Web Fonts—zachleat.com</span>\n  <span class=\"p-publication\">Zach Leatherman</span>\n  <span class=\"p-summary\">A post by Zach Leatherman (zachleat)</span>\n</a>\n    \n    \n\n    \n\n    \n\n    \n\n    \n\n    \n    <p><a href=\"http://www.zachleat.com/web/critical-webfonts/\">Read Zach Leatherman on Zach Leatherman</a><span class=\"u-remove\"> and </span><a href=\"https://web.archive.org/web/http://www.zachleat.com/web/critical-webfonts/\">Archived copy</a></p>",
 			"type": "mention",
+			"source": "https://awfulwoman.com/bookmarks/2016/02/03/bq8qj328/",
+			"target": "http://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +42,8 @@
 			"date": "2019-09-03T14:54:57.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "http://anna.borsaendeks.com/the-web-fonts-preloaded/",
+			"target": "https://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -53,6 +57,8 @@
 			"date": "2019-09-03T14:55:11.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "http://anna.borsaendeks.com/trying-out-a-new-font-stack-zachleat-com/",
+			"target": "http://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -66,6 +72,8 @@
 			"date": "2019-09-03T14:57:47.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "http://anna.borsaendeks.com/web-font-anti-pattern-data-uris-zachleat-com/",
+			"target": "http://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -76,6 +84,8 @@
 			"date": "2020-04-22T23:29:21.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://wpjohnny.com/the-half-sec-wordpress-speed-optimization-guide/",
+			"target": "https://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -86,6 +96,8 @@
 			"date": "2020-04-30T08:28:21.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://blog.dreamstart.com.tw/uncategorized/%e7%b5%82%e6%a5%b5wordpress%e9%80%9f%e5%ba%a6%e5%84%aa%e5%8c%96%e6%8c%87%e5%8d%97/",
+			"target": "https://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -96,6 +108,8 @@
 			"date": "2020-04-30T08:29:39.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://blog.dreamstart.com.tw/uncategorized/wordpress-speed-optimization/",
+			"target": "https://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -106,6 +120,8 @@
 			"date": "2020-04-30T08:30:30.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://blog.dreamstart.com.tw/wordpress/wordpress-speed-optimization/",
+			"target": "https://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -116,6 +132,8 @@
 			"date": "2021-05-10T05:15:46.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://kryptonsolid.com/herramientas-y-recursos-para-una-tipografia-web-mas-significativa/",
+			"target": "http://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -126,6 +144,8 @@
 			"date": "2021-06-30T16:44:36.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://kryptonsolid.com/herramientas-y-recursos-para-una-tipografia-web-mas-significativa-smashing-magazine/",
+			"target": "http://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		},
 		{
@@ -136,6 +156,8 @@
 			"date": "2022-11-13T14:11:25.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://wordpress-510621-2976382.cloudwaysapps.com/the-ultimate-wordpress-speed-optimization-guide/",
+			"target": "https://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		}
 	],
@@ -148,6 +170,8 @@
 				"name": "flyingfisch",
 				"url": "https://lobste.rs/u/flyingfisch"
 			},
+			"source": "https://lobste.rs/s/df7xsa",
+			"target": "http://www.zachleat.com/web/critical-webfonts/",
 			"via": "webmention"
 		}
 	]

@@ -12,6 +12,8 @@
 			"date": "2024-08-06T21:15:49.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Another thing with Vercel is their services out-of-the-box are often not price optimized.</p><p>For example, \"Speed Insights\" is great, but by default they assume you want 100% of user visits. You can; however, manually reduce that. Their network monitoring tool is worse in that it only allows 100% of requests.</p><p>With \"Speed Insights\", you only need ~5,000 points/month, not 100% of visits. That tool is really helpful, but for a medium-sized site, nobody will pay $300 / month for extra data.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917148862086992",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -26,6 +28,8 @@
 			"date": "2024-08-06T21:21:31.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Agreed on the Vercel higher vCPU is not needed unless you're memory constrained. For a passive screenshot tool, time is not a problem. I've had to use the performance vCPU for applications where puppeteer was running on a user action. (<a href=\"https://gist.github.com/kettanaito/56861aff96e6debc575d522dd03e5725?permalink_comment_id=5047718#gistcomment-5047718\"><span>https://</span><span>gist.github.com/kettanaito/568</span><span>61aff96e6debc575d522dd03e5725?permalink_comment_id=5047718#gistcomment-5047718</span></a>)</p><p>Vercel is super easy to setup. AWS is at the opposite. I just hope sometihng like Coolify, but more-serverless focused comes about.</p>\n<a href=\"https://gist.github.com/kettanaito/56861aff96e6debc575d522dd03e5725\">Chromium on Vercel (serveless)</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917170875871774",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +44,8 @@
 			"date": "2024-08-06T21:23:02.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Thanks for the write up here. Appreciate it.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917176825778378",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -54,6 +60,8 @@
 			"date": "2024-08-06T21:27:35.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> this was a very interesting read Zach.</p><p>At the company that I work for, we received a surprisingly high bill from Vercel and after looking closely into the usage breakdown we noticed that the number of used cache units is so so so high. Too high to be even possible taking into consideration our revalidation interval and number of pages. Unfortunately Vercel CS is not able to give us a detailed breakdown of where we spent these cache units ????‍♂️</p><p>PS. I love the term „convenience tax” !</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917195043034278",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -68,6 +76,8 @@
 			"date": "2024-08-06T21:30:03.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> There are so many ways to do things in AWS! If you eventually want a friendlier first-party package/deploy story that isn't the result of clicking around the console, check out SAM. Also not sure how many requests per month are hitting it, but you could eliminate API GW in favor of a Lambda function URL and save those costs. Come on in, the water's fine!<br /><a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html\"><span>https://</span><span>docs.aws.amazon.com/serverless</span><span>-application-model/latest/developerguide/serverless-getting-started-hello-world.html</span></a> <br /><a href=\"https://docs.aws.amazon.com/lambda/latest/dg/urls-configuration.html\"><span>https://</span><span>docs.aws.amazon.com/lambda/lat</span><span>est/dg/urls-configuration.html</span></a></p>\n<a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html\">Tutorial: Deploy a Hello World application with AWS SAM - AWS Serverless Application Model</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917204450544388",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -82,6 +92,8 @@
 			"date": "2024-08-06T21:32:08.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://bensie.social/@james\" class=\"u-url\">@<span>james</span></a></span> oh fascinating. I’ll definitely have a look at those—I’ve only just started!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917212581253455",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -96,6 +108,8 @@
 			"date": "2024-08-06T21:34:23.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@chris_hayes\" class=\"u-url\">@<span>chris_hayes</span></a></span> yes! I’ve been looking into some things that help with AWS deployment too (e.g. arc.codes or serverless.com)</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917221470556891",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -110,6 +124,8 @@
 			"date": "2024-08-06T21:34:35.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> query - you shared an estimated cost on Vercel, what is the estimated cost of Lambda?</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917222327050771",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -124,6 +140,8 @@
 			"date": "2024-08-06T21:34:37.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mas.to/@jamesdoc\" class=\"u-url\">@<span>jamesdoc</span></a></span> you’re welcome!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917222372731244",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -138,6 +156,8 @@
 			"date": "2024-08-06T21:37:27.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@pawelgrzybek\" class=\"u-url\">@<span>pawelgrzybek</span></a></span> yeah, more data is needed to justify some of the numbers I was seeing. They didn’t compare with my experience on Netlify or AWS</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917233515287498",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -152,6 +172,8 @@
 			"date": "2024-08-06T21:38:20.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@raymondcamden\" class=\"u-url\">@<span>raymondcamden</span></a></span> so far the projected usage is still under the free tier for the month!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917236942733505",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -166,6 +188,8 @@
 			"date": "2024-08-06T21:41:13.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> nice! i dont think you mentioned that, i would. (its also 99% possible you did and i missed it.)</p><p>btw, _damn_ good article!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917248591292145",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -180,6 +204,8 @@
 			"date": "2024-08-06T21:54:49.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://bensie.social/@james\" class=\"u-url\">@<span>james</span></a></span> </p><p><a href=\"https://sst.dev\"><span>https://</span><span>sst.dev</span><span></span></a> is pretty nice as well.</p>\n<a href=\"https://sst.dev/\">SST</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917301876428185",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -194,6 +220,8 @@
 			"date": "2024-08-06T21:55:17.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@raymondcamden\" class=\"u-url\">@<span>raymondcamden</span></a></span> thank you! I just pushed a small note about the AWS cost</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917303656419585",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -208,6 +236,8 @@
 			"date": "2024-08-06T22:00:20.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.jdotc.xyz/@jgchristopher\" class=\"u-url\">@<span>jgchristopher</span></a></span> <span class=\"h-card\"><a href=\"https://bensie.social/@james\" class=\"u-url\">@<span>james</span></a></span> very nice! I’ve also been pointed at <a href=\"https://www.serverless.com/\"><span>https://www.</span><span>serverless.com/</span><span></span></a> and <a href=\"https://arc.codes/\"><span>https://</span><span>arc.codes/</span><span></span></a> which seem like similar abstractions</p>\n<a href=\"https://www.serverless.com/\">Serverless: Zero-Friction Serverless Apps On AWS Lambda &amp; Beyond.</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917323494218907",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -222,6 +252,8 @@
 			"date": "2024-08-06T22:01:10.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@raymondcamden\" class=\"u-url\">@<span>raymondcamden</span></a></span> I'm over here with Cloudflare Pages, Digital Ocean for my admin, Supabase, B2, bunny.net, Echofeed, Feedpress, Plausible analytics ????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917326803048980",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -236,6 +268,8 @@
 			"date": "2024-08-06T22:05:34.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://social.lol/@cory\" class=\"u-url\">@<span>cory</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I've liked Cloudflares serverless stuff a lot. Their hosting has been on my \"to test and blog\" list for a while</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917344273527004",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -250,6 +284,8 @@
 			"date": "2024-08-06T22:07:23.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@raymondcamden\" class=\"u-url\">@<span>raymondcamden</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> yeah, I quite like their workers stuff and I'm well below the paid threshold for those. I've got one for analytics, contact form, now playing display, schedule rebuilds and music tracking — 100,000 runs a day is super generous for the *tiny* scale I'm dealing with. ????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917351252279847",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -264,6 +300,8 @@
 			"date": "2024-08-06T23:00:33.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> “ because usage is priced via GB-Hrs, 1 vCPU should use 1 GB of memory. Instead, 1 vCPU is 1.7 GB of memory and 1000 GB-Hrs is actually 588 Hours of usage.”</p><p>You know how washing powder people tell you “use one cup” but the cup they provide you has an almost invisible mark halfway up saying “1 cup” and if you fill the cup it’s actually 1⅔ cups? Yeah.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112917560416816583",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -278,6 +316,8 @@
 			"date": "2024-08-07T11:02:39.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://toot.cafe/@baldur\" class=\"u-url\">@<span>baldur</span></a></span> wait... why are you rendering screenshots /that/ often?</p><p>that's a lot of hours. shouldn't you render images once on build (inside CICD)?</p><p>or, shouldn't the lambda only invoke once (again, on build, preferably)</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920399767059145",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -292,6 +332,8 @@
 			"date": "2024-08-07T11:03:21.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> very nice! Small thing - was playing around and this syntax in your documentation always gives me 404</p><p><a href=\"https://v1.screenshot.11ty.dev/:url/\"><span>https://</span><span>v1.screenshot.11ty.dev/:url/</span><span></span></a></p><p>eg</p><p><a href=\"https://v1.screenshot.11ty.dev/https%3A%2F%2Fgov.uk/\"><span>https://</span><span>v1.screenshot.11ty.dev/https%3</span><span>A%2F%2Fgov.uk/</span></a></p><p>it works if I add the other url params (size)</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920402502883311",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -306,6 +348,8 @@
 			"date": "2024-08-07T11:05:04.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> also wondering if you considered Cloudflare, I agree AWS is painful</p><p><a href=\"https://developers.cloudflare.com/browser-rendering/get-started/screenshots/\"><span>https://</span><span>developers.cloudflare.com/brow</span><span>ser-rendering/get-started/screenshots/</span></a></p>\n<a href=\"https://developers.cloudflare.com/browser-rendering/get-started/screenshots/\">Deploy a Browser Rendering Worker · Browser Rendering docs</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920409238182518",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -320,6 +364,8 @@
 			"date": "2024-08-07T11:34:29.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p>\"This is a desolate place where developer experience goes to die.\"</p><p>Lol ????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920524890813166",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -334,6 +380,8 @@
 			"date": "2024-08-07T12:00:54.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Still baffled on how different the GB-Hrs count is on Vercel ????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920628883198112",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -348,6 +396,8 @@
 			"date": "2024-08-07T12:40:21.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Btw. what about the equivalent in EC2 instances that run all year?</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920783939339186",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -362,6 +412,8 @@
 			"date": "2024-08-07T13:00:03.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@deadparrot\" class=\"u-url\">@<span>deadparrot</span></a></span> <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> roughly $20/mo</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920861647163991",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -376,6 +428,8 @@
 			"date": "2024-08-07T13:34:24.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@brianleroux\" class=\"u-url\">@<span>brianleroux</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@deadparrot\" class=\"u-url\">@<span>deadparrot</span></a></span> I haven’t used or priced EC2 so I’ll defer to Brian ????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920996348752433",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -390,6 +444,8 @@
 			"date": "2024-08-07T13:34:55.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@deadparrot\" class=\"u-url\">@<span>deadparrot</span></a></span> Same. *Something* is wrong there.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920998420351409",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -404,6 +460,8 @@
 			"date": "2024-08-07T14:07:03.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@sia\" class=\"u-url\">@<span>sia</span></a></span> ????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112921124753400536",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -418,6 +476,8 @@
 			"date": "2024-08-07T14:08:21.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@joelanman\" class=\"u-url\">@<span>joelanman</span></a></span> a little bit! I know they have their own fork of puppeteer that might have worked nicely here <a href=\"https://github.com/cloudflare/puppeteer\"><span>https://</span><span>github.com/cloudflare/puppetee</span><span>r</span></a></p>\n<a href=\"https://github.com/cloudflare/puppeteer\">GitHub - cloudflare/puppeteer: Puppeteer Core fork that works with Cloudflare Browser Workers</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112921129862908058",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -432,6 +492,8 @@
 			"date": "2024-08-07T14:26:39.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@deadparrot\" class=\"u-url\">@<span>deadparrot</span></a></span> no need these days! Maybe cheaper at high scale (though arguably not given maintenance cost way higher)</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112921201893574387",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -446,6 +508,8 @@
 			"date": "2024-08-07T14:32:42.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I'm sure there's a good answer to this but is there a reason SVG isn't supported by opengraph? Seems like it'd be a nice way to point to a composed graphic and avoid these screenshot services (however genuinely cool they are)</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112921225717165564",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -460,6 +524,8 @@
 			"date": "2025-07-14T15:05:37.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://social.lol/@robb\" class=\"u-url\">@<span>robb</span></a></span> <span class=\"h-card\"><a href=\"https://indieweb.social/@bobmonsour\" class=\"u-url\">@<span>bobmonsour</span></a></span> sorry I was OOO last week! the service does run on vercel but I have added a amazon cloudfront caching layer in front of it to reduce vercel usage, which was necessary for reasons described here: <a href=\"https://www.zachleat.com/web/serverless-cost/\"><span>https://www.</span><span>zachleat.com/web/serverless-co</span><span>st/</span></a></p>\n<a href=\"https://www.zachleat.com/web/serverless-cost/\">The Sneaky Costs of Scaling Serverless—zachleat.com</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@bobmonsour@indieweb.social/114852202947545376/114852202947545376",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		}
 	],
@@ -473,6 +539,8 @@
 				"url": "https://mas.to/@jamesdoc",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8041e15ef9a90daf92e91c247831ed5439ee5743a54c07089aaf8795da160e24.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109409738484481647",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -484,6 +552,8 @@
 				"url": "https://mastodon.social/@vsaw",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/11938521f392136e2c92384bc9dc78fcf7db54517a130c893418d97fd00a7904.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109708945259467830",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -495,6 +565,8 @@
 				"url": "https://phpc.social/@phoopee3",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0367a28532cb9b7fc5e789af80e70acffd9fd528850ae70ff2c04a51d2a2167a.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109401888303915556",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -506,6 +578,8 @@
 				"url": "https://toot.works/@joe",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109314700399157655",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -517,6 +591,8 @@
 				"url": "https://fosstodon.org/@kcaran",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c18d3a6167cac424b053d689ccf47001a1f4ac5cf32c1f8b9dde2034ca6f1b01.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/110848344370089422",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -528,6 +604,8 @@
 				"url": "https://mstdn.ca/@atomicker",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109859310647870018",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -539,6 +617,8 @@
 				"url": "https://fosstodon.org/@eleventy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8e11fc7c24ecef298727405f9dd171e91253a662cb92307f75997fdc4d2ba139.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109325867586024180",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -550,6 +630,8 @@
 				"url": "https://social.lol/@zerocaps",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/33287fa9cdfd0ae207588a5aa06a7be3611a268ecaa9f7e54b956243762c088a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109289302894824118",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -561,6 +643,8 @@
 				"url": "https://fosstodon.org/@deadwisdom",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/32743710c40dc2820e1eeff1df902006fbd9e4e5d629e0729462c56a62268d07.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109395010643324801",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -572,6 +656,8 @@
 				"url": "https://mastodon.social/@jawnsy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/24d80dc476c4f043a5ac0e53b788da15edf36ca92457fc83a0327f022dc402ab.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109690794724729924",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -583,6 +669,8 @@
 				"url": "https://mastodon.social/@davatron5000",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109292781915117780",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -594,6 +682,8 @@
 				"url": "https://mastodon.cthos.dev/@cthos",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/16d45e0bfdca263f58a19f9e2cce4aa69fdac43001dd4eac276a4f3bfd635024.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109322028040622495",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -605,6 +695,8 @@
 				"url": "https://fosstodon.org/@chris_hayes",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/55211c5d74ccfab5e013d06b9a1d18b52c24cd557cf8f0b36c9efe4562092929.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109374599696822526",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -616,6 +708,8 @@
 				"url": "https://indieweb.social/@brianleroux",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109314763370860389",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -627,6 +721,8 @@
 				"url": "https://ruby.social/@timriley",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c8f6edce61707af2cb6b746efc85e1f70db4006e083689a46a818447ff107eb1.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109384376795918522",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -638,6 +734,8 @@
 				"url": "https://fosstodon.org/@webaware",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/41733c0f680ba1915fc7882a2b90eb76746c9304d7280bf16f00e0e2e9644700.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109814039266728194",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -649,6 +747,8 @@
 				"url": "https://infosec.exchange/@d3v1an7",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fb7a9c5c9b08e92ce912b2bd596ddced9a86f164602bf35a97d13da2b1709b95.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109991051044602132",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -660,6 +760,8 @@
 				"url": "https://fosstodon.org/@krinkle",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109292532015873530",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -671,6 +773,8 @@
 				"url": "https://mastodon.social/@cheeaun",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fa755647a51dd7e0f1211bd4477da5f862459350b4f063ac31acec113fbb4b55.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109301577128986273",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -682,6 +786,8 @@
 				"url": "https://hachyderm.io/@haliphax",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/228b77d961c69780574b98a0db6e59127abebe4467d49471d5e20ae089084284.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109369141298839313",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -693,6 +799,8 @@
 				"url": "https://indieweb.social/@mariohamann",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c31eb7e639446b600869fc9fff90205bf2f3143db8b87031c50ce8a40d6533c0.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109639115399589709",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -704,6 +812,8 @@
 				"url": "https://mastodon.social/@AbsolutelyDerek",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/111145142301817092",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -715,6 +825,8 @@
 				"url": "https://bell.bz/@andy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cea017ea6e66e1ee7d2f97f7278d83b1aa6a13ccb195c71c06a3e7b04d9bdfa0.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109365871123336966",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -726,6 +838,8 @@
 				"url": "https://m.webtoo.ls/@swithinbank",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/54b10e5e19854635728431367b3e48491e503ecd8e0555fe478b58157498a569.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109933540955881814",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -737,6 +851,8 @@
 				"url": "https://seocommunity.social/@simoncox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109352939518629968",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -748,6 +864,8 @@
 				"url": "https://social.mottokrosh.com/@mottokrosh",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/65e8e333b2c853c15f1db16680518c142ff15807d8a0f6e7b451b23a6851ee82.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112009616148484448",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -759,6 +877,8 @@
 				"url": "https://mastodon.social/@mvsde",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109289744030118387",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -770,6 +890,8 @@
 				"url": "https://hachyderm.io/@joelanman",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e79a3bcf5bf99c12424cba3ee3818acd5550fe3b95bd406462f8f2fb00a60c7c.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109772817736079331",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -781,6 +903,8 @@
 				"url": "https://front-end.social/@mxbck",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9106ed0ced6012e33cc0c4dffa224225fdf1bd29d370bf3e91ad36959024d5e2.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109353056493159698",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -792,6 +916,8 @@
 				"url": "https://writing.exchange/@erlend",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9aa8ae68c7c9130db603e5ff853177a7399874bcf95ec0069766037e3279fbee.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/110235940147753990",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -803,6 +929,8 @@
 				"url": "https://mastodon.social/@ricmac",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ab221a8d7145151faa4499cc3a190863728697ec4fe3094965bfd451cd78cdcd.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109296199665384546",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -814,6 +942,8 @@
 				"url": "https://mastodon.social/@matspod",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6122b88f1a5dac9c452aaae78227add62a6c7e227d7dab04e874d663b64dfedb.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920712689733642",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -825,6 +955,8 @@
 				"url": "https://phpc.social/@cxj",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/848be791110e90e7366e16072fa24129bbb26ca42bde94aa77cae0210e7a420f.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/110079716584839280",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -836,6 +968,8 @@
 				"url": "https://todon.eu/@jalcine",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1931311458a73aeb0e8785a7cc1079b97cf0171ef32ccd45d4e1626885c68b1.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109292527270971438",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -847,6 +981,8 @@
 				"url": "https://webperf.social/@SergeyChe",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4c6a62065cadacddce185cde13d2fa791b429ef4f982fdf4abcbd4d57f526211.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109384585822121358",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -858,6 +994,8 @@
 				"url": "https://mastodon.online/@0x33",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3542b5cb1f7db7db806f1d18e5d1deccecbacf0839b59bdae5ab7ce93d483cc6.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109923263705956162",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -869,6 +1007,8 @@
 				"url": "https://indieweb.social/@bobmonsour",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b29612c57f91493bea28f611bfba470ca27d73af355df4040d9dc121940e1c07.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/114852202896083736/109383215820991530",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		}
 	],
@@ -882,6 +1022,8 @@
 				"url": "https://mastodon.social/@raymondcamden",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1ddb97091dd0bdc5385c4527b26663b5f999facfe47249e02270a3f48303fbf.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109303656530857114",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -893,6 +1035,8 @@
 				"url": "https://fosstodon.org/@eleventy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8e11fc7c24ecef298727405f9dd171e91253a662cb92307f75997fdc4d2ba139.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109325867586024180",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -904,6 +1048,8 @@
 				"url": "https://social.lol/@irfan",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c51f6a107e82cde55a9504f1091b9edeedba88aa113d10a96f734e94164edb11.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109855922829452273",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -915,6 +1061,8 @@
 				"url": "https://fosstodon.org/@chris_hayes",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/55211c5d74ccfab5e013d06b9a1d18b52c24cd557cf8f0b36c9efe4562092929.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109374599696822526",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -926,6 +1074,8 @@
 				"url": "https://fosstodon.org/@hexagoncircle",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d0c8c89c9b3e680ce9085c78a886b24ad3edf981c8740cbe7bcaf6d885d09273.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109348282587430600",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -937,6 +1087,8 @@
 				"url": "https://indieweb.social/@brianleroux",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109314763370860389",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -948,6 +1100,8 @@
 				"url": "https://mas.to/@akos",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2c16d0d0e852718bb73a127a9b6d3f0a64ca4c7a654416cd0452fc511d932e.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109478681618641465",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -959,6 +1113,8 @@
 				"url": "https://mastodon.social/@dstaley",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f53e743e6533b0a1e80bd1af870dbb81bf9311f1f039fc6eb60e0404c04d664c.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109572444381000867",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -970,6 +1126,8 @@
 				"url": "https://narrativ.es/@janl",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d1630de1028ec04a96edcda4ee4b4be17305c7a4869045167c37e2124cbc7960.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109728508243188621",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -981,6 +1139,8 @@
 				"url": "https://t.number5.dev/@number5",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0ec5b5022ba8f3cb4207a1c26004b68835fa88b0f351347a69b2316ccc018dd2.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109807167545890522",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -992,6 +1152,8 @@
 				"url": "https://toot.community/@axeleroy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bc96ced02afd288af441cc3d4daef1c49bbdbd7e7acff827bf8cb4ca63a29dbe.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112198141713279528",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -1003,6 +1165,8 @@
 				"url": "https://bell.bz/@andy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cea017ea6e66e1ee7d2f97f7278d83b1aa6a13ccb195c71c06a3e7b04d9bdfa0.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109365871123336966",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -1014,6 +1178,8 @@
 				"url": "https://mastodon.social/@mvsde",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109289744030118387",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -1025,6 +1191,8 @@
 				"url": "https://tech.lgbt/@risottobias",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/62cf81861244b946e837e2052375d6ef597c477908d19aef4cd9751b9dbc5682.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109354023502002658",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -1036,6 +1204,8 @@
 				"url": "https://front-end.social/@mxbck",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9106ed0ced6012e33cc0c4dffa224225fdf1bd29d370bf3e91ad36959024d5e2.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109353056493159698",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -1047,6 +1217,8 @@
 				"url": "https://toot.cafe/@baldur",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cc8554ba583793b416ccbb17bc1d574b8c60c5e53c11aabef6c9a8f806a5d4e2.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109313345749203632",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -1058,6 +1230,8 @@
 				"url": "https://infosec.exchange/@cryptael",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ab96c56f3fccf03a824156f958e915ce6c5d21e4bcd87d6fc3b450e1a3b988e5.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920576049667857",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -1069,6 +1243,8 @@
 				"url": "https://mastodon.social/@matspod",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6122b88f1a5dac9c452aaae78227add62a6c7e227d7dab04e874d663b64dfedb.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/112920712689733642",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -1080,6 +1256,8 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/112917087819399708/109286461031266152",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		},
 		{
@@ -1091,6 +1269,8 @@
 				"url": "https://bsky.app/profile/bell.bz",
 				"avatarUrl": "https://avatars.webmention.io/lionsmane.us-east.host.bsky.network/97eb0977619eb2cdb07bce4cc637630da8a2dccdd7eb05b7af9bdb9f064adf49.jpg"
 			},
+			"source": "https://bsky.brid.gy/convert/web/at://did:plc:pzgvqg4ihnaihkrpmxqz5pu6/app.bsky.feed.repost/3kz5op5mfks2u",
+			"target": "https://www.zachleat.com/web/serverless-cost/",
 			"via": "webmention"
 		}
 	]

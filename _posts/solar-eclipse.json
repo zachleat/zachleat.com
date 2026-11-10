@@ -12,6 +12,8 @@
 			"date": "2026-09-14T16:24:25.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> At least you namespace it when you publish to npm.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/117270319303365141",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -26,6 +28,8 @@
 			"date": "2026-09-14T16:27:57.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p>lovely!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/117270333220729149",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +44,8 @@
 			"date": "2026-09-14T16:37:11.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://sunny.garden/@knowler\" class=\"u-url\">@<span>knowler</span></a></span> it’s gotta have that warning on it</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/117270369497752833",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -54,6 +60,8 @@
 			"date": "2026-09-14T16:37:25.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://universeodon.com/@mrose\" class=\"u-url\">@<span>mrose</span></a></span> thanks Mitch! it was a team effort!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/117270370408980960",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -68,6 +76,8 @@
 			"date": "2026-09-14T16:55:00.000Z",
 			"content": "<p>thank you to <span class=\"h-card\"><a href=\"https://c.im/@cwilcox808\" class=\"u-url\">@<span>cwilcox808</span></a></span> for the collab!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/117270439577998932",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -82,6 +92,8 @@
 			"date": "2026-09-14T20:00:43.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <br />You bet. 👍</p><p>On your site, I noticed that when CSS is turned off, the word \"Auto\" is always displayed, regardless of state.</p><p>Also,  the solar eclipse toggle doesn't do anything visible while CSS is off , the site uses whatever `prefers-color-scheme` says. This makes sense to me and perhaps the button could reflect that. <br />If you wanted it to do something visible, you could make it edit the content in &lt;meta name=\"color-scheme\"&gt; to force a color-scheme.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117270291669504711/117271169827915322",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -96,6 +108,8 @@
 			"date": "2026-09-15T14:49:15.000Z",
 			"content": "in case you want more feedback 😅<br>\nimo the separator makes it a bit ambiguous to what &quot;Auto&quot; is referring to, and i first read it like the toggle thinks the current selection is Auto, but it&apos;s for switching _to_ light/auto. maybe (auto) in quotes without separator would work better?",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/at%253A%252F%252Fdid%253Aplc%253Ahi2as635pg63iytfw53yvnjl%252Fapp.bsky.feed.post%252F3mvkuntq2ns2d",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -110,6 +124,8 @@
 			"date": "2026-09-15T14:54:09.000Z",
 			"content": "I was hoping this would turn your site to dark mode, but only when your location is experiencing an eclipse.",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/at%253A%252F%252Fdid%253Aplc%253Aeahpcxuj4czenarsbokdkdqc%252Fapp.bsky.feed.post%252F3mvkuwluqrk2v",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -124,6 +140,8 @@
 			"date": "2026-09-15T14:58:30.000Z",
 			"content": "…oh my god",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvkv6eekrs22",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -138,6 +156,8 @@
 			"date": "2026-09-15T15:01:10.000Z",
 			"content": "For anyone who wants to implement this <a href=\"https://aa.usno.navy.mil/data/api#soleclipse\">aa.usno.navy.mil/data/api#sol...</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/at%253A%252F%252Fdid%253Aplc%253Aeahpcxuj4czenarsbokdkdqc%252Fapp.bsky.feed.post%252F3mvkvd537tc23",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		}
 	],
@@ -151,6 +171,8 @@
 				"url": "https://mastodon.social/@JPKCom",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/109779197194734817",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -162,6 +184,8 @@
 				"url": "https://c.im/@piero",
 				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/113/810/181/226/898/908/original/4bfabe1289ca3c49.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/113810181226898908",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -173,6 +197,8 @@
 				"url": "https://bsky.app/profile/tachikoma.elsewhereunbound.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:mpdezz4nkre7vyift2rttggl/bafkreiai65urrdxdsobsewygaq6kpa7726lhr6a2xurfje6be7yokl2ofy"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Ampdezz4nkre7vyift2rttggl",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -184,6 +210,8 @@
 				"url": "https://bsky.app/profile/tynanpurdy.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ayddqghxhciedbaofoxkcbs/bafkreie56qtqmtp5iu56zqqjkvwhvzqcudtsbetgs2joaowvuljbcluvze"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253A6ayddqghxhciedbaofoxkcbs",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -195,6 +223,8 @@
 				"url": "https://bsky.app/profile/cgambledev.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:7le3gpdvacl6bx2zfg62k2vc/bafkreihrntoyrfsruy7u7b5ro6zmv5tk7mfyofjl4hys4ad3g4ozpxopbe"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253A7le3gpdvacl6bx2zfg62k2vc",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -205,6 +235,8 @@
 				"url": "https://bsky.app/profile/chris-strelioff.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:2d2al2zpyaf3rlwq4hmawgea/bafkreigbnuadiehrjz4zxa7ai5utswvigtbpsgeidkrbgl7tedcrmxcqbu"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253A2d2al2zpyaf3rlwq4hmawgea",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -216,6 +248,8 @@
 				"url": "https://bsky.app/profile/tfedder.de",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:a64baelxsmvy6aonnbfhbirv/bafkreigcjhsxk6uz4plibvdto6t23vicadmispnvgq2hlpj23x2fyilngy"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Aa64baelxsmvy6aonnbfhbirv",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -227,6 +261,8 @@
 				"url": "https://bsky.app/profile/schul.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:3k7dfznzs5phrcafflalkaou/bafkreig3mugtjwdsdel35yau524jvaxbr42knyk4q6uv2j3aux6xar6yo4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253A3k7dfznzs5phrcafflalkaou",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -238,6 +274,8 @@
 				"url": "https://bsky.app/profile/jeradsloan.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:73yshv4tm6j4yd7al7p3yyql/bafkreidqcl4iqfnxiqqonfbrkowbsn4ut4yrgm6jxlqnawexy4yeos4vvi"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253A73yshv4tm6j4yd7al7p3yyql",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -249,6 +287,8 @@
 				"url": "https://mastodon.uno/@paolo0664",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/112460912995174123",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -260,6 +300,8 @@
 				"url": "https://mastodon.social/@mshornikov",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/110458685571825249",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -271,6 +313,8 @@
 				"url": "https://cosocial.ca/@iansu",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8ad2e4bef4901e0ebaad527a886cdfa6a22d38cf1b616350dc781dc5a42d1aa7.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/110563508159077086",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -282,6 +326,8 @@
 				"url": "https://bsky.app/profile/mattdoane.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:bmaqbl2gpow7fniwjlbpipzr/bafkreifibfkjsx64yjplda5wo2c7m6iqlaoopwkspcu6wh7rimzl44fha4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Abmaqbl2gpow7fniwjlbpipzr",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -293,6 +339,8 @@
 				"url": "https://bsky.app/profile/jeremias.codes",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:dkf6u7hhzicecvumdlfza2ux/bafkreihloo56nu2go2uaqhk25iydang5kcmgimlybtu7mv2wlto3pazvqi"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Adkf6u7hhzicecvumdlfza2ux",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -304,6 +352,8 @@
 				"url": "https://bsky.app/profile/dariusz.wieckiewicz.org",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:umilvv4ajsdwhrgtimbkpejt/bafkreidamwpapzhvonj5e7qdbztmaacx7s3vs3neb7a5ngnkk74j3uuezm"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Aumilvv4ajsdwhrgtimbkpejt",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -315,6 +365,8 @@
 				"url": "https://c.im/@cwilcox808",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0420c3d68553f90b79bc3a720f1602dddc548654d07adad891d1cd66432ae2ce.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270291669504711/109611015490799806",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -326,6 +378,8 @@
 				"url": "https://bsky.app/profile/dalamb.me",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:armut7dirmaum6vvdo3dnw2w/bafkreigxidjgl2mvrrgiewfnpsucpfbmmfc4kykqp6rhjwsab4urzzwvau"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Aarmut7dirmaum6vvdo3dnw2w",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -337,6 +391,8 @@
 				"url": "https://bsky.app/profile/cylewaitfor.it",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:fhfpmpvg7sso2jw5vk52ccfk/bafkreieknuycmmwvmko5wjja5xjolpyzm4mgalueqowymss2p5rdz74squ"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Afhfpmpvg7sso2jw5vk52ccfk",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -348,6 +404,8 @@
 				"url": "https://bsky.app/profile/sergio1984.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:kgrbnhf2bdyk2nbwf44xcxpc/bafkreibermu5o6cwinqkwavjne2lh7w2gunbzcugsefvfyd2mnranrf23m"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Akgrbnhf2bdyk2nbwf44xcxpc",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -359,6 +417,8 @@
 				"url": "https://bsky.app/profile/jinmayjhaveri.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:pdubtnabunqrifw5fikyj3tq/bafkreicdnqwp2cfzw254tg4exjwjmq5hbc2wvgwwlwmrd4rwvtydna3rze"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Apdubtnabunqrifw5fikyj3tq",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -370,6 +430,8 @@
 				"url": "https://mamot.fr/@nhoizey",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/68e6f1617572bd4c2158727e6c1693ec1d0ab76e3f29f51d93c5895ee2c8e6b0.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/109288230453300889",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -381,6 +443,8 @@
 				"url": "https://seocommunity.social/@simoncox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/109352939518629968",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -392,6 +456,8 @@
 				"url": "https://bsky.app/profile/rowanpaulflynn.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:p3qed3bkmcjrmf5msnuwjdtp/bafkreig3wbnc7kcpcoqhkiru2bkqjipdwq273qwj5mkj7jjdtrmch32rzi"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Ap3qed3bkmcjrmf5msnuwjdtp",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -403,6 +469,8 @@
 				"url": "https://jasondavis.net/@jason",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/870500f46fd76322611acd77d78d959e66e28af7eaf5a4dcc679f14500157a00.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/109882551864552038",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -414,6 +482,8 @@
 				"url": "https://bsky.app/profile/bell.bz",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:pzgvqg4ihnaihkrpmxqz5pu6/bafkreiaapdk2gfx55k2bvki4b3c4azfba5uae6ej43yrgqi3cjwxrvk4ie"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Apzgvqg4ihnaihkrpmxqz5pu6",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -425,6 +495,8 @@
 				"url": "https://bsky.app/profile/stefanmatei.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:komsc4cibngambanqjhpwweu/bafkreig2zczdfchzhxfkofhunix7nxui6ls4zfjma2un3tqjslcfgzpf7e"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Akomsc4cibngambanqjhpwweu",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -436,6 +508,8 @@
 				"url": "https://bsky.app/profile/trost.codes",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:nvl3yntjuveklffyz7fsfpua/bafkreicxa7xmj2se4b3q4zkwjdvchduptnp3lpsakc73ghrzb6ub5sg23a"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Anvl3yntjuveklffyz7fsfpua",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -447,6 +521,8 @@
 				"url": "https://social.vivaldi.net/@LorenAmelang",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9ad5c67e9298e6ae76e9d207ca1bdf4417a8633da0f57dca2117522255304978.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/109564442856442058",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -458,6 +534,8 @@
 				"url": "https://social.mottokrosh.com/@mottokrosh",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/65e8e333b2c853c15f1db16680518c142ff15807d8a0f6e7b451b23a6851ee82.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/112009616148484448",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -469,6 +547,8 @@
 				"url": "https://bsky.app/profile/andycarter.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:pv7rlckfik4wolfzl4gdeq7l/bafkreihm6zozsourlzk6ooufwx7untrh3b77fc7pjrafoseay2pqu54kjm"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Apv7rlckfik4wolfzl4gdeq7l",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -480,6 +560,8 @@
 				"url": "https://bsky.app/profile/joe.trusktr.io",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:zusla4pjgzm3dijq2vwxqp2c/bafkreigmxy4sse5fif5woes4puxjtuydxbwbkgcfpmcztkkjbtlq3qfhhq"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Azusla4pjgzm3dijq2vwxqp2c",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -491,6 +573,8 @@
 				"url": "https://bsky.app/profile/thebethanyann.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:jv3j4ccoxsvp53lqfnp3inmj/bafkreihosbwng3pwaw5vpwzopkctu45tsw6jbbdpvnjrpzjig2jjjoh3k4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Ajv3j4ccoxsvp53lqfnp3inmj",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -502,6 +586,8 @@
 				"url": "https://mastodon.social/@westbrook",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a044f63c9bb17f2a97bbd3be4836065c22c299733ef0f21b71761e568c1ef1bf.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/109292789947647037",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -512,6 +598,8 @@
 				"url": "https://bsky.app/profile/atrin.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:2hbnldkrs5zc6eny35gj7zha/bafkreigh3ptujk6m7tyeytrs5crthujun5nxb7vnjtg6ianjaqnwm4vula"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253A2hbnldkrs5zc6eny35gj7zha",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		}
 	],
@@ -525,6 +613,8 @@
 				"url": "https://mastodon.social/@JPKCom",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/109779197194734817",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -536,6 +626,8 @@
 				"url": "https://aus.social/@mzungu",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0c304e51e079a69dab52aa8edea048c46b1e605cee1a7a0b61006877950c2c29.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/116238169641821480",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -547,6 +639,8 @@
 				"url": "https://bsky.app/profile/tynanpurdy.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:6ayddqghxhciedbaofoxkcbs/bafkreie56qtqmtp5iu56zqqjkvwhvzqcudtsbetgs2joaowvuljbcluvze"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253A6ayddqghxhciedbaofoxkcbs",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -558,6 +652,8 @@
 				"url": "https://social.dzajew.xyz/@dzajew",
 				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/113/087/045/490/338/722/original/2d6aae2ac3c40543.webp"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/113087045490338722",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -569,6 +665,8 @@
 				"url": "https://bsky.app/profile/zachleat.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mvijdivmwn23/did%253Aplc%253Axpchjovbk6sxl3bv74z7cs54",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -580,6 +678,8 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/109286461031266152",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		},
 		{
@@ -591,6 +691,8 @@
 				"url": "https://mementomori.social/@autiomaa",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a3086645cd791b96b7a045f8280a426bf4a7fa642b5d05ff3b0268099bae1a1e.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117270307002450103/110802145113597250",
+			"target": "https://www.zachleat.com/web/solar-eclipse/",
 			"via": "webmention"
 		}
 	]

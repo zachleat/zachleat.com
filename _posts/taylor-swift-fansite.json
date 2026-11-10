@@ -12,6 +12,8 @@
 			"date": "2023-12-22T17:23:52.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span>, I didn’t know Eleventy is a Swiftie</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/111625229622412895",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -26,6 +28,8 @@
 			"date": "2023-12-22T18:35:12.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> It’s nice to see a common use case get the attention it deserves.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/111625510080055780",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +44,8 @@
 			"date": "2023-12-22T21:36:34.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://techhub.social/@cloudcannon\" class=\"u-url\">@<span>cloudcannon</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> The title, I see what you did there.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/111626223348336246",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -54,6 +60,8 @@
 			"date": "2024-02-26T19:41:36.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@mikeneu\" class=\"u-url\">@<span>mikeneu</span></a></span> <br />Neat! I think it could benefit from a toggle to make it a static transcript, without the interactivity, so people can read it without the timecodes or button semantics while using a screen reader or any text-to-speech tech.</p><p>The toggle control could do something like add/remove a 'static' class on the custom element and make the click handler inactive.</p><p>```CSS<br />youtube-deep-link.static [data-offset] button {<br />    display: none;<br />}<br />```</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/111999483847001113",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -68,6 +76,8 @@
 			"date": "2024-02-26T19:41:59.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@mikeneu\" class=\"u-url\">@<span>mikeneu</span></a></span> <br />Also, the spans have `role=\"button\"` but shouldn't.<br />`&lt;span data-offset=\"0\" role=\"button\"&gt;&lt;button type=\"button\"&gt;00:00&lt;/button&gt;All right, what's up everybody?&lt;/span&gt;`</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/111999485606343538",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		}
 	],
@@ -81,6 +91,8 @@
 				"url": "https://mastodo.neoliber.al/@Neblib",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e45c6788454f4e0535151464ccea33792328310ba337c171058df606edaa0c22.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/110635286175767117",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -92,6 +104,8 @@
 				"url": "https://mastodon.social/@box464",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/213830b33a816471f06c43df1fdbdd66ddc9a69f7a409e41c68e07d3c502eb9b.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/109362070061028822",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -103,6 +117,8 @@
 				"url": "https://mastodon.online/@sanal",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbb742022db7b9855122706ffec4ea51a681aa02247062b1c385c0fbaf6bc217.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/111607577526370496",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -114,6 +130,8 @@
 				"url": "https://mastodon.social/@fernandomateus",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8b9e6c3330eec2f350eebb5e974202b7395f077f2ad86223e37fabfddf15cf61.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/109315721479762331",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -125,6 +143,8 @@
 				"url": "https://t00t.cloud/@mattrambles",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d08ea9d90dad7d7e3fcebf30fc5b46551a31bd97815f37103fa4a5d321aaee47.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/109960775403450397",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -136,6 +156,8 @@
 				"url": "https://dice.camp/@colinaut",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1046edb61398a347224f2183bf40ec44671f8167af8e4cbec5763e93e90e65a2.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/109320695943832786",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -147,6 +169,8 @@
 				"url": "https://front-end.social/@elly",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2906f05fbc1fff47b76e9bd51804d1618a81be8f3062fc8c5a2e0f18d02f8559.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/109446932953258362",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -158,6 +182,8 @@
 				"url": "https://mastodon.social/@mikemai2awesome",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a5e2b8ddd585509131b536d2ddb033aec2aa5192ee3352132623a737a82bbbff.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/109299255717578777",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -169,6 +195,8 @@
 				"url": "https://toot.berlin/@DoomyTheFroomy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4980aa6ef6c26af206369270b810f89340b08e70c41ccf1f0f7a7db99d80efa1.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/109630334951706142",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -180,6 +208,8 @@
 				"url": "https://indieweb.social/@capjamesg",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6e0950a543461514ff7936a92c3c92d7a3d04ccbb74efe666883946f278fc7e7.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/111116834952078936",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -191,6 +221,8 @@
 				"url": "https://front-end.social/@ashur",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/47f9e3cea1d21932327b192e59a0faf2fb69a491bb0f1df89b0ed69800960171.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/109295176902307654",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -202,6 +234,8 @@
 				"url": "https://infosec.exchange/@lucas",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f60a86c47bfb7bf93dae1e998597fa12f23b1e7a089d2de6f8c55deae7e462a5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/109300719297240498",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -213,6 +247,8 @@
 				"url": "https://sunny.garden/@kayserifserif",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/59a482e7bd79bae82cbf5ce33b96eed9d0300703811d55b0b5e551e45871a86d.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/110656903967994170",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -224,6 +260,8 @@
 				"url": "https://techhub.social/@develwithoutacause",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/109332518937677894",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -235,6 +273,8 @@
 				"url": "https://kolektiva.social/@manicExpressive",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbaf898cc08889fb428ade78002e20def5ca76fef00199839a2c386108d187d0.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/110271759034960771",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -246,6 +286,8 @@
 				"url": "https://mastodon.social/@rdela",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/18dcbaa93d0245e10bc1bc067a1e21261bc3429f54c8feab56bd0bc2f0f4c751.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/109416800150126742",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -257,6 +299,8 @@
 				"url": "https://social.lol/@cory",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f160da467f9547a3cce30e77f4adcdb163b293ad0dc3d7706ac9f3efe9fba2a7.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/109606268895857560",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -268,6 +312,8 @@
 				"url": "https://cosocial.ca/@boris",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2c1bfda270c087b1e4f55f1db99c194482fa28187885c450f46530c9da956440.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/110118955928962297",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -279,6 +325,8 @@
 				"url": "https://fosstodon.org/@mikeneu",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/947c4a7a76eaaa1ac1f15a4b9e7c68c215bf94b50d97059b5e008aacb82d2e7e.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/111506883667257425",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -290,6 +338,8 @@
 				"url": "https://fosstodon.org/@bglw",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7dbb38f31e4e40f1e664cb4dc0377bb3f0a2f60e0798bcf445c0835d09c9bb0e.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/109343937842242416",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		}
 	],
@@ -303,6 +353,8 @@
 				"url": "https://mastodon.social/@box464",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/213830b33a816471f06c43df1fdbdd66ddc9a69f7a409e41c68e07d3c502eb9b.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/109362070061028822",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -314,6 +366,8 @@
 				"url": "https://fosstodon.org/@avidlarge",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/819b278dd73b66b8c3eaf25e026a6898157250455f00d778df08fcdff0536a98.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/109366578310089768",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -325,6 +379,8 @@
 				"url": "https://mastodon.social/@mikemai2awesome",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a5e2b8ddd585509131b536d2ddb033aec2aa5192ee3352132623a737a82bbbff.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111625206093085118/109299255717578777",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -336,6 +392,8 @@
 				"url": "https://mementomori.social/@SamiMaatta",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1efd3bce43177708094b584ba9d5d826404f25c83c409308eece0f3397dcb32.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/110773164908493696",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -347,6 +405,8 @@
 				"url": "https://mastodon.social/@rdela",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/18dcbaa93d0245e10bc1bc067a1e21261bc3429f54c8feab56bd0bc2f0f4c751.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/109416800150126742",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -358,6 +418,8 @@
 				"url": "https://social.lol/@cory",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f160da467f9547a3cce30e77f4adcdb163b293ad0dc3d7706ac9f3efe9fba2a7.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/109606268895857560",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		},
 		{
@@ -369,6 +431,8 @@
 				"url": "https://fosstodon.org/@mikeneu",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/947c4a7a76eaaa1ac1f15a4b9e7c68c215bf94b50d97059b5e008aacb82d2e7e.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111999175693154362/111506883667257425",
+			"target": "https://www.zachleat.com/web/taylor-swift-fansite/",
 			"via": "webmention"
 		}
 	]

@@ -178,6 +178,8 @@
 			"date": "2009-03-20T19:04:27.000Z",
 			"content": "<p>クロスドメイン XMLHttpRequest を<em>一時的に</em>許可する必要があります。 Firefoxのセキュリティ設定を変更するのが最善の方法のようです。しかし、私は <a href=\"http://blog.dirolf.com/2007/06/enabling-cross-domain-ajax-in-firefox.html\">これ</a> で試しましたと <a href=\"http://www.zachleat.com/web/2007/08/30/cross-domain-xhr-with-firefox/\">これ</a> が機能しませんでした.以前にこれを構成できた人はいますか?ありがとう。</p>\n\n\n<p>アプリの開発およびテスト中にクロスドメインの問題で時間を無駄にしたくない場合は、アドオン <a href=\"https://addons.mozilla.org/en-US/firefox%20%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82%20/addon/forcecors/\">FF の強制 CORS</a>。</p>\n<p>更新: このアドオンはもう存在しないようです。しかし、別のオプションがあります – この <a href=\"https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi\">Chrome 拡張機能</a></p>\n\n\n<p>最新のブラウザでは、次のアプローチを試すことができます:</p>\n<p><a href=\"https://developer.mozilla.org/en/HTTP_access_control\">https://developer.mozilla.org/en/HTTP_access_control</a></p>\n<p>要するに、以下を <code>SERVER</code> 応答ヘッダーに追加する必要があります (以下は <em>from</em> <code>foo.example</code> からのアクセスを許可します):</p>\n<pre><code>Access-Control-Allow-Origin: http://foo.example<br />\nアクセス制御許可メソッド: POST、GET、OPTIONS<br />\nAccess-Control-Allow-Headers: X-PINGOTHER<br />\nAccess-Control-Max-Age: 1728000\n</code></pre><p><code><code>X-PINGOTHER</code> は JavaScript によって挿入されるカスタム ヘッダーであり、サイトごとに異なることに注意してください。</code></p><code>\n</code><p><code>Ajax でサーバーにアクセスするサイトが必要な場合は、代わりに <code>*</code> を使用してください。</code></p><code>\n</code><p><code>編集:</code></p><code>\n</code><p><code><strong>2009</strong> までに最初に質問に答えたとき、実際に同じ問題に遭遇し、サーバー側の構成を使用して回避しました。</code></p><code>\n</code><p><code>それまでに FF や Chrome にはプラグインはありませんでした。</code></p><code>\n</code><p><code>ただし、ブラウザ側のプラグインを使用する代替手段があります。<code>tsds</code> の回答を確認してください。</code></p><code>\n</code>\n\n\n<p>jQuery の <a href=\"http://docs.jquery.com/Ajax/jQuery.ajax#options\">ajax</a> リクエストを試してみましたか?バージョン 1.3 以降、jQuery は特定のタイプのクロス ドメイン Ajax リクエストをサポートしています。</p>\n<p>上記の参考文献からの引用:</p>\n<p>注: すべてのリモート (同じ上ではありません)<br />\n  ドメイン) リクエストを指定する必要があります<br />\n  「script」または「jsonp」が<br />\n  dataType (スクリプトをロードするため)<br />\n  DOM スクリプト タグを使用します)。 Ajax オプション<br />\n  XMLHttpRequest オブジェクトを必要とする<br />\n  これらの要求には使用できません。<br />\n  完全関数と成功関数は次のとおりです。<br />\n  完了時に呼び出されますが、呼び出されません<br />\n  XHR オブジェクトを受け取ります。 beforeSend<br />\n  そして dataFilter 関数はそうではありません\n  </p>\n<p>jQuery 1.2 以降、JSON をロードできます<br />\n  別のドメインにあるデータ<br />\n  JSONP コールバックを指定します。<br />\n  「myurl?callback=?」のように行います。<br />\n  jQuery は ? を自動的に置き換えます。<br />\n  呼び出す正しいメソッド名で、<br />\n  指定したコールバックを呼び出します。または、<br />\n  dataType を「jsonp」に設定した場合<br />\n  コールバックが自動的に追加されます<br />\n  あなたのAjaxリクエストに。</p>\n\n\n<p>クロスドメイン XMLHttpRequest を「一時的に」無効にする方法はありません。一時的に無効にできれば、永久に無効にできます。これは、現代の AJAX プログラミングではかなり一般的な問題であり、ほとんどの場合、クロスドメイン スクリプティングと呼ばれる手法を使用して解決されます。 </p>\n<p>ここでの考え方は、クロスドメイン スクリプトを呼び出すと、JavaScript (JSON) の結果が返され、それが最後に関数に渡されるというものです。 </p>\n<p>JavaScript コードの観点からどのように見えるかを示すサンプル コードを次に示します。</p>\n<pre><code> function request_some_data() {<br />\n    var s = \"http://my.document.url.com/my_data?p1=v1&amp;p2=v2&amp;callback=myfunc\";\n</code></pre><p><code>      試す {<br />\n        試す{<br />\n          document.write(\"\");<br />\n        }<br />\n        キャッチ（e）{<br />\n          var x = document.createElement(\"スクリプト\");<br />\n          x.src = s;<br />\n          document.getElementsByTagName(\"head\")[0].appendChild(x);<br />\n        }<br />\n      }<br />\n      キャッチ (e) {<br />\n        アラート (e.メッセージ);<br />\n      }<br />\n   }</code></p><code>\n</code><p><code>次に、コードでデータを受信する関数を定義し、サーバーでコールバック ケースを「処理」します。クライアント側の JavaScript は次のとおりです。</code></p><code>\n</code><pre><code><code>function myfunc(data) {<br />\n  アラート (データ);<br />\n}\n</code></code></pre><p><code><code>サーバー側では、ここで PHP の例を示しますが、これは Java やサーバー側のテクノロジが何であれ、同じように簡単に実行できます。</code></code></p><code><code>\n</code></code><p><code><code>サーバー側で生成しているものは、クライアント側で実行される JavaScript になることに注意してください。</code></code></p><code><code>\n</code></code>\n\n\n<p>「UniversalBrowswerRead」も試してみましたが、うまくいきませんでした。 「allow」ヘッダーを追加できるかもしれませんが、実際にはまだ試していません。かなり新しいです。</p>\n<p>詳細については、<a href=\"http://websecurity.ro/blog/2008/04/10/cross-domain-requests-will-be-back/\">こちらをご覧ください。 </a></p>\n\n\n<p><code>file://</code> からこれに直面しています。ローカル HTML ファイル (テストベッド) から 2 つのサーバーにクエリを送信したいと考えています。</p>\n<p>この特定のケースは安全上の問題ではありませんが、これが可能なのは Safari だけです。</p>\n<p><a href=\"http://www.simple-talk.com/dotnet/asp.net/calling-cross-domain-web-services-in-ajax/\">最高の議論</a>私はこの問題について見つけました.</p>\n\n\n<p>mod_proxy のようなものを使用するのはどうですか?次に、リクエストが同じサーバーに送信されているようにブラウザに見えますが、実際には別のサーバーに転送されています。</p>\n\n\n<p>Fiddler をプロキシとして使用しました。 <a href=\"http://www.fiddler2.com/fiddler2/\">Fiddler</a> は、localhost 呼び出しを外部サーバーにリダイレクトします。</p>\n<p>手動プロキシ (127.0.0.1 ポート 8888) を使用するように Firefox を構成しました。 Fiddler は呼び出しをキャプチャし、URL フィルターを使用して別のサーバーにリダイレクトします。</p>\n\n\n<p>クロスドメインを許可するには:</p>\n\n<code>about:config</code> を入力\n注意する\n検索バーに <code>security.fileuri.strict_origin_policy</code> と入力します\n偽に変更\n\n<p>タブを閉じることができます。通常、この構成でクロス ドメイン リクエストを作成できるようになりました。</p>\n<p>詳細については、<a href=\"http://kb.mozillazine.org/Security.fileuri.strict_origin_policy\">こちら</a>を参照してください。</p>\n\n\n<p>Firefox 用の私のアドオンを確認できます。 Firefox の最新バージョンではドメインをまたぐことができます: <a href=\"https://addons.mozilla.org/en-US/firefox/addon/cross-domain-cors/\">https: //addons.mozilla.org/en-US/firefox/addon/cross-domain-cors/</a> </p>\n\n\n<p>Firefox の設定を手動で編集する方法がありますが、頻繁に行う必要がある場合は不便です。</p>\n<p>代わりに、ワンクリックでそれを行うアドオンをインストールできます。</p>\n<p>私は <code>どこでも CORS</code> を使用しています。これは私にとって非常に効果的です。</p>\n<p><a href=\"https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/\">インストーラーへのリンク</a>はこちらp&gt;\n    </p>",
 			"type": "mention",
+			"source": "https://jpstack.one/%e3%82%af%e3%83%ad%e3%82%b9%e3%83%89%e3%83%a1%e3%82%a4%e3%83%b3-ajax-%e3%83%aa%e3%82%af%e3%82%a8%e3%82%b9%e3%83%88%e3%82%92%e6%9c%89%e5%8a%b9%e3%81%ab%e3%81%99%e3%82%8b-firefox-%e3%81%ae%e8%a8%ad/",
+			"target": "http://www.zachleat.com/web/2007/08/30/cross-domain-xhr-with-firefox/",
 			"via": "webmention"
 		},
 		{
@@ -188,6 +190,8 @@
 			"date": "2019-06-22T14:47:03.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://911-code.com/firefox-impostazione-per-abilitare-il-cross-domain-richiesta-ajax.html",
+			"target": "http://www.zachleat.com/web/2007/08/30/cross-domain-xhr-with-firefox/",
 			"via": "webmention"
 		},
 		{
@@ -198,6 +202,8 @@
 			"date": "2021-10-27T03:20:02.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://microeducate.tech/firefox-setting-to-enable-cross-domain-ajax-request/",
+			"target": "http://www.zachleat.com/web/2007/08/30/cross-domain-xhr-with-firefox/",
 			"via": "webmention"
 		},
 		{
@@ -208,6 +214,8 @@
 			"date": "2022-02-06T02:00:45.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://codeinfopark.com/questions/firefox-setting-to-enable-cross-domain-ajax-request/",
+			"target": "http://www.zachleat.com/web/2007/08/30/cross-domain-xhr-with-firefox/",
 			"via": "webmention"
 		},
 		{
@@ -218,6 +226,8 @@
 			"date": "2022-10-21T20:55:11.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://123stack.one/blog/2009/03/20/firefox-%e8%a8%ad%e7%bd%ae%e5%95%9f%e7%94%a8%e8%b7%a8%e5%9f%9f-ajax-%e8%ab%8b%e6%b1%82/",
+			"target": "http://www.zachleat.com/web/2007/08/30/cross-domain-xhr-with-firefox/",
 			"via": "webmention"
 		}
 	]

@@ -12,6 +12,8 @@
 			"date": "2024-02-07T17:48:50.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> <span class=\"h-card\"><a href=\"https://techhub.social/@cfedev\" class=\"u-url\">@<span>cfedev</span></a></span> great job. <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> should be more popular, it is simple and straightforward.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/111891463748608815",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -26,6 +28,8 @@
 			"date": "2024-02-07T18:03:42.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> <span class=\"h-card\"><a href=\"https://techhub.social/@cfedev\" class=\"u-url\">@<span>cfedev</span></a></span> I really appreciate all the details here. I'm getting ready to go default ESM for the esbuild / postcss / sass config in Bridgetown going forward…a dramatically simpler process since most code is in Ruby, but still it's helpful to see the road you've paved!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/111891514861962902",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +44,8 @@
 			"date": "2024-02-07T19:19:30.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@nrk9819\" class=\"u-url\">@<span>nrk9819</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> <span class=\"h-card\"><a href=\"https://techhub.social/@cfedev\" class=\"u-url\">@<span>cfedev</span></a></span> we’ll just keep going ????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/111891812884658244",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -54,6 +60,8 @@
 			"date": "2024-02-07T19:20:40.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@jaredwhite\" class=\"u-url\">@<span>jaredwhite</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> <span class=\"h-card\"><a href=\"https://techhub.social/@cfedev\" class=\"u-url\">@<span>cfedev</span></a></span> great! I hope it works out well for y’all!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/111891817452410252",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -68,6 +76,8 @@
 			"date": "2024-02-07T19:22:49.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> great talk! I took some notes to update my ESM packages (I didn't knew about `assert` changing to `with` and `import.meta.filename`/`dirname`). Thank you for sharing, Zach!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/111891838373186684",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -78,6 +88,8 @@
 			"date": "2024-06-01T14:16:42.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://mxb.dev/blog/eleventy-v3-update/",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		}
 	],
@@ -91,6 +103,8 @@
 				"url": "https://social.telemetrydeck.com/@daniel",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8352e7e67713a2bca61cfa1e8a0bdb202917e29f86259eb1f83205994cd855f7.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109306713387185267",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -102,6 +116,8 @@
 				"url": "https://fosstodon.org/@hasanhaja",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/53b551a370dc4bdd73533caca93a84206a320110ee47cdf95b1face4a05a5ced.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109698107255349105",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -113,6 +129,8 @@
 				"url": "https://paquita.masto.host/@ogarcia",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109383381670801265",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -124,6 +142,8 @@
 				"url": "https://mstdn.social/@lime360",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/110272152136055587",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -135,6 +155,8 @@
 				"url": "https://lea.lgbt/@lea",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7c831ef20e2c7a93705007b56a71c1bcf4418386493fa60533221bd4419bdd32.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109966669846784668",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -146,6 +168,8 @@
 				"url": "https://fosstodon.org/@eleventy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8e11fc7c24ecef298727405f9dd171e91253a662cb92307f75997fdc4d2ba139.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109325867586024180",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -157,6 +181,8 @@
 				"url": "https://front-end.social/@eeeps",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/93963037db43514e4f4d937285433e20439416a6675504cad50a40dcf7443ae4.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109304428669626974",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -168,6 +194,8 @@
 				"url": "https://toot.community/@rodney",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fc0113af39f905582459d0a692cecb39ba94b8dd8349db292edcf58f9d97aed0.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/110977642734791718",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -179,6 +207,8 @@
 				"url": "https://indieweb.social/@jaredwhite",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/48ceb2b89ca6f40586b16dfee49892e8917496af1919a297a961d8031a72bc52.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109292552988169598",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -190,6 +220,8 @@
 				"url": "https://mastodon.social/@nrk9819",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/dd3b827b88f23195d02cea41a8074968c509615adc4f3b8739b74a6e7dc162f6.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/111783049648378256",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -201,6 +233,8 @@
 				"url": "https://indieweb.social/@dmc",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0f06fe34e2d2a19ec734b8060071c9750167e81e913c184872ae39b3b2455637.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109321120362328540",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -212,6 +246,8 @@
 				"url": "https://hachyderm.io/@apocraphilia",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7e4c243a257be0469d0200822ebf0a8458ffe3eb92ab7bbe4080bbde2f3177a6.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109743186620791937",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -223,6 +259,8 @@
 				"url": "https://infosec.exchange/@d3v1an7",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fb7a9c5c9b08e92ce912b2bd596ddced9a86f164602bf35a97d13da2b1709b95.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109991051044602132",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -234,6 +272,8 @@
 				"url": "https://social.lol/@zerocaps",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/33287fa9cdfd0ae207588a5aa06a7be3611a268ecaa9f7e54b956243762c088a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109289302894824118",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -245,6 +285,8 @@
 				"url": "https://seocommunity.social/@simoncox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109352939518629968",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -256,6 +298,8 @@
 				"url": "https://mastodon.social/@costinEEST",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7c08b9a67384cbe99f22c707b71f77c6b177af0c878ca5725f5becb1d5fee15c.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109332645114488860",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -267,6 +311,8 @@
 				"url": "https://mastodon.social/@jkohlmann",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2817646b32ed4e8dda1cc4e7baf9cbd6c1de622300a5e3e654cd825ebcd2c55b.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109299981287019846",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		}
 	],
@@ -280,6 +326,8 @@
 				"url": "https://fosstodon.org/@hasanhaja",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/53b551a370dc4bdd73533caca93a84206a320110ee47cdf95b1face4a05a5ced.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109698107255349105",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -291,6 +339,8 @@
 				"url": "https://mastodon.social/@JPKCom",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109779197194734817",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -302,6 +352,8 @@
 				"url": "https://fedisabled.social/@bberkholz",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8e3cf6331e9c747e6d7e069a2180578701fff51b813468538ed63db441ca191c.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109553868339474796",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -313,6 +365,8 @@
 				"url": "https://lea.lgbt/@lea",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7c831ef20e2c7a93705007b56a71c1bcf4418386493fa60533221bd4419bdd32.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109966669846784668",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -324,6 +378,8 @@
 				"url": "https://mstdn.social/@lime360",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/110272152136055587",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -335,6 +391,8 @@
 				"url": "https://fosstodon.org/@eleventy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8e11fc7c24ecef298727405f9dd171e91253a662cb92307f75997fdc4d2ba139.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109325867586024180",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -346,6 +404,8 @@
 				"url": "https://social.lol/@cory",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f160da467f9547a3cce30e77f4adcdb163b293ad0dc3d7706ac9f3efe9fba2a7.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109606268895857560",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -357,6 +417,8 @@
 				"url": "https://indieweb.social/@bobmonsour",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b29612c57f91493bea28f611bfba470ca27d73af355df4040d9dc121940e1c07.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109383215820991530",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -368,6 +430,8 @@
 				"url": "https://techhub.social/@cfedev",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cb52049a6ad5e66284ab3d2bc574a7f3fc03be1c9bb8b49a0af5b9f7c4fef999.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109500730709431642",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -379,6 +443,8 @@
 				"url": "https://infosec.exchange/@d3v1an7",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fb7a9c5c9b08e92ce912b2bd596ddced9a86f164602bf35a97d13da2b1709b95.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109991051044602132",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -390,6 +456,8 @@
 				"url": "https://mastodon.social/@jkohlmann",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2817646b32ed4e8dda1cc4e7baf9cbd6c1de622300a5e3e654cd825ebcd2c55b.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109299981287019846",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		},
 		{
@@ -401,6 +469,8 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111891218421209816/109286461031266152",
+			"target": "https://www.zachleat.com/web/eleventy-v3-esm/",
 			"via": "webmention"
 		}
 	]

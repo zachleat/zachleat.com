@@ -12,20 +12,8 @@
 			"date": "2026-08-27T13:48:58.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p>Or... You can do it the old fashioned way and measure your business going in the toilet.</p>",
 			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 2026623,
-			"parentId": 0,
-			"url": "https://rmendes.net/replies/2026/08/28/bc0e0/",
-			"author": {
-				"name": "Ricardo Mendes",
-				"url": "https://rmendes.net",
-				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
-			},
-			"date": "2026-08-28T07:32:58.000Z",
-			"content": "<p>I like this, might have to rework my Eleventy theme to increase my score :)</p>",
-			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/117167786599038085",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +28,24 @@
 			"date": "2026-08-28T12:05:06.000Z",
 			"content": "It&apos;s a useful safeguard because regressions often arrive with a template change or third-party tag, not a code deploy.",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/at%253A%252F%252Fdid%253Aplc%253Aj6mfzwfj65njsy3r2negoeyn%252Fapp.bsky.feed.post%252F3mu5d3qnnzu2k",
+			"target": "https://www.zachleat.com/web/speedlify2/",
+			"via": "webmention"
+		},
+		{
+			"id": 2026623,
+			"parentId": 0,
+			"url": "https://rmendes.net/replies/2026/08/28/bc0e0/",
+			"author": {
+				"name": "Ricardo Mendes",
+				"url": "https://rmendes.net",
+				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
+			},
+			"date": "2026-08-28T12:32:58.000Z",
+			"content": "<p>I like this, might have to rework my Eleventy theme to increase my score :)</p>",
+			"type": "reply",
+			"source": "https://rmendes.net/replies/2026/08/28/bc0e0",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -54,6 +60,8 @@
 			"date": "2026-08-28T15:25:28.000Z",
 			"content": "seems like a bunch of the copy on a website&apos;s results page is ai generated ????",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/at%253A%252F%252Fdid%253Aplc%253Arkm6m4dsc4da2yzdlvxorhf3%252Fapp.bsky.feed.post%252F3mu5obz2u6c2p",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -68,6 +76,8 @@
 			"date": "2026-08-28T16:50:06.000Z",
 			"content": "there are instructions on the repo README ????",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu5szecqkc2h",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -82,20 +92,8 @@
 			"date": "2026-08-28T22:58:03.000Z",
 			"content": "Is there a reason the score widget code is not published on npm?",
 			"type": "reply",
-			"via": "webmention"
-		},
-		{
-			"id": 2027987,
-			"parentId": 0,
-			"url": "https://rmendes.net/photos/2026/09/01/8815d/",
-			"author": {
-				"name": "Ricardo Mendes",
-				"url": "https://rmendes.net",
-				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
-			},
-			"date": "2026-09-01T17:34:38.000Z",
-			"content": "<p>I have been working on a <a href=\"https://rmendes.net/categories/eleventy/\" class=\"p-category\">#Eleventy</a> 4 theme for <a href=\"https://rmendes.net/categories/indiekit/\" class=\"p-category\">#Indiekit</a> and yes I was pleasingly surprised to see it work out of the box with the current “eleventy-preset” core indiekit package (its supposed to be Eleventy 3.x.x) My inspiration was onbviously Zach Leatherman own <a href=\"https://www.zachleat.com/web/speedlify2/\">Eleventy 4 theme</a></p>",
-			"type": "mention",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/at%253A%252F%252Fdid%253Aplc%253A2l2l67df67xs7tc5p5tjbsr2%252Fapp.bsky.feed.post%252F3mu6hlbzmhc2e",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -110,6 +108,24 @@
 			"date": "2026-09-01T19:26:30.000Z",
 			"content": "now that’s a good looking web site! ????\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/speedlify2/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:tk6bkjdozskzgb47umfelfpq/at%253A%252F%252Fdid%253Aplc%253Atk6bkjdozskzgb47umfelfpq%252Fapp.bsky.feed.post%252F3muhxggurev2h/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mui5mpi6vk2v",
+			"target": "https://www.zachleat.com/web/speedlify2/",
+			"via": "webmention"
+		},
+		{
+			"id": 2027987,
+			"parentId": 0,
+			"url": "https://rmendes.net/photos/2026/09/01/8815d/",
+			"author": {
+				"name": "Ricardo Mendes",
+				"url": "https://rmendes.net",
+				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
+			},
+			"date": "2026-09-01T22:34:38.000Z",
+			"content": "<p>I have been working on a <a href=\"https://rmendes.net/categories/eleventy/\" class=\"p-category\">#Eleventy</a> 4 theme for <a href=\"https://rmendes.net/categories/indiekit/\" class=\"p-category\">#Indiekit</a> and yes I was pleasingly surprised to see it work out of the box with the current “eleventy-preset” core indiekit package (its supposed to be Eleventy 3.x.x) My inspiration was onbviously Zach Leatherman own <a href=\"https://www.zachleat.com/web/speedlify2/\">Eleventy 4 theme</a></p>",
+			"type": "mention",
+			"source": "https://rmendes.net/photos/2026/09/01/8815d",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		}
 	],
@@ -123,6 +139,8 @@
 				"url": "https://bsky.app/profile/chriscoleman.name",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:wkd374xinxaugweumwpw3pdn/bafkreifwptpdw3ke4vsuzewislydexhwm335vlngjme2ukas6xb4cf6fu4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Awkd374xinxaugweumwpw3pdn",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -134,6 +152,8 @@
 				"url": "https://mastodon.hegedus.me/@gergely",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1bd59e039270f5d8b9e7f2a7af4030de619bbdfe909de22c075e2dff42cc9e0a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/113287529960920945",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -145,6 +165,8 @@
 				"url": "https://follow.coryd.dev/@cory",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/78bd89b42f9d1f7463a13b29e7f95853354b92592222d7ee2c7541e17e662ca8.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/113234688818531973",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -156,6 +178,8 @@
 				"url": "https://seocommunity.social/@simoncox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/109352939518629968",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -167,6 +191,8 @@
 				"url": "https://bsky.app/profile/coryd.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:sttgf52vkk46f6yuknvqxvgh/bafkreibcmy5qz6bq64oq2awoi66f6u5qcshdq7jqlxonyjlb3ilc6udaee"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Asttgf52vkk46f6yuknvqxvgh",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -178,6 +204,8 @@
 				"url": "https://neighborhood.11ty.dev/@11ty",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fabca60f6909c4b75db88cbe56cbe90d2b23b0c99175d6597c83d454e821d607.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/114399919162494462",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -189,6 +217,8 @@
 				"url": "https://bsky.app/profile/11ty.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:i3khfmz4tvrcu7fwrdoqr4u2/bafkreidzde3yokaujkz2ehb45zixt7sini43onzs4swwgomffecc5n2jsu"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Ai3khfmz4tvrcu7fwrdoqr4u2",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -200,6 +230,8 @@
 				"url": "https://bsky.app/profile/simoncox.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:tki7vwlanxbwrz2er67eaeqa/bafkreiabali2634y2slw3yiixyfgxibw6qhnvmp6imzbvyuflezvkjg4em"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Atki7vwlanxbwrz2er67eaeqa",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -211,6 +243,8 @@
 				"url": "https://tweesecake.social/@douglawlor",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/111817542121152249",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -222,6 +256,8 @@
 				"url": "https://mastodon.social/@cbirdsong",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e89db210db5872add721cd7c3703c47237b34a568801408950c2107888e58ecc.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/109543551045998536",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -233,6 +269,8 @@
 				"url": "https://bsky.app/profile/pdfops.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:s2uopacmr3yw7nzfvdllq3g3/bafkreiaxo7lgq43mmjddkjmhwmids3za2h5kylchyls4zpp3efzkfwasc4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253As2uopacmr3yw7nzfvdllq3g3",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -244,6 +282,8 @@
 				"url": "https://bsky.app/profile/cgambledev.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:7le3gpdvacl6bx2zfg62k2vc/bafkreihrntoyrfsruy7u7b5ro6zmv5tk7mfyofjl4hys4ad3g4ozpxopbe"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253A7le3gpdvacl6bx2zfg62k2vc",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -255,6 +295,8 @@
 				"url": "https://bsky.app/profile/sergio1984.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:kgrbnhf2bdyk2nbwf44xcxpc/bafkreibermu5o6cwinqkwavjne2lh7w2gunbzcugsefvfyd2mnranrf23m"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Akgrbnhf2bdyk2nbwf44xcxpc",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -266,6 +308,8 @@
 				"url": "https://bsky.app/profile/prodbyroshambo.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:2c6we2lie6u5dar3jjft4a3s/bafkreiaa54l2oeb34bnpwtyuhtsou2ia7aw26hxeb5xydaeviuc2ejuvde"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253A2c6we2lie6u5dar3jjft4a3s",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -277,6 +321,8 @@
 				"url": "https://mastodon.social/@box464",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6ef99ac9196b9b9977b79bb2781897dbd1a80728ed01b65a171677355ed2fb40.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/109362070061028822",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -288,6 +334,8 @@
 				"url": "https://pan.rent/@tommi",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7687d5f650af4d807e9705e44b01d61deae64a018d024356af6d4c06f3a1a4e6.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/109440304522473723",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -299,6 +347,8 @@
 				"url": "https://bsky.app/profile/moogento.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:j6mfzwfj65njsy3r2negoeyn/bafkreihqdvvm7yblcjaravl6qx3ro6g5e6xhddo7vh2mguflfd23fymbpy"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Aj6mfzwfj65njsy3r2negoeyn",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -310,6 +360,8 @@
 				"url": "https://mastodon.social/@aninus",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e927a795c0239679a1a38da5b7ff36c725ecd29efc977fc1d9690ea675dce69c.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/115458022418705925",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -321,6 +373,8 @@
 				"url": "https://bsky.app/profile/inbn.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:6xco2m3qqbt22rxglpjceluc/bafkreibca4hijqq5dp4my3ofh4nkbquook3gigggrzo6dbcnwl4uvyt24i"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253A6xco2m3qqbt22rxglpjceluc",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -332,6 +386,8 @@
 				"url": "https://bsky.app/profile/thebethanyann.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:jv3j4ccoxsvp53lqfnp3inmj/bafkreihosbwng3pwaw5vpwzopkctu45tsw6jbbdpvnjrpzjig2jjjoh3k4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Ajv3j4ccoxsvp53lqfnp3inmj",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -343,6 +399,8 @@
 				"url": "https://bsky.app/profile/eatyourgreens.org.uk",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:mvy6jvolas42qzt6yezkyzou/bafkreihrtr3s3bwdrhsmqfbdxhki3ycpmvpyq74rx6o7sc26khjxjrt5qu"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Amvy6jvolas42qzt6yezkyzou",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -354,6 +412,8 @@
 				"url": "https://bsky.app/profile/bahrus.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:leswfugg3ronzm7bi3p3556k/bafkreibkmnrtn3mxubuold762dcmpmehh53pggjjpbgynq4hgq3egi7h2e"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Aleswfugg3ronzm7bi3p3556k",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -365,6 +425,8 @@
 				"url": "https://social.mottokrosh.com/@mottokrosh",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/65e8e333b2c853c15f1db16680518c142ff15807d8a0f6e7b451b23a6851ee82.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/112009616148484448",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -376,6 +438,8 @@
 				"url": "https://bsky.app/profile/lenny.fyi",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:2l2l67df67xs7tc5p5tjbsr2/bafkreidjdxlh7prx3eu3em2xfwjsg7q7wpgc45lkm7gwnc3p3xkr6fejp4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253A2l2l67df67xs7tc5p5tjbsr2",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		}
 	],
@@ -389,6 +453,8 @@
 				"url": "https://toot.works/@joe",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b8ad0b8823ce1b8b25b611f15210e3119b344a7f461c28c26e967d51063a307e.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/109314700399157655",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -400,6 +466,8 @@
 				"url": "https://follow.coryd.dev/@cory",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/78bd89b42f9d1f7463a13b29e7f95853354b92592222d7ee2c7541e17e662ca8.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/113234688818531973",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -411,6 +479,8 @@
 				"url": "https://bsky.app/profile/coryd.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:sttgf52vkk46f6yuknvqxvgh/bafkreibcmy5qz6bq64oq2awoi66f6u5qcshdq7jqlxonyjlb3ilc6udaee"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Asttgf52vkk46f6yuknvqxvgh",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -422,6 +492,8 @@
 				"url": "https://neighborhood.11ty.dev/@11ty",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fabca60f6909c4b75db88cbe56cbe90d2b23b0c99175d6597c83d454e821d607.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/114399919162494462",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -433,6 +505,8 @@
 				"url": "https://bsky.app/profile/11ty.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:i3khfmz4tvrcu7fwrdoqr4u2/bafkreidzde3yokaujkz2ehb45zixt7sini43onzs4swwgomffecc5n2jsu"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Ai3khfmz4tvrcu7fwrdoqr4u2",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -444,6 +518,8 @@
 				"url": "https://bsky.app/profile/simoncox.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:tki7vwlanxbwrz2er67eaeqa/bafkreiabali2634y2slw3yiixyfgxibw6qhnvmp6imzbvyuflezvkjg4em"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Atki7vwlanxbwrz2er67eaeqa",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -455,6 +531,8 @@
 				"url": "https://mastodon.social/@JPKCom",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/109779197194734817",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -466,6 +544,8 @@
 				"url": "https://bsky.app/profile/zachleat.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mu2x2ag63q2m/did%253Aplc%253Axpchjovbk6sxl3bv74z7cs54",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -477,6 +557,8 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117167689041422941/109286461031266152",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -488,6 +570,8 @@
 				"url": "https://indieweb.social/@bobmonsour",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e8c7d47424048231a5bc64eec8b321573501b640b5cfa0d3bf15f2b8a2fb45b2.png"
 			},
+			"source": "https://ap.brid.gy/convert/web/https://indieweb.social/users/bobmonsour/statuses/117197224057670585/activity",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		},
 		{
@@ -499,6 +583,8 @@
 				"url": "https://aus.social/@mzungu",
 				"avatarUrl": "https://avatars.webmention.io/mediacdn.aus.social/0c304e51e079a69dab52aa8edea048c46b1e605cee1a7a0b61006877950c2c29.png"
 			},
+			"source": "https://ap.brid.gy/convert/web/https://aus.social/users/mzungu/statuses/117197268462700034/activity",
+			"target": "https://www.zachleat.com/web/speedlify2/",
 			"via": "webmention"
 		}
 	]

@@ -1,20 +1,6 @@
 {
 	"comments": [
 		{
-			"id": 1571089,
-			"parentId": 0,
-			"url": "https://mamot.fr/@nhoizey/109427717931812928",
-			"author": {
-				"name": "Nicolas Hoizey",
-				"url": "https://mamot.fr/@nhoizey",
-				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5fa24c7dbcb46640e1137d65e156fbcb15bc2e3759135ed7481ae94ace2e80fb.jpg"
-			},
-			"date": "2022-11-29T15:07:45.000Z",
-			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> hi! 😅</p>",
-			"type": "reply",
-			"via": "webmention"
-		},
-		{
 			"id": 1571238,
 			"parentId": 0,
 			"url": "https://twitter.com/pablolarah/status/1597648420084162560",
@@ -26,6 +12,8 @@
 			"date": "2022-11-29T17:47:20.000Z",
 			"content": "📗 Archive your Tweets with Tweetback\nby @zachleat@zachleat.com <a href=\"https://twitter.com/zachleat\">@zachleat</a> \n<a href=\"https://twitter.com/search?q=%23TweetsArchive\">#TweetsArchive</a> <a href=\"https://twitter.com/search?q=%2311ty\">#11ty</a> \n\n<a href=\"https://www.zachleat.com/web/tweetback/\">zachleat.com/web/tweetback/</a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1597648420084162560",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +28,24 @@
 			"date": "2022-11-29T17:48:28.000Z",
 			"content": "Archive your tweets with Tweetback\n\n“If you’ve been discouraged by Twitter’s direction, a great start to moving away from Twitter is to get your data off of the service. Tweetback can help you do that.”\n\n<a href=\"https://www.zachleat.com/web/tweetback/\">zachleat.com/web/tweetback/</a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1597648705066500096",
+			"target": "https://www.zachleat.com/web/tweetback/",
+			"via": "webmention"
+		},
+		{
+			"id": 1571089,
+			"parentId": 0,
+			"url": "https://mamot.fr/@nhoizey/109427717931812928",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://mamot.fr/@nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5fa24c7dbcb46640e1137d65e156fbcb15bc2e3759135ed7481ae94ace2e80fb.jpg"
+			},
+			"date": "2022-11-29T21:07:45.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> hi! 😅</p>",
+			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109427717975228206",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -51,9 +57,11 @@
 				"url": "https://fosstodon.org/@ru",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2a0fe199de8d72957f184493067247d1fcba2ffa38c54c8d40e8c16b014bb99d.jpg"
 			},
-			"date": "2022-11-30T04:53:13.000Z",
+			"date": "2022-11-30T10:53:13.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> okay but what if you like...you deleted them every 7 days for years.</p><p>can someone hack twitter please. i need my \"deleted\" tweets.</p><p><span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span></p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109430963844688155",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -65,9 +73,11 @@
 				"url": "https://sfba.social/@fonts",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/85c03db8c39dfbac00d4887e63b5466baa4e9fafd5e273fecd4b815bacba6839.png"
 			},
-			"date": "2022-11-30T07:24:17.000Z",
+			"date": "2022-11-30T13:24:17.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> Dumb question incoming! There’s no way to look through the whole archive by year or month at all is there?</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109431557930510225",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -79,9 +89,11 @@
 				"url": "https://tech.lgbt/@Marco",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/63fe234da51f526afb7486fd132f1b36579ef726cff38acedabbf4ac222b2556.jpg"
 			},
-			"date": "2022-11-30T08:01:28.000Z",
+			"date": "2022-11-30T14:01:28.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <span class=\"h-card\"><a href=\"https://mamot.fr/@nhoizey\" class=\"u-url\">@<span>nhoizey</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> I tried running this yesterday, and while it imported all tweets into the database, after I did some juggling with database/tweets.js, database/tweets-part1.js, and database/tweets-part2.js, the actual building of the site failed after the passthrough copy steps with the first template not being written due to the tweet object in src/tweet.js line 150 not being populated. I did put my username in _data/metadata.js. Is database/tweets.js still needed now?</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109431704059641025",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -96,6 +108,8 @@
 			"date": "2022-12-05T01:12:01.000Z",
 			"content": "Archive your tweets with Tweetback. By the creator of Eleventy <a href=\"https://twitter.com/zachleat\">@zachleat</a>.\n<a href=\"https://www.zachleat.com/web/tweetback/\">zachleat.com/web/tweetback/</a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1599572267457212420",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -110,6 +124,8 @@
 			"date": "2022-12-16T17:32:03.000Z",
 			"content": "You could create a public archive <a href=\"https://www.zachleat.com/web/tweetback/\">zachleat.com/web/tweetback/</a>\n<a class=\"u-mention\" href=\"https://twitter.com/timbray\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/zachleat/1603805167111094279/1603805167111094279",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -121,9 +137,11 @@
 				"url": "https://medic.cafe/@mikka",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ca86b4f26a2f6abff309c1ba61062cc4b3b2b7939dd7a76b1f330824e13ff457.jpg"
 			},
-			"date": "2022-12-16T19:16:18.000Z",
+			"date": "2022-12-17T01:16:18.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span></p><p>When is the last time I told you, you're the GOAT? Seriously, man, you are. Do me a favor and relax over the holidays? The past year was a flurry of \"damn, 11ty is getting better and better,\" even heroes need rest.</p><p><span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span></p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/109524943029069025/109524954629160744",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -135,9 +153,11 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
-			"date": "2022-12-16T19:20:59.000Z",
+			"date": "2022-12-17T01:20:59.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://medic.cafe/@mikka\" class=\"u-url\">@<span>mikka</span></a></span> hah! Appreciate it—happy to be doing what I love over here ❤️ but yes I do need a bit of time off too 🙌🏻</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/109524943029069025/109524972946355473",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -149,9 +169,11 @@
 				"url": "https://medic.cafe/@mikka",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ca86b4f26a2f6abff309c1ba61062cc4b3b2b7939dd7a76b1f330824e13ff457.jpg"
 			},
-			"date": "2022-12-17T08:17:07.000Z",
+			"date": "2022-12-17T14:17:07.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span></p><p>Done! <a href=\"https://mikka.md/tweet/\"><span>https://</span><span>mikka.md/tweet/</span><span></span></a> (I guess I'll take the \"starter project\" part seriously and turn it into something a little more Mikka-style whenever I don't feel like playing WoW or am traveling.)</p><p><span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span></p>\n<a href=\"https://mikka.md/tweet/\">medimikka’s Twitter Archive</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/109524943029069025/109528024909024331",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -166,6 +188,8 @@
 			"date": "2022-12-21T02:22:37.000Z",
 			"content": "To keep up with the cool kids these holidays I've got a lot of re-work to do to my website:\n\n- <a href=\"https://github.com/slightlyoff/share-button\">github.com/slightlyoff/sh…</a> from 🐘slightlyoff@toot.cafe \n- Tweets to the site via <a href=\"https://www.zachleat.com/web/tweetback/\">zachleat.com/web/tweetback/</a> from… <a href=\"https://webperf.social/@steveworkman/109546842555104846\">webperf.social/@steveworkman/…</a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1605388239585550336",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -177,9 +201,11 @@
 				"url": "https://front-end.social/@rem",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ccabb9da7d88753b17f4ecfc3146a48a026aac08cf335108f7632683fbbe3bd8.jpg"
 			},
-			"date": "2022-12-30T16:50:03.000Z",
+			"date": "2022-12-30T22:50:03.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@samkap\" class=\"u-url\">@<span>samkap</span></a></span> cheers, I had a feeling it had a <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> shape to it 🙏</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/tweetback/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@samkap@front-end.social/109603644133334035/109603651810527629",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -194,6 +220,8 @@
 			"date": "2023-01-10T04:30:23.000Z",
 			"content": "트위터 피드를 아카이브 하는 tweetback 프로젝트가 있다.\n- GitHub: <a href=\"https://github.com/tweetback/tweetback/\">github.com/tweetback/twee…</a>\n- Demo: <a href=\"https://twitter.11ty.dev/\">twitter.11ty.dev</a>\n<a href=\"https://www.zachleat.com/web/tweetback/\">zachleat.com/web/tweetback/</a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1612668147777294338",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -208,6 +236,8 @@
 			"date": "2023-01-16T17:46:46.000Z",
 			"content": "Personally I’m taking the approach of trying to build an archive of my tweets that I could reference, search, and index in Google - but not worry about moving it within Mastodon? i.e. <a href=\"https://www.zachleat.com/web/tweetback/\">zachleat.com/web/tweetback/</a>\n<a class=\"u-mention\" href=\"https://twitter.com/mijustin\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/zachleat/1615042893403795457/1615042893403795457",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -219,9 +249,11 @@
 				"url": "https://www.ciccarello.me/",
 				"avatarUrl": "https://avatars.webmention.io/secure.gravatar.com/7fc3ff82ad41c85cfaa99d5dbda0857d55fc2c4fb4bdcfd23dc1fbe0125d7711.jpg"
 			},
-			"date": "2025-03-11T19:35:34.000Z",
+			"date": "2025-03-12T00:35:34.000Z",
 			"content": "<p>I used my own process (which I should probably document) but I’ve also heard good things about <a href=\"https://www.zachleat.com/web/tweetback/\">Tweetback</a> (<a href=\"https://github.com/tweetback/tweetback\">GitHub link</a>).</p>",
 			"type": "reply",
+			"source": "https://www.ciccarello.me/posts/2025/03/11/tweetback-archive/",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -236,6 +268,8 @@
 			"date": "2025-04-09T01:06:57.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@hexagoncircle\" class=\"u-url\">@<span>hexagoncircle</span></a></span> Check out Tweetback by <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p><a href=\"https://www.zachleat.com/web/tweetback/\"><span>https://www.</span><span>zachleat.com/web/tweetback/</span><span></span></a></p>\n<a href=\"https://www.zachleat.com/web/tweetback/\">Archive your Tweets with Tweetback—zachleat.com</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/114305323387442380/114305323387442380",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -250,6 +284,8 @@
 			"date": "2025-04-09T01:06:57.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@hexagoncircle\" class=\"u-url\">@<span>hexagoncircle</span></a></span> Check out Tweetback by <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> </p><p><a href=\"https://www.zachleat.com/web/tweetback/\"><span>https://www.</span><span>zachleat.com/web/tweetback/</span><span></span></a></p>\n<a href=\"https://www.zachleat.com/web/tweetback/\">Archive your Tweets with Tweetback—zachleat.com</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@hexagoncircle@fosstodon.org/114305323380515790/114305323380515790",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		}
 	],
@@ -263,6 +299,8 @@
 				"url": "https://mastodon.social/@Paarsec",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6598303ceaefc67c93db8959aca4f1a340a55a6ea7f391dde4b7fcc7846d9905.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109305620468349870",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -274,6 +312,8 @@
 				"url": "https://mstdn.social/@apkoponen",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/32793f9095a28ecf8a8fc0285174d5b79fbed571ee67e889ba182343c341ed57.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109320635680377163",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -285,6 +325,8 @@
 				"url": "https://mastodon.social/@tylersticka",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ecfc5765a49387efd278a21fc94a9266e787e0e8a755ea8f58ee9778d9361b3c.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109303655278383068",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -296,6 +338,8 @@
 				"url": "https://indieweb.social/@thomasreggi",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d94b3589df1f1bd2d2a18431fcc13d7fc1bc2ce3805e419dc4f76281bf4f405c.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109293772351453289",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -307,6 +351,8 @@
 				"url": "https://infosec.exchange/@AlesandroOrtiz",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f7a9bfc530274c0ebd58f71c3e85e2b36c4191ca2c0d2b2ef9d351157535b8c3.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109295149453262611",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -318,6 +364,8 @@
 				"url": "https://piaille.fr/@ototoi",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c2740dc7bf6534206fb3f0e7035d2044343ef2a044a92275c48b4a582cb8fdbd.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109387376907042246",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -329,6 +377,8 @@
 				"url": "https://mastodon.social/@knaackbuilt",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fa163ebc4196e115f58646e4baa170318397ea6571a82018f6c50e0a3fe46be5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109296929989207421",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -340,6 +390,8 @@
 				"url": "https://social.spooky.click/@matthew",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109366579768164709",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -351,6 +403,8 @@
 				"url": "https://toolsforthought.rocks/@boris",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f9e25e17db1ec4798b7f0777d1b4e38fe12d12e64beaf4c51239156cbe252a2e.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109359552211160969",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -362,6 +416,8 @@
 				"url": "https://mastodon.social/@mathieuhuot",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6b9ad40a0f29d6e7e59f2c3a5ae834fbbbff884fc525a1bc647b18a6107bc5a5.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109295840086325161",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -373,6 +429,8 @@
 				"url": "https://mastodon.social/@mvsde",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109289744030118387",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -384,6 +442,8 @@
 				"url": "https://mastodon.social/@Tender",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/845402ca2f1ceb04438aa40c0365718ddbba13e1490b06ce540354b32543a65d.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109356274901747460",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -395,6 +455,8 @@
 				"url": "https://social.lol/@la",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5989a3821b4d527c37bc71860a170d0a741aecd6d1d4668beb7955a2056280db.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109303297773054874",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -406,6 +468,8 @@
 				"url": "https://mamot.fr/@nhoizey",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5fa24c7dbcb46640e1137d65e156fbcb15bc2e3759135ed7481ae94ace2e80fb.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109288230453300889",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -417,6 +481,8 @@
 				"url": "https://fosstodon.org/@eleventy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1176b0620be1ff0bcbd71e67fa0600b11b8b1b7b88411d50c735880893da41af.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109325867586024180",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -428,6 +494,8 @@
 				"url": "https://friend.camp/@cody",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1ee8588e5a6c4e9839724ca8464add329c43dcd2935bbf48df9efd5b0f388ede.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109293771781560091",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -439,6 +507,8 @@
 				"url": "https://fandom.ink/@gekidasa",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4c0d69e561c6f5b685ca33a1f352fcf8bfac5c1dc88df7af3ebf83b57f658424.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109405170555238514",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -450,6 +520,8 @@
 				"url": "https://indieweb.social/@matrosero",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/52eda52986509d713370ee406b68d7a07383457fd8ac7e62466315f577a7140a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109427933203287841",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -461,6 +533,8 @@
 				"url": "https://mastodon.social/@tylerscramble",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c8c87c5f3a2aba8e842ade804ce6a8af1163bfc78c76a3f31871a0d944741d06.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109427914676732442",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -472,6 +546,8 @@
 				"url": "https://mastodon.social/@jheady",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d9ca75b83364b0a3b1ac4436ec410f8b6f697e0c4ddf40d0b2b2a78db07478fc.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109306988057720938",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -483,6 +559,8 @@
 				"url": "https://mas.to/@maaretp",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/893e3bf6659c8d7b162ea67940a3b5c1d97a61c7d9c215018429249674bda189.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109358973425114956",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -494,6 +572,8 @@
 				"url": "https://mastodon.social/@pkiff",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/519989e1370e84411fffc9f03d447f51d0a3cf6f01ec009533f893d296a1eaf2.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109309578248614453",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -505,6 +585,8 @@
 				"url": "https://mastodon.social/@Colarusso",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/423ef0db28f257141416fd09840170fe14de125ae520d89213a0c4e67ba00414.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109382361772231106",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -516,6 +598,8 @@
 				"url": "https://dice.camp/@colinaut",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1046edb61398a347224f2183bf40ec44671f8167af8e4cbec5763e93e90e65a2.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109320695943832786",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -527,6 +611,8 @@
 				"url": "https://mastodon.social/@docpop",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8073dc3dfadd0b2386ae8542aa8492f28e233566bd553b5a051fecc9c04a7aa6.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109317531841798056",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -538,6 +624,8 @@
 				"url": "https://mstdn.social/@quinnanya",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/154564d9d6cc2a1460afa05d7cdc2172c05b9702d1e49193ebf42f1db509ee30.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109293983881156695",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -549,6 +637,8 @@
 				"url": "https://social.lol/@zerocaps",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/33287fa9cdfd0ae207588a5aa06a7be3611a268ecaa9f7e54b956243762c088a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109289302894824118",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -560,6 +650,8 @@
 				"url": "https://mastodon.moussaclarke.co.uk/@moussa",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0b76654eaa4ae9737404052610765690c99f7347848c888c2d70b1631479609d.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109364704218912241",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -571,6 +663,8 @@
 				"url": "https://mastodon.social/@fernandomateus",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8b9e6c3330eec2f350eebb5e974202b7395f077f2ad86223e37fabfddf15cf61.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109315721479762331",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -582,6 +676,8 @@
 				"url": "https://mastodon.scot/@ben_seven",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fc85a078569ec087b9c47fa96c3c5542ac558155634dd97703a6a5bc329cf93b.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109427266070079139",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -593,6 +689,8 @@
 				"url": "https://piipitin.fi/@ojrask",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f94bf7dc9b636c7e57d315653bd93aae6c3f51f6b4c941aec86918825f8e0f27.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109322238715787857",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -604,6 +702,8 @@
 				"url": "https://scholar.social/@Lambo",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bdf5d8af9cea9756d9e636fcd1eee1e5a66b5dc9a2cf49987878765ab20d3c72.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109386026228770582",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -615,6 +715,8 @@
 				"url": "https://mamot.fr/@nemobis",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/af4b2ad6138280d3fc877a7d069addc6247cd58ecc089e25899542ada68c170f.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109292616405697939",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -626,6 +728,8 @@
 				"url": "https://zirk.us/@jillian",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/930aafedf589d13f04fe825f53b737553e8e7a6da79973fe16b36b4c287b1a54.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109428921930956170",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -637,6 +741,8 @@
 				"url": "https://mastodon.clipperz.org/@gcsolaroli",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109360025381098870",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -648,6 +754,8 @@
 				"url": "https://mastodon.scot/@accudio",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8f911a0013ec407e4ff84660dea4c1ffa449d75ffc8316eb71736c148e27d15b.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109292524634474961",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -659,6 +767,8 @@
 				"url": "https://hcommons.social/@dr_pda",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1dc5bbbeee29e4ae635fb90baf3fe4e88a4a09a003f7895cb9899aee0e9cfc78.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109428509641106496",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -670,6 +780,8 @@
 				"url": "https://fosstodon.org/@ayliu",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/867e855545ac93b19bde62ca706acced52d6b8369dce54abc64e2ef015ee3ef8.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109429563217508253",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -681,6 +793,8 @@
 				"url": "https://mastodon.social/@markcmarino",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/17222e1ec79c1bbed2bb151da2ebcf65a5977e2bd55c86c2c8a08ed3f9edbd3c.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109430741637697895",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -692,6 +806,8 @@
 				"url": "https://mastodon.social/@greatislander",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/769223b57622e57ca2cd45d66df0b18beca1a8596deb146db99ce4434cf6ffab.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109290584959487271",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -703,6 +819,8 @@
 				"url": "https://mastodon.social/@fredyfx",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9d2d0b1a3315bb1ebdbd255b4400f999a9afcd16b921d81f7eb873f9177ab1fd.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109431281806555921",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -714,6 +832,8 @@
 				"url": "https://sfba.social/@fonts",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/85c03db8c39dfbac00d4887e63b5466baa4e9fafd5e273fecd4b815bacba6839.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109354246570539845",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -725,6 +845,8 @@
 				"url": "https://mastodon.social/@matthiasott",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4ae78b85251eb9078dd4ae7828f00cad1932b195816d612a1dbb6216f7dcd4ce.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109291233828237636",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -736,6 +858,8 @@
 				"url": "https://mastodon.cloud/@chrissyhunt",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fca65b69741d576a7ee6f8663063811da8131ff3759aa46ca2cfcefb84f41da6.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109380954734396203",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -747,6 +871,8 @@
 				"url": "https://mastodon.xyz/@gvenk",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e289ca03a77a32d60fd3125a3e5ecf225c654672ffa1a3c5f5bb9f7c87c2adc3.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109385518315287318",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -758,6 +884,8 @@
 				"url": "https://mastodon.social/@jojannekevdbosch",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/af4a6a969f83143f88fe972add6854132967a9050e905a2c000e094e05e3daf7.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109314360105453768",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -769,6 +897,8 @@
 				"url": "https://mastodon.social/@ronaldsvilcins",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9e1e9e798f24df251e8596fbc5aef8c4b72690148b4932f0975d1fb30c4aafbe.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109294208386440007",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -780,6 +910,8 @@
 				"url": "https://mastodon.lol/@m14t",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4ed75e59393df55376cbe69bad1345b29a1f931711e0b500f6a6e670cbfcebc8.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109431372863669588",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -791,6 +923,8 @@
 				"url": "https://pkm.social/@ike",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1ae867e868a534e29dc8c8170004b4b1edce00731db51decee88093add1c162c.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109431302428820961",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -802,6 +936,8 @@
 				"url": "https://mastodon.social/@grooovinger",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109363653035686101",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -813,6 +949,8 @@
 				"url": "https://fosstodon.org/@alexandru",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c59b2c5bdbe8485ea63afaa7095e46dd4a67b32ede20f1825f99f9bc1dbb36f4.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109380013892510235",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -824,6 +962,8 @@
 				"url": "https://mastodon.com.br/@andregil",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/dbe9c9d20624f4f0e5a29f2b6d594099f11f499f861aad10fcc607c9b354be99.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109354271804534981",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -835,6 +975,8 @@
 				"url": "https://mas.to/@mraerino",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/84352927135ca02651a7a873fa714bb55919dab007d0d603ff46733c68ed4b5e.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109405129637630330",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -846,6 +988,8 @@
 				"url": "https://mastodon.social/@bbs",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d4254f73c402b3e77d0a7408b0588eca071c1e5c64dae81ed0afba85900155c4.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109433484015106193",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -857,6 +1001,8 @@
 				"url": "https://mstdn.social/@mattwilcox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8c2544c59e891b0d027338decab535083045f57f1b3b814adabf638ac43930d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109287949593182322",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -868,6 +1014,8 @@
 				"url": "https://mstdn.social/@markku",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/557f1f4e9535c68fb9eaeda516ac01024cf1b3ab3c14a949a1f8f437acdb6e63.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109433058701459416",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -879,6 +1027,8 @@
 				"url": "https://honk.farm/@eric",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/08d19e700b8190d5f0a8522cf29429cc53732347e6822b7ebecdb5b55ad1b098.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109303355398422301",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -890,6 +1040,8 @@
 				"url": "https://hachyderm.io/@timothyceegee",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a7e32af8db728fb01ff46f02d4fe1052c5d51ed83e8650394e69de158b3f8570.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109524943029069025/109524208708327559",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		}
 	],
@@ -903,6 +1055,8 @@
 				"url": "https://fandom.ink/@gekidasa",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4c0d69e561c6f5b685ca33a1f352fcf8bfac5c1dc88df7af3ebf83b57f658424.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109405170555238514",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -914,6 +1068,8 @@
 				"url": "https://indieweb.social/@matrosero",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/52eda52986509d713370ee406b68d7a07383457fd8ac7e62466315f577a7140a.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109427933203287841",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -925,6 +1081,8 @@
 				"url": "https://front-end.social/@saneef",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/599eb9df9d64dadea2d33745f76d1910b2caa6b1cf84e6ebf38197af2dfeeb34.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109383466906758429",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -936,6 +1094,8 @@
 				"url": "https://techhub.social/@develwithoutacause",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109332518937677894",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -947,6 +1107,8 @@
 				"url": "https://mastodon.social/@tylersticka",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ecfc5765a49387efd278a21fc94a9266e787e0e8a755ea8f58ee9778d9361b3c.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109303655278383068",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -958,6 +1120,8 @@
 				"url": "https://tech.lgbt/@fossheim",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9b0a019e27dbe42b768ee1843dff3b75b102d5390596304f2961163a0d3b11ee.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109292143866385990",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -969,6 +1133,8 @@
 				"url": "https://indieweb.social/@thomasreggi",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d94b3589df1f1bd2d2a18431fcc13d7fc1bc2ce3805e419dc4f76281bf4f405c.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109293772351453289",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -980,6 +1146,8 @@
 				"url": "https://jawns.club/@karschsp",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d1d6e2504e3b21ddea5001df84a743f9d56f525d4a48dabc9754aa1da26a855b.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109293787373726418",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -991,6 +1159,8 @@
 				"url": "https://social.spooky.click/@matthew",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72c534840b17f0606b3dbd2ab26d6b8a182ed7fb52caabf29e6ca07ea75b9fb1.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109366579768164709",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1002,6 +1172,8 @@
 				"url": "https://bell.bz/@andy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cea017ea6e66e1ee7d2f97f7278d83b1aa6a13ccb195c71c06a3e7b04d9bdfa0.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109365871123336966",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1013,6 +1185,8 @@
 				"url": "https://mastodon.social/@mathieuhuot",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6b9ad40a0f29d6e7e59f2c3a5ae834fbbbff884fc525a1bc647b18a6107bc5a5.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109295840086325161",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1024,6 +1198,8 @@
 				"url": "https://toolsforthought.rocks/@boris",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f9e25e17db1ec4798b7f0777d1b4e38fe12d12e64beaf4c51239156cbe252a2e.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109359552211160969",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1035,6 +1211,8 @@
 				"url": "https://mastodon.social/@mvsde",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109289744030118387",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1046,6 +1224,8 @@
 				"url": "https://mamot.fr/@nhoizey",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5fa24c7dbcb46640e1137d65e156fbcb15bc2e3759135ed7481ae94ace2e80fb.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109288230453300889",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1057,6 +1237,8 @@
 				"url": "https://a11y.info/@ben",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7827bcde3b54d2e02579e6a6d4182b877fc8ef8ca47132464b20882c6536ec10.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109287850606919513",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1068,6 +1250,8 @@
 				"url": "https://fosstodon.org/@eleventy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1176b0620be1ff0bcbd71e67fa0600b11b8b1b7b88411d50c735880893da41af.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109325867586024180",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1079,6 +1263,8 @@
 				"url": "https://glammr.us/@wynkenhimself",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/db730787c9065e2d96f79c17c6586ec32f12341113e153cf476cc4fa6c04b2f2.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109428351922750742",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1090,6 +1276,8 @@
 				"url": "https://mastodon.nl/@mlinzner",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b216156996633299b750d83b3507fecde49532f63598e5ca63c67c1440e9d2c5.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109394159745606928",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1101,6 +1289,8 @@
 				"url": "https://mastodon.social/@pkiff",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/519989e1370e84411fffc9f03d447f51d0a3cf6f01ec009533f893d296a1eaf2.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109309578248614453",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1112,6 +1302,8 @@
 				"url": "https://m.nintendojo.fr/@meduz",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/72ebf00b867e87cf3b53d81fccb5589beae93c21c54974941311fd2084e5b4d7.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109293637138050619",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1123,6 +1315,8 @@
 				"url": "https://digipres.club/@anj",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/98ae3997e931cae8d185dad754280500edb4c4ef658f22b833004b5a15dd71c4.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109428171898697974",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1134,6 +1328,8 @@
 				"url": "https://law.builders/@colarusso_algo",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4a87b4c5ee58b900ff2956bdd55243846bb656e5c77acd8f494ff66e9b703db8.gif"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109427701076913625",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1145,6 +1341,8 @@
 				"url": "https://mastodon.social/@carlynorama",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/494c28d54bc97ac40f61fb8b117710ffe5d670e6e25657e9ac206e1162a0e2fd.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109309786118965736",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1156,6 +1354,8 @@
 				"url": "https://mstdn.social/@quinnanya",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/154564d9d6cc2a1460afa05d7cdc2172c05b9702d1e49193ebf42f1db509ee30.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109293983881156695",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1167,6 +1367,8 @@
 				"url": "https://mastodon.moussaclarke.co.uk/@moussa",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/0b76654eaa4ae9737404052610765690c99f7347848c888c2d70b1631479609d.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109364704218912241",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1178,6 +1380,8 @@
 				"url": "https://dice.camp/@colinaut",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1046edb61398a347224f2183bf40ec44671f8167af8e4cbec5763e93e90e65a2.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109320695943832786",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1189,6 +1393,8 @@
 				"url": "https://piipitin.fi/@ojrask",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f94bf7dc9b636c7e57d315653bd93aae6c3f51f6b4c941aec86918825f8e0f27.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109322238715787857",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1200,6 +1406,8 @@
 				"url": "https://openbiblio.social/@cosima_wagner",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/728fc1b5584a6e2409bcbd34d47aa3fc1fe58a85184fe9b3355b05b0325a4486.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109428999598409039",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1211,6 +1419,8 @@
 				"url": "https://digipres.club/@RoxPoNinja",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e567db84d14544cd359064916863e112eef185505938c7140cb0ef43871a5730.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109428779074023336",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1222,6 +1432,8 @@
 				"url": "https://mastodon.clipperz.org/@gcsolaroli",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109360025381098870",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1233,6 +1445,8 @@
 				"url": "https://openbiblio.social/@vform",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/352b24705b3a6a8c0e3f57e80c532fb937439feed4689fa0fcee68c15a1401fb.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109294010087895864",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1244,6 +1458,8 @@
 				"url": "https://digipres.club/@bitsgalore",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b1643ccd6d993a772c34e122ac928dab927356950c3f12606a99f68e657699cf.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109428515779699278",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1255,6 +1471,8 @@
 				"url": "https://hachyderm.io/@kevinctofel",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fceb98ff34d73cb2b6ec5fdb690a534d348997f9fad1297c4ffb14cb40ed3afc.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109407207285953686",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1266,6 +1484,8 @@
 				"url": "https://seocommunity.social/@ebbingcasa",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b79a742803fb313eb8af2dea36a7497a9d5b3dea26aa0756af1ea891bd6f98fb.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109397694162972447",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1277,6 +1497,8 @@
 				"url": "https://digitalcourage.social/@wohfab",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2beda3a8546d6ffe6c4587969c7355ad7cd05b850f79d73bee60b77d038870b4.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109287735360810910",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1288,6 +1510,8 @@
 				"url": "https://mastodon.online/@dooz",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7a3e03d9e8c4959e217d9c671ea7d23a77346e0e210790ab6a747187be2a6292.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109287810707162105",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1299,6 +1523,8 @@
 				"url": "https://mastodon.social/@matthiasott",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4ae78b85251eb9078dd4ae7828f00cad1932b195816d612a1dbb6216f7dcd4ce.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109291233828237636",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1310,6 +1536,8 @@
 				"url": "https://toot.cafe/@nickytonline",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/747f14e657578cdd6ebbf6e1df872cc8407eff3777a389f5723c6fc251fc50b9.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109292548737077544",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1321,6 +1549,8 @@
 				"url": "https://layer8.space/@RyunoKi",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/26dacb234de95e11102acdc9db28142662f350d6cfc7b1fc671b2e07affe2173.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109295351856409569",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1332,6 +1562,8 @@
 				"url": "https://indieweb.social/@addyosmani",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fed7f9353b980dcd9422c94f6cdc5270058332c1e433a42b43b2f2e14ef23f37.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109300741065131572",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1343,6 +1575,8 @@
 				"url": "https://mstdn.md/@nicu",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1d2337cab3d558ce0ff835e0a4cf725da7fa5313b307f97225caf5740bd053cc.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109431233056613152",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1354,6 +1588,8 @@
 				"url": "https://mastodon.cloud/@chrissyhunt",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fca65b69741d576a7ee6f8663063811da8131ff3759aa46ca2cfcefb84f41da6.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109380954734396203",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1365,6 +1601,8 @@
 				"url": "https://mastodon.social/@grooovinger",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109363653035686101",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1376,6 +1614,8 @@
 				"url": "https://mastodon.xyz/@gvenk",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e289ca03a77a32d60fd3125a3e5ecf225c654672ffa1a3c5f5bb9f7c87c2adc3.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109385518315287318",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1387,6 +1627,8 @@
 				"url": "https://toot.community/@danielhpavey",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2a21cb8776cd888cda532f6f03109854c59df5de83d96ee4357977a4dd7b2fb2.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109431430659473226",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1398,6 +1640,8 @@
 				"url": "https://mastodon.social/@jojannekevdbosch",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/af4a6a969f83143f88fe972add6854132967a9050e905a2c000e094e05e3daf7.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109314360105453768",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1409,6 +1653,8 @@
 				"url": "https://tech.lgbt/@alex86",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3a592dcc28a670471a8bd79b5265e4527db9a2fc0c34973c51207b0c927d7fb0.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109330426196961205",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1420,6 +1666,8 @@
 				"url": "https://status.steren.fr/@steren",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b78fffbe3ef8a0a560a8e2690f1cda935e3585479b7ab0c6968813912293e815.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109292783958540447",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1431,6 +1679,8 @@
 				"url": "https://fosstodon.org/@leonp",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4396854c04e65e1fa7c7a54fc30c5ef6d3f4d86d1df183ff969e1a8a29f202a3.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109361043005799150",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1442,6 +1692,8 @@
 				"url": "https://mastodon.hidupmanis.studio/@jmalonzo",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5de3da2f13c57d6f7946e36d68cf2a4d3bf8658dfa40e6103b7bac4373fc33b9.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109386094916776083",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1453,6 +1705,8 @@
 				"url": "https://mastodon.social/@mrcgrtz",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4efc64684372ab1bc38fe20c82e8b636ed13f1b67a6bedd1e079c464e600d8d9.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109316091132737591",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1464,6 +1718,8 @@
 				"url": "https://front-end.social/@Aaron",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5d1a29b359c1de0fb44c80d47bf7b566c0bd20058aad1f724124fdd01dc1dab7.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109327796791117808",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1475,6 +1731,8 @@
 				"url": "https://fosstodon.org/@wook",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/edc8ac469ba8ff3447c495df87d669de93033c324280bdbb9e4a285196d340e8.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109314030425201172",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1486,6 +1744,8 @@
 				"url": "https://mstdn.social/@markku",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/557f1f4e9535c68fb9eaeda516ac01024cf1b3ab3c14a949a1f8f437acdb6e63.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109433058701459416",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1497,6 +1757,8 @@
 				"url": "https://mastodon.social/@jfporchez",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/255988ea52ed9b1c1fc0bf0caa5005d13a8c5eb8adb1e9cd0b551b4629504036.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109427710151554532/109376144297786921",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		},
 		{
@@ -1508,6 +1770,8 @@
 				"url": "https://hachyderm.io/@timothyceegee",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a7e32af8db728fb01ff46f02d4fe1052c5d51ed83e8650394e69de158b3f8570.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/109524943029069025/109524208708327559",
+			"target": "https://www.zachleat.com/web/tweetback/",
 			"via": "webmention"
 		}
 	]

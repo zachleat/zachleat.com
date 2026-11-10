@@ -12,6 +12,8 @@
 			"date": "2025-09-19T12:26:11.000Z",
 			"content": "`scrollbar-gutter` is great, but I don&apos;t know if I&apos;d go so far as to argue that everyone should be putting it in their resets. As far as I&apos;m aware, there&apos;s currently no way to put *anything* in the space it reserves, which unfortunately makes it awkward to use with some pretty common layouts",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/at%253A%252F%252Fdid%253Aplc%253Axelkj5g5tyniwkaxkxzi5hhj%252Fapp.bsky.feed.post%252F3lz6udnp3dc2n",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -26,6 +28,8 @@
 			"date": "2025-09-19T13:59:22.000Z",
 			"content": "As long as you don’t go for `scrollbar-gutter: stable both-edges`, you should be fine.\n\nReason: Chrome has a bug in which the gutter is doubled up on “retina” devices: <a href=\"https://issues.chromium.org/issues/40064879\">issues.chromium.org/issues/40064...</a>\n\n(The bug is assigned, and I heard engineering will look at it next quarter)",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/at%253A%252F%252Fdid%253Aplc%253A343p6xcgmvkpz5abgezlgyep%252Fapp.bsky.feed.post%252F3lz6zkbc42s2m",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +44,8 @@
 			"date": "2025-09-19T14:01:13.000Z",
 			"content": "There’s still some discussion on how viewports should behave in this case.<br>\n<br>\nWhat the WG did resolve on – but this hasn’t been implemented anywhere (????) – is that top layer content (such as a modal dialog and its backdrop, or a fullscreen video) can draw on top of the reserved space.",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/at%253A%252F%252Fdid%253Aplc%253A343p6xcgmvkpz5abgezlgyep%252Fapp.bsky.feed.post%252F3lz6znkz6u22m",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -50,6 +56,8 @@
 			"date": "2025-09-21T23:10:33.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://jeffbridgforth.com/weeknotes-september-21-2025/",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -64,6 +72,8 @@
 			"date": "2025-09-26T15:04:14.000Z",
 			"content": "A great usage of the new(ish) scrollbar-gutter property. \n\n<a href=\"https://www.zachleat.com/web/stable-scrollbar-gutters/\">www.zachleat.com/web/stable-s...</a>",
 			"type": "mention",
+			"source": "https://bsky.brid.gy/convert/web/at://did:plc:lyk2pixxcmyeu4jrapaq26fy/app.bsky.feed.post/3lzqqgs7k322n%23bridgy-fed-create",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -78,6 +88,8 @@
 			"date": "2025-10-12T17:30:37.000Z",
 			"content": "<p>Tired:<br />`html { overflow-y: scroll; }`</p><p>Wired:<br />`html { scrollbar-gutter: stable; }`</p><p>Nice little <a href=\"https://mas.to/tags/CSS\">#<span>CSS</span></a> gem from <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span>.<br /><a href=\"https://www.zachleat.com/web/stable-scrollbar-gutters/\"><span>https://www.</span><span>zachleat.com/web/stable-scroll</span><span>bar-gutters/</span></a></p><p>The feature detection is the cherry on top.</p>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/css\">css</a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/CSS\"></a>\n<a href=\"https://www.zachleat.com/web/stable-scrollbar-gutters/\">A tiny bit-o-CSS for Stable Scrollbar Gutters—zachleat.com</a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/mastodon/@zachleat@fediverse.zachleat.com/115362381011743211",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		}
 	],
@@ -91,6 +103,8 @@
 				"url": "https://mastodon.social/@yacodes",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c522861d16e0443757bb3c10a682f6c7d8d6bdd446c20f728c995c9bbbdbe68a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/114225536172579296",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -102,6 +116,8 @@
 				"url": "https://mas.to/@smallen",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/64dabab3af236e37eb3070b4326ffc200e1cf8067b8d74627c1aae7491388ff2.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109442102437397158",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -113,6 +129,8 @@
 				"url": "https://typo.social/@myfonj",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3b1d48f90f7b66d939ced5eae43ec54677dad2f289de6535f8ccee76147634a8.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/115022775832469349",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -124,6 +142,8 @@
 				"url": "https://mastodon.social/@danklingjr",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c23b98b98e04acc411f094fd10de787572180a92f635a04367bb37a6dd9554b9.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109296270930410005",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -135,6 +155,8 @@
 				"url": "https://mas.to/@maxfenton",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/17c08e8d2279c1721821fa00e3976364e1d12952eadc3f57cc5e704870dc3ba3.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/113393205249439115",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -146,6 +168,8 @@
 				"url": "https://mamot.fr/@Nephou",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c020f0d4a911c94de5c86225b783dd5a8cbfb8f59d0064ec16dce52a231ecb7a.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/110581502234761185",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -157,6 +181,8 @@
 				"url": "https://indieweb.social/@theadhocracy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/12037f060650656cce4390d76eb3ecb47b14f2728887feb01f58b635b285ee27.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109320417139928827",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -168,6 +194,8 @@
 				"url": "https://mastodon.gaunt.dev/@matt",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5c6842643fc5dd51e99ae83790a2150b257e9f78932fdb86992ef043a6501c38.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109357235740987063",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -179,6 +207,8 @@
 				"url": "https://tilde.zone/@nowthis",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2fab62bf6a354d953f86a656f7c22befc71aa79a3679006553831e486bc33488.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/110858087446694046",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -190,6 +220,8 @@
 				"url": "https://bsky.app/profile/anjabe.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3fed6f21b4ee285dba315ee8d0242b924fbef0f2db92ded6a9b9d0e377abc248.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253A7fz5xqwydrl3iykd6ruu6etm",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -201,6 +233,8 @@
 				"url": "https://bsky.app/profile/tonysm.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/06c8fdf93e1b5cd836d89ccfe9b3f5238a3b7c9136ce14fe7b4c7b54f7599bc8.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ajyzil24hsqgqmfnnni3uv3jo",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -212,6 +246,8 @@
 				"url": "https://bsky.app/profile/yanduv.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/abffaed68acd65ed082a798417f7bbf06ca139438782035d88850fee70241039.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253A6dyy5rcymkmuznmvcmknznwu",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -223,6 +259,8 @@
 				"url": "https://bsky.app/profile/stefanmatei.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7d48ad537bbf0d8d33b7b244de892951a89d0a2e44bdaa95b06d5586ec042b55.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Akomsc4cibngambanqjhpwweu",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -234,6 +272,8 @@
 				"url": "https://bsky.app/profile/nebulascode.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ed176de065a5b1cb3a8e3c58be82dbd6ff041c38a7745a4cd8e088047abc8429.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Agjvbwaclt3wn4uydrj3jcypt",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -245,6 +285,8 @@
 				"url": "https://bsky.app/profile/nickyt.online",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3048ef7accfbcca4d0b9dd7640a27377327defa209781029194847532a1b960f.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Avug3vkycxfjbkiwsyyrak4gh",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -256,6 +298,8 @@
 				"url": "https://bsky.app/profile/bsky.danszabo.ca",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3e08dea4d85056b46af7b269a49428f7ea44ce4c48da99088c80fb2cbdf82e9b.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Anjjddpp542tdlmnl6ljgkufj",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -267,6 +311,8 @@
 				"url": "https://bsky.app/profile/sergio1984.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f40d7d953064549033957a8cb8d09170fbc17acfc2ad0dd740bcf4ea0662c50e.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Akgrbnhf2bdyk2nbwf44xcxpc",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -278,6 +324,8 @@
 				"url": "https://bsky.app/profile/ricardoamaral.dev",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d0faf4f7878f67557ba6e1ce62942f22954f96a6dfffbf9dce8a8b191092f4e5.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ahtnejvnavf56qp3sulf23oqk",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -289,6 +337,8 @@
 				"url": "https://bsky.app/profile/nateflick.dev",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b87b0021ea7a46cdbe8648547afe7ca5351ab953441f53642b31aace3203ac3a.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ae5fkzbzmdc7pl3dy4zv7v5g7",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -300,6 +350,8 @@
 				"url": "https://bsky.app/profile/joostschuur.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/01d326bebc61dbb42b47a5a6b93b0df9123fd0b2de1639a144f8fda1fe966685.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Arkzm7gw7vchhhmsoc7yisac3",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -311,6 +363,8 @@
 				"url": "https://bsky.app/profile/masonconkright.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/26725dc05998beb6207e0509fbc77ca2679ef6c720db3f29e732fd03c21ef0a5.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Axrhuuycm2o43add7euyy2vob",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -322,6 +376,8 @@
 				"url": "https://bsky.app/profile/jakelazaroff.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/13682ea7b6b961ce82281202879ac485e06a0de295249ff3cf2df10960ccb246.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Avrrdgcidwpvn4omvn7uuufoo",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -333,6 +389,8 @@
 				"url": "https://bsky.app/profile/css-tricks.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7bdc93b7bf5d8a8505ffa303210dc0f6417bccbda055784b277bb8b711083f03.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Affm3o4vz473f6q7idxz4pmz7",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -344,6 +402,8 @@
 				"url": "https://bsky.app/profile/friskymakes.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/0c6736a30c6cb636d5eaed8437351888dbbb09021dbf76ab0558fc721644009a.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Acvxrsstxfikjqswvjne4gou2",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -355,6 +415,8 @@
 				"url": "https://bsky.app/profile/brizzle.net",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8d338f437b62d630934f660289a054956323c3d1cd86d1242a757372f9dfe012.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Avd4yvrmeiwyghvcnmmr325uw",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -366,6 +428,8 @@
 				"url": "https://bsky.app/profile/youngelpaso.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ed7b6bd546dc781d7d54795cc39e1b291d589a6ff3c984479e3cdd988420f883.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ayexcapfkucnqipkpedpx2lyi",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -377,6 +441,8 @@
 				"url": "https://bsky.app/profile/nileshprajapati.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4f6fd2cdc4e6a535f7ec25d990e84a25c5dd36b2be5268380a9b29fbc48f2c6d.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Awsvbkey2oifwfbsjbwigre7x",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -387,6 +453,8 @@
 				"url": "https://bsky.app/profile/diegoetorres.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7cb831a6fb0906bfcd9da5fd1bb25d108185a2b9ed9042baf988efebb9016d6d.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ag2vv4au6i7gidx7nd23n4fa3",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -397,6 +465,8 @@
 				"url": "https://bsky.app/profile/philhoyt.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/06d8e16d7c2b06062540fff413701299fdf1bc70955d4b1ca1779e918e3c80d6.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Azwcgp4qnnoczzodeh5jf5bl3",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -408,6 +478,8 @@
 				"url": "https://bsky.app/profile/samvgm.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3b0a917476fb2b36a70739a33f1dabb36ea9c4b6a3bcca3466685bdcaddc1a8a.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253An44hci3qtfpmynofp5udqley",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -419,6 +491,8 @@
 				"url": "https://bsky.app/profile/woodcomm.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/d9bbeb328bb71bd67349b95072b6066145b0fb3a1aa665df5f21ce3d5ab05427.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Awc7kebyyfnku4fktxmapajil",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -430,6 +504,8 @@
 				"url": "https://bsky.app/profile/kevinpowell.co",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b75089e6771d2606d88816470fead795f73f38199f7e17685a1af80f63943f20.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Axbj7qbl7qmoo7dpf5dheplex",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -441,6 +517,8 @@
 				"url": "https://bsky.app/profile/offgrid.lol",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4dd02c7c0f8b6fe6cb8b2ec24677dad1c02fb8e19fabfc12d889dc220a239c1a.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253A7oh7a3kxkgqqo6qcc7eiqsad",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -452,6 +530,8 @@
 				"url": "https://bsky.app/profile/jeradsloan.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/f3ccee66586e3accd0e159bb074fac599c044f815bd95c28ade6926c9d3cedd4.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253A73yshv4tm6j4yd7al7p3yyql",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -463,6 +543,8 @@
 				"url": "https://bsky.app/profile/jamboid.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/5f18467fb4561a1d191de40e8e92d4daf2d879dd7afefe97c8b41b43e85df7d1.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Aicmdoja4srgucs5k4gl3cqmm",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -474,6 +556,8 @@
 				"url": "https://bsky.app/profile/jrlarsen.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/019780a2b0293f735e352866b63fd1eb51a6c362cf764c3e054da7773b27b008.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Adx4hfgdeyfswmn2muss7gy6s",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -485,6 +569,8 @@
 				"url": "https://bsky.app/profile/jonroberts.dev",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/96dc55f4965f4e2508b05fe61ec1bffeec0aef3cc7b212ae551b6591973fd346.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Arye36k7cvklgomotmfalw333",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -496,6 +582,8 @@
 				"url": "https://bsky.app/profile/nicethanks.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/31eb7c69b2b0798a9455f18ff50366629ea06b16073e4b20d623d887d155039b.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ahhudxxjy6kqv7eqhsfpq2ojn",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -507,6 +595,8 @@
 				"url": "https://mastodon.social/@alexichepura",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5dab9b979ed7a51e3b8299b941fcaba2cd39465b3a4261a38a04a125af7ab2fd.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109295839314878619",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -518,6 +608,8 @@
 				"url": "https://mastodon.social/@JPKCom",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109779197194734817",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -529,6 +621,8 @@
 				"url": "https://mastodon.social/@andybond",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e4e6a40b48714ce3f8ca755988c2d0983dfd5907fdb35ac05faa803a00921f80.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109308377493445071",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -540,6 +634,8 @@
 				"url": "https://mastodon.social/@jelmerdemaat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9fcc7582c1ebc004f3992a7228655af5bbe4db40272c1e72ddc2493020e17ef4.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109296287300626371",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -551,6 +647,8 @@
 				"url": "https://bsky.app/profile/mykytabatrak.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/4de4f023295545f5b89b37b6fc56cd10790208f85d3fc185917a15916178571f.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253A6k7ajltxqjij6rplckx6xxel",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -562,6 +660,8 @@
 				"url": "https://bsky.app/profile/kevinkipp.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/386c52a9fbd7131ae96d7c9390e97f3097f5658ca339a6c95218ab40925e3d5a.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ag5ulczw3b42cymerb7b6px3b",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -573,6 +673,8 @@
 				"url": "https://bsky.app/profile/davidroessli.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7fe204036f02aba7aa144e1f28b01892da40f1ffb0452364b1b8016854f5804d.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253A5z5av6ppwv5ghden6ug46wba",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -584,6 +686,8 @@
 				"url": "https://bsky.app/profile/shaw.city",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/1a44f85e9f14ff8cba20b787e8c25548b0cc162e3d20d1b7e105ba2c0e2fb09a.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Acfzewyyzcr75z4t3vhew6o7g",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -595,6 +699,8 @@
 				"url": "https://mastodon.social/@nickautomatic",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/45d8b03318cd4a217b2dc50d69bf0bed2e93825242dbe401472de8a396f668b8.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109301140234960297",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -606,6 +712,8 @@
 				"url": "https://mastodon.social/@majjo",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/110770188087049882",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -617,6 +725,8 @@
 				"url": "https://bsky.app/profile/airmachine.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/8e2d09b449467e7b82c7836f1fc0d2e9a2c6f8be6871469823dc2869f72f4539.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Aylm5sm3xiwrpvqt6rulaxydl",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -628,6 +738,8 @@
 				"url": "https://pie.gd/@yaypie",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fbc5afa1dead8b5d6dfb337970cd69acb503589dc97ea987c860d11443a034bb.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109326996473974674",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -639,6 +751,8 @@
 				"url": "https://bsky.app/profile/v2loko7mn63auhyy.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ebcac05aef194ff7d390b6a30b77f82ed0ef071200918869c5faf3808b31ab4f.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Az35y36spdjcypagerqmji6ks",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -650,6 +764,8 @@
 				"url": "https://bsky.app/profile/fatih.6nok.org",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6ab5113a4dece9d9a402024cf7c815ba2acf8bd3c00ffd2fe23525c770c592be.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Acw4nqizhhp6apd32tcs7ddyn",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -661,6 +777,8 @@
 				"url": "https://social.lol/@travis",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109374633159834241",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -672,6 +790,8 @@
 				"url": "https://mastodon.social/@csilverman",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d3f9e6bf083be35a05327d78b886d22877a2e7dfb80e44f29a29210360cf3d40.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109321925316192008",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -683,6 +803,8 @@
 				"url": "https://bsky.app/profile/sindre.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/88c0356ce76bfd79302f6cf2f1f5dae55f077e6fa18f858f2ce4a1ddcd53d9e0.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253A45n4vwavzsetpjqy6t23skjg",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -694,6 +816,8 @@
 				"url": "https://mastodon.online/@stvfrnzl",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d62b0416ba7a82eb39b43fe89785897b2634a9bd706dfe5349d95f93b3f539ed.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109510974973019589",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -705,6 +829,8 @@
 				"url": "https://ohai.social/@dcoderlt",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109547581270619037",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -716,6 +842,8 @@
 				"url": "https://bsky.app/profile/saulhardman.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/715856ef1e4104cfb68dfc6ee210eb4ec005c2c97864bd5fc1517c760406f075.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ap522x5oyzta4v5sjzcimulxm",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -727,6 +855,8 @@
 				"url": "https://techhub.social/@mahmoudoov",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a104ccbf12b6dd98dab1339ee50105fc60e78af25403fdcf38161456f323dfe6.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/115181271981359982",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -738,6 +868,8 @@
 				"url": "https://bsky.app/profile/islandstone89.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/6039cf210843196522e202ede0c26465a312715b889574eb65b6c547ad0668aa.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ask3rvbt2tsazfcx4ozoxtxxf",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -749,6 +881,8 @@
 				"url": "https://lea.lgbt/@lea",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7c831ef20e2c7a93705007b56a71c1bcf4418386493fa60533221bd4419bdd32.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109966669846784668",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -760,6 +894,8 @@
 				"url": "https://front-end.social/@eeeps",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6b3b9bc7dd2b1579c5120214de95fac1f65d50c215f38f3253cf8c43cf33a361.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109304428669626974",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -771,6 +907,8 @@
 				"url": "https://indieweb.social/@tbeseda",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e9694c3d5ee0dc7a2c4236cc575dae76977273756f4b4cad1e4f6bfa1321e764.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109292553200066437",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -782,6 +920,8 @@
 				"url": "https://bsky.app/profile/greenjimmy.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/67aa31fc9561bc52cfee67af4fc19496a1f720353e9e5f299e2fdbc30fed6213.jpg"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Agv7offdtydaj2ck2aqmu47dp",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -793,6 +933,8 @@
 				"url": "https://mastodon.social/@Razunter",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/144616b943f8a09dfd7e8ad9feb7c692dcc4043279adfa2abaea8ddc93dfbd57.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/110877293402618067",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		}
 	],
@@ -806,6 +948,8 @@
 				"url": "https://fosstodon.org/@rauschma",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/dd44390759ae11c7558bd7a7d5b500df8cc97666a1d9baffcf53deb26aafb149.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109291906591238009",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -817,6 +961,8 @@
 				"url": "https://mastodon.social/@yacodes",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c522861d16e0443757bb3c10a682f6c7d8d6bdd446c20f728c995c9bbbdbe68a.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/114225536172579296",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -828,6 +974,8 @@
 				"url": "https://mastodon.social/@danklingjr",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c23b98b98e04acc411f094fd10de787572180a92f635a04367bb37a6dd9554b9.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109296270930410005",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -839,6 +987,8 @@
 				"url": "https://indieweb.social/@theadhocracy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/12037f060650656cce4390d76eb3ecb47b14f2728887feb01f58b635b285ee27.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109320417139928827",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -850,6 +1000,8 @@
 				"url": "https://toot.cafe/@tomayac",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bfc6c0c43c877e20f52745c3797f2df8b399c676f61af5b28b562461b499f345.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109301136001410553",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -861,6 +1013,8 @@
 				"url": "https://bsky.app/profile/youngelpaso.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/ed7b6bd546dc781d7d54795cc39e1b291d589a6ff3c984479e3cdd988420f883.jpg"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Ayexcapfkucnqipkpedpx2lyi",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -872,6 +1026,8 @@
 				"url": "https://bsky.app/profile/kevinpowell.co",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/b75089e6771d2606d88816470fead795f73f38199f7e17685a1af80f63943f20.jpg"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Axbj7qbl7qmoo7dpf5dheplex",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -883,6 +1039,8 @@
 				"url": "https://bsky.app/profile/nickyt.online",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/3048ef7accfbcca4d0b9dd7640a27377327defa209781029194847532a1b960f.jpg"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Avug3vkycxfjbkiwsyyrak4gh",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -894,6 +1052,8 @@
 				"url": "https://bsky.app/profile/stefanmatei.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7d48ad537bbf0d8d33b7b244de892951a89d0a2e44bdaa95b06d5586ec042b55.jpg"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Akomsc4cibngambanqjhpwweu",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -905,6 +1065,8 @@
 				"url": "https://bsky.app/profile/jakelazaroff.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/13682ea7b6b961ce82281202879ac485e06a0de295249ff3cf2df10960ccb246.jpg"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Avrrdgcidwpvn4omvn7uuufoo",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -916,6 +1078,8 @@
 				"url": "https://bsky.app/profile/ryanmulligan.dev",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/a654bfdf26a4a6b61fab692447373238f0fff7b363f8c60103da98eb1fde90c8.jpg"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Adu2fkuuod4mv6t2d4qpqn55z",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -927,6 +1091,8 @@
 				"url": "https://bsky.app/profile/friskymakes.bsky.social",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/0c6736a30c6cb636d5eaed8437351888dbbb09021dbf76ab0558fc721644009a.jpg"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253Acvxrsstxfikjqswvjne4gou2",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -938,6 +1104,8 @@
 				"url": "https://mastodon.social/@JPKCom",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109779197194734817",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -949,6 +1117,8 @@
 				"url": "https://mas.to/@camflan",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109569459693251466",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -960,6 +1130,8 @@
 				"url": "https://bsky.app/profile/davidroessli.com",
 				"avatarUrl": "https://avatars.webmention.io/cdn.bsky.app/7fe204036f02aba7aa144e1f28b01892da40f1ffb0452364b1b8016854f5804d.jpg"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3lz6tldc7ds2b/did%253Aplc%253A5z5av6ppwv5ghden6ug46wba",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -971,6 +1143,8 @@
 				"url": "https://mas.to/@assaf",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3b670374b0da5df30e8f6c4390f3f42af9dfaa6576b82836ad9ffb3bb80e8b06.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109354421740190371",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -982,6 +1156,8 @@
 				"url": "https://front-end.social/@AmeliaBR",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/28c3647c2db4806feca362be35e12a8cb93dfeac759fe1785dc6e65927e94463.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109304885279901783",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -993,6 +1169,8 @@
 				"url": "https://mastodon.online/@stvfrnzl",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d62b0416ba7a82eb39b43fe89785897b2634a9bd706dfe5349d95f93b3f539ed.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109510974973019589",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -1004,6 +1182,8 @@
 				"url": "https://masto.pt/@gvlx",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/62d216cbaa5d94bd93d973e1fb7b5906e77bcb9e7b1ed7aa100c2d8b93685e35.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/111369015009416614",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -1015,6 +1195,8 @@
 				"url": "https://mastodon.social/@simevidas",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/22c5d30a7be8c07be6885efd5471496a80c8a1f50e1b668cec6326366ccf7aeb.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109296269911252050",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -1026,6 +1208,8 @@
 				"url": "https://lea.lgbt/@lea",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7c831ef20e2c7a93705007b56a71c1bcf4418386493fa60533221bd4419bdd32.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109966669846784668",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -1037,6 +1221,8 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/109286461031266152",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -1048,6 +1234,8 @@
 				"url": "https://umbracocommunity.social/@joe",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6e3ce898a11c2a5d402bf71cbcc645377bbb0d0a7f67b1fdd5cd216464e59734.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/110872808150046700",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -1059,6 +1247,8 @@
 				"url": "https://troet.cafe/@Bberkholz",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4c9692f23fdbffc3812a2d518a9f72e439ae5c892c3e348c0ca638696c120c83.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115230896676865884/113651167892243284",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		},
 		{
@@ -1070,6 +1260,8 @@
 				"url": "https://bsky.app/profile/katproto.girlonthemoon.xyz",
 				"avatarUrl": "https://avatars.webmention.io/katproto.girlonthemoon.xyz/23b5c587cc189471dfceca313d4db4a6b85cfdffbc86098b36876a67e3f1cd34.jpg"
 			},
+			"source": "https://bsky.brid.gy/convert/web/at://did:plc:jl5dgp7xb34xfqlpywt7kcp5/app.bsky.feed.repost/3lzqqhtqfsf2t",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		}
 	],
@@ -1077,12 +1269,14 @@
 		{
 			"id": 1942033,
 			"url": "https://adactio.com/links/22154",
-			"date": "2025-09-25T10:52:21.000Z",
+			"date": "2025-09-25T15:52:21.000Z",
 			"author": {
 				"name": "Jeremy Keith",
 				"url": "https://adactio.com/",
 				"avatarUrl": "https://avatars.webmention.io/adactio.com/24f33c5820046ebbcb429f78bb988fc1fa9f97d35247e0b72b3fb5ff888da633.jpg"
 			},
+			"source": "https://adactio.com/links/22154",
+			"target": "https://www.zachleat.com/web/stable-scrollbar-gutters/",
 			"via": "webmention"
 		}
 	]

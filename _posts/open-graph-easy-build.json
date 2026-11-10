@@ -12,6 +12,8 @@
 			"date": "2026-09-09T14:45:14.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> This is really smart. I just nuked mine recently because I was fed up of making the ~1000 pages it needed. I'll keep this in mind if i want to do them again.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117241617886488971",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -26,6 +28,8 @@
 			"date": "2026-09-09T14:46:34.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Jokes on you, I can make whatever OG image I want with any text I want :P</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117241623144924448",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +44,8 @@
 			"date": "2026-09-09T14:47:05.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://social.lol/@robb\" class=\"u-url\">@<span>robb</span></a></span> thanks! I forgot to mention in the post that it also solved some sneaky problems with seeing 404 errors if my local build requested a production URL screenshot before it was pushed! If that happens I just show a default now (better)</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117241625009053127",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -54,6 +60,8 @@
 			"date": "2026-09-09T14:47:48.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> if it ain’t hosted on my domain it’s a deepfake</p><p>(and you could do that before!)</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117241627848485509",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -68,6 +76,8 @@
 			"date": "2026-09-09T14:50:31.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Thats also a good point, I hit that a bunch of times and it's really annoying with Mastodon especially because it caches preview images.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117241638585945938",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -82,6 +92,8 @@
 			"date": "2026-09-09T14:52:02.000Z",
 			"content": "i&apos;m confused, are you generating the same 474 images every build (or worse, every request!)?",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/at%253A%252F%252Fdid%253Aplc%253Argrzo7xept2yb2auooex4rlg%252Fapp.bsky.feed.post%252F3mv3rzbjb2k2r",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -96,6 +108,8 @@
 			"date": "2026-09-09T14:57:44.000Z",
 			"content": "Cool! If the background image is always the same, you can also speed up image generations a loooot by not spinning up a whole browser, but justing using canvaskit-wasm in Node/Deno/Bun, e.g. via <a href=\"https://github.com/mastrojs/og-image/\">github.com/mastrojs/og-...</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/at%253A%252F%252Fdid%253Aplc%253Aslxmn2ejggkwwbzlej2axmx6%252Fapp.bsky.feed.post%252F3mv3sdiehfc2p",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -110,6 +124,8 @@
 			"date": "2026-09-09T14:59:48.000Z",
 			"content": "- now it’s 1 page for 474 unique images (cached in the screenshot service, not generated every time or every build)<br>\n- previously it was 474 pages for 474 unique images (also cached in the screenshot service, not generated every time or every build)<br>\n<br>\n(I removed 473 pages from my build)",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3sh6mty22z",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -124,6 +140,8 @@
 			"date": "2026-09-09T15:02:49.000Z",
 			"content": "yeah! I wanted a 1:1 with a regular website as much as possible in my workflow so I didn’t have to worry about browser support as much in the library",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3smkt34s2z",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -138,6 +156,8 @@
 			"date": "2026-09-09T15:06:08.000Z",
 			"content": "yeah, as the website changes you&apos;d have to periodically update the background png somehow. Although that could be automated as well ;)",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/at%253A%252F%252Fdid%253Aplc%253Aslxmn2ejggkwwbzlej2axmx6%252Fapp.bsky.feed.post%252F3mv3ssiyx6c2p",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -152,6 +172,8 @@
 			"date": "2026-09-09T15:09:54.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://social.lol/@robb\" class=\"u-url\">@<span>robb</span></a></span> *yes*</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117241714736597159",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -166,6 +188,8 @@
 			"date": "2026-09-09T15:11:22.000Z",
 			"content": "ah gotcha, nice",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/at%253A%252F%252Fdid%253Aplc%253Argrzo7xept2yb2auooex4rlg%252Fapp.bsky.feed.post%252F3mv3t3udfw227",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -180,6 +204,8 @@
 			"date": "2026-09-09T15:31:22.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@khalidabuhakmeh\" class=\"u-url\">@<span>khalidabuhakmeh</span></a></span> *backs away slowly*</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117241799148227579",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -194,6 +220,8 @@
 			"date": "2026-09-09T15:40:45.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Ooh, clever! I should see if this helps get my build times down a little… thank you for sharing!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117241836137565101",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -208,6 +236,8 @@
 			"date": "2026-09-09T16:03:35.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@chriskirknielsen\" class=\"u-url\">@<span>chriskirknielsen</span></a></span> you’re very welcome!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117241925831220365",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -222,6 +252,8 @@
 			"date": "2026-09-09T16:31:14.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> So, to be clear: you are still building 474 open graph *images*, you're just not building 474 separate static HTML pages just to screenshot them to make the images. </p><p>You're using the Chromium-based screenshot service as the build tool instead of using eleventy plus also the screenshot service.</p><p>That seems like a sensible use of resources. But its not quite as impressive as you implied yesterday; your total build time including the screenshots is still proportional to page count.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/117242034593047197",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -236,6 +268,8 @@
 			"date": "2026-09-09T19:00:33.000Z",
 			"content": "Thanks for the write up Zach!",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/at%253A%252F%252Fdid%253Aplc%253Au245ppickxm7kcu4s2cam5qm%252Fapp.bsky.feed.post%252F3mv47vojtd22m",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -250,6 +284,8 @@
 			"date": "2026-09-09T19:00:33.000Z",
 			"content": "Ohhh that&apos;s clever! Took me a trip to your repo to understand,  but it&apos;s all clicked for me now ???? Adding the json to the page is the same way I do a &quot;go to random page&quot; feature - great idea! And nice way to keep it secure so folks can&apos;t just generate any OG image with URL param shenanigans.",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/at%253A%252F%252Fdid%253Aplc%253Au245ppickxm7kcu4s2cam5qm%252Fapp.bsky.feed.post%252F3mv47vo5cwk2m",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -264,6 +300,8 @@
 			"date": "2026-09-09T19:08:05.000Z",
 			"content": "you’re very welcome (and thank you for the kind words!)",
 			"type": "reply",
+			"source": "https://brid.gy/comment/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv4ad5c22c26",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -278,6 +316,8 @@
 			"date": "2026-09-20T19:56:25.000Z",
 			"content": "<p>I updated how I generate my OG images to a single page (<a href=\"https://github.com/chriskirknielsen/dotcom-2024/blob/main/src/content/og.vto\"><span>https://</span><span>github.com/chriskirknielsen/do</span><span>tcom-2024/blob/main/src/content/og.vto</span></a>), thanks to <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span>'s single-page idea (<a href=\"https://www.zachleat.com/web/open-graph-easy-build/\"><span>https://www.</span><span>zachleat.com/web/open-graph-ea</span><span>sy-build/</span></a>). I end up with 121 fewer files, nice. And the build times?</p><p>Before: 1x OG page per page<br />➡️ Local cold start (3x avg): 4.613s average<br />➡️ Netlify build: 31s</p><p>After: 1x OG page for all pages<br />➡️ Local cold start (3x avg): 4.637s average<br />➡️ Netlify build: 31s</p><p>~~Eleventy~~ BuildAwesome is just too freakin' fast to make any difference. 💀</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/open-graph-easy-build/\"></a>\n<a href=\"https://github.com/chriskirknielsen/dotcom-2024/blob/main/src/content/og.vto\">dotcom-2024/src/content/og.vto at main · chriskirknielsen/dotcom-2024</a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/mastodon/@zachleat@fediverse.zachleat.com/117305126789285582",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		}
 	],
@@ -291,6 +331,8 @@
 				"url": "https://bsky.app/profile/mastrojs.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:slxmn2ejggkwwbzlej2axmx6/bafkreicizuiyr3nvt254ufexepmsoerc5gfcpdjg4b43l4hueantbveslm"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Aslxmn2ejggkwwbzlej2axmx6",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -302,6 +344,8 @@
 				"url": "https://seocommunity.social/@simoncox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109352939518629968",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -313,6 +357,8 @@
 				"url": "https://mastodon.social/@mvsde",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5e438b36934704e62273198404a86d08d46b7e3ea18b54b5b470985ed84c08d6.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109289744030118387",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -324,6 +370,8 @@
 				"url": "https://m.trisweb.com/@trisweb",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e7c01959efbeda8d3aa9f680497afa452bb51f25bfeae0de5f91ef1cfe8ee388.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109292433914545311",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -335,6 +383,8 @@
 				"url": "https://mastodon.social/@khalidabuhakmeh",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d0d062c229426e3ca7f6e06b329c4e09c50ac702f62a4b29accb30075594935c.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109296176354255607",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -346,6 +396,8 @@
 				"url": "https://bsky.app/profile/jauntywunderkind.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:zjbq26wybii5ojoypkso2mso/bafkreigma5nlttj6wbqvoiobpvqhztjf34w4jyv2qv2vzmqfrv4pzzeedu"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Azjbq26wybii5ojoypkso2mso",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -357,6 +409,8 @@
 				"url": "https://mastodon.social/@nazhamid",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6775275a920f0bd341006c9d34abc01869e87cc4615895389c75e8406994bd4a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109315646808404021",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -368,6 +422,8 @@
 				"url": "https://bsky.app/profile/continuumdesign.net",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:rbzx7kpkmeovgwk5ul3mdzzg/bafkreibbcypvzfesep3uz72dtupq3bzlvad6atb55zjcg5kaiuptpzfig4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Arbzx7kpkmeovgwk5ul3mdzzg",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -379,6 +435,8 @@
 				"url": "https://social.tchncs.de/@teleclimber",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/05ae110c350df913372fef5e4cdbb63e41e451bd9052fe1c2d9a17cb2d92e20a.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109293783579428613",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -390,6 +448,8 @@
 				"url": "https://social.lol/@tylersticka",
 				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/110/651/355/105/380/677/original/8c28248b1638ecd2.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/110651355105380677",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -401,6 +461,8 @@
 				"url": "https://bsky.app/profile/peruvianidol.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:rj7gcscy3x3vskk7y6f2nbx6/bafkreic5ipu4lntspjmr7jhuqt2te5stqmqxn4vfr6gh4bzbkbjibbbhn4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Arj7gcscy3x3vskk7y6f2nbx6",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -412,6 +474,8 @@
 				"url": "https://bsky.app/profile/webawesome.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:uocu7waljw6y5e474k26n7ve/bafkreifmutcbbb4zymyndqeiv2itph3pm7e7zxaagnxxgxq6giateydjby"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Auocu7waljw6y5e474k26n7ve",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -423,6 +487,8 @@
 				"url": "https://fosstodon.org/@krinkle",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109292532015873530",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -434,6 +500,8 @@
 				"url": "https://front-end.social/@ashur",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/47f9e3cea1d21932327b192e59a0faf2fb69a491bb0f1df89b0ed69800960171.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109295176902307654",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -445,6 +513,8 @@
 				"url": "https://bsky.app/profile/transclude.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:vedxml2itdawk5orcxuhqn7w/bafkreiabmtuwvrpcup2w45f2js4ysmofkvqoongrqtigkdehnyhcm6mrmq"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Avedxml2itdawk5orcxuhqn7w",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -456,6 +526,8 @@
 				"url": "https://bsky.app/profile/pdfops.dev",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:s2uopacmr3yw7nzfvdllq3g3/bafkreiaxo7lgq43mmjddkjmhwmids3za2h5kylchyls4zpp3efzkfwasc4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253As2uopacmr3yw7nzfvdllq3g3",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -467,6 +539,8 @@
 				"url": "https://bsky.app/profile/sergio1984.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:kgrbnhf2bdyk2nbwf44xcxpc/bafkreibermu5o6cwinqkwavjne2lh7w2gunbzcugsefvfyd2mnranrf23m"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Akgrbnhf2bdyk2nbwf44xcxpc",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -478,6 +552,8 @@
 				"url": "https://bsky.app/profile/bunnysammy.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:yqf357a4jf5fx2blvz4y7jag/bafkreibtxgptdjypcojppqfx3kctusg7v43ojaahay2kqazsgepeqos4ha"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Ayqf357a4jf5fx2blvz4y7jag",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -489,6 +565,8 @@
 				"url": "https://bsky.app/profile/tonjohn.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:l4oopsoxraqat2yc4a74f7mi/bafkreih23c43zc2hikxvgkcbfqpri5yy4hyymuq77ipoqeqtkn2vw37g3a"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Al4oopsoxraqat2yc4a74f7mi",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -500,6 +578,8 @@
 				"url": "https://bsky.app/profile/mwdelaney.me",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:dmgoddsemnyljdrp4jgt4dam/bafkreiceamr3su5jnraffld424q2i5vw3dap5aei43qliywmg7glbm6exi"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Admgoddsemnyljdrp4jgt4dam",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -511,6 +591,8 @@
 				"url": "https://bsky.app/profile/severin-bruhat.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgncx32ae6322vtqpmp4fehx/bafkreicwo3zxkvadymzwe7lv3bdl6dp52dwllpht7oti6c767qeeg76j64"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Asgncx32ae6322vtqpmp4fehx",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -522,6 +604,8 @@
 				"url": "https://bsky.app/profile/hejchristian.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:u245ppickxm7kcu4s2cam5qm/bafkreibfblj7zohxpdzx4qnlvsbpiopuazopq3lh3rzh4li4cwfnmw7msa"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Au245ppickxm7kcu4s2cam5qm",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -533,6 +617,8 @@
 				"url": "https://bsky.app/profile/patrickjohanneson.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:apfzpvtlfelytc5p735qbzpn/bafkreigpz627dsdohq5nksitwft7stlwjw7kvh75uw3uqr2u74iozki2zi"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Aapfzpvtlfelytc5p735qbzpn",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -544,6 +630,8 @@
 				"url": "https://bsky.app/profile/w-lfpup.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:ndtkfmkenpin7jdu5mz2r3ot/bafkreiejgikkabqwtyvb3g32s2vn5bwzj5kx674hs3qrcemjcexrp43ey4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Andtkfmkenpin7jdu5mz2r3ot",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -555,6 +643,8 @@
 				"url": "https://bsky.app/profile/cgambledev.bsky.social",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:7le3gpdvacl6bx2zfg62k2vc/bafkreihrntoyrfsruy7u7b5ro6zmv5tk7mfyofjl4hys4ad3g4ozpxopbe"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253A7le3gpdvacl6bx2zfg62k2vc",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -566,6 +656,8 @@
 				"url": "https://bsky.app/profile/chriscoleman.name",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:wkd374xinxaugweumwpw3pdn/bafkreifwptpdw3ke4vsuzewislydexhwm335vlngjme2ukas6xb4cf6fu4"
 			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Awkd374xinxaugweumwpw3pdn",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		}
 	],
@@ -579,6 +671,8 @@
 				"url": "https://social.soapdog.org/@soapdog",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/80c8c621e5aedc981612f929b1a908af8601f4dbd3ff405667d1abe0765ff2dc.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/116487849596939046",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -590,6 +684,8 @@
 				"url": "https://mastodon.social/@khalidabuhakmeh",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/d0d062c229426e3ca7f6e06b329c4e09c50ac702f62a4b29accb30075594935c.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109296176354255607",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -601,6 +697,8 @@
 				"url": "https://social.lol/@tylersticka",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a3e8f10c9190a71c8b5813cb592445962f91252468058abbac98ecff88025553.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/110651355105380677",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -612,6 +710,8 @@
 				"url": "https://bsky.app/profile/webawesome.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:uocu7waljw6y5e474k26n7ve/bafkreifmutcbbb4zymyndqeiv2itph3pm7e7zxaagnxxgxq6giateydjby"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Auocu7waljw6y5e474k26n7ve",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -623,6 +723,8 @@
 				"url": "https://fosstodon.org/@rauschma",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/dd44390759ae11c7558bd7a7d5b500df8cc97666a1d9baffcf53deb26aafb149.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117241597706274918/109291906591238009",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -634,6 +736,8 @@
 				"url": "https://bsky.app/profile/hejchristian.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:u245ppickxm7kcu4s2cam5qm/bafkreibfblj7zohxpdzx4qnlvsbpiopuazopq3lh3rzh4li4cwfnmw7msa"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Au245ppickxm7kcu4s2cam5qm",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		},
 		{
@@ -645,6 +749,8 @@
 				"url": "https://bsky.app/profile/zachleat.com",
 				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm"
 			},
+			"source": "https://brid.gy/repost/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3mv3rdzukni2k/did%253Aplc%253Axpchjovbk6sxl3bv74z7cs54",
+			"target": "https://www.zachleat.com/web/open-graph-easy-build/",
 			"via": "webmention"
 		}
 	]

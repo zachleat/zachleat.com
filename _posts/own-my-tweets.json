@@ -12,6 +12,8 @@
 			"date": "2019-09-16T16:47:00.000Z",
 			"content": "<p>This is a great idea! I may have to look at the same.\nI'm also hoping to start to start publishing from my site first and then having that send the tweet afterwards using <a href=\"https://brid.gy/\">https://brid.gy/</a></p>",
 			"type": "reply",
+			"source": "https://www.jvt.me/mf2/2019/09/xkw2w/",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -26,6 +28,8 @@
 			"date": "2019-09-16T16:49:33.000Z",
 			"content": "<a href=\"https://twitter.com/zachleat\">@zachleat</a> says it clearly - we can’t expect places like Twitter to exist forever. But we can do that for our own identites on platforms we have a say in. I’m even happy to be working on things that help people do that!\n\n<a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a> (<a href=\"https://v2.jacky.wtf/post/cb4375f1-2f53-44ab-88eb-7d93c9345349\">v2.jacky.wtf/post/cb4375f1-…</a>)",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/jackyalcine/1173640075038658560",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -40,6 +44,8 @@
 			"date": "2019-09-16T17:08:49.000Z",
 			"content": "I’m Taking Ownership of My Tweets—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1173644921921839111",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -54,6 +60,8 @@
 			"date": "2019-09-16T18:27:22.000Z",
 			"content": "this is super cool!! how long do build times take? seems to be pretty light as it doesnt reuse templates. i reckon 2-5 minutes?\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "reply",
+			"source": "https://brid-gy.appspot.com/comment/twitter/zachleat/1173603435398225921/1173664688594456577",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -68,6 +76,8 @@
 			"date": "2019-09-16T18:32:44.000Z",
 			"content": "It does re-use one layout for the whole thing and just raw JS for templating. Local build times are about 30 seconds on my machine 👍 (it’s a pretty nice Macbook)\n\nThis project is a nice motivator to think about and work on incremental building stuff in Eleventy too\n<a class=\"u-mention\" href=\"https://twitter.com/swyx\"></a>",
 			"type": "reply",
+			"source": "https://brid-gy.appspot.com/comment/twitter/zachleat/1173603435398225921/1173666041194586114",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -82,6 +92,8 @@
 			"date": "2019-09-17T03:26:26.000Z",
 			"content": "I’m Taking Ownership of My Tweets—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1173800352522612736",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -96,6 +108,8 @@
 			"date": "2019-09-17T09:53:55.000Z",
 			"content": "Awesome work! Any chance you'll open-source your Own-Your-Tweets code? <a href=\"https://social.johanbove.info/tag/indieweb\" class=\"p-category\">#indieweb</a>",
 			"type": "reply",
+			"source": "https://social.johanbove.info/2019/09/17/awesome-work-any-chance-youll-open-source-your",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -106,9 +120,11 @@
 				"name": "Jan-Lukas Else",
 				"url": "https://jlelse.dev/"
 			},
-			"date": "2019-09-17T10:03:00.000Z",
+			"date": "2019-09-17T15:03:00.000Z",
 			"content": "<p>It’s impressive how Zach Leatherman built an archive of all his tweets on his personal website <a href=\"https://www.zachleat.com/web/own-my-tweets/\">to take ownership of them</a>. That way all his tweets will be preserved even if Twitter goes away one day.</p><blockquote><p>I’ve invested a lot into Twitter and I’ve received a lot of value from Twitter. I’ve made a lot of friends and professional connections on the site. I’ll be sad when Twitter goes away. Without a doubt, it will go away. It’s only a question of when.</p></blockquote><p>He is using his static page generator <a href=\"https://www.11ty.io/\">Eleventy</a> to generate over 27k pages with every build (unfortunately he doesn’t tell us how long each build takes - I would be very interested to know this).</p><p>Instead of archiving all my tweets on my website, I try to post nothing important on Twitter, but use my blog whenever I have something to say that should be preserved for all eternity. I then post the link to <a href=\"https://social.jlelse.me/jlelse\">my fediverse account</a> and <a href=\"https://twitter.jlelse.de\">Twitter</a>. <a href=\"https://jlelse.blog/posts/mass-delete-tweets/\">I also mass-delete tweets sometimes.</a></p><p><a href=\"https://www.zachleat.com/web/own-my-tweets/\">https://www.zachleat.com/web/own-my-tweets/</a></p>",
 			"type": "mention",
+			"source": "https://jlelse.blog/links/2019/09/twitter-archive/",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -120,9 +136,11 @@
 				"url": "https://awfulwoman.com/about/",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/176201386e499082b9e9d35655330db6e5035669230f185976510c53bba28b53.jpg"
 			},
-			"date": "2019-09-17T22:22:59.000Z",
+			"date": "2019-09-18T03:22:59.000Z",
 			"content": "<a class=\"h-cite u-bookmark-of\" href=\"https://www.zachleat.com/web/own-my-tweets/\"><img class=\"u-photo\" src=\"https://awfulwoman.com/bookmarks/2019/09/17/djqj3ty5/card.webp\" alt=\"\" width=\"800\" height=\"420\" />\n  <span class=\"p-name\">I’m Taking Ownership of My Tweets—zachleat.com</span>\n  <span class=\"p-publication\">Zach Leatherman</span>\n  <span class=\"p-summary\">A post by Zach Leatherman (zachleat)</span>\n</a>\n    \n    \n\n    \n\n    \n\n    \n\n    <p>Omg, I want and need to do this.</p>\n\n\n    \n    <p><a href=\"https://www.zachleat.com/web/own-my-tweets/\">Read Zach Leatherman on Zach Leatherman</a><span class=\"u-remove\"> and </span><a href=\"https://web.archive.org/web/https://www.zachleat.com/web/own-my-tweets/\">Archived copy</a></p>",
 			"type": "mention",
+			"source": "https://awfulwoman.com/bookmarks/2019/09/17/djqj3ty5/",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -137,6 +155,8 @@
 			"date": "2019-09-18T20:52:53.000Z",
 			"content": "дядько підійшов серйозно до архівування своїх твітів… поважаю:\n\n<a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n\n@ua@mastodon.org.ua",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1174426087498977280",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -149,6 +169,8 @@
 			"date": "2019-09-19T00:00:00.000Z",
 			"content": "<p>‘Aaarrrrr Maties! (<a href=\"https://en.wikipedia.org/wiki/International_Talk_Like_a_Pirate_Day\">Talk Like A Pirate Day</a>!) Alle boekaniers, vrijbuiters en matrozen, pak je floret en volg mij naar het benedendeks voor een nieuwe OPEN nieuwsbrief!</p>\n<p>Komende zaterdag houdt auteur Douglas Rushkoff in Tivoli Vredenburg te Utrecht de lezing “<a href=\"https://www.tivolivredenburg.nl/agenda/how-to-stay-human-in-the-digital-age-21-09-2019/\">How to stay human in the digital age</a>“. In zijn laatste boek Team Human geeft Rushkoff aan de hand van 100 stellingen een schets van het digitale landschap, hoe dit ons menselijk handelen beïnvloedt, ons zelfs isoleert en uit elkaar drijft. Zijn lezing komende zaterdag zal uiteraard veel raakvlakken hebben. Met een oproep on vooral te kiezen voor <strong><em>Team Human</em></strong>, voor de menselijke maat, voor het elkaar te ontmoeten en samen een menselijk alternatief voor de huidige digitale samenleving te bouwen.</p>\n<p>Ik ben komende zaterdag bij de lezing aanwezig. Kom je ook? We kunnen naderhand onder het genot van een Utregs biertje verder napraten. Er zijn <a href=\"https://www.tivolivredenburg.nl/agenda/how-to-stay-human-in-the-digital-age-21-09-2019/\">nog kaarten beschikbaar</a> a € 12,50.</p>\n<p>En kun je komende zaterdag niet, op 28 en 29 september vindt <a href=\"https://indiewebcamp.nl\">de tweede IndieWebCamp plaats</a> in Amsterdam. Op zaterdag kun je meepraten, denken en doen over een meer open en decentraal web!</p>\n<img alt=\"\" src=\"https://s3.amazonaws.com/revue/items/images/005/002/587/original/c987df8a5b82c5c2ee92fc3872e8830b.jpeg?1568833844\" />Mijn Team Human lidmaatschapskaart!<h2>Check in elk geval dit artikel! 👇</h2>\n<p><img width=\"140\" height=\"140\" alt=\"Net.Art Now.Web – CogDogBlog\" style=\"float:right;margin-left:20px;margin-bottom:20px;\" src=\"https://s3.amazonaws.com/revue/items/images/005/002/600/thumb/Teo_Spiller_Teddy_bear_net.art_2.jpg?1568833976\" /><br /><strong><a href=\"https://cogdogblog.com/2019/09/net-art-now-web/?utm_campaign=OPEN&amp;utm_medium=email&amp;utm_source=Revue%20newsletter\">Net.Art Now.Web – CogDogBlog</a> — <a href=\"https://cogdogblog.com/2019/09/net-art-now-web/\">cogdogblog.com</a></strong></p>\n<p>Een fantastische lofrede aan het project The History of The Web met extra aandacht voor Net.Art, kunst die zijn ontstaan en groei kent op het web. Zonder commerciële bijbedoelingen, zonder clickbait en psychosociale algoritmes. De enige algoritmes in Net.Art zijn er om de kunst te maken. Met aandacht voor de huidige bronnen van online kunst zoal CodePen en Glitch. Een aanrader!</p>\n<p><strong><em>“We forget that sometimes, but the web’s superpower is connection.”</em></strong></p>\n\n<p>[tweet https://twitter.com/redcrew/status/1174399024817983491]</p>\n<h2>Platforms, archieven en bloggen</h2>\n<p>✊ Maloki is de voormalige project/community manager van het Mastodon project. Zij legt <a href=\"https://blogghoran.se/2019/07/12/on-mastodon-and-nazis/\">in heldere bewoordingen uit</a> waarom het extreem-rechtse Gab Network zeker niet de grootste Mastodon instantie is en hoe het netwerk-effect van Mastodon voor een betere en meer effectieve blokkade zorgt van de Gab-haatzaaierij – <a href=\"https://blogghoran.se/2019/07/12/on-mastodon-and-nazis/\"><strong>On Mastodon and Nazis</strong></a></p>\n<p>🌍 Ancilla van de Leest <a href=\"https://medium.com/@ncilla/dont-let-your-livelihood-depend-on-a-platform-it-will-kill-you-e69816d4770a\">vertelt uit eigen ervaring</a> waarom je nooit je kunst exclusief op een sociale silo als Instagram of Youtube moet plaatsen. Zorg voor je eigen domein, zorg voor je eigen moederschip! – <a href=\"https://medium.com/@ncilla/dont-let-your-livelihood-depend-on-a-platform-it-will-kill-you-e69816d4770a\"><strong>Don’t let your livelihood depend on a platform. It WILL kill you.</strong></a></p>\n<p>🗄️ Ik archiveer al een paar jaar al mijn tweets op <a href=\"https://twitter.frankmeeuwsen.com\">mijn eigen domein</a>, Zach Leatherman gaat nog een stap verder en ontsluit ze op zijn eigen domein én maakt er allerlei dwarsverbanden in. Fascinerend! – <a href=\"https://www.zachleat.com/web/own-my-tweets/\"><strong>I’m Taking Ownership of My Tweets</strong></a></p>\n<p>📝 Elja Daae is weer dagelijks aan <a href=\"https://www.eljadaae.nl/blog/\">het bloggen</a> en <em>I ❤️ it</em>! Net als Ben Werdmüller zegt, <a href=\"https://werd.io/2019/i-wish-more-people-would-blog\"><strong>I need more blogs</strong></a>!</p>\n<p><strong>Blog on!</strong></p>\n<p><a href=\"https://www.getrevue.co/app/issues/current#\"> </a><strong>PS:</strong> Heb jij een idee hoe ik meer mensen kan bereiken met mijn nieuwsbrief? Waar vind ik meer abonnees? Laat het me weten! Ken je iemand die deze onderwerpen interessant vindt? Stuur deze nieuwsbrief door!</p>\n<blockquote><p>This spirit of the past web is not dead, it’s in all kinds of quiet corners of the web where people are making stuff for the sake of making it.</p></blockquote>",
 			"type": "mention",
+			"source": "https://diggingthedigital.com/open-s01e12-team-human-live-on-stage/",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -159,6 +181,8 @@
 			"date": "2019-09-19T07:01:36.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://medium.com/@frankmeeuwsen/open-s01e12-team-human-live-on-stage-c279e003447c?source=rss-eb6c578c8e88------2",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -173,6 +197,8 @@
 			"date": "2019-10-14T01:12:00.000Z",
 			"content": "It's so appealing to have a web-archive of every tweet, that updates as you tweet. <a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n\nOr do it in the reverse, and publish to your site to auto-tweet.",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1183550994082340866",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -187,6 +213,8 @@
 			"date": "2019-10-14T09:02:47.000Z",
 			"content": "<a href=\"https://twitter.com/simonw\">@simonw</a> This would be a great application of twitter-to-sqlite: <a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1183669467701743616",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -201,6 +229,8 @@
 			"date": "2019-10-21T09:19:46.000Z",
 			"content": "<p>I really like how Zach Leatherman has taken control over his tweets, and is sharing them on his site with some great analytics. He provides some insights into how he’s taking his tweets, and republishing them on his site in his post “I’m Taking Ownership of My Tweets” – I fully expect my personal website to outlive Twitter and as such have decided to take full ownership of the content I’ve posted there. In true IndieWeb fashion, I’m taking ownership of my data.Zach Leatherman I started doing something similar on a test site here: @pauljacobson tweets – All the tweets My test site uses a relatively old plugin that hasn’t been updated recently. At the same time, it seems to be working relatively called Ozh’ Tweet Archiver. I prefer how Zach has formatted his tweets, and how the images and links are modified for more sustainable presentation on the assumption that Twitter has gone offline. I also really like how he’s captured replies, and has added analytics to his tweets to surface all sorts of insights such as more popular tweets, retweets data, and more. I’ve love to know how he’s actually capturing, and reformatting his tweets, but I don’t see a link to the code he’s using for this. I’d eventually like to bring something like that to this site, so this site becomes a complete archive of my tweets too. At least with the Ozh’ Tweet Archiver plugin running on my test site, I’ll have a WordPress archive that I can readily import as a starting point. I’d like to have linked media load from my site, and not as embeds from Twitter, for example. The idea here is to capture your tweets, and preserve them so they contain their links and media should Twitter no longer exist. unsplash-logoFeatured image by Ridham Nagralawala Share this:Click to share on Pocket (Opens in new window)Click to share on Twitter (Opens in new window)Click to share on Facebook (Opens in new window)Click to share on WhatsApp (Opens in new window)Click to share on Telegram (Opens in new window)Click to share on Reddit (Opens in new window)Click to share on Tumblr (Opens in new window)Click to share on LinkedIn (Opens in new window)Click to email this to a friend (Opens in new window)Like Loading… Related</p>\nShare this:<a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=pocket\" title=\"Click to share on Pocket\">Click to share on Pocket (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=twitter\" title=\"Click to share on Twitter\">Click to share on Twitter (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=facebook\" title=\"Click to share on Facebook\">Click to share on Facebook (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=jetpack-whatsapp\" title=\"Click to share on WhatsApp\">Click to share on WhatsApp (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=telegram\" title=\"Click to share on Telegram\">Click to share on Telegram (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=reddit\" title=\"Click to share on Reddit\">Click to share on Reddit (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=tumblr\" title=\"Click to share on Tumblr\">Click to share on Tumblr (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=linkedin\" title=\"Click to share on LinkedIn\">Click to share on LinkedIn (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=email\" title=\"Click to email this to a friend\">Click to email this to a friend (Opens in new window)</a>Like Loading...<a></a><p><a href=\"https://pauljacobson.me/b/DCk\">https://pauljacobson.me/b/DCk</a></p>",
 			"type": "mention",
+			"source": "https://pauljacobson.me/2019/10/21/owning-your-tweets/",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -215,6 +245,8 @@
 			"date": "2019-10-23T13:46:37.000Z",
 			"content": "Loving <a href=\"https://twitter.com/zachleat\">@zachleat</a>’s talk from <a href=\"https://twitter.com/jamstackconf\">@jamstackconf</a> in SF <a href=\"https://www.youtube.com/watch?v=X3SrZuH00GQ\">youtube.com/watch?v=X3SrZu…</a>\n\nWritten counterpart: <a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1187002389494194177",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -225,6 +257,8 @@
 			"date": "2019-12-15T18:08:49.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://www.jvt.me/tags/twitter/",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -239,6 +273,8 @@
 			"date": "2021-12-11T03:50:06.000Z",
 			"content": "",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/zachleat/1469443212192407561/1469514806868729858",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -253,6 +289,8 @@
 			"date": "2021-12-11T03:57:32.000Z",
 			"content": "The first thing I learned about @zachleat was 11ty, the second was this.  I'm still waiting on this. - A fan\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jjcollinsworth\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/zachleat/1469443212192407561/1469516677280940034",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -267,6 +305,8 @@
 			"date": "2021-12-11T03:58:45.000Z",
 			"content": "the fan is persuasive\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jacebenson\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jjcollinsworth\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/zachleat/1469443212192407561/1469516983452323840",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -281,6 +321,8 @@
 			"date": "2021-12-11T04:00:26.000Z",
 			"content": "I was hoping it would blow you away.. :D\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/jjcollinsworth\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/zachleat/1469443212192407561/1469517406380957698",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -295,6 +337,8 @@
 			"date": "2022-04-25T12:59:48.000Z",
 			"content": "BTW did you know that you can archive all your tweets and self-host them for free? <a href=\"https://twitter.com/zachleat\">@zachleat</a> did it in 2019 before it was cool\n\n<a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1518575505443803136",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -309,6 +353,8 @@
 			"date": "2022-10-25T23:49:29.000Z",
 			"content": "Bingo, <a href=\"https://twitter.com/m_ott\">@m_ott</a>. Twitter could just suspend you... so have a platform that you own (your own site, which might outlive Twitter anyways).\n\n<a href=\"https://matthiasott.com/notes/suspension\">matthiasott.com/notes/suspensi…</a>\n\nI like how <a href=\"https://twitter.com/zachleat\">@zachleat</a> takes \"ownership\" of his tweets via his blog.\n\n<a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1585055981716783105",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -323,6 +369,8 @@
 			"date": "2022-10-27T17:28:06.000Z",
 			"content": "So maybe in your case it’s more interesting to look at what <a href=\"https://twitter.com/zachleat\">@zachleat</a> did: <a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/graulund\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/zachleat/1585684780393299994/1585684780393299994",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -337,6 +385,8 @@
 			"date": "2022-10-27T17:34:31.000Z",
 			"content": "(I never did open source this because I just don’t have the bandwidth to answer questions about it, although it’s running fine on my site 😬)\n<a class=\"u-mention\" href=\"https://matthiasott.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/graulund\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/m_ott\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1585686395447803909",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -351,6 +401,8 @@
 			"date": "2022-10-28T07:27:44.000Z",
 			"content": "Let's find a name for the org and project!\n\nSome ideas:\n- PESOS-Twitter (<a href=\"https://indieweb.org/PESOS\">indieweb.org/PESOS</a>)\n- Own-my-tweets\n- Twitter-mirror\n- Tweets-mirror\n- Twitter-backup\n- Tweets-backup\n\nTESOS (Tweet Elsewhere, Syndicate (to your) Own Site) is unfortunately not available on GitHub.\n<a class=\"u-mention\" href=\"https://matthiasott.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/m_ott\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1585896079979077632",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -365,6 +417,8 @@
 			"date": "2022-10-28T07:35:11.000Z",
 			"content": "tweetback\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/nhoizey\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1585897953213849600",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -379,6 +433,8 @@
 			"date": "2022-10-28T07:37:00.000Z",
 			"content": "Just swinging by to say, I'd be game too! 🫣\n<a class=\"u-mention\" href=\"https://matthiasott.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/m_ott\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/nhoizey\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1585898412783927297",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -393,6 +449,8 @@
 			"date": "2022-10-28T07:37:48.000Z",
 			"content": "tweetback-loop\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/nhoizey\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1585898614492127232",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -407,6 +465,8 @@
 			"date": "2022-10-28T07:38:09.000Z",
 			"content": "Great! 👍\n<a class=\"u-mention\" href=\"https://matthiasott.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/m_ott\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/stefanjudis\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1585898698994851841",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -421,6 +481,8 @@
 			"date": "2022-10-28T07:38:22.000Z",
 			"content": "Nice name! 👍\n<a class=\"u-mention\" href=\"https://matthiasott.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/m_ott\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1585898757111140354",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -435,6 +497,8 @@
 			"date": "2022-10-28T07:42:12.000Z",
 			"content": "TweetBack Machine\n\n…wait, that sounds somewhat familiar 🤔\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/nhoizey\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1585899718390861825",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -449,6 +513,8 @@
 			"date": "2022-10-28T13:55:53.000Z",
 			"content": "Say, that's got a nice ring to it.\n<a class=\"u-mention\" href=\"https://matthiasott.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/m_ott\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/nhoizey\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1585993761854611456",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -463,6 +529,8 @@
 			"date": "2022-10-28T14:55:14.000Z",
 			"content": "Backtweet’s back…\n<a class=\"u-mention\" href=\"https://twitter.com/SaraSoueidan\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/brad_frost\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/nhoizey\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/phloe_\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/m_ott/1585684780393299994/1586008694789214208",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -477,6 +545,8 @@
 			"date": "2022-11-01T14:50:02.000Z",
 			"content": "If you are walking away from Twitter, make sure to grab your archive of *your* content.\n\n@zachleat@mastodon.social walks through how he shares them:\n<a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n\nThe old Twitter archive format was static HTML, making it just an upload. A bit tougher now.",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1587456937763000321",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -491,6 +561,8 @@
 			"date": "2022-11-01T19:05:40.000Z",
 			"content": "RT @aardrian@toot.cafe\nIf you are walking away from Twitter, make sure to grab your archive of *your* content.\n\nzachleat walks through how he shares them:\n<a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n\nThe old Twitter archive format was static HTML, making it just an upload. A bit tougher (1/2)",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1587521270844891136",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -505,6 +577,8 @@
 			"date": "2022-11-02T20:30:29.000Z",
 			"content": "Just read: I’m Taking Ownership of My Tweets—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1587905002688888832",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -519,6 +593,8 @@
 			"date": "2022-11-03T08:04:28.000Z",
 			"content": "I’m Taking Ownership of My Tweets—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://twitter.com/search?q=%23indieweb\">#indieweb</a>  <a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1588079651607515136",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -533,6 +609,8 @@
 			"date": "2022-11-03T17:46:40.000Z",
 			"content": "I currently only push from notes in my Eleventy to Twitter and Mastodon (aka POSSE).\n\nThere's a project coming soon(ish) to help get past and future tweets back on our sites (aka PESOS), based on <a href=\"https://twitter.com/zachleat\">@zachleat</a> code from <a href=\"https://www.zachleat.com/web/own-my-tweets/\">zachleat.com/web/own-my-twe…</a>\n\nStay tuned! 😅\n<a class=\"u-mention\" href=\"https://twitter.com/TheGreenGreek\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/erikkroes\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/mxbck\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/theAdhocracy\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/nhoizey/1588095211581935616/1588226167550664704",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -547,6 +625,8 @@
 			"date": "2022-11-03T18:16:49.000Z",
 			"content": "I use VS Code indeed, but I use a shell script to create the Markdown file in the right folder, and with some Front Matter:\n<a href=\"https://github.com/nhoizey/nicolas-hoizey.com/blob/main/_scripts/new_note.sh\">github.com/nhoizey/nicola…</a>\n\nI might move to a simple Netlify Form and Function as <a href=\"https://twitter.com/bellanger_q\">@bellanger_q</a> explains here: <a href=\"https://quentin-bellanger.com/blog/cms-netlify-function/\">quentin-bellanger.com/blog/cms-netli…</a>\n\n<a class=\"u-mention\" href=\"https://twitter.com/TheGreenGreek\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/erikkroes\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/mxbck\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/theAdhocracy\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/nhoizey/1588226167550664704/1588233755780603904",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -561,6 +641,8 @@
 			"date": "2022-11-03T18:20:45.000Z",
 			"content": "Nice!\n\nI'm contemplating keeping the data as json or a js object since my twitter data is currently like that anyway. I don't think I'd post replies to other tweets/toots, just threads of my own.\n\nWondering how much to put on a page. Having a page per note seems high\n<a class=\"u-mention\" href=\"https://nicolas-hoizey.com/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/bellanger_q\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/erikkroes\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/mxbck\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/nhoizey\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/theAdhocracy\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/nhoizey/1588226167550664704/1588234744239738881",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -575,6 +657,8 @@
 			"date": "2022-11-03T18:32:23.000Z",
 			"content": "My notes are short contents for my site, so I publish them as Markdown, as other content types.\n\nPushing them to social networks is secondary.\n\nFor content meant primarily for Twitter, I would use Twitter as a source, and PESOS to keep an archive I own.\n<a class=\"u-mention\" href=\"https://twitter.com/TheGreenGreek\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/bellanger_q\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/erikkroes\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/mxbck\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/theAdhocracy\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/nhoizey/1588226167550664704/1588237673201909764",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -589,6 +673,8 @@
 			"date": "2022-11-03T18:35:12.000Z",
 			"content": "Exactly what I mean in my previous answer! 👍\n\nThere are two different use cases, for with either POSSE or PESOS is the best solution.\n\nThanks to POSSE, I plan to remove crosspost between Twitter and Mastodon, and adapt content to each platform: mentions, message length, etc.\n<a class=\"u-mention\" href=\"https://twitter.com/TheGreenGreek\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/bellanger_q\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/erikkroes\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/mxbck\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/theAdhocracy\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/own-my-tweets/\"></a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/nhoizey/1588226167550664704/1588238378046300160",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -598,9 +684,11 @@
 			"author": {
 				"name": "Hidde de Vries (@hdv@front-end.social) is a web enthusiast and accessibility specialist from Rotterdam (The Netherlands). He currently works on web standards for the Dutch government and is a participant in the Open UI Community Group. Previously, he worked for W3C (WAI), Mozilla, the Dutch government and others as a freelancer. Hidde is also a public speaker, he has given 73 talks, most recently in Virtual. In his free time, he works on a coffee table book covering the video conferencing apps of our decade.\nBuy me a coffee Follow on Mastodon Follow on LinkedIn"
 			},
-			"date": "2022-11-06T00:00:00.000Z",
+			"date": "2022-11-06T05:00:00.000Z",
 			"content": "<p>There have been reasons to leave Twitter since its inception. But it's increasingly compelling to post somewhere else.</p>\n<p>Why read about what random people do all day? In the spring of 2007, I wasn't sure why I would join Twitter. All the cool web folks at that year's <a href=\"https://www.sxsw.com/\">SXSW Interactive</a> had started using (and hyping) it. I worked at a small web agency at the time. My colleagues convinced me, I think. So I made an account on this new website that had just one text field with the question ‘What are you doing?’.</p>\n<p>When I started, I mostly bored my readers with facts like “I drank a cup of tea” or “waiting for a bus”. Mentions and retweets didn't exist yet. For the first, maybe, 5 years, my account was private and I had way under 100 followers. I tweeted mostly in Dutch, even in Frisian sometimes. There was a generous API so you could trivially display tweets on your own site. There were local in-person Twitter meetups, at least where I live, to hang out with Twitter folks, including one that had <a href=\"https://en.m.wikipedia.org/wiki/Dries_Roelvink\">Dries Roelvink</a> perform.</p>\n<p><img src=\"https://hidde.blog/_images/twitter2007.png\" alt=\"two twitter screenshots, the left one says: a global community of friends and strangers answering one simple question: what are you doing? answer on your phone, IM or right here on the web\" /><em>Twitter homepage in 2007, the logo was a piece of art</em></p>\n<p>In the years after, the platform expanded beyond the web developer crowd and interesting journalists, authors, musicians came. I used the platform more and more to follow folks I saw speak at conferences. Over the years I found a collection of hundreds of people whose stuff I really enjoyed reading. On web development, but also other interests. Some posted often, others occassionally.  Either way, I learned so much from the tweets, links to other sites, discussions and what not. More people started following me too, and I managed to develop real friendships. My DMs got busier too. Twitter, the platform got useful new features, but ultimately, it's the people that attracted me to the platform and people that kept me on there.</p>\n<p>Yet, there were always compelling reasons to leave. The platform and tweets became more engagement-focused, the Twittersphere started to attract (and reward) grifters. The algorithmic timeline was introduced, although that could be turned off.</p>\n<p>Abuse also increased, especially for minorities on the platform. Under Jack Dorsey's leadership, Twitter <a href=\"https://www.huffpost.com/entry/alex-jones-twitter-suspension_n_5b6cb23de4b0530743c85d03\">systematically failed to act on reports of racist, homophobic and misogynist accounts</a>, it made Twitter more dangerous to anyone not a cis white male, even got users in physical danger. Some of that was described in a 2018 Amnesty International report on Twitter called “<a href=\"https://www.amnesty.org/en/latest/research/2018/03/online-violence-against-women-chapter-1-1/\">A toxic place for women</a>”, a document full of details on how the company failed to respect women's rights.</p>\n<p>And then there was the risk of making content on a platform that you don't control. My friend Manuel got <a href=\"https://www.matuzo.at/blog/2022/your-account-is-permanently-suspended/\">permanently suspended</a>, for reasons unknown to him. I can only imagine what it was like for him to lose access, just like that. A lot of us tried to change the minds of “@TwitterSupport”, but until today, it wasn't resolved. For a lot of folks this situation was a wake up call to reconsider where they post. I realised my new ambition was to <a href=\"https://www.zachleat.com/web/own-my-tweets/\">like, Zach, take ownership of my tweets</a>.</p>\n<p>Last week, I still didn't feel like leaving the platform just because the new owner was an arrogant troll with world views orthogonal to mine. I imagine more services I use have unpleasant owners. Last time I tried Mastodon, I didn't stay. The thing is, I don't even think I really <em>believe</em> in decentralised social networks, I would rather have all my friends in one pub than spread across pubs. I will probably find out I'm wrong about this, as the web at large was <em>designed</em> to be decentralised and it is one of the charms of it and arguably what made it so successful.</p>\n<p>But then that new owner <a href=\"https://twitter.com/gerardkcohen/status/1588584459779321857\">fired Twitter's entire accessibility team</a>, its <a href=\"https://gizmodo.com/twitter-layoffs-elon-musk-ai-ethics-1849743051\">ethical AI team</a> and <a href=\"https://www.theverge.com/2022/11/4/23441404/twitter-trust-safety-staff-layoffs-content-moderation\">large parts of trust and safety folks</a> working on problems that have very real life consequences (like meddling in elections, spreading of conspiracy theories, hate crimes, impersonation), he unfolded plans for a new ‘Verified’ program that made the feature for sale rather than for security and then he recklessly and cruelly fired half of the staff (and <a href=\"https://www.bloomberg.com/news/articles/2022-11-06/twitter-now-asks-some-fired-workers-to-please-come-back\">seems to be trying to get some back</a>)… it's chaos!</p>\n<p>So I decided to go ahead and hang out elsewhere, at least to put my content there. That other place is ‘the Fediverse’, and it has a different focus:</p>\n<blockquote>\n<p>the Fediverse is different: it isn’t trying to glue your eyeballs to the screen, and it’s harder for things to go viral. There is less media, fewer memes, no advertising. And there are humans explicitly in the loop: Mastodon instances are moderated on an instance-by-instance basis — and should an instance descend into a hellscape, it may find itself defederated. But because of all of this, there is also less opportunism, less trolling, less dunking on your enemies, less nastiness. So it also feels more relaxing, more earnest — and easier to put down.</p>\n</blockquote>\n<p>(from Bryan Cantrill's <a href=\"http://dtrace.org/blogs/bmc/2022/11/05/twitter-when-the-wall-came-down/\">Twitter, when the wall came down</a>)</p>\n<p>Maybe the decentralisation aspect could actually work. <a href=\"https://willmartian.com/posts/mastodon-is-like-email/\">It's a bit like email</a>.</p>\n<p>It seems like the new owner and his behaviour is driving people in my bubble away from Twitter, towards the Fediverse, personal blogs, RSS and other platforms. Probably mostly in that bubble, but maybe it is a wider thing, time will have to tell. It's probably not the last exodus.</p>\n<p>I didn't suddenly stop caring about the people I follow on Twitter, I understand not everyone wants to leave, so I will also stay on Twitter for the foreseable future. To catch up on tweets, to DM and to share posts like this one. But for the next while, I plan to hang around on Mastodon more.</p>",
 			"type": "mention",
+			"source": "https://hidde.blog/twitter-exodus/",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		}
 	],
@@ -614,6 +702,8 @@
 				"url": "https://beko.famkos.net/author/beko/",
 				"avatarUrl": "https://avatars.webmention.io/beko.famkos.net/355da01dec16a15f9e58b05cb0fd990747b7bb88dce8044cce83fc1cd30d8016.jpg"
 			},
+			"source": "https://beko.famkos.net/2019/09/16/6011/",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -625,6 +715,8 @@
 				"url": "https://aaronparecki.com/",
 				"avatarUrl": "https://avatars.webmention.io/aaronparecki.com/41061f9de825966faa22e9c42830e1d4a614a321213b4575b9488aa93f89817a.jpg"
 			},
+			"source": "https://aaronparecki.com/2019/09/17/7/",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -636,6 +728,8 @@
 				"url": "https://twitter.com/ingmar_h",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7efd560511285efc558c778f4919ae4f836e52eb7092ae6663a39bf65008e943.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/116752371",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -647,6 +741,8 @@
 				"url": "https://twitter.com/nhoizey",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c21eff209ada91f6fe7e85dade06b7cd289b2c253324148110fe5c4ae2cb8021.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/6308712",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -658,6 +754,8 @@
 				"url": "https://twitter.com/captbaritone",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c8078177a87673464586785c8d67a519d7570bd52f6822368509488d06cb1a13.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/4409501",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -669,6 +767,8 @@
 				"url": "https://twitter.com/GiammaCarioca",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1df14045ed7daba64fdeff94b715be6766be1de9d48ceaf44d547e755b23f38c.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/20848287",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -680,6 +780,8 @@
 				"url": "https://twitter.com/mattnortham",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bdabb90550a85c9fda9b5486e2095b5b52b0c383ce4038fcc5991a3deb5fd52a.png"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/1163981",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -691,6 +793,8 @@
 				"url": "https://twitter.com/halvves",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0bcf0e48c9a0b00596a74e98cc01ade989134a44a344eb30f6eca73a4652bdcd.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/2845330473",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -702,6 +806,8 @@
 				"url": "https://twitter.com/jacebenson",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e28682b3515f2be9d31c4806ddfed92389630db239ccd9ab6de0343c71545552.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1469443212192407561/14321037",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -713,6 +819,8 @@
 				"url": "https://twitter.com/brad_frost",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b52ce85f5ca5f6b9d004f5133a633072e1aceea9df35926d31c5af4151d4feff.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1469443212192407561/11855482",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -724,6 +832,8 @@
 				"url": "https://twitter.com/peruvianidol",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/634afa59eff185624485098b7a75d834d835b02b24c8b58db7770f3416d4baf9.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1469443212192407561/14412405",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -735,6 +845,8 @@
 				"url": "https://twitter.com/JRMeyerhofer",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8bae22b585a9fca41e9280f6f6cb440ed8f5ae3add3ee0181bcdc773c14ebdfd.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1469443212192407561/425853322",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -746,6 +858,8 @@
 				"url": "https://twitter.com/NerdCowboy",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e0791d51af67e139737f42630f165e701c3719eb22369d7a337b85bbce16aa71.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1469443212192407561/325716240",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -757,6 +871,8 @@
 				"url": "https://twitter.com/adamj_design",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1945910bb6ddccf822f18a3488d1c1ae952e05bb86ec4c82b8c41c278d00e4fc.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1469443212192407561/112039478",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		}
 	],
@@ -770,6 +886,8 @@
 				"url": "https://twitter.com/GiammaCarioca",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1df14045ed7daba64fdeff94b715be6766be1de9d48ceaf44d547e755b23f38c.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/repost/twitter/zachleat/1173603435398225921/1173648768887074817",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -781,6 +899,8 @@
 				"url": "https://twitter.com/sumeetjain",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/012468da903d2e8145fb9181251fed279d286f9d5cb30e40229f68c0b120e5ec.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/repost/twitter/zachleat/1173603435398225921/1173664210934321152",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		}
 	],
@@ -788,12 +908,14 @@
 		{
 			"id": 692507,
 			"url": "https://adactio.com/links/15816",
-			"date": "2019-09-16T15:22:09.000Z",
+			"date": "2019-09-16T20:22:09.000Z",
 			"author": {
 				"name": "Jeremy Keith",
 				"url": "https://adactio.com/",
 				"avatarUrl": "https://avatars.webmention.io/adactio.com/24f33c5820046ebbcb429f78bb988fc1fa9f97d35247e0b72b3fb5ff888da633.jpg"
 			},
+			"source": "https://adactio.com/links/15816",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		},
 		{
@@ -804,6 +926,8 @@
 				"name": "Charlie Owen",
 				"avatarUrl": "https://avatars.webmention.io/www.sonniesedge.net/681e5b1a077dc82b17b3bfafb8adafda24db88e7ce83e900301198c88cf8cebf.jpg"
 			},
+			"source": "https://www.sonniesedge.net/bookmarks/3234",
+			"target": "https://www.zachleat.com/web/own-my-tweets/",
 			"via": "webmention"
 		}
 	]

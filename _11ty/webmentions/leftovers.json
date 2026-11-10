@@ -1,0 +1,514 @@
+{
+	"comments": [
+		{
+			"id": 616911,
+			"parentId": 0,
+			"url": "https://webmention.rocks/receive/1",
+			"author": {
+				"name": "Webmention Rocks!",
+				"avatarUrl": "https://avatars.webmention.io/webmention.rocks/e08155b03da96cb1bdfd161ea24efdfad8d85d06afcee540ec246f1f613eb5a9.png"
+			},
+			"date": "2019-05-24T12:43:20.000Z",
+			"content": "<p>This test verifies that you accept a Webmention request that contains a valid source and target URL. To pass this test, your Webmention endpoint must return either HTTP 200, 201 or 202 along with the <a href=\"https://www.w3.org/TR/webmention/#receiving-webmentions\">appropriate headers</a>.</p>\n        <p>If your endpoint returns HTTP 201, then it MUST also return a <code>Location</code> header. If it returns HTTP 200 or 202, then it MUST NOT include a <code>Location</code> header.</p>",
+			"type": "reply",
+			"source": "https://webmention.rocks/receive/1/3b57bf67f97f07474c58ace89d4f2b67",
+			"target": "https://www.zachleat.com/web/notes/webmention-test/",
+			"via": "webmention"
+		},
+		{
+			"id": 680510,
+			"parentId": 0,
+			"url": "https://twitter.com/missninateaches/status/1167531415766016001",
+			"author": {
+				"name": "Nina Chantanapumma",
+				"url": "https://twitter.com/missninateaches",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0166b9465170f09406312bcd3db820ca1a644cb68eca44ad3d25ea022cf23c3f.jpg"
+			},
+			"date": "2019-08-30T20:15:55.000Z",
+			"content": "Shoutout to <a href=\"https://twitter.com/zachleat\">@zachleat</a> for creating BigText Wizard! I like to put up big text on my projector when we have classroom breaks with info my students should know. I've got it bookmarked for quick access: <a href=\"https://www.zachleat.com/bigtext/demo/\">zachleat.com/bigtext/demo/</a>",
+			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1167531415766016001",
+			"target": "https://www.zachleat.com/bigtext/demo/",
+			"via": "webmention"
+		},
+		{
+			"id": 692654,
+			"parentId": 0,
+			"url": "https://twitter.com/swyx/status/1173664688594456577",
+			"author": {
+				"name": "swyx",
+				"url": "https://twitter.com/swyx",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/62a1f5f8e62eb76b2b5acb717aa5a87aba8e0898ae66c5238a30d892a875f4aa.jpg"
+			},
+			"date": "2019-09-16T18:27:22.000Z",
+			"content": "this is super cool!! how long do build times take? seems to be pretty light as it doesnt reuse templates. i reckon 2-5 minutes?\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"source": "https://brid-gy.appspot.com/comment/twitter/zachleat/1173603435398225921/1173664688594456577",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 692656,
+			"parentId": 0,
+			"url": "https://twitter.com/zachleat/status/1173666041194586114",
+			"author": {
+				"name": "Zach Leatherman",
+				"url": "https://twitter.com/zachleat",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/17b0730965b5e7cdfabfca0c64d8f2d94cf4905b191b19bfcf59fa68f51d2d74.jpg"
+			},
+			"date": "2019-09-16T18:32:44.000Z",
+			"content": "It does re-use one layout for the whole thing and just raw JS for templating. Local build times are about 30 seconds on my machine 👍 (it’s a pretty nice Macbook)\n\nThis project is a nice motivator to think about and work on incremental building stuff in Eleventy too\n<a class=\"u-mention\" href=\"https://twitter.com/swyx\"></a>",
+			"type": "reply",
+			"source": "https://brid-gy.appspot.com/comment/twitter/zachleat/1173603435398225921/1173666041194586114",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 715577,
+			"parentId": 0,
+			"url": "https://pauljacobson.me/2019/10/21/owning-your-tweets/",
+			"author": {
+				"name": "Paul",
+				"url": "https://pauljacobson.me/author/paul/",
+				"avatarUrl": "https://avatars.webmention.io/secure.gravatar.com/1133202c6f2cf64234714f96ea6c2e90966315719ec3ed51121d59d5b0088f46.jpg"
+			},
+			"date": "2019-10-21T09:19:46.000Z",
+			"content": "<p>I really like how Zach Leatherman has taken control over his tweets, and is sharing them on his site with some great analytics. He provides some insights into how he’s taking his tweets, and republishing them on his site in his post “I’m Taking Ownership of My Tweets” – I fully expect my personal website to outlive Twitter and as such have decided to take full ownership of the content I’ve posted there. In true IndieWeb fashion, I’m taking ownership of my data.Zach Leatherman I started doing something similar on a test site here: @pauljacobson tweets – All the tweets My test site uses a relatively old plugin that hasn’t been updated recently. At the same time, it seems to be working relatively called Ozh’ Tweet Archiver. I prefer how Zach has formatted his tweets, and how the images and links are modified for more sustainable presentation on the assumption that Twitter has gone offline. I also really like how he’s captured replies, and has added analytics to his tweets to surface all sorts of insights such as more popular tweets, retweets data, and more. I’ve love to know how he’s actually capturing, and reformatting his tweets, but I don’t see a link to the code he’s using for this. I’d eventually like to bring something like that to this site, so this site becomes a complete archive of my tweets too. At least with the Ozh’ Tweet Archiver plugin running on my test site, I’ll have a WordPress archive that I can readily import as a starting point. I’d like to have linked media load from my site, and not as embeds from Twitter, for example. The idea here is to capture your tweets, and preserve them so they contain their links and media should Twitter no longer exist. unsplash-logoFeatured image by Ridham Nagralawala Share this:Click to share on Pocket (Opens in new window)Click to share on Twitter (Opens in new window)Click to share on Facebook (Opens in new window)Click to share on WhatsApp (Opens in new window)Click to share on Telegram (Opens in new window)Click to share on Reddit (Opens in new window)Click to share on Tumblr (Opens in new window)Click to share on LinkedIn (Opens in new window)Click to email this to a friend (Opens in new window)Like this:Like Loading… Related</p>\nShare this:<a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=pocket\" title=\"Click to share on Pocket\">Click to share on Pocket (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=twitter\" title=\"Click to share on Twitter\">Click to share on Twitter (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=facebook\" title=\"Click to share on Facebook\">Click to share on Facebook (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=jetpack-whatsapp\" title=\"Click to share on WhatsApp\">Click to share on WhatsApp (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=telegram\" title=\"Click to share on Telegram\">Click to share on Telegram (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=reddit\" title=\"Click to share on Reddit\">Click to share on Reddit (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=tumblr\" title=\"Click to share on Tumblr\">Click to share on Tumblr (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=linkedin\" title=\"Click to share on LinkedIn\">Click to share on LinkedIn (Opens in new window)</a><a href=\"https://pauljacobson.me/2019/10/21/owning-your-tweets/?share=email\" title=\"Click to email this to a friend\">Click to email this to a friend (Opens in new window)</a>Like this:Like Loading...<a></a><p><a href=\"https://pauljacobson.me/b/DCk\">https://pauljacobson.me/b/DCk</a></p>",
+			"type": "mention",
+			"source": "https://pauljacobson.me/2019/10/21/owning-your-tweets/",
+			"target": "https://www.zachleat.com/web/web/own-my-tweets/",
+			"via": "webmention"
+		},
+		{
+			"id": 1549459,
+			"parentId": 0,
+			"url": "https://twitter.com/steren/status/1587890651722485760",
+			"author": {
+				"name": "Steren",
+				"url": "https://twitter.com/steren",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c0750e7962b6068c39379eef41ce294dc7f9a6f7a717feb5d66548c2da4d7a0a.jpg"
+			},
+			"date": "2022-11-02T19:33:27.000Z",
+			"content": "What <a href=\"https://twitter.com/zachleat\">@zachleat</a> has done to archive his Twitter content on his own domain is awesome: <a href=\"https://www.zachleat.com/twitter\">zachleat.com/twitter</a>\nNotably the consistency between twitter URLs and URLs of archived tweets.\nThat's something I've been wanting to do in a long time.",
+			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1587890651722485760",
+			"target": "https://www.zachleat.com/twitter",
+			"via": "webmention"
+		},
+		{
+			"id": 1549906,
+			"parentId": 0,
+			"url": "https://twitter.com/TheGreenGreek/status/1588235638561816586",
+			"author": {
+				"name": "Sia (parody) | @sia@front-end.social",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"date": "2022-11-03T18:24:18.000Z",
+			"content": "I'm also wondering if it's easier to just use cross-poster for multi-platform and pulling the data directly from one rather than pushing it. Like whatever @zachleat is doing on his <a href=\"https://www.zachleat.com/twitter/\">zachleat.com/twitter/</a> page\n<a class=\"u-mention\" href=\"https://twitter.com/bellanger_q\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/erikkroes\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/mxbck\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/nhoizey\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/theAdhocracy\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
+			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/zachleat/1588235638561816586/1588235638561816586",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 1711289,
+			"parentId": 0,
+			"url": "https://front-end.social/@sarajw/110984847635609752",
+			"author": {
+				"name": "Sara Joy ✨",
+				"url": "https://front-end.social/@sarajw",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a06118ca119ec1183309db1aa65689d6bd69349b68713fd0c3f49cc5de8ca683.jpg"
+			},
+			"date": "2023-08-31T20:06:19.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> aaahhh true TechBros ????????</p><p><span class=\"h-card\"><a href=\"https://mastodon.social/@matthiasott\" class=\"u-url\">@<span>matthiasott</span></a></span> <span class=\"h-card\"><a href=\"https://mastodon.social/@zastrow\" class=\"u-url\">@<span>zastrow</span></a></span></p>",
+			"type": "mention",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/110984538336952948/110984847881933745",
+			"target": "https://www.zachleat.com/archive/busyness-sample/",
+			"via": "webmention"
+		},
+		{
+			"id": 1747515,
+			"parentId": 0,
+			"url": "https://fosstodon.org/@hawkticehurst/111505913406842179",
+			"author": {
+				"name": "Hawk Ticehurst",
+				"url": "https://fosstodon.org/@hawkticehurst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbdf15e8d3662f6bd1aeb13b67e53d334745df10adb1e9977674e7b3fb728b83.jpg"
+			},
+			"date": "2023-12-01T15:40:11.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Wildddddd. This is so cool! Like, *of course*.. why *wouldn’t* you index your statically built files to create a low bandwidth search engine for your websites??</p>",
+			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111505839545250260/111505913429417443",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 1838665,
+			"parentId": 0,
+			"url": "https://chaos.social/@elomatreb/112768233615187551",
+			"author": {
+				"name": "elomatreb ????",
+				"url": "https://chaos.social/@elomatreb",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/69e167df066ffa825e6cb9953bc48eb4c9aaa9c6f46806e0f418763a6e543063.png"
+			},
+			"date": "2024-07-11T14:04:49.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Their \"austerity\" sounds pretty good ngl</p>",
+			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112768225915504990/112768233673592676",
+			"target": "https://www.zachleat.com/twitter/1339584224165199873/",
+			"via": "webmention"
+		},
+		{
+			"id": 1838666,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/112768236892607495",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-07-11T14:05:39.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://chaos.social/@elomatreb\" class=\"u-url\">@<span>elomatreb</span></a></span> I believe that was quoted from a blog post written by the CEO of Vercel, iirc</p>",
+			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112768225915504990/112768236892607495",
+			"target": "https://www.zachleat.com/twitter/1339584224165199873/",
+			"via": "webmention"
+		},
+		{
+			"id": 1838668,
+			"parentId": 0,
+			"url": "https://mastodon.social/@sil/112768289625858399",
+			"author": {
+				"name": "Stuart Langridge",
+				"url": "https://mastodon.social/@sil",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/695200652a6c13aec45b134117c21f1a6fbb769eec8f9bef8d49066278c6d655.png"
+			},
+			"date": "2024-07-11T14:19:04.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> \"oh no, here comes something wrong! what can I do about it?\"<br />\"You can just give in and do the wrong thing yourself. Or you can turn your back on everything and live in a cave like a hermit so it doesn't affect you. That's it.\"<br />\"Why is that it? Can't I, y'know... fight back? Try to make things better somehow?\"<br />\"No. Cave, or cave. Those are your only two choices.\"</p><p>What a depressing way to think.</p>",
+			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112768225915504990/112768290201947278",
+			"target": "https://www.zachleat.com/twitter/1339584224165199873/",
+			"via": "webmention"
+		},
+		{
+			"id": 1838669,
+			"parentId": 0,
+			"url": "https://fediverse.zachleat.com/@zachleat/112768296185512652",
+			"author": {
+				"name": "Zach Leatherman :11ty:",
+				"url": "https://fediverse.zachleat.com/@zachleat",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
+			},
+			"date": "2024-07-11T14:20:44.000Z",
+			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@sil\" class=\"u-url\">@<span>sil</span></a></span> I think I titled this post after reading it ????  <a href=\"https://www.zachleat.com/web/eleventy-image/\"><span>https://www.</span><span>zachleat.com/web/eleventy-imag</span><span>e/</span></a></p>\n<a href=\"https://www.zachleat.com/web/eleventy-image/\">Don’t Shut Down Your Business! Instead Use Eleventy Image—zachleat.com</a>",
+			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/112768225915504990/112768296185512652",
+			"target": "https://www.zachleat.com/twitter/1339584224165199873/",
+			"via": "webmention"
+		}
+	],
+	"likes": [
+		{
+			"id": 692613,
+			"url": "https://twitter.com/zachleat/status/1173603435398225921#favorited-by-116752371",
+			"date": "2019-09-16T17:45:26.000Z",
+			"author": {
+				"name": "Ingmar",
+				"url": "https://twitter.com/ingmar_h",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7efd560511285efc558c778f4919ae4f836e52eb7092ae6663a39bf65008e943.jpg"
+			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/116752371",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 692616,
+			"url": "https://twitter.com/zachleat/status/1173603435398225921#favorited-by-6308712",
+			"date": "2019-09-16T17:45:29.000Z",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://twitter.com/nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c21eff209ada91f6fe7e85dade06b7cd289b2c253324148110fe5c4ae2cb8021.jpg"
+			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/6308712",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 692618,
+			"url": "https://twitter.com/zachleat/status/1173603435398225921#favorited-by-4409501",
+			"date": "2019-09-16T17:45:30.000Z",
+			"author": {
+				"name": "Jordan Eldredge",
+				"url": "https://twitter.com/captbaritone",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c8078177a87673464586785c8d67a519d7570bd52f6822368509488d06cb1a13.jpg"
+			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/4409501",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 692620,
+			"url": "https://twitter.com/zachleat/status/1173603435398225921#favorited-by-20848287",
+			"date": "2019-09-16T17:45:33.000Z",
+			"author": {
+				"name": "Giamma",
+				"url": "https://twitter.com/GiammaCarioca",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1df14045ed7daba64fdeff94b715be6766be1de9d48ceaf44d547e755b23f38c.jpg"
+			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/20848287",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 692655,
+			"url": "https://twitter.com/zachleat/status/1173603435398225921#favorited-by-1163981",
+			"date": "2019-09-16T18:42:42.000Z",
+			"author": {
+				"name": "matt northam ᴹᴺ",
+				"url": "https://twitter.com/mattnortham",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/bdabb90550a85c9fda9b5486e2095b5b52b0c383ce4038fcc5991a3deb5fd52a.png"
+			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/1163981",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 692659,
+			"url": "https://twitter.com/zachleat/status/1173603435398225921#favorited-by-2845330473",
+			"date": "2019-09-16T18:42:47.000Z",
+			"author": {
+				"name": "the hog that got away 🌳",
+				"url": "https://twitter.com/halvves",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0bcf0e48c9a0b00596a74e98cc01ade989134a44a344eb30f6eca73a4652bdcd.jpg"
+			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1173603435398225921/2845330473",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 1234342,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-793371007281197056",
+			"date": "2021-07-31T11:53:51.000Z",
+			"author": {
+				"name": "Eugene Chulkov",
+				"url": "https://twitter.com/dev99problems",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/0b7775d82fa76d393892face873a16706611c9baf4d00fddbf7ed99f2143509b.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1421349043012308992/793371007281197056",
+			"target": "https://www.zachleat.com/opengraph/web/eleventy-cloud-authors-pages/",
+			"via": "webmention"
+		},
+		{
+			"id": 1234385,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-24203304",
+			"date": "2021-07-31T14:50:21.000Z",
+			"author": {
+				"name": "Matt Biilmann",
+				"url": "https://twitter.com/biilmann",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af70cb924db6d4dfc56c9c7cf65e39cf6e3901836a903a237357a1fc28c1c6a5.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1421349043012308992/24203304",
+			"target": "https://www.zachleat.com/opengraph/web/eleventy-cloud-authors-pages/",
+			"via": "webmention"
+		},
+		{
+			"id": 1234388,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-289095641",
+			"date": "2021-07-31T14:50:45.000Z",
+			"author": {
+				"name": "TRST_Blog",
+				"url": "https://twitter.com/trst_blog",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8c872b78457b09bb978c4fd62406b1225e0736e1c6a1c13419921a86abd9d683.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1421349043012308992/289095641",
+			"target": "https://www.zachleat.com/opengraph/web/eleventy-cloud-authors-pages/",
+			"via": "webmention"
+		},
+		{
+			"id": 1234474,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-24659084",
+			"date": "2021-07-31T23:34:06.000Z",
+			"author": {
+				"name": "Dave Pedu",
+				"url": "https://twitter.com/dpedu",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/eb10c6e0e6d426b27ed0d02efc7c4087e8224071e83fab2153c36cdaa46f4603.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1421349043012308992/24659084",
+			"target": "https://www.zachleat.com/opengraph/web/eleventy-cloud-authors-pages/",
+			"via": "webmention"
+		},
+		{
+			"id": 1234478,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-23724008",
+			"date": "2021-07-31T23:34:34.000Z",
+			"author": {
+				"name": "Sia Karamalegos",
+				"url": "https://twitter.com/TheGreenGreek",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1421349043012308992/23724008",
+			"target": "https://www.zachleat.com/opengraph/web/eleventy-cloud-authors-pages/",
+			"via": "webmention"
+		},
+		{
+			"id": 1234481,
+			"url": "https://twitter.com/zachleat/status/1421349043012308992#favorited-by-1226126702",
+			"date": "2021-07-31T23:34:35.000Z",
+			"author": {
+				"name": "Mathias Rechtzigel",
+				"url": "https://twitter.com/MathiasaurusRex",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/69cec7766d780bb9a46107a9fe1c0a69691418b60a4ae7ed2d0a88d472ce3795.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1421349043012308992/1226126702",
+			"target": "https://www.zachleat.com/opengraph/web/eleventy-cloud-authors-pages/",
+			"via": "webmention"
+		},
+		{
+			"id": 1315204,
+			"url": "https://twitter.com/zachleat/status/1469313950084964354#favorited-by-725502839359987714",
+			"date": "2021-12-11T04:30:20.000Z",
+			"author": {
+				"name": "Jake Dohm",
+				"url": "https://twitter.com/JakeDohm",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cba8f847e30e8dc52107d56c8d603360cd3b3475013f850b2f72adb55b16ec14.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1469313950084964354/725502839359987714",
+			"target": "https://www.zachleat.com/twitter/popular/2021/",
+			"via": "webmention"
+		},
+		{
+			"id": 1315205,
+			"url": "https://twitter.com/zachleat/status/1469313950084964354#favorited-by-14321037",
+			"date": "2021-12-11T04:30:20.000Z",
+			"author": {
+				"name": "Jace Benson 👨‍💻⚙️",
+				"url": "https://twitter.com/jacebenson",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e28682b3515f2be9d31c4806ddfed92389630db239ccd9ab6de0343c71545552.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1469313950084964354/14321037",
+			"target": "https://www.zachleat.com/twitter/popular/2021/",
+			"via": "webmention"
+		},
+		{
+			"id": 1315222,
+			"url": "https://twitter.com/zachleat/status/1469313950084964354#favorited-by-425853322",
+			"date": "2021-12-11T07:40:36.000Z",
+			"author": {
+				"name": "John Meyerhofer",
+				"url": "https://twitter.com/JRMeyerhofer",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8bae22b585a9fca41e9280f6f6cb440ed8f5ae3add3ee0181bcdc773c14ebdfd.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1469313950084964354/425853322",
+			"target": "https://www.zachleat.com/twitter/popular/2021/",
+			"via": "webmention"
+		},
+		{
+			"id": 1397288,
+			"url": "https://twitter.com/zachleat/status/1524799574082301952#favorited-by-4874949729",
+			"date": "2022-05-12T21:42:06.000Z",
+			"author": {
+				"name": "Passle",
+				"url": "https://twitter.com/passle_",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/90781eef1472e4b03f8b22010ee66132dfeef703fe76bf80d6a3b9dcd87e59ec.jpg"
+			},
+			"source": "https://brid.gy/like/twitter/zachleat/1524799574082301952/4874949729",
+			"target": "https://www.zachleat.com/alarmd/",
+			"via": "webmention"
+		},
+		{
+			"id": 1711288,
+			"url": "https://fediverse.zachleat.com/@zachleat/110984538336952948#favorited-by-109297809026408317",
+			"date": "2023-08-31T17:23:09.000Z",
+			"author": {
+				"name": "Sara Joy ✨",
+				"url": "https://front-end.social/@sarajw",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a06118ca119ec1183309db1aa65689d6bd69349b68713fd0c3f49cc5de8ca683.jpg"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/110984538336952948/109297809026408317",
+			"target": "https://www.zachleat.com/archive/busyness-sample/",
+			"via": "webmention"
+		},
+		{
+			"id": 1747516,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505839545250260#favorited-by-109382229410239377",
+			"date": "2023-12-01T15:48:31.000Z",
+			"author": {
+				"name": "Hawk Ticehurst",
+				"url": "https://fosstodon.org/@hawkticehurst",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cbdf15e8d3662f6bd1aeb13b67e53d334745df10adb1e9977674e7b3fb728b83.jpg"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111505839545250260/109382229410239377",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 1747584,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505839545250260#favorited-by-109288230453300889",
+			"date": "2023-12-01T19:51:38.000Z",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://mamot.fr/@nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/46db122dbb31fe47f9d54cd6b37edc875807209a0c1f9d0a8da12a397743b88d.jpg"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111505839545250260/109288230453300889",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 1838667,
+			"url": "https://fediverse.zachleat.com/@zachleat/112768225915504990#favorited-by-110073123967920836",
+			"date": "2024-07-11T16:33:03.000Z",
+			"author": {
+				"name": "elomatreb ????",
+				"url": "https://chaos.social/@elomatreb",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/69e167df066ffa825e6cb9953bc48eb4c9aaa9c6f46806e0f418763a6e543063.png"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/112768225915504990/110073123967920836",
+			"target": "https://www.zachleat.com/twitter/1339584224165199873/",
+			"via": "webmention"
+		}
+	],
+	"reposts": [
+		{
+			"id": 692614,
+			"url": "https://twitter.com/GiammaCarioca/status/1173648768887074817",
+			"date": "2019-09-16T17:24:06.000Z",
+			"author": {
+				"name": "Giamma",
+				"url": "https://twitter.com/GiammaCarioca",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1df14045ed7daba64fdeff94b715be6766be1de9d48ceaf44d547e755b23f38c.jpg"
+			},
+			"source": "https://brid-gy.appspot.com/repost/twitter/zachleat/1173603435398225921/1173648768887074817",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 692651,
+			"url": "https://twitter.com/sumeetjain/status/1173664210934321152",
+			"date": "2019-09-16T18:25:28.000Z",
+			"author": {
+				"name": "Sumeet Jain",
+				"url": "https://twitter.com/sumeetjain",
+				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/012468da903d2e8145fb9181251fed279d286f9d5cb30e40229f68c0b120e5ec.jpg"
+			},
+			"source": "https://brid-gy.appspot.com/repost/twitter/zachleat/1173603435398225921/1173664210934321152",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		},
+		{
+			"id": 1747585,
+			"url": "https://fediverse.zachleat.com/@zachleat/111505839545250260#reblogged-by-109288230453300889",
+			"date": "2023-12-01T19:51:39.000Z",
+			"author": {
+				"name": "Nicolas Hoizey",
+				"url": "https://mamot.fr/@nhoizey",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/46db122dbb31fe47f9d54cd6b37edc875807209a0c1f9d0a8da12a397743b88d.jpg"
+			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111505839545250260/109288230453300889",
+			"target": "https://www.zachleat.com/twitter/",
+			"via": "webmention"
+		}
+	]
+}

@@ -12,6 +12,8 @@
 			"date": "2026-02-18T19:34:31.000Z",
 			"content": "<p>I thought my home-cooked RSS reader had a bug, but no, <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> published in the future<br /><a href=\"https://www.zachleat.com/web/state-of-the-browser/\"><span>https://www.</span><span>zachleat.com/web/state-of-the-</span><span>browser/</span></a></p><p>you can't just publish in the future, Zach</p>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/web/state-of-the-browser/\"></a>",
 			"type": "mention",
+			"source": "https://brid.gy/post/mastodon/@zachleat@fediverse.zachleat.com/116093306307872947",
+			"target": "https://www.zachleat.com/web/state-of-the-browser/",
 			"via": "webmention"
 		},
 		{
@@ -22,6 +24,8 @@
 			"date": "2026-03-02T22:00:20.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://lemmy.world/post/43782424",
+			"target": "https://www.zachleat.com/web/state-of-the-browser/",
 			"via": "webmention"
 		}
 	],
@@ -29,34 +33,40 @@
 		{
 			"id": 2029926,
 			"url": "https://rmendes.net/likes/2026/02/06/6ae77/",
-			"date": "2026-02-06T09:07:44.000Z",
+			"date": "2026-02-06T15:07:44.000Z",
 			"author": {
 				"name": "Ricardo Mendes",
 				"url": "https://rmendes.net",
 				"avatarUrl": "https://avatars.webmention.io/rmendes.net/cef6cf3fd447aed3264578ec5da963e8ed6829d2821d4bdd3896f6e1d7c91774.jpg"
 			},
+			"source": "https://rmendes.net/likes/2026/02/06/6ae77",
+			"target": "https://www.zachleat.com/web/state-of-the-browser/",
 			"via": "webmention"
 		},
 		{
 			"id": 1973865,
 			"url": "https://rmendes.net/content/likes/2026-02-06-6ae77/",
-			"date": "2026-02-06T09:07:44.000Z",
+			"date": "2026-02-06T15:07:44.000Z",
 			"author": {
 				"name": "Ricardo Mendes",
 				"url": "https://rmendes.net",
 				"avatarUrl": "https://avatars.webmention.io/rmendes.net/0423570ec473c617fad25aee84e29af50ef7e8fc0e4cebbf468db1a4dc1d1a25.jpg"
 			},
+			"source": "https://rmendes.net/content/likes/2026-02-06-6ae77",
+			"target": "https://www.zachleat.com/web/state-of-the-browser/",
 			"via": "webmention"
 		},
 		{
 			"id": 1973840,
 			"url": "https://rmendes.net/content/likes/2026-02-06-6ae77/",
-			"date": "2026-02-06T09:07:44.000Z",
+			"date": "2026-02-06T15:07:44.000Z",
 			"author": {
 				"name": "Ricardo Mendes",
 				"url": "https://rmendes.net",
 				"avatarUrl": "https://avatars.webmention.io/rmendes.net/0423570ec473c617fad25aee84e29af50ef7e8fc0e4cebbf468db1a4dc1d1a25.jpg"
 			},
+			"source": "https://rmendes.net/content/likes/2026-02-06-6ae77/",
+			"target": "https://www.zachleat.com/web/state-of-the-browser/",
 			"via": "webmention"
 		}
 	]

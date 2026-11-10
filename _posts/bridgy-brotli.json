@@ -11,6 +11,8 @@
 			"date": "2019-06-30T09:12:34.000Z",
 			"content": "<p>‪Good catch. Thank you @zachleat for‬ the write up</p>\n<blockquote cite=\"https://www.zachleat.com/web/bridgy-brotli/\">Just a fair warning if you use the amazing Bridgy service to gather webmentions from social networking sites. It won’t actually work with your site if you’re using Brotli compression. Use gzip for your HTML requests instead of Brotli and it will work fine.<a href=\"https://www.zachleat.com/web/bridgy-brotli/\">zachleat.com</a></blockquote>\n<p><a class=\"u-in-reply-to\" href=\"https://www.zachleat.com/web/bridgy-brotli/\"></a><br /><a class=\"u-in-reply-to\" href=\"https://twitter.com/zachleat/status/1145034044394135552?s=21\"></a></p>",
 			"type": "reply",
+			"source": "https://www.webrocker.de/2019/06/30/brid-gy-brotly/",
+			"target": "https://www.zachleat.com/web/bridgy-brotli/",
 			"via": "webmention"
 		},
 		{
@@ -25,6 +27,8 @@
 			"date": "2019-07-02T16:24:16.000Z",
 			"content": "Bridgy for Webmentions with Brotli—<a href=\"http://zachleat.com\">zachleat.com</a> <a href=\"https://www.zachleat.com/web/bridgy-brotli/\">zachleat.com/web/bridgy-bro…</a>\n<a class=\"u-mention\" href=\"http://zachleat.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1146092235164913664",
+			"target": "https://www.zachleat.com/web/bridgy-brotli/",
 			"via": "webmention"
 		}
 	],
@@ -38,6 +42,8 @@
 				"url": "https://twitter.com/riccardoerra",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/76b9e43e96ad558b76a5e01d4134b6c60f6345d8513c9e7d252a631be1b28961.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1145042479135297536/15269782",
+			"target": "https://www.zachleat.com/web/bridgy-brotli/",
 			"via": "webmention"
 		}
 	],
@@ -45,12 +51,14 @@
 		{
 			"id": 638275,
 			"url": "https://adactio.com/links/15455",
-			"date": "2019-07-02T16:21:57.000Z",
+			"date": "2019-07-02T21:21:57.000Z",
 			"author": {
 				"name": "Jeremy Keith",
 				"url": "https://adactio.com/",
 				"avatarUrl": "https://avatars.webmention.io/adactio.com/24f33c5820046ebbcb429f78bb988fc1fa9f97d35247e0b72b3fb5ff888da633.jpg"
 			},
+			"source": "https://adactio.com/links/15455",
+			"target": "https://www.zachleat.com/web/bridgy-brotli/",
 			"via": "webmention"
 		}
 	]

@@ -11,6 +11,8 @@
 			"date": "2015-10-29T18:58:15.000Z",
 			"content": "<p>This looks like an excellent talk from <a href=\"http://www.zachleat.com/web/\">Zach Leatherman</a>. It’s packed with useful recommendations. I hope the video’s posted soon!</p>\n\n<p>Slides that made me laugh out loud: <a href=\"https://speakerdeck.com/zachleat/a-brief-history-of-that-time-you-used-web-fonts/#84\">84</a> &amp; <a href=\"https://speakerdeck.com/zachleat/a-brief-history-of-that-time-you-used-web-fonts/#85\">85</a>.</p>\n\n        <p>\n          <a href=\"https://speakerdeck.com/zachleat/a-brief-history-of-that-time-you-used-web-fonts\">Read on Speaker Deck</a>\n        </p>",
 			"type": "mention",
+			"source": "https://www.aaron-gustafson.com/notebook/links/a-brief-history-of-that-time-you-used-web-fonts/",
+			"target": "http://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -25,6 +27,8 @@
 			"date": "2019-05-17T10:37:47.000Z",
 			"content": "What a great evening! A big thank you to <a href=\"https://twitter.com/matthiasendler\">@matthiasendler</a> and <a href=\"https://twitter.com/zachleat\">@zachleat</a> for these great talks yesterday. Also thank you to <a href=\"https://twitter.com/andygrunwald\">@andygrunwald</a> and Dominik from <a href=\"https://twitter.com/WebEngDUS\">@WebEngDUS</a> for this great cooperation and organization! Here are some impressions of the event.",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1129335194811551744",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -39,6 +43,8 @@
 			"date": "2019-05-17T11:33:25.000Z",
 			"content": "<a href=\"https://twitter.com/zachleat\">@zachleat</a> Nice to meet you at <a href=\"https://twitter.com/search?q=%23btconf\">#btconf</a>, Zach. I will now think of your talk every time I visit my deli ;) Not a bad selection though.",
 			"type": "mention",
+			"source": "https://brid-gy.appspot.com/post/twitter/zachleat/1129349195045978112",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -52,6 +58,8 @@
 			"date": "2019-09-03T13:49:19.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "http://anna.borsaendeks.com/airing-out-2017s-dirty-laundry-zachleat-com/",
+			"target": "http://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -65,6 +73,8 @@
 			"date": "2019-09-03T15:06:03.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "http://anna.borsaendeks.com/critical-web-fonts-zachleat-com/",
+			"target": "http://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -78,6 +88,8 @@
 			"date": "2019-10-30T14:34:19.000Z",
 			"content": "<p>Last week I got a call from my bank regarding a wire transfer I had just scheduled. The customer support guy had me repeat everything back to him because there seemed to be a problem with the information. “Hmmmm, everything you said is right right except the last 3 digits of the account number.”</p>\n\n\n\n<p>He had me resubmit the wire transfer form. When I exited the account number field, the corner of my eye noticed the account number change ever so slightly. I quickly refocused into the field and slightly moved my index finger up on my <a href=\"https://en.wikipedia.org/wiki/Magic_Mouse\">Magic Mouse</a>. It started looking more like a slot machine than an input field!</p>\n\n\n\n<img src=\"http://10.19.10.94:70/design-team-blogs/wp-content/uploads/2019/10/number-input.gif\" alt=\"\" />\n\n\n\n<p>Turns out they’re using <code>type=\"number\"</code> on that account <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number\">number input field</a>, which changes the behavior of the field:</p>\n\n\n\n<p><em>The browser may opt to provide stepper arrows to let the user increase and decrease the value using their mouse or by simply tapping with a fingertip.</em></p>\n\n\n\n<p>In this case, one up or down swipe of my finger on my mouse, or hitting the up/down keyboard arrows changes the account number! Not exactly what anyone wants. <strong>Certainly not for account numbers, social security numbers, credit card numbers, confirmation numbers, and others.</strong></p>\n\n\n\n<p>Time and time again, it seems like reaching for <code>input type=\"number\"</code> is a good idea, but it almost always isn’t. While <code>input type=\"number</code><a href=\"http://bradfrost.com/blog/post/better-numerical-inputs-for-mobile-forms/\">triggers numeric keyboards on touchscreens</a> leading to better mobile UX, that can also be accomplished by configuring the <code>pattern</code> attribute in a certain way (<a href=\"https://www.zachleat.com/web/\">Zach Leatherman</a> has a <a href=\"https://www.filamentgroup.com/lab/type-number.html\">great deep dive post into all of this</a>). I’ll also say that incrementing/decrementing a number with a mouse’s scroll wheel (especially the crappy Magic Mouse) is a lousy pattern even for proper numeric input (“Dammit! I wanted to buy two pairs of socks, not 39.”)</p>\n\n\n\n<p>\nI explained the situation to my bank’s customer service person, and he seemed to understand. “Oooohh, so things like account numbers and social security numbers aren’t really ‘numbers’”. You got it, dude. He said he’ll pass it along to their web team, and I hope they act on it!\n</p>",
 			"type": "mention",
+			"source": "https://blog.tamiaa.com/2019/10/30/you-probably-dont-need-input-typenumber/",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -92,6 +104,8 @@
 			"date": "2021-01-22T08:09:56.000Z",
 			"content": "Really nice custom element (<a href=\"https://twitter.com/search?q=%23UseThePlatform\">#UseThePlatform</a>) and great use case. You might want to change the styling though, since on mobile (iOS at least) it’s indistinguishable from regular text (it works perfectly fine, it’s just not discoverable).\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "reply",
+			"source": "https://brid-gy.appspot.com/comment/twitter/zachleat/1352481547669151744/1352528912492994561",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -106,6 +120,8 @@
 			"date": "2021-01-26T02:31:07.000Z",
 			"content": "I'm not sure if there's a term for it but I use that pattern a lot. \"Behaviors\"? \"Declarative progressive enhancement?\"\n<a class=\"u-mention\" href=\"https://twitter.com/briankardell\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "reply",
+			"source": "https://brid-gy.appspot.com/comment/twitter/zachleat/1353834991730438151/1353893199530475520",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -120,6 +136,8 @@
 			"date": "2021-01-26T14:28:07.000Z",
 			"content": "I've found it challenging to use WCs very usefully this way alongside any other framework that's doing client rendering. Even this example and its class toggles can conflict with a single truth in state right? <a href=\"https://github.com/zachleat/filter-container/blob/main/filter-container.js#L82\">github.com/zachleat/filte…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/briankardell\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/zachleat\"></a>\n<a class=\"u-mention\" href=\"https://www.zachleat.com/\"></a>",
 			"type": "reply",
+			"source": "https://brid-gy.appspot.com/comment/twitter/zachleat/1353834991730438151/1354073640380338178",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -130,6 +148,8 @@
 			"date": "2021-02-22T22:29:29.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://w.vpsman.net/5421.html",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -140,6 +160,8 @@
 			"date": "2021-02-23T02:27:49.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://w.vpsman.net/7695.html",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -150,6 +172,8 @@
 			"date": "2021-02-23T16:02:35.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://w.vpsman.net/12549.html",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -160,6 +184,8 @@
 			"date": "2021-02-23T20:20:52.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://w.vpsman.net/14949.html",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -173,6 +199,8 @@
 			"date": "2021-07-16T14:29:57.000Z",
 			"content": "<p></p>\n<h3>Front End Web Development Feeds and Newsletters</h3>\n<p></p>\n<br /><br /><br />\n<p>The world of Web Development is exciting and moves fast – particularly front end development in the past few years.</p>\n<p>Although all of this innovation is great, it can sometimes be pretty difficult to keep up with. One of the ways I keep on top of the latest changes, trends and new technologies is by following the blogs and newsletters of companies and developers leading the industry.</p>\n<p>I’m always on the lookout for more blogs or newsletters! If you have any suggestions I should check out <a href=\"https://alistairshepherd.uk/#contact\">get in touch</a>!</p>\n<h2>\n  <a href=\"https://dev.to/accudio/#table-of-contents\"><br /></a><br />\n  Table of Contents<br /></h2>\n<ol><li><a href=\"https://dev.to/accudio/#intro\">Intro</a></li>\n<li><a href=\"https://dev.to/accudio/#browsers\">Browser Vendors</a></li>\n<li><a href=\"https://dev.to/accudio/#companies\">Company Blogs</a></li>\n<li><a href=\"https://dev.to/accudio/#dev-blogs\">Development Blogs</a></li>\n<li><a href=\"https://dev.to/accudio/#developers\">Developers and Designers</a></li>\n<li><a href=\"https://dev.to/accudio/#magazines\">Magazines</a></li>\n<li><a href=\"https://dev.to/accudio/#newsletters\">Newsletters</a></li>\n</ol><h2>Intro</h2>\n<p>I thought I’d crack out a post I can point people to with a list of the feeds and newsletters I subscribe to, with a bit of hopefully useful info so you know if you want to subscribe yourself. Most of these are focused on:</p>\n<ul><li>Front End Development</li>\n<li>Full-Stack development</li>\n<li>HTML</li>\n<li>CSS</li>\n<li>JavaScript</li>\n<li>Accessibility</li>\n<li>Web Performance</li>\n<li>Browsers</li>\n<li>11ty</li>\n</ul><p>I find it quite fun that the format for the majority of these feeds about modern web development is RSS, a technology that has existed since 1999! If you’re looking for a feed reader I use Feedbin, which is a great cloud RSS and newsletter reader across multiple platforms. You can also find an <a href=\"https://github.com/accudio/rss\">export of my RSS subscriptions</a> on <a href=\"https://github.com/accudio\">my Github</a>.</p>\n<h2>Browser Vendors</h2>\n<p>Useful for keeping up with changes to the biggest browsers. Topics can be quite technical and writing not particularly approachable, but probably worth a look. I tend to scan the titles to decide if it’s something that will likely affect me before reading.</p>\n<ul><li>\n<a href=\"https://blog.google/products/chrome/\">Google Chrome blog</a> [<a href=\"https://blog.google/products/chrome/rss/\">feed</a>] — Fairly approachable summaries of changes, updates and new features coming to Google chrome and probably other chromium browsers;</li>\n<li>\n<a href=\"https://blog.chromium.org\">Chromium Blog</a> [<a href=\"http://blog.chromium.org/atom.xml\">feed</a>] — Similar to the Google Chrome blog but more technical, and posts summaries of every major version;</li>\n<li>\n<a href=\"https://hacks.mozilla.org\">Mozilla Hacks</a> [<a href=\"https://hacks.mozilla.org/feed/\">feed</a>] — Updates on Firefox and Gecko changes, mixture of technical level, summary of major updates;</li>\n<li>\n<a href=\"https://blogs.windows.com/msedgedev/\">Microsoft Edge Blog</a> [<a href=\"https://blogs.windows.com/msedgedev/feed\">feed</a>] — MS’ work on Blink and Chromium, will eventually come to all Chromium browsers so good to follow;</li>\n<li>\n<a href=\"https://planet.webkit.org\">Planet Webkit</a> [<a href=\"http://planet.webkit.org/atom.xml\">feed</a>] — Very technical updates to WebKit and Safari – useful however due to a lack of official Safari updates. Keep in mind WebKit changes can take months or even years to make their way to Safari;</li>\n<li>\n<a href=\"https://planet.igalia.com/\">Planet Igalia</a> [<a href=\"https://planet.igalia.com/rss20.xml\">feed</a>] — The Igalia team have contributed to all browsers, most recently :focus-visible in Safari. Some really deep-dives into very technical topics. Not for everyone.</li>\n</ul><h2>Company Blogs</h2>\n<p>Any blogs by development agencies or dev-related products. A few of the agency blogs have some great tips, best practices and open-source tools. I tend to be a bit wary of product blogs as they’re always trying to sell but there are some decent ones out there.</p>\n<ul><li>\n<a href=\"https://9elements.com/blog/\">9Elements</a> [<a href=\"https://9elements.com/blog/rss/\">feed</a>] — Agency with some great front-end skills in their team. I particularly like Nils Binder’s articles on layout like “<a href=\"https://9elements.com/blog/the-devils-albatros-an-algorithmic-layout-technique/\">The Devil’s Albatross</a>“;</li>\n<li>\n<a href=\"https://axesslab.com\">Axess Lab</a> [<a href=\"https://axesslab.com/feed/\">feed</a>] — Accessibility consultants, they have some great articles offering approachable summaries for accessibility topics including “<a href=\"https://axesslab.com/what-is-a-screen-reader/\">What is a screen reader?</a>“;</li>\n<li>\n<a href=\"https://bejamas.io/blog/\">Bejamas</a> [<a href=\"https://bejamas.io/blog/rss.xml\">feed</a>] — An expert Jamstack agency, if you want more info on <a href=\"https://bejamas.io/discovery/static-site-generators/\">Static Site Generators</a> or <a href=\"https://bejamas.io/discovery/headless-cms/\">Headless CMS’</a> their articles are brilliant;</li>\n<li>\n<a href=\"https://www.debugbear.com/blog/\">DebugBear</a> [<a href=\"https://www.debugbear.com/blog/feed/rss\">feed</a>] — DebugBear sells web performance monitoring, I haven’t used their product but they write some decent high-level articles about improving web performance.</li>\n<li>\n<a href=\"https://www.filamentgroup.com/lab/\">Filament Group</a> [<a href=\"https://www.filamentgroup.com/lab/atom.xml\">feed</a>] — If you’ve been on the web a while you’ve probably used a tool made by Filament Group! Authors of Respond.js, Picturefill, LoadCSS and <a href=\"https://www.filamentgroup.com/lab/load-css-simpler/\">the most common async CSS pattern</a> – they do great open-source work and really interesting articles about them.</li>\n<li>\n<a href=\"https://volument.com/blog/\">Volument Minimalism</a> [<a href=\"https://volument.com/rss.xml\">feed</a>] — Privacy-focused analytics, haven’t used the product but their insight on analytics and modern development is interesting and straight to the point.</li>\n</ul><h2>Development Blogs</h2>\n<p>Blogs generally aimed at sharing knowledge about web development. Separate from Developers and Magazines as they feel somewhere between the two.</p>\n<ul><li>CSS { In Real Life } [<a href=\"https://css-irl.info/rss.xml\">feed</a>] — Generally short posts focused on CSS and layout. “<a href=\"https://css-irl.info/detecting-hover-capable-devices/\">Detecting Hover-Capable Devices</a>” is a great recent one to check out;</li>\n<li>\n<a href=\"https://joy.recurse.com\">Joy of Computing</a> [<a href=\"https://joy.recurse.com/feed.atom\">feed</a>] — More general that most other feeds here. Short daily posts about cool or interesting things going on in Computing, can be pretty fun too;</li>\n<li>\n<a href=\"https://piccalil.li\">Piccalilli</a> [<a href=\"https://piccalil.li/feed.xml\">feed</a>] — Piccalilli by Andy Bell has great tutorials and summaries on building modern front ends. Check out “<a href=\"https://piccalil.li/blog/a-modern-css-reset/\">Modern CSS Reset</a>“. The <a href=\"https://piccalil.li/membership/\">Piccalilli community membership</a> is also great if you’re into that!</li>\n<li>\n<a href=\"https://quirksmode.org/blog/\">QuirksMode Blog</a> [<a href=\"https://quirksmode.org/blog/atom.xml\">feed</a>] — QuirksMode has been writing about the web since 2004, talking a lot about browsers and thinking about how the web as a whole should work. Great thinkpieces.</li>\n<li>\n<a href=\"https://web.dev/blog/\">web.dev</a> [<a href=\"https://web.dev/feed.xml\">feed</a>] — Posts mostly by Google Web Developers introducing and covering best practices and new features in the web. The <a href=\"https://web.dev/learn/\">courses</a> on the site are also well worth checking out;</li>\n<li>\n<a href=\"https://webplatform.news\">Web Platform News</a> [<a href=\"https://webplatform.news/feed.xml\">feed</a>] — Provides short updates on anything new in the web, including bugs and announcements you might not find elsewhere. Only available as a screenshot unless you pay $2/month on <a href=\"https://www.patreon.com/join/webplatformnews\">Patreon</a>, worth considering though as I’ve found it very useful.</li>\n</ul><h2>Developers and Designers</h2>\n<p>These are individual devs and designers who are experts in their field. Not as frequent posts, but there are some real gems here. In alphabetical order for simplicity, and just a short summary as there’s a few!</p>\n<ul><li>\n<a href=\"https://addyosmani.com/\">Addy Osmani</a> [<a href=\"https://addyosmani.com/rss.xml\">feed</a>] — Google developer focusing on performance. Author of great book “Image Optimisation”;</li>\n<li>\n<a href=\"https://adrianroselli.com\">Adrian Roselli</a> [<a href=\"https://adrianroselli.com/feed\">feed</a>] — One of the best writers on accessibility and does loads of research and testing of screen readers etc;</li>\n<li>\n<a href=\"http://ishadeed.com/\">Ahmad Shadeed</a> [<a href=\"https://ishadeed.com/feed.xml\">feed</a>] — Dev/Designer who is a master of CSS;</li>\n<li>\n<a href=\"https://bradfrost.com/\">Brad Frost</a> [<a href=\"http://feeds.feedburner.com/brad-frosts-blog\">feed</a>] — Mostly thoughts on the front end design industry and design systems;</li>\n<li>\n<a href=\"https://www.brucelawson.co.uk/\">Bruce Lawson</a> [<a href=\"https://www.brucelawson.co.uk/feed/\">feed</a>] — Web veteran with a lot of accessibility knowledge. His Reading Lists provide a great ~monthly list of great articles from around the web.</li>\n<li>\n<a href=\"https://bryanlrobinson.com/\">Bryan Robinson</a> [<a href=\"https://bryanlrobinson.com/feed.xml\">feed</a>] — 11ty wizard and devrel for Sanity – a decent-looking headless CMS;</li>\n<li>\n<a href=\"https://chenhuijing.com/\">Chen Hui Jing</a> [<a href=\"https://chenhuijing.com/feed.xml\">feed</a>] — Well written articles from all areas of web dev from devops to CSS debugging;</li>\n<li>\n<a href=\"https://christianheilmann.com/\">Christian Heilmann</a> [<a href=\"https://christianheilmann.com/feed/\">feed</a>] — Shorter posts and introductions to various front end topics;</li>\n<li>\n<a href=\"http://daverupert.com/\">Dave Rupert</a> [<a href=\"https://daverupert.com/atom.xml\">feed</a>] — co-host of podcast ShopTalk, most of the blog is more about life as a dev and productivity but has some great dev articles also;</li>\n<li>\n<a href=\"https://davidwalsh.name/\">David Walsh</a> [<a href=\"https://davidwalsh.name/feed\">feed</a>] — One of the longest running dev blogs, David has so many brilliant articles, many of which are short tips with exactly what you need;</li>\n<li>\n<a href=\"https://dmitripavlutin.com/\">Dmitri Pavlutin</a> [<a href=\"https://dmitripavlutin.com/rss.xml\">feed</a>] — I love Dmitri’s introductions to new JavaScript and React features and patterns;</li>\n<li>\n<a href=\"https://csswizardry.com/\">Harry Roberts/CSS Wizardry</a> [<a href=\"https://feeds.feedburner.com/csswizardry\">feed</a>] — Master web performance consultant, great articles providing fairly easy and accessible performance tips and advice;</li>\n<li>\n<a href=\"https://heydonworks.com/\">Heydon Pickering</a> [<a href=\"https://heydonworks.com/feed.xml\">feed</a>] — Internet maverick, accessibility expert, design systems writer and author of the brilliant “Inclusive Components”;</li>\n<li>\n<a href=\"https://hiddedevries.nl/en/blog/\">Hidde De Vries</a> [<a href=\"https://hiddedevries.nl/rss/full/\">feed</a>] — Accessibility, HTML and CSS expert;</li>\n<li>\n<a href=\"https://jakearchibald.com/\">Jake Archibald</a> [<a href=\"https://jakearchibald.com/posts.rss\">feed</a>] — Google developer and co-host of HTTP 203, writes great articles on web performance, images and modern JavaScript;</li>\n<li>\n<a href=\"https://meiert.com/en/\">Jens Oliver Meiert</a> [<a href=\"https://meiert.com/en/feed/\">feed</a>] — What you didn’t realise you didn’t know about HTML. Check out “HTML Concepts: Body-Ok”;</li>\n<li>\n<a href=\"https://adactio.com\">Jeremy Keith</a> [<a href=\"https://adactio.com/articles/rss\">feed</a>] — Jeremy has been writing about the web since 2001 and always has interesting thoughts of development and the industry in general. Manages the great agency <a href=\"https://clearleft.com\">Clearleft</a>.</li>\n<li>\n<a href=\"https://jeremy.codes/\">Jeremy Wagner</a> [<a href=\"https://jeremy.codes/rss.xml\">feed</a>] — Web performance consultant and fan of simple JavaScript;</li>\n<li>\n<a href=\"https://joshwcomeau.com/\">Josh W Comeau</a> [<a href=\"https://joshwcomeau.com/rss.xml\">feed</a>] — React developer, writes great articles about JavaScript and HTML/CSS from the perspective of a JS dev;</li>\n<li>\n<a href=\"https://leftalign.substack.com/\">Kat Maddox</a> [<a href=\"https://leftalign.substack.com/feed/\">feed</a>] — Internet anarchist and computer/programming comedian.</li>\n<li>\n<a href=\"https://lea.verou.me/\">Lea Verou</a> [<a href=\"http://feeds.feedburner.com/leaverou\">feed</a>] — Works on web standards with the W3C Technical Architecture Group. Blog focused on CSS and JS;</li>\n<li>\n<a href=\"https://www.industrialempathy.com/\">Malte Ubl</a> [<a href=\"https://www.industrialempathy.com/feed/feed.xml\">feed</a>] — Web developer and software designer, particularly good articles on web performance;</li>\n<li>\n<a href=\"https://matuzo.at/\">Manuel Matuzovic</a> [<a href=\"https://www.matuzo.at/feed.xml\">feed</a>] — Creator of HTMHell, general tips and snippets of HTML, CSS and on accessibility;</li>\n<li>\n<a href=\"https://marcus.io\">Marcus Herrmann</a> [<a href=\"https://marcus.io/feed\">feed</a>] — Accessibility specialist, writes lots of great articles helping you test for accessibility and digging into testing various practices.</li>\n<li>\n<a href=\"https://markosaric.com/\">Marko Saric</a> [<a href=\"https://markosaric.com/feed/\">feed</a>] — Articles on analytics, web privacy and the state of the web as a whole;</li>\n<li>\n<a href=\"https://mxb.dev/\">Max Böck</a> [<a href=\"https://mxb.dev/feed.xml\">feed</a>] — Creative front end developer and creator of the Whimsical Web Club;</li>\n<li>\n<a href=\"https://firt.dev/\">Maximiliano Firtman</a> [<a href=\"https://firt.dev/feed/feed.xml\">feed</a>] — Best known for being a PWA expert and a better source of Safari news than anyone who work on it. I particularly love his Image CDN article;</li>\n<li>\n<a href=\"https://nicolas-hoizey.com/\">Nicolas Hoizey</a> [<a href=\"https://nicolas-hoizey.com/feeds/articles.xml\">feed</a>] — 11ty plugin author and writes on front end developer topics. He also shares lots of great wee stuff on his “Notes”;</li>\n<li>\n<a href=\"http://rachelandrew.co.uk/archives\">Rachel Andrew</a> [<a href=\"https://rachelandrew.co.uk/archives/rss.php\">feed</a>] — One of the best technical writers /editors around, working for Smashing, MDN and web.dev. Brilliant writing about CSS Layout;</li>\n<li>\n<a href=\"https://smth.uk/\">Sam Smith</a> [<a href=\"https://smth.uk/feed/articles.xml\">feed</a>] — Great freelance dev, writes about anything relevant to modern web development;</li>\n<li>\n<a href=\"https://whistlr.info/\">Sam Thorogood</a> [<a href=\"https://whistlr.info/rss.xml\">feed</a>] — Technical articles about JS, HTML and computing;</li>\n<li>\n<a href=\"https://sarasoueidan.com/blog/\">Sara Soueidan</a> [<a href=\"https://www.sarasoueidan.com/blog/index.xml\">feed</a>] — Writes about Accessibility, HTML, CSS and SVG mostly but anything relevant to front end development;</li>\n<li>\n<a href=\"https://sia.codes\">Sia Karamalegos</a> [<a href=\"https://sia.codes/feed/feed.xml\">feed</a>] — Writes a lot about 11ty, but also more general Jamstack and web performance topics;</li>\n<li>\n<a href=\"https://blog.tomayac.com\">Thomas Steiner</a> [<a href=\"https://blog.tomayac.com/feed/feed.xml\">feed</a>] — Google developer working on PWAs and ‘Project Fugu’, blog is more general explanations of browser features and APIs.</li>\n<li>\n<a href=\"https://timkadlec.com/\">Tim Kadlec</a> [<a href=\"https://timkadlec.com/atom.xml\">feed</a>] — Now working at WebPageTest, great writing on web performance;</li>\n<li>\n<a href=\"https://tobiasahlin.com\">Tobias Ahlin Bjerrome</a> [<a href=\"https://tobiasahlin.com/feed.xml\">feed</a>] — Writes about JS, CSS and Design. Each post focuses on one a particular topic and explains it really well and thoroughly.</li>\n<li>\n<a href=\"https://www.zachleat.com/web/\">Zach Leatherman</a> [<a href=\"https://www.zachleat.com/web/feed/\">feed</a>] — Now working at Netlify, author of 11ty, Glyphhanger and has written some of the best Web Font loading articles around;</li>\n<li>\n<a href=\"https://zellwk.com/\">Zell Liew</a> [<a href=\"https://zellwk.com/feed.xml\">feed</a>] — Brilliant writer whose articles are super easy to understand. Covers so many useful topics including system setup, build chains, technical JavaScript and industry advice;</li>\n</ul><h2>Magazines</h2>\n<p>The big blogs that feature articles from many different authors. A few only run for a month a year, others are year-round. If you only want to subscribe to a few blogs, make it these ones.</p>\n<h3>\n  <a href=\"https://dev.to/accudio/#yearround\"><br /></a><br />\n  Year-round<br /></h3>\n<ul><li>\n<a href=\"https://css-tricks.com\">CSS Tricks</a> [<a href=\"https://css-tricks.com/feed/\">feed</a>] — The big one, possibly the best source for web development articles out there;</li>\n<li>\n<a href=\"https://www.smashingmagazine.com\">Smashing Magazine</a> [<a href=\"https://www.smashingmagazine.com/feed\">feed</a>] — Generally goes into more detail than CSS Tricks, with longer and more in-depth articles;</li>\n<li>\n<a href=\"https://tympanus.net/codrops/\">Codrops</a> [<a href=\"https://tympanus.net/codrops/feed/\">feed</a>] — Publishes the ‘Collective’, a regular summary of great articles in web development. Also has some super cool JavaScript effect tutorials;</li>\n</ul><h3>\n  <a href=\"https://dev.to/accudio/#seasonal\"><br /></a><br />\n  Seasonal<br /></h3>\n<ul><li>\n<a href=\"https://www.24a11y.com\">24 Accessibility</a> [<a href=\"https://www.24a11y.com/feed/\">feed</a>] — Advent calendar of accessibility articles;</li>\n<li>\n<a href=\"https://24ways.org/\">24 ways</a> [<a href=\"https://feeds.feedburner.com/24ways\">feed</a>] — Advent calendar of cool/impressive  things you can do on the web;</li>\n<li>\n<a href=\"https://www.javascriptjanuary.com/\">JavaScript January</a> [<a href=\"https://www.javascriptjanuary.com/blog?format=rss\">feed</a>] — Features all sorts of JS-related articles throughout January, including vanilla, front end frameworks, node.js and testing;</li>\n<li>\n<a href=\"https://calendar.perfplanet.com\">Web Performance Calendar</a> [<a href=\"https://calendar.perfplanet.com/feed/\">feed</a>] — Advent calendar of front and back end web performance articles.</li>\n</ul><h2>Newsletters</h2>\n<p>Some feed readers allow you to receive email newsletters in the same place, I used Feedbin for this. Regardless, these are some great newsletters to subscribe to:</p>\n<ul><li>\n<a href=\"https://www.calibreapp.com/newsletter\">Calibre Performance Newsletter</a> — Regular summary of web performance articles;</li>\n<li>\n<a href=\"https://csslayout.news\">CSS Layout News</a> — Curated by Rachel Andrew, this is a newsletter with news, articles and tips specifically focused on web page layouts with CSS;</li>\n<li>\n<a href=\"https://www2.fauna.com/l/517431/2018-07-09/6d1b8j\">Fauna Developer Weekly</a> — Developer-focused tips and tricks. Fauna is a database provider so a bit more back end focused;</li>\n<li>\n<a href=\"https://frontendfoc.us/\">Frontend Focus</a> — Weekly roundup of front end news and articles, also includes tutorials, jobs and tool suggestions;</li>\n<li>\n<a href=\"https://frontend.horse/\">Frontend Horse</a> — focuses on modern CSS and really dynamic and animated interactions. Not super frequent but each issue goes into so much depth;</li>\n<li>\n<a href=\"https://frontendweekly.co/\">Frontend Weekly</a> — Lots of articles about the JS ecosystem, particularly React tools and libraries;</li>\n<li>\n<a href=\"https://jamstack.email/\">JAMstacked</a> — Jamstack news, articles, libraries and platforms;</li>\n<li>\n<a href=\"https://buttondown.email/cassidoo\">Rendezvous with Cassidoo</a> — Weekly newsletter with a few links about the web, a few about other things, an interview question to try and a joke!</li>\n<li>\n<a href=\"https://uianimationnewsletter.com/\">The UI Animation Newsletter</a> — A few links with super cool UI animations to check out;</li>\n<li>\n<a href=\"https://theanimatedweb.com/newsletter/\">Tiny Web Animation</a> — a short email with 3 links to cool web animations;</li>\n<li>\n<a href=\"https://wdrl.info/\">Web Development Reading List</a> — as the name suggests, a list of articles to check out about web development. Well curated;</li>\n<li>\n<a href=\"https://webtoolsweekly.com/\">Web Tools weekly</a> — Weekly newsletter that focuses on tooling rather than articles. Links to libraries, packages, platforms and tools you can use while developing.</li>\n</ul>\n<p><br /></p>\n<a href=\"https://Sayed.CYou\">Abu Sayed</a> is the <strong>Best Web, Game, XR and Blockchain Developer in Bangladesh</strong>. Don't forget to Checkout his Latest <a href=\"https://sayed.cyou/portfolio/\">Projects</a>.<br /><br />\n<p>Checkout more <a href=\"https://Sayed.CYou/bolg/\">Articles</a> on <strong>Sayed.CYou</strong></p>\n<p></p>\n\n<p> </p>#Front #Web #Development #Feeds #Newsletters\n\n\n\t<h3><em>Related</em></h3>",
 			"type": "mention",
+			"source": "https://sayed.cyou/web-dev/html/front-end-web-development-feeds-and-newsletters-html-dev-feed/",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -183,6 +211,8 @@
 			"date": "2022-01-08T14:01:08.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://www.sweetsaw.xyz/revisiting-prefers/",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -197,6 +227,8 @@
 			"date": "2022-02-09T16:59:03.000Z",
 			"content": "Fantastic work on your growing collection of web components <a href=\"https://twitter.com/zachleat\">@zachleat</a>! Some really great stuff with careful attention to accessibility.\n\n<a href=\"https://www.zachleat.com/web/?category=web-components\">zachleat.com/web/?category=…</a>\n\nsmall nit: can you rename &lt;seven-minute-tabs&gt; to something like &lt;took-me-3-weeks-tabs&gt; tabs just to pad my timesheet?",
 			"type": "mention",
+			"source": "https://brid.gy/post/twitter/zachleat/1491456623457742848",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -211,6 +243,8 @@
 			"date": "2022-10-31T14:32:40.000Z",
 			"content": "In the mean time, find me on my web site\n<a href=\"https://www.zachleat.com/web/\">zachleat.com/web/</a>\n<a href=\"https://www.zachleat.com/web/feed/\">zachleat.com/web/feed/</a>\n\nand maybe on Mastodon\n<a href=\"https://mastodon.social/@zachleat\">mastodon.social/@zachleat</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/twitter/zachleat/1587090179696824322/1587090179696824322",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -222,9 +256,11 @@
 				"url": "https://adactio.com/",
 				"avatarUrl": "https://avatars.webmention.io/adactio.com/24f33c5820046ebbcb429f78bb988fc1fa9f97d35247e0b72b3fb5ff888da633.jpg"
 			},
-			"date": "2023-11-09T17:03:47.000Z",
+			"date": "2023-11-09T23:03:47.000Z",
 			"content": "<p>Web components have been around for quite a while, but it feels like they’re having a bit of a moment right now.</p>\n\n<p>It turns out that the best selling point for web components was “wait and see.” For everyone who didn’t see the benefit of web components over being locked into a specific framework, time is proving to be a great teacher.</p>\n\n<p>It’s not just that <a href=\"https://www.abeautifulsite.net/posts/a-web-component-story/\">web components are portable</a>. They’re also web standards, which means they’ll be around as long as web browsers. No framework can make that claim. As Jake Lazaroff puts it, <a href=\"https://jakelazaroff.com/words/web-components-will-outlive-your-javascript-framework/\">web components will outlive your JavaScript framework</a>.</p>\n\n<p>At this point React is legacy technology, like Angular. Lots of people are still using it, but nobody can quite remember why. The decision-makers in organisations who chose to build everything with React have long since left. People starting new projects who still decide to build on React are doing it largely out of habit.</p>\n\n<p>Others are making more sensible judgements and, having been bitten by lock-in in the past, are now giving web components a go.</p>\n\n<p>If you’re one of those people making the move from React to web components, there’ll certainly be a bit of a learning curve, but that would be true of any technology change.</p>\n\n<p>I have a suggestion for you if you find yourself in this position. Try not to bring React’s mindset with you.</p>\n\n<p>I’m talking about the way React components are composed. There’s often lots of props doing heavy lifting. The actual component element itself might be empty.</p>\n\n<p>If you want to apply that model to web components, you can. Lots of people do. It’s not unusual to see web components in the wild that look like this:</p>\n\n<pre><code></code></pre>\n\n<p>The custom element is just a shell. All the actual power is elsewhere. It’s in the JavaScript that does all kinds of clever things with the shadow DOM, templates, and slots.</p>\n\n<p>There is another way. Ask, <a href=\"https://sfba.social/@fonts/111211813228079834\">as Robin does</a>, “what would HTML do?”</p>\n\n<p>Think about composibility with existing materials. Do you really need to invent an entirely new component from scratch? Or can you use HTML up until it reaches its limit and then <em>enhance</em> the markup?</p>\n\n<p><a href=\"https://buttondown.email/cascade/archive/005-why-web-components/\">Robin writes</a>:</p>\n\n<blockquote>\n  <p>I don’t think we should see web components like the ones you might find in a huge monolithic React app: your Button or Table or Input components. Instead, I’ve started to come around and see Web Components as filling in the blanks of what we can do with hypertext: they’re really just small, reusable chunks of code that extends the language of HTML.</p>\n</blockquote>\n\n<p>Dave talks about how web components can be <a href=\"https://daverupert.com/2021/10/html-with-superpowers/\">HTML with superpowers</a>. I think that’s a good attitude to have. Instead of all-singing, all-dancing web components, it feels a lot more elegant to use web components to augment your existing markup with just enough extra behaviour.</p>\n\n<p>Where does the shadow DOM come into all of this? It doesn’t. And that’s okay. I’m not saying it should be avoided completely, but it should be a last resort. See how far you can get with the composibility of regular HTML first.</p>\n\n<p><a href=\"https://meyerweb.com/eric/thoughts/2023/11/01/blinded-by-the-light-dom/\">Eric described his recent epiphany with web components</a>. He created a <code>super-slider</code> custom element that wraps around an existing <code>label</code> and <code>input type=\"range\"</code>:</p>\n\n<blockquote>\n  <p>You just take some normal HTML markup, wrap it with a custom element, and then write some JS to add capabilities which you can then style with regular CSS!  Everything’s of the Light Side of the Web.  No need to pierce the Vale of Shadows or whatever.</p>\n</blockquote>\n\n<p>When you wrap some existing markup in a custom element and then apply some new behaviour with JavaScript, technically you’re not doing anything you couldn’t have done before with some DOM traversal and event handling. But it’s less fragile to do it with a web component. It’s portable. It obeys the single responsibility principle. It only does one thing but it does it well.</p>\n\n<p>Jim created <a href=\"https://blog.jim-nielsen.com/2023/web-components-icon-galleries/\">an <code>icon-list</code> custom element</a> that wraps around a regular <code>ul</code> populated with <code>li</code> elements. But he feels almost bashful about even calling it a web component:</p>\n\n<blockquote>\n  <p>Maybe I shouldn’t be using the term “web component” for what I’ve done here. I’m not using shadow DOM. I’m not using the templates or slots. I’m really only using custom elements to attach functionality to a specific kind of component.</p>\n</blockquote>\n\n<p>I think what Eric and Jim are doing is exemplary. See also <a href=\"https://www.zachleat.com/web/?category=web-components\">Zach’s web components</a>. </p>\n\n<p>At the end of <a href=\"https://meyerweb.com/eric/thoughts/2023/11/01/blinded-by-the-light-dom/\">his post</a>, Eric says he’d like a nice catchy term for these kinds of web components. In <a href=\"https://github.com/davatron5000/awesome-standalones#element-extensions\">Dave’s catalogue of web components</a>, they’re called “element extensions.” I like that. It’s pretty catchy.</p>\n\n<p>Or we could call them “HTML web components.” If your custom element is empty, it’s not an HTML web component. But if you’re using a custom element to extend existing markup, that’s an HTML web component.</p>\n\n<p>React encouraged a mindset of replacement: “forgot what browsers can do; do everything in a React component instead, even if you’re reinventing the wheel.”</p>\n\n<p>HTML web components encourage a mindset of augmentation instead.</p>",
 			"type": "mention",
+			"source": "https://adactio.com/journal/20618",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -235,6 +271,8 @@
 			"date": "2023-11-16T08:08:08.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://adactio.medium.com/html-web-components-0c80a0fc58be?source=rss-5271293d8452------2",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -249,6 +287,8 @@
 			"date": "2023-12-02T20:41:31.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Congrats!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/111512760886032197",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -263,6 +303,8 @@
 			"date": "2023-12-02T20:47:18.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.online/@mwichary\" class=\"u-url\">@<span>mwichary</span></a></span> Thanks Marcin!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/111512783337400938",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -277,6 +319,8 @@
 			"date": "2023-12-03T00:21:01.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Now that's a lot of posts. As you are fond of saying…keep building for the web!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/111513623705584923",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -291,6 +335,8 @@
 			"date": "2023-12-03T01:20:25.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@bobmonsour\" class=\"u-url\">@<span>bobmonsour</span></a></span> thanks Bob!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/111513857241707710",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -305,6 +351,8 @@
 			"date": "2023-12-04T14:54:22.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span><br />congrats, that's an achievement!</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/111522720186629959",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -312,9 +360,11 @@
 			"parentId": 0,
 			"url": "https://jamesg.blog/2024/01/08/web-components/",
 			"author": {},
-			"date": "2024-01-08T00:00:00.000Z",
+			"date": "2024-01-08T06:00:00.000Z",
 			"content": "<p>Web components are custom HTML elements that you can use on a web page.</p>\n<p>A web component can do whatever you want. You can make a web component to create a calendar on a web page, or a component that creates an interactive poll, or a pop up for accepting files through a drag-drop upload flow.</p>\n<p>Here is an example of a web component that displays a calendar for a month on a web page:</p>\n<p></p>\n<p>How did I add this component to the web page? I used the following HTML:</p>\n<pre><code>\n&lt;script src=\"./path/to/webcalendar.js\"&gt;\n\n&lt;calendar-element\n  data-month=\"January\"\n  data-year=\"2024\"\n  data-starting-day=\"Mon\"\n  data-heading=\"Days I walked in January\"&gt;\n&lt;/calendar-element&gt;\n</code></pre>\n\n<p>In the snippet above, I load the JavaScript that powers the web component. I define which boxes I want to be filled with color using the <code>filled</code> variable, which the web component can access. I have some CSS rules I wrote that are designed to work out-of-the-box with the component, but those are in my main stylesheet. Then, I create the web component. This web component allows me to customise the month, year, and the heading. I need to set the starting day of the month since the component, too. In a few lines of code, I now have a calendar element that appears on my web page!</p>\n<p>Now that we have covered what a web component is, I will talk about the two main reasons I like web components: how they make authoring complex web documents easier, and how you can isolate web components from each other.</p>\n<h2>Why I like web components</h2>\n<p>Web components allow me to author complex web pages with less thought. I could have created the calendar above without a web component. For example, I could have a JavaScript file that replaces a <code>&lt;div&gt;</code> with a given ID. But what if I want twelve calendars on a page (i.e. for use in showing which days are academic holidays on a school calendar)? Now I need to write JavaScript that lets me have twelve calendars. That is more overhead, and there is more likely to be confusion.</p>\n<p>With a web component, it is absolutely clear that I want to have a calendar on my page. It is clear as I am authoring the text and in reading the resulting HTML.</p>\n<p>You can isolate web components from each other. You can have functions that apply to a specific component and not any others. For example, consider the following quiz web component:\n</p>\n<p></p>\n<p>I could have ten of these widgets on a page without any buttons interfering with each other. For each widget (after referencing the required JavaScript / CSS), I can focus on writing the data specific to the component, where the component is:</p>\n<pre><code>\n&lt;quiz-element\n    data-question=\"What is James' favourite Taylor Swift song?\"\n    option-1=\"Folklore\"\n    option-2=\"Midnights\"\n    option-3=\"Evermore\"\n    option-4=\"1989\"\n    answer=\"1989\"\n    explain-1=\"This is incorrect.\"\n    explain-2=\"This is incorrect.\"\n    explain-3=\"This is incorrect.\"\n    explain-4=\"1989 is the best!\"&gt;&lt;quiz-element&gt;\n</code></pre>\n\n<p>If I need to change a question, I can go to the component and make the change without having to dive into the JavaScript code that powers the component.</p>\n<p>These benefits are particularly useful for complex web documents. One example that has been in the back of my mind for weeks is authoring interactive learning web pages.</p>\n<p>For example, a web page that features academic material interspersed with quizzes of different types (i.e. order facts by date, fill in the missing word), flashcards, and more. Each quiz item could be a web component. When you author a new page, you don't need to worry about writing JavaScript that creates separate widgets and manage state in all of them. Instead, you only need to write the name of a web component.</p>\n<p>Web components are not a replacement for using HTML components, however. I think web components shine best when you are writing complicated logic for a specific part of a web page that you plan to re-use. I would not recommend writing web components for text-based user interface elements (i.e. a callout box or a quote) since doing so means that such text will not render if the web component cannot load (i.e. the user is on a poor network connection).</p>\n<p>JavaScript frameworks like React are primarily positioned for use in large-scale, complicated applications. I have not used web components in a complex web application, so I do not think it is fair for me to compare them to JavaScript frameworks. I will let you do your own research on that topic!</p>\n<h2>Web component resources</h2>\n<p>As a HTML author I can think more about the content of the page when using web components, rather than spending time writing JavaScript to wire up different pieces. I can author interactive documents with components. I can depend on my own components, built specifically for my needs, or use others' that have been shared. Indeed,</p>\n<p>Perhaps there is now a little spark in you that says \"huh, web components are interesting!\" Let's satisfy that spark! First, here are a few web components that you can use to see what is possible:</p>\n<ul><li>My <a href=\"https://github.com/capjamesg/quiz-web-component/\">quiz web component</a></li>\n<li>My <a href=\"https://github.com/capjamesg/fill-mask-web-component\">fill in the missing word web component</a></li>\n<li><a href=\"https://www.zachleat.com/web/?category=web-components\">More of Zach Leatherman's web components</a></li>\n</ul><p>I have not yet found a comprehensive resource on learning web components that I can recommend. My experimentation thus far has been fueled by reading other web components on GitHub and reading blog posts (the location of which I cannot presently recall). With that said, Zach Leatherman has done amazing work in the web community on promoting use of web components. <a href=\"https://www.youtube.com/watch?v=R4Ri4ft7bXY&amp;ab_channel=JSHeroes\">His talks on the subjec</a>t, listed on his website, are worth perusing, as are his web components.</p>\n<p>I would love to hear what you think about web components! Feel free to send me an email directly at readers [at] jamesg [dot] blog.</p>\n\t\t\t\n\t\t\t\t<p>Tagged in <a href=\"https://jamesg.blog/tag/indieweb/\">IndieWeb</a>.</p>\n\t\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t<p style=\"text-align:center;font-weight:600;\">Most related Taylor Swift lyric</p><p>Tell me why (Why) Tell me why (Oh)</p>\n\t\t\n\t\t\n\t\t<p><a href=\"https://notbyai.fyi/\"><img src=\"https://jamesg.blog/assets/ai.png\" alt=\"Written by human, not by AI\" /></a></p>",
 			"type": "mention",
+			"source": "https://jamesg.blog/2024/01/08/web-components/",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -325,6 +375,8 @@
 			"date": "2024-01-31T21:11:10.000Z",
 			"content": "",
 			"type": "mention",
+			"source": "https://klmlinks.wordpress.com/2024/01/31/which-generator-builds-markdown-the-fastest/",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -339,6 +391,8 @@
 			"date": "2025-10-18T03:42:19.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> ????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/115393097930215916",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -353,6 +407,8 @@
 			"date": "2025-10-18T03:44:06.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> no I finished that a couple weeks ago, it’s the dreaded self-hyping “about” page tonight</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/115393104976025058",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -367,6 +423,8 @@
 			"date": "2025-10-18T03:45:02.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> I saw the new nav the other day btw, it’s looking nice ????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/115393108594669327",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -381,6 +439,8 @@
 			"date": "2025-10-18T03:48:39.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@ardouglass\" class=\"u-url\">@<span>ardouglass</span></a></span> thank you ????????</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/115393122746934810",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -395,6 +455,8 @@
 			"date": "2025-10-18T03:48:59.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@ardouglass\" class=\"u-url\">@<span>ardouglass</span></a></span> I don’t know nothing about me</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/115393124049113622",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -409,6 +471,8 @@
 			"date": "2025-10-18T03:56:39.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> Bonus points if you offer a .zim archive of the whole thing.</p>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/115393154250951276",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -423,6 +487,8 @@
 			"date": "2025-10-18T05:23:36.000Z",
 			"content": "<p><span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span> <a href=\"https://iamdtms.hu/archive\"><span>https://</span><span>iamdtms.hu/archive</span><span></span></a></p>\n<a href=\"https://iamdtms.hu/archive\">@iamdtms Twitter Archive: 2007-2022</a>",
 			"type": "reply",
+			"source": "https://brid.gy/comment/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/115393496147908251",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		}
 	],
@@ -436,6 +502,8 @@
 				"url": "https://twitter.com/jacebenson",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e28682b3515f2be9d31c4806ddfed92389630db239ccd9ab6de0343c71545552.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1352481547669151744/14321037",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -447,6 +515,8 @@
 				"url": "https://twitter.com/piccalilli_",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/a9e864b2d0a4c0357059dd6ade845d8bafc5919ab6b9c07b81b0c5fdb6ced87c.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1352481547669151744/98734097",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -458,6 +528,8 @@
 				"url": "https://twitter.com/colorful_n0mi",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/4e9b9719f37c6ad5a90763df0b2fc9051ceb39ec505b6a27b6b1a1299d17cbe8.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1352481547669151744/16056058",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -469,6 +541,8 @@
 				"url": "https://twitter.com/_christinadan",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20d5206939361578d97856eb656c44452f567d10ed0ae33cf6f61f3e0eb22377.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1352481547669151744/146290109",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -480,6 +554,8 @@
 				"url": "https://twitter.com/pfsneu",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/e80d13fc5d306f1624bf0ec602ce6f79fd9756790b293c739443160c815a9b66.png"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1352481547669151744/186333659",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -491,6 +567,8 @@
 				"url": "https://twitter.com/dezbinatx",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/29f77c03d094a8c61e7de1012d53db65d1228eaacc998ee9515093fec652bc2f.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1352481547669151744/2556029868",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -502,6 +580,8 @@
 				"url": "https://twitter.com/iDevinClark",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/495821c98f00de17dc92297c06711f3c2e1bf62a5f50f1ac59bca6eaab5bb6a0.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1352481547669151744/30333908",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -513,6 +593,8 @@
 				"url": "https://twitter.com/matthewcp",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6d7638a1ee6e9af1c05c7b08256217d6ed989ffba71b68653b786f17d06adb76.jpg"
 			},
+			"source": "https://brid-gy.appspot.com/like/twitter/zachleat/1353834991730438151/14447248",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -524,6 +606,8 @@
 				"url": "https://twitter.com/davatron5000",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/12bf29c49f4519399f5b7022c1ff1b156aa6e597a75f31dfd0d5a884ed35b341.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1489343905619456001/14839862",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -535,6 +619,8 @@
 				"url": "https://twitter.com/WebComponentsSF",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6d1b772c4a260da719b891223c4eedea3e24ba0a271908a30f2466e0e6369033.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1489343905619456001/1163962135669460997",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -546,6 +632,8 @@
 				"url": "https://twitter.com/TristenGrant",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/78b7439349692f4c20d7235d03955feb7fc784a3e62fbd6b2eb0939dabc636aa.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1489343905619456001/15844722",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -557,6 +645,8 @@
 				"url": "https://twitter.com/danleatherman",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/179673fc1989070f70755feab4f39f310a2648d7158377d0c2b49ded9ed61628.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1489343905619456001/24342828",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -568,6 +658,8 @@
 				"url": "https://twitter.com/vungyn",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/af07cc8ec2d606fc97c3158a63f9efbe56e31b0f64c2a6cdddb66220da3ead4e.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1489343905619456001/17935160",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -579,6 +671,8 @@
 				"url": "https://twitter.com/monkeysort",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/acf5e93d3c862981718c4d350b8e253c8db42bdd4805b33f7be5aa8074be8022.png"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1489343905619456001/324643061",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -590,6 +684,8 @@
 				"url": "https://twitter.com/danbowling",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/ddfc156d3af2db0d672bd969b473c1d171540c2a28e66f8c9d0507fb08202037.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1489343905619456001/13575092",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -601,6 +697,8 @@
 				"url": "https://twitter.com/fanyak_",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/2560619f91c2d344094635756103f13d5a3160f9ac7e36ffb1c827697aac0ae6.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/19034618",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -612,6 +710,8 @@
 				"url": "https://twitter.com/brianwisti",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/7601064cf69aafa7798e4257ea29063df41f5e23e3c8f218aa651c6cdcf2dce4.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/10376902",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -623,6 +723,8 @@
 				"url": "https://twitter.com/mxbck",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/18a4e83da23e07a465feab2cd21362105938e9ac05ff774c757bec8f39bf6141.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/516438525",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -634,6 +736,8 @@
 				"url": "https://twitter.com/chadgeidel",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9ddae76d07ddfe6658b918b7db53895c2b9fd4d387c2f416ecd5697b5d404f99.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/263922353",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -645,6 +749,8 @@
 				"url": "https://twitter.com/dar5hak",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/9d22da0654d456e26ade7dca329e1f96c7f9d1b093988400f0d0f4f92131955e.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/3184542229",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -656,6 +762,8 @@
 				"url": "https://twitter.com/protitude",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6e41b2774f48e4ed6901168beaef23526565df19cc941d71582320dccb42b310.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/14932037",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -667,6 +775,8 @@
 				"url": "https://twitter.com/marc_radziwill",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/378aa790fe71feea5c3c555b4598410c8bac7f4fa056d69424f77c3bb56dc548.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/93242165",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -678,6 +788,8 @@
 				"url": "https://twitter.com/AaronGustafson",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f2b316bddb12d23ee0d9b5b8d316022b5f281ed8537c6c1fe6badb933aa0b985.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/12028",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -689,6 +801,8 @@
 				"url": "https://twitter.com/heathflohre",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/b593f7ffebd42b62a7415fbbabb72cd079608d11ec37c93843189c4fbde0aaf1.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/649143",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -700,6 +814,8 @@
 				"url": "https://twitter.com/DesignCollider",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f01878b570c2040da47157547e56d0c654bd0cf8e91ab2cadbc0c24c98773855.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/228207439",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -711,6 +827,8 @@
 				"url": "https://twitter.com/treb0r",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8c057cf5113d004d18796251e22f7d06052d7ffe3707ed3ae0ac1c936be1928c.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/4541311",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -722,6 +840,8 @@
 				"url": "https://twitter.com/AmeliasBrain",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/343e5a6711634bf5e2ca1dccaf453134eabb4d6f86f73eabe1b96634fc315494.jpeg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/3122402048",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -733,6 +853,8 @@
 				"url": "https://twitter.com/aaronpeters",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/cf7654a7ccb02fc2313024bc958312c3726bc5a65cc74930385f4bb15011a1dd.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/8081022",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -744,6 +866,8 @@
 				"url": "https://twitter.com/MarcLittlemore",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/1572a561e47b94adb123725926d4770103280e6448720c82b60fa82a2e63e096.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/14449910",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -755,6 +879,8 @@
 				"url": "https://twitter.com/human_richard",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/8bc6ffcce4a33b898f69f8806dee256729b775c3e4f220fb99968426af2d835e.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/840751301914972162",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -766,6 +892,8 @@
 				"url": "https://twitter.com/TheGreenGreek",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20c589e7555a0b0adf9c74d3a9fff17c2367e26b2b77b3b332dcfe33ec0bed93.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/23724008",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -777,6 +905,8 @@
 				"url": "https://twitter.com/huot_mathieu",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/f650df45faeab77b67528077ad32be54944f61ea5317acf329d1fd7df52bd6fd.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/3073346737",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -788,6 +918,8 @@
 				"url": "https://twitter.com/darth_mall",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/dad326bbf6d338d658ebc9bf51c3edc1f735284d2022b14fbbb78d597082eeb6.png"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/763092",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -799,6 +931,8 @@
 				"url": "https://twitter.com/nopatternaaron",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/41a9217e31214dedee28ad124b38199b63e1aae50cca12f3cd82352d4c216b0f.png"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/146569131",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -810,6 +944,8 @@
 				"url": "https://twitter.com/razvancaliman",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/c898e24f8fb96b24114c8192d5b029514712e288c23e0c375a44db010c85b83a.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/491231542",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -821,6 +957,8 @@
 				"url": "https://twitter.com/Jolg42",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/20857ca5d7595ca1f585f441f6cfac5655f733bbf6b08fa915ef70818e1c24c3.jpg"
 			},
+			"source": "https://brid.gy/like/twitter/zachleat/1587090179696824322/240607542",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -832,6 +970,8 @@
 				"url": "https://fosstodon.org/@drsensor",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6d1700659df23aa81f4796dda5217d6f0c30f8f50f5d2847799b791d9195b7ac.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109722419829517589/109309258761047158",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -843,6 +983,8 @@
 				"url": "https://fosstodon.org/@drsensor",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6d1700659df23aa81f4796dda5217d6f0c30f8f50f5d2847799b791d9195b7ac.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/109722419829517589/109309258761047158",
+			"target": "https://www.zachleat.com/web/?category=eleventy",
 			"via": "webmention"
 		},
 		{
@@ -854,6 +996,8 @@
 				"url": "https://front-end.social/@lynnandtonic",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ce3bb756160a12fcdc1a1b9713f9099b3380fd54c9f458b1f47eae24ffbd9161.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109291974363243860",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -865,6 +1009,8 @@
 				"url": "https://parens.social/@luciano",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/668b776aa42348a9cb655dc95fcf888ab0955e0ee4d57a9b0b66c361ff99417a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/110142410272287955",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -876,6 +1022,8 @@
 				"url": "https://m.webtoo.ls/@patak",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3f2795c6630a8071c5e6115ad7272416a52f37ddc8691d2effe95a4fa3215c39.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109467347427647201",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -887,6 +1035,8 @@
 				"url": "https://mastodon.social/@mvsde",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/603647df87876c896689d4ddda396e5a32f290f3f572ce0f3443e030e96b6a68.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109289744030118387",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -898,6 +1048,8 @@
 				"url": "https://front-end.social/@ashur",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/47f9e3cea1d21932327b192e59a0faf2fb69a491bb0f1df89b0ed69800960171.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109295176902307654",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -909,6 +1061,8 @@
 				"url": "https://indieweb.social/@stephenjbell",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8ec708b7e4c8fdf90bc090cc305c36e382789cc30e87329cf0c261538ad0f487.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/110254924967463464",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -920,6 +1074,8 @@
 				"url": "https://mastodon.social/@29decibel",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fac22c0dbb02d214d9a60c47f085f38861a09e1786cb8ba28542aa2cae146e0a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/110375261516706549",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -931,6 +1087,8 @@
 				"url": "https://mstdn.social/@lowqualityfacts",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/845fde3ab0bf4b6b895950a5e9809553df81b7dda7a5a3e50969c7920e0dd16d.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109598542467891596",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -942,6 +1100,8 @@
 				"url": "https://sunny.garden/@knowler",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/50ce56f39c91e30823b4e4f318af74b4e46c9debc27b9eb5cd70c94af36b7c88.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109286922977455165",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -953,6 +1113,8 @@
 				"url": "https://fosstodon.org/@stebre",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/efd31081edbea7ef42d71c4d3f3dc495652dc4e2832d0496a71f3c5bcbc2c499.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109613861795473444",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -964,6 +1126,8 @@
 				"url": "https://seocommunity.social/@simoncox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3978c823e577de1f6ae563582f62b530534b15cf51424bb5fedc1798bd95230e.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109352939518629968",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -975,6 +1139,8 @@
 				"url": "https://hachyderm.io/@kevinctofel",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/357a487cf20d647d3e2e487c244773c8bb97dab30faf400e9c7ca8d609c41a74.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109407207285953686",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -986,6 +1152,8 @@
 				"url": "https://t00t.cloud/@mattrambles",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/b11d282e276a07fa120581347185e7b834f281adc4052be01023582dcf186d91.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109960775403450397",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -997,6 +1165,8 @@
 				"url": "https://mastodon.au/@miclgael",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/baef8170eb1ccbc8fd86d56be7f6403df65080207a4d8d24b9355dd364c477ef.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/110219015042773716",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1008,6 +1178,8 @@
 				"url": "https://mastodon.online/@mstrkapowski",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/80dca0d1403873a443f3622848b70288d552079ab6a66d657de3567e6a67a3ed.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109294555739927762",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1019,6 +1191,8 @@
 				"url": "https://front-end.social/@eys",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cc21da322ae88746a46ab29f95857602f6cc5f6173092875ecfa2d66944bf755.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109372147452523613",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1030,6 +1204,8 @@
 				"url": "https://social.lol/@zerocaps",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/33287fa9cdfd0ae207588a5aa06a7be3611a268ecaa9f7e54b956243762c088a.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109289302894824118",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1041,6 +1217,8 @@
 				"url": "https://hachyderm.io/@TheIdOfAlan",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bbc3c0e3600138f04d75ae5b7b2c195c1131eb49263168fca45c217061e59fa6.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109305237370375665",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1052,6 +1230,8 @@
 				"url": "https://mementomori.social/@SamiMaatta",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1efd3bce43177708094b584ba9d5d826404f25c83c409308eece0f3397dcb32.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/110773164908493696",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1063,6 +1243,8 @@
 				"url": "https://fosstodon.org/@mikeneu",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/947c4a7a76eaaa1ac1f15a4b9e7c68c215bf94b50d97059b5e008aacb82d2e7e.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/111506883667257425",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1074,6 +1256,8 @@
 				"url": "https://indieweb.social/@capjamesg",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6e0950a543461514ff7936a92c3c92d7a3d04ccbb74efe666883946f278fc7e7.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/111116834952078936",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1085,6 +1269,8 @@
 				"url": "https://mastodon.social/@djwebdroid",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2df23d5b7e9dc3728f2d31cd9106ae2dcb71dea155fa43df5314f210549d3ae8.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109927822142106366",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1096,6 +1282,8 @@
 				"url": "https://front-end.social/@elly",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2906f05fbc1fff47b76e9bd51804d1618a81be8f3062fc8c5a2e0f18d02f8559.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109446932953258362",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1107,6 +1295,8 @@
 				"url": "https://front-end.social/@katydecorah",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3200b07ff0f56b267757521dd25d365acde8bc883a611bf7346e2eb6f09ca46f.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109582719381050567",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1118,6 +1308,8 @@
 				"url": "https://mastodon.social/@jelmerdemaat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9fcc7582c1ebc004f3992a7228655af5bbe4db40272c1e72ddc2493020e17ef4.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109296287300626371",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1129,6 +1321,8 @@
 				"url": "https://techhub.social/@develwithoutacause",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cf71c5831e6c0aee1d1100ceb26ef554a70376c550e5609ee3e00464dbc391a0.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109332518937677894",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1140,6 +1334,8 @@
 				"url": "https://mastodon.social/@kupfers",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/caf9bb1fd772bd5a5d61dcd01c095c673ed4404223cfcdcfe4e9d6356f16b51b.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109287799720902073",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1151,6 +1347,8 @@
 				"url": "https://indieweb.social/@jaredwhite",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/48ceb2b89ca6f40586b16dfee49892e8917496af1919a297a961d8031a72bc52.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109292552988169598",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1162,6 +1360,8 @@
 				"url": "https://fosstodon.org/@hexagoncircle",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2b9e19461695dcc3d5426dbe58bc7f0337c9c2a838e5387c8c66677298ba3241.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109348282587430600",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1173,6 +1373,8 @@
 				"url": "https://mastodon.social/@jakelazaroff",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2c56f925175709c5c423239fb9a87ff8129179cad75b2380d47b226b5f814270.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109829533556740279",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1184,6 +1386,8 @@
 				"url": "https://typo.social/@onpaperwings",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/13e70b133067f16a7764ea80cbd47103928277f34c34865261a253fcb017ee41.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109303296608644576",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1195,6 +1399,8 @@
 				"url": "https://hachyderm.io/@zef",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109609567996028192",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1206,6 +1412,8 @@
 				"url": "https://mastodon.scot/@EmmanuelDemey",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/418ccb04b6b707b1328f2224829179977f168efa09b98edee4113e54a07cabb1.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109604341569373475",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1217,6 +1425,8 @@
 				"url": "https://mastodon.art/@thomashelzle",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/de265176a8823d74cb71ffb85bb7216207a23dc8a448f6867a874b20017f921d.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/110998065362635364",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1228,6 +1438,8 @@
 				"url": "https://mastodon.world/@coryrylan",
 				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/371/394/099/774/120/original/e6d06d163ff9f8fc.webp"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109371394099774120",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1239,6 +1451,8 @@
 				"url": "https://mastodon.social/@joshwayne",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fc17aadc796850c00a83242f68af0b6d746fe59acb31e200e7a95ff8ab0a8888.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/110628078571313053",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1250,6 +1464,8 @@
 				"url": "https://mstdn.social/@scottjehl",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e4899a402717c98e67af1bc3245c1ef338ee60b5d8434b264a7760a0710b75fc.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109287719939766165",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1261,6 +1477,8 @@
 				"url": "https://mastodon.cloud/@ryanmr",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/49ba360eacab9db0d8d3834b22aa330d251735d366da4bd43f945619e9571604.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109469218809869221",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1272,6 +1490,8 @@
 				"url": "https://woof.group/@taylor",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4cb1add3ffca35311d04246a2f32a714abf8a9abb828531f0ff6ea8e90a3ee76.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109921108811894849",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1283,6 +1503,8 @@
 				"url": "https://hachyderm.io/@haliphax",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/228b77d961c69780574b98a0db6e59127abebe4467d49471d5e20ae089084284.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109369141298839313",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1294,6 +1516,8 @@
 				"url": "https://bsd.network/@vermaden",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/df541bc59e7c3d17daf98a8c76d2fbdbcceda150500f61789092ba9f613139a7.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/111522703325021245",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1305,6 +1529,8 @@
 				"url": "https://hachyderm.io/@jhofker",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/21ab70086a80b2f3ac8cc1c45f693d1a9c5047a7f42af75a79ccf4d0a8a92a0d.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109319960616148533",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1316,6 +1542,8 @@
 				"url": "https://mastodon.cloud/@raf",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/759c0f8739bbff4c8f97c0c68f9f4687141f4797a292e7d382223e35e25bd4c1.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109586345453166002",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1327,6 +1555,8 @@
 				"url": "https://infosec.exchange/@chileannick",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c466287336030f7db61ce6ae685ac1a69a9cedaa4abd622dabb377b67421caae.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109631745893592279",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1338,6 +1568,8 @@
 				"url": "https://mastodon.cthos.dev/@cthos",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/16d45e0bfdca263f58a19f9e2cce4aa69fdac43001dd4eac276a4f3bfd635024.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/113113829843155989/109322028040622495",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1349,6 +1581,8 @@
 				"url": "https://mastodon.social/@culturednyc",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4022cacc807da20a2cd0eee11d509da13bc310afe1bfcb575fe5f125086cc4b3.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/111655625104249997",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1360,6 +1594,8 @@
 				"url": "https://mastodon.cthos.dev/@cthos",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/16d45e0bfdca263f58a19f9e2cce4aa69fdac43001dd4eac276a4f3bfd635024.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109322028040622495",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1371,6 +1607,8 @@
 				"url": "https://masto.ai/@teacherbuknoy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1e86d27b40d6ea96ba3bd5854ce4836eaa8ca707a2963d088dc6c081f3cb0949.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109810826053615887",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1382,6 +1620,8 @@
 				"url": "https://front-end.social/@lynnandtonic",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/ce3bb756160a12fcdc1a1b9713f9099b3380fd54c9f458b1f47eae24ffbd9161.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109291974363243860",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1393,6 +1633,8 @@
 				"url": "https://indieweb.social/@matthewhowell",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/19b4e8bbca2a7a9bb29c5b78605de5ba3eec080b15c4953379ff8ec34208dd4b.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109293772225286140",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1404,6 +1646,8 @@
 				"url": "https://mastodon.social/@timsev",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109288338141483533",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1415,6 +1659,8 @@
 				"url": "https://aus.social/@cxxvii",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/dbfba981a8be8bcc5f1d77af15c531f22b5102b1f24b16708b5297deaacf59db.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/114244124110742379",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1426,6 +1672,8 @@
 				"url": "https://front-end.social/@mayank",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/23d26bb54e59d131bc1b271cbd85976de8066354860b5f7aa11d3ae9433cee06.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/112462864608665271",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1437,6 +1685,8 @@
 				"url": "https://indieweb.social/@NicMakesStuff",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/9b228afcfd3977a8954a6bfd397835859dcbd00b2e0b3d0e8745239049891a48.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109334045038172616",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1448,6 +1698,8 @@
 				"url": "https://mamot.fr/@nhoizey",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/68e6f1617572bd4c2158727e6c1693ec1d0ab76e3f29f51d93c5895ee2c8e6b0.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109288230453300889",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1459,6 +1711,8 @@
 				"url": "https://seocommunity.social/@simoncox",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109352939518629968",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1470,6 +1724,8 @@
 				"url": "https://corteximplant.com/@kaiserkiwi",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/aa206139523a11993ce4811a0658fb607f678cc52bf39991897a47bde27e61bf.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109456449592494865",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1481,6 +1737,8 @@
 				"url": "https://mastodon.social/@egeesin",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/404331ecc41e31fb5a8ace5f6fb7995d8cc70a086ec04e933cf184491681d3d4.gif"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109319869596619219",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1492,6 +1750,8 @@
 				"url": "https://social.tchncs.de/@tbaldauf",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6d7b7c3414751940b1e4d0dab4fb344f29d07dd0111bd5de3590eca70d44eca9.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109303670634520442",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1503,6 +1763,8 @@
 				"url": "https://follow.ethanmarcotte.com/@beep",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/98339827ac7aec670574d3ec276c681e379a840df4aadc295c1cea52c7bd2ba2.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109308673946055828",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1514,6 +1776,8 @@
 				"url": "https://berlin.social/@max",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2602f84e2454d31e0c5f4ce6ebe1b39492982d93c5b53e2c7853621ff12a1556.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109314737242051219",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1525,6 +1789,8 @@
 				"url": "https://mastodon.social/@majjo",
 				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/110770188087049882",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1536,6 +1802,8 @@
 				"url": "https://mastodon.publicinterest.town/@krusynth",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/312c2c6df0a647c5175d9c1eb94da802a847106c0a1eb1099d063139e38a081c.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109366087426646661",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1547,6 +1815,8 @@
 				"url": "https://hachyderm.io/@tsmango",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/279d1ea7af3cf65205559d5f7dc3c67cbe9ce8b4d80dc593c8ef4e3b4d969fdd.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/110553761109401211",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1558,6 +1828,8 @@
 				"url": "https://sleepy.cool/@jillian",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/62aaad7b3c65dc5d4e0c2a378fe382a173dbb141850d4301d55438d62a9b2252.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109638700127578354",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1569,6 +1841,8 @@
 				"url": "https://hachyderm.io/@deejaygraham",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/a14ee2f7e54ebadc3c06efd5f7f1587a5c93a036b8226b4a2f5fc270bb7473bb.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/112245959576421382",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1580,6 +1854,8 @@
 				"url": "https://techbacon.social/@pixelbud",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/6f2d65f677626766f11991a90590e7685c00cb3ad86ba3a6b1313c5c8501d7c8.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109637406693822049",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1591,6 +1867,8 @@
 				"url": "https://mastodon.social/@mpbarlow",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f175eeaac284a44050b9bda521938b67293e7a23100d799dadce6e41f14b0dde.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/113152753345882439",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1602,6 +1880,8 @@
 				"url": "https://mastodon.social/@mvsde",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5e438b36934704e62273198404a86d08d46b7e3ea18b54b5b470985ed84c08d6.jpg"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109289744030118387",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1613,6 +1893,8 @@
 				"url": "https://front-end.social/@castastrophe",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/8f71ea94f47798322d2b9604c6558f274e2699c63f818e666d3aa438b1ca659a.png"
 			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109298726682716503",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		}
 	],
@@ -1626,6 +1908,8 @@
 				"url": "https://twitter.com/WebComponentsSF",
 				"avatarUrl": "https://avatars.webmention.io/pbs.twimg.com/6d1b772c4a260da719b891223c4eedea3e24ba0a271908a30f2466e0e6369033.jpg"
 			},
+			"source": "https://brid.gy/repost/twitter/zachleat/1489343905619456001/1489358973325103107",
+			"target": "https://www.zachleat.com/web/?category=web-components",
 			"via": "webmention"
 		},
 		{
@@ -1637,6 +1921,8 @@
 				"url": "https://m.webtoo.ls/@patak",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/3f2795c6630a8071c5e6115ad7272416a52f37ddc8691d2effe95a4fa3215c39.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109467347427647201",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1648,6 +1934,8 @@
 				"url": "https://mastodon.social/@29decibel",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/fac22c0dbb02d214d9a60c47f085f38861a09e1786cb8ba28542aa2cae146e0a.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/110375261516706549",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1659,6 +1947,8 @@
 				"url": "https://octodon.social/@koos",
 				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/478/695/898/786/827/original/16d2104a4e5d0392.webp"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109478695898786827",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1670,6 +1960,8 @@
 				"url": "https://mementomori.social/@SamiMaatta",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c1efd3bce43177708094b584ba9d5d826404f25c83c409308eece0f3397dcb32.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/110773164908493696",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1681,6 +1973,8 @@
 				"url": "https://toot.cafe/@baldur",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/cc8554ba583793b416ccbb17bc1d574b8c60c5e53c11aabef6c9a8f806a5d4e2.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109313345749203632",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1692,6 +1986,8 @@
 				"url": "https://fediverse.zachleat.com/@zachleat",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111512724789558967/109286461031266152",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1703,6 +1999,8 @@
 				"url": "https://masto.ai/@teacherbuknoy",
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/1e86d27b40d6ea96ba3bd5854ce4836eaa8ca707a2963d088dc6c081f3cb0949.jpg"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/109810826053615887",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		},
 		{
@@ -1714,6 +2012,8 @@
 				"url": "https://social.dzajew.xyz/@dzajew",
 				"avatarUrl": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/113/087/045/490/338/722/original/2d6aae2ac3c40543.webp"
 			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/115393089313521197/113087045490338722",
+			"target": "https://www.zachleat.com/web/",
 			"via": "webmention"
 		}
 	]
