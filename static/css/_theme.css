@@ -2073,10 +2073,15 @@ a[href].tag-inline:not(.tag-borderless),
 		vertical-align: text-bottom;
 		margin-inline-start: .375em;
 	}
+	/* dimmed only by color, not opacity—a .4 alpha pushed these counts under the 4.5:1 contrast minimum */
 	.is-workspace,
 	.is-uncounted {
-		opacity: .4;
 		color: var(--z-color-text-secondary);
+	}
+	/* the icons carry no text, so they can still fade for the muted look */
+	.is-workspace .z-icon,
+	.is-uncounted .z-icon {
+		opacity: .4;
 	}
 	/* the emoji stands in for a .z-icon here, so it takes the same box—centered in it, since
 	   an emoji’s own advance width is up to the platform */
