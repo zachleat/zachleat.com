@@ -79,6 +79,10 @@ function isSpeaking(item) {
 }
 
 export default async function($config) {
+	// if(process?.env?.CONCURRENCY) {
+	// 	$config.setConcurrency(Number(process.env.CONCURRENCY));
+	// }
+
 	const slugify = $config.getFilter("slugify");
 	$config.addGlobalData("JS_ENABLED", () => JS_ENABLED);
 	$config.addGlobalData("currentDate", () => new Date());
