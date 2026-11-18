@@ -6,7 +6,7 @@ tags:
   - highlight
   - research
   - font-loading
-date: 2014-09-26T12:00:00.000Z
+date: 2014-09-26T12:00:00
 ---
 
 Related: **[*Better @font-face with Font Load Events* was originally posted on Dev.Opera](https://web.archive.org/web/20240303153613/https://dev.opera.com/articles/better-font-face/).**

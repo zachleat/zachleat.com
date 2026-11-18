@@ -6,7 +6,7 @@ categories:
   - project
 tags:
   - project
-date: 2013-06-07T02:33:00.000Z
+date: 2013-06-07T02:33:00
 ---
 
 *After a good four year run, BUSYNESS is now offline. You can still see [a sample of the output](/archive/busyness-sample/). Thanks Heroku for hosting!*
