@@ -78,19 +78,19 @@ function isSpeaking(item) {
 		(item.data.categories || []).indexOf("presentations") > -1 || hasTag(item, "speaking");
 }
 
-export default async function(eleventyConfig) {
-	const slugify = eleventyConfig.getFilter("slugify");
-	eleventyConfig.addGlobalData("JS_ENABLED", () => JS_ENABLED);
-	eleventyConfig.addGlobalData("currentDate", () => new Date());
-	eleventyConfig.addGlobalData("blogBirthday", () => new Date(2007, 1, 20));
+export default async function($config) {
+	const slugify = $config.getFilter("slugify");
+	$config.addGlobalData("JS_ENABLED", () => JS_ENABLED);
+	$config.addGlobalData("currentDate", () => new Date());
+	$config.addGlobalData("blogBirthday", () => new Date(2007, 1, 20));
 
 	// Packages/repos (matched against a project's `packageName` or `nameWithOwner`) excluded from
 	// project↔post cross-linking: no post-link on their /projects/ table row, and no card of
 	// their own on a post's project-cards section—even when they share a `githubProjectName`
 	// with a project the post is really about (e.g. a workspace package not written up yet).
-	eleventyConfig.addGlobalData("projectCardExceptions", () => ["@11ty/client"]);
+	$config.addGlobalData("projectCardExceptions", () => ["@11ty/client"]);
 
-	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+	$config.addPreprocessor("drafts", "*", (data, content) => {
 		if (data.draft) {
 			if(data.draft === "ignore") {
 				return false;
@@ -106,30 +106,30 @@ export default async function(eleventyConfig) {
 
 	// More in .eleventyignore
 	if(!process.env.PRODUCTION_BUILD) {
-		eleventyConfig.ignores.add("./follow/*");
+		$config.ignores.add("./follow/*");
 	}
 
-	eleventyConfig.setUseGitIgnore(false);
-	eleventyConfig.setDataDeepMerge(true);
-	eleventyConfig.setQuietMode(true);
+	$config.setUseGitIgnore(false);
+	$config.setDataDeepMerge(true);
+	$config.setQuietMode(true);
 
-	eleventyConfig.setLiquidOptions({
+	$config.setLiquidOptions({
 		jsTruthy: true
 	});
 
-	eleventyConfig.setServerOptions({
-		domDiff: false,
-		// showVersion: true,
+	$config.setServerOptions({
+		domDiff: true,
+		showVersion: true,
 	});
 
 	/* PLUGINS */
-	eleventyConfig.addPlugin(pluginCss);
-	eleventyConfig.addPlugin(pluginSyntaxHighlight);
-	eleventyConfig.addPlugin(pluginImage);
-	eleventyConfig.addPlugin(pluginImageAvatar);
-	eleventyConfig.addPlugin(IdAttributePlugin);
+	$config.addPlugin(pluginCss);
+	$config.addPlugin(pluginSyntaxHighlight);
+	$config.addPlugin(pluginImage);
+	$config.addPlugin(pluginImageAvatar);
+	$config.addPlugin(IdAttributePlugin);
 
-	eleventyConfig.addPlugin(feedPlugin, {
+	$config.addPlugin(feedPlugin, {
 		outputPath: "/web/feed/atom.xml",
 		collection: {
 			name: "feedPosts",
@@ -145,21 +145,21 @@ export default async function(eleventyConfig) {
 			}
 		}
 	});
-	eleventyConfig.addPlugin(pluginWebc, {
+	$config.addPlugin(pluginWebc, {
 		components: [
 			"_components/**/*.webc",
 			// "npm:@11ty/eleventy-plugin-syntaxhighlight/*.webc",
 		],
 	});
 
-	eleventyConfig.addPlugin(pluginWebmentions);
+	$config.addPlugin(pluginWebmentions);
 
 	// TODO the `{% renderFile "./static/initial.css" %}` call is *expensive* and isn’t cached (but only on a full build)
-	eleventyConfig.addPlugin(RenderPlugin, {
+	$config.addPlugin(RenderPlugin, {
 		accessGlobalData: true,
 	});
-	eleventyConfig.addPlugin(pluginAnalytics);
-	eleventyConfig.addPlugin(fontAwesomePlugin, {
+	$config.addPlugin(pluginAnalytics);
+	$config.addPlugin(fontAwesomePlugin, {
 		transform: false,
 		shortcode: "icon",
 		defaultAttributes: {
@@ -170,13 +170,13 @@ export default async function(eleventyConfig) {
 	});
 
 	/* COPY */
-	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+	$config.setServerPassthroughCopyBehavior("passthrough");
 	// v4.0.0-alpha.11 or newer
-	if("setPassthroughCopyOptions" in eleventyConfig) {
-		eleventyConfig.setPassthroughCopyOptions({ dot: false });
+	if("setPassthroughCopyOptions" in $config) {
+		$config.setPassthroughCopyOptions({ dot: false });
 	}
 
-	eleventyConfig
+	$config
 		.addPassthroughCopy({
 			// WebC assets
 			"_components/*.{css,js}": `static/`,
@@ -226,7 +226,7 @@ export default async function(eleventyConfig) {
 
 	// Production only passthrough copy
 	if(process.env.PRODUCTION_BUILD) {
-		eleventyConfig
+		$config
 			.addPassthroughCopy("presentations/")
 			.addPassthroughCopy("demos/")
 			.addPassthroughCopy("resume/resume.pdf")
@@ -237,29 +237,29 @@ export default async function(eleventyConfig) {
 	}
 
 	/* LAYOUTS */
-	eleventyConfig.addLayoutAlias("default", "layouts/default.liquid");
-	eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
+	$config.addLayoutAlias("default", "layouts/default.liquid");
+	$config.addLayoutAlias("post", "layouts/post.liquid");
 
 	/* FILTERS */
-	eleventyConfig.addFilter("startsWith", async (haystack, ...needles) => {
+	$config.addFilter("startsWith", async (haystack, ...needles) => {
 		return needles.find(n => haystack.startsWith(n));
 	});
 
-	eleventyConfig.addFilter("tweetbackUrl", async (url) => {
+	$config.addFilter("tweetbackUrl", async (url) => {
 		const { transform } = await import("@tweetback/canonical");
 		return transform(url);
 	});
 
-	eleventyConfig.addFilter("archiveUrl", (url, targetYear) => {
+	$config.addFilter("archiveUrl", (url, targetYear) => {
 		if(!targetYear) {
 			targetYear = (new Date).getFullYear();
 		}
 		return `https://web.archive.org/web/${targetYear || 2023}0000000000*/${url}`;
 	});
 
-	eleventyConfig.addFilter("leftpad", leftpad);
+	$config.addFilter("leftpad", leftpad);
 
-	eleventyConfig.addLiquidFilter("numberString", function(num) {
+	$config.addLiquidFilter("numberString", function(num) {
 		let strs = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 		if( num < strs.length ) {
 			return strs[num];
@@ -268,7 +268,7 @@ export default async function(eleventyConfig) {
 	});
 
 	// Count total number of items that have speaking metadata set
-	eleventyConfig.addLiquidFilter("getSpeakingCount", function(allCollection, propName, propValueMatch) {
+	$config.addLiquidFilter("getSpeakingCount", function(allCollection, propName, propValueMatch) {
 		let count = 0;
 		for(let item of allCollection) {
 			// Event posts with a separate recap post are counted once, via the recap
@@ -284,7 +284,7 @@ export default async function(eleventyConfig) {
 	});
 
 	// Count unique number of items for a speaking metadata property
-	eleventyConfig.addLiquidFilter("getSpeakingUniqueCount", function(allCollection, propName) {
+	$config.addLiquidFilter("getSpeakingUniqueCount", function(allCollection, propName) {
 		let count = new Set();
 		for(let item of allCollection) {
 			if(item.data.metadata && item.data.metadata.speaking && item.data.metadata.speaking[propName]) {
@@ -294,18 +294,18 @@ export default async function(eleventyConfig) {
 		return count.size;
 	});
 
-	eleventyConfig.addLiquidFilter("renderNumber", function renderNumber(num, format = "0,0") {
+	$config.addLiquidFilter("renderNumber", function renderNumber(num, format = "0,0") {
 		return numeral(parseInt(num, 10)).format(format);
 	});
 
-	// eleventyConfig.addLiquidFilter("round", function(num, digits = 2) {
+	// $config.addLiquidFilter("round", function(num, digits = 2) {
 	// 	return parseFloat(num).toFixed(digits);
 	// });
 
 	// Neglect pills read as a quick magnitude, not a measurement—two significant digits is all
 	// they need (22%, 11%, 0.5%). toPrecision does the rounding, Number drops the zeros it pads
 	// with, so 0.50 renders as 0.5 and 1.0e+2 as 100.
-	eleventyConfig.addLiquidFilter("significantDigits", function(n, digits = 2) {
+	$config.addLiquidFilter("significantDigits", function(n, digits = 2) {
 		let num = parseFloat(n);
 		if(!Number.isFinite(num)) {
 			return n;
@@ -313,32 +313,32 @@ export default async function(eleventyConfig) {
 		return Number(num.toPrecision(digits));
 	});
 
-	eleventyConfig.addLiquidFilter("round", function(n, d = 0) {
+	$config.addLiquidFilter("round", function(n, d = 0) {
 		const f = 10 ** d;
 		return Math.round((n + Number.EPSILON * Math.sign(n)) * f) / f;
 	});
 
-	eleventyConfig.addLiquidFilter("medialengthCleanup", str => {
+	$config.addLiquidFilter("medialengthCleanup", str => {
 		let split = str.split(" ");
 		return `${split[0]}<span aria-hidden="true">m</span><span class="sr-only"> minutes</span>`;
 	});
 
-	eleventyConfig.addLiquidFilter("slideCount", prefix => {
+	$config.addLiquidFilter("slideCount", prefix => {
 		let slidePrefix = path.join(".", prefix);
 		let dir = prefix.endsWith("/") ? slidePrefix : path.dirname(slidePrefix);
 		let base = prefix.endsWith("/") ? "" : path.basename(slidePrefix);
 		return fs.readdirSync(dir).filter(name => name.startsWith(base) && name.endsWith(".jpeg")).length;
 	});
 
-	eleventyConfig.addLiquidFilter("encodeUriComponent", str => {
+	$config.addLiquidFilter("encodeUriComponent", str => {
 		return encodeURIComponent(str);
 	});
 
-	eleventyConfig.addLiquidFilter("htmlEntities", memoize(str => {
+	$config.addLiquidFilter("htmlEntities", memoize(str => {
 		return encode(str);
 	}));
 
-	eleventyConfig.addLiquidFilter("absoluteUrl", (url, base) => {
+	$config.addLiquidFilter("absoluteUrl", (url, base) => {
 		if( !base ) {
 			base = siteData.url;
 		}
@@ -350,7 +350,7 @@ export default async function(eleventyConfig) {
 		}
 	});
 
-	eleventyConfig.addFilter("timePosted", (startDate, endDate = Date.now()) => {
+	$config.addFilter("timePosted", (startDate, endDate = Date.now()) => {
 		if(typeof startDate === "string") {
 			startDate = Date.parse(startDate);
 		}
@@ -374,25 +374,25 @@ export default async function(eleventyConfig) {
 		}
 	});
 
-	eleventyConfig.addFilter("readableDate", (dateObj, formatOverride) => {
+	$config.addFilter("readableDate", (dateObj, formatOverride) => {
 		return DateTime.fromJSDate(dateObj).toFormat(formatOverride || "LLLL dd, yyyy");
 	});
 
-	eleventyConfig.addFilter("dateToISO", (dateObj) => {
+	$config.addFilter("dateToISO", (dateObj) => {
 		return dateObj.toISOString()
 	});
 
-	eleventyConfig.addLiquidFilter("readableDateFromISO", (dateStr, formatStr = "dd LLL yyyy 'at' hh:mma") => {
+	$config.addLiquidFilter("readableDateFromISO", (dateStr, formatStr = "dd LLL yyyy 'at' hh:mma") => {
 		return DateTime.fromISO(dateStr).toFormat(formatStr);
 	});
 
-	eleventyConfig.addLiquidFilter("getPostCountForYear", (posts, year) => {
+	$config.addLiquidFilter("getPostCountForYear", (posts, year) => {
 		return posts.filter(function(post) {
 			return post.data.page.date.getFullYear() === parseInt(year, 10);
 		}).length;
 	});
 
-	eleventyConfig.addLiquidFilter("getWeeklyPostCountForYear", (posts, year) => {
+	$config.addLiquidFilter("getWeeklyPostCountForYear", (posts, year) => {
 		let counts = {};
 		for(let week = 0; week < 52; week++) {
 			if(getEndDateFromWeekNumber(year, week).getTime() > Date.now()) {
@@ -414,7 +414,7 @@ export default async function(eleventyConfig) {
 		return Object.values(counts).join(",");
 	});
 
-	eleventyConfig.addLiquidFilter("getMonthlyPostCount", (posts, startYear = 2007) => {
+	$config.addLiquidFilter("getMonthlyPostCount", (posts, startYear = 2007) => {
 		let counts = {};
 		for(let year = startYear; year <= (new Date()).getFullYear(); year++) {
 			for(let month = 0; month < 12; month++) {
@@ -431,33 +431,33 @@ export default async function(eleventyConfig) {
 		return Object.values(counts).join(",");
 	});
 
-	eleventyConfig.addLiquidFilter("hostnameFromUrl", (url) => {
+	$config.addLiquidFilter("hostnameFromUrl", (url) => {
 		let urlObject = new URL(url);
 		return urlObject.hostname;
 	});
 
-	eleventyConfig.addLiquidFilter("emoji", function(content) {
+	$config.addLiquidFilter("emoji", function(content) {
 		return `<span aria-hidden="true" class="emoji">${content}</span>`;
 	});
 
 	// Get the first `n` elements of a collection.
-	eleventyConfig.addFilter("head", (array, n) => {
+	$config.addFilter("head", (array, n) => {
 		if( n < 0 ) {
 			return array.slice(n);
 		}
 		return array.slice(0, n);
 	});
 
-	eleventyConfig.addFilter("recentNpmPublishes", getRecentNpmPublishes);
+	$config.addFilter("recentNpmPublishes", getRecentNpmPublishes);
 
-	eleventyConfig.addFilter("localUrl", (absoluteUrl) => {
+	$config.addFilter("localUrl", (absoluteUrl) => {
 		return absoluteUrl.replace("https://www.zachleat.com", "");
 	});
 
 	// A homepage that’s just a root URL (a project’s own domain) reads better as the domain
 	// itself than as the word "Link"—a docs page or demo path stays "Link", since the domain
 	// alone wouldn’t identify which project it belongs to.
-	eleventyConfig.addFilter("rootUrlHostname", (url) => {
+	$config.addFilter("rootUrlHostname", (url) => {
 		try {
 			let parsed = new URL(url);
 			if(parsed.pathname !== "/" && parsed.pathname !== "") {
@@ -471,7 +471,7 @@ export default async function(eleventyConfig) {
 
 	// One month, not 30 days, so a project created on the 3rd of last month keeps its badge
 	// through the 3rd of this one, however long that month runs.
-	eleventyConfig.addFilter("isWithinPastMonth", (dateStr) => {
+	$config.addFilter("isWithinPastMonth", (dateStr) => {
 		let date = new Date(dateStr);
 		if(isNaN(date)) {
 			return false;
@@ -483,7 +483,7 @@ export default async function(eleventyConfig) {
 		return date > monthAgo;
 	});
 
-	eleventyConfig.addFilter("nameToFlag", (countryName = "") => {
+	$config.addFilter("nameToFlag", (countryName = "") => {
 		let flag = {
 			"germany": "🇩🇪",
 			"us": "🇺🇸",
@@ -500,7 +500,7 @@ export default async function(eleventyConfig) {
 		return `<span role="img" aria-label="${countryName}">${flag}</span>`;
 	});
 
-	eleventyConfig.addJavaScriptFunction("fetchYoutubeTranscript", async (videoId) => {
+	$config.addJavaScriptFunction("fetchYoutubeTranscript", async (videoId) => {
 		let asset = new AssetCache(`youtube_transcript_${videoId}`, "./_11ty/transcripts/", {
 			filenameFormat: function(key, hash) {
 				return `youtube-${videoId}`;
@@ -518,7 +518,7 @@ export default async function(eleventyConfig) {
 	/* END FILTERS */
 
 	/* SHORTCODES */
-	eleventyConfig.addLiquidShortcode("originalPostEmbed", async function(url, skipIcon = false, mode = "screenshot") {
+	$config.addLiquidShortcode("originalPostEmbed", async function(url, skipIcon = false, mode = "screenshot") {
 		if(mode === "none") {
 			return "";
 		}
@@ -549,18 +549,18 @@ export default async function(eleventyConfig) {
 <div><browser-window mode="auto" class="bw-site-theme"${skipIcon ? "" : " icon"} url="${url}" shadow flush style="${styles.join(";")}"><a href="${url}" class="favicon-optout">${imageHtml}</a></browser-window></div>`;
 	});
 
-	eleventyConfig.addFilter("isPost", function(inputPath) {
+	$config.addFilter("isPost", function(inputPath) {
 		return inputPath.startsWith("./_posts/") && (inputPath.endsWith(".md") || inputPath.endsWith(".html"));
 	});
 
 	/* COLLECTIONS */
-	eleventyConfig.addCollection("posts", function(collection) {
+	$config.addCollection("posts", function(collection) {
 		return getPosts(collection);
 	});
 
 	// Non-post pages that get a card on /opengraph/. The home page is left out on
 	// purpose: the default card already renders it.
-	eleventyConfig.addCollection("opengraphPages", function(collection) {
+	$config.addCollection("opengraphPages", function(collection) {
 		return collection.getAll()
 			.filter(function(item) {
 				return item.url &&
@@ -574,11 +574,11 @@ export default async function(eleventyConfig) {
 			.sort((a, b) => a.data.title.localeCompare(b.data.title));
 	});
 
-	eleventyConfig.addCollection("pinnedPosts", function(collection) {
+	$config.addCollection("pinnedPosts", function(collection) {
 		return getPosts(collection).filter(({data}) => data.pinned === true)
 	});
 
-	eleventyConfig.addCollection("homepageNewestPosts", function(collection) {
+	$config.addCollection("homepageNewestPosts", function(collection) {
 		return getPosts(collection)
 			.sort((a, b) => {
 				if(a.data.pinned && b.data.pinned) {
@@ -594,7 +594,7 @@ export default async function(eleventyConfig) {
 			})
 	});
 
-	eleventyConfig.addCollection("feedPosts", function(collection) {
+	$config.addCollection("feedPosts", function(collection) {
 		return getPosts(collection).reverse().filter(function(item) {
 			return !item.data.tags || !item.data.deprecated;
 		});
@@ -628,11 +628,11 @@ export default async function(eleventyConfig) {
 		return categories;
 	}
 
-	eleventyConfig.addLiquidFilter("getFilterCategories", function(collectionItem) {
+	$config.addLiquidFilter("getFilterCategories", function(collectionItem) {
 		return Array.from(getFilterCategories(collectionItem)).join(" ");
 	});
 
-	eleventyConfig.addLiquidFilter("getFilterCategoriesForYear", function(posts, year) {
+	$config.addLiquidFilter("getFilterCategoriesForYear", function(posts, year) {
 		let categories = new Set();
 		for(let post of posts) {
 			if(post.data.page.date.getFullYear() === parseInt(year, 10)) {
@@ -644,20 +644,20 @@ export default async function(eleventyConfig) {
 
 	const isVideo = item => hasTag(item, "video") || !!item.data.metadata?.youtubeId;
 
-	eleventyConfig.addLiquidFilter("getMediaFilter", function(collectionItem) {
+	$config.addLiquidFilter("getMediaFilter", function(collectionItem) {
 		return isVideo(collectionItem) ? "video" : "";
 	});
 
-	eleventyConfig.addLiquidFilter("getMediaFilterForYear", function(posts, year) {
+	$config.addLiquidFilter("getMediaFilterForYear", function(posts, year) {
 		return posts.some(post => post.data.page.date.getFullYear() === parseInt(year, 10) && isVideo(post)) ? "video" : "";
 	});
 
-	eleventyConfig.addCollection("writing", function(collection) {
+	$config.addCollection("writing", function(collection) {
 		return collection.getSortedByDate().reverse().filter(item => {
 			return isWriting(item);
 		});
 	});
-	eleventyConfig.addCollection("latestPosts", function(collection) {
+	$config.addCollection("latestPosts", function(collection) {
 		let posts = collection.getSortedByDate().reverse();
 		let items = [];
 		for( let item of posts ) {
@@ -674,7 +674,7 @@ export default async function(eleventyConfig) {
 	// keyed here so the projects table can look one up by either name it knows a project by.
 	// A post covering more than one project comma-separates them: `zachleat/foo, zachleat/bar`.
 	// A project written about more than once keeps every post, newest first.
-	eleventyConfig.addCollection("postsByProject", function(collection) {
+	$config.addCollection("postsByProject", function(collection) {
 		let byProject = {};
 		for(let post of getPosts(collection)) {
 			let projects = (post.data.githubProjectName || "").split(",").map(name => name.trim()).filter(Boolean);
@@ -686,14 +686,14 @@ export default async function(eleventyConfig) {
 	});
 
 	// font-loading category mapped to collection
-	eleventyConfig.addCollection("font-loading", function(collection) {
+	$config.addCollection("font-loading", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
 			return "categories" in item.data && item.data.categories && item.data.categories.indexOf("font-loading") > -1 || hasTag(item, "font-loading");
 		}).reverse();
 	});
 
 	// presentations category mapped to collection
-	eleventyConfig.addCollection("presentations", function(collection) {
+	$config.addCollection("presentations", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
 			return isSpeaking(item);
 		}).reverse();
@@ -707,7 +707,7 @@ export default async function(eleventyConfig) {
 	});
 
 	// Plain text summary of a template’s raw input, used for meta descriptions.
-	eleventyConfig.addFilter("excerpt", function(rawInput = "", maxLength = 160) {
+	$config.addFilter("excerpt", function(rawInput = "", maxLength = 160) {
 		let html = md.render(rawInput.replace(/{%[\s\S]*?%}|{{[\s\S]*?}}/g, ""));
 		let text = decode(html.replace(/<(pre|script|style|table|figure)[\s\S]*?<\/\1>/gi, "").replace(/<[^>]+>/g, " "))
 			.replace(/\s+/g, " ")
@@ -719,23 +719,23 @@ export default async function(eleventyConfig) {
 		return text.slice(0, maxLength).replace(/[\s,.;:—–-]+\S*$/, "") + "…";
 	});
 
-	eleventyConfig.addPairedShortcode("markdown", function(content, inline = false) {
+	$config.addPairedShortcode("markdown", function(content, inline = false) {
 		if(inline) {
 			return md.renderInline(content);
 		}
 		return md.render(content);
 	});
 
-	eleventyConfig.addLiquidFilter("includes", function(arr = [], value) {
+	$config.addLiquidFilter("includes", function(arr = [], value) {
 		return arr.includes(value);
 	});
 
-	eleventyConfig.addLiquidFilter("removeNewlines", function(str) {
+	$config.addLiquidFilter("removeNewlines", function(str) {
 		return str.replace(/\n/g, "");
 	});
 
 	// TODO this could be a webc component
-	eleventyConfig.addShortcode("slides", async function (prefix, indeces, alts, links, notes) {
+	$config.addShortcode("slides", async function (prefix, indeces, alts, links, notes) {
 		let [indexStart, indexEnd] = indeces.split("-");
 		indexStart = parseInt(indexStart, 10);
 		indexEnd = parseInt(indexEnd, 10) || indexStart; // "33" becomes "33-33"
@@ -790,7 +790,7 @@ export default async function(eleventyConfig) {
 
 	// Remove after https://github.com/11ty/eleventy/issues/3668
 	const TIME_ZONE = "America/Chicago";
-	eleventyConfig.addDateParsing(function(dateValue) {
+	$config.addDateParsing(function(dateValue) {
 		let localDate;
 		if(dateValue instanceof Date) { // override YAML dates
 			localDate = DateTime.fromJSDate(dateValue, { zone: "utc" }).setZone(TIME_ZONE, { keepLocalTime: true });
