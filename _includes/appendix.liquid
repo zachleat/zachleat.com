@@ -41,7 +41,7 @@
 			<div class="webmentions__facepile webmentions__facepile--rows">
 				<div class="hed-h3 webmentions__facepile__hedlg">Recent Activity</div>
 				{%- for webmention in recentPeople %}
-				{%- if webmention.url %}<a href="{{ webmention.url }}">{% else %}<span>{% endif %}{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}{% if webmention.url %}</a>{% else %}</span>{% endif %}
+				{%- if webmention.url %}<a href="{{ webmention.url }}">{% else %}<span>{% endif %}{% webmentionAvatar webmention, "webmentions__face" %}{% if webmention.url %}</a>{% else %}</span>{% endif %}
 				{%- endfor %}
 			</div>
 			{%- assign siteStats = webmentions | webmentionsSiteStats: analytics, commentsCounts %}

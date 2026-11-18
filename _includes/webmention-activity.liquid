@@ -23,7 +23,7 @@
 		</p>
 		<div class="activity-feed-faces">
 		{%- for webmention in activity.webmentions limit: 8 %}
-			{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "activity-feed-face" %}
+			{% webmentionAvatar webmention, "activity-feed-face" %}
 		{%- endfor %}
 		</div>
 	</div>

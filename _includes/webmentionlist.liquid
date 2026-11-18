@@ -43,7 +43,7 @@
     {% if olderThreadsSize > 0 %}
     <details class="static-comments-older">
       {%- assign olderThreadAuthors = threads | olderThreadAuthors: disqus.comments, visibleThreads, disqusVisible -%}
-      <summary>Show {{ olderThreadsSize }} older thread{% if olderThreadsSize != 1 %}s{% endif %}<span class="static-comments-thread-faces">{% for author in olderThreadAuthors limit: 10 %}{% if author.avatar %}<img src="{{ author.avatar | escape }}" class="static-comments-thread-face" width="48" height="48" alt="{{ author.author | escape }}" loading="lazy" decoding="async" eleventy:ignore>{% else %}{% render "webmention-avatar.liquid", webmention: author, imageClass: "static-comments-thread-face" %}{% endif %}{% endfor %}</span></summary>
+      <summary>Show {{ olderThreadsSize }} older thread{% if olderThreadsSize != 1 %}s{% endif %}<span class="static-comments-thread-faces">{% for author in olderThreadAuthors limit: 10 %}{% if author.avatar %}<img src="{{ author.avatar | escape }}" class="static-comments-thread-face" width="48" height="48" alt="{{ author.author | escape }}" loading="lazy" decoding="async" eleventy:ignore>{% else %}{% webmentionAvatar author, "static-comments-thread-face" %}{% endif %}{% endfor %}</span></summary>
       <ol class="static-comments static-comments-webmentions favicon-optin">
         {% for webmention in threads offset: visibleThreads %}
           {% include "webmention" %}
@@ -69,7 +69,7 @@
   <div class="webmentions__facepile">
     <div class="hed-h3{% if repostsSize > 11 or likesSize > 11 %} webmentions__facepile__hedlg{% endif %}">{{ repostsSize }} Repost{% if repostsSize != 1 %}s{% endif %}</div>
     {%- for webmention in reposts -%}
-      <span>{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}</span>
+      <span>{% webmentionAvatar webmention, "webmentions__face" %}</span>
     {%- endfor -%}
   </div>
   {% endif %}
@@ -78,7 +78,7 @@
   <div class="webmentions__facepile">
     <div class="hed-h3{% if repostsSize > 11 or likesSize > 11 %} webmentions__facepile__hedlg{% endif %}">{{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}</div>
     {%- for webmention in likes -%}
-      <span>{% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}</span>
+      <span>{% webmentionAvatar webmention, "webmentions__face" %}</span>
     {%- endfor -%}
   </div>
   {% endif %}
@@ -93,7 +93,7 @@
       {%- if webmention.url != "" -%}
       <a class="h-card u-url" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
       {%- endif -%}
-      {% render "webmention-avatar.liquid", webmention: webmention, imageClass: "webmentions__face" %}
+      {% webmentionAvatar webmention, "webmentions__face" %}
       {%- if webmention.url != "" -%}
       </a>
       {%- endif -%}

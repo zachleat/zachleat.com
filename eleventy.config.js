@@ -161,6 +161,7 @@ export default async function($config) {
 	// TODO the `{% renderFile "./static/initial.css" %}` call is *expensive* and isn’t cached (but only on a full build)
 	$config.addPlugin(RenderPlugin, {
 		accessGlobalData: true,
+		memoize: "file",
 	});
 	$config.addPlugin(pluginAnalytics);
 	$config.addPlugin(fontAwesomePlugin, {

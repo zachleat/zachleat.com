@@ -1,7 +1,10 @@
 import sanitizeHTML from "sanitize-html";
+import { encode } from "html-entities";
 
 import webmentionBlockList from "../_data/webmentionsBlockList.json" with { type: "json" };
 import getBaseUrl from "../_includes/getBaseUrl.js";
+import { getImageServiceAvatarUrl } from "./imagePlugin.js";
+import { indieAvatarBareHtml } from "./imageAvatarPlugin.js";
 
 export default function(eleventyConfig) {
 
@@ -240,6 +243,37 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addFilter('webmentionIsType', (webmention, type) => {
 		return type === webmention['wm-property'];
+	});
+
+	const getAvatarHtml = (webmention, imageClass) => {
+		if(webmention?.["wm-property"] === "bookmark-of" && webmention.url) {
+			return indieAvatarBareHtml(webmention.url, imageClass);
+		}
+		if(webmention?.author && webmention.author.photo !== "") {
+			return `<img class="${imageClass}" src="${getImageServiceAvatarUrl(webmention.author.photo)}" alt="${encode(webmention.author.name)}" width="48" height="48" loading="lazy" decoding="async" eleventy:ignore>`;
+		}
+		if(webmention?.url) {
+			return indieAvatarBareHtml(webmention.url, imageClass);
+		}
+		return `<img class="${imageClass}" src="/web/img/webmention-avatar-default.svg" alt="Default avatar image" width="48" height="48" loading="lazy" decoding="async" eleventy:ignore>`;
+	};
+
+	// Sitewide rail data hands the same webmention objects to every page, so cache per object
+	let avatarCache = new WeakMap();
+	eleventyConfig.addLiquidShortcode('webmentionAvatar', (webmention, imageClass) => {
+		imageClass ||= "static-comments-img u-photo";
+		if(!webmention || typeof webmention !== "object") {
+			return getAvatarHtml(webmention, imageClass);
+		}
+		let byClass = avatarCache.get(webmention);
+		if(!byClass) {
+			avatarCache.set(webmention, byClass = new Map());
+		}
+		let html = byClass.get(imageClass);
+		if(html === undefined) {
+			byClass.set(imageClass, html = getAvatarHtml(webmention, imageClass));
+		}
+		return html;
 	});
 
 	const platformIcons = {

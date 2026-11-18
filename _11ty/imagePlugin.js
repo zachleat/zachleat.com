@@ -53,6 +53,10 @@ function getFullUrlFromPath(path) {
 	return domain + path;
 }
 
+export function getImageServiceAvatarUrl(url) {
+	return `https://v1.image.11ty.dev/${encodeURIComponent(url)}/jpeg/72/`;
+}
+
 export function getOpenGraphImageUrl(url, format = "") {
 	let u = new URL(url);
 
@@ -205,9 +209,7 @@ export default function(eleventyConfig) {
 	});
 
 	/* Hosted image service to optimize webmention photos */
-	eleventyConfig.addLiquidFilter("eleventyImageServiceAvatar", (url) => {
-		return `https://v1.image.11ty.dev/${encodeURIComponent(url)}/jpeg/72/`;
-	});
+	eleventyConfig.addLiquidFilter("eleventyImageServiceAvatar", getImageServiceAvatarUrl);
 
 	// Screenshots
 	eleventyConfig.addLiquidShortcode("screenshotImageHtmlFullUrl", screenshotImageHtmlFullUrl);
