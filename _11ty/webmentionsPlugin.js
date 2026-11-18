@@ -77,6 +77,7 @@ export default function(eleventyConfig) {
 		"https://bsky.app/profile/zachleat.com",
 		"https://fediverse.zachleat.com/@zachleat",
 		"https://twitter.com/zachleat",
+		"https://www.youtube.com/@zachleat",
 	];
 	const authorDisqusNames = ["Zach Leatherman", "zachleat"];
 
