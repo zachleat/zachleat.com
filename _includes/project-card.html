@@ -162,8 +162,9 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 	{% endif %}
 	{% if project.prerelease and cardAsRow %}
 		<div class="m-2 version">
-			<div class="nowrap version-prerelease"><em>{{ project.lastPublishVersion }}</em></div>
-			{% if project.lastPublishVersion %}
+			<div class="nowrap version-prerelease"><em>{{ project.prereleaseVersion }}</em></div>
+			{%- comment %} lastPublish only dates the prerelease when the prerelease is the newest publish {% endcomment %}
+			{% if project.lastPublishVersion == project.prereleaseVersion %}
 			<small>
 				<time-difference live><em><time datetime="{{ project.lastPublish }}" title="{{ project.lastPublish }}">{{ project.lastPublish | readableDateFromISO: readableDateFormat }}</time></em></time-difference>
 			</small>
@@ -177,6 +178,9 @@ different signal npm downloads can’t see, gated at its own, much smaller scale
 {% if project.openVulnerabilities != null and not project.isArchived %}
 	{% if project.openVulnerabilities > 0 %}{% icon "fas:lock-open" %}{% endif -%}
 	{{ project.openVulnerabilities }}{% unless cardAsRow %} report{% if project.openVulnerabilities != 1 %}s{% endif %}{% endunless %}<br>
+	{%- if project.prerelease and cardAsRow and project.prereleaseVulnerabilities != null %}
+	<small class="version-prerelease">{% if project.prereleaseVulnerabilities > 0 %}{% icon "fas:lock-open" %}{% endif %}Prerelease: {{ project.prereleaseVulnerabilities }}</small><br>
+	{%- endif %}
 	<small>{{ project.transitiveDependencies }} dep{% if project.transitiveDependencies != 1 %}s{% endif %}</small>
 	{%- if cardAsRow and project.lastPublish and project.packageName and not project.npmDeprecated %}<br><a href="https://socket.dev/npm/package/{{ project.packageName }}" class="audit-socket"><small>{% indieAvatar "https://socket.dev/" "z-avatar" %}Socket</small></a>{% endif %}
 {% else %}
