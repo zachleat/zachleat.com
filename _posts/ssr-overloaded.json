@@ -796,6 +796,32 @@
 			"source": "https://brid.gy/like/twitter/zachleat/1539610177862881280/16395844",
 			"target": "https://www.zachleat.com/web/ssr-overloaded/",
 			"via": "webmention"
+		},
+		{
+			"id": 2056378,
+			"url": "https://fediverse.zachleat.com/@zachleat/117656193082713369#favorited-by-111686891635792460",
+			"date": "2026-11-21T20:10:34.000Z",
+			"author": {
+				"name": "Holger Hellinger",
+				"url": "https://hellinger.wtf/@holger",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f5a7a1c27f4fdc3f49f4790d4c6f374b71ef69eace4ecb514d7f83a08daec6c4.png"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117656193082713369/111686891635792460",
+			"target": "https://www.zachleat.com/web/ssr-overloaded/",
+			"via": "webmention"
+		},
+		{
+			"id": 2056399,
+			"url": "https://fediverse.zachleat.com/@zachleat/117656193082713369#favorited-by-109291906591238009",
+			"date": "2026-11-21T22:33:56.000Z",
+			"author": {
+				"name": "Axel Rauschmayer",
+				"url": "https://fosstodon.org/@rauschma",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/dd44390759ae11c7558bd7a7d5b500df8cc97666a1d9baffcf53deb26aafb149.jpg"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117656193082713369/109291906591238009",
+			"target": "https://www.zachleat.com/web/ssr-overloaded/",
+			"via": "webmention"
 		}
 	],
 	"reposts": [
@@ -913,6 +939,19 @@
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bdb2897cbb035e7a806821d85c060a5d1cd6706b8c0a6c61b2816c0eb7d03dac.jpg"
 			},
 			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/111676706109144203/109286956268376133",
+			"target": "https://www.zachleat.com/web/ssr-overloaded/",
+			"via": "webmention"
+		},
+		{
+			"id": 2056379,
+			"url": "https://fediverse.zachleat.com/@zachleat/117656193082713369#reblogged-by-111686891635792460",
+			"date": "2026-11-21T20:10:34.000Z",
+			"author": {
+				"name": "Holger Hellinger",
+				"url": "https://hellinger.wtf/@holger",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f5a7a1c27f4fdc3f49f4790d4c6f374b71ef69eace4ecb514d7f83a08daec6c4.png"
+			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117656193082713369/111686891635792460",
 			"target": "https://www.zachleat.com/web/ssr-overloaded/",
 			"via": "webmention"
 		}
