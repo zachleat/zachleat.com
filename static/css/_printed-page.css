@@ -3,7 +3,10 @@
 	border: 1px solid #999;
 	box-shadow: 4px 4px 0 #ddd;
 	padding: 3em;
-	font-size: 14px
+	font-size: 14px;
+	/* Always paper-colored so the black text stays legible in dark mode. */
+	background-color: #fff;
+	color: #000;
 }
 .printed-page > img {
 	display: block;
