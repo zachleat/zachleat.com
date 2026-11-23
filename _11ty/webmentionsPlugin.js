@@ -542,21 +542,24 @@ export default function(eleventyConfig) {
 			for(let [target, list] of Object.entries(mentions)) {
 				for(let webmention of list) {
 					let key = webmention?.author?.url?.toLowerCase();
-					if(!key || leaderboardExcludedUrls.includes(key) || getDate(webmention) < since || !leaderboardTypes.includes(webmention['wm-property']) || getBaseUrl(webmention['wm-target']) !== target || isOriginalPoster(webmention) || isBlocked(webmention)) {
+					if(!key || leaderboardExcludedUrls.includes(key) || !leaderboardTypes.includes(webmention['wm-property']) || getBaseUrl(webmention['wm-target']) !== target || isOriginalPoster(webmention) || isBlocked(webmention)) {
 						continue;
 					}
 					let person = people.get(key);
 					if(!person) {
 						people.set(key, person = { webmention, count: 0 });
 					}
-					person.count++;
+					// Older activity only backfills a quiet month
+					if(getDate(webmention) >= since) {
+						person.count++;
+					}
 					// Newest avatar and name
 					if(getDate(webmention) > getDate(person.webmention)) {
 						person.webmention = webmention;
 					}
 				}
 			}
-			topPeopleCache.set(mentions, [...people.values()].sort((a, b) => b.count - a.count));
+			topPeopleCache.set(mentions, [...people.values()].sort((a, b) => b.count - a.count || getDate(b.webmention) - getDate(a.webmention)));
 		}
 		return topPeopleCache.get(mentions);
 	};
