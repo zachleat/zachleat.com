@@ -6,7 +6,7 @@
 	margin-block: 1.5em;
 	padding: .875em 1em;
 	border-radius: .5em;
-	border-inline-start: .3125em solid var(--callout-hue);
+	border: 5px solid color-mix(in oklab, var(--callout-hue) 45%, var(--z-color-bg));
 	background-color: color-mix(in oklab, var(--callout-hue) 12%, var(--z-color-bg));
 	line-height: 1.6;
 }
