@@ -90,7 +90,7 @@ date or №. #}
 {%- for post in collections.posts -%}
 {%- set ogTitle %}{% if post.data.titleHtml %}{{ post.data.titleHtml | safe }}{% else %}{{ post.data.title | safe }}{% endif %}{% endset -%}
 {%- set ogBackground %}{% if post.data.external_url and post.data.external_url_screenshotmode == 'opengraph' %}https://v1.opengraph.11ty.dev/{{ post.data.external_url | urlencode }}/auto/jpeg/{% elif post.data.seo.openGraphBackgroundImage %}{{ post.data.seo.openGraphBackgroundImage }}{% elif post.data.overrideOgImageScreenshotBackground %}{% rawScreenshotImageFromFullUrl post.data.overrideOgImageScreenshotBackground %}{% elif post.data.external_url %}{% rawScreenshotImageFromFullUrl post.data.external_url %}{% else %}{% rawScreenshotImage post.url %}{% endif %}{% endset -%}
-{% if not loop.first %},{% endif %}[{{ post.url | dump | safe }},{{ ogTitle | dump | replace("</", "<\\/") | safe }},{{ post.date | readableDate | dump | safe }},{{ postCount - loop.index0 }},{{ ogBackground | dump | safe }},{% if post.data.opengraphSkipFace %}1{% else %}0{% endif %},{{ post.date | readableDate("yyyy") | dump | safe }}]
+{% if not loop.first %},{% endif %}[{{ post.url | dump | safe }},{{ ogTitle | dump | replace("</", "<\\/") | safe }},{{ post.date | readableDate | dump | safe }},{{ postCount - loop.index0 }},{{ ogBackground | dump | safe }},{% if post.data.opengraphSkipFace %}1{% else %}0{% endif %},{{ post.date | readableDate("yyyy") | dump | safe }},{{ post.data.seo.openGraphBackgroundPosition | default("") | dump | safe }}]
 {%- endfor -%}
 ]</script>
 
@@ -163,6 +163,7 @@ page mid-render. #}
 		numberOut.textContent = "№" + entry[3];
 		numberOut.hidden = !entry[3];
 		main.style.setProperty("--og-bgimage", "url('" + entry[4].replace(/'/g, "%27") + "')");
+		main.style.setProperty("--og-bgposition", entry[7] || "center");
 		face.hidden = Boolean(entry[5]);
 		fitFace();
 

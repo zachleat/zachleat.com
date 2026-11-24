@@ -5,6 +5,7 @@ tags: project
 seo:
   openGraphBackgroundImage: /og/sources/npm-audit-report.jpg
   openGraphAlt: A red security sign and a blue security sign
+  openGraphBackgroundPosition: center -55%
 posterImage:
   name: Peter Conrad
   source: https://unsplash.com/photos/a-red-security-sign-and-a-blue-security-sign-UA8PwPht1Vw
@@ -32,7 +33,7 @@ _Spicy take incoming:_ both Next.js and Gatsby have similarly _egregious_ securi
 
 ## Dependency Hide and Seek
 
-`next` (`v16.4.6` at time of writing) bypasses `node_modules` entirely for its own dependencies. If you look inside `node_modules/next/dist/compiled` you’ll see 139 unique dependencies that (when audited) report 11 low, 2 moderate, 19 high, and 3 critical vulerabilities otherwise _unreported_ by standard audit report mechanisms.
+`next` (`v16.4.6` at time of writing) bypasses `node_modules` entirely for its own dependencies (I first [wrote about this in 2023](/web/site-generator-review/)). If you look inside `node_modules/next/dist/compiled` you’ll see 139 unique dependencies that (when audited) report 11 low, 2 moderate, 19 high, and 3 critical vulerabilities otherwise _unreported_ by standard audit report mechanisms.
 
 Gatsby is no longer maintained so it was surprising to see more critical **(hidden)** vulnerabilities in Next.js than critical **(visible)** vulnerabilities in Gatsby.
 
