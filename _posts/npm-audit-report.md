@@ -59,4 +59,8 @@ I wanted a report that normalized away these issues to compare different framewo
 
 [![Screenshot of Prototype Pollution Report Tool](npm-audit-report.png)](https://ppr.zachleat.dev/)
 
-It updates about once a day and will show how different tools measure up over time. The Ecosystem Scoreboard measures _all_ non-deprecated packages published from various projects. The Core Scoreboard measures only the core package. Full package lists are shown at the end.
+It updates about once a day and will show how different ecosystems measure over time.
+
+- The Ecosystem Scoreboard measures _all_ non-deprecated packages published from various projects and takes a bit of an opinionated stance: maintainers need to deprecate packages they no longer maintain!
+- The Core-only Scoreboard measures _only_ the core package, which I felt like was interesting enough to have standalone.
+- Full package lists (with audit counts) are shown at the end.
