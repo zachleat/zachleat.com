@@ -16545,5 +16545,97 @@
 				}
 			]
 		}
+	],
+	"https://fediverse.zachleat.com/@zachleat/117656193082713369": [
+		{
+			"type": "entry",
+			"author": {
+				"type": "card",
+				"name": "Zach Leatherman",
+				"photo": "https://cdn.masto.host/fediversezachleatcom/accounts/avatars/109/286/461/031/266/152/original/dc489c3746a44e00.png",
+				"url": "https://fediverse.zachleat.com/@zachleat"
+			},
+			"url": "https://fediverse.zachleat.com/@zachleat/117656193082713369",
+			"published": "2026-11-21T19:57:12.147Z",
+			"wm-received": "2026-11-21T19:57:12.147Z",
+			"wm-id": "2a5a11c17730",
+			"wm-source": "https://fediverse.zachleat.com/@zachleat/117656193082713369",
+			"wm-target": "https://www.zachleat.com/web/ssr-overloaded/",
+			"wm-property": "syndication",
+			"content": {
+				"text": "@rauschma I don’t think I’ve ever bought into the idea of site versus app. I usually think people mean write versus readonly instead!\n\nIt depends on your definition of SSR! There are two commonly used ones! https://www.zachleat.com/web/ssr-overloaded/"
+			},
+			"syndication-reply": true
+		},
+		{
+			"type": "entry",
+			"author": {
+				"type": "card",
+				"name": "Axel Rauschmayer",
+				"photo": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/109/291/906/591/238/009/original/76fd351b6f7a848e.jpg",
+				"url": "https://fosstodon.org/@rauschma"
+			},
+			"url": "https://fediverse.zachleat.com/@zachleat/117656193082713369#favorited-by-109291906591238009",
+			"published": null,
+			"wm-received": "2026-11-21T22:33:56.000Z",
+			"wm-id": "a0df728eab1d",
+			"wm-source": "https://fediverse.zachleat.com/@zachleat/117656193082713369#favorited-by-109291906591238009",
+			"wm-target": "https://www.zachleat.com/web/ssr-overloaded/",
+			"wm-property": "like-of"
+		},
+		{
+			"type": "entry",
+			"author": {
+				"type": "card",
+				"name": "Holger Hellinger",
+				"photo": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/111/686/891/635/792/460/original/6c958a4cdb5817df.png",
+				"url": "https://hellinger.wtf/@holger"
+			},
+			"url": "https://fediverse.zachleat.com/@zachleat/117656193082713369#favorited-by-111686891635792460",
+			"published": null,
+			"wm-received": "2026-11-21T20:10:34.000Z",
+			"wm-id": "10baafeeb8d5",
+			"wm-source": "https://fediverse.zachleat.com/@zachleat/117656193082713369#favorited-by-111686891635792460",
+			"wm-target": "https://www.zachleat.com/web/ssr-overloaded/",
+			"wm-property": "like-of"
+		},
+		{
+			"type": "entry",
+			"author": {
+				"type": "card",
+				"name": "Holger Hellinger",
+				"photo": "https://cdn.masto.host/fediversezachleatcom/cache/accounts/avatars/111/686/891/635/792/460/original/6c958a4cdb5817df.png",
+				"url": "https://hellinger.wtf/@holger"
+			},
+			"url": "https://fediverse.zachleat.com/@zachleat/117656193082713369#reblogged-by-111686891635792460",
+			"published": null,
+			"wm-received": "2026-11-21T20:10:34.000Z",
+			"wm-id": "6d0340e77960",
+			"wm-source": "https://fediverse.zachleat.com/@zachleat/117656193082713369#reblogged-by-111686891635792460",
+			"wm-target": "https://www.zachleat.com/web/ssr-overloaded/",
+			"wm-property": "repost-of"
+		}
+	],
+	"https://fediverse.zachleat.com/@zachleat/117660384963057632": [
+		{
+			"type": "entry",
+			"author": {
+				"type": "card",
+				"name": "Zach Leatherman",
+				"photo": "https://cdn.masto.host/fediversezachleatcom/accounts/avatars/109/286/461/031/266/152/original/dc489c3746a44e00.png",
+				"url": "https://fediverse.zachleat.com/@zachleat"
+			},
+			"url": "https://fediverse.zachleat.com/@zachleat/117660384963057632",
+			"published": "2026-11-22T13:43:15.165Z",
+			"wm-received": "2026-11-22T13:43:15.165Z",
+			"wm-id": "ebfa67bd57cd",
+			"wm-source": "https://fediverse.zachleat.com/@zachleat/117660384963057632",
+			"wm-target": "https://www.zachleat.com/projects/",
+			"wm-property": "syndication",
+			"content": {
+				"text": "@lastguru appreciate your patience! that package is only 0.4% neglected right now 🫣 https://www.zachleat.com/projects/"
+			},
+			"syndication-reply": true
+		}
 	]
 }
