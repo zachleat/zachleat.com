@@ -51,7 +51,7 @@ Another common practice (though _less_ egregious) to sweep audits under the rug 
 - `create-nuxt` and `ng new` (Angular) print console output only when install fails
 - `sv create` (Svelte) shows momentarily but clears the log post-install
 
-Your **package manager** might take an opinionated stance here too. While `npm ` shows audit reports after an `npm install` command, both pnpm and yarn (v1 and v2) do not!
+Your **package manager** might take an opinionated stance here too. While `npm ` shows audit reports after an `npm install` command, both pnpm and yarn do not!
 
 ## Prototype Pollution Report
 
