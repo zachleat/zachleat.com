@@ -1,6 +1,6 @@
 ---
 title: Your Tools are Hiding npm Audits from You
-date: 2026-12-24
+date: 2026-11-24
 tags: project
 seo:
   openGraphBackgroundImage: /og/sources/npm-audit-report.jpg
