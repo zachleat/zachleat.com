@@ -2,6 +2,12 @@
 title: Your Tools are Hiding npm Audits from You
 date: 2026-12-24
 tags: project
+seo:
+  openGraphBackgroundImage: /og/sources/npm-audit-report.jpg
+  openGraphAlt: A red security sign and a blue security sign
+posterImage:
+  name: Peter Conrad
+  source: https://unsplash.com/photos/a-red-security-sign-and-a-blue-security-sign-UA8PwPht1Vw
 ---
 ## Meaningful Audits are Important
 
