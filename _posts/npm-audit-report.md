@@ -34,7 +34,7 @@ _Spicy take incoming:_ both Next.js and Gatsby have similarly _egregious_ securi
 
 `next` (`v16.4.6` at time of writing) bypasses `node_modules` entirely for its own dependencies. If you look inside `node_modules/next/dist/compiled` you’ll see 139 unique dependencies that (when audited) report 11 low, 2 moderate, 19 high, and 3 critical vulerabilities otherwise _unreported_ by standard audit report mechanisms.
 
-It’s pretty well known now that Gatsby is no longer maintained so this was startling to see: 3 critical **(hidden)** vulnerabilites in Next.js compared with 2 critical **(visible)** vulnerabilites in Gatsby.
+It’s pretty well known now that Gatsby is no longer maintained so this was startling to see: 3 critical **(hidden)** vulnerabilities in Next.js compared with 2 critical **(visible)** vulnerabilities in Gatsby.
 
 This practice of bundling dependencies isn’t exclusive to Next.js: Vite repeats an arguably similar practice in `node_modules/vite/dist` though with bundler-generated output. It’s a bit easier to excuse this practice as a local developer tool and not a production runtime but (in my personal opinion) it seems like an overcorrection to opt-out dependencies from audits entirely.
 
