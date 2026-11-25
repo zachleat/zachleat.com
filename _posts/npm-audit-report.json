@@ -103,6 +103,58 @@
 			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109528095432214346",
 			"target": "https://www.zachleat.com/web/npm-audit-report/",
 			"via": "webmention"
+		},
+		{
+			"id": 2057276,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#favorited-by-109296269911252050",
+			"date": "2026-11-24T21:48:23.000Z",
+			"author": {
+				"name": "Šime Vidas",
+				"url": "https://mastodon.social/@simevidas",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/4b680cc96b2d3c9597233800c6d56eb97b35f7a3cf6402b401a281d0cad2a9a0.jpg"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109296269911252050",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057287,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#favorited-by-109352939518629968",
+			"date": "2026-11-24T23:13:49.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109352939518629968",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057338,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#favorited-by-116104823528614977",
+			"date": "2026-11-25T01:27:23.000Z",
+			"author": {
+				"name": "Konform Browser",
+				"url": "https://techhub.social/@konform",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/7b593b492e1f1ebcb9c6c2295a194631dd26c0db09fb02647d72c82685c506ce.png"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/116104823528614977",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057378,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#favorited-by-109536717152658496",
+			"date": "2026-11-25T04:11:19.000Z",
+			"author": {
+				"name": "Johannes Odland",
+				"url": "https://front-end.social/@johannes",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/2f5d1d80fc98d5ea834e385c6c83ce500bcae526b681c29342c946f4f208a017.jpg"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109536717152658496",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
 		}
 	],
 	"reposts": [
@@ -181,6 +233,32 @@
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f58d0ac5ef567c125840f13f9cb9782b813e48b58e4c1b4c9048e9da2b7ca8e4.png"
 			},
 			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109779197194734817",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057279,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#reblogged-by-117673766582608088",
+			"date": "2026-11-24T22:47:20.000Z",
+			"author": {
+				"name": "unrealphish",
+				"url": "https://mastodon.social/@unrealphish",
+				"avatarUrl": "https://avatars.webmention.io/fediverse.zachleat.com/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png"
+			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/117673766582608088",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057288,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#reblogged-by-109352939518629968",
+			"date": "2026-11-24T23:13:52.000Z",
+			"author": {
+				"name": "Simon Cox :SEO:",
+				"url": "https://seocommunity.social/@simoncox",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
+			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109352939518629968",
 			"target": "https://www.zachleat.com/web/npm-audit-report/",
 			"via": "webmention"
 		}
