@@ -155,6 +155,123 @@
 			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109536717152658496",
 			"target": "https://www.zachleat.com/web/npm-audit-report/",
 			"via": "webmention"
+		},
+		{
+			"id": 2057407,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#favorited-by-109377519664117644",
+			"date": "2026-11-25T08:04:36.000Z",
+			"author": {
+				"name": "Kai",
+				"url": "https://mastodon.social/@Schweinepriester",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/301884e5464ad49c7f12722bc37a77e19bb724b5443d903e9f78def048c36a71.jpg"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109377519664117644",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057438,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#favorited-by-114462458106382447",
+			"date": "2026-11-25T11:14:39.000Z",
+			"author": {
+				"name": "🌈 Lascapi ⁂",
+				"url": "https://social.tchncs.de/@lascapi",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/f56f4e668c107f1281fad96ea9d978f6c7e0c7796616f1d841711b510b1a56d7.jpg"
+			},
+			"source": "https://brid.gy/like/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/114462458106382447",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057460,
+			"url": "https://bsky.app/profile/zachleat.com/post/3n33b3l7yvc2t#liked_by_did:plc:73yshv4tm6j4yd7al7p3yyql",
+			"date": "2026-11-25T13:27:28.000Z",
+			"author": {
+				"name": "jerad",
+				"url": "https://bsky.app/profile/jeradsloan.bsky.social",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:73yshv4tm6j4yd7al7p3yyql/bafkreidqcl4iqfnxiqqonfbrkowbsn4ut4yrgm6jxlqnawexy4yeos4vvi"
+			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3n33b3l7yvc2t/did%253Aplc%253A73yshv4tm6j4yd7al7p3yyql",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057461,
+			"url": "https://bsky.app/profile/zachleat.com/post/3n33a3zakac26#liked_by_did:plc:lwdezponannqokkcuk7uuew3",
+			"date": "2026-11-25T13:27:33.000Z",
+			"author": {
+				"name": "Jeremy Thompson",
+				"url": "https://bsky.app/profile/jhthompson.ca",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:lwdezponannqokkcuk7uuew3/bafkreig4grfcni4bpbuykm4w45mggmnqu2n27ndlaqqbefegqxbz4ua6au"
+			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3n33a3zakac26/did%253Aplc%253Alwdezponannqokkcuk7uuew3",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057462,
+			"url": "https://bsky.app/profile/zachleat.com/post/3n33a3zakac26#liked_by_did:plc:kgrbnhf2bdyk2nbwf44xcxpc",
+			"date": "2026-11-25T13:27:35.000Z",
+			"author": {
+				"name": "Sergio",
+				"url": "https://bsky.app/profile/sergio1984.bsky.social",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:kgrbnhf2bdyk2nbwf44xcxpc/bafkreibermu5o6cwinqkwavjne2lh7w2gunbzcugsefvfyd2mnranrf23m"
+			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3n33a3zakac26/did%253Aplc%253Akgrbnhf2bdyk2nbwf44xcxpc",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057463,
+			"url": "https://bsky.app/profile/zachleat.com/post/3n33a3zakac26#liked_by_did:plc:f6jm5vk3g67tiktn3v2cizmu",
+			"date": "2026-11-25T13:27:39.000Z",
+			"author": {
+				"name": "Florian van der Galiën",
+				"url": "https://bsky.app/profile/flori.dev",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:f6jm5vk3g67tiktn3v2cizmu/bafkreihgcer3zkhge5nvsu23dp6lsvwdx5mrhhm4kvgqdthcyojvamoysy"
+			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3n33a3zakac26/did%253Aplc%253Af6jm5vk3g67tiktn3v2cizmu",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057464,
+			"url": "https://bsky.app/profile/zachleat.com/post/3n33a3zakac26#liked_by_did:plc:elkbkqfdg42s6kbipfm4qu6p",
+			"date": "2026-11-25T13:27:41.000Z",
+			"author": {
+				"name": "miguel calderon",
+				"url": "https://bsky.app/profile/miguelcalderon.net",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:elkbkqfdg42s6kbipfm4qu6p/bafkreidbsv27vgb5shmjpvh235egcfxxux53zk3guw6u5g6ynbsqmpqsxa"
+			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3n33a3zakac26/did%253Aplc%253Aelkbkqfdg42s6kbipfm4qu6p",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057465,
+			"url": "https://bsky.app/profile/zachleat.com/post/3n33a3zakac26#liked_by_did:plc:kmeoup7vs37oby2a77nu6yk4",
+			"date": "2026-11-25T13:27:43.000Z",
+			"author": {
+				"name": "Gavin Anderegg",
+				"url": "https://bsky.app/profile/gavin.anderegg.ca",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:kmeoup7vs37oby2a77nu6yk4/bafkreifsghn3hhyji22ufc2bm7bp52yzpotvqjzvsdxxhy2wsrutki6oia"
+			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3n33a3zakac26/did%253Aplc%253Akmeoup7vs37oby2a77nu6yk4",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057466,
+			"url": "https://bsky.app/profile/zachleat.com/post/3n33a3zakac26#liked_by_did:plc:dkf6u7hhzicecvumdlfza2ux",
+			"date": "2026-11-25T13:27:44.000Z",
+			"author": {
+				"name": "jeremAIas",
+				"url": "https://bsky.app/profile/jeremias.codes",
+				"avatarUrl": "https://cdn.bsky.app/img/avatar/plain/did:plc:dkf6u7hhzicecvumdlfza2ux/bafkreihloo56nu2go2uaqhk25iydang5kcmgimlybtu7mv2wlto3pazvqi"
+			},
+			"source": "https://brid.gy/like/bluesky/did:plc:xpchjovbk6sxl3bv74z7cs54/at%253A%252F%252Fdid%253Aplc%253Axpchjovbk6sxl3bv74z7cs54%252Fapp.bsky.feed.post%252F3n33a3zakac26/did%253Aplc%253Adkf6u7hhzicecvumdlfza2ux",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
 		}
 	],
 	"reposts": [
@@ -259,6 +376,32 @@
 				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg"
 			},
 			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109352939518629968",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057398,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#reblogged-by-109301136001410553",
+			"date": "2026-11-25T07:37:23.000Z",
+			"author": {
+				"name": "Thomas Steiner :chrome:",
+				"url": "https://toot.cafe/@tomayac",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/bfc6c0c43c877e20f52745c3797f2df8b399c676f61af5b28b562461b499f345.jpg"
+			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109301136001410553",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		},
+		{
+			"id": 2057428,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#reblogged-by-109430998101369980",
+			"date": "2026-11-25T10:06:27.000Z",
+			"author": {
+				"name": "genehack",
+				"url": "https://dementedandsadbut.social/@genehack",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/e6ea4c56eb3aba5e76a9754ccb11998309ddf449fd9d8a80b8f7d56e41700e52.jpg"
+			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109430998101369980",
 			"target": "https://www.zachleat.com/web/npm-audit-report/",
 			"via": "webmention"
 		}
