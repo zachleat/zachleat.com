@@ -404,6 +404,37 @@
 			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/109430998101369980",
 			"target": "https://www.zachleat.com/web/npm-audit-report/",
 			"via": "webmention"
+		},
+		{
+			"id": 2057924,
+			"url": "https://fediverse.zachleat.com/@zachleat/117672730098197843#reblogged-by-112002649994158030",
+			"date": "2026-11-27T18:49:11.000Z",
+			"author": {
+				"name": "🍩 Stvn Hrlnd (He/Him)",
+				"url": "https://umbracocommunity.social/@stvnhrlnd",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/5355ef62f27e993d29455bce7bc70c38caff8a8b90e980ee37b9967b90cf4e66.jpg"
+			},
+			"source": "https://brid.gy/repost/mastodon/@zachleat@fediverse.zachleat.com/117672730098197843/112002649994158030",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
+		}
+	],
+	"comments": [
+		{
+			"id": 2057925,
+			"parentId": 0,
+			"url": "https://mas.to/@dxsrc/117688823260576388",
+			"author": {
+				"name": "dxsrc",
+				"url": "https://mas.to/@dxsrc",
+				"avatarUrl": "https://avatars.webmention.io/cdn.masto.host/52725b248e83704c94ad21e2b62055c703b0e50d3ef66e49c5665ecd292351d6.png"
+			},
+			"date": "2026-11-27T14:15:29.000Z",
+			"content": "<p>Your Tools Are Hiding npm Audits From You, by <span class=\"h-card\"><a href=\"https://fediverse.zachleat.com/@zachleat\" class=\"u-url\">@<span>zachleat</span></a></span>:</p><p><a href=\"https://www.zachleat.com/web/npm-audit-report/?ref=dxsrc.org\"><span>https://www.</span><span>zachleat.com/web/npm-audit-rep</span><span>ort/?ref=dxsrc.org</span></a></p><p><a href=\"https://mas.to/tags/tooling\">#<span>tooling</span></a> <a href=\"https://mas.to/tags/npm\">#<span>npm</span></a> <a href=\"https://mas.to/tags/security\">#<span>security</span></a> <a href=\"https://mas.to/tags/nextjs\">#<span>nextjs</span></a> <a href=\"https://mas.to/tags/vite\">#<span>vite</span></a></p>\n  <a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/nextjs\">nextjs</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/npm\">npm</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/security\">security</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/tooling\">tooling</a>\n<a class=\"p-category\" href=\"https://fediverse.zachleat.com/tags/vite\">vite</a>\n  <a class=\"u-mention\" href=\"https://mas.to/tags/nextjs\"></a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/npm\"></a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/security\"></a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/tooling\"></a>\n<a class=\"u-mention\" href=\"https://mas.to/tags/vite\"></a>\n  <a href=\"https://www.zachleat.com/web/npm-audit-report/?ref=dxsrc.org\">Your Tools are Hiding npm Audits from You—zachleat.com</a>",
+			"type": "mention",
+			"source": "https://brid.gy/post/mastodon/@zachleat@fediverse.zachleat.com/117688823305444014",
+			"target": "https://www.zachleat.com/web/npm-audit-report/",
+			"via": "webmention"
 		}
 	]
 }
