@@ -20,13 +20,13 @@
       "date": "2016-07-12",
       "time": 1468281600000
     },
-    "pageViewsPerDay": 53.8,
+    "pageViewsPerDay": 53.79,
     "rankTotal": 1,
     "rankPerDaysPosted": 3
   },
   "/web/bigtext-makes-text-big/": {
     "url": "/web/bigtext-makes-text-big/",
-    "pageViews": 167302,
+    "pageViews": 167303,
     "mediaViews": 13010,
     "from": {
       "inputPath": "./_posts/bigtext-makes-text-big.md",
@@ -40,11 +40,11 @@
   },
   "/": {
     "url": "/",
-    "pageViews": 155261
+    "pageViews": 155289
   },
   "/web/": {
     "url": "/web/",
-    "pageViews": 120323
+    "pageViews": 120344
   },
   "/web/dont-let-the-door-hit-you-onunload-and-onbeforeunload/": {
     "url": "/web/dont-let-the-door-hit-you-onunload-and-onbeforeunload/",
@@ -55,7 +55,7 @@
       "date": "2008-04-22",
       "time": 1208822400000
     },
-    "pageViewsPerDay": 8.99,
+    "pageViewsPerDay": 8.98,
     "rankTotal": 3,
     "rankPerDaysPosted": 15
   },
@@ -68,7 +68,7 @@
       "date": "2019-05-09",
       "time": 1557360000000
     },
-    "pageViewsPerDay": 16.99,
+    "pageViewsPerDay": 16.98,
     "rankTotal": 4,
     "rankPerDaysPosted": 6
   },
@@ -112,7 +112,7 @@
   },
   "/web/preload/": {
     "url": "/web/preload/",
-    "pageViews": 29421,
+    "pageViews": 29422,
     "from": {
       "inputPath": "./_posts/preload.md",
       "url": "/web/preload/",
@@ -155,15 +155,15 @@
   },
   "/web/eleventy/": {
     "url": "/web/eleventy/",
-    "pageViews": 25780
+    "pageViews": 25787
   },
   "/web/fonts/": {
     "url": "/web/fonts/",
-    "pageViews": 25307
+    "pageViews": 25311
   },
   "/web/font-checklist/": {
     "url": "/web/font-checklist/",
-    "pageViews": 25214,
+    "pageViews": 25215,
     "from": {
       "inputPath": "./_posts/font-checklist.md",
       "url": "/web/font-checklist/",
@@ -210,13 +210,13 @@
       "date": "2022-01-24",
       "time": 1642982400000
     },
-    "pageViewsPerDay": 12.72,
+    "pageViewsPerDay": 12.71,
     "rankTotal": 13,
     "rankPerDaysPosted": 9
   },
   "/web/foft/": {
     "url": "/web/foft/",
-    "pageViews": 22318,
+    "pageViews": 22319,
     "from": {
       "inputPath": "./_posts/foft.md",
       "url": "/web/foft/",
@@ -225,7 +225,7 @@
     },
     "pageViewsPerDay": 5.16,
     "rankTotal": 14,
-    "rankPerDaysPosted": 37
+    "rankPerDaysPosted": 36
   },
   "/web/lighthouse-in-footer/": {
     "url": "/web/lighthouse-in-footer/",
@@ -246,14 +246,14 @@
   },
   "/web/critical-webfonts/": {
     "url": "/web/critical-webfonts/",
-    "pageViews": 20040,
+    "pageViews": 20041,
     "from": {
       "inputPath": "./_posts/critical-webfonts.md",
       "url": "/web/critical-webfonts/",
       "date": "2016-01-04",
       "time": 1451865600000
     },
-    "pageViewsPerDay": 5.04,
+    "pageViewsPerDay": 5.03,
     "rankTotal": 16,
     "rankPerDaysPosted": 39
   },
@@ -283,7 +283,7 @@
       "date": "2023-02-06",
       "time": 1675641600000
     },
-    "pageViewsPerDay": 12.79,
+    "pageViewsPerDay": 12.78,
     "rankTotal": 18,
     "rankPerDaysPosted": 8
   },
@@ -296,7 +296,7 @@
       "date": "2023-11-18",
       "time": 1700265600000
     },
-    "pageViewsPerDay": 16.04,
+    "pageViewsPerDay": 16.02,
     "rankTotal": 19,
     "rankPerDaysPosted": 7
   },
@@ -332,7 +332,7 @@
   },
   "/web/rename-font/": {
     "url": "/web/rename-font/",
-    "pageViews": 16060,
+    "pageViews": 16061,
     "from": {
       "inputPath": "./_posts/rename-font.md",
       "url": "/web/rename-font/",
@@ -358,14 +358,14 @@
   },
   "/web/adventures-in-date-parsing/": {
     "url": "/web/adventures-in-date-parsing/",
-    "pageViews": 15078,
+    "pageViews": 15080,
     "from": {
       "inputPath": "./_posts/adventures-in-date-parsing.md",
       "url": "/web/adventures-in-date-parsing/",
       "date": "2025-07-23",
       "time": 1753228800000
     },
-    "pageViewsPerDay": 30.64,
+    "pageViewsPerDay": 30.58,
     "rankTotal": 24,
     "rankPerDaysPosted": 5
   },
@@ -382,13 +382,9 @@
     "rankTotal": 25,
     "rankPerDaysPosted": 52
   },
-  "/web/2007/04/04/problems-with-yui-datatable/": {
-    "url": "/web/2007/04/04/problems-with-yui-datatable/",
-    "pageViews": 14810
-  },
   "/web/webfont-glossary/": {
     "url": "/web/webfont-glossary/",
-    "pageViews": 14809,
+    "pageViews": 14811,
     "from": {
       "inputPath": "./_posts/webfont-glossary.md",
       "url": "/web/webfont-glossary/",
@@ -399,9 +395,13 @@
     "rankTotal": 26,
     "rankPerDaysPosted": 45
   },
+  "/web/2007/04/04/problems-with-yui-datatable/": {
+    "url": "/web/2007/04/04/problems-with-yui-datatable/",
+    "pageViews": 14810
+  },
   "/web/introducing-eleventy/": {
     "url": "/web/introducing-eleventy/",
-    "pageViews": 14608,
+    "pageViews": 14609,
     "from": {
       "inputPath": "./_posts/introducing-eleventy.md",
       "url": "/web/introducing-eleventy/",
@@ -559,13 +559,13 @@
       "date": "2015-05-31",
       "time": 1433030400000
     },
-    "pageViewsPerDay": 2.25,
+    "pageViewsPerDay": 2.24,
     "rankTotal": 37,
-    "rankPerDaysPosted": 80
+    "rankPerDaysPosted": 82
   },
   "/web/build-benchmark/": {
     "url": "/web/build-benchmark/",
-    "pageViews": 9214,
+    "pageViews": 9215,
     "from": {
       "inputPath": "./_posts/build-benchmark.md",
       "url": "/web/build-benchmark/",
@@ -655,7 +655,7 @@
   },
   "/web/site-generator-review/": {
     "url": "/web/site-generator-review/",
-    "pageViews": 7904,
+    "pageViews": 7906,
     "from": {
       "inputPath": "./_posts/site-generator-review.md",
       "url": "/web/site-generator-review/",
@@ -694,14 +694,14 @@
   },
   "/web/good-bad-web-components/": {
     "url": "/web/good-bad-web-components/",
-    "pageViews": 7641,
+    "pageViews": 7642,
     "from": {
       "inputPath": "./_posts/good-bad-web-components.md",
       "url": "/web/good-bad-web-components/",
       "date": "2024-01-31",
       "time": 1706659200000
     },
-    "pageViewsPerDay": 7.41,
+    "pageViewsPerDay": 7.4,
     "rankTotal": 47,
     "rankPerDaysPosted": 22
   },
@@ -709,13 +709,13 @@
     "url": "/web/2007/04/05/google-using-yui-grids-css/",
     "pageViews": 7478
   },
+  "/about/": {
+    "url": "/about/",
+    "pageViews": 7451
+  },
   "/web/2007/04/18/javascript-code-coverage-tool-for-firebug/": {
     "url": "/web/2007/04/18/javascript-code-coverage-tool-for-firebug/",
     "pageViews": 7448
-  },
-  "/about/": {
-    "url": "/about/",
-    "pageViews": 7446
   },
   "/web/2007/08/28/enlarging-your-yui-datatable-in-29-seconds-or-less/": {
     "url": "/web/2007/08/28/enlarging-your-yui-datatable-in-29-seconds-or-less/",
@@ -748,7 +748,7 @@
       "date": "2024-05-13",
       "time": 1715558400000
     },
-    "pageViewsPerDay": 7.77,
+    "pageViewsPerDay": 7.76,
     "rankTotal": 49,
     "rankPerDaysPosted": 18
   },
@@ -870,9 +870,9 @@
       "date": "2024-05-21",
       "time": 1716249600000
     },
-    "pageViewsPerDay": 6.66,
+    "pageViewsPerDay": 6.65,
     "rankTotal": 58,
-    "rankPerDaysPosted": 25
+    "rankPerDaysPosted": 24
   },
   "/web/state-of-eleventy-2022/": {
     "url": "/web/state-of-eleventy-2022/",
@@ -912,11 +912,11 @@
     },
     "pageViewsPerDay": 4.3,
     "rankTotal": 61,
-    "rankPerDaysPosted": 47
+    "rankPerDaysPosted": 46
   },
   "/web/speaking/": {
     "url": "/web/speaking/",
-    "pageViews": 5776
+    "pageViews": 5779
   },
   "/web/et-tu-x-ua-compatible/": {
     "url": "/web/et-tu-x-ua-compatible/",
@@ -931,13 +931,13 @@
     "rankTotal": 62,
     "rankPerDaysPosted": 156
   },
+  "/web/best-of/": {
+    "url": "/web/best-of/",
+    "pageViews": 5482
+  },
   "/web/2008/12/04/domcontentloaded-inconsistencies/": {
     "url": "/web/2008/12/04/domcontentloaded-inconsistencies/",
     "pageViews": 5481
-  },
-  "/web/best-of/": {
-    "url": "/web/best-of/",
-    "pageViews": 5480
   },
   "/web/javascript-code-coverage-tool-for-firebug/": {
     "url": "/web/javascript-code-coverage-tool-for-firebug/",
@@ -1032,7 +1032,7 @@
     },
     "pageViewsPerDay": 2.77,
     "rankTotal": 69,
-    "rankPerDaysPosted": 68
+    "rankPerDaysPosted": 67
   },
   "/web/font-loading-classes/": {
     "url": "/web/font-loading-classes/",
@@ -1144,7 +1144,7 @@
     },
     "pageViewsPerDay": 1.34,
     "rankTotal": 77,
-    "rankPerDaysPosted": 133
+    "rankPerDaysPosted": 132
   },
   "/web/tool-or-die/": {
     "url": "/web/tool-or-die/",
@@ -1187,27 +1187,27 @@
   },
   "/web/ai-websites/": {
     "url": "/web/ai-websites/",
-    "pageViews": 4569,
+    "pageViews": 4574,
     "from": {
       "inputPath": "./_posts/ai-websites.md",
       "url": "/web/ai-websites/",
       "date": "2026-09-21",
       "time": 1789948800000
     },
-    "pageViewsPerDay": 68.07,
+    "pageViewsPerDay": 67.1,
     "rankTotal": 81,
     "rankPerDaysPosted": 2
   },
   "/web/serverless-cost/": {
     "url": "/web/serverless-cost/",
-    "pageViews": 4546,
+    "pageViews": 4547,
     "from": {
       "inputPath": "./_posts/serverless-cost.md",
       "url": "/web/serverless-cost/",
       "date": "2024-08-05",
       "time": 1722816000000
     },
-    "pageViewsPerDay": 5.39,
+    "pageViewsPerDay": 5.38,
     "rankTotal": 82,
     "rankPerDaysPosted": 35
   },
@@ -1294,7 +1294,7 @@
   },
   "/web/whitehouse/": {
     "url": "/web/whitehouse/",
-    "pageViews": 4272,
+    "pageViews": 4274,
     "from": {
       "inputPath": "./_posts/whitehouse.md",
       "url": "/web/whitehouse/",
@@ -1440,7 +1440,7 @@
       "date": "2024-05-17",
       "time": 1715904000000
     },
-    "pageViewsPerDay": 4.01,
+    "pageViewsPerDay": 4,
     "rankTotal": 97,
     "rankPerDaysPosted": 50
   },
@@ -1548,7 +1548,7 @@
     },
     "pageViewsPerDay": 2.25,
     "rankTotal": 104,
-    "rankPerDaysPosted": 81
+    "rankPerDaysPosted": 80
   },
   "/web/2007/08/20/malarquee-bringing-back-the-marquee/": {
     "url": "/web/2007/08/20/malarquee-bringing-back-the-marquee/",
@@ -1661,7 +1661,7 @@
     },
     "pageViewsPerDay": 0.72,
     "rankTotal": 111,
-    "rankPerDaysPosted": 194
+    "rankPerDaysPosted": 193
   },
   "/2.0/2007/12/09/cristiano-ronaldo-who-taught-you-to-be-a-man/": {
     "url": "/2.0/2007/12/09/cristiano-ronaldo-who-taught-you-to-be-a-man/",
@@ -1689,9 +1689,9 @@
       "date": "2020-11-25",
       "time": 1606262400000
     },
-    "pageViewsPerDay": 1.35,
+    "pageViewsPerDay": 1.34,
     "rankTotal": 113,
-    "rankPerDaysPosted": 131
+    "rankPerDaysPosted": 133
   },
   "/web/netlify/": {
     "url": "/web/netlify/",
@@ -1726,7 +1726,7 @@
   },
   "/web/webc-in-eleventy/": {
     "url": "/web/webc-in-eleventy/",
-    "pageViews": 2865,
+    "pageViews": 2866,
     "from": {
       "inputPath": "./_posts/webc-in-eleventy.md",
       "url": "/web/webc-in-eleventy/",
@@ -1752,27 +1752,27 @@
   },
   "/web/stable-scrollbar-gutters/": {
     "url": "/web/stable-scrollbar-gutters/",
-    "pageViews": 2797,
+    "pageViews": 2798,
     "from": {
       "inputPath": "./_posts/stable-scrollbar-gutters.md",
       "url": "/web/stable-scrollbar-gutters/",
       "date": "2025-09-18",
       "time": 1758153600000
     },
-    "pageViewsPerDay": 6.43,
+    "pageViewsPerDay": 6.41,
     "rankTotal": 118,
     "rankPerDaysPosted": 26
   },
   "/web/npm-security/": {
     "url": "/web/npm-security/",
-    "pageViews": 2779,
+    "pageViews": 2780,
     "from": {
       "inputPath": "./_posts/npm-security.md",
       "url": "/web/npm-security/",
       "date": "2025-12-04",
       "time": 1764806400000
     },
-    "pageViewsPerDay": 7.76,
+    "pageViewsPerDay": 7.74,
     "rankTotal": 119,
     "rankPerDaysPosted": 19
   },
@@ -1909,7 +1909,7 @@
     },
     "pageViewsPerDay": 0.66,
     "rankTotal": 129,
-    "rankPerDaysPosted": 201
+    "rankPerDaysPosted": 200
   },
   "/web/resume-on-the-jamstack/": {
     "url": "/web/resume-on-the-jamstack/",
@@ -1948,7 +1948,7 @@
     },
     "pageViewsPerDay": 1.35,
     "rankTotal": 132,
-    "rankPerDaysPosted": 132
+    "rankPerDaysPosted": 131
   },
   "/web/dear-ie6-please-cache-my-images/": {
     "url": "/web/dear-ie6-please-cache-my-images/",
@@ -2092,7 +2092,7 @@
   },
   "/web/youtube-embeds/": {
     "url": "/web/youtube-embeds/",
-    "pageViews": 2269,
+    "pageViews": 2270,
     "from": {
       "inputPath": "./_posts/youtube-embeds.md",
       "url": "/web/youtube-embeds/",
@@ -2187,7 +2187,7 @@
   },
   "/404.html/": {
     "url": "/404.html/",
-    "pageViews": 2027
+    "pageViews": 2030
   },
   "/web/table-saw/": {
     "url": "/web/table-saw/",
@@ -2232,7 +2232,7 @@
   },
   "/web/pagefind-search/": {
     "url": "/web/pagefind-search/",
-    "pageViews": 1894,
+    "pageViews": 1895,
     "from": {
       "inputPath": "./_posts/pagefind-search.md",
       "url": "/web/pagefind-search/",
@@ -2258,7 +2258,7 @@
     },
     "pageViewsPerDay": 0.63,
     "rankTotal": 153,
-    "rankPerDaysPosted": 208
+    "rankPerDaysPosted": 207
   },
   "/web/symbiotic-open-source/": {
     "url": "/web/symbiotic-open-source/",
@@ -2271,7 +2271,7 @@
     },
     "pageViewsPerDay": 2.25,
     "rankTotal": 154,
-    "rankPerDaysPosted": 82
+    "rankPerDaysPosted": 81
   },
   "/web/eleventy-cloud-authors-pages/": {
     "url": "/web/eleventy-cloud-authors-pages/",
@@ -2329,7 +2329,7 @@
   },
   "/web/unicode-range-interchange/": {
     "url": "/web/unicode-range-interchange/",
-    "pageViews": 1687,
+    "pageViews": 1688,
     "from": {
       "inputPath": "./_posts/unicode-range-interchange.md",
       "url": "/web/unicode-range-interchange/",
@@ -2338,7 +2338,7 @@
     },
     "pageViewsPerDay": 0.81,
     "rankTotal": 159,
-    "rankPerDaysPosted": 185
+    "rankPerDaysPosted": 184
   },
   "/web/own-your-content/": {
     "url": "/web/own-your-content/",
@@ -2364,7 +2364,7 @@
     },
     "pageViewsPerDay": 0.66,
     "rankTotal": 161,
-    "rankPerDaysPosted": 202
+    "rankPerDaysPosted": 201
   },
   "/web/2007/07/30/using-dom-query-libraries-in-yui/": {
     "url": "/web/2007/07/30/using-dom-query-libraries-in-yui/",
@@ -2470,6 +2470,19 @@
     "rankTotal": 168,
     "rankPerDaysPosted": 183
   },
+  "/web/html-logo/": {
+    "url": "/web/html-logo/",
+    "pageViews": 1527,
+    "from": {
+      "inputPath": "./_posts/html-logo.md",
+      "url": "/web/html-logo/",
+      "date": "2026-02-19",
+      "time": 1771459200000
+    },
+    "pageViewsPerDay": 5.41,
+    "rankTotal": 169,
+    "rankPerDaysPosted": 34
+  },
   "/web/a-race-against-time-pickers/": {
     "url": "/web/a-race-against-time-pickers/",
     "pageViews": 1776,
@@ -2480,21 +2493,8 @@
       "time": 1275955200000
     },
     "pageViewsPerDay": 0.3,
-    "rankTotal": 169,
-    "rankPerDaysPosted": 284
-  },
-  "/web/html-logo/": {
-    "url": "/web/html-logo/",
-    "pageViews": 1526,
-    "from": {
-      "inputPath": "./_posts/html-logo.md",
-      "url": "/web/html-logo/",
-      "date": "2026-02-19",
-      "time": 1771459200000
-    },
-    "pageViewsPerDay": 5.43,
     "rankTotal": 170,
-    "rankPerDaysPosted": 34
+    "rankPerDaysPosted": 284
   },
   "/web/a-mobile-web-divided/": {
     "url": "/web/a-mobile-web-divided/",
@@ -2561,7 +2561,7 @@
       "date": "2022-11-15",
       "time": 1668470400000
     },
-    "pageViewsPerDay": 0.99,
+    "pageViewsPerDay": 0.98,
     "rankTotal": 175,
     "rankPerDaysPosted": 163
   },
@@ -2591,9 +2591,9 @@
       "date": "2021-01-22",
       "time": 1611273600000
     },
-    "pageViewsPerDay": 0.67,
+    "pageViewsPerDay": 0.66,
     "rankTotal": 177,
-    "rankPerDaysPosted": 199
+    "rankPerDaysPosted": 202
   },
   "/www.zachleat.com/alarmd/index.html": {
     "url": "/www.zachleat.com/alarmd/index.html",
@@ -2601,7 +2601,7 @@
   },
   "/uses/": {
     "url": "/uses/",
-    "pageViews": 1405
+    "pageViews": 1409
   },
   "/web/randsom/": {
     "url": "/web/randsom/",
@@ -2687,7 +2687,7 @@
   },
   "/search/": {
     "url": "/search/",
-    "pageViews": 1328
+    "pageViews": 1329
   },
   "/web/faster-yui-datatable-with-5-lines-of-code/": {
     "url": "/web/faster-yui-datatable-with-5-lines-of-code/",
@@ -2768,6 +2768,10 @@
     "rankTotal": 188,
     "rankPerDaysPosted": 302
   },
+  "/projects/": {
+    "url": "/projects/",
+    "pageViews": 1268
+  },
   "/web/socialcount/": {
     "url": "/web/socialcount/",
     "pageViews": 1264,
@@ -2793,10 +2797,6 @@
     "pageViewsPerDay": 0.48,
     "rankTotal": 190,
     "rankPerDaysPosted": 236
-  },
-  "/projects/": {
-    "url": "/projects/",
-    "pageViews": 1260
   },
   "/web/domain-swap/": {
     "url": "/web/domain-swap/",
@@ -2846,7 +2846,7 @@
       "date": "2025-10-02",
       "time": 1759363200000
     },
-    "pageViewsPerDay": 2.95,
+    "pageViewsPerDay": 2.94,
     "rankTotal": 194,
     "rankPerDaysPosted": 65
   },
@@ -3019,7 +3019,7 @@
       "date": "2024-02-02",
       "time": 1706832000000
     },
-    "pageViewsPerDay": 1.08,
+    "pageViewsPerDay": 1.07,
     "rankTotal": 206,
     "rankPerDaysPosted": 150
   },
@@ -3034,7 +3034,7 @@
     },
     "pageViewsPerDay": 0.63,
     "rankTotal": 207,
-    "rankPerDaysPosted": 209
+    "rankPerDaysPosted": 208
   },
   "/web/jsconf/2013/": {
     "url": "/web/jsconf/2013/",
@@ -3129,7 +3129,7 @@
     },
     "pageViewsPerDay": 0.67,
     "rankTotal": 213,
-    "rankPerDaysPosted": 200
+    "rankPerDaysPosted": 199
   },
   "/2.0/": {
     "url": "/2.0/",
@@ -3289,9 +3289,9 @@
       "date": "2022-10-27",
       "time": 1666828800000
     },
-    "pageViewsPerDay": 0.64,
+    "pageViewsPerDay": 0.63,
     "rankTotal": 224,
-    "rankPerDaysPosted": 206
+    "rankPerDaysPosted": 209
   },
   "/web/wash-your-mouth-out-with-soap-and-the-yui-connection-manager/": {
     "url": "/web/wash-your-mouth-out-with-soap-and-the-yui-connection-manager/",
@@ -3436,7 +3436,7 @@
     },
     "pageViewsPerDay": 0.64,
     "rankTotal": 234,
-    "rankPerDaysPosted": 207
+    "rankPerDaysPosted": 206
   },
   "/web/2007/03/23/logical-xor-in-javascript/": {
     "url": "/web/2007/03/23/logical-xor-in-javascript/",
@@ -3510,9 +3510,9 @@
       "date": "2025-03-20",
       "time": 1742428800000
     },
-    "pageViewsPerDay": 1.38,
+    "pageViewsPerDay": 1.37,
     "rankTotal": 239,
-    "rankPerDaysPosted": 127
+    "rankPerDaysPosted": 128
   },
   "/web/winging-it/": {
     "url": "/web/winging-it/",
@@ -3547,7 +3547,7 @@
   },
   "/domains/": {
     "url": "/domains/",
-    "pageViews": 818
+    "pageViews": 819
   },
   "/web/icymi/2015/": {
     "url": "/web/icymi/2015/",
@@ -3803,7 +3803,7 @@
     },
     "pageViewsPerDay": 0.81,
     "rankTotal": 259,
-    "rankPerDaysPosted": 186
+    "rankPerDaysPosted": 185
   },
   "/web/michael-serif/": {
     "url": "/web/michael-serif/",
@@ -4218,7 +4218,7 @@
   },
   "/web/best-of/total-views/": {
     "url": "/web/best-of/total-views/",
-    "pageViews": 584
+    "pageViews": 589
   },
   "/web/hallucinate/": {
     "url": "/web/hallucinate/",
@@ -4229,7 +4229,7 @@
       "date": "2025-11-21",
       "time": 1763683200000
     },
-    "pageViewsPerDay": 1.56,
+    "pageViewsPerDay": 1.55,
     "rankTotal": 288,
     "rankPerDaysPosted": 114
   },
@@ -4278,7 +4278,7 @@
     },
     "pageViewsPerDay": 1.38,
     "rankTotal": 291,
-    "rankPerDaysPosted": 128
+    "rankPerDaysPosted": 127
   },
   "/web/pandemic/": {
     "url": "/web/pandemic/",
@@ -4412,14 +4412,14 @@
   },
   "/web/speedlify2/": {
     "url": "/web/speedlify2/",
-    "pageViews": 529,
+    "pageViews": 530,
     "from": {
       "inputPath": "./_posts/speedlify2.md",
       "url": "/web/speedlify2/",
       "date": "2026-08-26",
       "time": 1787702400000
     },
-    "pageViewsPerDay": 5.68,
+    "pageViewsPerDay": 5.63,
     "rankTotal": 300,
     "rankPerDaysPosted": 32
   },
@@ -4448,7 +4448,7 @@
     },
     "pageViewsPerDay": 0.45,
     "rankTotal": 302,
-    "rankPerDaysPosted": 246
+    "rankPerDaysPosted": 245
   },
   "/web/proxy-filter/": {
     "url": "/web/proxy-filter/",
@@ -4503,9 +4503,9 @@
       "date": "2023-10-23",
       "time": 1698019200000
     },
-    "pageViewsPerDay": 0.46,
+    "pageViewsPerDay": 0.45,
     "rankTotal": 306,
-    "rankPerDaysPosted": 244
+    "rankPerDaysPosted": 246
   },
   "/web/javascript-tdd-update/": {
     "url": "/web/javascript-tdd-update/",
@@ -4572,9 +4572,9 @@
       "date": "2026-09-14",
       "time": 1789344000000
     },
-    "pageViewsPerDay": 6.71,
+    "pageViewsPerDay": 6.61,
     "rankTotal": 311,
-    "rankPerDaysPosted": 24
+    "rankPerDaysPosted": 25
   },
   "/web/webcare-webshare/": {
     "url": "/web/webcare-webshare/",
@@ -4615,7 +4615,7 @@
       "date": "2026-03-06",
       "time": 1772755200000
     },
-    "pageViewsPerDay": 1.83,
+    "pageViewsPerDay": 1.82,
     "rankTotal": 314,
     "rankPerDaysPosted": 99
   },
@@ -4641,7 +4641,7 @@
       "date": "2024-09-12",
       "time": 1726099200000
     },
-    "pageViewsPerDay": 0.6,
+    "pageViewsPerDay": 0.59,
     "rankTotal": 316,
     "rankPerDaysPosted": 217
   },
@@ -4655,7 +4655,7 @@
       "date": "2026-03-12",
       "time": 1773273600000
     },
-    "pageViewsPerDay": 1.85,
+    "pageViewsPerDay": 1.84,
     "rankTotal": 317,
     "rankPerDaysPosted": 97
   },
@@ -4712,6 +4712,19 @@
     "rankTotal": 321,
     "rankPerDaysPosted": 351
   },
+  "/web/npm-audit-report/": {
+    "url": "/web/npm-audit-report/",
+    "pageViews": 469,
+    "from": {
+      "inputPath": "./_posts/npm-audit-report.md",
+      "url": "/web/npm-audit-report/",
+      "date": "2026-11-24",
+      "time": 1795478400000
+    },
+    "pageViewsPerDay": 112.6,
+    "rankTotal": 322,
+    "rankPerDaysPosted": 1
+  },
   "/web/jsparty-indie-11ty/": {
     "url": "/web/jsparty-indie-11ty/",
     "pageViews": 468,
@@ -4722,7 +4735,7 @@
       "time": 1717113600000
     },
     "pageViewsPerDay": 0.51,
-    "rankTotal": 322,
+    "rankTotal": 323,
     "rankPerDaysPosted": 233
   },
   "/web/?category=web-components": {
@@ -4739,7 +4752,7 @@
       "time": 1389484800000
     },
     "pageViewsPerDay": 0.1,
-    "rankTotal": 323,
+    "rankTotal": 324,
     "rankPerDaysPosted": 376
   },
   "/web/some-antics-eleventy-serverless/": {
@@ -4752,7 +4765,7 @@
       "time": 1625011200000
     },
     "pageViewsPerDay": 0.23,
-    "rankTotal": 324,
+    "rankTotal": 325,
     "rankPerDaysPosted": 320
   },
   "/web/eleventy-v3/": {
@@ -4765,7 +4778,7 @@
       "time": 1727827200000
     },
     "pageViewsPerDay": 0.58,
-    "rankTotal": 325,
+    "rankTotal": 326,
     "rankPerDaysPosted": 220
   },
   "/web/smashing-speaker-spotlight/": {
@@ -4779,7 +4792,7 @@
       "time": 1580688000000
     },
     "pageViewsPerDay": 0.18,
-    "rankTotal": 326,
+    "rankTotal": 327,
     "rankPerDaysPosted": 340
   },
   "/web/2010/02/05/trash-that-back-to-top-link/": {
@@ -4795,8 +4808,8 @@
       "date": "2026-09-16",
       "time": 1789516800000
     },
-    "pageViewsPerDay": 6.29,
-    "rankTotal": 327,
+    "pageViewsPerDay": 6.21,
+    "rankTotal": 328,
     "rankPerDaysPosted": 27
   },
   "/projects/domcontentloaded/": {
@@ -4825,8 +4838,21 @@
       "time": 1708300800000
     },
     "pageViewsPerDay": 0.44,
-    "rankTotal": 328,
+    "rankTotal": 329,
     "rankPerDaysPosted": 251
+  },
+  "/web/firefox-list-all-tabs/": {
+    "url": "/web/firefox-list-all-tabs/",
+    "pageViews": 447,
+    "from": {
+      "inputPath": "./_posts/firefox-list-all-tabs.md",
+      "url": "/web/firefox-list-all-tabs/",
+      "date": "2026-10-14",
+      "time": 1791936000000
+    },
+    "pageViewsPerDay": 9.9,
+    "rankTotal": 330,
+    "rankPerDaysPosted": 11
   },
   "/web/2007/08/21/alarmd-now-supports-urls/": {
     "url": "/web/2007/08/21/alarmd-now-supports-urls/",
@@ -4842,7 +4868,7 @@
       "time": 1210118400000
     },
     "pageViewsPerDay": 0.08,
-    "rankTotal": 329,
+    "rankTotal": 331,
     "rankPerDaysPosted": 394
   },
   "/web/obscurity-security-and-captcha/": {
@@ -4855,21 +4881,22 @@
       "time": 1193875200000
     },
     "pageViewsPerDay": 0.08,
-    "rankTotal": 330,
+    "rankTotal": 332,
     "rankPerDaysPosted": 395
   },
-  "/web/firefox-list-all-tabs/": {
-    "url": "/web/firefox-list-all-tabs/",
-    "pageViews": 442,
+  "/web/its-10pm/": {
+    "url": "/web/its-10pm/",
+    "pageViews": 156,
+    "mediaViews": 284,
     "from": {
-      "inputPath": "./_posts/firefox-list-all-tabs.md",
-      "url": "/web/firefox-list-all-tabs/",
-      "date": "2026-10-14",
-      "time": 1791936000000
+      "inputPath": "./_posts/its-10pm.md",
+      "url": "/web/its-10pm/",
+      "date": "2026-04-16",
+      "time": 1776297600000
     },
-    "pageViewsPerDay": 10.02,
-    "rankTotal": 331,
-    "rankPerDaysPosted": 11
+    "pageViewsPerDay": 1.95,
+    "rankTotal": 333,
+    "rankPerDaysPosted": 94
   },
   "/web/registration-forms-suck-lets-mitigate-suckiness/": {
     "url": "/web/registration-forms-suck-lets-mitigate-suckiness/",
@@ -4881,22 +4908,8 @@
       "time": 1231545600000
     },
     "pageViewsPerDay": 0.14,
-    "rankTotal": 332,
+    "rankTotal": 334,
     "rankPerDaysPosted": 356
-  },
-  "/web/its-10pm/": {
-    "url": "/web/its-10pm/",
-    "pageViews": 155,
-    "mediaViews": 284,
-    "from": {
-      "inputPath": "./_posts/its-10pm.md",
-      "url": "/web/its-10pm/",
-      "date": "2026-04-16",
-      "time": 1776297600000
-    },
-    "pageViewsPerDay": 1.95,
-    "rankTotal": 333,
-    "rankPerDaysPosted": 94
   },
   "/2.0/2007/03/13/floating-weebles/weeble/": {
     "url": "/2.0/2007/03/13/floating-weebles/weeble/",
@@ -4912,7 +4925,7 @@
       "time": 1534291200000
     },
     "pageViewsPerDay": 0.14,
-    "rankTotal": 334,
+    "rankTotal": 335,
     "rankPerDaysPosted": 357
   },
   "/web/bernie-tweets/": {
@@ -4925,7 +4938,7 @@
       "time": 1490918400000
     },
     "pageViewsPerDay": 0.12,
-    "rankTotal": 335,
+    "rankTotal": 336,
     "rankPerDaysPosted": 365
   },
   "/web/enterval-an-automatic-setinterval-chainer/": {
@@ -4938,7 +4951,7 @@
       "time": 1198368000000
     },
     "pageViewsPerDay": 0.1,
-    "rankTotal": 336,
+    "rankTotal": 337,
     "rankPerDaysPosted": 377
   },
   "/Projects/googleAnalytics/": {
@@ -4955,7 +4968,7 @@
       "time": 1260316800000
     },
     "pageViewsPerDay": 0.11,
-    "rankTotal": 337,
+    "rankTotal": 338,
     "rankPerDaysPosted": 373
   },
   "/web/alarmd-is-now-on-github/": {
@@ -4968,7 +4981,7 @@
       "time": 1279670400000
     },
     "pageViewsPerDay": 0.1,
-    "rankTotal": 338,
+    "rankTotal": 339,
     "rankPerDaysPosted": 378
   },
   "/selecthor/": {
@@ -4985,7 +4998,7 @@
       "time": 1251504000000
     },
     "pageViewsPerDay": 0.09,
-    "rankTotal": 339,
+    "rankTotal": 340,
     "rankPerDaysPosted": 387
   },
   "/web/beyond-code-interview/": {
@@ -4998,7 +5011,7 @@
       "time": 1470960000000
     },
     "pageViewsPerDay": 0.11,
-    "rankTotal": 340,
+    "rankTotal": 341,
     "rankPerDaysPosted": 374
   },
   "/web/comprehensive-webfonts/?imm_mid=0e62bd&cmp=em-web-na-na-newsltr_20160727": {
@@ -5023,7 +5036,7 @@
       "time": 1174608000000
     },
     "pageViewsPerDay": 0.09,
-    "rankTotal": 341,
+    "rankTotal": 342,
     "rankPerDaysPosted": 388
   },
   "/web/tablesaw/": {
@@ -5036,7 +5049,7 @@
       "time": 1407283200000
     },
     "pageViewsPerDay": 0.09,
-    "rankTotal": 342,
+    "rankTotal": 343,
     "rankPerDaysPosted": 389
   },
   "/web/imaging-heap/": {
@@ -5049,16 +5062,12 @@
       "time": 1521590400000
     },
     "pageViewsPerDay": 0.13,
-    "rankTotal": 343,
+    "rankTotal": 344,
     "rankPerDaysPosted": 360
-  },
-  "/web/citations/": {
-    "url": "/web/citations/",
-    "pageViews": 402
   },
   "/web/copy-paste/": {
     "url": "/web/copy-paste/",
-    "pageViews": 402,
+    "pageViews": 403,
     "from": {
       "inputPath": "./_posts/copy-paste.md",
       "url": "/web/copy-paste/",
@@ -5066,8 +5075,12 @@
       "time": 1761609600000
     },
     "pageViewsPerDay": 1.02,
-    "rankTotal": 344,
+    "rankTotal": 345,
     "rankPerDaysPosted": 157
+  },
+  "/web/citations/": {
+    "url": "/web/citations/",
+    "pageViews": 402
   },
   "/2.0/about/": {
     "url": "/2.0/about/",
@@ -5087,7 +5100,7 @@
       "time": 1669680000000
     },
     "pageViewsPerDay": 0.27,
-    "rankTotal": 345,
+    "rankTotal": 346,
     "rankPerDaysPosted": 307
   },
   "/p/alarmd/downloads/list": {
@@ -5104,7 +5117,7 @@
       "time": 1279497600000
     },
     "pageViewsPerDay": 0.09,
-    "rankTotal": 346,
+    "rankTotal": 347,
     "rankPerDaysPosted": 390
   },
   "/web/2011/03/05/html5-vs-native-applications/": {
@@ -5121,20 +5134,20 @@
       "time": 1220745600000
     },
     "pageViewsPerDay": 0.06,
-    "rankTotal": 347,
+    "rankTotal": 348,
     "rankPerDaysPosted": 412
   },
   "/web/is-this-still-being-maintained/": {
     "url": "/web/is-this-still-being-maintained/",
-    "pageViews": 390,
+    "pageViews": 391,
     "from": {
       "inputPath": "./_posts/is-this-still-being-maintained.md",
       "url": "/web/is-this-still-being-maintained/",
       "date": "2026-08-10",
       "time": 1786320000000
     },
-    "pageViewsPerDay": 3.57,
-    "rankTotal": 348,
+    "pageViewsPerDay": 3.55,
+    "rankTotal": 349,
     "rankPerDaysPosted": 57
   },
   "/web/eleventy-render-plugin/": {
@@ -5147,7 +5160,7 @@
       "time": 1636934400000
     },
     "pageViewsPerDay": 0.21,
-    "rankTotal": 349,
+    "rankTotal": 350,
     "rankPerDaysPosted": 330
   },
   "/web/quine-using-xhtml-and-javascript/": {
@@ -5160,7 +5173,7 @@
       "time": 1198800000000
     },
     "pageViewsPerDay": 0.07,
-    "rankTotal": 350,
+    "rankTotal": 351,
     "rankPerDaysPosted": 405
   },
   "/web/typinator-macros/": {
@@ -5173,7 +5186,7 @@
       "time": 1581033600000
     },
     "pageViewsPerDay": 0.15,
-    "rankTotal": 351,
+    "rankTotal": 352,
     "rankPerDaysPosted": 352
   },
   "/web/table-of-contents/": {
@@ -5185,9 +5198,9 @@
       "date": "2026-09-15",
       "time": 1789430400000
     },
-    "pageViewsPerDay": 5.17,
-    "rankTotal": 352,
-    "rankPerDaysPosted": 36
+    "pageViewsPerDay": 5.1,
+    "rankTotal": 353,
+    "rankPerDaysPosted": 37
   },
   "/bernie/realDonaldTrump/266038556504494082": {
     "url": "/bernie/realDonaldTrump/266038556504494082",
@@ -5207,7 +5220,7 @@
       "time": 1724889600000
     },
     "pageViewsPerDay": 0.45,
-    "rankTotal": 353,
+    "rankTotal": 354,
     "rankPerDaysPosted": 247
   },
   "/web/alarmd-is-a-google-code-project/": {
@@ -5220,21 +5233,8 @@
       "time": 1223424000000
     },
     "pageViewsPerDay": 0.08,
-    "rankTotal": 354,
-    "rankPerDaysPosted": 396
-  },
-  "/web/npm-audit-report/": {
-    "url": "/web/npm-audit-report/",
-    "pageViews": 363,
-    "from": {
-      "inputPath": "./_posts/npm-audit-report.md",
-      "url": "/web/npm-audit-report/",
-      "date": "2026-11-24",
-      "time": 1795478400000
-    },
-    "pageViewsPerDay": 116.28,
     "rankTotal": 355,
-    "rankPerDaysPosted": 1
+    "rankPerDaysPosted": 396
   },
   "/web/cssconf/2014/": {
     "url": "/web/cssconf/2014/",
@@ -5360,9 +5360,9 @@
       "date": "2026-09-09",
       "time": 1788912000000
     },
-    "pageViewsPerDay": 4.34,
+    "pageViewsPerDay": 4.28,
     "rankTotal": 363,
-    "rankPerDaysPosted": 46
+    "rankPerDaysPosted": 47
   },
   "/web/2011/02/06/et-tu-x-ua-compatible/": {
     "url": "/web/2011/02/06/et-tu-x-ua-compatible/",
@@ -5482,7 +5482,7 @@
     },
     "pageViewsPerDay": 0.46,
     "rankTotal": 371,
-    "rankPerDaysPosted": 245
+    "rankPerDaysPosted": 244
   },
   "/web/origin-container-queries/?ref=webdesignernews.com": {
     "url": "/web/origin-container-queries/?ref=webdesignernews.com",
@@ -5812,9 +5812,9 @@
       "date": "2026-02-03",
       "time": 1770076800000
     },
-    "pageViewsPerDay": 0.82,
+    "pageViewsPerDay": 0.81,
     "rankTotal": 390,
-    "rankPerDaysPosted": 184
+    "rankPerDaysPosted": 186
   },
   "/web/thejam/": {
     "url": "/web/thejam/",
@@ -5930,9 +5930,9 @@
       "date": "2026-09-11",
       "time": 1789084800000
     },
-    "pageViewsPerDay": 2.8,
+    "pageViewsPerDay": 2.76,
     "rankTotal": 396,
-    "rankPerDaysPosted": 67
+    "rankPerDaysPosted": 68
   },
   "/bernie/zachleat/785495065913274369": {
     "url": "/bernie/zachleat/785495065913274369",
@@ -6204,9 +6204,9 @@
       "date": "2026-04-22",
       "time": 1776816000000
     },
-    "pageViewsPerDay": 0.73,
+    "pageViewsPerDay": 0.72,
     "rankTotal": 409,
-    "rankPerDaysPosted": 193
+    "rankPerDaysPosted": 194
   },
   "/web/2007/10/26/nursery-rhyme-code-poem-js/": {
     "url": "/web/2007/10/26/nursery-rhyme-code-poem-js/",
